@@ -3,7 +3,8 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const siteUrl = "https://woodcuttool.com";
+const siteUrl = (process.env.SITE_URL || "https://woodcuttool.com").replace(/\/$/, "");
+const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
 const errors = [];
 
 function pathExists(route) {
@@ -28,7 +29,7 @@ function collectHtmlFiles(dir = root, prefix = "") {
   const files = [];
 
   for (const entry of readdirSync(dir, { withFileTypes: true })) {
-    if (entry.name.startsWith(".") || entry.name === "node_modules") {
+    if (entry.name.startsWith(".") || ignoredDirs.has(entry.name)) {
       continue;
     }
 
@@ -47,6 +48,52 @@ function collectHtmlFiles(dir = root, prefix = "") {
 
 const sitemap = readText("sitemap.xml");
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+const sitemapUrlSet = new Set(sitemapUrls);
+
+if (sitemapUrlSet.size !== sitemapUrls.length) {
+  errors.push("Sitemap contains duplicate URLs.");
+}
+
+function routeFromFile(file) {
+  if (file === "index.html") {
+    return "/";
+  }
+
+  return `/${dirname(file)}/`;
+}
+
+function hasNoindex(html) {
+  const metaTags = html.match(/<meta\b[^>]*>/gi) ?? [];
+  return metaTags.some((tag) => {
+    const name = tag.match(/\bname=["']robots["']/i);
+    const content = tag.match(/\bcontent=["']([^"']+)["']/i)?.[1] ?? "";
+    return name && content.toLowerCase().split(",").map((part) => part.trim()).includes("noindex");
+  });
+}
+
+function canonicalRoute(html, fallbackRoute) {
+  const linkTags = html.match(/<link\b[^>]*>/gi) ?? [];
+
+  for (const tag of linkTags) {
+    const isCanonical = /\brel=["'][^"']*\bcanonical\b[^"']*["']/i.test(tag);
+    const href = tag.match(/\bhref=["']([^"']+)["']/i)?.[1];
+
+    if (!isCanonical || !href) {
+      continue;
+    }
+
+    try {
+      const url = new URL(href, siteUrl);
+      if (url.origin === siteUrl) {
+        return url.pathname.endsWith("/") ? url.pathname : `${url.pathname}/`;
+      }
+    } catch {
+      return fallbackRoute;
+    }
+  }
+
+  return fallbackRoute;
+}
 
 for (const url of sitemapUrls) {
   if (!url.startsWith(siteUrl)) {
@@ -69,6 +116,14 @@ for (const file of htmlFiles) {
   }
 
   const html = readText(file);
+
+  if (!hasNoindex(html)) {
+    const route = canonicalRoute(html, routeFromFile(file));
+    if (!sitemapUrlSet.has(`${siteUrl}${route}`)) {
+      errors.push(`${file} is indexable but missing from sitemap.xml: ${route}`);
+    }
+  }
+
   const links = [...html.matchAll(/\s(?:href|src)="([^"]+)"/g)].map((match) => match[1]);
 
   for (const link of links) {

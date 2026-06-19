@@ -10,15 +10,61 @@
   <url><loc>https://woodcuttool.com/quiltfit/</loc><changefreq>weekly</changefreq><priority>0.92</priority></url>
   <url><loc>https://woodcuttool.com/tile-calculator/</loc><changefreq>weekly</changefreq><priority>0.92</priority></url>
   <url><loc>https://woodcuttool.com/stringer/</loc><changefreq>weekly</changefreq><priority>0.92</priority></url>
-  <url><loc>https://woodcuttool.com/privacy-policy/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://woodcuttool.com/terms-of-service/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://woodcuttool.com/cut-list-calculator/</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/plywood-cut-calculator/</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/stair-stringer-calculator/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://woodcuttool.com/board-foot-calculator/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://woodcuttool.com/wood-waste-calculator/</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://woodcuttool.com/blog/wood-cutting-calculator-guide/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://woodcuttool.com/blog/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://woodcuttool.com/privacy-policy/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://woodcuttool.com/terms-of-service/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://woodcuttool.com/blog/avoiding-common-stringer-layout-errors/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/backing-binding-batting-planning/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/bathroom-tile-layout-slope-and-drain/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cabinet-cut-list-mistakes/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/color-and-repeat-planning-for-modern-quilts/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/comfortable-stair-layout-rules/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-backyard-planter-boxes/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-bookcase-from-one-sheet/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-closet-organizer-diy/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-drawer-boxes-for-beginners/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-first-plywood-project-checklist/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-garage-shelf-weekend-project/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-kids-toy-storage-plywood/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-mudroom-bench-cubbies/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-ocr-for-handwritten-project-notes/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-pdf-plan-for-home-center-cuts/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-plywood-workbench-top/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-shop-workflow-from-bid-to-cut/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-small-apartment-furniture/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-van-storage-camper-conversion/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutlist-vs-spreadsheets-for-cabinetmakers/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/deck-stair-stringer-field-measurements/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/fabric-yardage-estimates-with-block-layouts/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/grout-joint-layout-and-visual-balance/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-optimize-material-layout/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://woodcuttool.com/blog/large-format-tile-cut-planning/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/plywood-optimization-kerf-grain-offcuts/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quilt-project-tracking-from-sketch-to-finish/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-digital-quilt-planning-workflow/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-fabric-shop-decision-workflow/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-first-baby-quilt-plan/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-flying-geese-wall-hanging/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-gift-quilt-shopping-list/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-guild-challenge-project/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-half-square-triangle-throw/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-log-cabin-color-study/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-quilt-retreat-prep/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-restart-unfinished-quilt-project/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-scrap-quilt-from-stash/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-tshirt-memory-quilt/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quiltfit-weekend-table-runner/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/reducing-sheet-good-waste-on-small-shops/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-opening-planning-for-remodels/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-stringer-design-rise-run-basics/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/tile-layout-planning-before-install/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/tile-waste-estimation-by-pattern/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/wood-cutting-calculator-guide/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://woodcuttool.com/legal/cutlist/privacy/</loc><changefreq>yearly</changefreq><priority>0.55</priority></url>
   <url><loc>https://woodcuttool.com/legal/cutlist/support/</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
   <url><loc>https://woodcuttool.com/legal/quiltfit/privacy/</loc><changefreq>yearly</changefreq><priority>0.55</priority></url>

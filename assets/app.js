@@ -27,7 +27,7 @@ const translations = {
     "Stringer": "楼梯",
     "Woodworking calculator for material savings": "节省材料的木工计算器",
     "Save plywood, reduce material cost, and eliminate waste before cutting.": "在切割前节省胶合板、降低材料成本并减少浪费。",
-    "WoodcutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodcutTool 帮助橱柜工、承包商、木匠和 DIY 用户直接在浏览器中规划切割清单。无需登录、无需上传，也不用学习 CAD。",
+    "WoodCutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodCutTool 帮助橱柜工、承包商、木匠和 DIY 用户直接在浏览器中规划切割清单。无需登录、无需上传，也不用学习 CAD。",
     "Save up to 20% material waste per project with a cleaner cut plan before you touch the saw.": "开锯前先生成更清晰的切割方案，每个项目最多可减少 20% 材料浪费。",
     "Open CutList": "打开 CutList",
     "Stair Stringer Calculator": "楼梯梁计算器",
@@ -37,7 +37,7 @@ const translations = {
     "Built for workshop use": "为工作间使用而设计",
     "ROI preview": "收益预览",
     "Input -> output -> savings, before you buy plywood.": "购买胶合板前，先看输入、输出和节省。",
-    "WoodcutTool makes the material saving visible like a calculator result: stock sheets in, optimized layout out, dollars saved per job.": "WoodcutTool 像计算器结果一样展示材料节省：输入板材，输出优化布局，并显示每个项目可节省的成本。",
+    "WoodCutTool makes the material saving visible like a calculator result: stock sheets in, optimized layout out, dollars saved per job.": "WoodCutTool 像计算器结果一样展示材料节省：输入板材，输出优化布局，并显示每个项目可节省的成本。",
     "Input": "输入",
     "Output": "输出",
     "Savings": "节省",
@@ -760,7 +760,7 @@ const supplementalTranslations = {
   },
   "zh-TW": {
     "Language": "語言",
-    "WoodcutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodcutTool 幫助櫥櫃師傅、承包商、木匠和 DIY 使用者直接在瀏覽器中規劃切割清單。無需登入、無需上傳，也不用學 CAD。",
+    "WoodCutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodCutTool 幫助櫥櫃師傅、承包商、木匠和 DIY 使用者直接在瀏覽器中規劃切割清單。無需登入、無需上傳，也不用學 CAD。",
     "Save up to 20% material waste per project with a cleaner cut plan before you touch the saw.": "開鋸前先取得更清楚的切割方案，每個專案最多可減少 20% 材料浪費。",
     "Calculate material savings before the first cut.": "第一次切割前先計算材料節省。",
     "Optimize My Project": "最佳化我的專案",
@@ -773,7 +773,7 @@ const supplementalTranslations = {
   },
   es: {
     "Language": "Idioma",
-    "WoodcutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodcutTool ayuda a ebanistas, contratistas, carpinteros y aficionados a planificar listas de corte al instante en el navegador. Sin cuenta, sin cargas y sin curva de aprendizaje CAD.",
+    "WoodCutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodCutTool ayuda a ebanistas, contratistas, carpinteros y aficionados a planificar listas de corte al instante en el navegador. Sin cuenta, sin cargas y sin curva de aprendizaje CAD.",
     "Save up to 20% material waste per project with a cleaner cut plan before you touch the saw.": "Ahorra hasta un 20% de material por proyecto con un plan de corte más limpio antes de usar la sierra.",
     "ROI preview": "Vista previa del ahorro",
     "Input -> output -> savings, before you buy plywood.": "Entrada -> salida -> ahorro, antes de comprar contrachapado.",
@@ -808,7 +808,7 @@ const supplementalTranslations = {
     "Language": "Idioma",
     "Woodworking calculator for material savings": "Calculadora de marcenaria para economizar material",
     "Save plywood, reduce material cost, and eliminate waste before cutting.": "Economize compensado, reduza custos e elimine desperdício antes de cortar.",
-    "WoodcutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodcutTool ajuda marceneiros, empreiteiros, carpinteiros e usuários DIY a planejar listas de corte no navegador. Sem login, sem upload e sem curva de CAD.",
+    "WoodCutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodCutTool ajuda marceneiros, empreiteiros, carpinteiros e usuários DIY a planejar listas de corte no navegador. Sem login, sem upload e sem curva de CAD.",
     "Save up to 20% material waste per project with a cleaner cut plan before you touch the saw.": "Economize até 20% de material por projeto com um plano de corte mais limpo antes de usar a serra.",
     "Stair Stringer Calculator": "Calculadora de escada",
     "Built for workshop use": "Feito para a oficina",
@@ -852,7 +852,7 @@ const supplementalTranslations = {
     "Language": "Langue",
     "Woodworking calculator for material savings": "Calculateur de menuiserie pour économiser du matériau",
     "Save plywood, reduce material cost, and eliminate waste before cutting.": "Économisez du contreplaqué, réduisez les coûts et limitez les chutes avant de couper.",
-    "WoodcutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodcutTool aide les menuisiers, entrepreneurs, charpentiers et bricoleurs à préparer des listes de coupe directement dans le navigateur. Aucun compte, aucun envoi, aucune formation CAD.",
+    "WoodCutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodCutTool aide les menuisiers, entrepreneurs, charpentiers et bricoleurs à préparer des listes de coupe directement dans le navigateur. Aucun compte, aucun envoi, aucune formation CAD.",
     "Save up to 20% material waste per project with a cleaner cut plan before you touch the saw.": "Réduisez jusqu'à 20% de perte par projet avec un plan de coupe plus propre avant de scier.",
     "Stair Stringer Calculator": "Calculateur de limon d'escalier",
     "Built for workshop use": "Conçu pour l'atelier",
@@ -898,7 +898,7 @@ const supplementalTranslations = {
     "Language": "Sprache",
     "Woodworking calculator for material savings": "Holzrechner zum Materialsparen",
     "Save plywood, reduce material cost, and eliminate waste before cutting.": "Sparen Sie Sperrholz, senken Sie Materialkosten und vermeiden Sie Verschnitt vor dem Sägen.",
-    "WoodcutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodcutTool hilft Schreinern, Handwerkern und DIY-Bauern, Schnittlisten direkt im Browser zu planen. Ohne Login, Upload oder CAD-Einarbeitung.",
+    "WoodCutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodCutTool hilft Schreinern, Handwerkern und DIY-Bauern, Schnittlisten direkt im Browser zu planen. Ohne Login, Upload oder CAD-Einarbeitung.",
     "Save up to 20% material waste per project with a cleaner cut plan before you touch the saw.": "Sparen Sie pro Projekt bis zu 20% Material durch einen besseren Schnittplan vor dem Sägen.",
     "Stair Stringer Calculator": "Treppenwangen-Rechner",
     "Built for workshop use": "Für die Werkstatt gebaut",
@@ -944,7 +944,7 @@ const supplementalTranslations = {
     "Language": "Lingua",
     "Woodworking calculator for material savings": "Calcolatore di falegnameria per risparmiare materiale",
     "Save plywood, reduce material cost, and eliminate waste before cutting.": "Risparmia compensato, riduci i costi e limita gli scarti prima del taglio.",
-    "WoodcutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodcutTool aiuta falegnami, imprese, carpentieri e utenti DIY a pianificare liste di taglio nel browser. Nessun login, nessun upload, nessuna curva CAD.",
+    "WoodCutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodCutTool aiuta falegnami, imprese, carpentieri e utenti DIY a pianificare liste di taglio nel browser. Nessun login, nessun upload, nessuna curva CAD.",
     "Save up to 20% material waste per project with a cleaner cut plan before you touch the saw.": "Riduci fino al 20% di scarto per progetto con un piano di taglio più pulito prima di usare la sega.",
     "Stair Stringer Calculator": "Calcolatore cosciali scala",
     "Built for workshop use": "Pensato per l'officina",
@@ -990,7 +990,7 @@ const supplementalTranslations = {
     "Language": "اللغة",
     "Woodworking calculator for material savings": "حاسبة نجارة لتوفير المواد",
     "Save plywood, reduce material cost, and eliminate waste before cutting.": "وفّر الخشب الرقائقي وقلّل التكلفة والهدر قبل القص.",
-    "WoodcutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "يساعد WoodcutTool صناع الخزائن والمقاولين والنجارين والهواة على تخطيط قوائم القص داخل المتصفح. دون تسجيل دخول أو رفع ملفات أو تعلم CAD.",
+    "WoodCutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "يساعد WoodCutTool صناع الخزائن والمقاولين والنجارين والهواة على تخطيط قوائم القص داخل المتصفح. دون تسجيل دخول أو رفع ملفات أو تعلم CAD.",
     "Save up to 20% material waste per project with a cleaner cut plan before you touch the saw.": "قلّل هدر المواد حتى 20% في كل مشروع بخطة قص أوضح قبل استخدام المنشار.",
     "Stair Stringer Calculator": "حاسبة عارضة السلم",
     "Built for workshop use": "مصمم للاستخدام في الورشة",
@@ -1036,7 +1036,7 @@ const supplementalTranslations = {
     "Language": "言語",
     "Woodworking calculator for material savings": "材料を節約する木工計算機",
     "Save plywood, reduce material cost, and eliminate waste before cutting.": "切断前に合板を節約し、材料費と無駄を減らします。",
-    "WoodcutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodcutTool は家具職人、施工業者、大工、DIY ユーザーがブラウザ上で切断リストをすぐに作れるツールです。ログイン、アップロード、CAD 学習は不要です。",
+    "WoodCutTool helps cabinet makers, contractors, carpenters, and DIY builders plan cut lists instantly in the browser. No login, no upload, no CAD learning curve.": "WoodCutTool は家具職人、施工業者、大工、DIY ユーザーがブラウザ上で切断リストをすぐに作れるツールです。ログイン、アップロード、CAD 学習は不要です。",
     "Save up to 20% material waste per project with a cleaner cut plan before you touch the saw.": "のこぎりを使う前に整理された切断計画を作り、プロジェクトごとに最大 20% の材料ロスを削減できます。",
     "Stair Stringer Calculator": "階段ストリンガー計算機",
     "Built for workshop use": "作業場向けに設計",
@@ -1086,7 +1086,7 @@ Object.entries(supplementalTranslations).forEach(([lang, values]) => {
 
 const homepageTranslations = {
   "zh-CN": {
-    "WoodcutTool makes the material saving visible like a calculator result: stock sheets in, optimized layout out, dollars saved per job.": "WoodcutTool 像计算器结果一样展示材料节省：输入板材，输出优化布局，并显示每个项目可节省的成本。",
+    "WoodCutTool makes the material saving visible like a calculator result: stock sheets in, optimized layout out, dollars saved per job.": "WoodCutTool 像计算器结果一样展示材料节省：输入板材，输出优化布局，并显示每个项目可节省的成本。",
     "96 x 48 sheets, cabinet sides, shelves, dividers, and back panels.": "96 x 48 板材、橱柜侧板、搁板、隔板和背板。",
     "Parts packed into sheets with kerf accounted for and cleaner offcuts.": "零件已排入板材，并考虑锯缝，余料更整洁。",
     "18-25% waste reduction on a typical cabinet project.": "典型橱柜项目可减少 18-25% 的浪费。",
@@ -1108,7 +1108,7 @@ const homepageTranslations = {
     "Calculate risers, tread depth, stair angle, plumb cut angle, and stringer length for stair layout.": "为楼梯布局计算立板、踏面深度、楼梯角度、垂直切割角和楼梯梁长度。",
     "Real job scenario": "真实项目场景",
     "Kitchen cabinet project: 4 sheets planned, fewer sheets wasted.": "厨房橱柜项目：计划 4 张板，减少板材浪费。",
-    "A cabinet run can burn money fast when layouts are guessed. WoodcutTool shows the material impact before the first sheet is broken down.": "橱柜项目如果靠猜布局，很容易快速烧钱。WoodcutTool 会在第一张板切开前显示材料影响。",
+    "A cabinet run can burn money fast when layouts are guessed. WoodCutTool shows the material impact before the first sheet is broken down.": "橱柜项目如果靠猜布局，很容易快速烧钱。WoodCutTool 会在第一张板切开前显示材料影响。",
     "Before": "之前",
     "4 sheets purchased": "购买 4 张板",
     "Manual spreadsheet layout, repeated measurements, and safety stock added just in case.": "手动表格排版、重复测量，并额外加入保险库存。",
@@ -1119,7 +1119,7 @@ const homepageTranslations = {
     "21% estimated waste, about $55 saved": "预计浪费 21%，约节省 55 美元",
     "Why different": "为什么不同",
     "Built for speed, not CAD complexity.": "为速度而建，而不是 CAD 复杂度。",
-    "Spreadsheets are easy to mistype. CAD tools are powerful but slow for quick material planning. WoodcutTool is for the moment before you cut.": "电子表格容易输错。CAD 工具强大，但用于快速材料规划太慢。WoodcutTool 专为切割前那一刻设计。",
+    "Spreadsheets are easy to mistype. CAD tools are powerful but slow for quick material planning. WoodCutTool is for the moment before you cut.": "电子表格容易输错。CAD 工具强大，但用于快速材料规划太慢。WoodCutTool 专为切割前那一刻设计。",
     "Spreadsheets": "电子表格",
     "Manual formulas and hidden mistakes.": "手动公式和隐藏错误。",
     "CAD tools": "CAD 工具",
@@ -1135,7 +1135,7 @@ const homepageTranslations = {
     "Reduce expensive hardwood and plywood offcuts.": "减少昂贵硬木和胶合板余料。",
     "DIY users": "DIY 用户",
     "Plan clean cuts without learning CAD software.": "无需学习 CAD，也能规划清晰切割。",
-    "Use WoodcutTool for fast browser planning, then save real projects in CutList for iPhone with offline support, PDF export, and project history.": "用 WoodcutTool 在浏览器中快速规划，然后在 iPhone 版 CutList 中保存真实项目，支持离线、PDF 导出和项目历史。",
+    "Use WoodCutTool for fast browser planning, then save real projects in CutList for iPhone with offline support, PDF export, and project history.": "用 WoodCutTool 在浏览器中快速规划，然后在 iPhone 版 CutList 中保存真实项目，支持离线、PDF 导出和项目历史。",
     "Offline support in CutList": "CutList 离线支持",
     "PDF export": "PDF 导出",
     "Project saving": "项目保存",
@@ -1149,7 +1149,7 @@ const homepageTranslations = {
     "Save projects offline, export PDF cut plans, and keep every board, sheet, and waste estimate organized while you build.": "离线保存项目、导出 PDF 切割方案，并在制作过程中管理每块板材和浪费估算。"
   },
   "zh-TW": {
-    "WoodcutTool makes the material saving visible like a calculator result: stock sheets in, optimized layout out, dollars saved per job.": "WoodcutTool 像計算器結果一樣呈現材料節省：輸入板材，輸出最佳化布局，並顯示每個專案可節省的成本。",
+    "WoodCutTool makes the material saving visible like a calculator result: stock sheets in, optimized layout out, dollars saved per job.": "WoodCutTool 像計算器結果一樣呈現材料節省：輸入板材，輸出最佳化布局，並顯示每個專案可節省的成本。",
     "96 x 48 sheets, cabinet sides, shelves, dividers, and back panels.": "96 x 48 板材、櫥櫃側板、層板、隔板和背板。",
     "Parts packed into sheets with kerf accounted for and cleaner offcuts.": "零件已排入板材，並考慮鋸縫，餘料更整潔。",
     "18-25% waste reduction on a typical cabinet project.": "典型櫥櫃專案可減少 18-25% 浪費。",
@@ -1171,7 +1171,7 @@ const homepageTranslations = {
     "Calculate risers, tread depth, stair angle, plumb cut angle, and stringer length for stair layout.": "為樓梯布局計算立板、踏面深度、樓梯角度、垂直切割角和樓梯樑長度。",
     "Real job scenario": "真實專案場景",
     "Kitchen cabinet project: 4 sheets planned, fewer sheets wasted.": "廚房櫥櫃專案：計畫 4 張板，減少板材浪費。",
-    "A cabinet run can burn money fast when layouts are guessed. WoodcutTool shows the material impact before the first sheet is broken down.": "櫥櫃專案如果靠猜布局，很容易快速燒錢。WoodcutTool 會在第一張板切開前顯示材料影響。",
+    "A cabinet run can burn money fast when layouts are guessed. WoodCutTool shows the material impact before the first sheet is broken down.": "櫥櫃專案如果靠猜布局，很容易快速燒錢。WoodCutTool 會在第一張板切開前顯示材料影響。",
     "Before": "之前",
     "4 sheets purchased": "購買 4 張板",
     "After": "之後",
@@ -1210,7 +1210,7 @@ const homepageTranslations = {
     "Calculate risers, tread depth, stair angle, plumb cut angle, and stringer length for stair layout.": "Calcula contrahuellas, huella, ángulo, corte a plomo y longitud de zanca.",
     "Real job scenario": "Escenario real",
     "Kitchen cabinet project: 4 sheets planned, fewer sheets wasted.": "Proyecto de cocina: 4 tableros previstos, menos desperdicio.",
-    "A cabinet run can burn money fast when layouts are guessed. WoodcutTool shows the material impact before the first sheet is broken down.": "Un proyecto de gabinetes puede gastar dinero rápido si se adivina el diseño. WoodcutTool muestra el impacto antes de cortar el primer tablero.",
+    "A cabinet run can burn money fast when layouts are guessed. WoodCutTool shows the material impact before the first sheet is broken down.": "Un proyecto de gabinetes puede gastar dinero rápido si se adivina el diseño. WoodCutTool muestra el impacto antes de cortar el primer tablero.",
     "Before": "Antes",
     "4 sheets purchased": "4 tableros comprados",
     "Manual spreadsheet layout, repeated measurements, and safety stock added just in case.": "Diseño manual en hoja de cálculo, medidas repetidas y material extra por seguridad.",
@@ -1669,9 +1669,9 @@ const legalTranslations = {
     "/ Privacy Policy": "/ 隐私政策",
     "/ Terms of Service": "/ 服务条款",
     "Legal": "法律信息",
-    "WoodcutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodcutTool 提供基于浏览器的布局、切割和材料规划计算器。",
+    "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool 提供基于浏览器的布局、切割和材料规划计算器。",
     "Information we collect": "我们收集的信息",
-    "WoodcutTool does not require an account and does not ask you to upload project files. Calculator inputs are processed in your browser for the purpose of showing results.": "WoodcutTool 不要求创建账号，也不会要求你上传项目文件。计算器输入会在你的浏览器中处理，用于显示计算结果。",
+    "WoodCutTool does not require an account and does not ask you to upload project files. Calculator inputs are processed in your browser for the purpose of showing results.": "WoodCutTool 不要求创建账号，也不会要求你上传项目文件。计算器输入会在你的浏览器中处理，用于显示计算结果。",
     "Contact email": "联系邮箱",
     "If you contact us by email, we may use your email address and message only to respond to your request.": "如果你通过邮件联系我们，我们只会使用你的邮箱地址和邮件内容来回复你的请求。",
     "Third-party links": "第三方链接",
@@ -1680,9 +1680,9 @@ const legalTranslations = {
     "We may update this policy as the site changes. The current version is published on this page.": "我们可能会随着网站变化更新本政策。当前版本会发布在本页面。",
     "Contact": "联系",
     "Email:": "邮箱：",
-    "By using WoodcutTool, you agree to use the calculators as planning aids and to verify results before cutting or purchasing materials.": "使用 WoodcutTool 即表示你同意将计算器作为规划辅助工具，并在切割或购买材料前自行核对结果。",
+    "By using WoodCutTool, you agree to use the calculators as planning aids and to verify results before cutting or purchasing materials.": "使用 WoodCutTool 即表示你同意将计算器作为规划辅助工具，并在切割或购买材料前自行核对结果。",
     "Use of calculators": "计算器使用",
-    "WoodcutTool results are estimates. You are responsible for checking measurements, local building requirements, material conditions, tool setup, and safety practices before acting on any result.": "WoodcutTool 的结果为估算值。在根据结果行动前，你需要自行检查尺寸、当地建筑要求、材料状态、工具设置和安全操作。",
+    "WoodCutTool results are estimates. You are responsible for checking measurements, local building requirements, material conditions, tool setup, and safety practices before acting on any result.": "WoodCutTool 的结果为估算值。在根据结果行动前，你需要自行检查尺寸、当地建筑要求、材料状态、工具设置和安全操作。",
     "No professional advice": "非专业建议",
     "The site does not provide engineering, construction, legal, or safety certification advice. For regulated projects, consult a qualified professional.": "本站不提供工程、施工、法律或安全认证建议。涉及监管要求的项目，请咨询合格专业人士。",
     "Availability": "可用性",
@@ -1697,7 +1697,7 @@ const legalTranslations = {
     "/ Privacy Policy": "/ 隱私政策",
     "/ Terms of Service": "/ 服務條款",
     "Legal": "法律資訊",
-    "WoodcutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodcutTool 提供基於瀏覽器的布局、切割與材料規劃計算器。",
+    "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool 提供基於瀏覽器的布局、切割與材料規劃計算器。",
     "Information we collect": "我們收集的資訊",
     "Contact email": "聯絡信箱",
     "Third-party links": "第三方連結",
@@ -1716,9 +1716,9 @@ const legalTranslations = {
     "/ Privacy Policy": "/ Política de privacidad",
     "/ Terms of Service": "/ Términos del servicio",
     "Legal": "Legal",
-    "WoodcutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodcutTool ofrece calculadoras en el navegador para diseño, corte y planificación de materiales.",
+    "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool ofrece calculadoras en el navegador para diseño, corte y planificación de materiales.",
     "Information we collect": "Información que recopilamos",
-    "WoodcutTool does not require an account and does not ask you to upload project files. Calculator inputs are processed in your browser for the purpose of showing results.": "WoodcutTool no requiere cuenta ni pide subir archivos. Los datos de la calculadora se procesan en tu navegador para mostrar resultados.",
+    "WoodCutTool does not require an account and does not ask you to upload project files. Calculator inputs are processed in your browser for the purpose of showing results.": "WoodCutTool no requiere cuenta ni pide subir archivos. Los datos de la calculadora se procesan en tu navegador para mostrar resultados.",
     "Contact email": "Correo de contacto",
     "If you contact us by email, we may use your email address and message only to respond to your request.": "Si nos contactas por correo, usaremos tu dirección y mensaje solo para responder.",
     "Third-party links": "Enlaces de terceros",
@@ -1727,9 +1727,9 @@ const legalTranslations = {
     "We may update this policy as the site changes. The current version is published on this page.": "Podemos actualizar esta política cuando cambie el sitio. La versión actual se publica aquí.",
     "Contact": "Contacto",
     "Email:": "Correo:",
-    "By using WoodcutTool, you agree to use the calculators as planning aids and to verify results before cutting or purchasing materials.": "Al usar WoodcutTool, aceptas usar las calculadoras como ayuda de planificación y verificar resultados antes de cortar o comprar materiales.",
+    "By using WoodCutTool, you agree to use the calculators as planning aids and to verify results before cutting or purchasing materials.": "Al usar WoodCutTool, aceptas usar las calculadoras como ayuda de planificación y verificar resultados antes de cortar o comprar materiales.",
     "Use of calculators": "Uso de calculadoras",
-    "WoodcutTool results are estimates. You are responsible for checking measurements, local building requirements, material conditions, tool setup, and safety practices before acting on any result.": "Los resultados son estimaciones. Debes comprobar medidas, normas locales, materiales, herramientas y seguridad antes de actuar.",
+    "WoodCutTool results are estimates. You are responsible for checking measurements, local building requirements, material conditions, tool setup, and safety practices before acting on any result.": "Los resultados son estimaciones. Debes comprobar medidas, normas locales, materiales, herramientas y seguridad antes de actuar.",
     "No professional advice": "Sin asesoría profesional",
     "The site does not provide engineering, construction, legal, or safety certification advice. For regulated projects, consult a qualified professional.": "El sitio no ofrece asesoría de ingeniería, construcción, legal o certificación de seguridad. Consulta a un profesional cuando sea necesario.",
     "Availability": "Disponibilidad",
@@ -1744,7 +1744,7 @@ const legalTranslations = {
     "/ Privacy Policy": "/ Política de Privacidade",
     "/ Terms of Service": "/ Termos de Serviço",
     "Legal": "Legal",
-    "WoodcutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodcutTool oferece calculadoras no navegador para layout, corte e planejamento de materiais.",
+    "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool oferece calculadoras no navegador para layout, corte e planejamento de materiais.",
     "Information we collect": "Informações que coletamos",
     "Contact email": "Email de contato",
     "Third-party links": "Links de terceiros",
@@ -1763,7 +1763,7 @@ const legalTranslations = {
     "/ Privacy Policy": "/ Politique de confidentialité",
     "/ Terms of Service": "/ Conditions d'utilisation",
     "Legal": "Mentions légales",
-    "WoodcutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodcutTool propose des calculateurs dans le navigateur pour la mise en page, la coupe et la planification des matériaux.",
+    "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool propose des calculateurs dans le navigateur pour la mise en page, la coupe et la planification des matériaux.",
     "Information we collect": "Informations collectées",
     "Contact email": "Email de contact",
     "Third-party links": "Liens tiers",
@@ -1782,7 +1782,7 @@ const legalTranslations = {
     "/ Privacy Policy": "/ Datenschutzerklärung",
     "/ Terms of Service": "/ Nutzungsbedingungen",
     "Legal": "Rechtliches",
-    "WoodcutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodcutTool bietet browserbasierte Rechner für Layout, Zuschnitt und Materialplanung.",
+    "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool bietet browserbasierte Rechner für Layout, Zuschnitt und Materialplanung.",
     "Information we collect": "Erfasste Informationen",
     "Contact email": "Kontakt-E-Mail",
     "Third-party links": "Links zu Dritten",
@@ -1801,7 +1801,7 @@ const legalTranslations = {
     "/ Privacy Policy": "/ Informativa sulla privacy",
     "/ Terms of Service": "/ Termini di servizio",
     "Legal": "Legale",
-    "WoodcutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodcutTool offre calcolatori nel browser per layout, taglio e pianificazione dei materiali.",
+    "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool offre calcolatori nel browser per layout, taglio e pianificazione dei materiali.",
     "Information we collect": "Informazioni raccolte",
     "Contact email": "Email di contatto",
     "Third-party links": "Link di terze parti",
@@ -1820,7 +1820,7 @@ const legalTranslations = {
     "/ Privacy Policy": "/ سياسة الخصوصية",
     "/ Terms of Service": "/ شروط الخدمة",
     "Legal": "قانوني",
-    "WoodcutTool provides browser-based calculators for layout, cutting, and material planning.": "يوفر WoodcutTool حاسبات تعمل في المتصفح للتخطيط والقص والمواد.",
+    "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "يوفر WoodCutTool حاسبات تعمل في المتصفح للتخطيط والقص والمواد.",
     "Information we collect": "المعلومات التي نجمعها",
     "Contact email": "بريد التواصل",
     "Third-party links": "روابط خارجية",
@@ -1839,7 +1839,7 @@ const legalTranslations = {
     "/ Privacy Policy": "/ プライバシーポリシー",
     "/ Terms of Service": "/ 利用規約",
     "Legal": "法的情報",
-    "WoodcutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodcutTool はレイアウト、切断、材料計画のためのブラウザベース計算機を提供します。",
+    "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool はレイアウト、切断、材料計画のためのブラウザベース計算機を提供します。",
     "Information we collect": "収集する情報",
     "Contact email": "連絡先メール",
     "Third-party links": "第三者リンク",
@@ -3693,6 +3693,64 @@ function initTileCalculator() {
   });
 }
 
+function initBlogDirectorySearch() {
+  const root = document.querySelector("[data-blog-index]");
+  if (!root) return;
+
+  const input = root.querySelector("[data-blog-search-input]");
+  const status = root.querySelector("[data-blog-search-status]");
+  const empty = root.querySelector("[data-blog-search-empty]");
+  const featured = root.querySelector("[data-blog-featured]");
+  const cards = [...root.querySelectorAll("[data-blog-card]")];
+  const directoryItems = [...root.querySelectorAll("[data-blog-directory-item]")];
+  const sections = [...root.querySelectorAll("[data-blog-section]")];
+  if (!input) return;
+
+  const normalize = (value) => String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const getTerms = () => normalize(input.value).split(" ").filter(Boolean);
+  const isMatch = (element, terms) => {
+    const searchText = element.dataset.blogSearch || normalize(element.textContent);
+    return terms.every((term) => searchText.includes(term));
+  };
+
+  const applyFilter = () => {
+    const terms = getTerms();
+    let visibleItems = 0;
+
+    cards.forEach((card) => {
+      const matched = !terms.length || isMatch(card, terms);
+      card.hidden = !matched;
+    });
+
+    directoryItems.forEach((item) => {
+      const matched = !terms.length || isMatch(item, terms);
+      item.hidden = !matched;
+      if (matched) visibleItems += 1;
+    });
+
+    sections.forEach((section) => {
+      const visibleCards = [...section.querySelectorAll("[data-blog-card]")].some((card) => !card.hidden);
+      section.hidden = terms.length > 0 && !visibleCards;
+    });
+
+    if (featured) {
+      const visibleFeaturedCards = [...featured.querySelectorAll("[data-blog-card]")].some((card) => !card.hidden);
+      featured.hidden = terms.length > 0 && !visibleFeaturedCards;
+    }
+
+    if (status) {
+      status.textContent = terms.length ? `${visibleItems} matches` : `${directoryItems.length} articles`;
+    }
+
+    if (empty) {
+      empty.hidden = visibleItems > 0;
+    }
+  };
+
+  input.addEventListener("input", applyFilter);
+  applyFilter();
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initI18n();
   initHeroCutPlanner();
@@ -3703,4 +3761,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initWaste();
   initQuiltFit();
   initTileCalculator();
+  initBlogDirectorySearch();
 });
