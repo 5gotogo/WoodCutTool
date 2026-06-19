@@ -13,7 +13,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#1e2a23">
-  <link rel="stylesheet" href="/assets/styles.css?v=20260619-app-details">
+  <link rel="stylesheet" href="/assets/styles.css?v=20260619-blog-local-translations">
+  <script src="/assets/app.js?v=20260619-blog-local-translations" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -21,9 +22,15 @@
   <main id="main" class="blog-home" data-blog-index>
     <div class="blog-shell">
       <aside class="blog-directory" aria-label="Blog directory">
-        <div class="blog-directory-panel">
-          <p class="eyebrow">Directory</p>
-          <h2>Find articles faster.</h2>
+        <details class="blog-directory-panel" data-blog-directory-panel>
+          <summary class="blog-directory-summary">
+            <span>
+              <span class="eyebrow">Directory</span>
+              <strong>Find articles faster.</strong>
+            </span>
+            <span class="blog-directory-count">47 articles</span>
+          </summary>
+          <div class="blog-directory-content">
           <label class="blog-search">
             <span>Search the library</span>
             <input type="search" data-blog-search-input autocomplete="off" placeholder="Search CutList, QuiltFit, stairs, tile...">
@@ -274,7 +281,8 @@
             </a>
           </div>
           <p class="blog-search-empty" data-blog-search-empty hidden>No matching articles.</p>
-        </div>
+          </div>
+        </details>
       </aside>
 
       <div class="blog-main">

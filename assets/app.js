@@ -2801,6 +2801,168 @@ Object.entries(playfulInteractionTranslations).forEach(([lang, values]) => {
   translations[lang] = { ...(translations[lang] || {}), ...values };
 });
 
+const blogUiTranslations = {
+  "zh-CN": {
+    "Languages": "语言",
+    "Read this article in another language.": "用其他语言阅读这篇文章。",
+    "Read the blog library in another language.": "用其他语言阅读博客文章库。",
+    "Directory": "目录",
+    "Find articles faster.": "更快查找文章。",
+    "Search the library": "搜索文章库",
+    "No matching articles.": "没有匹配的文章。",
+    "Article translations": "文章翻译",
+    "Industry research library": "行业研究文章库",
+    "Research Lens": "研究视角",
+    "Question": "问题",
+    "Working Insight": "核心洞察",
+    "Decision Metrics": "决策指标",
+    "Field Checklist": "现场检查清单",
+    "Related Articles": "相关文章",
+    "Read guide": "阅读指南"
+  },
+  "zh-TW": {
+    "Languages": "語言",
+    "Read this article in another language.": "用其他語言閱讀這篇文章。",
+    "Read the blog library in another language.": "用其他語言閱讀部落格文章庫。",
+    "Directory": "目錄",
+    "Find articles faster.": "更快查找文章。",
+    "Search the library": "搜尋文章庫",
+    "No matching articles.": "沒有符合的文章。",
+    "Article translations": "文章翻譯",
+    "Industry research library": "產業研究文章庫",
+    "Research Lens": "研究視角",
+    "Question": "問題",
+    "Working Insight": "核心洞察",
+    "Decision Metrics": "決策指標",
+    "Field Checklist": "現場檢查清單",
+    "Related Articles": "相關文章",
+    "Read guide": "閱讀指南"
+  },
+  es: {
+    "Languages": "Idiomas",
+    "Read this article in another language.": "Lee este artículo en otro idioma.",
+    "Read the blog library in another language.": "Lee la biblioteca del blog en otro idioma.",
+    "Directory": "Directorio",
+    "Find articles faster.": "Encuentra artículos más rápido.",
+    "Search the library": "Buscar en la biblioteca",
+    "No matching articles.": "No hay artículos coincidentes.",
+    "Article translations": "Traducciones del artículo",
+    "Research Lens": "Enfoque de investigación",
+    "Question": "Pregunta",
+    "Working Insight": "Hallazgo principal",
+    "Decision Metrics": "Métricas de decisión",
+    "Field Checklist": "Lista de verificación",
+    "Related Articles": "Artículos relacionados",
+    "Read guide": "Leer guía"
+  },
+  pt: {
+    "Languages": "Idiomas",
+    "Read this article in another language.": "Leia este artigo em outro idioma.",
+    "Read the blog library in another language.": "Leia a biblioteca do blog em outro idioma.",
+    "Directory": "Diretório",
+    "Find articles faster.": "Encontre artigos mais rápido.",
+    "Search the library": "Pesquisar na biblioteca",
+    "No matching articles.": "Nenhum artigo encontrado.",
+    "Article translations": "Traduções do artigo",
+    "Research Lens": "Perspectiva de pesquisa",
+    "Question": "Pergunta",
+    "Working Insight": "Insight principal",
+    "Decision Metrics": "Métricas de decisão",
+    "Field Checklist": "Lista de verificação",
+    "Related Articles": "Artigos relacionados",
+    "Read guide": "Ler guia"
+  },
+  fr: {
+    "Languages": "Langues",
+    "Read this article in another language.": "Lire cet article dans une autre langue.",
+    "Read the blog library in another language.": "Lire la bibliothèque du blog dans une autre langue.",
+    "Directory": "Répertoire",
+    "Find articles faster.": "Trouvez les articles plus vite.",
+    "Search the library": "Rechercher dans la bibliothèque",
+    "No matching articles.": "Aucun article correspondant.",
+    "Article translations": "Traductions de l’article",
+    "Research Lens": "Angle de recherche",
+    "Question": "Question",
+    "Working Insight": "Idée clé",
+    "Decision Metrics": "Indicateurs de décision",
+    "Field Checklist": "Liste de contrôle",
+    "Related Articles": "Articles liés",
+    "Read guide": "Lire le guide"
+  },
+  de: {
+    "Languages": "Sprachen",
+    "Read this article in another language.": "Diesen Artikel in einer anderen Sprache lesen.",
+    "Read the blog library in another language.": "Die Blogbibliothek in einer anderen Sprache lesen.",
+    "Directory": "Verzeichnis",
+    "Find articles faster.": "Artikel schneller finden.",
+    "Search the library": "Bibliothek durchsuchen",
+    "No matching articles.": "Keine passenden Artikel.",
+    "Article translations": "Artikelübersetzungen",
+    "Research Lens": "Recherchefokus",
+    "Question": "Frage",
+    "Working Insight": "Zentrale Erkenntnis",
+    "Decision Metrics": "Entscheidungsmetriken",
+    "Field Checklist": "Checkliste",
+    "Related Articles": "Ähnliche Artikel",
+    "Read guide": "Leitfaden lesen"
+  },
+  it: {
+    "Languages": "Lingue",
+    "Read this article in another language.": "Leggi questo articolo in un'altra lingua.",
+    "Read the blog library in another language.": "Leggi la raccolta del blog in un'altra lingua.",
+    "Directory": "Indice",
+    "Find articles faster.": "Trova articoli più rapidamente.",
+    "Search the library": "Cerca nella raccolta",
+    "No matching articles.": "Nessun articolo corrispondente.",
+    "Article translations": "Traduzioni dell’articolo",
+    "Research Lens": "Prospettiva di ricerca",
+    "Question": "Domanda",
+    "Working Insight": "Intuizione principale",
+    "Decision Metrics": "Metriche decisionali",
+    "Field Checklist": "Lista di controllo",
+    "Related Articles": "Articoli correlati",
+    "Read guide": "Leggi guida"
+  },
+  ar: {
+    "Languages": "اللغات",
+    "Read this article in another language.": "اقرأ هذه المقالة بلغة أخرى.",
+    "Read the blog library in another language.": "اقرأ مكتبة المدونة بلغة أخرى.",
+    "Directory": "الفهرس",
+    "Find articles faster.": "اعثر على المقالات بسرعة أكبر.",
+    "Search the library": "ابحث في المكتبة",
+    "No matching articles.": "لا توجد مقالات مطابقة.",
+    "Article translations": "ترجمات المقالة",
+    "Research Lens": "منظور البحث",
+    "Question": "السؤال",
+    "Working Insight": "الرؤية العملية",
+    "Decision Metrics": "مقاييس القرار",
+    "Field Checklist": "قائمة التحقق",
+    "Related Articles": "مقالات ذات صلة",
+    "Read guide": "اقرأ الدليل"
+  },
+  ja: {
+    "Languages": "言語",
+    "Read this article in another language.": "この記事を別の言語で読む。",
+    "Read the blog library in another language.": "ブログライブラリを別の言語で読む。",
+    "Directory": "目次",
+    "Find articles faster.": "記事をすばやく探す。",
+    "Search the library": "ライブラリを検索",
+    "No matching articles.": "一致する記事はありません。",
+    "Article translations": "記事の翻訳",
+    "Research Lens": "リサーチ視点",
+    "Question": "問い",
+    "Working Insight": "実務上の洞察",
+    "Decision Metrics": "判断指標",
+    "Field Checklist": "現場チェックリスト",
+    "Related Articles": "関連記事",
+    "Read guide": "ガイドを読む"
+  }
+};
+
+Object.entries(blogUiTranslations).forEach(([lang, values]) => {
+  translations[lang] = { ...(translations[lang] || {}), ...values };
+});
+
 const originalTextNodes = new WeakMap();
 const originalAttributes = new WeakMap();
 
@@ -2819,6 +2981,22 @@ const normalizeLang = (lang) => {
 };
 
 const getActiveLang = () => normalizeLang(localStorage.getItem("woodcuttool-lang") || navigator.language || "en");
+const isBlogPage = () => Boolean(document.querySelector("[data-blog-index], .blog-article-shell"));
+const googleTranslateLanguages = {
+  "zh-CN": "zh-CN",
+  "zh-TW": "zh-TW",
+  es: "es",
+  pt: "pt",
+  fr: "fr",
+  de: "de",
+  it: "it",
+  ar: "ar",
+  ja: "ja"
+};
+let googleTranslateReady = false;
+let pendingGoogleTranslateLang = null;
+let blogTranslationsPromise = null;
+let blogTranslationsLoaded = false;
 
 const translateString = (text, lang = getActiveLang()) => {
   if (lang === "en") return text;
@@ -2862,6 +3040,93 @@ function translateElement(root = document.body, lang = getActiveLang()) {
   });
 }
 
+function loadBlogTranslations() {
+  if (!isBlogPage()) return Promise.resolve();
+  if (blogTranslationsLoaded) return Promise.resolve();
+  if (!blogTranslationsPromise) {
+    blogTranslationsPromise = fetch("/assets/blog-translations.json?v=20260619-blog-local-translations")
+      .then((response) => {
+        if (!response.ok) throw new Error(`Blog translations failed: ${response.status}`);
+        return response.json();
+      })
+      .then((data) => {
+        Object.entries(data || {}).forEach(([lang, values]) => {
+          translations[lang] = { ...(translations[lang] || {}), ...values };
+        });
+        blogTranslationsLoaded = true;
+      })
+      .catch((error) => {
+        console.warn(error);
+      });
+  }
+  return blogTranslationsPromise;
+}
+
+function ensureGoogleTranslateElement() {
+  if (document.getElementById("google_translate_element")) return;
+  const holder = document.createElement("div");
+  holder.id = "google_translate_element";
+  holder.className = "google-translate-holder";
+  holder.setAttribute("aria-hidden", "true");
+  document.body.appendChild(holder);
+}
+
+function setGoogleTranslateCookie(lang) {
+  const value = lang === "en" ? "" : `/en/${googleTranslateLanguages[lang] || lang}`;
+  const cookie = value ? `googtrans=${value}; path=/` : "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+  document.cookie = cookie;
+  document.cookie = cookie.replace("path=/", `domain=.${location.hostname}; path=/`);
+}
+
+function applyGoogleTranslate(lang) {
+  if (!isBlogPage()) return;
+  if (lang === "zh-CN" || lang === "zh-TW") return;
+  const code = googleTranslateLanguages[lang];
+  if (lang === "en") {
+    setGoogleTranslateCookie("en");
+    return;
+  }
+  if (!code) return;
+
+  pendingGoogleTranslateLang = lang;
+  setGoogleTranslateCookie(lang);
+  ensureGoogleTranslateElement();
+
+  if (!window.google?.translate?.TranslateElement && !document.querySelector("script[data-google-translate]")) {
+    window.googleTranslateElementInit = () => {
+      googleTranslateReady = true;
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: "en",
+          includedLanguages: Object.values(googleTranslateLanguages).join(","),
+          autoDisplay: false
+        },
+        "google_translate_element"
+      );
+      applyGoogleTranslate(pendingGoogleTranslateLang || lang);
+    };
+
+    const script = document.createElement("script");
+    script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+    script.async = true;
+    script.dataset.googleTranslate = "true";
+    document.head.appendChild(script);
+    return;
+  }
+
+  const combo = document.querySelector(".goog-te-combo");
+  if (!combo) {
+    if (!googleTranslateReady) return;
+    window.setTimeout(() => applyGoogleTranslate(lang), 250);
+    return;
+  }
+
+  if (combo.value !== code) {
+    combo.value = code;
+    combo.dispatchEvent(new Event("change"));
+  }
+}
+
 function setLanguage(lang) {
   const nextLang = normalizeLang(lang);
   localStorage.setItem("woodcuttool-lang", nextLang);
@@ -2870,6 +3135,10 @@ function setLanguage(lang) {
   const selector = document.getElementById("language-select");
   if (selector) selector.value = nextLang;
   translateElement(document.body, nextLang);
+  if (isBlogPage() && nextLang !== "en") {
+    loadBlogTranslations().then(() => translateElement(document.body, nextLang));
+  }
+  applyGoogleTranslate(nextLang);
 }
 
 function initI18n() {

@@ -157,6 +157,24 @@ canvas {
   background: var(--surface);
 }
 
+.google-translate-holder {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+body > .skiptranslate,
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
 [dir="rtl"] body {
   text-align: right;
 }
@@ -2992,14 +3010,61 @@ form > .button,
   box-shadow: 0 16px 38px rgba(39, 44, 36, 0.08);
 }
 
-.blog-directory-panel h2 {
+.blog-directory-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.blog-directory-summary::-webkit-details-marker {
+  display: none;
+}
+
+.blog-directory-summary strong {
+  display: block;
   margin-top: 6px;
+  color: var(--ink);
   font-size: 1.22rem;
   line-height: 1.15;
 }
 
-.blog-search {
+.blog-directory-summary::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  flex: 0 0 auto;
+  border-right: 3px solid var(--accent);
+  border-bottom: 3px solid var(--accent);
+  transform: rotate(45deg);
+  transition: transform 0.18s ease;
+}
+
+.blog-directory-panel[open] .blog-directory-summary::after {
+  transform: rotate(225deg);
+}
+
+.blog-directory-count {
+  margin-left: auto;
+  padding: 8px 11px;
+  border-radius: 999px;
+  color: var(--accent);
+  background: rgba(47, 111, 78, 0.1);
+  font-size: 12px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.blog-directory-content {
   margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.blog-search {
+  margin-top: 0;
 }
 
 .blog-search input {
@@ -3830,6 +3895,20 @@ form > .button,
     grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
     align-items: start;
     padding: 28px 24px 54px;
+  }
+
+  .blog-shell:has(.blog-directory-panel:not([open])) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .blog-shell:has(.blog-directory-panel:not([open])) .blog-directory {
+    width: 100%;
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+
+  .blog-shell:has(.blog-directory-panel:not([open])) .blog-main {
+    min-width: 0;
   }
 
   .blog-directory-panel {
