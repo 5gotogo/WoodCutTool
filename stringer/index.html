@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stringer Calculator - Stair Risers, Treads, and Angle | WoodcutTool</title>
+  <meta name="description" content="Free stair stringer calculator for total rise and run. Calculate riser height, tread depth, number of steps, stair angle, and stringer length.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/stringer/">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/app.js"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Stringer Calculator","url":"https://woodcuttool.com/stringer/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Client-side stair stringer calculator for risers, treads, angles, and stringer length."}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodcutTool</a><div class="nav-links"><a href="/cutlist/">CutList</a><a href="/quiltfit/">QuiltFit</a><a href="/tile-calculator/">Tile</a><a class="active" href="/stringer/">Stringer</a></div><a class="button small" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow">Download CutList</a></nav></header>
+  <main id="main">
+    <section class="section"><p class="breadcrumb"><a href="/">Home</a> / Stringer Calculator</p><p class="eyebrow">Stair layout tool</p><h1>Stringer Calculator</h1><p class="lead">Calculate riser count, riser height, tread depth, stair angle, plumb cut angle, and approximate stringer length from total rise and run.</p></section>
+    <section class="section tool-layout">
+      <div class="tool-panel">
+        <form id="stair-form">
+          <fieldset>
+            <legend>Stair dimensions</legend>
+            <div class="input-grid four">
+              <label>Total rise (in) <input name="totalRise" type="number" min="1" step="0.01" value="108"></label>
+              <label>Total run (in) <input name="totalRun" type="number" min="0" step="0.01" value="120"></label>
+              <label>Max riser (in) <input name="maxRiser" type="number" min="1" step="0.01" value="7.75"></label>
+              <label>Target tread (in) <input name="targetTread" type="number" min="1" step="0.01" value="10"></label>
+            </div>
+          </fieldset>
+          <button class="button" type="submit">Calculate stringer</button>
+        </form>
+      </div>
+      <aside class="result-panel" id="stair-result" aria-live="polite">
+        <h2>Stringer results</h2>
+        <p class="placeholder">Run the calculator to get riser height, tread depth, number of steps, and cutting angles.</p>
+      </aside>
+    </section>
+    <section class="section"><div class="grid tools"><article class="card"><h2>CutList</h2><p>Optimize straight board cuts before buying lumber.</p><a class="card-link" href="/cutlist/">Open CutList</a></article><article class="card"><h2>Tile calculator</h2><p>Estimate floor tile count, boxes, and waste.</p><a class="card-link" href="/tile-calculator/">Open tile calculator</a></article><article class="card"><h2>QuiltFit</h2><p>Calculate quilt blocks, backing, batting, and binding.</p><a class="card-link" href="/quiltfit/">Open QuiltFit</a></article></div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodcutTool</span></a>
+        <nav class="footer-links footer-primary" aria-label="Footer navigation">
+          <a href="/cutlist/">CutList</a>
+          <a href="/plywood-cut-calculator/">Plywood</a>
+          <a href="/stair-stringer-calculator/">Stairs</a>
+          <a href="/#guides">Guides</a>
+          <a href="mailto:727268425@qq.com">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="muted"><span>© 2026 WoodcutTool.</span> <span>All rights reserved.</span></p>
+        <nav class="footer-links footer-legal" aria-label="Legal navigation">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms-of-service/">Terms of Service</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

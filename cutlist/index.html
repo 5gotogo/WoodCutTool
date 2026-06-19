@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CutList Calculator - Optimize Board Cuts Online | WoodcutTool</title>
+  <meta name="description" content="Free CutList calculator for woodworking. Enter board size, part dimensions, quantities, and kerf to get an optimized cutting plan and waste percentage.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/cutlist/">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/app.js"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"CutList Calculator","url":"https://woodcuttool.com/cutlist/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Client-side woodworking cut list calculator that estimates optimized board cuts and waste."}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="/"><span class="brand-mark">W</span>WoodcutTool</a>
+      <div class="nav-links">
+        <a class="active" href="/cutlist/">CutList</a>
+        <a href="/quiltfit/">QuiltFit</a>
+        <a href="/tile-calculator/">Tile</a>
+        <a href="/stringer/">Stringer</a>
+      </div>
+      <a class="button small" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow">Download CutList</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <p class="breadcrumb"><a href="/">Home</a> / CutList Calculator</p>
+      <p class="eyebrow">Woodworking cut optimizer</p>
+      <h1>CutList Calculator</h1>
+      <p class="lead">Calculate a board-by-board cutting plan from stock dimensions, part sizes, quantities, and saw kerf. The optimizer runs in your browser with no server dependency.</p>
+    </section>
+
+    <section class="section tool-layout">
+      <div class="tool-panel">
+        <form id="cut-list-form">
+          <fieldset>
+            <legend>Stock board</legend>
+            <div class="input-grid four">
+              <label>Board length (in) <input name="boardLength" type="number" min="1" step="0.01" value="96"></label>
+              <label>Board width (in) <input name="boardWidth" type="number" min="0" step="0.01" value="8"></label>
+              <label>Board thickness (in) <input name="boardThickness" type="number" min="0" step="0.01" value="0.75"></label>
+              <label>Saw kerf (in) <input name="kerf" type="number" min="0" step="0.001" value="0.125"></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Cut pieces</legend>
+            <div class="rows" id="cut-rows">
+              <div class="piece-row four">
+                <label>Part name <input name="label" value="Side panel"></label>
+                <label>Length (in) <input name="length" type="number" min="0.01" step="0.01" value="32"></label>
+                <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="7.25"></label>
+                <label>Qty <input name="qty" type="number" min="1" step="1" value="2"></label>
+                <button class="button secondary remove-row" type="button">Remove</button>
+              </div>
+              <div class="piece-row four">
+                <label>Part name <input name="label" value="Shelf"></label>
+                <label>Length (in) <input name="length" type="number" min="0.01" step="0.01" value="24"></label>
+                <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="7.25"></label>
+                <label>Qty <input name="qty" type="number" min="1" step="1" value="3"></label>
+                <button class="button secondary remove-row" type="button">Remove</button>
+              </div>
+            </div>
+            <div class="row-actions">
+              <button class="button secondary" id="add-cut-row" type="button">Add part</button>
+            </div>
+          </fieldset>
+          <button class="button" type="submit">Optimize cut list</button>
+        </form>
+      </div>
+
+      <aside class="result-panel" id="cut-list-result" aria-live="polite">
+        <h2>Cut plan results</h2>
+        <p class="placeholder">Enter your pieces and run the calculator to see boards required, cut sequence, and waste percentage.</p>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="grid tools">
+        <article class="card"><h2>QuiltFit</h2><p>Plan quilt block counts, backing, batting, and binding.</p><a class="card-link" href="/quiltfit/">Open QuiltFit</a></article>
+        <article class="card"><h2>Tile calculator</h2><p>Estimate tile count, boxes, waste, and material cost.</p><a class="card-link" href="/tile-calculator/">Open tile calculator</a></article>
+        <article class="card"><h2>Stringer calculator</h2><p>Calculate stair risers, treads, angle, and stringer length.</p><a class="card-link" href="/stringer/">Open stringer</a></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodcutTool</span></a>
+        <nav class="footer-links footer-primary" aria-label="Footer navigation">
+          <a href="/cutlist/">CutList</a>
+          <a href="/plywood-cut-calculator/">Plywood</a>
+          <a href="/stair-stringer-calculator/">Stairs</a>
+          <a href="/#guides">Guides</a>
+          <a href="mailto:727268425@qq.com">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="muted"><span>© 2026 WoodcutTool.</span> <span>All rights reserved.</span></p>
+        <nav class="footer-links footer-legal" aria-label="Legal navigation">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms-of-service/">Terms of Service</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

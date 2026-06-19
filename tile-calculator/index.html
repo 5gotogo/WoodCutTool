@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tile Calculator - Tiles, Boxes, Waste, and Cost | WoodcutTool</title>
+  <meta name="description" content="Free tile calculator for floors and walls. Estimate tile count, waste allowance, boxes required, coverage, edge cuts, and material cost.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/tile-calculator/">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/app.js"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Tile Calculator","url":"https://woodcuttool.com/tile-calculator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Client-side tile calculator for tile quantity, box count, waste allowance, and estimated material cost."}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodcutTool</a><div class="nav-links"><a href="/cutlist/">CutList</a><a href="/quiltfit/">QuiltFit</a><a class="active" href="/tile-calculator/">Tile</a><a href="/stringer/">Stringer</a></div><a class="button small" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow">Download CutList</a></nav></header>
+  <main id="main">
+    <section class="section"><p class="breadcrumb"><a href="/">Home</a> / Tile Calculator</p><p class="eyebrow">Floor and wall tile estimator</p><h1>Tile Calculator</h1><p class="lead">Estimate how many tiles and boxes to buy from room size, tile size, grout joint, waste allowance, box coverage, and price per box.</p></section>
+
+    <section class="section tool-layout">
+      <div class="tool-panel">
+        <form id="tile-form">
+          <fieldset>
+            <legend>Room size</legend>
+            <div class="input-grid two">
+              <label>Room length (ft) <input name="roomLength" type="number" min="0.01" step="0.01" value="12"></label>
+              <label>Room width (ft) <input name="roomWidth" type="number" min="0.01" step="0.01" value="10"></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Tile setup</legend>
+            <div class="input-grid four">
+              <label>Tile length (in) <input name="tileLength" type="number" min="0.01" step="0.01" value="12"></label>
+              <label>Tile width (in) <input name="tileWidth" type="number" min="0.01" step="0.01" value="12"></label>
+              <label>Grout joint (in) <input name="grout" type="number" min="0" step="0.001" value="0.125"></label>
+              <label>Waste allowance (%) <input name="wastePercent" type="number" min="0" step="0.1" value="10"></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Box and cost</legend>
+            <div class="input-grid two">
+              <label>Box coverage (ft²) <input name="boxCoverage" type="number" min="0.01" step="0.01" value="15"></label>
+              <label>Price per box <input name="pricePerBox" type="number" min="0" step="0.01" value="42"></label>
+            </div>
+          </fieldset>
+          <button class="button" type="submit">Calculate tile</button>
+        </form>
+      </div>
+      <aside class="result-panel" id="tile-result" aria-live="polite">
+        <h2>Tile results</h2>
+        <p class="placeholder">Run the calculator to see tiles to buy, boxes required, material coverage, cost, and a simple layout preview.</p>
+      </aside>
+    </section>
+
+    <section class="section"><div class="grid tools"><article class="card"><h2>CutList</h2><p>Plan board cuts and waste before cutting material.</p><a class="card-link" href="/cutlist/">Open CutList</a></article><article class="card"><h2>QuiltFit</h2><p>Fit blocks, backing, batting, and binding for quilt planning.</p><a class="card-link" href="/quiltfit/">Open QuiltFit</a></article><article class="card"><h2>Stringer</h2><p>Calculate stair risers, treads, angles, and stringer length.</p><a class="card-link" href="/stringer/">Open stringer</a></article></div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodcutTool</span></a>
+        <nav class="footer-links footer-primary" aria-label="Footer navigation">
+          <a href="/cutlist/">CutList</a>
+          <a href="/plywood-cut-calculator/">Plywood</a>
+          <a href="/stair-stringer-calculator/">Stairs</a>
+          <a href="/#guides">Guides</a>
+          <a href="mailto:727268425@qq.com">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="muted"><span>© 2026 WoodcutTool.</span> <span>All rights reserved.</span></p>
+        <nav class="footer-links footer-legal" aria-label="Legal navigation">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms-of-service/">Terms of Service</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

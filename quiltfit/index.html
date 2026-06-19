@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuiltFit Calculator - Quilt Blocks, Backing, Binding, and App | WoodcutTool</title>
+  <meta name="description" content="Free QuiltFit calculator for quilt planning. Calculate block rows, columns, cut size, backing fabric, batting, and binding, then continue in the QuiltFit iPhone app.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/quiltfit/">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/app.js"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"QuiltFit Calculator","url":"https://woodcuttool.com/quiltfit/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Client-side quilt planning calculator for block layout, backing, batting, and binding estimates."}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodcutTool</a><div class="nav-links"><a href="/cutlist/">CutList</a><a class="active" href="/quiltfit/">QuiltFit</a><a href="/tile-calculator/">Tile</a><a href="/stringer/">Stringer</a></div><a class="button small" href="https://apps.apple.com/us/app/quiltfit-quilt-design-planner/id6776541705" rel="nofollow">Download QuiltFit</a></nav></header>
+  <main id="main">
+    <section class="section"><p class="breadcrumb"><a href="/">Home</a> / QuiltFit Calculator</p><p class="eyebrow">Quilt layout planner</p><h1>QuiltFit Calculator</h1><p class="lead">Fit a quilt top from finished size, block size, seam allowance, border width, and backing overage. The calculator estimates blocks, backing, batting, and binding, then sends serious planning into QuiltFit for iPhone.</p><div class="hero-actions"><a class="button" href="#quiltfit-form">Calculate quilt fit</a><a class="button secondary" href="https://apps.apple.com/us/app/quiltfit-quilt-design-planner/id6776541705" rel="nofollow">Download QuiltFit iOS</a></div></section>
+
+    <section class="section tool-layout">
+      <div class="tool-panel">
+        <form id="quiltfit-form">
+          <fieldset>
+            <legend>Finished quilt</legend>
+            <div class="input-grid four">
+              <label>Target width (in) <input name="quiltWidth" type="number" min="1" step="0.01" value="60"></label>
+              <label>Target length (in) <input name="quiltLength" type="number" min="1" step="0.01" value="72"></label>
+              <label>Finished block (in) <input name="blockSize" type="number" min="1" step="0.01" value="10"></label>
+              <label>Seam allowance (in) <input name="seamAllowance" type="number" min="0" step="0.01" value="0.25"></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Fabric setup</legend>
+            <div class="input-grid three">
+              <label>Border width (in) <input name="borderWidth" type="number" min="0" step="0.01" value="2"></label>
+              <label>Backing overage per side (in) <input name="backingOverage" type="number" min="0" step="0.01" value="4"></label>
+              <label>Fabric width (in) <input name="fabricWidth" type="number" min="1" step="0.01" value="42"></label>
+            </div>
+          </fieldset>
+          <button class="button" type="submit">Calculate quilt fit</button>
+        </form>
+      </div>
+      <aside class="result-panel" id="quiltfit-result" aria-live="polite">
+        <h2>Quilt results</h2>
+        <p class="placeholder">Run the calculator to see block count, finished top size, backing fabric, batting size, and binding estimate.</p>
+        <div class="cta-panel" id="download-quiltfit">
+          <h3>Continue in QuiltFit</h3>
+          <p>Use the iPhone app for pattern design, fabric shopping lists, visual cutting plans, cut-piece tracking, and step-by-step sewing.</p>
+          <div class="cta-row"><a class="button" href="https://apps.apple.com/us/app/quiltfit-quilt-design-planner/id6776541705" rel="nofollow">Download QuiltFit iOS</a></div>
+          <ul class="feature-list"><li>Design quilt patterns</li><li>Fabric shopping list</li><li>Visual cutting plan</li></ul>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section"><div class="grid tools"><article class="card"><h2>CutList</h2><p>Optimize boards and parts for workshop projects.</p><a class="card-link" href="/cutlist/">Open CutList</a></article><article class="card"><h2>Tile calculator</h2><p>Estimate boxes and waste for floor or wall tile.</p><a class="card-link" href="/tile-calculator/">Open tile calculator</a></article><article class="card"><h2>Stringer</h2><p>Calculate stair layout from rise and run.</p><a class="card-link" href="/stringer/">Open stringer</a></article></div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodcutTool</span></a>
+        <nav class="footer-links footer-primary" aria-label="Footer navigation">
+          <a href="/cutlist/">CutList</a>
+          <a href="/plywood-cut-calculator/">Plywood</a>
+          <a href="/stair-stringer-calculator/">Stairs</a>
+          <a href="/#guides">Guides</a>
+          <a href="mailto:727268425@qq.com">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="muted"><span>© 2026 WoodcutTool.</span> <span>All rights reserved.</span></p>
+        <nav class="footer-links footer-legal" aria-label="Legal navigation">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms-of-service/">Terms of Service</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

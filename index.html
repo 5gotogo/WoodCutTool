@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cut List Optimizer and Plywood Cutting Calculator | WoodcutTool</title>
+  <meta name="description" content="Free cut list optimizer, plywood cutting optimizer, sheet cutting calculator, and woodworking calculator for material waste reduction. Try a browser-based cut planner instantly.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/app.js"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"WoodcutTool","url":"https://woodcuttool.com/","description":"Browser-based cut list optimizer, plywood cutting optimizer, sheet cutting calculator, and woodworking calculator for material waste reduction.","potentialAction":{"@type":"SearchAction","target":"https://woodcuttool.com/?q={search_term_string}","query-input":"required name=search_term_string"}}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="/"><span class="brand-mark">W</span>WoodcutTool</a>
+      <div class="nav-links">
+        <a class="active" href="/cutlist/">CutList</a>
+        <a href="/quiltfit/">QuiltFit</a>
+        <a href="/tile-calculator/">Tile</a>
+        <a href="/stringer/">Stringer</a>
+      </div>
+      <a class="button small" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow">Download CutList</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-lab">
+      <div class="hero-copy">
+        <p class="eyebrow">CutList visual planner</p>
+        <h1>Plywood cutting optimizer</h1>
+        <h2 class="hero-subtitle">Generate a visual sheet layout before you cut.</h2>
+        <div class="hero-actions">
+          <a class="button" href="/cutlist/">Start Free Optimization</a>
+          <a class="button secondary" href="#hero-cut-planner">Try Cut Planner Instantly</a>
+        </div>
+        <div class="hero-badges" aria-label="WoodcutTool trust points">
+          <span>No login</span>
+          <span>Browser only</span>
+          <span>No upload</span>
+        </div>
+      </div>
+      <div class="hero-planner cut-lab" id="hero-cut-planner" aria-label="Instant sheet cutting calculator">
+        <div class="planner-head">
+          <span class="proof-label">Live cut board</span>
+          <strong>Try the layout</strong>
+        </div>
+        <div class="lab-presets" role="group" aria-label="Cut plan presets">
+          <button class="active" type="button" data-preset="cabinet">Cabinet</button>
+          <button type="button" data-preset="shelves">Shelves</button>
+          <button type="button" data-preset="desk">Desk</button>
+        </div>
+        <form id="hero-cut-form" class="hero-cut-form">
+          <label>Sheet width
+            <input name="sheetWidth" type="number" inputmode="numeric" min="1" value="2440">
+          </label>
+          <label>Sheet height
+            <input name="sheetHeight" type="number" inputmode="numeric" min="1" value="1220">
+          </label>
+          <label class="range-label">Waste target
+            <input name="wasteTarget" type="range" min="8" max="35" value="18">
+          </label>
+          <button class="button" type="submit">Animate Optimization</button>
+        </form>
+        <div class="control-group-label">Add sample parts</div>
+        <div class="part-tray" aria-label="Add sample parts">
+          <button type="button" data-add-part="side"><span class="tray-swatch blue"></span>Add side panel</button>
+          <button type="button" data-add-part="shelf"><span class="tray-swatch amber"></span>Add shelf</button>
+          <button type="button" data-add-part="back"><span class="tray-swatch green"></span>Add back panel</button>
+        </div>
+        <div class="control-group-label">Demo actions</div>
+        <div class="lab-actions">
+          <button type="button" data-shuffle-layout>Random demo</button>
+          <button type="button" data-toggle-before>Compare before optimization</button>
+        </div>
+        <div class="hero-plan-preview" id="hero-plan-preview" aria-live="polite">
+          <div class="planner-sheet advanced-sheet" aria-hidden="true">
+            <span class="planner-part one">A</span>
+            <span class="planner-part two">B</span>
+            <span class="planner-part three">C</span>
+            <span class="planner-part four">D</span>
+            <span class="planner-part five">E</span>
+            <span class="planner-waste">18% waste</span>
+          </div>
+          <div class="lab-stats">
+            <div><strong>2</strong><span>Sheets needed</span></div>
+            <div><strong>5</strong><span>Parts packed</span></div>
+            <div><strong>$48</strong><span>Saved</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section visual-flow-section">
+      <div class="section-heading compact">
+        <p class="eyebrow">Visual workflow</p>
+        <h2>From rough idea to cut-ready board.</h2>
+      </div>
+      <div class="visual-flow-grid">
+        <article>
+          <div class="flow-visual measure-visual" aria-hidden="true"><span></span><span></span><span></span></div>
+          <strong>Measure</strong>
+          <span>Sheet size and parts.</span>
+        </article>
+        <article>
+          <div class="flow-visual pack-visual" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <strong>Pack</strong>
+          <span>Layout updates instantly.</span>
+        </article>
+        <article>
+          <div class="flow-visual save-visual" aria-hidden="true"><span></span><span></span></div>
+          <strong>Save</strong>
+          <span>Less waste, clearer cuts.</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section visual-tools-section">
+      <div class="section-heading compact">
+        <p class="eyebrow">Visual tool picker</p>
+        <h2>Choose a calculator by looking at the job.</h2>
+        <p>CutList is the primary plywood layout tool; QuiltFit, Tile, and Stringer cover the other planning moments.</p>
+      </div>
+      <div class="visual-tool-grid">
+        <a class="visual-tool-card primary" href="/cutlist/" aria-label="Open CutList plywood cutting optimizer">
+          <div class="tool-visual cutlist-visual" aria-hidden="true">
+            <span class="cut-piece p1"></span>
+            <span class="cut-piece p2"></span>
+            <span class="cut-piece p3"></span>
+            <span class="cut-piece p4"></span>
+            <span class="cut-waste"></span>
+          </div>
+          <div>
+            <span class="tool-kicker">Primary</span>
+            <h3>CutList optimizer</h3>
+            <p>Plywood layout, cut order, waste.</p>
+            <span class="card-link">Start Free Optimization -&gt;</span>
+          </div>
+        </a>
+        <a class="visual-tool-card" href="/quiltfit/" aria-label="Open QuiltFit quilt planner">
+          <div class="tool-visual quiltfit-visual" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div>
+            <span class="tool-kicker">App</span>
+            <h3>QuiltFit planner</h3>
+            <p>Blocks, backing, binding.</p>
+            <span class="card-link">Open QuiltFit -&gt;</span>
+          </div>
+        </a>
+        <a class="visual-tool-card" href="/tile-calculator/" aria-label="Open Tile Calculator">
+          <div class="tool-visual tile-visual" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div>
+            <span class="tool-kicker">Floor</span>
+            <h3>Tile calculator</h3>
+            <p>Boxes, cuts, waste.</p>
+            <span class="card-link">Open Tile Calculator -&gt;</span>
+          </div>
+        </a>
+        <a class="visual-tool-card" href="/stringer/" aria-label="Open Stair Stringer Calculator">
+          <div class="tool-visual stringer-visual" aria-hidden="true">
+            <span class="stringer-line"></span>
+            <span class="step s1"></span>
+            <span class="step s2"></span>
+            <span class="step s3"></span>
+            <span class="angle-mark">34°</span>
+          </div>
+          <div>
+            <span class="tool-kicker">Stairs</span>
+            <h3>Stringer calculator</h3>
+            <p>Rise, run, angles.</p>
+            <span class="card-link">Open Stringer -&gt;</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="guides">
+      <div class="visual-proof-panel">
+        <div class="section-heading compact">
+          <p class="eyebrow">Real cut preview</p>
+          <h2>See the waste before the saw starts.</h2>
+          <p>A visual material optimization tool makes the decision obvious: buy less, cut cleaner, keep useful offcuts.</p>
+        </div>
+        <div class="before-after-visual" aria-label="Before and after plywood layout comparison">
+          <article>
+            <span class="proof-label">Before</span>
+            <strong>4 sheets</strong>
+            <div class="sheet-stack before-stack" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <small>42% waste risk</small>
+          </article>
+          <article class="optimized">
+            <span class="proof-label">After</span>
+            <strong>3 sheets</strong>
+            <div class="sheet-stack after-stack" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <small>21% waste estimate</small>
+          </article>
+        </div>
+        <div class="visual-stats">
+          <div><strong>1</strong><span>sheet saved</span></div>
+          <div><strong>$55</strong><span>typical savings</span></div>
+          <div><strong>0</strong><span>CAD setup</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="cta-panel app-cta-panel" id="download-cutlist">
+        <div>
+          <h2>Plan in the browser. Save in the app.</h2>
+          <p>Start with the free woodworking calculator, then keep real CutList projects offline on iPhone.</p>
+          <div class="cta-row">
+            <a class="button" href="/cutlist/">Try Cut Planner Instantly</a>
+            <a class="button ghost" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow">Download CutList</a>
+          </div>
+          <ul class="feature-list">
+            <li>Offline projects</li>
+            <li>PDF export</li>
+            <li>Cut history</li>
+          </ul>
+        </div>
+        <div class="phone-preview" aria-hidden="true">
+          <div class="phone-bar"></div>
+          <div class="phone-sheet">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div class="phone-list">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Woodworking guides</p>
+        <h2>Learn how to reduce material waste.</h2>
+      </div>
+      <div class="guide-grid">
+        <article class="article-card">
+          <div class="guide-thumb plywood-thumb" aria-hidden="true"></div>
+          <h3>Plywood Cutting Optimization</h3>
+          <p>Grain, kerf, batching.</p>
+          <a class="card-link" href="/blog/plywood-cutting-optimization/">Read guide</a>
+        </article>
+        <article class="article-card">
+          <div class="guide-thumb stair-thumb" aria-hidden="true"></div>
+          <h3>Stair Stringer Calculator Guide</h3>
+          <p>Rise, tread count, angle.</p>
+          <a class="card-link" href="/blog/stair-stringer-calculator-guide/">Read guide</a>
+        </article>
+        <article class="article-card">
+          <div class="guide-thumb cutlist-thumb" aria-hidden="true"></div>
+          <h3>Cut List Optimization Tips</h3>
+          <p>Group cuts, reduce waste.</p>
+          <a class="card-link" href="/blog/cut-list-optimization-tips/">Read guide</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodcutTool</span></a>
+        <nav class="footer-links footer-primary" aria-label="Footer navigation">
+          <a href="/cutlist/">CutList</a>
+          <a href="/plywood-cut-calculator/">Plywood</a>
+          <a href="/stair-stringer-calculator/">Stairs</a>
+          <a href="/#guides">Guides</a>
+          <a href="mailto:727268425@qq.com">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="muted"><span>© 2026 WoodcutTool.</span> <span>All rights reserved.</span></p>
+        <nav class="footer-links footer-legal" aria-label="Legal navigation">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms-of-service/">Terms of Service</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

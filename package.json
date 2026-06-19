@@ -1,0 +1,11 @@
+{
+  "name": "woodcuttool",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static WoodcutTool website for Cloudflare Pages.",
+  "scripts": {
+    "dev": "python3 -m http.server 4175 --bind 0.0.0.0",
+    "build": "node scripts/validate-site.mjs",
+    "check": "node scripts/validate-site.mjs"
+  }
+}

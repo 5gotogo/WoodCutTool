@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cut List Calculator - Optimize Board Cuts Online | WoodcutTool</title>
+  <meta name="description" content="Free cut list calculator for woodworking. Enter board size, part dimensions, quantities, and kerf to get an optimized cutting plan and waste percentage.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/cut-list-calculator/">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/app.js"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Cut List Calculator","url":"https://woodcuttool.com/cut-list-calculator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Client-side woodworking cut list calculator that estimates optimized board cuts and waste."}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="/"><span class="brand-mark">W</span>WoodcutTool</a>
+      <div class="nav-links">
+        <a class="active" href="/cut-list-calculator/">Cut List</a>
+        <a href="/plywood-cut-calculator/">Plywood</a>
+        <a href="/stair-stringer-calculator/">Stairs</a>
+        <a href="/board-foot-calculator/">Board Feet</a>
+        <a href="/wood-waste-calculator/">Waste</a>
+      </div>
+      <a class="button small" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow">Download CutList</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <p class="breadcrumb"><a href="/">Home</a> / Cut List Calculator</p>
+      <p class="eyebrow">Woodworking cut optimizer</p>
+      <h1>Cut List Calculator</h1>
+      <p class="lead">Calculate a board-by-board cutting plan from stock dimensions, part sizes, quantities, and saw kerf. The optimizer runs in your browser with no server dependency.</p>
+    </section>
+
+    <section class="section tool-layout">
+      <div class="tool-panel">
+        <form id="cut-list-form">
+          <fieldset>
+            <legend>Stock board</legend>
+            <div class="input-grid four">
+              <label>Board length (in) <input name="boardLength" type="number" min="1" step="0.01" value="96"></label>
+              <label>Board width (in) <input name="boardWidth" type="number" min="0" step="0.01" value="8"></label>
+              <label>Board thickness (in) <input name="boardThickness" type="number" min="0" step="0.01" value="0.75"></label>
+              <label>Saw kerf (in) <input name="kerf" type="number" min="0" step="0.001" value="0.125"></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Cut pieces</legend>
+            <div class="rows" id="cut-rows">
+              <div class="piece-row four">
+                <label>Part name <input name="label" value="Side panel"></label>
+                <label>Length (in) <input name="length" type="number" min="0.01" step="0.01" value="32"></label>
+                <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="7.25"></label>
+                <label>Qty <input name="qty" type="number" min="1" step="1" value="2"></label>
+                <button class="button secondary remove-row" type="button">Remove</button>
+              </div>
+              <div class="piece-row four">
+                <label>Part name <input name="label" value="Shelf"></label>
+                <label>Length (in) <input name="length" type="number" min="0.01" step="0.01" value="24"></label>
+                <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="7.25"></label>
+                <label>Qty <input name="qty" type="number" min="1" step="1" value="3"></label>
+                <button class="button secondary remove-row" type="button">Remove</button>
+              </div>
+            </div>
+            <div class="row-actions">
+              <button class="button secondary" id="add-cut-row" type="button">Add part</button>
+            </div>
+          </fieldset>
+          <button class="button" type="submit">Optimize cut list</button>
+        </form>
+      </div>
+
+      <aside class="result-panel" id="cut-list-result" aria-live="polite">
+        <h2>Cut plan results</h2>
+        <p class="placeholder">Enter your pieces and run the calculator to see boards required, cut sequence, and waste percentage.</p>
+        <div class="cta-panel">
+          <h3>Need saved projects and PDFs?</h3>
+          <p>CutList for iPhone keeps plans offline, exports PDF cut sheets, and saves project history.</p>
+          <a class="button" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow">Download CutList iOS</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="grid tools">
+        <article class="card"><h2>Related plywood layout</h2><p>Cut sheet goods for cabinets, shelving, and built-ins.</p><a class="card-link" href="/plywood-cut-calculator/">Open plywood calculator</a></article>
+        <article class="card"><h2>Reduce waste</h2><p>Estimate scrap area and material cost before buying lumber.</p><a class="card-link" href="/wood-waste-calculator/">Open waste calculator</a></article>
+        <article class="card"><h2>Cut list tips</h2><p>Learn how kerf, batching, and sorting affect real shop results.</p><a class="card-link" href="/blog/cut-list-optimization-tips/">Read optimization tips</a></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodcutTool</span></a>
+        <nav class="footer-links footer-primary" aria-label="Footer navigation">
+          <a href="/cutlist/">CutList</a>
+          <a href="/plywood-cut-calculator/">Plywood</a>
+          <a href="/stair-stringer-calculator/">Stairs</a>
+          <a href="/#guides">Guides</a>
+          <a href="mailto:727268425@qq.com">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="muted"><span>© 2026 WoodcutTool.</span> <span>All rights reserved.</span></p>
+        <nav class="footer-links footer-legal" aria-label="Legal navigation">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms-of-service/">Terms of Service</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
