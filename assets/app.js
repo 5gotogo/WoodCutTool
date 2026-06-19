@@ -3044,7 +3044,7 @@ function loadBlogTranslations() {
   if (!isBlogPage()) return Promise.resolve();
   if (blogTranslationsLoaded) return Promise.resolve();
   if (!blogTranslationsPromise) {
-    blogTranslationsPromise = fetch("/assets/blog-translations.json?v=20260619-blog-local-translations")
+    blogTranslationsPromise = fetch("/assets/blog-translations.json?v=20260620-blog-hidden-filter")
       .then((response) => {
         if (!response.ok) throw new Error(`Blog translations failed: ${response.status}`);
         return response.json();
@@ -3972,39 +3972,61 @@ function initBlogDirectorySearch() {
   const featured = root.querySelector("[data-blog-featured]");
   const cards = [...root.querySelectorAll("[data-blog-card]")];
   const directoryItems = [...root.querySelectorAll("[data-blog-directory-item]")];
+  const categoryLinks = [...root.querySelectorAll("[data-blog-category-link]")];
   const sections = [...root.querySelectorAll("[data-blog-section]")];
   if (!input) return;
 
-  const normalize = (value) => String(value || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+  const normalize = (value) => String(value || "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
   const getTerms = () => normalize(input.value).split(" ").filter(Boolean);
   const isMatch = (element, terms) => {
-    const searchText = element.dataset.blogSearch || normalize(element.textContent);
+    const searchText = `${element.dataset.blogSearch || ""} ${normalize(element.textContent)}`;
     return terms.every((term) => searchText.includes(term));
   };
 
   const applyFilter = () => {
     const terms = getTerms();
     let visibleItems = 0;
+    const visibleByCategory = new Map();
 
     cards.forEach((card) => {
       const matched = !terms.length || isMatch(card, terms);
       card.hidden = !matched;
+      card.style.display = matched ? "" : "none";
     });
 
     directoryItems.forEach((item) => {
       const matched = !terms.length || isMatch(item, terms);
       item.hidden = !matched;
-      if (matched) visibleItems += 1;
+      item.style.display = matched ? "" : "none";
+      if (matched) {
+        visibleItems += 1;
+        const category = item.dataset.blogCategory || "";
+        visibleByCategory.set(category, (visibleByCategory.get(category) || 0) + 1);
+      }
+    });
+
+    categoryLinks.forEach((link) => {
+      const category = link.dataset.blogCategoryLink || "";
+      const count = visibleByCategory.get(category) || 0;
+      const countElement = link.querySelector("[data-blog-category-count]");
+      if (countElement) countElement.textContent = String(count);
+      const hideLink = terms.length > 0 && count === 0;
+      link.hidden = hideLink;
+      link.style.display = hideLink ? "none" : "";
     });
 
     sections.forEach((section) => {
       const visibleCards = [...section.querySelectorAll("[data-blog-card]")].some((card) => !card.hidden);
-      section.hidden = terms.length > 0 && !visibleCards;
+      const hideSection = terms.length > 0 && !visibleCards;
+      section.hidden = hideSection;
+      section.style.display = hideSection ? "none" : "";
     });
 
     if (featured) {
       const visibleFeaturedCards = [...featured.querySelectorAll("[data-blog-card]")].some((card) => !card.hidden);
-      featured.hidden = terms.length > 0 && !visibleFeaturedCards;
+      const hideFeatured = terms.length > 0 && !visibleFeaturedCards;
+      featured.hidden = hideFeatured;
+      featured.style.display = hideFeatured ? "none" : "";
     }
 
     if (status) {

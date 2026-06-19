@@ -3,7 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260619-blog-local-translations";
+const version = "20260620-blog-hidden-filter";
 const siteUrl = "https://woodcuttool.com";
 
 
@@ -1182,10 +1182,10 @@ function header(active = "Blogs") {
   const links = [
     ["CutList", "/apps/cutlist/"],
     ["QuiltFit", "/apps/quiltfit/"],
-    ["Apps", "/apps/"],
-    ["Blogs", "/blog/"],
     ["Tile", "/tile-calculator/"],
-    ["Stringer", "/stringer/"]
+    ["Stringer", "/stringer/"],
+    ["Blogs", "/blog/"],
+    ["Apps", "/apps/"]
   ];
 
   return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links">${links.map(([label, href]) => `<a${label === active ? ' class="active"' : ""} href="${href}">${label}</a>`).join("")}</div><a class="button small" href="/apps/">Explore Apps</a></nav></header>`;
@@ -1247,7 +1247,7 @@ function articleCard(article) {
 function directoryLink(article) {
   const articleIndex = Math.max(0, getArticleIndex(article));
   const searchText = [article.title, article.description, article.category, article.kicker, article.slug].join(" ");
-  return `<a href="/blog/${article.slug}/" data-blog-directory-item data-blog-search="${escapeHtml(searchText.toLowerCase())}">
+  return `<a href="/blog/${article.slug}/" data-blog-directory-item data-blog-category="${escapeHtml(article.category)}" data-blog-search="${escapeHtml(searchText.toLowerCase())}">
               <span>${String(articleIndex + 1).padStart(2, "0")}</span>
               <strong>${escapeHtml(article.title)}</strong>
               <em>${escapeHtml(article.category)}</em>
@@ -1265,7 +1265,7 @@ function blogIndex() {
   const categoryLinks = categories
     .map(([label, id]) => {
       const count = articles.filter((article) => article.category === label).length;
-      return `<a href="#${id}"><span>${label}</span><strong>${count}</strong></a>`;
+      return `<a href="#${id}" data-blog-category-link="${escapeHtml(label)}"><span>${label}</span><strong data-blog-category-count>${count}</strong></a>`;
     })
     .join("\n          ");
 
@@ -1297,12 +1297,12 @@ ${head({
           </label>
           <nav class="blog-directory-nav" aria-label="Blog topic shortcuts">
             ${categoryLinks}
-            <a href="#core-guides"><span>Guides</span><strong>${oldGuides.length}</strong></a>
+            <a href="#core-guides" data-blog-category-link="Classic guide"><span>Guides</span><strong data-blog-category-count>${oldGuides.length}</strong></a>
           </nav>
           <div class="blog-directory-status" data-blog-search-status>${articles.length + oldGuides.length} articles</div>
           <div class="blog-directory-list" aria-label="Article list">
             ${articles.map(directoryLink).join("\n            ")}
-            ${oldGuides.map((guide, index) => `<a href="${guide.href}" data-blog-directory-item data-blog-search="${escapeHtml([guide.title, guide.description, guide.category].join(" ").toLowerCase())}">
+            ${oldGuides.map((guide, index) => `<a href="${guide.href}" data-blog-directory-item data-blog-category="${escapeHtml(guide.category)}" data-blog-search="${escapeHtml([guide.title, guide.description, guide.category].join(" ").toLowerCase())}">
               <span>G${index + 1}</span>
               <strong>${escapeHtml(guide.title)}</strong>
               <em>${escapeHtml(guide.category)}</em>
@@ -1894,8 +1894,8 @@ function updateExistingHtml() {
     html = html.replaceAll("20260619-app-directory", version);
     html = html.replaceAll("/assets/styles.css\"", `/assets/styles.css?v=${version}"`);
     html = html.replaceAll("/assets/app.js\"", `/assets/app.js?v=${version}"`);
-    html = html.replace(/<a href="\/apps\/">Apps<\/a>(?!<a[^>]+href="\/blog\/")/g, '<a href="/apps/">Apps</a><a href="/blog/">Blogs</a>');
-    html = html.replace(/<a class="active" href="\/apps\/">Apps<\/a>(?!<a[^>]+href="\/blog\/")/g, '<a class="active" href="/apps/">Apps</a><a href="/blog/">Blogs</a>');
+    html = html.replaceAll('<a href="/apps/">Apps</a><a href="/blog/">Blogs</a>', '<a href="/blog/">Blogs</a><a href="/apps/">Apps</a>');
+    html = html.replaceAll('<a class="active" href="/apps/">Apps</a><a href="/blog/">Blogs</a>', '<a href="/blog/">Blogs</a><a class="active" href="/apps/">Apps</a>');
     html = html.replace(/<a class="active" href="\/blog\/[^"]+\/">[^<]+<\/a>/g, '<a class="active" href="/blog/">Blogs</a>');
     html = html.replace(/<a href="\/blog\/wood-cutting-calculator-guide\/">Blog<\/a>/g, '<a href="/blog/">Blogs</a>');
     html = html.replace(/<a href="\/#guides">Guides<\/a>/g, '<a href="/blog/">Blogs</a>');

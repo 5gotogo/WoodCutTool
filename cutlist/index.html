@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CutList Calculator - Optimize Board Cuts Online | WoodCutTool</title>
-  <meta name="description" content="Free CutList calculator for woodworking. Enter board size, part dimensions, quantities, and kerf to get an optimized cutting plan and waste percentage.">
+  <title>Plywood Cutting Calculator & CutList Optimizer | WoodCutTool</title>
+  <meta name="description" content="Free plywood cutting calculator and CutList optimizer for woodworking. Enter sheet size, part dimensions, quantities, and saw kerf to plan cuts, boards required, and waste.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://woodcuttool.com/cutlist/">
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
@@ -16,7 +16,167 @@
   <link rel="stylesheet" href="/assets/styles.css?v=20260619-app-details">
   <script defer src="/assets/app.js?v=20260619-app-details"></script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"CutList Calculator","url":"https://woodcuttool.com/cutlist/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Client-side woodworking cut list calculator that estimates optimized board cuts and waste."}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://woodcuttool.com/cutlist/#webpage",
+        "url": "https://woodcuttool.com/cutlist/",
+        "name": "Plywood Cutting Calculator & CutList Optimizer",
+        "description": "Free plywood cutting calculator and CutList optimizer for woodworking. Enter sheet size, part dimensions, quantities, and saw kerf to plan cuts, boards required, and waste.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://woodcuttool.com/#website",
+          "name": "WoodCutTool",
+          "url": "https://woodcuttool.com/"
+        },
+        "primaryImageOfPage": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/ed/18/6bed1827-5f51-462c-bae9-d906afade498/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+        "mainEntity": {
+          "@id": "https://woodcuttool.com/cutlist/#calculator"
+        },
+        "breadcrumb": {
+          "@id": "https://woodcuttool.com/cutlist/#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://woodcuttool.com/cutlist/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://woodcuttool.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "CutList Calculator",
+            "item": "https://woodcuttool.com/cutlist/"
+          }
+        ]
+      },
+      {
+        "@type": ["WebApplication", "SoftwareApplication"],
+        "@id": "https://woodcuttool.com/cutlist/#calculator",
+        "name": "CutList Calculator",
+        "alternateName": "Plywood Cutting Calculator",
+        "url": "https://woodcuttool.com/cutlist/",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSubCategory": "Woodworking cut list optimizer",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript and a modern web browser.",
+        "isAccessibleForFree": true,
+        "description": "Browser-based plywood cutting calculator for planning sheet-good layouts, saw kerf, board count, cut sequence, and waste percentage.",
+        "featureList": [
+          "Stock board length, width, thickness, and saw kerf inputs",
+          "Part names, dimensions, and quantities",
+          "Optimized cut sequence",
+          "Boards required and waste percentage",
+          "Client-side browser calculation"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "potentialAction": {
+          "@type": "UseAction",
+          "target": "https://woodcuttool.com/cutlist/#cut-list-form",
+          "name": "Optimize cut list"
+        }
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://woodcuttool.com/apps/cutlist-plywood-optimizer/#ios-app",
+        "name": "CutList: Plywood Optimizer",
+        "url": "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871",
+        "downloadUrl": "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/ed/18/6bed1827-5f51-462c-bae9-d906afade498/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSubCategory": "Woodworking cut list optimizer",
+        "operatingSystem": "iOS 17.6 or later",
+        "softwareVersion": "1.0.2",
+        "datePublished": "2026-05-12",
+        "dateModified": "2026-06-04",
+        "contentRating": "4+",
+        "description": "CutList helps woodworkers, cabinet makers, and DIY builders turn cut lists into optimized sheet layouts on iPhone, with offline planning and Pro options for scan, PDF export, and printing.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871"
+        }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://woodcuttool.com/cutlist/#how-to",
+        "name": "How to optimize a plywood cut list online",
+        "description": "Use the CutList calculator to turn stock sheet dimensions, part sizes, quantities, and saw kerf into a cut plan with board count and waste percentage.",
+        "totalTime": "PT3M",
+        "tool": [
+          {
+            "@type": "HowToTool",
+            "name": "CutList Calculator"
+          }
+        ],
+        "supply": [
+          {
+            "@type": "HowToSupply",
+            "name": "Stock board or plywood sheet dimensions"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Part dimensions and quantities"
+          },
+          {
+            "@type": "HowToSupply",
+            "name": "Saw kerf"
+          }
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Set stock sheet size and saw kerf",
+            "url": "https://woodcuttool.com/cutlist/#step-stock",
+            "text": "Enter the board or plywood sheet length, width, thickness, and the saw kerf your blade removes."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Enter each required part",
+            "url": "https://woodcuttool.com/cutlist/#step-parts",
+            "text": "Add each part name, finished length, finished width, and quantity so the calculator can group repeated pieces."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Add repeated shelves, sides, rails, and panels",
+            "url": "https://woodcuttool.com/cutlist/#step-repeat",
+            "text": "Use Add part for every cabinet, shelf, drawer, or project component that must be cut from the same stock."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Run the cut list optimizer",
+            "url": "https://woodcuttool.com/cutlist/#step-optimize",
+            "text": "Select Optimize cut list to calculate the board-by-board cut sequence in the browser."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Review boards required and waste",
+            "url": "https://woodcuttool.com/cutlist/#step-review",
+            "text": "Check the required boards, cut sequence, and waste percentage, then move larger saved projects to the CutList iPhone app."
+          }
+        ]
+      }
+    ]
+  }
   </script>
 </head>
 <body>
@@ -38,8 +198,8 @@
     <section class="section">
       <p class="breadcrumb"><a href="/">Home</a> / CutList Calculator</p>
       <p class="eyebrow">Woodworking cut optimizer</p>
-      <h1>CutList Calculator</h1>
-      <p class="lead">Calculate a board-by-board cutting plan from stock dimensions, part sizes, quantities, and saw kerf. The optimizer runs in your browser with no server dependency.</p>
+      <h1>Plywood Cutting Calculator</h1>
+      <p class="lead">Calculate a board-by-board cutting plan from stock dimensions, part sizes, quantities, and saw kerf. This CutList optimizer runs in your browser and gives woodworkers a fast way to estimate boards required, cut sequence, and waste percentage before opening a full project in the iPhone app.</p>
     </section>
 
     <section class="section tool-layout">
@@ -84,6 +244,56 @@
         <h2>Cut plan results</h2>
         <p class="placeholder">Enter your pieces and run the calculator to see boards required, cut sequence, and waste percentage.</p>
       </aside>
+    </section>
+
+    <section class="section cutlist-seo-section" id="how-to-optimize-cut-list">
+      <div class="section-heading">
+        <p class="eyebrow">HowTo</p>
+        <h2>How to optimize a plywood cut list online</h2>
+        <p>Use this browser calculator for quick cabinet, shelf, drawer, shop fixture, and plywood project estimates. The same workflow maps directly to CutList for iPhone when you need saved projects, PDF export, AirPrint, or offline job planning.</p>
+      </div>
+      <ol class="howto-steps">
+        <li id="step-stock">
+          <strong>Set stock sheet size and saw kerf.</strong>
+          <span>Enter the board or plywood sheet length, width, thickness, and the blade kerf that should be removed between cuts.</span>
+        </li>
+        <li id="step-parts">
+          <strong>Enter each required part.</strong>
+          <span>Add the part name, finished length, finished width, and quantity so repeated panels are counted correctly.</span>
+        </li>
+        <li id="step-repeat">
+          <strong>Add repeated shelves, sides, rails, and panels.</strong>
+          <span>Use Add part for every component that must come from the same stock material.</span>
+        </li>
+        <li id="step-optimize">
+          <strong>Run the cut list optimizer.</strong>
+          <span>Select Optimize cut list to calculate a board-by-board cutting sequence in the browser.</span>
+        </li>
+        <li id="step-review">
+          <strong>Review boards required and waste.</strong>
+          <span>Check the boards required, cut order, and waste percentage, then move saved or printable projects into the CutList iPhone app.</span>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <div class="cta-panel cutlist-app-cta">
+        <div>
+          <p class="eyebrow">CutList for iPhone</p>
+          <h2>Use the browser calculator for quick checks. Use the app for real projects.</h2>
+          <p>CutList: Plywood Optimizer keeps projects offline on your iPhone and supports advanced workflows such as saved layouts, PDF export, AirPrint, AI Scan, grain direction lock, and unlimited Pro projects.</p>
+          <ul class="feature-list">
+            <li>Offline project planning</li>
+            <li>PDF and AirPrint output</li>
+            <li>AI Scan from cut sheets</li>
+            <li>Grain direction control</li>
+          </ul>
+        </div>
+        <div class="cta-row">
+          <a class="button" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow">Download on App Store</a>
+          <a class="button ghost" href="/apps/cutlist-plywood-optimizer/">View app details</a>
+        </div>
+      </div>
     </section>
 
     <section class="section">

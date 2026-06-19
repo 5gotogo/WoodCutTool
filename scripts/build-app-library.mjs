@@ -56,10 +56,10 @@ function header(active = "Apps") {
   const links = [
     ["CutList", "/apps/cutlist/"],
     ["QuiltFit", "/apps/quiltfit/"],
-    ["Apps", "/apps/"],
-    ["Blogs", "/blog/"],
     ["Tile", "/tile-calculator/"],
-    ["Stringer", "/stringer/"]
+    ["Stringer", "/stringer/"],
+    ["Blogs", "/blog/"],
+    ["Apps", "/apps/"]
   ];
 
   return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links">${links.map(([label, href]) => `<a${label === active ? ' class="active"' : ""} href="${href}">${label}</a>`).join("")}</div><a class="button small" href="/apps/">Explore Apps</a></nav></header>`;
@@ -254,7 +254,7 @@ function updateHomePage() {
   const path = join(root, "index.html");
   let html = readFileSync(path, "utf8");
   html = html.replaceAll("20260619-app-library", version);
-  html = html.replace(/    <section class="section all-apps-section" id="all-apps">[\s\S]*?    <section class="section" id="guides">/, `${appLibrarySection({ featuredOnly: true })}\n\n    <section class="section" id="guides">`);
+  html = html.replace(/    <section class="section all-apps-section" id="all-apps">[\s\S]*?\n    <\/section>\n\n(?=    <section class="section" id="guides">)/, "");
   writeFileSync(path, html);
 }
 
