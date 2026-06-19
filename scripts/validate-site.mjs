@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -24,6 +24,27 @@ function readText(path) {
   return readFileSync(join(root, path), "utf8");
 }
 
+function collectHtmlFiles(dir = root, prefix = "") {
+  const files = [];
+
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    if (entry.name.startsWith(".") || entry.name === "node_modules") {
+      continue;
+    }
+
+    const absolute = join(dir, entry.name);
+    const relative = prefix ? `${prefix}/${entry.name}` : entry.name;
+
+    if (entry.isDirectory()) {
+      files.push(...collectHtmlFiles(absolute, relative));
+    } else if (entry.isFile() && entry.name === "index.html") {
+      files.push(relative);
+    }
+  }
+
+  return files.sort();
+}
+
 const sitemap = readText("sitemap.xml");
 const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
 
@@ -39,23 +60,7 @@ for (const url of sitemapUrls) {
   }
 }
 
-const htmlFiles = [
-  "index.html",
-  "cutlist/index.html",
-  "quiltfit/index.html",
-  "tile-calculator/index.html",
-  "stringer/index.html",
-  "privacy-policy/index.html",
-  "terms-of-service/index.html",
-  "cut-list-calculator/index.html",
-  "plywood-cut-calculator/index.html",
-  "stair-stringer-calculator/index.html",
-  "board-foot-calculator/index.html",
-  "wood-waste-calculator/index.html",
-  "blog/plywood-cutting-optimization/index.html",
-  "blog/stair-stringer-calculator-guide/index.html",
-  "blog/cut-list-optimization-tips/index.html"
-];
+const htmlFiles = collectHtmlFiles();
 
 for (const file of htmlFiles) {
   if (!existsSync(join(root, file))) {

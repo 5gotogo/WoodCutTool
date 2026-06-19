@@ -1,5 +1,10 @@
 https://www.woodcuttool.com/* https://woodcuttool.com/:splat 301
 /index.html / 301
+/apps/index.html /apps/ 301
+/apps/cutlist/index.html /apps/cutlist/ 301
+/apps/quiltfit/index.html /apps/quiltfit/ 301
+/apps/pdfscanner/index.html /apps/pdfscanner/ 301
+/apps/receipt/index.html /apps/receipt/ 301
 /cutlist/index.html /cutlist/ 301
 /quiltfit/index.html /quiltfit/ 301
 /tile-calculator/index.html /tile-calculator/ 301
@@ -11,6 +16,12 @@ https://www.woodcuttool.com/* https://woodcuttool.com/:splat 301
 /stair-stringer-calculator/index.html /stair-stringer-calculator/ 301
 /board-foot-calculator/index.html /board-foot-calculator/ 301
 /wood-waste-calculator/index.html /wood-waste-calculator/ 301
-/blog/plywood-cutting-optimization/index.html /blog/plywood-cutting-optimization/ 301
-/blog/stair-stringer-calculator-guide/index.html /blog/stair-stringer-calculator-guide/ 301
-/blog/cut-list-optimization-tips/index.html /blog/cut-list-optimization-tips/ 301
+/blog/wood-cutting-calculator-guide/index.html /blog/wood-cutting-calculator-guide/ 301
+/blog/how-to-optimize-material-layout/index.html /blog/how-to-optimize-material-layout/ 301
+/legal/cutlist/privacy/index.html /legal/cutlist/privacy/ 301
+/legal/cutlist/support/index.html /legal/cutlist/support/ 301
+/legal/quiltfit/privacy/index.html /legal/quiltfit/privacy/ 301
+/legal/quiltfit/support/index.html /legal/quiltfit/support/ 301
+/blog/plywood-cutting-optimization/ /blog/how-to-optimize-material-layout/ 301
+/blog/stair-stringer-calculator-guide/ /stair-stringer-calculator/ 301
+/blog/cut-list-optimization-tips/ /blog/wood-cutting-calculator-guide/ 301

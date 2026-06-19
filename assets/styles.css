@@ -2281,6 +2281,265 @@ form > .button,
   margin-top: 34px;
 }
 
+.page-hero {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 42px 16px 24px;
+}
+
+.page-hero .lead {
+  max-width: 720px;
+}
+
+.app-hero {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 34px 16px 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.92fr);
+  gap: 22px;
+  align-items: stretch;
+}
+
+.app-hero-copy,
+.app-visual-panel,
+.legal-hero,
+.legal-panel,
+.article-body,
+.directory-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 30px rgba(39, 44, 36, 0.06);
+}
+
+.app-hero-copy,
+.app-visual-panel,
+.legal-hero,
+.legal-panel,
+.article-body {
+  padding: 28px;
+}
+
+.app-badge {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+  border-radius: 16px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  font-weight: 900;
+}
+
+.quiltfit-badge {
+  background: linear-gradient(135deg, #9c4d7a, #2f6f4e);
+}
+
+.scanner-badge {
+  background: linear-gradient(135deg, #355f8f, #2f6f4e);
+}
+
+.receipt-badge {
+  background: linear-gradient(135deg, #d7943c, #8b5e34);
+}
+
+.app-visual-panel {
+  display: grid;
+  align-content: center;
+  gap: 14px;
+}
+
+.app-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  min-height: 230px;
+  padding: 14px;
+  border: 1px solid rgba(93, 106, 97, 0.16);
+  border-radius: var(--radius);
+  background: #efe3c7;
+}
+
+.app-preview-grid span {
+  border-radius: 7px;
+  background: var(--accent);
+}
+
+.app-preview-grid .wide {
+  grid-column: span 3;
+  background: #3b82f6;
+}
+
+.app-preview-grid .tall {
+  grid-row: span 2;
+  background: #16b7c9;
+}
+
+.app-preview-grid .large {
+  grid-column: span 3;
+  grid-row: span 2;
+  background: #ef4444;
+}
+
+.app-preview-grid .small {
+  background: #f59e0b;
+}
+
+.app-preview-grid .accent {
+  background: #8b5cf6;
+}
+
+.fabric-preview {
+  background: #fff6fb;
+}
+
+.fabric-preview span {
+  background: #d9467c;
+}
+
+.fabric-preview .wide {
+  background: #7c3aed;
+}
+
+.fabric-preview .tall {
+  background: #14b8a6;
+}
+
+.fabric-preview .large {
+  background: #f97316;
+}
+
+.feature-list.plain {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-list.plain li {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.72);
+  font-weight: 700;
+}
+
+.directory-grid,
+.legal-grid {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 18px 16px 34px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.directory-card {
+  padding: 20px;
+}
+
+.directory-card h2,
+.directory-card h3 {
+  font-size: 1.25rem;
+}
+
+.legal-shell,
+.article-shell {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 34px 16px;
+}
+
+.legal-hero {
+  color: #fff;
+  background: linear-gradient(135deg, #4f8b63, #2f6f4e);
+}
+
+.legal-hero a {
+  color: #fff;
+  font-weight: 800;
+}
+
+.legal-panel {
+  margin-top: 18px;
+}
+
+.legal-panel section + section,
+.article-body section + section {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.effective-date {
+  display: inline-flex;
+  margin: 0 0 18px;
+  padding: 10px 12px;
+  border-radius: 7px;
+  color: var(--accent);
+  background: rgba(47, 111, 78, 0.1);
+  font-weight: 850;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.meta-item {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.meta-item strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--accent);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.support-list {
+  padding-left: 20px;
+}
+
+.support-list li {
+  margin: 10px 0;
+  color: var(--muted);
+}
+
+.article-body {
+  color: var(--muted);
+}
+
+.article-body h1,
+.article-body h2,
+.article-body h3 {
+  color: var(--ink);
+}
+
+.article-body h1 {
+  margin-bottom: 12px;
+}
+
+.article-body p,
+.article-body li {
+  color: var(--muted);
+}
+
+.article-body ul,
+.article-body ol {
+  padding-left: 22px;
+}
+
 .toc {
   padding: 18px;
 }
@@ -2792,5 +3051,11 @@ form > .button,
 
   .footer-links {
     gap: 8px 14px;
+  }
+}
+
+@media (max-width: 820px) {
+  .app-hero {
+    grid-template-columns: 1fr;
   }
 }
