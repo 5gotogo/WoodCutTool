@@ -1127,12 +1127,416 @@ h3 {
   padding-top: 22px;
 }
 
+.all-apps-section {
+  padding-top: 18px;
+}
+
+.app-library-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 14px;
+  max-width: none;
+}
+
 .visual-tool-grid,
 .visual-proof-panel,
 .guide-grid,
 .visual-flow-grid {
   display: grid;
   gap: 14px;
+}
+
+.app-library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  gap: 14px;
+}
+
+.store-app-card {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  gap: 16px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 14px 32px rgba(39, 44, 36, 0.07);
+}
+
+.store-app-card-link {
+  min-height: 100%;
+  display: grid;
+  align-content: start;
+  gap: 11px;
+  color: var(--ink);
+}
+
+.store-app-card-link:hover {
+  text-decoration: none;
+}
+
+.store-app-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.store-app-artwork {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  box-shadow: 0 10px 22px rgba(39, 44, 36, 0.12);
+}
+
+.store-app-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  font-weight: 900;
+}
+
+.store-app-icon.tone-2 {
+  background: linear-gradient(135deg, #355f8f, #2f6f4e);
+}
+
+.store-app-icon.tone-3 {
+  background: linear-gradient(135deg, #9c4d7a, #2f6f4e);
+}
+
+.store-app-icon.tone-4 {
+  background: linear-gradient(135deg, #d7943c, #8b5e34);
+}
+
+.store-app-icon.tone-5 {
+  background: linear-gradient(135deg, #14b8a6, #355f8f);
+}
+
+.store-app-icon.tone-6 {
+  background: linear-gradient(135deg, #7c3aed, #d9467c);
+}
+
+.store-app-icon.tone-7 {
+  background: linear-gradient(135deg, #f97316, #8b5e34);
+}
+
+.store-app-icon.tone-8 {
+  background: linear-gradient(135deg, #243f31, #4f8b63);
+}
+
+.store-app-genre {
+  width: max-content;
+  max-width: 100%;
+  padding: 6px 9px;
+  border-radius: 999px;
+  color: var(--accent);
+  background: rgba(47, 111, 78, 0.1);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.store-app-card h3 {
+  font-size: 1.08rem;
+}
+
+.store-app-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.store-app-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(93, 106, 97, 0.14);
+}
+
+.store-detail-button,
+.store-download-button {
+  min-height: 40px;
+  display: inline-grid;
+  place-items: center;
+  padding: 9px 10px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.store-detail-button {
+  color: var(--ink);
+  background: var(--surface-2);
+  border: 1px solid rgba(93, 106, 97, 0.18);
+}
+
+.store-download-button {
+  color: #fff;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+.store-detail-button:hover,
+.store-download-button:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.apps-page-library {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 16px 16px 42px;
+}
+
+.more-apps-row {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-detail-page {
+  padding-bottom: 42px;
+}
+
+.app-detail-hero,
+.app-detail-layout {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 32px 16px 18px;
+  display: grid;
+  gap: 18px;
+}
+
+.app-detail-copy,
+.app-detail-mockup,
+.app-description-panel,
+.app-meta-panel,
+.app-screenshot-strip {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 14px 34px rgba(39, 44, 36, 0.07);
+}
+
+.app-detail-copy,
+.app-description-panel,
+.app-meta-panel {
+  padding: 22px;
+}
+
+.app-title-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.app-title-row h1 {
+  margin: 0;
+}
+
+.app-detail-icon {
+  width: 76px;
+  height: 76px;
+  flex: 0 0 auto;
+  border-radius: 18px;
+  box-shadow: 0 18px 36px rgba(39, 44, 36, 0.14);
+}
+
+.app-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.app-detail-mockup {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(190px, 0.85fr) minmax(0, 1fr);
+  gap: 14px;
+  align-items: stretch;
+  padding: 18px;
+  color: #fff;
+  background:
+    linear-gradient(135deg, rgba(30, 42, 35, 0.96), rgba(47, 111, 78, 0.9)),
+    var(--accent);
+}
+
+.app-detail-mockup.tone-2 {
+  background: linear-gradient(135deg, #253d5f, #2f6f4e);
+}
+
+.app-detail-mockup.tone-3 {
+  background: linear-gradient(135deg, #6e3b61, #2f6f4e);
+}
+
+.app-detail-mockup.tone-4 {
+  background: linear-gradient(135deg, #8b5e34, #d7943c);
+}
+
+.app-detail-mockup.tone-5 {
+  background: linear-gradient(135deg, #0f766e, #355f8f);
+}
+
+.app-detail-mockup.tone-6 {
+  background: linear-gradient(135deg, #5b21b6, #be185d);
+}
+
+.app-detail-mockup.tone-7 {
+  background: linear-gradient(135deg, #9a3412, #8b5e34);
+}
+
+.app-detail-mockup.tone-8 {
+  background: linear-gradient(135deg, #1f2937, #4f8b63);
+}
+
+.mock-phone {
+  display: grid;
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.mock-screen-top,
+.mock-bottom-bar {
+  display: flex;
+  gap: 7px;
+}
+
+.mock-screen-top span,
+.mock-bottom-bar span,
+.mock-content-grid span {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.34);
+}
+
+.mock-screen-top span {
+  width: 34px;
+  height: 7px;
+}
+
+.mock-icon-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mock-icon-row img {
+  width: 52px;
+  height: 52px;
+  border-radius: 13px;
+}
+
+.mock-icon-row strong {
+  line-height: 1.15;
+}
+
+.mock-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.mock-content-grid span {
+  min-height: 44px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.mock-content-grid span:nth-child(1),
+.mock-content-grid span:nth-child(6) {
+  grid-column: span 2;
+}
+
+.mock-bottom-bar span {
+  height: 9px;
+  flex: 1;
+}
+
+.mock-notes {
+  display: grid;
+  align-content: end;
+  gap: 12px;
+}
+
+.mock-notes span {
+  width: max-content;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  font-weight: 900;
+}
+
+.mock-notes strong {
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.app-screenshot-strip {
+  padding: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.app-screenshot-strip img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: 0 12px 26px rgba(39, 44, 36, 0.08);
+}
+
+.app-description-panel h2,
+.app-meta-panel h2 {
+  margin-bottom: 14px;
+}
+
+.app-description-panel p,
+.app-description-panel li {
+  color: var(--muted);
+}
+
+.app-description-panel ul {
+  padding-left: 20px;
+}
+
+.app-meta-panel {
+  align-self: start;
+}
+
+.app-meta-panel dl {
+  display: grid;
+  gap: 10px;
+  margin: 0 0 18px;
+}
+
+.app-meta-panel dl div {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: rgba(238, 243, 236, 0.72);
+}
+
+.app-meta-panel dt {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.app-meta-panel dd {
+  margin: 4px 0 0;
+  font-weight: 850;
 }
 
 .visual-flow-section {
@@ -3379,6 +3783,16 @@ form > .button,
     grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
   }
 
+  .app-detail-hero {
+    grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.05fr);
+    align-items: stretch;
+  }
+
+  .app-detail-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.36fr);
+    align-items: start;
+  }
+
   .tool-layout {
     grid-template-columns: minmax(0, 1.1fr) minmax(340px, 0.9fr);
   }
@@ -3456,6 +3870,18 @@ form > .button,
 
   .guide-thumb {
     width: 74px;
+  }
+
+  .app-title-row {
+    align-items: flex-start;
+  }
+
+  .app-detail-mockup {
+    grid-template-columns: 1fr;
+  }
+
+  .mock-notes strong {
+    font-size: 1.08rem;
   }
 
   .hero-actions,

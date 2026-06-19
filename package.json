@@ -5,9 +5,10 @@
   "description": "Static WoodCutTool website for Cloudflare Pages.",
   "scripts": {
     "dev": "python3 -m http.server 4175 --bind 0.0.0.0",
+    "generate:apps": "node scripts/build-app-library.mjs",
     "generate:blog": "node scripts/build-blog-content.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
-    "build": "node scripts/build-blog-content.mjs && node scripts/generate-sitemap.mjs && node scripts/validate-site.mjs",
+    "build": "node scripts/build-app-library.mjs && node scripts/build-blog-content.mjs && node scripts/generate-sitemap.mjs && node scripts/validate-site.mjs",
     "check": "node scripts/validate-site.mjs"
   }
 }

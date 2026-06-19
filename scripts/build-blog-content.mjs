@@ -3,7 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260619-blog-directory";
+const version = "20260619-app-details";
 
 const articles = [
   {
@@ -1447,6 +1447,8 @@ function updateExistingHtml() {
     let html = readFileSync(path, "utf8");
     html = html.replaceAll("20260619-research-blog", version);
     html = html.replaceAll("20260619-hobby-projects", version);
+    html = html.replaceAll("20260619-blog-directory", version);
+    html = html.replaceAll("20260619-app-library", version);
     html = html.replaceAll("20260619-blogs", version);
     html = html.replaceAll("20260619-brand-case", version);
     html = html.replaceAll("20260619-app-directory", version);
