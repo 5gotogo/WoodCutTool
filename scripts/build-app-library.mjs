@@ -34,7 +34,7 @@ function initials(name) {
     .toUpperCase();
 }
 
-function head({ title, description, canonical }) {
+function head({ title, description, canonical, jsonLd = "" }) {
   return `<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,6 +49,7 @@ function head({ title, description, canonical }) {
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
   <link rel="stylesheet" href="/assets/styles.css?v=${version}">
+  ${jsonLd}
 </head>`;
 }
 
@@ -69,19 +70,148 @@ function footer() {
   return `<footer class="site-footer"><div class="footer-inner"><div class="footer-main"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><nav class="footer-links footer-primary" aria-label="Footer navigation"><a href="/apps/">Apps</a><a href="/blog/">Blogs</a><a href="/apps/cutlist/">CutList</a><a href="/apps/quiltfit/">QuiltFit</a><a href="mailto:727268425@qq.com">Contact</a></nav></div><div class="footer-bottom"><p class="muted"><span>© 2026 WoodCutTool.</span> <span>All rights reserved.</span></p><nav class="footer-links footer-legal" aria-label="Legal navigation"><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a><a href="/sitemap.xml">Sitemap</a></nav></div></div></footer>`;
 }
 
-function appCard(app, index) {
+const appBySlug = new Map(apps.map((app) => [app.slug, app]));
+
+const detailRouteOverrides = {
+  "cutlist-plywood-optimizer": "/apps/cutlist/",
+  "quiltfit-quilt-design-planner": "/apps/quiltfit/"
+};
+
+const featuredApps = [
+  ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
+  ["quiltfit-quilt-design-planner", "Quilt design planner for fabric layouts, block planning, and project organization."],
+  ["snapreceipt-expenses-and-tax", "Private receipt scanner, expense tracker, and mileage log for reimbursements and tax records."],
+  ["invoice-maker-estimate-pdf", "Fast invoice and estimate PDF maker for freelancers, contractors, and small businesses."],
+  ["pdf-scan-scanner-and-reader", "Private PDF scanner and document reader for everyday paperwork."],
+  ["cadenza-metronome-and-tuner", "Metronome, tuner, and music practice companion for focused daily practice."]
+];
+
+const categorySections = [
+  {
+    id: "maker-calculator-apps",
+    title: "Maker & Calculator Apps",
+    description: "Practical iPhone tools for people who plan, measure, cut, design, or build physical projects. These apps focus on plywood optimization, quilt planning, tile estimation, stair stringer calculation, and other maker workflows.",
+    slugs: ["cutlist-plywood-optimizer", "quiltfit-quilt-design-planner"],
+    relatedTools: [
+      {
+        name: "Tile",
+        label: "Calculator",
+        description: "Tile layout and material planning calculator for floor and wall projects.",
+        href: "/tile-calculator/",
+        tags: ["Tile layout", "Materials", "Planning"]
+      },
+      {
+        name: "Stringer",
+        label: "Calculator",
+        description: "Stair stringer calculator for rise, run, total height, and layout checks.",
+        href: "/stringer/",
+        tags: ["Stairs", "Rise and run", "Layout"]
+      }
+    ]
+  },
+  {
+    id: "small-business-apps",
+    title: "Small Business Apps",
+    description: "Simple business utilities for vendors, freelancers, contractors, and small teams that need receipts, invoices, inventory counts, shift schedules, expense reports, and everyday records on iPhone.",
+    slugs: ["snapreceipt-expenses-and-tax", "invoice-maker-estimate-pdf", "expensereportmaker-and-receipts", "marketvendor-sales-and-profit", "snapstock-inventory-scanner", "work-shift-schedule-calendar"]
+  },
+  {
+    id: "document-productivity-apps",
+    title: "Document & Productivity Apps",
+    description: "Private productivity apps for scanning documents, compressing images, backing up contacts, transcribing meetings, picking decisions, and keeping precise time without heavy setup.",
+    slugs: ["pdf-scan-scanner-and-reader", "image-compressor-and-zip", "export-backup-all-contacts-pro", "private-meeting-transcriber", "pickone-random-choice-picker", "atomic-clock-precision-time", "printer-app-print-pdf-docs"]
+  },
+  {
+    id: "home-everyday-utility-apps",
+    title: "Home & Everyday Utility Apps",
+    description: "Everyday iPhone utilities for home organization, pantry labels, QR codes, photo cleanup, private storage, and simple tasks that should stay quick and local.",
+    slugs: ["fridgetrack-fridge-inventory", "pantry-label-maker-kitchen", "address-label-maker-and-envelope", "snapqr-qr-generator-app", "snapcleaner-clean-photos", "photosafe-private-photo-vault", "snaplabel-photo-text-label"]
+  },
+  {
+    id: "creative-media-apps",
+    title: "Creative & Media Apps",
+    description: "Focused tools for musicians, creators, audio testing, watermarking, and personal creative workflows.",
+    slugs: ["cadenza-metronome-and-tuner", "signaturemark-brand-mark", "speaker-tools-audio-test"]
+  },
+  {
+    id: "health-focus-personal-apps",
+    title: "Health, Focus & Personal Apps",
+    description: "Calm personal utilities for journaling, habits, fasting, focus, breathing, sleep rhythm, and easier reading.",
+    slugs: ["mindnest-secret-journal", "ritualix-habits-and-streaks", "glowfeel-stress-ease", "fast-rhythm-fasting-and-sleep", "magnifier-reader-big-text"]
+  },
+  {
+    id: "games",
+    title: "Games",
+    description: "Small casual games designed for quick, relaxing sessions.",
+    slugs: ["colorpop-color-block-tap-game", "blockfit-block-puzzle"]
+  }
+];
+
+const appTags = {
+  "cutlist-plywood-optimizer": ["Plywood", "Cut lists", "Offline", "PDF export"],
+  "quiltfit-quilt-design-planner": ["Quilting", "Fabric plans", "Blocks", "Projects"],
+  "snapreceipt-expenses-and-tax": ["Receipts", "Expenses", "Mileage", "Records"],
+  "invoice-maker-estimate-pdf": ["Invoices", "Estimates", "PDF", "Clients"],
+  "pdf-scan-scanner-and-reader": ["PDF scan", "Documents", "Private", "Reader"],
+  "cadenza-metronome-and-tuner": ["Metronome", "Tuner", "Practice", "Music"],
+  "expensereportmaker-and-receipts": ["Reports", "Receipts", "PDF", "Business"],
+  "marketvendor-sales-and-profit": ["Vendors", "Sales", "Profit", "Ledger"],
+  "snapstock-inventory-scanner": ["Inventory", "Scanner", "Counts", "Stock"],
+  "work-shift-schedule-calendar": ["Shifts", "Calendar", "Schedules", "Work"],
+  "image-compressor-and-zip": ["Compress", "ZIP", "Images", "Export"],
+  "export-backup-all-contacts-pro": ["Contacts", "Backup", "CSV", "vCard"],
+  "private-meeting-transcriber": ["Transcribe", "Meetings", "Private", "Notes"],
+  "pickone-random-choice-picker": ["Choices", "Random", "Decisions", "Quick"],
+  "atomic-clock-precision-time": ["Clock", "NTP", "Precision", "Time"],
+  "printer-app-print-pdf-docs": ["Print", "PDF", "Docs", "AirPrint"],
+  "fridgetrack-fridge-inventory": ["Fridge", "Inventory", "Food", "Home"],
+  "pantry-label-maker-kitchen": ["Pantry", "Labels", "Kitchen", "Print"],
+  "address-label-maker-and-envelope": ["Labels", "Envelope", "Mailing", "Print"],
+  "snapqr-qr-generator-app": ["QR codes", "Generator", "Share", "Utility"],
+  "snapcleaner-clean-photos": ["Photos", "Cleanup", "Storage", "Utility"],
+  "photosafe-private-photo-vault": ["Photos", "Vault", "Private", "Storage"],
+  "snaplabel-photo-text-label": ["Labels", "Photo text", "Print", "AI"],
+  "signaturemark-brand-mark": ["Watermark", "Branding", "Photos", "Creator"],
+  "speaker-tools-audio-test": ["Audio", "Tone", "Speaker", "Test"],
+  "mindnest-secret-journal": ["Journal", "Private", "Notes", "Personal"],
+  "ritualix-habits-and-streaks": ["Habits", "Streaks", "Focus", "Routine"],
+  "glowfeel-stress-ease": ["Breathing", "Stress", "Calm", "Focus"],
+  "fast-rhythm-fasting-and-sleep": ["Fasting", "Sleep", "Rhythm", "Health"],
+  "magnifier-reader-big-text": ["Magnifier", "Reading", "Big text", "Access"],
+  "colorpop-color-block-tap-game": ["Puzzle", "Casual", "Color", "Relax"],
+  "blockfit-block-puzzle": ["Blocks", "Puzzle", "Casual", "Relax"]
+};
+
+const directoryDescriptions = new Map(featuredApps);
+
+function detailHref(app) {
+  return detailRouteOverrides[app.slug] || `/apps/${app.slug}/`;
+}
+
+function cardDescription(app) {
+  return directoryDescriptions.get(app.slug) || excerpt(app.description, 135);
+}
+
+function tagList(app) {
+  const tags = appTags[app.slug] || [app.genre, "iPhone", "Private", "Utility"];
+  return `<div class="store-app-tags">${tags.slice(0, 4).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>`;
+}
+
+function appCard(app) {
+  const details = detailHref(app);
   return `<article class="store-app-card" data-genre="${escapeHtml(app.genre)}">
-          <a class="store-app-card-link" href="/apps/${escapeHtml(app.slug)}/" aria-label="View ${escapeHtml(app.name)} details">
+          <a class="store-app-card-link" href="${escapeHtml(details)}" aria-label="View ${escapeHtml(app.name)} details">
             <div class="store-app-top">
               <img class="store-app-artwork" src="${escapeHtml(app.artworkUrl512)}" alt="${escapeHtml(app.name)} app icon" loading="lazy">
               <span class="store-app-genre">${escapeHtml(app.genre)}</span>
             </div>
             <h3>${escapeHtml(app.name)}</h3>
-            <p>${escapeHtml(excerpt(app.description))}</p>
+            <p>${escapeHtml(cardDescription(app))}</p>
+            ${tagList(app)}
           </a>
           <div class="store-app-actions">
-            <a class="store-detail-button" href="/apps/${escapeHtml(app.slug)}/">Details</a>
-            <a class="store-download-button" href="${escapeHtml(app.url)}" rel="nofollow noopener">App Store</a>
+            <a class="store-detail-button" href="${escapeHtml(details)}">Details</a>
+            <a class="store-download-button" href="${escapeHtml(app.url)}" rel="noopener noreferrer" aria-label="Download ${escapeHtml(app.name)} on the App Store">App Store</a>
           </div>
         </article>`;
 }
@@ -106,13 +236,160 @@ ${visibleApps.map(appCard).join("\n")}
     </section>`}`;
 }
 
+function appCardsFor(slugs) {
+  return slugs
+    .map((slug) => appBySlug.get(slug))
+    .filter(Boolean)
+    .map(appCard)
+    .join("\n");
+}
+
+function featuredAppsSection() {
+  const cards = featuredApps
+    .map(([slug]) => appBySlug.get(slug))
+    .filter(Boolean)
+    .map(appCard)
+    .join("\n");
+  return `    <section class="section app-directory-section">
+      <div class="section-heading compact app-library-heading">
+        <div>
+          <p class="eyebrow">Featured iPhone Apps</p>
+          <h2>Featured iPhone Apps</h2>
+          <p>Start with the most useful offline-first tools for makers, paperwork, business records, and focused practice.</p>
+        </div>
+      </div>
+      <div class="app-library-grid featured-app-grid" aria-label="Featured iPhone apps by JiaBao Dai">
+${cards}
+      </div>
+    </section>`;
+}
+
+function categoryNavSection() {
+  return `    <section class="section app-category-nav-section" aria-labelledby="browse-apps-by-category">
+      <div class="section-heading compact">
+        <p class="eyebrow">Browse Apps by Category</p>
+        <h2 id="browse-apps-by-category">Browse Apps by Category</h2>
+      </div>
+      <nav class="app-category-nav" aria-label="App categories">
+${categorySections.map((section) => `        <a href="#${escapeHtml(section.id)}">${escapeHtml(section.title)}</a>`).join("\n")}
+      </nav>
+    </section>`;
+}
+
+function relatedToolCard(tool) {
+  return `<article class="store-app-card directory-tool-card">
+          <a class="store-app-card-link" href="${escapeHtml(tool.href)}" aria-label="Open ${escapeHtml(tool.name)} calculator">
+            <div class="store-app-top">
+              <span class="store-app-icon">${escapeHtml(initials(tool.name))}</span>
+              <span class="store-app-genre">${escapeHtml(tool.label)}</span>
+            </div>
+            <h3>${escapeHtml(tool.name)}</h3>
+            <p>${escapeHtml(tool.description)}</p>
+            <div class="store-app-tags">${tool.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
+          </a>
+          <div class="store-app-actions single">
+            <a class="store-detail-button" href="${escapeHtml(tool.href)}">Open calculator</a>
+          </div>
+        </article>`;
+}
+
+function categorySection(section) {
+  return `    <section class="section app-directory-section" aria-labelledby="${escapeHtml(section.id)}">
+      <div class="section-heading compact">
+        <p class="eyebrow">Category</p>
+        <h2 id="${escapeHtml(section.id)}">${escapeHtml(section.title)}</h2>
+        <p>${escapeHtml(section.description)}</p>
+      </div>
+      <div class="app-library-grid category-app-grid" aria-label="${escapeHtml(section.title)}">
+${appCardsFor(section.slugs)}
+${(section.relatedTools || []).map(relatedToolCard).join("\n")}
+      </div>
+    </section>`;
+}
+
+const appDirectoryFaq = [
+  ["What kind of iPhone apps does JiaBao Dai build?", "JiaBao Dai builds practical iPhone utilities for makers, small business work, documents, home organization, creative tasks, personal routines, and casual games."],
+  ["Are these apps privacy-first?", "Many apps are designed around private, local workflows so common tasks can be completed without sending every project, receipt, note, or document through a cloud dashboard."],
+  ["Do these apps require an account?", "Most apps are built to be useful without account setup. Some optional system sharing or export features may use standard iOS workflows."],
+  ["Which app is best for woodworking?", "CutList is the woodworking app in the collection. It helps plan plywood cut lists, preview sheet layouts, save local projects, and export cut plans."],
+  ["Which app is best for receipt scanning?", "SnapReceipt is built for receipt capture, expense records, mileage logs, reimbursements, and tax-related organization."],
+  ["Which app is best for invoices?", "Invoice Maker is the app for creating invoices, estimates, and PDF documents for freelance, contractor, and small business work."],
+  ["Can I use these apps offline?", "Many apps are designed for offline-first use cases, especially local planning, scanning, records, labels, and personal utilities. Check each detail page for the exact workflow."],
+  ["Where can I download the apps?", "Each app card links to a local details page and to its App Store listing. Use the App Store button on any card to open the official Apple download page."]
+];
+
+function appsIndexJsonLd() {
+  const itemList = apps.map((app, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: app.name,
+    url: `https://woodcuttool.com${detailHref(app)}`
+  }));
+  const graph = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://woodcuttool.com/apps/#directory",
+        name: "Privacy-First iPhone Apps for Work, Makers, and Everyday Tools",
+        url: "https://woodcuttool.com/apps/",
+        description: "A directory of privacy-first iPhone apps by JiaBao Dai for makers, small businesses, documents, home utilities, creative work, personal routines, and casual games.",
+        mainEntity: {
+          "@type": "ItemList",
+          itemListElement: itemList
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://woodcuttool.com/apps/#faq",
+        mainEntity: appDirectoryFaq.map(([question, answer]) => ({
+          "@type": "Question",
+          name: question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: answer
+          }
+        }))
+      }
+    ]
+  };
+  return `<script type="application/ld+json">
+  ${JSON.stringify(graph, null, 2)}
+  </script>`;
+}
+
+function offlineFirstSection() {
+  return `    <section class="section app-offline-section">
+      <div class="app-offline-panel">
+        <p class="eyebrow">Offline-first tools</p>
+        <h2>Why these apps are built offline-first</h2>
+        <p>Many WoodCutTool apps are designed around a simple principle: useful tools should be fast, private, and available when you need them. Instead of forcing accounts, dashboards, or cloud upload, these apps focus on local workflows for iPhone users who want to get a job done quickly.</p>
+        <p>From plywood cut lists and quilt planning to receipts, invoices, labels, PDF scanning, and music practice, the goal is the same: open the app, finish the task, and keep control of your data.</p>
+      </div>
+    </section>`;
+}
+
+function faqSection() {
+  return `    <section class="section app-directory-faq-section">
+      <div class="app-directory-faq-inner">
+        <p class="eyebrow">FAQ</p>
+        <h2 id="faq">FAQ</h2>
+        <section class="faq-list" aria-label="iPhone app directory FAQ">
+${appDirectoryFaq.map(([question, answer]) => `          <h3>${escapeHtml(question)}</h3>
+          <p>${escapeHtml(answer)}</p>`).join("\n")}
+        </section>
+      </div>
+    </section>`;
+}
+
 function appsIndexPage() {
   return `<!doctype html>
 <html lang="en">
 ${head({
-    title: "Apps | WoodCutTool",
-    description: "All iPhone apps by JiaBao Dai, with App Store descriptions, detail pages, images, and download links.",
-    canonical: "https://woodcuttool.com/apps/"
+    title: "Privacy-First iPhone Apps for Work, Makers, and Everyday Tools | WoodCutTool",
+    description: "Explore privacy-first iPhone apps by JiaBao Dai, including CutList, QuiltFit, SnapReceipt, PDF Scan, Invoice Maker, Cadenza, and other offline tools for makers, small businesses, and everyday work.",
+    canonical: "https://woodcuttool.com/apps/",
+    jsonLd: appsIndexJsonLd()
   })}
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -121,10 +398,14 @@ ${head({
     <section class="page-hero">
       <p class="breadcrumb"><a href="/">Home</a> / Apps</p>
       <p class="eyebrow">App directory</p>
-      <h1>JiaBao Dai apps</h1>
-      <p class="lead">A complete App Store directory for ${apps.length} iPhone apps by JiaBao Dai. Click any app to view its description, images, and download link.</p>
+      <h1>Privacy-First iPhone Apps for Work, Makers, and Everyday Tools</h1>
+      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
     </section>
-${appLibrarySection({ withIntro: false })}
+${featuredAppsSection()}
+${categoryNavSection()}
+${categorySections.map(categorySection).join("\n")}
+${offlineFirstSection()}
+${faqSection()}
   </main>
   ${footer()}
 </body>
@@ -218,7 +499,7 @@ ${head({
         </div>
         <p class="lead">${escapeHtml(excerpt(app.description, 220))}</p>
         <div class="app-detail-actions">
-          <a class="button" href="${escapeHtml(app.url)}" rel="nofollow noopener">Download on App Store</a>
+          <a class="button" href="${escapeHtml(app.url)}" rel="noopener noreferrer">Download on App Store</a>
           <a class="button secondary" href="/apps/">Back to apps</a>
         </div>
       </div>
@@ -240,7 +521,7 @@ ${head({
           <div><dt>Minimum iOS</dt><dd>${escapeHtml(app.minimumOsVersion || "See App Store")}</dd></div>
           ${release ? `<div><dt>Updated</dt><dd>${escapeHtml(release.slice(0, 10))}</dd></div>` : ""}
         </dl>
-        <a class="button" href="${escapeHtml(app.url)}" rel="nofollow noopener">Open App Store</a>
+        <a class="button" href="${escapeHtml(app.url)}" rel="noopener noreferrer">Open App Store</a>
       </aside>
     </section>
   </main>
