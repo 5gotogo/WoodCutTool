@@ -3444,7 +3444,7 @@ function loadBlogTranslations() {
   if (!isBlogPage()) return Promise.resolve();
   if (blogTranslationsLoaded) return Promise.resolve();
   if (!blogTranslationsPromise) {
-    blogTranslationsPromise = fetch("/assets/blog-translations.json?v=20260620-i18n-nl")
+    blogTranslationsPromise = fetch("/assets/blog-translations.json?v=20260620-i18n-nl-v2")
       .then((response) => {
         if (!response.ok) throw new Error(`Blog translations failed: ${response.status}`);
         return response.json();
