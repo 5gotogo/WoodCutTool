@@ -2764,6 +2764,142 @@ form > .button,
   margin-top: 34px;
 }
 
+.seo-copy-section {
+  max-width: var(--max);
+  padding-top: 16px;
+}
+
+.seo-copy-inner {
+  max-width: 980px;
+}
+
+.seo-copy-inner p {
+  color: var(--muted);
+}
+
+.seo-copy-inner h3 {
+  margin: 26px 0 8px;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.inline-cta-section {
+  padding-top: 0;
+  padding-bottom: 8px;
+}
+
+.inline-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 10px 24px rgba(39, 44, 36, 0.05);
+}
+
+.inline-cta p {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 850;
+}
+
+.inline-cta .cta-row {
+  margin: 0;
+}
+
+.app-content-section {
+  max-width: var(--max);
+}
+
+.app-content-inner {
+  max-width: 860px;
+}
+
+.app-content-inner p,
+.app-content-inner li {
+  color: var(--muted);
+}
+
+.app-content-inner h2 {
+  margin-top: 34px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 16px 0 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  color: var(--ink);
+  background: #eef3ec;
+  font-weight: 850;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-list h3 {
+  margin: 12px 0 0;
+  font-size: 1.05rem;
+}
+
+.faq-list p {
+  margin-top: 4px;
+}
+
+.article-application-panel,
+.related-tools-guides {
+  margin-top: 34px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 12px 30px rgba(39, 44, 36, 0.06);
+}
+
+.application-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.application-grid div {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(247, 245, 239, 0.78);
+}
+
+.application-grid strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
 .page-hero {
   max-width: var(--max);
   margin: 0 auto;
@@ -3741,6 +3877,10 @@ form > .button,
 
   .input-grid.four {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .application-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .piece-row.four {

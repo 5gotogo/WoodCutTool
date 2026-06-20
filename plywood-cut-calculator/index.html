@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Plywood Cut Calculator - Sheet Layout Optimizer | WoodCutTool</title>
-  <meta name="description" content="Free plywood cut calculator for sheet goods. Optimize panel layout, estimate sheets required, view cutting sequence, and calculate plywood waste.">
+  <title>Plywood Cut Calculator | Free Sheet Layout Optimizer</title>
+  <meta name="description" content="Use this plywood cut calculator to plan sheet layouts, account for saw kerf, estimate waste, and compare online planning with the CutList iPhone app.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://woodcuttool.com/plywood-cut-calculator/">
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
@@ -16,18 +16,100 @@
   <link rel="stylesheet" href="/assets/styles.css?v=20260619-app-details">
   <script defer src="/assets/app.js?v=20260619-app-details"></script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"Plywood Cut Calculator","url":"https://woodcuttool.com/plywood-cut-calculator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Client-side plywood sheet layout calculator for optimizing panel cuts."}
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "@id": "https://woodcuttool.com/plywood-cut-calculator/#calculator",
+        "name": "Plywood Cut Calculator",
+        "url": "https://woodcuttool.com/plywood-cut-calculator/",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSubCategory": "Sheet cutting calculator",
+        "operatingSystem": "Any",
+        "isAccessibleForFree": true,
+        "description": "Client-side plywood sheet layout calculator for optimizing panel cuts, saw kerf, sheet count, and waste percentage.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://woodcuttool.com/plywood-cut-calculator/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a plywood cut calculator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A plywood cut calculator converts sheet size, part dimensions, quantities, and saw kerf into an estimated sheet layout, cut sequence, sheet count, and waste percentage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I calculate plywood waste?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Plywood waste is the unused sheet area after all parts and kerf allowances are placed. The calculator compares total sheet area with the area consumed by parts and cut spacing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is saw kerf?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Saw kerf is the width of material removed by the blade. Entering a realistic kerf helps prevent layouts that look correct digitally but are too tight in the shop."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I rotate parts in the layout?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The form includes an Allow rotation setting. Disable rotation when plywood grain direction, finished faces, or edge orientation must stay consistent."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I save plywood cut layouts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The browser calculator is designed for quick estimates. Use the CutList iPhone app when you need saved local projects, repeat edits, PDF export, or shop-ready layouts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this calculator private?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The calculator runs in your browser for planning. No account or upload is required for the static page content and calculator workflow."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should I use the CutList iPhone app?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use CutList for iPhone when a project needs offline storage, local project history, PDF export, AirPrint, or a cut plan you can keep with you at the saw."
+            }
+          }
+        ]
+      }
+    ]
+  }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links"><a href="/cut-list-calculator/">Cut List</a><a class="active" href="/plywood-cut-calculator/">Plywood</a><a href="/stair-stringer-calculator/">Stairs</a><a href="/board-foot-calculator/">Board Feet</a><a href="/wood-waste-calculator/">Waste</a></div><a class="button small" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow">Download CutList</a></nav></header>
+  <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links"><a href="/apps/cutlist/">CutList</a><a href="/apps/quiltfit/">QuiltFit</a><a class="active" href="/plywood-cut-calculator/">Plywood</a><a href="/stringer/">Stringer</a><a href="/blog/">Blogs</a><a href="/apps/">Apps</a></div><a class="button small" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList</a></nav></header>
   <main id="main">
     <section class="section">
       <p class="breadcrumb"><a href="/">Home</a> / Plywood Cut Calculator</p>
       <p class="eyebrow">Sheet goods optimizer</p>
       <h1>Plywood Cut Calculator</h1>
-      <p class="lead">Plan plywood sheet layouts for cabinet panels, shelves, drawer parts, and shop projects. The calculator packs parts into sheets and renders a first-sheet layout preview in the browser.</p>
+      <p class="lead">Plan plywood sheet layouts for cabinet panels, shelves, drawer parts, and shop projects before you buy material. This plywood cut calculator lets you enter stock sheet size, part dimensions, quantities, saw kerf, and rotation rules, then preview the estimated sheet count, waste percentage, and first-sheet layout in the browser. It is best for quick planning, quoting, and checking whether a cut list is realistic before moving a saved project into the CutList iPhone app.</p>
     </section>
     <section class="section tool-layout">
       <div class="tool-panel">
@@ -67,10 +149,58 @@
       <aside class="result-panel" id="plywood-result" aria-live="polite">
         <h2>Sheet layout results</h2>
         <p class="placeholder">Run the calculator to see sheets required, waste percentage, cutting sequence, and a visual first-sheet preview.</p>
-        <div class="cta-panel"><h3>Export sheet layouts in CutList</h3><p>CutList for iPhone saves projects offline and exports PDF cut plans for the shop.</p><a class="button" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow">Download CutList iOS</a></div>
+        <div class="cta-panel"><h3>Export sheet layouts in CutList</h3><p>CutList for iPhone saves projects offline and exports PDF cut plans for the shop.</p><a class="button" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList</a></div>
       </aside>
     </section>
-    <section class="section"><div class="grid tools"><article class="card"><h2>Cut list boards</h2><p>Need solid lumber optimization instead of sheet goods?</p><a class="card-link" href="/cut-list-calculator/">Open cut list calculator</a></article><article class="card"><h2>Plywood guide</h2><p>Learn practical plywood cutting optimization methods.</p><a class="card-link" href="/blog/wood-cutting-calculator-guide/">Read plywood guide</a></article><article class="card"><h2>Waste estimate</h2><p>Estimate sheet waste by area and cost.</p><a class="card-link" href="/wood-waste-calculator/">Open waste calculator</a></article></div></section>
+    <section class="section content">
+      <h2>How to use this plywood cutting calculator</h2>
+      <p>Start with the actual plywood sheet size you plan to buy, not a nominal size from memory. A common full sheet is 96 by 48 inches, but imported panels, prefinished sheets, and home-center stock can vary. Enter the saw kerf for the blade you will use, then add every part with a clear label, finished length, finished width, and quantity. If a part has visible grain direction or a finished face, turn rotation off so the sheet layout does not trade quality for a small waste reduction.</p>
+      <p>After running the calculator, review the sheet count before you review the waste number. A layout that saves two percent but forces one more sheet is not a better buying decision. Then look at the first-sheet preview and the cut sequence. Thin strips, fragile long rips, and awkward offcuts are signs that the plan may need a different stock size or a second material group.</p>
+
+      <h2>Example: cabinet shelf layout</h2>
+      <p>Imagine a small base cabinet project with two 34.5 by 23.25 inch side panels, three 30 by 18 inch cabinet shelves, and one 30 by 4 inch stretcher. On a 96 by 48 inch sheet with a 1/8 inch kerf, the calculator can estimate whether the parts fit on one sheet and how much usable offcut remains. The common mistake is to add only the visible shelves and forget stretchers, nailers, or drawer box parts. That makes the waste estimate look better than the real project.</p>
+
+      <h2>What is saw kerf?</h2>
+      <p>Saw kerf is the width of plywood removed by the blade during each cut. If your blade removes 0.125 inches, every cut line consumes that width. Ignoring kerf can make a digital sheet layout look possible while the final part is short in the shop. For clean cabinet work, enter the blade you will actually use and include any trim cut needed to square a rough factory edge.</p>
+
+      <h2>How to reduce plywood waste</h2>
+      <p>Reducing waste is not only about packing rectangles tightly. Group parts by material, lock rotation where grain matters, batch repeated cabinet shelves, and decide which offcuts are worth saving. A useful offcut should have enough size and a clear label; otherwise it becomes clutter. Use the calculator to compare layout choices before buying material, then move serious projects into CutList when you need saved layouts and PDF output.</p>
+
+      <h2>Common plywood sheet sizes</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Sheet size</th><th>Typical use</th><th>Planning note</th></tr></thead>
+          <tbody>
+            <tr><td>4 x 8 ft / 48 x 96 in</td><td>Cabinets, shelves, furniture</td><td>Default size for most sheet layout estimates.</td></tr>
+            <tr><td>5 x 5 ft / 60 x 60 in</td><td>Baltic birch style panels</td><td>Useful for drawer boxes, jigs, and smaller parts.</td></tr>
+            <tr><td>4 x 10 ft / 48 x 120 in</td><td>Tall panels and long built-ins</td><td>Can reduce seams but may be harder to handle.</td></tr>
+            <tr><td>2 x 4 ft / 24 x 48 in</td><td>Home-center project panels</td><td>Good for quick DIY woodworking checks.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Online calculator vs CutList iPhone app</h2>
+      <p>Use the online plywood cut calculator when you need a fast answer: rough sheet count, waste percentage, and a visual check before buying material. Use the <a href="/apps/cutlist/">CutList iPhone cut list app</a> when the job needs local projects, repeated editing, PDF export, AirPrint, or an offline woodworking calculator you can keep in the shop. The browser calculator is for quick planning; the app is for project records.</p>
+
+      <h2 id="faq">FAQ</h2>
+      <section class="faq-list" aria-label="Plywood cut calculator FAQ">
+        <h3>What is a plywood cut calculator?</h3>
+        <p>A plywood cut calculator converts sheet size, part dimensions, quantities, and saw kerf into an estimated sheet layout, cut sequence, sheet count, and waste percentage.</p>
+        <h3>How do I calculate plywood waste?</h3>
+        <p>Compare the total area of purchased sheets with the area used by parts and cut spacing. The calculator estimates the unused area after the layout is packed.</p>
+        <h3>What is saw kerf?</h3>
+        <p>Saw kerf is the blade width removed during cutting. It must be included so parts do not end up too small.</p>
+        <h3>Can I rotate parts in the layout?</h3>
+        <p>Yes. Use the rotation setting when grain direction and face orientation do not matter. Turn it off for visible cabinet parts.</p>
+        <h3>Can I save plywood cut layouts?</h3>
+        <p>The browser tool is meant for quick estimates. Use CutList for iPhone to save layouts as local projects.</p>
+        <h3>Is this calculator private?</h3>
+        <p>The calculator runs in the browser and does not require an account or upload for the visible planning workflow.</p>
+        <h3>When should I use the CutList iPhone app?</h3>
+        <p>Use the app when you need offline project storage, PDF export, AirPrint, repeat edits, and cut plans available at the saw.</p>
+      </section>
+    </section>
+    <section class="section"><div class="grid tools"><article class="card"><h2>Cut list boards</h2><p>Need solid lumber optimization instead of sheet goods?</p><a class="card-link" href="/cut-list-calculator/">Open the board cut list calculator</a></article><article class="card"><h2>Plywood guide</h2><p>Learn practical plywood cutting optimization methods.</p><a class="card-link" href="/blog/wood-cutting-calculator-guide/">Read the plywood cutting calculator guide</a></article><article class="card"><h2>CutList iPhone app</h2><p>Save local projects and export PDF cut plans.</p><a class="card-link" href="/apps/cutlist/">Open the CutList iPhone cut list app</a></article></div></section>
   </main>
   <footer class="site-footer">
     <div class="footer-inner">

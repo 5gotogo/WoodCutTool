@@ -73,7 +73,7 @@ function appCard(app, index) {
   return `<article class="store-app-card" data-genre="${escapeHtml(app.genre)}">
           <a class="store-app-card-link" href="/apps/${escapeHtml(app.slug)}/" aria-label="View ${escapeHtml(app.name)} details">
             <div class="store-app-top">
-              <img class="store-app-artwork" src="${escapeHtml(app.artworkUrl512)}" alt="" loading="lazy">
+              <img class="store-app-artwork" src="${escapeHtml(app.artworkUrl512)}" alt="${escapeHtml(app.name)} app icon" loading="lazy">
               <span class="store-app-genre">${escapeHtml(app.genre)}</span>
             </div>
             <h3>${escapeHtml(app.name)}</h3>
@@ -81,7 +81,7 @@ function appCard(app, index) {
           </a>
           <div class="store-app-actions">
             <a class="store-detail-button" href="/apps/${escapeHtml(app.slug)}/">Details</a>
-            <a class="store-download-button" href="${escapeHtml(app.url)}" rel="nofollow">App Store</a>
+            <a class="store-download-button" href="${escapeHtml(app.url)}" rel="nofollow noopener">App Store</a>
           </div>
         </article>`;
 }
@@ -142,7 +142,7 @@ function detailVisual(app, index) {
   return `<div class="app-detail-mockup tone-${tone}" aria-label="${escapeHtml(app.name)} visual preview">
             <div class="mock-phone">
               <div class="mock-screen-top"><span></span><span></span><span></span></div>
-              <div class="mock-icon-row"><img src="${escapeHtml(app.artworkUrl512)}" alt="" loading="lazy"><strong>${escapeHtml(app.name.split(":")[0])}</strong></div>
+              <div class="mock-icon-row"><img src="${escapeHtml(app.artworkUrl512)}" alt="${escapeHtml(app.name)} app icon" loading="lazy"><strong>${escapeHtml(app.name.split(":")[0])}</strong></div>
               <div class="mock-content-grid"><span></span><span></span><span></span><span></span><span></span><span></span></div>
               <div class="mock-bottom-bar"><span></span><span></span></div>
             </div>
@@ -218,7 +218,7 @@ ${head({
         </div>
         <p class="lead">${escapeHtml(excerpt(app.description, 220))}</p>
         <div class="app-detail-actions">
-          <a class="button" href="${escapeHtml(app.url)}" rel="nofollow">Download on App Store</a>
+          <a class="button" href="${escapeHtml(app.url)}" rel="nofollow noopener">Download on App Store</a>
           <a class="button secondary" href="/apps/">Back to apps</a>
         </div>
       </div>
@@ -240,7 +240,7 @@ ${head({
           <div><dt>Minimum iOS</dt><dd>${escapeHtml(app.minimumOsVersion || "See App Store")}</dd></div>
           ${release ? `<div><dt>Updated</dt><dd>${escapeHtml(release.slice(0, 10))}</dd></div>` : ""}
         </dl>
-        <a class="button" href="${escapeHtml(app.url)}" rel="nofollow">Open App Store</a>
+        <a class="button" href="${escapeHtml(app.url)}" rel="nofollow noopener">Open App Store</a>
       </aside>
     </section>
   </main>

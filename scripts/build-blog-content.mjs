@@ -1170,6 +1170,109 @@ function fallbackResearchBrief(article) {
   return null;
 }
 
+const relatedCutListLinks = [
+  ["/plywood-cut-calculator/", "Try the plywood cut calculator"],
+  ["/cut-list-calculator/", "Use the board cut list calculator"],
+  ["/apps/cutlist/", "Open the CutList iPhone cut list app"],
+  ["/blog/plywood-optimization-kerf-grain-offcuts/", "Study kerf, grain, and offcut strategy"],
+  ["/blog/cabinet-cut-list-mistakes/", "Avoid common cabinet cut list mistakes"],
+  ["/blog/reducing-sheet-good-waste-on-small-shops/", "Reduce sheet-good waste in a small shop"],
+  ["/blog/cutlist-vs-spreadsheets-for-cabinetmakers/", "Compare CutList apps and spreadsheets"]
+];
+
+const cutlistArticleEnhancements = {
+  "cutlist-shop-workflow-from-bid-to-cut": {
+    scenario: "A two-person cabinet shop is quoting a laundry room with four base cabinets, six adjustable shelves, two finished end panels, and drawer boxes. Before a sheet is opened, the estimator needs to know whether prefinished plywood and shop-grade backs should be purchased together or separated into different material groups.",
+    calculation: "If the visible cabinet parts use three 4 x 8 sheets at roughly 78% yield and backs use one cheaper sheet at 62% yield, mixing the groups hides the real cost. Running them separately in CutList makes the buying decision clearer and keeps offcuts matched to material quality.",
+    mistake: "The common mistake is sending the first spreadsheet total straight to the saw. It usually misses finished ends, duplicate left/right parts, or the extra trim cut needed to square factory edges.",
+    cta: "Use the online plywood calculator for a quick sheet count, then move the approved job into CutList for iPhone when the shop needs saved local projects and PDF output."
+  },
+  "plywood-optimization-kerf-grain-offcuts": {
+    scenario: "A maker is building a maple plywood media cabinet with visible side panels and hidden internal shelves. The layout must preserve grain direction on finished faces while still using offcuts for shelves and stretchers.",
+    calculation: "With a 1/8 inch kerf, ten rip cuts consume 1.25 inches of material before any trimming. On a tight sheet layout, that can be the difference between a shelf fitting cleanly and a part coming out undersized.",
+    mistake: "The common mistake is allowing every part to rotate because the waste percentage looks better. For visible panels, grain direction can matter more than saving a few square inches.",
+    cta: "Check the layout with the free plywood cutting calculator, then use CutList when the project needs grain rules, saved layouts, and a shop-ready cut record."
+  },
+  "cabinet-cut-list-mistakes": {
+    scenario: "A DIY builder is making two garage cabinets and copies the same shelf size into every box. One cabinet is deeper because it sits beside a utility pipe, but the copied cut list does not show that exception.",
+    calculation: "Six shelves at 30 x 18 inches use 3,240 square inches before kerf. If two shelves should actually be 30 x 21 inches, the missing 180 square inches can force a different sheet layout late in the job.",
+    mistake: "The common mistake is mixing opening dimensions, finished dimensions, and oversized trim dimensions in one list. The optimizer can only solve the dimensions it receives.",
+    cta: "Use a visual cut list optimizer to group duplicate sizes and catch quantity errors before buying plywood."
+  },
+  "reducing-sheet-good-waste-on-small-shops": {
+    scenario: "A small shop builds mudroom benches, closet inserts, and shop cabinets from the same 3/4 inch plywood. Without a shared stock library, every project starts with slightly different material names and offcuts are hard to reuse.",
+    calculation: "Saving one usable 18 x 30 inch offcut is 540 square inches, or about 7.8% of a 4 x 8 sheet. Labeling three similar offcuts can prevent buying an extra project panel later.",
+    mistake: "The common mistake is treating every leftover piece as useful. Thin strips without labels usually become clutter instead of inventory.",
+    cta: "Use CutList to keep local project records and compare planned waste against real shop scraps after the job is cut."
+  },
+  "cutlist-vs-spreadsheets-for-cabinetmakers": {
+    scenario: "A cabinet maker uses a spreadsheet to calculate box quantities, then manually sketches parts on paper to see whether they fit on plywood. The estimate is fast, but the spatial layout is still guesswork.",
+    calculation: "A spreadsheet can total five shelves at 30 x 18 inches, but it does not show whether those shelves fit beside two 34.5 x 23.25 inch side panels after kerf and grain restrictions.",
+    mistake: "The common mistake is using area totals as proof that a sheet will work. Rectangles can have enough total area and still fail because of shape, rotation, or cut order.",
+    cta: "Keep formulas in the spreadsheet if they help estimating, then move dimensions into the CutList app or online calculator for sheet layout."
+  },
+  "cutlist-garage-shelf-weekend-project": {
+    scenario: "A homeowner wants garage shelves from two sheets of plywood and needs the side panels, shelves, and braces ready before Saturday afternoon assembly.",
+    calculation: "Four shelves at 48 x 15 inches consume 2,880 square inches before kerf, close to 42% of one 4 x 8 sheet. The side panels and braces decide whether the project needs another sheet.",
+    mistake: "The common mistake is measuring shelf openings after buying material, then discovering that support strips or side panels were not included.",
+    cta: "Use the plywood cut calculator before the store trip, then save the final layout in CutList for offline reference."
+  },
+  "cutlist-bookcase-from-one-sheet": {
+    scenario: "A maker is trying to build a simple bookcase from one sheet and wants to know whether fixed shelves, side panels, and a toe kick can all fit.",
+    calculation: "Two sides at 72 x 11.25 inches already use 1,620 square inches. Add four shelves at 30 x 11.25 inches and the layout is tight enough that kerf and rip order matter.",
+    mistake: "The common mistake is assuming a one-sheet project works because the arithmetic area fits. Long parts can block efficient placement.",
+    cta: "Preview the sheet layout online, then use CutList if the design needs saved revisions."
+  },
+  "cutlist-closet-organizer-diy": {
+    scenario: "A DIY closet organizer has tower sides, adjustable shelves, shoe shelves, and narrow cleats. The project looks simple until every small support piece is added.",
+    calculation: "A 96 x 48 sheet has 4,608 square inches. If the visible panels consume 3,600 square inches before kerf, the remaining area may not be shaped well enough for long cleats.",
+    mistake: "The common mistake is leaving cleats, fillers, and nailers out of the first cut list because they feel minor.",
+    cta: "Use CutList to keep all small parts labeled so the layout and assembly sequence stay connected."
+  },
+  "cutlist-drawer-boxes-for-beginners": {
+    scenario: "A beginner is cutting drawer box sides, fronts, backs, and bottoms for a small workbench. The repeated parts make the job ideal for a cut list, but labels matter.",
+    calculation: "Six drawers need twelve sides and twelve fronts or backs. A 1/16 inch dimension mistake repeated 24 times turns into a project-wide fit problem.",
+    mistake: "The common mistake is cutting one part from memory and batching it before checking the assembled drawer size.",
+    cta: "Enter every drawer part in a cut list optimizer, review quantities, then export or save the plan in CutList."
+  },
+  "cutlist-plywood-workbench-top": {
+    scenario: "A builder is laminating plywood for a workbench top and needs a clean plan for top layers, stretchers, and utility shelves from sheet goods.",
+    calculation: "Two 72 x 30 inch top layers consume 4,320 square inches, almost a full 4 x 8 sheet before kerf. The remaining parts need a second sheet or a design adjustment.",
+    mistake: "The common mistake is pricing only the top surface and forgetting lower shelves, braces, and sacrificial strips.",
+    cta: "Run the layout before buying material, then keep the final cut sequence in the CutList iPhone app."
+  }
+};
+
+function cutlistApplicationPanel(article) {
+  const detail = cutlistArticleEnhancements[article.slug];
+  if (!detail) {
+    return "";
+  }
+
+  return `<section class="article-application-panel">
+        <h2>Project Application</h2>
+        <div class="application-grid">
+          <div><strong>Real scenario</strong><p>${escapeHtml(detail.scenario)}</p></div>
+          <div><strong>Quick calculation</strong><p>${escapeHtml(detail.calculation)}</p></div>
+          <div><strong>Common mistake</strong><p>${escapeHtml(detail.mistake)}</p></div>
+          <div><strong>Tool CTA</strong><p>${escapeHtml(detail.cta)}</p></div>
+        </div>
+      </section>`;
+}
+
+function relatedToolsAndGuides(article) {
+  if (article.category !== "CutList") {
+    return "";
+  }
+
+  return `<section class="related-tools-guides">
+        <h2>Related tools and guides</h2>
+        <div class="related-grid">${relatedCutListLinks
+          .map(([href, label]) => `<a href="${href}"><span>CutList resource</span><strong>${escapeHtml(label)}</strong></a>`)
+          .join("")}</div>
+      </section>`;
+}
+
 function escapeHtml(value) {
   return value
     .replaceAll("&", "&amp;")
@@ -1413,6 +1516,8 @@ ${head({
         <h2>Field Checklist</h2>
         <ul>${article.checklist.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
       </section>
+      ${cutlistApplicationPanel(article)}
+      ${relatedToolsAndGuides(article)}
       <section class="related-articles">
         <h2>Related Articles</h2>
         <div class="related-grid">${related.map((item) => `<a href="/blog/${item.slug}/"><span>${escapeHtml(item.category)}</span><strong>${escapeHtml(item.title)}</strong></a>`).join("")}</div>
