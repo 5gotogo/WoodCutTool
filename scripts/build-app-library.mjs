@@ -3,8 +3,9 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260620-app-card-wrap";
+const version = "20260620-five-star-app-reviews";
 const apps = JSON.parse(readFileSync(join(root, "data", "app-store-apps.json"), "utf8"));
+const appStoreReviews = JSON.parse(readFileSync(join(root, "data", "app-store-reviews.json"), "utf8"));
 
 function escapeHtml(value) {
   return String(value || "")
@@ -474,6 +475,50 @@ function descriptionBlocks(description) {
   return html.join("\n        ");
 }
 
+function formatReviewDate(value) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return String(value).slice(0, 10);
+  return new Intl.DateTimeFormat("en-US", { year: "numeric", month: "short", day: "numeric" }).format(date);
+}
+
+function reviewStars(rating) {
+  const count = Math.max(0, Math.min(5, Number(rating) || 0));
+  return "★".repeat(count) + "☆".repeat(5 - count);
+}
+
+function appReviewsSection(app) {
+  const reviewData = appStoreReviews[app.slug];
+  const reviews = (reviewData?.reviews || []).filter((review) => Number(review.rating) === 5).slice(0, 6);
+  if (!reviews.length) return "";
+
+  const average = reviews.reduce((sum, review) => sum + (Number(review.rating) || 0), 0) / reviews.length;
+  const cards = reviews.map((review) => `
+        <article class="app-review-card">
+          <div class="app-review-head">
+            <div>
+              <strong>${escapeHtml(review.title)}</strong>
+              <span>${escapeHtml(review.author)} · ${escapeHtml(formatReviewDate(review.updated))}</span>
+            </div>
+            <span class="review-stars" aria-label="${escapeHtml(String(review.rating))} out of 5 stars">${escapeHtml(reviewStars(review.rating))}</span>
+          </div>
+          <p>${escapeHtml(review.content)}</p>
+          ${review.version ? `<small>App version ${escapeHtml(review.version)}</small>` : ""}
+        </article>`).join("");
+
+  return `    <section class="app-detail-reviews" aria-label="${escapeHtml(app.name)} App Store customer reviews">
+      <div class="app-review-summary">
+        <p class="eyebrow">Real App Store reviews</p>
+        <h2>What users say</h2>
+        <p>${escapeHtml(reviews.length)} public US App Store review${reviews.length === 1 ? "" : "s"} shown from Apple customer reviews. Average shown rating: ${escapeHtml(average.toFixed(1))}/5.</p>
+      </div>
+      <div class="app-review-grid">
+${cards}
+      </div>
+      <p class="app-review-source">Source: <a href="${escapeHtml(reviewData.sourceUrl)}" rel="nofollow noopener">Apple App Store customer reviews RSS</a>, fetched ${escapeHtml(reviewData.fetchedAt || appStoreReviews._meta?.fetchedAt || "")}. Reviews are shown as published by App Store users.</p>
+    </section>`;
+}
+
 function appDetailPage(app, index) {
   const release = app.currentVersionReleaseDate || app.releaseDate || "";
   return `<!doctype html>
@@ -524,6 +569,7 @@ ${head({
         <a class="button" href="${escapeHtml(app.url)}" rel="noopener noreferrer">Open App Store</a>
       </aside>
     </section>
+${appReviewsSection(app)}
   </main>
   ${footer()}
 </body>

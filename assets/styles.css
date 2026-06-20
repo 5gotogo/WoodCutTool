@@ -1445,7 +1445,8 @@ h3 {
 }
 
 .app-detail-hero,
-.app-detail-layout {
+.app-detail-layout,
+.app-detail-reviews {
   max-width: var(--max);
   margin: 0 auto;
   padding: 32px 16px 18px;
@@ -1457,6 +1458,7 @@ h3 {
 .app-detail-mockup,
 .app-description-panel,
 .app-meta-panel,
+.app-detail-reviews,
 .app-screenshot-strip {
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -1676,6 +1678,73 @@ h3 {
 .app-meta-panel dd {
   margin: 4px 0 0;
   font-weight: 850;
+}
+
+.app-detail-reviews {
+  display: block;
+  padding: 22px;
+}
+
+.app-review-summary {
+  max-width: 720px;
+}
+
+.app-review-summary h2 {
+  margin-bottom: 10px;
+}
+
+.app-review-grid {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.app-review-card {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(238, 243, 236, 0.68);
+}
+
+.app-review-head {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.app-review-head strong {
+  display: block;
+  line-height: 1.25;
+}
+
+.app-review-head span,
+.app-review-card small,
+.app-review-source {
+  color: var(--muted);
+}
+
+.app-review-head span {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.9rem;
+}
+
+.review-stars {
+  flex: 0 0 auto;
+  color: var(--accent-3);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.app-review-card p {
+  margin: 12px 0 8px;
+  color: var(--ink);
+}
+
+.app-review-source {
+  margin-top: 14px;
+  font-size: 0.92rem;
 }
 
 .visual-flow-section {
@@ -2241,6 +2310,8 @@ h3 {
 .guide-thumb {
   width: 92px;
   aspect-ratio: 1;
+  position: relative;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: #f7f1e3;
@@ -2280,6 +2351,36 @@ h3 {
   border-top: 7px solid var(--accent);
   border-left: 7px solid var(--accent);
   box-shadow: 20px -12px 0 -5px transparent, 20px -12px 0 0 var(--accent);
+}
+
+.layout-thumb {
+  background: linear-gradient(180deg, #fbfcfb, #f7f1e3);
+}
+
+.layout-thumb::before,
+.layout-thumb::after {
+  content: "";
+  position: absolute;
+  border-radius: 3px;
+  background: var(--accent);
+}
+
+.layout-thumb::before {
+  left: 14%;
+  top: 22%;
+  width: 48%;
+  height: 20%;
+  box-shadow:
+    0 128% 0 -2px var(--accent),
+    72% 0 0 -3px var(--accent);
+}
+
+.layout-thumb::after {
+  right: 12%;
+  bottom: 18%;
+  width: 42%;
+  height: 22%;
+  background: #2fb66d;
 }
 
 .cutlist-thumb {
