@@ -2828,6 +2828,29 @@ form > .button,
   margin-top: 34px;
 }
 
+.plywood-content-section {
+  max-width: var(--max);
+}
+
+.plywood-content-inner {
+  max-width: 860px;
+}
+
+.plywood-content-inner p,
+.plywood-content-inner li {
+  color: var(--muted);
+}
+
+.plywood-content-inner h2 {
+  margin-top: 34px;
+}
+
+.plywood-content-inner h3 {
+  margin: 20px 0 8px;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
 .table-wrap {
   overflow-x: auto;
   margin: 16px 0 8px;
