@@ -515,7 +515,7 @@ function appReviewsSection(app) {
       <div class="app-review-grid">
 ${cards}
       </div>
-      <p class="app-review-source">Source: <a href="${escapeHtml(reviewData.sourceUrl)}" rel="nofollow noopener">Apple App Store customer reviews RSS</a>, fetched ${escapeHtml(reviewData.fetchedAt || appStoreReviews._meta?.fetchedAt || "")}. Reviews are shown as published by App Store users.</p>
+      <p class="app-review-source">Source: <a href="${escapeHtml(reviewData.sourceUrl)}" rel="nofollow noopener">Apple App Store public reviews</a>, fetched ${escapeHtml(reviewData.fetchedAt || appStoreReviews._meta?.fetchedAt || "")}. Reviews are shown as published by App Store users.</p>
     </section>`;
 }
 

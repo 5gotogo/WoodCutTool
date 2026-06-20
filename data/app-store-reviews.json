@@ -1,845 +1,895 @@
 {
   "_meta": {
-    "source": "Apple App Store customer reviews RSS, US storefront",
+    "source": "Apple App Store public reviews page, with customer reviews RSS fallback, US storefront",
     "storefront": "us",
     "fetchedAt": "2026-06-20",
     "ratingFilter": 5,
     "maxPages": 3
   },
   "quiltfit-quilt-design-planner": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6776541705/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/quiltfit-quilt-design-planner/id6776541705?see-all=reviews&platform=iphone",
     "appId": "6776541705",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "14185429278",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Very useful quilt planner",
         "content": "Great app for quilt design,cutting lists,and sewing projects.It keeps fabric pieces organized and makes planning a quilt much easier.🌟🌟🌟🌟🌟",
-        "updated": "2026-06-15T05:29:25-07:00"
+        "updated": "2026-06-15T12:29:25.000Z"
+      },
+      {
+        "id": "14185279342",
+        "author": "AlexInCity",
+        "rating": 5,
+        "version": "",
+        "title": "Best quilt design planner I’ve used",
+        "content": "QuiltFit is great design planner for organizing sewing projects from start to finish.I can create quilt patterns,adjust quilt size,plan fabric pieces,and keep a clear cutting list before I start sewing.Simple,practical,and very useful for any quilter.",
+        "updated": "2026-06-15T11:38:56.000Z"
+      },
+      {
+        "id": "14177680069",
+        "author": "Chris_O888",
+        "rating": 5,
+        "version": "",
+        "title": "Great tool for planning quilt projects",
+        "content": "This app makes quilt planning so much easier.I can quickly design a layout,adjust the quilt size,and keep track of the pieces I need to cut.It’s simple,clean,and very helpful for organizing a project before I start sewing.👍👍👍",
+        "updated": "2026-06-13T12:35:43.000Z"
       }
     ]
   },
   "cutlist-plywood-optimizer": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6768171871/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871?see-all=reviews&platform=iphone",
     "appId": "6768171871",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "14130667767",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "A Must-have Tool for Cabinet Makers",
         "content": "This app takes the headache out of planning plywood cuts.The optimization results are surprisingly good and have helped me reduce waste on multiple projects.It’s simple enough for beginners but powerful enough for professionals.👍",
-        "updated": "2026-06-01T03:27:19-07:00"
+        "updated": "2026-06-01T10:27:19.000Z"
       },
       {
         "id": "14061685005",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Best Plywood Cutting App I’ve Used",
         "content": "Excellent plywood cutting optimizer!I’ve tried several similar apps and this one is by far the easiest to use.The cutting planning is fast,accurate,and helps reduce waste a lot.",
-        "updated": "2026-05-13T17:19:37-07:00"
+        "updated": "2026-05-14T00:19:37.000Z"
       },
       {
         "id": "14059557500",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Perfect Tool for Woodworking Projects",
         "content": "This app saved me so much time in my woodworking projects.I used to calculate plywood cuts manually and always wasted material.Now I can quickly create optimized cut layouts in seconds.I especially like the visual layout feature because it makes every cut very clear.👍👍👍👍👍",
-        "updated": "2026-05-13T04:45:06-07:00"
+        "updated": "2026-05-13T11:45:06.000Z"
       }
     ]
   },
   "snaplabel-photo-text-label": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6751947372/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/snaplabel-photo-text-label/id6751947372?see-all=reviews&platform=iphone",
     "appId": "6751947372",
+    "sourceType": "app-store-page",
     "reviews": [
       {
-        "id": "13937609492",
-        "author": "AlexInCity",
+        "id": "13354018165",
+        "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0.5",
-        "title": "Best Photo Label App",
-        "content": "Super easy photo label app. I can quickly add text labels to images and create clean printable labels.The batch labels feature saves a lot of time.Simple,fast,and very useful.🌟🌟🌟🌟🌟",
-        "updated": "2026-04-08T18:09:11-07:00"
+        "version": "",
+        "title": "🌟🌟🌟🌟🌟Perfect for Organizing and Printing Labels!!",
+        "content": "SnapLabel makes tagging and printing photos so easy! I can quickly add tags to my pictures,organize them by category, and print beautiful,clean labels in seconds!",
+        "updated": "2025-11-04T05:12:10.000Z"
       },
       {
         "id": "13354026925",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "👍So Simple and Super Useful!",
         "content": "I love SnapLabel! It’s honestly the easiest way I’ve found to tag and print my photos.I use it to organize stuff at home and for my small business!",
-        "updated": "2025-11-03T21:16:01-07:00"
+        "updated": "2025-11-04T05:16:01.000Z"
       },
       {
-        "id": "13354018165",
-        "author": "Nicolas Tom",
+        "id": "13937609492",
+        "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0.1",
-        "title": "🌟🌟🌟🌟🌟Perfect for Organizing and Printing Labels!!",
-        "content": "SnapLabel makes tagging and printing photos so easy! I can quickly add tags to my pictures,organize them by category, and print beautiful,clean labels in seconds!",
-        "updated": "2025-11-03T21:12:10-07:00"
+        "version": "",
+        "title": "Best Photo Label App",
+        "content": "Super easy photo label app. I can quickly add text labels to images and create clean printable labels.The batch labels feature saves a lot of time.Simple,fast,and very useful.🌟🌟🌟🌟🌟",
+        "updated": "2026-04-09T01:09:11.000Z"
       }
     ]
   },
   "work-shift-schedule-calendar": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6761800882/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/work-shift-schedule-calendar/id6761800882?see-all=reviews&platform=iphone",
     "appId": "6761800882",
+    "sourceType": "app-store-page",
     "reviews": [
-      {
-        "id": "14164249676",
-        "author": "Chris_O888",
-        "rating": 5,
-        "version": "1.0.1",
-        "title": "Perfect for Shift Workers",
-        "content": "This app makes it so much easier to keep track of my work schedule.I can quickly see my shifts,day off,and upcoming rotation without checking a paper schedule all the time.The reminders are helpful,and the yearly view is great for planning ahead.Simple,clean,and very useful for anyone working rotating shifts.Highly recommended.👍👍👍",
-        "updated": "2026-06-09T18:05:21-07:00"
-      },
       {
         "id": "13944730649",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Great for shift work",
         "content": "This shift schedule calendar app is simple,clear,and very helpful.I can track my work shifts,check rotations,and plan my day off much more easily.",
-        "updated": "2026-04-10T18:12:34-07:00"
+        "updated": "2026-04-11T01:12:34.000Z"
+      },
+      {
+        "id": "14164249676",
+        "author": "Chris_O888",
+        "rating": 5,
+        "version": "",
+        "title": "Perfect for Shift Workers",
+        "content": "This app makes it so much easier to keep track of my work schedule.I can quickly see my shifts,day off,and upcoming rotation without checking a paper schedule all the time.The reminders are helpful,and the yearly view is great for planning ahead.Simple,clean,and very useful for anyone working rotating shifts.Highly recommended.👍👍👍",
+        "updated": "2026-06-10T01:05:21.000Z"
       },
       {
         "id": "13939515315",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Great Shift Calendar",
         "content": "Super useful shift schedule app.Easy to track rotations,view yearly shifts,and get reminds before work.",
-        "updated": "2026-04-09T07:40:42-07:00"
+        "updated": "2026-04-09T14:40:42.000Z"
       }
     ]
   },
   "address-label-maker-and-envelope": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6756092344/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/address-label-maker-envelope/id6756092344?see-all=reviews&platform=iphone",
     "appId": "6756092344",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13956579313",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "Great address label app",
         "content": "This app makes it very easy to create address label,print mailing labels,and organize shipping information.🌟🌟🌟🌟🌟",
-        "updated": "2026-04-14T03:46:01-07:00"
+        "updated": "2026-04-14T10:46:01.000Z"
       },
       {
         "id": "13519441737",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "Simple and efficient",
         "content": "Very easy to use and saves a lot of time.Clean design,fast export,and exactly what I needed for address labels.Highly recommended.🌟🌟🌟🌟🌟",
-        "updated": "2025-12-16T01:11:21-07:00"
+        "updated": "2025-12-16T09:11:21.000Z"
       },
       {
         "id": "13480462591",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Fast & Time saving",
-        "content": "The app saved me so much time!   I manage a small online shop and need to generate shipping labels every day.The interface is intuitive,the layout tools are smooth,and exporting labels is effortless.It just works exactly the way I want it to.",
-        "updated": "2025-12-05T21:15:10-07:00"
+        "content": "The app saved me so much time! I manage a small online shop and need to generate shipping labels every day.The interface is intuitive,the layout tools are smooth,and exporting labels is effortless.It just works exactly the way I want it to.",
+        "updated": "2025-12-06T05:15:10.000Z"
       }
     ]
   },
   "atomic-clock-precision-time": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6760377377/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/atomic-clock-precision-time/id6760377377?see-all=reviews&platform=iphone",
     "appId": "6760377377",
+    "sourceType": "app-store-page",
     "reviews": [
-      {
-        "id": "13942709595",
-        "author": "AlexInCity",
-        "rating": 5,
-        "version": "1.0.1",
-        "title": "Best Atomic Clock",
-        "content": "Very accurate atomic clock app with fast network sync and clean design.I really like the millisecond precision and different clock styles.Easy to use and worth downloading.",
-        "updated": "2026-04-10T05:51:57-07:00"
-      },
       {
         "id": "13909250094",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Beautiful and Precise Time App",
         "content": "Great atomic clock app!It syncs quickly with network time servers and shows very accurate.",
-        "updated": "2026-03-31T20:41:10-07:00"
+        "updated": "2026-04-01T03:41:10.000Z"
+      },
+      {
+        "id": "13942709595",
+        "author": "AlexInCity",
+        "rating": 5,
+        "version": "",
+        "title": "Best Atomic Clock",
+        "content": "Very accurate atomic clock app with fast network sync and clean design.I really like the millisecond precision and different clock styles.Easy to use and worth downloading.",
+        "updated": "2026-04-10T12:51:57.000Z"
       },
       {
         "id": "13909242529",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Super Accurate Atomic Clock",
         "content": "This is one of the best atomic clock I’ve tried.The time sync is extremely precise and the milliseconds display is very useful.",
-        "updated": "2026-03-31T20:37:41-07:00"
+        "updated": "2026-04-01T03:37:41.000Z"
       }
     ]
   },
   "private-meeting-transcriber": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6754548446/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/private-meeting-transcriber/id6754548446?see-all=reviews&platform=iphone",
     "appId": "6754548446",
+    "sourceType": "app-store-page",
     "reviews": [
+      {
+        "id": "13333228498",
+        "author": "Nicolas Tom",
+        "rating": 5,
+        "version": "",
+        "title": "Absolutely impessive app!",
+        "content": "The transcription speed is super fast,an it works completely offline, so privacy is never a concern. I love how it can differentiate multiple speakers in real time-perfect for meeting notes or interviews. The interface is clean, intuitive,and free of annoying ads.",
+        "updated": "2025-10-30T11:35:04.000Z"
+      },
       {
         "id": "13935016158",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "Powerful speech to text",
         "content": "Very powerful speech to text app.Works offline and the transcription is fast and accurate.The subscription price is definitely worth it.",
-        "updated": "2026-04-08T01:52:09-07:00"
+        "updated": "2026-04-08T08:52:09.000Z"
       },
       {
         "id": "13353803786",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "🌟🌟🌟🌟🌟Excellent for Private Meeting Notes",
         "content": "I’ve tried a bunch of transcription apps, but Priviscribe is the only one that actually works offline.It records and converts meetings to text instantly - no internet,no uploading,no privacy worries.",
-        "updated": "2025-11-03T19:39:34-07:00"
-      },
-      {
-        "id": "13333228498",
-        "author": "Nicolas Tom",
-        "rating": 5,
-        "version": "1.0",
-        "title": "Absolutely impessive app!",
-        "content": "The transcription speed is super fast,an it works completely offline, so privacy is never a concern. I love how it can differentiate multiple speakers in real time-perfect for meeting notes or interviews. The interface is clean, intuitive,and free of annoying ads.",
-        "updated": "2025-10-30T04:35:04-07:00"
+        "updated": "2025-11-04T03:39:34.000Z"
       }
     ]
   },
   "speaker-tools-audio-test": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6759132052/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/speaker-tools-audio-test/id6759132052?see-all=reviews&platform=iphone",
     "appId": "6759132052",
+    "sourceType": "app-store-page",
     "reviews": [
+      {
+        "id": "13812404018",
+        "author": "Nicolas Tom",
+        "rating": 5,
+        "version": "",
+        "title": "Best Speaker Test",
+        "content": "Speaker Tools is a super handy audio toolkit for checking speakers and doing quick tone tests.",
+        "updated": "2026-03-04T10:48:41.000Z"
+      },
       {
         "id": "13948180249",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "Great Audio Tool",
         "content": "Simple and effective audio test app.I use it to test speakers,check sound levels,and play tone frequencies.Very handy,accurate,and easy to use.",
-        "updated": "2026-04-11T16:42:46-07:00"
+        "updated": "2026-04-11T23:42:46.000Z"
       },
       {
         "id": "13815108841",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Sound Level Meter",
         "content": "I used Speaker Tools for tone generation,low frequency playback,and quick speaker checks.The frequency slider makes it easy to find problem ranges,and the preset tones save time when I just want a fast test.",
-        "updated": "2026-03-04T20:49:03-07:00"
-      },
-      {
-        "id": "13812404018",
-        "author": "Nicolas Tom",
-        "rating": 5,
-        "version": "1.0",
-        "title": "Best Speaker Test",
-        "content": "Speaker Tools is a super handy audio toolkit for checking speakers and doing quick tone tests.",
-        "updated": "2026-03-04T02:48:41-07:00"
+        "updated": "2026-03-05T04:49:03.000Z"
       }
     ]
   },
   "export-backup-all-contacts-pro": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6756396805/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/export-backup-all-contacts-pro/id6756396805?see-all=reviews&platform=iphone",
     "appId": "6756396805",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13941350513",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0.2",
+        "version": "",
         "title": "Great for contacts",
         "content": "Fast and simple way to export contacts,back up your address book,and clean duplicate contacts.Very useful and easy to use.",
-        "updated": "2026-04-09T19:27:01-07:00"
+        "updated": "2026-04-10T02:27:01.000Z"
       },
       {
         "id": "13503028650",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Reliable Backup Solution For Professional.",
         "content": "I love how clean and organized the export files are.The app handles invalid numbers,merges duplicates,and even supports encrypted backups.Excellent tool for anyone who needs secure and well-structured contact data.",
-        "updated": "2025-12-11T17:13:54-07:00"
+        "updated": "2025-12-12T01:13:54.000Z"
       },
       {
         "id": "13503018500",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Great tool for managing large contacts lists.",
         "content": "This app marks exporting and backing up contacts incredibly easy.The duplicate cleaning feature works accurately,and the Excel CSV export formats are perfect for business use.Fast,reliable,and very professional.",
-        "updated": "2025-12-11T17:09:43-07:00"
+        "updated": "2025-12-12T01:09:43.000Z"
       }
     ]
   },
   "cadenza-metronome-and-tuner": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6774939758/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/cadenza-metronome-tuner/id6774939758?see-all=reviews&platform=iphone",
     "appId": "6774939758",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "14146526678",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Clean and Reliable Practice Tool",
         "content": "I love how simple and focused this app is.The metronome is accurate,the tuner works smoothly,and everything feels clean without unnecessary clutter.It’s perfect for daily practice and quick tune-ups before playing.",
-        "updated": "2026-06-05T05:18:04-07:00"
+        "updated": "2026-06-05T12:18:04.000Z"
       },
       {
         "id": "14146290467",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Simple,Beautiful,and Useful",
         "content": "This app has a really nice design and does the basics extremely well.I can quickly tune my instrument,set a beat,and stay focused while practicing.It feels lightweight,polished,and practical.Highly recommended!👍👍👍",
-        "updated": "2026-06-05T03:56:55-07:00"
+        "updated": "2026-06-05T10:56:55.000Z"
       },
       {
         "id": "14145777900",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Great for musicians",
         "content": "Cadenza is exactly what I needed for my practice sessions.The metronome is easy to set up,the tuner responds quickly,and the practice tracking feature is a nice bonus.Very useful for guitar,piano,and general music practice.",
-        "updated": "2026-06-05T00:12:23-07:00"
+        "updated": "2026-06-05T07:12:23.000Z"
       }
     ]
   },
   "colorpop-color-block-tap-game": {
     "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6753789520/sortby=mostrecent/json",
     "appId": "6753789520",
+    "sourceType": "rss",
     "reviews": []
   },
   "marketvendor-sales-and-profit": {
     "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6780695627/sortby=mostrecent/json",
     "appId": "6780695627",
+    "sourceType": "rss",
     "reviews": []
   },
   "snapcleaner-clean-photos": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6751627505/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/snapcleaner-clean-photos/id6751627505?see-all=reviews&platform=iphone",
     "appId": "6751627505",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13956589420",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0.4",
+        "version": "",
         "title": "Private and really useful",
         "content": "CleanupPro makes it easy to clean up photos,remove duplicates,and free up storage without any cloud upload.🌟🌟🌟🌟🌟",
-        "updated": "2026-04-14T03:50:19-07:00"
+        "updated": "2026-04-14T10:50:19.000Z"
       },
       {
         "id": "13353807343",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Simple,private,and effective!",
         "content": "Finally a cleaner that doesn’t need cloud access or login.Everything runs locally and fast.I feel safe using it,and it really helps my phone stay organized.Worth every penny!😍😍😍",
-        "updated": "2025-11-03T19:41:00-07:00"
+        "updated": "2025-11-04T03:41:00.000Z"
       },
       {
         "id": "13350917550",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Work WAY better than I expected!",
         "content": "I was running out of storage and thought I’d have to delete half my photos.This app saved me big time - it clean up duplicates,compressed videos,and even removed those hidden photo details I did’t know were there.Super fast,super easy.Feel like my photo’s brand new again!👍",
-        "updated": "2025-11-03T04:33:49-07:00"
+        "updated": "2025-11-03T12:33:49.000Z"
       }
     ]
   },
   "pdf-scan-scanner-and-reader": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6751232307/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/pdf-scan-scanner-reader/id6751232307?see-all=reviews&platform=iphone",
     "appId": "6751232307",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13934998957",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0.2",
+        "version": "",
         "title": "Simple and Powerful",
         "content": "Very easy to scan documents and business card.",
-        "updated": "2026-04-08T01:43:34-07:00"
+        "updated": "2026-04-08T08:43:34.000Z"
       },
       {
         "id": "13527343645",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0.2",
+        "version": "",
         "title": "Clean,fast,and truly private PDF scanner",
         "content": "I’ve tried many PDF scanner apps,and this one really stands out.The scanning quality is excellent,the app is fast and intuitive,and most importantly it works offline,which is great for privacy.No watermark,no clutter,and no unnecessary steps.🌟🌟🌟🌟🌟",
-        "updated": "2025-12-18T05:07:35-07:00"
+        "updated": "2025-12-18T13:07:35.000Z"
       },
       {
         "id": "13354008147",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "🌟🌟🌟🌟🌟Simple,Fast,and private PDF Scanner",
         "content": "This app is incredibly easy to use -just open,scan,and you’ve got a clear,high-quality PDF ready to share or store.No watermark, no annoying ads ,and it works perfectly even without internet.",
-        "updated": "2025-11-03T21:07:43-07:00"
+        "updated": "2025-11-04T05:07:43.000Z"
       }
     ]
   },
   "photosafe-private-photo-vault": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6756706482/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/photosafe-private-photo-vault/id6756706482?see-all=reviews&platform=iphone",
     "appId": "6756706482",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13977026247",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "Secure and Easy to Use",
         "content": "PhotoSafe makes keeping my photos private effortless!The interface is clean ,importing media is simple,and Face ID protection gives peace of mind.Love the hidden vault and extra security settings.",
-        "updated": "2026-04-19T21:01:23-07:00"
+        "updated": "2026-04-20T04:01:23.000Z"
       },
       {
         "id": "13540844210",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "PhotoSafe does exactly what I want.",
-        "content": "I really like the private browsing mode,so I can view my photos without leaving any traces. The intruder alert feature is also super helpful- it lets me know if someone tired to open the app without permission.\nBeing able to change the app icon is nice touch and makes it feel more discreet on my Home Screen.Simple,clean,and privacy-focused.Highly recommended.",
-        "updated": "2025-12-21T18:44:16-07:00"
+        "content": "I really like the private browsing mode,so I can view my photos without leaving any traces. The intruder alert feature is also super helpful- it lets me know if someone tired to open the app without permission.Being able to change the app icon is nice touch and makes it feel more discreet on my Home Screen.Simple,clean,and privacy-focused.Highly recommended.",
+        "updated": "2025-12-22T02:44:16.000Z"
       },
       {
         "id": "13534561562",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Simple and secure photo vault",
         "content": "This app feels professionally built.The disguised icon helps keep things discreet,and the security alerts give peace of mind.No ads, no clutter,just solid privacy protection.🌟🌟🌟🌟🌟",
-        "updated": "2025-12-20T04:07:57-07:00"
+        "updated": "2025-12-20T12:07:57.000Z"
       }
     ]
   },
   "fridgetrack-fridge-inventory": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6749074023/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/fridgetrack-fridge-inventory/id6749074023?see-all=reviews&platform=iphone",
     "appId": "6749074023",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13949960646",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0.7",
+        "version": "",
         "title": "Best Food Tracker App",
         "content": "Super helpful for tracking fridge,freezer,and pantry items.FridgeTrack makes food management simple,helps reduce waste,and keeps my kitchen organize.Clean design,easy to use,and great for saving money.🌟🌟🌟🌟🌟",
-        "updated": "2026-04-12T05:44:25-07:00"
+        "updated": "2026-04-12T12:44:25.000Z"
       },
       {
         "id": "13480565241",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0.7",
+        "version": "",
         "title": "🌟🌟🌟🌟🌟Review",
         "content": "Amazing app for keeping kitchen organized!FridgeTrack has been a game change for my home.It takes only a few seconds to add items,set expiry dates,and check what I’m running out of.I’ve already reduced a lot of food waste thanks to the reminders.",
-        "updated": "2025-12-05T21:59:45-07:00"
+        "updated": "2025-12-06T05:59:45.000Z"
       },
       {
         "id": "13387921967",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0.6",
+        "version": "",
         "title": "The most useful kitchen app I’ve ever downloaded!",
         "content": "FridgeTrack keeps my fridge and pantry organized.I love how easy it is add items,set expiry dates,and see what’s running low at a glance.It had already saved me from wasting food multiple items.Simple,fast,and reliable.",
-        "updated": "2025-11-12T00:58:26-07:00"
+        "updated": "2025-11-12T08:58:26.000Z"
       }
     ]
   },
   "printer-app-print-pdf-docs": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6764739182/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/printer-app-print-pdf-docs/id6764739182?see-all=reviews&platform=iphone",
     "appId": "6764739182",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "14054401575",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Perfect for everyday printing",
         "content": "This app made printing from my phone so mush easier than I expected.I’ve used it for PDFs,shipping labels,contracts,photos,and even web pages,and everything prints quickly without complicated setup.🌟🌟🌟🌟🌟",
-        "updated": "2026-05-11T17:07:04-07:00"
+        "updated": "2026-05-12T00:07:04.000Z"
       },
       {
         "id": "14040103900",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Simple and reliable printer app",
         "content": "I really like how easy this app makes printing from my phone.I use it to print PDFs ,receipts,forms,and photos without having to move everything to my laptop first.The layout is clean,the steps are clear,and it works well for everyday printing needs.👍👍👍",
-        "updated": "2026-05-07T19:46:50-07:00"
+        "updated": "2026-05-08T02:46:50.000Z"
       }
     ]
   },
   "pickone-random-choice-picker": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6758002818/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/pickone-random-choice-picker/id6758002818?see-all=reviews&platform=iphone",
     "appId": "6758002818",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13977018212",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "Fun and Helpful",
         "content": "PickOne is an incredibly fun and practical app.I love how simple it is spin the wheel and make quick decisions,and the Daily Fortune feature adds a playful touch to my day.",
-        "updated": "2026-04-19T20:57:15-07:00"
+        "updated": "2026-04-20T03:57:15.000Z"
       },
       {
         "id": "13815069126",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "Perfect for indecisive moments",
         "content": "PickOne has been a huge help with when I can’t decide.The picked option feels clear and practial.",
-        "updated": "2026-03-04T20:28:37-07:00"
+        "updated": "2026-03-05T04:28:37.000Z"
       },
       {
         "id": "13812392536",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "The pick result genuinely help",
         "content": "I use PickOne whenever I’m stuck overthinking a decision.The choice it picks often gives me the push I need to forward,and it has saved me a lot of time and mental energy.Surprisingly helpful for day-to-day,simply,clean,and effective.",
-        "updated": "2026-03-04T02:43:20-07:00"
+        "updated": "2026-03-04T10:43:20.000Z"
       }
     ]
   },
   "snapstock-inventory-scanner": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6772403104/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/snapstock-inventory-scanner/id6772403104?see-all=reviews&platform=iphone",
     "appId": "6772403104",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "14141049814",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Simple,Fast,and perfect for Inventory Management",
         "content": "I’ve been looking for an inventory app that is easy to use without unnecessary complexity,and SnapStock is exactly what I needed.The barcode scanning works quickly and accurately,making it effortless to add products and keep track of stock levels.👍👍👍",
-        "updated": "2026-06-03T17:30:27-07:00"
+        "updated": "2026-06-04T00:30:27.000Z"
       },
       {
         "id": "14110867871",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Perfect for managing Stock Quickly",
         "content": "SnapStock is clean,fast.I like that I can scan items,check low stock,and update quantities right from my phone.It saves time compared with writing everything down manually.Very useful for shops,storage rooms,and personal inventory.🌟🌟🌟🌟🌟",
-        "updated": "2026-05-26T23:48:34-07:00"
+        "updated": "2026-05-27T06:48:34.000Z"
       },
       {
         "id": "14110457598",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Simple and Reliable Inventory Tool",
         "content": "This app makes inventory tracking mush easier.I can add products,scan barcodes,update stock counts,and review my history without dealing with complicated menus.The CSV export is essentially useful for keeping records and sharing data.",
-        "updated": "2026-05-26T20:30:15-07:00"
+        "updated": "2026-05-27T03:30:15.000Z"
       }
     ]
   },
   "magnifier-reader-big-text": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6757728480/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/magnifier-reader-big-text/id6757728480?see-all=reviews&platform=iphone",
     "appId": "6757728480",
+    "sourceType": "app-store-page",
     "reviews": [
-      {
-        "id": "13661014362",
-        "author": "Chris_O888",
-        "rating": 5,
-        "version": "1.0",
-        "title": "Best reading and text zoom app",
-        "content": "This is by far the best text magnifier and reading assistant app.EasyLook turns my iPhone into a powerful reading tool for small text,menus,books.Highly recommended for seniors,students and anyone who reads a lot on their phone.",
-        "updated": "2026-01-21T17:22:48-07:00"
-      },
       {
         "id": "13660982771",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Simple,powerful and everyday reading",
         "content": "EasyLook is a fantastic iOS reading and magnification app.I use it daily to enlarge text,scan documents,and read small fonts on websites and photos.",
-        "updated": "2026-01-21T17:10:05-07:00"
+        "updated": "2026-01-22T01:10:05.000Z"
+      },
+      {
+        "id": "13661014362",
+        "author": "Chris_O888",
+        "rating": 5,
+        "version": "",
+        "title": "Best reading and text zoom app",
+        "content": "This is by far the best text magnifier and reading assistant app.EasyLook turns my iPhone into a powerful reading tool for small text,menus,books.Highly recommended for seniors,students and anyone who reads a lot on their phone.",
+        "updated": "2026-01-22T01:22:48.000Z"
       }
     ]
   },
   "snapreceipt-expenses-and-tax": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6762583134/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/snapreceipt-expenses-tax/id6762583134?see-all=reviews&platform=iphone",
     "appId": "6762583134",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "14139321449",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "Best Receipt Scanner for Expense Tracking",
         "content": "I’ve tried several receipt apps,and this one is by the easiest to use.The OCR recognition is fast and surprisingly accurate,even with long or slightly crumpled receipts.It automatically extracts important details like merchant name,date,and amount,which saves a lot of manual work.👍👍👍",
-        "updated": "2026-06-03T07:32:53-07:00"
+        "updated": "2026-06-03T14:32:53.000Z"
       },
       {
         "id": "13986965044",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Prefert For Receipts and Expense Tracking",
         "content": "This app makes receipt scanning incredibly easy.The OCR is fast and accurate,and it picks up important details like totals,dates,and merchants with very little effort.I’ve used for both business expenses and personal record keeping,and it saves me a lot of time.👍👍👍👍👍",
-        "updated": "2026-04-22T18:09:02-07:00"
+        "updated": "2026-04-23T01:09:02.000Z"
       },
       {
         "id": "13984293988",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Great for Business Expense Tracking",
         "content": "SnapReceipt makes it easy to scan receipts,organize expenses,and keep records in one place.The app is simple,fast,and very useful for business use.A great tool for anyone who needs a reliable receipt scanner.",
-        "updated": "2026-04-22T01:08:38-07:00"
+        "updated": "2026-04-22T08:08:38.000Z"
       }
     ]
   },
   "mindnest-secret-journal": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6749536903/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/mindnest-secret-journal/id6749536903?see-all=reviews&platform=iphone",
     "appId": "6749536903",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13502997983",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0.2",
+        "version": "",
         "title": "Export what I needed for my mental wellness journey.",
         "content": "The prompts are thoughtful,the design is soothing,and knowing everything stays offline marks me fell safe.This app supports me every single day.👼🌹🌿",
-        "updated": "2025-12-11T17:01:13-07:00"
+        "updated": "2025-12-12T01:01:13.000Z"
       },
       {
         "id": "13502989377",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0.2",
+        "version": "",
         "title": "Such a calming space to sort out my thoughts.",
         "content": "I love how private and gentle MindNest feels.It’s become part of my nightly routine to unwind and check in with my self.Truly a comforting little journal.",
-        "updated": "2025-12-11T16:57:42-07:00"
+        "updated": "2025-12-12T00:57:42.000Z"
       }
     ]
   },
   "ritualix-habits-and-streaks": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6748828166/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/ritualix-habits-streaks/id6748828166?see-all=reviews&platform=iphone",
     "appId": "6748828166",
+    "sourceType": "app-store-page",
     "reviews": [
-      {
-        "id": "13818076560",
-        "author": "Chris_O888",
-        "rating": 5,
-        "version": "1.0.3",
-        "title": "Clean,simple,and very motivating",
-        "content": "Ritualix makes habit tracking feel easy and rewarding.I use every day to track my routines,and the steak system really keeps me motivated.",
-        "updated": "2026-03-05T17:27:24-07:00"
-      },
       {
         "id": "13015510519",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0.2",
+        "version": "",
         "title": "Built My Habits, Changed My Life!",
-        "content": "⭐️⭐️⭐️⭐️⭐️ Absolutely love this app!\n\nRituals has completely transformed how I build and maintain habits. The interface is clean and intuitive, making it easy to track my daily routines without feeling overwhelmed. I love the gamified achievement system—it’s motivating to see my progress visually. The reminders are gentle but effective, and the customization options fit perfectly with my lifestyle. Highly recommend to anyone who wants to stay consistent and make positive changes in life!",
-        "updated": "2025-08-14T08:57:49-07:00"
+        "content": "⭐️⭐️⭐️⭐️⭐️ Absolutely love this app!Rituals has completely transformed how I build and maintain habits. The interface is clean and intuitive, making it easy to track my daily routines without feeling overwhelmed. I love the gamified achievement system—it’s motivating to see my progress visually. The reminders are gentle but effective, and the customization options fit perfectly with my lifestyle. Highly recommend to anyone who wants to stay consistent and make positive changes in life!",
+        "updated": "2025-08-14T15:57:49.000Z"
+      },
+      {
+        "id": "13818076560",
+        "author": "Chris_O888",
+        "rating": 5,
+        "version": "",
+        "title": "Clean,simple,and very motivating",
+        "content": "Ritualix makes habit tracking feel easy and rewarding.I use every day to track my routines,and the steak system really keeps me motivated.",
+        "updated": "2026-03-06T01:27:24.000Z"
       }
     ]
   },
   "pantry-label-maker-kitchen": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6760995910/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/pantry-label-maker-kitchen/id6760995910?see-all=reviews&platform=iphone",
     "appId": "6760995910",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13890875221",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Easy and Practical Label Marker",
         "content": "Great label marker app!I create sever pantry labels and storage labels within minutes.The interface is simple and the designs look great when printed.",
-        "updated": "2026-03-26T17:53:54-07:00"
+        "updated": "2026-03-27T00:53:54.000Z"
       },
       {
         "id": "13890868164",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Perfect for Organizing My Pantry",
         "content": "This pantry label marker is exactly what I needed.The labels look clean and professional,and printing them is very easy.",
-        "updated": "2026-03-26T17:50:58-07:00"
+        "updated": "2026-03-27T00:50:58.000Z"
       }
     ]
   },
   "blockfit-block-puzzle": {
     "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6752940598/sortby=mostrecent/json",
     "appId": "6752940598",
+    "sourceType": "rss",
     "reviews": []
   },
   "invoice-maker-estimate-pdf": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6763965182/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/invoice-maker-estimate-pdf/id6763965182?see-all=reviews&platform=iphone",
     "appId": "6763965182",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "14009364056",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Simple,Fast and Professional",
         "content": "I’ve tried a few invoice apps before,and this one is by far the easiest to use.🌟🌟🌟🌟🌟",
-        "updated": "2026-04-29T07:07:22-07:00"
+        "updated": "2026-04-29T14:07:22.000Z"
       },
       {
         "id": "14009231414",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Save Me Hours Every Week",
         "content": "I run a small service business and this app has completely simplified my invoicing workflow.Creating invoices and estimates takes seconds,and everything looks clean and professional.",
-        "updated": "2026-04-29T06:24:04-07:00"
+        "updated": "2026-04-29T13:24:04.000Z"
       }
     ]
   },
   "expensereportmaker-and-receipts": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6770261750/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/expensereportmaker-receipts/id6770261750?see-all=reviews&platform=iphone",
     "appId": "6770261750",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "14091260401",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Perfect for business expenses",
         "content": "This app saved me so much time.I can scan receipts,organize expenses,and generate reports in minutes.The interface is clean,fast,and privacy-friendly.One of the best expense tracking apps I’ve used on iPhones.",
-        "updated": "2026-05-21T18:20:55-07:00"
+        "updated": "2026-05-22T01:20:55.000Z"
       },
       {
         "id": "14091247918",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Best Offline Expense Tracker",
         "content": "Super clean and easy to use.The AI receipt scanner works surprisingly well,and I love that everything stays offline without needing an account.Exporting expense reports is fast and simple.Perfect for business trips and daily expense tracking.",
-        "updated": "2026-05-21T18:15:46-07:00"
+        "updated": "2026-05-22T01:15:46.000Z"
       }
     ]
   },
   "signaturemark-brand-mark": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6756915076/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/signaturemark-brand-mark/id6756915076?see-all=reviews&platform=iphone",
     "appId": "6756915076",
+    "sourceType": "app-store-page",
     "reviews": [
-      {
-        "id": "13639089840",
-        "author": "Nicolas Tom",
-        "rating": 5,
-        "version": "1.0.1",
-        "title": "Clean,fast,and exactly what I want!",
-        "content": "I’ve tied a few watermark apps and this one is by far the smoothest.Adding my logo is quick,the results look clean,and the UI is super straightforward.",
-        "updated": "2026-01-16T00:29:26-07:00"
-      },
       {
         "id": "13630662701",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "Perfect for consistent branding",
         "content": "SignatureMark makes it really easy to keep my images consistent.I can apply my brand mark in seconds and everything looks polished.",
-        "updated": "2026-01-13T17:13:56-07:00"
+        "updated": "2026-01-14T01:13:56.000Z"
+      },
+      {
+        "id": "13639089840",
+        "author": "Nicolas Tom",
+        "rating": 5,
+        "version": "",
+        "title": "Clean,fast,and exactly what I want!",
+        "content": "I’ve tied a few watermark apps and this one is by far the smoothest.Adding my logo is quick,the results look clean,and the UI is super straightforward.",
+        "updated": "2026-01-16T08:29:26.000Z"
       }
     ]
   },
   "glowfeel-stress-ease": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6755748276/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/glowfeel-stress-ease/id6755748276?see-all=reviews&platform=iphone",
     "appId": "6755748276",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13519450216",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "Clam in minutes",
         "content": "Beautiful designed and calming.Just a minutes of breathing really helps me relax and sleep better.Simple,gentle,and effective.🌹🌹🌹🌹🌹",
-        "updated": "2025-12-16T01:15:07-07:00"
+        "updated": "2025-12-16T09:15:07.000Z"
       },
       {
         "id": "13491833121",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0.1",
+        "version": "",
         "title": "🌟🌟🌟🌟🌟Absolutely Love GlowFeel!",
         "content": "GlowFeel has become my go-to app whenever I need to slow down and reset.The breathing guides are simple,beautifully designed,and surprisingly effective.After just a few minutes,I feel calmer,more focused,and able to sleep better at night.The new breathing techniques are a great addition,and the overall experience feels polished and thoughtful.",
-        "updated": "2025-12-08T16:57:15-07:00"
+        "updated": "2025-12-09T00:57:15.000Z"
       }
     ]
   },
   "snapqr-qr-generator-app": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6755293768/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/snapqr-qr-generator-app/id6755293768?see-all=reviews&platform=iphone",
     "appId": "6755293768",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13412885485",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "🌟🌟🌟🌟🌟 Super handy and clean QR tool!",
         "content": "Honestly didn’t expect must at first,but this app surprise me.It scan instantly,create custom QR codes in seconds, and the UI is super simple to use. No ads popping up, no weird stuff - just fast and smooth.",
-        "updated": "2025-11-18T06:01:24-07:00"
+        "updated": "2025-11-18T14:01:24.000Z"
       }
     ]
   },
   "fast-rhythm-fasting-and-sleep": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6760157764/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/fast-rhythm-fasting-sleep/id6760157764?see-all=reviews&platform=iphone",
     "appId": "6760157764",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13846809691",
         "author": "Chris_O888",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Perfect Intermittent Fasting for Daily Health",
         "content": "I’ve tried many intermittent fasting app before,but this app is by far one of the most intuitive and helpful tools for managing my fasting schedule.",
-        "updated": "2026-03-14T04:20:05-07:00"
+        "updated": "2026-03-14T11:20:05.000Z"
       },
       {
         "id": "13846802203",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Best Fasting Timer And Sleep Rhythm!",
         "content": "This is one of the best intermittent fasting apps I’ve found on the App Store.The fasting timer works perfectly,and the dashboard makes it really easy to track fasting properly and build a consistent routine.",
-        "updated": "2026-03-14T04:16:58-07:00"
+        "updated": "2026-03-14T11:16:58.000Z"
       }
     ]
   },
   "image-compressor-and-zip": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6762104289/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/image-compressor-zip/id6762104289?see-all=reviews&platform=iphone",
     "appId": "6762104289",
+    "sourceType": "app-store-page",
     "reviews": [
       {
         "id": "13963340336",
         "author": "AlexInCity",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Best Image Compressor on iPhone",
         "content": "Exactly what I needed.Simply,lightweight,and gets the job done.I love how easy it is to reduce image size and free up storage.The quality comparison feature is surprisingly.🌟🌟🌟🌟🌟",
-        "updated": "2026-04-16T02:59:20-07:00"
+        "updated": "2026-04-16T09:59:20.000Z"
       },
       {
         "id": "13963332179",
         "author": "Nicolas Tom",
         "rating": 5,
-        "version": "1.0",
+        "version": "",
         "title": "Fast & Easy Photo Compression",
         "content": "Super useful and incredibly fast!I was able to compress dozens of photos in seconds without losing noticeable quality.The ZIP export feature is huge bonus and saves me so much time when sharing files. Clean UI,no hassle,just works perfectly.👍👍👍👍👍",
-        "updated": "2026-04-16T02:55:26-07:00"
+        "updated": "2026-04-16T09:55:26.000Z"
       }
     ]
   }
