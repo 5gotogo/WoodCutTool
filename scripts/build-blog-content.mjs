@@ -3,7 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260620-blog-hidden-filter";
+const version = "20260620-i18n-nl";
 const siteUrl = "https://woodcuttool.com";
 
 
