@@ -8,7 +8,6 @@
   <url><loc>https://woodcuttool.com/apps/receipt/</loc><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://woodcuttool.com/cutlist/</loc><changefreq>weekly</changefreq><priority>0.98</priority></url>
   <url><loc>https://woodcuttool.com/quiltfit/</loc><changefreq>weekly</changefreq><priority>0.92</priority></url>
-  <url><loc>https://woodcuttool.com/tinnitus/</loc><changefreq>weekly</changefreq><priority>0.92</priority></url>
   <url><loc>https://woodcuttool.com/tile-calculator/</loc><changefreq>weekly</changefreq><priority>0.92</priority></url>
   <url><loc>https://woodcuttool.com/stringer/</loc><changefreq>weekly</changefreq><priority>0.92</priority></url>
   <url><loc>https://woodcuttool.com/cut-list-calculator/</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
@@ -75,9 +74,11 @@
   <url><loc>https://woodcuttool.com/blog/cutlist-vs-spreadsheets-for-cabinetmakers/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/deck-stair-stringer-field-measurements/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/fabric-yardage-estimates-with-block-layouts/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/frequency-matching-notch-filter-tinnitus-personalization/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/grout-joint-layout-and-visual-balance/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-optimize-material-layout/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://woodcuttool.com/blog/large-format-tile-cut-planning/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/offline-tinnitus-app-privacy-on-device-sound-masking/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-optimization-kerf-grain-offcuts/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-waste-cost-benchmark-manual-vs-optimizer/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/quilt-project-tracking-from-sketch-to-finish/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -99,6 +100,9 @@
   <url><loc>https://woodcuttool.com/blog/stair-stringer-design-rise-run-basics/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tile-layout-planning-before-install/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tile-waste-estimation-by-pattern/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/tinnitus-relief-app-sound-masking-night-guide/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/white-noise-tinnitus-sleep-sound-app/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/why-tinnitus-feels-louder-at-night-sleep-masking/</loc><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/wood-cutting-calculator-guide/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://woodcuttool.com/compare/best-plywood-tools/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/guides/how-to-cut-plywood-efficiently/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -109,4 +113,5 @@
   <url><loc>https://woodcuttool.com/legal/Tinnitus/privacy/</loc><changefreq>yearly</changefreq><priority>0.55</priority></url>
   <url><loc>https://woodcuttool.com/legal/Tinnitus/support/</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
   <url><loc>https://woodcuttool.com/templates/4x8-plywood-sheet/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/tinnitus/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

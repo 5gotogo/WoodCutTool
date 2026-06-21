@@ -3,7 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260621-deep-blogs";
+const version = "20260621-tinnitus-photo-fix";
 const siteUrl = "https://woodcuttool.com";
 
 
@@ -834,6 +834,265 @@ articles.push(
   }
 );
 
+articles.push(
+  {
+    slug: "tinnitus-relief-app-sound-masking-night-guide",
+    category: "Tinnitus",
+    title: "Tinnitus Relief App Guide: Sound Masking For Ringing Ears At Night",
+    description: "A realistic, evidence-aware guide to using an offline tinnitus relief app, sound masking, white noise, rain, and sleep sounds when ringing feels louder at night.",
+    kicker: "Night relief guide",
+    readTime: "16 min",
+    accent: "tinnitus",
+    sections: [
+      ["Why Night Makes Ringing Feel Bigger", "Many people do not experience tinnitus as a constant medical topic. They experience it as a bedroom problem. During the day, traffic, conversation, appliances, work calls, and movement create a background layer that competes with the ringing. At night, the room becomes still, the phone is put down, and the mind starts scanning for anything that is still active. That is when a soft tone can feel like it has moved to the center of the room. NIDCD describes tinnitus as the perception of sound without an external source, and also notes that some people find it affects sleep or concentration. That lived pattern matters for app design. A tinnitus relief app should not open with a complicated control panel. It should help the user move from silence to a gentler sound environment as quickly as possible, especially when they are tired and already frustrated."],
+      ["The Practical Goal Is Not Silence", "The most useful expectation is not to make tinnitus vanish. That promise would be unrealistic and medically inappropriate. A better goal is to reduce contrast. If the room is perfectly quiet, the internal sound has nothing to compete with. If the room has a steady rain layer, a low fan texture, brown noise, or soft ocean movement, the ringing may become less dominant in attention. NIDCD explains that sound therapy may work by masking tinnitus sounds, helping people grow accustomed to them, or distracting attention. That is the practical lane for an app: create a sound layer that feels pleasant enough to keep on, stable enough not to wake the user, and adjustable enough to fit different nights. The user is not asking for an audiology lecture at 1:12 a.m. They want a listening environment that makes the next ten minutes feel less sharp."],
+      ["Start With A Comfortable Baseline", "A good nighttime workflow begins with comfort, not maximum masking. Users often make the mistake of turning a sound up until it covers the ringing completely. That can be too loud, too stimulating, or too hard to sleep with. A calmer approach is to start just below the point where the external sound becomes the main thing you notice. White noise, pink noise, brown noise, rain, ocean, wind, and fan sounds all have different emotional textures. White noise can feel bright and full. Pink noise often feels softer. Brown noise can feel deeper. Rain can feel familiar and less mechanical. The right baseline is the one you can imagine leaving on while your attention loosens. This is where real-time sound generation helps: the sound can continue without an obvious loop, download wait, or buffering interruption."],
+      ["Build A Short Bedtime Ritual", "The strongest app experience is often a repeated ritual. Open the same preset, lower the screen brightness, set a sleep timer, and give your brain the same cue each night. This does not require a claim that the app treats tinnitus. It is simply how habits work: the fewer decisions required, the easier the routine becomes when you are tired. A saved preset called Sleep calm or Rain mask can reduce the mental load of choosing. A timer can reduce the fear of leaving audio running all night. A volume slider that starts at a known safe, comfortable setting can prevent the nightly game of guessing. The user needs an emotional handoff from irritation to control: I know what to do, I have done it before, and I can start it in seconds."],
+      ["Use Layers Instead Of One Loud Sound", "Layering can feel more natural than raising a single sound. A quiet pink noise bed plus light rain can mask different parts of the ringing while staying comfortable. Ocean waves can add motion, but if the wave cycle is too dramatic it may pull attention back. A fan layer can create steadiness. Wind can soften the edge of a bright tone. Mixing up to four sounds is not valuable because more features are impressive; it is valuable because tinnitus perception varies. One person may need a steady broadband sound. Another may find that natural ambience is easier to accept. Another may want a focus sound during work and a warmer sleep sound at night. The app should let those preferences exist without forcing the user to understand acoustic theory."],
+      ["When To Use Frequency Matching", "Frequency matching is best treated as an optional personalization step, not a required first step. Some users want to identify the pitch they notice most because it helps them feel oriented. Others find pitch matching stressful because it asks them to listen directly to the sound they are trying to stop thinking about. The humane design is to keep frequency matching available, simple, and skippable. A slider-based tool can help a user find a reference frequency, then apply a notch filter or save the result for later. The page should clearly state that this is for comfort and personalization, not a clinical hearing test. That distinction protects trust. People searching for ear ringing relief are often anxious; they deserve tools that feel clear about what they can and cannot do."],
+      ["Privacy Matters More Than It Looks", "Tinnitus can feel private in a way that ordinary wellness tracking does not. A listening profile may imply sleep problems, stress patterns, hearing concerns, medication questions, or anxiety. That is why an offline tinnitus relief app has a strong conversion advantage. No login means the user can open the app without explaining themselves. No cloud profile means the late-night preset, frequency match, and session history do not need to become account data. On-device sound generation means the app can work in airplane mode, hotel rooms, weak Wi-Fi, or during travel. The privacy story should be direct: no account, no cloud, no tracking-first experience, and all core sound generation on the iPhone."],
+      ["How To Evaluate Whether It Helps You", "A realistic user should not judge the app by one dramatic moment. A better test is three to seven nights. Track whether you fall asleep with less frustration, whether you reach for the same preset, whether the sound feels comfortable after ten minutes, and whether the timer matches your routine. If the ringing is sudden, one-sided, pulsatile, associated with dizziness, pain, hearing change, or other concerning symptoms, the right action is medical evaluation, not another app setting. But for everyday masking, relaxation, and sleep support, the question is practical: does this sound environment make the night easier? High-conversion copy should respect that standard. It should invite action without pretending to be a cure."],
+      ["Where Tinnitus Relief Fits In The Night Routine", "Tinnitus Relief is strongest as the first step after the user notices the room is too quiet. Open the app, choose a saved sound, set the timer, and put the phone down. The value is not only the sound; it is the reduction of panic, searching, and decision fatigue. A person who is awake at night does not want to read a manual, create an account, or browse a library of 200 recordings. They want a reliable sound masking app that starts instantly and stays private. For SEO, this article naturally connects tinnitus relief app, sound masking app, white noise tinnitus, sleep sound app, ear ringing relief, ambient noise app, and focus sound app. For the user, the promise is simpler: make the room feel less hostile."],
+      ["A Safe And Honest Takeaway", "Sound masking can be a useful comfort tool, but it should be used gently. Keep volume comfortable, avoid using any sound at painful or fatiguing levels, and remember that louder is not automatically better. WHO and CDC resources on hearing safety both reinforce the broader principle that sound exposure matters. For tinnitus, the aim is to create a supportive layer, not to overpower the ear. If symptoms persist or change, consult a licensed healthcare professional or audiologist. If your need is immediate, private, and practical, an offline app can still be worth downloading tonight. It gives you a next action when the ringing feels too present: start a sound, soften the contrast, and let the night become easier to enter."],
+      ["What A Real User Might Notice After A Week", "The most believable result is usually small but meaningful. A user may not say the tinnitus disappeared. They may say bedtime felt less tense, they stopped changing sounds after a few minutes, or they felt more willing to put the phone down. They may find that one preset works at home while another works in a hotel. They may discover that rain is better for sleep but fan noise is better for focus. Those observations are the realistic proof points a product page can build around. They also help subscription conversion because the app becomes part of a repeatable routine rather than a one-time experiment."],
+      ["How This Supports App Store SEO", "A blog page like this should connect search intent to product intent without feeling stuffed. Users who search tinnitus relief app, sound masking app, sleep sound app, white noise tinnitus, ear ringing relief, ambient noise app, or focus sound app are often comparing options quickly. The article should educate enough to build trust, then point to the app as the simplest private action. Internal links from the article to the Tinnitus Relief landing page help search engines understand topical relevance, while the article itself captures longer searches such as why ringing feels louder at night or how to use sound masking for sleep."]
+    ],
+    checklist: ["Start with a comfortable sound, not maximum volume.", "Use a saved bedtime preset to reduce decision fatigue.", "Layer sounds gently instead of forcing one loud masker.", "Keep frequency matching optional and stress-free.", "Seek medical care for sudden, pulsatile, painful, or changing symptoms."],
+    deepDive: {
+      figureTitle: "Night masking model: reduce contrast, then reduce effort",
+      figureCaption: "The practical app goal is to move from silent-room contrast to a softer, repeatable sleep environment.",
+      figureStats: [["10-25%", "Adults estimated by NIDCD surveys to have tinnitus"], ["3 steps", "Open, choose sound, set timer"], ["0 login", "Private start for late-night use"]],
+      comparisonTitle: "Night sound choices for tinnitus awareness",
+      comparisonColumns: ["Sound layer", "Best emotional use", "Watch-out", "App setting"],
+      comparisonRows: [
+        ["Pink noise", "Soft steady bed for sleep", "Can feel too bright if loud", "Start low and save preset"],
+        ["Brown noise", "Deeper masking for sharper rooms", "May feel heavy for some users", "Blend with rain"],
+        ["Rain", "Familiar, less clinical bedtime sound", "Strong drops may pull attention", "Use gentle rain"],
+        ["Fan", "Stable focus or hotel-room masking", "Can feel mechanical alone", "Layer with pink noise"]
+      ],
+      faqs: [
+        ["Can a tinnitus relief app cure ringing?", "No. The appropriate claim is comfort, relaxation, focus, and sound masking. Persistent or changing symptoms should be discussed with a healthcare professional."],
+        ["Is white noise good for tinnitus at night?", "Some people find white noise or similar steady sounds useful because they reduce the contrast between tinnitus and a quiet room. Others prefer rain, fan, ocean, pink noise, or brown noise."],
+        ["Should masking fully cover tinnitus?", "Not necessarily. Many users do better with partial masking at a comfortable level rather than pushing volume high enough to cover everything."],
+        ["Why use an offline app instead of streaming audio?", "Offline sound generation avoids buffering, login friction, weak Wi-Fi, and cloud dependence. It is especially useful in bed or while traveling."]
+      ],
+      sources: [
+        ["NIDCD: Tinnitus", "https://www.nidcd.nih.gov/health/tinnitus", "Defines tinnitus, gives prevalence estimates, and describes sound therapy devices including smartphone apps for relaxation or sleep."],
+        ["Cochrane: Sound therapy for tinnitus", "https://www.cochrane.org/evidence/CD013094_sound-therapy-using-amplification-devices-or-sound-generators-tinnitus", "Summarizes evidence limits and reports tinnitus affects 10% to 15% of adults, with quality-of-life effects for some."],
+        ["WHO: Making listening safe", "https://www.who.int/activities/making-listening-safe", "Provides safe listening context and risk framing for recreational sound exposure."],
+        ["Tinnitus Relief landing page", "/tinnitus/", "Internal app landing page for offline sound masking, sleep sounds, and private on-device use."]
+      ]
+    }
+  },
+  {
+    slug: "white-noise-tinnitus-sleep-sound-app",
+    category: "Tinnitus",
+    title: "White Noise For Tinnitus: Choosing Sleep Sounds That Feel Calm",
+    description: "A practical SEO guide to white noise tinnitus masking, pink noise, brown noise, rain, ocean, fan sounds, and how to choose a sleep sound app without overcomplicating bedtime.",
+    kicker: "White noise tinnitus",
+    readTime: "15 min",
+    accent: "tinnitus",
+    sections: [
+      ["White Noise Is A Starting Point, Not The Whole Answer", "People often search for white noise tinnitus because white noise is the best-known phrase for background masking. In practice, many sleep sound app users do not actually want pure white noise. True white noise can feel bright, sharp, or static-like. Pink noise reduces intensity at higher frequencies and may feel smoother. Brown noise is deeper and can feel more like a low rumble. Rain, ocean, fan, and wind sounds are not technical noise colors, but they may be easier to live with because they feel familiar. The right question is not which sound is scientifically perfect for every tinnitus pattern. The right question is which sound helps you stop checking the ringing every few seconds. A high-quality tinnitus relief app should give options without making the user feel like they need a degree in acoustics."],
+      ["Think In Terms Of Attention, Not Only Volume", "Tinnitus becomes distressing when it captures attention. Volume matters, but attention matters too. A sound can be loud enough to mask yet annoying enough to keep the brain alert. Another sound can be softer but emotionally easier to accept. NIDCD notes that sound therapy may help by masking, distraction, or helping the user become accustomed to tinnitus. That range explains why different users prefer different textures. If a user is anxious, a harsh sound may technically cover the ringing but still fail as a sleep tool. A calmer sound with slight movement may help attention settle. This is why app copy should use human language: softer room, less contrast, steadier focus, easier bedtime. Those phrases match how users judge the result."],
+      ["White Noise For Bright Ringing", "White noise contains energy across a wide range of frequencies. For some people with bright ringing, it can provide enough coverage to make the tinnitus less isolated. The risk is fatigue. If the white noise feels like a hiss that fights the ringing, lower it or switch to pink noise. A good app should make that switch obvious. The goal is not to win a volume contest. It is to find a sound that can stay in the background. For SEO, the phrase white noise tinnitus should be present, but the content should be honest: white noise is one option among several. It may help some people, it may irritate others, and it should be used at a comfortable level."],
+      ["Pink Noise For A Softer Bedtime Layer", "Pink noise often feels less sharp because the balance of energy is weighted differently than white noise. Many users describe it as smoother or warmer. That can make it a strong first preset for bedtime. Pink noise also blends well with rain because the rain provides a natural cue while the pink noise provides a continuous bed. In an app interface, this should not require advanced mixing knowledge. A simple preset can do the work. The user may only need to adjust volume and timer. If the tinnitus is still too present, a second layer can be added. If the sound becomes distracting, reduce movement before raising volume. The best sleep sound app design lowers the number of decisions."],
+      ["Brown Noise For Low, Room-Filling Comfort", "Brown noise can feel heavier and deeper. Some users like it because it fills the room without the sharp edge of high-frequency noise. It may be useful when the bedroom feels too empty or when a user wants a deeper ambient noise app experience. But brown noise is not automatically better. If it feels oppressive, muddy, or too present, it can become another thing to monitor. The advantage of real-time generation is that the app can keep the texture continuous without obvious loops. Repeating audio files can sometimes reveal a seam, and once the brain notices a loop, it may start waiting for it. Continuous synthesis avoids that specific irritation."],
+      ["Rain, Ocean, Wind, And Fan Sounds", "Natural and household sounds often work because they carry emotional meaning. Rain can signal shelter. Ocean can signal distance and movement. Wind can soften a room. Fan noise can feel familiar to people who already sleep with a fan. These are not medical interventions; they are environmental design choices. A person dealing with ear ringing relief at night may be more interested in feeling safe and less alone than in matching a frequency chart. A sound masking app that includes rain, ocean, wind, and fan sounds gives users multiple emotional routes toward the same goal: reduce the dominance of the internal sound. That is high-conversion content because it speaks to the actual decision the user is making."],
+      ["How To Test A Sound In Two Minutes", "A simple test beats endless browsing. First, choose one sound and set it low. Second, close your eyes for thirty seconds and notice whether you are still bracing against the ringing. Third, raise the sound slightly or add one layer. Fourth, set a timer and stop changing settings. The final step is important because constant adjustment can keep attention locked on tinnitus. If the sound becomes annoying, lower it or choose another texture. If the sound feels easy, save it as a preset. The best preset is not the most impressive mix. It is the one you will actually use at midnight when you are tired."],
+      ["Safe Listening Still Matters", "Sound masking should be comfortable. CDC/NIOSH explains that repeated exposure to sounds at or above 85 dBA can cause permanent hearing loss in occupational settings, and WHO emphasizes safe listening across personal audio and entertainment contexts. A tinnitus app should never encourage users to blast sound into the ear. It should encourage moderation, external speakers where appropriate, and comfortable levels. If using headphones or earbuds, extra caution matters because the sound is delivered close to the ear. The safest marketing tone is calm: use enough sound to soften awareness, not so much sound that it creates strain. This builds trust and reduces the risk of overpromising."],
+      ["What Makes An App Better Than A Random Video", "A random video or streaming playlist can work sometimes, but it has weaknesses for high-intent tinnitus users. It may require internet. It may include ads. It may stop. It may have a loop. It may collect account data. It may suggest unrelated content when the user is trying to sleep. An offline sleep sound app can be more focused: open, play, timer, preset, done. On-device generation matters because it makes the experience reliable even in airplane mode or weak hotel Wi-Fi. For someone who searches sound masking app at night, reliability can be the feature that converts. They are not shopping for entertainment; they are trying to create relief."],
+      ["The Best Sound Is The One You Trust", "A realistic conclusion is that there is no universal best sleep sound for tinnitus. There are better starting points, safer habits, and more private app designs. White noise tinnitus searches should lead users to a choice: start with white or pink noise, try rain if static feels too clinical, add a fan if focus is the goal, and save the mix that works. Tinnitus Relief can position itself as the practical place to do that offline, with no login and no cloud. The conversion message is not technical superiority. It is trust: the app starts fast, stays private, and gives you a quieter-feeling environment when the ringing is taking too much space."],
+      ["The Mistake Of Chasing A Perfect Sound", "Many users lose time trying to find the perfect sound. They switch from white noise to rain, from rain to fan, from fan to brown noise, and then start over because the ringing is still present. That cycle can keep attention locked on tinnitus. A better approach is to choose a good-enough sound and give it time. If the sound is comfortable, stable, and not irritating, it may be doing its job even if the tinnitus is still partly noticeable. The user should be encouraged to stop editing once the room feels less sharp. This is a subtle but important product lesson: a sleep sound app should help end the search, not extend it."],
+      ["How To Build Three Presets", "A practical setup is to build three presets instead of one. The first is Sleep: a gentle pink noise or rain mix with a timer. The second is Focus: a fan or brown noise layer that stays steady while reading or working. The third is Travel: a stronger but still comfortable ambient noise app preset for hotel rooms, flights, or unfamiliar apartments. Three presets cover most high-intent use cases and make the app feel useful quickly. The user does not need to browse every sound every time. They need a small set of reliable choices that make ear ringing relief feel accessible."],
+      ["Why The App Should Avoid Surprise Sounds", "Changing sounds can be beautiful in meditation apps, but tinnitus masking often benefits from predictability. Sudden bird calls, loud thunder, dramatic wave peaks, or musical changes can pull attention back to listening. For sleep, the best sound may be boring in the right way: steady, gentle, and emotionally acceptable. This is why white noise, pink noise, brown noise, fan, rain, and soft ocean textures remain useful. They can create a background without demanding interpretation. A high-conversion article should make that point clearly because it helps users understand why Tinnitus Relief focuses on controllable ambient layers rather than entertainment."]
+    ],
+    checklist: ["Treat white noise as one option, not the only answer.", "Choose sounds by comfort and attention, not only loudness.", "Save a preset after a two-minute test.", "Use a timer to stop endless adjustment.", "Keep volume moderate and comfortable."],
+    deepDive: {
+      figureTitle: "Sound color choice: match emotion before precision",
+      figureCaption: "Users usually choose the sound they can live with, not the sound with the most technical description.",
+      figureStats: [["5 sounds", "White, pink, brown, rain, fan"], ["2 min", "Fast comfort test"], ["1 preset", "Reduce bedtime decisions"]],
+      comparisonTitle: "Common sleep sounds for tinnitus masking",
+      comparisonColumns: ["Sound", "User feeling", "Good for", "Try next if"],
+      comparisonRows: [
+        ["White noise", "Full, bright, static-like", "Broad masking", "It feels sharp or tiring"],
+        ["Pink noise", "Smoother, warmer", "Bedtime and rain blends", "You need deeper sound"],
+        ["Brown noise", "Deep, room-filling", "Low, steady comfort", "It feels heavy"],
+        ["Rain", "Natural, familiar", "Sleep routine", "Drops feel distracting"],
+        ["Fan", "Stable, ordinary", "Focus and travel", "It feels too mechanical"]
+      ],
+      faqs: [
+        ["Is pink noise better than white noise for tinnitus?", "Not universally. Some users prefer pink noise because it feels smoother, but the useful choice is the one that lowers awareness without becoming annoying."],
+        ["Can I use sleep sounds every night?", "Many people use background sound as a routine, but volume should stay comfortable. If symptoms change or persist, seek professional advice."],
+        ["Do nature sounds count as sound masking?", "They can. Rain, ocean, wind, and fan sounds can reduce contrast between tinnitus and silence even though they are not pure noise colors."],
+        ["Why use generated sound instead of audio files?", "Generated sound can play continuously without downloads or obvious loops, which is helpful when the user is trying not to notice repetition."]
+      ],
+      sources: [
+        ["NIDCD: Tinnitus", "https://www.nidcd.nih.gov/health/tinnitus", "Describes sound therapy, smartphone sound generators, and sleep-related use of pleasant sounds."],
+        ["ASHA: Tinnitus", "https://www.asha.org/public/hearing/tinnitus/", "Public education resource on tinnitus and audiology care."],
+        ["CDC/NIOSH: Preventing noise-induced hearing loss", "https://www.cdc.gov/niosh/noise/prevent/index.html", "Provides hearing-safety context around repeated exposure to loud sound."],
+        ["WHO: Making listening safe", "https://www.who.int/activities/making-listening-safe", "Frames safe listening and hearing risk from loud sound exposure."]
+      ]
+    }
+  },
+  {
+    slug: "why-tinnitus-feels-louder-at-night-sleep-masking",
+    category: "Tinnitus",
+    title: "Why Tinnitus Feels Louder At Night: Sleep, Silence, And Sound Masking",
+    description: "A research-informed, human guide to why tinnitus awareness often spikes in quiet rooms and how sleep sounds, sound masking, and offline app routines can help reduce the burden.",
+    kicker: "Sleep and silence",
+    readTime: "17 min",
+    accent: "tinnitus",
+    sections: [
+      ["The Bedroom Has Fewer Competing Signals", "Tinnitus often feels louder at night because the environment has fewer competing signals. During the day, attention is divided across tasks, speech, screens, traffic, and physical movement. In bed, most of those signals disappear. The auditory system has less external information to process, and attention can narrow around the internal sound. NIDCD describes tinnitus as a phantom sound perceived without an external source and notes that it can affect sleep or concentration for some people. That does not mean the sound necessarily increased in a measurable way. It may mean the contrast increased. In conversion terms, this is the exact moment a tinnitus relief app needs to serve: the user is not casually learning about hearing science. They are tired, aware, and looking for a practical way to make the room feel less silent."],
+      ["Silence Can Become A Spotlight", "A quiet bedroom can act like a spotlight. The absence of sound makes the ringing easier to detect, and detection can create tension. Tension makes the user check the sound again. The loop is not only auditory; it is emotional. People describe it as waiting for the ringing, fighting the ringing, or being unable to stop monitoring it. This is why a sound masking app should not present itself as a cure. It should present itself as a way to change the scene. Adding rain, fan, ocean, pink noise, or brown noise gives the brain another layer to process. The ringing may still be present, but it is no longer alone in the room. For many users, that difference is meaningful."],
+      ["Sleep Pressure And Frustration Interact", "The more badly someone wants to sleep, the more frustrating tinnitus awareness can feel. A person may start calculating tomorrow's fatigue, worrying about work, or wondering whether the ringing is getting worse. That mental load can make the sound feel even more intrusive. Behavioral approaches for tinnitus often include education, counseling, relaxation, or cognitive strategies because the reaction to tinnitus matters. An app can support this indirectly by making the next action obvious. Instead of searching the web at 2 a.m., the user opens a preset. Instead of comparing symptoms, the user sets a timer. Instead of testing every sound endlessly, the user returns to a saved mix that has already felt tolerable."],
+      ["Sound Masking Works By Changing The Environment", "Sound masking does not need to be mysterious. It changes the listening environment so tinnitus is less isolated. NIDCD explains that sound therapy devices may mask tinnitus, help users become accustomed to it, or distract them. Cochrane reviews also show that clinical evidence for device superiority is limited and low certainty, so marketing should be careful. But careful does not mean weak. A landing page can honestly say that sound masking may reduce awareness, support relaxation, and create a calmer environment for sleep. That is enough for many high-intent users. They are not asking for a treatment claim. They are asking whether the app can help them get through the next night."],
+      ["Why A Timer Reduces Anxiety", "A sleep timer is not just a convenience feature. It reduces a small but real worry: will the sound run all night? Some users like all-night sound. Others only need help crossing the first sleep threshold. A fade-out timer gives them control without requiring another interaction after they become drowsy. The ideal timer is easy to set and easy to trust. Thirty, forty-five, or sixty minutes may be enough for many routines. The app should remember common choices because repeated setup creates friction. The emotional promise is simple: start relief now, and let the app stop later. That is a small interaction, but it matches the user's tired state."],
+      ["Why Presets Matter More Than Libraries", "A huge sound library can feel impressive during browsing and exhausting during insomnia. Presets are more conversion-friendly because they create confidence. A user can save Night rain, Deep brown, Focus fan, or Travel room and return to it without thinking. This is especially important for tinnitus because too much testing can keep attention fixed on the symptom. The product should help users stop experimenting once they have a mix that feels comfortable. Saved presets also make the app feel personal without requiring cloud personalization. The data can stay on-device, and the user can still feel that the app remembers what helps."],
+      ["Travel Makes The Night Problem Worse", "Hotels, guest rooms, flights, and unfamiliar apartments can make tinnitus awareness more noticeable because the normal sleep cues are missing. A fan may not be available. Wi-Fi may be weak. Streaming may fail. A partner may not want a loud device. An offline ambient noise app gives the user a familiar routine in an unfamiliar place. This is one of the strongest use cases for App Store marketing because it combines emotional urgency and practical differentiation. The user can download before travel, save a few presets, and know that the app will work without internet. That is a clear reason to install rather than keep searching."],
+      ["What To Do When Night Tinnitus Changes", "Some patterns should lead to professional care. Sudden hearing changes, pulsatile tinnitus, severe dizziness, ear pain, one-sided new symptoms, or tinnitus after injury should not be managed only with an app. NICE and NIDCD both frame tinnitus management within healthcare assessment when appropriate. A trustworthy app page should say this clearly. Paradoxically, that disclaimer can improve conversion because it signals honesty. Users can tell the difference between a tool and a miracle claim. Tinnitus Relief can be positioned as a private comfort and sound masking companion, not a medical device. That boundary makes the app easier to trust."],
+      ["A Better Night Routine In Four Steps", "A realistic routine can be short. First, choose the preset that has worked before. Second, lower volume until the sound feels like part of the room rather than a performance. Third, set the timer. Fourth, put the phone down and stop comparing. If the mix does not help after a few nights, try one variable at a time: noise color, nature layer, volume, or timer length. Do not redesign the entire routine every night. The goal is to reduce cognitive load. A well-designed tinnitus relief app should make the simplest helpful path feel obvious. The user should not have to become a sound engineer to sleep."],
+      ["The SEO Promise And The Human Promise", "The SEO promise is that this page answers searches like why tinnitus feels louder at night, sleep sound app, ear ringing relief, tinnitus relief app, sound masking app, white noise tinnitus, and ambient noise app. The human promise is more important: when the room gets quiet and the ringing feels too present, there is a next step that does not require a login, a streaming service, or a medical claim. Open the app. Start the sound. Let the room become less silent. That is the conversion story: pain, relief, action, and trust."],
+      ["Why Education Alone Is Not Enough At Night", "Educational articles are useful during the day, but they are not enough when someone is awake and upset. At night, the user needs an action that is small, safe, and immediate. This is where an app can convert better than a long resource page. The article can explain why silence increases awareness, but the CTA should invite the user to change the sound environment now. That is not manipulative if the app stays within honest claims. It is matching the user's state. They are not asking for a thesis. They are asking for a practical next step that might make the next hour easier."],
+      ["What A Better Morning Looks Like", "The morning after a better night may not feel dramatic. It may simply feel less defeated. The user may remember that they started a preset, stopped checking, and fell asleep sooner than expected. They may still notice tinnitus in the morning, but the night did not become a battle. That is the realistic emotional result to write toward. App Store conversion improves when the copy paints a future users can believe: not cured forever, not transformed overnight, but supported enough to rest, focus, and feel more in control."],
+      ["How To Avoid Turning The App Into Another Stressor", "Any tinnitus tool can become stressful if the user treats it like a test. If the sound does not work immediately, they may blame themselves. If they adjust too much, they may become more aware of the ringing. The app and article should push toward simplicity: choose a preset, set volume comfortably, set a timer, and stop adjusting. The product should make the calm path obvious. Too many settings above the fold, too many clinical labels, or too much emphasis on exact pitch can increase cognitive load. Better CRO means fewer decisions at the moment of distress."],
+      ["A Realistic Seven-Night Experiment", "A strong article can give users a simple experiment instead of vague encouragement. For seven nights, use the same starting volume, the same sleep preset, and the same timer. Change only one variable if the routine feels wrong: sound type, volume, or timer length. Keep notes simple: easier, same, or harder. This creates a realistic sense of progress without turning the app into a medical diary. It also supports retention because the user has a reason to return for several nights. If the app helps even two or three nights feel less frustrating, that can be enough to make the subscription feel worthwhile. That is the kind of modest, believable improvement users remember."]
+    ],
+    checklist: ["Use sound to reduce silence contrast.", "Choose presets over endless browsing.", "Use a timer if all-night audio creates worry.", "Keep travel presets available offline.", "Get medical advice for sudden, one-sided, pulsatile, painful, or changing tinnitus."],
+    deepDive: {
+      figureTitle: "Night awareness loop: silence, scanning, stress, repeat",
+      figureCaption: "Sound masking interrupts the silent-room contrast that can make tinnitus feel more intrusive.",
+      figureStats: [["4 steps", "Silence, notice, worry, scan"], ["1 cue", "Saved sleep preset"], ["0 network", "Offline travel use"]],
+      comparisonTitle: "Night problem to app response",
+      comparisonColumns: ["Night trigger", "User feeling", "App response", "Conversion message"],
+      comparisonRows: [
+        ["Silent room", "Ringing feels isolated", "Start masking sound", "Turn down the contrast"],
+        ["Insomnia worry", "Fear of tomorrow fatigue", "Set sleep timer", "Let it fade later"],
+        ["Too many choices", "More symptom checking", "Use saved preset", "One tap routine"],
+        ["Travel room", "Unfamiliar quiet", "Offline preset", "Works anywhere"]
+      ],
+      faqs: [
+        ["Does tinnitus actually get louder at night?", "Sometimes perception changes more than the sound itself. A quiet room can make tinnitus more noticeable because there are fewer competing sounds."],
+        ["Can sound masking help sleep?", "It can help some users by reducing contrast and creating a more comfortable sound environment. It is not a medical treatment or guaranteed cure."],
+        ["Should I use a timer?", "Use a timer if it helps you relax about the sound stopping later. Some users prefer all-night sound; others only need the first part of the night."],
+        ["What if tinnitus wakes me up?", "A saved preset can make the response faster. If tinnitus is new, sudden, pulsatile, or associated with other symptoms, seek medical advice."]
+      ],
+      sources: [
+        ["NIDCD: Tinnitus", "https://www.nidcd.nih.gov/health/tinnitus", "Explains tinnitus symptoms, sleep impact, sound therapy, and when medical evaluation may be needed."],
+        ["NICE NG155", "https://www.nice.org.uk/guidance/ng155", "Clinical guideline covering assessment and management of tinnitus."],
+        ["Cochrane: Sound therapy for tinnitus", "https://www.cochrane.org/evidence/CD013094_sound-therapy-using-amplification-devices-or-sound-generators-tinnitus", "Evidence review describing quality-of-life effects and limitations of sound therapy evidence."],
+        ["WHO: Making listening safe", "https://www.who.int/activities/making-listening-safe", "Safe listening context for responsible sound use."]
+      ]
+    }
+  },
+  {
+    slug: "offline-tinnitus-app-privacy-on-device-sound-masking",
+    category: "Tinnitus",
+    title: "Offline Tinnitus App Privacy: Why On-Device Sound Masking Matters",
+    description: "A high-intent guide for users comparing tinnitus relief apps, cloud audio, streaming sleep sounds, and private on-device sound masking on iPhone.",
+    kicker: "Privacy and trust",
+    readTime: "16 min",
+    accent: "tinnitus",
+    sections: [
+      ["Tinnitus Data Feels Personal", "A tinnitus app may look like a simple audio utility, but the context is personal. A preset can reveal that someone struggles to sleep. A frequency match can suggest hearing concerns. A session history can imply stress patterns, travel habits, or late-night discomfort. That does not mean every app is unsafe, but it does mean privacy is not a decorative feature. For a high-intent user searching tinnitus relief app or ear ringing relief, privacy can be part of the relief. They want to open the app without creating an account, explaining symptoms, or sending a listening profile to a cloud service. A private app creates emotional safety before the first sound plays."],
+      ["Offline Use Removes A Major Bedtime Failure Point", "Streaming sleep sounds can fail in exactly the moments users need reliability: weak hotel Wi-Fi, airplane mode, low signal, captive portals, account issues, ads, or app switching. An offline tinnitus app avoids those points of friction. Real-time on-device sound generation means the audio can start immediately and continue without buffering. The user does not have to download a library in advance or hope that a playlist remains available. This matters for conversion because users with tinnitus are often searching when they are already uncomfortable. The faster the app can move from install to sound, the more likely it is to feel useful."],
+      ["No Login Is A Product Strategy", "No login is not only a privacy line. It is a conversion strategy. Every account screen asks the user to leave the emotional path: from I need relief now to I need to create credentials. That is a bad trade for a sound masking app. The ideal first session should be immediate: choose a sound, adjust volume, set timer, save preset. Account systems can make sense for social products or cross-device sync, but they are often unnecessary for an offline ambient noise app. If the core value lives on one iPhone, local settings are enough. The app becomes calmer because the business model does not require turning the user's night into a profile."],
+      ["No Cloud Means Fewer Questions", "Cloud features can be useful in some categories, but tinnitus relief is not a category where cloud storage is automatically valuable. A user may reasonably ask: why does a sound masking app need to upload my listening habits? Why does it need a remote profile to play rain or white noise? Why should my frequency matching data leave the device? The privacy block should answer in plain language: no cloud account, no upload required for core sound generation, and all audio generated on-device. The clearer the answer, the more trustworthy the app feels. Trust is especially important because tinnitus users are often wary of exaggerated claims."],
+      ["On-Device Audio Also Supports Performance", "Privacy is not the only reason on-device generation matters. Performance matters too. Audio files can loop. Streams can stutter. Ads can interrupt. Network calls can slow a bedtime action. Generated sound can be continuous and immediate. That does not automatically make every generated sound better, but it gives the product a strong functional base. A tinnitus relief app should feel like a bedside tool, not a media browsing experience. Open, play, adjust, sleep. The fewer dependencies involved, the less fragile the routine becomes."],
+      ["How To Compare Tinnitus Apps", "When comparing apps, look beyond the sound list. Ask whether the app works offline. Ask whether it requires an account before use. Ask whether it explains what data stays on device. Ask whether sound generation is continuous or based on short loops. Ask whether the app includes a sleep timer and saved presets. Ask whether advanced features like frequency matching and notch filtering are optional and clearly described as personalization rather than medical testing. A strong app does not need to hide behind vague wellness language. It can state exactly what it does: sound masking, sleep sounds, focus sounds, offline operation, and private on-device settings."],
+      ["Subscription Trust Starts With Honest Boundaries", "If the app offers a trial or subscription, trust depends on honest boundaries. Users can accept paying for a tool that helps them sleep, focus, or relax. They are less forgiving when the app implies a cure, hides cancellation context, or makes basic claims too aggressive. The best App Store conversion strategy is not to overpromise. It is to connect pain to an immediate, believable action. Start sound masking now. Build a private sleep preset. Use the timer tonight. Try personalization when ready. Consult a professional if symptoms persist or change. This tone can still sell because it matches the user's intelligence."],
+      ["Offline Does Not Mean Isolated From Care", "A private app should not suggest that users avoid professional care. NIDCD recommends medical evaluation when appropriate and explains that tinnitus can have many causes. NICE frames tinnitus within assessment and management pathways. An offline app can live alongside that reality. It can support relaxation and sound masking while still telling users to seek help for sudden, pulsatile, painful, or changing symptoms. That balanced posture creates a more credible brand. The app is not pretending to be a clinic. It is offering a practical listening environment."],
+      ["The Best Privacy Copy Is Specific", "Generic privacy claims are easy to ignore. Specific privacy copy converts better. 100% offline processing. No login. No cloud profile. No tracking-based personalization. Sound choices stay on device. Frequency matching stays on device. Presets stay on device. Session history stays on device. Each line answers a real doubt. It also differentiates the product from streaming videos, cloud playlists, and apps that require accounts before use. For an iPhone user who values privacy, this can be the reason they install now rather than bookmark the page."],
+      ["A Practical Closing Argument", "An offline tinnitus app is not just another sleep sound app. It is a tool for a sensitive moment: when ringing is present, the room is quiet, and the user wants control without exposure. On-device sound masking gives the user immediate action. No login preserves momentum. No cloud preserves privacy. Real-time generation preserves continuity. The product story is simple and high-converting: relief should not depend on Wi-Fi, accounts, ads, or uploads. Tinnitus Relief should be ready when the user is ready to make the room feel calmer."],
+      ["The Conversion Value Of Feeling Unobserved", "Privacy is often discussed as compliance, but for tinnitus it is also emotional design. A person may feel vulnerable when searching for ear ringing relief at night. They may not want a profile, a support community, targeted emails, or analytics-driven personalization. They may simply want sound. When the app communicates that nothing needs to leave the phone, the user can relax into the tool faster. This is a strong differentiator because many wellness apps ask users to trade personal context for features. Tinnitus Relief can make the opposite promise: the core experience is useful precisely because it stays quiet."],
+      ["Why Offline Also Helps Subscriptions", "A subscription is easier to justify when the product solves a recurring problem reliably. Offline access supports that. If the app works at home, in a hotel, on a plane, during a commute, and in a weak-signal bedroom, it becomes a dependable utility rather than a novelty. Users pay for tools they trust under pressure. For tinnitus users, pressure often arrives when the environment is quiet or unfamiliar. A cloud-dependent product may be fine most of the time, but the offline product has a better story for the moments that matter. That story should be visible in the blog content and landing page."],
+      ["How To Write Privacy Without Sounding Defensive", "The tone should be firm, not paranoid. Say what the app does not need: no login, no cloud profile, no tracking-first experience, no streaming requirement for core sound. Then say what the user gets: immediate sound masking, saved presets, sleep timer, frequency matching, notch personalization, and private local settings. This structure turns privacy from a legal paragraph into a benefit. It also helps SEO because users increasingly search for offline app, no login app, privacy-first iPhone app, and on-device processing. Those phrases should appear naturally in content that still reads like a human guide."],
+      ["Privacy Also Reduces Support Risk", "Clear local-first positioning can reduce user confusion after download. If people understand that core sound generation does not require an account, they will not look for a missing login. If they understand that saved presets are local, they will not expect cloud sync. If they understand that deleting the app may remove local data, they can make informed decisions. That clarity matters for subscriptions because disappointed assumptions create cancellations. A strong blog article should therefore explain privacy as part of product fit, not only as a moral claim. The user gets a simpler app, the developer gets fewer mismatched expectations, and the brand earns more trust."],
+      ["The Best CTA For A Privacy-First App", "A privacy-first tinnitus app should not close with a vague learn more button. The user has already learned enough. The CTA should say Start Relief Now or Download on App Store and sit near a short privacy reminder: works offline, no account required, all core sound generated on device. That combination supports action while answering the last objection. The user does not need to choose between relief and privacy. The app can offer both. That is the point of the article, and it should be repeated near the bottom where high-intent readers are ready to act. Clear final action matters when the reader is already motivated. It turns trust into a simple next step. That final step should feel calm, direct, private, and useful."]
+    ],
+    checklist: ["Prefer no-login first use for bedtime tools.", "Choose offline sound generation for travel reliability.", "Check whether presets and frequency settings stay on device.", "Avoid apps that make cure-like claims.", "Use privacy copy that names exactly what is not collected or uploaded."],
+    deepDive: {
+      figureTitle: "Private masking stack: local sound, local settings, local routine",
+      figureCaption: "The strongest privacy story is also the simplest user flow: start sound without needing an account or network.",
+      figureStats: [["0 account", "No sign-up before relief"], ["0 cloud", "No remote listening profile"], ["1 device", "Sound generated on iPhone"]],
+      comparisonTitle: "Offline app vs streaming sound",
+      comparisonColumns: ["Decision", "Offline app", "Streaming audio", "Why it matters"],
+      comparisonRows: [
+        ["Bedtime start", "Immediate", "May require network or app switching", "Lower friction"],
+        ["Privacy", "Local settings", "Platform account and history may apply", "Sensitive context"],
+        ["Travel", "Works in airplane mode", "Depends on connectivity or downloads", "Reliability"],
+        ["Looping", "Can generate continuously", "May repeat or stop", "Less distraction"]
+      ],
+      faqs: [
+        ["Why does no login matter for a tinnitus app?", "Because high-intent users often need immediate sound. Account creation interrupts the relief path and can make a private problem feel exposed."],
+        ["Is offline sound better than streaming?", "Offline sound is not automatically better in every way, but it is more reliable when Wi-Fi, ads, accounts, or buffering would get in the way."],
+        ["Should frequency matching data be private?", "Yes. It can relate to personal listening comfort and perceived tinnitus pitch, so keeping it on-device is a strong trust signal."],
+        ["Can an offline app replace an audiologist?", "No. It can support sound masking and relaxation, but persistent or concerning symptoms should be evaluated by a healthcare professional."]
+      ],
+      sources: [
+        ["NIDCD: Tinnitus", "https://www.nidcd.nih.gov/health/tinnitus", "Explains diagnosis, treatment approaches, and smartphone sound generator use."],
+        ["NICE NG155", "https://www.nice.org.uk/guidance/ng155", "Guidance on tinnitus assessment and management in healthcare settings."],
+        ["ASHA: Tinnitus", "https://www.asha.org/public/hearing/tinnitus/", "Public-facing audiology information on tinnitus."],
+        ["Tinnitus Relief privacy policy", "/legal/Tinnitus/privacy/", "Internal privacy policy describing local storage and offline operation."]
+      ]
+    }
+  },
+  {
+    slug: "frequency-matching-notch-filter-tinnitus-personalization",
+    category: "Tinnitus",
+    title: "Frequency Matching And Notch Filters For Tinnitus: Personalization Without Medical Claims",
+    description: "An evidence-aware explanation of frequency matching, notch filtering, and personalized sound masking for tinnitus apps, written for users who want control without clinical overpromising.",
+    kicker: "Personalization",
+    readTime: "18 min",
+    accent: "tinnitus",
+    sections: [
+      ["Personalization Starts With Listening, Not Diagnosing", "Frequency matching can sound clinical, but in a consumer tinnitus relief app it should be framed as personalization. The user is not taking a medical hearing test. They are using a slider to find a reference pitch that resembles the tone they notice most. That reference can help shape a notch filter or saved listening profile. The distinction matters. NIDCD explains that tinnitus sounds can vary widely, including ringing, buzzing, roaring, whistling, humming, clicking, hissing, or squealing. A single preset cannot feel personal to all of those experiences. Frequency matching gives users a way to make the app feel more relevant without claiming to diagnose the cause or severity of tinnitus."],
+      ["What Frequency Matching Feels Like To A User", "A good frequency matching tool should be simple and emotionally safe. The user moves a slider, compares tones, and stops when the reference feels close enough. It should not force repeated testing, long calibration, or scary medical language. Many users already feel anxious when focusing on the sound. The product should reduce stress, not intensify it. A practical flow might say: find the pitch you notice most, save it, and adjust later if it changes. That acknowledges reality. Tinnitus perception can vary by day, stress, sleep, environment, and attention. The app should make change normal rather than making the user feel they failed a test."],
+      ["What A Notch Filter Means In App Language", "A notch filter reduces a narrow band of frequencies in the ambient sound around a chosen reference frequency. In user language, it personalizes the masking sound so the mix leaves a small space around the pitch you selected. This should be described carefully. It is not a cure. It is not a guaranteed treatment. It is a comfort feature for users who want a more tailored listening experience. The most conversion-friendly explanation is visual and simple: choose your reference pitch, turn on the optional notch, and listen to whether that version feels more comfortable. If it does not, turn it off. Control matters more than complexity."],
+      ["Why Optional Is Important", "Advanced features should not block relief. A person who downloads the app at night may want sound immediately. If the first screen demands frequency matching, the app risks losing the user. Optional personalization is better: start with sound masking now, then refine later. This respects different user states. Some are curious and want control. Some are exhausted and want rain. Some may never use notch filtering but still love the app for sleep sounds. Others may subscribe because personalization makes the product feel more serious. The funnel should support both emotional urgency and deeper engagement."],
+      ["How To Use Frequency Matching Without Obsessing", "A healthy workflow is brief. Set volume low. Move the slider slowly. Stop when the tone feels close, not perfect. Save the result. Return to sound masking. The danger is over-checking. When users chase an exact pitch, attention can become locked on tinnitus. The app should avoid rewarding obsessive precision. Labels like close enough, save reference, and adjust anytime are better than clinical score language. A short session can make the user feel in control without turning bedtime into an experiment. This is where design and copy protect the user experience."],
+      ["Pairing Notch Filters With Ambient Sound", "A notch filter is most useful when paired with a sound the user already finds comfortable. If the base sound is annoying, filtering it will not magically make it soothing. Start with pink noise, rain, fan, or ocean. Then try the notch. Compare for a minute. Save whichever version feels easier. This is a product story users can understand. The base layer handles comfort. The notch adds personalization. The timer handles sleep. Presets handle repeat use. Together, these features create a strong subscription argument without medical claims: users pay for a better controlled listening environment."],
+      ["Evidence Boundaries Create Trust", "Cochrane's review of sound therapy for tinnitus highlights that evidence comparing devices is limited and low certainty. That does not mean sound tools are useless; it means marketing should be careful. A responsible app page should avoid saying notch filters treat tinnitus. It can say they personalize the ambient sound for comfort. It can say frequency matching helps tune the app to the pitch you notice. It can say sound masking may help reduce awareness or create a calmer environment. This evidence-aware language feels more credible than miracle claims. Users with tinnitus have likely seen exaggerated promises before. Honest specificity can convert better."],
+      ["When Frequency Matching May Not Be The Right Feature", "Some users should skip frequency matching, at least at first. If focusing on the pitch increases anxiety, start with general masking. If tinnitus is changing rapidly, new, pulsatile, painful, or associated with hearing loss or dizziness, seek professional advice. If the user cannot find a stable pitch, that does not mean the app has failed. Many people experience noise-like, multi-tone, or fluctuating tinnitus. A good app should support broad masking and natural sounds alongside pitch-based personalization. Personalization should expand options, not create pressure."],
+      ["A Strong App Store Subscription Story", "Frequency matching and notch filtering can support subscription conversion because they make the app feel individualized. But the subscription pitch should connect to outcomes: sleep with a calmer mix, focus with less sound awareness, save presets for different environments, and adjust personalization as needed. Users are more likely to subscribe when they feel the app understands their situation and gives them control. They are less likely to subscribe if they feel manipulated by fear. The best copy is firm and calm: tune your sound, keep it private, use it offline, and return to relief whenever tinnitus feels too noticeable."],
+      ["The Bottom Line For Users", "Frequency matching is a reference tool. A notch filter is an optional personalization tool. Sound masking is the everyday relief tool. None of them should be marketed as diagnosis or treatment. Together, they can make a tinnitus relief app feel more useful, more personal, and more trustworthy. Tinnitus Relief should let users begin with immediate sound, then move into deeper tuning only when ready. That sequence matches the human journey: first reduce distress, then refine control."],
+      ["How To Explain The Feature In Screenshots", "Screenshots should not lead with graphs that look medical. They should show the journey. First, a simple start screen. Second, sound selection. Third, a comfortable mix. Fourth, optional frequency tuning. Fifth, a notch toggle. Sixth, the sleep timer or saved preset. This order prevents advanced personalization from feeling intimidating. A user can see that the app works even if they never touch the frequency slider. At the same time, users who want control can see that more depth exists. The screenshot story should say: relief now, personalization when ready."],
+      ["How To Keep The User From Over-Tuning", "Over-tuning is a real risk. A user can spend too long trying to match a pitch, then become more aware of tinnitus. The app should gently limit that behavior through copy and flow. Use plain language such as choose the closest tone, save and return to sound, and you can adjust later. Avoid scoreboards, medical-looking pass or fail language, or repeated prompts to retest. The goal is not to make the user prove their tinnitus. The goal is to help them create a sound environment they can tolerate. That product philosophy should appear in the blog article because it makes the feature feel safer."],
+      ["Where Notch Filtering Fits In A Subscription Funnel", "Advanced personalization can be a subscription driver when it is framed as control, not fear. The free or first-use experience should prove immediate value with sound masking. Then the app can introduce deeper tools: frequency matching, notch filtering, saved profiles, richer mixes, and more presets. This order feels fair because the user understands the benefit before being asked to invest. The blog can support that funnel by explaining why personalization exists, who might want it, and why it remains optional. A subscriber is more likely to stay when the feature feels like a trusted extension of relief rather than a forced upgrade."],
+      ["The Ethical Marketing Rule", "The simplest ethical rule is this: never imply that a slider or notch filter diagnoses, treats, or cures tinnitus. Say that it personalizes the sound masking experience. Say that it may help create a more comfortable listening environment. Say that it can be turned off anytime. Say that people with persistent or concerning symptoms should consult a professional. These boundaries do not weaken the article. They make it more believable. In a category full of desperate searches, realistic language is a competitive advantage."],
+      ["How To Measure Whether Personalization Helps", "The simplest measure is not a clinical score. It is user behavior. Does the user return to the same personalized preset? Do they keep the notch on after trying it? Do they sleep with fewer adjustments? Do they use one profile for sleep and another for focus? These signals show whether personalization is useful in real life. A subscription product can build around these moments: saved profiles, quick toggles, timer recall, and local history. None of that requires making medical claims. It simply respects that tinnitus comfort is personal and that users value control when the ringing feels unpredictable."],
+      ["A Good Advanced Feature Should Feel Calm", "Advanced does not have to mean complicated. The best frequency matching and notch filter flow should feel calm, short, and reversible. Give the user a slider, a preview sound, a save button, and a clear off switch. Avoid screens that look like diagnostic equipment unless the app is actually a regulated medical product. In a consumer tinnitus relief app, the emotional goal is confidence. The user should think: I can try this, I can stop anytime, and my settings stay private. That feeling turns a technical feature into a conversion asset."]
+    ],
+    checklist: ["Present frequency matching as personalization, not diagnosis.", "Let users start masking before advanced setup.", "Use close enough language instead of precision pressure.", "Make notch filtering optional and reversible.", "Keep frequency settings private and on-device."],
+    deepDive: {
+      figureTitle: "Personalization ladder: mask first, tune second",
+      figureCaption: "Immediate relief and optional control should work together rather than compete.",
+      figureStats: [["Step 1", "Start sound masking"], ["Step 2", "Match reference pitch"], ["Step 3", "Try optional notch"]],
+      comparisonTitle: "Feature language that builds trust",
+      comparisonColumns: ["Feature", "Avoid saying", "Better wording", "Reason"],
+      comparisonRows: [
+        ["Frequency match", "Diagnose your tinnitus", "Find a reference pitch", "Consumer comfort tool"],
+        ["Notch filter", "Treat tinnitus", "Personalize the sound mix", "Avoid medical claim"],
+        ["Sound masking", "Stop ringing", "Reduce awareness of ringing", "More realistic"],
+        ["Listening profile", "Clinical hearing test", "Comfort profile", "Clear boundary"]
+      ],
+      faqs: [
+        ["What is frequency matching?", "In an app context, it is a slider-based way to choose a reference tone that resembles the pitch you notice most."],
+        ["What does a notch filter do?", "It reduces a narrow band of frequencies in the ambient sound around a selected reference frequency, creating a more personalized mix."],
+        ["Is this a hearing test?", "No. Frequency matching in Tinnitus Relief should be understood as a comfort and personalization feature, not a clinical assessment."],
+        ["Should everyone use notch filtering?", "No. Some users may prefer simple masking sounds. Advanced personalization should be optional."]
+      ],
+      sources: [
+        ["NIDCD: Tinnitus", "https://www.nidcd.nih.gov/health/tinnitus", "Describes the range of tinnitus sounds and treatment approaches including sound therapy."],
+        ["Cochrane: Sound therapy for tinnitus", "https://www.cochrane.org/evidence/CD013094_sound-therapy-using-amplification-devices-or-sound-generators-tinnitus", "Explains evidence quality and uncertainty around sound therapy devices."],
+        ["NICE NG155", "https://www.nice.org.uk/guidance/ng155", "Guideline context for assessment and management boundaries."],
+        ["Tinnitus Relief support", "/legal/Tinnitus/support/", "Internal support page describing frequency matching and notch filter workflow."]
+      ]
+    }
+  }
+);
+
 const oldGuides = [
   {
     href: "/blog/wood-cutting-calculator-guide/",
@@ -1388,6 +1647,9 @@ function deepDiveFigure(article) {
   const detail = article.deepDive;
   if (!detail?.figureTitle) return "";
   const labels = detail.figureStats || [];
+  if (article.category === "Tinnitus") {
+    return tinnitusDeepFigure(article, labels);
+  }
 
   return `<section class="deep-figure-section">
         <div class="deep-figure-copy">
@@ -1406,6 +1668,127 @@ function deepDiveFigure(article) {
             <span class="kerf-line kerf-one"></span>
             <span class="kerf-line kerf-two"></span>
           </div>
+          <figcaption>${escapeHtml(detail.figureCaption || "")}</figcaption>
+          <div class="deep-stat-row">${labels.map(([value, label]) => `<span><strong>${escapeHtml(value)}</strong><em>${escapeHtml(label)}</em></span>`).join("")}</div>
+        </figure>
+      </section>`;
+}
+
+function tinnitusVisualVariant(article) {
+  const variants = {
+    "tinnitus-relief-app-sound-masking-night-guide": "night",
+    "white-noise-tinnitus-sleep-sound-app": "noise",
+    "why-tinnitus-feels-louder-at-night-sleep-masking": "sleep",
+    "offline-tinnitus-app-privacy-on-device-sound-masking": "privacy",
+    "frequency-matching-notch-filter-tinnitus-personalization": "frequency"
+  };
+  return variants[article.slug] || "night";
+}
+
+function tinnitusArticleVisual(article, articleIndex) {
+  const variant = tinnitusVisualVariant(article);
+  const number = String(articleIndex + 1).padStart(2, "0");
+  const images = {
+    night: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/3/35/Girl_in_headphones_%28cropped%29.jpg",
+      alt: "Person wearing headphones for a calm tinnitus sound masking routine",
+      label: "Night relief"
+    },
+    noise: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Rain_on_window_%28Unsplash%29.jpg",
+      alt: "Rain on a window for white noise and sleep sound masking",
+      label: "Rain and white noise"
+    },
+    sleep: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/c/cb/A_Bedroom_with_a_wooden_bed.jpg",
+      alt: "Quiet bedroom setting for nighttime tinnitus awareness",
+      label: "Sleep and silence"
+    },
+    privacy: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Smartphone_lock_screen_enter_PIN.jpg",
+      alt: "Smartphone lock screen representing offline private on-device sound masking",
+      label: "Offline privacy"
+    },
+    frequency: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/f/f1/API_Console_-_VU_Meter_Bridge%2C_API560_10_Band_EQ%2C_API550A_3_Band_EQ_%282017-01-05_19.45.22_piqsels.com_en%29.jpg",
+      alt: "Audio equalizer controls representing frequency matching and notch filtering",
+      label: "Frequency tuning"
+    }
+  };
+  const image = images[variant] || images.night;
+
+  return `<figure class="blog-article-visual tinnitus-photo-visual tinnitus-photo-${variant} visual-${number}">
+          <img src="${image.src}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async">
+          <figcaption>${escapeHtml(image.label)}</figcaption>
+        </figure>`;
+}
+
+function tinnitusDeepModel(article) {
+  const variant = tinnitusVisualVariant(article);
+  const models = {
+    night: `<div class="masking-contrast">
+            <span class="contrast-before">Silent room</span>
+            <span class="contrast-after">Sound layer</span>
+            <span class="contrast-line"></span>
+          </div>
+          <div class="masking-flow">
+            <span>Open app</span>
+            <span>Choose preset</span>
+            <span>Set timer</span>
+          </div>`,
+    noise: `<div class="noise-choice-grid">
+            <span class="noise-card white">White</span>
+            <span class="noise-card pink">Pink</span>
+            <span class="noise-card brown">Brown</span>
+            <span class="noise-card rain">Rain</span>
+          </div>
+          <div class="noise-wave-row">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>`,
+    sleep: `<div class="awareness-loop">
+            <span>Silence</span>
+            <span>Notice</span>
+            <span>Stress</span>
+            <span>Mask</span>
+          </div>
+          <div class="sleep-softener">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>`,
+    privacy: `<div class="local-stack">
+            <span class="local-phone">iPhone</span>
+            <span class="local-lock">Local</span>
+            <span class="local-chip">No cloud</span>
+            <span class="local-chip">No account</span>
+          </div>`,
+    frequency: `<div class="personalization-ladder">
+            <span>Mask</span>
+            <span>Tune</span>
+            <span>Notch</span>
+          </div>
+          <div class="notch-curve">
+            <span class="notch-curve-line"></span>
+            <span class="notch-dip"></span>
+          </div>`
+  };
+  return models[variant] || models.night;
+}
+
+function tinnitusDeepFigure(article, labels) {
+  const detail = article.deepDive;
+  const variant = tinnitusVisualVariant(article);
+
+  return `<section class="deep-figure-section">
+        <div class="deep-figure-copy">
+          <p class="eyebrow">Visual model</p>
+          <h2>${escapeHtml(detail.figureTitle)}</h2>
+          <p>${escapeHtml(detail.figureCaption || "")}</p>
+        </div>
+        <figure class="deep-layout-figure tinnitus-deep-figure tinnitus-deep-${variant} ${escapeHtml(article.accent)}">
+          <div class="tinnitus-deep-model" aria-hidden="true">${tinnitusDeepModel(article)}</div>
           <figcaption>${escapeHtml(detail.figureCaption || "")}</figcaption>
           <div class="deep-stat-row">${labels.map(([value, label]) => `<span><strong>${escapeHtml(value)}</strong><em>${escapeHtml(label)}</em></span>`).join("")}</div>
         </figure>
@@ -1504,6 +1887,9 @@ function getArticleIndex(article) {
 
 function articleVisual(article) {
   const articleIndex = Math.max(0, getArticleIndex(article));
+  if (article.category === "Tinnitus") {
+    return tinnitusArticleVisual(article, articleIndex);
+  }
   const pattern = getVisualPattern(articleIndex);
   const style = `--visual-cols: ${pattern.cols}; --visual-rows: ${pattern.rows}; --visual-bg: ${pattern.bg};`;
   const cells = pattern.cells
@@ -1544,7 +1930,8 @@ function blogIndex() {
     ["CutList", "cutlist"],
     ["QuiltFit", "quiltfit"],
     ["Stairs", "stairs"],
-    ["Tile", "tile"]
+    ["Tile", "tile"],
+    ["Tinnitus", "tinnitus"]
   ];
   const categoryLinks = categories
     .map(([label, id]) => {
@@ -1557,7 +1944,7 @@ function blogIndex() {
 <html lang="en">
 ${head({
     title: "Blogs | WoodCutTool",
-    description: "Research-style articles about CutList optimization, QuiltFit planning, stair stringer design, and tile layout workflows.",
+    description: "Research-style articles about CutList optimization, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
     canonical: "https://woodcuttool.com/blog/"
   })}
 <body>
@@ -1602,8 +1989,8 @@ ${head({
       <div class="blog-hero-copy">
         <p class="breadcrumb"><a href="/">Home</a> / Blogs</p>
         <p class="eyebrow">Industry research library</p>
-        <h1>Research notes for builders, makers, and layout-obsessed planners.</h1>
-        <p class="lead">Deeper articles on CutList optimization, QuiltFit planning, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
+        <h1>Research notes for builders, makers, wellness apps, and layout-obsessed planners.</h1>
+        <p class="lead">Deeper articles on CutList optimization, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
       </div>
       <div class="blog-console" aria-label="Blog topic map">
         <div class="console-top"><span></span><span></span><span></span></div>
@@ -1624,6 +2011,7 @@ ${head({
       <a href="#quiltfit">QuiltFit</a>
       <a href="#stairs">Stairs</a>
       <a href="#tile">Tile</a>
+      <a href="#tinnitus">Tinnitus</a>
     </section>
 
     <section class="blog-featured" aria-label="Featured blog articles" data-blog-featured>
@@ -1648,6 +2036,11 @@ ${head({
     <section class="blog-section" id="tile" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Tile</p><h2>Tile layout, waste, joints, and wet-area planning.</h2></div>
       <div class="blog-grid">${articles.filter((article) => article.category === "Tile").map(articleCard).join("\n        ")}</div>
+    </section>
+
+    <section class="blog-section" id="tinnitus" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">Tinnitus</p><h2>Sound masking, sleep sounds, privacy, and evidence-aware app positioning.</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === "Tinnitus").map(articleCard).join("\n        ")}</div>
     </section>
 
     <section class="blog-section" id="core-guides" data-blog-section>
