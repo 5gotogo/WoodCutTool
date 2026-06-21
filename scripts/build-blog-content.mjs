@@ -3,7 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260621-tinnitus-photo-fix";
+const version = "20260621-cadenza-blogs";
 const siteUrl = "https://woodcuttool.com";
 
 
@@ -835,6 +835,183 @@ articles.push(
 );
 
 articles.push(
+  {
+    slug: "best-metronome-app-daily-practice-cadenza",
+    category: "Cadenza",
+    title: "Best Metronome App For Daily Practice: Tempo, Tap Tempo, Accents, And Setlists",
+    description: "A practical high-SEO guide to using Cadenza as a daily metronome app for musicians who need steady tempo, tap tempo, accent control, tempo ramping, and private offline practice.",
+    kicker: "Metronome practice",
+    readTime: "16 min",
+    accent: "tile",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/8/80/Korg_TM-40_metronome.jpg",
+      alt: "Digital metronome and tuner used for music practice",
+      label: "Metronome and tuner"
+    },
+    sections: [
+      ["Why A Metronome App Still Matters", "The best metronome app is not only a ticking sound. It is a practice decision tool. A musician opens it when the passage feels rushed, when a teacher asks for a slower repeat, when a band needs the same tempo twice, or when a student wants proof that the scale stayed even. Cadenza is built for this exact routine: open the app, set the BPM, choose the meter, shape the accents, and start practicing without a login or cloud workspace. That matters because daily music practice is usually fragmented. Ten focused minutes before work, a warmup before rehearsal, a quick tempo check before recording, or a quiet evening session all benefit from a metronome that is fast enough to use before motivation disappears."],
+      ["Tempo Is Emotional Before It Is Numerical", "Musicians often talk about tempo as a number, but they experience it as control. A passage at 96 BPM may feel calm, while the same passage at 104 BPM may feel unstable. A rehearsal tempo can also carry pressure because everyone hears mistakes at the same time. Cadenza keeps the number visible and adjustable from 20 to 240 BPM, but it also gives musical names such as Largo, Andante, Allegro, Presto, and Prestissimo. Those names help a player connect the number to musical feeling. For SEO searches like practice metronome app, best metronome app for musicians, and rhythm practice app, this is the conversion point: the app should make tempo feel less abstract and more usable."],
+      ["Tap Tempo Helps Match Real Music", "A fixed BPM value is useful when a score gives a marking, but many practice situations start from listening. A guitarist may want to learn a riff from a recording. A drummer may need to match a rehearsal count-off. A singer may feel a phrase before knowing the tempo. Tap Tempo turns that physical pulse into a number. Cadenza lets the user tap the beat they hear and convert it into a BPM value, then keep practicing with the metronome. This is valuable because it bridges musical instinct and measurable repetition. Instead of guessing whether a song is near 112 or 118 BPM, the player can tap, save the value, and return to it later."],
+      ["Accents Turn Ticks Into Measures", "A basic click can keep time, but real music lives inside bars. Cadenza supports common time signatures including 2/4, 3/4, 4/4, 5/8, 6/8, 7/8, 9/8, 11/8, and 12/8. Beat dots show the shape of the bar, and each dot can cycle through strong, medium, weak, or silent accents. That makes the metronome useful for more than simple quarter notes. A student can practice the strong beat in 3/4, feel compound movement in 6/8, or work through odd meters without mentally forcing everything into 4/4. The benefit is low cognitive load: the meter is visible, the accents are intentional, and the musician can focus on sound."],
+      ["Tempo Ramp Builds Speed Without Panic", "Many musicians make the same mistake when learning a fast passage: they jump from comfortable to target tempo too quickly, then practice tension. Tempo ramping gives a better path. Cadenza lets the user choose a start BPM, end BPM, and number of bars for the ramp. That makes it useful for scales, bowing drills, picking patterns, double-tonguing, keyboard runs, percussion rudiments, or any passage that needs gradual speed. The point is not to chase a number. The point is to notice when timing, sound, or body tension changes as the tempo rises. A good metronome app helps the player find that boundary before bad habits become automatic."],
+      ["Setlists Keep Practice From Resetting Every Day", "A metronome is strongest when it remembers the context around the number. Cadenza setlists can store title, composer, BPM, time signature, key, and notes, then load the piece into the metronome. This turns a one-time tempo choice into a reusable practice record. For students, it means lesson assignments can stay organized. For band, choir, theater, or worship musicians, it means rehearsal tempos do not have to be rebuilt from memory. For solo practice, it makes progress more visible because the same piece can be revisited with the same settings."],
+      ["Offline Practice Is A Real Feature", "Many musicians practice in rooms where internet access is irrelevant or unreliable: basement studios, school practice rooms, backstage areas, churches, rehearsal halls, airplanes, and bedrooms. Cadenza is positioned around offline operation, no login, privacy-first design, on-device workflows, and no cloud upload of tuner audio, setlists, or practice history. This is not only a privacy claim; it is a usability claim. A metronome app should not need a network request before a warmup. A musician should be able to open it, count in, and work."],
+      ["How To Use Cadenza For A 20 Minute Practice Session", "Start with two minutes of slow tone or scale work at a comfortable BPM. Use clear accents so the bar shape is obvious. Move to five minutes of problem spots, starting below performance tempo and using tempo ramp only when the notes stay relaxed. Spend five minutes on rhythm isolation by clapping, tapping, or playing on one pitch with the same meter. Use Tap Tempo if the piece came from a recording. Finish by loading the setlist entry and running the piece at the target or rehearsal tempo. This simple workflow gives the metronome a job at every stage: stabilize, diagnose, build, and recall."],
+      ["The Bottom Line", "The best metronome app for daily practice is the one musicians actually open every day. It should be fast, readable, flexible, and private. Cadenza combines practical tempo controls, tap tempo, accent dots, tempo ramping, setlists, and offline design into a focused iPhone workflow. That makes it a strong fit for searches like metronome app, practice metronome, rhythm practice app, tap tempo app, offline metronome, and music practice companion. More importantly, it helps musicians turn scattered practice time into repeatable progress."]
+    ],
+    checklist: ["Choose a BPM that keeps the passage relaxed.", "Use time signatures and accents to make the bar shape clear.", "Use Tap Tempo when learning from a recording or rehearsal count-off.", "Use Tempo Ramp only after the slow version is clean.", "Save piece tempo, meter, key, and notes in a Cadenza setlist."],
+    deepDive: {
+      figureTitle: "Practice flow: from pulse to repeatable tempo",
+      figureCaption: "A useful metronome workflow starts with the pulse a musician feels, turns it into a stable BPM, then saves the tempo with the piece so practice can resume quickly.",
+      figureStats: [
+        ["20-240 BPM", "Cadenza tempo range"],
+        ["9 meters", "Common and odd time signatures"],
+        ["4 accent states", "Strong, medium, weak, silent"]
+      ],
+      comparisonTitle: "Metronome practice features that change real sessions",
+      comparisonColumns: ["Feature", "Best use", "Why it matters", "Cadenza workflow"],
+      comparisonRows: [
+        ["Large BPM display", "Music stand, piano bench, rehearsal room", "The player can check tempo without breaking posture", "Set 20-240 BPM and nudge one beat at a time"],
+        ["Tap Tempo", "Learning from recordings or matching a count-off", "Turns a felt pulse into a saved number", "Tap the beat, then practice against the measured BPM"],
+        ["Accent dots", "Meters, subdivision drills, and odd time", "Makes the bar shape audible and visible", "Tap dots to choose strong, medium, weak, or silent accents"],
+        ["Tempo Ramp", "Gradual speed building", "Finds the point where control starts to break", "Set start BPM, end BPM, and ramp length in bars"],
+        ["Setlists", "Lessons, rehearsals, and repeat pieces", "Keeps tempo decisions from disappearing", "Save title, composer, BPM, meter, key, and notes"]
+      ],
+      faqs: [
+        ["What is the best metronome app for daily practice?", "The best app is fast to open, easy to read, flexible with tempo and meter, and able to save practice context. Cadenza is designed around that daily workflow."],
+        ["Why use Tap Tempo instead of typing BPM?", "Tap Tempo is useful when the tempo comes from a recording, conductor, rehearsal count-off, or natural phrase feel rather than a printed marking."],
+        ["Do accent patterns matter?", "Yes. Accents help musicians hear the shape of the bar, which is especially useful in compound meters, odd meters, and rhythm studies."],
+        ["Is Tempo Ramp only for advanced players?", "No. Beginners can use it carefully to increase speed in small steps, as long as relaxed sound and accurate timing stay more important than the final number."],
+        ["Does Cadenza work offline?", "Yes. Cadenza is positioned around offline practice, no login, on-device workflows, and no cloud upload for core practice data."],
+        ["Can I use Cadenza for band or choir rehearsal?", "Yes. Setlists can store piece tempo, meter, key, composer, and notes, which is useful when rehearsal moves quickly."]
+      ],
+      sources: [
+        ["Cadenza app page", "/apps/cadenza-metronome-and-tuner/", "Internal product page describing metronome range, Tap Tempo, accents, Tempo Ramp, setlists, privacy, and offline operation."],
+        ["Microtiming and swing research", "https://arxiv.org/abs/1904.03442", "Research context for timing perception and the musical importance of deviations around a pulse."],
+        ["Wikimedia Commons: Korg TM-40 metronome image", "https://commons.wikimedia.org/wiki/File:Korg_TM-40_metronome.jpg", "CC0 image used to represent a real digital metronome and tuner practice setup."]
+      ]
+    }
+  },
+  {
+    slug: "guitar-tuner-app-cents-a4-reference-cadenza",
+    category: "Cadenza",
+    title: "Guitar Tuner App Guide: Cents, A4 Reference, Chromatic Tuning, And Drone Tones",
+    description: "A musician-friendly guide to using Cadenza as a guitar tuner app, chromatic tuner, A4 reference tool, and drone tone companion for cleaner intonation practice.",
+    kicker: "Tuning guide",
+    readTime: "17 min",
+    accent: "stairs",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/5/54/Telecaster_Thinline_type_guitar_with_pedalboard_%28SecretPreamp%2CMXR10BandEQ%2CSupa-Trem%2CPOG2%2CSP_Comp%2CTuner%2CBigSky%2CSeaMachine%2CGigaDelay%2CTimmyOverdrive%2CBroadcast%2CVolumPedal%29_-_The_Smith_Center%2C_Las_Vegas_%282017-04-29_10.28.27_piqsels.com_en%29.jpg",
+      alt: "Electric guitar and pedalboard with a chromatic tuner for practice",
+      label: "Guitar tuning workflow"
+    },
+    sections: [
+      ["A Tuner App Should Make Pitch Easier To Trust", "A good guitar tuner app does more than say sharp or flat. It gives the musician enough information to act confidently without turning tuning into a science project. Cadenza listens through the microphone and shows nearest note, frequency, and cents offset. That combination is useful because musicians often need different levels of detail. A beginner may only need to know whether the string is flat. A teacher may want to explain how far the note is from the target. A violinist, vocalist, brass player, or guitarist may want to use a drone tone and tune by ear. The app should support all of those modes without forcing extra setup."],
+      ["What Cents Mean In Tuning", "The cent is a small unit used to describe pitch differences. In the common equal-tempered system, one semitone is divided into 100 cents. That makes cents useful because musicians can talk about pitch error without saying a frequency ratio every time. If a tuner shows a note at +12 cents, it is sharper than the target by a little more than one tenth of a semitone. If it shows -8 cents, it is slightly flat. For SEO searches like cents tuner app, guitar tuner cents, chromatic tuner app, and intonation practice app, this is the practical takeaway: cents are a readable way to measure small tuning differences."],
+      ["Why A4 Reference Matters", "A4 is commonly used as a tuning reference, and 440 Hz is widely recognized as a standard concert pitch. Real musical contexts vary, however. Some ensembles, teachers, recordings, or instruments may use references such as 442 or 443 Hz, while some users prefer 432 Hz for personal practice. Cadenza includes A4 choices at 432, 440, 441, 442, 443, and 444 Hz. The benefit is not that one reference is universally better. The benefit is that the app can match the musical situation. A tuner is only useful if its target agrees with the room, ensemble, teacher, or recording."],
+      ["Chromatic Mode Keeps The App Useful Beyond Guitar", "Instrument presets are convenient, but musicians eventually need a chromatic tuner. Cadenza includes chromatic mode for any pitch the microphone hears. That matters for voice, winds, brass, strings, percussion references, and general music practice. A guitarist can tune standard strings quickly, then switch to chromatic mode for alternate tunings or checking a melody note. A cello, violin, bass guitar, or ukulele player can work from a familiar preset but still use chromatic tuning when needed. This makes Cadenza more than a single-instrument utility."],
+      ["Presets Reduce Mental Load", "Cadenza includes presets for guitar, bass guitar, ukulele, violin, and cello. Presets matter because real practice already has enough friction. A guitarist wants E, A, D, G, B, E. A violinist wants G, D, A, E. A bass guitarist wants E, A, D, G. A cellist wants C, G, D, A. A preset lets the player think in familiar strings instead of scanning every possible note. That speed matters before lessons, rehearsals, recordings, and quick tune-ups between songs."],
+      ["Drone Tones Train The Ear", "A visual tuner is excellent for calibration, but musicians also need listening skill. Drone tones play a sustained reference note so the player can hear pitch relationships, tune intervals, practice long tones, and stabilize intonation without staring at a needle. This is especially useful for bowed strings, wind instruments, voice, brass, and any player working on tone center. A drone can make intonation more musical because the player hears how the note sits against a reference rather than only correcting a display."],
+      ["Why The Microphone Environment Matters", "Any microphone-based tuner can struggle when the room is noisy, when another instrument is sounding, when the note has strong overtones, or when the player attacks the string too aggressively. A practical tuning workflow is simple: mute other strings, play one steady note, let the pitch settle, and adjust slowly. For guitar and bass, tune up to the target rather than down when possible, because string tension and tuning machines often settle more predictably that way. For bowed strings and voice, sustain the tone long enough for the tuner to identify the center."],
+      ["Private On-Device Tuning Is A Strong Product Promise", "Tuning can feel ordinary, but audio privacy still matters. Cadenza is designed around offline use, no login, on-device workflows, and no cloud upload of tuner audio, setlists, or practice logs. That means the app can be useful in a lesson room, rehearsal space, school practice room, hotel room, or backstage area without becoming a cloud audio product. A musician searching for private tuner app, offline tuner app, or iPhone tuner app may not want extra accounts, social features, or uploads. They want the pitch, quickly."],
+      ["A Simple Cadenza Tuning Routine", "Open the tuner before practice, choose the relevant preset or chromatic mode, confirm the A4 reference, and tune each string or note slowly. Use the cents display to get close, then use a drone tone to check how the pitch feels against a sustained reference. If you are preparing for ensemble work, match the A4 setting used by that group. If you are recording, tune again after warmup because strings, reeds, brass, and voice can shift as the session begins. Save the practice context in Cadenza if the piece also needs a BPM, meter, or notes."],
+      ["The Bottom Line", "Cadenza is a strong fit for musicians who want one iPhone app for metronome, guitar tuner, chromatic tuner, A4 reference, drone tones, and practice context. The high-conversion promise is simple: tune quickly, practice privately, and keep moving. For SEO, this article naturally targets guitar tuner app, chromatic tuner app, cents tuner, A4 440 tuner, violin tuner app, cello tuner app, ukulele tuner app, bass tuner app, drone tone app, and offline tuner app."]
+    ],
+    checklist: ["Choose the right instrument preset or chromatic mode.", "Confirm the A4 reference before ensemble or recording work.", "Use cents to understand small pitch differences.", "Play one clear sustained note at a time.", "Use drone tones to train listening, not only visual correction."],
+    deepDive: {
+      figureTitle: "Tuning stack: reference, note, cents, ear",
+      figureCaption: "A practical tuning workflow starts with the A4 reference, identifies the nearest note, checks cents offset, then uses listening to settle the pitch musically.",
+      figureStats: [
+        ["100 cents", "One equal-tempered semitone"],
+        ["6 A4 choices", "432 through 444 Hz"],
+        ["5 presets", "Guitar, bass, ukulele, violin, cello"]
+      ],
+      comparisonTitle: "Tuner modes and when to use them",
+      comparisonColumns: ["Mode", "Best use", "Main benefit", "Watch out for"],
+      comparisonRows: [
+        ["Guitar preset", "Standard guitar tune-ups", "Shows familiar string targets quickly", "Alternate tunings may need chromatic mode"],
+        ["Bass guitar preset", "Quick low-string calibration", "Reduces note scanning for common bass strings", "Low notes need a clear sustained attack"],
+        ["Ukulele preset", "Fast practice setup", "Matches familiar ukulele string targets", "Room noise can confuse short plucked notes"],
+        ["Violin or cello preset", "String-family tuning", "Supports familiar open-string references", "Bow pressure and finger contact can move pitch"],
+        ["Chromatic mode", "Voice, winds, brass, alternate tunings, general checking", "Works across the full musical note space", "The player must know the target note"],
+        ["Drone tones", "Ear training and intonation practice", "Develops pitch center by listening", "Requires patience and a quiet enough room"]
+      ],
+      faqs: [
+        ["What does cents mean on a tuner?", "Cents measure small pitch differences. In equal temperament, 100 cents equals one semitone, so +10 cents means slightly sharp and -10 cents means slightly flat."],
+        ["Is 440 Hz always the right A4 reference?", "440 Hz is widely used, but some ensembles and contexts use other references. Cadenza supports 432, 440, 441, 442, 443, and 444 Hz so users can match the situation."],
+        ["Can I use Cadenza as a guitar tuner app?", "Yes. Cadenza includes instrument presets such as guitar and bass guitar, plus chromatic tuning for broader pitch checking."],
+        ["Why use drone tones if I already have a tuner?", "A visual tuner helps calibrate pitch, while drone tones help train the ear to hear intervals and pitch center against a sustained reference."],
+        ["Does microphone tuning work in noisy rooms?", "It can be harder. Play one clear note, mute nearby strings, reduce background noise, and let the pitch settle before adjusting."],
+        ["Does Cadenza upload tuner audio?", "Cadenza is positioned around on-device operation and no cloud upload for tuner audio, metronome use, setlists, or practice logs."]
+      ],
+      sources: [
+        ["Cadenza app page", "/apps/cadenza-metronome-and-tuner/", "Internal product page describing tuner, nearest note, frequency, cents, A4 references, presets, drone tones, and privacy."],
+        ["A440 pitch standard", "https://en.wikipedia.org/wiki/A440_(pitch_standard)", "Reference context for A4 at 440 Hz as a common tuning standard."],
+        ["Cent in music", "https://en.wikipedia.org/wiki/Cent_(music)", "Explains cents as a logarithmic unit used for small musical intervals."],
+        ["Electronic tuner", "https://en.wikipedia.org/wiki/Electronic_tuner", "General context on electronic tuners, frequency detection, and tuning displays."],
+        ["Wikimedia Commons: guitar and pedalboard image", "https://commons.wikimedia.org/wiki/File:Telecaster_Thinline_type_guitar_with_pedalboard_(SecretPreamp,MXR10BandEQ,Supa-Trem,POG2,SP_Comp,Tuner,BigSky,SeaMachine,GigaDelay,TimmyOverdrive,Broadcast,VolumPedal)_-_The_Smith_Center,_Las_Vegas_(2017-04-29_10.28.27_piqsels.com_en).jpg", "CC0 image used to represent guitar tuning and real practice gear."]
+      ]
+    }
+  },
+  {
+    slug: "music-practice-tracker-setlist-metronome-tuner-cadenza",
+    category: "Cadenza",
+    title: "Music Practice Tracker Workflow: Setlists, Tempo Notes, Tuning, And Daily Repetition",
+    description: "A high-intent guide to using Cadenza as a private music practice tracker with setlists, metronome settings, tuner context, tempo notes, and offline rehearsal memory.",
+    kicker: "Practice workflow",
+    readTime: "18 min",
+    accent: "quiltfit",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/9/95/Practice_Keyboard_MET_206990.jpg",
+      alt: "Practice keyboard representing daily music practice and repetition",
+      label: "Daily practice memory"
+    },
+    sections: [
+      ["Practice Fails When Context Disappears", "Many musicians do not fail because they lack motivation. They lose time because yesterday's context disappears. What tempo was the etude last week? Which measure needed slow work? Was the piece in 6/8 or 12/8 for rehearsal? Which key did the singer prefer? Did the teacher ask for a slower ramp or cleaner accents? A music practice tracker is valuable when it keeps those decisions close to the metronome and tuner. Cadenza is designed as a focused practice companion rather than a heavy project management system, which makes it useful for daily repetition."],
+      ["Setlists Are More Than Performance Lists", "A setlist can be a concert order, but in practice it is also a memory structure. Cadenza lets users save title, composer, BPM, time signature, key, and notes. That makes each piece easier to restart. A violin student can save an etude tempo and key. A guitarist can save a song BPM and tuning reminder. A choir member can save rehearsal notes. A drummer can save odd meter practice settings. A pianist can save slow tempo targets for separate sections. The value is not paperwork. The value is reducing the time between opening the app and doing the next useful repetition."],
+      ["Tempo Notes Make Progress Visible", "Progress in music practice is often invisible because it happens in tiny increments. A passage that was shaky at 72 BPM becomes reliable at 78 BPM, then starts to fall apart at 84 BPM. If the musician records the working tempo, they know where to start tomorrow. Cadenza's setlist and metronome workflow supports that habit by keeping BPM and meter tied to the piece. The app does not need to turn practice into a spreadsheet. It simply needs to preserve the tempo decision that would otherwise be forgotten."],
+      ["A Tuner Belongs In The Same Practice Flow", "Tuning is often treated as a separate task, but it changes practice quality. If the instrument is off, the player may spend time adapting to a problem instead of training the ear. Cadenza combines metronome and tuner so the session can begin with pitch, then move directly into rhythm. The tuner shows nearest note, frequency, and cents offset, while chromatic mode, instrument presets, A4 reference choices, and drone tones support different instruments and contexts. For search intent like metronome tuner app, music practice app, and practice companion app, that all-in-one flow matters."],
+      ["Offline Workflows Fit Real Practice Spaces", "A practice tracker should not depend on a login screen. Musicians practice in classrooms, churches, backstage corners, orchestra rooms, apartments, studios, and school halls where connectivity may be poor or irrelevant. Cadenza emphasizes offline operation, no login, privacy-first design, on-device workflows, and no cloud upload. This makes the app feel more like a tool than a platform. For users searching offline music practice app, private practice tracker, or no login metronome tuner, that promise is a conversion advantage."],
+      ["How To Structure A Piece In Cadenza", "Create a setlist entry for the piece with title, composer, key, target BPM, time signature, and short notes. Add one sentence about the current practice problem, such as clean shifts in bar 18, relaxed right hand at 92 BPM, or tune third scale degree against drone. Start each session by loading the piece, then decide whether today's work is rhythm, tuning, sound, or memory. The app becomes a compact rehearsal notebook linked to the actual tools used during practice."],
+      ["Use Cases Across Musicians", "A guitar player can use Cadenza for tuning, alternate tempo notes, riff speed building, and setlist preparation. A violin or cello player can combine drone tones with slow metronome work for intonation and bow control. A singer can use chromatic tuning references and tempo notes for rehearsal pieces. A drummer can work on odd meters and accent patterns. A pianist can save tempo targets for scales, études, repertoire, and sight-reading sessions. A teacher can recommend a simple workflow without requiring students to create accounts."],
+      ["Keep Notes Short Enough To Reuse", "The best practice notes are short, specific, and actionable. Long journals can be useful, but they often become too heavy for daily use. In a Cadenza setlist entry, a good note might say: start at 76, ramp to 92 over 16 bars; strong beat only in 7/8; check A string with drone before piece; do not speed up in bridge. These notes are practical because they point to the next action. The app's role is to keep them near the metronome and tuner, not bury them in a separate document."],
+      ["Daily Repetition Needs Low Friction", "High-quality practice is not glamorous. It is repeatable. The more steps it takes to resume a piece, the less likely a musician is to do the right drill. Cadenza reduces friction by combining tempo, meter, accents, tuner, drone tones, and setlist memory in one offline iPhone app. That can support beginners building routine, advanced players polishing details, and working musicians who need reliable rehearsal notes on the move."],
+      ["The Bottom Line", "A music practice tracker should help musicians remember what to do next. Cadenza supports that by tying setlists, BPM, time signature, key, notes, metronome controls, tuner readings, A4 references, and drone tones into one private offline workflow. For SEO, this article targets music practice tracker, practice log app for musicians, setlist app, metronome tuner app, offline music practice app, private music practice app, tempo notes app, and rehearsal tracker."]
+    ],
+    checklist: ["Create a setlist entry for each active piece.", "Save BPM, meter, key, composer, and one useful note.", "Begin practice with tuning or drone tones when pitch matters.", "Use the metronome to define today's working tempo.", "Update notes only when they change the next session."],
+    deepDive: {
+      figureTitle: "Practice memory loop: tune, count, repeat, save",
+      figureCaption: "Cadenza's practice value comes from keeping the next repetition connected to the pitch, tempo, meter, key, and note context from the previous session.",
+      figureStats: [
+        ["1 entry", "Piece, tempo, meter, key, notes"],
+        ["2 tools", "Metronome plus tuner"],
+        ["0 login", "Private on-device workflow"]
+      ],
+      comparisonTitle: "Practice tracking methods compared",
+      comparisonColumns: ["Method", "Best use", "What breaks down", "Cadenza advantage"],
+      comparisonRows: [
+        ["Memory only", "Very short casual practice", "Tempo, meter, and notes disappear between sessions", "Setlist entries preserve the next action"],
+        ["Paper notebook", "Detailed lesson notes and reflection", "Separated from tuner and metronome during practice", "Settings can live beside the practice tools"],
+        ["Spreadsheet", "Long-term tracking and data analysis", "Too heavy for quick rehearsal restarts", "Fast enough for daily use"],
+        ["General notes app", "Flexible writing", "No direct link to BPM, meter, tuning, or drone workflow", "Piece context loads into music tools"],
+        ["Cadenza setlist", "Practical rehearsal memory", "Not a full studio management platform", "Private, focused, offline, and musician-specific"]
+      ],
+      faqs: [
+        ["What should I track in a music practice app?", "Track the next useful action: piece title, BPM, time signature, key, composer, tuning context, and one short note about what needs work."],
+        ["Is Cadenza a practice log app?", "Cadenza is positioned as a metronome, tuner, setlist, and practice companion. It supports practical rehearsal memory without requiring a login or cloud workspace."],
+        ["Why combine a metronome and tuner?", "Pitch and rhythm are both part of daily practice. Keeping them in one app reduces setup time and keeps the session moving."],
+        ["Can setlists help solo practice?", "Yes. A setlist can be a personal queue of active pieces, études, scales, warmups, or repertoire with saved tempo and notes."],
+        ["Should practice notes be long?", "Usually no. Short notes are easier to reuse during a session. Save the detail that tells you what to do next."],
+        ["Does Cadenza require an account?", "Cadenza is positioned around no login, offline operation, and on-device workflows for core practice data."]
+      ],
+      sources: [
+        ["Cadenza app page", "/apps/cadenza-metronome-and-tuner/", "Internal product page describing setlists, metronome, tuner, privacy, offline use, and practice companion positioning."],
+        ["A440 pitch standard", "https://en.wikipedia.org/wiki/A440_(pitch_standard)", "Reference context for A4 calibration used in tuning workflows."],
+        ["Musical practice and cognitive aging", "https://arxiv.org/abs/1502.02804", "Academic context showing music practice as a structured activity studied in human performance research."],
+        ["Wikimedia Commons: Practice Keyboard image", "https://commons.wikimedia.org/wiki/File:Practice_Keyboard_MET_206990.jpg", "CC0 image used to represent repeated music practice and training tools."]
+      ]
+    }
+  },
   {
     slug: "tinnitus-relief-app-sound-masking-night-guide",
     category: "Tinnitus",
@@ -1723,6 +1900,15 @@ function tinnitusArticleVisual(article, articleIndex) {
         </figure>`;
 }
 
+function articlePhotoVisual(article, articleIndex) {
+  const number = String(articleIndex + 1).padStart(2, "0");
+  const image = article.image;
+  return `<figure class="blog-article-visual blog-photo-visual visual-${number}">
+          <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt || article.title)}" loading="lazy" decoding="async">
+          <figcaption>${escapeHtml(image.label || article.category)}</figcaption>
+        </figure>`;
+}
+
 function tinnitusDeepModel(article) {
   const variant = tinnitusVisualVariant(article);
   const models = {
@@ -1887,6 +2073,9 @@ function getArticleIndex(article) {
 
 function articleVisual(article) {
   const articleIndex = Math.max(0, getArticleIndex(article));
+  if (article.image) {
+    return articlePhotoVisual(article, articleIndex);
+  }
   if (article.category === "Tinnitus") {
     return tinnitusArticleVisual(article, articleIndex);
   }
@@ -1931,6 +2120,7 @@ function blogIndex() {
     ["QuiltFit", "quiltfit"],
     ["Stairs", "stairs"],
     ["Tile", "tile"],
+    ["Cadenza", "cadenza"],
     ["Tinnitus", "tinnitus"]
   ];
   const categoryLinks = categories
@@ -1944,7 +2134,7 @@ function blogIndex() {
 <html lang="en">
 ${head({
     title: "Blogs | WoodCutTool",
-    description: "Research-style articles about CutList optimization, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
+    description: "Research-style articles about CutList optimization, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
     canonical: "https://woodcuttool.com/blog/"
   })}
 <body>
@@ -1964,7 +2154,7 @@ ${head({
           <div class="blog-directory-content">
           <label class="blog-search">
             <span>Search the library</span>
-            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search CutList, QuiltFit, stairs, tile...">
+            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search CutList, Cadenza, QuiltFit, stairs...">
           </label>
           <nav class="blog-directory-nav" aria-label="Blog topic shortcuts">
             ${categoryLinks}
@@ -1989,8 +2179,8 @@ ${head({
       <div class="blog-hero-copy">
         <p class="breadcrumb"><a href="/">Home</a> / Blogs</p>
         <p class="eyebrow">Industry research library</p>
-        <h1>Research notes for builders, makers, wellness apps, and layout-obsessed planners.</h1>
-        <p class="lead">Deeper articles on CutList optimization, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
+        <h1>Research notes for builders, makers, musicians, wellness apps, and layout-obsessed planners.</h1>
+        <p class="lead">Deeper articles on CutList optimization, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
       </div>
       <div class="blog-console" aria-label="Blog topic map">
         <div class="console-top"><span></span><span></span><span></span></div>
@@ -2011,6 +2201,7 @@ ${head({
       <a href="#quiltfit">QuiltFit</a>
       <a href="#stairs">Stairs</a>
       <a href="#tile">Tile</a>
+      <a href="#cadenza">Cadenza</a>
       <a href="#tinnitus">Tinnitus</a>
     </section>
 
@@ -2036,6 +2227,11 @@ ${head({
     <section class="blog-section" id="tile" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Tile</p><h2>Tile layout, waste, joints, and wet-area planning.</h2></div>
       <div class="blog-grid">${articles.filter((article) => article.category === "Tile").map(articleCard).join("\n        ")}</div>
+    </section>
+
+    <section class="blog-section" id="cadenza" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">Cadenza</p><h2>Metronome, tuner, rhythm, intonation, and private music practice workflows.</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === "Cadenza").map(articleCard).join("\n        ")}</div>
     </section>
 
     <section class="blog-section" id="tinnitus" data-blog-section>
@@ -2155,7 +2351,10 @@ const zhArticleTitles = {
   "quiltfit-half-square-triangle-throw": "用 QuiltFit 规划半方三角盖毯",
   "quiltfit-quilt-retreat-prep": "用 QuiltFit 准备拼布营项目",
   "quiltfit-restart-unfinished-quilt-project": "用 QuiltFit 重启未完成的拼布项目",
-  "quiltfit-fabric-shop-decision-workflow": "在布料店用 QuiltFit 做购买决策"
+  "quiltfit-fabric-shop-decision-workflow": "在布料店用 QuiltFit 做购买决策",
+  "best-metronome-app-daily-practice-cadenza": "日常练习最佳节拍器 App：速度、Tap Tempo、重音和曲目单",
+  "guitar-tuner-app-cents-a4-reference-cadenza": "吉他调音器 App 指南：音分、A4 参考音、半音阶调音和 Drone",
+  "music-practice-tracker-setlist-metronome-tuner-cadenza": "音乐练习追踪流程：曲目单、速度笔记、调音和日常重复"
 };
 
 const zhCategory = {
@@ -2163,6 +2362,8 @@ const zhCategory = {
   QuiltFit: "QuiltFit",
   Stairs: "楼梯",
   Tile: "瓷砖",
+  Cadenza: "Cadenza",
+  Tinnitus: "耳鸣",
   "Classic guide": "经典指南"
 };
 
@@ -2206,6 +2407,16 @@ const zhSectionTemplates = {
       "正式铺贴前确认美缝宽度、过门石、伸缩缝、排水坡度和关键对线。排版规划越早，现场返工越少。"
     ],
     checklist: ["确定视觉中心和主基准线。", "检查边缘切片宽度。", "按图案增加损耗预留。", "铺贴前干铺关键区域。"]
+  },
+  Cadenza: {
+    headings: ["先保存练习目标", "用节拍器稳定节奏", "用调音器确认音准", "把设置留给下一次"],
+    bodies: [
+      "先把曲名、作曲者、调性、目标 BPM、拍号和一句练习笔记保存下来。Cadenza 的价值不只是发出节拍声，而是让下一次练习能马上接上。",
+      "用清晰的 BPM、Tap Tempo、拍号和重音点建立稳定节奏。对日常练习来说，慢速准确比快速硬冲更有价值。",
+      "练习前用调音器检查最近音名、频率和音分偏差，需要时选择 A4 参考音或使用 Drone 音训练听感。",
+      "结束时只更新真正影响下一次练习的信息，比如新的工作速度、容易抢拍的小节、需要对 drone 检查的音程。"
+    ],
+    checklist: ["保存曲目和 BPM。", "设置拍号与重音。", "确认 A4 参考音和调音状态。", "留下下一次练习要做的短笔记。"]
   }
 };
 
@@ -2222,6 +2433,7 @@ function zhKicker(article) {
   if (article.category === "QuiltFit") return "拼布规划";
   if (article.category === "Stairs") return "楼梯设计";
   if (article.category === "Tile") return "瓷砖排版";
+  if (article.category === "Cadenza") return "音乐练习";
   return "指南";
 }
 
@@ -2237,6 +2449,9 @@ function zhDescription(article) {
   }
   if (article.category === "Tile") {
     return `围绕“${zhTitle(article)}”的瓷砖排版研究，帮助在施工前判断视觉基准、损耗、切割和关键节点。`;
+  }
+  if (article.category === "Cadenza") {
+    return `围绕“${zhTitle(article)}”的音乐练习流程，帮助演奏者把节拍器、调音器、曲目单、速度笔记和离线隐私放在同一个练习工具里。`;
   }
   return article.description;
 }
