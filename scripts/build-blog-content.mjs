@@ -3,11 +3,112 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260620-i18n-nl";
+const version = "20260621-deep-blogs";
 const siteUrl = "https://woodcuttool.com";
 
 
 const articles = [
+  {
+    slug: "plywood-waste-cost-benchmark-manual-vs-optimizer",
+    category: "CutList",
+    title: "Plywood Waste Cost Benchmark: Manual Layout vs CutList Optimizer",
+    description: "A data-backed field guide for measuring plywood waste, comparing manual planning against optimized layouts, and deciding when one saved sheet pays for the tool.",
+    kicker: "Waste benchmark",
+    readTime: "12 min",
+    accent: "cutlist",
+    sections: [
+      ["Waste Is A Buying Decision Before It Is A Scrap Problem", "A plywood offcut does not become expensive only when it reaches the trash bin. The cost is committed earlier, when the project asks for one more full 4 x 8 sheet because the parts were grouped poorly, the grain rule was forgotten, or the kerf was not modeled. EPA frames source reduction as the highest-priority waste strategy because it prevents waste before disposal decisions exist; sheet optimization is the same idea at shop scale."],
+      ["The Benchmark Should Measure Sheets, Not Just Percent Waste", "Waste percentage is useful, but sheet count is what the builder pays for. A layout that drops waste from 22% to 15% but still requires the same number of sheets may matter less than a layout that keeps waste at 18% while moving the job from four sheets to three. The practical benchmark is therefore: sheets purchased, useful offcuts retained, kerf included, and cut sequence still sane for the saw."],
+      ["A 4 x 8 Sheet Gives You 32 Square Feet Before Reality Enters", "A nominal 4 x 8 panel contains 32 square feet of area. Real projects subtract trim cuts, saw kerf, defects, grain-locked panels, orientation rules, and offcuts too small to save. That means a pure area total is only a lower bound. If parts add up to 29 square feet, the project may still need two sheets because rectangles have to fit physically, not just arithmetically."],
+      ["Why Manual Layout Usually Breaks On Repeated Parts", "Manual layouts are strongest when there are only a few large rectangles. They weaken when the list includes repeated shelves, mirrored cabinet sides, backs, stretchers, toe kicks, and narrow fillers. The maker starts optimizing locally: fit these shelves here, put the backs there, save that strip. The whole sheet may still be inefficient because early choices block better later placements."],
+      ["How To Run A Fair Shop Benchmark", "Use the same input list for every method. Include sheet size, material type, quantity, grain direction, kerf, and minimum useful offcut size. Record the first manual plan, a spreadsheet plan, and a CutList layout. Then compare total sheets, remaining area, offcut quality, and whether a real person could follow the cut order without creating fragile strips too early."],
+      ["What A 30% Waste Reduction Really Means", "If a project originally wastes 30% of three sheets, the scrap area is 28.8 square feet. Reducing waste by a third brings that scrap to 19.2 square feet, which is 9.6 square feet recovered. That may not always eliminate a whole sheet, but it can create a usable offcut inventory or avoid the extra sheet on the next job. This is why the benchmark must track offcut dimensions, not only a single waste percentage."],
+      ["The CutList Advantage Is Review Speed", "The strongest reason to use an optimizer is not that it magically knows the project. It is that it lets the builder test alternatives quickly: rotate non-visible shelves, lock visible grain panels, split backs into a cheaper material group, or adjust a cabinet depth by half an inch. The time savings come from trying those versions before buying material."],
+      ["When Optimization Should Lose To Shop Reality", "A lower-waste layout is not automatically better. If it creates unsafe narrow rips, forces too many panel flips, loses grain continuity, or leaves offcuts nobody will store, the shop should choose the slightly higher-waste plan. The benchmark is meant to support judgment, not replace it."]
+    ],
+    checklist: ["Benchmark by sheet count, useful offcuts, and cut order.", "Use the same kerf and grain rules in every comparison.", "Separate visible plywood from hidden utility panels.", "Treat a saved full sheet as the clearest ROI event.", "Reject layouts that are efficient but awkward or unsafe."],
+    deepDive: {
+      figureTitle: "Visual benchmark: where waste reduction appears",
+      figureCaption: "The goal is not just smaller scraps. The goal is to turn random leftover shapes into fewer purchased sheets or offcuts large enough to reuse.",
+      figureStats: [
+        ["32 sq ft", "Nominal area in one 4 x 8 sheet"],
+        ["1/8 in", "Typical benchmark kerf setting"],
+        ["3 checks", "Sheet count, waste percent, usable offcuts"]
+      ],
+      comparisonTitle: "Manual layout vs spreadsheet vs optimizer",
+      comparisonColumns: ["Planning method", "Best use", "Blind spot", "Benchmark signal"],
+      comparisonRows: [
+        ["Manual sketch", "Fast first pass for simple projects", "Hard to revise after many parts are placed", "Time rises sharply with repeated parts"],
+        ["Spreadsheet", "Accurate quantities and pricing formulas", "Cannot see physical fit, kerf paths, or grain conflicts", "Area total looks possible but sheet layout fails"],
+        ["Generic calculator", "Quick one-off area or board estimates", "Usually weak on offcuts, cut order, and saved projects", "Gives a count but not enough review detail"],
+        ["CutList optimizer", "Sheet layout review with kerf, rotation, and project records", "Still needs human judgment for shop handling", "Fewer sheets or cleaner reusable offcuts"]
+      ],
+      faqs: [
+        ["Is 30% plywood waste reduction realistic?", "It can be realistic on messy manual layouts, repeated cabinet parts, or projects where rotation and batching were not tested. It is not guaranteed on every job; a layout that is already tight may only improve by a few percentage points."],
+        ["Should I optimize for waste percent or sheet count?", "Use both, but prioritize sheet count when buying material. Waste percent explains efficiency; sheet count decides whether you purchase another panel."],
+        ["Does kerf really change the result?", "Yes. Ten cuts at 1/8 inch consume 1.25 inches of material before trim cuts. On a tight layout, that can decide whether the last part fits."],
+        ["Why does grain direction reduce optimization freedom?", "Visible faces often cannot rotate without looking wrong. Locking grain direction narrows the optimizer's choices, but it protects the finished project."],
+        ["What offcuts should I save?", "Save offcuts only above a useful shop threshold, such as pieces large enough for shelves, drawer parts, templates, or jigs. Label material, thickness, and size."],
+        ["How often should I re-run the layout?", "Re-run after changing cabinet depth, material group, kerf, rotation permissions, or quantity. Those variables change the layout more than small cosmetic edits."]
+      ],
+      sources: [
+        ["US EPA: Sustainable Management of Construction and Demolition Materials", "https://www.epa.gov/smm/sustainable-management-construction-and-demolition-materials", "EPA reports 600 million tons of C&D debris generated in 2018 and identifies source reduction as a priority strategy."],
+        ["2D cutting stock research", "https://arxiv.org/abs/2604.01732", "Recent research describes rectangular sheet cutting as a combinatorial optimization problem where item assignment, rotation, and non-overlap constraints interact."],
+        ["WoodCutTool 4x8 template", "/templates/4x8-plywood-sheet/", "Internal template for translating benchmark ideas into a practical 4 x 8 cutting plan."]
+      ]
+    }
+  },
+  {
+    slug: "best-plywood-cutting-workflow-2026",
+    category: "CutList",
+    title: "Best Plywood Cutting Workflow In 2026: Calculator, Spreadsheet, Optimizer, or CNC?",
+    description: "A practical comparison of plywood planning workflows for beginners, cabinet makers, remodelers, and small shops choosing between manual planning, spreadsheets, CutList, and CNC nesting.",
+    kicker: "Workflow comparison",
+    readTime: "13 min",
+    accent: "cutlist",
+    sections: [
+      ["The Best Tool Depends On The Decision You Are Making", "A beginner asking whether a bookcase fits on one sheet does not need the same system as a cabinet shop batching prefinished plywood. The best plywood cutting workflow is the one that answers the next expensive question: how many sheets to buy, whether the parts physically fit, whether the grain is acceptable, and whether the plan can be followed at the saw."],
+      ["Manual Planning Still Has A Place", "A pencil sketch is useful at the concept stage. It forces the builder to think about finished size, joinery, visible faces, and assembly order. But manual planning becomes fragile when quantities repeat or when small changes need to be tested. It is easy to create a plan that looks organized yet forgets kerf, backs, fillers, or mirrored parts."],
+      ["Spreadsheets Are Estimators, Not Sheet Layouts", "A spreadsheet is excellent for box math, cost totals, and repeatable formulas. It can tell you that a project contains 18 shelves, 12 sides, and six backs. It cannot reliably prove that those rectangles fit on a set of sheets with blade kerf, rotation rules, and usable offcuts. Use spreadsheets to produce clean part lists; use a layout tool to review physical fit."],
+      ["A Browser Calculator Is Best For Fast Feasibility", "An online plywood calculator is the fastest way to test a rough idea. It is ideal when you want to know whether a shelf project is likely one sheet or two, or whether a design change reduces waste. The limitation is persistence: serious projects eventually need saved versions, local records, export, or a mobile workflow in the shop."],
+      ["A CutList Optimizer Is The Best Middle Layer For Most Builders", "Most woodworkers do not need a full CNC nesting pipeline, but they do need more than area math. CutList sits in the middle: it turns part dimensions into visual sheets, includes kerf and rotation, supports saved project records, and gives the builder something to review before material is purchased. That makes it useful for both beginners and small professional workflows."],
+      ["CNC Nesting Is Powerful, But It Changes The Whole Process", "CNC software is best when the output is machine-ready geometry and production repeatability matters. It can handle complex parts, toolpaths, tabs, and machine constraints. But it also requires clean CAD data, machine setup, hold-down planning, tooling knowledge, and a different error model. For many sheet-good projects cut with a track saw or table saw, a visual rectangular optimizer is the more practical step."],
+      ["The 2026 Workflow: Estimate, Optimize, Review, Then Cut", "The modern plywood workflow is not one tool. Start with the design, calculate rough material, optimize the actual part list, review offcuts and cut order, then cut. EPA's C&D guidance is a reminder that preventing excess material is better than managing waste later. In a small shop, that prevention happens during the planning workflow."],
+      ["How To Choose Without Overbuying Software", "If you build once a year, use a browser calculator and print the layout. If you build monthly, use CutList so saved projects and revisions do not disappear. If you produce batches for sale, connect estimating, optimization, labels, and records. If a CNC machine is doing the cutting, use CNC-native nesting after the design is finalized."]
+    ],
+    checklist: ["Use manual sketches for concept design only.", "Use spreadsheets for quantities, formulas, and cost assumptions.", "Use a browser calculator for quick feasibility checks.", "Use CutList for saved visual sheet layouts and shop review.", "Use CNC nesting when the output must become machine-ready toolpaths."],
+    deepDive: {
+      figureTitle: "Workflow map: from idea to cut-ready sheet",
+      figureCaption: "A strong workflow does not force every project into the heaviest tool. It moves from rough intent to physical layout only when the part list is clear enough to optimize.",
+      figureStats: [
+        ["Manual", "Best for concept constraints"],
+        ["CutList", "Best for visual sheet review"],
+        ["CNC", "Best for machine-ready production"]
+      ],
+      comparisonTitle: "2026 plywood planning workflow comparison",
+      comparisonColumns: ["Workflow", "Best for", "What it misses", "Use CutList when"],
+      comparisonRows: [
+        ["Manual sketch", "One-off rough planning and early design thinking", "Kerf, repeated quantities, fast revisions, and audit trail", "The sketch turns into a shopping decision"],
+        ["Spreadsheet", "Cabinet math, pricing, formulas, and repeatable part lists", "Spatial fit on real sheets and visual offcut quality", "The spreadsheet has a clean parts list ready to test"],
+        ["Browser calculator", "Quick plywood feasibility checks without login", "Long-term records, project history, and detailed mobile workflow", "The rough estimate becomes a real build"],
+        ["CutList app", "Saved layouts, kerf-aware planning, visual review, and PDF/shop records", "Machine toolpath generation for CNC routers", "You cut with a saw but need production discipline"],
+        ["CNC nesting", "Machine cutting, complex shapes, tabs, toolpaths, and repeat production", "Simple fast planning for saw-cut rectangular projects", "You need a pre-CNC estimate or saw-cut version"]
+      ],
+      faqs: [
+        ["What is the best plywood cutting calculator for beginners?", "For beginners, the best tool is one that shows the sheet visually and makes mistakes obvious. Start with a browser calculator, then use CutList when you need saved projects or a shop-ready plan."],
+        ["Do professionals still use spreadsheets?", "Yes. Spreadsheets remain useful for estimating, pricing, and quantity logic. The problem is using a spreadsheet as proof that parts fit on sheets."],
+        ["Is CNC nesting always better than CutList?", "No. CNC nesting is better when a CNC router will cut the job. For table saw, track saw, or home-center cutting, a visual rectangular optimizer is often faster and easier to review."],
+        ["When should I move from a calculator to an app?", "Move when the project has repeated parts, multiple materials, grain rules, revisions, or a need for saved records and exported plans."],
+        ["Can a plywood optimizer replace woodworking judgment?", "No. It can reduce layout guesswork, but you still decide grain appearance, safe cut order, joinery allowances, and which offcuts are worth saving."],
+        ["What workflow reduces waste the most?", "The workflow that catches mistakes before purchase: clean part list, realistic kerf, material groups, rotation rules, visual review, and a final cut sequence."]
+      ],
+      sources: [
+        ["US EPA: C&D source reduction guidance", "https://www.epa.gov/smm/sustainable-management-construction-and-demolition-materials", "EPA emphasizes reducing material use and preventing waste before it is generated."],
+        ["2D cutting stock research", "https://arxiv.org/abs/2604.01732", "Recent research frames two-dimensional sheet cutting as an optimization problem with assignment, orientation, and non-overlap constraints."],
+        ["WoodCutTool comparison page", "/compare/best-plywood-tools/", "Internal comparison page for users evaluating plywood cutting calculator tools."]
+      ]
+    }
+  },
   {
     slug: "cutlist-shop-workflow-from-bid-to-cut",
     category: "CutList",
@@ -1012,6 +1113,16 @@ const visualPatterns = [
 ];
 
 const researchBriefs = {
+  "plywood-waste-cost-benchmark-manual-vs-optimizer": {
+    question: "How should a builder prove that plywood optimization is saving money instead of just making a prettier layout?",
+    insight: "The benchmark has to compare sheet count, usable offcuts, kerf assumptions, and cut order across the same part list. A lower waste percentage is useful only when it leads to fewer purchased sheets, reusable offcuts, or fewer layout revisions.",
+    metrics: ["Sheets purchased", "Waste percentage", "Usable offcut area", "Kerf-included fit", "Revision time before cut"]
+  },
+  "best-plywood-cutting-workflow-2026": {
+    question: "Which planning workflow fits the job: manual sketch, spreadsheet, browser calculator, CutList optimizer, or CNC nesting?",
+    insight: "Each tool answers a different question. Spreadsheets are strong for quantity logic, calculators are strong for fast feasibility, CutList is strong for visual sheet review, and CNC nesting is strongest when geometry must become machine-ready toolpaths.",
+    metrics: ["Decision speed", "Layout visibility", "Saved project record", "Kerf and rotation handling", "Machine-readiness"]
+  },
   "cutlist-shop-workflow-from-bid-to-cut": {
     question: "Where does material waste enter the cabinet workflow before anyone reaches the saw?",
     insight: "Most waste is created upstream: ambiguous estimating assumptions, mixed material groups, and unreviewed sheet layouts. The optimizer is most valuable when it sits between estimating and production as a verification layer.",
@@ -1273,6 +1384,76 @@ function relatedToolsAndGuides(article) {
       </section>`;
 }
 
+function deepDiveFigure(article) {
+  const detail = article.deepDive;
+  if (!detail?.figureTitle) return "";
+  const labels = detail.figureStats || [];
+
+  return `<section class="deep-figure-section">
+        <div class="deep-figure-copy">
+          <p class="eyebrow">Visual model</p>
+          <h2>${escapeHtml(detail.figureTitle)}</h2>
+          <p>${escapeHtml(detail.figureCaption || "")}</p>
+        </div>
+        <figure class="deep-layout-figure ${escapeHtml(article.accent)}">
+          <div class="sheet-diagram" aria-hidden="true">
+            <span class="sheet-part part-a">A</span>
+            <span class="sheet-part part-b">B</span>
+            <span class="sheet-part part-c">C</span>
+            <span class="sheet-part part-d">D</span>
+            <span class="sheet-offcut offcut-one">usable offcut</span>
+            <span class="sheet-offcut offcut-two">scrap</span>
+            <span class="kerf-line kerf-one"></span>
+            <span class="kerf-line kerf-two"></span>
+          </div>
+          <figcaption>${escapeHtml(detail.figureCaption || "")}</figcaption>
+          <div class="deep-stat-row">${labels.map(([value, label]) => `<span><strong>${escapeHtml(value)}</strong><em>${escapeHtml(label)}</em></span>`).join("")}</div>
+        </figure>
+      </section>`;
+}
+
+function deepComparison(article) {
+  const detail = article.deepDive;
+  if (!detail?.comparisonRows?.length) return "";
+  const columns = detail.comparisonColumns || ["Option", "Best for", "Limit", "Decision"];
+
+  return `<section class="deep-compare-section">
+        <p class="eyebrow">Compare</p>
+        <h2>${escapeHtml(detail.comparisonTitle || "Workflow comparison")}</h2>
+        <div class="deep-table-wrap">
+          <table class="deep-compare-table">
+            <thead><tr>${columns.map((column) => `<th>${escapeHtml(column)}</th>`).join("")}</tr></thead>
+            <tbody>${detail.comparisonRows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+          </table>
+        </div>
+      </section>`;
+}
+
+function deepFaq(article) {
+  const faqs = article.deepDive?.faqs || [];
+  if (!faqs.length) return "";
+
+  return `<section class="deep-faq-section">
+        <p class="eyebrow">FAQ</p>
+        <h2>Common questions</h2>
+        <div class="deep-faq-grid">${faqs.map(([question, answer]) => `<div class="deep-faq-item"><h3>${escapeHtml(question)}</h3><p>${escapeHtml(answer)}</p></div>`).join("")}</div>
+      </section>`;
+}
+
+function deepSources(article) {
+  const sources = article.deepDive?.sources || [];
+  if (!sources.length) return "";
+
+  return `<section class="deep-sources-section">
+        <p class="eyebrow">Sources</p>
+        <h2>Data and references</h2>
+        <div class="deep-source-grid">${sources.map(([label, href, note]) => {
+          const rel = /^https?:\/\//.test(href) ? ' rel="nofollow noopener"' : "";
+          return `<a href="${escapeHtml(href)}"${rel}><strong>${escapeHtml(label)}</strong><span>${escapeHtml(note)}</span></a>`;
+        }).join("")}</div>
+      </section>`;
+}
+
 function escapeHtml(value) {
   return value
     .replaceAll("&", "&amp;")
@@ -1511,11 +1692,15 @@ ${head({
         ${articleVisual(article)}
       </div>
       ${research ? `<section class="research-panel"><h2>Research Lens</h2><div class="research-grid"><div><strong>Question</strong><p>${escapeHtml(research.question)}</p></div><div><strong>Working Insight</strong><p>${escapeHtml(research.insight)}</p></div></div></section><section class="metric-panel"><h2>Decision Metrics</h2><div class="metric-pill-grid">${research.metrics.map((metric) => `<span>${escapeHtml(metric)}</span>`).join("")}</div></section>` : ""}
+      ${deepDiveFigure(article)}
       ${article.sections.map(([heading, body]) => `<section><h2>${escapeHtml(heading)}</h2><p>${escapeHtml(body)}</p></section>`).join("\n      ")}
+      ${deepComparison(article)}
       <section class="article-checklist">
         <h2>Field Checklist</h2>
         <ul>${article.checklist.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
       </section>
+      ${deepFaq(article)}
+      ${deepSources(article)}
       ${cutlistApplicationPanel(article)}
       ${relatedToolsAndGuides(article)}
       <section class="related-articles">
@@ -1531,6 +1716,8 @@ ${head({
 }
 
 const zhArticleTitles = {
+  "plywood-waste-cost-benchmark-manual-vs-optimizer": "胶合板浪费成本基准：手工排版 vs CutList 优化器",
+  "best-plywood-cutting-workflow-2026": "2026 胶合板切割工作流对比：计算器、表格、优化器还是 CNC",
   "cutlist-shop-workflow-from-bid-to-cut": "CutList 工坊流程：从报价到第一刀",
   "plywood-optimization-kerf-grain-offcuts": "胶合板优化：锯缝、纹理与余料策略",
   "cabinet-cut-list-mistakes": "浪费板材的常见橱柜切割清单错误",

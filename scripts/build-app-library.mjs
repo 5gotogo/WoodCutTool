@@ -3,7 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260620-five-star-app-reviews";
+const version = "20260621-yellow-review-stars";
 const apps = JSON.parse(readFileSync(join(root, "data", "app-store-apps.json"), "utf8"));
 const appStoreReviews = JSON.parse(readFileSync(join(root, "data", "app-store-reviews.json"), "utf8"));
 
