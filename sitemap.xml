@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://woodcuttool.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://woodcuttool.com/tools/</loc><changefreq>weekly</changefreq><priority>0.96</priority></url>
+  <url><loc>https://woodcuttool.com/learn/</loc><changefreq>weekly</changefreq><priority>0.93</priority></url>
   <url><loc>https://woodcuttool.com/apps/</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/apps/cutlist/</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/apps/quiltfit/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
@@ -112,6 +114,11 @@
   <url><loc>https://woodcuttool.com/blog/wood-cutting-calculator-guide/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://woodcuttool.com/compare/best-plywood-tools/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/guides/how-to-cut-plywood-efficiently/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/learn/best-woodworking-calculator-workflow/</loc><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://woodcuttool.com/learn/diy-workshop-planning-guide/</loc><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://woodcuttool.com/learn/how-to-reduce-plywood-waste/</loc><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://woodcuttool.com/learn/material-estimation-for-carpentry/</loc><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://woodcuttool.com/learn/what-is-cut-list-optimization/</loc><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/legal/cutlist/privacy/</loc><changefreq>yearly</changefreq><priority>0.55</priority></url>
   <url><loc>https://woodcuttool.com/legal/cutlist/support/</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
   <url><loc>https://woodcuttool.com/legal/quiltfit/privacy/</loc><changefreq>yearly</changefreq><priority>0.55</priority></url>

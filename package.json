@@ -8,8 +8,9 @@
     "fetch:app-reviews": "node scripts/fetch-app-store-reviews.mjs",
     "generate:apps": "node scripts/build-app-library.mjs",
     "generate:blog": "node scripts/build-blog-content.mjs",
+    "generate:learn": "node scripts/build-learn-content.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
-    "build": "node scripts/build-app-library.mjs && node scripts/build-blog-content.mjs && node scripts/generate-sitemap.mjs && node scripts/validate-site.mjs",
+    "build": "node scripts/build-app-library.mjs && node scripts/build-blog-content.mjs && node scripts/build-learn-content.mjs && node scripts/generate-sitemap.mjs && node scripts/validate-site.mjs",
     "check": "node scripts/validate-site.mjs"
   }
 }

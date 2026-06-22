@@ -77,6 +77,14 @@ function sitemapMeta(route) {
     return { changefreq: "weekly", priority: "0.95" };
   }
 
+  if (route === "/tools/") {
+    return { changefreq: "weekly", priority: "0.96" };
+  }
+
+  if (route === "/learn/") {
+    return { changefreq: "weekly", priority: "0.93" };
+  }
+
   if (route === "/apps/quiltfit/") {
     return { changefreq: "weekly", priority: "0.9" };
   }
@@ -113,6 +121,10 @@ function sitemapMeta(route) {
     return { changefreq: "monthly", priority: "0.8" };
   }
 
+  if (route.startsWith("/learn/")) {
+    return { changefreq: "monthly", priority: "0.82" };
+  }
+
   if (route.startsWith("/blog/")) {
     return { changefreq: "monthly", priority: "0.74" };
   }
@@ -135,6 +147,8 @@ function sitemapMeta(route) {
 function sortRoutes(routes) {
   const preferredOrder = [
     "/",
+    "/tools/",
+    "/learn/",
     "/apps/",
     "/apps/cutlist/",
     "/apps/quiltfit/",
