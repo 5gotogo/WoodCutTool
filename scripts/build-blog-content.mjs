@@ -1,9 +1,10 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260622-language-picker";
+const version = "20260622-nav-spacing";
 const siteUrl = "https://woodcuttool.com";
 
 
@@ -2307,7 +2308,7 @@ function footer() {
   return `<footer class="site-footer"><div class="footer-inner"><div class="footer-main"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><nav class="footer-links footer-primary" aria-label="Footer navigation"><a href="/apps/cutlist/">CutList</a><a href="/apps/quiltfit/">QuiltFit</a><a href="/blog/">Blogs</a><a href="/tile-calculator/">Tile</a><a href="/stringer/">Stringer</a></nav></div><div class="footer-bottom"><p class="muted"><span>© 2026 WoodCutTool.</span> <span>All rights reserved.</span></p><nav class="footer-links footer-legal" aria-label="Legal navigation"><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a><a href="/sitemap.xml">Sitemap</a></nav></div></div></footer>`;
 }
 
-function head({ title, description, canonical }) {
+function head({ title, description, canonical, ogType = "website" }) {
   return `<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -2315,6 +2316,7 @@ function head({ title, description, canonical }) {
   <meta name="description" content="${escapeHtml(description)}">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="${canonical}">
+  ${ogTags({ title, description, canonical, type: ogType })}
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png?v=rounded-mask-20260619">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png?v=rounded-mask-20260619">
@@ -2529,9 +2531,11 @@ function articlePage(article) {
 ${head({
     title: `${article.title} | WoodCutTool Blogs`,
     description: article.description,
-    canonical: `https://woodcuttool.com/blog/${article.slug}/`
+    canonical: `https://woodcuttool.com/blog/${article.slug}/`,
+    ogType: "article"
   })}
 <body>
+  ${breadcrumbJsonLd([["Home", "/"], ["Blogs", "/blog/"], [article.title, `/blog/${article.slug}/`]])}
   <a class="skip-link" href="#main">Skip to content</a>
   ${header("Blogs")}
   <main id="main" class="article-shell blog-article-shell">

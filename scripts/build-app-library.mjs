@@ -1,9 +1,10 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { ogTags } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260622-language-picker";
+const version = "20260622-nav-spacing";
 const apps = JSON.parse(readFileSync(join(root, "data", "app-store-apps.json"), "utf8"));
 const appStoreReviews = JSON.parse(readFileSync(join(root, "data", "app-store-reviews.json"), "utf8"));
 
@@ -43,6 +44,7 @@ function head({ title, description, canonical, jsonLd = "" }) {
   <meta name="description" content="${escapeHtml(description)}">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="${escapeHtml(canonical)}">
+  ${ogTags({ title, description, canonical })}
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png?v=rounded-mask-20260619">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png?v=rounded-mask-20260619">

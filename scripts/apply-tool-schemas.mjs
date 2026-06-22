@@ -61,6 +61,12 @@ const softwareTools = [
     keywords: ["plywood cut calculator", "sheet cutting optimizer", "plywood layout planner", "woodworking calculator", "reduce plywood waste"],
     features: ["Plywood sheet layout", "Part quantity planning", "Kerf allowance", "Rotation setting", "Waste percentage", "Sheet count estimate"],
     audience: "DIY woodworkers, cabinet makers, garage shops, and sheet-good users",
+    howto: [
+      ["Enter your sheet size", "Set the plywood sheet dimensions you plan to buy, such as 48 by 96 inches for a standard 4x8 sheet."],
+      ["Add your parts and quantities", "List each panel with its width, length, and how many you need."],
+      ["Set the saw kerf", "Enter your blade kerf (often 1/8 inch) so the layout accounts for material removed by each cut."],
+      ["Review the layout and sheet count", "Check the generated sheet layout, sheet count, and waste percentage, then adjust parts if needed before buying."]
+    ],
     faq: [
       ...commonFaq,
       ["What is a plywood cut calculator?", "A plywood cut calculator estimates how project parts fit on plywood sheets after sheet size, part dimensions, quantity, saw kerf, and rotation settings are entered."],
@@ -77,6 +83,12 @@ const softwareTools = [
     keywords: ["cut list calculator", "woodworking calculator", "board cut optimizer", "material calculator", "wood waste calculator"],
     features: ["Board stock planning", "Cut sequence estimate", "Part quantity entry", "Saw kerf allowance", "Waste percentage", "Related plywood workflow links"],
     audience: "Woodworkers, carpenters, DIY builders, and small shops",
+    howto: [
+      ["Enter your board stock size", "Set the length and width of the board you are cutting from."],
+      ["List your parts and quantities", "Add each part with its dimensions and the number you need."],
+      ["Set the saw kerf", "Enter your blade kerf so the cutting plan reflects real material loss between cuts."],
+      ["Review the cutting plan", "Check the optimized cut order and waste percentage before cutting your boards."]
+    ],
     faq: [
       ...commonFaq,
       ["Is this calculator for boards or plywood?", "The cut list calculator is best for board stock and linear cut planning. Use the plywood cut calculator or CutList app for sheet goods."],
@@ -93,6 +105,12 @@ const softwareTools = [
     keywords: ["wood waste calculator", "material calculator", "reduce wood waste", "waste percentage", "scrap cost calculator"],
     features: ["Waste percentage estimate", "Used area estimate", "Scrap area estimate", "Waste cost estimate", "Board and sheet workflow links"],
     audience: "Woodworkers, DIY builders, remodelers, and material planners",
+    howto: [
+      ["Enter your stock dimensions", "Set the size of the boards or sheets you are buying."],
+      ["Add your project parts", "List every part with its dimensions and quantity."],
+      ["Add material price (optional)", "Enter a price per unit area to estimate the cost of the wasted material."],
+      ["Review waste percentage and cost", "Check the used area, scrap area, waste percentage, and waste cost before buying."]
+    ],
     faq: [
       ...commonFaq,
       ["What does a wood waste calculator measure?", "It compares stock material against project parts to estimate used material, leftover material, waste percentage, and waste cost."],
@@ -109,6 +127,12 @@ const softwareTools = [
     keywords: ["board foot calculator", "lumber calculator", "material calculator", "woodworking calculator", "carpentry material estimate"],
     features: ["Board foot calculation", "Lumber volume estimate", "Price per board foot", "Material cost estimate", "Related cut list links"],
     audience: "Woodworkers, carpenters, cabinet shops, and lumber buyers",
+    howto: [
+      ["Enter board dimensions", "Set the thickness, width, and length of the lumber you are pricing."],
+      ["Set the quantity", "Enter how many boards of this size you need."],
+      ["Add price per board foot", "Enter the lumber price per board foot to estimate total cost."],
+      ["Review board feet and cost", "Check the total board feet and material cost before buying."]
+    ],
     faq: [
       ...commonFaq,
       ["What is a board foot calculator?", "A board foot calculator estimates lumber volume from board length, width, thickness, and quantity."],
@@ -124,7 +148,13 @@ const softwareTools = [
     description: "Free stair stringer calculator for rise, run, riser count, tread depth, stair angle, and stringer length planning.",
     keywords: ["stair stringer calculator", "DIY construction tools", "stair calculator", "rise and run calculator", "construction calculator"],
     features: ["Riser count", "Tread depth", "Stair angle", "Stringer length", "Rise and run planning"],
-    audience: "DIY builders, remodelers, carpenters, and construction planners"
+    audience: "DIY builders, remodelers, carpenters, and construction planners",
+    howto: [
+      ["Enter total rise", "Measure and enter the total vertical rise from the lower floor to the upper floor."],
+      ["Enter total run", "Enter the available horizontal run for the staircase."],
+      ["Set preferred riser height", "Choose a target riser height so the calculator can work out the number of steps."],
+      ["Review stringer layout", "Check riser height, tread depth, stair angle, and stringer length before cutting."]
+    ]
   },
   {
     path: "/tile-calculator/",
@@ -135,7 +165,13 @@ const softwareTools = [
     description: "Free tile material calculator for tile count, box count, waste allowance, coverage, grout joints, and estimated material cost.",
     keywords: ["tile calculator", "material calculator", "DIY construction tools", "tile box calculator", "tile waste calculator"],
     features: ["Tile count estimate", "Box count estimate", "Waste allowance", "Grout joint planning", "Material cost estimate"],
-    audience: "DIY remodelers, tile installers, homeowners, and construction planners"
+    audience: "DIY remodelers, tile installers, homeowners, and construction planners",
+    howto: [
+      ["Enter the area to tile", "Set the room or wall dimensions you plan to cover."],
+      ["Enter your tile size", "Add the tile dimensions and the grout joint width."],
+      ["Set a waste allowance", "Choose a waste percentage to cover cuts and breakage."],
+      ["Review tiles and boxes needed", "Check the tile count, boxes required, coverage, and material cost before buying."]
+    ]
   }
 ];
 
@@ -218,10 +254,30 @@ function faqSchema(tool) {
   };
 }
 
+function howToSchema(tool) {
+  const url = `${siteUrl}${tool.path}`;
+  return {
+    "@type": "HowTo",
+    "@id": `${url}#howto`,
+    name: `How to use the ${tool.name}`,
+    description: tool.description,
+    step: tool.howto.map(([name, text], i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name,
+      text,
+      url: `${url}#step-${i + 1}`
+    }))
+  };
+}
+
 function pageGraph(tool) {
   const graph = [organization, softwareSchema(tool)];
   if (tool.product) {
     graph.push(productSchema(tool));
+  }
+  if (tool.howto) {
+    graph.push(howToSchema(tool));
   }
   graph.push(faqSchema(tool));
   return {

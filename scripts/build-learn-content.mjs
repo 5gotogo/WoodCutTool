@@ -1,9 +1,10 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260622-language-picker";
+const version = "20260622-nav-spacing";
 const siteUrl = "https://woodcuttool.com";
 
 function escapeHtml(value) {
@@ -14,7 +15,7 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;");
 }
 
-function head({ title, description, canonical, jsonLd = "" }) {
+function head({ title, description, canonical, jsonLd = "", ogType = "website" }) {
   return `<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,6 +23,7 @@ function head({ title, description, canonical, jsonLd = "" }) {
   <meta name="description" content="${escapeHtml(description)}">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="${escapeHtml(canonical)}">
+  ${ogTags({ title, description, canonical, type: ogType })}
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png?v=rounded-mask-20260619">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png?v=rounded-mask-20260619">
@@ -374,7 +376,7 @@ const relatedMap = {
   },
   "how-many-sheets-of-plywood-do-i-need": {
     guides: ["what-is-cut-list-optimization", "how-to-reduce-plywood-waste", "sheet-layout-optimization"],
-    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/wood-waste-calculator/", "Wood waste calculator"]]
+    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/templates/kitchen-cabinet-cut-list/", "Kitchen cabinet cut list template"]]
   },
   "best-woodworking-calculator-workflow": {
     guides: ["what-is-cut-list-optimization", "woodworking-material-calculator", "diy-wood-project-estimation"],
@@ -478,9 +480,11 @@ ${head({
     title: `${article.seoTitle} | WoodCutTool`,
     description: article.description,
     canonical: `${siteUrl}/learn/${article.slug}/`,
-    jsonLd: articleJsonLd(article)
+    jsonLd: articleJsonLd(article),
+    ogType: "article"
   })}
 <body>
+  ${breadcrumbJsonLd([["Home", "/"], ["Learn", "/learn/"], [article.h1, `/learn/${article.slug}/`]])}
   <a class="skip-link" href="#main">Skip to content</a>
   ${header("Learn")}
   <main id="main" class="article-shell">
@@ -566,9 +570,11 @@ ${head({
     title: `${page.seoTitle} | WoodCutTool`,
     description: page.description,
     canonical: `${siteUrl}/learn/${page.slug}/`,
-    jsonLd: landingJsonLd(page)
+    jsonLd: landingJsonLd(page),
+    ogType: "article"
   })}
 <body>
+  ${breadcrumbJsonLd([["Home", "/"], ["Learn", "/learn/"], [page.h1, `/learn/${page.slug}/`]])}
   <a class="skip-link" href="#main">Skip to content</a>
   ${header("Learn")}
   <main id="main" class="article-shell">

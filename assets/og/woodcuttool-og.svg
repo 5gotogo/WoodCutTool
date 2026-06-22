@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="WoodCutTool — Free woodworking calculators and cut list optimizer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e2a23"/>
+      <stop offset="1" stop-color="#243a30"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- accent bar -->
+  <rect x="0" y="0" width="1200" height="14" fill="#e8d9b4"/>
+  <!-- brand mark -->
+  <g transform="translate(96,150)">
+    <rect x="0" y="0" width="96" height="96" rx="22" fill="#e8d9b4"/>
+    <text x="48" y="68" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" fill="#1e2a23" text-anchor="middle">W</text>
+  </g>
+  <text x="212" y="218" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#e8d9b4">WoodCutTool</text>
+  <!-- headline -->
+  <text x="96" y="360" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" fill="#ffffff">Free woodworking</text>
+  <text x="96" y="438" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" fill="#ffffff">calculators</text>
+  <!-- subhead -->
+  <text x="96" y="512" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#cdd8cf">Plywood cuts · cut lists · waste · board feet · stairs · tile</text>
+  <text x="96" y="566" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#9fb0a4">woodcuttool.com</text>
+</svg>

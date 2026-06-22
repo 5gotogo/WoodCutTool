@@ -134,5 +134,7 @@
   <url><loc>https://woodcuttool.com/legal/Tinnitus/privacy/</loc><changefreq>yearly</changefreq><priority>0.55</priority></url>
   <url><loc>https://woodcuttool.com/legal/Tinnitus/support/</loc><changefreq>monthly</changefreq><priority>0.55</priority></url>
   <url><loc>https://woodcuttool.com/templates/4x8-plywood-sheet/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/templates/kitchen-cabinet-cut-list/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/templates/workbench-cut-list/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/tinnitus/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
