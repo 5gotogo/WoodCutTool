@@ -69,6 +69,16 @@ canvas {
   top: 12px;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  clip-path: inset(50%) !important;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -143,23 +153,28 @@ canvas {
   text-decoration: none;
 }
 
+.nav > .button {
+  order: 2;
+}
+
 .language-picker {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
   min-width: max-content;
-  color: var(--muted);
-  font-size: 13px;
-  font-weight: 800;
+  order: 1;
+  margin-left: auto;
 }
 
 .language-picker select {
-  width: auto;
+  width: 112px;
   min-height: 38px;
-  padding: 7px 30px 7px 10px;
-  font-size: 14px;
+  padding: 8px 30px 8px 10px;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 13px;
   font-weight: 750;
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.68);
 }
 
 .google-translate-holder {
@@ -3106,6 +3121,19 @@ tr:last-child td {
   gap: 12px;
 }
 
+.faq-list details {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.faq-list summary {
+  color: var(--ink);
+  font-weight: 850;
+  cursor: pointer;
+}
+
 .faq-list h3 {
   margin: 12px 0 0;
   font-size: 1.05rem;
@@ -3113,6 +3141,43 @@ tr:last-child td {
 
 .faq-list p {
   margin-top: 4px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.step-card {
+  min-height: 190px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.step-card span {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  background: rgba(47, 111, 78, 0.1);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.step-card h3 {
+  margin: 12px 0 8px;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.step-card p {
+  margin: 0;
 }
 
 .article-application-panel,
@@ -6325,6 +6390,15 @@ tr:last-child td {
     min-height: 38px;
     padding: 8px 10px;
     font-size: 13px;
+  }
+
+  .language-picker {
+    margin-left: 0;
+  }
+
+  .language-picker select {
+    width: 104px;
+    min-height: 38px;
   }
 
   .metric-grid {

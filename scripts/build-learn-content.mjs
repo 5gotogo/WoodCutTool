@@ -3,7 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260622-learn-hub";
+const version = "20260622-language-picker";
 const siteUrl = "https://woodcuttool.com";
 
 function escapeHtml(value) {
@@ -147,6 +147,151 @@ const articles = [
   }
 ];
 
+const landingPages = [
+  {
+    slug: "plywood-cutting-optimization",
+    seoTitle: "Plywood Cutting Optimization for Cleaner Sheet Layouts",
+    h1: "Plywood Cutting Optimization",
+    description: "Plan plywood cutting optimization with fewer layout mistakes, better sheet use, saw kerf allowance, and a clear path from estimate to CutList.",
+    keywords: ["plywood cutting optimization", "plywood cut calculator", "sheet layout optimization", "cut list optimizer", "reduce plywood waste"],
+    problem: "Plywood cutting optimization becomes difficult when a project has many panels, repeated parts, visible grain direction, and a limited sheet budget. Many builders start with enough total square footage, then discover that the parts do not actually fit on the sheets once blade kerf, rotation limits, trimming, and offcut shape are included. The result is extra plywood, more scrap, and a cutting session that depends too much on memory.",
+    steps: [
+      ["List every plywood part", "Write each panel name, width, height, quantity, thickness, and whether the grain direction or finished face matters. Do this before estimating sheet count."],
+      ["Enter real sheet size and saw kerf", "Use the exact stock size you plan to buy. Add blade kerf so the layout reflects real cutting loss instead of an ideal drawing."],
+      ["Control rotation rules", "Allow rotation for hidden parts when it helps sheet use, but lock visible faces when grain direction needs to stay consistent."],
+      ["Review waste shape, not only waste percent", "A layout with reusable rectangular offcuts can be better than a lower waste number that leaves only narrow strips."],
+      ["Save the final layout", "When the project has more than a few parts, save the optimized plan so it can be reopened, checked, exported, and used at the saw."]
+    ],
+    recommendation: "Start with the free plywood calculator for a quick layout check, then use the tools hub to choose the right workflow. For serious plywood projects, the CutList app is the better recommendation because it supports saved layouts, offline planning, project editing, and PDF export.",
+    faqs: [
+      ["What is plywood cutting optimization?", "Plywood cutting optimization is the process of arranging project panels on plywood sheets while accounting for dimensions, quantities, kerf, rotation rules, grain direction, and usable offcuts."],
+      ["Is plywood cutting optimization the same as square footage estimating?", "No. Square footage tells you rough material area. Optimization checks whether the exact shapes fit on real sheets in a practical cutting layout."],
+      ["Which tool should I use first?", "Use the plywood cut calculator for a fast browser estimate, then move larger saved projects into CutList."],
+      ["How can I reduce plywood waste?", "Enter accurate parts, include kerf, review rotation rules, and compare layouts before buying sheets."]
+    ],
+    links: [
+      ["/tools/", "WoodCutTool tools hub"],
+      ["/plywood-cut-calculator/", "Plywood cut calculator"],
+      ["/apps/cutlist/", "CutList app"],
+      ["/wood-waste-calculator/", "Wood waste calculator"]
+    ]
+  },
+  {
+    slug: "woodworking-material-calculator",
+    seoTitle: "Woodworking Material Calculator for Boards, Plywood, Waste, and Cost",
+    h1: "Woodworking Material Calculator",
+    description: "Use a woodworking material calculator workflow to estimate boards, plywood sheets, board feet, waste, cost, and cut planning before buying stock.",
+    keywords: ["woodworking material calculator", "material calculator", "woodworking calculator", "board foot calculator", "wood waste calculator"],
+    problem: "A woodworking material calculator is useful because material planning often fails in small hidden ways. A board list may ignore defects. A plywood estimate may use square footage instead of layout fit. A cost estimate may miss waste allowance. If those pieces are calculated separately, the project can look cheaper and simpler than it really is.",
+    steps: [
+      ["Define the project material types", "Separate plywood, hardwood boards, construction lumber, hardware, trim, and finish materials so each group can be estimated correctly."],
+      ["Estimate board volume", "Use board feet for lumber when material is priced by volume, and keep thickness, width, length, quantity, and price visible."],
+      ["Estimate sheet layout", "Use a plywood layout calculator for panels because sheet goods depend on shape, orientation, kerf, and offcut size."],
+      ["Add waste allowance", "Check waste cost after layout planning so the estimate includes scrap, trimming, and practical offcuts."],
+      ["Move from estimate to cut plan", "When dimensions are stable, create a cut list so the estimate becomes a shop-ready plan."]
+    ],
+    recommendation: "Use /tools as the decision hub: board foot calculator for lumber, plywood cut calculator for sheet goods, wood waste calculator for scrap impact, and CutList for saved cut planning.",
+    faqs: [
+      ["What is a woodworking material calculator?", "It is a planning tool that estimates material quantity, cost, waste, and cut requirements for a woodworking project."],
+      ["Can one calculator handle every woodworking material?", "Not perfectly. Boards, plywood, waste, and cost each need slightly different calculations, so a tools hub workflow is more reliable."],
+      ["How much extra material should I buy?", "The right allowance depends on defects, joinery, finish quality, and project risk. Use waste estimates and layout review before deciding."],
+      ["Does a material calculator replace a cut list?", "No. A material calculator estimates what to buy. A cut list explains how parts should be cut from that material."]
+    ],
+    links: [
+      ["/tools/", "All woodworking tools"],
+      ["/board-foot-calculator/", "Board foot calculator"],
+      ["/wood-waste-calculator/", "Wood waste calculator"],
+      ["/cut-list-calculator/", "Cut list calculator"]
+    ]
+  },
+  {
+    slug: "cut-list-planner",
+    seoTitle: "Cut List Planner for Cabinets, Shelves, and DIY Wood Projects",
+    h1: "Cut List Planner",
+    description: "Build a reliable cut list planner workflow for cabinets, shelves, plywood projects, board stock, saw kerf, saved layouts, and material saving.",
+    keywords: ["cut list planner", "cut list optimizer", "cut list calculator", "woodworking calculator", "plywood layout planning"],
+    problem: "A cut list planner solves a common woodworking problem: dimensions are scattered across sketches, notes, screenshots, and mental reminders. Without a clear planner, repeated parts get missed, part names become unclear, and the saw setup depends on interpretation. That creates rework even when the design itself is simple.",
+    steps: [
+      ["Name every part clearly", "Use practical names like left side, fixed shelf, back panel, stretcher, drawer bottom, and door rail instead of anonymous numbers."],
+      ["Add dimensions and quantity", "Record final part size, material thickness, and count. Include trimming allowance only when it is actually needed."],
+      ["Choose board or sheet workflow", "Use a board cut list for linear stock and a plywood layout workflow for sheet goods."],
+      ["Account for kerf and direction", "Blade kerf and rotation rules can change whether a plan fits, so they must be part of the planner."],
+      ["Export or save before cutting", "A good cut list planner should become a shop document that can be checked at the saw."]
+    ],
+    recommendation: "For quick planning, use the cut list calculator. For projects that need saved layouts, repeat editing, and a more product-like workflow, use CutList and keep the tools hub as the internal navigation point.",
+    faqs: [
+      ["What is a cut list planner?", "A cut list planner organizes part names, dimensions, quantities, material, kerf, and layout rules before cutting."],
+      ["Is a cut list planner better than a spreadsheet?", "A spreadsheet can track parts, but a planner or optimizer can also show whether the parts fit the stock material."],
+      ["When should I use CutList?", "Use CutList when the project has many plywood parts, needs saved layouts, or should be exported as a PDF."],
+      ["What should every cut list include?", "Part name, width, length, quantity, material, thickness, kerf assumptions, and notes for rotation or grain direction."]
+    ],
+    links: [
+      ["/tools/", "Tools hub"],
+      ["/cut-list-calculator/", "Cut list calculator"],
+      ["/apps/cutlist/", "CutList cut list optimizer"],
+      ["/learn/what-is-cut-list-optimization/", "What is cut list optimization"]
+    ]
+  },
+  {
+    slug: "diy-wood-project-estimation",
+    seoTitle: "DIY Wood Project Estimation for Material, Cost, Waste, and Cut Lists",
+    h1: "DIY Wood Project Estimation",
+    description: "Estimate a DIY wood project with material quantities, plywood sheets, board feet, waste allowance, cost, and a practical cut list workflow.",
+    keywords: ["DIY wood project estimation", "woodworking material calculator", "material calculator", "DIY construction tools", "cut list planner"],
+    problem: "DIY wood project estimation is hard because the first idea is usually not the final build. Dimensions change after measuring the room. Material changes after checking price. Waste changes after seeing the layout. If estimation happens only once, the project can quickly drift away from the original plan.",
+    steps: [
+      ["Start with finished dimensions", "Measure the space and define the final size of the project before choosing material or buying stock."],
+      ["Break the project into parts", "List panels, shelves, sides, rails, supports, trim, and optional test pieces."],
+      ["Run a rough material estimate", "Use board foot and plywood calculators to understand the likely material range."],
+      ["Check waste and layout", "Use cut planning tools to see whether the parts fit efficiently and whether offcuts are usable."],
+      ["Save the final project plan", "Once the design is stable, save the layout or export a cut plan before cutting begins."]
+    ],
+    recommendation: "The best tool recommendation is a sequence: start at /tools, use calculators for rough estimation, then use CutList when the project needs a saved plan. That keeps the landing page aligned with both search intent and app conversion.",
+    faqs: [
+      ["How do I estimate a DIY wood project?", "List the parts, choose material, calculate boards or sheet goods, add waste allowance, estimate cost, and review a cut plan before buying."],
+      ["What tools help with DIY wood project estimation?", "Use a board foot calculator, plywood cut calculator, wood waste calculator, cut list calculator, and CutList for saved projects."],
+      ["Why does my estimate change after layout planning?", "Because total area does not prove that exact part shapes fit real stock with kerf and rotation rules."],
+      ["Should I estimate before or after designing?", "Estimate during design, then rerun the estimate after dimensions are final."]
+    ],
+    links: [
+      ["/tools/", "DIY wood project tools"],
+      ["/learn/diy-workshop-planning-guide/", "DIY workshop planning guide"],
+      ["/plywood-cut-calculator/", "Plywood calculator"],
+      ["/board-foot-calculator/", "Board foot calculator"]
+    ]
+  },
+  {
+    slug: "sheet-layout-optimization",
+    seoTitle: "Sheet Layout Optimization for Plywood, MDF, Panels, and Shop Projects",
+    h1: "Sheet Layout Optimization",
+    description: "Improve sheet layout optimization for plywood, MDF, cabinet panels, shop projects, kerf planning, offcut reuse, and saved CutList layouts.",
+    keywords: ["sheet layout optimization", "plywood cutting optimization", "sheet cutting optimizer", "plywood layout planner", "cut list optimizer"],
+    problem: "Sheet layout optimization is where many panel projects succeed or fail. Plywood, MDF, melamine, and other sheet goods may look simple because they are rectangular, but the layout still has constraints: saw kerf, safe cut sequence, panel orientation, fragile edges, finished faces, and offcuts that may or may not be worth keeping.",
+    steps: [
+      ["Group similar panels", "Repeated shelves, sides, and dividers are easier to verify when grouped together before layout planning."],
+      ["Mark orientation constraints", "Decide which panels can rotate and which need a consistent direction because of grain, face, or finish."],
+      ["Use a sheet layout tool", "Enter sheet size, parts, quantity, and kerf into a calculator or optimizer instead of relying on area math."],
+      ["Compare at least two layouts", "A second layout can reveal a cleaner cut order, better offcuts, or a lower sheet count."],
+      ["Use the chosen plan in the shop", "Keep the final layout visible while cutting so the digital plan becomes an execution guide."]
+    ],
+    recommendation: "Use the plywood cut calculator for quick sheet layout optimization, the wood waste calculator to understand scrap cost, and CutList when the project should be saved, exported, or edited later.",
+    faqs: [
+      ["What is sheet layout optimization?", "It is the process of arranging rectangular parts on sheet goods to reduce waste, respect kerf, and create a practical cutting plan."],
+      ["Does sheet layout optimization work for MDF and melamine?", "Yes. The same planning principles apply, although finished faces, chipping risk, and edge quality may affect the cut sequence."],
+      ["Why is kerf important in sheet layout?", "Every saw cut removes material. Ignoring kerf can make a layout look possible when the real sheet will not fit."],
+      ["What is the best next tool?", "Start with the plywood cut calculator for a fast browser layout, then use CutList for saved iPhone projects."]
+    ],
+    links: [
+      ["/tools/", "Tools hub"],
+      ["/plywood-cut-calculator/", "Plywood layout calculator"],
+      ["/wood-waste-calculator/", "Waste calculator"],
+      ["/apps/cutlist/", "CutList app"]
+    ]
+  }
+];
+
+const allLearnPages = [...articles, ...landingPages];
+
 function articleJsonLd(article) {
   const graph = {
     "@context": "https://schema.org",
@@ -221,6 +366,101 @@ ${head({
 `;
 }
 
+function landingJsonLd(page) {
+  const graph = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        name: page.h1,
+        headline: page.h1,
+        description: page.description,
+        url: `${siteUrl}/learn/${page.slug}/`,
+        mainEntityOfPage: `${siteUrl}/learn/${page.slug}/`,
+        keywords: page.keywords.join(", ")
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: page.faqs.map(([name, text]) => ({
+          "@type": "Question",
+          name,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text
+          }
+        }))
+      }
+    ]
+  };
+  return `<script type="application/ld+json">
+  ${JSON.stringify(graph, null, 2)}
+  </script>`;
+}
+
+function faqSection(page) {
+  return `<section>
+        <h2>FAQ</h2>
+        <div class="faq-list">
+          ${page.faqs.map(([question, answer]) => `<details><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("\n          ")}
+        </div>
+      </section>`;
+}
+
+function internalLinksSection(page) {
+  return `<section class="related-tools-guides">
+        <p class="eyebrow">Internal links</p>
+        <h2>Continue planning with WoodCutTool</h2>
+        <div class="related-grid">
+          ${page.links.map(([href, label]) => `<a href="${href}"><span>Recommended</span><strong>${escapeHtml(label)}</strong></a>`).join("\n          ")}
+        </div>
+      </section>`;
+}
+
+function landingPage(page) {
+  return `<!doctype html>
+<html lang="en">
+${head({
+    title: `${page.seoTitle} | WoodCutTool`,
+    description: page.description,
+    canonical: `${siteUrl}/learn/${page.slug}/`,
+    jsonLd: landingJsonLd(page)
+  })}
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  ${header("Learn")}
+  <main id="main" class="article-shell">
+    <article class="article-body">
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/learn/">Learn</a> / ${escapeHtml(page.h1)}</p>
+      <p class="eyebrow">SEO landing page</p>
+      <h1>${escapeHtml(page.h1)}</h1>
+      <p class="lead">${escapeHtml(page.description)}</p>
+      ${targetKeywords(page)}
+      <section>
+        <h2>The problem</h2>
+        <p>${escapeHtml(page.problem)}</p>
+      </section>
+      <section>
+        <h2>Step-by-step solution</h2>
+        <div class="steps-grid">
+          ${page.steps.map(([heading, body], index) => `<article class="step-card"><span>${index + 1}</span><h3>${escapeHtml(heading)}</h3><p>${escapeHtml(body)}</p></article>`).join("\n          ")}
+        </div>
+      </section>
+      <section class="inline-cta-section">
+        <div class="inline-cta">
+          <p><strong>Tool recommendation:</strong> ${escapeHtml(page.recommendation)}</p>
+          <div class="cta-row"><a class="button" href="/tools/">Explore WoodCutTool tools</a><a class="button secondary" href="/apps/cutlist/">Open CutList</a></div>
+        </div>
+      </section>
+      ${faqSection(page)}
+      ${internalLinksSection(page)}
+    </article>
+  </main>
+  ${footer()}
+</body>
+</html>
+`;
+}
+
 function learnJsonLd() {
   const graph = {
     "@context": "https://schema.org",
@@ -230,7 +470,7 @@ function learnJsonLd() {
     description: "SEO content hub for cut list optimization, plywood waste reduction, woodworking calculator workflows, DIY workshop planning, and material estimation for carpentry.",
     mainEntity: {
       "@type": "ItemList",
-      itemListElement: articles.map((article, index) => ({
+      itemListElement: allLearnPages.map((article, index) => ({
         "@type": "ListItem",
         position: index + 1,
         name: article.h1,
@@ -264,6 +504,12 @@ ${head({
       <div class="hero-actions"><a class="button" href="/tools/">Explore tools</a><a class="button secondary" href="/apps/cutlist/">Open CutList</a></div>
     </section>
     <section class="section">
+      <div class="section-heading compact"><p class="eyebrow">SEO landing pages</p><h2>High-intent planning pages for long-tail searches.</h2><p>These landing pages match users searching for plywood optimization, material calculators, cut list planning, DIY estimates, and sheet layouts.</p></div>
+      <div class="grid tools">
+        ${landingPages.map((page) => `<article class="card"><h2>${escapeHtml(page.h1)}</h2><p>${escapeHtml(page.description)}</p><a class="card-link" href="/learn/${page.slug}/">Open landing page</a></article>`).join("\n        ")}
+      </div>
+    </section>
+    <section class="section">
       <div class="section-heading compact"><p class="eyebrow">Guides</p><h2>Long-tail woodworking and material planning articles.</h2><p>These articles support SEO discovery and convert high-intent readers toward calculators, tool pages, and the CutList app.</p></div>
       <div class="grid tools">
         ${articles.map((article) => `<article class="card"><h2>${escapeHtml(article.h1)}</h2><p>${escapeHtml(article.description)}</p><a class="card-link" href="/learn/${article.slug}/">Read guide</a></article>`).join("\n        ")}
@@ -287,4 +533,10 @@ for (const article of articles) {
   writeFileSync(join(dir, "index.html"), articlePage(article));
 }
 
-console.log(`Generated ${articles.length} learn pages.`);
+for (const page of landingPages) {
+  const dir = join(learnDir, page.slug);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, "index.html"), landingPage(page));
+}
+
+console.log(`Generated ${allLearnPages.length} learn pages.`);

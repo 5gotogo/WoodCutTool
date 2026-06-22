@@ -13,28 +13,307 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
-  <link rel="stylesheet" href="/assets/styles.css?v=20260622-tools-hub">
+  <link rel="stylesheet" href="/assets/styles.css?v=20260622-language-picker">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "WoodCutTool Tools Hub",
-    "url": "https://woodcuttool.com/tools/",
-    "description": "A topic hub for woodworking calculators, material calculators, DIY construction tools, cut list optimizer workflows, and productivity apps by WoodCutTool.",
-    "about": ["woodworking calculator", "cut list optimizer", "material calculator", "DIY construction tools"],
-    "mainEntity": {
-      "@type": "ItemList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "CutList Plywood Optimizer", "url": "https://woodcuttool.com/apps/cutlist/"},
-        {"@type": "ListItem", "position": 2, "name": "Plywood Cut Calculator", "url": "https://woodcuttool.com/plywood-cut-calculator/"},
-        {"@type": "ListItem", "position": 3, "name": "Cut List Calculator", "url": "https://woodcuttool.com/cut-list-calculator/"},
-        {"@type": "ListItem", "position": 4, "name": "Wood Waste Calculator", "url": "https://woodcuttool.com/wood-waste-calculator/"},
-        {"@type": "ListItem", "position": 5, "name": "Stair Stringer Calculator", "url": "https://woodcuttool.com/stair-stringer-calculator/"},
-        {"@type": "ListItem", "position": 6, "name": "Tile Calculator", "url": "https://woodcuttool.com/tile-calculator/"},
-        {"@type": "ListItem", "position": 7, "name": "PDF Scan", "url": "https://woodcuttool.com/apps/pdf-scan-scanner-and-reader/"}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://woodcuttool.com/#organization",
+      "name": "WoodCutTool",
+      "url": "https://woodcuttool.com"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://woodcuttool.com/tools/#collection",
+      "name": "WoodCutTool Tools Hub",
+      "url": "https://woodcuttool.com/tools/",
+      "description": "A topic hub for woodworking calculators, material calculators, DIY construction tools, cut list optimizer workflows, and productivity apps by WoodCutTool.",
+      "keywords": "woodworking calculator, cut list optimizer, material calculator, DIY construction tools",
+      "about": [
+        "woodworking calculator",
+        "cut list optimizer",
+        "material calculator",
+        "DIY construction tools"
+      ],
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "CutList: Plywood Optimizer",
+            "url": "https://woodcuttool.com/apps/cutlist/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Plywood Cut Calculator",
+            "url": "https://woodcuttool.com/plywood-cut-calculator/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Cut List Calculator",
+            "url": "https://woodcuttool.com/cut-list-calculator/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Wood Waste Calculator",
+            "url": "https://woodcuttool.com/wood-waste-calculator/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Board Foot Calculator",
+            "url": "https://woodcuttool.com/board-foot-calculator/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Stair Stringer Calculator",
+            "url": "https://woodcuttool.com/stair-stringer-calculator/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Tile Calculator",
+            "url": "https://woodcuttool.com/tile-calculator/"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://woodcuttool.com/apps/cutlist/#software",
+      "name": "CutList: Plywood Optimizer",
+      "url": "https://woodcuttool.com/apps/cutlist/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Cut list optimizer",
+      "operatingSystem": "iOS",
+      "description": "Offline iPhone cut list optimizer for plywood layout planning, cut optimization, material saving, kerf settings, saved projects, and PDF export.",
+      "keywords": "cut list optimizer, plywood layout planning, woodworking calculator, material saving, reduce wood waste",
+      "featureList": [
+        "Cut optimization",
+        "Plywood layout planning",
+        "Saw kerf settings",
+        "Material waste review",
+        "Saved local projects",
+        "PDF export"
+      ],
+      "isAccessibleForFree": true,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Woodworkers, cabinet makers, carpenters, DIY builders, and small shops"
+      },
+      "provider": {
+        "@id": "https://woodcuttool.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871"
+      },
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": "https://woodcuttool.com/apps/cutlist/"
+      },
+      "downloadUrl": "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://woodcuttool.com/plywood-cut-calculator/#software",
+      "name": "Plywood Cut Calculator",
+      "url": "https://woodcuttool.com/plywood-cut-calculator/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Plywood layout calculator",
+      "operatingSystem": "Any",
+      "description": "Free browser-based plywood cut calculator for sheet size, part dimensions, saw kerf, rotation rules, sheet count, layout preview, and waste percentage.",
+      "keywords": "plywood cut calculator, sheet cutting optimizer, plywood layout planner, woodworking calculator, reduce plywood waste",
+      "featureList": [
+        "Plywood sheet layout",
+        "Part quantity planning",
+        "Kerf allowance",
+        "Rotation setting",
+        "Waste percentage",
+        "Sheet count estimate"
+      ],
+      "isAccessibleForFree": true,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "DIY woodworkers, cabinet makers, garage shops, and sheet-good users"
+      },
+      "provider": {
+        "@id": "https://woodcuttool.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://woodcuttool.com/plywood-cut-calculator/"
+      },
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": "https://woodcuttool.com/plywood-cut-calculator/"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://woodcuttool.com/cut-list-calculator/#software",
+      "name": "Cut List Calculator",
+      "url": "https://woodcuttool.com/cut-list-calculator/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Board cut list calculator",
+      "operatingSystem": "Any",
+      "description": "Free woodworking cut list calculator for board stock, part dimensions, quantities, saw kerf, optimized cutting order, and waste percentage.",
+      "keywords": "cut list calculator, woodworking calculator, board cut optimizer, material calculator, wood waste calculator",
+      "featureList": [
+        "Board stock planning",
+        "Cut sequence estimate",
+        "Part quantity entry",
+        "Saw kerf allowance",
+        "Waste percentage",
+        "Related plywood workflow links"
+      ],
+      "isAccessibleForFree": true,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Woodworkers, carpenters, DIY builders, and small shops"
+      },
+      "provider": {
+        "@id": "https://woodcuttool.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://woodcuttool.com/cut-list-calculator/"
+      },
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": "https://woodcuttool.com/cut-list-calculator/"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://woodcuttool.com/wood-waste-calculator/#software",
+      "name": "Wood Waste Calculator",
+      "url": "https://woodcuttool.com/wood-waste-calculator/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Material waste calculator",
+      "operatingSystem": "Any",
+      "description": "Free material calculator for estimating used area, scrap area, wood waste percentage, and waste cost from project parts and stock dimensions.",
+      "keywords": "wood waste calculator, material calculator, reduce wood waste, waste percentage, scrap cost calculator",
+      "featureList": [
+        "Waste percentage estimate",
+        "Used area estimate",
+        "Scrap area estimate",
+        "Waste cost estimate",
+        "Board and sheet workflow links"
+      ],
+      "isAccessibleForFree": true,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Woodworkers, DIY builders, remodelers, and material planners"
+      },
+      "provider": {
+        "@id": "https://woodcuttool.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://woodcuttool.com/wood-waste-calculator/"
+      },
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": "https://woodcuttool.com/wood-waste-calculator/"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://woodcuttool.com/board-foot-calculator/#software",
+      "name": "Board Foot Calculator",
+      "url": "https://woodcuttool.com/board-foot-calculator/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Lumber material calculator",
+      "operatingSystem": "Any",
+      "description": "Free board foot calculator for estimating lumber volume and rough material cost from thickness, width, length, quantity, and price.",
+      "keywords": "board foot calculator, lumber calculator, material calculator, woodworking calculator, carpentry material estimate",
+      "featureList": [
+        "Board foot calculation",
+        "Lumber volume estimate",
+        "Price per board foot",
+        "Material cost estimate",
+        "Related cut list links"
+      ],
+      "isAccessibleForFree": true,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Woodworkers, carpenters, cabinet shops, and lumber buyers"
+      },
+      "provider": {
+        "@id": "https://woodcuttool.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://woodcuttool.com/board-foot-calculator/"
+      },
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": "https://woodcuttool.com/board-foot-calculator/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://woodcuttool.com/tools/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a woodworking calculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A woodworking calculator is a planning tool that helps estimate cut lists, plywood layouts, material quantities, board feet, waste percentage, and project cost before cutting or buying stock."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a cut list optimizer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A cut list optimizer turns part dimensions, quantities, stock size, kerf, and layout rules into a cutting plan so woodworkers can reduce waste and review the project before cutting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reduce wood waste?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reduce wood waste by measuring real stock, entering every part, accounting for saw kerf, reviewing grain direction, comparing layouts, and using a plywood or cut list calculator before buying material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which WoodCutTool page should I use first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with the tools hub if you are choosing a workflow. Use the plywood cut calculator for sheet goods, the cut list calculator for boards, the wood waste calculator for scrap cost, and CutList for saved iPhone projects."
+          }
+        }
       ]
     }
-  }
+  ]
+}
   </script>
 </head>
 <body>

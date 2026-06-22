@@ -13,10 +13,95 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
-  <link rel="stylesheet" href="/assets/styles.css?v=20260620-i18n-nl-v2">
-  <script defer src="/assets/app.js?v=20260620-i18n-nl-v2"></script>
+  <link rel="stylesheet" href="/assets/styles.css?v=20260622-language-picker">
+  <script defer src="/assets/app.js?v=20260622-language-picker"></script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"Stair Stringer Calculator","url":"https://woodcuttool.com/stair-stringer-calculator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Client-side stair stringer calculator for risers, treads, angles, and stringer length."}
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://woodcuttool.com/#organization",
+      "name": "WoodCutTool",
+      "url": "https://woodcuttool.com"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://woodcuttool.com/stair-stringer-calculator/#software",
+      "name": "Stair Stringer Calculator",
+      "url": "https://woodcuttool.com/stair-stringer-calculator/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "DIY construction calculator",
+      "operatingSystem": "Any",
+      "description": "Free stair stringer calculator for rise, run, riser count, tread depth, stair angle, and stringer length planning.",
+      "keywords": "stair stringer calculator, DIY construction tools, stair calculator, rise and run calculator, construction calculator",
+      "featureList": [
+        "Riser count",
+        "Tread depth",
+        "Stair angle",
+        "Stringer length",
+        "Rise and run planning"
+      ],
+      "isAccessibleForFree": true,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "DIY builders, remodelers, carpenters, and construction planners"
+      },
+      "provider": {
+        "@id": "https://woodcuttool.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://woodcuttool.com/stair-stringer-calculator/"
+      },
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": "https://woodcuttool.com/stair-stringer-calculator/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://woodcuttool.com/stair-stringer-calculator/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a woodworking calculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A woodworking calculator is a planning tool that helps estimate cut lists, plywood layouts, material quantities, board feet, waste percentage, and project cost before cutting or buying stock."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a cut list optimizer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A cut list optimizer turns part dimensions, quantities, stock size, kerf, and layout rules into a cutting plan so woodworkers can reduce waste and review the project before cutting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reduce wood waste?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reduce wood waste by measuring real stock, entering every part, accounting for saw kerf, reviewing grain direction, comparing layouts, and using a plywood or cut list calculator before buying material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which WoodCutTool page should I use first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with the tools hub if you are choosing a workflow. Use the plywood cut calculator for sheet goods, the cut list calculator for boards, the wood waste calculator for scrap cost, and CutList for saved iPhone projects."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>

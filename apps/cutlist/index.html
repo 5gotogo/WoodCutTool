@@ -13,85 +13,130 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
-  <link rel="stylesheet" href="/assets/styles.css?v=20260621-yellow-review-stars">
+  <link rel="stylesheet" href="/assets/styles.css?v=20260622-language-picker">
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "MobileApplication",
-        "@id": "https://woodcuttool.com/apps/cutlist/#app",
-        "name": "CutList: Plywood Optimizer",
-        "url": "https://woodcuttool.com/apps/cutlist/",
-        "downloadUrl": "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871",
-        "applicationCategory": "UtilitiesApplication",
-        "applicationSubCategory": "Plywood cut list optimizer",
-        "operatingSystem": "iOS",
-        "isAccessibleForFree": true,
-        "description": "Offline plywood cut list app for iPhone that helps woodworkers create local projects, optimize sheet layouts, account for saw kerf, and export PDF cut plans.",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "url": "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871"
-        }
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://woodcuttool.com/#organization",
+      "name": "WoodCutTool",
+      "url": "https://woodcuttool.com"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://woodcuttool.com/apps/cutlist/#software",
+      "name": "CutList: Plywood Optimizer",
+      "url": "https://woodcuttool.com/apps/cutlist/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Cut list optimizer",
+      "operatingSystem": "iOS",
+      "description": "Offline iPhone cut list optimizer for plywood layout planning, cut optimization, material saving, kerf settings, saved projects, and PDF export.",
+      "keywords": "cut list optimizer, plywood layout planning, woodworking calculator, material saving, reduce wood waste",
+      "featureList": [
+        "Cut optimization",
+        "Plywood layout planning",
+        "Saw kerf settings",
+        "Material waste review",
+        "Saved local projects",
+        "PDF export"
+      ],
+      "isAccessibleForFree": true,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Woodworkers, cabinet makers, carpenters, DIY builders, and small shops"
       },
-      {
-        "@type": "FAQPage",
-        "@id": "https://woodcuttool.com/apps/cutlist/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is a cut list optimizer?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "A cut list optimizer is a tool that takes part sizes, quantities, sheet dimensions, kerf, and material rules, then creates a cutting layout to help reduce waste and plan more efficient plywood cuts."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I reduce wood waste?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You can reduce wood waste by measuring every part carefully, grouping similar parts, accounting for saw kerf, planning plywood sheet layouts before cutting, and using a cut list optimizer to compare material usage."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is CutList a plywood layout planning app?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. CutList is built for plywood layout planning, sheet-good cut optimization, saved local projects, kerf settings, and PDF export."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can CutList help with material saving?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. CutList helps you preview how parts fit on each sheet before you cut, so you can spot waste, revise layouts, and buy material with more confidence."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Does CutList work offline?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. CutList is designed for offline project planning on iPhone, with no account required for the core cut list workflow."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What tools are related to CutList?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Related tools include the free plywood cut calculator, cut list calculator, wood waste calculator, board foot calculator, and plywood cutting guide on WoodCutTool."
-            }
-          }
-        ]
+      "provider": {
+        "@id": "https://woodcuttool.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871"
+      },
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": "https://woodcuttool.com/apps/cutlist/"
+      },
+      "downloadUrl": "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871"
+    },
+    {
+      "@type": "Product",
+      "@id": "https://woodcuttool.com/apps/cutlist/#product",
+      "name": "CutList: Plywood Optimizer",
+      "brand": {
+        "@id": "https://woodcuttool.com/#organization"
+      },
+      "category": "Woodworking software",
+      "description": "Offline iPhone cut list optimizer for plywood layout planning, cut optimization, material saving, kerf settings, saved projects, and PDF export.",
+      "url": "https://woodcuttool.com/apps/cutlist/",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://woodcuttool.com/apps/cutlist/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a woodworking calculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A woodworking calculator is a planning tool that helps estimate cut lists, plywood layouts, material quantities, board feet, waste percentage, and project cost before cutting or buying stock."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a cut list optimizer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A cut list optimizer turns part dimensions, quantities, stock size, kerf, and layout rules into a cutting plan so woodworkers can reduce waste and review the project before cutting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reduce wood waste?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reduce wood waste by measuring real stock, entering every part, accounting for saw kerf, reviewing grain direction, comparing layouts, and using a plywood or cut list calculator before buying material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which WoodCutTool page should I use first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with the tools hub if you are choosing a workflow. Use the plywood cut calculator for sheet goods, the cut list calculator for boards, the wood waste calculator for scrap cost, and CutList for saved iPhone projects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is CutList a product or a free calculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CutList is an iPhone app product for saved woodworking projects, offline plywood layouts, cut optimization, and PDF export. WoodCutTool also provides free browser calculators for quick estimates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does CutList work offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. CutList is designed for offline iPhone project planning with no account required for the core cut list workflow."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>

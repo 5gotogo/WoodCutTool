@@ -3444,7 +3444,7 @@ function loadBlogTranslations() {
   if (!isBlogPage()) return Promise.resolve();
   if (blogTranslationsLoaded) return Promise.resolve();
   if (!blogTranslationsPromise) {
-    blogTranslationsPromise = fetch("/assets/blog-translations.json?v=20260620-i18n-nl-v2")
+    blogTranslationsPromise = fetch("/assets/blog-translations.json?v=20260622-language-picker")
       .then((response) => {
         if (!response.ok) throw new Error(`Blog translations failed: ${response.status}`);
         return response.json();
@@ -3544,15 +3544,20 @@ function setLanguage(lang) {
 function initI18n() {
   const nav = document.querySelector(".nav");
   if (nav && !document.getElementById("language-select")) {
+    const primaryAction = nav.querySelector(":scope > .button");
     const label = document.createElement("label");
     label.className = "language-picker";
     label.innerHTML = `
-      <span>Language</span>
+      <span class="visually-hidden">Language</span>
       <select id="language-select" aria-label="Language">
         ${Object.entries(LANGUAGE_OPTIONS).map(([value, name]) => `<option value="${value}">${name}</option>`).join("")}
       </select>
     `;
-    nav.appendChild(label);
+    if (primaryAction) {
+      nav.insertBefore(label, primaryAction);
+    } else {
+      nav.appendChild(label);
+    }
     label.querySelector("select").addEventListener("change", (event) => setLanguage(event.target.value));
   }
 

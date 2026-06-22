@@ -13,10 +13,111 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
-  <link rel="stylesheet" href="/assets/styles.css?v=20260620-i18n-nl-v2">
-  <script defer src="/assets/app.js?v=20260620-i18n-nl-v2"></script>
+  <link rel="stylesheet" href="/assets/styles.css?v=20260622-language-picker">
+  <script defer src="/assets/app.js?v=20260622-language-picker"></script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"Wood Waste Calculator","url":"https://woodcuttool.com/wood-waste-calculator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Client-side wood waste percentage, area, and cost calculator."}
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://woodcuttool.com/#organization",
+      "name": "WoodCutTool",
+      "url": "https://woodcuttool.com"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://woodcuttool.com/wood-waste-calculator/#software",
+      "name": "Wood Waste Calculator",
+      "url": "https://woodcuttool.com/wood-waste-calculator/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Material waste calculator",
+      "operatingSystem": "Any",
+      "description": "Free material calculator for estimating used area, scrap area, wood waste percentage, and waste cost from project parts and stock dimensions.",
+      "keywords": "wood waste calculator, material calculator, reduce wood waste, waste percentage, scrap cost calculator",
+      "featureList": [
+        "Waste percentage estimate",
+        "Used area estimate",
+        "Scrap area estimate",
+        "Waste cost estimate",
+        "Board and sheet workflow links"
+      ],
+      "isAccessibleForFree": true,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Woodworkers, DIY builders, remodelers, and material planners"
+      },
+      "provider": {
+        "@id": "https://woodcuttool.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://woodcuttool.com/wood-waste-calculator/"
+      },
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": "https://woodcuttool.com/wood-waste-calculator/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://woodcuttool.com/wood-waste-calculator/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a woodworking calculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A woodworking calculator is a planning tool that helps estimate cut lists, plywood layouts, material quantities, board feet, waste percentage, and project cost before cutting or buying stock."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a cut list optimizer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A cut list optimizer turns part dimensions, quantities, stock size, kerf, and layout rules into a cutting plan so woodworkers can reduce waste and review the project before cutting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reduce wood waste?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reduce wood waste by measuring real stock, entering every part, accounting for saw kerf, reviewing grain direction, comparing layouts, and using a plywood or cut list calculator before buying material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which WoodCutTool page should I use first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with the tools hub if you are choosing a workflow. Use the plywood cut calculator for sheet goods, the cut list calculator for boards, the wood waste calculator for scrap cost, and CutList for saved iPhone projects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does a wood waste calculator measure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It compares stock material against project parts to estimate used material, leftover material, waste percentage, and waste cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does waste matter for SEO product intent?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Users calculating waste are often close to buying material or choosing a cut list optimizer, so the page should connect estimates to practical tools like CutList."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>

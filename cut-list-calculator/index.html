@@ -13,10 +13,112 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
-  <link rel="stylesheet" href="/assets/styles.css?v=20260620-i18n-nl-v2">
-  <script defer src="/assets/app.js?v=20260620-i18n-nl-v2"></script>
+  <link rel="stylesheet" href="/assets/styles.css?v=20260622-language-picker">
+  <script defer src="/assets/app.js?v=20260622-language-picker"></script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebApplication","name":"Cut List Calculator","url":"https://woodcuttool.com/cut-list-calculator/","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","description":"Client-side woodworking cut list calculator that estimates optimized board cuts and waste."}
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://woodcuttool.com/#organization",
+      "name": "WoodCutTool",
+      "url": "https://woodcuttool.com"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://woodcuttool.com/cut-list-calculator/#software",
+      "name": "Cut List Calculator",
+      "url": "https://woodcuttool.com/cut-list-calculator/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Board cut list calculator",
+      "operatingSystem": "Any",
+      "description": "Free woodworking cut list calculator for board stock, part dimensions, quantities, saw kerf, optimized cutting order, and waste percentage.",
+      "keywords": "cut list calculator, woodworking calculator, board cut optimizer, material calculator, wood waste calculator",
+      "featureList": [
+        "Board stock planning",
+        "Cut sequence estimate",
+        "Part quantity entry",
+        "Saw kerf allowance",
+        "Waste percentage",
+        "Related plywood workflow links"
+      ],
+      "isAccessibleForFree": true,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Woodworkers, carpenters, DIY builders, and small shops"
+      },
+      "provider": {
+        "@id": "https://woodcuttool.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://woodcuttool.com/cut-list-calculator/"
+      },
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": "https://woodcuttool.com/cut-list-calculator/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://woodcuttool.com/cut-list-calculator/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a woodworking calculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A woodworking calculator is a planning tool that helps estimate cut lists, plywood layouts, material quantities, board feet, waste percentage, and project cost before cutting or buying stock."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a cut list optimizer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A cut list optimizer turns part dimensions, quantities, stock size, kerf, and layout rules into a cutting plan so woodworkers can reduce waste and review the project before cutting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reduce wood waste?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reduce wood waste by measuring real stock, entering every part, accounting for saw kerf, reviewing grain direction, comparing layouts, and using a plywood or cut list calculator before buying material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which WoodCutTool page should I use first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with the tools hub if you are choosing a workflow. Use the plywood cut calculator for sheet goods, the cut list calculator for boards, the wood waste calculator for scrap cost, and CutList for saved iPhone projects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this calculator for boards or plywood?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cut list calculator is best for board stock and linear cut planning. Use the plywood cut calculator or CutList app for sheet goods."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a cut list calculator help with buying material?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It helps estimate how boards will be consumed before purchasing stock, but final buying decisions should also consider defects, trimming, and extra allowance."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body>
