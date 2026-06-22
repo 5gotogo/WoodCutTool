@@ -52,9 +52,9 @@ function footer() {
 const articles = [
   {
     slug: "what-is-cut-list-optimization",
-    seoTitle: "What Is Cut List Optimization? A Practical Guide for Woodworkers",
+    seoTitle: "What Is Cut List Optimization? Simple Guide",
     h1: "What Is Cut List Optimization?",
-    description: "Learn what cut list optimization means, how it reduces waste, and when to use a cut list optimizer, plywood calculator, or woodworking app.",
+    description: "What is cut list optimization? Learn how it reduces waste, what inputs it needs, and when to use a cut list optimizer, plywood calculator, or app.",
     keywords: ["cut list optimization", "cut list optimizer", "woodworking calculator", "plywood layout planning", "reduce wood waste"],
     intro: "Cut list optimization is the process of arranging project parts on boards or plywood sheets so you can cut them with less waste, fewer mistakes, and a clearer material plan. It starts with a parts list, but it does not stop at dimensions. A useful optimized cut list also considers sheet size, board length, blade kerf, rotation, grain direction, repeated parts, and whether leftover pieces will be usable later.",
     sections: [
@@ -71,9 +71,9 @@ const articles = [
   },
   {
     slug: "how-to-read-a-cut-list",
-    seoTitle: "How to Read a Cut List: A Beginner's Guide to Cutting Diagrams",
+    seoTitle: "How to Read a Cut List (Beginner's Guide)",
     h1: "How to Read a Cut List",
-    description: "Learn how to read a cut list and cutting diagram, what each column means, and how to take part names, dimensions, kerf, and grain marks to the saw without mistakes.",
+    description: "Learn how to read a cut list and cutting diagram: what each column means and how to take part names, sizes, kerf, and grain to the saw without mistakes.",
     keywords: ["how to read a cut list", "cut list calculator", "cutting diagram", "woodworking cut list", "cut list optimizer"],
     intro: "A cut list is a table that tells you exactly which parts to cut, at what size, from which stock, and in what quantity. Reading it correctly is the difference between a smooth build and a pile of wrong-sized pieces. The columns usually cover a part name, finished width and length, thickness, quantity, material, and sometimes grain direction or a sheet number. A cutting diagram adds the spatial half: it shows where each part sits on the board or sheet so you can see the cut order, not just the sizes. This guide explains what each part of a cut list means and how to take it to the saw without second-guessing every measurement.",
     sections: [
@@ -91,7 +91,7 @@ const articles = [
     slug: "how-to-reduce-plywood-waste",
     seoTitle: "How to Reduce Plywood Waste Before Cutting",
     h1: "How to Reduce Plywood Waste",
-    description: "A practical guide to reducing plywood waste with better measurement, kerf planning, sheet layouts, offcut decisions, and cut list optimizer tools.",
+    description: "A practical guide to reducing plywood waste: better measurement, kerf planning, sheet layouts, smart offcut choices, and cut list optimizer tools.",
     keywords: ["reduce plywood waste", "plywood waste calculator", "plywood cut calculator", "material saving", "cut list optimizer"],
     intro: "To reduce plywood waste, plan the sheet layout before cutting, account for kerf, group repeated parts, protect grain direction, and keep only offcuts that are large enough to reuse. Waste is not just the pile of scraps at the end. It is usually created earlier through unclear dimensions, missing quantities, poor sheet orientation, and buying material before testing the layout.",
     sections: [
@@ -108,9 +108,9 @@ const articles = [
   },
   {
     slug: "saw-kerf-explained",
-    seoTitle: "Saw Kerf Explained: Why Your Cuts Come Out Short and How to Fix It",
+    seoTitle: "Saw Kerf Explained: Why Cuts Come Out Short",
     h1: "Saw Kerf Explained",
-    description: "Understand saw kerf, why it makes parts come out short, how to measure your blade kerf, and how to plan for it so cut lists and plywood layouts actually fit.",
+    description: "Saw kerf explained: why parts come out short, how to measure your blade kerf, and how to plan for it so your cut lists and plywood layouts actually fit.",
     keywords: ["saw kerf", "blade kerf", "kerf allowance", "plywood cut calculator", "cut list calculator"],
     intro: "Saw kerf is the width of material a blade removes with every cut. It sounds minor, but it is the reason a row of parts that adds up perfectly on paper can still come out short on real stock. A typical table saw blade has a kerf around 1/8 inch, or about 3 millimeters, so every cut quietly eats a little extra material. If you make ten cuts across a sheet without planning for kerf, you lose more than an inch of usable length. This guide explains what kerf is, why it makes cuts come up short, how to measure your own blade, and how to plan for it so your cut lists and layouts actually fit.",
     sections: [
@@ -126,9 +126,9 @@ const articles = [
   },
   {
     slug: "best-woodworking-calculator-workflow",
-    seoTitle: "Best Woodworking Calculator Workflow for Cut Lists, Plywood, and Waste",
+    seoTitle: "The Best Woodworking Calculator Workflow",
     h1: "Best Woodworking Calculator Workflow",
-    description: "Build a better woodworking calculator workflow with project scope, cut lists, plywood layout planning, waste estimates, and CutList app conversion.",
+    description: "Build the best woodworking calculator workflow: scope, cut lists, plywood layouts, waste estimates, and when to move a project into the CutList app.",
     keywords: ["woodworking calculator workflow", "woodworking calculator", "cut list calculator", "plywood cut calculator", "material calculator"],
     intro: "The best woodworking calculator workflow moves from project scope to rough material estimate, then to cut list optimization, waste review, and saved project planning. The order matters. If you start with a layout before the parts list is complete, the result may be fast but wrong. If you only calculate material area, you may miss the shape problem that decides how many boards or sheets are actually required.",
     sections: [
@@ -145,9 +145,9 @@ const articles = [
   },
   {
     slug: "diy-workshop-planning-guide",
-    seoTitle: "DIY Workshop Planning Guide: Tools, Layouts, Materials, and Cut Lists",
+    seoTitle: "DIY Workshop Planning Guide",
     h1: "DIY Workshop Planning Guide",
-    description: "Plan a DIY workshop workflow with cut lists, plywood layouts, material calculators, waste estimates, storage, and practical app-based project planning.",
+    description: "A DIY workshop planning guide: organize tools, material flow, cut lists, plywood layouts, waste, and offcut storage so every project moves faster.",
     keywords: ["DIY workshop planning", "DIY construction tools", "woodworking calculator", "cut list optimizer", "workshop material planning"],
     intro: "A useful DIY workshop plan is less about owning every tool and more about controlling the workflow from idea to material, layout, cut, assembly, and cleanup. The best workshop setup helps you measure clearly, store stock safely, plan cuts before cutting, and keep project notes where you can find them again.",
     sections: [
@@ -164,9 +164,9 @@ const articles = [
   },
   {
     slug: "material-estimation-for-carpentry",
-    seoTitle: "Material Estimation for Carpentry: Boards, Plywood, Waste, and Cost",
+    seoTitle: "Material Estimation for Carpentry (Guide)",
     h1: "Material Estimation for Carpentry",
-    description: "Learn how to estimate carpentry materials with board feet, plywood sheets, cut lists, waste allowance, and tool-based project planning.",
+    description: "Material estimation for carpentry made practical: board feet, plywood sheets, cut lists, waste allowance, and cost — so you don't over- or underbuy.",
     keywords: ["material estimation for carpentry", "material calculator", "woodworking calculator", "board foot calculator", "cut list optimizer"],
     intro: "Material estimation for carpentry means calculating the boards, plywood sheets, fasteners, trim allowances, waste, and cost needed to complete a build without underbuying or overbuying. A good estimate is not just a total. It explains where the material goes, what waste is expected, and which assumptions could change the final purchase.",
     sections: [
@@ -183,9 +183,9 @@ const articles = [
   },
   {
     slug: "how-many-sheets-of-plywood-do-i-need",
-    seoTitle: "How Many Sheets of Plywood Do I Need? A Practical Way to Estimate",
+    seoTitle: "How Many Sheets of Plywood Do I Need?",
     h1: "How Many Sheets of Plywood Do I Need?",
-    description: "Estimate how many sheets of plywood you need by laying out parts instead of dividing square footage, including kerf, grain direction, and waste, before buying.",
+    description: "How many sheets of plywood do you need? Estimate by laying out parts instead of dividing square footage — with kerf, grain, and waste factored in first.",
     keywords: ["how many sheets of plywood do i need", "plywood sheet estimate", "plywood cut calculator", "plywood layout planning", "reduce plywood waste"],
     intro: "The honest answer to how many sheets of plywood you need is that you cannot get it reliably by dividing square footage. A 4 by 8 sheet has 32 square feet, so it is tempting to add up your parts, divide, and round up. But plywood is cut as rectangles, not poured as area, so the shapes have to actually fit on the sheets. A project can total 60 square feet and still need three sheets instead of two because the leftover space on each sheet is the wrong shape for the remaining parts. This guide shows a practical way to estimate sheet count that accounts for shape, kerf, and grain, so you buy the right amount the first time.",
     sections: [
@@ -204,9 +204,9 @@ const articles = [
 const landingPages = [
   {
     slug: "plywood-cutting-optimization",
-    seoTitle: "Plywood Cutting Optimization for Cleaner Sheet Layouts",
+    seoTitle: "Plywood Cutting Optimization: Cleaner Layouts",
     h1: "Plywood Cutting Optimization",
-    description: "Plan plywood cutting optimization with fewer layout mistakes, better sheet use, saw kerf allowance, and a clear path from estimate to CutList.",
+    description: "Plywood cutting optimization made simple: fewer layout mistakes, better sheet use, kerf allowance, and a clear path from estimate to a saved cut plan.",
     keywords: ["plywood cutting optimization", "plywood cut calculator", "sheet layout optimization", "cut list optimizer", "reduce plywood waste"],
     problem: "Plywood cutting optimization becomes difficult when a project has many panels, repeated parts, visible grain direction, and a limited sheet budget. Many builders start with enough total square footage, then discover that the parts do not actually fit on the sheets once blade kerf, rotation limits, trimming, and offcut shape are included. The result is extra plywood, more scrap, and a cutting session that depends too much on memory.",
     steps: [
@@ -232,9 +232,9 @@ const landingPages = [
   },
   {
     slug: "woodworking-material-calculator",
-    seoTitle: "Woodworking Material Calculator for Boards, Plywood, Waste, and Cost",
+    seoTitle: "Woodworking Material Calculator Workflow",
     h1: "Woodworking Material Calculator",
-    description: "Use a woodworking material calculator workflow to estimate boards, plywood sheets, board feet, waste, cost, and cut planning before buying stock.",
+    description: "Use a woodworking material calculator workflow to estimate boards, plywood sheets, board feet, waste, and cost — and plan cuts before buying stock.",
     keywords: ["woodworking material calculator", "material calculator", "woodworking calculator", "board foot calculator", "wood waste calculator"],
     problem: "A woodworking material calculator is useful because material planning often fails in small hidden ways. A board list may ignore defects. A plywood estimate may use square footage instead of layout fit. A cost estimate may miss waste allowance. If those pieces are calculated separately, the project can look cheaper and simpler than it really is.",
     steps: [
@@ -260,9 +260,9 @@ const landingPages = [
   },
   {
     slug: "cut-list-planner",
-    seoTitle: "Cut List Planner for Cabinets, Shelves, and DIY Wood Projects",
+    seoTitle: "Cut List Planner for Cabinets & Shelves",
     h1: "Cut List Planner",
-    description: "Build a reliable cut list planner workflow for cabinets, shelves, plywood projects, board stock, saw kerf, saved layouts, and material saving.",
+    description: "Build a reliable cut list planner for cabinets, shelves, and plywood projects: clear part names, quantities, kerf, and saved layouts that cut rework.",
     keywords: ["cut list planner", "cut list optimizer", "cut list calculator", "woodworking calculator", "plywood layout planning"],
     problem: "A cut list planner solves a common woodworking problem: dimensions are scattered across sketches, notes, screenshots, and mental reminders. Without a clear planner, repeated parts get missed, part names become unclear, and the saw setup depends on interpretation. That creates rework even when the design itself is simple.",
     steps: [
@@ -288,9 +288,9 @@ const landingPages = [
   },
   {
     slug: "diy-wood-project-estimation",
-    seoTitle: "DIY Wood Project Estimation for Material, Cost, Waste, and Cut Lists",
+    seoTitle: "DIY Wood Project Estimation Made Simple",
     h1: "DIY Wood Project Estimation",
-    description: "Estimate a DIY wood project with material quantities, plywood sheets, board feet, waste allowance, cost, and a practical cut list workflow.",
+    description: "DIY wood project estimation step by step: material quantities, plywood sheets, board feet, waste allowance, cost, and a practical cut list workflow.",
     keywords: ["DIY wood project estimation", "woodworking material calculator", "material calculator", "DIY construction tools", "cut list planner"],
     problem: "DIY wood project estimation is hard because the first idea is usually not the final build. Dimensions change after measuring the room. Material changes after checking price. Waste changes after seeing the layout. If estimation happens only once, the project can quickly drift away from the original plan.",
     steps: [
@@ -316,9 +316,9 @@ const landingPages = [
   },
   {
     slug: "sheet-layout-optimization",
-    seoTitle: "Sheet Layout Optimization for Plywood, MDF, Panels, and Shop Projects",
+    seoTitle: "Sheet Layout Optimization: Plywood & MDF",
     h1: "Sheet Layout Optimization",
-    description: "Improve sheet layout optimization for plywood, MDF, cabinet panels, shop projects, kerf planning, offcut reuse, and saved CutList layouts.",
+    description: "Sheet layout optimization for plywood, MDF, and cabinet panels: kerf planning, smart part grouping, offcut reuse, and saved layouts that waste less.",
     keywords: ["sheet layout optimization", "plywood cutting optimization", "sheet cutting optimizer", "plywood layout planner", "cut list optimizer"],
     problem: "Sheet layout optimization is where many panel projects succeed or fail. Plywood, MDF, melamine, and other sheet goods may look simple because they are rectangular, but the layout still has constraints: saw kerf, safe cut sequence, panel orientation, fragile edges, finished faces, and offcuts that may or may not be worth keeping.",
     steps: [
@@ -475,7 +475,7 @@ function articlePage(article) {
   return `<!doctype html>
 <html lang="en">
 ${head({
-    title: `${article.seoTitle} | WoodCutTool Learn`,
+    title: `${article.seoTitle} | WoodCutTool`,
     description: article.description,
     canonical: `${siteUrl}/learn/${article.slug}/`,
     jsonLd: articleJsonLd(article)
@@ -630,8 +630,8 @@ function learnIndexPage() {
   return `<!doctype html>
 <html lang="en">
 ${head({
-    title: "Learn Woodworking Calculators, Cut List Optimization, and Material Estimation | WoodCutTool",
-    description: "Learn cut list optimization, plywood waste reduction, woodworking calculator workflows, DIY workshop planning, and carpentry material estimation.",
+    title: "Woodworking Calculator Guides: Cuts, Waste & Estimates",
+    description: "Guides on cut list optimization, plywood waste, saw kerf, and material estimation. Learn the method, then jump straight to the matching calculator.",
     canonical: `${siteUrl}/learn/`,
     jsonLd: learnJsonLd()
   })}
