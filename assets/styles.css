@@ -6716,3 +6716,22 @@ tr:last-child td {
   font-size: 12.5px;
   font-family: inherit;
 }
+
+/* Footer legal disclaimer block. */
+.footer-disclaimer {
+  padding: 18px 0 4px;
+  border-top: 1px solid rgba(93, 106, 97, 0.18);
+}
+.footer-disclaimer p {
+  margin: 0 0 8px;
+  max-width: 100%;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+.footer-disclaimer p:last-child {
+  margin-bottom: 0;
+}
+.footer-disclaimer strong {
+  color: var(--ink);
+}
