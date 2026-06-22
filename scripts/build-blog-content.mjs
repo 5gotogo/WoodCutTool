@@ -3,7 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260621-cadenza-blogs";
+const version = "20260622-pdf-scan-blogs";
 const siteUrl = "https://woodcuttool.com";
 
 
@@ -835,6 +835,183 @@ articles.push(
 );
 
 articles.push(
+  {
+    slug: "best-pdf-scanner-app-iphone-private-documents",
+    category: "PDF Scan",
+    title: "Best PDF Scanner App For iPhone: Scan Documents, Receipts, IDs, And Contracts Privately",
+    description: "A high-intent SEO guide to choosing a private PDF scanner app for iPhone, with practical tips for scanning documents, receipts, IDs, contracts, notes, forms, and business cards.",
+    kicker: "Private PDF scanner",
+    readTime: "16 min",
+    accent: "cutlist",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Scanner.view.750pix.jpg",
+      alt: "Flatbed scanner representing document scanning and PDF capture",
+      label: "Document scanning"
+    },
+    sections: [
+      ["Why People Search For A PDF Scanner App", "Most people do not search for a PDF scanner app because they want another productivity tool. They search because a paper document suddenly becomes urgent. A lease needs to be signed. A receipt needs to be submitted. A class handout needs to be saved before it disappears. An invoice, ID, contract, warranty, whiteboard, medical form, or business card needs to become a clean file that can be shared now. That is the moment a good iPhone scanner app has to win: open quickly, detect the page, correct the angle, enhance the text, save the PDF, and let the user move on."],
+      ["The Best Scanner App Is Fast And Boring In The Right Way", "A scanner app should not feel like a creative editing suite when the user is holding a form at a kitchen table or standing in a school hallway. The best PDF scanner app for iPhone is clear, predictable, and fast. PDF Scan is positioned around everyday paperwork: receipts, invoices, contracts, notes, IDs, forms, books, whiteboards, and business cards. The product value is not only capture. It is turning a messy real-world page into a shareable PDF without forcing an account, cloud workspace, or complicated setup."],
+      ["Camera Capture Has To Fix Real-World Problems", "Paper rarely sits perfectly flat. Phone cameras are held at an angle. Room lighting creates shadows. Receipts curl. Forms have low contrast. A strong mobile PDF scanner handles those realities with smart edge detection, perspective correction, and image enhancement. Edge detection helps frame the page automatically. Perspective correction makes angled shots look more like a proper scan. Enhancement improves shadows, contrast, and sharpness so text is easier to read. This is the practical difference between taking a photo of paper and creating a usable scan."],
+      ["Privacy Is A Conversion Feature", "Scanned documents are rarely neutral. They can contain addresses, signatures, payment information, tax details, school records, medical forms, travel IDs, business invoices, legal language, or client names. That makes privacy part of the product decision, not a footer. PDF Scan is built around offline use, no login, privacy-first workflows, on-device processing, and no cloud upload of scans, recognized text, contacts, receipts, signatures, or projects to its own cloud. For searches like private PDF scanner app, offline scanner app, no login scanner, and iPhone document scanner, this privacy message is central."],
+      ["A Good Scan Starts Before You Tap Capture", "The app matters, but the capture habit matters too. Place the paper on a contrasting surface. Use even light from the side instead of harsh light directly above the page. Flatten curled edges with a clean object if needed. Hold the phone parallel to the page when possible. Avoid fingers covering corners because edge detection uses the page boundary. Capture one page at a time when quality matters, then combine pages into a multi-page PDF. These small habits make OCR, export, and review more reliable later."],
+      ["Multi-Page PDFs Need Organization", "A single-page scan is easy. The problem starts when a project has twelve receipts, three signed pages, two ID copies, and a note sheet. PDF Scan supports multi-page PDFs, page reordering, saved projects, and PDF export choices. That matters because users often return to a scan later. A project-based library helps separate tax documents, rental papers, work contracts, school notes, medical forms, invoices, warranties, business cards, and travel paperwork. The best scanner app is not only a camera. It is a small document workflow."],
+      ["When To Save As PDF Versus Image", "PDF is usually the right choice for documents that need to be sent, stored, printed, signed, locked, or kept as a record. Images can be useful when one page needs to be inserted into another workflow or when the user wants the original capture. PDF Scan supports clean PDF files and image exports, which gives users the right format for the job. For SEO, this distinction matters because people search scan to PDF, document scanner app, PDF maker from camera, and save documents as PDF when they are comparing tools."],
+      ["Why PDF Scan Fits Everyday Paperwork", "PDF Scan is built for the daily version of document scanning: not a corporate archive room, but a person with an iPhone and a stack of paper. Students can scan class handouts and notes. Freelancers can scan contracts and invoices. Travelers can keep copies of travel paperwork. Parents can scan school forms. Small business owners can scan receipts, IDs, business cards, signed agreements, and warranties. The app keeps the workflow simple: scan, review, recognize, sign, convert, lock if needed, and share."],
+      ["A Realistic Buying Decision", "A high-conversion landing path should answer the user's real question: can I trust this app with my documents right now? PDF Scan has a strong answer because it combines camera scanning, project organization, OCR, PDF export, signatures, watermarking, PDF lock tools, business card recognition, receipt and invoice helpers, offline operation, no login, and no cloud upload to its own service. The app should be positioned as a private scanner for urgent everyday paperwork, not a generic file toy."],
+      ["Bottom Line", "The best PDF scanner app for iPhone is the one that helps users finish the document task immediately while keeping private files under their control. PDF Scan fits high-intent searches such as PDF scanner app, iPhone scanner app, scan documents to PDF, receipt scanner PDF, contract scanner app, ID scanner app, private scanner app, no login scanner app, and offline PDF scanner. The conversion message is simple: paper comes in, a clean PDF comes out, and the document stays yours."]
+    ],
+    checklist: ["Use a contrasting background and even light.", "Keep all page corners visible for edge detection.", "Review crop and perspective before exporting.", "Use PDF for shareable records and image export for page assets.", "Store related scans in projects so they are easy to find later."],
+    deepDive: {
+      figureTitle: "Document capture funnel: paper to private PDF",
+      figureCaption: "A scanner app has to handle capture, cleanup, organization, export, and privacy in one short workflow.",
+      figureStats: [
+        ["5 steps", "Scan, review, organize, export, share"],
+        ["0 login", "No account needed for the core workflow"],
+        ["Private files", "Receipts, IDs, contracts, forms, notes"]
+      ],
+      comparisonTitle: "Photo app vs PDF scanner app",
+      comparisonColumns: ["Workflow", "Best use", "What breaks down", "PDF Scan advantage"],
+      comparisonRows: [
+        ["Regular camera photo", "Quick visual memory", "Crooked pages, shadows, no multi-page PDF workflow", "Edge detection and perspective correction"],
+        ["General notes app", "Simple personal notes", "Weak document project workflow and export control", "Saved projects and PDF export choices"],
+        ["Cloud scanner", "Team sync or shared folders", "May require accounts and uploads", "Offline, no login, no cloud upload to its own service"],
+        ["Desktop flatbed scanner", "High-quality desk workflow", "Not portable when paper appears unexpectedly", "iPhone capture anywhere"],
+        ["PDF Scan", "Everyday private paperwork", "Not a bulk office ADF replacement", "Scan, OCR, sign, lock, organize, and share from one app"]
+      ],
+      faqs: [
+        ["What is the best PDF scanner app for iPhone?", "For everyday private paperwork, look for edge detection, perspective correction, image enhancement, multi-page PDFs, OCR, organization, export control, and a clear privacy model."],
+        ["Is a scanner app better than taking a photo?", "For documents, yes. A scanner app can crop edges, straighten perspective, enhance text, combine pages, create PDFs, and support OCR or signing workflows."],
+        ["Can I scan receipts and contracts with PDF Scan?", "Yes. PDF Scan is positioned for receipts, invoices, contracts, notes, IDs, forms, books, whiteboards, business cards, and signed pages."],
+        ["Does PDF Scan require a login?", "PDF Scan is positioned around no login and offline document workflows."],
+        ["Does PDF Scan upload documents to its own cloud?", "The app page states that PDF Scan does not upload scans, recognized text, contacts, receipts, signatures, or projects to its own cloud."],
+        ["Should I save scans as PDF or image?", "Use PDF for records, forms, contracts, receipts, and files you need to share or print. Use image export when a single page needs to be reused as an image asset."]
+      ],
+      sources: [
+        ["PDF Scan app page", "/apps/pdf-scan-scanner-and-reader/", "Internal product page describing scanning, OCR, PDF export, signing, locking, projects, and privacy promises."],
+        ["Image scanner overview", "https://en.wikipedia.org/wiki/Image_scanner", "General scanner context, including flatbed, sheetfed, handheld, and document camera concepts."],
+        ["Wikimedia Commons: Scanner.view image", "https://commons.wikimedia.org/wiki/File:Scanner.view.750pix.jpg", "Public domain image used to represent document scanning."]
+      ]
+    }
+  },
+  {
+    slug: "ocr-pdf-scanner-searchable-documents-guide",
+    category: "PDF Scan",
+    title: "OCR PDF Scanner Guide: Make Scanned Documents Searchable Without Retyping",
+    description: "A practical SEO guide to OCR PDF scanning, searchable documents, receipt and invoice text recognition, business card capture, and private on-device document workflows.",
+    kicker: "OCR scanning",
+    readTime: "17 min",
+    accent: "tile",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Test_OCR_document.jpg/1280px-Test_OCR_document.jpg",
+      alt: "OCR test document representing searchable text recognition",
+      label: "OCR text recognition"
+    },
+    sections: [
+      ["OCR Changes The Value Of A Scan", "A normal scanned PDF is often only an image of a page. That may be enough when the user simply needs to send a signed form, but it is not enough when they need to search, copy, review, or reuse the text. OCR, short for optical character recognition, helps turn the words inside a scan into editable or searchable text. For users searching OCR PDF scanner, searchable PDF app, scan text from image, receipt OCR app, invoice scanner OCR, or business card scanner, this is the difference between storing a picture and creating a useful document."],
+      ["What OCR Can And Cannot Promise", "OCR is powerful, but it is not magic. Clean printed text on a flat, well-lit page is usually easier to recognize than handwriting, faded receipts, unusual fonts, stamps, low contrast paper, or curved book pages. A strong scanner app should make OCR easier by improving the image first: crop the page, straighten perspective, reduce shadows, increase contrast, and sharpen text. PDF Scan includes OCR text recognition so users can copy, review, and share words from scanned documents instead of retyping everything."],
+      ["Good OCR Starts With Good Capture", "The fastest way to improve OCR is to capture better source images. Fill the frame with the document, keep the phone steady, avoid motion blur, use even lighting, and make sure the text is not skewed. For receipts, flatten folds and avoid glossy reflections. For business cards, capture the card on a plain background and make sure the contact details are not cut off. For invoices, capture the entire page so layout clues such as totals, dates, addresses, and line items remain visible. OCR works best when the app and the user cooperate."],
+      ["Searchable PDFs Reduce Future Work", "The value of OCR often appears later. A user may scan a warranty today and search for the model number six months from now. A freelancer may scan a contract and later search for a clause. A student may scan class notes and search a keyword before an exam. A small business owner may scan invoices and search by vendor. A searchable PDF saves future typing, future scrolling, and future frustration. That is why OCR should be described as a document retrieval feature, not only a text extraction feature."],
+      ["Receipts And Invoices Need Layout Awareness", "Receipts and invoices are not plain paragraphs. They contain dates, totals, merchants, line items, tax, addresses, invoice numbers, and sometimes tables. Research on scanned invoice extraction often combines OCR output with layout features because the position of text matters. PDF Scan positions receipt and invoice tools around extracting useful fields and exporting line items as CSV for expense tracking. That workflow is especially valuable for users who want to convert paper spending records into something they can review, share, or archive."],
+      ["Business Card Scanning Is A Special OCR Case", "Business cards look simple, but they are layout-heavy. Names, titles, companies, emails, phone numbers, and addresses may appear in different orders and styles. PDF Scan includes business card scanning that can recognize contact details and help save them to Contacts. The conversion angle is practical: fewer lost cards, less manual typing, and a faster way to move from a paper contact to a usable phone record."],
+      ["Privacy Matters More With OCR", "OCR can make documents more useful, but it can also make them more sensitive because recognized text is easier to search, copy, and analyze. That is why a privacy-first OCR scanner app has a stronger story than a generic scanner. PDF Scan states that document capture, image processing, OCR, PDF generation, signatures, and exports are handled on device, and that it does not upload scans or recognized text to its own cloud. Users searching private OCR scanner or offline OCR PDF app are often asking whether their documents have to leave the phone just to become searchable."],
+      ["How To Review OCR Results", "A responsible OCR workflow includes review. After recognition, check names, totals, dates, addresses, invoice numbers, and signature blocks before relying on the extracted text. If the source page is important, keep the visual PDF as the record and treat OCR text as a convenience layer. For business cards, confirm the contact name and phone number before saving. For receipts, compare the recognized total against the image. For contracts, search is useful, but final interpretation should still come from the original page."],
+      ["When OCR Is Worth Paying For", "OCR becomes subscription-worthy when it saves repeated manual work. A student scanning one page may only need a clean PDF. A freelancer scanning contracts, receipts, and invoices every week may benefit from searchable text, business card recognition, line item export, signatures, and PDF lock tools. A traveler may want offline scanning because documents appear in airports, hotels, and offices where internet access is unreliable. The strongest value proposition is not novelty. It is turning repeated paper friction into a fast, private workflow."],
+      ["Bottom Line", "An OCR PDF scanner app should make documents easier to find, copy, review, and reuse without making privacy harder. PDF Scan fits searches like OCR PDF scanner, searchable PDF app, receipt OCR scanner, invoice OCR app, business card scanner, scan text from image, offline OCR scanner, and private document scanner. The core message is direct: capture the page, recognize the words, keep control of the file."]
+    ],
+    checklist: ["Capture pages flat, sharp, and evenly lit.", "Straighten perspective before OCR when possible.", "Review important fields after recognition.", "Keep the visual PDF as the record and OCR text as a convenience layer.", "Use offline/on-device OCR when documents contain private information."],
+    deepDive: {
+      figureTitle: "OCR workflow: image first, text second",
+      figureCaption: "Searchable documents depend on both the quality of the source scan and the reliability of the text recognition layer.",
+      figureStats: [
+        ["OCR", "Turns scans into searchable text"],
+        ["Layout", "Dates, totals, names, and fields depend on position"],
+        ["Review", "Important extracted fields should be checked"]
+      ],
+      comparisonTitle: "OCR use cases by document type",
+      comparisonColumns: ["Document", "Useful OCR output", "Review carefully", "Why PDF Scan helps"],
+      comparisonRows: [
+        ["Receipt", "Merchant, date, total, line items", "Totals, taxes, card fragments", "Receipt and invoice tools plus CSV line item export"],
+        ["Invoice", "Vendor, invoice number, due date, amount", "Numbers, addresses, payment terms", "OCR plus project organization"],
+        ["Business card", "Name, phone, email, company", "Phone numbers and email spelling", "Recognize contact details and save to Contacts"],
+        ["Contract", "Searchable clauses and names", "Legal wording and signature pages", "Searchable PDF plus signing and PDF lock tools"],
+        ["Class notes", "Keywords and copied text", "Handwriting and diagrams", "Scan, OCR, organize by project"]
+      ],
+      faqs: [
+        ["What does OCR mean in a PDF scanner app?", "OCR means optical character recognition. It helps identify text inside scanned images so users can search, copy, or review the words."],
+        ["Can OCR read handwriting?", "Sometimes, but handwriting is harder than clean printed text. Lighting, sharpness, contrast, and handwriting style all affect results."],
+        ["What is a searchable PDF?", "A searchable PDF keeps the visual page while also including recognized text that can be found with search or copied in supported workflows."],
+        ["Is OCR useful for receipts?", "Yes. OCR can help capture merchant names, dates, totals, and line items, but important fields should still be reviewed against the image."],
+        ["Why does on-device OCR matter?", "OCR text may contain private data. On-device processing can reduce the need to upload sensitive documents just to recognize text."],
+        ["Does PDF Scan support OCR?", "Yes. The app page describes OCR text recognition, business card scanning, and receipt or invoice tools."]
+      ],
+      sources: [
+        ["PDF Scan app page", "/apps/pdf-scan-scanner-and-reader/", "Internal product page describing OCR text recognition, business card scanning, receipt and invoice tools, CSV export, and privacy."],
+        ["OCR4all workflow paper", "https://arxiv.org/abs/1909.04032", "Research context on OCR as a workflow involving preprocessing, layout recognition, character recognition, and post-processing."],
+        ["Scanned invoice extraction research", "https://arxiv.org/abs/2208.04011", "Discusses using OCR output with layout features for invoice data extraction."],
+        ["Wikimedia Commons: Test OCR document image", "https://commons.wikimedia.org/wiki/File:Test_OCR_document.jpg", "CC0 image used to represent OCR text recognition."]
+      ]
+    }
+  },
+  {
+    slug: "scan-to-pdf-workflow-receipts-invoices-signatures-lock",
+    category: "PDF Scan",
+    title: "Scan To PDF Workflow: Receipts, Invoices, Signatures, PDF Lock, And Project Organization",
+    description: "A conversion-focused SEO guide to building a scan to PDF workflow for receipts, invoices, contracts, IDs, signatures, locked PDFs, CSV exports, and organized document projects.",
+    kicker: "Scan to PDF workflow",
+    readTime: "18 min",
+    accent: "stairs",
+    image: {
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Scanner-test.pdf/page1-960px-Scanner-test.pdf.jpg",
+      alt: "Scanner test PDF page representing scan to PDF quality checks",
+      label: "Scan to PDF quality"
+    },
+    sections: [
+      ["A Scan To PDF Workflow Is More Than Capture", "The phrase scan to PDF sounds simple, but real paperwork has a workflow. A user captures pages, reviews the crop, reorders pages, recognizes text, signs when needed, locks sensitive files, exports the right size, and shares the final document. If any step is awkward, the user falls back to messy camera photos or scattered files. PDF Scan is designed to keep these steps together on iPhone: scan, review, recognize, sign, convert, protect, organize, and share."],
+      ["Start With The Destination", "Before scanning, decide what the PDF needs to do. A school form may need a signature and email attachment. A receipt may need OCR and CSV export. A contract may need page order, a signature, and password protection. A warranty may need to be saved in a project for later search. A whiteboard may only need a clean image export. Choosing the destination first helps the user decide whether to scan at higher quality, smaller file size, multi-page PDF, image export, or original image retention."],
+      ["Receipts Need Speed And Review", "Receipts are usually scanned under imperfect conditions: while traveling, after a meeting, in a car, at a counter, or during tax season cleanup. The workflow should be fast enough that the receipt is captured before it is lost, but not so automatic that errors go unnoticed. PDF Scan supports receipt and invoice tools that can extract useful fields and export line items as CSV. For users searching receipt scanner PDF, expense receipt scanner, scan receipt to PDF, or invoice scanner app, this combination of speed plus review is the key selling point."],
+      ["Invoices Need Structure", "Invoices often contain structured information: vendor, invoice number, date, due date, totals, tax, line items, and payment terms. A useful scan workflow keeps the page readable and the data recoverable. OCR can help pull text, while project organization keeps related invoices together. CSV export can help move line items into expense or bookkeeping workflows. The right app does not have to replace accounting software. It has to turn a paper invoice into a file that can be named, found, reviewed, and shared."],
+      ["Contracts And Forms Need Page Control", "Contracts, forms, applications, and signed agreements often become multi-page PDFs. Page order matters. Missing pages create delays. A scanner app should support multi-page capture, page reordering, saved projects, signatures, and export. PDF Scan includes multi-page PDFs, page reordering, signatures, watermarking, PDF lock tools, and share sheet export. That makes it useful when a document needs to look complete and professional before it leaves the phone."],
+      ["Signatures Should Stay Close To The Document", "A common mobile workflow is scan, sign, export, and send. If signing requires another app, the user risks losing page order, exporting the wrong version, or creating duplicate files. PDF Scan lets users sign a document and place the signature on the page. The value is especially clear for freelancers, parents, renters, students, contractors, and travelers who need to return a signed file quickly. For SEO, this supports scan and sign PDF, sign scanned document on iPhone, and PDF scanner with signature searches."],
+      ["PDF Lock Is About Appropriate Friction", "Some files should not be shared casually: IDs, contracts, medical forms, school records, tax documents, and signed agreements. PDF lock tools can help protect a document with a password before sharing. This is not a substitute for a full legal security policy, but it is useful friction for everyday document handling. A high-trust scanner app should make protection visible without making every simple scan difficult."],
+      ["Projects Prevent The Paper Pile From Becoming A File Pile", "Scanning paper is only useful if the resulting files can be found later. Without organization, the phone becomes a new paper pile with better resolution. PDF Scan supports project-based organization for tax documents, school notes, rental papers, travel receipts, work contracts, medical forms, invoices, business cards, warranties, and signed agreements. A project library creates a natural mental model: capture now, add more pages later, export the right file when asked."],
+      ["File Size And Quality Are A Tradeoff", "A high-quality scan is easier to read and better for OCR, but it may create a larger PDF. A smaller PDF is easier to email or upload, but aggressive compression can damage fine print, signatures, stamps, or small receipt text. PDF Scan supports export choices for smaller or higher quality PDF files. The practical advice is simple: use higher quality for contracts, IDs, forms, and OCR-heavy documents; use smaller exports when the document is simple and the recipient has file size limits."],
+      ["Why Offline Workflow Wins In The Real World", "Scanning happens in unpredictable places: airports, hotels, school offices, client sites, job sites, rental offices, and waiting rooms. Offline scanning matters because paperwork cannot always wait for a strong connection. PDF Scan is positioned around offline core scanning, organizing, OCR, PDF creation, and export workflows, no login, on-device processing, and no cloud upload to its own service. That reduces friction and strengthens trust at the same time."],
+      ["Bottom Line", "A scan to PDF workflow should take the user from paper to finished file without scattering the task across five apps. PDF Scan covers the core high-intent needs: document capture, receipts, invoices, OCR, CSV export, page reordering, signatures, watermarking, PDF lock, image export, projects, offline use, no login, and private on-device handling. It fits searches like scan to PDF app, PDF scanner with OCR, receipt scanner PDF, invoice scanner app, scan and sign PDF, PDF lock app, private document scanner, and offline PDF scanner app."]
+    ],
+    checklist: ["Decide whether the final file needs OCR, signature, lock, or small size.", "Capture all pages before exporting multi-page documents.", "Review page order before sharing contracts or forms.", "Use higher quality for OCR-heavy or fine-print pages.", "Group related scans into projects so files are easy to retrieve."],
+    deepDive: {
+      figureTitle: "Finished-file workflow: scan, edit, protect, share",
+      figureCaption: "The strongest scan to PDF workflow keeps page quality, file structure, privacy, and sharing in one place.",
+      figureStats: [
+        ["Multi-page", "Capture and reorder pages"],
+        ["OCR + CSV", "Useful for receipts and invoices"],
+        ["Lock", "Protect sensitive PDFs before sharing"]
+      ],
+      comparisonTitle: "Which PDF workflow fits the document?",
+      comparisonColumns: ["Document type", "Priority", "Export choice", "Extra step"],
+      comparisonRows: [
+        ["Receipt", "Capture before it is lost", "PDF or CSV line items", "Review total and merchant"],
+        ["Invoice", "Keep fields readable", "Searchable PDF plus CSV when useful", "Check invoice number and due date"],
+        ["Contract", "Page order and signatures", "Higher quality PDF", "Sign and lock when sensitive"],
+        ["ID or travel paper", "Clarity and privacy", "High-quality PDF or image", "Use PDF lock before sharing if needed"],
+        ["Whiteboard or notes", "Fast capture and readability", "Image or PDF", "Crop and enhance contrast"]
+      ],
+      faqs: [
+        ["What is the best scan to PDF workflow?", "Capture clearly, review crop and page order, run OCR if text matters, sign or lock if needed, choose the right file size, then export or share."],
+        ["Can PDF Scan handle receipts and invoices?", "Yes. PDF Scan describes receipt and invoice tools that extract useful fields and export line items as CSV for expense tracking."],
+        ["Can I sign a scanned PDF on iPhone?", "PDF Scan includes signature tools that let users place a signature on the page before sharing."],
+        ["When should I lock a scanned PDF?", "Consider locking files that contain IDs, contracts, medical forms, tax records, signatures, or other sensitive information before sharing."],
+        ["Should I export smaller or higher quality PDFs?", "Use higher quality for fine print, OCR, signatures, IDs, and contracts. Use smaller files when the document is simple and the recipient has size limits."],
+        ["Does an offline PDF scanner matter?", "Yes. Offline scanning helps when documents appear in places with weak or no internet, and it supports privacy by reducing dependency on cloud workflows."]
+      ],
+      sources: [
+        ["PDF Scan app page", "/apps/pdf-scan-scanner-and-reader/", "Internal product page describing multi-page PDFs, reordering, OCR, signatures, watermarks, PDF lock, export choices, and projects."],
+        ["PDF/A standard for long term archiving", "https://arxiv.org/abs/0906.0867", "Context on PDF/A as a long-term electronic document preservation format."],
+        ["Image scanner overview", "https://en.wikipedia.org/wiki/Image_scanner", "General context for document scanning concepts and scanning device types."],
+        ["Wikimedia Commons: Scanner-test PDF image", "https://commons.wikimedia.org/wiki/File:Scanner-test.pdf", "CC0 test PDF image used to represent scan quality review."]
+      ]
+    }
+  },
   {
     slug: "best-metronome-app-daily-practice-cadenza",
     category: "Cadenza",
@@ -1827,6 +2004,9 @@ function deepDiveFigure(article) {
   if (article.category === "Tinnitus") {
     return tinnitusDeepFigure(article, labels);
   }
+  if (article.category === "PDF Scan") {
+    return pdfScanDeepFigure(article, labels);
+  }
 
   return `<section class="deep-figure-section">
         <div class="deep-figure-copy">
@@ -1845,6 +2025,85 @@ function deepDiveFigure(article) {
             <span class="kerf-line kerf-one"></span>
             <span class="kerf-line kerf-two"></span>
           </div>
+          <figcaption>${escapeHtml(detail.figureCaption || "")}</figcaption>
+          <div class="deep-stat-row">${labels.map(([value, label]) => `<span><strong>${escapeHtml(value)}</strong><em>${escapeHtml(label)}</em></span>`).join("")}</div>
+        </figure>
+      </section>`;
+}
+
+function pdfScanVisualVariant(article) {
+  const variants = {
+    "best-pdf-scanner-app-iphone-private-documents": "capture",
+    "ocr-pdf-scanner-searchable-documents-guide": "ocr",
+    "scan-to-pdf-workflow-receipts-invoices-signatures-lock": "workflow"
+  };
+  return variants[article.slug] || "capture";
+}
+
+function pdfScanDeepModel(article) {
+  const variant = pdfScanVisualVariant(article);
+  const models = {
+    capture: `<div class="pdf-capture-stage">
+            <span class="pdf-phone-shell">
+              <span class="pdf-phone-speaker"></span>
+              <span class="pdf-camera-frame">
+                <span class="pdf-page-shape">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+                <span class="pdf-scan-beam"></span>
+                <span class="pdf-corner corner-one"></span>
+                <span class="pdf-corner corner-two"></span>
+                <span class="pdf-corner corner-three"></span>
+                <span class="pdf-corner corner-four"></span>
+              </span>
+            </span>
+            <span class="pdf-side-note note-a">Edge detect</span>
+            <span class="pdf-side-note note-b">Private PDF</span>
+          </div>`,
+    ocr: `<div class="pdf-ocr-stage">
+            <span class="pdf-doc-card">
+              <span class="ocr-badge">OCR</span>
+              <span class="ocr-photo-block"></span>
+              <span class="ocr-line line-one"></span>
+              <span class="ocr-line line-two"></span>
+              <span class="ocr-line line-three"></span>
+              <span class="ocr-highlight"></span>
+            </span>
+            <span class="pdf-search-panel">
+              <span>Searchable PDF</span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>`,
+    workflow: `<div class="pdf-workflow-stage">
+            <span class="pdf-flow-step step-scan">Scan</span>
+            <span class="pdf-flow-step step-review">Review</span>
+            <span class="pdf-flow-step step-sign">Sign</span>
+            <span class="pdf-flow-step step-lock">Lock</span>
+            <span class="pdf-secure-card">
+              <span class="pdf-lock-mark"></span>
+              <span>Private PDF</span>
+            </span>
+          </div>`
+  };
+  return models[variant] || models.capture;
+}
+
+function pdfScanDeepFigure(article, labels) {
+  const detail = article.deepDive;
+  const variant = pdfScanVisualVariant(article);
+
+  return `<section class="deep-figure-section">
+        <div class="deep-figure-copy">
+          <p class="eyebrow">Visual model</p>
+          <h2>${escapeHtml(detail.figureTitle)}</h2>
+          <p>${escapeHtml(detail.figureCaption || "")}</p>
+        </div>
+        <figure class="deep-layout-figure pdf-scan-deep-figure pdf-scan-deep-${variant} ${escapeHtml(article.accent)}">
+          <div class="pdf-scan-deep-model" aria-hidden="true">${pdfScanDeepModel(article)}</div>
           <figcaption>${escapeHtml(detail.figureCaption || "")}</figcaption>
           <div class="deep-stat-row">${labels.map(([value, label]) => `<span><strong>${escapeHtml(value)}</strong><em>${escapeHtml(label)}</em></span>`).join("")}</div>
         </figure>
@@ -2120,6 +2379,7 @@ function blogIndex() {
     ["QuiltFit", "quiltfit"],
     ["Stairs", "stairs"],
     ["Tile", "tile"],
+    ["PDF Scan", "pdf-scan"],
     ["Cadenza", "cadenza"],
     ["Tinnitus", "tinnitus"]
   ];
@@ -2134,7 +2394,7 @@ function blogIndex() {
 <html lang="en">
 ${head({
     title: "Blogs | WoodCutTool",
-    description: "Research-style articles about CutList optimization, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
+    description: "Research-style articles about CutList optimization, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
     canonical: "https://woodcuttool.com/blog/"
   })}
 <body>
@@ -2154,7 +2414,7 @@ ${head({
           <div class="blog-directory-content">
           <label class="blog-search">
             <span>Search the library</span>
-            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search CutList, Cadenza, QuiltFit, stairs...">
+            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search CutList, PDF Scan, Cadenza, QuiltFit...">
           </label>
           <nav class="blog-directory-nav" aria-label="Blog topic shortcuts">
             ${categoryLinks}
@@ -2179,8 +2439,8 @@ ${head({
       <div class="blog-hero-copy">
         <p class="breadcrumb"><a href="/">Home</a> / Blogs</p>
         <p class="eyebrow">Industry research library</p>
-        <h1>Research notes for builders, makers, musicians, wellness apps, and layout-obsessed planners.</h1>
-        <p class="lead">Deeper articles on CutList optimization, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
+        <h1>Research notes for builders, makers, document workflows, musicians, wellness apps, and layout-obsessed planners.</h1>
+        <p class="lead">Deeper articles on CutList optimization, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
       </div>
       <div class="blog-console" aria-label="Blog topic map">
         <div class="console-top"><span></span><span></span><span></span></div>
@@ -2191,7 +2451,7 @@ ${head({
         </div>
         <div class="console-stats">
           <strong>${articles.length}</strong><span>research briefs</span>
-          <strong>4</strong><span>planning disciplines</span>
+          <strong>${categories.length}</strong><span>topic areas</span>
         </div>
       </div>
     </section>
@@ -2201,6 +2461,7 @@ ${head({
       <a href="#quiltfit">QuiltFit</a>
       <a href="#stairs">Stairs</a>
       <a href="#tile">Tile</a>
+      <a href="#pdf-scan">PDF Scan</a>
       <a href="#cadenza">Cadenza</a>
       <a href="#tinnitus">Tinnitus</a>
     </section>
@@ -2227,6 +2488,11 @@ ${head({
     <section class="blog-section" id="tile" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Tile</p><h2>Tile layout, waste, joints, and wet-area planning.</h2></div>
       <div class="blog-grid">${articles.filter((article) => article.category === "Tile").map(articleCard).join("\n        ")}</div>
+    </section>
+
+    <section class="blog-section" id="pdf-scan" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">PDF Scan</p><h2>Private document scanning, OCR, scan to PDF workflows, signatures, and file organization.</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === "PDF Scan").map(articleCard).join("\n        ")}</div>
     </section>
 
     <section class="blog-section" id="cadenza" data-blog-section>
@@ -2352,6 +2618,9 @@ const zhArticleTitles = {
   "quiltfit-quilt-retreat-prep": "用 QuiltFit 准备拼布营项目",
   "quiltfit-restart-unfinished-quilt-project": "用 QuiltFit 重启未完成的拼布项目",
   "quiltfit-fabric-shop-decision-workflow": "在布料店用 QuiltFit 做购买决策",
+  "best-pdf-scanner-app-iphone-private-documents": "iPhone 最佳 PDF 扫描 App：私密扫描文档、收据、证件和合同",
+  "ocr-pdf-scanner-searchable-documents-guide": "OCR PDF 扫描指南：把扫描件变成可搜索文档",
+  "scan-to-pdf-workflow-receipts-invoices-signatures-lock": "Scan To PDF 工作流：收据、发票、签名、PDF 加锁和项目整理",
   "best-metronome-app-daily-practice-cadenza": "日常练习最佳节拍器 App：速度、Tap Tempo、重音和曲目单",
   "guitar-tuner-app-cents-a4-reference-cadenza": "吉他调音器 App 指南：音分、A4 参考音、半音阶调音和 Drone",
   "music-practice-tracker-setlist-metronome-tuner-cadenza": "音乐练习追踪流程：曲目单、速度笔记、调音和日常重复"
@@ -2362,6 +2631,7 @@ const zhCategory = {
   QuiltFit: "QuiltFit",
   Stairs: "楼梯",
   Tile: "瓷砖",
+  "PDF Scan": "PDF 扫描",
   Cadenza: "Cadenza",
   Tinnitus: "耳鸣",
   "Classic guide": "经典指南"
@@ -2408,6 +2678,16 @@ const zhSectionTemplates = {
     ],
     checklist: ["确定视觉中心和主基准线。", "检查边缘切片宽度。", "按图案增加损耗预留。", "铺贴前干铺关键区域。"]
   },
+  "PDF Scan": {
+    headings: ["先确定最终文件用途", "拍清楚再做 OCR", "按项目整理扫描件", "导出前检查隐私"],
+    bodies: [
+      "扫描前先判断文件要用于提交、报销、存档、签名还是分享。用途不同，PDF 质量、页面顺序、OCR、签名和加锁需求也不同。",
+      "OCR 的效果取决于原始扫描质量。尽量让纸张平整、光线均匀、边缘完整，再用裁切、透视校正和增强工具提高可读性。",
+      "把合同、收据、发票、证件、课堂资料、旅行文件和保修单分项目保存。扫描不是终点，之后能不能找回来同样重要。",
+      "包含身份证件、签名、金额、地址、客户信息或医疗表格的文件要谨慎分享。需要时使用 PDF 加锁，并优先选择离线、无登录、设备端处理的流程。"
+    ],
+    checklist: ["确认文件要 PDF、图片、OCR 还是 CSV。", "检查裁切、方向和页面顺序。", "重要字段要人工复核。", "敏感 PDF 分享前考虑加锁。"]
+  },
   Cadenza: {
     headings: ["先保存练习目标", "用节拍器稳定节奏", "用调音器确认音准", "把设置留给下一次"],
     bodies: [
@@ -2433,6 +2713,7 @@ function zhKicker(article) {
   if (article.category === "QuiltFit") return "拼布规划";
   if (article.category === "Stairs") return "楼梯设计";
   if (article.category === "Tile") return "瓷砖排版";
+  if (article.category === "PDF Scan") return "PDF 扫描";
   if (article.category === "Cadenza") return "音乐练习";
   return "指南";
 }
@@ -2449,6 +2730,9 @@ function zhDescription(article) {
   }
   if (article.category === "Tile") {
     return `围绕“${zhTitle(article)}”的瓷砖排版研究，帮助在施工前判断视觉基准、损耗、切割和关键节点。`;
+  }
+  if (article.category === "PDF Scan") {
+    return `围绕“${zhTitle(article)}”的 PDF 扫描流程，帮助用户把纸质文档、收据、发票、合同、证件、签名和 OCR 文本整理成私密、可分享的文件。`;
   }
   if (article.category === "Cadenza") {
     return `围绕“${zhTitle(article)}”的音乐练习流程，帮助演奏者把节拍器、调音器、曲目单、速度笔记和离线隐私放在同一个练习工具里。`;

@@ -4484,6 +4484,378 @@ tr:last-child td {
   height: 4px;
 }
 
+.pdf-scan-deep-figure {
+  padding: 0;
+}
+
+.pdf-scan-deep-model {
+  position: relative;
+  min-height: 280px;
+  padding: 22px;
+  border: 1px solid rgba(43, 102, 118, 0.18);
+  border-radius: 10px;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.38) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.38) 1px, transparent 1px),
+    linear-gradient(135deg, #eef6f4 0%, #f8f4ea 50%, #edf3fb 100%);
+  background-size: 44px 44px, 44px 44px, auto;
+}
+
+.pdf-scan-deep-model span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.pdf-capture-stage,
+.pdf-ocr-stage,
+.pdf-workflow-stage {
+  position: relative;
+  display: grid;
+  min-height: 236px;
+  height: 100%;
+}
+
+.pdf-capture-stage {
+  grid-template-columns: minmax(150px, 0.9fr) minmax(160px, 1fr);
+  gap: 18px;
+  align-items: center;
+}
+
+.pdf-phone-shell {
+  position: relative;
+  justify-self: end;
+  width: min(178px, 100%);
+  aspect-ratio: 0.52;
+  padding: 18px 12px 16px;
+  border-radius: 30px;
+  background: #1f2d34;
+  box-shadow: 0 18px 34px rgba(31, 45, 52, 0.2);
+}
+
+.pdf-phone-speaker {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 54px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.32);
+  transform: translateX(-50%);
+}
+
+.pdf-camera-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #d9ebe8, #f7f4eb);
+  overflow: hidden;
+}
+
+.pdf-page-shape {
+  position: absolute;
+  inset: 34px 18px 28px;
+  display: grid;
+  align-content: center;
+  gap: 9px;
+  padding: 20px 18px;
+  border-radius: 8px;
+  background: #fffef8;
+  box-shadow: 0 8px 18px rgba(31, 45, 52, 0.16);
+  transform: rotate(-4deg);
+}
+
+.pdf-page-shape span {
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(43, 102, 118, 0.2);
+}
+
+.pdf-page-shape span:nth-child(2) {
+  width: 72%;
+}
+
+.pdf-page-shape span:nth-child(3) {
+  width: 56%;
+  background: rgba(213, 144, 52, 0.32);
+}
+
+.pdf-scan-beam {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 50%;
+  height: 4px;
+  border-radius: 999px;
+  background: #2f7b72;
+  box-shadow: 0 0 16px rgba(47, 123, 114, 0.48);
+}
+
+.pdf-corner {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-color: #2f7b72;
+  border-style: solid;
+}
+
+.corner-one {
+  top: 24px;
+  left: 18px;
+  border-width: 3px 0 0 3px;
+}
+
+.corner-two {
+  top: 24px;
+  right: 18px;
+  border-width: 3px 3px 0 0;
+}
+
+.corner-three {
+  right: 18px;
+  bottom: 22px;
+  border-width: 0 3px 3px 0;
+}
+
+.corner-four {
+  bottom: 22px;
+  left: 18px;
+  border-width: 0 0 3px 3px;
+}
+
+.pdf-side-note {
+  justify-self: start;
+  width: min(210px, 100%);
+  min-height: 58px;
+  padding: 12px 16px;
+  border: 1px solid rgba(43, 102, 118, 0.14);
+  border-radius: 8px;
+  color: #1f2d34;
+  font-weight: 950;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.note-a {
+  align-self: end;
+}
+
+.note-b {
+  align-self: start;
+  background: #f2d28a;
+}
+
+.pdf-ocr-stage {
+  grid-template-columns: minmax(180px, 0.8fr) minmax(180px, 1fr);
+  gap: 20px;
+  align-items: center;
+}
+
+.pdf-doc-card,
+.pdf-search-panel,
+.pdf-secure-card {
+  border: 1px solid rgba(43, 102, 118, 0.16);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 14px 30px rgba(31, 45, 52, 0.12);
+}
+
+.pdf-doc-card {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  min-height: 212px;
+  padding: 22px;
+}
+
+.ocr-badge {
+  justify-self: start;
+  padding: 7px 11px;
+  border-radius: 999px;
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 950;
+  background: #2f7b72;
+}
+
+.ocr-photo-block {
+  width: 48%;
+  height: 48px;
+  border-radius: 7px;
+  background: linear-gradient(135deg, #4b83d1, #73c0c6);
+}
+
+.ocr-line,
+.ocr-highlight,
+.pdf-search-panel span {
+  height: 9px;
+  border-radius: 999px;
+  background: rgba(43, 102, 118, 0.18);
+}
+
+.line-one {
+  width: 92%;
+}
+
+.line-two {
+  width: 74%;
+}
+
+.line-three {
+  width: 84%;
+}
+
+.ocr-highlight {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 42px;
+  height: 26px;
+  border-radius: 6px;
+  background: rgba(213, 144, 52, 0.2);
+}
+
+.pdf-search-panel {
+  display: grid;
+  gap: 14px;
+  min-height: 158px;
+  padding: 20px;
+}
+
+.pdf-search-panel span:first-child {
+  height: auto;
+  justify-content: flex-start;
+  color: #1f2d34;
+  font-weight: 950;
+  background: transparent;
+}
+
+.pdf-search-panel span:nth-child(3) {
+  width: 82%;
+  background: rgba(47, 123, 114, 0.28);
+}
+
+.pdf-search-panel span:nth-child(4) {
+  width: 62%;
+  background: rgba(213, 144, 52, 0.34);
+}
+
+.pdf-workflow-stage {
+  grid-template-columns: repeat(5, minmax(66px, 1fr));
+  gap: 12px;
+  align-items: center;
+}
+
+.pdf-workflow-stage::before {
+  content: "";
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 45%;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(43, 102, 118, 0.22);
+}
+
+.pdf-flow-step {
+  position: relative;
+  min-height: 82px;
+  padding: 12px 8px;
+  border: 1px solid rgba(43, 102, 118, 0.15);
+  border-radius: 9px;
+  color: #1f2d34;
+  font-weight: 950;
+  background: rgba(255, 255, 255, 0.84);
+}
+
+.step-review {
+  background: #dbece7;
+}
+
+.step-sign {
+  background: #f2d28a;
+}
+
+.step-lock {
+  color: white;
+  background: #2f7b72;
+}
+
+.pdf-secure-card {
+  grid-column: 2 / span 3;
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 12px;
+  align-items: center;
+  min-height: 76px;
+  padding: 12px 16px;
+  color: #1f2d34;
+  font-weight: 950;
+}
+
+.pdf-lock-mark {
+  position: relative;
+  width: 42px;
+  height: 34px;
+  border-radius: 7px;
+  background: #2f7b72;
+}
+
+.pdf-lock-mark::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: -17px;
+  width: 24px;
+  height: 22px;
+  border: 5px solid #2f7b72;
+  border-bottom: 0;
+  border-radius: 999px 999px 0 0;
+}
+
+@media (max-width: 640px) {
+  .pdf-scan-deep-model {
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .pdf-capture-stage,
+  .pdf-ocr-stage {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .pdf-phone-shell {
+    justify-self: center;
+    width: 150px;
+  }
+
+  .pdf-side-note {
+    justify-self: stretch;
+    width: auto;
+  }
+
+  .pdf-workflow-stage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 0;
+  }
+
+  .pdf-workflow-stage::before {
+    display: none;
+  }
+
+  .pdf-flow-step {
+    min-height: 64px;
+  }
+
+  .pdf-secure-card {
+    grid-column: 1 / -1;
+    grid-template-columns: 48px 1fr;
+  }
+}
+
 .tinnitus-deep-model {
   position: relative;
   display: grid;
