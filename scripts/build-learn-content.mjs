@@ -70,6 +70,24 @@ const articles = [
     cta: "Plan a real layout with CutList, or start with the free plywood and cut list calculators from the tools hub."
   },
   {
+    slug: "how-to-read-a-cut-list",
+    seoTitle: "How to Read a Cut List: A Beginner's Guide to Cutting Diagrams",
+    h1: "How to Read a Cut List",
+    description: "Learn how to read a cut list and cutting diagram, what each column means, and how to take part names, dimensions, kerf, and grain marks to the saw without mistakes.",
+    keywords: ["how to read a cut list", "cut list calculator", "cutting diagram", "woodworking cut list", "cut list optimizer"],
+    intro: "A cut list is a table that tells you exactly which parts to cut, at what size, from which stock, and in what quantity. Reading it correctly is the difference between a smooth build and a pile of wrong-sized pieces. The columns usually cover a part name, finished width and length, thickness, quantity, material, and sometimes grain direction or a sheet number. A cutting diagram adds the spatial half: it shows where each part sits on the board or sheet so you can see the cut order, not just the sizes. This guide explains what each part of a cut list means and how to take it to the saw without second-guessing every measurement.",
+    sections: [
+      ["Read the part name first, not the dimensions", "The part name is the most important column and the one beginners skip. Names like left side, fixed shelf, drawer bottom, or door rail tell you where the piece goes and which face is visible. Two parts can share the same width and length but have different grain or finish requirements. If you cut purely by dimension, identical-looking parts get mixed up during assembly. Read the name, find the part on the cutting diagram, then check the size."],
+      ["Understand width, length, and which is which", "Most cut lists list width first, then length, but conventions vary, so confirm before cutting. For sheet goods, width and length also imply grain direction: the grain usually runs along the longer dimension unless the part is marked otherwise. A 12 by 30 shelf cut the wrong way around still measures correctly but may show the grain running the wrong direction on a visible panel. When in doubt, match the part to its position on the layout diagram instead of trusting the numbers alone."],
+      ["Check quantity and group identical parts", "The quantity column saves time and prevents the most common error: cutting too few or too many of a repeated part. Group identical parts and cut them in one setup so they come out exactly the same size. A fence stop or a stop block makes repeated parts consistent. If the cut list came from the <a href=\"/cut-list-calculator/\">cut list calculator</a> or a layout in <a href=\"/apps/cutlist/\">CutList</a>, the quantities are already grouped for you, which is faster than counting parts by hand from a sketch."],
+      ["Account for kerf before you trust the sizes", "A cut list shows finished part sizes, but the saw blade removes material on every cut. If the list or diagram was built without kerf, the last part in a row may not fit even though the math looked correct on paper. A good cutting diagram already includes kerf between parts. If you built the list yourself, confirm the kerf value matches your actual blade before cutting, or run the parts through the <a href=\"/plywood-cut-calculator/\">plywood cut calculator</a> so the spacing reflects real cutting loss."],
+      ["Follow the cut order on the diagram", "A cutting diagram is not just a picture of finished parts. It implies a cut sequence: usually the longest, most stable cuts first, then breaking large pieces into smaller ones. Cutting in the wrong order can leave you handling an awkward, oversized piece on a small saw, which is both inaccurate and unsafe. Read the diagram from the largest cuts inward, and mark each part as you cut it so you never lose track of which pieces are done."],
+      ["Mark visible faces and grain direction", "A cut list often notes which face is visible or which way the grain should run, but it cannot enforce it. Before cutting, mark the good face of each panel with a pencil or tape. This matters most on cabinet sides, doors, and drawer fronts where mismatched grain is obvious in the finished piece. Reading the grain note and acting on it at the saw is what separates a clean build from one that technically fits but looks wrong."],
+      ["Turn the cut list into a shop document", "A cut list is most useful when it travels with the project. A number scribbled on scrap is easy to lose; a printed or exported list with part names, quantities, and a layout diagram is something you can check off as you work. Start from the <a href=\"/tools/\">WoodCutTool tools hub</a> to generate the list, then keep it visible at the saw. If the project will change or move between locations, save it in CutList so the layout, sizes, and quantities stay together and can be reopened or exported as a PDF."]
+    ],
+    cta: "Generate a clear cut list with the cut list calculator, or save the full diagram in CutList to use at the saw."
+  },
+  {
     slug: "how-to-reduce-plywood-waste",
     seoTitle: "How to Reduce Plywood Waste Before Cutting",
     h1: "How to Reduce Plywood Waste",
@@ -87,6 +105,24 @@ const articles = [
       ["Shop-floor checklist", "Before cutting plywood, verify sheet size, blade kerf, part quantity, rotation settings, and grain direction. Mark finished faces and label repeated parts. If you plan to keep offcuts, write the size and material on the piece immediately. This simple habit prevents a common problem: a potentially useful leftover becomes anonymous scrap because nobody remembers its thickness, grade, or original purpose."]
     ],
     cta: "Open CutList when the layout needs to be saved, exported, printed, or carried to the shop."
+  },
+  {
+    slug: "saw-kerf-explained",
+    seoTitle: "Saw Kerf Explained: Why Your Cuts Come Out Short and How to Fix It",
+    h1: "Saw Kerf Explained",
+    description: "Understand saw kerf, why it makes parts come out short, how to measure your blade kerf, and how to plan for it so cut lists and plywood layouts actually fit.",
+    keywords: ["saw kerf", "blade kerf", "kerf allowance", "plywood cut calculator", "cut list calculator"],
+    intro: "Saw kerf is the width of material a blade removes with every cut. It sounds minor, but it is the reason a row of parts that adds up perfectly on paper can still come out short on real stock. A typical table saw blade has a kerf around 1/8 inch, or about 3 millimeters, so every cut quietly eats a little extra material. If you make ten cuts across a sheet without planning for kerf, you lose more than an inch of usable length. This guide explains what kerf is, why it makes cuts come up short, how to measure your own blade, and how to plan for it so your cut lists and layouts actually fit.",
+    sections: [
+      ["What kerf actually is", "Kerf is the slot the blade cuts, and it is wider than the steel of the blade because the teeth are set or carbide-tipped to be wider than the plate. That extra width is what clears the cut so the blade does not bind. The practical result is that the material turned into sawdust is gone from your part. When you cut a board in half, you do not get two pieces that add up to the original length; you get two pieces minus one kerf. Multiply that across a full project and the loss adds up fast."],
+      ["Why your parts come out short", "The classic mistake is measuring from the same reference edge for several parts without accounting for the blade taking material each time. Or you mark two parts end to end on one board, cut the line, and find the second part is short by a blade width because the pencil line itself had thickness and the kerf landed on the wrong side of it. Kerf always removes material, so if you do not add it between parts, the last piece in a sequence is the one that comes up short. Knowing this turns a frustrating mystery into a predictable, planned-for number."],
+      ["How to measure your blade kerf", "Do not guess from the box. Make a single cut in scrap, then measure the width of the slot with calipers, or measure a part before and after a cut and take the difference. Different blades vary: a thin-kerf blade may be around 3/32 inch, a standard blade around 1/8 inch, and a dado or wide blade much more. Jigsaws, track saws, and band saws all have their own kerf. Once you know your real number, you can enter it into a calculator instead of relying on an assumption that may be off by enough to ruin a fit."],
+      ["Add kerf in your cut list, not at the saw", "The cheapest place to handle kerf is in planning, before any material is cut. When you build a cut list, the spacing between parts should already include the blade width. The <a href=\"/cut-list-calculator/\">cut list calculator</a> and the <a href=\"/plywood-cut-calculator/\">plywood cut calculator</a> both take a kerf value and position parts so the cuts reflect real material loss. That way the layout you see on screen is the layout you can actually cut, instead of one that looks possible but fails on the last piece of a row."],
+      ["Kerf and plywood sheet layouts", "Kerf matters most on full sheets because there are so many cuts. A 4 by 8 sheet broken into many cabinet parts can lose a surprising amount of usable area purely to blade width. If a layout ignores kerf, it may show parts fitting edge to edge that physically cannot, because the saw needs room between them. When you plan sheet goods, enter the real sheet size and the real kerf together. If the project is large or will change, save the layout in <a href=\"/apps/cutlist/\">CutList</a> so the kerf-aware plan stays with the job."],
+      ["When kerf changes your material total", "Kerf does not just shift dimensions; it can change how much stock you need to buy. A layout that fit on three sheets without kerf might need a fourth once blade width is added, because the parts no longer pack as tightly. This is why an area-only estimate can underbuy material. After laying out parts with kerf included, check the result against the <a href=\"/wood-waste-calculator/\">wood waste calculator</a> to see whether the extra cuts pushed you into another sheet or board, then decide whether a small dimension change avoids it."],
+      ["A simple kerf workflow", "Measure your blade kerf once and write it down. Enter that exact value into whichever calculator matches your material. Review the layout to confirm parts still fit with the blade width included, and watch for any row where the last part now comes up short. Start from the <a href=\"/tools/\">tools hub</a> to pick the right calculator, then cut from a kerf-aware plan. Handled this way, kerf stops being the reason a project comes up short and becomes just another number you control before the saw ever runs."]
+    ],
+    cta: "Enter your real blade kerf in the plywood or cut list calculator, then save the kerf-aware layout in CutList."
   },
   {
     slug: "best-woodworking-calculator-workflow",
@@ -144,6 +180,24 @@ const articles = [
       ["Estimation checklist", "Before buying, confirm finished dimensions, stock dimensions, waste allowance, kerf, material grade, quantity, and project status. If the job is still changing, keep the estimate flexible. If the design is approved, convert the estimate into a cut list and layout. That final step is what turns a cost guess into a practical carpentry plan."]
     ],
     cta: "Estimate material online, then save the final cut plan in CutList before buying or cutting stock."
+  },
+  {
+    slug: "how-many-sheets-of-plywood-do-i-need",
+    seoTitle: "How Many Sheets of Plywood Do I Need? A Practical Way to Estimate",
+    h1: "How Many Sheets of Plywood Do I Need?",
+    description: "Estimate how many sheets of plywood you need by laying out parts instead of dividing square footage, including kerf, grain direction, and waste, before buying.",
+    keywords: ["how many sheets of plywood do i need", "plywood sheet estimate", "plywood cut calculator", "plywood layout planning", "reduce plywood waste"],
+    intro: "The honest answer to how many sheets of plywood you need is that you cannot get it reliably by dividing square footage. A 4 by 8 sheet has 32 square feet, so it is tempting to add up your parts, divide, and round up. But plywood is cut as rectangles, not poured as area, so the shapes have to actually fit on the sheets. A project can total 60 square feet and still need three sheets instead of two because the leftover space on each sheet is the wrong shape for the remaining parts. This guide shows a practical way to estimate sheet count that accounts for shape, kerf, and grain, so you buy the right amount the first time.",
+    sections: [
+      ["Why dividing square footage fails", "Square footage estimates the material area, not the layout. If your parts were liquid, dividing total area by 32 would work. They are not. A wide shelf and a tall cabinet side may each fit on a sheet individually but waste the rest of that sheet because nothing else fits in the leftover strip. This is the single most common reason a plywood estimate comes up one sheet short. Area gives you a floor, the absolute minimum, but never the real answer. The real answer comes from arranging the actual rectangles."],
+      ["Start with a complete parts list", "List every panel before counting sheets: sides, top, bottom, shelves, back, dividers, doors, drawer parts, and any test pieces. Record width, length, quantity, and thickness for each. A forgotten back panel or a second shelf is enough to push a two-sheet job to three. The more complete the list, the more accurate the sheet count, because the layout can only be as good as the parts you give it. Skipping this step is why rough mental estimates are so often wrong."],
+      ["Lay the parts out on real sheets", "Instead of dividing, arrange the parts on sheet outlines, the same way you would actually cut them. This is exactly what the <a href=\"/plywood-cut-calculator/\">plywood cut calculator</a> does: you enter the sheet size, your parts, quantities, and kerf, and it packs them onto as few sheets as the shapes allow and reports the sheet count. For a project that will change or needs to be saved, do the same in <a href=\"/apps/cutlist/\">CutList</a> so the layout and the sheet count stay with the job."],
+      ["Include kerf so the count is honest", "Every cut removes a blade width, so parts cannot sit perfectly edge to edge. A layout that ignores kerf can show parts fitting on fewer sheets than reality allows. When that happens, the shortfall does not appear until you are at the saw and out of material. Enter your real blade kerf, usually around 1/8 inch, before reading the sheet count. A kerf-aware layout occasionally needs one more sheet than the ideal drawing, and it is far better to learn that before the store than after."],
+      ["Respect grain direction and finished faces", "Grain direction can change the count. If cabinet sides, doors, or visible panels all need the grain running the same way, those parts cannot be rotated to fill gaps, so the layout packs less tightly and may need more sheets. Mark which parts have a fixed orientation before laying them out. A sheet count that assumes free rotation will be too optimistic for a project with many visible faces, so be honest about which parts can turn and which cannot."],
+      ["Add a buffer, then check the waste", "Even a good layout deserves a small buffer for defects, damaged corners, and the occasional mistake. One extra sheet is cheap insurance on a multi-sheet job, especially with premium or prefinished plywood that is hard to source again. After you have a sheet count, run it through the <a href=\"/wood-waste-calculator/\">wood waste calculator</a> to see how much you are scrapping. If the waste is high, a small change to a shelf depth or cabinet width can sometimes drop the count by a full sheet."],
+      ["Confirm the count before you buy", "Before you load up at the store, confirm the sheet count came from a real layout, included kerf, respected grain direction, and carries a sensible buffer. Start from the <a href=\"/tools/\">WoodCutTool tools hub</a>, lay out the parts, and read the sheet count from the diagram rather than from a square-footage shortcut. For anything bigger than a single quick project, save the layout in CutList so you can reopen it, adjust quantities, and export the final plan. That is how you answer the sheet question once and buy correctly the first time."]
+    ],
+    cta: "Lay out your parts in the plywood cut calculator to get a real sheet count, then save it in CutList before buying."
   }
 ];
 
@@ -292,6 +346,94 @@ const landingPages = [
 
 const allLearnPages = [...articles, ...landingPages];
 
+// slug -> h1, for building cross-link anchors
+const pageTitleBySlug = Object.fromEntries(allLearnPages.map((p) => [p.slug, p.h1]));
+
+const PILLAR_SLUG = "what-is-cut-list-optimization";
+
+// G2 + G3: for each article, the sibling guides it links to (lateral spokes)
+// and the tools it links back to. Every non-pillar page links to the pillar.
+// Tool back-links here are what give stair / tile / quiltfit inbound links from /learn (G3).
+const relatedMap = {
+  // pillar: links DOWN to key supporting articles
+  "what-is-cut-list-optimization": {
+    guides: ["how-to-read-a-cut-list", "cut-list-planner", "how-to-reduce-plywood-waste"],
+    tools: [["/cut-list-calculator/", "Cut list calculator"], ["/apps/cutlist/", "CutList app"]]
+  },
+  "how-to-read-a-cut-list": {
+    guides: ["what-is-cut-list-optimization", "cut-list-planner", "saw-kerf-explained"],
+    tools: [["/cut-list-calculator/", "Cut list calculator"], ["/apps/cutlist/", "CutList app"]]
+  },
+  "how-to-reduce-plywood-waste": {
+    guides: ["what-is-cut-list-optimization", "saw-kerf-explained", "how-many-sheets-of-plywood-do-i-need"],
+    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/wood-waste-calculator/", "Wood waste calculator"]]
+  },
+  "saw-kerf-explained": {
+    guides: ["what-is-cut-list-optimization", "how-to-read-a-cut-list", "how-to-reduce-plywood-waste"],
+    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/cut-list-calculator/", "Cut list calculator"]]
+  },
+  "how-many-sheets-of-plywood-do-i-need": {
+    guides: ["what-is-cut-list-optimization", "how-to-reduce-plywood-waste", "sheet-layout-optimization"],
+    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/wood-waste-calculator/", "Wood waste calculator"]]
+  },
+  "best-woodworking-calculator-workflow": {
+    guides: ["what-is-cut-list-optimization", "woodworking-material-calculator", "diy-wood-project-estimation"],
+    tools: [["/tools/", "All WoodCutTool tools"], ["/quiltfit/", "QuiltFit calculator"]]
+  },
+  "diy-workshop-planning-guide": {
+    guides: ["what-is-cut-list-optimization", "diy-wood-project-estimation", "best-woodworking-calculator-workflow"],
+    tools: [["/stair-stringer-calculator/", "Stair stringer calculator"], ["/stringer/", "Stringer tool"]]
+  },
+  "material-estimation-for-carpentry": {
+    guides: ["what-is-cut-list-optimization", "woodworking-material-calculator", "diy-wood-project-estimation"],
+    tools: [["/board-foot-calculator/", "Board foot calculator"], ["/tile-calculator/", "Tile calculator"], ["/stair-stringer-calculator/", "Stair stringer calculator"]]
+  },
+  // landing pages
+  "plywood-cutting-optimization": {
+    guides: ["what-is-cut-list-optimization", "sheet-layout-optimization", "how-many-sheets-of-plywood-do-i-need"],
+    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"]]
+  },
+  "woodworking-material-calculator": {
+    guides: ["what-is-cut-list-optimization", "material-estimation-for-carpentry", "best-woodworking-calculator-workflow"],
+    tools: [["/board-foot-calculator/", "Board foot calculator"]]
+  },
+  "cut-list-planner": {
+    guides: ["what-is-cut-list-optimization", "how-to-read-a-cut-list", "best-woodworking-calculator-workflow"],
+    tools: [["/cut-list-calculator/", "Cut list calculator"]]
+  },
+  "diy-wood-project-estimation": {
+    guides: ["what-is-cut-list-optimization", "diy-workshop-planning-guide", "material-estimation-for-carpentry"],
+    tools: [["/tile-calculator/", "Tile calculator"], ["/quiltfit/", "QuiltFit calculator"]]
+  },
+  "sheet-layout-optimization": {
+    guides: ["what-is-cut-list-optimization", "plywood-cutting-optimization", "how-many-sheets-of-plywood-do-i-need"],
+    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"]]
+  }
+};
+
+function relatedGuidesSection(slug) {
+  const rel = relatedMap[slug];
+  if (!rel) return "";
+  const guideCards = (rel.guides || [])
+    .filter((g) => pageTitleBySlug[g] && g !== slug)
+    .map(
+      (g) =>
+        `<a href="/learn/${g}/"><span>Guide</span><strong>${escapeHtml(pageTitleBySlug[g])}</strong></a>`
+    )
+    .join("\n          ");
+  const toolCards = (rel.tools || [])
+    .map(([href, label]) => `<a href="${href}"><span>Tool</span><strong>${escapeHtml(label)}</strong></a>`)
+    .join("\n          ");
+  return `<section class="related-tools-guides">
+        <p class="eyebrow">Related guides</p>
+        <h2>Keep reading and pick the right tool</h2>
+        <div class="related-grid">
+          ${guideCards}
+          ${toolCards}
+        </div>
+      </section>`;
+}
+
 function articleJsonLd(article) {
   const graph = {
     "@context": "https://schema.org",
@@ -357,6 +499,7 @@ ${head({
           <div class="cta-row"><a class="button" href="/apps/cutlist/">Open CutList</a><a class="button secondary" href="/tools/">Explore tools</a></div>
         </div>
       </section>
+      ${relatedGuidesSection(article.slug)}
       ${toolLinks()}
     </article>
   </main>
@@ -452,7 +595,7 @@ ${head({
         </div>
       </section>
       ${faqSection(page)}
-      ${internalLinksSection(page)}
+      ${relatedGuidesSection(page.slug) || internalLinksSection(page)}
     </article>
   </main>
   ${footer()}
