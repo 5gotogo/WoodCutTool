@@ -429,6 +429,176 @@ const articles = [
       ["Color Changes Maintenance Perception", "Light grout can brighten a room but may show staining sooner. Dark grout hides more but can emphasize every line."]
     ],
     checklist: ["Treat grout as design geometry.", "Base joint width on tile variation.", "Align lines with features.", "Choose color for both look and maintenance."]
+  },
+  {
+    slug: "cutlist-floating-shelves-plywood",
+    category: "CutList",
+    title: "Floating Plywood Shelves: Cut List and Layout",
+    description: "Plan strong, clean floating shelves from a single plywood sheet, with a cut list, hidden cleat sizing, grain direction, and a sheet layout that wastes less.",
+    kicker: "Weekend project",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Why Floating Shelves Are A Good First Plywood Project", "Floating shelves are forgiving enough for a beginner but still teach the core skills: consistent rip widths, square crosscuts, grain direction on visible faces, and a hidden mounting system. Because every shelf is a repeated part, they are also a clear example of why batching parts on a sheet matters more than cutting them one at a time."],
+      ["Build The Cut List Before You Buy", "A floating shelf is usually a hollow box: a top, a bottom, a front edge, and two short returns, wrapped around a wall cleat. List those parts for every shelf with width, length, and quantity. Three shelves multiply fast, and a forgotten return or front edge is the most common reason a one-sheet plan quietly becomes a two-sheet trip."],
+      ["Size The Hidden Cleat First", "The cleat is what makes the shelf float, so size it before the skin. A 2x cleat or a torsion-style plywood cleat sets the internal cavity, and the plywood top and bottom must clear it. Plan the cleat thickness into the shelf depth so the box slides on without forcing, then confirm the wall studs match your shelf spacing."],
+      ["Lay The Parts Out For Grain And Waste", "Visible shelf tops and front edges should share grain direction so the finished run looks consistent. Lock those faces, then let the hidden bottoms and returns rotate to fill the sheet. Run the parts through the plywood cut calculator with your real kerf to confirm everything fits before you cut, and to keep any leftover strip rectangular enough to reuse."],
+      ["Cut Order That Keeps Edges Clean", "Break the sheet into long rips first while it is most stable, then crosscut the shelves and returns to length. Cutting the big rips first gives you straight reference edges for the smaller parts and keeps you from wrestling a full sheet for a tiny piece."]
+    ],
+    checklist: ["List top, bottom, front, and returns for every shelf.", "Size the hidden cleat before the plywood skin.", "Lock grain on visible tops and front edges.", "Confirm shelf spacing lands on wall studs.", "Run the layout with real kerf before cutting."]
+  },
+  {
+    slug: "cutlist-plywood-platform-bed",
+    category: "CutList",
+    title: "Plywood Platform Bed: Cut List for a Sturdy Frame",
+    description: "A practical cut list and sheet plan for a plywood platform bed, covering panel sizes, support spacing, mattress fit, and how many sheets the frame needs.",
+    kicker: "Furniture build",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Start From The Mattress, Not The Sheet", "A platform bed is sized by the mattress it carries. Confirm the real mattress dimensions and the height you want, then work backward to panel sizes. A common mistake is building to a nominal size and finding the mattress sits proud or rattles loose, so add only the clearance the design needs and no more."],
+      ["The Parts That Make A Platform Bed", "Most plywood platform beds are a deck supported by aprons and either legs or panel sides, often with a center beam for longer mattresses. List the deck panels, the aprons, the side panels or legs, and the center support. For a queen or king, the deck almost always splits into two or more panels, so plan that seam over a support rather than mid-span."],
+      ["Support Spacing Decides Stiffness", "A platform deck flexes if the supports are too far apart. Plan cross supports or slats so the span stays short enough for the plywood thickness you chose. Thicker plywood allows wider spacing; thinner plywood needs more frequent support. Decide this before the cut list, because it changes how many support pieces you cut."],
+      ["Fit The Panels On Your Sheets", "Deck panels are large, so they drive the sheet count. Two deck halves plus aprons and supports can run close to two full sheets, and adding storage drawers pushes it further. Use the plywood cut calculator to see how the large panels pack and whether a small dimension change saves a sheet before you buy."],
+      ["Assembly Order And Knockdown Hardware", "If the bed must move through doorways or fit in a small room, plan it as a knockdown frame with bolts or connector hardware instead of glue. Cut the parts so the heavy deck panels rest on the aprons and the load transfers into the legs or side panels, not into the fasteners alone."]
+    ],
+    checklist: ["Confirm real mattress size and bed height first.", "Plan deck seams over a support, not mid-span.", "Match support spacing to plywood thickness.", "Let large deck panels drive the sheet count.", "Use knockdown hardware if the bed must move."]
+  },
+  {
+    slug: "cutlist-built-in-bookshelf-wall",
+    category: "CutList",
+    title: "Built-In Bookshelf Wall: Planning the Cut List",
+    description: "Plan a floor-to-ceiling built-in bookshelf wall with a plywood cut list, consistent shelf spacing, scribe allowance, and a sheet count you can trust.",
+    kicker: "Built-in project",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["A Built-In Is Several Cabinets In A Row", "A floor-to-ceiling bookshelf wall is easier to plan as a series of identical plywood boxes rather than one giant unit. Decide a cabinet width that divides the wall cleanly, then repeat it. Repeated boxes make the cut list predictable, keep shelf parts interchangeable, and let the optimizer batch identical panels efficiently."],
+      ["Measure The Opening, Then Subtract For Scribe", "Walls and floors are rarely square, so a built-in needs scribe allowance to fit tight. Measure the opening at several heights and widths, take the smallest, then subtract a scribe margin on the end panels and a filler strip where the run meets the wall. Plan those filler and scribe parts into the cut list now, not at install."],
+      ["Shelf Spacing And Fixed Versus Adjustable", "Decide which shelves are structural and fixed and which are adjustable. Fixed shelves stiffen the carcass and should land where the design needs strength; adjustable shelves give flexibility for books of different heights. This decision changes your part count, because fixed shelves are full-depth structural panels and adjustable shelves are slightly shorter."],
+      ["Backs, Face Frames, And Material Groups", "Separate the carcass plywood from the back panels and any face frame or trim. Backs are often a thinner, cheaper plywood and should be grouped separately on their own sheets. Keeping material groups apart in the cut list stops a thin back panel from being planned on the same sheet as a 3/4 inch side."],
+      ["Confirm The Sheet Count Before You Commit", "A bookshelf wall can swallow several sheets fast once sides, shelves, backs, and a top run are added. List every part with quantity, then run it through the plywood cut calculator to get a real sheet count. For a build this size, save the layout in CutList so you can adjust cabinet width and re-check the count before buying a stack of plywood."]
+    ],
+    checklist: ["Divide the wall into repeated identical boxes.", "Add scribe and filler allowance from real measurements.", "Decide fixed versus adjustable shelves up front.", "Group thin backs separately from carcass plywood.", "Verify the full sheet count before buying."]
+  },
+  {
+    slug: "cutlist-workshop-storage-cabinet",
+    category: "CutList",
+    title: "Workshop Storage Cabinet: A One-Weekend Cut List",
+    description: "Build a sturdy shop storage cabinet from plywood with a simple cut list, adjustable shelves, a strong back, and a layout that uses offcuts well.",
+    kicker: "Shop project",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["A Shop Cabinet Is Where Offcuts Become Useful", "A workshop storage cabinet is the ideal project for using up shop-grade plywood and offcuts. It does not need show-quality faces, so you can relax grain rules, use utility panels, and put leftover pieces to work. That makes it a good first carcass build and a smart way to clear the offcut pile."],
+      ["Keep The Carcass Simple", "A basic shop cabinet is two sides, a top, a bottom, a back, and shelves. Decide whether it hangs on the wall or sits on the floor, because that changes the back panel strength and the need for a nailer strip. Plan a solid back for a hanging cabinet so it carries weight into the studs."],
+      ["Adjustable Shelves Earn Their Keep", "Shop storage changes constantly, so adjustable shelves are worth the small extra effort. Plan shelf pin holes or a simple cleat system, and cut shelves slightly shorter than the inside width so they drop in and out easily. List the shelves as a repeated part so the quantity is obvious."],
+      ["Lay It Out To Eat The Scrap Pile", "Because faces do not need to match, this is the project where you let the optimizer rotate freely and fill the sheet. Run the parts through the cut list calculator or plywood cut calculator, allow rotation on every panel, and aim to consume awkward offcuts instead of cutting into a fresh sheet."],
+      ["Build It To Be Modified Later", "A shop cabinet rarely stays the same. Use screws instead of only glue where you might add a drawer, a divider, or a power strip later. Cutting the carcass so it can be modified keeps the cabinet useful as the shop changes."]
+    ],
+    checklist: ["Use shop-grade plywood and offcuts freely.", "Plan a strong back for a hanging cabinet.", "Cut adjustable shelves slightly undersized.", "Allow full rotation to consume scrap.", "Use screws where you may modify it later."]
+  },
+  {
+    slug: "plywood-grades-for-cabinets-explained",
+    category: "CutList",
+    title: "Plywood Grades for Cabinets, Explained",
+    description: "Understand plywood grades, veneer cores, and face ratings so you pick the right sheet for cabinet boxes, doors, and shelves without overpaying or underbuilding.",
+    kicker: "Material guide",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Grades Describe Faces, Not Strength", "Plywood grade letters such as A, B, C, and D describe the appearance of each face, not how strong the panel is. An A face is smooth and nearly defect-free; a D face may have knots and patches. Sheets are graded on both faces, so an A-C panel has one good side and one rough side. For cabinets, that distinction decides which face shows and which faces inward."],
+      ["Match The Face To The Job", "Cabinet sides that show, doors, and exposed ends want a good face out, so A or B grade earns its cost there. Interior partitions, bottoms, and backs can use a lower face grade because nobody sees them. Buying a top grade for hidden parts wastes money; using a rough face on a visible end wastes the look. The cut list is where you should mark which parts need a show face."],
+      ["Core Matters As Much As The Face", "A smooth face over a void-filled core still makes a weak shelf and an ugly edge. Veneer-core plywood is light and strong; MDF-core is flat and stable but heavy; particleboard-core is cheap but weak at fasteners. Cabinet-grade plywood usually means a veneer core with few internal voids, which holds screws and finishes a clean edge."],
+      ["Hardwood Plywood And Species", "Cabinet builders often choose hardwood plywood like birch, maple, or oak for visible work. The species sets the look and the price, and prefinished birch is popular for cabinet interiors because it needs no finishing. Decide species and finish before the cut list so you can group prefinished and raw panels separately."],
+      ["Plan Material Groups In The Cut List", "Once you know which parts need which grade and species, split them into material groups before laying out sheets. A good cabinet plan rarely uses one single sheet type for everything. Run each group through the plywood cut calculator on its own so a cheap back panel is never planned onto an expensive show-grade sheet."]
+    ],
+    checklist: ["Read both face grades on every sheet.", "Put show-grade faces only where they show.", "Choose a void-free veneer core for cabinets.", "Pick species and finish before cutting.", "Lay out each material group separately."]
+  },
+  {
+    slug: "mdf-vs-plywood-for-cut-projects",
+    category: "CutList",
+    title: "MDF vs Plywood for Cut Projects",
+    description: "A practical comparison of MDF and plywood for cabinets, shelves, and panels, covering strength, weight, edges, screws, finishing, and how each one cuts.",
+    kicker: "Material comparison",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Two Sheet Goods, Two Different Jobs", "MDF and plywood both come in 4x8 sheets and both cut into rectangular parts, but they behave differently under load, fasteners, and moisture. Choosing between them is less about which is better and more about which fits the part. Many real projects use both: plywood where strength and screw-holding matter, MDF where a flat painted surface matters."],
+      ["Strength And Screw Holding", "Plywood is stronger across a span and holds screws far better, especially at edges, which is why cabinet carcasses and shelves usually favor it. MDF has no grain, so it can split or strip when screwed into an edge. If a part carries weight or takes fasteners on its edge, plywood is usually the safer call."],
+      ["Edges And Finishing", "MDF has a smooth, dense face and a uniform edge that paints beautifully with no grain to telegraph, which makes it a favorite for painted doors and trim. Plywood shows its layered edge and grain, so it often needs edge banding or a solid edge for a clean look. If the part will be painted and flat, MDF wins on finish; if it will be stained or screwed, plywood wins."],
+      ["Weight, Dust, And Moisture", "MDF is heavy and produces fine dust that demands good dust control and a mask. It also swells badly if it gets wet, so it is a poor choice for anything near moisture unless it is sealed. Plywood is lighter, more moisture-tolerant, and easier to handle on a full sheet, which matters when one person is breaking down sheets."],
+      ["How Each One Cuts And Lays Out", "Both cut cleanly with a sharp blade, but MDF dulls blades faster and benefits from a fine-tooth blade to avoid fuzzy edges. For layout, the kerf and rotation logic is the same: run either material through the plywood cut calculator with your real kerf. The difference is in part assignment, so keep MDF parts and plywood parts in separate material groups."]
+    ],
+    checklist: ["Use plywood where strength or screws matter.", "Use MDF for flat painted faces.", "Plan edge banding for visible plywood edges.", "Keep MDF away from moisture unless sealed.", "Group MDF and plywood parts separately when cutting."]
+  },
+  {
+    slug: "reading-a-cut-diagram-at-the-saw",
+    category: "CutList",
+    title: "Reading a Cut Diagram at the Saw",
+    description: "Turn a plywood cut diagram into clean parts at the saw: read the layout, follow a safe cut order, label parts, and avoid the mistakes that ruin a sheet.",
+    kicker: "Shop technique",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["A Diagram Is A Plan, Not Just A Picture", "A cut diagram shows where every part sits on the sheet, but its real value is the order it implies. Read it before you cut anything: find the largest parts, see which cuts run the full length, and notice where small parts come from leftover strips. A minute of reading prevents the most common error, which is cutting a small part first and losing your reference edges."],
+      ["Cut The Long Rips First", "Most diagrams are cut most safely by making the long rips first while the sheet is large and stable, then crosscutting those strips into parts. Cutting big to small keeps you from balancing a full sheet to free a tiny piece. It also gives every later part a clean, straight reference edge from the first rips."],
+      ["Account For Kerf On Every Line", "The diagram assumes a blade width between parts. If you cut exactly on a line without remembering the blade removes material, the last part in a row comes up short. Confirm the diagram was built with your real kerf, and when you mark by hand, keep the blade on the waste side of the line every time."],
+      ["Label Parts As You Cut", "Identical-looking panels get mixed up fast. As each part comes off the saw, write its name on the waste face or a piece of tape: left side, fixed shelf, back. Labeling at the saw saves confusion at assembly, especially when several parts share the same dimensions but have different roles or grain direction."],
+      ["Keep The Offcuts The Diagram Saved", "A good diagram leaves a usable rectangular offcut on purpose. Do not cut into it for a small part if the plan put that part elsewhere. Set the planned offcut aside, label its size and thickness, and it becomes free material for the next project instead of anonymous scrap."]
+    ],
+    checklist: ["Read the whole diagram before cutting.", "Make long rips first, then crosscut to size.", "Keep the blade on the waste side of each line.", "Label every part as it leaves the saw.", "Protect the rectangular offcut the plan saved."]
+  },
+  {
+    slug: "stair-stringer-material-and-thickness",
+    category: "Stairs",
+    title: "Stair Stringer Material and Thickness",
+    description: "Choose the right stringer material and thickness for safe stairs: lumber sizing, cut depth limits, spacing, and when to add a mid-span stringer.",
+    kicker: "Stair framing",
+    readTime: "8 min",
+    accent: "stairs",
+    sections: [
+      ["The Stringer Is The Structure", "A staircase is only as strong as its stringers, the sloped boards that carry every tread and all the load on them. Choosing the right material and thickness is a safety decision, not a cosmetic one. Before cutting notches, confirm the stock is straight, sound, and rated for the span and load the stairs will see."],
+      ["Common Stringer Material", "Interior stringers are often 2x12 dimensional lumber because it leaves enough material after the tread and riser notches are cut. Exterior or ground-contact stairs use pressure-treated lumber. Some builders use engineered lumber for long, straight runs. Whatever the material, pick boards with minimal knots along the notch lines, since a knot at a cut can become a weak point."],
+      ["Why 2x12 And The Cut Depth Rule", "When you notch a stringer for treads and risers, you remove material and leave a thinner remaining throat behind the cuts. Building guidance commonly calls for keeping enough solid material behind the notch, which is why a 2x12 is standard: a smaller board may not leave enough throat after notching. Plan the rise and run so the remaining material stays adequate, and check your local code for the exact requirement."],
+      ["Stringer Spacing And Mid-Span Support", "Stringer spacing depends on tread material and thickness. Closer spacing reduces tread flex and bounce. Wider stairs almost always need a third, mid-span stringer so the treads do not sag in the middle. Decide the number of stringers before you cut, because it changes how many identical notched boards you produce."],
+      ["Lay Out One, Then Use It As A Template", "Cut and check a single stringer first, test it against the actual rise and run, then use it as a template to mark the rest so every stringer matches. Use the stair stringer calculator to work out riser height, tread depth, and stringer length before marking, so the first board is right and the rest simply copy it."]
+    ],
+    checklist: ["Pick straight, sound stock with clear notch lines.", "Use 2x12 so notching leaves enough throat.", "Check local code for remaining-material rules.", "Add a mid-span stringer on wide stairs.", "Cut one stringer, verify it, then template the rest."]
+  },
+  {
+    slug: "tile-layout-for-small-bathrooms",
+    category: "Tile",
+    title: "Tile Layout for Small Bathrooms",
+    description: "Make a small bathroom feel larger with smart tile layout: where to start, how to handle cuts at walls, grout choices, and estimating tiles and boxes.",
+    kicker: "Tile planning",
+    readTime: "8 min",
+    accent: "tile",
+    sections: [
+      ["Layout Decides How Big The Room Feels", "In a small bathroom, the tile layout has an outsized effect on how large the space feels. Larger tiles with thin grout lines reduce visual clutter and can make a floor read bigger, while busy small tiles with wide grout can shrink it. Decide tile size and grout color as a design choice before you estimate quantities."],
+      ["Find The Layout Lines First", "Do not start tiling from a wall, because walls are rarely straight. Find the center or a balanced reference line so the cut tiles at opposite walls are similar in size. A layout that leaves a full tile at the doorway and a tiny sliver at the back wall looks unbalanced. Dry-lay a row to see where the cuts land before committing."],
+      ["Handle The Inevitable Cuts", "Small rooms are mostly edges, so cuts dominate. Plan the layout so cut tiles fall in less visible places, such as under a vanity or along the tub, and keep full tiles where the eye lands first. Around the toilet flange, drain, and fixtures, expect fiddly cuts and order enough extra tile to cover mistakes."],
+      ["Grout And Maintenance In A Wet Room", "Grout is both design and maintenance. Tighter joints look cleaner but show lippage if tiles vary; wider joints hide variation but collect more grime. In a small wet bathroom, choose a grout color and joint width you can keep clean, and seal where the manufacturer recommends. The grout line is part of the layout, not an afterthought."],
+      ["Estimate Tiles, Boxes, And Waste", "Once the layout and tile size are set, estimate how many tiles and boxes you need plus a waste allowance for cuts and breakage. Small rooms have a high cut ratio, so a larger waste percentage is realistic. Use the tile calculator to turn the room size, tile size, and waste allowance into a tile count, boxes required, and material cost before you buy."]
+    ],
+    checklist: ["Pick tile size and grout color as a design choice.", "Lay out from a balanced center line, not a wall.", "Hide cut tiles in low-visibility spots.", "Choose a grout joint you can keep clean.", "Add extra waste allowance for a high-cut room."]
+  },
+  {
+    slug: "floor-tile-vs-wall-tile-planning",
+    category: "Tile",
+    title: "Floor Tile vs Wall Tile: Planning the Difference",
+    description: "Floor and wall tile need different planning. Learn how rating, layout reference, cut placement, and waste estimates differ so each surface comes out right.",
+    kicker: "Tile planning",
+    readTime: "7 min",
+    accent: "tile",
+    sections: [
+      ["They Are Not Interchangeable", "Floor tile and wall tile look similar on a sample board but plan very differently. Floor tile must be rated to walk on and resist slipping; many wall tiles are too thin or too slick for floors. Confirm the tile is rated for the surface before you plan layout or buy, because the right look on the wrong surface fails fast."],
+      ["Different Reference Lines", "Floors are planned from a balanced center so cut tiles at opposite walls match. Walls are planned from a level horizontal reference and a plumb vertical one, often starting above the floor so the bottom row is not a thin sliver. The starting logic is different because gravity, sightlines, and the eye level of a standing person all change where balance matters."],
+      ["Cut Placement Changes By Surface", "On a floor, cuts hide along walls and under fixtures. On a wall, the most visible cuts are at outside corners, around a window, and at the top course where they meet eye level. Plan wall layouts so full tiles land where people look and cuts fall at the edges. This often means the layout for a wall and the floor below it do not line up, and that is fine."],
+      ["Waste Differs Too", "Wall layouts around windows, niches, and corners can generate more odd cuts than a simple rectangular floor, so the waste allowance is often higher on walls. A plain floor may need a smaller allowance, while a tub surround with a niche needs more. Estimate each surface separately rather than using one blanket number for the whole room."],
+      ["Estimate Each Surface On Its Own", "Because rating, layout, and waste all differ, plan the floor and the walls as separate jobs. Run each through the tile calculator with its own dimensions and waste allowance to get an honest tile count and box count for that surface, then add them. Mixing them into one estimate hides where the cuts and cost really land."]
+    ],
+    checklist: ["Confirm the tile is rated for floor or wall use.", "Use a center line on floors, a level line on walls.", "Put wall cuts at corners and edges, not eye level.", "Use a higher waste allowance for cut-heavy walls.", "Estimate floor and walls as separate surfaces."]
   }
 ];
 
