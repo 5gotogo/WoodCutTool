@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260622-footer-disclaimer";
+const version = "20260623-chart-colors";
 const siteUrl = "https://woodcuttool.com";
 
 
@@ -1519,6 +1519,582 @@ const articles = [
       ]
     },
     checklist: ["Treat wood dust as a real health hazard.", "Capture dust at the source.", "Wear eye, ear, and lung protection.", "Use the saw guard, riving knife, and push sticks.", "Plan cuts and support full sheets."]
+  },
+  {
+    slug: "plywood-cost-breakdown-by-project",
+    category: "CutList",
+    title: "Plywood Cost Breakdown by Project Type",
+    description: "See how plywood cost and sheet count scale across common projects, plus how grade and thickness change the budget, with charts to plan your spend.",
+    kicker: "Cost planning",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Cost Scales With Sheets, Not Square Feet", "Plywood budgets are driven by how many full sheets a project needs, because you buy whole sheets even when a part uses only a corner. A small bookcase and a wall of cabinets sit at opposite ends of this scale. Estimating sheet count first, then multiplying by sheet price, gives a far more honest budget than guessing from rough square footage."],
+      ["Project Type Sets The Baseline", "Different projects consume very different amounts of plywood. A single bookcase might fit on one or two sheets, while a kitchen's worth of cabinets can run well into double digits. Knowing the typical range for your project type lets you sanity-check an estimate before you ever open a calculator, and it flags when a design has crept larger than planned."],
+      ["Grade Multiplies The Sheet Price", "The same sheet count costs very differently depending on grade. Shop-grade or utility plywood is cheap; cabinet-grade hardwood plywood costs several times more; prefinished panels add more still but save finishing labor. Because grade multiplies across every sheet, choosing grade per part, instead of buying one premium grade for everything, is where real savings live."],
+      ["Thickness Changes Cost And Weight Together", "Thicker plywood costs more per sheet and weighs more to handle. Using 3/4 inch everywhere when 1/4 inch backs and 1/2 inch drawer parts would do quietly inflates both the budget and the labor. Matching thickness to the part keeps cost and weight sensible without weakening the structure."],
+      ["Build The Estimate, Then Pressure-Test It", "Turn the parts list into a real sheet count with the plywood cut calculator, price it by grade, and check the total against the project-type baseline. If it is high, look for a cheaper grade on hidden parts, a thinner panel where load allows, or a small dimension change that drops a sheet. The wood waste calculator helps see where scrap is inflating the count."]
+    ],
+    charts: [
+      {
+        title: "Typical plywood sheets by project type",
+        caption: "Approximate full 3/4-inch sheet counts; confirm with a real layout for your design.",
+        unit: "",
+        bars: [["Bookcase", 2], ["Desk", 2], ["Closet", 4], ["Garage wall", 8], ["Kitchen", 14]]
+      },
+      {
+        title: "Relative sheet cost by plywood grade (shop = 100)",
+        caption: "Indexed cost per sheet. Grade multiplies across every sheet in the project.",
+        unit: "",
+        bars: [["Shop", 100], ["Cabinet birch", 150], ["Prefinished", 175], ["Hardwood veneer", 210]]
+      },
+      {
+        title: "Sheet price index by thickness (1/2 in = 100)",
+        caption: "Thicker panels cost and weigh more; match thickness to the part to control both.",
+        unit: "",
+        bars: [["1/4 in", 65], ["1/2 in", 100], ["3/4 in", 135], ["1-1/8 in", 195]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Budget is sheets times grade times thickness",
+      figureCaption: "Estimate sheet count, then let grade and thickness choices shape the final cost.",
+      figureStats: [["Sheets", "The main cost driver"], ["Grade", "Multiplies every sheet"], ["Thickness", "Cost and weight together"]],
+      comparisonTitle: "Where to spend and where to save",
+      comparisonColumns: ["Part", "Save with", "Spend on", "Why"],
+      comparisonRows: [
+        ["Cabinet backs", "1/4 in shop grade", "-", "Hidden, low load"],
+        ["Shelves", "1/2 in where span allows", "3/4 in for long spans", "Match to sag"],
+        ["Visible sides", "-", "Cabinet-grade veneer", "Show face quality"],
+        ["Doors", "-", "Prefinished or MDF", "Finish quality"]
+      ],
+      faqs: [
+        ["How do I budget plywood by project?", "Estimate sheet count from a real layout, then multiply by sheet price for your chosen grade."],
+        ["Why is square footage a bad budget basis?", "You buy whole sheets, so layout and shape, not raw area, decide the count and cost."],
+        ["Where can I cut plywood cost?", "Use cheaper grades and thinner panels on hidden, low-load parts; spend on visible faces."],
+        ["Does thickness really change the budget much?", "Yes. Thicker sheets cost and weigh more, so over-speccing thickness inflates both."]
+      ],
+      sources: [
+        ["APA - The Engineered Wood Association", "https://www.apawood.org/", "Reference on plywood grades and performance relevant to material selection and cost."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Turn a parts list into a real sheet count to price your project."]
+      ]
+    },
+    checklist: ["Estimate sheet count before pricing.", "Check the total against a project-type baseline.", "Use cheaper grades on hidden parts.", "Match thickness to load to control cost.", "Trim a sheet with small dimension changes."]
+  },
+  {
+    slug: "saw-kerf-waste-by-cut-count",
+    category: "CutList",
+    title: "How Saw Kerf Adds Up: Waste by Cut Count",
+    description: "Quantify how saw kerf quietly eats material as cuts add up, how blade width and cut count change the loss, and why it can cost you a whole sheet.",
+    kicker: "Material math",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Every Cut Removes Material", "Saw kerf is the width of material each cut turns to dust. One cut is trivial, but cuts add up. A project that breaks a sheet into many parts makes many cuts, and the kerf from all of them is real material that vanishes before any part is finished. Treating kerf as a running total, not a per-cut afterthought, is what keeps a layout honest."],
+      ["Cut Count Drives The Total Loss", "The more parts, the more cuts, the more kerf. A simple two-part rip loses one kerf; a sheet diced into twenty small parts can lose dozens of kerf widths across both directions. As the cut count climbs, the cumulative loss grows with it, which is why busy layouts with many small parts need more material than the area math suggests."],
+      ["Blade Width Multiplies It", "Kerf loss scales directly with blade width. A thin-kerf blade near 3/32 inch removes noticeably less than a full-kerf blade near 1/8 inch, and across many cuts that gap widens. On a tight layout, switching to a thin-kerf blade can be the difference between fitting on the sheet and needing another."],
+      ["When Kerf Costs A Whole Sheet", "The painful case is when accumulated kerf pushes the last part off the sheet. The area was there, but the blade ate just enough that a part no longer fits, forcing a fresh sheet for one piece. This is entirely predictable if kerf is modeled up front, and entirely surprising if it is not."],
+      ["Model Kerf Before You Cut", "Measure your blade's real kerf and enter it into the plywood cut calculator before laying out parts. The tool spaces cuts to reflect true loss, so the layout you see is the layout that fits. Then the wood waste calculator shows how much of the sheet kerf and offcuts consume, so you can decide if a thinner blade or a tweak saves a sheet."]
+    ],
+    charts: [
+      {
+        title: "Cumulative kerf loss by cut count (1/8 in blade, inches)",
+        caption: "Total material removed grows with every cut. Many small parts mean many cuts and real loss.",
+        unit: " in",
+        bars: [["5 cuts", 0.6], ["10 cuts", 1.25], ["20 cuts", 2.5], ["40 cuts", 5]]
+      },
+      {
+        title: "Loss per 20 cuts by blade kerf (inches)",
+        caption: "Thinner blades remove less per cut, which compounds across a busy layout.",
+        unit: " in",
+        bars: [["3/32 thin", 1.9], ["1/8 full", 2.5], ["5/32 wide", 3.1], ["3/16 dado", 3.75]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Kerf is a running total, not a footnote",
+      figureCaption: "Cut count and blade width together set how much material disappears before parts are done.",
+      figureStats: [["1/8 in", "Typical full-kerf width"], ["1.25 in", "Loss across ten such cuts"], ["1 sheet", "What ignored kerf can cost"]],
+      comparisonTitle: "Kerf factors and impact",
+      comparisonColumns: ["Factor", "Lower loss", "Higher loss", "Lever"],
+      comparisonRows: [
+        ["Blade kerf", "Thin-kerf", "Full or dado", "Switch blades on tight layouts"],
+        ["Cut count", "Few large parts", "Many small parts", "Batch and group parts"],
+        ["Layout", "Kerf modeled", "Kerf ignored", "Enter real kerf first"],
+        ["Material", "Forgiving size", "Tight to the sheet", "Tweak a dimension"]
+      ],
+      faqs: [
+        ["How much does saw kerf waste?", "About 1/8 inch per cut with a full-kerf blade. Across ten cuts that is over an inch, and it grows with cut count."],
+        ["Does a thin-kerf blade save material?", "Yes, modestly per cut, but it compounds across many cuts and can save a sheet on a tight layout."],
+        ["Can kerf really cost a whole sheet?", "Yes. Accumulated kerf can push the last part off the sheet even when the area was technically there."],
+        ["How do I plan for kerf?", "Measure your blade's real kerf and enter it in the cut calculator so the layout reflects true loss."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (machining)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on sawing, kerf, and material removal in wood machining."],
+        ["WoodCutTool wood waste calculator", "/wood-waste-calculator/", "See how much of a sheet kerf and offcuts consume on your layout."]
+      ]
+    },
+    checklist: ["Treat kerf as a cumulative total.", "Expect more loss with more cuts.", "Use a thin-kerf blade on tight layouts.", "Enter real kerf before laying out parts.", "Check whether kerf costs an extra sheet."]
+  },
+  {
+    slug: "cabinet-sizing-standards-explained",
+    category: "CutList",
+    title: "Cabinet Sizing Standards, Explained with Numbers",
+    description: "Learn the standard cabinet dimensions for base, wall, and tall units, plus counter and toe-kick heights, with charts so your cut list fits real kitchens.",
+    kicker: "Design standards",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Standards Exist So Things Fit Together", "Cabinet dimensions are standardized so countertops, appliances, and hardware fit predictably. Building to standard heights and depths means a dishwasher slides in, a counter overhangs correctly, and wall cabinets clear the backsplash. Knowing the standards before you cut keeps a custom build compatible with off-the-shelf appliances and tops."],
+      ["Base Cabinet Numbers", "Base cabinets cluster around well-known figures: a carcass height that, plus toe kick and countertop, lands the work surface near a comfortable counter height, and a depth that supports a standard countertop overhang. Widths come in increments so runs add up cleanly. Building base boxes to these numbers keeps the kitchen ergonomic and the parts list regular."],
+      ["Wall And Tall Cabinet Numbers", "Wall cabinets hang at a height that clears the counter and backsplash while staying within reach, with depths shallow enough not to crowd the work zone. Tall pantry and oven cabinets run floor to a matching top line. Knowing these heights lets you plan a run where base, wall, and tall units align cleanly along the top."],
+      ["Toe Kick And Counter Heights", "The toe kick recess and its height set how the base sits and how comfortable it is to stand at. Combined with carcass height and countertop thickness, it produces the finished counter height. These small numbers matter: get the toe kick wrong and the whole run sits at an awkward height. Plan them into the cut list, not at assembly."],
+      ["Translate Standards Into A Cut List", "Once you know the target dimensions, convert them into parts: sides, bottoms, stretchers, shelves, and toe kicks at the right sizes. Use the kitchen cabinet cut list template as a starting point and the plywood cut calculator to lay the parts out. Standards give you the numbers; the cut list turns them into panels that fit real appliances and tops."]
+    ],
+    charts: [
+      {
+        title: "Standard cabinet heights (inches)",
+        caption: "Common nominal heights. Counter height combines base carcass, toe kick, and countertop.",
+        unit: " in",
+        bars: [["Toe kick", 4], ["Base carcass", 30], ["Counter", 36], ["Wall cab", 30], ["Tall cab", 84]]
+      },
+      {
+        title: "Standard cabinet depths (inches)",
+        caption: "Typical nominal depths. Base supports a counter overhang; wall stays shallow to keep the work zone clear.",
+        unit: " in",
+        bars: [["Wall", 12], ["Tall front", 24], ["Base", 24], ["Counter depth", 25]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Standard numbers keep a run compatible",
+      figureCaption: "Heights and depths are standardized so appliances, counters, and hardware fit predictably.",
+      figureStats: [["~36 in", "Common finished counter height"], ["24 in", "Standard base cabinet depth"], ["~18 in", "Typical counter-to-wall-cabinet gap"]],
+      comparisonTitle: "Cabinet types at a glance",
+      comparisonColumns: ["Type", "Nominal height", "Nominal depth", "Note"],
+      comparisonRows: [
+        ["Base", "About 30 in carcass", "24 in", "Plus toe kick and top"],
+        ["Wall", "24-42 in", "12 in", "Hung above counter"],
+        ["Tall / pantry", "About 84-96 in", "24 in", "Aligns with wall tops"],
+        ["Counter height", "About 36 in", "25 in top", "Carcass + kick + top"]
+      ],
+      faqs: [
+        ["What is standard kitchen counter height?", "Commonly about 36 inches, made up of the base carcass, toe kick, and countertop thickness."],
+        ["How deep are base cabinets?", "Typically 24 inches, which supports a standard countertop with overhang."],
+        ["How high are wall cabinets hung?", "So they clear the counter and backsplash while staying in reach, usually around 18 inches above the counter."],
+        ["Do I have to follow standards?", "For appliance and counter compatibility, mostly yes; custom needs can deviate but plan the consequences."]
+      ],
+      sources: [
+        ["U.S. Access Board: ADA accessibility (kitchens)", "https://www.access-board.gov/", "Federal guidance on accessible kitchen dimensions and reach ranges."],
+        ["WoodCutTool kitchen cabinet cut list template", "/templates/kitchen-cabinet-cut-list/", "Turn standard dimensions into a base and wall cabinet cut list."]
+      ]
+    },
+    checklist: ["Build to standard heights for appliance fit.", "Use 24 in base depth for counter overhang.", "Hang wall cabinets to clear the backsplash.", "Plan toe-kick and counter height together.", "Convert standards into a cut list."]
+  },
+  {
+    slug: "stair-comfort-dimensions-by-the-numbers",
+    category: "Stairs",
+    title: "Comfortable Stairs by the Numbers",
+    description: "See how riser height, tread depth, and stair angle affect comfort and safety, with charts and the rules of thumb that produce stairs people climb easily.",
+    kicker: "Stair design",
+    readTime: "9 min",
+    accent: "stairs",
+    sections: [
+      ["Comfort Is A Ratio, Not One Number", "Comfortable stairs come from the relationship between riser height and tread depth, not either alone. A tall riser with a shallow tread feels steep and tiring; a short riser with a deep tread feels endless. The classic rules of thumb balance the two so the step matches a natural stride. Always confirm final figures against your local building code."],
+      ["Riser Height And Why It Matters", "Riser height sets how far you lift each step. Too tall and stairs feel like climbing; too short and the rhythm breaks and people stumble. Comfortable residential risers sit in a fairly narrow band, and codes cap the maximum. Consistency across the flight matters as much as the number, because the body expects every step to be the same."],
+      ["Tread Depth And Foot Room", "Tread depth is how much room the foot gets. Too shallow and heels hang off, which is unsafe descending; deeper treads feel secure but stretch the staircase footprint. Codes set a minimum tread, and comfort usually wants a bit more than the minimum. Balancing tread against available run is a core stair planning trade-off."],
+      ["Stair Angle Ties It Together", "Riser and tread together produce the stair angle. Comfortable residential stairs fall in a moderate range; steeper than that feels like a ladder, shallower wastes floor space. The angle is a useful single check: if the math produces an angle outside the comfortable band, the riser-tread balance needs adjusting before cutting stringers."],
+      ["Run The Numbers, Then Verify Locally", "Compute total rise, number of risers, riser height, tread depth, and the resulting angle with the stair stringer calculator, and check them against the comfort ranges. Then verify every figure against your local code, because the calculator gives a comfortable starting point but the building department has the final say."]
+    ],
+    charts: [
+      {
+        title: "Comfortable vs steep riser height (inches)",
+        caption: "Comfortable residential risers sit in a narrow band; codes cap the maximum. Confirm locally.",
+        unit: " in",
+        bars: [["Shallow", 6], ["Comfortable", 7], ["Max typical", 7.75], ["Too steep", 9]]
+      },
+      {
+        title: "Tread depth and comfort (inches)",
+        caption: "Below the minimum is unsafe; comfortable treads give the foot secure room.",
+        unit: " in",
+        bars: [["Too shallow", 8], ["Min typical", 10], ["Comfortable", 11], ["Generous", 12]]
+      },
+      {
+        title: "Stair angle by design (degrees)",
+        caption: "Comfortable residential stairs fall in a moderate angle band; steeper feels like a ladder.",
+        unit: " deg",
+        bars: [["Shallow", 30], ["Comfortable", 35], ["Steepish", 40], ["Ladder-like", 50]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Riser and tread set the comfort",
+      figureCaption: "Balance riser height against tread depth, and check the resulting angle, before cutting stringers.",
+      figureStats: [["~7 in", "Comfortable riser height"], ["~11 in", "Comfortable tread depth"], ["~35 deg", "Comfortable stair angle"]],
+      comparisonTitle: "Comfort versus extremes",
+      comparisonColumns: ["Dimension", "Comfortable", "Uncomfortable", "Effect"],
+      comparisonRows: [
+        ["Riser", "About 7 in", "Over 8 in", "Steep, tiring climb"],
+        ["Tread", "About 11 in", "Under 10 in", "Heel overhang, unsafe"],
+        ["Angle", "Around 35 deg", "Over 42 deg", "Ladder-like feel"],
+        ["Consistency", "Uniform steps", "Varying steps", "Trip hazard"]
+      ],
+      faqs: [
+        ["What is a comfortable riser height?", "Around 7 inches for residential stairs, with codes capping the maximum near 7-3/4 inches. Confirm locally."],
+        ["What tread depth is comfortable?", "About 11 inches gives the foot secure room; codes set a minimum near 10 inches."],
+        ["What stair angle feels comfortable?", "A moderate angle around 35 degrees; much steeper begins to feel like a ladder."],
+        ["Does the code or comfort win?", "Meet code first, then aim for comfort within the allowed range. Verify figures with your local authority."]
+      ],
+      sources: [
+        ["CPSC: U.S. Consumer Product Safety Commission - stairs", "https://www.cpsc.gov/", "Stairs are a leading source of home injuries; dimension consistency improves safety."],
+        ["WoodCutTool stair stringer calculator", "/stair-stringer-calculator/", "Compute riser, tread, and angle, then verify against local code."]
+      ]
+    },
+    checklist: ["Balance riser height against tread depth.", "Keep risers near the comfortable band.", "Give treads secure foot room.", "Check the resulting stair angle.", "Verify every figure against local code."]
+  },
+  {
+    slug: "tile-quantity-and-cost-by-room",
+    category: "Tile",
+    title: "Tile Quantity and Cost by Room Size",
+    description: "See how tile count, boxes, and cost scale with room size and tile format, with charts so you can estimate a bathroom, kitchen, or floor before you buy.",
+    kicker: "Tile estimating",
+    readTime: "8 min",
+    accent: "tile",
+    sections: [
+      ["Quantity Scales With Area, Cost Scales With Choices", "Tile quantity follows the floor or wall area, but cost depends on tile format, grade, and waste. A small bathroom and a great room need very different amounts, and the same area in budget ceramic versus large-format porcelain lands at very different prices. Estimating area first, then layering format and waste, gives an honest budget."],
+      ["Bigger Rooms, More Boxes", "As room area grows, tile count and box count grow with it, but not always smoothly, because tiles come in boxes that cover a fixed area and you round up. A room just over a box boundary needs the same boxes as one well into the next range. Knowing the box coverage lets you estimate boxes, not just loose tile count."],
+      ["Tile Format Changes The Count And The Cuts", "Large-format tiles cover more area per piece, so a room needs fewer of them, but each cut wastes more and they demand a flatter floor. Small tiles and mosaics cover less per piece and create more grout lines and handling. Format changes both the count you buy and the difficulty of the install."],
+      ["Waste Allowance Protects The Budget", "Every room needs extra tile for cuts, breakage, and future repairs, and the right percentage depends on the layout and room shape. A plain rectangular floor needs less; a cut-up bathroom or a diagonal pattern needs more. Buying too little means a second order, often from a different dye lot, so the waste allowance is real budget, not optional."],
+      ["Estimate Before You Order", "Measure the area, choose the tile format, set a waste allowance for the layout, and turn it into a tile and box count with the tile calculator. That converts room size into the boxes you actually carry home and the cost you actually pay, instead of a rough guess that runs short halfway through the job."]
+    ],
+    charts: [
+      {
+        title: "Tiles needed by room area (12x12 tile, count)",
+        caption: "Approximate tile count before waste for a 12-inch tile. Add a waste allowance for cuts and breakage.",
+        unit: "",
+        bars: [["40 sq ft", 40], ["80 sq ft", 80], ["120 sq ft", 120], ["200 sq ft", 200]]
+      },
+      {
+        title: "Boxes needed by tile format (120 sq ft room)",
+        caption: "Larger formats cover more per box, so fewer boxes; small mosaics need many more.",
+        unit: "",
+        bars: [["Mosaic", 18], ["6x6", 12], ["12x12", 8], ["24x24", 6]]
+      },
+      {
+        title: "Waste allowance by layout (percent)",
+        caption: "Plain layouts need less; cut-up rooms and angled patterns need more extra tile.",
+        unit: "%",
+        bars: [["Plain floor", 10], ["Small bath", 15], ["Diagonal", 17], ["Herringbone", 20]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Area sets quantity, choices set cost",
+      figureCaption: "Room area drives tile count; format, grade, and waste drive the final cost.",
+      figureStats: [["Area", "Drives tile and box count"], ["Format", "Changes count and cuts"], ["Waste", "Real budget, not optional"]],
+      comparisonTitle: "Tile estimating factors",
+      comparisonColumns: ["Factor", "Lower cost", "Higher cost", "Effect"],
+      comparisonRows: [
+        ["Area", "Small room", "Large room", "More tile and boxes"],
+        ["Format", "Standard tile", "Large-format porcelain", "Fewer pieces, more waste per cut"],
+        ["Grade", "Budget ceramic", "Premium porcelain", "Price per box"],
+        ["Layout", "Plain straight", "Diagonal, cut-up", "Higher waste allowance"]
+      ],
+      faqs: [
+        ["How do I estimate tile for a room?", "Measure the area, choose a tile format, add a waste allowance, and convert to tile and box counts."],
+        ["Why round up to whole boxes?", "Tile sells in boxes covering a fixed area, so you round up and keep extra for repairs."],
+        ["Does tile size change how much I buy?", "Yes. Large formats need fewer pieces but waste more per cut; small tiles need many more pieces."],
+        ["How much waste should I add?", "Roughly 10 percent for plain floors, more for cut-up rooms and angled patterns."]
+      ],
+      sources: [
+        ["CPSC: U.S. Consumer Product Safety Commission", "https://www.cpsc.gov/", "Consumer safety reference relevant to flooring and installation."],
+        ["WoodCutTool tile calculator", "/tile-calculator/", "Convert room size and tile format into tile count, boxes, and cost."]
+      ]
+    },
+    checklist: ["Measure room area first.", "Pick a tile format before estimating.", "Round up to whole boxes.", "Set waste allowance by layout.", "Convert to tiles and boxes before ordering."]
+  },
+  {
+    slug: "wood-finish-types-compared",
+    category: "CutList",
+    title: "Wood Finish Types Compared, with Numbers",
+    description: "Compare oil, polyurethane, water-based, shellac, and wax finishes on durability, dry time, and difficulty, with charts to pick the right finish for your project.",
+    kicker: "Finishing guide",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["There Is No Single Best Finish", "Wood finishes trade off durability, ease, dry time, repairability, and look. A finish that is perfect for a cutting board is wrong for a floor, and vice versa. Choosing well means matching the finish to how the piece is used and how much effort you want to spend, not chasing one universal answer. The charts below compare the common options on the factors that decide the choice."],
+      ["Oil Finishes Are Easy And Repairable", "Penetrating oils soak into the wood, are very forgiving to apply, and are easy to repair by wiping on more. They give a low, natural look but offer modest surface protection and need re-coating over time. For low-wear furniture and a beginner-friendly process, oils are hard to beat, but they will not shrug off water rings like a film finish."],
+      ["Film Finishes Protect Best", "Polyurethane and other film finishes build a hard protective layer on the surface, resisting water, scratches, and wear far better than oils. That durability suits tabletops, floors, and high-use pieces. The trade-off is a more demanding application, longer dry times between coats, and harder spot repairs, since you are repairing a film, not refreshing an oil."],
+      ["Water-Based Finishes Balance Speed And Clarity", "Water-based finishes dry fast, stay clear without yellowing, and have low odor, which makes them popular for light woods and indoor work. They are durable and convenient but can raise the grain and need light sanding between coats. They sit between oils and oil-based film finishes on both effort and protection."],
+      ["Match The Finish To The Job", "Decide by use first. A workshop fixture wants speed; a dining table wants durability; a cutting board wants a food-safe, repairable oil; a light modern piece wants a clear, non-yellowing finish. Test on an offcut of the same wood before committing, and read the cure times so the piece is fully hardened before it goes into service."]
+    ],
+    charts: [
+      {
+        title: "Surface durability by finish (relative)",
+        caption: "Film finishes protect best; oils and wax offer the least surface protection but the easiest repair.",
+        unit: "",
+        bars: [["Wax", 20], ["Oil", 40], ["Shellac", 55], ["Water-based", 80], ["Polyurethane", 95]]
+      },
+      {
+        title: "Typical recoat dry time by finish (hours)",
+        caption: "Approximate time between coats. Water-based dries fastest; oil-based films are slowest.",
+        unit: " hr",
+        bars: [["Water-based", 2], ["Shellac", 1], ["Wax", 1], ["Oil", 8], ["Polyurethane", 12]]
+      },
+      {
+        title: "Application difficulty (1 easy to 5 hard)",
+        caption: "Relative skill to apply well. Oils and wax are forgiving; film finishes show every flaw.",
+        unit: "",
+        bars: [["Oil", 1], ["Wax", 1], ["Water-based", 3], ["Shellac", 3], ["Polyurethane", 4]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Pick the finish by how the piece is used",
+      figureCaption: "Durability, dry time, and difficulty trade off. There is no universal best finish.",
+      figureStats: [["Oils", "Easy and repairable"], ["Film", "Most protective"], ["Water-based", "Fast and clear"]],
+      comparisonTitle: "Finish at a glance",
+      comparisonColumns: ["Finish", "Durability", "Ease", "Best for"],
+      comparisonRows: [
+        ["Penetrating oil", "Moderate", "Easy", "Low-wear furniture, boards"],
+        ["Polyurethane", "High", "Harder", "Tables, floors, high wear"],
+        ["Water-based", "High", "Moderate", "Light woods, indoor work"],
+        ["Shellac / wax", "Low-moderate", "Easy", "Accent pieces, repairs"]
+      ],
+      faqs: [
+        ["What is the most durable wood finish?", "Film finishes like polyurethane protect best against water and wear; oils protect least but repair easily."],
+        ["What finish is easiest for beginners?", "A wipe-on oil is the most forgiving; build it slowly and it is hard to ruin."],
+        ["Why choose a water-based finish?", "It dries fast, stays clear without yellowing, and has low odor, ideal for light woods indoors."],
+        ["How do I pick a finish?", "Match it to use: durability for tables and floors, easy repair for boards, clarity for light modern pieces."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (finishing)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Authoritative reference on wood finishing, coatings, and surface preparation."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Plan parts and keep a same-wood offcut for finish testing."]
+      ]
+    },
+    checklist: ["Choose the finish by how the piece is used.", "Use oils for easy, repairable low-wear work.", "Use film finishes for high-wear surfaces.", "Test on a same-wood offcut first.", "Respect cure times before use."]
+  },
+  {
+    slug: "screws-nails-glue-joining-compared",
+    category: "CutList",
+    title: "Screws vs Nails vs Glue: Joining Compared",
+    description: "Compare screws, nails, and glue for woodworking joints on strength, speed, and whether they can be taken apart, with charts to choose the right fastener.",
+    kicker: "Joinery guide",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Each Joining Method Solves A Different Problem", "Screws, nails, and glue are not ranked best to worst; they solve different problems. Glue makes the strongest permanent wood-to-wood bond, screws give mechanical strength and can be removed, and nails are fast for holding parts while glue cures. Most good joints use a combination, so understanding each one lets you pick the right mix for the job."],
+      ["Glue Is The Strongest Permanent Bond", "A well-made glue joint on long-grain surfaces is often stronger than the wood around it, which is why glued joints are the backbone of fine woodworking. The catch is that glue needs good surface contact, clamping pressure, and cure time, and it cannot be undone. Glue shines on permanent furniture joints; it is the wrong choice where you need to disassemble later."],
+      ["Screws Add Mechanical Strength And Come Apart", "Screws provide immediate clamping and mechanical strength, hold without waiting for cure, and can be removed for knockdown or repair. They excel in plywood carcasses, attaching hardware, and anywhere you might take the piece apart. Their weakness is in plywood edges, where threads can split the plies if you do not pilot the holes."],
+      ["Nails Are Fast But Hold Least", "Nails drive fast and are great for tacking parts together, attaching trim, and holding a glued joint while it cures. They have the least withdrawal strength of the three and are not meant to carry heavy structural load alone. Think of nails as speed and positioning, not as the primary strength of a serious joint."],
+      ["Combine Them For The Best Joint", "The strongest practical joints usually combine methods: glue for the permanent bond, plus screws or nails to clamp and hold while it cures. A glued-and-screwed cabinet joint is both strong and self-clamping. Decide the combination before assembly so you pilot holes, plan clamps, and keep the cut list and joinery allowances consistent."]
+    ],
+    charts: [
+      {
+        title: "Joint strength by method (relative)",
+        caption: "Glue on good long-grain surfaces is strongest; nails hold least. Combinations beat any single method.",
+        unit: "",
+        bars: [["Nails", 35], ["Screws", 70], ["Glue", 90], ["Glue + screws", 100]]
+      },
+      {
+        title: "Assembly speed (relative, higher is faster)",
+        caption: "Nails and screws are fast to hold parts; glue needs clamping and cure time.",
+        unit: "",
+        bars: [["Nails", 95], ["Screws", 75], ["Glue", 35]]
+      },
+      {
+        title: "Can it come apart? (1 no to 5 yes)",
+        caption: "Screws disassemble easily; glue is permanent. Choose by whether you need to take it apart.",
+        unit: "",
+        bars: [["Glue", 1], ["Nails", 2], ["Screws", 5]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Strength, speed, and reversibility",
+      figureCaption: "Glue bonds strongest and permanently; screws balance strength and removal; nails are fast holders.",
+      figureStats: [["Glue", "Strongest, permanent"], ["Screws", "Strong, removable"], ["Nails", "Fast, light hold"]],
+      comparisonTitle: "Joining methods compared",
+      comparisonColumns: ["Method", "Strength", "Reversible", "Best for"],
+      comparisonRows: [
+        ["Glue", "Highest on long grain", "No", "Permanent furniture joints"],
+        ["Screws", "High mechanical", "Yes", "Plywood carcasses, hardware"],
+        ["Nails", "Lowest", "Partly", "Tacking, trim, holding glue-ups"],
+        ["Glue + screws", "Highest practical", "No", "Strong self-clamping joints"]
+      ],
+      faqs: [
+        ["Is glue or screws stronger?", "A good long-grain glue joint is usually stronger than screws alone, but it is permanent and needs clamping."],
+        ["When should I use screws instead of glue?", "When you may need to take the piece apart, attach hardware, or want immediate mechanical strength."],
+        ["Are nails strong enough for furniture?", "Not alone for structural joints. Use them to tack and hold, ideally with glue."],
+        ["What is the strongest joint?", "Often glue plus screws or clamps: glue for the bond, fasteners to clamp and hold while it cures."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (fastenings)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference chapter on fasteners, adhesives, and joint strength in wood."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Plan parts and joinery so fasteners and glue-ups go together cleanly."]
+      ]
+    },
+    checklist: ["Pick the method by the problem it solves.", "Use glue for permanent long-grain bonds.", "Use screws where you may disassemble.", "Use nails to tack and hold glue-ups.", "Combine glue with fasteners for strong joints."]
+  },
+  {
+    slug: "lumber-dimensions-nominal-vs-actual",
+    category: "CutList",
+    title: "Lumber Dimensions: Nominal vs Actual",
+    description: "Know why a 2x4 is not 2 by 4 inches, with a chart of common nominal versus actual lumber sizes so your cut list and joints come out right.",
+    kicker: "Material guide",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["A 2x4 Is Not Two By Four", "The single most confusing thing in lumber is that nominal sizes are not actual sizes. A 2x4 actually measures about 1-1/2 by 3-1/2 inches once it is milled and dried. The nominal number refers to the rough size before surfacing. Knowing the real dimensions is essential, because building to the nominal number throws off every joint and measurement."],
+      ["Why The Gap Exists", "Rough lumber is sawn near the nominal size, then dried and planed smooth, which removes material. The result is a consistent, smaller finished dimension. This is standardized, so a 2x4 from any yard is about 1-1/2 by 3-1/2 inches. The gap is predictable, which means you can plan around it as long as you use the actual figures."],
+      ["The Pattern Across Sizes", "The reduction is not a fixed fraction; it changes with size. Thickness loses about half an inch on framing lumber, and width loses more on wider boards. A 1x board is about 3/4 inch thick; a 2x is about 1-1/2 inch. Memorizing or referencing the common actual sizes prevents the cascade of small errors that ruin a tight build."],
+      ["Where It Bites In A Cut List", "The nominal-actual gap matters most when parts must fit together precisely. A shelf sized to a nominal number sits loose or proud; a frame built on nominal math ends up off by the accumulated difference. Always enter actual dimensions into the cut list, and measure the specific boards you bought, since moisture and yard variation shift the numbers slightly."],
+      ["Measure The Real Board", "Standard actual sizes are a reliable starting point, but the safest habit is to measure the actual boards in front of you before cutting joints. Moisture content and milling vary. Use the real measured dimensions in the cut list and the board foot calculator so your estimate, your joints, and your assembly all agree."]
+    ],
+    charts: [
+      {
+        title: "Board thickness: nominal vs actual (inches)",
+        caption: "Actual thickness after surfacing. A nominal 2x is about 1-1/2 inches thick.",
+        unit: "",
+        bars: [["1x nom 1", 0.75], ["1x act", 0.75], ["2x nom 2", 2], ["2x act", 1.5]]
+      },
+      {
+        title: "Common widths: nominal vs actual (inches)",
+        caption: "Width loss grows with size: nominal 4, 6, and 8 inch boards finish smaller.",
+        unit: "",
+        bars: [["4 nom", 4], ["4 act", 3.5], ["6 nom", 6], ["6 act", 5.5], ["8 nom", 8], ["8 act", 7.25]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Nominal names, actual sizes",
+      figureCaption: "Lumber is named by rough size but sold milled smaller. Build with the actual numbers.",
+      figureStats: [["1-1/2 in", "Actual thickness of a 2x"], ["3-1/2 in", "Actual width of a 2x4"], ["Measure", "Confirm the real board"]],
+      comparisonTitle: "Common lumber sizes",
+      comparisonColumns: ["Nominal", "Actual", "Use", "Note"],
+      comparisonRows: [
+        ["1x4", "3/4 x 3-1/2 in", "Trim, light parts", "Surfaced four sides"],
+        ["2x4", "1-1/2 x 3-1/2 in", "Framing, structure", "Most common stud"],
+        ["2x6", "1-1/2 x 5-1/2 in", "Joists, stringers", "Wider framing"],
+        ["2x12", "1-1/2 x 11-1/4 in", "Stringers, beams", "Stair stringer stock"]
+      ],
+      faqs: [
+        ["Why is a 2x4 not 2 by 4 inches?", "The nominal name is the rough size; after drying and planing it finishes about 1-1/2 by 3-1/2 inches."],
+        ["Are actual sizes the same everywhere?", "They are standardized, so a 2x4 is about 1-1/2 by 3-1/2 inches at any yard, with slight variation."],
+        ["Does width loss change with size?", "Yes. Wider boards lose more; a nominal 8-inch board finishes around 7-1/4 inches."],
+        ["Should I measure my boards?", "Yes. Standard sizes guide you, but measure the real boards before cutting precise joints."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (lumber)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on lumber sizing, grading, and nominal versus dressed dimensions."],
+        ["WoodCutTool board foot calculator", "/board-foot-calculator/", "Use actual measured dimensions to estimate board feet and cost."]
+      ]
+    },
+    checklist: ["Remember nominal is not actual.", "Use 1-1/2 in for a 2x thickness.", "Expect more width loss on wider boards.", "Enter actual sizes in the cut list.", "Measure the real boards before cutting joints."]
+  },
+  {
+    slug: "diy-project-difficulty-and-time",
+    category: "CutList",
+    title: "DIY Woodworking Projects by Difficulty and Time",
+    description: "See how common woodworking projects rank on difficulty, build time, and cost, with charts to pick a realistic next project for your skill level.",
+    kicker: "Project planning",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Pick A Project You Will Actually Finish", "The best next project is one that matches your skills, time, and budget, not the most impressive one. Overreaching leads to half-finished builds and wasted material; underreaching can be unsatisfying. Ranking projects by difficulty, time, and cost lets you choose a build you will finish and learn from, then step up to the next level."],
+      ["Difficulty Tracks Joinery And Tolerances", "A project's difficulty comes mostly from its joinery and how tight the tolerances are. A simple shelf with butt joints and screws is forgiving; a cabinet with doors and drawers demands square assembly and precise fits. As difficulty rises, so does the need for accurate cuts and good technique, which is exactly where a clear cut list and jigs help most."],
+      ["Time Is Often Underestimated", "Build time is the factor people misjudge most. Finishing, dry times between coats, and fixing mistakes stretch a project well past the cutting and assembly. A realistic plan budgets time for finishing and setbacks, not just the glamorous parts. Knowing the typical hours for a project type keeps your weekend expectations honest."],
+      ["Cost Scales With Material And Hardware", "Project cost depends on material grade, sheet count, and hardware like slides and hinges. A plywood shelf is cheap; a kitchen of cabinets is a serious investment in both sheets and hardware. Estimating cost up front, by sheet count and a hardware list, prevents the mid-project surprise of an empty budget."],
+      ["Plan The Build Before You Start", "Whatever the project, plan it before cutting: a parts list, a sheet count, a hardware list, and a realistic time estimate. Use the plywood cut calculator and the templates to turn a project idea into a concrete plan. A project chosen to match your skill and planned properly is far more likely to get finished and look good."]
+    ],
+    charts: [
+      {
+        title: "Project difficulty (1 easy to 5 hard)",
+        caption: "Relative difficulty driven by joinery and tolerances. Start lower and step up.",
+        unit: "",
+        bars: [["Shelf", 1], ["Workbench", 2], ["Bookcase", 3], ["Cabinet", 4], ["Kitchen", 5]]
+      },
+      {
+        title: "Typical build time by project (hours)",
+        caption: "Approximate hands-on hours including finishing. Real time runs longer with setbacks.",
+        unit: " hr",
+        bars: [["Shelf", 4], ["Workbench", 10], ["Bookcase", 16], ["Dresser", 30], ["Kitchen", 80]]
+      },
+      {
+        title: "Relative project cost (index)",
+        caption: "Indexed cost driven by material grade, sheet count, and hardware.",
+        unit: "",
+        bars: [["Shelf", 20], ["Workbench", 35], ["Bookcase", 50], ["Dresser", 90], ["Kitchen", 100]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Match the project to your skill and time",
+      figureCaption: "Difficulty, time, and cost rise together. Choose a build you will finish, then level up.",
+      figureStats: [["Joinery", "Drives difficulty"], ["Finishing", "The hidden time sink"], ["Hardware", "A real cost line"]],
+      comparisonTitle: "Projects by level",
+      comparisonColumns: ["Project", "Difficulty", "Time", "Skills built"],
+      comparisonRows: [
+        ["Floating shelf", "Easy", "A few hours", "Straight cuts, mounting"],
+        ["Workbench", "Easy-moderate", "A weekend", "Sheet breakdown, assembly"],
+        ["Bookcase", "Moderate", "Several days", "Carcass, shelves, square"],
+        ["Cabinet run", "Hard", "Weeks", "Doors, drawers, hardware"]
+      ],
+      faqs: [
+        ["What is a good first woodworking project?", "A simple shelf or workbench: forgiving joinery, few parts, and quick to finish."],
+        ["Why do projects take longer than expected?", "Finishing, dry times, and fixing mistakes are usually underestimated; budget time for them."],
+        ["What makes a project hard?", "Tighter tolerances and joinery like doors and drawers that must be square and precise."],
+        ["How do I plan project cost?", "Estimate sheet count and list the hardware up front, then price both before starting."]
+      ],
+      sources: [
+        ["OSHA: Woodworking eTool", "https://www.osha.gov/etools/woodworking", "Safety guidance to factor into project planning and tool use."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Turn a project idea into a parts list, sheet count, and plan."]
+      ]
+    },
+    checklist: ["Pick a project you will finish.", "Expect difficulty to track joinery.", "Budget real time for finishing.", "Estimate material and hardware cost.", "Plan the build before cutting."]
+  },
+  {
+    slug: "router-bits-and-edge-profiles-guide",
+    category: "CutList",
+    title: "Router Bits and Edge Profiles: A Visual Guide",
+    description: "Learn what common router bits do, from roundovers to dadoes and rabbets, with charts on cut depth and use so you shape edges and joints with confidence.",
+    kicker: "Tool guide",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["The Router Shapes Edges And Cuts Joints", "A router is one of the most versatile shop tools, shaping decorative edges, cutting joinery like dadoes and rabbets, and trimming edge banding flush. The bit decides what it does. Understanding the common bits, what profile or cut each makes, and how deep to run them lets you both finish edges and cut accurate joints with one tool."],
+      ["Edge Profile Bits", "Profile bits shape the edge of a board for looks and feel. A roundover softens a sharp corner, a chamfer cuts an angled bevel, and an ogee or cove adds a decorative curve. These improve both appearance and safety by removing sharp edges. On plywood, a light roundover or chamfer also reduces edge splintering on handled parts."],
+      ["Joinery Bits", "Straight and spiral bits cut grooves, dadoes, and rabbets for joinery. A straight bit in a dado cut captures a shelf; a rabbeting bit steps an edge for a back panel. Flush-trim bits ride a bearing to trim edge banding or template-shape parts. These joinery cuts are where the router moves from decoration to structure, and depth control matters."],
+      ["Depth And Multiple Passes", "Routing too deep in one pass strains the bit, burns the wood, and is unsafe. Deep profiles and joinery cuts should be reached in multiple shallow passes, raising the bit a little each time. Planning the final depth and the number of passes keeps cuts clean and the bit cool, especially in hard material or with large profile bits."],
+      ["Plan Profiles And Joinery Into The Build", "Decide which edges get a profile and which joints the router will cut before you finalize the cut list, because a captured dado or a rabbet changes part sizes. Use the cut list calculator to account for joinery allowances, and run profiles on test offcuts first to confirm the depth and look before committing to finished parts."]
+    ],
+    charts: [
+      {
+        title: "Recommended passes by cut depth (count)",
+        caption: "Deeper profiles and joinery need more shallow passes for clean, safe cuts.",
+        unit: "",
+        bars: [["1/8 in", 1], ["1/4 in", 2], ["3/8 in", 2], ["1/2 in", 3], ["3/4 in", 4]]
+      },
+      {
+        title: "Router bit use by type (relative frequency)",
+        caption: "Roundovers and straight bits are the everyday workhorses; decorative profiles are occasional.",
+        unit: "",
+        bars: [["Roundover", 90], ["Straight", 85], ["Flush-trim", 70], ["Rabbet", 60], ["Ogee", 35]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "One tool, edges and joints",
+      figureCaption: "Profile bits shape edges; straight and bearing bits cut joinery. Depth control keeps cuts clean.",
+      figureStats: [["Roundover", "Softens and protects edges"], ["Straight bit", "Dadoes and rabbets"], ["Shallow passes", "Clean, safe cuts"]],
+      comparisonTitle: "Common router bits",
+      comparisonColumns: ["Bit", "Makes", "Use", "Note"],
+      comparisonRows: [
+        ["Roundover", "Soft rounded edge", "Comfort, safety", "Reduces splintering"],
+        ["Chamfer", "Angled bevel", "Decorative edge", "Clean modern look"],
+        ["Straight", "Grooves, dadoes", "Joinery", "Multiple passes deep"],
+        ["Flush-trim", "Trimmed edge", "Edge banding, templates", "Bearing-guided"]
+      ],
+      faqs: [
+        ["What does a router do?", "It shapes decorative edges, cuts joinery like dadoes and rabbets, and trims edge banding flush."],
+        ["What is a roundover bit for?", "It softens a sharp edge for comfort and safety, and reduces splintering on plywood edges."],
+        ["How deep can I rout in one pass?", "Keep passes shallow; reach deep profiles and joints in several passes, raising the bit each time."],
+        ["Do router joints change my cut list?", "Yes. Captured dadoes and rabbets change part sizes, so add the allowance before cutting."]
+      ],
+      sources: [
+        ["OSHA: Woodworking eTool", "https://www.osha.gov/etools/woodworking", "Safety guidance for routers and other woodworking machinery."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Account for router joinery allowances in your part sizes."]
+      ]
+    },
+    checklist: ["Use profile bits to shape and soften edges.", "Use straight and bearing bits for joinery.", "Reach deep cuts in multiple shallow passes.", "Add router joinery allowances to part sizes.", "Test profiles on offcuts first."]
   }
 ];
 
@@ -3375,19 +3951,16 @@ function deepSources(article) {
 
 // Inline SVG bar chart — vector, zero external assets, no copyright risk.
 // chart = { title, caption, unit, bars: [[label, value], ...], source? }
-function chartFigure(article) {
-  const chart = article.chart;
+// Renders one inline SVG bar chart (vector, no external assets).
+function renderBarChart(chart, accent) {
   if (!chart?.bars?.length) return "";
   const bars = chart.bars;
   const max = Math.max(...bars.map(([, v]) => Number(v) || 0)) || 1;
   const W = 720, H = 300, padL = 44, padR = 16, padT = 16, padB = 54;
   const plotW = W - padL - padR, plotH = H - padT - padB;
-  const n = bars.length;
-  const slot = plotW / n;
+  const slot = plotW / bars.length;
   const barW = Math.min(72, slot * 0.6);
-  const accent = article.accent || "cutlist";
 
-  // gridlines at 0/25/50/75/100%
   const grid = [0, 0.25, 0.5, 0.75, 1].map((f) => {
     const y = padT + plotH - f * plotH;
     return `<line x1="${padL}" y1="${y.toFixed(1)}" x2="${W - padR}" y2="${y.toFixed(1)}" class="chart-grid"/>` +
@@ -3399,16 +3972,13 @@ function chartFigure(article) {
     const h = (v / max) * plotH;
     const x = padL + i * slot + (slot - barW) / 2;
     const y = padT + plotH - h;
-    return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${Math.max(0, h).toFixed(1)}" rx="4" class="chart-bar"/>` +
+    return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${Math.max(0, h).toFixed(1)}" rx="4" class="chart-bar chart-bar-c${i % 6}"/>` +
       `<text x="${(x + barW / 2).toFixed(1)}" y="${(y - 6).toFixed(1)}" class="chart-value" text-anchor="middle">${escapeHtml(String(value))}${chart.unit ? escapeHtml(chart.unit) : ""}</text>` +
       `<text x="${(x + barW / 2).toFixed(1)}" y="${(H - padB + 20).toFixed(1)}" class="chart-label" text-anchor="middle">${escapeHtml(label)}</text>`;
   }).join("");
 
-  return `<section class="deep-chart-section">
-        <p class="eyebrow">Data chart</p>
-        <h2>${escapeHtml(chart.title)}</h2>
-        ${chart.caption ? `<p>${escapeHtml(chart.caption)}</p>` : ""}
-        <figure class="deep-chart-figure ${escapeHtml(accent)}">
+  return `<figure class="deep-chart-figure ${escapeHtml(accent)}">
+          <figcaption class="chart-title">${escapeHtml(chart.title)}</figcaption>
           <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${escapeHtml(chart.title)}" preserveAspectRatio="xMidYMid meet">
             <line x1="${padL}" y1="${padT}" x2="${padL}" y2="${padT + plotH}" class="chart-axis-line"/>
             <line x1="${padL}" y1="${padT + plotH}" x2="${W - padR}" y2="${padT + plotH}" class="chart-axis-line"/>
@@ -3416,7 +3986,18 @@ function chartFigure(article) {
             ${rects}
           </svg>
           ${chart.caption ? `<figcaption>${escapeHtml(chart.caption)}</figcaption>` : ""}
-        </figure>
+        </figure>`;
+}
+
+// Supports article.charts (array, multiple charts) or article.chart (single).
+function chartFigure(article) {
+  const charts = article.charts || (article.chart ? [article.chart] : []);
+  const valid = charts.filter((c) => c?.bars?.length);
+  if (!valid.length) return "";
+  const accent = article.accent || "cutlist";
+  return `<section class="deep-chart-section">
+        <p class="eyebrow">Data charts</p>
+        <div class="deep-chart-grid">${valid.map((c) => renderBarChart(c, accent)).join("")}</div>
       </section>`;
 }
 

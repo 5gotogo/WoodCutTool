@@ -6698,13 +6698,14 @@ tr:last-child td {
   font-size: 12px;
   font-family: inherit;
 }
-.chart-bar {
-  fill: var(--accent);
-}
-.deep-chart-figure.stairs .chart-bar,
-.deep-chart-figure.tile .chart-bar {
-  fill: var(--accent-2);
-}
+/* Multi-color chart palette: coordinated, natural tones (not all green). */
+.chart-bar { fill: #2f6f4e; }
+.chart-bar-c0 { fill: #2f6f4e; } /* forest green */
+.chart-bar-c1 { fill: #c9852f; } /* amber */
+.chart-bar-c2 { fill: #3a7ca5; } /* slate blue */
+.chart-bar-c3 { fill: #b5562f; } /* terracotta */
+.chart-bar-c4 { fill: #7a8b3a; } /* olive */
+.chart-bar-c5 { fill: #5d5099; } /* muted violet */
 .chart-value {
   fill: var(--ink);
   font-size: 13px;
@@ -6715,6 +6716,20 @@ tr:last-child td {
   fill: #5b665c;
   font-size: 12.5px;
   font-family: inherit;
+}
+
+/* Multi-chart grid: two charts side by side on wide screens. */
+.deep-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 14px;
+}
+.deep-chart-figure .chart-title {
+  margin: 0 0 6px;
+  font-size: 0.98rem;
+  font-weight: 750;
+  color: var(--ink);
 }
 
 /* Footer legal disclaimer block. */

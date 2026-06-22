@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260622-footer-disclaimer";
+const version = "20260623-chart-colors";
 const siteUrl = "https://woodcuttool.com";
 
 function escapeHtml(value) {
