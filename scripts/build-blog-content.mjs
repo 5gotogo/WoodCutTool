@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260622-nav-spacing";
+const version = "20260622-blog-charts";
 const siteUrl = "https://woodcuttool.com";
 
 
@@ -599,6 +599,926 @@ const articles = [
       ["Estimate Each Surface On Its Own", "Because rating, layout, and waste all differ, plan the floor and the walls as separate jobs. Run each through the tile calculator with its own dimensions and waste allowance to get an honest tile count and box count for that surface, then add them. Mixing them into one estimate hides where the cuts and cost really land."]
     ],
     checklist: ["Confirm the tile is rated for floor or wall use.", "Use a center line on floors, a level line on walls.", "Put wall cuts at corners and edges, not eye level.", "Use a higher waste allowance for cut-heavy walls.", "Estimate floor and walls as separate surfaces."]
+  },
+  {
+    slug: "plywood-thickness-guide-for-projects",
+    category: "CutList",
+    title: "Plywood Thickness Guide: Which to Use and Where",
+    description: "A practical plywood thickness guide for shelves, cabinets, backs, and drawers, with real nominal-versus-actual sizes and where each thickness belongs.",
+    kicker: "Material guide",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Nominal Thickness Is Not Actual Thickness", "The single most common plywood surprise is that a sheet sold as 3/4 inch usually measures closer to 23/32 inch, and 1/2 inch is often nearer 15/32 inch. Sanded and hardwood plywood are milled slightly under their nominal label. If you cut a dado for a nominal 3/4 inch shelf, the real panel rattles loose. Measure the actual sheet before sizing joints, grooves, and rabbets."],
+      ["Where Each Thickness Belongs", "Thicker is not always better; it is heavier, more expensive, and harder to handle. 3/4 inch is the workhorse for cabinet sides, shelves that span, and structural panels. 1/2 inch suits drawer sides, small cabinet parts, and lighter shelves. 1/4 inch is for cabinet backs, drawer bottoms, and panels that float in a frame. Matching thickness to load is what keeps a project both strong and affordable."],
+      ["Span and Sag Decide Shelf Thickness", "A shelf's thickness must match its span and load. A 3/4 inch plywood shelf carrying books should not span much past 30 to 36 inches without support or a stiffening edge, or it will sag over time. Doubling the front edge or adding a center support lets a thinner shelf carry more. Decide the span first, then the thickness, not the other way around."],
+      ["Thickness Changes Your Sheet Count And Weight", "Mixing thicknesses in one project means buying more than one sheet type, and that changes both cost and the cut list. A full sheet of 3/4 inch hardwood plywood can weigh over 70 pounds, which matters when one person breaks it down. Plan thinner material for parts that allow it, both to save weight and to keep the budget sensible."],
+      ["Confirm Joints Against The Real Panel", "Every joint that captures a panel — a dado, groove, or rabbet — should be sized to the measured plywood, not the label. Cut a test groove in scrap and confirm the fit before running the real parts. Then enter your true thicknesses into the cut list so the layout and any joinery allowances reflect what you actually bought."]
+    ],
+    chart: {
+      title: "Nominal vs actual plywood thickness (inches)",
+      caption: "Hardwood and sanded plywood usually run under their nominal label. Size joints to the actual measurement, not the name on the tag.",
+      unit: "",
+      bars: [["1/4 nom", 0.25], ["1/4 actual", 0.21], ["1/2 nom", 0.5], ["1/2 actual", 0.47], ["3/4 nom", 0.75], ["3/4 actual", 0.72]]
+    },
+    deepDive: {
+      figureTitle: "Where each thickness lands in a cabinet",
+      figureCaption: "Structural sides and spanning shelves use 3/4 inch; backs and drawer bottoms use 1/4 inch.",
+      figureStats: [["23/32 in", "Typical actual size of 3/4 in plywood"], ["30-36 in", "Practical 3/4 in shelf span before sag"], ["~70 lb", "Weight of a 3/4 in hardwood sheet"]],
+      comparisonTitle: "Thickness to job match",
+      comparisonColumns: ["Thickness", "Best use", "Avoid for", "Note"],
+      comparisonRows: [
+        ["1/4 inch", "Backs, drawer bottoms, panels", "Shelves and structure", "Floats in grooves, very light"],
+        ["1/2 inch", "Drawer sides, small parts, light shelves", "Long spans, heavy load", "Good weight-to-strength balance"],
+        ["3/4 inch", "Sides, structural shelves, tops", "Lightweight panels", "Standard cabinet carcass thickness"],
+        ["1-1/8 inch", "Workbench tops, stair treads", "General cabinetry", "Heavy and stiff, special order"]
+      ],
+      faqs: [
+        ["Why is my 3/4 inch plywood thinner than 3/4 inch?", "Hardwood and sanded plywood are milled slightly under nominal, so 3/4 inch often measures about 23/32 inch. Size joints to the real measurement."],
+        ["How far can a 3/4 inch plywood shelf span?", "Roughly 30 to 36 inches for books before noticeable sag. Add a stiffening edge or center support for longer spans."],
+        ["Can I use 1/4 inch plywood for shelves?", "Only for very light loads in a supported frame. For real shelving, use 1/2 or 3/4 inch."],
+        ["Does thickness affect how many sheets I buy?", "Yes. Mixing thicknesses means separate sheet types, which changes cost, weight, and the cut list."]
+      ],
+      sources: [
+        ["APA - The Engineered Wood Association: Plywood", "https://www.apawood.org/plywood", "Industry association covering plywood performance, grades, and nominal versus actual panel thickness."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Enter your real measured thickness to plan an accurate sheet layout."]
+      ]
+    },
+    checklist: ["Measure actual thickness before sizing joints.", "Match thickness to load and span.", "Use 1/4 inch for backs, 3/4 inch for structure.", "Plan weight when one person handles sheets.", "Test-fit grooves in scrap first."]
+  },
+  {
+    slug: "sheet-goods-cost-comparison-plywood-mdf-osb",
+    category: "CutList",
+    title: "Sheet Goods Cost Comparison: Plywood, MDF, OSB, Melamine",
+    description: "Compare the real cost and trade-offs of plywood, MDF, OSB, and melamine for cabinets and shelves so you spend where it matters and save where it does not.",
+    kicker: "Material economics",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Price Per Sheet Is Only Half The Story", "Sheet goods are easy to compare by sticker price, but the real cost includes waste, edge treatment, finishing, and how long the part lasts. A cheap sheet that needs edge banding, primer, and replacement in five years can cost more than a pricier sheet that installs clean. Compare total installed cost, not just the price at the rack."],
+      ["What Each Material Is Good At", "Plywood is strong, light, and holds screws, making it the default for cabinet structure. MDF is dead flat and paints beautifully, ideal for doors and trim. OSB is cheap and structural but rough, suited to hidden or utility work. Melamine is a pre-finished particleboard panel that saves finishing time for shelving and closet interiors but is heavy and chips on the saw."],
+      ["The Hidden Cost Of Finishing", "A raw plywood or MDF panel is not finished until it is sealed, and that labor and material is a real cost. Prefinished plywood and melamine arrive ready, trading a higher sheet price for saved finishing time. On a big closet or shelving job, prefinished material can win on total cost even though each sheet costs more."],
+      ["Weight, Waste, And Handling", "MDF, melamine, and particleboard are heavy and tiring to handle, and MDF dust demands serious dust control. Plywood and OSB are lighter per sheet. Waste also varies: brittle melamine chips at the cut line, so a sharp scoring blade and extra waste allowance protect the edges. Factor handling and waste into the comparison, not just the price."],
+      ["Match The Material To The Part, Not The Whole Project", "The best projects mix materials: plywood for structure, MDF for painted doors, melamine for hidden shelving, OSB for a utility back. Splitting the cut list by material lets each part use the cheapest sheet that does the job. Group materials separately and run each through the cut list so a cheap back is never planned on an expensive sheet."]
+    ],
+    chart: {
+      title: "Relative cost index per 4x8 sheet (plywood = 100)",
+      caption: "Indexed, not absolute prices, since rates vary by region and grade. Use it to compare relative material cost, then add finishing and waste.",
+      unit: "",
+      bars: [["OSB", 35], ["Particleboard", 45], ["MDF", 60], ["Melamine", 80], ["Plywood", 100], ["Hardwood ply", 165]]
+    },
+    deepDive: {
+      figureTitle: "Cost is price plus finishing plus waste",
+      figureCaption: "A prefinished panel costs more per sheet but can win on total installed cost by skipping finishing.",
+      figureStats: [["3-4x", "Plywood can cost several times OSB"], ["0 coats", "Melamine and prefinished ply need no finish"], ["Higher", "Melamine waste allowance for chipping"]],
+      comparisonTitle: "Sheet goods at a glance",
+      comparisonColumns: ["Material", "Strength", "Finish need", "Best use"],
+      comparisonRows: [
+        ["Plywood", "High, holds screws", "Seal or band edges", "Cabinet structure, shelves"],
+        ["MDF", "Moderate, weak edges", "Primes and paints well", "Painted doors, trim"],
+        ["OSB", "Structural, rough", "Usually left raw", "Hidden or utility parts"],
+        ["Melamine", "Low at fasteners", "None, prefinished", "Closet and shelf interiors"]
+      ],
+      faqs: [
+        ["Is plywood always worth the extra cost?", "Not always. Use plywood where strength and screws matter, and cheaper sheets for hidden or painted parts."],
+        ["Why does melamine chip when I cut it?", "Its hard surface fractures at the blade. Use a sharp fine-tooth or scoring blade and add waste allowance."],
+        ["Does prefinished material really save money?", "It can, by removing finishing labor and material. On large jobs that often offsets the higher sheet price."],
+        ["Can I mix materials in one project?", "Yes, and you usually should. Match each part to the cheapest sheet that meets its job."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Authoritative reference on wood and wood-based panel properties from the USDA Forest Service."],
+        ["WoodCutTool wood waste calculator", "/wood-waste-calculator/", "Estimate scrap and waste cost per material to compare total cost, not just sheet price."]
+      ]
+    },
+    checklist: ["Compare installed cost, not just sheet price.", "Use plywood for structure and screws.", "Use MDF for flat painted faces.", "Add waste allowance for chip-prone melamine.", "Split the cut list by material group."]
+  },
+  {
+    slug: "saw-blade-selection-for-clean-plywood-cuts",
+    category: "CutList",
+    title: "Saw Blade Selection for Clean Plywood Cuts",
+    description: "Pick the right saw blade for splinter-free plywood: tooth count, kerf, grind, and feed rate, plus how blade choice changes your cut list spacing.",
+    kicker: "Shop technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Tooth Count Drives Edge Quality", "For plywood and veneers, more teeth usually means a cleaner cut. A general 40-tooth combination blade is a fair compromise, but a 60- to 80-tooth blade gives far less splintering on veneered faces. Fewer teeth cut faster and cooler for ripping solid lumber, but they tear plywood faces. Match the blade to the material and the face quality you need."],
+      ["Kerf Width Is A Planning Number, Not Just A Blade Spec", "Blade kerf is how much width each cut removes, and it belongs in your cut list, not just on the blade box. A full-kerf blade removes about 1/8 inch; a thin-kerf blade removes closer to 3/32 inch. Across many cuts that difference adds up, and it decides whether the last part in a row fits. Measure your blade's real kerf and enter it before laying out a sheet."],
+      ["Grind Type And Why It Matters", "Tooth grind shapes the cut. An alternate top bevel grind slices veneer cleanly and is the usual choice for plywood and crosscuts. A flat top grind rips fast in solid wood but tears veneer. A high alternate top bevel is the gold standard for splinter-free melamine and prefinished faces. The grind is as important as the tooth count for a clean edge."],
+      ["Support, Scoring, And Feed Rate", "Even a great blade tears out if the sheet is unsupported or fed wrong. Back up the cut with a sacrificial surface or zero-clearance insert, keep a steady moderate feed, and slow down on the exit. For melamine, a scoring pass or a fresh sharp blade prevents the bottom-face chipping that ruins a visible panel."],
+      ["Keep The Blade Sharp And The Layout Honest", "A dull blade burns, tears, and wanders, which no layout can fix. Clean pitch off the blade and replace or sharpen it when cuts deteriorate. Then keep your cut list kerf matched to the blade you actually use, so the plan you see on screen is the plan that fits on the real sheet."]
+    ],
+    chart: {
+      title: "Tooth count vs plywood edge quality (relative)",
+      caption: "Higher tooth counts cut veneered plywood faces more cleanly; lower counts rip solid wood faster but tear veneer.",
+      unit: "",
+      bars: [["24T rip", 30], ["40T combo", 60], ["60T", 82], ["80T crosscut", 95]]
+    },
+    deepDive: {
+      figureTitle: "Clean cuts come from blade plus support",
+      figureCaption: "Tooth count, grind, support, and feed rate together decide whether a plywood edge is glass-smooth or fuzzy.",
+      figureStats: [["60-80T", "Teeth for clean plywood faces"], ["1/8 in", "Typical full-kerf width"], ["ATB/Hi-ATB", "Grinds for veneer and melamine"]],
+      comparisonTitle: "Blade choice by job",
+      comparisonColumns: ["Blade", "Teeth", "Best for", "Weakness"],
+      comparisonRows: [
+        ["Rip blade", "24", "Fast ripping solid lumber", "Tears plywood veneer"],
+        ["Combination", "40-50", "General-purpose mixed work", "Compromise on both ends"],
+        ["Crosscut/plywood", "60-80", "Clean plywood and crosscuts", "Slower feed, more heat"],
+        ["Hi-ATB melamine", "80", "Prefinished and melamine", "Specialized, dulls on solid wood"]
+      ],
+      faqs: [
+        ["What blade gives the cleanest plywood cut?", "A 60- to 80-tooth ATB or Hi-ATB blade, with support behind the cut, gives the least splintering."],
+        ["Does a thin-kerf blade change my cut list?", "Yes. It removes less material per cut, so enter its real kerf for an accurate layout."],
+        ["Why does the bottom face chip out?", "The blade exits there with no support. Use a zero-clearance insert or sacrificial backer."],
+        ["How do I stop melamine from chipping?", "Use a sharp Hi-ATB blade, score the cut, and keep a steady feed."]
+      ],
+      sources: [
+        ["Forest Products Laboratory: Wood Handbook (machining)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on wood machining and surface quality from the USDA Forest Service."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Enter your measured blade kerf so the sheet layout matches real cuts."]
+      ]
+    },
+    checklist: ["Use 60-80 teeth for clean plywood faces.", "Measure real kerf and put it in the cut list.", "Match grind to material: ATB for veneer.", "Support the cut to stop bottom chipout.", "Keep the blade clean and sharp."]
+  },
+  {
+    slug: "cutting-jigs-for-accurate-sheet-goods",
+    category: "CutList",
+    title: "Cutting Jigs for Accurate Sheet Goods",
+    description: "Build simple jigs that make plywood cuts square and repeatable: a track guide, a crosscut sled, and stop blocks that turn a cut list into matching parts.",
+    kicker: "Shop technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Accuracy Comes From Jigs, Not Steady Hands", "Repeatable, square cuts on big sheets do not come from a careful hand; they come from jigs that remove the chance for error. A straight guide, a square sled, and a stop block let you reproduce the same dimension over and over. For a cut list with repeated parts, jigs are the difference between parts that assemble cleanly and parts that fight you."],
+      ["A Shop-Made Track Guide", "A simple track guide is a straight piece of plywood with a fence, cut once to your saw's offset so the edge of the base marks the exact blade line. Clamp it to the layout line and the saw follows it perfectly. It turns a circular saw into a near-track-saw for breaking down full sheets safely on sawhorses before final cuts."],
+      ["Crosscut Sled For Square Parts", "A crosscut sled rides the table saw miter slots and carries the workpiece past the blade with a fence that is dialed in exactly square. Once it is true, every crosscut is square without measuring the angle each time. For cabinet parts that must be square to assemble, a good sled is the most valuable jig in the shop."],
+      ["Stop Blocks Make Repeats Identical", "When the cut list calls for eight identical shelves, do not measure eight times. Clamp a stop block at the right distance and cut them all to the exact same length. Stop blocks remove cumulative measuring error and guarantee that repeated parts truly match, which is what makes a carcass square and a row of drawers align."],
+      ["Break Down Big, Then Cut Precise", "The safe, accurate workflow is to break a full sheet into rough oversized pieces with the track guide, then bring those manageable pieces to the table saw and sled for final, square cuts. Plan your cut list and layout around this two-stage flow so no jig is asked to handle a part it cannot control safely."]
+    ],
+    chart: {
+      title: "Repeat cut error: measured each time vs stop block (relative)",
+      caption: "Measuring each repeat lets small errors stack up; a stop block holds every part to the same length.",
+      unit: "",
+      bars: [["Measure each", 100], ["Pencil + line", 70], ["Tape stop", 35], ["Stop block", 10]]
+    },
+    deepDive: {
+      figureTitle: "Two-stage cutting for safe accuracy",
+      figureCaption: "Break sheets down rough with a track guide, then cut precise and square with a sled and stop block.",
+      figureStats: [["1 setup", "A stop block cuts many identical parts"], ["2 stages", "Rough breakdown, then precise cuts"], ["90 deg", "A trued sled guarantees square"]],
+      comparisonTitle: "Jigs and what they solve",
+      comparisonColumns: ["Jig", "Solves", "Best for", "Note"],
+      comparisonRows: [
+        ["Track guide", "Straight long cuts", "Breaking down full sheets", "Cut once to your saw offset"],
+        ["Crosscut sled", "Square crosscuts", "Cabinet parts, repeat crosscuts", "Must be tuned dead square"],
+        ["Stop block", "Identical lengths", "Repeated parts", "Removes cumulative measuring error"],
+        ["Zero-clearance insert", "Bottom chipout", "Clean plywood faces", "Pairs with a fine blade"]
+      ],
+      faqs: [
+        ["Do I need a track saw for accurate cuts?", "No. A shop-made track guide plus a circular saw breaks down sheets accurately for far less money."],
+        ["Why are my crosscuts not square?", "An untuned sled or miter gauge. Square the sled fence with the five-cut method before trusting it."],
+        ["How do I cut eight identical shelves?", "Set a stop block and cut them all to the same stop, instead of measuring each one."],
+        ["What is the safest way to break down a full sheet?", "Support it fully and make rough cuts with a track guide before precise table saw cuts."]
+      ],
+      sources: [
+        ["OSHA: Woodworking eTool - Table Saws", "https://www.osha.gov/etools/woodworking/table-saws", "Official safety guidance for table saw operation, guarding, and safe stock handling."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Plan repeated parts so stop blocks turn the cut list into matching pieces."]
+      ]
+    },
+    checklist: ["Use a track guide to break down full sheets.", "Tune a crosscut sled dead square.", "Use stop blocks for identical repeated parts.", "Work in two stages: rough then precise.", "Add a zero-clearance insert for clean faces."]
+  },
+  {
+    slug: "track-saw-vs-table-saw-for-plywood",
+    category: "CutList",
+    title: "Track Saw vs Table Saw for Plywood",
+    description: "Compare a track saw and a table saw for breaking down plywood: accuracy, safety, space, and cost, and why many shops end up using both.",
+    kicker: "Tool comparison",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Two Tools, One Goal: Square Parts From Big Sheets", "A track saw and a table saw both turn a 4x8 sheet into accurate parts, but they solve the problem from opposite directions. A track saw brings the cut to the sheet; a table saw brings the sheet to the cut. Which one fits depends on your space, your typical project, and how you handle full sheets alone."],
+      ["Where The Track Saw Wins", "A track saw shines at breaking down full sheets, especially alone or in a small space. You lay the sheet on foam or sawhorses, drop the track on the line, and cut a clean, splinter-free edge without wrestling a heavy panel across a table. For big panels and on-site work, it is safer and easier for one person."],
+      ["Where The Table Saw Wins", "A table saw is faster and more repeatable for narrow rips, repeated parts, and small pieces, especially with a good fence and a sled. Once a sheet is broken down to manageable pieces, the table saw cuts them to final size quickly and consistently. For batching many identical parts, it is hard to beat."],
+      ["Space, Safety, And Cost", "A track saw stores against a wall and needs little floor space; a table saw needs room to feed full sheets safely. Track saws keep your hands away from an exposed blade, while table saws demand respect, guards, and good technique. Cost varies, but a track saw plus a modest table saw often covers more than either alone."],
+      ["Most Shops Use Both, In Sequence", "The common answer is not one or the other. Break full sheets down with a track saw where it is safest, then cut precise final parts on the table saw. Plan your cut list around that flow: rough oversized breakdown first, then accurate final cuts, so each tool does what it does best."]
+    ],
+    chart: {
+      title: "Tool fit by task (relative suitability)",
+      caption: "Higher is a better fit. The track saw leads at sheet breakdown; the table saw leads at repeated narrow parts.",
+      unit: "",
+      bars: [["Breakdown: track", 95], ["Breakdown: table", 55], ["Repeats: track", 50], ["Repeats: table", 95]]
+    },
+    deepDive: {
+      figureTitle: "Breakdown then final cut",
+      figureCaption: "The two tools are complementary: track saw for safe sheet breakdown, table saw for fast repeatable parts.",
+      figureStats: [["1 person", "Track saw handles full sheets alone"], ["Repeat speed", "Table saw wins on batched parts"], ["Small footprint", "Track saw stores against a wall"]],
+      comparisonTitle: "Track saw vs table saw",
+      comparisonColumns: ["Factor", "Track saw", "Table saw", "Edge"],
+      comparisonRows: [
+        ["Full sheet breakdown", "Excellent, safe solo", "Awkward and heavy", "Track saw"],
+        ["Repeated narrow rips", "Slower to set up", "Fast and repeatable", "Table saw"],
+        ["Space needed", "Minimal", "Needs feed room", "Track saw"],
+        ["Small parts", "Harder to control", "Easy with a sled", "Table saw"]
+      ],
+      faqs: [
+        ["Should a beginner buy a track saw or table saw first?", "If you mostly break down sheets in a small space, start with a track saw. If you batch many small parts, a table saw earns its keep."],
+        ["Can a track saw replace a table saw?", "For sheet goods, largely yes, but a table saw is still faster for repeated narrow rips and small parts."],
+        ["Is a track saw safer?", "It keeps the blade enclosed and your hands clear, which many find safer for full-sheet work."],
+        ["Do I need both?", "Many shops do: track saw to break down, table saw to finish. Plan the cut list around that sequence."]
+      ],
+      sources: [
+        ["OSHA: Woodworking eTool", "https://www.osha.gov/etools/woodworking", "Official safety guidance for woodworking machinery including saws and stock handling."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Plan a breakdown-first layout so each saw cuts what it does best."]
+      ]
+    },
+    checklist: ["Use a track saw to break down full sheets.", "Use a table saw for repeated narrow parts.", "Match the tool to your space and projects.", "Keep blade guards and safe technique on the table saw.", "Plan the cut list breakdown-first."]
+  },
+  {
+    slug: "cutlist-garage-storage-cabinets-plan",
+    category: "CutList",
+    title: "Garage Storage Cabinets: A Plywood Cut Plan",
+    description: "Plan a wall of garage storage cabinets from plywood with a repeatable box design, a sheet count you can trust, and a cut list that batches parts cleanly.",
+    kicker: "Garage project",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Design One Box, Then Repeat It", "A wall of garage cabinets is easiest when every box is the same. Pick a width that divides your wall cleanly, a depth that clears the car, and a height that leaves room above. Repeating one box makes the cut list predictable, lets parts interchange, and lets the optimizer batch identical sides and shelves efficiently."],
+      ["Build For The Garage, Not The Kitchen", "Garage cabinets carry tools and totes, not dishes, so they can be simpler and tougher. Use shop-grade plywood, skip fancy faces, and favor a strong back and solid shelves over thin material. A French cleat or a screwed nailer along the studs carries the load into the wall framing safely."],
+      ["Adjustable Shelves Earn Their Keep", "Garage storage changes constantly, so adjustable shelves are worth it. Plan shelf-pin holes or a cleat system and cut shelves slightly under the inside width so they drop in and out. List shelves as a repeated part with a clear quantity so the cut list count is obvious."],
+      ["Estimate The Sheet Count Honestly", "A full garage wall can swallow several sheets fast once sides, tops, bottoms, backs, and shelves add up. List every part with quantity and run it through the plywood cut calculator to get a real sheet count before buying a stack. Save the layout in CutList so you can adjust box width and re-check before committing."],
+      ["Hang Level And Plumb", "Cabinets only look professional if they hang level. Find the high point of the floor, snap a level line, and hang to it with a temporary ledger board. Plan filler strips where the run meets a wall so the last cabinet scribes in tight instead of leaving a gap."]
+    ],
+    chart: {
+      title: "Plywood sheets needed by cabinet run length (3/4 in)",
+      caption: "Approximate full sheets for a single row of 24-inch-deep garage cabinets. Confirm with a real layout for your exact design.",
+      unit: "",
+      bars: [["4 ft", 2], ["8 ft", 4], ["12 ft", 6], ["16 ft", 8]]
+    },
+    deepDive: {
+      figureTitle: "A garage wall is repeated boxes plus fillers",
+      figureCaption: "Identical boxes keep the cut list simple; filler strips absorb out-of-square walls.",
+      figureStats: [["1 box", "Design once and repeat"], ["French cleat", "Carries load into studs"], ["Level line", "Hang to it, not to the floor"]],
+      comparisonTitle: "Garage cabinet choices",
+      comparisonColumns: ["Choice", "Option A", "Option B", "When"],
+      comparisonRows: [
+        ["Mounting", "French cleat", "Screwed nailer", "Cleat for adjustability"],
+        ["Shelves", "Adjustable pins", "Fixed dadoes", "Pins for flexibility"],
+        ["Material", "Shop-grade plywood", "Prefinished plywood", "Prefinished to skip finishing"],
+        ["Doors", "Open shelves", "Plywood doors", "Doors to keep dust out"]
+      ],
+      faqs: [
+        ["How many plywood sheets for an 8-foot garage cabinet run?", "Roughly four 3/4-inch sheets for a 24-inch-deep row, but confirm with a real layout of your design."],
+        ["Should garage cabinets be wall-hung or floor-standing?", "Wall-hung clears the floor for cleaning; floor-standing carries heavier loads. Many runs combine both."],
+        ["What holds the weight?", "A French cleat or screwed nailer must land in the wall studs, not just the drywall."],
+        ["Do I need doors?", "Doors keep dust off contents; open shelves are cheaper and faster. Choose by what you store."]
+      ],
+      sources: [
+        ["APA - The Engineered Wood Association", "https://www.apawood.org/", "Guidance on plywood grades and performance for shelving and cabinet construction."],
+        ["WoodCutTool kitchen cabinet cut list template", "/templates/kitchen-cabinet-cut-list/", "A cabinet parts template you can adapt to garage box dimensions."]
+      ]
+    },
+    checklist: ["Design one box and repeat it.", "Carry load into studs with a cleat or nailer.", "Cut adjustable shelves slightly undersized.", "Verify the sheet count before buying.", "Hang to a level line, not the floor."]
+  },
+  {
+    slug: "cutlist-closet-system-plywood-plan",
+    category: "CutList",
+    title: "Plywood Closet System: Planning the Cut List",
+    description: "Design a built-in plywood closet system with towers, shelves, and hanging sections, an honest sheet count, and scribe allowance for out-of-square walls.",
+    kicker: "Built-in project",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Plan The Closet As Towers And Spans", "A closet system is a set of vertical plywood towers with shelves and hanging rods spanning between them. Decide tower spacing first, because it sets shelf length and rod span. Towers carry the load; shelves and rods fill the gaps. Repeating tower width keeps the cut list tidy and the parts interchangeable."],
+      ["Measure, Then Subtract For Scribe", "Closet walls and floors are rarely square, so measure the opening at several points, take the smallest, and subtract scribe allowance on end panels. Plan a filler strip where the system meets the wall so the end tower scribes tight. Add those scribe and filler parts to the cut list now, not at install."],
+      ["Balance Hanging, Shelves, And Drawers", "A useful closet mixes long-hang, double-hang, shelves, and maybe drawers. Each zone changes the parts: double-hang needs a mid rod, shelves need supports, drawers need boxes and slides. Decide the mix before the cut list because it drives part counts and which towers carry which loads."],
+      ["Get An Honest Sheet Count", "Towers, shelves, drawer boxes, and a top can add up to several sheets. List every part with quantity and run it through the plywood cut calculator for a real count. For a build this size, save it in CutList so you can shift tower spacing and re-check the sheet count before buying."],
+      ["Anchor Towers To The Wall", "Tall closet towers must be anchored to studs so they cannot tip, especially with drawers loaded. Plan a back rail or cleat that screws into framing. Cut the toe kick and leveling so the towers stand plumb on an uneven floor before they are fastened together into one system."]
+    ],
+    chart: {
+      title: "Closet shelf sag limit by span (3/4 in plywood)",
+      caption: "Relative safe load before noticeable sag drops as span grows. Add a center support or stiffening edge for long shelves.",
+      unit: "",
+      bars: [["24 in", 100], ["30 in", 75], ["36 in", 50], ["42 in", 30]]
+    },
+    deepDive: {
+      figureTitle: "Towers carry load, spans fill the gaps",
+      figureCaption: "Tower spacing sets shelf length and rod span, so decide it before cutting parts.",
+      figureStats: [["Towers", "Carry the structural load"], ["Scribe", "Absorbs out-of-square walls"], ["Anchor", "Towers screw into studs"]],
+      comparisonTitle: "Closet zone planning",
+      comparisonColumns: ["Zone", "Needs", "Span note", "Parts impact"],
+      comparisonRows: [
+        ["Long hang", "One high rod", "Full height clear", "Fewer shelves"],
+        ["Double hang", "Two rods, mid divider", "Shorter rod spans", "More dividers"],
+        ["Shelves", "Supports or pins", "Watch sag past 36 in", "More shelf parts"],
+        ["Drawers", "Boxes and slides", "Inside tower width", "Most parts per zone"]
+      ],
+      faqs: [
+        ["How far can a closet shelf span without sagging?", "A 3/4-inch plywood shelf is comfortable to about 30-36 inches under clothing loads; longer needs support."],
+        ["How do I fit a closet system to a crooked wall?", "Measure at several points, build to the smallest, and use scribe and filler strips at the walls."],
+        ["Do closet towers need to be anchored?", "Yes. Anchor tall towers to studs so they cannot tip, especially when drawers are loaded."],
+        ["How many sheets for a reach-in closet?", "Often two to four 3/4-inch sheets depending on towers and drawers; confirm with a real layout."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on wood panel stiffness and deflection relevant to shelf span."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Plan towers, shelves, and drawer parts into a real sheet count."]
+      ]
+    },
+    checklist: ["Set tower spacing before sizing shelves.", "Add scribe and filler from real measurements.", "Plan hang, shelf, and drawer zones up front.", "Keep shelf spans under the sag limit.", "Anchor tall towers to wall studs."]
+  },
+  {
+    slug: "cutlist-entertainment-center-plan",
+    category: "CutList",
+    title: "Plywood Entertainment Center: Cut List and Layout",
+    description: "Plan a media center from plywood with cable management, ventilation, adjustable component shelves, and a sheet layout that keeps the grain consistent.",
+    kicker: "Furniture build",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Start From The Gear And The TV", "An entertainment center is sized by what it holds: the TV width, the components, and the speakers. Measure those first, then design the openings around them with clearance. A media unit that looks right but cannot fit the receiver or vent the gear has failed at its one job, so plan equipment space before panel sizes."],
+      ["Plan Ventilation And Cable Paths", "Electronics make heat, so component bays need airflow and cable openings. Plan vent gaps or grilles and cut access holes in the back panels for cables before assembly. Adding ventilation and cable management to the cut list now is far easier than drilling a finished cabinet later."],
+      ["Adjustable Shelves For Changing Gear", "Components change, so adjustable shelves in the component bays keep the unit useful. Plan shelf-pin holes and cut shelves slightly under the bay width. Fixed shelves can stiffen the carcass where you need structure, while adjustable ones flex around future devices."],
+      ["Keep The Grain Consistent", "A media center is a visible piece, so grain direction matters. Lock the grain on the visible top, sides, and front-facing shelves so the finished unit reads as one piece, then let hidden parts rotate to fill the sheet. Run it through the plywood cut calculator with grain locked on the show faces."],
+      ["Confirm It Fits The Room And The Door", "A large media unit must get into the room. If it will not fit through doorways assembled, plan it as modular boxes that bolt together on site. Cut the parts so the heavy panels carry the load and the connectors only align the modules."]
+    ],
+    chart: {
+      title: "Component bay clearance to plan (inches)",
+      caption: "Typical minimum clearances to design around so gear fits and vents. Confirm against your actual equipment.",
+      unit: " in",
+      bars: [["Cable gap", 3], ["Vent gap", 2], ["Receiver height", 7], ["Console depth", 16]]
+    },
+    deepDive: {
+      figureTitle: "Design openings around the gear",
+      figureCaption: "Measure equipment first, then build bays with clearance for heat and cables.",
+      figureStats: [["Measure first", "TV, receiver, speakers, console"], ["Vent + cable", "Plan airflow and access holes"], ["Lock grain", "On visible top, sides, shelves"]],
+      comparisonTitle: "Media center decisions",
+      comparisonColumns: ["Element", "Option A", "Option B", "When"],
+      comparisonRows: [
+        ["Construction", "One large unit", "Modular boxes", "Modular if doorways are tight"],
+        ["Component shelves", "Adjustable pins", "Fixed shelves", "Pins for changing gear"],
+        ["Ventilation", "Open back gaps", "Cut vent grilles", "Grilles for closed cabinets"],
+        ["Back panel", "Full back", "Cable-access cutouts", "Cutouts behind gear"]
+      ],
+      faqs: [
+        ["How much ventilation does a media cabinet need?", "Leave gaps or grilles so heat escapes; closed bays full of electronics can overheat without airflow."],
+        ["Should component shelves be adjustable?", "Yes, because gear changes. Adjustable shelves keep the unit useful for years."],
+        ["How do I hide the cables?", "Cut cable-access holes in the back panels and plan a channel before assembly."],
+        ["What if it will not fit through the door?", "Build it as modular boxes that bolt together in the room."]
+      ],
+      sources: [
+        ["APA - The Engineered Wood Association", "https://www.apawood.org/", "Plywood grade and performance guidance for visible furniture panels."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Lock grain on show faces and confirm the sheet layout."]
+      ]
+    },
+    checklist: ["Measure the TV and gear before sizing.", "Plan ventilation and cable openings.", "Use adjustable shelves in component bays.", "Lock grain on visible faces.", "Go modular if doorways are tight."]
+  },
+  {
+    slug: "cutlist-kids-desk-plywood-plan",
+    category: "CutList",
+    title: "Kids Desk from Plywood: Simple Cut List",
+    description: "Build a sturdy, safe kids desk from a single plywood sheet, with rounded edges, the right height, a cable-free design, and an easy beginner cut list.",
+    kicker: "Weekend project",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Size The Desk To The Child", "A kids desk should fit the child, not a generic dimension. A comfortable desk height lets feet rest flat and elbows sit near 90 degrees. Because children grow, plan a height that works now and consider adjustable or replaceable legs. Start from the child's seated measurements, then size the top and legs."],
+      ["A One-Sheet Beginner Build", "A simple kids desk is a top, two side panels or legs, an apron for stiffness, and maybe a lower shelf, all of which fit on a single plywood sheet. Keeping it to one sheet makes it a perfect first furniture build and an easy cut list to lay out and check before cutting."],
+      ["Round The Edges For Safety", "Sharp plywood corners and edges are a hazard at kid height. Plan to round the corners and ease all edges, and sand the faces smooth. Soften any corner a child could run into. These are finishing steps, but they belong in the plan because they affect how you cut and handle the parts."],
+      ["Finish It To Be Cleanable And Safe", "Kids desks get marker, glue, and spills, so finish with a durable, low-odor, child-safe finish that wipes clean. Seal the plywood edges so they do not absorb moisture. Choose a finish rated as safe once cured, and let it cure fully before the desk goes into use."],
+      ["Lay It Out And Cut Clean", "Run the parts through the plywood cut calculator to confirm everything fits on one sheet with your kerf. Lock the grain on the visible top, cut the big parts first, and ease the edges before assembly. A clean, well-eased desk is safer and looks far more finished."]
+    ],
+    chart: {
+      title: "Desk and chair height by child age (approx, inches)",
+      caption: "Approximate ergonomic desk-top heights by age as a starting point. Fit to the individual child for best comfort.",
+      unit: " in",
+      bars: [["Age 4-5", 20], ["Age 6-8", 22], ["Age 9-11", 24], ["Age 12+", 26]]
+    },
+    deepDive: {
+      figureTitle: "Fit the desk to the child",
+      figureCaption: "Feet flat, elbows near ninety degrees. Size from the child, not a generic number.",
+      figureStats: [["1 sheet", "A kids desk fits on one panel"], ["Eased edges", "Round every corner a child meets"], ["Safe finish", "Wipe-clean and low odor"]],
+      comparisonTitle: "Kids desk choices",
+      comparisonColumns: ["Choice", "Option A", "Option B", "When"],
+      comparisonRows: [
+        ["Legs", "Panel sides", "Square legs", "Panels are simpler for beginners"],
+        ["Height", "Fixed to current size", "Adjustable", "Adjustable lasts longer"],
+        ["Edges", "Eased and rounded", "Edge-banded", "Round for safety either way"],
+        ["Finish", "Wipe-clean topcoat", "Painted", "Both must be child-safe when cured"]
+      ],
+      faqs: [
+        ["What height should a kids desk be?", "Set it so the child's feet rest flat and elbows sit near 90 degrees; this rises with age."],
+        ["Can I build a kids desk from one sheet?", "Yes. A top, sides, apron, and a shelf fit easily on a single plywood sheet."],
+        ["How do I make it safe?", "Round corners, ease all edges, sand smooth, and use a child-safe finish that cures hard."],
+        ["What finish is safe for kids?", "Choose a durable, low-odor finish rated safe once fully cured, and let it cure before use."]
+      ],
+      sources: [
+        ["CPSC: U.S. Consumer Product Safety Commission", "https://www.cpsc.gov/", "Federal agency for consumer product safety, including childrens furniture guidance."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Confirm the desk parts fit on a single sheet with your kerf."]
+      ]
+    },
+    checklist: ["Size the desk to the child, feet flat.", "Keep the build to a single sheet.", "Round corners and ease every edge.", "Use a child-safe, wipe-clean finish.", "Lock grain on the visible top."]
+  },
+  {
+    slug: "cutlist-outdoor-bench-plywood-marine",
+    category: "CutList",
+    title: "Outdoor Bench: Plywood Choice and Cut List",
+    description: "Build an outdoor bench that lasts: marine or exterior plywood, sealed edges, drainage and slope, and a cut list that survives weather.",
+    kicker: "Outdoor project",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Outdoor Means Exterior-Rated Plywood", "An outdoor bench fails fast if built from interior plywood, because the glue and core are not made for moisture. Use exterior-grade or marine plywood with waterproof glue. Marine plywood adds a void-free core that resists rot and holds up to weather, which matters for a bench that sits outside year round."],
+      ["Seal Every Edge And Face", "Water attacks plywood at the edges first. Seal every cut edge and all faces with an exterior finish, and re-coat as needed. Edges are end grain in the veneers and soak up water, so a bench that is sealed only on the faces will still delaminate from the edges. Plan edge sealing as a required step, not optional."],
+      ["Design For Drainage And Slope", "Standing water rots even good plywood. Slope the seat slightly so water runs off, leave small gaps for drainage where parts meet, and keep the bench off the ground on feet so the base does not wick moisture. These details belong in the plan because they change how parts meet and how the bench sits."],
+      ["Fasteners And Glue Must Be Exterior Too", "Exterior plywood with interior screws still fails, because the fasteners rust and the glue lets go. Use corrosion-resistant screws and a waterproof adhesive rated for exterior use. Match every part of the assembly to the outdoor environment, not just the plywood."],
+      ["Lay Out To Minimize Exposed Edges", "Because edges are the weak point, lay out the bench so visible edges are minimized and easy to seal. Run the parts through the plywood cut calculator, keep the grain consistent on the seat, and plan generous sealing time. A bench built and sealed well outlasts one built from better wood but finished carelessly."]
+    ],
+    chart: {
+      title: "Relative outdoor durability by plywood type",
+      caption: "Relative resistance to moisture and delamination. Interior plywood is unsuitable outdoors regardless of finish.",
+      unit: "",
+      bars: [["Interior", 15], ["Exterior CDX", 55], ["Pressure-treated", 80], ["Marine", 100]]
+    },
+    deepDive: {
+      figureTitle: "Edges and water decide outdoor life",
+      figureCaption: "Exterior-rated plywood, sealed edges, drainage, and corrosion-resistant hardware together make a bench last.",
+      figureStats: [["Exterior glue", "Required for outdoor use"], ["Seal edges", "End grain soaks water first"], ["Slope + gaps", "Shed standing water"]],
+      comparisonTitle: "Outdoor plywood choices",
+      comparisonColumns: ["Type", "Moisture resistance", "Cost", "Best use"],
+      comparisonRows: [
+        ["Interior plywood", "Poor", "Low", "Indoors only"],
+        ["Exterior CDX", "Good with sealing", "Moderate", "Painted outdoor parts"],
+        ["Pressure-treated", "Very good", "Moderate", "Ground-contact bases"],
+        ["Marine plywood", "Excellent, void-free", "High", "Seats and visible parts"]
+      ],
+      faqs: [
+        ["Can I use regular plywood outdoors if I seal it?", "No. Interior glue fails with moisture. Use exterior or marine plywood and still seal it."],
+        ["Why seal the edges specifically?", "Plywood edges are end grain in the veneers and absorb water fastest, causing delamination."],
+        ["Does the bench need drainage?", "Yes. Slope the seat and leave small gaps so water runs off instead of pooling."],
+        ["What fasteners should I use outside?", "Corrosion-resistant screws and a waterproof exterior adhesive, to match the plywood."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (durability)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on wood and panel durability, moisture, and decay resistance."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Lay out the bench to minimize and seal exposed edges."]
+      ]
+    },
+    checklist: ["Use exterior or marine plywood only.", "Seal every cut edge and face.", "Slope the seat and leave drainage gaps.", "Use corrosion-resistant screws and exterior glue.", "Lay out to minimize exposed edges."]
+  },
+  {
+    slug: "edge-banding-plywood-guide",
+    category: "CutList",
+    title: "Edge Banding Plywood: A Practical Guide",
+    description: "Hide plywood edges cleanly with iron-on, peel-and-stick, or solid wood edging, plus how edge treatment changes your cut list dimensions.",
+    kicker: "Finishing technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Why Plywood Edges Need Covering", "A raw plywood edge shows its layered plies and voids, which looks unfinished and chips easily. Edge banding or a solid edge hides the plies, gives a durable surface to handle, and lets the part take a finish evenly. On any visible cabinet or shelf, edge treatment is the difference between a shop-made look and a polished one."],
+      ["Iron-On Veneer Banding", "Iron-on edge banding is a thin wood veneer with heat-activated glue. You iron it onto the edge, trim the overhang flush, and sand lightly. It is fast, cheap, and matches common species, making it the go-to for cabinet interiors and shelves. It is thin, so it adds almost nothing to the part size but offers little protection against hard knocks."],
+      ["Solid Wood Edging For Durability", "A solid wood edge, glued on as a strip, is tougher and can be shaped or rounded. It protects high-wear edges like shelf fronts and tabletops far better than veneer. But it adds real thickness, so the plywood part must be cut narrower to keep the finished dimension correct. That allowance belongs in the cut list."],
+      ["Edge Treatment Changes Your Cut Sizes", "This is the detail beginners miss: a 1/4-inch solid edge on a 12-inch shelf means cutting the plywood to 11-3/4 inches so the finished part is 12. Veneer banding is thin enough to ignore, but solid edging must be subtracted before cutting. Decide the edge treatment before you finalize the cut list, not after."],
+      ["Apply Before Or After Assembly?", "Band edges before assembly when the edge will be hard to reach later, and after assembly when continuous banding should wrap a corner. Plan the sequence with the cut list so you are not trying to iron banding into a tight assembled corner. A little planning here saves a lot of fiddly rework."]
+    ],
+    chart: {
+      title: "Edge band thickness to subtract from part size (inches)",
+      caption: "Veneer banding is thin enough to ignore; solid edging must be subtracted from the plywood part before cutting.",
+      unit: "",
+      bars: [["Iron-on veneer", 0.02], ["Peel-and-stick", 0.03], ["1/8 solid", 0.125], ["1/4 solid", 0.25]]
+    },
+    deepDive: {
+      figureTitle: "Edge choice changes the cut",
+      figureCaption: "Solid edging adds thickness, so cut the plywood narrower to keep the finished size right.",
+      figureStats: [["Veneer", "Thin, fast, species match"], ["Solid edge", "Durable, shapeable, thicker"], ["Subtract", "Solid edge from part width"]],
+      comparisonTitle: "Edge treatment options",
+      comparisonColumns: ["Method", "Durability", "Adds thickness", "Best for"],
+      comparisonRows: [
+        ["Iron-on veneer", "Low", "Negligible", "Cabinet interiors, shelves"],
+        ["Peel-and-stick", "Low", "Negligible", "Quick low-wear edges"],
+        ["Solid edge strip", "High", "1/8 to 1/4 in", "Tabletops, shelf fronts"],
+        ["Profiled solid edge", "High", "Varies", "Decorative or rounded edges"]
+      ],
+      faqs: [
+        ["Does edge banding change my cut list?", "Solid edging does: subtract its thickness from the plywood part. Thin veneer banding can be ignored."],
+        ["Which edge banding is most durable?", "A glued solid wood edge is the toughest and can be shaped; veneer banding is thinner and less protective."],
+        ["Do I band before or after assembly?", "Band hard-to-reach edges before assembly; band wrap-around edges after."],
+        ["How do I trim iron-on banding flush?", "Use an edge-banding trimmer or a sharp chisel, then sand lightly without cutting through the veneer."]
+      ],
+      sources: [
+        ["APA - The Engineered Wood Association", "https://www.apawood.org/", "Plywood construction reference covering panel edges and veneers."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Subtract solid edging from part sizes so finished dimensions stay correct."]
+      ]
+    },
+    checklist: ["Cover raw edges on visible parts.", "Use veneer banding for fast interior edges.", "Use solid edging for high-wear surfaces.", "Subtract solid edge thickness before cutting.", "Plan banding sequence with assembly."]
+  },
+  {
+    slug: "wood-joints-for-plywood-projects",
+    category: "CutList",
+    title: "Wood Joints for Plywood Projects",
+    description: "Pick the right joint for plywood cabinets and boxes: dado, rabbet, pocket screw, dowel, or domino, and how each one affects part sizes in the cut list.",
+    kicker: "Joinery guide",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Plywood Joins Differently Than Solid Wood", "Plywood is stable and has no seasonal movement, but its edges are layered and its faces are thin veneer, so some solid-wood joints do not apply. The best plywood joints register parts square, give good glue surface, and capture panels in grooves. Choosing the joint early matters because most joints change the size you cut the parts."],
+      ["Dado And Rabbet: Strong And Self-Aligning", "A dado is a groove across a panel that captures a shelf; a rabbet is a step at an edge that captures a back or side. Both add glue surface, register parts square, and carry load well, which is why they are cabinet staples. They also require cutting parts slightly longer to seat into the groove, an allowance the cut list must include."],
+      ["Pocket Screws: Fast And Knockdown-Friendly", "Pocket-hole screws join plywood quickly with no groove cutting and can be disassembled, which suits face frames, cabinet boxes, and built-ins that must be fitted on site. They do not add glue-surface strength like a dado, but for many cabinets they are plenty strong and far faster. Parts are cut to net size, which keeps the cut list simple."],
+      ["Dowels And Dominoes For Alignment", "Dowels and loose-tenon joints register parts precisely and add strength without showing fasteners, useful for furniture and visible joints. They require accurate hole or mortise placement but do not change overall part dimensions much. They sit between the speed of pocket screws and the strength of a dado."],
+      ["Let The Joint Set The Cut Size", "The key planning step is to choose the joint before finalizing dimensions, because captured joints change part lengths. A shelf seated in a 1/4-inch dado on each side must be cut 1/2 inch longer than the clear opening. Decide joinery first, then enter the correct allowances into the cut list so parts seat properly."]
+    ],
+    chart: {
+      title: "Joint strength vs build speed (relative)",
+      caption: "Relative trade-off. Captured joints like dadoes are strong but slower; pocket screws are fast and knockdown-friendly.",
+      unit: "",
+      bars: [["Pocket screw", 55], ["Dowel", 65], ["Domino", 80], ["Dado/rabbet", 95]]
+    },
+    deepDive: {
+      figureTitle: "The joint changes the cut size",
+      figureCaption: "Captured joints add length; butt and pocket joints are cut to net size. Decide before cutting.",
+      figureStats: [["Dado", "Strong, self-aligning, +length"], ["Pocket screw", "Fast, knockdown, net size"], ["Domino", "Strong and aligned, hidden"]],
+      comparisonTitle: "Plywood joint options",
+      comparisonColumns: ["Joint", "Strength", "Speed", "Cut size impact"],
+      comparisonRows: [
+        ["Dado / rabbet", "High", "Slower", "Add groove depth to length"],
+        ["Pocket screw", "Moderate", "Fast", "Cut to net size"],
+        ["Dowel", "Moderate", "Moderate", "Little change"],
+        ["Domino / loose tenon", "High", "Moderate", "Little change"]
+      ],
+      faqs: [
+        ["What is the strongest joint for plywood cabinets?", "A glued dado or rabbet is very strong and self-aligning; dominoes are also strong for furniture."],
+        ["Do joints change my part sizes?", "Captured joints like dadoes do: add the groove depth to the part length. Pocket screws use net sizes."],
+        ["Are pocket screws strong enough for cabinets?", "For many cabinet boxes, yes, and they assemble fast and can be taken apart."],
+        ["Which joint is best for a beginner?", "Pocket screws or rabbets are forgiving and need minimal specialized tooling."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (fastenings)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference chapter on wood joints, fasteners, and adhesive bonding."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Add joinery allowances so captured parts seat to the right finished size."]
+      ]
+    },
+    checklist: ["Choose the joint before final dimensions.", "Use dadoes and rabbets for strong carcasses.", "Use pocket screws for fast knockdown builds.", "Add groove depth to captured part lengths.", "Match joint complexity to your tools."]
+  },
+  {
+    slug: "finishing-plywood-for-a-smooth-result",
+    category: "CutList",
+    title: "Finishing Plywood for a Smooth Result",
+    description: "Get a smooth, durable finish on plywood: sanding the thin veneer safely, sealing porous edges, and choosing a finish that suits the project.",
+    kicker: "Finishing technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Respect The Thin Veneer", "Plywood's show face is a thin veneer, often well under 1/32 inch, so aggressive sanding cuts straight through it and ruins the panel. Sand lightly with progressively finer grits and stop early. The goal is to smooth the surface, not reshape it. Sanding through the veneer is the most common and most permanent finishing mistake."],
+      ["Seal The Porous Edges", "Plywood edges are end grain in every veneer layer, so they drink finish and look blotchy if treated like the face. Seal edges first with a thinned sealer or edge banding, then finish. Sealing edges evens out absorption and stops the dark, rough edge that gives away an unfinished plywood project."],
+      ["Choose The Finish For The Job", "A wipe-on oil is forgiving and easy for beginners; a film finish like polyurethane is more durable for tabletops and high-wear surfaces; a quality water-based finish dries fast and stays clear. Match the finish to wear and look. There is no single best finish, only the right one for the part and the skill level."],
+      ["Control Blotch On Soft Species", "Some plywood faces, like birch or pine, blotch when stained because the veneer absorbs unevenly. A wash coat or conditioner before staining evens absorption. Testing the finish on an offcut of the same sheet is the cheapest insurance against a blotchy surprise on the finished piece."],
+      ["Plan Finishing Into The Build", "Finishing is easier on flat parts before assembly, especially insides and shelves. Plan which parts to finish first, mask glue surfaces, and keep an offcut from the same sheet for testing. Building finishing into the plan, rather than treating it as an afterthought, produces a far smoother and more even result."]
+    ],
+    chart: {
+      title: "Sanding grit sequence for plywood faces",
+      caption: "Step up through grits and stop early on plywood. Over-sanding the thin veneer cuts through it permanently.",
+      unit: "",
+      bars: [["120", 120], ["150", 150], ["180", 180], ["220 stop", 220]]
+    },
+    deepDive: {
+      figureTitle: "Smooth comes from light sanding and sealed edges",
+      figureCaption: "Sand lightly, seal the porous edges, test on scrap, and choose a finish that matches the wear.",
+      figureStats: [["<1/32 in", "Typical face veneer thickness"], ["Seal edges", "End grain drinks finish"], ["Test scrap", "Same sheet, before the part"]],
+      comparisonTitle: "Finish options for plywood",
+      comparisonColumns: ["Finish", "Durability", "Ease", "Best for"],
+      comparisonRows: [
+        ["Wipe-on oil", "Moderate", "Easy", "Beginners, low-wear parts"],
+        ["Polyurethane", "High", "Moderate", "Tabletops, high wear"],
+        ["Water-based clear", "High", "Moderate", "Fast, clear, low odor"],
+        ["Paint", "High", "Easy", "MDF and hiding grain"]
+      ],
+      faqs: [
+        ["Why did I sand through my plywood?", "The show veneer is very thin. Sand lightly with fine grits and stop early; do not power-sand aggressively."],
+        ["How do I finish plywood edges?", "Seal them first because end grain absorbs finish unevenly, or cover them with edge banding."],
+        ["What finish is easiest for beginners?", "A wipe-on oil is forgiving and hard to mess up; build coats slowly."],
+        ["Why does my plywood blotch when stained?", "Soft veneers absorb unevenly. Use a conditioner or wash coat and test on an offcut first."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (finishing)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on wood finishing, surface preparation, and coatings."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Plan parts and keep an offcut from the same sheet for finish testing."]
+      ]
+    },
+    checklist: ["Sand lightly and stop before the veneer thins.", "Seal porous edges before finishing.", "Match the finish to wear and skill.", "Use a conditioner on blotch-prone faces.", "Test the finish on a same-sheet offcut."]
+  },
+  {
+    slug: "hardwood-vs-softwood-for-woodworking",
+    category: "CutList",
+    title: "Hardwood vs Softwood for Woodworking",
+    description: "Understand hardwood and softwood: what the terms really mean, how each works and finishes, and how to choose for furniture, shelving, and structure.",
+    kicker: "Material guide",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["The Names Do Not Mean What You Think", "Hardwood and softwood are botanical categories, not hardness ratings. Hardwoods come from broadleaf trees like oak and maple; softwoods from conifers like pine and fir. Some softwoods are harder to dent than some hardwoods. Knowing this prevents the common mistake of assuming softwood is always weak or hardwood is always best."],
+      ["Hardness Is Measured, Not Assumed", "Actual surface hardness is measured by tests like the Janka scale, which rates resistance to denting. Maple and oak rate high and resist dents, while pine rates low and marks easily. For a tabletop or floor that takes abuse, the hardness number matters more than the hardwood or softwood label."],
+      ["Working And Finishing Differences", "Softwoods are generally lighter, cheaper, and easier to cut and nail, which suits framing, shelving, and paint-grade work. Hardwoods are denser, hold detail and edges better, and finish to a richer look, which suits furniture and visible pieces. Hardwoods cost more and dull blades faster, so match the species to the job and budget."],
+      ["Cost And Availability", "Softwood lumber is widely available and inexpensive at any home center, while hardwoods often come from specialty suppliers and cost considerably more. For utility projects, softwood keeps the budget sane; for heirloom furniture, hardwood earns its cost. Plan species against the project's purpose and lifespan before buying."],
+      ["Match Species To The Part", "Like sheet goods, the smart move is to match species to the part: softwood for hidden structure and paint-grade parts, hardwood for visible furniture surfaces that must wear well and look rich. Plan board feet and cost per species in the cut list so you spend on hardwood only where it shows and works hard."]
+    ],
+    chart: {
+      title: "Janka hardness by species (lbf, approx)",
+      caption: "Approximate Janka hardness ratings. Note that some softwoods like Douglas fir outrank softer hardwoods.",
+      unit: "",
+      bars: [["Pine", 420], ["Douglas fir", 660], ["Cherry", 950], ["Oak", 1290], ["Maple", 1450]]
+    },
+    deepDive: {
+      figureTitle: "Hardness is measured, not assumed",
+      figureCaption: "The hardwood and softwood labels are botanical. For denting resistance, look at the Janka number.",
+      figureStats: [["Janka", "Measures dent resistance"], ["Softwood", "Lighter, cheaper, easy to work"], ["Hardwood", "Denser, richer, holds edges"]],
+      comparisonTitle: "Hardwood vs softwood",
+      comparisonColumns: ["Factor", "Softwood", "Hardwood", "Note"],
+      comparisonRows: [
+        ["Typical species", "Pine, fir, cedar", "Oak, maple, cherry", "Botanical categories"],
+        ["Cost", "Low, widely available", "Higher, specialty suppliers", "Budget driver"],
+        ["Working", "Easy to cut and nail", "Denser, dulls blades", "Sharper tools for hardwood"],
+        ["Best use", "Structure, paint-grade", "Furniture, visible wear", "Match to the part"]
+      ],
+      faqs: [
+        ["Is hardwood always harder than softwood?", "No. The terms are botanical. Some softwoods resist denting better than some hardwoods; check the Janka rating."],
+        ["When should I use softwood?", "For framing, utility shelving, and paint-grade parts where cost and ease matter more than hardness."],
+        ["When is hardwood worth the cost?", "For furniture and visible surfaces that must wear well and finish to a rich look."],
+        ["How do I compare hardness?", "Use the Janka hardness scale, which rates resistance to denting in pounds-force."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Authoritative reference on wood species properties including hardness and strength."],
+        ["WoodCutTool board foot calculator", "/board-foot-calculator/", "Estimate board feet and cost per species so you spend where it counts."]
+      ]
+    },
+    checklist: ["Remember the labels are botanical, not hardness.", "Use the Janka scale to compare denting.", "Use softwood for structure and paint-grade.", "Use hardwood for visible, high-wear surfaces.", "Estimate cost per species before buying."]
+  },
+  {
+    slug: "wood-movement-and-why-plywood-is-stable",
+    category: "CutList",
+    title: "Wood Movement, and Why Plywood Is Stable",
+    description: "Understand seasonal wood movement, why solid wood expands and contracts, and why plywood stays flat, so you design joints that do not crack or jam.",
+    kicker: "Material science",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Wood Moves With Humidity", "Solid wood takes on and gives off moisture with the seasons, expanding in humid months and shrinking in dry ones. This movement is real and unstoppable, and ignoring it cracks tabletops, splits panels, and jams drawers. Designing for movement, not against it, is one of the marks of work that lasts through the seasons."],
+      ["Movement Is Mostly Across The Grain", "Wood moves very little along its length but noticeably across its width. A wide solid panel can change width by a measurable amount between summer and winter, while its length stays nearly constant. That is why solid-wood designs must let wide panels expand and contract across the grain rather than pinning them rigidly."],
+      ["Why Plywood Stays Flat", "Plywood is built from thin veneers glued with their grain alternating at right angles. Each layer restrains the next, so the panel barely moves and stays flat. This dimensional stability is the main reason plywood is the default for cabinet carcasses, large panels, and anything that must keep its size across seasons."],
+      ["Design Solid And Sheet Goods Differently", "Because plywood is stable and solid wood moves, they need different joinery. A solid-wood panel floats in a frame so it can move; a plywood panel can be glued in solidly because it will not. Mixing them, such as a solid edge on a plywood top, requires letting the solid part move or keeping it short enough not to matter."],
+      ["Plan For Stability In The Cut List", "Stability affects how tight you can cut. Plywood parts can be cut to exact size and trusted to stay there; solid-wood parts in humid or dry extremes may need a clearance allowance. Knowing which material moves lets you plan drawer gaps, panel grooves, and tight fits that still work when the seasons change."]
+    ],
+    chart: {
+      title: "Seasonal movement: plywood vs solid wood (relative)",
+      caption: "Relative dimensional change across the grain over a season. Plywood barely moves; solid wood moves with width.",
+      unit: "",
+      bars: [["Plywood", 5], ["Narrow board", 35], ["Wide oak panel", 85], ["Wide flatsawn", 100]]
+    },
+    deepDive: {
+      figureTitle: "Cross-grain movement is the issue",
+      figureCaption: "Solid wood moves across its width with humidity; plywood's cross-laminated plies keep it flat.",
+      figureStats: [["Across grain", "Where movement happens"], ["Plywood", "Cross-laminated and stable"], ["Float panels", "Let solid wood move"]],
+      comparisonTitle: "Movement by material",
+      comparisonColumns: ["Material", "Movement", "Design rule", "Best use"],
+      comparisonRows: [
+        ["Plywood", "Minimal", "Can be glued solidly", "Carcasses, large panels"],
+        ["Narrow solid", "Small", "Modest allowance", "Frames, edges"],
+        ["Wide solid panel", "Significant", "Must float to move", "Tabletops, raised panels"],
+        ["MDF", "Minimal but swells wet", "Keep dry", "Painted flat parts"]
+      ],
+      faqs: [
+        ["Does plywood expand and contract?", "Very little. Its cross-laminated veneers restrain movement, which is why it stays flat and stable."],
+        ["Which way does solid wood move?", "Mostly across the grain (width), not along its length."],
+        ["How do I stop a solid panel from cracking?", "Let it float in a frame or groove so it can expand and contract instead of being pinned."],
+        ["Can I glue a plywood panel in solidly?", "Yes, because it barely moves. Solid-wood panels need room to move."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (moisture and movement)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Authoritative reference on wood moisture relations and dimensional change."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Cut stable plywood parts to exact size with confidence."]
+      ]
+    },
+    checklist: ["Expect solid wood to move with humidity.", "Remember movement is mostly across the grain.", "Use plywood where flatness must hold.", "Float solid panels so they can move.", "Cut plywood parts to exact size."]
+  },
+  {
+    slug: "stair-code-basics-rise-run-headroom",
+    category: "Stairs",
+    title: "Stair Code Basics: Rise, Run, and Headroom",
+    description: "Understand the stair dimensions that codes regulate: riser height, tread depth, headroom, and the 7-11 rule, so your stairs are safe and pass inspection.",
+    kicker: "Stair safety",
+    readTime: "9 min",
+    accent: "stairs",
+    sections: [
+      ["Why Stair Dimensions Are Regulated", "Stairs are one of the most common places people get hurt at home, so building codes regulate their key dimensions tightly. Riser height, tread depth, headroom, and consistency are not style choices; they are safety rules. Always check your local code or building department for the exact figures, because they vary by jurisdiction and edition."],
+      ["Riser Height And Tread Depth", "Codes set a maximum riser height and a minimum tread depth so each step is comfortable and predictable. The widely referenced residential figures are around a 7-3/4 inch maximum riser and a 10 inch minimum tread, often summarized as the 7-11 guideline. These numbers keep the step rhythm safe; confirm the exact limits with your local authority."],
+      ["Consistency Is A Code Rule, Not A Preference", "Codes require risers and treads in a flight to be uniform within a small tolerance, often about 3/8 inch between the largest and smallest. Inconsistent steps cause trips because the foot expects the same rhythm each time. This is why careful layout and a template matter: one odd step is both a hazard and a code failure."],
+      ["Headroom And Width", "Codes also set minimum headroom above the stairs, commonly around 6 feet 8 inches measured vertically from the tread nosing, and a minimum stair width. Headroom is easy to miss when planning an opening, so check it early. A staircase that fits the floor but lacks headroom forces an expensive redesign."],
+      ["Plan The Layout, Then Verify Locally", "Work out total rise, the number of risers, the riser height, and the tread depth before cutting, then verify every figure against your local code. Use the stair stringer calculator to find consistent riser and tread dimensions and the stringer length, and treat the result as a starting point to confirm with your building department."]
+    ],
+    chart: {
+      title: "Common residential stair limits (inches)",
+      caption: "Widely referenced residential figures. These vary by jurisdiction and code edition; confirm with your local authority.",
+      unit: " in",
+      bars: [["Max riser", 7.75], ["Min tread", 10], ["Riser tolerance", 0.375], ["Min headroom", 80]]
+    },
+    deepDive: {
+      figureTitle: "The numbers that keep stairs safe",
+      figureCaption: "Riser height, tread depth, consistency, and headroom are the regulated dimensions to plan around.",
+      figureStats: [["~7-11", "Common max riser, min tread guide"], ["3/8 in", "Typical riser consistency tolerance"], ["6 ft 8 in", "Common minimum headroom"]],
+      comparisonTitle: "Regulated stair dimensions",
+      comparisonColumns: ["Dimension", "Typical residential limit", "Why", "Note"],
+      comparisonRows: [
+        ["Riser height", "About 7-3/4 in max", "Comfortable, safe step", "Confirm locally"],
+        ["Tread depth", "About 10 in min", "Room for the foot", "Confirm locally"],
+        ["Consistency", "About 3/8 in tolerance", "Prevents trips", "Within one flight"],
+        ["Headroom", "About 6 ft 8 in min", "Clearance overhead", "Measure from nosing"]
+      ],
+      faqs: [
+        ["What is the 7-11 rule for stairs?", "A common guideline of about a 7-3/4 inch maximum riser and 10 inch minimum tread for comfortable, safe stairs. Confirm your local code."],
+        ["How consistent do stairs have to be?", "Codes typically require risers and treads uniform within about 3/8 inch across a flight."],
+        ["How much headroom do stairs need?", "Commonly about 6 feet 8 inches measured vertically from the tread nosing; check your local code."],
+        ["Do stair codes vary by location?", "Yes. Always verify exact figures with your local building department before building."]
+      ],
+      sources: [
+        ["CPSC: U.S. Consumer Product Safety Commission - stairs", "https://www.cpsc.gov/", "Federal consumer safety agency; stairs are a leading source of home injuries."],
+        ["WoodCutTool stair stringer calculator", "/stair-stringer-calculator/", "Find consistent riser and tread dimensions, then confirm against local code."]
+      ]
+    },
+    checklist: ["Check local code for exact figures.", "Keep risers at or under the max.", "Keep treads at or over the minimum.", "Hold risers consistent within tolerance.", "Verify headroom early in planning."]
+  },
+  {
+    slug: "deck-stairs-building-and-stringer-layout",
+    category: "Stairs",
+    title: "Deck Stairs: Building and Stringer Layout",
+    description: "Plan and lay out deck stairs: measuring total rise to grade, stringer spacing, attachment, and footings, so outdoor stairs are safe and solid.",
+    kicker: "Outdoor stairs",
+    readTime: "9 min",
+    accent: "stairs",
+    sections: [
+      ["Measure Total Rise To The Ground", "Deck stairs start with an accurate total rise from the deck surface down to the landing grade. Outdoor ground is uneven, so measure to where the bottom step will actually land, accounting for a solid landing pad. An error here throws off every riser, so take the measurement carefully and account for the landing surface."],
+      ["A Solid Landing Matters", "Deck stairs need a stable, level landing at the bottom, not bare dirt that settles and shifts. A concrete pad, pavers, or a gravel base keeps the bottom step at a consistent height and stops the stairs from sinking. Plan the landing before computing rise, because the landing height is part of the total rise."],
+      ["Stringer Spacing And Material", "Outdoor stringers carry weather and load, so use pressure-treated lumber and space them closer than you might indoors to keep treads from flexing. Wide deck stairs need a third, mid-span stringer. Decide stringer count before cutting, because it sets how many identical notched boards you produce."],
+      ["Attach The Stairs Securely", "Deck stairs must connect firmly to the deck frame at the top and rest on a stable base at the bottom, with proper hangers or hardware rated for outdoor use. A staircase that is merely leaned against the deck is dangerous. Plan the top attachment and bottom anchoring as part of the build, not an afterthought."],
+      ["Lay Out One Stringer As A Template", "Compute riser height and tread depth, cut and check a single stringer against the actual rise to grade, then use it as a template for the rest so every stringer matches. Use the stair stringer calculator to work out consistent dimensions and stringer length, then confirm the first board on site before cutting the others."]
+    ],
+    chart: {
+      title: "Deck stair stringers by stair width (count)",
+      caption: "Approximate stringer count by stair width to limit tread flex. Closer spacing for thinner treads or heavy use.",
+      unit: "",
+      bars: [["36 in", 3], ["48 in", 3], ["60 in", 4], ["72 in", 5]]
+    },
+    deepDive: {
+      figureTitle: "Rise to grade plus a solid landing",
+      figureCaption: "Measure total rise to a stable landing, space stringers to limit flex, and anchor top and bottom.",
+      figureStats: [["To grade", "Measure rise to the real landing"], ["PT lumber", "Pressure-treated for outdoors"], ["Anchor both", "Top to frame, bottom to pad"]],
+      comparisonTitle: "Deck stair landing options",
+      comparisonColumns: ["Landing", "Stability", "Cost", "When"],
+      comparisonRows: [
+        ["Bare grade", "Poor, shifts", "None", "Not recommended"],
+        ["Gravel base", "Good", "Low", "Light use"],
+        ["Pavers", "Good", "Moderate", "Most decks"],
+        ["Concrete pad", "Excellent", "Higher", "Heavy use, permanence"]
+      ],
+      faqs: [
+        ["How do I measure rise for deck stairs?", "Measure vertically from the deck surface to the finished landing height, accounting for the landing pad."],
+        ["What lumber for outdoor stringers?", "Pressure-treated lumber rated for ground contact or exterior use, with corrosion-resistant hardware."],
+        ["How many stringers do deck stairs need?", "At least two, with a third for wider stairs to stop tread flex; confirm for your tread material."],
+        ["Do deck stairs need a landing?", "Yes. A stable, level landing keeps the bottom step consistent and stops sinking."]
+      ],
+      sources: [
+        ["OSHA: Stairways and Ladders", "https://www.osha.gov/stairways-ladders", "Official guidance on stair safety, dimensions, and structural requirements."],
+        ["WoodCutTool stair stringer calculator", "/stair-stringer-calculator/", "Work out consistent risers, treads, and stringer length for deck stairs."]
+      ]
+    },
+    checklist: ["Measure total rise to the real landing.", "Build a stable, level landing first.", "Use pressure-treated stringers, spaced to limit flex.", "Anchor the stairs top and bottom.", "Cut one stringer, verify, then template."]
+  },
+  {
+    slug: "tile-underlayment-and-subfloor-prep",
+    category: "Tile",
+    title: "Tile Underlayment and Subfloor Prep",
+    description: "Prep a subfloor so tile lasts: flatness and deflection limits, the right underlayment, and why a stiff base prevents cracked tile and grout.",
+    kicker: "Tile prep",
+    readTime: "8 min",
+    accent: "tile",
+    sections: [
+      ["Tile Is Only As Good As Its Base", "Beautiful tile cracks if the floor under it flexes or is uneven. Most tile failures trace back to subfloor prep, not the tile or the installer's hand. A flat, stiff, properly prepared base is the foundation of a tile job that lasts. Spend the effort here and the tile rewards you for decades."],
+      ["Flatness Standards Matter", "Tile needs a flat substrate within a tight tolerance, and larger tiles need it flatter still because they cannot conform to dips. Industry guidance calls for flatness measured over a span, and high spots or dips beyond it cause lippage and cracks. Check the floor with a straightedge and address high and low spots before tiling."],
+      ["Deflection: The Floor Cannot Flex", "A floor that bounces will crack rigid tile and grout. Subfloors for tile must meet a stiffness, or deflection, standard so they do not flex under load. If the joists or subfloor are too springy, tile is the wrong finish until the structure is stiffened. Deflection is the invisible reason many tile jobs fail."],
+      ["Choosing The Underlayment", "The right underlayment depends on the substrate: cement backer board over a stiff wood subfloor, an uncoupling membrane to isolate tile from minor movement, or a mortar bed for the most demanding floors. Each addresses a specific problem. Pick the underlayment for your conditions rather than defaulting to one for every floor."],
+      ["Prep Sequence Before The First Tile", "Confirm the structure is stiff enough, flatten the substrate, install the correct underlayment per its instructions, and only then lay out the tile. Skipping or rushing prep is the most expensive mistake in tiling because the failure shows up months later. Plan tile counts and layout with the tile calculator after the base is right."]
+    ],
+    chart: {
+      title: "Tile failure causes (relative share)",
+      caption: "Most tile failures trace to the base, not the tile. Prep, flatness, and deflection dominate the causes.",
+      unit: "",
+      bars: [["Deflection", 35], ["Flatness", 30], ["Wrong underlay", 20], ["Tile/setting", 15]]
+    },
+    deepDive: {
+      figureTitle: "A stiff, flat base prevents cracks",
+      figureCaption: "Confirm deflection, flatten the substrate, and choose the right underlayment before laying tile.",
+      figureStats: [["Stiffness", "Floor must not flex"], ["Flatness", "Within tolerance for tile size"], ["Underlayment", "Matched to the substrate"]],
+      comparisonTitle: "Underlayment options",
+      comparisonColumns: ["Option", "Solves", "Best for", "Note"],
+      comparisonRows: [
+        ["Cement backer board", "Stable bonding surface", "Most wood subfloors", "Common, reliable"],
+        ["Uncoupling membrane", "Minor movement isolation", "Floors with slight movement", "Reduces crack transfer"],
+        ["Mortar bed", "Flatness and strength", "Demanding floors", "More skill and labor"],
+        ["Self-leveler", "Low spots, flatness", "Uneven substrates", "Use with primer"]
+      ],
+      faqs: [
+        ["Why did my tile crack?", "Most often a flexing or uneven subfloor, not the tile itself. Stiffen and flatten the base before tiling."],
+        ["How flat does a floor need to be for tile?", "Within a tight tolerance over a span, and flatter for large tiles. Check with a straightedge."],
+        ["What is deflection?", "How much a floor flexes under load. Too much flex cracks rigid tile and grout."],
+        ["Do I need backer board?", "Usually yes over wood subfloors, or an uncoupling membrane, to give tile a stable, isolated base."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (floor systems)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on wood floor structure and deflection relevant to tile substrates."],
+        ["WoodCutTool tile calculator", "/tile-calculator/", "Estimate tiles and boxes once the subfloor prep is correct."]
+      ]
+    },
+    checklist: ["Confirm the floor is stiff enough for tile.", "Flatten high and low spots first.", "Choose underlayment for your substrate.", "Follow the underlayment instructions.", "Lay out tile only after prep is done."]
+  },
+  {
+    slug: "tile-pattern-planning-and-waste",
+    category: "Tile",
+    title: "Tile Pattern Planning and Waste",
+    description: "Choose a tile pattern with eyes open: how straight, brick, herringbone, and diagonal layouts change cuts, difficulty, and how much waste to buy.",
+    kicker: "Tile planning",
+    readTime: "8 min",
+    accent: "tile",
+    sections: [
+      ["The Pattern Changes The Cut Count", "A tile pattern is not just a look; it decides how many tiles get cut and how hard the job is. A straight grid has the fewest cuts; a diagonal or herringbone pattern multiplies edge cuts dramatically. Choosing the pattern early lets you plan the difficulty and the material, instead of running short midway through."],
+      ["Straight And Brick Patterns", "A straight stack is the simplest, with cuts mainly at the walls and a low waste factor. A brick or running-bond offset adds visual interest with only slightly more cutting, and it hides minor size variation between tiles. These patterns are forgiving and a good choice for beginners and large simple areas."],
+      ["Diagonal And Herringbone Patterns", "Diagonal layouts turn every perimeter tile into an angled cut, and herringbone creates many small angled cuts throughout. The results look impressive but consume more tile, more time, and more skill. If you choose these, plan a higher waste allowance and accept a slower, more careful install."],
+      ["Waste Allowance By Pattern", "Waste is not one number. A simple straight floor might need only a small allowance, while a diagonal or herringbone layout in a cut-up room can need much more. Buying too little means a second order, often from a different dye lot. Match the waste allowance to the pattern and the room's complexity, not a blanket figure."],
+      ["Estimate Before You Buy", "Once you choose the pattern and tile size, estimate the tile count, boxes, and waste before ordering. A pattern that adds cuts adds tiles, and ordering a little extra of the same lot protects against breakage and future repairs. Use the tile calculator with a pattern-appropriate waste percentage to get an honest count."]
+    ],
+    chart: {
+      title: "Typical waste allowance by tile pattern (percent)",
+      caption: "Approximate extra tile to buy by pattern. Complex angled layouts and cut-up rooms need the higher figures.",
+      unit: "%",
+      bars: [["Straight", 10], ["Brick offset", 12], ["Diagonal", 17], ["Herringbone", 20]]
+    },
+    deepDive: {
+      figureTitle: "More angles means more cuts and waste",
+      figureCaption: "Pattern choice drives cut count, difficulty, and how much extra tile to order.",
+      figureStats: [["Straight", "Fewest cuts, lowest waste"], ["Diagonal", "Every edge tile is angled"], ["Herringbone", "Many small angled cuts"]],
+      comparisonTitle: "Tile patterns compared",
+      comparisonColumns: ["Pattern", "Difficulty", "Cuts", "Waste allowance"],
+      comparisonRows: [
+        ["Straight grid", "Easy", "Perimeter only", "Lower"],
+        ["Brick offset", "Easy", "Slightly more", "Lower-moderate"],
+        ["Diagonal", "Moderate", "All edges angled", "Higher"],
+        ["Herringbone", "Hard", "Many angled cuts", "Highest"]
+      ],
+      faqs: [
+        ["How much extra tile should I buy?", "It depends on the pattern and room. Simple straight floors need less; diagonal and herringbone need more."],
+        ["Which tile pattern wastes the least?", "A straight grid wastes the least because cuts are mostly at the perimeter."],
+        ["Why is herringbone harder?", "It creates many small angled cuts throughout the field, which takes more skill, time, and tile."],
+        ["Why order extra from the same lot?", "Dye lots vary, so future repairs and breakage are best covered by extra tile bought up front."]
+      ],
+      sources: [
+        ["CPSC: U.S. Consumer Product Safety Commission", "https://www.cpsc.gov/", "Consumer safety reference relevant to flooring slip resistance and installation."],
+        ["WoodCutTool tile calculator", "/tile-calculator/", "Estimate tiles, boxes, and waste with a pattern-appropriate allowance."]
+      ]
+    },
+    checklist: ["Choose the pattern before estimating.", "Use straight or brick for low waste.", "Expect more cuts with diagonal and herringbone.", "Set waste allowance by pattern and room.", "Order extra from the same dye lot."]
+  },
+  {
+    slug: "workshop-dust-and-saw-safety-basics",
+    category: "CutList",
+    title: "Workshop Dust and Saw Safety Basics",
+    description: "Protect your lungs and hands in the shop: wood dust hazards, dust collection, blade guards, push sticks, and the habits that prevent serious injury.",
+    kicker: "Shop safety",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Wood Dust Is A Real Hazard", "Fine wood dust is not just messy; it is a recognized respiratory hazard, and some species and engineered panels release dust that irritates or sensitizes the lungs over time. Treating dust control as part of the work, not an afterthought, protects your long-term health. The cleanest shops are also the safest and the most pleasant to work in."],
+      ["Collect Dust At The Source", "The best dust control captures dust where it is made, at the tool, before it becomes airborne. Connect saws and sanders to a dust collector or shop vacuum, and add an air filter for the fine particles that escape. MDF and some plywoods produce especially fine dust, so capture at the source matters most with those materials."],
+      ["Wear The Right Protection", "Hearing protection, safety glasses, and a properly rated dust mask or respirator are basic shop gear, not optional. Power tools are loud enough to damage hearing over time, and fine dust passes through cheap masks. Match the protection to the task, and keep it within reach so it actually gets used."],
+      ["Respect The Table Saw", "The table saw causes many serious shop injuries, usually from kickback or contact with the blade. Use the blade guard and riving knife, never cut freehand, use push sticks for narrow rips, and stand out of the kickback path. Most table saw injuries are preventable with guards, push sticks, and disciplined technique."],
+      ["Build Safe Habits Into Every Cut", "Safety is a routine, not a one-time setup. Keep the work area clear, support full sheets so they do not bind, plan the cut before the blade spins, and never reach over a running blade. Planning the cut list and breakdown sequence in advance means fewer awkward, dangerous cuts and a calmer, safer shop."]
+    ],
+    chart: {
+      title: "Where dust control is most effective (relative capture)",
+      caption: "Capturing dust at the source is far more effective than cleaning it up after it is airborne.",
+      unit: "",
+      bars: [["At source", 90], ["Air filter", 55], ["Shop vac after", 35], ["Sweep up", 15]]
+    },
+    deepDive: {
+      figureTitle: "Source capture plus protection",
+      figureCaption: "Collect dust at the tool, filter the fine particles, and wear hearing, eye, and lung protection.",
+      figureStats: [["At source", "Best place to capture dust"], ["Guard + knife", "Cut kickback risk"], ["Push stick", "Keeps hands clear"]],
+      comparisonTitle: "Shop safety essentials",
+      comparisonColumns: ["Area", "Hazard", "Control", "Note"],
+      comparisonRows: [
+        ["Dust", "Respiratory irritation", "Source collection, respirator", "Worst with MDF"],
+        ["Noise", "Hearing loss", "Ear protection", "Cumulative damage"],
+        ["Table saw", "Kickback, blade contact", "Guard, riving knife, push stick", "Most serious injuries"],
+        ["Handling sheets", "Strain, binding cuts", "Support and plan cuts", "Break down safely"]
+      ],
+      faqs: [
+        ["Is wood dust really dangerous?", "Yes. Fine wood dust is a recognized respiratory hazard; capture it at the source and wear a rated respirator."],
+        ["What is the most effective dust control?", "Capturing dust at the tool before it goes airborne, backed by an air filter for fine particles."],
+        ["How do I avoid table saw kickback?", "Use the riving knife and guard, push sticks for narrow rips, and stand out of the kickback path."],
+        ["What protection do I need in the shop?", "Eye protection, hearing protection, and a properly rated dust mask or respirator at minimum."]
+      ],
+      sources: [
+        ["OSHA: Woodworking eTool", "https://www.osha.gov/etools/woodworking", "Official safety guidance for woodworking machinery, dust, and personal protection."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Plan the cut sequence in advance for fewer awkward, dangerous cuts."]
+      ]
+    },
+    checklist: ["Treat wood dust as a real health hazard.", "Capture dust at the source.", "Wear eye, ear, and lung protection.", "Use the saw guard, riving knife, and push sticks.", "Plan cuts and support full sheets."]
   }
 ];
 
@@ -2453,6 +3373,53 @@ function deepSources(article) {
       </section>`;
 }
 
+// Inline SVG bar chart — vector, zero external assets, no copyright risk.
+// chart = { title, caption, unit, bars: [[label, value], ...], source? }
+function chartFigure(article) {
+  const chart = article.chart;
+  if (!chart?.bars?.length) return "";
+  const bars = chart.bars;
+  const max = Math.max(...bars.map(([, v]) => Number(v) || 0)) || 1;
+  const W = 720, H = 300, padL = 44, padR = 16, padT = 16, padB = 54;
+  const plotW = W - padL - padR, plotH = H - padT - padB;
+  const n = bars.length;
+  const slot = plotW / n;
+  const barW = Math.min(72, slot * 0.6);
+  const accent = article.accent || "cutlist";
+
+  // gridlines at 0/25/50/75/100%
+  const grid = [0, 0.25, 0.5, 0.75, 1].map((f) => {
+    const y = padT + plotH - f * plotH;
+    return `<line x1="${padL}" y1="${y.toFixed(1)}" x2="${W - padR}" y2="${y.toFixed(1)}" class="chart-grid"/>` +
+      `<text x="${padL - 8}" y="${(y + 4).toFixed(1)}" class="chart-axis" text-anchor="end">${Math.round(f * max)}</text>`;
+  }).join("");
+
+  const rects = bars.map(([label, value], i) => {
+    const v = Number(value) || 0;
+    const h = (v / max) * plotH;
+    const x = padL + i * slot + (slot - barW) / 2;
+    const y = padT + plotH - h;
+    return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barW.toFixed(1)}" height="${Math.max(0, h).toFixed(1)}" rx="4" class="chart-bar"/>` +
+      `<text x="${(x + barW / 2).toFixed(1)}" y="${(y - 6).toFixed(1)}" class="chart-value" text-anchor="middle">${escapeHtml(String(value))}${chart.unit ? escapeHtml(chart.unit) : ""}</text>` +
+      `<text x="${(x + barW / 2).toFixed(1)}" y="${(H - padB + 20).toFixed(1)}" class="chart-label" text-anchor="middle">${escapeHtml(label)}</text>`;
+  }).join("");
+
+  return `<section class="deep-chart-section">
+        <p class="eyebrow">Data chart</p>
+        <h2>${escapeHtml(chart.title)}</h2>
+        ${chart.caption ? `<p>${escapeHtml(chart.caption)}</p>` : ""}
+        <figure class="deep-chart-figure ${escapeHtml(accent)}">
+          <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${escapeHtml(chart.title)}" preserveAspectRatio="xMidYMid meet">
+            <line x1="${padL}" y1="${padT}" x2="${padL}" y2="${padT + plotH}" class="chart-axis-line"/>
+            <line x1="${padL}" y1="${padT + plotH}" x2="${W - padR}" y2="${padT + plotH}" class="chart-axis-line"/>
+            ${grid}
+            ${rects}
+          </svg>
+          ${chart.caption ? `<figcaption>${escapeHtml(chart.caption)}</figcaption>` : ""}
+        </figure>
+      </section>`;
+}
+
 function escapeHtml(value) {
   return value
     .replaceAll("&", "&amp;")
@@ -2723,6 +3690,7 @@ ${head({
       ${research ? `<section class="research-panel"><h2>Research Lens</h2><div class="research-grid"><div><strong>Question</strong><p>${escapeHtml(research.question)}</p></div><div><strong>Working Insight</strong><p>${escapeHtml(research.insight)}</p></div></div></section><section class="metric-panel"><h2>Decision Metrics</h2><div class="metric-pill-grid">${research.metrics.map((metric) => `<span>${escapeHtml(metric)}</span>`).join("")}</div></section>` : ""}
       ${deepDiveFigure(article)}
       ${article.sections.map(([heading, body]) => `<section><h2>${escapeHtml(heading)}</h2><p>${escapeHtml(body)}</p></section>`).join("\n      ")}
+      ${chartFigure(article)}
       ${deepComparison(article)}
       <section class="article-checklist">
         <h2>Field Checklist</h2>

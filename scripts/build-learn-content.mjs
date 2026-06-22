@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260622-nav-spacing";
+const version = "20260622-blog-charts";
 const siteUrl = "https://woodcuttool.com";
 
 function escapeHtml(value) {

@@ -6659,3 +6659,60 @@ tr:last-child td {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================================
+   Blog inline SVG data charts (deep-chart-section).
+   Vector, responsive, no external assets.
+   ============================================================ */
+.deep-chart-section {
+  margin: 32px 0;
+}
+.deep-chart-figure {
+  margin: 16px 0 0;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.deep-chart-figure svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.deep-chart-figure figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.chart-grid {
+  stroke: var(--line);
+  stroke-width: 1;
+  stroke-dasharray: 3 4;
+}
+.chart-axis-line {
+  stroke: #b9c2b7;
+  stroke-width: 1.4;
+}
+.chart-axis {
+  fill: #8a948a;
+  font-size: 12px;
+  font-family: inherit;
+}
+.chart-bar {
+  fill: var(--accent);
+}
+.deep-chart-figure.stairs .chart-bar,
+.deep-chart-figure.tile .chart-bar {
+  fill: var(--accent-2);
+}
+.chart-value {
+  fill: var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.chart-label {
+  fill: #5b665c;
+  font-size: 12.5px;
+  font-family: inherit;
+}
