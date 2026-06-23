@@ -2095,6 +2095,552 @@ const articles = [
       ]
     },
     checklist: ["Use profile bits to shape and soften edges.", "Use straight and bearing bits for joinery.", "Reach deep cuts in multiple shallow passes.", "Add router joinery allowances to part sizes.", "Test profiles on offcuts first."]
+  },
+  {
+    slug: "wood-glue-types-and-strength",
+    category: "CutList",
+    title: "Wood Glue Types and Strength, Compared",
+    description: "Compare PVA, polyurethane, epoxy, hide, and CA glues on strength, set time, and water resistance, with charts to pick the right adhesive for your joint.",
+    kicker: "Adhesive guide",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["The Glue Is Often The Joint", "In most woodworking, the glue line carries the load, so choosing the right adhesive matters as much as the joinery. A well-made glue joint on long grain can be stronger than the surrounding wood. But glues differ widely in set time, water resistance, gap filling, and reversibility, so the best choice depends on the joint, the environment, and how fast you need to work."],
+      ["PVA Is The Everyday Workhorse", "Yellow and white PVA glues are the default for interior woodworking: strong on long grain, easy to clean up with water, and inexpensive. Type II PVA adds water resistance for occasional damp exposure. PVA needs clamping and good surface contact, and it does not fill gaps well, so it rewards tight-fitting joints and firm clamp pressure."],
+      ["Polyurethane And Epoxy For Tough Jobs", "Polyurethane glue foams to fill small gaps and resists water, making it useful for exterior work and imperfect joints, though the foam is messy and it needs moisture to cure. Epoxy is the gap-filler and structural champion: it bonds dissimilar materials, fills voids, and resists water, at the cost of mixing and higher price. Reserve these for jobs PVA cannot handle."],
+      ["Specialty Glues: Hide And CA", "Hide glue is reversible with heat and moisture, prized for instruments and antique repair where future disassembly matters. Cyanoacrylate, or CA, sets in seconds and is great for small parts, tacking, and quick fixes, but it is brittle under load. These specialty glues solve narrow problems the everyday adhesives do not."],
+      ["Match Glue To Joint And Environment", "Decide by use: PVA for most interior joints, Type II or polyurethane for damp exposure, epoxy for gaps and dissimilar materials, hide glue for reversibility, CA for speed. Respect clamp and cure times so the joint reaches full strength before stress. Test on offcuts when bonding an unfamiliar material to confirm the glue holds."]
+    ],
+    charts: [
+      {
+        title: "Bond strength by glue type (relative)",
+        caption: "Relative strength on a good wood joint. PVA and epoxy lead; CA is fast but brittle under load.",
+        unit: "",
+        bars: [["Hide", 60], ["CA", 55], ["Polyurethane", 80], ["PVA", 90], ["Epoxy", 95]]
+      },
+      {
+        title: "Typical clamp time by glue (minutes)",
+        caption: "Approximate clamp time before handling. CA sets in seconds; epoxy and polyurethane need longer.",
+        unit: " min",
+        bars: [["CA", 1], ["PVA", 30], ["Hide", 30], ["Polyurethane", 60], ["Epoxy", 120]]
+      },
+      {
+        title: "Water resistance (1 low to 5 high)",
+        caption: "Interior PVA resists water least; epoxy and polyurethane resist most for damp or exterior use.",
+        unit: "",
+        bars: [["PVA I", 2], ["Hide", 1], ["PVA II", 3], ["Polyurethane", 4], ["Epoxy", 5]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Pick glue by joint and environment",
+      figureCaption: "Strength, set time, and water resistance trade off. PVA covers most interior work.",
+      figureStats: [["PVA", "Everyday interior workhorse"], ["Epoxy", "Gap-filling and structural"], ["Cure time", "Reach full strength before stress"]],
+      comparisonTitle: "Wood glue at a glance",
+      comparisonColumns: ["Glue", "Strength", "Water resist", "Best for"],
+      comparisonRows: [
+        ["PVA (yellow)", "High on long grain", "Low to moderate", "Most interior joints"],
+        ["Polyurethane", "High", "High", "Exterior, small gaps"],
+        ["Epoxy", "Highest, gap-filling", "High", "Voids, dissimilar materials"],
+        ["Hide / CA", "Moderate", "Low", "Reversible work / quick fixes"]
+      ],
+      faqs: [
+        ["What glue is strongest for wood?", "On a good long-grain joint, PVA and epoxy are both very strong; epoxy also fills gaps and bonds dissimilar materials."],
+        ["Which wood glue is waterproof?", "Polyurethane and epoxy resist water well; for interior PVA, use Type II for occasional damp exposure."],
+        ["How long do I clamp wood glue?", "PVA typically clamps about 30 minutes and cures fully in a day; epoxy and polyurethane need longer."],
+        ["When should I use epoxy?", "When filling gaps, bonding dissimilar materials, or needing maximum structural strength and water resistance."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (adhesives)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference chapter on adhesive bonding of wood and bond performance."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Plan tight-fitting parts so glue joints reach full strength."]
+      ]
+    },
+    checklist: ["Use PVA for most interior joints.", "Use Type II or polyurethane for damp exposure.", "Use epoxy for gaps and dissimilar materials.", "Respect clamp and cure times.", "Test unfamiliar bonds on offcuts."]
+  },
+  {
+    slug: "clamps-for-woodworking-guide",
+    category: "CutList",
+    title: "Clamps for Woodworking: Types and Uses",
+    description: "Learn which clamps to buy first, from bar and parallel clamps to pipe and spring clamps, with charts on force and use so your glue-ups stay tight and square.",
+    kicker: "Tool guide",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["You Can Never Have Too Many Clamps", "Clamps turn a glued joint from loose parts into a strong, square assembly by holding pressure while the adhesive cures. The old saying that you always need one more clamp is true, because most glue-ups need even pressure across the whole joint. Knowing which clamp types do what lets you build a useful set without buying everything at once."],
+      ["Bar And Parallel Clamps For Panels", "Bar clamps and their stronger parallel-jaw cousins are the backbone of panel and carcass glue-ups, applying steady pressure across a wide span. Parallel clamps keep their jaws square to the work, which helps assemblies stay flat and true. These are the clamps to invest in first for cabinets, tabletops, and box assemblies."],
+      ["Pipe Clamps Stretch Your Budget", "Pipe clamps use fittings on a length of standard pipe, so you can make long clamps cheaply and swap pipe lengths as needed. They apply serious force and are ideal for wide panel glue-ups on a budget. They are heavier and can mar the work, so pads help, but for raw clamping value they are hard to beat."],
+      ["Quick, Spring, And Specialty Clamps", "Quick-grip clamps trade some force for one-handed speed, perfect for tacking parts or holding jigs. Spring clamps are light-duty helpers for small work and holding stops. Specialty clamps like corner and band clamps square up frames and boxes. These fill the gaps around your main bar and parallel clamps."],
+      ["Match The Clamp To The Glue-Up", "Plan the clamping before spreading glue, because once the glue is on the clock is running. Lay out enough clamps for even pressure, dry-fit the assembly first, and have pads and a square ready. The right clamps in the right spots are what turn a parts list and a glue bottle into a flat, square finished piece."]
+    ],
+    charts: [
+      {
+        title: "Clamping force by type (relative)",
+        caption: "Relative force applied. Parallel and pipe clamps press hardest; spring clamps are light-duty.",
+        unit: "",
+        bars: [["Spring", 20], ["Quick-grip", 45], ["Bar", 70], ["Parallel", 90], ["Pipe", 95]]
+      },
+      {
+        title: "Suggested first clamp set (count)",
+        caption: "A practical starting set: invest most in parallel and bar clamps, fewer specialty clamps.",
+        unit: "",
+        bars: [["Parallel", 4], ["Bar", 4], ["Pipe", 2], ["Quick-grip", 4], ["Spring", 6]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Even pressure makes a flat, square joint",
+      figureCaption: "Parallel and bar clamps carry panel glue-ups; quick and spring clamps hold and tack.",
+      figureStats: [["Parallel", "Square jaws for flat panels"], ["Pipe", "Cheap long-reach force"], ["Dry-fit", "Plan clamps before glue"]],
+      comparisonTitle: "Clamp types and uses",
+      comparisonColumns: ["Clamp", "Force", "Best for", "Note"],
+      comparisonRows: [
+        ["Parallel", "High, square", "Cabinets, panels", "Stays flat and true"],
+        ["Bar", "High", "General glue-ups", "Versatile workhorse"],
+        ["Pipe", "High", "Wide panels on a budget", "Heavy, use pads"],
+        ["Quick-grip / spring", "Low-moderate", "Tacking, jigs, small work", "Speed over force"]
+      ],
+      faqs: [
+        ["What clamps should I buy first?", "Parallel or bar clamps for panel and carcass glue-ups, then add quick-grip and spring clamps for holding."],
+        ["Are pipe clamps worth it?", "Yes, for cheap long-reach force on wide panels; they are heavy and benefit from pads."],
+        ["How many clamps do I need?", "Enough for even pressure across the joint; most glue-ups need more than beginners expect."],
+        ["Why dry-fit before gluing?", "To confirm the joint closes square and to plan clamp placement before the glue starts curing."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (adhesive bonding)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on the clamping pressure and contact needed for strong glue bonds."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Plan square parts so glue-ups clamp up flat and true."]
+      ]
+    },
+    checklist: ["Invest first in parallel and bar clamps.", "Use pipe clamps for cheap long reach.", "Keep quick and spring clamps for holding.", "Dry-fit and plan clamps before glue.", "Apply even pressure across the joint."]
+  },
+  {
+    slug: "drawer-slides-types-and-sizing",
+    category: "CutList",
+    title: "Drawer Slides: Types and Sizing Explained",
+    description: "Compare side-mount, undermount, and center slides, plus load ratings and the clearance they need, with charts to size drawer boxes that fit and glide.",
+    kicker: "Hardware guide",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Slides Decide The Drawer Box Size", "Drawer slides are the hardware that makes a drawer glide, and their required clearance dictates how big the drawer box can be. Choosing the slide before cutting the box is essential, because each slide type demands a specific gap between the box and the cabinet. Build the box first and guess the slide, and the drawer will not fit."],
+      ["Side-Mount Slides Are The Standard", "Ball-bearing side-mount slides are the common choice: reliable, easy to install, and widely available. They typically require a precise clearance on each side of the drawer box, often around half an inch, so the box is cut narrower than the opening by the total clearance. They show at the drawer sides but are simple and forgiving."],
+      ["Undermount Slides Hide And Glide", "Undermount slides mount beneath the drawer and stay hidden, giving a clean look and often soft-close action. They demand tighter tolerances on box height, depth, and bottom placement, so they are less forgiving of a sloppy box. The payoff is a premium feel, but the cut list must match the slide's specifications closely."],
+      ["Load Rating And Length Matter", "Slides are rated for a load and come in set lengths. A heavy drawer of tools needs a higher-rated slide than a light utensil drawer, and the slide length should match the cabinet depth. Undersizing the load rating leads to sagging, sticking drawers. Pick the rating and length before sizing the box and the cabinet depth."],
+      ["Size The Box From The Slide Spec", "The reliable workflow is to choose the slide, read its clearance and length spec, then size the drawer box and cabinet opening to match. Use the cut list calculator to set box parts to the exact width the slide needs, and confirm the cabinet depth suits the slide length. Hardware first, box second, every time."]
+    ],
+    charts: [
+      {
+        title: "Drawer slide load rating by type (lb, approx)",
+        caption: "Approximate load ratings. Heavy-duty side-mounts carry the most; light slides suit small drawers.",
+        unit: " lb",
+        bars: [["Light", 35], ["Standard", 75], ["Undermount", 90], ["Heavy-duty", 150]]
+      },
+      {
+        title: "Side clearance needed by slide type (inches)",
+        caption: "Total clearance to subtract from the opening for the drawer box width. Side-mounts need the most.",
+        unit: " in",
+        bars: [["Undermount", 0.3], ["Center", 0.5], ["Side-mount", 1]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Hardware first, drawer box second",
+      figureCaption: "Each slide type needs specific clearance, so the slide spec sets the box dimensions.",
+      figureStats: [["~1/2 in", "Common side-mount clearance per side"], ["Load rating", "Match to drawer weight"], ["Length", "Match to cabinet depth"]],
+      comparisonTitle: "Drawer slide types",
+      comparisonColumns: ["Slide", "Look", "Tolerance", "Best for"],
+      comparisonRows: [
+        ["Side-mount", "Visible at sides", "Forgiving", "Most drawers"],
+        ["Undermount", "Hidden", "Tight", "Premium, soft-close"],
+        ["Center-mount", "Mostly hidden", "Moderate", "Light traditional drawers"],
+        ["Heavy-duty", "Visible", "Forgiving", "Tool and pantry drawers"]
+      ],
+      faqs: [
+        ["How do I size a drawer box for slides?", "Choose the slide, read its clearance spec, and cut the box narrower than the opening by the total clearance."],
+        ["What clearance do side-mount slides need?", "Commonly about half an inch per side, so an inch total off the opening width; confirm your slide's spec."],
+        ["Which slides are easiest to install?", "Side-mount ball-bearing slides are the most forgiving and widely available."],
+        ["What load rating do I need?", "Match it to the drawer's contents; tool and pantry drawers need heavy-duty slides to avoid sag."]
+      ],
+      sources: [
+        ["U.S. Access Board: ADA accessibility", "https://www.access-board.gov/", "Guidance on accessible storage and reach that informs drawer and hardware planning."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Size drawer box parts to the exact clearance your slides require."]
+      ]
+    },
+    checklist: ["Choose the slide before cutting the box.", "Subtract the slide clearance from the opening.", "Match load rating to drawer weight.", "Match slide length to cabinet depth.", "Use undermount only with tight tolerances."]
+  },
+  {
+    slug: "cabinet-hinges-explained",
+    category: "CutList",
+    title: "Cabinet Hinges Explained: Types and Overlay",
+    description: "Understand European, overlay, and inset hinges, plus how door overlay and the cup bore affect your cut list, with charts to pick and bore hinges right.",
+    kicker: "Hardware guide",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Hinges Decide How The Door Sits", "Cabinet hinges do more than swing the door; they determine whether it overlays the cabinet, sits inset, or splits a pair. The hinge type and overlay must be chosen before cutting doors, because they set the door size relative to the opening. Pick the hinge first, then size the doors to match, or they will not align."],
+      ["European Cup Hinges Dominate Frameless", "European, or cup, hinges are the standard for frameless cabinets: concealed, adjustable in three directions, and easy to install once the cup hole is bored. Their three-way adjustment forgives small build errors, which is why they are so popular. They require a specific cup bore diameter and setback, so the door needs an accurately drilled hole."],
+      ["Overlay Sets The Door Size", "Overlay is how much the door covers the cabinet opening: full overlay nearly hides the cabinet edge, half overlay shares an edge between two doors, and inset sits flush within the opening. The overlay you choose changes the door dimensions directly, so it must be locked before the doors are cut, not after."],
+      ["Inset Doors Demand Precision", "Inset doors sit flush inside the frame for a classic look, but they leave a small reveal all around that must be even, which demands precise door sizing and hinge adjustment. They are less forgiving than overlay doors. If you choose inset, plan tighter tolerances and hinges designed for inset mounting."],
+      ["Bore And Size From The Hinge Spec", "The reliable order is to pick the hinge and overlay, read the cup bore diameter and setback, then size and bore the doors to match. Use the cut list calculator to set door dimensions for your chosen overlay, and drill test holes in scrap to confirm the cup fit before boring finished doors."]
+    ],
+    charts: [
+      {
+        title: "Hinge adjustment directions by type (count)",
+        caption: "European cup hinges adjust in three directions, forgiving small errors; basic hinges adjust less.",
+        unit: "",
+        bars: [["Butt", 0], ["Overlay basic", 1], ["Inset", 2], ["European cup", 3]]
+      },
+      {
+        title: "Door overlay by style (inches, typical)",
+        caption: "How much the door covers the opening edge. Full overlay hides the cabinet edge; inset sits flush.",
+        unit: " in",
+        bars: [["Inset", 0], ["Half overlay", 0.4], ["Full overlay", 0.6]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Hinge and overlay set the door size",
+      figureCaption: "Choose the hinge type and overlay first, then size and bore the doors to match.",
+      figureStats: [["3-way", "European hinge adjustment"], ["Cup bore", "Specific diameter and setback"], ["Overlay", "Sets the door dimensions"]],
+      comparisonTitle: "Hinge types compared",
+      comparisonColumns: ["Hinge", "Look", "Adjustability", "Best for"],
+      comparisonRows: [
+        ["European cup", "Concealed", "Three-way", "Frameless cabinets"],
+        ["Overlay (face frame)", "Partly visible", "Some", "Face-frame cabinets"],
+        ["Inset", "Flush, classic", "Moderate", "Traditional inset doors"],
+        ["Butt / exposed", "Visible", "Little", "Decorative, simple doors"]
+      ],
+      faqs: [
+        ["What hinge for frameless cabinets?", "European cup hinges, which are concealed and adjust in three directions to forgive small errors."],
+        ["What is door overlay?", "How much the door covers the cabinet opening: full, half, or inset. It sets the door size."],
+        ["Do hinges change my door cut list?", "Yes. The overlay you pick changes door dimensions, so choose it before cutting doors."],
+        ["Are inset doors harder?", "Yes. They require an even reveal all around and precise sizing and hinge adjustment."]
+      ],
+      sources: [
+        ["U.S. Access Board: ADA accessibility", "https://www.access-board.gov/", "Accessibility guidance relevant to cabinet door operation and hardware."],
+        ["WoodCutTool kitchen cabinet cut list template", "/templates/kitchen-cabinet-cut-list/", "Size doors for your chosen overlay and hinge type."]
+      ]
+    },
+    checklist: ["Choose hinge type and overlay first.", "Use European cup hinges for frameless.", "Let overlay set the door dimensions.", "Bore the cup hole to spec.", "Test the cup fit in scrap before doors."]
+  },
+  {
+    slug: "measuring-and-marking-accuracy",
+    category: "CutList",
+    title: "Measuring and Marking for Accurate Cuts",
+    description: "Cut accurate parts by measuring and marking right: knife versus pencil lines, reference faces, and avoiding cumulative error, with charts on precision.",
+    kicker: "Shop technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Accuracy Starts Before The Saw", "The cleanest cut cannot fix a bad measurement. Accurate parts begin with careful measuring and marking, because every error there carries into the cut and stacks up across the assembly. Slowing down to measure twice, mark precisely, and reference from one face is what makes a project go together square and tight."],
+      ["Knife Lines Beat Pencil Lines", "A pencil line has width, and that width is error. A marking knife scores a precise zero-width line and even gives the chisel or saw a tiny registration groove to start in. For joinery and fine work, knife lines are dramatically more accurate than pencil. Use a pencil for rough layout, but switch to a knife where the cut must be exact."],
+      ["Reference From One Face And Edge", "Measuring every part from a single reference face and edge prevents errors from compounding. If you flip the workpiece or measure from different edges, small inconsistencies add up. Marking a reference face and always measuring from it keeps mating parts consistent, which is what makes joints align and assemblies stay square."],
+      ["Beat Cumulative Error With Stops", "Measuring each repeated part by hand lets tiny errors accumulate across the set. A stop block or a story stick, marked once and used for every part, removes that cumulative drift so all the repeats match exactly. For anything cut in multiples, transferring marks from one master is far more accurate than re-measuring."],
+      ["Marking Feeds The Cut List", "Good measuring and marking turn a cut list into accurate parts. Confirm your actual material sizes, mark reference faces, use a knife where precision counts, and use stops for repeats. Pair that discipline with the cut list calculator so the planned dimensions and the marked parts agree, and the project assembles without fighting."]
+    ],
+    charts: [
+      {
+        title: "Marking method precision (relative accuracy)",
+        caption: "Higher is more precise. Knife lines and gauges beat a pencil line, whose width is built-in error.",
+        unit: "",
+        bars: [["Pencil", 50], ["Sharp pencil", 65], ["Marking gauge", 85], ["Marking knife", 95]]
+      },
+      {
+        title: "Cumulative error over repeated parts (relative)",
+        caption: "Measuring each part lets error grow; a stop block or story stick holds every repeat the same.",
+        unit: "",
+        bars: [["Measure each", 100], ["Tape mark", 60], ["Story stick", 25], ["Stop block", 10]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Precise marks make precise parts",
+      figureCaption: "Knife lines, a single reference face, and stops for repeats keep error from stacking up.",
+      figureStats: [["Knife line", "Zero-width and precise"], ["One reference", "Stops error compounding"], ["Stops", "Identical repeats"]],
+      comparisonTitle: "Marking tools and uses",
+      comparisonColumns: ["Tool", "Precision", "Best for", "Note"],
+      comparisonRows: [
+        ["Pencil", "Low", "Rough layout", "Line has width"],
+        ["Marking knife", "High", "Joinery, exact cuts", "Scores a registration line"],
+        ["Marking gauge", "High", "Parallel lines, joinery", "Repeatable settings"],
+        ["Stop block", "High", "Repeated parts", "Removes cumulative error"]
+      ],
+      faqs: [
+        ["Why use a marking knife over a pencil?", "A knife scores a zero-width line and a registration groove; a pencil line has width that becomes error."],
+        ["How do I avoid measuring errors stacking up?", "Measure from one reference face and edge, and use stops or a story stick for repeats."],
+        ["What is a story stick?", "A stick marked once with all key dimensions, used to transfer marks instead of re-measuring each part."],
+        ["When is a pencil fine?", "For rough layout and non-critical marks; switch to a knife where the cut must be exact."]
+      ],
+      sources: [
+        ["NIST: National Institute of Standards and Technology", "https://www.nist.gov/", "U.S. authority on measurement and metrology, the basis of accurate dimensioning."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Keep planned dimensions and marked parts in agreement."]
+      ]
+    },
+    checklist: ["Measure twice before cutting.", "Use a marking knife for exact lines.", "Reference from one face and edge.", "Use stops for repeated parts.", "Confirm actual material sizes."]
+  },
+  {
+    slug: "sanding-grits-and-sequence",
+    category: "CutList",
+    title: "Sanding Grits and Sequence, Explained",
+    description: "Learn which sandpaper grits to use and in what order, why skipping grits wastes time, and where to stop, with charts to get a smooth finish efficiently.",
+    kicker: "Finishing technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Sanding Is About Sequence, Not Just Effort", "Good sanding is a progression: each grit removes the scratches left by the one before it, so the surface gets steadily smoother. Skipping too far between grits leaves deep scratches the next paper cannot erase, while sanding too fine wastes time and can burnish the wood so it will not take stain. The right sequence is what produces a smooth, even surface efficiently."],
+      ["Start Coarse Enough To Fix Flaws", "Begin at a grit coarse enough to level the real problems: mill marks, glue squeeze-out, and unevenness. Starting too fine just polishes the defects. For most prepared lumber and plywood, a medium coarse grit is the right entry point. Starting coarser than needed removes too much material; starting too fine never fixes the flaw."],
+      ["Step Up Without Skipping Too Far", "Move up through grits in reasonable steps, roughly skipping no more than one grade at a time, so each paper can erase the previous scratches. Jumping from coarse straight to fine leaves scratches that show under finish. The progression feels slow but is faster overall, because you are not re-sanding to chase scratches you skipped past."],
+      ["Know Where To Stop", "There is a point of diminishing returns. For surfaces taking a film finish, sanding to a medium-fine grit is usually enough; going finer can burnish the surface and reduce stain absorption, causing blotch. For oil finishes, a slightly finer stop can help. Stopping at the right grit matters as much as starting at the right one."],
+      ["Sand Smart, Then Finish", "Sand with the grain, vacuum or wipe between grits so coarse particles do not scratch the next pass, and keep an offcut to test the finish. Pair good sanding with the right finish for the project. A well-sanded surface is the foundation every finish sits on, so the sequence is worth doing properly."]
+    ],
+    charts: [
+      {
+        title: "Sanding grit sequence for bare wood",
+        caption: "Step up through grits without big jumps. Each removes the scratches from the one before.",
+        unit: "",
+        bars: [["80", 80], ["120", 120], ["150", 150], ["180", 180], ["220", 220]]
+      },
+      {
+        title: "Where to stop by finish type (grit)",
+        caption: "Stop finer for oils, coarser for film finishes and before staining to avoid burnishing.",
+        unit: "",
+        bars: [["Before stain", 150], ["Film finish", 180], ["Oil finish", 220], ["Between coats", 320]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Each grit erases the last one's scratches",
+      figureCaption: "Start coarse enough to fix flaws, step up without skipping, and stop at the right grit.",
+      figureStats: [["Start", "Coarse enough to level flaws"], ["Step up", "No big grit jumps"], ["Stop", "Match grit to finish"]],
+      comparisonTitle: "Grit ranges and use",
+      comparisonColumns: ["Grit range", "Job", "Use", "Note"],
+      comparisonRows: [
+        ["60-80", "Coarse", "Leveling, shaping", "Removes material fast"],
+        ["100-150", "Medium", "Smoothing, pre-stain", "Workhorse range"],
+        ["180-220", "Fine", "Final before finish", "Stop here for most film finishes"],
+        ["320+", "Very fine", "Between finish coats", "Not for bare softwood"]
+      ],
+      faqs: [
+        ["What grit should I start sanding with?", "Coarse enough to remove mill marks and flaws, often a medium coarse grit; starting too fine just polishes defects."],
+        ["Can I skip grits?", "Skipping too far leaves scratches the next paper cannot remove. Step up without big jumps."],
+        ["How fine should I sand before finishing?", "Often a medium-fine grit for film finishes; going too fine can burnish and reduce stain absorption."],
+        ["Why vacuum between grits?", "Stray coarse particles will scratch the surface during finer passes, undoing your progress."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (finishing)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on surface preparation and sanding for wood finishing."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Plan parts and keep an offcut for sanding and finish tests."]
+      ]
+    },
+    checklist: ["Start coarse enough to fix flaws.", "Step up grits without big jumps.", "Sand with the grain.", "Vacuum between grits.", "Stop at the right grit for your finish."]
+  },
+  {
+    slug: "wood-moisture-content-and-drying",
+    category: "CutList",
+    title: "Wood Moisture Content and Drying Basics",
+    description: "Understand moisture content, why green wood moves and cracks, target moisture for indoor work, and how to acclimate boards, with charts on drying.",
+    kicker: "Material science",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Moisture Content Drives Wood Behavior", "How much water is in a board, its moisture content, determines whether it stays put or warps, cracks, and shrinks. Freshly cut green wood is full of water and moves a lot as it dries; properly dried wood is far more stable. Knowing the moisture content before you build is the difference between a project that lasts and one that splits."],
+      ["Green, Air-Dried, And Kiln-Dried", "Green lumber is high in moisture and unstable for furniture. Air-dried lumber loses moisture over months to reach equilibrium with outdoor air. Kiln-dried lumber is brought down to a lower target moisture quickly and controllably, which is why most furniture stock is kiln-dried. Each state suits different work, but indoor projects want dried wood."],
+      ["Target Moisture For Indoor Work", "Wood used indoors should be dried to roughly the moisture it will live at inside a heated home, often in the single-digit to low-teens percent range depending on climate. Building with wood wetter than its service environment guarantees movement as it finishes drying in place, opening joints and cracking panels. Match the wood to where it will live."],
+      ["Acclimate Before You Build", "Even properly dried lumber should sit in the shop or the room where it will be used for a stretch so it reaches equilibrium with that environment before cutting joints. Acclimating prevents the board from moving after assembly. Stack boards with spacers for airflow and give them time; rushing this step is a common cause of later movement."],
+      ["Plan For The Wood You Have", "Check moisture before building, ideally with a meter, and let the wood acclimate to its destination. Remember that plywood is far more stable than solid wood, so where movement is a risk, plywood or well-dried, acclimated lumber is the safer choice. Plan stable materials into the design, especially for wide panels and tight joints."]
+    ],
+    charts: [
+      {
+        title: "Moisture content by lumber state (percent)",
+        caption: "Approximate moisture content. Green wood is far wetter; kiln-dried reaches a stable indoor range.",
+        unit: "%",
+        bars: [["Green", 50], ["Air-dried", 15], ["Kiln-dried", 8], ["Indoor target", 7]]
+      },
+      {
+        title: "Relative movement risk by moisture gap (relative)",
+        caption: "The bigger the gap between the wood's moisture and its service environment, the more it will move.",
+        unit: "",
+        bars: [["Acclimated", 10], ["Small gap", 35], ["Medium gap", 65], ["Green indoors", 100]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Dry it, then acclimate it",
+      figureCaption: "Match wood moisture to where the piece will live, and let it acclimate before building.",
+      figureStats: [["Kiln-dried", "Stable furniture stock"], ["Acclimate", "Equilibrate before cutting"], ["Plywood", "More stable than solid wood"]],
+      comparisonTitle: "Lumber by drying state",
+      comparisonColumns: ["State", "Moisture", "Stability", "Use"],
+      comparisonRows: [
+        ["Green", "High", "Poor, moves a lot", "Not for furniture"],
+        ["Air-dried", "Moderate", "Better", "Some interior, outdoor"],
+        ["Kiln-dried", "Low", "Good", "Furniture, cabinetry"],
+        ["Acclimated", "At service level", "Best", "Ready to build"]
+      ],
+      faqs: [
+        ["What moisture content should furniture wood be?", "Roughly the level it will live at indoors, often single digits to low teens percent depending on climate."],
+        ["Why does green wood crack?", "It is full of water and shrinks unevenly as it dries, opening checks and warping."],
+        ["Do I need to acclimate kiln-dried wood?", "Yes. Let it equilibrate to the room or shop before building so it does not move after assembly."],
+        ["Is plywood affected by moisture like solid wood?", "Far less. Its cross-laminated construction keeps it stable, though it should still stay dry."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (moisture relations)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Authoritative reference on wood moisture content, drying, and dimensional stability."],
+        ["WoodCutTool board foot calculator", "/board-foot-calculator/", "Estimate lumber while planning for dried, acclimated stock."]
+      ]
+    },
+    checklist: ["Check moisture content before building.", "Use kiln-dried stock for furniture.", "Match wood moisture to its service environment.", "Acclimate boards before cutting.", "Use plywood where movement is a risk."]
+  },
+  {
+    slug: "plywood-storage-and-keeping-sheets-flat",
+    category: "CutList",
+    title: "Plywood Storage: Keeping Sheets Flat",
+    description: "Store plywood so it stays flat and dry: vertical versus horizontal storage, support spacing, moisture control, and how to flatten a warped sheet.",
+    kicker: "Shop technique",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Stored Wrong, Plywood Warps", "Plywood is stable when supported but will bow, cup, or twist if stored carelessly. A leaning sheet, an unsupported span, or a damp floor can ruin a panel before you cut it. Good storage keeps sheets flat and dry so they cut true and assemble square, protecting the money tied up in a stack of plywood."],
+      ["Flat And Fully Supported Is Best", "The flattest storage is horizontal on a fully supported, level surface, so the sheet has no chance to sag. Stacking sheets flat on a flat base keeps them true. The enemy is an unsupported middle: a sheet bridging a gap will sag over time under its own weight, especially in a warm shop."],
+      ["Vertical Storage Saves Space", "When floor space is tight, vertical storage works if the sheets stand nearly upright against a flat surface, not leaning at an angle. A shallow lean lets gravity bow the panel. Keep sheets close to vertical, fully backed, and off a damp floor with a rail or spacer underneath. Vertical is a fine compromise when done correctly."],
+      ["Control Moisture", "Plywood absorbs moisture from a damp floor or humid air, which causes warping and can affect the glue over time. Keep sheets off concrete with spacers, store them in a dry space, and avoid wide swings in humidity. A panel stored damp on one face cups toward the dry side, so even drying and a dry environment matter."],
+      ["Flattening A Warped Sheet", "A mildly cupped sheet can sometimes be coaxed flat by storing it flat with even weight, or by exposing the concave side to even moisture and letting it equilibrate. Severe warps may never fully recover. The better strategy is prevention: store flat, support fully, keep dry, and a sheet stays ready to cut into accurate parts."]
+    ],
+    charts: [
+      {
+        title: "Warp risk by storage method (relative)",
+        caption: "Flat and fully supported is safest; an angled lean and a damp floor are the worst for warping.",
+        unit: "",
+        bars: [["Flat supported", 10], ["Near-vertical", 30], ["Leaning", 70], ["Damp floor", 90]]
+      },
+      {
+        title: "Max unsupported span before sag (relative)",
+        caption: "Thicker sheets tolerate a wider unsupported span; thin panels sag over short gaps.",
+        unit: "",
+        bars: [["1/4 in", 20], ["1/2 in", 45], ["3/4 in", 70], ["Full support", 100]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Flat, supported, and dry",
+      figureCaption: "Keep sheets flat and fully supported, near-vertical if space is tight, and always off a damp floor.",
+      figureStats: [["Flat", "Best, fully supported"], ["Near-vertical", "Space-saving if upright"], ["Dry", "Off the concrete floor"]],
+      comparisonTitle: "Storage options",
+      comparisonColumns: ["Method", "Flatness", "Space", "Note"],
+      comparisonRows: [
+        ["Flat, supported", "Best", "Uses floor area", "Fully back the stack"],
+        ["Near-vertical", "Good", "Space-saving", "Keep nearly upright"],
+        ["Leaning", "Poor", "Space-saving", "Gravity bows the sheet"],
+        ["On damp floor", "Poor", "Any", "Absorbs moisture, cups"]
+      ],
+      faqs: [
+        ["How should I store plywood?", "Flat and fully supported is best; near-vertical works if sheets stay nearly upright and off a damp floor."],
+        ["Why did my plywood warp?", "Usually an unsupported span, an angled lean, or moisture from a damp floor or humid air."],
+        ["Can I flatten warped plywood?", "Mild cupping may improve with flat storage and even moisture; severe warps often will not fully recover."],
+        ["Does plywood need to be off the floor?", "Yes. Keep it off concrete with spacers to avoid absorbing moisture and cupping."]
+      ],
+      sources: [
+        ["APA - The Engineered Wood Association", "https://www.apawood.org/", "Guidance on handling and storing engineered wood panels to maintain flatness."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Plan cuts from flat, true sheets for accurate parts."]
+      ]
+    },
+    checklist: ["Store sheets flat and fully supported.", "Keep vertical storage nearly upright.", "Get sheets off a damp concrete floor.", "Store in a dry, stable environment.", "Prevent warp rather than fixing it."]
+  },
+  {
+    slug: "shop-layout-and-workflow-design",
+    category: "CutList",
+    title: "Shop Layout and Workflow Design",
+    description: "Lay out a small woodworking shop around how work flows: from sheet storage to breakdown, assembly, finishing, and dust control, with charts on space.",
+    kicker: "Workshop planning",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Design The Shop Around The Workflow", "A good shop is laid out around how material moves: in as sheets and boards, through breakdown and cutting, into assembly, then finishing, and out as a project. When the layout follows that flow, you waste less time carrying parts back and forth. Even a small shop works well if the stations sit in a sensible order."],
+      ["Put The Table Saw At The Heart", "The table saw is usually the center of a shop because so much work passes through it, and it needs clear space for infeed and outfeed to handle sheets and long boards safely. Placing it centrally with room on all sides lets you break down and rip without obstruction. Most other stations arrange around it."],
+      ["Plan Infeed, Outfeed, And Assembly Space", "Cutting needs room before and after the blade; assembly needs an open, flat surface; finishing needs a dust-free corner. Skimping on these is the most common small-shop mistake. A folding outfeed table, a mobile assembly bench, and a separate finishing zone keep the workflow smooth without demanding a huge footprint."],
+      ["Mobility Makes Small Shops Work", "In a tight space, mobile bases let tools roll out for use and tuck away after, effectively giving one footprint multiple uses. A shared driveway or single-car garage shop lives or dies on mobility and folding surfaces. Plan which tools move and where they park, so the shop reconfigures quickly for each task."],
+      ["Build Dust And Storage Into The Plan", "Dust collection and material storage are part of the layout, not afterthoughts. Route collection to the tools that make the most dust, and store sheets and offcuts where they are reachable but out of the work path. A clean, organized shop with a sensible flow is safer, faster, and far more pleasant to work in."]
+    ],
+    charts: [
+      {
+        title: "Clearance to plan around the table saw (feet)",
+        caption: "Approximate clear space for safe sheet and board handling. Infeed and outfeed need the most room.",
+        unit: " ft",
+        bars: [["Sides", 3], ["Infeed", 8], ["Outfeed", 8], ["Rip width", 4]]
+      },
+      {
+        title: "Shop space priority by station (relative)",
+        caption: "Where to spend limited floor area. Cutting and assembly need the most; finishing can be compact.",
+        unit: "",
+        bars: [["Cutting", 90], ["Assembly", 80], ["Storage", 55], ["Finishing", 45], ["Bench", 60]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Material flows in one direction",
+      figureCaption: "Storage to breakdown to assembly to finishing, with the table saw central and tools mobile.",
+      figureStats: [["Flow", "In, cut, assemble, finish, out"], ["Table saw", "Central with infeed and outfeed"], ["Mobility", "Multiplies a small footprint"]],
+      comparisonTitle: "Shop station needs",
+      comparisonColumns: ["Station", "Space need", "Priority", "Note"],
+      comparisonRows: [
+        ["Sheet breakdown", "Large", "High", "Track saw or saw with room"],
+        ["Table saw", "Large, clear sides", "High", "Central, infeed and outfeed"],
+        ["Assembly", "Open flat surface", "High", "Mobile bench helps"],
+        ["Finishing", "Dust-free corner", "Moderate", "Keep separate from cutting"]
+      ],
+      faqs: [
+        ["How do I lay out a small shop?", "Arrange stations to follow the workflow: storage, breakdown, cutting, assembly, finishing, with mobile tools."],
+        ["Where should the table saw go?", "Usually central, with clear infeed and outfeed space to handle sheets and long boards safely."],
+        ["How much space does a table saw need?", "Enough infeed and outfeed to support full sheets and long rips, plus clearance at the sides."],
+        ["How do I fit a shop in a garage?", "Use mobile bases and folding surfaces so tools roll out to use and tuck away after."]
+      ],
+      sources: [
+        ["OSHA: Woodworking eTool", "https://www.osha.gov/etools/woodworking", "Safety guidance on machine spacing, material handling, and shop setup."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Plan breakdown cuts that suit your shop's space and flow."]
+      ]
+    },
+    checklist: ["Lay out stations to follow the workflow.", "Place the table saw central with clear space.", "Plan infeed, outfeed, and assembly room.", "Use mobile bases in tight shops.", "Build dust and storage into the layout."]
+  },
+  {
+    slug: "estimating-project-cost-materials-hardware",
+    category: "CutList",
+    title: "Estimating Project Cost: Materials and Hardware",
+    description: "Build an honest woodworking budget: sheet goods, lumber, hardware, finish, and a contingency, with charts showing where the money actually goes.",
+    kicker: "Cost planning",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["A Real Budget Is More Than Sheet Goods", "Woodworkers often budget the plywood and forget the rest, then get surprised at checkout. A complete estimate includes sheet goods, solid lumber, hardware, fasteners, glue, finish, and a contingency for mistakes. Listing every category up front turns a rough guess into a budget you can trust, and shows where a design is quietly expensive."],
+      ["Sheet Goods And Lumber", "Material is usually the largest line. Estimate sheet count from a real layout and price it by grade, then add solid lumber by board foot for edges, face frames, and trim. Using a cheaper grade on hidden parts and a thinner panel where load allows is where material savings live. The plywood and board foot calculators turn parts into real quantities."],
+      ["Hardware Adds Up Fast", "Hardware is the line people underestimate. Drawer slides, hinges, knobs, pulls, and shelf pins add up quickly across a cabinet project, sometimes rivaling the cost of the wood. List every piece of hardware and its quantity early, because a kitchen's worth of soft-close slides and hinges is a serious number that belongs in the budget from the start."],
+      ["Finish, Fasteners, And Consumables", "Glue, screws, sandpaper, and finish are easy to overlook but real. A quart of quality finish, a box of screws, and several sanding discs are modest individually but add up. Including consumables keeps the estimate honest, and choosing the finish early lets you price it rather than discovering the cost at the end."],
+      ["Add A Contingency", "Mistakes happen: a miscut part, a wrong hardware order, a damaged sheet. A sensible contingency, often around ten to fifteen percent, absorbs those without blowing the budget. Build the estimate by category, add the contingency, and you have a number you can commit to. Then track actual versus estimate to improve the next project's budget."]
+    ],
+    charts: [
+      {
+        title: "Where the budget goes: a cabinet project (percent)",
+        caption: "Approximate cost shares for a cabinet build. Hardware and finish are bigger than many expect.",
+        unit: "%",
+        bars: [["Sheet goods", 40], ["Lumber", 15], ["Hardware", 25], ["Finish", 10], ["Contingency", 10]]
+      },
+      {
+        title: "Relative total cost by project (index)",
+        caption: "Indexed total cost. Hardware-heavy projects like kitchens cost far more than simple shelving.",
+        unit: "",
+        bars: [["Shelf", 15], ["Bookcase", 35], ["Dresser", 70], ["Kitchen", 100]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Estimate every category, then add contingency",
+      figureCaption: "Sheet goods, lumber, hardware, finish, and consumables, plus a buffer for mistakes.",
+      figureStats: [["Material", "Usually the largest line"], ["Hardware", "Underestimated and rising"], ["~10-15%", "Sensible contingency"]],
+      comparisonTitle: "Budget categories",
+      comparisonColumns: ["Category", "Typical share", "Save by", "Note"],
+      comparisonRows: [
+        ["Sheet goods", "Large", "Grade per part", "Estimate from a real layout"],
+        ["Hardware", "Often large", "Choosing standard parts", "Slides, hinges add up"],
+        ["Finish + consumables", "Small but real", "Buying in bulk", "Easy to forget"],
+        ["Contingency", "10-15%", "Careful cutting", "Absorbs mistakes"]
+      ],
+      faqs: [
+        ["What should a woodworking budget include?", "Sheet goods, lumber, hardware, fasteners, glue, finish, and a contingency for mistakes."],
+        ["Why is hardware easy to underestimate?", "Slides, hinges, and pulls add up fast across a project and can rival the cost of the wood."],
+        ["How much contingency should I add?", "Often around ten to fifteen percent to cover miscuts, damaged material, and wrong orders."],
+        ["How do I estimate material cost?", "Get a real sheet count and board feet from a layout, then price by grade and species."]
+      ],
+      sources: [
+        ["U.S. Bureau of Labor Statistics: Producer Price Index", "https://www.bls.gov/ppi/", "Official U.S. data on lumber and material price trends for realistic budgeting."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Turn parts into a real sheet count to anchor the material budget."]
+      ]
+    },
+    checklist: ["Budget every category, not just plywood.", "Estimate sheet goods from a real layout.", "List all hardware and quantities early.", "Include finish and consumables.", "Add a sensible contingency."]
   }
 ];
 
