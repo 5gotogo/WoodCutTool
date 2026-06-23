@@ -2440,7 +2440,8 @@ legend {
 
 .input-grid.two,
 .input-grid.three,
-.input-grid.four {
+.input-grid.four,
+.input-grid.five {
   grid-template-columns: 1fr;
 }
 
@@ -2609,6 +2610,10 @@ form > .button,
   --metric-color: #eb5757;
 }
 
+.app-metric.savings {
+  --metric-color: #27ae60;
+}
+
 .app-action-row {
   display: grid;
   grid-template-columns: 1fr;
@@ -2643,13 +2648,15 @@ form > .button,
   background: #e7e9ee;
 }
 
-.app-tabs span {
+.app-tabs span,
+.app-tabs a {
   min-height: 34px;
   display: grid;
   place-items: center;
   border-radius: 999px;
   color: #4e5865;
   font-weight: 850;
+  text-decoration: none;
 }
 
 .app-tabs .active {
@@ -2703,6 +2710,16 @@ form > .button,
   border: 1px solid var(--line);
   border-radius: 7px;
   background: #fbfaf6;
+}
+
+.plan-list .plan-more {
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.plan-more .button {
+  width: 100%;
 }
 
 .bar-track {
@@ -6065,6 +6082,10 @@ tr:last-child td {
 
   .input-grid.four {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .input-grid.five {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .application-grid {

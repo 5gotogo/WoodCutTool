@@ -122,6 +122,7 @@ const translations = {
     "Board width (in)": "板材宽度（英寸）",
     "Board thickness (in)": "板材厚度（英寸）",
     "Saw kerf (in)": "锯缝（英寸）",
+    "Price / sheet ($)": "每张价格（美元）",
     "Cut pieces": "切割零件",
     "Part name": "零件名称",
     "Length (in)": "长度（英寸）",
@@ -135,6 +136,13 @@ const translations = {
     "Boards required": "所需板材",
     "Cut length": "切割长度",
     "Kerf loss": "锯缝损耗",
+    "Optimized cost": "优化后成本",
+    "Estimated savings": "预计节省",
+    "Savings compare this optimized layout with a simple row-by-row sheet estimate": "节省金额基于优化布局与简单逐行排板估算对比",
+    "sheet before optimization": "张板，优化前",
+    "sheets before optimization": "张板，优化前",
+    "plus avoided waste against a 20% manual layout benchmark.": "并加上相对 20% 手工排板损耗基准少浪费的材料钱。",
+    "More": "更多",
     "Step-by-step cutting guide": "分步切割指南",
     "Stringer Calculator": "楼梯梁计算器",
     "Stair layout tool": "楼梯布局工具",
@@ -226,6 +234,7 @@ const translations = {
     "Board width (in)": "板材寬度（英寸）",
     "Board thickness (in)": "板材厚度（英寸）",
     "Saw kerf (in)": "鋸縫（英寸）",
+    "Price / sheet ($)": "每張價格（美元）",
     "Cut pieces": "切割零件",
     "Part name": "零件名稱",
     "Length (in)": "長度（英寸）",
@@ -238,6 +247,13 @@ const translations = {
     "Boards required": "所需板材",
     "Cut length": "切割長度",
     "Kerf loss": "鋸縫損耗",
+    "Optimized cost": "最佳化後成本",
+    "Estimated savings": "預計節省",
+    "Savings compare this optimized layout with a simple row-by-row sheet estimate": "節省金額基於最佳化布局與簡單逐行排板估算對比",
+    "sheet before optimization": "張板，最佳化前",
+    "sheets before optimization": "張板，最佳化前",
+    "plus avoided waste against a 20% manual layout benchmark.": "並加上相對 20% 手工排板損耗基準少浪費的材料錢。",
+    "More": "更多",
     "Stringer Calculator": "樓梯樑計算器",
     "Stair dimensions": "樓梯尺寸",
     "Total rise (in)": "總升高（英寸）",
@@ -3937,43 +3953,104 @@ function initCutList() {
 function packSheets(parts, sheetLength, sheetWidth, kerf, allowRotate) {
   const pieces = summarizeParts(parts)
     .filter((part) => part.width > 0)
-    .sort((a, b) => Math.max(b.length, b.width) - Math.max(a.length, a.width));
+    .sort((a, b) => {
+      const areaDiff = (b.length * b.width) - (a.length * a.width);
+      if (areaDiff) return areaDiff;
+      const longDiff = Math.max(b.length, b.width) - Math.max(a.length, a.width);
+      if (longDiff) return longDiff;
+      return Math.min(b.length, b.width) - Math.min(a.length, a.width);
+    });
   const sheets = [];
 
-  const newSheet = () => ({ rows: [], placements: [], usedArea: 0 });
-  const placeOnSheet = (sheet, piece) => {
+  const newSheet = () => ({
+    freeRects: [{ x: 0, y: 0, w: sheetWidth, h: sheetLength }],
+    placements: [],
+    usedArea: 0
+  });
+  const orientationsFor = (piece) => {
     const orientations = allowRotate
       ? [
           { w: piece.width, h: piece.length, rotated: false },
           { w: piece.length, h: piece.width, rotated: true }
         ]
       : [{ w: piece.width, h: piece.length, rotated: false }];
+    return orientations.filter((o, index, list) =>
+      index === list.findIndex((candidate) => candidate.w === o.w && candidate.h === o.h)
+    );
+  };
+  const splitFreeRects = (freeRects, block) => {
+    const next = [];
+    freeRects.forEach((rect) => {
+      const separated =
+        block.x >= rect.x + rect.w ||
+        block.x + block.w <= rect.x ||
+        block.y >= rect.y + rect.h ||
+        block.y + block.h <= rect.y;
+      if (separated) {
+        next.push(rect);
+        return;
+      }
+      const rectRight = rect.x + rect.w;
+      const rectBottom = rect.y + rect.h;
+      const blockRight = block.x + block.w;
+      const blockBottom = block.y + block.h;
 
-    for (const row of sheet.rows) {
-      for (const o of orientations) {
-        if (o.w <= row.remainingWidth && o.h <= row.height) {
-          const placement = { ...piece, x: row.x, y: row.y, w: o.w, h: o.h, rotated: o.rotated };
-          sheet.placements.push(placement);
-          sheet.usedArea += o.w * o.h;
-          row.x += o.w + kerf;
-          row.remainingWidth -= o.w + kerf;
-          return true;
+      if (block.x > rect.x) next.push({ x: rect.x, y: rect.y, w: block.x - rect.x, h: rect.h });
+      if (blockRight < rectRight) next.push({ x: blockRight, y: rect.y, w: rectRight - blockRight, h: rect.h });
+      if (block.y > rect.y) next.push({ x: rect.x, y: rect.y, w: rect.w, h: block.y - rect.y });
+      if (blockBottom < rectBottom) next.push({ x: rect.x, y: blockBottom, w: rect.w, h: rectBottom - blockBottom });
+    });
+
+    return next
+      .filter((rect) => rect.w > 0.01 && rect.h > 0.01)
+      .filter((rect, index, list) => !list.some((other, otherIndex) =>
+        otherIndex !== index &&
+        rect.x >= other.x &&
+        rect.y >= other.y &&
+        rect.x + rect.w <= other.x + other.w &&
+        rect.y + rect.h <= other.y + other.h
+      ));
+  };
+  const findPlacement = (sheet, piece) => {
+    let best = null;
+    sheet.freeRects.forEach((rect, rectIndex) => {
+      orientationsFor(piece).forEach((o) => {
+        if (o.w > rect.w || o.h > rect.h) return;
+        const areaFit = rect.w * rect.h - o.w * o.h;
+        const shortSideFit = Math.min(Math.abs(rect.w - o.w), Math.abs(rect.h - o.h));
+        const longSideFit = Math.max(Math.abs(rect.w - o.w), Math.abs(rect.h - o.h));
+        const score = [rect.y, rect.x, o.rotated ? 1 : 0, shortSideFit, areaFit, longSideFit];
+        if (!best || score.some((value, index) => value < best.score[index] && score.slice(0, index).every((prior, priorIndex) => prior === best.score[priorIndex]))) {
+          best = { rect, rectIndex, orientation: o, score };
         }
-      }
-    }
-
-    const usedHeight = sheet.rows.reduce((sum, row) => sum + row.height + kerf, 0);
-    for (const o of orientations) {
-      if (o.w <= sheetWidth && usedHeight + o.h <= sheetLength) {
-        const row = { x: 0, y: usedHeight, height: o.h, remainingWidth: sheetWidth - o.w - kerf };
-        sheet.rows.push(row);
-        sheet.placements.push({ ...piece, x: 0, y: usedHeight, w: o.w, h: o.h, rotated: o.rotated });
-        sheet.usedArea += o.w * o.h;
-        row.x = o.w + kerf;
-        return true;
-      }
-    }
-    return false;
+      });
+    });
+    return best;
+  };
+  const placeOnSheet = (sheet, piece) => {
+    const best = findPlacement(sheet, piece);
+    if (!best) return false;
+    const { rect, orientation } = best;
+    const spacingW = orientation.w >= rect.w - 0.01 ? 0 : kerf;
+    const spacingH = orientation.h >= rect.h - 0.01 ? 0 : kerf;
+    const placement = {
+      ...piece,
+      x: rect.x,
+      y: rect.y,
+      w: orientation.w,
+      h: orientation.h,
+      rotated: orientation.rotated
+    };
+    const block = {
+      x: rect.x,
+      y: rect.y,
+      w: Math.min(rect.w, orientation.w + spacingW),
+      h: Math.min(rect.h, orientation.h + spacingH)
+    };
+    sheet.placements.push(placement);
+    sheet.usedArea += orientation.w * orientation.h;
+    sheet.freeRects = splitFreeRects(sheet.freeRects, block);
+    return true;
   };
 
   const rejected = [];
@@ -3999,10 +4076,66 @@ function packSheets(parts, sheetLength, sheetWidth, kerf, allowRotate) {
     }
   });
 
+  sheets.forEach((sheet) => {
+    sheet.placements.sort((a, b) => (a.y - b.y) || (a.x - b.x) || (b.w * b.h - a.w * a.h));
+  });
   const sheetArea = sheetLength * sheetWidth;
   const usedArea = sheets.reduce((sum, sheet) => sum + sheet.usedArea, 0);
   const wastePercent = sheets.length ? ((sheets.length * sheetArea - usedArea) / (sheets.length * sheetArea)) * 100 : 0;
   return { sheets, rejected, usedArea, wastePercent };
+}
+
+function estimateRowLayoutSheetCount(parts, sheetLength, sheetWidth, kerf, allowRotate) {
+  const pieces = summarizeParts(parts).filter((part) => part.width > 0);
+  const sheets = [];
+  const orientationsFor = (piece) => allowRotate
+    ? [
+        { w: piece.width, h: piece.length },
+        { w: piece.length, h: piece.width }
+      ]
+    : [{ w: piece.width, h: piece.length }];
+  const newSheet = () => ({ rows: [] });
+  const placeOnSheet = (sheet, piece) => {
+    const orientations = orientationsFor(piece);
+    for (const row of sheet.rows) {
+      for (const o of orientations) {
+        if (o.w <= row.remainingWidth && o.h <= row.height) {
+          row.x += o.w + kerf;
+          row.remainingWidth -= o.w + kerf;
+          return true;
+        }
+      }
+    }
+    const usedHeight = sheet.rows.reduce((sum, row) => sum + row.height + kerf, 0);
+    for (const o of orientations) {
+      if (o.w <= sheetWidth && usedHeight + o.h <= sheetLength) {
+        sheet.rows.push({ x: o.w + kerf, y: usedHeight, height: o.h, remainingWidth: sheetWidth - o.w - kerf });
+        return true;
+      }
+    }
+    return false;
+  };
+
+  pieces.forEach((piece) => {
+    const fits = allowRotate
+      ? (piece.width <= sheetWidth && piece.length <= sheetLength) || (piece.length <= sheetWidth && piece.width <= sheetLength)
+      : piece.width <= sheetWidth && piece.length <= sheetLength;
+    if (!fits) return;
+    let placed = false;
+    for (const sheet of sheets) {
+      if (placeOnSheet(sheet, piece)) {
+        placed = true;
+        break;
+      }
+    }
+    if (!placed) {
+      const sheet = newSheet();
+      placeOnSheet(sheet, piece);
+      sheets.push(sheet);
+    }
+  });
+
+  return Math.max(sheets.length, 0);
 }
 
 function drawSheet(canvas, sheets, sheetLength, sheetWidth) {
@@ -4091,14 +4224,26 @@ function initPlywood() {
     const sheetLength = numberValue(form, "sheetLength", 96);
     const sheetWidth = numberValue(form, "sheetWidth", 48);
     const kerf = numberValue(form, "kerf", 0.125);
+    const sheetPrice = numberValue(form, "sheetPrice", 42);
     const allowRotate = form.elements.rotate.value === "yes";
-    const packed = packSheets(getRows(document.getElementById("plywood-rows")), sheetLength, sheetWidth, kerf, allowRotate);
+    const parts = getRows(document.getElementById("plywood-rows"));
+    const packed = packSheets(parts, sheetLength, sheetWidth, kerf, allowRotate);
     const yieldPercent = Math.max(0, 100 - packed.wastePercent);
-    const estimatedCost = packed.sheets.length * 42;
-    const wasteValue = estimatedCost * (packed.wastePercent / 100);
-    const sequence = packed.sheets.flatMap((sheet, sheetIndex) =>
-      sheet.placements.map((part, index) => `<li><strong>Cut ${index + 1}, sheet ${sheetIndex + 1}</strong>: ${escapeHtml(part.label)} ${format(part.h)} x ${format(part.w)} in${part.rotated ? " rotated" : ""}</li>`)
+    const baselineSheets = Math.max(estimateRowLayoutSheetCount(parts, sheetLength, sheetWidth, kerf, allowRotate), packed.sheets.length);
+    const estimatedCost = packed.sheets.length * sheetPrice;
+    const sheetCountSavings = Math.max(0, baselineSheets - packed.sheets.length) * sheetPrice;
+    const manualWasteBenchmark = 20;
+    const wasteRateSavings = Math.max(0, manualWasteBenchmark - packed.wastePercent) / 100 * estimatedCost;
+    const savedValue = sheetCountSavings + wasteRateSavings;
+    const sequenceItems = packed.sheets.flatMap((sheet, sheetIndex) =>
+      sheet.placements.map((part) => ({ ...part, sheetNumber: sheetIndex + 1 }))
+    );
+    const visibleSequence = sequenceItems.slice(0, 3).map((part, index) =>
+      `<li><strong>Cut ${index + 1}, sheet ${part.sheetNumber}</strong>: ${escapeHtml(part.label)} ${format(part.h)} x ${format(part.w)} in${part.rotated ? " rotated" : ""}</li>`
     ).join("");
+    const moreSequence = sequenceItems.length > 3
+      ? `<li class="plan-more"><a class="button small app-action blue" href="${APP_STORE_URL}" rel="nofollow">${t("More")}</a></li>`
+      : "";
 
     result.innerHTML = `
       <h2>Plywood layout result</h2>
@@ -4106,8 +4251,8 @@ function initPlywood() {
         <div class="app-metric-grid">
           <div class="app-metric yield"><small>Yield</small><strong>${format(yieldPercent, 1)}%</strong><span>Total yield</span></div>
           <div class="app-metric sheets"><small>Sheets</small><strong>${packed.sheets.length}</strong><span>Sheets used</span></div>
-          <div class="app-metric cost"><small>Cost</small><strong>$${format(estimatedCost, 0)}</strong><span>Material cost</span></div>
-          <div class="app-metric waste"><small>Waste</small><strong>$${format(wasteValue, 2)}</strong><span>Waste value</span></div>
+          <div class="app-metric cost"><small>Cost</small><strong>$${format(estimatedCost, 0)}</strong><span>Optimized cost</span></div>
+          <div class="app-metric savings"><small>Saved</small><strong>$${format(savedValue, 0)}</strong><span>Estimated savings</span></div>
         </div>
         <div class="app-action-row">
           <a class="button small app-action dark" href="${APP_STORE_URL}" rel="nofollow">Share PDF</a>
@@ -4116,7 +4261,7 @@ function initPlywood() {
         </div>
         <div class="app-tabs" aria-label="Layout view selector">
           <span class="active">Layout</span>
-          <span>Parts View</span>
+          <a href="${APP_STORE_URL}" rel="nofollow">Parts View</a>
         </div>
         <div class="sheet-result-card">
           <div class="sheet-result-header">
@@ -4129,13 +4274,16 @@ function initPlywood() {
           <canvas class="sheet-preview" id="sheet-canvas" aria-label="First sheet layout preview"></canvas>
         </div>
       </div>
-      <ul class="plan-list">${sequence || "<li>No parts fit the selected sheet size.</li>"}</ul>
+      <ul class="plan-list">${visibleSequence || "<li>No parts fit the selected sheet size.</li>"}${moreSequence}</ul>
+      <p class="notice">${t("Savings compare this optimized layout with a simple row-by-row sheet estimate")} (${baselineSheets} ${t(baselineSheets === 1 ? "sheet before optimization" : "sheets before optimization")}) ${t("plus avoided waste against a 20% manual layout benchmark.")}</p>
       ${packed.rejected.length ? `<p class="notice">${packed.rejected.length} pieces are too large for the sheet.</p>` : ""}
       ${appCta()}
     `;
     drawSheet(document.getElementById("sheet-canvas"), packed.sheets, sheetLength, sheetWidth);
     translateElement(result, getActiveLang());
   });
+
+  form.requestSubmit();
 }
 
 function initStairs() {

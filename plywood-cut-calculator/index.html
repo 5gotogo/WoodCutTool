@@ -214,10 +214,11 @@
         <form id="plywood-form">
           <fieldset>
             <legend>Sheet setup</legend>
-            <div class="input-grid four">
-              <label>Sheet length (in) <input name="sheetLength" type="number" min="1" step="0.01" value="96"></label>
-              <label>Sheet width (in) <input name="sheetWidth" type="number" min="1" step="0.01" value="48"></label>
+            <div class="input-grid five">
+              <label>Sheet length (in) <input name="sheetLength" type="number" min="1" step="0.01" value="100"></label>
+              <label>Sheet width (in) <input name="sheetWidth" type="number" min="1" step="0.01" value="100"></label>
               <label>Saw kerf (in) <input name="kerf" type="number" min="0" step="0.001" value="0.125"></label>
+              <label>Price / sheet ($) <input name="sheetPrice" type="number" min="0" step="0.01" value="42"></label>
               <label>Allow rotation <select name="rotate"><option value="yes">Yes</option><option value="no">No</option></select></label>
             </div>
           </fieldset>
@@ -225,17 +226,24 @@
             <legend>Panels</legend>
             <div class="rows" id="plywood-rows">
               <div class="piece-row four">
-                <label>Panel name <input name="label" value="Cabinet side"></label>
-                <label>Length (in) <input name="length" type="number" min="0.01" step="0.01" value="34.5"></label>
-                <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="23.25"></label>
+                <label>Panel name <input name="label" value="Door"></label>
+                <label>Length (in) <input name="length" type="number" min="0.01" step="0.01" value="50"></label>
+                <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="43"></label>
                 <label>Qty <input name="qty" type="number" min="1" step="1" value="2"></label>
                 <button class="button secondary remove-row" type="button">Remove</button>
               </div>
               <div class="piece-row four">
-                <label>Panel name <input name="label" value="Shelf"></label>
+                <label>Panel name <input name="label" value="Cubby"></label>
+                <label>Length (in) <input name="length" type="number" min="0.01" step="0.01" value="48"></label>
+                <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="24"></label>
+                <label>Qty <input name="qty" type="number" min="1" step="1" value="4"></label>
+                <button class="button secondary remove-row" type="button">Remove</button>
+              </div>
+              <div class="piece-row four">
+                <label>Panel name <input name="label" value="Rail"></label>
                 <label>Length (in) <input name="length" type="number" min="0.01" step="0.01" value="30"></label>
-                <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="18"></label>
-                <label>Qty <input name="qty" type="number" min="1" step="1" value="3"></label>
+                <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="12"></label>
+                <label>Qty <input name="qty" type="number" min="1" step="1" value="1"></label>
                 <button class="button secondary remove-row" type="button">Remove</button>
               </div>
             </div>
