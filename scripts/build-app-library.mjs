@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { ogTags } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260623-chart-colors";
+const version = "20260623-seo-feed";
 const apps = JSON.parse(readFileSync(join(root, "data", "app-store-apps.json"), "utf8"));
 const appStoreReviews = JSON.parse(readFileSync(join(root, "data", "app-store-reviews.json"), "utf8"));
 

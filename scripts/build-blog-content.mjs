@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260623-chart-colors";
+const version = "20260623-seo-feed";
 const siteUrl = "https://woodcuttool.com";
 
 
@@ -4584,6 +4584,7 @@ function head({ title, description, canonical, ogType = "website", jsonLd = "" }
   <meta name="description" content="${escapeHtml(description)}">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="${canonical}">
+  <link rel="alternate" type="application/rss+xml" title="WoodCutTool Blog" href="/feed.xml">
   ${ogTags({ title, description, canonical, type: ogType })}
   ${jsonLd}
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
@@ -5408,3 +5409,38 @@ for (const article of articles) {
 }
 
 updateExistingHtml();
+
+// RSS 2.0 feed of the most recent blog posts (helps discovery + freshness).
+function buildRssFeed() {
+  const site = "https://woodcuttool.com";
+  const recent = articles.slice(-40).reverse();
+  const now = new Date();
+  const items = recent.map((article, i) => {
+    // Stagger pubDates so newest posts sort first in readers.
+    const d = new Date(now.getTime() - i * 86400000);
+    const url = `${site}/blog/${article.slug}/`;
+    return `    <item>
+      <title>${escapeHtml(article.title)}</title>
+      <link>${url}</link>
+      <guid isPermaLink="true">${url}</guid>
+      <category>${escapeHtml(article.category)}</category>
+      <pubDate>${d.toUTCString()}</pubDate>
+      <description>${escapeHtml(article.description)}</description>
+    </item>`;
+  }).join("\n");
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WoodCutTool Blog</title>
+    <link>${site}/blog/</link>
+    <atom:link href="${site}/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Practical woodworking guides on plywood cutting, cut lists, materials, cabinets, stairs, and tile from WoodCutTool.</description>
+    <language>en</language>
+    <lastBuildDate>${now.toUTCString()}</lastBuildDate>
+${items}
+  </channel>
+</rss>
+`;
+}
+
+writeFileSync(join(root, "feed.xml"), buildRssFeed());

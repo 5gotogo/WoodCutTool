@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://woodcuttool.com/sitemap.xml
+
+# RSS feed of latest woodworking blog posts
+# https://woodcuttool.com/feed.xml
