@@ -4498,9 +4498,11 @@ function deepSources(article) {
 // Inline SVG bar chart — vector, zero external assets, no copyright risk.
 // chart = { title, caption, unit, bars: [[label, value], ...], source? }
 // Renders one inline SVG bar chart (vector, no external assets).
+let chartIdCounter = 0;
 function renderBarChart(chart, accent) {
   if (!chart?.bars?.length) return "";
   const bars = chart.bars;
+  const chartId = `chart${++chartIdCounter}`;
   const max = Math.max(...bars.map(([, v]) => Number(v) || 0)) || 1;
   const W = 720, H = 300, padL = 44, padR = 16, padT = 16, padB = 54;
   const plotW = W - padL - padR, plotH = H - padT - padB;
@@ -4525,7 +4527,9 @@ function renderBarChart(chart, accent) {
 
   return `<figure class="deep-chart-figure ${escapeHtml(accent)}">
           <figcaption class="chart-title">${escapeHtml(chart.title)}</figcaption>
-          <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${escapeHtml(chart.title)}" preserveAspectRatio="xMidYMid meet">
+          <svg viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="${chartId}-t ${chartId}-d" preserveAspectRatio="xMidYMid meet">
+            <title id="${chartId}-t">${escapeHtml(chart.title)}</title>
+            <desc id="${chartId}-d">${escapeHtml(chart.caption || chart.title)} Values: ${bars.map(([l, v]) => `${escapeHtml(l)} ${escapeHtml(String(v))}${chart.unit ? escapeHtml(chart.unit) : ""}`).join(", ")}.</desc>
             <line x1="${padL}" y1="${padT}" x2="${padL}" y2="${padT + plotH}" class="chart-axis-line"/>
             <line x1="${padL}" y1="${padT + plotH}" x2="${W - padR}" y2="${padT + plotH}" class="chart-axis-line"/>
             ${grid}
@@ -4572,7 +4576,7 @@ function footer() {
   return `<footer class="site-footer"><div class="footer-inner"><div class="footer-main"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><nav class="footer-links footer-primary" aria-label="Footer navigation"><a href="/apps/cutlist/">CutList</a><a href="/apps/quiltfit/">QuiltFit</a><a href="/blog/">Blogs</a><a href="/tile-calculator/">Tile</a><a href="/stringer/">Stringer</a></nav></div><div class="footer-disclaimer"><!-- disclaimer --><p><strong>Disclaimer:</strong> WoodCutTool calculators, templates, and guides are provided for general informational and estimating purposes only, on an &quot;as is&quot; basis without warranties of any kind. Results are estimates &mdash; always verify measurements, material quantities, and costs yourself before buying or cutting.</p><p>Our content is not professional, structural, engineering, or safety advice. For stairs, structural work, electrical, plumbing, or anything affecting safety, consult a qualified professional and follow your local building codes and permit requirements. You are responsible for your own measurements, tools, and safety. WoodCutTool is not liable for any loss, injury, or damage arising from use of this site.</p><p>App names, logos, and trademarks (including Apple and App Store) belong to their respective owners and do not imply endorsement. External links and cited sources are provided for reference only.</p></div><div class="footer-bottom"><p class="muted"><span>© 2026 WoodCutTool.</span> <span>All rights reserved.</span></p><nav class="footer-links footer-legal" aria-label="Legal navigation"><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a><a href="/sitemap.xml">Sitemap</a></nav></div></div></footer>`;
 }
 
-function head({ title, description, canonical, ogType = "website" }) {
+function head({ title, description, canonical, ogType = "website", jsonLd = "" }) {
   return `<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -4581,6 +4585,7 @@ function head({ title, description, canonical, ogType = "website" }) {
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="${canonical}">
   ${ogTags({ title, description, canonical, type: ogType })}
+  ${jsonLd}
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png?v=rounded-mask-20260619">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png?v=rounded-mask-20260619">
@@ -4784,6 +4789,31 @@ ${head({
 `;
 }
 
+function blogPostingJsonLd(article) {
+  const url = `https://woodcuttool.com/blog/${article.slug}/`;
+  const graph = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: article.title,
+    description: article.description,
+    url,
+    mainEntityOfPage: url,
+    image: "https://woodcuttool.com/assets/og/woodcuttool-og.png",
+    datePublished: "2026-01-01",
+    dateModified: "2026-06-23",
+    inLanguage: "en",
+    articleSection: article.category,
+    author: { "@type": "Organization", name: "WoodCutTool", url: "https://woodcuttool.com/" },
+    publisher: {
+      "@type": "Organization",
+      name: "WoodCutTool",
+      url: "https://woodcuttool.com/",
+      logo: { "@type": "ImageObject", url: "https://woodcuttool.com/assets/icons/icon-512.png" }
+    }
+  };
+  return `<script type="application/ld+json">\n${JSON.stringify(graph, null, 2)}\n</script>`;
+}
+
 function articlePage(article) {
   const related = articles
     .filter((candidate) => candidate.slug !== article.slug && candidate.category === article.category)
@@ -4796,7 +4826,8 @@ ${head({
     title: `${article.title} | WoodCutTool Blogs`,
     description: article.description,
     canonical: `https://woodcuttool.com/blog/${article.slug}/`,
-    ogType: "article"
+    ogType: "article",
+    jsonLd: blogPostingJsonLd(article)
   })}
 <body>
   ${breadcrumbJsonLd([["Home", "/"], ["Blogs", "/blog/"], [article.title, `/blog/${article.slug}/`]])}

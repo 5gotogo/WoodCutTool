@@ -202,9 +202,10 @@ for (const file of collectHtmlFiles()) {
 }
 
 const urls = sortRoutes([...routes]);
+const lastmod = new Date().toISOString().slice(0, 10);
 const entries = urls.map((route) => {
   const { changefreq, priority } = sitemapMeta(route);
-  return `  <url><loc>${xmlEscape(`${siteUrl}${route}`)}</loc><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`;
+  return `  <url><loc>${xmlEscape(`${siteUrl}${route}`)}</loc><lastmod>${lastmod}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`;
 });
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join("\n")}\n</urlset>\n`;

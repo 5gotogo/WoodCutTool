@@ -186,6 +186,38 @@ for (const [file, cfg] of Object.entries(pages)) {
     }
   }
 
+  // 4. BlogPosting schema for hand-written articles (idempotent).
+  if (type === "article") {
+    const url = canonical;
+    const schema = {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: ogTitle,
+      description: ogDesc,
+      url,
+      mainEntityOfPage: url,
+      image: "https://woodcuttool.com/assets/og/woodcuttool-og.png",
+      datePublished: "2026-01-01",
+      dateModified: "2026-06-23",
+      inLanguage: "en",
+      author: { "@type": "Organization", name: "WoodCutTool", url: "https://woodcuttool.com/" },
+      publisher: {
+        "@type": "Organization",
+        name: "WoodCutTool",
+        url: "https://woodcuttool.com/",
+        logo: { "@type": "ImageObject", url: "https://woodcuttool.com/assets/icons/icon-512.png" }
+      }
+    };
+    const AP_START = "<!-- article-schema:start -->";
+    const AP_END = "<!-- article-schema:end -->";
+    const block = `${AP_START}\n  <script type="application/ld+json">\n${JSON.stringify(schema, null, 2)}\n</script>\n  ${AP_END}`;
+    if (html.includes(AP_START)) {
+      html = html.replace(new RegExp(`${AP_START}[\\s\\S]*?${AP_END}`), block);
+    } else {
+      html = html.replace("</head>", `  ${block}\n</head>`);
+    }
+  }
+
   writeFileSync(abs, html);
   const tag = title ? `T[${title.length}] D[${desc.length}]` : "og-only";
   console.log(`ok  ${file}  ${tag}${bc ? " +bc" : ""}`);
