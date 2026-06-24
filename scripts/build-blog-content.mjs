@@ -2641,6 +2641,546 @@ const articles = [
       ]
     },
     checklist: ["Budget every category, not just plywood.", "Estimate sheet goods from a real layout.", "List all hardware and quantities early.", "Include finish and consumables.", "Add a sensible contingency."]
+  },
+  {
+    slug: "tool-maintenance-schedule-for-woodworkers",
+    category: "CutList",
+    title: "Tool Maintenance Schedule for Woodworkers",
+    description: "Keep saws, blades, and bits cutting clean with a simple maintenance schedule covering blade cleaning, alignment, lubrication, and dust, with charts on timing.",
+    kicker: "Shop care",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Maintained Tools Cut Cleaner And Safer", "A dull, dirty, or misaligned tool burns wood, wanders off the line, and is more dangerous to use. Most cutting problems people blame on technique are really maintenance problems. A simple, regular schedule for cleaning, sharpening, aligning, and lubricating keeps tools accurate and safe, and it costs far less than replacing parts worn out by neglect."],
+      ["Clean Blades And Bits Often", "Pitch and resin build up on blades and router bits, increasing friction, heat, and tearout. A blade that seems dull is often just dirty. Cleaning blades and bits with a proper cleaner restores performance instantly and is one of the highest-value, lowest-effort maintenance tasks. Do it whenever cuts start to burn or feel harder."],
+      ["Check Alignment Periodically", "A table saw blade parallel to the miter slots and a fence parallel to the blade are the foundation of accurate, safe cuts. Alignment drifts over time and after moving a saw. Checking it periodically, and after any knock, prevents the gradual creep that causes binding, burning, and unsafe kickback. Alignment is invisible until it bites."],
+      ["Lubricate And Protect Surfaces", "Cast-iron tops rust, screws stiffen, and slides gum up without care. Wax and protect bare metal surfaces, lubricate moving parts lightly, and keep tools dry. A waxed table top also lets stock slide smoothly, improving both accuracy and safety. These small habits extend tool life and keep everything moving as it should."],
+      ["Build A Simple Routine", "You do not need a complex program. Clean blades when cuts deteriorate, check alignment monthly or after moves, wax surfaces seasonally, and sharpen or replace blades when cleaning no longer helps. Pair maintained tools with good planning from the cut list calculator, and the whole workflow stays accurate, smooth, and safe."]
+    ],
+    charts: [
+      {
+        title: "Suggested maintenance interval by task (days)",
+        caption: "Approximate intervals. Clean blades on demand; check alignment monthly; wax surfaces seasonally.",
+        unit: " d",
+        bars: [["Blade clean", 14], ["Alignment", 30], ["Lubricate", 60], ["Wax top", 90]]
+      },
+      {
+        title: "Cut quality impact of neglect (relative)",
+        caption: "How much each neglected task degrades cut quality and safety. Dull blades and misalignment hurt most.",
+        unit: "",
+        bars: [["Dull blade", 95], ["Misaligned", 85], ["Dirty blade", 70], ["Rusty top", 45]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Small habits, accurate tools",
+      figureCaption: "Clean blades on demand, check alignment regularly, and protect surfaces to keep cuts clean and safe.",
+      figureStats: [["Clean", "Restores a dirty blade fast"], ["Align", "Check after every move"], ["Wax", "Smooth, rust-free tops"]],
+      comparisonTitle: "Maintenance tasks",
+      comparisonColumns: ["Task", "When", "Effort", "Payoff"],
+      comparisonRows: [
+        ["Clean blade/bit", "On demand", "Low", "Instant cut improvement"],
+        ["Check alignment", "Monthly, after moves", "Moderate", "Accuracy and safety"],
+        ["Lubricate moving parts", "Periodic", "Low", "Smooth operation"],
+        ["Wax cast iron", "Seasonal", "Low", "No rust, smooth feed"]
+      ],
+      faqs: [
+        ["Why does my saw burn the wood?", "Often a dirty or dull blade, or a misaligned fence. Clean the blade first, then check alignment."],
+        ["How often should I clean blades?", "Whenever cuts start to burn or feel harder; pitch buildup mimics dullness."],
+        ["How do I keep a cast-iron top from rusting?", "Keep it dry, and wax it seasonally; the wax also helps stock slide smoothly."],
+        ["When should I replace a blade?", "When cleaning and sharpening no longer restore clean cuts, or teeth are damaged."]
+      ],
+      sources: [
+        ["OSHA: Woodworking eTool", "https://www.osha.gov/etools/woodworking", "Safety guidance covering machine maintenance, guarding, and safe operation."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Pair maintained tools with accurate cut planning."]
+      ]
+    },
+    checklist: ["Clean blades and bits when cuts degrade.", "Check alignment monthly and after moves.", "Lubricate moving parts lightly.", "Wax cast-iron tops seasonally.", "Sharpen or replace blades when cleaning fails."]
+  },
+  {
+    slug: "table-saw-setup-and-safety-checklist",
+    category: "CutList",
+    title: "Table Saw Setup and Safety Checklist",
+    description: "Set up a table saw for safe, accurate cuts: blade height, riving knife, fence alignment, push sticks, and kickback prevention, with charts on the key settings.",
+    kicker: "Shop safety",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["The Table Saw Demands Respect", "The table saw is the most useful and the most dangerous tool in many shops, responsible for a large share of serious woodworking injuries, most from kickback or blade contact. The good news is that nearly all of these are preventable with correct setup and disciplined habits. A few minutes of setup and a consistent routine make the saw both safer and more accurate."],
+      ["Set Blade Height And Use The Riving Knife", "Blade height is a small but real safety factor: a common approach sets the blade just above the stock so less blade is exposed. The riving knife, which sits behind the blade and keeps the kerf open, is one of the single most effective anti-kickback devices. Use it for every through cut; do not remove it out of convenience."],
+      ["Align The Fence And Blade", "The fence must be parallel to the blade, or slightly angled away at the back, never toed in toward the blade, which causes binding and kickback. A blade parallel to the miter slots and a properly aligned fence are the foundation of safe ripping. Check alignment regularly, because it drifts and is invisible until a cut binds."],
+      ["Use Push Sticks And Stand Clear", "Hands should never pass near the blade. Use push sticks and push blocks for narrow rips, keep the guard on when possible, and stand out of the direct line behind the blade where kickback throws stock. Most table saw injuries happen during narrow rips and freehand cuts; push sticks and stance prevent both."],
+      ["Run Through The Checklist Every Time", "Before each session, confirm the riving knife is in, the blade is sharp and clean, the fence is aligned and locked, the area is clear, and push sticks are within reach. Plan the cut before the blade spins, and never freehand against the fence and blade at once. A consistent checklist turns safety into a habit."]
+    ],
+    charts: [
+      {
+        title: "Table saw injury causes (relative share)",
+        caption: "Most table saw injuries come from kickback and blade contact, both preventable with setup and habits.",
+        unit: "",
+        bars: [["Kickback", 40], ["Blade contact", 35], ["Freehand", 15], ["Other", 10]]
+      },
+      {
+        title: "Anti-kickback measure effectiveness (relative)",
+        caption: "Relative protection from each measure. The riving knife and a properly aligned fence matter most.",
+        unit: "",
+        bars: [["Riving knife", 90], ["Fence aligned", 80], ["Push stick", 70], ["Blade guard", 65]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Setup plus habits prevent injury",
+      figureCaption: "Riving knife, aligned fence, push sticks, and a clear stance remove the main kickback and contact risks.",
+      figureStats: [["Riving knife", "Top anti-kickback device"], ["Fence parallel", "Never toed toward the blade"], ["Push sticks", "Keep hands clear"]],
+      comparisonTitle: "Setup checklist",
+      comparisonColumns: ["Item", "Setting", "Why", "Note"],
+      comparisonRows: [
+        ["Riving knife", "Installed", "Keeps kerf open", "Use every through cut"],
+        ["Fence", "Parallel or out at rear", "Prevents binding", "Never toe in"],
+        ["Blade", "Sharp, clean, low", "Clean cuts, less exposure", "Check before each session"],
+        ["Push sticks", "Within reach", "Hands clear of blade", "Always for narrow rips"]
+      ],
+      faqs: [
+        ["What causes table saw kickback?", "Stock binding between the blade and fence, a missing riving knife, or a toed-in fence. Setup prevents most of it."],
+        ["What is a riving knife for?", "It sits behind the blade and keeps the kerf open so stock cannot pinch and kick back."],
+        ["How high should the blade be?", "A common approach sets it just above the stock to limit blade exposure; follow your saw's guidance."],
+        ["How do I rip narrow stock safely?", "Use push sticks and blocks, keep the guard on, and stand out of the kickback line."]
+      ],
+      sources: [
+        ["OSHA: Woodworking eTool - Table Saws", "https://www.osha.gov/etools/woodworking/table-saws", "Official safety guidance for table saw operation, guarding, and kickback prevention."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Plan cuts in advance so you avoid awkward, unsafe setups."]
+      ]
+    },
+    checklist: ["Install and keep the riving knife.", "Align the fence parallel to the blade.", "Keep the blade sharp, clean, and low.", "Use push sticks for narrow rips.", "Run the checklist before every session."]
+  },
+  {
+    slug: "spray-vs-brush-finishing-compared",
+    category: "CutList",
+    title: "Spray vs Brush Finishing, Compared",
+    description: "Compare spraying and brushing wood finish on smoothness, speed, equipment, and waste, with charts to choose the right method for your project and shop.",
+    kicker: "Finishing technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["How You Apply Finish Changes The Result", "The same finish looks different brushed versus sprayed. Brushing is simple and cheap but can leave brush marks; spraying lays down a smooth, even film fast but needs equipment, setup, and overspray control. Choosing the application method is part of planning the finish, not an afterthought, because it affects smoothness, time, and how much finish you waste."],
+      ["Brushing Is Simple And Low-Waste", "A brush needs almost no equipment, wastes little finish, and works anywhere. With good technique and a finish that levels well, brushing produces excellent results on flat panels and trim. Its weaknesses are brush marks, slower coverage on large areas, and difficulty on complex shapes. For small projects and occasional work, brushing is hard to beat on simplicity."],
+      ["Spraying Is Fast And Smooth", "Spraying atomizes finish into a fine, even coat that self-levels into a glass-smooth surface, and it covers large areas and complex parts quickly. The cost is equipment, a dust-free spray area, masking, and overspray, plus more finish wasted to the air. For cabinets, doors, and production work, spraying's speed and finish quality justify the setup."],
+      ["Count The Hidden Costs", "Spraying wastes more material to overspray and demands ventilation, masking, and cleanup; brushing wastes little but costs time and can show marks. Factor equipment, finish waste, and labor into the choice, not just the look. A small project rarely justifies spray setup, while a kitchen of doors rarely justifies brushing them all by hand."],
+      ["Match The Method To The Job", "Brush small projects, trim, and touch-ups; spray cabinets, doors, and large or complex pieces where smoothness and speed pay off. Test your finish and method on an offcut first, because finishes behave differently sprayed versus brushed. Plan the application into the project so the finishing step goes smoothly."]
+    ],
+    charts: [
+      {
+        title: "Finish smoothness by method (relative)",
+        caption: "Relative surface smoothness. Spraying self-levels best; brushing can leave marks without good technique.",
+        unit: "",
+        bars: [["Brush rough", 50], ["Brush good", 75], ["Wipe-on", 80], ["Spray", 95]]
+      },
+      {
+        title: "Coverage speed and finish waste (relative)",
+        caption: "Spraying covers fastest but wastes more to overspray; brushing is slow but wastes little.",
+        unit: "",
+        bars: [["Brush speed", 40], ["Spray speed", 90], ["Brush waste", 15], ["Spray waste", 60]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Smoothness and speed versus setup and waste",
+      figureCaption: "Spraying wins on smoothness and speed; brushing wins on simplicity and low waste.",
+      figureStats: [["Brush", "Simple, low-waste, slower"], ["Spray", "Smooth, fast, more setup"], ["Test", "On an offcut first"]],
+      comparisonTitle: "Spray vs brush",
+      comparisonColumns: ["Factor", "Brush", "Spray", "Edge"],
+      comparisonRows: [
+        ["Smoothness", "Can show marks", "Glass-smooth", "Spray"],
+        ["Speed", "Slow on large areas", "Fast", "Spray"],
+        ["Equipment", "Minimal", "Sprayer, booth, masking", "Brush"],
+        ["Finish waste", "Low", "Higher overspray", "Brush"]
+      ],
+      faqs: [
+        ["Is spraying or brushing better?", "Spraying is smoother and faster but needs equipment and wastes more; brushing is simple and low-waste but slower."],
+        ["When should I brush instead of spray?", "For small projects, trim, and touch-ups where spray setup is not worth it."],
+        ["Why does my brushed finish show marks?", "Technique and a finish that does not level. Use a leveling finish, the right brush, and thin coats."],
+        ["Does spraying waste finish?", "Yes, to overspray. Budget more finish and control overspray with masking and ventilation."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (finishing)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on wood finishing methods, application, and coatings."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Plan parts and keep an offcut to test the finish and method."]
+      ]
+    },
+    checklist: ["Choose application method as part of the finish plan.", "Brush small projects and touch-ups.", "Spray cabinets, doors, and large parts.", "Budget for overspray waste when spraying.", "Test the method on an offcut first."]
+  },
+  {
+    slug: "common-wood-species-and-uses",
+    category: "CutList",
+    title: "Common Wood Species and Their Uses",
+    description: "Get to know pine, oak, maple, walnut, and poplar by hardness, cost, and best use, with charts to choose the right species for your woodworking project.",
+    kicker: "Material guide",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Species Sets Look, Strength, And Cost", "Choosing a wood species is choosing a look, a hardness, a workability, and a price all at once. Pine is cheap and soft; maple is hard and pale; walnut is rich and pricey. Knowing a handful of common species and what each is good at lets you pick the right wood for the project instead of buying by guess or by what is on the shelf."],
+      ["Softwoods: Pine, Fir, Cedar", "Softwoods come from conifers and are generally lighter, cheaper, and easier to cut. Pine is the everyday choice for shelving, paint-grade work, and practice pieces. Fir is stronger for structural work. Cedar resists decay and suits outdoor projects. Softwoods dent easily, so they shine where cost and workability matter more than a hard, perfect surface."],
+      ["Hardwoods: Oak, Maple, Walnut, Cherry", "Hardwoods come from broadleaf trees and are usually denser, stronger, and finer for furniture. Oak is strong with a bold grain; maple is hard and pale, great for surfaces that take wear; walnut is dark and prized for fine furniture; cherry darkens beautifully with age. They cost more and dull blades faster, but they finish to a richer result."],
+      ["Poplar And The Paint-Grade Niche", "Poplar is technically a hardwood but is soft, inexpensive, and stable, which makes it the favorite paint-grade hardwood. It machines cleanly and takes paint well, so it is ideal for painted furniture, trim, and built-ins where the grain will be hidden. Knowing this niche prevents overpaying for a premium species on parts that will be painted."],
+      ["Match Species To The Part And Budget", "As with sheet goods, the smart move is to match species to the part: softwood or poplar for hidden and paint-grade work, premium hardwood for visible surfaces that must wear and impress. Estimate board feet and cost per species so you spend on hardwood only where it shows. Plan species into the cut list before buying."]
+    ],
+    charts: [
+      {
+        title: "Janka hardness by species (lbf, approx)",
+        caption: "Approximate hardness. Harder species resist denting; softer ones are easier to work and cheaper.",
+        unit: "",
+        bars: [["Pine", 420], ["Poplar", 540], ["Cherry", 950], ["Walnut", 1010], ["Oak", 1290], ["Maple", 1450]]
+      },
+      {
+        title: "Relative cost by species (pine = 100)",
+        caption: "Indexed cost. Premium hardwoods like walnut cost many times more than pine or poplar.",
+        unit: "",
+        bars: [["Pine", 100], ["Poplar", 130], ["Oak", 220], ["Maple", 240], ["Cherry", 300], ["Walnut", 450]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Right species for the right part",
+      figureCaption: "Hardness, cost, and look vary widely. Spend on hardwood where it shows and wears.",
+      figureStats: [["Softwood", "Cheap, easy, dents"], ["Hardwood", "Dense, rich, costs more"], ["Poplar", "Paint-grade favorite"]],
+      comparisonTitle: "Common species",
+      comparisonColumns: ["Species", "Hardness", "Cost", "Best use"],
+      comparisonRows: [
+        ["Pine", "Soft", "Low", "Shelving, paint-grade, practice"],
+        ["Poplar", "Soft hardwood", "Low", "Painted furniture and trim"],
+        ["Oak / maple", "Hard", "Moderate", "Furniture, high-wear surfaces"],
+        ["Walnut / cherry", "Medium-hard", "High", "Fine, visible furniture"]
+      ],
+      faqs: [
+        ["What is the cheapest wood for furniture?", "Pine and poplar are inexpensive; poplar is the go-to paint-grade hardwood for painted pieces."],
+        ["What wood is best for painted furniture?", "Poplar: stable, smooth-machining, and it takes paint well, so the grain stays hidden."],
+        ["Which hardwood is hardest?", "Among common species, maple and oak rate high on the Janka hardness scale."],
+        ["How do I choose a species?", "Match it to the part: cheap softwood or poplar for hidden and painted parts, premium hardwood for visible wear."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Authoritative reference on wood species properties, hardness, and strength."],
+        ["WoodCutTool board foot calculator", "/board-foot-calculator/", "Estimate board feet and cost per species before buying."]
+      ]
+    },
+    checklist: ["Match species to look, strength, and budget.", "Use softwood for cost and easy work.", "Use poplar for paint-grade parts.", "Use premium hardwood for visible wear.", "Estimate cost per species first."]
+  },
+  {
+    slug: "planing-and-flattening-rough-lumber",
+    category: "CutList",
+    title: "Planing and Flattening Rough Lumber",
+    description: "Turn rough or cupped boards into flat, square stock: the face-edge-thickness sequence, jointer and planer roles, and how much to allow, with charts.",
+    kicker: "Milling technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Flat, Square Stock Is The Foundation", "Accurate joinery starts with flat, square boards. Rough or cupped lumber that is cut and joined as-is produces twisted assemblies and gaps. Milling rough stock flat and square, in the right sequence, is the unglamorous step that makes everything after it work. Skipping it is why many projects fight the builder at assembly."],
+      ["The Milling Sequence Matters", "There is a proven order: flatten one face, then make one edge square to that face, then bring the board to final thickness, and finally rip to width. Doing these out of order, such as thicknessing before a face is flat, just transfers the warp. Following the face-edge-thickness-width sequence is what reliably produces square stock."],
+      ["Jointer Flattens, Planer Thicknesses", "The jointer creates a flat reference face and a square edge; the planer makes the opposite face parallel to bring the board to thickness. They are not interchangeable: a planer alone will not flatten a cupped board, it will just make a thinner cupped board. Understanding which machine does what is key to milling stock correctly."],
+      ["Allow Extra Material And Time", "Milling removes material, so rough stock must be bought thicker and longer than the finished part, and boards should rest after rough milling to let internal stresses settle before final passes. Plan a thickness allowance and a little time. Trying to mill a board to exactly its finished size in one go usually ends in a part that is too thin or still not flat."],
+      ["Mill, Then Cut To The List", "Flatten and square your stock first, then cut parts to the cut list from known-flat material. Hand-tool methods can substitute for machines but follow the same logic. Plan the milling allowance into the board foot estimate so you buy enough rough stock. Flat, square parts are what make the rest of the build go together cleanly."]
+    ],
+    charts: [
+      {
+        title: "Milling sequence steps in order",
+        caption: "The proven order: flatten a face, square an edge, thickness, then rip to width. Order prevents transferring warp.",
+        unit: "",
+        bars: [["1 Face", 1], ["2 Edge", 2], ["3 Thickness", 3], ["4 Width", 4]]
+      },
+      {
+        title: "Thickness allowance for milling rough stock (inches)",
+        caption: "Approximate material to allow above finished thickness so milling can flatten and clean both faces.",
+        unit: " in",
+        bars: [["Light cup", 0.125], ["Typical", 0.1875], ["Heavy warp", 0.3125]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Face, edge, thickness, width",
+      figureCaption: "Follow the sequence and use the right machine for each step to produce flat, square stock.",
+      figureStats: [["Jointer", "Flattens face and edge"], ["Planer", "Brings to thickness"], ["Allowance", "Buy thicker than finished"]],
+      comparisonTitle: "Milling machines and roles",
+      comparisonColumns: ["Step", "Machine", "Result", "Note"],
+      comparisonRows: [
+        ["Flatten face", "Jointer", "Flat reference face", "Not a planer job"],
+        ["Square edge", "Jointer", "Edge square to face", "Reference off flat face"],
+        ["Thickness", "Planer", "Parallel faces", "Removes to final thickness"],
+        ["Rip width", "Table saw", "Final width", "Off the square edge"]
+      ],
+      faqs: [
+        ["Why mill rough lumber first?", "To make it flat and square. Cutting and joining warped stock produces twisted, gappy assemblies."],
+        ["Can a planer flatten a cupped board?", "No. A planer makes faces parallel; it will thin a cupped board without flattening it. Use a jointer first."],
+        ["What is the right milling order?", "Flatten a face, square an edge, thickness the board, then rip to width."],
+        ["How much extra thickness should I buy?", "Allow enough above finished thickness to clean both faces, more for warped stock."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (machining)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on machining wood to flat, square dimensions."],
+        ["WoodCutTool board foot calculator", "/board-foot-calculator/", "Estimate rough stock with a milling allowance built in."]
+      ]
+    },
+    checklist: ["Mill rough stock flat and square first.", "Follow face, edge, thickness, width order.", "Use the jointer to flatten, planer to thickness.", "Buy stock thicker and longer than finished.", "Let boards rest between rough and final passes."]
+  },
+  {
+    slug: "drilling-pilot-holes-and-countersinks",
+    category: "CutList",
+    title: "Drilling Pilot Holes and Countersinks Right",
+    description: "Stop splitting wood and stripping screws: how to size pilot holes, when to countersink or counterbore, and bit choices, with charts on drill sizes.",
+    kicker: "Joinery technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Pilot Holes Prevent Splits And Strips", "Driving a screw without a pilot hole, especially near an edge or end grain, wedges the wood apart and splits it, or strips out and fails to hold. A correctly sized pilot hole gives the threads wood to bite while relieving the pressure that causes splits. For plywood edges and hardwoods particularly, pilot holes are not optional, they are the difference between a tight joint and a cracked part."],
+      ["Size The Pilot To The Screw And Wood", "A pilot hole should match the screw's shank and the wood's hardness: roughly the size of the screw's solid core so the threads still bite, slightly larger in hard wood, slightly smaller in soft. Too small splits the wood; too large strips the threads. Matching pilot size to screw and species is the core skill, and a simple drill-size chart removes the guesswork."],
+      ["Countersink For Flush Heads", "A countersink cuts a cone so a flat-head screw sits flush or just below the surface instead of standing proud. Driving a flat head without a countersink either leaves it proud or crushes the wood around it. A combination countersink bit drills the pilot and the cone in one step, which is fast and keeps the two aligned."],
+      ["Counterbore To Hide Or Plug", "A counterbore drills a flat-bottomed recess so the screw head sits below the surface, to be hidden with a plug or filler. This is common where screws should not show, like a visible shelf or a tabletop cleat. Plan counterbores where you want a clean face, and cut matching plugs from an offcut of the same wood for an invisible repair."],
+      ["Build Pilot Holes Into The Plan", "Decide where screws go and whether they need countersinks or counterbores before assembly, and pilot every screw into hardwood, plywood edges, and near ends. Keep a drill-size reference handy. Pairing this with accurate parts from the cut list means joints draw tight and faces stay clean, with no splits or proud heads."]
+    ],
+    charts: [
+      {
+        title: "Pilot hole drill size by screw gauge (inches, softwood)",
+        caption: "Approximate pilot drill sizes for common screw gauges in softwood. Go slightly larger in hardwood.",
+        unit: "",
+        bars: [["#6", 0.078], ["#8", 0.094], ["#10", 0.109], ["#12", 0.125]]
+      },
+      {
+        title: "Split risk without a pilot hole (relative)",
+        caption: "Relative risk of splitting when driving screws with no pilot. End grain and hardwood split most.",
+        unit: "",
+        bars: [["Plywood face", 30], ["Softwood", 45], ["Hardwood", 80], ["End grain", 95]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Pilot, countersink, counterbore",
+      figureCaption: "Size the pilot to the screw and wood, countersink for flush heads, counterbore to hide or plug.",
+      figureStats: [["Pilot", "Prevents splits and strips"], ["Countersink", "Flush flat heads"], ["Counterbore", "Hide with a plug"]],
+      comparisonTitle: "Hole types",
+      comparisonColumns: ["Hole", "Purpose", "When", "Note"],
+      comparisonRows: [
+        ["Pilot only", "Threads bite, no split", "Hidden screws", "Size to screw and wood"],
+        ["Countersink", "Flat head sits flush", "Visible flat heads", "Combination bit is fast"],
+        ["Counterbore", "Head below surface", "Hide with plug or filler", "Plug from same wood"],
+        ["Clearance + pilot", "Parts draw tight", "Two-board joints", "Top board free-spins"]
+      ],
+      faqs: [
+        ["Why does my wood split when I drive screws?", "No pilot hole, or one too small, especially near ends and in hardwood. Drill a correctly sized pilot."],
+        ["How big should a pilot hole be?", "About the screw's solid core diameter; slightly larger in hardwood, slightly smaller in softwood."],
+        ["What is the difference between countersink and counterbore?", "A countersink is a cone for a flush flat head; a counterbore is a flat recess to hide the head and plug it."],
+        ["Do I need pilot holes in plywood?", "Yes, especially in the edges, where screws easily split the plies."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (fastenings)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on screw holding, pilot holes, and fastener performance in wood."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Plan accurate parts so piloted, countersunk joints draw up tight."]
+      ]
+    },
+    checklist: ["Pilot screws in hardwood, plywood edges, and near ends.", "Size the pilot to the screw core and wood.", "Countersink flat heads to sit flush.", "Counterbore where you will hide the head.", "Cut plugs from the same wood."]
+  },
+  {
+    slug: "drawer-box-joinery-compared",
+    category: "CutList",
+    title: "Drawer Box Joinery, Compared",
+    description: "Compare butt, rabbet, locking rabbet, and dovetail drawer joints on strength, difficulty, and how they affect drawer box sizing, with charts.",
+    kicker: "Joinery guide",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Drawers Take Constant Stress", "A drawer is pulled, loaded, and slammed thousands of times, so its corner joints take more repeated stress than almost any joint in a cabinet. The joinery you choose decides whether the drawer survives years of use or racks apart. Matching joint strength to how hard the drawer will work is the key decision, and each joint also changes how you size the box parts."],
+      ["Butt And Rabbet: Fast And Simple", "A butt joint, just screwed or nailed and glued, is the fastest and weakest, fine for light utility drawers. A rabbet joint, where the front laps into a groove in the side, adds glue surface and registration with little extra effort, making it a solid step up. Both are beginner-friendly and quick, suiting shop and utility drawers."],
+      ["Locking Rabbet Resists Pulling Apart", "A locking rabbet interlocks the front and side so the joint mechanically resists the pulling force a drawer sees every time it opens. It takes more setup than a plain rabbet but is far stronger, and it is a favorite for solid everyday drawers. It is the sweet spot of strength and machinability for many builders."],
+      ["Dovetails: Strongest And Finest", "Dovetails interlock with angled pins and tails that mechanically resist being pulled apart, the traditional mark of quality drawer making. They are the strongest and most attractive, and the most demanding to cut by hand or jig. Reserve them for fine furniture and visible quality, where their strength and look justify the effort."],
+      ["Joint Changes The Box Sizing", "Every joint changes the part sizes: a rabbet or locking rabbet adds length that seats into the groove, while a butt joint uses net sizes. Decide the joinery before cutting drawer parts, and remember the slide clearance too. Use the cut list calculator to size box parts for the chosen joint so the finished drawer fits its opening and glides."]
+    ],
+    charts: [
+      {
+        title: "Drawer joint strength (relative)",
+        caption: "Relative resistance to racking and pull-apart. Dovetails and locking rabbets far outlast plain butt joints.",
+        unit: "",
+        bars: [["Butt", 35], ["Rabbet", 60], ["Locking rabbet", 85], ["Dovetail", 100]]
+      },
+      {
+        title: "Joint difficulty (1 easy to 5 hard)",
+        caption: "Relative skill and setup needed. Butt joints are trivial; hand-cut dovetails are the most demanding.",
+        unit: "",
+        bars: [["Butt", 1], ["Rabbet", 2], ["Locking rabbet", 3], ["Dovetail", 5]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Match joint to how hard the drawer works",
+      figureCaption: "Stronger joints last longer under constant use; each changes the box part sizing.",
+      figureStats: [["Rabbet", "Easy strength upgrade"], ["Locking rabbet", "Strong and machinable"], ["Dovetail", "Strongest and finest"]],
+      comparisonTitle: "Drawer joints",
+      comparisonColumns: ["Joint", "Strength", "Difficulty", "Best for"],
+      comparisonRows: [
+        ["Butt", "Low", "Easy", "Light utility drawers"],
+        ["Rabbet", "Moderate", "Easy", "Shop and everyday drawers"],
+        ["Locking rabbet", "High", "Moderate", "Solid everyday drawers"],
+        ["Dovetail", "Highest", "Hard", "Fine furniture, visible quality"]
+      ],
+      faqs: [
+        ["What is the strongest drawer joint?", "The dovetail, which mechanically interlocks to resist pulling apart; a locking rabbet is a strong, easier alternative."],
+        ["What drawer joint is easiest for beginners?", "A rabbet joint: simple to cut, much stronger than a plain butt joint."],
+        ["Does the joint change drawer box size?", "Yes. Rabbets and locking rabbets add seated length; butt joints use net sizes. Plan before cutting."],
+        ["Do I need dovetails?", "Only where strength and a fine look matter. Locking rabbets serve most everyday drawers well."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (joints)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on wood joint strength and construction."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Size drawer box parts for your chosen joint and slide clearance."]
+      ]
+    },
+    checklist: ["Match joint strength to drawer use.", "Use a rabbet for an easy strength upgrade.", "Use a locking rabbet for solid everyday drawers.", "Reserve dovetails for fine, visible work.", "Size box parts for the joint and slides."]
+  },
+  {
+    slug: "face-frame-vs-frameless-cabinets",
+    category: "CutList",
+    title: "Face-Frame vs Frameless Cabinets",
+    description: "Compare face-frame and frameless (European) cabinet construction on strength, access, cost, and cut list, to choose the right style for your project.",
+    kicker: "Cabinet design",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Two Ways To Build A Cabinet", "Cabinets come in two main construction styles: face-frame, with a solid-wood frame on the front of the box, and frameless, also called European, where the doors mount directly to the carcass. The choice affects strength, interior access, hardware, cost, and the cut list. Neither is simply better; each suits different goals, tools, and looks."],
+      ["Face-Frame: Traditional And Forgiving", "A face-frame cabinet adds a solid-wood frame to the front of the plywood box. The frame stiffens the carcass, hides the plywood edges, gives a sturdy place to mount doors and hinges, and forgives small carcass errors because the frame sets the openings. It is the traditional North American style, strong and forgiving, at the cost of a little interior access and extra frame material."],
+      ["Frameless: Modern And Full-Access", "A frameless cabinet skips the front frame, so doors cover the whole box and the interior is fully accessible with wider drawers and easier reach. It is the modern, European look and uses cup hinges. It demands a more accurate, square carcass because there is no frame to hide errors, and it relies on good plywood edges or banding."],
+      ["Cost, Access, And Hardware", "Face-frame uses more solid lumber for the frame but forgives the carcass; frameless saves frame material but needs precise boxes and specific hardware. Frameless gives more usable interior space and a clean look; face-frame gives a sturdy, traditional result and easier door mounting. Weigh material, tools, access, and style for your project."],
+      ["Each Style Changes The Cut List", "The construction style reshapes the parts list: face-frame adds frame stiles and rails as solid-wood parts and lets the carcass be slightly looser; frameless drops the frame but demands dead-square plywood parts and edge treatment. Decide the style first, then build the cut list. Use the kitchen cabinet template and plywood calculator to plan whichever you choose."]
+    ],
+    charts: [
+      {
+        title: "Face-frame vs frameless by factor (relative score)",
+        caption: "Higher is better for that factor. Frameless leads on access; face-frame forgives carcass errors.",
+        unit: "",
+        bars: [["Access: FF", 60], ["Access: frameless", 95], ["Forgiving: FF", 90], ["Forgiving: frameless", 55]]
+      },
+      {
+        title: "Relative material use (index)",
+        caption: "Frameless uses less solid lumber but demands precise plywood; face-frame adds frame stock.",
+        unit: "",
+        bars: [["FF plywood", 90], ["FF frame wood", 40], ["Frameless plywood", 100], ["Frameless frame", 5]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Frame forgives, frameless maximizes access",
+      figureCaption: "Face-frame is sturdy and forgiving; frameless is modern with full interior access but needs precise boxes.",
+      figureStats: [["Face-frame", "Traditional, forgiving"], ["Frameless", "Modern, full access"], ["Style first", "Then the cut list"]],
+      comparisonTitle: "Construction styles",
+      comparisonColumns: ["Factor", "Face-frame", "Frameless", "Edge"],
+      comparisonRows: [
+        ["Interior access", "Reduced by frame", "Full width", "Frameless"],
+        ["Carcass tolerance", "Forgiving", "Must be square", "Face-frame"],
+        ["Look", "Traditional", "Modern European", "Preference"],
+        ["Hardware", "Various hinges", "Cup hinges", "Preference"]
+      ],
+      faqs: [
+        ["What is the difference between face-frame and frameless cabinets?", "Face-frame has a solid-wood frame on the front of the box; frameless mounts doors directly to the carcass."],
+        ["Which is stronger?", "Both are strong; the face frame stiffens the box and forgives errors, while frameless relies on a square, well-built carcass."],
+        ["Which gives more storage?", "Frameless, because there is no frame narrowing the opening, so drawers and access are wider."],
+        ["Which is easier for a beginner?", "Face-frame is more forgiving of small carcass inaccuracies; frameless demands precise, square boxes."]
+      ],
+      sources: [
+        ["APA - The Engineered Wood Association", "https://www.apawood.org/", "Plywood construction reference relevant to cabinet carcass building."],
+        ["WoodCutTool kitchen cabinet cut list template", "/templates/kitchen-cabinet-cut-list/", "Plan parts for face-frame or frameless construction."]
+      ]
+    },
+    checklist: ["Choose face-frame or frameless before cutting.", "Use face-frame for a forgiving, traditional build.", "Use frameless for full access and a modern look.", "Build frameless boxes dead square.", "Plan the cut list for the chosen style."]
+  },
+  {
+    slug: "choosing-screws-for-woodworking",
+    category: "CutList",
+    title: "Choosing Screws for Woodworking",
+    description: "Pick the right screw for the job: wood vs construction screws, coarse vs fine thread, length and gauge, and head types, with charts on sizing.",
+    kicker: "Hardware guide",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["The Right Screw Makes A Strong Joint", "Screws look interchangeable but are not. The wrong thread, length, or head can split the wood, strip out, or fail to hold. Choosing the right screw for the material and joint, then piloting it correctly, is what makes a screwed joint strong and clean. A little knowledge of thread, gauge, length, and head removes most screw failures."],
+      ["Thread: Coarse For Soft, Fine For Hard", "Coarse-thread screws bite aggressively in softwood, plywood, and particleboard, where deep threads grip the loose fibers. Fine-thread screws suit hardwood, where fine threads cut cleanly without splitting and hold well in dense fibers. Matching thread to material is a basic but high-impact choice: coarse in soft and sheet goods, fine in hardwood."],
+      ["Length And Gauge For Holding Power", "A screw should reach well into the second piece without blowing through, commonly enough that a good portion of its length is in the holding board. Gauge, the screw's thickness, sets shear strength: heavier gauge for structural joints, lighter for trim. Too short and it will not hold; too long and it punches through. Match both to the joint."],
+      ["Heads And Drives", "Flat heads countersink flush for clean faces; pan and round heads sit on top for fastening hardware. The drive type, such as square or star, resists cam-out far better than slotted or basic cross drives, which strip easily. Choosing a good drive type saves stripped screws and frustration, especially when driving many fasteners."],
+      ["Match Screw To Material And Joint", "Pick thread for the material, length and gauge for the holding power, and head and drive for the application, then pilot appropriately. Construction screws suit framing; finer wood and cabinet screws suit furniture. Plan fasteners alongside the cut list so joints draw tight and faces stay clean, without splits or stripped heads."]
+    ],
+    charts: [
+      {
+        title: "Screw length by board thickness joined (inches)",
+        caption: "Approximate screw length to reach well into the holding board when joining a 3/4-inch top board.",
+        unit: " in",
+        bars: [["Into 1/2", 1], ["Into 3/4", 1.25], ["Into 1x", 1.625], ["Into 2x", 2.5]]
+      },
+      {
+        title: "Thread choice by material (1 fine to 5 coarse)",
+        caption: "Coarse thread grips soft and sheet goods; fine thread holds in dense hardwood without splitting.",
+        unit: "",
+        bars: [["Hardwood", 1], ["Softwood", 4], ["Plywood", 4], ["Particleboard", 5]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Thread, length, gauge, head",
+      figureCaption: "Match thread to material, length and gauge to holding power, and head and drive to the job.",
+      figureStats: [["Coarse", "Soft and sheet goods"], ["Fine", "Dense hardwood"], ["Star drive", "Resists cam-out"]],
+      comparisonTitle: "Screw selection",
+      comparisonColumns: ["Factor", "Choose", "For", "Note"],
+      comparisonRows: [
+        ["Thread", "Coarse", "Softwood, plywood", "Aggressive grip"],
+        ["Thread", "Fine", "Hardwood", "Clean, no split"],
+        ["Head", "Flat", "Flush, clean faces", "Countersink it"],
+        ["Drive", "Square or star", "Many fasteners", "Resists stripping"]
+      ],
+      faqs: [
+        ["What screw should I use for plywood?", "A coarse-thread wood or cabinet screw, piloted, holds well in plywood; coarse threads grip the plies."],
+        ["Coarse or fine thread for hardwood?", "Fine thread, which cuts cleanly in dense hardwood and holds without splitting."],
+        ["How long should a wood screw be?", "Long enough to reach well into the holding board without punching through, often most of its length in the second piece."],
+        ["Why do my screws strip?", "Often a poor drive type or worn bit. Square and star drives resist cam-out far better than slotted."]
+      ],
+      sources: [
+        ["U.S. Forest Products Laboratory: Wood Handbook (fastenings)", "https://www.fpl.fs.usda.gov/products/publications/several_pubs.php?grouping_id=100", "Reference on screw holding power, thread, and fastener selection in wood."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Plan parts and joints so the right screws draw them tight."]
+      ]
+    },
+    checklist: ["Use coarse thread in soft and sheet goods.", "Use fine thread in hardwood.", "Size length to reach the holding board.", "Pick gauge for the needed strength.", "Choose a star or square drive to resist stripping."]
+  },
+  {
+    slug: "hand-tools-vs-power-tools-for-beginners",
+    category: "CutList",
+    title: "Hand Tools vs Power Tools for Beginners",
+    description: "Decide where to start: hand tools versus power tools on cost, learning curve, speed, noise, and space, with charts to build a sensible first kit.",
+    kicker: "Getting started",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["You Do Not Have To Choose Only One", "New woodworkers often think they must pick a camp: hand tools or power tools. In reality most shops blend the two, using each where it shines. The useful question is not which is better but which to start with for your space, budget, and projects. Knowing the trade-offs lets a beginner build a sensible first kit instead of overbuying."],
+      ["Cost And Space Favor Hand Tools To Start", "A basic hand-tool kit costs little, needs almost no space, and makes no noise, which suits apartments and tight budgets. A saw, a chisel set, a marking gauge, and a plane can build real projects. Power tools cost more and need space, power, and dust control. For a beginner testing the hobby, hand tools are a low-risk entry."],
+      ["Power Tools Win On Speed And Repetition", "Where power tools earn their cost is speed and repeatable accuracy, especially breaking down sheet goods and cutting many identical parts. A circular saw or table saw does in minutes what hand tools do in an hour, and jigs make repeats identical. For sheet-good projects and any volume of parts, power tools are a large time saver."],
+      ["Noise, Dust, And Learning Curve", "Hand tools are quiet, low-dust, and meditative, but demand technique that takes time to develop, like sawing to a line or planing flat. Power tools are loud and dusty and demand respect for safety, but many cuts are faster to learn to a usable result. Weigh noise, dust, and your patience for skill-building when choosing where to start."],
+      ["Build A Blended Kit Over Time", "A practical path is to start with a few quality hand tools and one or two key power tools for your projects, then add as needs appear. For sheet-good and cabinet work, a circular saw or track saw plus a drill goes far; hand tools handle fitting and refinement. Plan projects with the cut list calculator and add tools to match, not the other way around."]
+    ],
+    charts: [
+      {
+        title: "Hand vs power tools by factor (relative score)",
+        caption: "Higher is better for that factor. Hand tools win on cost, space, and quiet; power tools on speed.",
+        unit: "",
+        bars: [["Cost: hand", 90], ["Cost: power", 45], ["Speed: hand", 35], ["Speed: power", 95]]
+      },
+      {
+        title: "Starter kit spend by approach (index)",
+        caption: "Indexed cost of a basic first kit. A hand-tool start is far cheaper than a power-tool shop.",
+        unit: "",
+        bars: [["Hand basics", 25], ["Hybrid", 55], ["Power shop", 100]]
+      }
+    ],
+    deepDive: {
+      figureTitle: "Start lean, blend over time",
+      figureCaption: "Hand tools are cheap, quiet, and compact; power tools are fast and repeatable. Most shops use both.",
+      figureStats: [["Hand tools", "Low cost, low space, quiet"], ["Power tools", "Fast and repeatable"], ["Blend", "Add tools as needs appear"]],
+      comparisonTitle: "Hand vs power tools",
+      comparisonColumns: ["Factor", "Hand tools", "Power tools", "Edge"],
+      comparisonRows: [
+        ["Cost to start", "Low", "Higher", "Hand"],
+        ["Speed", "Slow", "Fast", "Power"],
+        ["Space and noise", "Minimal, quiet", "More, loud", "Hand"],
+        ["Sheet goods, repeats", "Tedious", "Excellent", "Power"]
+      ],
+      faqs: [
+        ["Should a beginner start with hand or power tools?", "Either works. Hand tools are cheaper, quieter, and need no space; power tools are faster for sheet goods and repeats."],
+        ["What is the cheapest way to start woodworking?", "A small kit of quality hand tools costs little and needs almost no space."],
+        ["When are power tools worth it?", "For breaking down sheet goods and cutting many identical parts, where speed and repeatable accuracy pay off."],
+        ["Do I need a full power-tool shop?", "No. A circular saw or track saw plus a drill, blended with a few hand tools, handles a lot."]
+      ],
+      sources: [
+        ["OSHA: Woodworking eTool", "https://www.osha.gov/etools/woodworking", "Safety guidance for power tools and woodworking machinery."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Plan projects first, then add the tools that match them."]
+      ]
+    },
+    checklist: ["Remember most shops blend hand and power.", "Start lean if budget or space is tight.", "Use power tools for sheet goods and repeats.", "Weigh noise, dust, and learning curve.", "Add tools to match planned projects."]
   }
 ];
 
