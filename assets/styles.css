@@ -163,10 +163,24 @@ canvas {
   min-width: max-content;
   order: 1;
   margin-left: auto;
+  position: relative;
+}
+
+.language-picker::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  pointer-events: none;
+  transform: translateY(-65%) rotate(45deg);
 }
 
 .language-picker select {
-  width: 112px;
+  width: 96px;
   min-height: 38px;
   padding: 8px 30px 8px 10px;
   color: var(--muted);
@@ -175,6 +189,9 @@ canvas {
   font-size: 13px;
   font-weight: 750;
   background: rgba(255, 255, 255, 0.68);
+  appearance: none;
+  -webkit-appearance: none;
+  text-overflow: ellipsis;
 }
 
 .google-translate-holder {
@@ -211,6 +228,16 @@ body {
 [dir="rtl"] select {
   direction: rtl;
   text-align: right;
+}
+
+[dir="rtl"] .language-picker::after {
+  right: auto;
+  left: 10px;
+}
+
+[dir="rtl"] .language-picker select {
+  padding-right: 10px;
+  padding-left: 30px;
 }
 
 .button {
@@ -6429,8 +6456,14 @@ tr:last-child td {
   }
 
   .language-picker select {
-    width: 104px;
+    width: 96px;
+    padding-right: 34px;
     min-height: 38px;
+  }
+
+  [dir="rtl"] .language-picker select {
+    padding-right: 10px;
+    padding-left: 34px;
   }
 
   .metric-grid {
