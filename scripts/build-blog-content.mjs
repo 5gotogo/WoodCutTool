@@ -3181,6 +3181,162 @@ const articles = [
       ]
     },
     checklist: ["Remember most shops blend hand and power.", "Start lean if budget or space is tight.", "Use power tools for sheet goods and repeats.", "Weigh noise, dust, and learning curve.", "Add tools to match planned projects."]
+  },
+  {
+    slug: "receipt-tracking-for-contractors-and-makers",
+    category: "SnapReceipt",
+    title: "Receipt Tracking for Contractors and Makers",
+    description: "Stop losing receipts on the job. A practical system for tracking materials, tools, and job costs by capturing receipts as you buy, with SnapReceipt.",
+    kicker: "Expense workflow",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Lost Receipts Are Lost Money", "Contractors, woodworkers, and makers spend constantly on lumber, sheet goods, hardware, and consumables, but the paper receipts pile up, fade, and vanish. Every lost receipt is a deduction you cannot claim and a job cost you cannot bill back. The fix is not better filing later; it is capturing each receipt the moment you get it, before it ends up crushed in a truck console."],
+      ["Capture At The Point Of Purchase", "The most reliable habit is to scan a receipt right at the store or the moment a delivery arrives, while it is in your hand and legible. A phone-based receipt scanner like SnapReceipt turns the paper into a digital record in seconds, so it is saved before it can be lost, soaked, or thrown away. Capture first, organize later."],
+      ["Tag Receipts To Jobs", "A receipt is far more useful when it is tied to a job. Tagging each purchase to a project or client at capture time means you can total what a job actually cost in materials, compare it to your estimate, and bill accurately. For makers selling work, it also separates business spending from personal, which matters at tax time."],
+      ["Keep Records Without An Account", "Many tradespeople distrust apps that demand a login and upload everything to a cloud. SnapReceipt is built to work privately on the iPhone without creating an account, so spending records stay on the device. For people who handle client and financial details, keeping records local instead of in someone else's cloud is a real advantage."],
+      ["From Receipts To Better Estimates", "Captured, job-tagged receipts close the loop with your project planning. When you know what materials really cost on the last cabinet run, your next estimate is sharper. Pair receipt tracking with cut planning in the cut list calculator and the cost-estimating guide, and material spend stops being a guess and becomes data you can reuse."]
+    ],
+    charts: [
+      {
+        title: "Where receipts get lost (relative share)",
+        caption: "Most receipts are lost to fading, clutter, and the truck, not to filing. Capture early to prevent it.",
+        unit: "",
+        bars: [["Truck/pocket", 40], ["Faded/damaged", 25], ["Tossed", 20], ["Never filed", 15]]
+      },
+      {
+        title: "Receipt capture method by reliability (relative)",
+        caption: "Scanning at purchase preserves the most receipts; shoeboxing and memory preserve the least.",
+        unit: "",
+        bars: [["Scan at buy", 95], ["Photo later", 70], ["Shoebox", 40], ["Memory", 10]]
+      }
+    ],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Receipt habits compared",
+      comparisonColumns: ["Habit", "Reliability", "Effort", "Best for"],
+      comparisonRows: [
+        ["Scan at purchase", "High", "Low", "Anyone buying materials often"],
+        ["Photo, sort later", "Moderate", "Moderate", "Light spenders"],
+        ["Paper shoebox", "Low", "High at tax time", "Not recommended"],
+        ["Reconstruct from memory", "Very low", "High", "Last resort only"]
+      ],
+      faqs: [
+        ["How should contractors track receipts?", "Scan each receipt at the point of purchase and tag it to the job, so it is saved before it can be lost."],
+        ["Why tag receipts to jobs?", "It lets you total real material cost per job, compare to your estimate, and bill clients accurately."],
+        ["Do I need an account to track receipts?", "Not with SnapReceipt, which is built to work privately on iPhone without creating an account."],
+        ["How does receipt tracking help estimating?", "Knowing real material costs from past jobs makes your next project estimate far more accurate."]
+      ],
+      sources: [
+        ["IRS: Recordkeeping for Businesses", "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping", "Official U.S. guidance on keeping receipts and records to substantiate business deductions."],
+        ["SnapReceipt: Expenses & Tax", "/apps/snapreceipt-expenses-and-tax/", "Private iPhone receipt scanner, expense tracker, and mileage log, no account required."]
+      ]
+    },
+    checklist: ["Capture each receipt at purchase.", "Tag receipts to the job or client.", "Keep records private on the device.", "Compare material cost to your estimate.", "Reuse cost data for better estimates."]
+  },
+  {
+    slug: "mileage-log-for-tax-deductions",
+    category: "SnapReceipt",
+    title: "Keeping a Mileage Log for Tax Deductions",
+    description: "A practical guide to logging business mileage for deductions: what records the IRS expects, standard rate vs actual cost, and how to log trips with SnapReceipt.",
+    kicker: "Tax records",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Business Miles Are Real Money", "For trades and makers who drive to job sites, suppliers, and client meetings, business mileage can be a significant tax deduction, but only if it is documented. Undocumented miles are not deductible, and reconstructing a year of driving from memory does not satisfy a tax authority. A simple, consistent mileage log turns ordinary driving into a legitimate deduction."],
+      ["What A Good Mileage Log Records", "Tax authorities generally expect a contemporaneous record: the date, the business purpose, the start and end points, and the miles for each trip. The key word is contemporaneous, meaning logged at or near the time of the trip, not invented later. A log kept as you go is both easier and far more defensible than one assembled at tax time."],
+      ["Standard Rate Or Actual Cost", "Two common methods exist: a standard mileage rate that multiplies business miles by a set per-mile figure, or the actual-cost method that tracks the real expense of operating the vehicle. The standard rate is simpler and needs only a mileage log; actual cost needs receipts for fuel, maintenance, and more. Many drivers choose the standard rate for its simplicity, but the right choice depends on your situation."],
+      ["Log Trips As You Go", "The hard part of mileage logging is consistency, not complexity. Logging each business trip when it happens, with a phone tool like SnapReceipt that records mileage alongside your receipts, keeps the record contemporaneous and complete. Capturing the trip in the moment beats trying to remember weeks of driving, and it keeps mileage and expense records in one place."],
+      ["Keep It With Your Other Records", "Mileage is one piece of a business spending picture that also includes material and tool receipts. Keeping the mileage log together with those receipts, privately on your device, makes tax time a matter of review rather than reconstruction. Consult a tax professional for your specifics, but a clean, contemporaneous log is the foundation either way."]
+    ],
+    charts: [
+      {
+        title: "Mileage log quality and audit defensibility (relative)",
+        caption: "Contemporaneous logs hold up best; memory-based reconstructions are the weakest at audit.",
+        unit: "",
+        bars: [["Logged per trip", 95], ["Weekly recap", 70], ["Monthly guess", 40], ["From memory", 10]]
+      },
+      {
+        title: "What a trip record needs (count of fields)",
+        caption: "A defensible trip record captures these basics each time: date, purpose, route, and miles.",
+        unit: "",
+        bars: [["Date", 1], ["Purpose", 1], ["Start/end", 2], ["Miles", 1]]
+      }
+    ],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Mileage methods",
+      comparisonColumns: ["Method", "Records needed", "Effort", "Best for"],
+      comparisonRows: [
+        ["Standard rate", "Mileage log", "Low", "Most drivers"],
+        ["Actual cost", "Log plus all vehicle receipts", "High", "High vehicle costs"],
+        ["No log", "None", "None", "No deduction allowed"],
+        ["Reconstructed", "Estimated", "High, weak", "Last resort only"]
+      ],
+      faqs: [
+        ["What does a mileage log need to include?", "Generally the date, business purpose, start and end points, and miles for each trip, recorded at the time."],
+        ["Standard rate or actual cost, which is better?", "The standard rate is simpler and needs only a mileage log; actual cost can be larger but needs full vehicle receipts."],
+        ["Can I reconstruct mileage at tax time?", "It is far weaker than a contemporaneous log and may not satisfy an audit. Log trips as they happen."],
+        ["How do I keep a mileage log easily?", "Log each trip in the moment with a tool like SnapReceipt that records mileage alongside receipts."]
+      ],
+      sources: [
+        ["IRS: Standard Mileage Rates", "https://www.irs.gov/tax-professionals/standard-mileage-rates", "Official U.S. guidance on standard mileage rates and the records required to claim vehicle deductions."],
+        ["SnapReceipt: Expenses & Tax", "/apps/snapreceipt-expenses-and-tax/", "Log business mileage alongside receipts, privately on iPhone, no account required."]
+      ]
+    },
+    checklist: ["Log every business trip as it happens.", "Record date, purpose, route, and miles.", "Choose standard rate or actual cost deliberately.", "Keep mileage with your receipt records.", "Consult a tax professional for your situation."]
+  },
+  {
+    slug: "private-expense-tracking-without-an-account",
+    category: "SnapReceipt",
+    title: "Private Expense Tracking Without an Account",
+    description: "Track spending without handing your data to the cloud. Why account-free, on-device expense tracking matters, and how SnapReceipt keeps records private.",
+    kicker: "Privacy",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Your Spending Data Is Sensitive", "Expense and receipt data reveals a lot: where you shop, what you buy, your clients, your income patterns. Most expense apps require an account and upload everything to a server, putting that sensitive picture in someone else's hands. For freelancers, tradespeople, and privacy-minded users, that is a real concern, and it is avoidable. Account-free, on-device tracking keeps the data where it belongs: with you."],
+      ["The Cost Of The Account Model", "Requiring an account is convenient for the app maker but carries costs for you: a server that can be breached, terms that may allow data use, and a record that persists even if you stop using the app. Every account is another place your financial details live. The fewer copies of that data exist off your device, the smaller your exposure."],
+      ["On-Device Means You Hold The Data", "An app that works on-device, without an account, keeps your receipts and expenses on your iPhone rather than in a cloud database. SnapReceipt is designed this way: scan receipts, track expenses, and log mileage without creating an account or uploading your records. You get the organization benefits without surrendering the data."],
+      ["Privacy Does Not Mean Less Function", "Account-free does not mean basic. You can still scan paper receipts, import photos, add entries manually, review extracted details, tag spending, and keep organized records, all locally. The trade-off people fear, privacy versus usefulness, largely is not real here: the everyday expense workflow works fully on-device, which is the point."],
+      ["Keep Control At Tax Time", "When records live on your device, you decide what to export and share, rather than having everything sit in a vendor's cloud by default. For tax preparation, you can review and export what you need. Pair private receipt and mileage tracking with good habits, and you keep both organized records and control over sensitive financial data."]
+    ],
+    charts: [
+      {
+        title: "Where expense data lives by app model (relative exposure)",
+        caption: "On-device tracking minimizes off-device copies of sensitive financial data; cloud accounts maximize them.",
+        unit: "",
+        bars: [["On-device", 10], ["Local + backup", 35], ["Cloud account", 80], ["Cloud + sharing", 100]]
+      },
+      {
+        title: "What account-free tracking still does (feature count)",
+        caption: "Private, on-device tracking keeps the core workflow: scan, import, manual entry, tag, and review.",
+        unit: "",
+        bars: [["Scan", 1], ["Import", 1], ["Manual", 1], ["Tag", 1], ["Review", 1]]
+      }
+    ],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Account model vs on-device",
+      comparisonColumns: ["Factor", "Cloud account", "On-device", "Edge"],
+      comparisonRows: [
+        ["Data location", "Vendor server", "Your iPhone", "On-device"],
+        ["Breach exposure", "Higher", "Lower", "On-device"],
+        ["Account required", "Yes", "No", "On-device"],
+        ["Everyday features", "Full", "Full", "Tie"]
+      ],
+      faqs: [
+        ["Why track expenses without an account?", "It keeps sensitive financial data on your device instead of a vendor's cloud, reducing exposure and breach risk."],
+        ["Is account-free tracking less capable?", "No. Scanning, importing, manual entry, tagging, and review all work on-device in SnapReceipt."],
+        ["Where does my receipt data go?", "With an on-device app like SnapReceipt, it stays on your iPhone rather than uploading to a cloud account."],
+        ["How do I share records at tax time?", "You choose what to export from your device, keeping control instead of leaving everything in a cloud by default."]
+      ],
+      sources: [
+        ["FTC: Protecting Personal Information", "https://www.ftc.gov/business-guidance/privacy-security", "U.S. Federal Trade Commission guidance on data privacy and minimizing exposure of personal information."],
+        ["SnapReceipt: Expenses & Tax", "/apps/snapreceipt-expenses-and-tax/", "Private, account-free receipt and expense tracking that keeps records on your iPhone."]
+      ]
+    },
+    checklist: ["Treat expense data as sensitive.", "Prefer on-device over cloud-account apps.", "Keep receipts and mileage local.", "Confirm the core workflow still works offline.", "Control what you export at tax time."]
   }
 ];
 
@@ -5192,6 +5348,7 @@ function blogIndex() {
     ["Stairs", "stairs"],
     ["Tile", "tile"],
     ["PDF Scan", "pdf-scan"],
+    ["SnapReceipt", "snapreceipt"],
     ["Cadenza", "cadenza"],
     ["Tinnitus", "tinnitus"]
   ];
@@ -5305,6 +5462,11 @@ ${head({
     <section class="blog-section" id="pdf-scan" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">PDF Scan</p><h2>Private document scanning, OCR, scan to PDF workflows, signatures, and file organization.</h2></div>
       <div class="blog-grid">${articles.filter((article) => article.category === "PDF Scan").map(articleCard).join("\n        ")}</div>
+    </section>
+
+    <section class="blog-section" id="snapreceipt" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">SnapReceipt</p><h2>Receipt tracking, mileage logs, and private expense records for contractors, makers, and small business.</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === "SnapReceipt").map(articleCard).join("\n        ")}</div>
     </section>
 
     <section class="blog-section" id="cadenza" data-blog-section>
@@ -5473,6 +5635,7 @@ const zhCategory = {
   Stairs: "楼梯",
   Tile: "瓷砖",
   "PDF Scan": "PDF 扫描",
+  SnapReceipt: "SnapReceipt",
   Cadenza: "Cadenza",
   Tinnitus: "耳鸣",
   "Classic guide": "经典指南"
@@ -5555,6 +5718,7 @@ function zhKicker(article) {
   if (article.category === "Stairs") return "楼梯设计";
   if (article.category === "Tile") return "瓷砖排版";
   if (article.category === "PDF Scan") return "PDF 扫描";
+  if (article.category === "SnapReceipt") return "费用记录";
   if (article.category === "Cadenza") return "音乐练习";
   return "指南";
 }
