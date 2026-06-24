@@ -343,6 +343,180 @@ const landingPages = [
       ["/wood-waste-calculator/", "Waste calculator"],
       ["/apps/cutlist/", "CutList app"]
     ]
+  },
+  {
+    slug: "cut-list-optimizer",
+    seoTitle: "Cut List Optimizer: Plan Cuts and Cut Waste",
+    h1: "Cut List Optimizer",
+    description: "A cut list optimizer turns your parts list into a real cutting layout, accounting for kerf, rotation, and offcuts so you buy less material and cut with less waste.",
+    keywords: ["cut list optimizer", "cutlist optimizer", "cut calculator", "woodworking calculator", "reduce wood waste"],
+    problem: "A parts list tells you what to cut, but not whether those parts actually fit on the material you plan to buy. A cut list optimizer solves that gap. It takes your part sizes and quantities, then arranges them on real boards or sheets while respecting saw kerf, rotation rules, and grain direction. Without one, woodworkers tend to estimate from total area, then discover at the lumberyard or the saw that the shapes do not pack the way the math suggested.",
+    steps: [
+      ["Enter every part with its quantity", "Whether you are building a bookcase, a run of cabinets, or shop shelving, list each panel and board with width, length, and how many you need."],
+      ["Set the stock size and saw kerf", "Tell the optimizer your real sheet or board size and your blade kerf, so the layout reflects the material removed by every cut."],
+      ["Let it arrange the parts", "The optimizer packs parts to reduce waste, rotating hidden pieces while keeping visible grain consistent, and reports how many sheets or boards you need."],
+      ["Review the offcuts, not just the percentage", "A good optimized layout leaves rectangular offcuts you can reuse, which is often more valuable than chasing the lowest waste number."],
+      ["Cut from the plan", "Follow the cut order, label parts as they come off the saw, and keep the planned offcut for the next project."]
+    ],
+    recommendation: "For a quick optimization, use the free cut list calculator or plywood cut calculator in the browser. When a project has many parts or you want to save, edit, and export the layout, CutList Optimizer for iPhone keeps the whole plan with the job, offline.",
+    faqs: [
+      ["What does a cut list optimizer do?", "It arranges your parts on real stock to reduce waste, accounting for kerf, rotation, and grain, then tells you how much material you need."],
+      ["How is an optimizer different from a calculator?", "A calculator can total area or board feet; an optimizer proves the exact shapes fit on real sheets or boards in a practical cutting layout."],
+      ["Does a cut list optimizer really save material?", "Often yes, especially on projects with repeated parts, by packing pieces better and turning leftovers into reusable offcuts instead of scrap."],
+      ["Do I need to account for saw kerf?", "Yes. Each cut removes material, so an accurate optimizer includes kerf, or the last part in a row may not fit."],
+      ["What is the easiest way to start?", "Open the cut list calculator, enter a few parts, and review the layout. Move larger or saved projects into CutList Optimizer."]
+    ],
+    links: [
+      ["/cut-list-calculator/", "Cut list calculator"],
+      ["/learn/what-is-cut-list-optimization/", "What is cut list optimization"],
+      ["/learn/cut-list-planner/", "Cut list planner workflow"],
+      ["/apps/cutlist/", "CutList Optimizer app"]
+    ]
+  },
+  {
+    slug: "plywood-cut-calculator",
+    seoTitle: "Plywood Cut Calculator: Sheet Cutting Made Simple",
+    h1: "Plywood Cut Calculator",
+    description: "Use a plywood cut calculator to plan how parts fit on a 4x8 sheet, add saw kerf, count sheets, and cut less waste before you buy a single panel.",
+    keywords: ["plywood cut calculator", "cut calculator for plywood", "plywood cutting calculator", "sheet cutting calculator", "plywood waste"],
+    problem: "Plywood is sold in whole sheets, so the real question is rarely how much area you need, but how many sheets your parts actually require once they are arranged. A plywood cut calculator answers that. It places your panels on a real sheet size, adds the kerf each cut removes, and shows whether a cabinet job fits on two sheets or quietly needs a third. Guessing from square footage is where many plywood projects go over budget.",
+    steps: [
+      ["Set the sheet size", "Use the real panel you plan to buy, such as 48 by 96 inches for a standard 4x8 sheet, not a rounded nominal number."],
+      ["Add the plywood parts", "List cabinet sides, shelves, backs, drawer parts, and any panels with their width, length, and quantity."],
+      ["Include the saw kerf", "Enter your blade kerf, often about 1/8 inch, so the layout reflects the material lost to every cut across the sheet."],
+      ["Read the sheet count and layout", "See how the panels pack, how many sheets you need, and where the waste falls before you head to the store."],
+      ["Adjust a dimension to save a sheet", "Sometimes shaving a shelf depth or cabinet width by a small amount drops a full sheet from the order."]
+    ],
+    recommendation: "Run a quick plan in the free plywood cut calculator first. For a kitchen of cabinets or any project you want to save and reuse, move the layout into CutList Optimizer for iPhone so you can edit it and export a PDF for the shop.",
+    faqs: [
+      ["What is a plywood cut calculator?", "It is a tool that arranges your plywood parts on a real sheet size, includes saw kerf, and tells you how many sheets the project needs."],
+      ["How many sheets of plywood do I need?", "It depends on how the parts pack, not just total area. Enter every part and the calculator reports a real sheet count."],
+      ["Does the calculator account for grain direction?", "Good layouts let you lock visible faces so the grain stays consistent while hidden parts rotate to fill the sheet."],
+      ["Is a 4x8 sheet really 48 by 96 inches?", "Close, but edges can be damaged or out of square, so measure the real sheet for tight layouts."],
+      ["Can I use it for MDF or melamine?", "Yes. Sheet goods follow the same logic, though brittle melamine may need a higher waste allowance for chipping."]
+    ],
+    links: [
+      ["/plywood-cut-calculator/", "Plywood cut calculator"],
+      ["/learn/how-many-sheets-of-plywood-do-i-need/", "How many sheets of plywood you need"],
+      ["/learn/plywood-cutting-optimization/", "Plywood cutting optimization"],
+      ["/apps/cutlist/", "CutList Optimizer app"]
+    ]
+  },
+  {
+    slug: "cut-list-software",
+    seoTitle: "Cut List Software for Woodworking Projects",
+    h1: "Cut List Software",
+    description: "Compare cut list software options for woodworking, from browser calculators to the CutList Optimizer app, and pick the right tool for saving, exporting, and reusing cut lists.",
+    keywords: ["cut list software", "cut list app", "cutlist software", "cutting plan software", "woodworking software"],
+    problem: "Spreadsheets and paper sketches work until a project has many repeated parts, changing dimensions, or needs to be reused. That is where cut list software earns its place. The right tool does more than total your parts: it arranges them on real stock, saves the project so you can edit it later, and exports a clean plan you can take to the saw. The trick is matching the level of software to the job instead of overcomplicating a simple shelf or under-planning a cabinet run.",
+    steps: [
+      ["Decide what the project needs", "A one-off shelf may only need a quick browser calculation; a kitchen of cabinets benefits from saved, editable software."],
+      ["Use a browser calculator for quick jobs", "For fast, no-install planning, a cut list or plywood calculator gives a layout in seconds with no account."],
+      ["Choose an app when you need to save and reuse", "Software that stores projects lets you reopen a layout, tweak a part, and reprint without starting over."],
+      ["Look for export and offline use", "PDF export and offline access matter in a shop where you do not want to rely on a connection or a login."],
+      ["Keep your data private", "An app that works on-device, without an account, keeps your project details on your phone instead of a cloud."]
+    ],
+    recommendation: "For quick planning, the free browser calculators are the simplest cut list software. When you need saved projects, repeat edits, PDF export, and offline use, CutList Optimizer for iPhone is the better fit, with no account required.",
+    faqs: [
+      ["What is cut list software?", "It is any tool that turns a parts list into a cutting plan. Some are browser calculators; others are apps that save and export projects."],
+      ["Do I need software or is a spreadsheet enough?", "A spreadsheet tracks parts but cannot show whether they fit on real stock. Cut list software arranges the actual layout."],
+      ["Is there free cut list software?", "Yes. The browser cut list and plywood calculators are free and need no install or account."],
+      ["What should good cut list software include?", "Layout that respects kerf and rotation, saved projects, PDF export, and ideally offline, private operation."],
+      ["Does cut list software work offline?", "The CutList Optimizer app is built to work offline on iPhone, so you can plan and cut without a connection."]
+    ],
+    links: [
+      ["/apps/cutlist/", "CutList Optimizer app"],
+      ["/learn/best-woodworking-calculator-workflow/", "Best calculator workflow"],
+      ["/cut-list-calculator/", "Free cut list calculator"],
+      ["/tools/", "WoodCutTool tools hub"]
+    ]
+  },
+  {
+    slug: "wood-cut-planner",
+    seoTitle: "Wood Cut Planner: A Simple Planning Workflow",
+    h1: "Wood Cut Planner",
+    description: "A wood cut planner workflow takes a project from rough idea to cut-ready plan, organizing parts, material, kerf, and cut order so you cut once and cut right.",
+    keywords: ["wood cut planner", "wood cutting planner", "cut planner", "cutting plan", "woodworking planning"],
+    problem: "Planning is the cheapest place to fix a woodworking mistake. A wood cut planner is less a single tool than a repeatable workflow: define the project, list the parts, choose the material, account for kerf and grain, then arrange a cut order you can actually follow. Skipping this is why projects end with a forgotten part, a second trip to the store, or an offcut pile nobody can use. A clear planning sequence keeps the whole job moving from idea to finished cuts.",
+    steps: [
+      ["Define the finished project", "Start with the object and its real dimensions, whether that is a closet system, a workbench, or a set of drawers."],
+      ["Break it into a parts list", "Name every part, with sizes and quantities, and mark which faces are visible so grain direction is planned, not improvised."],
+      ["Choose and size the material", "Decide between boards and sheet goods, and use real stock sizes so the plan reflects what you will buy."],
+      ["Plan the cut order with kerf in mind", "Sequence long cuts first, include the blade kerf, and keep the sheet or board stable for as long as possible."],
+      ["Save the plan and cut from it", "Keep the planned layout with the project so you can reopen, adjust, and follow it at the saw instead of relying on memory."]
+    ],
+    recommendation: "For quick planning, sketch the parts and run them through the cut list or plywood calculator. For a project you will build over several sessions, CutList Optimizer for iPhone keeps the plan saved, editable, and ready offline at the saw.",
+    faqs: [
+      ["What is a wood cut planner?", "It is a workflow, often supported by a tool, that organizes a project into parts, material, kerf, and a followable cut order."],
+      ["Why plan cuts before buying material?", "Planning shows the real sheet or board count and catches forgotten parts, so you buy the right amount once."],
+      ["What should a cut plan include?", "Part names and sizes, quantities, material, saw kerf, grain direction, and a safe cut sequence."],
+      ["How detailed should the plan be?", "Match it to the project. A simple shelf needs a quick layout; a cabinet run benefits from a saved, detailed plan."],
+      ["Can I keep the plan at the saw?", "Yes. Export a PDF or use the CutList Optimizer app so the plan is with you while you cut."]
+    ],
+    links: [
+      ["/learn/cut-list-planner/", "Cut list planner workflow"],
+      ["/learn/how-to-read-a-cut-list/", "How to read a cut list"],
+      ["/cut-list-calculator/", "Cut list calculator"],
+      ["/apps/cutlist/", "CutList Optimizer app"]
+    ]
+  },
+  {
+    slug: "plywood-cut-list-calculator",
+    seoTitle: "Plywood Cut List Calculator for Cabinet Parts",
+    h1: "Plywood Cut List Calculator",
+    description: "A plywood cut list calculator turns cabinet and panel parts into a sheet-by-sheet cutting plan, with kerf and grain handled, so you know exactly what to cut from each sheet.",
+    keywords: ["plywood cut list calculator", "cutlist calculator", "plywood cutting calculator", "cabinet cut list", "sheet cutting plan"],
+    problem: "When a project is built from plywood, the cut list and the sheet layout are really one problem. A plywood cut list calculator combines them: it takes your panel parts and generates a plan that shows which parts come from which sheet, in what order, with kerf and grain accounted for. This matters most on cabinets, where dozens of repeated sides, shelves, backs, and drawer parts have to be cut accurately and tracked so nothing is missed at assembly.",
+    steps: [
+      ["List the cabinet parts", "Enter sides, bottoms, shelves, backs, stretchers, and drawer parts with sizes and quantities for every box in the run."],
+      ["Group parts by material", "Keep 3/4 inch carcass plywood separate from 1/4 inch backs so each material is planned on its own sheets."],
+      ["Generate the cut list per sheet", "The calculator assigns parts to sheets and gives a cut order, so you know exactly what to cut from each panel."],
+      ["Account for kerf and grain", "Include the blade kerf and lock the grain on visible cabinet faces so finished ends look consistent."],
+      ["Label and track parts", "Mark each part as it is cut so identical panels do not get mixed up during assembly."]
+    ],
+    recommendation: "Use the plywood cut calculator to generate a quick cut list and sheet count. For a full kitchen or any multi-cabinet job, CutList Optimizer for iPhone saves the cut list, lets you edit it, and exports a PDF you can keep at the saw.",
+    faqs: [
+      ["What is a plywood cut list calculator?", "It generates a cutting plan from your plywood parts, showing which parts come from each sheet, with kerf and grain handled."],
+      ["How is it different from a plain cut list?", "A plain cut list names parts and sizes; this calculator also arranges them on real sheets and reports the sheet count."],
+      ["Can it handle a whole kitchen of cabinets?", "Yes. Enter every box's parts and quantities, and it plans the sheets, though saving the project in an app helps on big runs."],
+      ["Should I separate backs from carcass plywood?", "Yes. Thin backs are usually a different, cheaper material and should be planned on their own sheets."],
+      ["Does it include the toe kick and stretchers?", "Include every part you will cut, including stretchers and toe kicks, so the sheet count and cut list are complete."]
+    ],
+    links: [
+      ["/plywood-cut-calculator/", "Plywood cut calculator"],
+      ["/templates/kitchen-cabinet-cut-list/", "Kitchen cabinet cut list template"],
+      ["/learn/how-to-read-a-cut-list/", "How to read a cut list"],
+      ["/apps/cutlist/", "CutList Optimizer app"]
+    ]
+  },
+  {
+    slug: "sheet-cutting-calculator",
+    seoTitle: "Sheet Cutting Calculator for Panels and Boards",
+    h1: "Sheet Cutting Calculator",
+    description: "A sheet cutting calculator lays out parts on plywood, MDF, and melamine, adds kerf, and plans the cut order so sheet goods cut cleanly with less waste.",
+    keywords: ["sheet cutting calculator", "sheet goods calculator", "panel cutting calculator", "cut calculator", "reduce sheet waste"],
+    problem: "Sheet goods look simple because they are rectangular, but laying parts out well is where a panel project succeeds or fails. A sheet cutting calculator arranges your parts on a real sheet, includes the kerf each cut removes, and helps you plan a cut order that keeps the panel stable and the edges clean. It works the same for plywood, MDF, and melamine, with small adjustments for finished faces and chipping, so you can plan any sheet goods job before buying material.",
+    steps: [
+      ["Set the sheet size and material", "Enter your real panel size and note the material, since melamine and finished faces affect the cut sequence."],
+      ["Add the parts and quantities", "List every panel with width, length, and how many you need across the project."],
+      ["Add kerf and rotation rules", "Include the blade kerf and decide which parts can rotate, locking visible faces where grain or pattern matters."],
+      ["Plan the cut order", "Break the sheet down with long cuts first while it is most stable, then crosscut smaller parts to size."],
+      ["Protect the edges and offcuts", "For brittle materials, score the cut and keep usable rectangular offcuts for future parts."]
+    ],
+    recommendation: "Start with the free plywood cut calculator for a fast sheet layout. For larger panel jobs or anything you want to save, edit, and export, CutList Optimizer for iPhone keeps the cutting plan with the project and works offline.",
+    faqs: [
+      ["What is a sheet cutting calculator?", "It arranges parts on sheet goods like plywood, MDF, or melamine, adds kerf, and plans a practical cut order to reduce waste."],
+      ["Does it work for MDF and melamine?", "Yes. The layout logic is the same, though brittle melamine needs a sharp blade and a higher waste allowance for chipping."],
+      ["Why does cut order matter?", "Cutting long pieces first keeps the sheet stable and gives clean reference edges for the smaller parts that follow."],
+      ["How much does kerf affect a sheet layout?", "Across many cuts the kerf adds up, so ignoring it can make a layout look possible when the real sheet falls short."],
+      ["What is the best next step?", "Run a layout in the plywood cut calculator, then save larger projects in CutList Optimizer for iPhone."]
+    ],
+    links: [
+      ["/plywood-cut-calculator/", "Plywood cut calculator"],
+      ["/learn/sheet-layout-optimization/", "Sheet layout optimization"],
+      ["/learn/how-to-reduce-plywood-waste/", "How to reduce plywood waste"],
+      ["/apps/cutlist/", "CutList Optimizer app"]
+    ]
   }
 ];
 
@@ -601,6 +775,12 @@ ${head({
         </div>
       </section>
       ${faqSection(page)}
+      <section class="inline-cta-section" aria-label="Download CutList Optimizer for iPhone">
+        <div class="inline-cta">
+          <p>Want to save, export, and reuse your cut lists? Download CutList Optimizer for iPhone.</p>
+          <div class="cta-row"><a class="button" href="/apps/cutlist/">See the CutList Optimizer app</a><a class="button secondary" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList Optimizer</a></div>
+        </div>
+      </section>
       ${relatedGuidesSection(page.slug) || internalLinksSection(page)}
     </article>
   </main>

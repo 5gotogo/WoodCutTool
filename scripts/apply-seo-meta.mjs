@@ -16,8 +16,8 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 // bc = breadcrumb trail [ [name, path], ... ]; omit for top-level pages.
 const pages = {
   "index.html": {
-    title: "Plan Plywood Cuts & Cut Less Waste — Free Calculator",
-    desc: "Free plywood cutting calculator and cut list optimizer. Plan sheet layouts, add kerf, and cut less waste in your browser — no login, no upload."
+    title: "Cut List Optimizer & Plywood Cutting Calculator | WoodCutTool",
+    desc: "Free cut list optimizer and plywood cutting calculator for woodworking projects. Plan sheet cuts, reduce waste, estimate materials, and export cut lists with CutList Optimizer."
   },
   "tools/index.html": {
     title: "Free Woodworking Calculators for Cuts, Waste & Cost",
