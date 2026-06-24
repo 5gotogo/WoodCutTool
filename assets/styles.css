@@ -5316,6 +5316,13 @@ tr:last-child td {
   text-transform: uppercase;
 }
 
+.related-grid em {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-style: normal;
+  line-height: 1.45;
+}
+
 .breadcrumb {
   margin: 0 0 16px;
   color: var(--muted);

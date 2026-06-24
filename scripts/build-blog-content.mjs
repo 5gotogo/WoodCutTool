@@ -4974,6 +4974,176 @@ articles.push(
       ["Use The Layout To Adjust The Design", "If the layout creates poor yield, compare small changes in shelf depth, divider count, or back construction. Built-ins often have enough design flexibility to save a sheet."]
     ],
     checklist: ["Measure the site before planning.", "Keep repeated depths consistent.", "Include fillers and scribes.", "Separate paint-grade and stain-grade stock.", "Adjust design when the layout is inefficient."]
+  },
+  {
+    slug: "snaplabel-ai-photo-label-maker-guide",
+    category: "SnapLabel",
+    title: "AI Photo Label Maker Guide: Turn Pictures Into Printable Labels With SnapLabel",
+    description: "How to use an AI photo label maker to recognize items, create clean text labels, and print organized labels from iPhone photos.",
+    kicker: "AI labels",
+    readTime: "8 min",
+    accent: "tile",
+    sections: [
+      ["A Label Starts With A Clear Photo", "The fastest labeling workflow begins with a photo that shows the item, container, or product clearly. SnapLabel is designed to recognize photo content and suggest label text, so lighting, framing, and contrast still matter."],
+      ["Let Recognition Draft The First Label", "AI recognition is useful because it removes the blank page. Instead of typing every label from scratch, start with the suggested name, then edit it into the wording your shelf, bin, folder, or product actually needs."],
+      ["Keep Labels Short Enough To Print", "A good printed label is readable at a glance. Use short names, category words, dates, or item counts rather than long sentences. The label should help you identify the object quickly, not become a paragraph."],
+      ["Use One Style Per System", "Storage boxes, pantry shelves, office files, and inventory bins work best when labels follow the same naming pattern. Choose a simple style and repeat it so the set looks intentional."],
+      ["Review Before Printing", "AI suggestions still need human review. Check spelling, quantities, product names, and category terms before printing so the physical label is correct the first time."]
+    ],
+    checklist: ["Photograph the item clearly.", "Use AI recognition as the first draft.", "Shorten text for print readability.", "Keep one naming style per label system.", "Proofread before printing."]
+  },
+  {
+    slug: "snaplabel-home-organization-labels",
+    category: "SnapLabel",
+    title: "Home Organization Labels From Photos: Storage Boxes, Shelves, And Pantry Items",
+    description: "A practical home organization workflow for turning photos of bins, shelves, pantry items, and household supplies into printable labels.",
+    kicker: "Home labels",
+    readTime: "8 min",
+    accent: "tile",
+    sections: [
+      ["Label The Container, Not The Clutter", "Before making labels, decide what each box, shelf, drawer, or pantry zone is supposed to hold. A label maker is most useful after the category is clear."],
+      ["Photograph Representative Items", "Take a photo of the contents or the container front. SnapLabel can help turn that image into label text, which is faster than typing every household category by hand."],
+      ["Use Plain Category Names", "Home labels should be simple: batteries, holiday lights, pasta, cleaning cloths, kids art, guest towels. Plain words are easier for everyone in the house to follow."],
+      ["Batch Similar Areas Together", "Do one cabinet, closet, drawer bank, or shelf unit at a time. Batch work creates a consistent style and reduces the chance that half the system is labeled differently."],
+      ["Update Labels When The System Changes", "Organization is not finished forever. When a bin changes purpose, make a new label immediately so the system stays trustworthy."]
+    ],
+    checklist: ["Define the storage category first.", "Take clear photos of containers or contents.", "Use simple household wording.", "Batch one area at a time.", "Replace labels when storage changes."]
+  },
+  {
+    slug: "snaplabel-small-business-product-labels",
+    category: "SnapLabel",
+    title: "Photo Label App For Small Business: Product Tags, Bins, And Print-Ready Labels",
+    description: "How small businesses can use a photo label app for product tags, stock bins, sample kits, shelves, and print-ready organization labels.",
+    kicker: "Business labels",
+    readTime: "8 min",
+    accent: "tile",
+    sections: [
+      ["Small Teams Need Fast Labeling", "Retail shelves, market bins, product samples, office supplies, and back-room inventory all become harder to manage when labels are inconsistent. A photo label app keeps the work close to the object."],
+      ["Capture The Item Where It Lives", "Take the photo at the shelf, bin, or packing table. SnapLabel can suggest label text from the image, then you can edit it into the name customers or staff should see."],
+      ["Separate Public And Internal Labels", "A customer-facing product tag may need a polished name, while an internal bin label may need SKU, size, color, or reorder note. Do not force one label format to do both jobs."],
+      ["Use Batches For Repeated Products", "If you sell variants, group similar items and create labels in one session. Consistent labels help staff restock, pack orders, and find samples without asking."],
+      ["Print Only After A Quick Audit", "Before printing, review names, spelling, product variants, and quantities. A five-minute audit prevents a stack of labels from becoming scrap."]
+    ],
+    checklist: ["Label products where the work happens.", "Edit AI suggestions into business terms.", "Separate customer-facing and internal labels.", "Batch repeated product variants.", "Audit text before printing."]
+  },
+  {
+    slug: "snaplabel-batch-labels-for-inventory",
+    category: "SnapLabel",
+    title: "Batch Labels From Photos: A Faster Workflow For Inventory And Storage",
+    description: "A batch labeling workflow for inventory rooms, supply closets, product bins, storage boxes, and photo-based label creation.",
+    kicker: "Batch labels",
+    readTime: "7 min",
+    accent: "tile",
+    sections: [
+      ["Batching Reduces Context Switching", "Making one label at a time feels easy until a storage room has fifty bins. Batch work lets you photograph, review, edit, and print in a cleaner rhythm."],
+      ["Shoot In A Consistent Order", "Move left to right or top to bottom through the storage area. The photo sequence becomes a temporary checklist, making it easier to know which bins already have labels."],
+      ["Normalize Names Before Printing", "Inventory labels should use the same structure: category, size, variant, or location. SnapLabel helps create drafts quickly, but consistency comes from reviewing the batch as a set."],
+      ["Keep A Short Exception List", "Some labels need extra details, such as fragile, reorder, seasonal, sample, or returns. Add those only where they change behavior."],
+      ["Print In Sets That Match The Area", "Print labels for one shelf, aisle, cabinet, or product group at a time. Smaller print batches are easier to install correctly."]
+    ],
+    checklist: ["Photograph the area in order.", "Review labels as a set.", "Normalize naming patterns.", "Add exceptions only when useful.", "Print labels by storage zone."]
+  },
+  {
+    slug: "snaplabel-printable-label-workflow",
+    category: "SnapLabel",
+    title: "Printable Label Workflow: From Camera Roll To Clean Labels In Minutes",
+    description: "A simple workflow for creating printable labels from camera roll photos, AI suggestions, edited text, and final print review.",
+    kicker: "Print workflow",
+    readTime: "7 min",
+    accent: "tile",
+    sections: [
+      ["Start From The Camera Or Album", "A practical label workflow should not require a desktop setup. SnapLabel supports taking or choosing a photo, so labels can begin from the object in front of you or from images already in your album."],
+      ["Treat AI Text As A Draft", "Recognition can identify what is in the picture and suggest clear wording. The final label should still be edited for your naming convention, language, and print size."],
+      ["Design For The Printer You Have", "A label that looks good on screen may be too long once printed. Keep text short, avoid unnecessary punctuation, and test one sample before printing a full batch."],
+      ["Use Categories For Faster Searching", "If you are labeling household items, office supplies, inventory, or product samples, categories help keep the work organized and easier to repeat later."],
+      ["Archive The Workflow, Not Every Mistake", "Once labels are printed and installed, keep the useful naming pattern. Do not preserve rejected drafts unless they help future batches."]
+    ],
+    checklist: ["Choose a photo from camera or album.", "Edit AI text into final wording.", "Test one print first.", "Group labels by category.", "Keep the naming pattern for future batches."]
+  },
+  {
+    slug: "private-meeting-transcriber-offline-guide",
+    category: "Private Meeting",
+    title: "Offline Meeting Transcriber Guide: Private Speech To Text Without Uploads",
+    description: "How an offline meeting transcriber can turn conversations into searchable notes while keeping audio and transcripts on device.",
+    kicker: "Offline meetings",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Private Meetings Need Private Tools", "Meeting audio can contain strategy, client details, finances, hiring decisions, or product plans. An offline transcriber like Private Meeting Transcriber is designed for speech-to-text without sending recordings to a server."],
+      ["Record With The Transcript In Mind", "Place the iPhone close enough to the speakers, reduce background noise, and start a new recording for each meeting. Better audio produces better text."],
+      ["Use Speaker Labels For Review", "Speaker labeling helps make the transcript useful after the meeting. Rename speakers when needed so the notes show who said what instead of anonymous blocks of text."],
+      ["Turn Transcript Text Into Actions", "After the meeting, scan for decisions, owners, deadlines, objections, and follow-up questions. The transcript is the source; the action list is the deliverable."],
+      ["Export Only What You Need", "Private workflows work best when sharing is intentional. Export a summary, full transcript, or selected notes only when the recipient actually needs them."]
+    ],
+    checklist: ["Use on-device transcription for sensitive meetings.", "Record each meeting as its own session.", "Rename speakers during review.", "Extract decisions and action items.", "Share only the needed transcript content."]
+  },
+  {
+    slug: "priviscribe-speaker-labeling-meeting-notes",
+    category: "Private Meeting",
+    title: "Speaker Labeling For Meeting Notes: Who Said What Without Cloud Uploads",
+    description: "A speaker labeling workflow for meeting notes, interviews, lectures, and private transcripts created on device with Priviscribe.",
+    kicker: "Speaker labels",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Speaker Labels Add Accountability", "A transcript is easier to trust when it separates voices. Speaker labels help reviewers understand decisions, questions, objections, and commitments in context."],
+      ["Name Speakers After The First Pass", "During live recording, speed matters. After transcription, rename speakers into real names or roles so the transcript becomes readable for future review."],
+      ["Use Roles When Names Are Sensitive", "Some notes should identify roles rather than personal names, such as Client, Vendor, Manager, Student, or Interviewer. This keeps context while reducing unnecessary exposure."],
+      ["Correct Important Attribution", "No transcript system should be treated as perfect. Review speaker turns around decisions, quotes, and commitments before sharing or acting on them."],
+      ["Keep The Workflow On Device", "Priviscribe is designed around private, on-device transcription. That matters most when meeting notes contain internal plans, interview material, or confidential conversations."]
+    ],
+    checklist: ["Use speaker labels for accountability.", "Rename speakers after transcription.", "Use roles when names are sensitive.", "Verify attribution around decisions.", "Keep private transcripts on device."]
+  },
+  {
+    slug: "private-interview-transcription-app",
+    category: "Private Meeting",
+    title: "Private Interview Transcription App: Record, Transcribe, And Review On Device",
+    description: "How to run private interview transcription for research, hiring, journalism, and customer calls without uploading recordings to a cloud service.",
+    kicker: "Interview notes",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Interviews Are High-Context Audio", "Interview recordings often include personal stories, customer problems, hiring details, or unpublished research. Keeping transcription on device reduces unnecessary data movement."],
+      ["Start With Consent And Context", "Before recording, make sure participants understand the recording purpose and how notes will be used. Clear consent is part of a professional transcription workflow."],
+      ["Capture One Interview Per File", "Separate files make review, naming, export, and deletion easier. Mixing interviews into one long recording creates avoidable privacy and organization problems."],
+      ["Mark Themes During Review", "After transcription, tag important themes such as pricing, usability, objections, requirements, timeline, or risk. The transcript is easier to analyze when repeated ideas are visible."],
+      ["Export A Clean Working Copy", "When sharing with a teammate, send only the transcript or excerpts needed for the project. Keep the original recording and full transcript under your control."]
+    ],
+    checklist: ["Confirm recording consent.", "Use one file per interview.", "Transcribe on device when privacy matters.", "Tag themes during review.", "Export only the working copy needed."]
+  },
+  {
+    slug: "lecture-transcription-app-for-students",
+    category: "Private Meeting",
+    title: "Lecture Transcription App For Students: Offline Notes, Review, And Study",
+    description: "A student workflow for recording lectures, creating offline transcripts, labeling speakers, and turning class audio into study notes.",
+    kicker: "Lecture notes",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Lecture Audio Needs Structure", "A long lecture transcript is useful only if it can be reviewed. Start a new recording per class session and name it with course, topic, and date."],
+      ["Record Close Enough To Hear Clearly", "Sit where speech is audible and avoid covering the microphone. Offline transcription can only work with the audio it receives."],
+      ["Use Speaker Labels For Discussions", "Lectures with guest speakers, seminars, or class discussion benefit from speaker labeling. Rename speakers by role when exact names are not important."],
+      ["Turn Transcript Sections Into Study Blocks", "After class, split the transcript into definitions, examples, formulas, dates, questions, and exam hints. Studying from structured notes is faster than rereading raw text."],
+      ["Respect Class And Campus Rules", "Recording rules vary by instructor, school, and situation. Get permission where required and keep transcripts private unless sharing is allowed."]
+    ],
+    checklist: ["Name recordings by course and date.", "Capture clear lecture audio.", "Use speaker labels for discussions.", "Convert transcript sections into study notes.", "Follow recording and sharing rules."]
+  },
+  {
+    slug: "voice-notes-to-text-private-workflow",
+    category: "Private Meeting",
+    title: "Voice Notes To Text: A Private Workflow For Ideas, Tasks, And Follow-Up",
+    description: "How to convert voice notes into text privately for ideas, meeting follow-ups, task lists, project notes, and personal reminders.",
+    kicker: "Voice notes",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Voice Notes Capture Thoughts Quickly", "Ideas often arrive faster than typing. A private voice-to-text workflow lets you record the thought first, then turn it into searchable text when you review."],
+      ["Use Short Recordings For Cleaner Notes", "Short clips are easier to transcribe, title, and act on. Separate project ideas, meeting follow-ups, errands, and reminders instead of making one endless recording."],
+      ["Review For Actions, Not Perfect Prose", "A transcript does not need to sound polished. Look for tasks, names, dates, decisions, questions, and next steps, then rewrite only the parts that matter."],
+      ["Keep Sensitive Ideas Local", "Product ideas, client notes, personal reminders, and business plans may not belong in a cloud transcription account. On-device transcription keeps the workflow private by default."],
+      ["Export The Final Note", "When a voice note becomes useful, move the cleaned text into your task manager, document, email, or project notes. The raw transcript is only the bridge."]
+    ],
+    checklist: ["Record short focused clips.", "Title notes by project or purpose.", "Extract actions during review.", "Keep sensitive notes on device.", "Export cleaned text to the right destination."]
   }
 );
 
@@ -5149,12 +5319,49 @@ function fallbackResearchBrief(article) {
 const relatedCutListLinks = [
   ["/plywood-cut-calculator/", "Try the plywood cut calculator"],
   ["/cut-list-calculator/", "Use the board cut list calculator"],
-  ["/apps/cutlist/", "Open the CutList iPhone cut list app"],
   ["/blog/plywood-optimization-kerf-grain-offcuts/", "Study kerf, grain, and offcut strategy"],
   ["/blog/cabinet-cut-list-mistakes/", "Avoid common cabinet cut list mistakes"],
   ["/blog/reducing-sheet-good-waste-on-small-shops/", "Reduce sheet-good waste in a small shop"],
   ["/blog/cutlist-vs-spreadsheets-for-cabinetmakers/", "Compare CutList apps and spreadsheets"]
 ];
+
+const relatedAppDetails = {
+  CutList: {
+    href: "/apps/cutlist/",
+    name: "CutList: Plywood Optimizer",
+    description: "Open the CutList app detail page for saved plywood layouts, local projects, cost estimates, PDF export, and shop-ready cut plans."
+  },
+  QuiltFit: {
+    href: "/apps/quiltfit/",
+    name: "QuiltFit: Quilt Design Planner",
+    description: "Open the QuiltFit app detail page for quilt planning, fabric roles, yardage, shopping lists, and project progress."
+  },
+  "PDF Scan": {
+    href: "/apps/pdf-scan-scanner-and-reader/",
+    name: "PDF Scan - Scanner & Reader",
+    description: "Open the PDF Scan app detail page for private document scanning, OCR, PDF export, signatures, and file organization."
+  },
+  SnapReceipt: {
+    href: "/apps/snapreceipt-expenses-and-tax/",
+    name: "SnapReceipt: Expenses & Tax",
+    description: "Open the SnapReceipt app detail page for receipt capture, expense tracking, mileage logs, and private business records."
+  },
+  SnapLabel: {
+    href: "/apps/snaplabel-photo-text-label/",
+    name: "SnapLabel - Photo Text Label",
+    description: "Open the SnapLabel app detail page for AI photo labels, printable labels, batch labeling, and home or business organization."
+  },
+  "Private Meeting": {
+    href: "/apps/private-meeting-transcriber/",
+    name: "Private Meeting Transcriber",
+    description: "Open the Private Meeting Transcriber app detail page for offline speech to text, speaker labels, meetings, interviews, lectures, and voice notes."
+  },
+  Cadenza: {
+    href: "/apps/cadenza-metronome-and-tuner/",
+    name: "Cadenza: Metronome & Tuner",
+    description: "Open the Cadenza app detail page for metronome, tuner, setlists, drone tones, BPM notes, and private practice workflows."
+  }
+};
 
 const cutlistArticleEnhancements = {
   "cutlist-shop-workflow-from-bid-to-cut": {
@@ -5237,14 +5444,22 @@ function cutlistApplicationPanel(article) {
 }
 
 function relatedToolsAndGuides(article) {
-  if (article.category !== "CutList") {
+  const app = relatedAppDetails[article.category];
+  const resourceLinks = article.category === "CutList" ? relatedCutListLinks : [];
+
+  if (!app && resourceLinks.length === 0) {
     return "";
   }
 
+  const cards = [
+    ...(app ? [[app.href, "App detail page", app.name, app.description]] : []),
+    ...resourceLinks.map(([href, label]) => [href, "Related resource", label, ""])
+  ];
+
   return `<section class="related-tools-guides">
-        <h2>Related tools and guides</h2>
-        <div class="related-grid">${relatedCutListLinks
-          .map(([href, label]) => `<a href="${href}"><span>CutList resource</span><strong>${escapeHtml(label)}</strong></a>`)
+        <h2>${app ? "Related app and resources" : "Related tools and guides"}</h2>
+        <div class="related-grid">${cards
+          .map(([href, label, title, description]) => `<a href="${href}"><span>${escapeHtml(label)}</span><strong>${escapeHtml(title)}</strong>${description ? `<em>${escapeHtml(description)}</em>` : ""}</a>`)
           .join("")}</div>
       </section>`;
 }
@@ -5692,6 +5907,8 @@ function blogIndex() {
     ["Tile", "tile"],
     ["PDF Scan", "pdf-scan"],
     ["SnapReceipt", "snapreceipt"],
+    ["SnapLabel", "snaplabel"],
+    ["Private Meeting", "private-meeting"],
     ["Cadenza", "cadenza"],
     ["Tinnitus", "tinnitus"]
   ];
@@ -5706,7 +5923,7 @@ function blogIndex() {
 <html lang="en">
 ${head({
     title: "Blogs | WoodCutTool",
-    description: "Research-style articles about CutList optimization, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
+    description: "Research-style articles about CutList optimization, SnapLabel photo labels, private meeting transcription, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
     canonical: "https://woodcuttool.com/blog/"
   })}
 <body>
@@ -5726,7 +5943,7 @@ ${head({
           <div class="blog-directory-content">
           <label class="blog-search">
             <span>Search the library</span>
-            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search CutList, PDF Scan, Cadenza, QuiltFit...">
+            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search CutList, SnapLabel, Private Meeting...">
           </label>
           <nav class="blog-directory-nav" aria-label="Blog topic shortcuts">
             ${categoryLinks}
@@ -5751,8 +5968,8 @@ ${head({
       <div class="blog-hero-copy">
         <p class="breadcrumb"><a href="/">Home</a> / Blogs</p>
         <p class="eyebrow">Industry research library</p>
-        <h1>Research notes for builders, makers, document workflows, musicians, wellness apps, and layout-obsessed planners.</h1>
-        <p class="lead">Deeper articles on CutList optimization, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
+        <h1>Research notes for builders, makers, document workflows, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.</h1>
+        <p class="lead">Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
       </div>
       <div class="blog-console" aria-label="Blog topic map">
         <div class="console-top"><span></span><span></span><span></span></div>
@@ -5774,6 +5991,9 @@ ${head({
       <a href="#stairs">Stairs</a>
       <a href="#tile">Tile</a>
       <a href="#pdf-scan">PDF Scan</a>
+      <a href="#snapreceipt">SnapReceipt</a>
+      <a href="#snaplabel">SnapLabel</a>
+      <a href="#private-meeting">Private Meeting</a>
       <a href="#cadenza">Cadenza</a>
       <a href="#tinnitus">Tinnitus</a>
     </section>
@@ -5810,6 +6030,16 @@ ${head({
     <section class="blog-section" id="snapreceipt" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">SnapReceipt</p><h2>Receipt tracking, mileage logs, and private expense records for contractors, makers, and small business.</h2></div>
       <div class="blog-grid">${articles.filter((article) => article.category === "SnapReceipt").map(articleCard).join("\n        ")}</div>
+    </section>
+
+    <section class="blog-section" id="snaplabel" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">SnapLabel</p><h2>AI photo label making, printable labels, batch labels, and organization workflows.</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === "SnapLabel").map(articleCard).join("\n        ")}</div>
+    </section>
+
+    <section class="blog-section" id="private-meeting" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">Private Meeting</p><h2>Private meeting transcription, speaker labels, offline notes, interviews, lectures, and voice-to-text workflows.</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === "Private Meeting").map(articleCard).join("\n        ")}</div>
     </section>
 
     <section class="blog-section" id="cadenza" data-blog-section>
@@ -5969,7 +6199,17 @@ const zhArticleTitles = {
   "scan-to-pdf-workflow-receipts-invoices-signatures-lock": "Scan To PDF 工作流：收据、发票、签名、PDF 加锁和项目整理",
   "best-metronome-app-daily-practice-cadenza": "日常练习最佳节拍器 App：速度、Tap Tempo、重音和曲目单",
   "guitar-tuner-app-cents-a4-reference-cadenza": "吉他调音器 App 指南：音分、A4 参考音、半音阶调音和 Drone",
-  "music-practice-tracker-setlist-metronome-tuner-cadenza": "音乐练习追踪流程：曲目单、速度笔记、调音和日常重复"
+  "music-practice-tracker-setlist-metronome-tuner-cadenza": "音乐练习追踪流程：曲目单、速度笔记、调音和日常重复",
+  "snaplabel-ai-photo-label-maker-guide": "AI 照片标签制作指南：用 SnapLabel 把图片变成可打印标签",
+  "snaplabel-home-organization-labels": "从照片制作家庭收纳标签：储物箱、架子和食品柜",
+  "snaplabel-small-business-product-labels": "小企业照片标签 App：商品标签、库存盒和可打印标签",
+  "snaplabel-batch-labels-for-inventory": "从照片批量制作标签：库存和收纳的更快流程",
+  "snaplabel-printable-label-workflow": "可打印标签流程：从相册到清晰标签只需几分钟",
+  "private-meeting-transcriber-offline-guide": "离线会议转写指南：不上传的私密语音转文字",
+  "priviscribe-speaker-labeling-meeting-notes": "会议笔记中的说话人标记：不上传也能知道谁说了什么",
+  "private-interview-transcription-app": "私密采访转写 App：在设备端录音、转写和复盘",
+  "lecture-transcription-app-for-students": "学生课堂转写 App：离线笔记、复盘和学习",
+  "voice-notes-to-text-private-workflow": "语音备忘录转文字：想法、任务和跟进的私密流程"
 };
 
 const zhCategory = {
@@ -5979,6 +6219,8 @@ const zhCategory = {
   Tile: "瓷砖",
   "PDF Scan": "PDF 扫描",
   SnapReceipt: "SnapReceipt",
+  SnapLabel: "SnapLabel",
+  "Private Meeting": "私密会议转写",
   Cadenza: "Cadenza",
   Tinnitus: "耳鸣",
   "Classic guide": "经典指南"
@@ -6035,6 +6277,26 @@ const zhSectionTemplates = {
     ],
     checklist: ["确认文件要 PDF、图片、OCR 还是 CSV。", "检查裁切、方向和页面顺序。", "重要字段要人工复核。", "敏感 PDF 分享前考虑加锁。"]
   },
+  SnapLabel: {
+    headings: ["先拍清楚物品", "把 AI 建议当作初稿", "按场景统一命名", "打印前做最后检查"],
+    bodies: [
+      "标签流程从清楚的照片开始。物品、容器或商品越清晰，SnapLabel 越容易生成有用的标签初稿。",
+      "AI 识别可以先给出名称建议，但最终标签要按照你的收纳、商品、库存或办公场景修改成可读、可打印的文字。",
+      "家庭收纳、小企业库存、商品样品和办公文件都需要一致的命名规则。统一格式比单个标签更漂亮重要。",
+      "打印前检查拼写、数量、型号、类别和长度。实体标签一旦贴上去，修改成本比屏幕上高。"
+    ],
+    checklist: ["拍摄清楚的物品或容器照片。", "把 AI 识别结果改成最终标签。", "保持同一套命名规则。", "先测试一张再批量打印。"]
+  },
+  "Private Meeting": {
+    headings: ["先明确录音边界", "用清晰音频提高转写质量", "用说话人标记复盘", "只导出需要分享的内容"],
+    bodies: [
+      "会议、采访、课堂和语音备忘录可能包含客户信息、内部计划或个人内容。Priviscribe / Private Meeting Transcriber 的核心价值是设备端私密转写。",
+      "把手机放在能清楚收音的位置，每次会议或采访单独录制。清晰、分段的音频更容易复盘，也更容易管理。",
+      "转写后检查并重命名说话人。知道是谁提出问题、承诺事项或做出决定，会议笔记才真正可用。",
+      "分享前先判断对方需要摘要、动作项还是完整转写。私密工作流的重点是由用户决定哪些内容离开设备。"
+    ],
+    checklist: ["确认录音许可和用途。", "每场会议单独录制。", "复盘时重命名说话人。", "提取决定、问题和行动项。", "只导出必要内容。"]
+  },
   Cadenza: {
     headings: ["先保存练习目标", "用节拍器稳定节奏", "用调音器确认音准", "把设置留给下一次"],
     bodies: [
@@ -6062,6 +6324,8 @@ function zhKicker(article) {
   if (article.category === "Tile") return "瓷砖排版";
   if (article.category === "PDF Scan") return "PDF 扫描";
   if (article.category === "SnapReceipt") return "费用记录";
+  if (article.category === "SnapLabel") return "标签制作";
+  if (article.category === "Private Meeting") return "会议转写";
   if (article.category === "Cadenza") return "音乐练习";
   return "指南";
 }
@@ -6081,6 +6345,12 @@ function zhDescription(article) {
   }
   if (article.category === "PDF Scan") {
     return `围绕“${zhTitle(article)}”的 PDF 扫描流程，帮助用户把纸质文档、收据、发票、合同、证件、签名和 OCR 文本整理成私密、可分享的文件。`;
+  }
+  if (article.category === "SnapLabel") {
+    return `围绕“${zhTitle(article)}”的标签制作流程，帮助用户把照片、AI 识别、文字编辑、分类和打印串成更快的收纳或商品标签工作流。`;
+  }
+  if (article.category === "Private Meeting") {
+    return `围绕“${zhTitle(article)}”的私密会议转写流程，帮助用户在设备端处理会议、采访、课堂和语音备忘录，并复盘说话人与行动项。`;
   }
   if (article.category === "Cadenza") {
     return `围绕“${zhTitle(article)}”的音乐练习流程，帮助演奏者把节拍器、调音器、曲目单、速度笔记和离线隐私放在同一个练习工具里。`;
@@ -6324,19 +6594,31 @@ function toTraditional(text) {
 }
 
 function generateBlogTranslations() {
+  const topicCount = new Set(articles.map((article) => article.category)).size;
   const zhCN = {
     "Research notes for builders, makers, and layout-obsessed planners.": "给建造者、手作爱好者和排版控的研究笔记。",
+    "Research notes for builders, makers, document workflows, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、文档流程、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
     "Deeper articles on CutList optimization, QuiltFit planning, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、QuiltFit 规划、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
+    "Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、SnapLabel 照片标签、私密会议转写、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Sheet optimization and shop workflow.": "板材优化与工坊流程。",
     "Digital quilt planning and fabric decisions.": "数字化拼布规划与布料决策。",
     "Stringer geometry, comfort, and remodel planning.": "楼梯梁几何、舒适度与改造规划。",
     "Tile layout, waste, joints, and wet-area planning.": "瓷砖排版、损耗、美缝与湿区规划。",
+    "Receipt tracking, mileage logs, and private expense records for contractors, makers, and small business.": "面向承包商、创作者和小企业的收据追踪、里程记录与私密费用记录。",
+    "AI photo label making, printable labels, batch labels, and organization workflows.": "AI 照片标签制作、可打印标签、批量标签和收纳流程。",
+    "Private meeting transcription, speaker labels, offline notes, interviews, lectures, and voice-to-text workflows.": "私密会议转写、说话人标签、离线笔记、采访、课堂和语音转文字流程。",
+    "Metronome, tuner, rhythm, intonation, and private music practice workflows.": "节拍器、调音器、节奏、音准和私密音乐练习流程。",
+    "Sound masking, sleep sounds, privacy, and evidence-aware app positioning.": "声音遮蔽、睡眠声音、隐私和基于证据边界的 App 定位。",
     "Existing WoodCutTool guides.": "已有 WoodCutTool 指南。",
     "research briefs": "研究简报",
     "planning disciplines": "规划领域",
+    "topic areas": "主题领域",
     "47 articles": "47 篇文章",
     "45 research briefs": "45 篇研究文章",
     "4 planning disciplines": "4 个规划领域",
+    [`${articles.length + oldGuides.length} articles`]: `${articles.length + oldGuides.length} 篇文章`,
+    [`${articles.length} research briefs`]: `${articles.length} 篇研究文章`,
+    [`${topicCount} topic areas`]: `${topicCount} 个主题领域`,
     "Core guides": "核心指南",
     "Classic guide": "经典指南",
     "Wood Cutting Calculator Guide": "木材切割计算器指南",
