@@ -4634,6 +4634,349 @@ const visualPatterns = [
   }
 ];
 
+articles.push(
+  {
+    slug: "plywood-cut-list-optimizer-for-cabinets",
+    category: "CutList",
+    title: "Plywood Cut List Optimizer For Cabinets: From Box Parts To Sheet Layout",
+    description: "A cabinet-focused guide to using a plywood cut list optimizer for sides, shelves, backs, stretchers, toe kicks, and finished panels before buying sheet goods.",
+    kicker: "Cabinet optimizer",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Cabinet Parts Need More Than Area Math", "A cabinet project may look simple in square feet, but the real layout depends on side panels, fixed shelves, adjustable shelves, backs, nailers, stretchers, toe kicks, and fillers. A plywood cut list optimizer helps prove that those rectangles fit on physical sheets instead of only adding up on paper."],
+      ["Group Parts By Material And Face Quality", "Finished ends, prefinished interiors, utility backs, and hidden stretchers should not be mixed blindly. Sort the cut list by material, thickness, face quality, and grain direction before optimizing. That keeps visible panels from being sacrificed for a small yield gain."],
+      ["Enter Quantities Instead Of Repeating Rows", "Repeated cabinet parts are where mistakes multiply. Enter one clean part with a quantity, then let the optimizer expand the list. This makes duplicate shelves and mirrored sides easier to audit before the layout is trusted."],
+      ["Review Sheet Count Before Waste Percent", "Waste percentage is useful, but cabinet makers buy full sheets. A layout that drops the job from four sheets to three is a stronger result than a layout that improves yield by a few points while requiring the same purchase."],
+      ["Use The Layout As A Shop Checklist", "After optimization, review cut order, narrow strips, and label names. A good cabinet layout should help the person at the saw identify parts quickly and keep repeated panels from being mixed."]
+    ],
+    checklist: ["Separate finished and hidden material groups.", "Use quantities for repeated shelves and sides.", "Prioritize sheet count before waste percentage.", "Review grain direction before cutting.", "Label parts directly from the optimized layout."]
+  },
+  {
+    slug: "how-many-plywood-sheets-for-cabinets",
+    category: "CutList",
+    title: "How Many Plywood Sheets Do I Need For Cabinets?",
+    description: "A practical method for estimating plywood sheet count for cabinet boxes, shelves, drawer parts, backs, fillers, and waste before the first cut.",
+    kicker: "Sheet count",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Start With A Complete Cabinet Part List", "The sheet count estimate is only as good as the part list. Include sides, bottoms, tops, fixed shelves, adjustable shelves, backs, nailers, stretchers, toe kicks, fillers, drawer box parts, and any test pieces the job requires."],
+      ["Use Area As The Lower Bound", "A 4 x 8 sheet contains 32 square feet before kerf, trimming, defects, and layout constraints. Add the area of all parts to estimate the theoretical minimum, but do not stop there. Rectangles still have to fit together on real sheets."],
+      ["Add Kerf And Rotation Rules", "Saw kerf consumes material between cuts, and visible grain may prevent rotation. Those two details can turn an area-feasible cabinet project into an extra-sheet project."],
+      ["Optimize To Confirm The Purchase", "Run the part list through a plywood layout tool before buying. The output should show required sheet count, yield, and offcuts. If the result is close to the edge, compare a small cabinet depth change or split a material group."],
+      ["Keep A Waste Buffer For Real Shops", "Even optimized jobs need room for damaged corners, miscuts, and future repairs. The goal is not to buy zero extra material; it is to avoid buying a full sheet because the plan was never tested."]
+    ],
+    checklist: ["List every cabinet part, including hidden pieces.", "Use 32 square feet per 4 x 8 sheet as only a starting point.", "Include kerf and grain constraints.", "Optimize before buying.", "Keep a realistic shop buffer."]
+  },
+  {
+    slug: "plywood-cutting-calculator-cost-savings",
+    category: "CutList",
+    title: "Plywood Cutting Calculator Cost Savings: How To Measure Dollars Saved",
+    description: "How to turn plywood layout results into cost savings by comparing sheet count, waste value, reusable offcuts, and revision time.",
+    kicker: "Cost savings",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Savings Start With The Sheet Price", "A plywood cutting calculator needs a material price to make savings visible. Enter the real sheet cost for birch plywood, MDF, melamine, or cabinet-grade stock so the layout can translate waste and sheet count into dollars."],
+      ["The Clearest Saving Is One Less Sheet", "If optimization moves a project from three sheets to two, the savings are easy: one sheet price, plus less handling and storage. This is the strongest ROI signal because it changes the purchase order."],
+      ["Waste Value Still Matters", "When sheet count does not change, compare the optimized waste value against a manual layout benchmark. A cleaner layout may leave larger reusable offcuts, lower scrap value, or reduce the chance of needing emergency replacement material."],
+      ["Revision Time Is Also A Cost", "Manual layout changes take time. When a calculator lets you test rotation, sheet size, part count, or cabinet depth in seconds, the saved planning time becomes part of the project economics."],
+      ["Use A Consistent Baseline", "Do not compare an optimized layout to a vague memory. Save the manual sheet count, expected waste, and material cost, then compare the optimized result against that baseline."]
+    ],
+    checklist: ["Enter real price per sheet.", "Track sheets before and after optimization.", "Compare waste value, not only waste percent.", "Count reusable offcuts separately from scrap.", "Save the baseline layout for fair comparison."]
+  },
+  {
+    slug: "cut-list-app-for-cabinet-makers",
+    category: "CutList",
+    title: "Cut List App For Cabinet Makers: What Features Actually Matter?",
+    description: "A feature guide for cabinet makers choosing a cut list app for plywood layouts, saved jobs, kerf, PDF export, and shop-ready part labels.",
+    kicker: "App features",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Cabinet Makers Need Saved Jobs", "A cabinet job changes after field measurements, client revisions, hardware choices, and finish decisions. A useful cut list app should save projects so the layout can be reopened instead of rebuilt from memory."],
+      ["Kerf And Rotation Must Be Explicit", "Kerf affects fit, and rotation affects grain. The app should let the maker set blade width and control whether parts may rotate. Hidden shelves and visible sides should not follow the same rule automatically."],
+      ["Visual Layout Beats A Plain Table", "A table of parts is useful, but it does not show blocked spaces, narrow strips, or offcut quality. Cabinet makers need a sheet preview that makes mistakes visible before stock reaches the saw."],
+      ["Export Keeps The Shop Moving", "PDF export, image export, or print support turns the layout into a shop document. The best workflow lets the maker carry the plan to the saw without retyping or screenshotting every detail."],
+      ["Offline Privacy Is A Practical Feature", "Many cabinet projects include client dimensions, addresses, and pricing. An offline app keeps sensitive project details on the device and avoids depending on a signal in the shop."]
+    ],
+    checklist: ["Require saved projects.", "Set kerf per blade.", "Control rotation by material group.", "Review visual sheet layouts.", "Export or print the cut plan."]
+  },
+  {
+    slug: "track-saw-plywood-cut-plan",
+    category: "CutList",
+    title: "Track Saw Plywood Cut Plan: Optimize Sheets Before Breaking Them Down",
+    description: "How to plan plywood cuts for a track saw workflow, including first rips, crosscuts, support, labeling, and offcut decisions.",
+    kicker: "Track saw workflow",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["A Track Saw Needs A Breakdown Strategy", "Track saw cutting often starts by reducing a full sheet into safer, smaller panels. The optimized layout should support that first breakdown instead of only chasing the tightest nesting pattern."],
+      ["Keep Large Stabilizing Cuts Early", "Long rips and full-width crosscuts are easier when the sheet still has mass and support. Avoid layouts that require fragile narrow strips at the start unless the material is well supported."],
+      ["Plan Kerf And Rail Clearance", "A track saw removes kerf and needs room for the rail, clamps, or anti-slip strips. Tight digital layouts should be reviewed for real handling space around the cut line."],
+      ["Label Parts As Soon As They Separate", "Cabinet sides, shelves, and backs can look identical during breakdown. Label each piece immediately with the cut number or part name from the layout."],
+      ["Use Offcuts Deliberately", "Track saw offcuts are often clean and rectangular. Mark reusable pieces by material and size so they can feed jigs, shelves, or drawer parts later."]
+    ],
+    checklist: ["Review the first breakdown cuts.", "Avoid fragile strips early.", "Include kerf and rail handling space.", "Label parts immediately.", "Save rectangular offcuts with dimensions."]
+  },
+  {
+    slug: "mdf-cut-list-optimizer",
+    category: "CutList",
+    title: "MDF Cut List Optimizer: Plan Heavy Sheet Goods With Less Waste",
+    description: "A practical guide to optimizing MDF sheets for shelves, painted cabinets, built-ins, templates, and shop fixtures.",
+    kicker: "MDF layout",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["MDF Changes The Handling Problem", "MDF is dense, heavy, and unforgiving at corners. A low-waste layout is not enough if it creates awkward pieces that are hard to move safely. Optimization should account for the person lifting and supporting the sheet."],
+      ["Painted Projects Can Allow Rotation", "Unlike visible plywood grain, painted MDF often allows more rotation freedom. Use that flexibility to improve yield, but still keep repeated shelves and doors aligned for easier batching."],
+      ["Dust And Edge Quality Matter", "MDF creates fine dust and fragile edges. Plan cuts so parts can be supported cleanly, and avoid unnecessary tiny strips that increase sanding and cleanup."],
+      ["Use The Optimizer Before Buying", "MDF is usually cheaper than premium plywood, but waste still adds weight, handling time, and disposal work. A cut list optimizer helps compare shelf spacing, cabinet depth, and sheet count before purchase."],
+      ["Separate Templates From Final Parts", "Shop templates and painted finished parts may use the same stock but different tolerances. Label them clearly so the layout does not treat every rectangle as equal."]
+    ],
+    checklist: ["Plan for heavy sheet handling.", "Allow rotation where finish permits.", "Avoid tiny MDF strips.", "Compare sheet count before buying.", "Separate templates from final parts."]
+  },
+  {
+    slug: "melamine-cutting-layout-chipout",
+    category: "CutList",
+    title: "Melamine Cutting Layout: Reduce Waste, Chipout, And Rework",
+    description: "How to plan melamine sheet cuts with face protection, edge quality, kerf, rotation, and clean part labeling.",
+    kicker: "Melamine planning",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Melamine Waste Is Often Rework", "Melamine can chip at the face, blow out at exits, or get damaged during handling. A layout that saves a little area but increases risky cuts may cost more in replacement parts."],
+      ["Choose Cut Direction Carefully", "Face orientation, blade quality, scoring cuts, and support all affect edge quality. Mark finished edges and visible faces before optimizing so the plan reflects real priorities."],
+      ["Batch Similar Rips", "Repeated shelves and cabinet parts are easier when similar widths are grouped. Batching can reduce fence changes and help keep edge quality consistent across the run."],
+      ["Keep Labels Off Finished Faces", "A shop-ready plan should label parts without damaging the visible surface. Use removable tape, back-side marks, or a label location rule."],
+      ["Compare Replacement Risk To Yield", "For melamine, the cheapest layout may not be the best layout. Leave enough handling room to prevent corner damage and recuts."]
+    ],
+    checklist: ["Mark visible faces and finished edges.", "Batch repeated widths.", "Use proper blade and support.", "Label without damaging faces.", "Reject layouts that create high rework risk."]
+  },
+  {
+    slug: "garage-cabinet-plywood-cut-list",
+    category: "CutList",
+    title: "Garage Cabinet Plywood Cut List: Plan Storage Cabinets Without Overbuying",
+    description: "A DIY guide to building garage cabinets with a plywood cut list, optimized sheet layout, and realistic offcut strategy.",
+    kicker: "Garage cabinets",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Measure The Storage First", "Garage cabinets should start with bins, tools, chargers, and bulky items, not a random cabinet depth. A useful cut list reflects what the storage must hold."],
+      ["Use Utility Parts Where They Belong", "Garage cabinets often mix visible doors with hidden structural panels. Use better plywood where it shows and utility material where it does not."],
+      ["Optimize Repeated Boxes", "Multiple cabinet boxes create repeated sides, bottoms, tops, shelves, and backs. Enter quantities carefully so the layout can batch same-size parts."],
+      ["Leave Useful Offcuts For Cleats", "Garage projects often need cleats, blocks, spacers, and tool holders. Offcuts are not automatically waste if they are large enough and labeled."],
+      ["Print Or Save The Cut Plan", "A garage build moves faster when the cut sequence is visible. Use a PDF or image export so the saw station has the same plan as the estimator."]
+    ],
+    checklist: ["Measure bins and tools first.", "Separate visible and utility stock.", "Enter repeated box parts as quantities.", "Save cleat-sized offcuts.", "Use a printed or saved cut plan."]
+  },
+  {
+    slug: "closet-shelving-cut-list-planner",
+    category: "CutList",
+    title: "Closet Shelving Cut List Planner: Sheets, Shelves, Dividers, And Waste",
+    description: "How to plan a closet shelving project with accurate parts, sheet count, adjustable shelves, vertical dividers, and clean cut layouts.",
+    kicker: "Closet shelving",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Closet Openings Are Rarely Perfect", "Measure width, height, depth, out-of-square corners, baseboards, and door trim. A closet shelving cut list should reflect the real opening, not the nominal wall size."],
+      ["Separate Fixed And Adjustable Shelves", "Fixed shelves may be structural while adjustable shelves can repeat. Label them differently so quantity changes do not affect the cabinet structure by accident."],
+      ["Account For Edge Treatment", "Edge banding, face frames, nosing, and finished fronts can change final dimensions. Include those choices before optimizing the sheet layout."],
+      ["Use A Layout To Test Shelf Depth", "A half-inch change in shelf depth can affect sheet count. Run alternatives before buying material, especially when the design is close to a sheet boundary."],
+      ["Keep Offcuts For Cleats And Spacers", "Closet projects need cleats, scribes, spacers, and blocking. Save rectangular offcuts that match those support tasks."]
+    ],
+    checklist: ["Measure the real closet opening.", "Label fixed and adjustable shelves separately.", "Include edge treatment decisions.", "Test shelf depth before buying.", "Reserve useful offcuts for supports."]
+  },
+  {
+    slug: "drawer-box-plywood-cut-list",
+    category: "CutList",
+    title: "Drawer Box Plywood Cut List: Optimize Sides, Fronts, Backs, And Bottoms",
+    description: "A drawer box planning guide for repeated plywood parts, bottom panels, slide clearances, grain rules, and optimized sheet layouts.",
+    kicker: "Drawer boxes",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Drawer Boxes Multiply Small Errors", "One drawer mistake is annoying; twelve drawer mistakes are expensive. A drawer box cut list needs exact quantities, clear part roles, and dimensions tied to the slide system."],
+      ["Start With Hardware Clearances", "Side-mount, undermount, and specialty slides all require different clearances. Confirm the finished drawer width before turning parts into a sheet layout."],
+      ["Group Repeated Sides And Backs", "Drawer sides, fronts, backs, and bottoms repeat across a cabinet run. Use quantities and labels so the optimizer can batch parts without losing part identity."],
+      ["Do Not Forget Bottom Panels", "Bottoms may use thinner plywood, captured grooves, or different material. Put them in the correct material group instead of mixing them with side stock."],
+      ["Use Labels To Prevent Assembly Mixups", "Drawer parts are similar. A cut plan with numbered parts helps the builder stack, label, and assemble sets without guessing."]
+    ],
+    checklist: ["Confirm slide clearance first.", "Separate bottom material if needed.", "Use quantities for repeated sides.", "Label drawer sets clearly.", "Verify one sample drawer before batch cutting."]
+  },
+  {
+    slug: "cabinet-door-panel-layout-grain",
+    category: "CutList",
+    title: "Cabinet Door Panel Layout: Grain Direction, Pairs, And Sheet Yield",
+    description: "How to plan cabinet door and panel layouts when grain direction, paired fronts, sheet yield, and visible faces all matter.",
+    kicker: "Door panels",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Visible Panels Need A Different Rule", "Door fronts, drawer fronts, and finished side panels are judged by appearance as much as fit. A layout that rotates every piece may improve yield but ruin the visual flow."],
+      ["Pair Doors Before Optimizing", "Bookmatched or visually paired doors should be planned together. Treat them as a design group, not separate anonymous rectangles."],
+      ["Lock Grain Where It Matters", "Disable rotation for visible grain parts and allow rotation for hidden backs or utility shelves. Mixed rules usually produce a better real-world layout than one global setting."],
+      ["Plan Around Defects And Figure", "Plywood veneer varies. Mark defects, attractive figure, and face orientation before final cutting so the optimizer does not become the only decision maker."],
+      ["Compare Yield Against Appearance", "A slightly lower yield can be correct if it preserves grain continuity across doors and drawer fronts. The goal is the best finished project, not the highest number."]
+    ],
+    checklist: ["Group paired doors.", "Lock grain on visible faces.", "Allow rotation only on hidden parts.", "Mark defects before cutting.", "Choose appearance over tiny yield gains."]
+  },
+  {
+    slug: "sheet-goods-estimator-before-home-center",
+    category: "CutList",
+    title: "Sheet Goods Estimator Before The Home Center: Buy Fewer Wrong Panels",
+    description: "A pre-shopping workflow for estimating plywood, MDF, melamine, and project panels before making a home center material run.",
+    kicker: "Before buying",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Estimate Before You Stand In The Aisle", "Material choices get worse when the cart is already loaded. Build a cut list at home, optimize the layout, and arrive with sheet count, thickness, and material notes already decided."],
+      ["Match Sheet Size To The Vehicle", "A perfect 4 x 8 plan is not useful if the sheet cannot be transported safely. Compare full-size sheets, project panels, and store cutting options before purchase."],
+      ["Include The Parts People Forget", "Backs, cleats, spacers, stretchers, test pieces, templates, and shelves often get added after the shopping list is made. Include them in the estimator so the first trip is realistic."],
+      ["Price The Actual Material", "Birch plywood, MDF, melamine, and sanded plywood have different costs. Use the correct price per sheet when comparing layout options."],
+      ["Keep The Optimized Plan On Your Phone", "A saved layout helps at the store when a panel size is unavailable. You can adjust stock assumptions instead of guessing from memory."]
+    ],
+    checklist: ["Optimize before shopping.", "Check transport constraints.", "Add hidden support parts.", "Use real price per sheet.", "Keep the plan available at the store."]
+  },
+  {
+    slug: "plywood-offcut-management-system",
+    category: "CutList",
+    title: "Plywood Offcut Management System: Turn Scraps Into Future Savings",
+    description: "A small-shop system for labeling, storing, and reusing plywood offcuts created by optimized sheet layouts.",
+    kicker: "Offcut system",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Offcuts Need Rules", "Without rules, offcuts become clutter. Decide the minimum size worth saving by material type, thickness, and common project needs."],
+      ["Label Material And Dimensions", "Every saved piece should show material, thickness, length, width, and date. A useful offcut is searchable without pulling every panel from the rack."],
+      ["Store By Thickness First", "Thickness mistakes are more costly than small size differences. Group offcuts by thickness and material, then sort by approximate size."],
+      ["Feed Offcuts Back Into Planning", "Before buying a new sheet, check whether a saved offcut can cover shelves, drawer parts, jigs, cleats, or templates. The savings appear only when the offcut is used."],
+      ["Review The Pile Monthly", "Offcuts that never get used still occupy space. Review and discard pieces below the shop threshold so the system stays honest."]
+    ],
+    checklist: ["Define minimum save size.", "Label every offcut.", "Sort by thickness and material.", "Check offcuts before buying.", "Clean out unusable scraps regularly."]
+  },
+  {
+    slug: "plywood-layout-mistakes-beginners",
+    category: "CutList",
+    title: "Plywood Layout Mistakes Beginners Make Before The First Cut",
+    description: "Common beginner plywood layout mistakes involving kerf, grain, repeated parts, offcuts, and sheet count, with fixes before cutting.",
+    kicker: "Beginner mistakes",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Trusting Area Instead Of Fit", "Beginners often add part areas and assume the project fits. Rectangles must fit on the sheet with real dimensions, not only total square inches."],
+      ["Ignoring Kerf", "Saw blades remove material. If kerf is ignored, the last part in a tight layout may be short or may not fit at all."],
+      ["Rotating Visible Grain By Accident", "Rotation is helpful for hidden parts, but visible plywood faces may look wrong when rotated. Decide which parts can rotate before optimizing."],
+      ["Forgetting Repeated Small Parts", "Stretchers, cleats, supports, backs, and test pieces are easy to forget. Add them before buying material."],
+      ["Saving Useless Offcuts", "Tiny scraps feel valuable in the moment but often become clutter. Save offcuts only when they have a realistic future use."]
+    ],
+    checklist: ["Check physical fit, not just area.", "Enter saw kerf.", "Lock grain on visible parts.", "Add hidden supports and test pieces.", "Save only useful offcuts."]
+  },
+  {
+    slug: "one-sheet-plywood-project-planner",
+    category: "CutList",
+    title: "One-Sheet Plywood Project Planner: Prove It Fits Before You Buy",
+    description: "How to plan one-sheet plywood projects with realistic parts, kerf, useful offcuts, and a visual layout before purchasing material.",
+    kicker: "One-sheet planner",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["One-Sheet Projects Need Discipline", "A project is not one-sheet just because the total area is under 32 square feet. The parts must fit around each other after kerf, grain direction, and trimming are considered."],
+      ["Start With The Largest Parts", "Large sides, tops, and backs usually decide whether the project is possible. Enter them first, then add shelves, rails, cleats, and smaller details."],
+      ["Use Dimensions That Can Actually Be Cut", "Leave room for the saw path and safe handling. A plan that technically fits but creates fragile strips may not be a good one-sheet project."],
+      ["Change The Design Before Buying", "If the layout barely fails, adjust depth, shelf count, back construction, or material thickness before purchasing. Small design changes can preserve the one-sheet goal."],
+      ["Keep The Final Layout As The Build Plan", "Once the project fits, use the visual layout as the cutting reference. Label parts as they come off the sheet so the project stays organized."]
+    ],
+    checklist: ["Test physical fit before buying.", "Place large parts first.", "Include kerf and handling room.", "Adjust design if the layout barely fails.", "Use the final layout at the saw."]
+  },
+  {
+    slug: "plywood-shelf-cut-list-calculator",
+    category: "CutList",
+    title: "Plywood Shelf Cut List Calculator: Plan Shelves, Supports, And Sheet Waste",
+    description: "A shelf-building guide for calculating plywood parts, repeated shelf quantities, dividers, cleats, supports, and optimized sheet layouts.",
+    kicker: "Shelf calculator",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Shelf Projects Are Repetition Problems", "A simple shelf wall may contain many identical shelves, dividers, side panels, backs, and cleats. A calculator helps turn those repeated parts into a clear sheet plan."],
+      ["Measure The Load And Span", "Shelf length and depth should reflect what the shelf will hold. Heavy storage, books, tools, and pantry goods may need different support spacing or material thickness."],
+      ["Enter Supports As Real Parts", "Cleats, stretchers, nosing, and dividers consume material. If they are not in the cut list, the sheet count is optimistic."],
+      ["Compare Shelf Depth Options", "Changing depth by an inch can change how shelves nest on a sheet. Test alternatives before locking the design."],
+      ["Use Offcuts For Blocking", "Shelf projects often need small blocks and spacers. Save rectangular offcuts that match those support tasks."]
+    ],
+    checklist: ["Use quantities for repeated shelves.", "Check load and span.", "Add cleats and supports.", "Compare depth options.", "Reserve useful offcuts."]
+  },
+  {
+    slug: "cut-list-pdf-for-workshop",
+    category: "CutList",
+    title: "Cut List PDF For The Workshop: What To Include Before Printing",
+    description: "A shop-ready checklist for cut list PDFs, including sheet layouts, part labels, dimensions, kerf, material, and cut sequence.",
+    kicker: "PDF cut plan",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["A PDF Should Be More Than A Screenshot", "A useful cut list PDF should include sheet layout, part list, dimensions, quantities, material, kerf, and a cut sequence. The goal is to remove guessing at the saw."],
+      ["Make Labels Match The Parts", "The label on the printed plan should match the label on the physical part. Short clear names reduce mixups when repeated shelves and sides stack up."],
+      ["Include Material And Thickness", "If a shop cuts plywood, MDF, and melamine in the same day, the PDF must show material and thickness clearly. A correct layout on the wrong stock is still wrong."],
+      ["Show Kerf Assumptions", "The saw blade used for the job should match the kerf in the plan. Include the kerf value so the shop can verify the setup before cutting."],
+      ["Keep The PDF With The Job Record", "After the build, the cut list PDF becomes useful documentation for repairs, repeat builds, or estimating similar projects."]
+    ],
+    checklist: ["Include sheet layout and part list.", "Use clear part labels.", "Show material and thickness.", "Print the kerf setting.", "Save the PDF with the job record."]
+  },
+  {
+    slug: "offline-cut-list-app-privacy",
+    category: "CutList",
+    title: "Offline Cut List App Privacy: Why Local Project Data Matters",
+    description: "Why an offline cut list app can protect project dimensions, client notes, pricing assumptions, and shop records while still improving layout speed.",
+    kicker: "Offline privacy",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Cut Lists Can Contain Sensitive Details", "A cut list may include client dimensions, room layouts, project names, material prices, and job notes. That information is not always something a builder wants in a cloud account."],
+      ["Offline Planning Keeps Work Moving", "Shops, garages, job sites, and lumber areas do not always have reliable internet. An offline cut list app keeps layout review available where the work happens."],
+      ["Local Data Reduces Account Friction", "No-login planning is faster for quick projects and safer for users who do not want another account. The project can stay on the device until the user chooses to export it."],
+      ["Exports Should Be User-Controlled", "PDF, image, and print export are useful because they happen intentionally. The user decides when a plan leaves the device."],
+      ["Privacy Should Not Remove Core Features", "An offline app can still support saved projects, sheet layouts, kerf, rotation, cost estimates, and shop-ready outputs. Privacy is a workflow choice, not a downgrade."]
+    ],
+    checklist: ["Treat project dimensions as private data.", "Use offline tools at the shop.", "Avoid account friction for quick jobs.", "Export only when needed.", "Keep core layout features local."]
+  },
+  {
+    slug: "plywood-waste-calculator-vs-optimizer",
+    category: "CutList",
+    title: "Plywood Waste Calculator vs Optimizer: Which One Do You Need?",
+    description: "A comparison of plywood waste calculators and sheet optimizers for estimating scrap, sheet count, cost, and physical layout fit.",
+    kicker: "Calculator vs optimizer",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["A Waste Calculator Measures A Result", "A plywood waste calculator compares used area against purchased area. It is useful for estimating scrap value, material efficiency, and cost after the stock quantity is known."],
+      ["An Optimizer Changes The Result", "A sheet optimizer tries to place parts on sheets and reduce the number of panels or waste. It answers a different question: how should the parts be arranged before cutting?"],
+      ["Use Waste Calculators For Baselines", "If you already know the sheet count, use a waste calculator to understand scrap cost. This is helpful for benchmarking project types or comparing estimates."],
+      ["Use Optimizers Before Buying", "If you do not know whether the project needs two sheets or three, use an optimizer first. It tests physical fit, kerf, rotation, and sheet boundaries."],
+      ["The Best Workflow Uses Both", "Optimize the layout, then calculate waste value and savings. That gives both the physical plan and the business result."]
+    ],
+    checklist: ["Use waste calculators for known stock quantities.", "Use optimizers before buying sheets.", "Compare sheet count first.", "Calculate waste value after layout.", "Save the optimized plan as the baseline."]
+  },
+  {
+    slug: "optimize-4x8-plywood-cuts-for-built-ins",
+    category: "CutList",
+    title: "Optimize 4x8 Plywood Cuts For Built-Ins: Shelves, Sides, Backs, And Fillers",
+    description: "How to optimize 4x8 plywood cuts for built-in cabinets, bookcases, mudrooms, closets, and wall storage projects.",
+    kicker: "Built-ins",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Built-Ins Have Site-Specific Parts", "Built-ins need scribes, fillers, backs, shelves, vertical dividers, face-frame parts, and sometimes odd-depth panels. Measure the site before assuming standard cabinet dimensions."],
+      ["A 4x8 Sheet Rewards Repeated Depths", "When shelf depths and cabinet sides share dimensions, a 4x8 layout often becomes cleaner. Random depth changes create awkward offcuts and extra cuts."],
+      ["Plan Fillers And Scribes Early", "Fillers are easy to treat as afterthoughts, but they consume material and may need grain or face quality. Include them in the optimized layout."],
+      ["Separate Paint-Grade And Stain-Grade Parts", "Paint-grade built-ins can allow more rotation, while stain-grade visible faces need grain planning. Splitting material groups prevents the optimizer from making the wrong visual tradeoff."],
+      ["Use The Layout To Adjust The Design", "If the layout creates poor yield, compare small changes in shelf depth, divider count, or back construction. Built-ins often have enough design flexibility to save a sheet."]
+    ],
+    checklist: ["Measure the site before planning.", "Keep repeated depths consistent.", "Include fillers and scribes.", "Separate paint-grade and stain-grade stock.", "Adjust design when the layout is inefficient."]
+  }
+);
+
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {
     question: "How should a builder prove that plywood optimization is saving money instead of just making a prettier layout?",

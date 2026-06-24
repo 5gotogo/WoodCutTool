@@ -3595,14 +3595,17 @@ tr:last-child td {
 
 .blog-search input {
   min-height: 45px;
-  padding-left: 38px;
-  background:
-    radial-gradient(circle at 19px 20px, transparent 0 5px, var(--accent) 5px 6px, transparent 6px),
-    linear-gradient(45deg, transparent 0 55%, var(--accent) 55% 62%, transparent 62%),
-    #fff;
-  background-size: 28px 28px, 24px 24px, auto;
-  background-position: 7px 8px, 17px 18px, 0 0;
-  background-repeat: no-repeat;
+  padding-left: 14px;
+  background: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.blog-search input::-webkit-search-decoration,
+.blog-search input::-webkit-search-cancel-button,
+.blog-search input::-webkit-search-results-button,
+.blog-search input::-webkit-search-results-decoration {
+  display: none;
 }
 
 .blog-directory-nav {
