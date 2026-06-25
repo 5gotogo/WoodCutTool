@@ -6,6 +6,7 @@ import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260623-seo-feed";
 const siteUrl = "https://woodcuttool.com";
+const appStoreApps = JSON.parse(readFileSync(join(root, "data/app-store-apps.json"), "utf8"));
 
 
 const articles = [
@@ -6224,6 +6225,306 @@ articles.push(
   }
 );
 
+const generatedAppBlogDefinitions = [
+  {
+    category: "Contacts Backup",
+    zhCategory: "通讯录备份",
+    appSlug: "export-backup-all-contacts-pro",
+    accent: "tile",
+    sectionId: "contacts-backup",
+    sectionDescription: "Contact backup, Excel export, CSV, vCard, duplicate cleanup, import, restore, and private address book workflows.",
+    relatedDescription: "Open the Export Backup All Contacts Pro app detail page for contact export, backup, restore, duplicate cleanup, CSV, Excel, vCard, JSON, and private address book control.",
+    posts: [
+      ["contact-backup-app-iphone-excel-csv-vcard", "Contact Backup App For iPhone: Export To Excel, CSV, vCard, And JSON", "How to back up iPhone contacts with clean exports for spreadsheets, address books, CRM handoff, migration, and private local records.", "Contact backup", "address book backup", ["Full backup", "Selected export", "Excel", "vCard", "Restore"]],
+      ["export-contacts-to-excel-csv-workflow", "Export Contacts To Excel Or CSV: A Cleaner Workflow For Phonebook Data", "A practical workflow for exporting selected contacts, custom fields, photos, groups, tags, and cleaned contact lists into spreadsheet-ready files.", "Excel export", "spreadsheet export", ["Field choice", "Duplicates", "Photos", "CSV", "Review"]],
+      ["merge-duplicate-contacts-private-backup", "Merge Duplicate Contacts Before Backup: Privacy-First Cleanup Checklist", "How to find duplicate contacts, incomplete records, invalid emails, and messy phone numbers before creating a private backup file.", "Duplicate cleanup", "contact cleanup", ["Duplicates", "Invalid email", "Missing names", "Tags", "Backup"]]
+    ]
+  },
+  {
+    category: "MarketVendor",
+    zhCategory: "摊位销售",
+    appSlug: "marketvendor-sales-and-profit",
+    accent: "cutlist",
+    sectionId: "marketvendor",
+    sectionDescription: "Market stall sales ledgers, profit tracking, cash and card totals, menu item insights, locations, PDF reports, and private vendor records.",
+    relatedDescription: "Open the MarketVendor app detail page for daily sales, costs, profit margin, cash/card split, menu items, locations, charts, CSV export, and private vendor records.",
+    posts: [
+      ["market-vendor-sales-tracker-daily-ledger", "Market Vendor Sales Tracker: Daily Cash, Card, Costs, And Profit", "How a private daily ledger helps market vendors, food trucks, and pop-up sellers record sales and understand real profit after costs.", "Sales tracker", "daily sales ledger", ["Cash", "Card", "Costs", "Profit", "Notes"]],
+      ["food-truck-profit-margin-app", "Food Truck Profit Margin App: Track Ingredients, Fees, And Real Daily Profit", "A practical profit workflow for sellers who need to compare revenue against ingredient costs, stall fees, fuel, and other daily expenses.", "Profit margin", "food truck profit", ["Revenue", "Ingredients", "Fees", "Fuel", "Margin"]],
+      ["market-stall-best-sellers-location-report", "Market Stall Best Sellers And Location Reports: Know Which Spots Pay Off", "How to review top-selling items, compare locations, and export market sales history for bookkeeping without heavy POS software.", "Location reports", "vendor reports", ["Locations", "Best sellers", "Weekdays", "CSV", "PDF"]]
+    ]
+  },
+  {
+    category: "SnapCleaner",
+    zhCategory: "照片清理",
+    appSlug: "snapcleaner-clean-photos",
+    accent: "tile",
+    sectionId: "snapcleaner",
+    sectionDescription: "iPhone storage cleanup, duplicate photos, similar images, video compression, file cleanup, contact cleanup, and private on-device scans.",
+    relatedDescription: "Open the SnapCleaner app detail page for duplicate photo cleanup, similar image detection, video compression, file scanning, contact cleanup, and private iPhone storage management.",
+    posts: [
+      ["iphone-photo-cleaner-duplicate-similar-pictures", "iPhone Photo Cleaner: Find Duplicate And Similar Pictures Before Storage Runs Out", "How SnapCleaner helps review duplicate photos, similar shots, blurry images, screenshots, and media clutter with an on-device cleanup flow.", "Photo cleaner", "duplicate photo cleanup", ["Duplicates", "Similar", "Screenshots", "Blurry", "Review"]],
+      ["video-compression-cleanup-iphone-storage", "Video Compression Cleanup: Reclaim iPhone Storage Without Losing Important Clips", "A workflow for finding large videos, compressing files, checking quality, and saving space before travel, work, or another photo-heavy week.", "Video cleanup", "video compression", ["Large videos", "Compress", "Preview", "Save", "Delete"]],
+      ["private-iphone-storage-cleanup-ai-scan", "Private iPhone Storage Cleanup: AI Scans Without Uploading Your Photos", "Why photo cleanup, contact cleanup, file scans, and metadata removal should stay on device when personal media is involved.", "Private cleanup", "on-device cleanup", ["On device", "No login", "Metadata", "Contacts", "Files"]]
+    ]
+  },
+  {
+    category: "PhotoSafe",
+    zhCategory: "照片保险箱",
+    appSlug: "photosafe-private-photo-vault",
+    accent: "cutlist",
+    sectionId: "photosafe",
+    sectionDescription: "Private photo vaults, encrypted media, Face ID locks, PIN protection, decoy vaults, intruder alerts, and local photo privacy.",
+    relatedDescription: "Open the PhotoSafe app detail page for encrypted private photo vaults, Face ID, PIN, fake vault, intruder alerts, disguised icon, local storage, and no cloud upload.",
+    posts: [
+      ["private-photo-vault-iphone-guide", "Private Photo Vault For iPhone: Keep Sensitive Photos Out Of The Camera Roll", "How to use a private photo vault for personal media, ID scans, receipts, screenshots, travel documents, and local encrypted storage.", "Photo vault", "private photo vault", ["Import", "Lock", "Encrypt", "Delete original", "Browse"]],
+      ["encrypted-video-photo-vault-local-storage", "Encrypted Photo And Video Vault: Why Local Storage Matters For Private Media", "A privacy-first explanation of on-device encryption, PIN access, Face ID, media separation, and no-cloud vault workflows.", "Encrypted vault", "encrypted photo vault", ["AES vault", "PIN", "Face ID", "No cloud", "Local files"]],
+      ["fake-pin-disguised-icon-intruder-alert-photo-vault", "Fake PIN, Disguised Icon, And Intruder Alert: Extra Layers For A Photo Vault", "How optional privacy layers help reduce casual exposure without turning a private gallery into a complicated security system.", "Vault privacy", "fake PIN vault", ["Fake PIN", "Disguise", "Intruder", "Log", "Control"]]
+    ]
+  },
+  {
+    category: "Printer App",
+    zhCategory: "手机打印",
+    appSlug: "printer-app-print-pdf-docs",
+    accent: "tile",
+    sectionId: "printer-app",
+    sectionDescription: "Mobile printing, AirPrint, PDF documents, photos, web pages, scan-to-print workflows, page preview, and private local print jobs.",
+    relatedDescription: "Open the Printer App detail page for printing PDFs, documents, photos, web pages, scan-to-PDF, AirPrint, page preview, layouts, and private mobile printing.",
+    posts: [
+      ["print-pdf-documents-iphone-airprint-guide", "Print PDF Documents From iPhone: AirPrint Workflow For Work, School, And Home", "A practical guide to printing PDFs, Word files, text documents, tickets, forms, and confirmations from iPhone with page preview and settings.", "Print PDF", "iPhone PDF printing", ["Import", "Preview", "Page range", "Copies", "Print"]],
+      ["scan-to-print-app-iphone-paperwork", "Scan To Print App: Turn Paperwork Into Clean PDFs And Printed Pages", "How to scan receipts, forms, notes, IDs, and documents with a camera, review pages, then print or save a PDF locally.", "Scan to print", "scan and print", ["Scan", "Crop", "PDF", "Preview", "Print"]],
+      ["print-photos-web-pages-iphone-layouts", "Print Photos And Web Pages On iPhone: Layouts, Captions, And Cleaner Output", "How to print photo sheets, web pages, image grids, and multi-image layouts without wasting paper or uploading files to a server.", "Photo printing", "mobile print layouts", ["Photos", "Web page", "Grid", "Captions", "Save PDF"]]
+    ]
+  },
+  {
+    category: "PickOne",
+    zhCategory: "随机选择",
+    appSlug: "pickone-random-choice-picker",
+    accent: "cadenza",
+    sectionId: "pickone",
+    sectionDescription: "Random choice picker, weighted decisions, spin wheel lists, decision history, reflection prompts, and private everyday choice workflows.",
+    relatedDescription: "Open the PickOne app detail page for random choice picking, weighted decisions, spin wheel lists, daily reflection prompts, decision history, insights, and private on-device records.",
+    posts: [
+      ["random-choice-picker-app-daily-decisions", "Random Choice Picker App: Make Daily Decisions Without Overthinking", "How a random choice picker helps decide meals, errands, routines, study tasks, family options, and group choices while keeping a record.", "Random picker", "random choice picker", ["Options", "Spin", "Result", "History", "Review"]],
+      ["weighted-decision-maker-app", "Weighted Decision Maker: When Random Choices Need Priority And Probability", "How weighted decisions can make options feel fairer when some choices matter more than others but you still want a quick result.", "Weighted choices", "weighted decision maker", ["Weight", "Priority", "Probability", "Result", "Adjust"]],
+      ["decision-history-insights-private-choice-tracker", "Decision History And Insights: A Private Choice Tracker For Everyday Patterns", "Why decision history, option lists, and reflection prompts can help people notice patterns without turning choices into a cloud profile.", "Choice tracker", "decision history", ["History", "Patterns", "Prompts", "Privacy", "No login"]]
+    ]
+  },
+  {
+    category: "SnapStock",
+    zhCategory: "库存扫描",
+    appSlug: "snapstock-inventory-scanner",
+    accent: "tile",
+    sectionId: "snapstock",
+    sectionDescription: "Inventory scanner workflows, barcode counts, low-stock alerts, quantity history, product photos, notes, CSV export, and private stock control.",
+    relatedDescription: "Open the SnapStock app detail page for barcode inventory scanning, quantity updates, low-stock thresholds, stock history, product photos, notes, CSV export, and no-login local records.",
+    posts: [
+      ["inventory-scanner-app-small-business", "Inventory Scanner App For Small Business: Count Products Without Heavy Stock Software", "How a simple inventory scanner helps small shops, pop-up stores, workshops, classrooms, and storage rooms count products quickly.", "Inventory scanner", "small business inventory", ["Scan", "Create item", "Quantity", "Search", "Export"]],
+      ["barcode-stock-count-app-low-stock-alerts", "Barcode Stock Count App: Scan, Update Quantity, And Catch Low Stock Early", "A barcode workflow for adding products, increasing and decreasing quantities, setting low-stock thresholds, and reviewing activity history.", "Barcode stock", "barcode inventory", ["Barcode", "Plus/minus", "Threshold", "History", "Search"]],
+      ["private-inventory-csv-export-no-login", "Private Inventory CSV Export: No-Login Stock Records You Control", "Why product names, barcodes, quantities, supplier notes, and CSV exports should stay under user control for small inventory workflows.", "CSV export", "private inventory", ["Local data", "CSV", "Notes", "Photos", "No cloud"]]
+    ]
+  },
+  {
+    category: "Magnifier Reader",
+    zhCategory: "放大阅读",
+    appSlug: "magnifier-reader-big-text",
+    accent: "cutlist",
+    sectionId: "magnifier-reader",
+    sectionDescription: "Magnifier, big text reader, read aloud, high contrast, medicine label reading, reminders, senior-friendly controls, and private local reading help.",
+    relatedDescription: "Open the Magnifier Reader app detail page for camera magnifier, big text reader, read aloud, high contrast settings, simple reminders, and private on-device reading help.",
+    posts: [
+      ["magnifier-reader-app-small-print-guide", "Magnifier Reader App: Read Small Print, Labels, Menus, And Notices More Comfortably", "How a phone magnifier and big text reader can help with small print, packaging, bills, menus, appliance panels, and everyday reading.", "Magnifier", "small print reader", ["Zoom", "Flashlight", "Contrast", "Reader", "Read aloud"]],
+      ["big-text-reader-for-seniors-iphone", "Big Text Reader For Seniors: Larger Type, Read Aloud, And Simple Controls", "A senior-friendly reading workflow for pasted text, long messages, reminders, contrast modes, and fewer confusing app screens.", "Big text", "reader for seniors", ["Large type", "Line spacing", "Read aloud", "Contrast", "Simple home"]],
+      ["medicine-label-reminder-helper-privacy", "Medicine Label And Reminder Helper: Clearer Reading Without A Cloud Account", "A practical, non-medical workflow for reading labels, copying notes, and setting simple reminders while keeping personal text on device.", "Reminder helper", "medicine label reader", ["Label", "Note", "Reminder", "Privacy", "Offline"]]
+    ]
+  },
+  {
+    category: "MindNest",
+    zhCategory: "私密日记",
+    appSlug: "mindnest-secret-journal",
+    accent: "tile",
+    sectionId: "mindnest",
+    sectionDescription: "Private journaling, offline diary entries, secure thoughts, writing prompts, mood reflection, search, themes, and no-login local notes.",
+    relatedDescription: "Open the MindNest app detail page for private offline journaling, secure local entries, writing prompts, mood-guided reflection, themes, search, and no-login diary workflows.",
+    posts: [
+      ["secret-journal-app-private-offline-writing", "Secret Journal App: Private Offline Writing Without Accounts Or Cloud Sync", "How a private journal app helps protect thoughts, daily notes, reflections, and personal writing on device without requiring an account.", "Secret journal", "private journal app", ["Write", "Store local", "Search", "Theme", "Reflect"]],
+      ["offline-diary-app-for-stress-reflection", "Offline Diary App For Reflection: Clear Your Mind With A Local Journal", "A calm journaling workflow for organizing thoughts, recording emotions, using prompts, and reviewing entries without uploading private writing.", "Offline diary", "offline journal", ["Prompt", "Entry", "Mood", "Review", "Privacy"]],
+      ["journal-prompts-mood-search-private-notes", "Journal Prompts, Mood Notes, And Search: Make Private Writing Easier To Revisit", "Why prompts, themes, search, and organization tools matter when a journal becomes a long-term personal record.", "Journal prompts", "mood journal", ["Prompts", "Mood", "Search", "Themes", "History"]]
+    ]
+  },
+  {
+    category: "Ritualix",
+    zhCategory: "习惯打卡",
+    appSlug: "ritualix-habits-and-streaks",
+    accent: "cadenza",
+    sectionId: "ritualix",
+    sectionDescription: "Habit tracking, streaks, Pomodoro focus sessions, AI habit plans, streak freeze, widgets, weekly review, and private routine building.",
+    relatedDescription: "Open the Ritualix app detail page for habit tracking, streaks, AI habit plans, Pomodoro focus, streak freeze, widgets, weekly review, and privacy-first routine building.",
+    posts: [
+      ["habit-tracker-app-streaks-without-stress", "Habit Tracker App: Build Streaks Without Turning Routines Into Stress", "How a lightweight habit tracker helps build small actions, maintain streaks, and review consistency without noisy dashboards.", "Habit tracker", "habit tracker app", ["Tiny action", "Check-in", "Streak", "Reminder", "Review"]],
+      ["pomodoro-habit-planner-focus-sessions", "Pomodoro Habit Planner: Use Focus Sessions To Support Daily Routines", "A workflow for pairing habits with focus timers, study blocks, deep work sessions, and simple reminders that keep momentum visible.", "Focus sessions", "Pomodoro habit", ["Plan", "Timer", "Check-in", "Break", "Repeat"]],
+      ["streak-freeze-weekly-review-habit-system", "Streak Freeze And Weekly Review: A More Forgiving Habit System", "Why streak protection, weekly reflection, trends, widgets, and bite-size habit plans can support consistency without all-or-nothing pressure.", "Streak freeze", "weekly habit review", ["Freeze", "Widget", "Trend", "Weekly review", "Adjust"]]
+    ]
+  },
+  {
+    category: "Invoice Maker",
+    zhCategory: "发票报价",
+    appSlug: "invoice-maker-estimate-pdf",
+    accent: "cutlist",
+    sectionId: "invoice-maker",
+    sectionDescription: "Invoice maker workflows, estimate PDFs, client billing, paid status tracking, taxes, discounts, item lines, and private small-business records.",
+    relatedDescription: "Open the Invoice Maker app detail page for invoices, estimates, client billing, PDF export, payment status tracking, line items, tax, discounts, and private business records.",
+    posts: [
+      ["invoice-maker-app-freelancers-contractors", "Invoice Maker App For Freelancers And Contractors: Create Clean PDF Bills Fast", "How a private invoice maker helps service providers create invoices, add line items, track totals, and send professional PDF bills.", "Invoice maker", "invoice app", ["Client", "Line items", "Tax", "PDF", "Send"]],
+      ["estimate-pdf-app-small-business-quotes", "Estimate PDF App: Send Small Business Quotes Before The Job Starts", "A practical estimate workflow for quotes, project scopes, materials, labor, taxes, discounts, and converting accepted estimates into invoices.", "Estimate PDF", "estimate app", ["Scope", "Materials", "Labor", "Discount", "Approve"]],
+      ["paid-status-invoice-tracking-private-billing", "Paid Status Tracking: Keep Invoice Records Private And Easy To Review", "Why paid, unpaid, overdue, client history, and PDF export records matter for freelancers without requiring a cloud billing account.", "Paid tracking", "invoice tracking", ["Unpaid", "Paid", "Overdue", "Client", "Archive"]]
+    ]
+  },
+  {
+    category: "Expense Report",
+    zhCategory: "报销报告",
+    appSlug: "expensereportmaker-and-receipts",
+    accent: "tile",
+    sectionId: "expense-report",
+    sectionDescription: "Expense report making, receipt capture, reimbursement reports, travel spending, client visits, PDF export, CSV handoff, and private records.",
+    relatedDescription: "Open the Expense Report Maker app detail page for receipt capture, expense organization, reimbursement-ready reports, travel records, PDF export, CSV export, and private local expense workflows.",
+    posts: [
+      ["expense-report-maker-receipts-workflow", "Expense Report Maker: Turn Receipts Into Reimbursement-Ready Reports", "How to capture receipts, categorize expenses, review totals, and create clean reports for reimbursement without building a spreadsheet.", "Expense report", "expense report maker", ["Receipt", "Category", "Project", "Total", "Report"]],
+      ["business-travel-expense-report-app", "Business Travel Expense Report App: Track Meals, Transport, Hotels, And Client Visits", "A travel expense workflow for keeping receipts, notes, dates, categories, and report exports organized during busy work trips.", "Travel expenses", "business travel report", ["Meals", "Transport", "Hotel", "Client", "Export"]],
+      ["receipt-report-pdf-csv-private-records", "Receipt Report PDF And CSV Export: Private Records For Admin Handoff", "Why reimbursement records should be reviewed locally, exported deliberately, and organized by trip, client, project, or month.", "PDF and CSV", "receipt report export", ["PDF", "CSV", "ZIP", "Review", "Share"]]
+    ]
+  },
+  {
+    category: "SignatureMark",
+    zhCategory: "水印签名",
+    appSlug: "signaturemark-brand-mark",
+    accent: "cadenza",
+    sectionId: "signaturemark",
+    sectionDescription: "Watermark design, signature marks, creator branding, logo overlays, photo protection, batch export, and consistent visual identity.",
+    relatedDescription: "Open the SignatureMark app detail page for creator watermarks, signature marks, brand overlays, logo placement, batch export, and private photo branding workflows.",
+    posts: [
+      ["watermark-app-creators-signature-brand", "Watermark App For Creators: Add A Signature Brand Mark To Photos", "How SignatureMark helps creators add readable watermarks, signatures, logos, and brand marks before sharing images online.", "Watermark app", "creator watermark", ["Signature", "Logo", "Opacity", "Position", "Export"]],
+      ["photo-signature-logo-overlay-workflow", "Photo Signature And Logo Overlay Workflow: Keep Branding Consistent", "A practical branding workflow for choosing placement, sizing, color, transparency, and export settings across repeated creator images.", "Logo overlay", "photo signature", ["Placement", "Scale", "Color", "Template", "Batch"]],
+      ["protect-creator-photos-private-watermarking", "Protect Creator Photos With Private Watermarking Before Posting", "Why watermarking should happen before public sharing, with local image handling and consistent exports for portfolios, products, and social posts.", "Photo protection", "private watermarking", ["Local edit", "Template", "Preview", "Export", "Archive"]]
+    ]
+  },
+  {
+    category: "GlowFeel",
+    zhCategory: "压力舒缓",
+    appSlug: "glowfeel-stress-ease",
+    accent: "tile",
+    sectionId: "glowfeel",
+    sectionDescription: "Stress ease workflows, private journaling, breathing, grounding exercises, emotion expression, daily messages, and gentle self-reflection.",
+    relatedDescription: "Open the GlowFeel app detail page for private stress-ease journaling, breathing, grounding exercises, emotion expression, daily messages, and offline on-device reflection.",
+    posts: [
+      ["stress-ease-app-private-journal-breathing", "Stress Ease App: Private Journaling, Breathing, And A Quieter Daily Reset", "A non-clinical self-reflection workflow for breathing, naming emotions, writing a short note, and keeping personal entries local.", "Stress ease", "stress ease app", ["Breathe", "Name feeling", "Journal", "Ground", "Review"]],
+      ["grounding-exercises-app-daily-calm", "Grounding Exercises App: Small Steps For A Calmer Moment", "How a grounding workflow can help users slow down, notice their surroundings, and return to the day without medical or treatment claims.", "Grounding", "grounding exercises", ["Notice", "Breathe", "Prompt", "Message", "Reset"]],
+      ["private-mood-journal-no-cloud-upload", "Private Mood Journal: Keep Feelings, Notes, And Reflections On Device", "Why emotional notes, daily messages, expression history, and privacy settings should stay under user control in a wellness app.", "Mood journal", "private wellness journal", ["Mood", "Entry", "History", "Privacy", "No cloud"]]
+    ]
+  },
+  {
+    category: "Fast Rhythm",
+    zhCategory: "轻断食睡眠",
+    appSlug: "fast-rhythm-fasting-and-sleep",
+    accent: "cutlist",
+    sectionId: "fast-rhythm",
+    sectionDescription: "Fasting timers, sleep rhythm logs, weekly reports, metabolic rhythm score, streaks, private health-adjacent routines, and no-login tracking.",
+    relatedDescription: "Open the Fast Rhythm app detail page for fasting timers, sleep logs, weekly rhythm reports, streaks, achievements, on-device records, and privacy-first routine tracking.",
+    posts: [
+      ["fasting-timer-sleep-rhythm-app", "Fasting Timer And Sleep Rhythm App: Track Routine Consistency Without A Cloud Account", "A non-medical routine-tracking workflow for fasting windows, sleep logs, rhythm awareness, and weekly review on device.", "Fasting timer", "fasting sleep tracker", ["Fast", "Sleep", "Score", "Report", "Review"]],
+      ["16-8-fasting-timer-weekly-report", "16:8 Fasting Timer Workflow: Use Weekly Reports Instead Of One-Day Judgments", "How weekly rhythm reports can help users compare fasting completion, sleep duration, sleep quality, and routine consistency over time.", "16:8 fasting", "weekly fasting report", ["16:8", "Completed", "Sleep", "Score", "Week"]],
+      ["private-fasting-sleep-tracker-no-login", "Private Fasting And Sleep Tracker: Keep Routine Data On Your iPhone", "Why fasting sessions, sleep times, hunger notes, streaks, achievements, and rhythm scores should be treated as private lifestyle data.", "Private tracker", "private fasting tracker", ["No login", "On device", "Notes", "Streak", "History"]]
+    ]
+  },
+  {
+    category: "Image Compressor",
+    zhCategory: "图片压缩",
+    appSlug: "image-compressor-and-zip",
+    accent: "tile",
+    sectionId: "image-compressor",
+    sectionDescription: "Image compression, batch photo resizing, ZIP export, quality comparison, storage savings, upload-size limits, and private on-device processing.",
+    relatedDescription: "Open the Image Compressor & ZIP app detail page for batch photo compression, quality comparison, resizing, JPEG/PNG output, ZIP export, history, and private on-device processing.",
+    posts: [
+      ["image-compressor-app-iphone-storage", "Image Compressor App For iPhone: Shrink Photos And Reclaim Storage Privately", "How to compress large iPhone photos, compare quality, choose JPEG or PNG, and reduce file size without uploading images to a server.", "Image compressor", "iPhone photo compressor", ["Pick photos", "Quality", "Resize", "Compare", "Save"]],
+      ["batch-photo-compression-zip-export", "Batch Photo Compression And ZIP Export: Send Many Images Without Huge Files", "A workflow for compressing dozens of photos, reviewing savings, bundling files into ZIP, and sharing cleaner batches for work or travel.", "ZIP export", "batch photo compression", ["Batch", "Compress", "ZIP", "Share", "History"]],
+      ["photo-quality-comparison-psnr-ssim-guide", "Photo Quality Comparison: Use Before-And-After Checks Before Export", "Why quality previews, PSNR/SSIM-style scores, resolution choices, and compression levels help avoid blurry or oversized exports.", "Quality check", "photo compression quality", ["Preview", "PSNR", "SSIM", "Resolution", "Export"]]
+    ]
+  }
+];
+
+const generatedAppBlogByCategory = new Map(generatedAppBlogDefinitions.map((config) => [config.category, config]));
+
+function appStoreAppBySlug(slug) {
+  const app = appStoreApps.find((candidate) => candidate.slug === slug);
+  if (!app) {
+    throw new Error(`Missing app-store data for ${slug}`);
+  }
+  return app;
+}
+
+function appArticleImage(config) {
+  const app = appStoreAppBySlug(config.appSlug);
+  return {
+    src: app.artworkUrl512,
+    alt: `${app.name} app icon`,
+    label: app.name
+  };
+}
+
+function createGeneratedAppBlogArticles() {
+  return generatedAppBlogDefinitions.flatMap((config) => {
+    const app = appStoreAppBySlug(config.appSlug);
+    return config.posts.map(([slug, title, description, kicker, keyword, bars], index) => {
+      const action = index === 0 ? "set up the core workflow" : index === 1 ? "review the repeatable process" : "protect the final records";
+      const output = index === 0 ? "daily use" : index === 1 ? "repeatable review" : "private export";
+      return {
+        slug,
+        category: config.category,
+        title,
+        description,
+        kicker,
+        readTime: index === 0 ? "8 min" : "7 min",
+        accent: config.accent,
+        image: appArticleImage(config),
+        sections: [
+          [`Why ${keyword} Needs A Focused Workflow`, `${app.name} is built for people who need ${keyword} without turning a simple job into a spreadsheet, cloud dashboard, or account setup. The useful habit is to capture the right input, review it while it is still fresh, and keep the result easy to find later.`],
+          [`Start With The Smallest Reliable Input`, `The best ${keyword} workflow begins with the smallest piece of information that can drive action: a file, scan, photo, note, item, amount, option, routine, or record. Add enough detail to make the next step clear, but avoid turning quick capture into busywork.`],
+          [`Use ${app.name} As A Review Point`, `Treat the app as the place to ${action}. Review names, dates, quantities, settings, labels, exports, or notes before you share or act. A short review step prevents most avoidable mistakes because the user can still correct the record before it leaves the device.`],
+          [`Keep The ${output} Private Until You Choose To Share`, `Many everyday workflows contain personal or business details. A no-login, on-device workflow keeps the default boundary simple: create and review locally, then export, print, share, or save only when the result is ready.`]
+        ],
+        checklist: [
+          `Choose the ${keyword} workflow before adding data.`,
+          "Capture only the fields that help the next decision.",
+          "Review the result before export, sharing, printing, or deletion.",
+          "Use labels, history, or categories so records stay searchable.",
+          "Keep sensitive content on device unless sharing is intentional."
+        ],
+        chart: {
+          title: `${kicker} workflow value map`,
+          caption: `A ${keyword} workflow becomes more valuable when capture, review, export, and privacy are handled together.`,
+          unit: "",
+          bars: bars.map((label, barIndex) => [label, [5, 4, 4, 3, 5][barIndex] || 3])
+        },
+        deepDive: {
+          figureTitle: `${app.name} workflow model`,
+          figureCaption: `A practical ${keyword} workflow moves from capture to review to action, while keeping private data local until the user chooses otherwise.`,
+          figureStats: [["No login", "Fast start"], ["On device", "Private processing"], ["Export", "User-controlled output"]],
+          comparisonTitle: `${kicker} workflow comparison`,
+          comparisonColumns: ["Workflow", "Best for", "Weak spot", "Better habit"],
+          comparisonRows: [
+            ["Memory or screenshots", "Very fast capture", "Hard to search or audit", "Turn important items into records"],
+            ["Spreadsheet or notes", "Flexible manual tracking", "More setup and formatting", "Use only for final summaries"],
+            [app.name, `Focused ${keyword}`, "Needs a simple review habit", "Capture, review, then export"],
+            ["Cloud dashboard", "Team collaboration", "Account and upload dependency", "Use only when sharing is required"]
+          ]
+        }
+      };
+    });
+  });
+}
+
+articles.push(...createGeneratedAppBlogArticles());
+
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {
     question: "How should a builder prove that plywood optimization is saving money instead of just making a prettier layout?",
@@ -6390,6 +6691,14 @@ function fallbackResearchBrief(article) {
     };
   }
 
+  if (relatedAppDetails[article.category]) {
+    return {
+      question: `What makes ${article.title.toLowerCase()} useful enough to become a repeatable app workflow?`,
+      insight: "The strongest app workflows reduce setup, keep private records local, make the next decision visible, and export or share only when the user is ready. The article focuses on the capture-review-output loop behind the app use case.",
+      metrics: ["Capture speed", "Review clarity", "Export readiness", "Privacy boundary"]
+    };
+  }
+
   return null;
 }
 
@@ -6479,6 +6788,15 @@ const relatedAppDetails = {
     description: "Open the Atomic Clock - Precision Time app detail page for NTP time sync, offset and latency readings, UTC and local time, clock styles, and private on-device use."
   }
 };
+
+for (const config of generatedAppBlogDefinitions) {
+  const app = appStoreAppBySlug(config.appSlug);
+  relatedAppDetails[config.category] = {
+    href: `/apps/${app.slug}/`,
+    name: app.name,
+    description: config.relatedDescription
+  };
+}
 
 const cutlistArticleEnhancements = {
   "cutlist-shop-workflow-from-bid-to-cut": {
@@ -7015,6 +7333,15 @@ function directoryLink(article) {
             </a>`;
 }
 
+function generatedAppBlogSections() {
+  return generatedAppBlogDefinitions
+    .map((config) => `<section class="blog-section" id="${config.sectionId}" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">${escapeHtml(config.category)}</p><h2>${escapeHtml(config.sectionDescription)}</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === config.category).map(articleCard).join("\n        ")}</div>
+    </section>`)
+    .join("\n\n    ");
+}
+
 function blogIndex() {
   const featured = [articles[0], articles[5], articles[10], articles[15]];
   const categories = [
@@ -7032,6 +7359,7 @@ function blogIndex() {
     ["Pantry Label", "pantry-label"],
     ["Address Label", "address-label"],
     ["SnapQR", "snapqr"],
+    ...generatedAppBlogDefinitions.map((config) => [config.category, config.sectionId]),
     ["Cadenza", "cadenza"],
     ["Tinnitus", "tinnitus"],
     ["Atomic Clock", "atomic-clock"]
@@ -7047,7 +7375,7 @@ function blogIndex() {
 <html lang="en">
 ${head({
     title: "Blogs | WoodCutTool",
-    description: "Research-style articles about CutList optimization, fridge inventory, pantry labels, address labels, QR codes, SnapLabel photo labels, private meeting transcription, speaker audio tests, work shift schedules, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
+    description: "Research-style articles about CutList optimization, iPhone utilities, fridge inventory, pantry labels, address labels, QR codes, photo vaults, invoices, receipts, printing, wellness routines, SnapLabel photo labels, private meeting transcription, speaker audio tests, work shift schedules, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
     canonical: "https://woodcuttool.com/blog/"
   })}
 <body>
@@ -7067,7 +7395,7 @@ ${head({
           <div class="blog-directory-content">
           <label class="blog-search">
             <span>Search the library</span>
-            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search CutList, QR, labels, fridge...">
+            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search apps, QR, labels, invoices...">
           </label>
           <nav class="blog-directory-nav" aria-label="Blog topic shortcuts">
             ${categoryLinks}
@@ -7092,8 +7420,8 @@ ${head({
       <div class="blog-hero-copy">
         <p class="breadcrumb"><a href="/">Home</a> / Blogs</p>
         <p class="eyebrow">Industry research library</p>
-        <h1>Research notes for builders, makers, kitchen organizers, QR workflows, document tools, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.</h1>
-        <p class="lead">Deeper articles on CutList optimization, fridge inventory, pantry labeling, address label printing, QR code generation, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
+        <h1>Research notes for builders, makers, small businesses, kitchen organizers, QR workflows, document tools, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.</h1>
+        <p class="lead">Deeper articles on CutList optimization, iPhone utility apps, fridge inventory, pantry labeling, address label printing, QR code generation, photo privacy, invoices, receipts, printing, habits, fasting, image compression, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy.</p>
       </div>
       <div class="blog-console" aria-label="Blog topic map">
         <div class="console-top"><span></span><span></span><span></span></div>
@@ -7124,6 +7452,7 @@ ${head({
       <a href="#pantry-label">Pantry Label</a>
       <a href="#address-label">Address Label</a>
       <a href="#snapqr">SnapQR</a>
+      ${generatedAppBlogDefinitions.map((config) => `<a href="#${config.sectionId}">${escapeHtml(config.category)}</a>`).join("\n      ")}
       <a href="#cadenza">Cadenza</a>
       <a href="#tinnitus">Tinnitus</a>
     </section>
@@ -7201,6 +7530,8 @@ ${head({
       <div class="blog-section-head"><p class="eyebrow">SnapQR</p><h2>QR code generation, Wi-Fi QR codes, scanning history, private QR libraries, PNG export, and PDF sharing.</h2></div>
       <div class="blog-grid">${articles.filter((article) => article.category === "SnapQR").map(articleCard).join("\n        ")}</div>
     </section>
+
+    ${generatedAppBlogSections()}
 
     <section class="blog-section" id="cadenza" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Cadenza</p><h2>Metronome, tuner, rhythm, intonation, and private music practice workflows.</h2></div>
@@ -7409,6 +7740,25 @@ const zhCategory = {
   "Classic guide": "经典指南"
 };
 
+for (const config of generatedAppBlogDefinitions) {
+  zhCategory[config.category] = config.zhCategory;
+}
+
+function generatedAppZhTemplate(category) {
+  const config = generatedAppBlogByCategory.get(category);
+  if (!config) return null;
+  return {
+    headings: ["先明确使用场景", "只记录会影响下一步的信息", "把 app 当作复盘点", "准备好之后再导出或分享"],
+    bodies: [
+      `${config.zhCategory}类工具最重要的是把常见任务变成清晰流程。先判断这次要解决什么问题，再选择对应的记录、扫描、导出、打印、追踪或整理方式。`,
+      "输入内容不需要越多越好。只记录会影响下一步判断的字段，比如名称、日期、金额、数量、标签、设置、备注或导出格式。",
+      "保存、打印、导出或删除之前先快速复盘。这个步骤可以提前发现拼写、数量、日期、文件、隐私和格式问题。",
+      "很多日常 app 数据都包含个人或业务细节。默认在设备端处理，确认无误后再由用户主动分享、打印或导出。"
+    ],
+    checklist: ["先选择具体工作流。", "只填写有用字段。", "导出或分享前复盘结果。", "用分类、历史或标签保持可查找。", "敏感内容默认保留在设备端。"]
+  };
+}
+
 const zhSectionTemplates = {
   CutList: {
     headings: ["明确项目约束", "输入真实材料参数", "检查可视化排版", "保存并复盘切割计划"],
@@ -7555,6 +7905,7 @@ function zhKicker(article) {
   if (article.category === "Pantry Label") return "厨房标签";
   if (article.category === "Address Label") return "地址标签";
   if (article.category === "SnapQR") return "二维码";
+  if (generatedAppBlogByCategory.has(article.category)) return zhCategory[article.category] || "App 指南";
   if (article.category === "Cadenza") return "音乐练习";
   return "指南";
 }
@@ -7598,6 +7949,11 @@ function zhDescription(article) {
   }
   if (article.category === "SnapQR") {
     return `围绕“${zhTitle(article)}”的二维码工作流，帮助用户生成网站、Wi-Fi、联系人、文本和位置二维码，并管理本地扫描历史。`;
+  }
+  if (generatedAppBlogByCategory.has(article.category)) {
+    const config = generatedAppBlogByCategory.get(article.category);
+    const app = appStoreAppBySlug(config.appSlug);
+    return `围绕“${zhTitle(article)}”的 ${app.name} 使用流程，帮助用户完成${config.zhCategory}相关任务，同时保持无需登录、设备端处理和可控导出。`;
   }
   if (article.category === "Cadenza") {
     return `围绕“${zhTitle(article)}”的音乐练习流程，帮助演奏者把节拍器、调音器、曲目单、速度笔记和离线隐私放在同一个练习工具里。`;
@@ -7847,10 +8203,12 @@ function generateBlogTranslations() {
     "Research notes for builders, makers, document workflows, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、文档流程、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
     "Research notes for builders, makers, document workflows, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、文档流程、音频工具、排班日历、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
     "Research notes for builders, makers, kitchen organizers, QR workflows, document tools, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、厨房整理、二维码流程、文档工具、音频工具、排班日历、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
+    "Research notes for builders, makers, small businesses, kitchen organizers, QR workflows, document tools, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、小企业、厨房整理、二维码流程、文档工具、音频工具、排班日历、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
     "Deeper articles on CutList optimization, QuiltFit planning, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、QuiltFit 规划、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、SnapLabel 照片标签、私密会议转写、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Deeper articles on CutList optimization, fridge inventory, pantry labeling, address label printing, QR code generation, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、冰箱库存、厨房标签、地址标签打印、二维码生成、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
+    "Deeper articles on CutList optimization, iPhone utility apps, fridge inventory, pantry labeling, address label printing, QR code generation, photo privacy, invoices, receipts, printing, habits, fasting, image compression, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy.": "深入文章覆盖 CutList 优化、iPhone 工具类 app、冰箱库存、厨房标签、地址标签打印、二维码生成、照片隐私、发票、收据、打印、习惯、轻断食、图片压缩、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略。",
     "Sheet optimization and shop workflow.": "板材优化与工坊流程。",
     "Digital quilt planning and fabric decisions.": "数字化拼布规划与布料决策。",
     "Stringer geometry, comfort, and remodel planning.": "楼梯梁几何、舒适度与改造规划。",
@@ -7886,7 +8244,7 @@ function generateBlogTranslations() {
   };
 
   for (const article of articles) {
-    const templates = zhSectionTemplates[article.category];
+    const templates = zhSectionTemplates[article.category] || generatedAppZhTemplate(article.category);
     const title = zhTitle(article);
     zhCN[article.title] = title;
     zhCN[article.description] = zhDescription(article);
