@@ -6,13 +6,93 @@
     <atom:link href="https://woodcuttool.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical woodworking guides on plywood cutting, cut lists, materials, cabinets, stairs, and tile from WoodCutTool.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jun 2026 01:52:16 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 03:28:33 GMT</lastBuildDate>
+    <item>
+      <title>Work Shift Reminders And Day-Off Planning: Stop Missing The Pattern</title>
+      <link>https://woodcuttool.com/blog/work-shift-reminders-day-off-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/work-shift-reminders-day-off-planning/</guid>
+      <category>Work Shift</category>
+      <pubDate>Thu, 25 Jun 2026 03:28:33 GMT</pubDate>
+      <description>A practical workflow for using a shift calendar to see tomorrow's shift, next rest day, overtime blocks, and personal plans without roster confusion.</description>
+    </item>
+    <item>
+      <title>Shift Calendar For Nurses, Security Staff, Drivers, And Factory Teams</title>
+      <link>https://woodcuttool.com/blog/shift-calendar-for-nurses-security-drivers/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/shift-calendar-for-nurses-security-drivers/</guid>
+      <category>Work Shift</category>
+      <pubDate>Wed, 24 Jun 2026 03:28:33 GMT</pubDate>
+      <description>How rotating-shift workers can use a private schedule calendar to plan sleep, family time, commutes, overtime, and days off across changing rosters.</description>
+    </item>
+    <item>
+      <title>No-Login Shift Calendar Privacy: Why Your Work Roster Should Stay Local</title>
+      <link>https://woodcuttool.com/blog/no-login-shift-calendar-privacy/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/no-login-shift-calendar-privacy/</guid>
+      <category>Work Shift</category>
+      <pubDate>Tue, 23 Jun 2026 03:28:33 GMT</pubDate>
+      <description>Why shift schedules can reveal private routines, and how an offline no-login shift calendar helps workers plan without handing rosters to a cloud account.</description>
+    </item>
+    <item>
+      <title>6x2 Shift Schedule Planner: Build A Work And Rest Calendar In Seconds</title>
+      <link>https://woodcuttool.com/blog/6x2-shift-schedule-planner-calendar/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/6x2-shift-schedule-planner-calendar/</guid>
+      <category>Work Shift</category>
+      <pubDate>Mon, 22 Jun 2026 03:28:33 GMT</pubDate>
+      <description>How to plan a 6x2 shift schedule, choose the right anchor date, review rest days, and avoid roster confusion with Work Shift Schedule Calendar.</description>
+    </item>
+    <item>
+      <title>Work Shift Schedule Calendar: Plan Rotating Shifts Without Screenshots</title>
+      <link>https://woodcuttool.com/blog/work-shift-schedule-calendar-rotating-shifts/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/work-shift-schedule-calendar-rotating-shifts/</guid>
+      <category>Work Shift</category>
+      <pubDate>Sun, 21 Jun 2026 03:28:33 GMT</pubDate>
+      <description>A guide to replacing messy roster screenshots with a generated work shift calendar for rotating shifts, days off, and private schedule planning.</description>
+    </item>
+    <item>
+      <title>Reference Sound Level Meter Basics: Compare Loudness Without Pretending It Is A Lab</title>
+      <link>https://woodcuttool.com/blog/reference-sound-level-meter-basics/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/reference-sound-level-meter-basics/</guid>
+      <category>Speaker Tools</category>
+      <pubDate>Sat, 20 Jun 2026 03:28:33 GMT</pubDate>
+      <description>How to use a reference sound level meter view for relative loudness checks, safer listening habits, and repeatable audio experiments on iPhone.</description>
+    </item>
+    <item>
+      <title>Audio Test App For Speaker Placement: Tones, Channels, And Listening Positions</title>
+      <link>https://woodcuttool.com/blog/audio-test-app-for-speaker-placement/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/audio-test-app-for-speaker-placement/</guid>
+      <category>Speaker Tools</category>
+      <pubDate>Fri, 19 Jun 2026 03:28:33 GMT</pubDate>
+      <description>How to use an audio test app to compare speaker placement, stereo balance, listening positions, bass response, and repeatable room checks.</description>
+    </item>
+    <item>
+      <title>Low Frequency Tone Generator Guide: Bass Checks Without Guesswork</title>
+      <link>https://woodcuttool.com/blog/low-frequency-tone-generator-guide/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/low-frequency-tone-generator-guide/</guid>
+      <category>Speaker Tools</category>
+      <pubDate>Thu, 18 Jun 2026 03:28:33 GMT</pubDate>
+      <description>A guide to low-frequency tone playback for bass response checks, speaker placement experiments, and safer listening habits with Speaker Tools.</description>
+    </item>
+    <item>
+      <title>Stereo Channel Test: How To Check Left And Right Speakers On iPhone</title>
+      <link>https://woodcuttool.com/blog/stereo-channel-test-left-right-speakers/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/stereo-channel-test-left-right-speakers/</guid>
+      <category>Speaker Tools</category>
+      <pubDate>Wed, 17 Jun 2026 03:28:33 GMT</pubDate>
+      <description>How to use a stereo channel test to compare left and right speaker output, headphone channels, audio routing, and room placement without overcomplicating the setup.</description>
+    </item>
+    <item>
+      <title>Best Speaker Test App For iPhone: Frequency Generator, Channels, And Safe Audio Checks</title>
+      <link>https://woodcuttool.com/blog/best-speaker-test-app-iphone-frequency-generator/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/best-speaker-test-app-iphone-frequency-generator/</guid>
+      <category>Speaker Tools</category>
+      <pubDate>Tue, 16 Jun 2026 03:28:33 GMT</pubDate>
+      <description>A practical guide to using Speaker Tools as an iPhone speaker test app for frequency generation, stereo channel checks, tone playback, and basic listening experiments.</description>
+    </item>
     <item>
       <title>Voice Notes To Text: A Private Workflow For Ideas, Tasks, And Follow-Up</title>
       <link>https://woodcuttool.com/blog/voice-notes-to-text-private-workflow/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/voice-notes-to-text-private-workflow/</guid>
       <category>Private Meeting</category>
-      <pubDate>Thu, 25 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Mon, 15 Jun 2026 03:28:33 GMT</pubDate>
       <description>How to convert voice notes into text privately for ideas, meeting follow-ups, task lists, project notes, and personal reminders.</description>
     </item>
     <item>
@@ -20,7 +100,7 @@
       <link>https://woodcuttool.com/blog/lecture-transcription-app-for-students/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/lecture-transcription-app-for-students/</guid>
       <category>Private Meeting</category>
-      <pubDate>Wed, 24 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Sun, 14 Jun 2026 03:28:33 GMT</pubDate>
       <description>A student workflow for recording lectures, creating offline transcripts, labeling speakers, and turning class audio into study notes.</description>
     </item>
     <item>
@@ -28,7 +108,7 @@
       <link>https://woodcuttool.com/blog/private-interview-transcription-app/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/private-interview-transcription-app/</guid>
       <category>Private Meeting</category>
-      <pubDate>Tue, 23 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Sat, 13 Jun 2026 03:28:33 GMT</pubDate>
       <description>How to run private interview transcription for research, hiring, journalism, and customer calls without uploading recordings to a cloud service.</description>
     </item>
     <item>
@@ -36,7 +116,7 @@
       <link>https://woodcuttool.com/blog/priviscribe-speaker-labeling-meeting-notes/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/priviscribe-speaker-labeling-meeting-notes/</guid>
       <category>Private Meeting</category>
-      <pubDate>Mon, 22 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Fri, 12 Jun 2026 03:28:33 GMT</pubDate>
       <description>A speaker labeling workflow for meeting notes, interviews, lectures, and private transcripts created on device with Priviscribe.</description>
     </item>
     <item>
@@ -44,7 +124,7 @@
       <link>https://woodcuttool.com/blog/private-meeting-transcriber-offline-guide/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/private-meeting-transcriber-offline-guide/</guid>
       <category>Private Meeting</category>
-      <pubDate>Sun, 21 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Thu, 11 Jun 2026 03:28:33 GMT</pubDate>
       <description>How an offline meeting transcriber can turn conversations into searchable notes while keeping audio and transcripts on device.</description>
     </item>
     <item>
@@ -52,7 +132,7 @@
       <link>https://woodcuttool.com/blog/snaplabel-printable-label-workflow/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/snaplabel-printable-label-workflow/</guid>
       <category>SnapLabel</category>
-      <pubDate>Sat, 20 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Wed, 10 Jun 2026 03:28:33 GMT</pubDate>
       <description>A simple workflow for creating printable labels from camera roll photos, AI suggestions, edited text, and final print review.</description>
     </item>
     <item>
@@ -60,7 +140,7 @@
       <link>https://woodcuttool.com/blog/snaplabel-batch-labels-for-inventory/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/snaplabel-batch-labels-for-inventory/</guid>
       <category>SnapLabel</category>
-      <pubDate>Fri, 19 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Tue, 09 Jun 2026 03:28:33 GMT</pubDate>
       <description>A batch labeling workflow for inventory rooms, supply closets, product bins, storage boxes, and photo-based label creation.</description>
     </item>
     <item>
@@ -68,7 +148,7 @@
       <link>https://woodcuttool.com/blog/snaplabel-small-business-product-labels/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/snaplabel-small-business-product-labels/</guid>
       <category>SnapLabel</category>
-      <pubDate>Thu, 18 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Mon, 08 Jun 2026 03:28:33 GMT</pubDate>
       <description>How small businesses can use a photo label app for product tags, stock bins, sample kits, shelves, and print-ready organization labels.</description>
     </item>
     <item>
@@ -76,7 +156,7 @@
       <link>https://woodcuttool.com/blog/snaplabel-home-organization-labels/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/snaplabel-home-organization-labels/</guid>
       <category>SnapLabel</category>
-      <pubDate>Wed, 17 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Sun, 07 Jun 2026 03:28:33 GMT</pubDate>
       <description>A practical home organization workflow for turning photos of bins, shelves, pantry items, and household supplies into printable labels.</description>
     </item>
     <item>
@@ -84,7 +164,7 @@
       <link>https://woodcuttool.com/blog/snaplabel-ai-photo-label-maker-guide/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/snaplabel-ai-photo-label-maker-guide/</guid>
       <category>SnapLabel</category>
-      <pubDate>Tue, 16 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Sat, 06 Jun 2026 03:28:33 GMT</pubDate>
       <description>How to use an AI photo label maker to recognize items, create clean text labels, and print organized labels from iPhone photos.</description>
     </item>
     <item>
@@ -92,7 +172,7 @@
       <link>https://woodcuttool.com/blog/optimize-4x8-plywood-cuts-for-built-ins/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/optimize-4x8-plywood-cuts-for-built-ins/</guid>
       <category>CutList</category>
-      <pubDate>Mon, 15 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Fri, 05 Jun 2026 03:28:33 GMT</pubDate>
       <description>How to optimize 4x8 plywood cuts for built-in cabinets, bookcases, mudrooms, closets, and wall storage projects.</description>
     </item>
     <item>
@@ -100,7 +180,7 @@
       <link>https://woodcuttool.com/blog/plywood-waste-calculator-vs-optimizer/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-waste-calculator-vs-optimizer/</guid>
       <category>CutList</category>
-      <pubDate>Sun, 14 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Thu, 04 Jun 2026 03:28:33 GMT</pubDate>
       <description>A comparison of plywood waste calculators and sheet optimizers for estimating scrap, sheet count, cost, and physical layout fit.</description>
     </item>
     <item>
@@ -108,7 +188,7 @@
       <link>https://woodcuttool.com/blog/offline-cut-list-app-privacy/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/offline-cut-list-app-privacy/</guid>
       <category>CutList</category>
-      <pubDate>Sat, 13 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Wed, 03 Jun 2026 03:28:33 GMT</pubDate>
       <description>Why an offline cut list app can protect project dimensions, client notes, pricing assumptions, and shop records while still improving layout speed.</description>
     </item>
     <item>
@@ -116,7 +196,7 @@
       <link>https://woodcuttool.com/blog/cut-list-pdf-for-workshop/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-pdf-for-workshop/</guid>
       <category>CutList</category>
-      <pubDate>Fri, 12 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Tue, 02 Jun 2026 03:28:33 GMT</pubDate>
       <description>A shop-ready checklist for cut list PDFs, including sheet layouts, part labels, dimensions, kerf, material, and cut sequence.</description>
     </item>
     <item>
@@ -124,7 +204,7 @@
       <link>https://woodcuttool.com/blog/plywood-shelf-cut-list-calculator/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-shelf-cut-list-calculator/</guid>
       <category>CutList</category>
-      <pubDate>Thu, 11 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Mon, 01 Jun 2026 03:28:33 GMT</pubDate>
       <description>A shelf-building guide for calculating plywood parts, repeated shelf quantities, dividers, cleats, supports, and optimized sheet layouts.</description>
     </item>
     <item>
@@ -132,7 +212,7 @@
       <link>https://woodcuttool.com/blog/one-sheet-plywood-project-planner/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/one-sheet-plywood-project-planner/</guid>
       <category>CutList</category>
-      <pubDate>Wed, 10 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Sun, 31 May 2026 03:28:33 GMT</pubDate>
       <description>How to plan one-sheet plywood projects with realistic parts, kerf, useful offcuts, and a visual layout before purchasing material.</description>
     </item>
     <item>
@@ -140,7 +220,7 @@
       <link>https://woodcuttool.com/blog/plywood-layout-mistakes-beginners/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-layout-mistakes-beginners/</guid>
       <category>CutList</category>
-      <pubDate>Tue, 09 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Sat, 30 May 2026 03:28:33 GMT</pubDate>
       <description>Common beginner plywood layout mistakes involving kerf, grain, repeated parts, offcuts, and sheet count, with fixes before cutting.</description>
     </item>
     <item>
@@ -148,7 +228,7 @@
       <link>https://woodcuttool.com/blog/plywood-offcut-management-system/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-offcut-management-system/</guid>
       <category>CutList</category>
-      <pubDate>Mon, 08 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Fri, 29 May 2026 03:28:33 GMT</pubDate>
       <description>A small-shop system for labeling, storing, and reusing plywood offcuts created by optimized sheet layouts.</description>
     </item>
     <item>
@@ -156,7 +236,7 @@
       <link>https://woodcuttool.com/blog/sheet-goods-estimator-before-home-center/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/sheet-goods-estimator-before-home-center/</guid>
       <category>CutList</category>
-      <pubDate>Sun, 07 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Thu, 28 May 2026 03:28:33 GMT</pubDate>
       <description>A pre-shopping workflow for estimating plywood, MDF, melamine, and project panels before making a home center material run.</description>
     </item>
     <item>
@@ -164,7 +244,7 @@
       <link>https://woodcuttool.com/blog/cabinet-door-panel-layout-grain/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-door-panel-layout-grain/</guid>
       <category>CutList</category>
-      <pubDate>Sat, 06 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Wed, 27 May 2026 03:28:33 GMT</pubDate>
       <description>How to plan cabinet door and panel layouts when grain direction, paired fronts, sheet yield, and visible faces all matter.</description>
     </item>
     <item>
@@ -172,7 +252,7 @@
       <link>https://woodcuttool.com/blog/drawer-box-plywood-cut-list/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/drawer-box-plywood-cut-list/</guid>
       <category>CutList</category>
-      <pubDate>Fri, 05 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Tue, 26 May 2026 03:28:33 GMT</pubDate>
       <description>A drawer box planning guide for repeated plywood parts, bottom panels, slide clearances, grain rules, and optimized sheet layouts.</description>
     </item>
     <item>
@@ -180,7 +260,7 @@
       <link>https://woodcuttool.com/blog/closet-shelving-cut-list-planner/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/closet-shelving-cut-list-planner/</guid>
       <category>CutList</category>
-      <pubDate>Thu, 04 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Mon, 25 May 2026 03:28:33 GMT</pubDate>
       <description>How to plan a closet shelving project with accurate parts, sheet count, adjustable shelves, vertical dividers, and clean cut layouts.</description>
     </item>
     <item>
@@ -188,7 +268,7 @@
       <link>https://woodcuttool.com/blog/garage-cabinet-plywood-cut-list/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/garage-cabinet-plywood-cut-list/</guid>
       <category>CutList</category>
-      <pubDate>Wed, 03 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Sun, 24 May 2026 03:28:33 GMT</pubDate>
       <description>A DIY guide to building garage cabinets with a plywood cut list, optimized sheet layout, and realistic offcut strategy.</description>
     </item>
     <item>
@@ -196,7 +276,7 @@
       <link>https://woodcuttool.com/blog/melamine-cutting-layout-chipout/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/melamine-cutting-layout-chipout/</guid>
       <category>CutList</category>
-      <pubDate>Tue, 02 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Sat, 23 May 2026 03:28:33 GMT</pubDate>
       <description>How to plan melamine sheet cuts with face protection, edge quality, kerf, rotation, and clean part labeling.</description>
     </item>
     <item>
@@ -204,7 +284,7 @@
       <link>https://woodcuttool.com/blog/mdf-cut-list-optimizer/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/mdf-cut-list-optimizer/</guid>
       <category>CutList</category>
-      <pubDate>Mon, 01 Jun 2026 01:52:16 GMT</pubDate>
+      <pubDate>Fri, 22 May 2026 03:28:33 GMT</pubDate>
       <description>A practical guide to optimizing MDF sheets for shelves, painted cabinets, built-ins, templates, and shop fixtures.</description>
     </item>
     <item>
@@ -212,7 +292,7 @@
       <link>https://woodcuttool.com/blog/track-saw-plywood-cut-plan/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/track-saw-plywood-cut-plan/</guid>
       <category>CutList</category>
-      <pubDate>Sun, 31 May 2026 01:52:16 GMT</pubDate>
+      <pubDate>Thu, 21 May 2026 03:28:33 GMT</pubDate>
       <description>How to plan plywood cuts for a track saw workflow, including first rips, crosscuts, support, labeling, and offcut decisions.</description>
     </item>
     <item>
@@ -220,7 +300,7 @@
       <link>https://woodcuttool.com/blog/cut-list-app-for-cabinet-makers/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-app-for-cabinet-makers/</guid>
       <category>CutList</category>
-      <pubDate>Sat, 30 May 2026 01:52:16 GMT</pubDate>
+      <pubDate>Wed, 20 May 2026 03:28:33 GMT</pubDate>
       <description>A feature guide for cabinet makers choosing a cut list app for plywood layouts, saved jobs, kerf, PDF export, and shop-ready part labels.</description>
     </item>
     <item>
@@ -228,7 +308,7 @@
       <link>https://woodcuttool.com/blog/plywood-cutting-calculator-cost-savings/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-cutting-calculator-cost-savings/</guid>
       <category>CutList</category>
-      <pubDate>Fri, 29 May 2026 01:52:16 GMT</pubDate>
+      <pubDate>Tue, 19 May 2026 03:28:33 GMT</pubDate>
       <description>How to turn plywood layout results into cost savings by comparing sheet count, waste value, reusable offcuts, and revision time.</description>
     </item>
     <item>
@@ -236,7 +316,7 @@
       <link>https://woodcuttool.com/blog/how-many-plywood-sheets-for-cabinets/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-many-plywood-sheets-for-cabinets/</guid>
       <category>CutList</category>
-      <pubDate>Thu, 28 May 2026 01:52:16 GMT</pubDate>
+      <pubDate>Mon, 18 May 2026 03:28:33 GMT</pubDate>
       <description>A practical method for estimating plywood sheet count for cabinet boxes, shelves, drawer parts, backs, fillers, and waste before the first cut.</description>
     </item>
     <item>
@@ -244,88 +324,8 @@
       <link>https://woodcuttool.com/blog/plywood-cut-list-optimizer-for-cabinets/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-cut-list-optimizer-for-cabinets/</guid>
       <category>CutList</category>
-      <pubDate>Wed, 27 May 2026 01:52:16 GMT</pubDate>
+      <pubDate>Sun, 17 May 2026 03:28:33 GMT</pubDate>
       <description>A cabinet-focused guide to using a plywood cut list optimizer for sides, shelves, backs, stretchers, toe kicks, and finished panels before buying sheet goods.</description>
-    </item>
-    <item>
-      <title>Frequency Matching And Notch Filters For Tinnitus: Personalization Without Medical Claims</title>
-      <link>https://woodcuttool.com/blog/frequency-matching-notch-filter-tinnitus-personalization/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/frequency-matching-notch-filter-tinnitus-personalization/</guid>
-      <category>Tinnitus</category>
-      <pubDate>Tue, 26 May 2026 01:52:16 GMT</pubDate>
-      <description>An evidence-aware explanation of frequency matching, notch filtering, and personalized sound masking for tinnitus apps, written for users who want control without clinical overpromising.</description>
-    </item>
-    <item>
-      <title>Offline Tinnitus App Privacy: Why On-Device Sound Masking Matters</title>
-      <link>https://woodcuttool.com/blog/offline-tinnitus-app-privacy-on-device-sound-masking/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/offline-tinnitus-app-privacy-on-device-sound-masking/</guid>
-      <category>Tinnitus</category>
-      <pubDate>Mon, 25 May 2026 01:52:16 GMT</pubDate>
-      <description>A high-intent guide for users comparing tinnitus relief apps, cloud audio, streaming sleep sounds, and private on-device sound masking on iPhone.</description>
-    </item>
-    <item>
-      <title>Why Tinnitus Feels Louder At Night: Sleep, Silence, And Sound Masking</title>
-      <link>https://woodcuttool.com/blog/why-tinnitus-feels-louder-at-night-sleep-masking/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/why-tinnitus-feels-louder-at-night-sleep-masking/</guid>
-      <category>Tinnitus</category>
-      <pubDate>Sun, 24 May 2026 01:52:16 GMT</pubDate>
-      <description>A research-informed, human guide to why tinnitus awareness often spikes in quiet rooms and how sleep sounds, sound masking, and offline app routines can help reduce the burden.</description>
-    </item>
-    <item>
-      <title>White Noise For Tinnitus: Choosing Sleep Sounds That Feel Calm</title>
-      <link>https://woodcuttool.com/blog/white-noise-tinnitus-sleep-sound-app/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/white-noise-tinnitus-sleep-sound-app/</guid>
-      <category>Tinnitus</category>
-      <pubDate>Sat, 23 May 2026 01:52:16 GMT</pubDate>
-      <description>A practical SEO guide to white noise tinnitus masking, pink noise, brown noise, rain, ocean, fan sounds, and how to choose a sleep sound app without overcomplicating bedtime.</description>
-    </item>
-    <item>
-      <title>Tinnitus Relief App Guide: Sound Masking For Ringing Ears At Night</title>
-      <link>https://woodcuttool.com/blog/tinnitus-relief-app-sound-masking-night-guide/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/tinnitus-relief-app-sound-masking-night-guide/</guid>
-      <category>Tinnitus</category>
-      <pubDate>Fri, 22 May 2026 01:52:16 GMT</pubDate>
-      <description>A realistic, evidence-aware guide to using an offline tinnitus relief app, sound masking, white noise, rain, and sleep sounds when ringing feels louder at night.</description>
-    </item>
-    <item>
-      <title>Music Practice Tracker Workflow: Setlists, Tempo Notes, Tuning, And Daily Repetition</title>
-      <link>https://woodcuttool.com/blog/music-practice-tracker-setlist-metronome-tuner-cadenza/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/music-practice-tracker-setlist-metronome-tuner-cadenza/</guid>
-      <category>Cadenza</category>
-      <pubDate>Thu, 21 May 2026 01:52:16 GMT</pubDate>
-      <description>A high-intent guide to using Cadenza as a private music practice tracker with setlists, metronome settings, tuner context, tempo notes, and offline rehearsal memory.</description>
-    </item>
-    <item>
-      <title>Guitar Tuner App Guide: Cents, A4 Reference, Chromatic Tuning, And Drone Tones</title>
-      <link>https://woodcuttool.com/blog/guitar-tuner-app-cents-a4-reference-cadenza/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/guitar-tuner-app-cents-a4-reference-cadenza/</guid>
-      <category>Cadenza</category>
-      <pubDate>Wed, 20 May 2026 01:52:16 GMT</pubDate>
-      <description>A musician-friendly guide to using Cadenza as a guitar tuner app, chromatic tuner, A4 reference tool, and drone tone companion for cleaner intonation practice.</description>
-    </item>
-    <item>
-      <title>Best Metronome App For Daily Practice: Tempo, Tap Tempo, Accents, And Setlists</title>
-      <link>https://woodcuttool.com/blog/best-metronome-app-daily-practice-cadenza/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/best-metronome-app-daily-practice-cadenza/</guid>
-      <category>Cadenza</category>
-      <pubDate>Tue, 19 May 2026 01:52:16 GMT</pubDate>
-      <description>A practical high-SEO guide to using Cadenza as a daily metronome app for musicians who need steady tempo, tap tempo, accent control, tempo ramping, and private offline practice.</description>
-    </item>
-    <item>
-      <title>Scan To PDF Workflow: Receipts, Invoices, Signatures, PDF Lock, And Project Organization</title>
-      <link>https://woodcuttool.com/blog/scan-to-pdf-workflow-receipts-invoices-signatures-lock/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/scan-to-pdf-workflow-receipts-invoices-signatures-lock/</guid>
-      <category>PDF Scan</category>
-      <pubDate>Mon, 18 May 2026 01:52:16 GMT</pubDate>
-      <description>A conversion-focused SEO guide to building a scan to PDF workflow for receipts, invoices, contracts, IDs, signatures, locked PDFs, CSV exports, and organized document projects.</description>
-    </item>
-    <item>
-      <title>OCR PDF Scanner Guide: Make Scanned Documents Searchable Without Retyping</title>
-      <link>https://woodcuttool.com/blog/ocr-pdf-scanner-searchable-documents-guide/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/ocr-pdf-scanner-searchable-documents-guide/</guid>
-      <category>PDF Scan</category>
-      <pubDate>Sun, 17 May 2026 01:52:16 GMT</pubDate>
-      <description>A practical SEO guide to OCR PDF scanning, searchable documents, receipt and invoice text recognition, business card capture, and private on-device document workflows.</description>
     </item>
   </channel>
 </rss>

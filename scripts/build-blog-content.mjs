@@ -5402,6 +5402,376 @@ articles.push(
   }
 );
 
+const speakerToolsImage = {
+  src: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c2/de/a5/c2dea570-fc2b-91ca-00f6-1b10a01b240f/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+  alt: "Speaker Tools Audio Test app icon with waveform and microphone",
+  label: "Speaker Tools - Audio Test"
+};
+
+const workShiftImage = {
+  src: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8f/28/e4/8f28e42f-c02d-248b-b1b2-153b534b2406/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+  alt: "Work Shift Schedule Calendar app icon with shift calendar grid",
+  label: "Work Shift Schedule Calendar"
+};
+
+articles.push(
+  {
+    slug: "best-speaker-test-app-iphone-frequency-generator",
+    category: "Speaker Tools",
+    title: "Best Speaker Test App For iPhone: Frequency Generator, Channels, And Safe Audio Checks",
+    description: "A practical guide to using Speaker Tools as an iPhone speaker test app for frequency generation, stereo channel checks, tone playback, and basic listening experiments.",
+    kicker: "Speaker test app",
+    readTime: "8 min",
+    accent: "cadenza",
+    image: speakerToolsImage,
+    sections: [
+      ["A Speaker Test App Should Be Specific", "People search for a speaker test app when something sounds uneven, quiet, distorted, or confusing. The useful workflow is not a vague play button. It is a set of controlled signals: frequency tones, left and right channel playback, low-frequency sweeps, and a reference sound level view that helps the listener compare changes consistently."],
+      ["Use Tones For Listening, Not Repair Claims", "Speaker Tools generates audio signals for listening, experimentation, and basic playback checks. It should not be framed as a repair tool or a hardware diagnostic system. A tone can help reveal what you hear in a room, but it does not certify a speaker, fix a driver, or prove device damage."],
+      ["Start Quiet And Increase Slowly", "Any frequency generator should begin at a low volume. Sudden loud tones can be uncomfortable and may be risky, especially with headphones. The safest workflow is to set device volume low, play a short tone, adjust gradually, then stop if the sound is harsh or fatiguing."],
+      ["Test One Variable At A Time", "Change frequency, channel, volume, or listening position separately. If everything changes at once, you cannot tell whether the speaker, the room, or your settings caused the difference."]
+    ],
+    checklist: ["Start at low volume.", "Use short tests, not long exposure.", "Test left and right channels separately.", "Change one variable at a time.", "Avoid claiming hardware diagnosis from listening tests."],
+    chart: {
+      title: "Typical speaker test workflow time",
+      caption: "A simple listening check works best when it moves from basic channel checks to frequency exploration instead of starting with loud sweeps.",
+      unit: " min",
+      bars: [["Setup", 1], ["Channels", 2], ["Tone range", 4], ["Room check", 3], ["Notes", 2]]
+    },
+    deepDive: {
+      figureTitle: "Signal-first audio testing workflow",
+      figureCaption: "Use controlled tones and channel signals to make listening comparisons more repeatable.",
+      figureStats: [["20 Hz-20 kHz", "Frequency generator range"], ["2 channels", "Left and right checks"], ["Low volume", "Safe starting point"]],
+      comparisonTitle: "Common speaker test methods",
+      comparisonColumns: ["Method", "Best for", "Limit", "Safer workflow"],
+      comparisonRows: [
+        ["Single music track", "Quick subjective check", "Too many variables in the mix", "Use only after tone checks"],
+        ["Frequency tone", "Hearing uneven response", "Can become uncomfortable if loud", "Start low and move slowly"],
+        ["Left/right channel", "Finding routing or balance issues", "Does not measure quality", "Test one channel at a time"],
+        ["Reference meter", "Comparing relative loudness", "Phone mics are not lab meters", "Use for consistency, not certification"]
+      ]
+    }
+  },
+  {
+    slug: "stereo-channel-test-left-right-speakers",
+    category: "Speaker Tools",
+    title: "Stereo Channel Test: How To Check Left And Right Speakers On iPhone",
+    description: "How to use a stereo channel test to compare left and right speaker output, headphone channels, audio routing, and room placement without overcomplicating the setup.",
+    kicker: "Stereo channel test",
+    readTime: "7 min",
+    accent: "cadenza",
+    image: speakerToolsImage,
+    sections: [
+      ["Channel Checks Catch Simple Problems First", "Before testing frequencies or room acoustics, confirm that left and right output behave as expected. A stereo channel test helps identify swapped channels, one-sided playback, balance settings, or a speaker that is disconnected."],
+      ["Use Clear Labels While Testing", "Play left-only and right-only signals separately. Keep the phone screen visible so the person listening knows which channel should be active. This prevents guessing from becoming part of the test."],
+      ["Check Headphones And External Speakers Differently", "Headphones make left/right separation obvious, while room speakers introduce reflections and placement effects. If a speaker seems wrong in the room, repeat the same test closer to each speaker before drawing conclusions."],
+      ["Document What Changed", "If you adjust a cable, Bluetooth device, app setting, or room position, write it down. Channel problems are easiest to fix when the test has a clear before and after."]
+    ],
+    checklist: ["Test left-only first.", "Test right-only second.", "Check device balance settings.", "Repeat after cable or Bluetooth changes.", "Do not judge frequency response from a channel test alone."],
+    chart: {
+      title: "Channel troubleshooting order",
+      caption: "Start with the fastest checks before changing hardware or room placement.",
+      unit: "",
+      bars: [["Balance", 1], ["Left", 2], ["Right", 2], ["Cable", 3], ["Room", 4]]
+    },
+    deepDive: {
+      figureTitle: "Left/right channel verification",
+      figureCaption: "A channel test is a routing check before it is an audio-quality check.",
+      figureStats: [["L/R", "Core stereo channels"], ["1 at a time", "Cleanest comparison"], ["Before EQ", "Verify routing first"]],
+      comparisonTitle: "Channel test scenarios",
+      comparisonColumns: ["Scenario", "What it checks", "What it cannot prove", "Next step"],
+      comparisonRows: [
+        ["Phone speaker", "Basic playback path", "Room speaker placement", "Try external output"],
+        ["Headphones", "Left/right routing", "Room behavior", "Check balance settings"],
+        ["Bluetooth speaker", "Connection and output", "Speaker health", "Reconnect and retest"],
+        ["Stereo pair", "Placement and channel identity", "Flat frequency response", "Use tone tests next"]
+      ]
+    }
+  },
+  {
+    slug: "low-frequency-tone-generator-guide",
+    category: "Speaker Tools",
+    title: "Low Frequency Tone Generator Guide: Bass Checks Without Guesswork",
+    description: "A guide to low-frequency tone playback for bass response checks, speaker placement experiments, and safer listening habits with Speaker Tools.",
+    kicker: "Low frequency",
+    readTime: "8 min",
+    accent: "cadenza",
+    image: speakerToolsImage,
+    sections: [
+      ["Low Frequencies Are Room-Sensitive", "Bass can change dramatically when a speaker moves a few inches or when the listener changes seats. A low frequency tone generator helps isolate that behavior by playing simple tones instead of complex music."],
+      ["Do Not Chase Maximum Loudness", "The goal is not to make the room shake. Use low volume and short tests to understand where bass becomes uneven, weak, or boomy. Long loud low-frequency playback can be tiring and may disturb people nearby."],
+      ["Sweep Slowly Through Problem Areas", "Move through low frequencies gradually and listen for sudden dips, peaks, buzzes, or rattles. If something vibrates, lower the volume and identify the object before continuing."],
+      ["Compare Positions, Not Just Speakers", "A bass problem may come from placement, furniture, wall distance, or listening position. Test the same frequency at a few positions before blaming the speaker."]
+    ],
+    checklist: ["Keep bass tests short.", "Start at low volume.", "Listen for peaks, dips, buzzes, and rattles.", "Compare several positions.", "Use music only after tone checks."],
+    chart: {
+      title: "Bass check focus by frequency band",
+      caption: "Low-frequency checks are about room behavior and vibration, not only speaker output.",
+      unit: "",
+      bars: [["30 Hz", 2], ["50 Hz", 4], ["80 Hz", 5], ["120 Hz", 3], ["200 Hz", 2]]
+    },
+    deepDive: {
+      figureTitle: "Bass test decision path",
+      figureCaption: "Low-frequency tones make room changes easier to hear, but they should be used gently.",
+      figureStats: [["20 Hz", "Lower generator boundary"], ["Short tests", "Reduce fatigue"], ["Room first", "Placement affects bass"]],
+      comparisonTitle: "Low-frequency test signals",
+      comparisonRows: [
+        ["Fixed tone", "Finding buzzes or rattles", "Can be fatiguing", "Use briefly"],
+        ["Slow sweep", "Finding peaks and dips", "Harder to repeat exactly", "Move gradually"],
+        ["Music bass line", "Real-world listening", "Too many variables", "Use after tone checks"],
+        ["Position comparison", "Placement decisions", "Needs notes", "Repeat same tone"]
+      ]
+    }
+  },
+  {
+    slug: "audio-test-app-for-speaker-placement",
+    category: "Speaker Tools",
+    title: "Audio Test App For Speaker Placement: Tones, Channels, And Listening Positions",
+    description: "How to use an audio test app to compare speaker placement, stereo balance, listening positions, bass response, and repeatable room checks.",
+    kicker: "Speaker placement",
+    readTime: "8 min",
+    accent: "cadenza",
+    image: speakerToolsImage,
+    sections: [
+      ["Placement Tests Need Repeatable Signals", "Moving speakers while playing random music makes comparison hard. A tone generator and channel playback create a repeatable reference so the listener can judge the room change more clearly."],
+      ["Mark The Listening Position", "Sit or stand in the same place for each test. If the listener moves while the speaker moves, the test has two variables and the result becomes confusing."],
+      ["Use Channel Tests For Symmetry", "Left and right speakers should be checked separately before stereo playback. This helps reveal whether one side is blocked by furniture, closer to a wall, or aimed differently."],
+      ["Finish With Real Content", "Controlled tones are useful, but the final check should use ordinary audio at comfortable volume. The best placement is the one that works for the content the person actually listens to."]
+    ],
+    checklist: ["Use the same test tone for each placement.", "Keep the listener position fixed.", "Check left and right separately.", "Take notes after each move.", "Confirm with normal audio last."],
+    chart: {
+      title: "Placement test repeatability score",
+      caption: "The more variables you hold steady, the easier placement decisions become.",
+      unit: "",
+      bars: [["Random song", 2], ["Fixed tone", 5], ["Channel test", 4], ["Same seat", 5], ["Notes", 4]]
+    },
+    deepDive: {
+      figureTitle: "Room placement comparison model",
+      figureCaption: "Change one placement variable at a time and keep the test signal consistent.",
+      figureStats: [["1 seat", "Fixed listening point"], ["2 channels", "Check symmetry"], ["1 tone", "Repeatable signal"]],
+      comparisonTitle: "Placement variables",
+      comparisonColumns: ["Variable", "What it changes", "Risk", "Control"],
+      comparisonRows: [
+        ["Wall distance", "Bass and reflections", "Boom or thinness", "Move in small steps"],
+        ["Toe-in", "Stereo image", "Too narrow or too bright", "Compare same track after tones"],
+        ["Furniture", "Blockage and reflections", "One-sided sound", "Test channels separately"],
+        ["Listener position", "Perceived balance", "False speaker problem", "Mark the seat"]
+      ]
+    }
+  },
+  {
+    slug: "reference-sound-level-meter-basics",
+    category: "Speaker Tools",
+    title: "Reference Sound Level Meter Basics: Compare Loudness Without Pretending It Is A Lab",
+    description: "How to use a reference sound level meter view for relative loudness checks, safer listening habits, and repeatable audio experiments on iPhone.",
+    kicker: "Sound level",
+    readTime: "8 min",
+    accent: "cadenza",
+    image: speakerToolsImage,
+    sections: [
+      ["A Phone Meter Is A Reference Tool", "A reference sound level view can help compare relative loudness between tests, rooms, or settings. It should not be marketed as a calibrated professional meter unless the hardware and calibration support that claim."],
+      ["Use The Same Distance Every Time", "Distance changes level. If the phone is close to one speaker and farther from another, the comparison becomes unfair. Put the phone in the same place for each reading."],
+      ["Compare Changes, Not Absolutes", "The practical question is often whether one setup is louder or quieter than another. A consistent phone position can make those relative changes visible even when absolute accuracy is limited."],
+      ["Protect Listening Comfort", "If a test feels loud, lower it. The meter is a helper, not a reason to keep listening at an uncomfortable level."]
+    ],
+    checklist: ["Treat the meter as a reference, not lab calibration.", "Keep phone distance consistent.", "Use relative comparisons.", "Avoid long loud tone tests.", "Stop when sound feels uncomfortable."],
+    chart: {
+      title: "Consistency factors for loudness comparison",
+      caption: "Reference readings become more useful when distance, tone, and device position stay consistent.",
+      unit: "",
+      bars: [["Distance", 5], ["Tone", 4], ["Position", 5], ["Room noise", 3], ["Notes", 4]]
+    },
+    deepDive: {
+      figureTitle: "Relative loudness check workflow",
+      figureCaption: "A consistent setup makes a reference meter useful for comparison even when it is not a certified meter.",
+      figureStats: [["Same spot", "Repeatable phone position"], ["Relative", "Compare changes"], ["Comfort", "Volume limit"]],
+      comparisonTitle: "Meter use cases",
+      comparisonRows: [
+        ["Relative room check", "Comparing two placements", "Good fit", "Keep distance fixed"],
+        ["Professional calibration", "Certified measurements", "Not the right claim", "Use calibrated gear"],
+        ["Listening comfort", "Avoiding harsh levels", "Good fit", "Lower volume if tiring"],
+        ["Speaker repair proof", "Hardware diagnosis", "Not supported", "Use service tools"]
+      ]
+    }
+  },
+  {
+    slug: "work-shift-schedule-calendar-rotating-shifts",
+    category: "Work Shift",
+    title: "Work Shift Schedule Calendar: Plan Rotating Shifts Without Screenshots",
+    description: "A guide to replacing messy roster screenshots with a generated work shift calendar for rotating shifts, days off, and private schedule planning.",
+    kicker: "Rotating shifts",
+    readTime: "8 min",
+    accent: "tile",
+    image: workShiftImage,
+    sections: [
+      ["Shift Workers Need A Live Calendar", "A screenshot of a roster is easy to lose and hard to update. A shift calendar app turns a repeating pattern into a live schedule so the worker can check today, tomorrow, and the next day off without scrolling through messages."],
+      ["Start With The Pattern You Actually Work", "Common rotations such as 6x2, 5x2, 4x2, 3x1, 2x1, 1x1, 5x1, and 4x1 work only when the start date is correct. The first day off or first known shift anchors the whole calendar."],
+      ["Use Color For Fast Scanning", "Shift calendars are glanced at under time pressure. Colors for day shift, night shift, rest day, vacation, and special notes make the schedule easier to read than plain text."],
+      ["Keep The Schedule Private", "Work patterns can reveal where someone is, when they sleep, and when the home is empty. A no-login local schedule is a practical privacy benefit, not just a convenience feature."]
+    ],
+    checklist: ["Enter the correct rotation pattern.", "Anchor the calendar with a known date.", "Use clear colors for shift types.", "Check upcoming days off.", "Keep private schedules local unless sharing is intentional."],
+    chart: {
+      title: "Common roster lookup friction",
+      caption: "Generated calendars reduce repeated searching through chats, screenshots, and printed schedules.",
+      unit: "",
+      bars: [["Screenshot", 5], ["Chat photo", 4], ["Paper roster", 3], ["Generated app", 1]]
+    },
+    deepDive: {
+      figureTitle: "From rotation pattern to live calendar",
+      figureCaption: "Once the pattern and anchor date are known, the calendar can project future work and rest days.",
+      figureStats: [["6x2", "Common rotation"], ["1 anchor", "Known start date"], ["0 login", "Private setup"]],
+      comparisonTitle: "Roster tracking methods",
+      comparisonRows: [
+        ["Screenshot", "Quick capture", "Becomes outdated", "Use only as source input"],
+        ["Paper schedule", "Visible at work", "Not always with you", "Copy pattern into app"],
+        ["Group chat", "Team updates", "Hard to search", "Confirm changes manually"],
+        ["Shift calendar app", "Personal planning", "Needs correct pattern", "Best for recurring rotations"]
+      ]
+    }
+  },
+  {
+    slug: "6x2-shift-schedule-planner-calendar",
+    category: "Work Shift",
+    title: "6x2 Shift Schedule Planner: Build A Work And Rest Calendar In Seconds",
+    description: "How to plan a 6x2 shift schedule, choose the right anchor date, review rest days, and avoid roster confusion with Work Shift Schedule Calendar.",
+    kicker: "6x2 schedule",
+    readTime: "8 min",
+    accent: "tile",
+    image: workShiftImage,
+    sections: [
+      ["A 6x2 Pattern Is Simple Until You Lose The Anchor", "Six work days followed by two rest days is easy to describe, but the calendar only works when the anchor date is correct. If the first day off is wrong, every future date shifts."],
+      ["Set The First Known Day Carefully", "Use a recent confirmed schedule date rather than memory. The app can project forward, but the start point must match the real roster."],
+      ["Check Pay Periods And Weekends Separately", "A 6x2 cycle does not follow a normal Monday-Friday week. Review weekends, holidays, and pay periods after the rotation is generated."],
+      ["Keep Exceptions Visible", "Overtime, swaps, vacation, sick leave, and training days should be added as visible exceptions so the base rotation does not hide real changes."]
+    ],
+    checklist: ["Confirm the 6x2 pattern.", "Choose a reliable anchor date.", "Review weekends and holidays.", "Add overtime and swaps as exceptions.", "Check upcoming rest days before making plans."],
+    chart: {
+      title: "Eight-day 6x2 rotation",
+      caption: "A 6x2 schedule repeats across an eight-day cycle, so weekends drift over time.",
+      unit: "",
+      bars: [["Work 1", 1], ["Work 2", 1], ["Work 3", 1], ["Work 4", 1], ["Work 5", 1], ["Work 6", 1], ["Off 1", 0], ["Off 2", 0]]
+    },
+    deepDive: {
+      figureTitle: "6x2 rotation anchor model",
+      figureCaption: "The anchor date is the difference between a useful future calendar and a shifted one.",
+      figureStats: [["6 work", "Work block"], ["2 off", "Rest block"], ["8 days", "Full cycle"]],
+      comparisonTitle: "6x2 planning checkpoints",
+      comparisonColumns: ["Checkpoint", "Why it matters", "Common mistake", "Fix"],
+      comparisonRows: [
+        ["Anchor date", "Sets every future day", "Using memory", "Use confirmed roster"],
+        ["Weekend drift", "Affects family plans", "Assuming fixed weekends", "Review month view"],
+        ["Exceptions", "Real shifts change", "Overwriting pattern", "Add visible notes"],
+        ["Sharing", "Others need clarity", "Sending old screenshot", "Share current calendar"]
+      ]
+    }
+  },
+  {
+    slug: "no-login-shift-calendar-privacy",
+    category: "Work Shift",
+    title: "No-Login Shift Calendar Privacy: Why Your Work Roster Should Stay Local",
+    description: "Why shift schedules can reveal private routines, and how an offline no-login shift calendar helps workers plan without handing rosters to a cloud account.",
+    kicker: "Shift privacy",
+    readTime: "8 min",
+    accent: "tile",
+    image: workShiftImage,
+    sections: [
+      ["A Work Schedule Is Personal Data", "A shift calendar can reveal when someone is at work, when they sleep, when they commute, and when they are away from home. That information deserves more care than a casual screenshot in a random app."],
+      ["No Login Removes A Barrier", "Shift workers often need a quick answer: am I working today? Account creation slows that down and creates another place where schedule data can live."],
+      ["Local Planning Still Supports Sharing", "Privacy does not mean isolation. A local schedule can still be shared intentionally with family or coworkers when needed. The difference is that sharing is a choice, not the default."],
+      ["Offline Access Matters On The Job", "Factories, hospitals, warehouses, and transit areas do not always have reliable service. A shift calendar should answer the schedule question without depending on a cloud dashboard."]
+    ],
+    checklist: ["Treat rosters as private routine data.", "Avoid unnecessary account setup.", "Use local schedule storage where possible.", "Share only when needed.", "Keep access available offline."],
+    chart: {
+      title: "Privacy exposure by schedule method",
+      caption: "A local no-login calendar keeps fewer copies of personal roster data.",
+      unit: "",
+      bars: [["Cloud account", 5], ["Team chat", 4], ["Shared sheet", 4], ["Local app", 1]]
+    },
+    deepDive: {
+      figureTitle: "Private roster data boundary",
+      figureCaption: "The safest workflow keeps the base schedule local and makes sharing intentional.",
+      figureStats: [["0 login", "No account required"], ["1 device", "Local roster"], ["Share when needed", "User-controlled export"]],
+      comparisonTitle: "Schedule privacy tradeoffs",
+      comparisonRows: [
+        ["Cloud calendar", "Cross-device sync", "More copies of routine data", "Use only if needed"],
+        ["Group chat", "Fast team updates", "Hard to control history", "Avoid as personal archive"],
+        ["Paper roster", "Low tech", "Easy to lose", "Use for reference"],
+        ["Local shift app", "Private daily lookup", "Device-specific", "Good default"]
+      ]
+    }
+  },
+  {
+    slug: "shift-calendar-for-nurses-security-drivers",
+    category: "Work Shift",
+    title: "Shift Calendar For Nurses, Security Staff, Drivers, And Factory Teams",
+    description: "How rotating-shift workers can use a private schedule calendar to plan sleep, family time, commutes, overtime, and days off across changing rosters.",
+    kicker: "Shift workers",
+    readTime: "8 min",
+    accent: "tile",
+    image: workShiftImage,
+    sections: [
+      ["Different Jobs Share The Same Planning Problem", "Nurses, security staff, drivers, warehouse teams, plant operators, and retail workers may have different duties, but the schedule problem is similar: shifts rotate, rest days move, and plans depend on knowing the next block clearly."],
+      ["Use The Calendar For Life Planning", "A shift calendar is not only for work attendance. It helps plan sleep, appointments, childcare, commute timing, family events, and recovery days."],
+      ["Make Overtime And Swaps Visible", "Rotating schedules break when exceptions are hidden. Add overtime, swaps, training, vacation, and sick days as visible entries so the calendar reflects reality."],
+      ["Check Fatigue Patterns", "Long runs of early starts, night shifts, or quick turnarounds should be easy to spot. A visual calendar helps workers notice difficult weeks before they arrive."]
+    ],
+    checklist: ["Use role-specific shift labels.", "Plan sleep and commute around shift blocks.", "Add swaps and overtime as exceptions.", "Review difficult weeks ahead.", "Share the current plan with family when useful."],
+    chart: {
+      title: "Planning needs by shift-worker group",
+      caption: "Different roles use the same calendar foundation but care about different details.",
+      unit: "",
+      bars: [["Nurses", 5], ["Security", 4], ["Drivers", 4], ["Warehouse", 3], ["Retail", 3]]
+    },
+    deepDive: {
+      figureTitle: "Rotating work-life planning view",
+      figureCaption: "A shift calendar becomes useful when work blocks, rest blocks, and exceptions are visible together.",
+      figureStats: [["Roles", "Nurses, drivers, security"], ["Exceptions", "Swaps and overtime"], ["Month view", "Long-range planning"]],
+      comparisonTitle: "Role-specific schedule priorities",
+      comparisonColumns: ["Role", "Key schedule need", "Calendar risk", "Useful view"],
+      comparisonRows: [
+        ["Nurse", "Night shift and rest recovery", "Quick turnarounds", "Week and month view"],
+        ["Security", "Coverage and post changes", "Swapped shifts", "Exception notes"],
+        ["Driver", "Start times and route days", "Early fatigue", "Upcoming block"],
+        ["Factory team", "Rotation blocks", "Pattern drift", "Cycle view"]
+      ]
+    }
+  },
+  {
+    slug: "work-shift-reminders-day-off-planning",
+    category: "Work Shift",
+    title: "Work Shift Reminders And Day-Off Planning: Stop Missing The Pattern",
+    description: "A practical workflow for using a shift calendar to see tomorrow's shift, next rest day, overtime blocks, and personal plans without roster confusion.",
+    kicker: "Day-off planning",
+    readTime: "7 min",
+    accent: "tile",
+    image: workShiftImage,
+    sections: [
+      ["The Most Common Question Is Tomorrow", "Shift workers often need one fast answer: what am I working tomorrow? A good calendar should make tomorrow's shift and the next day off visible without digging through the roster."],
+      ["Plan From Rest Days Backward", "Instead of only marking work days, use rest days as planning anchors. Appointments, family events, errands, and recovery time fit better when days off are obvious."],
+      ["Keep Reminders Simple", "Too many alerts become noise. Use reminders for shift starts, unusual changes, or important days off rather than every normal day in the rotation."],
+      ["Review The Week Before It Starts", "A weekly review catches overtime, swaps, and difficult shift sequences early. It takes less time than fixing a missed shift or canceled plan."]
+    ],
+    checklist: ["Check tomorrow's shift first.", "Use days off as planning anchors.", "Add reminders only for meaningful events.", "Review the coming week.", "Keep exceptions visible on the calendar."],
+    chart: {
+      title: "High-value shift calendar checks",
+      caption: "The most useful checks are the ones workers repeat every week.",
+      unit: "",
+      bars: [["Tomorrow", 5], ["Next day off", 5], ["Overtime", 4], ["Swap", 4], ["Week review", 3]]
+    },
+    deepDive: {
+      figureTitle: "Day-off planning workflow",
+      figureCaption: "A shift calendar is most useful when it makes rest days and exceptions as visible as work days.",
+      figureStats: [["Tomorrow", "Fastest lookup"], ["Next off", "Planning anchor"], ["Exceptions", "Prevent surprises"]],
+      comparisonTitle: "Reminder strategy",
+      comparisonRows: [
+        ["Every shift alert", "Simple automation", "Notification fatigue", "Use carefully"],
+        ["Exception alerts", "Swaps and overtime", "Needs manual entry", "High signal"],
+        ["Day-off planning", "Personal life", "Can be forgotten", "Review weekly"],
+        ["Week preview", "Catch conflicts", "Requires habit", "Best recurring check"]
+      ]
+    }
+  }
+);
+
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {
     question: "How should a builder prove that plywood optimization is saving money instead of just making a prettier layout?",
@@ -5610,6 +5980,16 @@ const relatedAppDetails = {
     href: "/apps/private-meeting-transcriber/",
     name: "Private Meeting Transcriber",
     description: "Open the Private Meeting Transcriber app detail page for offline speech to text, speaker labels, meetings, interviews, lectures, and voice notes."
+  },
+  "Speaker Tools": {
+    href: "/apps/speaker-tools-audio-test/",
+    name: "Speaker Tools - Audio Test",
+    description: "Open the Speaker Tools app detail page for frequency generation, low-frequency tones, stereo channel playback, and reference sound level checks."
+  },
+  "Work Shift": {
+    href: "/apps/work-shift-schedule-calendar/",
+    name: "Work Shift Schedule Calendar",
+    description: "Open the Work Shift Schedule Calendar app detail page for rotating shifts, 6x2 schedules, days off, private calendars, and work roster planning."
   },
   Cadenza: {
     href: "/apps/cadenza-metronome-and-tuner/",
@@ -6174,6 +6554,8 @@ function blogIndex() {
     ["SnapReceipt", "snapreceipt"],
     ["SnapLabel", "snaplabel"],
     ["Private Meeting", "private-meeting"],
+    ["Speaker Tools", "speaker-tools"],
+    ["Work Shift", "work-shift"],
     ["Cadenza", "cadenza"],
     ["Tinnitus", "tinnitus"],
     ["Atomic Clock", "atomic-clock"]
@@ -6189,7 +6571,7 @@ function blogIndex() {
 <html lang="en">
 ${head({
     title: "Blogs | WoodCutTool",
-    description: "Research-style articles about CutList optimization, SnapLabel photo labels, private meeting transcription, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
+    description: "Research-style articles about CutList optimization, SnapLabel photo labels, private meeting transcription, speaker audio tests, work shift schedules, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
     canonical: "https://woodcuttool.com/blog/"
   })}
 <body>
@@ -6209,7 +6591,7 @@ ${head({
           <div class="blog-directory-content">
           <label class="blog-search">
             <span>Search the library</span>
-            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search CutList, SnapLabel, Private Meeting...">
+            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search CutList, Speaker Tools, Work Shift...">
           </label>
           <nav class="blog-directory-nav" aria-label="Blog topic shortcuts">
             ${categoryLinks}
@@ -6234,8 +6616,8 @@ ${head({
       <div class="blog-hero-copy">
         <p class="breadcrumb"><a href="/">Home</a> / Blogs</p>
         <p class="eyebrow">Industry research library</p>
-        <h1>Research notes for builders, makers, document workflows, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.</h1>
-        <p class="lead">Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
+        <h1>Research notes for builders, makers, document workflows, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.</h1>
+        <p class="lead">Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
       </div>
       <div class="blog-console" aria-label="Blog topic map">
         <div class="console-top"><span></span><span></span><span></span></div>
@@ -6260,6 +6642,8 @@ ${head({
       <a href="#snapreceipt">SnapReceipt</a>
       <a href="#snaplabel">SnapLabel</a>
       <a href="#private-meeting">Private Meeting</a>
+      <a href="#speaker-tools">Speaker Tools</a>
+      <a href="#work-shift">Work Shift</a>
       <a href="#cadenza">Cadenza</a>
       <a href="#tinnitus">Tinnitus</a>
     </section>
@@ -6306,6 +6690,16 @@ ${head({
     <section class="blog-section" id="private-meeting" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Private Meeting</p><h2>Private meeting transcription, speaker labels, offline notes, interviews, lectures, and voice-to-text workflows.</h2></div>
       <div class="blog-grid">${articles.filter((article) => article.category === "Private Meeting").map(articleCard).join("\n        ")}</div>
+    </section>
+
+    <section class="blog-section" id="speaker-tools" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">Speaker Tools</p><h2>Frequency generation, stereo channel checks, speaker placement, low-frequency tones, and reference sound level workflows.</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === "Speaker Tools").map(articleCard).join("\n        ")}</div>
+    </section>
+
+    <section class="blog-section" id="work-shift" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">Work Shift</p><h2>Rotating shifts, 6x2 schedules, day-off planning, private roster calendars, and shift-worker workflows.</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === "Work Shift").map(articleCard).join("\n        ")}</div>
     </section>
 
     <section class="blog-section" id="cadenza" data-blog-section>
@@ -6492,6 +6886,8 @@ const zhCategory = {
   SnapReceipt: "SnapReceipt",
   SnapLabel: "SnapLabel",
   "Private Meeting": "私密会议转写",
+  "Speaker Tools": "Speaker Tools",
+  "Work Shift": "排班日历",
   Cadenza: "Cadenza",
   Tinnitus: "耳鸣",
   "Classic guide": "经典指南"
@@ -6597,6 +6993,8 @@ function zhKicker(article) {
   if (article.category === "SnapReceipt") return "费用记录";
   if (article.category === "SnapLabel") return "标签制作";
   if (article.category === "Private Meeting") return "会议转写";
+  if (article.category === "Speaker Tools") return "音频测试";
+  if (article.category === "Work Shift") return "排班规划";
   if (article.category === "Cadenza") return "音乐练习";
   return "指南";
 }
@@ -6622,6 +7020,12 @@ function zhDescription(article) {
   }
   if (article.category === "Private Meeting") {
     return `围绕“${zhTitle(article)}”的私密会议转写流程，帮助用户在设备端处理会议、采访、课堂和语音备忘录，并复盘说话人与行动项。`;
+  }
+  if (article.category === "Speaker Tools") {
+    return `围绕“${zhTitle(article)}”的音频测试流程，帮助用户用频率发生器、左右声道、低频音和参考音量读数做更可重复的听感检查。`;
+  }
+  if (article.category === "Work Shift") {
+    return `围绕“${zhTitle(article)}”的排班日历流程，帮助轮班工作者规划 6x2 等循环班表、休息日、加班、换班和私密本地日历。`;
   }
   if (article.category === "Cadenza") {
     return `围绕“${zhTitle(article)}”的音乐练习流程，帮助演奏者把节拍器、调音器、曲目单、速度笔记和离线隐私放在同一个练习工具里。`;
@@ -6869,8 +7273,10 @@ function generateBlogTranslations() {
   const zhCN = {
     "Research notes for builders, makers, and layout-obsessed planners.": "给建造者、手作爱好者和排版控的研究笔记。",
     "Research notes for builders, makers, document workflows, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、文档流程、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
+    "Research notes for builders, makers, document workflows, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、文档流程、音频工具、排班日历、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
     "Deeper articles on CutList optimization, QuiltFit planning, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、QuiltFit 规划、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、SnapLabel 照片标签、私密会议转写、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
+    "Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Sheet optimization and shop workflow.": "板材优化与工坊流程。",
     "Digital quilt planning and fabric decisions.": "数字化拼布规划与布料决策。",
     "Stringer geometry, comfort, and remodel planning.": "楼梯梁几何、舒适度与改造规划。",
@@ -6878,6 +7284,8 @@ function generateBlogTranslations() {
     "Receipt tracking, mileage logs, and private expense records for contractors, makers, and small business.": "面向承包商、创作者和小企业的收据追踪、里程记录与私密费用记录。",
     "AI photo label making, printable labels, batch labels, and organization workflows.": "AI 照片标签制作、可打印标签、批量标签和收纳流程。",
     "Private meeting transcription, speaker labels, offline notes, interviews, lectures, and voice-to-text workflows.": "私密会议转写、说话人标签、离线笔记、采访、课堂和语音转文字流程。",
+    "Frequency generation, stereo channel checks, speaker placement, low-frequency tones, and reference sound level workflows.": "频率发生器、立体声声道检查、扬声器摆位、低频音和参考音量流程。",
+    "Rotating shifts, 6x2 schedules, day-off planning, private roster calendars, and shift-worker workflows.": "轮班、6x2 班表、休息日规划、私密班表日历和轮班工作者流程。",
     "Metronome, tuner, rhythm, intonation, and private music practice workflows.": "节拍器、调音器、节奏、音准和私密音乐练习流程。",
     "Sound masking, sleep sounds, privacy, and evidence-aware app positioning.": "声音遮蔽、睡眠声音、隐私和基于证据边界的 App 定位。",
     "Existing WoodCutTool guides.": "已有 WoodCutTool 指南。",
