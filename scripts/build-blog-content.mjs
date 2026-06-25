@@ -5360,6 +5360,11 @@ const relatedAppDetails = {
     href: "/apps/cadenza-metronome-and-tuner/",
     name: "Cadenza: Metronome & Tuner",
     description: "Open the Cadenza app detail page for metronome, tuner, setlists, drone tones, BPM notes, and private practice workflows."
+  },
+  Tinnitus: {
+    href: "/apps/tinnitus-relief-sound-masking/",
+    name: "Tinnitus Relief: Sound Masking",
+    description: "Open the Tinnitus Relief app detail page for offline sound masking, white noise, rain, ocean, fan sounds, saved presets, sleep timer, and private on-device use."
   }
 };
 

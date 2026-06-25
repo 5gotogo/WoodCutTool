@@ -141,8 +141,8 @@ const categorySections = [
   {
     id: "health-focus-personal-apps",
     title: "Health, Focus & Personal Apps",
-    description: "Calm personal utilities for journaling, habits, fasting, focus, breathing, sleep rhythm, and easier reading.",
-    slugs: ["mindnest-secret-journal", "ritualix-habits-and-streaks", "glowfeel-stress-ease", "fast-rhythm-fasting-and-sleep", "magnifier-reader-big-text"]
+    description: "Calm personal utilities for journaling, habits, tinnitus sound masking, fasting, focus, breathing, sleep rhythm, and easier reading.",
+    slugs: ["mindnest-secret-journal", "ritualix-habits-and-streaks", "glowfeel-stress-ease", "tinnitus-relief-sound-masking", "fast-rhythm-fasting-and-sleep", "magnifier-reader-big-text"]
   },
   {
     id: "games",
@@ -181,6 +181,7 @@ const appTags = {
   "mindnest-secret-journal": ["Journal", "Private", "Notes", "Personal"],
   "ritualix-habits-and-streaks": ["Habits", "Streaks", "Focus", "Routine"],
   "glowfeel-stress-ease": ["Breathing", "Stress", "Calm", "Focus"],
+  "tinnitus-relief-sound-masking": ["Tinnitus", "Sound masking", "Offline", "No login"],
   "fast-rhythm-fasting-and-sleep": ["Fasting", "Sleep", "Rhythm", "Health"],
   "magnifier-reader-big-text": ["Magnifier", "Reading", "Big text", "Access"],
   "colorpop-color-block-tap-game": ["Puzzle", "Casual", "Color", "Relax"],
@@ -392,7 +393,7 @@ function appsIndexPage() {
 <html lang="en">
 ${head({
     title: "Privacy-First iPhone Apps for Work, Makers, and Everyday Tools | WoodCutTool",
-    description: "Explore privacy-first iPhone apps by JiaBao Dai, including CutList, QuiltFit, SnapReceipt, PDF Scan, Invoice Maker, Cadenza, and other offline tools for makers, small businesses, and everyday work.",
+    description: "Explore privacy-first iPhone apps by JiaBao Dai, including CutList, QuiltFit, SnapReceipt, PDF Scan, Invoice Maker, Cadenza, Tinnitus Relief, and other offline tools for makers, small businesses, and everyday work.",
     canonical: "https://woodcuttool.com/apps/",
     jsonLd: appsIndexJsonLd()
   })}
@@ -404,7 +405,7 @@ ${head({
       <p class="breadcrumb"><a href="/">Home</a> / Apps</p>
       <p class="eyebrow">App directory</p>
       <h1>Privacy-First iPhone Apps for Work, Makers, and Everyday Tools</h1>
-      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
+      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, tinnitus sound masking, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
     </section>
 ${featuredAppsSection()}
 ${categoryNavSection()}

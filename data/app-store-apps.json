@@ -657,5 +657,25 @@
     "formattedPrice": "Free",
     "trackContentRating": "4+",
     "sellerName": "家宝 戴"
+  },
+  {
+    "id": 6782496783,
+    "slug": "tinnitus-relief-sound-masking",
+    "name": "Tinnitus Relief: Sound Masking",
+    "genre": "Music",
+    "genres": [
+      "Music"
+    ],
+    "url": "https://apps.apple.com/us/app/tinnitus-relief-sound-masking/id6782496783",
+    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/26/85/2926852b-12c7-43bc-effd-7d49e72cae78/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshotUrls": [],
+    "description": "Tinnitus Relief is a sound masking and relaxation companion designed to help you create a calmer, more comfortable listening environment — entirely offline, on your iPhone.\n\nWhether you're trying to relax before sleep, focus during work, or simply enjoy a moment of calm, Tinnitus Relief generates rich, real-time ambient soundscapes that play continuously with no internet connection required. Every sound is synthesized live on your device — no audio files to download, no buffering, no waiting.\n\nWHY PEOPLE USE TINNITUS RELIEF\n\n* REAL-TIME SOUND GENERATION\nWhite noise, pink noise, brown noise, rain, ocean waves, wind, and fan sounds are created live on-device and loop seamlessly.\n\n* PERSONALIZED NOTCH FILTER\nSet a reference frequency and enable a narrow notch in the ambient sound for a personalized masking experience. Turn it off anytime.\n\n* FREQUENCY MATCHING\nUse a simple slider-based tool to find the pitch you notice most, so the notch filter can be tuned specifically to you.\n\n* QUICK LISTENING PROFILE\nA short guided listening check helps fine-tune the EQ for a more comfortable listening experience. This is not a medical hearing test and is not a substitute for one.\n\n* MIX UP TO 4 SOUNDS\nLayer rain with fan, or pink noise with ocean waves, and build the ambient blend that helps you relax or focus.\n\n* SLEEP TIMER\nSet the sound to fade out automatically so you can drift off without needing to stop it yourself.\n\n* SAVED PRESETS\nSave your favorite sound combinations and reload them instantly.\n\n* PROGRESS & STATS\nSee your listening streak, daily minutes, and recent sessions at a glance.\n\nBUILT FOR PRIVACY — OFFLINE, ON-DEVICE, NO LOGIN\n\nTinnitus Relief works completely offline. There is no account, no sign-up, and no login of any kind. All sound generation and all of your data — including your listening profile, presets, and session history — stay on your device. Nothing is uploaded to the cloud, nothing is shared with third parties, and nothing requires a network connection to function.\n\nIMPORTANT — NOT A MEDICAL DEVICE\n\nTinnitus Relief is designed for relaxation, focus, and sound masking purposes only. It is not a medical device and is not intended to diagnose, treat, cure, or prevent tinnitus or any other medical condition. The Listening Profile and Frequency Match tools are comfort and personalization features, not clinical or audiological assessments. If you have persistent ringing in your ears, hearing changes, or any other hearing concern, please consult a licensed healthcare professional or audiologist.\n\nWHO IT'S FOR\n\n* Anyone looking for calming background sound to relax or fall asleep\n* People who want a personalized ambient masking sound\n* Students and professionals who focus better with steady background noise\n* Light sleepers and frequent travelers\n* Anyone who values offline, private, on-device apps\n\nSupport:\nhttps://woodcuttool.com/legal/Tinnitus/support/\n\nPrivacy Policy:\nhttps://woodcuttool.com/legal/Tinnitus/privacy/\n\nTerms of Use:\nhttps://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "version": "1.0",
+    "releaseDate": "2026-06-24T07:00:00Z",
+    "currentVersionReleaseDate": "2026-06-24T17:44:32Z",
+    "minimumOsVersion": "17.6",
+    "formattedPrice": "Free",
+    "trackContentRating": "4+",
+    "sellerName": "家宝 戴"
   }
 ]
