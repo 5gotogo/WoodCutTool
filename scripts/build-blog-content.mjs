@@ -5414,6 +5414,30 @@ const workShiftImage = {
   label: "Work Shift Schedule Calendar"
 };
 
+const fridgeTrackImage = {
+  src: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/19/1d/e8/191de85a-11dd-762c-c509-3cb540ff1506/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+  alt: "FridgeTrack app icon with fridge inventory illustration",
+  label: "FridgeTrack - Fridge Inventory"
+};
+
+const pantryLabelImage = {
+  src: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ac/cf/5a/accf5a1b-fbf9-1bb3-321e-9e9c874be606/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+  alt: "Pantry Label Maker app icon for kitchen labels",
+  label: "Pantry Label Maker: Kitchen"
+};
+
+const addressLabelImage = {
+  src: "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/ea/8f/d4ea8f80-ace8-9054-3e0f-6f0479f90138/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg",
+  alt: "Address Label Maker app icon with mailing label cards",
+  label: "Address Label Maker & Envelope"
+};
+
+const snapQrImage = {
+  src: "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/93/eb/dc93ebe2-040f-0e9f-96ac-c8a5b9521a83/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+  alt: "SnapQR app icon with QR scanner frame",
+  label: "SnapQR: QR Generator App"
+};
+
 articles.push(
   {
     slug: "best-speaker-test-app-iphone-frequency-generator",
@@ -5772,6 +5796,434 @@ articles.push(
   }
 );
 
+articles.push(
+  {
+    slug: "fridgetrack-fridge-inventory-app-guide",
+    category: "FridgeTrack",
+    title: "Fridge Inventory App Guide: Track Food, Expiration Dates, And Grocery Waste",
+    description: "A practical guide to using FridgeTrack as a fridge inventory app for food storage, expiration reminders, grocery planning, and reducing forgotten items.",
+    kicker: "Fridge inventory",
+    readTime: "8 min",
+    accent: "tile",
+    image: fridgeTrackImage,
+    sections: [
+      ["A Fridge Inventory Starts With Visibility", "Most household food waste begins when people cannot see what they already bought. A fridge inventory app creates a searchable view of fridge, freezer, and pantry items so meals, shopping, and expiration checks start from the same source of truth."],
+      ["Track The Dates That Matter", "Purchase date, opened date, frozen date, and expiration date answer different questions. FridgeTrack works best when the user records the date that affects the next decision: cook it soon, freeze it, finish leftovers, or add it to the next grocery list."],
+      ["Use Categories For Fast Meal Planning", "Meat, dairy, produce, beverages, freezer, pantry, and leftovers should be easy to scan. Categories reduce the time spent searching and make it easier to build meals from what is already at home."],
+      ["Keep Kitchen Data Private", "A kitchen inventory can reveal diet, household routines, allergies, children’s food, and shopping habits. A local-first, no-account workflow keeps that information useful without turning it into a cloud profile."]
+    ],
+    checklist: ["Add items when groceries enter the kitchen.", "Record the date that drives action.", "Separate fridge, freezer, and pantry zones.", "Review expiring items before shopping.", "Keep private food routines on device."],
+    chart: {
+      title: "Fridge inventory checks by value",
+      caption: "The highest-value checks happen before shopping and before food reaches the back of the fridge.",
+      unit: "",
+      bars: [["Expiring soon", 5], ["Freezer items", 4], ["Leftovers", 4], ["Pantry backup", 3], ["Shopping gaps", 5]]
+    },
+    deepDive: {
+      figureTitle: "Kitchen inventory decision loop",
+      figureCaption: "A useful fridge inventory turns grocery storage into a repeatable loop: add, categorize, review, cook, and restock.",
+      figureStats: [["3 zones", "Fridge, freezer, pantry"], ["4 dates", "Purchase, open, freeze, expire"], ["0 login", "Private inventory"]],
+      comparisonTitle: "Fridge tracking methods",
+      comparisonColumns: ["Method", "Best for", "Weak spot", "Better workflow"],
+      comparisonRows: [
+        ["Memory", "Very small households", "Forgotten food and duplicate buying", "Check the inventory before shopping"],
+        ["Paper list", "Visible kitchen notes", "Hard to search or update", "Use for quick capture only"],
+        ["Photo of fridge", "Fast snapshot", "Dates and quantities are missing", "Turn key items into records"],
+        ["FridgeTrack", "Searchable food inventory", "Needs a habit when food enters", "Add items during unpacking"]
+      ]
+    }
+  },
+  {
+    slug: "fridgetrack-food-expiration-reminders",
+    category: "FridgeTrack",
+    title: "Food Expiration Reminder Workflow: Use What You Bought Before It Goes Bad",
+    description: "How FridgeTrack helps households review expiring food, leftovers, freezer items, and pantry staples before the next grocery trip.",
+    kicker: "Expiration reminders",
+    readTime: "7 min",
+    accent: "tile",
+    image: fridgeTrackImage,
+    sections: [
+      ["Expiration Reminders Need Context", "A reminder is only useful when it helps the user decide what to cook or move. The best workflow groups expiring items by location and type instead of showing a noisy list of dates."],
+      ["Review Before The Grocery Trip", "Checking expiring food before shopping prevents duplicate purchases and helps plan meals around what is already at home. This is where a fridge inventory creates immediate savings."],
+      ["Treat Leftovers Differently", "Leftovers need shorter review cycles than unopened pantry goods. Marking opened dates and container notes helps households eat cooked food while it is still useful."],
+      ["Freeze With A Date", "Freezer storage extends time but can also hide food for months. A frozen date turns the freezer from a mystery box into a real storage zone."]
+    ],
+    checklist: ["Review expiring items every few days.", "Check the app before grocery shopping.", "Mark opened leftovers clearly.", "Add frozen dates to freezer items.", "Plan meals around soonest-use items first."],
+    chart: {
+      title: "Reminder urgency by storage zone",
+      caption: "Fridge and leftover items usually need faster review than pantry or freezer staples.",
+      unit: "",
+      bars: [["Leftovers", 5], ["Fridge", 4], ["Produce", 4], ["Freezer", 2], ["Pantry", 2]]
+    },
+    deepDive: {
+      figureTitle: "Expiration review priority",
+      figureCaption: "Reminders should help people cook, freeze, or restock before food becomes waste.",
+      figureStats: [["Soonest first", "Review order"], ["Before shop", "Best habit"], ["Local data", "Private kitchen"]],
+      comparisonTitle: "Expiration reminder signals",
+      comparisonRows: [
+        ["Expiration date", "Unopened products", "Can be approximate", "Use as a planning signal"],
+        ["Opened date", "Sauces, dairy, leftovers", "Often forgotten", "Add when container opens"],
+        ["Frozen date", "Freezer rotation", "Hidden items", "Review monthly"],
+        ["Category", "Meal planning", "Needs consistent entry", "Use simple labels"]
+      ]
+    }
+  },
+  {
+    slug: "fridgetrack-meal-planning-grocery-list",
+    category: "FridgeTrack",
+    title: "Meal Planning From Your Fridge Inventory: Grocery Lists With Less Guesswork",
+    description: "A meal planning workflow that starts with FridgeTrack inventory, checks what is already fresh, and turns missing ingredients into a smarter grocery plan.",
+    kicker: "Meal planning",
+    readTime: "8 min",
+    accent: "tile",
+    image: fridgeTrackImage,
+    sections: [
+      ["Start With What You Already Own", "Meal planning often begins with recipes, but a lower-waste plan begins with inventory. Search fridge, freezer, and pantry first, then choose meals that use the ingredients most likely to expire."],
+      ["Separate Need From Nice-To-Have", "A grocery list is stronger when it distinguishes missing essentials from optional extras. Inventory helps identify whether the household is truly out of eggs, rice, sauce, or vegetables."],
+      ["Use Freezer Items As Backup Meals", "Freezer items are useful when schedules change. Keeping them visible makes weeknight planning more flexible and reduces last-minute takeout decisions."],
+      ["Keep The Workflow Light", "A kitchen inventory should not feel like warehouse software. Add enough detail to make decisions, but keep names, categories, and dates simple enough to maintain."]
+    ],
+    checklist: ["Search inventory before choosing recipes.", "Use expiring items first.", "Mark true grocery gaps.", "Keep freezer meals visible.", "Avoid over-detailing common items."],
+    chart: {
+      title: "Meal plan inputs that reduce waste",
+      caption: "The best meal plans combine expiring food, pantry staples, freezer backup, and missing grocery items.",
+      unit: "",
+      bars: [["Expiring food", 5], ["Pantry staples", 4], ["Freezer backup", 4], ["Recipe ideas", 3], ["Shopping gaps", 5]]
+    },
+    deepDive: {
+      figureTitle: "Inventory-first meal planning",
+      figureCaption: "Planning from inventory turns the fridge into the first menu draft.",
+      figureStats: [["Use first", "Expiring items"], ["Buy less", "Duplicate prevention"], ["Plan faster", "Searchable storage"]],
+      comparisonTitle: "Meal planning starting points",
+      comparisonColumns: ["Starting point", "Strength", "Waste risk", "FridgeTrack role"],
+      comparisonRows: [
+        ["Recipe first", "Creative meals", "Buys duplicates", "Check ingredients first"],
+        ["Store sale first", "Lower unit price", "Overbuying", "Compare with inventory"],
+        ["Inventory first", "Uses existing food", "Needs item entry", "Best low-waste base"],
+        ["Freezer first", "Fast backup meals", "Hidden old items", "Review dated frozen food"]
+      ]
+    }
+  },
+  {
+    slug: "pantry-label-maker-kitchen-labels-guide",
+    category: "Pantry Label",
+    title: "Pantry Label Maker Guide: Clean Kitchen Labels For Jars, Bins, And Freezer Containers",
+    description: "How to use Pantry Label Maker to create printable pantry labels, spice labels, snack bin labels, freezer labels, and organized kitchen storage.",
+    kicker: "Kitchen labels",
+    readTime: "8 min",
+    accent: "cutlist",
+    image: pantryLabelImage,
+    sections: [
+      ["Kitchen Labels Should Be Readable First", "A pantry label can be beautiful, but it has to work at a glance. Label names, category cues, dates, and quantities should be readable on shelves, jars, bins, freezer bags, and meal-prep containers."],
+      ["Use Templates To Keep Shelves Consistent", "A consistent template makes a kitchen easier to scan. Pantry Label Maker works well when the user chooses one style for pantry jars, another for freezer containers, and a simpler format for temporary leftovers."],
+      ["Add Expiry Dates Only Where They Help", "Not every label needs a date. Use dates for leftovers, opened items, freezer bags, baking ingredients, and bulk foods that may sit for a long time."],
+      ["Print Or Export When The Label Is Final", "Screen labels are drafts. Before printing, check spelling, size, number of copies, and whether the label will fit the container surface."]
+    ],
+    checklist: ["Choose one label style per kitchen zone.", "Keep text short and readable.", "Add expiry dates to items that need them.", "Preview label size before printing.", "Keep pantry label data local."],
+    chart: {
+      title: "Kitchen label usefulness by zone",
+      caption: "Permanent pantry jars and freezer containers benefit most from clear printed labels.",
+      unit: "",
+      bars: [["Pantry jars", 5], ["Spices", 4], ["Freezer bags", 5], ["Snack bins", 3], ["Leftovers", 4]]
+    },
+    deepDive: {
+      figureTitle: "Kitchen label system",
+      figureCaption: "A good label system connects the container, item name, category, and useful date without adding clutter.",
+      figureStats: [["5 styles", "Template choices"], ["No login", "Fast creation"], ["PDF/Print", "Output options"]],
+      comparisonTitle: "Kitchen label types",
+      comparisonRows: [
+        ["Jar label", "Staples and grains", "Needs durable text", "Use consistent style"],
+        ["Freezer label", "Frozen meals and ingredients", "Date is important", "Include freeze date"],
+        ["Snack bin label", "Family organization", "Too much text", "Use short names"],
+        ["Leftover label", "Temporary food", "Changes often", "Print only when useful"]
+      ]
+    }
+  },
+  {
+    slug: "pantry-label-maker-expiry-date-labels",
+    category: "Pantry Label",
+    title: "Expiry Date Labels For Pantry And Freezer: A Simple Kitchen Workflow",
+    description: "A practical expiry date label workflow for pantry staples, freezer meals, leftovers, sauces, baking supplies, and family kitchen organization.",
+    kicker: "Expiry labels",
+    readTime: "7 min",
+    accent: "cutlist",
+    image: pantryLabelImage,
+    sections: [
+      ["Date Labels Reduce Mystery Containers", "A container without a date creates hesitation. Expiry date labels help households decide what to use first, what to freeze, and what should not be forgotten at the back of a shelf."],
+      ["Match The Label To The Food Type", "Pantry staples need names and categories. Freezer meals need dates and portions. Leftovers need short readable labels that can be changed often."],
+      ["Use Categories To Speed Up Restocking", "Pantry, spices, freezer, fridge, baking, drinks, snacks, and other categories make labels useful beyond the individual jar. They also help when planning a grocery list."],
+      ["Avoid Making The System Too Heavy", "The best kitchen label workflow is simple enough to maintain after a busy grocery trip or meal-prep session."]
+    ],
+    checklist: ["Label freezer items with date and name.", "Use expiry dates for opened or bulk goods.", "Keep categories simple.", "Review dated labels before shopping.", "Replace temporary labels when food changes."],
+    chart: {
+      title: "Expiry label detail by food type",
+      caption: "Different kitchen items need different levels of label detail.",
+      unit: "",
+      bars: [["Leftovers", 5], ["Freezer meals", 5], ["Spices", 2], ["Bulk pantry", 4], ["Drinks", 2]]
+    },
+    deepDive: {
+      figureTitle: "Date label decision model",
+      figureCaption: "Use dates where they change behavior; keep stable labels clean.",
+      figureStats: [["Opened", "Useful date"], ["Frozen", "Rotation date"], ["Category", "Shelf scanning"]],
+      comparisonTitle: "What to include on each label",
+      comparisonColumns: ["Item", "Must include", "Optional", "Why"],
+      comparisonRows: [
+        ["Leftovers", "Name and date", "Portion", "Short shelf life"],
+        ["Freezer meal", "Name and frozen date", "Servings", "Avoid mystery bags"],
+        ["Spices", "Name", "Refill date", "Readability matters"],
+        ["Bulk staples", "Name and category", "Expiry date", "Restocking"]
+      ]
+    }
+  },
+  {
+    slug: "pantry-label-maker-no-login-private-labels",
+    category: "Pantry Label",
+    title: "No-Login Pantry Label App: Why Kitchen Labels Should Stay Private",
+    description: "Why pantry labels, expiry dates, notes, and kitchen categories can reveal personal routines, and how a no-login label maker keeps the workflow local.",
+    kicker: "Private labels",
+    readTime: "7 min",
+    accent: "cutlist",
+    image: pantryLabelImage,
+    sections: [
+      ["Kitchen Data Can Be Personal", "A pantry list can reveal allergies, children’s food, diet choices, medical needs, religious food habits, shopping routines, and household size. That makes privacy relevant even for a simple label app."],
+      ["No Login Keeps The Workflow Fast", "A label maker should not require an account just to print a jar label. Pantry Label Maker is stronger when users can open it, create a label, print or export, and move on."],
+      ["On-Device Labels Reduce Cloud Exposure", "Label names, notes, quantities, categories, favorites, and expiry dates are more comfortable when they stay on the iPhone unless the user chooses to export them."],
+      ["Privacy Also Improves Trust", "A kitchen app that does not demand a profile feels easier to use for everyday tasks. The user does not have to decide whether a pantry note belongs in someone else’s database."]
+    ],
+    checklist: ["Avoid account requirements for basic labels.", "Keep label text and dates local.", "Export only when needed.", "Use simple categories instead of profile data.", "Treat kitchen notes as private by default."],
+    chart: {
+      title: "Kitchen label privacy sensitivity",
+      caption: "Some label fields reveal more household information than they appear to at first glance.",
+      unit: "",
+      bars: [["Food names", 3], ["Allergy notes", 5], ["Child items", 4], ["Expiry dates", 3], ["Favorites", 2]]
+    },
+    deepDive: {
+      figureTitle: "Private pantry label workflow",
+      figureCaption: "Create locally, review locally, then print or export only when the user chooses.",
+      figureStats: [["Offline", "Core workflow"], ["No login", "Fast start"], ["No cloud", "Local library"]],
+      comparisonTitle: "Label app privacy patterns",
+      comparisonRows: [
+        ["Cloud account", "Sync across devices", "Uploads kitchen data", "Not needed for basic labels"],
+        ["Spreadsheet", "Flexible records", "Manual formatting", "Useful for bulk imports"],
+        ["No-login app", "Fast private labels", "Single-device workflow", "Best for daily kitchen use"],
+        ["Handwritten labels", "No software", "Hard to keep consistent", "Good temporary fallback"]
+      ]
+    }
+  },
+  {
+    slug: "address-label-maker-envelope-printing-guide",
+    category: "Address Label",
+    title: "Address Label Maker Guide: Print Mailing Labels, Shipping Labels, And Envelopes",
+    description: "How to use Address Label Maker & Envelope for return address labels, mailing labels, shipping labels, envelope layouts, PDFs, and home office printing.",
+    kicker: "Address labels",
+    readTime: "8 min",
+    accent: "cutlist",
+    image: addressLabelImage,
+    sections: [
+      ["Mailing Labels Need Layout Confidence", "Address labels fail when the text is correct but the template, spacing, or print alignment is wrong. A label maker workflow should preview the result before paper is wasted."],
+      ["Choose The Output First", "A sheet of return address labels, a single shipping label, and a printed envelope all need different spacing. Start with the output format before editing typography or decoration."],
+      ["Use Contacts When It Saves Time", "Importing addresses from Contacts can reduce typing errors, especially for invitations, holiday cards, customer packages, and repeated mailings."],
+      ["Export To PDF For Review", "PDF export is useful when the label needs to be checked, shared, archived, or printed from another device."]
+    ],
+    checklist: ["Choose label sheet or envelope size first.", "Preview alignment before printing.", "Check names and postal details manually.", "Use Contacts for repeated addresses.", "Export PDF when another printer is involved."],
+    chart: {
+      title: "Mailing label setup effort",
+      caption: "The right template and preview step usually save more time than styling changes.",
+      unit: "",
+      bars: [["Template", 5], ["Address entry", 4], ["Typography", 2], ["Preview", 5], ["Print test", 4]]
+    },
+    deepDive: {
+      figureTitle: "Printable label workflow",
+      figureCaption: "A reliable mailing label workflow moves from template to data to preview before printing.",
+      figureStats: [["Avery", "Template support"], ["PDF", "Share/export"], ["Envelope", "Mail-ready layout"]],
+      comparisonTitle: "Mailing output types",
+      comparisonRows: [
+        ["Return labels", "Repeated sender address", "Sheet alignment", "Preview full sheet"],
+        ["Shipping labels", "Packages", "Address accuracy", "Use larger format"],
+        ["Envelopes", "Letters and invites", "Positioning", "Choose envelope size"],
+        ["Gift labels", "Decorative use", "Readability", "Keep text clear"]
+      ]
+    }
+  },
+  {
+    slug: "avery-label-template-iphone-printing",
+    category: "Address Label",
+    title: "Avery Label Template Printing On iPhone: Avoid Alignment Waste",
+    description: "A practical iPhone workflow for choosing Avery label templates, previewing address labels, adjusting spacing, and reducing misprinted label sheets.",
+    kicker: "Avery templates",
+    readTime: "7 min",
+    accent: "cutlist",
+    image: addressLabelImage,
+    sections: [
+      ["Template Numbers Matter", "Avery-style label sheets look similar but differ in dimensions, margins, rows, and columns. Using the wrong template can waste an entire sheet even when the address text is perfect."],
+      ["Do A Plain Paper Test First", "Before printing on label stock, print a test on plain paper and hold it against the sheet. This catches margin issues without wasting adhesive labels."],
+      ["Keep Decorative Elements Inside The Safe Area", "Stickers, icons, and large fonts can drift too close to the label edge. Leave room for printer variation and trimming tolerance."],
+      ["Save The Working Setup", "Once alignment works, keep the template and spacing settings for the next mailing session."]
+    ],
+    checklist: ["Confirm template number before design.", "Run a plain paper alignment test.", "Keep text inside safe margins.", "Avoid overly large decorations.", "Save the working setup for reuse."],
+    chart: {
+      title: "Causes of label sheet waste",
+      caption: "Most label waste comes from template and alignment mistakes, not from address text itself.",
+      unit: "",
+      bars: [["Wrong template", 5], ["Printer margin", 4], ["Large design", 3], ["Typo", 3], ["No test print", 5]]
+    },
+    deepDive: {
+      figureTitle: "Avery-style template check",
+      figureCaption: "The label sheet should be treated as a physical grid with margins, not just a blank page.",
+      figureStats: [["5160+", "Common template family"], ["1 test", "Plain paper check"], ["Safe area", "Print tolerance"]],
+      comparisonTitle: "Alignment checks before printing",
+      comparisonColumns: ["Check", "Why it matters", "Risk if skipped", "Action"],
+      comparisonRows: [
+        ["Template number", "Controls grid dimensions", "Every label shifts", "Match sheet package"],
+        ["Paper test", "Verifies margins", "Wasted label stock", "Print plain first"],
+        ["Safe area", "Allows printer variation", "Cut-off text", "Reduce font or art"],
+        ["Preview", "Catches spacing", "Crowded labels", "Review full sheet"]
+      ]
+    }
+  },
+  {
+    slug: "holiday-card-return-address-labels",
+    category: "Address Label",
+    title: "Holiday Card Return Address Labels: Faster Envelopes For Family And Small Business Mail",
+    description: "How to prepare holiday card return address labels, decorative mailing labels, envelope previews, and PDF exports without rebuilding the layout every year.",
+    kicker: "Holiday labels",
+    readTime: "7 min",
+    accent: "cutlist",
+    image: addressLabelImage,
+    sections: [
+      ["Holiday Mail Needs Repeatable Layouts", "Holiday cards, invitations, gift mail, and customer notes often use the same sender address across many envelopes. Saving a clean return address layout saves time every season."],
+      ["Balance Decoration And Readability", "Decorative stickers can make a label feel personal, but the postal information still needs to be clear. Keep the address legible before adding seasonal art."],
+      ["Prepare The List Before Printing", "Check spelling, apartment numbers, postal codes, and duplicate recipients before label stock goes into the printer."],
+      ["Export A PDF Backup", "A PDF backup makes it easier to reprint a few labels later or send the layout to another device."]
+    ],
+    checklist: ["Save a reusable return address design.", "Keep postal text larger than decoration.", "Clean the recipient list before printing.", "Print a test page.", "Export a PDF backup."],
+    chart: {
+      title: "Holiday mailing workflow time",
+      caption: "Reusable sender labels reduce the repeated setup cost of seasonal mail.",
+      unit: " min",
+      bars: [["List cleanup", 20], ["Template setup", 8], ["Decoration", 6], ["Preview", 3], ["Print", 5]]
+    },
+    deepDive: {
+      figureTitle: "Seasonal mailing label system",
+      figureCaption: "Holiday labels work best when sender design, recipient list, and print settings are reusable.",
+      figureStats: [["Reusable", "Sender layout"], ["PDF", "Backup output"], ["Preview", "Before label stock"]],
+      comparisonTitle: "Holiday mailing choices",
+      comparisonRows: [
+        ["Handwriting", "Small personal batches", "Slow for large lists", "Use for special cards"],
+        ["Plain labels", "Fast readable mail", "Less seasonal", "Best default"],
+        ["Decorated labels", "Personal style", "Can hurt readability", "Keep address clear"],
+        ["Envelope print", "Polished look", "Needs setup", "Preview alignment"]
+      ]
+    }
+  },
+  {
+    slug: "snapqr-qr-generator-app-guide",
+    category: "SnapQR",
+    title: "QR Generator App Guide: Create Website, Wi-Fi, Contact, And Text QR Codes",
+    description: "A practical SnapQR guide for generating everyday QR codes for websites, Wi-Fi, contacts, notes, labels, business cards, and printed signs.",
+    kicker: "QR generator",
+    readTime: "8 min",
+    accent: "tile",
+    image: snapQrImage,
+    sections: [
+      ["QR Codes Should Match The Real Use Case", "A website poster, Wi-Fi card, contact card, classroom note, and shipping label all need different QR content. SnapQR works best when the user starts by choosing the content type instead of pasting everything into one generic field."],
+      ["Preview Before Sharing", "A QR code might be printed, posted, emailed, or saved as an image. Previewing the code and label before export prevents embarrassing mistakes in public materials."],
+      ["Use History For Repeated Codes", "People often recreate the same Wi-Fi, contact, app link, or website code many times. History and favorites make repeated codes faster without rebuilding them from scratch."],
+      ["Keep Private QR Content Local", "QR codes can contain Wi-Fi passwords, contact cards, internal links, event details, and personal notes. A no-login, on-device workflow keeps those details under the user's control."]
+    ],
+    checklist: ["Choose the right QR content type.", "Preview the code before export.", "Label important codes clearly.", "Save repeated codes to favorites.", "Avoid uploading private QR content unnecessarily."],
+    chart: {
+      title: "Everyday QR code demand by type",
+      caption: "Website, Wi-Fi, and contact QR codes usually cover most personal and small business needs.",
+      unit: "",
+      bars: [["Website", 5], ["Wi-Fi", 5], ["Contact", 4], ["Text", 3], ["Location", 3]]
+    },
+    deepDive: {
+      figureTitle: "QR creation workflow",
+      figureCaption: "A reliable QR workflow turns content into a scannable code, then labels, saves, and exports it deliberately.",
+      figureStats: [["10+ types", "Common QR content"], ["PNG/PDF", "Export options"], ["No login", "Private workflow"]],
+      comparisonTitle: "QR code content types",
+      comparisonRows: [
+        ["Website", "Menus, posters, flyers", "Broken URL", "Test before print"],
+        ["Wi-Fi", "Guest access", "Password sensitivity", "Keep local"],
+        ["Contact", "Business cards", "Outdated details", "Review fields"],
+        ["Text note", "Labels and reminders", "Too much text", "Keep concise"]
+      ]
+    }
+  },
+  {
+    slug: "snapqr-wifi-qr-code-generator",
+    category: "SnapQR",
+    title: "Wi-Fi QR Code Generator: Share Network Access Without Typing Passwords",
+    description: "How to create Wi-Fi QR codes with SnapQR for home guests, offices, classrooms, rentals, workshops, and event spaces while keeping sensitive details private.",
+    kicker: "Wi-Fi QR",
+    readTime: "7 min",
+    accent: "tile",
+    image: snapQrImage,
+    sections: [
+      ["Wi-Fi Codes Save Repeated Typing", "Guest Wi-Fi is one of the most practical QR code uses. A printed card or saved image lets people join without reading a long password across the room."],
+      ["Treat Network Details As Sensitive", "A Wi-Fi QR code contains network access information. Create it locally, share it intentionally, and avoid posting it where the wrong audience can scan it."],
+      ["Label The Network Clearly", "If there are several networks, the QR label should show which one it joins: guest, office, classroom, event, or rental unit."],
+      ["Test Before Printing", "Scan the finished code with another device before printing or placing it in a public area."]
+    ],
+    checklist: ["Use the correct network name.", "Confirm password spelling.", "Label the intended audience.", "Test with another device.", "Store private Wi-Fi codes locally."],
+    chart: {
+      title: "Wi-Fi sharing friction",
+      caption: "QR access removes most typing friction, but the code still needs privacy boundaries.",
+      unit: "",
+      bars: [["Typed password", 5], ["Text message", 3], ["Printed QR", 1], ["Saved QR", 1], ["Public posting", 4]]
+    },
+    deepDive: {
+      figureTitle: "Guest Wi-Fi QR decision path",
+      figureCaption: "A Wi-Fi QR code should be easy for the right person to scan and hard for the wrong audience to misuse.",
+      figureStats: [["SSID", "Network name"], ["Password", "Sensitive field"], ["Test scan", "Before print"]],
+      comparisonTitle: "Wi-Fi QR placement options",
+      comparisonRows: [
+        ["Home card", "Family guests", "Visible to visitors", "Use guest network"],
+        ["Office desk", "Temporary access", "Too public", "Limit placement"],
+        ["Classroom", "Student setup", "Frequent changes", "Reprint when changed"],
+        ["Rental unit", "Guest convenience", "Old password", "Update between stays"]
+      ]
+    }
+  },
+  {
+    slug: "snapqr-private-qr-code-scanner-history",
+    category: "SnapQR",
+    title: "Private QR Code Scanner History: Save Useful Codes Without A Cloud Account",
+    description: "Why QR scan history can contain private links, Wi-Fi details, contact cards, locations, and notes, and how SnapQR keeps generation and scanning local.",
+    kicker: "Private QR scanner",
+    readTime: "7 min",
+    accent: "tile",
+    image: snapQrImage,
+    sections: [
+      ["Scan History Can Be Sensitive", "A QR scanner history may include internal links, event pages, Wi-Fi details, customer forms, contact cards, invoices, locations, and temporary instructions. That history deserves the same privacy attention as browser history."],
+      ["Favorites Are Better Than Screenshots", "Saving important codes in a QR library is cleaner than keeping screenshots. Labels, favorites, and history make codes easier to find and reuse."],
+      ["No Login Reduces Friction", "A QR tool should open quickly for scanning or generation. No-login workflows are useful when the user needs a code during a meeting, class, event, or packing session."],
+      ["Export Only What Needs To Leave The Device", "Generated codes can be shared as images or PDFs when needed, but private content should stay local by default."]
+    ],
+    checklist: ["Review scan history for sensitive items.", "Favorite codes that need reuse.", "Label generated codes clearly.", "Delete codes that are no longer useful.", "Export only intentional QR content."],
+    chart: {
+      title: "QR history privacy sensitivity",
+      caption: "Wi-Fi, contact, location, and internal link codes can reveal more than a normal note.",
+      unit: "",
+      bars: [["Website", 2], ["Wi-Fi", 5], ["Contact", 4], ["Location", 4], ["Internal link", 5]]
+    },
+    deepDive: {
+      figureTitle: "Local QR library model",
+      figureCaption: "Generate, scan, save, favorite, and export QR codes without making every code a cloud record.",
+      figureStats: [["History", "Recent scans"], ["Favorites", "Reusable codes"], ["On device", "Private storage"]],
+      comparisonTitle: "QR storage patterns",
+      comparisonColumns: ["Pattern", "Benefit", "Privacy risk", "SnapQR approach"],
+      comparisonRows: [
+        ["Screenshot folder", "Simple capture", "Hard to search", "Use labeled history"],
+        ["Web generator", "Quick one-off", "Content leaves device", "Use local generation"],
+        ["Cloud dashboard", "Team management", "Account dependency", "Only if needed"],
+        ["Local QR app", "Private reuse", "Single-device library", "Best everyday default"]
+      ]
+    }
+  }
+);
+
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {
     question: "How should a builder prove that plywood optimization is saving money instead of just making a prettier layout?",
@@ -5990,6 +6442,26 @@ const relatedAppDetails = {
     href: "/apps/work-shift-schedule-calendar/",
     name: "Work Shift Schedule Calendar",
     description: "Open the Work Shift Schedule Calendar app detail page for rotating shifts, 6x2 schedules, days off, private calendars, and work roster planning."
+  },
+  FridgeTrack: {
+    href: "/apps/fridgetrack-fridge-inventory/",
+    name: "FridgeTrack - Fridge Inventory",
+    description: "Open the FridgeTrack app detail page for fridge inventory, food expiration reminders, freezer tracking, pantry records, and private kitchen organization."
+  },
+  "Pantry Label": {
+    href: "/apps/pantry-label-maker-kitchen/",
+    name: "Pantry Label Maker: Kitchen",
+    description: "Open the Pantry Label Maker app detail page for pantry jar labels, freezer labels, expiry dates, printable PDFs, and private no-login kitchen labeling."
+  },
+  "Address Label": {
+    href: "/apps/address-label-maker-and-envelope/",
+    name: "Address Label Maker & Envelope",
+    description: "Open the Address Label Maker app detail page for mailing labels, Avery templates, return address labels, shipping labels, envelopes, PDF export, and printing."
+  },
+  SnapQR: {
+    href: "/apps/snapqr-qr-generator-app/",
+    name: "SnapQR: QR Generator App",
+    description: "Open the SnapQR app detail page for QR generation, scanning, Wi-Fi codes, contact cards, local history, favorites, PNG export, and PDF sharing."
   },
   Cadenza: {
     href: "/apps/cadenza-metronome-and-tuner/",
@@ -6556,6 +7028,10 @@ function blogIndex() {
     ["Private Meeting", "private-meeting"],
     ["Speaker Tools", "speaker-tools"],
     ["Work Shift", "work-shift"],
+    ["FridgeTrack", "fridgetrack"],
+    ["Pantry Label", "pantry-label"],
+    ["Address Label", "address-label"],
+    ["SnapQR", "snapqr"],
     ["Cadenza", "cadenza"],
     ["Tinnitus", "tinnitus"],
     ["Atomic Clock", "atomic-clock"]
@@ -6571,7 +7047,7 @@ function blogIndex() {
 <html lang="en">
 ${head({
     title: "Blogs | WoodCutTool",
-    description: "Research-style articles about CutList optimization, SnapLabel photo labels, private meeting transcription, speaker audio tests, work shift schedules, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
+    description: "Research-style articles about CutList optimization, fridge inventory, pantry labels, address labels, QR codes, SnapLabel photo labels, private meeting transcription, speaker audio tests, work shift schedules, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
     canonical: "https://woodcuttool.com/blog/"
   })}
 <body>
@@ -6591,7 +7067,7 @@ ${head({
           <div class="blog-directory-content">
           <label class="blog-search">
             <span>Search the library</span>
-            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search CutList, Speaker Tools, Work Shift...">
+            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search CutList, QR, labels, fridge...">
           </label>
           <nav class="blog-directory-nav" aria-label="Blog topic shortcuts">
             ${categoryLinks}
@@ -6616,8 +7092,8 @@ ${head({
       <div class="blog-hero-copy">
         <p class="breadcrumb"><a href="/">Home</a> / Blogs</p>
         <p class="eyebrow">Industry research library</p>
-        <h1>Research notes for builders, makers, document workflows, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.</h1>
-        <p class="lead">Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
+        <h1>Research notes for builders, makers, kitchen organizers, QR workflows, document tools, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.</h1>
+        <p class="lead">Deeper articles on CutList optimization, fridge inventory, pantry labeling, address label printing, QR code generation, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.</p>
       </div>
       <div class="blog-console" aria-label="Blog topic map">
         <div class="console-top"><span></span><span></span><span></span></div>
@@ -6644,6 +7120,10 @@ ${head({
       <a href="#private-meeting">Private Meeting</a>
       <a href="#speaker-tools">Speaker Tools</a>
       <a href="#work-shift">Work Shift</a>
+      <a href="#fridgetrack">FridgeTrack</a>
+      <a href="#pantry-label">Pantry Label</a>
+      <a href="#address-label">Address Label</a>
+      <a href="#snapqr">SnapQR</a>
       <a href="#cadenza">Cadenza</a>
       <a href="#tinnitus">Tinnitus</a>
     </section>
@@ -6700,6 +7180,26 @@ ${head({
     <section class="blog-section" id="work-shift" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Work Shift</p><h2>Rotating shifts, 6x2 schedules, day-off planning, private roster calendars, and shift-worker workflows.</h2></div>
       <div class="blog-grid">${articles.filter((article) => article.category === "Work Shift").map(articleCard).join("\n        ")}</div>
+    </section>
+
+    <section class="blog-section" id="fridgetrack" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">FridgeTrack</p><h2>Fridge inventory, expiration reminders, freezer tracking, meal planning, and private kitchen records.</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === "FridgeTrack").map(articleCard).join("\n        ")}</div>
+    </section>
+
+    <section class="blog-section" id="pantry-label" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">Pantry Label</p><h2>Printable pantry labels, expiry date labels, freezer labels, no-login kitchen organization, and label templates.</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === "Pantry Label").map(articleCard).join("\n        ")}</div>
+    </section>
+
+    <section class="blog-section" id="address-label" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">Address Label</p><h2>Mailing labels, Avery templates, return address labels, envelopes, holiday cards, and printable PDFs.</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === "Address Label").map(articleCard).join("\n        ")}</div>
+    </section>
+
+    <section class="blog-section" id="snapqr" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">SnapQR</p><h2>QR code generation, Wi-Fi QR codes, scanning history, private QR libraries, PNG export, and PDF sharing.</h2></div>
+      <div class="blog-grid">${articles.filter((article) => article.category === "SnapQR").map(articleCard).join("\n        ")}</div>
     </section>
 
     <section class="blog-section" id="cadenza" data-blog-section>
@@ -6874,7 +7374,19 @@ const zhArticleTitles = {
   "priviscribe-speaker-labeling-meeting-notes": "会议笔记中的说话人标记：不上传也能知道谁说了什么",
   "private-interview-transcription-app": "私密采访转写 App：在设备端录音、转写和复盘",
   "lecture-transcription-app-for-students": "学生课堂转写 App：离线笔记、复盘和学习",
-  "voice-notes-to-text-private-workflow": "语音备忘录转文字：想法、任务和跟进的私密流程"
+  "voice-notes-to-text-private-workflow": "语音备忘录转文字：想法、任务和跟进的私密流程",
+  "fridgetrack-fridge-inventory-app-guide": "冰箱库存 App 指南：跟踪食物、保质期和浪费",
+  "fridgetrack-food-expiration-reminders": "食物过期提醒流程：先用掉已经买回家的食材",
+  "fridgetrack-meal-planning-grocery-list": "从冰箱库存做 meal plan：更少猜测的购物清单",
+  "pantry-label-maker-kitchen-labels-guide": "Pantry Label Maker 指南：罐子、收纳盒和冷冻盒标签",
+  "pantry-label-maker-expiry-date-labels": "Pantry 和冷冻食物的过期日期标签流程",
+  "pantry-label-maker-no-login-private-labels": "无需登录的 pantry 标签 App：厨房标签也应该保持私密",
+  "address-label-maker-envelope-printing-guide": "Address Label Maker 指南：打印邮寄标签、快递标签和信封",
+  "avery-label-template-iphone-printing": "iPhone 上打印 Avery 标签模板：减少对齐浪费",
+  "holiday-card-return-address-labels": "节日贺卡回邮地址标签：更快处理家庭和小企业邮件",
+  "snapqr-qr-generator-app-guide": "QR 生成器 App 指南：创建网站、Wi-Fi、联系人和文本二维码",
+  "snapqr-wifi-qr-code-generator": "Wi-Fi 二维码生成器：不用手输密码也能分享网络",
+  "snapqr-private-qr-code-scanner-history": "私密二维码扫描历史：不用云账号也能保存有用二维码"
 };
 
 const zhCategory = {
@@ -6888,6 +7400,10 @@ const zhCategory = {
   "Private Meeting": "私密会议转写",
   "Speaker Tools": "Speaker Tools",
   "Work Shift": "排班日历",
+  FridgeTrack: "冰箱库存",
+  "Pantry Label": "厨房标签",
+  "Address Label": "地址标签",
+  SnapQR: "二维码",
   Cadenza: "Cadenza",
   Tinnitus: "耳鸣",
   "Classic guide": "经典指南"
@@ -6964,6 +7480,46 @@ const zhSectionTemplates = {
     ],
     checklist: ["确认录音许可和用途。", "每场会议单独录制。", "复盘时重命名说话人。", "提取决定、问题和行动项。", "只导出必要内容。"]
   },
+  FridgeTrack: {
+    headings: ["先看清现有库存", "记录真正影响决策的日期", "按厨房区域分类", "购物前先复盘"],
+    bodies: [
+      "冰箱管理最怕看不见已经买了什么。FridgeTrack 把冰箱、冷冻室和 pantry 里的食物放进同一个可搜索清单，减少重复购买和遗忘。",
+      "购买日期、开启日期、冷冻日期和保质期各自回答不同问题。只记录能帮助你决定先吃、冷冻、补货或丢弃的日期。",
+      "把食材按肉类、乳制品、蔬果、饮料、剩菜、冷冻和 pantry 分类，做饭和补货时会更快找到重点。",
+      "去超市前查看即将过期和真正缺货的食材。这个小习惯能让购物清单更准确，也能减少冰箱后排的浪费。"
+    ],
+    checklist: ["食物进厨房时及时添加。", "记录保质期、开启日期或冷冻日期。", "区分冰箱、冷冻和 pantry。", "购物前检查即将过期的食物。", "把厨房库存保留在设备端。"]
+  },
+  "Pantry Label": {
+    headings: ["先保证标签可读", "按区域统一模板", "只在需要时添加日期", "打印前检查尺寸"],
+    bodies: [
+      "厨房标签可以漂亮，但首先要一眼读懂。罐子、香料瓶、零食盒、冷冻袋和剩菜盒上的名称、分类和日期都要清楚。",
+      "同一个厨房区域使用一致模板，会让架子更容易扫描。Pantry Label Maker 适合为 pantry、冷冻、冰箱和临时剩菜分别建立简单规则。",
+      "不是所有标签都需要日期。剩菜、开启后的调料、冷冻食物和大包装分装食品更值得加上日期。",
+      "打印前检查拼写、份数、标签大小和容器表面。实体标签贴上去以后，修改成本比屏幕上高。"
+    ],
+    checklist: ["每个厨房区域使用统一样式。", "保持标签文字短而清晰。", "给需要追踪的食物添加日期。", "打印前预览尺寸和份数。", "不需要账号也能制作标签。"]
+  },
+  "Address Label": {
+    headings: ["先选择输出格式", "用模板控制对齐", "打印前核对地址", "保存可复用设计"],
+    bodies: [
+      "邮寄标签、快递标签、回邮地址标签和信封布局需要不同格式。先决定输出类型，再调整字体、间距和装饰。",
+      "Avery 等标签纸对边距、行列和尺寸很敏感。模板选错会让整张标签纸偏移，所以预览和测试打印很重要。",
+      "姓名、门牌号、公寓号、邮编和收件人列表要在打印前人工核对。标签工具可以减少排版错误，但不能替你确认地址真实性。",
+      "节日卡片、小企业发货和家庭邮件经常复用同一套发件人信息。保存设计和 PDF 备份，下次会更快。"
+    ],
+    checklist: ["先选择标签纸或信封尺寸。", "确认模板编号和安全边距。", "打印普通纸测试对齐。", "核对地址和邮编。", "保存 PDF 或可复用布局。"]
+  },
+  SnapQR: {
+    headings: ["先选择二维码类型", "分享前先预览和测试", "用历史和收藏减少重复", "把敏感内容留在本地"],
+    bodies: [
+      "网站、Wi-Fi、联系人、文本、位置和邮件二维码承载的信息不同。SnapQR 的工作流应从内容类型开始，而不是把所有内容塞进一个通用输入框。",
+      "二维码经常会被打印、贴到墙上或发给别人。导出前先预览并用另一台设备扫描，能避免错误链接或不可扫的成品。",
+      "常用的 Wi-Fi、网站、联系人和 app 链接不应该反复重建。历史记录、标签和收藏可以让重复使用更快。",
+      "二维码可能包含 Wi-Fi 密码、联系人、内部链接、地点和私人备注。无需登录、设备端生成和本地历史更适合日常私密二维码。"
+    ],
+    checklist: ["选择网站、Wi-Fi、联系人或文本等类型。", "导出前测试扫描。", "给重要二维码命名。", "把常用码加入收藏。", "敏感二维码只在需要时导出。"]
+  },
   Cadenza: {
     headings: ["先保存练习目标", "用节拍器稳定节奏", "用调音器确认音准", "把设置留给下一次"],
     bodies: [
@@ -6995,6 +7551,10 @@ function zhKicker(article) {
   if (article.category === "Private Meeting") return "会议转写";
   if (article.category === "Speaker Tools") return "音频测试";
   if (article.category === "Work Shift") return "排班规划";
+  if (article.category === "FridgeTrack") return "冰箱库存";
+  if (article.category === "Pantry Label") return "厨房标签";
+  if (article.category === "Address Label") return "地址标签";
+  if (article.category === "SnapQR") return "二维码";
   if (article.category === "Cadenza") return "音乐练习";
   return "指南";
 }
@@ -7026,6 +7586,18 @@ function zhDescription(article) {
   }
   if (article.category === "Work Shift") {
     return `围绕“${zhTitle(article)}”的排班日历流程，帮助轮班工作者规划 6x2 等循环班表、休息日、加班、换班和私密本地日历。`;
+  }
+  if (article.category === "FridgeTrack") {
+    return `围绕“${zhTitle(article)}”的冰箱库存流程，帮助用户管理食物、保质期、冷冻物品、购物清单和更私密的厨房记录。`;
+  }
+  if (article.category === "Pantry Label") {
+    return `围绕“${zhTitle(article)}”的厨房标签流程，帮助用户制作 pantry、香料、冷冻、剩菜和收纳盒标签，并保持无需登录的本地工作流。`;
+  }
+  if (article.category === "Address Label") {
+    return `围绕“${zhTitle(article)}”的地址标签流程，帮助用户制作邮寄标签、Avery 模板、回邮地址、信封、节日卡片和可打印 PDF。`;
+  }
+  if (article.category === "SnapQR") {
+    return `围绕“${zhTitle(article)}”的二维码工作流，帮助用户生成网站、Wi-Fi、联系人、文本和位置二维码，并管理本地扫描历史。`;
   }
   if (article.category === "Cadenza") {
     return `围绕“${zhTitle(article)}”的音乐练习流程，帮助演奏者把节拍器、调音器、曲目单、速度笔记和离线隐私放在同一个练习工具里。`;
@@ -7274,9 +7846,11 @@ function generateBlogTranslations() {
     "Research notes for builders, makers, and layout-obsessed planners.": "给建造者、手作爱好者和排版控的研究笔记。",
     "Research notes for builders, makers, document workflows, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、文档流程、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
     "Research notes for builders, makers, document workflows, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、文档流程、音频工具、排班日历、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
+    "Research notes for builders, makers, kitchen organizers, QR workflows, document tools, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、厨房整理、二维码流程、文档工具、音频工具、排班日历、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
     "Deeper articles on CutList optimization, QuiltFit planning, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、QuiltFit 规划、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、SnapLabel 照片标签、私密会议转写、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
+    "Deeper articles on CutList optimization, fridge inventory, pantry labeling, address label printing, QR code generation, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、冰箱库存、厨房标签、地址标签打印、二维码生成、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Sheet optimization and shop workflow.": "板材优化与工坊流程。",
     "Digital quilt planning and fabric decisions.": "数字化拼布规划与布料决策。",
     "Stringer geometry, comfort, and remodel planning.": "楼梯梁几何、舒适度与改造规划。",
@@ -7286,6 +7860,10 @@ function generateBlogTranslations() {
     "Private meeting transcription, speaker labels, offline notes, interviews, lectures, and voice-to-text workflows.": "私密会议转写、说话人标签、离线笔记、采访、课堂和语音转文字流程。",
     "Frequency generation, stereo channel checks, speaker placement, low-frequency tones, and reference sound level workflows.": "频率发生器、立体声声道检查、扬声器摆位、低频音和参考音量流程。",
     "Rotating shifts, 6x2 schedules, day-off planning, private roster calendars, and shift-worker workflows.": "轮班、6x2 班表、休息日规划、私密班表日历和轮班工作者流程。",
+    "Fridge inventory, expiration reminders, freezer tracking, meal planning, and private kitchen records.": "冰箱库存、过期提醒、冷冻室追踪、meal plan 和私密厨房记录。",
+    "Printable pantry labels, expiry date labels, freezer labels, no-login kitchen organization, and label templates.": "可打印 pantry 标签、过期日期标签、冷冻标签、无需登录的厨房整理和标签模板。",
+    "Mailing labels, Avery templates, return address labels, envelopes, holiday cards, and printable PDFs.": "邮寄标签、Avery 模板、回邮地址标签、信封、节日贺卡和可打印 PDF。",
+    "QR code generation, Wi-Fi QR codes, scanning history, private QR libraries, PNG export, and PDF sharing.": "二维码生成、Wi-Fi 二维码、扫描历史、私密二维码库、PNG 导出和 PDF 分享。",
     "Metronome, tuner, rhythm, intonation, and private music practice workflows.": "节拍器、调音器、节奏、音准和私密音乐练习流程。",
     "Sound masking, sleep sounds, privacy, and evidence-aware app positioning.": "声音遮蔽、睡眠声音、隐私和基于证据边界的 App 定位。",
     "Existing WoodCutTool guides.": "已有 WoodCutTool 指南。",
