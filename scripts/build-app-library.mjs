@@ -21,6 +21,13 @@ function excerpt(description, max = 190) {
   const stop = clean.search(/(?<=[.!?])\s+[A-Z0-9]/);
   let text = stop > 85 ? clean.slice(0, stop + 1) : clean.slice(0, max);
   if (text.length < 95) text = clean.slice(0, max);
+  // Keep meta descriptions within SERP display limits: if the chosen sentence still
+  // overruns max, trim back to the last word boundary at or before max.
+  if (text.length > max) {
+    const hard = clean.slice(0, max);
+    const lastSpace = hard.lastIndexOf(" ");
+    text = lastSpace > 95 ? hard.slice(0, lastSpace) : hard;
+  }
   text = text.trim();
   return text.length < clean.length ? `${text.replace(/[,\s.]+$/, "")}...` : text;
 }
@@ -393,7 +400,7 @@ function appsIndexPage() {
 <html lang="en">
 ${head({
     title: "Privacy-First iPhone Apps for Work, Makers, and Everyday Tools | WoodCutTool",
-    description: "Explore privacy-first iPhone apps by JiaBao Dai, including CutList, QuiltFit, SnapReceipt, PDF Scan, Invoice Maker, Cadenza, Tinnitus Relief, and other offline tools for makers, small businesses, and everyday work.",
+    description: "Privacy-first iPhone apps including CutList, QuiltFit, SnapReceipt, PDF Scan, and Invoice Maker. Offline tools for makers, small businesses, and everyday work.",
     canonical: "https://woodcuttool.com/apps/",
     jsonLd: appsIndexJsonLd()
   })}
@@ -526,12 +533,17 @@ ${cards}
 
 function appDetailPage(app, index) {
   const release = app.currentVersionReleaseDate || app.releaseDate || "";
+  // For apps with a route override (e.g. cutlist/quiltfit have a canonical short URL),
+  // point this duplicate App Store-slug page's canonical at the preferred URL so search
+  // engines consolidate ranking signals instead of treating the two pages as duplicates.
+  const canonical = `https://woodcuttool.com${detailHref(app)}`;
+  const isAlias = detailHref(app) !== `/apps/${app.slug}/`;
   return `<!doctype html>
 <html lang="en">
 ${head({
     title: `${app.name} | WoodCutTool Apps`,
     description: excerpt(app.description, 155),
-    canonical: `https://woodcuttool.com/apps/${app.slug}/`
+    canonical
   })}
 <body>
   <a class="skip-link" href="#main">Skip to content</a>

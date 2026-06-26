@@ -68,6 +68,35 @@ function canonicalRoute(html, fallbackRoute) {
   return fallbackRoute;
 }
 
+// Extract meaningful, page-specific images for an image sitemap. We deliberately skip
+// the shared OG fallback, favicons, and inline SVG placeholders so Google Image search
+// only sees genuinely unique images (blog article photos and App Store app icons).
+function extractImages(html) {
+  const images = new Set();
+  const keep = (src) => {
+    if (!src || !/^https?:\/\//i.test(src)) return false;
+    if (/\/assets\/og\//i.test(src)) return false; // shared OG fallback
+    if (/favicon|apple-touch-icon/i.test(src)) return false;
+    if (/\.svg(\?|$)/i.test(src)) return false;
+    return true;
+  };
+
+  // App Store icons carry the class directly on the <img> tag.
+  for (const match of html.matchAll(/<img\b[^>]*\bclass=["'][^"']*\bapp-detail-icon\b[^"']*["'][^>]*>/gi)) {
+    const src = match[0].match(/\bsrc=["']([^"']+)["']/i)?.[1];
+    if (keep(src)) images.add(src);
+  }
+
+  // Blog article photos live inside a <figure class="...blog-photo-visual..."> wrapper,
+  // so match the figure block and pull the first <img> src from within it.
+  for (const fig of html.matchAll(/<figure\b[^>]*\bblog-photo-visual\b[^>]*>([\s\S]*?)<\/figure>/gi)) {
+    const src = fig[1].match(/<img\b[^>]*\bsrc=["']([^"']+)["']/i)?.[1];
+    if (keep(src)) images.add(src);
+  }
+
+  return [...images];
+}
+
 function sitemapMeta(route) {
   if (route === "/") {
     return { changefreq: "weekly", priority: "1.0" };
@@ -190,6 +219,7 @@ function xmlEscape(value) {
 }
 
 const routes = new Set();
+const routeImages = new Map();
 
 for (const file of collectHtmlFiles()) {
   const html = readFileSync(join(root, file), "utf8");
@@ -198,17 +228,32 @@ for (const file of collectHtmlFiles()) {
     continue;
   }
 
-  routes.add(canonicalRoute(html, routeFromFile(file)));
+  const route = canonicalRoute(html, routeFromFile(file));
+  routes.add(route);
+
+  // Attach unique images to the canonical route (alias pages fold into their canonical).
+  const images = extractImages(html);
+  if (images.length) {
+    const existing = routeImages.get(route) ?? new Set();
+    for (const src of images) existing.add(src);
+    routeImages.set(route, existing);
+  }
 }
 
 const urls = sortRoutes([...routes]);
 const lastmod = new Date().toISOString().slice(0, 10);
+let imageCount = 0;
 const entries = urls.map((route) => {
   const { changefreq, priority } = sitemapMeta(route);
-  return `  <url><loc>${xmlEscape(`${siteUrl}${route}`)}</loc><lastmod>${lastmod}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority></url>`;
+  const images = [...(routeImages.get(route) ?? [])];
+  imageCount += images.length;
+  const imageTags = images
+    .map((src) => `\n    <image:image><image:loc>${xmlEscape(src)}</image:loc></image:image>`)
+    .join("");
+  return `  <url><loc>${xmlEscape(`${siteUrl}${route}`)}</loc><lastmod>${lastmod}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority>${imageTags}</url>`;
 });
 
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.join("\n")}\n</urlset>\n`;
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${entries.join("\n")}\n</urlset>\n`;
 
 writeFileSync(join(root, "sitemap.xml"), sitemap);
-console.log(`Generated sitemap.xml with ${urls.length} URLs.`);
+console.log(`Generated sitemap.xml with ${urls.length} URLs and ${imageCount} images.`);

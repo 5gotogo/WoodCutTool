@@ -81,20 +81,45 @@ const pages = {
     type: "article",
     bc: [["Home", "/"], ["Guides", "/guides/how-to-cut-plywood-efficiently/"], ["How to Cut Plywood Efficiently", "/guides/how-to-cut-plywood-efficiently/"]]
   },
+  "templates/index.html": {
+    title: "Free Plywood Cut List Templates by Project | WoodCutTool",
+    desc: "Free, project-ready plywood cut list templates for bookcases, cabinets, closets, drawers, garage shelving, workbenches, and 4x8 sheet layouts.",
+    bc: [["Home", "/"], ["Templates", "/templates/"], ["Cut List Templates", "/templates/"]]
+  },
   "templates/4x8-plywood-sheet/index.html": {
     title: "Free 4x8 Plywood Cut List Template & Layout Tool",
     desc: "Free 4x8 plywood cut list template. Plan cabinet panels, shelves, and furniture parts with kerf, grain direction, and an optimized sheet cutting layout.",
-    bc: [["Home", "/"], ["Templates", "/templates/4x8-plywood-sheet/"], ["4x8 Plywood Cut List", "/templates/4x8-plywood-sheet/"]]
+    bc: [["Home", "/"], ["Templates", "/templates/"], ["4x8 Plywood Cut List", "/templates/4x8-plywood-sheet/"]]
   },
   "templates/kitchen-cabinet-cut-list/index.html": {
     title: "Kitchen Cabinet Cut List Template (Free Plywood Plan)",
     desc: "Free kitchen cabinet cut list template. Plan base and wall cabinet panels, shelves, and parts from plywood with kerf, grain direction, and less waste.",
-    bc: [["Home", "/"], ["Templates", "/templates/kitchen-cabinet-cut-list/"], ["Kitchen Cabinet Cut List", "/templates/kitchen-cabinet-cut-list/"]]
+    bc: [["Home", "/"], ["Templates", "/templates/"], ["Kitchen Cabinet Cut List", "/templates/kitchen-cabinet-cut-list/"]]
   },
   "templates/workbench-cut-list/index.html": {
     title: "Workbench Cut List Template (Free Plywood Plan)",
     desc: "Free workbench cut list template. Plan a sturdy DIY plywood workbench: top, legs, shelf, and aprons with kerf, grain direction, and a simple cutting plan.",
-    bc: [["Home", "/"], ["Templates", "/templates/workbench-cut-list/"], ["Workbench Cut List", "/templates/workbench-cut-list/"]]
+    bc: [["Home", "/"], ["Templates", "/templates/"], ["Workbench Cut List", "/templates/workbench-cut-list/"]]
+  },
+  "templates/bookcase-cut-list/index.html": {
+    title: "Bookcase Cut List Template (Free Plywood Plan)",
+    desc: "Free bookcase cut list template. Plan a plywood bookcase: sides, shelves, top, bottom, and back with kerf, grain direction, and a one-sheet cutting plan.",
+    bc: [["Home", "/"], ["Templates", "/templates/"], ["Bookcase Cut List", "/templates/bookcase-cut-list/"]]
+  },
+  "templates/closet-shelving-cut-list/index.html": {
+    title: "Closet Shelving Cut List Template (Free Plywood Plan)",
+    desc: "Free closet shelving cut list template. Plan plywood closet shelves and dividers with kerf, grain direction, and a sheet cutting plan that cuts waste.",
+    bc: [["Home", "/"], ["Templates", "/templates/"], ["Closet Shelving Cut List", "/templates/closet-shelving-cut-list/"]]
+  },
+  "templates/drawer-box-cut-list/index.html": {
+    title: "Drawer Box Cut List Template (Free Plywood Plan)",
+    desc: "Free drawer box cut list template. Plan plywood drawer boxes: sides, front, back, and bottom with kerf, slide clearance, and a clean cutting plan.",
+    bc: [["Home", "/"], ["Templates", "/templates/"], ["Drawer Box Cut List", "/templates/drawer-box-cut-list/"]]
+  },
+  "templates/garage-shelving-cut-list/index.html": {
+    title: "Garage Shelving Cut List Template (Free Plywood Plan)",
+    desc: "Free garage shelving cut list template. Plan heavy-duty plywood garage shelves with kerf, grain direction, and a sheet cutting plan that minimizes waste.",
+    bc: [["Home", "/"], ["Templates", "/templates/"], ["Garage Shelving Cut List", "/templates/garage-shelving-cut-list/"]]
   },
   // Hand-written app pages: keep their own title/desc, add OG + breadcrumb only.
   "apps/cutlist/index.html": {
