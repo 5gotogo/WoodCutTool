@@ -1212,9 +1212,57 @@ h3 {
 .visual-tool-grid,
 .visual-proof-panel,
 .guide-grid,
-.visual-flow-grid {
+.visual-flow-grid,
+.project-path-grid {
   display: grid;
   gap: 14px;
+}
+
+.project-path-section {
+  padding-top: 22px;
+}
+
+.project-path-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 245px), 1fr));
+}
+
+.project-path-card {
+  min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  min-height: 178px;
+  padding: 17px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 12px 28px rgba(39, 44, 36, 0.06);
+}
+
+.project-path-card:hover {
+  border-color: rgba(47, 111, 78, 0.42);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.project-path-card span {
+  color: var(--accent-2);
+  font-size: 12px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.project-path-card strong {
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.project-path-card em {
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-style: normal;
+  line-height: 1.42;
 }
 
 .app-library-grid {
@@ -3059,6 +3107,15 @@ form > .button,
   margin: 26px 0 8px;
   font-size: 1.2rem;
   line-height: 1.25;
+}
+
+.home-faq-section {
+  max-width: var(--max);
+  padding-top: 18px;
+}
+
+.home-faq-section .faq-list {
+  max-width: 920px;
 }
 
 .inline-cta-section {

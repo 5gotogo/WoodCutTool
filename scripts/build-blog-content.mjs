@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260623-seo-feed";
+const version = "20260626-seo-home";
 const siteUrl = "https://woodcuttool.com";
 const appStoreApps = JSON.parse(readFileSync(join(root, "data/app-store-apps.json"), "utf8"));
 
@@ -3551,6 +3551,57 @@ articles.push(
     checklist: ["Separate rough cuts from final cuts.", "Export or print the layout.", "Keep final fit cuts at home.", "Store the PDF with the project."]
   },
   {
+    slug: "kitchen-cabinet-plywood-sheet-count",
+    category: "CutList",
+    title: "Kitchen Cabinet Plywood Sheet Count: A Practical Planning Method",
+    description: "How to estimate plywood sheets for base cabinets, wall cabinets, backs, shelves, fillers, and finished ends before a kitchen build starts.",
+    kicker: "Cabinet estimating",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Start With Cabinet Types", "Base cabinets, wall cabinets, pantry units, drawer stacks, and sink bases consume plywood differently. Count the boxes first, then list the repeated sides, bottoms, stretchers, shelves, backs, and finished ends that each type creates."],
+      ["Separate Carcass And Back Material", "A kitchen rarely needs the same plywood everywhere. Carcass sides and shelves may use 3/4 inch material, while backs may use thinner plywood or utility panels. Running those as separate material groups keeps an expensive sheet from being wasted on hidden parts."],
+      ["Finished Ends Change The Count", "A cabinet run with exposed ends needs better faces and usually tighter grain control on those panels. Mark finished ends before optimization so the layout protects visible material instead of treating every rectangle as interchangeable."],
+      ["Use Sheet Count As A Budget Gate", "Once the part list is entered, compare the optimized sheet count against the rough estimate. If the layout barely spills onto one extra sheet, small width, shelf, or filler changes may pull the project back under the budget line."],
+      ["Keep Hardware Out Of The Sheet Count", "Drawer slides, hinges, pulls, shelf pins, fasteners, and finish belong in the total project estimate, but not in the plywood sheet count. Keep the sheet plan clean, then add hardware as a separate budget category."]
+    ],
+    checklist: ["Count cabinet types before parts.", "Split backs from carcass material.", "Mark finished ends before layout.", "Use sheet count as a budget checkpoint.", "Estimate hardware separately."]
+  },
+  {
+    slug: "laundry-room-cabinet-cut-list",
+    category: "CutList",
+    title: "Laundry Room Cabinet Cut List: Small Built-In Planning",
+    description: "A focused cut list workflow for laundry room shelves, wall cabinets, washer-dryer surrounds, and narrow utility fillers.",
+    kicker: "Laundry built-in",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Measure Around Machines First", "Washer and dryer clearance, hoses, vents, outlets, and service access decide the cabinet envelope. A cut list that ignores those clearances can look efficient on plywood and still fail in the room."],
+      ["Use Shallow Cabinets Deliberately", "Laundry rooms often need shallower wall cabinets or shelves so doors, baskets, and machines remain usable. Enter the real shallow depth instead of copying kitchen cabinet defaults."],
+      ["Plan Filler And Scribe Parts", "Small built-ins rely on filler strips, side scribes, toe spaces, and cover panels to fit imperfect walls. Add those narrow parts to the first cut list so they do not become a late store trip."],
+      ["Group Moisture-Exposed Parts", "Laundry spaces see more humidity than a dry closet. If some panels need a different material, finish, or edge treatment, group them separately before optimizing."],
+      ["Export A Room-Specific Cut Plan", "A laundry project is usually cut in the shop and installed in a tight room. A saved PDF or local CutList project keeps part names tied to the wall, machine side, and shelf location."]
+    ],
+    checklist: ["Measure machine clearances.", "Use real shallow cabinet depths.", "Add fillers and scribes early.", "Group moisture-exposed parts.", "Name parts by room location."]
+  },
+  {
+    slug: "plywood-cut-list-for-client-quotes",
+    category: "CutList",
+    title: "Plywood Cut List For Client Quotes: From Rough Scope To Material Number",
+    description: "A small-shop workflow for turning rough client requirements into a defensible plywood sheet count, waste estimate, and revision-friendly quote.",
+    kicker: "Client quotes",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Quote The Layout, Not Just The Area", "A client quote based only on square footage can be underpriced because rectangles must fit on real sheets. A cut list turns the rough scope into parts that can be optimized, reviewed, and priced with a clearer sheet count."],
+      ["Keep Assumptions Visible", "Record sheet size, material grade, thickness, kerf, rotation rules, finished ends, and excluded hardware. Visible assumptions make the quote easier to revise when the client changes a depth, shelf count, or finish."],
+      ["Use Waste As A Range", "Early quotes should treat waste as a range, not a promise. A preliminary optimized layout gives a better range than area math, but final waste depends on exact dimensions, material defects, and shop handling."],
+      ["Save Versions For Revisions", "Client quotes change. Saving a version before each revision lets the shop explain why a new cabinet, deeper shelf, or premium face material changes the sheet count."],
+      ["Turn The Approved Quote Into A Cut Plan", "After approval, the quote layout becomes the starting point for the production cut list. Review quantities, update final dimensions, and export the plan only after the scope is locked."]
+    ],
+    checklist: ["Quote from a layout, not area only.", "Write down material assumptions.", "Treat waste as a range in early quotes.", "Save versions for revisions.", "Re-check before production cutting."]
+  },
+  {
     slug: "quiltfit-first-baby-quilt-plan",
     category: "QuiltFit",
     title: "Planning Your First Baby Quilt With QuiltFit",
@@ -6705,10 +6756,10 @@ function fallbackResearchBrief(article) {
 const relatedCutListLinks = [
   ["/plywood-cut-calculator/", "Try the plywood cut calculator"],
   ["/cut-list-calculator/", "Use the board cut list calculator"],
+  ["/blog/kitchen-cabinet-plywood-sheet-count/", "Estimate kitchen cabinet plywood sheet count"],
+  ["/blog/plywood-cut-list-for-client-quotes/", "Build a plywood cut list for client quotes"],
   ["/blog/plywood-optimization-kerf-grain-offcuts/", "Study kerf, grain, and offcut strategy"],
-  ["/blog/cabinet-cut-list-mistakes/", "Avoid common cabinet cut list mistakes"],
-  ["/blog/reducing-sheet-good-waste-on-small-shops/", "Reduce sheet-good waste in a small shop"],
-  ["/blog/cutlist-vs-spreadsheets-for-cabinetmakers/", "Compare CutList apps and spreadsheets"]
+  ["/blog/cabinet-cut-list-mistakes/", "Avoid common cabinet cut list mistakes"]
 ];
 
 const relatedAppDetails = {
@@ -6858,6 +6909,24 @@ const cutlistArticleEnhancements = {
     calculation: "Two 72 x 30 inch top layers consume 4,320 square inches, almost a full 4 x 8 sheet before kerf. The remaining parts need a second sheet or a design adjustment.",
     mistake: "The common mistake is pricing only the top surface and forgetting lower shelves, braces, and sacrificial strips.",
     cta: "Run the layout before buying material, then keep the final cut sequence in the CutList iPhone app."
+  },
+  "kitchen-cabinet-plywood-sheet-count": {
+    scenario: "A homeowner is planning a small kitchen with base cabinets, wall cabinets, a pantry face, and two finished ends. The question is not just how much plywood area exists, but how many sheets each material group needs.",
+    calculation: "Six base cabinet sides at 34.5 x 23.25 inches use about 4,813 square inches before kerf. That is already more than one 4 x 8 sheet, so shelves, bottoms, backs, and finished ends must be planned as real rectangles.",
+    mistake: "The common mistake is counting cabinet boxes but forgetting backs, fillers, toe-kick parts, nailers, and finished ends until the material order is short.",
+    cta: "Use the kitchen cabinet template to build the part list, then test the layout with the plywood cut calculator or CutList app."
+  },
+  "laundry-room-cabinet-cut-list": {
+    scenario: "A laundry room needs wall cabinets over the machines, a narrow broom cabinet, and a counter support panel beside the washer.",
+    calculation: "A 12 inch deep wall cabinet may save enough material and clearance compared with a 24 inch kitchen-style depth, but the filler strips and side panels still decide the sheet count.",
+    mistake: "The common mistake is planning cabinets from generic kitchen dimensions and discovering late that hoses, vents, lids, or outlets need service space.",
+    cta: "Measure the machines first, enter room-specific parts, and save the final cut plan locally in CutList before cutting."
+  },
+  "plywood-cut-list-for-client-quotes": {
+    scenario: "A small shop is quoting a built-in from a rough sketch and needs a defensible material number before the client approves final dimensions.",
+    calculation: "If the first layout uses 3.1 sheets, the quote should usually carry four sheets or a clear revision note. A slight depth change may move the job below or above that buying threshold.",
+    mistake: "The common mistake is quoting from total square footage and treating waste as a fixed percentage instead of reviewing how the actual rectangles fit on sheets.",
+    cta: "Use CutList to save quote versions, show assumptions, and turn the approved estimate into a production cut plan."
   }
 };
 
@@ -7374,8 +7443,8 @@ function blogIndex() {
   return `<!doctype html>
 <html lang="en">
 ${head({
-    title: "Blogs | WoodCutTool",
-    description: "Research-style articles about CutList optimization, iPhone utilities, fridge inventory, pantry labels, address labels, QR codes, photo vaults, invoices, receipts, printing, wellness routines, SnapLabel photo labels, private meeting transcription, speaker audio tests, work shift schedules, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer design, and tile layout workflows.",
+    title: "WoodCutTool Blog | CutList, Maker Apps & Project Guides",
+    description: "Guides for plywood cut lists, woodworking calculators, maker apps, labeling, scanning, audio tools, shift calendars, QuiltFit, tile, and stairs.",
     canonical: "https://woodcuttool.com/blog/"
   })}
 <body>
@@ -7420,8 +7489,8 @@ ${head({
       <div class="blog-hero-copy">
         <p class="breadcrumb"><a href="/">Home</a> / Blogs</p>
         <p class="eyebrow">Industry research library</p>
-        <h1>Research notes for builders, makers, small businesses, kitchen organizers, QR workflows, document tools, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.</h1>
-        <p class="lead">Deeper articles on CutList optimization, iPhone utility apps, fridge inventory, pantry labeling, address label printing, QR code generation, photo privacy, invoices, receipts, printing, habits, fasting, image compression, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy.</p>
+        <h1>Practical guides for CutList projects and maker workflows.</h1>
+        <p class="lead">Browse focused articles on plywood cut lists, woodworking calculators, maker apps, labeling, scanning, audio tools, shift calendars, QuiltFit planning, tile layouts, and stair stringer geometry.</p>
       </div>
       <div class="blog-console" aria-label="Blog topic map">
         <div class="console-top"><span></span><span></span><span></span></div>
@@ -7678,6 +7747,9 @@ const zhArticleTitles = {
   "cutlist-first-plywood-project-checklist": "第一个胶合板项目的 CutList 检查清单",
   "cutlist-ocr-for-handwritten-project-notes": "用 CutList OCR 把手写笔记变成切割方案",
   "cutlist-pdf-plan-for-home-center-cuts": "为建材店或共享工坊导出 CutList PDF",
+  "kitchen-cabinet-plywood-sheet-count": "厨房柜胶合板张数：实用规划方法",
+  "laundry-room-cabinet-cut-list": "洗衣房柜切割清单：小型内嵌柜规划",
+  "plywood-cut-list-for-client-quotes": "客户报价用胶合板切割清单",
   "quiltfit-first-baby-quilt-plan": "用 QuiltFit 规划第一条婴儿被",
   "quiltfit-tshirt-memory-quilt": "用 QuiltFit 规划 T 恤纪念被",
   "quiltfit-scrap-quilt-from-stash": "用布料库存规划碎布拼布被",
@@ -8204,11 +8276,13 @@ function generateBlogTranslations() {
     "Research notes for builders, makers, document workflows, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、文档流程、音频工具、排班日历、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
     "Research notes for builders, makers, kitchen organizers, QR workflows, document tools, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、厨房整理、二维码流程、文档工具、音频工具、排班日历、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
     "Research notes for builders, makers, small businesses, kitchen organizers, QR workflows, document tools, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、小企业、厨房整理、二维码流程、文档工具、音频工具、排班日历、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
+    "Practical guides for CutList projects and maker workflows.": "CutList 项目和创作者工作流实用指南。",
     "Deeper articles on CutList optimization, QuiltFit planning, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、QuiltFit 规划、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、SnapLabel 照片标签、私密会议转写、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Deeper articles on CutList optimization, fridge inventory, pantry labeling, address label printing, QR code generation, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、冰箱库存、厨房标签、地址标签打印、二维码生成、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Deeper articles on CutList optimization, iPhone utility apps, fridge inventory, pantry labeling, address label printing, QR code generation, photo privacy, invoices, receipts, printing, habits, fasting, image compression, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy.": "深入文章覆盖 CutList 优化、iPhone 工具类 app、冰箱库存、厨房标签、地址标签打印、二维码生成、照片隐私、发票、收据、打印、习惯、轻断食、图片压缩、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略。",
+    "Browse focused articles on plywood cut lists, woodworking calculators, maker apps, labeling, scanning, audio tools, shift calendars, QuiltFit planning, tile layouts, and stair stringer geometry.": "浏览胶合板切割清单、木工计算器、创作者应用、标签、扫描、音频工具、排班日历、QuiltFit 规划、瓷砖排版和楼梯梁几何等专题文章。",
     "Sheet optimization and shop workflow.": "板材优化与工坊流程。",
     "Digital quilt planning and fabric decisions.": "数字化拼布规划与布料决策。",
     "Stringer geometry, comfort, and remodel planning.": "楼梯梁几何、舒适度与改造规划。",
