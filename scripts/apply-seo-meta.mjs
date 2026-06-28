@@ -69,11 +69,40 @@ const pages = {
     desc: "Free plywood cutting calculator and CutList optimizer. Enter sheet size, parts, quantities, and kerf to plan cuts, sheets required, and waste in seconds.",
     bc: [["Home", "/"], ["Tools", "/tools/"], ["CutList Optimizer", "/cutlist/"]]
   },
+  "compare/index.html": {
+    title: "Woodworking Comparisons: Materials, Saws & Tools | WoodCutTool",
+    desc: "Side-by-side woodworking comparisons: plywood vs MDF, MDF vs particle board, track saw vs table saw, circular saw vs table saw, and cut list software vs spreadsheets.",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["Comparisons", "/compare/"]]
+  },
   "compare/best-plywood-tools/index.html": {
     title: "Best Plywood Cutting Calculator Tools (2026 Compared)",
     desc: "Compare the best plywood cutting calculator tools for 2026: CutList optimizer, manual planning, generic calculators, and spreadsheets — pros and cons.",
     type: "article",
-    bc: [["Home", "/"], ["Compare", "/compare/best-plywood-tools/"], ["Best Plywood Tools", "/compare/best-plywood-tools/"]]
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["Best Plywood Tools", "/compare/best-plywood-tools/"]]
+  },
+  "compare/plywood-vs-mdf/index.html": {
+    title: "Plywood vs MDF: Which Sheet Material Should You Use?",
+    desc: "Plywood vs MDF compared for strength, weight, moisture, screw holding, edges, cost, and cutting. A practical guide to choosing the right sheet material.",
+    type: "article",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["Plywood vs MDF", "/compare/plywood-vs-mdf/"]]
+  },
+  "compare/mdf-vs-particle-board/index.html": {
+    title: "MDF vs Particle Board: Which Is Better and When?",
+    desc: "MDF vs particle board compared for strength, screw holding, surface, moisture, weight, and cost. Choose the right budget panel for cabinets, shelves, and furniture.",
+    type: "article",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["MDF vs Particle Board", "/compare/mdf-vs-particle-board/"]]
+  },
+  "compare/track-saw-vs-table-saw-sheet-goods/index.html": {
+    title: "Track Saw vs Table Saw for Sheet Goods: Which Cuts Plywood Better?",
+    desc: "Track saw vs table saw for cutting plywood and sheet goods: accuracy, safety, space, cost, and breaking down full 4x8 sheets. Which one should you buy?",
+    type: "article",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["Track Saw vs Table Saw", "/compare/track-saw-vs-table-saw-sheet-goods/"]]
+  },
+  "compare/circular-saw-vs-table-saw/index.html": {
+    title: "Circular Saw vs Table Saw: Which Should a Beginner Buy First?",
+    desc: "Circular saw vs table saw compared for cost, accuracy, space, safety, and cutting plywood. Which saw should a beginner or DIY woodworker buy first?",
+    type: "article",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["Circular Saw vs Table Saw", "/compare/circular-saw-vs-table-saw/"]]
   },
   "guides/how-to-cut-plywood-efficiently/index.html": {
     title: "How to Cut Plywood Efficiently & Cut Waste 30%+",

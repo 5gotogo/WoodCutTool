@@ -1,7 +1,7 @@
 {
   "/": {
     "lastmod": "2026-06-28",
-    "hash": "1c0177f2b8921e15d6565bcd1510b34829896ccc67d987795fa49b765f3646da"
+    "hash": "7e3e53c8ea44470e9aeb9ae28bfb6527c618f1b2773036bd313e3215fe85aaa1"
   },
   "/tools/": {
     "lastmod": "2026-06-28",
@@ -1811,9 +1811,29 @@
     "lastmod": "2026-06-28",
     "hash": "40d5303d3014a13eb21e6475696fdd596c5477431e2bd84c7e6faf35719e3242"
   },
+  "/compare/": {
+    "lastmod": "2026-06-28",
+    "hash": "e19e6522bee53fb985df51c799d5271e6162d60bdd8a1660943b76bd9db0c9ef"
+  },
   "/compare/best-plywood-tools/": {
     "lastmod": "2026-06-28",
-    "hash": "e87a6469249af2cb1fb3bb4e547d0256829d30655fdf8c3a35e960dba9d67fc6"
+    "hash": "434457a710d6981e672a570f68cd8af31c9fb66c51c4c11b323d77fbeb66f0bb"
+  },
+  "/compare/circular-saw-vs-table-saw/": {
+    "lastmod": "2026-06-28",
+    "hash": "838ee6f9ca1974ff000d9735797a51fe82a30ef1c71051205bcdf34ff1341f72"
+  },
+  "/compare/mdf-vs-particle-board/": {
+    "lastmod": "2026-06-28",
+    "hash": "63f10c07b2cafd7c85a7488baa91a0f894fa55d146b389d2dcc5c28a175595b0"
+  },
+  "/compare/plywood-vs-mdf/": {
+    "lastmod": "2026-06-28",
+    "hash": "12edaf4c63a612ed1b07ded001f5a877287ef2d710876f4375f553d86bf1048d"
+  },
+  "/compare/track-saw-vs-table-saw-sheet-goods/": {
+    "lastmod": "2026-06-28",
+    "hash": "4a1818e3a8fbd6717a334a6cc565f922d08e2c77ed04dcd217e0c486c44915fd"
   },
   "/guides/how-to-cut-plywood-efficiently/": {
     "lastmod": "2026-06-28",
