@@ -6,326 +6,646 @@
     <atom:link href="https://woodcuttool.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical woodworking guides on plywood cutting, cut lists, materials, cabinets, stairs, and tile from WoodCutTool.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 27 Jun 2026 03:05:10 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 01:52:14 GMT</lastBuildDate>
     <item>
-      <title>Photo Quality Comparison: Use Before-And-After Checks Before Export</title>
-      <link>https://woodcuttool.com/blog/photo-quality-comparison-psnr-ssim-guide/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/photo-quality-comparison-psnr-ssim-guide/</guid>
-      <category>Image Compressor</category>
-      <pubDate>Sat, 27 Jun 2026 03:05:10 GMT</pubDate>
-      <description>Why quality previews, PSNR/SSIM-style scores, resolution choices, and compression levels help avoid blurry or oversized exports.</description>
+      <title>Quilt Row Assembly Tracking From Design Wall To Finished Top</title>
+      <link>https://woodcuttool.com/blog/quilt-row-assembly-tracking/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/quilt-row-assembly-tracking/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Sun, 28 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Track quilt row assembly with block order, labels, photos, pressing notes, seam matching, and progress checkpoints.</description>
     </item>
     <item>
-      <title>Batch Photo Compression And ZIP Export: Send Many Images Without Huge Files</title>
-      <link>https://woodcuttool.com/blog/batch-photo-compression-zip-export/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/batch-photo-compression-zip-export/</guid>
-      <category>Image Compressor</category>
-      <pubDate>Fri, 26 Jun 2026 03:05:10 GMT</pubDate>
-      <description>A workflow for compressing dozens of photos, reviewing savings, bundling files into ZIP, and sharing cleaner batches for work or travel.</description>
+      <title>Beginner Quilt Sampler Layout Planning For Blocks That Fit</title>
+      <link>https://woodcuttool.com/blog/beginner-quilt-sampler-layout/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/beginner-quilt-sampler-layout/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Sat, 27 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan a beginner sampler quilt with block sizes, sashing, borders, fabric roles, assembly order, and manageable yardage.</description>
     </item>
     <item>
-      <title>Image Compressor App For iPhone: Shrink Photos And Reclaim Storage Privately</title>
-      <link>https://woodcuttool.com/blog/image-compressor-app-iphone-storage/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/image-compressor-app-iphone-storage/</guid>
-      <category>Image Compressor</category>
-      <pubDate>Thu, 25 Jun 2026 03:05:10 GMT</pubDate>
-      <description>How to compress large iPhone photos, compare quality, choose JPEG or PNG, and reduce file size without uploading images to a server.</description>
+      <title>Quilt Fabric Stash Inventory Planning For Better Yardage Decisions</title>
+      <link>https://woodcuttool.com/blog/quilt-fabric-stash-inventory-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/quilt-fabric-stash-inventory-planning/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Fri, 26 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan quilt projects from fabric stash inventory by tracking yardage, color, role, scale, leftovers, and shopping gaps.</description>
     </item>
     <item>
-      <title>Private Fasting And Sleep Tracker: Keep Routine Data On Your iPhone</title>
-      <link>https://woodcuttool.com/blog/private-fasting-sleep-tracker-no-login/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/private-fasting-sleep-tracker-no-login/</guid>
-      <category>Fast Rhythm</category>
-      <pubDate>Wed, 24 Jun 2026 03:05:10 GMT</pubDate>
-      <description>Why fasting sessions, sleep times, hunger notes, streaks, achievements, and rhythm scores should be treated as private lifestyle data.</description>
+      <title>Seasonal Wall Quilt Planning For Small Spaces And Fast Finishes</title>
+      <link>https://woodcuttool.com/blog/seasonal-wall-quilt-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/seasonal-wall-quilt-planning/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Thu, 25 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan a seasonal wall quilt with finished size, hanging method, fabric palette, borders, backing, and repeatable project notes.</description>
     </item>
     <item>
-      <title>16:8 Fasting Timer Workflow: Use Weekly Reports Instead Of One-Day Judgments</title>
-      <link>https://woodcuttool.com/blog/16-8-fasting-timer-weekly-report/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/16-8-fasting-timer-weekly-report/</guid>
-      <category>Fast Rhythm</category>
-      <pubDate>Tue, 23 Jun 2026 03:05:10 GMT</pubDate>
-      <description>How weekly rhythm reports can help users compare fasting completion, sleep duration, sleep quality, and routine consistency over time.</description>
+      <title>Quilt Label And Gift Note Planning Before The Final Stitch</title>
+      <link>https://woodcuttool.com/blog/quilt-label-and-gift-note-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/quilt-label-and-gift-note-planning/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Wed, 24 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan quilt labels with names, dates, fabric, placement, care notes, gift messages, and backing integration.</description>
     </item>
     <item>
-      <title>Fasting Timer And Sleep Rhythm App: Track Routine Consistency Without A Cloud Account</title>
-      <link>https://woodcuttool.com/blog/fasting-timer-sleep-rhythm-app/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/fasting-timer-sleep-rhythm-app/</guid>
-      <category>Fast Rhythm</category>
-      <pubDate>Mon, 22 Jun 2026 03:05:10 GMT</pubDate>
-      <description>A non-medical routine-tracking workflow for fasting windows, sleep logs, rhythm awareness, and weekly review on device.</description>
+      <title>Quilt Block Resizing Planning Without Breaking The Layout</title>
+      <link>https://woodcuttool.com/blog/quilt-block-resizing-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/quilt-block-resizing-planning/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Tue, 23 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Resize quilt blocks by tracking finished size, seam allowance, grid math, border impact, and yardage changes before cutting.</description>
     </item>
     <item>
-      <title>Private Mood Journal: Keep Feelings, Notes, And Reflections On Device</title>
-      <link>https://woodcuttool.com/blog/private-mood-journal-no-cloud-upload/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/private-mood-journal-no-cloud-upload/</guid>
-      <category>GlowFeel</category>
-      <pubDate>Sun, 21 Jun 2026 03:05:10 GMT</pubDate>
-      <description>Why emotional notes, daily messages, expression history, and privacy settings should stay under user control in a wellness app.</description>
+      <title>Scrappy Quilt Color Balance Before Cutting From The Stash</title>
+      <link>https://woodcuttool.com/blog/scrappy-quilt-color-balance/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/scrappy-quilt-color-balance/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Mon, 22 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan a scrappy quilt with value contrast, color repeats, fabric scale, block placement, and stash limits before cutting.</description>
     </item>
     <item>
-      <title>Grounding Exercises App: Small Steps For A Calmer Moment</title>
-      <link>https://woodcuttool.com/blog/grounding-exercises-app-daily-calm/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/grounding-exercises-app-daily-calm/</guid>
-      <category>GlowFeel</category>
-      <pubDate>Sat, 20 Jun 2026 03:05:10 GMT</pubDate>
-      <description>How a grounding workflow can help users slow down, notice their surroundings, and return to the day without medical or treatment claims.</description>
+      <title>Quilt Binding Strip Calculator Workflow For Cleaner Finishing</title>
+      <link>https://woodcuttool.com/blog/quilt-binding-strip-calculator/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/quilt-binding-strip-calculator/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Sun, 21 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan quilt binding strips with perimeter, width, joining allowance, bias or straight grain, corners, and extra length.</description>
     </item>
     <item>
-      <title>Stress Ease App: Private Journaling, Breathing, And A Quieter Daily Reset</title>
-      <link>https://woodcuttool.com/blog/stress-ease-app-private-journal-breathing/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/stress-ease-app-private-journal-breathing/</guid>
-      <category>GlowFeel</category>
-      <pubDate>Fri, 19 Jun 2026 03:05:10 GMT</pubDate>
-      <description>A non-clinical self-reflection workflow for breathing, naming emotions, writing a short note, and keeping personal entries local.</description>
+      <title>Queen Size Quilt Yardage Planning With Blocks, Borders, And Backing</title>
+      <link>https://woodcuttool.com/blog/queen-size-quilt-yardage-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/queen-size-quilt-yardage-planning/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Sat, 20 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan a queen size quilt with finished dimensions, block count, border width, backing overhang, binding, and fabric roles.</description>
     </item>
     <item>
-      <title>Protect Creator Photos With Private Watermarking Before Posting</title>
-      <link>https://woodcuttool.com/blog/protect-creator-photos-private-watermarking/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/protect-creator-photos-private-watermarking/</guid>
-      <category>SignatureMark</category>
-      <pubDate>Thu, 18 Jun 2026 03:05:10 GMT</pubDate>
-      <description>Why watermarking should happen before public sharing, with local image handling and consistent exports for portfolios, products, and social posts.</description>
+      <title>Heated Floor Tile Layout Planning Around Mats, Sensors, And Cuts</title>
+      <link>https://woodcuttool.com/blog/heated-floor-tile-layout-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/heated-floor-tile-layout-planning/</guid>
+      <category>Tile</category>
+      <pubDate>Fri, 19 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan tile over heated floor systems with mat coverage, sensor location, floor height, layout lines, and safe cutting zones.</description>
     </item>
     <item>
-      <title>Photo Signature And Logo Overlay Workflow: Keep Branding Consistent</title>
-      <link>https://woodcuttool.com/blog/photo-signature-logo-overlay-workflow/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/photo-signature-logo-overlay-workflow/</guid>
-      <category>SignatureMark</category>
-      <pubDate>Wed, 17 Jun 2026 03:05:10 GMT</pubDate>
-      <description>A practical branding workflow for choosing placement, sizing, color, transparency, and export settings across repeated creator images.</description>
+      <title>Tile Baseboard And Trim Planning For Finished Room Edges</title>
+      <link>https://woodcuttool.com/blog/tile-baseboard-trim-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/tile-baseboard-trim-planning/</guid>
+      <category>Tile</category>
+      <pubDate>Thu, 18 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan tile baseboards and trim with height, corners, profiles, grout lines, transitions, and waste before cutting wall edges.</description>
     </item>
     <item>
-      <title>Watermark App For Creators: Add A Signature Brand Mark To Photos</title>
-      <link>https://woodcuttool.com/blog/watermark-app-creators-signature-brand/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/watermark-app-creators-signature-brand/</guid>
-      <category>SignatureMark</category>
-      <pubDate>Tue, 16 Jun 2026 03:05:10 GMT</pubDate>
-      <description>How SignatureMark helps creators add readable watermarks, signatures, logos, and brand marks before sharing images online.</description>
+      <title>Large Room Tile Grid Squareness: Control Lines Before Thinset</title>
+      <link>https://woodcuttool.com/blog/large-room-tile-grid-squareness/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/large-room-tile-grid-squareness/</guid>
+      <category>Tile</category>
+      <pubDate>Wed, 17 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan tile grid squareness in large rooms with control lines, reference walls, expansion gaps, and balanced cuts.</description>
     </item>
     <item>
-      <title>Receipt Report PDF And CSV Export: Private Records For Admin Handoff</title>
-      <link>https://woodcuttool.com/blog/receipt-report-pdf-csv-private-records/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/receipt-report-pdf-csv-private-records/</guid>
-      <category>Expense Report</category>
-      <pubDate>Mon, 15 Jun 2026 03:05:10 GMT</pubDate>
-      <description>Why reimbursement records should be reviewed locally, exported deliberately, and organized by trip, client, project, or month.</description>
+      <title>Herringbone Tile Layout And Waste Planning Before Installation</title>
+      <link>https://woodcuttool.com/blog/herringbone-tile-layout-waste/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/herringbone-tile-layout-waste/</guid>
+      <category>Tile</category>
+      <pubDate>Tue, 16 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan herringbone tile with starting lines, pattern direction, border strategy, cut waste, and dry-layout checks before install.</description>
     </item>
     <item>
-      <title>Business Travel Expense Report App: Track Meals, Transport, Hotels, And Client Visits</title>
-      <link>https://woodcuttool.com/blog/business-travel-expense-report-app/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/business-travel-expense-report-app/</guid>
-      <category>Expense Report</category>
-      <pubDate>Sun, 14 Jun 2026 03:05:10 GMT</pubDate>
-      <description>A travel expense workflow for keeping receipts, notes, dates, categories, and report exports organized during busy work trips.</description>
+      <title>Tile Around Toilet Flange Planning For Cleaner Bathroom Cuts</title>
+      <link>https://woodcuttool.com/blog/tile-around-toilet-flange-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/tile-around-toilet-flange-planning/</guid>
+      <category>Tile</category>
+      <pubDate>Mon, 15 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan bathroom tile around the toilet flange with layout centerlines, flange height, waste, closet bolts, and visible cut control.</description>
     </item>
     <item>
-      <title>Expense Report Maker: Turn Receipts Into Reimbursement-Ready Reports</title>
-      <link>https://woodcuttool.com/blog/expense-report-maker-receipts-workflow/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/expense-report-maker-receipts-workflow/</guid>
-      <category>Expense Report</category>
-      <pubDate>Sat, 13 Jun 2026 03:05:10 GMT</pubDate>
-      <description>How to capture receipts, categorize expenses, review totals, and create clean reports for reimbursement without building a spreadsheet.</description>
+      <title>Shower Curb Tile Layout For Waterproofing, Slope, And Clean Edges</title>
+      <link>https://woodcuttool.com/blog/shower-curb-tile-layout/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/shower-curb-tile-layout/</guid>
+      <category>Tile</category>
+      <pubDate>Sun, 14 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan shower curb tile with waterproofing, slope, inside corners, outside edges, glass placement, and trim before setting tile.</description>
     </item>
     <item>
-      <title>Paid Status Tracking: Keep Invoice Records Private And Easy To Review</title>
-      <link>https://woodcuttool.com/blog/paid-status-invoice-tracking-private-billing/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/paid-status-invoice-tracking-private-billing/</guid>
-      <category>Invoice Maker</category>
-      <pubDate>Fri, 12 Jun 2026 03:05:10 GMT</pubDate>
-      <description>Why paid, unpaid, overdue, client history, and PDF export records matter for freelancers without requiring a cloud billing account.</description>
+      <title>Entryway Tile Pattern Waste Planning For High-Traffic Floors</title>
+      <link>https://woodcuttool.com/blog/entryway-tile-pattern-waste/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/entryway-tile-pattern-waste/</guid>
+      <category>Tile</category>
+      <pubDate>Sat, 13 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan entryway tile quantities with pattern direction, door thresholds, mud zones, edge cuts, and extra waste for breakage.</description>
     </item>
     <item>
-      <title>Estimate PDF App: Send Small Business Quotes Before The Job Starts</title>
-      <link>https://woodcuttool.com/blog/estimate-pdf-app-small-business-quotes/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/estimate-pdf-app-small-business-quotes/</guid>
-      <category>Invoice Maker</category>
-      <pubDate>Thu, 11 Jun 2026 03:05:10 GMT</pubDate>
-      <description>A practical estimate workflow for quotes, project scopes, materials, labor, taxes, discounts, and converting accepted estimates into invoices.</description>
+      <title>Kitchen Floor Tile Layout Planning Around Cabinets And Islands</title>
+      <link>https://woodcuttool.com/blog/kitchen-floor-tile-layout-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/kitchen-floor-tile-layout-planning/</guid>
+      <category>Tile</category>
+      <pubDate>Fri, 12 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan kitchen floor tile around cabinet runs, islands, appliance paths, sightlines, thresholds, and realistic cut waste.</description>
     </item>
     <item>
-      <title>Invoice Maker App For Freelancers And Contractors: Create Clean PDF Bills Fast</title>
-      <link>https://woodcuttool.com/blog/invoice-maker-app-freelancers-contractors/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/invoice-maker-app-freelancers-contractors/</guid>
-      <category>Invoice Maker</category>
-      <pubDate>Wed, 10 Jun 2026 03:05:10 GMT</pubDate>
-      <description>How a private invoice maker helps service providers create invoices, add line items, track totals, and send professional PDF bills.</description>
+      <title>Stair Renovation Material Planning For Treads, Risers, Rails, And Trim</title>
+      <link>https://woodcuttool.com/blog/stair-renovation-budget-materials/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/stair-renovation-budget-materials/</guid>
+      <category>Stairs</category>
+      <pubDate>Thu, 11 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Estimate stair renovation materials by separating treads, risers, skirts, rails, trim, finish layers, and waste before buying.</description>
     </item>
     <item>
-      <title>Streak Freeze And Weekly Review: A More Forgiving Habit System</title>
-      <link>https://woodcuttool.com/blog/streak-freeze-weekly-review-habit-system/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/streak-freeze-weekly-review-habit-system/</guid>
-      <category>Ritualix</category>
-      <pubDate>Tue, 09 Jun 2026 03:05:10 GMT</pubDate>
-      <description>Why streak protection, weekly reflection, trends, widgets, and bite-size habit plans can support consistency without all-or-nothing pressure.</description>
+      <title>Stair Railing Post Layout Before Treads And Landings Are Final</title>
+      <link>https://woodcuttool.com/blog/stair-railing-post-layout/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/stair-railing-post-layout/</guid>
+      <category>Stairs</category>
+      <pubDate>Wed, 10 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan stair railing posts with tread positions, landing corners, guard height, attachment points, and local-code checks before drilling.</description>
     </item>
     <item>
-      <title>Pomodoro Habit Planner: Use Focus Sessions To Support Daily Routines</title>
-      <link>https://woodcuttool.com/blog/pomodoro-habit-planner-focus-sessions/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/pomodoro-habit-planner-focus-sessions/</guid>
-      <category>Ritualix</category>
-      <pubDate>Mon, 08 Jun 2026 03:05:10 GMT</pubDate>
-      <description>A workflow for pairing habits with focus timers, study blocks, deep work sessions, and simple reminders that keep momentum visible.</description>
+      <title>Attic Stair Opening Planning: Rise, Run, Headroom, And Access</title>
+      <link>https://woodcuttool.com/blog/attic-stair-opening-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/attic-stair-opening-planning/</guid>
+      <category>Stairs</category>
+      <pubDate>Tue, 09 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan an attic stair opening with total rise, headroom, landing space, door swing, framing limits, and practical access clearances.</description>
     </item>
     <item>
-      <title>Habit Tracker App: Build Streaks Without Turning Routines Into Stress</title>
-      <link>https://woodcuttool.com/blog/habit-tracker-app-streaks-without-stress/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/habit-tracker-app-streaks-without-stress/</guid>
-      <category>Ritualix</category>
-      <pubDate>Sun, 07 Jun 2026 03:05:10 GMT</pubDate>
-      <description>How a lightweight habit tracker helps build small actions, maintain streaks, and review consistency without noisy dashboards.</description>
+      <title>Exterior Stair Landing Drainage Planning Before Layout</title>
+      <link>https://woodcuttool.com/blog/exterior-stair-landing-drainage/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/exterior-stair-landing-drainage/</guid>
+      <category>Stairs</category>
+      <pubDate>Mon, 08 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan exterior stair landings with drainage slope, finished height, stringer bearing, material exposure, and safe transitions.</description>
     </item>
     <item>
-      <title>Journal Prompts, Mood Notes, And Search: Make Private Writing Easier To Revisit</title>
-      <link>https://woodcuttool.com/blog/journal-prompts-mood-search-private-notes/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/journal-prompts-mood-search-private-notes/</guid>
-      <category>MindNest</category>
-      <pubDate>Sat, 06 Jun 2026 03:05:10 GMT</pubDate>
-      <description>Why prompts, themes, search, and organization tools matter when a journal becomes a long-term personal record.</description>
+      <title>Stair Nosing Layout Planning For Treads, Risers, And Finish Floors</title>
+      <link>https://woodcuttool.com/blog/stair-nosing-layout-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/stair-nosing-layout-planning/</guid>
+      <category>Stairs</category>
+      <pubDate>Sun, 07 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan stair nosing with tread depth, overhang, finish flooring, visibility, and consistent measurement references before installation.</description>
     </item>
     <item>
-      <title>Offline Diary App For Reflection: Clear Your Mind With A Local Journal</title>
-      <link>https://woodcuttool.com/blog/offline-diary-app-for-stress-reflection/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/offline-diary-app-for-stress-reflection/</guid>
-      <category>MindNest</category>
-      <pubDate>Fri, 05 Jun 2026 03:05:10 GMT</pubDate>
-      <description>A calm journaling workflow for organizing thoughts, recording emotions, using prompts, and reviewing entries without uploading private writing.</description>
+      <title>Stair Headroom Measurement Guide For Remodel Layouts</title>
+      <link>https://woodcuttool.com/blog/stair-headroom-measurement-guide/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/stair-headroom-measurement-guide/</guid>
+      <category>Stairs</category>
+      <pubDate>Sat, 06 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Measure stair headroom through the walking line, ceiling slope, landings, finish layers, and structural constraints before changing a stair.</description>
     </item>
     <item>
-      <title>Secret Journal App: Private Offline Writing Without Accounts Or Cloud Sync</title>
-      <link>https://woodcuttool.com/blog/secret-journal-app-private-offline-writing/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/secret-journal-app-private-offline-writing/</guid>
-      <category>MindNest</category>
-      <pubDate>Thu, 04 Jun 2026 03:05:10 GMT</pubDate>
-      <description>How a private journal app helps protect thoughts, daily notes, reflections, and personal writing on device without requiring an account.</description>
+      <title>Stair Tread Depth Planning For Comfort, Footing, And Available Run</title>
+      <link>https://woodcuttool.com/blog/stair-tread-depth-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/stair-tread-depth-planning/</guid>
+      <category>Stairs</category>
+      <pubDate>Fri, 05 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan stair tread depth with available run, nosing, landing position, walking rhythm, and local requirements before final layout.</description>
     </item>
     <item>
-      <title>Medicine Label And Reminder Helper: Clearer Reading Without A Cloud Account</title>
-      <link>https://woodcuttool.com/blog/medicine-label-reminder-helper-privacy/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/medicine-label-reminder-helper-privacy/</guid>
-      <category>Magnifier Reader</category>
-      <pubDate>Wed, 03 Jun 2026 03:05:10 GMT</pubDate>
-      <description>A practical, non-medical workflow for reading labels, copying notes, and setting simple reminders while keeping personal text on device.</description>
+      <title>Stair Riser Height Calculator Check Before Cutting Stringers</title>
+      <link>https://woodcuttool.com/blog/stair-riser-height-calculator-check/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/stair-riser-height-calculator-check/</guid>
+      <category>Stairs</category>
+      <pubDate>Thu, 04 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Use a stair riser height check to compare total rise, finish thickness, number of risers, landing height, and code verification before cutting.</description>
     </item>
     <item>
-      <title>Big Text Reader For Seniors: Larger Type, Read Aloud, And Simple Controls</title>
-      <link>https://woodcuttool.com/blog/big-text-reader-for-seniors-iphone/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/big-text-reader-for-seniors-iphone/</guid>
-      <category>Magnifier Reader</category>
-      <pubDate>Tue, 02 Jun 2026 03:05:10 GMT</pubDate>
-      <description>A senior-friendly reading workflow for pasted text, long messages, reminders, contrast modes, and fewer confusing app screens.</description>
+      <title>Bathroom Vanity Plywood Cut List For Sink Openings And Moisture</title>
+      <link>https://woodcuttool.com/blog/bathroom-vanity-plywood-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/bathroom-vanity-plywood-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 03 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan a bathroom vanity cut list with sink clearance, drawers, plumbing gaps, finished sides, moisture protection, and sheet layout.</description>
     </item>
     <item>
-      <title>Magnifier Reader App: Read Small Print, Labels, Menus, And Notices More Comfortably</title>
-      <link>https://woodcuttool.com/blog/magnifier-reader-app-small-print-guide/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/magnifier-reader-app-small-print-guide/</guid>
-      <category>Magnifier Reader</category>
-      <pubDate>Mon, 01 Jun 2026 03:05:10 GMT</pubDate>
-      <description>How a phone magnifier and big text reader can help with small print, packaging, bills, menus, appliance panels, and everyday reading.</description>
+      <title>Workshop Clamp Rack Cut List From Plywood Offcuts</title>
+      <link>https://woodcuttool.com/blog/workshop-clamp-rack-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/workshop-clamp-rack-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 02 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Build a plywood clamp rack cut list with cleats, slots, French cleat backs, spacing, load support, and scrap-friendly parts.</description>
     </item>
     <item>
-      <title>Private Inventory CSV Export: No-Login Stock Records You Control</title>
-      <link>https://woodcuttool.com/blog/private-inventory-csv-export-no-login/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/private-inventory-csv-export-no-login/</guid>
-      <category>SnapStock</category>
-      <pubDate>Sun, 31 May 2026 03:05:10 GMT</pubDate>
-      <description>Why product names, barcodes, quantities, supplier notes, and CSV exports should stay under user control for small inventory workflows.</description>
+      <title>Mudroom Wall Hooks And Shelf Cut List For Everyday Drop Zones</title>
+      <link>https://woodcuttool.com/blog/mudroom-wall-hooks-shelf-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/mudroom-wall-hooks-shelf-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 01 Jun 2026 01:52:14 GMT</pubDate>
+      <description>Plan a plywood mudroom hook wall with backing panels, cubbies, upper shelves, bench tie-ins, finished edges, and sheet yield.</description>
     </item>
     <item>
-      <title>Barcode Stock Count App: Scan, Update Quantity, And Catch Low Stock Early</title>
-      <link>https://woodcuttool.com/blog/barcode-stock-count-app-low-stock-alerts/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/barcode-stock-count-app-low-stock-alerts/</guid>
-      <category>SnapStock</category>
-      <pubDate>Sat, 30 May 2026 03:05:10 GMT</pubDate>
-      <description>A barcode workflow for adding products, increasing and decreasing quantities, setting low-stock thresholds, and reviewing activity history.</description>
+      <title>Kitchen Island Plywood Cut List For Cabinets, Panels, And Overhangs</title>
+      <link>https://woodcuttool.com/blog/kitchen-island-plywood-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/kitchen-island-plywood-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 31 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a kitchen island cut list with cabinet boxes, finished backs, seating overhang, toe space, end panels, and sheet optimization.</description>
     </item>
     <item>
-      <title>Inventory Scanner App For Small Business: Count Products Without Heavy Stock Software</title>
-      <link>https://woodcuttool.com/blog/inventory-scanner-app-small-business/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/inventory-scanner-app-small-business/</guid>
-      <category>SnapStock</category>
-      <pubDate>Fri, 29 May 2026 03:05:10 GMT</pubDate>
-      <description>How a simple inventory scanner helps small shops, pop-up stores, workshops, classrooms, and storage rooms count products quickly.</description>
+      <title>Camper Bed Platform Cut List For Storage, Access Panels, And Weight</title>
+      <link>https://woodcuttool.com/blog/camper-bed-platform-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/camper-bed-platform-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 30 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a camper bed platform with plywood panels, storage lids, ventilation, support ribs, weight control, and practical sheet breakdown.</description>
     </item>
     <item>
-      <title>Decision History And Insights: A Private Choice Tracker For Everyday Patterns</title>
-      <link>https://woodcuttool.com/blog/decision-history-insights-private-choice-tracker/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/decision-history-insights-private-choice-tracker/</guid>
-      <category>PickOne</category>
-      <pubDate>Thu, 28 May 2026 03:05:10 GMT</pubDate>
-      <description>Why decision history, option lists, and reflection prompts can help people notice patterns without turning choices into a cloud profile.</description>
+      <title>Closet Island Cut List: Drawers, Shelves, Tops, And Finished Sides</title>
+      <link>https://woodcuttool.com/blog/closet-island-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/closet-island-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 29 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a plywood closet island with drawer boxes, shelf bays, finished panels, countertop overhang, walking clearance, and sheet count.</description>
     </item>
     <item>
-      <title>Weighted Decision Maker: When Random Choices Need Priority And Probability</title>
-      <link>https://woodcuttool.com/blog/weighted-decision-maker-app/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/weighted-decision-maker-app/</guid>
-      <category>PickOne</category>
-      <pubDate>Wed, 27 May 2026 03:05:10 GMT</pubDate>
-      <description>How weighted decisions can make options feel fairer when some choices matter more than others but you still want a quick result.</description>
+      <title>Plywood Room Divider Cut List For Shelves, Privacy, And Open Storage</title>
+      <link>https://woodcuttool.com/blog/plywood-room-divider-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-room-divider-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 28 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a freestanding plywood room divider with shelf modules, stability, finished faces, base support, and repeatable cut parts.</description>
     </item>
     <item>
-      <title>Random Choice Picker App: Make Daily Decisions Without Overthinking</title>
-      <link>https://woodcuttool.com/blog/random-choice-picker-app-daily-decisions/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/random-choice-picker-app-daily-decisions/</guid>
-      <category>PickOne</category>
-      <pubDate>Tue, 26 May 2026 03:05:10 GMT</pubDate>
-      <description>How a random choice picker helps decide meals, errands, routines, study tasks, family options, and group choices while keeping a record.</description>
+      <title>Garage Sliding Door Cabinet Cut List For Dusty Shop Walls</title>
+      <link>https://woodcuttool.com/blog/garage-sliding-door-cabinet-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/garage-sliding-door-cabinet-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 27 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a garage cabinet with sliding doors, plywood tracks, deep shelves, tool clearance, and sheet layout that avoids door swing conflicts.</description>
     </item>
     <item>
-      <title>Print Photos And Web Pages On iPhone: Layouts, Captions, And Cleaner Output</title>
-      <link>https://woodcuttool.com/blog/print-photos-web-pages-iphone-layouts/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/print-photos-web-pages-iphone-layouts/</guid>
-      <category>Printer App</category>
-      <pubDate>Mon, 25 May 2026 03:05:10 GMT</pubDate>
-      <description>How to print photo sheets, web pages, image grids, and multi-image layouts without wasting paper or uploading files to a server.</description>
+      <title>Laundry Folding Counter Cut List Over Washer And Dryer</title>
+      <link>https://woodcuttool.com/blog/laundry-folding-counter-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/laundry-folding-counter-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 26 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a plywood folding counter with side supports, removable access, appliance clearance, edge finish, and wall fit.</description>
     </item>
     <item>
-      <title>Scan To Print App: Turn Paperwork Into Clean PDFs And Printed Pages</title>
-      <link>https://woodcuttool.com/blog/scan-to-print-app-iphone-paperwork/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/scan-to-print-app-iphone-paperwork/</guid>
-      <category>Printer App</category>
-      <pubDate>Sun, 24 May 2026 03:05:10 GMT</pubDate>
-      <description>How to scan receipts, forms, notes, IDs, and documents with a camera, review pages, then print or save a PDF locally.</description>
+      <title>Record Storage Cabinet Cut List For Heavy Shelves And Clean Dividers</title>
+      <link>https://woodcuttool.com/blog/record-storage-cabinet-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/record-storage-cabinet-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 25 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan plywood record storage with shelf spans, divider spacing, face quality, finished backs, weight support, and sheet count.</description>
     </item>
     <item>
-      <title>Print PDF Documents From iPhone: AirPrint Workflow For Work, School, And Home</title>
-      <link>https://woodcuttool.com/blog/print-pdf-documents-iphone-airprint-guide/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/print-pdf-documents-iphone-airprint-guide/</guid>
-      <category>Printer App</category>
-      <pubDate>Sat, 23 May 2026 03:05:10 GMT</pubDate>
-      <description>A practical guide to printing PDFs, Word files, text documents, tickets, forms, and confirmations from iPhone with page preview and settings.</description>
+      <title>Pet Feeding Station Cut List With Bowl Openings And Storage</title>
+      <link>https://woodcuttool.com/blog/pet-feeding-station-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/pet-feeding-station-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 24 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a plywood pet feeding station with bowl cutouts, storage cubbies, height, cleanup access, finish protection, and sheet layout.</description>
     </item>
     <item>
-      <title>Fake PIN, Disguised Icon, And Intruder Alert: Extra Layers For A Photo Vault</title>
-      <link>https://woodcuttool.com/blog/fake-pin-disguised-icon-intruder-alert-photo-vault/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/fake-pin-disguised-icon-intruder-alert-photo-vault/</guid>
-      <category>PhotoSafe</category>
-      <pubDate>Fri, 22 May 2026 03:05:10 GMT</pubDate>
-      <description>How optional privacy layers help reduce casual exposure without turning a private gallery into a complicated security system.</description>
+      <title>Garden Tool Rack Cut List For Long Handles And Wall Storage</title>
+      <link>https://woodcuttool.com/blog/garden-tool-rack-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/garden-tool-rack-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 23 May 2026 01:52:14 GMT</pubDate>
+      <description>Build a plywood garden tool rack cut list with long-handle slots, shelves, wall cleats, wet-tool clearance, and offcut-friendly parts.</description>
     </item>
     <item>
-      <title>Encrypted Photo And Video Vault: Why Local Storage Matters For Private Media</title>
-      <link>https://woodcuttool.com/blog/encrypted-video-photo-vault-local-storage/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/encrypted-video-photo-vault-local-storage/</guid>
-      <category>PhotoSafe</category>
-      <pubDate>Thu, 21 May 2026 03:05:10 GMT</pubDate>
-      <description>A privacy-first explanation of on-device encryption, PIN access, Face ID, media separation, and no-cloud vault workflows.</description>
+      <title>Outdoor Storage Box Cut List For Cushions, Garden Gear, And Tools</title>
+      <link>https://woodcuttool.com/blog/outdoor-storage-box-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/outdoor-storage-box-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 22 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan an outdoor plywood storage box with lid support, drainage, weather exposure, fasteners, finish, and practical sheet layout.</description>
     </item>
     <item>
-      <title>Private Photo Vault For iPhone: Keep Sensitive Photos Out Of The Camera Roll</title>
-      <link>https://woodcuttool.com/blog/private-photo-vault-iphone-guide/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/private-photo-vault-iphone-guide/</guid>
-      <category>PhotoSafe</category>
-      <pubDate>Wed, 20 May 2026 03:05:10 GMT</pubDate>
-      <description>How to use a private photo vault for personal media, ID scans, receipts, screenshots, travel documents, and local encrypted storage.</description>
+      <title>Miter Saw Station Cut List: Wings, Cabinets, Fence Height, And Dust Space</title>
+      <link>https://woodcuttool.com/blog/miter-saw-station-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/miter-saw-station-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 21 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a miter saw station cut list with plywood cabinets, side wings, fence alignment, dust collection space, and repeated parts.</description>
     </item>
     <item>
-      <title>Private iPhone Storage Cleanup: AI Scans Without Uploading Your Photos</title>
-      <link>https://woodcuttool.com/blog/private-iphone-storage-cleanup-ai-scan/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/private-iphone-storage-cleanup-ai-scan/</guid>
-      <category>SnapCleaner</category>
-      <pubDate>Tue, 19 May 2026 03:05:10 GMT</pubDate>
-      <description>Why photo cleanup, contact cleanup, file scans, and metadata removal should stay on device when personal media is involved.</description>
+      <title>Drill Press Stand Cut List For Stable Plywood Shop Storage</title>
+      <link>https://woodcuttool.com/blog/drill-press-stand-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/drill-press-stand-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 20 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a drill press stand with a stable plywood base, bit drawers, shelf parts, weight distribution, and sheet-efficient panels.</description>
+    </item>
+    <item>
+      <title>Rolling Shop Cart Cut List For Plywood Tools And Supplies</title>
+      <link>https://woodcuttool.com/blog/rolling-shop-cart-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/rolling-shop-cart-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 19 May 2026 01:52:14 GMT</pubDate>
+      <description>Create a rolling shop cart cut list with cabinet sides, shelves, caster blocking, handle parts, tool bays, and durable plywood layout.</description>
+    </item>
+    <item>
+      <title>Corner Shelf Plywood Cut List For Dead Space And Small Rooms</title>
+      <link>https://woodcuttool.com/blog/corner-shelf-plywood-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/corner-shelf-plywood-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 18 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan corner shelves with triangular or L-shaped parts, wall fit, support cleats, edge treatment, and plywood offcut reuse.</description>
+    </item>
+    <item>
+      <title>Bookcase With Cabinet Base Cut List For Built-In Storage Walls</title>
+      <link>https://woodcuttool.com/blog/bookcase-with-cabinet-base-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/bookcase-with-cabinet-base-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 17 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a bookcase and cabinet base cut list with tall sides, adjustable shelves, lower doors, backs, fillers, and material groups.</description>
+    </item>
+    <item>
+      <title>Floating Desk Cut List: Wall Cleats, Tops, Cable Paths, And Supports</title>
+      <link>https://woodcuttool.com/blog/floating-desk-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/floating-desk-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 16 May 2026 01:52:14 GMT</pubDate>
+      <description>Build a floating desk cut list with plywood tops, cleats, side panels, cable openings, support spacing, and visible edge planning.</description>
+    </item>
+    <item>
+      <title>Murphy Bed Plywood Cut List Planning Before Hardware Installation</title>
+      <link>https://woodcuttool.com/blog/murphy-bed-plywood-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/murphy-bed-plywood-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 15 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan plywood parts for a Murphy bed cabinet with hardware clearances, face panels, side towers, wall attachment, and sheet count.</description>
+    </item>
+    <item>
+      <title>Craft Room Storage Cut List For Paper, Fabric, Tools, And Bins</title>
+      <link>https://woodcuttool.com/blog/craft-room-storage-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/craft-room-storage-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 14 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan craft room plywood storage around bin sizes, cubbies, drawer stacks, sheet yield, labels, and flexible shelves.</description>
+    </item>
+    <item>
+      <title>Entryway Shoe Cabinet Cut List For Narrow Hallways</title>
+      <link>https://woodcuttool.com/blog/entryway-shoe-cabinet-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/entryway-shoe-cabinet-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 13 May 2026 01:52:14 GMT</pubDate>
+      <description>Create a shoe cabinet cut list with shallow shelves, angled storage, door clearance, wall scribes, and plywood parts sized for tight entries.</description>
+    </item>
+    <item>
+      <title>Window Seat Bench Cut List: Plywood Boxes, Lids, And Face Frames</title>
+      <link>https://woodcuttool.com/blog/window-seat-bench-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/window-seat-bench-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 12 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a plywood window seat bench with storage boxes, lift lids, dividers, finished ends, cushion overhang, and sheet optimization.</description>
+    </item>
+    <item>
+      <title>Under-Stair Storage Cut List For Awkward Triangular Spaces</title>
+      <link>https://woodcuttool.com/blog/under-stair-storage-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/under-stair-storage-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 11 May 2026 01:52:14 GMT</pubDate>
+      <description>Turn under-stair space into a realistic plywood cut list with angled sides, drawer boxes, shelves, scribes, and access clearance.</description>
+    </item>
+    <item>
+      <title>Pantry Cabinet Plywood Cut List For Deep Kitchen Storage</title>
+      <link>https://woodcuttool.com/blog/pantry-cabinet-plywood-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/pantry-cabinet-plywood-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 10 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a pantry cabinet cut list with shelf depth, adjustable holes, door clearance, face quality, and plywood sheet yield before cutting.</description>
+    </item>
+    <item>
+      <title>Quilt Backing Piecing Layout: Yardage, Seams, And Directional Prints</title>
+      <link>https://woodcuttool.com/blog/quilt-backing-piecing-layout/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/quilt-backing-piecing-layout/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Sat, 09 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan pieced quilt backing with overhang, seam placement, directional fabric, wideback alternatives, label panels, and longarm requirements.</description>
+    </item>
+    <item>
+      <title>T-Shirt Quilt Stabilizer Planning Before Cutting Memory Shirts</title>
+      <link>https://woodcuttool.com/blog/tshirt-quilt-stabilizer-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/tshirt-quilt-stabilizer-planning/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Fri, 08 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a T-shirt quilt with stabilizer, block sizes, logo placement, fabric stretch, sashing, backing, and preservation notes before cutting.</description>
+    </item>
+    <item>
+      <title>Baby Quilt Size And Yardage Planning For A Practical Gift</title>
+      <link>https://woodcuttool.com/blog/baby-quilt-size-yardage-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/baby-quilt-size-yardage-planning/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Thu, 07 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a baby quilt with usable finished size, block count, fabric roles, batting, backing, binding, washability, and gift timing.</description>
+    </item>
+    <item>
+      <title>Fat Quarter Quilt Planning: Turning Bundles Into A Real Layout</title>
+      <link>https://woodcuttool.com/blog/fat-quarter-quilt-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/fat-quarter-quilt-planning/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Wed, 06 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a fat quarter quilt by mapping fabric roles, block counts, cutting efficiency, contrast, leftovers, and backing or binding decisions.</description>
+    </item>
+    <item>
+      <title>Quilt Border Math Planning: Size, Yardage, And Visual Balance</title>
+      <link>https://woodcuttool.com/blog/quilt-border-math-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/quilt-border-math-planning/</guid>
+      <category>QuiltFit</category>
+      <pubDate>Tue, 05 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan quilt borders with finished size targets, strip widths, piecing seams, yardage, directional prints, and balanced proportions.</description>
+    </item>
+    <item>
+      <title>Tile Transition And Threshold Planning Between Rooms</title>
+      <link>https://woodcuttool.com/blog/tile-transition-threshold-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/tile-transition-threshold-planning/</guid>
+      <category>Tile</category>
+      <pubDate>Mon, 04 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan tile thresholds with floor height changes, door swing, trim profiles, movement joints, grout lines, and clean transitions to nearby rooms.</description>
+    </item>
+    <item>
+      <title>Fireplace Tile Layout Planning For Surrounds, Hearths, And Mantels</title>
+      <link>https://woodcuttool.com/blog/fireplace-tile-layout-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/fireplace-tile-layout-planning/</guid>
+      <category>Tile</category>
+      <pubDate>Sun, 03 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan fireplace tile with centered sightlines, hearth transitions, mantel clearances, edge trim, heat-aware materials, and balanced cuts.</description>
+    </item>
+    <item>
+      <title>Laundry Room Tile Layout: Appliances, Drains, Thresholds, And Waste</title>
+      <link>https://woodcuttool.com/blog/laundry-room-tile-layout/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/laundry-room-tile-layout/</guid>
+      <category>Tile</category>
+      <pubDate>Sat, 02 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan laundry room tile around washers, dryers, floor drains, thresholds, visible rows, movement joints, and realistic waste allowance.</description>
+    </item>
+    <item>
+      <title>Shower Tile Niche Layout Planning For Cleaner Cuts And Lines</title>
+      <link>https://woodcuttool.com/blog/tile-niche-layout-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/tile-niche-layout-planning/</guid>
+      <category>Tile</category>
+      <pubDate>Fri, 01 May 2026 01:52:14 GMT</pubDate>
+      <description>Plan a shower niche around tile module size, grout lines, waterproofing, shelf thickness, trim, and field tile alignment.</description>
+    </item>
+    <item>
+      <title>Tile Backsplash Layout Planning Before Cutting The First Row</title>
+      <link>https://woodcuttool.com/blog/tile-backsplash-layout-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/tile-backsplash-layout-planning/</guid>
+      <category>Tile</category>
+      <pubDate>Thu, 30 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Plan a tile backsplash with outlets, countertop level, focal points, edge trim, pattern repeats, and waste allowance before mixing thinset.</description>
+    </item>
+    <item>
+      <title>Handrail Height Layout Planning For Stairs And Landings</title>
+      <link>https://woodcuttool.com/blog/handrail-height-layout-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/handrail-height-layout-planning/</guid>
+      <category>Stairs</category>
+      <pubDate>Wed, 29 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Plan handrail height, bracket spacing, landing returns, wall clearance, and local-code verification before drilling into finished stair walls.</description>
+    </item>
+    <item>
+      <title>Open Riser Stair Planning: Layout, Visibility, And Safety Checks</title>
+      <link>https://woodcuttool.com/blog/open-riser-stair-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/open-riser-stair-planning/</guid>
+      <category>Stairs</category>
+      <pubDate>Tue, 28 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Plan open riser stairs with consistent geometry, tread thickness, structural support, visibility, local-code checks, and finish coordination.</description>
+    </item>
+    <item>
+      <title>Basement Stair Remodel Measurements Before Replacing Stringers</title>
+      <link>https://woodcuttool.com/blog/basement-stair-remodel-measurements/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/basement-stair-remodel-measurements/</guid>
+      <category>Stairs</category>
+      <pubDate>Mon, 27 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Measure basement stair openings, headroom, total rise, landing depth, wall clearance, and finish thickness before remodeling an existing stair.</description>
+    </item>
+    <item>
+      <title>Deck Stair Code Planning: Measurements To Verify Before Cutting</title>
+      <link>https://woodcuttool.com/blog/deck-stair-code-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/deck-stair-code-planning/</guid>
+      <category>Stairs</category>
+      <pubDate>Sun, 26 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Plan deck stairs with rise, run, landing, guard, handrail, nosing, and local-code verification before committing to stringer cuts.</description>
+    </item>
+    <item>
+      <title>Stair Landing Layout Measurements For Safer Rise And Run Planning</title>
+      <link>https://woodcuttool.com/blog/stair-landing-layout-measurements/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/stair-landing-layout-measurements/</guid>
+      <category>Stairs</category>
+      <pubDate>Sat, 25 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Measure stair landings, total rise, available run, headroom, and transitions before laying out stringers for decks, basements, and remodels.</description>
+    </item>
+    <item>
+      <title>Closet Drawer Tower Cut List: Shelves, Boxes, Faces, And Clearances</title>
+      <link>https://woodcuttool.com/blog/closet-drawer-tower-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/closet-drawer-tower-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 24 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Plan a closet drawer tower with plywood sides, shelves, drawer boxes, drawer fronts, slide clearances, closet depth, and sheet count.</description>
+    </item>
+    <item>
+      <title>Utility Room Storage Cut List For Brooms, Tools, And Household Supplies</title>
+      <link>https://woodcuttool.com/blog/utility-room-storage-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/utility-room-storage-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 23 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Plan a utility room storage cut list with tall compartments, cleaning-tool clearance, adjustable shelves, wall fit, and plywood yield in mind.</description>
+    </item>
+    <item>
+      <title>Scrap Plywood Projects: Turning Offcuts Into A Practical Cut List</title>
+      <link>https://woodcuttool.com/blog/scrap-plywood-projects-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/scrap-plywood-projects-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 22 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Use saved plywood offcuts for small projects by measuring scraps, grouping material, setting minimum sizes, and building a cut list around real inventory.</description>
+    </item>
+    <item>
+      <title>Cut List Change Order Workflow: Updating Parts Without Losing Control</title>
+      <link>https://woodcuttool.com/blog/cut-list-change-order-workflow/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-change-order-workflow/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 21 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Handle cut-list changes from clients, site measurements, hardware swaps, and material shortages without corrupting the final plywood plan.</description>
+    </item>
+    <item>
+      <title>Plywood Cabinet Door Sizing: Reveals, Overlay, Grain, And Cut Lists</title>
+      <link>https://woodcuttool.com/blog/plywood-cabinet-door-sizing/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-cabinet-door-sizing/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 20 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Size plywood cabinet doors with overlay, inset gaps, grain direction, hinge clearance, edge treatment, and sheet layout in the same workflow.</description>
+    </item>
+    <item>
+      <title>Sheet Goods Delivery And Storage Planning Before The First Cut</title>
+      <link>https://woodcuttool.com/blog/sheet-goods-delivery-storage-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/sheet-goods-delivery-storage-planning/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 19 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Plan plywood delivery, storage, acclimation, labeling, and staging so a cut list stays accurate from purchase through shop breakdown.</description>
+    </item>
+    <item>
+      <title>Melamine vs Plywood Cut Lists: Material Choices That Change The Layout</title>
+      <link>https://woodcuttool.com/blog/melamine-vs-plywood-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/melamine-vs-plywood-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 18 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Compare melamine and plywood cut-list planning for cabinets, closets, shelves, edge treatment, chipout risk, weight, and sheet optimization.</description>
+    </item>
+    <item>
+      <title>Face-Frame vs Frameless Cabinets: How The Cut List Changes</title>
+      <link>https://woodcuttool.com/blog/face-frame-vs-frameless-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/face-frame-vs-frameless-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 17 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Compare face-frame and frameless cabinet cut lists, including box sizing, reveals, finished ends, hardware clearance, and plywood yield.</description>
+    </item>
+    <item>
+      <title>Drawer Slide Clearance In A Cut List: Avoiding Box And Opening Mistakes</title>
+      <link>https://woodcuttool.com/blog/drawer-slide-clearance-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/drawer-slide-clearance-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 16 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Use drawer slide clearance rules in your cut list so drawer boxes, openings, faces, and plywood parts match the hardware you actually bought.</description>
+    </item>
+    <item>
+      <title>Cabinet Toekick Cut List: Bases, Rips, Leveling, And Installation Notes</title>
+      <link>https://woodcuttool.com/blog/cabinet-toekick-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-toekick-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 15 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Plan cabinet toekicks as real cut-list parts, including base rips, ladder frames, finished skins, leveling strips, and site-fit allowances.</description>
+    </item>
+    <item>
+      <title>Router Table Cabinet Cut List For A Stable Plywood Base</title>
+      <link>https://woodcuttool.com/blog/router-table-cabinet-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/router-table-cabinet-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 14 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Plan a router table cabinet cut list with torsion, dust collection, bit storage, fence clearance, and plywood parts that resist vibration.</description>
+    </item>
+    <item>
+      <title>Media Console Plywood Cut List: Shelves, Doors, Venting, And Cable Paths</title>
+      <link>https://woodcuttool.com/blog/media-console-plywood-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/media-console-plywood-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 13 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Create a media console cut list that balances plywood yield with electronics ventilation, cable routing, adjustable shelves, and clean front reveals.</description>
+    </item>
+    <item>
+      <title>Home Office Built-In Desk Cut List For Plywood Workstations</title>
+      <link>https://woodcuttool.com/blog/home-office-built-in-desk-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/home-office-built-in-desk-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 12 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Plan a plywood built-in desk with desktop spans, cable access, wall scribes, storage bays, and sheet optimization for a cleaner home office build.</description>
+    </item>
+    <item>
+      <title>Laundry Room Shelving Cut List: Tight Storage Without Wasted Plywood</title>
+      <link>https://woodcuttool.com/blog/laundry-room-shelving-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/laundry-room-shelving-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 11 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Build a practical laundry room shelving cut list for detergent, baskets, appliances, wall clearances, and moisture-aware plywood planning.</description>
+    </item>
+    <item>
+      <title>Garage Cabinet Cut List Planning For Durable Shop Storage</title>
+      <link>https://woodcuttool.com/blog/garage-cabinet-cut-list-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/garage-cabinet-cut-list-planning/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 10 Apr 2026 01:52:14 GMT</pubDate>
+      <description>Plan a garage cabinet cut list with plywood thickness, shelf spans, door sizing, toe space, and sheet layout choices that hold up in a working shop.</description>
     </item>
   </channel>
 </rss>

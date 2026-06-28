@@ -6276,7 +6276,7 @@ articles.push(
   }
 );
 
-const generatedAppBlogDefinitions = [
+const generatedBlogExpansionDefinitions = [
   {
     category: "Contacts Backup",
     zhCategory: "通讯录备份",
@@ -6500,10 +6500,596 @@ const generatedAppBlogDefinitions = [
       ["batch-photo-compression-zip-export", "Batch Photo Compression And ZIP Export: Send Many Images Without Huge Files", "A workflow for compressing dozens of photos, reviewing savings, bundling files into ZIP, and sharing cleaner batches for work or travel.", "ZIP export", "batch photo compression", ["Batch", "Compress", "ZIP", "Share", "History"]],
       ["photo-quality-comparison-psnr-ssim-guide", "Photo Quality Comparison: Use Before-And-After Checks Before Export", "Why quality previews, PSNR/SSIM-style scores, resolution choices, and compression levels help avoid blurry or oversized exports.", "Quality check", "photo compression quality", ["Preview", "PSNR", "SSIM", "Resolution", "Export"]]
     ]
+  },
+  {
+    slug: "garage-cabinet-cut-list-planning",
+    category: "CutList",
+    title: "Garage Cabinet Cut List Planning For Durable Shop Storage",
+    description: "Plan a garage cabinet cut list with plywood thickness, shelf spans, door sizing, toe space, and sheet layout choices that hold up in a working shop.",
+    kicker: "Garage storage",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Start With What The Cabinet Must Survive", "Garage storage usually carries heavier and less predictable loads than a living-room cabinet. Paint cans, tools, fasteners, seasonal bins, and chargers all create different shelf stresses. Before optimizing sheets, define cabinet height, depth, shelf span, and the heaviest items each bay must hold. That keeps the cut list grounded in real use instead of only matching an attractive wall elevation."],
+      ["Separate Carcass Parts From Doors And Shelves", "A clean garage cabinet list separates sides, tops, bottoms, fixed shelves, adjustable shelves, backs, doors, stretchers, and toe parts. Doors and adjustable shelves often have different grain, edge treatment, or material quality than hidden cabinet boxes. Grouping those parts before layout makes it easier to choose the right plywood grade and avoid wasting finished faces on hidden components."],
+      ["Plan Around Sheet Handling In A Small Shop", "Large cabinet sides are easier to cut accurately when the first breakdown leaves stable panels. A layout that saves a narrow strip but forces awkward handling may not be worth it. Review the CutList output for repeated rip widths, manageable crosscuts, and offcuts large enough to become extra shelves or cleats."],
+      ["Leave Room For Installation Reality", "Garage floors slope, walls wave, and concrete edges are rarely perfect. Add scribe allowance where the cabinet meets a wall, keep toe or leveling details visible in the list, and label any fillers separately. The finished plan should be clear enough that you can buy sheets, cut parts, and still adjust on site without guessing."]
+    ],
+    checklist: ["Define load and shelf span before layout.", "Group carcass, door, shelf, back, and toe parts.", "Use durable plywood where fasteners and weight matter.", "Review cut order for safe sheet handling.", "Label fillers and scribe parts separately."]
+  },
+  {
+    slug: "laundry-room-shelving-cut-list",
+    category: "CutList",
+    title: "Laundry Room Shelving Cut List: Tight Storage Without Wasted Plywood",
+    description: "Build a practical laundry room shelving cut list for detergent, baskets, appliances, wall clearances, and moisture-aware plywood planning.",
+    kicker: "Laundry storage",
+    readTime: "6 min",
+    accent: "cutlist",
+    sections: [
+      ["Measure The Appliances First", "Laundry rooms become difficult because machines, hoses, vents, lids, doors, and drain access all compete for the same space. Measure the washer, dryer, required service clearance, and any lid swing before deciding shelf depth. A cut list that ignores maintenance access can look efficient on paper and still fail the first time a hose needs to be checked."],
+      ["Use Shelf Depths That Match Real Items", "Detergent bottles, baskets, folded linens, and cleaning supplies do not need the same shelf depth. A shallow upper shelf may be easier to reach and may free enough plywood for another divider. Treat every depth change as a deliberate design choice, then enter those parts as separate rows so the optimizer can arrange them honestly."],
+      ["Plan Cleats And Supports With The Shelves", "Shelves need support parts, not just flat panels. Include wall cleats, vertical dividers, front lips, and any side returns in the same cut list as the shelves. Those smaller parts often nest well around larger panels and prevent a second trip for material that should have been counted at the start."],
+      ["Account For Moisture And Finish", "Laundry spaces see humidity, splashes, and cleaning chemicals. Choose a material and finish that can tolerate that environment, and avoid leaving raw plywood edges near wet zones. Add edge banding or sealed lips to the planning notes so finishing is not separated from the cutting workflow."]
+    ],
+    checklist: ["Measure machines, hoses, vents, and access panels.", "Match shelf depth to baskets and bottles.", "Include cleats, dividers, lips, and side returns.", "Choose material with moisture exposure in mind.", "Keep maintenance access visible in the layout."]
+  },
+  {
+    slug: "home-office-built-in-desk-cut-list",
+    category: "CutList",
+    title: "Home Office Built-In Desk Cut List For Plywood Workstations",
+    description: "Plan a plywood built-in desk with desktop spans, cable access, wall scribes, storage bays, and sheet optimization for a cleaner home office build.",
+    kicker: "Office built-in",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Start With The Working Surface", "A desk cut list begins with the desktop, not the cabinets under it. Decide the finished width, depth, thickness, support spacing, and whether the front edge will be banded, doubled, or framed. Long spans need support from side cabinets, cleats, aprons, or legs, and those support parts belong in the same material plan as the visible surface."],
+      ["Map Storage Before You Optimize", "File drawers, printer bays, keyboard clearance, shelves, and cable zones all change the part list. A shallow shelf tower and a deep file base may use the same plywood but should not be treated as identical boxes. Name each bay in the cut list so the layout remains connected to the room plan."],
+      ["Make Cable Access A Cut Part Decision", "Cable holes, rear notches, grommet panels, and removable backs affect both cutting and installation. If those details are only remembered after assembly, the builder may weaken a panel or create a messy opening. Add cable parts and notched backs to the plan before the sheet layout is accepted."],
+      ["Leave Scribe And Wall Tolerance", "Built-ins must meet walls, baseboards, and corners that may not be square. Add scribes, fillers, and trim strips intentionally instead of hoping the main desk panels fit perfectly. These narrow pieces can often be nested in offcuts, but they need names and quantities before optimization."]
+    ],
+    checklist: ["Size the desktop and support spacing first.", "Label each storage bay in the cut list.", "Include cable holes, backs, and access panels.", "Add scribes and fillers for wall fit.", "Protect visible grain and edge-banding faces."]
+  },
+  {
+    slug: "media-console-plywood-cut-list",
+    category: "CutList",
+    title: "Media Console Plywood Cut List: Shelves, Doors, Venting, And Cable Paths",
+    description: "Create a media console cut list that balances plywood yield with electronics ventilation, cable routing, adjustable shelves, and clean front reveals.",
+    kicker: "Media furniture",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Design Around The Electronics", "Receivers, game consoles, routers, and speakers generate heat and need cable access. Measure the actual devices and include breathing room before setting internal bay dimensions. A media console cut list should treat ventilation slots, removable backs, and cable openings as functional parts of the design rather than afterthoughts."],
+      ["Keep Front Reveals Consistent", "Doors, drawer fronts, open shelves, and face frames need consistent gaps to look intentional. Those reveals change the finished size of fronts and dividers, so record them before building the part list. A small mismatch across several bays can make an otherwise accurate plywood layout look uneven."],
+      ["Separate Visible And Hidden Panels", "The top, sides, doors, and shelf fronts may need better faces than backs, stretchers, or internal dividers. Grouping visible parts helps preserve grain direction and face quality. Hidden parts can often rotate or move into offcuts, which improves sheet yield without compromising the piece people actually see."],
+      ["Review The Layout For Long Low Parts", "Media consoles often include long tops, bottoms, and shelves. These pieces can dominate a sheet and leave awkward strips. Use CutList to test whether splitting internal shelves, changing bay width, or adjusting console depth saves a sheet while still keeping the visual proportions intact."]
+    ],
+    checklist: ["Measure electronics and heat clearance.", "Include backs, vents, and cable paths.", "Set door and shelf reveals before sizing fronts.", "Group visible panels by face and grain needs.", "Test console depth and bay width for sheet yield."]
+  },
+  {
+    slug: "router-table-cabinet-cut-list",
+    category: "CutList",
+    title: "Router Table Cabinet Cut List For A Stable Plywood Base",
+    description: "Plan a router table cabinet cut list with torsion, dust collection, bit storage, fence clearance, and plywood parts that resist vibration.",
+    kicker: "Shop fixture",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Treat Stability As The First Requirement", "A router table cabinet is a shop fixture, not just a storage box. The base should resist vibration, support the top, and keep the tool at a comfortable working height. Before laying out plywood, decide cabinet width, depth, top overhang, caster use, and whether the router lift or plate needs extra support below."],
+      ["Include Dust Collection Parts", "Dust collection changes the cut list. A closed lower box, hose port, internal baffles, removable door, and rear access panel all add small plywood parts that are easy to forget. Add them early so the optimizer can nest them around cabinet sides and shelves instead of forcing a separate scrap hunt later."],
+      ["Plan Bit And Accessory Storage", "Router bits, wrenches, inserts, featherboards, and setup blocks need shallow storage that does not interfere with the motor. Drawer boxes, pullouts, or vertical trays may be more useful than deep shelves. Label those parts clearly so hardware clearances and slide allowances do not get mixed with main cabinet dimensions."],
+      ["Check The Cut Order Against Accuracy", "Shop fixtures reward square, repeatable cuts. Review the sheet plan for paired sides, equal drawer parts, and repeated shelf widths that can be cut together. Saving material matters, but a router table base also needs consistent geometry so fences, drawers, and doors line up cleanly."]
+    ],
+    checklist: ["Set height, overhang, and router plate support.", "Add dust box, hose port, and access panels.", "Include bit storage and accessory trays.", "Account for drawer slide or door hardware clearance.", "Batch equal parts for a square cabinet."]
+  },
+  {
+    slug: "cabinet-toekick-cut-list",
+    category: "CutList",
+    title: "Cabinet Toekick Cut List: Bases, Rips, Leveling, And Installation Notes",
+    description: "Plan cabinet toekicks as real cut-list parts, including base rips, ladder frames, finished skins, leveling strips, and site-fit allowances.",
+    kicker: "Cabinet bases",
+    readTime: "6 min",
+    accent: "cutlist",
+    sections: [
+      ["Do Not Leave The Toekick Until The End", "Toekicks determine cabinet height, stance, cleaning access, and how the run meets the floor. If they are not counted in the cut list, the project can consume unexpected plywood or force weak site-built scraps. Decide whether the job uses integral kicks, ladder bases, separate platforms, or adjustable levelers before optimizing the cabinet boxes."],
+      ["Separate Structural Parts From Finished Skins", "A toekick may include rough base strips plus a finished front skin. Those parts often use different material or finish treatment. Structural rips can be utility plywood, while exposed faces may need a better veneer or paint-grade surface. Keeping them separate improves both cost control and visual consistency."],
+      ["Plan Leveling And Scribe Allowance", "Floors are rarely level across a long cabinet run. Include shims, leveling rails, or oversized skins if the installation strategy requires them. A perfectly optimized set of base strips is less useful if there is no allowance for the actual floor."],
+      ["Use Repeated Rips To Save Setup Time", "Toekick components are often long, narrow, and repetitive. A good CutList layout should reveal whether those rips can be batched safely from larger strips. Review cut order so narrow pieces are produced after the sheet has been broken down into stable sections."]
+    ],
+    checklist: ["Choose integral kick, ladder base, platform, or levelers.", "Separate structural rips from finished skins.", "Add scribe and leveling allowance.", "Batch repeated long rips where safe.", "Label exposed kick faces clearly."]
+  },
+  {
+    slug: "drawer-slide-clearance-cut-list",
+    category: "CutList",
+    title: "Drawer Slide Clearance In A Cut List: Avoiding Box And Opening Mistakes",
+    description: "Use drawer slide clearance rules in your cut list so drawer boxes, openings, faces, and plywood parts match the hardware you actually bought.",
+    kicker: "Drawer planning",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Hardware Decides The Drawer Box Width", "Drawer slides are not interchangeable after the cabinet is cut. Side-mount, undermount, and wood runners all need different clearances. Record the exact hardware family before entering drawer box sides, fronts, backs, and bottoms. The cut list should reflect the slide requirement, not a generic drawer formula remembered from another project."],
+      ["Separate Box Size From Face Size", "The drawer box fits the opening and hardware. The drawer face fits the visual reveal. Mixing those two dimensions creates common errors: a box that rubs, a face with uneven gaps, or hardware that cannot be installed. Use separate rows for box parts and applied fronts, with labels that make the distinction impossible to miss."],
+      ["Count Bottom Grooves And Joinery Allowances", "A drawer bottom captured in grooves has a different size than a bottom screwed under the box. Rabbeted, dadoed, pocket-screwed, and dovetailed boxes also change part lengths. The cut list should include the construction method so material optimization does not hide a joinery assumption."],
+      ["Batch Drawers By Exact Size", "Cabinet projects often include several nearly identical drawers. Group exact matches to catch quantity errors and reduce saw setup changes. If two drawers differ by only a small amount, check whether the cabinet design really requires that difference before cutting."]
+    ],
+    checklist: ["Pick drawer slide hardware before sizing boxes.", "Separate drawer box parts from drawer faces.", "Include bottom groove or joinery allowances.", "Group exact drawer sizes and quantities.", "Verify opening width before cutting repeated boxes."]
+  },
+  {
+    slug: "face-frame-vs-frameless-cut-list",
+    category: "CutList",
+    title: "Face-Frame vs Frameless Cabinets: How The Cut List Changes",
+    description: "Compare face-frame and frameless cabinet cut lists, including box sizing, reveals, finished ends, hardware clearance, and plywood yield.",
+    kicker: "Cabinet systems",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["The Cabinet System Changes The Box", "Face-frame cabinets and frameless cabinets can look similar after installation, but their cut lists are different. Face-frame boxes may have more flexibility at the front edge because the frame covers some construction details. Frameless boxes rely on the plywood carcass itself for clean reveals, square openings, and precise hardware placement."],
+      ["Face Frames Add Parts And Hide Some Edges", "A face-frame plan needs stiles, rails, end stiles, mid rails, and often separate finished end decisions. Those parts may be solid wood rather than plywood, but they still affect cabinet dimensions. The plywood list must account for how the frame overlays or inset-mounts to the box."],
+      ["Frameless Layouts Demand Edge Discipline", "Frameless cabinets expose more panel edges and depend on accurate side, top, bottom, and shelf sizing. Edge banding, drilling patterns, hinge plates, and reveal gaps should be connected to the cut list. A slightly inaccurate panel can make several doors or drawers harder to align."],
+      ["Choose Based On Workflow, Not Just Style", "Face-frame construction can be forgiving for uneven walls and traditional looks. Frameless construction can maximize interior space and streamline repeatable boxes. For material planning, the best choice is the one your shop can cut, edge, assemble, and install consistently."]
+    ],
+    checklist: ["Decide face-frame or frameless before sizing boxes.", "List frame stiles and rails outside plywood parts if needed.", "Track exposed edges and banding for frameless panels.", "Set reveals and hardware clearances early.", "Review finished end requirements by cabinet run."]
+  },
+  {
+    slug: "melamine-vs-plywood-cut-list",
+    category: "CutList",
+    title: "Melamine vs Plywood Cut Lists: Material Choices That Change The Layout",
+    description: "Compare melamine and plywood cut-list planning for cabinets, closets, shelves, edge treatment, chipout risk, weight, and sheet optimization.",
+    kicker: "Material choice",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Material Is Not Just A Price Line", "Melamine and plywood behave differently at the saw, during assembly, and in finished use. Melamine offers a ready interior surface but can chip and needs careful edge treatment. Plywood is lighter for many builds and takes fasteners differently. The cut list should reflect those properties instead of treating every sheet as a blank rectangle."],
+      ["Edge Treatment Drives Part Labels", "Melamine parts usually need edge banding on exposed edges. Plywood may need solid edging, veneer tape, or painted edges depending on the design. Add edge notes to shelves, doors, dividers, and finished ends so the cutting plan supports the finishing plan."],
+      ["Weight And Handling Affect Layout Review", "Heavy panels are harder to flip, carry, and cut safely. A low-waste layout may be less attractive if it requires awkward full-sheet handling or fragile narrow pieces. Review the optimizer output with the actual material weight in mind, especially for tall closets or long cabinet sides."],
+      ["Use Mixed Materials Deliberately", "Many projects work best with a mix: melamine interiors, plywood finished ends, hardboard backs, or solid edging. Separate each material group before optimizing. Combining them into one list may create a sheet count that looks efficient but cannot be purchased or finished correctly."]
+    ],
+    checklist: ["Choose material by use, finish, weight, and fasteners.", "Label exposed edges and banding needs.", "Separate melamine, plywood, backs, and trim materials.", "Review heavy-sheet handling before accepting a layout.", "Protect finished faces from chipout in the cut order."]
+  },
+  {
+    slug: "sheet-goods-delivery-storage-planning",
+    category: "CutList",
+    title: "Sheet Goods Delivery And Storage Planning Before The First Cut",
+    description: "Plan plywood delivery, storage, acclimation, labeling, and staging so a cut list stays accurate from purchase through shop breakdown.",
+    kicker: "Material staging",
+    readTime: "6 min",
+    accent: "cutlist",
+    sections: [
+      ["A Cut List Is Only Useful If The Material Arrives Usable", "Plywood planning often focuses on the optimizer and forgets delivery. Damaged corners, bowed sheets, mixed thicknesses, or unlabeled grades can undermine a perfect layout. Check sheet count, size, thickness, face quality, and damage before the material disappears into the shop stack."],
+      ["Store Sheets Flat And Identifiable", "Flat storage helps prevent sag and twist, but identification matters too. Label species, thickness, grade, purchase date, and job name if multiple projects share the rack. A sheet selected from the wrong stack can make the cut list look wrong even when the dimensions are correct."],
+      ["Stage Sheets In Cut Order", "When possible, place the first sheets to be cut where they can be reached without restacking the entire pile. This is especially useful when the project uses several materials. Staging reduces handling time and lowers the chance that a finished-face sheet is accidentally used for hidden parts."],
+      ["Track Offcuts As Inventory", "The job does not end when the main parts are cut. Large offcuts should be labeled with material, thickness, and dimensions immediately. If they are entered back into future planning, the shop can reduce purchases on small shelves, drawer parts, templates, and repair pieces."]
+    ],
+    checklist: ["Verify sheet count, thickness, grade, and damage on arrival.", "Store sheets flat with clear labels.", "Stage material by cut order and job.", "Protect finished faces during handling.", "Label reusable offcuts immediately."]
+  },
+  {
+    slug: "plywood-cabinet-door-sizing",
+    category: "CutList",
+    title: "Plywood Cabinet Door Sizing: Reveals, Overlay, Grain, And Cut Lists",
+    description: "Size plywood cabinet doors with overlay, inset gaps, grain direction, hinge clearance, edge treatment, and sheet layout in the same workflow.",
+    kicker: "Door sizing",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Door Size Starts With The Opening Strategy", "Inset, full overlay, partial overlay, and sliding doors all produce different cut sizes. Measure the cabinet opening and decide the reveal before entering door dimensions. If the reveal is adjusted later, every door in the run may need to be recalculated."],
+      ["Grain Direction Can Override Yield", "Plywood slab doors often look best when grain direction is consistent across a run. That may prevent rotation and increase waste, but it protects the final appearance. In CutList, treat rotation permission as a visible-design decision for each door rather than a global convenience setting."],
+      ["Hinges And Pulls Need Edge Awareness", "Concealed hinges, surface hinges, pulls, and finger pulls all need clear edges and predictable thickness. If edge banding changes final size or if a pull requires a routed edge, note it in the door part list. Hardware should not be discovered after the doors are already cut to finished size."],
+      ["Sequence Doors With Other Visible Parts", "Doors, finished sides, and visible shelves often share the best sheets. Group those parts so face quality and grain continuity can be reviewed together. Hidden shelves and backs can be optimized more aggressively after the visible parts are protected."]
+    ],
+    checklist: ["Choose inset, overlay, or sliding door strategy first.", "Set reveals before calculating door sizes.", "Lock grain direction on visible slab doors.", "Add hinge, pull, and edge-banding notes.", "Group doors with other visible-face parts."]
+  },
+  {
+    slug: "cut-list-change-order-workflow",
+    category: "CutList",
+    title: "Cut List Change Order Workflow: Updating Parts Without Losing Control",
+    description: "Handle cut-list changes from clients, site measurements, hardware swaps, and material shortages without corrupting the final plywood plan.",
+    kicker: "Revision control",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Treat Every Dimension Change As A Revision", "Small project changes can create large material consequences. A deeper cabinet, taller toe, wider drawer stack, or different appliance can change several parts and sometimes the sheet count. Keep a named revision instead of editing the cut list silently, so the final plan can be traced back to the decision that changed it."],
+      ["Separate Design Changes From Production Fixes", "A client-requested size change is different from correcting a typo or replacing damaged material. Label the reason for the change so cost, schedule, and responsibility are clear. That discipline matters even on personal projects because it prevents old measurements from resurfacing during cutting."],
+      ["Re-Optimize After Material Or Hardware Swaps", "Changing from plywood to melamine, swapping drawer slides, or choosing a different sheet size can invalidate a previous layout. Re-run the optimizer after those swaps and compare sheet count, offcut quality, and cut order before releasing the new plan to the shop."],
+      ["Archive The Approved Plan", "Once a revision is approved, keep the exported PDF or final record with the project. If questions come up during assembly or installation, the approved cut list becomes the source of truth. Without that archive, the shop may cut from memory or from an older draft."]
+    ],
+    checklist: ["Name each cut-list revision clearly.", "Record why dimensions changed.", "Re-optimize after material, hardware, or quantity swaps.", "Compare sheet count and offcuts against the prior plan.", "Archive the approved PDF or final record."]
+  },
+  {
+    slug: "scrap-plywood-projects-cut-list",
+    category: "CutList",
+    title: "Scrap Plywood Projects: Turning Offcuts Into A Practical Cut List",
+    description: "Use saved plywood offcuts for small projects by measuring scraps, grouping material, setting minimum sizes, and building a cut list around real inventory.",
+    kicker: "Offcut reuse",
+    readTime: "6 min",
+    accent: "cutlist",
+    sections: [
+      ["Start With The Scrap You Actually Have", "Scrap projects fail when the design assumes ideal offcuts. Measure each usable piece, record thickness and material, and discard pieces too warped or damaged to trust. A realistic inventory is the difference between a clever reuse plan and an afternoon of trying to force parts out of unsuitable leftovers."],
+      ["Group Offcuts By Material And Face Quality", "A drawer divider, wall cleat, shop jig, and visible shelf do not need the same plywood quality. Group scraps by thickness, species, finish, and face condition before building the cut list. That lets you reserve clean pieces for visible parts and use rough scraps where appearance does not matter."],
+      ["Design Small Projects Around Available Rectangles", "Offcut projects work best when dimensions are flexible: tool trays, router templates, closet spacers, sanding blocks, small shelves, drawer inserts, or paint racks. Enter the must-fit dimensions first, then adjust noncritical lengths to match the stock on hand."],
+      ["Record The New Offcuts Too", "Even a scrap project creates smaller scraps. Decide the minimum size worth keeping and label any piece that survives. Without that rule, the shop slowly fills with material too small to use and too emotionally expensive to throw away."]
+    ],
+    checklist: ["Measure saved offcuts before designing.", "Group scraps by thickness, material, and face quality.", "Use flexible project dimensions where possible.", "Reserve clean faces for visible parts.", "Set a minimum size for scraps worth keeping."]
+  },
+  {
+    slug: "utility-room-storage-cut-list",
+    category: "CutList",
+    title: "Utility Room Storage Cut List For Brooms, Tools, And Household Supplies",
+    description: "Plan a utility room storage cut list with tall compartments, cleaning-tool clearance, adjustable shelves, wall fit, and plywood yield in mind.",
+    kicker: "Utility storage",
+    readTime: "6 min",
+    accent: "cutlist",
+    sections: [
+      ["Inventory The Awkward Items First", "Utility rooms hold tall brooms, vacuums, mops, extension cords, paper goods, pet supplies, and tools that do not fit normal cabinet proportions. Measure those items before deciding the storage layout. A tall compartment may use more plywood, but it prevents the finished cabinet from becoming a collection of shelves that cannot hold the things it was built for."],
+      ["Mix Tall Bays With Adjustable Shelves", "A useful utility cabinet usually combines one tall bay with smaller shelves or cubbies. Enter dividers, fixed shelves, adjustable shelves, backs, and door parts separately. The optimizer can often nest shelf parts around tall side panels if the list is complete."],
+      ["Plan Wall Attachment And Safety", "Tall narrow storage needs secure wall attachment. Include cleats, nailers, or mounting rails in the cut list, and note where they sit relative to studs or masonry. These support parts are small, but forgetting them can delay installation or lead to unsafe improvisation."],
+      ["Leave Space For Doors And Handles", "Utility rooms are often tight. Check door swing, handle clearance, and the path for removing a vacuum or tall tool. A cabinet that fits the wall opening may still be frustrating if the door hits a machine, sink, or opposite wall."]
+    ],
+    checklist: ["Measure brooms, vacuums, mops, and bulky supplies.", "Combine tall bays with adjustable shelves.", "Include cleats, nailers, and mounting rails.", "Check door swing and handle clearance.", "Review tall side panels for sheet layout efficiency."]
+  },
+  {
+    slug: "closet-drawer-tower-cut-list",
+    category: "CutList",
+    title: "Closet Drawer Tower Cut List: Shelves, Boxes, Faces, And Clearances",
+    description: "Plan a closet drawer tower with plywood sides, shelves, drawer boxes, drawer fronts, slide clearances, closet depth, and sheet count.",
+    kicker: "Closet drawers",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Closet Depth Controls The Whole Tower", "A closet drawer tower has to work with hanging clothes, doors, trim, and reach depth. Measure usable closet depth and decide whether drawer fronts will sit proud, flush, or behind sliding doors. That decision sets drawer box depth and determines whether full-extension slides make sense."],
+      ["Separate Tower Carcass From Drawer Parts", "The side panels, top, bottom, fixed shelves, and backs form the tower. Drawer sides, fronts, backs, bottoms, and applied faces form a second part family. Keeping those groups separate prevents box dimensions from being confused with face dimensions and makes quantity errors easier to catch."],
+      ["Plan For Repeated Drawer Sizes", "Drawer towers often repeat the same box size several times. Group exact matches and check whether any small difference is intentional. Repetition is good for cutting accuracy and sheet yield, but only if the hardware clearance and opening sizes are consistent."],
+      ["Account For Installation In A Tight Closet", "Tall closet parts may need to be assembled in place. Confirm whether the tower can be carried through the opening, tilted upright, and fastened to the wall. Add fillers, scribes, and toe parts if the closet floor or side walls are uneven."]
+    ],
+    checklist: ["Measure usable depth with doors and clothes in mind.", "Separate carcass parts from drawer boxes and faces.", "Choose slide hardware before sizing drawer boxes.", "Group repeated drawer parts by exact size.", "Add fillers and wall attachment parts."]
+  },
+  {
+    slug: "stair-landing-layout-measurements",
+    category: "Stairs",
+    title: "Stair Landing Layout Measurements For Safer Rise And Run Planning",
+    description: "Measure stair landings, total rise, available run, headroom, and transitions before laying out stringers for decks, basements, and remodels.",
+    kicker: "Landing layout",
+    readTime: "7 min",
+    accent: "stairs",
+    sections: [
+      ["A Landing Changes The Stair Problem", "A landing breaks one stair run into two or more decisions. Instead of only dividing total rise by a target riser height, you also need to place the landing where it supports traffic, door swing, headroom, and available floor space. Measure the full vertical rise and the horizontal area before deciding whether the landing is necessary, helpful, or required by the project."],
+      ["Measure Finished Surfaces, Not Rough Framing Alone", "Tread thickness, finished flooring, decking, tile, and landing surface material all affect final riser height. Measure to the finished walking surfaces whenever possible. If finishes are not installed yet, include their thickness in the layout notes so the final step does not become taller or shorter than the rest."],
+      ["Check Headroom And Door Clearances Early", "Landings often sit near doors, basement ceilings, deck rails, or turns in a stairwell. Headroom and swing clearance can invalidate a layout that looks good in plan view. Mark those constraints before calculating stringer cuts so you do not design a comfortable run that cannot be used safely."],
+      ["Keep Each Flight Consistent", "Once the landing is placed, calculate each flight as its own consistent rise and run. Avoid small leftover adjustments that create an odd step at the landing. If the math does not divide cleanly, adjust the landing position, tread depth, or number of risers before cutting."]
+    ],
+    checklist: ["Measure total rise between finished walking surfaces.", "Locate the landing before cutting stringers.", "Include finish thickness in the layout notes.", "Check headroom, door swing, and traffic path.", "Keep riser heights consistent within each flight."]
+  },
+  {
+    slug: "deck-stair-code-planning",
+    category: "Stairs",
+    title: "Deck Stair Code Planning: Measurements To Verify Before Cutting",
+    description: "Plan deck stairs with rise, run, landing, guard, handrail, nosing, and local-code verification before committing to stringer cuts.",
+    kicker: "Deck stairs",
+    readTime: "8 min",
+    accent: "stairs",
+    sections: [
+      ["Use Code As A Verification Step", "Deck stairs must satisfy local rules, and those rules can vary by jurisdiction and project type. Before cutting, verify maximum riser height, minimum tread depth, landing size, handrail requirements, guard details, and any inspection notes with the authority that applies to the property. A calculator can help with geometry, but it does not replace local approval."],
+      ["Measure From Finished Decking To Finished Landing", "Exterior stairs connect two surfaces that may both change during the build. Deck boards, landing pavers, concrete pads, and threshold details can shift final height. Use finished-surface measurements or record finish allowances clearly so the first and last risers match the rest of the run."],
+      ["Plan Water, Movement, And Support", "Outdoor stairs face rain, frost, seasonal movement, and fastener corrosion. Stringer layout is only one part of the plan. Include landing bearing, stringer support, drainage, treated material choices, and hardware compatibility in the project notes before material is purchased."],
+      ["Review Comfort After Compliance", "A stair can meet a minimum rule and still feel awkward. After confirming local requirements, review the rise-run rhythm, tread surface, nosing, and traffic path. A comfortable deck stair is usually the result of both code verification and careful field layout."]
+    ],
+    checklist: ["Verify local deck stair requirements before cutting.", "Measure finished deck and landing surfaces.", "Include landing support and drainage planning.", "Check handrail, guard, tread, and nosing details.", "Review comfort after compliance is confirmed."]
+  },
+  {
+    slug: "basement-stair-remodel-measurements",
+    category: "Stairs",
+    title: "Basement Stair Remodel Measurements Before Replacing Stringers",
+    description: "Measure basement stair openings, headroom, total rise, landing depth, wall clearance, and finish thickness before remodeling an existing stair.",
+    kicker: "Basement remodel",
+    readTime: "7 min",
+    accent: "stairs",
+    sections: [
+      ["Existing Stairs Hide Constraints", "Basement stair remodels often reveal framing, pipes, ducts, headroom limits, and floor changes that were not visible in the original finish. Before replacing stringers, document the current stair, the opening, the ceiling path, and any mechanical obstacles. The replacement stair must fit the house, not just a clean drawing."],
+      ["Measure Total Rise After Flooring Decisions", "Basement floors may receive tile, vinyl, carpet, underlayment, or leveling compound. Upstairs flooring may change too. Those finish layers affect the first and last risers, so record them before calculating the new layout. A small finish change across a stair can create a noticeable step height problem."],
+      ["Check Headroom Along The Walking Line", "Headroom is not a single point. Measure along the expected walking line and through the tightest part of the opening. A new layout with deeper treads or a shifted landing can improve comfort but reduce headroom in a critical location."],
+      ["Plan Demolition And Temporary Access", "Replacing basement stairs affects movement between floors. Think through demolition sequence, temporary access, dust control, and whether large stringers can be carried into the stairwell. The cut list and material plan should support the work sequence, not just the finished stair."]
+    ],
+    checklist: ["Document existing rise, run, headroom, and opening size.", "Include planned flooring thickness in measurements.", "Check ducts, pipes, walls, and framing constraints.", "Measure headroom along the walking path.", "Plan demolition and temporary access before cutting."]
+  },
+  {
+    slug: "open-riser-stair-planning",
+    category: "Stairs",
+    title: "Open Riser Stair Planning: Layout, Visibility, And Safety Checks",
+    description: "Plan open riser stairs with consistent geometry, tread thickness, structural support, visibility, local-code checks, and finish coordination.",
+    kicker: "Open risers",
+    readTime: "7 min",
+    accent: "stairs",
+    sections: [
+      ["Open Risers Expose More Of The Build", "An open riser stair shows the underside, stringers, brackets, tread thickness, and finish quality. That visibility makes layout accuracy and material choice more important. Before cutting, decide how the stair will look from below and from the side, not only how it feels underfoot."],
+      ["Verify Safety Requirements Locally", "Open riser rules can be stricter than standard closed-riser details, especially around allowable openings, guards, and handrails. Check local requirements before committing to a design. The layout process should include compliance notes so appearance does not override safety."],
+      ["Coordinate Tread Thickness And Support", "Thicker treads, metal brackets, housed stringers, or center stringers all change the final geometry. Record the finished tread thickness and support method before calculating riser heights. Otherwise, the stair may be accurate in rough math but wrong after finish materials are installed."],
+      ["Plan Finish Before Assembly", "Open stairs are harder to hide after installation. Sanding, staining, sealing, edge profiles, and fastener concealment should be part of the workflow. A clean cut list can group visible tread parts and support pieces so finish work happens in the right order."]
+    ],
+    checklist: ["Design the stair from side, top, and underside views.", "Verify local open-riser and guard requirements.", "Record finished tread thickness before layout.", "Coordinate stringers, brackets, and fasteners.", "Plan finish sequence before assembly."]
+  },
+  {
+    slug: "handrail-height-layout-planning",
+    category: "Stairs",
+    title: "Handrail Height Layout Planning For Stairs And Landings",
+    description: "Plan handrail height, bracket spacing, landing returns, wall clearance, and local-code verification before drilling into finished stair walls.",
+    kicker: "Handrail layout",
+    readTime: "6 min",
+    accent: "stairs",
+    sections: [
+      ["Measure Along The Stair Pitch", "Handrail layout follows the slope of the stairs, not a level line across the wall. Mark a consistent height above the tread nosings or walking surface according to the local requirement that applies. Use the same reference method from bottom to top so the rail does not wander visually or functionally."],
+      ["Verify Requirements Before Drilling", "Handrail height, graspability, returns, wall clearance, continuity, and bracket spacing can be governed by local code. Confirm those details before making holes in finished walls. A rail that feels solid but misses a required return or clearance may need rework."],
+      ["Locate Structure Before Choosing Brackets", "Brackets need reliable attachment. Find studs, blocking, masonry anchors, or guard-post connections before deciding bracket count and placement. The prettiest spacing pattern is not useful if it misses structure where the rail carries load."],
+      ["Coordinate Landings And Turns", "Landings, turns, and transitions can interrupt a simple rail line. Plan where the rail starts, ends, returns, and changes direction. If the stair has multiple flights, treat each flight and landing as one continuous user path rather than isolated pieces."]
+    ],
+    checklist: ["Use a consistent measurement reference along the stair.", "Verify local handrail height and return rules.", "Locate studs, blocking, or anchors before drilling.", "Plan brackets around structure and load.", "Coordinate rail continuity across landings and turns."]
+  },
+  {
+    slug: "tile-backsplash-layout-planning",
+    category: "Tile",
+    title: "Tile Backsplash Layout Planning Before Cutting The First Row",
+    description: "Plan a tile backsplash with outlets, countertop level, focal points, edge trim, pattern repeats, and waste allowance before mixing thinset.",
+    kicker: "Backsplash layout",
+    readTime: "7 min",
+    accent: "tile",
+    sections: [
+      ["Start With The Sightlines", "A backsplash is viewed at eye level and often has strong visual anchors: range centers, sink centers, windows, shelves, and cabinet edges. Choose the focal point before drawing the grid. A layout centered on the wrong reference can create tiny slivers near outlets or leave the most visible area feeling slightly off."],
+      ["Check Countertops And Cabinets For Level", "Backsplashes meet existing surfaces that may not be perfectly level or square. Measure countertop variation and cabinet underside height before deciding where the first row starts. A small bottom cut may be better than following a wavy counter with full tiles that expose the problem."],
+      ["Plan Around Outlets And Switches", "Outlets, switches, cover plates, and under-cabinet lighting can disrupt tile rhythm. Mark their locations on the layout and check whether cuts fall too close to tile edges. Moving the starting point slightly can sometimes avoid fragile U-shaped cuts or tiny pieces at cover plates."],
+      ["Select Edge Trim Before Layout Ends", "Open ends, window returns, and exposed sides need a trim strategy. Bullnose, metal profile, finished edge tile, or caulked termination all affect final dimensions. Include trim thickness and reveal in the plan before ordering tile."]
+    ],
+    checklist: ["Choose a focal point before setting the grid.", "Measure countertop and cabinet level variation.", "Map outlets, switches, and cover plates.", "Avoid tiny slivers at visible ends.", "Choose edge trim before calculating final quantities."]
+  },
+  {
+    slug: "tile-niche-layout-planning",
+    category: "Tile",
+    title: "Shower Tile Niche Layout Planning For Cleaner Cuts And Lines",
+    description: "Plan a shower niche around tile module size, grout lines, waterproofing, shelf thickness, trim, and field tile alignment.",
+    kicker: "Shower niche",
+    readTime: "7 min",
+    accent: "tile",
+    sections: [
+      ["Design The Niche With The Tile Module", "A shower niche looks cleaner when its edges align with the field tile grid. Before framing or waterproofing, compare the niche size with tile height, width, grout joint, trim, and shelf thickness. A niche that ignores the tile module often forces small cuts around the most visible feature in the shower."],
+      ["Waterproofing Comes Before Decoration", "Layout decisions must respect the waterproofing system. Slope the shelf, protect corners, and follow the manufacturer requirements for membranes, boards, sealants, and fasteners. The visual layout should fit the waterproofed opening, not compromise it."],
+      ["Plan Trim And Inside Corners", "Metal profiles, bullnose, miters, stone shelves, and picture-frame trim all change the size of niche cuts. Decide how the inside corners and front edge will finish before cutting tile. That choice determines whether the field tile dies into trim or wraps into the opening."],
+      ["Mock Up The Eye-Level View", "A niche is often at eye level in a shower. Dry-lay or sketch the wall pattern, shelf line, and accent tile before installation. If the niche interrupts a decorative band or large-format tile, adjust early rather than solving it with thin pieces later."]
+    ],
+    checklist: ["Size the niche around tile plus grout joints.", "Respect the waterproofing system and shelf slope.", "Choose trim, bullnose, or miter details early.", "Align niche edges with field tile where possible.", "Mock up the eye-level wall before cutting."]
+  },
+  {
+    slug: "laundry-room-tile-layout",
+    category: "Tile",
+    title: "Laundry Room Tile Layout: Appliances, Drains, Thresholds, And Waste",
+    description: "Plan laundry room tile around washers, dryers, floor drains, thresholds, visible rows, movement joints, and realistic waste allowance.",
+    kicker: "Laundry tile",
+    readTime: "6 min",
+    accent: "tile",
+    sections: [
+      ["Layout Around What Stays Visible", "Most laundry room tile disappears under machines, cabinets, baskets, and rugs. Still, the visible area at the doorway and in front of appliances matters. Establish a layout that looks clean from the entrance, then use hidden zones to absorb less attractive cuts when possible."],
+      ["Account For Appliances And Service Access", "Washers and dryers are heavy and may need to move for service. Plan tile installation, cure time, and appliance path before starting. Avoid a layout that leaves fragile slivers under appliance feet or at the exact path where machines will roll back into place."],
+      ["Check Drains, Slopes, And Thresholds", "Laundry rooms may include floor drains, pans, utility sinks, or transitions to other flooring. Those features can require slope, trim, or movement accommodation. Mark them on the plan before calculating tile quantities so cuts and waste are realistic."],
+      ["Order Waste For The Pattern And Room Shape", "A small rectangular laundry room with straight lay may need modest waste. Diagonal layouts, patterned tile, closets, drain cuts, and thresholds need more. Estimate based on actual cuts, not a generic percentage copied from a different room."]
+    ],
+    checklist: ["Prioritize the doorway and visible appliance-front rows.", "Plan appliance movement and service access.", "Map drains, pans, thresholds, and slopes.", "Avoid tiny pieces under appliance feet.", "Set waste allowance by pattern and cut complexity."]
+  },
+  {
+    slug: "fireplace-tile-layout-planning",
+    category: "Tile",
+    title: "Fireplace Tile Layout Planning For Surrounds, Hearths, And Mantels",
+    description: "Plan fireplace tile with centered sightlines, hearth transitions, mantel clearances, edge trim, heat-aware materials, and balanced cuts.",
+    kicker: "Fireplace tile",
+    readTime: "7 min",
+    accent: "tile",
+    sections: [
+      ["Center The Layout On The Firebox", "A fireplace surround has a clear focal point: the firebox opening. Center the tile grid on that opening unless the room architecture gives a stronger reason not to. Balanced side cuts and a clean top row usually matter more than maximizing full tiles at one edge."],
+      ["Coordinate Surround And Hearth", "The vertical surround and horizontal hearth meet in a highly visible line. Plan both surfaces together so grout joints, edge trim, thickness transitions, and overhangs make sense. Treating them as separate tile jobs can create a mismatch exactly where the eye lands."],
+      ["Check Heat And Clearance Requirements", "Fireplaces have material and clearance requirements that depend on appliance type, fuel, manufacturer instructions, and local rules. Verify tile, substrate, mantel, and trim choices before installation. A layout plan should never override heat safety or required clearances."],
+      ["Resolve Edges Before Setting Tile", "Outside corners, mantel returns, floor transitions, and open side edges need a finish strategy. Bullnose, profiles, stone trim, or mitered edges change the layout dimensions. Decide those details while the grid is still adjustable."]
+    ],
+    checklist: ["Center the layout on the firebox or chosen focal axis.", "Plan surround and hearth together.", "Verify heat, substrate, and clearance requirements.", "Choose edge trim before cutting.", "Balance visible side and top cuts."]
+  },
+  {
+    slug: "tile-transition-threshold-planning",
+    category: "Tile",
+    title: "Tile Transition And Threshold Planning Between Rooms",
+    description: "Plan tile thresholds with floor height changes, door swing, trim profiles, movement joints, grout lines, and clean transitions to nearby rooms.",
+    kicker: "Thresholds",
+    readTime: "6 min",
+    accent: "tile",
+    sections: [
+      ["Transitions Are Part Of The Tile Layout", "A tile field does not end cleanly by accident. Doorways, hallways, carpet edges, wood floors, vinyl, and exterior thresholds all need decisions about height, trim, and cut position. Mark transitions before setting the first tile so the room does not finish with an awkward sliver at the doorway."],
+      ["Measure Finished Floor Heights", "Tile thickness, mortar bed, underlayment, uncoupling membrane, and adjacent flooring all affect transition height. Measure the expected finished heights and choose a reducer, profile, saddle, or flush detail accordingly. The wrong height can create a trip edge or a weak tile edge."],
+      ["Coordinate With Door Swing And Trim", "Door slabs, jambs, casing, and base trim shape what people see at a threshold. Decide whether tile stops under the closed door, aligns with casing, or continues into another room. That visual line should be intentional, especially in bathrooms and laundry rooms."],
+      ["Respect Movement And Material Changes", "Different flooring materials expand, move, and handle moisture differently. Threshold planning should include movement joints, sealant, or profiles where required by the assembly. A tight hard grout joint at the wrong transition can fail even if the tile layout looks neat."]
+    ],
+    checklist: ["Mark every doorway and floor transition before layout.", "Calculate finished floor heights by layer.", "Choose reducer, profile, saddle, or flush detail.", "Coordinate stop lines with doors and casing.", "Allow movement where materials change."]
+  },
+  {
+    slug: "quilt-border-math-planning",
+    category: "QuiltFit",
+    title: "Quilt Border Math Planning: Size, Yardage, And Visual Balance",
+    description: "Plan quilt borders with finished size targets, strip widths, piecing seams, yardage, directional prints, and balanced proportions.",
+    kicker: "Border math",
+    readTime: "7 min",
+    accent: "quiltfit",
+    sections: [
+      ["Borders Should Solve A Size Problem And A Design Problem", "A quilt border can bring a top to the desired finished size, frame the center design, or calm a busy block layout. Start by deciding which job the border must do. A border chosen only for leftover fabric may make the quilt bigger, but it may not improve the design."],
+      ["Calculate Finished Width Before Cutting Width", "Finished border width is not the same as cut strip width. Add seam allowances consistently and account for whether multiple borders will stack. Recording both finished and cut dimensions prevents a common mistake: adding the seam allowance twice or forgetting it entirely."],
+      ["Measure The Quilt Top Before Attaching Borders", "Pieced tops can vary from the plan. Measure through the center and across multiple points, then cut borders to a controlled length rather than stretching them to fit an edge. This helps keep the quilt square and avoids wavy borders."],
+      ["Plan Yardage Around Directional Prints", "Stripes, florals, text, and directional motifs can require lengthwise cuts or extra matching allowance. QuiltFit planning should record fabric role, strip direction, and whether piecing seams are acceptable. That turns border fabric from a guess into a structured shopping decision."]
+    ],
+    checklist: ["Define the border purpose before choosing width.", "Track finished width and cut width separately.", "Measure the quilt top before cutting borders.", "Account for directional print orientation.", "Record whether pieced borders are acceptable."]
+  },
+  {
+    slug: "fat-quarter-quilt-planning",
+    category: "QuiltFit",
+    title: "Fat Quarter Quilt Planning: Turning Bundles Into A Real Layout",
+    description: "Plan a fat quarter quilt by mapping fabric roles, block counts, cutting efficiency, contrast, leftovers, and backing or binding decisions.",
+    kicker: "Fat quarters",
+    readTime: "7 min",
+    accent: "quiltfit",
+    sections: [
+      ["A Bundle Is Not Yet A Quilt Plan", "Fat quarter bundles feel organized because the fabrics coordinate, but they still need a layout strategy. Decide which fabrics carry the design, which become background, and which should repeat sparingly. Without roles, the cutting plan can consume favorite prints too early and leave awkward leftovers."],
+      ["Match Blocks To Fat Quarter Yield", "Different blocks use fabric differently. Large squares, strips, half-square triangles, and fussy-cut pieces produce different leftovers from the same fat quarter. Build the block plan around realistic cutting yield instead of assuming every bundle piece can contribute equally."],
+      ["Protect Contrast Across The Layout", "Coordinated fabrics can still blend together once cut into small pieces. Use digital planning to test value contrast, color rhythm, and repeated placements before cutting. A fat quarter quilt often needs deliberate separation between busy prints and quiet support fabrics."],
+      ["Plan What The Bundle Does Not Include", "A bundle may not cover background, border, backing, binding, or error allowance. Record those extra yardage needs in the same project plan so shopping does not happen in disconnected trips. The goal is to turn a beautiful stack into a complete quilt, not just a pile of cut pieces."]
+    ],
+    checklist: ["Assign fabric roles before cutting.", "Choose blocks that match fat quarter yield.", "Test contrast and color rhythm digitally.", "Track leftover pieces by fabric.", "Add background, backing, border, and binding yardage."]
+  },
+  {
+    slug: "baby-quilt-size-yardage-planning",
+    category: "QuiltFit",
+    title: "Baby Quilt Size And Yardage Planning For A Practical Gift",
+    description: "Plan a baby quilt with usable finished size, block count, fabric roles, batting, backing, binding, washability, and gift timing.",
+    kicker: "Baby quilt",
+    readTime: "6 min",
+    accent: "quiltfit",
+    sections: [
+      ["Choose A Finished Size For Real Use", "Baby quilts can be decorative, stroller-sized, crib-adjacent, playmat-friendly, or keepsake-focused. Decide the use before choosing block count. A practical gift should be easy to wash, comfortable to handle, and sized for the family rather than only matching a pattern photo."],
+      ["Keep The Layout Simple Enough To Finish", "Gift quilts often have deadlines. A clean block layout with a limited fabric palette may be more successful than a complex design that runs late. QuiltFit planning can help compare block count, cutting steps, and assembly time before fabric is cut."],
+      ["Plan Softness, Durability, And Washing", "Fabric, batting, quilting density, and binding choice all affect how the quilt feels after washing. Record those choices alongside yardage. A baby quilt should tolerate repeated laundering, so finishing materials are part of the design, not a separate errand."],
+      ["Build The Shopping List From Fabric Roles", "Background, feature prints, accent fabrics, backing, binding, batting, and label fabric should be listed separately. Role-based yardage reduces the chance of buying enough total fabric but not enough of the fabric that frames the quilt."]
+    ],
+    checklist: ["Pick a finished size based on intended use.", "Choose a layout that fits the gift timeline.", "Plan washable fabric, batting, and binding.", "Separate feature, background, accent, backing, and binding yardage.", "Save the plan for future sibling or repeat gifts."]
+  },
+  {
+    slug: "tshirt-quilt-stabilizer-planning",
+    category: "QuiltFit",
+    title: "T-Shirt Quilt Stabilizer Planning Before Cutting Memory Shirts",
+    description: "Plan a T-shirt quilt with stabilizer, block sizes, logo placement, fabric stretch, sashing, backing, and preservation notes before cutting.",
+    kicker: "Memory quilt",
+    readTime: "7 min",
+    accent: "quiltfit",
+    sections: [
+      ["Do Not Cut Sentimental Shirts Without A Map", "T-shirt quilts often use irreplaceable material. Photograph each shirt, measure the printable area, and decide block sizes before cutting. A digital layout protects the design from impulse cuts and helps identify which shirts need larger blocks or special placement."],
+      ["Stabilizer Changes The Cutting Plan", "Knit fabric stretches, curls, and distorts without support. Stabilizer adds structure but can change feel, weight, and final block behavior. Plan stabilizer type, application method, and block trimming size before cutting shirt panels to final dimensions."],
+      ["Use Sashing To Solve Size Differences", "Shirt graphics are rarely the same size. Sashing, borders, and filler blocks can make varied panels look intentional. In QuiltFit, map those spacer fabrics as real roles with yardage needs, not as leftover strips added after the main blocks are cut."],
+      ["Plan Backing And Quilting Density", "T-shirt quilts can become heavy. Backing fabric, batting choice, and quilting density affect drape and comfort. Record those finish decisions early so the quilt is both meaningful and usable."]
+    ],
+    checklist: ["Photograph and measure every shirt before cutting.", "Choose stabilizer and trimming size early.", "Map logo placement in a digital layout.", "Use sashing or fillers for varied panel sizes.", "Plan backing, batting, and quilting density together."]
+  },
+  {
+    slug: "quilt-backing-piecing-layout",
+    category: "QuiltFit",
+    title: "Quilt Backing Piecing Layout: Yardage, Seams, And Directional Prints",
+    description: "Plan pieced quilt backing with overhang, seam placement, directional fabric, wideback alternatives, label panels, and longarm requirements.",
+    kicker: "Backing layout",
+    readTime: "6 min",
+    accent: "quiltfit",
+    sections: [
+      ["Backing Needs More Than The Quilt Top Size", "A backing plan should include quilting overhang, trimming allowance, and the requirements of the quilting method. Longarm, domestic machine, and hand quilting workflows may need different margins. Record the needed overhang before calculating yardage."],
+      ["Place Seams Deliberately", "Backing seams can be centered, offset, horizontal, vertical, or built into a pieced design. Avoid placing bulky seams where they will distract or create unnecessary quilting difficulty. A planned backing looks intentional even when it uses leftover fabric."],
+      ["Consider Directional Prints And Wideback Fabric", "Directional prints may require extra yardage or a different seam direction. Wideback fabric can reduce piecing but may limit design choices. Compare both options in the planning stage so the backing decision balances cost, labor, and appearance."],
+      ["Include Labels And Memory Panels", "A quilt label, signature block, or leftover feature fabric can be integrated into the backing. Treat those pieces as part of the layout with size and placement, rather than sewing them on at the last minute."]
+    ],
+    checklist: ["Add quilting overhang before calculating backing size.", "Choose seam direction and placement intentionally.", "Compare pieced backing with wideback fabric.", "Account for directional prints.", "Include labels or memory panels in the layout."]
   }
 ];
 
-const generatedAppBlogByCategory = new Map(generatedAppBlogDefinitions.map((config) => [config.category, config]));
+const seoExpansionArticles = generatedBlogExpansionDefinitions.filter((config) => config.slug);
+const appBlogDefinitions = generatedBlogExpansionDefinitions.filter((config) => config.appSlug && config.posts);
+const generatedAppBlogByCategory = new Map(appBlogDefinitions.map((config) => [config.category, config]));
+
+const focusedSeoArticleDefinitions = [
+  ["pantry-cabinet-plywood-cut-list", "CutList", "Pantry Cabinet Plywood Cut List For Deep Kitchen Storage", "Plan a pantry cabinet cut list with shelf depth, adjustable holes, door clearance, face quality, and plywood sheet yield before cutting.", "Pantry cabinet", "7 min", "cutlist", "pantry cabinet plywood planning", "a tall kitchen storage run", "shelf depth, door swing, and adjustable storage", "overloaded shelves, hidden backs, and filler mistakes"],
+  ["under-stair-storage-cut-list", "CutList", "Under-Stair Storage Cut List For Awkward Triangular Spaces", "Turn under-stair space into a realistic plywood cut list with angled sides, drawer boxes, shelves, scribes, and access clearance.", "Under-stair storage", "7 min", "cutlist", "under-stair storage layout", "a sloped stair opening", "angled panels, drawer access, and wall fit", "out-of-square walls, stair slope, and hard-to-reach corners"],
+  ["window-seat-bench-cut-list", "CutList", "Window Seat Bench Cut List: Plywood Boxes, Lids, And Face Frames", "Plan a plywood window seat bench with storage boxes, lift lids, dividers, finished ends, cushion overhang, and sheet optimization.", "Window seat", "7 min", "cutlist", "window seat bench storage", "a built-in bench below windows", "lid support, dividers, and finished faces", "blocked vents, uneven walls, and weak lid spans"],
+  ["entryway-shoe-cabinet-cut-list", "CutList", "Entryway Shoe Cabinet Cut List For Narrow Hallways", "Create a shoe cabinet cut list with shallow shelves, angled storage, door clearance, wall scribes, and plywood parts sized for tight entries.", "Entryway storage", "6 min", "cutlist", "entryway shoe cabinet planning", "a narrow hallway or mudroom", "shoe depth, traffic clearance, and shelf spacing", "doors that hit trim, shelves too deep, and wasted narrow offcuts"],
+  ["craft-room-storage-cut-list", "CutList", "Craft Room Storage Cut List For Paper, Fabric, Tools, And Bins", "Plan craft room plywood storage around bin sizes, cubbies, drawer stacks, sheet yield, labels, and flexible shelves.", "Craft storage", "7 min", "cutlist", "craft room storage layout", "a hobby or sewing room wall", "bin modules, drawer sizes, and visible labels", "mixed material sizes, sagging shelves, and poor future flexibility"],
+  ["murphy-bed-plywood-cut-list", "CutList", "Murphy Bed Plywood Cut List Planning Before Hardware Installation", "Plan plywood parts for a Murphy bed cabinet with hardware clearances, face panels, side towers, wall attachment, and sheet count.", "Murphy bed", "8 min", "cutlist", "Murphy bed cabinet planning", "a guest room or studio wall", "hardware clearance, cabinet depth, and wall attachment", "unsafe mounting, wrong face sizes, and hardware conflicts"],
+  ["floating-desk-cut-list", "CutList", "Floating Desk Cut List: Wall Cleats, Tops, Cable Paths, And Supports", "Build a floating desk cut list with plywood tops, cleats, side panels, cable openings, support spacing, and visible edge planning.", "Floating desk", "6 min", "cutlist", "floating desk cut planning", "a compact work wall", "support spacing, cable access, and finished edges", "weak cleats, long spans, and hidden wall structure"],
+  ["bookcase-with-cabinet-base-cut-list", "CutList", "Bookcase With Cabinet Base Cut List For Built-In Storage Walls", "Plan a bookcase and cabinet base cut list with tall sides, adjustable shelves, lower doors, backs, fillers, and material groups.", "Bookcase base", "7 min", "cutlist", "bookcase cabinet base planning", "a built-in storage wall", "upper shelves, lower doors, and continuous reveals", "wall waves, shelf sag, and mismatched cabinet bases"],
+  ["corner-shelf-plywood-cut-list", "CutList", "Corner Shelf Plywood Cut List For Dead Space And Small Rooms", "Plan corner shelves with triangular or L-shaped parts, wall fit, support cleats, edge treatment, and plywood offcut reuse.", "Corner shelves", "6 min", "cutlist", "corner shelf plywood layout", "an unused room corner", "wall angle, shelf projection, and support method", "unsquare corners, weak cleats, and tiny unusable scraps"],
+  ["rolling-shop-cart-cut-list", "CutList", "Rolling Shop Cart Cut List For Plywood Tools And Supplies", "Create a rolling shop cart cut list with cabinet sides, shelves, caster blocking, handle parts, tool bays, and durable plywood layout.", "Shop cart", "7 min", "cutlist", "rolling shop cart planning", "a small workshop floor", "caster loads, tool access, and shelf spacing", "top-heavy storage, weak caster blocks, and awkward handles"],
+  ["drill-press-stand-cut-list", "CutList", "Drill Press Stand Cut List For Stable Plywood Shop Storage", "Plan a drill press stand with a stable plywood base, bit drawers, shelf parts, weight distribution, and sheet-efficient panels.", "Drill press stand", "7 min", "cutlist", "drill press stand cabinet", "a dedicated shop machine stand", "stability, drawer clearance, and bit storage", "vibration, narrow stance, and poor weight placement"],
+  ["miter-saw-station-cut-list", "CutList", "Miter Saw Station Cut List: Wings, Cabinets, Fence Height, And Dust Space", "Plan a miter saw station cut list with plywood cabinets, side wings, fence alignment, dust collection space, and repeated parts.", "Miter station", "8 min", "cutlist", "miter saw station planning", "a wall-mounted shop station", "wing height, fence alignment, and cabinet modules", "saw clearance, dust space, and mismatched support heights"],
+  ["outdoor-storage-box-cut-list", "CutList", "Outdoor Storage Box Cut List For Cushions, Garden Gear, And Tools", "Plan an outdoor plywood storage box with lid support, drainage, weather exposure, fasteners, finish, and practical sheet layout.", "Outdoor box", "7 min", "cutlist", "outdoor storage box layout", "a patio or garden storage need", "lid span, drainage, and weather-resistant detailing", "trapped water, heavy lids, and exposed raw edges"],
+  ["garden-tool-rack-cut-list", "CutList", "Garden Tool Rack Cut List For Long Handles And Wall Storage", "Build a plywood garden tool rack cut list with long-handle slots, shelves, wall cleats, wet-tool clearance, and offcut-friendly parts.", "Tool rack", "6 min", "cutlist", "garden tool rack planning", "a shed or garage wall", "handle spacing, wall support, and small shelves", "crowded slots, weak mounting, and damp storage"],
+  ["pet-feeding-station-cut-list", "CutList", "Pet Feeding Station Cut List With Bowl Openings And Storage", "Plan a plywood pet feeding station with bowl cutouts, storage cubbies, height, cleanup access, finish protection, and sheet layout.", "Pet station", "6 min", "cutlist", "pet feeding station cabinet", "a kitchen or mudroom pet zone", "bowl openings, storage, and washable surfaces", "wrong bowl diameter, water exposure, and hard-to-clean corners"],
+  ["record-storage-cabinet-cut-list", "CutList", "Record Storage Cabinet Cut List For Heavy Shelves And Clean Dividers", "Plan plywood record storage with shelf spans, divider spacing, face quality, finished backs, weight support, and sheet count.", "Record storage", "7 min", "cutlist", "record storage cabinet planning", "a media room or studio", "heavy shelf loads, divider spacing, and front reveals", "shelf sag, overloaded bays, and poor album access"],
+  ["laundry-folding-counter-cut-list", "CutList", "Laundry Folding Counter Cut List Over Washer And Dryer", "Plan a plywood folding counter with side supports, removable access, appliance clearance, edge finish, and wall fit.", "Folding counter", "6 min", "cutlist", "laundry folding counter planning", "a washer and dryer wall", "counter span, appliance clearance, and service access", "blocked hoses, vibration, and unsupported long panels"],
+  ["garage-sliding-door-cabinet-cut-list", "CutList", "Garage Sliding Door Cabinet Cut List For Dusty Shop Walls", "Plan a garage cabinet with sliding doors, plywood tracks, deep shelves, tool clearance, and sheet layout that avoids door swing conflicts.", "Sliding cabinet", "7 min", "cutlist", "garage sliding door cabinet", "a tight garage shop wall", "sliding track clearance, shelf depth, and tool access", "binding doors, dusty tracks, and shelves too deep to reach"],
+  ["plywood-room-divider-cut-list", "CutList", "Plywood Room Divider Cut List For Shelves, Privacy, And Open Storage", "Plan a freestanding plywood room divider with shelf modules, stability, finished faces, base support, and repeatable cut parts.", "Room divider", "7 min", "cutlist", "plywood room divider planning", "a studio or shared room", "open shelves, privacy, and anti-tip stability", "top-heavy layouts, unfinished backs, and weak base parts"],
+  ["closet-island-cut-list", "CutList", "Closet Island Cut List: Drawers, Shelves, Tops, And Finished Sides", "Plan a plywood closet island with drawer boxes, shelf bays, finished panels, countertop overhang, walking clearance, and sheet count.", "Closet island", "8 min", "cutlist", "closet island cabinet planning", "a walk-in closet center area", "drawer banks, top overhang, and aisle clearance", "tight walkways, wrong drawer depths, and unfinished side panels"],
+  ["camper-bed-platform-cut-list", "CutList", "Camper Bed Platform Cut List For Storage, Access Panels, And Weight", "Plan a camper bed platform with plywood panels, storage lids, ventilation, support ribs, weight control, and practical sheet breakdown.", "Camper platform", "7 min", "cutlist", "camper bed platform layout", "a van or small camper interior", "storage access, ventilation, and support ribs", "heavy panels, trapped moisture, and inaccessible compartments"],
+  ["kitchen-island-plywood-cut-list", "CutList", "Kitchen Island Plywood Cut List For Cabinets, Panels, And Overhangs", "Plan a kitchen island cut list with cabinet boxes, finished backs, seating overhang, toe space, end panels, and sheet optimization.", "Kitchen island", "8 min", "cutlist", "kitchen island cabinet planning", "a freestanding kitchen island", "seating overhang, finished backs, and cabinet modules", "weak overhangs, exposed backs, and mismatched end panels"],
+  ["mudroom-wall-hooks-shelf-cut-list", "CutList", "Mudroom Wall Hooks And Shelf Cut List For Everyday Drop Zones", "Plan a plywood mudroom hook wall with backing panels, cubbies, upper shelves, bench tie-ins, finished edges, and sheet yield.", "Mudroom wall", "6 min", "cutlist", "mudroom hook wall planning", "an entry drop zone", "hook backing, shelf depth, and cubby spacing", "weak hook mounting, cramped cubbies, and unfinished edges"],
+  ["workshop-clamp-rack-cut-list", "CutList", "Workshop Clamp Rack Cut List From Plywood Offcuts", "Build a plywood clamp rack cut list with cleats, slots, French cleat backs, spacing, load support, and scrap-friendly parts.", "Clamp rack", "6 min", "cutlist", "workshop clamp rack planning", "a shop wall with mixed clamps", "slot spacing, wall mounting, and load distribution", "crowded handles, weak cleats, and awkward clamp removal"],
+  ["bathroom-vanity-plywood-cut-list", "CutList", "Bathroom Vanity Plywood Cut List For Sink Openings And Moisture", "Plan a bathroom vanity cut list with sink clearance, drawers, plumbing gaps, finished sides, moisture protection, and sheet layout.", "Bathroom vanity", "8 min", "cutlist", "bathroom vanity plywood planning", "a small bathroom cabinet run", "sink openings, plumbing access, and sealed edges", "pipe conflicts, water exposure, and drawer interference"],
+  ["stair-riser-height-calculator-check", "Stairs", "Stair Riser Height Calculator Check Before Cutting Stringers", "Use a stair riser height check to compare total rise, finish thickness, number of risers, landing height, and code verification before cutting.", "Riser check", "7 min", "stairs", "stair riser height checking", "a new stair or replacement stringer", "total rise, finish layers, and consistent risers", "uneven first steps, finish changes, and rushed stringer math"],
+  ["stair-tread-depth-planning", "Stairs", "Stair Tread Depth Planning For Comfort, Footing, And Available Run", "Plan stair tread depth with available run, nosing, landing position, walking rhythm, and local requirements before final layout.", "Tread depth", "7 min", "stairs", "stair tread depth planning", "a stair layout with limited floor space", "comfortable footing, total run, and landing fit", "shallow treads, awkward rhythm, and poor nosing decisions"],
+  ["stair-headroom-measurement-guide", "Stairs", "Stair Headroom Measurement Guide For Remodel Layouts", "Measure stair headroom through the walking line, ceiling slope, landings, finish layers, and structural constraints before changing a stair.", "Headroom", "7 min", "stairs", "stair headroom measurement", "a basement, attic, or remodel stair", "walking line, ceiling clearance, and opening limits", "tight ceilings, hidden framing, and finish thickness changes"],
+  ["stair-nosing-layout-planning", "Stairs", "Stair Nosing Layout Planning For Treads, Risers, And Finish Floors", "Plan stair nosing with tread depth, overhang, finish flooring, visibility, and consistent measurement references before installation.", "Nosing layout", "6 min", "stairs", "stair nosing layout", "a finished stair upgrade", "tread overhang, finish thickness, and visual alignment", "inconsistent overhangs, trip edges, and confusing reference lines"],
+  ["exterior-stair-landing-drainage", "Stairs", "Exterior Stair Landing Drainage Planning Before Layout", "Plan exterior stair landings with drainage slope, finished height, stringer bearing, material exposure, and safe transitions.", "Landing drainage", "7 min", "stairs", "exterior stair landing drainage", "a deck, porch, or garden stair", "landing slope, water movement, and stringer support", "standing water, frost movement, and mismatched landing heights"],
+  ["attic-stair-opening-planning", "Stairs", "Attic Stair Opening Planning: Rise, Run, Headroom, And Access", "Plan an attic stair opening with total rise, headroom, landing space, door swing, framing limits, and practical access clearances.", "Attic stairs", "7 min", "stairs", "attic stair opening planning", "an attic conversion or storage access", "opening size, headroom, and landing access", "tight hatch locations, steep runs, and framing conflicts"],
+  ["stair-railing-post-layout", "Stairs", "Stair Railing Post Layout Before Treads And Landings Are Final", "Plan stair railing posts with tread positions, landing corners, guard height, attachment points, and local-code checks before drilling.", "Post layout", "7 min", "stairs", "stair railing post layout", "a deck stair or interior guard", "post spacing, attachment, and rail continuity", "missed structure, awkward returns, and noncompliant openings"],
+  ["stair-renovation-budget-materials", "Stairs", "Stair Renovation Material Planning For Treads, Risers, Rails, And Trim", "Estimate stair renovation materials by separating treads, risers, skirts, rails, trim, finish layers, and waste before buying.", "Stair materials", "7 min", "stairs", "stair renovation material planning", "an existing stair update", "parts, finishes, and waste allowance", "underbuying trim, mismatched finishes, and ignored demolition damage"],
+  ["kitchen-floor-tile-layout-planning", "Tile", "Kitchen Floor Tile Layout Planning Around Cabinets And Islands", "Plan kitchen floor tile around cabinet runs, islands, appliance paths, sightlines, thresholds, and realistic cut waste.", "Kitchen tile", "7 min", "tile", "kitchen floor tile layout", "a kitchen floor with cabinets or an island", "sightlines, appliance paths, and visible cuts", "slivers at cabinets, crooked islands, and bad threshold lines"],
+  ["entryway-tile-pattern-waste", "Tile", "Entryway Tile Pattern Waste Planning For High-Traffic Floors", "Plan entryway tile quantities with pattern direction, door thresholds, mud zones, edge cuts, and extra waste for breakage.", "Entry tile", "6 min", "tile", "entryway tile pattern planning", "a front door or mudroom floor", "pattern direction, threshold lines, and durable edges", "tiny doorway cuts, slippery transitions, and underestimated waste"],
+  ["shower-curb-tile-layout", "Tile", "Shower Curb Tile Layout For Waterproofing, Slope, And Clean Edges", "Plan shower curb tile with waterproofing, slope, inside corners, outside edges, glass placement, and trim before setting tile.", "Shower curb", "7 min", "tile", "shower curb tile layout", "a tiled shower entry", "slope, waterproofing, and edge finish", "flat curbs, exposed edges, and glass conflicts"],
+  ["tile-around-toilet-flange-planning", "Tile", "Tile Around Toilet Flange Planning For Cleaner Bathroom Cuts", "Plan bathroom tile around the toilet flange with layout centerlines, flange height, waste, closet bolts, and visible cut control.", "Toilet flange", "6 min", "tile", "toilet flange tile planning", "a bathroom floor layout", "flange location, centerlines, and covered cuts", "fragile U-cuts, wrong flange height, and visible slivers"],
+  ["herringbone-tile-layout-waste", "Tile", "Herringbone Tile Layout And Waste Planning Before Installation", "Plan herringbone tile with starting lines, pattern direction, border strategy, cut waste, and dry-layout checks before install.", "Herringbone", "8 min", "tile", "herringbone tile waste planning", "a patterned floor or backsplash", "starting line, border cuts, and pattern direction", "pattern drift, high waste, and confusing edge cuts"],
+  ["large-room-tile-grid-squareness", "Tile", "Large Room Tile Grid Squareness: Control Lines Before Thinset", "Plan tile grid squareness in large rooms with control lines, reference walls, expansion gaps, and balanced cuts.", "Grid squareness", "7 min", "tile", "large room tile grid layout", "an open floor area", "control lines, reference walls, and balanced edges", "out-of-square rooms, drifting joints, and narrow perimeter cuts"],
+  ["tile-baseboard-trim-planning", "Tile", "Tile Baseboard And Trim Planning For Finished Room Edges", "Plan tile baseboards and trim with height, corners, profiles, grout lines, transitions, and waste before cutting wall edges.", "Tile trim", "6 min", "tile", "tile baseboard trim planning", "a bathroom, laundry, or mudroom edge", "base height, inside corners, and trim profiles", "misaligned joints, bulky corners, and awkward terminations"],
+  ["heated-floor-tile-layout-planning", "Tile", "Heated Floor Tile Layout Planning Around Mats, Sensors, And Cuts", "Plan tile over heated floor systems with mat coverage, sensor location, floor height, layout lines, and safe cutting zones.", "Heated floor", "8 min", "tile", "heated floor tile planning", "a bathroom or kitchen heated floor", "mat coverage, sensor placement, and tile pattern", "damaged wires, wrong floor height, and cold uncovered zones"],
+  ["queen-size-quilt-yardage-planning", "QuiltFit", "Queen Size Quilt Yardage Planning With Blocks, Borders, And Backing", "Plan a queen size quilt with finished dimensions, block count, border width, backing overhang, binding, and fabric roles.", "Queen quilt", "7 min", "quiltfit", "queen size quilt yardage", "a bed-size quilt project", "finished size, block count, and backing needs", "underestimated backing, heavy borders, and confusing fabric roles"],
+  ["quilt-binding-strip-calculator", "QuiltFit", "Quilt Binding Strip Calculator Workflow For Cleaner Finishing", "Plan quilt binding strips with perimeter, width, joining allowance, bias or straight grain, corners, and extra length.", "Binding strips", "6 min", "quiltfit", "quilt binding strip planning", "a quilt finishing session", "perimeter, strip width, and joining allowance", "short binding, bulky seams, and mismatched fabric direction"],
+  ["scrappy-quilt-color-balance", "QuiltFit", "Scrappy Quilt Color Balance Before Cutting From The Stash", "Plan a scrappy quilt with value contrast, color repeats, fabric scale, block placement, and stash limits before cutting.", "Scrappy quilt", "7 min", "quiltfit", "scrappy quilt color balance", "a stash-based quilt layout", "value contrast, repeat rhythm, and fabric scale", "muddy contrast, overused prints, and scattered focal fabrics"],
+  ["quilt-block-resizing-planning", "QuiltFit", "Quilt Block Resizing Planning Without Breaking The Layout", "Resize quilt blocks by tracking finished size, seam allowance, grid math, border impact, and yardage changes before cutting.", "Block resizing", "7 min", "quiltfit", "quilt block resizing", "a pattern adaptation", "finished block size, grid math, and total quilt dimensions", "lost seam allowance, distorted proportions, and wrong yardage"],
+  ["quilt-label-and-gift-note-planning", "QuiltFit", "Quilt Label And Gift Note Planning Before The Final Stitch", "Plan quilt labels with names, dates, fabric, placement, care notes, gift messages, and backing integration.", "Quilt labels", "6 min", "quiltfit", "quilt label planning", "a gift or memory quilt", "label text, placement, and backing integration", "forgotten dates, awkward placement, and labels added too late"],
+  ["seasonal-wall-quilt-planning", "QuiltFit", "Seasonal Wall Quilt Planning For Small Spaces And Fast Finishes", "Plan a seasonal wall quilt with finished size, hanging method, fabric palette, borders, backing, and repeatable project notes.", "Wall quilt", "6 min", "quiltfit", "seasonal wall quilt planning", "a small decorative quilt", "hanging method, size, and seasonal colors", "overbuilt backing, weak hanging sleeves, and rushed fabric choices"],
+  ["quilt-fabric-stash-inventory-planning", "QuiltFit", "Quilt Fabric Stash Inventory Planning For Better Yardage Decisions", "Plan quilt projects from fabric stash inventory by tracking yardage, color, role, scale, leftovers, and shopping gaps.", "Fabric stash", "7 min", "quiltfit", "quilt fabric stash inventory", "a sewing room fabric shelf", "yardage records, fabric roles, and shopping gaps", "lost yardage, duplicate purchases, and mismatched fabric scale"],
+  ["beginner-quilt-sampler-layout", "QuiltFit", "Beginner Quilt Sampler Layout Planning For Blocks That Fit", "Plan a beginner sampler quilt with block sizes, sashing, borders, fabric roles, assembly order, and manageable yardage.", "Sampler quilt", "7 min", "quiltfit", "beginner sampler quilt layout", "a first multi-block quilt", "consistent block size, sashing, and assembly order", "blocks that finish unevenly, weak contrast, and yardage confusion"],
+  ["quilt-row-assembly-tracking", "QuiltFit", "Quilt Row Assembly Tracking From Design Wall To Finished Top", "Track quilt row assembly with block order, labels, photos, pressing notes, seam matching, and progress checkpoints.", "Row tracking", "6 min", "quiltfit", "quilt row assembly tracking", "a pieced quilt top in progress", "row order, labels, and seam matching", "rotated blocks, lost row order, and inconsistent pressing"]
+];
+
+function createFocusedSeoArticles() {
+  const templates = {
+    CutList: {
+      sections: (item) => [
+        [`Start With The Real Use Case`, `${item.title} should begin with the way the project will actually be used. For ${item.setting}, the useful cut list is not only a list of rectangles; it is a record of clearances, load paths, hardware needs, and the order a person can follow at the saw. Defining ${item.decision} before layout keeps the plywood plan connected to the finished build.`],
+        [`Turn The Design Into Named Parts`, `Break ${item.focus} into named panels, shelves, backs, dividers, cleats, doors, fillers, and visible faces. Named parts make the layout easier to review because each rectangle still carries a job. When a part is hidden, visible, structural, or adjustable, label it that way so material choice and grain rules do not disappear inside the optimizer.`],
+        [`Review Sheet Yield Against Shop Reality`, `A low-waste sheet layout still has to be cut safely. Review repeated rips, long panels, narrow strips, and offcuts before accepting the plan. If ${item.risks} are likely, adjust the design while it is still digital instead of forcing the fix during assembly.`],
+        [`Finish With A Cut-Ready Record`, `Export or save the final plan only after checking quantities, kerf, rotation permission, and installation notes. The goal is a cut-ready record that answers what to cut, where it fits, and which details need attention after the plywood leaves the sheet.`]
+      ],
+      checklist: (item) => ["Measure the space and real items before optimizing.", "Name every panel by job, not just by size.", "Separate visible, hidden, structural, and filler parts.", "Review cut order for safe handling and repeated setups.", `Check ${item.risks} before buying material.`]
+    },
+    Stairs: {
+      sections: (item) => [
+        [`Measure Finished Conditions First`, `${item.title} starts with finished-surface measurements. For ${item.setting}, rough framing can mislead the layout if flooring, decking, trim, or landing material will change the final height. Record those finish layers before deciding the stair geometry.`],
+        [`Connect The Math To The Walking Path`, `Stair planning is not only division. ${item.focus} has to support a consistent walking rhythm, usable footing, and enough space at the top and bottom. Review ${item.decision} together so one improvement does not create a new problem elsewhere in the run.`],
+        [`Flag Site Constraints Before Cutting`, `The common failure points are ${item.risks}. Mark walls, ceilings, posts, doors, rails, landings, and structural attachment points before any stringer or finish part is committed. Field constraints are easier to solve while the layout is still adjustable.`],
+        [`Verify Requirements Locally`, `Use calculators and guides as planning tools, then verify local code and inspection expectations for the actual project. Stairs affect safety, so final dimensions, rails, guards, and landings should be checked against the rules that apply where the stair is built.`]
+      ],
+      checklist: (item) => ["Measure to finished walking surfaces.", "Record finish thickness before calculations.", "Check headroom, landing, and traffic path together.", "Verify rail, guard, and nosing details locally.", `Resolve ${item.risks} before cutting.`]
+    },
+    Tile: {
+      sections: (item) => [
+        [`Choose The Visible Reference Line`, `${item.title} should start from the view people notice first. In ${item.setting}, the best layout may be centered on a doorway, fixture, island, wall, or feature rather than on the room's raw dimensions. Pick that reference before calculating cuts.`],
+        [`Map Obstacles And Assembly Layers`, `Tile layout depends on more than tile size. Underlayment, membranes, trim profiles, fixtures, drains, heat systems, thresholds, and adjacent floors all affect the finished plan. For ${item.focus}, record ${item.decision} before ordering material or mixing thinset.`],
+        [`Estimate Waste From Real Cuts`, `Waste should follow the pattern and room shape. Straight lay, diagonal, herringbone, niches, flanges, curbs, and thresholds all create different cut patterns. If ${item.risks} are likely, add waste and dry-layout time instead of relying on a flat percentage.`],
+        [`Finish Edges Before The Field Is Locked`, `Open edges, corners, transitions, and trims should be chosen while the grid can still move. A neat field tile layout can still look unfinished if the doorway, curb, base, or edge profile is solved too late.`]
+      ],
+      checklist: (item) => ["Pick the main sightline or focal point first.", "Measure fixtures, thresholds, drains, and trim.", "Dry-layout risky cuts before installation.", "Set waste by pattern and cut complexity.", `Plan around ${item.risks}.`]
+    },
+    QuiltFit: {
+      sections: (item) => [
+        [`Define The Finished Purpose`, `${item.title} works best when the finished purpose is clear. For ${item.setting}, decide the target size, use, deadline, and visual priority before fabric is cut. That keeps ${item.focus} from becoming disconnected yardage math.`],
+        [`Assign Fabric Roles`, `Fabric planning becomes easier when each fabric has a job: background, feature, accent, border, backing, binding, label, or scrap support. For this project, ${item.decision} should be visible in the plan so the shopping list and cutting list agree.`],
+        [`Check The Cutting Assumptions`, `Finished size, cut size, seam allowance, directional prints, fabric scale, and leftovers all affect the final layout. If ${item.risks} are likely, test the block or row plan digitally before cutting the fabric that is hardest to replace.`],
+        [`Save The Project Logic`, `A saved QuiltFit plan is useful because it preserves the decisions behind the quilt: sizes, roles, quantities, progress, and finish notes. That record makes it easier to pause, shop, restart, or repeat the project later.`]
+      ],
+      checklist: (item) => ["Define finished size and purpose first.", "Assign fabric roles before cutting.", "Track finished size and cut size separately.", "Review directional prints, leftovers, and backing needs.", `Watch for ${item.risks}.`]
+    }
+  };
+
+  return focusedSeoArticleDefinitions.map(([slug, category, title, description, kicker, readTime, accent, focus, setting, decision, risks]) => {
+    const item = { slug, category, title, description, kicker, readTime, accent, focus, setting, decision, risks };
+    const template = templates[category];
+    return {
+      ...item,
+      sections: template.sections(item),
+      checklist: template.checklist(item)
+    };
+  });
+}
 
 function appStoreAppBySlug(slug) {
   const app = appStoreApps.find((candidate) => candidate.slug === slug);
@@ -6523,7 +7109,7 @@ function appArticleImage(config) {
 }
 
 function createGeneratedAppBlogArticles() {
-  return generatedAppBlogDefinitions.flatMap((config) => {
+  return appBlogDefinitions.flatMap((config) => {
     const app = appStoreAppBySlug(config.appSlug);
     return config.posts.map(([slug, title, description, kicker, keyword, bars], index) => {
       const action = index === 0 ? "set up the core workflow" : index === 1 ? "review the repeatable process" : "protect the final records";
@@ -6574,7 +7160,7 @@ function createGeneratedAppBlogArticles() {
   });
 }
 
-articles.push(...createGeneratedAppBlogArticles());
+articles.push(...createGeneratedAppBlogArticles(), ...seoExpansionArticles, ...createFocusedSeoArticles());
 
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {
@@ -6840,7 +7426,7 @@ const relatedAppDetails = {
   }
 };
 
-for (const config of generatedAppBlogDefinitions) {
+for (const config of appBlogDefinitions) {
   const app = appStoreAppBySlug(config.appSlug);
   relatedAppDetails[config.category] = {
     href: `/apps/${app.slug}/`,
@@ -7403,7 +7989,7 @@ function directoryLink(article) {
 }
 
 function generatedAppBlogSections() {
-  return generatedAppBlogDefinitions
+  return appBlogDefinitions
     .map((config) => `<section class="blog-section" id="${config.sectionId}" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">${escapeHtml(config.category)}</p><h2>${escapeHtml(config.sectionDescription)}</h2></div>
       <div class="blog-grid">${articles.filter((article) => article.category === config.category).map(articleCard).join("\n        ")}</div>
@@ -7428,7 +8014,7 @@ function blogIndex() {
     ["Pantry Label", "pantry-label"],
     ["Address Label", "address-label"],
     ["SnapQR", "snapqr"],
-    ...generatedAppBlogDefinitions.map((config) => [config.category, config.sectionId]),
+    ...appBlogDefinitions.map((config) => [config.category, config.sectionId]),
     ["Cadenza", "cadenza"],
     ["Tinnitus", "tinnitus"],
     ["Atomic Clock", "atomic-clock"]
@@ -7521,7 +8107,7 @@ ${head({
       <a href="#pantry-label">Pantry Label</a>
       <a href="#address-label">Address Label</a>
       <a href="#snapqr">SnapQR</a>
-      ${generatedAppBlogDefinitions.map((config) => `<a href="#${config.sectionId}">${escapeHtml(config.category)}</a>`).join("\n      ")}
+      ${appBlogDefinitions.map((config) => `<a href="#${config.sectionId}">${escapeHtml(config.category)}</a>`).join("\n      ")}
       <a href="#cadenza">Cadenza</a>
       <a href="#tinnitus">Tinnitus</a>
     </section>
@@ -7812,7 +8398,7 @@ const zhCategory = {
   "Classic guide": "经典指南"
 };
 
-for (const config of generatedAppBlogDefinitions) {
+for (const config of appBlogDefinitions) {
   zhCategory[config.category] = config.zhCategory;
 }
 
@@ -8431,7 +9017,7 @@ updateExistingHtml();
 // RSS 2.0 feed of the most recent blog posts (helps discovery + freshness).
 function buildRssFeed() {
   const site = "https://woodcuttool.com";
-  const recent = articles.slice(-40).reverse();
+  const recent = articles.slice(-80).reverse();
   const now = new Date();
   const items = recent.map((article, i) => {
     // Stagger pubDates so newest posts sort first in readers.
