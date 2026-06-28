@@ -7287,6 +7287,377 @@ function createGeneratedAppBlogArticles() {
 
 articles.push(...createGeneratedAppBlogArticles(), ...seoExpansionArticles, ...createFocusedSeoArticles());
 
+const longResearchArticleDefinitions = [
+  {
+    slug: "sheet-yield-research-benchmark",
+    category: "CutList",
+    title: "Sheet Yield Research Benchmark: How To Measure Plywood Waste Before Cutting",
+    description: "A research-style benchmark for measuring plywood sheet yield, waste cost, kerf loss, reusable offcuts, and layout quality before buying material.",
+    kicker: "Yield research",
+    readTime: "12 min",
+    accent: "cutlist",
+    subject: "plywood sheet yield",
+    context: "cabinet boxes, closets, garage storage, and built-in plywood projects",
+    question: "How should a builder measure whether a plywood layout is actually efficient before a sheet is purchased or cut?",
+    thesis: "The useful benchmark is not a single waste percentage. It is a decision model that compares sheet count, kerf loss, offcut quality, material grade, and whether the cut sequence can be followed without creating fragile strips too early.",
+    evidence: "A 4 x 8 sheet gives a nominal area baseline, but real yield depends on rectangular fit, blade kerf, face orientation, trim cuts, defects, and the storage value of leftovers. The benchmark should therefore record area and shape together.",
+    method: "Run the same part list through a manual sketch, a spreadsheet area estimate, and a visual optimizer. Keep sheet size, kerf, grain rules, and minimum save-worthy offcut size identical across methods, then compare the result by sheets purchased and usable offcuts.",
+    caveat: "A lower waste percentage can still be the wrong decision when it creates unsafe narrow rips, awkward handling, or offcuts that nobody will label and reuse. Treat the benchmark as a shop review tool, not a contest for the lowest number.",
+    action: "Use CutList to save each scenario, compare sheet count and waste side by side, export the final layout, and keep the chosen plan with the project record.",
+    appHref: "/apps/cutlist/",
+    appName: "CutList",
+    metrics: [["Sheet count", 5], ["Kerf loss", 3], ["Offcut value", 4], ["Cut review", 5]],
+    comparisonRows: [
+      ["Area estimate", "Fast material range", "Misses physical fit", "Use only for first-pass budgeting"],
+      ["Manual sketch", "Simple one-sheet projects", "Hard to revise consistently", "Compare against an optimized version"],
+      ["Optimizer", "Repeated parts and material groups", "Still needs human review", "Use for purchase and shop planning"],
+      ["Post-cut audit", "Learning from real scraps", "Happens after money is spent", "Record actual leftovers for the next job"]
+    ],
+    sources: [
+      ["US EPA: C&D material management", "https://www.epa.gov/smm/sustainable-management-construction-and-demolition-materials", "Source reduction framing supports planning material use before waste is created."],
+      ["APA - The Engineered Wood Association", "https://www.apawood.org/plywood", "Plywood reference for panel material behavior, grades, and construction use."],
+      ["CutList app detail", "/apps/cutlist/", "WoodCutTool app page for saved plywood layouts, kerf-aware planning, and PDF export."]
+    ]
+  },
+  {
+    slug: "cabinet-shop-waste-audit-research",
+    category: "CutList",
+    title: "Cabinet Shop Waste Audit: A Research Method For Sheet Goods And Rework",
+    description: "A cabinet-shop audit framework for tracking sheet-goods waste, duplicate parts, rework, offcuts, and estimate-to-cut variance across real projects.",
+    kicker: "Shop audit",
+    readTime: "13 min",
+    accent: "cutlist",
+    subject: "cabinet shop waste",
+    context: "small cabinet shops, built-in installers, remodel crews, and solo makers who repeat plywood boxes",
+    question: "Where does sheet-goods waste enter a cabinet workflow before the saw ever touches the first panel?",
+    thesis: "Most cabinet waste is created upstream: unclear scope, duplicated quantities, mixed material groups, late hardware changes, and layouts accepted without review. A waste audit should measure the workflow, not only the scrap pile.",
+    evidence: "The most expensive waste events are not always visible as trash. They include a finished end cut from the wrong grade, a drawer bank rebuilt after slide clearance changed, or an extra sheet bought because backs and stretchers were added late.",
+    method: "For each job, record the estimate sheet count, optimized sheet count, purchased sheet count, re-cut parts, reusable offcuts, and actual leftovers. Tag the reason for each variance: measurement change, design change, hardware conflict, grain rule, defect, or operator error.",
+    caveat: "A tiny sample can mislead. One unusual job with many finished ends may look inefficient but be completely reasonable. Compare jobs by project type and material group instead of flattening every cabinet job into one average.",
+    action: "Build a repeatable CutList project template for base cabinets, wall cabinets, finished ends, drawer parts, backs, and fillers so the audit starts from the same structure each time.",
+    appHref: "/apps/cutlist/",
+    appName: "CutList",
+    metrics: [["Estimate gap", 4], ["Re-cut count", 5], ["Offcut reuse", 3], ["Job notes", 4]],
+    comparisonRows: [
+      ["Scrap-bin audit", "Fast visual check", "Misses upstream causes", "Use as a rough signal only"],
+      ["Sheet-count audit", "Purchase accuracy", "Can hide rework", "Pair with re-cut counts"],
+      ["Part-level audit", "Finding duplicate and missing parts", "More data entry", "Best for repeated cabinet jobs"],
+      ["Template audit", "Comparing similar jobs", "Needs naming discipline", "Best for ongoing improvement"]
+    ],
+    sources: [
+      ["US EPA: Sustainable Management of C&D Materials", "https://www.epa.gov/smm/sustainable-management-construction-and-demolition-materials", "Source reduction and planning are relevant to reducing avoidable material waste."],
+      ["OSHA: Woodworking eTool", "https://www.osha.gov/etools/woodworking", "Safety guidance supports reviewing cut order and material handling, not only yield."],
+      ["Cabinet cut list mistakes", "/blog/cabinet-cut-list-mistakes/", "Internal guide on recurring cut-list errors that create rework."]
+    ]
+  },
+  {
+    slug: "offcut-inventory-roi-research",
+    category: "CutList",
+    title: "Offcut Inventory ROI: When Saved Plywood Scraps Actually Pay Back",
+    description: "A research framework for deciding which plywood offcuts to save, label, reuse, or discard so scrap storage becomes an asset instead of clutter.",
+    kicker: "Offcut ROI",
+    readTime: "11 min",
+    accent: "cutlist",
+    subject: "offcut inventory return",
+    context: "small shops that save plywood, MDF, melamine, and finished-panel leftovers",
+    question: "When does saving plywood offcuts reduce future purchases, and when does it simply turn the shop into a storage problem?",
+    thesis: "An offcut has value only when it is large enough, identifiable enough, and reachable enough to replace a future purchase. Offcut ROI is therefore a storage and retrieval problem as much as a cutting problem.",
+    evidence: "Many shops keep scraps emotionally but buy new material anyway because the leftover pile is hard to search. Material, thickness, finish side, grain direction, size, and date matter more than the fact that the piece once looked useful.",
+    method: "Set a minimum save size by material type, label every saved piece with width, length, thickness, and material, and record how often saved pieces replace new purchases. Review the pile monthly and discard pieces below the threshold.",
+    caveat: "Offcut value is project-specific. A narrow prefinished strip may be useful for a filler but useless for shelves. A large rough plywood rectangle may be valuable for shop fixtures but wrong for a visible cabinet side.",
+    action: "Use the optimizer to preview offcut shape before cutting and keep only leftovers that fit the shop's minimum size and labeling standard.",
+    appHref: "/apps/cutlist/",
+    appName: "CutList",
+    metrics: [["Label quality", 5], ["Search time", 2], ["Reuse rate", 4], ["Storage cost", 3]],
+    comparisonRows: [
+      ["Save everything", "Feeling prepared", "Creates clutter", "Only useful with strict sorting"],
+      ["Save by area", "Fast decisions", "Misses shape and material", "Add thickness and finish notes"],
+      ["Save by threshold", "Predictable storage", "May discard rare useful pieces", "Best default for small shops"],
+      ["Save by project need", "Highest relevance", "Requires planning ahead", "Best for scheduled batches"]
+    ],
+    sources: [
+      ["US EPA: C&D material management", "https://www.epa.gov/smm/sustainable-management-construction-and-demolition-materials", "Reuse and source reduction concepts support deliberate offcut management."],
+      ["Plywood offcut management system", "/blog/plywood-offcut-management-system/", "Internal guide on labeling, storing, and reusing plywood offcuts."],
+      ["Wood waste calculator", "/wood-waste-calculator/", "Internal calculator for estimating waste area and material cost."]
+    ]
+  },
+  {
+    slug: "kerf-allowance-error-research",
+    category: "CutList",
+    title: "Kerf Allowance Error Study: Why Cut Lists Drift From Real Sheets",
+    description: "A research-style study of how blade kerf, trim cuts, repeated cuts, and reference-line mistakes make accurate cut lists drift from real plywood sheets.",
+    kicker: "Kerf study",
+    readTime: "12 min",
+    accent: "cutlist",
+    subject: "kerf allowance error",
+    context: "plywood layouts, board cut lists, table saw setups, track saw workflows, and repeated cabinet parts",
+    question: "How large does kerf error become when a cut list ignores the material removed by the blade?",
+    thesis: "Kerf is small per cut but structural across a layout. The error grows with cut count, repeated parts, trim allowances, and whether the operator measures from the wrong side of the blade.",
+    evidence: "A layout that looks possible when rectangles touch edge to edge can fail after only a few saw lines. The problem is not the arithmetic of part sizes; it is the missing space consumed by every blade pass and every cleanup cut.",
+    method: "Compare three plans for the same project: no kerf, nominal kerf, and measured blade kerf. Count total cut lines, trim cuts, and repeated rips. Then compare whether the last part in each row still fits with a realistic safety margin.",
+    caveat: "Kerf is not the only spacing variable. Track saw blade choice, material tearout, scoring cuts, factory-edge trimming, and human measurement habits also change final fit. Use measured kerf as a baseline, then leave room for the shop's real process.",
+    action: "Enter actual blade kerf into CutList before optimizing, then review narrow strips and row endings where accumulated kerf usually appears.",
+    appHref: "/apps/cutlist/",
+    appName: "CutList",
+    metrics: [["Cut count", 5], ["Kerf width", 4], ["Trim cuts", 3], ["Fit margin", 5]],
+    comparisonRows: [
+      ["No kerf", "Fast concept sketch", "Overstates fit", "Never use for final purchase"],
+      ["Nominal kerf", "Common blade estimate", "May miss real blade setup", "Good early baseline"],
+      ["Measured kerf", "Final shop planning", "Needs a quick test cut", "Best for tight layouts"],
+      ["Measured plus margin", "High-value materials", "May buy a little more", "Best for expensive jobs"]
+    ],
+    sources: [
+      ["OSHA: Table saw safety", "https://www.osha.gov/etools/woodworking/table-saws", "Table saw guidance reinforces the need for safe handling and realistic cut planning."],
+      ["Saw kerf waste by cut count", "/blog/saw-kerf-waste-by-cut-count/", "Internal guide explaining how repeated cuts accumulate material loss."],
+      ["Cut list calculator", "/cut-list-calculator/", "Internal calculator for board-stock cut lists with kerf-aware planning."]
+    ]
+  },
+  {
+    slug: "stair-remodel-measurement-risk-research",
+    category: "Stairs",
+    title: "Stair Remodel Measurement Risk: A Research Checklist Before Stringer Layout",
+    description: "A stair remodel research checklist for total rise, finish layers, headroom, landing geometry, tread depth, and stringer layout risk before cutting.",
+    kicker: "Stair risk",
+    readTime: "12 min",
+    accent: "stairs",
+    subject: "stair remodel measurement risk",
+    context: "basement stairs, deck stairs, attic conversions, porch steps, and replacement stringer projects",
+    question: "Which measurements create the highest rework risk before a stair stringer is laid out?",
+    thesis: "Stair risk is concentrated in reference points: total rise, finished floor thickness, landing height, available run, headroom, and where the top and bottom cuts actually bear. A correct formula cannot rescue a wrong reference line.",
+    evidence: "Every riser repeats the original total-rise assumption. A small finish-layer mistake can create an uneven first or last step, while a headroom or landing oversight may make a technically calculated stair impossible to use safely.",
+    method: "Measure finished-floor to finished-floor height, available run, landing size, ceiling clearance along the walking line, tread thickness, and attachment conditions. Recheck the same numbers before cutting the first stringer and before duplicating it.",
+    caveat: "Local rules vary, and a calculator is not a permit review. Treat code checks as planning aids and verify final dimensions with local requirements, especially when structure, guards, handrails, or public access are involved.",
+    action: "Use the Stringer calculator workflow to compare riser counts, tread run, pitch, and layout marks before committing material.",
+    appHref: "/apps/stringer/",
+    appName: "Stringer",
+    metrics: [["Total rise", 5], ["Headroom", 5], ["Landing fit", 4], ["Finish layers", 4]],
+    comparisonRows: [
+      ["Rough opening only", "Early feasibility", "Misses finish layers", "Use before design, not before cutting"],
+      ["Finished-surface measurement", "Stringer layout", "Needs site access", "Best for final geometry"],
+      ["Template stringer", "Batch duplication", "Only as good as first layout", "Verify before copying"],
+      ["Post-install correction", "Small trim fixes", "Cannot fix major geometry", "Avoid through measurement"]
+    ],
+    sources: [
+      ["OSHA: Stairways and Ladders", "https://www.osha.gov/stairways-ladders", "Official stair safety context for dimensions and safe access planning."],
+      ["Stair stringer calculator", "/stair-stringer-calculator/", "Internal calculator for rise, run, riser count, and stringer layout checks."],
+      ["Stringer app detail", "/apps/stringer/", "WoodCutTool app page for code-checked riser options and printable stringer cut sheets."]
+    ]
+  },
+  {
+    slug: "tile-layout-waste-pattern-research",
+    category: "Tile",
+    title: "Tile Layout Waste By Pattern: Research Notes For Floors And Walls",
+    description: "Research notes on how straight lay, diagonal, herringbone, large-format, mosaic, and wet-area tile patterns change waste allowance and cut risk.",
+    kicker: "Tile waste",
+    readTime: "12 min",
+    accent: "tile",
+    subject: "tile layout waste by pattern",
+    context: "bathrooms, kitchens, entryways, shower niches, fireplace surrounds, and large floor layouts",
+    question: "Why do two rooms with the same square footage need different tile waste allowances?",
+    thesis: "Tile waste is driven by pattern geometry, perimeter length, focal alignment, tile size, breakage risk, and whether cut pieces can be reused elsewhere in the same layout.",
+    evidence: "Straight lay usually creates predictable edge cuts. Diagonal and herringbone patterns create more angled cuts and more unusable triangles. Large-format tile concentrates risk because one broken or miscut piece represents a larger unit of cost.",
+    method: "Estimate room area, then add a pattern factor based on diagonal cuts, perimeter complexity, tile size, repeat module, and wet-area details. Dry-lay the focal area and review edge cuts before ordering the final box count.",
+    caveat: "A waste percentage is a planning number, not a guarantee. Out-of-square walls, substrate repairs, lot variation, broken tiles, and layout changes can all move the final order quantity.",
+    action: "Use the tile calculator as a baseline, then adjust waste by pattern and room complexity before buying.",
+    appHref: "/tile-calculator/",
+    appName: "Tile Calculator",
+    metrics: [["Pattern cuts", 5], ["Perimeter", 4], ["Tile size", 4], ["Reuse cuts", 3]],
+    comparisonRows: [
+      ["Straight lay", "Simple rooms and walls", "Still needs edge planning", "Lowest complexity"],
+      ["Diagonal", "Visual movement", "More angled waste", "Add more allowance"],
+      ["Herringbone", "Feature areas", "High cut density", "Dry-lay first"],
+      ["Large format", "Modern surfaces", "High breakage cost", "Check flatness and handling"]
+    ],
+    sources: [
+      ["US EPA: C&D material management", "https://www.epa.gov/smm/sustainable-management-construction-and-demolition-materials", "Waste reduction framing applies to tile ordering, cutting, and demolition avoidance."],
+      ["Tile material calculator", "/tile-calculator/", "Internal calculator for tile count, box count, waste allowance, and cost planning."],
+      ["Tile waste estimation by pattern", "/blog/tile-waste-estimation-by-pattern/", "Internal guide on pattern-specific tile waste planning."]
+    ]
+  },
+  {
+    slug: "quilt-yardage-variance-research",
+    category: "QuiltFit",
+    title: "Quilt Yardage Variance Research: Why Fabric Estimates Drift",
+    description: "A research-style guide to quilt yardage variance across block count, seam allowance, fabric roles, directional prints, backing, binding, and cutting waste.",
+    kicker: "Yardage variance",
+    readTime: "12 min",
+    accent: "quiltfit",
+    subject: "quilt yardage variance",
+    context: "baby quilts, throws, bed quilts, memory quilts, guild projects, and fabric-shop buying decisions",
+    question: "Why do quilt fabric estimates drift even when the finished quilt size is correct?",
+    thesis: "Yardage variance comes from the path between finished design and cut fabric: block count, seam allowance, fabric role, directional print limits, repeated units, backing overhang, binding width, and the maker's safety margin.",
+    evidence: "A finished-size estimate can hide fabric-role shortages. A quilt may have enough total fabric but not enough background, sashing, border, or backing fabric because each role has different cutting rules and waste behavior.",
+    method: "Map the quilt by block, row, and fabric role before shopping. Convert finished patch sizes to cut sizes, group repeated shapes, apply role-specific rounding, and separate top yardage from backing, batting, and binding decisions.",
+    caveat: "Quilt planning cannot remove creative changes. Makers often swap fabrics, add borders, change block size, or use stash substitutions. The plan should preserve the assumptions so the effect of each change is visible.",
+    action: "Use QuiltFit to keep design, fabric roles, yardage, shopping list, cut list, and project progress in the same planning record.",
+    appHref: "/apps/quiltfit/",
+    appName: "QuiltFit",
+    metrics: [["Block count", 5], ["Fabric roles", 5], ["Direction", 3], ["Backing", 4]],
+    comparisonRows: [
+      ["Finished-size estimate", "Very early concept", "Hides fabric roles", "Use only for rough planning"],
+      ["Block-level estimate", "Patchwork tops", "Needs pattern structure", "Best for top fabric"],
+      ["Role-based estimate", "Shopping lists", "Requires naming discipline", "Best for reducing shortages"],
+      ["Full project plan", "Start-to-finish workflow", "Needs updates as design changes", "Best for real quilts"]
+    ],
+    sources: [
+      ["QuiltFit app detail", "/apps/quiltfit/", "WoodCutTool app page for quilt planning, fabric roles, yardage, and project progress."],
+      ["Fabric yardage estimates with block layouts", "/blog/fabric-yardage-estimates-with-block-layouts/", "Internal guide on estimating fabric from repeated block layouts."],
+      ["Backing, binding, and batting planning", "/blog/backing-binding-batting-planning/", "Internal guide on finishing-material planning."]
+    ]
+  },
+  {
+    slug: "private-pdf-scanning-workflow-research",
+    category: "PDF Scan",
+    title: "Private PDF Scanning Workflow Research: Capture, OCR, Lock, And Export",
+    description: "Research notes on building a private scan-to-PDF workflow for receipts, contracts, IDs, forms, OCR search, signatures, locked files, and exports.",
+    kicker: "PDF workflow",
+    readTime: "12 min",
+    accent: "tile",
+    subject: "private PDF scanning workflow",
+    context: "receipts, invoices, contracts, IDs, forms, class notes, signatures, and business documents",
+    question: "What makes a scan-to-PDF workflow reliable enough for everyday paperwork without turning every document into a cloud upload?",
+    thesis: "A reliable private workflow has four review gates: capture quality, page order, searchable text, and export boundary. Privacy is not a single setting; it is the default path the document follows from camera to PDF.",
+    evidence: "Most scanning failures happen before export. The page is skewed, the edge is cropped, OCR sees the wrong text, a signature page is missing, or a sensitive file is shared before review.",
+    method: "Scan with enough light, confirm edge detection, review page order, run OCR only when search matters, add signatures or locks when needed, and export only the final version. Keep local copies organized by project or document type.",
+    caveat: "OCR is helpful but not authoritative. Small fonts, handwriting, glare, stamps, and folded paper can produce errors. Important amounts, names, dates, and IDs still need human review before submission.",
+    action: "Use a private scanner workflow that keeps capture and review on device, then export the PDF intentionally when the document is ready.",
+    appHref: "/apps/pdf-scan-scanner-and-reader/",
+    appName: "PDF Scan",
+    metrics: [["Capture", 5], ["Page order", 4], ["OCR review", 4], ["Export control", 5]],
+    comparisonRows: [
+      ["Photo roll only", "Fast capture", "Hard to organize as documents", "Convert important scans to PDFs"],
+      ["Cloud scanner", "Sync across devices", "Uploads sensitive documents", "Use only when cloud sharing is needed"],
+      ["Private scanner", "Personal and business paperwork", "Needs local organization", "Best default for sensitive files"],
+      ["Paper filing", "Original retention", "Hard to search", "Keep only when originals matter"]
+    ],
+    sources: [
+      ["FTC privacy and security guidance", "https://www.ftc.gov/business-guidance/privacy-security", "General privacy guidance supports minimizing unnecessary exposure of sensitive information."],
+      ["PDF Scan app detail", "/apps/pdf-scan-scanner-and-reader/", "WoodCutTool app page for private document scanning, OCR, PDF export, and file organization."],
+      ["OCR PDF scanner guide", "/blog/ocr-pdf-scanner-searchable-documents-guide/", "Internal guide on searchable document workflows."]
+    ]
+  },
+  {
+    slug: "receipt-mileage-recordkeeping-research",
+    category: "SnapReceipt",
+    title: "Receipt And Mileage Recordkeeping Research For Small Business Workflows",
+    description: "A research-style workflow for combining receipts, mileage logs, expense categories, job tags, exports, and privacy controls for small businesses.",
+    kicker: "Records research",
+    readTime: "12 min",
+    accent: "cutlist",
+    subject: "receipt and mileage recordkeeping",
+    context: "contractors, makers, market vendors, freelancers, and small business owners who buy materials and drive for work",
+    question: "How should small businesses keep receipt and mileage records so tax time becomes a review process instead of a reconstruction project?",
+    thesis: "The strongest recordkeeping workflow is contemporaneous, job-tagged, and export-ready. The record should be captured when the spending or driving happens, then grouped by project, category, and reporting need.",
+    evidence: "Receipts fade, paper gets lost, and mileage reconstructed from memory is weak. A phone workflow works because the device is present at the purchase, in the vehicle, and at the moment a job tag is still obvious.",
+    method: "Capture receipts at purchase, tag them to a job or category, log business trips when they happen, and review records weekly. Keep the export format simple enough for bookkeeping or tax preparation.",
+    caveat: "Recordkeeping apps do not replace tax advice. Categories, deduction rules, mileage methods, and retention requirements depend on jurisdiction and business structure. The app should organize evidence, not interpret every rule.",
+    action: "Use SnapReceipt to keep receipts, mileage, and expense notes together without forcing every record into a cloud account.",
+    appHref: "/apps/snapreceipt-expenses-and-tax/",
+    appName: "SnapReceipt",
+    metrics: [["Capture timing", 5], ["Job tags", 4], ["Mileage log", 5], ["Export ready", 4]],
+    comparisonRows: [
+      ["Paper envelope", "Original receipts", "Easy to lose and hard to search", "Scan at purchase"],
+      ["Spreadsheet", "Custom summaries", "Manual entry burden", "Use for final review"],
+      ["Bank feed only", "Payment trail", "Misses item details and mileage", "Attach receipt records"],
+      ["Receipt plus mileage app", "Contemporaneous evidence", "Needs routine", "Best everyday workflow"]
+    ],
+    sources: [
+      ["IRS: Recordkeeping for Businesses", "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping", "Official recordkeeping context for business deductions and supporting documents."],
+      ["IRS: Standard Mileage Rates", "https://www.irs.gov/tax-professionals/standard-mileage-rates", "Official standard mileage rate reference and vehicle deduction context."],
+      ["SnapReceipt app detail", "/apps/snapreceipt-expenses-and-tax/", "WoodCutTool app page for receipts, expenses, mileage, and private records."]
+    ]
+  },
+  {
+    slug: "offline-app-privacy-workflow-research",
+    category: "Private Meeting",
+    title: "Offline App Privacy Workflow Research: Local Capture, Review, And Export",
+    description: "Research notes on offline app privacy workflows for meeting transcripts, notes, scans, labels, receipts, journals, and other sensitive local records.",
+    kicker: "Privacy research",
+    readTime: "12 min",
+    accent: "tile",
+    subject: "offline app privacy workflow",
+    context: "private meeting notes, interviews, receipts, scans, labels, journals, schedules, and personal utilities",
+    question: "What does privacy-first design mean in a practical app workflow, beyond saying that an app has no account?",
+    thesis: "Privacy is a workflow property. The safest default path captures locally, reviews locally, stores locally, and exports only when the user deliberately chooses a destination.",
+    evidence: "Sensitive records often reveal more than their title suggests. A transcript can include client names, a receipt can reveal location and spending, a label can reveal inventory, and a schedule can reveal daily routines.",
+    method: "Map the data lifecycle: capture, temporary processing, saved record, search, export, deletion, and backup. For each step, ask whether the data must leave the device. If not, keep the default path local.",
+    caveat: "Offline-first is not the same as impossible to share. Users still need PDF export, text export, printing, AirDrop, email, and backups. The privacy question is who initiates the transfer and whether the app uploads by default.",
+    action: "Design app pages and workflows around user-controlled output: capture locally, review clearly, then export only the final artifact.",
+    appHref: "/apps/private-meeting-transcriber/",
+    appName: "Private Meeting Transcriber",
+    metrics: [["Local capture", 5], ["Local review", 5], ["User export", 4], ["Deletion clarity", 4]],
+    comparisonRows: [
+      ["Cloud-first app", "Cross-device sync", "Uploads by default", "Use only when collaboration requires it"],
+      ["Offline-first app", "Sensitive personal workflows", "Needs local backup habits", "Best default for private records"],
+      ["Manual notes", "Low-tech capture", "Hard to search or export", "Use for simple cases"],
+      ["Hybrid workflow", "Selective sharing", "Needs clear boundaries", "Export only finished records"]
+    ],
+    sources: [
+      ["FTC privacy and security guidance", "https://www.ftc.gov/business-guidance/privacy-security", "General privacy guidance supports limiting exposure and controlling personal information."],
+      ["Private Meeting Transcriber", "/apps/private-meeting-transcriber/", "WoodCutTool app page for offline speech to text, speaker labels, and private transcripts."],
+      ["Private meeting transcriber guide", "/blog/private-meeting-transcriber-offline-guide/", "Internal guide on private offline meeting transcription."]
+    ]
+  }
+];
+
+function createLongResearchArticles() {
+  return longResearchArticleDefinitions.map((item) => ({
+    slug: item.slug,
+    category: item.category,
+    title: item.title,
+    description: item.description,
+    kicker: item.kicker,
+    readTime: item.readTime,
+    accent: item.accent,
+    sections: [
+      ["Research Question And Scope", `${item.question} This article treats ${item.subject} as a measurable workflow rather than a vague best practice. The scope is ${item.context}. The goal is to identify the inputs that change cost, time, risk, privacy, or rework before the user commits to a purchase, a cut, an export, or a final plan.`],
+      ["Working Thesis", `${item.thesis} A research-style article should separate a number from a decision. A number can say that material use, time, risk, or privacy exposure changed. A decision asks whether that change is meaningful enough to alter the workflow. That distinction keeps the analysis practical for a builder, maker, installer, musician, household organizer, or small business owner using WoodCutTool's app and calculator ecosystem.`],
+      ["Evidence Model", `${item.evidence} The evidence model should use stable inputs that a user can inspect: dimensions, quantities, dates, categories, page counts, part labels, workflow steps, exported files, saved records, and user-controlled sharing. Where external guidance is cited, it is used as context for the planning method rather than as a promise that one app or calculator can solve every edge case.`],
+      ["Measurement Method", `${item.method} The cleanest method is to compare scenarios with the same starting assumptions. Change one variable at a time, record the output, and keep the winning scenario with the project. This makes the article useful after reading because the user can repeat the method with their own measurements instead of copying an example that may not match their shop, room, document stack, quilt, stair, or daily workflow.`],
+      ["Risk And Interpretation", `${item.caveat} The interpretation step matters because many optimization tools can make a bad result look precise. Precision is not the same as truth. A realistic research workflow asks what was not measured, which assumptions could change, and whether a slightly less efficient result might be safer, more private, easier to review, or more likely to be finished.`],
+      ["Practical Workflow", `${item.action} The practical workflow is capture, review, compare, save, and export only when the result is ready. For physical projects, that means no cutting before the plan is checked. For app workflows, it means no sharing before the record is reviewed. For research-style SEO content, it means every claim should point back to a repeatable action, a measurable metric, or a clear user decision.`]
+    ],
+    charts: [
+      {
+        title: `${item.kicker} metric importance`,
+        caption: `Relative importance scores for the main variables in this ${item.subject} research model.`,
+        unit: "",
+        bars: item.metrics
+      },
+      {
+        title: "Decision confidence by workflow stage",
+        caption: "Confidence rises when the workflow moves from rough capture to reviewed plan, saved record, and controlled output.",
+        unit: "",
+        bars: [["Capture", 2], ["Review", 3], ["Compare", 4], ["Save", 5], ["Export", 4]]
+      }
+    ],
+    deepDive: {
+      figureTitle: `${item.kicker} research model`,
+      figureCaption: `${item.subject} should be measured as a chain of inputs, review points, and decisions, not as a single isolated number.`,
+      figureStats: [["6 sections", "Research flow"], ["4 metrics", "Review model"], ["1 action", "Next step"]],
+      comparisonTitle: `${item.kicker} workflow comparison`,
+      comparisonColumns: ["Workflow", "Best for", "Weak spot", "Recommended use"],
+      comparisonRows: item.comparisonRows,
+      faqs: [
+        [`What is the main research question for ${item.subject}?`, item.question],
+        ["What metric should I review first?", `Start with ${item.metrics[0][0].toLowerCase()}, then compare it with ${item.metrics[1][0].toLowerCase()} and ${item.metrics[2][0].toLowerCase()} so the decision does not depend on one number.`],
+        ["How should I use this article?", "Use it as a repeatable checklist: capture the same inputs, change one assumption at a time, compare scenarios, and save the final record before acting."],
+        ["Which WoodCutTool page is most relevant?", `${item.appName} is the closest action page for this workflow because it connects the research model to a tool, calculator, or app users can actually open.`]
+      ],
+      sources: item.sources
+    },
+    checklist: [
+      `Define the ${item.subject} question before collecting data.`,
+      "Use the same assumptions when comparing scenarios.",
+      `Track ${item.metrics[0][0].toLowerCase()}, ${item.metrics[1][0].toLowerCase()}, and ${item.metrics[2][0].toLowerCase()} together.`,
+      "Review risk before choosing the most efficient-looking answer.",
+      `Open ${item.appName} when the research needs to become an action plan.`
+    ]
+  }));
+}
+
+articles.push(...createLongResearchArticles());
+
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {
     question: "How should a builder prove that plywood optimization is saving money instead of just making a prettier layout?",

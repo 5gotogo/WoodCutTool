@@ -69,7 +69,7 @@
   },
   "/blog/": {
     "lastmod": "2026-06-28",
-    "hash": "d48632658c18fd2c33308401bbdc21abf06eee41980ee61213a87416badbd07c"
+    "hash": "8f31fc28c98d6a532a3c16626ea2e9dc911b2e55f75e5c90e2e5a97e3d6a823b"
   },
   "/privacy-policy/": {
     "lastmod": "2026-06-28",
@@ -301,7 +301,7 @@
   },
   "/blog/best-pdf-scanner-app-iphone-private-documents/": {
     "lastmod": "2026-06-28",
-    "hash": "380eb71f3db44ee2f155ad2370b7e34a26ab45dac9d78dcee3e6b5ded0d0d440"
+    "hash": "bd6dc9a40d1ed0ca574c8530a2993b6bd22df8c7fb253b02fec19166df90b220"
   },
   "/blog/best-plywood-cutting-workflow-2026/": {
     "lastmod": "2026-06-28",
@@ -342,6 +342,10 @@
   "/blog/cabinet-hinges-explained/": {
     "lastmod": "2026-06-28",
     "hash": "0cf27533c24218121c3d606bf56656cf4b7f963f9d7d9dcff4d478c628580978"
+  },
+  "/blog/cabinet-shop-waste-audit-research/": {
+    "lastmod": "2026-06-28",
+    "hash": "19d5b7f761e1afbcc94abe7744cc2c6cca1a69643c3ed11822d228713fb2da43"
   },
   "/blog/cabinet-sizing-standards-explained/": {
     "lastmod": "2026-06-28",
@@ -819,6 +823,10 @@
     "lastmod": "2026-06-28",
     "hash": "e91167cc368d64ab90ea2b48bf53096d855d818d336712c94c30f84f7acbd1a4"
   },
+  "/blog/kerf-allowance-error-research/": {
+    "lastmod": "2026-06-28",
+    "hash": "ebe608d588d0a8466206d63d8e2ecdfc66ca7e27c6b203d343047e1a6a2602bd"
+  },
   "/blog/kids-art-desk-cut-list/": {
     "lastmod": "2026-06-28",
     "hash": "2e0c7359073ce2e1894ee8df27f7ffb4a8bd847e5e41b3dc8f418d5d42cfea9b"
@@ -941,7 +949,7 @@
   },
   "/blog/mileage-log-for-tax-deductions/": {
     "lastmod": "2026-06-28",
-    "hash": "6e9c38d9bab72fbbcc7bca5b5661950dc4b2083925c283377316767ad47472d0"
+    "hash": "021ae84af27f9b94ee1697ed9c382a7e4a1e81773e3e3f6692ee0e3f7e3396d4"
   },
   "/blog/miter-saw-station-cut-list/": {
     "lastmod": "2026-06-28",
@@ -985,11 +993,19 @@
   },
   "/blog/ocr-pdf-scanner-searchable-documents-guide/": {
     "lastmod": "2026-06-28",
-    "hash": "a4b07ed95268971911eb259b9e16652c9d552097f936a84d2338f43d9a3ef7a6"
+    "hash": "891605480f3ec3277743ad689c38a2b1bb58185ddb75c5dcc5c4d31181372090"
+  },
+  "/blog/offcut-inventory-roi-research/": {
+    "lastmod": "2026-06-28",
+    "hash": "be462bd5362c8466d35876b35c2a1c1983a27d363479c80a6e54112af5271d6a"
   },
   "/blog/office-printer-cabinet-cut-list/": {
     "lastmod": "2026-06-28",
     "hash": "9ed548d0cad57fd0ecd7c88042c30415de1c835fd40cb4789ec175194005e517"
+  },
+  "/blog/offline-app-privacy-workflow-research/": {
+    "lastmod": "2026-06-28",
+    "hash": "7e64a4c31845a9e0cf5bbd743e5100108ed66cfa42e4639c29b1b5c11fe753a1"
   },
   "/blog/offline-cut-list-app-privacy/": {
     "lastmod": "2026-06-28",
@@ -1165,7 +1181,7 @@
   },
   "/blog/private-expense-tracking-without-an-account/": {
     "lastmod": "2026-06-28",
-    "hash": "f8ea8db65c84da8c70a6505d29505b189a03e40963ac2268de6c5e0679445a26"
+    "hash": "d1a2e421caacb8cdd79a39ef26d71c94b4985a7dfb683ff446904e2ffc58400d"
   },
   "/blog/private-fasting-sleep-tracker-no-login/": {
     "lastmod": "2026-06-28",
@@ -1190,6 +1206,10 @@
   "/blog/private-mood-journal-no-cloud-upload/": {
     "lastmod": "2026-06-28",
     "hash": "f39b57f35a5d0b3b1b2d70af5905d731aeedec0b3f32db57067a97f5840f9622"
+  },
+  "/blog/private-pdf-scanning-workflow-research/": {
+    "lastmod": "2026-06-28",
+    "hash": "f08d8c66ea12951aa1e8ae228ccd17172f785327865789b22fe36886a1a4f53f"
   },
   "/blog/private-photo-vault-iphone-guide/": {
     "lastmod": "2026-06-28",
@@ -1275,6 +1295,10 @@
     "lastmod": "2026-06-28",
     "hash": "11e80efb2247e98001eac7e9cbde5bf84f92a102423df3d74768be5a48ca21cd"
   },
+  "/blog/quilt-yardage-variance-research/": {
+    "lastmod": "2026-06-28",
+    "hash": "005060dcf0618d5482a12d47176177dcd9bc4c995d0f56e6934893c523eb4b3a"
+  },
   "/blog/quiltfit-digital-quilt-planning-workflow/": {
     "lastmod": "2026-06-28",
     "hash": "7bc7eb1d648cbc402531843fa6b15bd784fcc4cf475917401be67afe9769b37b"
@@ -1335,13 +1359,17 @@
     "lastmod": "2026-06-28",
     "hash": "a6275b9070677a26366442af301a89ec8abbc7b285e3967745b2816d01b62b6d"
   },
+  "/blog/receipt-mileage-recordkeeping-research/": {
+    "lastmod": "2026-06-28",
+    "hash": "f40665d303ab2d8da9f1ca4f5c10da23494f7c98814bc371d4d3f78c69a743d3"
+  },
   "/blog/receipt-report-pdf-csv-private-records/": {
     "lastmod": "2026-06-28",
     "hash": "65ee7e8fbb7b32bbd3207e8c6fcb72b1ab1e66d6c439b551fc68ed6b3e6f0eba"
   },
   "/blog/receipt-tracking-for-contractors-and-makers/": {
     "lastmod": "2026-06-28",
-    "hash": "5c3190183b74307e95975934fb1d2181cd1b2b5b835eceba1d381547b20d5f4c"
+    "hash": "0610d7641aa24061e7830db51e12a54747015f4d668301d22f3f6d5a565f8490"
   },
   "/blog/record-storage-cabinet-cut-list/": {
     "lastmod": "2026-06-28",
@@ -1385,7 +1413,7 @@
   },
   "/blog/scan-to-pdf-workflow-receipts-invoices-signatures-lock/": {
     "lastmod": "2026-06-28",
-    "hash": "9afbf03446e22424454dcc25a516e721ba0523fe80881f75bce8e97add91548f"
+    "hash": "661a07a529a05b9bba44880d2f3581d7eca1b46eca6fa66a923e33c031bc51b6"
   },
   "/blog/scan-to-print-app-iphone-paperwork/": {
     "lastmod": "2026-06-28",
@@ -1430,6 +1458,10 @@
   "/blog/sheet-goods-estimator-before-home-center/": {
     "lastmod": "2026-06-28",
     "hash": "78407c288ef6d6a2fc180781ca68623ea1b7fbaa3ec1c113934b293cefddf277"
+  },
+  "/blog/sheet-yield-research-benchmark/": {
+    "lastmod": "2026-06-28",
+    "hash": "510b3f3809477070773be80d94f70fa5d27cea28686d53d4fcde26336418be69"
   },
   "/blog/shift-calendar-for-nurses-security-drivers/": {
     "lastmod": "2026-06-28",
@@ -1527,6 +1559,10 @@
     "lastmod": "2026-06-28",
     "hash": "e338835c6193154ed201bb815c2e6f752dd4436fa883f300f2d00a9193807e2a"
   },
+  "/blog/stair-remodel-measurement-risk-research/": {
+    "lastmod": "2026-06-28",
+    "hash": "557c69711efc98cdb0362c97c69efa628ea3b8e6b4a8ddce4a4f58e4109f4a15"
+  },
   "/blog/stair-renovation-budget-materials/": {
     "lastmod": "2026-06-28",
     "hash": "c9caa141db1a7f25a100dcecf882c47161bd5025504dd82488e279ebf24618ed"
@@ -1614,6 +1650,10 @@
   "/blog/tile-layout-planning-before-install/": {
     "lastmod": "2026-06-28",
     "hash": "0f34a0baeb7ad79db39d0d9b0ad8a327416ebd22f02e213a7490ecd3d2149542"
+  },
+  "/blog/tile-layout-waste-pattern-research/": {
+    "lastmod": "2026-06-28",
+    "hash": "2c0ea9543eb1bfa99b09a3417a9f2c920afa76cbf4537bca9e38e9fbe882b349"
   },
   "/blog/tile-niche-layout-planning/": {
     "lastmod": "2026-06-28",
