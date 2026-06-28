@@ -32,6 +32,22 @@ function excerpt(description, max = 190) {
   return text.length < clean.length ? `${text.replace(/[,\s.]+$/, "")}...` : text;
 }
 
+const titleSuffix = " | WoodCutTool";
+
+function seoTitle(title, max = 65) {
+  const clean = String(title || "").replace(/\s+/g, " ").trim();
+  if (`${clean}${titleSuffix}`.length <= max) return `${clean}${titleSuffix}`;
+
+  const maxCore = max - titleSuffix.length;
+  const hard = clean.slice(0, maxCore + 1);
+  const lastSpace = hard.lastIndexOf(" ");
+  const core = clean
+    .slice(0, lastSpace > 35 ? lastSpace : maxCore)
+    .replace(/[,\-:;|\s]+$/, "")
+    .trim();
+  return `${core}${titleSuffix}`;
+}
+
 function initials(name) {
   return name
     .replace(/[–—:&-]/g, " ")
@@ -399,7 +415,7 @@ function appsIndexPage() {
   return `<!doctype html>
 <html lang="en">
 ${head({
-    title: "Privacy-First iPhone Apps for Work, Makers, and Everyday Tools | WoodCutTool",
+    title: "iPhone Apps for Makers, Work & Everyday Tools | WoodCutTool",
     description: "Privacy-first iPhone apps including CutList, QuiltFit, SnapReceipt, PDF Scan, and Invoice Maker. Offline tools for makers, small businesses, and everyday work.",
     canonical: "https://woodcuttool.com/apps/",
     jsonLd: appsIndexJsonLd()
@@ -531,6 +547,60 @@ ${cards}
     </section>`;
 }
 
+function appOffer(app) {
+  const raw = String(app.formattedPrice || "").trim();
+  const price = /^free$/i.test(raw) ? "0" : raw.match(/[\d.]+/)?.[0];
+  return {
+    "@type": "Offer",
+    url: app.url,
+    price,
+    priceCurrency: "USD",
+    availability: "https://schema.org/InStock"
+  };
+}
+
+function appDetailJsonLd(app, canonical) {
+  const release = app.currentVersionReleaseDate || app.releaseDate || "";
+  const graph = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": `${canonical}#software`,
+        name: app.name,
+        url: canonical,
+        sameAs: app.url,
+        description: excerpt(app.description, 220),
+        image: app.artworkUrl512,
+        applicationCategory: app.genre,
+        operatingSystem: app.minimumOsVersion ? `iOS ${app.minimumOsVersion}+` : "iOS",
+        softwareVersion: app.version,
+        datePublished: app.releaseDate ? app.releaseDate.slice(0, 10) : undefined,
+        dateModified: release ? release.slice(0, 10) : undefined,
+        contentRating: app.trackContentRating,
+        author: { "@type": "Person", name: app.sellerName || "JiaBao Dai" },
+        publisher: {
+          "@type": "Organization",
+          name: "WoodCutTool",
+          url: "https://woodcuttool.com/",
+          logo: { "@type": "ImageObject", url: "https://woodcuttool.com/assets/icons/icon-512.png" }
+        },
+        offers: appOffer(app)
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${canonical}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://woodcuttool.com/" },
+          { "@type": "ListItem", position: 2, name: "Apps", item: "https://woodcuttool.com/apps/" },
+          { "@type": "ListItem", position: 3, name: app.name, item: canonical }
+        ]
+      }
+    ]
+  };
+  return `<script type="application/ld+json">\n${JSON.stringify(graph, null, 2)}\n</script>`;
+}
+
 function appDetailPage(app, index) {
   const release = app.currentVersionReleaseDate || app.releaseDate || "";
   // For apps with a route override (e.g. cutlist/quiltfit have a canonical short URL),
@@ -541,9 +611,10 @@ function appDetailPage(app, index) {
   return `<!doctype html>
 <html lang="en">
 ${head({
-    title: `${app.name} | WoodCutTool Apps`,
+    title: seoTitle(app.name),
     description: excerpt(app.description, 155),
-    canonical
+    canonical,
+    jsonLd: appDetailJsonLd(app, canonical)
   })}
 <body>
   <a class="skip-link" href="#main">Skip to content</a>

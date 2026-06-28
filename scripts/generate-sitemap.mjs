@@ -1,10 +1,12 @@
-import { readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = (process.env.SITE_URL || "https://woodcuttool.com").replace(/\/$/, "");
 const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
+const lastmodStatePath = join(root, "data", "sitemap-lastmod.json");
 
 function collectHtmlFiles(dir = root, prefix = "") {
   const files = [];
@@ -95,6 +97,35 @@ function extractImages(html) {
   }
 
   return [...images];
+}
+
+function hashContent(value) {
+  return createHash("sha256").update(value).digest("hex");
+}
+
+function loadJson(path) {
+  if (!existsSync(path)) return {};
+  try {
+    return JSON.parse(readFileSync(path, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
+function loadExistingSitemapLastmods() {
+  const path = join(root, "sitemap.xml");
+  if (!existsSync(path)) return new Map();
+  const xml = readFileSync(path, "utf8");
+  const map = new Map();
+  for (const match of xml.matchAll(/<url><loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod>/g)) {
+    try {
+      const url = new URL(match[1]);
+      map.set(url.pathname.endsWith("/") ? url.pathname : `${url.pathname}/`, match[2]);
+    } catch {
+      // Ignore malformed legacy sitemap rows and let this run generate a fresh date.
+    }
+  }
+  return map;
 }
 
 function sitemapMeta(route) {
@@ -220,6 +251,7 @@ function xmlEscape(value) {
 
 const routes = new Set();
 const routeImages = new Map();
+const routeHashes = new Map();
 
 for (const file of collectHtmlFiles()) {
   const html = readFileSync(join(root, file), "utf8");
@@ -231,6 +263,10 @@ for (const file of collectHtmlFiles()) {
   const route = canonicalRoute(html, routeFromFile(file));
   routes.add(route);
 
+  const hashes = routeHashes.get(route) ?? [];
+  hashes.push(hashContent(html));
+  routeHashes.set(route, hashes);
+
   // Attach unique images to the canonical route (alias pages fold into their canonical).
   const images = extractImages(html);
   if (images.length) {
@@ -241,10 +277,19 @@ for (const file of collectHtmlFiles()) {
 }
 
 const urls = sortRoutes([...routes]);
-const lastmod = new Date().toISOString().slice(0, 10);
+const today = new Date().toISOString().slice(0, 10);
+const previousState = loadJson(lastmodStatePath);
+const legacyLastmods = loadExistingSitemapLastmods();
+const nextState = {};
 let imageCount = 0;
 const entries = urls.map((route) => {
   const { changefreq, priority } = sitemapMeta(route);
+  const signature = hashContent((routeHashes.get(route) ?? []).sort().join("|"));
+  const previous = previousState[route];
+  const lastmod = previous?.hash === signature
+    ? previous.lastmod
+    : (previous?.lastmod ? today : (legacyLastmods.get(route) || today));
+  nextState[route] = { lastmod, hash: signature };
   const images = [...(routeImages.get(route) ?? [])];
   imageCount += images.length;
   const imageTags = images
@@ -255,5 +300,6 @@ const entries = urls.map((route) => {
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${entries.join("\n")}\n</urlset>\n`;
 
+writeFileSync(lastmodStatePath, `${JSON.stringify(nextState, null, 2)}\n`);
 writeFileSync(join(root, "sitemap.xml"), sitemap);
 console.log(`Generated sitemap.xml with ${urls.length} URLs and ${imageCount} images.`);

@@ -406,7 +406,7 @@ const landingPages = [
     slug: "cut-list-software",
     seoTitle: "Cut List Software for Woodworking Projects",
     h1: "Cut List Software",
-    description: "Compare cut list software options for woodworking, from browser calculators to the CutList Optimizer app, and pick the right tool for saving, exporting, and reusing cut lists.",
+    description: "Compare cut list software for woodworking, from browser calculators to CutList, and choose the right tool for saving, exporting, and reusing layouts.",
     keywords: ["cut list software", "cut list app", "cutlist software", "cutting plan software", "woodworking software"],
     problem: "Spreadsheets and paper sketches work until a project has many repeated parts, changing dimensions, or needs to be reused. That is where cut list software earns its place. The right tool does more than total your parts: it arranges them on real stock, saves the project so you can edit it later, and exports a clean plan you can take to the saw. The trick is matching the level of software to the job instead of overcomplicating a simple shelf or under-planning a cabinet run.",
     steps: [
@@ -464,7 +464,7 @@ const landingPages = [
     slug: "plywood-cut-list-calculator",
     seoTitle: "Plywood Cut List Calculator for Cabinet Parts",
     h1: "Plywood Cut List Calculator",
-    description: "A plywood cut list calculator turns cabinet and panel parts into a sheet-by-sheet cutting plan, with kerf and grain handled, so you know exactly what to cut from each sheet.",
+    description: "A plywood cut list calculator turns cabinet and panel parts into sheet-by-sheet plans with kerf, grain, labels, and clear cut order.",
     keywords: ["plywood cut list calculator", "cutlist calculator", "plywood cutting calculator", "cabinet cut list", "sheet cutting plan"],
     problem: "When a project is built from plywood, the cut list and the sheet layout are really one problem. A plywood cut list calculator combines them: it takes your panel parts and generates a plan that shows which parts come from which sheet, in what order, with kerf and grain accounted for. This matters most on cabinets, where dozens of repeated sides, shelves, backs, and drawer parts have to be cut accurately and tracked so nothing is missed at assembly.",
     steps: [

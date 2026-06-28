@@ -8067,6 +8067,43 @@ function head({ title, description, canonical, ogType = "website", jsonLd = "" }
 </head>`;
 }
 
+const titleSuffix = " | WoodCutTool";
+
+function seoTitle(title, max = 65) {
+  const clean = String(title || "").replace(/\s+/g, " ").trim();
+  if (`${clean}${titleSuffix}`.length <= max) return `${clean}${titleSuffix}`;
+
+  const beforeColon = clean.replace(/:\s+.*/, "").trim();
+  if (beforeColon.length >= 35 && `${beforeColon}${titleSuffix}`.length <= max) {
+    return `${beforeColon}${titleSuffix}`;
+  }
+
+  const maxCore = max - titleSuffix.length;
+  const hard = clean.slice(0, maxCore + 1);
+  const lastSpace = hard.lastIndexOf(" ");
+  const core = clean
+    .slice(0, lastSpace > 35 ? lastSpace : maxCore)
+    .replace(/[,\-:;|\s]+$/, "")
+    .trim();
+  return `${core}${titleSuffix}`;
+}
+
+function seoDescription(description, article) {
+  const clean = String(description || "").replace(/\s+/g, " ").trim();
+  if (clean.length < 80 && article) {
+    return `Read ${article.title} for practical ${article.category} planning steps, field checks, and WoodCutTool workflow tips.`;
+  }
+  if (clean.length <= 160) return clean;
+
+  const hard = clean.slice(0, 160);
+  const lastSpace = hard.lastIndexOf(" ");
+  const trimmed = hard
+    .slice(0, lastSpace > 110 ? lastSpace : 157)
+    .replace(/[,\-:;|\s.]+$/, "")
+    .trim();
+  return `${trimmed}...`;
+}
+
 function getArticleIndex(article) {
   return articles.findIndex((candidate) => candidate.slug === article.slug);
 }
@@ -8122,6 +8159,40 @@ function generatedAppBlogSections() {
     .join("\n\n    ");
 }
 
+function blogIndexJsonLd() {
+  const itemListElement = articles.map((article, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: article.title,
+    url: `https://woodcuttool.com/blog/${article.slug}/`
+  }));
+  const graph = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://woodcuttool.com/blog/#collection",
+        name: "WoodCutTool Blog",
+        url: "https://woodcuttool.com/blog/",
+        description: "Guides for plywood cut lists, woodworking calculators, maker apps, labeling, scanning, audio tools, shift calendars, QuiltFit, tile, and stairs.",
+        mainEntity: {
+          "@type": "ItemList",
+          itemListElement
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://woodcuttool.com/blog/#breadcrumb",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://woodcuttool.com/" },
+          { "@type": "ListItem", position: 2, name: "Blogs", item: "https://woodcuttool.com/blog/" }
+        ]
+      }
+    ]
+  };
+  return `<script type="application/ld+json">\n${JSON.stringify(graph, null, 2)}\n</script>`;
+}
+
 function blogIndex() {
   const featured = [articles[0], articles[5], articles[10], articles[15]];
   const categories = [
@@ -8156,7 +8227,8 @@ function blogIndex() {
 ${head({
     title: "WoodCutTool Blog | CutList, Maker Apps & Project Guides",
     description: "Guides for plywood cut lists, woodworking calculators, maker apps, labeling, scanning, audio tools, shift calendars, QuiltFit, tile, and stairs.",
-    canonical: "https://woodcuttool.com/blog/"
+    canonical: "https://woodcuttool.com/blog/",
+    jsonLd: blogIndexJsonLd()
   })}
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -8375,8 +8447,8 @@ function articlePage(article) {
   return `<!doctype html>
 <html lang="en">
 ${head({
-    title: `${article.title} | WoodCutTool Blogs`,
-    description: article.description,
+    title: seoTitle(article.title),
+    description: seoDescription(article.description, article),
     canonical: `https://woodcuttool.com/blog/${article.slug}/`,
     ogType: "article",
     jsonLd: blogPostingJsonLd(article)
@@ -9069,6 +9141,45 @@ function generateBlogTranslations() {
   };
 }
 
+function pageHeadValue(html, pattern) {
+  return html.match(pattern)?.[1]?.trim() || "";
+}
+
+function legalPageJsonLd(html) {
+  const canonical = pageHeadValue(html, /<link rel="canonical" href="([^"]+)">/);
+  const title = pageHeadValue(html, /<title>([^<]+)<\/title>/).replace(/\s+\|\s+WoodCutTool$/, "");
+  const description = pageHeadValue(html, /<meta name="description" content="([^"]+)">/);
+  if (!canonical || !title || !description) return "";
+
+  const graph = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: title,
+    url: canonical,
+    description,
+    isPartOf: {
+      "@type": "WebSite",
+      name: "WoodCutTool",
+      url: "https://woodcuttool.com/"
+    },
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://woodcuttool.com/" },
+        { "@type": "ListItem", position: 2, name: title, item: canonical }
+      ]
+    }
+  };
+  return `<script type="application/ld+json">\n${JSON.stringify(graph, null, 2)}\n  </script>`;
+}
+
+function ensureLegalJsonLd(html) {
+  if (/<script[^>]+type=["']application\/ld\+json["'][^>]*>/i.test(html)) return html;
+  const schema = legalPageJsonLd(html);
+  if (!schema) return html;
+  return html.replace(/  <link rel="icon"/, `  ${schema}\n  <link rel="icon"`);
+}
+
 function updateExistingHtml() {
   const htmlFiles = [
     "index.html",
@@ -9086,6 +9197,10 @@ function updateExistingHtml() {
     "legal/cutlist/support/index.html",
     "legal/quiltfit/privacy/index.html",
     "legal/quiltfit/support/index.html",
+    "legal/Stringer/privacy/index.html",
+    "legal/Stringer/support/index.html",
+    "legal/Tinnitus/privacy/index.html",
+    "legal/Tinnitus/support/index.html",
     "plywood-cut-calculator/index.html",
     "privacy-policy/index.html",
     "quiltfit/index.html",
@@ -9116,6 +9231,9 @@ function updateExistingHtml() {
     html = html.replaceAll('<a href="/apps/">Apps</a><a href="/blog/">Blogs</a> /', '<a href="/apps/">Apps</a> /');
     html = html.replaceAll('<a class="active" href="/apps/">Apps</a><a href="/blog/">Blogs</a><a href="/apps/cutlist/">CutList</a><a href="/apps/quiltfit/">QuiltFit</a><a href="/blog/">Blogs</a>', '<a class="active" href="/apps/">Apps</a><a href="/blog/">Blogs</a><a href="/apps/cutlist/">CutList</a><a href="/apps/quiltfit/">QuiltFit</a>');
     html = html.replaceAll('<a href="/apps/">Apps</a><a href="/blog/">Blogs</a><a href="/blog/">Blogs</a>', '<a href="/apps/">Apps</a><a href="/blog/">Blogs</a>');
+    if (file.startsWith("legal/")) {
+      html = ensureLegalJsonLd(html);
+    }
     writeFileSync(path, html);
   }
 
