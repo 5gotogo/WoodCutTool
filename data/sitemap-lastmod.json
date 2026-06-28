@@ -1813,27 +1813,59 @@
   },
   "/compare/": {
     "lastmod": "2026-06-28",
-    "hash": "e19e6522bee53fb985df51c799d5271e6162d60bdd8a1660943b76bd9db0c9ef"
+    "hash": "cf25b907284b9462e513870098fe2d8d6129bac14ad78f822352903e12cbe761"
   },
   "/compare/best-plywood-tools/": {
     "lastmod": "2026-06-28",
     "hash": "434457a710d6981e672a570f68cd8af31c9fb66c51c4c11b323d77fbeb66f0bb"
   },
+  "/compare/best-way-to-create-a-wood-cut-list/": {
+    "lastmod": "2026-06-28",
+    "hash": "8e041080127f034592e8f962cf9c41a9d4c3bd96ca251e07f1d743b262247913"
+  },
+  "/compare/board-foot-vs-linear-foot-calculator/": {
+    "lastmod": "2026-06-28",
+    "hash": "4ff2a61eca2535f5c4748e42547e649a3a9b7b7a52cef49b8a26b5923e47711d"
+  },
   "/compare/circular-saw-vs-table-saw/": {
     "lastmod": "2026-06-28",
     "hash": "838ee6f9ca1974ff000d9735797a51fe82a30ef1c71051205bcdf34ff1341f72"
+  },
+  "/compare/cut-list-app-vs-spreadsheet/": {
+    "lastmod": "2026-06-28",
+    "hash": "e0b4d1113829bfc614156afa541c32c2c56bb259c42e9d8c0d78e4eac15583f7"
+  },
+  "/compare/cut-list-calculator-vs-manual-cutting-plan/": {
+    "lastmod": "2026-06-28",
+    "hash": "58f2f71b9271ec03c93a844cc2e22c0ade81d97d8dc39336b0a18d803e46584e"
+  },
+  "/compare/cutlist-vs-excel-for-woodworking/": {
+    "lastmod": "2026-06-28",
+    "hash": "700d2b00ce8c9831be36a68b7703cf4c75d95fcd3f3ad5aa2ac2d469f35d6c81"
   },
   "/compare/mdf-vs-particle-board/": {
     "lastmod": "2026-06-28",
     "hash": "63f10c07b2cafd7c85a7488baa91a0f894fa55d146b389d2dcc5c28a175595b0"
   },
+  "/compare/plywood-calculator-vs-cut-list-calculator/": {
+    "lastmod": "2026-06-28",
+    "hash": "16bb056ea3107f0df35349b36a41e2a23df55dc8dff4f6097bd162f9586b67cd"
+  },
   "/compare/plywood-vs-mdf/": {
     "lastmod": "2026-06-28",
     "hash": "12edaf4c63a612ed1b07ded001f5a877287ef2d710876f4375f553d86bf1048d"
   },
+  "/compare/stair-stringer-calculator-vs-manual-layout/": {
+    "lastmod": "2026-06-28",
+    "hash": "fce3dd047ff3f65161c3a82a2335d5e79718bc411bf40b8e733f37407cddf3ee"
+  },
   "/compare/track-saw-vs-table-saw-sheet-goods/": {
     "lastmod": "2026-06-28",
     "hash": "4a1818e3a8fbd6717a334a6cc565f922d08e2c77ed04dcd217e0c486c44915fd"
+  },
+  "/compare/woodworking-calculator-vs-paper-plans/": {
+    "lastmod": "2026-06-28",
+    "hash": "84e822e785462523431e43b1e6b8813c1ae9a24c7dea34a837560955b56e068b"
   },
   "/guides/how-to-cut-plywood-efficiently/": {
     "lastmod": "2026-06-28",

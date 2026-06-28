@@ -104,6 +104,54 @@ const pages = {
     type: "article",
     bc: [["Home", "/"], ["Compare", "/compare/"], ["Circular Saw vs Table Saw", "/compare/circular-saw-vs-table-saw/"]]
   },
+  "compare/cut-list-app-vs-spreadsheet/index.html": {
+    title: "Cut List App vs Spreadsheet: Which Plans Cuts Better?",
+    desc: "Cut list app vs spreadsheet for woodworking: speed, accuracy, visual layout, kerf, and saved projects. See why a cut list app beats a spreadsheet for cutting plans.",
+    type: "article",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["Cut List App vs Spreadsheet", "/compare/cut-list-app-vs-spreadsheet/"]]
+  },
+  "compare/cut-list-calculator-vs-manual-cutting-plan/index.html": {
+    title: "Cut List Calculator vs Manual Cutting Plan: Which Is Better?",
+    desc: "Cut list calculator vs a manual cutting plan: accuracy, speed, kerf, waste, and revisions. See when a calculator beats hand-drawn cutting plans for woodworking.",
+    type: "article",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["Cut List Calculator vs Manual Plan", "/compare/cut-list-calculator-vs-manual-cutting-plan/"]]
+  },
+  "compare/cutlist-vs-excel-for-woodworking/index.html": {
+    title: "CutList vs Excel for Woodworking: Which Should You Use?",
+    desc: "CutList vs Excel for woodworking cut lists: visual layout, kerf, sheet count, and saved projects vs spreadsheet formulas. See which fits your cutting workflow.",
+    type: "article",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["CutList vs Excel for Woodworking", "/compare/cutlist-vs-excel-for-woodworking/"]]
+  },
+  "compare/woodworking-calculator-vs-paper-plans/index.html": {
+    title: "Woodworking Calculator vs Paper Plans: Which Is Better?",
+    desc: "Woodworking calculator vs paper plans: accuracy, material estimates, revisions, and waste. See when a calculator beats hand-drawn paper plans for your project.",
+    type: "article",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["Woodworking Calculator vs Paper Plans", "/compare/woodworking-calculator-vs-paper-plans/"]]
+  },
+  "compare/stair-stringer-calculator-vs-manual-layout/index.html": {
+    title: "Stair Stringer Calculator vs Manual Layout: Which Is Better?",
+    desc: "Stair stringer calculator vs manual layout: accuracy, code checks, cut marks, and speed. See why a calculator beats stepping off a stringer by hand.",
+    type: "article",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["Stair Stringer Calculator vs Manual Layout", "/compare/stair-stringer-calculator-vs-manual-layout/"]]
+  },
+  "compare/board-foot-vs-linear-foot-calculator/index.html": {
+    title: "Board Foot vs Linear Foot Calculator: What's the Difference?",
+    desc: "Board foot vs linear foot calculator explained: how each measures lumber, when to use which, and how to avoid paying for the wrong quantity at the lumberyard.",
+    type: "article",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["Board Foot vs Linear Foot", "/compare/board-foot-vs-linear-foot-calculator/"]]
+  },
+  "compare/plywood-calculator-vs-cut-list-calculator/index.html": {
+    title: "Plywood Calculator vs Cut List Calculator: Which Do You Need?",
+    desc: "Plywood calculator vs cut list calculator: which to use for sheet goods vs boards, how they differ, and when to use each for an accurate cutting plan.",
+    type: "article",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["Plywood Calculator vs Cut List Calculator", "/compare/plywood-calculator-vs-cut-list-calculator/"]]
+  },
+  "compare/best-way-to-create-a-wood-cut-list/index.html": {
+    title: "Best Way to Create a Wood Cut List (Step by Step)",
+    desc: "The best way to create a wood cut list: list parts, set stock and kerf, lay out the cuts, check waste, and export. A simple, repeatable cut list workflow.",
+    type: "article",
+    bc: [["Home", "/"], ["Compare", "/compare/"], ["Best Way to Create a Wood Cut List", "/compare/best-way-to-create-a-wood-cut-list/"]]
+  },
   "guides/how-to-cut-plywood-efficiently/index.html": {
     title: "How to Cut Plywood Efficiently & Cut Waste 30%+",
     desc: "Learn how to cut plywood efficiently: a sheet layout method, kerf planning, grain checks, and cut sequence that can cut waste 30% or more on real jobs.",
