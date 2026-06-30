@@ -1,5 +1,6 @@
 const APP_STORE_URL = "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871";
 const QUILTFIT_APP_STORE_URL = "https://apps.apple.com/us/app/quiltfit-quilt-design-planner/id6776541705";
+const STRINGER_APP_STORE_URL = "https://apps.apple.com/us/app/stringer-stair-layout/id6784882437?uo=4";
 
 const LANGUAGE_OPTIONS = {
   en: "English",
@@ -3757,6 +3758,79 @@ const quiltFitCta = () => `
   </div>
 `;
 
+const stringerCta = () => `
+  <div class="cta-panel" id="download-stringer">
+    <h3>Take this stair layout to the job site with Stringer for iPhone</h3>
+    <p>Save stair projects offline, compare code-checked riser options, and export a printable stair cut sheet before you cut.</p>
+    <div class="cta-row">
+      <a class="button" href="${STRINGER_APP_STORE_URL}" rel="nofollow">Download Stringer</a>
+    </div>
+    <ul class="feature-list" aria-label="Stringer app features">
+      <li>Offline support</li>
+      <li>Code checks</li>
+      <li>PDF cut sheet</li>
+    </ul>
+  </div>
+`;
+
+function stairPreviewSvg({ risers, treads, totalRise, actualRun, riserHeight, treadDepth, stairAngle, stringerLength }) {
+  const width = 720;
+  const height = 360;
+  const left = 72;
+  const bottom = 286;
+  const stairWidth = 520;
+  const stairHeight = 210;
+  const stepW = stairWidth / Math.max(treads, 1);
+  const stepH = stairHeight / Math.max(risers, 1);
+  const topX = left + stepW * Math.max(treads, 1);
+  const topY = bottom - stepH * Math.max(risers, 1);
+  const path = [`M ${left} ${bottom}`];
+
+  for (let index = 0; index < risers; index += 1) {
+    const nextY = bottom - stepH * (index + 1);
+    path.push(`V ${nextY}`);
+    if (index < treads) {
+      const nextX = left + stepW * (index + 1);
+      path.push(`H ${nextX}`);
+    }
+  }
+
+  const markerIndex = Math.max(0, Math.min(treads - 1, Math.floor(treads * 0.45)));
+  const labelX = left + stepW * markerIndex;
+  const labelY = bottom - stepH * markerIndex;
+  const angleArc = `M ${left + 24} ${bottom} A 44 44 0 0 0 ${left + 24 + 44 * Math.cos(-stairAngle * Math.PI / 180)} ${bottom - 44 * Math.sin(stairAngle * Math.PI / 180)}`;
+
+  return `
+    <svg class="stair-preview-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="Visual stair elevation preview">
+      <defs>
+        <marker id="stair-arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#8e96a2"></path>
+        </marker>
+        <linearGradient id="stair-bg" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stop-color="#fbfcff"></stop>
+          <stop offset="1" stop-color="#f1f3f8"></stop>
+        </linearGradient>
+      </defs>
+      <rect class="stair-svg-bg" x="0" y="0" width="${width}" height="${height}" rx="18" fill="url(#stair-bg)"></rect>
+      <path class="stair-ground-line" d="M ${left - 12} ${bottom} H ${topX + 24}"></path>
+      <path class="stair-stringer-line" d="M ${left} ${bottom} L ${topX} ${topY}"></path>
+      <path class="stair-step-line" d="${path.join(" ")}"></path>
+      <path class="stair-angle-arc" d="${angleArc}"></path>
+      <line class="stair-dimension-line" x1="${left}" y1="${bottom + 46}" x2="${topX}" y2="${bottom + 46}" marker-start="url(#stair-arrow)" marker-end="url(#stair-arrow)"></line>
+      <line class="stair-dimension-line" x1="${topX + 44}" y1="${bottom}" x2="${topX + 44}" y2="${topY}" marker-start="url(#stair-arrow)" marker-end="url(#stair-arrow)"></line>
+      <line class="stair-dimension-line thin" x1="${labelX}" y1="${labelY}" x2="${labelX + stepW}" y2="${labelY}" marker-start="url(#stair-arrow)" marker-end="url(#stair-arrow)"></line>
+      <line class="stair-dimension-line thin" x1="${labelX + stepW}" y1="${labelY}" x2="${labelX + stepW}" y2="${labelY - stepH}" marker-start="url(#stair-arrow)" marker-end="url(#stair-arrow)"></line>
+      <text class="stair-svg-label" x="${left + 50}" y="${bottom - 34}">${format(stairAngle, 1)}°</text>
+      <text class="stair-svg-label" x="${labelX + stepW * 0.5}" y="${labelY - 10}">${format(treadDepth)} in</text>
+      <text class="stair-svg-label" x="${labelX + stepW + 12}" y="${labelY - stepH * 0.42}">${format(riserHeight)} in</text>
+      <text class="stair-svg-label" x="${left + stairWidth * 0.5}" y="${bottom + 72}">${format(actualRun)} in run</text>
+      <text class="stair-svg-label" x="${topX + 60}" y="${topY + stairHeight * 0.5}">${format(totalRise)} in rise</text>
+      <text class="stair-svg-caption" x="${left}" y="42">${risers} risers @ ${format(riserHeight)} in</text>
+      <text class="stair-svg-caption muted" x="${left}" y="66">${format(stringerLength)} in stringer before end cuts</text>
+    </svg>
+  `;
+}
+
 function getRows(container) {
   return [...container.querySelectorAll(".piece-row")].map((row) => {
     const data = {};
@@ -4306,6 +4380,8 @@ function initStairs() {
     const plumbAngle = 90 - stairAngle;
     const stringerLength = Math.sqrt(totalRise ** 2 + actualRun ** 2);
     const codeNote = riserHeight > 7.75 ? "Check local code: riser height is above 7.75 in." : "Riser height is within the common 7.75 in residential maximum.";
+    const meetsCommonRiser = riserHeight <= 7.75;
+    const preview = stairPreviewSvg({ risers, treads, totalRise, actualRun, riserHeight, treadDepth, stairAngle, stringerLength });
 
     result.innerHTML = `
       <h2>Stair stringer result</h2>
@@ -4315,6 +4391,30 @@ function initStairs() {
         <div class="metric"><strong>${format(riserHeight)} in</strong><span>Riser height</span></div>
         <div class="metric"><strong>${format(treadDepth)} in</strong><span>Tread depth</span></div>
       </div>
+      <div class="stair-result-card">
+        <div class="stair-result-header">
+          <div>
+            <span class="stair-preview-kicker">Visual elevation preview</span>
+            <h3>${risers} risers at ${format(riserHeight)} in</h3>
+            <p>See the stair shape, rise/run dimensions, angle, and key layout measurements before marking the stringer.</p>
+          </div>
+          <span class="stair-code-badge ${meetsCommonRiser ? "pass" : "warn"}">${meetsCommonRiser ? "Common riser check" : "Verify riser height"}</span>
+        </div>
+        <div class="stair-preview-tabs" aria-label="Stringer preview modes">
+          <span>Elevation</span>
+          <span>Stringer</span>
+          <span>Cut sheet</span>
+        </div>
+        <div class="stair-preview-frame">
+          ${preview}
+        </div>
+        <div class="stair-preview-stats" aria-label="Stair layout summary">
+          <div><span>Rise</span><strong>${format(totalRise)} in</strong></div>
+          <div><span>Run</span><strong>${format(actualRun)} in</strong></div>
+          <div><span>Pitch</span><strong>${format(stairAngle, 1)}°</strong></div>
+          <div><span>Stringer</span><strong>${format(stringerLength)} in</strong></div>
+        </div>
+      </div>
       <ul class="plan-list">
         <li><strong>${t("Stair angle")}</strong>: ${format(stairAngle)} ${t("degrees from level.")}</li>
         <li><strong>${t("Plumb cut angle")}</strong>: ${format(plumbAngle)} ${t("degrees from the stringer edge.")}</li>
@@ -4322,7 +4422,7 @@ function initStairs() {
         <li><strong>${t("Total run")}</strong>: ${format(actualRun)} ${t("in.")}</li>
       </ul>
       <p class="notice">${t(codeNote)} ${t("Always confirm local building requirements before cutting.")}</p>
-      ${appCta()}
+      ${stringerCta()}
     `;
     translateElement(result, getActiveLang());
   });

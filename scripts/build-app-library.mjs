@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { ogTags } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260623-seo-feed";
+const version = "20260630-stringer-result";
 const apps = JSON.parse(readFileSync(join(root, "data", "app-store-apps.json"), "utf8"));
 const appStoreReviews = JSON.parse(readFileSync(join(root, "data", "app-store-reviews.json"), "utf8"));
 
@@ -105,6 +105,8 @@ const detailRouteOverrides = {
   "quiltfit-quilt-design-planner": "/apps/quiltfit/",
   "stringer-stair-layout": "/apps/stringer/"
 };
+
+const generatedAliasSlugs = new Set(["stringer-stair-layout"]);
 
 const featuredApps = [
   ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
@@ -676,6 +678,12 @@ apps.forEach((app, index) => {
   const dir = join(root, "apps", app.slug);
   mkdirSync(dir, { recursive: true });
   writeFileSync(join(dir, "index.html"), appDetailPage(app, index));
+
+  if (generatedAliasSlugs.has(app.slug)) {
+    const aliasDir = join(root, detailHref(app));
+    mkdirSync(aliasDir, { recursive: true });
+    writeFileSync(join(aliasDir, "index.html"), appDetailPage(app, index));
+  }
 });
 
 updateHomePage();
