@@ -2,7 +2,7 @@
   "_meta": {
     "source": "Apple App Store public reviews page, with customer reviews RSS fallback, US storefront",
     "storefront": "us",
-    "fetchedAt": "2026-06-20",
+    "fetchedAt": "2026-06-30",
     "ratingFilter": 5,
     "maxPages": 3
   },
@@ -353,10 +353,38 @@
     "reviews": []
   },
   "marketvendor-sales-and-profit": {
-    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6780695627/sortby=mostrecent/json",
+    "sourceUrl": "https://apps.apple.com/us/app/marketvendor-sales-profit/id6780695627?see-all=reviews&platform=iphone",
     "appId": "6780695627",
-    "sourceType": "rss",
-    "reviews": []
+    "sourceType": "app-store-page",
+    "reviews": [
+      {
+        "id": "14204806841",
+        "author": "AlexInCity",
+        "rating": 5,
+        "version": "",
+        "title": "Exactly What I Needed for My daily Workflow",
+        "content": "I didn’t expect much at first,but this app turned out to be extremely useful.It’s fast,reliable,and helps me stay on top of my sales without thinking too much.Honest,it just works - and that’s rare.",
+        "updated": "2026-06-20T11:02:51.000Z"
+      },
+      {
+        "id": "14203651392",
+        "author": "Nicolas Tom",
+        "rating": 5,
+        "version": "",
+        "title": "Perfect for Small Business Owners",
+        "content": "Exactly what I was looking for.It helps me record sales in seconds and understand my business performance at a glance.No clutter,no confusion - just pure productivity.Love it!😁😁",
+        "updated": "2026-06-20T03:01:38.000Z"
+      },
+      {
+        "id": "14203370422",
+        "author": "Chris_O888",
+        "rating": 5,
+        "version": "",
+        "title": "Super Easy To Sales",
+        "content": "This app makes it incredibly simple to track my daily and profit.The interface is clean,fast and everything I need is right there.I can finally see my revenue trends without any hassle.Highly recommended!👍👍👍",
+        "updated": "2026-06-20T01:13:10.000Z"
+      }
+    ]
   },
   "snapcleaner-clean-photos": {
     "sourceUrl": "https://apps.apple.com/us/app/snapcleaner-clean-photos/id6751627505?see-all=reviews&platform=iphone",
@@ -516,6 +544,15 @@
         "title": "Simple and reliable printer app",
         "content": "I really like how easy this app makes printing from my phone.I use it to print PDFs ,receipts,forms,and photos without having to move everything to my laptop first.The layout is clean,the steps are clear,and it works well for everyday printing needs.👍👍👍",
         "updated": "2026-05-08T02:46:50.000Z"
+      },
+      {
+        "id": "14220236571",
+        "author": "Chris_O888",
+        "rating": 5,
+        "version": "",
+        "title": "Easy and reliable printer app",
+        "content": "This app makes it very easy to print PDFs,photos,web pages,and document from my iPhone.The layout is clean,the print settings are simple to adjust,and everything works smoothly.Great tool for daily use.",
+        "updated": "2026-06-24T11:28:31.000Z"
       }
     ]
   },
@@ -749,6 +786,15 @@
         "title": "Save Me Hours Every Week",
         "content": "I run a small service business and this app has completely simplified my invoicing workflow.Creating invoices and estimates takes seconds,and everything looks clean and professional.",
         "updated": "2026-04-29T13:24:04.000Z"
+      },
+      {
+        "id": "14220226489",
+        "author": "Chris_O888",
+        "rating": 5,
+        "version": "",
+        "title": "Very easy to use",
+        "content": "This app makes creating invoices and estimates fast and simple.The PDF export looks clean and professional,and it saves me a lot of time for my business.",
+        "updated": "2026-06-24T11:25:03.000Z"
       }
     ]
   },
@@ -892,5 +938,45 @@
         "updated": "2026-04-16T09:55:26.000Z"
       }
     ]
+  },
+  "tinnitus-relief-sound-masking": {
+    "sourceUrl": "https://apps.apple.com/us/app/tinnitus-relief-sound-masking/id6782496783?see-all=reviews&platform=iphone",
+    "appId": "6782496783",
+    "sourceType": "app-store-page",
+    "reviews": [
+      {
+        "id": "14230815421",
+        "author": "AlexInCity",
+        "rating": 5,
+        "version": "",
+        "title": "Simple and effective",
+        "content": "Really easy to use and the sound feels very natural.I turn it on when I work or sleep and it just helps me stay calm and focused.No ads,no setup,just works.",
+        "updated": "2026-06-27T01:16:57.000Z"
+      },
+      {
+        "id": "14228443752",
+        "author": "Chris_O888",
+        "rating": 5,
+        "version": "",
+        "title": "Really helpful app",
+        "content": "Good sound quality and easy to use.The noise making actually works for my tinnitus.No ads,which I really like.😃😃",
+        "updated": "2026-06-26T12:29:48.000Z"
+      },
+      {
+        "id": "14228435818",
+        "author": "Nicolas Tom",
+        "rating": 5,
+        "version": "",
+        "title": "Great for sleep",
+        "content": "Very calming sound.I use it every night and it helps me fall asleep faster.Simple and clean app.",
+        "updated": "2026-06-26T12:27:28.000Z"
+      }
+    ]
+  },
+  "stringer-stair-layout": {
+    "sourceUrl": "https://itunes.apple.com/us/rss/customerreviews/page=1/id=6784882437/sortby=mostrecent/json",
+    "appId": "6784882437",
+    "sourceType": "rss",
+    "reviews": []
   }
 }

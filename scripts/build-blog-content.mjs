@@ -2,6 +2,7 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
+import { blogBatch20260630 } from "./blog-batch-2026-06-30.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260626-seo-home";
@@ -8274,6 +8275,7 @@ const woodworkingSeoBatch2 = [
 ];
 
 articles.push(...woodworkingSeoBatch2);
+articles.push(...blogBatch20260630);
 
 const generatedBlogExpansionDefinitions = [
   {
@@ -9918,6 +9920,11 @@ const relatedAppDetails = {
     href: "/apps/atomic-clock-precision-time/",
     name: "Atomic Clock - Precision Time",
     description: "Open the Atomic Clock - Precision Time app detail page for NTP time sync, offset and latency readings, UTC and local time, clock styles, and private on-device use."
+  },
+  Stairs: {
+    href: "/apps/stringer/",
+    name: "Stringer: Stair Layout",
+    description: "Open the Stringer app detail page for riser and tread options, IRC/NCC/Doc K code checks, stringer layout, elevation preview, and a printable stair cut sheet."
   }
 };
 

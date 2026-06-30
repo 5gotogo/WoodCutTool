@@ -4,9 +4,9 @@
   <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.96</priority></url>
   <url><loc>https://woodcuttool.com/learn/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.93</priority></url>
   <url><loc>https://woodcuttool.com/apps/</loc><lastmod>2026-06-30</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
-  <url><loc>https://woodcuttool.com/apps/cutlist/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.95</priority>
+  <url><loc>https://woodcuttool.com/apps/cutlist/</loc><lastmod>2026-06-30</lastmod><changefreq>weekly</changefreq><priority>0.95</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/ed/18/6bed1827-5f51-462c-bae9-d906afade498/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/quiltfit/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority>
+  <url><loc>https://woodcuttool.com/apps/quiltfit/</loc><lastmod>2026-06-30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/2c/9e/cd2c9e70-8d88-fd86-aba3-0c4443f27fe9/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/pdfscanner/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://woodcuttool.com/apps/receipt/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
@@ -51,13 +51,13 @@
     <image:image><image:loc>https://upload.wikimedia.org/wikipedia/commons/4/43/NIST-F2_cesium_fountain_atomic_clock.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/privacy-policy/</loc><lastmod>2026-06-28</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://woodcuttool.com/terms-of-service/</loc><lastmod>2026-06-28</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://woodcuttool.com/apps/address-label-maker-and-envelope/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/address-label-maker-and-envelope/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/ea/8f/d4ea8f80-ace8-9054-3e0f-6f0479f90138/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/atomic-clock-precision-time/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/atomic-clock-precision-time/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/e6/c8/7e/e6c87e5d-e9fb-5958-8970-ae88bc0ea95a/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/blockfit-block-puzzle/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/c0/e8/b0c0e8a5-1019-5eb7-8eba-6fb289b081f9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/cadenza-metronome-and-tuner/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/cadenza-metronome-and-tuner/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/28/ce/cf/28cecf7a-8090-e403-55ec-dedf7c2f1d75/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/colorpop-color-block-tap-game/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/e4/a7/abe4a7a1-1db5-83c3-aa9a-1e5edcf438c8/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
@@ -128,61 +128,63 @@
   <url><loc>https://woodcuttool.com/apps/compare/speaker-tools-vs-test-tone-websites/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://woodcuttool.com/apps/compare/tinnitus-relief-vs-playing-music-or-tv/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://woodcuttool.com/apps/compare/tinnitus-relief-vs-silence/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://woodcuttool.com/apps/expensereportmaker-and-receipts/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/expensereportmaker-and-receipts/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/30/e7/4f30e7c0-0d24-7790-2bee-b022ee71e4c7/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/export-backup-all-contacts-pro/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/export-backup-all-contacts-pro/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/b9/aa/e1b9aa50-5738-608b-57ba-d41b4a28b3fb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/fast-rhythm-fasting-and-sleep/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/fast-rhythm-fasting-and-sleep/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/16/f7/6016f786-6e1d-945a-4d8f-24baf374efeb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/fridgetrack-fridge-inventory/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/fridgetrack-fridge-inventory/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/19/1d/e8/191de85a-11dd-762c-c509-3cb540ff1506/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/glowfeel-stress-ease/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/glowfeel-stress-ease/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b7/05/8b/b7058b70-b762-7e92-f5c4-0b0f5195e71c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/image-compressor-and-zip/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/image-compressor-and-zip/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/58/46/4b/58464b98-37f6-551c-d724-0b88321630c0/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/invoice-maker-estimate-pdf/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/invoice-maker-estimate-pdf/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/d8/89/abd88952-eecd-1f8b-1a82-7ab80c7313ff/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/magnifier-reader-big-text/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/magnifier-reader-big-text/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/07/1d/0e/071d0e1d-2aed-30d1-185b-a4f2928d5e04/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/marketvendor-sales-and-profit/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/marketvendor-sales-and-profit/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4b/36/35/4b363595-803b-140f-ffe9-45d12f1011cf/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/mindnest-secret-journal/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/mindnest-secret-journal/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/56/3d/18563da5-1b98-5867-0d12-14e6bb9a50a1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/pantry-label-maker-kitchen/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/pantry-label-maker-kitchen/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ac/cf/5a/accf5a1b-fbf9-1bb3-321e-9e9c874be606/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/pdf-scan-scanner-and-reader/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/pdf-scan-scanner-and-reader/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/3e/74/a0/3e74a0d2-a101-9938-525c-edf1b2cd2a4c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/photosafe-private-photo-vault/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/photosafe-private-photo-vault/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/50/7b/ca/507bca80-40fe-1ad2-f098-db291d425ea7/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/pickone-random-choice-picker/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/pickone-random-choice-picker/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c5/2b/a0/c52ba08b-97bd-d05b-d8b7-ed9dd028b71e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/printer-app-print-pdf-docs/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/printer-app-print-pdf-docs/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/84/6e/b6/846eb670-cdea-08ac-16f9-2b8f2a608c3c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/private-meeting-transcriber/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/private-meeting-transcriber/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/18/38/41/183841bd-b5e0-6621-2dfb-0b158ce0fa58/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/ritualix-habits-and-streaks/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/ritualix-habits-and-streaks/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7e/0c/66/7e0c6635-5d3a-b316-d0cc-2f7ebc8ee976/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/signaturemark-brand-mark/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/signaturemark-brand-mark/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b5/7d/94/b57d94ee-ca43-8cdd-be2b-3784bc7c0210/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/snapcleaner-clean-photos/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/snapcleaner-clean-photos/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/da/70/c2/da70c2f9-2817-3b4d-0bd8-241ce729e738/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/snaplabel-photo-text-label/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/snaplabel-photo-text-label/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/bb/ac/85/bbac85bd-9eb2-83ab-99a6-64834ee241e8/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/snapqr-qr-generator-app/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/snapqr-qr-generator-app/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/93/eb/dc93ebe2-040f-0e9f-96ac-c8a5b9521a83/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/snapreceipt-expenses-and-tax/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/snapreceipt-expenses-and-tax/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/8e/ee/7c/8eee7cb5-ffb5-e861-c277-da74fe5085ff/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/snapstock-inventory-scanner/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/snapstock-inventory-scanner/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d1/18/3a/d1183af2-4a51-3d13-1b2d-dc1dcc86fe73/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/speaker-tools-audio-test/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/speaker-tools-audio-test/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c2/de/a5/c2dea570-fc2b-91ca-00f6-1b10a01b240f/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/stringer/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
-  <url><loc>https://woodcuttool.com/apps/tinnitus-relief-sound-masking/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/stringer/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+    <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/23/00/c9230080-e5d6-1a99-3cc2-c00ca91e2061/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/apps/tinnitus-relief-sound-masking/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/26/85/2926852b-12c7-43bc-effd-7d49e72cae78/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/work-shift-schedule-calendar/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/work-shift-schedule-calendar/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8f/28/e4/8f28e42f-c02d-248b-b1b2-153b534b2406/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/16-8-fasting-timer-weekly-report/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/16/f7/6016f786-6e1d-945a-4d8f-24baf374efeb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/blog/2x10-vs-2x12-stair-stringer-throat-depth/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/6x2-shift-schedule-planner-calendar/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8f/28/e4/8f28e42f-c02d-248b-b1b2-153b534b2406/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/address-label-maker-envelope-printing-guide/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
@@ -196,13 +198,14 @@
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c2/de/a5/c2dea570-fc2b-91ca-00f6-1b10a01b240f/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/avery-label-template-iphone-printing/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/ea/8f/d4ea8f80-ace8-9054-3e0f-6f0479f90138/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/blog/avoiding-common-stringer-layout-errors/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/avoiding-common-stringer-layout-errors/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/baby-quilt-size-yardage-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/backing-binding-batting-planning/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/baltic-birch-vs-cabinet-grade-plywood/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/barcode-stock-count-app-low-stock-alerts/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d1/18/3a/d1183af2-4a51-3d13-1b2d-dc1dcc86fe73/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/basement-stair-remodel-measurements/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/basement-stair-rise-run-low-headroom/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/batch-photo-compression-zip-export/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/58/46/4b/58464b98-37f6-551c-d724-0b88321630c0/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/bathroom-floor-tile-centerline/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -212,10 +215,11 @@
   <url><loc>https://woodcuttool.com/blog/bedside-table-plywood-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/beginner-quilt-sampler-layout/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/best-glue-for-plywood-joints/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/best-metronome-app-daily-practice-cadenza/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
+  <url><loc>https://woodcuttool.com/blog/best-metronome-app-daily-practice-cadenza/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://upload.wikimedia.org/wikipedia/commons/8/80/Korg_TM-40_metronome.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/blog/best-pdf-scanner-app-iphone-private-documents/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
+  <url><loc>https://woodcuttool.com/blog/best-pdf-scanner-app-iphone-private-documents/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://upload.wikimedia.org/wikipedia/commons/e/e3/Scanner.view.750pix.jpg</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/blog/best-pdf-scanner-settings-for-clear-documents/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/best-plywood-cutting-workflow-2026/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/best-precision-clock-app-iphone-styles-compared/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/best-speaker-test-app-iphone-frequency-generator/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
@@ -226,6 +230,7 @@
   <url><loc>https://woodcuttool.com/blog/business-travel-expense-report-app/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/30/e7/4f30e7c0-0d24-7790-2bee-b022ee71e4c7/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/cabinet-carcass-construction-basics/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cabinet-carcass-cut-list-32mm-system/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/cabinet-cut-list-mistakes/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/cabinet-door-panel-layout-grain/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/cabinet-door-styles-explained/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -247,7 +252,7 @@
   <url><loc>https://woodcuttool.com/blog/closet-shoe-cubby-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/closet-valet-rod-shelf-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/color-and-repeat-planning-for-modern-quilts/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/comfortable-stair-layout-rules/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/comfortable-stair-layout-rules/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/common-plywood-cutting-mistakes/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/common-wood-species-and-uses/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/concrete-step-overlay-measurements/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -288,15 +293,18 @@
   <url><loc>https://woodcuttool.com/blog/cutlist-vs-spreadsheets-for-cabinetmakers/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/cutlist-workshop-storage-cabinet/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/cutting-jigs-for-accurate-sheet-goods/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/cutting-large-sheets-without-a-table-saw/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/dado-joints-for-shelving-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/decision-history-insights-private-choice-tracker/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c5/2b/a0/c52ba08b-97bd-d05b-d8b7-ed9dd028b71e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/deck-stair-code-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/deck-stair-footing-layout/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/deck-stair-stringer-field-measurements/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/deck-stairs-building-and-stringer-layout/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/deck-stair-stringer-attachment-to-rim-joist/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/deck-stair-stringer-field-measurements/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/deck-stairs-building-and-stringer-layout/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/diagonal-tile-layout-waste/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/diy-floating-shelves-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/diy-floating-shelves-plywood-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/diy-project-difficulty-and-time/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/drawer-box-joinery-compared/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/drawer-box-plywood-cut-list/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -304,6 +312,7 @@
   <url><loc>https://woodcuttool.com/blog/drawer-slides-types-and-sizing/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/drill-press-stand-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/drilling-pilot-holes-and-countersinks/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/edge-banding-plywood-cut-list-allowance/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/edge-banding-plywood-edges-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/edge-banding-plywood-guide/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/encrypted-video-photo-vault-local-storage/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
@@ -322,6 +331,7 @@
   <url><loc>https://woodcuttool.com/blog/exterior-stair-handrail-layout/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/exterior-stair-landing-drainage/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/fabric-yardage-estimates-with-block-layouts/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/fabric-yardage-for-a-quilt-without-overbuying/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/face-frame-vs-frameless-cabinets/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/face-frame-vs-frameless-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/fake-pin-disguised-icon-intruder-alert-photo-vault/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
@@ -332,6 +342,7 @@
   <url><loc>https://woodcuttool.com/blog/finishing-plywood-for-a-smooth-result/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/fireplace-built-in-cabinet-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/fireplace-tile-layout-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/first-cut-rip-vs-crosscut-sheet-breakdown/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/floating-desk-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/floor-tile-vs-wall-tile-planning/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/fold-down-workbench-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -353,10 +364,11 @@
   <url><loc>https://woodcuttool.com/blog/garage-storage-wall-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/garden-tool-rack-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/grain-matching-cabinet-doors-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/grain-matching-plywood-cabinet-doors/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/grounding-exercises-app-daily-calm/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b7/05/8b/b7058b70-b762-7e92-f5c4-0b0f5195e71c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/grout-joint-layout-and-visual-balance/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/guitar-tuner-app-cents-a4-reference-cadenza/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
+  <url><loc>https://woodcuttool.com/blog/guitar-tuner-app-cents-a4-reference-cadenza/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://upload.wikimedia.org/wikipedia/commons/5/54/Telecaster_Thinline_type_guitar_with_pedalboard_%28SecretPreamp%2CMXR10BandEQ%2CSupa-Trem%2CPOG2%2CSP_Comp%2CTuner%2CBigSky%2CSeaMachine%2CGigaDelay%2CTimmyOverdrive%2CBroadcast%2CVolumPedal%29_-_The_Smith_Center%2C_Las_Vegas_%282017-04-29_10.28.27_piqsels.com_en%29.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/habit-tracker-app-streaks-without-stress/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7e/0c/66/7e0c6635-5d3a-b316-d0cc-2f7ebc8ee976/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
@@ -372,19 +384,26 @@
   <url><loc>https://woodcuttool.com/blog/home-gym-storage-cabinet-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/home-office-built-in-desk-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-many-plywood-sheets-for-cabinets/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/how-many-stair-stringers-do-i-need/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-much-does-a-sheet-of-plywood-weigh/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-thick-plywood-for-shelves/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-avoid-tearout-cutting-plywood/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-batch-cut-repeated-parts/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/how-to-build-stairs-for-a-shed-or-porch/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-calculate-sheets-for-a-project/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-cut-down-plywood-without-a-table-saw/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/how-to-cut-stair-stringers-with-a-framing-square/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/how-to-estimate-stair-lumber-cost/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-finish-plywood-edges/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-hide-plywood-edges/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/how-to-measure-total-rise-for-stairs/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-optimize-material-layout/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-plan-a-plywood-project/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/how-to-prevent-tearout-cutting-plywood/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-read-plywood-dimensions/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-rip-narrow-strips-safely/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/how-to-square-a-cabinet-box/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/how-to-square-a-plywood-cabinet-box/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/image-compressor-app-iphone-storage/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/58/46/4b/58464b98-37f6-551c-d724-0b88321630c0/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/inventory-scanner-app-small-business/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
@@ -396,6 +415,7 @@
   <url><loc>https://woodcuttool.com/blog/journal-prompts-mood-search-private-notes/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/18/56/3d/18563da5-1b98-5867-0d12-14e6bb9a50a1/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/kerf-allowance-error-research/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/kerf-spacing-multiple-sheets-batch-cutting/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/kids-art-desk-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/kids-bookshelf-plywood-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/king-size-quilt-yardage-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -404,6 +424,7 @@
   <url><loc>https://woodcuttool.com/blog/kitchen-cabinet-plywood-sheet-count/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/kitchen-floor-tile-layout-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/kitchen-island-plywood-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/label-storage-bins-from-a-photo-snaplabel/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/large-format-tile-cut-planning/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/large-room-tile-grid-squareness/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/laundry-folding-counter-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -430,10 +451,11 @@
   <url><loc>https://woodcuttool.com/blog/melamine-cutting-layout-chipout/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/melamine-vs-laminate-for-cabinets/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/melamine-vs-plywood-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/melamine-vs-plywood-for-shop-cabinets/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/memory-quilt-photo-map/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/merge-duplicate-contacts-private-backup/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/b9/aa/e1b9aa50-5738-608b-57ba-d41b4a28b3fb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/blog/mileage-log-for-tax-deductions/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/mileage-log-for-tax-deductions/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/miter-saw-station-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/mobile-lumber-rack-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/modular-cube-storage-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -441,15 +463,16 @@
   <url><loc>https://woodcuttool.com/blog/mudroom-tile-layout-durable-entry/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/mudroom-wall-hooks-shelf-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/murphy-bed-plywood-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/music-practice-tracker-setlist-metronome-tuner-cadenza/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
+  <url><loc>https://woodcuttool.com/blog/music-practice-tracker-setlist-metronome-tuner-cadenza/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://upload.wikimedia.org/wikipedia/commons/9/95/Practice_Keyboard_MET_206990.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/no-login-shift-calendar-privacy/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8f/28/e4/8f28e42f-c02d-248b-b1b2-153b534b2406/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/nominal-vs-actual-lumber-sizes/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/ntp-time-sync-vs-phone-clock-why-it-drifts/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://upload.wikimedia.org/wikipedia/commons/4/43/NIST-F2_cesium_fountain_atomic_clock.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/blog/ocr-pdf-scanner-searchable-documents-guide/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
+  <url><loc>https://woodcuttool.com/blog/ocr-pdf-scanner-searchable-documents-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Test_OCR_document.jpg/1280px-Test_OCR_document.jpg</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/blog/ocr-receipts-searchable-expense-records/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/offcut-inventory-roi-research/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/office-printer-cabinet-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/offline-app-privacy-workflow-research/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -460,17 +483,19 @@
   <url><loc>https://woodcuttool.com/blog/one-sheet-plywood-project-planner/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/open-riser-stair-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/optimize-4x8-plywood-cuts-for-built-ins/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/organize-pdf-scans-multi-page-documents/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/outdoor-patio-tile-drainage/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/outdoor-storage-box-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/paid-status-invoice-tracking-private-billing/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/d8/89/abd88952-eecd-1f8b-1a82-7ab80c7313ff/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/pantry-cabinet-plywood-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/pantry-label-maker-expiry-date-labels/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
+  <url><loc>https://woodcuttool.com/blog/pantry-label-maker-expiry-date-labels/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ac/cf/5a/accf5a1b-fbf9-1bb3-321e-9e9c874be606/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/blog/pantry-label-maker-kitchen-labels-guide/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
+  <url><loc>https://woodcuttool.com/blog/pantry-label-maker-kitchen-labels-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ac/cf/5a/accf5a1b-fbf9-1bb3-321e-9e9c874be606/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/blog/pantry-label-maker-no-login-private-labels/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
+  <url><loc>https://woodcuttool.com/blog/pantry-label-maker-no-login-private-labels/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ac/cf/5a/accf5a1b-fbf9-1bb3-321e-9e9c874be606/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/blog/pantry-labels-system-for-an-organized-kitchen/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/pantry-pull-out-shelf-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/pet-feeding-station-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/photo-quality-comparison-psnr-ssim-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
@@ -483,10 +508,12 @@
   <url><loc>https://woodcuttool.com/blog/plywood-cabinet-door-sizing/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-cabinet-shop-workflow/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-cost-breakdown-by-project/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/plywood-cut-list-for-a-platform-bed/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-cut-list-for-client-quotes/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-cut-list-optimizer-for-cabinets/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-cutting-calculator-cost-savings/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-desk-build-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/plywood-grades-explained-for-cabinets/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-grades-explained-for-woodworkers/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-grades-for-cabinets-explained/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-headboard-storage-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -498,14 +525,18 @@
   <url><loc>https://woodcuttool.com/blog/plywood-paint-grade-vs-stain-grade/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-planter-bench-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-platform-bed-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/plywood-project-cost-estimation-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-room-divider-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/plywood-sheet-weight-and-safe-handling/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-shelf-cut-list-calculator/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-shelf-span-and-sag-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-storage-and-flattening-tips/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-storage-and-keeping-sheets-flat/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/plywood-thickness-actual-vs-nominal/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-thickness-chart-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-thickness-guide-for-projects/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-toy-box-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/plywood-vs-solid-wood-for-shelves/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-waste-calculator-vs-optimizer/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-waste-cost-benchmark-manual-vs-optimizer/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/plywood-workbench-build-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -513,12 +544,13 @@
   <url><loc>https://woodcuttool.com/blog/pomodoro-habit-planner-focus-sessions/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7e/0c/66/7e0c6635-5d3a-b316-d0cc-2f7ebc8ee976/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/porch-step-replacement-measurements/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/practice-tempo-ramping-build-speed-cadenza/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/print-pdf-documents-iphone-airprint-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/84/6e/b6/846eb670-cdea-08ac-16f9-2b8f2a608c3c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/print-photos-web-pages-iphone-layouts/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/84/6e/b6/846eb670-cdea-08ac-16f9-2b8f2a608c3c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/private-clock-app-no-account-no-tracking/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/private-expense-tracking-without-an-account/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/private-expense-tracking-without-an-account/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/private-fasting-sleep-tracker-no-login/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/16/f7/6016f786-6e1d-945a-4d8f-24baf374efeb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/private-interview-transcription-app/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -533,9 +565,11 @@
   <url><loc>https://woodcuttool.com/blog/private-photo-vault-iphone-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/50/7b/ca/507bca80-40fe-1ad2-f098-db291d425ea7/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/priviscribe-speaker-labeling-meeting-notes/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/professional-invoice-vs-handwritten-receipt/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/protect-creator-photos-private-watermarking/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b5/7d/94/b57d94ee-ca43-8cdd-be2b-3784bc7c0210/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/queen-size-quilt-yardage-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/quilt-backing-binding-batting-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/quilt-backing-from-leftovers/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/quilt-backing-piecing-layout/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/quilt-backing-wideback-vs-pieced/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -570,10 +604,11 @@
   <url><loc>https://woodcuttool.com/blog/random-choice-picker-app-daily-decisions/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c5/2b/a0/c52ba08b-97bd-d05b-d8b7-ed9dd028b71e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/reading-a-cut-diagram-at-the-saw/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/reading-a-cut-list-diagram-for-beginners/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/receipt-mileage-recordkeeping-research/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/receipt-report-pdf-csv-private-records/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/30/e7/4f30e7c0-0d24-7790-2bee-b022ee71e4c7/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/blog/receipt-tracking-for-contractors-and-makers/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/receipt-tracking-for-contractors-and-makers/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/record-storage-cabinet-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/reducing-cost-on-a-plywood-project/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/reducing-sheet-good-waste-on-small-shops/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -588,7 +623,8 @@
   <url><loc>https://woodcuttool.com/blog/saw-blade-selection-for-clean-plywood-cuts/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/saw-kerf-waste-by-cut-count/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/sawblade-tooth-count-for-plywood/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/scan-to-pdf-workflow-receipts-invoices-signatures-lock/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
+  <url><loc>https://woodcuttool.com/blog/scan-receipts-for-tax-time-all-year/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/scan-to-pdf-workflow-receipts-invoices-signatures-lock/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Scanner-test.pdf/page1-960px-Scanner-test.pdf.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/scan-to-print-app-iphone-paperwork/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/84/6e/b6/846eb670-cdea-08ac-16f9-2b8f2a608c3c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
@@ -610,36 +646,45 @@
   <url><loc>https://woodcuttool.com/blog/shop-layout-and-workflow-design/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/shower-curb-tile-layout/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/shower-floor-mosaic-drain-layout/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/small-shop-plywood-storage-and-offcuts/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/snaplabel-ai-photo-label-maker-guide/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/snaplabel-batch-labels-for-inventory/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/snaplabel-home-organization-labels/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/snaplabel-printable-label-workflow/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/snaplabel-small-business-product-labels/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/snapqr-private-qr-code-scanner-history/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
+  <url><loc>https://woodcuttool.com/blog/snapqr-private-qr-code-scanner-history/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/93/eb/dc93ebe2-040f-0e9f-96ac-c8a5b9521a83/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/blog/snapqr-qr-generator-app-guide/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
+  <url><loc>https://woodcuttool.com/blog/snapqr-qr-generator-app-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/93/eb/dc93ebe2-040f-0e9f-96ac-c8a5b9521a83/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/blog/snapqr-wifi-qr-code-generator/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
+  <url><loc>https://woodcuttool.com/blog/snapqr-wifi-qr-code-generator/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/dc/93/eb/dc93ebe2-040f-0e9f-96ac-c8a5b9521a83/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/blog/spiral-vs-straight-stairs-space-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/split-level-stair-measurement-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/spray-vs-brush-finishing-compared/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-baluster-spacing-layout/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/stair-code-basics-rise-run-headroom/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/stair-comfort-dimensions-by-the-numbers/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-calculator-metric-mm-rise-run/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-calculator-with-landing-multiple-flights/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-code-basics-rise-run-headroom/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-comfort-dimensions-by-the-numbers/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-headroom-clearance-requirements/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-headroom-measurement-guide/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-landing-handrail-return/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-landing-layout-measurements/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-lighting-placement-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-nosing-layout-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/stair-opening-planning-for-remodels/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-nosing-overhang-explained/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-opening-planning-for-remodels/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-railing-post-layout/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-remodel-measurement-risk-research/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-renovation-budget-materials/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-riser-height-calculator-check/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-run-calculator-remodel/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-skirt-board-measurement/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/stair-stringer-design-rise-run-basics/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
-  <url><loc>https://woodcuttool.com/blog/stair-stringer-material-and-thickness/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-stringer-calculator-app-for-contractors/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-stringer-calculator-vs-online-stair-charts/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-stringer-design-rise-run-basics/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-stringer-material-and-thickness/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/stair-stringer-spacing-for-composite-decking/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-stringer-template-transfer/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stair-tread-depth-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/stereo-channel-test-left-right-speakers/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
@@ -660,6 +705,7 @@
   <url><loc>https://woodcuttool.com/blog/tile-layout-for-small-bathrooms/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tile-layout-photo-documentation/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tile-layout-planning-before-install/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/tile-layout-starting-point-avoid-thin-slivers/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tile-layout-waste-pattern-research/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tile-niche-layout-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tile-pattern-planning-and-waste/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -668,12 +714,14 @@
   <url><loc>https://woodcuttool.com/blog/tile-shower-valve-cut-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tile-transition-threshold-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tile-underlayment-and-subfloor-prep/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/tile-waste-allowance-by-pattern/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tile-waste-estimation-by-pattern/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tinnitus-relief-app-sound-masking-night-guide/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tool-maintenance-schedule-for-woodworkers/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/track-saw-plywood-cut-plan/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/track-saw-vs-table-saw-for-plywood/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/tshirt-quilt-stabilizer-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/tuning-to-different-a4-references-cadenza/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/under-stair-storage-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/uneven-stair-troubleshooting/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/utc-vs-local-time-app-for-remote-coordination/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
@@ -689,8 +737,11 @@
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c5/2b/a0/c52ba08b-97bd-d05b-d8b7-ed9dd028b71e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/when-to-use-plywood-vs-osb/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/white-noise-tinnitus-sleep-sound-app/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/white-noise-vs-pink-noise-for-sleep-tinnitus/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/why-tinnitus-feels-louder-at-night-sleep-masking/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/wifi-qr-code-for-guests-and-businesses/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/winder-stair-layout-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
+  <url><loc>https://woodcuttool.com/blog/winder-stairs-vs-landing-turn-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/window-seat-bench-cut-list/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
   <url><loc>https://woodcuttool.com/blog/wood-cutting-calculator-guide/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://woodcuttool.com/blog/wood-finish-types-compared/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>

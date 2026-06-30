@@ -102,7 +102,8 @@ const appBySlug = new Map(apps.map((app) => [app.slug, app]));
 
 const detailRouteOverrides = {
   "cutlist-plywood-optimizer": "/apps/cutlist/",
-  "quiltfit-quilt-design-planner": "/apps/quiltfit/"
+  "quiltfit-quilt-design-planner": "/apps/quiltfit/",
+  "stringer-stair-layout": "/apps/stringer/"
 };
 
 const featuredApps = [
@@ -119,7 +120,7 @@ const categorySections = [
     id: "maker-calculator-apps",
     title: "Maker & Calculator Apps",
     description: "Practical iPhone tools for people who plan, measure, cut, design, or build physical projects. These apps focus on plywood optimization, quilt planning, tile estimation, stair stringer calculation, and other maker workflows.",
-    slugs: ["cutlist-plywood-optimizer", "quiltfit-quilt-design-planner"],
+    slugs: ["cutlist-plywood-optimizer", "quiltfit-quilt-design-planner", "stringer-stair-layout"],
     relatedTools: [
       {
         name: "Tile",
@@ -127,13 +128,6 @@ const categorySections = [
         description: "Tile layout and material planning calculator for floor and wall projects.",
         href: "/tile-calculator/",
         tags: ["Tile layout", "Materials", "Planning"]
-      },
-      {
-        name: "Stringer",
-        label: "Calculator",
-        description: "Stair stringer calculator for rise, run, total height, and layout checks.",
-        href: "/stringer/",
-        tags: ["Stairs", "Rise and run", "Layout"]
       }
     ]
   },
@@ -191,6 +185,7 @@ const appTags = {
   "private-meeting-transcriber": ["Transcribe", "Meetings", "Private", "Notes"],
   "pickone-random-choice-picker": ["Choices", "Random", "Decisions", "Quick"],
   "atomic-clock-precision-time": ["Clock", "NTP", "Precision", "Time"],
+  "stringer-stair-layout": ["Stairs", "Stringer", "Riser & tread", "Cut sheet"],
   "printer-app-print-pdf-docs": ["Print", "PDF", "Docs", "AirPrint"],
   "fridgetrack-fridge-inventory": ["Fridge", "Inventory", "Food", "Home"],
   "pantry-label-maker-kitchen": ["Pantry", "Labels", "Kitchen", "Print"],
