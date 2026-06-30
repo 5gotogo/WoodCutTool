@@ -12,8 +12,8 @@
     "hash": "42ff708a858410fc5f9459a9cf4f7a31799aff70945ba5d26c4aa5604e67234c"
   },
   "/apps/": {
-    "lastmod": "2026-06-28",
-    "hash": "3cdc7dcaeafe7cccc260c80931b5a6d6eceff9ebb664946f063355527f94ecf5"
+    "lastmod": "2026-06-30",
+    "hash": "20b3bcd87eabd805ba83a9f2097a42ee3d7f796666ec0ab9a8a0693931ba369d"
   },
   "/apps/cutlist/": {
     "lastmod": "2026-06-28",
@@ -98,6 +98,274 @@
   "/apps/colorpop-color-block-tap-game/": {
     "lastmod": "2026-06-28",
     "hash": "56771a167057b7e5c91bda8289bf88f614f822f8be362b410e5d5f5471598ff3"
+  },
+  "/apps/compare/": {
+    "lastmod": "2026-06-30",
+    "hash": "1ccf2ee8ee156a92cca43cb057fae550e7f976a3caa71f0e2ff0c557c34c34c6"
+  },
+  "/apps/compare/address-label-maker-vs-handwriting-envelopes/": {
+    "lastmod": "2026-06-30",
+    "hash": "b7c47e987e2af1b0d14a2162db196d1d1b2414049a00fb77f804278ae1f2d687"
+  },
+  "/apps/compare/address-label-maker-vs-word-mail-merge/": {
+    "lastmod": "2026-06-30",
+    "hash": "338ccbe45a0817b8f6c114c0ccfdc231d7908fd87e24e71b14aa4a4fcee97f33"
+  },
+  "/apps/compare/atomic-clock-vs-online-time-websites/": {
+    "lastmod": "2026-06-30",
+    "hash": "9360b2ead87e8fe0ac9d428f6e1bae40921676773f244c3939ff947d2b78ee4a"
+  },
+  "/apps/compare/atomic-clock-vs-phone-clock/": {
+    "lastmod": "2026-06-30",
+    "hash": "a26af660e3fba2040195a7ce30372927845992c7fd52dcc6748d2933efaac91d"
+  },
+  "/apps/compare/blockfit-vs-ad-heavy-puzzle-games/": {
+    "lastmod": "2026-06-30",
+    "hash": "38759e33700e46681df141ac6f3a375fb4ca81d35e210493a683269a94f65da0"
+  },
+  "/apps/compare/blockfit-vs-scrolling-for-a-mental-break/": {
+    "lastmod": "2026-06-30",
+    "hash": "bf5357ba2f269a951f927781135f3a2ddb6b48008ca927d5044c47b544874842"
+  },
+  "/apps/compare/cadenza-vs-mechanical-metronome/": {
+    "lastmod": "2026-06-30",
+    "hash": "5eef9c6b6a2f7bb554aaf91bf36f841948ef8ed265de79691b13c89bab5925ba"
+  },
+  "/apps/compare/cadenza-vs-separate-metronome-and-tuner-apps/": {
+    "lastmod": "2026-06-30",
+    "hash": "292c38c47d13e7f7996a71f1ba157f7d82772ab9cece7177671cf7b7f87fbceb"
+  },
+  "/apps/compare/colorpop-vs-complex-mobile-games/": {
+    "lastmod": "2026-06-30",
+    "hash": "d1000adc80400e6c9a18c42c20ae9c163afe9cea964d15b7aa7a8197fcfb562b"
+  },
+  "/apps/compare/colorpop-vs-endless-scrolling/": {
+    "lastmod": "2026-06-30",
+    "hash": "0bb990aa6739cb46c276c5e9e7051e58b7cf4febe210d247805d373d20342142"
+  },
+  "/apps/compare/contacts-backup-vs-icloud-only/": {
+    "lastmod": "2026-06-30",
+    "hash": "f3d26d7da14b8da4bd69ffacdf3bea99420a06e618cdd06efca32523ef463871"
+  },
+  "/apps/compare/contacts-backup-vs-no-backup/": {
+    "lastmod": "2026-06-30",
+    "hash": "59d412a86fca27f3e63805174a0e5c07124a3b0b888e6d7eb0e9c478261d3c2c"
+  },
+  "/apps/compare/cutlist-vs-cut-optimizer-websites/": {
+    "lastmod": "2026-06-30",
+    "hash": "cfe75f89985a9bbac0bbd49586aa593e9f7424adaf9bb7d1c92ca2292d234173"
+  },
+  "/apps/compare/cutlist-vs-sketchup-for-cut-lists/": {
+    "lastmod": "2026-06-30",
+    "hash": "6f30e402f3d74a71f18aa68d8c83122feb87d12b2aa6c739f7d55896cf8a30f6"
+  },
+  "/apps/compare/expense-report-maker-vs-building-reports-in-excel/": {
+    "lastmod": "2026-06-30",
+    "hash": "7eae815f5c3769139336231242cccbe63985e679e87d634778efcc18b243410f"
+  },
+  "/apps/compare/expense-report-maker-vs-snapreceipt/": {
+    "lastmod": "2026-06-30",
+    "hash": "1c44a4195177dcc578a724868773baf666429d8017bd5b43c31b3d4fa713513b"
+  },
+  "/apps/compare/fast-rhythm-vs-generic-timer-app/": {
+    "lastmod": "2026-06-30",
+    "hash": "4ef2d2d5a0c1fd9394c122b661557031351432198ab3b0efe18fdf1a3521985a"
+  },
+  "/apps/compare/fast-rhythm-vs-tracking-fasting-in-your-head/": {
+    "lastmod": "2026-06-30",
+    "hash": "8984b4dc4f80c09e3659456a2e9cbe747c6d376c4b3fa2e446c2583361430b18"
+  },
+  "/apps/compare/fridgetrack-vs-guessing-whats-in-the-fridge/": {
+    "lastmod": "2026-06-30",
+    "hash": "ca49dba6404bab3f23b90ce997a67c36a001ca16cd19701d1b970d06d892f27a"
+  },
+  "/apps/compare/fridgetrack-vs-sticky-notes-on-the-fridge/": {
+    "lastmod": "2026-06-30",
+    "hash": "5b0f761127e06aff5389283a18984b14342c59f242b7a562a54bc02dc38f7b6b"
+  },
+  "/apps/compare/glowfeel-vs-doing-nothing-about-stress/": {
+    "lastmod": "2026-06-30",
+    "hash": "4dbb25722062cd63f200c0c591b3045e1b27c7ad713c3d9a3e4a1291c844e500"
+  },
+  "/apps/compare/glowfeel-vs-generic-meditation-apps/": {
+    "lastmod": "2026-06-30",
+    "hash": "a8b9af2e11b4685e6831182f06e385c2c63e845520456f5b4f48c77090efb13d"
+  },
+  "/apps/compare/image-compressor-vs-online-compression-sites/": {
+    "lastmod": "2026-06-30",
+    "hash": "e12d6f8a72176447fd689122b6d38237a46c857889f21ed2eb6a42fb5f717bd7"
+  },
+  "/apps/compare/image-compressor-vs-sending-full-size-photos/": {
+    "lastmod": "2026-06-30",
+    "hash": "1544a02e679cffc9c58a60c2c8cbaba7295a6592426f47d2fe2696985498d5ec"
+  },
+  "/apps/compare/invoice-maker-vs-online-invoicing-services/": {
+    "lastmod": "2026-06-30",
+    "hash": "e06c36c26ebc19eeba3186a2da6d79e2052bc9f88c808df81bb4d563655331f0"
+  },
+  "/apps/compare/invoice-maker-vs-word-or-excel-invoices/": {
+    "lastmod": "2026-06-30",
+    "hash": "46fb8959595159c9b5fe84adc054ba0c99d0c0a5b59fb4643329ee25ba9c01ca"
+  },
+  "/apps/compare/magnifier-reader-vs-carrying-a-magnifying-glass/": {
+    "lastmod": "2026-06-30",
+    "hash": "950152114f4cfc4aa90d01059d7c126b00f8a57a498786f860b0ccfe0d14fea0"
+  },
+  "/apps/compare/magnifier-reader-vs-squinting-at-small-print/": {
+    "lastmod": "2026-06-30",
+    "hash": "1c757a5e089298b6284e0c15793140be2e690338217b0e0ab61cefbd878b5c79"
+  },
+  "/apps/compare/marketvendor-vs-cash-box-and-notebook/": {
+    "lastmod": "2026-06-30",
+    "hash": "e37fad3320bada1111d06ff219726323b6349ad7b0c0b3ed509dbb0317325bba"
+  },
+  "/apps/compare/marketvendor-vs-pos-system/": {
+    "lastmod": "2026-06-30",
+    "hash": "ec3aaa2b8d4e629cd541fa0e8769fdb241b8c9c29c88f7be47cff0756a227291"
+  },
+  "/apps/compare/mindnest-vs-notes-app-journaling/": {
+    "lastmod": "2026-06-30",
+    "hash": "d1944f0619ade15606a7452c447e0e5382991cd8a3bc1e95671a2f18114b042b"
+  },
+  "/apps/compare/mindnest-vs-paper-diary/": {
+    "lastmod": "2026-06-30",
+    "hash": "1cf6b84d1997c4c816dcf41509161be3bbf5b026fd9287eef178f9fdc0da7bd0"
+  },
+  "/apps/compare/pantry-label-maker-vs-masking-tape-and-marker/": {
+    "lastmod": "2026-06-30",
+    "hash": "987e8a40b17e83ca163569ce20cf802151cee537540855cb177ba11b220faaca"
+  },
+  "/apps/compare/pantry-label-maker-vs-store-bought-labels/": {
+    "lastmod": "2026-06-30",
+    "hash": "4f0f15c8cf198ebe7a9e67257b6df8ee41a467077f07b6557681dea74039cd2c"
+  },
+  "/apps/compare/pdf-scan-vs-office-scanner/": {
+    "lastmod": "2026-06-30",
+    "hash": "dc115fa07f1344f765504ba7203f266767aa4ad4d80cd4f270dbbb413e59d1e3"
+  },
+  "/apps/compare/pdf-scan-vs-photographing-documents/": {
+    "lastmod": "2026-06-30",
+    "hash": "04ab7188fe6d36072b66d0e19fc70290ed3e32fa9352a31e37d2adb5ae528c91"
+  },
+  "/apps/compare/photosafe-vs-hidden-album/": {
+    "lastmod": "2026-06-30",
+    "hash": "490924724ebfb7a48671915e409ffeb43d6a62ecd61279acaa6550fbef82a373"
+  },
+  "/apps/compare/photosafe-vs-leaving-photos-in-camera-roll/": {
+    "lastmod": "2026-06-30",
+    "hash": "92154952abc405b089af593009a73af97fddcd913e2914da205d47d43f964207"
+  },
+  "/apps/compare/pickone-vs-arguing-over-decisions/": {
+    "lastmod": "2026-06-30",
+    "hash": "c95e461163e91a30fc5dc3f2ee9c741d24aece564ff9265afbf52dd10430ebc2"
+  },
+  "/apps/compare/pickone-vs-flipping-a-coin/": {
+    "lastmod": "2026-06-30",
+    "hash": "694e645b30b952be0f5125f6fd1109f783906783eef2c0de109f0d335e5c1dec"
+  },
+  "/apps/compare/printer-app-vs-emailing-files-to-print/": {
+    "lastmod": "2026-06-30",
+    "hash": "306843465be30707c2e2252883ca86c714a2159c7a0a98cfc53863aad83d2580"
+  },
+  "/apps/compare/printer-app-vs-manufacturer-printer-apps/": {
+    "lastmod": "2026-06-30",
+    "hash": "cd3a01b4edf1af9ccb2c53cf6486f2329c5efdaacb536c7484e3f11d9e04b4a2"
+  },
+  "/apps/compare/private-transcriber-vs-cloud-transcription/": {
+    "lastmod": "2026-06-30",
+    "hash": "49064b5c6b9bf2486e440ef01a242ac9303594651eb3af6b3c59dc2018a1095b"
+  },
+  "/apps/compare/private-transcriber-vs-taking-notes-by-hand/": {
+    "lastmod": "2026-06-30",
+    "hash": "349057209c6662365ed1719e55831a39031f1a17c958af4d92cdfb31271c52c8"
+  },
+  "/apps/compare/quiltfit-vs-graph-paper/": {
+    "lastmod": "2026-06-30",
+    "hash": "78d3237c22cf4c76015629c6a00df86d964fee1580b2c9da93c4d99b952fea81"
+  },
+  "/apps/compare/quiltfit-vs-spreadsheet-fabric-planning/": {
+    "lastmod": "2026-06-30",
+    "hash": "9c5c03c56dfeb56e53dfd4d3e0634e056d784329269a270e2425842177294308"
+  },
+  "/apps/compare/ritualix-vs-habit-tracking-on-paper/": {
+    "lastmod": "2026-06-30",
+    "hash": "09f1185bad146a5616c724df7c227a815b6177cff27686a716f9d5f24b1e519d"
+  },
+  "/apps/compare/ritualix-vs-tracking-habits-in-your-head/": {
+    "lastmod": "2026-06-30",
+    "hash": "a522fbc0980587d47827bd3f4976e71d5917e4c4be78d1355db5d28dc0c67f33"
+  },
+  "/apps/compare/shift-calendar-vs-generic-calendar-app/": {
+    "lastmod": "2026-06-30",
+    "hash": "a4565e3ff2fd9ac3b484a039baee927324020a4fe64bcdc2cac9aa39c97ae974"
+  },
+  "/apps/compare/shift-calendar-vs-paper-schedule/": {
+    "lastmod": "2026-06-30",
+    "hash": "6ec96da33f59199a914b4de2179f89bdb9261f45f35bccd1bd50b4a81914cd3f"
+  },
+  "/apps/compare/signaturemark-vs-desktop-photo-editors/": {
+    "lastmod": "2026-06-30",
+    "hash": "edbe37ca8b56cd1d661aa2924106b5e27736abf58e633bd89d1f504329cd0f38"
+  },
+  "/apps/compare/signaturemark-vs-no-watermark/": {
+    "lastmod": "2026-06-30",
+    "hash": "0951028a48c70059be800b5b6619a8cdfa2ee135b1faf93d96672a639a3f1632"
+  },
+  "/apps/compare/snapcleaner-vs-buying-more-storage/": {
+    "lastmod": "2026-06-30",
+    "hash": "114979095a0f4eb7081a84091bceb7714ce75c304309837e21bb0066920758d0"
+  },
+  "/apps/compare/snapcleaner-vs-deleting-photos-by-hand/": {
+    "lastmod": "2026-06-30",
+    "hash": "1e698c4f49d222c3afedfcc922f55d739eea19edd7c1dca8a4cf06190eb895a2"
+  },
+  "/apps/compare/snaplabel-vs-handwritten-labels/": {
+    "lastmod": "2026-06-30",
+    "hash": "b32458170010aabf04d4b8710a68aa8ed8eb89d542ea1064fcb7b843fd1eb8af"
+  },
+  "/apps/compare/snaplabel-vs-label-maker-machine/": {
+    "lastmod": "2026-06-30",
+    "hash": "d6b63b8c5613533bef75c6e7044111b67263b919f1da8d2be157e18a6dbffa23"
+  },
+  "/apps/compare/snapqr-vs-free-online-qr-generators/": {
+    "lastmod": "2026-06-30",
+    "hash": "a6eaea7cffafe2c60d9c643a55193c07757b1f6f29d483a9504fd83c95685851"
+  },
+  "/apps/compare/snapqr-vs-typing-links-and-info-by-hand/": {
+    "lastmod": "2026-06-30",
+    "hash": "66d9186ac3d6d63672c2aa04061e55bdad7de6070013330e0dc33c9269c9a511"
+  },
+  "/apps/compare/snapreceipt-vs-cloud-expense-apps/": {
+    "lastmod": "2026-06-30",
+    "hash": "687c28edab99e0236d35966e27188ac2a5b3d1d2d1152f07a5e15534afdccafe"
+  },
+  "/apps/compare/snapreceipt-vs-shoebox-of-receipts/": {
+    "lastmod": "2026-06-30",
+    "hash": "b833425b2e908e93f4fc6a3ff14d2e1ac62d02588914f46075df15bc108dc02a"
+  },
+  "/apps/compare/snapstock-vs-counting-stock-by-hand/": {
+    "lastmod": "2026-06-30",
+    "hash": "7cf082afda72ab49e2c7352698fa337bf48ee1a3492d914788e87a8b06707c50"
+  },
+  "/apps/compare/snapstock-vs-spreadsheet-inventory/": {
+    "lastmod": "2026-06-30",
+    "hash": "628130d0633d7c9b6f6af345cc2140d4b9dffa53f59b25f980f8e2c38e3698f7"
+  },
+  "/apps/compare/speaker-tools-vs-guessing-speaker-placement/": {
+    "lastmod": "2026-06-30",
+    "hash": "27c7e0096dc3403864918b0a382a2b91424c349e7b8976825d9b43df009593da"
+  },
+  "/apps/compare/speaker-tools-vs-test-tone-websites/": {
+    "lastmod": "2026-06-30",
+    "hash": "778a5c16772b5ffbf0ebd204aa754c7113076c2f216eaf8d8632e83b3969a424"
+  },
+  "/apps/compare/tinnitus-relief-vs-playing-music-or-tv/": {
+    "lastmod": "2026-06-30",
+    "hash": "fb1e56253305da94644593c4ca9d20fe44556181cf10576f3dc7c920186c5870"
+  },
+  "/apps/compare/tinnitus-relief-vs-silence/": {
+    "lastmod": "2026-06-30",
+    "hash": "0f22f2c4f0c3e694866aaf4e7505cee3ca03c4627d361d1b21ed28b6bdf50dc9"
   },
   "/apps/expensereportmaker-and-receipts/": {
     "lastmod": "2026-06-28",

@@ -3,7 +3,7 @@
   <url><loc>https://woodcuttool.com/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.96</priority></url>
   <url><loc>https://woodcuttool.com/learn/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.93</priority></url>
-  <url><loc>https://woodcuttool.com/apps/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://woodcuttool.com/apps/</loc><lastmod>2026-06-30</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/apps/cutlist/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.95</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6b/ed/18/6bed1827-5f51-462c-bae9-d906afade498/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/quiltfit/</loc><lastmod>2026-06-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority>
@@ -61,6 +61,73 @@
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/28/ce/cf/28cecf7a-8090-e403-55ec-dedf7c2f1d75/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/colorpop-color-block-tap-game/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/e4/a7/abe4a7a1-1db5-83c3-aa9a-1e5edcf438c8/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/apps/compare/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/address-label-maker-vs-handwriting-envelopes/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/address-label-maker-vs-word-mail-merge/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/atomic-clock-vs-online-time-websites/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/atomic-clock-vs-phone-clock/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/blockfit-vs-ad-heavy-puzzle-games/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/blockfit-vs-scrolling-for-a-mental-break/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/cadenza-vs-mechanical-metronome/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/cadenza-vs-separate-metronome-and-tuner-apps/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/colorpop-vs-complex-mobile-games/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/colorpop-vs-endless-scrolling/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/contacts-backup-vs-icloud-only/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/contacts-backup-vs-no-backup/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/cutlist-vs-cut-optimizer-websites/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/cutlist-vs-sketchup-for-cut-lists/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/expense-report-maker-vs-building-reports-in-excel/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/expense-report-maker-vs-snapreceipt/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/fast-rhythm-vs-generic-timer-app/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/fast-rhythm-vs-tracking-fasting-in-your-head/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/fridgetrack-vs-guessing-whats-in-the-fridge/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/fridgetrack-vs-sticky-notes-on-the-fridge/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/glowfeel-vs-doing-nothing-about-stress/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/glowfeel-vs-generic-meditation-apps/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/image-compressor-vs-online-compression-sites/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/image-compressor-vs-sending-full-size-photos/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/invoice-maker-vs-online-invoicing-services/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/invoice-maker-vs-word-or-excel-invoices/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/magnifier-reader-vs-carrying-a-magnifying-glass/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/magnifier-reader-vs-squinting-at-small-print/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/marketvendor-vs-cash-box-and-notebook/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/marketvendor-vs-pos-system/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/mindnest-vs-notes-app-journaling/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/mindnest-vs-paper-diary/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/pantry-label-maker-vs-masking-tape-and-marker/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/pantry-label-maker-vs-store-bought-labels/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/pdf-scan-vs-office-scanner/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/pdf-scan-vs-photographing-documents/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/photosafe-vs-hidden-album/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/photosafe-vs-leaving-photos-in-camera-roll/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/pickone-vs-arguing-over-decisions/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/pickone-vs-flipping-a-coin/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/printer-app-vs-emailing-files-to-print/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/printer-app-vs-manufacturer-printer-apps/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/private-transcriber-vs-cloud-transcription/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/private-transcriber-vs-taking-notes-by-hand/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/quiltfit-vs-graph-paper/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/quiltfit-vs-spreadsheet-fabric-planning/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/ritualix-vs-habit-tracking-on-paper/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/ritualix-vs-tracking-habits-in-your-head/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/shift-calendar-vs-generic-calendar-app/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/shift-calendar-vs-paper-schedule/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/signaturemark-vs-desktop-photo-editors/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/signaturemark-vs-no-watermark/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/snapcleaner-vs-buying-more-storage/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/snapcleaner-vs-deleting-photos-by-hand/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/snaplabel-vs-handwritten-labels/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/snaplabel-vs-label-maker-machine/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/snapqr-vs-free-online-qr-generators/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/snapqr-vs-typing-links-and-info-by-hand/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/snapreceipt-vs-cloud-expense-apps/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/snapreceipt-vs-shoebox-of-receipts/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/snapstock-vs-counting-stock-by-hand/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/snapstock-vs-spreadsheet-inventory/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/speaker-tools-vs-guessing-speaker-placement/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/speaker-tools-vs-test-tone-websites/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/tinnitus-relief-vs-playing-music-or-tv/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://woodcuttool.com/apps/compare/tinnitus-relief-vs-silence/</loc><lastmod>2026-06-30</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://woodcuttool.com/apps/expensereportmaker-and-receipts/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/30/e7/4f30e7c0-0d24-7790-2bee-b022ee71e4c7/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/export-backup-all-contacts-pro/</loc><lastmod>2026-06-28</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>

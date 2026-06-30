@@ -7,12 +7,13 @@
     "dev": "python3 -m http.server 4175 --bind 0.0.0.0",
     "fetch:app-reviews": "node scripts/fetch-app-store-reviews.mjs",
     "generate:apps": "node scripts/build-app-library.mjs",
+    "generate:app-compare": "node scripts/build-app-compare.mjs",
     "generate:blog": "node scripts/build-blog-content.mjs",
     "generate:learn": "node scripts/build-learn-content.mjs",
     "generate:schemas": "node scripts/apply-tool-schemas.mjs",
     "generate:meta": "node scripts/apply-seo-meta.mjs && node scripts/add-tool-guide-links.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
-    "build": "node scripts/build-app-library.mjs && node scripts/build-blog-content.mjs && node scripts/build-learn-content.mjs && node scripts/apply-tool-schemas.mjs && node scripts/apply-seo-meta.mjs && node scripts/add-tool-guide-links.mjs && node scripts/generate-sitemap.mjs && node scripts/validate-site.mjs",
+    "build": "node scripts/build-app-library.mjs && node scripts/build-app-compare.mjs && node scripts/build-blog-content.mjs && node scripts/build-learn-content.mjs && node scripts/apply-tool-schemas.mjs && node scripts/apply-seo-meta.mjs && node scripts/add-tool-guide-links.mjs && node scripts/generate-sitemap.mjs && node scripts/validate-site.mjs",
     "check": "node scripts/validate-site.mjs"
   }
 }
