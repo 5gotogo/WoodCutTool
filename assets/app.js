@@ -3795,9 +3795,6 @@ function stairPreviewSvg({ risers, treads, totalRise, actualRun, riserHeight, tr
     }
   }
 
-  const markerIndex = Math.max(0, Math.min(treads - 1, Math.floor(treads * 0.45)));
-  const labelX = left + stepW * markerIndex;
-  const labelY = bottom - stepH * markerIndex;
   const angleArc = `M ${left + 24} ${bottom} A 44 44 0 0 0 ${left + 24 + 44 * Math.cos(-stairAngle * Math.PI / 180)} ${bottom - 44 * Math.sin(stairAngle * Math.PI / 180)}`;
 
   return `
@@ -3818,11 +3815,7 @@ function stairPreviewSvg({ risers, treads, totalRise, actualRun, riserHeight, tr
       <path class="stair-angle-arc" d="${angleArc}"></path>
       <line class="stair-dimension-line" x1="${left}" y1="${bottom + 46}" x2="${topX}" y2="${bottom + 46}" marker-start="url(#stair-arrow)" marker-end="url(#stair-arrow)"></line>
       <line class="stair-dimension-line" x1="${topX + 44}" y1="${bottom}" x2="${topX + 44}" y2="${topY}" marker-start="url(#stair-arrow)" marker-end="url(#stair-arrow)"></line>
-      <line class="stair-dimension-line thin" x1="${labelX}" y1="${labelY}" x2="${labelX + stepW}" y2="${labelY}" marker-start="url(#stair-arrow)" marker-end="url(#stair-arrow)"></line>
-      <line class="stair-dimension-line thin" x1="${labelX + stepW}" y1="${labelY}" x2="${labelX + stepW}" y2="${labelY - stepH}" marker-start="url(#stair-arrow)" marker-end="url(#stair-arrow)"></line>
       <text class="stair-svg-label" x="${left + 50}" y="${bottom - 34}">${format(stairAngle, 1)}°</text>
-      <text class="stair-svg-label" x="${labelX + stepW * 0.5}" y="${labelY - 10}">${format(treadDepth)} in</text>
-      <text class="stair-svg-label" x="${labelX + stepW + 12}" y="${labelY - stepH * 0.42}">${format(riserHeight)} in</text>
       <text class="stair-svg-label" x="${left + stairWidth * 0.5}" y="${bottom + 72}">${format(actualRun)} in run</text>
       <text class="stair-svg-label" x="${topX + 60}" y="${topY + stairHeight * 0.5}">${format(totalRise)} in rise</text>
       <text class="stair-svg-caption" x="${left}" y="42">${risers} risers @ ${format(riserHeight)} in</text>
@@ -4402,8 +4395,8 @@ function initStairs() {
         </div>
         <div class="stair-preview-tabs" aria-label="Stringer preview modes">
           <span>Elevation</span>
-          <span>Stringer</span>
-          <span>Cut sheet</span>
+          <a href="/apps/stringer/">Stringer</a>
+          <a href="/apps/stringer/">Cut sheet</a>
         </div>
         <div class="stair-preview-frame">
           ${preview}

@@ -3039,7 +3039,8 @@ form > .button,
   background: #e8e9ef;
 }
 
-.stair-preview-tabs span {
+.stair-preview-tabs span,
+.stair-preview-tabs a {
   min-height: 34px;
   display: grid;
   place-items: center;
@@ -3047,11 +3048,17 @@ form > .button,
   border-radius: 999px;
   font-size: 13px;
   font-weight: 850;
+  text-decoration: none;
 }
 
 .stair-preview-tabs span:first-child {
   background: #fff;
   box-shadow: 0 4px 14px rgba(31, 57, 91, 0.08);
+}
+
+.stair-preview-tabs a:hover {
+  background: rgba(255, 255, 255, 0.58);
+  text-decoration: none;
 }
 
 .stair-preview-frame {
