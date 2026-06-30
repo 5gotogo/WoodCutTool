@@ -6276,6 +6276,2005 @@ articles.push(
   }
 );
 
+const woodworkingSeoBatch = [
+  {
+    slug: "plywood-grades-explained-for-woodworkers",
+    category: "CutList",
+    title: "Plywood Grades Explained for Woodworkers (A, B, C, D)",
+    description: "Plywood grades A, B, C, and D explained for woodworking: face and back grades, what to buy for cabinets vs hidden parts, and how grade affects cost and finish.",
+    kicker: "Materials",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["What Plywood Grades Actually Mean", "Plywood is graded by the quality of its face and back veneers, usually with two letters like A-C. The first letter is the better face you will show; the second is the back. A is smooth and nearly defect-free, B allows minor repairs, C permits knots and small splits, and D allows the most defects. Understanding the pair tells you which side faces out and how much finishing work a sheet will need."],
+      ["Choosing a Grade by Where the Part Shows", "Match grade to visibility. Cabinet doors, finished ends, and anything seen up close want an A or B face. Shelves and interior panels can drop to a B or C back. Utility parts, subfloors, and hidden structure can use C-D or sheathing grade. Paying for an A face on a part nobody sees is wasted money, while a rough face on a visible door means hours of filling."],
+      ["Hardwood Plywood vs Softwood Plywood Grades", "Hardwood plywood (birch, oak, maple) uses letter or number grades focused on appearance for furniture and cabinets. Softwood plywood (pine, fir) is graded more for construction. For cut-list planning, the key is that cabinet-grade hardwood plywood gives cleaner edges and faces, while construction-grade softwood is cheaper but rougher and more prone to voids."],
+      ["How Grade Affects Cutting and Waste", "Lower grades hide voids and patches that can appear on a cut edge or tear out under the blade. A higher face grade with a solid core cuts cleaner and shows fewer surprises, which matters when a cut list relies on every panel coming out usable. Budget grade can still work if you plan extra material for defects."],
+      ["A Simple Buying Rule", "Buy the lowest grade that still looks right for the job. Use one good sheet for visible parts and a cheaper sheet for hidden ones, then plan the cut list so visible parts come from the better stock. That split keeps cost down without compromising the finished look."]
+    ],
+    checklist: ["Read the face and back grade pair before buying.", "Use A or B faces for visible doors and ends.", "Drop to C-D for hidden structure to save money.", "Expect more defects and tearout on lower grades.", "Split visible and hidden parts across two grades."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Plywood grade by use",
+      comparisonColumns: ["Grade", "Look", "Best use", "Cost"],
+      comparisonRows: [
+        ["A / A-B", "Smooth, few defects", "Visible doors, finished ends", "Highest"],
+        ["B / B-C", "Minor repairs", "Shelves, semi-visible parts", "Mid"],
+        ["C-D", "Knots, patches", "Hidden structure, backs", "Low"],
+        ["Sheathing", "Rough", "Subfloor, utility", "Lowest"]
+      ],
+      faqs: [
+        ["What does a plywood grade like A-C mean?", "The first letter is the face quality (A is best) and the second is the back. A-C means a smooth front and a rougher back with knots allowed."],
+        ["What grade of plywood is best for cabinets?", "Cabinet-grade hardwood plywood with an A or B face for visible parts, and a B-C or C back for interior panels and shelves."],
+        ["Is cabinet-grade plywood worth the cost?", "For visible furniture and cabinets, yes. It cuts cleaner, shows fewer voids, and needs less finishing than construction-grade plywood."],
+        ["Can I mix plywood grades in one project?", "Yes, and you should. Use a better grade for visible parts and a cheaper grade for hidden structure to control cost."],
+        ["Does plywood grade affect cutting?", "Yes. Lower grades have more voids and patches that can tear out or appear on a cut edge, so plan extra material for defects."]
+      ],
+      sources: [
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Plan how many sheets you need once you have chosen a plywood grade."],
+        ["Learn: plywood cutting optimization", "/learn/plywood-cutting-optimization/", "Method for laying out parts on graded sheets with low waste."]
+      ]
+    }
+  },
+  {
+    slug: "how-to-avoid-tearout-cutting-plywood",
+    category: "CutList",
+    title: "How to Avoid Tearout When Cutting Plywood",
+    description: "Stop plywood tearout and splintering: blade choice, scoring, tape, zero-clearance support, and feed-rate tips for clean edges on every cut.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Why Plywood Tears Out", "Tearout happens when the blade lifts and splinters the thin face veneer instead of slicing it cleanly. It is worst where teeth exit the surface: the bottom face on a table saw, the top face on a circular saw or track saw. Thin veneers, dull blades, and fast feed rates all make it worse. The fixes all aim to support the veneer fibers so they cannot lift."],
+      ["Use a Fine-Tooth Blade", "A blade with more teeth (60-80 on a 10-inch saw, or a dedicated plywood/laminate blade) takes smaller bites and leaves a cleaner edge. A general-purpose ripping blade with few teeth is fast but tears veneer. A sharp fine-tooth blade is the single biggest improvement for clean plywood cuts."],
+      ["Score the Cut Line", "Scoring the veneer before the full cut severs the surface fibers so they cannot splinter. On a track saw, a light scoring pass along the rail does this. By hand, a knife scored along a straightedge on the cut line works. The main cut then follows the pre-cut line cleanly."],
+      ["Support the Exit Face", "A zero-clearance insert or a sacrificial backer board supports the veneer right where the blade exits. With no gap under the cut, the fibers have nothing to splinter into. Painter's tape over the cut line adds light support and is a quick help on a circular saw."],
+      ["Mind Blade Direction and Feed", "Put the good face where teeth enter: up on a table saw, down on a circular or track saw. Feed steadily without forcing, and let a sharp blade do the work. Rushing a cut or backing up mid-cut both invite tearout. Slow, supported, sharp: that is the whole formula."]
+    ],
+    checklist: ["Use a sharp fine-tooth or plywood blade.", "Score the veneer before the main cut.", "Support the exit face with zero-clearance or a backer.", "Put the good face where teeth enter the wood.", "Feed steadily and never force the cut."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Tearout fixes ranked",
+      comparisonColumns: ["Fix", "Effort", "Effect", "Best for"],
+      comparisonRows: [
+        ["Fine-tooth blade", "Low", "Large", "All cuts"],
+        ["Zero-clearance support", "Medium", "Large", "Table saw"],
+        ["Scoring pass", "Low", "Large", "Track saw"],
+        ["Painter's tape", "Low", "Moderate", "Circular saw"]
+      ],
+      faqs: [
+        ["Why does plywood splinter when I cut it?", "The blade lifts and tears the thin face veneer as teeth exit the surface, especially with dull or coarse blades and fast feed rates."],
+        ["What blade is best for cutting plywood without tearout?", "A sharp fine-tooth blade (60-80 teeth) or a dedicated plywood/laminate blade takes small bites and leaves a clean edge."],
+        ["Does painter's tape really reduce tearout?", "Yes, lightly. Tape over the cut line supports surface fibers and helps most on circular-saw cuts."],
+        ["Which side tears out, top or bottom?", "Teeth tear the exit face: the bottom on a table saw, the top on a circular or track saw. Put the good face where teeth enter."],
+        ["What is a zero-clearance insert?", "A throat plate with no gap around the blade, so it supports the veneer right at the cut and prevents splintering underneath."]
+      ],
+      sources: [
+        ["Guide: how to cut plywood efficiently", "/guides/how-to-cut-plywood-efficiently/", "Full method for breaking down sheets with clean, accurate cuts."],
+        ["Learn: saw kerf explained", "/learn/saw-kerf-explained/", "How blade width and cut quality affect your parts."]
+      ]
+    }
+  },
+  {
+    slug: "baltic-birch-vs-cabinet-grade-plywood",
+    category: "CutList",
+    title: "Baltic Birch vs Cabinet-Grade Plywood: Which to Use",
+    description: "Baltic birch vs standard cabinet-grade plywood: core voids, ply count, strength, edges, and cost. See which plywood to choose for drawers, jigs, and cabinets.",
+    kicker: "Materials",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["What Makes Baltic Birch Different", "Baltic birch is built from many thin birch plies with no voids, glued into a stable, strong panel. Standard cabinet-grade plywood has fewer, thicker plies and may hide small voids in the core. The extra plies give Baltic birch cleaner edges, more screw-holding strength, and better stability, which is why it is prized for drawers and jigs."],
+      ["Edges Are the Big Difference", "Because Baltic birch has many void-free plies, its edges look clean and can be left exposed as a design feature, especially on drawer boxes. Standard plywood edges often show voids and need edge banding to look finished. If a project shows its edges, Baltic birch saves the banding step."],
+      ["Strength and Screw Holding", "More plies mean more glue lines and more cross-grain layers, giving Baltic birch better strength and screw retention, particularly on edges. That makes it the go-to for drawer boxes, shop fixtures, and jigs that take repeated stress. Standard plywood is fine for cabinet boxes and panels that are supported and not heavily fastened on edges."],
+      ["Sizes and Cost", "Baltic birch often comes in 5x5 foot sheets rather than 4x8, which changes cut-list planning, and it costs more than standard plywood. Cabinet-grade plywood in 4x8 sheets is cheaper and easier to source for large panels. Many shops use Baltic birch for drawers and jigs and standard plywood for cabinet carcasses."],
+      ["Choosing Between Them", "Use Baltic birch where edges show, strength matters, or precision counts: drawers, jigs, small boxes. Use cabinet-grade plywood for large carcass panels and anywhere edges will be banded or hidden. Splitting the two by role gives the best result for the money."]
+    ],
+    checklist: ["Choose Baltic birch where edges show.", "Use it for drawers, jigs, and high-stress parts.", "Use cabinet-grade plywood for large carcass panels.", "Remember Baltic birch is often 5x5, not 4x8.", "Band or hide standard plywood edges."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Baltic birch vs cabinet-grade plywood",
+      comparisonColumns: ["Factor", "Baltic birch", "Cabinet-grade", "Edge"],
+      comparisonRows: [
+        ["Core voids", "None", "Possible", "Baltic birch"],
+        ["Edge appearance", "Clean, show-ready", "Often banded", "Baltic birch"],
+        ["Screw holding", "Excellent", "Good", "Baltic birch"],
+        ["Large panels / cost", "5x5, pricier", "4x8, cheaper", "Cabinet-grade"]
+      ],
+      faqs: [
+        ["Is Baltic birch better than cabinet-grade plywood?", "For drawers, jigs, and exposed edges, yes. It has no voids, cleaner edges, and better screw holding. For large cheap panels, cabinet-grade is more practical."],
+        ["Why is Baltic birch used for drawers?", "Its many void-free plies give clean, strong edges that look good exposed and hold screws and joinery well under repeated drawer use."],
+        ["What size is Baltic birch plywood?", "It often comes in 5x5 foot sheets rather than the 4x8 of standard plywood, which affects cut-list planning."],
+        ["Is Baltic birch worth the extra cost?", "For high-stress or visible-edge parts, yes. For hidden carcass panels, standard cabinet-grade plywood is more cost-effective."],
+        ["Can I mix Baltic birch and standard plywood?", "Yes. Many shops use Baltic birch for drawers and jigs and cabinet-grade plywood for the carcass."]
+      ],
+      sources: [
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Plan drawer and box parts cut from Baltic birch."],
+        ["Templates: drawer box cut list", "/templates/drawer-box-cut-list/", "A starting drawer cut list that suits Baltic birch."]
+      ]
+    }
+  },
+  {
+    slug: "how-thick-plywood-for-shelves",
+    category: "CutList",
+    title: "How Thick Should Plywood Be for Shelves?",
+    description: "Plywood shelf thickness guide: 1/2 vs 3/4 inch, span limits, load, and sag. See what thickness to use for closet, garage, and bookshelf shelves.",
+    kicker: "Materials",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Thickness Depends on Span and Load", "There is no single right thickness; it depends on how far the shelf spans unsupported and how much it carries. A short shelf can be thin, a long one needs to be thick or supported. The two enemies are deflection (sag) under load and outright failure. Choose thickness and support together, not in isolation."],
+      ["3/4 Inch Is the Workhorse", "Three-quarter-inch plywood is the default for most shelving: bookcases, cabinets, and garage shelves up to roughly 30-36 inches of unsupported span with moderate load. It resists sag well and holds fasteners. If you are unsure, 3/4 inch is rarely wrong for a general shelf."],
+      ["When 1/2 Inch Is Enough", "Half-inch plywood works for short spans, light loads, or shelves with a front edge or cleat that stiffens them. Closet shelves under 24 inches, display shelves for light items, and shelves with support every couple of feet can use 1/2 inch and save weight and cost."],
+      ["Fighting Sag on Long Shelves", "For spans beyond about 36 inches, even 3/4 inch sags under books. Fixes include adding a center support, gluing a hardwood edge to stiffen the front, doubling the shelf thickness, or shortening the span. A 1-inch-deep solid-wood front edge dramatically increases stiffness for little material."],
+      ["Plan Thickness Into the Cut List", "Decide thickness before laying out the cut list, because it changes how shelves nest on a sheet and how many sheets you need. Mixing 3/4-inch load shelves with 1/2-inch light shelves in the same project is fine; just track which parts come from which sheet."]
+    ],
+    checklist: ["Match thickness to span and load, not habit.", "Use 3/4 inch as the default shelf thickness.", "Use 1/2 inch only for short or supported shelves.", "Add an edge or center support for long spans.", "Set thickness before building the cut list."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Shelf thickness by span",
+      comparisonColumns: ["Span", "Thickness", "Note", "Support"],
+      comparisonRows: [
+        ["Under 24 in", "1/2 in", "Light loads", "None needed"],
+        ["24-36 in", "3/4 in", "General use", "Optional edge"],
+        ["36-48 in", "3/4 in + edge", "Books, tools", "Front edge or center"],
+        ["Over 48 in", "Double or support", "Heavy", "Center support"]
+      ],
+      faqs: [
+        ["How thick should plywood shelves be?", "Use 3/4 inch for most shelves up to about 36 inches of span. Use 1/2 inch only for short or supported shelves, and add support or an edge beyond 36 inches."],
+        ["Will 1/2 inch plywood sag as a shelf?", "Over short spans with light loads, no. Over 24-30 inches or under books, it will sag and 3/4 inch or support is better."],
+        ["How do I stop a long shelf from sagging?", "Add a center support, glue a solid-wood front edge to stiffen it, double the thickness, or shorten the span."],
+        ["Is 3/4 inch plywood strong enough for a bookshelf?", "Yes, up to about 36 inches of span. Beyond that, add a stiffening front edge or a center support."],
+        ["Does a front edge really help shelf stiffness?", "Yes. A solid-wood front edge a inch or so deep greatly increases stiffness for very little extra material."]
+      ],
+      sources: [
+        ["Templates: closet shelving cut list", "/templates/closet-shelving-cut-list/", "Shelf depths and supports for a closet system."],
+        ["Learn: how many sheets of plywood do I need", "/learn/how-many-sheets-of-plywood-do-i-need/", "Turn shelf sizes into a sheet count."]
+      ]
+    }
+  },
+  {
+    slug: "plywood-shelf-span-and-sag-guide",
+    category: "CutList",
+    title: "Plywood Shelf Span and Sag: A Practical Guide",
+    description: "How far can a plywood shelf span before it sags? Practical span limits by thickness and load, plus fixes like edging, supports, and shorter bays.",
+    kicker: "Planning",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Span Is the Number That Matters", "Sag is governed mostly by unsupported span: the distance between supports. Double the span and deflection grows dramatically, far faster than the length suggests. The practical lesson is that shortening a bay, or adding one support in the middle, helps more than adding thickness. Plan supports first, thickness second."],
+      ["Typical Span Limits", "As a rough guide for 3/4-inch plywood under household loads: up to about 30-36 inches spans comfortably, 36-42 inches starts to need a stiffening edge, and beyond 42-48 inches wants a center support. Heavier loads like books or tools pull every number shorter. These are starting points to verify against your real load."],
+      ["The Power of a Front Edge", "Gluing a solid-wood strip to the front edge of a shelf, even 3/4 by 1-1/2 inches, acts like an I-beam flange and sharply reduces sag. It is the cheapest way to extend a span without thicker plywood or extra supports, and it gives a finished look to the front edge at the same time."],
+      ["Designing Bays to Avoid Sag", "When laying out a shelf unit, choose bay widths that keep spans within limits. Two 30-inch bays sag far less than one 60-inch shelf, and the divider gives a place to fasten. If the look calls for a long shelf, plan a hidden center support or a thicker, edged shelf from the start."],
+      ["Check It in the Cut List", "Span decisions change shelf dimensions, divider counts, and edge pieces, all of which belong in the cut list before you buy material. Lock the bay widths and supports first, then lay out the parts so the plan reflects the real, sag-free design."]
+    ],
+    checklist: ["Treat span as the main driver of sag.", "Keep 3/4-inch shelves under about 36 inches.", "Add a solid-wood front edge to extend spans.", "Split long shelves into shorter bays.", "Bake supports and edges into the cut list."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Span fixes compared",
+      comparisonColumns: ["Fix", "Material cost", "Sag reduction", "Note"],
+      comparisonRows: [
+        ["Shorter bay", "Divider", "Large", "Adds fastening point"],
+        ["Front edge", "Low", "Large", "Finishes the edge too"],
+        ["Center support", "Low", "Large", "Hidden mid-span"],
+        ["Thicker shelf", "Higher", "Moderate", "Adds weight"]
+      ],
+      faqs: [
+        ["How far can a 3/4 inch plywood shelf span?", "Roughly 30-36 inches under household loads before noticeable sag. A stiffening front edge or center support extends it further."],
+        ["Does thickness or span matter more for sag?", "Span matters more. Doubling the span increases sag far more than the equivalent change in thickness, so supports beat thicker plywood."],
+        ["What is the cheapest way to stop shelf sag?", "A solid-wood front edge. It acts like a beam flange and sharply reduces sag for very little material."],
+        ["Should I use one long shelf or two short ones?", "Two shorter bays sag far less and give a divider to fasten to. Use one long shelf only with an edge or center support."],
+        ["How do I plan shelves to avoid sag?", "Set bay widths within span limits, add edges or supports as needed, then build the cut list around that sag-free design."]
+      ],
+      sources: [
+        ["Templates: garage shelving cut list", "/templates/garage-shelving-cut-list/", "Heavy-duty shelving with sag-aware spans."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Lay out shelves and dividers on sheets."]
+      ]
+    }
+  },
+  {
+    slug: "cabinet-carcass-construction-basics",
+    category: "CutList",
+    title: "Cabinet Carcass Construction Basics for Beginners",
+    description: "Cabinet carcass basics: sides, top, bottom, back, and shelves, how the box goes together, and how to plan the panels into a clean plywood cut list.",
+    kicker: "Cabinets",
+    readTime: "10 min",
+    accent: "cutlist",
+    sections: [
+      ["What a Carcass Is", "The carcass is the box: two sides, a top and bottom (or stretchers), a back, and any fixed shelves. Everything else, doors, drawers, face frame, hangs on or sits inside it. Get the carcass square and the right size and the rest follows. Most cabinet cut lists start by listing these carcass panels first."],
+      ["Sides Drive the Dimensions", "The two side panels set the cabinet's height and depth. Their height is the finished cabinet height (minus top and bottom thickness depending on joinery), and their depth is the cabinet depth minus the door and face-frame allowance. Get the sides right and the box is most of the way there."],
+      ["Joining Top, Bottom, and Back", "The top and bottom (or stretchers on a base cabinet) tie the sides together and set the width. They are usually joined with dados, screws, or pocket holes. The back panel, often 1/4-inch plywood in a rabbet or groove, keeps the box square and adds rigidity. A loose or missing back lets a cabinet rack out of square."],
+      ["Allowing for Joinery in the Cut List", "Panel sizes depend on the joinery: a dado-and-rabbet box cuts parts differently than a butt-jointed, screwed box. Decide the joinery first, then size the panels so the assembled box hits the target dimensions. This is the single most common source of cabinet cut-list errors."],
+      ["From Carcass to Cut List", "Once you know the box dimensions and joinery, listing the parts is straightforward: 2 sides, top and bottom, back, fixed shelves, plus any nailers or stretchers. Group identical parts, set kerf, and lay them on sheets. A template gets you a working list fast."]
+    ],
+    checklist: ["List the carcass panels before anything else.", "Let the side panels set height and depth.", "Use a back panel to keep the box square.", "Choose joinery before sizing the panels.", "Group identical carcass parts in the cut list."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Carcass parts at a glance",
+      comparisonColumns: ["Part", "Sets", "Typical material", "Note"],
+      comparisonRows: [
+        ["Sides (2)", "Height, depth", "3/4 in plywood", "Drive dimensions"],
+        ["Top / bottom", "Width", "3/4 in plywood", "Tie sides together"],
+        ["Back", "Squareness", "1/4 in plywood", "In a rabbet/groove"],
+        ["Fixed shelf", "Rigidity", "3/4 in plywood", "Optional"]
+      ],
+      faqs: [
+        ["What is a cabinet carcass?", "The basic box: two sides, top and bottom or stretchers, a back, and fixed shelves. Doors, drawers, and the face frame attach to it."],
+        ["What thickness plywood for a cabinet carcass?", "Usually 3/4 inch for the sides, top, bottom, and shelves, with a 1/4-inch back panel in a rabbet or groove."],
+        ["How do I keep a cabinet box square?", "Fit a back panel into a rabbet or groove. It locks the box square and adds rigidity that a loose back cannot."],
+        ["Why does joinery change my cut list?", "Dados, rabbets, and butt joints each require different panel sizes to reach the same finished box, so decide joinery before sizing parts."],
+        ["What is the fastest way to plan a cabinet cut list?", "Start from a cabinet template, set your dimensions and joinery, then lay the parts out on sheets with a calculator."]
+      ],
+      sources: [
+        ["Templates: kitchen cabinet cut list", "/templates/kitchen-cabinet-cut-list/", "A base and wall cabinet cut list to start from."],
+        ["Learn: how to read a cut list", "/learn/how-to-read-a-cut-list/", "Understand the panel list before you cut."]
+      ]
+    }
+  },
+  {
+    slug: "face-frame-vs-frameless-cabinets",
+    category: "CutList",
+    title: "Face Frame vs Frameless Cabinets: Which to Build",
+    description: "Face frame vs frameless (European) cabinets compared: strength, access, cost, and cut-list impact. See which cabinet style suits your project and skills.",
+    kicker: "Cabinets",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Two Ways to Build a Cabinet", "Face-frame cabinets have a solid-wood frame on the front of the box that doors and drawers mount to. Frameless (European) cabinets skip the frame; doors mount directly to the box sides. Both are strong and common; the choice affects look, access, hardware, and how you plan the cut list."],
+      ["Face Frame: Traditional and Forgiving", "The face frame stiffens the box, hides panel edges, and forgives small carcass inaccuracies because the frame sets the openings. It is the traditional American style. The trade-offs are a little less interior access and extra solid-wood parts to mill and join, which add to the cut list and build time."],
+      ["Frameless: Modern and Accessible", "Frameless cabinets give full access to the interior and a clean, modern look, with slightly more usable space. They rely on precise carcass construction and edge banding since panel edges show. There is no face frame to cut, but the panels must be accurate and the edges finished."],
+      ["Cut-List Differences", "A face-frame cut list adds solid-wood rails and stiles plus the plywood box. A frameless cut list is mostly plywood panels with edge banding. Frameless demands tighter panel accuracy; face frame demands extra solid-wood milling. Knowing which you are building changes the parts list from the start."],
+      ["Choosing for Your Project", "Pick face frame for a traditional look, a forgiving build, and easy hardware. Pick frameless for modern style, maximum access, and fewer solid-wood parts, if you can cut accurately and band edges. Many beginners find face frame more forgiving; many modern kitchens use frameless."]
+    ],
+    checklist: ["Decide the style before listing parts.", "Add rails and stiles for face-frame builds.", "Plan edge banding for frameless panels.", "Hold tighter panel accuracy on frameless.", "Match the style to your tools and skills."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Face frame vs frameless",
+      comparisonColumns: ["Factor", "Face frame", "Frameless", "Edge"],
+      comparisonRows: [
+        ["Look", "Traditional", "Modern", "Preference"],
+        ["Interior access", "Slightly less", "Full", "Frameless"],
+        ["Build forgiveness", "More", "Less", "Face frame"],
+        ["Extra parts", "Solid-wood frame", "Edge banding", "Depends"]
+      ],
+      faqs: [
+        ["What is the difference between face frame and frameless cabinets?", "Face-frame cabinets have a solid-wood frame on the box front; frameless cabinets mount doors directly to the box with no frame."],
+        ["Are frameless cabinets stronger than face frame?", "Both are strong. Face frames add front stiffness and forgive small errors; frameless relies on precise carcass construction for its strength."],
+        ["Which is cheaper to build, face frame or frameless?", "Frameless saves the solid-wood frame but needs edge banding and accuracy. Face frame adds frame parts. Costs are often similar; it depends on materials."],
+        ["Which cabinet style is easier for beginners?", "Face frame is generally more forgiving because the frame sets the openings and hides small carcass inaccuracies."],
+        ["Does cabinet style change the cut list?", "Yes. Face frame adds rails and stiles; frameless is mostly banded plywood panels with tighter accuracy required."]
+      ],
+      sources: [
+        ["Templates: kitchen cabinet cut list", "/templates/kitchen-cabinet-cut-list/", "Start a cabinet cut list for either style."],
+        ["Compare: plywood vs MDF", "/compare/plywood-vs-mdf/", "Choose panel material for doors and boxes."]
+      ]
+    }
+  },
+  {
+    slug: "how-to-square-a-cabinet-box",
+    category: "CutList",
+    title: "How to Square a Cabinet Box Every Time",
+    description: "How to get a cabinet box square: measure the diagonals, use the back panel, clamp and check, so doors and drawers fit and the cabinet sits flat.",
+    kicker: "Technique",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Why Square Matters", "An out-of-square box means doors that do not align, drawers that bind, and cabinets that do not sit flat together. Square is not optional; it is what makes the rest of the build work. The good news is that squaring a box is simple if you check it before the glue or fasteners set."],
+      ["Measure the Diagonals", "The fastest square check is to measure both diagonals of the box. If they are equal, the box is square; if not, it is racked. Adjust by gently pushing the long diagonal corners together until the two measurements match. This works on any rectangle and needs only a tape measure."],
+      ["Let the Back Panel Set It", "A back panel cut perfectly square and fitted into a rabbet or groove forces the whole box square as you fasten it. This is the most reliable method: cut the back accurately, push the box to match it, and fasten. The back then holds the box square permanently."],
+      ["Clamp, Check, Then Fasten", "Dry-clamp the box, check the diagonals, adjust, and only then fasten. Fastening first locks in any racking. Cabinet clamps or a strap clamp pull the box together while you verify square. Re-check after fastening because driving screws can shift things slightly."],
+      ["Build Squareness Into the Parts", "Square assembly starts with square parts. Panels cut with parallel sides and accurate dimensions go together square; panels cut crooked fight you the whole way. Accurate cutting, from a good cut list and a square saw setup, is the real foundation of a square box."]
+    ],
+    checklist: ["Measure both diagonals to check square.", "Adjust until the diagonals match.", "Use a square back panel to lock the box.", "Dry-clamp and check before fastening.", "Cut accurate, square parts to begin with."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Squaring methods",
+      comparisonColumns: ["Method", "Tools", "Reliability", "Note"],
+      comparisonRows: [
+        ["Diagonal check", "Tape measure", "High", "Works on any box"],
+        ["Square back panel", "Accurate back", "Highest", "Holds it permanently"],
+        ["Framing square", "Square", "Moderate", "Good for corners"],
+        ["Eyeball", "None", "Low", "Not for cabinets"]
+      ],
+      faqs: [
+        ["How do I check if a cabinet box is square?", "Measure both diagonals. Equal diagonals mean a square box; unequal means it is racked and needs adjusting before fastening."],
+        ["How does a back panel square a cabinet?", "A perfectly square back fitted into a rabbet or groove forces the box to match it as you fasten, holding it square permanently."],
+        ["Why is my cabinet out of square?", "Usually crooked parts or fastening before checking diagonals. Cut accurate parts and verify square while dry-clamped."],
+        ["Can I fix an out-of-square box after gluing?", "Only slightly, before glue sets, by adjusting the diagonals. After it cures, racking is locked in, so check first."],
+        ["Do drawers need a square box?", "Yes. Out-of-square boxes make drawers bind and doors misalign, so squaring is essential before installing hardware."]
+      ],
+      sources: [
+        ["Learn: how to read a cut list", "/learn/how-to-read-a-cut-list/", "Accurate parts are the basis of a square box."],
+        ["Templates: kitchen cabinet cut list", "/templates/kitchen-cabinet-cut-list/", "Start with accurately sized carcass panels."]
+      ]
+    }
+  },
+  {
+    slug: "melamine-vs-laminate-for-cabinets",
+    category: "CutList",
+    title: "Melamine vs Laminate for Cabinets: What to Know",
+    description: "Melamine vs high-pressure laminate for cabinets: durability, cost, cutting, and edges. See which surface fits your cabinet project and how to cut it cleanly.",
+    kicker: "Materials",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Two Surfaced Panel Options", "Melamine is a thermally fused resin surface on a particleboard or MDF core, sold as ready-to-use panels. High-pressure laminate (HPL) is a separate sheet glued onto a substrate. Both give a durable, wipe-clean cabinet surface, but they differ in cost, durability, and how you work with them."],
+      ["Melamine: Ready and Affordable", "Melamine panels come pre-surfaced, so you cut them to size and build, no laminating step. They are affordable and consistent, common in cabinet interiors and budget builds. The surface is durable for everyday use but can chip on cut edges and is less tough than HPL for heavy wear."],
+      ["Laminate: Tougher, More Work", "HPL is harder and more wear-resistant, good for countertops and high-traffic surfaces, but you glue it to a substrate yourself, which adds steps and skill. For cabinet boxes it is often overkill; for work surfaces and heavy-use fronts it earns its extra effort."],
+      ["Cutting Surfaced Panels Cleanly", "Both chip on cut edges without care. Use a fine-tooth or specific melamine/laminate blade, score the cut, support the exit face, and consider a scoring blade on a table saw. Clean cuts matter because chips on a visible edge are hard to hide. Edge banding covers the cut edges on the finished piece."],
+      ["Planning the Cut List", "Melamine usually comes in standard sheet sizes, so it lays out like plywood in a cut list, with attention to which face shows and where edges will be banded. Plan banding into the part sizes and choose blade and support to keep the chip-prone edges clean."]
+    ],
+    checklist: ["Use melamine for affordable, ready surfaces.", "Use HPL for high-wear work surfaces.", "Cut with a fine-tooth or laminate blade.", "Score and support edges to avoid chipping.", "Plan edge banding into part sizes."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Melamine vs laminate",
+      comparisonColumns: ["Factor", "Melamine", "Laminate (HPL)", "Edge"],
+      comparisonRows: [
+        ["Ready to use", "Yes", "Glue it yourself", "Melamine"],
+        ["Durability", "Good", "Tougher", "Laminate"],
+        ["Cost", "Lower", "Higher + labor", "Melamine"],
+        ["Edge chipping", "Prone", "Prone", "Tie"]
+      ],
+      faqs: [
+        ["What is the difference between melamine and laminate?", "Melamine is a resin surface fused to a board and sold ready to use; high-pressure laminate is a separate sheet you glue to a substrate."],
+        ["Is melamine good for cabinets?", "Yes, especially for interiors and budget builds. It is affordable, consistent, and wipe-clean, though it can chip on cut edges."],
+        ["How do I cut melamine without chipping?", "Use a fine-tooth or melamine blade, score the cut line, support the exit face, and band the visible edges afterward."],
+        ["Is laminate better than melamine?", "Laminate is tougher and better for high-wear surfaces, but it requires gluing to a substrate. For cabinet boxes, melamine is usually enough."],
+        ["Can I edge-band melamine?", "Yes. Edge banding covers the chip-prone cut edges and gives a finished look, so plan it into your part sizes."]
+      ],
+      sources: [
+        ["Compare: MDF vs particle board", "/compare/mdf-vs-particle-board/", "Understand the cores under melamine surfaces."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Lay out surfaced panels like sheet goods."]
+      ]
+    }
+  },
+  {
+    slug: "edge-banding-plywood-edges-guide",
+    category: "CutList",
+    title: "Edge Banding Plywood Edges: A Beginner's Guide",
+    description: "How to edge band plywood: iron-on vs glue-on banding, trimming, and where edges show. Hide plywood plies for a finished cabinet and shelf look.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Why Band Plywood Edges", "Cut plywood shows its layered plies and any voids on the edge, which looks unfinished and can splinter. Edge banding covers the edge with a thin strip of matching wood veneer or PVC, giving a clean, finished look and protecting the edge. Anywhere an edge shows on a cabinet or shelf is a candidate for banding."],
+      ["Iron-On vs Glue-On Banding", "Iron-on veneer banding has heat-activated glue on the back; you press it with a household iron and it bonds. It is easy and cheap, ideal for beginners. Glue-on and PVC banding (often applied with an edgebander) are more durable and used in production. For most DIY work, iron-on veneer is the go-to."],
+      ["Applying and Trimming", "Cut the banding slightly long and wide, iron or glue it on, then trim the overhang flush with a banding trimmer, sharp chisel, or sanding block. Work carefully at corners and ease the edges lightly so they are smooth. Clean trimming is what separates a tidy job from a rough one."],
+      ["Where to Band and Where to Skip", "Band edges that show: shelf fronts, cabinet side fronts, door and drawer edges if not solid-wood. Skip edges that are hidden inside the carcass or covered by a face frame. Banding everything wastes time and material; band only what the eye will see."],
+      ["Plan Banding Into the Cut List", "Banding adds a small amount to a part's finished width, and it is a step to schedule. Note which edges of which parts get banded in your cut list so you cut to the right size and do not forget an edge after assembly, when it is harder to reach."]
+    ],
+    checklist: ["Band any plywood edge that shows.", "Use iron-on veneer banding for easy DIY jobs.", "Trim the overhang flush and ease the edges.", "Skip hidden or frame-covered edges.", "Note banded edges in the cut list."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Edge banding options",
+      comparisonColumns: ["Type", "Ease", "Durability", "Best for"],
+      comparisonRows: [
+        ["Iron-on veneer", "Easy", "Good", "DIY cabinets"],
+        ["PVC banding", "Harder", "Tough", "Production"],
+        ["Solid-wood edge", "More work", "Toughest", "Show edges"],
+        ["No banding", "None", "Low", "Hidden edges"]
+      ],
+      faqs: [
+        ["What is edge banding for plywood?", "A thin strip of veneer or PVC applied to a cut plywood edge to cover the plies, giving a finished look and protecting the edge."],
+        ["How do I apply iron-on edge banding?", "Cut it slightly oversize, press it on with a household iron to activate the glue, then trim the overhang flush and ease the edges."],
+        ["Do I need to band every plywood edge?", "No. Band only edges that show. Skip edges hidden inside the carcass or covered by a face frame."],
+        ["Is iron-on or glue-on banding better?", "Iron-on veneer is easiest for DIY. PVC and glue-on are more durable and common in production. Solid-wood edges are toughest of all."],
+        ["Does edge banding change my part sizes?", "Slightly. Banding adds a little to the finished edge, so note banded edges in the cut list and account for it."]
+      ],
+      sources: [
+        ["Templates: bookcase cut list", "/templates/bookcase-cut-list/", "Shelf and side parts with edges that show."],
+        ["Compare: plywood vs MDF", "/compare/plywood-vs-mdf/", "Edge behavior differs by panel material."]
+      ]
+    }
+  },
+  {
+    slug: "cut-list-for-base-cabinets",
+    category: "CutList",
+    title: "Cut List for Base Cabinets: Parts and Sizes",
+    description: "A base cabinet cut list: sides, bottom, stretchers, back, shelf, and toe kick with typical sizes. Plan kitchen base cabinet plywood parts the right way.",
+    kicker: "Cabinets",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Standard Base Cabinet Dimensions", "Most kitchen base cabinets are about 34-1/2 inches tall (to fit a 36-inch counter with a 1-1/2-inch top), 24 inches deep, and a chosen width. Those targets set the panel sizes. Starting from standard dimensions keeps your cabinets compatible with counters, appliances, and standard hardware."],
+      ["The Core Panels", "A base cabinet needs two sides, a bottom, a back, and usually top stretchers rather than a full top (the counter goes on top). Sizes follow from the cabinet dimensions and joinery: sides set height and depth, the bottom and stretchers set width, and the back keeps it square. Add an adjustable shelf if wanted."],
+      ["The Toe Kick", "Base cabinets sit on a recessed toe kick, usually about 4 inches tall and set back 3 inches, so you can stand close to the counter. The toe kick can be part of the sides (notched) or a separate base platform the boxes sit on. Decide which method before cutting, as it changes the side panel shape."],
+      ["A Typical Parts List", "For one 24-inch-wide base cabinet in 3/4-inch plywood with a 1/4-inch back: two sides at depth by height, one bottom, two top stretchers, a back panel, an optional shelf, plus toe-kick parts. Multiply by the number of cabinets and batch identical parts so they cut together cleanly."],
+      ["From List to Sheets", "Group the repeated parts, set your kerf, and lay them out to see how many sheets a run of base cabinets needs. A template gives you the structure; adjust widths to your kitchen and let the calculator pack the panels onto sheets."]
+    ],
+    checklist: ["Start from standard 34-1/2 by 24 inch dimensions.", "List sides, bottom, stretchers, back, and shelf.", "Decide the toe-kick method before cutting.", "Batch identical parts across cabinets.", "Lay the parts on sheets to get a sheet count."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Base cabinet parts (one 24-inch cabinet)",
+      comparisonColumns: ["Part", "Qty", "Material", "Sets"],
+      comparisonRows: [
+        ["Side", "2", "3/4 in plywood", "Height, depth"],
+        ["Bottom", "1", "3/4 in plywood", "Width"],
+        ["Top stretcher", "2", "3/4 in plywood", "Width, racking"],
+        ["Back", "1", "1/4 in plywood", "Square"]
+      ],
+      faqs: [
+        ["What are the standard base cabinet dimensions?", "About 34-1/2 inches tall and 24 inches deep, in a chosen width, so a 1-1/2-inch counter lands at 36 inches."],
+        ["What parts are in a base cabinet cut list?", "Two sides, a bottom, top stretchers, a back, an optional shelf, and toe-kick parts, sized from the cabinet dimensions and joinery."],
+        ["How tall is a kitchen toe kick?", "Usually about 4 inches tall and set back about 3 inches, either notched into the sides or built as a separate base platform."],
+        ["Do base cabinets need a full top?", "No. They use top stretchers because the countertop spans the top. A full top is unnecessary and wastes material."],
+        ["How many sheets for a run of base cabinets?", "It depends on widths and counts. Batch identical parts and lay them out on sheets with a calculator to get the number."]
+      ],
+      sources: [
+        ["Templates: kitchen cabinet cut list", "/templates/kitchen-cabinet-cut-list/", "A base and wall cabinet starting cut list."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Pack base cabinet panels onto sheets."]
+      ]
+    }
+  },
+  {
+    slug: "cut-list-for-wall-cabinets",
+    category: "CutList",
+    title: "Cut List for Wall Cabinets: Parts and Sizes",
+    description: "A wall cabinet cut list: sides, top, bottom, back, shelves, and nailer with typical sizes. Plan upper kitchen cabinet plywood parts cleanly.",
+    kicker: "Cabinets",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Standard Wall Cabinet Dimensions", "Wall (upper) cabinets are commonly 30, 36, or 42 inches tall, 12 inches deep, and a chosen width, mounted so the bottom clears the counter and backsplash. Unlike base cabinets, they have a full top and bottom because nothing sits on them. Standard depths keep them clear of the counter below."],
+      ["The Core Panels", "A wall cabinet needs two sides, a top, a bottom, a back, adjustable shelves, and a nailer (a rail at the back top for screwing into studs). Sides set height and depth; top and bottom set width; the back squares the box and helps carry weight to the wall through the nailer."],
+      ["The Hanging Nailer", "Because wall cabinets carry their load into the wall, a sturdy nailer or hanging rail at the back top is essential. It gives a solid place to drive screws into studs. Some designs add a bottom rail too. Plan the nailer into the cut list; skipping it risks a cabinet pulling off the wall."],
+      ["A Typical Parts List", "For one 30-inch-wide wall cabinet in 3/4-inch plywood with a 1/4-inch back: two sides, a top, a bottom, a back panel, two adjustable shelves, and a nailer. Multiply by your cabinet count and batch identical parts so the run cuts efficiently."],
+      ["Planning the Sheets", "Wall cabinet panels are smaller than base panels, so they often nest efficiently. Group repeats, set kerf, and lay them out to count sheets. A template plus a calculator turns a row of uppers into a tidy sheet plan quickly."]
+    ],
+    checklist: ["Use 12-inch depth and a standard height.", "Include a full top and bottom.", "Add a sturdy hanging nailer at the back.", "List shelves as adjustable parts.", "Batch repeats and lay out on sheets."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Wall cabinet parts (one 30-inch cabinet)",
+      comparisonColumns: ["Part", "Qty", "Material", "Sets"],
+      comparisonRows: [
+        ["Side", "2", "3/4 in plywood", "Height, depth"],
+        ["Top / bottom", "2", "3/4 in plywood", "Width"],
+        ["Shelf", "2", "3/4 in plywood", "Storage"],
+        ["Nailer", "1", "3/4 in plywood", "Wall mounting"]
+      ],
+      faqs: [
+        ["What depth are wall cabinets?", "Usually 12 inches deep, so they clear the counter below, with heights of 30, 36, or 42 inches and a chosen width."],
+        ["What parts are in a wall cabinet cut list?", "Two sides, a top, a bottom, a back, adjustable shelves, and a hanging nailer, sized from the cabinet dimensions."],
+        ["Why do wall cabinets need a nailer?", "The nailer is a back rail that gives a solid place to screw into wall studs, carrying the cabinet's load safely into the wall."],
+        ["Do wall cabinets have a full top?", "Yes, unlike base cabinets, because nothing sits on top of them. They get both a full top and a full bottom."],
+        ["How many shelves go in a wall cabinet?", "Typically one to two adjustable shelves for a 30-36 inch cabinet, more for taller ones, planned as adjustable parts in the cut list."]
+      ],
+      sources: [
+        ["Templates: kitchen cabinet cut list", "/templates/kitchen-cabinet-cut-list/", "Base and wall cabinet cut list to start from."],
+        ["Learn: how many sheets of plywood do I need", "/learn/how-many-sheets-of-plywood-do-i-need/", "Turn the parts into a sheet count."]
+      ]
+    }
+  },
+  {
+    slug: "plywood-needed-for-a-kitchen",
+    category: "CutList",
+    title: "How Much Plywood Do You Need for a Kitchen?",
+    description: "Estimate plywood for a kitchen remodel: how to count sheets for base and wall cabinets, drawers, and panels, plus waste allowance and a quick method.",
+    kicker: "Estimating",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Why a Rough Estimate Helps First", "Before a detailed cut list, a rough sheet estimate tells you the order of magnitude and the budget. A typical cabinet run uses more plywood than people expect once you count sides, bottoms, shelves, backs, and drawer parts. A first estimate prevents the surprise of running short mid-project."],
+      ["Estimate by Cabinet Count", "A quick method is per-cabinet averages: a base cabinet uses roughly one sheet of 3/4-inch plywood including its share of drawers, and a wall cabinet a bit less. Backs come from thinner stock. Multiply your cabinet count by these averages for a starting sheet number, then refine with a real cut list."],
+      ["Don't Forget Drawers, Backs, and Panels", "Drawer boxes, end panels, fillers, and toe kicks add up. Drawers in particular consume more plywood than expected across a kitchen. Add thinner sheets for backs and drawer bottoms. Counting only the cabinet boxes underestimates the total; include every part category."],
+      ["Add a Waste Allowance", "Real layouts never use 100 percent of a sheet. Add roughly 15-20 percent for kerf, offcuts, grain direction, and the occasional defect or mistake. A kitchen-sized project benefits from a modest buffer so one bad cut does not mean another trip for material."],
+      ["Refine With a Real Cut List", "The estimate gets you to a budget and a shopping plan; a real cut list gets you the exact number. Enter every part, set kerf, and lay them on sheets to replace the rough average with a precise count before you buy."]
+    ],
+    checklist: ["Start with a rough per-cabinet estimate.", "Count base and wall cabinets separately.", "Add drawers, backs, panels, and toe kicks.", "Include a 15-20 percent waste allowance.", "Refine the number with a real cut list."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Rough plywood estimate per cabinet",
+      comparisonColumns: ["Cabinet type", "3/4 in sheets", "Thin sheets", "Note"],
+      comparisonRows: [
+        ["Base cabinet", "~1", "Share of back", "Includes drawers"],
+        ["Wall cabinet", "~0.6", "Share of back", "Smaller panels"],
+        ["Tall/pantry", "~1.5-2", "Back", "Large panels"],
+        ["Allowance", "+15-20%", "+15-20%", "Waste buffer"]
+      ],
+      faqs: [
+        ["How much plywood does a kitchen need?", "It varies, but roughly one sheet of 3/4-inch plywood per base cabinet including drawers, less per wall cabinet, plus thin sheets for backs, then a 15-20 percent waste buffer."],
+        ["How do I estimate plywood for cabinets?", "Multiply cabinet counts by per-cabinet sheet averages, add drawers, backs, and panels, then refine with a real cut list for the exact number."],
+        ["Do drawers use a lot of plywood?", "More than people expect. Across a kitchen, drawer boxes and bottoms add up, so include them separately in the estimate."],
+        ["How much waste allowance should I add?", "About 15-20 percent for kerf, offcuts, grain direction, and the occasional defect or mistake, so you do not run short."],
+        ["Is a rough estimate accurate enough to buy material?", "Use it for budgeting and a first order, then confirm with a detailed cut list before committing to the final purchase."]
+      ],
+      sources: [
+        ["Learn: how many sheets of plywood do I need", "/learn/how-many-sheets-of-plywood-do-i-need/", "Method for turning parts into a sheet count."],
+        ["Templates: kitchen cabinet cut list", "/templates/kitchen-cabinet-cut-list/", "A cabinet cut list to refine the estimate."]
+      ]
+    }
+  },
+  {
+    slug: "how-to-cut-down-plywood-without-a-table-saw",
+    category: "CutList",
+    title: "How to Cut Down Plywood Without a Table Saw",
+    description: "Break down full plywood sheets without a table saw: circular saw and straightedge, track saw, and support tips for straight, safe cuts at home.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["You Don't Need a Table Saw", "Plenty of accurate plywood work happens without a table saw. A circular saw with a straightedge, or a track saw, breaks down full sheets cleanly and safely, often better than wrestling a 4x8 sheet across a table saw. For most home shops, this is the practical way to start a cut list."],
+      ["Circular Saw and Straightedge", "Clamp a straight board or a manufactured guide along your cut line, offset by the distance from the saw's blade to the edge of its base. Run the saw base against the guide for a straight cut. A shop-made guide with a fixed offset makes setup fast and repeatable."],
+      ["Support the Whole Sheet", "Lay the sheet on rigid foam insulation or several sawhorses with cross supports, so both sides of the cut stay supported and cannot pinch the blade or fall. Cutting through into foam is cheap and keeps the cut flat. Unsupported offcuts bind blades and tear edges."],
+      ["Track Saws Make It Easy", "A track saw is a circular saw on a guide rail, giving splinter-free, dead-straight cuts with minimal setup. Drop the rail on the line and cut. It is the cleanest no-table-saw option and excels at breaking down sheets, which is the hardest part of any sheet-goods project."],
+      ["Break Down, Then Refine", "Use these methods to break the full sheet into manageable pieces following your cut list's first cuts. Smaller pieces are then easy to trim to final size with the same saw and guide, or on a smaller saw. Plan the cut order so the first cuts free the parts you need."]
+    ],
+    checklist: ["Use a circular saw with a clamped straightedge.", "Build a guide with a fixed blade offset.", "Support the whole sheet on foam or sawhorses.", "Consider a track saw for the cleanest cuts.", "Follow the cut list's first cuts to break down."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "No-table-saw cutting methods",
+      comparisonColumns: ["Method", "Cost", "Cut quality", "Setup"],
+      comparisonRows: [
+        ["Circular saw + straightedge", "Low", "Good", "Clamp a guide"],
+        ["Shop-made guide", "Low", "Good", "Fast, repeatable"],
+        ["Track saw", "Higher", "Excellent", "Drop and cut"],
+        ["Jigsaw", "Low", "Rough", "Not for straight cuts"]
+      ],
+      faqs: [
+        ["Can I cut plywood without a table saw?", "Yes. A circular saw with a straightedge or a track saw breaks down full sheets cleanly and is often safer than a table saw for big panels."],
+        ["How do I cut a straight line with a circular saw?", "Clamp a straightedge offset from the cut line by the saw's base-to-blade distance, and run the saw base against it."],
+        ["What should I rest plywood on to cut it?", "Rigid foam insulation or sawhorses with cross supports, so both sides stay supported and the cut does not pinch or drop."],
+        ["Is a track saw worth it for plywood?", "For breaking down sheets, yes. It gives splinter-free, straight cuts with little setup and excels at the hardest part of sheet work."],
+        ["What is the safest way to break down a full sheet?", "Support it fully on foam or sawhorses and use a circular saw or track saw with a guide, rather than pushing a heavy sheet across a table saw."]
+      ],
+      sources: [
+        ["Compare: track saw vs table saw for sheet goods", "/compare/track-saw-vs-table-saw-sheet-goods/", "Which saw suits breaking down sheets."],
+        ["Guide: how to cut plywood efficiently", "/guides/how-to-cut-plywood-efficiently/", "Full breakdown method and cut order."]
+      ]
+    }
+  },
+  {
+    slug: "straight-cuts-with-a-circular-saw-guide",
+    category: "CutList",
+    title: "Straight Cuts With a Circular Saw: Guide and Tips",
+    description: "Get dead-straight circular saw cuts: build a track guide, set the blade offset, support the work, and cut cleanly for accurate plywood parts.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["A Guide Turns a Circular Saw Into a Track Saw", "Freehand circular-saw cuts wander; a guide makes them straight. A clamped straightedge or a shop-made track gives the saw base something to ride against, producing cuts as straight as the guide. This single upgrade transforms a circular saw into a serious sheet-cutting tool for your cut list."],
+      ["Build a Shop-Made Track", "Glue a straight strip onto a wider base of thin plywood or hardboard, then run the saw once to trim the base to the exact blade line. Now the edge of the base is your cut line: align it to your mark, clamp, and cut. No offset math after the first trim."],
+      ["Set the Blade Offset (Without a Track)", "Using a plain straightedge, measure from the blade to the edge of the saw's base and clamp the straightedge that distance from your cut line. Keep the saw base firmly against the guide through the whole cut. Measure on both ends so the guide is parallel to the line."],
+      ["Support and Feed", "Support both sides of the cut so the offcut cannot pinch the blade or splinter as it falls. Feed steadily at a pace the blade handles without bogging. Let the blade reach full speed before entering the cut and keep moving smoothly to the end for a clean edge."],
+      ["Accuracy for the Cut List", "Straight, repeatable cuts are what make a cut list work: parts that are square and the right size assemble cleanly. A good guide plus a sharp blade gives circular-saw cuts the accuracy that earlier required a table saw, all from a portable, affordable setup."]
+    ],
+    checklist: ["Always cut against a guide, never freehand.", "Build a shop-made track for zero offset math.", "Measure the blade offset on both ends.", "Support both sides of the cut.", "Let the blade reach speed before cutting."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Guide options for a circular saw",
+      comparisonColumns: ["Guide", "Setup", "Accuracy", "Note"],
+      comparisonRows: [
+        ["Shop-made track", "Build once", "High", "Edge is the cut line"],
+        ["Clamped straightedge", "Per cut", "Good", "Needs offset"],
+        ["Rip fence accessory", "Quick", "Moderate", "Narrow rips only"],
+        ["Freehand", "None", "Low", "Avoid for parts"]
+      ],
+      faqs: [
+        ["How do I make a circular saw cut straight?", "Run the saw base against a clamped straightedge or a shop-made track. The cut is as straight as the guide you use."],
+        ["What is a shop-made circular saw track?", "A straight strip on a thin base, trimmed once by the saw so the base edge marks the exact cut line for easy alignment."],
+        ["How far should the straightedge be from the cut line?", "By the distance from the saw's blade to the edge of its base. Measure it, then clamp the guide that far from your mark on both ends."],
+        ["Why does my circular saw wander?", "Cutting freehand and pushing sideways. A guide and steady feed against it fix wandering and give straight, accurate cuts."],
+        ["Can a circular saw be as accurate as a table saw?", "With a good guide and sharp blade, yes, for straight cuts in sheet goods, which is what most cut lists need."]
+      ],
+      sources: [
+        ["Compare: circular saw vs table saw", "/compare/circular-saw-vs-table-saw/", "When each saw is the right tool."],
+        ["Guide: how to cut plywood efficiently", "/guides/how-to-cut-plywood-efficiently/", "Breaking sheets into accurate parts."]
+      ]
+    }
+  },
+  {
+    slug: "zero-clearance-insert-for-clean-cuts",
+    category: "CutList",
+    title: "Zero-Clearance Inserts for Clean Plywood Cuts",
+    description: "What a zero-clearance insert is, how it stops tearout, and how to make one. Get splinter-free plywood and melamine cuts on a table saw.",
+    kicker: "Technique",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["What a Zero-Clearance Insert Is", "A standard table-saw throat plate has a wide slot around the blade, leaving the veneer unsupported as the blade exits below. A zero-clearance insert closes that gap so the wood is supported right at the cut. The result is clean, splinter-free edges on plywood, melamine, and other tearout-prone materials."],
+      ["Why It Reduces Tearout", "Tearout happens where fibers lift into an open gap. With no gap beneath the cut, the fibers cannot splinter downward; they are sliced cleanly and held in place. A zero-clearance insert is one of the most effective, lowest-cost upgrades for cut quality on a table saw."],
+      ["Making Your Own", "Cut a blank insert from plywood or MDF to match your saw's throat opening. With the blade lowered, fit the blank, hold it down with a board or the fence, and slowly raise the spinning blade through it. The blade cuts its own zero-width slot. Add a riving knife slot if needed."],
+      ["Matching Inserts to Blades", "Each blade thickness and angle wants its own insert slot, so keep a dedicated insert for your main blade, and others for dado stacks or bevel cuts. Label them. A bevel cut needs its own insert because the slot is wider at an angle. Swapping inserts keeps every cut supported."],
+      ["Cleaner Parts, Less Finishing", "Splinter-free edges mean less sanding and filling, and parts that look right straight off the saw. For a cut list full of visible plywood parts, a zero-clearance insert pays back quickly in finish quality and time saved at the bench."]
+    ],
+    checklist: ["Use a zero-clearance insert for plywood and melamine.", "Make one from plywood or MDF to fit your saw.", "Raise the blade through the blank to cut the slot.", "Keep separate inserts for dado and bevel cuts.", "Expect cleaner edges and less finishing."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Insert types",
+      comparisonColumns: ["Insert", "Slot", "Use", "Tearout"],
+      comparisonRows: [
+        ["Standard plate", "Wide", "General", "More"],
+        ["Zero-clearance", "Blade-width", "Plywood, melamine", "Least"],
+        ["Dado insert", "Wide stack", "Dado cuts", "N/A"],
+        ["Bevel insert", "Angled", "Bevel cuts", "Less"]
+      ],
+      faqs: [
+        ["What is a zero-clearance insert?", "A table-saw throat plate with a slot exactly the blade's width, supporting the wood right at the cut to prevent tearout."],
+        ["How does a zero-clearance insert reduce tearout?", "It removes the gap beneath the cut, so face fibers cannot lift and splinter; they are sliced cleanly and held in place."],
+        ["How do I make a zero-clearance insert?", "Cut a blank to fit the throat, hold it down with the blade lowered, and slowly raise the spinning blade through it to cut its own slot."],
+        ["Do I need different inserts for different cuts?", "Yes. Keep separate inserts for your main blade, dado stacks, and bevel cuts, since each needs a different slot width."],
+        ["Is a zero-clearance insert worth it?", "Yes. It is a cheap upgrade that sharply improves edge quality on plywood and melamine, saving sanding and filling."]
+      ],
+      sources: [
+        ["Blog: how to avoid tearout cutting plywood", "/blog/how-to-avoid-tearout-cutting-plywood/", "More ways to get clean plywood edges."],
+        ["Learn: saw kerf explained", "/learn/saw-kerf-explained/", "How blade width relates to your cuts."]
+      ]
+    }
+  },
+  {
+    slug: "sawblade-tooth-count-for-plywood",
+    category: "CutList",
+    title: "What Sawblade Tooth Count for Plywood?",
+    description: "Choosing a sawblade for plywood: tooth count, ATB grind, and why 40-80 teeth give clean edges. Pick the right blade for plywood and melamine.",
+    kicker: "Materials",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Tooth Count Drives Cut Quality", "More teeth take smaller bites and leave smoother edges; fewer teeth cut faster but rougher. For plywood, where a clean veneer edge matters, a higher tooth count is the right trade-off. A coarse ripping blade is for solid lumber, not finish cuts in sheet goods."],
+      ["The Sweet Spot for Plywood", "A 40-tooth combination blade handles plywood reasonably for general work. For the cleanest edges, a 60-80 tooth blade, or a dedicated plywood/laminate blade, is better, especially on visible parts and melamine. On a 10-inch table saw, 60-80 teeth is a common plywood choice."],
+      ["Grind Matters Too", "An alternate top bevel (ATB) grind slices veneer cleanly, while a flat-top grind tears it. High-ATB or specific plywood blades are designed to shear the surface fibers. For melamine, a triple-chip or laminate blade resists chipping. The grind, not just the count, affects edge quality."],
+      ["Sharp Beats Everything", "A sharp 40-tooth blade cuts cleaner than a dull 80-tooth one. Tooth count helps, but a sharp, clean blade is the foundation. Pitch buildup and dull edges tear veneer regardless of count. Keep blades clean and sharp, and the right tooth count then pushes quality further."],
+      ["Match the Blade to the Cut List", "If your cut list is mostly visible plywood and melamine, invest in a good high-tooth or plywood blade. If it is rough breakdown, a combination blade is fine for first cuts, with the finish blade for final sizing. Matching blade to job balances speed and finish."]
+    ],
+    checklist: ["Use higher tooth counts for clean plywood edges.", "Choose 60-80 teeth for visible parts and melamine.", "Pick an ATB or plywood-specific grind.", "Keep the blade clean and sharp.", "Match the blade to the parts in the cut list."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Blade choice for sheet goods",
+      comparisonColumns: ["Teeth", "Edge", "Speed", "Best for"],
+      comparisonRows: [
+        ["24-30 (rip)", "Rough", "Fast", "Solid lumber rips"],
+        ["40 (combo)", "Decent", "Medium", "General plywood"],
+        ["60-80", "Clean", "Slower", "Visible plywood"],
+        ["Laminate/melamine", "Cleanest", "Slower", "Melamine, veneer"]
+      ],
+      faqs: [
+        ["What tooth count is best for cutting plywood?", "60-80 teeth on a 10-inch blade gives clean plywood edges. A 40-tooth combination blade works for general cuts; rougher rip blades tear veneer."],
+        ["Is a 40-tooth blade good for plywood?", "It is acceptable for general work, but 60-80 teeth or a plywood-specific blade gives cleaner edges on visible parts and melamine."],
+        ["Does blade grind matter for plywood?", "Yes. An alternate top bevel (ATB) grind slices veneer cleanly; flat-top grinds tear it. Melamine wants a triple-chip or laminate grind."],
+        ["Why does my plywood tear out even with many teeth?", "Likely a dull or dirty blade. A sharp, clean blade matters more than tooth count; pitch buildup and dull edges tear veneer regardless."],
+        ["What blade should I use for melamine?", "A triple-chip or dedicated laminate/melamine blade, which resists the chipping melamine is prone to on cut edges."]
+      ],
+      sources: [
+        ["Blog: how to avoid tearout cutting plywood", "/blog/how-to-avoid-tearout-cutting-plywood/", "Pair the right blade with good technique."],
+        ["Learn: saw kerf explained", "/learn/saw-kerf-explained/", "How blade kerf affects your cut list."]
+      ]
+    }
+  },
+  {
+    slug: "how-to-rip-narrow-strips-safely",
+    category: "CutList",
+    title: "How to Rip Narrow Strips Safely",
+    description: "Safely rip narrow strips of plywood and lumber: push sticks, a thin-rip jig, and which side to keep. Avoid kickback and get consistent narrow parts.",
+    kicker: "Safety",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Narrow Rips Are Where Accidents Happen", "Ripping thin strips near the blade is one of the riskier table-saw tasks: hands get close, offcuts can bind, and kickback is a real danger. With the right jigs and habits, narrow rips are safe and accurate. The goal is to keep hands clear and the cut consistent."],
+      ["Use Push Sticks and a Push Block", "Never push a narrow piece with your fingers near the blade. A push stick or push block keeps hands safely back while maintaining downward and forward pressure. Keep one within reach whenever ripping. For very narrow strips, a push block that rides over the fence is safer still."],
+      ["Keep the Strip on the Right Side", "Decide whether the narrow strip falls between the blade and fence or on the outside. Often it is safer to keep the wide piece against the fence and let the strip fall to the outside, using a thin-rip jig to set width, so the narrow piece is not trapped against the fence near the blade."],
+      ["A Thin-Rip Jig for Consistency", "A thin-rip jig sets the strip width on the outside of the blade, so you move the fence over for each cut and the strips come out identical without a trapped offcut. It makes repeated narrow strips, like edging or face-frame stock, both safer and more consistent."],
+      ["Plan Narrow Parts in the Cut List", "Edging, cleats, and face-frame parts are often narrow. Plan them in the cut list to come from safe, manageable pieces rather than ripping tiny strips off a full sheet. Breaking the sheet down first gives shorter, safer stock for the narrow rips."]
+    ],
+    checklist: ["Always use a push stick or push block.", "Keep hands well clear of the blade.", "Avoid trapping the narrow strip against the fence.", "Use a thin-rip jig for consistent strips.", "Plan narrow parts from manageable stock."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Narrow-rip aids",
+      comparisonColumns: ["Aid", "Keeps hands safe", "Consistency", "Note"],
+      comparisonRows: [
+        ["Push stick", "Yes", "N/A", "Basic must-have"],
+        ["Push block", "Yes", "N/A", "Better control"],
+        ["Thin-rip jig", "Yes", "High", "Strip on outside"],
+        ["Bare hands", "No", "Low", "Never near blade"]
+      ],
+      faqs: [
+        ["How do I rip narrow strips safely?", "Use a push stick or push block, keep the narrow strip from being trapped against the fence, and use a thin-rip jig for consistent width."],
+        ["Why are narrow rips dangerous?", "Hands get close to the blade and thin offcuts can bind and kick back. Jigs and push sticks keep hands clear and the cut controlled."],
+        ["What is a thin-rip jig?", "A jig that sets strip width on the outside of the blade, so you move the fence over for each cut and the strips fall free, not trapped."],
+        ["Should the strip fall inside or outside the blade?", "Often outside is safer, keeping the wide piece against the fence so the narrow strip is not trapped near the blade."],
+        ["Can I avoid narrow rips altogether?", "Often you can plan narrow parts from manageable stock and break the sheet down first, giving safer, shorter pieces to rip."]
+      ],
+      sources: [
+        ["Learn: how to read a cut list", "/learn/how-to-read-a-cut-list/", "Plan narrow parts safely into the list."],
+        ["Guide: how to cut plywood efficiently", "/guides/how-to-cut-plywood-efficiently/", "Break sheets down before fine rips."]
+      ]
+    }
+  },
+  {
+    slug: "crosscut-sled-basics-for-sheet-goods",
+    category: "CutList",
+    title: "Crosscut Sled Basics for Sheet Goods",
+    description: "Why a crosscut sled gives square, safe cuts on plywood and small parts, how it works, and when to use one over the miter gauge or fence.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["What a Crosscut Sled Does", "A crosscut sled rides in the table-saw miter slots and carries the workpiece past the blade on a flat platform with a fence. It gives dead-square crosscuts, supports the work fully, and keeps hands away from the blade. For small parts and accurate crosscuts in sheet goods, it is a major upgrade over the miter gauge."],
+      ["Square Cuts, Every Time", "Once a sled's fence is dialed in square to the blade, every crosscut comes out square without re-checking. This consistency matters for cabinet parts that must be square to assemble cleanly. A sled removes the variability of a loose miter gauge or freehand crosscutting."],
+      ["Safer Handling of Small Parts", "Cutting small pieces freehand or against the fence is risky; a sled holds them on a stable platform so hands stay clear and the part cannot rotate into the blade. Stops on the sled fence let you cut repeated parts to identical length safely, which is ideal for batches of cabinet or drawer pieces."],
+      ["Sled vs Miter Gauge vs Fence", "The rip fence is for long rips with the grain; never crosscut a wide panel against it alone, as the offcut can bind. A miter gauge crosscuts but supports less. A sled supports the whole piece and gives the best accuracy and safety for crosscutting sheet goods and parts."],
+      ["Fitting the Sled to the Cut List", "Use the sled for squaring panels to final length and for repeated short parts with a stop block. Break the sheet down first with a circular saw or track saw, then bring the manageable pieces to the sled for accurate, square final cuts that match the cut list."]
+    ],
+    checklist: ["Use a sled for square, supported crosscuts.", "Dial the fence square to the blade once.", "Add a stop block for repeated lengths.", "Never crosscut wide panels on the rip fence alone.", "Break sheets down before final sled cuts."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Crosscut options",
+      comparisonColumns: ["Tool", "Support", "Square", "Best for"],
+      comparisonRows: [
+        ["Crosscut sled", "Full", "Highest", "Panels, small parts"],
+        ["Miter gauge", "Partial", "Good", "Narrow crosscuts"],
+        ["Rip fence alone", "Risky", "N/A", "Rips only"],
+        ["Circular saw + guide", "Full", "Good", "Sheet breakdown"]
+      ],
+      faqs: [
+        ["What is a crosscut sled used for?", "Making dead-square, supported crosscuts on a table saw, especially for panels and small repeated parts, more safely than a miter gauge."],
+        ["Is a crosscut sled safer than a miter gauge?", "Generally yes for small and wide parts, because it supports the whole piece on a platform and keeps hands away from the blade."],
+        ["Can I crosscut plywood on the rip fence?", "Not a wide panel against the fence alone; the offcut can bind and kick back. Use a sled, miter gauge, or a circular saw with a guide."],
+        ["How do I cut repeated parts to the same length?", "Add a stop block to the sled fence so each part registers at the same length, giving identical pieces safely."],
+        ["Do I still need a track saw with a sled?", "Often yes. Break the full sheet down with a track or circular saw, then use the sled for accurate, square final cuts."]
+      ],
+      sources: [
+        ["Blog: how to batch cut repeated parts", "/blog/how-to-batch-cut-repeated-parts/", "Use stops for identical parts."],
+        ["Guide: how to cut plywood efficiently", "/guides/how-to-cut-plywood-efficiently/", "Breakdown then final cuts."]
+      ]
+    }
+  },
+  {
+    slug: "plywood-storage-and-flattening-tips",
+    category: "CutList",
+    title: "Plywood Storage and Flattening Tips",
+    description: "Store plywood flat to prevent warping: flat stacking, vertical leaning, climate, and how to flatten a bowed sheet. Keep sheets straight for clean cuts.",
+    kicker: "Workshop",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Why Storage Matters", "Plywood that warps or bows is hard to cut accurately and harder to assemble flat. Good storage keeps sheets flat and stable so your cut list produces straight parts. Poor storage, leaning a sheet against a wall for weeks, can bow it permanently and waste material."],
+      ["Flat Is Best", "The ideal is to store sheets flat and fully supported, stacked on a level platform off the floor. Flat storage resists sagging and bowing. If you must lean sheets vertically, keep them as close to vertical as possible and supported along their length, not at an angle that encourages a bow."],
+      ["Mind Moisture and Climate", "Plywood moves with humidity. Storing it in a damp garage or against a cold concrete wall invites moisture uptake and warping. Keep sheets off concrete, in a stable, dry environment, and let new plywood acclimate to the shop for a day or two before cutting precise parts."],
+      ["Flattening a Bowed Sheet", "A mildly bowed sheet can sometimes be improved by laying it flat with weight on it for a few days, or stickering it flat in a stable climate. Cutting a bowed sheet into smaller parts also reduces the bow's effect, since shorter pieces are flatter. Badly warped sheets are best relegated to small parts."],
+      ["Storage and the Cut List", "Plan to cut from flat, acclimated stock. If a sheet has a slight bow, lay out the cut list so large flat parts come from the flattest areas and smaller parts absorb the curve. Good material handling makes the difference between a clean build and a fight."]
+    ],
+    checklist: ["Store sheets flat and fully supported.", "Keep plywood off concrete floors and walls.", "Maintain a dry, stable climate.", "Let new sheets acclimate before precise cuts.", "Cut large flat parts from the flattest areas."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Storage methods",
+      comparisonColumns: ["Method", "Warp risk", "Space", "Note"],
+      comparisonRows: [
+        ["Flat, supported", "Lowest", "More floor", "Best"],
+        ["Near-vertical, supported", "Low", "Less floor", "Acceptable"],
+        ["Leaning at an angle", "High", "Less", "Avoid"],
+        ["Against concrete", "High", "N/A", "Moisture risk"]
+      ],
+      faqs: [
+        ["How should I store plywood to prevent warping?", "Flat and fully supported on a level platform off the floor, in a dry, stable climate. If leaning, keep it near vertical and supported."],
+        ["Does leaning plywood against a wall warp it?", "At an angle over time, yes. Keep leaned sheets near vertical and supported along their length, or store them flat."],
+        ["Can I flatten a warped sheet of plywood?", "A mild bow may improve under flat weight over days or by cutting into smaller, flatter parts. Badly warped sheets are best used for small pieces."],
+        ["Should plywood acclimate before cutting?", "Yes. Let new sheets sit in the shop a day or two to reach a stable moisture content before cutting precise parts."],
+        ["Why does plywood warp?", "Uneven moisture and poor support. Concrete floors, damp air, and angled leaning all encourage bowing over time."]
+      ],
+      sources: [
+        ["Learn: how to reduce plywood waste", "/learn/how-to-reduce-plywood-waste/", "Get the most from every sheet."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Lay out parts from your stock."]
+      ]
+    }
+  },
+  {
+    slug: "how-to-read-plywood-dimensions",
+    category: "CutList",
+    title: "How to Read Plywood Dimensions and Sizing",
+    description: "Understand plywood dimensions: nominal vs actual thickness, sheet sizes, and grain direction. Read sheet sizing correctly for an accurate cut list.",
+    kicker: "Materials",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Sheet Size Basics", "The standard plywood sheet is nominally 4 by 8 feet (48 by 96 inches), though some sheets are slightly oversized for trimming. Other sizes exist, like 5x5 Baltic birch. Knowing the real sheet dimensions, not just the nominal name, is the starting point for any accurate cut-list layout."],
+      ["Nominal vs Actual Thickness", "Plywood thickness is often nominal: a sheet sold as 3/4 inch may actually measure about 23/32 inch (around 0.72 inch), and 1/2 inch may be 15/32. This matters for joinery like dados, where the groove must match the real thickness. Always measure the actual sheet before cutting mating joints."],
+      ["Grain Direction", "The face grain of plywood usually runs the long way (parallel to the 8-foot dimension). Grain direction affects appearance on visible parts and, slightly, stiffness. For a cut list, note grain direction on visible panels so parts are cut with the grain running the right way, and lock rotation for those parts."],
+      ["Usable vs Nominal Area", "A 4x8 sheet is 32 square feet nominally, but trimming damaged edges, kerf, and grain-locked layouts mean you never use all of it. Reading dimensions correctly includes accounting for this gap, so your sheet count reflects real usable area, not the arithmetic maximum."],
+      ["Applying It to the Cut List", "Enter the actual sheet size and real thickness into your cut list, mark grain direction where it matters, and let the layout reflect reality. Getting these basics right prevents the classic errors of dados that do not fit and parts that run the wrong grain direction."]
+    ],
+    checklist: ["Use the real sheet size, not just the nominal name.", "Measure actual thickness before cutting joints.", "Note face grain direction on visible parts.", "Account for trim, kerf, and grain in usable area.", "Enter real dimensions into the cut list."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Nominal vs actual plywood",
+      comparisonColumns: ["Nominal", "Actual (approx)", "Matters for", "Note"],
+      comparisonRows: [
+        ["3/4 in", "~23/32 in", "Dados, joinery", "Measure it"],
+        ["1/2 in", "~15/32 in", "Backs, drawers", "Measure it"],
+        ["1/4 in", "~7/32 in", "Backs, panels", "Measure it"],
+        ["4x8 sheet", "48x96 in (often +)", "Layout", "Some oversize"]
+      ],
+      faqs: [
+        ["Why is 3/4 inch plywood not actually 3/4 inch?", "Plywood thickness is nominal; a 3/4-inch sheet often measures about 23/32 inch. Measure the actual thickness before cutting mating joints like dados."],
+        ["What size is a standard plywood sheet?", "Nominally 4 by 8 feet (48 by 96 inches), sometimes slightly oversized for trimming. Baltic birch is often 5x5 feet."],
+        ["Which way does plywood grain run?", "The face grain usually runs the long way, parallel to the 8-foot length. Note it for visible parts so grain runs correctly."],
+        ["How much usable area is in a 4x8 sheet?", "Nominally 32 square feet, but trimming, kerf, and grain-locked layouts mean you use less, so plan sheet counts on real usable area."],
+        ["Why does actual thickness matter for joinery?", "Dados and grooves must match the real panel thickness. Using the nominal size makes joints loose or tight, so always measure first."]
+      ],
+      sources: [
+        ["Blog: nominal vs actual lumber sizes", "/blog/nominal-vs-actual-lumber-sizes/", "The same idea for solid lumber."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Enter real sizes for an accurate layout."]
+      ]
+    }
+  },
+  {
+    slug: "nominal-vs-actual-lumber-sizes",
+    category: "CutList",
+    title: "Nominal vs Actual Lumber Sizes Explained",
+    description: "Why a 2x4 is not 2x4: nominal vs actual lumber dimensions, a quick reference, and how to plan cut lists and projects around real sizes.",
+    kicker: "Materials",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["The Classic Surprise", "A 2x4 does not measure 2 by 4 inches; it is actually about 1-1/2 by 3-1/2 inches. The nominal size names the rough-sawn dimension before drying and planing; the actual size is what you buy. Every dimensional lumber size has this gap, and ignoring it throws off projects and cut lists."],
+      ["Why the Difference Exists", "Lumber is sawn to a nominal size, then dried and planed smooth, removing material. The nominal name stuck for convenience. So a nominal 1x6 is actually about 3/4 by 5-1/2 inches. The reduction is roughly 1/2 inch on dimensions of 2 inches and up, and proportionally less on thin stock."],
+      ["A Quick Reference", "Common conversions: 1x2 is 3/4 by 1-1/2, 1x4 is 3/4 by 3-1/2, 1x6 is 3/4 by 5-1/2, 2x4 is 1-1/2 by 3-1/2, 2x6 is 1-1/2 by 5-1/2. Widths of 6 inches and up lose a bit more (5-1/2 not 6). Keep a chart handy until the numbers are second nature."],
+      ["Planning Around Real Sizes", "Design and cut-list with actual dimensions, not nominal. A bookcase built assuming a 1x12 is 12 inches wide will be 3/4 inch off (it is 11-1/4). Stack-ups of several boards multiply the error. Always do the math on actual sizes so parts and openings come out right."],
+      ["Mixing Lumber and Sheet Goods", "Projects often combine dimensional lumber and plywood. Plywood thickness is also nominal (a 3/4-inch sheet is about 23/32). When boards meet panels, use the real measurements of both so joints fit. A cut list built on actual sizes avoids the cumulative errors that nominal sizes hide."]
+    ],
+    checklist: ["Remember nominal names are not actual sizes.", "A 2x4 is really 1-1/2 by 3-1/2 inches.", "Keep a nominal-to-actual chart handy.", "Design and cut-list with actual dimensions.", "Use real sizes where lumber meets plywood."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Nominal to actual lumber",
+      comparisonColumns: ["Nominal", "Actual", "Nominal", "Actual"],
+      comparisonRows: [
+        ["1x2", "3/4 x 1-1/2", "2x4", "1-1/2 x 3-1/2"],
+        ["1x4", "3/4 x 3-1/2", "2x6", "1-1/2 x 5-1/2"],
+        ["1x6", "3/4 x 5-1/2", "2x8", "1-1/2 x 7-1/4"],
+        ["1x12", "3/4 x 11-1/4", "4x4", "3-1/2 x 3-1/2"]
+      ],
+      faqs: [
+        ["Why is a 2x4 not 2 by 4 inches?", "The nominal name is the rough-sawn size before drying and planing. The actual planed size is about 1-1/2 by 3-1/2 inches."],
+        ["What is the actual size of a 1x6?", "About 3/4 by 5-1/2 inches. Nominal widths of 6 inches and up lose a bit more than thinner boards."],
+        ["Do I design with nominal or actual sizes?", "Always actual. Designing or cut-listing on nominal sizes makes parts and openings off by the difference, which compounds across a project."],
+        ["Is plywood thickness nominal too?", "Yes. A 3/4-inch sheet is often about 23/32 inch. Use real measurements where boards and plywood meet so joints fit."],
+        ["How much smaller is actual lumber?", "Roughly 1/2 inch under nominal on dimensions of 2 inches and up, and proportionally less on thinner stock."]
+      ],
+      sources: [
+        ["Blog: how to read plywood dimensions", "/blog/how-to-read-plywood-dimensions/", "The same idea for sheet goods."],
+        ["WoodCutTool board foot calculator", "/board-foot-calculator/", "Estimate lumber by real volume."]
+      ]
+    }
+  },
+  {
+    slug: "sheet-goods-vs-solid-wood-projects",
+    category: "CutList",
+    title: "Sheet Goods vs Solid Wood: Choosing for a Project",
+    description: "Sheet goods vs solid wood: stability, cost, strength, and look. Decide when plywood beats boards and how to mix them in one woodworking project.",
+    kicker: "Materials",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Two Material Families", "Most furniture and cabinet projects choose between sheet goods (plywood, MDF) and solid wood (boards), or combine them. Sheet goods give large, stable panels; solid wood gives strength, workable edges, and traditional looks. Knowing each one's strengths guides both the design and the cut list."],
+      ["Stability Favors Sheet Goods", "Plywood's cross-laminated layers stay flat and resist the seasonal movement that makes wide solid-wood panels cup and split. For large panels, cabinet sides, tabletops, big doors, sheet goods are more stable and predictable. Solid wood moves with humidity, which must be designed around on wide parts."],
+      ["Strength and Edges Favor Solid Wood", "Solid wood takes joinery, holds an edge profile, and resists wear better at edges and corners. Face frames, drawer fronts, table legs, and trim are usually solid wood. It also shows real grain and can be shaped, where plywood edges need banding and cannot be profiled deeply."],
+      ["Cost and Workability", "Plywood gives a lot of stable panel area per dollar and cuts fast into large parts. Solid wood costs more per usable area for wide panels (you glue boards up) but is unmatched for small, strong, shaped parts. Many projects use plywood for panels and solid wood for frames and edges to balance cost and quality."],
+      ["Designing the Mix", "A common, effective approach: plywood carcasses and panels, solid-wood face frames, edges, and drawer fronts. The cut list then has a sheet-goods section and a solid-wood section. Deciding the mix up front keeps the material list and the budget clear from the start."]
+    ],
+    checklist: ["Use sheet goods for large stable panels.", "Use solid wood for edges, frames, and joinery.", "Design wide solid-wood parts for movement.", "Balance cost with a plywood-plus-solid mix.", "Split the cut list into sheet and solid sections."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Sheet goods vs solid wood",
+      comparisonColumns: ["Factor", "Sheet goods", "Solid wood", "Edge"],
+      comparisonRows: [
+        ["Panel stability", "High", "Moves seasonally", "Sheet goods"],
+        ["Edge & joinery", "Needs banding", "Excellent", "Solid wood"],
+        ["Cost per panel area", "Lower", "Higher", "Sheet goods"],
+        ["Shaping & profiles", "Limited", "Easy", "Solid wood"]
+      ],
+      faqs: [
+        ["Should I use plywood or solid wood?", "Use plywood for large, stable panels and solid wood for edges, frames, and joinery. Many projects mix both for the best result."],
+        ["Is plywood more stable than solid wood?", "For wide panels, yes. Plywood's layers resist the cupping and seasonal movement that affect wide solid-wood boards."],
+        ["When is solid wood better than plywood?", "For edges, face frames, drawer fronts, legs, and anywhere you profile, shape, or stress an edge, solid wood outperforms plywood."],
+        ["Is plywood cheaper than solid wood?", "Per panel area for wide parts, usually yes, since you would glue up boards for the same width. Solid wood wins for small, strong parts."],
+        ["Can I combine plywood and solid wood?", "Yes, and it is common: plywood carcasses and panels with solid-wood frames, edges, and drawer fronts, listed in separate cut-list sections."]
+      ],
+      sources: [
+        ["Compare: plywood vs MDF", "/compare/plywood-vs-mdf/", "Choosing among sheet materials."],
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Plan solid-wood board parts."]
+      ]
+    }
+  },
+  {
+    slug: "how-much-does-a-sheet-of-plywood-weigh",
+    category: "CutList",
+    title: "How Much Does a Sheet of Plywood Weigh?",
+    description: "Plywood sheet weight by thickness and type: 1/4, 1/2, and 3/4 inch, hardwood vs softwood vs MDF. Plan handling, transport, and shelf loads.",
+    kicker: "Materials",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Why Weight Matters", "Plywood weight affects how you transport, lift, and handle sheets, and how much a shelf or panel adds to a structure. A full 3/4-inch sheet is heavier than many expect, which is why breaking sheets down before fine work is safer and easier. Knowing rough weights helps plan handling and loads."],
+      ["Typical Sheet Weights", "Rough figures for a 4x8 sheet: 1/4-inch plywood around 22-25 lb, 1/2-inch around 40-50 lb, and 3/4-inch around 60-70 lb depending on species and core. These are approximate; actual weight varies with wood type, glue, and moisture. Treat them as planning estimates, not exact values."],
+      ["Type Changes the Number", "MDF is significantly heavier than plywood for the same thickness, a 3/4-inch MDF sheet can exceed 90 lb. Hardwood plywood is heavier than softwood. Particleboard is also heavy. If weight matters for transport or a wall cabinet's load, the panel type is as important as the thickness."],
+      ["Handling Heavy Sheets Safely", "A 60-70 lb sheet is awkward more than heavy; its size makes it hard to control. Break sheets down to manageable pieces early, get help or use a cart for full sheets, and support both sides when cutting. Planning the first breakdown cuts reduces the heavy, awkward handling."],
+      ["Weight in the Project Plan", "For wall-mounted cabinets and shelves, panel weight adds to the load on fasteners and walls. Heavier MDF doors, for instance, stress hinges more than plywood. Factor panel weight into both your handling plan and the structural side of the design."]
+    ],
+    checklist: ["Expect a 3/4-inch sheet around 60-70 lb.", "Remember MDF is much heavier than plywood.", "Break sheets down early for safer handling.", "Get help or a cart for full sheets.", "Factor panel weight into wall-mounted loads."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Approximate 4x8 sheet weight",
+      comparisonColumns: ["Material", "1/2 in", "3/4 in", "Note"],
+      comparisonRows: [
+        ["Softwood plywood", "~40 lb", "~60 lb", "Lightest"],
+        ["Hardwood plywood", "~45 lb", "~70 lb", "Heavier"],
+        ["MDF", "~60 lb", "~95 lb", "Heaviest"],
+        ["Particleboard", "~55 lb", "~85 lb", "Heavy"]
+      ],
+      faqs: [
+        ["How much does a 4x8 sheet of 3/4 plywood weigh?", "Roughly 60-70 lb depending on species and core. Hardwood plywood is heavier; softwood is lighter."],
+        ["Is MDF heavier than plywood?", "Yes, significantly. A 3/4-inch MDF sheet can exceed 90 lb, versus about 60-70 lb for plywood, which matters for doors and handling."],
+        ["How much does 1/2 inch plywood weigh?", "About 40-50 lb for a 4x8 sheet, varying with species, glue, and moisture content."],
+        ["Why does plywood weight matter?", "It affects transport, lifting, and the load panels add to shelves and wall cabinets. Heavier panels stress fasteners and walls more."],
+        ["How do I handle heavy plywood sheets safely?", "Break them down to smaller pieces early, get help or use a cart for full sheets, and support both sides of every cut."]
+      ],
+      sources: [
+        ["Compare: plywood vs MDF", "/compare/plywood-vs-mdf/", "Weight differences between panel types."],
+        ["Blog: plywood shelf span and sag guide", "/blog/plywood-shelf-span-and-sag-guide/", "How weight relates to shelf loads."]
+      ]
+    }
+  },
+  {
+    slug: "diy-floating-shelves-cut-list",
+    category: "CutList",
+    title: "DIY Floating Shelves Cut List and Plan",
+    description: "Build floating shelves: a plywood cut list for the shelf box and hidden cleat, sizes, and how to mount them strong. A clean, modern shelf project.",
+    kicker: "Projects",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["How Floating Shelves Work", "A floating shelf hides its support, usually a cleat screwed to the wall studs, inside a hollow shelf box that slides over it. The look is clean and modern with no visible brackets. The build is simple: a hidden cleat plus a wrap-around plywood box. The cut list covers both parts."],
+      ["The Hidden Cleat", "The cleat is a solid-wood or plywood strip fastened firmly to the wall studs; it carries all the load. It must hit studs, not just drywall, for any real weight. Size the cleat to fit snugly inside the shelf box. The strength of a floating shelf is entirely in the cleat and its fasteners."],
+      ["The Shelf Box", "The visible shelf is a hollow box: a top, a bottom, a front edge, and short end caps, built to slide over the cleat. Plywood with banded or solid-wood front edges looks clean. Keep the box depth and the cleat depth matched so the shelf sits level and tight when pushed home."],
+      ["A Typical Cut List", "For one 30-inch floating shelf in 3/4-inch plywood: a top and bottom at shelf depth by 30 inches, a front edge, two end caps, plus a solid-wood cleat sized to fit inside. Adjust the length and depth to your space, and band the front edge for a finished look. Multiply for several shelves."],
+      ["Mounting Strong", "Find and mark the studs, fasten the cleat level with appropriate screws into framing, then slide the box on and secure it to the cleat from beneath or the back. Keep loads sensible for the stud spacing and fasteners. A well-anchored cleat is what makes a floating shelf safe and solid."]
+    ],
+    checklist: ["Build a hidden cleat plus a wrap-around box.", "Anchor the cleat into wall studs, not drywall.", "Match the box depth to the cleat depth.", "Band or edge the visible front for a clean look.", "Secure the box to the cleat once mounted."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Floating shelf parts (one 30-inch shelf)",
+      comparisonColumns: ["Part", "Qty", "Material", "Note"],
+      comparisonRows: [
+        ["Top / bottom", "2", "3/4 in plywood", "Shelf depth x length"],
+        ["Front edge", "1", "Plywood/solid", "Banded or solid"],
+        ["End cap", "2", "3/4 in plywood", "Close the box"],
+        ["Cleat", "1", "Solid wood", "Into studs"]
+      ],
+      faqs: [
+        ["How do floating shelves stay up?", "A cleat fastened to the wall studs carries the load, hidden inside a hollow shelf box that slides over it, so no brackets show."],
+        ["What plywood for floating shelves?", "3/4-inch plywood for the box, with a banded or solid-wood front edge. The hidden cleat is solid wood or plywood anchored to studs."],
+        ["How much weight can a floating shelf hold?", "It depends on the cleat, fasteners, and stud spacing. Anchor the cleat into studs and keep loads sensible; the cleat is the strength."],
+        ["How deep should a floating shelf be?", "Match the box depth to the cleat and your needs, commonly 6-10 inches. Match cleat and box depth so the shelf sits level and tight."],
+        ["Can I build floating shelves from one sheet?", "Several short shelves can come from one sheet. Lay out the tops, bottoms, edges, and caps with a calculator to confirm."]
+      ],
+      sources: [
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Lay out the shelf box parts on a sheet."],
+        ["Templates: closet shelving cut list", "/templates/closet-shelving-cut-list/", "Related shelving cut list to adapt."]
+      ]
+    }
+  }
+];
+
+articles.push(...woodworkingSeoBatch);
+
+const woodworkingSeoBatch2 = [
+  {
+    slug: "plywood-workbench-build-cut-list",
+    category: "CutList",
+    title: "Plywood Workbench Build: Cut List and Plan",
+    description: "Build a sturdy plywood workbench: a full cut list for the top, legs, shelf, and aprons, plus sizing and assembly tips for a rock-solid shop bench.",
+    kicker: "Projects",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["A Bench Anyone Can Build", "A plywood workbench is one of the best first shop projects: flat, heavy, and simple. A doubled plywood top on a sturdy base gives a stable surface for everything else you build. This plan covers the parts and sizes so you can cut, assemble, and start working with confidence."],
+      ["Sizing the Bench", "A common bench is about 60 inches long, 24 inches deep, and 34 inches tall, comfortable for general work. Adjust to your space and height; a taller person may want 36 inches. The top, shelf, and aprons come from plywood, with the legs from plywood or 2x4 lumber. Set the size before cutting."],
+      ["The Doubled Top", "Two layers of 3/4-inch plywood glued together make a flat, heavy, rack-resistant top that shrugs off use. A single layer works for light tasks, but the doubled top is what makes a bench feel solid. Cut both layers the same size and glue them with even clamping pressure."],
+      ["A Typical Cut List", "For the bench: two top layers at 24 by 60 inches, a lower shelf around 22 by 56, two long aprons and two short aprons, plus four legs (plywood or 2x4). The aprons brace the legs and the shelf stiffens the base. Lay these on a sheet or two to confirm the material."],
+      ["Assembly and Stiffness", "Build a strong leg-and-apron base, add the lower shelf to resist racking, then attach the doubled top. Glue and screws make rigid joints. A bench earns its keep by being heavy and immovable, so do not skimp on the base bracing and the shelf that ties it together."]
+    ],
+    checklist: ["Size the bench to your space and height.", "Double the plywood top for stiffness.", "Cut both top layers identical and glue flat.", "Brace the base with aprons and a lower shelf.", "Use glue and screws for rigid joints."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Workbench parts",
+      comparisonColumns: ["Part", "Qty", "Size (in)", "Note"],
+      comparisonRows: [
+        ["Top layer", "2", "24 x 60", "Doubled 3/4 plywood"],
+        ["Lower shelf", "1", "22 x 56", "Stiffens base"],
+        ["Apron", "4", "4 x varies", "Braces legs"],
+        ["Leg", "4", "33-1/4", "Plywood or 2x4"]
+      ],
+      faqs: [
+        ["What plywood for a workbench top?", "Two layers of 3/4-inch plywood glued together make a flat, heavy, rack-resistant top. A single layer works only for light tasks."],
+        ["How tall should a workbench be?", "About 34 inches for general work, or 36 for a taller person. Set the height to what is comfortable for your typical tasks."],
+        ["How big should a plywood workbench be?", "A common size is 60 by 24 inches, adjustable to your space. Bigger benches need more support to stay flat and stiff."],
+        ["How do I make a workbench rigid?", "Brace the legs with aprons, add a lower shelf to resist racking, and use glue and screws. A heavy doubled top adds stability."],
+        ["How much plywood does a workbench need?", "Roughly one to two sheets for the top, shelf, and aprons. Lay the parts out with a calculator to confirm the count."]
+      ],
+      sources: [
+        ["Templates: workbench cut list", "/templates/workbench-cut-list/", "A ready workbench cut list to adapt."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Lay out bench parts on sheets."]
+      ]
+    }
+  },
+  {
+    slug: "garage-storage-wall-cut-list",
+    category: "CutList",
+    title: "Garage Storage Wall: Cut List and Layout",
+    description: "Plan a full garage storage wall: cabinets, open shelving, and a workbench in plywood. A cut list approach to maximize wall storage efficiently.",
+    kicker: "Projects",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Designing a Storage Wall", "A garage storage wall combines cabinets, open shelving, and often a bench into one efficient run. Planning it as a system, rather than piece by piece, lets you standardize part sizes, batch cuts, and use sheets efficiently. Start by sketching the wall zones, then turn each into a cut list."],
+      ["Standardize for Efficiency", "Pick a common cabinet width and shelf depth and repeat them across the wall. Repeated parts cut faster and nest better on sheets, lowering waste. A wall of identical-width cabinets with matching shelves is far more material-efficient than a row of one-off sizes."],
+      ["Mixing Closed and Open Storage", "Closed cabinets hide clutter and protect contents; open shelves give quick access to bins and bulky items. A practical wall uses lower cabinets for heavy or hidden items, open shelving above for bins, and a bench section for work. Plan each zone's parts into one combined cut list."],
+      ["Building the Cut List", "List the cabinet carcasses, shelves, and any bench parts together, group identical pieces, and set your kerf. A storage wall uses several sheets, so an optimized layout matters. Choosing shelf depths that divide a sheet evenly (12 or 16 inches) keeps waste low across the whole wall."],
+      ["Anchoring to the Wall", "Heavy garage storage must anchor into studs. Plan nailers on cabinets and cleats on shelves to carry load into framing. A storage wall holds real weight, so the mounting is as important as the boxes. Build the anchoring into both the design and the parts list."]
+    ],
+    checklist: ["Plan the wall as one system, not pieces.", "Standardize cabinet widths and shelf depths.", "Mix closed cabinets and open shelving by need.", "Combine all zones into one optimized cut list.", "Anchor heavy storage into wall studs."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Storage wall zones",
+      comparisonColumns: ["Zone", "Best for", "Parts", "Note"],
+      comparisonRows: [
+        ["Lower cabinets", "Heavy, hidden items", "Carcass, doors", "Anchor to studs"],
+        ["Open shelving", "Bins, quick access", "Shelves, cleats", "Sheet-friendly depth"],
+        ["Bench section", "Work surface", "Top, base", "Doubled top"],
+        ["Upper cabinets", "Light, seasonal", "Carcass, nailer", "Strong mounting"]
+      ],
+      faqs: [
+        ["How do I plan a garage storage wall?", "Sketch the wall into zones (cabinets, shelves, bench), standardize sizes, then combine everything into one optimized plywood cut list."],
+        ["How do I make garage storage material-efficient?", "Standardize cabinet widths and shelf depths so parts repeat and nest well, and choose shelf depths that divide a sheet evenly."],
+        ["Should garage storage be open or closed?", "Both. Closed cabinets hide clutter and heavy items; open shelves give quick access to bins. Mix them by what each zone holds."],
+        ["How do I anchor heavy garage cabinets?", "Plan nailers and cleats that screw into wall studs. Heavy storage must carry its load into framing, not just drywall."],
+        ["How many sheets for a garage storage wall?", "It depends on the wall length and zones. Combine all parts into one cut list and lay them out with a calculator."]
+      ],
+      sources: [
+        ["Templates: garage shelving cut list", "/templates/garage-shelving-cut-list/", "Heavy-duty shelving to include in the wall."],
+        ["Templates: kitchen cabinet cut list", "/templates/kitchen-cabinet-cut-list/", "Adapt cabinet parts for the garage."]
+      ]
+    }
+  },
+  {
+    slug: "under-stair-storage-cut-list",
+    category: "CutList",
+    title: "Under-Stair Storage: Cut List and Approach",
+    description: "Turn under-stair space into storage: drawers, cabinets, or shelves in the angled void. How to measure the slope and build a fitting plywood cut list.",
+    kicker: "Projects",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Awkward Space, Great Storage", "The triangular void under a staircase is prime storage if you work with its slope. Options include pull-out drawers, a small cabinet, or angled shelving. The challenge is the diagonal: parts must fit the rising ceiling. Careful measuring turns an awkward space into useful, custom storage."],
+      ["Measuring the Slope", "Measure the height at several points along the run, plus the depth and width, to capture the angle. The under-stair line follows the stair pitch, so parts at the tall end differ from the short end. Record these measurements precisely; the slope is what makes or breaks the fit."],
+      ["Choosing Drawers or Shelves", "Pull-out drawers use the deep space best and keep contents accessible without crawling in. A hinged cabinet door suits the taller end. Fixed shelves are simplest but reach into the space is limited. Many builds combine a tall cabinet at the high end with pull-outs along the run."],
+      ["Building the Angled Cut List", "Parts that meet the sloped ceiling need angled cuts; box parts in the usable lower zone are square. List the square carcass and drawer parts first, then the angled face and trim pieces sized to the measured slope. Confirm the angles before cutting the sloped parts, as they are unforgiving."],
+      ["Fitting and Trim", "Build the storage slightly smaller than the opening and trim it out to hide gaps along the irregular stair line. A face frame or trim board scribed to the slope gives a clean finished look. Plan that trim into the cut list so the final fit looks intentional, not improvised."]
+    ],
+    checklist: ["Measure heights along the slope precisely.", "Choose drawers for deep access, cabinets for the tall end.", "List square parts and angled parts separately.", "Confirm slope angles before cutting.", "Plan scribed trim to hide the stair line."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Under-stair options",
+      comparisonColumns: ["Option", "Access", "Build", "Best zone"],
+      comparisonRows: [
+        ["Pull-out drawers", "Excellent", "More work", "Deep run"],
+        ["Hinged cabinet", "Good", "Medium", "Tall end"],
+        ["Fixed shelves", "Limited", "Simple", "Any"],
+        ["Combination", "Best", "Most work", "Whole void"]
+      ],
+      faqs: [
+        ["How do I build under-stair storage?", "Measure the slope at several points, choose drawers or a cabinet, then build a cut list with square box parts and angled face parts to fit."],
+        ["What is the best under-stair storage?", "Pull-out drawers use the deep space best and stay accessible. A hinged cabinet suits the tall end; many builds combine both."],
+        ["How do I measure the under-stair slope?", "Record the height at multiple points along the run plus depth and width. The angled ceiling follows the stair pitch, so capture it precisely."],
+        ["Do under-stair parts need angled cuts?", "The parts meeting the sloped ceiling do; the lower box parts are square. List and cut them separately and confirm angles first."],
+        ["How do I hide gaps along the stair line?", "Build slightly undersized and add scribed trim or a face frame fitted to the slope for a clean, intentional finish."]
+      ],
+      sources: [
+        ["WoodCutTool cut list calculator", "/cut-list-calculator/", "Plan box and drawer parts."],
+        ["Templates: drawer box cut list", "/templates/drawer-box-cut-list/", "Pull-out drawer parts to adapt."]
+      ]
+    }
+  },
+  {
+    slug: "plywood-platform-bed-cut-list",
+    category: "CutList",
+    title: "Plywood Platform Bed: Cut List and Plan",
+    description: "Build a plywood platform bed: a cut list for the platform, supports, and frame by mattress size, plus storage options. A clean, sturdy DIY bed.",
+    kicker: "Projects",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["A Simple, Sturdy Bed", "A platform bed is a flat, supported surface for a mattress, no box spring needed. Plywood makes a clean, strong platform, and the build is straightforward: a supported platform on a frame or legs. It is a great project for a first piece of plywood furniture, with optional storage underneath."],
+      ["Size to the Mattress", "Start from the mattress size: a queen is about 60 by 80 inches, a king about 76 by 80, a full about 54 by 75, a twin about 38 by 75. The platform should match or slightly exceed the mattress, with the frame sized accordingly. Confirm your mattress dimensions before cutting, as sizes vary."],
+      ["Platform and Support", "The platform is one or more plywood panels supported so they cannot sag under load. Center support rails and legs (or a perimeter frame with cross slats) carry the weight. A solid, well-supported platform is what keeps the bed quiet and stable; under-support leads to sagging and creaks."],
+      ["A Typical Cut List", "For a queen platform in 3/4-inch plywood: the platform panel(s) at about 60 by 80 inches (often split for handling), perimeter frame pieces, center support rails, and legs. Splitting a large platform into two panels makes it easier to move and cut. Add storage boxes underneath if desired."],
+      ["Adding Storage", "The space under a platform bed suits drawers or open cubbies. Build storage boxes into the frame, or add pull-out drawers on the open sides. Plan these as a separate cut-list section. Under-bed storage turns dead space into a real benefit, especially in small rooms."]
+    ],
+    checklist: ["Size the platform to the mattress.", "Support the platform so it cannot sag.", "Split a large platform for easier handling.", "Use center rails and legs or a frame with slats.", "Add under-bed drawers or cubbies if wanted."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Platform bed by mattress",
+      comparisonColumns: ["Size", "Mattress (in)", "Platform", "Note"],
+      comparisonRows: [
+        ["Twin", "38 x 75", "Single panel", "Light"],
+        ["Full", "54 x 75", "May split", "Center support"],
+        ["Queen", "60 x 80", "Split panels", "Center support"],
+        ["King", "76 x 80", "Split panels", "Extra support"]
+      ],
+      faqs: [
+        ["What plywood for a platform bed?", "3/4-inch plywood for the platform and frame, well supported with center rails and legs so it carries the mattress and sleeper without sagging."],
+        ["How big is a queen platform bed?", "About 60 by 80 inches to match a queen mattress, often built as two panels for easier handling. Confirm your mattress size first."],
+        ["Do platform beds need a box spring?", "No. A solid, supported plywood platform replaces the box spring, which is part of the appeal of a platform bed."],
+        ["How do I keep a platform bed from sagging?", "Support the platform with center rails and legs or a perimeter frame with cross slats, so the panel cannot deflect under load."],
+        ["Can I add storage under a platform bed?", "Yes. Build drawers or cubbies into the frame, planned as a separate cut-list section, to use the under-bed space."]
+      ],
+      sources: [
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Lay out platform and frame parts."],
+        ["Templates: drawer box cut list", "/templates/drawer-box-cut-list/", "Under-bed drawer parts."]
+      ]
+    }
+  },
+  {
+    slug: "plywood-desk-build-cut-list",
+    category: "CutList",
+    title: "Plywood Desk Build: Cut List and Plan",
+    description: "Build a plywood desk: a cut list for the top, legs or supports, and a drawer or shelf. Sizing for comfort and a clean modern look from one or two sheets.",
+    kicker: "Projects",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["A Desk From Plywood", "A plywood desk is a satisfying, quick build: a flat top on sturdy supports, with optional storage. Plywood gives a large, stable top and a modern look with banded edges. Whether a simple writing desk or a larger work surface, the build comes down to a top and a base, with a cut list to match."],
+      ["Comfortable Dimensions", "A common desk height is about 29-30 inches; the top depth around 24-30 inches and width to suit your space. A standing desk runs higher (around 40-42 inches). Set the height to your chair and comfort before cutting, since a desk at the wrong height is a daily annoyance."],
+      ["Top and Base", "The top is a plywood panel, often with a doubled or edged front for a thicker look and stiffness. The base can be plywood end panels, a trestle, or legs with aprons. Plywood end panels are simplest and very stable. Match the base style to the look you want and the tools you have."],
+      ["A Typical Cut List", "For a 48-inch desk in 3/4-inch plywood: a top at about 24 by 48 inches, two end panels or legs with aprons, a modesty panel or stretcher for rigidity, plus a drawer or shelf if wanted. Band the visible edges. One sheet often covers a simple desk; add a second for storage."],
+      ["Adding a Drawer or Shelf", "A shallow drawer under the top or an open shelf adds function. Build the drawer as a small box on slides, or fix a shelf between the supports. Plan these parts into the cut list. Keep the drawer shallow so knees still fit; comfort beats maximizing storage in a desk."]
+    ],
+    checklist: ["Set the height to your chair and comfort.", "Use a plywood top with a banded or doubled edge.", "Choose end panels, trestle, or legs for the base.", "Add a stretcher or modesty panel for rigidity.", "Keep any drawer shallow for knee room."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Desk base options",
+      comparisonColumns: ["Base", "Stability", "Build", "Look"],
+      comparisonRows: [
+        ["Plywood end panels", "High", "Simple", "Modern"],
+        ["Trestle", "High", "Medium", "Classic"],
+        ["Legs + aprons", "Good", "More parts", "Traditional"],
+        ["Metal legs", "Good", "Buy them", "Minimal"]
+      ],
+      faqs: [
+        ["What height should a desk be?", "About 29-30 inches for a seated desk, set to your chair and comfort. A standing desk runs around 40-42 inches."],
+        ["What plywood for a desk top?", "3/4-inch plywood, often with a doubled or edged front for a thicker look and extra stiffness, with banded visible edges."],
+        ["Can I build a desk from one sheet of plywood?", "A simple desk often fits on one sheet. Add a second sheet if you want a drawer, shelf, or larger top."],
+        ["What is the simplest desk base?", "Plywood end panels are simplest and very stable, joined by a stretcher or modesty panel for rigidity."],
+        ["Should a desk have a drawer?", "Optional. A shallow drawer or open shelf adds function; keep a drawer shallow so knee room is preserved under the top."]
+      ],
+      sources: [
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Lay out the top and base parts."],
+        ["Blog: how to hide plywood edges", "/blog/how-to-hide-plywood-edges/", "Finish the visible desk edges cleanly."]
+      ]
+    }
+  },
+  {
+    slug: "cabinet-door-styles-explained",
+    category: "CutList",
+    title: "Cabinet Door Styles Explained for Builders",
+    description: "Cabinet door styles compared: slab, shaker, raised panel, and inset vs overlay. How each affects the cut list, material, and the look of your cabinets.",
+    kicker: "Cabinets",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Doors Define the Look", "Cabinet boxes are mostly hidden; the doors set the style. The main choices are slab, shaker, and raised panel, plus how the door sits on the box (inset or overlay). Each affects material, the cut list, and the build difficulty. Choosing the style early shapes the whole parts plan."],
+      ["Slab Doors: Simple and Modern", "A slab door is a single flat panel, often plywood or MDF with banded edges. It is the simplest to make, fast to cut, and gives a clean, modern look. For a plywood project, slab doors keep the cut list short, just rectangular panels, and suit a contemporary kitchen or built-in."],
+      ["Shaker Doors: The Popular Middle", "A shaker door is a flat center panel inside a frame of rails and stiles, a classic, versatile look. It needs solid-wood or plywood frame parts plus a panel, so the cut list grows. Shaker is the most popular style for its balance of simplicity and traditional appeal."],
+      ["Raised Panel and Beyond", "Raised-panel doors have a shaped, contoured center panel in a frame, a traditional, more involved build needing router or shaper work. They give a richer, formal look. For most DIY plywood projects, slab or shaker is more practical; raised panel suits traditional kitchens and more advanced shops."],
+      ["Inset vs Overlay", "Beyond the door face, the door either sits inside the opening (inset) or over it (overlay). Inset is precise and traditional but unforgiving; overlay is forgiving and common. This choice affects door sizing in the cut list, so decide it alongside the door style before sizing the doors."]
+    ],
+    checklist: ["Choose the door style early; it shapes the plan.", "Use slab doors for the simplest plywood build.", "Pick shaker for a popular, versatile look.", "Reserve raised panel for advanced shops.", "Decide inset vs overlay before sizing doors."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Cabinet door styles",
+      comparisonColumns: ["Style", "Difficulty", "Parts", "Look"],
+      comparisonRows: [
+        ["Slab", "Easy", "One panel", "Modern"],
+        ["Shaker", "Medium", "Frame + panel", "Versatile"],
+        ["Raised panel", "Hard", "Frame + shaped panel", "Traditional"],
+        ["Glass frame", "Medium", "Frame + glass", "Display"]
+      ],
+      faqs: [
+        ["What are the main cabinet door styles?", "Slab (flat panel), shaker (flat panel in a frame), and raised panel (shaped panel in a frame), plus inset or overlay mounting."],
+        ["What is the easiest cabinet door to make?", "A slab door, a single flat panel with banded edges. It is fast to cut and keeps the cut list short for a modern look."],
+        ["Why are shaker doors so popular?", "They balance a simple flat center panel with a traditional framed look, suiting both modern and classic kitchens, and are moderate to build."],
+        ["What is the difference between inset and overlay doors?", "Inset doors sit inside the cabinet opening; overlay doors sit over it. Inset is precise and traditional; overlay is forgiving and common."],
+        ["Does door style change the cut list?", "Yes. Slab doors are one panel each; shaker and raised panel add frame parts. Inset versus overlay changes door sizing too."]
+      ],
+      sources: [
+        ["Blog: face frame vs frameless cabinets", "/blog/face-frame-vs-frameless-cabinets/", "How the box style pairs with doors."],
+        ["Compare: plywood vs MDF", "/compare/plywood-vs-mdf/", "Material choices for door panels."]
+      ]
+    }
+  },
+  {
+    slug: "how-to-calculate-sheets-for-a-project",
+    category: "CutList",
+    title: "How to Calculate How Many Sheets You Need",
+    description: "A clear method to calculate plywood sheets for any project: list parts, account for kerf and grain, add waste, and verify with a layout. Stop over- or under-buying.",
+    kicker: "Estimating",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Why Area Math Isn't Enough", "Dividing total part area by sheet area gives a floor, not the real answer. Parts are rectangles that must physically fit, with kerf between them and grain direction limiting rotation. Two projects with the same total area can need different sheet counts depending on how the parts pack. A layout, not just arithmetic, gives the true number."],
+      ["Step 1: List Every Part", "Write down every part with its size and quantity, including hidden ones like backs, cleats, and stretchers. Missing parts is the top cause of running short. A complete list is the foundation; everything after depends on it being accurate and total."],
+      ["Step 2: Account for Kerf and Grain", "Each cut removes a blade-width of material (kerf), and grain-locked parts cannot rotate to fit better. Both reduce how tightly parts pack. Set your real kerf and mark grain-locked parts so the count reflects how the sheet actually cuts, not an ideal packing."],
+      ["Step 3: Add a Waste Allowance", "Real layouts leave offcuts and trim. Add roughly 15-20 percent over the theoretical minimum for kerf, edges, grain, and the occasional mistake. This buffer is the difference between finishing the project and a second trip for one more sheet."],
+      ["Step 4: Verify With a Layout", "The reliable way to get the count is to lay the parts out on sheets, by hand or with a calculator, and see how many sheets it actually takes. The layout catches a part that does not fit and finds a tighter arrangement. That number, not the area math, is what you buy."]
+    ],
+    checklist: ["Do not trust area math alone for the count.", "List every part, including hidden ones.", "Set real kerf and mark grain-locked parts.", "Add a 15-20 percent waste allowance.", "Verify the count with an actual layout."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Estimating methods",
+      comparisonColumns: ["Method", "Effort", "Accuracy", "Note"],
+      comparisonRows: [
+        ["Area math", "Low", "Rough floor", "Underestimates"],
+        ["Area + 20% buffer", "Low", "Better", "Quick estimate"],
+        ["Hand layout", "Medium", "Good", "Catches misfits"],
+        ["Calculator layout", "Low", "Best", "Optimizes packing"]
+      ],
+      faqs: [
+        ["How do I calculate how many sheets of plywood I need?", "List every part, set kerf and grain, add a 15-20 percent waste allowance, then lay the parts out on sheets to get the real count."],
+        ["Why isn't total area divided by sheet area enough?", "Parts are rectangles that must physically fit with kerf between them, and grain limits rotation, so packing, not area, sets the count."],
+        ["How much waste should I add to a sheet estimate?", "About 15-20 percent over the theoretical minimum, covering kerf, trim, grain direction, and the occasional mistake."],
+        ["What is the most accurate way to count sheets?", "Lay the parts out on sheets with a calculator. The layout finds the tightest packing and catches parts that do not fit."],
+        ["What causes running short on plywood?", "Usually missing parts from the list or ignoring kerf and grain. A complete list and a real layout prevent it."]
+      ],
+      sources: [
+        ["Learn: how many sheets of plywood do I need", "/learn/how-many-sheets-of-plywood-do-i-need/", "The full sheet-count method."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Lay parts out to get the real count."]
+      ]
+    }
+  },
+  {
+    slug: "reducing-cost-on-a-plywood-project",
+    category: "CutList",
+    title: "Reducing Cost on a Plywood Project",
+    description: "Cut plywood project costs without cutting quality: smart grade choices, tighter layouts, less waste, and reusing offcuts. Practical ways to spend less.",
+    kicker: "Cost",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Cost Hides in Waste and Grade", "Most plywood project cost is the sheets, and most overspend comes from buying too many or buying too good a grade for the job. Trimming both, through tighter layouts and smarter grade choices, lowers cost without lowering the finished quality where it matters. The savings are in planning, not corner-cutting."],
+      ["Buy the Right Grade for Each Part", "Paying for an A-grade face on hidden parts wastes money. Use a good grade only where it shows, doors, finished ends, and a cheaper grade for backs, interiors, and structure. Splitting grades across visible and hidden parts is one of the easiest ways to cut cost with no visible difference."],
+      ["Tighten the Layout", "A better sheet layout fits more parts per sheet and may save a whole sheet. Place large parts first, group repeats, and test arrangements. One saved sheet on a multi-sheet project is real money. A calculator that optimizes the layout often finds that extra sheet's worth of parts."],
+      ["Reuse Offcuts", "Keep usable offcuts and design later parts around them. Small parts, drawer bottoms, cleats, and backs can come from leftovers instead of new sheets. A simple offcut shelf turns waste into free material. Over several projects, reused offcuts add up to real savings."],
+      ["Design for the Sheet", "Choosing part dimensions that divide a sheet evenly (like 16-inch shelves from a 48-inch width) wastes almost nothing. Designing with the 4x8 sheet in mind, rather than forcing odd sizes, lowers waste from the start. Sheet-friendly design is the cheapest saving of all."]
+    ],
+    checklist: ["Use good grade only where it shows.", "Tighten the layout to save whole sheets.", "Keep and reuse usable offcuts.", "Choose sheet-friendly part dimensions.", "Plan cost savings before buying material."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Where to save",
+      comparisonColumns: ["Lever", "Saving", "Effort", "Quality impact"],
+      comparisonRows: [
+        ["Grade split", "Large", "Low", "None visible"],
+        ["Tighter layout", "Whole sheets", "Low", "None"],
+        ["Reuse offcuts", "Ongoing", "Low", "None"],
+        ["Sheet-friendly sizes", "Large", "Design time", "None"]
+      ],
+      faqs: [
+        ["How do I reduce the cost of a plywood project?", "Use good grade only where it shows, tighten the sheet layout, reuse offcuts, and choose sheet-friendly part sizes to cut waste."],
+        ["Does plywood grade affect cost much?", "Yes. Higher grades cost more, so use them only on visible parts and cheaper grades on hidden structure to save without a visible difference."],
+        ["How does a better layout save money?", "Fitting more parts per sheet can save a whole sheet on a multi-sheet project, which is real money on every build."],
+        ["Are plywood offcuts worth keeping?", "Yes. Usable offcuts become drawer bottoms, cleats, and small parts on later projects, turning waste into free material."],
+        ["What is sheet-friendly design?", "Choosing part dimensions that divide a 4x8 sheet evenly, like 16-inch shelves, so layouts waste almost nothing from the start."]
+      ],
+      sources: [
+        ["Learn: how to reduce plywood waste", "/learn/how-to-reduce-plywood-waste/", "Detailed waste-reduction method."],
+        ["WoodCutTool wood waste calculator", "/wood-waste-calculator/", "See the cost of waste in your project."]
+      ]
+    }
+  },
+  {
+    slug: "plywood-offcut-storage-ideas",
+    category: "CutList",
+    title: "Plywood Offcut Storage Ideas That Work",
+    description: "Organize plywood offcuts so you actually reuse them: sorting by size, vertical racks, a usable-size threshold, and labeling. Turn scrap into free material.",
+    kicker: "Workshop",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Offcuts Are Free Material, If You Can Find Them", "A pile of plywood scraps is only useful if you can find the right piece when you need it. Most offcuts get wasted not because they are useless but because they are disorganized. A simple storage system turns that pile into a usable inventory that saves real money over time."],
+      ["Set a Usable-Size Threshold", "Decide a minimum size worth keeping, say, anything larger than a notebook, and recycle or toss smaller bits. Keeping every sliver fills the shop with unusable scrap. A clear threshold keeps the offcut store to genuinely useful pieces you will actually reach for."],
+      ["Sort by Size, Store Vertically", "Sort offcuts into a few size ranges (large panels, medium pieces, small usable bits) and store them vertically in a rack or bin so you can flip through and grab one. Vertical storage saves floor space and lets you see what you have, unlike a flat pile where good pieces hide at the bottom."],
+      ["Label Material and Thickness", "Mark each piece or bin with the material and thickness, since a 3/4-inch birch offcut and a 1/2-inch MDF scrap are not interchangeable. A quick pencil note saves digging and prevents grabbing the wrong stock. Labeling is the difference between a system and a pile."],
+      ["Design Projects to Use Them", "When planning a new cut list, check the offcut store first and design small parts, backs, drawer bottoms, cleats, around what you have. Using offcuts deliberately, rather than only when convenient, is what makes the storage pay off and keeps new-sheet purchases down."]
+    ],
+    checklist: ["Set a minimum size worth keeping.", "Recycle or toss unusable small bits.", "Sort by size and store vertically.", "Label material and thickness.", "Plan small parts from offcuts first."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Offcut storage methods",
+      comparisonColumns: ["Method", "Findability", "Space", "Note"],
+      comparisonRows: [
+        ["Vertical rack", "High", "Efficient", "See and grab"],
+        ["Sorted bins", "High", "Medium", "By size range"],
+        ["Flat pile", "Low", "Wasteful", "Good pieces hide"],
+        ["No threshold", "Low", "Cluttered", "Fills with scrap"]
+      ],
+      faqs: [
+        ["How should I store plywood offcuts?", "Set a usable-size threshold, sort by size range, store vertically so you can see and grab pieces, and label material and thickness."],
+        ["What size offcut is worth keeping?", "Set your own threshold, often anything larger than a notebook. Recycle or toss smaller bits so the store stays genuinely useful."],
+        ["Why store offcuts vertically?", "Vertical storage saves floor space and lets you flip through and see every piece, unlike a flat pile where good pieces hide at the bottom."],
+        ["Should I label offcuts?", "Yes. Mark material and thickness, since different species and thicknesses are not interchangeable, saving digging and wrong-stock mistakes."],
+        ["How do I actually use my offcuts?", "When planning a cut list, check the offcut store first and design small parts, backs, and cleats around what you already have."]
+      ],
+      sources: [
+        ["Learn: how to reduce plywood waste", "/learn/how-to-reduce-plywood-waste/", "Make the most of every sheet and offcut."],
+        ["Blog: reducing cost on a plywood project", "/blog/reducing-cost-on-a-plywood-project/", "Offcuts as a cost-saving lever."]
+      ]
+    }
+  },
+  {
+    slug: "best-glue-for-plywood-joints",
+    category: "CutList",
+    title: "Best Glue for Plywood Joints (and How to Use It)",
+    description: "Which glue for plywood: PVA wood glue, polyurethane, and epoxy compared, plus clamping and edge-gluing tips for strong plywood joints.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Glue Does the Heavy Lifting", "In plywood furniture, glue often carries more of the joint strength than fasteners, which mainly clamp the glue while it cures. Choosing the right glue and using it well makes joints that outlast the screws. For most plywood work, the choice is simpler than it seems."],
+      ["PVA Wood Glue Is the Default", "Standard yellow PVA wood glue is the right choice for most interior plywood joints. It is strong, easy to use, cleans up with water, and bonds wood and plywood well. For cabinets, shelves, and furniture kept indoors, PVA is hard to beat and inexpensive. Use a waterproof PVA for damp areas."],
+      ["When to Use Polyurethane or Epoxy", "Polyurethane glue foams to fill gaps and resists moisture, useful for outdoor or imperfect joints, but it is messier. Epoxy fills gaps, bonds to many materials, and is very strong and waterproof, ideal for structural or marine work. Both cost more and are for specific cases; PVA covers the everyday."],
+      ["Plywood Edges Drink Glue", "The exposed plies on a plywood edge are end-grain-like and soak up glue, weakening an edge joint. For edge gluing, size the edge first (a thinned glue coat that soaks in, then a full coat) or rely on mechanical joints like biscuits, dominoes, or dados rather than a plain glued edge."],
+      ["Clamp for a Tight Bond", "Glue needs even clamping pressure and full contact to bond. Apply an even coat, assemble, and clamp until the glue grabs (and leave it to cure fully before stressing the joint). Squeeze-out shows you had enough glue; wipe it before it dries. Good clamping is half of a strong glued joint."]
+    ],
+    checklist: ["Use PVA wood glue for most interior joints.", "Choose polyurethane or epoxy for damp or structural work.", "Size plywood edges before edge gluing.", "Use joinery, not bare glue, on edges.", "Clamp evenly and let joints cure fully."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Glue choices",
+      comparisonColumns: ["Glue", "Strength", "Water resistance", "Best for"],
+      comparisonRows: [
+        ["PVA (yellow)", "High", "Low-moderate", "Interior furniture"],
+        ["Waterproof PVA", "High", "Better", "Damp areas"],
+        ["Polyurethane", "High", "Good", "Gaps, outdoor"],
+        ["Epoxy", "Highest", "Excellent", "Structural, marine"]
+      ],
+      faqs: [
+        ["What is the best glue for plywood?", "Standard yellow PVA wood glue for most interior joints. Use waterproof PVA, polyurethane, or epoxy for damp, outdoor, or structural work."],
+        ["Is wood glue strong enough for plywood?", "Yes. A properly clamped PVA glue joint is very strong, often stronger than the surrounding wood, for interior furniture and cabinets."],
+        ["Why do plywood edges need special gluing?", "Exposed edge plies soak up glue like end grain, weakening the joint. Size the edge first or use joinery like biscuits or dados."],
+        ["When should I use epoxy on plywood?", "For structural, gap-filling, or waterproof joints, like marine or outdoor work. For everyday interior joints, PVA is simpler and sufficient."],
+        ["Do I need to clamp glued plywood joints?", "Yes. Even clamping pressure and full contact are essential for a strong bond. Squeeze-out confirms enough glue; let it cure before stressing it."]
+      ],
+      sources: [
+        ["Blog: pocket hole joinery for plywood", "/blog/pocket-hole-joinery-for-plywood/", "Fasteners that clamp glue in plywood."],
+        ["Blog: dado joints for shelving guide", "/blog/dado-joints-for-shelving-guide/", "Mechanical joints for strong edges."]
+      ]
+    }
+  },
+  {
+    slug: "pocket-hole-joinery-for-plywood",
+    category: "CutList",
+    title: "Pocket Hole Joinery for Plywood: A Practical Guide",
+    description: "Use pocket holes with plywood: screw length, hole settings, where they work, and where to avoid them. Fast, strong cabinet joints for DIY builds.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Why Pocket Holes Suit Plywood", "Pocket-hole joinery drives an angled screw through one part into another, with the help of a jig, giving fast, strong joints with no clamping while glue cures. For plywood cabinets and shelves, it is a quick, accessible way to assemble boxes and face frames, popular with DIY builders for good reason."],
+      ["Set the Jig for Material Thickness", "Pocket-hole jigs adjust for material thickness; set it to your plywood's actual thickness (remember 3/4-inch plywood is about 23/32). The right setting places the screw correctly so it pulls the joint tight without blowing out. Using the wrong thickness setting is the main cause of poor pocket-hole joints."],
+      ["Choose the Right Screw", "Use the screw length the jig recommends for your thickness, and coarse-thread screws for plywood and softwoods (fine-thread is for hardwood). The screw must reach into the mating part without poking through. Match screw length and thread to the material for a strong, clean joint."],
+      ["Where Pocket Holes Shine", "Pocket holes excel at face frames, attaching stretchers, joining cabinet parts, and quick boxes where the holes are hidden inside. They are fast and strong for these jobs. Add glue for extra strength and to keep the joint from shifting. For most plywood cabinet work, pocket holes plus glue are plenty."],
+      ["Where to Be Careful", "Pocket holes into the thin edge of plywood can be weaker because the screw bites into the layered edge; reinforce with glue or choose a different joint there. Visible pocket holes look unfinished, so place them where they hide. Used thoughtfully, they are a great tool; used everywhere, they can disappoint."]
+    ],
+    checklist: ["Set the jig to the plywood's actual thickness.", "Use the recommended screw length.", "Choose coarse-thread screws for plywood.", "Add glue for stronger joints.", "Hide pocket holes and avoid weak edge joints."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Pocket holes vs other joints",
+      comparisonColumns: ["Joint", "Speed", "Strength", "Best for"],
+      comparisonRows: [
+        ["Pocket holes", "Fast", "Good + glue", "Face frames, boxes"],
+        ["Dados", "Medium", "Strong", "Shelves, sides"],
+        ["Biscuits", "Medium", "Moderate", "Alignment, edges"],
+        ["Screws only", "Fast", "Lower", "Quick utility"]
+      ],
+      faqs: [
+        ["Are pocket holes good for plywood?", "Yes, for face frames, stretchers, and cabinet boxes. Set the jig to actual thickness, use the right screws, and add glue for strong, fast joints."],
+        ["What screw length for pocket holes in 3/4 plywood?", "Use the length your jig recommends for that thickness, with coarse-thread screws, so the screw reaches the mating part without poking through."],
+        ["Can I pocket-screw into a plywood edge?", "It is weaker because the screw bites into the layered edge. Reinforce with glue or choose a different joint for edge connections."],
+        ["Do pocket-hole joints need glue?", "Glue is not strictly required but adds strength and keeps the joint from shifting. For furniture, glue plus pocket screws is a strong combination."],
+        ["Where should I avoid pocket holes?", "On visible surfaces, since the holes look unfinished, and in thin plywood edges where they are weaker. Hide them inside the assembly."]
+      ],
+      sources: [
+        ["Blog: best glue for plywood joints", "/blog/best-glue-for-plywood-joints/", "Pair pocket screws with the right glue."],
+        ["Blog: cabinet carcass construction basics", "/blog/cabinet-carcass-construction-basics/", "Where joints go in a cabinet box."]
+      ]
+    }
+  },
+  {
+    slug: "dado-joints-for-shelving-guide",
+    category: "CutList",
+    title: "Dado Joints for Shelving: A How-To Guide",
+    description: "Cut strong dado joints for shelves and cabinets: matching the groove to plywood thickness, depth, and methods with a table saw or router.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Why Dados for Shelves", "A dado is a flat-bottomed groove that a shelf or panel sits in, giving a strong, self-aligning, load-bearing joint. For fixed shelves and cabinet sides, dados beat screws alone: the groove carries weight and holds the part square. They are a hallmark of solid cabinet construction."],
+      ["Match the Dado to Real Thickness", "The groove must match the actual plywood thickness, and since 3/4-inch plywood is really about 23/32, a 3/4-inch dado is too loose. Use an undersized or adjustable dado set, or measure and cut to the real thickness, for a snug fit. A sloppy dado defeats the joint's purpose."],
+      ["Setting Depth", "A dado is typically cut about one-third to one-half of the panel thickness deep, deep enough to hold and locate the part without weakening the side. Too shallow and it does not hold; too deep and it weakens the panel. Around 1/4 inch deep in 3/4-inch plywood is a common, solid choice."],
+      ["Cutting Methods", "A dado stack on a table saw cuts dados quickly and accurately, ideal for repeated shelf grooves. A router with a straight bit and guide works too, especially for stopped dados or away from a table saw. Either way, test the fit on scrap first, as a too-tight or too-loose dado is hard to fix later."],
+      ["Planning Dados in the Cut List", "Dados affect part sizing: a shelf in a dado must be cut wider by twice the dado depth to seat fully. Note which parts have dados and add the depth to their length. Forgetting this is a common cut-list error that leaves shelves too short for the grooves."]
+    ],
+    checklist: ["Use dados for strong, self-aligning shelves.", "Match the groove to actual plywood thickness.", "Cut dados about 1/4 inch deep in 3/4 plywood.", "Test the fit on scrap before the real parts.", "Add dado depth to shelf lengths in the cut list."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Dado methods",
+      comparisonColumns: ["Method", "Speed", "Best for", "Note"],
+      comparisonRows: [
+        ["Dado stack (table saw)", "Fast", "Repeated grooves", "Test fit first"],
+        ["Router + guide", "Medium", "Stopped dados", "Versatile"],
+        ["Multiple saw passes", "Slow", "No dado set", "Tedious"],
+        ["Loose fit + screws", "Fast", "Utility only", "Weaker"]
+      ],
+      faqs: [
+        ["What is a dado joint?", "A flat-bottomed groove cut across a panel that a shelf or part sits in, giving a strong, self-aligning, load-bearing joint for shelves and cabinets."],
+        ["Why doesn't a 3/4 inch dado fit 3/4 plywood?", "Plywood is undersized, about 23/32 inch, so a true 3/4-inch dado is loose. Cut to the real thickness with an adjustable or undersized dado set."],
+        ["How deep should a dado be?", "About one-third to one-half the panel thickness, commonly around 1/4 inch in 3/4-inch plywood, deep enough to hold without weakening the side."],
+        ["Can I cut dados with a router?", "Yes. A router with a straight bit and guide cuts dados, especially stopped ones, and works without a table saw or dado stack."],
+        ["Do dados change my part sizes?", "Yes. A shelf must be cut wider by twice the dado depth to seat fully, so add the depth to shelf lengths in the cut list."]
+      ],
+      sources: [
+        ["Blog: plywood shelf span and sag guide", "/blog/plywood-shelf-span-and-sag-guide/", "Dados help support load-bearing shelves."],
+        ["Blog: how to read plywood dimensions", "/blog/how-to-read-plywood-dimensions/", "Why actual thickness matters for dados."]
+      ]
+    }
+  },
+  {
+    slug: "how-to-finish-plywood-edges",
+    category: "CutList",
+    title: "How to Finish Plywood Edges Cleanly",
+    description: "Finish exposed plywood edges: edge banding, solid-wood lipping, filler, and paint. Make cut plywood edges look intentional on cabinets and shelves.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["The Edge Is the Tell", "A cut plywood edge shows its plies and any voids, the detail that marks a project as homemade if left raw. Finishing the edge is what makes plywood look like furniture. There are several ways, from quick banding to solid-wood lipping, each suiting a different look and effort level."],
+      ["Edge Banding for Speed", "Iron-on veneer banding is the fastest finished edge: press it on, trim flush, and the edge matches the face. It suits cabinets, shelves, and most visible edges. PVC banding is more durable. Banding is the go-to when you want a clean edge with minimal work."],
+      ["Solid-Wood Lipping for Durability", "Gluing a strip of solid wood to the edge gives the toughest, most furniture-like result, and lets you round over or profile the edge. It is more work than banding but far more durable, ideal for table edges, shelf fronts, and anywhere that takes wear or wants a shaped edge."],
+      ["Filler and Paint for Paint-Grade Work", "If the piece will be painted, you can fill the edge voids with wood filler, sand smooth, and paint over it for a solid-looking edge without banding. This works only for paint-grade projects; the filled edge would show under a clear finish. It is quick and cheap for painted cabinets."],
+      ["Choosing by Project", "Match the method to the piece: banding for most cabinets and shelves, solid-wood lipping for tables and high-wear edges, filler and paint for painted work. Plan the chosen method into the cut list, since lipping adds to part size and banding is a finishing step to schedule."]
+    ],
+    checklist: ["Never leave a visible plywood edge raw.", "Use iron-on banding for fast finished edges.", "Use solid-wood lipping for durable, shaped edges.", "Fill and paint edges on paint-grade work.", "Plan the edge method into the cut list."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Edge finishing methods",
+      comparisonColumns: ["Method", "Effort", "Durability", "Finish"],
+      comparisonRows: [
+        ["Veneer banding", "Low", "Good", "Clear or paint"],
+        ["PVC banding", "Low", "Tough", "Color match"],
+        ["Solid-wood lipping", "Higher", "Toughest", "Shapeable"],
+        ["Filler + paint", "Low", "Moderate", "Paint only"]
+      ],
+      faqs: [
+        ["How do I finish exposed plywood edges?", "Use iron-on veneer banding for speed, solid-wood lipping for durability and shaping, or filler and paint for paint-grade pieces."],
+        ["What is the easiest way to cover plywood edges?", "Iron-on veneer banding: press it on with a household iron, trim flush, and the edge matches the face with minimal effort."],
+        ["When should I use solid-wood edging?", "For table edges, shelf fronts, and high-wear or shaped edges, where banding would not hold up or you want to round or profile the edge."],
+        ["Can I just fill and paint plywood edges?", "Yes, for painted projects. Fill the void edge, sand, and paint. Under a clear finish the filled edge would show, so this is paint-only."],
+        ["Does edge finishing change part sizes?", "Solid-wood lipping adds to the part size; banding is a finishing step. Plan the chosen method into the cut list."]
+      ],
+      sources: [
+        ["Blog: edge banding plywood edges guide", "/blog/edge-banding-plywood-edges-guide/", "Detailed banding how-to."],
+        ["Blog: how to hide plywood edges", "/blog/how-to-hide-plywood-edges/", "More ways to disguise edges."]
+      ]
+    }
+  },
+  {
+    slug: "sanding-and-finishing-plywood-guide",
+    category: "CutList",
+    title: "Sanding and Finishing Plywood: A Guide",
+    description: "Sand and finish plywood without sanding through the veneer: grit progression, sealing, and oil vs poly vs paint. Get a smooth, durable plywood finish.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["The Veneer Is Thin", "Plywood's face is a thin veneer, so finishing it is different from solid wood: you can sand right through it. The goal is to smooth and finish without cutting through the surface ply. With a light touch and the right steps, plywood takes a beautiful finish."],
+      ["Sand Lightly, Progress Grits", "Start at a moderate grit (around 120-150) and progress to 180-220; going much coarser or pressing hard risks sanding through. Plywood often arrives fairly smooth, so it needs less sanding than solid wood. Light, even passes with the grain are all most plywood faces need."],
+      ["Seal Before Finishing", "Plywood and its edges absorb finish unevenly, leading to blotchiness. A sanding sealer or a thinned first coat seals the surface so the topcoat goes on evenly. Edges especially drink finish; seal them well. Sealing is the step that separates a blotchy finish from an even one."],
+      ["Oil, Poly, or Paint", "Penetrating oil gives a natural look and is easy to apply but offers less protection. Polyurethane (oil or water-based) builds a durable, protective film, good for tabletops and high-wear surfaces. Paint covers everything and suits paint-grade plywood. Choose by the look and the wear the piece will see."],
+      ["Finishing the Edges", "Whatever the face finish, the edges need attention: band or fill them first (raw plywood edges finish poorly), then finish to match. A well-finished face with raw edges looks unfinished. Treat the edges as part of the finishing plan, not an afterthought."]
+    ],
+    checklist: ["Sand lightly to avoid cutting through the veneer.", "Progress from about 120-150 to 180-220 grit.", "Seal the surface before the topcoat.", "Seal edges well; they drink finish.", "Finish the edges to match the face."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Finish options",
+      comparisonColumns: ["Finish", "Look", "Protection", "Ease"],
+      comparisonRows: [
+        ["Penetrating oil", "Natural", "Lower", "Easy"],
+        ["Polyurethane", "Built film", "High", "Medium"],
+        ["Paint", "Opaque", "High", "Medium"],
+        ["Wax over oil", "Soft sheen", "Low", "Easy"]
+      ],
+      faqs: [
+        ["How do I sand plywood without sanding through?", "Use a light touch and moderate grits (120-150 up to 180-220), sand with the grain, and avoid pressing hard or going too coarse on the thin veneer."],
+        ["Why seal plywood before finishing?", "Plywood and its edges absorb finish unevenly, causing blotchiness. A sanding sealer or thinned first coat evens out absorption for a smooth topcoat."],
+        ["What is the best finish for plywood?", "Oil for a natural easy finish, polyurethane for durable protection on high-wear surfaces, or paint for paint-grade work. Choose by look and wear."],
+        ["Do plywood edges need finishing too?", "Yes. Band or fill the edges first, then finish to match. Raw edges finish poorly and make a good face look unfinished."],
+        ["How smooth does plywood need to be sanded?", "Often less than solid wood, since it arrives fairly smooth. Light sanding to 180-220 grit is usually enough for a good finish."]
+      ],
+      sources: [
+        ["Blog: how to finish plywood edges", "/blog/how-to-finish-plywood-edges/", "Edge treatment before finishing."],
+        ["Blog: plywood paint grade vs stain grade", "/blog/plywood-paint-grade-vs-stain-grade/", "Choosing plywood for your finish."]
+      ]
+    }
+  },
+  {
+    slug: "plywood-paint-grade-vs-stain-grade",
+    category: "CutList",
+    title: "Plywood Paint Grade vs Stain Grade: Which to Buy",
+    description: "Paint-grade vs stain-grade plywood: face quality, species, cost, and finish. Choose the right plywood depending on whether you will paint or stain.",
+    kicker: "Materials",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Finish Decides the Grade", "Whether you plan to paint or stain a project should decide which plywood you buy. Paint hides the surface, so a cheaper face works; stain and clear finishes show every detail, so the face species and quality matter. Buying the wrong one means either wasted money or a disappointing finish."],
+      ["Paint-Grade Plywood", "Paint-grade plywood has a smooth, paintable face but the species and grain are not important since paint covers them. Birch or a smooth utility face is common. It is cheaper than premium stain-grade and ideal for painted cabinets, shaker panels, and anything getting an opaque finish."],
+      ["Stain-Grade Plywood", "Stain-grade (or veneer-grade) plywood has an attractive face veneer of a specific species, oak, maple, walnut, chosen for its grain and color under a clear or stained finish. It costs more and demands careful handling to avoid scratches, but it is what gives plywood furniture a real-wood look."],
+      ["Matching Species and Grain", "For stain-grade work, the face species must match your design (oak for oak furniture) and ideally the grain should be considered across adjacent parts. Paint-grade frees you from species matching. This is why deciding paint vs stain first simplifies the whole material choice."],
+      ["Cost and the Cut List", "Stain-grade plywood costs more, so you may use it only for visible parts and a cheaper paint-grade or utility sheet for hidden structure. Plan the cut list so stain-grade sheets go to visible faces and cheaper sheets to interiors, balancing finish quality and budget."]
+    ],
+    checklist: ["Decide paint or stain before buying plywood.", "Use paint-grade for opaque, painted finishes.", "Use stain-grade for clear or stained finishes.", "Match the face species for stain-grade work.", "Reserve stain-grade for visible parts to save cost."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Paint-grade vs stain-grade",
+      comparisonColumns: ["Factor", "Paint-grade", "Stain-grade", "Edge"],
+      comparisonRows: [
+        ["Face quality", "Smooth, paintable", "Attractive veneer", "Depends"],
+        ["Species matters", "No", "Yes", "Stain-grade"],
+        ["Cost", "Lower", "Higher", "Paint-grade"],
+        ["Best finish", "Paint", "Stain/clear", "Depends"]
+      ],
+      faqs: [
+        ["What is the difference between paint-grade and stain-grade plywood?", "Paint-grade has a smooth paintable face where species does not matter; stain-grade has an attractive veneer of a specific species for clear or stained finishes."],
+        ["Which plywood should I buy if I'm painting?", "Paint-grade plywood. It has a smooth, paintable face at lower cost, since paint hides the species and grain."],
+        ["Which plywood for a stained finish?", "Stain-grade (veneer-grade) plywood in the species you want, since a clear or stained finish shows the face grain and color."],
+        ["Is stain-grade plywood worth the extra cost?", "For visible parts getting a clear finish, yes. For painted or hidden parts, paint-grade or utility plywood saves money with no visible difference."],
+        ["Can I mix paint-grade and stain-grade in a project?", "Yes. Use stain-grade for visible faces and cheaper paint-grade or utility sheets for hidden structure to balance quality and budget."]
+      ],
+      sources: [
+        ["Blog: plywood grades explained for woodworkers", "/blog/plywood-grades-explained-for-woodworkers/", "How face grades work."],
+        ["Blog: sanding and finishing plywood guide", "/blog/sanding-and-finishing-plywood-guide/", "Finishing each grade well."]
+      ]
+    }
+  },
+  {
+    slug: "how-to-hide-plywood-edges",
+    category: "CutList",
+    title: "How to Hide Plywood Edges: 5 Methods",
+    description: "Five ways to hide plywood edges: veneer banding, solid-wood lipping, a applied face frame, filler and paint, and design tricks. Make edges disappear.",
+    kicker: "Technique",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Why Edges Give Plywood Away", "The layered, sometimes voided edge is what makes plywood read as plywood rather than solid wood. Hiding it is the key to a professional look. There are several methods, and the best choice depends on the piece, the finish, and how much effort you want to spend."],
+      ["1. Veneer Edge Banding", "The most common method: iron-on or glue-on veneer banding covers the edge with a thin matching strip. Trim it flush and it disappears into the face. Fast, cheap, and effective for cabinets and shelves. PVC banding is a durable alternative for high-wear edges."],
+      ["2. Solid-Wood Lipping", "Glue a strip of solid wood to the edge for the toughest, most seamless result, especially under a clear finish where it blends with the face species. It also lets you round or profile the edge. More work than banding but the highest-quality hide."],
+      ["3. An Applied Face Frame", "On cabinets, a solid-wood face frame covers all the front edges at once, hiding them and adding a traditional look. The frame becomes the visible front, and the plywood edges sit behind it. This is the face-frame cabinet style, which solves edge-hiding by design."],
+      ["4. Filler and Paint, or 5. Design Around It", "For painted work, fill the edge voids, sand, and paint for a solid look. Or design so edges are not seen, facing them to a wall, downward, or into a joint. Choosing a layout that hides edges, plus one finishing method, makes plywood look fully intentional."]
+    ],
+    checklist: ["Hide every visible plywood edge.", "Use veneer banding as the quick default.", "Use solid-wood lipping for the best hide.", "Let a face frame cover cabinet edges.", "Fill and paint, or design edges out of sight."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Edge-hiding methods",
+      comparisonColumns: ["Method", "Effort", "Quality", "Best for"],
+      comparisonRows: [
+        ["Veneer banding", "Low", "Good", "Cabinets, shelves"],
+        ["Solid-wood lipping", "Higher", "Best", "Tables, clear finish"],
+        ["Face frame", "Medium", "Good", "Cabinets"],
+        ["Filler + paint", "Low", "Moderate", "Painted work"]
+      ],
+      faqs: [
+        ["How do I hide plywood edges?", "Use veneer edge banding, solid-wood lipping, an applied face frame, filler and paint on painted work, or design so edges are not seen."],
+        ["What is the easiest way to hide plywood edges?", "Iron-on veneer banding, pressed on and trimmed flush, hides edges quickly and cheaply for most cabinets and shelves."],
+        ["What hides plywood edges best under a clear finish?", "Solid-wood lipping in the matching species, which blends seamlessly and can be shaped, gives the most invisible result under clear finishes."],
+        ["Do face frames hide plywood edges?", "Yes. A solid-wood face frame covers all the front cabinet edges at once, hiding them by design in the face-frame style."],
+        ["Can I hide plywood edges with paint?", "On painted work, fill the void edges, sand, and paint for a solid look. Under a clear finish, banding or lipping is needed instead."]
+      ],
+      sources: [
+        ["Blog: edge banding plywood edges guide", "/blog/edge-banding-plywood-edges-guide/", "Banding step by step."],
+        ["Blog: face frame vs frameless cabinets", "/blog/face-frame-vs-frameless-cabinets/", "Face frames hide edges by design."]
+      ]
+    }
+  },
+  {
+    slug: "estimating-plywood-for-built-ins",
+    category: "CutList",
+    title: "Estimating Plywood for Built-Ins and Bookcases",
+    description: "Estimate plywood for built-in shelving and bookcases: counting carcass, shelves, backs, and trim, plus waste. Plan material for a wall of built-ins.",
+    kicker: "Estimating",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Built-Ins Use More Than You Think", "A wall of built-in bookcases or cabinets adds up fast: sides, shelves, tops, bottoms, backs, and face trim across several bays. Estimating before you buy prevents both running short and overbuying. Built-ins reward careful counting because the part list is long and repetitive."],
+      ["Count by Bay", "Break the built-in into bays (vertical sections) and count one bay's parts, then multiply by the number of bays, adding shared parts like a continuous top or base. Standardizing bay widths makes this multiplication clean and the cutting efficient. Per-bay counting keeps a big project manageable."],
+      ["Don't Forget Backs and Trim", "Backs (often 1/4-inch plywood) cover the whole wall and add up. Face-frame or trim parts, usually solid wood, are a separate count. Adjustable shelves multiply quickly. Listing every category, carcass, shelves, backs, trim, prevents the classic underestimate that counts only the visible boxes."],
+      ["Add Waste and Verify", "Built-ins use several sheets, so a tight layout and a 15-20 percent waste buffer matter. The reliable estimate comes from laying all the parts out on sheets. With many repeated parts, an optimized layout can save sheets, so verifying with a calculator pays off on a project this size."],
+      ["From Estimate to Cut List", "Use the estimate to budget and buy, then refine into a full cut list for cutting. Group identical shelves and sides so they cut together, and plan the cut order so long carcass parts come off the sheet first. A built-in is really many repeated cabinets, so batching is the key to efficiency."]
+    ],
+    checklist: ["Count parts per bay, then multiply.", "Standardize bay widths for clean math.", "Include backs, trim, and adjustable shelves.", "Add a 15-20 percent waste buffer.", "Verify the count with a sheet layout."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Built-in part categories",
+      comparisonColumns: ["Category", "Material", "Counts fast", "Note"],
+      comparisonRows: [
+        ["Carcass sides", "3/4 plywood", "Per bay", "Standardize width"],
+        ["Shelves", "3/4 plywood", "Multiply up", "Adjustable"],
+        ["Backs", "1/4 plywood", "Whole wall", "Easy to forget"],
+        ["Trim / face", "Solid wood", "Separate", "Finishing"]
+      ],
+      faqs: [
+        ["How do I estimate plywood for built-ins?", "Count one bay's parts, multiply by the bays, add shared parts, include backs and trim, add 15-20 percent waste, then verify with a layout."],
+        ["Why do built-ins use so much plywood?", "They have long, repetitive part lists, sides, shelves, tops, bottoms, and backs, across several bays, so the totals add up faster than expected."],
+        ["Should I standardize bay widths?", "Yes. Equal bay widths make the part-count multiplication clean and let identical parts batch-cut efficiently with less waste."],
+        ["Do I count the backs separately?", "Yes. Backs, often 1/4-inch plywood covering the whole wall, are easy to forget but add up, so list them as their own category."],
+        ["How accurate is a built-in plywood estimate?", "Good enough to budget and buy when you count all categories and add waste. Refine into a full cut list and layout before final cutting."]
+      ],
+      sources: [
+        ["Templates: bookcase cut list", "/templates/bookcase-cut-list/", "A bookcase cut list to scale up."],
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Lay out all the built-in parts."]
+      ]
+    }
+  },
+  {
+    slug: "cut-list-for-a-bookshelf-wall",
+    category: "CutList",
+    title: "Cut List for a Bookshelf Wall (Wall of Shelves)",
+    description: "Plan a full bookshelf wall: a repeating cut list of sides, shelves, and backs across bays, with span-safe shelves. Build a wall of books cleanly.",
+    kicker: "Projects",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["A Wall of Books, Planned Right", "A floor-to-ceiling bookshelf wall is a striking project and a repetitive one: the same bay repeated across the wall. Planning it as a repeating unit, rather than one giant piece, makes the cut list manageable and the cutting efficient. Get one bay right and the rest follow."],
+      ["Design the Repeating Bay", "Choose a bay width that keeps shelves within span limits (around 30-36 inches for 3/4-inch plywood with books) and divides the wall evenly. Each bay is two sides (shared between neighbors), a set of shelves, a top, a bottom, and a back. Repeating this unit across the wall sets the whole parts list."],
+      ["Span-Safe Shelves for Books", "Books are heavy, so shelf span matters. Keep bays narrow enough that 3/4-inch shelves do not sag, or add a stiffening front edge to each shelf. A sagging book shelf is the classic failure of an over-wide bookcase, so design the bay width around the load from the start."],
+      ["The Repeating Cut List", "For each bay in 3/4-inch plywood: two sides (or one shared between bays), several shelves at bay width, a top, a bottom, and a 1/4-inch back. Multiply by the bay count, subtracting shared sides. Batch the identical shelves and sides so they cut together. A template plus a calculator turns this into a sheet plan fast."],
+      ["Assembly and Anchoring", "Build the bays, join them into a wall unit, and anchor the top to the wall studs so a tall bookcase cannot tip, an important safety step. Scribe trim to the wall and ceiling for a built-in look. The repeating structure makes a big wall achievable from a clear, repeated cut list."]
+    ],
+    checklist: ["Design one repeating bay and multiply it.", "Set bay width within shelf span limits.", "Add a front edge for heavy book loads.", "Batch identical shelves and sides.", "Anchor a tall bookcase wall to studs."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Bookshelf wall per bay",
+      comparisonColumns: ["Part", "Qty/bay", "Material", "Note"],
+      comparisonRows: [
+        ["Side", "1-2", "3/4 plywood", "Shared between bays"],
+        ["Shelf", "5-7", "3/4 plywood", "Span-safe width"],
+        ["Top / bottom", "2", "3/4 plywood", "Per bay"],
+        ["Back", "1", "1/4 plywood", "Squares the bay"]
+      ],
+      faqs: [
+        ["How do I plan a bookshelf wall?", "Design one repeating bay within shelf span limits, then multiply its parts across the wall, batching identical shelves and sides for efficient cutting."],
+        ["How wide should bookshelf bays be?", "Keep 3/4-inch plywood shelves within about 30-36 inches of span for books, or add a stiffening front edge, so they do not sag under load."],
+        ["How do I stop book shelves from sagging?", "Keep bays narrow enough for the load or glue a solid-wood front edge to each shelf to stiffen it against the weight of books."],
+        ["Do bookshelf bays share sides?", "They can. Adjacent bays can share a common side panel, which you account for when multiplying the per-bay parts across the wall."],
+        ["Do I need to anchor a bookshelf wall?", "Yes. Anchor the top into wall studs so a tall, heavy bookcase cannot tip, an important safety step for floor-to-ceiling units."]
+      ],
+      sources: [
+        ["Templates: bookcase cut list", "/templates/bookcase-cut-list/", "A single bookcase to repeat across a wall."],
+        ["Blog: plywood shelf span and sag guide", "/blog/plywood-shelf-span-and-sag-guide/", "Set span-safe shelf widths."]
+      ]
+    }
+  },
+  {
+    slug: "plywood-toy-box-cut-list",
+    category: "CutList",
+    title: "Plywood Toy Box Cut List and Safe Build",
+    description: "Build a plywood toy box: a simple cut list for the box, lid, and base, plus safety tips like a soft-close or stay hinge. A quick, sturdy kids' project.",
+    kicker: "Projects",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["A Great Beginner Project", "A toy box is a simple, rewarding plywood build: a box with a lid. It uses little material, goes together fast, and teaches the basics of cutting and assembly. With a couple of safety touches, it is a sturdy, useful piece kids will fill in minutes. One sheet usually covers it."],
+      ["Simple Box Construction", "The box is four sides and a bottom, joined with glue and screws, dados, or pocket holes. Round over or soften the top edges for little hands. Keep proportions friendly, not too deep for a child to reach the bottom. A simple, solid box is all the structure a toy box needs."],
+      ["The Lid and Safe Hinges", "A flat plywood lid on top finishes the box, but the hinge matters for safety: use a soft-close or a lid-stay hinge that holds the lid open and lowers it gently, so it cannot slam on fingers. Avoid a plain hinge that lets the lid drop. Ventilation gaps are also wise in case a child climbs in."],
+      ["A Typical Cut List", "For a roughly 30 by 16 by 16 inch toy box in 3/4-inch plywood: two long sides, two short sides, a bottom, and a lid, plus optional base trim or feet. Band or soften the visible edges. Adjust the size to the space and the toys. The whole box fits easily on a single sheet."],
+      ["Finish for Kids", "Use a child-safe, durable finish, a water-based poly or a kid-safe paint, and sand all edges smooth. Round sharp corners. A toy box takes abuse, so a tough, easy-clean finish pays off. Safe materials and smooth edges turn a simple box into a piece you are happy to hand to a child."]
+    ],
+    checklist: ["Build a simple four-sided box with a bottom.", "Round over the top edges for small hands.", "Use a soft-close or lid-stay hinge.", "Add ventilation gaps for safety.", "Finish with a durable, child-safe coating."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Toy box parts",
+      comparisonColumns: ["Part", "Qty", "Size (in)", "Note"],
+      comparisonRows: [
+        ["Long side", "2", "30 x 16", "Box walls"],
+        ["Short side", "2", "16 x 16", "Box ends"],
+        ["Bottom", "1", "~28 x 14", "Inside box"],
+        ["Lid", "1", "~31 x 17", "Safe hinge"]
+      ],
+      faqs: [
+        ["What plywood for a toy box?", "3/4-inch plywood for a sturdy box and lid, with banded or softened edges and a child-safe finish. One sheet usually covers a toy box."],
+        ["How do I make a toy box lid safe?", "Use a soft-close or lid-stay hinge that holds the lid open and lowers it gently, so it cannot slam on a child's fingers."],
+        ["Should a toy box have ventilation?", "Yes, ventilation gaps are wise in case a child climbs inside, along with a non-locking lid that opens easily from within."],
+        ["How big should a toy box be?", "Around 30 by 16 by 16 inches is common, but size it to the space and toys, and not so deep that a child cannot reach the bottom."],
+        ["What finish is safe for a toy box?", "A child-safe, durable finish like water-based poly or kid-safe paint, with all edges sanded smooth and corners rounded."]
+      ],
+      sources: [
+        ["WoodCutTool plywood cut calculator", "/plywood-cut-calculator/", "Lay out the toy box parts on a sheet."],
+        ["Blog: best glue for plywood joints", "/blog/best-glue-for-plywood-joints/", "Strong glue for a kid-proof box."]
+      ]
+    }
+  },
+  {
+    slug: "plywood-cabinet-shop-workflow",
+    category: "CutList",
+    title: "Plywood Cabinet Shop Workflow: Bid to Install",
+    description: "A small cabinet shop workflow with plywood: from bid and cut list to batch cutting, assembly, and install. Organize a project for speed and accuracy.",
+    kicker: "Workflow",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["A Workflow Beats Improvising", "A small cabinet job goes smoother with a repeatable workflow: bid, cut list, material, batch cut, assemble, finish, install. Each stage feeds the next. Improvising leads to forgotten parts and wasted sheets; a workflow keeps the project on time and on budget, even for a one-person shop."],
+      ["Bid and Cut List First", "Start with measurements and a bid, then turn the design into a complete cut list before buying anything. The cut list drives the material order and the schedule. Nailing this stage, every part listed, kerf and grain set, prevents the expensive surprises that derail a job mid-build."],
+      ["Order Material and Batch Cut", "From the cut list, order the right number of sheets plus a buffer. Then batch-cut: break all sheets down, then cut all identical parts together. Batching by part type is far faster than building cabinets one at a time, and it keeps repeated parts consistent across the job."],
+      ["Assemble in a Logical Order", "Assemble carcasses, then doors and drawers, then hang hardware. Working in stages, all boxes, then all doors, keeps setups efficient. Label parts as they are cut so assembly is sorting, not puzzling. A clear assembly order turns a pile of parts into finished cabinets quickly."],
+      ["Finish and Install", "Finish before or after assembly depending on the method, then deliver and install, anchoring to studs and scribing to walls. A final checklist, hardware, adjustment, touch-up, closes the job. The workflow that began with a careful cut list pays off in a smooth install with no missing parts."]
+    ],
+    checklist: ["Bid from real measurements first.", "Build a complete cut list before buying.", "Order sheets plus a waste buffer.", "Batch-cut all identical parts together.", "Assemble and install in a logical order."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Workflow stages",
+      comparisonColumns: ["Stage", "Output", "Key tool", "Note"],
+      comparisonRows: [
+        ["Bid", "Price, scope", "Measurements", "Accuracy first"],
+        ["Cut list", "Part list", "Calculator", "Drives material"],
+        ["Batch cut", "All parts", "Saw + layout", "Group by type"],
+        ["Assemble/install", "Cabinets", "Hardware", "Anchor to studs"]
+      ],
+      faqs: [
+        ["What is a good cabinet shop workflow?", "Bid, complete cut list, order material, batch-cut by part type, assemble in stages, finish, then install. Each stage feeds the next for a smooth job."],
+        ["Why batch-cut cabinet parts?", "Cutting all identical parts together is far faster and more consistent than building cabinets one at a time, and it keeps repeated parts uniform."],
+        ["Should I make the cut list before ordering material?", "Yes. The cut list tells you exactly how many sheets to order plus a buffer, preventing both shortages and overbuying."],
+        ["In what order do I assemble cabinets?", "Carcasses first, then doors and drawers, then hardware, working in stages so setups stay efficient and labeled parts sort easily."],
+        ["How does a workflow save time on a cabinet job?", "It prevents forgotten parts and wasted sheets, keeps cutting and assembly efficient through batching, and makes the install predictable."]
+      ],
+      sources: [
+        ["Learn: best woodworking calculator workflow", "/learn/best-woodworking-calculator-workflow/", "Tools across the workflow."],
+        ["Templates: kitchen cabinet cut list", "/templates/kitchen-cabinet-cut-list/", "Cut list to drive the job."]
+      ]
+    }
+  },
+  {
+    slug: "how-to-batch-cut-repeated-parts",
+    category: "CutList",
+    title: "How to Batch Cut Repeated Parts Accurately",
+    description: "Batch-cut identical woodworking parts: stop blocks, ganging, and a cut order that keeps repeats consistent. Speed up shelves, sides, and drawer parts.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Why Batch Cutting Wins", "Most cabinet and shelving projects have many identical parts: shelves, sides, drawer pieces. Cutting them one at a time is slow and invites inconsistency. Batch cutting, making all identical parts in one setup, is faster and keeps every repeat the same size, which is what makes assembly fit."],
+      ["Use Stop Blocks for Length", "A stop block clamped to a fence or sled sets a repeatable length: register each part against the stop and cut, and every piece comes out identical without re-measuring. This is the single most effective batch-cutting technique. Set the stop once and produce a stack of matching parts quickly and accurately."],
+      ["Gang Parts Where Safe", "Cutting two or three thin parts stacked (ganged) at once can speed some operations, where the setup is safe and the parts stay aligned. It is common for sanding or routing matching parts together. For sawing, gang only when it is safe and the stack cannot shift; otherwise use a stop block on single parts."],
+      ["Set Up Once, Cut Many", "The efficiency of batching comes from minimizing setups. Cut all parts of one width before changing the fence, all parts of one length before moving the stop. Group the cut list by dimension so the saw setup changes as few times as possible. Fewer setups means faster, more consistent cutting."],
+      ["Plan Batches in the Cut List", "Organize the cut list by part type and dimension so identical parts are grouped and obvious. Then cut in that order: break down sheets, cut all the sides, all the shelves, all the backs. A cut list sorted for batching turns a long parts list into a fast, consistent cutting session."]
+    ],
+    checklist: ["Cut identical parts in one setup.", "Use a stop block for repeatable lengths.", "Gang parts only where safe and aligned.", "Minimize setup changes by grouping dimensions.", "Sort the cut list by part type for batching."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Batch-cutting aids",
+      comparisonColumns: ["Aid", "Use", "Benefit", "Note"],
+      comparisonRows: [
+        ["Stop block", "Repeat length", "Identical parts", "Set once"],
+        ["Sled + stop", "Crosscuts", "Square repeats", "Safe handling"],
+        ["Fence setting", "Repeat width", "Consistent rips", "Group widths"],
+        ["Ganging", "Multiple parts", "Speed", "Only when safe"]
+      ],
+      faqs: [
+        ["How do I cut many identical parts accurately?", "Use a stop block to set a repeatable length, register each part against it, and cut all identical parts in one setup for consistent sizes."],
+        ["What is a stop block?", "A block clamped to a fence or sled that each part registers against, so every cut is the same length without re-measuring each piece."],
+        ["Is it safe to gang-cut parts?", "Sanding and routing matching parts together is common. For sawing, gang only when the stack is secure and aligned; otherwise cut single parts against a stop."],
+        ["How do I minimize saw setups when batching?", "Cut all parts of one dimension before changing the fence or stop, grouping the cut list by width and length so setups change as little as possible."],
+        ["Why does batch cutting improve accuracy?", "All identical parts come from one setup, so they match exactly, which is what makes repeated cabinet and shelf parts assemble cleanly."]
+      ],
+      sources: [
+        ["Blog: crosscut sled basics for sheet goods", "/blog/crosscut-sled-basics-for-sheet-goods/", "Sled and stops for repeats."],
+        ["Learn: how to read a cut list", "/learn/how-to-read-a-cut-list/", "Sort a cut list for batching."]
+      ]
+    }
+  },
+  {
+    slug: "grain-matching-cabinet-doors-guide",
+    category: "CutList",
+    title: "Grain Matching Cabinet Doors: A Guide",
+    description: "Grain matching plywood cabinet doors and panels: sequence matching, layout for continuous grain, and when it matters. Get a professional cabinet look.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Grain Matching Sets Quality Apart", "On stained or clear-finished cabinets, how the grain flows across doors and panels separates a professional job from a homemade one. Grain matching, arranging parts so the grain looks continuous or coordinated, takes planning at the cut-list stage. It costs some extra material but transforms the finished look."],
+      ["Plan Grain at Layout Time", "Grain matching has to be planned before cutting, when you lay parts on the sheet. You cannot match grain after the fact. Mark which parts must coordinate, lock their rotation to keep grain direction, and lay them out from the same area of a sheet so their grain relates. This is why grain-locked parts limit how tightly a sheet packs."],
+      ["Sequence and Continuous Grain", "For a run of doors, sequence matching cuts them in order from the same sheet so the grain flows from one door to the next, like a book. For a single wide panel made of two pieces, book-matching mirrors the grain. Decide the effect you want, then lay out the parts to achieve it."],
+      ["The Cost in Material", "Grain matching uses more material because you cannot freely rotate or nest grain-locked parts; they must come from specific areas with the right grain direction. Budget extra plywood for visible, grain-matched parts. The trade-off, more material for a better look, is worth it on visible faces and not on hidden parts."],
+      ["When It Matters and When It Doesn't", "Grain matching matters on stained or clear-finished visible doors and panels. It does not matter on painted work (paint hides grain) or hidden parts. Spend the effort and material only where the grain shows. Knowing where to bother keeps the cost of matching focused on the parts that benefit."]
+    ],
+    checklist: ["Plan grain matching before cutting.", "Lock rotation on grain-matched parts.", "Lay coordinated parts from the same sheet area.", "Budget extra material for matched parts.", "Skip matching on painted or hidden parts."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Grain matching approaches",
+      comparisonColumns: ["Approach", "Effect", "Material cost", "Use"],
+      comparisonRows: [
+        ["Sequence match", "Grain flows across doors", "Higher", "Door runs"],
+        ["Book match", "Mirrored grain", "Higher", "Wide panels"],
+        ["Direction lock only", "Consistent direction", "Moderate", "General"],
+        ["No matching", "Random", "Lowest", "Painted/hidden"]
+      ],
+      faqs: [
+        ["What is grain matching on cabinets?", "Arranging doors and panels so the grain looks continuous or coordinated across them, giving stained or clear-finished cabinets a professional look."],
+        ["When does grain matching matter?", "On visible, stained or clear-finished doors and panels. It does not matter on painted work, which hides grain, or on hidden parts."],
+        ["Does grain matching use more plywood?", "Yes. Grain-locked parts cannot be freely rotated or nested, so they need specific sheet areas, using more material than an unrestricted layout."],
+        ["How do I get continuous grain across doors?", "Sequence-match: cut the doors in order from the same sheet so the grain flows from one to the next, planned at layout time."],
+        ["Can I grain match after cutting?", "No. It must be planned before cutting, when laying parts on the sheet, by locking rotation and choosing which areas parts come from."]
+      ],
+      sources: [
+        ["Blog: cabinet door styles explained", "/blog/cabinet-door-styles-explained/", "Door styles that show grain."],
+        ["Learn: sheet layout optimization", "/learn/sheet-layout-optimization/", "Lay out grain-locked parts."]
+      ]
+    }
+  },
+  {
+    slug: "plywood-thickness-chart-guide",
+    category: "CutList",
+    title: "Plywood Thickness Chart and What Each Is For",
+    description: "A plywood thickness guide: 1/4, 1/2, 3/4 inch and more, their actual sizes, and what each thickness is used for in cabinets, shelves, and backs.",
+    kicker: "Materials",
+    readTime: "7 min",
+    accent: "cutlist",
+    sections: [
+      ["Thickness Drives the Job", "Plywood comes in a range of thicknesses, each suited to different parts. Choosing the right one balances strength, weight, and cost. Knowing what each thickness is for, and that the actual size is less than nominal, lets you spec parts correctly and avoid both flimsy and over-built results."],
+      ["The Common Thicknesses", "The workhorses are 1/4, 1/2, and 3/4 inch (actually about 7/32, 15/32, and 23/32). Quarter-inch suits backs and panels, half-inch suits drawers and light shelves, three-quarter-inch is the default for carcasses, shelves, and structure. Thinner (1/8) and thicker (1, 1-1/8) sheets exist for special uses."],
+      ["What Each Is For", "1/4 inch: cabinet backs, drawer bottoms, panels. 1/2 inch: drawer sides, light shelves, smaller boxes. 3/4 inch: cabinet sides, tops, bottoms, shelves, most structure. The thicker the part's job, the thicker the plywood, with 3/4 inch covering the majority of furniture and cabinet structure."],
+      ["Mixing Thicknesses in One Project", "A typical cabinet uses 3/4-inch for the carcass and shelves, 1/2-inch for drawer boxes, and 1/4-inch for the back, three thicknesses in one piece. Plan the cut list by thickness so you order the right sheets of each and cut them in their own groups."],
+      ["Remember Actual vs Nominal", "Because plywood is undersized, joinery must use the actual thickness. A dado for a 3/4-inch shelf is cut to about 23/32. Measure your specific sheets, as thickness can vary slightly by source. A thickness chart gets you close; your calipers confirm the real number for joinery."]
+    ],
+    checklist: ["Match thickness to each part's job.", "Use 1/4 inch for backs and drawer bottoms.", "Use 1/2 inch for drawers and light shelves.", "Use 3/4 inch for carcasses and structure.", "Cut joinery to actual, not nominal, thickness."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Plywood thickness uses",
+      comparisonColumns: ["Nominal", "Actual", "Common use", "Note"],
+      comparisonRows: [
+        ["1/4 in", "~7/32", "Backs, bottoms, panels", "Light"],
+        ["1/2 in", "~15/32", "Drawers, light shelves", "Mid"],
+        ["3/4 in", "~23/32", "Carcass, shelves, structure", "Default"],
+        ["1 in+", "~ varies", "Workbench tops, heavy", "Special"]
+      ],
+      faqs: [
+        ["What plywood thicknesses are there?", "Common ones are 1/4, 1/2, and 3/4 inch (actually about 7/32, 15/32, 23/32), with thinner and thicker sheets for special uses."],
+        ["What thickness plywood for cabinet backs?", "1/4-inch plywood is standard for cabinet backs and drawer bottoms, set into a rabbet or groove to square and stiffen the box."],
+        ["What thickness for cabinet sides and shelves?", "3/4-inch plywood is the default for carcass sides, tops, bottoms, and shelves, giving the strength and screw holding structure needs."],
+        ["Can I use different thicknesses in one cabinet?", "Yes, and you usually should: 3/4-inch carcass, 1/2-inch drawers, 1/4-inch back, planned by thickness in the cut list."],
+        ["Why measure thickness for joinery?", "Plywood is undersized and varies slightly, so dados and grooves must match the actual thickness, around 23/32 for nominal 3/4-inch."]
+      ],
+      sources: [
+        ["Blog: how to read plywood dimensions", "/blog/how-to-read-plywood-dimensions/", "Nominal vs actual sizing."],
+        ["Blog: how thick plywood for shelves", "/blog/how-thick-plywood-for-shelves/", "Choosing shelf thickness."]
+      ]
+    }
+  },
+  {
+    slug: "common-plywood-cutting-mistakes",
+    category: "CutList",
+    title: "Common Plywood Cutting Mistakes (and Fixes)",
+    description: "Avoid the common plywood cutting mistakes: forgetting kerf, ignoring grain, miscounting parts, tearout, and bad cut order. Fixes for cleaner results.",
+    kicker: "Technique",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Most Mistakes Are Predictable", "Plywood cutting goes wrong in a handful of repeatable ways: forgotten kerf, ignored grain, miscounted parts, tearout, and a bad cut order. Each is avoidable with a little planning. Knowing the common mistakes ahead of time is the easiest way to avoid wasting expensive sheets."],
+      ["Forgetting Kerf", "Every cut removes a blade-width of material. Plan a layout ignoring kerf and parts will not fit; the last piece comes up short. Set your real kerf in the cut list so the layout accounts for the material each cut removes. Forgotten kerf is the most common reason a layout that looks right fails on the saw."],
+      ["Ignoring Grain Direction", "On visible parts, grain direction matters for looks; cut a door with the grain running the wrong way and it looks off. Mark grain-locked parts and keep their rotation fixed in the layout. Ignoring grain saves material but ruins the appearance of stained or clear-finished work."],
+      ["Miscounting and Tearout", "Missing a part, especially hidden ones like backs and cleats, means running short or rebuilding. List every part. Tearout from a dull or coarse blade ruins edges; use a sharp fine-tooth blade and support the cut. These two mistakes, miscounting and tearout, account for a lot of wasted material and time."],
+      ["Bad Cut Order", "Cutting in the wrong order can trap a part you need or leave a piece too small to handle safely. Plan the cut sequence so the first cuts free the large parts and keep offcuts usable. A good cut order, large parts first, repeats grouped, is the difference between a smooth session and a frustrating one."]
+    ],
+    checklist: ["Set real kerf so parts actually fit.", "Mark and lock grain on visible parts.", "List every part, including hidden ones.", "Use a sharp blade and support cuts to avoid tearout.", "Plan the cut order before starting."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Common mistakes and fixes",
+      comparisonColumns: ["Mistake", "Result", "Fix", "Note"],
+      comparisonRows: [
+        ["Forgot kerf", "Parts short", "Set real kerf", "Most common"],
+        ["Ignored grain", "Looks wrong", "Lock rotation", "Visible parts"],
+        ["Miscounted", "Run short", "List all parts", "Include hidden"],
+        ["Tearout", "Ruined edges", "Sharp blade + support", "Fine-tooth"]
+      ],
+      faqs: [
+        ["What are common plywood cutting mistakes?", "Forgetting kerf, ignoring grain direction, miscounting parts, tearout from dull blades, and a bad cut order that traps parts or leaves unsafe offcuts."],
+        ["Why do my plywood parts come up short?", "Usually forgotten kerf. Each cut removes a blade-width; set your real kerf in the layout so parts account for it and fit."],
+        ["How do I avoid tearout on plywood?", "Use a sharp fine-tooth blade, support the exit face, and consider scoring the cut, so the veneer is sliced cleanly rather than splintered."],
+        ["What is a bad cut order?", "A sequence that traps a needed part or leaves pieces too small to handle safely. Cut large parts first and group repeats to avoid it."],
+        ["How do I stop miscounting parts?", "List every part, including hidden ones like backs, cleats, and stretchers, before cutting, since missing parts is a top cause of running short."]
+      ],
+      sources: [
+        ["Learn: saw kerf explained", "/learn/saw-kerf-explained/", "Why kerf matters in every cut."],
+        ["Blog: how to avoid tearout cutting plywood", "/blog/how-to-avoid-tearout-cutting-plywood/", "Detailed tearout fixes."]
+      ]
+    }
+  },
+  {
+    slug: "how-to-plan-a-plywood-project",
+    category: "CutList",
+    title: "How to Plan a Plywood Project From Start to Finish",
+    description: "Plan any plywood project: from design and dimensions to parts list, sheet count, cut order, and assembly. A clear process for first-timers and pros.",
+    kicker: "Planning",
+    readTime: "9 min",
+    accent: "cutlist",
+    sections: [
+      ["Planning Prevents Problems", "A plywood project goes far smoother with a plan: design, dimensions, parts list, material, cut order, assembly. Skipping straight to cutting wastes sheets and creates mistakes. A clear planning process, the same one pros use, turns an idea into a finished piece with fewer surprises and less waste."],
+      ["Start With Design and Dimensions", "Settle the design and the finished dimensions first, accounting for joinery and how parts meet. Sketch it, even roughly, and decide the construction method. Everything downstream depends on accurate dimensions, so get these right before listing a single part. Use actual material thicknesses, not nominal."],
+      ["Build the Parts List", "Turn the design into a complete parts list: every piece, its size, quantity, and material. Include hidden parts like backs and cleats. This list is the heart of the plan; a complete, accurate parts list is what makes the material order and the cutting reliable. Group parts by material and thickness."],
+      ["Count Sheets and Plan the Cut Order", "Lay the parts out on sheets to get the real sheet count, add a waste buffer, and order material. Then plan the cut order, large parts first, repeats grouped, so the breakdown is smooth and offcuts stay usable. A calculator handles both the count and the layout quickly."],
+      ["Cut, Assemble, Finish", "With material and a plan in hand, break down sheets, batch-cut parts, assemble in a logical order, and finish. Label parts as you cut so assembly is sorting, not guessing. The plan that began with careful dimensions and a complete parts list pays off in a smooth build with no missing pieces."]
+    ],
+    checklist: ["Settle design and dimensions first.", "Use actual material thicknesses.", "Build a complete parts list, including hidden parts.", "Count sheets and add a waste buffer.", "Plan the cut order before cutting."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Project planning stages",
+      comparisonColumns: ["Stage", "Output", "Key point", "Tool"],
+      comparisonRows: [
+        ["Design", "Dimensions", "Use actual sizes", "Sketch"],
+        ["Parts list", "Every part", "Include hidden parts", "Cut list"],
+        ["Material", "Sheet count", "Add waste buffer", "Calculator"],
+        ["Cut & build", "Finished piece", "Batch and label", "Saw"]
+      ],
+      faqs: [
+        ["How do I plan a plywood project?", "Settle the design and dimensions, build a complete parts list, count sheets with a buffer, plan the cut order, then batch-cut, assemble, and finish."],
+        ["What comes first in planning a project?", "The design and finished dimensions, using actual material thicknesses and accounting for joinery, since everything downstream depends on them."],
+        ["Why is the parts list so important?", "It drives the material order and the cutting. A complete, accurate list, including hidden parts, prevents running short and rebuilding."],
+        ["How do I know how many sheets to buy?", "Lay the parts out on sheets to get the real count, add a 15-20 percent waste buffer, then order. A calculator does the layout quickly."],
+        ["What is the right cut order?", "Large parts first, repeated parts grouped, so the breakdown is smooth, offcuts stay usable, and no early cut traps a part you need."]
+      ],
+      sources: [
+        ["Learn: what is cut list optimization", "/learn/what-is-cut-list-optimization/", "The idea behind planning cuts."],
+        ["Compare: best way to create a wood cut list", "/compare/best-way-to-create-a-wood-cut-list/", "The cut-list workflow in detail."]
+      ]
+    }
+  },
+  {
+    slug: "when-to-use-plywood-vs-osb",
+    category: "CutList",
+    title: "When to Use Plywood vs OSB",
+    description: "Plywood vs OSB compared: strength, moisture, screw holding, finish, and cost. Know when oriented strand board works and when plywood is worth it.",
+    kicker: "Materials",
+    readTime: "8 min",
+    accent: "cutlist",
+    sections: [
+      ["Two Structural Sheet Goods", "Plywood and OSB (oriented strand board) are both engineered structural panels, common in construction. They overlap for sheathing and subfloors but differ for finish work, moisture, and edges. Knowing when OSB's lower cost is fine and when plywood is worth the premium guides both construction and project choices."],
+      ["OSB: Strong and Cheap for Structure", "OSB is made of compressed wood strands and is strong, consistent, and cheaper than plywood, widely used for wall sheathing, roof decking, and subfloors. For hidden structural panels where appearance does not matter, OSB often does the job at lower cost. It is an engineered, code-accepted structural material."],
+      ["Where Plywood Wins", "Plywood holds screws better on edges, resists moisture damage better, has a smoother face for finishing, and has cleaner edges. For furniture, cabinets, finished surfaces, and damp areas, plywood is the better choice. OSB swells more at the edges when wet and does not take a fine finish, so it stays in structural roles."],
+      ["Moisture Is the Dividing Line", "Both can suffer from water, but OSB tends to swell at cut edges and stay swollen, while plywood handles wetting and drying better. For anything exposed to moisture or that must stay dimensionally crisp, plywood is safer. In dry, hidden structural uses, OSB's moisture limitation matters less."],
+      ["Choosing for the Job", "Use OSB for hidden structural sheathing and subfloors where cost matters and appearance does not. Use plywood for furniture, cabinets, visible or finished surfaces, edges that show, and anywhere damp. The two are not interchangeable for finish work, so match the panel to whether the part is structural or seen."]
+    ],
+    checklist: ["Use OSB for hidden structural sheathing.", "Use plywood for furniture and finished surfaces.", "Choose plywood where edges or faces show.", "Prefer plywood in damp or moisture-prone areas.", "Match the panel to structural vs visible use."],
+    deepDive: {
+      figureCaption: "",
+      comparisonTitle: "Plywood vs OSB",
+      comparisonColumns: ["Factor", "Plywood", "OSB", "Edge"],
+      comparisonRows: [
+        ["Cost", "Higher", "Lower", "OSB"],
+        ["Edge screw holding", "Better", "Weaker", "Plywood"],
+        ["Moisture handling", "Better", "Swells at edges", "Plywood"],
+        ["Finish / appearance", "Smoother", "Rough", "Plywood"]
+      ],
+      faqs: [
+        ["What is the difference between plywood and OSB?", "Plywood is glued wood veneers; OSB is compressed wood strands. OSB is cheaper for structure; plywood holds screws, resists moisture, and finishes better."],
+        ["Is OSB as strong as plywood?", "For structural sheathing and subfloors, OSB is strong and code-accepted. Plywood holds edge screws better and handles moisture better."],
+        ["Can I use OSB for furniture?", "Generally no for finished furniture. OSB has a rough face, weaker edges, and swells when wet. Plywood is the choice for cabinets and visible work."],
+        ["Which handles moisture better, plywood or OSB?", "Plywood. OSB tends to swell at cut edges and stay swollen, while plywood handles wetting and drying better, so plywood suits damp areas."],
+        ["When should I use OSB?", "For hidden structural panels, wall sheathing, roof decking, and subfloors where cost matters and appearance and edges do not show."]
+      ],
+      sources: [
+        ["Compare: plywood vs MDF", "/compare/plywood-vs-mdf/", "Plywood against another sheet material."],
+        ["Blog: sheet goods vs solid wood projects", "/blog/sheet-goods-vs-solid-wood-projects/", "Choosing materials by role."]
+      ]
+    }
+  }
+];
+
+articles.push(...woodworkingSeoBatch2);
+
 const generatedBlogExpansionDefinitions = [
   {
     category: "Contacts Backup",
