@@ -3560,7 +3560,13 @@ function setLanguage(lang) {
 
 function initI18n() {
   const nav = document.querySelector(".nav");
-  if (nav && !document.getElementById("language-select")) {
+  const existingSelector = document.getElementById("language-select");
+  if (existingSelector && !existingSelector.dataset.boundLanguagePicker) {
+    existingSelector.dataset.boundLanguagePicker = "true";
+    existingSelector.addEventListener("change", (event) => setLanguage(event.target.value));
+  }
+
+  if (nav && !existingSelector) {
     const primaryAction = nav.querySelector(":scope > .button");
     const label = document.createElement("label");
     label.className = "language-picker";
@@ -3575,7 +3581,9 @@ function initI18n() {
     } else {
       nav.appendChild(label);
     }
-    label.querySelector("select").addEventListener("change", (event) => setLanguage(event.target.value));
+    const selector = label.querySelector("select");
+    selector.dataset.boundLanguagePicker = "true";
+    selector.addEventListener("change", (event) => setLanguage(event.target.value));
   }
 
   setLanguage(getActiveLang());

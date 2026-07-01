@@ -6559,14 +6559,6 @@ tr:last-child td {
     font-size: 1.2rem;
   }
 
-  .nav-links {
-    order: initial;
-    width: auto;
-    overflow: visible;
-    padding: 0;
-    margin-left: 28px;
-  }
-
   .tr-hero {
     grid-template-columns: minmax(0, 0.9fr) minmax(390px, 0.8fr);
     gap: 34px;
@@ -6678,6 +6670,32 @@ tr:last-child td {
 }
 
 @media (min-width: 1180px) {
+  .nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .nav-links {
+    order: initial;
+    flex: 1 1 auto;
+    width: auto;
+    overflow: visible;
+    padding: 0;
+    margin-left: 28px;
+    justify-content: center;
+  }
+
+  .language-picker {
+    order: initial;
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+
+  .nav > .button {
+    order: initial;
+    flex: 0 0 auto;
+  }
+
   .blog-shell {
     grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
     align-items: start;

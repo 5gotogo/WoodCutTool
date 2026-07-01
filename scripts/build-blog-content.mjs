@@ -5,7 +5,7 @@ import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 import { blogBatch20260630 } from "./blog-batch-2026-06-30.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260626-seo-home";
+const version = "20260701-nav";
 const siteUrl = "https://woodcuttool.com";
 const appStoreApps = JSON.parse(readFileSync(join(root, "data/app-store-apps.json"), "utf8"));
 
@@ -10412,10 +10412,12 @@ function header(active = "Blogs") {
     ["Tile", "/tile-calculator/"],
     ["Stringer", "/stringer/"],
     ["Blogs", "/blog/"],
-    ["Apps", "/apps/"]
+    ["Apps", "/apps/"],
+    ["Tools", "/tools/"],
+    ["Learn", "/learn/"]
   ];
 
-  return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links">${links.map(([label, href]) => `<a${label === active ? ' class="active"' : ""} href="${href}">${label}</a>`).join("")}</div><a class="button small" href="/apps/">Explore Apps</a></nav></header>`;
+  return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links">${links.map(([label, href]) => `<a${label === active ? ' class="active"' : ""} href="${href}">${label}</a>`).join("")}</div><label class="language-picker"><span class="visually-hidden">Language</span><select id="language-select" aria-label="Language"><option value="en">English</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="es">Español</option><option value="pt">Português</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="nl">Nederlands</option><option value="it">Italiano</option><option value="ar">العربية</option><option value="ja">日本語</option></select></label><a class="button small" href="/apps/">Explore Apps</a></nav></header>`;
 }
 
 function footer() {

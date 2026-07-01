@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { ogTags } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = "20260630-stringer-result";
+const version = "20260701-nav";
 const apps = JSON.parse(readFileSync(join(root, "data", "app-store-apps.json"), "utf8"));
 const appStoreReviews = JSON.parse(readFileSync(join(root, "data", "app-store-reviews.json"), "utf8"));
 
@@ -75,23 +75,24 @@ function head({ title, description, canonical, jsonLd = "" }) {
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
   <link rel="stylesheet" href="/assets/styles.css?v=${version}">
+  <script defer src="/assets/app.js?v=${version}"></script>
   ${jsonLd}
 </head>`;
 }
 
 function header(active = "Apps") {
   const links = [
-    ["Tools", "/tools/"],
-    ["Learn", "/learn/"],
     ["CutList", "/cutlist/"],
     ["QuiltFit", "/quiltfit/"],
     ["Tile", "/tile-calculator/"],
     ["Stringer", "/stringer/"],
     ["Blogs", "/blog/"],
-    ["Apps", "/apps/"]
+    ["Apps", "/apps/"],
+    ["Tools", "/tools/"],
+    ["Learn", "/learn/"]
   ];
 
-  return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links">${links.map(([label, href]) => `<a${label === active ? ' class="active"' : ""} href="${href}">${label}</a>`).join("")}</div><a class="button small" href="/apps/">Explore Apps</a></nav></header>`;
+  return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links">${links.map(([label, href]) => `<a${label === active ? ' class="active"' : ""} href="${href}">${label}</a>`).join("")}</div><label class="language-picker"><span class="visually-hidden">Language</span><select id="language-select" aria-label="Language"><option value="en">English</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="es">Español</option><option value="pt">Português</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="nl">Nederlands</option><option value="it">Italiano</option><option value="ar">العربية</option><option value="ja">日本語</option></select></label><a class="button small" href="/apps/">Explore Apps</a></nav></header>`;
 }
 
 function footer() {
