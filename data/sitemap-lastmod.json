@@ -1,2678 +1,2878 @@
 {
   "/": {
     "lastmod": "2026-07-01",
-    "hash": "93ea63ed88cebe45006946eb683d7fcc8e1d40ad36eb49f947b121b1bbbd597b"
+    "hash": "c2960cecddbb855b162201524f7e094f66b5826c63979fe24abdd8387ebc3bd7"
   },
   "/tools/": {
     "lastmod": "2026-07-01",
-    "hash": "c35fb4fd6dc22a0c437ffbff4aaa567d4dd3c90e0672bf6e9de5bdd514a8e5a8"
+    "hash": "39e515bd725122d485be9b44a4ef631e0634101a6797cccd2fdc332c8fce7ca6"
   },
   "/learn/": {
     "lastmod": "2026-07-01",
-    "hash": "9ad6813266c184e6e5615fee76b28089c368a48555c43eba157b699f2f957e6b"
+    "hash": "df11f0356e6383de11d7398a0487c95868739764eb822bdbd007f99c28663e39"
   },
   "/apps/": {
     "lastmod": "2026-07-01",
-    "hash": "0b1411adb433f4bb0000f4fca06ad25f79b0b22c0a3ee22f06cffe6db77b2b49"
+    "hash": "7098f2ede25c59b809ec27328f92880fd75fc2b9c965c85e84bdc3e3c5479038"
   },
   "/apps/cutlist/": {
     "lastmod": "2026-07-01",
-    "hash": "91255331b936d4138c4a3f99205f81f408aa99f8e718f5d4a553c314cb8f8348"
+    "hash": "e62deedad7c421a69d2cc2010596340fa7e777e253e79b7d6697583f02572b78"
   },
   "/apps/quiltfit/": {
     "lastmod": "2026-07-01",
-    "hash": "c545103efd80000b9060901f125ca81b2eececf3122dce2f1590c9ce4d6d9f69"
+    "hash": "a88631968a98e844bbac193435bd34be9a63c5068042a8ce2a07964db43bee2d"
   },
   "/apps/pdfscanner/": {
     "lastmod": "2026-07-01",
-    "hash": "dc42ec60f014183241f8cfed2ee2f5efb049bdaeb33b366ca86ee9107850ddee"
+    "hash": "3f7a843b45005b87a0668fcd5b83d5a65f5cdefb1904b56dee4b808971032c43"
   },
   "/apps/receipt/": {
     "lastmod": "2026-07-01",
-    "hash": "e56e98981c1276dfeb2e99cd31fb911f783234ed7c375d7ebb8a707f9e065cca"
+    "hash": "1af99e4d00a2f8c1c9b836827939df81fdb2f723bd48e8e679a488ba5f64b65b"
   },
   "/cutlist/": {
-    "lastmod": "2026-06-28",
-    "hash": "baf00dbc3c5525473102c48ef00b63452ab65c34b3d4c9755611cdd8e411c891"
+    "lastmod": "2026-07-01",
+    "hash": "bd305352e588b14cc268a640e2e0373d23f78ed8d2df9bf53303fc56b7280a20"
   },
   "/quiltfit/": {
-    "lastmod": "2026-06-28",
-    "hash": "3d309d9fe808623cce8d5cf2b29d9e97fe48ec3575e050df0c74e6d0a22b922e"
+    "lastmod": "2026-07-01",
+    "hash": "be36f901ff61c723efe3af439ec633b77d35f6e93614270df6bbd9fe3a8438cc"
   },
   "/tile-calculator/": {
-    "lastmod": "2026-06-28",
-    "hash": "8d7a92a9ee98e98bfe664a0fd4b61cfcf7e3129f8d952cff080fb74a22c98801"
+    "lastmod": "2026-07-01",
+    "hash": "ba017d2fa53c117fe7cbfbe9561c966d8bdd900752add6351ceba2588586bf10"
   },
   "/stringer/": {
     "lastmod": "2026-07-01",
-    "hash": "dc653517d87f8beff91423488ad13ad89a1e7096c3b1a3735e3202561523c146"
+    "hash": "8815f255581cc85c373b72febea27306fa24869d1f4b8efa9aef202cf1dca6f5"
   },
   "/cut-list-calculator/": {
-    "lastmod": "2026-06-28",
-    "hash": "810c830f84a8a03bde13fe0c4484ece6d5584e441a6d42e4dd837cebe8aa5b9c"
+    "lastmod": "2026-07-01",
+    "hash": "d8461852ecd8e4c20fa057ffa4953db1c5c75616509535e4d9e5edf7e39f7a8c"
   },
   "/plywood-cut-calculator/": {
     "lastmod": "2026-07-01",
-    "hash": "fd0360dd234a9dc6721e4b6474ef7f8a7d10e6f7129ea3a14a40dbba42d0bd25"
+    "hash": "60931553fe3b697f80b5d9b43a85580f2189c9bc4cb29156a88770ad3fdde356"
   },
   "/stair-stringer-calculator/": {
     "lastmod": "2026-07-01",
-    "hash": "fd61f7be980ad170403f5cf8da69c8d23f977a7a631e6fff9635887cb355c9ee"
+    "hash": "6e8b1974470d0f07e2b4ecbfd5d1ad3b69774a07b529477f072e93bc9358ef45"
   },
   "/board-foot-calculator/": {
-    "lastmod": "2026-06-28",
-    "hash": "9e618c84c4cbd83a98304efee2c043d9ffaf5706b19442aedc02227afa2d74ba"
+    "lastmod": "2026-07-01",
+    "hash": "0ccabac8c9cf490f9d12841b532c75c313fcbbe60f2c72049eedad439483a0ce"
   },
   "/wood-waste-calculator/": {
-    "lastmod": "2026-06-28",
-    "hash": "3aa72c0bad9f11bac1d2037575370c2e01a5cefa3bedecf5479fbce7bd15f766"
+    "lastmod": "2026-07-01",
+    "hash": "706489c92437f9386182272ff8016628c340e73a572271f1558cc14f85e03a0d"
   },
   "/blog/": {
     "lastmod": "2026-07-01",
-    "hash": "923b1dcbcb71553799e817f459d517923366355a869d3a8e8a99b20440de8934"
+    "hash": "99f2a6c1e3e8f19a10d918410c454f3d64397a7eab7cd24e27d8be744a14fa22"
   },
   "/privacy-policy/": {
-    "lastmod": "2026-06-28",
-    "hash": "0e844f0d1d0df72c0c7eae2c812c95a076a498fb6bdcb38228285ec3d07bd88e"
+    "lastmod": "2026-07-01",
+    "hash": "c618f1b41716b78a570a8a15cb2df36694147b210470f3a2a0a639b1ba27d4eb"
   },
   "/terms-of-service/": {
-    "lastmod": "2026-06-28",
-    "hash": "839a9d797d2d250eb06a3f680d9d0bb32c2058f871ebe8310f3c477dccdeb40c"
+    "lastmod": "2026-07-01",
+    "hash": "892a47a442bebd2add689de13183396dcb47b116cfcddcf7b5d7a4b13f5c8612"
   },
   "/apps/address-label-maker-and-envelope/": {
     "lastmod": "2026-07-01",
-    "hash": "135cdb46f259ab22a17a93badc8c2d667697886da82be311d9d01518ee0671fa"
+    "hash": "605e3a480c01f85f4f7913e8fb9555cf626db13901b2126676754e8490475275"
   },
   "/apps/atomic-clock-precision-time/": {
     "lastmod": "2026-07-01",
-    "hash": "f6f96f722da10461301144bc1f16a0b43e50e59743bdabb29a51cf0819793bd6"
+    "hash": "8b70abb491b50aa9622315aff2c5ac8d6c5104d3b81e77d97b25f77da15e5fe5"
   },
   "/apps/blockfit-block-puzzle/": {
     "lastmod": "2026-07-01",
-    "hash": "fc0b817e12a62f8e075b13329d4c762252557d4e50961207eb29da7b5caec153"
+    "hash": "337c9cb39437b9196b80bf344ff6fd1033239c92e48bdac0b885fddf02a76afb"
   },
   "/apps/cadenza-metronome-and-tuner/": {
     "lastmod": "2026-07-01",
-    "hash": "26e5a7af1c2ad55adb16f81eff570e7f218e6e23f9e7826062d22a8c80c35ce5"
+    "hash": "e968fd889020af78b6794ecfa198df0546cb175118d9ed77d07782e2d4c9311e"
   },
   "/apps/colorpop-color-block-tap-game/": {
     "lastmod": "2026-07-01",
-    "hash": "1e64df5225aedc1b9ec89ccc6b85aae91ff0caa3beb8c275c40835c65951517a"
+    "hash": "0b2eb62f338b62b11165ed4f2b59b8cdbb672e677a3992d2e5b90f3a5bf9fbe9"
   },
   "/apps/compare/": {
     "lastmod": "2026-07-01",
-    "hash": "a078964bfcf2556e31a538bc593640c1c7f5e3b31cc273d1fbc67b11f5e02f5a"
+    "hash": "04fa6bfa4c5d4088c6cc4930ded3ef99d923c802a8b89a79fccad0638c1160ab"
   },
   "/apps/compare/address-label-maker-vs-handwriting-envelopes/": {
     "lastmod": "2026-07-01",
-    "hash": "fab2ac70cc8544c849927d8dc52ccc6ec05f280a3a57e1975da297dbfb5871b0"
+    "hash": "f1753c87ac49287f40ddd0da755f9c208491b30237f60f2aa825f7f80d7d7499"
   },
   "/apps/compare/address-label-maker-vs-word-mail-merge/": {
     "lastmod": "2026-07-01",
-    "hash": "cebbe85a44404444fd58bb310a051924ed672a2d63db7018bc60f56740f97721"
+    "hash": "4de92c185cd76b1ff8d75cdbd229d00043ba775a476ef37b02453af2050354dd"
   },
   "/apps/compare/atomic-clock-vs-online-time-websites/": {
     "lastmod": "2026-07-01",
-    "hash": "70d9f608512aab51019c73f0ad646c0f49ce7802bc1ed2ccd96ae33018dd1ce8"
+    "hash": "7cf61b43bb6bfcfeb20b35693981aa3d4cf08409ee27127ae946b87f602c0eb3"
   },
   "/apps/compare/atomic-clock-vs-phone-clock/": {
     "lastmod": "2026-07-01",
-    "hash": "0b0990c147ed1a84c5b97d54e88c9a66692c4a4098e0e9a1c30e0e75304e4318"
+    "hash": "250ad9839210e558ef93d1f39dc679b7a6044106e47e8c69eeca52a9e89d4532"
   },
   "/apps/compare/blockfit-vs-ad-heavy-puzzle-games/": {
     "lastmod": "2026-07-01",
-    "hash": "1f757e74e361baef090cdba7455e244dfc1bf4b8159225a8384daa7caa8f1dab"
+    "hash": "a48fe0509b359fbcf2963b7a8e534e6dc935f7b293b269cbf46c72a8bf3cba71"
   },
   "/apps/compare/blockfit-vs-scrolling-for-a-mental-break/": {
     "lastmod": "2026-07-01",
-    "hash": "d96562394ca9a77ec57731cf2759588df4530a68103e4bd561201e58a6ceb6b6"
+    "hash": "08fe963df430a36f104dff636fede20af661d3d0db09345de69c9aff34afecf8"
   },
   "/apps/compare/cadenza-vs-mechanical-metronome/": {
     "lastmod": "2026-07-01",
-    "hash": "27acb796b1b9a4b4b31e332a6641e8a343ce0b900dddb9a6d1809c6e7674488a"
+    "hash": "05abbd7380173ac8bb19028de20ee2b4971be4abbbf847e2190560c79d0b0e31"
   },
   "/apps/compare/cadenza-vs-separate-metronome-and-tuner-apps/": {
     "lastmod": "2026-07-01",
-    "hash": "f9cd9b9f846bce665728e9e6e7c728695dfa8a42a72d57b714ed329f53facd48"
+    "hash": "c1316c728dc8ef8982f994fc7dd5d8cbed8a04f9bd7cf2675556ec2e289dd53c"
   },
   "/apps/compare/colorpop-vs-complex-mobile-games/": {
     "lastmod": "2026-07-01",
-    "hash": "1bbabb10400c025741c460763d0910588d1a22a06e47936273a7896cbe54b271"
+    "hash": "554420e422622e36fc8207bc396d9f39bc7a228f0b5e5c9907f93fdb8ed31879"
   },
   "/apps/compare/colorpop-vs-endless-scrolling/": {
     "lastmod": "2026-07-01",
-    "hash": "98090584f4184b67d879cfa0c8f74eab0114e5302ac8ee133a2bb7b558678112"
+    "hash": "5c4f426a811c68a12c4905099173fd780944c0a2ec1c60e2ceb7b6e3ef4d7165"
   },
   "/apps/compare/contacts-backup-vs-icloud-only/": {
     "lastmod": "2026-07-01",
-    "hash": "6385800ea8fecabe1381e43c6928a6efd3e2ce289f1b3bcab09f5e7590156505"
+    "hash": "885454c6e74d4f429cd6cd2f5ca4f092f42055fc60453dd6c5f670da9082bde0"
   },
   "/apps/compare/contacts-backup-vs-no-backup/": {
     "lastmod": "2026-07-01",
-    "hash": "4968b1d7556ceeceb24cc8a0c6f0a9240578d4dfa41ed313f34f72600e6890b5"
+    "hash": "db1177a69751dc2cf12f52f9e7de2f3fa370c8a0dee278579c591ebe4b3788ce"
   },
   "/apps/compare/cutlist-vs-cut-optimizer-websites/": {
     "lastmod": "2026-07-01",
-    "hash": "d9ad17750b2f4555bfcfd74a01b8c150fea812caade7f7c4b596b1704015528a"
+    "hash": "c0086754c32c2812749f528d6ae1f4df8b88e7b1a86ad9be94c5153d396a0dfd"
   },
   "/apps/compare/cutlist-vs-sketchup-for-cut-lists/": {
     "lastmod": "2026-07-01",
-    "hash": "0066514c8f3bc8b4bdf3ee6c221681b017bc3c973da96ec5709348c286a64565"
+    "hash": "0e966f0436bc5c41b9b795fd5658288663df821b88f3928ce6d5cc82e7ff7abc"
   },
   "/apps/compare/expense-report-maker-vs-building-reports-in-excel/": {
     "lastmod": "2026-07-01",
-    "hash": "a3bf36310718335ee5b49610df9c710643e6a4dc0da2f5618070282b195cfe29"
+    "hash": "0194b2edca8cd82f66f3de1def6c550493f0907d4194aba0db692293dba9dfd0"
   },
   "/apps/compare/expense-report-maker-vs-snapreceipt/": {
     "lastmod": "2026-07-01",
-    "hash": "c253fc54e6dec4257a5555ad049445edda5d3f546b8acc1622d05932906713d7"
+    "hash": "4217d27ab1cc20f9a3fd1dfddaaa4c0f30d9c1a94d8912cca0b5f73f2b4b27dc"
   },
   "/apps/compare/fast-rhythm-vs-generic-timer-app/": {
     "lastmod": "2026-07-01",
-    "hash": "1160a1cbbf0aca57daed2b55284a52afd4d9539b78babcb40246245baa9fb681"
+    "hash": "f109dc6c4ec342a29dda99169c41d0200ca1488229ea6145f69b8a3a609b1bf8"
   },
   "/apps/compare/fast-rhythm-vs-tracking-fasting-in-your-head/": {
     "lastmod": "2026-07-01",
-    "hash": "ec0cd662c27a2f9c6711c2d6f79019a32015465cd9090682d5108171f9796f58"
+    "hash": "07cf6078b01f724b1eabf7f8a3ffb1e2933b2d2d8c75c3c1787f63212a6ada78"
   },
   "/apps/compare/fridgetrack-vs-guessing-whats-in-the-fridge/": {
     "lastmod": "2026-07-01",
-    "hash": "8dc9c2cd6cd1a18a8c1f7643acad8a6af7366f6551c9cacf02c6d3445042bdc1"
+    "hash": "599a67e1df9fc366f717149f687a758f5fb24c0c5d8e76e74a1adeef9f0f2c65"
   },
   "/apps/compare/fridgetrack-vs-sticky-notes-on-the-fridge/": {
     "lastmod": "2026-07-01",
-    "hash": "e5bd9624f185699ed97bded74f49207207a7e3bb83cfe7055ac9ca0c17f67c18"
+    "hash": "451a2dc92f1ed77b0ba388a93719dc64cf6689a00240dc65a3bfbc0ea207b75a"
   },
   "/apps/compare/glowfeel-vs-doing-nothing-about-stress/": {
     "lastmod": "2026-07-01",
-    "hash": "43f6727b19fcd14bcd915f71a8cc4cefee75f76ca30266eb735934ab6820d2a2"
+    "hash": "bbc61c0a3647e9de9457b47cbb63e2bee1c2cf081cda143c950b4d0c041f1e4d"
   },
   "/apps/compare/glowfeel-vs-generic-meditation-apps/": {
     "lastmod": "2026-07-01",
-    "hash": "f011099c9726e89a2c8131c9594a4d16f684e0908dd1c3cf8007c5e579b513b8"
+    "hash": "4e24b428fa2227a5c6b03febac58eae3bd931d2cd97b11eed518bd4c9e8c183d"
   },
   "/apps/compare/image-compressor-vs-online-compression-sites/": {
     "lastmod": "2026-07-01",
-    "hash": "494e9a4d4568bf88427e7c3a93684247b3a9d70f237b610f3fab4bf7583c8d89"
+    "hash": "528a60c65570b2a2e8adfe03bb9330bff53402e6bd3d90cd0332afbe6c22fa89"
   },
   "/apps/compare/image-compressor-vs-sending-full-size-photos/": {
     "lastmod": "2026-07-01",
-    "hash": "54091d88f96d3ccec856e7ac9ec430be9815be72d89f3db325323d8e5223860b"
+    "hash": "2a04c9b5e7a9bef8049604a21db56501678ff1fc97972f71f69c6ac160ad2e65"
   },
   "/apps/compare/invoice-maker-vs-online-invoicing-services/": {
     "lastmod": "2026-07-01",
-    "hash": "fab4d6bc94af0a1079d08b22eb46ebc76529272e053592a9b69844301bb647dd"
+    "hash": "97fa6789b96dbec75d9a9bf42827fb6c4db1e0557ff91f8780dd1a5887debdfd"
   },
   "/apps/compare/invoice-maker-vs-word-or-excel-invoices/": {
     "lastmod": "2026-07-01",
-    "hash": "865bb28974c40e36336e69788328042297af7a6ab3723d03c9f0fa1eb8b93f7b"
+    "hash": "79609d7c995ab2696bd7442d7f0fb74b21a16b1ea41a743bb36c5f94f0c9e6b9"
   },
   "/apps/compare/magnifier-reader-vs-carrying-a-magnifying-glass/": {
     "lastmod": "2026-07-01",
-    "hash": "74eed8087b669e78d7e64c4c9dc99a0d17d15de50d66b9eeddfb402b75d525a8"
+    "hash": "6b8588157004dcd005acf5552ffceb0c61027f5f81fb8073f68bacc616b5fb33"
   },
   "/apps/compare/magnifier-reader-vs-squinting-at-small-print/": {
     "lastmod": "2026-07-01",
-    "hash": "196c1001e11d74a203c147ae20afbb09db0992d52ce05a45145f2e695f5b0a32"
+    "hash": "45e2058a628c72562dd56c83429bdac1e1511217d076d2389dc398057f7bec91"
   },
   "/apps/compare/marketvendor-vs-cash-box-and-notebook/": {
     "lastmod": "2026-07-01",
-    "hash": "26ddc41da79624fd8d149df66613b6c8383638cc8e03490aa9bfd0183413f323"
+    "hash": "fc78418dc44e15e6572af766a3cfb19c37103f52441810cd921ab031ed2f06f0"
   },
   "/apps/compare/marketvendor-vs-pos-system/": {
     "lastmod": "2026-07-01",
-    "hash": "e6b6b8c3ce9a3f6ede40ea1f98f3972f4f90ba91fb012a5564f8319ca4cb0a5a"
+    "hash": "54e2422e1afa8929bdee04c87e001695ff3831e8d3b732ff5bba85a95c9d2a22"
   },
   "/apps/compare/mindnest-vs-notes-app-journaling/": {
     "lastmod": "2026-07-01",
-    "hash": "e1b3c6d2906847cc95d5adc55bd5ced3c2ec741e0135550d65e239de4e256940"
+    "hash": "44f614036924a640da34fb621eb4ff27328c666801d1a64ea0d2151df20d9991"
   },
   "/apps/compare/mindnest-vs-paper-diary/": {
     "lastmod": "2026-07-01",
-    "hash": "7faa6a775c30e72c913bc5daf3d87559b6cd2743d8aa6f6711de45ad2a42c4eb"
+    "hash": "a738e06a8d5c8e8da903d80649183c4a0926cb1e2b0f3889cc0048ad6b533705"
   },
   "/apps/compare/pantry-label-maker-vs-masking-tape-and-marker/": {
     "lastmod": "2026-07-01",
-    "hash": "96ac268ac073479cecf4a904d8c2d5090208ac4d0eb262e91c6d2784c75e37b0"
+    "hash": "176a1b3a313c1da9a14a6cd5c6789557868492a141c814b6c2f18ad4db7c56c6"
   },
   "/apps/compare/pantry-label-maker-vs-store-bought-labels/": {
     "lastmod": "2026-07-01",
-    "hash": "432b22da7f05521a03aed4859c0a0bc57a8dbfc54a3efcb40289778772636a6c"
+    "hash": "bdaec737c133388df6550bc45cdda6b2a783bcd5f84e13bb1ca453b80e1efde9"
   },
   "/apps/compare/pdf-scan-vs-office-scanner/": {
     "lastmod": "2026-07-01",
-    "hash": "df193a477ea3312f9562d1dcebc15e5a3d718c88342fa2f6a7209c32cd9a2a1c"
+    "hash": "3beda3e28d48398ed19c0b21640e184cb4290dd3aedb67fd2131474bdb467749"
   },
   "/apps/compare/pdf-scan-vs-photographing-documents/": {
     "lastmod": "2026-07-01",
-    "hash": "857c96a46df39d55516c6c4f68eebb0b88015d24bb55479a7243cadb272d22ec"
+    "hash": "c961f186de2ad083da5c7688e78a891012d81a1054a3214ffcd10d31ac7796a7"
   },
   "/apps/compare/photosafe-vs-hidden-album/": {
     "lastmod": "2026-07-01",
-    "hash": "faf340039ffb4f8d215f3cd8474e99d1a6cf7db078922f28064f85f25d44e36b"
+    "hash": "6d8e135d9d546b3c7436126660f5a71cbfd4dafdea87ccf5e313a5b70a1b152d"
   },
   "/apps/compare/photosafe-vs-leaving-photos-in-camera-roll/": {
     "lastmod": "2026-07-01",
-    "hash": "e3837875de7bc2b5bec2437c2c01e751b64ad0cf1ebd10f288a980f04981f343"
+    "hash": "15589ec5c064ec14cfbcc36338d517fa3786f7af62f2d399f7d3ffb7f0d4c1e0"
   },
   "/apps/compare/pickone-vs-arguing-over-decisions/": {
     "lastmod": "2026-07-01",
-    "hash": "6e962af14dcce73a2e086bf79cafffb1d912026b668dc9b13a7a1fb95951b6da"
+    "hash": "41417f29fe743dc3a91a8b20b9e9b3f84089266e8ea9a65e404a85c04463f771"
   },
   "/apps/compare/pickone-vs-flipping-a-coin/": {
     "lastmod": "2026-07-01",
-    "hash": "f92157708aabe3d69fa90a670a674a885a20590d09be1414423f3796e7b9dcb9"
+    "hash": "eaa7bc4cc2b7389da517b05fbc24dbe08fa45a5c2ec18903b78e7e2cbe76d87f"
   },
   "/apps/compare/printer-app-vs-emailing-files-to-print/": {
     "lastmod": "2026-07-01",
-    "hash": "0eceb214f827415f39167b8058fee6827f050b1d53671d7c2974a285d1cd01b3"
+    "hash": "0bf7415564db32bee4589d5a562e8bb2d59cf2d116c00de83c83a2d022720edc"
   },
   "/apps/compare/printer-app-vs-manufacturer-printer-apps/": {
     "lastmod": "2026-07-01",
-    "hash": "f41ac903e509d2b76bdd094e7f13bebf1efddb9c7131ad63b4891886bea9d70b"
+    "hash": "9eeed9287656e1f35433ced951e047e9c4e563e0145c7797fc006694e20e467e"
   },
   "/apps/compare/private-transcriber-vs-cloud-transcription/": {
     "lastmod": "2026-07-01",
-    "hash": "a36b65973e8eb52821cc4720563a14541cba9118009b9e42164b68b2dcd3545c"
+    "hash": "986e061eb96a5f93d6da780e00a8517022ba9d5189d301dc0f7505279821a210"
   },
   "/apps/compare/private-transcriber-vs-taking-notes-by-hand/": {
     "lastmod": "2026-07-01",
-    "hash": "6f371863b60fa15cf3982f5dc2b90a6a8bca6b8c82ccfa71943c36e44b98f6db"
+    "hash": "005aea1c70403c5462cc977176b00d5fff82fd6dcfa4d011e4d291bf3d2f471e"
   },
   "/apps/compare/quiltfit-vs-graph-paper/": {
     "lastmod": "2026-07-01",
-    "hash": "8e445f1443e3dc9b8e9117269d556c00f428660055112bb40661c867c04af653"
+    "hash": "c9944dbdeae8b2ebf1e34f712dad800b66bf9fe593f0750fff3c3ef6b8e76951"
   },
   "/apps/compare/quiltfit-vs-spreadsheet-fabric-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "b3eb11fb33912cde6492654db8d197ae9b307b3f5bd11f6183ac392d12278742"
+    "hash": "62652edd70371d5ec57d4389aacc9d246bd7f559d06fc6b6ae3e592d545562e6"
   },
   "/apps/compare/ritualix-vs-habit-tracking-on-paper/": {
     "lastmod": "2026-07-01",
-    "hash": "ee580d60951c68768ba2569eef5cff4dc39ccaa953c9c80a1d4533b8e903cb33"
+    "hash": "339cf87d955adc3bd2aa2b00b2523c5474e66af0d7a86ae34f74d505a7f5185d"
   },
   "/apps/compare/ritualix-vs-tracking-habits-in-your-head/": {
     "lastmod": "2026-07-01",
-    "hash": "2514e5f6a027c645ab9d00d48f97482a434236433d46d815a904c94049dcf239"
+    "hash": "538991e0e83f431d797f3fddea10240f17c11221357cf40959f7b136a1b2c4e9"
   },
   "/apps/compare/shift-calendar-vs-generic-calendar-app/": {
     "lastmod": "2026-07-01",
-    "hash": "7fceb0254691dcb85c23d7dbc372216c654dae7b8ff86dc9308078cf74cb2855"
+    "hash": "527de6b602fc3d40a185d0874606b0ad4e2d41d2e9c77f8b5232991f14710a20"
   },
   "/apps/compare/shift-calendar-vs-paper-schedule/": {
     "lastmod": "2026-07-01",
-    "hash": "7c3a5b994076ba7c12eb3eef43a927277c08428ff8fb1e7dd07fc45823e4509b"
+    "hash": "84287bd9c79e6ac8aa957334926852e6e1cf3012f333b95d356584bf8c05e299"
   },
   "/apps/compare/signaturemark-vs-desktop-photo-editors/": {
     "lastmod": "2026-07-01",
-    "hash": "09c79d1f74c38e208431b0f326f5af5c06f5073efc288943006759a9c23a4480"
+    "hash": "591c5dd65a165280d8548d6e8c1795e84d81383d1d1661318207ff920509df17"
   },
   "/apps/compare/signaturemark-vs-no-watermark/": {
     "lastmod": "2026-07-01",
-    "hash": "742d2ec42112b384396fe2c666ee4e57572033676211fda181080092f835936a"
+    "hash": "ab13d1fa88d27b80f2da04c41dea6acd3a800c65bce0caada831fedd302e4e1f"
   },
   "/apps/compare/snapcleaner-vs-buying-more-storage/": {
     "lastmod": "2026-07-01",
-    "hash": "70515aed57e03c39bd9af98b013d16151da09275be3c3fe7f00c3c4d4365857d"
+    "hash": "7321729c64b82783d0a3ff7938cd0ed7d691560126b0391ccb9a0a288d58e4a9"
   },
   "/apps/compare/snapcleaner-vs-deleting-photos-by-hand/": {
     "lastmod": "2026-07-01",
-    "hash": "eb37a50578b5875768e27448e518e8cb1c4881b77383af86c5c10f6c12e445c7"
+    "hash": "f2d870cecd9edbbb9eb5dbd7552b5cd9e0dcbde9179cbb58103f55d11fe04bea"
   },
   "/apps/compare/snaplabel-vs-handwritten-labels/": {
     "lastmod": "2026-07-01",
-    "hash": "bbba3c39f517609de5d74f9e186ea4db3f60a2dbb7ec1fbb4b0d8f8bc80c0119"
+    "hash": "da11612e44b4be45c2c9a71875a3a520e20d44811ef15d109aa519eed2719bb4"
   },
   "/apps/compare/snaplabel-vs-label-maker-machine/": {
     "lastmod": "2026-07-01",
-    "hash": "2093b94e78f6f600f3db6ace2a3ed89c4a4c2229bf2d324d860baa97071baeea"
+    "hash": "b954e8d7b6d87f23707a0ad8c79aafda0477755e73e73ef83836b1ee785ab659"
   },
   "/apps/compare/snapqr-vs-free-online-qr-generators/": {
     "lastmod": "2026-07-01",
-    "hash": "e9c6af35ca38d773ba090c6e0f794c935400be491c552f9bbd4128a794e1ccb6"
+    "hash": "239660043c514ecf44b11a18f37eff210e43c8b47d069e36b974898590577355"
   },
   "/apps/compare/snapqr-vs-typing-links-and-info-by-hand/": {
     "lastmod": "2026-07-01",
-    "hash": "9dcb00ddd61d6f692ad298bb42830b0be196568a6be784004c7ddaa478eee009"
+    "hash": "5b3bb95638419bb48e1648b36dfd2e379b28e9026c3f5cd7b39e96956f5004e7"
   },
   "/apps/compare/snapreceipt-vs-cloud-expense-apps/": {
     "lastmod": "2026-07-01",
-    "hash": "1c2279e845eb15140b3d726aeb4e548050b51fcd2a1320daf37d5eda46220397"
+    "hash": "57befba1bb3596090b2e5a524e73500e3acd9fd96a9edee4579bb3356df9c67c"
   },
   "/apps/compare/snapreceipt-vs-shoebox-of-receipts/": {
     "lastmod": "2026-07-01",
-    "hash": "5682932d7cadded89845b2f7e92b58b7ce2a9581a9501210acb10bffb75060a2"
+    "hash": "7228ce0e3710eef6ecd0ff7b6b00fdab2116192e43ed3390a777aa37d9fc5061"
   },
   "/apps/compare/snapstock-vs-counting-stock-by-hand/": {
     "lastmod": "2026-07-01",
-    "hash": "a5c41bbcf48112e517182577848acb9348079782954479ba2d2d91f742ae7e4d"
+    "hash": "e9c2113d6743caf70528d26e06925f3834f7e296e0218772eb89fc67034a87b8"
   },
   "/apps/compare/snapstock-vs-spreadsheet-inventory/": {
     "lastmod": "2026-07-01",
-    "hash": "2429c7dd1a00009371f7273fc2582ac2100ff58d3cd2eb38f5d85d8a7a86e1b4"
+    "hash": "92be0806457990ba6cb0951f751b9550163319c1048e99d4c7db2f918c1ff41c"
   },
   "/apps/compare/speaker-tools-vs-guessing-speaker-placement/": {
     "lastmod": "2026-07-01",
-    "hash": "1fea4761eeb836973e3ba49b7cee4f6f967f2a551407ef7dbd40652d9f0c9951"
+    "hash": "2f9d077bf8ccb20ca0571d4f80f6e69f09152741c12b3c0c1a22e0b89b4423b3"
   },
   "/apps/compare/speaker-tools-vs-test-tone-websites/": {
     "lastmod": "2026-07-01",
-    "hash": "921b30d32134173fabcac67a72e2bfb7f86f831f0ff5f86fbc43e36abd4bc06d"
+    "hash": "35e532010f440449f65eb040cbe9a1cc8d7590fbf69d41e11dec411d29656e93"
   },
   "/apps/compare/tinnitus-relief-vs-playing-music-or-tv/": {
     "lastmod": "2026-07-01",
-    "hash": "9a9ab9fa30cb4703f752cdf0f50ceb1a3b475825a23bf586f9dc5ababf72802f"
+    "hash": "0500fd8ce2b2c94543fe8ec43e2da59363b6a1d0a09c5f42c0cdee648ea5112a"
   },
   "/apps/compare/tinnitus-relief-vs-silence/": {
     "lastmod": "2026-07-01",
-    "hash": "8e909c6aba91a5e675db021c8b0df296c0b1cb49e73cd60dc6ef2e23d25eedc6"
+    "hash": "8238de26db28ab0b83e1d14ce3a1aa8c8e38d0916eb151fa2850d9cf5a01647c"
   },
   "/apps/expensereportmaker-and-receipts/": {
     "lastmod": "2026-07-01",
-    "hash": "e1ee27e64371e3293d2d1db0cf3a6efa9c6d6c64924c09f960f3facc133addb2"
+    "hash": "ef6a7ecba0b2eca6a4d7060a94253e8c0eed0722326784092c80d70cddc37858"
   },
   "/apps/export-backup-all-contacts-pro/": {
     "lastmod": "2026-07-01",
-    "hash": "ced75f1502ebd7f70cebd38a8f643ff57986c11f548293c29ebb27f4d6bab81c"
+    "hash": "9a553f6b96409e2cca3665dcdd1cf0e1f94d013c9e4a08e0893b37a785e5497b"
   },
   "/apps/fast-rhythm-fasting-and-sleep/": {
     "lastmod": "2026-07-01",
-    "hash": "59d6bcf4d75a0a660d4e18ccd8ce859a8020f7a8086bd24f619e33edbf5910ed"
+    "hash": "623ed78f1a8ebb85fd68c7371b11d71869dd3ca20006c573f3589bd87257c4b7"
   },
   "/apps/fridgetrack-fridge-inventory/": {
     "lastmod": "2026-07-01",
-    "hash": "954f27431795f3ca1ad3fe9fbe0dc84652dbbde486feb516045bca48466a10b2"
+    "hash": "ba40dcb4d78bdcd2ebd7cfb93bfcef3dd5ef978f49537ec14a385abae746d481"
   },
   "/apps/glowfeel-stress-ease/": {
     "lastmod": "2026-07-01",
-    "hash": "6dbae5337eada8499137021bb8ff20ae57ffcc8553a34a5fb7eb592be750688c"
+    "hash": "902d932ebfd23e333043c1f9044ff990ab07bf19bf929afdd90a914b2b7c870c"
   },
   "/apps/image-compressor-and-zip/": {
     "lastmod": "2026-07-01",
-    "hash": "12be569962f27f32337f1daa2479157aa0c743a03f7880d676157b2e694d0ad9"
+    "hash": "1d11fa1234acf6523aadb0aab4e7d453db02f3cb8e5441814eafdb6f17ec95c5"
   },
   "/apps/invoice-maker-estimate-pdf/": {
     "lastmod": "2026-07-01",
-    "hash": "ebe282bc742d47cd93e372e32e7f5a86fd0e18fbe6e8c2bf4185c425ea935aca"
+    "hash": "51f5f1a3a526e49f6907baf97b6df0299ee56a23741c068bf4b9b65d8bbc39f0"
   },
   "/apps/magnifier-reader-big-text/": {
     "lastmod": "2026-07-01",
-    "hash": "98df732fe41748bb346b65518d4dfc16c5c8461edb40d3d163707b32c20987df"
+    "hash": "8ba3800988653772627fb4cf13a34ac58ab524c4f7e6cb36db6745cba7acabe6"
   },
   "/apps/marketvendor-sales-and-profit/": {
     "lastmod": "2026-07-01",
-    "hash": "fac2ce89b2337dbdb1ea676d11f82a82a9cc0b7f282f727f70d324b00821c9c9"
+    "hash": "1217ca29e542f423b54b465814d2dd3fee291aab21f63f0373c86ddcdfe022cc"
   },
   "/apps/mindnest-secret-journal/": {
     "lastmod": "2026-07-01",
-    "hash": "574dcaf9dadb955f8d8b518d52678e28fa81358605d4398dc8bd1abc5c4b15e8"
+    "hash": "3294189c475497e6626553661312c9b209bb9fb31fb281ea1a601cbe9fc42a7b"
   },
   "/apps/pantry-label-maker-kitchen/": {
     "lastmod": "2026-07-01",
-    "hash": "288c87f60f3752dde0c0679486dffad52b91e12ce5ae746721ecb7181f4f3d40"
+    "hash": "f7acc744754d566633fb0b6584c1f25a63650b93202257ae103f65b2cc9bca62"
   },
   "/apps/pdf-scan-scanner-and-reader/": {
     "lastmod": "2026-07-01",
-    "hash": "e6de484e9202505cd57dab8797f50464027b1c24bfaa094aa090025bb77d8b1a"
+    "hash": "ecdc7dfd02cd825ca818a25363858e761ddfc85226b4f0e79d21b17130fd271b"
   },
   "/apps/photosafe-private-photo-vault/": {
     "lastmod": "2026-07-01",
-    "hash": "47c6ba354a6351374a6a0f96c10813c81de92ed7937e8e8ff42fa2740d46f99e"
+    "hash": "4408511fb21bc20b3da03b882b940f66dc67d2862c7bce9796260adedb953a95"
   },
   "/apps/pickone-random-choice-picker/": {
     "lastmod": "2026-07-01",
-    "hash": "aade2693ff84d3e3fc3ef1c0bca6959ce677779470b13563229482cda07ee8a5"
+    "hash": "6a2dc0f933ba4cacb172f1db85fee10946d680abf5ac605008d2df218c7cc802"
   },
   "/apps/printer-app-print-pdf-docs/": {
     "lastmod": "2026-07-01",
-    "hash": "0721b62b01f5e895e5413c59da606ae828f11e36d95772f59f08e393a387f6b3"
+    "hash": "f06c37d59aabbbb58b0f1d2f5e358c058f3cfbcfba0a1e1e54262799411b51e3"
   },
   "/apps/private-meeting-transcriber/": {
     "lastmod": "2026-07-01",
-    "hash": "808e5c0cd4457da0379bcd34e49fbc13e1d53eaa583a0daa585ddbb23db6f10f"
+    "hash": "de247dbeca0c7e2ae6002c3e5c963514ffb252a8ec335db27cbd1cf4107087ac"
   },
   "/apps/ritualix-habits-and-streaks/": {
     "lastmod": "2026-07-01",
-    "hash": "500135f63e59bc0eaad89f1232003a38f99c321f9a327ae056cecb5b2c3476c0"
+    "hash": "a5908f4bff3c976f92a2ae0a9efb0d0d55c7a300d2cb3f54850d16775c378a10"
   },
   "/apps/signaturemark-brand-mark/": {
     "lastmod": "2026-07-01",
-    "hash": "08a167215a958e0bbf0b45a7695512dfe6fe0221462844f246d453b47ef9457e"
+    "hash": "28c353fc472e411fbc6d7d2bc1fe570ef5d2c12ee6609c70bc84d56631f7c331"
   },
   "/apps/snapcleaner-clean-photos/": {
     "lastmod": "2026-07-01",
-    "hash": "c59ee94345ef526682d6141e7f88c763b88ed9378861831bace7dacb47ca6dfd"
+    "hash": "386668381403b89e56e5dab28bc4a89a580ce0730d0b0bfe41b4532c8ed4257f"
   },
   "/apps/snaplabel-photo-text-label/": {
     "lastmod": "2026-07-01",
-    "hash": "39fdf7bf22206877e3bfc1a540fb65ec479199030b1356084db7e29d32ff9218"
+    "hash": "aee703d33dce39617897c723726ee59611150840ad112ffe744003ec07d95ce9"
   },
   "/apps/snapqr-qr-generator-app/": {
     "lastmod": "2026-07-01",
-    "hash": "b33d0ceaa28dfb1bc0c973615be8fdda2589009f7ae649f8b961e5433bf825ca"
+    "hash": "84ac89ddb845af729ab93e35c142300c3712eccad505a5362652a331e21df9d1"
   },
   "/apps/snapreceipt-expenses-and-tax/": {
     "lastmod": "2026-07-01",
-    "hash": "0a2f2befa8fa141b0f13107870ce71bb7f8a5c6ce1fa17fbbc750b4ab9505741"
+    "hash": "4efc2bf6bda07b83735cfa2be15e3a2759b22de4386f2f69fd42cbe94ddebcfa"
   },
   "/apps/snapstock-inventory-scanner/": {
     "lastmod": "2026-07-01",
-    "hash": "741fe8cd76a07f6ff6495f3b16a17c934dc744bdffc4b859be08bfa3156b46a3"
+    "hash": "892002b0906ea4ab6b1522f2bd2cc2ab7c6d573c278f605275613a3f15e64138"
   },
   "/apps/speaker-tools-audio-test/": {
     "lastmod": "2026-07-01",
-    "hash": "ef09af12affca11b79b3b32c1bd3467d497c44db124500f221a24f838bf53684"
+    "hash": "47ba2efde2bd4a613168749d1cc2cfa309cdd93a6ae8ebf19fa200622c57705d"
   },
   "/apps/stringer/": {
     "lastmod": "2026-07-01",
-    "hash": "39660c085c7eceea1d7644dabd8eaa15a3a3b1899fbfff71302733aec71a9aab"
+    "hash": "0a1b17a77c025668b0a87aacfbf673534a4a93d172a6236eeaefb1d431bbb201"
   },
   "/apps/tinnitus-relief-sound-masking/": {
     "lastmod": "2026-07-01",
-    "hash": "07610a45d7852138e36a2f6a68e4994ee97dd2e88b508ffebb37316a8b535061"
+    "hash": "61cf1b12d7e80b3d08bb03920c9d6ac1adf575f4e81b25df0177c64672e60875"
   },
   "/apps/work-shift-schedule-calendar/": {
     "lastmod": "2026-07-01",
-    "hash": "fba737796bb8c7ee96b3cb9a1c49ffb31fcbd00309de42fb075a9c5210416f4d"
+    "hash": "e2ea00d5ac76efbcf34b7178c8e135d9ef01fc6f77614e13334cc63826a70dea"
   },
   "/blog/16-8-fasting-timer-weekly-report/": {
     "lastmod": "2026-07-01",
-    "hash": "5c2fc5446dd35ac129e3fd436dad36a5a58553db0419afe6118e1f736e54918a"
+    "hash": "c396ec5bafe1138c4fc046d109aec54d3fbc20d5224de21047340295cc5ab775"
   },
   "/blog/2x10-vs-2x12-stair-stringer-throat-depth/": {
     "lastmod": "2026-07-01",
-    "hash": "df47937a2c79b4426f98ce21ceb920d60fbd4fecf13d0d0032d221df04312e41"
+    "hash": "180b23cf91f431c4edf630c40dd3be4aadb0c3671eb8c5ce4f214c28ca5d201e"
   },
   "/blog/6x2-shift-schedule-planner-calendar/": {
     "lastmod": "2026-07-01",
-    "hash": "78fa4f1fc2ee81ef77b1bfb4ed08ea2fd57153395a9578cf0ad9f6a20849531a"
+    "hash": "70284bf68d45c44f0309538d8d096912c3ec4b1f33bb8c9b34d3fca3e33a5922"
   },
   "/blog/address-label-maker-envelope-printing-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "42e76d6030210acbb188558afedd2672a770a31d4ef356e4880d8f5aa200a22b"
+    "hash": "1240ce6ce05fadbd74a2db06a98ba7b22d0713fd2dec1b5c443c5a70eaa804b3"
   },
   "/blog/alcove-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "5b395cc7eeaed1ea9bb27ae2371425f4019481df684b207e2f05f70053b72791"
+    "hash": "94230c81fa629dc42351296b279740b4e82b81575d21ac127bfbc96e7a913bf0"
   },
   "/blog/applique-quilt-fabric-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "c33193c48ad62715641c3b99758eb56cb5f7ffa91a3c1b9a4873447967d8760c"
+    "hash": "ba09674303340050bd9e485a6123d801ba36531e64945968216f71bbff6cb29e"
   },
   "/blog/aquarium-stand-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "4713bfc264bb81991b323935aed0ef338c47b046e3425872009ac18a1d1e9043"
+    "hash": "a9dd8fbf8845b9220443941d54b5cc19bcd2e55c7b9878ab53050f50866999e1"
   },
   "/blog/art-supply-rolling-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "2a9227b66f244f680e6a9483293bdc69cf96a6e9cffa8647a03595dadc86c4c7"
+    "hash": "14400b85817b3fab3a5982b8704224810a621cf9861ac4b9c8c51ef1aaa38ac0"
+  },
+  "/blog/atomic-clock-keeping-screen-on-when-it-matters/": {
+    "lastmod": "2026-07-01",
+    "hash": "4c5862e49bab25c8727c24e9ec3d43a693f403a88de57986bac5aee1dccb1f71"
+  },
+  "/blog/attic-pull-down-stair-opening-vs-fixed-stairs/": {
+    "lastmod": "2026-07-01",
+    "hash": "3824d033414168f4a7d85851ae12dad9d319ad3bb5b4f07ee161a97a2160e70c"
   },
   "/blog/attic-stair-opening-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "1be2382b90e2bd28c7f0351ec84b98b2648ca5c9211eab13f3c35485c290f7a0"
+    "hash": "4cba666721e8e32be3b861830a8e8419dfc6d4b4ac010db4cb03d1669cbff077"
   },
   "/blog/audio-test-app-for-speaker-placement/": {
     "lastmod": "2026-07-01",
-    "hash": "3c4e7224ed3f95f077f66d515f3abcc33ab0b6231b2333a6a589fbecd0171101"
+    "hash": "3ca009bf67b20aea448052458fa0daf7bf4f8204cbd3d0d42962ca9c5ed3ecbc"
   },
   "/blog/avery-label-template-iphone-printing/": {
     "lastmod": "2026-07-01",
-    "hash": "b06e0c9493d435fbbd66a0f0163be4af8465ee989f3a09204c67c04103fc1680"
+    "hash": "698dd251aa6abb7ea49265ae8cab0b0c10569c177d364258d2c85e9f14818df9"
   },
   "/blog/avoiding-common-stringer-layout-errors/": {
     "lastmod": "2026-07-01",
-    "hash": "93151a5d6ab96370af3092a09274d497b636c481e420cd47bb1a29d15ef62800"
+    "hash": "f11508fd0e3d38954d5279597e96b35b374a732fd5a7c4b57aba48e0297aa41b"
   },
   "/blog/baby-quilt-size-yardage-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "2d545f8553b66f91db2678475c00ebefcc6b2a903bbb6483f95a8758630c5e8e"
+    "hash": "bbcaedd26ba2fcbe16f9e7aae19b5e55677e7df1a7303a2c806d7ac4963e8da1"
   },
   "/blog/backing-binding-batting-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "e368bfeee23e3b9033f41d17db6a13225da3feebd8427be9135fbc15a9390ddf"
+    "hash": "f0c44bd6646df1841016b319cb3ba21382066e5fca76fa14dc995729ef04dd35"
   },
   "/blog/baltic-birch-vs-cabinet-grade-plywood/": {
     "lastmod": "2026-07-01",
-    "hash": "d0cb2f0b13e867128df4f6f06eca07fd6682af91c4a1b21a0a9fea42c0a71bf5"
+    "hash": "39f6be8d1114762b5f282f535e34b2edb1823046a9e483628c2325532310aaf6"
   },
   "/blog/barcode-stock-count-app-low-stock-alerts/": {
     "lastmod": "2026-07-01",
-    "hash": "c7af7e283c73097d3d05317c6b644193f500dab5cc31ab768c1a118d8aa82879"
+    "hash": "d98cb11d12f5b49e8cb5d514b2a70e8821ca03fe92a3fcee3c3647eae495e0c5"
   },
   "/blog/basement-stair-remodel-measurements/": {
     "lastmod": "2026-07-01",
-    "hash": "5553adf6cc15990c1041fb9264425384aae6e5cdd2858cfbf4ce7c4a664ec457"
+    "hash": "a31f318085eda87cb804fdb94281bb42ce758cb0be09960affd6921cb54e301a"
   },
   "/blog/basement-stair-rise-run-low-headroom/": {
     "lastmod": "2026-07-01",
-    "hash": "fa5e400797c53a2bd2f7d8bb88761a76017e670da723ca84bd07b0df00c9e5fa"
+    "hash": "77d36ab8b913e9ee55ede3dc4c6073ad63acf685d047d760247266acee72b537"
   },
   "/blog/batch-photo-compression-zip-export/": {
     "lastmod": "2026-07-01",
-    "hash": "9982fea6e5371d8b35f0a0d6665b16f879d55b6e467196953562cdb6ef0a7023"
+    "hash": "4c7e8141da0b64e8de919c4514c6b74da66f2b74023e4b19e0b4bb723225df51"
   },
   "/blog/bathroom-floor-tile-centerline/": {
     "lastmod": "2026-07-01",
-    "hash": "58d0e1ca5894c18b896327a7f7ad83e88216cc311d50ba061e4828877471c7ef"
+    "hash": "fe79185b61ee0d11aa159557ad43cc7a366e8b101466a8a71842f1b7eeebd21d"
   },
   "/blog/bathroom-tile-layout-slope-and-drain/": {
     "lastmod": "2026-07-01",
-    "hash": "e20ff5de3947021d963f009e532cae516938f1685d5115dfc8197bbfde64557d"
+    "hash": "ecd0c016e0cd07dd9529ac85a5cc67f7409b37fb15231ec860cc71f4a23cb2b5"
   },
   "/blog/bathroom-vanity-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "6279f29ec0b6d35b9e0b5f2d155b8c1b9d4db39bbf0814b13273cc9a9f9cb99a"
+    "hash": "3f4be503baa0ea4898abdad24c9b6b5a95ec0bbf81b07f8dcf818028936d5333"
   },
   "/blog/bed-drawer-storage-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "ab349b482c1b76c1168fbc38eac13c8dd363533c6831193ced44b7a4db2c766f"
+    "hash": "f3de4ab6609e539d373c960005d4efae5b8d38dfb474f21c9a7788e20066013e"
   },
   "/blog/bedside-table-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "9588b70956009f93c27779f2b533c3d9e240181cb00cd9de51c5f3eb7bcfe802"
+    "hash": "29f3e395d696b399f5884a341583ab7c15cee26623e0f82175a2dbe8a067097b"
   },
   "/blog/beginner-quilt-sampler-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "44c33b6c05f12caa23e06ae583d7100844f665bf068b87ce6d83360989bc210e"
+    "hash": "26ecdcb74f1da01be41a758c54fd1e7f1997cd40e616f41c6f83fa3a7c063220"
   },
   "/blog/best-glue-for-plywood-joints/": {
     "lastmod": "2026-07-01",
-    "hash": "a9eaac55c7a97c0e94c20f7a6f4d2275d3cadda5a3c02cf3254f3d903d3dbc21"
+    "hash": "1d0c978b866d462efab767591c960aea8788f8188a5442cf718448dd108db56b"
   },
   "/blog/best-metronome-app-daily-practice-cadenza/": {
     "lastmod": "2026-07-01",
-    "hash": "d1f5ddc91ea2ce3f6c479551ce4385ca737a8feac5343fc8418e6291aaa3a155"
+    "hash": "6e05610b7299157aa127d4c652399e513181cc423cc2e2ae058b47f889780493"
   },
   "/blog/best-pdf-scanner-app-iphone-private-documents/": {
     "lastmod": "2026-07-01",
-    "hash": "1dc5b7953aaf85310100c37babd7eb3ee57f85be290c89dfc94b4a850c4dfec8"
+    "hash": "108026862f322668d00865430c51aab4a14aabd9fa592226d926e603c5aeca64"
   },
   "/blog/best-pdf-scanner-settings-for-clear-documents/": {
     "lastmod": "2026-07-01",
-    "hash": "8f25874619cb198c204d949652086f7c3225ad49a593cefcdcf197618b442402"
+    "hash": "ad61d8dfa17ce0d60b79325af6dace70ef0039f71a18361df7f00dab3a171db6"
   },
   "/blog/best-plywood-cutting-workflow-2026/": {
     "lastmod": "2026-07-01",
-    "hash": "7bd7581108a70ada12b4b9b4c004fb7aca636f51a045294429e043e440a8c8ee"
+    "hash": "ac2c3be262afedf512c90c98ce3ddb0f345be2567ce84f4cbf97bc1af9af4994"
   },
   "/blog/best-precision-clock-app-iphone-styles-compared/": {
     "lastmod": "2026-07-01",
-    "hash": "a9fabea205490cb6a44e4b86312e73e2a6ba4f5e8ee12b189301376b9d3a15ca"
+    "hash": "2ee7fc17fc8260837fc60cbc32824932fe9446879b2bf11f9caa2a4edc05b036"
   },
   "/blog/best-speaker-test-app-iphone-frequency-generator/": {
     "lastmod": "2026-07-01",
-    "hash": "d26b0e8d61e3d4bbf6829b2159d9c7bc9c335e173cc3e3f4db9bf2600d554266"
+    "hash": "ed7f5748d9e5a18b402ede2607f532e9f89ec2c7f41af3684a8b62fb2872db41"
   },
   "/blog/big-text-reader-for-seniors-iphone/": {
     "lastmod": "2026-07-01",
-    "hash": "425b778a3ca16f2a184e6b0cdceadb474e41b32b9d17965c01d0150f5917c70a"
+    "hash": "701fe4e01e5aedc378715fbffe38523d6a4d2058a6020adb775b2605c3952d3b"
   },
   "/blog/bookcase-with-cabinet-base-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "48cd29eb1d7dfaf44ab78d49dbb3223fc159fab456c606cac99d0abd035e0179"
+    "hash": "87bde8896326f4e402e8d4453a2916ffdad6815626127539e105f893b2e9853b"
   },
   "/blog/business-travel-expense-report-app/": {
     "lastmod": "2026-07-01",
-    "hash": "ae22ee714249cb2108ccef98089f126abe4cbf150725cdd2236fc21256576116"
+    "hash": "3f2b835af9f57ae562342d32260ba5f1b793c296aeacddf790bcf7846c6c261d"
   },
   "/blog/cabinet-carcass-construction-basics/": {
     "lastmod": "2026-07-01",
-    "hash": "5b2a3275fbbfb2477bc4dfb03a19d4fb1cadab00f901d3600630a7cd6a43d8c3"
+    "hash": "6f6a10bf8c0994af1c090df9d487278b57b7d29151028d2cb2160ddfde986aa8"
   },
   "/blog/cabinet-carcass-cut-list-32mm-system/": {
     "lastmod": "2026-07-01",
-    "hash": "b575a20644de6e9def1efad50e23d00e6dfd6c101ef4f7023640b4096105b69c"
+    "hash": "eb2d7fd6272441172ef55d4a33986f44a15fa690c1782a8e99276344d91e948d"
   },
   "/blog/cabinet-cut-list-mistakes/": {
     "lastmod": "2026-07-01",
-    "hash": "672ad054d0ef74c910dc8b655cdfefe7ab51ab615650e83ef8da46a2606ed6f2"
+    "hash": "a707c2d0fdb0cc511c91e57ee8ef4c2a6cee6731bc8f6d546841781b302f9d98"
   },
   "/blog/cabinet-door-panel-layout-grain/": {
     "lastmod": "2026-07-01",
-    "hash": "eb7e22abce18411ebb587259c142f1e2db01695fe2b524d55ddf126d9b3794f7"
+    "hash": "ab9d94dc9e5b32f2c51b0cde3dd4afa737e9b207b8000b9cb87ac42289768ff3"
   },
   "/blog/cabinet-door-styles-explained/": {
     "lastmod": "2026-07-01",
-    "hash": "f61d33381b9d94e42b78dcd167f398c2987b20fd03b9f34f0cd4fc46f290315e"
+    "hash": "ee2b0e2a71f2594a98f7025bed179912ab73e780f8c77d9ba4211344b1b352bb"
   },
   "/blog/cabinet-filler-strip-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "ea879e2996cd6fc97ddb03999a88ae05be3cf2a9c075f39f9f50f210182f7151"
+    "hash": "8d349a1b3980bbf1364893fddac6ca0ea51b71e6e35f0e5ccbb773138a522ed1"
   },
   "/blog/cabinet-hinges-explained/": {
     "lastmod": "2026-07-01",
-    "hash": "47b606326de21c7f29f7fa013e9812481a0fbda167fbcdb87166de08f97def67"
+    "hash": "7f4f7902093ffeb4b57aa883f8a634b0dff5201403bee3cafe27fb1bdf514cfb"
   },
   "/blog/cabinet-shop-waste-audit-research/": {
     "lastmod": "2026-07-01",
-    "hash": "f5f074f0baa069e7c60826ed2ec5c54103018f442e5ba4d98e796620079b2f86"
+    "hash": "45b254a6af49ead67e2794a25c615faf749a17ed65f125ba1662c4f7dd11e763"
   },
   "/blog/cabinet-sizing-standards-explained/": {
     "lastmod": "2026-07-01",
-    "hash": "2f73634063710340e93ec1bf1635b34ffb91e21953b0cca1dd6aff4b89f641f7"
+    "hash": "545471da07642ad2eb527f14bdcf79779d987d3f5a726080de5dec07245ba859"
   },
   "/blog/cabinet-toekick-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "4e2d40a9ee2da8bebb2d395b6bc4cd3291438f9c3bc2f4278d44c49918e5a53e"
+    "hash": "9af7b7a2dd63bf1491eecf056c1af411c9ba5d31fcc4220dac24c95334d76258"
+  },
+  "/blog/cadenza-drone-tones-for-ear-training/": {
+    "lastmod": "2026-07-01",
+    "hash": "f75f39154932f05aae9d11022ddc2a7321cc900dc4a2cebfd119adc29d66d4f4"
   },
   "/blog/camper-bed-platform-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "db75e179faf2d506050f74e32fb6549279e89ea47c9655c4f97773811eadbdb5"
+    "hash": "a0363bd5182831156ce921f0e862b98a21a2fabf81c275aed10baa90b8caf05d"
   },
   "/blog/ceiling-mounted-garage-shelf-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "69858e253277526f89bd9c7fad941d9b8db845eb2de0d500520bcd7082f50421"
+    "hash": "0dca6d82e1933b0ee1551d88bb560470fb822fb4aba826c96870b30c7e3b4766"
   },
   "/blog/charity-quilt-batch-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "e2b8690ca959de9b4fd7fef15e21365d399b750e351a695dbb1e19259b6d7ccc"
+    "hash": "cf301a3937c04480d8b51e4d44401471e12b9df0d8473814b5179b6c067fda1c"
   },
   "/blog/checking-clock-drift-for-recording-streaming-and-labs/": {
     "lastmod": "2026-07-01",
-    "hash": "54042b68b7d59f89ea24ba46bfc21d9821706f2ed65eb6efb3163093b92d62b9"
+    "hash": "5c7774aefc0204e56136aaeadd3de7f2c856ec229bc954a3978e3fb695009ea3"
   },
   "/blog/choosing-screws-for-woodworking/": {
     "lastmod": "2026-07-01",
-    "hash": "758612d3466568c9346e49c9e95586c3c9989791989a159bfccc81cbd6e915a5"
+    "hash": "dce831fb2a73cbe0bdc76c8e7fd8402d9559a0a340ee996a0fae8f3062ad3e30"
   },
   "/blog/clamps-for-woodworking-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "6e899d1c41a10acd8130c10e6f3d3dd92479850b9c18ac4613adefc3c359e53f"
+    "hash": "cb4271e077c80b0b578c63a4f115bf71a9e1ed59bb48e45cf3b3ff123b82dec5"
   },
   "/blog/closet-drawer-tower-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "1471931f2739f647e017aaa3dc456bf3eaf782d9cc7f623c11cf906d170eb3a3"
+    "hash": "192698def8199bc7b37ce9d97c7d81ca50890e9c359abec76ac1839ed4754c80"
   },
   "/blog/closet-island-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "983387597a83330d75603e206aef3ad6fe0055134638a789f12ba1f4401c4cb9"
+    "hash": "f7879780681f45a21fcae60a515c51324d4ac3a3d3e01cdd08cd4ae5209284a1"
   },
   "/blog/closet-laundry-hamper-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "9b29dde3e8eb1161d78d46356aed2c5751a8694cad9db7e6191f12281eede949"
+    "hash": "a2878da7fe4001db4d98e1d46bc5f574df02bfc2c3c143cf8380588f5dc4a2a3"
   },
   "/blog/closet-shelving-cut-list-planner/": {
     "lastmod": "2026-07-01",
-    "hash": "b3a33d1c63e68718f5a302749c905fb15fbe578396580d1f6154281740159260"
+    "hash": "a5f695b73973bdd0e27b93d45711d2306da345ea5fb26e9e0b9ca42d39f541c8"
   },
   "/blog/closet-shoe-cubby-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "ba56ae9b965ce1fb98210b7d21ffe36cb352025ec928b25d21a783d220f2618f"
+    "hash": "fa1fdf247e91f783c8ab28caa8078a5b94459649e5a56d2751b575aafadb1997"
   },
   "/blog/closet-valet-rod-shelf-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "78de3e7cfefa02760e8d382e2f892ac51daf34b564b95848ed2c32a6c28a02bc"
+    "hash": "2c0e3c8d0b5849244840c188b9eee106843e420ad180e5142ddde59c114cdfdf"
   },
   "/blog/color-and-repeat-planning-for-modern-quilts/": {
     "lastmod": "2026-07-01",
-    "hash": "c225728fb891f3695c09ce8746523ac6115199e238a1135900f5f41365d6bb91"
+    "hash": "627351b2b92e30db6ad705ad9f9a8234e3c6a6274c2c3f187be97646aacb27b8"
   },
   "/blog/comfortable-stair-layout-rules/": {
     "lastmod": "2026-07-01",
-    "hash": "7ccf536b3329f21c83b963f72f98e2fcbecb4dd49d8b908c6cb3f693234882c3"
+    "hash": "f9b7774c8f7e57057ce7127a405c8e8aaecd6e2db5745861de6488e4a4193a78"
   },
   "/blog/common-plywood-cutting-mistakes/": {
     "lastmod": "2026-07-01",
-    "hash": "51cf69d3663af30c7e0ccd2d12c09aeffa64eaa23aa6d7df75c3af4b752d1db6"
+    "hash": "073dbf8728d6711e30ed20f04f258c8109f42d53c2520f8205969aa9906db8ab"
   },
   "/blog/common-wood-species-and-uses/": {
     "lastmod": "2026-07-01",
-    "hash": "a661cedfaa7778f441a3d4ce165eaa8e0492610b304fe3fec56fba9da5e781b1"
+    "hash": "b55ebadd923ec894441ba07ce7e760d53271c1c6ac58114f1511f886adc6f02e"
   },
   "/blog/concrete-step-overlay-measurements/": {
     "lastmod": "2026-07-01",
-    "hash": "2516ac1256b89a6f346e1971a33d3338f12a8e4dfb738d370efdfe4a72d50d7d"
+    "hash": "40fe0d7c15289543f31e0b199c23aebb775b88494d6b1e6d3893066d4f6c39d6"
   },
   "/blog/contact-backup-app-iphone-excel-csv-vcard/": {
     "lastmod": "2026-07-01",
-    "hash": "36811a5ebf7e9003be1a724d1a19ac78933312434bf10fcf793e9de6a9399ad6"
+    "hash": "3656f1d44e9bf1468002c2991ddfe8f31f1f568980545f8b89e935b413426425"
+  },
+  "/blog/contacts-backup-before-switching-phones/": {
+    "lastmod": "2026-07-01",
+    "hash": "fa17ee91afe192668db442cd1b78f15e992b19edd4a82cb941d17c5f759a0018"
   },
   "/blog/corner-shelf-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "886dfb91a0481cab02a6b2069d7e4e51ca90ac38352ed50f852e63190c365066"
+    "hash": "8beda773623e624e81647af25b6777b82ddcb533203659e681d04a27114d5a65"
   },
   "/blog/craft-cutting-table-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "ef972218347dc915cccd4f57ed9b43e16500892cbddbdb29883f261c878a7753"
+    "hash": "01b92acd8e199f971a4e1fb8ec3a69c332e56a9ba23fff4557ead3ecbddf28e6"
   },
   "/blog/craft-room-storage-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "beccddbebe3ce74aeac7fb28f2531309bce0b1e686f6286005f117fbff5eb389"
+    "hash": "8230d7cf83efa876d9b8157eda365a0fe070a177f6d54092d1e8f54812969050"
   },
   "/blog/crosscut-sled-basics-for-sheet-goods/": {
     "lastmod": "2026-07-01",
-    "hash": "5ef2dae893265ce065abf539001a350dba6288baad1195a26bea48c30cbbe34c"
+    "hash": "9dc399b5226112b12975e6db94d5cba74e727b747e308c048e06b5bd27371b61"
+  },
+  "/blog/curved-stair-layout-vs-straight-run-planning/": {
+    "lastmod": "2026-07-01",
+    "hash": "68f8def2db999aa79327fb6834ae92791b7b9ff5ac8fd64fd35d27f905a7a96a"
   },
   "/blog/cut-list-app-for-cabinet-makers/": {
     "lastmod": "2026-07-01",
-    "hash": "4babe05349b31eaef092682205b47fdcdfe6215ce2d4e1fcfc00a442c23b128a"
+    "hash": "61f9188843843e0b2a1c330156d70678bfe7e263a9eb0d127ebce304fe0b5e02"
   },
   "/blog/cut-list-change-order-workflow/": {
     "lastmod": "2026-07-01",
-    "hash": "46fcfd02958c8a3091c06e88644e09cdbb3e9a043ec1692d713a41ec11c80224"
+    "hash": "4b41d5062c463f55e3d9e226de17940c97f76c1690a7eec37fd514b05cd53c63"
   },
   "/blog/cut-list-for-a-bookshelf-wall/": {
     "lastmod": "2026-07-01",
-    "hash": "f90547537edc0dc023d9399cd11494b5ffaada55dc4bcdbeb6caea808a1d6b9f"
+    "hash": "90f4547c93aa7382a6d3e1e7fa9bcfb88bb1541ef332bff2b641a6f1a2e4294e"
   },
   "/blog/cut-list-for-base-cabinets/": {
     "lastmod": "2026-07-01",
-    "hash": "2cd39da30c3befc1e9e759eb59047cf44103589237ea0c85c7fb41615ee414b0"
+    "hash": "bb81c8f0b2c6360362ae18fa49edc2c3b1ed65cff4567ad499ac92ed6305bbee"
+  },
+  "/blog/cut-list-for-repeated-furniture-orders/": {
+    "lastmod": "2026-07-01",
+    "hash": "e56dca401709294f2e59b8b65e657ea66faeb2271238cdf8043f96b7ea5e5300"
   },
   "/blog/cut-list-for-wall-cabinets/": {
     "lastmod": "2026-07-01",
-    "hash": "eddcc6904441047f55ec8cc54753b867791222abcd2a5c7ffb0af627c6c2fd4e"
+    "hash": "4e02a8a7a918784d5bdacccbda1db1d43380782a645ca5cc965445a4f0f52f2f"
   },
   "/blog/cut-list-pdf-for-workshop/": {
     "lastmod": "2026-07-01",
-    "hash": "461692bbc5c597cf65b937d375094b9c25cb5ad856e03435213346b7d25d5302"
+    "hash": "479e78fde3c65d1f4bf4db0ad7ff8cc2c2158edc46719a48e043dcb56de08a30"
+  },
+  "/blog/cut-order-sequencing-to-avoid-fragile-strips/": {
+    "lastmod": "2026-07-01",
+    "hash": "7d06dd5751e33041748e0d64a8c394a45f56b68126900f0afa353d3f10184975"
   },
   "/blog/cutlist-backyard-planter-boxes/": {
     "lastmod": "2026-07-01",
-    "hash": "c86b7a0bb09e0b289b4b72b56816050dfc0c93114126958a18dc1adc64197e85"
+    "hash": "500e7d88166c57979131381b88e8bcd896dabd023606c7edba63e7a98ba3e60b"
   },
   "/blog/cutlist-bookcase-from-one-sheet/": {
     "lastmod": "2026-07-01",
-    "hash": "360560dc80ea4c4c05969fffc10e99fc095c8219d42417a069cea96f404d9c3b"
+    "hash": "4e7e02672eb318f4c48da15b4aaba1c90a4f178252234adbf8d07abb997ce3c2"
   },
   "/blog/cutlist-built-in-bookshelf-wall/": {
     "lastmod": "2026-07-01",
-    "hash": "dd924b3e16e0ea84c84bbcd6ef7e637631ab7d8dca2c69685d4f8ec4f3dd0383"
+    "hash": "318bf6c221274161c61797ccac3688bee0d5dedc84dcaf0a968ca06baddeddd1"
   },
   "/blog/cutlist-closet-organizer-diy/": {
     "lastmod": "2026-07-01",
-    "hash": "0d3ee09bb7ef3001f0016da0eed24a65afe4eb6fe5d237ee2545a7e205308153"
+    "hash": "e023ac300775996c0278a6cae4b13adfed6505ce00f4c2f8da75e7520d9831dc"
   },
   "/blog/cutlist-closet-system-plywood-plan/": {
     "lastmod": "2026-07-01",
-    "hash": "5b918eb1585ef5298c75ca033a9d111d760a0ec16e756c23ee666afbff764339"
+    "hash": "22fad0149948f09a623c186e9c62394f9141704599b42b8fccf7ef13b63c4ca6"
   },
   "/blog/cutlist-drawer-boxes-for-beginners/": {
     "lastmod": "2026-07-01",
-    "hash": "9047cd2bcc354f779724c5168c88adf0838fe3bb6aace6d1b17d1158650c7ae1"
+    "hash": "a06b87fed7aec559a0dc5c865fa5e01cca97d2abf60fbba2cf891a2647b1c0cb"
   },
   "/blog/cutlist-entertainment-center-plan/": {
     "lastmod": "2026-07-01",
-    "hash": "3e6287b3bc917c3a30b5ef37ac06603b4ead650e71754b687faf6078f2b460a0"
+    "hash": "848bb0e861d27729ce18494d28398ebfb67e3f0f6ae44ac6afb701568cb461b7"
   },
   "/blog/cutlist-first-plywood-project-checklist/": {
     "lastmod": "2026-07-01",
-    "hash": "1c9be9a91acb1e259e2b5cfa524ce7ad9ed7a5a9c4b7519bdfb4ea61e4efc2e2"
+    "hash": "fa3772d76ec7f05e7b95657d119a957a9f66e3084b9fe67c172e07b4cc22bd13"
   },
   "/blog/cutlist-floating-shelves-plywood/": {
     "lastmod": "2026-07-01",
-    "hash": "ed5bb694f96343cdcb1ac422320e88766ae3d41d9d8a390416ade917bf4ddf8d"
+    "hash": "ce0794ef752d905bed1ed6b5c9d51df2fc1a695339a9c7d21a3ebd425b705a6a"
   },
   "/blog/cutlist-garage-shelf-weekend-project/": {
     "lastmod": "2026-07-01",
-    "hash": "67004aea3ed8c630b4b37985fbc93fcdb569863c16543805ffedadfc4d615909"
+    "hash": "5b085c279d3d3398eb5e1315336d602cb08130554421a585fc2566f973970fc3"
   },
   "/blog/cutlist-garage-storage-cabinets-plan/": {
     "lastmod": "2026-07-01",
-    "hash": "c68d8f613e6f29c2ac767e6e6bcbed01069d6fd52ede02053e4d23a468f12320"
+    "hash": "167d6b8fac7390c1066fe3e525a7bfe459ad1763938b46edf0571a460d76f47a"
   },
   "/blog/cutlist-kids-desk-plywood-plan/": {
     "lastmod": "2026-07-01",
-    "hash": "b69a3829eae5ea938eb0235e0e3a4ad1af43d95dfa19870727b96351a27ff6c6"
+    "hash": "ee2b69510ebe6df2f9d40138789d01813c0c5a4f3b6bd683d01b909cb9aef5bb"
   },
   "/blog/cutlist-kids-toy-storage-plywood/": {
     "lastmod": "2026-07-01",
-    "hash": "5929e9147306678074807d756b454c37134c48511e10a741165a433f5e20aea4"
+    "hash": "2bf91a2629e810e8fadad9b19ec85d5ebf43cf10c93d2f14664c9d75b942f38b"
   },
   "/blog/cutlist-mudroom-bench-cubbies/": {
     "lastmod": "2026-07-01",
-    "hash": "456c0bca9e8f6a1426d02180921605d9b39fbde72e6111a36ee25cf672f20aec"
+    "hash": "c880e5106d11afa4526c91307b8a45d00af1d51698507a1413077ff4a4af4609"
   },
   "/blog/cutlist-ocr-for-handwritten-project-notes/": {
     "lastmod": "2026-07-01",
-    "hash": "8d23b5d85dc3f54395e9488990c0f4da1d71d3385abaa74dde2305ae22b8947d"
+    "hash": "439e3c27820431f2cf23786cffb9466ba10f7e7e43f8db9851526c7f6bb96578"
   },
   "/blog/cutlist-outdoor-bench-plywood-marine/": {
     "lastmod": "2026-07-01",
-    "hash": "f2476f85da95dfc0b69b0f2d437ec032ca19e58ff36979b4cefd2b4a5f67734a"
+    "hash": "189b81ec3632c999744a47249beb1c31eff8275056cb69ae21be9133710cd60b"
   },
   "/blog/cutlist-pdf-plan-for-home-center-cuts/": {
     "lastmod": "2026-07-01",
-    "hash": "ab4a518726ad2b89b71e9354af9de5fe0d99a0668965f9afca8c36e3a25d11eb"
+    "hash": "1cd3c751d000a7a586e58439ddf336806c78d4b5420b74c61c753505a124ed27"
   },
   "/blog/cutlist-plywood-platform-bed/": {
     "lastmod": "2026-07-01",
-    "hash": "1ce6267fb630339a2c3c1b7e52d368660946c55341623133e98653a1802d745a"
+    "hash": "df0c827a805c82cf48c63e6b34a7b0a55224c8ace0d072613e517c4d287ffbde"
   },
   "/blog/cutlist-plywood-workbench-top/": {
     "lastmod": "2026-07-01",
-    "hash": "0d534163cad78856f635a5ffe4d1b506e119a5e1c4166d57f69e268efbd22068"
+    "hash": "c02fd19f7d04ef34c1fda35fea0fbc467e89cafaf4df85b5484faa2b9e52c037"
   },
   "/blog/cutlist-shop-workflow-from-bid-to-cut/": {
     "lastmod": "2026-07-01",
-    "hash": "446c1cb767fe193aeaf380f2654d592a049e1ba05db9d9c5007468dab74a74ed"
+    "hash": "b5c348e6527ef1827dd79831dd056c1a37be669181c17fdbb7a277608f900c35"
   },
   "/blog/cutlist-small-apartment-furniture/": {
     "lastmod": "2026-07-01",
-    "hash": "d4a9be38ef4eec9fca9760ef740095556b4b8c4c94d02227a7e9687a9614f44d"
+    "hash": "1476a0d47d3b79ab5ec4ad85bce96e36976edefd6e7244e273b4b07cb44c8545"
   },
   "/blog/cutlist-van-storage-camper-conversion/": {
     "lastmod": "2026-07-01",
-    "hash": "26193a71ab28b065b12e31a35111abf61d8c361c4f2173bfbb03feef861e4456"
+    "hash": "90b644e29d965f9f8a248e774e55f7b11261ed92f3ed2a1c82cd176bb0faffa2"
   },
   "/blog/cutlist-vs-spreadsheets-for-cabinetmakers/": {
     "lastmod": "2026-07-01",
-    "hash": "a06902e9816a6b8e3970f5335fca09e4a1ac2f469667c14aabce12ca01c2e246"
+    "hash": "692e709647a98e3c5cb6a33dfdb67b91f4883ca736ec7b398703ea1e18646ed7"
   },
   "/blog/cutlist-workshop-storage-cabinet/": {
     "lastmod": "2026-07-01",
-    "hash": "79d313b4eec5151216666d39a63601aae130e2fa3690cd45b7d5b6df81c137d1"
+    "hash": "4a1bcf2dc69b433bf1dbafda0ea8ab4270d8c5c05e62ef3f78b15a40aa191bcb"
   },
   "/blog/cutting-jigs-for-accurate-sheet-goods/": {
     "lastmod": "2026-07-01",
-    "hash": "64ffd3fcb9532fac877b05b90ec03464f191379f05bbbb021c90747bad5e2888"
+    "hash": "9e40834e53ce481aab21cd56b8528046b0770869fd3b72f3415c8332b84fcad0"
   },
   "/blog/cutting-large-sheets-without-a-table-saw/": {
     "lastmod": "2026-07-01",
-    "hash": "a20614a0a48c5cde584b94319593a57f39c5b4aff68549321ef5f1e22dda22a8"
+    "hash": "70b5eb44a291de053e411ec8153a52b87862fbf25aa4b2f65a845292e0402398"
   },
   "/blog/dado-joints-for-shelving-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "2e15df707121d5be0ff9864a4395915aefd8a804985b2af531ce7b74ec8b3408"
+    "hash": "1f0931f03e9d4fcc8fd49af7c21665eb6462dc1268ebeb05f13649921474901b"
   },
   "/blog/decision-history-insights-private-choice-tracker/": {
     "lastmod": "2026-07-01",
-    "hash": "a0f6c765c84cc7eb69530d084a248e37b7d1835b94ee8f1612cec722cb9d2784"
+    "hash": "0e4fe3e00998f797a2f97f676ed5f6c6e09687e3bb9a4234c5e807883e153840"
   },
   "/blog/deck-stair-code-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "5c6e99a66e9a16e7e66cb12e897d0b41515edbb947cf1f5c0188d3124121a354"
+    "hash": "ffeb116faef1640d23bb6e6df09c9273f2ec7b4d74c6a19797955c6fa17d6619"
   },
   "/blog/deck-stair-footing-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "233edf2967b5ed670aa9aea61344ea32352bcfb6d850d94ed246cbb70176fa47"
+    "hash": "dc23546692becfcc9a0417e4a234c0e2c0e0ddc74637df6b97b02b3ddf376241"
   },
   "/blog/deck-stair-stringer-attachment-to-rim-joist/": {
     "lastmod": "2026-07-01",
-    "hash": "0696eb86952ddb3496774a1babfc051d1255253c2136eef2d691d9844b67bc9e"
+    "hash": "1efa5708ca77f580ac5ad0e0f36baf73e22c4299b3fea26213bd2bb3851e97ad"
   },
   "/blog/deck-stair-stringer-field-measurements/": {
     "lastmod": "2026-07-01",
-    "hash": "e499d61ca46e5d760ffd75fb6654bb6aafe5dbd0b42ef246bd892fb3fdb96c3b"
+    "hash": "7700266232a50f8f65eab14eb6adcb597d7cb1726649350e2032841ba1cc7986"
   },
   "/blog/deck-stairs-building-and-stringer-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "49617781afbec0421ff2207041d4a9d63c75cb42ff2f10e921102c4f6c92debd"
+    "hash": "bc5ffccdf315d71d86c23d41f7296fe2adf305fa9adf41d1a95204b67e7db4ed"
   },
   "/blog/diagonal-tile-layout-waste/": {
     "lastmod": "2026-07-01",
-    "hash": "95591da27554fa739c1bb254ebf94a344b9bb6c0dcf21c63384003cfce5994b0"
+    "hash": "e0dbac9827b1301765f107840aa4c8141df772ad7f517bb317445c70820938be"
   },
   "/blog/diy-floating-shelves-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "c770d8934f2582aa24a5ebae8483057d0ed732da1b721a61f0794bd4af82cc42"
+    "hash": "c1079135d1ba82faa7c581164929dd30f91dc004c7cae9cd7cce2eb6905e7a07"
   },
   "/blog/diy-floating-shelves-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "d7d41e584786014e2b1fb6aa82a7adb630a560436bf93161a296cdd6c07faff1"
+    "hash": "611444422d1dda013ccf5e26a2af5f559933ee2825c4f955ca909db91be81869"
   },
   "/blog/diy-project-difficulty-and-time/": {
     "lastmod": "2026-07-01",
-    "hash": "beefebf7d6b0df32cdbee13d58f3b88f7758955731ed3ef2e7d654dee45bbc02"
+    "hash": "c81d5151407e35e37541eb00b507020dca4a66eccc985f0d673847e9fc790541"
   },
   "/blog/drawer-box-joinery-compared/": {
     "lastmod": "2026-07-01",
-    "hash": "d741f1c9997e22cec45e355e4d6504a6b7808b762ae753f0629eedc156e8891b"
+    "hash": "e84e7030a769301583f57d9852c21ab2e7c37b7eb21ee0825a80b63912f6b909"
   },
   "/blog/drawer-box-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "96db0a6171d53e70040e8660255aba7baf1af05a04c860c956a13eb0c765810e"
+    "hash": "0a5da4401303280aeb946bdcfc209fb98a44f95cf4d1a83b83d9b649f70bcd73"
   },
   "/blog/drawer-slide-clearance-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "1675f233cde3909553139e7b47f75f64a20d5914d495a5aae634fe9f0ed2165b"
+    "hash": "fbb60743dd00285427525883222ca80bbf2d99ea365c5ca9eadebd412adb5bbe"
   },
   "/blog/drawer-slides-types-and-sizing/": {
     "lastmod": "2026-07-01",
-    "hash": "9f4257fc1edd909f4d86c6bf9aef7623d35f440c593855966546f1be5efd317a"
+    "hash": "495b13fda9cfd4de5c558f1cce4920db9070c08812b66f066594b3bfe2203af1"
   },
   "/blog/drill-press-stand-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "bf3571be5131ba2a76313c1663028b3b776ab0b9ac310d6c7209d07988a6c3e3"
+    "hash": "70ccd2661044b068c55c0fe938efed6a7c64f76961994b96bdace5d4354bff5f"
   },
   "/blog/drilling-pilot-holes-and-countersinks/": {
     "lastmod": "2026-07-01",
-    "hash": "a55de8d08a8eed26d6cb369651224961b45a29f2b0f6097567339ab31974cef5"
+    "hash": "3849b8b877ef17999d5ee2347df47db281bc1a35215b1e65426891c62cbdbc99"
   },
   "/blog/edge-banding-plywood-cut-list-allowance/": {
     "lastmod": "2026-07-01",
-    "hash": "8c9cd60124421a7a914182b503858318eb4b82264c3c144e05999056020a76d1"
+    "hash": "b4e529e82f29847283c8f493651f5cea4933318fae5b1d56b5e2abf89b5d990b"
   },
   "/blog/edge-banding-plywood-edges-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "82ec42c45d5aaba8e09b120758c833a7203371d4549840bfa6cf9b699a3f8c61"
+    "hash": "dbb838195dc79bc89ada341e133bf43409b582feda9c2ef4491cd5a59ee279d9"
   },
   "/blog/edge-banding-plywood-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "3d68a90bec2e1a9074f90defb0bed41b9ed6dd31c5838f31dc2a14a8aae07681"
+    "hash": "8b7dfc1fe2933098a20edf7017b380d165aa66509b17457a5fe95b6d697bbbdc"
   },
   "/blog/encrypted-video-photo-vault-local-storage/": {
     "lastmod": "2026-07-01",
-    "hash": "0bec0c6041583bbeaa00bbd12298852ef7facf02750374d052b73fe7b211a3f8"
+    "hash": "f1226e737f12fc78369903e73a2a65ab69a91bb65b1ac7e7d53c6125fe8306e3"
   },
   "/blog/entry-bench-drawer-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "dc28504cca2f92370fdf2725086642802c0a224705a7b228781f47a52b932cef"
+    "hash": "b63450c5201697c8290f4d8e395303d58b08b6f516d7af6be0573cb0cca9dc15"
   },
   "/blog/entryway-shoe-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "7c678238f3c8a58f4623003ad416d9d9fb11a1d59eae46e84ef620f9b9fae277"
+    "hash": "bd17d0e274f28ab19170400d275a6da6303b11f002bede8dc5450a8eb2c03d39"
   },
   "/blog/entryway-tile-pattern-waste/": {
     "lastmod": "2026-07-01",
-    "hash": "2bf250195325e695a7b85fc8a8dc22b8ef932eb11161d8c5d37252918cfe888a"
+    "hash": "e4899a79d0c3b53ac6ab2e12e0827a7683a1d8e4914da5f3f783b8e78564a05e"
   },
   "/blog/estimate-pdf-app-small-business-quotes/": {
     "lastmod": "2026-07-01",
-    "hash": "25c684756918129353f7b6d9b6260adca8433fddaac4b06750e36d61f4076f58"
+    "hash": "93029059f04c7bd7ee63ab691d51cc8a9e34f58d6974fcb88873c7778e527915"
   },
   "/blog/estimating-plywood-for-built-ins/": {
     "lastmod": "2026-07-01",
-    "hash": "5bcbc7dbc077d0f58926be6e5cb906afba3dff6589eeba08228e3540dd750e03"
+    "hash": "169a5931a3ccaec4b9531d1b26180586f8c8e7144d9684891b87e3f220c7ff55"
   },
   "/blog/estimating-project-cost-materials-hardware/": {
     "lastmod": "2026-07-01",
-    "hash": "c1bef0d45fb665149a72c268405d4a35ebc9b2f86b18477d59f51c2b79089fe9"
+    "hash": "b1722dfcc32fd8ac22865d9609e4278c84dcf29060d8d74d753cb8225555fa1d"
+  },
+  "/blog/expense-report-maker-monthly-vs-per-trip/": {
+    "lastmod": "2026-07-01",
+    "hash": "00f6e04d5b8d0d80bfb4c3db6b132adfdf36f820960f3f8307a04e56a2b03807"
   },
   "/blog/expense-report-maker-receipts-workflow/": {
     "lastmod": "2026-07-01",
-    "hash": "bcadedba102ce0c56193562b5dacda1efcadc101e5ef47ba5cf3239e79f23c5a"
+    "hash": "8c5aa2b9f41bfc2f0e108b1c2c48f815ecaf849fae9fad0bce1b1c57ae5c1b9c"
   },
   "/blog/export-contacts-to-excel-csv-workflow/": {
     "lastmod": "2026-07-01",
-    "hash": "9c68892c436ee44ab74507a94187e9c79f835bfc593920651d9def32eec5aea6"
+    "hash": "d6f6886a52cb71d192369c04c2d3aeb991bbdee1babff245251c27eb200de9bd"
   },
   "/blog/exterior-stair-handrail-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "5fc8f3fba2960e14cceb922da390b75089cc05c87e052099ae280da1896b6e4e"
+    "hash": "f29f3de1bbfd4ca8ad674405ac627f5c1cd2073967ebcc9aadde6416318405c5"
   },
   "/blog/exterior-stair-landing-drainage/": {
     "lastmod": "2026-07-01",
-    "hash": "99a9b234ffdb50d40bdf7d0b258c6917d448609b48fb72fcd7e671a87655cb67"
+    "hash": "e52517aa15bd7770bc5975564052b00ca590d587d4416723dad98677761965f9"
   },
   "/blog/fabric-yardage-estimates-with-block-layouts/": {
     "lastmod": "2026-07-01",
-    "hash": "da09df356cc2c9cd8af6a50bf1c0a9714c6759c1cec425dc5c6abd763702ee43"
+    "hash": "15583da93bc861579ff57f9c47642d58ed8ead1ce22df2501d23d8d7a168e8d9"
   },
   "/blog/fabric-yardage-for-a-quilt-without-overbuying/": {
     "lastmod": "2026-07-01",
-    "hash": "9a8b20f7fbba3b1b6498b75d8c0f57f019c2518ace4b8d380d6eb14dea99b5c6"
+    "hash": "040dfb35122c6d90cd43615d51ab80099d4ec9685e8d283857570db238e891db"
   },
   "/blog/face-frame-vs-frameless-cabinets/": {
     "lastmod": "2026-07-01",
-    "hash": "5af85702d0844834f1e745850e37196d3664a6d3e40361d3c6b020871b293fc4"
+    "hash": "09b47cb60d7f307ef4608229efa17f1f0a2f823add6538cbe6572256c5e7e5e7"
   },
   "/blog/face-frame-vs-frameless-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "f507137c39a9cfb659b628a03d01969f0b64deb0c6e0d67f364125988339efe8"
+    "hash": "257af0039b98b0a770e47cc5653023ae4f249d547c7d645dcaa72c0f445bc821"
   },
   "/blog/fake-pin-disguised-icon-intruder-alert-photo-vault/": {
     "lastmod": "2026-07-01",
-    "hash": "1fee00a876122189310accfd658473f26de73136403a8ac556ed5ad2c0aba016"
+    "hash": "0cb508548e3cf1f3ab402154233c4d48fb61313f6bec8646cc57e6f032dcf620"
+  },
+  "/blog/fast-rhythm-weekly-score-what-it-means/": {
+    "lastmod": "2026-07-01",
+    "hash": "3d2322cf0ffc9b112646b0e37aecb96df58f636cc4724411c57dc1bd687dbbe6"
   },
   "/blog/fasting-timer-sleep-rhythm-app/": {
     "lastmod": "2026-07-01",
-    "hash": "573d43b303ce0dd1823ded77a1d2bf83ffe51d156dc770f1c78628c663e1d433"
+    "hash": "b5d14ec04f7855417461a9a412c72be2b190cca840068f48f90fb933e3aefdd5"
   },
   "/blog/fat-quarter-quilt-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "1d3437c37c5736f3c4867d723101751b1f41bfe638a62ee3ae3a30481f2e7ffd"
+    "hash": "d84563d684bed2132dc4fcbf668f949f0189308485daeedfe66652a0e6e14d31"
   },
   "/blog/finishing-plywood-for-a-smooth-result/": {
     "lastmod": "2026-07-01",
-    "hash": "e67840cde3b4df27f4685a75b5d94ad9302c098d4eea269e9e3dcbce5b099628"
+    "hash": "f70c28f1b481446fc93185897e36ec145072a661f64f3f7f1e4ef515a25cf1e2"
   },
   "/blog/fireplace-built-in-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "cadbdf6695b4de13791a05dc47137f68ac1ca1cd43bbfb9cea301d08ab5b1faa"
+    "hash": "00dbd6212c9f5284c1ffbca7773d1552ed3f9326702d1809f84a116406111ee5"
   },
   "/blog/fireplace-tile-layout-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "fbfa73a7c23a92a1e867d68136dc746a615e3776e70a752867a6d2ab3c956382"
+    "hash": "a873ed06d4438e0a1308a4c1b90aefe6bc589644cf29ae89246b0891c95aa1a3"
   },
   "/blog/first-cut-rip-vs-crosscut-sheet-breakdown/": {
     "lastmod": "2026-07-01",
-    "hash": "5cfe176e42fe81135bab6f721d4ee04852fe2598acd944079749d2dc2c5f6c89"
+    "hash": "48424773bd1407e809963eb3c8384ba8c0f7ff511e67c752859ac0af4fc70f00"
   },
   "/blog/floating-desk-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "081ab723ea67f4bb959b363994a5e9a76a86af2639b4cf70195e338f8e57aec9"
+    "hash": "6d5947ffc063c52aef8f91c083d14a58f6360d95e13302dfb24e1df84e304512"
   },
   "/blog/floor-tile-vs-wall-tile-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "8cb826513df90f5f6405b86345e71454b05f3b958e467a3d6786592bf36ccba0"
+    "hash": "da36c28f3ca823cb840a11dc5e329fab220f6e3b4147964b6f3059c68ea69494"
   },
   "/blog/fold-down-workbench-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "8677a997d5462de15bc84571dbebc31a337c0fa652154eb8f7953f019d76cdbb"
+    "hash": "d184677177eb4e5cc70aaf5d89d8c14094309eddfcc60ee6319b23ae570dd64d"
   },
   "/blog/folding-room-screen-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "26af9dc75bd9df1ea3b92a063303095e06fc79b6ba948258fa80f7251305910f"
+    "hash": "4e8fc486c4596b17a58f222914d4aa02aa96574c1cac8fc77cfa1e92efe0f8fe"
   },
   "/blog/food-truck-profit-margin-app/": {
     "lastmod": "2026-07-01",
-    "hash": "c7d1961234406c9c6dbec98992cb7b89a7216e06340be0ee1e4a4a8caab8d0c2"
+    "hash": "33e3a26f374861d70a9d068f3d65c3ba60c39a7fd03280a9fce45e7d7250c8cf"
   },
   "/blog/frequency-matching-notch-filter-tinnitus-personalization/": {
     "lastmod": "2026-07-01",
-    "hash": "8eb63f23032ab6626d7345705da4edf5c497dbb2b680318f248cea05c727c2aa"
+    "hash": "1ff4b80bf9ba20b92a4bb24b67600933694b3fbb2cbca6330013798f87f2aaf8"
   },
   "/blog/fridgetrack-food-expiration-reminders/": {
     "lastmod": "2026-07-01",
-    "hash": "10d3dae5d0ea1ad4b206aaa3d37148c8f9078860f4ed96000967e570be1d6b92"
+    "hash": "6b39f4bdd4cb43d427db13ea6ccf5e454c6f6845f71205556b6ffae395b5a82c"
   },
   "/blog/fridgetrack-fridge-inventory-app-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "e2bc809f2450235cfa85c4e70edf667ce45c70e6bb14fb977e5acac24dc9be97"
+    "hash": "8e95e74eed031a2143933d07c65b39c9fce401d06d724650d04914261d32ff05"
   },
   "/blog/fridgetrack-meal-planning-grocery-list/": {
     "lastmod": "2026-07-01",
-    "hash": "e635d14137362b8ca84d07e9dbd75779fb6a3073476563d90b7127a7c6454a05"
+    "hash": "da60a71ccefb5516550ba3f00f5c2867341e96e5d86db8ed3de3809318dae978"
   },
   "/blog/garage-bike-rack-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "9cf17f92c64904386ea50f14b8af0b2c1af1f086425872040bc45393619169d2"
+    "hash": "f8e333d4ded6091aa2e7a24f130656a86cfd37130c32a02bbc70e8220b355768"
   },
   "/blog/garage-cabinet-cut-list-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "237f4fe243b80ead69b42e45dc6fc1a054c6876ca21eac4ae34d7edfdb90660f"
+    "hash": "3a50843da4fbeae100b4b4cc846797b8ce7a3c05faf332c1b73c1631641a2558"
   },
   "/blog/garage-cabinet-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "5798282453a325bff32af0ad0a6a0e64ba225ced5f731db6b21bedfd63682d3e"
+    "hash": "5daaecbd29dbea954fb378b03977aa133db2e777fdfc5376840df79a3dc1899e"
   },
   "/blog/garage-recycling-station-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "4845fac9d0ce6cfe4aa76459b2efd9b48abd4bfb821cd243db35095e782df4d8"
+    "hash": "a2666bbffa3e89ffd0f0645651a268fc90a04156f92dd6a4d8b73a14265fcec4"
   },
   "/blog/garage-sliding-door-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "c45d88c20ea1da76a2a09f3cd5c11c682313edfac11ad186a2ce5ad13dd59891"
+    "hash": "7ad7245ce9446e2d65cae0f7da0dc473ea378fb5eab5f61e9a0712d6fbb2e514"
   },
   "/blog/garage-storage-wall-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "f3799f6ef7d0926dd1cb693436826bbfcc75912c72ffda91a025438710ef6370"
+    "hash": "fa57a6df0318124fc1ee09b34149422d5c7f50a0ca8b5fa8ae4582e9002f280c"
   },
   "/blog/garden-tool-rack-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "98d942e26405cadc3cdcc877b2617f4d571fd0e442ced32dee7aaee1009a947d"
+    "hash": "45d71388b1cde5e98b86962624fa0234f66dac56d4628aac99dd60222a19b46d"
+  },
+  "/blog/glowfeel-what-it-is-not-a-substitute-for/": {
+    "lastmod": "2026-07-01",
+    "hash": "494489ff13ed54b376b138c3e0fef860b63a6d33db9390757a259ebfca8c8434"
   },
   "/blog/grain-matching-cabinet-doors-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "8b1cee032d233f52241de1f33808a2ca44e32c550ed700809296262e23f20d19"
+    "hash": "bd869eba0ac6a86d0d97dd315e84ddeaf3ac61c51731070beac3c75f35434d53"
   },
   "/blog/grain-matching-plywood-cabinet-doors/": {
     "lastmod": "2026-07-01",
-    "hash": "20c3c0ffed5e4263f66e94b7b1aeb3097c23f58504a3c86b7590c62199034b32"
+    "hash": "0064ac505f5a2f530ac26167d2823352eb24daafcd08958a4a988085d28d04d0"
   },
   "/blog/grounding-exercises-app-daily-calm/": {
     "lastmod": "2026-07-01",
-    "hash": "1ce9266096670f6cb475e4cc31e83708dac8bd635e6ee09f490bbe045af64a4b"
+    "hash": "5c8b9db17f55154dbd990456ccf25cec7744d1654e5fefa7d4065bea73f38033"
+  },
+  "/blog/grout-color-selection-before-final-tile-order/": {
+    "lastmod": "2026-07-01",
+    "hash": "03e7cbf9bfbeb9152aad6ae75c59e1b6fed4db161942f6c5d5e3a95bc390ea2a"
   },
   "/blog/grout-joint-layout-and-visual-balance/": {
     "lastmod": "2026-07-01",
-    "hash": "9fb6114c3f246433c817b2bf0ac6302a99580148492f48419e9c952439891152"
+    "hash": "6889191ecaa0ee5c4a6c22600984e171a622942a5282b06706f5503e1dd211e7"
   },
   "/blog/guitar-tuner-app-cents-a4-reference-cadenza/": {
     "lastmod": "2026-07-01",
-    "hash": "c15ed8238e460952ff7468f62a4290367016002ed673aad074db314827866efc"
+    "hash": "b082f3d93783bb2fb3e3293d10140f44d1cee168851459e3fa637476fb74d553"
   },
   "/blog/habit-tracker-app-streaks-without-stress/": {
     "lastmod": "2026-07-01",
-    "hash": "34e040d2f45c14dc77d0a5742918c3e1d9fc09694eb297cc760d4ce301717b27"
+    "hash": "4d65416121f9bbc6bf7d4f6c73b9538503e59c19ea157724ed527f0817d49aff"
   },
   "/blog/half-square-triangle-trimming-plan/": {
     "lastmod": "2026-07-01",
-    "hash": "aefda0ecd225aa1c7f654f1a835c11719fd3f3c931f98d5dab9422aa57be4161"
+    "hash": "9e11071d8ee1274a22ee875d1a4135b2878d7ab71607c9b71f9a9af1ed341d2f"
   },
   "/blog/hand-tools-vs-power-tools-for-beginners/": {
     "lastmod": "2026-07-01",
-    "hash": "720b0888a60b839293e85f8e86b28c2cc473e03d43a450ab85ec9621a9902d17"
+    "hash": "6be3faa57fcc0de5a9048b2b596e84130a8d7b4792aa81143bc66d98acf4d13a"
   },
   "/blog/handrail-height-layout-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "c373a0d0d35a729d64ba24f0f64def6d49c52bac33ee31710e9c9f82752f949f"
+    "hash": "5717f2c7d4f568cf26378c1637ffbb37200a050a0dcf5eadcca9ab5ac79163f1"
   },
   "/blog/hardwood-vs-softwood-for-woodworking/": {
     "lastmod": "2026-07-01",
-    "hash": "f5a0f36554bee578fff0556677a6059ecd2e14fbb2c4c8eca6448b2dc0d8bb2f"
+    "hash": "e2c6b52a01eb634e7efd9d29f81c820625657c004c784780ca914c86861ed3d7"
   },
   "/blog/heated-floor-tile-layout-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "c8452fcd4a72d558900201baffb1e453e40e76af1f148eb2ebe7dd6d40a56ec6"
+    "hash": "699a65b945729223d2ae64f1f91ce0d102ce0e805511d73e0e3525a0447a8bec"
   },
   "/blog/herringbone-tile-layout-waste/": {
     "lastmod": "2026-07-01",
-    "hash": "d3810c1f449ac890ed4ac8121e8092e4070afd9a7303312200de30e1630b331b"
+    "hash": "f5c830020a1d583681f9ca9e2c18ab1901143475883299d963af24d1eff5d37d"
   },
   "/blog/hidden-litter-box-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "f9256c21d3e9e69f9ca8165d20ca4d3fd698f6832b264337e505646296162ccc"
+    "hash": "c8d67ad92eb78d2b417ab11507852f2832b0771d445e274972887dc3b53d8391"
   },
   "/blog/holiday-card-return-address-labels/": {
     "lastmod": "2026-07-01",
-    "hash": "34f27c577fc0bb9b874dbd5f7af7e873cf03d691096e0f958bf74b49398e0034"
+    "hash": "6ecfc538fa2f13b04be403c5e65005e8cbe3e1e1e54ba3add40c993109c73239"
   },
   "/blog/home-gym-storage-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "e0170208807ba5cde3561b2cad04aa8e852493afdc48d2e7a4f140da7a7a3f5c"
+    "hash": "090921704d54ee88f621d94a21db54e55e1c53371906ab9cc641161f1b8381df"
   },
   "/blog/home-office-built-in-desk-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "eb736b7c278197ef3c3d579f164ae867b7dbc3baf3de7c7fdb4ad267bc17a4f9"
+    "hash": "0d7136413b0d8ec5493eaecf1bcc01c2fbcd88631cb4e201d02945dc9ccfe258"
   },
   "/blog/how-many-plywood-sheets-for-cabinets/": {
     "lastmod": "2026-07-01",
-    "hash": "02931f56445b78d531806f230a7839221e913bcd29b5aad5662f138254ed0275"
+    "hash": "51b548a34bcb4bda4ab23395b9d20d9c6a36def83891a586f8b697cd6dc71486"
   },
   "/blog/how-many-stair-stringers-do-i-need/": {
     "lastmod": "2026-07-01",
-    "hash": "86646896eb7df007cf238d58dfe563326485928e6e76ceeaf490f21e2f2c9f08"
+    "hash": "47795305dcbc09c3d27fde1fa07f09d1a688571b0af91bb1560771edd5e04c3c"
   },
   "/blog/how-much-does-a-sheet-of-plywood-weigh/": {
     "lastmod": "2026-07-01",
-    "hash": "a4366ff43dadfc1e68489e3e03cd3e3300a74e5e3936c567b560dc9162bafb36"
+    "hash": "17c4437cc3de70fb8a8f2c9ba5695411207bf4bb7bb3003e7cb3cc3134a561e5"
   },
   "/blog/how-thick-plywood-for-shelves/": {
     "lastmod": "2026-07-01",
-    "hash": "72d6dade1c747a95caf0ee242c1656709136a0e271b92feb6c54f7d1f2b12736"
+    "hash": "f28fcd3e7f8411d835e7fe2acd2a612b6e4c7acaac2ffb0083681f37f9295e27"
   },
   "/blog/how-to-avoid-tearout-cutting-plywood/": {
     "lastmod": "2026-07-01",
-    "hash": "99296b71323aeafb3c9395e2156cdbc7aefc2c84c9508c7641473489a138e1f6"
+    "hash": "03fc0a841f43fc30c9dd26c9cea3572bd829e0ccf319883695009ca9e21d4b8d"
   },
   "/blog/how-to-batch-cut-repeated-parts/": {
     "lastmod": "2026-07-01",
-    "hash": "0e68a664669d0aaffb69c2e1c8a4df894db75eb7aa5176a88c84da95a8a1c429"
+    "hash": "d133bf0ce3dcc499892c03584c32c95d5ee918127276b1e6427f25ea9614279c"
   },
   "/blog/how-to-build-stairs-for-a-shed-or-porch/": {
     "lastmod": "2026-07-01",
-    "hash": "14c301e0091a5b9495f5c5a71ba79550e2a70b2a51df9467a294d2b6752209a5"
+    "hash": "59970c10f7fd97a895a07de12d211f637fcd47d4204961f80b709ae3b07de74b"
   },
   "/blog/how-to-calculate-sheets-for-a-project/": {
     "lastmod": "2026-07-01",
-    "hash": "ceb8f3d63dc75b9a457a0a9a0398b682a12a2776eab04e2a579c262d71389422"
+    "hash": "1771b42997be259fd8aaaa212f2ad7a15d4a760c039cc81c0ea277df1d0fa5ae"
   },
   "/blog/how-to-cut-down-plywood-without-a-table-saw/": {
     "lastmod": "2026-07-01",
-    "hash": "17b52741f141cf369b8190ce6e53f1c4cb24ea12b393976135c3ba8afd5fb18b"
+    "hash": "d9197a52c1835ac0a910a795a8982ba3116b907da8ce526bef96a989a6c8067d"
   },
   "/blog/how-to-cut-stair-stringers-with-a-framing-square/": {
     "lastmod": "2026-07-01",
-    "hash": "d265c4f246bb1ffe208a7a3f576cf8bf41e1f5f269a261d875d1142f6381b583"
+    "hash": "1f80e5a8f63218cd22ea18d3b003761cf7df9abd65c8efad8d1752d7aec91190"
   },
   "/blog/how-to-estimate-stair-lumber-cost/": {
     "lastmod": "2026-07-01",
-    "hash": "ba2d52a7cc1693f2866302cb3cf9fd8d973e07f284a61d011766bf5ef24a6cc0"
+    "hash": "57c84f1b1fba113b5b4e2716058c52f046367d766d27c05a2344ae65cc2ae3f8"
   },
   "/blog/how-to-finish-plywood-edges/": {
     "lastmod": "2026-07-01",
-    "hash": "803a6f480aee258e34560c6345e22c553b00c92ffb330f8a457522edeb55f21c"
+    "hash": "da13cad5ef52b5f675a75fc1d91084f4f6bc318ec4f8057c81cfa5ab09f141a1"
   },
   "/blog/how-to-hide-plywood-edges/": {
     "lastmod": "2026-07-01",
-    "hash": "e3441d01d9c95cf529136951c4132dfbd28ffe5b3d59c6d54d1f8ecc2b10ab66"
+    "hash": "dd594028a396dcc3c372ec99e138ad5a6713555f2d67e684ff7258a97ee76668"
   },
   "/blog/how-to-measure-total-rise-for-stairs/": {
     "lastmod": "2026-07-01",
-    "hash": "b62afcf03534ed6e34ffe5b212dcef3395f226f88c8353f7c8658b242c02388b"
+    "hash": "65e61bd0b6c7dbb52d2a1fce7498ead00116efb4c34cf44bf31e068218ea66ed"
   },
   "/blog/how-to-optimize-material-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "83af91b02111840664ef9f462658f58510ffe38c8ac9962edc1b4e3580cfb763"
+    "hash": "2a87db928d879ea833deba469db409ae3d00a4c537c04d391a01dc95b3a6e948"
   },
   "/blog/how-to-plan-a-plywood-project/": {
     "lastmod": "2026-07-01",
-    "hash": "d33d678e93f4a864d23e78efb5ee6b0f5a17021b266896b9d6483eb770ea2508"
+    "hash": "e6ca74f39edded643cfc8d5c15f0d947c3413df4f002be27b34bb06fa34cd15a"
   },
   "/blog/how-to-prevent-tearout-cutting-plywood/": {
     "lastmod": "2026-07-01",
-    "hash": "02f5f2d669bc37e96c0c39119457c4c76168b23e510d3c000a4073a02c725619"
+    "hash": "6e78223ee0b466715a9535b2d329e9d4c5c1695590c29b6a9f5b2a9e07fa4f4b"
   },
   "/blog/how-to-read-plywood-dimensions/": {
     "lastmod": "2026-07-01",
-    "hash": "c459a8a0c640595f04b0bb465941d1fc0399efa850ce68c912b18203738f0f8e"
+    "hash": "47403bb60ea35db92c9e158734ebad89ef747f7832af3de6c7b6f65672cf1205"
   },
   "/blog/how-to-rip-narrow-strips-safely/": {
     "lastmod": "2026-07-01",
-    "hash": "d8bbfc783f10b44d5a71d3da14cd43e2bf66982e24a4f130ab7186ca0204e140"
+    "hash": "47bcbbf7a2cb3dec31fd1a2a2963f630e329b2ef5adab025642d56801b940cd1"
   },
   "/blog/how-to-square-a-cabinet-box/": {
     "lastmod": "2026-07-01",
-    "hash": "7eb0025e94da8c6df35f2fd8f71b3897e11ee2badc4a2cc49fef807e3aa4d233"
+    "hash": "a6a6adfe2b88d865b62b6d6dfb0ddb7ed3c6811e3943283e360b4aebd4af52f2"
   },
   "/blog/how-to-square-a-plywood-cabinet-box/": {
     "lastmod": "2026-07-01",
-    "hash": "bfebf26af2832fc1e3603882cd91551c561bf8ffc4d68fbe918bb068f503b67c"
+    "hash": "4867a2e0e9fa0ebf51e64674c4d74765ee021907e11888567c93003730d4ef82"
   },
   "/blog/image-compressor-app-iphone-storage/": {
     "lastmod": "2026-07-01",
-    "hash": "aa357b13ef2b8d87044322d7f7b224d54903c5b0f3e08a1eef319f2ffe559384"
+    "hash": "8c01c87ae97f4ea0bcc7bc4b7f9f31863123ac1b1977b73621e75b53ad172255"
+  },
+  "/blog/image-compressor-jpeg-vs-png-when-to-pick/": {
+    "lastmod": "2026-07-01",
+    "hash": "d3da6e0d77a43bd6fac0d06e9c6e512161f705ec5d30088c6a49d541dd244b3e"
   },
   "/blog/inventory-scanner-app-small-business/": {
     "lastmod": "2026-07-01",
-    "hash": "70bd791768c3ef59f9e1a77e549934b69ed43fa7d8e77c762ab00470b694c7af"
+    "hash": "e8f3049b6c401c793e0d2dd189fc545a140429deb3c1c8525e8f1d2539d52f4a"
   },
   "/blog/invoice-maker-app-freelancers-contractors/": {
     "lastmod": "2026-07-01",
-    "hash": "7d570d5dc3f77f8096e0864f4107e5c02c8093c5d3690c40d45cb9e2d8b121e8"
+    "hash": "d0804fed2786dcb0fbd2fea7f3544d6d962166133d511c5e3221fa561c3910db"
   },
   "/blog/iphone-photo-cleaner-duplicate-similar-pictures/": {
     "lastmod": "2026-07-01",
-    "hash": "1cced31fadd1567ff9d7ac015b2a3ec10f1f7df9ea5aeec133fb82783e80745d"
+    "hash": "1ff935339e566eeb9c170d5c15bc1b97ed705109cc55ca9312ae26f30b77b29d"
   },
   "/blog/journal-prompts-mood-search-private-notes/": {
     "lastmod": "2026-07-01",
-    "hash": "b10387ba0b6cff5dc33029df730a9a3a3080e7c94984a6bfa9dac4ced1857565"
+    "hash": "ad1779f38f72cfc02c6e4d9ce53f0a66b940426991111a6df59e782b81e19294"
   },
   "/blog/kerf-allowance-error-research/": {
     "lastmod": "2026-07-01",
-    "hash": "3e62f0b3153189bd5349f2c7f8da40394b83970f06b1fde1c0813069fd7b10d6"
+    "hash": "5fed04cff2bab5124f395fd56027eadd98dcce070a6757702dc71106971db805"
   },
   "/blog/kerf-spacing-multiple-sheets-batch-cutting/": {
     "lastmod": "2026-07-01",
-    "hash": "611363e840612895c36b63ca7db864ca35a4f31dfd8de2d79e3556b953a044bf"
+    "hash": "f13dd2eab1af7bfce85e0bb2614675059975478dac72f80f33b1734063dd2447"
   },
   "/blog/kids-art-desk-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "54d638b1a7764f323fd7cdafcd2807b96be64ab2644868ac679a902f5e86e2d7"
+    "hash": "5d9a538def5798599e40a04557e8c53821213048be0bd2b94f157de1353d5a84"
   },
   "/blog/kids-bookshelf-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "17d3362b40efa64ebdcbaeeb89ef619845e8a43e3f455a4b12e31426e178fb7f"
+    "hash": "6c3ce1beeaef0623e8e484cd395582594545bd5ac6583a376230618fc9bf1849"
   },
   "/blog/king-size-quilt-yardage-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "fcc2e136f9fb79b380f320857bd1f8922be8546e8b7526db65a42a4ab1b1f6ca"
+    "hash": "bd28a060890bdbf697185ae89956fa2c64aa2bb0d6db6e809e0b072814a314d3"
   },
   "/blog/kitchen-backsplash-outlet-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "8b155a50a10a0b7d995caea3003fd0828f6aac90f48c0e71071d3e5bbbe1f814"
+    "hash": "06091f6c21fda65fe4e4e152e0032482546ca36ddff9652315af49344652c2a7"
   },
   "/blog/kitchen-banquette-bench-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "747f8ceb9340c870fdeb2618c987d5a1ba97608d06b05393d6f335cb6529cda9"
+    "hash": "4239e1cfbc0796d4d0089ed2348f0c0420913bb0a31b4d40192dc1d2c5343b8f"
   },
   "/blog/kitchen-cabinet-plywood-sheet-count/": {
     "lastmod": "2026-07-01",
-    "hash": "abc7e3ad09dc3d6f52f91f6e8d43f61c39d65855825aaf57c9aa64e819e9d682"
+    "hash": "5470df534b3b84dca7fcc1b527e2d9231339986be8006088f6bcdd582cd68d79"
   },
   "/blog/kitchen-floor-tile-layout-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "5eb9814789fbd297f0a4f07048329039583513465c27d05dd5f9d4f86e6d6aba"
+    "hash": "59c6b8cd69d24ea31254ebbd756cdfca311806f3bea88fda7723910d14301111"
   },
   "/blog/kitchen-island-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "474398a6e47b9e8a65cc41a1e21c96f6f877c1ce7c94739a6a0c7e210eece831"
+    "hash": "ac5c0e5e3774b9b86d1a61599fe65b3962abc47e1ac236a111e5be5260c7e29d"
   },
   "/blog/label-storage-bins-from-a-photo-snaplabel/": {
     "lastmod": "2026-07-01",
-    "hash": "8828354ce1b7f897b65814633ca726a920267b73521ec1db6a4e2cfc780c7d46"
+    "hash": "c78c01f026f14c6c6b000cf767d6c1790b68f860c29c1c2b42b6f337b8bd01cd"
   },
   "/blog/large-format-tile-cut-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "352d08d8c9a0d097e10e453a38201c4834b5df275567f4408ca02037d434b17d"
+    "hash": "9163b8fd23808b6aa6b6143c97027db01506e40d3606401454be95f6b480ed8f"
   },
   "/blog/large-room-tile-grid-squareness/": {
     "lastmod": "2026-07-01",
-    "hash": "b4ebc0b867e48132adada6e8550c57e52620b937a30de97382b3fa8951d96def"
+    "hash": "0fb5c1ccc21863e0b7ce8ed6d77735a67107dfae7b311ce210789d2d3a8891db"
   },
   "/blog/laundry-folding-counter-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "c0822df142320e31459387f009b6f99b4d504069f9ad3b9b8c100f7546356040"
+    "hash": "3cc8681623934a557869e3e211e07e712c260c78520fada047a1618ac8487c27"
   },
   "/blog/laundry-room-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "11a26ad18b8a20c66ef8d68b7f2465062144378d1e820aa902c5d3a32d788373"
+    "hash": "51d0abb517b7d68f2383cb658ced3672778797ed765610e23d75f6283f31f5b1"
   },
   "/blog/laundry-room-shelving-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "af93a0078637bd74f6ea751b9702ea799d445b08834bb6a979ee285930248772"
+    "hash": "e0867f3851587a85de47a113e9a6aaab75fc975843d30dad2aad439752b62bf4"
   },
   "/blog/laundry-room-tile-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "08aba5e362e02b7a0b5ed38da72b39a2167a56af1dd09402de6233d406d754f9"
+    "hash": "f3f438ea0df26c55bfda8902d9b344db40062d78d90ffff91664fbe412cdd740"
   },
   "/blog/lecture-transcription-app-for-students/": {
     "lastmod": "2026-07-01",
-    "hash": "d02875f1c730717e4876891a1521e83c634d3626d5552419d5fa66b6cf8601db"
+    "hash": "303fefae7e0ce58522baf2125d7f9827d10ca37fcaafd75855adc6ca635eddcd"
   },
   "/blog/linen-closet-shelving-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "bd9f164dd235e233eb144052709290282e2cae62d7bd8f3f93bbde61b81b1d7c"
+    "hash": "fc8cb3510e7b3d97858f0ae1eef8e3a193c8cf40f4537f625b66d40b99385df8"
   },
   "/blog/low-frequency-tone-generator-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "adb2f013607a702adb2088e209d9e79edaa5333350823d0195d4f3842a0de370"
+    "hash": "bb04b9c9f8aa00a354bc320d6ce61087dd5802d83c9ae430f2e7ecfdc1375575"
   },
   "/blog/lumber-dimensions-nominal-vs-actual/": {
     "lastmod": "2026-07-01",
-    "hash": "d4afd32e4fc5eb06b9ce5553756a92ab47b788a4362b6b39daeb2dde42f48f2d"
+    "hash": "e35a8b9548e7872c1049aabdc4509f4f213c7d8336e10d225cdc68d1de97ca06"
   },
   "/blog/magnifier-reader-app-small-print-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "c4b130744d8d3e788356f1321c2767786474d651d6a7fcfce45f3f9b80650523"
+    "hash": "d2869928747956e542444c3f21e697555d86707197abaa959da83533e03926f8"
+  },
+  "/blog/magnifier-reader-vs-phone-built-in-zoom/": {
+    "lastmod": "2026-07-01",
+    "hash": "3721efd44e49b2db599d0a8225838c5eda4448f43816daed86c4e154347114e2"
   },
   "/blog/market-stall-best-sellers-location-report/": {
     "lastmod": "2026-07-01",
-    "hash": "f06d42f4530820a46ad948a21f6125db836492e411faf7ed9b0f3ffc1962aa96"
+    "hash": "852316fa7e3763455388aac4a431fa892665d3aa279ce94126f4ac8f672d2ac9"
   },
   "/blog/market-vendor-sales-tracker-daily-ledger/": {
     "lastmod": "2026-07-01",
-    "hash": "c5052099e7f2461c3cd7ad89d2c4ba71954064121a8afe4ed82117ce6775e8b1"
+    "hash": "f59f453398333180c2eff22ec0a48908215ab30867cfb3572502ccd0bb8195ce"
+  },
+  "/blog/marketvendor-comparing-two-market-locations/": {
+    "lastmod": "2026-07-01",
+    "hash": "9aa3fcb8639eb7144669eeabee14506b84c27c9096a949acabd6f71781eb1d3f"
+  },
+  "/blog/marketvendor-tracking-cash-vs-card-split/": {
+    "lastmod": "2026-07-01",
+    "hash": "cc6fc26581f0ab4bfa72d86d96614e66b492dfbe00feeea3046945ac9e48085a"
   },
   "/blog/mdf-cut-list-optimizer/": {
     "lastmod": "2026-07-01",
-    "hash": "7807d095a8c4fd4c07300649600ccc92963bd79bc6c7b61c14a6740509f1cf72"
+    "hash": "401b44957d461eacfd4a08ddbae8c296fad57afbe8753ea990f3bebb8211e1dd"
   },
   "/blog/mdf-vs-plywood-for-cut-projects/": {
     "lastmod": "2026-07-01",
-    "hash": "0a346e80d3a252616564863e3fe2ed3551571ffb350d5428bb5130c876aa2cfa"
+    "hash": "0fb747df86c02b63ce2835f5bf88520fe9a5292e57afde04305c835c37333d6d"
   },
   "/blog/measuring-and-marking-accuracy/": {
     "lastmod": "2026-07-01",
-    "hash": "118980982cecfcb7c88af24c05a1048c551bf628ec409235831eb06de2fc6951"
+    "hash": "cfcd0b290576c30fcc107573da27c6d4428b8286f75ee8a89a66ff8b5efba4bf"
   },
   "/blog/media-console-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "7bee2697b3bc28be43bb53dd8ad4400f40ae4dbfa72e547e3330206671f06f83"
+    "hash": "b32edce42c2543d9e0ceb524e7232680f67bdaacc28436b0242c1e073aef88bf"
   },
   "/blog/medicine-label-reminder-helper-privacy/": {
     "lastmod": "2026-07-01",
-    "hash": "9cfa534809a40e801ddd70d34ec3bb3d134b48f528a1aefd5376ec644e5a2499"
+    "hash": "5279eff4567a6838ece560b269a1314e81a793ff152d5f65c7b4b5eecc283b30"
   },
   "/blog/melamine-cutting-layout-chipout/": {
     "lastmod": "2026-07-01",
-    "hash": "f7d1fae8f53b5a89e16e67fec8b0abe33ae4b9e2fb8035d20c9c8744affabaad"
+    "hash": "96b07284c2969fad5ccd6db3586d5a1469291a04034fe3fdd3d16a5796e67ce4"
   },
   "/blog/melamine-vs-laminate-for-cabinets/": {
     "lastmod": "2026-07-01",
-    "hash": "04f3f0ad255370b88a9bb0fd27518d7354f3f6414dfb5409513f3617c900f4f7"
+    "hash": "cfc059218805f5425d7cc0c844c3e92d08200e533a857d0a7e6ceb2470d24648"
+  },
+  "/blog/melamine-vs-plywood-cut-list-considerations/": {
+    "lastmod": "2026-07-01",
+    "hash": "e2a5635828194f16f80993c8eab0da83931b266b9e19bb4f8542c8a73e36583a"
   },
   "/blog/melamine-vs-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "54c1101af0ff3a3a2c32f36b7c60d53f7a3e583a2cb55017a23923a0d3c14d14"
+    "hash": "8f3c91a98b48153b83b2758caf04b02e7cf9ca198840e436bd348995a750def4"
   },
   "/blog/melamine-vs-plywood-for-shop-cabinets/": {
     "lastmod": "2026-07-01",
-    "hash": "c391bbd8715c59e235fb18818df86af0cf22e5fbf88a5d328b2619df6e84f30c"
+    "hash": "e5d40e792c00c6d3cb362a63f8bde10a3915a95324df807200c2bf7ac9974d65"
   },
   "/blog/memory-quilt-photo-map/": {
     "lastmod": "2026-07-01",
-    "hash": "32ae88fff48b39ed75e1b1fdecb809fa20a7ed38b8636c281684f633ea870a7d"
+    "hash": "d717346f29d256931de8c2cb1a0846a0c9e9c185c0949ce1566c98187e69b780"
   },
   "/blog/merge-duplicate-contacts-private-backup/": {
     "lastmod": "2026-07-01",
-    "hash": "9ad588485646f8d9c5305e4746559e06ce76e48c39722f0ffce7526702903a56"
+    "hash": "1cca3ac55d39595b14626a3e70566b8bdac47885f35db7de852a67efd7296fa9"
   },
   "/blog/mileage-log-for-tax-deductions/": {
     "lastmod": "2026-07-01",
-    "hash": "b4efff7b80af39e267a6937d848518056032067eeb3d74621a55bedd62727c77"
+    "hash": "576b15cd650335e498662011aa68677fa955251b27575470a623b49cb4eff2ff"
+  },
+  "/blog/mindnest-journaling-consistency-without-streaks/": {
+    "lastmod": "2026-07-01",
+    "hash": "b21a12a77038706896a31184a4afd19b83ed3ceeea2b07119bf54522dceec54e"
   },
   "/blog/miter-saw-station-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "722148f0bcd02dfd3b31119f129b4ecbb6535125afe6fa3db9467a7f95de7cc8"
+    "hash": "95235b964f7a0aa7cce6533499777c287889a0498f71c344109c5d8293160494"
   },
   "/blog/mobile-lumber-rack-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "21c1e83733532d360b80f1ebcd28c2ab6a599f15d593595279f3be74d5fd546e"
+    "hash": "2cdfa145ab02700a3d1fb8f8da7d9f9096ede3958a5dee9b439c1f95b3a9c45e"
   },
   "/blog/modular-cube-storage-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "d0e22b2897d61527ee1753cbde5af26e9a243b13d6a5b147049f8a5c4fa2330d"
+    "hash": "9ed1beaf26d8b6f68879a00ab0d2d8aacf8a99700076b9886751c3deae626fa4"
   },
   "/blog/mosaic-tile-sheet-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "cd3880a5c7da31ca6077838b48ac813b2814cd14cebc3899489a9ddabc6c4520"
+    "hash": "dc8bc24c9775cae2a789f2ee499d43ba1379b38cc31d0c5be470ab26093317fb"
   },
   "/blog/mudroom-tile-layout-durable-entry/": {
     "lastmod": "2026-07-01",
-    "hash": "32a79524ccc9ec80ab9e6f6311687bdaf0faa7a8a6791f64dde49f55bed772d1"
+    "hash": "0cc4176bebf8a269a19ed4c4e67a567d93adb20c370c7e210439754e61f88c26"
   },
   "/blog/mudroom-wall-hooks-shelf-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "13e1cafdd06a8e05b7f0152a97bdc14536f16ae72228aeda401f2f5ea6198301"
+    "hash": "c68b8c8b432c165ac26d513838b33655e43e725be710b57f1c6ce5cc7c702551"
   },
   "/blog/murphy-bed-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "c53a32d4760d9d7769ac4d90106c1c6f3a9c4ce8097e4c3e83bbadd552e2910d"
+    "hash": "62c6f3e2cda967d3287c066595d5d2088e60c18455006e1e1f82c0b6ba1851f6"
   },
   "/blog/music-practice-tracker-setlist-metronome-tuner-cadenza/": {
     "lastmod": "2026-07-01",
-    "hash": "d906376f397ebd5690ca8372f37dc050db736dfb8028e47718d37342940563b0"
+    "hash": "faa53350050e49cd0afaf5ff4a1c4d87a2884ace3b45e4c3e8bcdda8bca2fcff"
+  },
+  "/blog/natural-stone-vs-porcelain-layout-planning-differences/": {
+    "lastmod": "2026-07-01",
+    "hash": "7b36b03480fb71a688e3fce23958a34726031d2fe57642b5c64403944ffc3ec5"
   },
   "/blog/no-login-shift-calendar-privacy/": {
     "lastmod": "2026-07-01",
-    "hash": "b0e0eb5711711fe0407064843a78b9b5f83915dddcdc3026e7e056c552f41c21"
+    "hash": "ccc24b5e0e413f71d8f71fa1b5e62a0a6013d85687b47e721eb9805da148e739"
   },
   "/blog/nominal-vs-actual-lumber-sizes/": {
     "lastmod": "2026-07-01",
-    "hash": "d7839ae3d77af79548bc96f126cd0ab7ac8715f23ad7ab3f5c2636fb1a4b04f0"
+    "hash": "0c3ae2cbf6d86f1ac2ff8d397a3ca4d971350eaaa77e2ce23c3f8f7359c47286"
   },
   "/blog/ntp-time-sync-vs-phone-clock-why-it-drifts/": {
     "lastmod": "2026-07-01",
-    "hash": "763bca7e741920dfc8b0387fe2bfbcdbea9ce23652ef2bdcc227a4e999f46061"
+    "hash": "00860b1f8bfbb47c5ca9853fb8a66d687354306aefd35939868d1ef7dce03fb2"
   },
   "/blog/ocr-pdf-scanner-searchable-documents-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "b37772831d29a159d9c8e2f088213310e82a79e43ecc615c8b39d818a9c9211b"
+    "hash": "d59fd09e47a2c883e391ac6f4aaba0f33401472baa33eeb18a38cba04394af20"
   },
   "/blog/ocr-receipts-searchable-expense-records/": {
     "lastmod": "2026-07-01",
-    "hash": "ebea5391c0e5b9a1198a0441676c9b2db74539ddad9cc3b5a26504e242ab6c9b"
+    "hash": "1fbbfa4534faa89ccc141ad64043a79ea74cfbdce8daba6d8b526ad5eb2ad7e2"
   },
   "/blog/offcut-inventory-roi-research/": {
     "lastmod": "2026-07-01",
-    "hash": "1df881d60f2e3319ece55672c6b526b442897b36de065b6bcc73ea8b01c1c0de"
+    "hash": "512c87b0f62e245a6b08f87a39691b1d4b6531fbe7b6328ea3789b86f1c0485f"
   },
   "/blog/office-printer-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "76bad9c8b8b1cd443eb9381587e47bfc57655bb0c7bf3c2035bbbfff0b0a6404"
+    "hash": "33c567832c1d7f4c0c8861b9fa2cdc4a6bd257b8d79f1c695f9d4739a18ddb78"
   },
   "/blog/offline-app-privacy-workflow-research/": {
     "lastmod": "2026-07-01",
-    "hash": "8df653bc63a1a413cb3184ee6b87abc59fd28b44c14356b11b3956cc0a395787"
+    "hash": "d84e68d7a9d6cf812d2eaeab52c01a78c6e852e018a5baf388e738238f683d23"
   },
   "/blog/offline-cut-list-app-privacy/": {
     "lastmod": "2026-07-01",
-    "hash": "4bf0b68d187a7599ea4a6aef8dd57f3a01cabc50e1d9bd13d23d5281a4a03942"
+    "hash": "eb705483d74b882aeb0643f27d39f1c4fbfe7d14cc0a43a6b958c77982b4eb7c"
   },
   "/blog/offline-diary-app-for-stress-reflection/": {
     "lastmod": "2026-07-01",
-    "hash": "c30c029e5b6181de8b6526d7e5a721d2ade261e3e3cee14d1aa7ca3768d847b9"
+    "hash": "b77fcc986fad883f38e3814369274fc320c4f79d34172e27300a79a421aee447"
   },
   "/blog/offline-tinnitus-app-privacy-on-device-sound-masking/": {
     "lastmod": "2026-07-01",
-    "hash": "3b75a55a2ae0438e42d1851ad148c0da13ef125fdcd4050c498fc89fc79bcddd"
+    "hash": "568df8d7e84aa217bb1790c598516594546ac4dccf454901059d3022a1b6f102"
   },
   "/blog/one-sheet-plywood-project-planner/": {
     "lastmod": "2026-07-01",
-    "hash": "e41194c04b6f1970754532940ae041c919808b4aadc5f2700f7592c6a3ddd9a2"
+    "hash": "8bd8edc51a3aef8652e9aecb0f00631c1134fd910dd9ff1b90bc79aaba2cb901"
   },
   "/blog/open-riser-stair-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "092d0b32605028855df6f5b8a3fb1ebb3929c9a5113b48c1c1eb4470c1fc6afe"
+    "hash": "05fcc805bfe77f4137d879d78aa679ece45d7429f7dad1d1a7f5b2b3d1c7f438"
   },
   "/blog/optimize-4x8-plywood-cuts-for-built-ins/": {
     "lastmod": "2026-07-01",
-    "hash": "53249bd7fe0b068f4ace53202fa5096d02f2c32dfc2dfc97e402b1b95ff38aa0"
+    "hash": "65988751b12aec344f74e334d36c00e0965ce3f6abfba365be5cf0c4a14d1e03"
   },
   "/blog/organize-pdf-scans-multi-page-documents/": {
     "lastmod": "2026-07-01",
-    "hash": "2b627d6e0d9b5ec506e7adf9d240006acda7c8cdd313e09a032fa93218cfad06"
+    "hash": "db264f1c8759dd1bb6be8f95b6eb3cbb1ea065ae673ee9ffc22470c0257512b3"
   },
   "/blog/outdoor-patio-tile-drainage/": {
     "lastmod": "2026-07-01",
-    "hash": "6e715f10c5dff1a9f41886b180bcce49cb493ca0199bddee6c3d85ce4382bf97"
+    "hash": "f259219d2d27e97a5afb0131561dfb9e23c6c0a1a93089072be2968bc44b7548"
   },
   "/blog/outdoor-storage-box-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "73e98dc246bd59dba8e3d84fb2d4ba8aa75b5a4baa8b7bff135385ccc3e97783"
+    "hash": "c52b6a437e869b5a2844df00fd3aef105e12c27385c2ce2285a857ae06431821"
   },
   "/blog/paid-status-invoice-tracking-private-billing/": {
     "lastmod": "2026-07-01",
-    "hash": "c02e740427051f566d3a11630e0d7c418d19e5773eeef83f41b004c397969faa"
+    "hash": "7e62dd2ca30e8746c6c4298dff52987ba2e4c909f8d7965fe441bb9fcd1b0209"
   },
   "/blog/pantry-cabinet-plywood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "921d9b71d4f41d5b8558c71952b3ccbf3425fff32737589cbb60b0bfd8ce054a"
+    "hash": "2f26895f2b0336a9005678701516124de2a8779550821510d87b935ce7693574"
   },
   "/blog/pantry-label-maker-expiry-date-labels/": {
     "lastmod": "2026-07-01",
-    "hash": "365aef7d52ab87c1a6981e5c03b30ccea44f9bea6e8272d87b5f3a5aae414815"
+    "hash": "c7fa1dca4e935dd9a863ac6156c4a09f3ba6f5715c82e6b16a991c85b188a6ee"
   },
   "/blog/pantry-label-maker-kitchen-labels-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "37511aa3c208cfbf837b6940bb9e56aa9889fe52a167b20fb5db3ced506e429a"
+    "hash": "d2142686be0281985368056d5bfbfcf266048ea5b86d7d329fd6e8592d1a321f"
   },
   "/blog/pantry-label-maker-no-login-private-labels/": {
     "lastmod": "2026-07-01",
-    "hash": "717a814ded3c0da91aeccd95ef29bdd4f068b766417e0755e1ad3f33ae0711bd"
+    "hash": "bd99d87226a613b94c3b7736cb55c5e0fa1467699d3d8e81ef30cef15acd806b"
   },
   "/blog/pantry-labels-system-for-an-organized-kitchen/": {
     "lastmod": "2026-07-01",
-    "hash": "103517b455aa3bdd8ccc42a4407206001c609612f78e3fc3dc753b37f96097bf"
+    "hash": "d3430709cd00dea24f3a9bab4b68912c58e0094c02ddeacf94630e118a97c839"
   },
   "/blog/pantry-pull-out-shelf-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "8b5feca25d34195ffa3ef0c917b139296028456b40efa2d3f65ab47c155324fb"
+    "hash": "95ffe817fb02fd89dab8b804e745fb5a7a86278ea084d9759bf755f26a7751ba"
+  },
+  "/blog/pdf-scan-multi-page-document-organization/": {
+    "lastmod": "2026-07-01",
+    "hash": "4975e02c1b707af4c663347d3df7d4c98cb6bd033fccb85661e7438ef817ec4b"
   },
   "/blog/pet-feeding-station-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "e9faf3b49be16ba5c487c4fb544f707d829c64fab029836c526c34c61c6ac371"
+    "hash": "d656c67b71c46f115abc27345b80f9951817cf1218ca90b22a1b436a3e1d0db1"
   },
   "/blog/photo-quality-comparison-psnr-ssim-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "96ddcb7edc66b8aa664f344ffb8a17561c44bf93e2dd615e771bf9a29c97d08c"
+    "hash": "de59011ef7a946dd489c2c367a63476bf14a3055d218e80aca4dcc9b4c825e02"
   },
   "/blog/photo-signature-logo-overlay-workflow/": {
     "lastmod": "2026-07-01",
-    "hash": "5be168720716c17530373e31766582f19f3c420b4709701d870ccd84645f46ae"
+    "hash": "7a514578d2c4dae17fc3194e4f062746201ece94575b31793d8d4874bb0911a1"
+  },
+  "/blog/photosafe-decoy-vault-when-to-use/": {
+    "lastmod": "2026-07-01",
+    "hash": "44b83b2b942cfb4fe252dbc3685f84c8589570a890279b949746f39b78f18951"
+  },
+  "/blog/photosafe-organizing-albums-inside-vault/": {
+    "lastmod": "2026-07-01",
+    "hash": "b075d966d0d3cc1bfb4db5a54367e97a598707d7731e0e41eddbc1c57bf812b3"
+  },
+  "/blog/pickone-group-decisions-vs-solo-choices/": {
+    "lastmod": "2026-07-01",
+    "hash": "786b273703c11a8e5290b20693506a1d93d3944c39f846d977b0edf4e7d44ad5"
   },
   "/blog/planing-and-flattening-rough-lumber/": {
     "lastmod": "2026-07-01",
-    "hash": "21fbe93330e1d74c7bb66cf65e19c99a458c2828571b6302ac7106ac48a1f00f"
+    "hash": "590992ad975d7c1311b63a2cda7fb6cd4eadb722fb3df12500b5d82fe8d7be36"
   },
   "/blog/plywood-audio-rack-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "6e2899db43ce77b4076d1b22f706176b45d84b0fa7bb13d910342f9be0880b0a"
+    "hash": "77031c13b28005ee063eda4d7029223fa63b42af842d619a0221a7c69aa02a02"
   },
   "/blog/plywood-bar-cart-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "b8c73413697b054e38387c2a342267c5aa9c664b1980446151fe24cdde1c04df"
+    "hash": "eb834c487eff6f466876406fd8205623c04e79123e559ca5b5b4d7b9318770b6"
   },
   "/blog/plywood-cabinet-door-sizing/": {
     "lastmod": "2026-07-01",
-    "hash": "62175f728ece2a9d4f7e5f6b8e5d15cc842a3d31e86223f3ddbd978838532512"
+    "hash": "d4488154605cb575d3b977dd2eb682346fca23ba2ee912c61c70f235560983f5"
   },
   "/blog/plywood-cabinet-shop-workflow/": {
     "lastmod": "2026-07-01",
-    "hash": "d7e3ae5d1c1759b04de25192f213bf7e4b93bfdbbdaaab15cc43955711fa8a54"
+    "hash": "789063cdab620efdc597fd3fa904d3fc49b6317b508abcba7679d44a3bde4725"
   },
   "/blog/plywood-cost-breakdown-by-project/": {
     "lastmod": "2026-07-01",
-    "hash": "d4ed5b5d2fdfd1148707efcf0004b6b431d0aeebfaa18839dc81e434cd275987"
+    "hash": "4d8b2ee30b89b4b620eee9feeee9152748dba03f9a45bdc5e255c55eea46618b"
   },
   "/blog/plywood-cut-list-for-a-platform-bed/": {
     "lastmod": "2026-07-01",
-    "hash": "be047e24524050e1d10340f87ce556f35ddbbf6a3f4c762abd546ccf1fefa591"
+    "hash": "6956e5f3473f744c7a9c1ae4139d8ce75c3ddf62941934ae91c5db8eb962a7e0"
   },
   "/blog/plywood-cut-list-for-client-quotes/": {
     "lastmod": "2026-07-01",
-    "hash": "15626a35485997a05659ece5bbc58c5267c24f7a1e8344330fd06aea426a1183"
+    "hash": "efa6c46613b75e8fc09dc840ae108f514656732117ec60ffb3a1743d4a43f438"
   },
   "/blog/plywood-cut-list-optimizer-for-cabinets/": {
     "lastmod": "2026-07-01",
-    "hash": "ecf30e783488639541eb54f4814d42a34b96209b8ab3d6f1b4bfabbb96aeade9"
+    "hash": "21643a17e52f0ec8fc9f31f142986d8938d136af38c256d32e3a8a8f60712dfe"
   },
   "/blog/plywood-cutting-calculator-cost-savings/": {
     "lastmod": "2026-07-01",
-    "hash": "1de25ac9f0d7e6583cdf087a038e5d98afbffac2b9aba345ccd7248d6d44840a"
+    "hash": "1f661fa7f85dc15eec82a99f3efae69ccbfccf4337f43d14529791e282ddf9ab"
   },
   "/blog/plywood-desk-build-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "94f1dc9c16a73909963c8ef055334ac11645bfeefe6735e5caeb6501ddb54e68"
+    "hash": "25447ac369960b3a22e38bf0663183047c50497c2ed2db10a936746599d1e0cb"
   },
   "/blog/plywood-grades-explained-for-cabinets/": {
     "lastmod": "2026-07-01",
-    "hash": "03eae644cb200b60f427d6e622fcbedd2cf52dfa7d37301f3e4559fe1f88537f"
+    "hash": "4d06ed1833ce0ecc28ebab03645509619940acfc222d399cca673a7117b99ab4"
   },
   "/blog/plywood-grades-explained-for-woodworkers/": {
     "lastmod": "2026-07-01",
-    "hash": "4ba02714cd13b5864bf80c722443f72a93f4b0f56338ce02e455a25cc8a54093"
+    "hash": "288352717f67f82fd713125ff319040d834aa5a34e0be06063b090cac8f5d461"
   },
   "/blog/plywood-grades-for-cabinets-explained/": {
     "lastmod": "2026-07-01",
-    "hash": "ea6aee4097097cbe756005debefcbac1884dbdea20d447fb4026b4c4984219c4"
+    "hash": "e64ae43d8f1f6b7cd957ded9ecc30dc4ee3086ce561b58d824e3d2ebb95814e8"
+  },
+  "/blog/plywood-grain-direction-cut-list-planning/": {
+    "lastmod": "2026-07-01",
+    "hash": "f793e980ab7194159c6b9e46a751ad6cbc0867550d04829346b0aa9e3ff9bd2e"
   },
   "/blog/plywood-headboard-storage-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "64cde6754d89141584fd68c18ac7058c43662661082056994eec09ef29f6629b"
+    "hash": "06f15d1422396d6e06418a8e9eaba3ed44301d6b83bf0e0758c13aa83b47c8fa"
   },
   "/blog/plywood-layout-mistakes-beginners/": {
     "lastmod": "2026-07-01",
-    "hash": "c752dcdb4162f71e7fdd3a5258ddcd432c18d8b97cb20cbd580166fff9d7f89f"
+    "hash": "53c3c6ff7d7e97ca1c9660a0794adb22e2baa636c37afb4572cd4be47e66da25"
   },
   "/blog/plywood-needed-for-a-kitchen/": {
     "lastmod": "2026-07-01",
-    "hash": "6ce8f286b147e9464c51ccdb87eca98598e85d4cb7732bdfdb87e86649eeeaad"
+    "hash": "bc8ad5a73b42b7c66c432888c0504df0bd03f8d4b852d7478b8f97599fd6b3c9"
   },
   "/blog/plywood-offcut-management-system/": {
     "lastmod": "2026-07-01",
-    "hash": "71d769216dc5ad8698c9cda2b5d6e5ce07ef72b124e230c31333524090d77de5"
+    "hash": "32b36e1d67257361bbc264c099145415ee3c7e859cac3ee8538f1a11f078a5f7"
   },
   "/blog/plywood-offcut-storage-ideas/": {
     "lastmod": "2026-07-01",
-    "hash": "86fbcf7c0f221541d2fcaac2ce8cbec37a32d7534edf02d614a5d6c180e76977"
+    "hash": "e809d093b62428bf101550f9068d2a5ef0b10ba824e4c5e84b91c7ebc28f0e18"
   },
   "/blog/plywood-optimization-kerf-grain-offcuts/": {
     "lastmod": "2026-07-01",
-    "hash": "4eadb9dbe8473eee0b35b18b7a49e63486418fa1fd6d4c5306d3124694a415e8"
+    "hash": "c6dcd1d12111f8ddcf6953c31693b681a35a1a80c8adaeb328c2b5a1d420b097"
   },
   "/blog/plywood-paint-grade-vs-stain-grade/": {
     "lastmod": "2026-07-01",
-    "hash": "bc3ca6aa1d02e4d0f8b804aa0717fc8b52937007fa13b8c8de450b5c1f010bc9"
+    "hash": "ede8b89a311f76939acae2c8a026bfc56c149dfbfc4cd9dae444b611a5a9e2eb"
   },
   "/blog/plywood-planter-bench-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "ad44dd32575f265c9857b941ceb0d919e2e425b36043cf0dc6792163985690a1"
+    "hash": "63aeaac0f5bd275b288be11fb534711477670c4f9ac51ad06a45dfcef5e9aecd"
   },
   "/blog/plywood-platform-bed-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "b38db05cb78745799fadea2e731268d9607944c29463fbd222a9f66ee73f221e"
+    "hash": "b3d66bb8517dee9ce09c151942c1ad72e35e31c0d8c19c59aee2b907a060686c"
   },
   "/blog/plywood-project-cost-estimation-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "deec5075c44be68336f1d57fdd78ec7ce25c7c68a6dcacce8f96535febdeefe9"
+    "hash": "5dfa2e20ff712eeff03dd2db5a9a658025223fe94b1a25c66ddc164dc6c52780"
   },
   "/blog/plywood-room-divider-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "e6557e3225670093983815d16a7697cc30e29ab403d2ba0f6442db1365fcca42"
+    "hash": "08b5bf050391df9b50e7142a2d9bd28d2528684203a901108a540f77d8e8f534"
   },
   "/blog/plywood-sheet-weight-and-safe-handling/": {
     "lastmod": "2026-07-01",
-    "hash": "0eb84975eefa83d5d68ad6510c4aa794f14d75c9c6b6613657117d28b3a39d1d"
+    "hash": "4b1f1109f1de5c0992fc20362e872b269e6690fedc38c1702b3e35f5af85a96c"
   },
   "/blog/plywood-shelf-cut-list-calculator/": {
     "lastmod": "2026-07-01",
-    "hash": "aaf6c95ecc4a88d1101e268f072fc70f2af624bd2aed6182630723790f3388f2"
+    "hash": "c8afc9466383d6e7f5ed477fee46fe2ed802153635239b7b4f8d5e52d2876519"
   },
   "/blog/plywood-shelf-span-and-sag-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "1711470907701310c03ebafc70ea78cb29861980aec074fd4e01a07a18d82a52"
+    "hash": "0c17c25926cc3f4bd2d2f0cee5865675e316b4f2c7b77b35bd292805a3ef722a"
   },
   "/blog/plywood-storage-and-flattening-tips/": {
     "lastmod": "2026-07-01",
-    "hash": "5410654dd3dfa19b2c5907b82cc11e91b1eaeef4f2477d6536b19db46a2ab401"
+    "hash": "65911d38619821e6dc854c654a21d530c4fc31356789718b5ecdced06332f8a2"
   },
   "/blog/plywood-storage-and-keeping-sheets-flat/": {
     "lastmod": "2026-07-01",
-    "hash": "541a1ed3d544d55b9c4d3cb27ff8ccf19f407d629c7aa568a68236a030e6ac9a"
+    "hash": "41731b1f990d097bdf6abbdb4e12542eb890580dd58e2c665a3f352cc6ee9037"
   },
   "/blog/plywood-thickness-actual-vs-nominal/": {
     "lastmod": "2026-07-01",
-    "hash": "add49c0ed4e42a36251fbf02c326aaf30febcb1240524d12301a02df9e018a62"
+    "hash": "b7b962999992f20692af9453a0e5fa13df07754f0c8873a07dcf56c6a21e5781"
   },
   "/blog/plywood-thickness-chart-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "66e25c9f821488535eb7ecc5bf6fa73ce8d0488221e714b5fc57fbf374eb071f"
+    "hash": "cebb7bd93cd75aac2dd8c68d481d70fc83149640005588b57559a04c32193ba0"
   },
   "/blog/plywood-thickness-guide-for-projects/": {
     "lastmod": "2026-07-01",
-    "hash": "1ed5c0a87ee727d72060db744d985c191520f4046d81f48dbc58c5c7de584f9f"
+    "hash": "3e64721c3fc55356034fd8a162ecefb45d94eda85f6cb2e698552afb16676b0a"
   },
   "/blog/plywood-toy-box-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "fedbbe7124332950a3e36d1c2662a9477143893575bcde061d3ba831aafe4030"
+    "hash": "cd3f6529133e3b5311b843c41e52b4c34b7d0ac44fe3ab20f497d81cdcccc74f"
   },
   "/blog/plywood-vs-solid-wood-for-shelves/": {
     "lastmod": "2026-07-01",
-    "hash": "0c557a9c8428c3ec31089fb60f3fe471b9ab45bec3967d32c479ec3c3ed2350e"
+    "hash": "13ca82b0c1a6e70e1a81b6fd33726599b183cd42e47100f73d9e7acf1a6319be"
   },
   "/blog/plywood-waste-calculator-vs-optimizer/": {
     "lastmod": "2026-07-01",
-    "hash": "3a594588124acee0940af06f940eaf8a7dbadc0d4bdb2a4016c42d4f263087d9"
+    "hash": "e14a2ccd5515609a8ce922d6b2fdedba1e9779c9403227f57049b36091acbf2b"
   },
   "/blog/plywood-waste-cost-benchmark-manual-vs-optimizer/": {
     "lastmod": "2026-07-01",
-    "hash": "c83ec349648dccad485e9ad8c5bcfb2d5f8a215060f0effa805bee7bd02f77a7"
+    "hash": "16c70bb73da0490381da0e45242ee98266647ca60db5bd343e9a8c3374deed0f"
   },
   "/blog/plywood-workbench-build-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "cf48fada3fc0392f5919d03a70572eb1b31d7c8a2413fc3224d6083d62125253"
+    "hash": "49f7281e567df211fa0fbbf8f1782008fe48063bcb3a03862d0c41ac9ae954c8"
   },
   "/blog/pocket-hole-joinery-for-plywood/": {
     "lastmod": "2026-07-01",
-    "hash": "30adfb122f10213651526dacc7b2465c432597edff31e6f439506fd9d23b0d90"
+    "hash": "c84d14bca3101812aa8280e39ab78e24743467358957af2b982633ed77e58c37"
   },
   "/blog/pomodoro-habit-planner-focus-sessions/": {
     "lastmod": "2026-07-01",
-    "hash": "dcbe9d16a30bbce03628983d288f7009ec770d22d3a754d17255b7de7c975e77"
+    "hash": "ffb6cfcb27c57fd385d35b3b7cb9b60a1544a37840060096760818d0e03395e2"
   },
   "/blog/porch-step-replacement-measurements/": {
     "lastmod": "2026-07-01",
-    "hash": "d910af119d0f1c3d7d534d3f9a0f494d8f5a3fdcf5b9f6ccf7f416b961c5e110"
+    "hash": "ec636ad3df22b80275c750d0f58f64991b0abeea4f4064e615e0a4de8652287f"
   },
   "/blog/practice-tempo-ramping-build-speed-cadenza/": {
     "lastmod": "2026-07-01",
-    "hash": "39881830679efacf8447f52c397575d5bfc190dab916da841e2c2909c3fa3f16"
+    "hash": "5374b2036c48b5d8ba7a0c7956243568d5067a95a6fd1bca4375e130cf44ac2a"
   },
   "/blog/print-pdf-documents-iphone-airprint-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "0dbf342b62399bcd162e5ab15057c8e8ba02368e2338d292f288d51e9ffcd788"
+    "hash": "59ed7648617d72ccaca0217cc8c8030d99d4a59dd89565d4ebceae883d4a7506"
   },
   "/blog/print-photos-web-pages-iphone-layouts/": {
     "lastmod": "2026-07-01",
-    "hash": "475141a8082db35189ffc5f771ce6b521485e9ea4397d21e52f0c444c8da3d22"
+    "hash": "26143f18b4858ea19d5da6d2b87ab0eb846a09476fe8bc39d3674623a84fe1fc"
+  },
+  "/blog/printer-app-page-preview-before-printing/": {
+    "lastmod": "2026-07-01",
+    "hash": "865cdbffc1960a6cf21c6f494b070200b4a430dbe777d65acb152cb007a3e44e"
   },
   "/blog/private-clock-app-no-account-no-tracking/": {
     "lastmod": "2026-07-01",
-    "hash": "c9d36d2049db0d301e34b2826e4b2b20292ca1e9afcadcae9299f5dc053998ae"
+    "hash": "dcc2cbb115168270c419c7b35a41ec29a7b6d794c1346c206c3d81b366bbd4c5"
   },
   "/blog/private-expense-tracking-without-an-account/": {
     "lastmod": "2026-07-01",
-    "hash": "1c480ac1515a56b0b577824be0cea0ac1540013fb285fd7db28f50f1790fb7c5"
+    "hash": "a0e0e14155ea40ea8662995f7f0f5224078a266cee4a34492f438460abcb8b5f"
   },
   "/blog/private-fasting-sleep-tracker-no-login/": {
     "lastmod": "2026-07-01",
-    "hash": "79a5878386aeb8e2b77e748a528c722592fe976c0e777ab12236b8673e333505"
+    "hash": "d4cb23ed945a42ba6629bc75a1ef1668524e9399ab158db7ae04bd9f23a535d8"
   },
   "/blog/private-interview-transcription-app/": {
     "lastmod": "2026-07-01",
-    "hash": "566c5fc41ca8b498962aea091d2576cad5ab7e5c134171ddd799bfa41146b34b"
+    "hash": "dff4f1bd6eacc1a305d372d7ce91242198792566cee622ba07fa685c58c39a0a"
   },
   "/blog/private-inventory-csv-export-no-login/": {
     "lastmod": "2026-07-01",
-    "hash": "e4d29fed780df03c8e6330657f03e4ae2ca9687f9d9b562974267fbf6b079df8"
+    "hash": "1c14792ecc6bd9adc3d643e9410985930c4307ab0a8bdc570216081cba91bed5"
   },
   "/blog/private-iphone-storage-cleanup-ai-scan/": {
     "lastmod": "2026-07-01",
-    "hash": "c71413d8f7108b7c760440c45135b7a35481e20c5150c85355059a2cb71b7deb"
+    "hash": "a3af4343aa7605c50ff6135c8d179efbb6d6bd706f5b774eae00ab979ee95847"
   },
   "/blog/private-meeting-transcriber-offline-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "fea24f4245f8d35f2e84173081ac64782ae7e1433416787bb527898b99efe76b"
+    "hash": "6466db8adc741c65ed61f22d78fdbe11d6b738bf1ac8958a9d41bd800fb0be93"
+  },
+  "/blog/private-meeting-transcriber-speaker-labels-accuracy/": {
+    "lastmod": "2026-07-01",
+    "hash": "182d5bec793d5839bc556cba5a1929c0c2925a79cd47e912979a6f8893adf237"
   },
   "/blog/private-mood-journal-no-cloud-upload/": {
     "lastmod": "2026-07-01",
-    "hash": "3e6497fa0742fc3e153f93624697f83b06a1ba7b2c3c9df0c735a71d67106166"
+    "hash": "7cac35a851aa9bda060ed91e4d0f53c07cf36a2a16ceecdbe0c5ce48a7b4b3d3"
   },
   "/blog/private-pdf-scanning-workflow-research/": {
     "lastmod": "2026-07-01",
-    "hash": "36b998a323a229ec1c9ca62d9a8ddaed6b4de77a6323e659b1cb6d3d14a37fe8"
+    "hash": "c32faa4672147cb9eb104c2c04ce1666a100ed68683dbdb69d4dc370bcb324e6"
   },
   "/blog/private-photo-vault-iphone-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "dcc1282bdcdec12db28f14c533c706f30f7e4e4b636615ae6351cd6a816d03e5"
+    "hash": "dad1bf45eb3dd4a809694414069dc4fae10d0f099c933e084159ac007fe21b50"
   },
   "/blog/priviscribe-speaker-labeling-meeting-notes/": {
     "lastmod": "2026-07-01",
-    "hash": "73b3403e6b6593ee3063470c4b68232ac69efa9cc8bae09abef44ea88c9bc862"
+    "hash": "56925a4c90d4d3d47b16a57bf67dedd85b4e7d4129208f38397f13fdeba3150c"
   },
   "/blog/professional-invoice-vs-handwritten-receipt/": {
     "lastmod": "2026-07-01",
-    "hash": "f1974653e38aa73e63f3011f0e7d819e4dd8b671db42c00e35235b0c246bbded"
+    "hash": "8f7ff03fcadc047ec0f1321d7b425fc276d34f0f0c2d391df8b1b10b34efbb3b"
   },
   "/blog/protect-creator-photos-private-watermarking/": {
     "lastmod": "2026-07-01",
-    "hash": "a7e85646527c4367f0bf46fe03232a7607f08e77a2acccf8735f66df2b125df3"
+    "hash": "b3d4494402bf1bc4a1a0eec4fe555c20664ecc18a64db8a6107c988644e7f4ce"
   },
   "/blog/queen-size-quilt-yardage-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "36a1a6efc61695f1938bec21d4f92017bb3a56da22e833f946c1eded1188d825"
+    "hash": "5b6652199401181f9df722617957798b868567167a3dc3817f33f83975f577cd"
   },
   "/blog/quilt-backing-binding-batting-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "15c9752d4b52a449dc43ce4a7328d0c11aeca9535947d4f580706209104a43d4"
+    "hash": "05d24f04afc209db2add4844afc1e4c6ecb9faf6b2f5750e5c674255fe8a2c4a"
   },
   "/blog/quilt-backing-from-leftovers/": {
     "lastmod": "2026-07-01",
-    "hash": "bc89e01565a5348777576e7c83cc0e0bb158f2175be73cdd430f9643acc8e628"
+    "hash": "4e6a937c6082688ac9ecdec94078df4c778539f7b0455b24ed1d41caf37e64cc"
   },
   "/blog/quilt-backing-piecing-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "7a555df83adf3af4007c9d60f0d1becc78d70e6f3785aa8ebf61e6f40f5bd0de"
+    "hash": "b039ee2a22984683b1a4d4ceb90c22f022dd0f3e9b805acb03f48908ac3fa9b5"
   },
   "/blog/quilt-backing-wideback-vs-pieced/": {
     "lastmod": "2026-07-01",
-    "hash": "909a4cd7e59b96399843f3f7f8a8e39ed08b558b50ca151fa07ceff8637336dd"
+    "hash": "9e3044e5eb341aa02db62c2fc4c9084825c4b4a4d149dadb4f9e8dd13054f061"
   },
   "/blog/quilt-binding-corner-miter-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "18aeb118b14ded7d91151c2c657b213217169fc81a16b33306856beba7ea77fd"
+    "hash": "44c1545112a95b9b8341aaeb03d659f3a6a50fd5a4468960e0b18a31d259ba1a"
   },
   "/blog/quilt-binding-strip-calculator/": {
     "lastmod": "2026-07-01",
-    "hash": "42121d5847fddea328e4bb82ef2b2eac400bdf60aeff4f566fde9a7f312b2906"
+    "hash": "5059e5d0583e494754243a4b80b73c3afb4eb810e92b671a938719539ecd04b5"
   },
   "/blog/quilt-block-resizing-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "bcacbaa131c208abee31b53b729287ce85dd6170800ba21ba89e7f6fa692d8da"
+    "hash": "26945156b09e2527c44d56ac4f9221424a2d52d652c9392611d7c94326d28197"
   },
   "/blog/quilt-border-audition-color/": {
     "lastmod": "2026-07-01",
-    "hash": "73777786ab4296546f3025fb48b06ad251978b1f439fd1e82e2ef6cc67c5522e"
+    "hash": "45c6869939a5f560a6868c00dcf8ded3035a670b511556678757874d39e574ab"
   },
   "/blog/quilt-border-math-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "d418d9dbe1c43976b2bd7c3b4b589abd20c27644a01ecc9b13b2361f5492d77b"
+    "hash": "e809303bca8bfdc4b069923578bb50bab86c348102ea34358526c32db0b381f2"
   },
   "/blog/quilt-fabric-prewash-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "0be3704d1df36491f910ea858ac85da0e8664b127b867979a603946491b220a5"
+    "hash": "2084675169650ea4ae46fc3e205cc717fae32e2140eee0966bb08df099480777"
   },
   "/blog/quilt-fabric-stash-inventory-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "0f1ff32bc9e1a2c7e267443ec1100544e7dd0ea68f955a312592dd46435dedbb"
+    "hash": "59ada5c4f438548c1a15305ae259d76eed252a0c44116c85c1f5845f6c94fe80"
   },
   "/blog/quilt-label-and-gift-note-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "30c896216796c668af7486b5d3208f8a97961b863c27de3437651d8ee83c31d5"
+    "hash": "09e5f185be6cf5cccdf824b962b0f65f8fc6db3ebe6ba51a37ecec834ca1e521"
   },
   "/blog/quilt-pattern-repeat-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "69659007728b1bedff3ab90ad41156e867d41c711c627cc81f1c4e68e70e0aee"
+    "hash": "9329355726e88007a5a0b5f0a44a1e15abac9f1d1ef77afad6c50537e192c1aa"
   },
   "/blog/quilt-project-budget-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "23a9fd490ab5edcf52f9df8471b9e853ab5e142253b32fa6ccf79cf17741bad4"
+    "hash": "51f55ad4df1d4a5fc12054121410678a88d032a014d797af86551029459986e2"
   },
   "/blog/quilt-project-tracking-from-sketch-to-finish/": {
     "lastmod": "2026-07-01",
-    "hash": "75211d2cdbf981623879638710ef04b06fe89af818690c6ad3860dc889bdb788"
+    "hash": "128f101c9a1f99b90336059db18e1bb3e5cf4bd398b6372cb145814b53b36316"
   },
   "/blog/quilt-retreat-cutting-checklist/": {
     "lastmod": "2026-07-01",
-    "hash": "770407ad46d08bbcd656abd59bf5b1b080ba30659c279bfdf5c3905d32550360"
+    "hash": "bc52129feaad150e2d88fadcec949538c92aa5be106f95ccd61086db23d8fb63"
   },
   "/blog/quilt-row-assembly-tracking/": {
     "lastmod": "2026-07-01",
-    "hash": "b0cc5300b727e2fe4151b96a62d4441b0c011a700fa2ee5286260f81a129163b"
+    "hash": "7bfb3215a87ecf5bd6d44eb0a2f2d82ea0f4e8a19f480d536b288d2cbb3e9f23"
   },
   "/blog/quilt-sashing-layout-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "7e025d4bd7a594dab3fcb359440564933bf4b0e9d99f73a66364a7a53df28f98"
+    "hash": "444a4228601a96f4e096ff0305c034f3a01feab80b5125f5d327abfbdf7a4afc"
   },
   "/blog/quilt-yardage-variance-research/": {
     "lastmod": "2026-07-01",
-    "hash": "58bb6474e4686952a0970a85c8630ba3f3de29e0e9a20036284b907b81e15554"
+    "hash": "156d7ef5d3d6b761f4891b591c1b78d111cef2284be6dfb9ca87b905225f18eb"
+  },
+  "/blog/quiltfit-comparing-two-layout-options-before-cutting/": {
+    "lastmod": "2026-07-01",
+    "hash": "19eaa99429cf2a0373fd22331eb3ba01dc0e07f66b7b1c8ef8a3d035524047ed"
   },
   "/blog/quiltfit-digital-quilt-planning-workflow/": {
     "lastmod": "2026-07-01",
-    "hash": "6d7d826478622da25a3fffef939d56b3c12495bc8e8c27980c352d9e8158c3f6"
+    "hash": "1ee4bf99e4067e83bbaa27c6300c3fdf0e7dd72df34527da923a13d322fca0db"
+  },
+  "/blog/quiltfit-donation-quilt-standard-sizes/": {
+    "lastmod": "2026-07-01",
+    "hash": "b83930e5e7989568edb8133e6812b4ce1c53aaf44f729b11845da00a2ef5544c"
   },
   "/blog/quiltfit-fabric-shop-decision-workflow/": {
     "lastmod": "2026-07-01",
-    "hash": "33cfa255148d6a04859ba799b6e9fed243265ca8215cc2754be9fc12a52d4b71"
+    "hash": "6e0d3b4061e013660a950fd6715ab24f17933d9969188c40f1589c1990bcdc95"
   },
   "/blog/quiltfit-first-baby-quilt-plan/": {
     "lastmod": "2026-07-01",
-    "hash": "939d547d28a1b56089c9007c361660491c4c91438c998686bef79b985a8d54a2"
+    "hash": "6a1a77215e567bae13756b712ac053056e000e7bd8f9668c092f00320811cc0b"
   },
   "/blog/quiltfit-flying-geese-wall-hanging/": {
     "lastmod": "2026-07-01",
-    "hash": "f1fde5d9b9e1d31bc7f695f6b5a04384fb6490df0309ed0aaa0ddfe7ea648a0b"
+    "hash": "05ccccfa97510b0380353711abbc4af15c68c699b3b4bc3264bf3901e162680d"
   },
   "/blog/quiltfit-gift-quilt-shopping-list/": {
     "lastmod": "2026-07-01",
-    "hash": "b1234d809007bf5540c2fc4fe7c9dd057163351249b48fb6d114b148c967ae28"
+    "hash": "c976fa3bfcebb0cb95fdc40d37e8431cb24648e33d3015873fce702433e3f51e"
   },
   "/blog/quiltfit-guild-challenge-project/": {
     "lastmod": "2026-07-01",
-    "hash": "28beea451b577e469911036e780621991aaa2f3da901cf8f2a725f93909612e6"
+    "hash": "512b92a926228ebf60906c1fe3ce214cc794b5eb53264627fb9bafa9c6f8b291"
   },
   "/blog/quiltfit-half-square-triangle-throw/": {
     "lastmod": "2026-07-01",
-    "hash": "93e0cdc5344a4f1183ac77724659cd4002252d56d1a4c6f3d90fe9b2d650b566"
+    "hash": "66bf12f2ff14d1ffabfdd34714fa295b9d7f544747f2ce07105527bdfccb7a1a"
+  },
+  "/blog/quiltfit-improv-piecing-still-needs-a-fabric-plan/": {
+    "lastmod": "2026-07-01",
+    "hash": "fe551863a4151a6fe55ad2a313bcdd35c4cbf561b2fafa6136cd5d63f8476a0c"
   },
   "/blog/quiltfit-log-cabin-color-study/": {
     "lastmod": "2026-07-01",
-    "hash": "598e680607f07ea8421caff332c39117bde4a34956ebcb35478b2aae573aa3d8"
+    "hash": "93a7c2db7d1539fe4ab7f0589fb7302f80575e5e6ef4b33f66350c744a7c901c"
+  },
+  "/blog/quiltfit-planning-a-quilt-along-project/": {
+    "lastmod": "2026-07-01",
+    "hash": "6f8c1ad4eba7e78b030c0636231ee5a768a97fd4c94bb749fb62530e589cd01a"
+  },
+  "/blog/quiltfit-precut-bundle-planning-jelly-roll-layer-cake/": {
+    "lastmod": "2026-07-01",
+    "hash": "8ecb42be0d0af445b8c3a26862f990951d037c8697b61dd45b6b170e366d7508"
   },
   "/blog/quiltfit-quilt-retreat-prep/": {
     "lastmod": "2026-07-01",
-    "hash": "514875d753fa22969f9fead2f3efdd86b47f7702459eccecb40af2241be0846a"
+    "hash": "7408f3bfe23d545dea8ecf1df7885b4ff0758b45babc3c9ef11c4ba26b62ba86"
   },
   "/blog/quiltfit-restart-unfinished-quilt-project/": {
     "lastmod": "2026-07-01",
-    "hash": "2b0e9e88740dc0e31186b0304bd0db805fd381509f110cc131882298ecfbae73"
+    "hash": "e7e42a725cc45f5c717ca96ed33ef145af4bcd93c370d19a58f283181b7599ff"
   },
   "/blog/quiltfit-scrap-quilt-from-stash/": {
     "lastmod": "2026-07-01",
-    "hash": "6b1163ede055dd7536f16762ed0f9d6b3ee9c3030efbf1b1c9f81c3fa84747d4"
+    "hash": "cc99c500771fe1bfdb12fa0f04cd93bee0774f8bfe824a301f0deefa4294e47b"
   },
   "/blog/quiltfit-tshirt-memory-quilt/": {
     "lastmod": "2026-07-01",
-    "hash": "185b650516773f3c7c4f213747394335674a4663b1c1dba73ed106eb170f2053"
+    "hash": "9256de95ad9a7e4e8eaff86feb7d9ce8b4c903158bbb5ae0a00b49b30b332dbf"
   },
   "/blog/quiltfit-weekend-table-runner/": {
     "lastmod": "2026-07-01",
-    "hash": "95744a032a276b1a968a0233100093fbf212709ca2860428b7a14448d50b4179"
+    "hash": "8b2aa03d0c33391b269b200725f5694af9ce18eb409a8b670ee1e98b8fcb5372"
   },
   "/blog/random-choice-picker-app-daily-decisions/": {
     "lastmod": "2026-07-01",
-    "hash": "ba69de393af3d32fbfaad824a586813e0e3804a28def3f9135443a209b3e79a2"
+    "hash": "53b1d445757184f7c4f28bab0d74d0686902c57955332afbbc211f5509abe60a"
   },
   "/blog/reading-a-cut-diagram-at-the-saw/": {
     "lastmod": "2026-07-01",
-    "hash": "608350338fb0f765de1b2eb0e3803a65b06c5e470cb33bb40b4a121568ab610e"
+    "hash": "ec1a382d51997e8947e42cf700d4c7a3fdd3534582b16ce133ba5bae09365c7d"
   },
   "/blog/reading-a-cut-list-diagram-for-beginners/": {
     "lastmod": "2026-07-01",
-    "hash": "85e113358f04bbe78547f364afb491893e8125ddfca4002156781dac19a9eed2"
+    "hash": "23add67ff77e3bbe4e3d1813b33a48bd0c6cce4e5bd7f790ba82cc5213172361"
   },
   "/blog/receipt-mileage-recordkeeping-research/": {
     "lastmod": "2026-07-01",
-    "hash": "bb2c3f194cae2ae8236e663943d07a7dd93ddd60c9e32e53de796e4f89102b4d"
+    "hash": "83021d48ad5a75a3b4f122bef6b5905ac9b14247480c6441e0f84d480c039d88"
   },
   "/blog/receipt-report-pdf-csv-private-records/": {
     "lastmod": "2026-07-01",
-    "hash": "e5bd39e481eaf3a49481bed4d50393e3e3867c192bf6f5089eedfcf0e3fbf90c"
+    "hash": "9e3079b38e553d7027432fd5f83bbfba503d3858b941d4aa8ad76265a9c5255d"
   },
   "/blog/receipt-tracking-for-contractors-and-makers/": {
     "lastmod": "2026-07-01",
-    "hash": "b54ccd13eeefa782d1dd4b1e5e743072bd47d0f78900e196bcad996267ec481f"
+    "hash": "fc9f0dbfab74a51f45ab58f72cff6eebd8fe79facf3b28a1fd18dc4bee893ba6"
   },
   "/blog/record-storage-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "c0fe87724d8f9ba3bcb88ba27be5ebcc7f97ea43b52511a6b16a21dc06ee4b39"
+    "hash": "ac3ade2e04f097ccfecdaf701c8725ed762ab4ffbbcbe009e8c5a27e1438f3d4"
   },
   "/blog/reducing-cost-on-a-plywood-project/": {
     "lastmod": "2026-07-01",
-    "hash": "739f769be2bc3cb019f32f4ed1fbe55be473180957f1505a8ae9c593460f35b6"
+    "hash": "7e4692a8b92493848eecb13ea6f7ef5dcd5463d6c75dc19b8c3c767f399f5c72"
   },
   "/blog/reducing-sheet-good-waste-on-small-shops/": {
     "lastmod": "2026-07-01",
-    "hash": "d7e53dad0b85fbe395c1d12a14747dd38b5e501c99ada7ea318e09099cfcf09b"
+    "hash": "d9ebaa55d10e7d7bd6657666055fe90d47bce5ef22f3a82a6a4f2b2305e7cab4"
   },
   "/blog/reference-sound-level-meter-basics/": {
     "lastmod": "2026-07-01",
-    "hash": "e2e1612e445327ef06b8f95305fa8866d53bc7d22baebdbdbb2102543084b262"
+    "hash": "b6b71d3e3b4f01bc6674139d6e1d12c47a764c5b8b39819ffe82e6d3bc24213e"
+  },
+  "/blog/ritualix-ai-habit-plan-vs-diy/": {
+    "lastmod": "2026-07-01",
+    "hash": "348798c7ea3adb91ae1f92265780f1434ba0f0275822b615d0e13d6838afa648"
+  },
+  "/blog/ritualix-widgets-home-screen-habit-visibility/": {
+    "lastmod": "2026-07-01",
+    "hash": "eb52833caa0e36c7cb166bd37968ad3fae3feb32f80f4910ea279e3d672eaa29"
   },
   "/blog/rolling-shop-cart-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "a20097ea7301b63f844feeea9b67d44fdc0e72b852c478364d266dbbe836da88"
+    "hash": "49c85cea42fe4d257f0da281e1f9b1ac44d0a157b9704f78c17ef02b2e704900"
   },
   "/blog/router-bit-drawer-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "c27f7f99bd46a09e9a68219bf4f13626f75cca96caed92cc527638d0954ca00f"
+    "hash": "9744c8dddb319fa8b05ba6690e0912f78c6b9a983a5c428590df33bd955d119b"
   },
   "/blog/router-bits-and-edge-profiles-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "37d7eb79dd529d1bb4d2e25d367b99357fb64a1ab1d0ff349193cbb9d6890387"
+    "hash": "7e2d6977631f56fa7a5b7e6b83aad4b1b66eef0372b9260c7b8a3376ac946af4"
   },
   "/blog/router-table-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "220991977aec11a2f522ab6cd6c6aae3225c92b9e7563bcad8130b0c523ae199"
+    "hash": "48d3e788fa97f95cdf51f6a213a99f2cb41a8e5db898cb410ddc31b76004c8dd"
   },
   "/blog/sanding-and-finishing-plywood-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "1aa5c1897311634e25f81552ba73ff5bd60cf1eb4cab6f6b69fa4441c205383d"
+    "hash": "7a337096804da9a4488c6f0ec394317fb966789aaba61279c5c42f5ba4498e76"
   },
   "/blog/sanding-grits-and-sequence/": {
     "lastmod": "2026-07-01",
-    "hash": "dca8bb1617b6be5e7b065ada95a27abbd7969be0295dbc0ae010a595901bbfa9"
+    "hash": "0acb41d768f0eba9347e266186a2fe13f8557d9fa0c943aca5f86603106dffb0"
   },
   "/blog/saw-blade-selection-for-clean-plywood-cuts/": {
     "lastmod": "2026-07-01",
-    "hash": "abef889cf3100a5f2c66cda550c5ca7d1e12b031a528035d0d7d3685e57a9c43"
+    "hash": "9b2a97bc8a3bda39fc64055bba95e81e09b66d84d6835452bd06b7a2c606ed9a"
   },
   "/blog/saw-kerf-waste-by-cut-count/": {
     "lastmod": "2026-07-01",
-    "hash": "96a1153e8d0f7fb97f6be18c29243895ba4762c2dd0965bbd2b939c72718f81a"
+    "hash": "a8fc3e2b43a2425df455629e8de5629351fe9d84738f055d63aa7aacc300e807"
   },
   "/blog/sawblade-tooth-count-for-plywood/": {
     "lastmod": "2026-07-01",
-    "hash": "32f58a9ce815cafd42c4a97cd79ef5f832b3a920683e22bd2409dd8a5994a6c5"
+    "hash": "4ef551aff3082e3f7fbf58b4df299eb9733267d5087b12f90dfaaedf3529dd2e"
   },
   "/blog/scan-receipts-for-tax-time-all-year/": {
     "lastmod": "2026-07-01",
-    "hash": "96c2c884c8928570017fa53dc0f3ddbf194d49325e72eeb08066dc97a4efc72c"
+    "hash": "8081091ea0180fedf4915b40c724fda7ffe8b0c6d4e897cb665cb8b85a8940b3"
   },
   "/blog/scan-to-pdf-workflow-receipts-invoices-signatures-lock/": {
     "lastmod": "2026-07-01",
-    "hash": "99325698b1a4e5669ba2fe07af24b57bb12429c52d43b9cfaf2936dbd9897693"
+    "hash": "220201ed7ea821e94952f36b8de0fdfea78fc55ddcec508f52be3b72d399eb20"
   },
   "/blog/scan-to-print-app-iphone-paperwork/": {
     "lastmod": "2026-07-01",
-    "hash": "caff8e0ab27be2c5f9dfea43e366fd342e50411e9d45e6c3229f2cfdb61c3d4d"
+    "hash": "b46c2e453d4423a471051d903277efe24f007947f82ce696e2d78b4368f4cb48"
   },
   "/blog/scrap-plywood-projects-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "33b6adf105aefc6cca9dd8c98f8337466921544d615765f34f26c877b28dd9b5"
+    "hash": "71d2dd458699e843af7ad8a9b308f2f47404ce3f2c67171c053ed6065f10bfad"
   },
   "/blog/scrappy-quilt-color-balance/": {
     "lastmod": "2026-07-01",
-    "hash": "d0fe44287bde84b80960a10ecd71cd5d62b730a077d7883861cb0812a1d82446"
+    "hash": "ffc358a3c165ae1e942ecce710e02438527cca83da20f71e6371f6d4ddf8b927"
   },
   "/blog/screws-nails-glue-joining-compared/": {
     "lastmod": "2026-07-01",
-    "hash": "d7e05cc7fb8580e41590ae377e02dcbfbc2b525ad9696f1938cfeb296c3488d4"
+    "hash": "3280b4f6b293bb318c8b295f59cce608c81c2516a12d00c0cabb753881121541"
   },
   "/blog/seasonal-decoration-storage-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "a13df4d773bc03eca6377a96ffdc04421d0edb3947e1f4ebd827023d10cd44a0"
+    "hash": "db7df12a6af7662b1cb636917ff334b0d9ce5138d00cda38fb4dc39917a4925f"
   },
   "/blog/seasonal-wall-quilt-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "65ba1cef4d1e7d3c6f8ee00d4c7b0b7b17e64859adce1c90727c4a0785ec1cbe"
+    "hash": "a00aa3515c5dfa12ea0de3e946582e9832630211a5f7eca198077434b2ce7c3b"
   },
   "/blog/secret-journal-app-private-offline-writing/": {
     "lastmod": "2026-07-01",
-    "hash": "6d2c949ded3dbd98f47294046c5d0a8588da59fc86cace43a290d5db29a674e1"
+    "hash": "37153234012ea7c6a3c0ee66d0b6bd65371cc940c2366ad7b995aff408b6c66a"
+  },
+  "/blog/self-leveling-underlayment-before-tile-layout/": {
+    "lastmod": "2026-07-01",
+    "hash": "9f24a80bab8a15c3df11a58253eedc15b510916daaf3916abd3b08b67e563219"
   },
   "/blog/sewing-machine-table-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "4fdb028440fe1b41c3f70ad3fa4688677c34ef43f5845ff855b2e6a669e9d1dd"
+    "hash": "68ad8eaa0d5720d506898d75cfd4b4f4ec229b482b11621d773910492e6fd2fa"
   },
   "/blog/sheet-goods-cost-comparison-plywood-mdf-osb/": {
     "lastmod": "2026-07-01",
-    "hash": "5af631e3f29e2ccd3c394cdc92fe61a3bbe18766e1cbaf9817f3ef7b2ab6d3f2"
+    "hash": "3e4f974bd25fb79aea69bb9d93f54e41207affd23fcc8941c622cb0d811e0f18"
   },
   "/blog/sheet-goods-delivery-storage-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "71cb2c4e5ba547fff0e96571509731151c530341559a167bd2b0e803d7fc3c34"
+    "hash": "f7e06bbb5a22ce861a41a7714677a7d77dd41372c2509c97e35748db08ab1497"
   },
   "/blog/sheet-goods-estimator-before-home-center/": {
     "lastmod": "2026-07-01",
-    "hash": "99f36592077e1b2273a183dea7961e3dbdeee6325e3e14fb0c2da34e22aa74dc"
+    "hash": "313e7825cdb52406bd9c715d9d7bea799afac7f5f0af175ad9ee5c2138418489"
+  },
+  "/blog/sheet-goods-shopping-list-from-cut-list/": {
+    "lastmod": "2026-07-01",
+    "hash": "29c23988080ac99a5bb3362a50b28eac70cfcc020671307ca6db2ae7d95fe0b3"
   },
   "/blog/sheet-goods-vs-solid-wood-projects/": {
     "lastmod": "2026-07-01",
-    "hash": "b55436f7199c36a1cdeda198cdbeffa55b305ff882d82a9f32c2f65e282471ef"
+    "hash": "7990ecb38433fbf21730f167a4aac0d6fb313d3a3adb3b59e9bb443644db63a3"
   },
   "/blog/sheet-yield-research-benchmark/": {
     "lastmod": "2026-07-01",
-    "hash": "43ac3471444189a8a09f5780e1a07d0b9ac894329fb4a2fa4db7eda1a33e0994"
+    "hash": "bcabf658402698aac3912215e709fe42aec6258cb9984530837a64b4a3d55bd5"
   },
   "/blog/shift-calendar-for-nurses-security-drivers/": {
     "lastmod": "2026-07-01",
-    "hash": "0b4a3f4c0e2de755118fd13e6f52fcd0af2ed5faad7704eae4660d05bc8d421c"
+    "hash": "7b8f7561701c5c18794b92886182ae51b3589509ddb15c9aadfecd6113a5ab04"
   },
   "/blog/shop-layout-and-workflow-design/": {
     "lastmod": "2026-07-01",
-    "hash": "332aa30b0dc2fa20cc7ff4199906c1b9b21530c971af55b3500d632f0ea3dbdf"
+    "hash": "1c473a23165b03113a4b82695c113c01f639d4816be36c299da5ce595bf209b2"
   },
   "/blog/shower-curb-tile-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "81c4dcf81e4eeeaeb98af27cb75c763b57dab19644ca14256d0ac2d4d81fc5ee"
+    "hash": "c4ce9d6d6420004406aeb86393f073af0f5bfe92f5dd272f7f9a137e344a8120"
   },
   "/blog/shower-floor-mosaic-drain-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "8a729a8bf7c6499fb55e4b4145971778e471d990932f8435582eec4f113b262a"
+    "hash": "8b0e5fbfb3d94e335270d2246009f14862c4ce97f3ffe3ae5728cfd3176ee271"
+  },
+  "/blog/signaturemark-batch-watermark-photo-shoot/": {
+    "lastmod": "2026-07-01",
+    "hash": "50ffcfebe32b9e6a906cf59e35842600baeb1f713de21dd8ae6a2b10a2401b4a"
   },
   "/blog/small-shop-plywood-storage-and-offcuts/": {
     "lastmod": "2026-07-01",
-    "hash": "7fff9672d0bd22b9ebac725b69b8384bee847c28df97a469820b0810325aff15"
+    "hash": "62046b71c14f4bf70c5b448b91b1c82bee3ee80a7acb0fcd98662e0e6a4612a6"
+  },
+  "/blog/snapcleaner-before-selling-old-iphone/": {
+    "lastmod": "2026-07-01",
+    "hash": "2a8509ef0ee5ec8fa217038fb86621fbc2b9a966d38b0fa019655af23a361289"
+  },
+  "/blog/snapcleaner-how-often-to-scan-storage/": {
+    "lastmod": "2026-07-01",
+    "hash": "a70b0394dd88af229557b9139137d74679d65dfd088a70b2bf6f9642fae6e1bd"
   },
   "/blog/snaplabel-ai-photo-label-maker-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "140173cbeed5b7b1669f5b3a7799049878680111e8c08c2ae0b5842374270d84"
+    "hash": "8b687da55aac887343d4bcc73a7656b54795c1207c97242a27cc6ea923318790"
+  },
+  "/blog/snaplabel-ai-suggestion-accuracy-when-to-override/": {
+    "lastmod": "2026-07-01",
+    "hash": "0ea9e49f40f2394fa53f7502ce09f401564f469c21a95216cb9fd939d543e7f8"
   },
   "/blog/snaplabel-batch-labels-for-inventory/": {
     "lastmod": "2026-07-01",
-    "hash": "3ed1ccfa65343ed6db68d60bb3d8d9b2d8fd7d4efcea5ff13762e28bc46f0af0"
+    "hash": "571279900b390e50c57412ccfde8989cac87359b8867f8966581ef0fe6890caf"
   },
   "/blog/snaplabel-home-organization-labels/": {
     "lastmod": "2026-07-01",
-    "hash": "6417609b7d2a3f3e9459dc1db0ac0cdc583e041b9ef347558a2e26236159f5a5"
+    "hash": "48edb4941554ee184d8ee2bba554ec876d1dbe8ec74a17faa3e61fb9fc5ca9ba"
   },
   "/blog/snaplabel-printable-label-workflow/": {
     "lastmod": "2026-07-01",
-    "hash": "0ecf568ebae97906fbdc43a6b08d8a1543a0101db1f4d5cab1b181735b2f2408"
+    "hash": "ed25547adf7f34e9e911cd5572d97300c8e4cb7ccae9bbf188fe9ee0d4f82e80"
   },
   "/blog/snaplabel-small-business-product-labels/": {
     "lastmod": "2026-07-01",
-    "hash": "0baaea201fe19e3493708c40eccd0ec26832aec8b9ef908cc904d4378cf53097"
+    "hash": "b973f50944f7d2ec9146b8bb141e58cc596d40d47e8e65ff44194ccbcbc7b39a"
   },
   "/blog/snapqr-private-qr-code-scanner-history/": {
     "lastmod": "2026-07-01",
-    "hash": "06397acd52dc77b7974d4a515009a9b2b350f31e553bdc086467a84f33bd6ef2"
+    "hash": "466fed1fde1c9186d4616233f3d014dcb88f0ceacb0ae7913f03cd47127b0df9"
   },
   "/blog/snapqr-qr-generator-app-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "0a66f3d183a81784357dc24653ce86c9dab6f222f90aea534bbd114b75c39d82"
+    "hash": "7432e08796aab6e9b35a0841c71ca6897e94d0478faf8ca469a83e32b300404f"
   },
   "/blog/snapqr-wifi-qr-code-generator/": {
     "lastmod": "2026-07-01",
-    "hash": "c2a1ae1f750929b0cafcaa18b46014115b7455d53672ed5bf2d8acc89026b774"
+    "hash": "1da02364eb75a27a4cf70173a40a8419e4687886f84643d9460ca080a69b99d5"
+  },
+  "/blog/snapreceipt-categorizing-expenses-for-tax-time/": {
+    "lastmod": "2026-07-01",
+    "hash": "18e75bbfd84ba57a00625bce7535fd0b3490a9721ca048fd48c1bf28d2f6f59c"
+  },
+  "/blog/snapstock-product-photos-why-bother/": {
+    "lastmod": "2026-07-01",
+    "hash": "7a4459574ab9b33b498e5dd880e4ad112ce0208b3c86afe5dfe9d878a5a7dc25"
+  },
+  "/blog/snapstock-subscription-worth-it-small-shop/": {
+    "lastmod": "2026-07-01",
+    "hash": "70bc526276a87ba200abc6c9225cefaba701d731af6d9833bd5a09bce3ede3e3"
+  },
+  "/blog/snapstock-vs-spreadsheet-small-business-inventory/": {
+    "lastmod": "2026-07-01",
+    "hash": "591533ac0f2072cf2a67f7d39cda28840bf3698bc5ebe530c0ffdf7e2738be97"
+  },
+  "/blog/speaker-tools-subscription-when-it-makes-sense/": {
+    "lastmod": "2026-07-01",
+    "hash": "314d4d6074b0d0ccc56b91e4fb0ac3c3461dde8ae4b744a8d0a8fbb0a743bd93"
   },
   "/blog/spiral-vs-straight-stairs-space-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "a4a16b3c1b6ca8ba60be0aa41c7f5046796f1adc0ce5ed386a20e8f7b5abcbe0"
+    "hash": "f498525453405ec23f85cd6d7dc8f8e801b77db8f0100ea74c780744522bc2d4"
   },
   "/blog/split-level-stair-measurement-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "1bb27c8bbb4b6b4f90a39eaffc5553319ad776dab5c32844788d98c707950969"
+    "hash": "6ede139f89f3a210f5229caaef6831155934de094bc0859d617c12d12067889b"
   },
   "/blog/spray-vs-brush-finishing-compared/": {
     "lastmod": "2026-07-01",
-    "hash": "cfcaf44b465b2d503b0d306fc0d68bf9bc6479b4e85094672019b211a61375d5"
+    "hash": "dc17689333260229d27f6d7c1ab5aaa4729a1b3b32303f2ce6dcdb755926b11f"
   },
   "/blog/stair-baluster-spacing-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "7ed6f57f2a82f168d11a6caea801584f532ad7a76369e3879f43fe7e3adac17e"
+    "hash": "2f261cef76550ebbddd68c16d0abac8a8368c3ca692daad02971b3ec6688ae64"
   },
   "/blog/stair-calculator-metric-mm-rise-run/": {
     "lastmod": "2026-07-01",
-    "hash": "d7f924c62cb46d1253d62644d06ef64611ef473a49aa97408012b22265c49331"
+    "hash": "a86f4ba7ce1d9aa3a2912e7dcb016d611808d43b0e6f23939f21f53bf79387a7"
   },
   "/blog/stair-calculator-with-landing-multiple-flights/": {
     "lastmod": "2026-07-01",
-    "hash": "899ac7c28554626a48342bb81a784ac552ae7e2e4041e38f0600129929848c11"
+    "hash": "dd0384890f0df21469faffe6e26a845f6db7fcbf8d549a28aec0c4e51c046c39"
   },
   "/blog/stair-code-basics-rise-run-headroom/": {
     "lastmod": "2026-07-01",
-    "hash": "5c1a2b4b6a2b1a0b42c7052f7d6bf469daaaf108a9fef2fe87288eabb975da89"
+    "hash": "15957469ced6767073b7a01092af59dbe58dd24a46c6b31e8f3c72aa376b6f7d"
   },
   "/blog/stair-comfort-dimensions-by-the-numbers/": {
     "lastmod": "2026-07-01",
-    "hash": "bbda9abe8d75b38193046535bd35955c71efc9f7ce714b9c5cd6d4ef5cbe198e"
+    "hash": "aebb93909f455a98f839af75761e484d8b2a1e576616f3996cc8b14449ec72af"
   },
   "/blog/stair-headroom-clearance-requirements/": {
     "lastmod": "2026-07-01",
-    "hash": "b469527d3c6ed94ad5f83ba535d1d371ad08e6613b7eb5df33f5d1da4fdfa4c8"
+    "hash": "f64a1152d0f2d8671902059b85fa36e843565fd4d997724ccb38db46919f1342"
   },
   "/blog/stair-headroom-measurement-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "e41005b772312695fbb32d5cb204340cf57da8f213d3bb3295aa0bf824d45e9a"
+    "hash": "b01571831e64fa853943d07e7e1157bd6f5f9c4b6b85eb2403a3b1cf3b854309"
   },
   "/blog/stair-landing-handrail-return/": {
     "lastmod": "2026-07-01",
-    "hash": "284c644606dfd965c8596722448abf0e5b64b9cfe5c38952f5f6940c19e22e70"
+    "hash": "6a853d9449b0a0a8566a02cf61573df998bd761553fead7eab526ebdf1cff15d"
   },
   "/blog/stair-landing-layout-measurements/": {
     "lastmod": "2026-07-01",
-    "hash": "6d5941dd7162f58ebd81e1e4bcb4aaf061f1e0b4115c95ca287e41ef48f9c9b6"
+    "hash": "cfc9f9a62ecab4aacff0835a16072e3782bcd539232b33c1323c07b51d71570a"
   },
   "/blog/stair-lighting-placement-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "0b7d21093bb93590a045633c9680f335750ec618c64498f3bf91640d961ab996"
+    "hash": "c9c750c5892f354b5ff9c17c4bf0f68f14e2756d405497ab17c8ebba4704753c"
   },
   "/blog/stair-nosing-layout-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "a1d4392bb379245b1464004cdbccdfae8f10febbd80737d884b8baf28c667e41"
+    "hash": "9e9d2111f3ce7fa06e8f45b186235d4ba7a37ef021386f75bbbcf9e408481975"
   },
   "/blog/stair-nosing-overhang-explained/": {
     "lastmod": "2026-07-01",
-    "hash": "f5f90cc063f6b7d73b3ed62bee7a84afd9d252db5273f5a06eed286f1d77f297"
+    "hash": "ae4371cdc72b666c546f1c604ba709f782d29decb9dfca1ee3e5604d2d1ccbea"
   },
   "/blog/stair-opening-planning-for-remodels/": {
     "lastmod": "2026-07-01",
-    "hash": "1ee20ac1657c172f2120c80853dc473bc0ab2a2732508d34a397e271273772e9"
+    "hash": "bfc19f4d0b1ff4aef0cb756adccff1d95c38dc4e7a67a94f3f7da29577de2812"
   },
   "/blog/stair-railing-post-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "68d25d25e6bcf014b7e7b3c872b7d64f2ec93f853063a5147a91718381acdfe6"
+    "hash": "1deffe6747c2ad9e9610028d1c894ec3d344f4b13b0776ef0cbc4d9caa483f30"
   },
   "/blog/stair-remodel-measurement-risk-research/": {
     "lastmod": "2026-07-01",
-    "hash": "9913dc073ec95315d476efce90273449959a5fcec0230955e490855f8c4a8285"
+    "hash": "7864da1ee843029f160f4702241f2dec1e98e030a7756373ce1b770671e3925c"
   },
   "/blog/stair-renovation-budget-materials/": {
     "lastmod": "2026-07-01",
-    "hash": "d990f491d24b9ccbf6023d6464ffd3ec77442feb878dd8804997d6e85053f4f8"
+    "hash": "fc7515e5b3cc13d6eb56d7e5eda23730f867b51ea3f134871129c8e0c969d7b1"
   },
   "/blog/stair-riser-height-calculator-check/": {
     "lastmod": "2026-07-01",
-    "hash": "b9f268948ee281ef545f6c58455ea619adc17f41a4db50e104ed60d27f302ee8"
+    "hash": "75ceae14898e3958b83849dee6bfeb3684d429e7a4d61bc3143073115211c70c"
   },
   "/blog/stair-run-calculator-remodel/": {
     "lastmod": "2026-07-01",
-    "hash": "6ec36a944b5446cda1bf113e9ef5c3d4569ac2ec0d5a7f51014c8584efe06882"
+    "hash": "6ee29d8b53d55a472e300bf53189d4597243352ddcc917e2425dbba893097a21"
   },
   "/blog/stair-skirt-board-measurement/": {
     "lastmod": "2026-07-01",
-    "hash": "db946cccf3dc2bfd3fab07cbca0cf6f54a4b439617c264a38905928208f5d35f"
+    "hash": "70df39d1837e931ee58ad901f32eed161dd0c9f7e4d3ca7a0ca488aab30be24d"
   },
   "/blog/stair-stringer-calculator-app-for-contractors/": {
     "lastmod": "2026-07-01",
-    "hash": "9ccd9f57f0c5bf0f4268e9b9333c206562136d2765298dd845fe79249d813d81"
+    "hash": "60f146a8ff686d42c417a2bcf98b45955a11d02637421a009a9e1464dbb5a55c"
   },
   "/blog/stair-stringer-calculator-vs-online-stair-charts/": {
     "lastmod": "2026-07-01",
-    "hash": "d9067558321094bf762b2c74fe126fa405535b374a3e3c046950f4949fcd1d27"
+    "hash": "ea061eb416d63d0636eba1ea74dce36e80bf62bc7a8f17abf2b876fe5e63f0b7"
   },
   "/blog/stair-stringer-design-rise-run-basics/": {
     "lastmod": "2026-07-01",
-    "hash": "37e23df93086be243dc556cca0d299b5bbed4dc798444910153cec2a8ba67398"
+    "hash": "e946a7c821777870e84d8df2985c278556299b4493f5e38ed363347b25b17854"
   },
   "/blog/stair-stringer-material-and-thickness/": {
     "lastmod": "2026-07-01",
-    "hash": "f8886f1c3fd36fd47b5dbda09019e4589f06358f1da40a103278d379100196f1"
+    "hash": "812766218ad4b5cd93445580f639286b9b96f2e81511a0c035df13b6a4fb8bfa"
   },
   "/blog/stair-stringer-spacing-for-composite-decking/": {
     "lastmod": "2026-07-01",
-    "hash": "1f737544db6906f6b86a45f09317cdadbc7182337b1abb6173c0173d20c84c8c"
+    "hash": "62b56af8d658cc01033e3c866b442e232fc01730379c266a652f03ce8712037a"
   },
   "/blog/stair-stringer-template-transfer/": {
     "lastmod": "2026-07-01",
-    "hash": "b84cae553d1c424eeab41f291f8e41fd81f9a18255c13da1341cf95ea97e6704"
+    "hash": "ea6294850754082afb2a73b2c39bc7281e50d9e55662e26eae26fc95bf072a1f"
   },
   "/blog/stair-tread-depth-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "1b965259b5a77ac896ef07a911ab2fc73fd48a5b1c6a9da65585fed029d701ae"
+    "hash": "bdfbab3469683025e0848781e0dbf9f222d9a333d884e6667818fa48caa88aeb"
+  },
+  "/blog/stair-tread-nosing-radius-slip-safety/": {
+    "lastmod": "2026-07-01",
+    "hash": "19b1ec3ea1a3564553157272fce34a037100ba9b37dd012996cc51ca82543dac"
   },
   "/blog/stereo-channel-test-left-right-speakers/": {
     "lastmod": "2026-07-01",
-    "hash": "6afc7986cc0363ab1eddd6b49e46e83400cac609acf76be3f8e04e5d2ffe644a"
+    "hash": "a60cd927f8061e500e8ebc8ad18b6673e45f27d0d1e1343a9c05b5b321e87cd4"
   },
   "/blog/straight-cuts-with-a-circular-saw-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "5f3d79d80dd418e54f2848322588caa75b3f83259d7d3f323ba5c1b352ad94fe"
+    "hash": "cd934aa64752406c82f35d256284f5ec4dd42f1202fc71eca5efb1e44d5f48b1"
   },
   "/blog/streak-freeze-weekly-review-habit-system/": {
     "lastmod": "2026-07-01",
-    "hash": "9fa2ff915ed9233d841febd5a42021fd72d79c6e5d2f1153997f51c0b6991734"
+    "hash": "69ff9b7d54d1d0a5edd22538866d2c8ea626f744b5ff7304f5586a19dfdb4010"
   },
   "/blog/stress-ease-app-private-journal-breathing/": {
     "lastmod": "2026-07-01",
-    "hash": "8d07df592fb0e4b0106fcce86a2baeba929e93ff55938fe2f01033a729ab1e78"
+    "hash": "f44eaecac909a47a991ef85f0bc75d4da5d0448b188ca629e05f4c9b0ffb8499"
+  },
+  "/blog/stringer-layout-for-lvl-and-engineered-lumber/": {
+    "lastmod": "2026-07-01",
+    "hash": "6ab9cc8146eef1388d0f04e211c3fe2ee7716f20873ed032d1b3878420f826b9"
   },
   "/blog/subway-tile-backsplash-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "fcc3602e7f711029b418eee9bb24dc0f6a6d7bc8e3a621b53705d3f6241b74d5"
+    "hash": "c0ca26d5136606151e2ce516dd887003cda728b6eb6a2ce1e815ab39abe7b64a"
   },
   "/blog/table-saw-outfeed-table-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "6bf8d7633e557134ecbfd98d840b6ccc3cd98a2aa0e970bdae5d960c4de0848b"
+    "hash": "949793b1b9926a06ccc823e78b402169c868adf7b24b64b1133b90e1285a8107"
   },
   "/blog/table-saw-setup-and-safety-checklist/": {
     "lastmod": "2026-07-01",
-    "hash": "1cea7932a34e22b080ed628e50d62cbe147e44467b3ede2e12fe95e6165c9cab"
+    "hash": "6265994795d7f65500060bde1211f6685a6f9289328dea3eb649ac04ce040c3a"
+  },
+  "/blog/temporary-construction-stairs-vs-finished-stairs/": {
+    "lastmod": "2026-07-01",
+    "hash": "4d657740c9f61b48e375a74387913791d3e34780e161737b1d4ec0d58cf2e7a6"
   },
   "/blog/tile-around-toilet-flange-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "0fe395fa28d801bf2fb42d33d6e367d18c3d5d3ae71d9d5c64d0485161ee84a8"
+    "hash": "37f75e8661dfb58acda8f14d93a054c379f466112c96a62ef345747c28b29022"
   },
   "/blog/tile-backsplash-layout-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "94fb40f04383d9232134540c01e6f05bdb8680ac2aca59f3d7845c6312628e31"
+    "hash": "400c58dcc184039422305f1aece6d2ba99d3debff587565d59b21cdabdb4ce32"
   },
   "/blog/tile-baseboard-trim-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "dfa79decff798a00beb306f96116b0d5395e3c6565af7672eadb5b72970e4a11"
+    "hash": "27b94ff451e9e69ad56059b8306024409cf8e32d0af793c0a52a52912fc1766a"
   },
   "/blog/tile-cut-waste-budget-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "c64790a8dc4a5e4502624376b59eb8ab2efa4b0fee14de0f05f85cb254c07738"
+    "hash": "200fa08369ef3a6b56841be8e74b82ec56e26d92d5d375b4d3e09b3f5017c13b"
   },
   "/blog/tile-expansion-joint-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "820e6c9855665a8476d1388238b924f2fdf20d952842ccdfaf0f32ad1694655d"
+    "hash": "cb215b8e66ced74bf5dc3ac9ceac8eaaf11fc6547ce5fd95aa534972d45bdea0"
   },
   "/blog/tile-layout-for-small-bathrooms/": {
     "lastmod": "2026-07-01",
-    "hash": "c8a9b296db7da71719876c56ad254a71daf15fc1fac5723119379f952ed184fb"
+    "hash": "1c6664434a355ba262ec92731f7aa064e4636df90c7bf722a00b5344307fd5aa"
   },
   "/blog/tile-layout-photo-documentation/": {
     "lastmod": "2026-07-01",
-    "hash": "78240c71095b21afd8068f9d3e5e63a6b32926f3cc95f3cb8963486005c907bc"
+    "hash": "bad23fdf8267bfd8c80eaaa9da0e010cb171a6006bd9d7a930ec44b8e8f4829a"
   },
   "/blog/tile-layout-planning-before-install/": {
     "lastmod": "2026-07-01",
-    "hash": "88dd7977dee0d63fde3db3fd862ccd5993a4f0cbae6cb5bfba7d516e688f958e"
+    "hash": "ee5c665fad20855d59e8eb6e124907781602c02251f4ce8a31bf092f93001af0"
   },
   "/blog/tile-layout-starting-point-avoid-thin-slivers/": {
     "lastmod": "2026-07-01",
-    "hash": "f063cfbf089a4ba58cfa2bc5b04815afa593fe8a0851166ef90cef57d81b6c7b"
+    "hash": "07a3c12248fcacbc5307101008baa5f791f8623d25b84e44b79ace9fdc12256b"
   },
   "/blog/tile-layout-waste-pattern-research/": {
     "lastmod": "2026-07-01",
-    "hash": "1409d93844547678c61d475c016db3837b6824b0c8b3e61ea2fabd2440320d58"
+    "hash": "48cc6642c5294bb7a618ba8f4a6ea7908eb538f6623eff5d95849d6318a5699c"
   },
   "/blog/tile-niche-layout-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "5421c099ad1fe1fa0eefeb028d31550371ba51ea3f60d3a766a7e549679429da"
+    "hash": "b3bbaf27953ca81b21cad02878043fbcec039e9fc5cc68f12df2c4c3ef98f95c"
   },
   "/blog/tile-pattern-planning-and-waste/": {
     "lastmod": "2026-07-01",
-    "hash": "d1ac2d0ef13d9c4fc529c9de0a829e8f3a2ac094f036100cbc55d79510aa897b"
+    "hash": "f79d7dd13fabf7b89e91937a4d21f46d4ffd99fb9338514bc12e72a506d69619"
   },
   "/blog/tile-quantity-and-cost-by-room/": {
     "lastmod": "2026-07-01",
-    "hash": "26726bb8aa81547f7ab9e435386b2d8b1179d6f61859cf634e05ed6ac978eb09"
+    "hash": "12835784e454d0990525286bf88d49ace847f6a4122fbe80f3e438db0d7458a1"
   },
   "/blog/tile-shower-bench-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "e22dcce6571def101bf96f3fa39ba3228392e154c6c8ce8ff3870f652a6af48f"
+    "hash": "e55cdc0a2bfa084fdba166d874e8650a008bf3e87df4809aad370faeb67b1986"
   },
   "/blog/tile-shower-valve-cut-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "0059504cb5ea1d72896e37869c5acdc10c4f3399804ef0edff6792274a49ace5"
+    "hash": "632a1d63bbadbd2a81b10d2626f21101a9ac91b39b685e2a3f7d9a8d7b0095e9"
+  },
+  "/blog/tile-spacer-size-grout-line-planning/": {
+    "lastmod": "2026-07-01",
+    "hash": "d84c9c6b2b419287832ca6988162fd378e68779aeac357538e5c652d5485898c"
   },
   "/blog/tile-transition-threshold-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "b7225b2a116a2bf9f3b75b52364ab93270669fb647b777eaba914d64f8ee917e"
+    "hash": "c18b6e03bc8e0b896268ec4bd8d20a0b0c800324fb890df2eff2fa3b8f55124c"
   },
   "/blog/tile-underlayment-and-subfloor-prep/": {
     "lastmod": "2026-07-01",
-    "hash": "4ad8cbb0d80b29d5857eb8fedb2697876abcc352a90c8c239daca15daeced565"
+    "hash": "8fdd2d7a5fd0d3579d77b294cceb48bbc94f8fdb85088cc0b7799139d16ccc6f"
   },
   "/blog/tile-waste-allowance-by-pattern/": {
     "lastmod": "2026-07-01",
-    "hash": "feaed64c51b5f0cb526b23ff2598bf2bd48878c0e88cdddeec6be27f569a5ba2"
+    "hash": "a300581e6e471c1bb266c4f33c48d28cc9cbe90f56456f473f015143748ac639"
   },
   "/blog/tile-waste-estimation-by-pattern/": {
     "lastmod": "2026-07-01",
-    "hash": "5f1a987b0b6ba38e55c9c84e2b77e43339b6c8f6d9d003d6b6c5f95c69c87a14"
+    "hash": "e7fcc7ac72f3d403ee26394d396d794199d47839cea33568efd5c25c18baf53e"
   },
   "/blog/tinnitus-relief-app-sound-masking-night-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "3c2bde09b83fa714682b313abc54861187b72caf4753e508cea407d147a56cd4"
+    "hash": "f09f06b9129d7515db94190018916df8860c84daa7387cb5371600b596c4b56d"
+  },
+  "/blog/tinnitus-relief-choosing-a-sound-for-your-environment/": {
+    "lastmod": "2026-07-01",
+    "hash": "c7e2df0195d9da766f9cfd1f57c4235ff2460e16dbbfff72b01771dd8d751706"
   },
   "/blog/tool-maintenance-schedule-for-woodworkers/": {
     "lastmod": "2026-07-01",
-    "hash": "616fdf9e6a9e5165fa0eb4d55499690e2fc8408272cd8c2c78572da38488316f"
+    "hash": "84f2c220e8b9ca346c33e94051ccfab0d8859a13791902e4c8843e69d8a5c5cd"
   },
   "/blog/track-saw-plywood-cut-plan/": {
     "lastmod": "2026-07-01",
-    "hash": "8b3cbeaa474bc8367613334b5218f6d644ab247d15691e7edf236a5c26c71917"
+    "hash": "b6199ff47ae945179aec39bd997075ca9657f00fde65de9b5ce3571774d2b0d2"
   },
   "/blog/track-saw-vs-table-saw-for-plywood/": {
     "lastmod": "2026-07-01",
-    "hash": "df4f14ecb3e618f5b368893392ae2109b5f4d21f8300dc3e25f81a8ceec5e43a"
+    "hash": "724b0576ffd132c61d61e8081815962a2ae0e7da04760ec354481ed7945788ce"
+  },
+  "/blog/trowel-notch-size-tile-coverage-planning/": {
+    "lastmod": "2026-07-01",
+    "hash": "032533f258d4ce90511a4af636166578a580fbb5b2aecddeccee7961e5c685d7"
   },
   "/blog/tshirt-quilt-stabilizer-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "fcf279b310870c435e35012e3caedef8b62ea19fea7e2b7b2f2c3a0398952e99"
+    "hash": "7d2acd7c5c74871ebcd77c74e9414ee2acf89ab22165fc146c8658496e29277c"
   },
   "/blog/tuning-to-different-a4-references-cadenza/": {
     "lastmod": "2026-07-01",
-    "hash": "7a2d3ab2eba97f2d5654f96298685e04b39c3b1812b9ebfcd748fa39c80c4469"
+    "hash": "cf2325f4b6565c550169de6bac5805a485a5f5f8001b8721d217d028aed29ba1"
   },
   "/blog/under-stair-storage-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "8a71e3b0cab027847f6aa4b58811b9d7cdb90c9d4d6d187a6b8495dfb9acb90f"
+    "hash": "fe2ca88f9e976d74e5559774c6346be083f101588cae1b459a4e5328218c3070"
   },
   "/blog/uneven-stair-troubleshooting/": {
     "lastmod": "2026-07-01",
-    "hash": "758cd7538fa784b5a6a8d432067ffa8510a757a0c8e6f230d3b559efd65818e4"
+    "hash": "d0db5660c7a28d85d81e0bab6cb315fb55d46903e9ce95373fdc193db8022ac7"
   },
   "/blog/utc-vs-local-time-app-for-remote-coordination/": {
     "lastmod": "2026-07-01",
-    "hash": "119211641178a1b0333c67d94e5920a38f995231308e38964779379c38013094"
+    "hash": "3ccd0e2db521a5a889a27d96d5b61a907d0fc043451df14b50e30b9fbdc35206"
   },
   "/blog/utility-room-storage-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "d3464d2f2f4c6087fecac68b496bd44c2515ae34d2d780e1ba83a01f1454f885"
+    "hash": "b15995052aed8c3d5a9c45b8d5761eefccdc24e91ab40c7a2526c1dacbc47a40"
   },
   "/blog/utility-sink-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "b26acfda6ae1087d5f0231273702d462c345a9a5588e2eeb5a9f88371b29466a"
+    "hash": "b9109a89f1bbd486da1278990dbc56dfd4e2307321610c4b934b80d9f4fb80a4"
   },
   "/blog/video-compression-cleanup-iphone-storage/": {
     "lastmod": "2026-07-01",
-    "hash": "4b0166a02fd8acf6af86ba25894a874b357bdd4b0e4ea30361d3edc05bd2bf02"
+    "hash": "dffc31f8fab392cc8898ade85ca802220ad626a6b396f590ede82632b1529182"
   },
   "/blog/voice-notes-to-text-private-workflow/": {
     "lastmod": "2026-07-01",
-    "hash": "c21db0eadc4ba7630ea4244541d19344a1edbb9f69f75867b4a6ee6a6e702996"
+    "hash": "8d3b8ccd31939cf276fa23a06ccf802764274b6d36368a1547d8912abf966c4e"
   },
   "/blog/wall-mounted-tool-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "e9f42138a9f5b0bfa2eacc771eca5ae2739c91b4dc305371f876ffe474e2f4be"
+    "hash": "d9600c26caa4c8f1a37868b9e656d53c20d06d477ae49c1d04c2005527744d45"
   },
   "/blog/watermark-app-creators-signature-brand/": {
     "lastmod": "2026-07-01",
-    "hash": "cd9da9311558079ac7ab152e42d619210763e31e10f6963ef44fa6573bb17d5e"
+    "hash": "81288f2fa4668b73804f4af7a53f25295b98c20504952e23ead6ba31f4fb6bd4"
   },
   "/blog/weighted-decision-maker-app/": {
     "lastmod": "2026-07-01",
-    "hash": "746b550e40f0618447daa5c122e9e9fc15609a4ff8e7ac53e39196fb846f6515"
+    "hash": "d3e7eaf75e00dbb60365c72e50adc4d152fcd671c56d637047b26ca5ba645caf"
   },
   "/blog/when-to-use-plywood-vs-osb/": {
     "lastmod": "2026-07-01",
-    "hash": "9a7282d0f940dcc7d9953aac304a719198edfa4641c0089cb45b0f53f37095cd"
+    "hash": "ed569750fe4ce63048db8312143c2abf044ed12ee617e0f72604fca4e9f6a41f"
   },
   "/blog/white-noise-tinnitus-sleep-sound-app/": {
     "lastmod": "2026-07-01",
-    "hash": "dce63c6ca39ee854433ecd30425db444fd5f0390bb78b34f6c79ef478974937e"
+    "hash": "89fe171539071b5e8ab4984d53c9adae3bf2b66f7dfa53ed316bae11a83a3dad"
   },
   "/blog/white-noise-vs-pink-noise-for-sleep-tinnitus/": {
     "lastmod": "2026-07-01",
-    "hash": "b582e0c78556b81fc1f56057480f69361b9a82171c706c57f5ec6a94bc6787fd"
+    "hash": "2486e838d2fa229f1ccef45e2de6b32dacdc3a3fd9f2ef54b345b7d6d612f8b1"
   },
   "/blog/why-tinnitus-feels-louder-at-night-sleep-masking/": {
     "lastmod": "2026-07-01",
-    "hash": "35c9369849a47ba694bdef2b4734a4a857d430ccc2ef63002b64821f01413b91"
+    "hash": "e15d579951dd4b49ad979a562311d901bcecf9eb2fa4ef49afc36e67f01bfe94"
   },
   "/blog/wifi-qr-code-for-guests-and-businesses/": {
     "lastmod": "2026-07-01",
-    "hash": "5cbf4d02dedaaae0099ab9c011585adc37615f4914bd097418a61589328efd23"
+    "hash": "4c1a7fb29a73e145a65efb1b48126731bf571aa257b9a7b2aef7d36a4d2d36bc"
   },
   "/blog/winder-stair-layout-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "448da350e6a06476984f044784fe94c9b6bd3fc912d0c07f9848517f9f21c4a3"
+    "hash": "4eab621de1918b8b25de0d78ac23176e7a1a5dfd0820bfd86afe821dfc015887"
   },
   "/blog/winder-stairs-vs-landing-turn-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "7394a0be975e12839aca2af683c9331f5e5a9fb73f3a34593718070493d99411"
+    "hash": "749087f0f257fca264a056448b82cb6e4ca70c46d13ab2075f876f5d83e3b03c"
   },
   "/blog/window-seat-bench-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "8c46921888904d4965e32bf3b33619f707d5130a7c6759796ce0da73c71c10e7"
+    "hash": "b3a8519d06260bf405fd54a64e6433096db9896ff9194675fb08b592ca9af272"
   },
   "/blog/wood-cutting-calculator-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "d2a9cafa7fe86c2ba691d170a2ab46a6481b4a530d265ee034bb0e347df7aa02"
+    "hash": "9c86e1e0a088135bd2a03460e405fd5425bc315d3d77c4916e8d69e89037c350"
   },
   "/blog/wood-finish-types-compared/": {
     "lastmod": "2026-07-01",
-    "hash": "476ff9fe912a81fc2df97782102bbc7896452b1087005eac93d8ec87810e55a1"
+    "hash": "ed4a1939c9d5ea57dfe3997a3e1068cbebb664b594214da21341e9e167a9f62d"
   },
   "/blog/wood-glue-types-and-strength/": {
     "lastmod": "2026-07-01",
-    "hash": "1656672ea7335ea4a938a8d3d77257ebda72a18d77eb153fe3303f5b2b33773c"
+    "hash": "37080464415e240ca3968906be9ec0b37d9e231046244494aae6d934847da16c"
   },
   "/blog/wood-joints-for-plywood-projects/": {
     "lastmod": "2026-07-01",
-    "hash": "4dee72f0f19989f23e8fa6293a0c2d7ac03cb4d833e5d91b04be8c2a56557874"
+    "hash": "f155c7cc822dd3c411fb6c8536e370cf5b7a701e00307575fe0a2eee0fb629bf"
   },
   "/blog/wood-moisture-content-and-drying/": {
     "lastmod": "2026-07-01",
-    "hash": "a558599c6d01174fb7b905c0174373bd3894960625d6a2ee8d556c5a1ca48030"
+    "hash": "e600d768baece3015e7f6fb9d94703afdce13126963608dc19fac941717721e9"
   },
   "/blog/wood-movement-and-why-plywood-is-stable/": {
     "lastmod": "2026-07-01",
-    "hash": "988d96a99aa1defd7bd5f59537797455cda6383022bb0436226543ace0ecd60e"
+    "hash": "b246da054129e40a5ab01d1679683df31b9bfed47159235b167c3b22a0c6bfeb"
+  },
+  "/blog/work-shift-planning-around-a-changing-rotation/": {
+    "lastmod": "2026-07-01",
+    "hash": "2111b0c1e5c55990a7d9bd0963eb6b17db8e0c25c71f6cfaca62516b5f16818a"
   },
   "/blog/work-shift-reminders-day-off-planning/": {
     "lastmod": "2026-07-01",
-    "hash": "8cba09ce42b4d5392438098639c67928d1438ca139ae5bc483c40c7f2e200468"
+    "hash": "310872d2424d0f06cc2bd8267030acdfd0a04f093734bf0dd9e8a2b94219b266"
   },
   "/blog/work-shift-schedule-calendar-rotating-shifts/": {
     "lastmod": "2026-07-01",
-    "hash": "25bfad95dfb6ce07f304c20ddf46008bf3665539bf5df3dfbdab678008ddf71e"
+    "hash": "30914f17df9c2d524567ab7f00b9690aecc4c09ef46983fdc8145cef00f6c7d3"
   },
   "/blog/workshop-clamp-rack-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "e48d562b3aeb6ffb54c4b457e838f44435c3f9797e864c4e1290a721eaf11423"
+    "hash": "f7deabda02c51d9dc7a46bcde8544bad874f63790f1d10e8ed34c7a750523361"
   },
   "/blog/workshop-dust-and-saw-safety-basics/": {
     "lastmod": "2026-07-01",
-    "hash": "5064223ed92a9e51e7e4cb3cb1d9873b5dabde994645cac76aae4dda9637072b"
+    "hash": "7e2f0b4e399a2cd1d24aa7a063451aae1e914e467cee18050d6073a1d0742d91"
   },
   "/blog/workshop-finishing-cart-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "528e1fe5dc0a1ff095cb71f09bb532d0ab715f3d0ecb7ff24957430351405e40"
+    "hash": "19198711de738cd305090d35fc197f0aca6d8e7c039d70ce69e1ad2761f621a4"
   },
   "/blog/workshop-sanding-station-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "1531f9fb99600bee83d63a90b6d3e6584d8b48b6a251b6ead1c2c013c6de5508"
+    "hash": "7a9d5b82fb5faa4082148f58eca0349cef136dd46b3266c6330d14b36384bff4"
   },
   "/blog/zero-clearance-insert-for-clean-cuts/": {
     "lastmod": "2026-07-01",
-    "hash": "88785763e632e30f4d6127d957d8b4d214437b710f82830cd0db74670588ff5b"
+    "hash": "c535b17e1a5cf0e16e0b5ca5ff66b2a5a5bfaa71e40f5ee02aac8ce0d24b2062"
   },
   "/compare/": {
     "lastmod": "2026-07-01",
-    "hash": "23e0e19ab8e290ceee7b968c57f952d67bf2ef1969423aabf9978232d9574f1d"
+    "hash": "468225bec919c20d86966e4b5d9b226c00cc7706bd5b19cf991be6631f1c6c12"
   },
   "/compare/best-plywood-tools/": {
     "lastmod": "2026-07-01",
-    "hash": "9e3ef297d7313b12af849969dfe3617c1af5a5f774223a0a6efb937d1dc6fa11"
+    "hash": "e584d6ecf37fa964cafa274b266e5eeeee30eb3bebdb69777bc7b6a04b0d377b"
   },
   "/compare/best-way-to-create-a-wood-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "d67a3913eefa84fad1ec3f2a77d847f2e13cc3dfe8b30276f15fbbbd2ede0ea2"
+    "hash": "f3fbe4f1331992ec67d5410fc8ea344324f2f38ea06425579abcea3dd402c947"
   },
   "/compare/board-foot-vs-linear-foot-calculator/": {
     "lastmod": "2026-07-01",
-    "hash": "c35a3b7aec7b652e5046bcbb425047b7dc49b5bf22e9eecd8a028705a1aaad3b"
+    "hash": "2a53cffa57269b9e7ad7bfc1f18fbf8715c7102a3d372fd4d955606639a448c4"
   },
   "/compare/circular-saw-vs-table-saw/": {
     "lastmod": "2026-07-01",
-    "hash": "109dc86c4d9e361928857a3b7b534d63a43069f1ff97727eb692a470ecdac1bf"
+    "hash": "469b9eeefc6c65a98163e60882f1a199e7ba41871ec36fa29dd45307feef1dda"
   },
   "/compare/cut-list-app-vs-spreadsheet/": {
     "lastmod": "2026-07-01",
-    "hash": "4b4a3012fc84c917c9a2328c3fb19636b4167174cdd88a72c7718133181b3a6a"
+    "hash": "22d45447d05797c23b9df7531004aa298c6c2a26ebec13b2846f76e9dd562846"
   },
   "/compare/cut-list-calculator-vs-manual-cutting-plan/": {
     "lastmod": "2026-07-01",
-    "hash": "97463acbb2c9b62d5a128719c4299b2ce5ff053854fc43cf1eb16965d1c93b3c"
+    "hash": "b107bf1467c5a695c1d7bd1e945735216da2568bdfd0f17af1442aacece00d20"
   },
   "/compare/cutlist-vs-excel-for-woodworking/": {
     "lastmod": "2026-07-01",
-    "hash": "426045f1744df0414284669e1087372465e33bd0ca6da9b95edaaed4bb4b3ca5"
+    "hash": "9474d2c93420f2616edefd1a76e00ec6faeeb8ecda92cc820e0aa66dd664a3c6"
   },
   "/compare/mdf-vs-particle-board/": {
     "lastmod": "2026-07-01",
-    "hash": "ecb62dc2c3ca2ccf5e78ce6e630d6853386be9d229f5030766236d7f73d5f6ed"
+    "hash": "cc585d7a71f84d7fc4b0450efb0343537afc27c5a64e6a5531a7753fd11bc402"
   },
   "/compare/plywood-calculator-vs-cut-list-calculator/": {
     "lastmod": "2026-07-01",
-    "hash": "a737402cccf2b1024328be8adf21db62851c63958ba3b8dbdce07ff99a727b01"
+    "hash": "42406d83feb0612f5aba244dcfd1b97cb4f8cc796c11b4e2bf0e39ff1bba4d81"
   },
   "/compare/plywood-vs-mdf/": {
     "lastmod": "2026-07-01",
-    "hash": "e66ccba356348da1ab4ac663da453aeb7be2e3df290f955a45ed0691c8319ed2"
+    "hash": "eb41bc3f8406f7b532aaeb5ee32a93dd22ec995bb56ff4f342c5da4a315c928c"
   },
   "/compare/stair-stringer-calculator-vs-manual-layout/": {
     "lastmod": "2026-07-01",
-    "hash": "3f1ddc869ac421ddac3d1eb63905cbd4abb011ca1b639cb7a9ada076113fbfe2"
+    "hash": "37f80d508bbaadb393af87872512075da619f4d2b162268877da6a0de45a40f2"
   },
   "/compare/track-saw-vs-table-saw-sheet-goods/": {
     "lastmod": "2026-07-01",
-    "hash": "7ffa4785511d5c1620fe53f18911892f641a6cfd022eb92ac3baa91eacf0c244"
+    "hash": "ecdd76c84958e873bc660f708436857ad37fe2110392753fb117442b1e5d6185"
   },
   "/compare/woodworking-calculator-vs-paper-plans/": {
     "lastmod": "2026-07-01",
-    "hash": "6e132383e6562c5da5d8621e9ce65b5cbe8eaa2ae3d009efc464ee70e837be0a"
+    "hash": "1142ebaf315c7aa6b2b06640b9d8cf46aeba8f44426b7f8d335ba028fc484591"
   },
   "/guides/how-to-cut-plywood-efficiently/": {
     "lastmod": "2026-07-01",
-    "hash": "7b10975315032b2e35c33164156bb6906f020248a2bb484a288e9deddb64db3e"
+    "hash": "e6f4cef3eaeeba6602be8ea7cc3ccf1f7a8e5457f8231f8cb448f67ebdc89bd1"
   },
   "/learn/best-woodworking-calculator-workflow/": {
     "lastmod": "2026-07-01",
-    "hash": "c6ede28bd8e3bbfb954b2a20a54cb65f0e2d03d15c2a2883a7f4804e7db44ea4"
+    "hash": "ec8f8708e16a7165760645be0a6850d1dde39d7e1e339ea91c8b5e90ae399a69"
   },
   "/learn/cut-list-optimizer/": {
     "lastmod": "2026-07-01",
-    "hash": "8e97b8c85ea30f693d5fe68f68da104a28d36a6721d8864d3c1fbb0c2016b117"
+    "hash": "9815d48f13c9e5906b4eab6a1b06553240c2ecf3145a67d780ea5c35f9526301"
   },
   "/learn/cut-list-planner/": {
     "lastmod": "2026-07-01",
-    "hash": "8b07a2bb309760c56a32620e31a51971578855ab5d64c31ee89cd92ab6bf0092"
+    "hash": "7e68c6e0fa095c121dfcb827be0198b892efb9d2f04dadc1150c285dee1b52ba"
   },
   "/learn/cut-list-software/": {
     "lastmod": "2026-07-01",
-    "hash": "7a0b1837d0f1a8967260f94718b9b89400d17819968a5a2bb52d5d7958a56abc"
+    "hash": "a00c51f2100c1511c47075722829e09b31ca096d9fa0f4aaf4dbb03301cadd99"
   },
   "/learn/diy-wood-project-estimation/": {
     "lastmod": "2026-07-01",
-    "hash": "3f458fb5337eea6c10100c21726ead9be32f968c52bc88606229e4a8b6dc4bb6"
+    "hash": "52bce8d689bedf6b6bab08232266d71902d3b5a0ce1629378e65790c0bcef1c9"
   },
   "/learn/diy-workshop-planning-guide/": {
     "lastmod": "2026-07-01",
-    "hash": "7cec1a21816afc032bbca6e832ca528ed6d6665d4e4890c4ad066ad8167f7f11"
+    "hash": "300c284b70955f5756bedfcbaca3ae3023fefa515dda9848c6ebc6c831720285"
   },
   "/learn/how-many-sheets-of-plywood-do-i-need/": {
     "lastmod": "2026-07-01",
-    "hash": "8331ac1fbc51a1e07edb3f6eaa4cdace7debd8f3d951d2886efc3edbe6ac8e38"
+    "hash": "5a87f3f2f7669ac358787eae33e9bdc97c124d32cda5a64bc42a89d1874eab7e"
   },
   "/learn/how-to-read-a-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "582cb4ab5ae16c285b4e04326c89478bc699250f40ee41e35174c3117b127cf8"
+    "hash": "a8b62ec95a2096e38fd49f0ce182a9518afd04db91a6de0617bb5d4f40f46114"
   },
   "/learn/how-to-reduce-plywood-waste/": {
     "lastmod": "2026-07-01",
-    "hash": "4f50314c3f0909284acf5da83f56a5d0b11475b693171c1de5698a9c793421c8"
+    "hash": "7135d22ca2c4a028cc0cf3f3bea652ba3d3d28bb197268353260bd71cf7a99c9"
   },
   "/learn/material-estimation-for-carpentry/": {
     "lastmod": "2026-07-01",
-    "hash": "5d397a95c843145009c6ca3a386a8b7784e941f0c0cbead29f13242ad6bf6617"
+    "hash": "0aa126d4d09d92585f904407021f6c42bcd79936cee064ea144d5f3f7cf4e728"
   },
   "/learn/plywood-cut-calculator/": {
     "lastmod": "2026-07-01",
-    "hash": "aae7982049be25f8462802e15fb6f40c5e53a9731ff8ae80c436a86b44f7280a"
+    "hash": "718dd7911381bdcf438da7ad4f3274e758c9d12bcd8a1761876ee9d92a3187e8"
   },
   "/learn/plywood-cut-list-calculator/": {
     "lastmod": "2026-07-01",
-    "hash": "544b05876d2cb2e6a833df49c8bb2f17fd115d9fd747440e5337cbaf151469ee"
+    "hash": "1c3f60e734c114953e2a2baa6d13b5e7ee3cb9a54c1b7eb0954dabd6d70ee5cf"
   },
   "/learn/plywood-cutting-optimization/": {
     "lastmod": "2026-07-01",
-    "hash": "5b9366571ff98be92e438ce55bc7ec6a9e6ed4c3c6e9ecf582a78dcc8a5b8642"
+    "hash": "b2b76768dc3d23927314ba0c1f5f429e6dd5815c457934805cfab148573b3e4b"
   },
   "/learn/saw-kerf-explained/": {
     "lastmod": "2026-07-01",
-    "hash": "96c078b0dfc4a53f196e5e0bca2a0aac1bf1e42e28a0289671df127e73e45ef9"
+    "hash": "91638ca2f76b77f7109ef1bdd0d77d325361bce266243edb10470683d402a746"
   },
   "/learn/sheet-cutting-calculator/": {
     "lastmod": "2026-07-01",
-    "hash": "34e79cc1b5a05300e63822a3e4d4f21c60b697cb9dc8b550cbda9afc8f8e7b67"
+    "hash": "79e55f6fcef3f30a6a45731dc06574af86fc989ad76f0b4b78f40add6a233510"
   },
   "/learn/sheet-layout-optimization/": {
     "lastmod": "2026-07-01",
-    "hash": "3ae2d1dfd25424330c4ba9f1013f4a9f8ccfad59dd4b3c83e751dd4cc8a0f88c"
+    "hash": "79d7b49261586bebafc963674e368605598ce57a1a5537ca3a55bc49faa465b3"
   },
   "/learn/what-is-cut-list-optimization/": {
     "lastmod": "2026-07-01",
-    "hash": "f5e93980d87599ba4d92365b9c31172478b438129d752fc646d5688df7265bef"
+    "hash": "2844f56172db94a17b8758eec76f11951776b97a2aeb208902b0648ed13adf94"
   },
   "/learn/wood-cut-planner/": {
     "lastmod": "2026-07-01",
-    "hash": "b9688942132ea2bfe7d2d3d2920b028d6ae6216b18bbd71be207d76c224e48a4"
+    "hash": "f377b2a4f1699c54a8b1954ff694024dd60d474eed38265e6d5b949da955d3f8"
   },
   "/learn/woodworking-material-calculator/": {
     "lastmod": "2026-07-01",
-    "hash": "6e31e9bdd1981966af1513148161924aac5308314a4f00e1d699099556ff650c"
+    "hash": "8b8e37fff16cfdb86f0ef8592c4bd72b401f37f1f1a67e4b3a5dfa1e9432609f"
   },
   "/legal/cutlist/privacy/": {
-    "lastmod": "2026-06-28",
-    "hash": "3186106c6a7f6156397434401d83ff08403103597f37f78b8852260bc33b73dc"
+    "lastmod": "2026-07-01",
+    "hash": "68fe6f98ab899d9ba15672c121d0a678366c010261626aaa291b67b0c7579235"
   },
   "/legal/cutlist/support/": {
-    "lastmod": "2026-06-28",
-    "hash": "35d482fc0c5ee48d370a0ce10f7e07de0ddb4d5f6cb020ff688de32e3b650188"
+    "lastmod": "2026-07-01",
+    "hash": "01c233c767bb5705ece82ff5bda6ac896996509fc971354b8fe9402728495ebb"
   },
   "/legal/quiltfit/privacy/": {
-    "lastmod": "2026-06-28",
-    "hash": "b9e34c12a6217146f2be921246e560af900469c2f5b328af9b6a7ca4850ea521"
+    "lastmod": "2026-07-01",
+    "hash": "ea5b9162a05a4a0cf0c51d5f2177d19f1e76b80a145e1cb14aa924c9d375ebb1"
   },
   "/legal/quiltfit/support/": {
-    "lastmod": "2026-06-28",
-    "hash": "6260549276fb26d6211fba4463227cd60ab5e080a8a0f8f420d4ac69efd8720b"
+    "lastmod": "2026-07-01",
+    "hash": "69d3a67879312a060aa772f28653a1fd68db2c8cfbdf62985e96e5cc1942eaa1"
   },
   "/legal/Stringer/privacy/": {
-    "lastmod": "2026-06-28",
-    "hash": "4bf320a4df13c6a96714f2f311b2b57213c915479c226671e36ba11738e679a5"
+    "lastmod": "2026-07-01",
+    "hash": "4737024bc1d3beae1762a894988f90e76313868afec342b988d278c6e80786b3"
   },
   "/legal/Stringer/support/": {
-    "lastmod": "2026-06-28",
-    "hash": "64637f048d13914d6e3ec97277f48bc03f9ad4f309f7f75ccd993974114116fd"
+    "lastmod": "2026-07-01",
+    "hash": "f74873c0559b03f4d2777e8f7ac07cbc400a43b13ccf6b04d5e5aebf6e50677c"
   },
   "/legal/Tinnitus/privacy/": {
-    "lastmod": "2026-06-28",
-    "hash": "7244ee464f87e383dbfdb397359208af0071514248bbe53155b67ae2951933fb"
+    "lastmod": "2026-07-01",
+    "hash": "8cca46558ba23dcd649f474959c9c5f349528451848e98ce638eb7575c2c5d82"
   },
   "/legal/Tinnitus/support/": {
-    "lastmod": "2026-06-28",
-    "hash": "bf82452794587a62d9d5b3cc76d26108bfd32902c1b9da382cb6787a0f8efd97"
+    "lastmod": "2026-07-01",
+    "hash": "91af0bcb4312c2f2b2286bf0593a592f61885c6c36f0c472c7980faf21cf3204"
   },
   "/templates/": {
     "lastmod": "2026-07-01",
-    "hash": "9b74ccfb3458b4f6672ace6fd287e7f94b0b39a239bb4fb937078d0b29a30352"
+    "hash": "728b330c2047198554adc7424a77ec520f9cad03f7916dbb39c60f9c6b711569"
   },
   "/templates/4x8-plywood-sheet/": {
     "lastmod": "2026-07-01",
-    "hash": "a3a67237bd79f55f61d78faff59650bdf71f0b6c114adeea9ec2e38a7baf5ca0"
+    "hash": "5f311856c88f554d77ec838f5ef5f7023b5b32598a3448c73cf4bec28a448fdc"
   },
   "/templates/bookcase-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "85c8112d69b2a66826f5cf3c62e6bf88e3e73f3c3755df1f2c9d11b1127390a5"
+    "hash": "4d3e717ab52881e1d12b962f6342dbd793b366334e8dc541cac481bd5cb05c83"
   },
   "/templates/closet-shelving-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "424dbae912ebdd982e0a38a5a7ed55ad59b475ced298affd799d4770f9cfbd67"
+    "hash": "77d644f805711f08a3bb6127656b582cbbe94a05cae1d2bb311e91995c380f52"
   },
   "/templates/drawer-box-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "6d5ab3e80203ef020bb460f1080d386fe406e03d8a72b585eda52a2630f047e2"
+    "hash": "2c38ec239f1b38f2711435fa1568f2aac6cc15846b979160f028690b231db950"
   },
   "/templates/garage-shelving-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "5805c0790bb032619fd7ea4b7bb949caf3b4354b358be1560d894b82173c56e9"
+    "hash": "451d887307918c87e5bd97b278709fd2e09d311d6961915739b1dfeafb7d9e7c"
   },
   "/templates/kitchen-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "7920fa10ecefb4a6b0f18fa0ffd235efa79d9ffe9f95c5a594a196fc07f51611"
+    "hash": "ac25a9e2a960a9a99725d89854c1937dc691f9b59461df027ef2b9866ceb7bb6"
   },
   "/templates/workbench-cut-list/": {
     "lastmod": "2026-07-01",
-    "hash": "4895540bc0b45f02b8128efc25cf3a43bb8d7d86e9ff939b95949de1c121d0e4"
+    "hash": "29a3105aab79f2ad872bd1a8cfacd328b7407b434f453d1ff9fc89b9b110da26"
   },
   "/tinnitus/": {
-    "lastmod": "2026-06-28",
-    "hash": "9c99e936c0aeed364a2c9479b430b0f2094f12f82b584a0759881dd151de410a"
+    "lastmod": "2026-07-01",
+    "hash": "f9bac4887bc44cd35ee284c1648446f630c26eeb42da712970751b660db1cc79"
   }
 }

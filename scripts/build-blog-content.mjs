@@ -3,6 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 import { blogBatch20260630 } from "./blog-batch-2026-06-30.mjs";
+import { blogBatch20260701 } from "./blog-batch-2026-07-01.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -8276,6 +8277,7 @@ const woodworkingSeoBatch2 = [
 
 articles.push(...woodworkingSeoBatch2);
 articles.push(...blogBatch20260630);
+articles.push(...blogBatch20260701);
 
 const generatedBlogExpansionDefinitions = [
   {
