@@ -2872,8 +2872,12 @@
     "hash": "c535b17e1a5cf0e16e0b5ca5ff66b2a5a5bfaa71e40f5ee02aac8ce0d24b2062"
   },
   "/compare/": {
-    "lastmod": "2026-07-01",
-    "hash": "468225bec919c20d86966e4b5d9b226c00cc7706bd5b19cf991be6631f1c6c12"
+    "lastmod": "2026-07-02",
+    "hash": "2d8e1be2fbb0e729fc27048fa25f0d15c0e1b82021220d0831c75a22e35d8bec"
+  },
+  "/compare/baltic-birch-vs-cabinet-grade-plywood/": {
+    "lastmod": "2026-07-02",
+    "hash": "b774c6705312de94b50236d6df912b450e8a8b42846816558bc305dd5fd46411"
   },
   "/compare/best-plywood-tools/": {
     "lastmod": "2026-07-01",
@@ -2882,6 +2886,10 @@
   "/compare/best-way-to-create-a-wood-cut-list/": {
     "lastmod": "2026-07-01",
     "hash": "f3fbe4f1331992ec67d5410fc8ea344324f2f38ea06425579abcea3dd402c947"
+  },
+  "/compare/board-foot-calculator-vs-wood-waste-calculator/": {
+    "lastmod": "2026-07-02",
+    "hash": "80153bd544a8712ce179ca703d7ff4fd4ff6e0e12b55aed8b9c1a58093711161"
   },
   "/compare/board-foot-vs-linear-foot-calculator/": {
     "lastmod": "2026-07-01",
@@ -2899,29 +2907,141 @@
     "lastmod": "2026-07-01",
     "hash": "b107bf1467c5a695c1d7bd1e945735216da2568bdfd0f17af1442aacece00d20"
   },
+  "/compare/cut-list-template-vs-cut-list-calculator/": {
+    "lastmod": "2026-07-02",
+    "hash": "77e7b87087e20ef9a2cfb0fbc5bb5a2ec1ab7747bce4d27a4c8b39d1458cb098"
+  },
   "/compare/cutlist-vs-excel-for-woodworking/": {
     "lastmod": "2026-07-01",
     "hash": "9474d2c93420f2616edefd1a76e00ec6faeeb8ecda92cc820e0aa66dd664a3c6"
+  },
+  "/compare/cutlist-vs-paper-cutting-diagram/": {
+    "lastmod": "2026-07-02",
+    "hash": "13662592d2a37a4498824e71a56aeeb09f9254b4ecbd017526897ffc0bdbea12"
+  },
+  "/compare/drawer-box-dovetail-vs-rabbet/": {
+    "lastmod": "2026-07-02",
+    "hash": "fe234e0605a409c5b34370cf79d38489132faae1b684bbdcc03fa66d948a26b9"
+  },
+  "/compare/drawer-slides-side-mount-vs-undermount/": {
+    "lastmod": "2026-07-02",
+    "hash": "bb3a63ffb58b3020893bae9453db2d536106b25b458041a2b8d543938a886494"
+  },
+  "/compare/face-frame-vs-frameless-cabinets/": {
+    "lastmod": "2026-07-02",
+    "hash": "b72ad4c180dd409b157a4ce3c83ebffb3eecad6fd342233a53328958d87200f9"
+  },
+  "/compare/hardwood-plywood-vs-softwood-plywood/": {
+    "lastmod": "2026-07-02",
+    "hash": "e4c37899cd7593cf9de279a71aa5da9f994104d9fb94d1117bfa5342e4443555"
+  },
+  "/compare/inset-vs-overlay-cabinet-doors/": {
+    "lastmod": "2026-07-02",
+    "hash": "3aa4f5cbf294b638251f38890523d32324e7817c347c947f38aee780bb18ec38"
+  },
+  "/compare/jelly-roll-vs-layer-cake-quilt-planning/": {
+    "lastmod": "2026-07-02",
+    "hash": "e2d2becbfa369462b59ec5b70c9b32c691b4f9be2e2b5939866007555b0a1078"
+  },
+  "/compare/jigsaw-vs-circular-saw-for-plywood/": {
+    "lastmod": "2026-07-02",
+    "hash": "86adad437f45f713e3ba4b75415bf884e300dd525fb9de9b292cab83e3c3e410"
+  },
+  "/compare/large-format-tile-vs-standard-tile/": {
+    "lastmod": "2026-07-02",
+    "hash": "20e83506d782619eeb275d1baa2001b857405a0551f518aea55bd2840212302f"
   },
   "/compare/mdf-vs-particle-board/": {
     "lastmod": "2026-07-01",
     "hash": "cc585d7a71f84d7fc4b0450efb0343537afc27c5a64e6a5531a7753fd11bc402"
   },
+  "/compare/mdf-vs-plywood-for-painted-cabinets/": {
+    "lastmod": "2026-07-02",
+    "hash": "5f67d2e7783aa01d6ca318b555777aaf3033ca3f554951a720cd0e2bb8d62cd2"
+  },
+  "/compare/melamine-vs-plywood-for-cabinets/": {
+    "lastmod": "2026-07-02",
+    "hash": "2ea38d10e5b4b78c5f080ad67a53835a1be50daaf65e870748a4b5bf1d516588"
+  },
+  "/compare/metric-vs-imperial-cut-list-calculator/": {
+    "lastmod": "2026-07-02",
+    "hash": "973290f0aa0d038343e6c79e0c89c98a823c532d93b3e328a51f6aebe29d1012"
+  },
+  "/compare/miter-saw-vs-table-saw-for-crosscuts/": {
+    "lastmod": "2026-07-02",
+    "hash": "fb27c310bce8c5b1ce3e5c04b598f873a66172232ace87799031fc937e73a005"
+  },
+  "/compare/open-riser-vs-closed-riser-stairs/": {
+    "lastmod": "2026-07-02",
+    "hash": "9e1d35166c41cf761dc10b2b1f20742041a5335cc9dcad984cc07fd98f4600f9"
+  },
   "/compare/plywood-calculator-vs-cut-list-calculator/": {
     "lastmod": "2026-07-01",
     "hash": "42406d83feb0612f5aba244dcfd1b97cb4f8cc796c11b4e2bf0e39ff1bba4d81"
+  },
+  "/compare/plywood-calculator-vs-wood-waste-calculator/": {
+    "lastmod": "2026-07-02",
+    "hash": "05220305257c1bca65243ceca306a38c9d6af5288300672a4860828bb1c1fa00"
   },
   "/compare/plywood-vs-mdf/": {
     "lastmod": "2026-07-01",
     "hash": "eb41bc3f8406f7b532aaeb5ee32a93dd22ec995bb56ff4f342c5da4a315c928c"
   },
+  "/compare/plywood-vs-osb/": {
+    "lastmod": "2026-07-02",
+    "hash": "8f2eee94acda8582237c6dbe327999e2966f18dd600f84cbfc5ea79f5aa3404f"
+  },
+  "/compare/porcelain-vs-ceramic-tile/": {
+    "lastmod": "2026-07-02",
+    "hash": "8d40812ea039578178b19210703808b29bca9befabef660a033675557e8f3aa3"
+  },
+  "/compare/prefinished-plywood-vs-raw-plywood/": {
+    "lastmod": "2026-07-02",
+    "hash": "78dc563fee0a7218c15ba4cd655b01d4a898b39a25e6d7f464cf38d754136edc"
+  },
+  "/compare/quiltfit-vs-graph-paper-for-quilt-planning/": {
+    "lastmod": "2026-07-02",
+    "hash": "42e55657b766648eefef6df7ca038dbddae8887663ba67a7930553731095dd31"
+  },
+  "/compare/router-vs-table-saw-for-dados/": {
+    "lastmod": "2026-07-02",
+    "hash": "2035c4939801baa033445d88bbaac1663c380f7ab70f7dcf7bbe17b642228ac2"
+  },
+  "/compare/solid-wood-vs-plywood-for-shelves/": {
+    "lastmod": "2026-07-02",
+    "hash": "6b2317d13d1e3727538f4729239bbfd3cfa57350c9c29c1df6e6395f115843db"
+  },
+  "/compare/stair-calculator-vs-stair-chart/": {
+    "lastmod": "2026-07-02",
+    "hash": "a3b3c8a426097a940788d89592dc401023681da544117440280def4308d9f96b"
+  },
   "/compare/stair-stringer-calculator-vs-manual-layout/": {
     "lastmod": "2026-07-01",
     "hash": "37f80d508bbaadb393af87872512075da619f4d2b162268877da6a0de45a40f2"
   },
+  "/compare/straight-lay-vs-diagonal-tile/": {
+    "lastmod": "2026-07-02",
+    "hash": "97afbe401e3228632be524ae821e9a50bd7f7ae35c399897b889e675914f53e4"
+  },
+  "/compare/table-saw-vs-track-saw-for-cabinet-parts/": {
+    "lastmod": "2026-07-02",
+    "hash": "900f80fe12e572d2e6679032c53f6e7641052a16761f45e5cb91adcde7d13e15"
+  },
+  "/compare/track-saw-vs-panel-saw/": {
+    "lastmod": "2026-07-02",
+    "hash": "20c0383b0a41c4d042405ae18f3fb803dc36fdb3b5e5c59d66a741280c4ceaed"
+  },
   "/compare/track-saw-vs-table-saw-sheet-goods/": {
     "lastmod": "2026-07-01",
     "hash": "ecdd76c84958e873bc660f708436857ad37fe2110392753fb117442b1e5d6185"
+  },
+  "/compare/wideback-vs-pieced-quilt-backing/": {
+    "lastmod": "2026-07-02",
+    "hash": "28de630eb2e3e7ac5c9cde86988a95c8ac51ea04b40bc95a5888569df85ec53c"
+  },
+  "/compare/wood-treads-vs-composite-deck-stair-treads/": {
+    "lastmod": "2026-07-02",
+    "hash": "b777648b82c22081a36732c848fca7d8ff41f43dea2f4eb4f87847682c3125e4"
   },
   "/compare/woodworking-calculator-vs-paper-plans/": {
     "lastmod": "2026-07-01",
