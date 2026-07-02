@@ -8,8 +8,8 @@
     "hash": "39e515bd725122d485be9b44a4ef631e0634101a6797cccd2fdc332c8fce7ca6"
   },
   "/learn/": {
-    "lastmod": "2026-07-01",
-    "hash": "df11f0356e6383de11d7398a0487c95868739764eb822bdbd007f99c28663e39"
+    "lastmod": "2026-07-02",
+    "hash": "0dcb683a7f804aaeab6b9d81847d0166be8b7ee82c52dd8915f83dd0a14f0f97"
   },
   "/apps/": {
     "lastmod": "2026-07-01",
@@ -2931,9 +2931,33 @@
     "lastmod": "2026-07-01",
     "hash": "e6f4cef3eaeeba6602be8ea7cc3ccf1f7a8e5457f8231f8cb448f67ebdc89bd1"
   },
+  "/learn/actual-lumber-size-vs-nominal-size/": {
+    "lastmod": "2026-07-02",
+    "hash": "57e8e79edee8626a277741e2c751e7f84e5605a6b94277044e2cc59045a59852"
+  },
+  "/learn/backsplash-tile-measuring-guide/": {
+    "lastmod": "2026-07-02",
+    "hash": "39ed6f09483542ec301ba299127b49ad7e6409c28e91f4f106057f2cd3898e0e"
+  },
   "/learn/best-woodworking-calculator-workflow/": {
     "lastmod": "2026-07-01",
     "hash": "ec8f8708e16a7165760645be0a6850d1dde39d7e1e339ea91c8b5e90ae399a69"
+  },
+  "/learn/board-foot-calculator-for-hardwood-buying/": {
+    "lastmod": "2026-07-02",
+    "hash": "f94abd7ef13974416efb9a8e07d66ae82dca2f3f102099225d38ce6bdf10b163"
+  },
+  "/learn/cabinet-box-cut-list-basics/": {
+    "lastmod": "2026-07-02",
+    "hash": "cf2780b3f7bd8c36f4c3e21d42d66d576509a09837fca405d4a5781f3e0b20cc"
+  },
+  "/learn/choosing-between-calculator-template-and-app/": {
+    "lastmod": "2026-07-02",
+    "hash": "6f48afaf05b9688caad1e8db493f1e226ad2d16864b638bbd85f83cb3cc63bf5"
+  },
+  "/learn/closet-shelving-cut-list-workflow/": {
+    "lastmod": "2026-07-02",
+    "hash": "932755ab8b455f1b080646655c933ecc44312793e7cdc4c6bc5ef954a3a00661"
   },
   "/learn/cut-list-optimizer/": {
     "lastmod": "2026-07-01",
@@ -2943,9 +2967,21 @@
     "lastmod": "2026-07-01",
     "hash": "7e68c6e0fa095c121dfcb827be0198b892efb9d2f04dadc1150c285dee1b52ba"
   },
+  "/learn/cut-list-quality-check-before-buying-material/": {
+    "lastmod": "2026-07-02",
+    "hash": "ef32523f2a525551416a3256ab20aaf9a62203eadb6057642f8bdad59e613cf6"
+  },
+  "/learn/cut-list-revision-workflow/": {
+    "lastmod": "2026-07-02",
+    "hash": "4f748f1c5d0b97397b7cf391aeead449f2a3527603a20e804af52842d7d6120f"
+  },
   "/learn/cut-list-software/": {
     "lastmod": "2026-07-01",
     "hash": "a00c51f2100c1511c47075722829e09b31ca096d9fa0f4aaf4dbb03301cadd99"
+  },
+  "/learn/deck-stair-material-estimate/": {
+    "lastmod": "2026-07-02",
+    "hash": "643b1a57dd2f2acb28a18e13b0d4dff25f69ce69b55af483f7f137e440d01c46"
   },
   "/learn/diy-wood-project-estimation/": {
     "lastmod": "2026-07-01",
@@ -2954,6 +2990,26 @@
   "/learn/diy-workshop-planning-guide/": {
     "lastmod": "2026-07-01",
     "hash": "300c284b70955f5756bedfcbaca3ae3023fefa515dda9848c6ebc6c831720285"
+  },
+  "/learn/drawer-box-cut-list-basics/": {
+    "lastmod": "2026-07-02",
+    "hash": "ded554cfcd97c591649d3fd1a5e2715e9dfe55e2e2498cc2a972519699f83941"
+  },
+  "/learn/edge-banding-allowance-in-cut-lists/": {
+    "lastmod": "2026-07-02",
+    "hash": "b2f6349cacaebf5a54a8e9cb15161a14faec9617456cfd1a69fa38ac1911513a"
+  },
+  "/learn/field-measurement-checklist-before-cut-list/": {
+    "lastmod": "2026-07-02",
+    "hash": "a05447eb756bc09eca9ce5ad06c73321d3e4cc4eacc2bafacf59bfcd4a9d157c"
+  },
+  "/learn/garage-shelving-material-estimate/": {
+    "lastmod": "2026-07-02",
+    "hash": "994acbc564e3ef01488cf6cd0e9d49559b971b8f11e3310628a42ae01c6a896b"
+  },
+  "/learn/grain-direction-in-plywood-layouts/": {
+    "lastmod": "2026-07-02",
+    "hash": "183ef3716ada9c2368439cc4488973a7db63cdc67c3f58ce3b285549e0549642"
   },
   "/learn/how-many-sheets-of-plywood-do-i-need/": {
     "lastmod": "2026-07-01",
@@ -2967,9 +3023,33 @@
     "lastmod": "2026-07-01",
     "hash": "7135d22ca2c4a028cc0cf3f3bea652ba3d3d28bb197268353260bd71cf7a99c9"
   },
+  "/learn/kerf-allowance-for-table-saw-and-track-saw/": {
+    "lastmod": "2026-07-02",
+    "hash": "65311e5035a3ec34e2b38f2ac5c602a9fbeaff083a3f37ca02658ad33c33439d"
+  },
+  "/learn/kitchen-cabinet-sheet-count-estimate/": {
+    "lastmod": "2026-07-02",
+    "hash": "d3dd0411f0565083420904695c157ba2d0ce8b8697d9ddb4454e5d9855465624"
+  },
   "/learn/material-estimation-for-carpentry/": {
     "lastmod": "2026-07-01",
     "hash": "0aa126d4d09d92585f904407021f6c42bcd79936cee064ea144d5f3f7cf4e728"
+  },
+  "/learn/mdf-cut-list-planning-guide/": {
+    "lastmod": "2026-07-02",
+    "hash": "66c1c6385eae8ea47f303692042dfa19402f3083e45f88c3148249a98d569827"
+  },
+  "/learn/melamine-cutting-plan-for-clean-edges/": {
+    "lastmod": "2026-07-02",
+    "hash": "031e4be7456dbfa1d0fdbd8344759026078596e8dbd4c3778178ddf4190f54e5"
+  },
+  "/learn/offcut-storage-system-for-sheet-goods/": {
+    "lastmod": "2026-07-02",
+    "hash": "baed40d6c7db2d3ee59193448e388d2c5f2745edef3a9f3fe1a1648276c335a7"
+  },
+  "/learn/one-sheet-plywood-project-planning/": {
+    "lastmod": "2026-07-02",
+    "hash": "cec1ba8465f986a3b2c63cf38faf850fc11af49dda1dd154448ad59f3ff67f20"
   },
   "/learn/plywood-cut-calculator/": {
     "lastmod": "2026-07-01",
@@ -2983,6 +3063,22 @@
     "lastmod": "2026-07-01",
     "hash": "b2b76768dc3d23927314ba0c1f5f429e6dd5815c457934805cfab148573b3e4b"
   },
+  "/learn/plywood-grade-selection-for-cabinets/": {
+    "lastmod": "2026-07-02",
+    "hash": "0f128eb61ddf5f85db2e8d65808ae7bb59ed50c7fe9b0e771d7edf42fb87030d"
+  },
+  "/learn/project-cost-estimate-from-cut-list/": {
+    "lastmod": "2026-07-02",
+    "hash": "804f7d79ebfe5ba3a95a06b82e7f9bec7cbf31dafe93acfb9bb25e64eca8bc8a"
+  },
+  "/learn/quilt-backing-binding-batting-estimate/": {
+    "lastmod": "2026-07-02",
+    "hash": "9286f2045cd8c18e7e5867c3e50b574c868bcc09e49738c0850f0448c9983ada"
+  },
+  "/learn/quilt-yardage-calculator-inputs/": {
+    "lastmod": "2026-07-02",
+    "hash": "467f7cd3ec621d603e37a49b5b2ba24cc58e428600b1b0cfc73e429e0bd0f868"
+  },
   "/learn/saw-kerf-explained/": {
     "lastmod": "2026-07-01",
     "hash": "91638ca2f76b77f7109ef1bdd0d77d325361bce266243edb10470683d402a746"
@@ -2995,6 +3091,26 @@
     "lastmod": "2026-07-01",
     "hash": "79d7b49261586bebafc963674e368605598ce57a1a5537ca3a55bc49faa465b3"
   },
+  "/learn/shelf-span-and-plywood-thickness-guide/": {
+    "lastmod": "2026-07-02",
+    "hash": "3bcef7ef733fb663e1cb322cb8d212c2d01a7b9404abb29cc9f58b773abc759d"
+  },
+  "/learn/stair-rise-run-comfort-guide/": {
+    "lastmod": "2026-07-02",
+    "hash": "4c293fc5077cc657669fb5884f86caeb1851e7c9d0a41a9e902bfb8a8b53c3e1"
+  },
+  "/learn/stair-stringer-calculator-inputs-explained/": {
+    "lastmod": "2026-07-02",
+    "hash": "afd9ee56344eae29384186dcc23e0057fe9eba1c131398d1ff391f0ddd99f29a"
+  },
+  "/learn/tile-calculator-inputs-explained/": {
+    "lastmod": "2026-07-02",
+    "hash": "177a7e2f3df233735d2cbefcf462ec53aebb243fb7ae885728faab113e2ef0c4"
+  },
+  "/learn/tile-waste-allowance-guide/": {
+    "lastmod": "2026-07-02",
+    "hash": "4cf94db682b3717f1d5ef4b9d2f911b8ebd11ea43183a9d0a544052a1b5114c2"
+  },
   "/learn/what-is-cut-list-optimization/": {
     "lastmod": "2026-07-01",
     "hash": "2844f56172db94a17b8758eec76f11951776b97a2aeb208902b0648ed13adf94"
@@ -3006,6 +3122,10 @@
   "/learn/woodworking-material-calculator/": {
     "lastmod": "2026-07-01",
     "hash": "8b8e37fff16cfdb86f0ef8592c4bd72b401f37f1f1a67e4b3a5dfa1e9432609f"
+  },
+  "/learn/workbench-material-planning-guide/": {
+    "lastmod": "2026-07-02",
+    "hash": "25d9283231f88351e9df160f8b08818e7e1f4c8cbe5657802c3abeecd3930e3b"
   },
   "/legal/cutlist/privacy/": {
     "lastmod": "2026-07-01",
