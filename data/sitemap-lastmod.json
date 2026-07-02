@@ -68,8 +68,8 @@
     "hash": "706489c92437f9386182272ff8016628c340e73a572271f1558cc14f85e03a0d"
   },
   "/blog/": {
-    "lastmod": "2026-07-01",
-    "hash": "99f2a6c1e3e8f19a10d918410c454f3d64397a7eab7cd24e27d8be744a14fa22"
+    "lastmod": "2026-07-02",
+    "hash": "7b08ba0db3463cdabb9475d0201bd3335048d5b6cb7c74052afac0097d090f5e"
   },
   "/privacy-policy/": {
     "lastmod": "2026-07-01",
@@ -488,8 +488,12 @@
     "hash": "70284bf68d45c44f0309538d8d096912c3ec4b1f33bb8c9b34d3fca3e33a5922"
   },
   "/blog/address-label-maker-envelope-printing-guide/": {
-    "lastmod": "2026-07-01",
-    "hash": "1240ce6ce05fadbd74a2db06a98ba7b22d0713fd2dec1b5c443c5a70eaa804b3"
+    "lastmod": "2026-07-02",
+    "hash": "b3475e51447e70666a48c556482acc0aa49e88e2667719bf2f23d18dc3b396d2"
+  },
+  "/blog/address-label-maker-small-batch-mailing/": {
+    "lastmod": "2026-07-02",
+    "hash": "abbf60e89cb47fd54153d9d7da063f1c3f9ff491ef236d0a321fef6f5fe48c99"
   },
   "/blog/alcove-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
@@ -506,6 +510,10 @@
   "/blog/art-supply-rolling-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
     "hash": "14400b85817b3fab3a5982b8704224810a621cf9861ac4b9c8c51ef1aaa38ac0"
+  },
+  "/blog/atomic-clock-countdown-event-timing/": {
+    "lastmod": "2026-07-02",
+    "hash": "2dcaf3c8892264612928ca8f4868b2355704459acb847dea0cf5b7e3f62a1ffb"
   },
   "/blog/atomic-clock-keeping-screen-on-when-it-matters/": {
     "lastmod": "2026-07-01",
@@ -524,8 +532,8 @@
     "hash": "3ca009bf67b20aea448052458fa0daf7bf4f8204cbd3d0d42962ca9c5ed3ecbc"
   },
   "/blog/avery-label-template-iphone-printing/": {
-    "lastmod": "2026-07-01",
-    "hash": "698dd251aa6abb7ea49265ae8cab0b0c10569c177d364258d2c85e9f14818df9"
+    "lastmod": "2026-07-02",
+    "hash": "b433d75901e5dd796644197938d3f8688d7cf8feef1997510e699b1a45ce38c9"
   },
   "/blog/avoiding-common-stringer-layout-errors/": {
     "lastmod": "2026-07-01",
@@ -538,6 +546,10 @@
   "/blog/backing-binding-batting-planning/": {
     "lastmod": "2026-07-01",
     "hash": "f0c44bd6646df1841016b319cb3ba21382066e5fca76fa14dc995729ef04dd35"
+  },
+  "/blog/backsplash-tile-layout-under-cabinets/": {
+    "lastmod": "2026-07-02",
+    "hash": "3dafe305ebea1ccca2b469fe26c024b06066eb83721f55afc6d40c2eb16fe867"
   },
   "/blog/baltic-birch-vs-cabinet-grade-plywood/": {
     "lastmod": "2026-07-01",
@@ -667,6 +679,10 @@
     "lastmod": "2026-07-01",
     "hash": "f75f39154932f05aae9d11022ddc2a7321cc900dc4a2cebfd119adc29d66d4f4"
   },
+  "/blog/cadenza-tap-tempo-for-band-rehearsal/": {
+    "lastmod": "2026-07-02",
+    "hash": "fdafa369f8b1d02858fcfb4c26350062ba4a9ba127b057a4c1fdc64224a0e9ac"
+  },
   "/blog/camper-bed-platform-cut-list/": {
     "lastmod": "2026-07-01",
     "hash": "a0363bd5182831156ce921f0e862b98a21a2fabf81c275aed10baa90b8caf05d"
@@ -795,6 +811,10 @@
     "lastmod": "2026-07-01",
     "hash": "7d06dd5751e33041748e0d64a8c394a45f56b68126900f0afa353d3f10184975"
   },
+  "/blog/cutlist-after-design-change-keeping-revisions-clean/": {
+    "lastmod": "2026-07-02",
+    "hash": "32938e23bba616e9c2441e4090b6d8522f6b4f4969f06f4c5a75fdb2c075f339"
+  },
   "/blog/cutlist-backyard-planter-boxes/": {
     "lastmod": "2026-07-01",
     "hash": "500e7d88166c57979131381b88e8bcd896dabd023606c7edba63e7a98ba3e60b"
@@ -830,6 +850,14 @@
   "/blog/cutlist-floating-shelves-plywood/": {
     "lastmod": "2026-07-01",
     "hash": "ce0794ef752d905bed1ed6b5c9d51df2fc1a695339a9c7d21a3ebd425b705a6a"
+  },
+  "/blog/cutlist-for-garage-overhead-bin-shelves/": {
+    "lastmod": "2026-07-02",
+    "hash": "ae5967d07d2ff7f4945af7ffd166cf652de0ff1475dee3c4d7b1e82620cf31a7"
+  },
+  "/blog/cutlist-for-slim-hallway-console/": {
+    "lastmod": "2026-07-02",
+    "hash": "7c6c4f93cc875ad84e4e6eb30397c503a3099ba92ea569c29cb09614fafd20fd"
   },
   "/blog/cutlist-garage-shelf-weekend-project/": {
     "lastmod": "2026-07-01",
@@ -899,6 +927,10 @@
     "lastmod": "2026-07-01",
     "hash": "70b5eb44a291de053e411ec8153a52b87862fbf25aa4b2f65a845292e0402398"
   },
+  "/blog/cutting-plan-for-mixed-thickness-plywood-project/": {
+    "lastmod": "2026-07-02",
+    "hash": "c99f263c952d8f31c95103096bfc547e88657ad0abbed737a39561e38ff98ea0"
+  },
   "/blog/dado-joints-for-shelving-guide/": {
     "lastmod": "2026-07-01",
     "hash": "1f0931f03e9d4fcc8fd49af7c21665eb6462dc1268ebeb05f13649921474901b"
@@ -906,6 +938,10 @@
   "/blog/decision-history-insights-private-choice-tracker/": {
     "lastmod": "2026-07-01",
     "hash": "0e4fe3e00998f797a2f97f676ed5f6c6e09687e3bb9a4234c5e807883e153840"
+  },
+  "/blog/deck-stair-bottom-riser-on-sloped-pad/": {
+    "lastmod": "2026-07-02",
+    "hash": "fbd3cbde3f0ce85b1883e477733dabdc62ae5372ce23bfe87906427343834d22"
   },
   "/blog/deck-stair-code-planning/": {
     "lastmod": "2026-07-01",
@@ -1027,6 +1063,10 @@
     "lastmod": "2026-07-01",
     "hash": "e52517aa15bd7770bc5975564052b00ca590d587d4416723dad98677761965f9"
   },
+  "/blog/exterior-stair-water-drainage-layout/": {
+    "lastmod": "2026-07-02",
+    "hash": "4791d3355599935e153876532be29d106741205691d5bda769a73045aa641547"
+  },
   "/blog/fabric-yardage-estimates-with-block-layouts/": {
     "lastmod": "2026-07-01",
     "hash": "15583da93bc861579ff57f9c47642d58ed8ead1ce22df2501d23d8d7a168e8d9"
@@ -1100,16 +1140,20 @@
     "hash": "1ff4b80bf9ba20b92a4bb24b67600933694b3fbb2cbca6330013798f87f2aaf8"
   },
   "/blog/fridgetrack-food-expiration-reminders/": {
-    "lastmod": "2026-07-01",
-    "hash": "6b39f4bdd4cb43d427db13ea6ccf5e454c6f6845f71205556b6ffae395b5a82c"
+    "lastmod": "2026-07-02",
+    "hash": "a022e35a7a04557c6923e5edbbc25a38b80c31d5aff8dd16ceceb0b20db915f8"
+  },
+  "/blog/fridgetrack-freezer-inventory-before-bulk-shopping/": {
+    "lastmod": "2026-07-02",
+    "hash": "17709eb07ecef6daa2a0ff61ea8c084a1e5c476385d94dd9c8276746977a5b73"
   },
   "/blog/fridgetrack-fridge-inventory-app-guide/": {
-    "lastmod": "2026-07-01",
-    "hash": "8e95e74eed031a2143933d07c65b39c9fce401d06d724650d04914261d32ff05"
+    "lastmod": "2026-07-02",
+    "hash": "2920a916f23ad68efa2cf836caa42f4b9b878cea59f05b5df0af9b1307c03be4"
   },
   "/blog/fridgetrack-meal-planning-grocery-list/": {
-    "lastmod": "2026-07-01",
-    "hash": "da60a71ccefb5516550ba3f00f5c2867341e96e5d86db8ed3de3809318dae978"
+    "lastmod": "2026-07-02",
+    "hash": "7a240b11c4383504f0ebf99e12a54ecc79868684a1e778bdf2c2f9690d7cd2da"
   },
   "/blog/garage-bike-rack-cut-list/": {
     "lastmod": "2026-07-01",
@@ -1195,13 +1239,17 @@
     "lastmod": "2026-07-01",
     "hash": "f5c830020a1d583681f9ca9e2c18ab1901143475883299d963af24d1eff5d37d"
   },
+  "/blog/hexagon-tile-layout-waste-planning/": {
+    "lastmod": "2026-07-02",
+    "hash": "6456d459ee5ced936568f2fef23270c9218763b01e4044ce7421a0a0b6f3d8c5"
+  },
   "/blog/hidden-litter-box-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
     "hash": "c8d67ad92eb78d2b417ab11507852f2832b0771d445e274972887dc3b53d8391"
   },
   "/blog/holiday-card-return-address-labels/": {
-    "lastmod": "2026-07-01",
-    "hash": "6ecfc538fa2f13b04be403c5e65005e8cbe3e1e1e54ba3add40c993109c73239"
+    "lastmod": "2026-07-02",
+    "hash": "ed41dcc3c2acf2d32d32f07ce59c5281b6253b693efdc1769a551209cb59b416"
   },
   "/blog/home-gym-storage-cabinet-cut-list/": {
     "lastmod": "2026-07-01",
@@ -1299,6 +1347,10 @@
     "lastmod": "2026-07-01",
     "hash": "8c01c87ae97f4ea0bcc7bc4b7f9f31863123ac1b1977b73621e75b53ad172255"
   },
+  "/blog/image-compressor-before-uploading-forms/": {
+    "lastmod": "2026-07-02",
+    "hash": "1675f66f5dc1ea2f5abb9fb9b85aced953ff29016afa307cb38e74557d156c58"
+  },
   "/blog/image-compressor-jpeg-vs-png-when-to-pick/": {
     "lastmod": "2026-07-01",
     "hash": "d3da6e0d77a43bd6fac0d06e9c6e512161f705ec5d30088c6a49d541dd244b3e"
@@ -1310,6 +1362,10 @@
   "/blog/invoice-maker-app-freelancers-contractors/": {
     "lastmod": "2026-07-01",
     "hash": "d0804fed2786dcb0fbd2fea7f3544d6d962166133d511c5e3221fa561c3910db"
+  },
+  "/blog/invoice-maker-change-request-estimate-workflow/": {
+    "lastmod": "2026-07-02",
+    "hash": "def1195b200282f08a75d24e8cd85aad9d9bef6022b569bac3c50db105ffe1ce"
   },
   "/blog/iphone-photo-cleaner-duplicate-similar-pictures/": {
     "lastmod": "2026-07-01",
@@ -1422,6 +1478,10 @@
   "/blog/marketvendor-comparing-two-market-locations/": {
     "lastmod": "2026-07-01",
     "hash": "9aa3fcb8639eb7144669eeabee14506b84c27c9096a949acabd6f71781eb1d3f"
+  },
+  "/blog/marketvendor-inventory-notes-after-market-day/": {
+    "lastmod": "2026-07-02",
+    "hash": "08bcb0241e26e4ea8a7747b7cc6386e59383b14ee3152978ccae77f63bdc0d28"
   },
   "/blog/marketvendor-tracking-cash-vs-card-split/": {
     "lastmod": "2026-07-01",
@@ -1571,9 +1631,17 @@
     "lastmod": "2026-07-01",
     "hash": "05fcc805bfe77f4137d879d78aa679ece45d7429f7dad1d1a7f5b2b3d1c7f438"
   },
+  "/blog/open-vs-closed-stringer-remodel-planning/": {
+    "lastmod": "2026-07-02",
+    "hash": "46672e44071229ee97eadd80814c47f39fdc8293877441fe83c221d54915fe0c"
+  },
   "/blog/optimize-4x8-plywood-cuts-for-built-ins/": {
     "lastmod": "2026-07-01",
     "hash": "65988751b12aec344f74e334d36c00e0965ce3f6abfba365be5cf0c4a14d1e03"
+  },
+  "/blog/optimize-plywood-for-corner-banquette-seating/": {
+    "lastmod": "2026-07-02",
+    "hash": "8bfa9c5754322ca365843f4d0445eb97e0ecd7121f7b387e250ead26c8deb01f"
   },
   "/blog/organize-pdf-scans-multi-page-documents/": {
     "lastmod": "2026-07-01",
@@ -1607,6 +1675,10 @@
     "lastmod": "2026-07-01",
     "hash": "bd99d87226a613b94c3b7736cb55c5e0fa1467699d3d8e81ef30cef15acd806b"
   },
+  "/blog/pantry-label-maker-spice-drawer-system/": {
+    "lastmod": "2026-07-02",
+    "hash": "606f323612f633ff5ad053cc8f169e5c7ab6cf74d6b0a6822dec6786d81fc53f"
+  },
   "/blog/pantry-labels-system-for-an-organized-kitchen/": {
     "lastmod": "2026-07-01",
     "hash": "d3430709cd00dea24f3a9bab4b68912c58e0094c02ddeacf94630e118a97c839"
@@ -1614,6 +1686,10 @@
   "/blog/pantry-pull-out-shelf-cut-list/": {
     "lastmod": "2026-07-01",
     "hash": "95ffe817fb02fd89dab8b804e745fb5a7a86278ea084d9759bf755f26a7751ba"
+  },
+  "/blog/pdf-scan-for-home-renovation-receipts/": {
+    "lastmod": "2026-07-02",
+    "hash": "ef4f37c09169466ee84d0f6fd1326975dff66ea7f0c2f02a6369384beffea510"
   },
   "/blog/pdf-scan-multi-page-document-organization/": {
     "lastmod": "2026-07-01",
@@ -1638,6 +1714,10 @@
   "/blog/photosafe-organizing-albums-inside-vault/": {
     "lastmod": "2026-07-01",
     "hash": "b075d966d0d3cc1bfb4db5a54367e97a598707d7731e0e41eddbc1c57bf812b3"
+  },
+  "/blog/photosafe-separate-work-and-personal-albums/": {
+    "lastmod": "2026-07-02",
+    "hash": "eb3950cb5368a8c829dc0f9ced753b44d0131bceeb1d8ff6f16b25476e576c51"
   },
   "/blog/pickone-group-decisions-vs-solo-choices/": {
     "lastmod": "2026-07-01",
@@ -1675,9 +1755,29 @@
     "lastmod": "2026-07-01",
     "hash": "efa6c46613b75e8fc09dc840ae108f514656732117ec60ffb3a1743d4a43f438"
   },
+  "/blog/plywood-cut-list-for-craft-fair-display/": {
+    "lastmod": "2026-07-02",
+    "hash": "824b3bc684dcc7429267409821a1f563935db2ff516ef4103691903bc78668bc"
+  },
+  "/blog/plywood-cut-list-for-modular-office-storage/": {
+    "lastmod": "2026-07-02",
+    "hash": "cf439b0278de536dd769dcc9d5403b94ec29e68ca1393496498c728270400658"
+  },
+  "/blog/plywood-cut-list-for-mudroom-locker-wall/": {
+    "lastmod": "2026-07-02",
+    "hash": "c05e92febf39bb7629679dbab759efda78d47a96905b61828a2ba026a6327f58"
+  },
   "/blog/plywood-cut-list-optimizer-for-cabinets/": {
     "lastmod": "2026-07-01",
     "hash": "21643a17e52f0ec8fc9f31f142986d8938d136af38c256d32e3a8a8f60712dfe"
+  },
+  "/blog/plywood-cut-plan-for-renter-friendly-built-ins/": {
+    "lastmod": "2026-07-02",
+    "hash": "05d53d442be1224f2869ff93b1cc4a1e36e0b1d1091fd2ff93693c3364d3f196"
+  },
+  "/blog/plywood-cut-plan-with-finished-face-notes/": {
+    "lastmod": "2026-07-02",
+    "hash": "fc9a6c3f65cca217be8d481684dc07c999a37dc8d19ce902dca43069aabccba8"
   },
   "/blog/plywood-cutting-calculator-cost-savings/": {
     "lastmod": "2026-07-01",
@@ -1827,6 +1927,10 @@
     "lastmod": "2026-07-01",
     "hash": "865cdbffc1960a6cf21c6f494b070200b4a430dbe777d65acb152cb007a3e44e"
   },
+  "/blog/printer-app-printing-return-labels-from-iphone/": {
+    "lastmod": "2026-07-02",
+    "hash": "15ddff2daa4c2870ef26b910d6541f9124636811610562a1ab138fb4625ed713"
+  },
   "/blog/private-clock-app-no-account-no-tracking/": {
     "lastmod": "2026-07-01",
     "hash": "dcc2cbb115168270c419c7b35a41ec29a7b6d794c1346c206c3d81b366bbd4c5"
@@ -1870,6 +1974,10 @@
   "/blog/private-photo-vault-iphone-guide/": {
     "lastmod": "2026-07-01",
     "hash": "dad1bf45eb3dd4a809694414069dc4fae10d0f099c933e084159ac007fe21b50"
+  },
+  "/blog/private-transcriber-action-items-after-meetings/": {
+    "lastmod": "2026-07-02",
+    "hash": "ce45800aa85f2bcda23a6121e0f98de17580cb5a707067dd46739f1f75898fca"
   },
   "/blog/priviscribe-speaker-labeling-meeting-notes/": {
     "lastmod": "2026-07-01",
@@ -1963,6 +2071,14 @@
     "lastmod": "2026-07-01",
     "hash": "156d7ef5d3d6b761f4891b591c1b78d111cef2284be6dfb9ca87b905225f18eb"
   },
+  "/blog/quiltfit-backing-seam-placement-planning/": {
+    "lastmod": "2026-07-02",
+    "hash": "4f3097a48fbd47996b453a69132cc16f1c87d9054939fc781d98b62a571c861b"
+  },
+  "/blog/quiltfit-border-audition-before-buying-fabric/": {
+    "lastmod": "2026-07-02",
+    "hash": "dcf50fd1a6af51e67c4272c75200aa89ebb275e2c6fe914a176bf8976935fadd"
+  },
   "/blog/quiltfit-comparing-two-layout-options-before-cutting/": {
     "lastmod": "2026-07-01",
     "hash": "19eaa99429cf2a0373fd22331eb3ba01dc0e07f66b7b1c8ef8a3d035524047ed"
@@ -2007,6 +2123,10 @@
     "lastmod": "2026-07-01",
     "hash": "93a7c2db7d1539fe4ab7f0589fb7302f80575e5e6ef4b33f66350c744a7c901c"
   },
+  "/blog/quiltfit-longarm-prep-checklist/": {
+    "lastmod": "2026-07-02",
+    "hash": "ba8a73e40d82db2d5bd0fbe732f38712a1cfe08e5f3fa164c72eea8b7ad85602"
+  },
   "/blog/quiltfit-planning-a-quilt-along-project/": {
     "lastmod": "2026-07-01",
     "hash": "6f8c1ad4eba7e78b030c0636231ee5a768a97fd4c94bb749fb62530e589cd01a"
@@ -2015,6 +2135,10 @@
     "lastmod": "2026-07-01",
     "hash": "8ecb42be0d0af445b8c3a26862f990951d037c8697b61dd45b6b170e366d7508"
   },
+  "/blog/quiltfit-quilt-label-text-planning/": {
+    "lastmod": "2026-07-02",
+    "hash": "567aa5b481f221e1626a82738215f0439bb910f90ae1eb93ae231b0f57da2244"
+  },
   "/blog/quiltfit-quilt-retreat-prep/": {
     "lastmod": "2026-07-01",
     "hash": "7408f3bfe23d545dea8ecf1df7885b4ff0758b45babc3c9ef11c4ba26b62ba86"
@@ -2022,6 +2146,14 @@
   "/blog/quiltfit-restart-unfinished-quilt-project/": {
     "lastmod": "2026-07-01",
     "hash": "e7e42a725cc45f5c717ca96ed33ef145af4bcd93c370d19a58f283181b7599ff"
+  },
+  "/blog/quiltfit-sashing-cornerstone-layout-planning/": {
+    "lastmod": "2026-07-02",
+    "hash": "6e8f5b72bc6ce105654d34dcd8baa14f55ce268497f1071ac4f1342ce6b3eda1"
+  },
+  "/blog/quiltfit-scrap-basket-color-sorting/": {
+    "lastmod": "2026-07-02",
+    "hash": "3bbff1a7ea771d0b7cafcdbd71b9a975813162e69f3f1ab144b325c5ccc9c11f"
   },
   "/blog/quiltfit-scrap-quilt-from-stash/": {
     "lastmod": "2026-07-01",
@@ -2075,9 +2207,17 @@
     "lastmod": "2026-07-01",
     "hash": "b6b71d3e3b4f01bc6674139d6e1d12c47a764c5b8b39819ffe82e6d3bc24213e"
   },
+  "/blog/repeatable-cabinet-parts-naming-system/": {
+    "lastmod": "2026-07-02",
+    "hash": "fe3cf81ac1e51212145472266fa238abd8610d30e2800d2b052257cedbfea58b"
+  },
   "/blog/ritualix-ai-habit-plan-vs-diy/": {
     "lastmod": "2026-07-01",
     "hash": "348798c7ea3adb91ae1f92265780f1434ba0f0275822b615d0e13d6838afa648"
+  },
+  "/blog/ritualix-seasonal-habit-reset-planning/": {
+    "lastmod": "2026-07-02",
+    "hash": "b2ed8e0bb6caf60af041fdd30b47fef9fa4dbf3bd4eba2bdbc1781e96b735f9c"
   },
   "/blog/ritualix-widgets-home-screen-habit-visibility/": {
     "lastmod": "2026-07-01",
@@ -2167,6 +2307,10 @@
     "lastmod": "2026-07-01",
     "hash": "3e4f974bd25fb79aea69bb9d93f54e41207affd23fcc8941c622cb0d811e0f18"
   },
+  "/blog/sheet-goods-cut-plan-for-retail-display-stand/": {
+    "lastmod": "2026-07-02",
+    "hash": "20ba847869cfbcabb0ca77b371d7f8cc32d1ba9da3adc14bc02b908418534450"
+  },
   "/blog/sheet-goods-delivery-storage-planning/": {
     "lastmod": "2026-07-01",
     "hash": "f7e06bbb5a22ce861a41a7714677a7d77dd41372c2509c97e35748db08ab1497"
@@ -2191,6 +2335,10 @@
     "lastmod": "2026-07-01",
     "hash": "7b8f7561701c5c18794b92886182ae51b3589509ddb15c9aadfecd6113a5ab04"
   },
+  "/blog/shift-calendar-overtime-and-pay-period-review/": {
+    "lastmod": "2026-07-02",
+    "hash": "d0cb413335347da304a90547756634bfef58c13c9da1d298c5a7c61acbad5a62"
+  },
   "/blog/shop-layout-and-workflow-design/": {
     "lastmod": "2026-07-01",
     "hash": "1c473a23165b03113a4b82695c113c01f639d4816be36c299da5ce595bf209b2"
@@ -2202,6 +2350,10 @@
   "/blog/shower-floor-mosaic-drain-layout/": {
     "lastmod": "2026-07-01",
     "hash": "8b0e5fbfb3d94e335270d2246009f14862c4ce97f3ffe3ae5728cfd3176ee271"
+  },
+  "/blog/shower-wall-tile-niche-symmetry/": {
+    "lastmod": "2026-07-02",
+    "hash": "59d95105cda5e8729942765d2d4054590e0f8b09fc93c8da4c9a7cd90e2834ff"
   },
   "/blog/signaturemark-batch-watermark-photo-shoot/": {
     "lastmod": "2026-07-01",
@@ -2219,6 +2371,10 @@
     "lastmod": "2026-07-01",
     "hash": "a70b0394dd88af229557b9139137d74679d65dfd088a70b2bf6f9642fae6e1bd"
   },
+  "/blog/snapcleaner-screenshot-cleanup-workflow/": {
+    "lastmod": "2026-07-02",
+    "hash": "6f36b01d4ffb2f8841dc0662918fb37f7d8775addc6d53fbd78237e3badb9deb"
+  },
   "/blog/snaplabel-ai-photo-label-maker-guide/": {
     "lastmod": "2026-07-01",
     "hash": "8b687da55aac887343d4bcc73a7656b54795c1207c97242a27cc6ea923318790"
@@ -2235,6 +2391,10 @@
     "lastmod": "2026-07-01",
     "hash": "48edb4941554ee184d8ee2bba554ec876d1dbe8ec74a17faa3e61fb9fc5ca9ba"
   },
+  "/blog/snaplabel-labeling-cable-and-charger-storage/": {
+    "lastmod": "2026-07-02",
+    "hash": "75d0c0c8e4cd38e27e438b76ddb36476c2bd0c3fc11b75e65eec2c33187dab1e"
+  },
   "/blog/snaplabel-printable-label-workflow/": {
     "lastmod": "2026-07-01",
     "hash": "ed25547adf7f34e9e911cd5572d97300c8e4cb7ccae9bbf188fe9ee0d4f82e80"
@@ -2242,6 +2402,10 @@
   "/blog/snaplabel-small-business-product-labels/": {
     "lastmod": "2026-07-01",
     "hash": "b973f50944f7d2ec9146b8bb141e58cc596d40d47e8e65ff44194ccbcbc7b39a"
+  },
+  "/blog/snapqr-event-table-signs-qr-codes/": {
+    "lastmod": "2026-07-02",
+    "hash": "be2764cf6ce430ad5769c916fae3de523c6b2e8b3d6ad6e4dcebc7f8d31b6480"
   },
   "/blog/snapqr-private-qr-code-scanner-history/": {
     "lastmod": "2026-07-01",
@@ -2259,6 +2423,10 @@
     "lastmod": "2026-07-01",
     "hash": "18e75bbfd84ba57a00625bce7535fd0b3490a9721ca048fd48c1bf28d2f6f59c"
   },
+  "/blog/snapreceipt-job-costing-by-project-tags/": {
+    "lastmod": "2026-07-02",
+    "hash": "49344fe4e71861d0986f14df48bd757908437d2c99d5dd5d0dbf23fa106adf77"
+  },
   "/blog/snapstock-product-photos-why-bother/": {
     "lastmod": "2026-07-01",
     "hash": "7a4459574ab9b33b498e5dd880e4ad112ce0208b3c86afe5dfe9d878a5a7dc25"
@@ -2270,6 +2438,10 @@
   "/blog/snapstock-vs-spreadsheet-small-business-inventory/": {
     "lastmod": "2026-07-01",
     "hash": "591533ac0f2072cf2a67f7d39cda28840bf3698bc5ebe530c0ffdf7e2738be97"
+  },
+  "/blog/speaker-tools-room-tone-check-before-recording/": {
+    "lastmod": "2026-07-02",
+    "hash": "066a9573535c7f7e9a33fe4ae929906c57b0ff6179d365aaa0ad5a6dc478b8fc"
   },
   "/blog/speaker-tools-subscription-when-it-makes-sense/": {
     "lastmod": "2026-07-01",
@@ -2359,6 +2531,10 @@
     "lastmod": "2026-07-01",
     "hash": "6ee29d8b53d55a472e300bf53189d4597243352ddcc917e2425dbba893097a21"
   },
+  "/blog/stair-run-planning-when-space-is-too-short/": {
+    "lastmod": "2026-07-02",
+    "hash": "b2bb8bee379aef42c773470108dffc3505d5a68a43de6c97f5c9184503c17867"
+  },
   "/blog/stair-skirt-board-measurement/": {
     "lastmod": "2026-07-01",
     "hash": "70df39d1837e931ee58ad901f32eed161dd0c9f7e4d3ca7a0ca488aab30be24d"
@@ -2374,6 +2550,10 @@
   "/blog/stair-stringer-design-rise-run-basics/": {
     "lastmod": "2026-07-01",
     "hash": "e946a7c821777870e84d8df2985c278556299b4493f5e38ed363347b25b17854"
+  },
+  "/blog/stair-stringer-layout-for-existing-concrete-landing/": {
+    "lastmod": "2026-07-02",
+    "hash": "b8c59561913e34e4c9e336f1a78e54f3460f4b5efc222988284cac0d19dd0484"
   },
   "/blog/stair-stringer-material-and-thickness/": {
     "lastmod": "2026-07-01",
@@ -2394,6 +2574,10 @@
   "/blog/stair-tread-nosing-radius-slip-safety/": {
     "lastmod": "2026-07-01",
     "hash": "19b1ec3ea1a3564553157272fce34a037100ba9b37dd012996cc51ca82543dac"
+  },
+  "/blog/stair-tread-replacement-measurement-checklist/": {
+    "lastmod": "2026-07-02",
+    "hash": "a62d31a807203ec9bc65b0502fc5c975f0f216dd0daef912ba235cc26a13d5de"
   },
   "/blog/stereo-channel-test-left-right-speakers/": {
     "lastmod": "2026-07-01",
@@ -2431,6 +2615,10 @@
     "lastmod": "2026-07-01",
     "hash": "4d657740c9f61b48e375a74387913791d3e34780e161737b1d4ec0d58cf2e7a6"
   },
+  "/blog/tile-around-floor-registers-cut-planning/": {
+    "lastmod": "2026-07-02",
+    "hash": "5dbc383fe0453cbcbed94f72a13186b35d39372d10b97d6bca439a032cb1b29d"
+  },
   "/blog/tile-around-toilet-flange-planning/": {
     "lastmod": "2026-07-01",
     "hash": "37f75e8661dfb58acda8f14d93a054c379f466112c96a62ef345747c28b29022"
@@ -2450,6 +2638,10 @@
   "/blog/tile-expansion-joint-planning/": {
     "lastmod": "2026-07-01",
     "hash": "cb215b8e66ced74bf5dc3ac9ceac8eaaf11fc6547ce5fd95aa534972d45bdea0"
+  },
+  "/blog/tile-layout-for-kitchen-island-sightlines/": {
+    "lastmod": "2026-07-02",
+    "hash": "c0fdee6a30adc806ac4e343fe96748e7387be468312b52d3e11dc9e8e8f3b01f"
   },
   "/blog/tile-layout-for-small-bathrooms/": {
     "lastmod": "2026-07-01",
@@ -2474,6 +2666,10 @@
   "/blog/tile-niche-layout-planning/": {
     "lastmod": "2026-07-01",
     "hash": "b3bbaf27953ca81b21cad02878043fbcec039e9fc5cc68f12df2c4c3ef98f95c"
+  },
+  "/blog/tile-order-attic-stock-how-much-to-keep/": {
+    "lastmod": "2026-07-02",
+    "hash": "c9b43e74d31bee60619b424a80a539e73b58081553b689ac8683f55182137a74"
   },
   "/blog/tile-pattern-planning-and-waste/": {
     "lastmod": "2026-07-01",
@@ -2518,6 +2714,10 @@
   "/blog/tinnitus-relief-choosing-a-sound-for-your-environment/": {
     "lastmod": "2026-07-01",
     "hash": "c7e2df0195d9da766f9cfd1f57c4235ff2460e16dbbfff72b01771dd8d751706"
+  },
+  "/blog/tinnitus-sound-masking-travel-hotel-room/": {
+    "lastmod": "2026-07-02",
+    "hash": "3b48278969e728c39f7e5441bd48725d99445243b1074b644634598ae71890e4"
   },
   "/blog/tool-maintenance-schedule-for-woodworkers/": {
     "lastmod": "2026-07-01",
