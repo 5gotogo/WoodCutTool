@@ -1109,7 +1109,7 @@ export const compareData = {
         slug: "mindnest-vs-paper-diary",
         vs: "a Paper Diary",
         title: "MindNest vs a Paper Diary",
-        desc: "MindNest: Secret Journal vs a paper diary: a lock, search, always with you, and private on-device entries vs a notebook anyone can open. See the private journaling option.",
+        desc: "MindNest vs a paper diary: lock, search, and private on-device entries instead of a notebook that can be opened or misplaced.",
         intro: "A paper diary can be read by anyone who finds it, and you cannot search it. MindNest is a locked, searchable journal on your phone, private and always with you.",
         rows: [
           ["Lock", "Yes", "No"],
@@ -1317,7 +1317,7 @@ export const compareData = {
         slug: "invoice-maker-vs-word-or-excel-invoices",
         vs: "Word or Excel Invoices",
         title: "Invoice Maker vs Word or Excel Invoices",
-        desc: "Invoice Maker: Estimate PDF vs building invoices in Word or Excel: ready templates, automatic totals, and mobile PDF export vs manual formatting. See the faster way to invoice.",
+        desc: "Invoice Maker vs Word or Excel invoices: ready templates, automatic totals, and mobile PDF export instead of manual formatting.",
         intro: "Building invoices in Word or Excel means fiddling with formatting and totals every time. Invoice Maker has ready templates that calculate totals and export a clean PDF from your phone.",
         rows: [
           ["Templates", "Ready-made", "Build your own"],
@@ -1369,7 +1369,7 @@ export const compareData = {
         slug: "expense-report-maker-vs-building-reports-in-excel",
         vs: "Building Reports in Excel",
         title: "Expense Report Maker vs Building Reports in Excel",
-        desc: "ExpenseReportMaker & Receipts vs Excel expense reports: attach receipts, auto totals, and a clean PDF vs manual spreadsheet formatting. See the faster reimbursement workflow.",
+        desc: "ExpenseReportMaker vs Excel expense reports: attach receipts, auto totals, and export clean PDFs instead of formatting spreadsheets by hand.",
         intro: "Building an expense report in Excel means formatting rows, totaling by hand, and stapling receipts separately. ExpenseReportMaker combines receipts and totals into a clean PDF report.",
         rows: [
           ["Receipts attached", "In the report", "Stapled separately"],
@@ -1651,7 +1651,7 @@ export const compareData = {
         slug: "image-compressor-vs-online-compression-sites",
         vs: "Online Compression Sites",
         title: "Image Compressor vs Online Compression Sites",
-        desc: "Image Compressor & ZIP vs uploading photos to compression websites: on-device privacy, offline use, and batch ZIP vs sending images to a server. See the private option.",
+        desc: "Image Compressor & ZIP vs online compression sites: on-device privacy, offline use, batch ZIP export, and no photo uploads.",
         intro: "Online compression sites make you upload your photos to a server. Image Compressor does it on your phone, so images never leave your device, and it works offline.",
         rows: [
           ["Upload to server", "None", "Required"],

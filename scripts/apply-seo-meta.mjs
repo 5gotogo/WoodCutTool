@@ -19,6 +19,16 @@ const pages = {
     title: "Plan Plywood Cuts & Cut Less Waste | WoodCutTool",
     desc: "Free plywood cutting calculator and cut list optimizer. Plan sheet layouts, add kerf, and cut less waste in your browser - no login."
   },
+  "privacy-policy/index.html": {},
+  "terms-of-service/index.html": {},
+  "legal/Stringer/privacy/index.html": {},
+  "legal/Stringer/support/index.html": {},
+  "legal/Tinnitus/privacy/index.html": {},
+  "legal/Tinnitus/support/index.html": {},
+  "legal/cutlist/privacy/index.html": {},
+  "legal/cutlist/support/index.html": {},
+  "legal/quiltfit/privacy/index.html": {},
+  "legal/quiltfit/support/index.html": {},
   "tools/index.html": {
     title: "Free Woodworking Calculators for Cuts, Waste & Cost",
     desc: "Free woodworking calculators and DIY construction tools: plywood cuts, cut lists, board feet, waste, stairs, and tile. Pick a tool and start planning.",
@@ -68,11 +78,6 @@ const pages = {
     title: "Plywood Cutting Calculator & CutList Optimizer (Free)",
     desc: "Free plywood cutting calculator and CutList optimizer. Enter sheet size, parts, quantities, and kerf to plan cuts, sheets required, and waste in seconds.",
     bc: [["Home", "/"], ["Tools", "/tools/"], ["CutList Optimizer", "/cutlist/"]]
-  },
-  "compare/index.html": {
-    title: "Woodworking Comparisons: Materials, Saws & Tools | WoodCutTool",
-    desc: "Side-by-side woodworking comparisons: plywood vs MDF, MDF vs particle board, track saw vs table saw, circular saw vs table saw, and cut list software vs spreadsheets.",
-    bc: [["Home", "/"], ["Compare", "/compare/"], ["Comparisons", "/compare/"]]
   },
   "compare/best-plywood-tools/index.html": {
     title: "Best Plywood Cutting Calculator Tools (2026 Compared)",

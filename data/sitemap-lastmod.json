@@ -72,12 +72,12 @@
     "hash": "7b08ba0db3463cdabb9475d0201bd3335048d5b6cb7c74052afac0097d090f5e"
   },
   "/privacy-policy/": {
-    "lastmod": "2026-07-01",
-    "hash": "c618f1b41716b78a570a8a15cb2df36694147b210470f3a2a0a639b1ba27d4eb"
+    "lastmod": "2026-07-02",
+    "hash": "ecef1a6245ed214c93c0146d26fbf933a3b45989d4471bd590fb7fe7e4897d77"
   },
   "/terms-of-service/": {
-    "lastmod": "2026-07-01",
-    "hash": "892a47a442bebd2add689de13183396dcb47b116cfcddcf7b5d7a4b13f5c8612"
+    "lastmod": "2026-07-02",
+    "hash": "c10df26dbb249ff41b1ba37e6c207da0d67861f8413d71d1eed38005911be0c7"
   },
   "/apps/address-label-maker-and-envelope/": {
     "lastmod": "2026-07-01",
@@ -160,8 +160,8 @@
     "hash": "0e966f0436bc5c41b9b795fd5658288663df821b88f3928ce6d5cc82e7ff7abc"
   },
   "/apps/compare/expense-report-maker-vs-building-reports-in-excel/": {
-    "lastmod": "2026-07-01",
-    "hash": "0194b2edca8cd82f66f3de1def6c550493f0907d4194aba0db692293dba9dfd0"
+    "lastmod": "2026-07-02",
+    "hash": "81af1336183209838c8dd5a4e3a74a0897a4cfa317e6f1792b25704d9f6501c8"
   },
   "/apps/compare/expense-report-maker-vs-snapreceipt/": {
     "lastmod": "2026-07-01",
@@ -192,8 +192,8 @@
     "hash": "4e24b428fa2227a5c6b03febac58eae3bd931d2cd97b11eed518bd4c9e8c183d"
   },
   "/apps/compare/image-compressor-vs-online-compression-sites/": {
-    "lastmod": "2026-07-01",
-    "hash": "528a60c65570b2a2e8adfe03bb9330bff53402e6bd3d90cd0332afbe6c22fa89"
+    "lastmod": "2026-07-02",
+    "hash": "40ebdd16fe08acff9bea78f7adc3256a6eb4608165a5eff01d5e554c5efb03a5"
   },
   "/apps/compare/image-compressor-vs-sending-full-size-photos/": {
     "lastmod": "2026-07-01",
@@ -204,8 +204,8 @@
     "hash": "97fa6789b96dbec75d9a9bf42827fb6c4db1e0557ff91f8780dd1a5887debdfd"
   },
   "/apps/compare/invoice-maker-vs-word-or-excel-invoices/": {
-    "lastmod": "2026-07-01",
-    "hash": "79609d7c995ab2696bd7442d7f0fb74b21a16b1ea41a743bb36c5f94f0c9e6b9"
+    "lastmod": "2026-07-02",
+    "hash": "4edf6fd3a93991ec20ada01586d209ebf5ced75e903267a8de0ace4f913674be"
   },
   "/apps/compare/magnifier-reader-vs-carrying-a-magnifying-glass/": {
     "lastmod": "2026-07-01",
@@ -228,8 +228,8 @@
     "hash": "44f614036924a640da34fb621eb4ff27328c666801d1a64ea0d2151df20d9991"
   },
   "/apps/compare/mindnest-vs-paper-diary/": {
-    "lastmod": "2026-07-01",
-    "hash": "a738e06a8d5c8e8da903d80649183c4a0926cb1e2b0f3889cc0048ad6b533705"
+    "lastmod": "2026-07-02",
+    "hash": "747b3ef5851cea57800d2740c658bd99c1beaf6361bf8ec828fd17996cce56a9"
   },
   "/apps/compare/pantry-label-maker-vs-masking-tape-and-marker/": {
     "lastmod": "2026-07-01",
@@ -3248,36 +3248,36 @@
     "hash": "25d9283231f88351e9df160f8b08818e7e1f4c8cbe5657802c3abeecd3930e3b"
   },
   "/legal/cutlist/privacy/": {
-    "lastmod": "2026-07-01",
-    "hash": "68fe6f98ab899d9ba15672c121d0a678366c010261626aaa291b67b0c7579235"
+    "lastmod": "2026-07-02",
+    "hash": "c6e0d69e27b200198b3da2037c7523a26b719c4a9cf5a9c84cf3c0f8beda3179"
   },
   "/legal/cutlist/support/": {
-    "lastmod": "2026-07-01",
-    "hash": "01c233c767bb5705ece82ff5bda6ac896996509fc971354b8fe9402728495ebb"
+    "lastmod": "2026-07-02",
+    "hash": "c1756e57088e72c4026474674da401247b25a276fb75074f36da222a778d0802"
   },
   "/legal/quiltfit/privacy/": {
-    "lastmod": "2026-07-01",
-    "hash": "ea5b9162a05a4a0cf0c51d5f2177d19f1e76b80a145e1cb14aa924c9d375ebb1"
+    "lastmod": "2026-07-02",
+    "hash": "de5308b1a840354a56bdff7e3f2913150f49fdb40827d3e3c0a1db1ebe14d3c5"
   },
   "/legal/quiltfit/support/": {
-    "lastmod": "2026-07-01",
-    "hash": "69d3a67879312a060aa772f28653a1fd68db2c8cfbdf62985e96e5cc1942eaa1"
+    "lastmod": "2026-07-02",
+    "hash": "f0822db108e64a854a13b828ecaa5be45cd111cabeb955b54aa2eb2962c52c31"
   },
   "/legal/Stringer/privacy/": {
-    "lastmod": "2026-07-01",
-    "hash": "4737024bc1d3beae1762a894988f90e76313868afec342b988d278c6e80786b3"
+    "lastmod": "2026-07-02",
+    "hash": "f4dc9051be59bbb037050410df539eebc23b5c6246f32bd4c39c4223ae8977ff"
   },
   "/legal/Stringer/support/": {
-    "lastmod": "2026-07-01",
-    "hash": "f74873c0559b03f4d2777e8f7ac07cbc400a43b13ccf6b04d5e5aebf6e50677c"
+    "lastmod": "2026-07-02",
+    "hash": "b10dbd36d76fd16603cb48c61d7e621a90fe40baf27f6faea4fec2f7eba26be2"
   },
   "/legal/Tinnitus/privacy/": {
-    "lastmod": "2026-07-01",
-    "hash": "8cca46558ba23dcd649f474959c9c5f349528451848e98ce638eb7575c2c5d82"
+    "lastmod": "2026-07-02",
+    "hash": "a722fe8c8fe9677793b7a1b7a10e1b7f39810479a21855b7c42dabb4372c4c44"
   },
   "/legal/Tinnitus/support/": {
-    "lastmod": "2026-07-01",
-    "hash": "91af0bcb4312c2f2b2286bf0593a592f61885c6c36f0c472c7980faf21cf3204"
+    "lastmod": "2026-07-02",
+    "hash": "9825d4eb9a115b86fe8ec3211dca09f545c50a4965cdd86cd923842ebc75201b"
   },
   "/templates/": {
     "lastmod": "2026-07-01",
