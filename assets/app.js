@@ -4733,7 +4733,7 @@ function initBlogDirectorySearch() {
     }
   };
 
-  // Prefill from ?q= so the Schema.org SearchAction (/blog/?q=) actually works.
+  // Prefill from ?q= when linking to filtered blog directory views.
   try {
     const q = new URLSearchParams(window.location.search).get("q");
     if (q) {

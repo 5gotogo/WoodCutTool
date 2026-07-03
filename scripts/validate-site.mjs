@@ -142,6 +142,10 @@ for (const file of htmlFiles) {
 
   const html = readText(file);
 
+  if (html.includes("{search_term_string}")) {
+    errors.push(`${file} exposes a SearchAction template URL that Google may crawl: {search_term_string}`);
+  }
+
   if (!hasNoindex(html)) {
     const route = canonicalRoute(html, routeFromFile(file));
     if (!sitemapUrlSet.has(`${siteUrl}${route}`)) {
