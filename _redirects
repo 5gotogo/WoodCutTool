@@ -1,5 +1,9 @@
 https://www.woodcuttool.com/* https://woodcuttool.com/:splat 301
 /index.html / 301
+/*/index.html /:splat/ 301
+/apps/cutlist-plywood-optimizer/ /apps/cutlist/ 301
+/apps/quiltfit-quilt-design-planner/ /apps/quiltfit/ 301
+/apps/stringer-stair-layout/ /apps/stringer/ 301
 /apps/index.html /apps/ 301
 /apps/cutlist/index.html /apps/cutlist/ 301
 /apps/quiltfit/index.html /apps/quiltfit/ 301

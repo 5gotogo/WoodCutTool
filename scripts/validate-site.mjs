@@ -21,6 +21,26 @@ function pathExists(route) {
   return existsSync(join(root, clean)) || existsSync(join(root, `${clean}.html`));
 }
 
+function directoryRouteExists(pathname) {
+  if (!pathname || pathname === "/") {
+    return false;
+  }
+
+  return existsSync(join(root, pathname, "index.html"));
+}
+
+function redirectProneLocalPath(pathname) {
+  if (pathname.endsWith("/index.html")) {
+    return "uses /index.html instead of the canonical directory route";
+  }
+
+  if (!pathname.endsWith("/") && directoryRouteExists(pathname)) {
+    return "omits trailing slash for a directory route";
+  }
+
+  return "";
+}
+
 function readText(path) {
   return readFileSync(join(root, path), "utf8");
 }
@@ -102,6 +122,11 @@ for (const url of sitemapUrls) {
   }
 
   const route = new URL(url).pathname;
+  const redirectReason = redirectProneLocalPath(route);
+  if (redirectReason) {
+    errors.push(`Sitemap URL ${redirectReason}: ${route}`);
+  }
+
   if (!pathExists(route)) {
     errors.push(`Sitemap route missing local page: ${route}`);
   }
@@ -137,8 +162,17 @@ for (const file of htmlFiles) {
       continue;
     }
 
-    if (link.startsWith("/") && !pathExists(link)) {
-      errors.push(`${file} references missing local path: ${link}`);
+    if (link.startsWith("/")) {
+      const pathname = new URL(link, siteUrl).pathname;
+      const redirectReason = redirectProneLocalPath(pathname);
+
+      if (redirectReason) {
+        errors.push(`${file} references redirect-prone local path that ${redirectReason}: ${link}`);
+      }
+
+      if (!pathExists(link)) {
+        errors.push(`${file} references missing local path: ${link}`);
+      }
     }
   }
 }

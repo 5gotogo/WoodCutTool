@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags } from "./seo-meta.mjs";
@@ -107,7 +107,8 @@ const detailRouteOverrides = {
   "stringer-stair-layout": "/apps/stringer/"
 };
 
-const generatedAliasSlugs = new Set(["stringer-stair-layout"]);
+const generatedOverrideSlugs = new Set(["stringer-stair-layout"]);
+const handWrittenOverrideSlugs = new Set(["cutlist-plywood-optimizer", "quiltfit-quilt-design-planner"]);
 
 const featuredApps = [
   ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
@@ -675,17 +676,26 @@ function updateHomePage() {
 mkdirSync(join(root, "apps"), { recursive: true });
 writeFileSync(join(root, "apps", "index.html"), appsIndexPage());
 
+let generatedDetailPageCount = 0;
+
 apps.forEach((app, index) => {
-  const dir = join(root, "apps", app.slug);
+  const slugDir = join(root, "apps", app.slug);
+
+  if (handWrittenOverrideSlugs.has(app.slug)) {
+    rmSync(slugDir, { recursive: true, force: true });
+    return;
+  }
+
+  const outputRoute = generatedOverrideSlugs.has(app.slug) ? detailHref(app) : `/apps/${app.slug}/`;
+  const dir = join(root, outputRoute);
   mkdirSync(dir, { recursive: true });
   writeFileSync(join(dir, "index.html"), appDetailPage(app, index));
+  generatedDetailPageCount += 1;
 
-  if (generatedAliasSlugs.has(app.slug)) {
-    const aliasDir = join(root, detailHref(app));
-    mkdirSync(aliasDir, { recursive: true });
-    writeFileSync(join(aliasDir, "index.html"), appDetailPage(app, index));
+  if (generatedOverrideSlugs.has(app.slug)) {
+    rmSync(slugDir, { recursive: true, force: true });
   }
 });
 
 updateHomePage();
-console.log(`Generated ${apps.length} app detail pages.`);
+console.log(`Generated ${generatedDetailPageCount} app detail pages.`);

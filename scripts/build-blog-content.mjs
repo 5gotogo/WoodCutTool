@@ -11648,6 +11648,18 @@ function updateExistingHtml() {
   }
 }
 
+function existingFeedMeta() {
+  try {
+    const xml = readFileSync(join(root, "feed.xml"), "utf8");
+    return {
+      latestGuid: xml.match(/<guid isPermaLink="true">([^<]+)<\/guid>/)?.[1] || "",
+      lastBuildDate: xml.match(/<lastBuildDate>([^<]+)<\/lastBuildDate>/)?.[1] || ""
+    };
+  } catch {
+    return { latestGuid: "", lastBuildDate: "" };
+  }
+}
+
 mkdirSync(join(root, "blog"), { recursive: true });
 writeFileSync(join(root, "assets", "blog-translations.json"), `${JSON.stringify(generateBlogTranslations(), null, 2)}\n`);
 writeFileSync(join(root, "blog", "index.html"), blogIndex());
@@ -11664,10 +11676,14 @@ updateExistingHtml();
 function buildRssFeed() {
   const site = "https://woodcuttool.com";
   const recent = articles.slice(-160).reverse();
-  const now = new Date();
+  const latestUrl = recent[0] ? `${site}/blog/${recent[0].slug}/` : "";
+  const previous = existingFeedMeta();
+  const anchorDate = previous.latestGuid === latestUrl && previous.lastBuildDate
+    ? new Date(previous.lastBuildDate)
+    : new Date();
   const items = recent.map((article, i) => {
     // Stagger pubDates so newest posts sort first in readers.
-    const d = new Date(now.getTime() - i * 86400000);
+    const d = new Date(anchorDate.getTime() - i * 86400000);
     const url = `${site}/blog/${article.slug}/`;
     return `    <item>
       <title>${escapeHtml(article.title)}</title>
@@ -11686,7 +11702,7 @@ function buildRssFeed() {
     <atom:link href="${site}/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical woodworking guides on plywood cutting, cut lists, materials, cabinets, stairs, and tile from WoodCutTool.</description>
     <language>en</language>
-    <lastBuildDate>${now.toUTCString()}</lastBuildDate>
+    <lastBuildDate>${anchorDate.toUTCString()}</lastBuildDate>
 ${items}
   </channel>
 </rss>

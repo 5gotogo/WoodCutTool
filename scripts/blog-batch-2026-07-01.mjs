@@ -1375,7 +1375,7 @@ export const blogBatch20260701 = [
         ["Is a quilt-along's published fabric list always accurate?", "It is a reliable starting point, but personal variations in size or layout can change the actual requirement."]
       ],
       sources: [
-        ["QuiltFit app detail", "/apps/quiltfit-quilt-design-planner/", "WoodCutTool app page for quilt design planning, fabric yardage, and saved projects."],
+        ["QuiltFit app detail", "/apps/quiltfit/", "WoodCutTool app page for quilt design planning, fabric yardage, and saved projects."],
         ["Quilt project tracking from sketch to finish", "/blog/quilt-project-tracking-from-sketch-to-finish/", "Internal guide to tracking a quilt project over time."]
       ]
     }
@@ -1419,7 +1419,7 @@ export const blogBatch20260701 = [
         ["Can fabric use be tracked across a batch of donation quilts?", "Yes, logging finished size and fabric per quilt supports batch reporting for guild coordinators or programs."]
       ],
       sources: [
-        ["QuiltFit app detail", "/apps/quiltfit-quilt-design-planner/", "WoodCutTool app page for quilt sizing, fabric planning, and saved projects."],
+        ["QuiltFit app detail", "/apps/quiltfit/", "WoodCutTool app page for quilt sizing, fabric planning, and saved projects."],
         ["Charity quilt batch planning", "/blog/charity-quilt-batch-planning/", "Internal guide to planning multiple donation quilts efficiently."]
       ]
     }
@@ -1463,7 +1463,7 @@ export const blogBatch20260701 = [
         ["What if my bundle is a piece or two short of the pattern's requirement?", "A small planned buffer or a backup coordinating fat quarter can cover a minor shortfall without stalling the project."]
       ],
       sources: [
-        ["QuiltFit app detail", "/apps/quiltfit-quilt-design-planner/", "WoodCutTool app page for fabric planning and block layout."],
+        ["QuiltFit app detail", "/apps/quiltfit/", "WoodCutTool app page for fabric planning and block layout."],
         ["Fat quarter quilt planning", "/blog/fat-quarter-quilt-planning/", "Internal guide to planning quilts around precut fat quarters."]
       ]
     }
@@ -1507,7 +1507,7 @@ export const blogBatch20260701 = [
         ["Should improv projects use a bigger fabric buffer?", "Yes, a larger buffer than a pattern-based project is a reasonable trade for the flexibility improv piecing offers."]
       ],
       sources: [
-        ["QuiltFit app detail", "/apps/quiltfit-quilt-design-planner/", "WoodCutTool app page for fabric roles, tracking, and saved projects."],
+        ["QuiltFit app detail", "/apps/quiltfit/", "WoodCutTool app page for fabric roles, tracking, and saved projects."],
         ["QuiltFit scrap quilt from stash", "/blog/quiltfit-scrap-quilt-from-stash/", "Internal guide to planning a flexible quilt from stash fabric."]
       ]
     }
@@ -1551,7 +1551,7 @@ export const blogBatch20260701 = [
         ["What happens to the layout I do not choose?", "Keep it saved; it remains ready to revisit for a future quilt or a different fabric pull."]
       ],
       sources: [
-        ["QuiltFit app detail", "/apps/quiltfit-quilt-design-planner/", "WoodCutTool app page for saved projects, yardage, and fabric role planning."],
+        ["QuiltFit app detail", "/apps/quiltfit/", "WoodCutTool app page for saved projects, yardage, and fabric role planning."],
         ["QuiltFit digital quilt planning workflow", "/blog/quiltfit-digital-quilt-planning-workflow/", "Internal guide to the digital planning process in QuiltFit."]
       ]
     }
