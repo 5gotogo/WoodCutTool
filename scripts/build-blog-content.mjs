@@ -5,6 +5,7 @@ import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 import { blogBatch20260630 } from "./blog-batch-2026-06-30.mjs";
 import { blogBatch20260701 } from "./blog-batch-2026-07-01.mjs";
 import { blogBatch20260702 } from "./blog-batch-2026-07-02.mjs";
+import { blogBatch20260703 } from "./blog-batch-2026-07-03.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -9662,6 +9663,7 @@ function createLongResearchArticles() {
 
 articles.push(...createLongResearchArticles());
 articles.push(...blogBatch20260702);
+articles.push(...blogBatch20260703);
 
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {

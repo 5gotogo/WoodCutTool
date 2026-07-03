@@ -103,6 +103,17 @@ function hashContent(value) {
   return createHash("sha256").update(value).digest("hex");
 }
 
+function todayInTimeZone(timeZone = "Asia/Shanghai") {
+  const parts = new Intl.DateTimeFormat("en", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).formatToParts(new Date());
+  const value = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${value.year}-${value.month}-${value.day}`;
+}
+
 function loadJson(path) {
   if (!existsSync(path)) return {};
   try {
@@ -277,7 +288,7 @@ for (const file of collectHtmlFiles()) {
 }
 
 const urls = sortRoutes([...routes]);
-const today = new Date().toISOString().slice(0, 10);
+const today = todayInTimeZone(process.env.SITEMAP_TIME_ZONE || "Asia/Shanghai");
 const previousState = loadJson(lastmodStatePath);
 const legacyLastmods = loadExistingSitemapLastmods();
 const nextState = {};
