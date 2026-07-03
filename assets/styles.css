@@ -4204,6 +4204,20 @@ tr:last-child td {
   margin-top: auto;
 }
 
+.blog-section-more {
+  display: grid;
+  min-height: 100%;
+  align-items: center;
+  justify-items: center;
+  padding: 18px;
+  border: 1px dashed rgba(47, 111, 78, 0.35);
+  border-radius: var(--radius);
+  color: var(--accent);
+  background: rgba(255, 255, 255, 0.64);
+  font-weight: 900;
+  text-align: center;
+}
+
 .blog-article-visual {
   min-height: 118px;
   display: grid;

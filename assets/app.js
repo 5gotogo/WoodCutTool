@@ -3424,6 +3424,7 @@ let googleTranslateReady = false;
 let pendingGoogleTranslateLang = null;
 let blogTranslationsPromise = null;
 let blogTranslationsLoaded = false;
+let hasTranslatedDom = false;
 
 const translateString = (text, lang = getActiveLang()) => {
   if (lang === "en") return text;
@@ -3439,6 +3440,7 @@ const t = (text, lang = getActiveLang()) => translateString(text, lang);
 
 function translateElement(root = document.body, lang = getActiveLang()) {
   if (!root) return;
+  if (lang === "en" && !hasTranslatedDom) return;
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
     acceptNode(node) {
       const parent = node.parentElement;
@@ -3465,6 +3467,7 @@ function translateElement(root = document.body, lang = getActiveLang()) {
     if (original.ariaLabel) element.setAttribute("aria-label", translateString(original.ariaLabel, lang));
     if (original.title) element.setAttribute("title", translateString(original.title, lang));
   });
+  if (lang !== "en") hasTranslatedDom = true;
 }
 
 function loadBlogTranslations() {
@@ -3561,7 +3564,9 @@ function setLanguage(lang) {
   document.documentElement.dir = nextLang === "ar" ? "rtl" : "ltr";
   const selector = document.getElementById("language-select");
   if (selector) selector.value = nextLang;
-  translateElement(document.body, nextLang);
+  if (nextLang !== "en" || hasTranslatedDom) {
+    translateElement(document.body, nextLang);
+  }
   if (isBlogPage() && nextLang !== "en") {
     loadBlogTranslations().then(() => translateElement(document.body, nextLang));
   }
@@ -4634,11 +4639,19 @@ function initBlogDirectorySearch() {
   const status = root.querySelector("[data-blog-search-status]");
   const empty = root.querySelector("[data-blog-search-empty]");
   const featured = root.querySelector("[data-blog-featured]");
+  const directoryPanel = root.querySelector("[data-blog-directory-panel]");
   const cards = [...root.querySelectorAll("[data-blog-card]")];
   const directoryItems = [...root.querySelectorAll("[data-blog-directory-item]")];
   const categoryLinks = [...root.querySelectorAll("[data-blog-category-link]")];
   const sections = [...root.querySelectorAll("[data-blog-section]")];
   if (!input) return;
+  let filterActive = false;
+  categoryLinks.forEach((link) => {
+    const countElement = link.querySelector("[data-blog-category-count]");
+    if (countElement && !countElement.dataset.originalBlogCategoryCount) {
+      countElement.dataset.originalBlogCategoryCount = countElement.textContent;
+    }
+  });
 
   const normalize = (value) => String(value || "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
   const getTerms = () => normalize(input.value).split(" ").filter(Boolean);
@@ -4649,17 +4662,37 @@ function initBlogDirectorySearch() {
 
   const applyFilter = () => {
     const terms = getTerms();
+    if (!terms.length) {
+      if (filterActive) {
+        [...cards, ...directoryItems, ...categoryLinks, ...sections, featured].filter(Boolean).forEach((element) => {
+          element.hidden = false;
+          element.style.display = "";
+        });
+        categoryLinks.forEach((link) => {
+          const countElement = link.querySelector("[data-blog-category-count]");
+          if (countElement?.dataset.originalBlogCategoryCount) {
+            countElement.textContent = countElement.dataset.originalBlogCategoryCount;
+          }
+        });
+      }
+      filterActive = false;
+      if (status) status.textContent = `${directoryItems.length} articles`;
+      if (empty) empty.hidden = true;
+      return;
+    }
+
+    filterActive = true;
     let visibleItems = 0;
     const visibleByCategory = new Map();
 
     cards.forEach((card) => {
-      const matched = !terms.length || isMatch(card, terms);
+      const matched = isMatch(card, terms);
       card.hidden = !matched;
       card.style.display = matched ? "" : "none";
     });
 
     directoryItems.forEach((item) => {
-      const matched = !terms.length || isMatch(item, terms);
+      const matched = isMatch(item, terms);
       item.hidden = !matched;
       item.style.display = matched ? "" : "none";
       if (matched) {
@@ -4674,28 +4707,26 @@ function initBlogDirectorySearch() {
       const count = visibleByCategory.get(category) || 0;
       const countElement = link.querySelector("[data-blog-category-count]");
       if (countElement) countElement.textContent = String(count);
-      const hideLink = terms.length > 0 && count === 0;
+      const hideLink = count === 0;
       link.hidden = hideLink;
       link.style.display = hideLink ? "none" : "";
     });
 
     sections.forEach((section) => {
       const visibleCards = [...section.querySelectorAll("[data-blog-card]")].some((card) => !card.hidden);
-      const hideSection = terms.length > 0 && !visibleCards;
+      const hideSection = !visibleCards;
       section.hidden = hideSection;
       section.style.display = hideSection ? "none" : "";
     });
 
     if (featured) {
       const visibleFeaturedCards = [...featured.querySelectorAll("[data-blog-card]")].some((card) => !card.hidden);
-      const hideFeatured = terms.length > 0 && !visibleFeaturedCards;
+      const hideFeatured = !visibleFeaturedCards;
       featured.hidden = hideFeatured;
       featured.style.display = hideFeatured ? "none" : "";
     }
 
-    if (status) {
-      status.textContent = terms.length ? `${visibleItems} matches` : `${directoryItems.length} articles`;
-    }
+    if (status) status.textContent = `${visibleItems} matches`;
 
     if (empty) {
       empty.hidden = visibleItems > 0;
@@ -4705,7 +4736,10 @@ function initBlogDirectorySearch() {
   // Prefill from ?q= so the Schema.org SearchAction (/blog/?q=) actually works.
   try {
     const q = new URLSearchParams(window.location.search).get("q");
-    if (q) input.value = q;
+    if (q) {
+      input.value = q;
+      if (directoryPanel) directoryPanel.open = true;
+    }
   } catch (e) { /* ignore */ }
 
   input.addEventListener("input", applyFilter);

@@ -10,6 +10,7 @@ import { blogBatch20260703 } from "./blog-batch-2026-07-03.mjs";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
 const siteUrl = "https://woodcuttool.com";
+const APP_STORE_URL = "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871";
 const appStoreApps = JSON.parse(readFileSync(join(root, "data/app-store-apps.json"), "utf8"));
 
 
@@ -10423,7 +10424,7 @@ function header(active = "Blogs") {
     ["Learn", "/learn/"]
   ];
 
-  return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links">${links.map(([label, href]) => `<a${label === active ? ' class="active"' : ""} href="${href}">${label}</a>`).join("")}</div><label class="language-picker"><span class="visually-hidden">Language</span><select id="language-select" aria-label="Language"><option value="en">English</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="es">Español</option><option value="pt">Português</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="nl">Nederlands</option><option value="it">Italiano</option><option value="ar">العربية</option><option value="ja">日本語</option></select></label><a class="button small" href="/apps/">Explore Apps</a></nav></header>`;
+  return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links">${links.map(([label, href]) => `<a${label === active ? ' class="active"' : ""} href="${href}">${label}</a>`).join("")}</div><label class="language-picker"><span class="visually-hidden">Language</span><select id="language-select" aria-label="Language"><option value="en">English</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="es">Español</option><option value="pt">Português</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="nl">Nederlands</option><option value="it">Italiano</option><option value="ar">العربية</option><option value="ja">日本語</option></select></label><a class="button small nav-download-cta" href="${APP_STORE_URL}" rel="nofollow noopener">Download CutList</a></nav></header>`;
 }
 
 function footer() {
@@ -10525,6 +10526,23 @@ function articleCard(article) {
       </article>`;
 }
 
+const BLOG_SECTION_CARD_LIMIT = 12;
+const BLOG_INDEX_JSONLD_LIMIT = 120;
+
+function categoryArticles(category) {
+  return articles.filter((article) => article.category === category);
+}
+
+function categoryPreview(category) {
+  const matches = categoryArticles(category);
+  const visible = matches.slice(0, BLOG_SECTION_CARD_LIMIT).map(articleCard).join("\n        ");
+  const remaining = matches.length - BLOG_SECTION_CARD_LIMIT;
+  const moreLink = remaining > 0
+    ? `\n        <a class="blog-section-more" href="/blog/?q=${encodeURIComponent(category)}#blog-directory-list">${remaining} more ${escapeHtml(category)} articles in directory</a>`
+    : "";
+  return `${visible}${moreLink}`;
+}
+
 function directoryLink(article) {
   const articleIndex = Math.max(0, getArticleIndex(article));
   const searchText = [article.title, article.description, article.category, article.kicker, article.slug].join(" ");
@@ -10539,13 +10557,13 @@ function generatedAppBlogSections() {
   return appBlogDefinitions
     .map((config) => `<section class="blog-section" id="${config.sectionId}" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">${escapeHtml(config.category)}</p><h2>${escapeHtml(config.sectionDescription)}</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === config.category).map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview(config.category)}</div>
     </section>`)
     .join("\n\n    ");
 }
 
 function blogIndexJsonLd() {
-  const itemListElement = articles.map((article, index) => ({
+  const itemListElement = articles.slice(0, BLOG_INDEX_JSONLD_LIMIT).map((article, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: article.title,
@@ -10639,7 +10657,7 @@ ${head({
             <a href="#core-guides" data-blog-category-link="Classic guide"><span>Guides</span><strong data-blog-category-count>${oldGuides.length}</strong></a>
           </nav>
           <div class="blog-directory-status" data-blog-search-status>${articles.length + oldGuides.length} articles</div>
-          <div class="blog-directory-list" aria-label="Article list">
+          <div class="blog-directory-list" id="blog-directory-list" aria-label="Article list">
             ${articles.map(directoryLink).join("\n            ")}
             ${oldGuides.map((guide, index) => `<a href="${guide.href}" data-blog-directory-item data-blog-category="${escapeHtml(guide.category)}" data-blog-search="${escapeHtml([guide.title, guide.description, guide.category].join(" ").toLowerCase())}">
               <span>G${index + 1}</span>
@@ -10700,89 +10718,89 @@ ${head({
 
     <section class="blog-section" id="cutlist" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">CutList</p><h2>Sheet optimization and shop workflow.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "CutList").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("CutList")}</div>
     </section>
 
     <section class="blog-section" id="quiltfit" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">QuiltFit</p><h2>Digital quilt planning and fabric decisions.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "QuiltFit").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("QuiltFit")}</div>
     </section>
 
     <section class="blog-section" id="stairs" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Stairs</p><h2>Stringer geometry, comfort, and remodel planning.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "Stairs").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("Stairs")}</div>
     </section>
 
     <section class="blog-section" id="tile" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Tile</p><h2>Tile layout, waste, joints, and wet-area planning.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "Tile").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("Tile")}</div>
     </section>
 
     <section class="blog-section" id="pdf-scan" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">PDF Scan</p><h2>Private document scanning, OCR, scan to PDF workflows, signatures, and file organization.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "PDF Scan").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("PDF Scan")}</div>
     </section>
 
     <section class="blog-section" id="snapreceipt" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">SnapReceipt</p><h2>Receipt tracking, mileage logs, and private expense records for contractors, makers, and small business.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "SnapReceipt").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("SnapReceipt")}</div>
     </section>
 
     <section class="blog-section" id="snaplabel" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">SnapLabel</p><h2>AI photo label making, printable labels, batch labels, and organization workflows.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "SnapLabel").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("SnapLabel")}</div>
     </section>
 
     <section class="blog-section" id="private-meeting" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Private Meeting</p><h2>Private meeting transcription, speaker labels, offline notes, interviews, lectures, and voice-to-text workflows.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "Private Meeting").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("Private Meeting")}</div>
     </section>
 
     <section class="blog-section" id="speaker-tools" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Speaker Tools</p><h2>Frequency generation, stereo channel checks, speaker placement, low-frequency tones, and reference sound level workflows.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "Speaker Tools").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("Speaker Tools")}</div>
     </section>
 
     <section class="blog-section" id="work-shift" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Work Shift</p><h2>Rotating shifts, 6x2 schedules, day-off planning, private roster calendars, and shift-worker workflows.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "Work Shift").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("Work Shift")}</div>
     </section>
 
     <section class="blog-section" id="fridgetrack" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">FridgeTrack</p><h2>Fridge inventory, expiration reminders, freezer tracking, meal planning, and private kitchen records.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "FridgeTrack").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("FridgeTrack")}</div>
     </section>
 
     <section class="blog-section" id="pantry-label" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Pantry Label</p><h2>Printable pantry labels, expiry date labels, freezer labels, no-login kitchen organization, and label templates.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "Pantry Label").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("Pantry Label")}</div>
     </section>
 
     <section class="blog-section" id="address-label" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Address Label</p><h2>Mailing labels, Avery templates, return address labels, envelopes, holiday cards, and printable PDFs.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "Address Label").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("Address Label")}</div>
     </section>
 
     <section class="blog-section" id="snapqr" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">SnapQR</p><h2>QR code generation, Wi-Fi QR codes, scanning history, private QR libraries, PNG export, and PDF sharing.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "SnapQR").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("SnapQR")}</div>
     </section>
 
     ${generatedAppBlogSections()}
 
     <section class="blog-section" id="cadenza" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Cadenza</p><h2>Metronome, tuner, rhythm, intonation, and private music practice workflows.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "Cadenza").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("Cadenza")}</div>
     </section>
 
     <section class="blog-section" id="tinnitus" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Tinnitus</p><h2>Sound masking, sleep sounds, privacy, and evidence-aware app positioning.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "Tinnitus").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("Tinnitus")}</div>
     </section>
 
     <section class="blog-section" id="atomic-clock" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Atomic Clock</p><h2>NTP time sync, precision clock styles, and private on-device timing.</h2></div>
-      <div class="blog-grid">${articles.filter((article) => article.category === "Atomic Clock").map(articleCard).join("\n        ")}</div>
+      <div class="blog-grid">${categoryPreview("Atomic Clock")}</div>
     </section>
 
     <section class="blog-section" id="core-guides" data-blog-section>
