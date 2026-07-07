@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url><loc>https://woodcuttool.com/</loc><lastmod>2026-07-07</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.96</priority></url>
+  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-07-07</lastmod><changefreq>weekly</changefreq><priority>0.96</priority></url>
   <url><loc>https://woodcuttool.com/learn/</loc><lastmod>2026-07-07</lastmod><changefreq>weekly</changefreq><priority>0.93</priority></url>
   <url><loc>https://woodcuttool.com/apps/</loc><lastmod>2026-07-02</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/apps/cutlist/</loc><lastmod>2026-07-04</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
@@ -17,6 +17,7 @@
   <url><loc>https://woodcuttool.com/stair-stringer-calculator/</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://woodcuttool.com/board-foot-calculator/</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://woodcuttool.com/wood-waste-calculator/</loc><lastmod>2026-07-02</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://woodcuttool.com/kerf-calculator/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://woodcuttool.com/blog/</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
     <image:image><image:loc>https://upload.wikimedia.org/wikipedia/commons/e/e3/Scanner.view.750pix.jpg</image:loc></image:image>
     <image:image><image:loc>https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Test_OCR_document.jpg/1280px-Test_OCR_document.jpg</image:loc></image:image>

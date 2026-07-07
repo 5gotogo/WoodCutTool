@@ -140,6 +140,28 @@ const softwareTools = [
     ]
   },
   {
+    path: "/kerf-calculator/",
+    file: "kerf-calculator/index.html",
+    name: "Kerf Calculator",
+    subCategory: "Saw kerf calculator",
+    operatingSystem: "Any",
+    description: "Free saw kerf calculator for estimating material lost, remaining board length, and waste percentage from blade width, number of cuts, and stock length.",
+    keywords: ["kerf calculator", "saw kerf calculator", "blade width calculator", "woodworking calculator", "cut list calculator"],
+    features: ["Blade width input", "Cut count input", "Material lost estimate", "Remaining length estimate", "Waste percentage estimate", "CutList workflow link"],
+    audience: "Woodworkers, carpenters, DIY builders, and small shops",
+    howto: [
+      ["Enter blade width", "Add the saw blade kerf or blade width that will be removed by each cut."],
+      ["Enter the number of cuts", "Count each pass of the blade that removes material from the stock."],
+      ["Enter board length", "Set the usable starting length of the board or strip before cutting."],
+      ["Review material lost", "Check material lost, remaining length, and waste percentage before finalizing the cut list."]
+    ],
+    faq: [
+      ...commonFaq,
+      ["What is a kerf calculator?", "A kerf calculator estimates the material removed by a saw blade by multiplying blade width by the number of cuts."],
+      ["Why should I calculate kerf before making a cut list?", "Kerf reduces the usable stock length, so including it before cutting helps prevent short final parts and more accurate waste estimates."]
+    ]
+  },
+  {
     path: "/stair-stringer-calculator/",
     file: "stair-stringer-calculator/index.html",
     name: "Stair Stringer Calculator",

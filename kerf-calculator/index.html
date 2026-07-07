@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Kerf Calculator — Saw Blade Material Loss</title>
+  <meta name="description" content="Free saw kerf calculator. Enter blade width, number of cuts, and board length to estimate material lost, remaining length, and waste percentage.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/kerf-calculator/">
+  <!-- og:start -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WoodCutTool">
+  <meta property="og:title" content="Free Kerf Calculator — Saw Blade Material Loss">
+  <meta property="og:description" content="Free saw kerf calculator. Enter blade width, number of cuts, and board length to estimate material lost, remaining length, and waste percentage.">
+  <meta property="og:url" content="https://woodcuttool.com/kerf-calculator/">
+  <meta property="og:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Kerf Calculator — Saw Blade Material Loss">
+  <meta name="twitter:description" content="Free saw kerf calculator. Enter blade width, number of cuts, and board length to estimate material lost, remaining length, and waste percentage.">
+  <meta name="twitter:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
+  <!-- og:end -->
+  <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png?v=rounded-mask-20260619">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png?v=rounded-mask-20260619">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
+  <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
+  <meta name="theme-color" content="#e8d9b4">
+  <link rel="stylesheet" href="/assets/styles.css?v=20260701-nav">
+  <script defer src="/assets/app.js?v=20260701-nav"></script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://woodcuttool.com/#organization",
+      "name": "WoodCutTool",
+      "url": "https://woodcuttool.com"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://woodcuttool.com/kerf-calculator/#software",
+      "name": "Kerf Calculator",
+      "url": "https://woodcuttool.com/kerf-calculator/",
+      "applicationCategory": "UtilitiesApplication",
+      "applicationSubCategory": "Saw kerf calculator",
+      "operatingSystem": "Any",
+      "description": "Free saw kerf calculator for estimating material lost, remaining board length, and waste percentage from blade width, number of cuts, and stock length.",
+      "keywords": "kerf calculator, saw kerf calculator, blade width calculator, woodworking calculator, cut list calculator",
+      "featureList": [
+        "Blade width input",
+        "Cut count input",
+        "Material lost estimate",
+        "Remaining length estimate",
+        "Waste percentage estimate",
+        "CutList workflow link"
+      ],
+      "isAccessibleForFree": true,
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Woodworkers, carpenters, DIY builders, and small shops"
+      },
+      "provider": {
+        "@id": "https://woodcuttool.com/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://woodcuttool.com/kerf-calculator/"
+      },
+      "potentialAction": {
+        "@type": "UseAction",
+        "target": "https://woodcuttool.com/kerf-calculator/"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://woodcuttool.com/kerf-calculator/#howto",
+      "name": "How to use the Kerf Calculator",
+      "description": "Free saw kerf calculator for estimating material lost, remaining board length, and waste percentage from blade width, number of cuts, and stock length.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter blade width",
+          "text": "Add the saw blade kerf or blade width that will be removed by each cut.",
+          "url": "https://woodcuttool.com/kerf-calculator/#step-1"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Enter the number of cuts",
+          "text": "Count each pass of the blade that removes material from the stock.",
+          "url": "https://woodcuttool.com/kerf-calculator/#step-2"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Enter board length",
+          "text": "Set the usable starting length of the board or strip before cutting.",
+          "url": "https://woodcuttool.com/kerf-calculator/#step-3"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Review material lost",
+          "text": "Check material lost, remaining length, and waste percentage before finalizing the cut list.",
+          "url": "https://woodcuttool.com/kerf-calculator/#step-4"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://woodcuttool.com/kerf-calculator/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a woodworking calculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A woodworking calculator is a planning tool that helps estimate cut lists, plywood layouts, material quantities, board feet, waste percentage, and project cost before cutting or buying stock."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a cut list optimizer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A cut list optimizer turns part dimensions, quantities, stock size, kerf, and layout rules into a cutting plan so woodworkers can reduce waste and review the project before cutting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I reduce wood waste?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reduce wood waste by measuring real stock, entering every part, accounting for saw kerf, reviewing grain direction, comparing layouts, and using a plywood or cut list calculator before buying material."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which WoodCutTool page should I use first?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Start with the tools hub if you are choosing a workflow. Use the plywood cut calculator for sheet goods, the cut list calculator for boards, the wood waste calculator for scrap cost, and CutList for saved iPhone projects."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a kerf calculator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A kerf calculator estimates the material removed by a saw blade by multiplying blade width by the number of cuts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why should I calculate kerf before making a cut list?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kerf reduces the usable stock length, so including it before cutting helps prevent short final parts and more accurate waste estimates."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- breadcrumb:start -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://woodcuttool.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Tools",
+      "item": "https://woodcuttool.com/tools/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Kerf Calculator",
+      "item": "https://woodcuttool.com/kerf-calculator/"
+    }
+  ]
+}
+  </script>
+  <!-- breadcrumb:end -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links"><a class="active" href="/cutlist/">CutList</a><a href="/quiltfit/">QuiltFit</a><a href="/tile-calculator/">Tile</a><a href="/stringer/">Stringer</a><a href="/blog/">Blogs</a><a href="/apps/">Apps</a><a href="/tools/">Tools</a><a href="/learn/">Learn</a></div><label class="language-picker"><span class="visually-hidden">Language</span><select id="language-select" aria-label="Language"><option value="en">English</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="es">Español</option><option value="pt">Português</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="nl">Nederlands</option><option value="it">Italiano</option><option value="ar">العربية</option><option value="ja">日本語</option></select></label><a class="button small nav-download-cta" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList</a></nav></header>
+
+  <main id="main">
+    <section class="section">
+      <p class="breadcrumb"><a href="/">Home</a> / Kerf Calculator</p>
+      <p class="eyebrow">Saw kerf calculator</p>
+      <h1>Kerf Calculator</h1>
+      <p class="lead">Estimate how much material the saw blade removes from repeated cuts, then check the remaining usable board length before you cut.</p>
+    </section>
+
+    <section class="section tool-layout">
+      <div class="tool-panel">
+        <form id="kerf-form">
+          <fieldset>
+            <legend>Kerf inputs</legend>
+            <div class="input-grid three">
+              <label>Blade width (in) <input name="bladeWidth" type="number" min="0" step="0.001" value="0.125"></label>
+              <label>Cuts <input name="cuts" type="number" min="0" step="1" value="8"></label>
+              <label>Board length (in) <input name="boardLength" type="number" min="0.01" step="0.01" value="96"></label>
+            </div>
+          </fieldset>
+          <button class="button" type="submit">Calculate kerf</button>
+        </form>
+      </div>
+
+      <aside class="result-panel" id="kerf-result" aria-live="polite">
+        <h2>Kerf results</h2>
+        <p class="placeholder">Run the calculator to see material lost, remaining length, and waste percentage.</p>
+        <div class="cta-panel">
+          <h3>Continue with CutList</h3>
+          <p>Move from a quick kerf check into saved cut lists, plywood layouts, PDF exports, and offline project planning.</p>
+          <a class="button" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList iOS</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section">
+      <div class="grid tools">
+        <article class="card"><h2>Cut list calculator</h2><p>Use kerf in a board-by-board cutting plan.</p><a class="card-link" href="/cut-list-calculator/">Open cut list calculator</a></article>
+        <article class="card"><h2>Plywood cut calculator</h2><p>Apply saw kerf to sheet layouts and panel parts.</p><a class="card-link" href="/plywood-cut-calculator/">Open plywood calculator</a></article>
+        <article class="card"><h2>Saw kerf explained</h2><p>Learn what kerf means before entering blade width.</p><a class="card-link" href="/learn/saw-kerf-explained/">Read the kerf guide</a></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-main">
+        <a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a>
+        <nav class="footer-links footer-primary" aria-label="Footer navigation">
+          <a href="/cutlist/">CutList</a>
+          <a href="/plywood-cut-calculator/">Plywood</a>
+          <a href="/stair-stringer-calculator/">Stairs</a>
+          <a href="/blog/">Blogs</a>
+          <a href="mailto:727268425@qq.com">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-disclaimer"><!-- disclaimer --><p><strong>Disclaimer:</strong> WoodCutTool calculators, templates, and guides are provided for general informational and estimating purposes only, on an &quot;as is&quot; basis without warranties of any kind. Results are estimates &mdash; always verify measurements, material quantities, and costs yourself before buying or cutting.</p><p>Our content is not professional, structural, engineering, or safety advice. For stairs, structural work, electrical, plumbing, or anything affecting safety, consult a qualified professional and follow your local building codes and permit requirements. You are responsible for your own measurements, tools, and safety. WoodCutTool is not liable for any loss, injury, or damage arising from use of this site.</p><p>App names, logos, and trademarks (including Apple and App Store) belong to their respective owners and do not imply endorsement. External links and cited sources are provided for reference only.</p></div>
+      <div class="footer-bottom">
+        <p class="muted"><span>© 2026 WoodCutTool.</span> <span>All rights reserved.</span></p>
+        <nav class="footer-links footer-legal" aria-label="Legal navigation">
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/terms-of-service/">Terms of Service</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

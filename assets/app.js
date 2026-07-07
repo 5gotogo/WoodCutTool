@@ -138,6 +138,20 @@ const translations = {
     "Boards required": "所需板材",
     "Cut length": "切割长度",
     "Kerf loss": "锯缝损耗",
+    "Kerf Calculator": "锯缝计算器",
+    "Saw kerf calculator": "锯缝计算器",
+    "Kerf inputs": "锯缝输入",
+    "Blade width (in)": "锯片宽度（英寸）",
+    "Cuts": "切割次数",
+    "Calculate kerf": "计算锯缝",
+    "Kerf results": "锯缝结果",
+    "Kerf estimate": "锯缝估算",
+    "Material lost": "材料损耗",
+    "Remaining length": "剩余长度",
+    "Run the calculator to see material lost, remaining length, and waste percentage.": "运行计算器即可查看材料损耗、剩余长度和浪费比例。",
+    "Continue with CutList": "继续使用 CutList",
+    "Move from a quick kerf check into saved cut lists, plywood layouts, PDF exports, and offline project planning.": "从快速锯缝检查进入已保存切割清单、胶合板排版、PDF 导出和离线项目规划。",
+    "Kerf loss is greater than the board length. Reduce the number of cuts or use longer stock.": "锯缝损耗大于板材长度。请减少切割次数或使用更长的材料。",
     "Optimized cost": "优化后成本",
     "Estimated savings": "预计节省",
     "Savings compare this optimized layout with a simple row-by-row sheet estimate": "节省金额基于优化布局与简单逐行排板估算对比",
@@ -3765,6 +3779,16 @@ const appCta = () => `
   </div>
 `;
 
+const kerfCta = () => `
+  <div class="cta-panel" id="continue-cutlist">
+    <h3>Continue with CutList</h3>
+    <p>Move from a quick kerf check into saved cut lists, plywood layouts, PDF exports, and offline project planning.</p>
+    <div class="cta-row">
+      <a class="button" href="${APP_STORE_URL}" rel="nofollow">Download CutList iOS</a>
+    </div>
+  </div>
+`;
+
 const quiltFitCta = () => `
   <div class="cta-panel" id="download-quiltfit">
     <h3>Design the full quilt in QuiltFit for iPhone</h3>
@@ -4473,6 +4497,42 @@ function initBoardFoot() {
   });
 }
 
+function initKerf() {
+  const form = document.getElementById("kerf-form");
+  const result = document.getElementById("kerf-result");
+  if (!form || !result) return;
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const bladeWidth = Math.max(0, numberValue(form, "bladeWidth", 0.125));
+    const cuts = Math.max(0, Math.floor(numberValue(form, "cuts", 0)));
+    const boardLength = Math.max(0, numberValue(form, "boardLength", 96));
+    const materialLost = bladeWidth * cuts;
+    const remainingLength = Math.max(0, boardLength - materialLost);
+    const wastePercent = boardLength > 0 ? Math.min(100, (materialLost / boardLength) * 100) : 0;
+    const overCutNotice = materialLost > boardLength
+      ? `<p class="notice">${t("Kerf loss is greater than the board length. Reduce the number of cuts or use longer stock.")}</p>`
+      : "";
+
+    result.innerHTML = `
+      <h2>Kerf estimate</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>${format(materialLost)} in</strong><span>Material lost</span></div>
+        <div class="metric"><strong>${format(remainingLength)} in</strong><span>Remaining length</span></div>
+        <div class="metric"><strong>${format(wastePercent)}%</strong><span>Waste</span></div>
+        <div class="metric"><strong>${cuts}</strong><span>Cuts</span></div>
+      </div>
+      <ul class="plan-list">
+        <li><strong>${t("Material lost")}</strong>: ${format(bladeWidth)} in blade width x ${cuts} cuts = ${format(materialLost)} in.</li>
+        <li><strong>${t("Remaining length")}</strong>: ${format(boardLength)} in board - ${format(materialLost)} in kerf = ${format(remainingLength)} in.</li>
+      </ul>
+      ${overCutNotice}
+      ${kerfCta()}
+    `;
+    translateElement(result, getActiveLang());
+  });
+}
+
 function initWaste() {
   const form = document.getElementById("waste-form");
   const result = document.getElementById("waste-result");
@@ -4753,6 +4813,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initPlywood();
   initStairs();
   initBoardFoot();
+  initKerf();
   initWaste();
   initQuiltFit();
   initTileCalculator();

@@ -4,8 +4,8 @@
     "hash": "da1a3cb8a33a4f0ce900617660fc848307d5b05a7bbd5b02457139bccad0f465"
   },
   "/tools/": {
-    "lastmod": "2026-07-02",
-    "hash": "e6fe1eac9c175b73ec08b908bc115bc26e67b889b0f75d90035a033616e7af1f"
+    "lastmod": "2026-07-07",
+    "hash": "15daf5299944e70e28ca56cf202c0e947ae216d5d51d279cb08072c583aa7ec7"
   },
   "/learn/": {
     "lastmod": "2026-07-07",
@@ -66,6 +66,10 @@
   "/wood-waste-calculator/": {
     "lastmod": "2026-07-02",
     "hash": "c750436486ba1076f1b239e54d9db434b1e3d55b27d91c24f3c60508ee315930"
+  },
+  "/kerf-calculator/": {
+    "lastmod": "2026-07-07",
+    "hash": "25aa8d99674d4884edae228177a5987c26309d26b6f16d3a4c04ba443ee1b0bc"
   },
   "/blog/": {
     "lastmod": "2026-07-07",

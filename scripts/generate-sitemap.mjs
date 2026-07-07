@@ -180,7 +180,7 @@ function sitemapMeta(route) {
     return { changefreq: "monthly", priority: "0.9" };
   }
 
-  if (route === "/board-foot-calculator/" || route === "/wood-waste-calculator/") {
+  if (route === "/board-foot-calculator/" || route === "/wood-waste-calculator/" || route === "/kerf-calculator/") {
     return { changefreq: "monthly", priority: "0.85" };
   }
 
@@ -234,6 +234,7 @@ function sortRoutes(routes) {
     "/stair-stringer-calculator/",
     "/board-foot-calculator/",
     "/wood-waste-calculator/",
+    "/kerf-calculator/",
     "/blog/",
     "/privacy-policy/",
     "/terms-of-service/"
