@@ -100,12 +100,20 @@
     "hash": "e63d865d8ceceae4861b8214b80b206112a8f5150316c57513bbf48519702aa9"
   },
   "/apps/compare/": {
-    "lastmod": "2026-07-02",
-    "hash": "197d136591563ebb8328b161aeaae47f7f7d6f2fcce4e78c855c995140cb4de0"
+    "lastmod": "2026-07-07",
+    "hash": "ae08d1f851fd4e53990cfdc2a5b7bcfb51ad6a147872095070a2aa1064cb5f63"
   },
   "/apps/compare/address-label-maker-vs-handwriting-envelopes/": {
     "lastmod": "2026-07-02",
     "hash": "95f557cba726848d5af4513919deebec262b14a1b23e8b52a20d6c0f8afe938e"
+  },
+  "/apps/compare/address-label-maker-vs-online-label-websites/": {
+    "lastmod": "2026-07-07",
+    "hash": "d2556ef99f6348a574b2ab3e645c828546f6fdb4e42675f0d11dc5b8a6b6ab77"
+  },
+  "/apps/compare/address-label-maker-vs-printing-one-envelope-at-a-time/": {
+    "lastmod": "2026-07-07",
+    "hash": "29ff6fc7d70ce6285e887f4eae3db607d1f8de00e1bf9df83fdb5d910a791ccd"
   },
   "/apps/compare/address-label-maker-vs-word-mail-merge/": {
     "lastmod": "2026-07-02",
@@ -119,9 +127,17 @@
     "lastmod": "2026-07-02",
     "hash": "f300f481b3b52d132c5064da5c701fa58394cdbb6bfd162632aef4e48dc01c1a"
   },
+  "/apps/compare/atomic-clock-vs-wall-clock/": {
+    "lastmod": "2026-07-07",
+    "hash": "57d4464d2aeccaccc6f22aa1b2836e151b7d000a7cbcd07cd839eedef3b9a7a7"
+  },
   "/apps/compare/blockfit-vs-ad-heavy-puzzle-games/": {
     "lastmod": "2026-07-02",
     "hash": "4ec1d5775b6eb5c2f1ee997d95d1dd52476fbb4835ea8a7dc74c804814e6d3c9"
+  },
+  "/apps/compare/blockfit-vs-complicated-strategy-games/": {
+    "lastmod": "2026-07-07",
+    "hash": "3e5a9ae593d2bb628bd62d565609b5888706cbc7972d92a9d39efcd9fd56b3d9"
   },
   "/apps/compare/blockfit-vs-scrolling-for-a-mental-break/": {
     "lastmod": "2026-07-02",
@@ -135,6 +151,10 @@
     "lastmod": "2026-07-02",
     "hash": "fdddfac5aae4b3ddce8a01791777f549cf987700d42476d5908adb1e4c0b2f1e"
   },
+  "/apps/compare/cadenza-vs-tuner-only-app/": {
+    "lastmod": "2026-07-07",
+    "hash": "66e41e2b70219e0ef8157f9fbe55356fcd3b11115520682659f6a3dce2136624"
+  },
   "/apps/compare/colorpop-vs-complex-mobile-games/": {
     "lastmod": "2026-07-02",
     "hash": "a037878f6765bd66ba4fa1a3bf9cb3d6ef8f17b85cc57884e0fd8ed499d1056c"
@@ -143,9 +163,21 @@
     "lastmod": "2026-07-02",
     "hash": "a967481caffbbe5b3230c5a63fc123fd16669033fa1c26b589c8dd59ba3d24ec"
   },
+  "/apps/compare/colorpop-vs-timed-reflex-games/": {
+    "lastmod": "2026-07-07",
+    "hash": "8c74fc6e0e453cd4eea43bf6d0d3d83c1aa4cb350491f384da479b033ac3698d"
+  },
+  "/apps/compare/contacts-backup-vs-carrier-store-transfer/": {
+    "lastmod": "2026-07-07",
+    "hash": "1c576f3540466222eb408089c573f6bfa470381e28bc7f1e6682388aef65d848"
+  },
   "/apps/compare/contacts-backup-vs-icloud-only/": {
     "lastmod": "2026-07-02",
     "hash": "8a648c5beebe5648f0a2182d8b20371dfc80de01c483670a087a5b54f0dfd471"
+  },
+  "/apps/compare/contacts-backup-vs-manual-contact-export/": {
+    "lastmod": "2026-07-07",
+    "hash": "8779c656884632e0ec748ef9014eca0b10022ae07dc22107dc5f572f76689803"
   },
   "/apps/compare/contacts-backup-vs-no-backup/": {
     "lastmod": "2026-07-02",
@@ -155,6 +187,14 @@
     "lastmod": "2026-07-02",
     "hash": "2dfe22f1a1cbb2206c67dfe486f5bfc2dcb68ee6df701f9f1a1c723ddf219e68"
   },
+  "/apps/compare/cutlist-vs-home-center-cutting-service/": {
+    "lastmod": "2026-07-07",
+    "hash": "e3ebc6d99b9d64b6510f55215fbc005d8e99d4c0a630ef00f520dc0026109fcc"
+  },
+  "/apps/compare/cutlist-vs-paper-parts-list/": {
+    "lastmod": "2026-07-07",
+    "hash": "cb05ef5391d2ed2fb80b9ac07e6ae9878153d36853b3185eeb143de43e5b042a"
+  },
   "/apps/compare/cutlist-vs-sketchup-for-cut-lists/": {
     "lastmod": "2026-07-02",
     "hash": "e3433c59b55e856324784f498bf45a3e70edc6cae0250a02487b1f0254fe3c20"
@@ -163,9 +203,17 @@
     "lastmod": "2026-07-02",
     "hash": "2e5ff63de59508e5d9d0d97389500f94cbeb0299e775e9a16fc90c398fcfbba3"
   },
+  "/apps/compare/expense-report-maker-vs-emailing-receipts/": {
+    "lastmod": "2026-07-07",
+    "hash": "35870dff63886c555ed700628427993457ca7e2307db0f2343630b642172f92d"
+  },
   "/apps/compare/expense-report-maker-vs-snapreceipt/": {
     "lastmod": "2026-07-02",
     "hash": "1c1b47ee1a99b6f6655f141933969fbcfe418911c585e0d4219b2a5722957022"
+  },
+  "/apps/compare/fast-rhythm-vs-calendar-fasting-notes/": {
+    "lastmod": "2026-07-07",
+    "hash": "5ea4efa8f35787f5a03150645b535143848b9479cafec5da4c22e74140053eb3"
   },
   "/apps/compare/fast-rhythm-vs-generic-timer-app/": {
     "lastmod": "2026-07-02",
@@ -175,6 +223,10 @@
     "lastmod": "2026-07-02",
     "hash": "77c3c606215ba77c048f69774d5831527d969f238eff2a3922855b83dc2c2cc4"
   },
+  "/apps/compare/fridgetrack-vs-grocery-list-only/": {
+    "lastmod": "2026-07-07",
+    "hash": "0724429fed76f8de553b9a5c4964ca196eca022078b0aedbb819e5e0a61adaac"
+  },
   "/apps/compare/fridgetrack-vs-guessing-whats-in-the-fridge/": {
     "lastmod": "2026-07-02",
     "hash": "96e975e2a27343238cc4b442f4a272280a8c8ef57645d693050e3b8dd4e29657"
@@ -182,6 +234,10 @@
   "/apps/compare/fridgetrack-vs-sticky-notes-on-the-fridge/": {
     "lastmod": "2026-07-02",
     "hash": "aea0eb1d60ba0d9c9f4818b8f5743723fe975c7da21b6bc3607d5585af05b42e"
+  },
+  "/apps/compare/glowfeel-vs-breathing-video-sites/": {
+    "lastmod": "2026-07-07",
+    "hash": "22d40a9c32b90c4fd4d28adb627679727bfc00140fddcfb770ba27a478a8235d"
   },
   "/apps/compare/glowfeel-vs-doing-nothing-about-stress/": {
     "lastmod": "2026-07-02",
@@ -191,6 +247,10 @@
     "lastmod": "2026-07-02",
     "hash": "4b31f617fb2b265ba79893c1e37c9271ef638f55bd89451a56f5dd875b3370de"
   },
+  "/apps/compare/image-compressor-vs-desktop-image-editors/": {
+    "lastmod": "2026-07-07",
+    "hash": "c63890c6e61fe453c0d09e1e92c1b5126f0c02c771ea5591c5a4daf058e3ebad"
+  },
   "/apps/compare/image-compressor-vs-online-compression-sites/": {
     "lastmod": "2026-07-02",
     "hash": "a55002937c6f03b927673007aabe2987bcdfecda1378b2f76b1c44d988c2b543"
@@ -199,9 +259,17 @@
     "lastmod": "2026-07-02",
     "hash": "54eb40dbbad1363741fe8bf78504fb20247b650266f159d4434437cd0c33daa2"
   },
+  "/apps/compare/invoice-maker-vs-accounting-software/": {
+    "lastmod": "2026-07-07",
+    "hash": "f3fcf4bfb77db079174f662276914cdbdfaa016451df20c3293c1a3f71db3f6b"
+  },
   "/apps/compare/invoice-maker-vs-online-invoicing-services/": {
     "lastmod": "2026-07-02",
     "hash": "debe18f99fbd5d04a3190a9693da648d3d361b0593059fe43b16c70e1e26d5e2"
+  },
+  "/apps/compare/invoice-maker-vs-payment-app-notes/": {
+    "lastmod": "2026-07-07",
+    "hash": "a9dc61bc7c69cf7c50f4371a079ccc6a4975d0d8811c780e070f4b44e5405224"
   },
   "/apps/compare/invoice-maker-vs-word-or-excel-invoices/": {
     "lastmod": "2026-07-02",
@@ -215,13 +283,29 @@
     "lastmod": "2026-07-02",
     "hash": "34e69cb09b2dc57ba970a7b7d883d7b079691a83bfe44b54fddb2c18b28b85a6"
   },
+  "/apps/compare/magnifier-reader-vs-taking-a-photo-and-zooming/": {
+    "lastmod": "2026-07-07",
+    "hash": "0901f332d88e2ecf9234183cf6f82a8bde601b36ba95589e85b7567c50bafae0"
+  },
   "/apps/compare/marketvendor-vs-cash-box-and-notebook/": {
     "lastmod": "2026-07-02",
     "hash": "2b1eb9f9335b7ee96863afe7ef201cad32d171acfe1ee2397e33a206d81ce8f6"
   },
+  "/apps/compare/marketvendor-vs-memory-at-end-of-day/": {
+    "lastmod": "2026-07-07",
+    "hash": "9d66c0e8041c6b00469f21a184e2b45ff4bc649d842c69b57e7efafe18de0119"
+  },
   "/apps/compare/marketvendor-vs-pos-system/": {
     "lastmod": "2026-07-02",
     "hash": "0e1d39e16834f4cf5bc9429f425faa0c4577fdf437e58e87c1da68e3a4a7dfd9"
+  },
+  "/apps/compare/marketvendor-vs-spreadsheet-sales-tracker/": {
+    "lastmod": "2026-07-07",
+    "hash": "bff49a46506539f07a19e6716fcece3a4f3d6dd27105b6cbacf0b56fe70b862b"
+  },
+  "/apps/compare/mindnest-vs-cloud-journal-apps/": {
+    "lastmod": "2026-07-07",
+    "hash": "68ebb21c6f273e797b15698d20b5f42e8c242c6b9145a386c157b1574f6d47ae"
   },
   "/apps/compare/mindnest-vs-notes-app-journaling/": {
     "lastmod": "2026-07-02",
@@ -231,6 +315,10 @@
     "lastmod": "2026-07-02",
     "hash": "7ac8a0ede4833099d2b2b59fa480777c85cf843a3523426585a53e78da838456"
   },
+  "/apps/compare/mindnest-vs-social-journaling/": {
+    "lastmod": "2026-07-07",
+    "hash": "166b89a8b300c5e269b61f2e8ab8078ce227cbfd5ee273375532fec1f6ef8635"
+  },
   "/apps/compare/pantry-label-maker-vs-masking-tape-and-marker/": {
     "lastmod": "2026-07-02",
     "hash": "5bfaa7d0b321ea27569991fec13de93fb338ad79afe44364433a352b2ed7ef7d"
@@ -238,6 +326,18 @@
   "/apps/compare/pantry-label-maker-vs-store-bought-labels/": {
     "lastmod": "2026-07-02",
     "hash": "3925a61c37285009d3eaa2a6d2caff3890c9906b45ce01040e6775087dd4480c"
+  },
+  "/apps/compare/pantry-label-maker-vs-writing-on-jars/": {
+    "lastmod": "2026-07-07",
+    "hash": "6324c47b76d61a18a8e5805dc3220d5dc5b09a8c3d81c3c7c4e52255d986f975"
+  },
+  "/apps/compare/pdf-scan-vs-flatbed-scanner-at-home/": {
+    "lastmod": "2026-07-07",
+    "hash": "1bd426223b74155612bd0558dce7ea1aefa07fe8a3070cfe3f0434ba4b557531"
+  },
+  "/apps/compare/pdf-scan-vs-keeping-paper-files/": {
+    "lastmod": "2026-07-07",
+    "hash": "4dd18bd313dc7296b4d64e146403755aec5e048894abfe7e2768a3d96cba3833"
   },
   "/apps/compare/pdf-scan-vs-office-scanner/": {
     "lastmod": "2026-07-02",
@@ -247,6 +347,10 @@
     "lastmod": "2026-07-02",
     "hash": "e4f2bda913e85a1829d2b371906f8009f272a785f4df257ed0bf75e929d734f2"
   },
+  "/apps/compare/photosafe-vs-cloud-photo-albums/": {
+    "lastmod": "2026-07-07",
+    "hash": "62e1364b71a7a41e00c64ee675e4c95691bd7168778d5a7580517a13a91d55dc"
+  },
   "/apps/compare/photosafe-vs-hidden-album/": {
     "lastmod": "2026-07-02",
     "hash": "0833e5d0a5b4a0c1d08ae49fdf0b2533a5e7563905bf0150bcdbfb7a1c536b54"
@@ -254,6 +358,10 @@
   "/apps/compare/photosafe-vs-leaving-photos-in-camera-roll/": {
     "lastmod": "2026-07-02",
     "hash": "3d4afb86f3a07c3f1c4d19431b9c55f0a5240b8d791e469f74529b2f96da35f8"
+  },
+  "/apps/compare/photosafe-vs-shared-photo-library/": {
+    "lastmod": "2026-07-07",
+    "hash": "c1a2f3d5280b1d4dd8185918a3a862b37dfce9f56b779994c0a353ef4dc3f808"
   },
   "/apps/compare/pickone-vs-arguing-over-decisions/": {
     "lastmod": "2026-07-02",
@@ -263,6 +371,10 @@
     "lastmod": "2026-07-02",
     "hash": "6dcd593efdd092a9023c099d18a77e8de7a14bd7dee330673bfb185846d32813"
   },
+  "/apps/compare/pickone-vs-random-number-generator/": {
+    "lastmod": "2026-07-07",
+    "hash": "9bb284e636cb1d71674a37c12e123f29d0e879f2747912d8cc31cbd114ecab52"
+  },
   "/apps/compare/printer-app-vs-emailing-files-to-print/": {
     "lastmod": "2026-07-02",
     "hash": "1c7fa57ab8d9d85d81bb12cfafedc8900ca5eb21f524eb9ed685fd3bc2f5fe02"
@@ -271,21 +383,45 @@
     "lastmod": "2026-07-02",
     "hash": "cddfc564c17c77f711ec9268d1c6e69a3222034190a4343008b2af5c2ad94286"
   },
+  "/apps/compare/printer-app-vs-opening-files-on-laptop/": {
+    "lastmod": "2026-07-07",
+    "hash": "2851a6f639c0e863a566e27f55cec1e8fe43ca3dfcdfbdf5cc713b0af4eadab6"
+  },
   "/apps/compare/private-transcriber-vs-cloud-transcription/": {
     "lastmod": "2026-07-02",
     "hash": "de9949011e51ce7c02e7210edb8be0474bf906bb407295a759d2f0f83ef80cb0"
+  },
+  "/apps/compare/private-transcriber-vs-meeting-summary-bots/": {
+    "lastmod": "2026-07-07",
+    "hash": "b987152087d2b60e1a59a38bfc180d308f581a38dbe6ebacf7c039935a92fa95"
+  },
+  "/apps/compare/private-transcriber-vs-recording-audio-only/": {
+    "lastmod": "2026-07-07",
+    "hash": "dadee9426c2eeeb8c5530ce51a9baf8037140b06e151f7fa6c5f2a7033060e6f"
   },
   "/apps/compare/private-transcriber-vs-taking-notes-by-hand/": {
     "lastmod": "2026-07-02",
     "hash": "57e4d385249f5fadfe46a03fbb0bb009466770836584eefddc60c9999c7c8c5f"
   },
+  "/apps/compare/quiltfit-vs-buying-fabric-by-guesswork/": {
+    "lastmod": "2026-07-07",
+    "hash": "36c207ebd631584a6a5df2b14e36ede15d7d9da69270de83e3ea947470e40da1"
+  },
   "/apps/compare/quiltfit-vs-graph-paper/": {
     "lastmod": "2026-07-02",
     "hash": "b8f249de57e7e3fa0e51d45af55dd3562187ec2d189513d1899a5d51770c2520"
   },
+  "/apps/compare/quiltfit-vs-quilt-calculator-websites/": {
+    "lastmod": "2026-07-07",
+    "hash": "10d7a222bb1b9059b62f1e9533edf47258211c22ee56f3220ff0a6f803eb0b8b"
+  },
   "/apps/compare/quiltfit-vs-spreadsheet-fabric-planning/": {
     "lastmod": "2026-07-02",
     "hash": "83a84a0997ef5dda6fc4689ff058329a4d7f246aeca0b6913f00e8384c676105"
+  },
+  "/apps/compare/ritualix-vs-generic-to-do-list/": {
+    "lastmod": "2026-07-07",
+    "hash": "0bc7f8fc9c76ca643e9b83737a18b9ad25f87e27294834c3028718db6751bf99"
   },
   "/apps/compare/ritualix-vs-habit-tracking-on-paper/": {
     "lastmod": "2026-07-02",
@@ -295,6 +431,10 @@
     "lastmod": "2026-07-02",
     "hash": "20feb1ff3c5b95c837de0fc634ee21fce9bc1778f3b3c8aceb883dd99c435b18"
   },
+  "/apps/compare/shift-calendar-vs-employer-scheduling-portal/": {
+    "lastmod": "2026-07-07",
+    "hash": "24b5a3ea960f461b0870876a3861ba19430236846b80cb6c27f0bd4df784e846"
+  },
   "/apps/compare/shift-calendar-vs-generic-calendar-app/": {
     "lastmod": "2026-07-02",
     "hash": "5a881091590ad373b0105b1d95214b3bc029923481fab8b8386aa10486e96673"
@@ -302,6 +442,14 @@
   "/apps/compare/shift-calendar-vs-paper-schedule/": {
     "lastmod": "2026-07-02",
     "hash": "cea0f356bf092b4b69451b2f90891507691acc2d8a83d1b8e888abf69e7062cf"
+  },
+  "/apps/compare/shift-calendar-vs-text-message-rota/": {
+    "lastmod": "2026-07-07",
+    "hash": "6e097f837b72bf86b5d9417e3c6c46786c151e0c2b418015160c3487420d22ce"
+  },
+  "/apps/compare/signaturemark-vs-camera-roll-markup/": {
+    "lastmod": "2026-07-07",
+    "hash": "392d5a491cf296175c65f052a1d46042f3a264951d162875560e27903b899c58"
   },
   "/apps/compare/signaturemark-vs-desktop-photo-editors/": {
     "lastmod": "2026-07-02",
@@ -319,6 +467,14 @@
     "lastmod": "2026-07-02",
     "hash": "375c7bbdf8dd17995ad4bb87255b5caacc847d6dfbbd5d3352de6c8abdee695f"
   },
+  "/apps/compare/snapcleaner-vs-icloud-photo-review/": {
+    "lastmod": "2026-07-07",
+    "hash": "8ae1c866f6fb57a97ea60aff8b190ebbb903b66d008cd5179d67c3e401eb88d9"
+  },
+  "/apps/compare/snapcleaner-vs-third-party-cloud-cleaners/": {
+    "lastmod": "2026-07-07",
+    "hash": "dfd05fc77228c8b79ef74d673a1a49a89212d36fff1e1aa4450b59025c1552c8"
+  },
   "/apps/compare/snaplabel-vs-handwritten-labels/": {
     "lastmod": "2026-07-02",
     "hash": "eac17c1bd51672545a79b401b69a7bf07702c6e5a6af9d16a9ec669379bc1349"
@@ -326,6 +482,22 @@
   "/apps/compare/snaplabel-vs-label-maker-machine/": {
     "lastmod": "2026-07-02",
     "hash": "05c36e2da166891ccea7b5929a403300e81897f525e17e5ab7a2c2cf44735730"
+  },
+  "/apps/compare/snaplabel-vs-printing-labels-in-word/": {
+    "lastmod": "2026-07-07",
+    "hash": "b22b9bd156d120af277fbcae063a19e57c024158086328247b4e41301729785e"
+  },
+  "/apps/compare/snaplabel-vs-spreadsheet-label-list/": {
+    "lastmod": "2026-07-07",
+    "hash": "a54437faf011a4704f3b2c1ec2b3e176d25e767221fbd0bfd033648bbeb6f5d9"
+  },
+  "/apps/compare/snapqr-vs-designing-qr-codes-in-canva/": {
+    "lastmod": "2026-07-07",
+    "hash": "59c693249533acf7e5f71b10d6cdf54526c372943981ad9ead23d1eb23329691"
+  },
+  "/apps/compare/snapqr-vs-dynamic-qr-services/": {
+    "lastmod": "2026-07-07",
+    "hash": "6399048e1d155064e5afbed3fc3e6a323694ff967390ea5027f5180724583890"
   },
   "/apps/compare/snapqr-vs-free-online-qr-generators/": {
     "lastmod": "2026-07-02",
@@ -335,25 +507,49 @@
     "lastmod": "2026-07-02",
     "hash": "5c1616f99a1b8020e4085b094128d8dc7792545c256229d526f906f4826419b9"
   },
+  "/apps/compare/snapreceipt-vs-bank-statement-only/": {
+    "lastmod": "2026-07-07",
+    "hash": "fa22493d6bf29d30a5455d7439f07f1833130d0a52c12711d07ba776ea51c4ba"
+  },
   "/apps/compare/snapreceipt-vs-cloud-expense-apps/": {
     "lastmod": "2026-07-02",
     "hash": "99f2751e72bf7be99dc7507fdc1f420225149908ce8a6e85b498c105d884c921"
+  },
+  "/apps/compare/snapreceipt-vs-manual-tax-folder/": {
+    "lastmod": "2026-07-07",
+    "hash": "7ac752b79094b55195d370a587361f066411f19fb90347c3be0283d02b503807"
   },
   "/apps/compare/snapreceipt-vs-shoebox-of-receipts/": {
     "lastmod": "2026-07-02",
     "hash": "1e4e5874501ae571d07f91ff6c76d67dd8587c16c68c0556a7302c9d1e7c4fed"
   },
+  "/apps/compare/snapstock-vs-barcode-scanner-hardware/": {
+    "lastmod": "2026-07-07",
+    "hash": "bfac37aa1548392874c108f9d9b31a5c2cb59612cfc4f3bf202ce9f228197f85"
+  },
   "/apps/compare/snapstock-vs-counting-stock-by-hand/": {
     "lastmod": "2026-07-02",
     "hash": "53161276f7f3dedf4c64542729af545bfb6c7d5ee41645b65e624f8419f46c22"
+  },
+  "/apps/compare/snapstock-vs-pos-inventory-module/": {
+    "lastmod": "2026-07-07",
+    "hash": "cdfe5857201847d151b12e9eeb4b2533245f786c66c731d1174bd35993781777"
   },
   "/apps/compare/snapstock-vs-spreadsheet-inventory/": {
     "lastmod": "2026-07-02",
     "hash": "e3809222ef1984c33f9bbeabf2a0d1004a6576d875a68e053ec261926e5405e0"
   },
+  "/apps/compare/speaker-tools-vs-dedicated-audio-test-gear/": {
+    "lastmod": "2026-07-07",
+    "hash": "5054b44c843734abda3a53e504e3d3e0f196d93d3ea44e71b43f75047ca3e6f9"
+  },
   "/apps/compare/speaker-tools-vs-guessing-speaker-placement/": {
     "lastmod": "2026-07-02",
     "hash": "14fa210ae67970ceb85047534fa1e748f8f1be28f6026a4498754db8dd38dd5f"
+  },
+  "/apps/compare/speaker-tools-vs-phone-speaker-test-videos/": {
+    "lastmod": "2026-07-07",
+    "hash": "aad54c4e523a04798f8339baf5554438ad12a991cf3d7a6c8726a5e6304ce2f4"
   },
   "/apps/compare/speaker-tools-vs-test-tone-websites/": {
     "lastmod": "2026-07-02",
@@ -366,6 +562,10 @@
   "/apps/compare/tinnitus-relief-vs-silence/": {
     "lastmod": "2026-07-02",
     "hash": "f90aa772b42a4ed761e30daf7e7d36f50548c3220817b1c245b047614ede6e50"
+  },
+  "/apps/compare/tinnitus-relief-vs-white-noise-machines/": {
+    "lastmod": "2026-07-07",
+    "hash": "7c49773368960cf3b442139f4397c37b3e0363dfe7f8d71ebc2cf9bf0750e0d1"
   },
   "/apps/expensereportmaker-and-receipts/": {
     "lastmod": "2026-07-02",
@@ -497,39 +697,39 @@
   },
   "/blog/agentic-crm-automation-boundaries/": {
     "lastmod": "2026-07-07",
-    "hash": "639d6816248ce4735c7f4ee0e6869d1a6eeddaa79edc5f0de3c4d51c75745f50"
+    "hash": "462c2878b7d8834e46b9fa264dd0624f98e29740635532322c7a89c502eeab45"
   },
   "/blog/ai-agent-runbooks-2026/": {
     "lastmod": "2026-07-07",
-    "hash": "c0152168ac9ea31ef2bac8072f04c6c1d5c93153b4dd969a549c8a3ce46aff70"
+    "hash": "25954746ad416d078fcd1894d358ed6920d55b8c48bd21d92b6bfb4a3ec0321d"
   },
   "/blog/ai-coding-agent-review-checklist/": {
     "lastmod": "2026-07-07",
-    "hash": "d84f4504361c0beffae37a36c682ed08f4f55fc10c514277a01ff7b810ae46f1"
+    "hash": "7cb4cb0d2231cc1f47599ed5ba99c926e6132098cf18c09a1d8e454cfbed96b6"
   },
   "/blog/ai-dashboard-decision-quality/": {
     "lastmod": "2026-07-07",
-    "hash": "8b03afde3a9fd3aee0eaeeb74b72d48b1293306a7c9c7bdaf06381ec771dca2b"
+    "hash": "0a9e2c42206effbfee357c61d0998a01db6871efc2c42cec3cb5600a8df24fbe"
   },
   "/blog/ai-image-compression-content-pipelines/": {
     "lastmod": "2026-07-07",
-    "hash": "0d9d2bcb534e8e8e82f9a819d3087b011fd74e3ae646a95c67ccc8ba1295e1aa"
+    "hash": "6f2e3cf899d5134e8b2e385581bc435a1f874999132ef326f2cd2f7d334fff2b"
   },
   "/blog/ai-meeting-summary-quality-control/": {
     "lastmod": "2026-07-07",
-    "hash": "f19d34b0bf257b128b920c5ae14ef413a252e4ae372d534b80e0894adddaf6ff"
+    "hash": "cbc6eb9a754ac3bc4677ab9732820383e87f62ef77e1cfe147650339ff5e53d7"
   },
   "/blog/ai-phishing-defense-2026/": {
     "lastmod": "2026-07-07",
-    "hash": "a8faafaba88b5bc5fbcf2b0e57ed256451834478390492eb87e35a527cab2492"
+    "hash": "2be3c0ba3a2397e89f54fe6040f91b6753e4d19e2ccddaac1fe5aecdbaf05f8d"
   },
   "/blog/ai-regulation-product-requirements/": {
     "lastmod": "2026-07-07",
-    "hash": "78cb1585176f4e2c40f153aec8a61c11aefbf7736fe5b8ecaa75b8ba90e237f0"
+    "hash": "7ddc48490c05ffedcf63f5c2cd51f63c798211552ca1783d1ada901d635d2326"
   },
   "/blog/ai-search-engine-optimization-2026/": {
     "lastmod": "2026-07-07",
-    "hash": "e72cd69d0aa36821911229fa8eb77f3c9bb683aa6cfce69577509ab57124d189"
+    "hash": "216eb06621d5013c02b12c6342d193cd7f4600962f1f5d0e84d05586199cbfe9"
   },
   "/blog/alcove-cabinet-cut-list/": {
     "lastmod": "2026-07-02",
@@ -537,7 +737,7 @@
   },
   "/blog/api-cost-governance-for-llm-apps/": {
     "lastmod": "2026-07-07",
-    "hash": "96df06a64143f2fc2257ba754adadc7e9fbbb23db413f08fccc742136267d560"
+    "hash": "c2c675790d84bc2652234be576ab3b2ab06b9c9ff9a92ddcae87c85194b600f8"
   },
   "/blog/applique-quilt-fabric-planning/": {
     "lastmod": "2026-07-02",
@@ -549,7 +749,7 @@
   },
   "/blog/arm-laptops-developer-workflows/": {
     "lastmod": "2026-07-07",
-    "hash": "fad63278b939bbb24cdd963a88f81b72064385fc79dae4e5e70d90b954be7852"
+    "hash": "b8a095dec8c2a9b8b4c91a9a2bf5de0cdbf04f2eca827e0942a4217a79ac97e4"
   },
   "/blog/art-supply-rolling-cabinet-cut-list/": {
     "lastmod": "2026-07-02",
@@ -789,7 +989,7 @@
   },
   "/blog/cloud-exit-hybrid-ai-infrastructure/": {
     "lastmod": "2026-07-07",
-    "hash": "8d5eefb8c7c496d1b3657c863088e49fda290b4c2b631a37883cda4bccaba163"
+    "hash": "e4a7510744f6da1b7654c41371af8f7c4148160004b636414d707efd36303421"
   },
   "/blog/color-and-repeat-planning-for-modern-quilts/": {
     "lastmod": "2026-07-02",
@@ -821,7 +1021,7 @@
   },
   "/blog/content-authenticity-c2pa-workflow/": {
     "lastmod": "2026-07-07",
-    "hash": "206044a6fd674694d5b800799833d1c5ed1b588b6f33ea90bebefe5b4479a5ae"
+    "hash": "f728a32c55aa43d825fa484040e1077ef9d8eff11180952ed82de21f9b048b11"
   },
   "/blog/corner-shelf-plywood-cut-list/": {
     "lastmod": "2026-07-02",
@@ -1025,11 +1225,11 @@
   },
   "/blog/data-contracts-for-ai-products/": {
     "lastmod": "2026-07-07",
-    "hash": "a34a1796e2bf94f9ba3faedc9f1f1eca23670e7f093bc06134a4383271ba95f2"
+    "hash": "c1e973984adf3e7c4b5f87373f5298ccbb9eed57bb4c1d61b1e9eafa749e9080"
   },
   "/blog/database-vector-hybrid-search/": {
     "lastmod": "2026-07-07",
-    "hash": "0e832f09d2748fb07db94fb69932ae1039220d353945f09a7e18def36e8294d8"
+    "hash": "7fac6f28539d69d3f28eeaaa6c3ec8ddff6b94e1cfe71fe4540aac20988422c1"
   },
   "/blog/decision-history-insights-private-choice-tracker/": {
     "lastmod": "2026-07-02",
@@ -1065,11 +1265,11 @@
   },
   "/blog/deepfake-response-plan-small-business/": {
     "lastmod": "2026-07-07",
-    "hash": "b791812912580fec287c2ab13cdd048c14eee9c3144378534644d17c91ab3e8d"
+    "hash": "eddea76095d087783c6382eec843afdd46b9d1ae9649c459b1c4da5e65c31155"
   },
   "/blog/devcontainer-reproducible-ai-projects/": {
     "lastmod": "2026-07-07",
-    "hash": "7b4ee00fce581ccd3a054acc6be2d728f2b8905106aae0317d5003f60d4cd090"
+    "hash": "fef5019c92d6b201a3dc0c6b7b58d33786a8ff3cc75d53cab5bf14ada3cb338c"
   },
   "/blog/diagonal-tile-layout-waste/": {
     "lastmod": "2026-07-02",
@@ -1113,7 +1313,7 @@
   },
   "/blog/edge-ai-vs-cloud-inference-costs/": {
     "lastmod": "2026-07-07",
-    "hash": "4f345bc0d9faea0ce7e92d81a8c4bd4c37d5412c91d9c3d22b490021029ab1ba"
+    "hash": "21f4cceaece75f7dc77e3049bfb2b03bf741e5fa6853f4f3c7f2471814eb820a"
   },
   "/blog/edge-banding-plywood-cut-list-allowance/": {
     "lastmod": "2026-07-02",
@@ -1157,7 +1357,7 @@
   },
   "/blog/evals-as-ci-for-ai-features/": {
     "lastmod": "2026-07-07",
-    "hash": "02dea02b77380bdf2cae747726f08e4ce007cf1ca18ce0053300750c6b85da81"
+    "hash": "7a1822e7f9e49a8b59c4250513215a6fc58ec45d6e4ce1d0c64d2b3b4234b9b3"
   },
   "/blog/expense-report-maker-monthly-vs-per-trip/": {
     "lastmod": "2026-07-02",
@@ -1305,7 +1505,7 @@
   },
   "/blog/gpu-capacity-planning-ai-teams/": {
     "lastmod": "2026-07-07",
-    "hash": "b98ec4fda7e67371914171d5cee058b62de400690fbf266ab391a66d92b6d936"
+    "hash": "d5086238fa68f034aa827472de6231234df363bbf2669591e5dbaed45bb011ee"
   },
   "/blog/grain-matching-cabinet-doors-guide/": {
     "lastmod": "2026-07-02",
@@ -1549,7 +1749,7 @@
   },
   "/blog/knowledge-base-cleanup-before-chatbot/": {
     "lastmod": "2026-07-07",
-    "hash": "58742e2130ecaaf9570619e0319c590ca9f2b6f497bc4adef153909668541743"
+    "hash": "1610dc17ce5b23e4acfa9c4d450517b2128c29b5ba2c035862cc85f24056e1a8"
   },
   "/blog/label-storage-bins-from-a-photo-snaplabel/": {
     "lastmod": "2026-07-02",
@@ -1589,7 +1789,7 @@
   },
   "/blog/local-ai-pc-workflows-2026/": {
     "lastmod": "2026-07-07",
-    "hash": "273555c2ccdf35c3ff2000168e5a02ac3b999510bbb70d96bc86556aca294ae4"
+    "hash": "40855c243842dfbc72a0ae7e4a5608b4f4b3b76e0bc0fa19c62251e0d635ed0b"
   },
   "/blog/low-frequency-tone-generator-guide/": {
     "lastmod": "2026-07-02",
@@ -1701,7 +1901,7 @@
   },
   "/blog/model-context-protocol-app-integrations/": {
     "lastmod": "2026-07-07",
-    "hash": "8f792a85096b682ace7880051f8359d8c61e68ef80ba16186a0a6cad432b9133"
+    "hash": "163330c47b86006472d9b37fc76640303b4089b52534ceb62ad5012ab893b4a7"
   },
   "/blog/modular-cube-storage-cut-list/": {
     "lastmod": "2026-07-02",
@@ -1721,7 +1921,7 @@
   },
   "/blog/multimodal-search-for-small-teams/": {
     "lastmod": "2026-07-07",
-    "hash": "de63675f7aa95166ac8700d1af3dbcb4b043666d2dae868b1b6504cff03a34ba"
+    "hash": "27289d18a838aad44dab692d8047e95c197e865d60d149bb54c97edc06649eec"
   },
   "/blog/murphy-bed-plywood-cut-list/": {
     "lastmod": "2026-07-02",
@@ -1749,7 +1949,7 @@
   },
   "/blog/observability-for-ai-agents/": {
     "lastmod": "2026-07-07",
-    "hash": "321fdda2a45a92dd1c7d9865d7878fb441ecd932c7a55793c1f0543fc0b45a74"
+    "hash": "9df241e06a7a89d1375a61e1fa45702bac70fe6cf5d163a91ec55a7481a5d657"
   },
   "/blog/ocr-pdf-scanner-searchable-documents-guide/": {
     "lastmod": "2026-07-02",
@@ -1793,7 +1993,7 @@
   },
   "/blog/open-source-model-license-review/": {
     "lastmod": "2026-07-07",
-    "hash": "9c4ae32620a4098d0a5f7210bc6396dec153983a59f572efe558ff0667696b0c"
+    "hash": "c7fb8904085ed64f59951230d6a3007def95d83aceb95c0f7ee75e14bdadde9f"
   },
   "/blog/open-vs-closed-stringer-remodel-planning/": {
     "lastmod": "2026-07-02",
@@ -1857,11 +2057,11 @@
   },
   "/blog/passkeys-for-small-business-login/": {
     "lastmod": "2026-07-07",
-    "hash": "1e6380b4a8f5d8762dd577c72817b5e2c9a4af39db84f7c8d39931dd3b6050db"
+    "hash": "06d9c8c37c57d0060315f541a4d769c6e3dd9462e39e3035731b146018e71df1"
   },
   "/blog/passwordless-customer-support-recovery/": {
     "lastmod": "2026-07-07",
-    "hash": "e0001d14a051b9b0ac8f959a1460a2c9ea79cae5edc1797c8c743441115259a0"
+    "hash": "a8a4ca80b7153260d3d96274a9a1a82cc6bfa66c191f2cabb76f013280139265"
   },
   "/blog/pdf-scan-for-home-renovation-receipts/": {
     "lastmod": "2026-07-02",
@@ -1877,7 +2077,7 @@
   },
   "/blog/personal-data-redaction-ai-workflow/": {
     "lastmod": "2026-07-07",
-    "hash": "7f040cc0836df4d073778eef0539f7ef7b3ef45cc29fea91e12cbaaf74527c9a"
+    "hash": "5adaf9752d44ea554ff43975e523c52c82808c3e204bb26d0ed1d422b2688b32"
   },
   "/blog/pet-feeding-station-cut-list/": {
     "lastmod": "2026-07-02",
@@ -1917,7 +2117,7 @@
   },
   "/blog/platform-engineering-for-ai-teams/": {
     "lastmod": "2026-07-07",
-    "hash": "e0b986865134172609e41c46b94bf3be61734feae79e0c2f3f21de1b51061cd4"
+    "hash": "8ede8a5c3f23ce1deeee3f700a36c006794a6d64cd51c4a367b5ae899e27737f"
   },
   "/blog/plywood-audio-rack-cut-list/": {
     "lastmod": "2026-07-02",
@@ -2121,7 +2321,7 @@
   },
   "/blog/post-quantum-crypto-migration-checklist/": {
     "lastmod": "2026-07-07",
-    "hash": "ccf33c28e305d98aa4d76af31e75f3db8d41a632858d0501342a5b329f7afca2"
+    "hash": "eb2e8e804adfff64db5b524bed19e2eb6efa316687ae741c513809f3a4968e2a"
   },
   "/blog/practice-tempo-ramping-build-speed-cadenza/": {
     "lastmod": "2026-07-02",
@@ -2149,7 +2349,7 @@
   },
   "/blog/privacy-preserving-analytics-without-third-party-cookies/": {
     "lastmod": "2026-07-07",
-    "hash": "0adbfac4ca2aae8c8b1848b88bc77301b4e0f59d59dcdf1b7756c543066e5dee"
+    "hash": "8f04996eeafabd72448b351eacddef5b14c614f6fe8c2768af1b4a7614eb1b72"
   },
   "/blog/private-clock-app-no-account-no-tracking/": {
     "lastmod": "2026-07-02",
@@ -2193,7 +2393,7 @@
   },
   "/blog/private-on-device-speech-notes/": {
     "lastmod": "2026-07-07",
-    "hash": "c2fcbe5e2cfdca1755f0f402416948ead90e3e1a901346e9bee3b70903cef08d"
+    "hash": "f747a1ceb3373f1c4a59da5613225db0411a4f17505fc4e90332ebaffd5d9024"
   },
   "/blog/private-pdf-scanning-workflow-research/": {
     "lastmod": "2026-07-02",
@@ -2217,7 +2417,7 @@
   },
   "/blog/prompt-injection-defense-product-teams/": {
     "lastmod": "2026-07-07",
-    "hash": "4c3c9357e09a08778bef2e9324aaad4e014026d8dbc1616da8ae2fc3b0fe6f21"
+    "hash": "54225193c9f20398b5fdfd45971eb285c24358e10fee148bb859bfd353c02939"
   },
   "/blog/protect-creator-photos-private-watermarking/": {
     "lastmod": "2026-07-02",
@@ -2433,7 +2633,7 @@
   },
   "/blog/rag-evaluation-before-launch/": {
     "lastmod": "2026-07-07",
-    "hash": "e5eda41325e1df9f77b14db30dcd7c252fbd7ea4ac9c4ae82c2ea465e50040ba"
+    "hash": "acae9e3bd9daece4c44efa8ce3f35f8911375a0b431944713715fa5708a815bf"
   },
   "/blog/random-choice-picker-app-daily-decisions/": {
     "lastmod": "2026-07-02",
@@ -2449,7 +2649,7 @@
   },
   "/blog/realtime-voice-ai-customer-workflows/": {
     "lastmod": "2026-07-07",
-    "hash": "daf65a0896c629e3e33679e2b39cabad15c9191c4161bc09cfcc3557db1b7dc5"
+    "hash": "84fe44dcedbd16e8741c307aaee7e4d28171077b1dbad716050ffa414f5ea714"
   },
   "/blog/receipt-mileage-recordkeeping-research/": {
     "lastmod": "2026-07-02",
@@ -2485,7 +2685,7 @@
   },
   "/blog/risc-v-developer-hardware-watch/": {
     "lastmod": "2026-07-07",
-    "hash": "92a193613e10ea585781ff233226222cb9549b03f4a131d5d16fa132d110f286"
+    "hash": "0cfc480d1ad38f870335de6108713d2e038cfcf3c311a8a78fa559801643e60c"
   },
   "/blog/ritualix-ai-habit-plan-vs-diy/": {
     "lastmod": "2026-07-02",
@@ -2505,7 +2705,7 @@
   },
   "/blog/robotics-digital-twins-ai-training/": {
     "lastmod": "2026-07-07",
-    "hash": "9ffc1d38f60082861556f0e2a9f82af9fb7697eda1c5fd448058cdee6a794852"
+    "hash": "50bea6995b0a25fe42d7638fe7bd74691b58049ce5a79fb40566b05713583ae1"
   },
   "/blog/rolling-shop-cart-cut-list/": {
     "lastmod": "2026-07-02",
@@ -2581,7 +2781,7 @@
   },
   "/blog/secure-ai-browser-extensions/": {
     "lastmod": "2026-07-07",
-    "hash": "c9f8d91bdfc1075bfd119ea7a732966421563f37342e4b6ec0f8ebce35ae986e"
+    "hash": "63b89214e84ab9781c8dda420f9d3fec9a5e9fe2b5af9e3faac19f5a99a1dab0"
   },
   "/blog/self-leveling-underlayment-before-tile-layout/": {
     "lastmod": "2026-07-02",
@@ -2589,7 +2789,7 @@
   },
   "/blog/serverless-edge-rendering-tradeoffs/": {
     "lastmod": "2026-07-07",
-    "hash": "c94af8326a230e2e60b8fc69ad4158d5585b3a2181c15981ead167c4ccc60ba8"
+    "hash": "5853c4c9bcece7ed5b6d4e45c42045a5416013aa56a515d7afab7c7f3e9fab27"
   },
   "/blog/sewing-machine-table-cut-list/": {
     "lastmod": "2026-07-02",
@@ -2653,7 +2853,7 @@
   },
   "/blog/small-language-models-enterprise-use/": {
     "lastmod": "2026-07-07",
-    "hash": "cb6a230968f8d0deb3637908b9dea3e4bf3bf2668d931fecd8934ace0044499b"
+    "hash": "c7f3a48d38d106c1075b1c1869987c1c24d098f8ad17aac873169ca230def119"
   },
   "/blog/small-shop-plywood-storage-and-offcuts/": {
     "lastmod": "2026-07-02",
@@ -2749,11 +2949,11 @@
   },
   "/blog/software-bill-of-materials-for-app-teams/": {
     "lastmod": "2026-07-07",
-    "hash": "d67782c3d05a4844a6e17083a495c2d04fb380eb309fd3b1972641cfe3fed6b7"
+    "hash": "083d22f9af22c520c79ecff31c72edd297d7d45f0a78b4d7f69704b744df1464"
   },
   "/blog/spatial-computing-product-design/": {
     "lastmod": "2026-07-07",
-    "hash": "53c57b4a8eb7c249b23f2dce44c5df14c0f070c0c4b698df566fd721990f85b0"
+    "hash": "0b4b6f2c21fc29b0d3d265a7c351fb30dd60de54c6da81a7cc6313165f0054f1"
   },
   "/blog/speaker-tools-room-tone-check-before-recording/": {
     "lastmod": "2026-07-02",
@@ -2949,11 +3149,11 @@
   },
   "/blog/sustainable-computing-ai-energy-budget/": {
     "lastmod": "2026-07-07",
-    "hash": "33025da56644eda760b3b3e6678a4478f01d03dc18994ee277a2f0962904d1b8"
+    "hash": "88b3901705ec16f4d33949602fdde50dc79325194a5939d7687165b6db76d594"
   },
   "/blog/synthetic-data-for-testing-workflows/": {
     "lastmod": "2026-07-07",
-    "hash": "018da856842f59ddf62c4b5e99165ac60bfc7fe2731190c74979f7fe554b4b4c"
+    "hash": "fc6fa777b445730d129ccd50b98cc328195d1ee4872d2994edd8b2d0dce23b78"
   },
   "/blog/table-saw-outfeed-table-cut-list/": {
     "lastmod": "2026-07-02",
@@ -3145,7 +3345,7 @@
   },
   "/blog/vector-database-cleanup-strategy/": {
     "lastmod": "2026-07-07",
-    "hash": "3cd73f999ecf1c486dc86857b5531c4608241a8e84b913b39e5bfb7af59bb897"
+    "hash": "9c6f1f7890ed6369450bfc7f30d573e879b06dcc6ea0a1f79fb42a9241e9f6cb"
   },
   "/blog/video-compression-cleanup-iphone-storage/": {
     "lastmod": "2026-07-02",
@@ -3161,7 +3361,7 @@
   },
   "/blog/wasm-components-plugin-architecture/": {
     "lastmod": "2026-07-07",
-    "hash": "e8afd40e6237d51a94c0b201716ce5ae950548817b513096f0cde53fd80a77fd"
+    "hash": "5ace921d27b29f5a37141941e92806141248d22c813037c2b5363d7f4a091deb"
   },
   "/blog/watermark-app-creators-signature-brand/": {
     "lastmod": "2026-07-02",
@@ -3169,11 +3369,11 @@
   },
   "/blog/web-accessibility-ai-generated-interfaces/": {
     "lastmod": "2026-07-07",
-    "hash": "9aa9c99371e2d10c140ea39ea73366cd49bb2e1defb2992987972e709b3c6ad2"
+    "hash": "518ab5d3d1ed9a45c15d18042217b9bdf6c21fa5d377ad0764ff7ef7e9fc6e6b"
   },
   "/blog/webgpu-browser-ai-workflows/": {
     "lastmod": "2026-07-07",
-    "hash": "d08b7910c55da5717c787b166018d4cdbcc1060e53a13bc8878f6b224497fcdb"
+    "hash": "3ce4f7697591ee4187c32e5bcdd61f5867deadefcbac847f3eceade764f082bf"
   },
   "/blog/weighted-decision-maker-app/": {
     "lastmod": "2026-07-02",
@@ -3269,7 +3469,7 @@
   },
   "/blog/zero-trust-for-tiny-teams/": {
     "lastmod": "2026-07-07",
-    "hash": "6115acd873d74fb0c5f60ce7e0ffab1740c03aa9a81b76e9bec8cee27b8d783e"
+    "hash": "56690f20ee03197a1eedba0170701a49e457b715e1338b8634cd540315d7ec5b"
   },
   "/compare/": {
     "lastmod": "2026-07-02",

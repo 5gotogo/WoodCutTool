@@ -1724,3 +1724,1217 @@ export const compareData = {
     ]
   }
 };
+
+function addExtra(appSlug, slug, vs, title, desc, intro, rows, whyApp, whenOther, faqs) {
+  compareData[appSlug].articles.push({
+    slug,
+    vs,
+    title,
+    desc,
+    intro,
+    rows,
+    whyApp,
+    whenOther,
+    faqs
+  });
+}
+
+addExtra(
+  "quiltfit-quilt-design-planner",
+  "quiltfit-vs-quilt-calculator-websites",
+  "Quilt Calculator Websites",
+  "QuiltFit vs Quilt Calculator Websites",
+  "QuiltFit vs quilt calculator websites: compare saved projects, visual block layouts, fabric roles, and shopping lists against one-off browser math.",
+  "Quilt calculator websites can answer a narrow math question, such as backing or binding yardage. QuiltFit keeps the whole quilt project together: block layout, fabric roles, estimates, and shopping notes.",
+  [
+    ["Project view", "Visual quilt layout", "Usually one calculator form"],
+    ["Saved revisions", "Saved on the phone", "Often not saved"],
+    ["Fabric roles", "Tracked by design", "Entered manually"],
+    ["Shopping list", "Built from the project", "Copied out by hand"],
+    ["Best moment", "Planning the quilt", "Checking one number"]
+  ],
+  "QuiltFit wins when the quilt is more than a single yardage question. Because the layout and fabric roles live together, a color or block-count change updates the plan instead of sending you back through several web forms.",
+  "A web calculator is still useful for a quick sanity check on backing or binding when you do not need to save a project. For an actual quilt plan, the app keeps the pieces connected.",
+  [
+    ["Is QuiltFit better than online quilt calculators?", "For full project planning, yes. Online calculators answer one question, while QuiltFit keeps the layout, fabric roles, and shopping list together."],
+    ["Can I still use a quilt calculator website?", "Yes. It can be useful for checking a single number, but it does not replace a saved project plan."],
+    ["Does QuiltFit save revisions?", "Yes. You can reopen a quilt and adjust the layout or fabrics without starting over."],
+    ["Who benefits most from QuiltFit?", "Quilters who change colors, compare layouts, or shop from a planned fabric list benefit most."]
+  ]
+);
+
+addExtra(
+  "cutlist-plywood-optimizer",
+  "cutlist-vs-paper-parts-list",
+  "a Paper Parts List",
+  "CutList vs a Paper Parts List for Plywood Projects",
+  "CutList vs a paper parts list: compare kerf-aware sheet layout, labels, revisions, and PDF cut sheets against handwritten plywood notes.",
+  "A paper parts list is easy to start, but it does not prove the parts fit on the sheet. CutList turns dimensions into a layout, applies saw kerf, and gives the shop a clearer cutting order.",
+  [
+    ["Sheet fit", "Calculated layout", "Guessed or sketched"],
+    ["Saw kerf", "Included", "Easy to forget"],
+    ["Part labels", "Printed in the plan", "Handwritten"],
+    ["Revisions", "Edit and rerun", "Rewrite the list"],
+    ["Sharing", "PDF cut sheet", "Photo or copy"]
+  ],
+  "CutList wins when the parts list needs to become a real cutting plan. It checks fit, labels the pieces, and keeps kerf visible, which is where paper notes often cause avoidable mistakes.",
+  "Paper still works for a rough first pass or a very small one-sheet project. Once material cost or repeated parts matter, a calculated layout is safer.",
+  [
+    ["Is CutList better than writing a parts list on paper?", "For final planning, yes. CutList turns the parts list into a kerf-aware sheet layout instead of leaving fit to a sketch."],
+    ["Can paper notes still help?", "Yes. Paper is fine for early dimensions and rough ideas before entering the final parts."],
+    ["Does CutList include kerf?", "Yes. Kerf is part of the layout calculation."],
+    ["Can I share the plan?", "Yes. CutList can export a PDF cut sheet for printing or handoff."]
+  ]
+);
+
+addExtra(
+  "snaplabel-photo-text-label",
+  "snaplabel-vs-spreadsheet-label-list",
+  "a Spreadsheet Label List",
+  "SnapLabel vs a Spreadsheet Label List",
+  "SnapLabel vs spreadsheet label lists: compare photo labels, batch printing, reusable designs, and home organization workflows.",
+  "A spreadsheet can store names for bins or pantry items, but it does not create the label experience. SnapLabel focuses on turning text and photos into printable labels without building a separate template workflow.",
+  [
+    ["Label design", "Built in", "Needs another tool"],
+    ["Photo labels", "Supported", "Not native"],
+    ["Batch labels", "Designed for batches", "Requires setup"],
+    ["Reprints", "Fast", "Find and rebuild"],
+    ["Best use", "Storage and pantry labels", "Inventory lists"]
+  ],
+  "SnapLabel wins when the output is the label itself. You can make readable labels from text or photos without maintaining rows, columns, and a separate print template.",
+  "A spreadsheet still makes sense for a large inventory list or audit trail. Use the spreadsheet for records and SnapLabel for the actual labels people read.",
+  [
+    ["Is SnapLabel better than a spreadsheet for labels?", "For making labels, yes. A spreadsheet stores data; SnapLabel creates printable labels."],
+    ["Can SnapLabel make photo labels?", "Yes. That is useful for bins, classrooms, and visual storage systems."],
+    ["When should I use a spreadsheet?", "Use one when you need a long inventory record or totals, not just labels."],
+    ["Can SnapLabel reprint labels?", "Yes. It is built for repeatable label creation and reprints."]
+  ]
+);
+
+addExtra(
+  "work-shift-schedule-calendar",
+  "shift-calendar-vs-text-message-rota",
+  "a Text Message Rota",
+  "Shift Calendar vs a Text Message Rota",
+  "Work Shift Schedule Calendar vs text-message rotas: compare reminders, repeating patterns, hour totals, and schedule changes.",
+  "Many shift teams send schedules through texts or chat screenshots. That works for the announcement, but it leaves the worker to translate shifts into reminders, hour totals, and a usable calendar.",
+  [
+    ["Schedule format", "Calendar view", "Message thread"],
+    ["Reminders", "Built in", "Manual"],
+    ["Repeating shifts", "Pattern based", "Re-read messages"],
+    ["Hour totals", "Calculated", "Added by hand"],
+    ["Changes", "Update the calendar", "Search the chat"]
+  ],
+  "The app wins because it turns a rota into something actionable. Once the shift is in the calendar, reminders and hour totals are part of the workflow instead of separate chores.",
+  "A text rota is fine for sending the original schedule. It should not be the only place you rely on when shifts rotate or change often.",
+  [
+    ["Why not keep my rota in text messages?", "Messages are easy to miss and hard to total. A shift calendar gives reminders, patterns, and hour totals."],
+    ["Can the app help with changing shifts?", "Yes. You can update the calendar instead of digging through old messages."],
+    ["Does it replace employer messages?", "No. It turns the schedule you receive into a personal working calendar."],
+    ["Is it useful for rotating shifts?", "Yes. Pattern-based entry is the main advantage."]
+  ]
+);
+
+addExtra(
+  "address-label-maker-and-envelope",
+  "address-label-maker-vs-online-label-websites",
+  "Online Label Websites",
+  "Address Label Maker vs Online Label Websites",
+  "Address Label Maker & Envelope vs online label websites: compare contact import, template setup, privacy, and repeat mailing workflows.",
+  "Online label websites are useful, but they usually make you upload or type address data into a browser. Address Label Maker keeps the mailing workflow on your phone and closer to your Contacts.",
+  [
+    ["Address source", "Contacts on iPhone", "Typed or uploaded"],
+    ["Privacy", "Local workflow", "Depends on site"],
+    ["Repeat batches", "Saved workflow", "Often one-off"],
+    ["Mobile use", "Built for iPhone", "Browser dependent"],
+    ["Templates", "Common label sheets", "Varies"]
+  ],
+  "The app wins for repeat household or small-business mailings because it avoids rebuilding the same browser workflow. Contact import and mobile printing reduce the friction.",
+  "An online site is fine for a single non-sensitive label sheet from a desktop. For addresses you reuse, an app-based workflow is cleaner.",
+  [
+    ["Is an app better than an online label website?", "For repeat mailing, yes. The app keeps the workflow close to your Contacts and avoids retyping addresses."],
+    ["Do online label sites work?", "Yes, especially for one-off jobs, but they may require uploads or extra setup."],
+    ["Can Address Label Maker use Contacts?", "Yes. It can pull addresses from Contacts."],
+    ["Who should use the app?", "People who print holiday cards, small batches, envelopes, or repeat mailing labels from an iPhone."]
+  ]
+);
+
+addExtra(
+  "atomic-clock-precision-time",
+  "atomic-clock-vs-wall-clock",
+  "a Wall Clock",
+  "Atomic Clock App vs a Wall Clock",
+  "Atomic Clock - Precision Time vs a wall clock: compare seconds display, drift, event timing, and always-visible precision time.",
+  "A wall clock is good for everyday time, but it is not built for precise seconds, countdowns, or checking drift. Atomic Clock gives a clear precision display when timing matters.",
+  [
+    ["Seconds", "Clear digital seconds", "Often absent or small"],
+    ["Drift check", "Easy to compare", "Can drift unnoticed"],
+    ["Event timing", "Countdown-friendly", "Manual watching"],
+    ["Portability", "Phone-based", "Fixed on wall"],
+    ["Best use", "Precise moments", "Room awareness"]
+  ],
+  "Atomic Clock wins when you need to act on a specific second, coordinate a stream, check a clock, or keep a precise display visible. A wall clock is too general for that.",
+  "A wall clock is still better for passive room awareness and glancing from across a room. It is not a precision timing tool.",
+  [
+    ["Is Atomic Clock more useful than a wall clock?", "For precise timing, yes. It shows seconds clearly and travels with you."],
+    ["When is a wall clock enough?", "For casual room time where exact seconds do not matter."],
+    ["Can the app help check clock drift?", "Yes. It is useful for comparing other clocks against a precision display."],
+    ["Who needs precision time?", "People timing events, recordings, meetings, labs, streams, or countdowns."]
+  ]
+);
+
+addExtra(
+  "private-meeting-transcriber",
+  "private-transcriber-vs-recording-audio-only",
+  "Recording Audio Only",
+  "Private Meeting Transcriber vs Recording Audio Only",
+  "Private Meeting Transcriber vs audio-only recordings: compare searchable transcripts, review speed, action items, and private meeting notes.",
+  "Recording audio captures everything, but it also forces you to listen again. A private transcriber turns the meeting into text so you can search, skim, and pull decisions faster.",
+  [
+    ["Review speed", "Skim text", "Replay audio"],
+    ["Search", "Search transcript", "Scrub timeline"],
+    ["Action items", "Easier to extract", "Manual listening"],
+    ["Storage", "Text plus audio workflow", "Audio file only"],
+    ["Best use", "Meetings and interviews", "Raw archival record"]
+  ],
+  "Private Meeting Transcriber wins when the recording needs to become notes. Searchable text makes follow-up faster than replaying a long audio file.",
+  "Audio-only recording still matters when you need the original tone, exact delivery, or a backup source. The best workflow may keep audio while using text for review.",
+  [
+    ["Why transcribe instead of just recording?", "A transcript is searchable and skimmable, so follow-up is faster."],
+    ["Is audio still useful?", "Yes. Audio preserves tone and can be a backup record."],
+    ["Can transcripts help with action items?", "Yes. Text makes decisions and tasks easier to find."],
+    ["Who benefits most?", "People who record meetings, interviews, lectures, or client calls and need to review them later."]
+  ]
+);
+
+addExtra(
+  "speaker-tools-audio-test",
+  "speaker-tools-vs-phone-speaker-test-videos",
+  "Speaker Test Videos",
+  "Speaker Tools vs Speaker Test Videos",
+  "Speaker Tools - Audio Test vs speaker test videos: compare generated tones, channel checks, frequency control, and offline audio testing.",
+  "Speaker test videos are easy to find, but they mix your test with streaming compression, ads, and fixed tracks. Speaker Tools gives controlled tones and checks from the phone.",
+  [
+    ["Tone control", "Selectable tools", "Fixed video track"],
+    ["Offline", "Yes", "Usually no"],
+    ["Ads / interruptions", "No video ads", "Possible"],
+    ["Channel checks", "Purpose-built", "Depends on video"],
+    ["Best use", "Repeatable testing", "Quick casual check"]
+  ],
+  "Speaker Tools wins when you want repeatable tests without relying on a video platform. Controlled tones and channel checks make troubleshooting cleaner.",
+  "A video is fine for a quick casual left-right check. For setup work, a dedicated audio test app is more predictable.",
+  [
+    ["Are speaker test videos accurate enough?", "They can help with a quick check, but they are less controlled than generated test tones."],
+    ["Does Speaker Tools work offline?", "Yes. That avoids streaming issues during setup."],
+    ["Can it test left and right channels?", "Yes. Channel testing is part of the use case."],
+    ["When should I use a video?", "Use one for a quick casual check when accuracy and repeatability are not critical."]
+  ]
+);
+
+addExtra(
+  "export-backup-all-contacts-pro",
+  "contacts-backup-vs-manual-contact-export",
+  "Manual Contact Export",
+  "Contacts Backup App vs Manual Contact Export",
+  "Export Backup All Contacts Pro vs manual contact export: compare CSV, Excel, vCard, repeat backups, and easier phone migration.",
+  "Manual contact export is easy to postpone because it usually takes several steps. Export Backup All Contacts Pro makes backup a deliberate, repeatable workflow with common file formats.",
+  [
+    ["Backup speed", "App-guided", "Several manual steps"],
+    ["Formats", "CSV, Excel, vCard", "Depends on method"],
+    ["Repeat backups", "Simple to rerun", "Easy to forget"],
+    ["Migration", "Export-ready files", "Manual preparation"],
+    ["Best use", "Personal backup habit", "One-off troubleshooting"]
+  ],
+  "The app wins by making contact backup obvious and repeatable. Exporting to common formats gives you a file you can store, inspect, and use when switching phones.",
+  "Manual export is fine if you already know the exact platform steps and only need it once. Most people benefit from a clearer backup tool.",
+  [
+    ["Why use a contacts backup app?", "It makes contact export repeatable and produces common file formats."],
+    ["What formats matter?", "CSV, Excel, and vCard are useful for backup, review, and migration."],
+    ["Is manual export bad?", "No. It is just easier to delay or do inconsistently."],
+    ["When should I back up contacts?", "Before switching phones, changing accounts, traveling, or cleaning up duplicate contacts."]
+  ]
+);
+
+addExtra(
+  "cadenza-metronome-and-tuner",
+  "cadenza-vs-tuner-only-app",
+  "a Tuner-Only App",
+  "Cadenza vs a Tuner-Only App",
+  "Cadenza vs tuner-only apps: compare metronome practice, tuning, tempo notes, setlists, and a more complete music practice workflow.",
+  "A tuner-only app solves one problem: pitch. Cadenza combines tuning with metronome practice so the same practice session can cover intonation, tempo, and repeatable exercises.",
+  [
+    ["Tuning", "Built in", "Built in"],
+    ["Metronome", "Built in", "No"],
+    ["Practice flow", "Tempo and pitch", "Pitch only"],
+    ["Setlist support", "Practice-oriented", "Usually no"],
+    ["Best use", "Daily practice", "Quick tuning"]
+  ],
+  "Cadenza wins when tuning is only the start of practice. Having tempo tools in the same app keeps the session moving without switching apps.",
+  "A tuner-only app is fine for a quick pre-rehearsal pitch check. It is less useful once you need tempo discipline or practice notes.",
+  [
+    ["Is Cadenza better than a tuner-only app?", "For practice, yes. It includes both tuning and metronome tools."],
+    ["When is a tuner-only app enough?", "When you only need a quick pitch check."],
+    ["Does Cadenza help with tempo?", "Yes. The metronome side supports tempo practice."],
+    ["Who should use Cadenza?", "Musicians who want tuning and rhythm tools in one practice workflow."]
+  ]
+);
+
+addExtra(
+  "colorpop-color-block-tap-game",
+  "colorpop-vs-timed-reflex-games",
+  "Timed Reflex Games",
+  "ColorPop vs Timed Reflex Games",
+  "ColorPop vs timed reflex games: compare calm color tapping, low-pressure play, short breaks, and games that punish slow reactions.",
+  "Timed reflex games can be exciting, but they often create pressure. ColorPop is built around quick color play that gives your hands something to do without turning every mistake into stress.",
+  [
+    ["Pace", "Low pressure", "Timer-driven"],
+    ["Failure feel", "Light", "Punishing"],
+    ["Break length", "Short sessions", "Can escalate"],
+    ["Focus", "Color matching", "Reaction speed"],
+    ["Best use", "Mental reset", "Competitive challenge"]
+  ],
+  "ColorPop wins when the goal is a quick reset instead of an adrenaline spike. The game gives enough interaction to occupy attention without demanding perfect reflexes.",
+  "Timed reflex games make sense when you want challenge and speed. They are not always the best choice for a calm break.",
+  [
+    ["Is ColorPop a stressful game?", "No. It is designed for light color tapping rather than high-pressure reaction tests."],
+    ["When are timed games better?", "When you want speed, challenge, and competition."],
+    ["Can ColorPop work for short breaks?", "Yes. It is suited to brief sessions."],
+    ["Who is ColorPop for?", "People who want simple mobile play without heavy rules or pressure."]
+  ]
+);
+
+addExtra(
+  "marketvendor-sales-and-profit",
+  "marketvendor-vs-spreadsheet-sales-tracker",
+  "a Spreadsheet Sales Tracker",
+  "MarketVendor vs a Spreadsheet Sales Tracker",
+  "MarketVendor vs spreadsheet sales trackers: compare booth-speed entry, profit summaries, product notes, and market-day reporting.",
+  "A spreadsheet is powerful after the event, but it is awkward at a busy booth. MarketVendor is built for quick sales and profit tracking while the day is still happening.",
+  [
+    ["At-booth entry", "Fast and focused", "Awkward on phone"],
+    ["Profit view", "Built for sales", "Formula setup"],
+    ["Product notes", "Simple tracking", "Manual columns"],
+    ["End-of-day review", "Ready summary", "Clean up first"],
+    ["Best use", "Markets and pop-ups", "Deep analysis later"]
+  ],
+  "MarketVendor wins during the event because speed matters more than spreadsheet flexibility. You can capture sales while serving customers and review results afterward.",
+  "A spreadsheet is still useful for long-term bookkeeping or complex analysis. Use it after the market, not as the primary booth interface.",
+  [
+    ["Is MarketVendor better than a spreadsheet at a booth?", "For live selling, yes. It is faster and less fragile than editing a spreadsheet during customer traffic."],
+    ["Can spreadsheets still help?", "Yes. They are useful for long-term analysis after data is collected."],
+    ["Does MarketVendor track profit?", "Yes. It is focused on sales and profit review."],
+    ["Who should use it?", "Craft fair, market, food stall, and pop-up vendors who need quick daily records."]
+  ]
+);
+
+addExtra(
+  "snapcleaner-clean-photos",
+  "snapcleaner-vs-icloud-photo-review",
+  "iCloud Photo Review",
+  "SnapCleaner vs iCloud Photo Review",
+  "SnapCleaner vs reviewing iCloud Photos manually: compare duplicate cleanup, similar photo review, storage decisions, and faster photo library cleanup.",
+  "iCloud Photos keeps your library synced, but it does not make cleanup decisions easy. SnapCleaner focuses on reviewing similar photos and storage clutter so you can delete with more confidence.",
+  [
+    ["Cleanup focus", "Built for review", "General photo library"],
+    ["Similar photos", "Grouped for decisions", "Manual scanning"],
+    ["Storage pressure", "Front and center", "Less direct"],
+    ["Speed", "Guided cleanup", "Scroll and inspect"],
+    ["Best use", "Reducing clutter", "Syncing photos"]
+  ],
+  "SnapCleaner wins when the goal is cleanup rather than storage sync. Grouped review makes it easier to find near-duplicates and reclaim space.",
+  "iCloud Photos remains important for syncing and access across devices. It is not a dedicated cleanup workflow by itself.",
+  [
+    ["Does SnapCleaner replace iCloud Photos?", "No. iCloud syncs photos; SnapCleaner helps review and clean clutter."],
+    ["Why not just scroll through iCloud Photos?", "Manual scrolling is slow and makes similar shots harder to compare."],
+    ["Can SnapCleaner help save storage?", "Yes. It helps identify photos that may be safe to remove."],
+    ["Who should use it?", "People with many screenshots, duplicates, burst shots, or similar pictures."]
+  ]
+);
+
+addExtra(
+  "pdf-scan-scanner-and-reader",
+  "pdf-scan-vs-flatbed-scanner-at-home",
+  "a Flatbed Scanner",
+  "PDF Scan vs a Flatbed Scanner at Home",
+  "PDF Scan vs flatbed scanners: compare mobile capture, multi-page PDFs, desk space, speed, and document quality for everyday paperwork.",
+  "Flatbed scanners can produce steady scans, but they are slow for everyday paperwork and tied to a desk. PDF Scan turns the phone into a document capture tool for receipts, forms, and multi-page files.",
+  [
+    ["Portability", "Phone-based", "Desk hardware"],
+    ["Multi-page PDFs", "Quick capture", "Page-by-page lid work"],
+    ["Setup", "Open the app", "Computer and scanner"],
+    ["Best quality", "Good for paperwork", "Strong for flat originals"],
+    ["Best use", "Daily documents", "Archival scanning"]
+  ],
+  "PDF Scan wins for speed and availability. The best scanner is often the one you have with you when a receipt, signature, or form needs to become a PDF.",
+  "A flatbed scanner still wins for delicate originals, photos, and archival work where perfect flatness and consistent lighting matter.",
+  [
+    ["Can a phone scanner replace a flatbed?", "For everyday documents, often yes. For archival photos or delicate originals, a flatbed is still better."],
+    ["Is PDF Scan good for multi-page documents?", "Yes. It is built for creating multi-page PDFs."],
+    ["When should I use a flatbed scanner?", "Use one for high-quality flat originals, photos, or fragile documents."],
+    ["Who benefits from PDF Scan?", "People who handle receipts, forms, signed pages, school papers, or renovation documents on the go."]
+  ]
+);
+
+addExtra(
+  "photosafe-private-photo-vault",
+  "photosafe-vs-cloud-photo-albums",
+  "Cloud Photo Albums",
+  "PhotoSafe vs Cloud Photo Albums",
+  "PhotoSafe vs cloud photo albums: compare private vault storage, local organization, album separation, and sensitive photo handling.",
+  "Cloud albums are convenient for sharing and cross-device access, but not every photo belongs in a shared or synced library. PhotoSafe is for keeping private photos separated in a vault-style space.",
+  [
+    ["Privacy boundary", "Vault-style separation", "Synced library"],
+    ["Sharing", "Not the focus", "Built for sharing"],
+    ["Sensitive albums", "Organized privately", "Mixed with cloud albums"],
+    ["Access model", "App-controlled", "Account-controlled"],
+    ["Best use", "Private storage", "Family sharing"]
+  ],
+  "PhotoSafe wins when separation is the point. A private vault helps keep sensitive images out of the main camera roll and cloud album flow.",
+  "Cloud albums are better for shared family photos, collaboration, and access from many devices. They are not the same as a privacy vault.",
+  [
+    ["Is PhotoSafe better than cloud albums?", "For private separation, yes. Cloud albums are mainly for sync and sharing."],
+    ["Should I use cloud albums for family photos?", "Yes, if sharing and multi-device access are the priority."],
+    ["Why keep photos outside the main library?", "It reduces accidental browsing, sharing, or display of sensitive images."],
+    ["Who should use PhotoSafe?", "People who want a separate private space for personal photos and albums."]
+  ]
+);
+
+addExtra(
+  "fridgetrack-fridge-inventory",
+  "fridgetrack-vs-grocery-list-only",
+  "a Grocery List Only",
+  "FridgeTrack vs a Grocery List Only",
+  "FridgeTrack vs using only a grocery list: compare fridge inventory, expiry awareness, meal planning, and reducing duplicate purchases.",
+  "A grocery list tells you what to buy. It does not tell you what is already in the fridge, what is close to expiring, or what meal could use leftovers first.",
+  [
+    ["Current inventory", "Tracked", "Not tracked"],
+    ["Expiry awareness", "Visible", "Manual memory"],
+    ["Duplicate buys", "Reduced", "Easy to repeat"],
+    ["Meal planning", "Uses what you have", "Buy-focused"],
+    ["Best use", "Managing food at home", "Shopping trip checklist"]
+  ],
+  "FridgeTrack wins because it starts from what you already own. That makes grocery decisions smarter and helps reduce forgotten food.",
+  "A simple grocery list is still useful at the store. It works best when informed by an inventory rather than memory.",
+  [
+    ["Why is fridge inventory better than only a grocery list?", "Inventory shows what you already have, so you can avoid duplicate buys and use food before it expires."],
+    ["Can I still keep a grocery list?", "Yes. FridgeTrack complements a shopping list."],
+    ["Does it help with meal planning?", "Yes. Knowing what is in the fridge makes meal choices easier."],
+    ["Who should use FridgeTrack?", "Households that waste food, forget leftovers, or buy duplicates often."]
+  ]
+);
+
+addExtra(
+  "printer-app-print-pdf-docs",
+  "printer-app-vs-opening-files-on-laptop",
+  "Opening Files on a Laptop",
+  "Printer App vs Opening Files on a Laptop to Print",
+  "Printer App vs moving files to a laptop: compare iPhone printing, PDF documents, return labels, templates, and faster mobile print workflows.",
+  "Sending a file to a laptop just to print adds friction. Printer App keeps the workflow on the iPhone when the document, label, or PDF is already there.",
+  [
+    ["Device flow", "Print from iPhone", "Move to laptop"],
+    ["Return labels", "Quick mobile print", "Download and transfer"],
+    ["PDF handling", "Phone-first", "Desktop-first"],
+    ["Setup time", "Short", "More steps"],
+    ["Best use", "Everyday documents", "Complex desktop editing"]
+  ],
+  "Printer App wins when printing is the only task. You avoid sending files around just to reach the print button.",
+  "A laptop still makes sense when you need editing, layout work, or advanced printer settings before printing.",
+  [
+    ["Why print from an iPhone instead of a laptop?", "If the file is already on the phone, printing directly saves transfer steps."],
+    ["Is a laptop ever better?", "Yes. Use one for complex editing or advanced layout changes."],
+    ["Can the app help with return labels?", "Yes. Mobile label and PDF printing is a common use case."],
+    ["Who benefits most?", "People who receive documents, labels, and forms on their phone."]
+  ]
+);
+
+addExtra(
+  "pickone-random-choice-picker",
+  "pickone-vs-random-number-generator",
+  "a Random Number Generator",
+  "PickOne vs a Random Number Generator",
+  "PickOne vs random number generators: compare named choices, weighted decisions, fairness, and everyday group decision making.",
+  "A random number generator can choose a number, but people decide between real options. PickOne lets the choices stay named and visible, which makes the result easier to accept.",
+  [
+    ["Input", "Named choices", "Numbers"],
+    ["Group clarity", "Easy to show", "Requires mapping"],
+    ["Weighted choice", "Decision-focused", "Varies"],
+    ["Everyday use", "Restaurants, chores, teams", "Math-style draw"],
+    ["Best use", "Human decisions", "Numeric randomness"]
+  ],
+  "PickOne wins for practical decisions because the app chooses from the actual options. There is no need to map option 7 back to a restaurant or chore.",
+  "A random number generator is fine for games, math, or any situation where numbers are the real output.",
+  [
+    ["Why not use a random number generator?", "It works, but named choices are clearer for real decisions."],
+    ["Can PickOne help groups decide?", "Yes. Visible options make the choice easier to trust."],
+    ["When is a number generator better?", "When the decision is actually numeric, such as dice-style games."],
+    ["Who should use PickOne?", "Families, teams, couples, and friends deciding among named options."]
+  ]
+);
+
+addExtra(
+  "snapstock-inventory-scanner",
+  "snapstock-vs-pos-inventory-module",
+  "a POS Inventory Module",
+  "SnapStock vs a POS Inventory Module",
+  "SnapStock vs POS inventory modules: compare lightweight barcode stock counts, low-stock alerts, setup time, and small-business inventory needs.",
+  "A POS inventory module can be powerful, but it often comes with setup, subscriptions, and workflows built around checkout. SnapStock is lighter for small stock counts and barcode-based inventory checks.",
+  [
+    ["Setup", "Lightweight", "System configuration"],
+    ["Barcode counts", "Core workflow", "Depends on POS"],
+    ["Cost", "App-focused", "Often subscription bundle"],
+    ["Low-stock review", "Built for inventory", "Tied to sales system"],
+    ["Best use", "Small stock rooms", "Full retail operations"]
+  ],
+  "SnapStock wins when you need inventory control without adopting a whole POS workflow. It is focused on counting, checking, and keeping stock visible.",
+  "A POS module is better when inventory must connect directly to checkout, taxes, staff accounts, and multi-location reporting.",
+  [
+    ["Is SnapStock a replacement for POS inventory?", "For small inventory tracking, it can be. For full retail operations, a POS may still be needed."],
+    ["Why use a lighter inventory app?", "It is faster to set up when checkout integration is not the main problem."],
+    ["Does barcode scanning matter?", "Yes. It speeds up stock counts and reduces typing."],
+    ["Who should use SnapStock?", "Small shops, makers, stock rooms, and side businesses that need simple inventory checks."]
+  ]
+);
+
+addExtra(
+  "magnifier-reader-big-text",
+  "magnifier-reader-vs-taking-a-photo-and-zooming",
+  "Taking a Photo and Zooming",
+  "Magnifier Reader vs Taking a Photo and Zooming",
+  "Magnifier Reader vs taking a photo and zooming: compare live big text, quick reading, labels, menus, and small print accessibility.",
+  "Taking a photo and pinching to zoom can work, but it turns every small label into a camera-roll task. Magnifier Reader is built for live reading when the text is right in front of you.",
+  [
+    ["Live view", "Yes", "No, after photo"],
+    ["Speed", "Open and read", "Shoot, open, pinch"],
+    ["Camera roll clutter", "None", "Adds photos"],
+    ["Small print", "Designed for it", "Possible but clumsy"],
+    ["Best use", "Labels and menus", "Saving evidence"]
+  ],
+  "Magnifier Reader wins for quick reading because it removes the extra photo step. You can inspect labels, instructions, and menus without filling the camera roll.",
+  "Taking a photo is better when you need to save the information, send it, or inspect it later.",
+  [
+    ["Why use Magnifier Reader instead of taking a photo?", "It is faster for live reading and avoids camera roll clutter."],
+    ["When is taking a photo better?", "When you need a saved record or want to share the information."],
+    ["Is this useful for labels?", "Yes. Small labels, menus, and instructions are core use cases."],
+    ["Does it replace accessibility settings?", "No. It is a focused reading aid for small print moments."]
+  ]
+);
+
+addExtra(
+  "snapreceipt-expenses-and-tax",
+  "snapreceipt-vs-manual-tax-folder",
+  "a Manual Tax Folder",
+  "SnapReceipt vs a Manual Tax Folder",
+  "SnapReceipt vs manual tax folders: compare receipt capture, categories, export-ready records, and small-business expense organization.",
+  "A folder of receipts feels organized until tax time, when every paper slip has to be sorted and typed. SnapReceipt captures records as you go so the tax folder is not just a pile.",
+  [
+    ["Capture timing", "At purchase", "Later sorting"],
+    ["Search", "Digital records", "Manual digging"],
+    ["Categories", "Expense-focused", "Folder tabs"],
+    ["Export", "Record-ready", "Type into a sheet"],
+    ["Best use", "Ongoing tracking", "Paper backup"]
+  ],
+  "SnapReceipt wins because it moves the work earlier. Capturing and categorizing receipts during the month is easier than reconstructing everything from paper later.",
+  "A physical folder is still useful as backup for original paper receipts. It should not be the only system if you need summaries or exports.",
+  [
+    ["Is SnapReceipt better than a tax folder?", "For tracking and export, yes. A folder stores paper but does not organize the data."],
+    ["Should I keep paper receipts?", "For some records, yes. The app helps you track them digitally."],
+    ["Can digital records help at tax time?", "Yes. Categorized records are easier to review than loose receipts."],
+    ["Who should use SnapReceipt?", "Contractors, makers, freelancers, and anyone collecting deductible receipts."]
+  ]
+);
+
+addExtra(
+  "mindnest-secret-journal",
+  "mindnest-vs-cloud-journal-apps",
+  "Cloud Journal Apps",
+  "MindNest vs Cloud Journal Apps",
+  "MindNest vs cloud journal apps: compare private offline writing, account-free journaling, search, and sensitive personal notes.",
+  "Cloud journal apps can sync everywhere, but some writing is better kept simple and private. MindNest focuses on personal journaling without turning reflection into another cloud account.",
+  [
+    ["Account", "No account focus", "Usually account-based"],
+    ["Privacy feel", "Personal and local", "Cloud sync model"],
+    ["Offline writing", "Natural", "Varies"],
+    ["Search", "Journal-focused", "Varies"],
+    ["Best use", "Private reflection", "Cross-device journaling"]
+  ],
+  "MindNest wins when privacy and low friction matter more than multi-device sync. Opening a private space and writing quickly helps journaling stay personal.",
+  "A cloud journal app is better if you need every entry synced across many devices and are comfortable with that account model.",
+  [
+    ["Is MindNest more private than cloud journal apps?", "It is designed around private, low-friction journaling rather than cloud-first sync."],
+    ["When is a cloud journal better?", "When cross-device sync is the most important feature."],
+    ["Does MindNest help with consistent writing?", "Yes. A focused private space can reduce friction."],
+    ["Who should use MindNest?", "People who want personal notes and reflection without a social or cloud-heavy workflow."]
+  ]
+);
+
+addExtra(
+  "ritualix-habits-and-streaks",
+  "ritualix-vs-generic-to-do-list",
+  "a Generic To-Do List",
+  "Ritualix vs a Generic To-Do List for Habits",
+  "Ritualix vs generic to-do lists: compare habit streaks, weekly review, repeat routines, and behavior tracking.",
+  "A to-do list is built for tasks you finish. Habits are different: they repeat, build streaks, and need review after missed days. Ritualix is built around that rhythm.",
+  [
+    ["Habit streaks", "Built in", "Manual"],
+    ["Repeating routines", "Habit-focused", "Task-focused"],
+    ["Missed days", "Part of review", "Looks like failure"],
+    ["Progress view", "Designed for habits", "Checklist history"],
+    ["Best use", "Behavior change", "Errands and tasks"]
+  ],
+  "Ritualix wins because it treats habits as ongoing patterns, not one-time tasks. That makes streaks, resets, and weekly review feel natural.",
+  "A to-do list is still better for errands, deadlines, and project tasks. It is not ideal as the main home for habits.",
+  [
+    ["Why not track habits in a to-do app?", "To-do apps are built for finishing tasks, while habits repeat and need streaks or review."],
+    ["Can Ritualix handle missed days?", "Yes. Habit tracking should support recovery, not just perfect streaks."],
+    ["When is a to-do list better?", "For errands, deadlines, and one-time tasks."],
+    ["Who should use Ritualix?", "People building repeat routines like movement, sleep, reading, or mindfulness."]
+  ]
+);
+
+addExtra(
+  "pantry-label-maker-kitchen",
+  "pantry-label-maker-vs-writing-on-jars",
+  "Writing on Jars",
+  "Pantry Label Maker vs Writing on Jars",
+  "Pantry Label Maker vs writing directly on jars: compare readable pantry labels, expiry dates, consistency, and reusable kitchen organization.",
+  "Writing directly on jars is quick, but it can smear, look inconsistent, and become hard to update. Pantry Label Maker creates readable labels that make shelves easier to scan.",
+  [
+    ["Legibility", "Consistent printed labels", "Depends on marker"],
+    ["Expiry dates", "Clean label field", "Crowded handwriting"],
+    ["Shelf look", "Coordinated", "Mixed"],
+    ["Updates", "Reprint label", "Scrub or overwrite"],
+    ["Best use", "Pantry systems", "Temporary marks"]
+  ],
+  "Pantry Label Maker wins when the pantry is a system, not a one-off jar. Consistent labels make ingredients easier to find and restock.",
+  "Writing on jars is fine for temporary storage or a quick leftover note. It is less ideal for a polished pantry layout.",
+  [
+    ["Is Pantry Label Maker better than writing on jars?", "For long-term pantry organization, yes. Printed labels are clearer and more consistent."],
+    ["When is marker writing fine?", "For temporary storage or a quick note."],
+    ["Can labels include expiry dates?", "Yes. Expiry labels are a useful pantry workflow."],
+    ["Who should use it?", "Home cooks, families, and organizers who want clear pantry shelves."]
+  ]
+);
+
+addExtra(
+  "blockfit-block-puzzle",
+  "blockfit-vs-complicated-strategy-games",
+  "Complicated Strategy Games",
+  "BlockFit vs Complicated Strategy Games",
+  "BlockFit vs complicated strategy games: compare quick puzzle sessions, simple rules, mental breaks, and games that require long commitment.",
+  "Strategy games can be rewarding, but they demand attention, rules, and long sessions. BlockFit is a puzzle break you can understand quickly and leave when the break is over.",
+  [
+    ["Learning curve", "Simple", "High"],
+    ["Session length", "Short", "Often long"],
+    ["Mental load", "Light puzzle focus", "Planning-heavy"],
+    ["Interruption-friendly", "Yes", "Less so"],
+    ["Best use", "Quick breaks", "Deep play"]
+  ],
+  "BlockFit wins when you want a compact puzzle without committing to a complex game state. It gives your brain something structured without becoming a project.",
+  "Complicated strategy games are better when you want depth, competition, and long-term mastery.",
+  [
+    ["Is BlockFit easier to start than strategy games?", "Yes. It has simple puzzle rules and short-session play."],
+    ["When are strategy games better?", "When you want depth and long play sessions."],
+    ["Can BlockFit work during short breaks?", "Yes. That is one of its strengths."],
+    ["Who should play BlockFit?", "People who want a simple block puzzle for quick mental breaks."]
+  ]
+);
+
+addExtra(
+  "invoice-maker-estimate-pdf",
+  "invoice-maker-vs-payment-app-notes",
+  "Payment App Notes",
+  "Invoice Maker vs Payment App Notes",
+  "Invoice Maker vs payment app notes: compare professional invoice PDFs, line items, estimates, client records, and paid status tracking.",
+  "Payment app notes can explain a transfer, but they are not a real invoice. Invoice Maker creates structured documents with line items, totals, and records clients can file.",
+  [
+    ["Document quality", "Invoice PDF", "Short note"],
+    ["Line items", "Structured", "Unstructured text"],
+    ["Estimates", "Supported", "No"],
+    ["Client records", "Invoice history", "Payment thread"],
+    ["Best use", "Professional billing", "Casual reimbursement"]
+  ],
+  "Invoice Maker wins when billing needs to look professional and remain traceable. A note in a payment app does not replace an invoice number, line items, or a PDF record.",
+  "Payment app notes are fine for casual reimbursements among friends. They are weak for client billing and business records.",
+  [
+    ["Why not just write details in a payment note?", "A payment note is not a structured invoice and is harder to file or review later."],
+    ["Can Invoice Maker create estimates?", "Yes. It supports invoice and estimate workflows."],
+    ["When are payment notes enough?", "For casual personal reimbursements."],
+    ["Who should use Invoice Maker?", "Freelancers, contractors, and small businesses that need professional billing records."]
+  ]
+);
+
+addExtra(
+  "expensereportmaker-and-receipts",
+  "expense-report-maker-vs-emailing-receipts",
+  "Emailing Receipts",
+  "ExpenseReportMaker vs Emailing Receipts",
+  "ExpenseReportMaker vs emailing receipts: compare organized reports, receipt grouping, monthly summaries, and reimbursement-ready PDFs.",
+  "Emailing receipts to yourself creates an inbox pile, not an expense report. ExpenseReportMaker groups the records into a report that is easier to submit or archive.",
+  [
+    ["Organization", "Report-based", "Inbox search"],
+    ["Receipt grouping", "By trip or period", "Manual"],
+    ["Submission", "Cleaner report", "Forwarded messages"],
+    ["Review", "Summary view", "Open each email"],
+    ["Best use", "Reimbursement records", "Temporary holding"]
+  ],
+  "ExpenseReportMaker wins because it turns receipts into a deliverable. A report is easier for a manager, accountant, or future you to review than a chain of emails.",
+  "Emailing receipts can be a quick backup while traveling. It should not be the final reporting system.",
+  [
+    ["Why not email receipts to myself?", "Email is a holding area, not a structured expense report."],
+    ["Can ExpenseReportMaker group receipts?", "Yes. It is built around report-style organization."],
+    ["When is email useful?", "As a temporary backup when you receive a receipt."],
+    ["Who should use it?", "Travelers, contractors, employees, and small businesses preparing reimbursement records."]
+  ]
+);
+
+addExtra(
+  "signaturemark-brand-mark",
+  "signaturemark-vs-camera-roll-markup",
+  "Camera Roll Markup",
+  "SignatureMark vs Camera Roll Markup",
+  "SignatureMark vs camera roll markup: compare reusable watermark presets, brand consistency, creator photo protection, and batch-style workflows.",
+  "Camera roll markup can place text on a photo, but it is not built for brand consistency. SignatureMark focuses on reusable marks that make creator photos look intentional.",
+  [
+    ["Brand presets", "Reusable", "Manual each time"],
+    ["Consistency", "Designed for it", "Easy to vary"],
+    ["Watermark use", "Core workflow", "General markup"],
+    ["Creator photos", "Brand-focused", "Edit-focused"],
+    ["Best use", "Repeated branding", "One-off annotation"]
+  ],
+  "SignatureMark wins when the same creator or business needs a repeatable visual mark. Reusing a consistent watermark is faster and cleaner than rebuilding text in markup.",
+  "Camera markup is fine for circling an issue, adding a quick note, or editing a single image that does not need brand consistency.",
+  [
+    ["Is SignatureMark better than camera markup?", "For reusable watermarking, yes. Camera markup is a general annotation tool."],
+    ["When is markup enough?", "For a one-off note, circle, or quick text label."],
+    ["Why do presets matter?", "They keep brand photos consistent across posts and batches."],
+    ["Who should use SignatureMark?", "Creators, sellers, makers, and small brands that share original images."]
+  ]
+);
+
+addExtra(
+  "glowfeel-stress-ease",
+  "glowfeel-vs-breathing-video-sites",
+  "Breathing Video Sites",
+  "GlowFeel vs Breathing Video Sites",
+  "GlowFeel vs breathing video sites: compare guided calm, private check-ins, short grounding sessions, and distraction-free stress support.",
+  "Breathing videos can help, but they live inside websites filled with recommendations, ads, and unrelated content. GlowFeel keeps the calming session focused and contained.",
+  [
+    ["Distractions", "Low", "High on video sites"],
+    ["Session focus", "Grounding and calm", "One video at a time"],
+    ["Privacy feel", "Personal app", "Platform history"],
+    ["Repeat use", "App routine", "Search again"],
+    ["Best use", "Daily stress support", "Occasional video"]
+  ],
+  "GlowFeel wins when you want a quiet, repeatable stress-easing tool without falling into a content feed. The app keeps the session about calming down.",
+  "A breathing video is fine when you already have a favorite and do not mind the platform around it.",
+  [
+    ["Is GlowFeel a replacement for therapy?", "No. It is a stress-easing and grounding tool, not medical care."],
+    ["Why not use breathing videos?", "Videos can work, but the platform around them may add distractions."],
+    ["When is a video enough?", "When you have a trusted video and only need occasional guidance."],
+    ["Who should use GlowFeel?", "People who want short, private calming sessions without browsing."]
+  ]
+);
+
+addExtra(
+  "snapqr-qr-generator-app",
+  "snapqr-vs-dynamic-qr-services",
+  "Dynamic QR Services",
+  "SnapQR vs Dynamic QR Services",
+  "SnapQR vs dynamic QR services: compare simple static QR codes, account-free generation, privacy, subscriptions, and event signage.",
+  "Dynamic QR services are useful when a code must redirect later, but they often require accounts, dashboards, and subscriptions. SnapQR is simpler for static codes you can create quickly.",
+  [
+    ["Code type", "Static QR", "Dynamic redirects"],
+    ["Account", "No account focus", "Usually required"],
+    ["Cost", "Simple app workflow", "Often subscription"],
+    ["Analytics", "Not the point", "Often included"],
+    ["Best use", "Menus, Wi-Fi, signs", "Campaign tracking"]
+  ],
+  "SnapQR wins when you just need a QR code for fixed information like Wi-Fi, a link, or event table signage. There is less setup and fewer service dependencies.",
+  "A dynamic QR service is better when you need scan analytics, editable destinations, or marketing campaign management.",
+  [
+    ["Is SnapQR better than dynamic QR services?", "For simple static codes, yes. Dynamic services are heavier and often subscription-based."],
+    ["When should I use dynamic QR?", "When you need analytics or the ability to change the destination later."],
+    ["Can SnapQR make event signs?", "Yes. Static QR codes work well for menus, Wi-Fi, table signs, and handouts."],
+    ["Does every QR code need an account?", "No. Static QR generation can be much simpler."]
+  ]
+);
+
+addExtra(
+  "fast-rhythm-fasting-and-sleep",
+  "fast-rhythm-vs-calendar-fasting-notes",
+  "Calendar Fasting Notes",
+  "Fast Rhythm vs Calendar Fasting Notes",
+  "Fast Rhythm vs calendar fasting notes: compare fasting timers, sleep rhythm, weekly scores, and more structured routine tracking.",
+  "A calendar note can record that you fasted, but it does not behave like a timer or rhythm tracker. Fast Rhythm connects fasting windows with sleep and weekly review.",
+  [
+    ["Timer", "Built in", "Manual"],
+    ["Sleep rhythm", "Part of workflow", "Separate note"],
+    ["Weekly review", "Structured", "Read calendar entries"],
+    ["Routine feedback", "Visible", "Manual interpretation"],
+    ["Best use", "Fasting rhythm", "Event record"]
+  ],
+  "Fast Rhythm wins because fasting is time-based. A purpose-built timer and weekly view make the routine clearer than calendar notes.",
+  "Calendar notes are fine for a simple record or reminder. They do not replace a fasting timer or rhythm review.",
+  [
+    ["Why not track fasting in a calendar?", "A calendar can record events, but it is not a fasting timer or weekly rhythm tool."],
+    ["Does Fast Rhythm include sleep context?", "Yes. It is designed around fasting and sleep rhythm together."],
+    ["When are calendar notes enough?", "When you only want a simple record."],
+    ["Who should use Fast Rhythm?", "People who want to see fasting windows and weekly routine patterns."]
+  ]
+);
+
+addExtra(
+  "image-compressor-and-zip",
+  "image-compressor-vs-desktop-image-editors",
+  "Desktop Image Editors",
+  "Image Compressor vs Desktop Image Editors",
+  "Image Compressor & ZIP vs desktop image editors: compare mobile batch compression, quick exports, ZIP files, and lightweight photo resizing.",
+  "Desktop image editors are powerful, but they are overkill when the job is compressing phone photos for upload or sharing. Image Compressor keeps that workflow on the device.",
+  [
+    ["Workflow", "Phone-first", "Move files to desktop"],
+    ["Batch compression", "Quick", "Possible but setup-heavy"],
+    ["ZIP export", "Built for sharing", "Manual step"],
+    ["Editing depth", "Compression-focused", "Full editing"],
+    ["Best use", "Upload prep", "Creative editing"]
+  ],
+  "Image Compressor wins for quick size reduction and ZIP sharing. It avoids the file transfer steps that make desktop tools slow for simple compression tasks.",
+  "A desktop editor is better when you need retouching, layers, color correction, or print-level control.",
+  [
+    ["Is Image Compressor better than a desktop editor?", "For quick compression, yes. Desktop editors are better for deep editing."],
+    ["Can it batch compress?", "Yes. Batch compression and ZIP export are key workflows."],
+    ["When should I use desktop software?", "When you need advanced editing, color work, layers, or print preparation."],
+    ["Who should use Image Compressor?", "People who need smaller images for forms, email, uploads, or storage cleanup."]
+  ]
+);
+
+addExtra(
+  "tinnitus-relief-sound-masking",
+  "tinnitus-relief-vs-white-noise-machines",
+  "White Noise Machines",
+  "Tinnitus Relief vs White Noise Machines",
+  "Tinnitus Relief vs white noise machines: compare portable masking sounds, presets, sleep timer, and travel-friendly tinnitus support.",
+  "A white noise machine can help at home, but it is another device to carry, power, and place. Tinnitus Relief puts masking sounds and a sleep timer on the phone you already have.",
+  [
+    ["Portability", "Phone-based", "Separate device"],
+    ["Sound variety", "Multiple presets", "Depends on machine"],
+    ["Sleep timer", "Built in", "Varies"],
+    ["Travel", "Easy", "Pack hardware"],
+    ["Best use", "Flexible masking", "Bedside routine"]
+  ],
+  "Tinnitus Relief wins for flexibility. It is easier to use in hotels, offices, or quiet rooms where a dedicated machine is not available.",
+  "A white noise machine is still good for a fixed bedside setup, especially if you prefer not to use a phone at night.",
+  [
+    ["Is a tinnitus app better than a white noise machine?", "For portability, yes. A machine can still be good for a fixed bedside setup."],
+    ["Does the app include a sleep timer?", "Yes. A timer helps with nighttime masking."],
+    ["Can it help while traveling?", "Yes. Phone-based masking is easier to bring than extra hardware."],
+    ["Is this medical treatment?", "No. It is sound masking support, not a cure."]
+  ]
+);
+
+addExtra(
+  "quiltfit-quilt-design-planner",
+  "quiltfit-vs-buying-fabric-by-guesswork",
+  "Buying Fabric by Guesswork",
+  "QuiltFit vs Buying Fabric by Guesswork",
+  "QuiltFit vs guessing fabric yardage: compare fabric estimates, shopping lists, block roles, and fewer overbuying surprises.",
+  "Guessing yardage feels fast in the fabric store, but the cost shows up later as shortages or leftover piles. QuiltFit turns the planned layout into a more deliberate shopping list.",
+  [
+    ["Yardage confidence", "Estimated from plan", "Gut feel"],
+    ["Fabric roles", "Named in design", "Remembered"],
+    ["Overbuying", "Reduced", "Common"],
+    ["Shortages", "Easier to catch early", "Found during sewing"],
+    ["Best use", "Planned shopping", "Tiny stash projects"]
+  ],
+  "QuiltFit wins by making the buying decision visible before checkout. Yardage tied to a block layout is stronger than memory or habit.",
+  "Guesswork can be acceptable for scrap quilts, stash play, or very small projects where exact fabric roles do not matter.",
+  [
+    ["Does QuiltFit prevent all fabric mistakes?", "No estimate is perfect, but planning from the layout is better than pure guesswork."],
+    ["When is guessing okay?", "For scrap projects or experiments where exact yardage is not important."],
+    ["Can QuiltFit make a shopping list?", "Yes. The app connects the design to fabric planning."],
+    ["Who benefits most?", "Quilters buying fabric for a specific pattern or gift project."]
+  ]
+);
+
+addExtra(
+  "cutlist-plywood-optimizer",
+  "cutlist-vs-home-center-cutting-service",
+  "Home Center Cutting Service",
+  "CutList vs Home Center Cutting Service",
+  "CutList vs home center cutting services: compare planned cut sheets, kerf, part labels, and better plywood handoff at the store.",
+  "A home center panel saw can break sheets down, but the employee still needs clear dimensions. CutList gives you a cut sheet before you ask someone else to cut expensive material.",
+  [
+    ["Cut plan", "Prepared before store", "Explained at counter"],
+    ["Kerf", "Included in layout", "Depends on service"],
+    ["Part labels", "Clear in plan", "Manual notes"],
+    ["Control", "You review first", "Decided under pressure"],
+    ["Best use", "Shop handoff", "Rough sheet breakdown"]
+  ],
+  "CutList wins because it lets you review the sheet layout before the store cuts anything. That reduces rushed decisions and unclear dimensions.",
+  "A home center cutting service is still helpful for breaking large sheets into transportable pieces, but it should work from a clear plan.",
+  [
+    ["Should I use CutList before asking a store to cut plywood?", "Yes. A prepared cut sheet makes the handoff clearer."],
+    ["Can home centers make final cabinet cuts?", "Sometimes, but tolerances vary. Many services are best for rough breakdown."],
+    ["Why does kerf matter?", "Blade width affects whether all parts fit on the sheet."],
+    ["What should I bring to the store?", "Bring a clear cut sheet with dimensions, labels, and priorities."]
+  ]
+);
+
+addExtra(
+  "snaplabel-photo-text-label",
+  "snaplabel-vs-printing-labels-in-word",
+  "Printing Labels in Word",
+  "SnapLabel vs Printing Labels in Word",
+  "SnapLabel vs printing labels in Word: compare mobile label creation, photo labels, template setup, and faster home organization.",
+  "Word can print labels, but it is a document-layout workflow. SnapLabel is a label workflow, which matters when you want to make and reprint labels from a phone.",
+  [
+    ["Setup", "Label-focused", "Template document"],
+    ["Mobile use", "Built for phone", "Desktop-oriented"],
+    ["Photo labels", "Supported", "Manual layout"],
+    ["Reprints", "Fast", "Find the document"],
+    ["Best use", "Home labels", "Office mail merges"]
+  ],
+  "SnapLabel wins for everyday home and storage labels because it removes document setup. The app is closer to the actual job.",
+  "Word is still useful for complex office templates or mail merge. It is heavier for pantry bins, cables, and storage labels.",
+  [
+    ["Is SnapLabel easier than Word for labels?", "For everyday labels, yes. Word is more template-heavy."],
+    ["When should I use Word?", "For office mail merge or complex document-based label sheets."],
+    ["Can SnapLabel use photos?", "Yes. Photo labels are a key difference."],
+    ["Who should use SnapLabel?", "People labeling storage, pantry items, boxes, classrooms, or small-business products."]
+  ]
+);
+
+addExtra(
+  "work-shift-schedule-calendar",
+  "shift-calendar-vs-employer-scheduling-portal",
+  "Employer Scheduling Portals",
+  "Shift Calendar vs Employer Scheduling Portals",
+  "Shift Calendar vs employer scheduling portals: compare personal reminders, hour totals, offline reference, and shift-worker planning.",
+  "Employer portals show the official schedule, but they are built for the organization first. A personal shift calendar helps you plan life around those shifts.",
+  [
+    ["Ownership", "Personal calendar", "Employer system"],
+    ["Reminders", "Personal alerts", "Portal-dependent"],
+    ["Hour totals", "Worker-focused", "Varies"],
+    ["Offline view", "Available in app", "Often needs login"],
+    ["Best use", "Life planning", "Official schedule source"]
+  ],
+  "The app wins for personal planning because it turns the official schedule into reminders, totals, and a calendar you control.",
+  "The employer portal remains the source of truth for official assignments. Use it to confirm changes, then keep your personal calendar usable.",
+  [
+    ["Does Shift Calendar replace my employer portal?", "No. The portal is official; the app helps you manage your own schedule."],
+    ["Why enter shifts separately?", "Personal reminders, hour totals, and easier planning are worth it for many shift workers."],
+    ["Can it help outside work?", "Yes. It helps plan sleep, errands, and days off around shifts."],
+    ["Who benefits most?", "Workers with rotating, changing, or overtime-heavy schedules."]
+  ]
+);
+
+addExtra(
+  "address-label-maker-and-envelope",
+  "address-label-maker-vs-printing-one-envelope-at-a-time",
+  "Printing One Envelope at a Time",
+  "Address Label Maker vs Printing One Envelope at a Time",
+  "Address Label Maker & Envelope vs printing one envelope at a time: compare batch labels, contact import, Avery sheets, and holiday mailing speed.",
+  "Printing one envelope at a time works until the mailing list grows. Address Label Maker batches the job so repeated addresses and label sheets do not become a slow desktop chore.",
+  [
+    ["Batch mailing", "Built for batches", "One at a time"],
+    ["Contact import", "Direct workflow", "Retype or copy"],
+    ["Label sheets", "Avery-style output", "Envelope feed"],
+    ["Speed", "Fast for many", "Slow for many"],
+    ["Best use", "Cards and mailings", "Single formal envelope"]
+  ],
+  "The app wins for volume. Once you have a list of cards, invitations, or small-business mail, batch labels are more reliable than feeding envelopes one by one.",
+  "Printing a single envelope still makes sense for a formal letter or one-off mailing.",
+  [
+    ["Is batch label printing faster than one envelope at a time?", "Yes, especially for holiday cards, invitations, or repeat mailings."],
+    ["When is one envelope enough?", "For a single formal letter or occasional mailing."],
+    ["Can the app use Contacts?", "Yes. Contact import reduces retyping."],
+    ["Does it support label sheets?", "Yes. It is designed for common address-label workflows."]
+  ]
+);
+
+addExtra(
+  "private-meeting-transcriber",
+  "private-transcriber-vs-meeting-summary-bots",
+  "Meeting Summary Bots",
+  "Private Meeting Transcriber vs Meeting Summary Bots",
+  "Private Meeting Transcriber vs meeting summary bots: compare private transcripts, review control, account setup, and sensitive meeting workflows.",
+  "Meeting bots can be convenient, but they join calls, rely on services, and summarize on their terms. A private transcriber keeps the review workflow closer to your own files and notes.",
+  [
+    ["Meeting presence", "No bot attendee", "Bot joins call"],
+    ["Review control", "Transcript-first", "Summary-first"],
+    ["Privacy fit", "Private workflow", "Service-dependent"],
+    ["Setup", "Personal app", "Account integrations"],
+    ["Best use", "Sensitive review", "Team automation"]
+  ],
+  "Private Meeting Transcriber wins when you want control over the transcript and do not want a bot in the room. That matters for interviews, private calls, and sensitive notes.",
+  "Meeting bots are useful for teams that want automatic distribution, calendar integration, and shared summaries.",
+  [
+    ["Why avoid meeting summary bots?", "Some meetings are sensitive, and a bot attendee can change the privacy expectations."],
+    ["When is a bot better?", "For teams that want automated shared summaries and integrations."],
+    ["Why keep a transcript?", "A transcript lets you verify what was said instead of relying only on a summary."],
+    ["Who should use a private transcriber?", "People handling interviews, client calls, research notes, or confidential discussions."]
+  ]
+);
+
+addExtra(
+  "speaker-tools-audio-test",
+  "speaker-tools-vs-dedicated-audio-test-gear",
+  "Dedicated Audio Test Gear",
+  "Speaker Tools vs Dedicated Audio Test Gear",
+  "Speaker Tools vs dedicated audio test gear: compare quick tone checks, portability, cost, and when professional measurement hardware still matters.",
+  "Dedicated audio test gear is excellent for measurement work, but most everyday speaker checks do not need a hardware kit. Speaker Tools gives quick reference tones from the phone.",
+  [
+    ["Cost", "Low app workflow", "Hardware investment"],
+    ["Portability", "Phone-based", "Gear bag"],
+    ["Measurement depth", "Basic checks", "Professional"],
+    ["Setup speed", "Fast", "Slower"],
+    ["Best use", "Everyday troubleshooting", "Calibration work"]
+  ],
+  "Speaker Tools wins for quick checks: left-right channels, tones, and placement sanity checks. It is practical because it is already in your pocket.",
+  "Dedicated gear is better for calibrated measurements, room tuning, installations, and professional audio work.",
+  [
+    ["Can Speaker Tools replace professional test gear?", "No. It is for quick checks, not calibrated measurement."],
+    ["When is dedicated gear necessary?", "For professional calibration, installations, or precise room analysis."],
+    ["Why use a phone app?", "It is fast, portable, and good enough for many basic speaker checks."],
+    ["Who should use Speaker Tools?", "Home users, creators, musicians, and small teams doing quick audio checks."]
+  ]
+);
+
+addExtra(
+  "export-backup-all-contacts-pro",
+  "contacts-backup-vs-carrier-store-transfer",
+  "Carrier Store Transfer",
+  "Contacts Backup vs Carrier Store Transfer",
+  "Export Backup All Contacts Pro vs carrier store transfer: compare owning your backup file, CSV/vCard export, and safer phone switching.",
+  "A carrier store can help move contacts to a new phone, but that is not the same as owning a backup file. Export Backup All Contacts Pro gives you portable files before anything changes.",
+  [
+    ["Control", "You keep files", "Store-assisted transfer"],
+    ["Timing", "Before switching", "During purchase"],
+    ["Formats", "CSV, Excel, vCard", "Usually not file-focused"],
+    ["Recovery", "Backup remains", "Transfer may be one-time"],
+    ["Best use", "Prepared migration", "In-store help"]
+  ],
+  "The app wins because preparation beats recovery. Having a contact file before a phone switch reduces dependence on a store visit going perfectly.",
+  "Carrier transfer is helpful if you need in-person support. It should not be your only contact backup.",
+  [
+    ["Why back up contacts before visiting a carrier store?", "Because a backup file gives you control if transfer fails or an account has issues."],
+    ["Can carrier stores transfer contacts?", "Often yes, but that is different from giving you a reusable backup."],
+    ["Which formats are useful?", "CSV, Excel, and vCard are practical backup and migration formats."],
+    ["When should I export contacts?", "Before changing phones, accounts, carriers, or doing major cleanup."]
+  ]
+);
+
+addExtra(
+  "marketvendor-sales-and-profit",
+  "marketvendor-vs-memory-at-end-of-day",
+  "Remembering Sales at Day End",
+  "MarketVendor vs Remembering Sales at the End of the Day",
+  "MarketVendor vs remembering sales later: compare real-time booth records, product performance, cash review, and fewer end-of-day mistakes.",
+  "Trying to reconstruct sales after packing up is unreliable. MarketVendor lets a vendor capture the day as it happens, while the details are still fresh.",
+  [
+    ["Record timing", "During sales", "After the rush"],
+    ["Accuracy", "Item-level memory aid", "Depends on recall"],
+    ["Product winners", "Visible", "Guessed"],
+    ["Cash review", "Supported", "Manual reconstruction"],
+    ["Best use", "Busy market days", "Very small casual events"]
+  ],
+  "MarketVendor wins because memory gets worse as the booth gets busier. Recording sales during the day makes the final review more credible.",
+  "Remembering later may be acceptable for a tiny event with only a handful of transactions. It breaks down quickly with product variety.",
+  [
+    ["Why record sales during the day?", "It is more accurate than reconstructing details after the market ends."],
+    ["Can memory work for small events?", "Sometimes, if there are very few sales."],
+    ["Does MarketVendor show product performance?", "Yes. That is one reason to track sales by item."],
+    ["Who should use it?", "Vendors who want better end-of-day reports and product decisions."]
+  ]
+);
+
+addExtra(
+  "snapcleaner-clean-photos",
+  "snapcleaner-vs-third-party-cloud-cleaners",
+  "Cloud Photo Cleaner Services",
+  "SnapCleaner vs Cloud Photo Cleaner Services",
+  "SnapCleaner vs cloud photo cleaner services: compare on-device review, privacy, similar photo cleanup, and avoiding photo uploads.",
+  "Cloud cleaner services may promise automation, but private photo libraries deserve caution. SnapCleaner keeps the review workflow focused on the device.",
+  [
+    ["Photo upload", "No cloud upload focus", "Often required"],
+    ["Privacy", "On-device review", "Service-dependent"],
+    ["Similar photo decisions", "User-reviewed", "May be automated"],
+    ["Trust", "You approve deletion", "Depends on service"],
+    ["Best use", "Private cleanup", "Cloud-managed libraries"]
+  ],
+  "SnapCleaner wins for privacy-sensitive cleanup because you stay involved in the decision. Similar photos often need human judgment.",
+  "A cloud cleaner may suit someone already comfortable managing their entire photo library through a cloud service.",
+  [
+    ["Is on-device photo cleanup safer?", "It can be more privacy-friendly because photos do not need to be uploaded for review."],
+    ["Should deletion be automatic?", "Usually not. Similar photos often need human judgment."],
+    ["When is a cloud cleaner okay?", "When you trust the service and already manage photos in that cloud."],
+    ["Who should use SnapCleaner?", "People cleaning private iPhone photo libraries who want to review before deleting."]
+  ]
+);
+
+addExtra(
+  "pdf-scan-scanner-and-reader",
+  "pdf-scan-vs-keeping-paper-files",
+  "Keeping Paper Files",
+  "PDF Scan vs Keeping Paper Files",
+  "PDF Scan vs keeping paper files: compare searchable PDFs, mobile access, renovation receipts, forms, and paper clutter reduction.",
+  "Paper files are familiar, but they are hard to search and never with you when you need them. PDF Scan turns key documents into portable files.",
+  [
+    ["Search and share", "Digital PDF", "Manual folder search"],
+    ["Space", "No paper pile", "Physical storage"],
+    ["Access", "Phone-based", "Where the folder is"],
+    ["Backup", "File workflow", "Paper only"],
+    ["Best use", "Active documents", "Original records"]
+  ],
+  "PDF Scan wins for active paperwork: receipts, forms, permits, and signed documents you may need to send or find quickly.",
+  "Paper originals still matter for legal, tax, or official documents that must be retained. Scanning makes access easier but does not always replace originals.",
+  [
+    ["Should I scan paper documents?", "For access and sharing, yes. Keep originals when required."],
+    ["Does PDF Scan reduce clutter?", "It helps by turning everyday paper into organized PDFs."],
+    ["When do paper files still matter?", "When an original document must be retained."],
+    ["Who benefits most?", "People managing receipts, renovation papers, forms, school records, or signed documents."]
+  ]
+);
+
+addExtra(
+  "photosafe-private-photo-vault",
+  "photosafe-vs-shared-photo-library",
+  "Shared Photo Library",
+  "PhotoSafe vs Shared Photo Library",
+  "PhotoSafe vs shared photo libraries: compare private vault albums, accidental sharing risk, sensitive images, and family photo workflows.",
+  "Shared photo libraries are useful for families and teams, but they increase the chance that the wrong image appears in the wrong place. PhotoSafe is for photos that should stay separate.",
+  [
+    ["Sharing model", "Private vault", "Shared by design"],
+    ["Accidental exposure", "Reduced", "Higher if mixed"],
+    ["Family photos", "Not the focus", "Excellent"],
+    ["Sensitive albums", "Separated", "Requires caution"],
+    ["Best use", "Private storage", "Collaborative albums"]
+  ],
+  "PhotoSafe wins for sensitive images because the vault boundary is clear. Not every image should live beside shared family albums.",
+  "Shared libraries are better for vacations, family events, and collaborative albums where sharing is the goal.",
+  [
+    ["Is PhotoSafe better than a shared library?", "For private images, yes. Shared libraries are built for collaboration."],
+    ["When should I use shared photo libraries?", "For family photos, trips, events, and albums others should access."],
+    ["Why separate sensitive photos?", "Separation reduces accidental display or sharing."],
+    ["Who should use PhotoSafe?", "Anyone who wants private albums outside the normal shared photo flow."]
+  ]
+);
+
+addExtra(
+  "snapstock-inventory-scanner",
+  "snapstock-vs-barcode-scanner-hardware",
+  "Barcode Scanner Hardware",
+  "SnapStock vs Barcode Scanner Hardware",
+  "SnapStock vs barcode scanner hardware: compare phone scanning, lightweight setup, small inventory counts, and when dedicated scanners make sense.",
+  "Dedicated barcode scanners are fast, but they add hardware, pairing, and cost. SnapStock uses the phone camera for stock counts when a small business needs a lighter setup.",
+  [
+    ["Hardware", "Phone camera", "Separate scanner"],
+    ["Cost", "Lower setup", "Hardware purchase"],
+    ["Mobility", "Always with you", "Carry scanner"],
+    ["Scan speed", "Good for small counts", "Faster for volume"],
+    ["Best use", "Small inventory", "Warehouse volume"]
+  ],
+  "SnapStock wins when inventory work is periodic and lightweight. Avoiding extra hardware makes it easier to start scanning.",
+  "Dedicated scanner hardware is better for high-volume warehouses, checkout lanes, or all-day scanning tasks.",
+  [
+    ["Can a phone replace barcode scanner hardware?", "For many small inventory tasks, yes. High-volume scanning may still need hardware."],
+    ["Why avoid extra hardware?", "It reduces cost, setup, charging, and pairing issues."],
+    ["When is hardware better?", "When scanning is constant, high-volume, or tied to warehouse systems."],
+    ["Who should use SnapStock?", "Small shops and makers that need inventory scanning without a hardware setup."]
+  ]
+);
+
+addExtra(
+  "snapreceipt-expenses-and-tax",
+  "snapreceipt-vs-bank-statement-only",
+  "Bank Statements Only",
+  "SnapReceipt vs Bank Statements Only",
+  "SnapReceipt vs relying on bank statements: compare receipt detail, cash purchases, categories, tax notes, and audit-ready expense records.",
+  "A bank statement proves money moved, but it rarely explains the full business purpose or item detail. SnapReceipt keeps the receipt record attached to the expense.",
+  [
+    ["Item detail", "Receipt captured", "Usually missing"],
+    ["Cash purchases", "Can record", "Absent"],
+    ["Categories", "Expense-focused", "Manual later"],
+    ["Tax notes", "Attach context", "Separate notes"],
+    ["Best use", "Complete records", "Payment proof"]
+  ],
+  "SnapReceipt wins because receipts contain details that statements do not: items, tax, vendor context, and sometimes job purpose.",
+  "Bank statements are still useful for reconciliation and proof of payment. They are not a complete receipt system.",
+  [
+    ["Are bank statements enough for expenses?", "Often no. They miss item details, cash purchases, and business context."],
+    ["Why keep receipts?", "Receipts show what was bought and can support tax or reimbursement records."],
+    ["Can SnapReceipt help with cash expenses?", "Yes. You can record receipts that will not appear on a card statement."],
+    ["Who should use it?", "Anyone who needs expense detail beyond payment history."]
+  ]
+);
+
+addExtra(
+  "mindnest-secret-journal",
+  "mindnest-vs-social-journaling",
+  "Social Journaling",
+  "MindNest vs Social Journaling",
+  "MindNest vs social journaling: compare private reflection, offline notes, audience pressure, and personal writing without posting.",
+  "Social journaling can motivate some people, but an audience changes what you write. MindNest is for private reflection where the entry does not need to perform for anyone.",
+  [
+    ["Audience", "Private", "Followers or community"],
+    ["Honesty", "Personal", "Can be filtered"],
+    ["Pressure", "Low", "Likes and responses"],
+    ["Offline writing", "Natural", "Platform-dependent"],
+    ["Best use", "Reflection", "Public accountability"]
+  ],
+  "MindNest wins when the goal is honest private writing. Removing the audience can make entries more useful for reflection.",
+  "Social journaling can be helpful for accountability, creative sharing, or community support if you want other people involved.",
+  [
+    ["Is private journaling better than social journaling?", "For honest reflection, often yes. Social writing has an audience."],
+    ["When is social journaling useful?", "When accountability or community feedback is the goal."],
+    ["Does MindNest require posting?", "No. It is focused on private writing."],
+    ["Who should use MindNest?", "People who want a personal journal rather than a public feed."]
+  ]
+);
+
+addExtra(
+  "invoice-maker-estimate-pdf",
+  "invoice-maker-vs-accounting-software",
+  "Full Accounting Software",
+  "Invoice Maker vs Full Accounting Software",
+  "Invoice Maker vs full accounting software: compare simple invoice PDFs, estimates, client billing, subscriptions, and when bookkeeping suites are worth it.",
+  "Full accounting software is powerful, but many freelancers only need to send a clean invoice or estimate. Invoice Maker keeps billing lightweight.",
+  [
+    ["Scope", "Invoices and estimates", "Full bookkeeping"],
+    ["Setup", "Lightweight", "Chart of accounts"],
+    ["Cost", "App-level", "Often subscription"],
+    ["Reports", "Basic billing records", "Deep financial reports"],
+    ["Best use", "Simple client billing", "Complete accounting"]
+  ],
+  "Invoice Maker wins for straightforward billing because it avoids the overhead of a full accounting suite when you only need professional PDFs.",
+  "Accounting software is better when invoicing must connect to payroll, taxes, bank feeds, inventory, and formal books.",
+  [
+    ["Is Invoice Maker enough for freelancers?", "For simple invoices and estimates, often yes."],
+    ["When do I need accounting software?", "When you need full books, bank reconciliation, tax reports, payroll, or inventory accounting."],
+    ["Can Invoice Maker create PDFs?", "Yes. Professional invoice and estimate PDFs are the point."],
+    ["Who should use Invoice Maker?", "Freelancers, contractors, and small sellers with simple billing needs."]
+  ]
+);
+
+addExtra(
+  "snapqr-qr-generator-app",
+  "snapqr-vs-designing-qr-codes-in-canva",
+  "Designing QR Codes in Canva",
+  "SnapQR vs Designing QR Codes in Canva",
+  "SnapQR vs designing QR codes in Canva: compare fast QR generation, focused inputs, event signs, Wi-Fi codes, and design-heavy workflows.",
+  "Canva is useful for designing a flyer, but QR creation can become buried inside a design project. SnapQR focuses on making the code first, then using it wherever you need it.",
+  [
+    ["QR speed", "Fast and focused", "Part of design flow"],
+    ["Input types", "QR-oriented", "Design-oriented"],
+    ["Account workflow", "Simple app use", "Canva account/project"],
+    ["Best output", "Reusable QR code", "Finished graphic"],
+    ["Best use", "Codes and signs", "Designed posters"]
+  ],
+  "SnapQR wins when the QR code is the job. It is faster for Wi-Fi, links, table signs, and quick sharing.",
+  "Canva is better when the QR code is only one element inside a designed flyer, menu, or branded poster.",
+  [
+    ["Is SnapQR faster than making QR codes in Canva?", "For code generation, yes. Canva is better for full graphic design."],
+    ["When should I use Canva?", "When you are designing a complete poster, flyer, or menu."],
+    ["Can SnapQR help with event signs?", "Yes. It is useful for quick QR codes on tables, signs, and handouts."],
+    ["Who should use SnapQR?", "People who need QR codes quickly without starting a design project."]
+  ]
+);
