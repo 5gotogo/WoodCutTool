@@ -6,6 +6,7 @@ import { blogBatch20260630 } from "./blog-batch-2026-06-30.mjs";
 import { blogBatch20260701 } from "./blog-batch-2026-07-01.mjs";
 import { blogBatch20260702 } from "./blog-batch-2026-07-02.mjs";
 import { blogBatch20260703 } from "./blog-batch-2026-07-03.mjs";
+import { blogBatch20260707 } from "./blog-batch-2026-07-07.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -9665,6 +9666,7 @@ function createLongResearchArticles() {
 articles.push(...createLongResearchArticles());
 articles.push(...blogBatch20260702);
 articles.push(...blogBatch20260703);
+articles.push(...blogBatch20260707);
 
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {
@@ -10616,7 +10618,8 @@ function blogIndex() {
     ...appBlogDefinitions.map((config) => [config.category, config.sectionId]),
     ["Cadenza", "cadenza"],
     ["Tinnitus", "tinnitus"],
-    ["Atomic Clock", "atomic-clock"]
+    ["Atomic Clock", "atomic-clock"],
+    ["Tech", "tech"]
   ];
   const categoryLinks = categories
     .map(([label, id]) => {
@@ -10710,6 +10713,7 @@ ${head({
       ${appBlogDefinitions.map((config) => `<a href="#${config.sectionId}">${escapeHtml(config.category)}</a>`).join("\n      ")}
       <a href="#cadenza">Cadenza</a>
       <a href="#tinnitus">Tinnitus</a>
+      <a href="#tech">Tech</a>
     </section>
 
     <section class="blog-featured" aria-label="Featured blog articles" data-blog-featured>
@@ -10801,6 +10805,11 @@ ${head({
     <section class="blog-section" id="atomic-clock" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Atomic Clock</p><h2>NTP time sync, precision clock styles, and private on-device timing.</h2></div>
       <div class="blog-grid">${categoryPreview("Atomic Clock")}</div>
+    </section>
+
+    <section class="blog-section" id="tech" data-blog-section>
+      <div class="blog-section-head"><p class="eyebrow">Tech</p><h2>AI agents, security, infrastructure, browser compute, and practical 2026 technology workflows.</h2></div>
+      <div class="blog-grid">${categoryPreview("Tech")}</div>
     </section>
 
     <section class="blog-section" id="core-guides" data-blog-section>
@@ -10995,6 +11004,7 @@ const zhCategory = {
   SnapQR: "二维码",
   Cadenza: "Cadenza",
   Tinnitus: "耳鸣",
+  Tech: "技术趋势",
   "Classic guide": "经典指南"
 };
 

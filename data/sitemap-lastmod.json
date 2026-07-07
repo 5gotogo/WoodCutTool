@@ -1,7 +1,7 @@
 {
   "/": {
-    "lastmod": "2026-07-04",
-    "hash": "790c7580e54e46f63326915426e8da32fbae50e84e510cbaf4edcf7661c6f079"
+    "lastmod": "2026-07-07",
+    "hash": "da1a3cb8a33a4f0ce900617660fc848307d5b05a7bbd5b02457139bccad0f465"
   },
   "/tools/": {
     "lastmod": "2026-07-02",
@@ -68,16 +68,16 @@
     "hash": "c750436486ba1076f1b239e54d9db434b1e3d55b27d91c24f3c60508ee315930"
   },
   "/blog/": {
-    "lastmod": "2026-07-04",
-    "hash": "22157d8da4af1b8cc37a01cf136ec8ef8a705e9527447643eb2188ea06c069fb"
+    "lastmod": "2026-07-07",
+    "hash": "9a21065ca23c83ba72d036a309fc8b90c78dd3cd34732fd731ff877cef7d6fff"
   },
   "/privacy-policy/": {
     "lastmod": "2026-07-02",
     "hash": "575ec81582a87e4eecd6f87bd7a063f5cf26d6757dd4137659eadb7682fe5907"
   },
   "/terms-of-service/": {
-    "lastmod": "2026-07-02",
-    "hash": "85470b6dbc5699242186cc1887ea5599809815d19c8594bd30bd001edb7e15ae"
+    "lastmod": "2026-07-07",
+    "hash": "49ed1762d53ced9698a7d007c2ad1c615ebaec3ef820596a0880f4e270171267"
   },
   "/apps/address-label-maker-and-envelope/": {
     "lastmod": "2026-07-02",
@@ -495,9 +495,49 @@
     "lastmod": "2026-07-02",
     "hash": "970c9537bd971670da2a57d4d7391076254925f089f5748b45a101a69144f464"
   },
+  "/blog/agentic-crm-automation-boundaries/": {
+    "lastmod": "2026-07-07",
+    "hash": "639d6816248ce4735c7f4ee0e6869d1a6eeddaa79edc5f0de3c4d51c75745f50"
+  },
+  "/blog/ai-agent-runbooks-2026/": {
+    "lastmod": "2026-07-07",
+    "hash": "c0152168ac9ea31ef2bac8072f04c6c1d5c93153b4dd969a549c8a3ce46aff70"
+  },
+  "/blog/ai-coding-agent-review-checklist/": {
+    "lastmod": "2026-07-07",
+    "hash": "d84f4504361c0beffae37a36c682ed08f4f55fc10c514277a01ff7b810ae46f1"
+  },
+  "/blog/ai-dashboard-decision-quality/": {
+    "lastmod": "2026-07-07",
+    "hash": "8b03afde3a9fd3aee0eaeeb74b72d48b1293306a7c9c7bdaf06381ec771dca2b"
+  },
+  "/blog/ai-image-compression-content-pipelines/": {
+    "lastmod": "2026-07-07",
+    "hash": "0d9d2bcb534e8e8e82f9a819d3087b011fd74e3ae646a95c67ccc8ba1295e1aa"
+  },
+  "/blog/ai-meeting-summary-quality-control/": {
+    "lastmod": "2026-07-07",
+    "hash": "f19d34b0bf257b128b920c5ae14ef413a252e4ae372d534b80e0894adddaf6ff"
+  },
+  "/blog/ai-phishing-defense-2026/": {
+    "lastmod": "2026-07-07",
+    "hash": "a8faafaba88b5bc5fbcf2b0e57ed256451834478390492eb87e35a527cab2492"
+  },
+  "/blog/ai-regulation-product-requirements/": {
+    "lastmod": "2026-07-07",
+    "hash": "78cb1585176f4e2c40f153aec8a61c11aefbf7736fe5b8ecaa75b8ba90e237f0"
+  },
+  "/blog/ai-search-engine-optimization-2026/": {
+    "lastmod": "2026-07-07",
+    "hash": "e72cd69d0aa36821911229fa8eb77f3c9bb683aa6cfce69577509ab57124d189"
+  },
   "/blog/alcove-cabinet-cut-list/": {
     "lastmod": "2026-07-02",
     "hash": "b070945cf3e977f04f780579e38b3b3a3d48275c1f4c0fb614ce326fa782a705"
+  },
+  "/blog/api-cost-governance-for-llm-apps/": {
+    "lastmod": "2026-07-07",
+    "hash": "96df06a64143f2fc2257ba754adadc7e9fbbb23db413f08fccc742136267d560"
   },
   "/blog/applique-quilt-fabric-planning/": {
     "lastmod": "2026-07-02",
@@ -506,6 +546,10 @@
   "/blog/aquarium-stand-plywood-cut-list/": {
     "lastmod": "2026-07-02",
     "hash": "592a32f2ea228a61ffbfd734f5f299035091067226a7d5df6047d2b30fca79d1"
+  },
+  "/blog/arm-laptops-developer-workflows/": {
+    "lastmod": "2026-07-07",
+    "hash": "fad63278b939bbb24cdd963a88f81b72064385fc79dae4e5e70d90b954be7852"
   },
   "/blog/art-supply-rolling-cabinet-cut-list/": {
     "lastmod": "2026-07-02",
@@ -743,6 +787,10 @@
     "lastmod": "2026-07-02",
     "hash": "c43efd636bbbc5f115409ecd2240138c7e34d6a64c06b47463494358707b4594"
   },
+  "/blog/cloud-exit-hybrid-ai-infrastructure/": {
+    "lastmod": "2026-07-07",
+    "hash": "8d5eefb8c7c496d1b3657c863088e49fda290b4c2b631a37883cda4bccaba163"
+  },
   "/blog/color-and-repeat-planning-for-modern-quilts/": {
     "lastmod": "2026-07-02",
     "hash": "f9248a5733aaebbb08430c5928c4ab84ca2d6b0f69f62191052822f7a21cc500"
@@ -770,6 +818,10 @@
   "/blog/contacts-backup-before-switching-phones/": {
     "lastmod": "2026-07-02",
     "hash": "74e2144f7cb6bdd4c33922c69e59c0108323da24933c850318df6a832f843386"
+  },
+  "/blog/content-authenticity-c2pa-workflow/": {
+    "lastmod": "2026-07-07",
+    "hash": "206044a6fd674694d5b800799833d1c5ed1b588b6f33ea90bebefe5b4479a5ae"
   },
   "/blog/corner-shelf-plywood-cut-list/": {
     "lastmod": "2026-07-02",
@@ -971,6 +1023,14 @@
     "lastmod": "2026-07-02",
     "hash": "846fd2fd28882e49b7bc0552a58a00b6447195285d0f8922e65514b428714736"
   },
+  "/blog/data-contracts-for-ai-products/": {
+    "lastmod": "2026-07-07",
+    "hash": "a34a1796e2bf94f9ba3faedc9f1f1eca23670e7f093bc06134a4383271ba95f2"
+  },
+  "/blog/database-vector-hybrid-search/": {
+    "lastmod": "2026-07-07",
+    "hash": "0e832f09d2748fb07db94fb69932ae1039220d353945f09a7e18def36e8294d8"
+  },
   "/blog/decision-history-insights-private-choice-tracker/": {
     "lastmod": "2026-07-02",
     "hash": "a770bd773d41c44b49b18623d84d7d423bf7799327d614a4c08d25f4e2caed47"
@@ -1002,6 +1062,14 @@
   "/blog/deck-stairs-building-and-stringer-layout/": {
     "lastmod": "2026-07-02",
     "hash": "6ccc4245df5ae7efe0d81cc50124f32d4fe0a4dadcbb85376122f9a009d818a6"
+  },
+  "/blog/deepfake-response-plan-small-business/": {
+    "lastmod": "2026-07-07",
+    "hash": "b791812912580fec287c2ab13cdd048c14eee9c3144378534644d17c91ab3e8d"
+  },
+  "/blog/devcontainer-reproducible-ai-projects/": {
+    "lastmod": "2026-07-07",
+    "hash": "7b4ee00fce581ccd3a054acc6be2d728f2b8905106aae0317d5003f60d4cd090"
   },
   "/blog/diagonal-tile-layout-waste/": {
     "lastmod": "2026-07-02",
@@ -1043,6 +1111,10 @@
     "lastmod": "2026-07-02",
     "hash": "5e0010730e4ae0062e20ee44cb6038410b67e8f95347fe16f1f136f0e67a93d4"
   },
+  "/blog/edge-ai-vs-cloud-inference-costs/": {
+    "lastmod": "2026-07-07",
+    "hash": "4f345bc0d9faea0ce7e92d81a8c4bd4c37d5412c91d9c3d22b490021029ab1ba"
+  },
   "/blog/edge-banding-plywood-cut-list-allowance/": {
     "lastmod": "2026-07-02",
     "hash": "e46dc01d3942b75dbf8fbf70e5f5e928dd28916e835c70bc416428d39e1b2380"
@@ -1082,6 +1154,10 @@
   "/blog/estimating-project-cost-materials-hardware/": {
     "lastmod": "2026-07-02",
     "hash": "abf6536827d083ffd08a4da687bdfd42b8b441b7651fa73acf5e62047800a841"
+  },
+  "/blog/evals-as-ci-for-ai-features/": {
+    "lastmod": "2026-07-07",
+    "hash": "02dea02b77380bdf2cae747726f08e4ce007cf1ca18ce0053300750c6b85da81"
   },
   "/blog/expense-report-maker-monthly-vs-per-trip/": {
     "lastmod": "2026-07-02",
@@ -1226,6 +1302,10 @@
   "/blog/glowfeel-what-it-is-not-a-substitute-for/": {
     "lastmod": "2026-07-02",
     "hash": "ad2173d43239ae0383e3c89a14ddececc4c4af57fc60a2d3e98e4cc2bbf4575c"
+  },
+  "/blog/gpu-capacity-planning-ai-teams/": {
+    "lastmod": "2026-07-07",
+    "hash": "b98ec4fda7e67371914171d5cee058b62de400690fbf266ab391a66d92b6d936"
   },
   "/blog/grain-matching-cabinet-doors-guide/": {
     "lastmod": "2026-07-02",
@@ -1467,6 +1547,10 @@
     "lastmod": "2026-07-02",
     "hash": "f4b07a5cff9c23c9b9b3bb01b4a45e75da9eca8e47572d2b56439cf94dd4167b"
   },
+  "/blog/knowledge-base-cleanup-before-chatbot/": {
+    "lastmod": "2026-07-07",
+    "hash": "58742e2130ecaaf9570619e0319c590ca9f2b6f497bc4adef153909668541743"
+  },
   "/blog/label-storage-bins-from-a-photo-snaplabel/": {
     "lastmod": "2026-07-02",
     "hash": "85d156d1cdd0d70c05bd6e04af2b76e862426e6525754ca5cdd64382fcb735fe"
@@ -1502,6 +1586,10 @@
   "/blog/linen-closet-shelving-cut-list/": {
     "lastmod": "2026-07-02",
     "hash": "46deaca5698eb5ea958f166c3025b4bebe464747a05671210fe358af229e5f6f"
+  },
+  "/blog/local-ai-pc-workflows-2026/": {
+    "lastmod": "2026-07-07",
+    "hash": "273555c2ccdf35c3ff2000168e5a02ac3b999510bbb70d96bc86556aca294ae4"
   },
   "/blog/low-frequency-tone-generator-guide/": {
     "lastmod": "2026-07-02",
@@ -1611,6 +1699,10 @@
     "lastmod": "2026-07-02",
     "hash": "32a02aee80a8a07a59b51b2c41138f6e8e033193af753c0fe1a9320f678a2b8b"
   },
+  "/blog/model-context-protocol-app-integrations/": {
+    "lastmod": "2026-07-07",
+    "hash": "8f792a85096b682ace7880051f8359d8c61e68ef80ba16186a0a6cad432b9133"
+  },
   "/blog/modular-cube-storage-cut-list/": {
     "lastmod": "2026-07-02",
     "hash": "f2d5cb9e6f9f66dbb101f890438ec3a5f4d7236e9bd88c1d1e1c48888aa51587"
@@ -1626,6 +1718,10 @@
   "/blog/mudroom-wall-hooks-shelf-cut-list/": {
     "lastmod": "2026-07-02",
     "hash": "f6dc65e9feb3a41779f7ff15439530b1d94a701908323244b332af6b34d631d5"
+  },
+  "/blog/multimodal-search-for-small-teams/": {
+    "lastmod": "2026-07-07",
+    "hash": "de63675f7aa95166ac8700d1af3dbcb4b043666d2dae868b1b6504cff03a34ba"
   },
   "/blog/murphy-bed-plywood-cut-list/": {
     "lastmod": "2026-07-02",
@@ -1650,6 +1746,10 @@
   "/blog/ntp-time-sync-vs-phone-clock-why-it-drifts/": {
     "lastmod": "2026-07-02",
     "hash": "6c993f62814f6676133e386d6878d42f067390ad85d5c83e03868e557d09835e"
+  },
+  "/blog/observability-for-ai-agents/": {
+    "lastmod": "2026-07-07",
+    "hash": "321fdda2a45a92dd1c7d9865d7878fb441ecd932c7a55793c1f0543fc0b45a74"
   },
   "/blog/ocr-pdf-scanner-searchable-documents-guide/": {
     "lastmod": "2026-07-02",
@@ -1690,6 +1790,10 @@
   "/blog/open-riser-stair-planning/": {
     "lastmod": "2026-07-02",
     "hash": "3577a3843ad2c2ddebee856e06161ba29f60e735eb4ccf7155208307695ca861"
+  },
+  "/blog/open-source-model-license-review/": {
+    "lastmod": "2026-07-07",
+    "hash": "9c4ae32620a4098d0a5f7210bc6396dec153983a59f572efe558ff0667696b0c"
   },
   "/blog/open-vs-closed-stringer-remodel-planning/": {
     "lastmod": "2026-07-02",
@@ -1751,6 +1855,14 @@
     "lastmod": "2026-07-02",
     "hash": "51688e0abc06a8fa2c1b7dd3e8761556342ab33bb1ac8a63012cc3eee6991509"
   },
+  "/blog/passkeys-for-small-business-login/": {
+    "lastmod": "2026-07-07",
+    "hash": "1e6380b4a8f5d8762dd577c72817b5e2c9a4af39db84f7c8d39931dd3b6050db"
+  },
+  "/blog/passwordless-customer-support-recovery/": {
+    "lastmod": "2026-07-07",
+    "hash": "e0001d14a051b9b0ac8f959a1460a2c9ea79cae5edc1797c8c743441115259a0"
+  },
   "/blog/pdf-scan-for-home-renovation-receipts/": {
     "lastmod": "2026-07-02",
     "hash": "7103620ae58c24845592a0614c5f45a02c5a578ff1cb113bfadbd8b11bedf19e"
@@ -1762,6 +1874,10 @@
   "/blog/pdf-scan-permit-folder-for-remodel/": {
     "lastmod": "2026-07-03",
     "hash": "b9d707f0b1138d321f811ee9c2f063705e0a98a51566b33ec532f3cbd3155486"
+  },
+  "/blog/personal-data-redaction-ai-workflow/": {
+    "lastmod": "2026-07-07",
+    "hash": "7f040cc0836df4d073778eef0539f7ef7b3ef45cc29fea91e12cbaaf74527c9a"
   },
   "/blog/pet-feeding-station-cut-list/": {
     "lastmod": "2026-07-02",
@@ -1798,6 +1914,10 @@
   "/blog/planing-and-flattening-rough-lumber/": {
     "lastmod": "2026-07-02",
     "hash": "01bb8ace3fa18e9e0b969a8175ec1a4f8850d7e2f345013121adf57db7ca42cd"
+  },
+  "/blog/platform-engineering-for-ai-teams/": {
+    "lastmod": "2026-07-07",
+    "hash": "e0b986865134172609e41c46b94bf3be61734feae79e0c2f3f21de1b51061cd4"
   },
   "/blog/plywood-audio-rack-cut-list/": {
     "lastmod": "2026-07-02",
@@ -1999,6 +2119,10 @@
     "lastmod": "2026-07-02",
     "hash": "8fc8d3552234cfc4b52df5030b6f299b414d817078fa8cc809c3a4e8e3ae7dfc"
   },
+  "/blog/post-quantum-crypto-migration-checklist/": {
+    "lastmod": "2026-07-07",
+    "hash": "ccf33c28e305d98aa4d76af31e75f3db8d41a632858d0501342a5b329f7afca2"
+  },
   "/blog/practice-tempo-ramping-build-speed-cadenza/": {
     "lastmod": "2026-07-02",
     "hash": "e856251ee9a4f9170fdcfbfffe93877301219fcb59a93ab2c1551bc95d4d4df3"
@@ -2022,6 +2146,10 @@
   "/blog/printer-app-printing-return-labels-from-iphone/": {
     "lastmod": "2026-07-02",
     "hash": "13b52d2bfa5fb4b805e1c48cb82810a2743e4eae767a65231ec7f11daa39b55b"
+  },
+  "/blog/privacy-preserving-analytics-without-third-party-cookies/": {
+    "lastmod": "2026-07-07",
+    "hash": "0adbfac4ca2aae8c8b1848b88bc77301b4e0f59d59dcdf1b7756c543066e5dee"
   },
   "/blog/private-clock-app-no-account-no-tracking/": {
     "lastmod": "2026-07-02",
@@ -2063,6 +2191,10 @@
     "lastmod": "2026-07-02",
     "hash": "e54a2dd882abe48a493b21c9148dd48aba3e5d52e636707c5b334f85deeb0ef7"
   },
+  "/blog/private-on-device-speech-notes/": {
+    "lastmod": "2026-07-07",
+    "hash": "c2fcbe5e2cfdca1755f0f402416948ead90e3e1a901346e9bee3b70903cef08d"
+  },
   "/blog/private-pdf-scanning-workflow-research/": {
     "lastmod": "2026-07-02",
     "hash": "b6a77b168521848dd27dbf17d1ef439db99920e33e7d132036a05dffb2029318"
@@ -2082,6 +2214,10 @@
   "/blog/professional-invoice-vs-handwritten-receipt/": {
     "lastmod": "2026-07-02",
     "hash": "2db29393e28d8bc1dc59b3bd17e2b6f256577b71c56bc340396d59239cf0065b"
+  },
+  "/blog/prompt-injection-defense-product-teams/": {
+    "lastmod": "2026-07-07",
+    "hash": "4c3c9357e09a08778bef2e9324aaad4e014026d8dbc1616da8ae2fc3b0fe6f21"
   },
   "/blog/protect-creator-photos-private-watermarking/": {
     "lastmod": "2026-07-02",
@@ -2295,6 +2431,10 @@
     "lastmod": "2026-07-02",
     "hash": "7b2fd80cbfd987d29034b540e705c0dc65489dd3980af6562ec3cd962ad2d5ee"
   },
+  "/blog/rag-evaluation-before-launch/": {
+    "lastmod": "2026-07-07",
+    "hash": "e5eda41325e1df9f77b14db30dcd7c252fbd7ea4ac9c4ae82c2ea465e50040ba"
+  },
   "/blog/random-choice-picker-app-daily-decisions/": {
     "lastmod": "2026-07-02",
     "hash": "7de50aaea72f9943fe9df7461512a2391e1a7211755fb80a8323f06a10cac1e9"
@@ -2306,6 +2446,10 @@
   "/blog/reading-a-cut-list-diagram-for-beginners/": {
     "lastmod": "2026-07-02",
     "hash": "d713e792a4656bd3c7d808de6d41f41a38972755bba077a671712933ac2177b3"
+  },
+  "/blog/realtime-voice-ai-customer-workflows/": {
+    "lastmod": "2026-07-07",
+    "hash": "daf65a0896c629e3e33679e2b39cabad15c9191c4161bc09cfcc3557db1b7dc5"
   },
   "/blog/receipt-mileage-recordkeeping-research/": {
     "lastmod": "2026-07-02",
@@ -2339,6 +2483,10 @@
     "lastmod": "2026-07-02",
     "hash": "5aa8fe203e0ca9629fbfc5b4a536184d8ca08f44d1cfab506a73b9c666ce7978"
   },
+  "/blog/risc-v-developer-hardware-watch/": {
+    "lastmod": "2026-07-07",
+    "hash": "92a193613e10ea585781ff233226222cb9549b03f4a131d5d16fa132d110f286"
+  },
   "/blog/ritualix-ai-habit-plan-vs-diy/": {
     "lastmod": "2026-07-02",
     "hash": "01bbb6dbada58040327733af0fb795bbf6fd7b96877c029229bb3ca41594f1f9"
@@ -2354,6 +2502,10 @@
   "/blog/ritualix-widgets-home-screen-habit-visibility/": {
     "lastmod": "2026-07-02",
     "hash": "f99048bcd83aa310e745e5969027ae58fd8d80b45ab23271b36cba1ddde0bdef"
+  },
+  "/blog/robotics-digital-twins-ai-training/": {
+    "lastmod": "2026-07-07",
+    "hash": "9ffc1d38f60082861556f0e2a9f82af9fb7697eda1c5fd448058cdee6a794852"
   },
   "/blog/rolling-shop-cart-cut-list/": {
     "lastmod": "2026-07-02",
@@ -2427,9 +2579,17 @@
     "lastmod": "2026-07-02",
     "hash": "b2dfb5de399dc548a347153898008038f6b071e1249d12c156b68da8e077db2f"
   },
+  "/blog/secure-ai-browser-extensions/": {
+    "lastmod": "2026-07-07",
+    "hash": "c9f8d91bdfc1075bfd119ea7a732966421563f37342e4b6ec0f8ebce35ae986e"
+  },
   "/blog/self-leveling-underlayment-before-tile-layout/": {
     "lastmod": "2026-07-02",
     "hash": "96aa8c2d8b6773d23f1d7776d1ea2d4642405db176e046aca12898185c98cb4f"
+  },
+  "/blog/serverless-edge-rendering-tradeoffs/": {
+    "lastmod": "2026-07-07",
+    "hash": "c94af8326a230e2e60b8fc69ad4158d5585b3a2181c15981ead167c4ccc60ba8"
   },
   "/blog/sewing-machine-table-cut-list/": {
     "lastmod": "2026-07-02",
@@ -2490,6 +2650,10 @@
   "/blog/signaturemark-batch-watermark-photo-shoot/": {
     "lastmod": "2026-07-02",
     "hash": "c8c54f875defc6aa77cce36679a77308b6645d8e3481020c28769e75040486be"
+  },
+  "/blog/small-language-models-enterprise-use/": {
+    "lastmod": "2026-07-07",
+    "hash": "cb6a230968f8d0deb3637908b9dea3e4bf3bf2668d931fecd8934ace0044499b"
   },
   "/blog/small-shop-plywood-storage-and-offcuts/": {
     "lastmod": "2026-07-02",
@@ -2582,6 +2746,14 @@
   "/blog/snapstock-vs-spreadsheet-small-business-inventory/": {
     "lastmod": "2026-07-02",
     "hash": "ff31b5b88ed03ef9fbe741b1b8bbf4f2136879b0eeb8d9eae30f5e360cab6991"
+  },
+  "/blog/software-bill-of-materials-for-app-teams/": {
+    "lastmod": "2026-07-07",
+    "hash": "d67782c3d05a4844a6e17083a495c2d04fb380eb309fd3b1972641cfe3fed6b7"
+  },
+  "/blog/spatial-computing-product-design/": {
+    "lastmod": "2026-07-07",
+    "hash": "53c57b4a8eb7c249b23f2dce44c5df14c0f070c0c4b698df566fd721990f85b0"
   },
   "/blog/speaker-tools-room-tone-check-before-recording/": {
     "lastmod": "2026-07-02",
@@ -2775,6 +2947,14 @@
     "lastmod": "2026-07-02",
     "hash": "cdf678b1a5bd0e01a02dc04d307977f7d562a543dc163b0db5ae9aff1ec475ac"
   },
+  "/blog/sustainable-computing-ai-energy-budget/": {
+    "lastmod": "2026-07-07",
+    "hash": "33025da56644eda760b3b3e6678a4478f01d03dc18994ee277a2f0962904d1b8"
+  },
+  "/blog/synthetic-data-for-testing-workflows/": {
+    "lastmod": "2026-07-07",
+    "hash": "018da856842f59ddf62c4b5e99165ac60bfc7fe2731190c74979f7fe554b4b4c"
+  },
   "/blog/table-saw-outfeed-table-cut-list/": {
     "lastmod": "2026-07-02",
     "hash": "032096763b0e5eea15a1b705b6cfe14e2c467e6e5c95425f3c24d61b989b1059"
@@ -2963,6 +3143,10 @@
     "lastmod": "2026-07-02",
     "hash": "e6d936416088d1e51051eb7db8abb72ba2ec0d0d94f1a5604bf59134f18d837d"
   },
+  "/blog/vector-database-cleanup-strategy/": {
+    "lastmod": "2026-07-07",
+    "hash": "3cd73f999ecf1c486dc86857b5531c4608241a8e84b913b39e5bfb7af59bb897"
+  },
   "/blog/video-compression-cleanup-iphone-storage/": {
     "lastmod": "2026-07-02",
     "hash": "cc2989499ee063b8ffc1d80d2d21d3433a9c51c281659318b95cb053b199b4e3"
@@ -2975,9 +3159,21 @@
     "lastmod": "2026-07-02",
     "hash": "2d52ac4aaf104a4bce2a990c7e03f5fab5b4d354895c785914ad72640573b0a1"
   },
+  "/blog/wasm-components-plugin-architecture/": {
+    "lastmod": "2026-07-07",
+    "hash": "e8afd40e6237d51a94c0b201716ce5ae950548817b513096f0cde53fd80a77fd"
+  },
   "/blog/watermark-app-creators-signature-brand/": {
     "lastmod": "2026-07-02",
     "hash": "c1f8d0f7a988914c34373bdcd8637f218c0784db804a4eb8ee69b1b1e542f8c3"
+  },
+  "/blog/web-accessibility-ai-generated-interfaces/": {
+    "lastmod": "2026-07-07",
+    "hash": "9aa9c99371e2d10c140ea39ea73366cd49bb2e1defb2992987972e709b3c6ad2"
+  },
+  "/blog/webgpu-browser-ai-workflows/": {
+    "lastmod": "2026-07-07",
+    "hash": "d08b7910c55da5717c787b166018d4cdbcc1060e53a13bc8878f6b224497fcdb"
   },
   "/blog/weighted-decision-maker-app/": {
     "lastmod": "2026-07-02",
@@ -3070,6 +3266,10 @@
   "/blog/zero-clearance-insert-for-clean-cuts/": {
     "lastmod": "2026-07-02",
     "hash": "a818331d5af245efcf0e558763b314142d18ac898e922ca5c39026f636731afb"
+  },
+  "/blog/zero-trust-for-tiny-teams/": {
+    "lastmod": "2026-07-07",
+    "hash": "6115acd873d74fb0c5f60ce7e0ffab1740c03aa9a81b76e9bec8cee27b8d783e"
   },
   "/compare/": {
     "lastmod": "2026-07-02",
