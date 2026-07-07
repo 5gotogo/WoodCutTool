@@ -8,8 +8,8 @@
     "hash": "e6fe1eac9c175b73ec08b908bc115bc26e67b889b0f75d90035a033616e7af1f"
   },
   "/learn/": {
-    "lastmod": "2026-07-02",
-    "hash": "4465056a5a9c79b797bafccf2b48e2a6b41e57c43ce6e833e39675a481513eb2"
+    "lastmod": "2026-07-07",
+    "hash": "fedbdefa1309c551e7935e58227e0aecec51f765beadcd2ca1a5b78f1b8bfcbf"
   },
   "/apps/": {
     "lastmod": "2026-07-02",
@@ -3656,8 +3656,12 @@
     "hash": "20ab6f2ee128f44e07f27efebd6c37a1ce06cd1dfd4dcb9cf42c3410ac05496f"
   },
   "/learn/backsplash-tile-measuring-guide/": {
-    "lastmod": "2026-07-02",
-    "hash": "99e7886cd14020c9b9c33201331a0860127b76612635716cb598f622e89372ef"
+    "lastmod": "2026-07-07",
+    "hash": "e910d1eb8b13a4c8bcd7cf5695ea8eac5aa927938a6145ef9a21d19485ced6a3"
+  },
+  "/learn/bathroom-tile-layout-measurement-guide/": {
+    "lastmod": "2026-07-07",
+    "hash": "282c2167bea04492220e74ae7025a602de137358efa5ed912366efba78c4eea8"
   },
   "/learn/best-woodworking-calculator-workflow/": {
     "lastmod": "2026-07-02",
@@ -3671,13 +3675,25 @@
     "lastmod": "2026-07-02",
     "hash": "65c8d2734ce498c09111dcec27ba02e7f8b10dc44d2dfa160ca4f645fdf17f5e"
   },
+  "/learn/cabinet-door-cut-list-planning/": {
+    "lastmod": "2026-07-07",
+    "hash": "a76d54e0168e01654f358b6e9f97bac515c887ada6eebfe696a4084659c63294"
+  },
   "/learn/choosing-between-calculator-template-and-app/": {
     "lastmod": "2026-07-02",
     "hash": "dfb09e7e213f695c682b94f0df450871d300178033b6733cfa505b3dcb899f16"
   },
+  "/learn/closet-drawer-tower-material-plan/": {
+    "lastmod": "2026-07-07",
+    "hash": "cafe1f35c4ce91c0ec25f9aafdc1676337e4568b468063fd37ffa118e8956ff2"
+  },
   "/learn/closet-shelving-cut-list-workflow/": {
     "lastmod": "2026-07-02",
     "hash": "8296edfe583a1e205915f1d495513f071c75c53a47bedcf0839f8b8a15cb0bbd"
+  },
+  "/learn/cut-list-labeling-system/": {
+    "lastmod": "2026-07-07",
+    "hash": "5f041b230f3bc85ace1ea445813b0f8c4650a79d009776a7223cd694938c2720"
   },
   "/learn/cut-list-optimizer/": {
     "lastmod": "2026-07-02",
@@ -3719,6 +3735,10 @@
     "lastmod": "2026-07-02",
     "hash": "0561b476174a7be45e7c402508a932c67e114868eeb6780085e0acbb8d389a01"
   },
+  "/learn/face-frame-material-estimate-guide/": {
+    "lastmod": "2026-07-07",
+    "hash": "637663092b2ff5000941cf2f1bfa28f91096312d5b05d797bbb327b39eef65fd"
+  },
   "/learn/field-measurement-checklist-before-cut-list/": {
     "lastmod": "2026-07-02",
     "hash": "0cae1a49b1da7c99cf6dc44e2bfbab6e54b7027eec42b29ff74d4f7815e4e9fe"
@@ -3751,17 +3771,25 @@
     "lastmod": "2026-07-02",
     "hash": "ec9ff1d7dbe2c273c21fa31e93885122dc7cb75eb9a4e96a403cd4d73c2fa52b"
   },
+  "/learn/large-format-tile-waste-planning/": {
+    "lastmod": "2026-07-07",
+    "hash": "99ed83d3eb298fb7afb13362e749d3b28e1131f9b0fcd4758014f7139e345a17"
+  },
   "/learn/material-estimation-for-carpentry/": {
     "lastmod": "2026-07-02",
     "hash": "cde4c068ee2064d03322369cda94f2785247f6a533d89fda276585cb4723c12d"
   },
   "/learn/mdf-cut-list-planning-guide/": {
-    "lastmod": "2026-07-02",
-    "hash": "eb9fab7c237cd7102e487e94a1ad8256f3f7e7b73e14be991c66e6386ddba177"
+    "lastmod": "2026-07-07",
+    "hash": "9e6e6058a1cb9c819e077d2a5287b244a53eb878c3188c905dbe81ea0dcca5be"
   },
   "/learn/melamine-cutting-plan-for-clean-edges/": {
     "lastmod": "2026-07-02",
     "hash": "b5e28952989e36eae54d055e5d1a76317248ff60cef286b8904475c974e4a5c7"
+  },
+  "/learn/multi-room-material-estimate-workflow/": {
+    "lastmod": "2026-07-07",
+    "hash": "648b8c96813ae3ee10796c9bf7a8637350184cc76fad465032802aa18ae2a34f"
   },
   "/learn/offcut-storage-system-for-sheet-goods/": {
     "lastmod": "2026-07-02",
@@ -3779,13 +3807,25 @@
     "lastmod": "2026-07-02",
     "hash": "06389baf3d654878ddc23a7a5d9aafee01562e72532ea4985c37aca18382bb96"
   },
+  "/learn/plywood-cut-plan-for-built-ins/": {
+    "lastmod": "2026-07-07",
+    "hash": "45241080160d912c256df70acd43d55b377e6c0c40911470db79a3527fccd2dd"
+  },
   "/learn/plywood-cutting-optimization/": {
     "lastmod": "2026-07-02",
     "hash": "fc836e7cdd997f94aba190a6bf2ae2c9eb290de2bdc3dba40b82abd3f11308d7"
   },
+  "/learn/plywood-edge-finishing-planning-guide/": {
+    "lastmod": "2026-07-07",
+    "hash": "6c6244d131495fd0748718624b602eb4b9bf2802c6e7079eca75336a4d74e2ec"
+  },
   "/learn/plywood-grade-selection-for-cabinets/": {
     "lastmod": "2026-07-02",
     "hash": "3e065176533b9ad0368b84d6e6c35d262f1c3b2b41b6932011bb69e9bc8bea16"
+  },
+  "/learn/plywood-offcut-inventory-workflow/": {
+    "lastmod": "2026-07-07",
+    "hash": "7d6dd4963dd135134358b8fbaea034cb67ee464c56d361906d0bdf43fc9f444c"
   },
   "/learn/project-cost-estimate-from-cut-list/": {
     "lastmod": "2026-07-02",
@@ -3794,6 +3834,14 @@
   "/learn/quilt-backing-binding-batting-estimate/": {
     "lastmod": "2026-07-02",
     "hash": "28e2b366f09877f9f662b1a799f0dab9ec9876ef7592b746eeea041caa617109"
+  },
+  "/learn/quilt-border-yardage-planning/": {
+    "lastmod": "2026-07-07",
+    "hash": "dd67427b32ecf9c532d77663d39c4142eb2fc551c2887e676d508d2cabdd05a5"
+  },
+  "/learn/quilt-precut-bundle-planning-guide/": {
+    "lastmod": "2026-07-07",
+    "hash": "936058cc8957d39e395dc796d99a51aa882fad18002df478b33829ff919cde8e"
   },
   "/learn/quilt-yardage-calculator-inputs/": {
     "lastmod": "2026-07-02",
@@ -3807,29 +3855,57 @@
     "lastmod": "2026-07-02",
     "hash": "378f0c5270d3bf6454f1f006b6d483093dae4fc4edfc178616e042a0844a1777"
   },
+  "/learn/sheet-goods-delivery-and-storage-checklist/": {
+    "lastmod": "2026-07-07",
+    "hash": "a9d3501ba3b9bb71f6cd98c51323a660ef370a19745d9b945a2286c96ffd9f4c"
+  },
   "/learn/sheet-layout-optimization/": {
     "lastmod": "2026-07-02",
     "hash": "642b31c6ba8f4a85a352845b159967771a8ae1d72d8b6faf9f099d64ced24bff"
   },
   "/learn/shelf-span-and-plywood-thickness-guide/": {
-    "lastmod": "2026-07-02",
-    "hash": "512b93392ef503af7f40a401feec5f4bc80fefc6bec9ed4f13ae742c0e5e4c78"
+    "lastmod": "2026-07-07",
+    "hash": "1dd5d939b409278c13dc4b4cc98ece7dd86e701ca1a7bc601712a80dcf93c361"
+  },
+  "/learn/stair-headroom-measurement-checklist/": {
+    "lastmod": "2026-07-07",
+    "hash": "2603d706eeceb87b167ba0683a41cb6c6392f7df552248eb0cbe74c16f518dca"
+  },
+  "/learn/stair-landing-material-estimate/": {
+    "lastmod": "2026-07-07",
+    "hash": "d5bff14c384d5cfa5ef9d4ec4efbdca0ba7cf8d9b44ae181c9cccedde0076a94"
   },
   "/learn/stair-rise-run-comfort-guide/": {
-    "lastmod": "2026-07-02",
-    "hash": "cbaef2a6b4c5ce247219061b990ddb401cf4bec895a56bfe416b52c0052f713a"
+    "lastmod": "2026-07-07",
+    "hash": "6f39e3971a5de0973363228e17c52fe020ea48ef80be5edfeb570c3182e24458"
   },
   "/learn/stair-stringer-calculator-inputs-explained/": {
     "lastmod": "2026-07-02",
     "hash": "b62eb1d1e8d4784e1d7d377421007acb2b7e3f48e1b91d347249cccdfad20938"
+  },
+  "/learn/table-saw-cut-sequence-planning/": {
+    "lastmod": "2026-07-07",
+    "hash": "a51bd7be4ab2d126b734617bbfdbe25cac3444921842fa2084d84630be936a05"
   },
   "/learn/tile-calculator-inputs-explained/": {
     "lastmod": "2026-07-02",
     "hash": "6aa7d34d148105c9070c2f4cdfc7e7702a13f31a3cf31d321b38d8a1a1e7dbe7"
   },
   "/learn/tile-waste-allowance-guide/": {
-    "lastmod": "2026-07-02",
-    "hash": "cdcb81c55f8f1c6b4498646ee4c05ed40ccf18cecc0795cf35a2898b6db01899"
+    "lastmod": "2026-07-07",
+    "hash": "a866643661a46c11130c9027d8c3e0d14a821d116d6ecf67bbb173e79cf337c2"
+  },
+  "/learn/toe-kick-cut-list-planning/": {
+    "lastmod": "2026-07-07",
+    "hash": "8496605bbbe4f0e7eb9d36cbbe2b36f3b98334e1bcf0a360e97c190b701bbec0"
+  },
+  "/learn/track-saw-sheet-breakdown-workflow/": {
+    "lastmod": "2026-07-07",
+    "hash": "b15a8e7ad7096c6708327095c00bd76354e831e3acb93523f002b21b8f11dad5"
+  },
+  "/learn/wall-cabinet-plywood-layout-guide/": {
+    "lastmod": "2026-07-07",
+    "hash": "fd8944b6b77e013629d5289b646abe24225648e1587d17e41b96664d224aabd5"
   },
   "/learn/what-is-cut-list-optimization/": {
     "lastmod": "2026-07-02",
@@ -3839,13 +3915,17 @@
     "lastmod": "2026-07-02",
     "hash": "83f389c572127eeae7a6f76c58cffb652a80284c0baccf4b8823658a73f3eedb"
   },
+  "/learn/woodworking-hardware-allowance-guide/": {
+    "lastmod": "2026-07-07",
+    "hash": "0d386a7733f4e610715b72fea030234b896d486d6d562547ceb272cb64368f8c"
+  },
   "/learn/woodworking-material-calculator/": {
     "lastmod": "2026-07-02",
     "hash": "093bda441032fe2165d16cff4dadbc68ebbb3820e9c899e79e4df66bd63d01ee"
   },
   "/learn/workbench-material-planning-guide/": {
-    "lastmod": "2026-07-02",
-    "hash": "2dda527de49785a65d5f84aee740f5f9819ef284c392da109fcd8073afc1705e"
+    "lastmod": "2026-07-07",
+    "hash": "9b97acff57aa039fe666b4b580f53e8d9e1570b49cef7fbaef96bdc413fb1e25"
   },
   "/legal/cutlist/privacy/": {
     "lastmod": "2026-07-02",
