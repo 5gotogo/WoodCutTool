@@ -10065,6 +10065,46 @@ function relatedToolsAndGuides(article) {
       </section>`;
 }
 
+const performanceResponseDetails = {
+  "best-pdf-scanner-app-iphone-private-documents": {
+    kicker: "Updated search path",
+    title: "Private scanner workflow refreshed for document-search visitors",
+    body: "This page now gives users a clearer path from the high-intent query to the next document action: scan a page, make the file searchable, organize multi-page PDFs, and decide whether to use a scanner app instead of a camera photo. The goal is to recover discovery by strengthening internal links around private PDF scanning, OCR, scan-to-PDF, and document organization.",
+    links: [
+      ["/apps/pdf-scan-scanner-and-reader/", "PDF Scan app page", "Open the private scanner app detail page"],
+      ["/blog/ocr-pdf-scanner-searchable-documents-guide/", "OCR PDF scanner guide", "Make scanned documents searchable"],
+      ["/blog/scan-to-pdf-workflow-receipts-invoices-signatures-lock/", "Scan to PDF workflow", "Receipts, signatures, locks, and projects"],
+      ["/apps/compare/pdf-scan-vs-photographing-documents/", "PDF Scan vs photos", "Compare scanner app output with camera photos"]
+    ]
+  },
+  "address-label-maker-envelope-printing-guide": {
+    kicker: "Rising search path",
+    title: "Mailing-label traffic gets a clearer next step",
+    body: "This page is already gaining visibility, so the response is to make the next action more obvious: choose a label format, confirm Avery-style alignment, reuse contacts for repeated mailings, and move from guide to printable output. These links help the growing page pass users into the app page and deeper label-printing guides.",
+    links: [
+      ["/apps/address-label-maker-and-envelope/", "Address Label Maker app page", "Create labels, envelopes, and printable PDFs"],
+      ["/blog/avery-label-template-iphone-printing/", "Avery template printing", "Avoid alignment waste on label sheets"],
+      ["/blog/address-label-maker-small-batch-mailing/", "Small-batch mailing", "Print modest mail runs without desktop mail merge"],
+      ["/apps/compare/address-label-maker-vs-word-mail-merge/", "Address Label Maker vs Word mail merge", "Compare a focused app with desktop mail merge"]
+    ]
+  }
+};
+
+function performanceResponsePanel(article) {
+  const detail = performanceResponseDetails[article.slug];
+  if (!detail) return "";
+
+  return `
+      <section class="article-application-panel">
+        <p class="eyebrow">${escapeHtml(detail.kicker)}</p>
+        <h2>${escapeHtml(detail.title)}</h2>
+        <p>${escapeHtml(detail.body)}</p>
+        <div class="related-grid">${detail.links
+          .map(([href, title, description]) => `<a href="${href}"><span>Recommended next step</span><strong>${escapeHtml(title)}</strong><em>${escapeHtml(description)}</em></a>`)
+          .join("")}</div>
+      </section>`;
+}
+
 function deepDiveFigure(article) {
   const detail = article.deepDive;
   if (!detail?.figureTitle) return "";
@@ -10836,7 +10876,7 @@ function blogPostingJsonLd(article) {
     mainEntityOfPage: url,
     image: "https://woodcuttool.com/assets/og/woodcuttool-og.png",
     datePublished: "2026-01-01",
-    dateModified: "2026-06-23",
+    dateModified: performanceResponseDetails[article.slug] ? "2026-07-08" : "2026-06-23",
     inLanguage: "en",
     articleSection: article.category,
     author: { "@type": "Organization", name: "WoodCutTool", url: "https://woodcuttool.com/" },
@@ -10889,7 +10929,7 @@ ${head({
       <section class="article-checklist">
         <h2>Field Checklist</h2>
         <ul>${article.checklist.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
-      </section>
+      </section>${performanceResponsePanel(article)}
       ${deepFaq(article)}
       ${deepSources(article)}
       ${cutlistApplicationPanel(article)}
