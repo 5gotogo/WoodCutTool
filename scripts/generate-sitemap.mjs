@@ -160,6 +160,10 @@ function sitemapMeta(route) {
     return { changefreq: "weekly", priority: "0.9" };
   }
 
+  if (route === "/wood/") {
+    return { changefreq: "weekly", priority: "0.91" };
+  }
+
   if (route === "/apps/quiltfit/") {
     return { changefreq: "weekly", priority: "0.9" };
   }
@@ -202,6 +206,10 @@ function sitemapMeta(route) {
 
   if (route.startsWith("/glossary/")) {
     return { changefreq: "monthly", priority: "0.76" };
+  }
+
+  if (route.startsWith("/wood/")) {
+    return { changefreq: "monthly", priority: "0.78" };
   }
 
   if (route.startsWith("/blog/")) {

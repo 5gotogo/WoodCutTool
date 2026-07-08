@@ -309,7 +309,13 @@ function pageGraph(tool) {
 }
 
 function toolsHubGraph() {
-  const itemListElement = softwareTools.map((tool, index) => ({
+  const referenceTools = [
+    {
+      path: "/wood/",
+      name: "Wood Species Library"
+    }
+  ];
+  const itemListElement = [...softwareTools, ...referenceTools].map((tool, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: tool.name,

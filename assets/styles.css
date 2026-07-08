@@ -1222,6 +1222,267 @@ h3 {
   font-weight: 750;
 }
 
+.wood-library-hero,
+.wood-species-hero {
+  padding-bottom: 20px;
+}
+
+.wood-stats,
+.wood-facts-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.wood-stats {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  max-width: 760px;
+  margin-top: 18px;
+}
+
+.wood-stats div,
+.wood-facts-grid div {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 10px 24px rgba(39, 44, 36, 0.06);
+}
+
+.wood-stats strong,
+.wood-facts-grid strong {
+  display: block;
+  color: var(--ink);
+  font-size: 1.25rem;
+  line-height: 1.1;
+}
+
+.wood-stats span,
+.wood-facts-grid span,
+.wood-facts-grid em {
+  display: block;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.wood-featured-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.wood-featured-links a {
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.78);
+  font-weight: 850;
+}
+
+.wood-featured-links a:hover {
+  border-color: rgba(47, 111, 78, 0.42);
+  text-decoration: none;
+}
+
+.wood-filter-bar {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.wood-filter-bar label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.wood-filter-bar input,
+.wood-filter-bar select {
+  min-height: 42px;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+
+.wood-count {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-weight: 850;
+}
+
+.wood-species-table {
+  width: 100%;
+  min-width: 1020px;
+  border-collapse: collapse;
+}
+
+.wood-species-table th,
+.wood-species-table td {
+  padding: 12px 13px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.wood-species-table th {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: #fbfaf6;
+}
+
+.wood-species-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.wood-facts-grid {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.wood-facts-grid div {
+  min-height: 118px;
+}
+
+.wood-facts-grid span {
+  margin-bottom: 8px;
+  color: var(--accent-2);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.wood-facts-grid strong {
+  font-size: 1.35rem;
+}
+
+.wood-facts-grid em {
+  margin-top: 6px;
+}
+
+.wood-detail-layout {
+  display: grid;
+  gap: 18px;
+}
+
+.wood-detail-main,
+.wood-detail-side {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 12px 30px rgba(39, 44, 36, 0.06);
+}
+
+.wood-detail-main h2,
+.wood-detail-side h2 {
+  margin-top: 0;
+}
+
+.wood-detail-main h3 {
+  margin-top: 22px;
+}
+
+.wood-detail-main p,
+.wood-detail-main li {
+  color: var(--muted);
+}
+
+.wood-pill-list,
+.wood-detail-main ul {
+  display: grid;
+  gap: 8px;
+  padding-left: 20px;
+}
+
+.wood-pill-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  list-style: none;
+}
+
+.wood-pill-list li {
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fbfaf6;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.wood-detail-side dl {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0 0;
+}
+
+.wood-detail-side dl div {
+  display: grid;
+  gap: 4px;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfaf6;
+}
+
+.wood-detail-side dt {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.wood-detail-side dd {
+  margin: 0;
+  font-weight: 800;
+}
+
+.wood-related-species {
+  display: grid;
+  gap: 12px;
+}
+
+.wood-related-species a {
+  display: grid;
+  gap: 6px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.wood-related-species a:hover {
+  border-color: rgba(47, 111, 78, 0.42);
+  text-decoration: none;
+}
+
+.wood-related-species span {
+  color: var(--accent-2);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.wood-related-species em {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-style: normal;
+}
+
 .proof-grid,
 .roi-flow,
 .compare-grid,
@@ -6892,6 +7153,11 @@ tr:last-child td {
     grid-column: 1 / -1;
   }
 
+  .wood-filter-bar {
+    grid-template-columns: minmax(0, 1.2fr) minmax(180px, 0.45fr) minmax(180px, 0.45fr);
+    align-items: end;
+  }
+
   .visual-proof-panel {
     grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
     align-items: center;
@@ -7057,6 +7323,15 @@ tr:last-child td {
 
   .intent-card:first-child {
     grid-column: auto;
+  }
+
+  .wood-detail-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.42fr);
+    align-items: start;
+  }
+
+  .wood-related-species {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .visual-proof-panel {

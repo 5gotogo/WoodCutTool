@@ -1,15 +1,15 @@
 {
   "/": {
-    "lastmod": "2026-07-07",
-    "hash": "da1a3cb8a33a4f0ce900617660fc848307d5b05a7bbd5b02457139bccad0f465"
+    "lastmod": "2026-07-08",
+    "hash": "38adbb4948779e948ceff7e17955ce0431282b764f584f86a937650f1c5ae07f"
   },
   "/tools/": {
     "lastmod": "2026-07-08",
-    "hash": "bbee9c091eb5176a00d7b2872256f9a8730646b02ff11be637c703beaf949b41"
+    "hash": "7526eab700d4e226dbfddb2dd6f50343676153fbbad125a69c4d92076de6faf2"
   },
   "/learn/": {
-    "lastmod": "2026-07-07",
-    "hash": "fedbdefa1309c551e7935e58227e0aecec51f765beadcd2ca1a5b78f1b8bfcbf"
+    "lastmod": "2026-07-08",
+    "hash": "734d914b686813fec08c00e2f32d9a2c9cdc68f42f06c269a2a06b277e0a8d54"
   },
   "/glossary/": {
     "lastmod": "2026-07-08",
@@ -696,8 +696,8 @@
     "hash": "c9e4b1252bac10448dfa1647f36403cff546af5b8c53e6d15d4c27da62407df1"
   },
   "/blog/address-label-maker-envelope-printing-guide/": {
-    "lastmod": "2026-07-02",
-    "hash": "2723a57bd1f1118efdb9d488e7f6ca95e4363b2a53e4cc4168f474884458831c"
+    "lastmod": "2026-07-08",
+    "hash": "dcae133086f247b2931c12fe618191732067f0b3e7c973e1376201d6d590dbff"
   },
   "/blog/address-label-maker-small-batch-mailing/": {
     "lastmod": "2026-07-02",
@@ -860,8 +860,8 @@
     "hash": "3bf83a1cc595f352a8dfc45278af91b16872983b0733839dd66ecc99cc355c05"
   },
   "/blog/best-pdf-scanner-app-iphone-private-documents/": {
-    "lastmod": "2026-07-02",
-    "hash": "fe51d4cb0f95fe8645cf5de89542ea8b49aac9c652479b2be818a7b27a6e7f28"
+    "lastmod": "2026-07-08",
+    "hash": "7ba4ac17efa4f1b5a61920cbe9a30a7ad0c4a048cbe03bbc48a2c12746a3dc32"
   },
   "/blog/best-pdf-scanner-settings-for-clear-documents/": {
     "lastmod": "2026-07-02",
@@ -3480,8 +3480,8 @@
     "hash": "56690f20ee03197a1eedba0170701a49e457b715e1338b8634cd540315d7ec5b"
   },
   "/compare/": {
-    "lastmod": "2026-07-02",
-    "hash": "927c93440d8f5b130220d82c62c77669a558ae79764c100c95c9fb9d1720fa1a"
+    "lastmod": "2026-07-08",
+    "hash": "c3d9826c1071fe3cd1b3b5c84546c8517e739e54dfe8857b35c232cf2bcd5c47"
   },
   "/compare/baltic-birch-vs-cabinet-grade-plywood/": {
     "lastmod": "2026-07-02",
@@ -3519,13 +3519,29 @@
     "lastmod": "2026-07-02",
     "hash": "0c84fabc5d20547a990145782c458f70310d5d96319ba70b4cfabc7a37cdd82a"
   },
+  "/compare/cutlist-vs-cut-optimizer/": {
+    "lastmod": "2026-07-08",
+    "hash": "8bccedae2f1c13d6895981c31681e8d47e8fcf191033ab6b7969c417416de520"
+  },
+  "/compare/cutlist-vs-cutlist-plus/": {
+    "lastmod": "2026-07-08",
+    "hash": "10cfbca8de9aa14daba0eac38837ba943099134ae61f10c2c719bd9508f868c6"
+  },
   "/compare/cutlist-vs-excel-for-woodworking/": {
     "lastmod": "2026-07-02",
     "hash": "452cab83d43baa26509a7ee64c16182ef93529277415f7ac02c0480dacb260b3"
   },
+  "/compare/cutlist-vs-maxcut/": {
+    "lastmod": "2026-07-08",
+    "hash": "e36dcdd5e6eef24945c6303162218a7b95fcc70e4a423f954ca184c8d38a5f87"
+  },
   "/compare/cutlist-vs-paper-cutting-diagram/": {
     "lastmod": "2026-07-02",
     "hash": "9f9572e37f9a16b6c2bc7daf952913e6d2a119fac634f06846a4d63adf1a9254"
+  },
+  "/compare/cutlist-vs-sketchup/": {
+    "lastmod": "2026-07-08",
+    "hash": "d74e38de8b6b97efde93af85629c9ca8e6c0a36a6292d125cb88fa54fdbd15a4"
   },
   "/compare/drawer-box-dovetail-vs-rabbet/": {
     "lastmod": "2026-07-02",
@@ -3654,6 +3670,14 @@
   "/compare/woodworking-calculator-vs-paper-plans/": {
     "lastmod": "2026-07-02",
     "hash": "dce8c92498aebc6dbf740b1ea76ffcae76b27137b4296b310d018e79371a63e3"
+  },
+  "/conversion/": {
+    "lastmod": "2026-07-08",
+    "hash": "659294b9b8d3b993ff9f481382625c6c649bcd7f3e715fb489566caa4374a86c"
+  },
+  "/cost-estimator/": {
+    "lastmod": "2026-07-08",
+    "hash": "40722b29bf5543db167fa35feaf46fd4ea7be99bd1b1807beded5b486588992c"
   },
   "/drill-bit-finder/": {
     "lastmod": "2026-07-08",
@@ -4472,280 +4496,280 @@
     "hash": "a3bad85dc0378476b2cb3001fba4945383b3234cc8875215d599849d824b1d7a"
   },
   "/learn/actual-lumber-size-vs-nominal-size/": {
-    "lastmod": "2026-07-02",
-    "hash": "20ab6f2ee128f44e07f27efebd6c37a1ce06cd1dfd4dcb9cf42c3410ac05496f"
+    "lastmod": "2026-07-08",
+    "hash": "06d895aab1f750f2baebe2a1da4a1a43e6538f3972c49857f8ba64f8d3aed14e"
   },
   "/learn/backsplash-tile-measuring-guide/": {
-    "lastmod": "2026-07-07",
-    "hash": "e910d1eb8b13a4c8bcd7cf5695ea8eac5aa927938a6145ef9a21d19485ced6a3"
+    "lastmod": "2026-07-08",
+    "hash": "7d29ae20b3c24c2121247d4e60ca85fae5828eb1e1dc874f2c95c1feafcd8580"
   },
   "/learn/bathroom-tile-layout-measurement-guide/": {
-    "lastmod": "2026-07-07",
-    "hash": "282c2167bea04492220e74ae7025a602de137358efa5ed912366efba78c4eea8"
+    "lastmod": "2026-07-08",
+    "hash": "fa38465ca9f282e82415eede6fb59055117da4377fe91a42c6e892e774f26eea"
   },
   "/learn/best-woodworking-calculator-workflow/": {
-    "lastmod": "2026-07-02",
-    "hash": "bf2007f3743026c31d75ddcfad33476fdd8e382d16dfb4beaebcefa752c1014c"
+    "lastmod": "2026-07-08",
+    "hash": "97225a784057e8a412dc4868c58b53fc887f4a3205418733e1d48ee1224b5513"
   },
   "/learn/board-foot-calculator-for-hardwood-buying/": {
-    "lastmod": "2026-07-02",
-    "hash": "91cb8623dc5f6294226b86775ffb911e90ad8d712ab3a2d3549435ceae8d015e"
+    "lastmod": "2026-07-08",
+    "hash": "ede51fad9a5b34f8810c8e275fd6a494c70efeddd5c5f029564e44ece258ecda"
   },
   "/learn/cabinet-box-cut-list-basics/": {
-    "lastmod": "2026-07-02",
-    "hash": "65c8d2734ce498c09111dcec27ba02e7f8b10dc44d2dfa160ca4f645fdf17f5e"
+    "lastmod": "2026-07-08",
+    "hash": "ab8f11e64eb65d603acbc44ca15298c054889610d0404b59d12b3f5bcd28d621"
   },
   "/learn/cabinet-door-cut-list-planning/": {
-    "lastmod": "2026-07-07",
-    "hash": "a76d54e0168e01654f358b6e9f97bac515c887ada6eebfe696a4084659c63294"
+    "lastmod": "2026-07-08",
+    "hash": "91185bb973daf90713a08dd7cd8dae0c9976269e8e50709b63180cfa6a86fed2"
   },
   "/learn/choosing-between-calculator-template-and-app/": {
-    "lastmod": "2026-07-02",
-    "hash": "dfb09e7e213f695c682b94f0df450871d300178033b6733cfa505b3dcb899f16"
+    "lastmod": "2026-07-08",
+    "hash": "801540ef01aaa39b3de77e446b414969c46ee74e3321f79623ceb4e106c666b0"
   },
   "/learn/closet-drawer-tower-material-plan/": {
-    "lastmod": "2026-07-07",
-    "hash": "cafe1f35c4ce91c0ec25f9aafdc1676337e4568b468063fd37ffa118e8956ff2"
+    "lastmod": "2026-07-08",
+    "hash": "b06749bf65c3001b287c97bcc7d7ec1e81843510f429865c8d4fa6df11b29232"
   },
   "/learn/closet-shelving-cut-list-workflow/": {
-    "lastmod": "2026-07-02",
-    "hash": "8296edfe583a1e205915f1d495513f071c75c53a47bedcf0839f8b8a15cb0bbd"
+    "lastmod": "2026-07-08",
+    "hash": "ee6cf70c7bbbb11c692b0ba82da764a47e8896643b2fcdeda8687bba2fb705bc"
   },
   "/learn/cut-list-labeling-system/": {
-    "lastmod": "2026-07-07",
-    "hash": "5f041b230f3bc85ace1ea445813b0f8c4650a79d009776a7223cd694938c2720"
+    "lastmod": "2026-07-08",
+    "hash": "de3e7241a05212a949a79ad41d7483e87ef3a68aad072f2b996c0342be2144c0"
   },
   "/learn/cut-list-optimizer/": {
-    "lastmod": "2026-07-02",
-    "hash": "db0d686fd5ed98efef47db4db73bb395229f77a96f0415489e4ef59899aca87f"
+    "lastmod": "2026-07-08",
+    "hash": "0def8bc71a6ca352aa7a765e645150e8d09e3324d6abba7bd88501658f810b95"
   },
   "/learn/cut-list-planner/": {
-    "lastmod": "2026-07-02",
-    "hash": "09078b0d819535780b3b16427eab4fbb061f009ddb9db01fb87bd6403a68c111"
+    "lastmod": "2026-07-08",
+    "hash": "714a677eaa76376374453450465e5c4d0ba6982db484576d3012efc02736cef3"
   },
   "/learn/cut-list-quality-check-before-buying-material/": {
-    "lastmod": "2026-07-02",
-    "hash": "bb60825a922d7dab32c524c371ae82934f28dc2520626d5c22ba01be204b3807"
+    "lastmod": "2026-07-08",
+    "hash": "ae6f9e4c2b12b3a34a90f1700de89b04cfa52ed757290e3b6d66b213202c7a34"
   },
   "/learn/cut-list-revision-workflow/": {
-    "lastmod": "2026-07-02",
-    "hash": "720a096ecf7c3e28ceadf204b308d6ae090ddc09528488d270cf311c2ae68a1d"
+    "lastmod": "2026-07-08",
+    "hash": "f72248e9335d639582a5b6ba14d4b37beca0c542eba04259689d1e809c2586b0"
   },
   "/learn/cut-list-software/": {
-    "lastmod": "2026-07-02",
-    "hash": "20a8753790ddd77ac53d9674509c5c6eb5daad6f9218cd81c6240c4524ea5984"
+    "lastmod": "2026-07-08",
+    "hash": "7b67cfd2a00ff571e2d31c3d8d2f908ba866cafa0be239ee88e981c5c17ce8f5"
   },
   "/learn/deck-stair-material-estimate/": {
-    "lastmod": "2026-07-02",
-    "hash": "7f5cd6b1a67e978510b88dd4b84c0e7b19d5074ec33ff3359cb7ada6f47bc673"
+    "lastmod": "2026-07-08",
+    "hash": "cb2173c10e396263fc51e10c5cb73d92f58c47a3ed00b824014acc8b9a9b83e4"
   },
   "/learn/diy-wood-project-estimation/": {
-    "lastmod": "2026-07-02",
-    "hash": "3d799ef650f971f71a7bac9a97f2962c90638924b1cddf094a6f1e012ddca17b"
+    "lastmod": "2026-07-08",
+    "hash": "666b13b2ef1d19fb8a6aec247140cd5f7bc9119d3acec1ed0633d2b093c7e6b2"
   },
   "/learn/diy-workshop-planning-guide/": {
-    "lastmod": "2026-07-02",
-    "hash": "34d34645c9629fd60a005acc4a28141ee0f39dc2e9cd305a66e83fd7e70e2143"
+    "lastmod": "2026-07-08",
+    "hash": "171aa58614b6d737f1fb14d7046c94a3cc09041507cd7d8e52939caf3f3f33bb"
   },
   "/learn/drawer-box-cut-list-basics/": {
-    "lastmod": "2026-07-02",
-    "hash": "031185a511f1ec0ba3d27a5994abf6265841035f4531e667d7e7cb4742841b2a"
+    "lastmod": "2026-07-08",
+    "hash": "d8490f49eb9292b8cd3e46fb22da1a4ae4c25a002c3461cd0901500f6290eb2f"
   },
   "/learn/edge-banding-allowance-in-cut-lists/": {
-    "lastmod": "2026-07-02",
-    "hash": "0561b476174a7be45e7c402508a932c67e114868eeb6780085e0acbb8d389a01"
+    "lastmod": "2026-07-08",
+    "hash": "4e022b683fa44cd915f8c82c33362e1bb60a123d81b9fec24da8b990794a990b"
   },
   "/learn/face-frame-material-estimate-guide/": {
-    "lastmod": "2026-07-07",
-    "hash": "637663092b2ff5000941cf2f1bfa28f91096312d5b05d797bbb327b39eef65fd"
+    "lastmod": "2026-07-08",
+    "hash": "31051309830b76fa999f8711c5c0e0d948c330e7681d647089fa7363994b06cd"
   },
   "/learn/field-measurement-checklist-before-cut-list/": {
-    "lastmod": "2026-07-02",
-    "hash": "0cae1a49b1da7c99cf6dc44e2bfbab6e54b7027eec42b29ff74d4f7815e4e9fe"
+    "lastmod": "2026-07-08",
+    "hash": "601b6b8106a7fd253e4aeb19011c82f7e0e125e29704f4e38639d90a73c2c65c"
   },
   "/learn/garage-shelving-material-estimate/": {
-    "lastmod": "2026-07-02",
-    "hash": "54565f7b230c2488524cfd639ed52b0e8ecd4002e126e124aca0679feb33e90a"
+    "lastmod": "2026-07-08",
+    "hash": "0e8aa03695c47a448c62f8fba24e477151a26edfeb9477c271dbdfe539dd7f04"
   },
   "/learn/grain-direction-in-plywood-layouts/": {
-    "lastmod": "2026-07-02",
-    "hash": "58b51b4c443eedde2ad57b9f04de39b173ef960b4181aed4ded91f256ba19e55"
+    "lastmod": "2026-07-08",
+    "hash": "ddc024af4acb27a171b9c6fcd4473139169a488b53f4a10dfe54f79faac79aa9"
   },
   "/learn/how-many-sheets-of-plywood-do-i-need/": {
-    "lastmod": "2026-07-02",
-    "hash": "e53201aaabdd3f6f303b039e59500f8118269a8bef63d31f5af3006b2987c72d"
+    "lastmod": "2026-07-08",
+    "hash": "76a987faac08c676874dc187c3859a3b173ec372f3aa3dfb4e660d6ab642d4f6"
   },
   "/learn/how-to-read-a-cut-list/": {
-    "lastmod": "2026-07-02",
-    "hash": "f8df6e0d723985c1bee651e7f14821b72eea3906966390bd81af51c58cc0861d"
+    "lastmod": "2026-07-08",
+    "hash": "6c21b185da2e240d3e12f67dcc079d81898918e5ca5e68c45641d1417f372e3e"
   },
   "/learn/how-to-reduce-plywood-waste/": {
-    "lastmod": "2026-07-02",
-    "hash": "39e59e9c37594e1fb04e6c04e0f8c2f79fab5b113fa799ccd2f62cf3681f0770"
+    "lastmod": "2026-07-08",
+    "hash": "d91a1e26f602b6498424264dbfb36abc2b6b534d8341fedb2ff89826115aa09c"
   },
   "/learn/kerf-allowance-for-table-saw-and-track-saw/": {
-    "lastmod": "2026-07-02",
-    "hash": "41644faee6e14d6115868b376a79c1a9fa3402ef0e46f775175221e00c2eec42"
+    "lastmod": "2026-07-08",
+    "hash": "123d6118fc7deb379918aff5d776e3f3efe32201583a81e99cf315c155dc599c"
   },
   "/learn/kitchen-cabinet-sheet-count-estimate/": {
-    "lastmod": "2026-07-02",
-    "hash": "ec9ff1d7dbe2c273c21fa31e93885122dc7cb75eb9a4e96a403cd4d73c2fa52b"
+    "lastmod": "2026-07-08",
+    "hash": "507b2a5b0692be06f67275c4eda02569bcac066e3c8aea3f35065214d50ad0d9"
   },
   "/learn/large-format-tile-waste-planning/": {
-    "lastmod": "2026-07-07",
-    "hash": "99ed83d3eb298fb7afb13362e749d3b28e1131f9b0fcd4758014f7139e345a17"
+    "lastmod": "2026-07-08",
+    "hash": "c9a2a475fe3392031a8604ad74b2c6c0cca25e9688760f51e7e30e8c4ef2fef1"
   },
   "/learn/material-estimation-for-carpentry/": {
-    "lastmod": "2026-07-02",
-    "hash": "cde4c068ee2064d03322369cda94f2785247f6a533d89fda276585cb4723c12d"
+    "lastmod": "2026-07-08",
+    "hash": "bdb3e5305b1ba64480845d71727b5e0a08903a1a89910ce4cf2e749c189d9f70"
   },
   "/learn/mdf-cut-list-planning-guide/": {
-    "lastmod": "2026-07-07",
-    "hash": "9e6e6058a1cb9c819e077d2a5287b244a53eb878c3188c905dbe81ea0dcca5be"
+    "lastmod": "2026-07-08",
+    "hash": "360e7de9ea0102be1164678da2a61b5e6c38e05c717ea3c40abe3ecda0ae9ba0"
   },
   "/learn/melamine-cutting-plan-for-clean-edges/": {
-    "lastmod": "2026-07-02",
-    "hash": "b5e28952989e36eae54d055e5d1a76317248ff60cef286b8904475c974e4a5c7"
+    "lastmod": "2026-07-08",
+    "hash": "46fdf9acb3b8ef1539545e96234b64504a8103dc44f91ea86fbfd7c67f23a1de"
   },
   "/learn/multi-room-material-estimate-workflow/": {
-    "lastmod": "2026-07-07",
-    "hash": "648b8c96813ae3ee10796c9bf7a8637350184cc76fad465032802aa18ae2a34f"
+    "lastmod": "2026-07-08",
+    "hash": "26799920ae98f66ca2313598dfad5c31141395b02e5bd6aab691a5f1f2856023"
   },
   "/learn/offcut-storage-system-for-sheet-goods/": {
-    "lastmod": "2026-07-02",
-    "hash": "7b776da9e9b64413494d56302fdbfbc2646d65e2f747befee55514c5020a0f75"
+    "lastmod": "2026-07-08",
+    "hash": "1d7d6a2ab7458538fce9acce922a31829667956f13da8af7ab880b5573dbc9a4"
   },
   "/learn/one-sheet-plywood-project-planning/": {
-    "lastmod": "2026-07-02",
-    "hash": "5174dabc3a3197aeda2d594d4884df51706db3a8efa0391099b2c7df1ee1070c"
+    "lastmod": "2026-07-08",
+    "hash": "1486afa3ac6a38ee98fe6e55034c4d71c9017b56cea86f329665a6e41158629a"
   },
   "/learn/plywood-cut-calculator/": {
-    "lastmod": "2026-07-02",
-    "hash": "bca5106de79a10bf24154a450f3c23f508601f343c2137f50bf8dc53c760b47a"
+    "lastmod": "2026-07-08",
+    "hash": "8726dfab2c0dd08c9d257d02414dafe8a25dbc5b600f908a7047310fa442dc26"
   },
   "/learn/plywood-cut-list-calculator/": {
-    "lastmod": "2026-07-02",
-    "hash": "06389baf3d654878ddc23a7a5d9aafee01562e72532ea4985c37aca18382bb96"
+    "lastmod": "2026-07-08",
+    "hash": "176d0c8a1c7a2371761580b84f4a2c8d684eef75b2d883a2686bc060aa57c21b"
   },
   "/learn/plywood-cut-plan-for-built-ins/": {
-    "lastmod": "2026-07-07",
-    "hash": "45241080160d912c256df70acd43d55b377e6c0c40911470db79a3527fccd2dd"
+    "lastmod": "2026-07-08",
+    "hash": "f138b82c1ebb0239f0bade60320865b1ec9ab787a31f8d13e80bbc904533b408"
   },
   "/learn/plywood-cutting-optimization/": {
-    "lastmod": "2026-07-02",
-    "hash": "fc836e7cdd997f94aba190a6bf2ae2c9eb290de2bdc3dba40b82abd3f11308d7"
+    "lastmod": "2026-07-08",
+    "hash": "399bca137b9db76595b3fb7affd7453ddd0006cfebcfef57f73e0081d8e2a132"
   },
   "/learn/plywood-edge-finishing-planning-guide/": {
-    "lastmod": "2026-07-07",
-    "hash": "6c6244d131495fd0748718624b602eb4b9bf2802c6e7079eca75336a4d74e2ec"
+    "lastmod": "2026-07-08",
+    "hash": "3d4c2f7cd475ab81a5509717f61a71d1f438027f73796469187368ba33f0590b"
   },
   "/learn/plywood-grade-selection-for-cabinets/": {
-    "lastmod": "2026-07-02",
-    "hash": "3e065176533b9ad0368b84d6e6c35d262f1c3b2b41b6932011bb69e9bc8bea16"
+    "lastmod": "2026-07-08",
+    "hash": "cf4477a412c1969179afa21fb8f78682f31cedd0c3b27afd72d957657752ec80"
   },
   "/learn/plywood-offcut-inventory-workflow/": {
-    "lastmod": "2026-07-07",
-    "hash": "7d6dd4963dd135134358b8fbaea034cb67ee464c56d361906d0bdf43fc9f444c"
+    "lastmod": "2026-07-08",
+    "hash": "5f587a8bd2822e9c6576f8fcf729bf7a1c591f6a9026cbe0cd177dba9aa68964"
   },
   "/learn/project-cost-estimate-from-cut-list/": {
-    "lastmod": "2026-07-02",
-    "hash": "42f43eafc7d112852472866682c150bfe741ea5cb7a49d09b32edb29f05fcd61"
+    "lastmod": "2026-07-08",
+    "hash": "9d69e7406074a648ba6d3ad1f0b238d1ef922990cee6d1df2b519cd214d78106"
   },
   "/learn/quilt-backing-binding-batting-estimate/": {
-    "lastmod": "2026-07-02",
-    "hash": "28e2b366f09877f9f662b1a799f0dab9ec9876ef7592b746eeea041caa617109"
+    "lastmod": "2026-07-08",
+    "hash": "561b84ce14ac72499daaf3adf0eaaf17929d3efb71ab728ead9acda7be85a233"
   },
   "/learn/quilt-border-yardage-planning/": {
-    "lastmod": "2026-07-07",
-    "hash": "dd67427b32ecf9c532d77663d39c4142eb2fc551c2887e676d508d2cabdd05a5"
+    "lastmod": "2026-07-08",
+    "hash": "42fb28ddbfbd5bf25e528d10e65d23492cb29ac986ac50798efb67116a1ddb24"
   },
   "/learn/quilt-precut-bundle-planning-guide/": {
-    "lastmod": "2026-07-07",
-    "hash": "936058cc8957d39e395dc796d99a51aa882fad18002df478b33829ff919cde8e"
+    "lastmod": "2026-07-08",
+    "hash": "5f273611f4ddd59d713a9a67dd1cdcb2f0ef3a2f5902b397aa17f87f0e4cc3a6"
   },
   "/learn/quilt-yardage-calculator-inputs/": {
-    "lastmod": "2026-07-02",
-    "hash": "ab35d131203b697d7bbcea8fa7415a9448e6c6849b4c62d875babe3249310c87"
+    "lastmod": "2026-07-08",
+    "hash": "d45e40f87218ec69262b57d43ea5bd711a61e990be63c3194aa1395c3aaf8471"
   },
   "/learn/saw-kerf-explained/": {
-    "lastmod": "2026-07-02",
-    "hash": "50e5eb1fd13ae3c5fcefb04724bc1ad54b0aff443a173d17fe779104f8948fb6"
+    "lastmod": "2026-07-08",
+    "hash": "a754f7b3b0227ae14b62aad02b3a66ab655e87d7893785db3ba0599ebabb8f1b"
   },
   "/learn/sheet-cutting-calculator/": {
-    "lastmod": "2026-07-02",
-    "hash": "378f0c5270d3bf6454f1f006b6d483093dae4fc4edfc178616e042a0844a1777"
+    "lastmod": "2026-07-08",
+    "hash": "ec4cdbe62fdbef5a769241b2e219249b11c8fcb29bba2212426708ab1116d8d2"
   },
   "/learn/sheet-goods-delivery-and-storage-checklist/": {
-    "lastmod": "2026-07-07",
-    "hash": "a9d3501ba3b9bb71f6cd98c51323a660ef370a19745d9b945a2286c96ffd9f4c"
+    "lastmod": "2026-07-08",
+    "hash": "7561c92dd0839529afad6299b943ea2fa4560545ee08cd8558bfedfc116a776e"
   },
   "/learn/sheet-layout-optimization/": {
-    "lastmod": "2026-07-02",
-    "hash": "642b31c6ba8f4a85a352845b159967771a8ae1d72d8b6faf9f099d64ced24bff"
+    "lastmod": "2026-07-08",
+    "hash": "7d21e1fe7fbc2a7af92807851b443dc029ba239c07af5386efefe7c9c45a9fbb"
   },
   "/learn/shelf-span-and-plywood-thickness-guide/": {
-    "lastmod": "2026-07-07",
-    "hash": "1dd5d939b409278c13dc4b4cc98ece7dd86e701ca1a7bc601712a80dcf93c361"
+    "lastmod": "2026-07-08",
+    "hash": "bcd77f8ed90d6cc53e025765d3a19cef2e64b689e0e22794c997e3e6e14b79f5"
   },
   "/learn/stair-headroom-measurement-checklist/": {
-    "lastmod": "2026-07-07",
-    "hash": "2603d706eeceb87b167ba0683a41cb6c6392f7df552248eb0cbe74c16f518dca"
+    "lastmod": "2026-07-08",
+    "hash": "e1314aa1822b8941d02ea47f6c9e3288dcc80155842299ed7eedd004cf23a35e"
   },
   "/learn/stair-landing-material-estimate/": {
-    "lastmod": "2026-07-07",
-    "hash": "d5bff14c384d5cfa5ef9d4ec4efbdca0ba7cf8d9b44ae181c9cccedde0076a94"
+    "lastmod": "2026-07-08",
+    "hash": "14dba03b7180817446eaf575e480259ae1b598e04fcd9bbd5856093a29e58eb0"
   },
   "/learn/stair-rise-run-comfort-guide/": {
-    "lastmod": "2026-07-07",
-    "hash": "6f39e3971a5de0973363228e17c52fe020ea48ef80be5edfeb570c3182e24458"
+    "lastmod": "2026-07-08",
+    "hash": "fd2737ea9cb1e93b06992904baa417d97187b2c36003f8bafe147f3992feb80c"
   },
   "/learn/stair-stringer-calculator-inputs-explained/": {
-    "lastmod": "2026-07-02",
-    "hash": "b62eb1d1e8d4784e1d7d377421007acb2b7e3f48e1b91d347249cccdfad20938"
+    "lastmod": "2026-07-08",
+    "hash": "a63ee8ebd8369a4f2df01b4844be5d30a67ec89c9e096fadd250e4809e604ad6"
   },
   "/learn/table-saw-cut-sequence-planning/": {
-    "lastmod": "2026-07-07",
-    "hash": "a51bd7be4ab2d126b734617bbfdbe25cac3444921842fa2084d84630be936a05"
+    "lastmod": "2026-07-08",
+    "hash": "eb9323565b81c26529dbf943b663845ee4a82345215a5ecbc4c8092dcab7cd30"
   },
   "/learn/tile-calculator-inputs-explained/": {
-    "lastmod": "2026-07-02",
-    "hash": "6aa7d34d148105c9070c2f4cdfc7e7702a13f31a3cf31d321b38d8a1a1e7dbe7"
+    "lastmod": "2026-07-08",
+    "hash": "912fc00a868973df650f8e4c067b1ce3b3c5ffa93b537c3c00098dd3f3de667d"
   },
   "/learn/tile-waste-allowance-guide/": {
-    "lastmod": "2026-07-07",
-    "hash": "a866643661a46c11130c9027d8c3e0d14a821d116d6ecf67bbb173e79cf337c2"
+    "lastmod": "2026-07-08",
+    "hash": "7cd1fba16f06e8459985d1e12a40110583d540f9fb3ed9f8fd1f8723a0f4b63c"
   },
   "/learn/toe-kick-cut-list-planning/": {
-    "lastmod": "2026-07-07",
-    "hash": "8496605bbbe4f0e7eb9d36cbbe2b36f3b98334e1bcf0a360e97c190b701bbec0"
+    "lastmod": "2026-07-08",
+    "hash": "abcc488452418a752316a8c298283bfbd18b44af0452c6f61d0173df65239064"
   },
   "/learn/track-saw-sheet-breakdown-workflow/": {
-    "lastmod": "2026-07-07",
-    "hash": "b15a8e7ad7096c6708327095c00bd76354e831e3acb93523f002b21b8f11dad5"
+    "lastmod": "2026-07-08",
+    "hash": "1c0fac079902ef87205a273c5a76a7a4c433d111f2fbbd4e0dc075c79fd10bce"
   },
   "/learn/wall-cabinet-plywood-layout-guide/": {
-    "lastmod": "2026-07-07",
-    "hash": "fd8944b6b77e013629d5289b646abe24225648e1587d17e41b96664d224aabd5"
+    "lastmod": "2026-07-08",
+    "hash": "60bc58d980a42d1b523da6310f48f586ea409c4ce68235f08f73a7316bb6cd13"
   },
   "/learn/what-is-cut-list-optimization/": {
-    "lastmod": "2026-07-02",
-    "hash": "a33365a504b0549dc78ce49836c8b633629c392970c36d261c0add4b33f687de"
+    "lastmod": "2026-07-08",
+    "hash": "cae92e42df4aeb27b4650487b54d58b52ac866450e6229c8d786e7d5656d75bb"
   },
   "/learn/wood-cut-planner/": {
-    "lastmod": "2026-07-02",
-    "hash": "83f389c572127eeae7a6f76c58cffb652a80284c0baccf4b8823658a73f3eedb"
+    "lastmod": "2026-07-08",
+    "hash": "79e9a5280e42f69257a19fe3a2fd6380244a8eedabcc4c60e85466af9f7e479d"
   },
   "/learn/woodworking-hardware-allowance-guide/": {
-    "lastmod": "2026-07-07",
-    "hash": "0d386a7733f4e610715b72fea030234b896d486d6d562547ceb272cb64368f8c"
+    "lastmod": "2026-07-08",
+    "hash": "c22e3c8c0206ac1a2a18341887795a43c08ada920e894c0e396a20d27c81e5b7"
   },
   "/learn/woodworking-material-calculator/": {
-    "lastmod": "2026-07-02",
-    "hash": "093bda441032fe2165d16cff4dadbc68ebbb3820e9c899e79e4df66bd63d01ee"
+    "lastmod": "2026-07-08",
+    "hash": "595f87aeab535ccfda0f48831f14dc7904732c12fb50df015247e24880fdbe5a"
   },
   "/learn/workbench-material-planning-guide/": {
-    "lastmod": "2026-07-07",
-    "hash": "9b97acff57aa039fe666b4b580f53e8d9e1570b49cef7fbaef96bdc413fb1e25"
+    "lastmod": "2026-07-08",
+    "hash": "7d83f9f10b6ed481e88e82972d0d048eecd81d585f454815f2b0ea820c3be1b2"
   },
   "/legal/cutlist/privacy/": {
     "lastmod": "2026-07-02",
@@ -4772,12 +4796,12 @@
     "hash": "eee81b864e34af794e1cac7aad2dd53b65a88b7943f8f82088def3d140a75774"
   },
   "/legal/ThumbType/privacy/": {
-    "lastmod": "2026-07-04",
-    "hash": "3b791d47b6517bc3bb591f28a9db40be6a34c19db6c69fef544f3b559807b444"
+    "lastmod": "2026-07-08",
+    "hash": "3d2348a8bc06f0a00ae114a735db219bc34b92d2d8b5b0dd02e17e101e1ccc26"
   },
   "/legal/ThumbType/support/": {
-    "lastmod": "2026-07-04",
-    "hash": "843cadf4f68b92622d713a157e88ed408548afe34bee7a805935d05c6cd6e820"
+    "lastmod": "2026-07-08",
+    "hash": "949016bcf5d3f2a31c788669529a0c6825ceeea3d40582ca270327ffd320f7b5"
   },
   "/legal/Tinnitus/privacy/": {
     "lastmod": "2026-07-02",
@@ -4794,6 +4818,10 @@
   "/material-cost-calculator/": {
     "lastmod": "2026-07-08",
     "hash": "b6f93cc31b9fae378d2a6f3209487e7a90f4a411a7f4f67f817b40321a31d915"
+  },
+  "/material-library/": {
+    "lastmod": "2026-07-08",
+    "hash": "6a0fd2bb1ba262596927eac03608b71aae00fd1890450be9f45f083a5327e301"
   },
   "/material-list-generator/": {
     "lastmod": "2026-07-08",
@@ -4843,8 +4871,816 @@
     "lastmod": "2026-07-01",
     "hash": "f9bac4887bc44cd35ee284c1648446f630c26eeb42da712970751b660db1cc79"
   },
+  "/wood-database/": {
+    "lastmod": "2026-07-08",
+    "hash": "a15eff76a99ed0d413c1d1cf8a093b6add446a4588a2a465603170ef9e5f2dcf"
+  },
   "/wood-weight-calculator/": {
     "lastmod": "2026-07-08",
     "hash": "d57d4d47776b6c11c390a24da44bd0a607feebb297e4281cbb4f1da309bc800e"
+  },
+  "/wood/": {
+    "lastmod": "2026-07-08",
+    "hash": "a23f249abd82cc7d2a22bdcd59d1a24c8c0e6bfcbd4a828d8ac8b73b3e0a36e0"
+  },
+  "/wood/acacia/": {
+    "lastmod": "2026-07-08",
+    "hash": "84a31c74debc9ba8a9f291d8561cd428699e7a061c83a1f3d1c7393e64d9fa31"
+  },
+  "/wood/african-mahogany/": {
+    "lastmod": "2026-07-08",
+    "hash": "f45039f85931b28400c18a9ac222e3fc1f2ea765f42006136a0a5dd9dd63fc09"
+  },
+  "/wood/african-padauk/": {
+    "lastmod": "2026-07-08",
+    "hash": "78c39ea6eb1cc894817ad905e6bf829159beae3999d32f90e51afca9507191c1"
+  },
+  "/wood/afromosia/": {
+    "lastmod": "2026-07-08",
+    "hash": "9daa9108d9cbaf20731d84c1300b4b191ce535abc3d5b826bc2f26a93bcb4483"
+  },
+  "/wood/alder/": {
+    "lastmod": "2026-07-08",
+    "hash": "9958f518dc2e93ecfe1cb6bfe339052777783040b6597bc2c93ab150ac6fa7dd"
+  },
+  "/wood/american-beech/": {
+    "lastmod": "2026-07-08",
+    "hash": "cd6440fddb40b81784a4ee28ed34ca9e1681b75ba6e8d31b67ee7807911593f6"
+  },
+  "/wood/american-chestnut/": {
+    "lastmod": "2026-07-08",
+    "hash": "ac9aac0da91d9709819e9e04f13ef21bbed6071b806ec80c746e50cee88deb59"
+  },
+  "/wood/american-elm/": {
+    "lastmod": "2026-07-08",
+    "hash": "503f2b46a0ff772cf358f354dc68f3e8d1ac0ba90f1e851adbadd0c523c9d5c3"
+  },
+  "/wood/american-sycamore/": {
+    "lastmod": "2026-07-08",
+    "hash": "81d59d7b51d15169879e56ca2b6cb9f8884f41f9b3138e3244012b2d81ec5ece"
+  },
+  "/wood/andiroba/": {
+    "lastmod": "2026-07-08",
+    "hash": "98787f316c8cdddad0b305cab69d7f49093ad42bdc6e4809798fd4a2f865cfc8"
+  },
+  "/wood/angelim-pedra/": {
+    "lastmod": "2026-07-08",
+    "hash": "ec75173a9b4f3d31156de62f51e8a7657df2c5c5f75c6d3977a12c349a877fb9"
+  },
+  "/wood/angelim-vermelho/": {
+    "lastmod": "2026-07-08",
+    "hash": "9667c1071f797327713571d55100d523d3ed35e0dbbe73f82d983694af41f320"
+  },
+  "/wood/anigre/": {
+    "lastmod": "2026-07-08",
+    "hash": "383ace42143f2b1a6a6b77ea81a994840aa031f79b04da2e1cef9cfe1828fe3b"
+  },
+  "/wood/apple/": {
+    "lastmod": "2026-07-08",
+    "hash": "15e4128d51b5cfcaf11abd34b7053e9cec555f8e9462503bf2b54eb9b82e70b2"
+  },
+  "/wood/araucaria/": {
+    "lastmod": "2026-07-08",
+    "hash": "de0cdb45dac6ac26370e2fd0d83bec83c65bdd18ad7b73caf954f0eec9e5cd95"
+  },
+  "/wood/aromatic-cedar/": {
+    "lastmod": "2026-07-08",
+    "hash": "952d943a317e7b4ef6515807048468a1ceb69df6ceafd7d69dc937f157ad481a"
+  },
+  "/wood/ash/": {
+    "lastmod": "2026-07-08",
+    "hash": "d2653343362ff95da726cf3e66761bc87df10a9f7b09e62d0b36c937583fb6b3"
+  },
+  "/wood/aspen/": {
+    "lastmod": "2026-07-08",
+    "hash": "224f95ddac50ba0a71bb51ff5e0ea5e6ce3912e5b0c4eee54e3a72b2c3b98606"
+  },
+  "/wood/australian-blackwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "cc7f36b63d6100b312264558fa716a8a465aeca7f3f11c5d15400bafbe9af1bf"
+  },
+  "/wood/avodire/": {
+    "lastmod": "2026-07-08",
+    "hash": "8c2a48e49c7e7f10eb863ffafaf1fb70a9588839755fb42746ac20785a25a668"
+  },
+  "/wood/balau/": {
+    "lastmod": "2026-07-08",
+    "hash": "99fbad706312d43e986225d404c9e9aff23d868b24f5bbad32a37310193d8266"
+  },
+  "/wood/bald-cypress/": {
+    "lastmod": "2026-07-08",
+    "hash": "9f5cfa1be65352d815fd5e39865606abb0747df59735d2f57eedf4930b46a88b"
+  },
+  "/wood/balsa/": {
+    "lastmod": "2026-07-08",
+    "hash": "0289e34feb9ac31aefe6843fe79275bcf0f5531a147e8596ed26c42d300e0493"
+  },
+  "/wood/balsam-fir/": {
+    "lastmod": "2026-07-08",
+    "hash": "839b6913297318f4bad825dcc46b4912168508169e0f28e4c5b1b9fb8f530c66"
+  },
+  "/wood/baltic-birch/": {
+    "lastmod": "2026-07-08",
+    "hash": "b7351312bc467c6a7fcaa2f13b36fff18339dbf22fd8777567f03c140be31f1d"
+  },
+  "/wood/basswood/": {
+    "lastmod": "2026-07-08",
+    "hash": "76f693d10993d79aac8a24128e538f9cc619c3bf51d5e3920f5163394bb7c02c"
+  },
+  "/wood/beech/": {
+    "lastmod": "2026-07-08",
+    "hash": "b49a5f058d0a59e24cdf5491688122ea70ff52e62cdd76687947f9242a6a9b2d"
+  },
+  "/wood/beli/": {
+    "lastmod": "2026-07-08",
+    "hash": "85ef25e25739d854848f68b9bba33db29c78190ad5c530b16960f760587e3561"
+  },
+  "/wood/benge/": {
+    "lastmod": "2026-07-08",
+    "hash": "dd54ab2873767b3da0c31ab9d73a6d1115503ee9678abcf634d7d8445db398da"
+  },
+  "/wood/birch/": {
+    "lastmod": "2026-07-08",
+    "hash": "1d7acf5c9972a7652653abef5f7ad51b6a72f3f9ea625567976b2dc04669a0a7"
+  },
+  "/wood/birdseye-maple/": {
+    "lastmod": "2026-07-08",
+    "hash": "06bcf619bd6b3c41c5ee61b669fc9634a1ff30570f87b7a15658b8385ea2908b"
+  },
+  "/wood/black-acacia/": {
+    "lastmod": "2026-07-08",
+    "hash": "4666ed145c7515f97505f69be6ee22cc2a019a6826a5a88767eca30a3666b9d4"
+  },
+  "/wood/black-ash/": {
+    "lastmod": "2026-07-08",
+    "hash": "f1eb4760c7f571562c2588e23efeeab9a3f66cbb3a18c7a68d8e6c87455036bd"
+  },
+  "/wood/black-cherry/": {
+    "lastmod": "2026-07-08",
+    "hash": "d5f0960fd198a58abef2dd20ec5ca9820a275b6b172f160c6b487ba22697c2d0"
+  },
+  "/wood/black-limba/": {
+    "lastmod": "2026-07-08",
+    "hash": "aa7192825586351fa74aaa381d5af4753a2bd0eb34a9fc900e9e86f4abb1c554"
+  },
+  "/wood/black-locust/": {
+    "lastmod": "2026-07-08",
+    "hash": "df8f885474f76289a6942bd63bb89870a55263a0322b59e0698fef5b7cf9e9e5"
+  },
+  "/wood/black-walnut/": {
+    "lastmod": "2026-07-08",
+    "hash": "2a860eec2ab2bc9a339e4fb08197759fbbd9d531827651229c964c50e971634d"
+  },
+  "/wood/black-willow/": {
+    "lastmod": "2026-07-08",
+    "hash": "5ac424207ba96dae8cfef196bc23a4fc34d2330ee3bfbc5939fd3cad194901ab"
+  },
+  "/wood/blackgum/": {
+    "lastmod": "2026-07-08",
+    "hash": "2120db7cccf1c3e39c4779720684cd33806e0e19600c6288eb11dd59372580cb"
+  },
+  "/wood/bloodwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "98a792c450729ea7349a1d26bdf1b5cfd1f1a10f3f78a30a5c34455d080ca409"
+  },
+  "/wood/bocote/": {
+    "lastmod": "2026-07-08",
+    "hash": "ae500aa5c328658fc220100500661084f566460029cfeaf8ab70482be9f61935"
+  },
+  "/wood/boxwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "1dfa923df9bf1950bea9a99df32ef4fc54ac03cfe28792481083cb68e83adb60"
+  },
+  "/wood/brazilian-rosewood/": {
+    "lastmod": "2026-07-08",
+    "hash": "67e094c6f90320e404ecd2c08ed70be5feae5f3c7604fd97b69536d690d902f9"
+  },
+  "/wood/bubinga/": {
+    "lastmod": "2026-07-08",
+    "hash": "77203fc6f553a44c7e2c8030efed7016d12a41f1f52ce727d625f4470909e5d2"
+  },
+  "/wood/buckeye/": {
+    "lastmod": "2026-07-08",
+    "hash": "4371faab32cbd0692b09c6d9d417e8200f5f06f8e3b591e134ed3cb42e62996f"
+  },
+  "/wood/burmese-teak/": {
+    "lastmod": "2026-07-08",
+    "hash": "ba4a0aae278c556cfea22113486f92fe06c3c652e30c6f4c777055d94e205f3d"
+  },
+  "/wood/butternut/": {
+    "lastmod": "2026-07-08",
+    "hash": "29236635b67d8867cb827ebf2c0361d2a882cf03467e276827ad451c67148c77"
+  },
+  "/wood/camphor/": {
+    "lastmod": "2026-07-08",
+    "hash": "ca4127540d1fa1e9dd7338e1eff43164ca2a5b7f12e56788df68397f32b2277a"
+  },
+  "/wood/canarywood/": {
+    "lastmod": "2026-07-08",
+    "hash": "6c99fabe52b9ec73b4d6f5bf7bdf3c0f6d02d53b6327c8977651a3d43190bf01"
+  },
+  "/wood/catalpa/": {
+    "lastmod": "2026-07-08",
+    "hash": "6261ba615deb2120d97941aaf4b37137f9d9101034a5675e2ef2a9c3c289cc14"
+  },
+  "/wood/cedar-elm/": {
+    "lastmod": "2026-07-08",
+    "hash": "5c7a9089cddb2364e32bc083e49639f1b1b53c15b36f3e000614d31a245a344b"
+  },
+  "/wood/cedar/": {
+    "lastmod": "2026-07-08",
+    "hash": "67b993e84c727d906a147d53f5735b4e3c3e2255a2aa1b6c694d555688692303"
+  },
+  "/wood/chechen/": {
+    "lastmod": "2026-07-08",
+    "hash": "19fe88cb015102a5079b800d2efc58cb0f396938d22aee3856b0cc8453fbb861"
+  },
+  "/wood/cherry/": {
+    "lastmod": "2026-07-08",
+    "hash": "318a841989756a858c64cf80327a711edd809ec067a8c710d529551151cad9da"
+  },
+  "/wood/chestnut/": {
+    "lastmod": "2026-07-08",
+    "hash": "2ec9f32dfe5304dd50b9fd53777dccdd6f3ed9e444990c05ed818be91aff4213"
+  },
+  "/wood/claro-walnut/": {
+    "lastmod": "2026-07-08",
+    "hash": "174f618d4dae92d2b39a088a625c2acecca6698fd73efa70f98e833b2bfd0d7c"
+  },
+  "/wood/cocobolo/": {
+    "lastmod": "2026-07-08",
+    "hash": "c109ca0b71819c094488d52ea36d23dd4cc947559bf587960ab5edc4f196bd5b"
+  },
+  "/wood/cottonwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "1b056b865624b9470ccd49900caa69c53610913339846132e01d893833f9604f"
+  },
+  "/wood/cumaru/": {
+    "lastmod": "2026-07-08",
+    "hash": "8253ddb2da5b92215d0195054144ffb6f7de6506a4b99a54b0ce4256e79295aa"
+  },
+  "/wood/curly-maple/": {
+    "lastmod": "2026-07-08",
+    "hash": "b18f8d0d3380d2ddecf6bef6d4a67563b14a423d9f31a1c34d3aa5fb85865848"
+  },
+  "/wood/cypress/": {
+    "lastmod": "2026-07-08",
+    "hash": "9afd5cf94a52a0e4d7190e8ef1553825e1129beef2ef9b46f2f71f1fb84dbfcc"
+  },
+  "/wood/desert-ironwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "1e1a38a3220adc6eaad87c4d8dd3e5e2dcd79c1c3bacb173539dfe20c3c282ae"
+  },
+  "/wood/dogwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "b49bf682201ad9227c8655742ae622f4a05e587b60b50f6710ccb1285509dc0e"
+  },
+  "/wood/douglas-fir/": {
+    "lastmod": "2026-07-08",
+    "hash": "e6790dd65bdd40564558e382705c5ad0b560f2a77009d8703e3a15e6188f45ad"
+  },
+  "/wood/east-indian-rosewood/": {
+    "lastmod": "2026-07-08",
+    "hash": "ffc8bb1d871b008442a263127ddd3ead3da34aecc4e43d6c930eaa47837882c8"
+  },
+  "/wood/eastern-red-cedar/": {
+    "lastmod": "2026-07-08",
+    "hash": "df9838e1ed829ce364b9615d701b6049a8b913d200bf1e44cabb8fa978f012ef"
+  },
+  "/wood/eastern-white-pine/": {
+    "lastmod": "2026-07-08",
+    "hash": "b14b8212c9cae6b44a46b738458a73802e174458a01be5e84d81215aab264ff6"
+  },
+  "/wood/ebony/": {
+    "lastmod": "2026-07-08",
+    "hash": "2c8e609504fbcbc6fceaca11ebd5eee25373daa344ff2cad73eeb22e9b14bba6"
+  },
+  "/wood/elm/": {
+    "lastmod": "2026-07-08",
+    "hash": "85622d734038b9ace05803cd140592efaf55056400c23a3128ad53da24500c88"
+  },
+  "/wood/engelmann-spruce/": {
+    "lastmod": "2026-07-08",
+    "hash": "4f15ee54963a9765ac6d76fbdd9adb3f1379708d666ca2f840b471d1c8316fe0"
+  },
+  "/wood/english-oak/": {
+    "lastmod": "2026-07-08",
+    "hash": "a3e89b088368c9f1bbfdc10e3dea221d22b930262a84c3cc6cdbb2274c09cc2a"
+  },
+  "/wood/european-beech/": {
+    "lastmod": "2026-07-08",
+    "hash": "7e2ce4aa22f9b868e9bc2002e0054cfbc4b86e9e3536d25c92e3389d3e57c814"
+  },
+  "/wood/european-walnut/": {
+    "lastmod": "2026-07-08",
+    "hash": "2ce0135bc3b7969f9f527838eb6e41236a182fd394506728dae71554ca6c171f"
+  },
+  "/wood/figured-anigre/": {
+    "lastmod": "2026-07-08",
+    "hash": "64d6fa129f83c0073ce764ad78601ffdd127970c8dd8c2754f160418ff80eb57"
+  },
+  "/wood/fir/": {
+    "lastmod": "2026-07-08",
+    "hash": "dc835135db1a50e2887a85dad1c823d40b1c985f99ae43dfd00d43b158cb83ef"
+  },
+  "/wood/gaboon-ebony/": {
+    "lastmod": "2026-07-08",
+    "hash": "2a79439c58d160ed8e7d4f79621fd764d4fdb0d415024343cc0709c989a71655"
+  },
+  "/wood/garapa/": {
+    "lastmod": "2026-07-08",
+    "hash": "5719efe07ee427823b7e9f5ec07c17756e46c185ffe116510dce184d67aa00cb"
+  },
+  "/wood/goncalo-alves/": {
+    "lastmod": "2026-07-08",
+    "hash": "758091979498c73522530d6edfb28b28f7b6aa8179e1ec1e3f5588e7020ef67a"
+  },
+  "/wood/granadillo/": {
+    "lastmod": "2026-07-08",
+    "hash": "796cf9f7291b13f6328c563485cdd204ac3d4f308be389ef38f261cbe70c5c51"
+  },
+  "/wood/greenheart/": {
+    "lastmod": "2026-07-08",
+    "hash": "5045db12182852ffcf7bc211cf72686ef13603fe3e2d978aa1de18fc9425f177"
+  },
+  "/wood/hackberry/": {
+    "lastmod": "2026-07-08",
+    "hash": "e9440f415cd489c4318601afa56fbb0a553192b152f0d6e39276a2908844b0dc"
+  },
+  "/wood/hard-maple/": {
+    "lastmod": "2026-07-08",
+    "hash": "656770842215fff19e014aa17c99bfa2b170873456e3973aeff32fed4c36c5c3"
+  },
+  "/wood/hemlock/": {
+    "lastmod": "2026-07-08",
+    "hash": "4e4bdb099140e0619edaf52bd709d760843498b398b752d09d8cfc69aa797c8d"
+  },
+  "/wood/hickory/": {
+    "lastmod": "2026-07-08",
+    "hash": "c45ea6881e11f5220bae3b84c0cf6ca280ad0e993af8b33127af38d7a28d3e1c"
+  },
+  "/wood/holly/": {
+    "lastmod": "2026-07-08",
+    "hash": "7ea9929767953c1d574ceed296fc3ccfa8d7d066013fcae9ef0ebb710674520a"
+  },
+  "/wood/honduran-mahogany/": {
+    "lastmod": "2026-07-08",
+    "hash": "71e6b3cc0909e9d96fa0170cbe51905323500073915e3034a1b14681ccae0723"
+  },
+  "/wood/honey-locust/": {
+    "lastmod": "2026-07-08",
+    "hash": "ca03fc6656e40669383acd9192efa1f54eaedc683bdac02bce4a40649e26f1fe"
+  },
+  "/wood/hoop-pine/": {
+    "lastmod": "2026-07-08",
+    "hash": "f742382a67122988f8b90ab24fbb3bed5ff7cb26bf3fd198db684b36124bc731"
+  },
+  "/wood/horse-chestnut/": {
+    "lastmod": "2026-07-08",
+    "hash": "979677636f9c6a0e62ce4a728e1831b204dfb1be26aab6983bf3bfb06fd6a5c9"
+  },
+  "/wood/indian-rosewood/": {
+    "lastmod": "2026-07-08",
+    "hash": "bac9b0002c6fee172658011ace82675de0ea444f892b6649f950b53115c8607f"
+  },
+  "/wood/ipe/": {
+    "lastmod": "2026-07-08",
+    "hash": "5beeba68d94ac79f2e5bae048902531e14bb0b673cab05e10f8d4e5e8f488b28"
+  },
+  "/wood/iroko/": {
+    "lastmod": "2026-07-08",
+    "hash": "c93baa62baee6be56c74d6eb5578a8eb264b3cbbbb7e86b177f9a3e3c0e33ad0"
+  },
+  "/wood/jatoba/": {
+    "lastmod": "2026-07-08",
+    "hash": "1abbc53397104897de827391345576cb4765f3101dc6b9d0f9a53a257f2309bf"
+  },
+  "/wood/juniper/": {
+    "lastmod": "2026-07-08",
+    "hash": "f50644320339af801f5cf4f06e213b95779b7252f0a5a2b0de6a4016d68aee90"
+  },
+  "/wood/kapur/": {
+    "lastmod": "2026-07-08",
+    "hash": "963b24f0ed4b9f6621b4909812a6cbf48bff357319a79368fad871370a98b37e"
+  },
+  "/wood/katalox/": {
+    "lastmod": "2026-07-08",
+    "hash": "d8c72c30eab894d53319b531e40cf3c9bdc4552fdbd7a3b180619a294189c316"
+  },
+  "/wood/kauri/": {
+    "lastmod": "2026-07-08",
+    "hash": "f7f7c22c8294cc88d7809eb78b76c95b1fa506474bbe7346d41b29f1f52351c2"
+  },
+  "/wood/keruing/": {
+    "lastmod": "2026-07-08",
+    "hash": "e5c55306c45fbefa4d02f42fa6e9e36db6209e4bf81247dcb6e2fde99a247767"
+  },
+  "/wood/khaya/": {
+    "lastmod": "2026-07-08",
+    "hash": "6fe7f557dd9316c287e7286ee6dfeab1c77fef8638defd8c23031ffb9c0253ad"
+  },
+  "/wood/kingwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "c264a38f5e5dda2fd52bf48f84aa02b91477ab32872fc51fbad9285470d8c40d"
+  },
+  "/wood/koa/": {
+    "lastmod": "2026-07-08",
+    "hash": "dd9205fc4dc8b242f3c9b0788ece881bd3ef970c651db0ba5a6f33afd0b77869"
+  },
+  "/wood/lacewood/": {
+    "lastmod": "2026-07-08",
+    "hash": "f8ff92f39461c5d3c804c0e03221590903b9f3fad1882941aaed92a70001e3eb"
+  },
+  "/wood/larch/": {
+    "lastmod": "2026-07-08",
+    "hash": "d8d2c88cf48deb20cd4df41c0da2f2b65944d5dbfeaaefe6e1ba2ea5c2444336"
+  },
+  "/wood/laurel/": {
+    "lastmod": "2026-07-08",
+    "hash": "75af1b09ebdbf838e74855098b2bb82187980afd9d0adf3be28a68f4bfb61369"
+  },
+  "/wood/leopardwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "a930fc7faacb8a005f47d4bc972934cecdc208c2679b453558089d21bd1d3a32"
+  },
+  "/wood/lignum-vitae/": {
+    "lastmod": "2026-07-08",
+    "hash": "1fe1348bd96883fda83d3c4ff229d6aaa256295e5e04462a038e77e296837409"
+  },
+  "/wood/limba/": {
+    "lastmod": "2026-07-08",
+    "hash": "ef1c054ba5d6f898c333289871d3e2eea303a1b5e045cb67bc4d85f2c047491f"
+  },
+  "/wood/linden/": {
+    "lastmod": "2026-07-08",
+    "hash": "d9b9f145c055685960a2c73c9976a9f904aa4d929f11a24d0d187c71a5b952f1"
+  },
+  "/wood/live-oak/": {
+    "lastmod": "2026-07-08",
+    "hash": "159e496ebea546827cc59983c2381c1a85def7b5a5ddc36bc07f4c1aa56c6780"
+  },
+  "/wood/locust/": {
+    "lastmod": "2026-07-08",
+    "hash": "c53c2b7fbb70fe67b012c9176b70ec3b5891d145ec44e774ae189cf49490711b"
+  },
+  "/wood/lodgepole-pine/": {
+    "lastmod": "2026-07-08",
+    "hash": "1f6681839b6555f9cc5d805df72e23bbb6fbf58c027992f6e0285ef42ee9c07b"
+  },
+  "/wood/london-plane/": {
+    "lastmod": "2026-07-08",
+    "hash": "093a97af394602daa4fd9e94975ec91325f2ab368f6e7f7fa94d694e6b75a634"
+  },
+  "/wood/macassar-ebony/": {
+    "lastmod": "2026-07-08",
+    "hash": "86665e41957ac490dfdaa3bba12e00ade98f467cb2e0ba913b00c6fd09e9d398"
+  },
+  "/wood/mahogany/": {
+    "lastmod": "2026-07-08",
+    "hash": "bde1e19b8a3fcabd01121e9eebbe1afd5617cb208aec1b1ffd332f124968cbcb"
+  },
+  "/wood/mango/": {
+    "lastmod": "2026-07-08",
+    "hash": "bd03138f73f9d7d996c36e36778f50f81bcd3c34ad95054d617f2c41b0b3d8b9"
+  },
+  "/wood/manzanita/": {
+    "lastmod": "2026-07-08",
+    "hash": "fdb03bdf59e065441f2ba71cabb7243e144cc924ca0966a51461951e0b880886"
+  },
+  "/wood/maple/": {
+    "lastmod": "2026-07-08",
+    "hash": "dfba4f88627ad356a4f521ff3c1709195a6bd0e6ae41dd08e8c16c25ae5faeb1"
+  },
+  "/wood/marupa/": {
+    "lastmod": "2026-07-08",
+    "hash": "3d9c2fe2cfe3aa6875d8fac5b619153ff1f71e394aa2fb2b41c101b8e38bed99"
+  },
+  "/wood/massaranduba/": {
+    "lastmod": "2026-07-08",
+    "hash": "9f144a5d6f7223c4b1fe66fc55199b24f8390bbdfed3e18b53156a5769a29a8b"
+  },
+  "/wood/meranti/": {
+    "lastmod": "2026-07-08",
+    "hash": "f05aa6bd1adfe4769b61514fb61eb3d691f83f9b2cdfd188fba0c87ce41b880f"
+  },
+  "/wood/merbau/": {
+    "lastmod": "2026-07-08",
+    "hash": "f7a22a8867f711be36a90a9073fbf06adc8cc3e36cfea24a8af00e6a91dabcb2"
+  },
+  "/wood/mesquite/": {
+    "lastmod": "2026-07-08",
+    "hash": "1d354c7bcb3579715e1e8e4b21fb6000bfdeb7e9bd5abb3993fc021da1c0cf64"
+  },
+  "/wood/monkeypod/": {
+    "lastmod": "2026-07-08",
+    "hash": "a90ab2c6efbd84c91dbcef883db30ef714bc923dcb11664fd6dc4bcab4d60caa"
+  },
+  "/wood/mopane/": {
+    "lastmod": "2026-07-08",
+    "hash": "e90f159fa37942a8417bc527a23a5c380727513b6b0e014ca074d6817cca4f3a"
+  },
+  "/wood/mora-excelsa/": {
+    "lastmod": "2026-07-08",
+    "hash": "e8dbb043d7efb378b141ea3095e48914d0c0a5481b4d44c21285472220c8d965"
+  },
+  "/wood/mora/": {
+    "lastmod": "2026-07-08",
+    "hash": "52290d24dc0b566a50b678b5c1b09e1711964717e6c0796df5209e7c5ac68b5e"
+  },
+  "/wood/morado/": {
+    "lastmod": "2026-07-08",
+    "hash": "cff16d7d1d794206102e38db483f1c0f43fced1bbbfd874df121503450ae5a44"
+  },
+  "/wood/mountain-mahogany/": {
+    "lastmod": "2026-07-08",
+    "hash": "abefa7db27cc24fc78c8e79f4a82a91ae7d728940c915592a440410e9c5f9fd1"
+  },
+  "/wood/movingui/": {
+    "lastmod": "2026-07-08",
+    "hash": "e2c83347f82035df3537e2fa28ea219ade4e8c6453af65b6145d18c418ffb350"
+  },
+  "/wood/mulberry/": {
+    "lastmod": "2026-07-08",
+    "hash": "3bbd46924653553667845555605ad7934053fde99186cf066d0f0cf529416159"
+  },
+  "/wood/mun-ebony/": {
+    "lastmod": "2026-07-08",
+    "hash": "1bcadf9c78ddca702686450271d137097f20ef777c503d3f04455de44b1f1ea2"
+  },
+  "/wood/norway-spruce/": {
+    "lastmod": "2026-07-08",
+    "hash": "96b1f263abf62a6c857b9e5881f0be818e310bf81fb3cc36fb8a2b0b2ff401fd"
+  },
+  "/wood/oak/": {
+    "lastmod": "2026-07-08",
+    "hash": "33835d34af30f5f5cf30dce5b672ee8dc6bd9550ebf13d96a72526b94fe8e11b"
+  },
+  "/wood/olivewood/": {
+    "lastmod": "2026-07-08",
+    "hash": "d6a37e33b188ef43f6f5b0095832c6af9f2a63e640c2aa527e5c1da603257989"
+  },
+  "/wood/osage-orange/": {
+    "lastmod": "2026-07-08",
+    "hash": "507f65b4e1bf7de6f0d6d561c25a1efd57f86a8b0104d6913c0d409d841503d4"
+  },
+  "/wood/osage/": {
+    "lastmod": "2026-07-08",
+    "hash": "58f15d3d4de491d38f992bef4d768125a4b85792f623c598271f033e0011123f"
+  },
+  "/wood/ovangkol/": {
+    "lastmod": "2026-07-08",
+    "hash": "3889bee86d2201b1c47ce3ab260e35d317edb2723f028dcbc0010741a40dfd32"
+  },
+  "/wood/padauk/": {
+    "lastmod": "2026-07-08",
+    "hash": "d4430fca25b00b9ae8277602c617f9ca5bdb09794a8fc2353c9f690f0440eca1"
+  },
+  "/wood/paper-birch/": {
+    "lastmod": "2026-07-08",
+    "hash": "137da52a837c85ce0071e4b05763dbac7e72fb16c5d133b184c09b6d7b1e6a37"
+  },
+  "/wood/pau-ferro/": {
+    "lastmod": "2026-07-08",
+    "hash": "fd17f469720482e37dda25137af8c322a33dae10a67dc0dd87de91a83ce3433b"
+  },
+  "/wood/paulownia/": {
+    "lastmod": "2026-07-08",
+    "hash": "4f56ac891f8f0bec5ff6dfc5becce15a98edc47a061417f0b0c3d04f0b98aed5"
+  },
+  "/wood/pear/": {
+    "lastmod": "2026-07-08",
+    "hash": "6b361f0cd26f4fe0aff81c0ba272f7e0e640d493779a0969691cc486963ce618"
+  },
+  "/wood/pecan/": {
+    "lastmod": "2026-07-08",
+    "hash": "9ba0689750fa412c89e68d25a181880ed758dcf9c870c4070dc336bac13b7ed5"
+  },
+  "/wood/peroba-rosa/": {
+    "lastmod": "2026-07-08",
+    "hash": "62356836c586196ab79f8aff015aeec447a836babc09cb71fcef14ec4b079209"
+  },
+  "/wood/persimmon/": {
+    "lastmod": "2026-07-08",
+    "hash": "0914d0452c273d7d27a369a1897ccce53e7af4fc37fe46de0b3f9ad8efb6cecb"
+  },
+  "/wood/pine/": {
+    "lastmod": "2026-07-08",
+    "hash": "e60371114a2a844ce8b017b0970c3963f88bb89c30f8911bbdde696618fd95b8"
+  },
+  "/wood/plantation-teak/": {
+    "lastmod": "2026-07-08",
+    "hash": "73696778d8e33a96be80040c4bdca279e9d7626d22c43ff861fc6c7ddfe9fdc6"
+  },
+  "/wood/plum/": {
+    "lastmod": "2026-07-08",
+    "hash": "923514905409c13d47e83c64c61380a8e4fd1fa82d6a6fbd641850b9591b87d2"
+  },
+  "/wood/ponderosa-pine/": {
+    "lastmod": "2026-07-08",
+    "hash": "ab4989b090c48874bc1115d4c39b64bc7a914a3da7634b363be133cc8d2ccf31"
+  },
+  "/wood/poplar/": {
+    "lastmod": "2026-07-08",
+    "hash": "2781704b23bac182a51ab98fceff20c18dd69158ad93762dc153b8383856bd80"
+  },
+  "/wood/port-orford-cedar/": {
+    "lastmod": "2026-07-08",
+    "hash": "6952a7c0e9abdc91eae3b73e627517975f9f0ddc04c5e438af5035074c6e5c0f"
+  },
+  "/wood/purpleheart/": {
+    "lastmod": "2026-07-08",
+    "hash": "970552c995a71abc8d163d5678aa0d5e937ba1f7c8fefddc851ba6841f3c2829"
+  },
+  "/wood/quaking-aspen/": {
+    "lastmod": "2026-07-08",
+    "hash": "31ae2e21be89bc52f40f7743c8defdf076013f724b815a8e2274cb96cb8be0b8"
+  },
+  "/wood/radiata-pine/": {
+    "lastmod": "2026-07-08",
+    "hash": "e4945bc8394b98e6418fbe7f41d15c144fc08f1114c77d58b9ce76b001c87fde"
+  },
+  "/wood/red-alder/": {
+    "lastmod": "2026-07-08",
+    "hash": "aa1d22001f258c90aa978250bd9ccc9d1c99140d0d1ebaa8c46412506ee4bfdb"
+  },
+  "/wood/red-elm/": {
+    "lastmod": "2026-07-08",
+    "hash": "889e824e4c7cdf2aaf83a3c38e92c37bb2312cf1637df560e62671c36d41d7be"
+  },
+  "/wood/red-oak/": {
+    "lastmod": "2026-07-08",
+    "hash": "94af18244cb6ce017d4f92daccecc73d99149baa0b75c9f5304c63bb869c6563"
+  },
+  "/wood/redwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "a4e02b07bd8a41965222dea5fdfaf5b08a616755de80fea1423d37cf61373c88"
+  },
+  "/wood/rimu/": {
+    "lastmod": "2026-07-08",
+    "hash": "fcb56021848d4506bae676eb7e93126bab0d1e4a45e4b0d4af0bf7304fa2e517"
+  },
+  "/wood/rosewood/": {
+    "lastmod": "2026-07-08",
+    "hash": "33385dea4cb81f3338e45b7699bb12d2d48e47ba0a6c8afe5e5192b7461d8320"
+  },
+  "/wood/rubberwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "ce664a0d0f14d51615d4e292a9549a200c8df58a30c6190bddfaea355bfe8e54"
+  },
+  "/wood/sapele/": {
+    "lastmod": "2026-07-08",
+    "hash": "6c166a0a26f0264f3280ad8c4e255b83595c095ea1405c21d25c6d0807a31c97"
+  },
+  "/wood/sassafras/": {
+    "lastmod": "2026-07-08",
+    "hash": "e95b4ee8f8167457970a71df678e66ba756252c730dc24896fa0356cfd650efb"
+  },
+  "/wood/satine/": {
+    "lastmod": "2026-07-08",
+    "hash": "25dc39affeef2ca0dae765633588dc08f73c2419d3aa8d0a7544da0c82c64f6e"
+  },
+  "/wood/scots-pine/": {
+    "lastmod": "2026-07-08",
+    "hash": "cafdb60a281881cefb335292a0673344068e05134907da4f403bdfeff9b3e90d"
+  },
+  "/wood/shagbark-hickory/": {
+    "lastmod": "2026-07-08",
+    "hash": "0ac0a6e2f0835b62dd4e274e5c4da54c28be6494f55eb866d9bf1fa9df8be602"
+  },
+  "/wood/shedua/": {
+    "lastmod": "2026-07-08",
+    "hash": "08015c74bf8ea23be62ab65bc0e935f0e3588fc531b869d0e6352b90b3aa16ca"
+  },
+  "/wood/sitka-spruce/": {
+    "lastmod": "2026-07-08",
+    "hash": "9373322d41cf59c787d51799abc6c0e66fdb711cf0cf77ca480a69453c1130b7"
+  },
+  "/wood/soft-maple/": {
+    "lastmod": "2026-07-08",
+    "hash": "c5551a59cf9f705f33601e1b9ec7f909216171d80897226205e2e1f26720136b"
+  },
+  "/wood/sourwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "1afc55aaff98b52f1f66078a34a3c8edcdea4894dc65f7031bf27b56fe3c7f88"
+  },
+  "/wood/southern-yellow-pine/": {
+    "lastmod": "2026-07-08",
+    "hash": "577eb860632b241e87c877f3713c80016c15d1cbfbb3f030ca1aad9110812135"
+  },
+  "/wood/spanish-cedar/": {
+    "lastmod": "2026-07-08",
+    "hash": "70b6ba0534e520c42cf5d71f97ed7b21e240d336d38ad411ddf59b8c4d69a659"
+  },
+  "/wood/spruce/": {
+    "lastmod": "2026-07-08",
+    "hash": "a3ab687c56098882dacf9edde81bbf07d7f73dc35d8b7cc9292b7b126c17e9a4"
+  },
+  "/wood/sucupira/": {
+    "lastmod": "2026-07-08",
+    "hash": "5d549f7741298e41f5159855960a0cb40335a085026f8c0132eda9fc6bd18ef6"
+  },
+  "/wood/sugar-pine/": {
+    "lastmod": "2026-07-08",
+    "hash": "00be1c820c4d7bb771f9986fb295182e1e3004ea6464a5f7c2876bfb797a63af"
+  },
+  "/wood/sweet-birch/": {
+    "lastmod": "2026-07-08",
+    "hash": "3a994c5f4bcab3e46dbddad84feab6320dce3e296f483434cecbe7dc2c3c7c6b"
+  },
+  "/wood/sweetgum/": {
+    "lastmod": "2026-07-08",
+    "hash": "3fbeb02aaeecba191e1ee8a3521fedbeabf31999c520fc7d464477673d9296f2"
+  },
+  "/wood/sycamore/": {
+    "lastmod": "2026-07-08",
+    "hash": "d9db764d435c750597124f658fb7b78a1ae262ba9be5753b95d9f64f56dab9e6"
+  },
+  "/wood/tali/": {
+    "lastmod": "2026-07-08",
+    "hash": "0f3c933c76b70cdf01330cbac76b048804905e4d56dfa2e678f4aba666b1a323"
+  },
+  "/wood/tamarack/": {
+    "lastmod": "2026-07-08",
+    "hash": "52876c5181289033d53f23752ad8641326d073eecc08682278f1961a841f0fb7"
+  },
+  "/wood/teak/": {
+    "lastmod": "2026-07-08",
+    "hash": "479449edeb0e1cf7dfb33bd30682d4ccf470cae745b7ee2a8cb15f22ee2a7d67"
+  },
+  "/wood/tigerwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "906c12d31d9864d099069764acd5ad95a68b1822ec5824e75db5b6cc65609e26"
+  },
+  "/wood/tornillo/": {
+    "lastmod": "2026-07-08",
+    "hash": "caf54db87d12a1eeb18ff2d51a60c1bd21455a818f695d23a255d3adf78773ee"
+  },
+  "/wood/tulip-poplar/": {
+    "lastmod": "2026-07-08",
+    "hash": "fa6170fd2402ed77753c544085b7abff89667350724ebb84f9da54f88321c839"
+  },
+  "/wood/tulipwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "f3ae94a3820a601776723c8bcc4e8976cb789b0759ccc25ca14510d9b48e1a42"
+  },
+  "/wood/tupelo/": {
+    "lastmod": "2026-07-08",
+    "hash": "e7645801f53fdfaac03a8e066d0bac285c501c357395fe1fbc5f26b08da92f5a"
+  },
+  "/wood/utile/": {
+    "lastmod": "2026-07-08",
+    "hash": "7003af2dae51c443405afa769abe7a449462d7c63a8383ad65266eda20e62dbc"
+  },
+  "/wood/walnut/": {
+    "lastmod": "2026-07-08",
+    "hash": "cda6bb8bf9923dc24c5397271defc7bde3a182dd3274401fcef7e4de9561768e"
+  },
+  "/wood/wenge/": {
+    "lastmod": "2026-07-08",
+    "hash": "e36ea541e03474be745ddbc228f99d5016116fff1fb0f503c2b0cf8e7cb59214"
+  },
+  "/wood/western-hemlock/": {
+    "lastmod": "2026-07-08",
+    "hash": "ff2086a72832da54e8e564753961ca72f1371f659d98b8fd95455fac7dfebcbf"
+  },
+  "/wood/western-red-cedar/": {
+    "lastmod": "2026-07-08",
+    "hash": "9ec09d5adfc95bd6e401149fa5f0652ae83aba8b5539d7cde3f6d2320d7c8e8b"
+  },
+  "/wood/white-ash/": {
+    "lastmod": "2026-07-08",
+    "hash": "2f4e208f9b283cf609a2343e9dc20a8a917ba5cea215a3b282444802f02443f2"
+  },
+  "/wood/white-fir/": {
+    "lastmod": "2026-07-08",
+    "hash": "21cdfb481810da1875220e7f1fa9c9d8387840014d2f482b2cb0351a1d72323d"
+  },
+  "/wood/white-oak/": {
+    "lastmod": "2026-07-08",
+    "hash": "9f54f590272a04ad0c953c3baec61468f7c92f2231636927a8d4d783b3a03b69"
+  },
+  "/wood/willow/": {
+    "lastmod": "2026-07-08",
+    "hash": "866b79379b8fd625e03ca1ec9fd53f275568be5b79d68e209921585c6713502d"
+  },
+  "/wood/yellow-birch/": {
+    "lastmod": "2026-07-08",
+    "hash": "575df51acf2825af40bb21fba329c01ba1405969fa6f613b8073846dafbd94ba"
+  },
+  "/wood/yellowheart/": {
+    "lastmod": "2026-07-08",
+    "hash": "dfcf39d5013768bb4b83283d6af0b569dac35ea2309607d15c784aad61336e4e"
+  },
+  "/wood/yew/": {
+    "lastmod": "2026-07-08",
+    "hash": "a183e603f766e41cfaf5b75acde920e74698bbf5bbbf57518c37f44432dd2c70"
+  },
+  "/wood/zebrawood/": {
+    "lastmod": "2026-07-08",
+    "hash": "de78e91cddabc6ad289754a3e56d6892b0b30ef6bf50351c9e54420d2a3ca561"
+  },
+  "/wood/ziricote/": {
+    "lastmod": "2026-07-08",
+    "hash": "bc579175d49bfc6094c130add7fb0453769375f45939151428c3a96cc62fccee"
   }
 }
