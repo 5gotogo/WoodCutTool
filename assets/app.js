@@ -4533,6 +4533,310 @@ function initKerf() {
   });
 }
 
+function initFractionCalculator() {
+  const form = document.getElementById("fraction-form");
+  const result = document.getElementById("fraction-result");
+  if (!form || !result) return;
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const whole = numberValue(form, "whole", 0);
+    const numerator = numberValue(form, "numerator", 0);
+    const denominator = Math.max(1, numberValue(form, "denominator", 16));
+    const decimal = whole + numerator / denominator;
+    const millimeters = decimal * 25.4;
+    const nearest32 = Math.round(decimal * 32) / 32;
+
+    result.innerHTML = `
+      <h2>Fraction estimate</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>${format(decimal, 4)} in</strong><span>Decimal inches</span></div>
+        <div class="metric"><strong>${format(millimeters, 2)} mm</strong><span>Metric</span></div>
+        <div class="metric"><strong>${format(nearest32, 4)} in</strong><span>Nearest 1/32</span></div>
+        <div class="metric"><strong>${format(decimal * 64, 1)}/64</strong><span>64ths</span></div>
+      </div>
+      <p class="notice">Use this as a shop conversion check, then verify against your tape, calipers, or project drawing before cutting.</p>
+      ${appCta()}
+    `;
+    translateElement(result, getActiveLang());
+  });
+}
+
+function initInchMmConverter() {
+  const form = document.getElementById("inch-mm-form");
+  const result = document.getElementById("inch-mm-result");
+  if (!form || !result) return;
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const inches = numberValue(form, "inches", 1);
+    const millimeters = numberValue(form, "millimeters", 25.4);
+    const source = form.elements.source?.value || "inches";
+    const convertedInches = source === "mm" ? millimeters / 25.4 : inches;
+    const convertedMillimeters = source === "mm" ? millimeters : inches * 25.4;
+    const feet = convertedInches / 12;
+
+    result.innerHTML = `
+      <h2>Conversion result</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>${format(convertedInches, 4)} in</strong><span>Inches</span></div>
+        <div class="metric"><strong>${format(convertedMillimeters, 2)} mm</strong><span>Millimeters</span></div>
+        <div class="metric"><strong>${format(feet, 4)} ft</strong><span>Feet</span></div>
+        <div class="metric"><strong>${format(convertedInches * 64, 1)}/64</strong><span>64ths</span></div>
+      </div>
+    `;
+    translateElement(result, getActiveLang());
+  });
+}
+
+function initLumberCalculator() {
+  const form = document.getElementById("lumber-form");
+  const result = document.getElementById("lumber-result");
+  if (!form || !result) return;
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const lengthFeet = numberValue(form, "lengthFeet", 8);
+    const width = numberValue(form, "width", 6);
+    const thickness = numberValue(form, "thickness", 1.5);
+    const qty = Math.max(1, Math.floor(numberValue(form, "qty", 8)));
+    const wastePercent = Math.max(0, numberValue(form, "wastePercent", 10));
+    const price = Math.max(0, numberValue(form, "price", 0));
+    const boardFeet = (thickness * width * lengthFeet * qty) / 12;
+    const buyBoardFeet = boardFeet * (1 + wastePercent / 100);
+    const linearFeet = lengthFeet * qty;
+    const cost = buyBoardFeet * price;
+
+    result.innerHTML = `
+      <h2>Lumber estimate</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>${format(boardFeet)}</strong><span>Net board feet</span></div>
+        <div class="metric"><strong>${format(buyBoardFeet)}</strong><span>Buy with waste</span></div>
+        <div class="metric"><strong>${format(linearFeet)} ft</strong><span>Linear feet</span></div>
+        <div class="metric"><strong>$${format(cost, 2)}</strong><span>Estimated cost</span></div>
+      </div>
+      ${appCta()}
+    `;
+    translateElement(result, getActiveLang());
+  });
+}
+
+function initSheetCalculator() {
+  const form = document.getElementById("sheet-form");
+  const result = document.getElementById("sheet-result");
+  if (!form || !result) return;
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const sheetLength = numberValue(form, "sheetLength", 96);
+    const sheetWidth = numberValue(form, "sheetWidth", 48);
+    const partLength = numberValue(form, "partLength", 30);
+    const partWidth = numberValue(form, "partWidth", 18);
+    const qty = Math.max(1, Math.floor(numberValue(form, "qty", 8)));
+    const wastePercent = Math.max(0, numberValue(form, "wastePercent", 15));
+    const sheetPrice = Math.max(0, numberValue(form, "sheetPrice", 0));
+    const sheetArea = sheetLength * sheetWidth;
+    const partArea = partLength * partWidth * qty;
+    const requiredArea = partArea * (1 + wastePercent / 100);
+    const sheets = sheetArea > 0 ? Math.ceil(requiredArea / sheetArea) : 0;
+    const cost = sheets * sheetPrice;
+    const estimatedWaste = Math.max(0, sheets * sheetArea - partArea);
+
+    result.innerHTML = `
+      <h2>Sheet estimate</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>${sheets}</strong><span>Sheets to buy</span></div>
+        <div class="metric"><strong>${format(partArea / 144)} ft²</strong><span>Net part area</span></div>
+        <div class="metric"><strong>${format(estimatedWaste / 144)} ft²</strong><span>Estimated offcut</span></div>
+        <div class="metric"><strong>$${format(cost, 2)}</strong><span>Sheet cost</span></div>
+      </div>
+      <p class="notice">This is an area estimate. Use the plywood cut calculator when exact part layout, grain direction, and kerf matter.</p>
+      ${appCta()}
+    `;
+    translateElement(result, getActiveLang());
+  });
+}
+
+function initMaterialCostCalculator() {
+  const form = document.getElementById("material-cost-form");
+  const result = document.getElementById("material-cost-result");
+  if (!form || !result) return;
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const material = numberValue(form, "material", 220);
+    const hardware = numberValue(form, "hardware", 45);
+    const finish = numberValue(form, "finish", 30);
+    const wastePercent = Math.max(0, numberValue(form, "wastePercent", 12));
+    const taxPercent = Math.max(0, numberValue(form, "taxPercent", 8));
+    const laborHours = Math.max(0, numberValue(form, "laborHours", 0));
+    const laborRate = Math.max(0, numberValue(form, "laborRate", 0));
+    const subtotal = material + hardware + finish;
+    const waste = material * wastePercent / 100;
+    const labor = laborHours * laborRate;
+    const taxable = subtotal + waste;
+    const tax = taxable * taxPercent / 100;
+    const total = taxable + tax + labor;
+
+    result.innerHTML = `
+      <h2>Project cost estimate</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>$${format(total, 2)}</strong><span>Total estimate</span></div>
+        <div class="metric"><strong>$${format(waste, 2)}</strong><span>Waste allowance</span></div>
+        <div class="metric"><strong>$${format(tax, 2)}</strong><span>Tax</span></div>
+        <div class="metric"><strong>$${format(labor, 2)}</strong><span>Labor</span></div>
+      </div>
+      ${appCta()}
+    `;
+    translateElement(result, getActiveLang());
+  });
+}
+
+function initWoodWeightCalculator() {
+  const form = document.getElementById("wood-weight-form");
+  const result = document.getElementById("wood-weight-result");
+  if (!form || !result) return;
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const length = numberValue(form, "length", 96);
+    const width = numberValue(form, "width", 48);
+    const thickness = numberValue(form, "thickness", 0.75);
+    const qty = Math.max(1, Math.floor(numberValue(form, "qty", 1)));
+    const density = Math.max(1, numberValue(form, "density", 36));
+    const volumeFeet = (length * width * thickness * qty) / 1728;
+    const weight = volumeFeet * density;
+    const weightKg = weight * 0.45359237;
+
+    result.innerHTML = `
+      <h2>Wood weight estimate</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>${format(weight, 1)} lb</strong><span>Total weight</span></div>
+        <div class="metric"><strong>${format(weightKg, 1)} kg</strong><span>Metric weight</span></div>
+        <div class="metric"><strong>${format(volumeFeet, 2)} ft³</strong><span>Volume</span></div>
+        <div class="metric"><strong>${format(weight / qty, 1)} lb</strong><span>Per piece</span></div>
+      </div>
+      <p class="notice">Density varies by species and moisture. Use actual supplier data for load, delivery, or structural decisions.</p>
+    `;
+    translateElement(result, getActiveLang());
+  });
+}
+
+function nearestDrillSize(inches) {
+  const sizes = [
+    ["1/16", 0.0625], ["5/64", 0.078125], ["3/32", 0.09375], ["7/64", 0.109375],
+    ["1/8", 0.125], ["9/64", 0.140625], ["5/32", 0.15625], ["11/64", 0.171875],
+    ["3/16", 0.1875], ["13/64", 0.203125], ["7/32", 0.21875], ["15/64", 0.234375],
+    ["1/4", 0.25], ["17/64", 0.265625], ["9/32", 0.28125], ["5/16", 0.3125],
+    ["11/32", 0.34375], ["3/8", 0.375], ["7/16", 0.4375], ["1/2", 0.5]
+  ];
+  return sizes.reduce((best, size) => (
+    Math.abs(size[1] - inches) < Math.abs(best[1] - inches) ? size : best
+  ), sizes[0]);
+}
+
+function initScrewSizeFinder() {
+  const form = document.getElementById("screw-size-form");
+  const result = document.getElementById("screw-size-result");
+  if (!form || !result) return;
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const materialThickness = Math.max(0.125, numberValue(form, "materialThickness", 0.75));
+    const joint = form.elements.joint?.value || "face";
+    const load = form.elements.load?.value || "medium";
+    const lengthMultiplier = joint === "edge" ? 2.5 : 2;
+    const screwLength = Math.min(4, Math.max(0.5, materialThickness * lengthMultiplier));
+    const gauge = load === "heavy" ? "#10" : load === "light" ? "#6" : "#8";
+    const pilotDiameter = gauge === "#10" ? 0.136 : gauge === "#8" ? 0.116 : 0.093;
+    const pilot = nearestDrillSize(pilotDiameter);
+
+    result.innerHTML = `
+      <h2>Screw recommendation</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>${gauge}</strong><span>Screw gauge</span></div>
+        <div class="metric"><strong>${format(screwLength, 2)} in</strong><span>Length</span></div>
+        <div class="metric"><strong>${pilot[0]} in</strong><span>Pilot bit</span></div>
+        <div class="metric"><strong>${format(pilot[1] * 25.4, 2)} mm</strong><span>Pilot metric</span></div>
+      </div>
+      <p class="notice">Check fastener manufacturer guidance for hardwood, outdoor use, structural loads, and specialty screws.</p>
+    `;
+    translateElement(result, getActiveLang());
+  });
+}
+
+function initDrillBitFinder() {
+  const form = document.getElementById("drill-bit-form");
+  const result = document.getElementById("drill-bit-result");
+  if (!form || !result) return;
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const screwDiameter = Math.max(0.01, numberValue(form, "screwDiameter", 0.164));
+    const material = form.elements.material?.value || "softwood";
+    const ratio = material === "hardwood" ? 0.85 : material === "clearance" ? 1 : 0.7;
+    const target = screwDiameter * ratio;
+    const bit = nearestDrillSize(target);
+
+    result.innerHTML = `
+      <h2>Drill bit match</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>${bit[0]} in</strong><span>Nearest bit</span></div>
+        <div class="metric"><strong>${format(bit[1], 4)} in</strong><span>Bit decimal</span></div>
+        <div class="metric"><strong>${format(bit[1] * 25.4, 2)} mm</strong><span>Bit metric</span></div>
+        <div class="metric"><strong>${format(target, 4)} in</strong><span>Target hole</span></div>
+      </div>
+      <p class="notice">Test on scrap first. Pilot holes depend on screw type, species, moisture, and whether threads should bite or clear.</p>
+    `;
+    translateElement(result, getActiveLang());
+  });
+}
+
+function initMaterialListGenerator() {
+  const form = document.getElementById("material-list-form");
+  const result = document.getElementById("material-list-result");
+  if (!form || !result) return;
+
+  setupRows("material-list-rows", "add-material-list-row", () => `
+    <div class="piece-row four">
+      <label>Item <input name="label" value="Panel"></label>
+      <label>Length (in) <input name="length" type="number" min="0.01" step="0.01" value="24"></label>
+      <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="12"></label>
+      <label>Qty <input name="qty" type="number" min="1" step="1" value="2"></label>
+      <button class="button secondary remove-row" type="button">Remove</button>
+    </div>
+  `);
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const rows = getRows(document.getElementById("material-list-rows"));
+    const wastePercent = Math.max(0, numberValue(form, "wastePercent", 10));
+    const totalArea = rows.reduce((sum, row) => {
+      return sum + Math.max(0, row.length || 0) * Math.max(0, row.width || 0) * Math.max(0, Math.floor(row.qty || 0));
+    }, 0);
+    const buyArea = totalArea * (1 + wastePercent / 100);
+    const sheetArea = 48 * 96;
+    const sheets = Math.ceil(buyArea / sheetArea);
+    const listItems = rows.map((row) => {
+      const label = escapeHtml(row.label || "Item");
+      return `<li>${label}: ${format(row.length)} x ${format(row.width)} in, qty ${Math.max(0, Math.floor(row.qty || 0))}</li>`;
+    }).join("");
+
+    result.innerHTML = `
+      <h2>Material list</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>${rows.length}</strong><span>Line items</span></div>
+        <div class="metric"><strong>${format(totalArea / 144)} ft²</strong><span>Net area</span></div>
+        <div class="metric"><strong>${format(buyArea / 144)} ft²</strong><span>With waste</span></div>
+        <div class="metric"><strong>${sheets}</strong><span>4x8 sheet equivalent</span></div>
+      </div>
+      <ul class="plan-list">${listItems}</ul>
+      ${appCta()}
+    `;
+    translateElement(result, getActiveLang());
+  });
+}
+
 function initWaste() {
   const form = document.getElementById("waste-form");
   const result = document.getElementById("waste-result");
@@ -4814,6 +5118,15 @@ document.addEventListener("DOMContentLoaded", () => {
   initStairs();
   initBoardFoot();
   initKerf();
+  initFractionCalculator();
+  initInchMmConverter();
+  initLumberCalculator();
+  initSheetCalculator();
+  initMaterialCostCalculator();
+  initWoodWeightCalculator();
+  initScrewSizeFinder();
+  initDrillBitFinder();
+  initMaterialListGenerator();
   initWaste();
   initQuiltFit();
   initTileCalculator();

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drill Bit Finder — Pilot Hole Size Calculator</title>
+  <meta name="description" content="Find a nearest fractional drill bit for pilot holes or clearance holes from screw diameter and material type.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/drill-bit-finder/">
+  <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
+  <link rel="stylesheet" href="/assets/styles.css?v=20260701-nav">
+  <script defer src="/assets/app.js?v=20260708-tools"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links"><a href="/cutlist/">CutList</a><a href="/tools/" class="active">Tools</a><a href="/learn/">Learn</a><a href="/blog/">Blogs</a></div><a class="button small nav-download-cta" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList</a></nav></header>
+  <main id="main">
+    <section class="section"><p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Drill Bit Finder</p><p class="eyebrow">Pilot hole helper</p><h1>Drill Bit Finder</h1><p class="lead">Match a screw diameter to a nearby fractional drill bit for pilot holes or clearance holes.</p></section>
+    <section class="section tool-layout">
+      <div class="tool-panel"><form id="drill-bit-form">
+        <fieldset><legend>Hole setup</legend><div class="input-grid two">
+          <label>Screw diameter (in) <input name="screwDiameter" type="number" min="0.01" step="0.001" value="0.164"></label>
+          <label>Material / hole type <select name="material"><option value="softwood">Softwood pilot</option><option value="hardwood">Hardwood pilot</option><option value="clearance">Clearance hole</option></select></label>
+        </div></fieldset>
+        <button class="button" type="submit">Find drill bit</button>
+      </form></div>
+      <aside class="result-panel" id="drill-bit-result" aria-live="polite"><h2>Drill bit result</h2><p class="placeholder">Run the finder to see nearest bit, decimal size, metric size, and target hole.</p></aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><div class="footer-main"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><nav class="footer-links footer-primary" aria-label="Footer navigation"><a href="/tools/">Tools</a><a href="/screw-size-finder/">Screw size finder</a><a href="/inch-mm-converter/">Inch mm converter</a></nav></div><div class="footer-disclaimer"><p><strong>Disclaimer:</strong> Test pilot holes on scrap before drilling project parts.</p></div></div></footer>
+</body>
+</html>

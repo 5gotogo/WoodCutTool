@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Screw Size Finder for Wood Projects</title>
+  <meta name="description" content="Find a practical screw gauge, length, and pilot bit estimate from material thickness, joint type, and load level.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/screw-size-finder/">
+  <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
+  <link rel="stylesheet" href="/assets/styles.css?v=20260701-nav">
+  <script defer src="/assets/app.js?v=20260708-tools"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links"><a href="/cutlist/">CutList</a><a href="/tools/" class="active">Tools</a><a href="/learn/">Learn</a><a href="/blog/">Blogs</a></div><a class="button small nav-download-cta" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList</a></nav></header>
+  <main id="main">
+    <section class="section"><p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Screw Size Finder</p><p class="eyebrow">Fastener helper</p><h1>Screw Size Finder</h1><p class="lead">Estimate a practical screw gauge, length, and pilot bit for everyday woodworking joints.</p></section>
+    <section class="section tool-layout">
+      <div class="tool-panel"><form id="screw-size-form">
+        <fieldset><legend>Joint details</legend><div class="input-grid three">
+          <label>Material thickness (in) <input name="materialThickness" type="number" min="0.125" step="0.01" value="0.75"></label>
+          <label>Joint type <select name="joint"><option value="face">Face joint</option><option value="edge">Edge/end joint</option></select></label>
+          <label>Load <select name="load"><option value="medium">Medium</option><option value="light">Light</option><option value="heavy">Heavy</option></select></label>
+        </div></fieldset>
+        <button class="button" type="submit">Find screw size</button>
+      </form></div>
+      <aside class="result-panel" id="screw-size-result" aria-live="polite"><h2>Screw result</h2><p class="placeholder">Run the finder to see screw gauge, length, and pilot bit estimate.</p></aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><div class="footer-main"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><nav class="footer-links footer-primary" aria-label="Footer navigation"><a href="/tools/">Tools</a><a href="/drill-bit-finder/">Drill bit finder</a><a href="/material-list-generator/">Material list</a></nav></div><div class="footer-disclaimer"><p><strong>Disclaimer:</strong> This is not structural fastening advice. Follow fastener manufacturer guidance and local code where applicable.</p></div></div></footer>
+</body>
+</html>

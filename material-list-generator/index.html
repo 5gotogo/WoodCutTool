@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material List Generator for Woodworking Projects</title>
+  <meta name="description" content="Generate a simple woodworking material list with part dimensions, quantities, area totals, waste allowance, and 4x8 sheet equivalent.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/material-list-generator/">
+  <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
+  <link rel="stylesheet" href="/assets/styles.css?v=20260701-nav">
+  <script defer src="/assets/app.js?v=20260708-tools"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links"><a href="/cutlist/">CutList</a><a href="/tools/" class="active">Tools</a><a href="/learn/">Learn</a><a href="/blog/">Blogs</a></div><a class="button small nav-download-cta" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList</a></nav></header>
+  <main id="main">
+    <section class="section"><p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Material List Generator</p><p class="eyebrow">Project list builder</p><h1>Material List Generator</h1><p class="lead">Build a quick material list from part names, dimensions, quantities, and waste allowance.</p></section>
+    <section class="section tool-layout">
+      <div class="tool-panel"><form id="material-list-form">
+        <fieldset><legend>Parts</legend>
+          <div class="rows" id="material-list-rows">
+            <div class="piece-row four">
+              <label>Item <input name="label" value="Side panel"></label>
+              <label>Length (in) <input name="length" type="number" min="0.01" step="0.01" value="30"></label>
+              <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="18"></label>
+              <label>Qty <input name="qty" type="number" min="1" step="1" value="2"></label>
+              <button class="button secondary remove-row" type="button">Remove</button>
+            </div>
+          </div>
+          <div class="row-actions"><button class="button secondary" id="add-material-list-row" type="button">Add item</button></div>
+        </fieldset>
+        <fieldset><legend>Allowance</legend><div class="input-grid two"><label>Waste allowance (%) <input name="wastePercent" type="number" min="0" step="0.1" value="10"></label></div></fieldset>
+        <button class="button" type="submit">Generate material list</button>
+      </form></div>
+      <aside class="result-panel" id="material-list-result" aria-live="polite"><h2>Material list result</h2><p class="placeholder">Run the generator to see line items, area totals, and 4x8 sheet equivalent.</p></aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><div class="footer-main"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><nav class="footer-links footer-primary" aria-label="Footer navigation"><a href="/tools/">Tools</a><a href="/material-cost-calculator/">Cost calculator</a><a href="/plywood-cut-calculator/">Plywood calculator</a></nav></div><div class="footer-disclaimer"><p><strong>Disclaimer:</strong> Use this list as a planning aid and verify all quantities before buying material.</p></div></div></footer>
+</body>
+</html>

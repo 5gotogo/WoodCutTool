@@ -4,8 +4,8 @@
     "hash": "da1a3cb8a33a4f0ce900617660fc848307d5b05a7bbd5b02457139bccad0f465"
   },
   "/tools/": {
-    "lastmod": "2026-07-07",
-    "hash": "15daf5299944e70e28ca56cf202c0e947ae216d5d51d279cb08072c583aa7ec7"
+    "lastmod": "2026-07-08",
+    "hash": "bbee9c091eb5176a00d7b2872256f9a8730646b02ff11be637c703beaf949b41"
   },
   "/learn/": {
     "lastmod": "2026-07-07",
@@ -3651,9 +3651,21 @@
     "lastmod": "2026-07-02",
     "hash": "dce8c92498aebc6dbf740b1ea76ffcae76b27137b4296b310d018e79371a63e3"
   },
+  "/drill-bit-finder/": {
+    "lastmod": "2026-07-08",
+    "hash": "e2a6286b09da9fd5a3aa7987cc7e50fcfc4129fdaf884230bd0b203b37f7a945"
+  },
+  "/fraction-calculator/": {
+    "lastmod": "2026-07-08",
+    "hash": "870ec4bafbd1549101cd05c0108f3b02749abdafa0f231094a42b0e87a37ab12"
+  },
   "/guides/how-to-cut-plywood-efficiently/": {
     "lastmod": "2026-07-02",
     "hash": "cf5382cd45dbd541942c3892611cb8d6d5ef9f2d00e1a92f7666b81beca0857f"
+  },
+  "/inch-mm-converter/": {
+    "lastmod": "2026-07-08",
+    "hash": "a3bad85dc0378476b2cb3001fba4945383b3234cc8875215d599849d824b1d7a"
   },
   "/learn/actual-lumber-size-vs-nominal-size/": {
     "lastmod": "2026-07-02",
@@ -3971,6 +3983,26 @@
     "lastmod": "2026-07-02",
     "hash": "73861d6792226ccc7cb417026650272bfbf6fb54ae2f661fc9830064a203a7bd"
   },
+  "/lumber-calculator/": {
+    "lastmod": "2026-07-08",
+    "hash": "b977b030bc5266e007865b825d7f33bae97e33df68360f07edd9a611d82d4615"
+  },
+  "/material-cost-calculator/": {
+    "lastmod": "2026-07-08",
+    "hash": "b6f93cc31b9fae378d2a6f3209487e7a90f4a411a7f4f67f817b40321a31d915"
+  },
+  "/material-list-generator/": {
+    "lastmod": "2026-07-08",
+    "hash": "e07baecb26c288b91cecfcab74874f3c76f04c89d7e7e2938868de4c98d33519"
+  },
+  "/screw-size-finder/": {
+    "lastmod": "2026-07-08",
+    "hash": "2f4a5021a1c5d4e596714d99cbc29475398450a6ae97bfe4a9ca9f44451c3157"
+  },
+  "/sheet-calculator/": {
+    "lastmod": "2026-07-08",
+    "hash": "c06086587a6dea8470c42b541680d3a6cee7af313dd69d0dabb76fcba493dc0b"
+  },
   "/templates/": {
     "lastmod": "2026-07-02",
     "hash": "fd32d161ac0feb72aa30e62fd07ba579e56bae757e10b04661b0bfa624c4bcc6"
@@ -4006,5 +4038,9 @@
   "/tinnitus/": {
     "lastmod": "2026-07-01",
     "hash": "f9bac4887bc44cd35ee284c1648446f630c26eeb42da712970751b660db1cc79"
+  },
+  "/wood-weight-calculator/": {
+    "lastmod": "2026-07-08",
+    "hash": "d57d4d47776b6c11c390a24da44bd0a607feebb297e4281cbb4f1da309bc800e"
   }
 }

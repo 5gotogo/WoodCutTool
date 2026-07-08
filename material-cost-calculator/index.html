@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Material Cost Calculator for Woodworking Projects</title>
+  <meta name="description" content="Estimate woodworking material cost with lumber, sheet goods, hardware, finish, waste allowance, tax, and optional labor.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/material-cost-calculator/">
+  <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
+  <link rel="stylesheet" href="/assets/styles.css?v=20260701-nav">
+  <script defer src="/assets/app.js?v=20260708-tools"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links"><a href="/cutlist/">CutList</a><a href="/tools/" class="active">Tools</a><a href="/learn/">Learn</a><a href="/blog/">Blogs</a></div><a class="button small nav-download-cta" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList</a></nav></header>
+  <main id="main">
+    <section class="section"><p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Material Cost Calculator</p><p class="eyebrow">Budget estimator</p><h1>Material Cost Calculator</h1><p class="lead">Estimate a project budget from material, hardware, finish, waste, tax, and optional labor before buying stock.</p></section>
+    <section class="section tool-layout">
+      <div class="tool-panel"><form id="material-cost-form">
+        <fieldset><legend>Direct costs</legend><div class="input-grid three">
+          <label>Wood and sheet goods ($) <input name="material" type="number" min="0" step="0.01" value="220"></label>
+          <label>Hardware ($) <input name="hardware" type="number" min="0" step="0.01" value="45"></label>
+          <label>Finish and supplies ($) <input name="finish" type="number" min="0" step="0.01" value="30"></label>
+        </div></fieldset>
+        <fieldset><legend>Allowances</legend><div class="input-grid four">
+          <label>Waste allowance (%) <input name="wastePercent" type="number" min="0" step="0.1" value="12"></label>
+          <label>Tax (%) <input name="taxPercent" type="number" min="0" step="0.1" value="8"></label>
+          <label>Labor hours <input name="laborHours" type="number" min="0" step="0.1" value="0"></label>
+          <label>Labor rate ($/hr) <input name="laborRate" type="number" min="0" step="0.01" value="0"></label>
+        </div></fieldset>
+        <button class="button" type="submit">Calculate cost</button>
+      </form></div>
+      <aside class="result-panel" id="material-cost-result" aria-live="polite"><h2>Cost result</h2><p class="placeholder">Run the calculator to see total estimate, waste allowance, tax, and labor.</p></aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><div class="footer-main"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><nav class="footer-links footer-primary" aria-label="Footer navigation"><a href="/tools/">Tools</a><a href="/material-list-generator/">Material list</a><a href="/wood-waste-calculator/">Wood waste</a></nav></div><div class="footer-disclaimer"><p><strong>Disclaimer:</strong> Prices and taxes vary. Confirm supplier quotes before purchasing.</p></div></div></footer>
+</body>
+</html>

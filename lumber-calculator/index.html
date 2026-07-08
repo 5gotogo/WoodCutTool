@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumber Calculator — Board Feet, Linear Feet &amp; Cost</title>
+  <meta name="description" content="Estimate lumber board feet, linear feet, waste allowance, and material cost from board dimensions, quantity, and price.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/lumber-calculator/">
+  <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
+  <link rel="stylesheet" href="/assets/styles.css?v=20260701-nav">
+  <script defer src="/assets/app.js?v=20260708-tools"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links"><a href="/cutlist/">CutList</a><a href="/tools/" class="active">Tools</a><a href="/learn/">Learn</a><a href="/blog/">Blogs</a></div><a class="button small nav-download-cta" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList</a></nav></header>
+  <main id="main">
+    <section class="section"><p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Lumber Calculator</p><p class="eyebrow">Lumber estimator</p><h1>Lumber Calculator</h1><p class="lead">Estimate board feet, linear feet, waste allowance, and cost for lumber orders before building a detailed cut list.</p></section>
+    <section class="section tool-layout">
+      <div class="tool-panel"><form id="lumber-form">
+        <fieldset><legend>Lumber dimensions</legend><div class="input-grid four">
+          <label>Length (ft) <input name="lengthFeet" type="number" min="0.01" step="0.01" value="8"></label>
+          <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="6"></label>
+          <label>Thickness (in) <input name="thickness" type="number" min="0.01" step="0.01" value="1.5"></label>
+          <label>Quantity <input name="qty" type="number" min="1" step="1" value="8"></label>
+        </div></fieldset>
+        <fieldset><legend>Buying estimate</legend><div class="input-grid two">
+          <label>Waste allowance (%) <input name="wastePercent" type="number" min="0" step="0.1" value="10"></label>
+          <label>Price per board foot <input name="price" type="number" min="0" step="0.01" value="6.5"></label>
+        </div></fieldset>
+        <button class="button" type="submit">Calculate lumber</button>
+      </form></div>
+      <aside class="result-panel" id="lumber-result" aria-live="polite"><h2>Lumber result</h2><p class="placeholder">Run the calculator to see board feet, linear feet, waste allowance, and cost.</p></aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><div class="footer-main"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><nav class="footer-links footer-primary" aria-label="Footer navigation"><a href="/tools/">Tools</a><a href="/board-foot-calculator/">Board foot calculator</a><a href="/cut-list-calculator/">Cut list calculator</a></nav></div><div class="footer-disclaimer"><p><strong>Disclaimer:</strong> Lumber prices, dimensions, and moisture vary. Confirm with your supplier before buying.</p></div></div></footer>
+</body>
+</html>
