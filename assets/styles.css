@@ -1052,6 +1052,88 @@ h3 {
   font-size: 1.2rem;
 }
 
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 12px 30px rgba(39, 44, 36, 0.06);
+}
+
+.material-library-table {
+  width: 100%;
+  min-width: 880px;
+  border-collapse: collapse;
+}
+
+.material-library-table th,
+.material-library-table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.material-library-table th {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: #fbfaf6;
+}
+
+.material-library-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.material-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.material-library-card {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 12px 30px rgba(39, 44, 36, 0.06);
+}
+
+.material-library-card h2 {
+  margin-top: 0;
+}
+
+.material-library-card dl {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0 0;
+}
+
+.material-library-card dl div {
+  display: grid;
+  gap: 4px;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfaf6;
+}
+
+.material-library-card dt {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.material-library-card dd {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 750;
+}
+
 .proof-grid,
 .roi-flow,
 .compare-grid,
