@@ -1574,6 +1574,67 @@ h3 {
   line-height: 1.42;
 }
 
+.search-intent-section {
+  padding-top: 22px;
+}
+
+.intent-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.intent-card {
+  min-width: 0;
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 12px 28px rgba(39, 44, 36, 0.06);
+}
+
+.intent-card span {
+  color: var(--accent-2);
+  font-size: 12px;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.intent-card h3 {
+  font-size: 1.08rem;
+}
+
+.intent-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.intent-links {
+  display: grid;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.intent-links a {
+  position: relative;
+  display: block;
+  padding-left: 14px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.intent-links a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
 .app-library-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 245px), 1fr));
@@ -6823,6 +6884,14 @@ tr:last-child td {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .intent-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .intent-card:first-child {
+    grid-column: 1 / -1;
+  }
+
   .visual-proof-panel {
     grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
     align-items: center;
@@ -6982,6 +7051,14 @@ tr:last-child td {
     grid-template-columns: 1.18fr repeat(3, minmax(0, 0.94fr));
   }
 
+  .intent-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .intent-card:first-child {
+    grid-column: auto;
+  }
+
   .visual-proof-panel {
     grid-template-columns: minmax(0, 0.8fr) minmax(460px, 1fr) minmax(150px, 0.38fr);
   }
@@ -6993,6 +7070,10 @@ tr:last-child td {
 }
 
 @media (min-width: 1180px) {
+  .intent-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   .nav {
     flex-wrap: nowrap;
     justify-content: flex-start;
