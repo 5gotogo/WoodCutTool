@@ -4692,6 +4692,200 @@ function initMaterialCostCalculator() {
   });
 }
 
+const costEstimatorPresets = {
+  cabinet: {
+    title: "Cabinet cost estimate",
+    unit: "linear ft",
+    size: 20,
+    materialRate: 275,
+    laborRate: 180,
+    fixedCost: 350,
+    wastePercent: 10,
+    contingencyPercent: 12,
+    taxPercent: 8,
+    rangePercent: 15,
+    note: "Cabinet estimates can change quickly with door style, drawer count, hardware, finish, countertops, demolition, and installation access."
+  },
+  deck: {
+    title: "Deck cost estimate",
+    unit: "sq ft",
+    size: 300,
+    materialRate: 18,
+    laborRate: 22,
+    fixedCost: 500,
+    wastePercent: 12,
+    contingencyPercent: 12,
+    taxPercent: 8,
+    rangePercent: 15,
+    note: "Deck estimates should be checked against footing count, railing, stairs, decking material, permits, demolition, and local code requirements."
+  },
+  fence: {
+    title: "Fence cost estimate",
+    unit: "linear ft",
+    size: 160,
+    materialRate: 20,
+    laborRate: 16,
+    fixedCost: 250,
+    wastePercent: 8,
+    contingencyPercent: 10,
+    taxPercent: 8,
+    rangePercent: 15,
+    note: "Fence estimates vary with height, post spacing, gates, terrain, demolition, utility marking, and whether panels or pickets are used."
+  },
+  drywall: {
+    title: "Drywall cost estimate",
+    unit: "sq ft",
+    size: 640,
+    materialRate: 0.8,
+    laborRate: 1.25,
+    fixedCost: 180,
+    wastePercent: 10,
+    contingencyPercent: 10,
+    taxPercent: 8,
+    rangePercent: 15,
+    note: "Drywall estimates should account for ceiling height, board thickness, finish level, corner bead, repairs, texture, access, and cleanup."
+  },
+  tile: {
+    title: "Tile cost estimate",
+    unit: "sq ft",
+    size: 120,
+    materialRate: 5,
+    laborRate: 8,
+    fixedCost: 250,
+    wastePercent: 12,
+    contingencyPercent: 12,
+    taxPercent: 8,
+    rangePercent: 15,
+    note: "Tile estimates depend on tile size, pattern, substrate prep, waterproofing, trim, grout, breakage, and layout complexity."
+  },
+  floor: {
+    title: "Floor cost estimate",
+    unit: "sq ft",
+    size: 500,
+    materialRate: 4.5,
+    laborRate: 3.5,
+    fixedCost: 300,
+    wastePercent: 10,
+    contingencyPercent: 10,
+    taxPercent: 8,
+    rangePercent: 15,
+    note: "Floor estimates vary with flooring type, underlayment, transitions, baseboard work, demolition, subfloor repair, and room shape."
+  }
+};
+
+function initCostEstimator() {
+  const form = document.getElementById("cost-estimator-form");
+  const result = document.getElementById("cost-estimator-result");
+  if (!form || !result) return;
+
+  const sizeLabel = document.getElementById("cost-size-label");
+  const materialLabel = document.getElementById("cost-material-label");
+  const laborLabel = document.getElementById("cost-labor-label");
+  const presetButtons = [...document.querySelectorAll("[data-cost-preset]")];
+
+  const setField = (name, value) => {
+    if (form.elements[name]) form.elements[name].value = value;
+  };
+
+  const applyPreset = (type) => {
+    const preset = costEstimatorPresets[type] || costEstimatorPresets.cabinet;
+    setField("projectType", type);
+    setField("projectSize", preset.size);
+    setField("materialRate", preset.materialRate);
+    setField("laborRate", preset.laborRate);
+    setField("fixedCost", preset.fixedCost);
+    setField("wastePercent", preset.wastePercent);
+    setField("contingencyPercent", preset.contingencyPercent);
+    setField("taxPercent", preset.taxPercent);
+    setField("rangePercent", preset.rangePercent);
+    updateLabels(type);
+  };
+
+  const updateLabels = (type) => {
+    const preset = costEstimatorPresets[type] || costEstimatorPresets.cabinet;
+    if (sizeLabel) sizeLabel.textContent = `Project size (${preset.unit})`;
+    if (materialLabel) materialLabel.textContent = `Material ($/${preset.unit})`;
+    if (laborLabel) laborLabel.textContent = `Labor ($/${preset.unit})`;
+    presetButtons.forEach((button) => {
+      const active = button.dataset.costPreset === type;
+      button.classList.toggle("active", active);
+      if (active) {
+        button.setAttribute("aria-pressed", "true");
+      } else {
+        button.setAttribute("aria-pressed", "false");
+      }
+    });
+  };
+
+  const calculate = () => {
+    const type = form.elements.projectType?.value || "cabinet";
+    const preset = costEstimatorPresets[type] || costEstimatorPresets.cabinet;
+    const projectSize = Math.max(0, numberValue(form, "projectSize", preset.size));
+    const materialRate = Math.max(0, numberValue(form, "materialRate", preset.materialRate));
+    const laborRate = Math.max(0, numberValue(form, "laborRate", preset.laborRate));
+    const fixedCost = Math.max(0, numberValue(form, "fixedCost", preset.fixedCost));
+    const wastePercent = Math.max(0, numberValue(form, "wastePercent", preset.wastePercent));
+    const contingencyPercent = Math.max(0, numberValue(form, "contingencyPercent", preset.contingencyPercent));
+    const taxPercent = Math.max(0, numberValue(form, "taxPercent", preset.taxPercent));
+    const rangePercent = Math.max(0, numberValue(form, "rangePercent", preset.rangePercent));
+
+    const baseMaterial = projectSize * materialRate;
+    const waste = baseMaterial * wastePercent / 100;
+    const materialTotal = baseMaterial + waste;
+    const labor = projectSize * laborRate;
+    const taxable = materialTotal + fixedCost;
+    const tax = taxable * taxPercent / 100;
+    const contingencyBase = materialTotal + labor + fixedCost;
+    const contingency = contingencyBase * contingencyPercent / 100;
+    const total = contingencyBase + tax + contingency;
+    const low = Math.max(0, total * (1 - rangePercent / 100));
+    const high = total * (1 + rangePercent / 100);
+    const unitTotal = projectSize > 0 ? total / projectSize : 0;
+
+    result.innerHTML = `
+      <div class="cost-result-header">
+        <p class="eyebrow">Estimate result</p>
+        <h2>${escapeHtml(preset.title)}</h2>
+      </div>
+      <div class="cost-summary-grid">
+        <div class="cost-summary-card primary"><span>Total estimate</span><strong>$${format(total, 2)}</strong></div>
+        <div class="cost-summary-card"><span>Planning range</span><strong>$${format(low, 2)} - $${format(high, 2)}</strong></div>
+        <div class="cost-summary-card"><span>Material with waste</span><strong>$${format(materialTotal, 2)}</strong></div>
+        <div class="cost-summary-card"><span>Labor estimate</span><strong>$${format(labor, 2)}</strong></div>
+      </div>
+      <dl class="cost-breakdown">
+        <div><dt>${t("Unit cost")}</dt><dd>$${format(unitTotal, 2)} ${t("per")} ${escapeHtml(preset.unit)} ${t("for")} ${format(projectSize)} ${escapeHtml(preset.unit)}</dd></div>
+        <div><dt>${t("Waste allowance")}</dt><dd>$${format(waste, 2)} ${t("on")} $${format(baseMaterial, 2)} ${t("base material")}</dd></div>
+        <div><dt>${t("Fixed costs")}</dt><dd>$${format(fixedCost, 2)} ${t("delivery, setup, permits, small supplies, or minimum charges")}</dd></div>
+        <div><dt>${t("Tax and contingency")}</dt><dd>$${format(tax, 2)} ${t("tax plus")} $${format(contingency, 2)} ${t("contingency")}</dd></div>
+      </dl>
+      <p class="cost-note">${escapeHtml(preset.note)}</p>
+    `;
+    translateElement(result, getActiveLang());
+  };
+
+  form.elements.projectType?.addEventListener("change", () => {
+    applyPreset(form.elements.projectType.value);
+    calculate();
+  });
+
+  presetButtons.forEach((button) => {
+    button.setAttribute("aria-pressed", "false");
+    button.addEventListener("click", () => {
+      applyPreset(button.dataset.costPreset);
+      calculate();
+    });
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    updateLabels(form.elements.projectType?.value || "cabinet");
+    calculate();
+  });
+
+  updateLabels(form.elements.projectType?.value || "cabinet");
+}
+
 function initWoodWeightCalculator() {
   const form = document.getElementById("wood-weight-form");
   const result = document.getElementById("wood-weight-result");
@@ -5123,6 +5317,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initLumberCalculator();
   initSheetCalculator();
   initMaterialCostCalculator();
+  initCostEstimator();
   initWoodWeightCalculator();
   initScrewSizeFinder();
   initDrillBitFinder();
