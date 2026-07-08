@@ -4589,6 +4589,128 @@ function initInchMmConverter() {
   });
 }
 
+function initConversionCalculators() {
+  const fractionForm = document.getElementById("conversion-fraction-form");
+  const fractionResult = document.getElementById("conversion-fraction-result");
+  if (fractionForm && fractionResult) {
+    fractionForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const whole = Math.max(0, numberValue(fractionForm, "whole", 0));
+      const numerator = Math.max(0, numberValue(fractionForm, "numerator", 1));
+      const denominator = Math.max(1, numberValue(fractionForm, "denominator", 8));
+      const decimal = whole + numerator / denominator;
+      const millimeters = decimal * 25.4;
+      const nearest32 = Math.round(decimal * 32) / 32;
+      const nearest64 = Math.round(decimal * 64) / 64;
+
+      fractionResult.innerHTML = `
+        <h2>Fraction conversion</h2>
+        <div class="metric-grid">
+          <div class="metric"><strong>${format(decimal, 5)} in</strong><span>Decimal inches</span></div>
+          <div class="metric"><strong>${format(millimeters, 3)} mm</strong><span>Millimeters</span></div>
+          <div class="metric"><strong>${format(nearest32, 5)} in</strong><span>Nearest 1/32</span></div>
+          <div class="metric"><strong>${format(nearest64, 5)} in</strong><span>Nearest 1/64</span></div>
+        </div>
+      `;
+      translateElement(fractionResult, getActiveLang());
+    });
+  }
+
+  const unitForm = document.getElementById("conversion-unit-form");
+  const unitResult = document.getElementById("conversion-unit-result");
+  if (unitForm && unitResult) {
+    const toInches = (value, unit) => {
+      if (unit === "mm") return value / 25.4;
+      if (unit === "ft") return value * 12;
+      return value;
+    };
+    const fromInches = (value, unit) => {
+      if (unit === "mm") return value * 25.4;
+      if (unit === "ft") return value / 12;
+      return value;
+    };
+    const unitLabel = { mm: "mm", in: "in", ft: "ft" };
+
+    unitForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const value = Math.max(0, numberValue(unitForm, "value", 25.4));
+      const fromUnit = unitForm.elements.fromUnit?.value || "mm";
+      const toUnit = unitForm.elements.toUnit?.value || "in";
+      const inches = toInches(value, fromUnit);
+      const converted = fromInches(inches, toUnit);
+
+      unitResult.innerHTML = `
+        <h2>Unit conversion</h2>
+        <div class="metric-grid">
+          <div class="metric"><strong>${format(converted, 5)} ${unitLabel[toUnit]}</strong><span>Converted value</span></div>
+          <div class="metric"><strong>${format(inches, 5)} in</strong><span>Inches</span></div>
+          <div class="metric"><strong>${format(inches * 25.4, 3)} mm</strong><span>Millimeters</span></div>
+          <div class="metric"><strong>${format(inches / 12, 5)} ft</strong><span>Feet</span></div>
+        </div>
+      `;
+      translateElement(unitResult, getActiveLang());
+    });
+  }
+
+  const angleForm = document.getElementById("angle-calculator-form");
+  const angleResult = document.getElementById("angle-calculator-result");
+  if (angleForm && angleResult) {
+    angleForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const rise = Math.max(0, numberValue(angleForm, "rise", 7));
+      const run = Math.max(0.001, numberValue(angleForm, "run", 10));
+      const angle = Math.atan(rise / run) * 180 / Math.PI;
+      const slope = rise / run * 100;
+      const pitch = rise / run * 12;
+      const diagonal = Math.hypot(rise, run);
+
+      angleResult.innerHTML = `
+        <h2>Angle result</h2>
+        <div class="metric-grid">
+          <div class="metric"><strong>${format(angle, 2)}°</strong><span>Angle</span></div>
+          <div class="metric"><strong>${format(slope, 1)}%</strong><span>Slope</span></div>
+          <div class="metric"><strong>${format(pitch, 2)}:12</strong><span>Pitch</span></div>
+          <div class="metric"><strong>${format(diagonal, 2)}</strong><span>Diagonal length</span></div>
+        </div>
+      `;
+      translateElement(angleResult, getActiveLang());
+    });
+  }
+
+  const riseRunForm = document.getElementById("rise-run-form");
+  const riseRunResult = document.getElementById("rise-run-result");
+  if (riseRunForm && riseRunResult) {
+    riseRunForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const totalRise = Math.max(0.01, numberValue(riseRunForm, "totalRise", 108));
+      const totalRun = Math.max(0.01, numberValue(riseRunForm, "totalRun", 120));
+      const maxRiser = Math.max(1, numberValue(riseRunForm, "maxRiser", 7.75));
+      const targetTread = Math.max(1, numberValue(riseRunForm, "targetTread", 10));
+      const risers = Math.max(1, Math.ceil(totalRise / maxRiser));
+      const treads = Math.max(1, risers - 1);
+      const riserHeight = totalRise / risers;
+      const treadDepth = totalRun / treads;
+      const angle = Math.atan(riserHeight / treadDepth) * 180 / Math.PI;
+      const targetRun = treads * targetTread;
+
+      riseRunResult.innerHTML = `
+        <h2>Rise run result</h2>
+        <div class="metric-grid">
+          <div class="metric"><strong>${risers}</strong><span>Risers</span></div>
+          <div class="metric"><strong>${treads}</strong><span>Treads</span></div>
+          <div class="metric"><strong>${format(riserHeight, 3)} in</strong><span>Riser height</span></div>
+          <div class="metric"><strong>${format(treadDepth, 3)} in</strong><span>Tread depth</span></div>
+        </div>
+        <ul class="plan-list">
+          <li><strong>${t("Stair angle")}</strong>: ${format(angle, 2)}° ${t("based on each riser and tread.")}</li>
+          <li><strong>${t("Target tread check")}</strong>: ${format(targetRun, 2)} ${t("in total run if every tread uses")} ${format(targetTread)} ${t("in.")}</li>
+        </ul>
+      `;
+      translateElement(riseRunResult, getActiveLang());
+    });
+  }
+}
+
 function initLumberCalculator() {
   const form = document.getElementById("lumber-form");
   const result = document.getElementById("lumber-result");
@@ -5314,6 +5436,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initKerf();
   initFractionCalculator();
   initInchMmConverter();
+  initConversionCalculators();
   initLumberCalculator();
   initSheetCalculator();
   initMaterialCostCalculator();
