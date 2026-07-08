@@ -11,6 +11,10 @@
     "lastmod": "2026-07-07",
     "hash": "fedbdefa1309c551e7935e58227e0aecec51f765beadcd2ca1a5b78f1b8bfcbf"
   },
+  "/glossary/": {
+    "lastmod": "2026-07-08",
+    "hash": "93eb5d91467f02ac226e00f21ff1fe957ef0a5c963045293a0ca914796e76b09"
+  },
   "/apps/": {
     "lastmod": "2026-07-02",
     "hash": "9f1d98c7ced4fb604d15cade2b8cd1110f80d1562685be15887fb050f94aaad4"
@@ -3658,6 +3662,806 @@
   "/fraction-calculator/": {
     "lastmod": "2026-07-08",
     "hash": "870ec4bafbd1549101cd05c0108f3b02749abdafa0f231094a42b0e87a37ab12"
+  },
+  "/glossary/4x8-sheet/": {
+    "lastmod": "2026-07-08",
+    "hash": "1450452b109b8194bdede7cb7da601a096c051113873b31d432dc6050c54cd48"
+  },
+  "/glossary/actual-size/": {
+    "lastmod": "2026-07-08",
+    "hash": "f4477ad46c206fc42bfe46c06793ebff70db62b13150b394cbdef68c48e86583"
+  },
+  "/glossary/actual-thickness/": {
+    "lastmod": "2026-07-08",
+    "hash": "6ea34b4f39cf5e996a68ef3f9d7efbf32d352d6c90c167e03a958137d5f05526"
+  },
+  "/glossary/adjustable-shelf/": {
+    "lastmod": "2026-07-08",
+    "hash": "2d769afd08ed818635dded6d68387a0fa754c20423251d06b4c250648c25c4f4"
+  },
+  "/glossary/back-panel/": {
+    "lastmod": "2026-07-08",
+    "hash": "5064d3e49f751ddc3e6a7e7e3e9a8edb3b9b2db3fb79b59a13bb59c2c4989166"
+  },
+  "/glossary/baltic-birch/": {
+    "lastmod": "2026-07-08",
+    "hash": "97e237939cdf028bdea4d7d688a0d87fdfc445307e1b280367e237f27c2d4cef"
+  },
+  "/glossary/base-cabinet/": {
+    "lastmod": "2026-07-08",
+    "hash": "c10553aa4ae379ca7244c4fb3f86b86bb9b45394d4410ff732365f3043ed8eab"
+  },
+  "/glossary/batch-cutting/": {
+    "lastmod": "2026-07-08",
+    "hash": "18310217b97ad6d2dbd9a87f1209c7e484eb3090ecad7d37b38f4386a299e875"
+  },
+  "/glossary/bevel-cut/": {
+    "lastmod": "2026-07-08",
+    "hash": "35f2cc62e94ffa7360c06e1f76118807a0c8a26b563db141c868e592be2950a0"
+  },
+  "/glossary/bevel-gauge/": {
+    "lastmod": "2026-07-08",
+    "hash": "afd8da853a649eacb0edd91430d82693dc78e9924529ee22b5060ab188efd70e"
+  },
+  "/glossary/biscuit-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "13a3557cf9234494a4cbdd9c36cb55e9eb6ec1729e0297f545639e05032c7d83"
+  },
+  "/glossary/blade-kerf/": {
+    "lastmod": "2026-07-08",
+    "hash": "36b22c9e1c72fddb004a63a332f8ce8d39d64e7c489a1d25ec0ac03c170cd554"
+  },
+  "/glossary/board-foot/": {
+    "lastmod": "2026-07-08",
+    "hash": "034069e58fc3965aec231c9727405687264d04cbcecd4b80791137df33aa32aa"
+  },
+  "/glossary/bowing/": {
+    "lastmod": "2026-07-08",
+    "hash": "42590ced27163c599c58791eb258ac81c30e22f15329ac723e17d5511f135b24"
+  },
+  "/glossary/box-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "7eb0cd33510b3c818f47055c4b7d897cf1364ddd92abc857ee9aa607a1660444"
+  },
+  "/glossary/brad-nail/": {
+    "lastmod": "2026-07-08",
+    "hash": "b1e25d844ba5370b971da476405889c75cc9e9e6d96403cecabdfab5e25472b8"
+  },
+  "/glossary/bridle-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "72fd8f078dc16715f3a6bd2a0d1275b1d380a9e36ad4cf9142fff7fc2e592579"
+  },
+  "/glossary/butt-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "fc32866ed015da783ae3aa3576e079d77250079c1d27a739ed77f366b4238544"
+  },
+  "/glossary/cabinet-bottom/": {
+    "lastmod": "2026-07-08",
+    "hash": "daf889732dd289b4284df3d4758336cd30cba4d342e02c97f48af9ae33348919"
+  },
+  "/glossary/cabinet-carcass/": {
+    "lastmod": "2026-07-08",
+    "hash": "0b933f89063e0ee00ff67783af89982db98101a73f55f38335e9d66976d92d74"
+  },
+  "/glossary/cabinet-grade-plywood/": {
+    "lastmod": "2026-07-08",
+    "hash": "0715b77586991b786848ce7c1ff1ad32efb418f2716c41768e692caef9002f24"
+  },
+  "/glossary/cabinet-side/": {
+    "lastmod": "2026-07-08",
+    "hash": "11eabb6c024c222f083f00a9c1b2e22ad40092e518b6e21ed1837dbde5512c2e"
+  },
+  "/glossary/cabinet-top/": {
+    "lastmod": "2026-07-08",
+    "hash": "f31f3e363a042dec0a66d7d4d8d345671591ddfb621ec533aba5e3eb8d5d7f1b"
+  },
+  "/glossary/calipers/": {
+    "lastmod": "2026-07-08",
+    "hash": "720d93be5e95a96ab44d175d6eb5c129604e509d30cd4d635a4aeea9949ff872"
+  },
+  "/glossary/cauls/": {
+    "lastmod": "2026-07-08",
+    "hash": "1a69ed2228957a0c6e353bd37a83010d505925e22a219e13d5d64b2210121101"
+  },
+  "/glossary/center-panel/": {
+    "lastmod": "2026-07-08",
+    "hash": "9be69e06d6895208544424b996042de7fe1d2dfd96a6a2e9cb06ffa2493b4470"
+  },
+  "/glossary/centerline/": {
+    "lastmod": "2026-07-08",
+    "hash": "bfd54ae9e48c4dd67513aa171ac8e208b93f71369cd1da6dc74c1d92a8c9e36a"
+  },
+  "/glossary/chalk-line/": {
+    "lastmod": "2026-07-08",
+    "hash": "ac6a93a4b82a1148511a076ab8bc96d7fbc2bd66493f76963b3adf0028a774bf"
+  },
+  "/glossary/chamfer/": {
+    "lastmod": "2026-07-08",
+    "hash": "f48b616f1c5d23985425c8a645e043b12dacca33d657c680e5fbcd000e598169"
+  },
+  "/glossary/chipout/": {
+    "lastmod": "2026-07-08",
+    "hash": "8426b532c676f338fe5d19184199836f1d7d00db0ec98728d5875d47081963c4"
+  },
+  "/glossary/circular-saw/": {
+    "lastmod": "2026-07-08",
+    "hash": "8873d1bfe2d60cc474802900c2ed309382aab29fb7fd2f9b9c023e6b10e62d04"
+  },
+  "/glossary/clamping-pressure/": {
+    "lastmod": "2026-07-08",
+    "hash": "eb75ac30b16a3c90f8afaef09fb77ab3c3abd4f51ebc1e8cf1b52e2302436a87"
+  },
+  "/glossary/cleat/": {
+    "lastmod": "2026-07-08",
+    "hash": "f0ac68e70a8a53ccecd1f514aa3bc75db438dd6dc5feaf444d2be16298708324"
+  },
+  "/glossary/combination-square/": {
+    "lastmod": "2026-07-08",
+    "hash": "ce3789a58b48e843ca7cec8eeb7d7d7643cc10dda4cc172c43168ff3fce898d4"
+  },
+  "/glossary/common-board/": {
+    "lastmod": "2026-07-08",
+    "hash": "70769b53b6a8a86d3d7d6adeb5bb02dabfc17ac9d028354aeac8518797eb508c"
+  },
+  "/glossary/confirmat-screw/": {
+    "lastmod": "2026-07-08",
+    "hash": "a7396ba3d54adb887b51fa0835d43e79a9e7f95b53073336c1887939adbf2e03"
+  },
+  "/glossary/core-voids/": {
+    "lastmod": "2026-07-08",
+    "hash": "93f53d37fb692a5bda2ddf7554db564f2172237add2154e9b6e640bac03e7753"
+  },
+  "/glossary/countersink/": {
+    "lastmod": "2026-07-08",
+    "hash": "a832ee40a6587dfaeb5a493d9a92481b12b89964a9a932651b69d4888d56002b"
+  },
+  "/glossary/crook/": {
+    "lastmod": "2026-07-08",
+    "hash": "085270dbea87be5e9f9a732cc3f8343a1298d8b6e8eb9749f038c0e84a6ad7c1"
+  },
+  "/glossary/cross-cut/": {
+    "lastmod": "2026-07-08",
+    "hash": "ef1d95857b7b74d5b21a2b6c451d9f3adce87aa9ae7ad55bd3a5d56c25e83727"
+  },
+  "/glossary/crown/": {
+    "lastmod": "2026-07-08",
+    "hash": "73f900b073473ad4cc067cc549fc499db703c58217de4736dce4d03627da083e"
+  },
+  "/glossary/cupping/": {
+    "lastmod": "2026-07-08",
+    "hash": "7fa82322b72cddb74ab55cbea67cc5fc124e599f18f1f078a1951110bc28a3e6"
+  },
+  "/glossary/cut-diagram/": {
+    "lastmod": "2026-07-08",
+    "hash": "598e7907fdef32ef75dc116fa14c72d0d426e225d40a6aca1e9407ad2d3e620c"
+  },
+  "/glossary/cut-list/": {
+    "lastmod": "2026-07-08",
+    "hash": "1a72d502c97b548a9d3d52552ad1e4314878640371894b2838d3c92f232e2c10"
+  },
+  "/glossary/cut-sequence/": {
+    "lastmod": "2026-07-08",
+    "hash": "658e283b3091e7391c74cd88f86f57ef97b9269bc97f47f2a6484c33472dffc9"
+  },
+  "/glossary/dado-cut/": {
+    "lastmod": "2026-07-08",
+    "hash": "4f318f3018f95bd0e61e29660f14003a067f299aacb791987eb0b62d7334aad3"
+  },
+  "/glossary/dado-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "70dc3a4dc40ad355e429cd3021b07dbfb4a84f317b26ddb2df4307a3f5f972b0"
+  },
+  "/glossary/danish-oil/": {
+    "lastmod": "2026-07-08",
+    "hash": "2ce98f06ac6edff18bc64ae25cf39d4c8ece311c09f8c5cebf39b1e1218872c2"
+  },
+  "/glossary/diagonal-check/": {
+    "lastmod": "2026-07-08",
+    "hash": "3f3470b48f6847479abd656e200d4e1180045938d4d509b3586faeb5d4547a7d"
+  },
+  "/glossary/dimensional-lumber/": {
+    "lastmod": "2026-07-08",
+    "hash": "b60a4a0e8e90ba9e41291233ef40668146d1baa3554e505097099fb62e738947"
+  },
+  "/glossary/domino-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "2c96a2193919da168aba81673499c83d32939dd0b009a7e402b9ea528bbcae8d"
+  },
+  "/glossary/door-rail/": {
+    "lastmod": "2026-07-08",
+    "hash": "4b1f9298f83317aa63e21c56f25333b9f87daa4961c874ded54e26501ee060d0"
+  },
+  "/glossary/door-stile/": {
+    "lastmod": "2026-07-08",
+    "hash": "47b8ecbaad932a874976d26292a5db10a66f928337db208c72d7d3759b86f41e"
+  },
+  "/glossary/dovetail/": {
+    "lastmod": "2026-07-08",
+    "hash": "75fd9cfe6c1c8ac134eafe58db0b08f499f932ff97cd7429cf23a778539b6b6c"
+  },
+  "/glossary/dowels/": {
+    "lastmod": "2026-07-08",
+    "hash": "7e8e577fd91d38261c5d13f3a89f8f5146541e4d6124dfaae3fc80b6e9cdd2c8"
+  },
+  "/glossary/drawer-bottom/": {
+    "lastmod": "2026-07-08",
+    "hash": "b8072074ccf9e9815737264db8cb8ed41a95150dded65fa44eb346b92153874d"
+  },
+  "/glossary/drawer-box/": {
+    "lastmod": "2026-07-08",
+    "hash": "c805fca642f1591b310a63aa57bb13e0dcbb7843f94168f56a8b648024eac0f1"
+  },
+  "/glossary/drawer-front/": {
+    "lastmod": "2026-07-08",
+    "hash": "4c41a1c07053e262884655379284350c520f62c0839e31328a97882e7748401b"
+  },
+  "/glossary/drawer-side/": {
+    "lastmod": "2026-07-08",
+    "hash": "e704e16d18350fba67802cefac4733160ac1e75dfa5a3b8a60ef311be9bd3e7f"
+  },
+  "/glossary/drawer-slide/": {
+    "lastmod": "2026-07-08",
+    "hash": "cfc92332461f58d3d4ab4de1452e53838be90342ee769711e52014840dcfa8aa"
+  },
+  "/glossary/dry-fit/": {
+    "lastmod": "2026-07-08",
+    "hash": "56dbbc488815fa31659f208bf07a4d29039331a74490f462c82b67dbcf20ac8c"
+  },
+  "/glossary/dye/": {
+    "lastmod": "2026-07-08",
+    "hash": "ca42ebfebfe91689b2d9d51707fb9612814641adbd1bb9a9fd091263ec79a412"
+  },
+  "/glossary/edge-banding/": {
+    "lastmod": "2026-07-08",
+    "hash": "a4f9f836ae8b597a4a72f6d5d74a1f4da9271bfaf2dbe60024795cbef6f6a646"
+  },
+  "/glossary/edge-glue-up/": {
+    "lastmod": "2026-07-08",
+    "hash": "e1e1053122792db09554f969f4dd5eb3472b925a99a9a33305260ce2eeaa22b3"
+  },
+  "/glossary/edge-grain/": {
+    "lastmod": "2026-07-08",
+    "hash": "35f75d003629b7400f31d223009ceea4b55182a2680231dd0927ec933dfb98d3"
+  },
+  "/glossary/end-grain/": {
+    "lastmod": "2026-07-08",
+    "hash": "8d53e15ad59d7ab70594869037edf90606739e7b72d73bb7553652a6d6b433b4"
+  },
+  "/glossary/end-panel/": {
+    "lastmod": "2026-07-08",
+    "hash": "25f6853e90d0d6a36235c1769944c1bd59e86b39a81883e88d6a32cdad549c43"
+  },
+  "/glossary/euro-hinge/": {
+    "lastmod": "2026-07-08",
+    "hash": "0fafb2ee2506b15afe2b3bf10ad0c78eb9f792637fae389a80b3c9b212efc234"
+  },
+  "/glossary/face-frame/": {
+    "lastmod": "2026-07-08",
+    "hash": "1acc61a5cd2b76728abd1406d4f3a8d9a0154abaaa0cc96c63c1a10bd2abcbb9"
+  },
+  "/glossary/face-grain/": {
+    "lastmod": "2026-07-08",
+    "hash": "c156d477b5abdbf0fc5b30eeaf86a902237d4ffdd6b13846dffca1bbfb81748d"
+  },
+  "/glossary/face-veneer/": {
+    "lastmod": "2026-07-08",
+    "hash": "11c215594e7b2a0be7c81a835cc5e8556b3bdedb81909c08994a584d461e7955"
+  },
+  "/glossary/featherboard/": {
+    "lastmod": "2026-07-08",
+    "hash": "1c56d63bc971753a01e46c6bdb7af005a3a70b274d231061cf631881c1528509"
+  },
+  "/glossary/fence/": {
+    "lastmod": "2026-07-08",
+    "hash": "434d7dec06196a5dcd5bca11b09850bca99888dfae8c8b292025656002daef53"
+  },
+  "/glossary/filler-strip/": {
+    "lastmod": "2026-07-08",
+    "hash": "073ba3bd7759fee03008d2cc00381bd96bcb4839b521de7c27f3bd71dfb863ba"
+  },
+  "/glossary/final-cut/": {
+    "lastmod": "2026-07-08",
+    "hash": "33488e81012b36b6ab3b6c7e215bc2364f793d3c7bc5c152ff0c30d49c95804f"
+  },
+  "/glossary/finger-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "ec2b0b5f5a30fd9ac12540ae312121cdc1d9f28c013f9ba79e6eaa96b4671a7c"
+  },
+  "/glossary/finished-face/": {
+    "lastmod": "2026-07-08",
+    "hash": "328a0a521929129a7b3faea03ead3b170423d08778cd0d424befb44aaa21eac7"
+  },
+  "/glossary/fixed-orientation/": {
+    "lastmod": "2026-07-08",
+    "hash": "b10edcab2250596ece2a15e0a4b79334034a601b413116d83c509f0594646411"
+  },
+  "/glossary/fixed-shelf/": {
+    "lastmod": "2026-07-08",
+    "hash": "b9b97673ae245930ac6984f4fb3c4f1848bb57a31d05fef7f849373a5749d9a3"
+  },
+  "/glossary/floating-tenon/": {
+    "lastmod": "2026-07-08",
+    "hash": "2a2f77d4df800fd60cf05b152a890f69c062b02a6acaf38a6ac502c3527dd113"
+  },
+  "/glossary/flush-trim-bit/": {
+    "lastmod": "2026-07-08",
+    "hash": "65154eb756445c2a0723c2da9597cfc6634ed1098328760919037bbfd97aac18"
+  },
+  "/glossary/frameless-cabinet/": {
+    "lastmod": "2026-07-08",
+    "hash": "ce4500af5cdd2edf552cc186842966eb1cf65d5089daf9ab40e06297ac46c479"
+  },
+  "/glossary/framing-square/": {
+    "lastmod": "2026-07-08",
+    "hash": "e69fb676b4fe5005d191deb6aafdf40fd21248a6c5e89801080a55d951b7e97f"
+  },
+  "/glossary/full-extension-slide/": {
+    "lastmod": "2026-07-08",
+    "hash": "b7f18eff436b93e717ce5512a86b6abd28a7981b6dff1291756977acea7e2655"
+  },
+  "/glossary/glue-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "cae57569f6294561458f3488772899ce49f7462572d80660dcba7869be00c6e0"
+  },
+  "/glossary/grain-direction/": {
+    "lastmod": "2026-07-08",
+    "hash": "ad65fe6652c139d30e0a6c41ba0a82b8e576205860139e1b238d7f46005bc148"
+  },
+  "/glossary/groove-cut/": {
+    "lastmod": "2026-07-08",
+    "hash": "f43831c1c3dce0e319ce33de6205c19dcb9d6cfde0a4ecfe91ed1b4ec55fc5e0"
+  },
+  "/glossary/groove-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "315dffe1a4e80703c83fcfb32433b87bd0f26517c5eeb14a871a4d30db52a41d"
+  },
+  "/glossary/half-lap/": {
+    "lastmod": "2026-07-08",
+    "hash": "ab296ab46169109047c914c334fa1f3dd5b89c04e233d338b5f10ffb0a730df8"
+  },
+  "/glossary/hand-sanding/": {
+    "lastmod": "2026-07-08",
+    "hash": "df345594f0bec90b64f917a847693ac07f14c2a5a5a07a620899838b834703cf"
+  },
+  "/glossary/hardboard/": {
+    "lastmod": "2026-07-08",
+    "hash": "050e8fb10c16ecca29628b5520087b878cdd1d5b3f6e9b79a4d985d114dfd476"
+  },
+  "/glossary/hardwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "fd3f519db02310ce44562154b05f59ebfc78669ef3de7b234877997f9ab37809"
+  },
+  "/glossary/hinge-cup/": {
+    "lastmod": "2026-07-08",
+    "hash": "30565f0c9d0c12f4d51fc1a1e51ed335a9d4fa351853863b22b451bfdeff79bf"
+  },
+  "/glossary/inset-door/": {
+    "lastmod": "2026-07-08",
+    "hash": "7630a355c56b16934371cfe151551b51e17d76f8ab7888cd3dce4293e7f4c7fb"
+  },
+  "/glossary/iron-on-edge-banding/": {
+    "lastmod": "2026-07-08",
+    "hash": "f5802e85b122feb62f6722239101e663fddf63a7beb30e3e4f012d3407f54fea"
+  },
+  "/glossary/jig/": {
+    "lastmod": "2026-07-08",
+    "hash": "980b589a79e58059fd632025482308b7bc7b3f60eeac03ac245471915becdb71"
+  },
+  "/glossary/kerf-allowance/": {
+    "lastmod": "2026-07-08",
+    "hash": "0531b5b5de1863fca2657b90918bb9d761241f2ca6bc1eda2c117b9afa6fd7a7"
+  },
+  "/glossary/kerf/": {
+    "lastmod": "2026-07-08",
+    "hash": "245373235efce528351b4a54273c5c3e9154b785d38812ff1cfad3beb23aad7f"
+  },
+  "/glossary/lacquer/": {
+    "lastmod": "2026-07-08",
+    "hash": "039c5371ed42f1ff82d65bc6031c65d9eba432aef39bd097ba76c7aa9ed4f159"
+  },
+  "/glossary/lap-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "97add28f23ceeb692e00af407b6190e1b5834c1390a4e9bd09042f7aa8e3846f"
+  },
+  "/glossary/layout-line/": {
+    "lastmod": "2026-07-08",
+    "hash": "967f1569b72803e63cdcbc32ca2fe82609172de53b0c146aea72f50ac646a87e"
+  },
+  "/glossary/level/": {
+    "lastmod": "2026-07-08",
+    "hash": "f956e07f934efcc08307e3aed029a5eaa8587d7210a2c8cefac5c415ba13d1a6"
+  },
+  "/glossary/linear-foot/": {
+    "lastmod": "2026-07-08",
+    "hash": "bf0d3abf75ac2f4fe393cecbee2e476d149463b39c5cae32e3824d1dcc75abef"
+  },
+  "/glossary/loose-tenon/": {
+    "lastmod": "2026-07-08",
+    "hash": "7b17e0ace3e17b38096c8068ccc389dd15b0f3cdb551c7b8b5f0ab5d8d504f12"
+  },
+  "/glossary/lumber/": {
+    "lastmod": "2026-07-08",
+    "hash": "c9708e0c5959a2da0a35184992cf634291939b742f7031a1ea922554cb9ddb5a"
+  },
+  "/glossary/marine-plywood/": {
+    "lastmod": "2026-07-08",
+    "hash": "98680826a8dcf959ea02753b91aa7bcf9e0210421eb86d6495f6d885d294bfb2"
+  },
+  "/glossary/marking-knife/": {
+    "lastmod": "2026-07-08",
+    "hash": "dd627cccdfedf713d7fb71349092e54abeb4f7d7a210804ba88d5cacff485fd2"
+  },
+  "/glossary/mdf-core/": {
+    "lastmod": "2026-07-08",
+    "hash": "1e9f7055aae5855677fb0fcd2a7ef214fc6bf0dc317a6cd026e55ef3265dc1d2"
+  },
+  "/glossary/mdf/": {
+    "lastmod": "2026-07-08",
+    "hash": "43fd8007f844f76ed2efa642a0b10268244be25d0c17c150cce1cdff54bf8fc5"
+  },
+  "/glossary/melamine/": {
+    "lastmod": "2026-07-08",
+    "hash": "a5a7379160ef0ff3b16c5920c0427cfa04760a8b9501c5110c0309763582e85b"
+  },
+  "/glossary/miter-cut/": {
+    "lastmod": "2026-07-08",
+    "hash": "ab9c5d5c825197bf76aed19dabf716ac2a7ac3e321bbd8e312a0deaf75cf5295"
+  },
+  "/glossary/miter-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "fc39121661431f9b074078ce21283c842f5f1e7dd1ecdaddcbafa6bd93d0ce4d"
+  },
+  "/glossary/mockup/": {
+    "lastmod": "2026-07-08",
+    "hash": "df2d0663d3360d7d30fbae6d28aa8f7dfd91acd55e8eafb236d3009f049536bd"
+  },
+  "/glossary/moisture-content/": {
+    "lastmod": "2026-07-08",
+    "hash": "af73e20d4800559113c82e8eae240ab93baf15d5fc6d2c0f51e4e62491c68e3e"
+  },
+  "/glossary/mortise-and-tenon/": {
+    "lastmod": "2026-07-08",
+    "hash": "77e5f12557898dbf415f52051885cc18cc12f3125b2bf3b8cfb02a62d9c2b669"
+  },
+  "/glossary/nailer/": {
+    "lastmod": "2026-07-08",
+    "hash": "fae84e332efe68024a7c28df2d4218cefe6b003336651fa779eb107436c86a9d"
+  },
+  "/glossary/nest-layout/": {
+    "lastmod": "2026-07-08",
+    "hash": "dbebaaad4598e7a81687549f529d5c526602159b8f47dd990b230e2b14b26b73"
+  },
+  "/glossary/nominal-size/": {
+    "lastmod": "2026-07-08",
+    "hash": "ba57138943f584d55dd9631b8ee23be1c29c217e3fd7683a67997f5ff46e0ac1"
+  },
+  "/glossary/nominal-thickness/": {
+    "lastmod": "2026-07-08",
+    "hash": "a0171fee81bef9715af779321091f08d7bc96b83ad8b3ff12c8240f13ecc084e"
+  },
+  "/glossary/offcut/": {
+    "lastmod": "2026-07-08",
+    "hash": "b56c2aa4d742e5a0e1259460683812cd25a88c9acde10425ae5eff0a44ab07c4"
+  },
+  "/glossary/oil-based-finish/": {
+    "lastmod": "2026-07-08",
+    "hash": "b3a3ab7d031938644cd3fd0930a0843756dae8a03f15e5b5a398ef65510d4911"
+  },
+  "/glossary/orbital-sander/": {
+    "lastmod": "2026-07-08",
+    "hash": "42a5193bae8f7e048cf57b96701c823f0326b3aad617ac581b2366f957738682"
+  },
+  "/glossary/osb/": {
+    "lastmod": "2026-07-08",
+    "hash": "ece2a70bb096c0b6880926a7f3b8ae8139caa5bd7827b9e9eda50eeba1d7f666"
+  },
+  "/glossary/out-of-square/": {
+    "lastmod": "2026-07-08",
+    "hash": "b7b1bbb0b5076faf80978d0d09c5dc2a0bd955ff805052a8e864f3b3e47d76a5"
+  },
+  "/glossary/overlay-door/": {
+    "lastmod": "2026-07-08",
+    "hash": "c3712119a43333a607ad2b843835bb2fb93f27b9f77136a15e36b84cb73aa77c"
+  },
+  "/glossary/oversize-allowance/": {
+    "lastmod": "2026-07-08",
+    "hash": "256c32b3c2421e755d98085571cc44978c94be84fd58e68043d19b77534ad724"
+  },
+  "/glossary/panel-glue-up/": {
+    "lastmod": "2026-07-08",
+    "hash": "b13d73c4adc3d5bb0f3f32603ab1950eeec92114d4449d6a8938b0326b349b9a"
+  },
+  "/glossary/panel-saw/": {
+    "lastmod": "2026-07-08",
+    "hash": "a97f50a4e9c1c56c9700ce4cbaf60ed165a5db28650c77756d6aab079e57d7b0"
+  },
+  "/glossary/part-rotation/": {
+    "lastmod": "2026-07-08",
+    "hash": "73b2ff5f53f19af6ea2f568cb84aa167da67fc4caf841e959c24412001bcecd1"
+  },
+  "/glossary/particle-board/": {
+    "lastmod": "2026-07-08",
+    "hash": "4a21859f0d6a02b408e6a58dbaebbf9019614e7a74f2c9dd7208fa109726e27b"
+  },
+  "/glossary/particle-core/": {
+    "lastmod": "2026-07-08",
+    "hash": "2a913894e684690b9ccfa54cb928a9613e7281a649c94a5ea495a485bfa9fb30"
+  },
+  "/glossary/pencil-line/": {
+    "lastmod": "2026-07-08",
+    "hash": "b596942a21a8c058dd48128d8020b848a176c948c60fd3e301dcf2bc640956ab"
+  },
+  "/glossary/pilot-hole/": {
+    "lastmod": "2026-07-08",
+    "hash": "93437153917231c75d9b77cb62044a525326a05e23bda1528982ecc720eb3e1c"
+  },
+  "/glossary/plumb/": {
+    "lastmod": "2026-07-08",
+    "hash": "0631d1501bf785698ded7577acd218b308587f713a84fb1f0929a0bbec26ba24"
+  },
+  "/glossary/plunge-cut/": {
+    "lastmod": "2026-07-08",
+    "hash": "a610332f95b1676d8ecdcdda0140c6bc04207444bf2de776af8a9adeee148da3"
+  },
+  "/glossary/plywood-grade/": {
+    "lastmod": "2026-07-08",
+    "hash": "118c6626abacf6c68463ccfd20e55ca37589ca2d5c6eb76913372357da66ec49"
+  },
+  "/glossary/plywood/": {
+    "lastmod": "2026-07-08",
+    "hash": "f03b7cfbc67aca283bb1eae7dab2325a3867661074534b55153c4c98bb53fdb6"
+  },
+  "/glossary/pocket-hole/": {
+    "lastmod": "2026-07-08",
+    "hash": "09f84d198d7e7cfccfe295db212d8c5a499c472ad3daca1ed896b0b486047d10"
+  },
+  "/glossary/pocket-screw/": {
+    "lastmod": "2026-07-08",
+    "hash": "073d381e181feb20fc71f3f0f515310969e056d9e317e6f089b70dda7be6c665"
+  },
+  "/glossary/polyurethane/": {
+    "lastmod": "2026-07-08",
+    "hash": "7e41e35f0232adc96d718e1f1a9c336741171f9f8e4728ba08b7d3178102f7c1"
+  },
+  "/glossary/pre-stain-conditioner/": {
+    "lastmod": "2026-07-08",
+    "hash": "49c61d10294e3c99b8b506fa0dee470291d6031ed95f67543631a79b00c6b78f"
+  },
+  "/glossary/prefinished-plywood/": {
+    "lastmod": "2026-07-08",
+    "hash": "33016c92e8eee06c8bd6ca998a5c63416da3d86079ac3d0388d4744db6452b00"
+  },
+  "/glossary/push-stick/": {
+    "lastmod": "2026-07-08",
+    "hash": "857dc5a0c0f703c3dab68dd4379f3732fd3a5b33c77542a76c7ff72fd7fd3ed5"
+  },
+  "/glossary/rabbet-cut/": {
+    "lastmod": "2026-07-08",
+    "hash": "5b081b146fcaf0430a3add502111c1f061a465279d17ec579d713e499fd76805"
+  },
+  "/glossary/rabbet-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "8e08198ad443229ac46fa4bde5f1ef4192928ce052414b89de14a358e4992448"
+  },
+  "/glossary/reference-edge/": {
+    "lastmod": "2026-07-08",
+    "hash": "ae1a12a62daf2202248a615d31dc62eed402e198bbb1494fd70f00e8153f6e2a"
+  },
+  "/glossary/reference-face/": {
+    "lastmod": "2026-07-08",
+    "hash": "40f008e1c13935053b19de632488e0ca73a349428ad9a6ecf878ab31b1389b98"
+  },
+  "/glossary/relief-cut/": {
+    "lastmod": "2026-07-08",
+    "hash": "e4339a632fbfc1d4836db684fbb7b58bd060cae0d5b2e119325ae41ee6212a62"
+  },
+  "/glossary/reveal/": {
+    "lastmod": "2026-07-08",
+    "hash": "402ed1fc45fd865ad24bd6941dba1afee79f6537eda2886c47045a47e83cb76c"
+  },
+  "/glossary/rip-cut/": {
+    "lastmod": "2026-07-08",
+    "hash": "47f92872e045df12928382a275633c4bee307726613c5962913af3bd3fc711fc"
+  },
+  "/glossary/rough-cut/": {
+    "lastmod": "2026-07-08",
+    "hash": "abbd0319bf3bfb24772b215791d6a80713a70083c62fffc20b7b77a0f60349ba"
+  },
+  "/glossary/rough-lumber/": {
+    "lastmod": "2026-07-08",
+    "hash": "681a80bea1752dd4cdf7644f9fb806fa97c875d68fdce41ee646833c2014d893"
+  },
+  "/glossary/roundover-bit/": {
+    "lastmod": "2026-07-08",
+    "hash": "fd983a7f0247130d7a458eab0f1a2e71b3991c5462a8ced0d6f2cee2c6f740d0"
+  },
+  "/glossary/s4s-lumber/": {
+    "lastmod": "2026-07-08",
+    "hash": "19a0c73aa165b4919f9ceedcfa6ae4f98eaf803f026e6c6b9361cb0707e5854e"
+  },
+  "/glossary/sanding-grit/": {
+    "lastmod": "2026-07-08",
+    "hash": "b1335385a505745610e8e0c6f812b706915ef2d80d89fe8c6b377c9cb72a70ce"
+  },
+  "/glossary/scarf-joint/": {
+    "lastmod": "2026-07-08",
+    "hash": "114995c8a6bce6016a6318fe23603a32f8ebd15b55fe6d3c8eba7927bfe053d9"
+  },
+  "/glossary/scrap/": {
+    "lastmod": "2026-07-08",
+    "hash": "0b250da46c744b8721c5710a4cf3f59f3cedf60026d2ad8b5336dcb4d8aed115"
+  },
+  "/glossary/screw-clearance-hole/": {
+    "lastmod": "2026-07-08",
+    "hash": "706e5f8bee538e3009df74e74e313f375629524d383bd60d1baf5048e9486900"
+  },
+  "/glossary/scribe-line/": {
+    "lastmod": "2026-07-08",
+    "hash": "6bbee865362ff6fd35927fc75ae37a70f8261a1a2ad9a2f53dea6cc6ca9ab5ca"
+  },
+  "/glossary/scribe-strip/": {
+    "lastmod": "2026-07-08",
+    "hash": "ae3234112a40563001d6a4fef37608e559747dcfd4b95916b447a6ad68f4a4be"
+  },
+  "/glossary/sheet-layout/": {
+    "lastmod": "2026-07-08",
+    "hash": "66ba163aaba2f3f560bc0147886e87f3859580c4e78d4eb9b64bca211d27d216"
+  },
+  "/glossary/sheet-thickness/": {
+    "lastmod": "2026-07-08",
+    "hash": "e9d7ffc865f37d8e2912dddd7e00fb691d050ac0abcd5ac743253a1b3de6dad6"
+  },
+  "/glossary/shelf-pin-hole/": {
+    "lastmod": "2026-07-08",
+    "hash": "11ced39470f03c5281ff276940e4a118ef76d564c22e74e08cac4b8f9ab5dddc"
+  },
+  "/glossary/shelf-pin/": {
+    "lastmod": "2026-07-08",
+    "hash": "e6c79b78874e7f172992e95315227d5dc5abfeac3bee18fdf2cabf6486f5056a"
+  },
+  "/glossary/shellac/": {
+    "lastmod": "2026-07-08",
+    "hash": "5a381efb4bb82e75ec4ac73ec68c1b3d0b6b9b8aa000acce7711165d6a2e220b"
+  },
+  "/glossary/shims/": {
+    "lastmod": "2026-07-08",
+    "hash": "d8361d37ce2b25a8b64343341d6f4009f5a99a26c55912d97cc6b6393b63cfba"
+  },
+  "/glossary/shiplap/": {
+    "lastmod": "2026-07-08",
+    "hash": "5acbf03df2c3bbab7e973de8c9bc52b3c3cc467d676e2f24f2fab307e822c8f4"
+  },
+  "/glossary/soft-close/": {
+    "lastmod": "2026-07-08",
+    "hash": "bfc29dfb1a1dc8d6c3b4f5e9502caa35648b3c6627d0f3eff10cca50ef1a98f5"
+  },
+  "/glossary/softwood/": {
+    "lastmod": "2026-07-08",
+    "hash": "76c93a4e3a578ed2910e23f68f4acb0a4cd3cbfe41c789bacadd78b4080f72ba"
+  },
+  "/glossary/speed-square/": {
+    "lastmod": "2026-07-08",
+    "hash": "7c813dbae9ddea8222c19e6af6989c523b407b3638974c12accb47328dee2123"
+  },
+  "/glossary/spline/": {
+    "lastmod": "2026-07-08",
+    "hash": "d8845499cf3d39122965e9262dcfc1ed432fff50a17065bd722afd3b1928c64a"
+  },
+  "/glossary/square-cut/": {
+    "lastmod": "2026-07-08",
+    "hash": "f95789ad6d69f84f7805d8bc0298265cb22047c7db4bb5f48908d72cd053867b"
+  },
+  "/glossary/square/": {
+    "lastmod": "2026-07-08",
+    "hash": "849cea408e02a3a68ee83b0d7e6bcca156e76666ecf445ca4e89f243ff50ef4e"
+  },
+  "/glossary/stain/": {
+    "lastmod": "2026-07-08",
+    "hash": "dcccc7a13a8a74201bcbfe0697e58975edf2494c9ae76bf80612024ba75e1aff"
+  },
+  "/glossary/stop-block/": {
+    "lastmod": "2026-07-08",
+    "hash": "02773a3a877650be4d60c7c4b2c8564f4a7adeea87f47ecaf5edcb0c7aa950f7"
+  },
+  "/glossary/story-stick/": {
+    "lastmod": "2026-07-08",
+    "hash": "1c8c4f50ff37c73811ce45266627ad1639d77e8477846a4d50a5408d95707aa6"
+  },
+  "/glossary/straightedge/": {
+    "lastmod": "2026-07-08",
+    "hash": "70d56877b2a5c1f7d289f5566a52afa6b7497c3865e293deb7170ccdda863df7"
+  },
+  "/glossary/stretchers/": {
+    "lastmod": "2026-07-08",
+    "hash": "ba6beb1039dfcfc66718fad13b34ffca857304172a85268919d9c6a91554ad26"
+  },
+  "/glossary/stud/": {
+    "lastmod": "2026-07-08",
+    "hash": "ad278345b8dbfbbdaffd7a3d77482ca08f83e43fe33c54fa7e0398692a883baf"
+  },
+  "/glossary/table-saw/": {
+    "lastmod": "2026-07-08",
+    "hash": "59e92e567ba0b10277397612bb79969aa9ee3c425e93de264510753b5fbb0019"
+  },
+  "/glossary/tall-cabinet/": {
+    "lastmod": "2026-07-08",
+    "hash": "e53af685b45e865161eefef290719119b29b9c790d0dab2d2fe90f605df2a5c3"
+  },
+  "/glossary/tape-measure/": {
+    "lastmod": "2026-07-08",
+    "hash": "f4417166ccd07ad5bc44ddf607f15dc7597a35318c86fcaf3cf09bd26a739df1"
+  },
+  "/glossary/tearout/": {
+    "lastmod": "2026-07-08",
+    "hash": "2e4e40bcd299150f7f6ecfbea92efd821d8b37cb0893889b29ea56d9f6bf9146"
+  },
+  "/glossary/template/": {
+    "lastmod": "2026-07-08",
+    "hash": "14a4f271148769b3461656f1d7fee9992dad70206c7e1dcaf9199167bf8b19ec"
+  },
+  "/glossary/toe-kick/": {
+    "lastmod": "2026-07-08",
+    "hash": "33b186f5ed7c1f91e450641ec94e0e64d58881c09ff95ea75b7b3e18a4c362f4"
+  },
+  "/glossary/tongue-and-groove/": {
+    "lastmod": "2026-07-08",
+    "hash": "d53bf3e940c981f6465af34964a2ff6d87e08b95afa18e452da59599d7d8936a"
+  },
+  "/glossary/track-saw/": {
+    "lastmod": "2026-07-08",
+    "hash": "2f105f98d6be5f06fe5b051f1b4eb55bee43bd9a59d69a1d4fddfe7aecf21413"
+  },
+  "/glossary/trim-allowance/": {
+    "lastmod": "2026-07-08",
+    "hash": "0f1558758b72f444808c56bcb5176c90b23dc7783f392105e96643e9684d190f"
+  },
+  "/glossary/twist/": {
+    "lastmod": "2026-07-08",
+    "hash": "f3c434a62a6a4b0177b748a7b9ea80764e64fb93028a5705a8ce1bec5b075b55"
+  },
+  "/glossary/veneer-core/": {
+    "lastmod": "2026-07-08",
+    "hash": "68be6b9c7b507a9c39b8aaa5fda117e9a8e0534c28bf2b48ba2bd71b03e3718f"
+  },
+  "/glossary/veneer-tape/": {
+    "lastmod": "2026-07-08",
+    "hash": "77c77548d99ed314cece6094ea99690e1d891efddcb5eab8220c2a90f2e9941e"
+  },
+  "/glossary/wall-cabinet/": {
+    "lastmod": "2026-07-08",
+    "hash": "7c9c5487bb2cffee202303a9f1829d9c6dad8738f2b6890e635333f515178ecd"
+  },
+  "/glossary/waste-percentage/": {
+    "lastmod": "2026-07-08",
+    "hash": "ff0f2a58d2af7873ff98a5d7666b65ca48d070826fc9e3cb1a716410bee286ce"
+  },
+  "/glossary/water-based-finish/": {
+    "lastmod": "2026-07-08",
+    "hash": "b1146622ede314ff0045268fe4196d662c629806b522422b52b3d6dfc8ceeb9c"
+  },
+  "/glossary/wood-filler/": {
+    "lastmod": "2026-07-08",
+    "hash": "39db5bd41c1fd54c316f31d66cb2c09e3116564cb2e9f4f2b0a1544b2d522870"
+  },
+  "/glossary/wood-glue/": {
+    "lastmod": "2026-07-08",
+    "hash": "2c74520ea90c5b4f4d15a5074754935272d67fb99cf8e317bc50a01118f57fcb"
+  },
+  "/glossary/wood-movement/": {
+    "lastmod": "2026-07-08",
+    "hash": "c4fb0c3da2cd80e95e4ca36ea9f65f82092db213a223a06c2538b1728d8aeab7"
+  },
+  "/glossary/wood-putty/": {
+    "lastmod": "2026-07-08",
+    "hash": "f5a08c73cbe72c5809f25b0df937b30a4f493d86a6451d14ef4b3d2a3fdc4af0"
+  },
+  "/glossary/yield/": {
+    "lastmod": "2026-07-08",
+    "hash": "522d658a83e6989bf05a0c0d7ba1cf2e033c4e944e897744c6d6ca1f771047ee"
+  },
+  "/glossary/zero-clearance-insert/": {
+    "lastmod": "2026-07-08",
+    "hash": "d37429176c34ee70785e03bc8d65de5b26332537f7677bf2a23986b6b1d02d9c"
   },
   "/guides/how-to-cut-plywood-efficiently/": {
     "lastmod": "2026-07-02",

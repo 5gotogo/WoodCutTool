@@ -156,6 +156,10 @@ function sitemapMeta(route) {
     return { changefreq: "weekly", priority: "0.93" };
   }
 
+  if (route === "/glossary/") {
+    return { changefreq: "weekly", priority: "0.9" };
+  }
+
   if (route === "/apps/quiltfit/") {
     return { changefreq: "weekly", priority: "0.9" };
   }
@@ -196,6 +200,10 @@ function sitemapMeta(route) {
     return { changefreq: "monthly", priority: "0.82" };
   }
 
+  if (route.startsWith("/glossary/")) {
+    return { changefreq: "monthly", priority: "0.76" };
+  }
+
   if (route.startsWith("/blog/")) {
     return { changefreq: "monthly", priority: "0.74" };
   }
@@ -220,6 +228,7 @@ function sortRoutes(routes) {
     "/",
     "/tools/",
     "/learn/",
+    "/glossary/",
     "/apps/",
     "/apps/cutlist/",
     "/apps/quiltfit/",
