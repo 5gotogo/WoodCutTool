@@ -61,6 +61,34 @@ const existingComparisons = [
 ];
 
 const comparisonDefinitions = [
+  ["plywood-vs-mdf", "Material", "Plywood vs MDF: Which Sheet Material Should You Use?", "Compare plywood and MDF for cabinets, shelves, painted projects, screw holding, moisture, weight, price, and workability.", "Plywood", "MDF", "Use plywood when strength, screw holding, lighter weight, and moisture forgiveness matter. Use MDF when a smooth painted surface and low material cost matter more than edge strength.", "cabinet boxes, shelves, built-ins, structural panels, and damp-adjacent spaces", "painted doors, smooth panels, templates, speaker boxes, and low-cost flat surfaces", [["Strength", "Better stiffness and screw holding", "Flat but weaker at edges"], ["Moisture resistance", "More forgiving if briefly exposed", "Swells badly when wet"], ["Paint finish", "Needs edge prep and grain control", "Very smooth for paint"], ["Cost", "Usually higher", "Usually lower"], ["Weight", "Lighter by comparable sheet", "Heavier and dense"]], "/learn/mdf-cut-list-planning-guide/", "/plywood-cut-calculator/"],
+  ["mdf-vs-particle-board", "Material", "MDF vs Particle Board: Which Panel Is Better?", "Compare MDF and particle board for shelves, cabinets, laminate substrate, screw holding, moisture, weight, price, and finish quality.", "MDF", "Particle board", "Use MDF when paint quality, smooth machining, and denser edges matter. Use particle board when low cost and laminate substrate work matter more than strength or moisture resistance.", "painted panels, routed profiles, doors, templates, and smooth flat work", "laminate counters, budget furniture, dry closet shelves, and low-cost substrates", [["Surface", "Smooth and paint-friendly", "Best under laminate or veneer"], ["Screw holding", "Moderate, weak at edges", "Weaker and crumbly at edges"], ["Moisture", "Poor if wet", "Very poor if wet"], ["Cost", "Low to medium", "Usually lower"], ["Workability", "Machines smoothly but dusty", "Chips and crumbles more easily"]], "/material-library/", "/material-cost-calculator/"],
+  ["baltic-birch-vs-plywood", "Material", "Baltic Birch vs Plywood: Which Should You Buy?", "Compare Baltic birch and standard plywood for drawer boxes, jigs, cabinets, exposed edges, price, strength, and sheet yield.", "Baltic birch", "Standard plywood", "Use Baltic birch for precision parts, exposed ply edges, jigs, and drawer boxes. Use standard plywood for larger cabinets, lower cost, and broad 4x8 sheet availability.", "drawer boxes, shop jigs, templates, CNC parts, and exposed layered edges", "cabinet boxes, shelves, built-ins, shop furniture, and general sheet layouts", [["Core", "Many thin consistent plies", "Core quality varies by grade"], ["Sheet size", "Often 5x5 or metric sizes", "Common 4x8 sheets"], ["Edge quality", "Attractive exposed edge", "Usually needs banding"], ["Cost", "Higher", "Lower to medium"], ["Best role", "Precision and appearance", "General yield and availability"]], "/wood/baltic-birch/", "/apps/cutlist/"],
+  ["birch-vs-maple", "Material", "Birch vs Maple Wood: Cabinets, Drawers & Furniture", "Compare birch and maple for cabinet parts, drawer boxes, furniture, hardness, density, price, stain behavior, and paint quality.", "Birch", "Maple", "Use birch when you want a practical, paint-friendly hardwood or plywood face at a moderate price. Use maple when hardness, smooth texture, and premium cabinet durability matter more.", "drawer boxes, cabinet parts, plywood faces, painted furniture, and utility shelving", "cabinet doors, drawers, work surfaces, furniture, and high-wear interiors", [["Hardness", "Medium-hard and practical", "Harder, especially hard maple"], ["Price", "Usually medium", "Medium to high"], ["Paint", "Good paint surface", "Excellent smooth paint surface"], ["Stain", "Can blotch", "Can blotch and needs testing"], ["Best use", "Utility cabinet parts", "Durable premium parts"]], "/wood/birch/", "/wood/maple/"],
+  ["oak-vs-maple", "Material", "Oak vs Maple Wood: Which Hardwood Fits Your Project?", "Compare oak and maple for cabinets, furniture, flooring, hardness, grain, stain, paint, price, and workability.", "Oak", "Maple", "Use oak when open grain, stain character, and traditional durability are desirable. Use maple when a harder, smoother, cleaner surface is better for modern cabinets or work surfaces.", "stained cabinets, flooring, tables, stair parts, and visible grain projects", "painted cabinets, drawers, work surfaces, furniture, and smooth light finishes", [["Grain", "Open and prominent", "Fine and smooth"], ["Hardness", "Hard and wear resistant", "Hard maple is very hard"], ["Stain", "Takes stain strongly", "Can blotch without testing"], ["Paint", "Grain can show", "Smooth paint base"], ["Cost", "Medium to high", "Medium to high"]], "/wood/oak/", "/wood/maple/"],
+  ["pine-vs-cedar", "Material", "Pine vs Cedar: Outdoor, Furniture & Cost Comparison", "Compare pine and cedar for outdoor projects, shelves, trim, garden builds, cost, durability, moisture resistance, and finish behavior.", "Pine", "Cedar", "Use pine for low-cost indoor, painted, and utility projects. Use cedar when natural outdoor resistance, light weight, and weather-friendly garden or fence work matter.", "painted furniture, shop fixtures, trim, shelves, and beginner projects", "outdoor furniture, fencing, garden projects, cladding, and closet lining", [["Outdoor durability", "Needs treatment or protection", "Naturally more weather resistant"], ["Cost", "Lower", "Medium"], ["Weight", "Light", "Light"], ["Surface hardness", "Soft and dents easily", "Soft and dents easily"], ["Finish", "Paints well; stain can blotch", "Often left clear or stained outdoors"]], "/wood/pine/", "/wood/cedar/"],
+  ["hardwood-vs-softwood", "Material", "Hardwood vs Softwood: Strength, Cost & Best Uses", "Compare hardwood and softwood for furniture, cabinets, framing, shelves, outdoor work, price, hardness, and woodworking use.", "Hardwood", "Softwood", "Use hardwood when wear resistance, furniture appearance, and durable surfaces matter. Use softwood when framing, cost, light weight, and easy cutting are more important.", "furniture, cabinets, flooring, tool handles, and high-wear finished parts", "framing, trim, outdoor structures, shop fixtures, and painted utility work", [["Source", "Broadleaf trees", "Conifer trees"], ["Hardness", "Often harder, but varies", "Often softer, but varies"], ["Cost", "Usually higher", "Usually lower"], ["Workability", "Can be denser and slower", "Usually easier to cut"], ["Best role", "Finished woodworking", "Construction and utility"]], "/wood/", "/lumber-calculator/"],
+  ["solid-wood-vs-plywood", "Material", "Solid Wood vs Plywood: Which Is Better For Builds?", "Compare solid wood and plywood for shelves, cabinets, furniture, movement, cost, edging, strength, moisture, and cut-list planning.", "Solid wood", "Plywood", "Use solid wood when natural edges, shaping, and visible grain are central to the design. Use plywood when stable wide panels, repeatable parts, and sheet yield matter more.", "fine furniture, visible edges, shaped parts, and clear-finished grain", "cabinets, closets, built-ins, wide shelves, painted projects, and sheet layouts", [["Movement", "Moves across the grain", "More dimensionally stable"], ["Wide panels", "Needs glue-up", "Available from sheets"], ["Edges", "Natural wood edge", "Needs banding or lipping"], ["Cost", "Depends on species and grade", "Predictable sheet pricing"], ["Cut planning", "Board selection and defects", "Sheet layout and kerf"]], "/learn/shelf-span-and-plywood-thickness-guide/", "/plywood-cut-calculator/"],
+  ["acx-vs-bcx-plywood", "Material", "ACX vs BCX Plywood: Grades, Faces & Outdoor Use", "Compare ACX and BCX plywood for exterior projects, faces, cost, sheathing, paint quality, durability, and project planning.", "ACX plywood", "BCX plywood", "Use ACX when the better A face matters for paint, appearance, or exposed utility work. Use BCX when exterior glue is needed but a lower-grade face is acceptable.", "painted outdoor panels, utility doors, better exposed faces, and appearance-sensitive work", "sheathing, backing, rough outdoor panels, and lower-cost protected work", [["Face grade", "A face on one side", "B face on one side"], ["Back face", "C back", "C back"], ["Exterior glue", "Exterior-rated X glue", "Exterior-rated X glue"], ["Cost", "Higher", "Lower"], ["Best use", "Better visible face", "Utility exterior panel"]], "/learn/plywood-grade-selection-for-cabinets/", "/material-library/"],
+  ["circular-saw-vs-table-saw", "Tools", "Circular Saw vs Table Saw: Which Should You Buy First?", "Compare circular saws and table saws for plywood, boards, accuracy, safety, space, cost, repeat cuts, and beginner woodworking.", "Circular saw", "Table saw", "Use a circular saw first when budget, portability, and breaking down sheet goods matter. Use a table saw when repeatable rips, precise sizing, and shop-based production matter.", "first-tool plywood breakdown, job-site cuts, budget shops, and large sheets", "repeat rips, cabinet parts, small pieces, precision sizing, and shop workflows", [["Portability", "Portable and compact", "Stationary and heavy"], ["Accuracy", "Good with a guide", "Excellent with fence and setup"], ["Cost", "Lower", "Higher"], ["Sheet goods", "Great for first breakdown", "Needs support for full sheets"], ["Repeat cuts", "Slower", "Fast and consistent"]], "/blog/cutting-large-sheets-without-a-table-saw/", "/plywood-cut-calculator/"],
+  ["track-saw-vs-circular-saw", "Tools", "Track Saw vs Circular Saw: Sheet Goods & Accuracy", "Compare track saws and circular saws for plywood breakdown, accuracy, splinter control, cost, portability, and shop workflow.", "Track saw", "Circular saw", "Use a track saw when straight, clean sheet-good cuts are frequent enough to justify the rail system. Use a circular saw when budget and general-purpose cutting matter more.", "cabinet-grade sheet breakdown, clean plywood cuts, small shops, and job-site accuracy", "rough cuts, framing, budget plywood breakdown, and general DIY cutting", [["Accuracy", "Rail-guided and repeatable", "Depends on straightedge setup"], ["Cut quality", "Cleaner with splinter strip", "Blade and guide dependent"], ["Cost", "Higher", "Lower"], ["Portability", "Portable with rails", "Very portable"], ["Best role", "Sheet-good system", "General cutting tool"]], "/learn/track-saw-sheet-breakdown-workflow/", "/plywood-cut-calculator/"],
+  ["router-vs-planer", "Tools", "Router vs Planer: Which Woodworking Tool Do You Need?", "Compare routers and planers for shaping, flattening, joinery, thicknessing, surface prep, cost, and shop workflow.", "Router", "Planer", "Use a router for edges, dados, rabbets, templates, and joinery details. Use a planer when board thickness, parallel faces, and milling rough lumber are the problem.", "edge profiles, dados, rabbets, templates, signs, and joinery details", "flattening thickness, milling boards, surfacing rough lumber, and batch stock prep", [["Primary job", "Shape and cut profiles", "Set board thickness"], ["Material handling", "Tool moves over or along work", "Board feeds through machine"], ["Cost", "Lower entry cost", "Higher entry cost"], ["Dust", "Localized chips and dust", "Large chip volume"], ["Best shop stage", "Joinery and details", "Stock preparation"]], "/blog/router-bit-drawer-cabinet-cut-list/", "/tools/"],
+  ["jointer-vs-planer", "Tools", "Jointer vs Planer: Flattening Lumber Correctly", "Compare jointers and planers for flattening boards, parallel faces, rough lumber prep, cost, shop space, and milling workflow.", "Jointer", "Planer", "Use a jointer to create one flat face and one square edge. Use a planer to make the opposite face parallel and bring boards to final thickness.", "flattening one face, straightening one edge, and preparing rough stock reference surfaces", "thicknessing boards, making faces parallel, and batch dimensioning lumber", [["First reference", "Creates flat reference face", "Needs a reference face"], ["Thickness", "Not for final thickness alone", "Excellent for thickness"], ["Edge jointing", "Excellent", "Not the main job"], ["Cost", "Medium to high", "Medium to high"], ["Best workflow", "Before planer", "After jointer"]], "/blog/planing-and-flattening-rough-lumber/", "/lumber-calculator/"],
+  ["brad-nailer-vs-finish-nailer", "Tools", "Brad Nailer vs Finish Nailer: Trim, Cabinets & Furniture", "Compare brad nailers and finish nailers for trim, cabinets, holding power, hole size, splitting risk, and shop use.", "Brad nailer", "Finish nailer", "Use a brad nailer for light trim, small parts, and delicate work with smaller holes. Use a finish nailer for stronger trim, casing, and parts needing more holding power.", "small trim, cabinet backs, lightweight moldings, and delicate assemblies", "door casing, baseboard, heavier trim, and stronger fastening", [["Fastener size", "Smaller 18 gauge brads", "Larger 15 or 16 gauge nails"], ["Hole size", "Smaller", "Larger"], ["Holding power", "Lower", "Higher"], ["Splitting risk", "Lower", "Higher in small stock"], ["Best use", "Light trim", "Heavier trim"]], "/blog/screws-nails-glue-joining-compared/", "/tools/"],
+  ["pocket-hole-vs-dowels", "Tools", "Pocket Hole vs Dowels: Joinery Strength & Speed", "Compare pocket holes and dowels for cabinet boxes, face frames, furniture, strength, alignment, tools, and visibility.", "Pocket holes", "Dowels", "Use pocket holes when speed, clamps, and hidden backside fastening matter. Use dowels when invisible alignment and cleaner joinery are worth slower layout.", "face frames, cabinet boxes, shop projects, and fast hidden fastening", "furniture joints, alignment, hidden joinery, and cleaner visible work", [["Speed", "Fast", "Slower"], ["Visibility", "Visible from one side unless hidden", "Hidden"], ["Alignment", "Good with clamps", "Excellent with accurate drilling"], ["Tools", "Pocket-hole jig", "Doweling jig or machine"], ["Best use", "Fast cabinet construction", "Cleaner furniture joinery"]], "/blog/pocket-hole-joinery-for-plywood/", "/cut-list-calculator/"],
+  ["pocket-hole-vs-biscuit-joint", "Tools", "Pocket Hole vs Biscuit Joint: Which Joinery Fits?", "Compare pocket holes and biscuit joints for panels, cabinets, alignment, strength, clamps, speed, and visible fasteners.", "Pocket holes", "Biscuit joints", "Use pocket holes for mechanical fastening and fast cabinet assembly. Use biscuits for alignment during glue-ups and light hidden registration, not as the main structural fastener.", "fast cabinet boxes, face frames, and hidden mechanical fastening", "panel alignment, edge glue-ups, and hidden registration", [["Strength role", "Mechanical screw joint", "Alignment plus glue"], ["Speed", "Fast after jig setup", "Fast slots but needs glue/clamps"], ["Visibility", "Pocket can show on one side", "Hidden"], ["Tools", "Pocket-hole jig", "Biscuit joiner"], ["Best use", "Assembly fastening", "Panel alignment"]], "/blog/pocket-hole-joinery-for-plywood/", "/templates/bookcase-cut-list/"],
+  ["pocket-hole-vs-mortise-and-tenon", "Tools", "Pocket Hole vs Mortise and Tenon: Fast vs Traditional", "Compare pocket-hole joinery and mortise-and-tenon joints for furniture, cabinets, strength, time, tools, and appearance.", "Pocket holes", "Mortise and tenon", "Use pocket holes for fast hidden assembly and practical cabinet work. Use mortise and tenon when traditional strength, appearance, and long-term furniture joinery justify the time.", "quick cabinet frames, shop fixtures, face frames, and hidden fasteners", "chairs, tables, doors, heirloom furniture, and high-stress frames", [["Strength", "Good for many cabinets", "Excellent long-grain mechanical joint"], ["Speed", "Very fast", "Slow and precise"], ["Appearance", "Hidden only if placed carefully", "Traditional and clean"], ["Tools", "Simple jig and screws", "Chisels, router, hollow chisel, or machines"], ["Best use", "Production and utility", "Fine furniture"]], "/glossary/mortise-and-tenon/", "/cut-list-calculator/"],
+  ["corded-vs-cordless-circular-saw", "Tools", "Corded vs Cordless Circular Saw: Power, Runtime & Cost", "Compare corded and cordless circular saws for plywood, framing, runtime, power, portability, batteries, and shop workflow.", "Corded circular saw", "Cordless circular saw", "Use a corded saw when continuous power and lower tool cost matter. Use a cordless saw when mobility, quick setup, and job-site freedom are more important.", "long cutting sessions, shop power, budget buying, and heavy repeated cuts", "job sites, quick sheet breakdown, ladder work, and cord-free mobility", [["Power", "Consistent wall power", "Battery and motor dependent"], ["Runtime", "Unlimited with outlet", "Limited by batteries"], ["Portability", "Needs cord management", "Very portable"], ["Cost", "Lower tool cost", "Higher with batteries"], ["Best use", "Shop and long sessions", "Mobile work"]], "/blog/cutting-large-sheets-without-a-table-saw/", "/plywood-cut-calculator/"],
+  ["deck-screws-vs-wood-screws", "Construction", "Deck Screws vs Wood Screws: Which Fastener Should You Use?", "Compare deck screws and wood screws for outdoor projects, corrosion resistance, shear strength, pilot holes, cost, and best applications.", "Deck screws", "Wood screws", "Use deck screws for exterior-rated decking and outdoor assemblies where corrosion resistance is required. Use wood screws for indoor woodworking, furniture, and controlled environments.", "decks, fences, exterior repairs, and pressure-treated lumber rated fasteners", "furniture, cabinets, indoor assemblies, and general woodworking", [["Corrosion", "Exterior coatings or stainless options", "Varies widely; many are indoor only"], ["Head style", "Often bugle or trim heads", "Many head styles"], ["Cost", "Higher than basic screws", "Broad range"], ["Outdoor use", "Designed for it when rated", "Only if specified"], ["Best check", "Coating compatibility", "Pilot and countersink"]], "/blog/screws-nails-glue-joining-compared/", "/screw-size-finder/"],
+  ["nails-vs-screws", "Construction", "Nails vs Screws: Strength, Speed & Best Uses", "Compare nails and screws for framing, cabinets, decks, shear strength, withdrawal resistance, speed, cost, and repairability.", "Nails", "Screws", "Use nails where speed and shear-friendly framing connections are appropriate. Use screws where pull-out resistance, removability, and precise clamping are more important.", "framing, sheathing, trim production, and fast structural nailing where allowed", "cabinets, decks, removable assemblies, hardware, and clamping parts together", [["Speed", "Very fast with nailer", "Slower"], ["Withdrawal", "Lower", "Higher"], ["Shear behavior", "Often better ductility", "Can be brittle if wrong screw"], ["Removal", "Harder", "Easier"], ["Cost", "Lower per fastener", "Higher per fastener"]], "/blog/screws-nails-glue-joining-compared/", "/drill-bit-finder/"],
+  ["pressure-treated-vs-cedar", "Construction", "Pressure Treated vs Cedar: Decks, Fences & Outdoor Builds", "Compare pressure-treated lumber and cedar for decks, fences, garden projects, rot resistance, maintenance, cost, and appearance.", "Pressure-treated lumber", "Cedar", "Use pressure-treated lumber when structural outdoor durability and lower cost matter. Use cedar when natural appearance, lighter weight, and dimensional feel matter more than structural rating.", "deck framing, ground-adjacent lumber, budget outdoor structures, and hidden framing", "fences, garden beds, outdoor furniture, trim, and visible exterior boards", [["Rot resistance", "Chemically treated for exterior use", "Naturally resistant"], ["Appearance", "Utility look", "Warm natural look"], ["Cost", "Usually lower", "Higher"], ["Weight", "Heavier when wet", "Light"], ["Maintenance", "Needs drying and finish planning", "Needs finish for color retention"]], "/wood/cedar/", "/wood-weight-calculator/"],
+  ["concrete-footing-vs-deck-blocks", "Construction", "Concrete Footing vs Deck Blocks: Foundation Choice", "Compare concrete footings and deck blocks for decks, sheds, frost, code, load, speed, cost, and long-term movement.", "Concrete footing", "Deck blocks", "Use concrete footings for permanent, code-sensitive, frost-aware, and higher-load structures. Use deck blocks only for light, temporary, or low-risk projects where local rules allow them.", "decks, sheds, posts, frost zones, inspections, and permanent loads", "temporary platforms, light sheds, low decks, and non-permit utility bases", [["Load", "Higher and more permanent", "Limited"], ["Frost", "Can reach frost depth", "Usually surface-bearing"], ["Code", "More likely accepted", "Often limited"], ["Speed", "Slower", "Fast"], ["Cost", "Higher labor", "Lower setup cost"]], "/blog/deck-stair-footing-layout/", "/cost-estimator/"],
+  ["2x4-vs-2x6", "Construction", "2x4 vs 2x6: Framing, Shelves & Outdoor Builds", "Compare 2x4 and 2x6 lumber for framing, shelves, decks, strength, span, weight, cost, and project planning.", "2x4", "2x6", "Use 2x4s when cost, weight, and compact framing are enough. Use 2x6s when greater stiffness, span, insulation depth, or load capacity is needed.", "light framing, shop fixtures, small shelves, bracing, and budget builds", "longer spans, deck joists, stronger shelves, wall depth, and heavier loads", [["Strength", "Good for light framing", "Stronger and stiffer"], ["Weight", "Lighter", "Heavier"], ["Cost", "Lower", "Higher"], ["Span", "Shorter", "Longer"], ["Best use", "Compact utility work", "Load and span"]], "/lumber-calculator/", "/wood-weight-calculator/"],
+  ["joist-tape-vs-no-tape", "Construction", "Joist Tape vs No Tape: Deck Framing Protection", "Compare using joist tape vs no tape on deck framing for moisture protection, cost, installation time, maintenance, and durability.", "Joist tape", "No tape", "Use joist tape when protecting deck framing from trapped moisture is worth the added labor and material cost. Skip it only when the structure is temporary or the budget clearly accepts shorter protection.", "deck joists, stair stringer tops, beam caps, and moisture-prone framing", "temporary builds, very low-budget structures, or designs with excellent drying", [["Moisture", "Protects top surfaces", "Water sits directly on framing"], ["Cost", "Added material cost", "No added tape cost"], ["Labor", "Adds installation step", "Faster"], ["Durability", "Can extend framing life", "Depends entirely on drainage and finish"], ["Best use", "Long-term decks", "Temporary or low-risk builds"]], "/blog/stair-stringer-spacing-for-composite-decking/", "/material-cost-calculator/"],
+  ["composite-deck-vs-wood-deck", "Construction", "Composite Deck vs Wood Deck: Cost, Maintenance & Feel", "Compare composite decking and wood decking for cost, maintenance, heat, span, appearance, fasteners, and long-term durability.", "Composite deck", "Wood deck", "Use composite decking when lower maintenance and consistent boards matter. Use wood decking when lower upfront cost, stiffness, repairability, and natural feel matter more.", "low-maintenance decks, consistent color, hidden fasteners, and long-term finish savings", "budget decks, natural boards, easier replacement, and cooler traditional surfaces", [["Maintenance", "Low maintenance", "Needs stain or seal"], ["Upfront cost", "Higher", "Lower"], ["Heat", "Can run hot", "Often cooler"], ["Span", "Manufacturer-specific", "Species and size dependent"], ["Repair", "Board replacement", "Sand, refinish, or replace"]], "/blog/stair-stringer-spacing-for-composite-decking/", "/cost-estimator/"],
+  ["deck-stain-vs-paint", "Construction", "Deck Stain vs Paint: Which Finish Lasts Better?", "Compare deck stain and paint for outdoor wood decks, maintenance, peeling, moisture, appearance, cost, and refinishing.", "Deck stain", "Paint", "Use deck stain when you want a finish that penetrates, shows wood texture, and is easier to refresh. Use paint when you need opaque color and accept higher peeling risk on deck surfaces.", "deck boards, fences, cedar, pressure-treated lumber, and visible wood texture", "vertical trim, rail parts, opaque color changes, and protected exterior surfaces", [["Appearance", "Shows wood texture", "Opaque color"], ["Peeling", "Less film buildup", "Can peel on walking surfaces"], ["Maintenance", "Recoat regularly", "Scrape and repaint if failing"], ["Moisture", "Lets wood breathe more", "Film can trap moisture if damaged"], ["Best use", "Decking and fences", "Trim and accents"]], "/blog/wood-finish-types-compared/", "/material-cost-calculator/"],
+  ["cedar-fence-vs-vinyl-fence", "Construction", "Cedar Fence vs Vinyl Fence: Cost, Maintenance & Look", "Compare cedar and vinyl fences for privacy, cost, maintenance, durability, repair, appearance, wind, and installation.", "Cedar fence", "Vinyl fence", "Use cedar when natural appearance, repairability, and traditional fence detailing matter. Use vinyl when low maintenance and consistent color matter more than natural material feel.", "natural privacy fences, custom details, repairable boards, and stained outdoor projects", "low-maintenance privacy fences, uniform panels, and no-paint exterior boundaries", [["Maintenance", "Needs stain or weathering plan", "Low maintenance washing"], ["Appearance", "Natural wood grain", "Uniform manufactured look"], ["Repair", "Replace boards easily", "Panel/profile dependent"], ["Cost", "Varies by grade", "Higher upfront in many markets"], ["Durability", "Good with maintenance", "Good but can crack or fade"]], "/wood/cedar/", "/cost-estimator/"],
+  ["gravel-vs-concrete-shed-foundation", "Construction", "Gravel vs Concrete Shed Foundation: Which Base Works?", "Compare gravel and concrete shed foundations for drainage, cost, permanence, floor support, DIY difficulty, and maintenance.", "Gravel foundation", "Concrete slab", "Use gravel for drainage, DIY speed, and many small shed bases. Use concrete when a permanent, hard, level, high-load floor or code-sensitive base is required.", "small sheds, drainage-friendly bases, budget DIY installs, and movable structures", "permanent sheds, heavy equipment, workshops, and slab-floor structures", [["Drainage", "Excellent when built correctly", "Needs slope and edge planning"], ["Cost", "Lower", "Higher"], ["DIY difficulty", "Moderate", "Higher"], ["Permanence", "Easier to change", "Permanent"], ["Best use", "Small sheds", "Heavy or finished spaces"]], "/blog/concrete-step-overlay-measurements/", "/cost-estimator/"],
   ["plywood-vs-osb", "Material", "Plywood vs OSB: Which Sheet Good Should You Use?", "Compare plywood and OSB for cabinets, sheathing, shop projects, moisture, screw holding, edges, and finish quality.", "Plywood", "OSB", "Use plywood for furniture, cabinets, exposed edges, and projects where screw holding and finish quality matter. Use OSB for hidden structural sheathing and utility surfaces where price matters more than appearance.", "visible shop furniture, cabinet parts, damp areas, and edge fastening", "hidden wall sheathing, roof decking, subfloors, and rough utility builds", [["Face quality", "Smoother and easier to finish", "Rough strand texture; usually hidden"], ["Edge behavior", "Cleaner edges and better screw holding", "Edges can swell and look rough"], ["Moisture tolerance", "Generally more forgiving if briefly wet", "Can swell at edges if exposed"], ["Cost", "Usually higher", "Usually lower"], ["Best role", "Finished or semi-finished projects", "Hidden structural panels"]], "/learn/plywood-grade-selection-for-cabinets/", "/plywood-cut-calculator/"],
   ["baltic-birch-vs-cabinet-grade-plywood", "Material", "Baltic Birch vs Cabinet-Grade Plywood", "Compare Baltic birch and cabinet-grade plywood for drawer boxes, jigs, furniture, shelves, and high-end cabinet parts.", "Baltic birch", "Cabinet-grade plywood", "Use Baltic birch when edge quality, void-free layers, drawer boxes, and jigs matter. Use cabinet-grade plywood when the visible face species, sheet availability, and cabinet-scale yield matter more.", "drawer boxes, templates, shop jigs, exposed ply edges, and small precision parts", "cabinet boxes, finished ends, large panels, and species-matched visible faces", [["Core", "Many thin plies, usually very stable", "Varies by supplier and grade"], ["Face choices", "Often birch faces", "Maple, oak, birch, prefinished, and more"], ["Edge look", "Attractive layered edge", "May need banding"], ["Sheet size", "Often different from 4x8 stock", "Common 4x8 sheets"], ["Cost signal", "Higher for small precision work", "Better yield for large cabinets"]], "/blog/baltic-birch-vs-cabinet-grade-plywood/", "/apps/cutlist/"],
   ["melamine-vs-plywood-for-cabinets", "Material", "Melamine vs Plywood For Cabinets", "Compare melamine and plywood for cabinet boxes, closets, shelves, edge banding, chipout, weight, and long-term durability.", "Melamine", "Plywood", "Use melamine for clean white interiors, closets, and budget cabinet boxes when chipout is controlled. Use plywood for stronger screw holding, lighter weight, better edges, and higher durability.", "closet systems, white interiors, utility cabinets, and low-finish labor", "shop cabinets, high-use boxes, exposed edges, and moisture-prone spaces", [["Finish", "Factory finished surface", "Needs finish or prefinished sheet"], ["Edges", "Requires banding and chipout control", "Stronger and easier to repair"], ["Weight", "Often heavy", "Usually lighter"], ["Screw holding", "Weaker at edges", "Better, especially in veneer core"], ["Waste risk", "Damaged corners and chipout", "Defects and grain constraints"]], "/blog/melamine-vs-plywood-cut-list-considerations/", "/plywood-cut-calculator/"],
@@ -100,7 +128,7 @@ const comparisonDefinitions = [
 function articleJsonLd(article) {
   const graph = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     headline: article.title,
     description: article.description,
     url: `${siteUrl}/compare/${article.slug}/`,
@@ -173,10 +201,89 @@ function makeArticle([
   };
 }
 
+function ratingFor(option, metric, category) {
+  const value = `${option} ${category}`.toLowerCase();
+  let score = 3;
+
+  if (metric === "strength") {
+    if (/ipe|concrete|hardwood|plywood|table saw|mortise|2x6|screws|composite|oak|maple|baltic/.test(value)) score += 1;
+    if (/mdf|particle|osb|pine|cedar|nails|deck blocks|gravel|biscuit|no tape/.test(value)) score -= 1;
+  }
+
+  if (metric === "durability") {
+    if (/ipe|concrete|pressure treated|composite|deck screws|hardwood|plywood|teak|cedar|vinyl/.test(value)) score += 1;
+    if (/mdf|particle|paint|nails|paper|no tape|softwood/.test(value)) score -= 1;
+  }
+
+  if (metric === "moisture") {
+    if (/pressure treated|cedar|composite|vinyl|concrete|joist tape|deck stain|ipe|osb|exterior/.test(value)) score += 1;
+    if (/mdf|particle|raw|hardwood|solid wood|paper|no tape|paint/.test(value)) score -= 1;
+  }
+
+  if (metric === "workability") {
+    if (/pine|cedar|mdf|circular saw|pocket hole|nails|wood deck|gravel|2x4|router|track saw/.test(value)) score += 1;
+    if (/ipe|concrete|table saw|mortise|hardwood|composite|porcelain|jointer/.test(value)) score -= 1;
+  }
+
+  return Math.max(1, Math.min(5, score));
+}
+
+function ratingCell(label, score) {
+  return `<div class="comparison-rating"><span>${escapeHtml(label)}</span><strong>${score}/5</strong><meter min="1" max="5" value="${score}">${score}/5</meter></div>`;
+}
+
+function optionRatings(article, option) {
+  return [
+    ["Strength", ratingFor(option, "strength", article.category)],
+    ["Durability", ratingFor(option, "durability", article.category)],
+    ["Moisture resistance", ratingFor(option, "moisture", article.category)],
+    ["Workability", ratingFor(option, "workability", article.category)]
+  ];
+}
+
+function prosFor(article, side) {
+  const option = side === "a" ? article.optionA : article.optionB;
+  const best = side === "a" ? article.bestA : article.bestB;
+  const rowValues = article.rows.slice(0, 3).map(([factor, a, b]) => `${factor}: ${side === "a" ? a : b}`);
+  return [`Best fit for ${best}`, ...rowValues, `Clear choice when the project is designed around ${option}.`].slice(0, 5);
+}
+
+function consFor(article, side) {
+  const option = side === "a" ? article.optionA : article.optionB;
+  const other = side === "a" ? article.optionB : article.optionA;
+  const bestOther = side === "a" ? article.bestB : article.bestA;
+  return [
+    `Can be the wrong choice when the job is closer to ${bestOther}.`,
+    `Requires checking real stock, tool setup, installation conditions, and finish expectations.`,
+    `May cost more in rework if chosen only because ${option} is familiar.`,
+    `Compare against ${other} with the actual measurements before buying.`
+  ];
+}
+
+function priceRow(article) {
+  return article.rows.find(([factor]) => /cost|price|pricing|budget/i.test(factor)) || [
+    "Pricing",
+    "Compare local material, blade, fastener, or labor cost before buying.",
+    "Compare local material, blade, fastener, or labor cost before buying."
+  ];
+}
+
+function keyDifferenceCards(article) {
+  return article.rows.slice(0, 4).map(([factor, a, b]) => `<article>
+          <span>${escapeHtml(factor)}</span>
+          <h3>${escapeHtml(article.optionA)} vs ${escapeHtml(article.optionB)}</h3>
+          <p><strong>${escapeHtml(article.optionA)}:</strong> ${escapeHtml(a)}</p>
+          <p><strong>${escapeHtml(article.optionB)}:</strong> ${escapeHtml(b)}</p>
+        </article>`).join("\n        ");
+}
+
 const newComparisons = comparisonDefinitions.map(makeArticle);
 
 function comparisonPage(article) {
   const canonical = `${siteUrl}/compare/${article.slug}/`;
+  const [priceFactor, priceA, priceB] = priceRow(article);
+  const ratingsA = optionRatings(article, article.optionA);
+  const ratingsB = optionRatings(article, article.optionB);
   return `<!doctype html>
 <html lang="en">
 ${head({
@@ -189,22 +296,42 @@ ${head({
   ${breadcrumbJsonLd([["Home", "/"], ["Compare", "/compare/"], [article.h1, `/compare/${article.slug}/`]])}
   <a class="skip-link" href="#main">Skip to content</a>
   ${header()}
-  <main id="main" class="article-shell">
-    <article class="article-body">
+  <main id="main" class="comparison-page">
+    <article>
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/compare/">Compare</a> / ${escapeHtml(article.h1)}</p>
-      <p class="eyebrow">${escapeHtml(article.category)} comparison</p>
-      <h1>${escapeHtml(article.h1)}</h1>
-      <p class="lead">${escapeHtml(article.description)}</p>
-
-      <section>
-        <h2>Quick Answer</h2>
-        <p>${escapeHtml(article.quickAnswer)}</p>
+      <section class="comparison-hero">
+        <div>
+          <p class="eyebrow">${escapeHtml(article.category)} comparison</p>
+          <h1>${escapeHtml(article.h1)}</h1>
+          <p class="lead">${escapeHtml(article.description)}</p>
+          <div class="hero-actions"><a class="button" href="${article.relatedB}">Use related tool</a><a class="button secondary" href="/compare/">Back to Comparison Center</a></div>
+        </div>
+        <aside class="comparison-verdict-card" aria-label="Quick verdict">
+          <span>Quick verdict</span>
+          <strong>${escapeHtml(article.optionA)} vs ${escapeHtml(article.optionB)}</strong>
+          <p>${escapeHtml(article.quickAnswer)}</p>
+        </aside>
       </section>
 
-      <section>
-        <h2>Comparison Table</h2>
-        <div class="table-wrap">
-          <table>
+      <section class="comparison-section">
+        <div class="section-heading compact"><p class="eyebrow">Verdict</p><h2>Quick answer</h2></div>
+        <div class="comparison-callout">
+          <p>${escapeHtml(article.quickAnswer)}</p>
+        </div>
+      </section>
+
+      <section class="comparison-section">
+        <div class="section-heading compact"><p class="eyebrow">Ratings</p><h2>Strength, durability, moisture, and workability.</h2></div>
+        <div class="comparison-rating-grid">
+          <article><h3>${escapeHtml(article.optionA)}</h3>${ratingsA.map(([label, score]) => ratingCell(label, score)).join("")}</article>
+          <article><h3>${escapeHtml(article.optionB)}</h3>${ratingsB.map(([label, score]) => ratingCell(label, score)).join("")}</article>
+        </div>
+      </section>
+
+      <section class="comparison-section">
+        <div class="section-heading compact"><p class="eyebrow">Side by side</p><h2>Comparison table</h2></div>
+        <div class="table-scroll">
+          <table class="comparison-table">
             <thead><tr><th>Factor</th><th>${escapeHtml(article.optionA)}</th><th>${escapeHtml(article.optionB)}</th></tr></thead>
             <tbody>
               ${article.rows.map(([factor, a, b]) => `<tr><td><strong>${escapeHtml(factor)}</strong></td><td>${escapeHtml(a)}</td><td>${escapeHtml(b)}</td></tr>`).join("\n              ")}
@@ -213,40 +340,63 @@ ${head({
         </div>
       </section>
 
-      <section>
-        <h2>When ${escapeHtml(article.optionA)} Makes More Sense</h2>
-        <p>Choose ${escapeHtml(article.optionA)} for ${escapeHtml(article.bestA)}. The decision is strongest when the project's constraints match that advantage instead of when the choice is made from habit. Before committing, check whether the material, tool, calculator, or workflow still fits the real measurements and the finish quality you need.</p>
+      <section class="comparison-section">
+        <div class="section-heading compact"><p class="eyebrow">Key differences</p><h2>What changes in the real project?</h2></div>
+        <div class="comparison-difference-grid">
+          ${keyDifferenceCards(article)}
+        </div>
       </section>
 
-      <section>
-        <h2>When ${escapeHtml(article.optionB)} Makes More Sense</h2>
-        <p>Choose ${escapeHtml(article.optionB)} for ${escapeHtml(article.bestB)}. This option usually wins when its strengths line up with the actual job conditions. If the project has unusual dimensions, premium material, or inspection-sensitive details, confirm the decision with a calculator, template, or saved plan before buying.</p>
+      <section class="comparison-section">
+        <div class="section-heading compact"><p class="eyebrow">Pros and cons</p><h2>Tradeoffs by option.</h2></div>
+        <div class="comparison-procon-grid">
+          <article><h3>${escapeHtml(article.optionA)} pros</h3><ul>${prosFor(article, "a").map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
+          <article><h3>${escapeHtml(article.optionA)} cons</h3><ul>${consFor(article, "a").map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
+          <article><h3>${escapeHtml(article.optionB)} pros</h3><ul>${prosFor(article, "b").map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
+          <article><h3>${escapeHtml(article.optionB)} cons</h3><ul>${consFor(article, "b").map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>
+        </div>
       </section>
 
-      <section>
-        <h2>Decision Rule</h2>
-        <p>Do not compare only sticker price or the first setup step. Compare the whole workflow: measuring, buying, cutting, installing, finishing, revising, and maintaining the result. A cheaper or faster option can still lose if it creates more waste, harder cuts, weaker fastening, worse appearance, or more rework after the first mistake.</p>
+      <section class="comparison-section">
+        <div class="section-heading compact"><p class="eyebrow">Pricing</p><h2>Cost comparison</h2></div>
+        <div class="comparison-price-grid">
+          <article><span>${escapeHtml(priceFactor)}</span><h3>${escapeHtml(article.optionA)}</h3><p>${escapeHtml(priceA)}</p></article>
+          <article><span>${escapeHtml(priceFactor)}</span><h3>${escapeHtml(article.optionB)}</h3><p>${escapeHtml(priceB)}</p></article>
+        </div>
       </section>
 
-      <section class="section app-cta-band">
-        <h2>Plan The Work After Choosing</h2>
+      <section class="comparison-section">
+        <div class="section-heading compact"><p class="eyebrow">Applications</p><h2>Common applications</h2></div>
+        <div class="comparison-use-grid">
+          <article><h3>Use ${escapeHtml(article.optionA)} for</h3><p>${escapeHtml(article.bestA)}.</p></article>
+          <article><h3>Use ${escapeHtml(article.optionB)} for</h3><p>${escapeHtml(article.bestB)}.</p></article>
+        </div>
+      </section>
+
+      <section class="comparison-section">
+        <div class="section-heading compact"><p class="eyebrow">Maintenance</p><h2>Maintenance and long-term fit</h2></div>
+        <p class="comparison-copy">Do not compare only sticker price or the first setup step. Compare the whole workflow: measuring, buying, cutting, installing, finishing, revising, maintaining, and repairing the result. A cheaper or faster option can still lose if it creates more waste, harder cuts, weaker fastening, worse appearance, or more rework after the first mistake.</p>
+      </section>
+
+      <section class="comparison-section app-cta-band">
+        <h2>Plan the work after choosing</h2>
         <p>Once you choose between ${escapeHtml(article.optionA)} and ${escapeHtml(article.optionB)}, run your own numbers. WoodCutTool calculators and apps help turn the comparison into a cut list, sheet count, material estimate, or project record before you buy or cut.</p>
         <p><a class="button" href="/tools/">Explore WoodCutTool tools</a></p>
       </section>
 
-      <section>
-        <h2>Related Planning Pages</h2>
+      <section class="comparison-section">
+        <div class="section-heading compact"><p class="eyebrow">Internal links</p><h2>Related calculators and articles</h2></div>
         <div class="related-grid">
-          <a href="${article.relatedA}"><span>Related</span><strong>Planning guide</strong></a>
-          <a href="${article.relatedB}"><span>Tool</span><strong>Calculator or app</strong></a>
+          <a href="${article.relatedB}"><span>Calculator</span><strong>Related calculator or app</strong><em>Use your own dimensions after comparing.</em></a>
+          <a href="${article.relatedA}"><span>Article</span><strong>Related planning article</strong><em>Read the supporting guide for this decision.</em></a>
           <a href="/compare/"><span>Compare</span><strong>All comparisons</strong></a>
           <a href="/apps/cutlist/"><span>App</span><strong>CutList Optimizer</strong></a>
         </div>
       </section>
 
-      <section class="faq-list" aria-label="${escapeHtml(article.h1)} FAQ">
-        <h2>FAQ</h2>
-        ${article.faqs.map(([question, answer]) => `<h3>${escapeHtml(question)}</h3><p>${escapeHtml(answer)}</p>`).join("\n        ")}
+      <section class="comparison-section faq-list" aria-label="${escapeHtml(article.h1)} FAQ">
+        <div class="section-heading compact"><p class="eyebrow">FAQ</p><h2>Common questions</h2></div>
+        ${article.faqs.map(([question, answer], index) => `<details${index === 0 ? " open" : ""}><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("\n        ")}
       </section>
     </article>
   </main>
@@ -280,6 +430,16 @@ function renderCard([category, title, description, href]) {
   return `<article class="card"><h2>${escapeHtml(title)}</h2><p>${escapeHtml(description)}</p><a class="card-link" href="${href}">Read comparison</a></article>`;
 }
 
+function uniqueCards(cards) {
+  const seen = new Set();
+  return cards.filter((card) => {
+    const href = card[3];
+    if (seen.has(href)) return false;
+    seen.add(href);
+    return true;
+  });
+}
+
 const cutListSoftwareSpotlight = [
   ["Software", "CutList vs SketchUp", "Cut-list optimizer vs 3D modeling for sheet layouts, kerf, revisions, and shop handoff.", "/compare/cutlist-vs-sketchup/"],
   ["Software", "CutList vs Excel", "Dedicated visual sheet layout vs spreadsheet formulas, pricing, and part rows.", "/compare/cutlist-vs-excel-for-woodworking/"],
@@ -290,13 +450,13 @@ const cutListSoftwareSpotlight = [
 
 function compareIndexPage() {
   const newCards = newComparisons.map((article) => [article.category, article.h1, article.description, `/compare/${article.slug}/`]);
-  const allCards = [...existingComparisons, ...newCards];
+  const allCards = uniqueCards([...newCards, ...existingComparisons]);
   const grouped = Map.groupBy(allCards, ([category]) => category);
   return `<!doctype html>
 <html lang="en">
 ${head({
-    title: "Woodworking Comparisons: Materials, Saws & Tools | WoodCutTool",
-    description: "Side-by-side woodworking comparisons for sheet goods, saws, cabinets, calculators, stairs, tile, QuiltFit, and cut list workflows.",
+    title: "Comparison Center: Wood Materials, Tools & Methods",
+    description: "Professional woodworking Comparison Center for materials, sheet goods, lumber, tools, fasteners, construction methods, calculators, and apps.",
     canonical: `${siteUrl}/compare/`,
     jsonLd: indexJsonLd(allCards),
     ogType: "website"
@@ -308,9 +468,9 @@ ${head({
   <main id="main">
     <section class="page-hero">
       <p class="breadcrumb"><a href="/">Home</a> / Compare</p>
-      <p class="eyebrow">Woodworking comparisons</p>
-      <h1>Woodworking Comparisons</h1>
-      <p class="lead">Compare materials, saws, calculators, cabinet choices, stair layouts, tile options, quilt planning workflows, and cut list tools before buying material or making the first cut.</p>
+      <p class="eyebrow">Comparison Center</p>
+      <h1>Comparison Center for Woodworking Decisions</h1>
+      <p class="lead">Compare wood materials, sheet goods, lumber, woodworking tools, fasteners, construction methods, calculators, and apps before buying material or making the first cut.</p>
       <div class="hero-actions"><a class="button" href="/tools/">Explore tools</a><a class="button secondary" href="/apps/cutlist/">Open CutList</a></div>
     </section>
     <section class="section">

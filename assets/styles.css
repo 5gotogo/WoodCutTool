@@ -1483,6 +1483,175 @@ h3 {
   font-style: normal;
 }
 
+.comparison-page {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 20px 16px 44px;
+}
+
+.comparison-hero,
+.comparison-section {
+  margin-top: 22px;
+}
+
+.comparison-hero {
+  display: grid;
+  gap: 18px;
+  align-items: start;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 14px 34px rgba(39, 44, 36, 0.07);
+}
+
+.comparison-verdict-card,
+.comparison-callout,
+.comparison-rating-grid article,
+.comparison-difference-grid article,
+.comparison-procon-grid article,
+.comparison-price-grid article,
+.comparison-use-grid article {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 12px 30px rgba(39, 44, 36, 0.06);
+}
+
+.comparison-verdict-card,
+.comparison-callout {
+  padding: 18px;
+}
+
+.comparison-verdict-card span,
+.comparison-difference-grid span,
+.comparison-price-grid span {
+  color: var(--accent-2);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.comparison-verdict-card strong {
+  display: block;
+  margin: 8px 0;
+  font-size: 1.2rem;
+}
+
+.comparison-verdict-card p,
+.comparison-callout p,
+.comparison-copy,
+.comparison-difference-grid p,
+.comparison-price-grid p,
+.comparison-use-grid p,
+.comparison-procon-grid li {
+  color: var(--muted);
+}
+
+.comparison-callout {
+  border-color: rgba(47, 111, 78, 0.2);
+  background: rgba(47, 111, 78, 0.08);
+}
+
+.comparison-callout p,
+.comparison-copy {
+  margin: 0;
+  font-size: 1.04rem;
+  font-weight: 750;
+}
+
+.comparison-rating-grid,
+.comparison-difference-grid,
+.comparison-procon-grid,
+.comparison-price-grid,
+.comparison-use-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.comparison-rating-grid article,
+.comparison-difference-grid article,
+.comparison-procon-grid article,
+.comparison-price-grid article,
+.comparison-use-grid article {
+  min-width: 0;
+  padding: 16px;
+}
+
+.comparison-rating {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px 10px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.comparison-rating span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.comparison-rating strong {
+  color: var(--ink);
+}
+
+.comparison-rating meter {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 10px;
+  accent-color: var(--accent);
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.comparison-table th {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: #fbfaf6;
+}
+
+.comparison-procon-grid ul {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .comparison-hero,
+  .comparison-verdict-card,
+  .comparison-callout,
+  .comparison-rating-grid article,
+  .comparison-difference-grid article,
+  .comparison-procon-grid article,
+  .comparison-price-grid article,
+  .comparison-use-grid article {
+    background: rgba(30, 42, 35, 0.92);
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: none;
+  }
+
+  .comparison-table th {
+    background: rgba(255, 255, 255, 0.06);
+  }
+}
+
 .proof-grid,
 .roi-flow,
 .compare-grid,
@@ -7158,6 +7327,21 @@ tr:last-child td {
     align-items: end;
   }
 
+  .comparison-hero {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.46fr);
+  }
+
+  .comparison-rating-grid,
+  .comparison-price-grid,
+  .comparison-use-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .comparison-difference-grid,
+  .comparison-procon-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .visual-proof-panel {
     grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
     align-items: center;
@@ -7331,6 +7515,10 @@ tr:last-child td {
   }
 
   .wood-related-species {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .comparison-difference-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
