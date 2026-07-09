@@ -10492,8 +10492,8 @@ function head({ title, description, canonical, ogType = "website", jsonLd = "" }
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#1e2a23">
-  <link rel="stylesheet" href="/assets/styles.css?v=${version}">
-  <script src="/assets/app.js?v=${version}" defer></script>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/app.js" defer></script>
 </head>`;
 }
 
@@ -11676,8 +11676,8 @@ function updateExistingHtml() {
     html = html.replaceAll("20260619-blogs", version);
     html = html.replaceAll("20260619-brand-case", version);
     html = html.replaceAll("20260619-app-directory", version);
-    html = html.replaceAll("/assets/styles.css\"", `/assets/styles.css?v=${version}"`);
-    html = html.replaceAll("/assets/app.js\"", `/assets/app.js?v=${version}"`);
+    html = html.replaceAll(/\/assets\/styles\.css\?v=[^"]+"/g, '/assets/styles.css"');
+    html = html.replaceAll(/\/assets\/app\.js\?v=[^"]+"/g, '/assets/app.js"');
     html = html.replaceAll('<a href="/apps/">Apps</a><a href="/blog/">Blogs</a>', '<a href="/blog/">Blogs</a><a href="/apps/">Apps</a>');
     html = html.replaceAll('<a class="active" href="/apps/">Apps</a><a href="/blog/">Blogs</a>', '<a href="/blog/">Blogs</a><a class="active" href="/apps/">Apps</a>');
     html = html.replace(/<a class="active" href="\/blog\/[^"]+\/">[^<]+<\/a>/g, '<a class="active" href="/blog/">Blogs</a>');

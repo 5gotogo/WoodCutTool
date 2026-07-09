@@ -4,8 +4,6 @@ import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
-const stylesVersion = "20260709-mobile-mega";
-const appVersion = "20260709-mobile-mega";
 const megaMenuFallbackStyle = "  <style>.mega-menu{display:none}</style>";
 
 const appStoreLinks = {
@@ -161,11 +159,11 @@ function applyHeader(file, html) {
 }
 
 function applyStylesVersion(html) {
-  return html.replace(/\/assets\/styles\.css\?v=[^"]+/g, `/assets/styles.css?v=${stylesVersion}`);
+  return html.replace(/\/assets\/styles\.css(?:\?v=[^"]+)?/g, "/assets/styles.css");
 }
 
 function applyAppVersion(html) {
-  return html.replace(/\/assets\/app\.js\?v=[^"]+/g, `/assets/app.js?v=${appVersion}`);
+  return html.replace(/\/assets\/app\.js(?:\?v=[^"]+)?/g, "/assets/app.js");
 }
 
 function applyMegaMenuFallback(html) {

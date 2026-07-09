@@ -38,8 +38,8 @@ function head({ title, description, canonical, jsonLd = "", ogType = "website" }
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
-  <link rel="stylesheet" href="/assets/styles.css?v=${version}">
-  <script defer src="/assets/app.js?v=${version}"></script>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/app.js"></script>
   ${jsonLd}
 </head>`;
 }
