@@ -4,6 +4,8 @@ import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
+const stylesVersion = "20260709-mega-menu-fix";
+const megaMenuFallbackStyle = "  <style>.mega-menu{display:none}</style>";
 
 const appStoreLinks = {
   cutlist: "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871",
@@ -157,13 +159,28 @@ function applyHeader(file, html) {
   return html.replace(pattern, buildHeader(file, html));
 }
 
+function applyStylesVersion(html) {
+  return html.replace(/\/assets\/styles\.css\?v=[^"]+/g, `/assets/styles.css?v=${stylesVersion}`);
+}
+
+function applyMegaMenuFallback(html) {
+  if (html.includes("<style>.mega-menu{display:none}</style>")) return html;
+
+  const stylesheetPattern = /(\s*<link rel="stylesheet" href="\/assets\/styles\.css\?v=[^"]+"[^>]*>)/;
+  if (stylesheetPattern.test(html)) {
+    return html.replace(stylesheetPattern, `\n${megaMenuFallbackStyle}$1`);
+  }
+
+  return html.replace("</head>", `${megaMenuFallbackStyle}\n</head>`);
+}
+
 let updated = 0;
 let skipped = 0;
 
 for (const file of collectHtmlFiles()) {
   const absolute = join(root, file);
   const html = readFileSync(absolute, "utf8");
-  const next = applyHeader(file, html);
+  const next = applyMegaMenuFallback(applyStylesVersion(applyHeader(file, html)));
   if (next === html) {
     skipped += 1;
     continue;
