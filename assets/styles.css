@@ -196,8 +196,9 @@ canvas {
 
 .mega-feature {
   display: grid;
+  grid-template-rows: minmax(190px, 1fr) auto auto auto;
   gap: 14px;
-  align-content: start;
+  align-content: stretch;
   padding: 18px;
   color: var(--ink);
   background:
@@ -220,7 +221,7 @@ canvas {
   line-height: 1.2;
 }
 
-.mega-feature > span,
+.mega-feature > span:not(.mega-visual),
 .mega-copy > span {
   display: block;
   margin-top: 4px;
@@ -231,7 +232,7 @@ canvas {
 
 .mega-visual {
   position: relative;
-  min-height: 148px;
+  min-height: 190px;
   overflow: hidden;
   border: 1px solid #dfe6d8;
   border-radius: 8px;
@@ -241,12 +242,26 @@ canvas {
     #fbfaf6;
 }
 
+.mega-visual-apps {
+  background:
+    radial-gradient(circle at 26% 25%, rgba(47, 111, 78, 0.18), transparent 28%),
+    radial-gradient(circle at 74% 68%, rgba(215, 148, 60, 0.16), transparent 26%),
+    #f7faf6;
+}
+
+.mega-visual-resources {
+  background:
+    radial-gradient(circle at 20% 76%, rgba(215, 148, 60, 0.18), transparent 26%),
+    radial-gradient(circle at 78% 28%, rgba(47, 111, 78, 0.15), transparent 28%),
+    #fbfaf6;
+}
+
 .mega-visual-sheet {
   position: absolute;
-  left: 14%;
-  right: 14%;
-  top: 26px;
-  bottom: 26px;
+  left: 10%;
+  right: 10%;
+  top: 12%;
+  bottom: 12%;
   display: grid;
   grid-template-columns: 1.1fr 0.8fr 0.65fr;
   grid-template-rows: 1fr 0.8fr;
@@ -276,6 +291,174 @@ canvas {
 
 .mega-visual-piece:nth-child(4) {
   background: #31b56a;
+}
+
+.mega-app-phone {
+  position: absolute;
+  top: 50%;
+  width: clamp(78px, 22%, 106px);
+  height: 70%;
+  min-height: 116px;
+  max-height: 158px;
+  border: 5px solid #1a2a20;
+  border-radius: 17px;
+  background: #fbfaf6;
+  box-shadow: 0 18px 26px rgba(39, 44, 36, 0.16);
+}
+
+.mega-app-phone::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 7px;
+  width: 18px;
+  height: 3px;
+  border-radius: 999px;
+  background: #dfe6d8;
+  transform: translateX(-50%);
+}
+
+.mega-app-phone-primary {
+  left: 24%;
+  transform: translateY(-50%) rotate(-3deg);
+}
+
+.mega-app-phone-secondary {
+  top: 50%;
+  right: 22%;
+  width: clamp(68px, 19%, 92px);
+  height: 62%;
+  min-height: 102px;
+  max-height: 138px;
+  border-color: #355b40;
+  transform: translateY(-43%) rotate(5deg);
+}
+
+.mega-app-screen {
+  position: absolute;
+  inset: 13px 8px 15px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+  align-content: start;
+}
+
+.mega-app-screen span {
+  min-height: 24px;
+  border-radius: 7px;
+  background: var(--accent);
+}
+
+.mega-app-screen span:nth-child(2) {
+  background: var(--accent-3);
+}
+
+.mega-app-screen span:nth-child(3) {
+  background: #3478f6;
+}
+
+.mega-app-screen span:nth-child(4) {
+  background: #31b56a;
+}
+
+.mega-app-badge {
+  position: absolute;
+  top: 16%;
+  right: 20%;
+  padding: 6px 9px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--accent);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  box-shadow: 0 12px 22px rgba(47, 111, 78, 0.18);
+}
+
+.mega-resource-book {
+  position: absolute;
+  left: 14%;
+  top: 50%;
+  width: 34%;
+  min-width: 118px;
+  max-width: 152px;
+  height: 60%;
+  min-height: 92px;
+  max-height: 130px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 14px 14px 22px;
+  border: 1px solid rgba(139, 94, 52, 0.22);
+  border-radius: 8px 12px 12px 8px;
+  color: #fff;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.16) 0 12px, transparent 12px),
+    linear-gradient(135deg, #2f6f4e, #8b5e34);
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 0 18px 28px rgba(39, 44, 36, 0.14);
+  transform: translateY(-50%) rotate(-2deg);
+}
+
+.mega-resource-card {
+  position: absolute;
+  right: 16%;
+  width: 36%;
+  min-width: 118px;
+  max-width: 152px;
+  height: 42%;
+  min-height: 76px;
+  max-height: 108px;
+  padding: 14px 14px 0;
+  border: 1px solid #dfe6d8;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 15px 26px rgba(39, 44, 36, 0.1);
+}
+
+.mega-resource-card-one {
+  top: 15%;
+  transform: rotate(3deg);
+}
+
+.mega-resource-card-two {
+  top: 42%;
+  right: 23%;
+  transform: rotate(-4deg);
+}
+
+.mega-resource-card span {
+  display: block;
+  height: 7px;
+  margin-bottom: 8px;
+  border-radius: 999px;
+  background: #cfd8cb;
+}
+
+.mega-resource-card span:nth-child(1) {
+  width: 52%;
+  background: var(--accent-3);
+}
+
+.mega-resource-card span:nth-child(2) {
+  width: 86%;
+}
+
+.mega-resource-card span:nth-child(3) {
+  width: 64%;
+}
+
+.mega-resource-chip {
+  position: absolute;
+  left: 20%;
+  bottom: 12%;
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: var(--ink);
+  background: #edf2ea;
+  font-size: 11px;
+  font-weight: 800;
+  box-shadow: 0 12px 22px rgba(39, 44, 36, 0.12);
 }
 
 .mega-columns {
@@ -8156,6 +8339,7 @@ tr:last-child td {
     border-radius: 0 0 12px 12px;
     background: rgba(255, 255, 255, 0.98);
     box-shadow: 0 18px 44px rgba(39, 44, 36, 0.18);
+    align-content: start;
   }
 
   .nav-menu-item.is-open .mega-columns {
@@ -8169,12 +8353,88 @@ tr:last-child td {
   }
 
   .nav-menu-item.is-open .mega-feature {
+    grid-template-rows: minmax(160px, auto) auto auto auto;
     gap: 10px;
     padding: 12px;
+    align-self: start;
   }
 
   .nav-menu-item.is-open .mega-visual {
-    min-height: 96px;
+    min-height: 160px;
+  }
+
+  .nav-menu-item.is-open .mega-app-phone {
+    top: 50%;
+    width: 64px;
+    height: 96px;
+    border-width: 3px;
+    border-radius: 12px;
+  }
+
+  .nav-menu-item.is-open .mega-app-phone-primary {
+    left: 26%;
+  }
+
+  .nav-menu-item.is-open .mega-app-phone-secondary {
+    top: 50%;
+    right: 24%;
+    width: 56px;
+    height: 84px;
+  }
+
+  .nav-menu-item.is-open .mega-app-screen {
+    inset: 9px 6px 12px;
+    gap: 4px;
+  }
+
+  .nav-menu-item.is-open .mega-app-screen span {
+    min-height: 14px;
+    border-radius: 5px;
+  }
+
+  .nav-menu-item.is-open .mega-app-badge {
+    top: 18%;
+    right: 20%;
+    padding: 4px 7px;
+    font-size: 9px;
+  }
+
+  .nav-menu-item.is-open .mega-resource-book {
+    top: 50%;
+    width: 96px;
+    min-width: 0;
+    height: 96px;
+    padding: 0 10px 9px 16px;
+    font-size: 10px;
+  }
+
+  .nav-menu-item.is-open .mega-resource-card {
+    width: 108px;
+    min-width: 0;
+    height: 66px;
+    padding: 10px 10px 0;
+  }
+
+  .nav-menu-item.is-open .mega-resource-card-one {
+    top: 18%;
+    right: 17%;
+  }
+
+  .nav-menu-item.is-open .mega-resource-card-two {
+    top: 42%;
+    right: 24%;
+  }
+
+  .nav-menu-item.is-open .mega-resource-card span {
+    height: 5px;
+    margin-bottom: 6px;
+  }
+
+  .nav-menu-item.is-open .mega-resource-chip {
+    left: 19%;
+    bottom: 13%;
+    padding: 5px 8px;
+    font-size: 9px;
   }
 
   .nav-menu-item.is-open .mega-link {
