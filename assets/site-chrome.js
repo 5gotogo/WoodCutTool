@@ -3,6 +3,7 @@
     cutlist: "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871",
     quiltfit: "https://apps.apple.com/us/app/quiltfit-quilt-design-planner/id6776541705",
     stringer: "https://apps.apple.com/us/app/stringer-stair-layout/id6784882437?uo=4",
+    snaplabel: "https://apps.apple.com/us/app/snaplabel-photo-text-label/id6751947372",
     tinnitus: "https://apps.apple.com/us/app/tinnitus-relief-sound-masking/id6782496783"
   };
 
@@ -36,6 +37,9 @@
       current.startsWith("/legal/Stringer/")
     ) {
       return ["Download Stringer", appStoreLinks.stringer];
+    }
+    if (current.startsWith("/apps/snaplabel-photo-text-label/")) {
+      return ["Download SnapLabel", appStoreLinks.snaplabel];
     }
     return ["Download CutList", appStoreLinks.cutlist];
   }
@@ -92,7 +96,7 @@
       { href: "/apps/stringer/", aliases: ["/apps/stringer-stair-layout/"], icon: "ST", title: "Stringer app", description: "Keep stair layouts, code checks, and cut sheets together." },
       { href: "/apps/snapreceipt-expenses-and-tax/", icon: "SR", title: "SnapReceipt", description: "Scan receipts and prepare expense or tax records." },
       { href: "/apps/pdf-scan-scanner-and-reader/", icon: "PS", title: "PDF Scan", description: "Turn paper documents into readable PDFs." },
-      { href: "/apps/printer-app-print-pdf-docs/", icon: "PR", title: "Printer App", description: "Print PDFs, docs, photos, labels, and common files." },
+      { href: "/apps/snaplabel-photo-text-label/", icon: "SL", title: "SnapLabel", description: "Create photo labels for storage, products, boxes, and home organization." },
       { href: "/apps/tinnitus-relief-sound-masking/", aliases: ["/tinnitus/"], icon: "TN", title: "Tinnitus Relief", description: "Masking sounds and hearing-profile tools for iPhone." },
       { href: "/apps/", icon: "AP", title: "All apps", description: "Browse the full app library and comparisons.", exact: true }
     ];
