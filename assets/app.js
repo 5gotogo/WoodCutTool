@@ -1706,9 +1706,11 @@ const legalTranslations = {
   "zh-CN": {
     "Privacy Policy": "隐私政策",
     "Terms of Service": "服务条款",
+    "Disclaimer": "免责声明",
     "Contact Email": "联系邮箱",
     "/ Privacy Policy": "/ 隐私政策",
     "/ Terms of Service": "/ 服务条款",
+    "/ Disclaimer": "/ 免责声明",
     "Legal": "法律信息",
     "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool 提供基于浏览器的布局、切割和材料规划计算器。",
     "Information we collect": "我们收集的信息",
@@ -1734,9 +1736,11 @@ const legalTranslations = {
   "zh-TW": {
     "Privacy Policy": "隱私政策",
     "Terms of Service": "服務條款",
+    "Disclaimer": "免責聲明",
     "Contact Email": "聯絡信箱",
     "/ Privacy Policy": "/ 隱私政策",
     "/ Terms of Service": "/ 服務條款",
+    "/ Disclaimer": "/ 免責聲明",
     "Legal": "法律資訊",
     "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool 提供基於瀏覽器的布局、切割與材料規劃計算器。",
     "Information we collect": "我們收集的資訊",
@@ -1753,9 +1757,11 @@ const legalTranslations = {
   es: {
     "Privacy Policy": "Política de privacidad",
     "Terms of Service": "Términos del servicio",
+    "Disclaimer": "Aviso legal",
     "Contact Email": "Correo de contacto",
     "/ Privacy Policy": "/ Política de privacidad",
     "/ Terms of Service": "/ Términos del servicio",
+    "/ Disclaimer": "/ Aviso legal",
     "Legal": "Legal",
     "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool ofrece calculadoras en el navegador para diseño, corte y planificación de materiales.",
     "Information we collect": "Información que recopilamos",
@@ -1781,9 +1787,11 @@ const legalTranslations = {
   pt: {
     "Privacy Policy": "Política de Privacidade",
     "Terms of Service": "Termos de Serviço",
+    "Disclaimer": "Aviso legal",
     "Contact Email": "Email de contato",
     "/ Privacy Policy": "/ Política de Privacidade",
     "/ Terms of Service": "/ Termos de Serviço",
+    "/ Disclaimer": "/ Aviso legal",
     "Legal": "Legal",
     "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool oferece calculadoras no navegador para layout, corte e planejamento de materiais.",
     "Information we collect": "Informações que coletamos",
@@ -1800,9 +1808,11 @@ const legalTranslations = {
   fr: {
     "Privacy Policy": "Politique de confidentialité",
     "Terms of Service": "Conditions d'utilisation",
+    "Disclaimer": "Avertissement",
     "Contact Email": "Email de contact",
     "/ Privacy Policy": "/ Politique de confidentialité",
     "/ Terms of Service": "/ Conditions d'utilisation",
+    "/ Disclaimer": "/ Avertissement",
     "Legal": "Mentions légales",
     "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool propose des calculateurs dans le navigateur pour la mise en page, la coupe et la planification des matériaux.",
     "Information we collect": "Informations collectées",
@@ -1819,9 +1829,11 @@ const legalTranslations = {
   de: {
     "Privacy Policy": "Datenschutzerklärung",
     "Terms of Service": "Nutzungsbedingungen",
+    "Disclaimer": "Haftungsausschluss",
     "Contact Email": "Kontakt-E-Mail",
     "/ Privacy Policy": "/ Datenschutzerklärung",
     "/ Terms of Service": "/ Nutzungsbedingungen",
+    "/ Disclaimer": "/ Haftungsausschluss",
     "Legal": "Rechtliches",
     "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool bietet browserbasierte Rechner für Layout, Zuschnitt und Materialplanung.",
     "Information we collect": "Erfasste Informationen",
@@ -1838,9 +1850,11 @@ const legalTranslations = {
   it: {
     "Privacy Policy": "Informativa sulla privacy",
     "Terms of Service": "Termini di servizio",
+    "Disclaimer": "Disclaimer",
     "Contact Email": "Email di contatto",
     "/ Privacy Policy": "/ Informativa sulla privacy",
     "/ Terms of Service": "/ Termini di servizio",
+    "/ Disclaimer": "/ Disclaimer",
     "Legal": "Legale",
     "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool offre calcolatori nel browser per layout, taglio e pianificazione dei materiali.",
     "Information we collect": "Informazioni raccolte",
@@ -1857,9 +1871,11 @@ const legalTranslations = {
   ar: {
     "Privacy Policy": "سياسة الخصوصية",
     "Terms of Service": "شروط الخدمة",
+    "Disclaimer": "إخلاء المسؤولية",
     "Contact Email": "بريد التواصل",
     "/ Privacy Policy": "/ سياسة الخصوصية",
     "/ Terms of Service": "/ شروط الخدمة",
+    "/ Disclaimer": "/ إخلاء المسؤولية",
     "Legal": "قانوني",
     "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "يوفر WoodCutTool حاسبات تعمل في المتصفح للتخطيط والقص والمواد.",
     "Information we collect": "المعلومات التي نجمعها",
@@ -1876,9 +1892,11 @@ const legalTranslations = {
   ja: {
     "Privacy Policy": "プライバシーポリシー",
     "Terms of Service": "利用規約",
+    "Disclaimer": "免責事項",
     "Contact Email": "連絡先メール",
     "/ Privacy Policy": "/ プライバシーポリシー",
     "/ Terms of Service": "/ 利用規約",
+    "/ Disclaimer": "/ 免責事項",
     "Legal": "法的情報",
     "WoodCutTool provides browser-based calculators for layout, cutting, and material planning.": "WoodCutTool はレイアウト、切断、材料計画のためのブラウザベース計算機を提供します。",
     "Information we collect": "収集する情報",
@@ -3006,6 +3024,7 @@ Object.entries(blogUiTranslations).forEach(([lang, values]) => {
 
 const dutchTranslations = {
   "/ CutList Calculator": "/ CutList-calculator",
+  "/ Disclaimer": "/ Disclaimer",
   "/ Privacy Policy": "/ Privacybeleid",
   "/ QuiltFit Calculator": "/ QuiltFit-calculator",
   "/ Stringer Calculator": "/ Trapboomcalculator",
@@ -3118,6 +3137,7 @@ const dutchTranslations = {
   "Design quilt patterns": "Quiltpatronen ontwerpen",
   "Design the full quilt in QuiltFit for iPhone": "Ontwerp de volledige quilt in QuiltFit voor iPhone",
   "Desk": "Bureau",
+  "Disclaimer": "Disclaimer",
   "Directory": "Overzicht",
   "Download CutList": "CutList downloaden",
   "Download CutList iOS": "CutList iOS downloaden",
@@ -3588,15 +3608,25 @@ function setLanguage(lang) {
 }
 
 function initI18n() {
-  const nav = document.querySelector(".nav");
   const existingSelector = document.getElementById("language-select");
   if (existingSelector && !existingSelector.dataset.boundLanguagePicker) {
     existingSelector.dataset.boundLanguagePicker = "true";
     existingSelector.addEventListener("change", (event) => setLanguage(event.target.value));
   }
 
-  if (nav && !existingSelector) {
-    const primaryAction = nav.querySelector(":scope > .button");
+  if (!existingSelector) {
+    let footerInner = document.querySelector(".site-footer .footer-inner");
+    if (!footerInner) {
+      const footer = document.createElement("footer");
+      footer.className = "site-footer";
+      footer.innerHTML = `<div class="footer-inner"></div>`;
+      document.body.appendChild(footer);
+      footerInner = footer.querySelector(".footer-inner");
+    }
+    const footerBottom = document.querySelector(".site-footer .footer-bottom");
+    const wrapper = document.createElement("div");
+    wrapper.className = "footer-language";
+    wrapper.innerHTML = `<span class="footer-language-label">Language</span>`;
     const label = document.createElement("label");
     label.className = "language-picker";
     label.innerHTML = `
@@ -3605,10 +3635,11 @@ function initI18n() {
         ${Object.entries(LANGUAGE_OPTIONS).map(([value, name]) => `<option value="${value}">${name}</option>`).join("")}
       </select>
     `;
-    if (primaryAction) {
-      nav.insertBefore(label, primaryAction);
+    wrapper.appendChild(label);
+    if (footerInner && footerBottom) {
+      footerInner.insertBefore(wrapper, footerBottom);
     } else {
-      nav.appendChild(label);
+      footerInner.appendChild(wrapper);
     }
     const selector = label.querySelector("select");
     selector.dataset.boundLanguagePicker = "true";

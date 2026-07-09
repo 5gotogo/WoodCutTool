@@ -224,7 +224,7 @@ function sitemapMeta(route) {
     return { changefreq: "yearly", priority: "0.55" };
   }
 
-  if (route === "/privacy-policy/" || route === "/terms-of-service/") {
+  if (route === "/privacy-policy/" || route === "/terms-of-service/" || route === "/disclaimer/") {
     return { changefreq: "yearly", priority: "0.5" };
   }
 
@@ -254,7 +254,8 @@ function sortRoutes(routes) {
     "/kerf-calculator/",
     "/blog/",
     "/privacy-policy/",
-    "/terms-of-service/"
+    "/terms-of-service/",
+    "/disclaimer/"
   ];
   const order = new Map(preferredOrder.map((route, index) => [route, index]));
 

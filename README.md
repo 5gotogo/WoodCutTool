@@ -10,6 +10,10 @@ npm run dev
 
 The local server uses port `4175`.
 
+## Shared site chrome
+
+Top navigation and footer markup are rendered from `assets/site-chrome.js`. HTML pages should keep only the `data-site-header` and `data-site-footer` mount points. Run `npm run apply:nav-cta` after generating pages to normalize any generated HTML back to those shared mount points.
+
 ## Validation
 
 ```sh
