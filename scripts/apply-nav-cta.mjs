@@ -7,7 +7,7 @@ const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modul
 const megaMenuFallbackStyle = "  <style>.mega-menu{display:none}</style>";
 const headerMount = '<div data-site-header></div>';
 const footerMount = '<div data-site-footer></div>';
-const siteChromeScript = '  <script defer src="/assets/site-chrome.js"></script>';
+const siteChromeScript = '  <script defer src="/assets/site-chrome.js?v=footer-legal-plus-20260709"></script>';
 
 function collectHtmlFiles(dir = root, prefix = "") {
   const files = [];
@@ -33,7 +33,7 @@ function applyAppVersion(html) {
 }
 
 function applySiteChromeVersion(html) {
-  return html.replace(/\/assets\/site-chrome\.js(?:\?v=[^"]+)?/g, "/assets/site-chrome.js");
+  return html.replace(/\/assets\/site-chrome\.js(?:\?v=[^"]+)?/g, "/assets/site-chrome.js?v=footer-legal-plus-20260709");
 }
 
 function applyMegaMenuFallback(html) {

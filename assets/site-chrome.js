@@ -104,8 +104,61 @@
     return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a>${navLinks()}<a class="button small nav-download-cta" href="${href}" rel="nofollow noopener">${label}</a></nav></header>`;
   }
 
+  function footerColumn(title, links) {
+    return `<div class="footer-column"><h2>${title}</h2>${links.map(({ href, label, rel = "" }) => `<a href="${href}"${rel ? ` rel="${rel}"` : ""}>${label}</a>`).join("")}</div>`;
+  }
+
   function footer() {
-    return `<footer class="site-footer"><div class="footer-inner"><div class="footer-main"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><nav class="footer-links footer-primary" aria-label="Footer navigation"><a href="/cutlist/">CutList</a><a href="/quiltfit/">QuiltFit</a><a href="/plywood-cut-calculator/">Plywood</a><a href="/stringer/">Stairs</a><a href="/blog/">Blogs</a><a href="mailto:727268425@qq.com">Contact</a></nav></div><div class="footer-language"><span class="footer-language-label">Language</span>${languagePicker}</div><div class="footer-bottom"><p class="muted"><span>© 2026 WoodCutTool.</span> <span>All rights reserved.</span></p><nav class="footer-links footer-legal" aria-label="Legal navigation"><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a><a href="/disclaimer/">Disclaimer</a><a href="/sitemap.xml">Sitemap</a></nav></div></div></footer>`;
+    const product = [
+      { href: "/cutlist/", label: "CutList" },
+      { href: "/apps/cutlist/", label: "CutList iPhone app" },
+      { href: "/plywood-cut-calculator/", label: "Plywood calculator" },
+      { href: "/cut-list-calculator/", label: "Cut list calculator" },
+      { href: "/quiltfit/", label: "QuiltFit" },
+      { href: "/apps/quiltfit/", label: "QuiltFit app" },
+      { href: "/stringer/", label: "Stair stringer" },
+      { href: "/apps/stringer/", label: "Stringer app" },
+      { href: "/tile-calculator/", label: "Tile calculator" },
+      { href: "/tools/", label: "All tools" }
+    ];
+
+    const planning = [
+      { href: "/templates/kitchen-cabinet-cut-list/", label: "Kitchen cabinet cut list" },
+      { href: "/templates/bookcase-cut-list/", label: "Bookcase template" },
+      { href: "/templates/workbench-cut-list/", label: "Workbench template" },
+      { href: "/learn/how-many-sheets-of-plywood-do-i-need/", label: "Sheet count guide" },
+      { href: "/learn/how-to-reduce-plywood-waste/", label: "Reduce plywood waste" },
+      { href: "/learn/grain-direction-in-plywood-layouts/", label: "Grain direction" },
+      { href: "/learn/saw-kerf-explained/", label: "Saw kerf explained" },
+      { href: "/learn/project-cost-estimate-from-cut-list/", label: "Project cost estimate" },
+      { href: "/compare/best-way-to-create-a-wood-cut-list/", label: "Choose a cut list workflow" },
+      { href: "/compare/cut-list-app-vs-spreadsheet/", label: "App vs spreadsheet" }
+    ];
+
+    const resources = [
+      { href: "/learn/", label: "Learning hub" },
+      { href: "/templates/", label: "Templates" },
+      { href: "/compare/", label: "Comparisons" },
+      { href: "/glossary/", label: "Glossary" },
+      { href: "/wood/", label: "Wood species" },
+      { href: "/material-library/", label: "Material library" },
+      { href: "/blog/", label: "Blog" },
+      { href: "/apps/", label: "App library" },
+      { href: "mailto:727268425@qq.com", label: "Contact" },
+      { href: "/sitemap.xml", label: "Sitemap" }
+    ];
+
+    const legal = [
+      { href: "/privacy-policy/", label: "Privacy Policy" },
+      { href: "/terms-of-service/", label: "Terms of Service" },
+      { href: "/disclaimer/", label: "Disclaimer" },
+      { href: "/cookie-policy/", label: "Cookie Policy" },
+      { href: "/copyright-notice/", label: "Copyright Notice" },
+      { href: "/acceptable-use-policy/", label: "Acceptable Use" },
+      { href: "/external-links-policy/", label: "External Links" }
+    ];
+
+    return `<footer class="site-footer"><div class="footer-inner"><nav class="footer-directory" aria-label="Footer navigation">${footerColumn("Product", product)}${footerColumn("Planning", planning)}${footerColumn("Resources", resources)}${footerColumn("Legal", legal)}</nav><div class="footer-bottom"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><p class="muted">© 2026 WoodCutTool</p><div class="footer-actions">${languagePicker}</div></div></div></footer>`;
   }
 
   function mount(selector, fallbackSelector, html, insertFallback) {

@@ -224,7 +224,15 @@ function sitemapMeta(route) {
     return { changefreq: "yearly", priority: "0.55" };
   }
 
-  if (route === "/privacy-policy/" || route === "/terms-of-service/" || route === "/disclaimer/") {
+  if (
+    route === "/privacy-policy/" ||
+    route === "/terms-of-service/" ||
+    route === "/disclaimer/" ||
+    route === "/cookie-policy/" ||
+    route === "/copyright-notice/" ||
+    route === "/acceptable-use-policy/" ||
+    route === "/external-links-policy/"
+  ) {
     return { changefreq: "yearly", priority: "0.5" };
   }
 
@@ -255,7 +263,11 @@ function sortRoutes(routes) {
     "/blog/",
     "/privacy-policy/",
     "/terms-of-service/",
-    "/disclaimer/"
+    "/disclaimer/",
+    "/cookie-policy/",
+    "/copyright-notice/",
+    "/acceptable-use-policy/",
+    "/external-links-policy/"
   ];
   const order = new Map(preferredOrder.map((route, index) => [route, index]));
 
