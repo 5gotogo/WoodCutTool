@@ -35,8 +35,8 @@ const pages = {
   "legal/quiltfit/privacy/index.html": {},
   "legal/quiltfit/support/index.html": {},
   "tools/index.html": {
-    title: "Free Woodworking Calculators for Cuts, Waste & Cost",
-    desc: "Free woodworking calculators and DIY construction tools: plywood cuts, cut lists, board feet, waste, stairs, and tile. Pick a tool and start planning.",
+    title: "Woodworking & Construction Calculators | WoodCutTool",
+    desc: "Free woodworking and construction calculators for plywood, cabinets, deck, fence, stairs, roof pitch, concrete, boards, waste, and material planning.",
     bc: [["Home", "/"], ["Tools", "/tools/"]]
   },
   "plywood-cut-calculator/index.html": {

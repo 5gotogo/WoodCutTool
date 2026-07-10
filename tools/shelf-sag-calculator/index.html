@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shelf Sag Calculator — Approximate Deflection Check</title>
+  <meta name="description" content="Free shelf sag calculator. Estimate approximate shelf deflection from span, thickness, depth, load, and a chosen material stiffness value.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/tools/shelf-sag-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WoodCutTool">
+  <meta property="og:title" content="Shelf Sag Calculator — Approximate Deflection Check">
+  <meta property="og:description" content="Free shelf sag calculator. Estimate approximate shelf deflection from span, thickness, depth, load, and a chosen material stiffness value.">
+  <meta property="og:url" content="https://woodcuttool.com/tools/shelf-sag-calculator/">
+  <meta property="og:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shelf Sag Calculator — Approximate Deflection Check">
+  <meta name="twitter:description" content="Free shelf sag calculator. Estimate approximate shelf deflection from span, thickness, depth, load, and a chosen material stiffness value.">
+  <meta name="twitter:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
+  <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png?v=rounded-mask-20260619">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
+  <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
+  <meta name="theme-color" content="#e8d9b4">
+  <style>.mega-menu{display:none}</style>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/site-chrome.js"></script>
+  <script defer src="/assets/app.js"></script>
+  <script defer src="/assets/construction-calculators.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://woodcuttool.com/tools/shelf-sag-calculator/","name":"Shelf Sag Calculator","url":"https://woodcuttool.com/tools/shelf-sag-calculator/","description":"Free shelf sag calculator. Estimate approximate shelf deflection from span, thickness, depth, load, and a chosen material stiffness value.","isPartOf":{"@id":"https://woodcuttool.com/tools/"}},{"@type":"FAQPage","@id":"https://woodcuttool.com/tools/shelf-sag-calculator/#faq","mainEntity":[{"@type":"Question","name":"Why do long shelves sag?","acceptedAnswer":{"@type":"Answer","text":"Deflection rises very quickly as span increases, and it decreases strongly with greater shelf thickness or added supports."}},{"@type":"Question","name":"Can I use this for a heavy aquarium or structural load?","acceptedAnswer":{"@type":"Answer","text":"No. Seek a qualified professional for heavy, safety-critical, or unusual loads."}}]},{"@type":"BreadcrumbList","@id":"https://woodcuttool.com/tools/shelf-sag-calculator/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://woodcuttool.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://woodcuttool.com/tools/"},{"@type":"ListItem","position":3,"name":"Shelf Sag Calculator","item":"https://woodcuttool.com/tools/shelf-sag-calculator/"}]}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+  <main id="main">
+    <section class="page-hero">
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Shelf Sag Calculator</p>
+      <p class="eyebrow">Shelving planning</p>
+      <h1>Shelf Sag Calculator</h1>
+      <p class="lead">Estimate a simply supported shelf&#39;s theoretical mid-span deflection under a uniformly distributed load. Use the result to compare spans, thicknesses, and support options during early design.</p>
+    </section>
+    <section class="section tool-layout construction-tool" data-calculator="shelfSag">
+      <form class="tool-panel" data-construction-form>
+        <div class="section-heading compact"><p class="eyebrow">Project inputs</p><h2>Start with your actual measurements.</h2><p>Results update in your browser. Measurements and prices are not sent to a server.</p></div>
+        <div class="input-grid three"><label>Shelf span (in)<input name="span" type="number" min="0" step="0.1" value="36" required></label><label>Shelf depth (in)<input name="depth" type="number" min="0" step="0.1" value="12" required></label><label>Shelf thickness (in)<input name="thickness" type="number" min="0" step="0.01" value="0.75" required></label><label>Uniform load (lb)<input name="load" type="number" min="0" step="0.1" value="50" required></label><label>Material stiffness E (psi)<input name="modulus" type="number" min="0" step="1000" value="1200000" required></label></div>
+        <button class="button" type="submit">Calculate Shelf Sag Calculator</button>
+      </form>
+      <aside class="result-panel" data-construction-result aria-live="polite">
+        <h2>Shelf Sag Calculator result</h2>
+        <p class="placeholder">Enter project values and run the calculator to see a planning estimate.</p>
+      </aside>
+    </section>
+    <section class="section">
+      <div class="section-heading compact"><p class="eyebrow">How the estimate works</p><h2>Use the number as a planning starting point.</h2><p>For a simply supported shelf with a uniform load, the estimate uses 5wL⁴ divided by 384EI. E is the material modulus and I is the rectangular section&#39;s moment of inertia.</p></div>
+      <div class="grid tools">
+        <article class="card"><h3>Measure first</h3><p>Measure finished dimensions, actual stock, openings, and site constraints before ordering material.</p></article>
+        <article class="card"><h3>Check the result</h3><p>Real shelf behavior depends on material direction, creep, fasteners, support stiffness, edge banding, brackets, concentrated loads, humidity, and construction details. Do not use this as a safety certification.</p></article>
+        <article class="card"><h3>Plan the next step</h3><p>Use the related calculators below to turn a first estimate into a material list, layout, or a more detailed project plan.</p></article>
+      </div>
+      <div class="cta-row"><a class="button secondary" href="/tools/">Browse all woodworking and construction tools</a></div>
+    </section>
+    <section class="section" id="faq">
+      <div class="section-heading compact"><p class="eyebrow">FAQ</p><h2>Common Shelf Sag Calculator questions</h2></div>
+      <div class="grid tools"><article class="card"><h3>Why do long shelves sag?</h3><p>Deflection rises very quickly as span increases, and it decreases strongly with greater shelf thickness or added supports.</p></article><article class="card"><h3>Can I use this for a heavy aquarium or structural load?</h3><p>No. Seek a qualified professional for heavy, safety-critical, or unusual loads.</p></article></div>
+    </section>
+    <section class="section">
+      <div class="section-heading compact"><p class="eyebrow">Related tools</p><h2>Keep the project moving.</h2></div>
+      <div class="grid tools"><article class="card"><h3>Cabinet Cut List Calculator</h3><p>Free cabinet cut list calculator. Create a starter plywood parts list for base or wall cabinets, shelves, backs, and sheet estimates.</p><a class="card-link" href="/tools/cabinet-cut-list-calculator/">Open Cabinet Cut List Calculator</a></article><article class="card"><h3>Joist Span Planning Tool</h3><p>Free joist span planning tool for preliminary deck framing notes. Record span, spacing, member depth, and load context before checking approved local span tables.</p><a class="card-link" href="/tools/joist-span-calculator/">Open Joist Span Planning Tool</a></article></div>
+    </section>
+    <section class="section"><p class="notice"><strong>Planning disclaimer:</strong> WoodCutTool results are estimates. Verify measurements, product instructions, material condition, local requirements, and safety practices before buying, cutting, or building.</p></section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

@@ -209,18 +209,24 @@
       <div class="tool-panel">
         <form id="board-foot-form">
           <fieldset>
-            <legend>Lumber dimensions</legend>
-            <div class="input-grid four">
-              <label>Length (ft) <input name="lengthFeet" type="number" min="0.01" step="0.01" value="8"></label>
-              <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="6"></label>
-              <label>Thickness (in) <input name="thickness" type="number" min="0.01" step="0.01" value="1"></label>
-              <label>Quantity <input name="qty" type="number" min="1" step="1" value="4"></label>
+            <legend>Lumber rows</legend>
+            <p class="notice">Use one row per lumber size. Nominal thickness presets are shown as rough-sawn dimensions; confirm the actual lumber you are buying.</p>
+            <div id="board-foot-rows">
+              <div class="piece-row four">
+                <label>Length (ft) <input name="lengthFeet" type="number" min="0.01" step="0.01" value="8"></label>
+                <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="6"></label>
+                <label>Thickness <select name="thickness"><option value="1">4/4 (1 in)</option><option value="1.25">5/4 (1.25 in)</option><option value="1.5">6/4 (1.5 in)</option><option value="2">8/4 (2 in)</option><option value="3">12/4 (3 in)</option></select></label>
+                <label>Quantity <input name="qty" type="number" min="1" step="1" value="4"></label>
+              </div>
             </div>
+            <button class="button secondary small" id="add-board-foot-row" type="button">Add lumber row</button>
           </fieldset>
           <fieldset>
             <legend>Optional cost</legend>
-            <div class="input-grid two">
+            <div class="input-grid three">
               <label>Price per board foot <input name="price" type="number" min="0" step="0.01" value="8.50"></label>
+              <label>Waste allowance (%) <input name="waste" type="number" min="0" step="1" value="10"></label>
+              <label>Species <select name="species"><option value="oak">Oak (about 47 lb/ft³)</option><option value="maple">Maple (about 44 lb/ft³)</option><option value="walnut">Walnut (about 38 lb/ft³)</option><option value="pine">Pine (about 30 lb/ft³)</option><option value="custom">Other / verify weight</option></select></label>
             </div>
           </fieldset>
           <button class="button" type="submit">Calculate board feet</button>

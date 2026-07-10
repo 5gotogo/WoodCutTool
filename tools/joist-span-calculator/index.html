@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joist Span Planning Tool — Preliminary Deck Framing Check</title>
+  <meta name="description" content="Free joist span planning tool for preliminary deck framing notes. Record span, spacing, member depth, and load context before checking approved local span tables.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/tools/joist-span-calculator/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="WoodCutTool">
+  <meta property="og:title" content="Joist Span Planning Tool — Preliminary Deck Framing Check">
+  <meta property="og:description" content="Free joist span planning tool for preliminary deck framing notes. Record span, spacing, member depth, and load context before checking approved local span tables.">
+  <meta property="og:url" content="https://woodcuttool.com/tools/joist-span-calculator/">
+  <meta property="og:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Joist Span Planning Tool — Preliminary Deck Framing Check">
+  <meta name="twitter:description" content="Free joist span planning tool for preliminary deck framing notes. Record span, spacing, member depth, and load context before checking approved local span tables.">
+  <meta name="twitter:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
+  <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png?v=rounded-mask-20260619">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
+  <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
+  <meta name="theme-color" content="#e8d9b4">
+  <style>.mega-menu{display:none}</style>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/site-chrome.js"></script>
+  <script defer src="/assets/app.js"></script>
+  <script defer src="/assets/construction-calculators.js"></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://woodcuttool.com/tools/joist-span-calculator/","name":"Joist Span Planning Tool","url":"https://woodcuttool.com/tools/joist-span-calculator/","description":"Free joist span planning tool for preliminary deck framing notes. Record span, spacing, member depth, and load context before checking approved local span tables.","isPartOf":{"@id":"https://woodcuttool.com/tools/"}},{"@type":"FAQPage","@id":"https://woodcuttool.com/tools/joist-span-calculator/#faq","mainEntity":[{"@type":"Question","name":"Why does the tool not give a safe joist span?","acceptedAnswer":{"@type":"Answer","text":"A safe span depends on code tables and project-specific variables that a simple generic calculator cannot certify."}},{"@type":"Question","name":"What information do I need for a joist span table?","acceptedAnswer":{"@type":"Answer","text":"Usually species, grade, size, spacing, design load, support condition, and the locally adopted code edition."}}]},{"@type":"BreadcrumbList","@id":"https://woodcuttool.com/tools/joist-span-calculator/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://woodcuttool.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://woodcuttool.com/tools/"},{"@type":"ListItem","position":3,"name":"Joist Span Planning Tool","item":"https://woodcuttool.com/tools/joist-span-calculator/"}]}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+  <main id="main">
+    <section class="page-hero">
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Joist Span Planning Tool</p>
+      <p class="eyebrow">Deck framing</p>
+      <h1>Joist Span Planning Tool</h1>
+      <p class="lead">Capture the key dimensions you need before consulting an approved joist span table: clear span, joist spacing, nominal depth, species/grade, and loading conditions. It intentionally does not claim a safe span from a generic formula.</p>
+    </section>
+    <section class="section tool-layout construction-tool" data-calculator="joist">
+      <form class="tool-panel" data-construction-form>
+        <div class="section-heading compact"><p class="eyebrow">Project inputs</p><h2>Start with your actual measurements.</h2><p>Results update in your browser. Measurements and prices are not sent to a server.</p></div>
+        <div class="input-grid three"><label>Clear span (ft)<input name="span" type="number" min="0" step="0.1" value="10" required></label><label>Joist spacing (in)<input name="spacing" type="number" min="0" step="1" value="16" required></label><label>Nominal joist depth (in)<input name="depth" type="number" min="0" step="1" value="10" required></label><label>Design load (psf)<input name="load" type="number" min="0" step="1" value="50" required></label></div>
+        <button class="button" type="submit">Calculate Joist Span Planning Tool</button>
+      </form>
+      <aside class="result-panel" data-construction-result aria-live="polite">
+        <h2>Joist Span Planning Tool result</h2>
+        <p class="placeholder">Enter project values and run the calculator to see a planning estimate.</p>
+      </aside>
+    </section>
+    <section class="section">
+      <div class="section-heading compact"><p class="eyebrow">How the estimate works</p><h2>Use the number as a planning starting point.</h2><p>The page records the controlling inputs and gives a span-to-depth planning ratio, but an approved table or qualified professional must determine the permitted span for the exact species, grade, load, and code edition.</p></div>
+      <div class="grid tools">
+        <article class="card"><h3>Measure first</h3><p>Measure finished dimensions, actual stock, openings, and site constraints before ordering material.</p></article>
+        <article class="card"><h3>Check the result</h3><p>Do not use this page to approve a structural member. Deck framing safety depends on species, grade stamp, loading, bearing, connection, cantilever, notches, holes, and the locally adopted code.</p></article>
+        <article class="card"><h3>Plan the next step</h3><p>Use the related calculators below to turn a first estimate into a material list, layout, or a more detailed project plan.</p></article>
+      </div>
+      <div class="cta-row"><a class="button secondary" href="/tools/">Browse all woodworking and construction tools</a></div>
+    </section>
+    <section class="section" id="faq">
+      <div class="section-heading compact"><p class="eyebrow">FAQ</p><h2>Common Joist Span Planning Tool questions</h2></div>
+      <div class="grid tools"><article class="card"><h3>Why does the tool not give a safe joist span?</h3><p>A safe span depends on code tables and project-specific variables that a simple generic calculator cannot certify.</p></article><article class="card"><h3>What information do I need for a joist span table?</h3><p>Usually species, grade, size, spacing, design load, support condition, and the locally adopted code edition.</p></article></div>
+    </section>
+    <section class="section">
+      <div class="section-heading compact"><p class="eyebrow">Related tools</p><h2>Keep the project moving.</h2></div>
+      <div class="grid tools"><article class="card"><h3>Deck Cost &amp; Material Calculator</h3><p>Free deck cost and material calculator. Estimate decking boards, joists, fasteners, waste allowance, and a starting material budget.</p><a class="card-link" href="/tools/deck-calculator/">Open Deck Cost &amp; Material Calculator</a></article><article class="card"><h3>Post Hole Concrete Calculator</h3><p>Free post hole concrete calculator. Estimate concrete volume and 40, 50, 60, or 80 lb bags for fence, deck, pergola, and mailbox posts.</p><a class="card-link" href="/tools/post-hole-concrete-calculator/">Open Post Hole Concrete Calculator</a></article><article class="card"><h3>Deck Stair Calculator</h3><p>Free deck stair calculator. Estimate deck stair risers, treads, rise, run, angle, and approximate stringer length for early layout planning.</p><a class="card-link" href="/tools/deck-stair-calculator/">Open Deck Stair Calculator</a></article><article class="card"><h3>Shelf Sag Calculator</h3><p>Free shelf sag calculator. Estimate approximate shelf deflection from span, thickness, depth, load, and a chosen material stiffness value.</p><a class="card-link" href="/tools/shelf-sag-calculator/">Open Shelf Sag Calculator</a></article></div>
+    </section>
+    <section class="section"><p class="notice"><strong>Planning disclaimer:</strong> WoodCutTool results are estimates. Verify measurements, product instructions, material condition, local requirements, and safety practices before buying, cutting, or building.</p></section>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

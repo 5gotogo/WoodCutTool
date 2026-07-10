@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { constructionTools } from "./construction-tool-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
@@ -330,7 +331,8 @@ function toolsHubGraph() {
     {
       path: "/wood/",
       name: "Wood Species Library"
-    }
+    },
+    ...constructionTools.map((tool) => ({ path: tool.route, name: tool.name }))
   ];
   const itemListElement = [...softwareTools, ...referenceTools].map((tool, index) => ({
     "@type": "ListItem",
@@ -348,9 +350,9 @@ function toolsHubGraph() {
         "@id": `${siteUrl}/tools/#collection`,
         name: "WoodCutTool Tools Hub",
         url: `${siteUrl}/tools/`,
-        description: "A topic hub for woodworking calculators, material calculators, DIY construction tools, cut list optimizer workflows, and productivity apps by WoodCutTool.",
-        keywords: "woodworking calculator, cut list optimizer, material calculator, DIY construction tools",
-        about: ["woodworking calculator", "cut list optimizer", "material calculator", "DIY construction tools"],
+        description: "A topic hub for woodworking calculators, cut list optimization, deck and fence material estimates, stair layout, roof geometry, and practical DIY construction planning.",
+        keywords: "woodworking calculator, cut list optimizer, deck calculator, fence calculator, roof pitch calculator, DIY construction tools",
+        about: ["woodworking calculator", "cut list optimizer", "deck material planning", "fence material planning", "roof pitch", "DIY construction tools"],
         mainEntity: {
           "@type": "ItemList",
           itemListElement

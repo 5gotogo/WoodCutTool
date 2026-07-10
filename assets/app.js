@@ -4522,6 +4522,16 @@ function initStairs() {
     const codeNote = riserHeight > 7.75 ? "Check local code: riser height is above 7.75 in." : "Riser height is within the common 7.75 in residential maximum.";
     const meetsCommonRiser = riserHeight <= 7.75;
     const preview = stairPreviewSvg({ risers, treads, totalRise, actualRun, riserHeight, treadDepth, stairAngle, stringerLength });
+    const options = [risers - 1, risers, risers + 1]
+      .filter((count, index, list) => count >= 2 && list.indexOf(count) === index)
+      .map((count) => {
+        const optionTreads = count - 1;
+        const optionRiser = totalRise / count;
+        const optionTread = totalRun / optionTreads;
+        const comfort = 2 * optionRiser + optionTread;
+        const status = optionRiser <= maxRiser ? "Within target riser" : "Above target riser";
+        return `<article class="card"><h3>${count} risers</h3><p><strong>${format(optionRiser)} in</strong> riser · <strong>${format(optionTread)} in</strong> tread</p><p>Comfort check: 2R + T = ${format(comfort)} in · ${status}</p></article>`;
+      }).join("");
 
     result.innerHTML = `
       <h2>Stair stringer result</h2>
@@ -4561,6 +4571,7 @@ function initStairs() {
         <li><strong>${t("Approximate stringer length")}</strong>: ${format(stringerLength)} ${t("in before end cuts.")}</li>
         <li><strong>${t("Total run")}</strong>: ${format(actualRun)} ${t("in.")}</li>
       </ul>
+      <section class="stair-options"><h3>Compare nearby layout options</h3><div class="grid tools">${options}</div></section>
       <p class="notice">${t(codeNote)} ${t("Always confirm local building requirements before cutting.")}</p>
       ${stringerCta()}
     `;
@@ -4573,26 +4584,52 @@ function initBoardFoot() {
   const result = document.getElementById("board-foot-result");
   if (!form || !result) return;
 
+  setupRows("board-foot-rows", "add-board-foot-row", () => `
+    <div class="piece-row four">
+      <label>Length (ft) <input name="lengthFeet" type="number" min="0.01" step="0.01" value="8"></label>
+      <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="6"></label>
+      <label>Thickness <select name="thickness"><option value="1">4/4 (1 in)</option><option value="1.25">5/4 (1.25 in)</option><option value="1.5">6/4 (1.5 in)</option><option value="2">8/4 (2 in)</option><option value="3">12/4 (3 in)</option></select></label>
+      <label>Quantity <input name="qty" type="number" min="1" step="1" value="1"></label>
+      <button class="button secondary remove-row" type="button">Remove</button>
+    </div>
+  `);
+
   form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const lengthFeet = numberValue(form, "lengthFeet", 8);
-    const width = numberValue(form, "width", 6);
-    const thickness = numberValue(form, "thickness", 1);
-    const qty = numberValue(form, "qty", 1);
+    const rows = [...form.querySelectorAll("#board-foot-rows .piece-row")].map((row) => ({
+      lengthFeet: Number(row.querySelector('[name="lengthFeet"]')?.value) || 0,
+      width: Number(row.querySelector('[name="width"]')?.value) || 0,
+      thickness: Number(row.querySelector('[name="thickness"]')?.value) || 0,
+      qty: Number(row.querySelector('[name="qty"]')?.value) || 0
+    })).filter((row) => row.lengthFeet > 0 && row.width > 0 && row.thickness > 0 && row.qty > 0);
     const price = numberValue(form, "price", 0);
-    const boardFeet = (thickness * width * lengthFeet * qty) / 12;
+    const waste = Math.max(0, numberValue(form, "waste", 0));
+    const species = form.elements.species?.value || "custom";
+    const density = { oak: 47, maple: 44, walnut: 38, pine: 30 }[species] || 0;
+    const baseBoardFeet = rows.reduce((sum, row) => sum + (row.thickness * row.width * row.lengthFeet * row.qty) / 12, 0);
+    const boardFeet = baseBoardFeet * (1 + waste / 100);
     const cost = boardFeet * price;
+    const cubicFeet = boardFeet / 12;
+    const estimatedWeight = cubicFeet * density;
+    const rowSummary = rows.map((row) => `${format(row.qty, 0)} × ${format(row.thickness)} × ${format(row.width)} × ${format(row.lengthFeet)} ft`).join("; ");
 
     result.innerHTML = `
       <h2>Board foot estimate</h2>
       <div class="metric-grid">
         <div class="metric"><strong>${format(boardFeet)}</strong><span>Board feet</span></div>
         <div class="metric"><strong>${format(cost)}</strong><span>Total cost</span></div>
-        <div class="metric"><strong>${format(boardFeet / Math.max(qty, 1))}</strong><span>BF per board</span></div>
+        <div class="metric"><strong>${format(baseBoardFeet)}</strong><span>BF before waste</span></div>
         <div class="metric"><strong>${format(price)}</strong><span>Price per BF</span></div>
       </div>
+      <ul class="plan-list">
+        <li><strong>Rows:</strong> ${rowSummary || "Add a valid lumber row."}</li>
+        <li><strong>Waste allowance:</strong> ${format(waste)}% (${format(boardFeet - baseBoardFeet)} additional board feet).</li>
+        <li><strong>Estimated volume:</strong> ${format(cubicFeet)} ft³${density ? ` · estimated ${species} weight: ${format(estimatedWeight)} lb` : " · add a species estimate separately if weight matters."}</li>
+      </ul>
+      <div class="cta-row"><button class="button secondary small board-foot-print" type="button">Print summary</button></div>
       ${appCta()}
     `;
+    result.querySelector(".board-foot-print")?.addEventListener("click", () => window.print());
     translateElement(result, getActiveLang());
   });
 }
