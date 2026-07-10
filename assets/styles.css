@@ -9305,3 +9305,55 @@ tr:last-child td {
 .footer-disclaimer strong {
   color: var(--ink);
 }
+
+/* Shared SVG and copyable-output treatment for generated calculators. */
+.calculator-svg {
+  display: block;
+  width: 100%;
+  min-height: 220px;
+  margin: 18px 0;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #fff, #f6f4ec);
+}
+.calculator-svg rect {
+  fill: rgba(47, 111, 78, 0.1);
+  stroke: var(--accent);
+  stroke-width: 3;
+}
+.calculator-svg line {
+  stroke: var(--accent-2);
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+}
+.calculator-svg text {
+  fill: currentColor;
+  font-size: 13px;
+  font-family: inherit;
+  font-weight: 750;
+}
+.cut-list-output {
+  margin-top: 18px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.cut-list-output-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+}
+.cut-list-output pre {
+  margin: 0;
+  padding: 14px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  color: var(--ink);
+  background: #fbfaf6;
+  font: 700 13px/1.65 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}

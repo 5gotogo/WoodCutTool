@@ -327,6 +327,7 @@ function pageGraph(tool) {
 }
 
 function toolsHubGraph() {
+  const browserTools = softwareTools.filter((tool) => !tool.path.startsWith("/apps/"));
   const referenceTools = [
     {
       path: "/wood/",
@@ -334,7 +335,7 @@ function toolsHubGraph() {
     },
     ...constructionTools.map((tool) => ({ path: tool.route, name: tool.name }))
   ];
-  const itemListElement = [...softwareTools, ...referenceTools].map((tool, index) => ({
+  const itemListElement = [...browserTools, ...referenceTools].map((tool, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: tool.name,
@@ -358,7 +359,7 @@ function toolsHubGraph() {
           itemListElement
         }
       },
-      ...softwareTools.slice(0, 5).map(softwareSchema),
+      ...browserTools.slice(0, 5).map(softwareSchema),
       {
         "@type": "FAQPage",
         "@id": `${siteUrl}/tools/#faq`,

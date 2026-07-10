@@ -51,28 +51,36 @@ function pageHead({ title, description, canonical, schema }) {
 }
 
 function inputMarkup([label, name, value, extra]) {
+  const isDimension = label.includes("(in)");
+  const visibleLabel = isDimension
+    ? `${escapeHtml(label.replace("(in)", "").trim())} (<span data-unit-label>in</span>)`
+    : escapeHtml(label);
   if (typeof extra === "string" && extra.startsWith("select:")) {
     const options = extra.slice(7).split(",").map((pair) => {
       const [optionLabel, optionValue] = pair.split("|");
-      return `<option value="${escapeHtml(optionValue)}"${optionValue === value ? " selected" : ""}>${escapeHtml(optionLabel)}</option>`;
+      return `<option value="${escapeHtml(optionValue)}"${String(optionValue) === String(value) ? " selected" : ""}>${escapeHtml(optionLabel)}</option>`;
     }).join("");
-    return `<label>${escapeHtml(label)}<select name="${escapeHtml(name)}">${options}</select></label>`;
+    return `<label>${visibleLabel}<select name="${escapeHtml(name)}">${options}</select></label>`;
   }
   const step = extra || 0.01;
-  return `<label>${escapeHtml(label)}<input name="${escapeHtml(name)}" type="number" min="0" step="${escapeHtml(step)}" value="${escapeHtml(value)}" required></label>`;
+  return `<label>${visibleLabel}<input name="${escapeHtml(name)}" type="number" min="0" step="${escapeHtml(step)}" value="${escapeHtml(value)}"${isDimension ? " data-dimension-input" : ""} required></label>`;
 }
 
 function toolSchema(tool) {
   const canonical = `${siteUrl}${tool.route}`;
+  const sectionName = tool.section === "woodworking" ? "Woodworking Tools" : "Construction Tools";
+  const sectionUrl = `${siteUrl}/tools/${tool.section}/`;
   return {
     "@context": "https://schema.org",
     "@graph": [
       { "@type": "WebPage", "@id": canonical, name: tool.name, url: canonical, description: tool.description, isPartOf: { "@id": `${siteUrl}/tools/` } },
+      { "@type": "WebApplication", "@id": `${canonical}#application`, name: tool.name, url: canonical, description: tool.description, applicationCategory: "DesignApplication", operatingSystem: "Any", browserRequirements: "Requires JavaScript in a modern web browser", isAccessibleForFree: true, featureList: ["Browser-based calculation", "Visible result summary", "Project assumptions", "Related planning links"] },
       { "@type": "FAQPage", "@id": `${canonical}#faq`, mainEntity: tool.faqs.map(([name, text]) => ({ "@type": "Question", name, acceptedAnswer: { "@type": "Answer", text } })) },
       { "@type": "BreadcrumbList", "@id": `${canonical}#breadcrumb`, itemListElement: [
         { "@type": "ListItem", position: 1, name: "Home", item: `${siteUrl}/` },
         { "@type": "ListItem", position: 2, name: "Tools", item: `${siteUrl}/tools/` },
-        { "@type": "ListItem", position: 3, name: tool.name, item: canonical }
+        { "@type": "ListItem", position: 3, name: sectionName, item: sectionUrl },
+        { "@type": "ListItem", position: 4, name: tool.name, item: canonical }
       ] }
     ]
   };
@@ -88,16 +96,27 @@ function relatedCards(slugs) {
 
 function toolPage(tool) {
   const canonical = `${siteUrl}${tool.route}`;
-  const cta = tool.type === "cabinet"
-    ? `<a class="button" href="/apps/cutlist/">Open CutList for saved sheet layouts</a>`
+  const sectionName = tool.section === "woodworking" ? "Woodworking Tools" : "Construction Tools";
+  const cta = tool.engine === "CutListGenerator" || tool.engine === "SpacingEngine"
+    ? `<a class="button" href="/apps/cutlist/">Optimize this cut list in CutList</a>`
     : `<a class="button secondary" href="/tools/">Browse all woodworking and construction tools</a>`;
+  const productBoundary = tool.engine === "CutListGenerator" || tool.engine === "SpacingEngine"
+    ? `<p class="notice"><strong>Website:</strong> one-time calculation, SVG preview, and copyable results. <strong>CutList app:</strong> saved projects, later edits, full plywood optimization, PDF export, history, and offline use.</p>`
+    : "";
+  const contextCards = tool.contexts ? `
+        <article class="card"><h3>Project template</h3><p>Start from an indexed static project example, then bring confirmed dimensions back into this calculator.</p><a class="card-link" href="${tool.contexts.template}">Open related template</a></article>
+        <article class="card"><h3>Learn the workflow</h3><p>Review the measurement assumptions and cut-list method before batching material.</p><a class="card-link" href="${tool.contexts.learn}">Read related guide</a></article>
+        <article class="card"><h3>Compare the options</h3><p>Understand the construction or hardware choice that changes the final dimensions.</p><a class="card-link" href="${tool.contexts.compare}">Read related comparison</a></article>` : "";
+  const unitSwitch = tool.unitSwitch
+    ? `<label>Units<select name="unit" data-unit-switch><option value="imperial">Imperial (in)</option><option value="metric">Metric (mm)</option></select></label>`
+    : "";
   return `${pageHead({ title: tool.title, description: tool.description, canonical, schema: toolSchema(tool) })}
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div data-site-header></div>
   <main id="main">
     <section class="page-hero">
-      <p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / ${escapeHtml(tool.name)}</p>
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / <a href="/tools/${tool.section}/">${sectionName}</a> / ${escapeHtml(tool.name)}</p>
       <p class="eyebrow">${escapeHtml(tool.category)}</p>
       <h1>${escapeHtml(tool.h1)}</h1>
       <p class="lead">${escapeHtml(tool.intro)}</p>
@@ -105,10 +124,10 @@ function toolPage(tool) {
     <section class="section tool-layout construction-tool" data-calculator="${escapeHtml(tool.type)}">
       <form class="tool-panel" data-construction-form>
         <div class="section-heading compact"><p class="eyebrow">Project inputs</p><h2>Start with your actual measurements.</h2><p>Results update in your browser. Measurements and prices are not sent to a server.</p></div>
-        <div class="input-grid three">${tool.inputs.map(inputMarkup).join("")}</div>
+        <div class="input-grid three">${unitSwitch}${tool.inputs.map(inputMarkup).join("")}</div>
         <button class="button" type="submit">Calculate ${escapeHtml(tool.name)}</button>
       </form>
-      <aside class="result-panel" data-construction-result aria-live="polite">
+      <aside class="result-panel" data-construction-result data-result-title="${escapeHtml(tool.name)}" aria-live="polite">
         <h2>${escapeHtml(tool.name)} result</h2>
         <p class="placeholder">Enter project values and run the calculator to see a planning estimate.</p>
       </aside>
@@ -120,8 +139,9 @@ function toolPage(tool) {
         <article class="card"><h3>Check the result</h3><p>${escapeHtml(tool.detail)}</p></article>
         <article class="card"><h3>Plan the next step</h3><p>Use the related calculators below to turn a first estimate into a material list, layout, or a more detailed project plan.</p></article>
       </div>
-      <div class="cta-row">${cta}</div>
+      ${productBoundary}<div class="cta-row">${cta}</div>
     </section>
+    ${contextCards ? `<section class="section"><div class="section-heading compact"><p class="eyebrow">Project context</p><h2>Template, guide, and comparison links.</h2></div><div class="grid tools">${contextCards}</div></section>` : ""}
     <section class="section" id="faq">
       <div class="section-heading compact"><p class="eyebrow">FAQ</p><h2>Common ${escapeHtml(tool.name)} questions</h2></div>
       <div class="grid tools">${tool.faqs.map(([question, answer]) => `<article class="card"><h3>${escapeHtml(question)}</h3><p>${escapeHtml(answer)}</p></article>`).join("")}</div>
@@ -135,6 +155,10 @@ function toolPage(tool) {
   <div data-site-footer></div>
 </body>
 </html>`;
+}
+
+function legacyAliasPage(tool) {
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><link rel="canonical" href="${siteUrl}${tool.route}"><meta http-equiv="refresh" content="0;url=${tool.route}"><title>Moved: ${escapeHtml(tool.name)}</title></head><body><p>This calculator moved to <a href="${tool.route}">${escapeHtml(tool.route)}</a>.</p></body></html>`;
 }
 
 function hubPage([slug, name, description, toolSlugs]) {
@@ -162,6 +186,9 @@ for (const tool of constructionTools) {
   const target = join(root, tool.route, "index.html");
   mkdirSync(dirname(target), { recursive: true });
   writeFileSync(target, toolPage(tool));
+  const aliasTarget = join(root, tool.legacyRoute, "index.html");
+  mkdirSync(dirname(aliasTarget), { recursive: true });
+  writeFileSync(aliasTarget, legacyAliasPage(tool));
 }
 
 for (const hub of constructionHubs) {

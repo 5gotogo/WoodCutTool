@@ -1,6 +1,6 @@
-const route = (slug) => `/tools/${slug}/`;
+const route = (slug) => `/${slug}/`;
 
-export const constructionTools = [
+const tools = [
   {
     slug: "fence-calculator",
     name: "Fence Calculator",
@@ -119,11 +119,68 @@ export const constructionTools = [
     type: "cabinet",
     h1: "Cabinet Cut List Calculator",
     intro: "Start a frameless cabinet cut list from the outside width, height, depth, material thickness, shelf count, and cabinet style. Use the result as a planning list before sending exact parts into a sheet optimizer.",
-    inputs: [["Cabinet type", "cabinetType", "base", "select:Base cabinet|base,Wall cabinet|wall"], ["Outside width (in)", "width", 30, 0.1], ["Outside height (in)", "height", 34.5, 0.1], ["Outside depth (in)", "depth", 24, 0.1], ["Material thickness (in)", "thickness", 0.75, 0.01], ["Adjustable shelves", "shelves", 1, 1], ["Waste (%)", "waste", 12, 1]],
+    unitSwitch: true,
+    engine: "CutListGenerator",
+    inputs: [["Cabinet type", "cabinetType", "base", "select:Base cabinet|base,Wall cabinet|wall,Bookcase|bookcase,Closet tower|closet"], ["Outside width (in)", "width", 30, 0.1], ["Outside height (in)", "height", 34.5, 0.1], ["Outside depth (in)", "depth", 24, 0.1], ["Material thickness (in)", "thickness", 0.75, 0.01], ["Back panel thickness (in)", "backThickness", 0.25, 0.01], ["Adjustable shelves", "shelves", 1, 1], ["Waste (%)", "waste", 12, 1]],
     formula: "Side panels use full height and depth. The top, bottom, and shelves fit between sides; the back is sized from the overall cabinet dimensions. The sheet estimate uses total panel area plus waste.",
     detail: "This is a starter, frameless cabinet list. Toe kicks, face frames, door and drawer clearances, hardware, rabbets, dados, finished dimensions, and local installation conditions require project-specific confirmation.",
-    related: ["plywood-cut-calculator", "cut-list-calculator", "board-foot-calculator", "fence-calculator"],
+    contexts: { template: "/templates/kitchen-cabinet-cut-list/", learn: "/learn/cabinet-box-cut-list-basics/", compare: "/compare/face-frame-vs-frameless-cabinets/" },
+    related: ["drawer-box-calculator", "cabinet-door-calculator", "shelf-spacing-calculator", "shelf-sag-calculator"],
     faqs: [["Can I use this for face-frame cabinets?", "Use it as a rough starting point only. Face frames, overlays, reveals, and rail/stile dimensions need their own design rules."], ["Does it optimize plywood sheets?", "It estimates panel area. Open the Plywood Cut Calculator or CutList after you confirm the finished part dimensions."]]
+  },
+  {
+    slug: "drawer-box-calculator",
+    name: "Drawer Box Calculator",
+    title: "Drawer Box Calculator — Dimensions & Five-Part Cut List",
+    description: "Free drawer box calculator for side-mount and undermount slides. Get finished box size, sides, front, back, bottom, area, and plywood estimate.",
+    category: "Cabinet & furniture",
+    type: "drawerBox",
+    engine: "CutListGenerator",
+    unitSwitch: true,
+    h1: "Drawer Box Calculator",
+    intro: "Turn a measured cabinet opening and slide clearance into a five-part drawer box list. Choose slide type, material thickness, bottom style, and the number of identical drawers.",
+    inputs: [["Opening width (in)", "openingWidth", 22, 0.1], ["Opening height (in)", "openingHeight", 6, 0.1], ["Cabinet depth (in)", "cabinetDepth", 24, 0.1], ["Slide type", "slideType", "side", "select:Side-mount|side,Undermount|under,Center-mount / custom|custom"], ["Total side clearance (in)", "clearance", 1, 0.01], ["Box material thickness (in)", "thickness", 0.5, 0.01], ["Bottom style", "bottomStyle", "captured", "select:Captured in groove|captured,Applied under box|applied"], ["Bottom thickness (in)", "bottomThickness", 0.25, 0.01], ["Box count", "qty", 1, 1], ["Waste (%)", "waste", 10, 1]],
+    formula: "Finished box width equals opening width minus the slide manufacturer's total clearance. Side length allows for cabinet depth and rear clearance; front and back fit between the sides.",
+    detail: "Slide clearances and locking-device requirements vary by manufacturer. Confirm the exact slide instructions before cutting repeated drawer parts.",
+    contexts: { template: "/templates/drawer-box-cut-list/", learn: "/learn/drawer-box-cut-list-basics/", compare: "/compare/drawer-slides-side-mount-vs-undermount/" },
+    related: ["cabinet-cut-list-calculator", "cabinet-door-calculator", "shelf-spacing-calculator", "shelf-sag-calculator"],
+    faqs: [["How wide should a drawer box be?", "Subtract the exact total slide clearance from the measured opening width. Side-mount slides commonly require a different clearance than undermount hardware."], ["Does the bottom fit inside the box?", "The captured-bottom option sizes a panel within the box geometry; the applied-bottom option sizes it to the outside footprint. Confirm groove depth and assembly method."]]
+  },
+  {
+    slug: "cabinet-door-calculator",
+    name: "Cabinet Door Calculator",
+    title: "Cabinet Door Size Calculator — Inset, Overlay & Shaker Parts",
+    description: "Free cabinet door calculator for inset, full-overlay, and partial-overlay doors. Calculate single or double door sizes plus Shaker rails, stiles, and panel size.",
+    category: "Cabinet & furniture",
+    type: "cabinetDoor",
+    engine: "CutListGenerator",
+    unitSwitch: true,
+    h1: "Cabinet Door Size Calculator",
+    intro: "Calculate finished cabinet door sizes from the measured opening, construction style, reveal or overlay, and single- or double-door layout. Optional Shaker inputs also produce rail, stile, and center-panel dimensions.",
+    inputs: [["Opening width (in)", "openingWidth", 30, 0.1], ["Opening height (in)", "openingHeight", 24, 0.1], ["Door style", "doorStyle", "full", "select:Inset|inset,Full overlay|full,Partial overlay|partial"], ["Door count", "doorCount", 2, "select:Single door|1,Double doors|2"], ["Reveal / overlay per edge (in)", "edge", 0.5, 0.01], ["Center gap (in)", "centerGap", 0.125, 0.01], ["Rail width (in)", "railWidth", 2.25, 0.01], ["Stile width (in)", "stileWidth", 2.25, 0.01], ["Panel groove depth (in)", "groove", 0.375, 0.01], ["Waste (%)", "waste", 10, 1]],
+    formula: "Inset doors subtract reveals from the opening. Overlay doors add the selected overlay to both edges. Double doors divide the available width after the center gap.",
+    detail: "Hinge overlays, face-frame dimensions, edge profiles, panel expansion, and hardware clearances vary. Build a test door or verify manufacturer specifications before batching parts.",
+    contexts: { template: "/templates/kitchen-cabinet-cut-list/", learn: "/learn/cabinet-door-cut-list-planning/", compare: "/compare/inset-vs-overlay-cabinet-doors/" },
+    related: ["cabinet-cut-list-calculator", "drawer-box-calculator", "shelf-spacing-calculator", "crown-molding-angle-calculator"],
+    faqs: [["How do I size inset cabinet doors?", "Subtract the chosen reveal from every opening edge, then divide the remaining width if the opening uses two doors."], ["How are Shaker panel dimensions calculated?", "The panel fits between rails and stiles and extends into the grooves. Confirm the actual groove depth and allow for solid-wood movement when appropriate."]]
+  },
+  {
+    slug: "shelf-spacing-calculator",
+    name: "Shelf Spacing Calculator",
+    title: "Shelf Spacing Calculator — Equal Gaps & 32mm Hole Layout",
+    description: "Free shelf spacing calculator. Get equal clear openings, shelf top positions, centerlines, and optional 32mm system hole locations from internal height and shelf count.",
+    category: "Cabinet & furniture",
+    type: "shelfSpacing",
+    engine: "SpacingEngine",
+    unitSwitch: true,
+    h1: "Shelf Spacing Calculator",
+    intro: "Space fixed or adjustable shelves evenly inside a cabinet, bookcase, or closet tower. The result gives clear opening size, shelf positions, centerlines, and nearby 32mm-system hole locations.",
+    inputs: [["Internal height (in)", "insideHeight", 60, 0.1], ["Shelf count", "shelves", 4, 1], ["Shelf thickness (in)", "thickness", 0.75, 0.01], ["Bottom offset (in)", "bottomOffset", 0, 0.01], ["Use 32mm hole positions", "system32", "yes", "select:Show 32mm positions|yes,Equal spacing only|no"]],
+    formula: "Available clear space equals internal height minus shelf thicknesses and any bottom offset. Dividing that space by shelf count plus one creates equal openings.",
+    detail: "Fixed-shelf joinery, shelf pins, face frames, toe kicks, top stretchers, and real material thickness can shift the final marks. Verify the first and last shelf against the cabinet drawing.",
+    contexts: { template: "/templates/closet-shelving-cut-list/", learn: "/learn/closet-shelving-cut-list-workflow/", compare: "/compare/cut-list-template-vs-cut-list-calculator/" },
+    related: ["cabinet-cut-list-calculator", "drawer-box-calculator", "cabinet-door-calculator", "shelf-sag-calculator"],
+    faqs: [["How do I space shelves evenly?", "Subtract the total shelf thickness from the usable internal height, then divide the remaining space by the number of clear openings."], ["What is the 32mm cabinet system?", "It uses hole locations on 32mm increments for adjustable shelves and hardware. This calculator shows nearby increments, but you must set the drilling datum for your cabinet system."]]
   },
   {
     slug: "crown-molding-angle-calculator",
@@ -305,10 +362,26 @@ export const constructionTools = [
     related: ["cabinet-cut-list-calculator", "board-foot-calculator", "cut-list-calculator", "joist-span-calculator"],
     faqs: [["Why do long shelves sag?", "Deflection rises very quickly as span increases, and it decreases strongly with greater shelf thickness or added supports."], ["Can I use this for a heavy aquarium or structural load?", "No. Seek a qualified professional for heavy, safety-critical, or unusual loads."]]
   }
-].map((tool) => ({ ...tool, route: route(tool.slug) }));
+];
+
+const woodworkingSlugs = new Set([
+  "cabinet-cut-list-calculator",
+  "drawer-box-calculator",
+  "cabinet-door-calculator",
+  "shelf-spacing-calculator",
+  "crown-molding-angle-calculator",
+  "shelf-sag-calculator"
+]);
+
+export const constructionTools = tools.map((tool) => ({
+  ...tool,
+  route: route(tool.slug),
+  legacyRoute: `/tools/${tool.slug}/`,
+  section: woodworkingSlugs.has(tool.slug) ? "woodworking" : "construction"
+}));
 
 export const constructionHubs = [
-  ["woodworking", "Woodworking Calculator Hub", "Cut lists, plywood, lumber, cabinet parts, kerf, board feet, and material planning tools for projects before the first cut.", ["cabinet-cut-list-calculator", "shelf-sag-calculator"]],
+  ["woodworking", "Woodworking Calculator Hub", "Cut lists, plywood, lumber, cabinet parts, kerf, board feet, and material planning tools for projects before the first cut.", ["cabinet-cut-list-calculator", "drawer-box-calculator", "cabinet-door-calculator", "shelf-spacing-calculator", "shelf-sag-calculator"]],
   ["plywood", "Plywood & Cut List Planning", "Plan sheet goods, cabinet parts, kerf, waste, and optimized cut layouts before buying plywood.", ["cabinet-cut-list-calculator"]],
   ["stairs", "Stair Calculator Hub", "Compare stair rise, run, risers, treads, angles, deck stairs, and stringer geometry for early layout planning.", ["stair-calculator", "deck-stair-calculator", "rise-run-calculator", "stair-angle-calculator"]],
   ["deck", "Deck Calculator Hub", "Estimate deck boards, framing inputs, stairs, footings, finish coverage, and material costs for an early project takeoff.", ["deck-calculator", "deck-board-calculator", "deck-stair-calculator", "deck-stain-calculator", "joist-span-calculator"]],

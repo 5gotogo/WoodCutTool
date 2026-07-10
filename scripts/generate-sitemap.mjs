@@ -2,6 +2,7 @@ import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { constructionTools } from "./construction-tool-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = (process.env.SITE_URL || "https://woodcuttool.com").replace(/\/$/, "");
@@ -124,16 +125,19 @@ function loadJson(path) {
 }
 
 function loadExistingSitemapLastmods() {
-  const path = join(root, "sitemap.xml");
-  if (!existsSync(path)) return new Map();
-  const xml = readFileSync(path, "utf8");
   const map = new Map();
-  for (const match of xml.matchAll(/<url><loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod>/g)) {
-    try {
-      const url = new URL(match[1]);
-      map.set(url.pathname.endsWith("/") ? url.pathname : `${url.pathname}/`, match[2]);
-    } catch {
-      // Ignore malformed legacy sitemap rows and let this run generate a fresh date.
+  const files = ["sitemap.xml", ...readdirSync(root).filter((name) => /^sitemap-[a-z-]+\.xml$/.test(name))];
+  for (const file of new Set(files)) {
+    const path = join(root, file);
+    if (!existsSync(path)) continue;
+    const xml = readFileSync(path, "utf8");
+    for (const match of xml.matchAll(/<url><loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod>/g)) {
+      try {
+        const url = new URL(match[1]);
+        map.set(url.pathname.endsWith("/") ? url.pathname : `${url.pathname}/`, match[2]);
+      } catch {
+        // Ignore malformed legacy sitemap rows and let this run generate a fresh date.
+      }
     }
   }
   return map;
@@ -337,11 +341,44 @@ const entries = urls.map((route) => {
   const imageTags = images
     .map((src) => `\n    <image:image><image:loc>${xmlEscape(src)}</image:loc></image:image>`)
     .join("");
-  return `  <url><loc>${xmlEscape(`${siteUrl}${route}`)}</loc><lastmod>${lastmod}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority>${imageTags}</url>`;
+  return { route, xml: `  <url><loc>${xmlEscape(`${siteUrl}${route}`)}</loc><lastmod>${lastmod}</lastmod><changefreq>${changefreq}</changefreq><priority>${priority}</priority>${imageTags}</url>` };
 });
 
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${entries.join("\n")}\n</urlset>\n`;
+const explicitToolRoutes = new Set([
+  "/tools/", "/tools/woodworking/", "/tools/construction/",
+  "/plywood-cut-calculator/", "/cut-list-calculator/", "/wood-waste-calculator/", "/board-foot-calculator/", "/kerf-calculator/",
+  "/stair-stringer-calculator/", "/tile-calculator/", "/stringer/", "/cutlist/", "/quiltfit/", "/lumber-calculator/", "/sheet-calculator/",
+  "/material-cost-calculator/", "/cost-estimator/", "/wood-weight-calculator/", "/fraction-calculator/", "/inch-mm-converter/", "/conversion/",
+  "/material-list-generator/", "/screw-size-finder/", "/drill-bit-finder/", "/material-library/", "/wood-database/", ...constructionTools.map((tool) => tool.route)
+]);
+
+function sitemapGroup(route) {
+  if (explicitToolRoutes.has(route) || route.startsWith("/tools/")) return "tools";
+  if (route.startsWith("/learn/")) return "learn";
+  if (route.startsWith("/templates/")) return "templates";
+  if (route.startsWith("/blog/")) return "blog";
+  if (route.startsWith("/apps/")) return "apps";
+  if (route.startsWith("/compare/") || route.startsWith("/glossary/") || route.startsWith("/wood/")) return "resources";
+  return "pages";
+}
+
+const grouped = new Map();
+for (const entry of entries) {
+  const group = sitemapGroup(entry.route);
+  if (!grouped.has(group)) grouped.set(group, []);
+  grouped.get(group).push(entry.xml);
+}
+
+const childFiles = [];
+for (const [group, groupEntries] of grouped) {
+  const file = `sitemap-${group}.xml`;
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${groupEntries.join("\n")}\n</urlset>\n`;
+  writeFileSync(join(root, file), xml);
+  childFiles.push(file);
+}
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${childFiles.sort().map((file) => `  <sitemap><loc>${siteUrl}/${file}</loc><lastmod>${today}</lastmod></sitemap>`).join("\n")}\n</sitemapindex>\n`;
 
 writeFileSync(lastmodStatePath, `${JSON.stringify(nextState, null, 2)}\n`);
 writeFileSync(join(root, "sitemap.xml"), sitemap);
-console.log(`Generated sitemap.xml with ${urls.length} URLs and ${imageCount} images.`);
+console.log(`Generated sitemap index with ${childFiles.length} files, ${urls.length} URLs, and ${imageCount} images.`);

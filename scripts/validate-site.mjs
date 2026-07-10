@@ -67,7 +67,30 @@ function collectHtmlFiles(dir = root, prefix = "") {
 }
 
 const sitemap = readText("sitemap.xml");
-const sitemapUrls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+const sitemapIndexUrls = [...sitemap.matchAll(/<sitemap><loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+const sitemapFiles = sitemapIndexUrls.map((url) => {
+  try {
+    const parsed = new URL(url);
+    if (parsed.origin !== siteUrl) errors.push(`Sitemap index URL does not use ${siteUrl}: ${url}`);
+    return parsed.pathname.replace(/^\//, "");
+  } catch {
+    errors.push(`Malformed sitemap index URL: ${url}`);
+    return "";
+  }
+}).filter(Boolean);
+
+if (!sitemapFiles.length) {
+  errors.push("sitemap.xml is missing child sitemap entries.");
+}
+
+const sitemapUrls = sitemapFiles.flatMap((file) => {
+  if (!existsSync(join(root, file))) {
+    errors.push(`Sitemap index references missing file: ${file}`);
+    return [];
+  }
+  const xml = readText(file);
+  return [...xml.matchAll(/<url><loc>([^<]+)<\/loc>/g)].map((match) => match[1]);
+});
 const sitemapUrlSet = new Set(sitemapUrls);
 
 if (sitemapUrlSet.size !== sitemapUrls.length) {
@@ -186,4 +209,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Validated ${htmlFiles.length} HTML files and ${sitemapUrls.length} sitemap URLs.`);
+console.log(`Validated ${htmlFiles.length} HTML files across ${sitemapFiles.length} sitemaps and ${sitemapUrls.length} sitemap URLs.`);

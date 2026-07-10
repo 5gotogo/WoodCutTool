@@ -30,11 +30,14 @@ const html = `<!doctype html>
   <a class="skip-link" href="#main">Skip to content</a><div data-site-header></div>
   <main id="main">
     <section class="page-hero"><p class="breadcrumb"><a href="/">Home</a> / Tools</p><p class="eyebrow">Calculator hub</p><h1>Woodworking and Construction Calculators</h1><p class="lead">Choose a focused calculator for the job in front of you: plywood and cabinet parts, lumber and shop measurements, deck and fence materials, stairs, roof geometry, concrete, and finishing estimates. Every result is a starting point to verify before you buy or build.</p></section>
+    <section class="section"><div class="grid tools">${card("Woodworking Tools", "Cut and layout, cabinet and furniture, wood species, sheet goods, board feet, material cost, and shop measurement tools.", "/tools/woodworking/", "Browse woodworking tools")}${card("Construction Tools", "Stairs, tile, deck, fence, wall, roof geometry, concrete, spacing, finish, and field-planning calculators.", "/tools/construction/", "Browse construction tools")}</div></section>
     <section class="section"><div class="section-heading compact"><p class="eyebrow">Woodworking</p><h2>Cut lists, plywood, cabinets, lumber, and shop math.</h2><p>Start here when the material will be cut in the shop. Use the quick calculators for a first estimate, then move confirmed part dimensions into a sheet layout.</p></div><div class="grid tools">
-      ${card("CutList Plywood Optimizer", "Saved iPhone plywood layouts, kerf settings, PDF export, and offline project planning when a browser estimate is not enough.", "/apps/cutlist/", "Explore CutList")}
       ${card("Plywood Cut Calculator", "Plan sheet layouts, parts, kerf, sheet count, layout preview, and estimated waste.", "/plywood-cut-calculator/")}
       ${card("Cut List Calculator", "Turn board inventory and part dimensions into a practical linear cutting plan.", "/cut-list-calculator/")}
       ${constructionCard("cabinet-cut-list-calculator")}
+      ${constructionCard("drawer-box-calculator")}
+      ${constructionCard("cabinet-door-calculator")}
+      ${constructionCard("shelf-spacing-calculator")}
       ${card("Board Foot Calculator", "Estimate lumber volume and cost from thickness, width, length, quantity, and price per board foot.", "/board-foot-calculator/")}
       ${constructionCard("shelf-sag-calculator")}
       ${card("Kerf Calculator", "Check blade loss, remaining stock, and waste before making repeated cuts.", "/kerf-calculator/")}
@@ -50,4 +53,52 @@ const html = `<!doctype html>
 const target = join(root, "tools", "index.html");
 mkdirSync(dirname(target), { recursive: true });
 writeFileSync(target, html);
-console.log("Generated focused woodworking and construction tools hub.");
+
+function subHubPage({ slug, title, description, eyebrow, groups }) {
+  const canonical = `https://woodcuttool.com/tools/${slug}/`;
+  const cards = groups.flatMap((group) => group.cards);
+  const schema = { "@context": "https://schema.org", "@graph": [
+    { "@type": "CollectionPage", "@id": canonical, name: title, url: canonical, description, mainEntity: { "@type": "ItemList", itemListElement: cards.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.name, url: `https://woodcuttool.com${item.href}` })) } },
+    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: "https://woodcuttool.com/" }, { "@type": "ListItem", position: 2, name: "Tools", item: "https://woodcuttool.com/tools/" }, { "@type": "ListItem", position: 3, name: title, item: canonical }] }
+  ] };
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${title} | WoodCutTool</title><meta name="description" content="${description}"><meta name="robots" content="index,follow"><link rel="canonical" href="${canonical}"><meta property="og:type" content="website"><meta property="og:site_name" content="WoodCutTool"><meta property="og:title" content="${title} | WoodCutTool"><meta property="og:description" content="${description}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any"><style>.mega-menu{display:none}</style><link rel="stylesheet" href="/assets/styles.css"><script defer src="/assets/site-chrome.js"></script><script defer src="/assets/app.js"></script><script type="application/ld+json">${JSON.stringify(schema)}</script></head><body><a class="skip-link" href="#main">Skip to content</a><div data-site-header></div><main id="main"><section class="page-hero"><p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / ${title}</p><p class="eyebrow">${eyebrow}</p><h1>${title}</h1><p class="lead">${description}</p></section>${groups.map((group) => `<section class="section"><div class="section-heading compact"><p class="eyebrow">${group.eyebrow}</p><h2>${group.title}</h2><p>${group.description}</p></div><div class="grid tools">${group.cards.map((item) => card(item.name, item.description, item.href)).join("")}</div></section>`).join("")}</main><div data-site-footer></div></body></html>`;
+}
+
+const asCard = (item) => ({ name: item.name, description: item.description, href: item.route });
+const woodworkingGenerated = constructionTools.filter((item) => item.section === "woodworking");
+const constructionGenerated = constructionTools.filter((item) => item.section === "construction");
+const woodworkingGroups = [
+  { eyebrow: "Cut & Layout", title: "Cut and layout tools", description: "Turn stock and project dimensions into cut plans, sheet layouts, kerf checks, and waste estimates.", cards: [
+    { name: "Plywood Cut Calculator", description: "Plan parts, kerf, sheet count, layout, and waste.", href: "/plywood-cut-calculator/" },
+    { name: "Cut List Calculator", description: "Optimize linear board cuts and review waste.", href: "/cut-list-calculator/" },
+    { name: "Kerf Calculator", description: "Estimate saw-cut material loss and remaining stock.", href: "/kerf-calculator/" }
+  ] },
+  { eyebrow: "Cabinet & Furniture", title: "Cabinet and furniture tools", description: "Generate cabinet, drawer, door, shelf, molding, and furniture planning dimensions.", cards: woodworkingGenerated.map(asCard) },
+  { eyebrow: "Wood & Materials", title: "Wood and material tools", description: "Estimate lumber volume, weight, sheet goods, costs, and material properties.", cards: [
+    { name: "Board Foot Calculator", description: "Estimate lumber volume, waste, cost, and weight.", href: "/board-foot-calculator/" },
+    { name: "Lumber Calculator", description: "Estimate board feet, linear feet, waste, and cost.", href: "/lumber-calculator/" },
+    { name: "Material Cost Calculator", description: "Build a project material and labor budget.", href: "/material-cost-calculator/" },
+    { name: "Wood Species Library", description: "Compare density, hardness, weight, cost, and common uses.", href: "/wood/" },
+    { name: "Material Library", description: "Compare plywood, MDF, OSB, melamine, and other sheet goods.", href: "/material-library/" }
+  ] }
+];
+const stairSlugs = new Set(["stair-calculator", "deck-stair-calculator", "rise-run-calculator", "stair-angle-calculator"]);
+const constructionGroups = [
+  { eyebrow: "Stairs & Tile", title: "Stair and tile tools", description: "Plan stair geometry, stringers, rise and run, angles, tile coverage, boxes, and waste.", cards: [
+    { name: "Stair Stringer Calculator", description: "Calculate stair rise, run, risers, treads, angle, and stringer length.", href: "/stair-stringer-calculator/" },
+    { name: "Tile Calculator", description: "Estimate tiles, boxes, waste, coverage, and material cost.", href: "/tile-calculator/" },
+    ...constructionGenerated.filter((item) => stairSlugs.has(item.slug)).map(asCard)
+  ] },
+  { eyebrow: "Deck, Fence & Wall", title: "Deck, fence, wall, and exterior tools", description: "Estimate outdoor materials, spacing, concrete, finishes, roof geometry, and non-structural planning quantities.", cards: constructionGenerated.filter((item) => !stairSlugs.has(item.slug)).map(asCard) }
+];
+
+for (const hub of [
+  { slug: "woodworking", title: "Woodworking Tools", description: "Woodworking calculators for cut and layout planning, cabinets and furniture, lumber, plywood, materials, and accurate shop measurements.", eyebrow: "Cut, cabinet, and material planning", groups: woodworkingGroups },
+  { slug: "construction", title: "Construction Tools", description: "Construction calculators for stairs, tile, decks, fences, walls, roofs, concrete, spacing, finishing, and early material estimates.", eyebrow: "Stairs, tile, deck, fence, and wall", groups: constructionGroups }
+]) {
+  const hubTarget = join(root, "tools", hub.slug, "index.html");
+  mkdirSync(dirname(hubTarget), { recursive: true });
+  writeFileSync(hubTarget, subHubPage(hub));
+}
+
+console.log("Generated focused tools hub plus woodworking and construction sub-hubs.");
