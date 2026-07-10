@@ -8,6 +8,7 @@ import { blogBatch20260702 } from "./blog-batch-2026-07-02.mjs";
 import { blogBatch20260703 } from "./blog-batch-2026-07-03.mjs";
 import { blogBatch20260707 } from "./blog-batch-2026-07-07.mjs";
 import { blogBatch20260709 } from "./blog-batch-2026-07-09.mjs";
+import { blogBatch20260710 } from "./blog-batch-2026-07-10.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -9669,6 +9670,7 @@ articles.push(...blogBatch20260702);
 articles.push(...blogBatch20260703);
 articles.push(...blogBatch20260707);
 articles.push(...blogBatch20260709);
+articles.push(...blogBatch20260710);
 
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {
@@ -10457,22 +10459,11 @@ function escapeHtml(value) {
 }
 
 function header(active = "Blogs") {
-  const links = [
-    ["CutList", "/cutlist/"],
-    ["QuiltFit", "/quiltfit/"],
-    ["Tile", "/tile-calculator/"],
-    ["Stringer", "/stringer/"],
-    ["Blogs", "/blog/"],
-    ["Apps", "/apps/"],
-    ["Tools", "/tools/"],
-    ["Learn", "/learn/"]
-  ];
-
-  return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links">${links.map(([label, href]) => `<a${label === active ? ' class="active"' : ""} href="${href}">${label}</a>`).join("")}</div><label class="language-picker"><span class="visually-hidden">Language</span><select id="language-select" aria-label="Language"><option value="en">English</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="es">Español</option><option value="pt">Português</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="nl">Nederlands</option><option value="it">Italiano</option><option value="ar">العربية</option><option value="ja">日本語</option></select></label><a class="button small nav-download-cta" href="${APP_STORE_URL}" rel="nofollow noopener">Download CutList</a></nav></header>`;
+  return `<div data-site-header></div>`;
 }
 
 function footer() {
-  return `<footer class="site-footer"><div class="footer-inner"><div class="footer-main"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><nav class="footer-links footer-primary" aria-label="Footer navigation"><a href="/cutlist/">CutList</a><a href="/quiltfit/">QuiltFit</a><a href="/blog/">Blogs</a><a href="/tile-calculator/">Tile</a><a href="/stringer/">Stringer</a></nav></div><div class="footer-bottom"><p class="muted"><span>© 2026 WoodCutTool.</span> <span>All rights reserved.</span></p><nav class="footer-links footer-legal" aria-label="Legal navigation"><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a><a href="/disclaimer/">Disclaimer</a><a href="/sitemap.xml">Sitemap</a></nav></div></div></footer>`;
+  return `<div data-site-footer></div>`;
 }
 
 function head({ title, description, canonical, ogType = "website", jsonLd = "" }) {
@@ -10492,7 +10483,9 @@ function head({ title, description, canonical, ogType = "website", jsonLd = "" }
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#1e2a23">
+  <style>.mega-menu{display:none}</style>
   <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/site-chrome.js"></script>
   <script src="/assets/app.js" defer></script>
 </head>`;
 }
@@ -10877,8 +10870,8 @@ function blogPostingJsonLd(article) {
     url,
     mainEntityOfPage: url,
     image: "https://woodcuttool.com/assets/og/woodcuttool-og.png",
-    datePublished: "2026-01-01",
-    dateModified: performanceResponseDetails[article.slug] ? "2026-07-08" : "2026-06-23",
+    datePublished: article.publishedDate || "2026-01-01",
+    dateModified: article.modifiedDate || (performanceResponseDetails[article.slug] ? "2026-07-08" : "2026-06-23"),
     inLanguage: "en",
     articleSection: article.category,
     author: { "@type": "Organization", name: "WoodCutTool", url: "https://woodcuttool.com/" },
@@ -10896,7 +10889,7 @@ function articlePage(article) {
   const related = articles
     .filter((candidate) => candidate.slug !== article.slug && candidate.category === article.category)
     .slice(0, 3);
-  const research = researchBriefs[article.slug] || fallbackResearchBrief(article);
+  const research = article.researchBrief || researchBriefs[article.slug] || fallbackResearchBrief(article);
 
   return `<!doctype html>
 <html lang="en">
@@ -11676,8 +11669,10 @@ function updateExistingHtml() {
     html = html.replaceAll("20260619-blogs", version);
     html = html.replaceAll("20260619-brand-case", version);
     html = html.replaceAll("20260619-app-directory", version);
-    html = html.replaceAll(/\/assets\/styles\.css\?v=[^"]+"/g, '/assets/styles.css"');
-    html = html.replaceAll(/\/assets\/app\.js\?v=[^"]+"/g, '/assets/app.js"');
+    if (file !== "index.html") {
+      html = html.replaceAll(/\/assets\/styles\.css\?v=[^"]+"/g, '/assets/styles.css"');
+      html = html.replaceAll(/\/assets\/app\.js\?v=[^"]+"/g, '/assets/app.js"');
+    }
     html = html.replaceAll('<a href="/apps/">Apps</a><a href="/blog/">Blogs</a>', '<a href="/blog/">Blogs</a><a href="/apps/">Apps</a>');
     html = html.replaceAll('<a class="active" href="/apps/">Apps</a><a href="/blog/">Blogs</a>', '<a href="/blog/">Blogs</a><a class="active" href="/apps/">Apps</a>');
     html = html.replace(/<a class="active" href="\/blog\/[^"]+\/">[^<]+<\/a>/g, '<a class="active" href="/blog/">Blogs</a>');
