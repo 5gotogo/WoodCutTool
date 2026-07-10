@@ -10572,7 +10572,7 @@ function categoryArticles(category) {
 
 function categoryPreview(category) {
   const matches = categoryArticles(category);
-  const visible = matches.slice(0, BLOG_SECTION_CARD_LIMIT).map(articleCard).join("\n        ");
+  const visible = matches.slice(-BLOG_SECTION_CARD_LIMIT).reverse().map(articleCard).join("\n        ");
   const remaining = matches.length - BLOG_SECTION_CARD_LIMIT;
   const moreLink = remaining > 0
     ? `\n        <a class="blog-section-more" href="/blog/?q=${encodeURIComponent(category)}#blog-directory-list">${remaining} more ${escapeHtml(category)} articles in directory</a>`
@@ -10600,7 +10600,7 @@ function generatedAppBlogSections() {
 }
 
 function blogIndexJsonLd() {
-  const itemListElement = articles.slice(0, BLOG_INDEX_JSONLD_LIMIT).map((article, index) => ({
+  const itemListElement = articles.slice(-BLOG_INDEX_JSONLD_LIMIT).reverse().map((article, index) => ({
     "@type": "ListItem",
     position: index + 1,
     name: article.title,
@@ -10634,7 +10634,9 @@ function blogIndexJsonLd() {
 }
 
 function blogIndex() {
-  const featured = [articles[0], articles[5], articles[10], articles[15]];
+  const featured = ["CutList", "Stairs", "Tile", "QuiltFit"]
+    .map((category) => categoryArticles(category).at(-1))
+    .filter(Boolean);
   const categories = [
     ["CutList", "cutlist"],
     ["QuiltFit", "quiltfit"],

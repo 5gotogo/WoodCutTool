@@ -3440,7 +3440,10 @@ const normalizeLang = (lang) => {
   return "en";
 };
 
-const getActiveLang = () => normalizeLang(localStorage.getItem("woodcuttool-lang") || navigator.language || "en");
+// Keep the canonical, server-rendered page in English unless a visitor explicitly
+// selects another language. Auto-detecting the browser locale produced partially
+// translated pages under the same URL, which weakened both readability and SEO.
+const getActiveLang = () => normalizeLang(localStorage.getItem("woodcuttool-lang") || "en");
 const isBlogPage = () => Boolean(document.querySelector("[data-blog-index], .blog-article-shell"));
 const googleTranslateLanguages = {
   "zh-CN": "zh-CN",
