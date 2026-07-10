@@ -256,6 +256,203 @@ canvas {
     #fbfaf6;
 }
 
+.mega-visual-templates,
+.mega-visual-learn,
+.mega-visual-blog,
+.mega-visual-compare,
+.mega-visual-glossary {
+  display: grid;
+  place-items: center;
+}
+
+.mega-visual-templates {
+  background:
+    radial-gradient(circle at 20% 22%, rgba(215, 148, 60, 0.2), transparent 27%),
+    linear-gradient(145deg, #fbfaf6, #f1eadc);
+}
+
+.mega-visual-learn {
+  background:
+    radial-gradient(circle at 78% 24%, rgba(47, 111, 78, 0.18), transparent 28%),
+    linear-gradient(145deg, #f8fbf7, #e9f0e7);
+}
+
+.mega-visual-blog {
+  background:
+    radial-gradient(circle at 18% 78%, rgba(52, 120, 246, 0.14), transparent 26%),
+    linear-gradient(145deg, #f8fafc, #e9eef5);
+}
+
+.mega-visual-compare {
+  background:
+    linear-gradient(90deg, rgba(47, 111, 78, 0.12) 0 50%, rgba(215, 148, 60, 0.14) 50% 100%),
+    #fbfaf6;
+}
+
+.mega-visual-glossary {
+  background:
+    radial-gradient(circle at 76% 76%, rgba(139, 94, 52, 0.17), transparent 27%),
+    linear-gradient(145deg, #fbfaf6, #f0ede7);
+}
+
+.mega-visual svg {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  display: block;
+}
+
+.mega-svg-grid,
+.mega-svg-line,
+.mega-svg-measure,
+.mega-svg-browser,
+.mega-svg-heading,
+.mega-svg-line-light,
+.mega-svg-arrow-left,
+.mega-svg-arrow-right,
+.mega-svg-search-line {
+  fill: none;
+  stroke: #9aa797;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.mega-svg-grid {
+  stroke: rgba(139, 94, 52, 0.14);
+  stroke-width: 1;
+}
+
+.mega-svg-paper {
+  fill: rgba(255, 255, 255, 0.94);
+  stroke: #cdd6ca;
+  stroke-width: 2;
+  filter: drop-shadow(0 10px 10px rgba(39, 44, 36, 0.1));
+}
+
+.mega-svg-wood {
+  fill: #ead09a;
+  stroke: #8b5e34;
+  stroke-width: 3;
+  stroke-linejoin: round;
+}
+
+.mega-svg-accent {
+  fill: #2f6f4e;
+}
+
+.mega-svg-accent-fill {
+  fill: #d7943c;
+  stroke: #b87725;
+  stroke-width: 2;
+}
+
+.mega-svg-shadow {
+  fill: rgba(39, 44, 36, 0.1);
+}
+
+.mega-svg-pencil {
+  fill: #2f6f4e;
+  stroke: #244f39;
+  stroke-width: 2;
+}
+
+.mega-svg-pencil-tip {
+  fill: #d7943c;
+}
+
+.mega-svg-photo {
+  fill: #dce9df;
+  stroke: #7aa089;
+  stroke-width: 2;
+}
+
+.mega-svg-photo-line {
+  fill: #81a98e;
+  stroke: #2f6f4e;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.mega-svg-sun {
+  fill: #d7943c;
+}
+
+.mega-svg-pen {
+  fill: #3478f6;
+  stroke: #2458b4;
+  stroke-width: 2;
+}
+
+.mega-svg-card-left,
+.mega-svg-card-right {
+  stroke-width: 2;
+  filter: drop-shadow(0 8px 9px rgba(39, 44, 36, 0.1));
+}
+
+.mega-svg-card-left {
+  fill: #f4f8f3;
+  stroke: #83a68e;
+}
+
+.mega-svg-card-right {
+  fill: #fff8ec;
+  stroke: #d5a25f;
+}
+
+.mega-svg-material-left {
+  fill: #78a98b;
+}
+
+.mega-svg-material-right {
+  fill: #d7a04f;
+}
+
+.mega-svg-line-light {
+  stroke: #b8c1b5;
+  stroke-width: 4;
+}
+
+.mega-svg-vs {
+  fill: #243f31;
+  stroke: #fff;
+  stroke-width: 4;
+  filter: drop-shadow(0 7px 8px rgba(39, 44, 36, 0.18));
+}
+
+.mega-svg-vs-text {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.mega-svg-tabs {
+  fill: #d7943c;
+  stroke: #a86c25;
+  stroke-width: 2;
+}
+
+.mega-svg-letter {
+  fill: #2f6f4e;
+  font: 800 42px system-ui, sans-serif;
+}
+
+.mega-svg-search {
+  fill: rgba(255, 255, 255, 0.92);
+  stroke: #2f6f4e;
+  stroke-width: 6;
+  filter: drop-shadow(0 7px 8px rgba(39, 44, 36, 0.15));
+}
+
+.mega-svg-search-handle {
+  fill: none;
+  stroke: #2f6f4e;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
 .mega-visual-sheet {
   position: absolute;
   left: 10%;

@@ -68,14 +68,30 @@
     if (type === "apps") {
       return `<span class="mega-visual mega-visual-apps" aria-hidden="true"><span class="mega-app-phone mega-app-phone-primary"><span class="mega-app-screen"><span></span><span></span><span></span><span></span></span></span><span class="mega-app-phone mega-app-phone-secondary"><span class="mega-app-screen"><span></span><span></span><span></span><span></span></span></span><span class="mega-app-badge">PDF</span></span>`;
     }
-    if (type === "resources") {
-      return `<span class="mega-visual mega-visual-resources" aria-hidden="true"><span class="mega-resource-book">Guide</span><span class="mega-resource-card mega-resource-card-one"><span></span><span></span><span></span></span><span class="mega-resource-card mega-resource-card-two"><span></span><span></span><span></span></span><span class="mega-resource-chip">Glossary</span></span>`;
+    if (type === "templates") {
+      return `<span class="mega-visual mega-visual-templates" aria-hidden="true"><svg viewBox="0 0 320 190" focusable="false"><path class="mega-svg-grid" d="M28 34H292M28 70H292M28 106H292M28 142H292M64 18V172M108 18V172M152 18V172M196 18V172M240 18V172"/><rect class="mega-svg-paper" x="62" y="26" width="196" height="138" rx="9"/><path class="mega-svg-wood" d="M83 47h68v96H83zM169 47h68v42h-68zM169 101h68v42h-68z"/><path class="mega-svg-line" d="M117 47v96M169 72h68M169 122h68"/><circle class="mega-svg-accent" cx="143" cy="95" r="4"/><circle class="mega-svg-accent" cx="181" cy="72" r="3"/><circle class="mega-svg-accent" cx="181" cy="122" r="3"/><path class="mega-svg-measure" d="M76 153h168M76 148v10M244 148v10"/></svg></span>`;
+    }
+    if (type === "learn") {
+      return `<span class="mega-visual mega-visual-learn" aria-hidden="true"><svg viewBox="0 0 320 190" focusable="false"><path class="mega-svg-shadow" d="M43 150c56-14 176-14 234 0-46 25-191 25-234 0z"/><path class="mega-svg-paper" d="M42 48c42-12 83-5 118 18v91c-35-23-76-30-118-18z"/><path class="mega-svg-paper" d="M278 48c-42-12-83-5-118 18v91c35-23 76-30 118-18z"/><path class="mega-svg-line" d="M160 66v91M63 72c31-5 56 0 78 13M63 91c31-5 56 0 78 13M63 110c31-5 56 0 78 13M179 85c22-13 47-18 78-13M179 104c22-13 47-18 78-13M179 123c22-13 47-18 78-13"/><path class="mega-svg-accent-fill" d="M211 33h23v51l-11.5-8-11.5 8z"/><path class="mega-svg-pencil" d="M70 48l30-22 10 14-30 22-15 4z"/><path class="mega-svg-pencil-tip" d="M65 66l5-18 10 14z"/></svg></span>`;
+    }
+    if (type === "blog") {
+      return `<span class="mega-visual mega-visual-blog" aria-hidden="true"><svg viewBox="0 0 320 190" focusable="false"><rect class="mega-svg-paper" x="47" y="24" width="226" height="144" rx="10"/><path class="mega-svg-browser" d="M47 52h226M63 38h1M76 38h1M89 38h1"/><rect class="mega-svg-photo" x="67" y="69" width="82" height="66" rx="6"/><path class="mega-svg-photo-line" d="M73 125l22-26 17 17 12-13 19 22"/><circle class="mega-svg-sun" cx="126" cy="84" r="8"/><path class="mega-svg-heading" d="M168 72h72M168 86h54"/><path class="mega-svg-line" d="M168 106h72M168 118h64M168 130h69M67 149h173"/><rect class="mega-svg-accent-fill" x="219" y="15" width="50" height="24" rx="12"/><path class="mega-svg-pen" d="M244 141l35-35 10 10-35 35-17 7z"/></svg></span>`;
+    }
+    if (type === "compare") {
+      return `<span class="mega-visual mega-visual-compare" aria-hidden="true"><svg viewBox="0 0 320 190" focusable="false"><rect class="mega-svg-card-left" x="32" y="35" width="108" height="120" rx="10"/><rect class="mega-svg-card-right" x="180" y="35" width="108" height="120" rx="10"/><path class="mega-svg-material-left" d="M50 54h72v42H50z"/><path class="mega-svg-material-right" d="M198 54h72v42h-72z"/><path class="mega-svg-line-light" d="M50 112h56M50 126h70M50 140h48M198 112h56M198 126h70M198 140h48"/><circle class="mega-svg-vs" cx="160" cy="95" r="25"/><path class="mega-svg-vs-text" d="M147 87l8 18 8-18M166 103c4 3 10 2 10-2 0-7-12-4-12-10 0-5 8-7 13-3"/><path class="mega-svg-arrow-left" d="M145 53h-24l8-8M121 53l8 8"/><path class="mega-svg-arrow-right" d="M175 137h24l-8-8M199 137l-8 8"/></svg></span>`;
+    }
+    if (type === "glossary") {
+      return `<span class="mega-visual mega-visual-glossary" aria-hidden="true"><svg viewBox="0 0 320 190" focusable="false"><rect class="mega-svg-paper" x="69" y="28" width="182" height="134" rx="10"/><path class="mega-svg-tabs" d="M69 53h-18V38h18M69 83h-25V68h25M69 113h-18V98h18M69 143h-25v-15h25"/><text class="mega-svg-letter" x="88" y="81">A</text><path class="mega-svg-heading" d="M126 59h88M126 75h64"/><path class="mega-svg-line" d="M89 103h126M89 117h111M89 131h121"/><circle class="mega-svg-search" cx="229" cy="126" r="25"/><path class="mega-svg-search-handle" d="M247 144l25 25"/><path class="mega-svg-search-line" d="M218 120h22M218 129h15"/></svg></span>`;
     }
     return `<span class="mega-visual mega-visual-tools" aria-hidden="true"><span class="mega-visual-sheet"><span class="mega-visual-piece"></span><span class="mega-visual-piece"></span><span class="mega-visual-piece"></span><span class="mega-visual-piece"></span></span></span>`;
   }
 
   function megaFeature({ href, title, description, cta, visual = "tools" }) {
     return `<a class="mega-feature" href="${href}">${megaVisual(visual)}<strong>${title}</strong><span>${description}</span><span class="card-link">${cta}</span></a>`;
+  }
+
+  function resourceNavMenu({ href, label, featureTitle, featureDescription, featureCta, visual, columns }) {
+    return `<div class="nav-menu-item"><a class="nav-trigger${activeClass(href)}" href="${href}" aria-haspopup="true" aria-expanded="false">${label}</a><div class="mega-menu" role="group" aria-label="${label} menu">${megaFeature({ href, title: featureTitle, description: featureDescription, cta: featureCta, visual })}<div class="mega-columns">${columns.map((column) => `<div class="mega-column"><p class="mega-column-title">${column.title}</p>${column.links.map(menuLink).join("")}</div>`).join("")}</div></div></div>`;
   }
 
   function navLinks() {
@@ -110,7 +126,97 @@
       { href: "/wood/", aliases: ["/wood-database/"], icon: "WD", title: "Wood species", description: "Reference density, hardness, and planning notes." }
     ];
 
-    return `<div class="nav-links nav-links-mega"><div class="nav-menu-item"><a class="nav-trigger" href="/tools/" aria-haspopup="true" aria-expanded="false">Tools</a><div class="mega-menu" role="group" aria-label="Tools menu">${megaFeature({ href: "/tools/", title: "Choose a calculator by project", description: "Browse focused woodworking and construction tools without mixing unrelated app categories into the planning hub.", cta: "Browse tools ->", visual: "tools" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Woodworking Tools</p>${menuLink({ href: "/tools/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut and layout, cabinets, furniture, wood, and materials." })}${tools.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Construction Tools</p>${menuLink({ href: "/tools/construction/", icon: "CN", title: "Construction hub", description: "Stairs, tile, deck, fence, wall, roof, and concrete." })}${tools.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Tool directory</p>${menuLink({ href: "/tools/", icon: "TL", title: "All tools", description: "Open the full calculator and planning hub.", exact: true })}${menuLink({ href: "/material-library/", icon: "ML", title: "Material library", description: "Browse materials, specs, and planning references." })}${menuLink({ href: "/material-list-generator/", icon: "MT", title: "Material list", description: "Turn project inputs into a material checklist." })}${menuLink({ href: "/inch-mm-converter/", icon: "IN", title: "Inch/mm converter", description: "Convert workshop dimensions quickly." })}</div></div></div></div><a class="nav-trigger${activeClass("/templates/")}" href="/templates/">Templates</a><a class="nav-trigger${activeClass("/learn/")}" href="/learn/">Learn</a><a class="nav-trigger${activeClass("/compare/")}" href="/compare/">Compare</a><a class="nav-trigger${activeClass("/glossary/")}" href="/glossary/">Glossary</a><div class="nav-menu-item"><a class="nav-trigger" href="/apps/" aria-haspopup="true" aria-expanded="false">Apps</a><div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for saved workflows", description: "Use the website for quick checks, then move repeatable projects into focused iPhone apps when you need saved records.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Planning apps</p>${apps.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Document apps</p>${apps.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">More apps</p>${apps.slice(6, 8).map(menuLink).join("")}${menuLink({ href: "/apps/compare/", icon: "VS", title: "App comparisons", description: "Compare app workflows against common alternatives." })}</div></div></div></div></div>`;
+    const templateMenu = {
+      href: "/templates/", label: "Templates", visual: "templates", featureTitle: "Start from a project-ready cut list", featureDescription: "Use indexed cabinet, drawer, shelving, bookcase, workbench, and plywood templates before optimizing the finished parts.", featureCta: "Browse templates ->",
+      columns: [
+        { title: "Cabinets", links: [
+          { href: "/templates/kitchen-cabinet-cut-list/", icon: "KC", title: "Kitchen cabinets", description: "Base and wall cabinet plywood parts." },
+          { href: "/templates/drawer-box-cut-list/", icon: "DB", title: "Drawer boxes", description: "Sides, fronts, backs, bottoms, and clearances." }
+        ] },
+        { title: "Shelving", links: [
+          { href: "/templates/closet-shelving-cut-list/", icon: "CS", title: "Closet shelving", description: "Towers, shelves, cleats, and repeated parts." },
+          { href: "/templates/bookcase-cut-list/", icon: "BK", title: "Bookcase", description: "Sides, shelves, top, bottom, and back." }
+        ] },
+        { title: "More templates", links: [
+          { href: "/templates/workbench-cut-list/", icon: "WB", title: "Workbench", description: "Top, legs, aprons, shelf, and bracing." },
+          { href: "/templates/", icon: "TP", title: "All templates", description: "Browse every reusable project starting point.", exact: true }
+        ] }
+      ]
+    };
+
+    const learnMenu = {
+      href: "/learn/", label: "Learn", visual: "learn", featureTitle: "Learn the method behind the calculator", featureDescription: "Move from a search question to a measured workflow for plywood, cabinets, stairs, decks, fences, and roofing.", featureCta: "Browse learning guides ->",
+      columns: [
+        { title: "Woodworking", links: [
+          { href: "/learn/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut lists, cabinets, lumber, and shop planning." },
+          { href: "/learn/plywood/", icon: "PW", title: "Plywood hub", description: "Sheet count, kerf, grain, layout, and waste." }
+        ] },
+        { title: "Construction", links: [
+          { href: "/learn/stairs/", icon: "ST", title: "Stairs", description: "Rise, run, tread, stringer, and angle guides." },
+          { href: "/learn/deck/", icon: "DK", title: "Deck", description: "Boards, stairs, finish, and material planning." }
+        ] },
+        { title: "Outdoor", links: [
+          { href: "/learn/fence/", icon: "FN", title: "Fence", description: "Posts, pickets, spacing, concrete, and finish." },
+          { href: "/learn/roofing/", icon: "RF", title: "Roofing", description: "Pitch, rafter geometry, area, and shingles." }
+        ] }
+      ]
+    };
+
+    const blogMenu = {
+      href: "/blog/", label: "Blog", visual: "blog", featureTitle: "Practical project and calculator articles", featureDescription: "Read current workflows, benchmarks, mistakes, and planning examples, then move directly into the matching tool.", featureCta: "Open all blog posts ->",
+      columns: [
+        { title: "Cut lists", links: [
+          { href: "/blog/plywood-waste-cost-benchmark-manual-vs-optimizer/", icon: "PW", title: "Plywood waste benchmark", description: "Compare manual planning with an optimizer." },
+          { href: "/blog/best-plywood-cutting-workflow-2026/", icon: "PL", title: "Plywood workflow", description: "A current start-to-finish cutting workflow." }
+        ] },
+        { title: "Cabinets", links: [
+          { href: "/blog/cabinet-cut-list-mistakes/", icon: "CB", title: "Cabinet cut-list mistakes", description: "Avoid repeated panel and clearance errors." },
+          { href: "/blog/cutlist-shop-workflow-from-bid-to-cut/", icon: "SH", title: "Shop workflow", description: "Move from estimate to a cut-ready plan." }
+        ] },
+        { title: "Construction", links: [
+          { href: "/blog/stair-stringer-design-rise-run-basics/", icon: "ST", title: "Stair stringer basics", description: "Understand rise, run, tread, and stringer geometry." },
+          { href: "/blog/deck-stair-stringer-field-measurements/", icon: "DK", title: "Deck stair measurements", description: "Capture field dimensions before layout." }
+        ] }
+      ]
+    };
+
+    const compareMenu = {
+      href: "/compare/", label: "Compare", visual: "compare", featureTitle: "Compare materials, tools, and workflows", featureDescription: "Check the tradeoffs that change dimensions, construction choices, material costs, and the next calculator input.", featureCta: "Browse comparisons ->",
+      columns: [
+        { title: "Cut-list methods", links: [
+          { href: "/compare/best-way-to-create-a-wood-cut-list/", icon: "CL", title: "Create a cut list", description: "Compare practical cut-list workflows." },
+          { href: "/compare/cut-list-template-vs-cut-list-calculator/", icon: "VS", title: "Template vs calculator", description: "Choose a reusable start or live calculation." }
+        ] },
+        { title: "Cabinets", links: [
+          { href: "/compare/face-frame-vs-frameless-cabinets/", icon: "CF", title: "Face frame vs frameless", description: "See how construction changes cabinet parts." },
+          { href: "/compare/inset-vs-overlay-cabinet-doors/", icon: "DR", title: "Inset vs overlay doors", description: "Compare door sizing and reveal choices." }
+        ] },
+        { title: "Hardware", links: [
+          { href: "/compare/drawer-slides-side-mount-vs-undermount/", icon: "DS", title: "Drawer slide types", description: "Compare clearances and installation tradeoffs." },
+          { href: "/compare/", icon: "CP", title: "All comparisons", description: "Browse every comparison page.", exact: true }
+        ] }
+      ]
+    };
+
+    const glossaryMenu = {
+      href: "/glossary/", label: "Glossary", visual: "glossary", featureTitle: "Look up woodworking and planning terms", featureDescription: "Understand cut diagrams, kerf, grain direction, sheet layout, joinery, and measurement terms before using the calculators.", featureCta: "Open the glossary ->",
+      columns: [
+        { title: "Cut planning", links: [
+          { href: "/glossary/cut-diagram/", icon: "CD", title: "Cut diagram", description: "Read a visual stock and part layout." },
+          { href: "/glossary/kerf/", icon: "KF", title: "Kerf", description: "Material removed by a saw blade." }
+        ] },
+        { title: "Material", links: [
+          { href: "/glossary/grain-direction/", icon: "GR", title: "Grain direction", description: "Orient visible faces and structural grain." },
+          { href: "/wood/", icon: "WD", title: "Wood species", description: "Compare hardness, density, weight, and use." }
+        ] },
+        { title: "Directory", links: [
+          { href: "/material-library/", icon: "ML", title: "Material library", description: "Compare common sheet and project materials." },
+          { href: "/glossary/", icon: "GL", title: "All glossary terms", description: "Browse the complete alphabetical glossary.", exact: true }
+        ] }
+      ]
+    };
+
+    return `<div class="nav-links nav-links-mega"><div class="nav-menu-item"><a class="nav-trigger" href="/tools/" aria-haspopup="true" aria-expanded="false">Tools</a><div class="mega-menu" role="group" aria-label="Tools menu">${megaFeature({ href: "/tools/", title: "Choose a calculator by project", description: "Browse focused woodworking and construction tools without mixing unrelated app categories into the planning hub.", cta: "Browse tools ->", visual: "tools" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Woodworking Tools</p>${menuLink({ href: "/tools/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut and layout, cabinets, furniture, wood, and materials." })}${tools.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Construction Tools</p>${menuLink({ href: "/tools/construction/", icon: "CN", title: "Construction hub", description: "Stairs, tile, deck, fence, wall, roof, and concrete." })}${tools.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Tool directory</p>${menuLink({ href: "/tools/", icon: "TL", title: "All tools", description: "Open the full calculator and planning hub.", exact: true })}${menuLink({ href: "/material-library/", icon: "ML", title: "Material library", description: "Browse materials, specs, and planning references." })}${menuLink({ href: "/material-list-generator/", icon: "MT", title: "Material list", description: "Turn project inputs into a material checklist." })}${menuLink({ href: "/inch-mm-converter/", icon: "IN", title: "Inch/mm converter", description: "Convert workshop dimensions quickly." })}</div></div></div></div>${resourceNavMenu(templateMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(blogMenu)}${resourceNavMenu(compareMenu)}${resourceNavMenu(glossaryMenu)}<div class="nav-menu-item"><a class="nav-trigger" href="/apps/" aria-haspopup="true" aria-expanded="false">Apps</a><div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for saved workflows", description: "Use the website for quick checks, then move repeatable projects into focused iPhone apps when you need saved records.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Planning apps</p>${apps.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Document apps</p>${apps.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">More apps</p>${apps.slice(6, 8).map(menuLink).join("")}${menuLink({ href: "/apps/compare/", icon: "VS", title: "App comparisons", description: "Compare app workflows against common alternatives." })}</div></div></div></div></div>`;
   }
 
   function header() {

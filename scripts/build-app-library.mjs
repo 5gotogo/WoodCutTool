@@ -74,29 +74,20 @@ function head({ title, description, canonical, jsonLd = "" }) {
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
+  <style>.mega-menu{display:none}</style>
   <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/site-chrome.js"></script>
   <script defer src="/assets/app.js"></script>
   ${jsonLd}
 </head>`;
 }
 
-function header(active = "Apps") {
-  const links = [
-    ["CutList", "/cutlist/"],
-    ["QuiltFit", "/quiltfit/"],
-    ["Tile", "/tile-calculator/"],
-    ["Stringer", "/stringer/"],
-    ["Blogs", "/blog/"],
-    ["Apps", "/apps/"],
-    ["Tools", "/tools/"],
-    ["Learn", "/learn/"]
-  ];
-
-  return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links">${links.map(([label, href]) => `<a${label === active ? ' class="active"' : ""} href="${href}">${label}</a>`).join("")}</div><label class="language-picker"><span class="visually-hidden">Language</span><select id="language-select" aria-label="Language"><option value="en">English</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="es">Español</option><option value="pt">Português</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="nl">Nederlands</option><option value="it">Italiano</option><option value="ar">العربية</option><option value="ja">日本語</option></select></label><a class="button small" href="/apps/">Explore Apps</a></nav></header>`;
+function header() {
+  return `<div data-site-header></div>`;
 }
 
 function footer() {
-  return `<footer class="site-footer"><div class="footer-inner"><div class="footer-main"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><nav class="footer-links footer-primary" aria-label="Footer navigation"><a href="/apps/">Apps</a><a href="/blog/">Blogs</a><a href="/cutlist/">CutList</a><a href="/quiltfit/">QuiltFit</a><a href="mailto:727268425@qq.com">Contact</a><a href="/tools/">Tools</a><a href="/learn/">Learn</a></nav></div><div class="footer-bottom"><p class="muted"><span>© 2026 WoodCutTool.</span> <span>All rights reserved.</span></p><nav class="footer-links footer-legal" aria-label="Legal navigation"><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a><a href="/disclaimer/">Disclaimer</a><a href="/sitemap.xml">Sitemap</a></nav></div></div></footer>`;
+  return `<div data-site-footer></div>`;
 }
 
 const appBySlug = new Map(apps.map((app) => [app.slug, app]));
@@ -109,6 +100,13 @@ const detailRouteOverrides = {
 
 const generatedOverrideSlugs = new Set(["stringer-stair-layout"]);
 const handWrittenOverrideSlugs = new Set(["cutlist-plywood-optimizer", "quiltfit-quilt-design-planner"]);
+
+const legalLinksBySlug = {
+  "thumbtype-typing-speed-test": {
+    privacy: "/legal/ThumbType/privacy/",
+    support: "/legal/ThumbType/support/"
+  }
+};
 
 const featuredApps = [
   ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
@@ -144,8 +142,8 @@ const categorySections = [
   {
     id: "document-productivity-apps",
     title: "Document & Productivity Apps",
-    description: "Private productivity apps for scanning documents, compressing images, backing up contacts, transcribing meetings, picking decisions, and keeping precise time without heavy setup.",
-    slugs: ["pdf-scan-scanner-and-reader", "image-compressor-and-zip", "export-backup-all-contacts-pro", "private-meeting-transcriber", "pickone-random-choice-picker", "atomic-clock-precision-time", "printer-app-print-pdf-docs"]
+    description: "Private productivity apps for typing practice, scanning documents, compressing images, backing up contacts, transcribing meetings, picking decisions, and keeping precise time without heavy setup.",
+    slugs: ["thumbtype-typing-speed-test", "pdf-scan-scanner-and-reader", "image-compressor-and-zip", "export-backup-all-contacts-pro", "private-meeting-transcriber", "pickone-random-choice-picker", "atomic-clock-precision-time", "printer-app-print-pdf-docs"]
   },
   {
     id: "home-everyday-utility-apps",
@@ -191,6 +189,7 @@ const appTags = {
   "atomic-clock-precision-time": ["Clock", "NTP", "Precision", "Time"],
   "stringer-stair-layout": ["Stairs", "Stringer", "Riser & tread", "Cut sheet"],
   "printer-app-print-pdf-docs": ["Print", "PDF", "Docs", "AirPrint"],
+  "thumbtype-typing-speed-test": ["Typing test", "WPM", "Accuracy", "Offline"],
   "fridgetrack-fridge-inventory": ["Fridge", "Inventory", "Food", "Home"],
   "pantry-label-maker-kitchen": ["Pantry", "Labels", "Kitchen", "Print"],
   "address-label-maker-and-envelope": ["Labels", "Envelope", "Mailing", "Print"],
@@ -211,6 +210,7 @@ const appTags = {
 };
 
 const directoryDescriptions = new Map(featuredApps);
+directoryDescriptions.set("thumbtype-typing-speed-test", "Private, offline iPhone typing practice with timed WPM tests, accuracy tracking, daily challenges, and multilingual lessons.");
 
 function detailHref(app) {
   return detailRouteOverrides[app.slug] || `/apps/${app.slug}/`;
@@ -463,7 +463,7 @@ function detailVisual(app, index) {
           </div>`;
 }
 
-function descriptionBlocks(description) {
+function descriptionBlocks(description, { stripStandaloneUrls = false } = {}) {
   const lines = String(description || "")
     .split(/\n+/)
     .map((line) => line.trim())
@@ -472,6 +472,9 @@ function descriptionBlocks(description) {
 
   for (const line of lines) {
     if (/^(privacy policy|terms of use|support|questions or feedback)/i.test(line)) {
+      continue;
+    }
+    if (stripStandaloneUrls && /^https?:\/\/\S+$/.test(line)) {
       continue;
     }
     if (/^[-*•◆]/.test(line)) {
@@ -608,6 +611,7 @@ function appDetailPage(app, index) {
   // engines consolidate ranking signals instead of treating the two pages as duplicates.
   const canonical = `https://woodcuttool.com${detailHref(app)}`;
   const isAlias = detailHref(app) !== `/apps/${app.slug}/`;
+  const legalLinks = legalLinksBySlug[app.slug];
   return `<!doctype html>
 <html lang="en">
 ${head({
@@ -642,7 +646,7 @@ ${head({
       <article class="app-description-panel">
         <p class="eyebrow">App Store description</p>
         <h2>What it does</h2>
-        ${descriptionBlocks(app.description)}
+        ${descriptionBlocks(app.description, { stripStandaloneUrls: Boolean(legalLinks) })}
       </article>
       <aside class="app-meta-panel">
         <h2>App details</h2>
@@ -654,7 +658,8 @@ ${head({
           <div><dt>Minimum iOS</dt><dd>${escapeHtml(app.minimumOsVersion || "See App Store")}</dd></div>
           ${release ? `<div><dt>Updated</dt><dd>${escapeHtml(release.slice(0, 10))}</dd></div>` : ""}
         </dl>
-        <a class="button" href="${escapeHtml(app.url)}" rel="noopener noreferrer">Open App Store</a>
+        <a class="button" href="${escapeHtml(app.url)}" rel="noopener noreferrer">Open App Store</a>${legalLinks ? `
+        <p><a href="${escapeHtml(legalLinks.privacy)}">Privacy Policy</a><br><a href="${escapeHtml(legalLinks.support)}">Support</a></p>` : ""}
       </aside>
     </section>
 ${appReviewsSection(app)}

@@ -697,5 +697,25 @@
     "formattedPrice": "Free",
     "trackContentRating": "4+",
     "sellerName": "家宝 戴"
+  },
+  {
+    "id": 6787424983,
+    "slug": "thumbtype-typing-speed-test",
+    "name": "ThumbType: Typing Speed Test",
+    "genre": "Education",
+    "genres": [
+      "Education"
+    ],
+    "url": "https://apps.apple.com/us/app/thumbtype-typing-speed-test/id6787424983",
+    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/ab/4f/beab4f2d-1200-5d75-510a-864eb8343112/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshotUrls": [],
+    "description": "ThumbType is a focused phone typing trainer for anyone who wants faster, cleaner, more confident typing on a touchscreen keyboard. It is built for the moments that actually matter on a phone: short messages, quick replies, school notes, work emails, addresses, codes, numbers, symbols and everyday phrases. Open the app, choose a practice language, type the prompt, and see how your speed, accuracy and spelling improve over time.\n\nPrivacy is part of the product, not an extra setting: Offline / No Login / Privacy First / On Device / No Cloud Upload. ThumbType works fully offline after installation. There is no account to create, no social feed, no cloud workspace and no sync process. Your typed practice text, WPM results, accuracy, streaks, settings and progress history stay on this device. The app is made for people who want to train without sending their habits, mistakes or learning history to a server.\n\nPractice is organized around real phone use. Start with common words to build basic speed, move into sentences for smoother rhythm, then train daily chat phrases that feel like real messages. Email practice helps with school and work replies. Numbers & Symbols builds comfort with things that slow people down on a phone keyboard: email addresses, dates, prices, order numbers, passwords, punctuation and short codes. Address Practice is for streets, cities and zip codes. Pinyin Practice helps you type initials, finals and pinyin phrases with better flow.\n\nThumbType currently includes practice content for English, Portuguese, Spanish and Pinyin Chinese. You can switch the practice language from the Home or Practice screen, and the app UI can follow the iOS per-app language setting. The lessons are stored inside the app, so you can keep practicing on a commute, in a classroom, on a flight, in a library, or anywhere with weak signal.\n\nFor quick training, use Continue Practice or the Daily Challenge. The daily challenge picks a fresh mixed exercise so a short session still feels varied. For measurement, the Test tab offers 30-Second Sprint, 60-Second Standard and 3-Minute Challenge modes. Type as much as you can before the timer ends, then ThumbType measures WPM and accuracy so you can compare sessions without guessing.\n\nProgress is simple and readable. The Home screen shows today’s sessions, best WPM, accuracy and streak. The Progress tab tracks practice time, lessons done, best WPM, average accuracy, day streak, total sessions, recent results and language progress. Instead of a noisy dashboard, ThumbType gives you the numbers that help you decide what to practice next.\n\nThe app also includes settings that make practice easier to stick with: text size controls, sound effects, haptics, Senior Mode for larger text and gentler pacing, and Kids Mode for shorter lessons with simpler words. Reset progress whenever you want; all saved results are local to the device.\n\nThumbType is intentionally calm. No login wall. No cloud upload. No internet requirement. No complicated course map. Just short, repeatable typing practice for speed, accuracy and spelling, with private on-device progress you can trust.\n\nUse ThumbType as a daily warm-up before writing a long message, preparing for class, replying to work, learning a new language, or helping a family member get more comfortable with the phone keyboard. The best sessions are short and regular: a few minutes of focused practice, a quick speed test, then a look at the results. Because everything is offline and on device, you can build the habit anywhere.\n\nPrivacy Policy\nhttps://woodcuttool.com/legal/ThumbType/privacy/\n\nTerms of Use\nhttps://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "version": "1.0",
+    "releaseDate": "2026-07-09T07:00:00Z",
+    "currentVersionReleaseDate": "2026-07-10T01:11:21Z",
+    "minimumOsVersion": "17.6",
+    "formattedPrice": "Free",
+    "trackContentRating": "4+",
+    "sellerName": "家宝 戴"
   }
 ]

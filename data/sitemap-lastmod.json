@@ -17,7 +17,7 @@
   },
   "/apps/": {
     "lastmod": "2026-07-10",
-    "hash": "a359d1c4aee4b51f46e9507fe6ad387d83382bec8a1f92bd569449e749560a97"
+    "hash": "382fe5ae410121d004b3aaea987d8134bcb315444de7ed28cea0f524a44c6145"
   },
   "/apps/cutlist/": {
     "lastmod": "2026-07-10",
@@ -109,23 +109,23 @@
   },
   "/apps/address-label-maker-and-envelope/": {
     "lastmod": "2026-07-10",
-    "hash": "d5ae3420d9d2581c62d95ec8b0a80743530eadffcc1ef6c77e90b4fdfb11cbb9"
+    "hash": "e03c320e716314c5f934f48f9e212b0654ae87fb1a1ef977c1fcf59a845daf5c"
   },
   "/apps/atomic-clock-precision-time/": {
     "lastmod": "2026-07-10",
-    "hash": "306eabbe90d1107315d1861208eb99bab10657ba40558ffecca4404a60c8bfc9"
+    "hash": "208916407789549dcca8eeb721d764df27ca145038d31df00a63cb75a1fccdb2"
   },
   "/apps/blockfit-block-puzzle/": {
     "lastmod": "2026-07-10",
-    "hash": "79248a3bb770f03b6e647b349e25050528b19aef9cc17b2818500d93b729967b"
+    "hash": "332238d56357cbf3f9485d9187fef34d666f7a135316bfdfb80c737c88845638"
   },
   "/apps/cadenza-metronome-and-tuner/": {
     "lastmod": "2026-07-10",
-    "hash": "6f26c2433acd4011506ba6fcf71b42b4a48ef9d83a60505dc75a2f672053601f"
+    "hash": "85f0934b6e224a63db16f45d5c5722e290e5a21e00ade91aa314ee4a5d0951ef"
   },
   "/apps/colorpop-color-block-tap-game/": {
     "lastmod": "2026-07-10",
-    "hash": "c6561c17bc63523236323ace745bd0aa5359965acd0fc6ef4a449fe9ab309c66"
+    "hash": "00f3dc6d52c6b4572aaf9357f0678e6acbe1daea18728d94d51c5fbd8ed60506"
   },
   "/apps/compare/": {
     "lastmod": "2026-07-10",
@@ -597,111 +597,115 @@
   },
   "/apps/expensereportmaker-and-receipts/": {
     "lastmod": "2026-07-10",
-    "hash": "4ce3b81278d985c6561c65903420d5f192288c0c4c1210ad924c6b0258d01cf7"
+    "hash": "b566e3795d2163aac6305e6f8f3ff105273192f30ef825ad489fcc0fb8deee1b"
   },
   "/apps/export-backup-all-contacts-pro/": {
     "lastmod": "2026-07-10",
-    "hash": "10a1deee62a9895392b132e0030d178d7a2fcd73054faa43845efae2838b399b"
+    "hash": "b685d9757f8fbb8468b50af0040ef5aeb798829a7ce34acdc3b7cda443e0fc85"
   },
   "/apps/fast-rhythm-fasting-and-sleep/": {
     "lastmod": "2026-07-10",
-    "hash": "60fd2cd5b9d85c3f0d67b03a652afba0a56223004cee603c27b989ab5189b7a7"
+    "hash": "91576fe8c255552b7b01f0a218ba47612861238914cb9a43f7f7e61453f2341d"
   },
   "/apps/fridgetrack-fridge-inventory/": {
     "lastmod": "2026-07-10",
-    "hash": "a82cbfb4d8ab28bb35cd8286fb50e84cff64f49311acb07122f4199d57f77e36"
+    "hash": "c240c3083fa9e964c865aea07d694335ea6eec56d64cb314e0ae2efb3a05053f"
   },
   "/apps/glowfeel-stress-ease/": {
     "lastmod": "2026-07-10",
-    "hash": "91b2c164b73f7900faa2411586d553b8cc54ea1865ad8cd9308b9a881392e9f5"
+    "hash": "f5cee5942c3364700ff8ac22e700d1061f2fa91580f90d6370c88b869febb87e"
   },
   "/apps/image-compressor-and-zip/": {
     "lastmod": "2026-07-10",
-    "hash": "31e5e4c90425308a6ce293af07aaf405d3435911c1fe616ea088db33dd9ffe68"
+    "hash": "9aa2f84d565ee05d1e6bf25f0bdb1918532618c4514a957b05802a0ee526564d"
   },
   "/apps/invoice-maker-estimate-pdf/": {
     "lastmod": "2026-07-10",
-    "hash": "b844f5de772c05840b7436d0a7f1dbd3d2af98224cec7bacf0746cb64627334d"
+    "hash": "af0925cf564b82b34b94199966c7e18007fa20d483da2084ecd42cd58aaea8c6"
   },
   "/apps/magnifier-reader-big-text/": {
     "lastmod": "2026-07-10",
-    "hash": "5e129d004092c70eba85ca19fb97a897dc7eac29d4b3b0ea0f6e09e664ded623"
+    "hash": "bf60a51a3380b5aa8546554a8557dac54fb36be6a87ada681ee464679c5fbb43"
   },
   "/apps/marketvendor-sales-and-profit/": {
     "lastmod": "2026-07-10",
-    "hash": "56bf7155117cc3523782f5a70b8d670107acd5be21e386da17693b0d2ded0dde"
+    "hash": "0f5108d32fb37ee1b44ed6dd9e8ebf9d76fc4c27328b93bd0499002229150fd9"
   },
   "/apps/mindnest-secret-journal/": {
     "lastmod": "2026-07-10",
-    "hash": "054d6c48514947b5145ff227cb285b9f9a2f25fa7584830b46ddf812a72a0829"
+    "hash": "61927ace3fe865533ebff3d2a101ffca8678246d21b37f520544304741d3e527"
   },
   "/apps/pantry-label-maker-kitchen/": {
     "lastmod": "2026-07-10",
-    "hash": "54899fd68ca0e932f9c6c3045c595303cd4efdb8d184f41fa31ab827d4184b9c"
+    "hash": "5cf7eb0c9ea603a1f642a7db824658c3fd85fba170a2779f41382e79ed4a69a0"
   },
   "/apps/pdf-scan-scanner-and-reader/": {
     "lastmod": "2026-07-10",
-    "hash": "7e92edfb1dfec004797aab9c1b792cb7364220fd969c6575c87d3cf47c238617"
+    "hash": "2961c406b9c639133b41c248dccf1c1268fc5c4a744498d287aa5435e569c430"
   },
   "/apps/photosafe-private-photo-vault/": {
     "lastmod": "2026-07-10",
-    "hash": "887208196ed40948134d7a5c9bfdcbbd5482e1ad4967fbb23b62fc5b6b250cce"
+    "hash": "896fffb478f1e0bef1daeca0f233855cb34620019422581674fc7cc49b595189"
   },
   "/apps/pickone-random-choice-picker/": {
     "lastmod": "2026-07-10",
-    "hash": "486a67a0bbe6dce834bb6899f61eb5a744d4e875f44fc1cb54b24adae4d0485c"
+    "hash": "aa4cc20f0fe0425e525b0260cfff8944b2290befe458aedf4afacc8278d982c2"
   },
   "/apps/printer-app-print-pdf-docs/": {
     "lastmod": "2026-07-10",
-    "hash": "271014ed3ceb296ae711fe58b98d270b02775aeab4dcf4fad2ffab8d56cfe3d1"
+    "hash": "9c534113bf834125c97b4072491c506f5f82a22ac2bfc739e8c09eeeb6f95a4f"
   },
   "/apps/private-meeting-transcriber/": {
     "lastmod": "2026-07-10",
-    "hash": "9e8d0e5b356a1d48bd3b3e1875727ee1230f9a03ad3e61eeb7ce166c001affd6"
+    "hash": "c1b9799734fcc8924421ae4f715bcd114adc1c215053804cc6006c4ff9ee58ce"
   },
   "/apps/ritualix-habits-and-streaks/": {
     "lastmod": "2026-07-10",
-    "hash": "ffa086d207bb59ddb5974eaebc37fcbe55e23e444d322dbf3d67002e548b202f"
+    "hash": "ae3020432271db28b89a10f287a82301f5816cf8a87e3c137cd75860b788495e"
   },
   "/apps/signaturemark-brand-mark/": {
     "lastmod": "2026-07-10",
-    "hash": "2307a80b8f822ca8322bca244741a8bfc5af23b01f81e70d72d07887b9adb0a9"
+    "hash": "00fe77343e839ce7c086accb27f036cb8ed478b718abf8d363ea561e96e46702"
   },
   "/apps/snapcleaner-clean-photos/": {
     "lastmod": "2026-07-10",
-    "hash": "dcad2e00fad0a808bfaae550f74430d3153bb9b4e6ccb60138d628d5aabe50e0"
+    "hash": "731f61dcf769630d2ccd9c1aac3040e8910064492bc3dc8287f7b8ea831b8710"
   },
   "/apps/snaplabel-photo-text-label/": {
     "lastmod": "2026-07-10",
-    "hash": "a347e28f827110b5be172957252bf5ad7d1cd3fc4910b07186d8f923053780cb"
+    "hash": "5bfe59d8b9974650ba0468fb717886ab1c695d10982c89510f6fa4db98257ace"
   },
   "/apps/snapqr-qr-generator-app/": {
     "lastmod": "2026-07-10",
-    "hash": "ee48e1c66b52ee6a89d8967f9ce91757719da00f09ac3b730b497a1c50e525bd"
+    "hash": "57552ef1f065d9e198f62e7b6ab3127f2d0082a265c28c33d5cb7880c60e71c6"
   },
   "/apps/snapreceipt-expenses-and-tax/": {
     "lastmod": "2026-07-10",
-    "hash": "4678bc1d6182a696ffa0954fd3f9b451d86b7c35c556e5552080a7ea32d27f86"
+    "hash": "1412f5cc34785cd7eb61e50344c3405ff077d1517302944d01207920b0c77748"
   },
   "/apps/snapstock-inventory-scanner/": {
     "lastmod": "2026-07-10",
-    "hash": "a42dcdcf160293e986c643471e5391e9177ef2ccbcdf20dce0ed4df33dadb7c6"
+    "hash": "c0722400b4c9480f2faa7e50d7972b65ffd9c204b7255da90036aed5a26c1247"
   },
   "/apps/speaker-tools-audio-test/": {
     "lastmod": "2026-07-10",
-    "hash": "5dadc7cfb248830a49e0ea05b510754efa4ba8e68708262a694dedc9bf474edc"
+    "hash": "48a6d2ffa638908fc0df410a242ea47ac5947fd8002a030bc637d7031db9037c"
   },
   "/apps/stringer/": {
     "lastmod": "2026-07-10",
-    "hash": "3ed2080edff5e56a7814a575c1dcfe34e6ff39b05e0c2bf510e749924083d0bc"
+    "hash": "b1a40a3c5e38dc0c01b773454d93d7dd24c46a68cfb88709f58f58a6910bc55f"
+  },
+  "/apps/thumbtype-typing-speed-test/": {
+    "lastmod": "2026-07-10",
+    "hash": "32a066d75f4dd024c1fe0a3c2c8f45935d56e2881ac1d8004e7af6601747f82a"
   },
   "/apps/tinnitus-relief-sound-masking/": {
     "lastmod": "2026-07-10",
-    "hash": "b66dae88278fe2687877ad865bbac708b996e19cbd90c3b0bc00851c6631b7f9"
+    "hash": "2297458166cba4b811dacde21dc3ed8038f08349a3e8a0ae7d96ce6545f9735b"
   },
   "/apps/work-shift-schedule-calendar/": {
     "lastmod": "2026-07-10",
-    "hash": "6ff58112a1245c5f96853c5cfb77a45ae3a9a522ffe1f21387e974597a044d4e"
+    "hash": "a8b93e4843d8a688243b459ec44623e1726cfeebd410d9ad542328d2a2efb1f8"
   },
   "/baluster-spacing-calculator/": {
     "lastmod": "2026-07-10",
