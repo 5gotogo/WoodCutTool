@@ -4,6 +4,9 @@ import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
+const appStoreReviews = JSON.parse(
+  readFileSync(join(root, "data", "app-store-reviews.json"), "utf8")
+);
 
 const organization = {
   "@type": "Organization",
@@ -44,7 +47,10 @@ const softwareTools = [
     audience: "Woodworkers, cabinet makers, carpenters, DIY builders, and small shops",
     offerUrl: "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871",
     downloadUrl: "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871",
-    product: true,
+    // These reviews are visibly rendered on this page from the same source.
+    // Do not turn them into an aggregateRating: the source data is a selected
+    // review feed, not a complete count of every App Store rating.
+    appStoreReviewSlug: "cutlist-plywood-optimizer",
     faq: [
       ...commonFaq,
       ["Is CutList a product or a free calculator?", "CutList is an iPhone app product for saved woodworking projects, offline plywood layouts, cut optimization, and PDF export. WoodCutTool also provides free browser calculators for quick estimates."],
@@ -197,7 +203,38 @@ const softwareTools = [
   }
 ];
 
-function softwareSchema(tool) {
+function appStoreReviewSchema(tool) {
+  const reviewSource = appStoreReviews[tool.appStoreReviewSlug];
+  if (!reviewSource?.reviews) return [];
+
+  return reviewSource.reviews
+    .filter((review) => (
+      review.author
+      && review.title
+      && review.content
+      && Number.isFinite(Number(review.rating))
+      && review.updated
+    ))
+    .slice(0, 6)
+    .map((review) => ({
+      "@type": "Review",
+      name: review.title,
+      reviewBody: review.content,
+      datePublished: review.updated.slice(0, 10),
+      author: {
+        "@type": "Person",
+        name: review.author
+      },
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: Number(review.rating),
+        bestRating: 5,
+        worstRating: 1
+      }
+    }));
+}
+
+function softwareSchema(tool, { includeReviews = false } = {}) {
   const url = `${siteUrl}${tool.path}`;
   const schema = {
     "@type": "SoftwareApplication",
@@ -235,29 +272,12 @@ function softwareSchema(tool) {
     schema.downloadUrl = tool.downloadUrl;
   }
 
-  return schema;
-}
+  if (includeReviews) {
+    const reviews = appStoreReviewSchema(tool);
+    if (reviews.length) schema.review = reviews;
+  }
 
-function productSchema(tool) {
-  const url = `${siteUrl}${tool.path}`;
-  return {
-    "@type": "Product",
-    "@id": `${url}#product`,
-    name: tool.name,
-    brand: {
-      "@id": `${siteUrl}/#organization`
-    },
-    category: "Woodworking software",
-    description: tool.description,
-    url,
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-      url: tool.offerUrl || url
-    }
-  };
+  return schema;
 }
 
 function faqSchema(tool) {
@@ -294,10 +314,7 @@ function howToSchema(tool) {
 }
 
 function pageGraph(tool) {
-  const graph = [organization, softwareSchema(tool)];
-  if (tool.product) {
-    graph.push(productSchema(tool));
-  }
+  const graph = [organization, softwareSchema(tool, { includeReviews: true })];
   if (tool.howto) {
     graph.push(howToSchema(tool));
   }
