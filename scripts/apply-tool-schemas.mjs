@@ -201,6 +201,150 @@ const softwareTools = [
       ["Set a waste allowance", "Choose a waste percentage to cover cuts and breakage."],
       ["Review tiles and boxes needed", "Check the tile count, boxes required, coverage, and material cost before buying."]
     ]
+  },
+  {
+    path: "/drill-bit-finder/",
+    file: "drill-bit-finder/index.html",
+    name: "Drill Bit Finder",
+    subCategory: "Pilot hole size calculator",
+    operatingSystem: "Any",
+    description: "Free drill bit finder for matching screw diameter, material type, pilot holes, clearance holes, fractional bit sizes, and metric drill sizes.",
+    keywords: ["drill bit finder", "pilot hole calculator", "screw pilot hole size", "woodworking drill bit"],
+    features: ["Screw diameter input", "Softwood and hardwood pilot sizes", "Clearance hole estimate", "Fractional bit match", "Metric size reference"],
+    audience: "Woodworkers, DIY builders, cabinet makers, and repair users",
+    howto: [
+      ["Enter the screw diameter", "Measure or select the screw shank diameter before drilling."],
+      ["Choose the hole type", "Select a softwood pilot, hardwood pilot, or clearance hole based on the joint."],
+      ["Review the nearest bit", "Use the suggested fractional and metric bit sizes as a starting point, then test in scrap."]
+    ]
+  },
+  {
+    path: "/fraction-calculator/",
+    file: "fraction-calculator/index.html",
+    name: "Fraction Calculator",
+    subCategory: "Woodworking measurement converter",
+    operatingSystem: "Any",
+    description: "Free fraction calculator for converting common woodworking fractions into decimal inches, millimeters, and the nearest 1/32 inch.",
+    keywords: ["fraction calculator", "woodworking fractions", "fraction to decimal inches", "shop measurement converter"],
+    features: ["Whole-inch input", "Numerator and denominator input", "Decimal inches", "Millimeter conversion", "Nearest 1/32 inch"],
+    audience: "Woodworkers, carpenters, DIY builders, and students",
+    howto: [
+      ["Enter the whole inches", "Add the whole-inch portion of the measurement, if any."],
+      ["Enter the fraction", "Set the numerator and denominator from your plan or tape measure."],
+      ["Read the converted measurement", "Use the decimal and millimeter result for a cut list or shop layout."]
+    ]
+  },
+  {
+    path: "/inch-mm-converter/",
+    file: "inch-mm-converter/index.html",
+    name: "Inch to mm Converter",
+    subCategory: "Imperial and metric measurement converter",
+    operatingSystem: "Any",
+    description: "Free inch to mm converter for woodworking plans, hardware sizes, sheet goods, cabinet layouts, and mixed imperial or metric measurements.",
+    keywords: ["inch to mm converter", "mm to inches converter", "woodworking measurement converter", "imperial metric converter"],
+    features: ["Inches to millimeters", "Millimeters to inches", "Feet conversion", "Fractional inch reference"],
+    audience: "Woodworkers, cabinet makers, DIY builders, and makers",
+    howto: [
+      ["Choose a conversion direction", "Select inches to millimeters or millimeters to inches."],
+      ["Enter the measurement", "Add the dimension from the plan, hardware specification, or material label."],
+      ["Use the practical result", "Review the converted value and fractional-inch reference before marking stock."]
+    ]
+  },
+  {
+    path: "/lumber-calculator/",
+    file: "lumber-calculator/index.html",
+    name: "Lumber Calculator",
+    subCategory: "Lumber volume and cost calculator",
+    operatingSystem: "Any",
+    description: "Free lumber calculator for estimating board feet, linear feet, waste allowance, and cost from board dimensions, quantity, and price.",
+    keywords: ["lumber calculator", "board foot calculator", "lumber cost calculator", "woodworking material estimate"],
+    features: ["Board foot estimate", "Linear feet estimate", "Waste allowance", "Lumber cost estimate", "Quantity input"],
+    audience: "Woodworkers, carpenters, cabinet shops, and lumber buyers",
+    howto: [
+      ["Enter board dimensions", "Set the lumber length, width, thickness, and quantity."],
+      ["Set waste and price", "Add a practical waste allowance and the price per board foot."],
+      ["Review the order estimate", "Check total board feet, linear feet, and estimated cost before buying stock."]
+    ]
+  },
+  {
+    path: "/material-cost-calculator/",
+    file: "material-cost-calculator/index.html",
+    name: "Material Cost Calculator",
+    subCategory: "Woodworking project budget calculator",
+    operatingSystem: "Any",
+    description: "Free material cost calculator for estimating woodworking project costs from wood, sheet goods, hardware, finish, waste, tax, and labor.",
+    keywords: ["material cost calculator", "woodworking project cost", "lumber cost estimate", "DIY project budget"],
+    features: ["Wood and sheet-goods cost", "Hardware and finish cost", "Waste allowance", "Tax estimate", "Optional labor cost"],
+    audience: "Woodworkers, DIY builders, cabinet makers, and project planners",
+    howto: [
+      ["Enter direct material costs", "Add wood, sheet goods, hardware, finish, and supply costs."],
+      ["Set project allowances", "Include waste, tax, and optional labor inputs."],
+      ["Review the budget", "Use the total estimate to compare design options before purchasing materials."]
+    ]
+  },
+  {
+    path: "/material-list-generator/",
+    file: "material-list-generator/index.html",
+    name: "Material List Generator",
+    subCategory: "Woodworking material list builder",
+    operatingSystem: "Any",
+    description: "Free material list generator for turning woodworking part dimensions, quantities, and waste allowance into a practical project checklist.",
+    keywords: ["material list generator", "woodworking material list", "cut list material estimate", "plywood sheet estimate"],
+    features: ["Part name input", "Dimensions and quantities", "Area totals", "Waste allowance", "4x8 sheet equivalent"],
+    audience: "Woodworkers, DIY builders, cabinet makers, and project planners",
+    howto: [
+      ["Add every project part", "Enter a name, dimensions, and quantity for each panel or part."],
+      ["Set a realistic allowance", "Choose a waste allowance that fits the material and project risk."],
+      ["Use the generated checklist", "Review the line items and sheet equivalent before moving to an exact layout."]
+    ]
+  },
+  {
+    path: "/screw-size-finder/",
+    file: "screw-size-finder/index.html",
+    name: "Screw Size Finder",
+    subCategory: "Woodworking screw size calculator",
+    operatingSystem: "Any",
+    description: "Free screw size finder for estimating practical screw gauge, length, and pilot bit size from material thickness, joint type, and load.",
+    keywords: ["screw size finder", "wood screw size calculator", "pilot bit size", "woodworking fastener guide"],
+    features: ["Material thickness input", "Face and edge joint options", "Load selection", "Screw gauge estimate", "Pilot bit estimate"],
+    audience: "Woodworkers, DIY builders, cabinet makers, and repair users",
+    howto: [
+      ["Enter material thickness", "Set the thickness of the part receiving the screw."],
+      ["Choose the joint and load", "Select a face or edge joint and the expected load level."],
+      ["Test the recommendation", "Use the screw and pilot-bit estimate as a starting point and test the joint in scrap."]
+    ]
+  },
+  {
+    path: "/sheet-calculator/",
+    file: "sheet-calculator/index.html",
+    name: "Sheet Calculator",
+    subCategory: "Plywood and panel quantity calculator",
+    operatingSystem: "Any",
+    description: "Free sheet calculator for estimating plywood, MDF, melamine, and panel sheets from part size, quantity, waste allowance, and sheet price.",
+    keywords: ["sheet calculator", "plywood sheet calculator", "MDF sheet calculator", "panel quantity estimator"],
+    features: ["Custom sheet size", "Part dimension input", "Quantity input", "Waste allowance", "Sheet count and cost estimate"],
+    audience: "Woodworkers, cabinet makers, DIY builders, and material planners",
+    howto: [
+      ["Set the stock sheet size", "Enter the dimensions and price of the sheet good you will buy."],
+      ["Enter repeated parts", "Add a part length, width, quantity, and waste allowance."],
+      ["Check an exact layout next", "Use this estimate first, then verify fit with the plywood cut calculator before buying."]
+    ]
+  },
+  {
+    path: "/wood-weight-calculator/",
+    file: "wood-weight-calculator/index.html",
+    name: "Wood Weight Calculator",
+    subCategory: "Lumber and plywood weight calculator",
+    operatingSystem: "Any",
+    description: "Free wood weight calculator for estimating the handling and delivery weight of boards, plywood, MDF, and panels from dimensions and density.",
+    keywords: ["wood weight calculator", "plywood weight calculator", "lumber weight calculator", "MDF weight estimate"],
+    features: ["Board and sheet dimensions", "Quantity input", "Material density input", "Pounds and kilograms", "Weight per piece"],
+    audience: "Woodworkers, DIY builders, delivery planners, and cabinet makers",
+    howto: [
+      ["Enter the part dimensions", "Set the length, width, thickness, and quantity of the boards or panels."],
+      ["Use a material density", "Enter a density that matches the wood species or sheet material as closely as possible."],
+      ["Plan handling safely", "Review total and per-piece weight before transport, lifting, or installation."]
+    ]
   }
 ];
 

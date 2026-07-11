@@ -34,10 +34,42 @@ const pages = {
   "legal/cutlist/support/index.html": {},
   "legal/quiltfit/privacy/index.html": {},
   "legal/quiltfit/support/index.html": {},
-  "tools/index.html": {
-    title: "Woodworking & Construction Calculators | WoodCutTool",
-    desc: "Free woodworking and construction calculators for plywood, cabinets, deck, fence, stairs, roof pitch, concrete, boards, waste, and material planning.",
-    bc: [["Home", "/"], ["Tools", "/tools/"]]
+  "drill-bit-finder/index.html": {
+    bc: [["Home", "/"], ["Tools", "/tools/"], ["Drill Bit Finder", "/drill-bit-finder/"]]
+  },
+  "fraction-calculator/index.html": {
+    bc: [["Home", "/"], ["Tools", "/tools/"], ["Fraction Calculator", "/fraction-calculator/"]]
+  },
+  "inch-mm-converter/index.html": {
+    bc: [["Home", "/"], ["Tools", "/tools/"], ["Inch to mm Converter", "/inch-mm-converter/"]]
+  },
+  "lumber-calculator/index.html": {
+    bc: [["Home", "/"], ["Tools", "/tools/"], ["Lumber Calculator", "/lumber-calculator/"]]
+  },
+  "material-cost-calculator/index.html": {
+    bc: [["Home", "/"], ["Tools", "/tools/"], ["Material Cost Calculator", "/material-cost-calculator/"]]
+  },
+  "material-list-generator/index.html": {
+    bc: [["Home", "/"], ["Tools", "/tools/"], ["Material List Generator", "/material-list-generator/"]]
+  },
+  "screw-size-finder/index.html": {
+    bc: [["Home", "/"], ["Tools", "/tools/"], ["Screw Size Finder", "/screw-size-finder/"]]
+  },
+  "sheet-calculator/index.html": {
+    bc: [["Home", "/"], ["Tools", "/tools/"], ["Sheet Calculator", "/sheet-calculator/"]]
+  },
+  "wood-weight-calculator/index.html": {
+    bc: [["Home", "/"], ["Tools", "/tools/"], ["Wood Weight Calculator", "/wood-weight-calculator/"]]
+  },
+  "conversion/index.html": {
+    title: "Conversion Calculator for Shop Measurements | WoodCutTool",
+    desc: "Convert fractions, inches, millimeters, feet, angles, and rise and run for woodworking and construction measurements.",
+    bc: [["Home", "/"], ["Tools", "/tools/"], ["Conversion Calculator", "/conversion/"]]
+  },
+  "material-library/index.html": {
+    title: "Sheet Goods Material Library | Plywood, MDF & OSB",
+    desc: "Compare plywood, MDF, OSB, melamine, particle board, and Baltic birch by thickness, weight, cost, and practical woodworking uses.",
+    bc: [["Home", "/"], ["Tools", "/tools/"], ["Material Library", "/material-library/"]]
   },
   "plywood-cut-calculator/index.html": {
     title: "Free Plywood Cut Calculator & Sheet Layout Optimizer",
@@ -189,6 +221,16 @@ const pages = {
     title: "Garage Shelving Cut List Template (Free Plywood Plan)",
     desc: "Free garage shelving cut list template. Plan heavy-duty plywood garage shelves with kerf, grain direction, and a sheet cutting plan that minimizes waste.",
     bc: [["Home", "/"], ["Templates", "/templates/"], ["Garage Shelving Cut List", "/templates/garage-shelving-cut-list/"]]
+  },
+  "templates/desk-cut-list/index.html": {
+    title: "Desk Cut List Template (Free Plywood Plan)",
+    desc: "Free desk cut list template. Plan a simple plywood desk with a top, legs, stretchers, and storage shelf using kerf-aware dimensions.",
+    bc: [["Home", "/"], ["Templates", "/templates/"], ["Desk Cut List", "/templates/desk-cut-list/"]]
+  },
+  "templates/tv-stand-cut-list/index.html": {
+    title: "TV Stand Cut List Template (Free Plywood Plan)",
+    desc: "Free TV stand cut list template. Plan a plywood media console with cabinet sides, shelves, dividers, and back panels before cutting.",
+    bc: [["Home", "/"], ["Templates", "/templates/"], ["TV Stand Cut List", "/templates/tv-stand-cut-list/"]]
   },
   // Hand-written app pages: keep their own title/desc, add OG + breadcrumb only.
   "apps/cutlist/index.html": {
