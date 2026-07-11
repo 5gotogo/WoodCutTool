@@ -5,9 +5,13 @@ import { constructionTools } from "./construction-tool-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
+const appStoreApps = JSON.parse(
+  readFileSync(join(root, "data", "app-store-apps.json"), "utf8")
+);
 const appStoreReviews = JSON.parse(
   readFileSync(join(root, "data", "app-store-reviews.json"), "utf8")
 );
+const appStoreAppsBySlug = new Map(appStoreApps.map((app) => [app.slug, app]));
 
 const organization = {
   "@type": "Organization",
@@ -379,6 +383,24 @@ function appStoreReviewSchema(tool) {
     }));
 }
 
+function appStoreAggregateRating(tool) {
+  const app = appStoreAppsBySlug.get(tool.appStoreReviewSlug);
+  const ratingValue = Number(app?.averageUserRating);
+  const ratingCount = Number(app?.userRatingCount);
+
+  if (!Number.isFinite(ratingValue) || ratingValue <= 0 || !Number.isInteger(ratingCount) || ratingCount < 1) {
+    return null;
+  }
+
+  return {
+    "@type": "AggregateRating",
+    ratingValue,
+    ratingCount,
+    bestRating: 5,
+    worstRating: 1
+  };
+}
+
 function softwareSchema(tool, { includeReviews = false } = {}) {
   const url = `${siteUrl}${tool.path}`;
   const schema = {
@@ -420,6 +442,9 @@ function softwareSchema(tool, { includeReviews = false } = {}) {
   if (includeReviews) {
     const reviews = appStoreReviewSchema(tool);
     if (reviews.length) schema.review = reviews;
+
+    const aggregateRating = appStoreAggregateRating(tool);
+    if (aggregateRating) schema.aggregateRating = aggregateRating;
   }
 
   return schema;

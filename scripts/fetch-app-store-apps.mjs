@@ -29,6 +29,8 @@ function normalizeResult(existing, result) {
     minimumOsVersion: result.minimumOsVersion || "",
     formattedPrice: result.formattedPrice || "",
     trackContentRating: result.trackContentRating || "",
+    averageUserRating: Number(result.averageUserRating) || 0,
+    userRatingCount: Number(result.userRatingCount) || 0,
     sellerName: result.sellerName || existing.sellerName || ""
   };
 }
