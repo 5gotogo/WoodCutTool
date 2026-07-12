@@ -184,7 +184,7 @@ const pages = {
   },
   "templates/index.html": {
     title: "Free Plywood Cut List Templates by Project | WoodCutTool",
-    desc: "Free, project-ready plywood cut list templates for bookcases, cabinets, closets, drawers, garage shelving, workbenches, and 4x8 sheet layouts.",
+    desc: "Free project-ready plywood cut list templates for cabinets, storage, furniture, shop fixtures, outdoor builds, and small projects.",
     bc: [["Home", "/"], ["Templates", "/templates/"], ["Cut List Templates", "/templates/"]]
   },
   "templates/4x8-plywood-sheet/index.html": {
