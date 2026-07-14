@@ -921,7 +921,7 @@ ${head({
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   ${header("Learn")}
-  <main id="main">
+  <main id="main" class="learn-page">
     <section class="page-hero">
       <p class="breadcrumb"><a href="/">Home</a> / Learn</p>
       <p class="eyebrow">SEO learning hub</p>

@@ -10531,7 +10531,7 @@ function getArticleIndex(article) {
   return articles.findIndex((candidate) => candidate.slug === article.slug);
 }
 
-function articleVisual(article) {
+function articleVisual(article, { card = false } = {}) {
   const articleIndex = Math.max(0, getArticleIndex(article));
   if (article.image) {
     return articlePhotoVisual(article, articleIndex);
@@ -10545,7 +10545,8 @@ function articleVisual(article) {
     .map(([area, color]) => `<span style="grid-area: ${area}; background: ${color};"></span>`)
     .join("");
 
-  return `<div class="blog-article-visual ${article.accent} visual-${String(articleIndex + 1).padStart(2, "0")}" style="${style}" aria-hidden="true">${cells}</div>`;
+  const cardCoverClass = card ? " blog-wood-cover" : "";
+  return `<div class="blog-article-visual${cardCoverClass} ${article.accent} visual-${String(articleIndex + 1).padStart(2, "0")}" style="${style}" aria-hidden="true">${cells}</div>`;
 }
 
 function articleCard(article) {
@@ -10555,7 +10556,7 @@ function articleCard(article) {
         <a href="/blog/${article.slug}/" aria-label="Read ${escapeHtml(article.title)}">
           <span class="blog-card-number">${String(articleIndex + 1).padStart(2, "0")}</span>
           <span class="blog-card-category">${escapeHtml(article.category)}</span>
-          ${articleVisual(article)}
+          ${articleVisual(article, { card: true })}
           <h2>${escapeHtml(article.title)}</h2>
           <p>${escapeHtml(article.description)}</p>
           <span class="blog-card-meta">${escapeHtml(article.kicker)} · ${escapeHtml(article.readTime)}</span>
