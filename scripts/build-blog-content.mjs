@@ -10,6 +10,7 @@ import { blogBatch20260707 } from "./blog-batch-2026-07-07.mjs";
 import { blogBatch20260709 } from "./blog-batch-2026-07-09.mjs";
 import { blogBatch20260710 } from "./blog-batch-2026-07-10.mjs";
 import { blogBatch20260714 } from "./blog-batch-2026-07-14.mjs";
+import { blogBatch20260715 } from "./blog-batch-2026-07-15.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -9673,6 +9674,7 @@ articles.push(...blogBatch20260707);
 articles.push(...blogBatch20260709);
 articles.push(...blogBatch20260710);
 articles.push(...blogBatch20260714);
+articles.push(...blogBatch20260715);
 
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {
@@ -11716,10 +11718,28 @@ mkdirSync(join(root, "blog"), { recursive: true });
 writeFileSync(join(root, "assets", "blog-translations.json"), `${JSON.stringify(generateBlogTranslations(), null, 2)}\n`);
 writeFileSync(join(root, "blog", "index.html"), blogIndex());
 
+const legacyLearnSlugMap = {
+  "mobile-workbench-cut-list-planner": "mobile-workbench-caster-planning",
+  "garage-cabinet-plywood-sheet-calculator": "garage-cabinet-material-estimate-guide",
+  "mudroom-locker-cut-list-planner": "mudroom-locker-planning-guide",
+  "plywood-grain-direction-cabinet-panels": "grain-direction-in-plywood-layouts",
+  "cabinet-back-panel-cut-list": "cabinet-box-cut-list-basics",
+  "french-cleat-wall-plywood-layout": "french-cleat-tool-holder-planning",
+  "plywood-workbench-material-calculator": "workbench-material-planning-guide",
+  "wall-cabinet-hanging-cleat-guide": "wall-cabinet-plywood-layout-guide"
+};
+
+function resolveLegacyLearnLinks(html) {
+  for (const [from, to] of Object.entries(legacyLearnSlugMap)) {
+    html = html.replaceAll(`/learn/${from}/`, `/learn/${to}/`);
+  }
+  return html;
+}
+
 for (const article of articles) {
   const dir = join(root, "blog", article.slug);
   mkdirSync(dir, { recursive: true });
-  writeFileSync(join(dir, "index.html"), articlePage(article));
+  writeFileSync(join(dir, "index.html"), resolveLegacyLearnLinks(articlePage(article)));
 }
 
 updateExistingHtml();
