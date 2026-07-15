@@ -5483,27 +5483,51 @@ tr:last-child td {
   height: 112px;
   margin: -20px -20px 16px;
   border-bottom: 1px solid var(--line);
-  background: url("/assets/images/learn/cut-layout.webp") center / cover no-repeat;
+  background: url("/assets/images/woodworking/wood-01-plywood-cut-layout.webp") center / cover no-repeat;
 }
 
-.learn-page .grid.tools .card:nth-child(6n+2)::before {
-  background: url("/assets/images/learn/cabinet-planning.webp") center / cover no-repeat;
+.learn-page .grid.tools .card:nth-child(12n+2)::before {
+  background-image: url("/assets/images/woodworking/wood-02-cabinet-hardware.webp");
 }
 
-.learn-page .grid.tools .card:nth-child(6n+3)::before {
-  background: url("/assets/images/learn/workshop-layout.webp") center / cover no-repeat;
+.learn-page .grid.tools .card:nth-child(12n+3)::before {
+  background-image: url("/assets/images/woodworking/wood-03-track-saw-planning.webp");
 }
 
-.learn-page .grid.tools .card:nth-child(6n+4)::before {
-  background: url("/assets/images/learn/stair-planning.webp") center / cover no-repeat;
+.learn-page .grid.tools .card:nth-child(12n+4)::before {
+  background-image: url("/assets/images/woodworking/wood-04-joinery-samples.webp");
 }
 
-.learn-page .grid.tools .card:nth-child(6n+5)::before {
-  background: url("/assets/images/learn/tile-layout.webp") center / cover no-repeat;
+.learn-page .grid.tools .card:nth-child(12n+5)::before {
+  background-image: url("/assets/images/woodworking/wood-05-material-selection.webp");
 }
 
-.learn-page .grid.tools .card:nth-child(6n+6)::before {
-  background: url("/assets/images/learn/quilt-planning.webp") center / cover no-repeat;
+.learn-page .grid.tools .card:nth-child(12n+6)::before {
+  background-image: url("/assets/images/woodworking/wood-06-drawer-assembly.webp");
+}
+
+.learn-page .grid.tools .card:nth-child(12n+7)::before {
+  background-image: url("/assets/images/woodworking/wood-07-workshop-bench.webp");
+}
+
+.learn-page .grid.tools .card:nth-child(12n+8)::before {
+  background-image: url("/assets/images/woodworking/wood-08-edge-banding.webp");
+}
+
+.learn-page .grid.tools .card:nth-child(12n+9)::before {
+  background-image: url("/assets/images/woodworking/wood-09-closet-planning.webp");
+}
+
+.learn-page .grid.tools .card:nth-child(12n+10)::before {
+  background-image: url("/assets/images/woodworking/wood-10-offcut-storage.webp");
+}
+
+.learn-page .grid.tools .card:nth-child(12n+11)::before {
+  background-image: url("/assets/images/woodworking/wood-11-table-saw-planning.webp");
+}
+
+.learn-page .grid.tools .card:nth-child(12n)::before {
+  background-image: url("/assets/images/woodworking/wood-12-site-measurement.webp");
 }
 
 @media (min-width: 780px) {
@@ -6273,29 +6297,61 @@ tr:last-child td {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
 }
 
-/* Shared wood covers keep the large blog directory visually varied without adding one image request per card. */
+/* Twelve shared wood covers keep the large blog directory varied without one image request per card. */
 .blog-card .blog-article-visual.blog-wood-cover {
   display: block;
   min-height: 118px;
   padding: 0;
   overflow: hidden;
-  background: url("/assets/images/learn/cut-layout.webp") center / cover no-repeat;
+  background: url("/assets/images/woodworking/wood-01-plywood-cut-layout.webp") center / cover no-repeat;
 }
 
 .blog-card .blog-article-visual.blog-wood-cover span {
   display: none;
 }
 
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(4n + 2) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/learn/cabinet-planning.webp");
+:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 2) .blog-article-visual.blog-wood-cover {
+  background-image: url("/assets/images/woodworking/wood-02-cabinet-hardware.webp");
 }
 
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(4n + 3) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/learn/workshop-layout.webp");
+:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 3) .blog-article-visual.blog-wood-cover {
+  background-image: url("/assets/images/woodworking/wood-03-track-saw-planning.webp");
 }
 
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(4n) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/learn/stair-planning.webp");
+:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 4) .blog-article-visual.blog-wood-cover {
+  background-image: url("/assets/images/woodworking/wood-04-joinery-samples.webp");
+}
+
+:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 5) .blog-article-visual.blog-wood-cover {
+  background-image: url("/assets/images/woodworking/wood-05-material-selection.webp");
+}
+
+:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 6) .blog-article-visual.blog-wood-cover {
+  background-image: url("/assets/images/woodworking/wood-06-drawer-assembly.webp");
+}
+
+:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 7) .blog-article-visual.blog-wood-cover {
+  background-image: url("/assets/images/woodworking/wood-07-workshop-bench.webp");
+}
+
+:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 8) .blog-article-visual.blog-wood-cover {
+  background-image: url("/assets/images/woodworking/wood-08-edge-banding.webp");
+}
+
+:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 9) .blog-article-visual.blog-wood-cover {
+  background-image: url("/assets/images/woodworking/wood-09-closet-planning.webp");
+}
+
+:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 10) .blog-article-visual.blog-wood-cover {
+  background-image: url("/assets/images/woodworking/wood-10-offcut-storage.webp");
+}
+
+:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 11) .blog-article-visual.blog-wood-cover {
+  background-image: url("/assets/images/woodworking/wood-11-table-saw-planning.webp");
+}
+
+:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n) .blog-article-visual.blog-wood-cover {
+  background-image: url("/assets/images/woodworking/wood-12-site-measurement.webp");
 }
 
 .blog-article-visual.visual-02 span,
@@ -6384,6 +6440,45 @@ tr:last-child td {
   font-weight: 950;
   line-height: 1.2;
   text-shadow: 0 1px 16px rgba(0, 0, 0, 0.34);
+}
+
+.article-wood-photo {
+  margin: 26px 0;
+  overflow: hidden;
+  border: 1px solid rgba(47, 111, 78, 0.18);
+  border-radius: var(--radius);
+  background: #e9eee9;
+  box-shadow: 0 16px 36px rgba(39, 44, 36, 0.09);
+}
+
+.article-wood-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  filter: saturate(0.94) contrast(1.02);
+}
+
+.article-wood-photo figcaption {
+  margin: 0;
+  padding: 11px 14px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.88);
+  font-size: 0.86rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+.blog-article-head > .article-wood-photo-hero {
+  align-self: start;
+  margin: 0;
+}
+
+.article-body > .article-wood-photo + section {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
 }
 
 .blog-article-visual.tinnitus-visual {

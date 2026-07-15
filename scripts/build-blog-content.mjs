@@ -2,6 +2,7 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
+import { woodworkingImageFor } from "./woodworking-images.mjs";
 import { blogBatch20260630 } from "./blog-batch-2026-06-30.mjs";
 import { blogBatch20260701 } from "./blog-batch-2026-07-01.mjs";
 import { blogBatch20260702 } from "./blog-batch-2026-07-02.mjs";
@@ -10462,6 +10463,31 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;");
 }
 
+function usesWoodworkingImages(article) {
+  return article.category === "CutList" || article.category === "Stairs";
+}
+
+function woodworkingArticleFigure(article, offset = 0, placement = "inline") {
+  if (!usesWoodworkingImages(article)) return "";
+  const topic = `${article.slug} ${article.title} ${article.description}`;
+  const image = woodworkingImageFor(topic, offset);
+  const loading = placement === "hero"
+    ? 'loading="eager" fetchpriority="high"'
+    : 'loading="lazy"';
+  return `<figure class="article-wood-photo article-wood-photo-${placement}">
+          <img src="${escapeHtml(image.src)}" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${article.title}`)}" ${loading} decoding="async">
+          <figcaption>${escapeHtml(image.caption)}</figcaption>
+        </figure>`;
+}
+
+function blogArticleSections(article) {
+  return article.sections.map(([heading, body], index) => {
+    const section = `<section><h2>${escapeHtml(heading)}</h2><p>${escapeHtml(body)}</p></section>`;
+    const image = index === 1 ? woodworkingArticleFigure(article, 1) : "";
+    return image ? `${section}\n      ${image}` : section;
+  }).join("\n      ");
+}
+
 function header(active = "Blogs") {
   return `<div data-site-header></div>`;
 }
@@ -10542,6 +10568,9 @@ function articleVisual(article, { card = false } = {}) {
   }
   if (article.category === "Tinnitus") {
     return tinnitusArticleVisual(article, articleIndex);
+  }
+  if (!card && usesWoodworkingImages(article)) {
+    return woodworkingArticleFigure(article, 0, "hero");
   }
   const pattern = getVisualPattern(articleIndex);
   const style = `--visual-cols: ${pattern.cols}; --visual-rows: ${pattern.rows}; --visual-bg: ${pattern.bg};`;
@@ -10907,7 +10936,9 @@ function blogPostingJsonLd(article) {
     description: article.description,
     url,
     mainEntityOfPage: url,
-    image: "https://woodcuttool.com/assets/og/woodcuttool-og.png",
+    image: usesWoodworkingImages(article)
+      ? `${siteUrl}${woodworkingImageFor(`${article.slug} ${article.title} ${article.description}`).src}`
+      : `${siteUrl}/assets/og/woodcuttool-og.png`,
     ...(dates.published ? { datePublished: dates.published } : {}),
     dateModified: dates.modified,
     inLanguage: "en",
@@ -10956,7 +10987,7 @@ ${head({
       </div>
       ${research ? `<section class="research-panel"><h2>Research Lens</h2><div class="research-grid"><div><strong>Question</strong><p>${escapeHtml(research.question)}</p></div><div><strong>Working Insight</strong><p>${escapeHtml(research.insight)}</p></div></div></section><section class="metric-panel"><h2>Decision Metrics</h2><div class="metric-pill-grid">${research.metrics.map((metric) => `<span>${escapeHtml(metric)}</span>`).join("")}</div></section>` : ""}
       ${deepDiveFigure(article)}
-      ${article.sections.map(([heading, body]) => `<section><h2>${escapeHtml(heading)}</h2><p>${escapeHtml(body)}</p></section>`).join("\n      ")}
+      ${blogArticleSections(article)}
       ${chartFigure(article)}
       ${deepComparison(article)}
       <section class="article-checklist">

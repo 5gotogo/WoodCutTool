@@ -2,6 +2,7 @@ import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
+import { woodworkingImageFor } from "./woodworking-images.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -13,6 +14,37 @@ function escapeHtml(value) {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
+}
+
+function usesWoodworkingImages(page) {
+  const topic = `${page.slug || ""} ${page.h1 || ""} ${page.description || ""}`.toLowerCase();
+  return !/(^|\W)(tile|quilt|fabric|yardage|backing|batting|binding)(\W|$)/.test(topic);
+}
+
+function learnWoodImage(page, offset = 0, placement = "inline") {
+  if (!usesWoodworkingImages(page)) return "";
+  const topic = `${page.slug} ${page.h1} ${page.description}`;
+  const image = woodworkingImageFor(topic, offset);
+  const loading = placement === "hero"
+    ? 'loading="eager" fetchpriority="high"'
+    : 'loading="lazy"';
+  return `<figure class="article-wood-photo article-wood-photo-${placement}">
+        <img src="${escapeHtml(image.src)}" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${page.h1}`)}" ${loading} decoding="async">
+        <figcaption>${escapeHtml(image.caption)}</figcaption>
+      </figure>`;
+}
+
+function learnWoodImageAfter(page, offset = 0, placement = "inline") {
+  const image = learnWoodImage(page, offset, placement);
+  return image ? `\n      ${image}` : "";
+}
+
+function learnArticleSections(article) {
+  return article.sections.map(([heading, body], index) => {
+    const section = `<section><h2>${escapeHtml(heading)}</h2><p>${body}</p></section>`;
+    const image = index === 1 ? learnWoodImage(article, 1) : "";
+    return image ? `${section}\n      ${image}` : section;
+  }).join("\n      ");
 }
 
 function head({ title, description, canonical, jsonLd = "", ogType = "website" }) {
@@ -30,25 +62,16 @@ function head({ title, description, canonical, jsonLd = "", ogType = "website" }
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
+  <style>.mega-menu{display:none}</style>
   <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/site-chrome.js"></script>
   <script defer src="/assets/app.js"></script>
   ${jsonLd}
 </head>`;
 }
 
-function header(active = "Learn") {
-  const links = [
-    ["CutList", "/cutlist/"],
-    ["QuiltFit", "/quiltfit/"],
-    ["Tile", "/tile-calculator/"],
-    ["Stringer", "/stringer/"],
-    ["Blogs", "/blog/"],
-    ["Apps", "/apps/"],
-    ["Tools", "/tools/"],
-    ["Learn", "/learn/"],
-    ["Glossary", "/glossary/"]
-  ];
-  return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links">${links.map(([label, href]) => `<a${label === active ? ' class="active"' : ""} href="${href}">${label}</a>`).join("")}</div><label class="language-picker"><span class="visually-hidden">Language</span><select id="language-select" aria-label="Language"><option value="en">English</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="es">Español</option><option value="pt">Português</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="nl">Nederlands</option><option value="it">Italiano</option><option value="ar">العربية</option><option value="ja">日本語</option></select></label><a class="button small" href="/apps/">Explore Apps</a></nav></header>`;
+function header() {
+  return `<div data-site-header></div>`;
 }
 
 function footer() {
@@ -770,7 +793,10 @@ function articleJsonLd(article) {
     description: article.description,
     url: `${siteUrl}/learn/${article.slug}/`,
     mainEntityOfPage: `${siteUrl}/learn/${article.slug}/`,
-    keywords: article.keywords.join(", ")
+    keywords: article.keywords.join(", "),
+    ...(usesWoodworkingImages(article) ? {
+      image: `${siteUrl}${woodworkingImageFor(`${article.slug} ${article.h1} ${article.description}`).src}`
+    } : {})
   };
   return `<script type="application/ld+json">
   ${JSON.stringify(graph, null, 2)}
@@ -818,9 +844,9 @@ ${head({
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/learn/">Learn</a> / ${escapeHtml(article.h1)}</p>
       <p class="eyebrow">WoodCutTool Learn</p>
       <h1>${escapeHtml(article.h1)}</h1>
-      <p class="lead">${escapeHtml(article.intro)}</p>
+      <p class="lead">${escapeHtml(article.intro)}</p>${learnWoodImageAfter(article, 0, "hero")}
       ${targetKeywords(article)}
-      ${article.sections.map(([heading, body]) => `<section><h2>${escapeHtml(heading)}</h2><p>${body}</p></section>`).join("\n      ")}
+      ${learnArticleSections(article)}
       <section><h2>When to move from learning to planning</h2><p>Reading is useful when you are choosing a method, but the project becomes real when dimensions, quantities, material costs, and waste are entered into a tool. If the article describes the problem you are facing, the next step is to test your own numbers. Start with the <a href="/tools/">tools hub</a>, choose the calculator that matches the material, and compare the result before buying stock. For plywood and cabinet projects, move the final plan into <a href="/cutlist/">CutList</a> so the layout can be saved, reopened, exported, and used at the saw.</p></section>
       <section><h2>Recommended next step</h2><p>If you only need a quick estimate, open the related browser calculator and run the first pass. If the job has many parts, expensive material, or changing measurements, use the CutList app as the project workspace. That path keeps the SEO learning journey connected to a practical action: learn the concept, calculate the material, review the layout, then save the final cut plan before work begins. This gives every reader a clear path from search intent to a useful tool.</p></section>
       <section class="inline-cta-section">
@@ -850,7 +876,10 @@ function landingJsonLd(page) {
         description: page.description,
         url: `${siteUrl}/learn/${page.slug}/`,
         mainEntityOfPage: `${siteUrl}/learn/${page.slug}/`,
-        keywords: page.keywords.join(", ")
+        keywords: page.keywords.join(", "),
+        ...(usesWoodworkingImages(page) ? {
+          image: `${siteUrl}${woodworkingImageFor(`${page.slug} ${page.h1} ${page.description}`).src}`
+        } : {})
       },
       {
         "@type": "FAQPage",
@@ -908,7 +937,7 @@ ${head({
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/learn/">Learn</a> / ${escapeHtml(page.h1)}</p>
       <p class="eyebrow">SEO landing page</p>
       <h1>${escapeHtml(page.h1)}</h1>
-      <p class="lead">${escapeHtml(page.description)}</p>
+      <p class="lead">${escapeHtml(page.description)}</p>${learnWoodImageAfter(page, 0, "hero")}
       ${targetKeywords(page)}
       <section>
         <h2>The problem</h2>
@@ -919,7 +948,7 @@ ${head({
         <div class="steps-grid">
           ${page.steps.map(([heading, body], index) => `<article class="step-card"><span>${index + 1}</span><h3>${escapeHtml(heading)}</h3><p>${escapeHtml(body)}</p></article>`).join("\n          ")}
         </div>
-      </section>
+      </section>${learnWoodImageAfter(page, 1)}
       <section class="inline-cta-section">
         <div class="inline-cta">
           <p><strong>Tool recommendation:</strong> ${escapeHtml(page.recommendation)}</p>
