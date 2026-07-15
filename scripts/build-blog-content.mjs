@@ -10563,7 +10563,7 @@ function articleCard(article) {
           ${articleVisual(article, { card: true })}
           <h2>${escapeHtml(article.title)}</h2>
           <p>${escapeHtml(article.description)}</p>
-          <span class="blog-card-meta">${escapeHtml(article.kicker)} · ${escapeHtml(article.readTime)}</span>
+          <span class="blog-card-meta">${escapeHtml(article.kicker)} · ${escapeHtml(readTimeLabel(article.readTime))}</span>
         </a>
       </article>`;
 }
@@ -10867,8 +10867,39 @@ ${head({
 `;
 }
 
+function readTimeLabel(readTime) {
+  return /\bread\b/i.test(readTime) ? readTime : `${readTime} read`;
+}
+
+function articleDates(article) {
+  return {
+    published: article.publishedDate || null,
+    modified: article.modifiedDate || (performanceResponseDetails[article.slug] ? "2026-07-08" : "2026-06-23")
+  };
+}
+
+function formatArticleDate(isoDate, locale = "en-US") {
+  if (!isoDate) return "";
+  const [year, month, day] = isoDate.split("-").map(Number);
+  return new Intl.DateTimeFormat(locale, {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC"
+  }).format(new Date(Date.UTC(year, month - 1, day)));
+}
+
+function articleMetaLine(article) {
+  const dates = articleDates(article);
+  const published = dates.published
+    ? `<span>Published ${escapeHtml(formatArticleDate(dates.published))}</span>`
+    : "";
+  return `<div class="article-meta-line"><span>${escapeHtml(article.category)}</span>${published}<span>Updated ${escapeHtml(formatArticleDate(dates.modified))}</span><span>${escapeHtml(readTimeLabel(article.readTime))}</span></div>`;
+}
+
 function blogPostingJsonLd(article) {
   const url = `https://woodcuttool.com/blog/${article.slug}/`;
+  const dates = articleDates(article);
   const graph = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -10877,8 +10908,8 @@ function blogPostingJsonLd(article) {
     url,
     mainEntityOfPage: url,
     image: "https://woodcuttool.com/assets/og/woodcuttool-og.png",
-    datePublished: article.publishedDate || "2026-01-01",
-    dateModified: article.modifiedDate || (performanceResponseDetails[article.slug] ? "2026-07-08" : "2026-06-23"),
+    ...(dates.published ? { datePublished: dates.published } : {}),
+    dateModified: dates.modified,
     inLanguage: "en",
     articleSection: article.category,
     author: { "@type": "Organization", name: "WoodCutTool", url: "https://woodcuttool.com/" },
@@ -10919,7 +10950,7 @@ ${head({
           <p class="eyebrow">${escapeHtml(article.kicker)}</p>
           <h1>${escapeHtml(article.title)}</h1>
           <p class="lead">${escapeHtml(article.description)}</p>
-          <div class="article-meta-line"><span>${escapeHtml(article.category)}</span><span>${escapeHtml(article.readTime)}</span><span>Updated 2026</span></div>
+          ${articleMetaLine(article)}
         </div>
         ${articleVisual(article)}
       </div>
@@ -11197,7 +11228,8 @@ function zhTitle(article) {
 }
 
 function zhReadTime(readTime) {
-  return readTime.replace("min", "分钟");
+  const minutes = readTime.match(/\d+/)?.[0];
+  return minutes ? `阅读约 ${minutes} 分钟` : readTime;
 }
 
 function zhKicker(article) {
@@ -11551,8 +11583,7 @@ function generateBlogTranslations() {
     "Wood Cutting Calculator Guide": "木材切割计算器指南",
     "Kerf, stock size, grain direction, and waste reduction.": "锯缝、板材尺寸、纹理方向与减少浪费。",
     "How To Optimize Material Layout": "如何优化材料排版",
-    "Batching, rotation, offcut preservation, and cleaner layouts.": "批量规划、旋转、余料保留和更清晰的排版。",
-    "Updated 2026": "2026 年更新"
+    "Batching, rotation, offcut preservation, and cleaner layouts.": "批量规划、旋转、余料保留和更清晰的排版。"
   };
 
   for (const article of articles) {
@@ -11562,8 +11593,14 @@ function generateBlogTranslations() {
     zhCN[article.description] = zhDescription(article);
     zhCN[article.kicker] = zhKicker(article);
     zhCN[article.readTime] = zhReadTime(article.readTime);
-    zhCN[`${article.kicker} · ${article.readTime}`] = `${zhKicker(article)} · ${zhReadTime(article.readTime)}`;
+    zhCN[readTimeLabel(article.readTime)] = zhReadTime(article.readTime);
+    zhCN[`${article.kicker} · ${readTimeLabel(article.readTime)}`] = `${zhKicker(article)} · ${zhReadTime(article.readTime)}`;
     zhCN[article.category] = zhCategory[article.category] || article.category;
+    const dates = articleDates(article);
+    if (dates.published) {
+      zhCN[`Published ${formatArticleDate(dates.published)}`] = `发布于 ${formatArticleDate(dates.published, "zh-CN")}`;
+    }
+    zhCN[`Updated ${formatArticleDate(dates.modified)}`] = `更新于 ${formatArticleDate(dates.modified, "zh-CN")}`;
 
     article.sections.forEach(([heading, body], index) => {
       zhCN[heading] = templates?.headings[index] || heading;
