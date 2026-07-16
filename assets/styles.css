@@ -6951,6 +6951,20 @@ tr:last-child td {
   margin-top: 18px;
 }
 
+.article-byline {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.article-byline a {
+  color: var(--accent-2);
+  font-weight: 800;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .research-panel,
 .metric-panel {
   padding: 20px;

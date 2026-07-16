@@ -19,6 +19,11 @@ const pages = {
     title: "Plan Plywood Cuts & Cut Less Waste | WoodCutTool",
     desc: "Free plywood cutting calculator and cut list optimizer. Plan sheet layouts, add kerf, and cut less waste in your browser - no login."
   },
+  "about/index.html": {
+    title: "About WoodCutTool & Our Editorial Process",
+    desc: "Learn who creates WoodCutTool guides and calculators, how pages are checked, how automation is used, and when readers should verify local data.",
+    bc: [["Home", "/"], ["About", "/about/"]]
+  },
   "privacy-policy/index.html": {},
   "terms-of-service/index.html": {},
   "disclaimer/index.html": {},
@@ -123,32 +128,32 @@ const pages = {
     bc: [["Home", "/"], ["Compare", "/compare/"], ["Best Plywood Tools", "/compare/best-plywood-tools/"]]
   },
   "compare/track-saw-vs-table-saw-sheet-goods/index.html": {
-    title: "Track Saw vs Table Saw for Sheet Goods: Which Cuts Plywood Better?",
+    title: "Track Saw vs Table Saw for Plywood: Which Is Better?",
     desc: "Track saw vs table saw for cutting plywood and sheet goods: accuracy, safety, space, cost, and breaking down full 4x8 sheets. Which one should you buy?",
     type: "article",
     bc: [["Home", "/"], ["Compare", "/compare/"], ["Track Saw vs Table Saw", "/compare/track-saw-vs-table-saw-sheet-goods/"]]
   },
   "compare/cut-list-app-vs-spreadsheet/index.html": {
     title: "Cut List App vs Spreadsheet: Which Plans Cuts Better?",
-    desc: "Cut list app vs spreadsheet for woodworking: speed, accuracy, visual layout, kerf, and saved projects. See why a cut list app beats a spreadsheet for cutting plans.",
+    desc: "Compare a cut list app vs spreadsheet for woodworking speed, accuracy, visual layouts, kerf, waste, revisions, and saved projects.",
     type: "article",
     bc: [["Home", "/"], ["Compare", "/compare/"], ["Cut List App vs Spreadsheet", "/compare/cut-list-app-vs-spreadsheet/"]]
   },
   "compare/cut-list-calculator-vs-manual-cutting-plan/index.html": {
     title: "Cut List Calculator vs Manual Cutting Plan: Which Is Better?",
-    desc: "Cut list calculator vs a manual cutting plan: accuracy, speed, kerf, waste, and revisions. See when a calculator beats hand-drawn cutting plans for woodworking.",
+    desc: "Compare a cut list calculator vs a manual cutting plan for accuracy, speed, kerf, waste, revisions, and practical woodworking use.",
     type: "article",
     bc: [["Home", "/"], ["Compare", "/compare/"], ["Cut List Calculator vs Manual Plan", "/compare/cut-list-calculator-vs-manual-cutting-plan/"]]
   },
   "compare/cutlist-vs-excel-for-woodworking/index.html": {
     title: "CutList vs Excel for Woodworking: Which Should You Use?",
-    desc: "CutList vs Excel for woodworking cut lists: visual layout, kerf, sheet count, and saved projects vs spreadsheet formulas. See which fits your cutting workflow.",
+    desc: "Compare CutList vs Excel for woodworking cut lists, including visual layouts, kerf, sheet count, formulas, revisions, and saved projects.",
     type: "article",
     bc: [["Home", "/"], ["Compare", "/compare/"], ["CutList vs Excel for Woodworking", "/compare/cutlist-vs-excel-for-woodworking/"]]
   },
   "compare/woodworking-calculator-vs-paper-plans/index.html": {
     title: "Woodworking Calculator vs Paper Plans: Which Is Better?",
-    desc: "Woodworking calculator vs paper plans: accuracy, material estimates, revisions, and waste. See when a calculator beats hand-drawn paper plans for your project.",
+    desc: "Compare a woodworking calculator vs paper plans for accuracy, material estimates, revisions, waste, and practical project planning.",
     type: "article",
     bc: [["Home", "/"], ["Compare", "/compare/"], ["Woodworking Calculator vs Paper Plans", "/compare/woodworking-calculator-vs-paper-plans/"]]
   },
@@ -160,12 +165,12 @@ const pages = {
   },
   "compare/board-foot-vs-linear-foot-calculator/index.html": {
     title: "Board Foot vs Linear Foot Calculator: What's the Difference?",
-    desc: "Board foot vs linear foot calculator explained: how each measures lumber, when to use which, and how to avoid paying for the wrong quantity at the lumberyard.",
+    desc: "Board foot vs linear foot explained: learn how each measures lumber, when to use each one, and how to buy the right quantity at the lumberyard.",
     type: "article",
     bc: [["Home", "/"], ["Compare", "/compare/"], ["Board Foot vs Linear Foot", "/compare/board-foot-vs-linear-foot-calculator/"]]
   },
   "compare/plywood-calculator-vs-cut-list-calculator/index.html": {
-    title: "Plywood Calculator vs Cut List Calculator: Which Do You Need?",
+    title: "Plywood vs Cut List Calculator: Which Do You Need?",
     desc: "Plywood calculator vs cut list calculator: which to use for sheet goods vs boards, how they differ, and when to use each for an accurate cutting plan.",
     type: "article",
     bc: [["Home", "/"], ["Compare", "/compare/"], ["Plywood Calculator vs Cut List Calculator", "/compare/plywood-calculator-vs-cut-list-calculator/"]]
@@ -336,7 +341,7 @@ for (const [file, cfg] of Object.entries(pages)) {
       datePublished: "2026-01-01",
       dateModified: "2026-06-23",
       inLanguage: "en",
-      author: { "@type": "Organization", name: "WoodCutTool", url: "https://woodcuttool.com/" },
+      author: { "@type": "Organization", name: "WoodCutTool Editorial Team", url: "https://woodcuttool.com/about/" },
       publisher: {
         "@type": "Organization",
         name: "WoodCutTool",
@@ -351,6 +356,13 @@ for (const [file, cfg] of Object.entries(pages)) {
       html = html.replace(new RegExp(`${AP_START}[\\s\\S]*?${AP_END}`), block);
     } else {
       html = html.replace("</head>", `  ${block}\n</head>`);
+    }
+
+    // Make authorship visible to readers as well as machines. Keep this tied to
+    // the same About page used by the Article/BlogPosting schema.
+    if (!/href=["']\/about\/["']/i.test(html)) {
+      const byline = '<p class="article-byline">By <a href="/about/">WoodCutTool Editorial Team</a> · Reviewed for practical planning, clear assumptions, and a useful next step.</p>';
+      html = html.replace(/(<h1\b[^>]*>[\s\S]*?<\/h1>)/i, `$1\n      ${byline}`);
     }
   }
 

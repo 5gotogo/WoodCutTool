@@ -155,6 +155,11 @@ for (const file of files) {
   if (twitterCardCount === 0) issues.push(["missing twitter card", file]);
   if (twitterCardCount > 1) issues.push(["twitter card count", file, twitterCardCount]);
   if (!/application\/ld\+json/i.test(html)) issues.push(["missing jsonld", file]);
+
+  const articleSchema = /"@type"\s*:\s*"(?:Article|BlogPosting)"/i.test(html);
+  if (articleSchema && !/href=["']\/about\/["']/i.test(html)) {
+    issues.push(["missing visible author link", file]);
+  }
 }
 
 for (const [title, titleFiles] of titles) {

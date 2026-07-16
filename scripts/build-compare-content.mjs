@@ -138,7 +138,7 @@ function articleJsonLd(article) {
     dateModified: "2026-07-02",
     inLanguage: "en",
     articleSection: article.category,
-    author: { "@type": "Organization", name: "WoodCutTool", url: `${siteUrl}/` },
+    author: { "@type": "Organization", name: "WoodCutTool Editorial Team", url: `${siteUrl}/about/` },
     publisher: {
       "@type": "Organization",
       name: "WoodCutTool",
@@ -304,6 +304,7 @@ ${head({
           <p class="eyebrow">${escapeHtml(article.category)} comparison</p>
           <h1>${escapeHtml(article.h1)}</h1>
           <p class="lead">${escapeHtml(article.description)}</p>
+          <p class="article-byline">By <a href="/about/">WoodCutTool Editorial Team</a> · Compared by project fit, workflow, material risk, and practical tradeoffs.</p>
           <div class="hero-actions"><a class="button" href="${article.relatedB}">Use related tool</a><a class="button secondary" href="/compare/">Back to Comparison Center</a></div>
         </div>
         <aside class="comparison-verdict-card" aria-label="Quick verdict">

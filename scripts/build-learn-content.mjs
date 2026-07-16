@@ -794,6 +794,14 @@ function articleJsonLd(article) {
     url: `${siteUrl}/learn/${article.slug}/`,
     mainEntityOfPage: `${siteUrl}/learn/${article.slug}/`,
     keywords: article.keywords.join(", "),
+    dateModified: "2026-07-16",
+    author: { "@type": "Organization", name: "WoodCutTool Editorial Team", url: `${siteUrl}/about/` },
+    publisher: {
+      "@type": "Organization",
+      name: "WoodCutTool",
+      url: `${siteUrl}/`,
+      logo: { "@type": "ImageObject", url: `${siteUrl}/assets/icons/icon-512.png` }
+    },
     ...(usesWoodworkingImages(article) ? {
       image: `${siteUrl}${woodworkingImageFor(`${article.slug} ${article.h1} ${article.description}`).src}`
     } : {})
@@ -845,6 +853,7 @@ ${head({
       <p class="eyebrow">WoodCutTool Learn</p>
       <h1>${escapeHtml(article.h1)}</h1>
       <p class="lead">${escapeHtml(article.intro)}</p>${learnWoodImageAfter(article, 0, "hero")}
+      <p class="article-byline">By <a href="/about/">WoodCutTool Editorial Team</a> · Built to help readers move from a concept to a checked material or cutting plan.</p>
       ${targetKeywords(article)}
       ${learnArticleSections(article)}
       <section><h2>When to move from learning to planning</h2><p>Reading is useful when you are choosing a method, but the project becomes real when dimensions, quantities, material costs, and waste are entered into a tool. If the article describes the problem you are facing, the next step is to test your own numbers. Start with the <a href="/tools/">tools hub</a>, choose the calculator that matches the material, and compare the result before buying stock. For plywood and cabinet projects, move the final plan into <a href="/cutlist/">CutList</a> so the layout can be saved, reopened, exported, and used at the saw.</p></section>

@@ -89,7 +89,7 @@ function blogPostingSchema(article, slug) {
     datePublished: "2026-06-28",
     dateModified: "2026-06-28",
     inLanguage: "en",
-    author: { "@type": "Organization", name: "WoodCutTool", url: `${SITE}/` },
+    author: { "@type": "Organization", name: "WoodCutTool Editorial Team", url: `${SITE}/about/` },
     publisher: {
       "@type": "Organization",
       name: "WoodCutTool",
@@ -141,6 +141,7 @@ ${header}
       <p class="eyebrow">${esc(app.appName)} comparison</p>
       <h1>${esc(article.title)}</h1>
       <p class="lead">${esc(article.intro)}</p>
+      <p class="article-byline">By <a href="/about/">WoodCutTool Editorial Team</a> · Based on the documented app workflow and the practical tradeoffs of the alternative.</p>
 
       <section>
         <h2>Comparison table</h2>

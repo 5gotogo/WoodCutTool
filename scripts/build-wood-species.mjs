@@ -380,6 +380,11 @@ function speciesJsonLd(wood) {
           { "@type": "Thing", name: "wood species" },
           { "@type": "Thing", name: "Janka hardness" }
         ],
+        author: {
+          "@type": "Organization",
+          name: "WoodCutTool Editorial Team",
+          url: `${siteUrl}/about/`
+        },
         publisher: {
           "@type": "Organization",
           name: "WoodCutTool",
@@ -427,6 +432,7 @@ ${head({ title, description, canonical, jsonLd: speciesJsonLd(wood), ogType: "ar
       <p class="eyebrow">${escapeHtml(wood.group)} reference</p>
       <h1>${escapeHtml(wood.name)} Wood</h1>
       <p class="lead">Use this ${escapeHtml(wood.name)} wood profile to compare density, weight, Janka hardness, price tier, applications, pros, cons, outdoor fit, and finish behavior before building a cut list.</p>
+      <p class="article-byline">By <a href="/about/">WoodCutTool Editorial Team</a> · Reference values are planning ranges; confirm the actual board, moisture, grade, and supplier data before buying.</p>
       <div class="hero-actions"><a class="button" href="/wood-weight-calculator/">Calculate ${escapeHtml(wood.name)} weight</a><a class="button secondary" href="/wood/">Back to wood library</a></div>
     </section>
 

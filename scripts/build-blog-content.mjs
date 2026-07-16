@@ -10945,7 +10945,7 @@ function blogPostingJsonLd(article) {
     dateModified: dates.modified,
     inLanguage: "en",
     articleSection: article.category,
-    author: { "@type": "Organization", name: "WoodCutTool", url: "https://woodcuttool.com/" },
+    author: { "@type": "Organization", name: "WoodCutTool Editorial Team", url: "https://woodcuttool.com/about/" },
     publisher: {
       "@type": "Organization",
       name: "WoodCutTool",
@@ -10983,6 +10983,7 @@ ${head({
           <p class="eyebrow">${escapeHtml(article.kicker)}</p>
           <h1>${escapeHtml(article.title)}</h1>
           <p class="lead">${escapeHtml(article.description)}</p>
+          <p class="article-byline">By <a href="/about/">WoodCutTool Editorial Team</a> · Practical planning guidance, reviewed against the tools and workflows described on this site.</p>
           ${articleMetaLine(article)}
         </div>
         ${articleVisual(article)}
