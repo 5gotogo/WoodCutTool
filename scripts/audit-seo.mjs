@@ -160,6 +160,13 @@ for (const file of files) {
   if (articleSchema && !/href=["']\/about\/["']/i.test(html)) {
     issues.push(["missing visible author link", file]);
   }
+
+  const datasetSchema = /"@type"\s*:\s*"Dataset"/i.test(html);
+  if (datasetSchema) {
+    if (!/"@type"\s*:\s*"DataDownload"/i.test(html)) issues.push(["dataset missing download schema", file]);
+    if (!/"license"\s*:\s*"https:\/\/creativecommons\.org\/licenses\//i.test(html)) issues.push(["dataset missing license", file]);
+    if (!/href=["'][^"']+\.csv["']/i.test(html)) issues.push(["dataset missing visible csv link", file]);
+  }
 }
 
 for (const [title, titleFiles] of titles) {

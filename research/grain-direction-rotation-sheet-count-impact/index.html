@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grain Direction and Plywood Sheet Yield | WoodCutTool</title>
+  <meta name="description" content="Comparison of plywood sheet estimates with panel rotation allowed versus grain direction locked across 24 common woodworking projects.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/research/grain-direction-rotation-sheet-count-impact/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="WoodCutTool">
+  <meta property="og:title" content="Grain Direction and Plywood Sheet Yield | WoodCutTool">
+  <meta property="og:description" content="Comparison of plywood sheet estimates with panel rotation allowed versus grain direction locked across 24 common woodworking projects.">
+  <meta property="og:url" content="https://woodcuttool.com/research/grain-direction-rotation-sheet-count-impact/">
+  <meta property="og:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Grain Direction and Plywood Sheet Yield | WoodCutTool">
+  <meta name="twitter:description" content="Comparison of plywood sheet estimates with panel rotation allowed versus grain direction locked across 24 common woodworking projects.">
+  <meta name="twitter:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
+  <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="/assets/site-chrome.js"></script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "WoodCutTool Grain Direction and Panel Rotation Benchmark",
+  "description": "Comparison of plywood sheet estimates with panel rotation allowed versus grain direction locked across 24 common woodworking projects.",
+  "url": "https://woodcuttool.com/research/grain-direction-rotation-sheet-count-impact/",
+  "sameAs": "https://woodcuttool.com/research/grain-direction-rotation-sheet-count-impact/",
+  "creator": {
+    "@type": "Organization",
+    "name": "WoodCutTool",
+    "url": "https://woodcuttool.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "WoodCutTool",
+    "url": "https://woodcuttool.com/"
+  },
+  "datePublished": "2026-07-16",
+  "dateModified": "2026-07-16",
+  "version": "2026-07-16",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "measurementTechnique": "Deterministic MaxRects-style rectangle-packing heuristic with 96 by 48 inch sheets",
+  "variableMeasured": [
+    "project",
+    "rotation-allowed sheet count",
+    "grain-locked sheet count",
+    "rotation-allowed yield",
+    "grain-locked yield"
+  ],
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://woodcuttool.com/research/data/plywood-project-yield-benchmarks.csv",
+    "encodingFormat": "text/csv"
+  }
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://woodcuttool.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Research",
+      "item": "https://woodcuttool.com/research/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Grain direction and rotation",
+      "item": "https://woodcuttool.com/research/grain-direction-rotation-sheet-count-impact/"
+    }
+  ]
+}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+  <main id="main" class="article-shell research-shell">
+    <article class="article-body research-article">
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/research/">Research</a> / Grain Direction, Panel Rotation, and Plywood Yield</p>
+      <p class="eyebrow">Benchmark report · Grain direction</p>
+      <h1>Grain Direction, Panel Rotation, and Plywood Yield</h1>
+      <p class="lead">Rotating rectangles can improve a digital layout, but visible plywood faces often need consistent grain direction. This comparison shows how frequently locking orientation changed the estimated sheet count in 24 project parts lists.</p>
+      <p class="article-byline">Published 2026-07-16 by <a href="/about/">WoodCutTool Editorial Team</a> · Dataset version 2026-07-16</p>
+      
+      <section class="research-metrics" aria-label="Benchmark summary">
+        <div class="research-metric"><span>Projects tested</span><strong>24</strong><small>Same source parts lists</small></div>
+        <div class="research-metric"><span>Rotation-sensitive</span><strong>3</strong><small>12.5% of tested projects</small></div>
+        <div class="research-metric"><span>Rotate-mode sheets</span><strong>42</strong><small>Across all test inputs</small></div>
+        <div class="research-metric"><span>Locked-mode sheets</span><strong>45</strong><small>+3 across test inputs</small></div>
+      </section>
+      <section class="research-note"><h2>Download the underlying data</h2><p><a class="button" href="/research/data/plywood-project-yield-benchmarks.csv" download>Download project benchmark CSV</a></p><p>The shared project dataset includes both rotation modes, yield percentages, source templates, inputs, version, and method.</p></section>
+      <section><h2>Rotation allowed versus orientation locked</h2><p>“Allowed” means any rectangle may turn 90 degrees. “Locked” means every piece retains the entered long-side and short-side orientation. A zero delta does not prove the placements are identical; it only means both modes used the same number of sheets.</p>
+        <div class="research-table-wrap"><table class="research-table"><thead><tr><th>Project</th><th>Rotate</th><th>Locked</th><th>Difference</th><th>Result</th></tr></thead><tbody><tr><th scope="row"><a href="/templates/base-cabinet-cut-list/">Base cabinet</a></th><td>1</td><td>1</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/wall-cabinet-cut-list/">Wall cabinet</a></th><td>1</td><td>1</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/bathroom-vanity-cut-list/">Bathroom vanity</a></th><td>1</td><td>1</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/pantry-cabinet-cut-list/">Pantry cabinet</a></th><td>3</td><td>3</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/laundry-room-cabinet-cut-list/">Laundry room cabinet</a></th><td>2</td><td>2</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/shop-storage-cabinet-cut-list/">Shop storage cabinet</a></th><td>3</td><td>4</td><td>+1</td><td>Sensitive</td></tr><tr><th scope="row"><a href="/templates/bookshelf-cut-list/">Bookshelf</a></th><td>2</td><td>2</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/cube-storage-cut-list/">Cube storage unit</a></th><td>2</td><td>2</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/mudroom-bench-cut-list/">Mudroom bench</a></th><td>2</td><td>2</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/window-seat-cut-list/">Window seat</a></th><td>2</td><td>2</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/utility-closet-cut-list/">Utility closet cabinet</a></th><td>3</td><td>3</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/under-bed-drawer-cut-list/">Under-bed drawers</a></th><td>1</td><td>1</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/coffee-table-cut-list/">Coffee table</a></th><td>1</td><td>2</td><td>+1</td><td>Sensitive</td></tr><tr><th scope="row"><a href="/templates/console-table-cut-list/">Console table</a></th><td>1</td><td>1</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/record-cabinet-cut-list/">Record cabinet</a></th><td>2</td><td>2</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/media-wall-cabinet-cut-list/">Media wall cabinet</a></th><td>2</td><td>2</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/folding-craft-table-cut-list/">Folding craft table</a></th><td>1</td><td>1</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/kids-table-cut-list/">Kids table</a></th><td>1</td><td>1</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/mobile-workbench-cut-list/">Mobile workbench</a></th><td>2</td><td>2</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/assembly-table-cut-list/">Assembly table</a></th><td>3</td><td>3</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/miter-saw-stand-cut-list/">Miter saw stand</a></th><td>2</td><td>2</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/french-cleat-wall-cut-list/">French cleat tool wall</a></th><td>1</td><td>2</td><td>+1</td><td>Sensitive</td></tr><tr><th scope="row"><a href="/templates/rolling-cart-cut-list/">Rolling utility cart</a></th><td>1</td><td>1</td><td>0</td><td>No change</td></tr><tr><th scope="row"><a href="/templates/outdoor-storage-box-cut-list/">Outdoor storage box</a></th><td>2</td><td>2</td><td>0</td><td>No change</td></tr></tbody></table></div>
+      </section>
+      <section><h2>What changed</h2><p>Shop storage cabinet, Coffee table, French cleat tool wall used one additional sheet with orientation locked. Across all 24 test inputs, the heuristic estimated 42 sheets when rotation was allowed and 45 when it was locked. The difference is specific to these dimensions and this heuristic; another parts list or packing method can produce a different result.</p></section>
+      <section><h2>When grain direction should win</h2><p>Do not rotate a visible cabinet side, door, drawer front, tabletop, or matched panel solely to improve a yield number. Face veneer direction affects appearance, and panel orientation can matter to the project specification. Mark visible faces and required direction in the cut list before optimizing. Hidden backs, jigs, or paint-grade internal parts may allow more flexibility, but that is a design decision—not an automatic optimizer setting.</p></section>
+      <section><h2>Method and limitations</h2><p>Both modes use 96 × 48 inch sheets, a 1/8 inch kerf, identical sorted rectangles, and the same deterministic MaxRects-style heuristic. The test does not model veneer matching, structural panel ratings, face defects, trim, joinery, cut order, or replacement parts. It estimates rectangular nesting and is not proof of a globally optimal or code-compliant layout.</p><p>For project-specific planning, read <a href="/learn/grain-direction-in-plywood-layouts/">grain direction in plywood layouts</a> and test the final orientation rules in the <a href="/plywood-cut-calculator/">plywood cut calculator</a>.</p></section>
+      <section class="research-note"><h2>License and citation</h2><p>Dataset version 2026-07-16, method <code>woodcuttool-maxrects-v1</code>. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. Suggested attribution: “WoodCutTool Grain Direction and Panel Rotation Benchmark, 2026-07-16.”</p></section>
+    </article>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

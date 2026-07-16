@@ -358,7 +358,7 @@ function sitemapGroup(route) {
   if (route.startsWith("/templates/")) return "templates";
   if (route.startsWith("/blog/")) return "blog";
   if (route.startsWith("/apps/")) return "apps";
-  if (route.startsWith("/compare/") || route.startsWith("/glossary/") || route.startsWith("/wood/")) return "resources";
+  if (route.startsWith("/compare/") || route.startsWith("/glossary/") || route.startsWith("/wood/") || route.startsWith("/research/")) return "resources";
   return "pages";
 }
 

@@ -257,6 +257,7 @@
 
     const resources = [
       { href: "/about/", label: "About & editorial process" },
+      { href: "/research/", label: "Research & datasets" },
       { href: "/learn/", label: "Learning hub" },
       { href: "/templates/", label: "Templates" },
       { href: "/compare/", label: "Comparisons" },
