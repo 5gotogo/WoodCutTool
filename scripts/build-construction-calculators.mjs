@@ -94,8 +94,23 @@ function relatedCards(slugs) {
   }).join("");
 }
 
+function toolVisual(tool) {
+  const category = `${tool.category} ${tool.name}`.toLowerCase();
+  if (/cabinet|drawer|shelf|furniture/.test(category)) {
+    return ["/assets/images/tools/tools-cabinet.webp", "Cabinet panels, drawer parts, and hardware organized for a measured build"];
+  }
+  if (/deck|fence|footing|railing|roof|stair|rafter|joist|concrete/.test(category)) {
+    return ["/assets/images/compare/compare-construction.webp", "Deck framing and stair layout prepared for construction measurements"];
+  }
+  if (/finish|crown|angle|spacing|pitch|measurement/.test(category)) {
+    return ["/assets/images/tools/tools-measurement.webp", "Tape measure, square, angle gauge, and material samples arranged for precise layout"];
+  }
+  return ["/assets/images/tools/tools-cut-layout.webp", "Sheet goods and cut parts arranged around a measured cutting layout"];
+}
+
 function toolPage(tool) {
   const canonical = `${siteUrl}${tool.route}`;
+  const [visualSrc, visualAlt] = toolVisual(tool);
   const sectionName = tool.section === "woodworking" ? "Woodworking Tools" : "Construction Tools";
   const cta = tool.engine === "CutListGenerator" || tool.engine === "SpacingEngine"
     ? `<a class="button" href="/apps/cutlist/">Optimize this cut list in CutList</a>`
@@ -115,11 +130,14 @@ function toolPage(tool) {
   <a class="skip-link" href="#main">Skip to content</a>
   <div data-site-header></div>
   <main id="main">
-    <section class="page-hero">
-      <p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / <a href="/tools/${tool.section}/">${sectionName}</a> / ${escapeHtml(tool.name)}</p>
-      <p class="eyebrow">${escapeHtml(tool.category)}</p>
-      <h1>${escapeHtml(tool.h1)}</h1>
-      <p class="lead">${escapeHtml(tool.intro)}</p>
+    <section class="page-hero visual-hub-hero">
+      <div class="visual-hub-copy">
+        <p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / <a href="/tools/${tool.section}/">${sectionName}</a> / ${escapeHtml(tool.name)}</p>
+        <p class="eyebrow">${escapeHtml(tool.category)}</p>
+        <h1>${escapeHtml(tool.h1)}</h1>
+        <p class="lead">${escapeHtml(tool.intro)}</p>
+      </div>
+      <figure class="visual-frame"><img src="${visualSrc}" alt="${escapeHtml(visualAlt)}" width="1200" height="900" loading="eager" fetchpriority="high" decoding="async"></figure>
     </section>
     <section class="section tool-layout construction-tool" data-calculator="${escapeHtml(tool.type)}">
       <form class="tool-panel" data-construction-form>

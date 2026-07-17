@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
@@ -13,6 +13,31 @@ function escapeHtml(value) {
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;");
+}
+
+const compareVisuals = {
+  Material: ["/assets/images/compare/compare-materials.webp", "Plywood, MDF, and solid wood samples arranged for a material comparison"],
+  Tools: ["/assets/images/compare/compare-saws.webp", "Track saw and table saw set up for a woodworking tool comparison"],
+  Saws: ["/assets/images/compare/compare-saws.webp", "Track saw and table saw set up for a woodworking tool comparison"],
+  Construction: ["/assets/images/compare/compare-construction.webp", "Deck framing and stair layout prepared for a construction-method comparison"],
+  Stairs: ["/assets/images/compare/compare-construction.webp", "Deck framing and stair layout prepared for a construction-method comparison"],
+  Software: ["/assets/images/compare/compare-planning.webp", "Paper cut plan beside a tablet-based woodworking planning workflow"],
+  Planning: ["/assets/images/compare/compare-planning.webp", "Paper cut plan beside a tablet-based woodworking planning workflow"],
+  Calculators: ["/assets/images/compare/compare-planning.webp", "Paper measurements and digital calculators used for project planning"],
+  Cabinets: ["/assets/images/tools/tools-cabinet.webp", "Cabinet panels, drawer parts, and hardware organized for assembly"],
+  Tile: ["/assets/images/learn/tile-layout.webp", "Tile pieces arranged around a measured room layout"],
+  QuiltFit: ["/assets/images/learn/quilt-planning.webp", "Fabric pieces arranged for a quilt layout comparison"]
+};
+
+function compareVisual(category) {
+  const [src, alt] = compareVisuals[category] || ["/assets/images/compare/compare-hero.webp", "Woodworking materials, saws, and plans arranged for a side-by-side comparison"];
+  return { src, alt };
+}
+
+function visualFigure(src, alt, { wide = false, eager = false, className = "" } = {}) {
+  const dimensions = wide ? 'width="1600" height="900"' : 'width="1200" height="900"';
+  const priority = eager ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
+  return `<figure class="visual-frame${wide ? " wide" : ""}${className ? ` ${className}` : ""}"><img src="${src}" alt="${escapeHtml(alt)}" ${dimensions} ${priority} decoding="async"></figure>`;
 }
 
 function head({ title, description, canonical, jsonLd = "", ogType = "article" }) {
@@ -126,6 +151,7 @@ const comparisonDefinitions = [
 ];
 
 function articleJsonLd(article) {
+  const visual = compareVisual(article.category);
   const graph = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -133,7 +159,7 @@ function articleJsonLd(article) {
     description: article.description,
     url: `${siteUrl}/compare/${article.slug}/`,
     mainEntityOfPage: `${siteUrl}/compare/${article.slug}/`,
-    image: `${siteUrl}/assets/og/woodcuttool-og.png`,
+    image: `${siteUrl}${visual.src}`,
     datePublished: "2026-07-02",
     dateModified: "2026-07-02",
     inLanguage: "en",
@@ -281,6 +307,7 @@ const newComparisons = comparisonDefinitions.map(makeArticle);
 
 function comparisonPage(article) {
   const canonical = `${siteUrl}/compare/${article.slug}/`;
+  const visual = compareVisual(article.category);
   const [priceFactor, priceA, priceB] = priceRow(article);
   const ratingsA = optionRatings(article, article.optionA);
   const ratingsB = optionRatings(article, article.optionB);
@@ -307,11 +334,14 @@ ${head({
           <p class="article-byline">By <a href="/about/">WoodCutTool Editorial Team</a> · Compared by project fit, workflow, material risk, and practical tradeoffs.</p>
           <div class="hero-actions"><a class="button" href="${article.relatedB}">Use related tool</a><a class="button secondary" href="/compare/">Back to Comparison Center</a></div>
         </div>
-        <aside class="comparison-verdict-card" aria-label="Quick verdict">
-          <span>Quick verdict</span>
-          <strong>${escapeHtml(article.optionA)} vs ${escapeHtml(article.optionB)}</strong>
-          <p>${escapeHtml(article.quickAnswer)}</p>
-        </aside>
+        <div class="comparison-hero-side">
+          ${visualFigure(visual.src, visual.alt, { className: "comparison-hero-visual" })}
+          <aside class="comparison-verdict-card" aria-label="Quick verdict">
+            <span>Quick verdict</span>
+            <strong>${escapeHtml(article.optionA)} vs ${escapeHtml(article.optionB)}</strong>
+            <p>${escapeHtml(article.quickAnswer)}</p>
+          </aside>
+        </div>
       </section>
 
       <section class="comparison-section">
@@ -467,25 +497,28 @@ ${head({
   <a class="skip-link" href="#main">Skip to content</a>
   ${header()}
   <main id="main">
-    <section class="page-hero">
-      <p class="breadcrumb"><a href="/">Home</a> / Compare</p>
-      <p class="eyebrow">Comparison Center</p>
-      <h1>Comparison Center for Woodworking Decisions</h1>
-      <p class="lead">Compare wood materials, sheet goods, lumber, woodworking tools, fasteners, construction methods, calculators, and apps before buying material or making the first cut.</p>
-      <div class="hero-actions"><a class="button" href="/tools/">Explore tools</a><a class="button secondary" href="/apps/cutlist/">Open CutList</a></div>
+    <section class="page-hero visual-hub-hero">
+      <div class="visual-hub-copy">
+        <p class="breadcrumb"><a href="/">Home</a> / Compare</p>
+        <p class="eyebrow">Comparison Center</p>
+        <h1>Comparison Center for Woodworking Decisions</h1>
+        <p class="lead">Compare wood materials, sheet goods, lumber, woodworking tools, fasteners, construction methods, calculators, and apps before buying material or making the first cut.</p>
+        <div class="hero-actions"><a class="button" href="/tools/">Explore tools</a><a class="button secondary" href="/apps/cutlist/">Open CutList</a></div>
+      </div>
+      ${visualFigure("/assets/images/compare/compare-hero.webp", "Track saw, table saw, sheet materials, and planning tools arranged for woodworking comparisons", { wide: true, eager: true })}
     </section>
     <section class="section">
-      <div class="section-heading compact"><p class="eyebrow">CutList software comparisons</p><h2>Compare CutList against the tools users already know.</h2><p>These pages target high-intent searches where builders are deciding between a dedicated cut-list app, spreadsheets, 3D modeling, browser optimizers, and desktop cut-list software.</p></div>
+      <div class="visual-section-heading"><div class="section-heading compact"><p class="eyebrow">CutList software comparisons</p><h2>Compare CutList against the tools users already know.</h2><p>These pages target high-intent searches where builders are deciding between a dedicated cut-list app, spreadsheets, 3D modeling, browser optimizers, and desktop cut-list software.</p></div>${visualFigure("/assets/images/compare/compare-planning.webp", "Paper cut plan beside a tablet-based woodworking planning workflow")}</div>
       <div class="grid tools">
         ${cutListSoftwareSpotlight.map(renderCard).join("\n        ")}
       </div>
     </section>
-    ${[...grouped.entries()].map(([category, cards]) => `<section class="section">
-      <div class="section-heading compact"><p class="eyebrow">${escapeHtml(category)}</p><h2>${escapeHtml(category)} comparisons</h2></div>
+    ${[...grouped.entries()].map(([category, cards]) => { const visual = compareVisual(category); return `<section class="section">
+      <div class="visual-section-heading"><div class="section-heading compact"><p class="eyebrow">${escapeHtml(category)}</p><h2>${escapeHtml(category)} comparisons</h2></div>${visualFigure(visual.src, visual.alt)}</div>
       <div class="grid tools">
         ${cards.map(renderCard).join("\n        ")}
       </div>
-    </section>`).join("\n    ")}
+    </section>`; }).join("\n    ")}
     <section class="related-tools-guides">
       <p class="eyebrow">Next step</p>
       <h2>Plan the work after you choose</h2>
@@ -513,4 +546,14 @@ for (const article of newComparisons) {
   writeFileSync(join(dir, "index.html"), comparisonPage(article));
 }
 
-console.log(`Generated ${newComparisons.length} new compare pages.`);
+for (const [category, , , route] of existingComparisons) {
+  const target = join(root, route, "index.html");
+  const html = readFileSync(target, "utf8");
+  if (html.includes("comparison-hero-side") || html.includes("data-compare-visual")) continue;
+  const visual = compareVisual(category);
+  const figure = visualFigure(visual.src, visual.alt, { eager: true, className: "article-lead-visual" }).replace("<figure ", '<figure data-compare-visual ');
+  const enhanced = html.replace(/(<p class="lead">[\s\S]*?<\/p>)/, `$1\n      ${figure}`);
+  if (enhanced !== html) writeFileSync(target, enhanced);
+}
+
+console.log(`Generated ${newComparisons.length} new compare pages and enhanced legacy comparisons.`);
