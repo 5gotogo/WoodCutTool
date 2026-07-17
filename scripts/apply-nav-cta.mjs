@@ -7,7 +7,7 @@ const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modul
 const megaMenuFallbackStyle = "  <style>.mega-menu{display:none}</style>";
 const headerMount = '<div data-site-header></div>';
 const footerMount = '<div data-site-footer></div>';
-const siteChromeScript = '  <script defer src="/assets/site-chrome.js?v=snaplabel-menu-20260709"></script>';
+const siteChromeScript = '  <script defer src="/assets/site-chrome.js"></script>';
 
 function collectHtmlFiles(dir = root, prefix = "") {
   const files = [];
@@ -33,7 +33,7 @@ function applyAppVersion(html) {
 }
 
 function applySiteChromeVersion(html) {
-  return html.replace(/\/assets\/site-chrome\.js(?:\?v=[^"]+)?/g, "/assets/site-chrome.js?v=snaplabel-menu-20260709");
+  return html.replace(/\/assets\/site-chrome\.js(?:\?[^\"]*)?/g, "/assets/site-chrome.js");
 }
 
 function applyMegaMenuFallback(html) {
@@ -42,7 +42,7 @@ function applyMegaMenuFallback(html) {
 }
 
 function applySiteChromeScript(html) {
-  let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js")[^>]*>\s*<\/script>/g, "");
+  let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js(?:\?[^\"]*)?")[^>]*>\s*<\/script>/g, "");
   const appScriptPattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/app\.js")[^>]*>\s*<\/script>)/;
   if (appScriptPattern.test(next)) {
     return next.replace(appScriptPattern, `\n${siteChromeScript}$1`);

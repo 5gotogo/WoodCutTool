@@ -4,49 +4,71 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Woodworking Research and Open Datasets | WoodCutTool</title>
-  <meta name="description" content="Original woodworking datasets and transparent benchmark reports on plywood yield, saw kerf, sheet count, and grain-direction constraints.">
+  <meta name="description" content="Original open woodworking datasets on plywood yield, saw kerf, sheet formats, trim allowance, and grain-direction constraints.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://woodcuttool.com/research/">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="WoodCutTool">
   <meta property="og:title" content="Woodworking Research and Open Datasets | WoodCutTool">
-  <meta property="og:description" content="Original woodworking datasets and transparent benchmark reports on plywood yield, saw kerf, sheet count, and grain-direction constraints.">
+  <meta property="og:description" content="Original open woodworking datasets on plywood yield, saw kerf, sheet formats, trim allowance, and grain-direction constraints.">
   <meta property="og:url" content="https://woodcuttool.com/research/">
   <meta property="og:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Woodworking Research and Open Datasets | WoodCutTool">
-  <meta name="twitter:description" content="Original woodworking datasets and transparent benchmark reports on plywood yield, saw kerf, sheet count, and grain-direction constraints.">
+  <meta name="twitter:description" content="Original open woodworking datasets on plywood yield, saw kerf, sheet formats, trim allowance, and grain-direction constraints.">
   <meta name="twitter:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script defer src="/assets/site-chrome.js"></script>
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "name": "WoodCutTool Research and Open Datasets",
-  "description": "Original woodworking datasets and transparent benchmark reports on plywood yield, saw kerf, sheet count, and grain-direction constraints.",
+  "description": "Original open woodworking datasets on plywood yield, saw kerf, sheet formats, trim allowance, and grain-direction constraints.",
   "url": "https://woodcuttool.com/research/",
   "mainEntity": {
+    "@type": "DataCatalog",
+    "name": "WoodCutTool Research and Open Datasets",
+    "url": "https://woodcuttool.com/research/"
+  },
+  "hasPart": {
     "@type": "ItemList",
-    "numberOfItems": 3,
+    "numberOfItems": 6,
     "itemListElement": [
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Plywood Project Yield Benchmarks",
+        "name": "Plywood project yield benchmarks",
         "url": "https://woodcuttool.com/research/plywood-project-yield-benchmarks/"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Saw Kerf and Sheet Count Impact",
+        "name": "Saw kerf and sheet-count impact",
         "url": "https://woodcuttool.com/research/saw-kerf-sheet-count-impact/"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Grain Direction and Plywood Sheet Yield",
+        "name": "Grain direction and panel rotation",
         "url": "https://woodcuttool.com/research/grain-direction-rotation-sheet-count-impact/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Project kerf sensitivity matrix",
+        "url": "https://woodcuttool.com/research/project-kerf-sensitivity-matrix/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Plywood sheet format comparison",
+        "url": "https://woodcuttool.com/research/plywood-sheet-size-comparison/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Edge trim allowance impact",
+        "url": "https://woodcuttool.com/research/edge-trim-allowance-impact/"
       }
     ]
   }
@@ -69,6 +91,8 @@
     }
   ]
 }</script>
+  <style>.mega-menu{display:none}</style>
+  <script defer src="/assets/site-chrome.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -79,10 +103,11 @@
       <p class="eyebrow">WoodCutTool Research</p>
       <h1>Woodworking Research and Open Datasets</h1>
       <p class="lead">Use reproducible benchmark data to understand plywood sheet yield before buying material. Every report publishes its inputs, assumptions, limitations, and downloadable CSV rather than presenting an unexplained headline number.</p>
-      <p class="article-byline">Published 2026-07-16 by <a href="/about/">WoodCutTool Editorial Team</a> · Dataset version 2026-07-16</p>
+      <p class="article-byline">Published 2026-07-17 by <a href="/about/">WoodCutTool Editorial Team</a> · Dataset version 2026-07-17</p>
       
-      <section class="research-card-grid" aria-label="Available research reports"><a class="research-card" href="/research/plywood-project-yield-benchmarks/"><span>24 projects</span><h2>Plywood project yield benchmarks</h2><p>24 common project parts lists tested on standard 4×8 sheets, with area-only minimums and heuristic sheet counts.</p><strong>Read the report →</strong></a><a class="research-card" href="/research/saw-kerf-sheet-count-impact/"><span>40 test runs</span><h2>Saw kerf and sheet-count impact</h2><p>Ten repeated-cut patterns compared at zero, 1/16, 3/32, and 1/8 inch kerf to expose exact-fit failures.</p><strong>Read the report →</strong></a><a class="research-card" href="/research/grain-direction-rotation-sheet-count-impact/"><span>2 rotation modes</span><h2>Grain direction and panel rotation</h2><p>The same 24 projects tested with rotation allowed and locked, plus practical guidance for visible plywood faces.</p><strong>Read the report →</strong></a></section>
-      <section><h2>What makes these datasets useful</h2><p>The reports answer narrow planning questions with explicit inputs. Project dimensions come from WoodCutTool’s public template library, every sheet is modeled as 96 by 48 inches, and sheet layouts use the same deterministic MaxRects-style heuristic across each comparison. The raw CSV files make it possible to check individual rows, reproduce summaries, or compare the estimates with another optimizer.</p></section>
+      <section class="research-card-grid" aria-label="Available research reports"><a class="research-card" href="/research/plywood-project-yield-benchmarks/"><span>36 projects</span><h2>Plywood project yield benchmarks</h2><p>36 common project parts lists tested on standard 4×8 sheets, with area-only minimums and heuristic sheet counts.</p><strong>Read the report →</strong></a><a class="research-card" href="/research/saw-kerf-sheet-count-impact/"><span>40 runs</span><h2>Saw kerf and sheet-count impact</h2><p>Ten repeated-cut patterns compared at zero, 1/16, 3/32, and 1/8 inch kerf to expose exact-fit failures.</p><strong>Read the report →</strong></a><a class="research-card" href="/research/grain-direction-rotation-sheet-count-impact/"><span>2 rotation modes</span><h2>Grain direction and panel rotation</h2><p>The same 36 projects tested with rotation allowed and locked, plus practical guidance for visible plywood faces.</p><strong>Read the report →</strong></a><a class="research-card" href="/research/project-kerf-sensitivity-matrix/"><span>504 runs</span><h2>Project kerf sensitivity matrix</h2><p>36 projects tested across 7 kerf settings and two orientation modes, with a row for every scenario.</p><strong>Read the report →</strong></a><a class="research-card" href="/research/plywood-sheet-size-comparison/"><span>288 runs</span><h2>Plywood sheet format comparison</h2><p>36 project inputs compared on 5×5, 4×8, 4×10, and 5×10 panels, including parts that do not fit a format.</p><strong>Read the report →</strong></a><a class="research-card" href="/research/edge-trim-allowance-impact/"><span>360 runs</span><h2>Edge trim allowance impact</h2><p>36 project inputs tested with five per-edge trim margins and two orientation modes on nominal 4×8 sheets.</p><strong>Read the report →</strong></a></section>
+      <section><h2>What makes these datasets useful</h2><p>The reports answer narrow planning questions with explicit inputs. Project dimensions come from WoodCutTool’s public template library, and every layout uses the same deterministic MaxRects-style heuristic while one declared variable changes. The raw CSV files make it possible to inspect individual rows, reproduce summaries, or compare the estimates with another optimizer.</p></section>
+      <section><h2>Provenance and production</h2><p>These datasets are computed from WoodCutTool’s own planning examples; they are not scraped product specifications, copyrighted plans, customer files, or claims about market-wide outcomes. The generator, method version, input template URL, and limitations remain visible so automated production does not hide how a result was made.</p></section>
       <section><h2>What the results do not prove</h2><p>These are planning benchmarks, not guaranteed purchase quantities or proof of a globally optimal layout. Real sheets can have damaged edges, voids, bow, trim loss, and defects. Joinery, hardware, test cuts, replacement pieces, face quality, and cut sequence can also increase material needs. Measure the stock and blade, validate every project dimension, and review the actual layout before purchasing or cutting.</p></section>
       <section class="research-note"><h2>Reuse and attribution</h2><p>The downloadable datasets are licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. You may share and adapt them with attribution to WoodCutTool, a link to the source report, and an indication of changes.</p></section>
     </article>

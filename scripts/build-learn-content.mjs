@@ -717,15 +717,15 @@ const relatedMap = {
   },
   "how-to-reduce-plywood-waste": {
     guides: ["what-is-cut-list-optimization", "saw-kerf-explained", "how-many-sheets-of-plywood-do-i-need"],
-    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/wood-waste-calculator/", "Wood waste calculator"], ["/research/plywood-project-yield-benchmarks/", "Plywood yield benchmark", "Dataset"]]
+    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/wood-waste-calculator/", "Wood waste calculator"], ["/research/plywood-project-yield-benchmarks/", "Plywood yield benchmark", "Dataset"], ["/research/edge-trim-allowance-impact/", "Edge trim allowance dataset", "Dataset"]]
   },
   "saw-kerf-explained": {
     guides: ["what-is-cut-list-optimization", "how-to-read-a-cut-list", "how-to-reduce-plywood-waste"],
-    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/cut-list-calculator/", "Cut list calculator"], ["/research/saw-kerf-sheet-count-impact/", "Saw kerf benchmark", "Dataset"]]
+    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/cut-list-calculator/", "Cut list calculator"], ["/research/saw-kerf-sheet-count-impact/", "Saw kerf benchmark", "Dataset"], ["/research/project-kerf-sensitivity-matrix/", "Project kerf sensitivity matrix", "Dataset"]]
   },
   "how-many-sheets-of-plywood-do-i-need": {
     guides: ["what-is-cut-list-optimization", "how-to-reduce-plywood-waste", "sheet-layout-optimization"],
-    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/templates/kitchen-cabinet-cut-list/", "Kitchen cabinet cut list template"], ["/research/plywood-project-yield-benchmarks/", "Plywood yield benchmark", "Dataset"]]
+    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/templates/kitchen-cabinet-cut-list/", "Kitchen cabinet cut list template"], ["/research/plywood-project-yield-benchmarks/", "Plywood yield benchmark", "Dataset"], ["/research/plywood-sheet-size-comparison/", "Plywood sheet size comparison", "Dataset"]]
   },
   "best-woodworking-calculator-workflow": {
     guides: ["what-is-cut-list-optimization", "woodworking-material-calculator", "diy-wood-project-estimation"],
@@ -758,7 +758,7 @@ const relatedMap = {
   },
   "sheet-layout-optimization": {
     guides: ["what-is-cut-list-optimization", "plywood-cutting-optimization", "how-many-sheets-of-plywood-do-i-need"],
-    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/research/grain-direction-rotation-sheet-count-impact/", "Grain direction benchmark", "Research"]]
+    tools: [["/plywood-cut-calculator/", "Plywood cut calculator"], ["/research/grain-direction-rotation-sheet-count-impact/", "Grain direction benchmark", "Research"], ["/research/plywood-sheet-size-comparison/", "Plywood sheet size comparison", "Dataset"]]
   }
 };
 

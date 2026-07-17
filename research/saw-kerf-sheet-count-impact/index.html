@@ -19,7 +19,6 @@
   <meta name="twitter:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script defer src="/assets/site-chrome.js"></script>
   <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Dataset",
@@ -27,6 +26,7 @@
   "description": "A reproducible benchmark of ten plywood cutting patterns at four saw-kerf settings, showing when a small blade width changes total sheet count.",
   "url": "https://woodcuttool.com/research/saw-kerf-sheet-count-impact/",
   "sameAs": "https://woodcuttool.com/research/saw-kerf-sheet-count-impact/",
+  "identifier": "woodcuttool:saw-kerf-sheet-count-impact:2026-07-17",
   "creator": {
     "@type": "Organization",
     "name": "WoodCutTool",
@@ -38,11 +38,16 @@
     "url": "https://woodcuttool.com/"
   },
   "datePublished": "2026-07-16",
-  "dateModified": "2026-07-16",
-  "version": "2026-07-16",
+  "dateModified": "2026-07-17",
+  "version": "2026-07-17",
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "isAccessibleForFree": true,
-  "measurementTechnique": "Deterministic MaxRects-style rectangle-packing heuristic with 96 by 48 inch sheets",
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "WoodCutTool Research and Open Datasets",
+    "url": "https://woodcuttool.com/research/"
+  },
+  "measurementTechnique": "Deterministic MaxRects-style rectangle-packing heuristic",
   "variableMeasured": [
     "part pattern",
     "part count",
@@ -81,6 +86,8 @@
     }
   ]
 }</script>
+  <style>.mega-menu{display:none}</style>
+  <script defer src="/assets/site-chrome.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -91,7 +98,7 @@
       <p class="eyebrow">Open dataset · Saw kerf</p>
       <h1>How Saw Kerf Changes Plywood Sheet Count</h1>
       <p class="lead">A blade removes material on every cut. We compared ten repeated-part patterns at zero, 1/16, 3/32, and 1/8 inch kerf to show when an exact-fit digital plan stops fitting on a real sheet.</p>
-      <p class="article-byline">Published 2026-07-16 by <a href="/about/">WoodCutTool Editorial Team</a> · Dataset version 2026-07-16</p>
+      <p class="article-byline">Published 2026-07-17 by <a href="/about/">WoodCutTool Editorial Team</a> · Dataset version 2026-07-17</p>
       
       <section class="research-metrics" aria-label="Dataset summary">
         <div class="research-metric"><span>Patterns tested</span><strong>10</strong><small>Repeated rectangular parts</small></div>
@@ -106,7 +113,7 @@
       <section><h2>The exact-fit effect</h2><p>4 of the ten patterns changed sheet count between the zero-kerf baseline and a 1/8 inch kerf. The most sensitive patterns divide a 48 × 96 inch sheet exactly: eight 12 × 48 shelves, eight 24 × 24 panels, four 48 × 24 panels, and twelve 32 × 16 shelves. Once blade width is reserved between adjacent pieces, the exact grid no longer fits.</p><p>This does not imply that kerf always adds a sheet. Six patterns had enough geometric slack to keep the same estimated count across the tested settings. Sensitivity depends on the full layout, not only the number of cuts.</p></section>
       <section><h2>Method and interpretation</h2><p>All patterns use a 96 × 48 inch sheet, allow 90-degree rotation, and run through the same deterministic packing heuristic. Only the kerf value changes. Yield is part area divided by the total area of the estimated sheets, so it excludes the physical area of defects and trim.</p><p>Kerf is not simply “number of parts multiplied by blade width.” A shared cut, cutting sequence, edge trim, rough breakdown, and machine setup affect how material is consumed. The benchmark isolates spacing in a rectangle layout; it is not a shop-ready cut sequence.</p></section>
       <section><h2>Practical planning rule</h2><p>Enter the measured kerf before trusting a tight layout. If parts exactly divide the nominal sheet width or length, leave room for blade loss and damaged-edge trimming. Review <a href="/learn/saw-kerf-explained/">saw kerf explained</a>, then test your own list in the <a href="/plywood-cut-calculator/">plywood cut calculator</a>.</p></section>
-      <section class="research-note"><h2>License and citation</h2><p>Dataset version 2026-07-16, method <code>woodcuttool-maxrects-v1</code>. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. Suggested attribution: “WoodCutTool Saw Kerf and Sheet Count Benchmark, 2026-07-16.”</p></section>
+      <section class="research-note"><h2>License and citation</h2><p>Dataset version 2026-07-17, method <code>woodcuttool-maxrects-v1</code>. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. Suggested attribution: “WoodCutTool Saw Kerf and Sheet Count Benchmark, 2026-07-17.”</p></section>
     </article>
   </main>
   <div data-site-footer></div>

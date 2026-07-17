@@ -1,4 +1,4 @@
-export const benchmarkVersion = "2026-07-16";
+export const benchmarkVersion = "2026-07-17";
 export const benchmarkMethod = "woodcuttool-maxrects-v1";
 export const standardSheet = { length: 96, width: 48, area: 4608 };
 
@@ -32,7 +32,19 @@ export const projectBenchmarks = [
   project("miter-saw-stand", "Miter saw stand", "Shop", "/templates/miter-saw-stand-cut-list/", [part("Top wings", 30, 16, 2), part("Saw deck", 24, 16), part("Leg panels", 28.5, 15.25, 4), part("Shelves", 28.5, 15.25, 2)]),
   project("french-cleat-wall", "French cleat tool wall", "Shop", "/templates/french-cleat-wall-cut-list/", [part("Back panels", 48, 24, 2), part("Cleat strips", 46.5, 3.5, 8), part("Top cap", 48, 2), part("Bottom spacer", 48, 2)]),
   project("rolling-cart", "Rolling utility cart", "Shop", "/templates/rolling-cart-cut-list/", [part("Top", 30, 18), part("Shelves", 30, 18, 2), part("Sides", 28.5, 18, 2), part("Caster blocks", 3, 3, 4)]),
-  project("outdoor-storage-box", "Outdoor storage box", "Outdoor", "/templates/outdoor-storage-box-cut-list/", [part("Lid", 48, 24), part("Sides", 24, 22.5, 2), part("Front and back", 46.5, 22.5, 2), part("Bottom", 46.5, 22.5)])
+  project("outdoor-storage-box", "Outdoor storage box", "Outdoor", "/templates/outdoor-storage-box-cut-list/", [part("Lid", 48, 24), part("Sides", 24, 22.5, 2), part("Front and back", 46.5, 22.5, 2), part("Bottom", 46.5, 22.5)]),
+  project("kitchen-island", "Kitchen island", "Cabinets", "/templates/kitchen-island-cut-list/", [part("End panels", 34.5, 24, 2), part("Bottom", 46.5, 22.5), part("Dividers", 33.75, 22.5, 2), part("Back rails", 46.5, 4, 2)]),
+  project("appliance-garage", "Appliance garage", "Cabinets", "/templates/appliance-garage-cut-list/", [part("Sides", 18, 13, 2), part("Top and bottom", 24, 12.25, 2), part("Back rail", 22.5, 4), part("Door blank", 24, 14)]),
+  project("microwave-shelf-cabinet", "Microwave shelf cabinet", "Cabinets", "/templates/microwave-shelf-cabinet-cut-list/", [part("Sides", 24, 16, 2), part("Top and bottom", 30, 15.25, 2), part("Shelf layers", 28.5, 15.25, 2), part("Back rails", 30, 4, 2)]),
+  project("closet-tower", "Closet tower", "Storage", "/templates/closet-tower-cut-list/", [part("Sides", 84, 14, 2), part("Top and bottom", 24, 12.5, 2), part("Shelves", 22.5, 12.5, 5), part("Toe-kick rail", 22.5, 3)]),
+  project("entryway-locker", "Entryway locker", "Storage", "/templates/entryway-locker-cut-list/", [part("Sides", 72, 18, 2), part("Top and bottom", 24, 16.5, 2), part("Shelves", 22.5, 16.5, 3), part("Back", 72, 24)]),
+  project("laundry-folding-table", "Laundry folding table", "Furniture", "/templates/laundry-folding-table-cut-list/", [part("Top layers", 48, 24, 2), part("Side panels", 34.5, 22.5, 2), part("Lower shelf", 45, 20), part("Back stretcher", 45, 4)]),
+  project("craft-storage-cabinet", "Craft storage cabinet", "Storage", "/templates/craft-storage-cabinet-cut-list/", [part("Sides", 72, 16, 2), part("Top and bottom", 36, 14.5, 2), part("Shelves", 34.5, 14.5, 5), part("Back", 72, 36)]),
+  project("sewing-table", "Sewing table", "Furniture", "/templates/sewing-table-cut-list/", [part("Top", 48, 24), part("Side panels", 29, 22.5, 2), part("Lower shelf", 45, 18), part("Back stretchers", 45, 4, 2)]),
+  project("sheet-goods-storage-cart", "Sheet goods storage cart", "Shop", "/templates/sheet-goods-storage-cart-cut-list/", [part("Base layers", 48, 30, 2), part("Dividers", 48, 24, 3), part("End panels", 30, 24, 2), part("Caster blocks", 4, 4, 4)]),
+  project("cutoff-storage-bin", "Cutoff storage bin", "Shop", "/templates/cutoff-storage-bin-cut-list/", [part("Sides", 36, 18, 2), part("Dividers", 24, 16.5, 4), part("Bottom", 30, 16.5), part("Back", 36, 30)]),
+  project("sanding-station", "Sanding station", "Shop", "/templates/sanding-station-cut-list/", [part("Sides", 34.5, 20, 2), part("Top layers", 30, 22, 2), part("Shelves", 28.5, 18.5, 2), part("Back", 34.5, 30)]),
+  project("small-parts-drawer-cabinet", "Small parts drawer cabinet", "Shop", "/templates/small-parts-drawer-cabinet-cut-list/", [part("Sides", 36, 12, 2), part("Top and bottom", 24, 10.5, 2), part("Drawer dividers", 22.5, 10.5, 5), part("Back", 36, 24)])
 ];
 
 export const kerfPatterns = [
@@ -163,5 +175,33 @@ export function projectResult(input, kerf = 0.125) {
     lockedSheets: locked.sheets.length,
     lockedYield: locked.sheets.length ? partArea / (locked.sheets.length * standardSheet.area) * 100 : 0,
     rejected: [...allowed.rejected, ...locked.rejected].length
+  };
+}
+
+export function scenarioResult(input, {
+  sheetLength = standardSheet.length,
+  sheetWidth = standardSheet.width,
+  kerf = 0.125,
+  allowRotate = true
+} = {}) {
+  const packed = packSheets(input.parts, sheetLength, sheetWidth, kerf, allowRotate);
+  const partCount = input.parts.reduce((sum, item) => sum + item.qty, 0);
+  const partArea = input.parts.reduce((sum, item) => sum + item.length * item.width * item.qty, 0);
+  const sheetArea = sheetLength * sheetWidth;
+  return {
+    ...input,
+    partCount,
+    partArea,
+    placedArea: packed.usedArea,
+    sheetLength,
+    sheetWidth,
+    sheetArea,
+    kerf,
+    allowRotate,
+    theoreticalSheets: Math.ceil(partArea / sheetArea),
+    sheets: packed.sheets.length,
+    yield: packed.sheets.length ? packed.usedArea / (packed.sheets.length * sheetArea) * 100 : 0,
+    waste: packed.wastePercent,
+    rejected: packed.rejected.length
   };
 }

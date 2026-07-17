@@ -93,6 +93,31 @@ Google's scaled-content policy makes page value — not page count — the contr
 The 2026-07-16 validation covered 1,883 HTML files and 1,860 sitemap URLs; the SEO audit
 finished with no findings.
 
+## P5 — Original dataset expansion (implemented 2026-07-17)
+
+The research catalog now favors a small number of substantial canonical reports over
+large batches of near-duplicate landing pages:
+
+- Expanded the shared project benchmark from 24 to 36 source-linked parts lists.
+- Added a 504-row project kerf sensitivity matrix: 36 projects × 7 kerf settings ×
+  2 orientation modes.
+- Added a 288-row sheet-format comparison: 36 projects × 4 nominal formats ×
+  2 orientation modes, with explicit rejected-part and complete-layout fields.
+- Added a 360-row edge-trim matrix: 36 projects × 5 per-edge margins ×
+  2 orientation modes.
+
+The three new reports expose 1,152 scenario rows as downloadable CSV files and use
+canonical Dataset pages, DataDownload metadata, a DataCatalog hub, stable method/version
+fields, visible limitations, source-template URLs, and a CC BY 4.0 license. The data is
+computed from WoodCutTool's own planning examples rather than scraped plans, product
+claims, customer files, or syndicated text.
+
+This is the preferred pattern for future scale: add reproducible original evidence and
+useful comparisons, not keyword-swapped pages. A low sheet count is never presented as a
+successful format comparison when pieces were rejected, and every report states that the
+heuristic is not a guaranteed optimum, construction drawing, purchase quantity, or
+shop-ready cutting sequence.
+
 ### Future long-tail ideas (not yet built)
 - `/templates/closet-organizer-cut-list/`, `/templates/bookshelf-cut-list/`
 - `/templates/dresser-drawer-cut-list/`

@@ -165,6 +165,15 @@ for (const file of htmlFiles) {
 
   const html = readText(file);
 
+  const usesSharedChrome = html.includes("data-site-header") || html.includes("data-site-footer");
+  const siteChromeScripts = html.match(/<script\b[^>]*\bsrc=["']\/assets\/site-chrome\.js(?:\?[^"']*)?["'][^>]*>\s*<\/script>/gi) ?? [];
+  if (usesSharedChrome && siteChromeScripts.length !== 1) {
+    errors.push(`${file} uses shared chrome but has ${siteChromeScripts.length} site-chrome.js script tags`);
+  }
+  if (siteChromeScripts.some((tag) => /site-chrome\.js\?/i.test(tag))) {
+    errors.push(`${file} uses a versioned site-chrome.js URL instead of the shared canonical asset URL`);
+  }
+
   if (html.includes("{search_term_string}")) {
     errors.push(`${file} exposes a SearchAction template URL that Google may crawl: {search_term_string}`);
   }

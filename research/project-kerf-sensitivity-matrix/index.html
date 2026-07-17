@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plywood Project Kerf Sensitivity Matrix | WoodCutTool</title>
+  <meta name="description" content="A 504-run matrix testing 36 plywood project parts lists across seven kerf settings and two orientation modes.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/research/project-kerf-sensitivity-matrix/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="WoodCutTool">
+  <meta property="og:title" content="Plywood Project Kerf Sensitivity Matrix | WoodCutTool">
+  <meta property="og:description" content="A 504-run matrix testing 36 plywood project parts lists across seven kerf settings and two orientation modes.">
+  <meta property="og:url" content="https://woodcuttool.com/research/project-kerf-sensitivity-matrix/">
+  <meta property="og:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Plywood Project Kerf Sensitivity Matrix | WoodCutTool">
+  <meta name="twitter:description" content="A 504-run matrix testing 36 plywood project parts lists across seven kerf settings and two orientation modes.">
+  <meta name="twitter:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
+  <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "WoodCutTool Plywood Project Kerf Sensitivity Matrix",
+  "description": "A 504-run matrix testing 36 plywood project parts lists across seven kerf settings and two orientation modes.",
+  "url": "https://woodcuttool.com/research/project-kerf-sensitivity-matrix/",
+  "sameAs": "https://woodcuttool.com/research/project-kerf-sensitivity-matrix/",
+  "identifier": "woodcuttool:project-kerf-sensitivity-matrix:2026-07-17",
+  "creator": {
+    "@type": "Organization",
+    "name": "WoodCutTool",
+    "url": "https://woodcuttool.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "WoodCutTool",
+    "url": "https://woodcuttool.com/"
+  },
+  "datePublished": "2026-07-17",
+  "dateModified": "2026-07-17",
+  "version": "2026-07-17",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "WoodCutTool Research and Open Datasets",
+    "url": "https://woodcuttool.com/research/"
+  },
+  "measurementTechnique": "Deterministic MaxRects-style rectangle-packing heuristic on 96 by 48 inch sheets while varying kerf and orientation mode",
+  "variableMeasured": [
+    "project",
+    "saw kerf in inches",
+    "orientation mode",
+    "estimated sheet count",
+    "material yield",
+    "material waste",
+    "rejected piece count"
+  ],
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://woodcuttool.com/research/data/project-kerf-sensitivity-matrix.csv",
+    "encodingFormat": "text/csv"
+  }
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://woodcuttool.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Research",
+      "item": "https://woodcuttool.com/research/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Project kerf sensitivity",
+      "item": "https://woodcuttool.com/research/project-kerf-sensitivity-matrix/"
+    }
+  ]
+}</script>
+  <style>.mega-menu{display:none}</style>
+  <script defer src="/assets/site-chrome.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+  <main id="main" class="article-shell research-shell">
+    <article class="article-body research-article">
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/research/">Research</a> / Plywood Project Kerf Sensitivity Matrix</p>
+      <p class="eyebrow">Open dataset · Kerf sensitivity</p>
+      <h1>Plywood Project Kerf Sensitivity Matrix</h1>
+      <p class="lead">This matrix applies seven kerf assumptions and two orientation modes to 36 project parts lists. It shows which complete projects keep the same sheet estimate and which cross a layout threshold as spacing grows.</p>
+      <p class="article-byline">Published 2026-07-17 by <a href="/about/">WoodCutTool Editorial Team</a> · Dataset version 2026-07-17</p>
+      
+      <section class="research-metrics" aria-label="Dataset summary">
+        <div class="research-metric"><span>Projects</span><strong>36</strong><small>Public planning examples</small></div>
+        <div class="research-metric"><span>Kerf settings</span><strong>7</strong><small>0 to 1/4 inch</small></div>
+        <div class="research-metric"><span>Orientation modes</span><strong>2</strong><small>Rotation allowed and locked</small></div>
+        <div class="research-metric"><span>Benchmark runs</span><strong>504</strong><small>One CSV row per scenario</small></div>
+      </section>
+      <section class="research-note"><h2>Download the full matrix</h2><p><a class="button" href="/research/data/project-kerf-sensitivity-matrix.csv" download>Download project kerf matrix CSV</a></p><p>Each row includes the input project, kerf, orientation mode, sheet estimate, yield, waste, rejected-piece count, version, method, and source template URL.</p></section>
+      <section><h2>Rotation-allowed sheet count by kerf</h2><p>The visible table keeps orientation constant so the kerf comparison remains readable. The downloadable dataset also includes every orientation-locked run.</p>
+        <div class="research-table-wrap"><table class="research-table"><thead><tr><th>Project</th><th>0 in</th><th>1/32 in</th><th>1/16 in</th><th>3/32 in</th><th>1/8 in</th><th>3/16 in</th><th>1/4 in</th></tr></thead><tbody><tr><th scope="row"><a href="/templates/base-cabinet-cut-list/">Base cabinet</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/wall-cabinet-cut-list/">Wall cabinet</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/bathroom-vanity-cut-list/">Bathroom vanity</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/pantry-cabinet-cut-list/">Pantry cabinet</a></th><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><th scope="row"><a href="/templates/laundry-room-cabinet-cut-list/">Laundry room cabinet</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/shop-storage-cabinet-cut-list/">Shop storage cabinet</a></th><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><th scope="row"><a href="/templates/bookshelf-cut-list/">Bookshelf</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/cube-storage-cut-list/">Cube storage unit</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/mudroom-bench-cut-list/">Mudroom bench</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/window-seat-cut-list/">Window seat</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/utility-closet-cut-list/">Utility closet cabinet</a></th><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><th scope="row"><a href="/templates/under-bed-drawer-cut-list/">Under-bed drawers</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/coffee-table-cut-list/">Coffee table</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/console-table-cut-list/">Console table</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/record-cabinet-cut-list/">Record cabinet</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/media-wall-cabinet-cut-list/">Media wall cabinet</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/folding-craft-table-cut-list/">Folding craft table</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/kids-table-cut-list/">Kids table</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/mobile-workbench-cut-list/">Mobile workbench</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/assembly-table-cut-list/">Assembly table</a></th><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><th scope="row"><a href="/templates/miter-saw-stand-cut-list/">Miter saw stand</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/french-cleat-wall-cut-list/">French cleat tool wall</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/rolling-cart-cut-list/">Rolling utility cart</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/outdoor-storage-box-cut-list/">Outdoor storage box</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/kitchen-island-cut-list/">Kitchen island</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/appliance-garage-cut-list/">Appliance garage</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/microwave-shelf-cabinet-cut-list/">Microwave shelf cabinet</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/closet-tower-cut-list/">Closet tower</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/entryway-locker-cut-list/">Entryway locker</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/laundry-folding-table-cut-list/">Laundry folding table</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/craft-storage-cabinet-cut-list/">Craft storage cabinet</a></th><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td><td>3</td></tr><tr><th scope="row"><a href="/templates/sewing-table-cut-list/">Sewing table</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><th scope="row"><a href="/templates/sheet-goods-storage-cart-cut-list/">Sheet goods storage cart</a></th><td>3</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td></tr><tr><th scope="row"><a href="/templates/cutoff-storage-bin-cut-list/">Cutoff storage bin</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/sanding-station-cut-list/">Sanding station</a></th><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><th scope="row"><a href="/templates/small-parts-drawer-cabinet-cut-list/">Small parts drawer cabinet</a></th><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr></tbody></table></div>
+      </section>
+      <section><h2>What the matrix shows</h2><p>1 of 36 projects changed estimated sheet count between the zero-kerf counterfactual and a 1/4 inch spacing assumption with rotation allowed. The other projects retained the same count, although their available free rectangles and cutting options still changed.</p><p>A sheet-count change is a threshold result, not a universal blade recommendation. Actual kerf depends on the blade, tooth geometry, runout, machine, material, and measurement method.</p></section>
+      <section><h2>Method and safe use</h2><ol><li>Use the same named parts list in every run.</li><li>Hold the nominal sheet at 96 × 48 inches.</li><li>Run seven declared spacing values from 0 to 1/4 inch.</li><li>Repeat with rotation allowed and orientation locked.</li></ol><p>Zero kerf is a mathematical baseline and cannot represent a real saw cut. The heuristic does not model a shop cutting sequence, shared cuts, edge trim, defects, grain matching, joinery, or replacement parts, and it does not prove a global optimum. Measure the actual blade with a test cut before using the <a href="/plywood-cut-calculator/">plywood cut calculator</a>.</p></section>
+      <section class="research-note"><h2>License and citation</h2><p>Dataset version 2026-07-17, method <code>woodcuttool-maxrects-v1</code>. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. Suggested attribution: “WoodCutTool Plywood Project Kerf Sensitivity Matrix, 2026-07-17.”</p></section>
+    </article>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>
