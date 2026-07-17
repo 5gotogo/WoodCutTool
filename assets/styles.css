@@ -5836,6 +5836,11 @@ tr:last-child td {
   padding-left: 22px;
 }
 
+.article-body pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 .toc {
   padding: 18px;
 }
