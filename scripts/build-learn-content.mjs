@@ -3,6 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 import { woodworkingImageFor } from "./woodworking-images.mjs";
+import { learnResearchExpansion20260718 } from "./learn-batch-2026-07-18.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -694,6 +695,7 @@ const learnExpansion20260715 = [
 ];
 
 articles.push(...learnExpansion20260715.map(makeLearnExpansionArticle));
+articles.push(...learnResearchExpansion20260718);
 
 const allLearnPages = [...articles, ...landingPages];
 
@@ -762,6 +764,13 @@ const relatedMap = {
   }
 };
 
+for (const article of learnResearchExpansion20260718) {
+  relatedMap[article.slug] = {
+    guides: article.relatedGuides,
+    tools: article.relatedTools
+  };
+}
+
 function relatedGuidesSection(slug) {
   const rel = relatedMap[slug];
   if (!rel) return "";
@@ -794,7 +803,8 @@ function articleJsonLd(article) {
     url: `${siteUrl}/learn/${article.slug}/`,
     mainEntityOfPage: `${siteUrl}/learn/${article.slug}/`,
     keywords: article.keywords.join(", "),
-    dateModified: "2026-07-16",
+    ...(article.datePublished ? { datePublished: article.datePublished } : {}),
+    dateModified: article.dateModified || "2026-07-16",
     author: { "@type": "Organization", name: "WoodCutTool Editorial Team", url: `${siteUrl}/about/` },
     publisher: {
       "@type": "Organization",

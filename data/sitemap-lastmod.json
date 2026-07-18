@@ -8,8 +8,8 @@
     "hash": "c554eaa66b1bf621bb8a8d127b2b877fbc7a3a6fc5fcfc64f222ac56cc4503c2"
   },
   "/learn/": {
-    "lastmod": "2026-07-17",
-    "hash": "82cd2198d2ea10f6db682582b4107401b2bd6bff2a562584a75267c9216ccd93"
+    "lastmod": "2026-07-18",
+    "hash": "5c4d35718da8c550a29ffc549cccc35bf3cfff47f7345a320632c1720be84a53"
   },
   "/glossary/": {
     "lastmod": "2026-07-17",
@@ -5775,6 +5775,10 @@
     "lastmod": "2026-07-17",
     "hash": "79727bbe292eb9401ce86f183f462af1f27282e14730f9088d6591648ae4ba42"
   },
+  "/learn/best-plywood-sheet-size-for-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "7631f133becf8eee7404d4491c005a6d2133c483c8dcf7412aa29c1695d68f84"
+  },
   "/learn/best-woodworking-calculator-workflow/": {
     "lastmod": "2026-07-17",
     "hash": "ac0b77491474fe7eed8ba1f57ef137b5a5780811d57738ae281905b32d9b5778"
@@ -5802,6 +5806,10 @@
   "/learn/cabinet-filler-and-scribe-strip-guide/": {
     "lastmod": "2026-07-17",
     "hash": "fa72910a18eb8c43e6ea3d897de8d4d6fecd49ec12101ffdbbe269d86a436b25"
+  },
+  "/learn/can-you-rotate-plywood-parts/": {
+    "lastmod": "2026-07-18",
+    "hash": "7ad366ff5965b7804764c183ff38f7eb146d2cc7ba46451eaa24c45a89a0d941"
   },
   "/learn/choosing-between-calculator-template-and-app/": {
     "lastmod": "2026-07-17",
@@ -5947,6 +5955,10 @@
     "lastmod": "2026-07-17",
     "hash": "ea1b4305082dc2c9ffa93eb8b9c2ceec1d55c6703a83023476b13dcbd64c9aca"
   },
+  "/learn/how-to-calculate-usable-plywood-sheet-size/": {
+    "lastmod": "2026-07-18",
+    "hash": "08e20b194b96ee11a793628d2e4469cafe8e2c6a6c6377e93977c85301fa5bdf"
+  },
   "/learn/how-to-read-a-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "628256ad82bad1f96293d20f8eb900a77d8de7c86d0290a57eacdbd29fff5607"
@@ -6067,6 +6079,10 @@
     "lastmod": "2026-07-17",
     "hash": "ed7f5e20d0c12edceb58db2e3b3d232282d2ec80a5ac8fedba543f81d14ef9ce"
   },
+  "/learn/plywood-edge-trim-allowance-guide/": {
+    "lastmod": "2026-07-18",
+    "hash": "03017870c222d536f81806787550d6b329b7641b7477ce85fab4d29d3dd69cc2"
+  },
   "/learn/plywood-grade-selection-for-cabinets/": {
     "lastmod": "2026-07-17",
     "hash": "b138f1d173067bc3a7156ac42a61532f9a7c5c71d298bdadd9e8947cd4fb37e2"
@@ -6086,6 +6102,10 @@
   "/learn/plywood-sheet-breakdown-for-beginners/": {
     "lastmod": "2026-07-17",
     "hash": "0a27ab79fd682fc1682093af37f1888aee50266c82bd761b4cf42c8154d38f35"
+  },
+  "/learn/plywood-yield-percentage-explained/": {
+    "lastmod": "2026-07-18",
+    "hash": "4f4c1cf4fdf0891b0ad07db4edbb2dd692f8bb2ffbfcd77138d83b464ee1086c"
   },
   "/learn/plywood/": {
     "lastmod": "2026-07-17",
@@ -6135,6 +6155,10 @@
     "lastmod": "2026-07-17",
     "hash": "03d258e73b5e2a48048972bcc0cd1539f17888e1d96840f3b3ed86706d2d4db0"
   },
+  "/learn/saw-kerf-size-for-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "20cdd92446dd0f641555ccc6119959a0d12bcfa24e80ee0937ea272bb3acf0e7"
+  },
   "/learn/sewing-cabinet-workflow-guide/": {
     "lastmod": "2026-07-17",
     "hash": "5bf75b146d87af5e12706eb7dbf421be63dc1f495436b0a227e66a9cc07526fa"
@@ -6154,6 +6178,10 @@
   "/learn/shelf-span-and-plywood-thickness-guide/": {
     "lastmod": "2026-07-17",
     "hash": "d0cd3429e7431c9776d56eefba24e0683a4994e94a9685aef58c56582be3a1a5"
+  },
+  "/learn/should-you-buy-an-extra-sheet-of-plywood/": {
+    "lastmod": "2026-07-18",
+    "hash": "ca8ccf4d1b4d6a02f35abf7c0cfec458c764777261eaad1bf75506aea5d7ce2d"
   },
   "/learn/small-shop-lumber-rack-planning-guide/": {
     "lastmod": "2026-07-17",
@@ -6226,6 +6254,10 @@
   "/learn/what-is-cut-list-optimization/": {
     "lastmod": "2026-07-17",
     "hash": "f648ae51d763dc5b1078e7ef8d3a94a85d918674070442eebfb701e65704fefd"
+  },
+  "/learn/why-plywood-cut-layout-does-not-fit/": {
+    "lastmod": "2026-07-18",
+    "hash": "3afc1819a5c2144bbd1ecdaf6957e6b978e905922d9fbf573b36e7836af98be2"
   },
   "/learn/wood-cut-planner/": {
     "lastmod": "2026-07-17",

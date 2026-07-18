@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://woodcuttool.com/learn/</loc><lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.93</priority></url>
+  <url><loc>https://woodcuttool.com/learn/</loc><lastmod>2026-07-18</lastmod><changefreq>weekly</changefreq><priority>0.93</priority></url>
   <url><loc>https://woodcuttool.com/learn/actual-lumber-size-vs-nominal-size/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/backsplash-tile-measuring-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/bar-cart-caster-and-shelf-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/bathroom-linen-cabinet-planning-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/bathroom-tile-layout-measurement-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/bathroom-vanity-cut-list-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://woodcuttool.com/learn/best-plywood-sheet-size-for-cut-list/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/best-woodworking-calculator-workflow/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/board-foot-calculator-for-hardwood-buying/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/built-in-bookcase-measurement-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
@@ -14,6 +15,7 @@
   <url><loc>https://woodcuttool.com/learn/cabinet-door-cut-list-planning/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/cabinet-door-overlay-and-inset-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/cabinet-filler-and-scribe-strip-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://woodcuttool.com/learn/can-you-rotate-plywood-parts/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/choosing-between-calculator-template-and-app/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/circular-saw-plywood-cutting-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/closet-drawer-tower-material-plan/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
@@ -50,6 +52,7 @@
   <url><loc>https://woodcuttool.com/learn/grain-direction-in-plywood-layouts/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/home-office-built-in-desk-planning/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/how-many-sheets-of-plywood-do-i-need/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://woodcuttool.com/learn/how-to-calculate-usable-plywood-sheet-size/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/how-to-read-a-cut-list/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/how-to-reduce-plywood-waste/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/kerf-allowance-for-table-saw-and-track-saw/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
@@ -80,11 +83,13 @@
   <url><loc>https://woodcuttool.com/learn/plywood-cutting-optimization/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/plywood-delivery-inspection-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/plywood-edge-finishing-planning-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://woodcuttool.com/learn/plywood-edge-trim-allowance-guide/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/plywood-grade-selection-for-cabinets/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/plywood-grain-matching-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/plywood-offcut-inventory-workflow/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/plywood-offcut-size-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/plywood-sheet-breakdown-for-beginners/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://woodcuttool.com/learn/plywood-yield-percentage-explained/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/plywood/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/project-cost-estimate-from-cut-list/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/project-material-delivery-planning-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
@@ -97,11 +102,13 @@
   <url><loc>https://woodcuttool.com/learn/roofing/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/router-table-material-planning-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/saw-kerf-explained/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://woodcuttool.com/learn/saw-kerf-size-for-cut-list/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/sewing-cabinet-workflow-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/sheet-cutting-calculator/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/sheet-goods-delivery-and-storage-checklist/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/sheet-layout-optimization/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/shelf-span-and-plywood-thickness-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://woodcuttool.com/learn/should-you-buy-an-extra-sheet-of-plywood/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/small-shop-lumber-rack-planning-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/stair-headroom-measurement-checklist/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/stair-landing-material-estimate/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
@@ -120,6 +127,7 @@
   <url><loc>https://woodcuttool.com/learn/under-stair-storage-measurement-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/wall-cabinet-plywood-layout-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/what-is-cut-list-optimization/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
+  <url><loc>https://woodcuttool.com/learn/why-plywood-cut-layout-does-not-fit/</loc><lastmod>2026-07-18</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/wood-cut-planner/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/woodworking-hardware-allowance-guide/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
   <url><loc>https://woodcuttool.com/learn/woodworking-material-calculator/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.82</priority></url>
