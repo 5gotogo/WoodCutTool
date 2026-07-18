@@ -6,13 +6,813 @@
     <atom:link href="https://woodcuttool.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical woodworking guides on plywood cutting, cut lists, materials, cabinets, stairs, and tile from WoodCutTool.</description>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Jul 2026 23:28:57 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 08:22:52 GMT</lastBuildDate>
+    <item>
+      <title>Under-Bed Drawer Caster Clearance and Cut List</title>
+      <link>https://woodcuttool.com/blog/under-bed-drawer-caster-clearance-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/under-bed-drawer-caster-clearance-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 18 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Measure the lowest bed obstruction, floor variation, rug, caster height, drawer front, handle, bedding, box joints, and usable depth.</description>
+    </item>
+    <item>
+      <title>Outdoor Storage Box Drainage and Plywood Plan</title>
+      <link>https://woodcuttool.com/blog/outdoor-storage-box-drainage-plywood-plan/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/outdoor-storage-box-drainage-plywood-plan/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 17 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Detail sloped tops, drip edges, bottom clearance, drainage, ventilation, sealed edges, hinges, lid support, and replaceable panels before cutting.</description>
+    </item>
+    <item>
+      <title>Kitchen Island Seating Overhang and Cut List</title>
+      <link>https://woodcuttool.com/blog/kitchen-island-seating-overhang-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/kitchen-island-seating-overhang-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 16 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Coordinate stool count, knee clearance, support, cabinet depth, doors, end panels, aisles, countertop material, and electrical requirements.</description>
+    </item>
+    <item>
+      <title>Microwave Shelf Ventilation and Cut List</title>
+      <link>https://woodcuttool.com/blog/microwave-shelf-ventilation-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/microwave-shelf-ventilation-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 15 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Use model-specific clearances, shelf load, cord and plug path, door swing, controls, heat, trim, and service access to size a microwave cabinet.</description>
+    </item>
+    <item>
+      <title>Appliance Garage Door Clearance and Cut List</title>
+      <link>https://woodcuttool.com/blog/appliance-garage-door-clearance-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/appliance-garage-door-clearance-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 14 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Plan lift-up, tambour, pocket, or hinged doors around appliance height, countertop use, hardware, outlets, steam, ventilation, and adjacent cabinets.</description>
+    </item>
+    <item>
+      <title>Small-Parts Drawer Cabinet Layout</title>
+      <link>https://woodcuttool.com/blog/small-parts-drawer-cabinet-layout/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/small-parts-drawer-cabinet-layout/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 13 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Choose drawer heights, divider grids, slide type, label zones, cabinet depth, retrieval clearance, load, and growth capacity for shop hardware.</description>
+    </item>
+    <item>
+      <title>Printer Stand and Paper Storage Cut List</title>
+      <link>https://woodcuttool.com/blog/printer-stand-paper-storage-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/printer-stand-paper-storage-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 12 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Coordinate printer footprint, trays, access panels, cable bend radius, ventilation, paper sizes, drawer slides, casters, and load.</description>
+    </item>
+    <item>
+      <title>Record Cabinet Shelf-Load and Cut-List Plan</title>
+      <link>https://woodcuttool.com/blog/record-cabinet-vinyl-load-shelf-plan/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/record-cabinet-vinyl-load-shelf-plan/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 11 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Plan vinyl record shelf height, depth, span, divider spacing, back strength, floor load, anti-tip anchoring, and plywood yield.</description>
+    </item>
+    <item>
+      <title>Sheet-Goods Cart Capacity and Width Planning</title>
+      <link>https://woodcuttool.com/blog/sheet-goods-cart-capacity-and-width/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/sheet-goods-cart-capacity-and-width/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 10 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Size vertical bays, base, casters, handle, ramps, dividers, and shop clearances around sheet weight, offcuts, doorways, and safe loading.</description>
+    </item>
+    <item>
+      <title>Miter-Saw Stand Wing Support and Cut List</title>
+      <link>https://woodcuttool.com/blog/miter-saw-stand-wing-support-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/miter-saw-stand-wing-support-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 09 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Set saw deck height, fence alignment, wing span, support, dust space, mobile base, storage, and long-stock clearance before cutting panels.</description>
+    </item>
+    <item>
+      <title>Router-Table Dust Collection Cabinet Plan</title>
+      <link>https://woodcuttool.com/blog/router-table-dust-collection-cabinet-plan/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/router-table-dust-collection-cabinet-plan/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 08 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Coordinate router lift, motor airflow, fence port, enclosure volume, hose bends, access doors, switches, drawers, and removable panels.</description>
+    </item>
+    <item>
+      <title>Sewing Table Machine Opening and Cut List</title>
+      <link>https://woodcuttool.com/blog/sewing-table-machine-opening-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/sewing-table-machine-opening-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 07 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Measure the sewing machine, lift or shelf, insert, knee space, cable path, vibration support, drawer clearance, and work-surface parts.</description>
+    </item>
+    <item>
+      <title>Craft Storage Cubby Size and Cut-List Plan</title>
+      <link>https://woodcuttool.com/blog/craft-storage-cubby-size-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/craft-storage-cubby-size-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 06 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Design cubbies around bins, paper, machines, rolls, tools, reach, shelf span, labels, and future rearrangement without wasting plywood.</description>
+    </item>
+    <item>
+      <title>Entryway Locker Hook and Bench Layout</title>
+      <link>https://woodcuttool.com/blog/entryway-locker-hook-and-bench-layout/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/entryway-locker-hook-and-bench-layout/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 05 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Size bench, shoe openings, hook rows, cubbies, dividers, doors, trim, and wall anchoring around real users and daily items.</description>
+    </item>
+    <item>
+      <title>Laundry Cabinet Appliance Clearance Guide</title>
+      <link>https://woodcuttool.com/blog/laundry-cabinet-appliance-clearance/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/laundry-cabinet-appliance-clearance/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 04 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Plan washer and dryer width, vibration, hoses, vents, doors, pedestals, controls, tops, fillers, and service access before cutting cabinets.</description>
+    </item>
+    <item>
+      <title>Closet Tower Drawer and Shelf Layout</title>
+      <link>https://woodcuttool.com/blog/closet-tower-drawer-and-shelf-layout/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/closet-tower-drawer-and-shelf-layout/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 03 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Balance folded storage, drawers, hanging rods, shoes, access, shelf pin zones, slide clearance, baseboard, and ceiling assembly limits.</description>
+    </item>
+    <item>
+      <title>Media-Wall Cabinet Cable and Ventilation Cut List</title>
+      <link>https://woodcuttool.com/blog/media-wall-cabinet-cable-ventilation-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/media-wall-cabinet-cable-ventilation-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 02 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Coordinate equipment sizes, airflow, cable bend radius, service access, speaker zones, outlets, doors, shelves, and removable backs.</description>
+    </item>
+    <item>
+      <title>Window Seat Drawer Clearance and Cut-List Plan</title>
+      <link>https://woodcuttool.com/blog/window-seat-drawer-clearance-plan/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/window-seat-drawer-clearance-plan/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 01 Jul 2026 08:22:52 GMT</pubDate>
+      <description>Plan drawer extension, fronts, handles, baseboard, trim, curtains, floor variation, wall scribes, seat depth, and plywood layout.</description>
+    </item>
+    <item>
+      <title>Mudroom Locker Seat Height and Cut-List Plan</title>
+      <link>https://woodcuttool.com/blog/mudroom-locker-seat-height-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/mudroom-locker-seat-height-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 30 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Coordinate comfortable seating, shoe storage, cubbies, hooks, coat clearance, baseboard, fillers, shelf spans, and plywood parts.</description>
+    </item>
+    <item>
+      <title>Pantry Pull-Out Cabinet Plywood Estimate</title>
+      <link>https://woodcuttool.com/blog/pantry-pullout-cabinet-plywood-estimate/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/pantry-pullout-cabinet-plywood-estimate/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 29 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Estimate cases, pull-out trays, shelves, backs, fillers, fronts, grain, kerf, hardware clearance, and contingency from a real sheet layout.</description>
+    </item>
+    <item>
+      <title>How to Record Actual Plywood Yield After a Project</title>
+      <link>https://woodcuttool.com/blog/record-actual-yield-after-project/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/record-actual-yield-after-project/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 28 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Close the loop between estimated sheets, purchased stock, produced parts, damaged pieces, reusable offcuts, waste, returns, and future quoting assumptions.</description>
+    </item>
+    <item>
+      <title>A Scorecard for Comparing Two Plywood Cut Layouts</title>
+      <link>https://woodcuttool.com/blog/compare-two-cut-layouts/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/compare-two-cut-layouts/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 27 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Compare sheets, cost, waste geometry, useful remnants, cut count, narrow strips, handling, grain, defects, and revision stability before production.</description>
+    </item>
+    <item>
+      <title>When to Add Spare Parts to a Cut List</title>
+      <link>https://woodcuttool.com/blog/plan-spare-parts-in-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plan-spare-parts-in-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 26 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Choose contingency parts by damage probability, material matching, lead time, layout opportunity, repair cost, and the actual usefulness of the last sheet.</description>
+    </item>
+    <item>
+      <title>Reduce Cabinet Rework With Part IDs</title>
+      <link>https://woodcuttool.com/blog/reduce-rework-with-part-ids/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/reduce-rework-with-part-ids/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 25 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Use durable IDs to connect drawings, cut rows, labels, edge treatment, machining, assembly, delivery, installation, and replacement records.</description>
+    </item>
+    <item>
+      <title>How to Hand a Cut List to a Shop Helper</title>
+      <link>https://woodcuttool.com/blog/cut-list-hand-off-to-helper/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-hand-off-to-helper/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 24 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Package the approved revision, material map, labels, first-cut sequence, tolerances, inspection points, and escalation rules before work begins.</description>
+    </item>
+    <item>
+      <title>How to Plan Safe First Cuts on a Full Plywood Sheet</title>
+      <link>https://woodcuttool.com/blog/plan-safe-first-breakdown-cuts/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plan-safe-first-breakdown-cuts/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 23 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Turn an optimized layout into supported, manageable breakdown cuts that preserve reference edges and avoid trapping or tipping large panels.</description>
+    </item>
+    <item>
+      <title>Plywood Receiving Check for Sheet Damage</title>
+      <link>https://woodcuttool.com/blog/plywood-sheet-damage-receiving-check/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-sheet-damage-receiving-check/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 22 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Inspect count, SKU, thickness, faces, edges, corners, bow, moisture, finish, lot, and transport handling before signing for material.</description>
+    </item>
+    <item>
+      <title>How to Make a Shop-Floor Cut List PDF</title>
+      <link>https://woodcuttool.com/blog/cut-list-pdf-for-shop-floor/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-pdf-for-shop-floor/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 21 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Create a printable package with revision, material groups, part IDs, dimensions, grain, labels, layouts, checkboxes, and replacement notes.</description>
+    </item>
+    <item>
+      <title>A Practical Naming System for Cut-List Revisions</title>
+      <link>https://woodcuttool.com/blog/shop-cut-list-revision-naming/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/shop-cut-list-revision-naming/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 20 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Name files and exports with project, scope, revision, status, and date so the shop can identify the approved source without guessing from timestamps.</description>
+    </item>
+    <item>
+      <title>How to Verify a Cut List Against Drawings</title>
+      <link>https://woodcuttool.com/blog/verify-cut-list-against-drawing/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/verify-cut-list-against-drawing/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 19 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Reconcile cabinet IDs, overall dimensions, construction details, quantities, handed parts, materials, hardware, and revisions before ordering plywood.</description>
+    </item>
+    <item>
+      <title>Calculate a Change Order's Cut-List and Material Impact</title>
+      <link>https://woodcuttool.com/blog/cut-list-change-order-material-impact/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-change-order-material-impact/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 18 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Trace changed cabinet dimensions or quantities through parts, layouts, purchased stock, offcuts, labor, delivery, and schedule before approving work.</description>
+    </item>
+    <item>
+      <title>How to Price a Cabinet Job From a Sheet Layout</title>
+      <link>https://woodcuttool.com/blog/price-cabinet-job-from-sheet-layout/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/price-cabinet-job-from-sheet-layout/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 17 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Turn optimized sheet counts into material, delivery, labor, offcut credit, consumables, overhead, contingency, and revision assumptions for a defensible quote.</description>
+    </item>
+    <item>
+      <title>How to Estimate Shop Time From a Cut List</title>
+      <link>https://woodcuttool.com/blog/estimate-shop-time-from-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/estimate-shop-time-from-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 16 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Translate parts into handling, breakdown, repeated cuts, machining, edge treatment, labeling, assembly, inspection, and rework allowances.</description>
+    </item>
+    <item>
+      <title>Track Plywood Inventory by Thickness and Grade</title>
+      <link>https://woodcuttool.com/blog/plywood-inventory-by-thickness-and-grade/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-inventory-by-thickness-and-grade/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 15 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Record actual size, material code, face grade, finish, lot, offcut dimensions, location, reservations, and condition before estimating new work.</description>
+    </item>
+    <item>
+      <title>Set a Minimum Offcut Size Policy for Your Shop</title>
+      <link>https://woodcuttool.com/blog/shop-offcut-minimum-size-policy/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/shop-offcut-minimum-size-policy/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 14 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Decide which plywood remnants to label and store by future demand, material value, shape, rack capacity, handling time, and inventory accuracy.</description>
+    </item>
+    <item>
+      <title>Table-Saw Repeat Cuts With a Stop Block</title>
+      <link>https://woodcuttool.com/blog/table-saw-repeat-cut-stop-block-plan/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/table-saw-repeat-cut-stop-block-plan/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 13 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Plan a safe crosscut stop, reference face, sample check, outfeed support, part labels, and inspection rhythm for repeated cabinet components.</description>
+    </item>
+    <item>
+      <title>Track-Saw First Cut: Create a Reliable Reference Edge</title>
+      <link>https://woodcuttool.com/blog/track-saw-first-cut-reference-edge/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/track-saw-first-cut-reference-edge/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 12 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Inspect factory edges, support the sheet, place the rail, trim damage, mark the reference face, and build later cuts from one verified straight line.</description>
+    </item>
+    <item>
+      <title>How to Stage a Plywood Delivery Before Cutting</title>
+      <link>https://woodcuttool.com/blog/plywood-delivery-staging-before-cutting/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-delivery-staging-before-cutting/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 11 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Inspect, sort, acclimate, protect, and sequence sheet goods by material code and cut order so damage or substitutions are caught before production.</description>
+    </item>
+    <item>
+      <title>Cut List Label System for Multiple Rooms</title>
+      <link>https://woodcuttool.com/blog/cut-list-label-system-for-multiple-rooms/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-label-system-for-multiple-rooms/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 10 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Create project, room, wall, cabinet, part, material, and revision codes that keep similar components traceable through cutting and installation.</description>
+    </item>
+    <item>
+      <title>How to Batch-Cut Identical Cabinet Parts</title>
+      <link>https://woodcuttool.com/blog/batch-cutting-identical-cabinet-parts/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/batch-cutting-identical-cabinet-parts/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 09 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Group repeated widths and lengths, preserve reference edges, control setup changes, label stacks, and verify samples before multiplying an error.</description>
+    </item>
+    <item>
+      <title>Managing Plywood Thickness Groups in One Project</title>
+      <link>https://woodcuttool.com/blog/plywood-thickness-groups-one-project/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-thickness-groups-one-project/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 08 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Keep nominal and actual thickness, joinery, hardware, labels, purchasing, layouts, and substitutions aligned when a project uses several sheet goods.</description>
+    </item>
+    <item>
+      <title>Veneer-Core vs MDF-Core Plywood for Cabinets</title>
+      <link>https://woodcuttool.com/blog/veneer-core-vs-mdf-core-cabinets/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/veneer-core-vs-mdf-core-cabinets/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 07 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Compare flatness, weight, edge strength, screw holding, machining, veneer appearance, finish, moisture behavior, and cost by cabinet part.</description>
+    </item>
+    <item>
+      <title>How to Inspect Plywood for Delamination</title>
+      <link>https://woodcuttool.com/blog/plywood-delamination-inspection/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-delamination-inspection/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 06 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Check edges, faces, sound, bow, moisture history, transport damage, and finish condition before accepting, cutting, or installing sheet goods.</description>
+    </item>
+    <item>
+      <title>How to Label Show Faces on Prefinished Panels</title>
+      <link>https://woodcuttool.com/blog/prefinished-panel-show-face-labeling/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/prefinished-panel-show-face-labeling/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 05 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Use consistent face, grain, front-edge, cabinet, and revision marks that survive cutting without damaging a factory-finished surface.</description>
+    </item>
+    <item>
+      <title>MDF Dust Control and Cutting Plan</title>
+      <link>https://woodcuttool.com/blog/mdf-dust-cutting-plan/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/mdf-dust-cutting-plan/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 04 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Coordinate cut order, extraction, respirator, blade, support, cleanup, labeling, and finishing so MDF parts stay accurate and the shop remains workable.</description>
+    </item>
+    <item>
+      <title>Hardboard Back Panels in a Cabinet Cut List</title>
+      <link>https://woodcuttool.com/blog/hardboard-back-panel-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/hardboard-back-panel-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 03 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Size applied and captured hardboard backs around grooves, rabbets, squareness, reveal, wall hanging, finish, expansion, and sheet yield.</description>
+    </item>
+    <item>
+      <title>OSB vs Plywood for Shop Storage Cabinets</title>
+      <link>https://woodcuttool.com/blog/osb-vs-plywood-shop-storage/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/osb-vs-plywood-shop-storage/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 02 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Compare price, fastener holding, edge durability, moisture, finish, weight, span, flatness, and cut quality for utility cabinets and shelving.</description>
+    </item>
+    <item>
+      <title>Marine Plywood vs Exterior Plywood for Outdoor Projects</title>
+      <link>https://woodcuttool.com/blog/marine-plywood-vs-exterior-plywood-project/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/marine-plywood-vs-exterior-plywood-project/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 01 Jun 2026 08:22:52 GMT</pubDate>
+      <description>Compare glue durability, core voids, face quality, species, finish, edge sealing, drainage, price, and realistic exposure before buying sheet goods.</description>
+    </item>
+    <item>
+      <title>How to Grain-Match Plywood Door and Drawer Fronts</title>
+      <link>https://woodcuttool.com/blog/plywood-grain-matching-door-fronts/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-grain-matching-door-fronts/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 31 May 2026 08:22:52 GMT</pubDate>
+      <description>Keep adjacent fronts in visual sequence by planning a master panel, gaps, kerf, labels, grain direction, hinge sides, and replacement strategy.</description>
+    </item>
+    <item>
+      <title>Finish Plywood Before or After Cabinet Assembly?</title>
+      <link>https://woodcuttool.com/blog/plywood-finish-before-or-after-assembly/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-finish-before-or-after-assembly/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 30 May 2026 08:22:52 GMT</pubDate>
+      <description>Compare prefinishing and post-assembly finishing by access, glue surfaces, masking, edge treatment, handling damage, color consistency, and schedule.</description>
+    </item>
+    <item>
+      <title>How Edge-Banding Thickness Changes Cabinet Dimensions</title>
+      <link>https://woodcuttool.com/blog/plywood-edge-banding-thickness-dimensions/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-edge-banding-thickness-dimensions/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 29 May 2026 08:22:52 GMT</pubDate>
+      <description>Account for banding on shelves, doors, panels, fillers, drawer fronts, and paired reveals without adding thickness to hidden or trimmed edges.</description>
+    </item>
+    <item>
+      <title>Does Plywood Need to Acclimate Before Cutting?</title>
+      <link>https://woodcuttool.com/blog/plywood-acclimation-before-cutting/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-acclimation-before-cutting/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 28 May 2026 08:22:52 GMT</pubDate>
+      <description>Plan delivery, flat storage, moisture and temperature equalization, inspection, and timing before machining plywood for cabinets and built-ins.</description>
+    </item>
+    <item>
+      <title>How to Check a Plywood Sheet for Square</title>
+      <link>https://woodcuttool.com/blog/plywood-sheet-squareness-check/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-sheet-squareness-check/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 27 May 2026 08:22:52 GMT</pubDate>
+      <description>Test diagonals and reference edges, identify damaged or tapered factory cuts, and establish a reliable corner before making cabinet parts.</description>
+    </item>
+    <item>
+      <title>Actual Plywood Thickness and Cabinet Hardware Fit</title>
+      <link>https://woodcuttool.com/blog/actual-plywood-thickness-hardware-fit/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/actual-plywood-thickness-hardware-fit/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 26 May 2026 08:22:52 GMT</pubDate>
+      <description>Measure panels before sizing dados, grooves, drawer boxes, hinges, slides, shelf pins, backs, and edge banding around nominal plywood labels.</description>
+    </item>
+    <item>
+      <title>How to Assign Plywood Face Grades to Visible Parts</title>
+      <link>https://woodcuttool.com/blog/plywood-face-grade-visible-parts/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-face-grade-visible-parts/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 25 May 2026 08:22:52 GMT</pubDate>
+      <description>Match A, B, C, shop, and prefinished faces to cabinet ends, interiors, shelves, backs, drawers, and hidden structure without overspending.</description>
+    </item>
+    <item>
+      <title>How to Plan Cuts Around Plywood Core Voids</title>
+      <link>https://woodcuttool.com/blog/plywood-core-void-risk-cut-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-core-void-risk-cut-planning/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 24 May 2026 08:22:52 GMT</pubDate>
+      <description>Reduce exposed voids and weak fastener zones by inspecting edges, choosing grade, orienting critical parts, reserving trim, and planning repair or replacement criteria.</description>
+    </item>
+    <item>
+      <title>Melamine Edge-Chip Allowance in a Cut List</title>
+      <link>https://woodcuttool.com/blog/melamine-edge-chip-allowance/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/melamine-edge-chip-allowance/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 23 May 2026 08:22:52 GMT</pubDate>
+      <description>Plan blade choice, scoring or oversize passes, show-face direction, edge banding, and cleanup allowance without inflating every panel unnecessarily.</description>
+    </item>
+    <item>
+      <title>Prefinished Plywood Cut-List Planning</title>
+      <link>https://woodcuttool.com/blog/prefinished-plywood-cut-list-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/prefinished-plywood-cut-list-planning/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 22 May 2026 08:22:52 GMT</pubDate>
+      <description>Protect show faces, account for coating thickness, choose cut orientation, mark grain, plan edge banding, and reduce scratches during breakdown and assembly.</description>
+    </item>
+    <item>
+      <title>MDF vs Plywood for Painted Cabinets</title>
+      <link>https://woodcuttool.com/blog/mdf-vs-plywood-for-painted-cabinets/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/mdf-vs-plywood-for-painted-cabinets/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 21 May 2026 08:22:52 GMT</pubDate>
+      <description>Compare paint finish, edge preparation, moisture, screw holding, weight, flatness, dust, cost, and construction method for cabinet boxes and fronts.</description>
+    </item>
+    <item>
+      <title>Baltic Birch vs Cabinet Plywood for Drawer Boxes</title>
+      <link>https://woodcuttool.com/blog/baltic-birch-vs-cabinet-plywood-for-drawers/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/baltic-birch-vs-cabinet-plywood-for-drawers/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 20 May 2026 08:22:52 GMT</pubDate>
+      <description>Compare actual thickness, ply count, edge appearance, flatness, finish, availability, cost, and sheet size before cutting drawer-box parts.</description>
+    </item>
+    <item>
+      <title>Cabinet Installation Punch List: A Room-by-Room Method</title>
+      <link>https://woodcuttool.com/blog/cabinet-installation-punch-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-installation-punch-list/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 19 May 2026 08:22:52 GMT</pubDate>
+      <description>Inspect alignment, fastening, doors, drawers, fillers, panels, trim, appliances, finishes, labels, and documentation before cabinet closeout.</description>
+    </item>
+    <item>
+      <title>Cabinet Crown Molding Blocking and Cut-List Plan</title>
+      <link>https://woodcuttool.com/blog/cabinet-crown-molding-blocking-plan/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-crown-molding-blocking-plan/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 18 May 2026 08:22:52 GMT</pubDate>
+      <description>Plan cabinet-top blocking, build-up strips, ceiling variation, crown spring angle, end returns, seams, and fastening access before boxes reach the wall.</description>
+    </item>
+    <item>
+      <title>Cabinet Filler vs Door Overlay: Prevent Clearance Conflicts</title>
+      <link>https://woodcuttool.com/blog/cabinet-filler-vs-overlay-conflict/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-filler-vs-overlay-conflict/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 17 May 2026 08:22:52 GMT</pubDate>
+      <description>Coordinate filler width, hinge overlay, door thickness, handle projection, adjacent walls, and corner cabinets before finalizing cabinet sizes.</description>
+    </item>
+    <item>
+      <title>Turn Field Measurements Into a Cabinet Cut List</title>
+      <link>https://woodcuttool.com/blog/cabinet-cut-list-after-field-measurement/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-cut-list-after-field-measurement/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 16 May 2026 08:22:52 GMT</pubDate>
+      <description>Convert uneven-room measurements into fixed shop sizes, site-fit fillers, scribe panels, appliance openings, and documented assumptions before cutting.</description>
+    </item>
+    <item>
+      <title>How to Label Cabinet Parts by Room and Wall</title>
+      <link>https://woodcuttool.com/blog/cabinet-parts-labeling-by-room/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-parts-labeling-by-room/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 15 May 2026 08:22:52 GMT</pubDate>
+      <description>Build cabinet IDs that survive cutting, edge banding, assembly, delivery, and installation across kitchens, closets, laundry rooms, and built-ins.</description>
+    </item>
+    <item>
+      <title>Best Cabinet Installation Order for a Small Kitchen</title>
+      <link>https://woodcuttool.com/blog/cabinet-install-order-small-kitchen/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-install-order-small-kitchen/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 14 May 2026 08:22:52 GMT</pubDate>
+      <description>Sequence tall, corner, wall, base, appliance, filler, panel, and trim work to preserve access, level references, and safe lifting in a tight room.</description>
+    </item>
+    <item>
+      <title>Kitchen Island Clearance Measurement Guide</title>
+      <link>https://woodcuttool.com/blog/kitchen-island-clearance-measurement/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/kitchen-island-clearance-measurement/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 13 May 2026 08:22:52 GMT</pubDate>
+      <description>Verify walking, working, seating, appliance, drawer, and accessibility clearances before locking island cabinet sizes and countertop overhangs.</description>
+    </item>
+    <item>
+      <title>How to Size Finished Cabinet End Panels</title>
+      <link>https://woodcuttool.com/blog/cabinet-end-panel-finished-size/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-end-panel-finished-size/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 12 May 2026 08:22:52 GMT</pubDate>
+      <description>Plan applied and integrated finished ends around doors, countertops, toe kicks, crown, wall scribes, grain, floor clearance, and field trimming.</description>
+    </item>
+    <item>
+      <title>Cabinet Toe-Kick Dimensions in a Cut List</title>
+      <link>https://woodcuttool.com/blog/cabinet-toe-kick-dimensions-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-toe-kick-dimensions-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 11 May 2026 08:22:52 GMT</pubDate>
+      <description>Coordinate toe-kick height, depth, platform, end panels, appliance zones, skins, returns, and leveling so base-cabinet parts assemble correctly.</description>
+    </item>
+    <item>
+      <title>How Wide Should a Cabinet Scribe Strip Be?</title>
+      <link>https://woodcuttool.com/blog/cabinet-scribe-strip-width/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-scribe-strip-width/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 10 May 2026 08:22:52 GMT</pubDate>
+      <description>Size scribe strips for wall bow, out-of-square corners, door clearance, face alignment, trimming tools, and the visible reveal you want after fitting.</description>
+    </item>
+    <item>
+      <title>How to Plan Pantry Cabinet Shelf Spacing</title>
+      <link>https://woodcuttool.com/blog/pantry-cabinet-shelf-spacing-plan/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/pantry-cabinet-shelf-spacing-plan/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 09 May 2026 08:22:52 GMT</pubDate>
+      <description>Inventory containers and appliances, choose fixed and adjustable zones, check shelf span, and convert usable openings into a pantry cut list.</description>
+    </item>
+    <item>
+      <title>Upper Cabinet Depth Planning for Real Kitchens</title>
+      <link>https://woodcuttool.com/blog/upper-cabinet-depth-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/upper-cabinet-depth-planning/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 08 May 2026 08:22:52 GMT</pubDate>
+      <description>Choose wall-cabinet case depth around plates, doors, crown, range hoods, refrigerators, countertops, reach, and plywood yield.</description>
+    </item>
+    <item>
+      <title>Face-Frame vs Frameless Cabinet Cut List Differences</title>
+      <link>https://woodcuttool.com/blog/face-frame-vs-frameless-cut-list-differences/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/face-frame-vs-frameless-cut-list-differences/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 07 May 2026 08:22:52 GMT</pubDate>
+      <description>Compare box width, finished ends, hinges, drawer clearances, shelves, fillers, and installation details before reusing dimensions between cabinet systems.</description>
+    </item>
+    <item>
+      <title>How Cabinet Back Thickness Changes Part Dimensions</title>
+      <link>https://woodcuttool.com/blog/cabinet-back-thickness-dimension-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-back-thickness-dimension-planning/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 06 May 2026 08:22:52 GMT</pubDate>
+      <description>Plan applied, inset, rabbeted, and captured cabinet backs so case depth, shelf depth, nailers, squareness, and wall clearance remain correct.</description>
+    </item>
+    <item>
+      <title>Drawer Slide Clearance in a Cabinet Cut List</title>
+      <link>https://woodcuttool.com/blog/cabinet-drawer-slide-clearance-cut-list/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-drawer-slide-clearance-cut-list/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 05 May 2026 08:22:52 GMT</pubDate>
+      <description>Calculate drawer-box width from the real opening, slide specification, construction method, and installation tolerance before optimizing plywood parts.</description>
+    </item>
+    <item>
+      <title>Cabinet Door Overlay Measurement Errors to Avoid</title>
+      <link>https://woodcuttool.com/blog/cabinet-door-overlay-measurement-errors/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-door-overlay-measurement-errors/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 04 May 2026 08:22:52 GMT</pubDate>
+      <description>Prevent paired-door collisions, uneven reveals, blocked fillers, and wrong door sizes by calculating overlay from the actual opening and hinge system.</description>
+    </item>
+    <item>
+      <title>Cabinet Appliance Opening Tolerance Guide</title>
+      <link>https://woodcuttool.com/blog/cabinet-appliance-opening-tolerance/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-appliance-opening-tolerance/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 03 May 2026 08:22:52 GMT</pubDate>
+      <description>Translate manufacturer cut sheets into cabinet openings that allow installation, ventilation, leveling, service, panels, and real wall variation.</description>
+    </item>
+    <item>
+      <title>Wall Cabinet Ledger Height: What to Check First</title>
+      <link>https://woodcuttool.com/blog/wall-cabinet-ledger-height-check/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/wall-cabinet-ledger-height-check/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 02 May 2026 08:22:52 GMT</pubDate>
+      <description>Set a temporary ledger from finished countertop, backsplash, appliance, ceiling, and cabinet dimensions without accumulating layout errors.</description>
+    </item>
+    <item>
+      <title>How to Plan a Level Line for Base Cabinets</title>
+      <link>https://woodcuttool.com/blog/base-cabinet-level-line-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/base-cabinet-level-line-planning/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 01 May 2026 08:22:52 GMT</pubDate>
+      <description>Find the high floor point, set a reliable cabinet-top reference, plan shims, and preserve appliance and countertop tolerances across an uneven room.</description>
+    </item>
+    <item>
+      <title>How to Measure a Cabinet Run for Fillers</title>
+      <link>https://woodcuttool.com/blog/measure-cabinet-run-for-fillers/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/measure-cabinet-run-for-fillers/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 30 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Measure wall variation, door and drawer swing, appliance openings, overlays, and scribe conditions before assigning cabinet and filler widths.</description>
+    </item>
+    <item>
+      <title>Why Your One-Sheet Plywood Project Does Not Fit</title>
+      <link>https://woodcuttool.com/blog/one-sheet-project-does-not-fit/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/one-sheet-project-does-not-fit/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 29 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Troubleshoot a one-sheet claim by checking nominal dimensions, kerf, grain, edge trim, duplicated parts, and whether the published plan assumes shared cuts.</description>
+    </item>
+    <item>
+      <title>How to Compare Two Cut List Layout Versions</title>
+      <link>https://woodcuttool.com/blog/cut-list-layout-version-comparison/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-layout-version-comparison/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 28 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Use a consistent scorecard for sheet count, waste, reusable offcuts, cut safety, grain, handling, labels, and revision risk before choosing a layout.</description>
+    </item>
+    <item>
+      <title>How Much Does Locking Plywood Grain Direction Cost?</title>
+      <link>https://woodcuttool.com/blog/plywood-grain-lock-cost/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-grain-lock-cost/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 27 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Measure the sheet-count and offcut impact of grain-locked parts, then decide which visible, structural, or matched panels truly require orientation control.</description>
+    </item>
+    <item>
+      <title>How to Group Cut List Parts by Material</title>
+      <link>https://woodcuttool.com/blog/how-to-group-parts-by-material/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-group-parts-by-material/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 26 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Create material codes for thickness, species, grade, finish, show face, and sheet size so purchasing, optimization, labels, and assembly stay aligned.</description>
+    </item>
+    <item>
+      <title>Finished Size vs Rough Size in a Cut List</title>
+      <link>https://woodcuttool.com/blog/cut-list-finished-size-vs-rough-size/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-finished-size-vs-rough-size/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 25 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Keep final cabinet dimensions separate from oversize blanks for jointing, veneer matching, edge banding, trimming, and CNC or saw finishing operations.</description>
+    </item>
+    <item>
+      <title>How to Stress-Test a Plywood Layout Before Buying</title>
+      <link>https://woodcuttool.com/blog/plywood-layout-stress-test-before-buying/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-layout-stress-test-before-buying/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 24 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Test kerf, trim, defects, grain, sheet-size variation, and one damaged part so a fragile best-case layout does not control the material order.</description>
+    </item>
+    <item>
+      <title>Why a Zero-Kerf Plywood Layout Fails in the Shop</title>
+      <link>https://woodcuttool.com/blog/why-zero-kerf-layout-fails/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/why-zero-kerf-layout-fails/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 23 Apr 2026 08:22:52 GMT</pubDate>
+      <description>See how repeated saw cuts consume material, why a zero-kerf drawing creates undersized parts, and how to validate a realistic blade-width assumption.</description>
+    </item>
+    <item>
+      <title>When Does a Larger Plywood Sheet Actually Save Money?</title>
+      <link>https://woodcuttool.com/blog/when-larger-plywood-sheet-saves-money/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/when-larger-plywood-sheet-saves-money/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 22 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Test whether oversized panels reduce sheet count enough to offset higher price, delivery, handling, saw capacity, defect exposure, and unusable remainder.</description>
+    </item>
+    <item>
+      <title>4x8 vs 5x5 Plywood: Compare Real Cut Layouts</title>
+      <link>https://woodcuttool.com/blog/compare-4x8-and-5x5-plywood-layouts/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/compare-4x8-and-5x5-plywood-layouts/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 21 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Compare common plywood sheet sizes using the same parts, kerf, grain, supplier price, handling limits, and usable offcuts instead of price per square foot alone.</description>
+    </item>
+    <item>
+      <title>How to Add Edge Trim Allowance to a Plywood Layout</title>
+      <link>https://woodcuttool.com/blog/plywood-layout-with-edge-trim-allowance/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-layout-with-edge-trim-allowance/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 20 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Model factory-edge cleanup, damaged corners, squaring cuts, and finish trimming without accidentally charging the allowance twice in every part.</description>
+    </item>
+    <item>
+      <title>How to Optimize Multiple Plywood Thicknesses in One Project</title>
+      <link>https://woodcuttool.com/blog/optimize-multiple-plywood-thicknesses/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/optimize-multiple-plywood-thicknesses/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 19 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Separate casework, backs, drawer parts, doors, and templates into correct material groups while preserving a single project schedule and purchase summary.</description>
+    </item>
+    <item>
+      <title>Cut List Quantity Audit Before You Optimize Sheets</title>
+      <link>https://woodcuttool.com/blog/cut-list-quantity-audit-before-optimization/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-quantity-audit-before-optimization/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 18 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Catch missing, duplicated, mirrored, and revision-stale parts before a clean-looking sheet layout turns a list error into expensive material waste.</description>
+    </item>
+    <item>
+      <title>Fragmented Waste in a Sheet Layout: How to Fix It</title>
+      <link>https://woodcuttool.com/blog/sheet-layout-fragmented-waste/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/sheet-layout-fragmented-waste/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 17 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Reduce scattered plywood waste by changing placement order, grouping repeated parts, preserving continuous strips, and comparing offcut quality rather than area alone.</description>
+    </item>
+    <item>
+      <title>How to Reserve Plywood Offcuts for Replacement Parts</title>
+      <link>https://woodcuttool.com/blog/plywood-offcut-replacement-part-planning/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-offcut-replacement-part-planning/</guid>
+      <category>CutList</category>
+      <pubDate>Thu, 16 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Plan reusable offcuts by likely repair sizes, material identity, finish, grain, and storage limits instead of saving every irregular scrap from a project.</description>
+    </item>
+    <item>
+      <title>Cut List Rotation Rules for Visible Plywood Panels</title>
+      <link>https://woodcuttool.com/blog/cut-list-rotation-rules-visible-panels/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-rotation-rules-visible-panels/</guid>
+      <category>CutList</category>
+      <pubDate>Wed, 15 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Decide which cabinet sides, doors, shelves, backs, and hidden parts may rotate so optimization does not destroy grain direction or visual continuity.</description>
+    </item>
+    <item>
+      <title>Best Kerf Setting for a Track Saw Plywood Layout</title>
+      <link>https://woodcuttool.com/blog/best-kerf-setting-for-track-saw-layout/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/best-kerf-setting-for-track-saw-layout/</guid>
+      <category>CutList</category>
+      <pubDate>Tue, 14 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Measure the real track-saw kerf and enter a conservative layout value that accounts for blade condition, rail placement, cleanup cuts, and repeated passes.</description>
+    </item>
+    <item>
+      <title>How to Plan Plywood Defect Zones Before Cutting</title>
+      <link>https://woodcuttool.com/blog/how-to-plan-plywood-defect-zones/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-plan-plywood-defect-zones/</guid>
+      <category>CutList</category>
+      <pubDate>Mon, 13 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Map face damage, core voids, bows, patches, and edge defects so an optimized cut list protects visible parts without wasting the whole sheet.</description>
+    </item>
+    <item>
+      <title>Plywood Parts Fit by Area but Not by Layout: What Changed?</title>
+      <link>https://woodcuttool.com/blog/plywood-parts-fit-by-area-not-layout/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-parts-fit-by-area-not-layout/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 12 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Understand the rectangle-packing problem behind plywood estimates and test dimensions, orientation, kerf, and remaining-strip geometry before buying material.</description>
+    </item>
+    <item>
+      <title>Why Does a Cut List Optimizer Say I Need an Extra Sheet?</title>
+      <link>https://woodcuttool.com/blog/cut-list-optimizer-says-extra-sheet/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-optimizer-says-extra-sheet/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 11 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Learn why area math can say one sheet while a real cut layout needs two, and how kerf, grain, trim, geometry, and defects change the answer.</description>
+    </item>
+    <item>
+      <title>Why Is Plywood Waste Still High After Optimization?</title>
+      <link>https://woodcuttool.com/blog/plywood-layout-waste-high-after-optimization/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-layout-waste-high-after-optimization/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 10 Apr 2026 08:22:52 GMT</pubDate>
+      <description>Diagnose high plywood waste by checking material groups, grain locks, trim allowances, kerf, part dimensions, and the usefulness of the final offcuts.</description>
+    </item>
     <item>
       <title>How to Make Cabinet Labels From Project Photos</title>
       <link>https://woodcuttool.com/blog/how-to-make-cabinet-labels-from-project-photos/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-make-cabinet-labels-from-project-photos/</guid>
       <category>CutList</category>
-      <pubDate>Wed, 15 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Thu, 09 Apr 2026 08:22:52 GMT</pubDate>
       <description>Turn room and cabinet photos into clear labels for parts, boxes, shelves, hardware, delivery packs, and replacement items.</description>
     </item>
     <item>
@@ -20,7 +820,7 @@
       <link>https://woodcuttool.com/blog/how-to-line-cabinet-drawers-with-fabric/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-line-cabinet-drawers-with-fabric/</guid>
       <category>CutList</category>
-      <pubDate>Tue, 14 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Wed, 08 Apr 2026 08:22:52 GMT</pubDate>
       <description>Measure cabinet drawers, plan pattern direction, allow for removable fit, batch repeated pieces, and keep fabric waste low.</description>
     </item>
     <item>
@@ -28,7 +828,7 @@
       <link>https://woodcuttool.com/blog/how-to-plan-stair-stringers-with-cabinets-underneath/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-plan-stair-stringers-with-cabinets-underneath/</guid>
       <category>CutList</category>
-      <pubDate>Mon, 13 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Tue, 07 Apr 2026 08:22:52 GMT</pubDate>
       <description>Coordinate stair geometry and under-stair cabinets by separating code-critical stringer layout from site-fit storage boxes, faces, fillers, and access.</description>
     </item>
     <item>
@@ -36,7 +836,7 @@
       <link>https://woodcuttool.com/blog/cabinet-installation-decision-log/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-installation-decision-log/</guid>
       <category>CutList</category>
-      <pubDate>Sun, 12 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Mon, 06 Apr 2026 08:22:52 GMT</pubDate>
       <description>Track site questions, approved changes, responsible people, dates, costs, cut-list revisions, photos, and closeout status during installation.</description>
     </item>
     <item>
@@ -44,7 +844,7 @@
       <link>https://woodcuttool.com/blog/how-to-make-watermarked-woodworking-photos/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-make-watermarked-woodworking-photos/</guid>
       <category>CutList</category>
-      <pubDate>Sat, 11 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sun, 05 Apr 2026 08:22:52 GMT</pubDate>
       <description>Add a consistent, subtle brand mark to cabinet, furniture, process, and product photos while keeping details visible and originals safe.</description>
     </item>
     <item>
@@ -52,7 +852,7 @@
       <link>https://woodcuttool.com/blog/woodworking-craft-fair-inventory-and-pricing/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/woodworking-craft-fair-inventory-and-pricing/</guid>
       <category>CutList</category>
-      <pubDate>Fri, 10 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sat, 04 Apr 2026 08:22:52 GMT</pubDate>
       <description>Plan craft-fair stock, prices, display quantity, packaging, labels, card fees, tax, restocking, and post-event profit review.</description>
     </item>
     <item>
@@ -60,7 +860,7 @@
       <link>https://woodcuttool.com/blog/how-to-improve-cut-list-data-entry-speed/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-improve-cut-list-data-entry-speed/</guid>
       <category>CutList</category>
-      <pubDate>Thu, 09 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Fri, 03 Apr 2026 08:22:52 GMT</pubDate>
       <description>Speed up cut-list entry with naming rules, unit discipline, duplicate parts, quantity checks, voice or keyboard habits, and a final audit.</description>
     </item>
     <item>
@@ -68,7 +868,7 @@
       <link>https://woodcuttool.com/blog/how-to-protect-hearing-in-a-woodworking-shop/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-protect-hearing-in-a-woodworking-shop/</guid>
       <category>CutList</category>
-      <pubDate>Wed, 08 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Thu, 02 Apr 2026 08:22:52 GMT</pubDate>
       <description>Reduce woodworking noise exposure with quieter planning, hearing protection, distance, maintenance, task timing, breaks, and professional evaluation when needed.</description>
     </item>
     <item>
@@ -76,7 +876,7 @@
       <link>https://woodcuttool.com/blog/how-to-test-built-in-speakers-before-closing-cabinet/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-test-built-in-speakers-before-closing-cabinet/</guid>
       <category>CutList</category>
-      <pubDate>Tue, 07 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Wed, 01 Apr 2026 08:22:52 GMT</pubDate>
       <description>Verify speaker wiring, channels, polarity, vibration, clearance, ventilation, controls, and service access before fitting final panels.</description>
     </item>
     <item>
@@ -84,7 +884,7 @@
       <link>https://woodcuttool.com/blog/how-to-back-up-cabinet-supplier-contacts/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-back-up-cabinet-supplier-contacts/</guid>
       <category>CutList</category>
-      <pubDate>Mon, 06 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Tue, 31 Mar 2026 08:22:52 GMT</pubDate>
       <description>Keep lumberyards, hardware vendors, finish suppliers, installers, repair contacts, and client decision makers organized and exportable.</description>
     </item>
     <item>
@@ -92,7 +892,7 @@
       <link>https://woodcuttool.com/blog/how-to-print-a-cut-list-from-iphone/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-print-a-cut-list-from-iphone/</guid>
       <category>CutList</category>
-      <pubDate>Sun, 05 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Mon, 30 Mar 2026 08:22:52 GMT</pubDate>
       <description>Turn a saved plywood layout into a readable shop print with project name, revision, dimensions, quantities, labels, cut sequence, and page checks.</description>
     </item>
     <item>
@@ -100,7 +900,7 @@
       <link>https://woodcuttool.com/blog/cabinet-installation-day-checklist/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-installation-day-checklist/</guid>
       <category>CutList</category>
-      <pubDate>Sat, 04 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sun, 29 Mar 2026 08:22:52 GMT</pubDate>
       <description>Prepare measurements, drawings, cabinet labels, fasteners, shims, tools, protection, utilities, delivery access, food, and final verification.</description>
     </item>
     <item>
@@ -108,7 +908,7 @@
       <link>https://woodcuttool.com/blog/how-to-empty-a-kitchen-before-cabinet-installation/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-empty-a-kitchen-before-cabinet-installation/</guid>
       <category>CutList</category>
-      <pubDate>Fri, 03 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sat, 28 Mar 2026 08:22:52 GMT</pubDate>
       <description>Prepare food, appliances, dishes, utilities, access, dust control, temporary meals, and valuables before cabinet removal and installation.</description>
     </item>
     <item>
@@ -116,7 +916,7 @@
       <link>https://woodcuttool.com/blog/how-to-plan-pantry-cabinet-storage/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-plan-pantry-cabinet-storage/</guid>
       <category>CutList</category>
-      <pubDate>Thu, 02 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Fri, 27 Mar 2026 08:22:52 GMT</pubDate>
       <description>Measure food categories, appliances, containers, shelf reach, door clearance, pull-outs, labels, and future stock before sizing a pantry cabinet.</description>
     </item>
     <item>
@@ -124,7 +924,7 @@
       <link>https://woodcuttool.com/blog/cabinet-hardware-ordering-checklist/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-hardware-ordering-checklist/</guid>
       <category>CutList</category>
-      <pubDate>Wed, 01 Jul 2026 23:28:57 GMT</pubDate>
+      <pubDate>Thu, 26 Mar 2026 08:22:52 GMT</pubDate>
       <description>Order hinges, slides, handles, shelf pins, fasteners, feet, hangers, connectors, and spares from an approved cabinet schedule.</description>
     </item>
     <item>
@@ -132,7 +932,7 @@
       <link>https://woodcuttool.com/blog/daily-workshop-cleanup-checklist/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/daily-workshop-cleanup-checklist/</guid>
       <category>CutList</category>
-      <pubDate>Tue, 30 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Wed, 25 Mar 2026 08:22:52 GMT</pubDate>
       <description>Use a short end-of-day shop routine for tools, blades, dust, scraps, offcuts, hardware, batteries, project staging, and tomorrow's first task.</description>
     </item>
     <item>
@@ -140,7 +940,7 @@
       <link>https://woodcuttool.com/blog/workshop-project-notes-template/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/workshop-project-notes-template/</guid>
       <category>CutList</category>
-      <pubDate>Mon, 29 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Tue, 24 Mar 2026 08:22:52 GMT</pubDate>
       <description>Keep useful project notes for dimensions, materials, cut-list revisions, joinery, finish, problems, costs, photos, and lessons learned.</description>
     </item>
     <item>
@@ -148,7 +948,7 @@
       <link>https://woodcuttool.com/blog/how-to-keep-client-project-photos-private/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-keep-client-project-photos-private/</guid>
       <category>CutList</category>
-      <pubDate>Sun, 28 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Mon, 23 Mar 2026 08:22:52 GMT</pubDate>
       <description>Protect client home, document, address, family, and security details while organizing before, progress, issue, and finished project photos.</description>
     </item>
     <item>
@@ -156,7 +956,7 @@
       <link>https://woodcuttool.com/blog/client-cabinet-design-meeting-checklist/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/client-cabinet-design-meeting-checklist/</guid>
       <category>CutList</category>
-      <pubDate>Sat, 27 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sun, 22 Mar 2026 08:22:52 GMT</pubDate>
       <description>Run a cabinet design meeting that captures room use, dimensions, storage, appliances, style, budget, schedule, decisions, and next actions.</description>
     </item>
     <item>
@@ -164,7 +964,7 @@
       <link>https://woodcuttool.com/blog/cabinet-shop-daily-production-schedule/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-shop-daily-production-schedule/</guid>
       <category>CutList</category>
-      <pubDate>Fri, 26 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sat, 21 Mar 2026 08:22:52 GMT</pubDate>
       <description>Plan cabinet production across cutting, edge banding, drilling, assembly, finishing, packing, delivery, and installation with realistic buffers.</description>
     </item>
     <item>
@@ -172,7 +972,7 @@
       <link>https://woodcuttool.com/blog/how-to-organize-workshop-hardware-inventory/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-organize-workshop-hardware-inventory/</guid>
       <category>CutList</category>
-      <pubDate>Thu, 25 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Fri, 20 Mar 2026 08:22:52 GMT</pubDate>
       <description>Organize screws, hinges, slides, shelf pins, fasteners, blades, and finishes with locations, minimum stock, labels, photos, and reorder rules.</description>
     </item>
     <item>
@@ -180,7 +980,7 @@
       <link>https://woodcuttool.com/blog/how-to-create-qr-codes-for-cabinet-manuals/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-create-qr-codes-for-cabinet-manuals/</guid>
       <category>CutList</category>
-      <pubDate>Wed, 24 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Thu, 19 Mar 2026 08:22:52 GMT</pubDate>
       <description>Add useful QR labels for cabinet care, finish codes, hardware manuals, appliance information, warranties, and replacement parts.</description>
     </item>
     <item>
@@ -188,7 +988,7 @@
       <link>https://woodcuttool.com/blog/woodworking-portfolio-image-size-for-web/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/woodworking-portfolio-image-size-for-web/</guid>
       <category>CutList</category>
-      <pubDate>Tue, 23 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Wed, 18 Mar 2026 08:22:52 GMT</pubDate>
       <description>Choose image dimensions, compression, format, filenames, alt text, thumbnails, and backups for a fast woodworking portfolio.</description>
     </item>
     <item>
@@ -196,7 +996,7 @@
       <link>https://woodcuttool.com/blog/how-to-photograph-cabinet-installation/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-photograph-cabinet-installation/</guid>
       <category>CutList</category>
-      <pubDate>Mon, 22 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Tue, 17 Mar 2026 08:22:52 GMT</pubDate>
       <description>Capture straight, bright cabinet photos with clean staging, detail shots, consistent angles, privacy review, and web-ready exports.</description>
     </item>
     <item>
@@ -204,7 +1004,7 @@
       <link>https://woodcuttool.com/blog/woodworking-receipt-organization-for-taxes/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/woodworking-receipt-organization-for-taxes/</guid>
       <category>CutList</category>
-      <pubDate>Sun, 21 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Mon, 16 Mar 2026 08:22:52 GMT</pubDate>
       <description>Organize lumber, hardware, tool, mileage, shipping, and subcontractor records by project, category, date, and business purpose.</description>
     </item>
     <item>
@@ -212,7 +1012,7 @@
       <link>https://woodcuttool.com/blog/woodworking-invoice-template-and-payment-schedule/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/woodworking-invoice-template-and-payment-schedule/</guid>
       <category>CutList</category>
-      <pubDate>Sat, 20 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sun, 15 Mar 2026 08:22:52 GMT</pubDate>
       <description>Create clear woodworking estimates and invoices with deposits, milestones, change orders, material allowances, tax, delivery, and final acceptance.</description>
     </item>
     <item>
@@ -220,7 +1020,7 @@
       <link>https://woodcuttool.com/blog/how-to-price-custom-cabinets/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-price-custom-cabinets/</guid>
       <category>CutList</category>
-      <pubDate>Fri, 19 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sat, 14 Mar 2026 08:22:52 GMT</pubDate>
       <description>Price custom cabinets from scope, materials, optimized sheet count, hardware, labor, finishing, installation, risk, overhead, and profit.</description>
     </item>
     <item>
@@ -228,7 +1028,7 @@
       <link>https://woodcuttool.com/blog/woodworking-project-cost-estimate/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/woodworking-project-cost-estimate/</guid>
       <category>CutList</category>
-      <pubDate>Thu, 18 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Fri, 13 Mar 2026 08:22:52 GMT</pubDate>
       <description>Estimate lumber, plywood, hardware, finish, labor, delivery, overhead, waste, tax, and contingency before quoting a woodworking project.</description>
     </item>
     <item>
@@ -236,7 +1036,7 @@
       <link>https://woodcuttool.com/blog/flat-pack-cabinet-packing-and-delivery-guide/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/flat-pack-cabinet-packing-and-delivery-guide/</guid>
       <category>CutList</category>
-      <pubDate>Wed, 17 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Thu, 12 Mar 2026 08:22:52 GMT</pubDate>
       <description>Pack labeled cabinet parts by room and assembly order with edge protection, hardware bags, load sequencing, and a delivery checklist.</description>
     </item>
     <item>
@@ -244,7 +1044,7 @@
       <link>https://woodcuttool.com/blog/how-to-plan-cabinet-cutouts-for-plumbing/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-plan-cabinet-cutouts-for-plumbing/</guid>
       <category>CutList</category>
-      <pubDate>Tue, 16 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Wed, 11 Mar 2026 08:22:52 GMT</pubDate>
       <description>Locate cabinet cutouts for pipes, valves, drains, outlets, vents, and cables while preserving structure and future service access.</description>
     </item>
     <item>
@@ -252,7 +1052,7 @@
       <link>https://woodcuttool.com/blog/cabinet-installation-punch-list-template/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-installation-punch-list-template/</guid>
       <category>CutList</category>
-      <pubDate>Mon, 15 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Tue, 10 Mar 2026 08:22:52 GMT</pubDate>
       <description>Use a final cabinet checklist for level, reveals, doors, drawers, fillers, panels, hardware, appliances, caulk, cleanup, and client handoff.</description>
     </item>
     <item>
@@ -260,7 +1060,7 @@
       <link>https://woodcuttool.com/blog/cabinet-door-alignment-troubleshooting/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-door-alignment-troubleshooting/</guid>
       <category>CutList</category>
-      <pubDate>Sun, 14 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Mon, 09 Mar 2026 08:22:52 GMT</pubDate>
       <description>Troubleshoot cabinet door gaps by checking the box, hinge plate, overlay, screw adjustment, door warp, and neighboring fronts in the right order.</description>
     </item>
     <item>
@@ -268,7 +1068,7 @@
       <link>https://woodcuttool.com/blog/cabinet-filler-strip-measurement-and-installation/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-filler-strip-measurement-and-installation/</guid>
       <category>CutList</category>
-      <pubDate>Sat, 13 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sun, 08 Mar 2026 08:22:52 GMT</pubDate>
       <description>Measure, scribe, cut, and attach cabinet fillers for uneven walls, door clearance, face alignment, and a clean built-in finish.</description>
     </item>
     <item>
@@ -276,7 +1076,7 @@
       <link>https://woodcuttool.com/blog/how-to-hang-wall-cabinets-by-yourself/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-hang-wall-cabinets-by-yourself/</guid>
       <category>CutList</category>
-      <pubDate>Fri, 12 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sat, 07 Mar 2026 08:22:52 GMT</pubDate>
       <description>Plan a solo wall-cabinet installation with a ledger, cabinet jack, temporary cleats, stud marks, reduced door weight, and staged fasteners.</description>
     </item>
     <item>
@@ -284,7 +1084,7 @@
       <link>https://woodcuttool.com/blog/how-to-square-and-level-base-cabinets/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-square-and-level-base-cabinets/</guid>
       <category>CutList</category>
-      <pubDate>Thu, 11 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Fri, 06 Mar 2026 08:22:52 GMT</pubDate>
       <description>Set base cabinets accurately by finding the high floor point, marking level, shimming structural points, joining faces, and checking appliance openings.</description>
     </item>
     <item>
@@ -292,7 +1092,7 @@
       <link>https://woodcuttool.com/blog/cabinet-installation-order-upper-or-base-first/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-installation-order-upper-or-base-first/</guid>
       <category>CutList</category>
-      <pubDate>Wed, 10 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Thu, 05 Mar 2026 08:22:52 GMT</pubDate>
       <description>Compare upper-first and base-first cabinet installation workflows based on room access, lifting, countertops, tall cabinets, safety, and crew size.</description>
     </item>
     <item>
@@ -300,7 +1100,7 @@
       <link>https://woodcuttool.com/blog/built-in-bookcase-installation-tips/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/built-in-bookcase-installation-tips/</guid>
       <category>CutList</category>
-      <pubDate>Tue, 09 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Wed, 04 Mar 2026 08:22:52 GMT</pubDate>
       <description>Fit and install a built-in bookcase with scribe strips, fillers, leveling, wall anchoring, face trim, shelf loads, and clean seams.</description>
     </item>
     <item>
@@ -308,7 +1108,7 @@
       <link>https://woodcuttool.com/blog/garage-cabinet-installation-guide/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/garage-cabinet-installation-guide/</guid>
       <category>CutList</category>
-      <pubDate>Mon, 08 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Tue, 03 Mar 2026 08:22:52 GMT</pubDate>
       <description>Install garage cabinets safely with wall checks, stud mapping, floor clearance, ledger support, cabinet order, anchors, and final alignment.</description>
     </item>
     <item>
@@ -316,7 +1116,7 @@
       <link>https://woodcuttool.com/blog/how-to-install-closet-cabinets-faster/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-install-closet-cabinets-faster/</guid>
       <category>CutList</category>
-      <pubDate>Sun, 07 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Mon, 02 Mar 2026 08:22:52 GMT</pubDate>
       <description>Speed up a closet installation with accurate wall measurements, staged modules, fillers, cleats, shelf labels, tool planning, and a punch list.</description>
     </item>
     <item>
@@ -324,7 +1124,7 @@
       <link>https://woodcuttool.com/blog/kitchen-cabinet-cut-list-step-by-step/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/kitchen-cabinet-cut-list-step-by-step/</guid>
       <category>CutList</category>
-      <pubDate>Sat, 06 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sun, 01 Mar 2026 08:22:52 GMT</pubDate>
       <description>Build a complete kitchen cabinet cut list for base boxes, wall boxes, shelves, backs, drawers, doors, panels, fillers, and toe kicks.</description>
     </item>
     <item>
@@ -332,7 +1132,7 @@
       <link>https://woodcuttool.com/blog/turn-a-cabinet-sketch-into-a-cut-list/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/turn-a-cabinet-sketch-into-a-cut-list/</guid>
       <category>CutList</category>
-      <pubDate>Fri, 05 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sat, 28 Feb 2026 08:22:52 GMT</pubDate>
       <description>Convert a cabinet drawing into finished part sizes by choosing construction method, material thickness, joinery, overlays, backs, fillers, and labels.</description>
     </item>
     <item>
@@ -340,7 +1140,7 @@
       <link>https://woodcuttool.com/blog/best-way-to-label-cabinet-parts/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/best-way-to-label-cabinet-parts/</guid>
       <category>CutList</category>
-      <pubDate>Thu, 04 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Fri, 27 Feb 2026 08:22:52 GMT</pubDate>
       <description>Create a cabinet part labeling system for box number, orientation, finished edges, hardware, cut dimensions, and assembly sequence.</description>
     </item>
     <item>
@@ -348,7 +1148,7 @@
       <link>https://woodcuttool.com/blog/how-to-measure-a-room-for-built-in-cabinets/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-measure-a-room-for-built-in-cabinets/</guid>
       <category>CutList</category>
-      <pubDate>Wed, 03 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Thu, 26 Feb 2026 08:22:52 GMT</pubDate>
       <description>Measure walls, floors, ceilings, corners, outlets, trim, and access routes before building fitted cabinets or creating a final cut list.</description>
     </item>
     <item>
@@ -356,7 +1156,7 @@
       <link>https://woodcuttool.com/blog/how-to-reduce-plywood-waste/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-reduce-plywood-waste/</guid>
       <category>CutList</category>
-      <pubDate>Tue, 02 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Wed, 25 Feb 2026 08:22:52 GMT</pubDate>
       <description>Reduce plywood waste by improving parts lists, kerf settings, grain rules, offcut inventory, sheet layout review, and purchasing decisions.</description>
     </item>
     <item>
@@ -364,7 +1164,7 @@
       <link>https://woodcuttool.com/blog/table-saw-plywood-cut-sequence/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/table-saw-plywood-cut-sequence/</guid>
       <category>CutList</category>
-      <pubDate>Mon, 01 Jun 2026 23:28:57 GMT</pubDate>
+      <pubDate>Tue, 24 Feb 2026 08:22:52 GMT</pubDate>
       <description>Plan a table saw cut sequence that reduces fence changes, protects reference edges, supports large panels, and keeps repeated cabinet parts organized.</description>
     </item>
     <item>
@@ -372,7 +1172,7 @@
       <link>https://woodcuttool.com/blog/track-saw-plywood-cutting-guide-for-beginners/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/track-saw-plywood-cutting-guide-for-beginners/</guid>
       <category>CutList</category>
-      <pubDate>Sun, 31 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Mon, 23 Feb 2026 08:22:52 GMT</pubDate>
       <description>Make straight, repeatable plywood cuts with correct support, splinter control, rail placement, kerf allowance, cut order, and part labels.</description>
     </item>
     <item>
@@ -380,7 +1180,7 @@
       <link>https://woodcuttool.com/blog/how-many-sheets-plywood-for-kitchen-cabinets/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-many-sheets-plywood-for-kitchen-cabinets/</guid>
       <category>CutList</category>
-      <pubDate>Sat, 30 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sun, 22 Feb 2026 08:22:52 GMT</pubDate>
       <description>Estimate kitchen cabinet plywood sheets from cabinet boxes, shelves, backs, drawers, finished ends, toe kicks, grain, kerf, and real sheet layouts.</description>
     </item>
     <item>
@@ -388,7 +1188,7 @@
       <link>https://woodcuttool.com/blog/fastest-way-to-install-kitchen-cabinets/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/fastest-way-to-install-kitchen-cabinets/</guid>
       <category>CutList</category>
-      <pubDate>Fri, 29 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sat, 21 Feb 2026 08:22:52 GMT</pubDate>
       <description>Speed up kitchen cabinet installation with a room survey, cabinet sequence, ledger plan, shims, labels, appliance checks, and documented punch list.</description>
     </item>
     <item>
@@ -396,7 +1196,7 @@
       <link>https://woodcuttool.com/blog/best-way-to-optimize-plywood-cuts/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/best-way-to-optimize-plywood-cuts/</guid>
       <category>CutList</category>
-      <pubDate>Thu, 28 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Fri, 20 Feb 2026 08:22:52 GMT</pubDate>
       <description>Learn how to optimize plywood cuts with real sheet sizes, kerf, grain rules, repeated parts, useful offcuts, and a practical saw sequence.</description>
     </item>
     <item>
@@ -404,7 +1204,7 @@
       <link>https://woodcuttool.com/blog/how-to-cut-plywood-faster-without-mistakes/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-cut-plywood-faster-without-mistakes/</guid>
       <category>CutList</category>
-      <pubDate>Wed, 27 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Thu, 19 Feb 2026 08:22:52 GMT</pubDate>
       <description>A faster plywood workflow for measuring once, optimizing the sheet layout, staging cuts, labeling parts, and avoiding rushed rework.</description>
     </item>
     <item>
@@ -412,7 +1212,7 @@
       <link>https://woodcuttool.com/blog/reading-nook-bookcase-cut-list/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/reading-nook-bookcase-cut-list/</guid>
       <category>CutList</category>
-      <pubDate>Tue, 26 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Wed, 18 Feb 2026 08:22:52 GMT</pubDate>
       <description>Plan a reading-nook bookcase with shelf spans, bench seating, back panels, lighting clearance, edge treatment, and plywood sheet layout.</description>
     </item>
     <item>
@@ -420,7 +1220,7 @@
       <link>https://woodcuttool.com/blog/diy-plywood-project-material-list/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/diy-plywood-project-material-list/</guid>
       <category>CutList</category>
-      <pubDate>Mon, 25 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Tue, 17 Feb 2026 08:22:52 GMT</pubDate>
       <description>Turn a plywood project into a complete material list with sheet count, hardware, edge banding, finish, waste, delivery, and revision notes.</description>
     </item>
     <item>
@@ -428,7 +1228,7 @@
       <link>https://woodcuttool.com/blog/best-plywood-thickness-for-cabinets-guide/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/best-plywood-thickness-for-cabinets-guide/</guid>
       <category>CutList</category>
-      <pubDate>Sun, 24 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Mon, 16 Feb 2026 08:22:52 GMT</pubDate>
       <description>Choose plywood thickness for cabinet sides, shelves, backs, drawers, and doors while balancing load, hardware, edge treatment, and sheet layout.</description>
     </item>
     <item>
@@ -436,7 +1236,7 @@
       <link>https://woodcuttool.com/blog/cut-list-before-ordering-plywood/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-before-ordering-plywood/</guid>
       <category>CutList</category>
-      <pubDate>Sat, 23 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sun, 15 Feb 2026 08:22:52 GMT</pubDate>
       <description>Use this pre-purchase cut list checklist to verify sheet sizes, kerf, quantities, grain, offcuts, delivery, and material groups before ordering plywood.</description>
     </item>
     <item>
@@ -444,7 +1244,7 @@
       <link>https://woodcuttool.com/blog/drop-zone-entryway-storage-cut-list/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/drop-zone-entryway-storage-cut-list/</guid>
       <category>CutList</category>
-      <pubDate>Fri, 22 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Sat, 14 Feb 2026 08:22:52 GMT</pubDate>
       <description>Plan a family drop zone with lockers, hooks, bench seating, shoe storage, charging space, back panels, and plywood layout.</description>
     </item>
     <item>
@@ -452,7 +1252,7 @@
       <link>https://woodcuttool.com/blog/plywood-cabinet-door-material-estimate/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-cabinet-door-material-estimate/</guid>
       <category>CutList</category>
-      <pubDate>Thu, 21 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Fri, 13 Feb 2026 08:22:52 GMT</pubDate>
       <description>Estimate plywood for cabinet doors with overlay or inset sizing, grain matching, hinge clearance, edge banding, and sheet yield.</description>
     </item>
     <item>
@@ -460,7 +1260,7 @@
       <link>https://woodcuttool.com/blog/diy-sewing-cabinet-cut-list/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/diy-sewing-cabinet-cut-list/</guid>
       <category>CutList</category>
-      <pubDate>Wed, 20 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Thu, 12 Feb 2026 08:22:52 GMT</pubDate>
       <description>Create a sewing cabinet cut list with machine clearance, fold-out surfaces, drawers, thread storage, cable access, and plywood sheet planning.</description>
     </item>
     <item>
@@ -468,7 +1268,7 @@
       <link>https://woodcuttool.com/blog/bathroom-linen-cabinet-cut-list/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/bathroom-linen-cabinet-cut-list/</guid>
       <category>CutList</category>
-      <pubDate>Tue, 19 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Wed, 11 Feb 2026 08:22:52 GMT</pubDate>
       <description>Build a bathroom linen cabinet cut list with shelves, doors, towel clearance, wall anchoring, moisture-aware materials, and plywood layout.</description>
     </item>
     <item>
@@ -476,7 +1276,7 @@
       <link>https://woodcuttool.com/blog/small-shop-lumber-rack-cut-list/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/small-shop-lumber-rack-cut-list/</guid>
       <category>CutList</category>
-      <pubDate>Mon, 18 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Tue, 10 Feb 2026 08:22:52 GMT</pubDate>
       <description>Plan a lumber rack cut list with board lengths, wall structure, cantilever arms, plywood storage, fasteners, and shop clearance.</description>
     </item>
     <item>
@@ -484,808 +1284,8 @@
       <link>https://woodcuttool.com/blog/custom-wardrobe-plywood-sheet-estimate/</link>
       <guid isPermaLink="true">https://woodcuttool.com/blog/custom-wardrobe-plywood-sheet-estimate/</guid>
       <category>CutList</category>
-      <pubDate>Sun, 17 May 2026 23:28:57 GMT</pubDate>
+      <pubDate>Mon, 09 Feb 2026 08:22:52 GMT</pubDate>
       <description>Estimate plywood sheets for a custom wardrobe with hanging bays, shelves, drawers, backs, doors, fillers, and sheet layout.</description>
-    </item>
-    <item>
-      <title>DIY Workshop Cabinet Cut List: Build Storage That Lasts</title>
-      <link>https://woodcuttool.com/blog/diy-workshop-cabinet-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/diy-workshop-cabinet-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Sat, 16 May 2026 23:28:57 GMT</pubDate>
-      <description>Create a workshop cabinet cut list with deep drawers, shelves, tool loads, backs, wall mounting, edge treatment, and plywood estimates.</description>
-    </item>
-    <item>
-      <title>Airbnb Furniture Material Estimate: Plan Repeatable Builds</title>
-      <link>https://woodcuttool.com/blog/airbnb-furniture-material-estimate/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/airbnb-furniture-material-estimate/</guid>
-      <category>CutList</category>
-      <pubDate>Fri, 15 May 2026 23:28:57 GMT</pubDate>
-      <description>Estimate plywood and hardware for repeatable rental furniture such as desks, nightstands, storage benches, shelves, and replacement parts.</description>
-    </item>
-    <item>
-      <title>Plywood Storage Bed Cut List: Plan Drawers Before Panels</title>
-      <link>https://woodcuttool.com/blog/plywood-storage-bed-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-storage-bed-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Thu, 14 May 2026 23:28:57 GMT</pubDate>
-      <description>Plan a plywood storage bed with mattress size, platform support, drawer boxes, access zones, headboard, and sheet layout.</description>
-    </item>
-    <item>
-      <title>Bar Cart Plywood Cut List: Wheels, Shelves, and Storage</title>
-      <link>https://woodcuttool.com/blog/bar-cart-plywood-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/bar-cart-plywood-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 13 May 2026 23:28:57 GMT</pubDate>
-      <description>Create a plywood bar cart cut list with tray edges, bottle storage, casters, handles, shelf spacing, bracing, and efficient sheet use.</description>
-    </item>
-    <item>
-      <title>DIY Dog Crate Furniture Cut List</title>
-      <link>https://woodcuttool.com/blog/diy-dog-crate-furniture-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/diy-dog-crate-furniture-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 12 May 2026 23:28:57 GMT</pubDate>
-      <description>Plan dog crate furniture with pet dimensions, ventilation, door hardware, top load, cleaning access, plywood panels, and sheet layout.</description>
-    </item>
-    <item>
-      <title>Plywood Delivery Checklist: Avoid Damaged Sheets and Delays</title>
-      <link>https://woodcuttool.com/blog/plywood-sheet-goods-delivery-checklist/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-sheet-goods-delivery-checklist/</guid>
-      <category>CutList</category>
-      <pubDate>Mon, 11 May 2026 23:28:57 GMT</pubDate>
-      <description>Plan plywood delivery with sheet count, truck access, inspection, storage, handling help, damage allowance, and cut-list staging.</description>
-    </item>
-    <item>
-      <title>Wall Cabinet Installation Cut List Checklist</title>
-      <link>https://woodcuttool.com/blog/wall-cabinet-installation-cut-list-checklist/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/wall-cabinet-installation-cut-list-checklist/</guid>
-      <category>CutList</category>
-      <pubDate>Sun, 10 May 2026 23:28:57 GMT</pubDate>
-      <description>Review wall cabinet parts before cutting: hanging cleats, backs, nailers, stud access, fillers, doors, and plywood layout.</description>
-    </item>
-    <item>
-      <title>DIY Closet Island Cut List: Drawers, Shelves, and Storage</title>
-      <link>https://woodcuttool.com/blog/diy-closet-island-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/diy-closet-island-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Sat, 09 May 2026 23:28:57 GMT</pubDate>
-      <description>Build a closet island cut list with drawer stacks, folded-clothes shelves, countertop overhang, casters or feet, and plywood sheet planning.</description>
-    </item>
-    <item>
-      <title>Tool Chest Plywood Cut List: Organize Without Wasting Sheets</title>
-      <link>https://woodcuttool.com/blog/tool-chest-plywood-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/tool-chest-plywood-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Fri, 08 May 2026 23:28:57 GMT</pubDate>
-      <description>Plan a plywood tool chest with drawers, handles, lid clearance, dividers, reinforcement, hardware, and a cut-ready sheet layout.</description>
-    </item>
-    <item>
-      <title>Plywood Plant Stand Cut List: Build for Real Pots</title>
-      <link>https://woodcuttool.com/blog/cut-list-for-plywood-plant-stand/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-for-plywood-plant-stand/</guid>
-      <category>CutList</category>
-      <pubDate>Thu, 07 May 2026 23:28:57 GMT</pubDate>
-      <description>Create a plywood plant stand cut list with pot sizes, water trays, shelf spacing, bracing, finish allowances, and material layout.</description>
-    </item>
-    <item>
-      <title>Plywood Sheet Layout for Drawer Boxes</title>
-      <link>https://woodcuttool.com/blog/plywood-sheet-layout-for-drawers/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-sheet-layout-for-drawers/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 06 May 2026 23:28:57 GMT</pubDate>
-      <description>Optimize plywood sheet layouts for drawer boxes with slide clearance, bottom panels, repeated parts, grain rules, kerf, and labeling.</description>
-    </item>
-    <item>
-      <title>DIY Cabinet Cost Estimate From a Cut List</title>
-      <link>https://woodcuttool.com/blog/diy-cabinet-cost-estimate-from-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/diy-cabinet-cost-estimate-from-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 05 May 2026 23:28:57 GMT</pubDate>
-      <description>Turn a cabinet cut list into a realistic budget for plywood, hardware, edge banding, finish, delivery, waste, and contingency.</description>
-    </item>
-    <item>
-      <title>Circular Saw Plywood Layout Guide: Cut Full Sheets Smarter</title>
-      <link>https://woodcuttool.com/blog/circular-saw-cutting-guide-plywood-layout/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/circular-saw-cutting-guide-plywood-layout/</guid>
-      <category>CutList</category>
-      <pubDate>Mon, 04 May 2026 23:28:57 GMT</pubDate>
-      <description>Plan a circular-saw plywood layout with support, cut order, straightedge offsets, kerf, labels, and low-waste sheet breakdown.</description>
-    </item>
-    <item>
-      <title>Mobile Workbench Cut List Planner</title>
-      <link>https://woodcuttool.com/blog/mobile-workbench-cut-list-planner/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/mobile-workbench-cut-list-planner/</guid>
-      <category>CutList</category>
-      <pubDate>Sun, 03 May 2026 23:28:57 GMT</pubDate>
-      <description>Plan a mobile workbench with a stiff top, casters, drawers, shelves, vise clearance, stretchers, and plywood sheet layout.</description>
-    </item>
-    <item>
-      <title>DIY Kitchen Pantry Cabinet Calculator</title>
-      <link>https://woodcuttool.com/blog/diy-kitchen-pantry-cabinet-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/diy-kitchen-pantry-cabinet-calculator/</guid>
-      <category>CutList</category>
-      <pubDate>Sat, 02 May 2026 23:28:57 GMT</pubDate>
-      <description>Estimate plywood for a tall pantry cabinet with shelves, pull-outs, doors, face frames, backs, fillers, and sheet groups.</description>
-    </item>
-    <item>
-      <title>Living Room Media Console Cut List: Clean Cables, Better Storage</title>
-      <link>https://woodcuttool.com/blog/living-room-media-console-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/living-room-media-console-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Fri, 01 May 2026 23:28:57 GMT</pubDate>
-      <description>Build a living-room media console cut list with TV width, components, cable ports, ventilation, drawers, doors, and plywood sheet layout.</description>
-    </item>
-    <item>
-      <title>Loft Bed Plywood Cut List: Plan the Structure First</title>
-      <link>https://woodcuttool.com/blog/loft-bed-plywood-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/loft-bed-plywood-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Thu, 30 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan loft bed plywood parts with platform support, guardrails, ladder clearance, mattress size, wall position, and sheet layout.</description>
-    </item>
-    <item>
-      <title>Farmhouse Table Plywood Cut List: Plan a Strong Top</title>
-      <link>https://woodcuttool.com/blog/farmhouse-table-plywood-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/farmhouse-table-plywood-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 29 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Create a plywood farmhouse table cut list with a layered top, base panels, stretchers, breadboard-style edges, grain, and sheet yield.</description>
-    </item>
-    <item>
-      <title>Small Entryway Shoe Cabinet Cut List</title>
-      <link>https://woodcuttool.com/blog/small-entryway-shoe-cabinet-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/small-entryway-shoe-cabinet-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 28 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan a slim shoe cabinet with tilt-out or shelf storage, toe clearance, wall anchoring, ventilation, doors, and plywood layout.</description>
-    </item>
-    <item>
-      <title>Kids Toy Storage Cabinet Cut List</title>
-      <link>https://woodcuttool.com/blog/kids-toy-storage-cabinet-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/kids-toy-storage-cabinet-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Mon, 27 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Build a toy storage cabinet cut list with bins, rounded-access zones, adjustable shelves, back panels, safety-conscious layout, and plywood estimates.</description>
-    </item>
-    <item>
-      <title>Bookcase With Doors Cut List: Avoid Costly Fit Errors</title>
-      <link>https://woodcuttool.com/blog/bookcase-with-doors-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/bookcase-with-doors-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Sun, 26 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan a bookcase with doors using shelves, face frames, overlays, back panels, hinges, grain direction, and plywood sheet layout.</description>
-    </item>
-    <item>
-      <title>Coffee Bar Cabinet Cut List: Plan Storage That Works</title>
-      <link>https://woodcuttool.com/blog/coffee-bar-cabinet-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/coffee-bar-cabinet-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Sat, 25 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Create a coffee bar cabinet cut list with appliance clearance, drawers, shelves, backsplash space, cable access, and plywood sheet planning.</description>
-    </item>
-    <item>
-      <title>Pantry Roll-Out Shelf Cut List</title>
-      <link>https://woodcuttool.com/blog/pantry-roll-out-shelf-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/pantry-roll-out-shelf-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Fri, 24 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan pantry roll-out shelves with slide clearance, shelf loads, drawer boxes, face panels, repeated parts, and plywood layout.</description>
-    </item>
-    <item>
-      <title>Garage Cabinet Plywood Sheet Calculator</title>
-      <link>https://woodcuttool.com/blog/garage-cabinet-plywood-sheet-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/garage-cabinet-plywood-sheet-calculator/</guid>
-      <category>CutList</category>
-      <pubDate>Thu, 23 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Estimate plywood sheets for garage cabinets with deep shelves, tall doors, backs, drawers, wall mounting, and material groups.</description>
-    </item>
-    <item>
-      <title>Folding Outfeed Table Cut List: Save Shop Space</title>
-      <link>https://woodcuttool.com/blog/folding-outfeed-table-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/folding-outfeed-table-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 22 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Create a folding outfeed table cut list with saw height, support legs, hinges, locking hardware, sheet goods, and safe clearance.</description>
-    </item>
-    <item>
-      <title>Router Table Base Cabinet Cut List: Build a Stable Base</title>
-      <link>https://woodcuttool.com/blog/router-table-base-cabinet-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/router-table-base-cabinet-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 21 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan a router table base cabinet with a top, fence storage, dust collection, drawers, leveling feet, and plywood sheet optimization.</description>
-    </item>
-    <item>
-      <title>Craft Table Plywood Cut List: Storage, Height, and Waste</title>
-      <link>https://woodcuttool.com/blog/craft-table-plywood-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/craft-table-plywood-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Mon, 20 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Build a craft table cut list with a durable top, cubbies, drawers, casters, supply storage, edge treatment, and sheet layout.</description>
-    </item>
-    <item>
-      <title>Pegboard Tool Wall Cut List and Layout</title>
-      <link>https://woodcuttool.com/blog/pegboard-tool-wall-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/pegboard-tool-wall-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Sun, 19 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan a pegboard tool wall with frame spacing, stud positions, panel seams, tool zones, trim, fasteners, and sheet-good cuts.</description>
-    </item>
-    <item>
-      <title>Playhouse Plywood Sheet Estimate: Plan Panels First</title>
-      <link>https://woodcuttool.com/blog/playhouse-plywood-sheet-estimate/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/playhouse-plywood-sheet-estimate/</guid>
-      <category>CutList</category>
-      <pubDate>Sat, 18 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Estimate plywood sheets for a backyard playhouse with walls, roof decking, windows, doors, trim, kerf, and weather-exposed cuts.</description>
-    </item>
-    <item>
-      <title>Wall-Mounted Folding Desk Cut List</title>
-      <link>https://woodcuttool.com/blog/wall-mounted-folding-desk-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/wall-mounted-folding-desk-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Fri, 17 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Create a folding wall desk cut list with a hinged top, supports, wall fasteners, laptop clearance, storage, and sheet layout.</description>
-    </item>
-    <item>
-      <title>Cat Litter Cabinet Cut List: Hide the Box Cleanly</title>
-      <link>https://woodcuttool.com/blog/cat-litter-cabinet-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/cat-litter-cabinet-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Thu, 16 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan a cat litter cabinet with entry openings, ventilation, easy-clean panels, access doors, odor-control space, and plywood layout.</description>
-    </item>
-    <item>
-      <title>Record Cabinet Plywood Cut List for Vinyl Storage</title>
-      <link>https://woodcuttool.com/blog/record-cabinet-plywood-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/record-cabinet-plywood-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 15 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Build a plywood record cabinet cut list with LP sizing, dividers, back panels, shelf support, edge banding, and a low-waste layout.</description>
-    </item>
-    <item>
-      <title>Home Office Wall Desk Cut List</title>
-      <link>https://woodcuttool.com/blog/home-office-wall-desk-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/home-office-wall-desk-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 14 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan a home office wall desk with worktop spans, file drawers, shelves, cable access, wall variation, and plywood sheet layout.</description>
-    </item>
-    <item>
-      <title>Bathroom Vanity Plywood Calculator</title>
-      <link>https://woodcuttool.com/blog/bathroom-vanity-plywood-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/bathroom-vanity-plywood-calculator/</guid>
-      <category>CutList</category>
-      <pubDate>Mon, 13 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Estimate plywood for a bathroom vanity with sink clearance, drawers, doors, back panels, toe kicks, finished ends, and moisture-aware material groups.</description>
-    </item>
-    <item>
-      <title>Under-Stair Cabinet Cut List: Measure the Awkward Space</title>
-      <link>https://woodcuttool.com/blog/under-stair-cabinet-cut-list-layout/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/under-stair-cabinet-cut-list-layout/</guid>
-      <category>CutList</category>
-      <pubDate>Sun, 12 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Create an under-stair cabinet cut list with sloped openings, drawers, doors, carcasses, face panels, scribe strips, and plywood estimates.</description>
-    </item>
-    <item>
-      <title>Window Seat Storage Bench Cut List</title>
-      <link>https://woodcuttool.com/blog/window-seat-storage-bench-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/window-seat-storage-bench-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Sat, 11 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan a window seat storage bench with a lid, dividers, wall fitting, toe kick, ventilation, hinges, and plywood sheet layout.</description>
-    </item>
-    <item>
-      <title>Laundry Room Utility Cabinet Cut List: Fit More Storage</title>
-      <link>https://woodcuttool.com/blog/laundry-room-utility-cabinet-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/laundry-room-utility-cabinet-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Fri, 10 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Create a laundry room utility cabinet cut list with appliance clearances, wall cabinets, shelves, fillers, plumbing access, and sheet estimates.</description>
-    </item>
-    <item>
-      <title>Van Camper Cabinet Cut List: Plan Plywood Without Waste</title>
-      <link>https://woodcuttool.com/blog/van-camper-cabinet-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/van-camper-cabinet-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Thu, 09 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan van camper cabinets with lightweight plywood, curved walls, wheel wells, access panels, latches, grain direction, and sheet layout.</description>
-    </item>
-    <item>
-      <title>Mudroom Locker Cut List Planner</title>
-      <link>https://woodcuttool.com/blog/mudroom-locker-cut-list-planner/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/mudroom-locker-cut-list-planner/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 08 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Build a mudroom locker cut list with cubbies, benches, hooks, tall sides, back panels, face trim, and installation allowances.</description>
-    </item>
-    <item>
-      <title>Kitchen Island Plywood Sheet Calculator</title>
-      <link>https://woodcuttool.com/blog/kitchen-island-plywood-sheet-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/kitchen-island-plywood-sheet-calculator/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 07 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Estimate plywood sheets for a kitchen island with cabinet boxes, drawers, backs, finished ends, toe kicks, kerf, and offcuts.</description>
-    </item>
-    <item>
-      <title>Leftover Plywood Project Planner</title>
-      <link>https://woodcuttool.com/blog/leftover-plywood-project-planner/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/leftover-plywood-project-planner/</guid>
-      <category>CutList</category>
-      <pubDate>Mon, 06 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan useful projects from leftover plywood by measuring offcuts, grouping thicknesses, checking grain and defects, and matching scraps to realistic parts.</description>
-    </item>
-    <item>
-      <title>4x8 Plywood Sheet Cost Planner</title>
-      <link>https://woodcuttool.com/blog/4x8-plywood-sheet-cost-planner/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/4x8-plywood-sheet-cost-planner/</guid>
-      <category>CutList</category>
-      <pubDate>Sun, 05 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan the cost of 4x8 plywood sheets with verified layout count, grade, delivery, sales tax, damaged-sheet allowance, and useful offcut value.</description>
-    </item>
-    <item>
-      <title>Plywood Cut Diagram Checklist Before the First Cut</title>
-      <link>https://woodcuttool.com/blog/plywood-cut-diagram-checklist/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-cut-diagram-checklist/</guid>
-      <category>CutList</category>
-      <pubDate>Sat, 04 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Review a plywood cut diagram for part labels, kerf, grain, trim cuts, safety, offcuts, material groups, and cut order before breaking down sheets.</description>
-    </item>
-    <item>
-      <title>Plywood Grain Direction for Cabinet Panels</title>
-      <link>https://woodcuttool.com/blog/plywood-grain-direction-cabinet-panels/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-grain-direction-cabinet-panels/</guid>
-      <category>CutList</category>
-      <pubDate>Fri, 03 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan grain direction across cabinet doors, finished ends, drawer fronts, shelves, and backs before rotation rules are set in a sheet layout.</description>
-    </item>
-    <item>
-      <title>Plywood Desk Cut List Planner</title>
-      <link>https://woodcuttool.com/blog/plywood-desk-cut-list-planner/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-desk-cut-list-planner/</guid>
-      <category>CutList</category>
-      <pubDate>Thu, 02 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan a plywood desk cut list with top size, leg panels, drawers, cable access, stretchers, edge treatment, kerf, and a stable assembly order.</description>
-    </item>
-    <item>
-      <title>Wall Cabinet Hanging Cleat Planning Guide</title>
-      <link>https://woodcuttool.com/blog/wall-cabinet-hanging-cleat-guide/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/wall-cabinet-hanging-cleat-guide/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 01 Apr 2026 23:28:57 GMT</pubDate>
-      <description>Plan wall cabinet hanging cleats with cabinet weight, stud locations, back structure, fasteners, install clearance, and plywood cut-list coordination.</description>
-    </item>
-    <item>
-      <title>Plywood Storage Bench Cut List</title>
-      <link>https://woodcuttool.com/blog/plywood-storage-bench-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-storage-bench-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 31 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Create a plywood storage bench cut list with seat span, lid clearance, dividers, hinge space, ventilation, edge finishing, and sheet layout.</description>
-    </item>
-    <item>
-      <title>French Cleat Wall Plywood Layout</title>
-      <link>https://woodcuttool.com/blog/french-cleat-wall-plywood-layout/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/french-cleat-wall-plywood-layout/</guid>
-      <category>CutList</category>
-      <pubDate>Mon, 30 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Plan a French cleat wall with cleat angles, panel spacing, stud layout, tool holders, material thickness, cut sequence, and safe mounting.</description>
-    </item>
-    <item>
-      <title>Miter Saw Stand Cut List Planning</title>
-      <link>https://woodcuttool.com/blog/miter-saw-stand-cut-list-planning/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/miter-saw-stand-cut-list-planning/</guid>
-      <category>CutList</category>
-      <pubDate>Sun, 29 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Plan a plywood miter saw stand with saw clearance, support wings, fence alignment, storage, stops, kerf, and shop-floor footprint.</description>
-    </item>
-    <item>
-      <title>Plywood Workbench Material Calculator</title>
-      <link>https://woodcuttool.com/blog/plywood-workbench-material-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-workbench-material-calculator/</guid>
-      <category>CutList</category>
-      <pubDate>Sat, 28 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Estimate plywood for a workbench top, legs, shelves, stretchers, replaceable skins, kerf, and shop-specific handling constraints.</description>
-    </item>
-    <item>
-      <title>Closet Plywood Sheet Layout Guide</title>
-      <link>https://woodcuttool.com/blog/closet-plywood-sheet-layout/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/closet-plywood-sheet-layout/</guid>
-      <category>CutList</category>
-      <pubDate>Fri, 27 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Lay out closet plywood sheets for towers, shelves, dividers, drawer boxes, backs, edge treatment, kerf, and installation-friendly batches.</description>
-    </item>
-    <item>
-      <title>Plywood Edge Banding Calculator</title>
-      <link>https://woodcuttool.com/blog/plywood-edge-banding-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-edge-banding-calculator/</guid>
-      <category>CutList</category>
-      <pubDate>Thu, 26 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Estimate plywood edge banding by exposed edges, panel dimensions, grain direction, trimming allowance, roll length, and spare material.</description>
-    </item>
-    <item>
-      <title>Cabinet Toe Kick Cut List</title>
-      <link>https://woodcuttool.com/blog/cabinet-toe-kick-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-toe-kick-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 25 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Create a cabinet toe kick cut list with recessed bases, stretchers, floor variation, finished ends, support blocks, and installation allowances.</description>
-    </item>
-    <item>
-      <title>Cabinet Back Panel Cut List</title>
-      <link>https://woodcuttool.com/blog/cabinet-back-panel-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-back-panel-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 24 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Plan cabinet back panels, rabbets, nailers, inset dimensions, material thickness, fastening, and sheet groups before cutting boxes.</description>
-    </item>
-    <item>
-      <title>3/4 Plywood Shelf Span Planning Guide</title>
-      <link>https://woodcuttool.com/blog/three-quarter-plywood-shelf-span-guide/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/three-quarter-plywood-shelf-span-guide/</guid>
-      <category>CutList</category>
-      <pubDate>Mon, 23 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Plan 3/4 inch plywood shelves with realistic span, load, edge support, sag concerns, shelf spacing, and material-layout decisions.</description>
-    </item>
-    <item>
-      <title>Drawer Box Plywood Calculator</title>
-      <link>https://woodcuttool.com/blog/drawer-box-plywood-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/drawer-box-plywood-calculator/</guid>
-      <category>CutList</category>
-      <pubDate>Sun, 22 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Calculate plywood or sheet-good drawer boxes with side thickness, bottom grooves, slide clearance, repeated parts, kerf, and grain rules.</description>
-    </item>
-    <item>
-      <title>Floating Shelf Plywood Cut List</title>
-      <link>https://woodcuttool.com/blog/floating-shelf-plywood-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/floating-shelf-plywood-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Sat, 21 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Plan floating shelf plywood parts with a hollow box, mounting cleat, face grain, wall attachment, kerf, and a test-fit sequence.</description>
-    </item>
-    <item>
-      <title>Built-In Bookcase Cut List Planning</title>
-      <link>https://woodcuttool.com/blog/built-in-bookcase-cut-list-planning/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/built-in-bookcase-cut-list-planning/</guid>
-      <category>CutList</category>
-      <pubDate>Fri, 20 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Create a cut list for built-in bookcases with wall measurements, scribes, shelf spacing, backs, face frames, outlets, and sheet-layout checks.</description>
-    </item>
-    <item>
-      <title>Garage Shelving Plywood Calculator</title>
-      <link>https://woodcuttool.com/blog/garage-shelving-plywood-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/garage-shelving-plywood-calculator/</guid>
-      <category>CutList</category>
-      <pubDate>Thu, 19 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Plan plywood sheets for garage shelving with load-aware shelves, uprights, backs, cleats, kerf, and a practical waste allowance.</description>
-    </item>
-    <item>
-      <title>Bookcase Plywood Sheet Calculator</title>
-      <link>https://woodcuttool.com/blog/bookcase-plywood-sheet-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/bookcase-plywood-sheet-calculator/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 18 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Estimate plywood sheets for a bookcase with sides, adjustable shelves, backs, toe kicks, face trim, kerf, and usable offcuts.</description>
-    </item>
-    <item>
-      <title>Quilt Backing Calculator: Wideback vs Pieced Fabric</title>
-      <link>https://woodcuttool.com/blog/quilt-backing-calculator-wideback-vs-pieced/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/quilt-backing-calculator-wideback-vs-pieced/</guid>
-      <category>QuiltFit</category>
-      <pubDate>Tue, 17 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Compare wideback and pieced quilt backing by required overage, fabric width, seam direction, print matching, longarm needs, cost, leftovers, and availability.</description>
-    </item>
-    <item>
-      <title>Half-Square Triangle Cutting Chart and Calculator</title>
-      <link>https://woodcuttool.com/blog/half-square-triangle-cutting-chart-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/half-square-triangle-cutting-chart-calculator/</guid>
-      <category>QuiltFit</category>
-      <pubDate>Mon, 16 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Plan half-square triangles from finished size, seam allowance, trimming method, construction technique, quantity, fabric pairs, and test-block accuracy.</description>
-    </item>
-    <item>
-      <title>Quilt Binding Strip Calculator</title>
-      <link>https://woodcuttool.com/blog/continuous-quilt-binding-strip-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/continuous-quilt-binding-strip-calculator/</guid>
-      <category>QuiltFit</category>
-      <pubDate>Sun, 15 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Estimate quilt binding strips from perimeter, corner allowance, joining loss, strip width, fabric width, bias or straight grain, and repair margin.</description>
-    </item>
-    <item>
-      <title>Quilt Border Yardage Calculator</title>
-      <link>https://woodcuttool.com/blog/quilt-border-yardage-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/quilt-border-yardage-calculator/</guid>
-      <category>QuiltFit</category>
-      <pubDate>Sat, 14 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Calculate straight quilt borders from center size, border widths, number of borders, fabric width, seams, directional prints, mitering, and cutting margin.</description>
-    </item>
-    <item>
-      <title>Floor Tile Layout Through a Doorway</title>
-      <link>https://woodcuttool.com/blog/floor-tile-layout-through-doorway/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/floor-tile-layout-through-doorway/</guid>
-      <category>Tile</category>
-      <pubDate>Fri, 13 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Carry floor tile through a doorway by planning reference lines, transitions, room centers, thresholds, joint alignment, edge cuts, and movement breaks.</description>
-    </item>
-    <item>
-      <title>Grout Calculator by Joint Width and Depth</title>
-      <link>https://woodcuttool.com/blog/grout-calculator-joint-width-depth/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/grout-calculator-joint-width-depth/</guid>
-      <category>Tile</category>
-      <pubDate>Thu, 12 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Estimate grout from tile size, joint width, joint depth, coverage chart, waste, product type, movement joints, and a small test area.</description>
-    </item>
-    <item>
-      <title>Tile Box Calculator With Dye Lot and Attic Stock</title>
-      <link>https://woodcuttool.com/blog/tile-box-calculator-dye-lot-attic-stock/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/tile-box-calculator-dye-lot-attic-stock/</guid>
-      <category>Tile</category>
-      <pubDate>Wed, 11 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Convert tile area into whole boxes while keeping waste, breakage, pattern cuts, dye-lot consistency, returns, and future repair stock visible.</description>
-    </item>
-    <item>
-      <title>Large-Format Shower Wall Tile Layout</title>
-      <link>https://woodcuttool.com/blog/large-format-shower-wall-tile-layout/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/large-format-shower-wall-tile-layout/</guid>
-      <category>Tile</category>
-      <pubDate>Tue, 10 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Plan large-format shower wall cuts around plumb walls, niches, valves, corners, lippage, movement joints, handling, and waterproofing penetrations.</description>
-    </item>
-    <item>
-      <title>Herringbone Backsplash Layout and Starting Point</title>
-      <link>https://woodcuttool.com/blog/herringbone-backsplash-layout-starting-point/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/herringbone-backsplash-layout-starting-point/</guid>
-      <category>Tile</category>
-      <pubDate>Mon, 09 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Plan a herringbone backsplash with a centered focal area, level reference, repeating module, balanced edges, outlet cuts, corners, and extra tile.</description>
-    </item>
-    <item>
-      <title>Hex Tile Waste Calculator</title>
-      <link>https://woodcuttool.com/blog/hex-tile-waste-calculator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/hex-tile-waste-calculator/</guid>
-      <category>Tile</category>
-      <pubDate>Sun, 08 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Estimate hex tile waste from mesh sheets, edge cuts, room shape, focal alignment, color blend, breakage, sheet coverage, and spare stock.</description>
-    </item>
-    <item>
-      <title>Backsplash Tile Calculator With Outlets and Windows</title>
-      <link>https://woodcuttool.com/blog/backsplash-tile-calculator-outlets-windows/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/backsplash-tile-calculator-outlets-windows/</guid>
-      <category>Tile</category>
-      <pubDate>Sat, 07 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Calculate backsplash tile around cabinets, windows, outlets, corners, range areas, pattern repeats, trim, cuts, and whole-box ordering.</description>
-    </item>
-    <item>
-      <title>Shower Wall Tile Calculator With Niches</title>
-      <link>https://woodcuttool.com/blog/shower-wall-tile-calculator-niches/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/shower-wall-tile-calculator-niches/</guid>
-      <category>Tile</category>
-      <pubDate>Fri, 06 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Estimate shower wall tile by measuring each wall, returns, curb, niche backs and sides, openings, pattern, cuts, waste, and attic stock.</description>
-    </item>
-    <item>
-      <title>Metric Stair Calculator for Rise and Run</title>
-      <link>https://woodcuttool.com/blog/metric-stair-calculator-rise-run/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/metric-stair-calculator-rise-run/</guid>
-      <category>Stairs</category>
-      <pubDate>Thu, 05 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Calculate stair geometry in millimeters with finished-floor rise, riser count, going, total run, tread thickness, headroom, and local rules.</description>
-    </item>
-    <item>
-      <title>Closed Stringer vs Cut Stringer Stairs</title>
-      <link>https://woodcuttool.com/blog/closed-stringer-vs-cut-stringer/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/closed-stringer-vs-cut-stringer/</guid>
-      <category>Stairs</category>
-      <pubDate>Wed, 04 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Compare housed or closed stringers with open cut stringers for appearance, structure, tread support, finish work, layout, cost, and repair.</description>
-    </item>
-    <item>
-      <title>Three vs Four Stair Stringers</title>
-      <link>https://woodcuttool.com/blog/three-vs-four-stair-stringers/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/three-vs-four-stair-stringers/</guid>
-      <category>Stairs</category>
-      <pubDate>Tue, 03 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Compare stringer count using stair width, tread material, manufacturer span limits, loads, notching, center support, and local structural requirements.</description>
-    </item>
-    <item>
-      <title>Stair Landing Size Estimator</title>
-      <link>https://woodcuttool.com/blog/stair-landing-size-estimator/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/stair-landing-size-estimator/</guid>
-      <category>Stairs</category>
-      <pubDate>Mon, 02 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Estimate stair landing length and width from stair direction, door swing, travel path, handrails, exterior drainage, and local requirements.</description>
-    </item>
-    <item>
-      <title>Stair Headroom Calculator for a Remodel</title>
-      <link>https://woodcuttool.com/blog/stair-headroom-calculator-remodel/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/stair-headroom-calculator-remodel/</guid>
-      <category>Stairs</category>
-      <pubDate>Sun, 01 Mar 2026 23:28:57 GMT</pubDate>
-      <description>Check stair headroom along the nosing line against floor framing, openings, landings, finish layers, and local code before moving walls or steps.</description>
-    </item>
-    <item>
-      <title>Winder Stair Planning Basics</title>
-      <link>https://woodcuttool.com/blog/winder-stair-planning-basics/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/winder-stair-planning-basics/</guid>
-      <category>Stairs</category>
-      <pubDate>Sat, 28 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Understand walking lines, narrow-end tread depth, headroom, guard geometry, structure, and local approvals before using winders to turn a stair.</description>
-    </item>
-    <item>
-      <title>Stair Stringer Calculator With Finished Tread Thickness</title>
-      <link>https://woodcuttool.com/blog/stair-stringer-calculator-finished-tread-thickness/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/stair-stringer-calculator-finished-tread-thickness/</guid>
-      <category>Stairs</category>
-      <pubDate>Fri, 27 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Account for tread thickness, decking, flooring, landing finish, and top attachment so the first and last risers match the intermediate steps.</description>
-    </item>
-    <item>
-      <title>Deck Stair Total Rise With a Sloped Landing</title>
-      <link>https://woodcuttool.com/blog/deck-stair-total-rise-sloped-landing/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/deck-stair-total-rise-sloped-landing/</guid>
-      <category>Stairs</category>
-      <pubDate>Thu, 26 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Measure deck stair total rise when the landing slopes by establishing finished elevations, tread projection, drainage direction, and local requirements.</description>
-    </item>
-    <item>
-      <title>Cut List Revision Control for Changing Projects</title>
-      <link>https://woodcuttool.com/blog/cut-list-revision-control-workflow/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-revision-control-workflow/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 25 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Keep cut lists aligned with design revisions using version names, locked dimensions, change notes, approval status, obsolete-file control, and reprint rules.</description>
-    </item>
-    <item>
-      <title>Small-Shop Full-Sheet Handling Workflow</title>
-      <link>https://woodcuttool.com/blog/small-shop-full-sheet-handling-workflow/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/small-shop-full-sheet-handling-workflow/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 24 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Plan delivery, storage, support, first cuts, cart movement, and one-person handling before bringing full plywood sheets into a tight workshop.</description>
-    </item>
-    <item>
-      <title>Plan for a Home-Center Plywood Cut Service</title>
-      <link>https://woodcuttool.com/blog/home-center-plywood-cut-service-plan/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/home-center-plywood-cut-service-plan/</guid>
-      <category>CutList</category>
-      <pubDate>Mon, 23 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Prepare a simplified plywood cut list for store cuts with confirmed service limits, oversized blanks, labels, transport size, and final trimming at home.</description>
-    </item>
-    <item>
-      <title>Track Planned vs Actual Plywood Waste</title>
-      <link>https://woodcuttool.com/blog/track-planned-vs-actual-plywood-waste/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/track-planned-vs-actual-plywood-waste/</guid>
-      <category>CutList</category>
-      <pubDate>Sun, 22 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Compare optimized waste with real scraps, recuts, defects, trim loss, damaged parts, and saved offcuts to improve future estimates.</description>
-    </item>
-    <item>
-      <title>Plan Plywood Cuts Around Sheet Defects</title>
-      <link>https://woodcuttool.com/blog/plan-plywood-cuts-around-sheet-defects/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plan-plywood-cuts-around-sheet-defects/</guid>
-      <category>CutList</category>
-      <pubDate>Sat, 21 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Map patches, voids, dents, color shifts, and damaged corners before assigning visible parts and reusable offcuts to a plywood sheet.</description>
-    </item>
-    <item>
-      <title>Grain-Matched Plywood Panel Layout</title>
-      <link>https://woodcuttool.com/blog/grain-matched-plywood-panels-layout/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/grain-matched-plywood-panels-layout/</guid>
-      <category>CutList</category>
-      <pubDate>Fri, 20 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Plan adjacent doors, drawer fronts, wall panels, and cabinet ends from neighboring sheet areas with sequence labels and finish orientation.</description>
-    </item>
-    <item>
-      <title>Batch Cabinet Parts by Material Group</title>
-      <link>https://woodcuttool.com/blog/batch-cabinet-parts-by-material-group/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/batch-cabinet-parts-by-material-group/</guid>
-      <category>CutList</category>
-      <pubDate>Thu, 19 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Organize cabinet parts by plywood grade, thickness, finish, grain, edge treatment, and machine setup before optimizing and cutting.</description>
-    </item>
-    <item>
-      <title>Full-Sheet Cut Sequence Planning</title>
-      <link>https://woodcuttool.com/blog/full-sheet-cut-sequence-planning/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/full-sheet-cut-sequence-planning/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 18 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Turn an optimized sheet layout into a safe cut sequence with manageable panels, supported offcuts, reference edges, labels, and repeated settings.</description>
-    </item>
-    <item>
-      <title>Plywood Offcut Inventory System for Small Shops</title>
-      <link>https://woodcuttool.com/blog/plywood-offcut-inventory-system/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-offcut-inventory-system/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 17 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Track plywood offcuts by material, thickness, dimensions, grain, grade, defects, location, and minimum useful size before buying new sheets.</description>
-    </item>
-    <item>
-      <title>Plywood Panel Labeling System for Cut Lists</title>
-      <link>https://woodcuttool.com/blog/plywood-panel-labeling-system-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-panel-labeling-system-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Mon, 16 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Create a part-label system with project, material, part name, quantity, orientation, finished face, edge banding, and assembly location.</description>
-    </item>
-    <item>
-      <title>How to Trim Edge Banding Flush Without Veneer Damage</title>
-      <link>https://woodcuttool.com/blog/trim-edge-banding-flush-without-veneer-damage/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/trim-edge-banding-flush-without-veneer-damage/</guid>
-      <category>CutList</category>
-      <pubDate>Sun, 15 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Trim iron-on or glued edge banding with grain-aware tools, controlled pressure, sharp cutters, end cleanup, sanding limits, and finish tests.</description>
-    </item>
-    <item>
-      <title>Repeatable Router Dados for Plywood Cabinets</title>
-      <link>https://woodcuttool.com/blog/repeatable-router-dados-plywood-cabinets/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/repeatable-router-dados-plywood-cabinets/</guid>
-      <category>CutList</category>
-      <pubDate>Sat, 14 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Route repeatable cabinet dados by measuring actual plywood, using a stable guide, testing fit, controlling depth, and referencing every panel consistently.</description>
-    </item>
-    <item>
-      <title>How to Drill Plywood Without Backside Tearout</title>
-      <link>https://woodcuttool.com/blog/drill-plywood-without-backside-tearout/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/drill-plywood-without-backside-tearout/</guid>
-      <category>CutList</category>
-      <pubDate>Fri, 13 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Drill clean plywood holes with a sharp bit, sacrificial backer, clamping, correct speed, pilot location, and a test for visible faces.</description>
-    </item>
-    <item>
-      <title>How to Cut Melamine Without Chipping</title>
-      <link>https://woodcuttool.com/blog/clean-melamine-cuts-without-chipping/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/clean-melamine-cuts-without-chipping/</guid>
-      <category>CutList</category>
-      <pubDate>Thu, 12 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Improve melamine cuts with a sharp blade, scoring, zero-clearance support, correct face orientation, stable feed, edge trimming, and sample cuts.</description>
-    </item>
-    <item>
-      <title>How to Make a Plunge Cut in Plywood Safely</title>
-      <link>https://woodcuttool.com/blog/plunge-cut-plywood-opening-safely/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plunge-cut-plywood-opening-safely/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 11 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Plan interior plywood openings with marked corners, supported material, a plunge-capable saw or router, overcut control, and finished corner cleanup.</description>
-    </item>
-    <item>
-      <title>Does Masking Tape Stop Plywood Tearout?</title>
-      <link>https://woodcuttool.com/blog/masking-tape-plywood-tearout-test/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/masking-tape-plywood-tearout-test/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 10 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Test masking tape against blade choice, scoring, zero-clearance support, cut direction, and feed rate instead of treating tape as a universal fix.</description>
-    </item>
-    <item>
-      <title>Zero-Clearance Support for Cleaner Plywood Cuts</title>
-      <link>https://woodcuttool.com/blog/zero-clearance-plywood-splinter-control/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/zero-clearance-plywood-splinter-control/</guid>
-      <category>CutList</category>
-      <pubDate>Mon, 09 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Use zero-clearance inserts, sacrificial backers, splinter guards, and full support to reduce veneer tearout on table saws, tracksaws, and crosscuts.</description>
-    </item>
-    <item>
-      <title>Circular Saw Straight-Edge Guide for Plywood</title>
-      <link>https://woodcuttool.com/blog/circular-saw-straight-edge-guide-plywood/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/circular-saw-straight-edge-guide-plywood/</guid>
-      <category>CutList</category>
-      <pubDate>Sun, 08 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Build or use a circular-saw guide by measuring blade offset, supporting the sheet, controlling splinters, and testing the guide before final cuts.</description>
-    </item>
-    <item>
-      <title>Table Saw Fence Alignment for Accurate Plywood Rips</title>
-      <link>https://woodcuttool.com/blog/table-saw-fence-alignment-plywood-rips/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/table-saw-fence-alignment-plywood-rips/</guid>
-      <category>CutList</category>
-      <pubDate>Sat, 07 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Check fence parallelism, blade condition, support, feed pressure, riving knife, and measurement before repeating cabinet-width plywood rips.</description>
-    </item>
-    <item>
-      <title>Track Saw First Cut: Create a Straight Plywood Reference Edge</title>
-      <link>https://woodcuttool.com/blog/track-saw-first-cut-plywood-reference-edge/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/track-saw-first-cut-plywood-reference-edge/</guid>
-      <category>CutList</category>
-      <pubDate>Fri, 06 Feb 2026 23:28:57 GMT</pubDate>
-      <description>Make the first track-saw cut establish a clean reference edge before parallel rips, crosscuts, labels, and final-size cabinet parts.</description>
     </item>
   </channel>
 </rss>

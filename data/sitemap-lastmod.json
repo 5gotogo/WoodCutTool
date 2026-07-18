@@ -76,8 +76,8 @@
     "hash": "d39a31d26bd4033b1df2d0e1121b363c808e4e3447d677c3ef5f027dcd254727"
   },
   "/blog/": {
-    "lastmod": "2026-07-17",
-    "hash": "d7b4ab71c05a1524e603899a689a0d1e5ad1ed8ba2947a157217da9d793fd91a"
+    "lastmod": "2026-07-18",
+    "hash": "5810a32e18251a150466e2d9ea234ea9b4b7aa4b93de58922fcb95e41b8a81fd"
   },
   "/privacy-policy/": {
     "lastmod": "2026-07-17",
@@ -735,6 +735,10 @@
     "lastmod": "2026-07-17",
     "hash": "a9482cacf875e689c5b5a1be288800967a51773d6e72ad96a7f038020a2697d3"
   },
+  "/blog/actual-plywood-thickness-hardware-fit/": {
+    "lastmod": "2026-07-18",
+    "hash": "d7983506f0f5053e6fdda1b9de7d00edc3cc4e62d64b17bdcea8e4430779cad8"
+  },
   "/blog/address-label-maker-envelope-printing-guide/": {
     "lastmod": "2026-07-17",
     "hash": "e6191bbc3b1b34acbdd12d4920c3ea38f7c86bf549150d4b91d221bca2638358"
@@ -798,6 +802,10 @@
   "/blog/appliance-garage-cabinet-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "4b73edb24ef9e69db16c56ba166f6287a95c333667a7fd0c94b8bf211a3677c9"
+  },
+  "/blog/appliance-garage-door-clearance-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "e98a62787e8e351d34cb3a9b82dece94a74c5b31381b88ab41ffc14bc1efcf75"
   },
   "/blog/applique-quilt-fabric-planning/": {
     "lastmod": "2026-07-17",
@@ -867,6 +875,10 @@
     "lastmod": "2026-07-17",
     "hash": "b5737fbae018e0e9855b1d9cbb181eaa94fdc4913b620d88ce7a4aeba122fc8a"
   },
+  "/blog/baltic-birch-vs-cabinet-plywood-for-drawers/": {
+    "lastmod": "2026-07-18",
+    "hash": "ecd98b213e9be55ea48bc2245847fb6de3a1da76ae431bc93769018089b3d52d"
+  },
   "/blog/baltic-birch-vs-veneer-core-plywood/": {
     "lastmod": "2026-07-17",
     "hash": "e62159413e50f5b6c4ee9525219c708cf876c329dae48352a0569c49e329fea0"
@@ -883,6 +895,10 @@
     "lastmod": "2026-07-17",
     "hash": "ff1eb5fe9d7002ec7d443f068aa59e217bc83d60b1445ca4524bf9e649bc6cf4"
   },
+  "/blog/base-cabinet-level-line-planning/": {
+    "lastmod": "2026-07-18",
+    "hash": "ede24c6f4acc7011fadf951fa474b7ebfb5b578669f9002fe71bb468ed51aae9"
+  },
   "/blog/basement-stair-headroom-check-before-finishing-ceiling/": {
     "lastmod": "2026-07-17",
     "hash": "0fa2a1d17a333482ddd2e89bcf7e423998ef5ff49e8d777a7097d5b45639151b"
@@ -898,6 +914,10 @@
   "/blog/batch-cabinet-parts-by-material-group/": {
     "lastmod": "2026-07-17",
     "hash": "b9697edda095069a328c9b542a774c25c7398bb996c32f095e71ad595801f74b"
+  },
+  "/blog/batch-cutting-identical-cabinet-parts/": {
+    "lastmod": "2026-07-18",
+    "hash": "9d3c34bc3540b2b415e7581dd65713c0e118272a233383b0fde81720b494c2e0"
   },
   "/blog/batch-photo-compression-zip-export/": {
     "lastmod": "2026-07-17",
@@ -942,6 +962,10 @@
   "/blog/best-glue-for-plywood-joints/": {
     "lastmod": "2026-07-17",
     "hash": "cb803a79152a89c3b1a9209bfd0f29c2fe5dd4a12f0899ee41af186c4556ac0c"
+  },
+  "/blog/best-kerf-setting-for-track-saw-layout/": {
+    "lastmod": "2026-07-18",
+    "hash": "d465259860e474f9992d4a1869b3af959ff74f83a66cfb843808b547cb3a4453"
   },
   "/blog/best-metronome-app-daily-practice-cadenza/": {
     "lastmod": "2026-07-17",
@@ -1015,9 +1039,17 @@
     "lastmod": "2026-07-17",
     "hash": "bfbb5bf8e985346a117971fd32951c88aa2c9b1e504f5adda416bb27f293f147"
   },
+  "/blog/cabinet-appliance-opening-tolerance/": {
+    "lastmod": "2026-07-18",
+    "hash": "743f17815ed563b39718e9b658cf67a36672ec6cd8ba623dd291c598df63eb3c"
+  },
   "/blog/cabinet-back-panel-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "9c7284064e570c56f7565b3e0ceadfada8d57c108444ecf0d54d267dd95d22c7"
+  },
+  "/blog/cabinet-back-thickness-dimension-planning/": {
+    "lastmod": "2026-07-18",
+    "hash": "80977ed5a60c70f0884a2c40f6b83f661d9f6db4961ddd303ff7d1fde6d66199"
   },
   "/blog/cabinet-carcass-construction-basics/": {
     "lastmod": "2026-07-17",
@@ -1027,6 +1059,14 @@
     "lastmod": "2026-07-17",
     "hash": "16fc5373a2f0d6c624edfc9578876eb7539960bcd9b59cc318dfda77c6ba73ba"
   },
+  "/blog/cabinet-crown-molding-blocking-plan/": {
+    "lastmod": "2026-07-18",
+    "hash": "ad97217e0c469b566d64f218d0586a6debc515849d756c7960f1d5568ca1790e"
+  },
+  "/blog/cabinet-cut-list-after-field-measurement/": {
+    "lastmod": "2026-07-18",
+    "hash": "9b797b30cbbed05b08fd51e15fc927267f6d19d7db1cbec67f0ec0e2149ab921"
+  },
   "/blog/cabinet-cut-list-mistakes/": {
     "lastmod": "2026-07-17",
     "hash": "5a4200630fa50358dd2559cd9122bf37e228d572a6c11a4e7495f413628dc56b"
@@ -1034,6 +1074,10 @@
   "/blog/cabinet-door-alignment-troubleshooting/": {
     "lastmod": "2026-07-17",
     "hash": "2189b86a03d02183aa19f23b2a2e9786f35215e08a5ba8d92e938b377f3e6faf"
+  },
+  "/blog/cabinet-door-overlay-measurement-errors/": {
+    "lastmod": "2026-07-18",
+    "hash": "3d0860366c9974cc06043e60e58dc74fbcf8dc6079db6041e86166d541e3667c"
   },
   "/blog/cabinet-door-panel-layout-grain/": {
     "lastmod": "2026-07-17",
@@ -1047,6 +1091,14 @@
     "lastmod": "2026-07-17",
     "hash": "6cdad2db9e4ec2722556a3ca7a36163ce14d08fe37ed380c646dae57668eb611"
   },
+  "/blog/cabinet-drawer-slide-clearance-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "2549b8e52b5f55ab9dee08f2c46b8f7bc00ca3edcb0ab71b38c586edb31c5e2d"
+  },
+  "/blog/cabinet-end-panel-finished-size/": {
+    "lastmod": "2026-07-18",
+    "hash": "39540b24e50d30596b7d55e6ada36a59bbe3014ffa349b4e5e8e2986a4ecc9e0"
+  },
   "/blog/cabinet-filler-strip-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "41a4c21e0b989c28a9bb42c4fd02c5f2d258af230ec836c676941a56f20d6ff7"
@@ -1055,6 +1107,10 @@
     "lastmod": "2026-07-17",
     "hash": "c660ffd3e860349416f2c3ae4d58f5c97e093ed0455547bb3c1e856bce8e6415"
   },
+  "/blog/cabinet-filler-vs-overlay-conflict/": {
+    "lastmod": "2026-07-18",
+    "hash": "79e670419fbd94afc2532325a444e80d6d777ab76c648bbdfdc9c48d21ba273f"
+  },
   "/blog/cabinet-hardware-ordering-checklist/": {
     "lastmod": "2026-07-17",
     "hash": "350d30c2bc02deb510585f76965f06a8aa6a99e5be7db8a6f9d1ec0b2aac9d7d"
@@ -1062,6 +1118,10 @@
   "/blog/cabinet-hinges-explained/": {
     "lastmod": "2026-07-17",
     "hash": "9ab4b3efffb972af830bd5f817f96d1f1f5793febe6f84d3535ff9cac5870bad"
+  },
+  "/blog/cabinet-install-order-small-kitchen/": {
+    "lastmod": "2026-07-18",
+    "hash": "a354b168357f65381cf4c5117b9a34abc04b7f9faf60297c267cbc0575559207"
   },
   "/blog/cabinet-installation-day-checklist/": {
     "lastmod": "2026-07-17",
@@ -1079,9 +1139,21 @@
     "lastmod": "2026-07-17",
     "hash": "336ea1677106b26fca1cd915fce724b3ddbe397d53bb518652a3f030dd88d121"
   },
+  "/blog/cabinet-installation-punch-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "8f693f05a3c1bd8834547305e194cb3f2584013de560f91891b6de7c954bc658"
+  },
+  "/blog/cabinet-parts-labeling-by-room/": {
+    "lastmod": "2026-07-18",
+    "hash": "f429222f896293052f819afe4fac1eced87e7dda36e3343d8f564fe89d101dbb"
+  },
   "/blog/cabinet-plywood-core-types-guide/": {
     "lastmod": "2026-07-17",
     "hash": "0f128f1be6539c0b308298413b64f820a9ee7a6109c5ebb6af7a798b778666d8"
+  },
+  "/blog/cabinet-scribe-strip-width/": {
+    "lastmod": "2026-07-18",
+    "hash": "ea5889472b8a7928af4ca0449356f29feeaf97fda2f77a33762e6106e3274c16"
   },
   "/blog/cabinet-shop-daily-production-schedule/": {
     "lastmod": "2026-07-17",
@@ -1102,6 +1174,10 @@
   "/blog/cabinet-toe-kick-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "f586a8433c1ecb71326142f5757603c1d45721746545e1fae70326ba34d07623"
+  },
+  "/blog/cabinet-toe-kick-dimensions-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "9d2cd854af62438f5c5360dcd8e271207951419d9645672d0c9735f9cb5e0c31"
   },
   "/blog/cabinet-toekick-cut-list/": {
     "lastmod": "2026-07-17",
@@ -1195,6 +1271,10 @@
     "lastmod": "2026-07-17",
     "hash": "662c67c6dd7c6c826b681c693ef6c76ca08f6683b9298d06300f21e34caa7265"
   },
+  "/blog/closet-tower-drawer-and-shelf-layout/": {
+    "lastmod": "2026-07-18",
+    "hash": "990d93912a4415a4a44054fd1ca0589f132376b63815a84da6528d52626ed357"
+  },
   "/blog/closet-valet-rod-shelf-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "eb346bac5ecdef2ca4c004ea727da4d12918a949b93a636e92a0184a8de7c439"
@@ -1222,6 +1302,14 @@
   "/blog/common-wood-species-and-uses/": {
     "lastmod": "2026-07-17",
     "hash": "85771b4b3b024c6dd129f1fa0162b6dc8f3f558269ec728f21e85e21f1016a12"
+  },
+  "/blog/compare-4x8-and-5x5-plywood-layouts/": {
+    "lastmod": "2026-07-18",
+    "hash": "2fe7abb8f70456d013b08cfbb2becac98ce4cd0af5c839d115561b35e30ab34b"
+  },
+  "/blog/compare-two-cut-layouts/": {
+    "lastmod": "2026-07-18",
+    "hash": "764d852fa5ba0b4406f72c4689b6085ff15d056101fa6b7c738e22af40918b03"
   },
   "/blog/concrete-step-overlay-measurements/": {
     "lastmod": "2026-07-17",
@@ -1255,6 +1343,10 @@
     "lastmod": "2026-07-17",
     "hash": "78850471dfda42c97ab71461e7cd1606ce622fbab99f962642ffef1c036fbe3b"
   },
+  "/blog/craft-storage-cubby-size-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "d145f708361b58d138381510d7c679cd146002c1f91240fad3212eb36f810b57"
+  },
   "/blog/craft-table-plywood-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "594fc29c6aecf397eda7ccbd2f25fda0303134ac1fb29232617d89b938fc4042"
@@ -1287,9 +1379,17 @@
     "lastmod": "2026-07-17",
     "hash": "b5cb0fbe72172c98774833cda693f5a0e61a6751d2c562fa2bdeaf629613467e"
   },
+  "/blog/cut-list-change-order-material-impact/": {
+    "lastmod": "2026-07-18",
+    "hash": "3079296a2c4f3dd045246ee2c22f245e964b0c516b844a5e6a4319f6b48c97c1"
+  },
   "/blog/cut-list-change-order-workflow/": {
     "lastmod": "2026-07-17",
     "hash": "03559c02268b180732254917ce128a488f7b33d4b124e62fdf6bec236843bd53"
+  },
+  "/blog/cut-list-finished-size-vs-rough-size/": {
+    "lastmod": "2026-07-18",
+    "hash": "79f22b5eb744f224de9eef03b4d819b7b0f9201c1a345f01e88546dc9895d6a1"
   },
   "/blog/cut-list-for-a-bookshelf-wall/": {
     "lastmod": "2026-07-17",
@@ -1319,13 +1419,41 @@
     "lastmod": "2026-07-17",
     "hash": "36b7fbe48808149ca8a85df246d3fa97d4a111eacf33a7ff8cbe58cbd30633ce"
   },
+  "/blog/cut-list-hand-off-to-helper/": {
+    "lastmod": "2026-07-18",
+    "hash": "1f5425d2831914994f084b1a05c3409048f09437bb804e68cdbe999f10d007d3"
+  },
+  "/blog/cut-list-label-system-for-multiple-rooms/": {
+    "lastmod": "2026-07-18",
+    "hash": "54af15222f89cfcb8fa0c9aee8ac4d4fe49cb827a39df8272f6767460d9a591b"
+  },
+  "/blog/cut-list-layout-version-comparison/": {
+    "lastmod": "2026-07-18",
+    "hash": "9b8e0a161b0ae4a4496f53f19f8ba9db55b0a4deffafc5342321edad30307790"
+  },
+  "/blog/cut-list-optimizer-says-extra-sheet/": {
+    "lastmod": "2026-07-18",
+    "hash": "ab51570a49a92183e0f88d11ca05c32b21bcfa4bf4582b9b4689882abb215034"
+  },
+  "/blog/cut-list-pdf-for-shop-floor/": {
+    "lastmod": "2026-07-18",
+    "hash": "86c6f2faefef17af20d0ce8078590f4eec082d1dcdb41f4b16f2ad31a0156bac"
+  },
   "/blog/cut-list-pdf-for-workshop/": {
     "lastmod": "2026-07-17",
     "hash": "e95e0cb7a2be731f48bf77aed6e709329a0d1bfcbc836e4eed8bf2b12ebc66e5"
   },
+  "/blog/cut-list-quantity-audit-before-optimization/": {
+    "lastmod": "2026-07-18",
+    "hash": "26919ad914462c118ecaf93777b295c43b0a032e900fc6ba1164aa5529e6100e"
+  },
   "/blog/cut-list-revision-control-workflow/": {
     "lastmod": "2026-07-17",
     "hash": "7d4e32bf43e5d2e2dc3660a15a30e91b3fc2c03683a24db85bab68dbe608f604"
+  },
+  "/blog/cut-list-rotation-rules-visible-panels/": {
+    "lastmod": "2026-07-18",
+    "hash": "07486a0178ed0647f51af3b7fb39ce483903cf3f5ee7aee0f26db0ebbf873464"
   },
   "/blog/cut-order-sequencing-to-avoid-fragile-strips/": {
     "lastmod": "2026-07-17",
@@ -1659,6 +1787,10 @@
     "lastmod": "2026-07-17",
     "hash": "1843324b321a692863e71c076554118b7807cfb17c314c973aab88e62b46ceaa"
   },
+  "/blog/entryway-locker-hook-and-bench-layout/": {
+    "lastmod": "2026-07-18",
+    "hash": "d73756e4c26c8e9d9ab38d16c272597c81fafb4f5651b3abbebf3f159a378f6c"
+  },
   "/blog/entryway-shoe-bench-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "10d2b75f820c2642ff6a3436858245f57f2dfed430e3b5363c97dc6310b55b13"
@@ -1674,6 +1806,10 @@
   "/blog/estimate-pdf-app-small-business-quotes/": {
     "lastmod": "2026-07-17",
     "hash": "6ec8c5a2bdc84038cbb534d6b1b0d7f1982fbbb8a5dca158082ee270438b20f2"
+  },
+  "/blog/estimate-shop-time-from-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "4f8145b17ebbae4be9559be6dcb394452dfb7c9e99329112a3f4d54d535f985c"
   },
   "/blog/estimating-plywood-for-built-ins/": {
     "lastmod": "2026-07-17",
@@ -1726,6 +1862,10 @@
   "/blog/face-frame-vs-frameless-cabinets/": {
     "lastmod": "2026-07-17",
     "hash": "7e2b456c86c775f40302a9442b0e1c573435fce8caa8195bbfdbc9acf908e42d"
+  },
+  "/blog/face-frame-vs-frameless-cut-list-differences/": {
+    "lastmod": "2026-07-18",
+    "hash": "2923ba6437becb93b5fff3c8f446c8331be506fe64d3f3b1c039ea351a8499cb"
   },
   "/blog/face-frame-vs-frameless-cut-list/": {
     "lastmod": "2026-07-17",
@@ -1979,6 +2119,10 @@
     "lastmod": "2026-07-17",
     "hash": "97b15519eed38a7c6a3294bc94830bb06c95f32939383ce1b1229b01e8e33f9d"
   },
+  "/blog/hardboard-back-panel-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "fcdf02143a705c5ad94d0878e75501d1f6446ea9ba5c0855232d3ee42e577076"
+  },
   "/blog/hardwood-vs-softwood-for-woodworking/": {
     "lastmod": "2026-07-17",
     "hash": "4d563a0f41d08271e603b57848096eed7154ae7b9c5de1fd27e89628bffb9907"
@@ -2099,6 +2243,10 @@
     "lastmod": "2026-07-17",
     "hash": "85106e47212479bbc61895bcd3e874bf9e2bb39480833ac8db8cf154f57c5aa9"
   },
+  "/blog/how-to-group-parts-by-material/": {
+    "lastmod": "2026-07-18",
+    "hash": "aa052be21d355e8a8ca501fdbc713801ac64d779b24c1ba8117668f90de52078"
+  },
   "/blog/how-to-hang-wall-cabinets-by-yourself/": {
     "lastmod": "2026-07-17",
     "hash": "a46ce6f950d7426874cacd1c6c86630388d985f851d426f3cc426be4c864586f"
@@ -2162,6 +2310,10 @@
   "/blog/how-to-plan-pantry-cabinet-storage/": {
     "lastmod": "2026-07-17",
     "hash": "0af7323c208d5f17e11f55716c1d1388312e9063bc5b98ecbdbe7f467ea356bd"
+  },
+  "/blog/how-to-plan-plywood-defect-zones/": {
+    "lastmod": "2026-07-18",
+    "hash": "80fb712cbb67256a5a595fcceb85884cc44660ac34839f08182db47f3ea1ef4e"
   },
   "/blog/how-to-plan-stair-stringers-with-cabinets-underneath/": {
     "lastmod": "2026-07-17",
@@ -2303,6 +2455,10 @@
     "lastmod": "2026-07-17",
     "hash": "a3a0db59400f3dafdacc84125f9ffa07ac79bafba20b6072635152e912d2a852"
   },
+  "/blog/kitchen-island-clearance-measurement/": {
+    "lastmod": "2026-07-18",
+    "hash": "c384d14d5bfb8956dcb65160237b82988892f7b03f5d8362698a2c0e3de31eb4"
+  },
   "/blog/kitchen-island-plywood-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "92f0397cfd80c5d543464dc5e3a75a06b30aef795d89e7fba0d74bb5abfbe25c"
@@ -2310,6 +2466,10 @@
   "/blog/kitchen-island-plywood-sheet-calculator/": {
     "lastmod": "2026-07-17",
     "hash": "9948f4e4574d7bd4e7fff52f19be777c0a05714c8baf8d842de6c23256fe3f41"
+  },
+  "/blog/kitchen-island-seating-overhang-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "d1d49398da144458890a3a8dcb7ee6108dafac3f4fe28d4d384ac780c509f4d8"
   },
   "/blog/knowledge-base-cleanup-before-chatbot/": {
     "lastmod": "2026-07-17",
@@ -2334,6 +2494,10 @@
   "/blog/large-room-tile-grid-squareness/": {
     "lastmod": "2026-07-17",
     "hash": "e449e86c85d0d00e2f928b6a62e9a3ecc55ce3bcb8f01e9b5f806e118174949a"
+  },
+  "/blog/laundry-cabinet-appliance-clearance/": {
+    "lastmod": "2026-07-18",
+    "hash": "3f6d4f7d50f021de4114dd45e7aec1eeaa9190f2287536d81995032d5d78f5f3"
   },
   "/blog/laundry-folding-counter-cut-list/": {
     "lastmod": "2026-07-17",
@@ -2415,6 +2579,10 @@
     "lastmod": "2026-07-17",
     "hash": "f2b083b8cc5e10395422548f423c9c806871dfa52c582eb6353027ebf7cee0bd"
   },
+  "/blog/marine-plywood-vs-exterior-plywood-project/": {
+    "lastmod": "2026-07-18",
+    "hash": "2adb1e6b90d1d6e7aeeac4f60fd9261cd7ca19cbdd2c79140c587db6e79a130d"
+  },
   "/blog/marine-plywood-vs-exterior-plywood/": {
     "lastmod": "2026-07-17",
     "hash": "a36060eb29e2975c74dec553e985bfe9a6f04fd8f0bb8c436ab62d7f51a04dab"
@@ -2451,6 +2619,10 @@
     "lastmod": "2026-07-17",
     "hash": "4870c79a7add6c8f9b6002a6052e5f792900d0069aa6400e2184a522ed5e7cd4"
   },
+  "/blog/mdf-dust-cutting-plan/": {
+    "lastmod": "2026-07-18",
+    "hash": "850ba96fec6a61c10027f71c80fd9e8e8ba6763bc1b8bbc93badde9e3f004df3"
+  },
   "/blog/mdf-sheet-calculator-painted-built-ins/": {
     "lastmod": "2026-07-17",
     "hash": "4b81bb4c22274ee770cc0eb79348118395b071b13308938c9fb5a21b1c7c4565"
@@ -2462,6 +2634,14 @@
   "/blog/mdf-vs-plywood-for-cut-projects/": {
     "lastmod": "2026-07-17",
     "hash": "00b37a719ed53d111d0bdd04bee3659128213660d681fe9d470166e2073c7882"
+  },
+  "/blog/mdf-vs-plywood-for-painted-cabinets/": {
+    "lastmod": "2026-07-18",
+    "hash": "a881ba899c864fc3b5a7140cc3dd6013e23eeee03750650f2d5f13cbf8998c3b"
+  },
+  "/blog/measure-cabinet-run-for-fillers/": {
+    "lastmod": "2026-07-18",
+    "hash": "a45989d47a3f1179cf81891556a8698bc4f115a4fdc40e0a5b3a6b8ad7b48b8c"
   },
   "/blog/measuring-and-marking-accuracy/": {
     "lastmod": "2026-07-17",
@@ -2475,6 +2655,10 @@
     "lastmod": "2026-07-17",
     "hash": "90537fe1c531fb67d7991ab5d1ecb315f94d82d804b79955ef6973778c409f30"
   },
+  "/blog/media-wall-cabinet-cable-ventilation-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "ebc35069da52ccf6d1aec7724c265c1cdd13bf32c351694cc2fee7a34593d377"
+  },
   "/blog/medicine-label-reminder-helper-privacy/": {
     "lastmod": "2026-07-17",
     "hash": "2c1e6957c0ada4c3885a4439d49d3a17310733c8b68853202c5910d9dd04c753"
@@ -2482,6 +2666,10 @@
   "/blog/melamine-cutting-layout-chipout/": {
     "lastmod": "2026-07-17",
     "hash": "1e6a58c3d04e5c3e2e09980d2b3de40f3c5a6fd4e64d1a94810aa7306a7829f7"
+  },
+  "/blog/melamine-edge-chip-allowance/": {
+    "lastmod": "2026-07-18",
+    "hash": "56d3c25310c6ab63f1faa21ac62fc63d241fe7cce0d4224bf05007c24360bbc7"
   },
   "/blog/melamine-sheet-calculator-closet-project/": {
     "lastmod": "2026-07-17",
@@ -2523,6 +2711,10 @@
     "lastmod": "2026-07-17",
     "hash": "46649d937421f461ca67775eb85fc5cbe17993e3e4ffd7a541e8b27ecfbe35e6"
   },
+  "/blog/microwave-shelf-ventilation-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "5bd5e09f35689fc5ce6476ed02e8e3daa585e72e6fb2fb62911dd7e84ca0c50b"
+  },
   "/blog/mileage-log-for-tax-deductions/": {
     "lastmod": "2026-07-17",
     "hash": "8e078b467c6a5de568f971c89dfed9fa0ac23c41069060b6fd643fb938850ede"
@@ -2538,6 +2730,10 @@
   "/blog/miter-saw-stand-cut-list-planning/": {
     "lastmod": "2026-07-17",
     "hash": "82350311aa370c243557eef4fd4be62da285854a65c04e55d421038380383141"
+  },
+  "/blog/miter-saw-stand-wing-support-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "8fee997619ded1e3a2a6f2b7056590c2fc5463a98a28bd7d298d2dabb80ed004"
   },
   "/blog/miter-saw-station-cut-list-dust-collection/": {
     "lastmod": "2026-07-17",
@@ -2586,6 +2782,10 @@
   "/blog/mudroom-locker-cut-list-planner/": {
     "lastmod": "2026-07-17",
     "hash": "cdce4cec97cfa1a2a9f6e7f1b5aec04c2fbcfab62f00f6c8bc687f8d14c9ecfd"
+  },
+  "/blog/mudroom-locker-seat-height-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "e426b26aafa7f89378a62f1fb37c1ecd593bd9d0ee7c20efcd07a6c07a1161d9"
   },
   "/blog/mudroom-tile-layout-durable-entry/": {
     "lastmod": "2026-07-17",
@@ -2667,6 +2867,10 @@
     "lastmod": "2026-07-17",
     "hash": "baaa73c35b5e9de27461b1a38e97841abf44e504129d4ca86b041ab6c557a346"
   },
+  "/blog/one-sheet-project-does-not-fit/": {
+    "lastmod": "2026-07-18",
+    "hash": "3f1baa5d46fd2000f8488ceffa726819d62b682b518c0342a3a267e8b7fe21d1"
+  },
   "/blog/one-sheet-project-fit-calculator/": {
     "lastmod": "2026-07-17",
     "hash": "3960cb8fb454c561693f5624c5bf432bff7b73e802b2d162fdfe27faab9b2025"
@@ -2691,6 +2895,10 @@
     "lastmod": "2026-07-17",
     "hash": "fbcf1463d03cf3feb0dcc479b15df5d95d8ad6afc4cba21a547f5560c8f8f580"
   },
+  "/blog/optimize-multiple-plywood-thicknesses/": {
+    "lastmod": "2026-07-18",
+    "hash": "9b129472acb7f0e4bea511623e0dfd52ef702ca14ed103b17be5ce1d11240310"
+  },
   "/blog/optimize-plywood-for-corner-banquette-seating/": {
     "lastmod": "2026-07-17",
     "hash": "d3c6e04b32b0393b15cfb3b48995c156aa0306a27a42d4852ee2d1eb98dd7945"
@@ -2707,6 +2915,10 @@
     "lastmod": "2026-07-17",
     "hash": "42dff5665d73358d34602be03a72eb6f8a0c35262c2dcc6a5f081d2894c858de"
   },
+  "/blog/osb-vs-plywood-shop-storage/": {
+    "lastmod": "2026-07-18",
+    "hash": "b0cec0a4511369e62425cdb74718cc6d7bf3bc59f42c649d0aea33f2209548d2"
+  },
   "/blog/outdoor-patio-tile-drainage/": {
     "lastmod": "2026-07-17",
     "hash": "9c01d253198421ec5cd636acf3b569a5b6f99dc4fdedb17609b9c21999d38e8d"
@@ -2715,6 +2927,10 @@
     "lastmod": "2026-07-17",
     "hash": "1adb092940d05c5f211ab5675aafc70bc3238c06eaf66cb8656c6516c0a7f99c"
   },
+  "/blog/outdoor-storage-box-drainage-plywood-plan/": {
+    "lastmod": "2026-07-18",
+    "hash": "b64852227ff1c85ee0a2ec5f243e3fd0b984c494b59bdf9440496933616f802e"
+  },
   "/blog/paid-status-invoice-tracking-private-billing/": {
     "lastmod": "2026-07-17",
     "hash": "2f9b865db5998fd1aa37b368ffab6403e93cc2e253b9fc1368428901a849633d"
@@ -2722,6 +2938,10 @@
   "/blog/pantry-cabinet-plywood-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "d321c125879c32a139561f3c8009109cd6483898243475da582beb97f58ddeb1"
+  },
+  "/blog/pantry-cabinet-shelf-spacing-plan/": {
+    "lastmod": "2026-07-18",
+    "hash": "6e774beb549bc344bc33be655a3771af4a9bb9871fe2ade7d7007ea9fe26bfcd"
   },
   "/blog/pantry-label-maker-expiry-date-labels/": {
     "lastmod": "2026-07-17",
@@ -2750,6 +2970,10 @@
   "/blog/pantry-pull-out-shelf-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "24052fdd0117d9b3a2fb342e8114926de5d12ce307e407d65278ff4eef718bdb"
+  },
+  "/blog/pantry-pullout-cabinet-plywood-estimate/": {
+    "lastmod": "2026-07-18",
+    "hash": "347541685dc9fd7c4b9b7d9336734b7403b74179af5e44a94015a7a1646e77b6"
   },
   "/blog/pantry-roll-out-shelf-cut-list/": {
     "lastmod": "2026-07-17",
@@ -2831,6 +3055,14 @@
     "lastmod": "2026-07-17",
     "hash": "0eaae1858dc558f443cde7dd37b26001ca0f0fb1be97a75caa56410f119f9a28"
   },
+  "/blog/plan-safe-first-breakdown-cuts/": {
+    "lastmod": "2026-07-18",
+    "hash": "d7a1173f88e9cec6d3e96a677aa83ca6a70b4f30461cea671f86293e98097645"
+  },
+  "/blog/plan-spare-parts-in-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "1500a3703f248df335ad32f6b09e1dfa9aed3f9ca7e4aab8a3fff9a49d6c5758"
+  },
   "/blog/planing-and-flattening-rough-lumber/": {
     "lastmod": "2026-07-17",
     "hash": "8a1e26a4820fe0133f23c24b1a0e1e55f18db67d0a9175db9501e86d923bce49"
@@ -2846,6 +3078,10 @@
   "/blog/plunge-cut-plywood-opening-safely/": {
     "lastmod": "2026-07-17",
     "hash": "72616ef88db8ef0f4d2e8cfb66d48bd347b2f0d59eb9eca029f9af4d911dbb31"
+  },
+  "/blog/plywood-acclimation-before-cutting/": {
+    "lastmod": "2026-07-18",
+    "hash": "2a0575964b76c010fcc0db435caa2bdfabdd9c4ee725a25beba8dc7988266ef9"
   },
   "/blog/plywood-audio-rack-cut-list/": {
     "lastmod": "2026-07-17",
@@ -2870,6 +3106,10 @@
   "/blog/plywood-coffee-table-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "a3cedba5aa7931ae9dd955ab3221b7cc4eca9996bcee8a8e437e6bb4fe72fe44"
+  },
+  "/blog/plywood-core-void-risk-cut-planning/": {
+    "lastmod": "2026-07-18",
+    "hash": "f2886ba284809f1f91c596ef8aa1e037851ef82f32c4c7e19ccb55689f904c16"
   },
   "/blog/plywood-cost-breakdown-by-project/": {
     "lastmod": "2026-07-17",
@@ -2943,6 +3183,14 @@
     "lastmod": "2026-07-17",
     "hash": "d59b532d1b5a735027d13bc76010162ef8f214ba6fc8104bcb3dd6daff416041"
   },
+  "/blog/plywood-delamination-inspection/": {
+    "lastmod": "2026-07-18",
+    "hash": "fe34b8a8e6ea4840f947279cfdf4c5720ba6a9acff7cfc00d47fa36fbd300f92"
+  },
+  "/blog/plywood-delivery-staging-before-cutting/": {
+    "lastmod": "2026-07-18",
+    "hash": "41be73b1afbc4692bf29fb7afc07af0a2a8b2156fd66a1d39bd3c5a3f83db484"
+  },
   "/blog/plywood-desk-build-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "02928bcabfda0f599378e151e8f360683c3da6b18cdffed1ab2e1275e1fffcc6"
@@ -2959,13 +3207,25 @@
     "lastmod": "2026-07-17",
     "hash": "fca151120722e8bbc92e80e727ef5fbb8e3b90d2d1ccc66ecc2f94024a86ba59"
   },
+  "/blog/plywood-edge-banding-thickness-dimensions/": {
+    "lastmod": "2026-07-18",
+    "hash": "5a5197f03745ce28f788f853e3aca05c9dba2f06ddd962f6cdd70186908d7cb4"
+  },
   "/blog/plywood-entryway-console-table-plan/": {
     "lastmod": "2026-07-17",
     "hash": "0194f829c51b0e2f0948ef8ab0e955652a2b98989cf3b068b44b745badb51a1f"
   },
+  "/blog/plywood-face-grade-visible-parts/": {
+    "lastmod": "2026-07-18",
+    "hash": "4d73c5080f82b9486a96be413fedcfd2b768ef2cb7158077c6ce39652629df57"
+  },
   "/blog/plywood-face-veneer-thickness-guide/": {
     "lastmod": "2026-07-17",
     "hash": "a0d3ea3cbb92ec5c994951ad8a26fd1967dbb6280d6e4c29ad837c02f3901c4a"
+  },
+  "/blog/plywood-finish-before-or-after-assembly/": {
+    "lastmod": "2026-07-18",
+    "hash": "ff64015cbf8a4d7da2b16dffde5c8baab668620b54224edd06fb33adad95183f"
   },
   "/blog/plywood-grades-explained-for-cabinets/": {
     "lastmod": "2026-07-17",
@@ -2987,9 +3247,21 @@
     "lastmod": "2026-07-17",
     "hash": "702b38165fb91c60bf001b2456e3b7ce06f7161c28139aacecd7ae44db06f2b7"
   },
+  "/blog/plywood-grain-lock-cost/": {
+    "lastmod": "2026-07-18",
+    "hash": "188dedbcdc9cbf4c958a4d2190d37bf167c9f6485125278b88dd36d4cb668276"
+  },
+  "/blog/plywood-grain-matching-door-fronts/": {
+    "lastmod": "2026-07-18",
+    "hash": "c9d144ebd61b3f0e7f81539e910324f323c36f46f91f7dda077cd7109ab5a6d5"
+  },
   "/blog/plywood-headboard-storage-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "287228ba03e320651e4d863c215a70824314e48920c2f822456e03f54f1468f9"
+  },
+  "/blog/plywood-inventory-by-thickness-and-grade/": {
+    "lastmod": "2026-07-18",
+    "hash": "c8a6a387948282712300e54375dee47573c50bad2e908cf71bd4d645ee44553c"
   },
   "/blog/plywood-layout-calculator-grain-direction/": {
     "lastmod": "2026-07-17",
@@ -2998,6 +3270,18 @@
   "/blog/plywood-layout-mistakes-beginners/": {
     "lastmod": "2026-07-17",
     "hash": "575989ce14631628126be85e97c6efff1212581ef4f60eab7eac19f8432f6862"
+  },
+  "/blog/plywood-layout-stress-test-before-buying/": {
+    "lastmod": "2026-07-18",
+    "hash": "2e217ded73e28f89db2ec6a894ccdb341bbbad93a851a128a66e03c417730476"
+  },
+  "/blog/plywood-layout-waste-high-after-optimization/": {
+    "lastmod": "2026-07-18",
+    "hash": "5b2be989331c63037ce659c4212870c02bb1a72f6ce739d9155bcba5bfe416cf"
+  },
+  "/blog/plywood-layout-with-edge-trim-allowance/": {
+    "lastmod": "2026-07-18",
+    "hash": "1b49f09dfa9811f20cdbae9471801bf4a69b3235dd22f8d3c4e020f34336adfe"
   },
   "/blog/plywood-loft-bed-desk-cut-list/": {
     "lastmod": "2026-07-17",
@@ -3019,6 +3303,10 @@
     "lastmod": "2026-07-17",
     "hash": "93aecb8646eb9ddd329a5251fedc13c8e02bd6cf4c9297727445ee1f8ed62886"
   },
+  "/blog/plywood-offcut-replacement-part-planning/": {
+    "lastmod": "2026-07-18",
+    "hash": "3cbb6cbe11ce779b64efe426f235f504a741b743369ecff706b1616efee595ba"
+  },
   "/blog/plywood-offcut-storage-ideas/": {
     "lastmod": "2026-07-17",
     "hash": "fbc02f52a1f9865b77c4fc7c47f0ee2fe7511fe21a4d7e59992800061b82a45a"
@@ -3038,6 +3326,10 @@
   "/blog/plywood-panel-labeling-system-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "577b613e2c8ab292812f31432dd81ec89973c4927e0efefecedd5cd673d3a889"
+  },
+  "/blog/plywood-parts-fit-by-area-not-layout/": {
+    "lastmod": "2026-07-18",
+    "hash": "22025e217e5ce6534a006846346e0594bb2acf9e898ff70e328fa9f0e2602a47"
   },
   "/blog/plywood-pet-feeding-station-plan/": {
     "lastmod": "2026-07-17",
@@ -3067,6 +3359,10 @@
     "lastmod": "2026-07-17",
     "hash": "743d2c55cc9287f874691dd8f95e4ae7103160d39fc5d96ef1268d8ecb1049f1"
   },
+  "/blog/plywood-sheet-damage-receiving-check/": {
+    "lastmod": "2026-07-18",
+    "hash": "19bdc888e129935419ce4c8b2d8eeca8442acbf140c849286ae6d66292f82aec"
+  },
   "/blog/plywood-sheet-goods-delivery-checklist/": {
     "lastmod": "2026-07-17",
     "hash": "7e3a7eb8ebbd046e741ca9acb54f503bd8071404caa83313cc58d62c95d4045b"
@@ -3078,6 +3374,10 @@
   "/blog/plywood-sheet-layout-for-van-galley-cabinets/": {
     "lastmod": "2026-07-17",
     "hash": "329896117b3e69af6110c587417201974c6980b64fd62e92acfe6304ce676bcc"
+  },
+  "/blog/plywood-sheet-squareness-check/": {
+    "lastmod": "2026-07-18",
+    "hash": "c0abe17596797ea0b8ed2e3c99a7329f1b4c5dbe4a2464b587a2a858f2dff3dc"
   },
   "/blog/plywood-sheet-weight-and-safe-handling/": {
     "lastmod": "2026-07-17",
@@ -3114,6 +3414,10 @@
   "/blog/plywood-thickness-chart-guide/": {
     "lastmod": "2026-07-17",
     "hash": "b69061ef44d9bb50f3c794c7cf6265d42baec3e2b93d5e1f773ee948610f53f7"
+  },
+  "/blog/plywood-thickness-groups-one-project/": {
+    "lastmod": "2026-07-18",
+    "hash": "8e1c22f7142b7ce7d0181a830eb3d9a17e819f914ec3c343ec53501ea0109b48"
   },
   "/blog/plywood-thickness-guide-for-projects/": {
     "lastmod": "2026-07-17",
@@ -3171,9 +3475,21 @@
     "lastmod": "2026-07-17",
     "hash": "eb4f1deeb18a6f4fe58f5628e62aa8da036049d448a7bfb6cc6124303efdd570"
   },
+  "/blog/prefinished-panel-show-face-labeling/": {
+    "lastmod": "2026-07-18",
+    "hash": "fe3b592c468e26592b95a1acefd56563a00daea82df898383879700759646f49"
+  },
   "/blog/prefinished-plywood-cabinets-pros-cons/": {
     "lastmod": "2026-07-17",
     "hash": "3cce94f56fd0b19ad571ab54cbe01a0c7b48bf14602a186b8cd644026e308829"
+  },
+  "/blog/prefinished-plywood-cut-list-planning/": {
+    "lastmod": "2026-07-18",
+    "hash": "caaac562166b966e0d732914728722274fc5efc1a3aec4e9fa09cbf16d2f25b2"
+  },
+  "/blog/price-cabinet-job-from-sheet-layout/": {
+    "lastmod": "2026-07-18",
+    "hash": "7b76c910a453426ecd7a87d326e11fa3cdb07f6af3d03c8ba084fe87d96037dd"
   },
   "/blog/print-pdf-documents-iphone-airprint-guide/": {
     "lastmod": "2026-07-17",
@@ -3194,6 +3510,10 @@
   "/blog/printer-app-printing-return-labels-from-iphone/": {
     "lastmod": "2026-07-17",
     "hash": "2870b2fcd9413fd53d45ff01381d7d497c7691c13fe018f7f7217625570e90cf"
+  },
+  "/blog/printer-stand-paper-storage-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "535df8fc058f3e05231e27f625c3fb62e6457bbad2930c9ea84b1f898c918f87"
   },
   "/blog/privacy-preserving-analytics-without-third-party-cookies/": {
     "lastmod": "2026-07-17",
@@ -3555,9 +3875,17 @@
     "lastmod": "2026-07-17",
     "hash": "efa71f7806dbb1b41d027f0b543b4f5632c924a45d24ba60d0560ef5f4187120"
   },
+  "/blog/record-actual-yield-after-project/": {
+    "lastmod": "2026-07-18",
+    "hash": "776837daadfe4c91041119fc752448687ef25251ec04bf19665ddbb9c5ca8329"
+  },
   "/blog/record-cabinet-plywood-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "bb8f9b55acc1ad2df49a09c08254beb85069d846464f00cc720b4b16d819b75f"
+  },
+  "/blog/record-cabinet-vinyl-load-shelf-plan/": {
+    "lastmod": "2026-07-18",
+    "hash": "3875c65f279d0df59138df5da104d0e205450b024fa73e407fb4b35627e14d1f"
   },
   "/blog/record-player-cabinet-cut-list/": {
     "lastmod": "2026-07-17",
@@ -3570,6 +3898,10 @@
   "/blog/record-storage-cabinet-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "59e1caa35fd3916e895614b8c2ebc4bf04d71cad7d814e2008914c16a85a5d40"
+  },
+  "/blog/reduce-rework-with-part-ids/": {
+    "lastmod": "2026-07-18",
+    "hash": "ab1b46d1af6abc5fc102623dbc3debfee64df95f94f62eda80ac8af87dfc1634"
   },
   "/blog/reducing-cost-on-a-plywood-project/": {
     "lastmod": "2026-07-17",
@@ -3638,6 +3970,10 @@
   "/blog/router-table-cabinet-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "2e83ee3609f79581b0cacd4391237ce3a4020788547aaedc414651420c294134"
+  },
+  "/blog/router-table-dust-collection-cabinet-plan/": {
+    "lastmod": "2026-07-18",
+    "hash": "5ef9f5ee9b528c3eb23ee0fc624c5ff885f938f01301c77b18e69ae1d83d53fc"
   },
   "/blog/sanding-and-finishing-plywood-guide/": {
     "lastmod": "2026-07-17",
@@ -3711,9 +4047,17 @@
     "lastmod": "2026-07-17",
     "hash": "86c51b6752adf3040bf7734974b0debbe717c1c5d3764c26b1a404816ce02348"
   },
+  "/blog/sewing-table-machine-opening-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "e82783904c340e0844186409d35f6171d1cd5362b83a3228da6aaed38b4291ca"
+  },
   "/blog/sheet-goods-calculator-mixed-thickness-project/": {
     "lastmod": "2026-07-17",
     "hash": "843290faffcd40a97d6806de9606cf3bf2c182cfb52e07a219215a5994aa61dc"
+  },
+  "/blog/sheet-goods-cart-capacity-and-width/": {
+    "lastmod": "2026-07-18",
+    "hash": "0c835126d8b91803db7ffd16fa3dfebf0e95b9ee6aee610fd9abda8e515d08e5"
   },
   "/blog/sheet-goods-cost-comparison-plywood-mdf-osb/": {
     "lastmod": "2026-07-17",
@@ -3743,6 +4087,10 @@
     "lastmod": "2026-07-17",
     "hash": "cce37932097c55014e7f8f1cb8f748052828d8e21d223270e79264018cb5fad9"
   },
+  "/blog/sheet-layout-fragmented-waste/": {
+    "lastmod": "2026-07-18",
+    "hash": "f42d20ed329a4b78d96f0a775ab88ec4d38a23c70fde7172950d0f0a41aaf0cd"
+  },
   "/blog/sheet-yield-research-benchmark/": {
     "lastmod": "2026-07-17",
     "hash": "9e5912550972d606c56c3bc473d8bf7c2f86b3dbd171c7333c9629b4136c076d"
@@ -3759,9 +4107,17 @@
     "lastmod": "2026-07-17",
     "hash": "4cdc3b318f609edec07fd0ef4114130e1b042f40e6c5077d79c46214c1f3b505"
   },
+  "/blog/shop-cut-list-revision-naming/": {
+    "lastmod": "2026-07-18",
+    "hash": "d8f6768a9d13a28dc9fa97236011bf0ba6b8cea2415e061d85df534380157127"
+  },
   "/blog/shop-layout-and-workflow-design/": {
     "lastmod": "2026-07-17",
     "hash": "feff7aefe4edc0b433ba1bc8fc2dad8ad3cb96f9090cb1ef869f915c5a35b61d"
+  },
+  "/blog/shop-offcut-minimum-size-policy/": {
+    "lastmod": "2026-07-18",
+    "hash": "a8a54be3caf18dafe017130c33aecd23afded3eaab2d066d950e9e07b12f6fe9"
   },
   "/blog/short-run-steps-for-split-level-entry/": {
     "lastmod": "2026-07-17",
@@ -3798,6 +4154,10 @@
   "/blog/small-language-models-enterprise-use/": {
     "lastmod": "2026-07-17",
     "hash": "359af2c2edbb748906f64f6f5a3104360b4a395aef355184c5ec3669fa2bcdb9"
+  },
+  "/blog/small-parts-drawer-cabinet-layout/": {
+    "lastmod": "2026-07-18",
+    "hash": "8c13617387cad52f0a805cec9a2e18c3c1187147622382076bc7533edfe21bd9"
   },
   "/blog/small-shop-full-sheet-handling-workflow/": {
     "lastmod": "2026-07-17",
@@ -4155,6 +4515,10 @@
     "lastmod": "2026-07-17",
     "hash": "b8d6ddcb0d958b93533ac0061469d1373487e8c6511df9edc49768f47c017244"
   },
+  "/blog/table-saw-repeat-cut-stop-block-plan/": {
+    "lastmod": "2026-07-18",
+    "hash": "84edcc7664c69842821093225cbd815cbcf3d6246e9e1791929d1e3ff0570a03"
+  },
   "/blog/table-saw-setup-and-safety-checklist/": {
     "lastmod": "2026-07-17",
     "hash": "eb4e48392cf6b09fdc08f9ae32320086f1dc95a08fa56a951188732b30dc2d0e"
@@ -4343,6 +4707,10 @@
     "lastmod": "2026-07-17",
     "hash": "54981cfbfd3b22a7cf2b0b1cec5f035db85006ae27dc4f43b83def7ec96db41d"
   },
+  "/blog/track-saw-first-cut-reference-edge/": {
+    "lastmod": "2026-07-18",
+    "hash": "13e2ae014b1bae5ac5615c4f4b66bf14927b622030af95df77ebad3c81935345"
+  },
   "/blog/track-saw-plywood-cut-plan/": {
     "lastmod": "2026-07-17",
     "hash": "1091ab4a405e88732b5c2e6a6ab56ccce78fc5d820e8c481022efe63394b176d"
@@ -4375,6 +4743,10 @@
     "lastmod": "2026-07-17",
     "hash": "cc37cbead32b5c018965dc94f2940d4fc48903e54e3eb48823a5fc17a3d550e9"
   },
+  "/blog/under-bed-drawer-caster-clearance-cut-list/": {
+    "lastmod": "2026-07-18",
+    "hash": "bbdf63ebf3b4ab93ccedf7918954a458f1f6b4a75cef7bb7e67ab7ed37cf53f2"
+  },
   "/blog/under-stair-cabinet-cut-list-layout/": {
     "lastmod": "2026-07-17",
     "hash": "92974c4bd1776865f17ddce31de718c996954f22b1ded73c216f6577efaf5477"
@@ -4390,6 +4762,10 @@
   "/blog/uneven-stair-troubleshooting/": {
     "lastmod": "2026-07-17",
     "hash": "cfa8714e6ace4f1b360e737c45ccc17127c3f9fcbf7e5e13d31490b9ba6b8e10"
+  },
+  "/blog/upper-cabinet-depth-planning/": {
+    "lastmod": "2026-07-18",
+    "hash": "591088b18cb1ad2e7a6c3164da5e5e8312992a8f63435f98a28d0e3be7b2aaf6"
   },
   "/blog/utc-vs-local-time-app-for-remote-coordination/": {
     "lastmod": "2026-07-17",
@@ -4411,6 +4787,14 @@
     "lastmod": "2026-07-17",
     "hash": "e3ef5fdb0cee804d393bd26e04c625d932e70be70538d16db915e273f81e84cd"
   },
+  "/blog/veneer-core-vs-mdf-core-cabinets/": {
+    "lastmod": "2026-07-18",
+    "hash": "816044dea80e050df00ccfa446e82c9ac83d770be00bda016a8e0052998af9dc"
+  },
+  "/blog/verify-cut-list-against-drawing/": {
+    "lastmod": "2026-07-18",
+    "hash": "f04357f84398dcfaadf700074d057124a2dfc9db917b128be4e490f6ac8ef3c4"
+  },
   "/blog/video-compression-cleanup-iphone-storage/": {
     "lastmod": "2026-07-17",
     "hash": "d88f76d737b82a5e24e3d65dff50a34eae82284e609410191af2ce327b772ee6"
@@ -4426,6 +4810,10 @@
   "/blog/wall-cabinet-installation-cut-list-checklist/": {
     "lastmod": "2026-07-17",
     "hash": "e8218d7facfa203da3b1e99e4660b364a06183776484735a7204d05fa5b6da8d"
+  },
+  "/blog/wall-cabinet-ledger-height-check/": {
+    "lastmod": "2026-07-18",
+    "hash": "ea01e6a8c544347ba8e8e3941c900b21be8ffd47f6f1c38e986743fff716f754"
   },
   "/blog/wall-mounted-folding-desk-cut-list/": {
     "lastmod": "2026-07-17",
@@ -4455,6 +4843,10 @@
     "lastmod": "2026-07-17",
     "hash": "ca89c565f8d569427e6a2524442854feee604492f52b0b98fcda78bbecde9da9"
   },
+  "/blog/when-larger-plywood-sheet-saves-money/": {
+    "lastmod": "2026-07-18",
+    "hash": "eeb99e42503734b10e9fb7e1d510f9f0ddc02c4ac49cbd7880e2d0db13f45276"
+  },
   "/blog/when-to-use-plywood-vs-osb/": {
     "lastmod": "2026-07-17",
     "hash": "c840881034ebc4a4377c2d45be2a22222c26f07c7f5591796a4051e99f439bea"
@@ -4470,6 +4862,10 @@
   "/blog/why-tinnitus-feels-louder-at-night-sleep-masking/": {
     "lastmod": "2026-07-17",
     "hash": "739ac6ae1e212cfcb53bd0bab2673bddde8eec2b76fddfe7f56faf2ed755d912"
+  },
+  "/blog/why-zero-kerf-layout-fails/": {
+    "lastmod": "2026-07-18",
+    "hash": "980db887eb54ad3f250977fdddfa2167de3da96dbfadd9d31c0ed0317c473a0d"
   },
   "/blog/wifi-qr-code-for-guests-and-businesses/": {
     "lastmod": "2026-07-17",
@@ -4494,6 +4890,10 @@
   "/blog/window-seat-drawer-cabinet-cut-list/": {
     "lastmod": "2026-07-17",
     "hash": "d86ad9d3bd7d91ab5106b6793ed2697d03d48009fd6f890b98c05b915e146720"
+  },
+  "/blog/window-seat-drawer-clearance-plan/": {
+    "lastmod": "2026-07-18",
+    "hash": "6ea0afd9b0cd0238f2b5ce0ce370672e53a5841046c68c46c2ff9c8cb047c24f"
   },
   "/blog/window-seat-storage-bench-cut-list/": {
     "lastmod": "2026-07-17",
