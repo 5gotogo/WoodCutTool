@@ -105,8 +105,10 @@ large batches of near-duplicate landing pages:
   2 orientation modes, with explicit rejected-part and complete-layout fields.
 - Added a 360-row edge-trim matrix: 36 projects × 5 per-edge margins ×
   2 orientation modes.
+- Added a 2,520-row layout-robustness matrix: 36 projects × 7 kerfs ×
+  5 per-edge margins × 2 orientation modes.
 
-The three new reports expose 1,152 scenario rows as downloadable CSV files and use
+The research reports expose 3,672 scenario rows as downloadable CSV files and use
 canonical Dataset pages, DataDownload metadata, a DataCatalog hub, stable method/version
 fields, visible limitations, source-template URLs, and a CC BY 4.0 license. The data is
 computed from WoodCutTool's own planning examples rather than scraped plans, product
@@ -117,6 +119,10 @@ useful comparisons, not keyword-swapped pages. A low sheet count is never presen
 successful format comparison when pieces were rejected, and every report states that the
 heuristic is not a guaranteed optimum, construction drawing, purchase quantity, or
 shop-ready cutting sequence.
+
+The scale plan is documented in [`docs/scaled-data-content-plan.md`](scaled-data-content-plan.md).
+The operating rule is to scale downloadable rows faster than indexable URLs, publish one
+canonical report per distinct decision, and gate every batch with `npm run audit:research-data`.
 
 ### Future long-tail ideas (not yet built)
 - `/templates/closet-organizer-cut-list/`, `/templates/bookshelf-cut-list/`

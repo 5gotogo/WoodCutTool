@@ -6081,7 +6081,7 @@
   },
   "/learn/plywood-edge-trim-allowance-guide/": {
     "lastmod": "2026-07-18",
-    "hash": "03017870c222d536f81806787550d6b329b7641b7477ce85fab4d29d3dd69cc2"
+    "hash": "83c53580c01fdd6ad810dd5f149178114bdfded2dd569b1ee90f581ad3239664"
   },
   "/learn/plywood-grade-selection-for-cabinets/": {
     "lastmod": "2026-07-17",
@@ -6157,7 +6157,7 @@
   },
   "/learn/saw-kerf-size-for-cut-list/": {
     "lastmod": "2026-07-18",
-    "hash": "20cdd92446dd0f641555ccc6119959a0d12bcfa24e80ee0937ea272bb3acf0e7"
+    "hash": "de386df1f52d9157bb0e94ccd97e4ce3c7325e57beebff972ce1389a9dcc0716"
   },
   "/learn/sewing-cabinet-workflow-guide/": {
     "lastmod": "2026-07-17",
@@ -6181,7 +6181,7 @@
   },
   "/learn/should-you-buy-an-extra-sheet-of-plywood/": {
     "lastmod": "2026-07-18",
-    "hash": "ca8ccf4d1b4d6a02f35abf7c0cfec458c764777261eaad1bf75506aea5d7ce2d"
+    "hash": "6d9055b755321c615e28aad8f724bae6ffa4828f5b256cc4786c327d5a113be7"
   },
   "/learn/small-shop-lumber-rack-planning-guide/": {
     "lastmod": "2026-07-17",
@@ -6257,7 +6257,7 @@
   },
   "/learn/why-plywood-cut-layout-does-not-fit/": {
     "lastmod": "2026-07-18",
-    "hash": "3afc1819a5c2144bbd1ecdaf6957e6b978e905922d9fbf573b36e7836af98be2"
+    "hash": "0cc486813521ca19638f2d4bb6031591b600aa4c7e46f15ef2b1a9000648df6f"
   },
   "/learn/wood-cut-planner/": {
     "lastmod": "2026-07-17",
@@ -6368,8 +6368,8 @@
     "hash": "05304c8725193ddaa4b9aaa7452abccb89686ebf077d8e7de190a925d4b4f931"
   },
   "/research/": {
-    "lastmod": "2026-07-17",
-    "hash": "28fcc7123bc68dd52e3f21ace41881565567e4cae8dfb086d3b1437049343466"
+    "lastmod": "2026-07-18",
+    "hash": "48cc358880ac809086659d58c7217737ebd9de5eb6a4726097eb7f3661331904"
   },
   "/research/edge-trim-allowance-impact/": {
     "lastmod": "2026-07-17",
@@ -6378,6 +6378,10 @@
   "/research/grain-direction-rotation-sheet-count-impact/": {
     "lastmod": "2026-07-17",
     "hash": "3cd33f21b5a2a215847d75ac928ca470b06b4bf54ecb77a686d28ba6a878142a"
+  },
+  "/research/plywood-layout-robustness-matrix/": {
+    "lastmod": "2026-07-18",
+    "hash": "1df09140848676e0859e6fd795f5ab51abb2b3fa5d3e2492c782b22bfdc26702"
   },
   "/research/plywood-project-yield-benchmarks/": {
     "lastmod": "2026-07-17",

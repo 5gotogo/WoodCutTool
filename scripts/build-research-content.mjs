@@ -23,6 +23,7 @@ const sheetFormats = [
   { slug: "5x10", label: "5 × 10 ft", length: 120, width: 60 }
 ];
 const trimMargins = [0, 0.125, 0.25, 0.5, 1];
+const robustnessVersion = "2026-07-18";
 const projectRows = projectBenchmarks.map((project) => projectResult(project));
 const kerfRows = kerfPatterns.flatMap((pattern) => kerfs.map((kerf) => ({ ...projectResult(pattern, kerf), kerf })));
 const projectKerfRows = projectBenchmarks.flatMap((project) => matrixKerfs.flatMap((kerf) => [true, false].map((allowRotate) =>
@@ -49,6 +50,17 @@ const trimRows = projectBenchmarks.flatMap((project) => trimMargins.flatMap((tri
   nominalSheetLength: standardSheet.length,
   nominalSheetWidth: standardSheet.width
 }))));
+const robustnessRows = projectBenchmarks.flatMap((project) => trimMargins.flatMap((trimMargin) => matrixKerfs.flatMap((kerf) => [true, false].map((allowRotate) => ({
+  ...scenarioResult(project, {
+    sheetLength: standardSheet.length - (trimMargin * 2),
+    sheetWidth: standardSheet.width - (trimMargin * 2),
+    kerf,
+    allowRotate
+  }),
+  trimMargin,
+  nominalSheetLength: standardSheet.length,
+  nominalSheetWidth: standardSheet.width
+})))));
 
 const esc = (value) => String(value)
   .replaceAll("&", "&amp;")
@@ -66,6 +78,7 @@ const kerfCsvPath = "/research/data/saw-kerf-sheet-count-impact.csv";
 const projectKerfCsvPath = "/research/data/project-kerf-sensitivity-matrix.csv";
 const sheetFormatCsvPath = "/research/data/plywood-sheet-format-comparison.csv";
 const trimCsvPath = "/research/data/edge-trim-allowance-impact.csv";
+const robustnessCsvPath = "/research/data/plywood-layout-robustness-matrix.csv";
 
 const projectCsv = csv([
   "benchmark_version", "method", "project_slug", "project_name", "category", "part_count",
@@ -119,6 +132,20 @@ const trimCsv = csv([
   row.sheets, num(row.yield), num(row.waste), row.rejected, `${siteUrl}${row.templatePath}`
 ]));
 
+const robustnessCsv = csv([
+  "dataset_version", "method", "project_slug", "project_name", "category", "part_count",
+  "requested_part_area_sq_in", "placed_part_area_sq_in", "trim_margin_each_edge_in", "kerf_in",
+  "nominal_sheet_length_in", "nominal_sheet_width_in", "usable_sheet_length_in", "usable_sheet_width_in",
+  "orientation_mode", "estimated_sheets", "usable_area_yield_pct", "usable_area_waste_pct",
+  "rejected_piece_count", "complete_layout", "source_template_url"
+], robustnessRows.map((row) => [
+  robustnessVersion, benchmarkMethod, row.slug, row.name, row.category, row.partCount,
+  num(row.partArea), num(row.placedArea), row.trimMargin, row.kerf,
+  row.nominalSheetLength, row.nominalSheetWidth, row.sheetLength, row.sheetWidth,
+  row.allowRotate ? "rotation_allowed" : "orientation_locked", row.sheets, num(row.yield), num(row.waste),
+  row.rejected, row.rejected === 0, `${siteUrl}${row.templatePath}`
+]));
+
 function breadcrumbSchema(items) {
   return {
     "@context": "https://schema.org",
@@ -139,7 +166,8 @@ function datasetSchema({
   csvPath,
   variables,
   datePublished = benchmarkVersion,
-  measurementTechnique = "Deterministic MaxRects-style rectangle-packing heuristic"
+  measurementTechnique = "Deterministic MaxRects-style rectangle-packing heuristic",
+  version = benchmarkVersion
 }) {
   return {
     "@context": "https://schema.org",
@@ -148,12 +176,12 @@ function datasetSchema({
     description,
     url: `${siteUrl}${route}`,
     sameAs: `${siteUrl}${route}`,
-    identifier: `woodcuttool:${route.split("/").filter(Boolean).at(-1)}:${benchmarkVersion}`,
+    identifier: `woodcuttool:${route.split("/").filter(Boolean).at(-1)}:${version}`,
     creator: { "@type": "Organization", name: "WoodCutTool", url: `${siteUrl}/about/` },
     publisher: { "@type": "Organization", name: "WoodCutTool", url: `${siteUrl}/` },
     datePublished,
-    dateModified: benchmarkVersion,
-    version: benchmarkVersion,
+    dateModified: version,
+    version,
     license: licenseUrl,
     isAccessibleForFree: true,
     includedInDataCatalog: {
@@ -171,7 +199,7 @@ function datasetSchema({
   };
 }
 
-function page({ route, title, description, eyebrow, h1, lead, schemas, content }) {
+function page({ route, title, description, eyebrow, h1, lead, schemas, content, published = benchmarkVersion, version = benchmarkVersion }) {
   const canonical = `${siteUrl}${route}`;
   const jsonLd = schemas.map((schema) => `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`).join("\n  ");
   return `<!doctype html>
@@ -207,7 +235,7 @@ function page({ route, title, description, eyebrow, h1, lead, schemas, content }
       <p class="eyebrow">${esc(eyebrow)}</p>
       <h1>${esc(h1)}</h1>
       <p class="lead">${esc(lead)}</p>
-      <p class="article-byline">Published ${benchmarkVersion} by <a href="/about/">WoodCutTool Editorial Team</a> · Dataset version ${benchmarkVersion}</p>
+      <p class="article-byline">Published ${published} by <a href="/about/">WoodCutTool Editorial Team</a> · Dataset version ${version}</p>
       ${content}
     </article>
   </main>
@@ -233,7 +261,8 @@ const hubDatasets = [
   ["Grain direction and panel rotation", `The same ${projectRows.length} projects tested with rotation allowed and locked, plus practical guidance for visible plywood faces.`, "/research/grain-direction-rotation-sheet-count-impact/", "2 rotation modes"],
   ["Project kerf sensitivity matrix", `${projectRows.length} projects tested across ${matrixKerfs.length} kerf settings and two orientation modes, with a row for every scenario.`, "/research/project-kerf-sensitivity-matrix/", `${projectKerfRows.length} runs`],
   ["Plywood sheet format comparison", `${projectRows.length} project inputs compared on 5×5, 4×8, 4×10, and 5×10 panels, including parts that do not fit a format.`, "/research/plywood-sheet-size-comparison/", `${sheetFormatRows.length} runs`],
-  ["Edge trim allowance impact", `${projectRows.length} project inputs tested with five per-edge trim margins and two orientation modes on nominal 4×8 sheets.`, "/research/edge-trim-allowance-impact/", `${trimRows.length} runs`]
+  ["Edge trim allowance impact", `${projectRows.length} project inputs tested with five per-edge trim margins and two orientation modes on nominal 4×8 sheets.`, "/research/edge-trim-allowance-impact/", `${trimRows.length} runs`],
+  ["Plywood layout robustness matrix", `${projectRows.length} projects tested across kerf, edge-trim, and orientation combinations to detect fragile layouts and incomplete scenarios when they occur.`, "/research/plywood-layout-robustness-matrix/", `${robustnessRows.length.toLocaleString()} runs`]
 ];
 const hubCards = hubDatasets.map(([title, copy, href, label]) => `<a class="research-card" href="${href}"><span>${label}</span><h2>${title}</h2><p>${copy}</p><strong>Read the report →</strong></a>`).join("");
 
@@ -551,6 +580,83 @@ const trimHtml = page({
       <section class="research-note"><h2>License and citation</h2><p>Dataset version ${benchmarkVersion}, method <code>${benchmarkMethod}</code>. Licensed under <a href="${licenseUrl}" rel="license">CC BY 4.0</a>. Suggested attribution: “WoodCutTool Plywood Edge Trim Allowance Impact Matrix, ${benchmarkVersion}.”</p></section>`
 });
 
+const robustnessAllowedRows = robustnessRows.filter((row) => row.allowRotate);
+const robustnessCompleteRows = robustnessRows.filter((row) => row.rejected === 0);
+const robustnessBaseline = new Map(robustnessAllowedRows
+  .filter((row) => row.trimMargin === 0 && row.kerf === 0.125)
+  .map((row) => [row.slug, row]));
+const robustnessAffectedProjects = projectBenchmarks.filter((project) => {
+  const baseline = robustnessBaseline.get(project.slug);
+  return robustnessAllowedRows.some((row) => row.slug === project.slug && row.rejected === 0 && row.sheets > baseline.sheets);
+});
+const robustnessIncompleteProjects = projectBenchmarks.filter((project) =>
+  robustnessAllowedRows.some((row) => row.slug === project.slug && row.rejected > 0)
+);
+const robustnessStableProjects = projectBenchmarks.filter((project) => {
+  const baseline = robustnessBaseline.get(project.slug);
+  const rows = robustnessAllowedRows.filter((row) => row.slug === project.slug);
+  return rows.every((row) => row.rejected === 0 && row.sheets === baseline.sheets);
+});
+const robustnessMaxExtraSheets = Math.max(...robustnessAllowedRows.map((row) => {
+  const baseline = robustnessBaseline.get(row.slug);
+  return row.rejected === 0 ? row.sheets - baseline.sheets : 0;
+}));
+const robustnessScenario = (slug, trimMargin, kerf) => robustnessAllowedRows.find((row) =>
+  row.slug === slug && row.trimMargin === trimMargin && row.kerf === kerf
+);
+const robustnessCell = (row) => row.rejected
+  ? `Incomplete (${row.rejected} rejected)`
+  : `${row.sheets} ${row.sheets === 1 ? "sheet" : "sheets"}`;
+const robustnessTableRows = projectBenchmarks.map((project) => {
+  const baseline = robustnessScenario(project.slug, 0, 0.125);
+  const quarterTrim = robustnessScenario(project.slug, 0.25, 0.125);
+  const halfTrim = robustnessScenario(project.slug, 0.5, 0.125);
+  const extreme = robustnessScenario(project.slug, 1, 0.25);
+  const changed = [quarterTrim, halfTrim, extreme].some((row) => row.rejected > 0 || row.sheets > baseline.sheets);
+  return `<tr><th scope="row"><a href="${project.templatePath}">${esc(project.name)}</a></th><td>${robustnessCell(baseline)}</td><td>${robustnessCell(quarterTrim)}</td><td>${robustnessCell(halfTrim)}</td><td>${robustnessCell(extreme)}</td><td>${changed ? "Sensitive" : "Stable in selected cases"}</td></tr>`;
+}).join("");
+const robustnessDescription = `A ${robustnessRows.length.toLocaleString()}-run matrix testing ${projectRows.length} plywood projects across seven kerfs, five edge-trim margins, and two orientation modes.`;
+const robustnessHtml = page({
+  route: "/research/plywood-layout-robustness-matrix/",
+  title: "Plywood Cut Layout Robustness Matrix | WoodCutTool",
+  description: robustnessDescription,
+  eyebrow: "Open dataset · Layout risk",
+  h1: "Plywood Cut Layout Robustness Matrix",
+  lead: `A cut layout can look efficient under one optimistic input and fail when real edge loss, blade width, or grain rules are applied. This ${robustnessRows.length.toLocaleString()}-scenario matrix tests those constraints together so fragile plans are visible before material is purchased.`,
+  published: robustnessVersion,
+  version: robustnessVersion,
+  schemas: [
+    datasetSchema({
+      name: "WoodCutTool Plywood Cut Layout Robustness Matrix",
+      description: robustnessDescription,
+      route: "/research/plywood-layout-robustness-matrix/",
+      csvPath: robustnessCsvPath,
+      datePublished: robustnessVersion,
+      version: robustnessVersion,
+      variables: ["project", "trim margin on each edge", "saw kerf", "orientation mode", "usable sheet dimensions", "estimated sheet count", "material yield", "rejected piece count", "complete layout"],
+      measurementTechnique: "Deterministic MaxRects-style rectangle-packing heuristic while jointly varying edge trim, saw kerf, and orientation mode"
+    }),
+    breadcrumbSchema([["Home", "/"], ["Research", "/research/"], ["Plywood layout robustness", "/research/plywood-layout-robustness-matrix/"]])
+  ],
+  content: `
+      <section class="research-metrics" aria-label="Dataset summary">
+        ${metric("Projects", String(projectRows.length), "Source-linked parts lists")}
+        ${metric("Scenario rows", robustnessRows.length.toLocaleString(), "7 kerfs × 5 trims × 2 modes")}
+        ${metric("Complete layouts", robustnessCompleteRows.length.toLocaleString(), `${num(robustnessCompleteRows.length / robustnessRows.length * 100)}% of all runs`)}
+        ${metric("Stable projects", String(robustnessStableProjects.length), "No change across rotation-allowed range")}
+      </section>
+      <section class="research-note"><h2>Download the full robustness matrix</h2><p><a class="button" href="${robustnessCsvPath}" download>Download robustness CSV</a></p><p>Every row declares the project, usable dimensions, trim margin, kerf, orientation mode, estimated sheet count, yield, rejected pieces, completion flag, version, method, and source template URL.</p></section>
+      <section><h2>Why combined constraints matter</h2><p>Kerf and edge trim both reduce placement freedom, but they do so differently. Edge trim shrinks the outside rectangle before any part is placed. Kerf reserves space between placements. Orientation rules remove otherwise valid 90-degree rotations. Studying each variable separately is useful for explanation; studying them together reveals layouts that are only feasible when every assumption is optimistic.</p><p>The matrix is a sensitivity test, not a prediction of how every shop will perform. A stable sheet count means the heuristic retained the same number of panels across the declared range. It does not mean the placements, offcut shapes, or cutting sequence stayed unchanged.</p></section>
+      <section><h2>Selected rotation-allowed scenarios</h2><p>The baseline uses a 1/8 inch kerf with no modeled edge trim. The next columns keep that kerf while reserving 1/4 and 1/2 inch on every edge. The final stress case combines a 1-inch edge margin with a 1/4 inch spacing assumption. “Incomplete” means at least one required part did not fit the usable rectangle and the reported sheet count must not be treated as a valid purchase estimate.</p>
+        <div class="research-table-wrap"><table class="research-table"><thead><tr><th>Project</th><th>Baseline</th><th>1/4 in trim</th><th>1/2 in trim</th><th>Stress case</th><th>Selected-case result</th></tr></thead><tbody>${robustnessTableRows}</tbody></table></div>
+      </section>
+      <section><h2>What changed across the matrix</h2><p>${robustnessAffectedProjects.length} of ${projectRows.length} projects produced at least one complete rotation-allowed scenario that used more sheets than its baseline. ${robustnessIncompleteProjects.length} projects produced at least one incomplete rotation-allowed scenario because the usable rectangle became smaller than a required part. The largest complete-layout increase was ${robustnessMaxExtraSheets} ${robustnessMaxExtraSheets === 1 ? "sheet" : "sheets"} above baseline.</p><p>These are threshold events. A project can lose placement flexibility in many rows before sheet count changes, and a rejected long or wide part is categorically different from needing an additional sheet. The CSV keeps <code>complete_layout</code> and <code>rejected_piece_count</code> visible so those outcomes cannot be confused.</p></section>
+      <section><h2>How to use the data for a real purchase</h2><ol><li>Measure the actual sheet and decide which edges need trimming.</li><li>Measure a test cut from the installed blade and machine.</li><li>Lock orientation for visible or specified parts only.</li><li>Find the closest declared scenario, then rerun your own dimensions in the calculator.</li><li>Inspect every placement and decide whether the remaining offcuts can cover a replacement part.</li></ol><p>Use the <a href="/plywood-cut-calculator/">plywood cut calculator</a> for the current project and save the reviewed layout in <a href="/apps/cutlist/">CutList</a>. The matrix is most useful as a warning about fragile assumptions, not as a substitute for the final plan.</p></section>
+      <section><h2>Method, provenance, and limits</h2><p>Each scenario starts from one of ${projectRows.length} WoodCutTool planning examples linked to a public template or guide. The generator expands quantities into rectangles, sorts them deterministically, and runs the same MaxRects-style heuristic. It varies only seven declared kerfs, five per-edge trim margins, and two orientation modes on a nominal 96 × 48 inch panel.</p><p>The model does not inspect real sheets, prove a global optimum, or simulate a shop-ready cut sequence. It excludes defects, bow, face matching, joinery, rough-cut cleanup, shared cuts, machine support, test pieces, replacement parts, price, and supplier availability. No row is a construction drawing or guaranteed purchase quantity.</p></section>
+      <section><h2>Deep guides for interpreting the matrix</h2><p>Read <a href="/learn/saw-kerf-size-for-cut-list/">what saw kerf a cut list should use</a>, <a href="/learn/plywood-edge-trim-allowance-guide/">how to choose an edge-trim allowance</a>, and <a href="/learn/why-plywood-cut-layout-does-not-fit/">why a plywood layout does not fit</a>. Together they explain the three most common reasons a nominally efficient layout becomes fragile in the shop.</p></section>
+      <section class="research-note"><h2>License and citation</h2><p>Dataset version ${robustnessVersion}, method <code>${benchmarkMethod}</code>. Licensed under <a href="${licenseUrl}" rel="license">CC BY 4.0</a>. Suggested attribution: “WoodCutTool Plywood Cut Layout Robustness Matrix, ${robustnessVersion}.”</p></section>`
+});
+
 const outputs = [
   ["research/index.html", hubHtml],
   ["research/plywood-project-yield-benchmarks/index.html", projectHtml],
@@ -559,11 +665,13 @@ const outputs = [
   ["research/project-kerf-sensitivity-matrix/index.html", projectKerfHtml],
   ["research/plywood-sheet-size-comparison/index.html", sheetFormatHtml],
   ["research/edge-trim-allowance-impact/index.html", trimHtml],
+  ["research/plywood-layout-robustness-matrix/index.html", robustnessHtml],
   [projectCsvPath.slice(1), projectCsv],
   [kerfCsvPath.slice(1), kerfCsv],
   [projectKerfCsvPath.slice(1), projectKerfCsv],
   [sheetFormatCsvPath.slice(1), sheetFormatCsv],
-  [trimCsvPath.slice(1), trimCsv]
+  [trimCsvPath.slice(1), trimCsv],
+  [robustnessCsvPath.slice(1), robustnessCsv]
 ];
 
 for (const [relativePath, contents] of outputs) {
@@ -572,4 +680,4 @@ for (const [relativePath, contents] of outputs) {
   await writeFile(target, contents, "utf8");
 }
 
-console.log(`Generated ${outputs.length} research files (${projectRows.length} project rows, ${kerfRows.length} pattern rows, ${projectKerfRows.length + sheetFormatRows.length + trimRows.length} scenario rows).`);
+console.log(`Generated ${outputs.length} research files (${projectRows.length} project rows, ${kerfRows.length} pattern rows, ${projectKerfRows.length + sheetFormatRows.length + trimRows.length + robustnessRows.length} scenario rows).`);

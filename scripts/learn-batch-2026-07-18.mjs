@@ -41,7 +41,7 @@ export const learnResearchExpansion20260718 = [
     ],
     cta: "Measure one real sheet, model its usable rectangle, and compare it with a conservative trim scenario before committing the purchase quantity.",
     relatedGuides: ["cut-list-quality-check-before-buying-material", "plywood-sheet-breakdown-for-beginners", "how-to-reduce-plywood-waste"],
-    relatedTools: [["/research/edge-trim-allowance-impact/", "Edge trim allowance matrix", "Dataset"], ["/plywood-cut-calculator/", "Plywood cut calculator", "Calculator"], ["/apps/cutlist/", "CutList optimizer", "App"]]
+    relatedTools: [["/research/plywood-layout-robustness-matrix/", "Plywood layout robustness matrix", "Dataset"], ["/research/edge-trim-allowance-impact/", "Edge trim allowance matrix", "Dataset"], ["/plywood-cut-calculator/", "Plywood cut calculator", "Calculator"], ["/apps/cutlist/", "CutList optimizer", "App"]]
   },
   {
     slug: "can-you-rotate-plywood-parts",
@@ -83,7 +83,7 @@ export const learnResearchExpansion20260718 = [
     ],
     cta: "Make one test cut with the actual blade, enter the measured slot width, and regenerate the layout before purchasing material.",
     relatedGuides: ["saw-kerf-explained", "kerf-allowance-for-table-saw-and-track-saw", "cut-list-review-before-cutting-guide"],
-    relatedTools: [["/research/project-kerf-sensitivity-matrix/", "Project kerf sensitivity matrix", "Dataset"], ["/research/saw-kerf-sheet-count-impact/", "Saw kerf benchmark", "Research"], ["/plywood-cut-calculator/", "Plywood cut calculator", "Calculator"]]
+    relatedTools: [["/research/plywood-layout-robustness-matrix/", "Plywood layout robustness matrix", "Dataset"], ["/research/project-kerf-sensitivity-matrix/", "Project kerf sensitivity matrix", "Dataset"], ["/research/saw-kerf-sheet-count-impact/", "Saw kerf benchmark", "Research"], ["/plywood-cut-calculator/", "Plywood cut calculator", "Calculator"]]
   },
   {
     slug: "how-to-calculate-usable-plywood-sheet-size",
@@ -125,7 +125,7 @@ export const learnResearchExpansion20260718 = [
     ],
     cta: "Duplicate the failed plan, check oversized parts and inputs first, then change one documented constraint at a time until every part is placed.",
     relatedGuides: ["cut-list-quality-check-before-buying-material", "sheet-layout-optimization", "can-you-rotate-plywood-parts"],
-    relatedTools: [["/research/plywood-sheet-size-comparison/", "Plywood sheet format comparison", "Dataset"], ["/plywood-cut-calculator/", "Plywood cut calculator", "Calculator"], ["/apps/cutlist/", "CutList optimizer", "App"]]
+    relatedTools: [["/research/plywood-layout-robustness-matrix/", "Plywood layout robustness matrix", "Dataset"], ["/research/plywood-sheet-size-comparison/", "Plywood sheet format comparison", "Dataset"], ["/plywood-cut-calculator/", "Plywood cut calculator", "Calculator"], ["/apps/cutlist/", "CutList optimizer", "App"]]
   },
   {
     slug: "plywood-yield-percentage-explained",
@@ -167,6 +167,6 @@ export const learnResearchExpansion20260718 = [
     ],
     cta: "Use the complete layout as the baseline, then document whether offcuts, local replacement stock, or one matching spare sheet covers the real project risk.",
     relatedGuides: ["project-cost-estimate-from-cut-list", "cut-list-quality-check-before-buying-material", "project-material-delivery-planning-guide"],
-    relatedTools: [["/research/plywood-project-yield-benchmarks/", "Plywood yield benchmarks", "Research"], ["/wood-waste-calculator/", "Wood waste calculator", "Calculator"], ["/apps/cutlist/", "CutList optimizer", "App"]]
+    relatedTools: [["/research/plywood-layout-robustness-matrix/", "Plywood layout robustness matrix", "Dataset"], ["/research/plywood-project-yield-benchmarks/", "Plywood yield benchmarks", "Research"], ["/wood-waste-calculator/", "Wood waste calculator", "Calculator"], ["/apps/cutlist/", "CutList optimizer", "App"]]
   }
 ];
