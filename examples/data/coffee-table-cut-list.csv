@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Coffee table","Furniture","Top","48","24","1","96","48","0.125","1","72.493","2","36.247","/templates/coffee-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Coffee table","Furniture","Leg panels","22.5","22.5","2","96","48","0.125","1","72.493","2","36.247","/templates/coffee-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Coffee table","Furniture","Lower shelf","42","20","1","96","48","0.125","1","72.493","2","36.247","/templates/coffee-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Coffee table","Furniture","Stretchers","42","4","2","96","48","0.125","1","72.493","2","36.247","/templates/coffee-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

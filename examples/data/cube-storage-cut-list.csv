@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Cube storage unit","Storage","Sides","30","13","2","96","48","0.125","2","52.897","2","52.897","/templates/cube-storage-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Cube storage unit","Storage","Top and bottom","58.5","13","2","96","48","0.125","2","52.897","2","52.897","/templates/cube-storage-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Cube storage unit","Storage","Vertical dividers","28.5","13","3","96","48","0.125","2","52.897","2","52.897","/templates/cube-storage-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Cube storage unit","Storage","Shelves","18.75","13","6","96","48","0.125","2","52.897","2","52.897","/templates/cube-storage-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

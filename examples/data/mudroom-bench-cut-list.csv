@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Mudroom bench","Storage","Seat","60","18","1","96","48","0.125","2","38.196","2","38.196","/templates/mudroom-bench-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Mudroom bench","Storage","Sides","18","17.25","2","96","48","0.125","2","38.196","2","38.196","/templates/mudroom-bench-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Mudroom bench","Storage","Dividers","16.5","17.25","3","96","48","0.125","2","38.196","2","38.196","/templates/mudroom-bench-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Mudroom bench","Storage","Bottom","58.5","16.5","1","96","48","0.125","2","38.196","2","38.196","/templates/mudroom-bench-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

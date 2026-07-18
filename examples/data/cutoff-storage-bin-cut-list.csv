@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Cutoff storage bin","Shop","Sides","36","18","2","96","48","0.125","2","48.340","2","48.340","/templates/cutoff-storage-bin-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Cutoff storage bin","Shop","Dividers","24","16.5","4","96","48","0.125","2","48.340","2","48.340","/templates/cutoff-storage-bin-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Cutoff storage bin","Shop","Bottom","30","16.5","1","96","48","0.125","2","48.340","2","48.340","/templates/cutoff-storage-bin-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Cutoff storage bin","Shop","Back","36","30","1","96","48","0.125","2","48.340","2","48.340","/templates/cutoff-storage-bin-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

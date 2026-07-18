@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Sanding station","Shop","Sides","34.5","20","2","96","48","0.125","2","51.969","2","51.969","/templates/sanding-station-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Sanding station","Shop","Top layers","30","22","2","96","48","0.125","2","51.969","2","51.969","/templates/sanding-station-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Sanding station","Shop","Shelves","28.5","18.5","2","96","48","0.125","2","51.969","2","51.969","/templates/sanding-station-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Sanding station","Shop","Back","34.5","30","1","96","48","0.125","2","51.969","2","51.969","/templates/sanding-station-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

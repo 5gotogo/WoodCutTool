@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Kids table","Furniture","Top","36","24","1","96","48","0.125","1","41.840","1","41.840","/templates/kids-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Kids table","Furniture","Leg panels","20","20","2","96","48","0.125","1","41.840","1","41.840","/templates/kids-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Kids table","Furniture","Long stretcher","30","4","1","96","48","0.125","1","41.840","1","41.840","/templates/kids-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Kids table","Furniture","End stretchers","18","4","2","96","48","0.125","1","41.840","1","41.840","/templates/kids-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

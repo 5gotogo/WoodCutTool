@@ -4,12 +4,16 @@
     "hash": "9b0ade6c4dffb9d20a24c61a0d462b6c411a4e872ca19827d2ff416ee7362c26"
   },
   "/tools/": {
-    "lastmod": "2026-07-17",
-    "hash": "c554eaa66b1bf621bb8a8d127b2b877fbc7a3a6fc5fcfc64f222ac56cc4503c2"
+    "lastmod": "2026-07-19",
+    "hash": "9c6a3f2bcbc6cab7163d0784f9d465d01f2ba238e085295d071072b9548b1954"
   },
   "/learn/": {
     "lastmod": "2026-07-18",
     "hash": "5c4d35718da8c550a29ffc549cccc35bf3cfff47f7345a320632c1720be84a53"
+  },
+  "/examples/": {
+    "lastmod": "2026-07-19",
+    "hash": "48aa7df29c4d8b3338d4d1c875374c65d8b7502d5f5aeb915a8a72a41625adbb"
   },
   "/glossary/": {
     "lastmod": "2026-07-17",
@@ -5327,6 +5331,150 @@
     "lastmod": "2026-07-17",
     "hash": "ba0965a60557d54b94460280d3d83a2e715042ce22e69f26357dae9b7eda938e"
   },
+  "/examples/appliance-garage-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "bd3e91dc06085d2e88f57d6157e55bc4b0580ce7cfd7262d7bb3fbb51698e1a5"
+  },
+  "/examples/assembly-table-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "83df2e3d455ab145d6c3e9e12a77cac3090dd29a14f7c1f5a886593aad2beb72"
+  },
+  "/examples/base-cabinet-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "d93c92eeeeef4440b47c8d73027e2e168d831fe477d97f935cb8f0c14f967ee5"
+  },
+  "/examples/bathroom-vanity-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "be8075f0f92be228a0ba9afe9055e99ca4a6733a364351cb02e24ea9caad0413"
+  },
+  "/examples/bookshelf-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "a8ab47d2c3763a380263ec4e19b9e4d47cbb5f06621e87869dd82246d717208d"
+  },
+  "/examples/closet-tower-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "fe0e015ff6292af10e192c5862017a6dbfa20b3671b4b69b26789fcaaea32203"
+  },
+  "/examples/coffee-table-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "40fc3cd34941dc078a8d33f2e90dd61c918ab0f4992a166b8c440b9d8945c15a"
+  },
+  "/examples/console-table-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "7ce9a3eaef6d7d9e2a5de076b2af1bd0fc6957c48cf5355bddcf4a488746e132"
+  },
+  "/examples/craft-storage-cabinet-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "f2a97385a148d713da8bc183f72043637b9ddceadcded932da40406347d03f3d"
+  },
+  "/examples/cube-storage-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "ec57149b79087989b50654399564e5c51aa91e47700ef77da32012f8c2c00494"
+  },
+  "/examples/cutoff-storage-bin-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "1e893ced712bd1332eef9e5c9992fd962feaad75f97dc1baa1c5a883fb36d209"
+  },
+  "/examples/entryway-locker-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "e39f123777c8ac01820f9a8b3c9368846fea49c6668ba79d6ea4191e0c6d85bd"
+  },
+  "/examples/folding-craft-table-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "5a6d8424ce90a18ccd1850221044a423cf6d658ebc860fbe3967aadbbc0ceef1"
+  },
+  "/examples/french-cleat-wall-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "de1bce48d7a00c9aa7135aec6143e94e38d989dc51790792e0ea003e858abf1c"
+  },
+  "/examples/kids-table-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "642ea289d7264097a1026c4d366a60b24e1f616a0e12098a9ec2f1419bf1923e"
+  },
+  "/examples/kitchen-island-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "e903b67b220685a1de26e8803f2298cb87f2d6db7d57085663a880dc8d62c914"
+  },
+  "/examples/laundry-cabinet-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "26f3c2c4245f69b374371b0181203c45c14289e0ffcab4e2d56fd8ee10e70f2e"
+  },
+  "/examples/laundry-folding-table-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "035d571be20dbe53462991c12513dac4a0227d8710d7e1adda297083f1abfda4"
+  },
+  "/examples/media-cabinet-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "65a4ba782b7a0f6391729bbe950fd2ce9d84d2d5e4dccb7340e15373680613d8"
+  },
+  "/examples/microwave-shelf-cabinet-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "a895665e3a9154de3a6ca757457f4177f8466775a3c48c0c178ed5d7360cc6ae"
+  },
+  "/examples/miter-saw-stand-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "ff70568de1094ade36eaab7cda46a08c6b0be1340cd32cc587beb0e89f1203f9"
+  },
+  "/examples/mobile-workbench-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "94f096ea024bd64ec0aff87b4b5ba631c66c104bf0d94abcf087cd43b6bdaedb"
+  },
+  "/examples/mudroom-bench-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "b24a56c7ff7c76273fb675827615f66924f086715ce5d39219eb4d72a18c7fd5"
+  },
+  "/examples/outdoor-storage-box-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "846744f406ef8e5722a71b49dd88a91739bc551496f4148f6516aac68e88c251"
+  },
+  "/examples/pantry-cabinet-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "ae821822848d250857d415bdddbc7f36837ffcad7eb0ae919ecf6ee371beb6d4"
+  },
+  "/examples/record-cabinet-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "e7e3b1646765c0ae6cfff8c1196b9a891df40657a6dd5960c8c15428d3acb57f"
+  },
+  "/examples/rolling-cart-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "3a7b97e47c00477f70cfe2ef0e8b9c6ab7da0e594423ed503bc49d9fe3099fd7"
+  },
+  "/examples/sanding-station-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "b5c672525fdb72bae76aa35a69580e5f5141c7721d23ff7a477639bd725a747e"
+  },
+  "/examples/sewing-table-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "077384d4dd0964b022ab99ccd55d796adfd27a5bcb360a4e583bd637f2f09635"
+  },
+  "/examples/sheet-goods-storage-cart-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "857e16dca4852bfe08bcf3b0c119f91494f3981c5df2dcc1148ff04cd2b53491"
+  },
+  "/examples/shop-cabinet-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "2759cd5358354b1d6a7c528d54e2db3feeb5bcfbd6f6987003600fe62d4c85f7"
+  },
+  "/examples/small-parts-drawer-cabinet-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "e86371499b572ad65c96e8b1aba276e915552c689d0f65f89a1c8b6fabc5e64a"
+  },
+  "/examples/under-bed-drawers-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "a56fcf1cfbb46b57b2d29ce91bc3a6856948c3f93402c63d116d1f27c8e405b7"
+  },
+  "/examples/utility-closet-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "997cc77a9c6b47bef1eee3e17911f78dc0b33f9250c3c39c0b2bc5a1e148a587"
+  },
+  "/examples/wall-cabinet-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "33b40f10a72fdbcbd8de0e061902a5e3faee404fbf9dcd11d2f6451ee85686b1"
+  },
+  "/examples/window-seat-cut-list/": {
+    "lastmod": "2026-07-19",
+    "hash": "4f9efcf888c234457543ae934020400d817e864364d4864aae066a0fc519632e"
+  },
   "/fence-calculator/": {
     "lastmod": "2026-07-17",
     "hash": "0ab1918f2176dfe232523365efe9e6e46613add117169cfe12da55ca75a04957"
@@ -6768,35 +6916,35 @@
     "hash": "05304c8725193ddaa4b9aaa7452abccb89686ebf077d8e7de190a925d4b4f931"
   },
   "/research/": {
-    "lastmod": "2026-07-18",
-    "hash": "48cc358880ac809086659d58c7217737ebd9de5eb6a4726097eb7f3661331904"
+    "lastmod": "2026-07-19",
+    "hash": "1d5edbe81caabe0602d338f96bdafe41e75cc6ccf99de3f8c3f39668b88870f0"
   },
   "/research/edge-trim-allowance-impact/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "f8e45a98639cea79e92eda401c47575d4cf32651e7e0c3f8717896179184acf2"
   },
   "/research/grain-direction-rotation-sheet-count-impact/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "3cd33f21b5a2a215847d75ac928ca470b06b4bf54ecb77a686d28ba6a878142a"
   },
   "/research/plywood-layout-robustness-matrix/": {
-    "lastmod": "2026-07-18",
+    "lastmod": "2026-07-19",
     "hash": "1df09140848676e0859e6fd795f5ab51abb2b3fa5d3e2492c782b22bfdc26702"
   },
   "/research/plywood-project-yield-benchmarks/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "2d969e03d3f016e65862a110283953505362da160af0a6e75f355587a21208f5"
   },
   "/research/plywood-sheet-size-comparison/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "bf8db0e5f1460575fb80d1004a711be3fc22c6ae6fc6208111dca0b1954d28e5"
   },
   "/research/project-kerf-sensitivity-matrix/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "0a7cc26f5f1172a6843bc17f9099c2fc4ba737c78a741f67a4c9ec4d0f0ae96a"
   },
   "/research/saw-kerf-sheet-count-impact/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "9805848ea48418a04adaf1c1a419345d770089b80778f03bdfce915d70dde171"
   },
   "/rise-run-calculator/": {
@@ -6840,27 +6988,27 @@
     "hash": "b3392046124988083c6df0ca8f5ead16c80059308c6be8923682e46f4fd3ab52"
   },
   "/templates/": {
-    "lastmod": "2026-07-17",
-    "hash": "105e99d8dcc97577b2d1f7887fdf324e9d257216f37072f65e79cec06266314c"
+    "lastmod": "2026-07-19",
+    "hash": "40b11cae96b7d631062fa08b28504522533e8170b9cc4ba36cee128c3b7fa363"
   },
   "/templates/4x8-plywood-sheet/": {
     "lastmod": "2026-07-17",
     "hash": "8f4c93d923eec2abf4bdc36e5590241fb717bcff83f7377ef7f2f647c9a0fe94"
   },
   "/templates/appliance-garage-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "65298db22f1c2e479a4a7b093c34911474a7a3aa0004e2cd6e19078989845605"
   },
   "/templates/assembly-table-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "4c77006031c810f439d181dedec0b74b9e56821f3d9e7c8f6072e25c4d36de03"
   },
   "/templates/base-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "29bf9410dfe25c6982655464bff584626fd1d2767e8846daf495ce30dbae760a"
   },
   "/templates/bathroom-vanity-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "65adb56fc17b55bf06caf09eb4b852a0deca3095be4ef620db1b7d8a19b6ab15"
   },
   "/templates/bookcase-cut-list/": {
@@ -6868,11 +7016,11 @@
     "hash": "3df3c7cdbb4d597264cd9c5ce02d28e99ea64ce192df46a83122ea767c2e8429"
   },
   "/templates/bookshelf-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "489a6ea3c6dfc3eadfecd69c34622bce524c43c185cba366f736aa254f3b9db5"
   },
   "/templates/clamp-rack-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "02094bb93117319be5e07fe57ac393e89d814816279f007eb9f161112ab7222d"
   },
   "/templates/closet-shelving-cut-list/": {
@@ -6880,27 +7028,27 @@
     "hash": "879ac495f9e6136f308c5fa6ea9e1d59d8a15ac174bef2b01653f23944338c6d"
   },
   "/templates/closet-tower-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "ab0727b8a920a2a866f224ead73cf7b8a15d68a37f41e81069673d6bb6027d14"
   },
   "/templates/coffee-table-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "064cd5ccf4dabdda0e3bfea27057f597d4eeb0a422e10709d18fcc9d93fee030"
   },
   "/templates/console-table-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "123c9864ccdda11a527badf28d54972c793a89d4ed30f14b8ffb61718688f91f"
   },
   "/templates/craft-storage-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "034985798e9fc09d5b1c436d00fc1de9a710443684fb762e68f5197741142c28"
   },
   "/templates/cube-storage-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "42158ae2b60b484ec3dbc4aba9295bdc7c7091588df0a6abc80c56ca48402385"
   },
   "/templates/cutoff-storage-bin-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "f926109db569addf4ddd43986b313308c4cb04a0da10c2a860acf596d126a6d9"
   },
   "/templates/desk-cut-list/": {
@@ -6908,15 +7056,15 @@
     "hash": "ae410dfa3e1252338623de38b07baf4530b14773da94b02b8468d5bb910cf72e"
   },
   "/templates/desk-organizer-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "8c1c39e9b9c0739855375ad165f07e938225036dc039e27032ca531d8a4b80f6"
   },
   "/templates/dining-bench-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "72c73e3b1f6a7a874212a86a9ae58610829e8c8e177d30c748728eab1b49ad47"
   },
   "/templates/dollhouse-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "77beefa4d159c3749c8fc8149ec1d9df7f7ab0a677d03b120d849ced653a9f09"
   },
   "/templates/drawer-box-cut-list/": {
@@ -6924,35 +7072,35 @@
     "hash": "c5d87e59e7918c3c279b36ff55ed4fe2b99c61fd08241850086899514c854ca7"
   },
   "/templates/drill-press-stand-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "3ec23dfe2279a215814d99679223e6de5beab1fc42460e5f0914208add14d5fb"
   },
   "/templates/entryway-locker-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "3829e4b721d77bfda590c5880a6ba76ac6aae0c44ad796c737bf55083f84e50e"
   },
   "/templates/entryway-table-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "d289b712e05de0a7396f8b856cacf9650a2e89b8fa7733437d279db6add35215"
   },
   "/templates/file-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "65468039b45b648e9681f0171a408312dd1611e2a21ac3b84150eb0be8d429e7"
   },
   "/templates/floating-shelf-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "242cd20e30f0b19bab105620fbed618ded44b22482d26f5223aba85bf59c87b9"
   },
   "/templates/folding-craft-table-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "456ba60974e7cfcc979aa12c8573a2bb12dbd48ad19685ba04b74b1f6ceed12b"
   },
   "/templates/folding-work-table-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "5a2504f9679a718c2fec400d1b91f0b4ff513194b7ccf618821d8efbc415e9bc"
   },
   "/templates/french-cleat-wall-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "4b8fd22918b467ba127ea8881ed0adf6726da60747b4b0503b29148cebe92ee8"
   },
   "/templates/garage-shelving-cut-list/": {
@@ -6960,7 +7108,7 @@
     "hash": "c8baa3083707342c89c378d9b17c30561ae405c3cd6d1df744b64c4a5332532b"
   },
   "/templates/kids-table-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "9465015b66cbd0405ac2b2922b37bdedcff31203fa628921b1d0c31bb63bc776"
   },
   "/templates/kitchen-cabinet-cut-list/": {
@@ -6968,135 +7116,135 @@
     "hash": "00e8890ade4bc01ff5cbf36bb57756d7a5929eabcb435035dad1ab4328d64a20"
   },
   "/templates/kitchen-island-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "e8cbd535e13e852127977c1e23b40da42be376af51bb658bdd9ff69a72e71456"
   },
   "/templates/laundry-folding-table-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "1855212808646763faf3ff01ffba300d70ce1c3dacc992b0ae346f92fbbd6f67"
   },
   "/templates/laundry-room-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "d0be484f664b227112a10783ab902d6f96e909f7528493576aa8be96049df1b5"
   },
   "/templates/linen-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "6cdf0c97fe44bcca655a72e454049c7b5f9920dd877012233262425f28076896"
   },
   "/templates/lounge-chair-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "bd7902428b23f2492d567e33957f86d493c7727b4c2a0773546c15f9fc515fa4"
   },
   "/templates/media-wall-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "4510076b3bef59055fe2885f59da5baba5a85b3eebe46929d380c9e1ac4e6861"
   },
   "/templates/microwave-shelf-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "69c6337d78a4d61c085137c35919810d863d927a6215c12e47abc0277ef04296"
   },
   "/templates/miter-saw-stand-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "079623377f9570dc45f9f26d4085ee2e36604744a5b98f98511e01a9f00b7b26"
   },
   "/templates/mobile-workbench-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "7212c5d20d742362beb8347d95d4cdab3270687674c4b629841c81ec6de39205"
   },
   "/templates/monitor-riser-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "af671473079195d7b263f8246c45648993b477da352858558ef04bd92c0b1c6b"
   },
   "/templates/mudroom-bench-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "41cf9a9a7a0ae57acfe29a4694506a519c5949332863fc3276d320f389501cde"
   },
   "/templates/nightstand-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "caa04d891569b25906002da1ccfab7eb36754d88e601fd9f94d000df94bbd02a"
   },
   "/templates/outdoor-storage-box-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "7c96cf52e368e7811c7cc48aee674d19db77c7783cddb32fa8e5ef0f104000b7"
   },
   "/templates/pantry-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "339ffc0357b0e985e6bef8d47141e3d809bdfa5138e3cc2f871ab6953a9d209c"
   },
   "/templates/pegboard-organizer-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "b3dad4a868d8213798ca1c047f696a5bef42576645f4c1aa69e8b94c5a908910"
   },
   "/templates/picnic-table-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "47251d9c2c4139ca3fc0166d1082c9383dd185c4dd267133830e221c3656114c"
   },
   "/templates/planter-box-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "a7d91f75ce0d22513a474712f5603819e56da87f6ee06b79fa365a31d90ef760"
   },
   "/templates/plywood-chair-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "0d901117b09915753f48ef6387fa72f11e4748fc2868f449815dda87011feead"
   },
   "/templates/printer-stand-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "931475d5d40117d879fe69d9d577072e24748ba1b84e5e09744838d658cfd2d3"
   },
   "/templates/raised-garden-bed-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "d23f5d10b186971caf2118e42b41988bbd46e1863d05bad698bb2fa6478fed88"
   },
   "/templates/record-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "d1e25f9c97174748b4710fe1b58d8fb3f8856e97348b952063af87595b3c46d3"
   },
   "/templates/rolling-cart-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "8c42dffdf2f9f2f28f18107141d988d43026be4282cf39c59efa8e7669ed6052"
   },
   "/templates/rolling-pantry-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "25b31b4953d94a6f2bfb17b44379f2a84ed323f8badd51aca4a76ec43643d4ef"
   },
   "/templates/router-table-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "92e6bc0ea59148f541f2a2c56ec1d8c8e76c4b6a35d44ade1421b0f1b5543763"
   },
   "/templates/sanding-station-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "411ea15f8b5ed137fec69acb5e8713fdf3fd3153485ea6779f71a0acdf10934c"
   },
   "/templates/sewing-table-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "5847a6f3c9d13b3d873c1ec1600ce08facc06679a900151230f6efe3768e5ee9"
   },
   "/templates/sheet-goods-storage-cart-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "59b68b79e9d1be5c2576c4644c6e192a4a7d47b92e92104f22eb56f284347bd1"
   },
   "/templates/shoe-rack-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "1af5dd1de45f5bdbe703659e669044cf72e941483c315bb02d913c231f27ad92"
   },
   "/templates/shop-storage-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "63e3ce255aaead458d9f854d578595b68602f14a513d5121857514eccef61764"
   },
   "/templates/small-parts-drawer-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "909ad00d204b63a4e0b54b9740d98375a51fde053ea7745ec54f6064b55f1e02"
   },
   "/templates/storage-bench-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "0ef101d6c39772eee058779bea27f9fe43de6bc0eeea07376cf4a5ffefa001dc"
   },
   "/templates/tool-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "e25d5aacdcbd2f536b9551d768f2b24bf4b19759c7ebbbc86d57211bf412bbae"
   },
   "/templates/toy-box-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "e9b7fe16cc7266e6a8bc843f8754e9f8c5799502865fd2d70bff17627fcc64ce"
   },
   "/templates/tv-stand-cut-list/": {
@@ -7104,23 +7252,23 @@
     "hash": "e5cd82462b8e1f23db3922b018e06aa052526b47ad3f736f4567f358282e3086"
   },
   "/templates/under-bed-drawer-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "0bf67ee7e6a2ad8248117a07edfbaaf35c036dda568bce26b571e12ce5c20b1a"
   },
   "/templates/utility-closet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "a107843e4e9c079c9390198bb03aca0e63c3255eb0945b9e7952068e7459c775"
   },
   "/templates/wall-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "32c43d72eab6c2b532708f0e07c36c595c77b2514d9066ac3dbb3742c6b72e1f"
   },
   "/templates/wall-garage-cabinet-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "c7d2d3dfd342abcd73734cb62e5823f8d1ba7941c8afecb1ee8b699195bc9f77"
   },
   "/templates/window-seat-cut-list/": {
-    "lastmod": "2026-07-17",
+    "lastmod": "2026-07-19",
     "hash": "a29276174b16ee1f9ef0856cb835b8d7b2dd3f7517d42b4489c6d40d732261a0"
   },
   "/templates/workbench-cut-list/": {

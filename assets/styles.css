@@ -10158,3 +10158,64 @@ tr:last-child td {
   .research-card-grid,
   .research-metrics { grid-template-columns: 1fr; }
 }
+
+/* Downloadable cut-list examples and generated sheet layouts. */
+.example-shell { max-width: 1120px; }
+.example-article,
+.example-article section { min-width: 0; }
+.example-card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.example-card p strong { color: var(--ink); }
+.example-layout-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #f8f7f2;
+}
+.example-layout {
+  display: block;
+  width: 100%;
+  min-width: 620px;
+  height: auto;
+}
+.example-layout-sheet {
+  fill: #fffdf8;
+  stroke: #59655b;
+  stroke-width: 2;
+}
+.example-layout-part {
+  stroke: #59655b;
+  stroke-width: 1.25;
+}
+.example-layout text {
+  fill: #263329;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 850;
+  pointer-events: none;
+}
+.example-layout .example-layout-size {
+  fill: #59655b;
+  font-size: 10px;
+  font-weight: 750;
+}
+.example-layout .example-layout-sheet-label {
+  fill: var(--accent);
+  font-size: 14px;
+  font-weight: 900;
+}
+.example-article code,
+.example-article .button {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.example-article .button {
+  white-space: normal;
+  text-align: center;
+}
+@media (max-width: 760px) {
+  .example-card-grid { grid-template-columns: 1fr; }
+}

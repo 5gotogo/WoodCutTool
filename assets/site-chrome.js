@@ -119,6 +119,7 @@
 
     const resources = [
       { href: "/learn/", icon: "LN", title: "Learn", description: "Workflows for planning cuts, stairs, tile, and materials." },
+      { href: "/examples/", icon: "EX", title: "Cut list examples", description: "Real parts, plywood layouts, sheet counts, and CSV downloads." },
       { href: "/blog/", icon: "BG", title: "Blog", description: "Project guides, app workflows, and planning examples." },
       { href: "/compare/", icon: "CP", title: "Compare", description: "Tool and material comparisons before choosing a path." },
       { href: "/templates/", icon: "TP", title: "Templates", description: "Reusable planning starts for common shop projects." },
@@ -149,7 +150,8 @@
       columns: [
         { title: "Woodworking", links: [
           { href: "/learn/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut lists, cabinets, lumber, and shop planning." },
-          { href: "/learn/plywood/", icon: "PW", title: "Plywood hub", description: "Sheet count, kerf, grain, layout, and waste." }
+          { href: "/learn/plywood/", icon: "PW", title: "Plywood hub", description: "Sheet count, kerf, grain, layout, and waste." },
+          { href: "/examples/", icon: "EX", title: "Cut list examples", description: "Download project parts and inspect modeled layouts." }
         ] },
         { title: "Construction", links: [
           { href: "/learn/stairs/", icon: "ST", title: "Stairs", description: "Rise, run, tread, stringer, and angle guides." },
@@ -258,6 +260,7 @@
     const resources = [
       { href: "/about/", label: "About & editorial process" },
       { href: "/research/", label: "Research & datasets" },
+      { href: "/examples/", label: "Cut list examples" },
       { href: "/learn/", label: "Learning hub" },
       { href: "/templates/", label: "Templates" },
       { href: "/compare/", label: "Comparisons" },

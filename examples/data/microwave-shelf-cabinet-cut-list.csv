@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Microwave shelf cabinet","Cabinets","Sides","24","16","2","96","48","0.125","1","60.596","1","60.596","/templates/microwave-shelf-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Microwave shelf cabinet","Cabinets","Top and bottom","30","15.25","2","96","48","0.125","1","60.596","1","60.596","/templates/microwave-shelf-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Microwave shelf cabinet","Cabinets","Shelf layers","28.5","15.25","2","96","48","0.125","1","60.596","1","60.596","/templates/microwave-shelf-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Microwave shelf cabinet","Cabinets","Back rails","30","4","2","96","48","0.125","1","60.596","1","60.596","/templates/microwave-shelf-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

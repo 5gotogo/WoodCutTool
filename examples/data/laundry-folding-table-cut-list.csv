@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Laundry folding table","Furniture","Top layers","48","24","2","96","48","0.125","2","53.564","2","53.564","/templates/laundry-folding-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Laundry folding table","Furniture","Side panels","34.5","22.5","2","96","48","0.125","2","53.564","2","53.564","/templates/laundry-folding-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Laundry folding table","Furniture","Lower shelf","45","20","1","96","48","0.125","2","53.564","2","53.564","/templates/laundry-folding-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Laundry folding table","Furniture","Back stretcher","45","4","1","96","48","0.125","2","53.564","2","53.564","/templates/laundry-folding-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

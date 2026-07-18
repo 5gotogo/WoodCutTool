@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Miter saw stand","Shop","Top wings","30","16","2","96","48","0.125","2","42.879","2","42.879","/templates/miter-saw-stand-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Miter saw stand","Shop","Saw deck","24","16","1","96","48","0.125","2","42.879","2","42.879","/templates/miter-saw-stand-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Miter saw stand","Shop","Leg panels","28.5","15.25","4","96","48","0.125","2","42.879","2","42.879","/templates/miter-saw-stand-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Miter saw stand","Shop","Shelves","28.5","15.25","2","96","48","0.125","2","42.879","2","42.879","/templates/miter-saw-stand-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

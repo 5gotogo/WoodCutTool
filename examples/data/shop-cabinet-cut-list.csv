@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Shop storage cabinet","Cabinets","Sides","72","20","2","96","48","0.125","3","67.687","4","50.765","/templates/shop-storage-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Shop storage cabinet","Cabinets","Top and bottom","36","18.5","2","96","48","0.125","3","67.687","4","50.765","/templates/shop-storage-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Shop storage cabinet","Cabinets","Shelves","34.5","18.5","4","96","48","0.125","3","67.687","4","50.765","/templates/shop-storage-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Shop storage cabinet","Cabinets","Back","72","36","1","96","48","0.125","3","67.687","4","50.765","/templates/shop-storage-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

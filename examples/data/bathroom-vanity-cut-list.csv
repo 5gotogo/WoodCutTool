@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Bathroom vanity","Cabinets","Sides","30","21","2","96","48","0.125","1","58.260","1","58.260","/templates/bathroom-vanity-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Bathroom vanity","Cabinets","Bottom","30","20.25","1","96","48","0.125","1","58.260","1","58.260","/templates/bathroom-vanity-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Bathroom vanity","Cabinets","Shelf","28.5","20.25","1","96","48","0.125","1","58.260","1","58.260","/templates/bathroom-vanity-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Bathroom vanity","Cabinets","Back rails","30","4","2","96","48","0.125","1","58.260","1","58.260","/templates/bathroom-vanity-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

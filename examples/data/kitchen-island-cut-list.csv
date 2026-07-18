@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Kitchen island","Cabinets","End panels","34.5","24","2","96","48","0.125","2","49.837","2","49.837","/templates/kitchen-island-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Kitchen island","Cabinets","Bottom","46.5","22.5","1","96","48","0.125","2","49.837","2","49.837","/templates/kitchen-island-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Kitchen island","Cabinets","Dividers","33.75","22.5","2","96","48","0.125","2","49.837","2","49.837","/templates/kitchen-island-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Kitchen island","Cabinets","Back rails","46.5","4","2","96","48","0.125","2","49.837","2","49.837","/templates/kitchen-island-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

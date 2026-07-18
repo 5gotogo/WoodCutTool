@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Console table","Furniture","Top","48","14","1","96","48","0.125","1","46.973","1","46.973","/templates/console-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Console table","Furniture","Sides","30","12.5","2","96","48","0.125","1","46.973","1","46.973","/templates/console-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Console table","Furniture","Lower shelf","45","12.5","1","96","48","0.125","1","46.973","1","46.973","/templates/console-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Console table","Furniture","Back stretcher","45","4","1","96","48","0.125","1","46.973","1","46.973","/templates/console-table-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Record cabinet","Furniture","Sides","30","16","2","96","48","0.125","2","56.506","2","56.506","/templates/record-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Record cabinet","Furniture","Top and bottom","58.5","15.25","2","96","48","0.125","2","56.506","2","56.506","/templates/record-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Record cabinet","Furniture","Dividers","14.5","15.25","3","96","48","0.125","2","56.506","2","56.506","/templates/record-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Record cabinet","Furniture","Back","60","30","1","96","48","0.125","2","56.506","2","56.506","/templates/record-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

@@ -142,5 +142,9 @@ await Promise.all(templates.map(async (template) => {
   await mkdir(dirname(output), { recursive: true });
   await writeFile(output, page(template));
 }));
-await writeFile(resolve(root, "templates", "index.html"), hub());
+const hubHtml = hub().replace(
+  '<section class="template-feature-section">',
+  '<section class="research-note"><h2>See a calculated cut list before you edit</h2><p>Open the <a href="/examples/">Cut List Examples library</a> to inspect real part rows, modeled 4×8 sheet counts, material yield, rotation comparisons, layout diagrams, and downloadable CSV files for 36 of these projects.</p></section><section class="template-feature-section">'
+);
+await writeFile(resolve(root, "templates", "index.html"), hubHtml);
 console.log(`Generated ${templates.length} template pages and refreshed templates hub on ${today}.`);

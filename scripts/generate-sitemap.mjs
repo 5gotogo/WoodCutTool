@@ -160,6 +160,10 @@ function sitemapMeta(route) {
     return { changefreq: "weekly", priority: "0.93" };
   }
 
+  if (route === "/examples/") {
+    return { changefreq: "weekly", priority: "0.92" };
+  }
+
   if (route === "/glossary/") {
     return { changefreq: "weekly", priority: "0.9" };
   }
@@ -208,6 +212,10 @@ function sitemapMeta(route) {
     return { changefreq: "monthly", priority: "0.82" };
   }
 
+  if (route.startsWith("/examples/")) {
+    return { changefreq: "monthly", priority: "0.81" };
+  }
+
   if (route.startsWith("/glossary/")) {
     return { changefreq: "monthly", priority: "0.76" };
   }
@@ -248,6 +256,7 @@ function sortRoutes(routes) {
     "/",
     "/tools/",
     "/learn/",
+    "/examples/",
     "/glossary/",
     "/apps/",
     "/apps/cutlist/",
@@ -358,7 +367,7 @@ function sitemapGroup(route) {
   if (route.startsWith("/templates/")) return "templates";
   if (route.startsWith("/blog/")) return "blog";
   if (route.startsWith("/apps/")) return "apps";
-  if (route.startsWith("/compare/") || route.startsWith("/glossary/") || route.startsWith("/wood/") || route.startsWith("/research/")) return "resources";
+  if (route.startsWith("/compare/") || route.startsWith("/glossary/") || route.startsWith("/wood/") || route.startsWith("/research/") || route.startsWith("/examples/")) return "resources";
   return "pages";
 }
 

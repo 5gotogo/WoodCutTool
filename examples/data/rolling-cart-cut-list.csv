@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Rolling utility cart","Shop","Top","30","18","1","96","48","0.125","1","58.203","1","58.203","/templates/rolling-cart-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Rolling utility cart","Shop","Shelves","30","18","2","96","48","0.125","1","58.203","1","58.203","/templates/rolling-cart-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Rolling utility cart","Shop","Sides","28.5","18","2","96","48","0.125","1","58.203","1","58.203","/templates/rolling-cart-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Rolling utility cart","Shop","Caster blocks","3","3","4","96","48","0.125","1","58.203","1","58.203","/templates/rolling-cart-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

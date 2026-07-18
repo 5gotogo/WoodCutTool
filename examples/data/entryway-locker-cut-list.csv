@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Entryway locker","Storage","Sides","72","18","2","96","48","0.125","2","67.554","2","67.554","/templates/entryway-locker-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Entryway locker","Storage","Top and bottom","24","16.5","2","96","48","0.125","2","67.554","2","67.554","/templates/entryway-locker-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Entryway locker","Storage","Shelves","22.5","16.5","3","96","48","0.125","2","67.554","2","67.554","/templates/entryway-locker-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Entryway locker","Storage","Back","72","24","1","96","48","0.125","2","67.554","2","67.554","/templates/entryway-locker-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

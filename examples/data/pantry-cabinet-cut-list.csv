@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Pantry cabinet","Cabinets","Sides","84","16","2","96","48","0.125","3","58.914","3","58.914","/templates/pantry-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Pantry cabinet","Cabinets","Top and bottom","30","14.5","2","96","48","0.125","3","58.914","3","58.914","/templates/pantry-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Pantry cabinet","Cabinets","Shelves","28.5","14.5","5","96","48","0.125","3","58.914","3","58.914","/templates/pantry-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Pantry cabinet","Cabinets","Back","84","30","1","96","48","0.125","3","58.914","3","58.914","/templates/pantry-cabinet-cut-list/","2026-07-17","woodcuttool-maxrects-v1"

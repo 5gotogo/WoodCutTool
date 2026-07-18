@@ -1,0 +1,5 @@
+"project","category","part_group","length_in","width_in","quantity","sheet_length_in","sheet_width_in","kerf_in","rotation_allowed_sheets","rotation_allowed_yield_pct","grain_locked_sheets","grain_locked_yield_pct","source_template","benchmark_version","method"
+"Sheet goods storage cart","Shop","Base layers","48","30","2","96","48","0.125","4","42.535","5","34.028","/templates/sheet-goods-storage-cart-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Sheet goods storage cart","Shop","Dividers","48","24","3","96","48","0.125","4","42.535","5","34.028","/templates/sheet-goods-storage-cart-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Sheet goods storage cart","Shop","End panels","30","24","2","96","48","0.125","4","42.535","5","34.028","/templates/sheet-goods-storage-cart-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
+"Sheet goods storage cart","Shop","Caster blocks","4","4","4","96","48","0.125","4","42.535","5","34.028","/templates/sheet-goods-storage-cart-cut-list/","2026-07-17","woodcuttool-maxrects-v1"
