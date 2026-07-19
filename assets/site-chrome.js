@@ -119,6 +119,7 @@
 
     const resources = [
       { href: "/learn/", icon: "LN", title: "Learn", description: "Workflows for planning cuts, stairs, tile, and materials." },
+      { href: "/troubleshooting/", icon: "FX", title: "Troubleshooting", description: "Diagnose layout, cutting, cabinet, material, and workflow failures." },
       { href: "/examples/", icon: "EX", title: "Cut list examples", description: "Real parts, plywood layouts, sheet counts, and CSV downloads." },
       { href: "/blog/", icon: "BG", title: "Blog", description: "Project guides, app workflows, and planning examples." },
       { href: "/compare/", icon: "CP", title: "Compare", description: "Tool and material comparisons before choosing a path." },
@@ -151,6 +152,7 @@
         { title: "Woodworking", links: [
           { href: "/learn/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut lists, cabinets, lumber, and shop planning." },
           { href: "/learn/plywood/", icon: "PW", title: "Plywood hub", description: "Sheet count, kerf, grain, layout, and waste." },
+          { href: "/troubleshooting/", icon: "FX", title: "Troubleshooting", description: "Diagnose fit, cutting, cabinet, and material failures." },
           { href: "/examples/", icon: "EX", title: "Cut list examples", description: "Download project parts and inspect modeled layouts." }
         ] },
         { title: "Construction", links: [
@@ -260,6 +262,7 @@
     const resources = [
       { href: "/about/", label: "About & editorial process" },
       { href: "/research/", label: "Research & datasets" },
+      { href: "/troubleshooting/", label: "Troubleshooting" },
       { href: "/examples/", label: "Cut list examples" },
       { href: "/learn/", label: "Learning hub" },
       { href: "/templates/", label: "Templates" },

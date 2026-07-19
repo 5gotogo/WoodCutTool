@@ -10219,3 +10219,100 @@ tr:last-child td {
 @media (max-width: 760px) {
   .example-card-grid { grid-template-columns: 1fr; }
 }
+
+/* Answer-first woodworking troubleshooting library. */
+.troubleshooting-shell { max-width: 1120px; }
+.troubleshooting-article,
+.troubleshooting-article section { min-width: 0; }
+.troubleshooting-category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0 12px;
+}
+.troubleshooting-category-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid rgba(47, 111, 78, 0.25);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 850;
+  text-decoration: none;
+}
+.troubleshooting-category-nav a:hover { border-color: var(--accent); }
+.troubleshooting-category-nav span {
+  min-width: 24px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: rgba(47, 111, 78, 0.12);
+  color: var(--accent);
+  text-align: center;
+}
+.troubleshooting-answer,
+.troubleshooting-stop,
+.troubleshooting-symptom {
+  margin: 28px 0;
+  padding: 22px;
+  border: 1px solid rgba(47, 111, 78, 0.24);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(238, 243, 236, 0.94), rgba(255, 252, 242, 0.96));
+}
+.troubleshooting-answer h2,
+.troubleshooting-stop h2 { margin-top: 6px; }
+.troubleshooting-symptom strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--accent-2);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.troubleshooting-symptom p { margin: 0; font-size: 1.08rem; }
+.troubleshooting-cause-grid,
+.troubleshooting-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 22px 0;
+}
+.troubleshooting-cause {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.troubleshooting-cause span {
+  color: var(--accent-2);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.troubleshooting-cause h3 { margin: 8px 0; }
+.troubleshooting-cause p { margin: 0; }
+.troubleshooting-card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.troubleshooting-card p { color: var(--muted); }
+.troubleshooting-table { min-width: 980px; }
+.troubleshooting-table th:first-child { width: 16%; }
+.troubleshooting-table td { min-width: 190px; vertical-align: top; }
+.troubleshooting-steps li,
+.troubleshooting-checklist li { margin-bottom: 14px; }
+.troubleshooting-steps strong { color: var(--ink); }
+.troubleshooting-stop { border-left: 5px solid #9d5c35; }
+.troubleshooting-link-grid .research-card h2 { font-size: 1.12rem; }
+.troubleshooting-article code,
+.troubleshooting-article .button {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.troubleshooting-article .button { white-space: normal; text-align: center; }
+@media (max-width: 760px) {
+  .troubleshooting-cause-grid,
+  .troubleshooting-link-grid,
+  .troubleshooting-card-grid { grid-template-columns: 1fr; }
+  .troubleshooting-category-nav a { flex: 1 1 140px; justify-content: space-between; }
+}

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://woodcuttool.com/troubleshooting/</loc><lastmod>2026-07-19</lastmod><changefreq>weekly</changefreq><priority>0.92</priority></url>
   <url><loc>https://woodcuttool.com/examples/</loc><lastmod>2026-07-19</lastmod><changefreq>weekly</changefreq><priority>0.92</priority></url>
   <url><loc>https://woodcuttool.com/glossary/</loc><lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://woodcuttool.com/compare/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -319,6 +320,41 @@
   <url><loc>https://woodcuttool.com/research/plywood-sheet-size-comparison/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/research/project-kerf-sensitivity-matrix/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/research/saw-kerf-sheet-count-impact/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/appliance-opening-too-small/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/base-cabinets-uneven-floor/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/cabinet-back-will-not-fit/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/cabinet-box-not-square/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/cabinet-doors-collide/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/cabinet-filler-too-narrow/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/cut-list-missing-hardware-clearance/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/cut-list-quantity-wrong/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/drawer-box-too-tight/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/drawer-fronts-uneven/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/duplicate-cut-list-rows/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/edge-banding-changes-part-fit/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/first-cut-leaves-unusable-strip/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/grain-direction-wrong-after-optimization/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/labels-do-not-match-parts/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/large-part-cannot-fit-5x5-sheet/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/material-order-missing-parts/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/melamine-chips-while-cutting/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/mixed-units-in-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/offcuts-too-fragmented/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/one-sheet-claim-does-not-fit/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/optimizer-adds-extra-sheet/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/panel-rotation-breaks-grain-match/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/parts-undersized-after-cutting/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/plywood-delaminates-at-cut/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/plywood-edge-trim-removes-fit/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/plywood-layout-does-not-fit/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/plywood-waste-stays-high/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/repeated-parts-different-sizes/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/revision-dimensions-changed/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/sheet-count-changes-with-kerf/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/shelf-sagging/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/table-saw-repeat-cuts-drift/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/track-saw-cut-not-square/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/troubleshooting/wall-cabinets-not-level/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
   <url><loc>https://woodcuttool.com/wood/</loc><lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.91</priority></url>
   <url><loc>https://woodcuttool.com/wood/acacia/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.78</priority></url>
   <url><loc>https://woodcuttool.com/wood/african-mahogany/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.78</priority></url>
