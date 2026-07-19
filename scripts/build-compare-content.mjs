@@ -25,6 +25,7 @@ const compareVisuals = {
   Planning: ["/assets/images/compare/compare-planning.webp", "Paper cut plan beside a tablet-based woodworking planning workflow"],
   Calculators: ["/assets/images/compare/compare-planning.webp", "Paper measurements and digital calculators used for project planning"],
   Cabinets: ["/assets/images/tools/tools-cabinet.webp", "Cabinet panels, drawer parts, and hardware organized for assembly"],
+  Hardware: ["/assets/images/tools/tools-cabinet.webp", "Cabinet screws, drawer hardware, and plywood joinery parts organized for comparison"],
   Tile: ["/assets/images/learn/tile-layout.webp", "Tile pieces arranged around a measured room layout"],
   QuiltFit: ["/assets/images/learn/quilt-planning.webp", "Fabric pieces arranged for a quilt layout comparison"]
 };
@@ -147,8 +148,47 @@ const comparisonDefinitions = [
   ["straight-lay-vs-diagonal-tile", "Tile", "Straight Lay vs Diagonal Tile", "Compare straight-lay and diagonal tile patterns for waste, layout complexity, room appearance, cuts, and cost.", "Straight lay", "Diagonal tile", "Use straight lay for lower waste, easier alignment, and cleaner installation. Use diagonal tile when visual movement is worth more cuts and a higher waste allowance.", "budget installs, simple rooms, and lower waste", "feature floors, out-of-square rooms, and stronger visual movement", [["Waste", "Lower", "Higher"], ["Cuts", "Simpler edge cuts", "More angled cuts"], ["Look", "Calm grid", "More movement"], ["Layout", "Easier", "More planning"], ["Best use", "Most rooms", "Selected feature areas"]], "/blog/diagonal-tile-layout-waste/", "/tile-calculator/"],
   ["wideback-vs-pieced-quilt-backing", "QuiltFit", "Wideback vs Pieced Quilt Backing", "Compare wideback and pieced quilt backing for yardage, seams, cost, directional prints, longarm prep, and leftover fabric.", "Wideback backing", "Pieced backing", "Use wideback when fewer seams and faster longarm prep matter. Use pieced backing when fabric choice, leftover use, or design control matters more.", "fast finishing, large quilts, and fewer backing seams", "stash use, design backs, directional control, and smaller fabric widths", [["Seams", "Few or none", "Planned seams"], ["Fabric choice", "More limited", "Very flexible"], ["Prep time", "Faster", "More piecing"], ["Cost", "Can be efficient", "Depends on fabric choices"], ["Best use", "Clean utility backing", "Creative or stash backing"]], "/blog/quilt-backing-wideback-vs-pieced/", "/apps/quiltfit/"],
   ["jelly-roll-vs-layer-cake-quilt-planning", "QuiltFit", "Jelly Roll vs Layer Cake Quilt Planning", "Compare jelly rolls and layer cakes for quilt planning, fabric yield, block design, cutting speed, and leftover management.", "Jelly roll", "Layer cake", "Use jelly rolls for strip-based quilts and fast piecing. Use layer cakes for larger patch units, half-square triangles, and block layouts with more shape flexibility.", "strip quilts, rail fence designs, and fast repetitive piecing", "block quilts, HSTs, large squares, and flexible layouts", [["Precut shape", "2.5 inch strips", "10 inch squares"], ["Speed", "Fast for strips", "Fast for blocks"], ["Design fit", "Linear patterns", "Patch and block patterns"], ["Waste", "Ends and strip leftovers", "Trimmed squares and triangles"], ["Best planning tool", "Strip count", "Block count"]], "/blog/quiltfit-precut-bundle-planning-jelly-roll-layer-cake/", "/apps/quiltfit/"],
-  ["quiltfit-vs-graph-paper-for-quilt-planning", "QuiltFit", "QuiltFit vs Graph Paper For Quilt Planning", "Compare QuiltFit and graph paper for quilt layout, fabric estimates, color studies, shopping lists, and project tracking.", "QuiltFit", "Graph paper", "Use graph paper for quick sketching and visual exploration. Use QuiltFit when the design needs fabric roles, yardage, shopping lists, saved revisions, and progress tracking.", "yardage-aware planning, saved options, and project records", "rough sketches, early ideas, and low-tech color blocking", [["Speed to sketch", "Fast after setup", "Very fast"], ["Yardage", "Built into workflow", "Manual math"], ["Revisions", "Saved and editable", "Redraw or annotate"], ["Shopping list", "Structured", "Manual"], ["Best stage", "Project planning", "Idea capture"]], "/apps/compare/quiltfit-vs-graph-paper/", "/apps/quiltfit/"]
+  ["quiltfit-vs-graph-paper-for-quilt-planning", "QuiltFit", "QuiltFit vs Graph Paper For Quilt Planning", "Compare QuiltFit and graph paper for quilt layout, fabric estimates, color studies, shopping lists, and project tracking.", "QuiltFit", "Graph paper", "Use graph paper for quick sketching and visual exploration. Use QuiltFit when the design needs fabric roles, yardage, shopping lists, saved revisions, and progress tracking.", "yardage-aware planning, saved options, and project records", "rough sketches, early ideas, and low-tech color blocking", [["Speed to sketch", "Fast after setup", "Very fast"], ["Yardage", "Built into workflow", "Manual math"], ["Revisions", "Saved and editable", "Redraw or annotate"], ["Shopping list", "Structured", "Manual"], ["Best stage", "Project planning", "Idea capture"]], "/apps/compare/quiltfit-vs-graph-paper/", "/apps/quiltfit/"],
+  ["batch-cutting-vs-part-by-part-cutting", "Planning", "Batch Cutting vs Part-by-Part Cutting", "Compare batch cutting and part-by-part cutting for repeated parts, setup changes, labeling, accuracy, revision risk, offcuts, and small-shop workflow.", "Batch cutting", "Part-by-part cutting", "Use batch cutting when a released cut list contains verified repeated parts and one stable setup can produce them consistently. Use part-by-part cutting when parts are unique, the design is still changing, or each piece needs individual fitting.", "released cabinet parts, repeated shelves, drawer components, rails, dividers, and production-style setups", "custom fitting, prototypes, one-off parts, field adjustments, and projects with unresolved dimensions", [["Setup strategy", "One verified setup produces a group", "Setup follows each individual part"], ["Repeat accuracy", "High after a first-article check", "Depends on repeated measuring"], ["Revision risk", "A wrong setup can affect the whole batch", "A mistake is more likely to stay isolated"], ["Labeling", "Requires batch IDs and quantity control", "Each part can be labeled immediately"], ["Best workflow", "Freeze, test one, then complete the batch", "Measure, cut, verify, and fit one part at a time"]], "/learn/table-saw-repeat-cut-workflow/", "/apps/cutlist/"],
+  ["applied-vs-captured-cabinet-backs", "Cabinets", "Applied vs Captured Cabinet Backs", "Compare applied and captured cabinet backs for dimensions, squaring, grooves, installation space, material thickness, assembly order, and cut-list planning.", "Applied cabinet backs", "Captured cabinet backs", "Use an applied back when fast assembly, easy squaring, and full interior dimensions matter. Use a captured back when a recessed edge, protected panel, and integrated cabinet construction justify the extra groove or rabbet planning.", "shop cabinets, simple boxes, fast assembly, easy replacement, and projects where a rear overlay is acceptable", "finished cabinets, recessed rear edges, protected panels, and construction designed around grooves or rabbets", [["Panel position", "Fastens over the rear case edges", "Fits inside grooves or rabbets"], ["Case depth", "Adds material behind the case", "Usually stays within the case envelope"], ["Machining", "Minimal edge machining", "Requires accurate grooves or rabbets"], ["Squaring", "Can square the box during fastening", "Requires the panel and joinery to seat accurately"], ["Cut-list effect", "Panel follows outside case size", "Panel follows the captured opening and groove depth"]], "/learn/cabinet-box-cut-list-basics/", "/templates/kitchen-cabinet-cut-list/"],
+  ["pocket-screws-vs-confirmat-screws", "Hardware", "Pocket Screws vs Confirmat Screws for Cabinets", "Compare pocket screws and confirmat screws for cabinet boxes, plywood and engineered panels, drilling, visibility, holding, assembly speed, and disassembly.", "Pocket screws", "Confirmat screws", "Use pocket screws when angled fastening can stay on a hidden face and a jig-based workflow suits plywood or solid-wood parts. Use confirmat screws when engineered-panel cabinet boxes are designed for straight, accurately predrilled fasteners.", "face frames, plywood cabinets, hidden interior fastening, shop fixtures, and builds already using a pocket-hole jig", "particleboard or MDF casework, straight panel-to-edge joints, knock-down access, and repeatable predrilled production", [["Fastener path", "Angled through a pocket", "Straight through a face into a panel edge"], ["Drilling", "Pocket-hole jig and matched bit", "Accurate stepped or pilot drilling"], ["Best material fit", "Plywood and solid-wood assemblies", "Engineered panels designed for confirmat joints"], ["Visibility", "Pocket remains on one face unless plugged", "Head remains visible unless covered"], ["Assembly control", "Clamping prevents joint shift", "Predrilling and alignment control the joint"]], "/blog/pocket-hole-joinery-for-plywood/", "/screw-size-finder/"]
 ];
+
+const freshComparisonSlugs = new Set([
+  "batch-cutting-vs-part-by-part-cutting",
+  "applied-vs-captured-cabinet-backs",
+  "pocket-screws-vs-confirmat-screws"
+]);
+
+const freshComparisonDetails = {
+  "batch-cutting-vs-part-by-part-cutting": {
+    eyebrow: "Release strategy",
+    title: "The real decision is when to freeze the setup",
+    paragraphs: [
+      "Batch cutting is not simply making several pieces at once. It is a controlled release decision. The drawing, material group, grain rule, finished dimension, and quantity must be stable before one fence or stop setting is allowed to produce the whole group. A verified first article protects the batch: measure it, check its reference edge and orientation, label it, and compare it with the current revision before cutting the remaining quantity.",
+      "Part-by-part cutting keeps each decision local. That is slower for repeated shelves or dividers, but useful while fitting an uneven opening, prototyping hardware clearance, or working through unique visible parts. The tradeoff is more measuring and more opportunities to reference from a different edge. A mixed workflow is often strongest: fit the uncertain part individually, approve its dimension, then batch only the repeated parts derived from that approved result."
+    ],
+    checks: ["Confirm the released revision and expanded quantity.", "Choose one reference face and edge for the group.", "Measure and label a first article before continuing.", "Stop the batch if the setup, stock, or design changes."]
+  },
+  "applied-vs-captured-cabinet-backs": {
+    eyebrow: "Dimension path",
+    title: "Back construction changes more than one panel size",
+    paragraphs: [
+      "An applied back usually follows the cabinet's outside width and height, then adds its thickness behind the case. That can be efficient in the shop because the back helps pull the box square while it is fastened. The installation drawing still needs to account for the added rear thickness, wall irregularity, hanging rails, service space, and any finished side that must conceal the back edge.",
+      "A captured back moves the calculation inside the case. Groove or rabbet position, depth, corner treatment, panel expansion, and assembly sequence all affect the finished back size. The side, top, bottom, nailer, and interior-depth decisions must be coordinated before optimization. Changing from applied to captured after the cut list is released is therefore a cabinet redesign, not a one-row panel edit. Dry-fit the case and back before glue locks the joinery."
+    ],
+    checks: ["Name the back method on the cabinet drawing.", "Calculate case depth from the finished installation envelope.", "Measure groove or rabbet geometry from one datum.", "Dry-fit and compare cabinet diagonals before permanent fastening."]
+  },
+  "pocket-screws-vs-confirmat-screws": {
+    eyebrow: "Fastener system",
+    title: "Choose the joint around the panel and drilling process",
+    paragraphs: [
+      "Pocket screws approach the joint at an angle from a drilled pocket. The method is fast and accessible with a jig, but the pocket needs a hidden or acceptable face, the work must be clamped against shift, and screw length must suit the real stock thickness. Edge quality, plywood voids, pilot geometry, and over-driving can all change holding performance, so a test joint in project offcut is more useful than a generic screw rule.",
+      "Confirmat screws approach a panel edge in a straight, deliberately predrilled joint. They are commonly associated with repeatable casework in particleboard, MDF, and other engineered panels, where the specified pilot and shank geometry matters. They do not turn inaccurate drilling into accurate cabinetry: the panels still need square edges and controlled hole location. Use the exact fastener manufacturer's drilling guidance, verify edge distance, and test the complete joint before releasing a cabinet batch."
+    ],
+    checks: ["Identify the actual panel core and finished thickness.", "Keep the drilling face and fastener head visible in the plan.", "Use the matched jig, bit, pilot, and screw specification.", "Build and inspect a test corner before production assembly."]
+  }
+};
 
 function articleJsonLd(article) {
   const visual = compareVisual(article.category);
@@ -160,8 +200,8 @@ function articleJsonLd(article) {
     url: `${siteUrl}/compare/${article.slug}/`,
     mainEntityOfPage: `${siteUrl}/compare/${article.slug}/`,
     image: `${siteUrl}${visual.src}`,
-    datePublished: "2026-07-02",
-    dateModified: "2026-07-02",
+    datePublished: freshComparisonSlugs.has(article.slug) ? "2026-07-19" : "2026-07-02",
+    dateModified: freshComparisonSlugs.has(article.slug) ? "2026-07-19" : "2026-07-02",
     inLanguage: "en",
     articleSection: article.category,
     author: { "@type": "Organization", name: "WoodCutTool Editorial Team", url: `${siteUrl}/about/` },
@@ -308,6 +348,7 @@ const newComparisons = comparisonDefinitions.map(makeArticle);
 function comparisonPage(article) {
   const canonical = `${siteUrl}/compare/${article.slug}/`;
   const visual = compareVisual(article.category);
+  const freshDetail = freshComparisonDetails[article.slug];
   const [priceFactor, priceA, priceB] = priceRow(article);
   const ratingsA = optionRatings(article, article.optionA);
   const ratingsB = optionRatings(article, article.optionB);
@@ -378,7 +419,13 @@ ${head({
         </div>
       </section>
 
-      <section class="comparison-section">
+${freshDetail ? `      <section class="comparison-section">
+        <div class="section-heading compact"><p class="eyebrow">${escapeHtml(freshDetail.eyebrow)}</p><h2>${escapeHtml(freshDetail.title)}</h2></div>
+        ${freshDetail.paragraphs.map((paragraph) => `<p class="comparison-copy">${escapeHtml(paragraph)}</p>`).join("\n        ")}
+        <div class="comparison-callout"><h3>Release checklist</h3><ul>${freshDetail.checks.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></div>
+      </section>
+
+` : ""}      <section class="comparison-section">
         <div class="section-heading compact"><p class="eyebrow">Pros and cons</p><h2>Tradeoffs by option.</h2></div>
         <div class="comparison-procon-grid">
           <article><h3>${escapeHtml(article.optionA)} pros</h3><ul>${prosFor(article, "a").map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul></article>

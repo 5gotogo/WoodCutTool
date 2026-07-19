@@ -9408,7 +9408,7 @@ tr:last-child td {
     width: min(calc(100vw - 32px), var(--max));
     max-height: calc(100vh - 92px);
     overflow: auto;
-    display: grid;
+    display: grid !important;
     grid-template-columns: minmax(260px, 0.92fr) minmax(0, 1.55fr);
     gap: 26px;
     padding: 24px;
@@ -9450,7 +9450,8 @@ tr:last-child td {
 
 @media (max-width: 979px) {
   .nav.nav-mega-open .nav-links {
-    overflow: visible;
+    overflow-x: auto;
+    overflow-y: visible;
   }
 
   .nav-menu-item.is-open .mega-menu {

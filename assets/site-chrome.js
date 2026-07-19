@@ -157,11 +157,15 @@
         ] },
         { title: "Construction", links: [
           { href: "/learn/stairs/", icon: "ST", title: "Stairs", description: "Rise, run, tread, stringer, and angle guides." },
-          { href: "/learn/deck/", icon: "DK", title: "Deck", description: "Boards, stairs, finish, and material planning." }
+          { href: "/learn/deck/", icon: "DK", title: "Deck", description: "Boards, stairs, finish, and material planning." },
+          { href: "/learn/tile-calculator-inputs-explained/", icon: "TI", title: "Tile planning", description: "Measurements, layout, grout, pattern, boxes, and waste." },
+          { href: "/learn/material-estimation-for-carpentry/", icon: "ME", title: "Material estimates", description: "Quantities, stock groups, waste, cost, and purchasing checks." }
         ] },
         { title: "Outdoor", links: [
           { href: "/learn/fence/", icon: "FN", title: "Fence", description: "Posts, pickets, spacing, concrete, and finish." },
-          { href: "/learn/roofing/", icon: "RF", title: "Roofing", description: "Pitch, rafter geometry, area, and shingles." }
+          { href: "/learn/roofing/", icon: "RF", title: "Roofing", description: "Pitch, rafter geometry, area, and shingles." },
+          { href: "/learn/playhouse-plywood-material-guide/", icon: "PH", title: "Playhouse projects", description: "Plywood, openings, weather exposure, safety, and material planning." },
+          { href: "/examples/outdoor-storage-box-cut-list/", icon: "OS", title: "Outdoor storage", description: "Parts, sheet layout, drainage, ventilation, and weather-ready planning." }
         ] }
       ]
     };
@@ -189,14 +193,17 @@
       columns: [
         { title: "Cut-list methods", links: [
           { href: "/compare/best-way-to-create-a-wood-cut-list/", icon: "CL", title: "Create a cut list", description: "Compare practical cut-list workflows." },
-          { href: "/compare/cut-list-template-vs-cut-list-calculator/", icon: "VS", title: "Template vs calculator", description: "Choose a reusable start or live calculation." }
+          { href: "/compare/cut-list-template-vs-cut-list-calculator/", icon: "VS", title: "Template vs calculator", description: "Choose a reusable start or live calculation." },
+          { href: "/compare/batch-cutting-vs-part-by-part-cutting/", icon: "BT", title: "Batch vs one-by-one", description: "Compare repeat accuracy, setup time, labels, and revision risk." }
         ] },
         { title: "Cabinets", links: [
           { href: "/compare/face-frame-vs-frameless-cabinets/", icon: "CF", title: "Face frame vs frameless", description: "See how construction changes cabinet parts." },
-          { href: "/compare/inset-vs-overlay-cabinet-doors/", icon: "DR", title: "Inset vs overlay doors", description: "Compare door sizing and reveal choices." }
+          { href: "/compare/inset-vs-overlay-cabinet-doors/", icon: "DR", title: "Inset vs overlay doors", description: "Compare door sizing and reveal choices." },
+          { href: "/compare/applied-vs-captured-cabinet-backs/", icon: "BK", title: "Applied vs captured backs", description: "Compare case depth, grooves, squaring, and assembly order." }
         ] },
         { title: "Hardware", links: [
           { href: "/compare/drawer-slides-side-mount-vs-undermount/", icon: "DS", title: "Drawer slide types", description: "Compare clearances and installation tradeoffs." },
+          { href: "/compare/pocket-screws-vs-confirmat-screws/", icon: "SC", title: "Pocket vs confirmat screws", description: "Compare drilling, panel fit, visibility, and assembly control." },
           { href: "/compare/", icon: "CP", title: "All comparisons", description: "Browse every comparison page.", exact: true }
         ] }
       ]

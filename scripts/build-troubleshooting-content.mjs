@@ -85,6 +85,7 @@ function pageShell({ title, description, route, schemas, body, type = "article" 
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
   <link rel="stylesheet" href="/assets/styles.css">
   <script defer src="/assets/site-chrome.js"></script>
+  <script defer src="/assets/app.js"></script>
   ${schemas.map(jsonLd).join("\n  ")}
 </head>
 <body>
