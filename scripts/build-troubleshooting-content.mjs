@@ -6,6 +6,7 @@ import { troubleshootingIssues } from "./troubleshooting-data.mjs";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
 const publishedDate = "2026-07-19";
+const dateFor = (entry) => entry.publishedDate || publishedDate;
 
 const esc = (value) => String(value)
   .replaceAll("&", "&amp;")
@@ -87,6 +88,7 @@ function pageShell({ title, description, route, schemas, body, type = "article" 
   <script defer src="/assets/site-chrome.js"></script>
   <script defer src="/assets/app.js"></script>
   ${schemas.map(jsonLd).join("\n  ")}
+  <style>.mega-menu{display:none}</style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -131,8 +133,8 @@ function articleSchema(entry, description, faqs) {
     description,
     url: `${siteUrl}${route}`,
     mainEntityOfPage: `${siteUrl}${route}`,
-    datePublished: publishedDate,
-    dateModified: publishedDate,
+    datePublished: dateFor(entry),
+    dateModified: dateFor(entry),
     author: { "@type": "Organization", name: "WoodCutTool Editorial Team", url: `${siteUrl}/about/` },
     publisher: { "@type": "Organization", name: "WoodCutTool", url: `${siteUrl}/` },
     proficiencyLevel: "Beginner to intermediate",
@@ -186,7 +188,7 @@ function issuePage(entry) {
       <p class="eyebrow">Troubleshooting · ${esc(entry.category)}</p>
       <h1>${esc(entry.title)}</h1>
       <p class="lead">${esc(entry.answer)}</p>
-      <p class="article-byline">Published ${publishedDate} by <a href="/about/">WoodCutTool Editorial Team</a> · Diagnostic workflow, not a substitute for machine, hardware, material, or building instructions</p>
+      <p class="article-byline">Published ${dateFor(entry)} by <a href="/about/">WoodCutTool Editorial Team</a> · Diagnostic workflow, not a substitute for machine, hardware, material, or building instructions</p>
 
       <section class="research-metrics" aria-label="Diagnostic summary">
         ${metric("Symptom", "1", "Start from the observed failure")}
@@ -258,7 +260,7 @@ const hubSchema = {
 
 const categoryNav = categoryOrder.map((category) => `<a href="#${category.toLowerCase()}">${esc(category)} <span>${troubleshootingIssues.filter((entry) => entry.category === category).length}</span></a>`).join("");
 const hubHtml = pageShell({
-  title: "Woodworking Troubleshooting: Diagnose 35 Problems",
+  title: `Woodworking Troubleshooting: Diagnose ${troubleshootingIssues.length} Problems`,
   description: hubDescription,
   route: "/troubleshooting/",
   type: "website",

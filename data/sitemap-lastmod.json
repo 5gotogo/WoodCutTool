@@ -12,8 +12,8 @@
     "hash": "26e48ed2a31b5559c272668306e53a8f0f6c4d77d185a3ec1a6243ae837b4c2b"
   },
   "/troubleshooting/": {
-    "lastmod": "2026-07-19",
-    "hash": "a49fd0de77313b3ca3e364cef4032569edbef04841be05d57f45589d96021617"
+    "lastmod": "2026-07-20",
+    "hash": "a558847b41179bb82804527e55d511d0c4bb728ebfd2a3f69b81dcb78cc00496"
   },
   "/examples/": {
     "lastmod": "2026-07-19",
@@ -7311,145 +7311,405 @@
     "lastmod": "2026-07-17",
     "hash": "82b7f3bacf14c9ad0abb9cdb8147ff1bb5de644d5a3486d7fe3009977afe9415"
   },
+  "/troubleshooting/adjustable-shelves-are-not-level/": {
+    "lastmod": "2026-07-20",
+    "hash": "976bd57228e4d504db5954440569fddce09461d4484baeeb675dd59b43ad5271"
+  },
+  "/troubleshooting/ambiguous-dimensions-in-cut-list/": {
+    "lastmod": "2026-07-20",
+    "hash": "e16c4d93d7f2b1e68c149f43cee9cd8c1ff1d99835c3dd8afe407fb24c2096c8"
+  },
   "/troubleshooting/appliance-opening-too-small/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "457dfc3e24b4847b3aa101cbebac37195f3a3438f2e2747d183c2da370db8570"
   },
   "/troubleshooting/base-cabinets-uneven-floor/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "617118b001128aa5bfb590b57780d748478d0b5b0d0148454e7f4edbc39d52b9"
   },
+  "/troubleshooting/build-sequence-blocks-assembly/": {
+    "lastmod": "2026-07-20",
+    "hash": "8e6015affeea9184997d3ff08bfaadd0add6b523e6af2b84f8ea9439c5a46c3d"
+  },
+  "/troubleshooting/cabinet-back-racks-the-box/": {
+    "lastmod": "2026-07-20",
+    "hash": "f2a050a34c63713e3ab80e25613e7ba5cb5063cebcd0fc44b8f0d8ec453c113b"
+  },
   "/troubleshooting/cabinet-back-will-not-fit/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "df28206e4cff51695ed1b7efde824b51cd8275a467000bc99b3d90238ff87d29"
   },
   "/troubleshooting/cabinet-box-not-square/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "10945e7b32943e46462169d733188ff13f8e52ffbe7f700a6b4e4fceeb0e23f0"
   },
   "/troubleshooting/cabinet-doors-collide/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "e01bd65483c90b59555562403265199418fa43d4201748fd769a96f58a5f10d0"
   },
+  "/troubleshooting/cabinet-doors-will-not-close/": {
+    "lastmod": "2026-07-20",
+    "hash": "87468d5606944b3ed8543d657cc9984697402821cce70549a26d34ae5de18c2c"
+  },
   "/troubleshooting/cabinet-filler-too-narrow/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "77bbc56486c48901ad93d848b5fd74204b7d22167e76c559805bf193756f3715"
   },
+  "/troubleshooting/cabinet-hinges-bottom-out/": {
+    "lastmod": "2026-07-20",
+    "hash": "261ff6462a7eed9a54c9a34f7679e67ae3a200530c047d53bf8e66accf47965d"
+  },
+  "/troubleshooting/cabinet-reveals-change-across-run/": {
+    "lastmod": "2026-07-20",
+    "hash": "c9b50ca56fe1ae11dedcc552e44cdafb500719d6f6e3152be1373ee5835e329e"
+  },
+  "/troubleshooting/cabinet-run-too-long-for-wall/": {
+    "lastmod": "2026-07-20",
+    "hash": "458d0a3610dbb42a019f0c455066e279bfd645a6c56ddccee94990d0def533e8"
+  },
+  "/troubleshooting/change-order-not-in-cut-list/": {
+    "lastmod": "2026-07-20",
+    "hash": "396cb57632981ba6373bd30495b4b1c24e04b8e8979aeffe670262e28b47c0d5"
+  },
+  "/troubleshooting/circular-saw-cut-wanders/": {
+    "lastmod": "2026-07-20",
+    "hash": "526aa3d9684aa0a53fcc8a0faf6919e639da8962f41e48c18b749a9213954b15"
+  },
+  "/troubleshooting/cnc-parts-cut-wrong-size/": {
+    "lastmod": "2026-07-20",
+    "hash": "f662d3e2d3b345e672ecff2787cd19405b5f26ee44838afe61f14cc847a3b9f6"
+  },
+  "/troubleshooting/common-line-cut-assumption-fails/": {
+    "lastmod": "2026-07-20",
+    "hash": "bd8e6893a4444be369040b28186deee5455fe24a38a320462e33167574daeaa4"
+  },
+  "/troubleshooting/countertop-overhang-is-uneven/": {
+    "lastmod": "2026-07-20",
+    "hash": "98c1a811c913ec9e69fc92f3e4e48b5e6afa08b117de41dfee870ad5f3cf6f32"
+  },
+  "/troubleshooting/csv-import-swaps-width-length/": {
+    "lastmod": "2026-07-20",
+    "hash": "78529b4dec4a2256ce63a4707b76fc7eaee456cab5e9211af4adc57cf21327ac"
+  },
+  "/troubleshooting/cut-edge-is-bowed/": {
+    "lastmod": "2026-07-20",
+    "hash": "677a6cdfe2138aff518aedca474d4653f1f0319b84e8a4608ad414e09f0eca3e"
+  },
   "/troubleshooting/cut-list-missing-hardware-clearance/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "dc607695005a0ad19d769b7ec3ce8871ebb9122cc84fc06538d7c75e64c65803"
   },
   "/troubleshooting/cut-list-quantity-wrong/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "72fe33d12fbd1bcb465fa6323f21bd78ad4bc49aed695371e86dfb452a29134d"
   },
+  "/troubleshooting/cut-sequence-loses-reference-edge/": {
+    "lastmod": "2026-07-20",
+    "hash": "a296f9e5fcf4d178cc28776bb8c724af4212db7f6859d5f4339b9d8a365833ec"
+  },
+  "/troubleshooting/dado-too-shallow-or-deep/": {
+    "lastmod": "2026-07-20",
+    "hash": "2af61b4b3f0ec3641489f5924b2d424fef0d888dc98f6a2c6c22294a54f2ad47"
+  },
+  "/troubleshooting/dado-too-wide-for-panel/": {
+    "lastmod": "2026-07-20",
+    "hash": "66843a4bb26c73b24ec3749d85d1714bb3b7d9c82e7fd3d427dc053dced63727"
+  },
   "/troubleshooting/drawer-box-too-tight/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "b31d72dd6570894fe99dea23ed8ebaaa9c08d2a38be9dfa242f6d356f81a0880"
   },
   "/troubleshooting/drawer-fronts-uneven/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "4711d43605653a96c140cf9e140e1e3f3693d231ae9954e57db152e08ef497bf"
   },
+  "/troubleshooting/drawers-rub-after-installation/": {
+    "lastmod": "2026-07-20",
+    "hash": "dc02ae133ba66bbf7d92b61ff86b735c2590f6617432f22cf2b31e46afc0b01a"
+  },
   "/troubleshooting/duplicate-cut-list-rows/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "8b578669528c976d982ab29d2da352db1fbd4190465c8e8a729eadecbd5b0f77"
   },
+  "/troubleshooting/duplicate-part-ids-in-project/": {
+    "lastmod": "2026-07-20",
+    "hash": "cdabca435e5faacfb3cd5dd32b1a81769004e7809b0a3e795e134a2e60f116c6"
+  },
   "/troubleshooting/edge-banding-changes-part-fit/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "981d62d482aace8aa386b8cbce4e5327cae6152519c86e133db68ed116b5be77"
   },
+  "/troubleshooting/edge-trimmer-cuts-through-veneer/": {
+    "lastmod": "2026-07-20",
+    "hash": "fc69897b9f5a346615fab6f172a00b32cf27122d0fd804044e5db50c8352a137"
+  },
+  "/troubleshooting/face-frame-opening-wrong-size/": {
+    "lastmod": "2026-07-20",
+    "hash": "472d655b93bccc47c9c8e40ac488d098d831b1bad4466e9306902d3df1d07277"
+  },
+  "/troubleshooting/finished-parts-chip-during-handling/": {
+    "lastmod": "2026-07-20",
+    "hash": "743543bd996425ab29693b308cba0ade904998cbcccc9fa48ef49d2a8b521912"
+  },
   "/troubleshooting/first-cut-leaves-unusable-strip/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "1c7e13bc53349db13420320420204aaaae115aee155da5326218182a3f410386"
   },
+  "/troubleshooting/glue-joint-is-starved/": {
+    "lastmod": "2026-07-20",
+    "hash": "7b6b5bd65511aa887cb09202001055c387a0d9ea6847ff74bbcee056a9c05cf1"
+  },
   "/troubleshooting/grain-direction-wrong-after-optimization/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "25f7bf4270cd9c174b588c7e23c6b3217a038d1b561be9c9fbae202ba616b1b3"
   },
+  "/troubleshooting/grain-flags-missing-from-cut-list/": {
+    "lastmod": "2026-07-20",
+    "hash": "98579f57a57eebc7d293096a21aafdf04191734a6c6da15d5f3d0a4dc95c597d"
+  },
+  "/troubleshooting/holes-mirrored-on-wrong-face/": {
+    "lastmod": "2026-07-20",
+    "hash": "bfd82a57748844b9d7f4fe5f015d1ffb0d1956290e4df403b874eec1492acc8d"
+  },
   "/troubleshooting/labels-do-not-match-parts/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "830705a20d1f294f45427ebaba19cabf12c6b8b19536c8dbbea2b14d707a7610"
   },
+  "/troubleshooting/laminate-lifts-at-edge/": {
+    "lastmod": "2026-07-20",
+    "hash": "79492e4460f4b00dc7e8f263daada9ded26ea49db4199894a5fae7b56d0858e8"
+  },
   "/troubleshooting/large-part-cannot-fit-5x5-sheet/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "cac0b78b0142a735e09bda9f72e0ac7621ac9e8aa81397051376343e75fb296f"
   },
+  "/troubleshooting/layout-changes-after-part-sorting/": {
+    "lastmod": "2026-07-20",
+    "hash": "59bb6bb69afa88e19bc756aa8251a3c1ffc4f2598bbf7e17066e9672034cbf68"
+  },
+  "/troubleshooting/layout-creates-narrow-rips/": {
+    "lastmod": "2026-07-20",
+    "hash": "d120379c66d3158edd0ee4fcd7ffad5e897d2d831469f15d55ff116e4dc203f9"
+  },
+  "/troubleshooting/layout-ignores-defect-zone/": {
+    "lastmod": "2026-07-20",
+    "hash": "04164e1239dbdc3c2d96ff317585718187420c01cd916020da7810f0201825ea"
+  },
+  "/troubleshooting/layout-leaves-no-recut-margin/": {
+    "lastmod": "2026-07-20",
+    "hash": "1ed505912c3fdfd6059153c94ed8303194d57d2414ba149bcbed2d1072f48cb3"
+  },
+  "/troubleshooting/layout-pdf-prints-at-wrong-scale/": {
+    "lastmod": "2026-07-20",
+    "hash": "378582b912164eefa9b69114a37398467124321029f66afc4911042b885c5574"
+  },
+  "/troubleshooting/material-groups-missing-from-cut-list/": {
+    "lastmod": "2026-07-20",
+    "hash": "79cf4144969175e4cfbed02fc945a9077d2692127294cce07c62e5cb6eaa578b"
+  },
   "/troubleshooting/material-order-missing-parts/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "0f1112ffb32d2e80326b95136a16f064a0e0a216bb053b2a86caf8819e7e3e47"
   },
+  "/troubleshooting/mdf-edge-crumbles/": {
+    "lastmod": "2026-07-20",
+    "hash": "3ae3207e33c06d841ba47efa636aa88088a0555f3c99d798874acd356f2687cd"
+  },
   "/troubleshooting/melamine-chips-while-cutting/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "cf49a6fd4317436499be26b2627303d922095a7c52d9bfb7a3b5727910630d4d"
   },
+  "/troubleshooting/miter-joint-will-not-close/": {
+    "lastmod": "2026-07-20",
+    "hash": "ecc1dc8fe6bc4ad349fc48b2ac5c642f8fb206762c8dd1b515561159b05d48a1"
+  },
+  "/troubleshooting/mixed-sheet-sizes-in-one-layout/": {
+    "lastmod": "2026-07-20",
+    "hash": "4f30998dc3cc03b9659b2d9d1a25df20a89cea1918d7976be6f3407d7d1d793c"
+  },
   "/troubleshooting/mixed-units-in-cut-list/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "30e1c6a2575f542779993d22cd9fd30d0072c30c64286379bb3764775e71e5d5"
   },
+  "/troubleshooting/obsolete-drawing-used-in-shop/": {
+    "lastmod": "2026-07-20",
+    "hash": "9d0bc4feb15acefb6db80100c5af63a57637566309a6f580f005c99a7537a10c"
+  },
+  "/troubleshooting/offcut-inventory-is-outdated/": {
+    "lastmod": "2026-07-20",
+    "hash": "a63c562ad0e0010d4977fc634475239ee01d6ccf91c22ac43f4e197fa82db806"
+  },
   "/troubleshooting/offcuts-too-fragmented/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "db77b1de3697d79f217c983887d49c6aa2b9632f8f71a649fc06a0d251b7550f"
   },
+  "/troubleshooting/offcuts-warp-in-storage/": {
+    "lastmod": "2026-07-20",
+    "hash": "cac7735f4f0e3f45bd5378e397f0f253fa6bd5cd2c87f715e53c927c1199f687"
+  },
   "/troubleshooting/one-sheet-claim-does-not-fit/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "f320162bc1bf170a33af59d3c78496000f119f2d85a3b99112996cd335a19fcc"
   },
+  "/troubleshooting/optimized-cut-order-is-impractical/": {
+    "lastmod": "2026-07-20",
+    "hash": "410f1ab67d36028401fff6516ef58eb06c593b9eac903bf9aef163165b1880c6"
+  },
   "/troubleshooting/optimizer-adds-extra-sheet/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "caf4e842c4889ef262fbe2a0f973e7d7299de3030ebab801f8e887e98909aaf5"
   },
   "/troubleshooting/panel-rotation-breaks-grain-match/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "2299182b29ab8fe3b8c7d9b888a91f3cd46802bbff8f728d3fb5bdf521adc3c8"
   },
+  "/troubleshooting/part-labels-fall-off/": {
+    "lastmod": "2026-07-20",
+    "hash": "8e1322ebd002d63397ba8e77c9e4f5c59b6aaad3c575d830c443b3793706e95f"
+  },
+  "/troubleshooting/particleboard-screw-strips/": {
+    "lastmod": "2026-07-20",
+    "hash": "4c8265e643ece06e8de8ccfbc81642c67e78153f0fb896463b6b977273eb8018"
+  },
+  "/troubleshooting/parts-fit-alone-not-together/": {
+    "lastmod": "2026-07-20",
+    "hash": "e2d99a4ef05c6e7c3da45278a0e73deabbf7f4da90c056753ed070217398edca"
+  },
   "/troubleshooting/parts-undersized-after-cutting/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "dfbd11ce316e34585a13e1181ea3d4a120b50cc3b34d6a032ce2c1de5c4448bc"
   },
+  "/troubleshooting/plywood-color-varies-between-sheets/": {
+    "lastmod": "2026-07-20",
+    "hash": "cc51c554bff29e38f90afee115e3779ae4c2a8fb941bd6c977d36431ce21e196"
+  },
+  "/troubleshooting/plywood-crosscut-tears-out/": {
+    "lastmod": "2026-07-20",
+    "hash": "dcafafca3cef12a0d256090f46c6b0008e6184360f244333afa47ef286fc1b06"
+  },
   "/troubleshooting/plywood-delaminates-at-cut/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "8c2652788b18d89a5a35df3de3cbeaf493a6f31f3ed59588573502eef4712053"
   },
   "/troubleshooting/plywood-edge-trim-removes-fit/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "c043ece82a94fce410aba03bea876d4dd42d36a71b58111c81a56bf9d437f637"
   },
   "/troubleshooting/plywood-layout-does-not-fit/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "a4c0ab803d860401bc7140dd999e8e686f6a9a7735957f084058abdf9c0ecf00"
   },
+  "/troubleshooting/plywood-sheet-is-bowed/": {
+    "lastmod": "2026-07-20",
+    "hash": "09bb4b5214f1aae427ac3f3369ea3119eaf63a5cedfb03b1fe2bc422f14a2ad1"
+  },
+  "/troubleshooting/plywood-thickness-does-not-match/": {
+    "lastmod": "2026-07-20",
+    "hash": "5dbc714482d6f04a89fcb8b42e9564a539870477333e4953df73358d136861a8"
+  },
   "/troubleshooting/plywood-waste-stays-high/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "4d4462710a4dbf038c77322e5f35bbf5fb5b766f828541f1cb2e8f53b29b4cd0"
   },
+  "/troubleshooting/prefinished-plywood-scratches/": {
+    "lastmod": "2026-07-20",
+    "hash": "2ff59e1cb2cef449e72f91571f244fd13be7a9700845070421629af808057ea8"
+  },
+  "/troubleshooting/purchase-total-disagrees-with-layout/": {
+    "lastmod": "2026-07-20",
+    "hash": "551c55a4d7ee477e13063cb22a5acb1e0f7cac3adce9751b29189d2eb0ce4438"
+  },
+  "/troubleshooting/remnant-cannot-fit-recut-part/": {
+    "lastmod": "2026-07-20",
+    "hash": "d37c1e7878bd30c342c4ce13307a051c82b1a1adbad2618c6624e176a6767345"
+  },
   "/troubleshooting/repeated-parts-different-sizes/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "d06733f502e13de6073df68a4b04e872887a35b64f7cc92e25c80e84d935fe5d"
   },
   "/troubleshooting/revision-dimensions-changed/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "dbfab08c853faa28c638976de6ca93c5e0144508979189e70f4cc1b497870079"
   },
+  "/troubleshooting/saw-blade-binds-in-plywood/": {
+    "lastmod": "2026-07-20",
+    "hash": "23f8bd643babe4b83df799d4d7d01aa31834bde036604715c6cf8ab04b062d34"
+  },
+  "/troubleshooting/saw-burns-plywood-edge/": {
+    "lastmod": "2026-07-20",
+    "hash": "3a57f134f38955d048a5a8fe0f0d8f3d6584deef22e630bba7902603d3df516f"
+  },
   "/troubleshooting/sheet-count-changes-with-kerf/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "86be3eebbf0966d517916c0d370ca1527d18fe9b4dd5b92dbe7e58f67a78d6cb"
   },
+  "/troubleshooting/sheet-goods-swell-after-storage/": {
+    "lastmod": "2026-07-20",
+    "hash": "47e0eea3d58dc4400d07179be744199587a5b454bad534c3be773d0dc3ee0d41"
+  },
+  "/troubleshooting/shelf-pin-rows-misaligned/": {
+    "lastmod": "2026-07-20",
+    "hash": "855e470722655c678f7e7bcfb1171043865c68d40f0e527d9469aee57ed8a537"
+  },
   "/troubleshooting/shelf-sagging/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "df64b6588cea3ff19c6f8f98049dbdb76b12348f95f8f4a4e9575158389c0eba"
   },
+  "/troubleshooting/shop-site-measurements-disagree/": {
+    "lastmod": "2026-07-20",
+    "hash": "a4e552353f27fd7a0a3dee9de3bc29fb63b0ac5dae5e9d7116e8bad519f1d4f6"
+  },
+  "/troubleshooting/solid-wood-panel-moves-after-build/": {
+    "lastmod": "2026-07-20",
+    "hash": "9c926a0447d7c5d6066e5367315c49d16e335f43e7480a8d0cc7b28deea6c320"
+  },
+  "/troubleshooting/supplier-sheet-smaller-than-layout/": {
+    "lastmod": "2026-07-20",
+    "hash": "dea5d2eaab25ff48f97b00afb2f4d25d6edd648c77583b0a05d28bc00992315a"
+  },
+  "/troubleshooting/supplier-substitution-breaks-fit/": {
+    "lastmod": "2026-07-20",
+    "hash": "b7d9ef10e7132e25811e34d59df6e3ec7a5a2537804de0bc6c7cb403a8a309ad"
+  },
   "/troubleshooting/table-saw-repeat-cuts-drift/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "1d00fc149bcc093ff6485b4737ed68b5a944b1b438c8def75c0a1c8add07a64e"
   },
+  "/troubleshooting/tall-cabinet-is-out-of-plumb/": {
+    "lastmod": "2026-07-20",
+    "hash": "87dca1083683074633015a66646dc994ec5b056a0dd8847df343e89c5d468c24"
+  },
+  "/troubleshooting/toe-kick-height-does-not-match/": {
+    "lastmod": "2026-07-20",
+    "hash": "8e0b7114ac4efdb1db59a5969061d06c413d31d0db523017d3a828e8db6d456b"
+  },
+  "/troubleshooting/tolerance-stack-breaks-assembly/": {
+    "lastmod": "2026-07-20",
+    "hash": "765c33fef129b00051868e984c11e27d15ca6e632a7f42b36aaf8f875db3e038"
+  },
   "/troubleshooting/track-saw-cut-not-square/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "b209a56f7d034b7623f9df4594e9df0b8a8b18d5bb1e1c3f611ac3f7044ad28a"
   },
+  "/troubleshooting/veneer-face-damaged-before-cutting/": {
+    "lastmod": "2026-07-20",
+    "hash": "30f8afc8472341e183d77bd3661b0517c9fa83bdd43a2a3dde70477b73947a6e"
+  },
+  "/troubleshooting/void-appears-on-plywood-edge/": {
+    "lastmod": "2026-07-20",
+    "hash": "922e87941dbf63d642fb0e2ea69572b9994af3770542477d6f6d564364cda200"
+  },
   "/troubleshooting/wall-cabinets-not-level/": {
-    "lastmod": "2026-07-19",
+    "lastmod": "2026-07-20",
     "hash": "0115235c24c17b421fbd5baa30906cf8b4a7c2a8d2577e35a562fdc1992775c0"
+  },
+  "/troubleshooting/wood-finish-is-blotchy/": {
+    "lastmod": "2026-07-20",
+    "hash": "5bce9b10324218ed5458ae5357cd332b1f8e743630482c22b4444be556ef2f8e"
+  },
+  "/troubleshooting/wrong-sheet-material-delivered/": {
+    "lastmod": "2026-07-20",
+    "hash": "384fa2c762154008c1cad0b4e4bc841d08aa42e1e46071b1647c249b2966ff21"
   },
   "/wood-database/": {
     "lastmod": "2026-07-17",

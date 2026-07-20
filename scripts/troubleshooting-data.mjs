@@ -1,3 +1,5 @@
+import { troubleshootingBatch20260720 } from "./troubleshooting-batch-2026-07-20.mjs";
+
 const issue = (slug, category, title, query, symptom, answer, causes, checks, fixSteps, prevention, stopCondition, links) => ({
   slug,
   category,
@@ -819,9 +821,10 @@ export const troubleshootingIssues = [
     "Stop if the expanded assembly quantity does not equal both drawing callouts and layout placements.",
     ["/cut-list-calculator/", "Rebuild part quantities", "/learn/cut-list-quality-check-before-buying-material/", "Audit quantities", "/examples/", "Compare complete part lists"],
   ),
+  ...troubleshootingBatch20260720,
 ];
 
-const expectedCount = 35;
+const expectedCount = 100;
 const categories = new Set(troubleshootingIssues.map((entry) => entry.category));
 const requiredCategories = ["Layouts", "Cutting", "Cabinets", "Materials", "Workflow"];
 
