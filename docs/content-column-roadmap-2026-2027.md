@@ -16,12 +16,12 @@ Build a durable woodworking knowledge system in which every search-shaped questi
 | Troubleshooting | 100 | Symptom-first diagnosis; 20 pages in each of 5 categories |
 | App comparisons | 116 | Workflow and app-choice decisions |
 | General comparisons | 75 | Material, method, tool, and construction tradeoffs |
-| Templates | 86 | Project planning starting points |
+| Templates | 120 | Project planning starting points |
 | Examples | 75 | Finished cut-list inputs with downloadable CSV evidence |
 | Research | 7 | Source-linked, reproducible first-party datasets and reports |
 | Tools | 25 | Calculators and action pages |
 
-The 2026-07-20 milestone completed the first 100-page Troubleshooting edition. Its five balanced clusters are Layouts, Cutting, Cabinets, Materials, and Workflow. The first 2026-07-21 milestone expanded Examples from 36 to 60 complete project datasets, added one downloadable CSV per project, and connected the new pages to their source templates, calculators, and relevant diagnostic pages. The second 2026-07-21 milestone completed Phase 2 by publishing 15 paired small-space projects from one shared data source: Templates reached 86, Examples reached 75, and every new pair includes a measured footprint, transport constraint, reversible-installation boundary, complete-layout CSV, Learn link, and Troubleshooting link.
+The 2026-07-20 milestone completed the first 100-page Troubleshooting edition. Its five balanced clusters are Layouts, Cutting, Cabinets, Materials, and Workflow. The first 2026-07-21 milestone expanded Examples from 36 to 60 complete project datasets, added one downloadable CSV per project, and connected the new pages to their source templates, calculators, and relevant diagnostic pages. The second 2026-07-21 milestone completed Phase 2 by publishing 15 paired small-space projects from one shared data source: Templates reached 86, Examples reached 75, and every new pair includes a measured footprint, transport constraint, reversible-installation boundary, complete-layout CSV, Learn link, and Troubleshooting link. The third 2026-07-21 milestone completed Phase 3 by adding 34 release-gated templates: 18 cabinet construction and installation intents plus four each for Storage, Shop, Furniture, and Small Spaces. Templates reached 120, and every new page includes a distinct parts list, four project checks, a field-measurement boundary, a hardware or service boundary, an installation boundary, and real Learn and Troubleshooting links.
 
 ## Editorial architecture
 
@@ -100,4 +100,4 @@ For content maintenance, prioritize pages with one of these signals:
 
 ## Next recommended batch
 
-Begin Phase 3 with 18 high-intent cabinet construction and installation templates, taking Templates from 86 to 104. Split the batch across six base-cabinet, six wall-or-tall-cabinet, and six installation-or-service intents. Every entry must define hardware clearance, back construction, filler or scribe allowance, toe-kick or hanging boundary, service access, and the point where field measurements replace nominal dimensions. Connect each template to an existing cabinet Troubleshooting diagnosis, a relevant Learn method, and the plywood calculator. Add an Example only when the complete project input provides new evidence rather than a cosmetic cabinet variation; Phase 2's 75-example target is already complete.
+Begin Phase 4 by mapping the existing 133 Learn guides into 12 durable pillar clusters before adding more URLs. Publish the first 18 verified gaps across cabinet planning, plywood selection, cutting quality, and cut-list operations, taking Learn from 133 to 151. Each guide must own a non-overlapping search intent, provide a decision or inspection workflow, link to the relevant Glossary definition and Troubleshooting diagnosis, and end at a calculator, Template, Example, Research report, or CutList action. Record overlapping guides for consolidation or redirect instead of preserving two weak pages. This first consolidation batch should also add pillar navigation and an automated collision check so the remaining path to 200 Learn guides is governed by coverage gaps rather than page count.
