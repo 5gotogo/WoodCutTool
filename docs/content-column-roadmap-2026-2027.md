@@ -16,12 +16,12 @@ Build a durable woodworking knowledge system in which every search-shaped questi
 | Troubleshooting | 100 | Symptom-first diagnosis; 20 pages in each of 5 categories |
 | App comparisons | 116 | Workflow and app-choice decisions |
 | General comparisons | 75 | Material, method, tool, and construction tradeoffs |
-| Templates | 71 | Project planning starting points |
-| Examples | 60 | Finished cut-list inputs with downloadable CSV evidence |
+| Templates | 86 | Project planning starting points |
+| Examples | 75 | Finished cut-list inputs with downloadable CSV evidence |
 | Research | 7 | Source-linked, reproducible first-party datasets and reports |
 | Tools | 25 | Calculators and action pages |
 
-The 2026-07-20 milestone completed the first 100-page Troubleshooting edition. Its five balanced clusters are Layouts, Cutting, Cabinets, Materials, and Workflow. The 2026-07-21 milestone then expanded Examples from 36 to 60 complete project datasets, added one downloadable CSV per project, and connected the new pages to their source templates, calculators, and relevant diagnostic pages.
+The 2026-07-20 milestone completed the first 100-page Troubleshooting edition. Its five balanced clusters are Layouts, Cutting, Cabinets, Materials, and Workflow. The first 2026-07-21 milestone expanded Examples from 36 to 60 complete project datasets, added one downloadable CSV per project, and connected the new pages to their source templates, calculators, and relevant diagnostic pages. The second 2026-07-21 milestone completed Phase 2 by publishing 15 paired small-space projects from one shared data source: Templates reached 86, Examples reached 75, and every new pair includes a measured footprint, transport constraint, reversible-installation boundary, complete-layout CSV, Learn link, and Troubleshooting link.
 
 ## Editorial architecture
 
@@ -100,4 +100,4 @@ For content maintenance, prioritize pages with one of these signals:
 
 ## Next recommended batch
 
-Build a paired 15-project small-space and renter-friendly cluster to take Templates from 71 to 86 and Examples from 60 to 75. Each project should begin with a measured footprint, transport or doorway constraint, reversible-installation boundary, complete parts list, and a downloadable CSV with complete-layout status. Publish the template and evidence page together, then link them to the most relevant calculator, Learn method, and Troubleshooting diagnosis. This reaches the Phase 2 evidence target while adding a distinct high-intent cluster instead of extending Examples with near-duplicate furniture variants.
+Begin Phase 3 with 18 high-intent cabinet construction and installation templates, taking Templates from 86 to 104. Split the batch across six base-cabinet, six wall-or-tall-cabinet, and six installation-or-service intents. Every entry must define hardware clearance, back construction, filler or scribe allowance, toe-kick or hanging boundary, service access, and the point where field measurements replace nominal dimensions. Connect each template to an existing cabinet Troubleshooting diagnosis, a relevant Learn method, and the plywood calculator. Add an Example only when the complete project input provides new evidence rather than a cosmetic cabinet variation; Phase 2's 75-example target is already complete.

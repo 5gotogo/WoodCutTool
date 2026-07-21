@@ -1,4 +1,5 @@
 import { exampleBatch20260721 } from "./example-batch-2026-07-21.mjs";
+import { smallSpaceProjectBatch20260721 } from "./small-space-project-batch-2026-07-21.mjs";
 
 export const benchmarkPublishedDate = "2026-07-17";
 export const benchmarkVersion = "2026-07-21";
@@ -49,10 +50,11 @@ export const projectBenchmarks = [
   project("sanding-station", "Sanding station", "Shop", "/templates/sanding-station-cut-list/", [part("Sides", 34.5, 20, 2), part("Top layers", 30, 22, 2), part("Shelves", 28.5, 18.5, 2), part("Back", 34.5, 30)]),
   project("small-parts-drawer-cabinet", "Small parts drawer cabinet", "Shop", "/templates/small-parts-drawer-cabinet-cut-list/", [part("Sides", 36, 12, 2), part("Top and bottom", 24, 10.5, 2), part("Drawer dividers", 22.5, 10.5, 5), part("Back", 36, 24)]),
   ...exampleBatch20260721,
+  ...smallSpaceProjectBatch20260721,
 ];
 
-if (projectBenchmarks.length !== 60) {
-  throw new Error(`Expected 60 project benchmarks, received ${projectBenchmarks.length}`);
+if (projectBenchmarks.length !== 75) {
+  throw new Error(`Expected 75 project benchmarks, received ${projectBenchmarks.length}`);
 }
 if (new Set(projectBenchmarks.map((entry) => entry.slug)).size !== projectBenchmarks.length) {
   throw new Error("Project benchmark slugs must be unique");

@@ -218,6 +218,9 @@ function examplePage(project) {
   const troubleshootingNote = project.troubleshootingPath
     ? `      <section class="research-note"><h2>Diagnose a related build problem</h2><p>If the physical project no longer matches the released parts, use <a href="${project.troubleshootingPath}">${esc(project.troubleshootingLabel)}</a> before changing dimensions at the saw. Preserve the original input, test one cause at a time, and regenerate the layout after the source list is corrected.</p></section>\n\n`
     : "";
+  const smallSpacePlanning = project.smallSpacePlan
+    ? `      <section class="research-note"><h2>Small-space planning boundary</h2><p>This example is paired with an editable template and keeps three apartment-scale constraints visible before sheet count becomes the focus.</p><ul><li><strong>Measured footprint:</strong> ${esc(project.smallSpacePlan.footprint)}</li><li><strong>Transport constraint:</strong> ${esc(project.smallSpacePlan.transport)}</li><li><strong>Reversible-installation boundary:</strong> ${esc(project.smallSpacePlan.installation)}</li></ul><p>Use <a href="${project.learnPath}">${esc(project.learnLabel)}</a> to verify the input boundary, then <a href="${project.troubleshootingPath}">${esc(project.troubleshootingLabel)}</a> if the released list and the physical space disagree.</p></section>\n\n`
+    : "";
   const h1 = `${titleCase(project.name)} Cut List Example: ${row.partCount} Parts on ${row.allowedSheets} ${plural(row.allowedSheets, "Sheet")}`;
 
   return pageShell({
@@ -242,7 +245,7 @@ function examplePage(project) {
 
       <section><h2>The answer first: how much plywood does this example use?</h2><p>The modeled ${esc(project.name.toLowerCase())} uses <strong>${sheetText} of 4×8 plywood</strong> for ${row.partCount} rectangular parts at ${pct(row.allowedYield)} material yield. Total finished-part area is ${row.partArea.toFixed(1)} square inches. Dividing that area by 4,608 square inches gives an area-only lower bound of ${row.theoreticalSheets} ${plural(row.theoreticalSheets, "sheet")}, but the layout still has to solve part geometry, kerf, and orientation.</p><p>This is a planning example, not a guaranteed purchase quantity or a construction drawing. It excludes joinery allowance, damaged-edge trimming, defects, test cuts, replacement pieces, hardware, face selection, and any project components not shown in the parts table.</p></section>
 
-      <section class="research-note"><h2>Download the exact input</h2><p><a class="button" href="${csvPath}" download>Download ${esc(titleCase(project.name))} cut list CSV</a></p><p>The file contains the same part names, finished dimensions, quantities, source template, kerf, sheet size, benchmark version, and modeled result shown on this page. Edit a copy for your project rather than treating these example dimensions as a finished plan.</p></section>
+${smallSpacePlanning}      <section class="research-note"><h2>Download the exact input</h2><p><a class="button" href="${csvPath}" download>Download ${esc(titleCase(project.name))} cut list CSV</a></p><p>The file contains the same part names, finished dimensions, quantities, source template, kerf, sheet size, benchmark version, modeled result shown on this page, and the planning-boundary fields when the project is designed for a small space. Edit a copy for your project rather than treating these example dimensions as a finished plan.</p></section>
 
       <section><h2>${esc(project.name)} example parts list</h2><p>Dimensions are finished rectangular planning sizes in inches. Quantity is expanded before packing, so repeated parts occupy their own positions. Confirm material thickness and construction method separately because a rectangle layout does not calculate joinery.</p><div class="research-table-wrap"><table class="research-table"><thead><tr><th>Part group</th><th>Length (in)</th><th>Width (in)</th><th>Qty.</th><th>Area (sq. in.)</th></tr></thead><tbody>${partsTable(project)}</tbody></table></div></section>
 
@@ -268,21 +271,22 @@ ${troubleshootingNote}      <section><h2>How to adapt this example to your proje
 
 function exampleCsv(project) {
   const row = projectResult(project, kerf);
-  const header = ["project", "category", "part_group", "length_in", "width_in", "quantity", "sheet_length_in", "sheet_width_in", "kerf_in", "rotation_allowed_sheets", "rotation_allowed_yield_pct", "rotation_allowed_rejected_piece_count", "rotation_allowed_complete_layout", "grain_locked_sheets", "grain_locked_yield_pct", "grain_locked_rejected_piece_count", "grain_locked_complete_layout", "source_template", "benchmark_version", "method"];
-  const rows = project.parts.map((part) => [project.name, project.category, part.label, part.length, part.width, part.qty, 96, 48, kerf, row.allowedSheets, row.allowedYield.toFixed(3), row.allowedRejected, row.allowedComplete, row.lockedSheets, row.lockedYield.toFixed(3), row.lockedRejected, row.lockedComplete, project.templatePath, benchmarkVersion, benchmarkMethod]);
+  const header = ["project", "category", "part_group", "length_in", "width_in", "quantity", "sheet_length_in", "sheet_width_in", "kerf_in", "rotation_allowed_sheets", "rotation_allowed_yield_pct", "rotation_allowed_rejected_piece_count", "rotation_allowed_complete_layout", "grain_locked_sheets", "grain_locked_yield_pct", "grain_locked_rejected_piece_count", "grain_locked_complete_layout", "planning_footprint", "transport_constraint", "reversible_installation_boundary", "source_template", "benchmark_version", "method"];
+  const rows = project.parts.map((part) => [project.name, project.category, part.label, part.length, part.width, part.qty, 96, 48, kerf, row.allowedSheets, row.allowedYield.toFixed(3), row.allowedRejected, row.allowedComplete, row.lockedSheets, row.lockedYield.toFixed(3), row.lockedRejected, row.lockedComplete, project.smallSpacePlan?.footprint ?? "", project.smallSpacePlan?.transport ?? "", project.smallSpacePlan?.installation ?? "", project.templatePath, benchmarkVersion, benchmarkMethod]);
   return `${[header, ...rows].map((values) => values.map(csvCell).join(",")).join("\n")}\n`;
 }
 
 const rows = projectBenchmarks.map((project) => ({ project, result: projectResult(project, kerf) }));
 const categoryCounts = Object.entries(rows.reduce((map, { project }) => ({ ...map, [project.category]: (map[project.category] || 0) + 1 }), {}));
 const hubDescription = `Browse ${rows.length} downloadable cut list examples with real part dimensions, 4×8 sheet counts, material yield, rotation comparisons, and plywood layouts.`;
-const categoryOrder = ["Cabinets", "Storage", "Furniture", "Shop", "Outdoor", "Small Projects"];
+const categoryOrder = ["Cabinets", "Storage", "Furniture", "Shop", "Outdoor", "Small Spaces", "Small Projects"];
 const categoryDescriptions = {
   Cabinets: "Carcasses, appliance openings, islands, and shop cabinets with explicit panel geometry.",
   Storage: "Shelves, benches, carts, closets, and organizers sized around real storage constraints.",
   Furniture: "Tables, seating, media furniture, and compact builds with visible-grain decisions.",
   Shop: "Workstations, tool storage, and mobile fixtures with machine and loaded-use checks.",
   Outdoor: "Exterior storage and planting projects with moisture and drainage assumptions kept visible.",
+  "Small Spaces": "Paired renter-friendly projects with measured footprints, moving constraints, and reversible-installation boundaries.",
   "Small Projects": "Desktop builds that make material thickness, clear openings, and repeat cuts easy to inspect.",
 };
 const categoryId = (category) => category.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-");

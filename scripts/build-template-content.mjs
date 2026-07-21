@@ -3,6 +3,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { templateBatch20260717 } from "./template-batch-2026-07-17.mjs";
 import { projectBenchmarks } from "./plywood-benchmark-data.mjs";
+import { smallSpaceProjectBatch20260721 } from "./small-space-project-batch-2026-07-21.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai" }).format(new Date());
@@ -12,8 +13,36 @@ const categoryVisuals = {
   Furniture: "/assets/images/templates/template-furniture.png",
   Shop: "/assets/images/templates/template-shop.png",
   Outdoor: "/assets/images/templates/template-shop.png",
+  "Small Spaces": "/assets/images/templates/template-furniture.png",
   "Small projects": "/assets/images/templates/template-furniture.png"
 };
+
+const formatInches = (value) => {
+  const whole = Math.floor(value);
+  const eighths = Math.round((value - whole) * 8);
+  if (eighths === 0) return String(whole);
+  if (eighths === 8) return String(whole + 1);
+  const divisor = eighths % 4 === 0 ? 4 : eighths % 2 === 0 ? 2 : 1;
+  const numerator = eighths / divisor;
+  const denominator = 8 / divisor;
+  return `${whole ? `${whole}-` : ""}${numerator}/${denominator}`;
+};
+const titleCase = (value) => value.replaceAll(/-/g, " ").replaceAll(/\b\w/g, (letter) => letter.toUpperCase());
+
+const smallSpaceTemplateBatch = smallSpaceProjectBatch20260721.map((entry) => [
+  `${entry.slug}-cut-list`,
+  titleCase(entry.name),
+  entry.category,
+  entry.summary,
+  entry.parts.map((item) => [item.label, `${formatInches(item.width)} x ${formatInches(item.length)}`, item.qty]),
+  entry.considerations,
+  entry.smallSpacePlan,
+  entry.learnPath,
+  entry.learnLabel,
+  entry.troubleshootingPath,
+  entry.troubleshootingLabel,
+  entry.slug,
+]);
 
 const templates = [
   ["floating-shelf-cut-list", "Floating Shelf", "Storage", "A concealed-bracket floating shelf with a plywood box, face strip, and wall cleat.", [["Top and bottom", "10 x 36", 2], ["Long sides", "8-1/2 x 36", 2], ["End caps", "8-1/2 x 8-1/2", 2], ["Face strip", "1-1/2 x 36", 1]]],
@@ -66,15 +95,33 @@ const templates = [
   ["media-wall-cabinet-cut-list", "Media Wall Cabinet", "Furniture", "A low plywood media wall cabinet with equipment bays, cable cutouts, dividers, shelves, and a stiff back.", [["Sides", "16 x 24", 2], ["Top and bottom", "15-1/4 x 72", 2], ["Dividers", "15-1/4 x 22-1/2", 4], ["Back", "24 x 72", 1]]],
   ["folding-craft-table-cut-list", "Folding Craft Table", "Furniture", "A compact folding craft table with a broad work surface, hinged leaves, support legs, and a lower supply shelf.", [["Center top", "24 x 36", 1], ["Folding leaves", "12 x 36", 2], ["Leg panels", "22-1/2 x 28-1/2", 2], ["Supply shelf", "18 x 32", 1]]],
   ["folding-work-table-cut-list", "Folding Work Table", "Shop", "A fold-down plywood work table with a rigid top, folding support legs, wall cleats, and hinge clearance.", [["Top", "24 x 48", 1], ["Leg panels", "22-1/2 x 28-1/2", 2], ["Wall cleat", "4 x 46-1/2", 1], ["Support rails", "3 x 42", 2]]],
-  ...templateBatch20260717
-].map(([slug, name, category, summary, parts, projectChecks = []]) => ({ slug, name, category, summary, parts, projectChecks, image: categoryVisuals[category] ?? "/assets/images/templates/template-cabinets.png" }));
+  ...templateBatch20260717,
+  ...smallSpaceTemplateBatch
+].map(([slug, name, category, summary, parts, projectChecks = [], smallSpacePlan, learnPath, learnLabel, troubleshootingPath, troubleshootingLabel, exampleSlug]) => ({
+  slug,
+  name,
+  category,
+  summary,
+  parts,
+  projectChecks,
+  smallSpacePlan,
+  learnPath,
+  learnLabel,
+  troubleshootingPath,
+  troubleshootingLabel,
+  exampleSlug,
+  image: categoryVisuals[category] ?? "/assets/images/templates/template-cabinets.png"
+}));
+
+if (templates.length !== 77) {
+  throw new Error(`Expected 77 generated template pages, received ${templates.length}`);
+}
 
 const existing = [
   ["4x8-plywood-sheet", "4x8 Plywood Cut List", "Sheet"], ["kitchen-cabinet-cut-list", "Kitchen Cabinet Cut List", "Cabinets"], ["bookcase-cut-list", "Bookcase Cut List", "Furniture"], ["closet-shelving-cut-list", "Closet Shelving Cut List", "Storage"], ["garage-shelving-cut-list", "Garage Shelving Cut List", "Storage"], ["drawer-box-cut-list", "Drawer Box Cut List", "Joinery"], ["workbench-cut-list", "Workbench Cut List", "Shop"], ["desk-cut-list", "Desk Cut List", "Furniture"], ["tv-stand-cut-list", "TV Stand Cut List", "Furniture"]
 ].map(([slug, name, category]) => ({ slug, name, category }));
 
 const esc = (value) => String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
-const titleCase = (value) => value.replaceAll(/-/g, " ").replaceAll(/\b\w/g, (letter) => letter.toUpperCase());
 
 function page(template) {
   const title = `${template.name} Cut List Template (Free Plywood Plan)`;
@@ -84,9 +131,12 @@ function page(template) {
   const projectChecks = template.projectChecks.length
     ? `<section><h2>${esc(template.name)} project-specific checks</h2><p>Use these checks with the sample parts list before calculating sheet count or making a purchase.</p><ul>${template.projectChecks.map((check) => `<li>${esc(check)}</li>`).join("")}</ul></section>`
     : "";
+  const smallSpacePlanning = template.smallSpacePlan
+    ? `<section class="research-note"><h2>Small-space planning boundary</h2><p>This paired project starts with three constraints that should be measured before the parts list is released.</p><ul><li><strong>Measured footprint:</strong> ${esc(template.smallSpacePlan.footprint)}</li><li><strong>Transport constraint:</strong> ${esc(template.smallSpacePlan.transport)}</li><li><strong>Reversible-installation boundary:</strong> ${esc(template.smallSpacePlan.installation)}</li></ul><p>Inspect the <a href="/examples/${template.exampleSlug}-cut-list/">calculated ${esc(template.name.toLowerCase())} example</a>, then use <a href="${template.learnPath}">${esc(template.learnLabel)}</a> and <a href="${template.troubleshootingPath}">${esc(template.troubleshootingLabel)}</a> before finalizing dimensions.</p></section>`
+    : "";
   return `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><meta name="robots" content="index,follow"><link rel="canonical" href="https://woodcuttool.com/templates/${template.slug}/"><meta property="og:type" content="website"><meta property="og:site_name" content="WoodCutTool"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="https://woodcuttool.com/templates/${template.slug}/"><meta property="og:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(description)}"><meta name="twitter:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png"><link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any"><style>.mega-menu{display:none}</style><link rel="stylesheet" href="/assets/styles.css"><script defer src="/assets/site-chrome.js"></script><script defer src="/assets/app.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"${esc(template.name)} Cut List Template","description":"${esc(description)}","url":"https://woodcuttool.com/templates/${template.slug}/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://woodcuttool.com/"},{"@type":"ListItem","position":2,"name":"Templates","item":"https://woodcuttool.com/templates/"},{"@type":"ListItem","position":3,"name":"${esc(template.name)} Cut List","item":"https://woodcuttool.com/templates/${template.slug}/"}]}</script></head>
-<body><a class="skip-link" href="#main">Skip to content</a><div data-site-header></div><main id="main" class="article-shell"><article class="article-body"><p class="breadcrumb"><a href="/">Home</a> / <a href="/templates/">Templates</a> / ${esc(template.name)} Cut List</p><p class="eyebrow">${esc(template.category)} cutting template</p><h1>${esc(template.name)} Cut List Template</h1><p class="lead">${esc(template.summary)} Use this as a starting point, then change every dimension for your room, hardware, material thickness, and joinery before cutting.</p><p class="article-byline">Prepared by the <a href="/about/">WoodCutTool Editorial Team</a> · This is an adjustable planning reference, not a dimensioned construction drawing.</p><figure class="template-page-visual"><img src="${template.image}" width="1448" height="1086" loading="lazy" alt="Plywood ${esc(template.category.toLowerCase())} project with cut panels in a workshop"><figcaption>Use the reference build to visualize the parts, then size the cut list for your own space.</figcaption></figure>
+<body><a class="skip-link" href="#main">Skip to content</a><div data-site-header></div><main id="main" class="article-shell"><article class="article-body"><p class="breadcrumb"><a href="/">Home</a> / <a href="/templates/">Templates</a> / ${esc(template.name)} Cut List</p><p class="eyebrow">${esc(template.category)} cutting template</p><h1>${esc(template.name)} Cut List Template</h1><p class="lead">${esc(template.summary)} Use this as a starting point, then change every dimension for your room, hardware, material thickness, and joinery before cutting.</p><p class="article-byline">Prepared by the <a href="/about/">WoodCutTool Editorial Team</a> · This is an adjustable planning reference, not a dimensioned construction drawing.</p><figure class="template-page-visual"><img src="${template.image}" width="1448" height="1086" loading="lazy" alt="Plywood ${esc(template.category.toLowerCase())} project with cut panels in a workshop"><figcaption>Use the reference build to visualize the parts, then size the cut list for your own space.</figcaption></figure>${smallSpacePlanning}
 <section><h2>Plan the ${esc(template.name.toLowerCase())} before buying sheets</h2><p>Start by confirming the finished width, depth, height, access clearances, and load requirements. This template is intentionally made from rectangular plywood parts so you can adapt it without redrawing the whole project. Keep matching pieces grouped together, mark visible faces, and leave room for edge banding, backs, doors, drawers, hinges, or trim that apply to your version.</p><p>Use 3/4 inch plywood for the structural parts unless your design calls for another thickness. A template is not a structural rating: add bracing, wall anchoring, weather protection, or a thicker panel whenever the location, load, or local requirements demand it.</p></section>
 ${projectChecks}<section><h2>${esc(template.name)} parts list</h2><pre><code>Material: 3/4 in plywood
 Kerf allowance: 1/8 in between cuts
@@ -101,7 +151,7 @@ ${partsTable}</code></pre><p>Review each part against the actual construction me
 
 function hub() {
   const allTemplates = [...existing, ...templates];
-  const categories = ["Cabinets", "Storage", "Furniture", "Shop", "Outdoor", "Small projects", "Sheet", "Joinery"];
+  const categories = ["Cabinets", "Storage", "Furniture", "Shop", "Outdoor", "Small Spaces", "Small projects", "Sheet", "Joinery"];
   const categoryId = (category) => category.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-");
   const collectionSchema = JSON.stringify({
     "@context": "https://schema.org",
