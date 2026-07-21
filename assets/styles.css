@@ -8144,6 +8144,11 @@ tr:last-child td {
   padding: 20px 0 0;
 }
 
+.learn-page > .template-category-section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .template-category-section + .template-category-section {
   margin-top: 20px;
   padding-top: 20px;
