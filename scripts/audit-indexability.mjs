@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { learnPillarExpansion20260721 } from "./learn-pillar-batch-2026-07-21.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
@@ -142,8 +143,10 @@ const groups = {
   blog: [],
   appCompare: [],
   glossary: [],
-  comparison: []
+  comparison: [],
+  learnPillar: []
 };
+const learnPillarFiles = new Set(learnPillarExpansion20260721.map((article) => `learn/${article.slug}/index.html`));
 const noindexCounts = {
   blog: pages.filter((page) => page.noindex && /^blog\/[^/]+\/index\.html$/.test(page.file)).length
 };
@@ -177,6 +180,16 @@ for (const page of pages) {
     if (inbound < 2) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 2.`);
     if (page.words < 700) issues.push(`${page.file} has only ${page.words} visible words; expected at least 700.`);
   }
+
+  if (learnPillarFiles.has(page.file)) {
+    groups.learnPillar.push({ ...page, inbound });
+    if (inbound < 4) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 4.`);
+    if (page.words < 750) issues.push(`${page.file} has only ${page.words} visible words; expected at least 750.`);
+  }
+}
+
+if (groups.learnPillar.length !== learnPillarExpansion20260721.length) {
+  issues.push(`Expected ${learnPillarExpansion20260721.length} new Learn pillar pages, found ${groups.learnPillar.length}.`);
 }
 
 if (issues.length) {

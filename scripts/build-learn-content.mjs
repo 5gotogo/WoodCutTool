@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 import { woodworkingImageFor } from "./woodworking-images.mjs";
 import { learnResearchExpansion20260718 } from "./learn-batch-2026-07-18.mjs";
+import { learnPillarExpansion20260721 } from "./learn-pillar-batch-2026-07-21.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -696,13 +697,82 @@ const learnExpansion20260715 = [
 
 articles.push(...learnExpansion20260715.map(makeLearnExpansionArticle));
 articles.push(...learnResearchExpansion20260718);
+articles.push(...learnPillarExpansion20260721);
 
-const allLearnPages = [...articles, ...landingPages];
+const legacyLearnHubs = [
+  { slug: "deck", h1: "Deck Planning Guides", description: "Deck material, footing, stair, railing, and layout guides.", keywords: ["deck planning"], cluster: "stairs-construction" },
+  { slug: "fence", h1: "Fence Planning Guides", description: "Fence layout, material, post, gate, and installation planning guides.", keywords: ["fence planning"], cluster: "installation-field-fit" },
+  { slug: "plywood", h1: "Plywood Planning Guides", description: "Plywood selection, layout, cutting, grain, kerf, and waste guides.", keywords: ["plywood planning"], cluster: "plywood-sheet-goods" },
+  { slug: "roofing", h1: "Roofing Planning Guides", description: "Roofing material, sheathing, slope, and project-estimation guides.", keywords: ["roofing planning"], cluster: "estimating-purchasing" },
+  { slug: "stairs", h1: "Stair Planning Guides", description: "Stair rise, run, stringer, landing, headroom, and material guides.", keywords: ["stair planning"], cluster: "stairs-construction" },
+  { slug: "woodworking", h1: "Woodworking Planning Guides", description: "Woodworking cut lists, material estimation, project, and shop workflow guides.", keywords: ["woodworking planning"], cluster: "shop-workflow" },
+];
+
+const allLearnPages = [...articles, ...landingPages, ...legacyLearnHubs];
+
+const duplicateLearnSlugs = [...allLearnPages.reduce((counts, page) => {
+  counts.set(page.slug, (counts.get(page.slug) || 0) + 1);
+  return counts;
+}, new Map()).entries()].filter(([, count]) => count > 1).map(([slug]) => slug);
+
+if (duplicateLearnSlugs.length) {
+  throw new Error(`Duplicate Learn slugs: ${duplicateLearnSlugs.join(", ")}`);
+}
 
 // slug -> h1, for building cross-link anchors
 const pageTitleBySlug = Object.fromEntries(allLearnPages.map((p) => [p.slug, p.h1]));
 
-const PILLAR_SLUG = "what-is-cut-list-optimization";
+const learnClusters = [
+  { id: "layout-optimization", title: "Layout and Optimization", pillarSlug: "sheet-layout-optimization", description: "Sheet fit, rotation, yield, waste, calculators, and complete-layout decisions.", match: /optimization|sheet layout|sheet-layout|layout planning|waste|calculator workflow/ },
+  { id: "cabinet-planning", title: "Cabinet Planning", pillarSlug: "cabinet-box-cut-list-basics", description: "Cabinet boxes, drawers, doors, fillers, backs, openings, hardware, and installation-ready dimensions.", match: /cabinet|drawer|wardrobe|closet|pantry|vanity|toe[ -]kick|kitchen/ },
+  { id: "plywood-sheet-goods", title: "Plywood and Sheet Goods", pillarSlug: "plywood-grade-selection-for-cabinets", description: "Plywood products, cores, faces, thickness, grain, MDF, melamine, and usable sheet assumptions.", match: /plywood|sheet goods|sheet-goods|veneer|grain direction|mdf|melamine|edge band/ },
+  { id: "cutting-quality", title: "Cutting and Machining Quality", pillarSlug: "saw-kerf-explained", description: "Kerf, reference edges, breakdown sequence, repeated parts, machining, and first-article verification.", match: /kerf|saw|cutting|reference edge|dado|rabbet|machining|first.article|repeated part/ },
+  { id: "installation-field-fit", title: "Installation and Field Fit", pillarSlug: "field-measurement-checklist-before-cut-list", description: "Field measurements, service boundaries, delivery, leveling, reversible installation, and site fit.", match: /field measurement|installation|install|renter|small.space|delivery|wall fit/ },
+  { id: "estimating-purchasing", title: "Estimating and Purchasing", pillarSlug: "material-estimation-for-carpentry", description: "Material quantities, board feet, project cost, purchasing, hardware, contingency, and supplier units.", match: /estimate|estimation|cost|board foot|lumber buying|purchase|shopping|hardware allowance|material list/ },
+  { id: "shop-workflow", title: "Shop Workflow", pillarSlug: "diy-workshop-planning-guide", description: "Workshop flow, workstations, tool storage, delivery staging, offcuts, and reusable production habits.", match: /workshop|workbench|shop |tool chest|lumber rack|offcut|production/ },
+  { id: "furniture-projects", title: "Furniture and Project Planning", pillarSlug: "diy-wood-project-estimation", description: "Furniture, storage, tables, beds, carts, shelves, and project-specific planning constraints.", match: /furniture|table|bed |bench|cart|shelf|storage|playhouse|media console|coffee bar|sewing|craft/ },
+  { id: "stairs-construction", title: "Stairs and Construction", pillarSlug: "stair-stringer-calculator-inputs-explained", description: "Stairs, stringers, rise and run, decks, landings, and construction measurement workflows.", match: /stair|stringer|deck/ },
+  { id: "tile-planning", title: "Tile Planning", pillarSlug: "tile-calculator-inputs-explained", description: "Tile measurement, patterns, grout, waste, boxes, transitions, and layout checks.", match: /tile|backsplash|grout/ },
+  { id: "quilt-planning", title: "Quilt Planning", pillarSlug: "quilt-yardage-calculator-inputs", description: "Quilt dimensions, fabric roles, blocks, backing, binding, batting, and yardage decisions.", match: /quilt|fabric|yardage|binding|batting/ },
+  { id: "cut-list-operations", title: "Cut List Operations", pillarSlug: "cut-list-planner", description: "Part IDs, revisions, labels, material groups, purchasing handoff, closeout, and saved project records.", match: /cut list|cut-list|cutlist|part id|label|revision|shop handoff/ },
+];
+
+const learnClusterById = new Map(learnClusters.map((cluster) => [cluster.id, cluster]));
+const learnClusterMatchPriority = [
+  "stairs-construction",
+  "tile-planning",
+  "quilt-planning",
+  "cabinet-planning",
+  "plywood-sheet-goods",
+  "cutting-quality",
+  "installation-field-fit",
+  "shop-workflow",
+  "furniture-projects",
+  "estimating-purchasing",
+  "layout-optimization",
+  "cut-list-operations",
+];
+
+function learnClusterId(page) {
+  if (page.cluster) {
+    if (!learnClusterById.has(page.cluster)) throw new Error(`Unknown Learn cluster ${page.cluster} for ${page.slug}`);
+    return page.cluster;
+  }
+  const text = `${page.slug} ${page.h1} ${page.description} ${(page.keywords || []).join(" ")}`.toLowerCase();
+  return learnClusterMatchPriority
+    .map((id) => learnClusterById.get(id))
+    .find((cluster) => cluster.match.test(text))?.id || "cut-list-operations";
+}
+
+const learnPagesByCluster = new Map(learnClusters.map((cluster) => [
+  cluster.id,
+  allLearnPages.filter((page) => learnClusterId(page) === cluster.id),
+]));
+
+for (const cluster of learnClusters) {
+  if (!pageTitleBySlug[cluster.pillarSlug]) throw new Error(`Missing Learn pillar page: ${cluster.pillarSlug}`);
+  if (!learnPagesByCluster.get(cluster.id)?.length) throw new Error(`Empty Learn cluster: ${cluster.id}`);
+}
 
 // G2 + G3: for each article, the sibling guides it links to (lateral spokes)
 // and the tools it links back to. Every non-pillar page links to the pillar.
@@ -764,7 +834,7 @@ const relatedMap = {
   }
 };
 
-for (const article of learnResearchExpansion20260718) {
+for (const article of [...learnResearchExpansion20260718, ...learnPillarExpansion20260721]) {
   relatedMap[article.slug] = {
     guides: article.relatedGuides,
     tools: article.relatedTools
@@ -790,6 +860,40 @@ function relatedGuidesSection(slug) {
         <div class="related-grid">
           ${guideCards}
           ${toolCards}
+        </div>
+      </section>`;
+}
+
+function pillarClusterSection(page) {
+  const cluster = learnClusterById.get(learnClusterId(page));
+  const pages = learnPagesByCluster.get(cluster.id) || [];
+  const currentIndex = pages.findIndex((candidate) => candidate.slug === page.slug);
+  const related = [];
+  const seen = new Set([page.slug, cluster.pillarSlug]);
+  if (currentIndex !== -1 && pages.length > 1) {
+    for (let distance = 1; related.length < 3 && distance < pages.length; distance += 1) {
+      for (const direction of [1, -1]) {
+        const candidate = pages[(currentIndex + direction * distance + pages.length) % pages.length];
+        if (!candidate || seen.has(candidate.slug)) continue;
+        seen.add(candidate.slug);
+        related.push(candidate);
+        if (related.length >= 3) break;
+      }
+    }
+  }
+
+  const cards = [
+    ...(page.slug === cluster.pillarSlug ? [] : [{ slug: cluster.pillarSlug, h1: pageTitleBySlug[cluster.pillarSlug], label: "Pillar guide" }]),
+    ...related.map((candidate) => ({ ...candidate, label: "Cluster guide" })),
+  ];
+
+  return `<section class="related-tools-guides learn-cluster-links">
+        <p class="eyebrow">${escapeHtml(cluster.title)}</p>
+        <h2>Continue through this Learn pillar</h2>
+        <p>${escapeHtml(cluster.description)}</p>
+        <div class="related-grid">
+          ${cards.map((candidate) => `<a href="/learn/${candidate.slug}/"><span>${escapeHtml(candidate.label)}</span><strong>${escapeHtml(candidate.h1)}</strong></a>`).join("\n          ")}
+          <a href="/learn/#${cluster.id}"><span>Topic index</span><strong>Browse all ${escapeHtml(cluster.title)} guides</strong></a>
         </div>
       </section>`;
 }
@@ -874,6 +978,7 @@ ${head({
           <div class="cta-row"><a class="button" href="/apps/cutlist/">Open CutList</a><a class="button secondary" href="/tools/">Explore tools</a></div>
         </div>
       </section>
+      ${pillarClusterSection(article)}
       ${relatedGuidesSection(article.slug)}
       ${toolLinks()}
     </article>
@@ -981,6 +1086,7 @@ ${head({
           <div class="cta-row"><a class="button" href="/apps/cutlist/">See the CutList Optimizer app</a><a class="button secondary" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList Optimizer</a></div>
         </div>
       </section>
+      ${pillarClusterSection(page)}
       ${relatedGuidesSection(page.slug) || internalLinksSection(page)}
     </article>
   </main>
@@ -996,7 +1102,7 @@ function learnJsonLd() {
     "@type": "CollectionPage",
     name: "WoodCutTool Learn",
     url: `${siteUrl}/learn/`,
-    description: "SEO content hub for cut list optimization, plywood waste reduction, woodworking calculator workflows, DIY workshop planning, and material estimation for carpentry.",
+    description: `Browse ${allLearnPages.length} guides organized into 12 woodworking planning pillars for cut lists, cabinets, plywood, cutting quality, estimating, installation, and project workflows.`,
     mainEntity: {
       "@type": "ItemList",
       itemListElement: allLearnPages.map((article, index) => ({
@@ -1012,12 +1118,33 @@ function learnJsonLd() {
   </script>`;
 }
 
+function learnClusterNavigation() {
+  return `<nav class="template-category-nav" aria-label="Learn topic pillars">
+      ${learnClusters.map((cluster) => `<a href="#${cluster.id}">${escapeHtml(cluster.title)} <span>${learnPagesByCluster.get(cluster.id).length}</span></a>`).join("\n      ")}
+    </nav>`;
+}
+
+function learnClusterSections() {
+  return learnClusters.map((cluster) => {
+    const pages = learnPagesByCluster.get(cluster.id);
+    return `<section class="section template-category-section" id="${cluster.id}">
+      <div class="template-category-heading">
+        <div><p class="eyebrow">Learn pillar</p><h2>${escapeHtml(cluster.title)}</h2><p>${escapeHtml(cluster.description)}</p></div>
+        <span>${pages.length} guides</span>
+      </div>
+      <div class="grid tools">
+        ${pages.map((page) => `<article class="card"><p class="eyebrow">${page.slug === cluster.pillarSlug ? "Pillar guide" : "Supporting guide"}</p><h3>${escapeHtml(page.h1)}</h3><p>${escapeHtml(page.description)}</p><a class="card-link" href="/learn/${page.slug}/">Read guide</a></article>`).join("\n        ")}
+      </div>
+    </section>`;
+  }).join("\n    ");
+}
+
 function learnIndexPage() {
   return `<!doctype html>
 <html lang="en">
 ${head({
-    title: "Woodworking Calculator Guides: Cuts, Waste & Estimates",
-    description: "Guides on cut list optimization, plywood waste, saw kerf, and material estimation. Learn the method, then jump straight to the matching calculator.",
+    title: "Woodworking Learn Hub: 12 Planning Pillars",
+    description: `Browse ${allLearnPages.length} woodworking guides in 12 pillars covering cut lists, cabinets, plywood, cutting quality, estimating, installation, stairs, tile, quilts, and shop workflow.`,
     canonical: `${siteUrl}/learn/`,
     jsonLd: learnJsonLd()
   })}
@@ -1027,24 +1154,17 @@ ${head({
   <main id="main" class="learn-page">
     <section class="page-hero">
       <p class="breadcrumb"><a href="/">Home</a> / Learn</p>
-      <p class="eyebrow">SEO learning hub</p>
-      <h1>Learn Cut List Optimization, Woodworking Calculators, and Material Estimation</h1>
-      <p class="lead">Use this learning hub to understand cut list optimization, plywood waste reduction, woodworking calculator workflows, DIY workshop planning, and material estimation for carpentry. Each guide links directly to WoodCutTool calculators and the CutList iPhone app so readers can move from research to action.</p>
+      <p class="eyebrow">12 connected planning pillars</p>
+      <h1>Woodworking Learn Hub</h1>
+      <p class="lead">Browse ${allLearnPages.length} guides organized by the decision you need to make: build a cut-list system, size cabinets, choose plywood, improve cutting quality, estimate purchases, verify field fit, or plan a specific project. Every pillar connects the method to a diagnostic, template, example, dataset, calculator, or CutList action.</p>
       <div class="hero-actions"><a class="button" href="/tools/">Explore tools</a><a class="button secondary" href="/apps/cutlist/">Open CutList</a></div>
     </section>
-    <section class="section"><div class="research-note"><p class="eyebrow">Diagnose a problem</p><h2>When the plan no longer matches the shop</h2><p>Open the <a href="/troubleshooting/">woodworking troubleshooting library</a> for answer-first checks covering layouts that do not fit, drifting cut sizes, cabinet clearances, material defects, mixed units, and revision errors. Each page returns you to the right guide, calculator, example, or dataset after the cause is isolated.</p><p><a class="button" href="/troubleshooting/">Browse 35 troubleshooting checks</a></p></div></section>
+    <section class="section"><div class="research-note"><p class="eyebrow">Diagnose a problem</p><h2>When the plan no longer matches the shop</h2><p>Open the <a href="/troubleshooting/">woodworking troubleshooting library</a> for answer-first checks covering layouts that do not fit, drifting cut sizes, cabinet clearances, material defects, mixed units, and revision errors. Each page returns you to the right guide, calculator, example, or dataset after the cause is isolated.</p><p><a class="button" href="/troubleshooting/">Browse 100 troubleshooting checks</a></p></div></section>
     <section class="section">
-      <div class="section-heading compact"><p class="eyebrow">SEO landing pages</p><h2>High-intent planning pages for long-tail searches.</h2><p>These landing pages match users searching for plywood optimization, material calculators, cut list planning, DIY estimates, and sheet layouts.</p></div>
-      <div class="grid tools">
-        ${landingPages.map((page) => `<article class="card"><h2>${escapeHtml(page.h1)}</h2><p>${escapeHtml(page.description)}</p><a class="card-link" href="/learn/${page.slug}/">Open landing page</a></article>`).join("\n        ")}
-      </div>
+      <div class="section-heading compact"><p class="eyebrow">Choose a topic</p><h2>Start with one planning pillar</h2><p>The pillar map keeps closely related guides together and gives every supporting page a stable route back to its main method.</p></div>
+      ${learnClusterNavigation()}
     </section>
-    <section class="section">
-      <div class="section-heading compact"><p class="eyebrow">Guides</p><h2>Long-tail woodworking and material planning articles.</h2><p>These articles support SEO discovery and convert high-intent readers toward calculators, tool pages, and the CutList app.</p></div>
-      <div class="grid tools">
-        ${articles.map((article) => `<article class="card"><h2>${escapeHtml(article.h1)}</h2><p>${escapeHtml(article.description)}</p><a class="card-link" href="/learn/${article.slug}/">Read guide</a></article>`).join("\n        ")}
-      </div>
-    </section>
+    ${learnClusterSections()}
     ${toolLinks()}
   </main>
   ${footer()}
@@ -1082,4 +1202,4 @@ for (const page of landingPages) {
   writeFileSync(join(dir, "index.html"), landingPage(page));
 }
 
-console.log(`Generated ${allLearnPages.length} learn pages.`);
+console.log(`Generated ${articles.length + landingPages.length} Learn pages and indexed ${allLearnPages.length} pages across ${learnClusters.length} pillars.`);
