@@ -1,6 +1,6 @@
 # WoodCutTool content-column roadmap, 2026–2027
 
-Updated: 2026-07-20
+Updated: 2026-07-21
 
 ## Objective
 
@@ -17,11 +17,11 @@ Build a durable woodworking knowledge system in which every search-shaped questi
 | App comparisons | 116 | Workflow and app-choice decisions |
 | General comparisons | 75 | Material, method, tool, and construction tradeoffs |
 | Templates | 71 | Project planning starting points |
-| Examples | 36 | Finished cut-list inputs with downloadable CSV evidence |
+| Examples | 60 | Finished cut-list inputs with downloadable CSV evidence |
 | Research | 7 | Source-linked, reproducible first-party datasets and reports |
 | Tools | 25 | Calculators and action pages |
 
-The immediate 2026-07-20 milestone completed the first 100-page Troubleshooting edition. Its five balanced clusters are Layouts, Cutting, Cabinets, Materials, and Workflow.
+The 2026-07-20 milestone completed the first 100-page Troubleshooting edition. Its five balanced clusters are Layouts, Cutting, Cabinets, Materials, and Workflow. The 2026-07-21 milestone then expanded Examples from 36 to 60 complete project datasets, added one downloadable CSV per project, and connected the new pages to their source templates, calculators, and relevant diagnostic pages.
 
 ## Editorial architecture
 
@@ -100,4 +100,4 @@ For content maintenance, prioritize pages with one of these signals:
 
 ## Next recommended batch
 
-Expand Examples from 36 to 60 with 24 complete project datasets that map directly to underrepresented Templates and Troubleshooting topics. Each example should include a downloadable CSV, explicit stock and kerf assumptions, rotation-allowed and grain-locked outcomes, complete-layout status, and links back to its template, calculator, and relevant diagnosis page. This creates stronger evidence than another broad Blog-only batch and closes the largest current gap between 71 templates and 36 finished examples.
+Build a paired 15-project small-space and renter-friendly cluster to take Templates from 71 to 86 and Examples from 60 to 75. Each project should begin with a measured footprint, transport or doorway constraint, reversible-installation boundary, complete parts list, and a downloadable CSV with complete-layout status. Publish the template and evidence page together, then link them to the most relevant calculator, Learn method, and Troubleshooting diagnosis. This reaches the Phase 2 evidence target while adding a distinct high-intent cluster instead of extending Examples with near-duplicate furniture variants.

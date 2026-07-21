@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { projectBenchmarks } from "./plywood-benchmark-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dataDir = join(root, "research", "data");
@@ -109,7 +110,7 @@ const orientationValues = new Set(robustnessObjects.map((row) => row.orientation
 const scenarioKeys = robustnessObjects.map((row) => [row.project_slug, row.trim_margin_each_edge_in, row.kerf_in, row.orientation_mode].join("|"));
 const expectedRobustnessRows = projectSlugs.size * trimValues.size * kerfValues.size * orientationValues.size;
 
-if (projectSlugs.size !== 36) issues.push([robustnessFile, `expected 36 projects; found ${projectSlugs.size}`]);
+if (projectSlugs.size !== projectBenchmarks.length) issues.push([robustnessFile, `expected ${projectBenchmarks.length} projects; found ${projectSlugs.size}`]);
 if (trimValues.size !== 5) issues.push([robustnessFile, `expected 5 trim values; found ${trimValues.size}`]);
 if (kerfValues.size !== 7) issues.push([robustnessFile, `expected 7 kerf values; found ${kerfValues.size}`]);
 if (orientationValues.size !== 2) issues.push([robustnessFile, `expected 2 orientation modes; found ${orientationValues.size}`]);

@@ -66,6 +66,9 @@ const projectConsiderations = {
   "cutoff-storage-bin": ["Set compartments from the offcut policy and recurring stock sizes, not arbitrary symmetry.", "Keep narrow pieces visible and removable without unloading the whole bin.", "Control loaded center of gravity and anchor or widen the base when needed."],
   "sanding-station": ["Lay out actual sanders, dust ports, hoses, abrasives, and power before shelf positions.", "Separate dust-producing equipment from clean consumable storage.", "Check tool access, ventilation, cord routing, and a stable loaded base."],
   "small-parts-drawer-cabinet": ["Choose drawer heights from real fasteners, bins, and hand access rather than one repeated opening.", "Calculate box width from the selected slides and the finished case opening.", "Reserve clear label zones and growth capacity so the system remains searchable."],
+  ...Object.fromEntries(projectBenchmarks
+    .filter((entry) => Array.isArray(entry.considerations))
+    .map((entry) => [entry.slug, entry.considerations])),
 };
 
 if (Object.keys(projectConsiderations).length !== projectBenchmarks.length) {
@@ -117,8 +120,9 @@ function pageShell({ title, description, route, schemas, body }) {
   <meta name="twitter:image" content="${siteUrl}/assets/og/woodcuttool-og.png">
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script defer src="/assets/site-chrome.js"></script>
   ${schemas.map(jsonLd).join("\n  ")}
+  <style>.mega-menu{display:none}</style>
+  <script defer src="/assets/site-chrome.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -172,6 +176,7 @@ function layoutSvg(project, packed) {
 }
 
 function articleSchema(project, row, description, route) {
+  const projectPublishedDate = project.publishedDate ?? publishedDate;
   return {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -179,8 +184,8 @@ function articleSchema(project, row, description, route) {
     description,
     url: `${siteUrl}${route}`,
     mainEntityOfPage: `${siteUrl}${route}`,
-    datePublished: publishedDate,
-    dateModified: publishedDate,
+    datePublished: projectPublishedDate,
+    dateModified: benchmarkVersion,
     author: { "@type": "Organization", name: "WoodCutTool Editorial Team", url: `${siteUrl}/about/` },
     publisher: { "@type": "Organization", name: "WoodCutTool", url: `${siteUrl}/` },
     about: ["cut list", "plywood layout", project.category, project.name],
@@ -209,6 +214,10 @@ function examplePage(project) {
     ? `Locking every part orientation increased the modeled result from ${row.allowedSheets} to ${row.lockedSheets} sheets and reduced whole-project yield from ${pct(row.allowedYield)} to ${pct(row.lockedYield)}. That is a useful cost signal, not permission to rotate visible grain: classify each part before releasing orientation.`
     : `The rotation-allowed and fully locked scenarios both used ${row.allowedSheets} ${plural(row.allowedSheets, "sheet")}. In this parts list, orientation did not change sheet count, but it can still change placement order, offcut shape, grain continuity, and cut sequence.`;
   const considerations = projectConsiderations[project.slug];
+  const projectPublishedDate = project.publishedDate ?? publishedDate;
+  const troubleshootingNote = project.troubleshootingPath
+    ? `      <section class="research-note"><h2>Diagnose a related build problem</h2><p>If the physical project no longer matches the released parts, use <a href="${project.troubleshootingPath}">${esc(project.troubleshootingLabel)}</a> before changing dimensions at the saw. Preserve the original input, test one cause at a time, and regenerate the layout after the source list is corrected.</p></section>\n\n`
+    : "";
   const h1 = `${titleCase(project.name)} Cut List Example: ${row.partCount} Parts on ${row.allowedSheets} ${plural(row.allowedSheets, "Sheet")}`;
 
   return pageShell({
@@ -222,13 +231,13 @@ function examplePage(project) {
       <p class="eyebrow">Cut List Example · ${esc(project.category)}</p>
       <h1>${esc(h1)}</h1>
       <p class="lead">This reproducible example packs a ${esc(project.name.toLowerCase())} parts list on standard 96 × 48 inch plywood with a 1/8 inch kerf. It publishes the input rows, modeled layout, rotation comparison, and CSV so you can inspect the estimate instead of trusting a sheet-count claim without evidence.</p>
-      <p class="article-byline">Published ${publishedDate} by <a href="/about/">WoodCutTool Editorial Team</a> · Benchmark ${benchmarkVersion}, method <code>${benchmarkMethod}</code></p>
+      <p class="article-byline">Published ${projectPublishedDate} by <a href="/about/">WoodCutTool Editorial Team</a> · Benchmark ${benchmarkVersion}, method <code>${benchmarkMethod}</code></p>
 
       <section class="research-metrics" aria-label="Example result">
         ${metric("Parts", String(row.partCount), `${project.parts.length} named part groups`)}
         ${metric("4×8 sheets", String(row.allowedSheets), "Rotation allowed")}
         ${metric("Material yield", pct(row.allowedYield), `${pct(100 - row.allowedYield)} unfilled area`)}
-        ${metric("Grain locked", String(row.lockedSheets), `${lockedDifference > 0 ? `+${lockedDifference} sheet` : "Same sheet count"}`)}
+        ${metric("Grain locked", String(row.lockedSheets), `${row.allowedComplete && row.lockedComplete ? "Complete" : "Review"} · ${lockedDifference > 0 ? `+${lockedDifference} sheet` : "Same sheet count"}`)}
       </section>
 
       <section><h2>The answer first: how much plywood does this example use?</h2><p>The modeled ${esc(project.name.toLowerCase())} uses <strong>${sheetText} of 4×8 plywood</strong> for ${row.partCount} rectangular parts at ${pct(row.allowedYield)} material yield. Total finished-part area is ${row.partArea.toFixed(1)} square inches. Dividing that area by 4,608 square inches gives an area-only lower bound of ${row.theoreticalSheets} ${plural(row.theoreticalSheets, "sheet")}, but the layout still has to solve part geometry, kerf, and orientation.</p><p>This is a planning example, not a guaranteed purchase quantity or a construction drawing. It excludes joinery allowance, damaged-edge trimming, defects, test cuts, replacement pieces, hardware, face selection, and any project components not shown in the parts table.</p></section>
@@ -243,7 +252,7 @@ function examplePage(project) {
 
       <section><h2>Three project checks before you use these dimensions</h2><ol>${considerations.map((item) => `<li>${esc(item)}</li>`).join("")}</ol><p>Resolve these checks in the drawing and hardware specifications before optimizing. If a choice changes a finished width, material group, grain arrow, or quantity, update the parts list and regenerate the layout rather than adjusting pieces at the saw.</p></section>
 
-      <section><h2>How to adapt this example to your project</h2><ol><li>Open the linked <a href="${project.templatePath}">${esc(project.name)} template</a> and define the finished outside dimensions and construction method.</li><li>Replace every example row with your finished part dimensions, quantity, material code, and grain rule.</li><li>Separate backs, drawer bottoms, doors, finished panels, and other thicknesses into their own purchasable material groups.</li><li>Measure the real sheet and blade, then enter usable sheet size, edge trim, and kerf in the <a href="/plywood-cut-calculator/">plywood cut calculator</a>.</li><li>Inspect the last sheet, useful offcuts, first cuts, narrow strips, labels, and replacement risk before ordering.</li></ol></section>
+${troubleshootingNote}      <section><h2>How to adapt this example to your project</h2><ol><li>Open the linked <a href="${project.templatePath}">${esc(project.name)} template</a> and define the finished outside dimensions and construction method.</li><li>Replace every example row with your finished part dimensions, quantity, material code, and grain rule.</li><li>Separate backs, drawer bottoms, doors, finished panels, and other thicknesses into their own purchasable material groups.</li><li>Measure the real sheet and blade, then enter usable sheet size, edge trim, and kerf in the <a href="/plywood-cut-calculator/">plywood cut calculator</a>.</li><li>Inspect the last sheet, useful offcuts, first cuts, narrow strips, labels, and replacement risk before ordering.</li></ol></section>
 
       <section><h2>Why this title uses a sheet count and yield</h2><p>Searchers asking for a ${esc(project.name.toLowerCase())} cut list usually want an immediate scale check: number of parts, likely sheets, and whether the list is available. Those numbers are placed in the heading and description because they are computed from the visible input, not added as clickbait. The page then exposes the assumptions that can make the number change.</p><p>Yield is finished-part area divided by purchased sheet area. It does not claim that every remaining square inch is avoidable waste. Kerf, edge trim, defects, safe handling, offcut shape, and project-specific constraints determine what the shop can actually reuse.</p></section>
 
@@ -259,15 +268,34 @@ function examplePage(project) {
 
 function exampleCsv(project) {
   const row = projectResult(project, kerf);
-  const header = ["project", "category", "part_group", "length_in", "width_in", "quantity", "sheet_length_in", "sheet_width_in", "kerf_in", "rotation_allowed_sheets", "rotation_allowed_yield_pct", "grain_locked_sheets", "grain_locked_yield_pct", "source_template", "benchmark_version", "method"];
-  const rows = project.parts.map((part) => [project.name, project.category, part.label, part.length, part.width, part.qty, 96, 48, kerf, row.allowedSheets, row.allowedYield.toFixed(3), row.lockedSheets, row.lockedYield.toFixed(3), project.templatePath, benchmarkVersion, benchmarkMethod]);
+  const header = ["project", "category", "part_group", "length_in", "width_in", "quantity", "sheet_length_in", "sheet_width_in", "kerf_in", "rotation_allowed_sheets", "rotation_allowed_yield_pct", "rotation_allowed_rejected_piece_count", "rotation_allowed_complete_layout", "grain_locked_sheets", "grain_locked_yield_pct", "grain_locked_rejected_piece_count", "grain_locked_complete_layout", "source_template", "benchmark_version", "method"];
+  const rows = project.parts.map((part) => [project.name, project.category, part.label, part.length, part.width, part.qty, 96, 48, kerf, row.allowedSheets, row.allowedYield.toFixed(3), row.allowedRejected, row.allowedComplete, row.lockedSheets, row.lockedYield.toFixed(3), row.lockedRejected, row.lockedComplete, project.templatePath, benchmarkVersion, benchmarkMethod]);
   return `${[header, ...rows].map((values) => values.map(csvCell).join(",")).join("\n")}\n`;
 }
 
 const rows = projectBenchmarks.map((project) => ({ project, result: projectResult(project, kerf) }));
 const categoryCounts = Object.entries(rows.reduce((map, { project }) => ({ ...map, [project.category]: (map[project.category] || 0) + 1 }), {}));
 const hubDescription = `Browse ${rows.length} downloadable cut list examples with real part dimensions, 4×8 sheet counts, material yield, rotation comparisons, and plywood layouts.`;
-const hubCards = rows.map(({ project, result }) => `<a class="research-card example-card" href="/examples/${project.slug}-cut-list/"><span>${esc(project.category)} · ${result.partCount} parts</span><h2>${esc(titleCase(project.name))} Cut List</h2><p><strong>${result.allowedSheets} ${plural(result.allowedSheets, "sheet")}</strong> at ${pct(result.allowedYield)} modeled yield with a 1/8 inch kerf.</p><strong>View parts and layout →</strong></a>`).join("");
+const categoryOrder = ["Cabinets", "Storage", "Furniture", "Shop", "Outdoor", "Small Projects"];
+const categoryDescriptions = {
+  Cabinets: "Carcasses, appliance openings, islands, and shop cabinets with explicit panel geometry.",
+  Storage: "Shelves, benches, carts, closets, and organizers sized around real storage constraints.",
+  Furniture: "Tables, seating, media furniture, and compact builds with visible-grain decisions.",
+  Shop: "Workstations, tool storage, and mobile fixtures with machine and loaded-use checks.",
+  Outdoor: "Exterior storage and planting projects with moisture and drainage assumptions kept visible.",
+  "Small Projects": "Desktop builds that make material thickness, clear openings, and repeat cuts easy to inspect.",
+};
+const categoryId = (category) => category.toLowerCase().replaceAll(/[^a-z0-9]+/g, "-");
+const categoryNav = categoryOrder
+  .filter((category) => rows.some(({ project }) => project.category === category))
+  .map((category) => `<a href="#${categoryId(category)}">${esc(category)}</a>`)
+  .join("");
+const categorySections = categoryOrder.map((category) => {
+  const group = rows.filter(({ project }) => project.category === category);
+  if (!group.length) return "";
+  const cards = group.map(({ project, result }) => `<a class="research-card example-card" href="/examples/${project.slug}-cut-list/"><span>${esc(project.category)} · ${result.partCount} parts</span><h3>${esc(titleCase(project.name))} Cut List</h3><p><strong>${result.allowedSheets} ${plural(result.allowedSheets, "sheet")}</strong> at ${pct(result.allowedYield)} modeled yield with a 1/8 inch kerf.</p><strong>View parts and layout →</strong></a>`).join("");
+  return `<section class="template-category-section" id="${categoryId(category)}"><div class="template-category-heading"><div><p class="eyebrow">${esc(category)}</p><h2>${esc(category)} cut list examples</h2></div><span>${group.length} examples</span></div><p>${esc(categoryDescriptions[category])}</p><div class="research-card-grid example-card-grid">${cards}</div></section>`;
+}).join("");
 const hubSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -302,7 +330,8 @@ const hubHtml = pageShell({
         ${metric("Download files", String(rows.length), "One editable CSV per example")}
         ${metric("Hidden inputs", "0", "Parts and assumptions stay visible")}
       </section>
-      <section><h2>Choose a project example</h2><p>Titles show the project rather than a generic keyword, while every card exposes the modeled sheet count and yield before the click. Open a result to inspect exactly why the number is plausible and what must change for your project.</p><div class="research-card-grid example-card-grid">${hubCards}</div></section>
+      <section><h2>Choose a project example</h2><p>Titles show the project rather than a generic keyword, while every card exposes the modeled sheet count and yield before the click. Open a result to inspect exactly why the number is plausible and what must change for your project.</p><nav class="template-category-nav" aria-label="Browse cut list example categories">${categoryNav}</nav></section>
+      ${categorySections}
       <section><h2>Why examples are different from templates</h2><p>A <a href="/templates/">template</a> helps define the parts a project may need. An example goes one step further by running a declared parts list through a versioned layout method and publishing the result. Use the template for design structure, the example for scale and assumptions, and <a href="/apps/cutlist/">CutList</a> for your saved project dimensions.</p></section>
       <section><h2>What the numbers mean</h2><p>Each result uses nominal 96 × 48 inch plywood, a 1/8 inch kerf, and a deterministic rectangle-packing heuristic. Material yield is finished-part area divided by total sheet area. It is not a promise of optimal nesting or usable offcut value, and it does not include defects, trim, joinery, replacement parts, or omitted components.</p></section>
       <section><h2>Built for answer-first search results</h2><p>Project name, part count, sheet count, and modeled yield are kept close to the title and description because they answer the first purchasing question quickly. The pages earn those numbers by exposing every input, linking the source template, and providing a CSV rather than repeating an unexplained estimate across thin pages.</p></section>

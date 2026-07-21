@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url><loc>https://woodcuttool.com/troubleshooting/</loc><lastmod>2026-07-20</lastmod><changefreq>weekly</changefreq><priority>0.92</priority></url>
-  <url><loc>https://woodcuttool.com/examples/</loc><lastmod>2026-07-19</lastmod><changefreq>weekly</changefreq><priority>0.92</priority></url>
+  <url><loc>https://woodcuttool.com/examples/</loc><lastmod>2026-07-21</lastmod><changefreq>weekly</changefreq><priority>0.92</priority></url>
   <url><loc>https://woodcuttool.com/glossary/</loc><lastmod>2026-07-17</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://woodcuttool.com/compare/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/compare/2x4-vs-2x6/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -79,42 +79,66 @@
   <url><loc>https://woodcuttool.com/compare/wideback-vs-pieced-quilt-backing/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/compare/wood-treads-vs-composite-deck-stair-treads/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/compare/woodworking-calculator-vs-paper-plans/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/examples/appliance-garage-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/assembly-table-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/base-cabinet-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/bathroom-vanity-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/bookshelf-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/closet-tower-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/coffee-table-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/console-table-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/craft-storage-cabinet-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/cube-storage-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/cutoff-storage-bin-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/entryway-locker-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/folding-craft-table-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/french-cleat-wall-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/kids-table-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/kitchen-island-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/laundry-cabinet-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/laundry-folding-table-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/media-cabinet-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/microwave-shelf-cabinet-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/miter-saw-stand-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/mobile-workbench-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/mudroom-bench-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/outdoor-storage-box-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/pantry-cabinet-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/record-cabinet-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/rolling-cart-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/sanding-station-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/sewing-table-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/sheet-goods-storage-cart-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/shop-cabinet-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/small-parts-drawer-cabinet-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/under-bed-drawers-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/utility-closet-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/wall-cabinet-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
-  <url><loc>https://woodcuttool.com/examples/window-seat-cut-list/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/appliance-garage-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/assembly-table-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/base-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/bathroom-vanity-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/bookshelf-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/clamp-rack-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/closet-tower-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/coffee-table-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/console-table-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/craft-storage-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/cube-storage-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/cutoff-storage-bin-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/desk-organizer-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/dining-bench-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/dollhouse-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/drill-press-stand-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/entryway-locker-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/entryway-table-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/file-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/floating-shelf-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/folding-craft-table-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/folding-work-table-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/french-cleat-wall-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/kids-table-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/kitchen-island-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/laundry-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/laundry-folding-table-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/linen-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/lounge-chair-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/media-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/microwave-shelf-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/miter-saw-stand-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/mobile-workbench-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/monitor-riser-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/mudroom-bench-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/nightstand-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/outdoor-storage-box-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/pantry-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/pegboard-organizer-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/planter-box-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/plywood-chair-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/printer-stand-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/record-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/rolling-cart-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/rolling-pantry-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/router-table-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/sanding-station-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/sewing-table-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/sheet-goods-storage-cart-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/shoe-rack-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/shop-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/small-parts-drawer-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/storage-bench-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/tool-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/toy-box-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/under-bed-drawers-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/utility-closet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/wall-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/wall-garage-cabinet-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
+  <url><loc>https://woodcuttool.com/examples/window-seat-cut-list/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
   <url><loc>https://woodcuttool.com/glossary/4x8-sheet/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.76</priority></url>
   <url><loc>https://woodcuttool.com/glossary/actual-size/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.76</priority></url>
   <url><loc>https://woodcuttool.com/glossary/actual-thickness/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.76</priority></url>
@@ -315,14 +339,14 @@
   <url><loc>https://woodcuttool.com/glossary/wood-putty/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.76</priority></url>
   <url><loc>https://woodcuttool.com/glossary/yield/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.76</priority></url>
   <url><loc>https://woodcuttool.com/glossary/zero-clearance-insert/</loc><lastmod>2026-07-17</lastmod><changefreq>monthly</changefreq><priority>0.76</priority></url>
-  <url><loc>https://woodcuttool.com/research/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/research/edge-trim-allowance-impact/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/research/grain-direction-rotation-sheet-count-impact/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/research/plywood-layout-robustness-matrix/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/research/plywood-project-yield-benchmarks/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/research/plywood-sheet-size-comparison/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/research/project-kerf-sensitivity-matrix/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/research/saw-kerf-sheet-count-impact/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/research/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/research/edge-trim-allowance-impact/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/research/grain-direction-rotation-sheet-count-impact/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/research/plywood-layout-robustness-matrix/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/research/plywood-project-yield-benchmarks/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/research/plywood-sheet-size-comparison/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/research/project-kerf-sensitivity-matrix/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/research/saw-kerf-sheet-count-impact/</loc><lastmod>2026-07-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/troubleshooting/adjustable-shelves-are-not-level/</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
   <url><loc>https://woodcuttool.com/troubleshooting/ambiguous-dimensions-in-cut-list/</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>
   <url><loc>https://woodcuttool.com/troubleshooting/appliance-opening-too-small/</loc><lastmod>2026-07-20</lastmod><changefreq>monthly</changefreq><priority>0.81</priority></url>

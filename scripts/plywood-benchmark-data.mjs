@@ -1,4 +1,7 @@
-export const benchmarkVersion = "2026-07-17";
+import { exampleBatch20260721 } from "./example-batch-2026-07-21.mjs";
+
+export const benchmarkPublishedDate = "2026-07-17";
+export const benchmarkVersion = "2026-07-21";
 export const benchmarkMethod = "woodcuttool-maxrects-v1";
 export const standardSheet = { length: 96, width: 48, area: 4608 };
 
@@ -44,8 +47,16 @@ export const projectBenchmarks = [
   project("sheet-goods-storage-cart", "Sheet goods storage cart", "Shop", "/templates/sheet-goods-storage-cart-cut-list/", [part("Base layers", 48, 30, 2), part("Dividers", 48, 24, 3), part("End panels", 30, 24, 2), part("Caster blocks", 4, 4, 4)]),
   project("cutoff-storage-bin", "Cutoff storage bin", "Shop", "/templates/cutoff-storage-bin-cut-list/", [part("Sides", 36, 18, 2), part("Dividers", 24, 16.5, 4), part("Bottom", 30, 16.5), part("Back", 36, 30)]),
   project("sanding-station", "Sanding station", "Shop", "/templates/sanding-station-cut-list/", [part("Sides", 34.5, 20, 2), part("Top layers", 30, 22, 2), part("Shelves", 28.5, 18.5, 2), part("Back", 34.5, 30)]),
-  project("small-parts-drawer-cabinet", "Small parts drawer cabinet", "Shop", "/templates/small-parts-drawer-cabinet-cut-list/", [part("Sides", 36, 12, 2), part("Top and bottom", 24, 10.5, 2), part("Drawer dividers", 22.5, 10.5, 5), part("Back", 36, 24)])
+  project("small-parts-drawer-cabinet", "Small parts drawer cabinet", "Shop", "/templates/small-parts-drawer-cabinet-cut-list/", [part("Sides", 36, 12, 2), part("Top and bottom", 24, 10.5, 2), part("Drawer dividers", 22.5, 10.5, 5), part("Back", 36, 24)]),
+  ...exampleBatch20260721,
 ];
+
+if (projectBenchmarks.length !== 60) {
+  throw new Error(`Expected 60 project benchmarks, received ${projectBenchmarks.length}`);
+}
+if (new Set(projectBenchmarks.map((entry) => entry.slug)).size !== projectBenchmarks.length) {
+  throw new Error("Project benchmark slugs must be unique");
+}
 
 export const kerfPatterns = [
   project("twelve-inch-rips", "Eight 12 x 48 shelves", "Repeated shelves", "/learn/saw-kerf-explained/", [part("Shelf", 48, 12, 8)]),
@@ -174,6 +185,10 @@ export function projectResult(input, kerf = 0.125) {
     allowedYield: allowed.sheets.length ? partArea / (allowed.sheets.length * standardSheet.area) * 100 : 0,
     lockedSheets: locked.sheets.length,
     lockedYield: locked.sheets.length ? partArea / (locked.sheets.length * standardSheet.area) * 100 : 0,
+    allowedRejected: allowed.rejected.length,
+    lockedRejected: locked.rejected.length,
+    allowedComplete: allowed.rejected.length === 0,
+    lockedComplete: locked.rejected.length === 0,
     rejected: [...allowed.rejected, ...locked.rejected].length
   };
 }

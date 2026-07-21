@@ -10129,7 +10129,8 @@ tr:last-child td {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
-.research-card h2 { margin: 10px 0 8px; font-size: 1.25rem; }
+.research-card h2,
+.research-card h3 { margin: 10px 0 8px; font-size: 1.25rem; }
 .research-card p { margin: 0 0 16px; }
 .research-card strong { color: var(--accent); }
 .research-metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); }

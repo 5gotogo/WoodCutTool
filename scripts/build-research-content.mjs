@@ -3,6 +3,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   benchmarkMethod,
+  benchmarkPublishedDate,
   benchmarkVersion,
   kerfPatterns,
   projectBenchmarks,
@@ -23,8 +24,10 @@ const sheetFormats = [
   { slug: "5x10", label: "5 × 10 ft", length: 120, width: 60 }
 ];
 const trimMargins = [0, 0.125, 0.25, 0.5, 1];
-const robustnessVersion = "2026-07-18";
+const robustnessPublishedDate = "2026-07-18";
+const robustnessVersion = "2026-07-21";
 const projectRows = projectBenchmarks.map((project) => projectResult(project));
+const projectCategoryCount = new Set(projectRows.map((row) => row.category)).size;
 const kerfRows = kerfPatterns.flatMap((pattern) => kerfs.map((kerf) => ({ ...projectResult(pattern, kerf), kerf })));
 const projectKerfRows = projectBenchmarks.flatMap((project) => matrixKerfs.flatMap((kerf) => [true, false].map((allowRotate) =>
   scenarioResult(project, { kerf, allowRotate })
@@ -165,7 +168,7 @@ function datasetSchema({
   route,
   csvPath,
   variables,
-  datePublished = benchmarkVersion,
+  datePublished = benchmarkPublishedDate,
   measurementTechnique = "Deterministic MaxRects-style rectangle-packing heuristic",
   version = benchmarkVersion
 }) {
@@ -199,7 +202,7 @@ function datasetSchema({
   };
 }
 
-function page({ route, title, description, eyebrow, h1, lead, schemas, content, published = benchmarkVersion, version = benchmarkVersion }) {
+function page({ route, title, description, eyebrow, h1, lead, schemas, content, published = benchmarkPublishedDate, version = benchmarkVersion }) {
   const canonical = `${siteUrl}${route}`;
   const jsonLd = schemas.map((schema) => `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`).join("\n  ");
   return `<!doctype html>
@@ -300,7 +303,7 @@ const hubHtml = page({
   ],
   content: `
       <section class="research-card-grid" aria-label="Available research reports">${hubCards}</section>
-      <section class="research-note"><h2>Open a project-level cut list example</h2><p>The <a href="/examples/">Cut List Examples library</a> turns the aggregate benchmark into 36 individual project pages. Each example publishes its parts, 4×8 sheet count, material yield, rotation comparison, layout diagram, source template, and downloadable CSV.</p></section>
+      <section class="research-note"><h2>Open a project-level cut list example</h2><p>The <a href="/examples/">Cut List Examples library</a> turns the aggregate benchmark into ${projectRows.length} individual project pages. Each example publishes its parts, 4×8 sheet count, material yield, rotation comparison, layout diagram, source template, and downloadable CSV.</p></section>
       <section><h2>What makes these datasets useful</h2><p>The reports answer narrow planning questions with explicit inputs. Project dimensions come from WoodCutTool’s public template library, and every layout uses the same deterministic MaxRects-style heuristic while one declared variable changes. The raw CSV files make it possible to inspect individual rows, reproduce summaries, or compare the estimates with another optimizer.</p></section>
       <section><h2>Provenance and production</h2><p>These datasets are computed from WoodCutTool’s own planning examples; they are not scraped product specifications, copyrighted plans, customer files, or claims about market-wide outcomes. The generator, method version, input template URL, and limitations remain visible so automated production does not hide how a result was made.</p></section>
       <section><h2>What the results do not prove</h2><p>These are planning benchmarks, not guaranteed purchase quantities or proof of a globally optimal layout. Real sheets can have damaged edges, voids, bow, trim loss, and defects. Joinery, hardware, test cuts, replacement pieces, face quality, and cut sequence can also increase material needs. Measure the stock and blade, validate every project dimension, and review the actual layout before purchasing or cutting.</p></section>
@@ -334,7 +337,7 @@ const projectHtml = page({
   ],
   content: `
       <section class="research-metrics" aria-label="Dataset summary">
-        ${metric("Projects tested", String(projectRows.length), "Five project categories")}
+        ${metric("Projects tested", String(projectRows.length), `${projectCategoryCount} project categories`)}
         ${metric("Heuristic sheets", String(totalAllowedSheets), "Rotation allowed")}
         ${metric("Mean material yield", pct(avgAllowedYield), "Unweighted project mean")}
         ${metric("Rotation-sensitive", String(affectedByRotation.length), "Projects using more sheets when locked")}
@@ -624,7 +627,7 @@ const robustnessHtml = page({
   eyebrow: "Open dataset · Layout risk",
   h1: "Plywood Cut Layout Robustness Matrix",
   lead: `A cut layout can look efficient under one optimistic input and fail when real edge loss, blade width, or grain rules are applied. This ${robustnessRows.length.toLocaleString()}-scenario matrix tests those constraints together so fragile plans are visible before material is purchased.`,
-  published: robustnessVersion,
+  published: robustnessPublishedDate,
   version: robustnessVersion,
   schemas: [
     datasetSchema({
@@ -632,7 +635,7 @@ const robustnessHtml = page({
       description: robustnessDescription,
       route: "/research/plywood-layout-robustness-matrix/",
       csvPath: robustnessCsvPath,
-      datePublished: robustnessVersion,
+      datePublished: robustnessPublishedDate,
       version: robustnessVersion,
       variables: ["project", "trim margin on each edge", "saw kerf", "orientation mode", "usable sheet dimensions", "estimated sheet count", "material yield", "rejected piece count", "complete layout"],
       measurementTechnique: "Deterministic MaxRects-style rectangle-packing heuristic while jointly varying edge trim, saw kerf, and orientation mode"

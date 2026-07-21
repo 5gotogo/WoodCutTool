@@ -2,6 +2,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { templateBatch20260717 } from "./template-batch-2026-07-17.mjs";
+import { projectBenchmarks } from "./plywood-benchmark-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const today = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai" }).format(new Date());
@@ -144,7 +145,7 @@ await Promise.all(templates.map(async (template) => {
 }));
 const hubHtml = hub().replace(
   '<section class="template-feature-section">',
-  '<section class="research-note"><h2>See a calculated cut list before you edit</h2><p>Open the <a href="/examples/">Cut List Examples library</a> to inspect real part rows, modeled 4×8 sheet counts, material yield, rotation comparisons, layout diagrams, and downloadable CSV files for 36 of these projects.</p></section><section class="template-feature-section">'
+  `<section class="research-note"><h2>See a calculated cut list before you edit</h2><p>Open the <a href="/examples/">Cut List Examples library</a> to inspect real part rows, modeled 4×8 sheet counts, material yield, rotation comparisons, layout diagrams, and downloadable CSV files for ${projectBenchmarks.length} of these projects.</p></section><section class="template-feature-section">`
 );
 await writeFile(resolve(root, "templates", "index.html"), hubHtml);
 console.log(`Generated ${templates.length} template pages and refreshed templates hub on ${today}.`);
