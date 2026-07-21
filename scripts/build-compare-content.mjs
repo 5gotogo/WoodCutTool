@@ -345,10 +345,34 @@ function keyDifferenceCards(article) {
 
 const newComparisons = comparisonDefinitions.map(makeArticle);
 
+function relatedComparisonArticles(article, count = 3) {
+  const related = [];
+  const seen = new Set([article.slug]);
+  const addRing = (peers, targetCount) => {
+    const currentIndex = peers.findIndex((candidate) => candidate.slug === article.slug);
+    if (currentIndex === -1 || peers.length < 2) return;
+    for (let distance = 1; related.length < targetCount && distance < peers.length; distance += 1) {
+      for (const direction of [1, -1]) {
+        const candidate = peers[(currentIndex + direction * distance + peers.length) % peers.length];
+        if (!candidate || seen.has(candidate.slug)) continue;
+        seen.add(candidate.slug);
+        related.push(candidate);
+        if (related.length >= targetCount) break;
+      }
+    }
+  };
+
+  addRing(newComparisons.filter((candidate) => candidate.category === article.category), 1);
+  if (related.length < count) addRing(newComparisons, count);
+
+  return related;
+}
+
 function comparisonPage(article) {
   const canonical = `${siteUrl}/compare/${article.slug}/`;
   const visual = compareVisual(article.category);
   const freshDetail = freshComparisonDetails[article.slug];
+  const relatedComparisons = relatedComparisonArticles(article);
   const [priceFactor, priceA, priceB] = priceRow(article);
   const ratingsA = optionRatings(article, article.optionA);
   const ratingsB = optionRatings(article, article.optionB);
@@ -469,6 +493,13 @@ ${freshDetail ? `      <section class="comparison-section">
           <a href="${article.relatedA}"><span>Article</span><strong>Related planning article</strong><em>Read the supporting guide for this decision.</em></a>
           <a href="/compare/"><span>Compare</span><strong>All comparisons</strong></a>
           <a href="/apps/cutlist/"><span>App</span><strong>CutList Optimizer</strong></a>
+        </div>
+      </section>
+
+      <section class="comparison-section">
+        <div class="section-heading compact"><p class="eyebrow">Compare next</p><h2>More ${escapeHtml(article.category.toLowerCase())} decisions</h2></div>
+        <div class="related-grid">
+          ${relatedComparisons.map((candidate) => `<a href="/compare/${candidate.slug}/"><span>${escapeHtml(candidate.category)}</span><strong>${escapeHtml(candidate.h1)}</strong><em>${escapeHtml(candidate.description)}</em></a>`).join("\n          ")}
         </div>
       </section>
 

@@ -7,8 +7,14 @@ export async function onRequest(context) {
   }
 
   if (url.hostname === "woodcuttool.com" && url.pathname === "/" && url.searchParams.get("q") === "{search_term_string}") {
-    url.search = "";
-    return Response.redirect(url.toString(), 301);
+    return new Response("This invalid search template URL is gone.", {
+      status: 410,
+      headers: {
+        "Cache-Control": "public, max-age=86400",
+        "Content-Type": "text/plain; charset=utf-8",
+        "X-Robots-Tag": "noindex"
+      }
+    });
   }
 
   return context.next();

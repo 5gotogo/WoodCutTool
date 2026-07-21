@@ -2,6 +2,7 @@ import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags } from "./seo-meta.mjs";
+import { compareData } from "./app-compare-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -550,6 +551,30 @@ ${cards}
     </section>`;
 }
 
+function appComparisonsSection(app) {
+  const comparisons = compareData[app.slug]?.articles || [];
+  if (!comparisons.length) return "";
+
+  const cards = comparisons.map((comparison) => `<a href="/apps/compare/${escapeHtml(comparison.slug)}/">
+          <span>Decision guide</span>
+          <strong>${escapeHtml(comparison.title)}</strong>
+          <em>${escapeHtml(comparison.desc)}</em>
+        </a>`).join("\n        ");
+
+  return `    <!-- app-comparisons:start -->
+    <section class="app-detail-comparisons section" aria-label="${escapeHtml(app.name)} comparisons">
+      <div class="section-heading compact">
+        <p class="eyebrow">Compare before choosing</p>
+        <h2>${escapeHtml(app.name)} versus common alternatives</h2>
+        <p>Use these decision guides to compare the documented app workflow with manual methods and familiar alternatives.</p>
+      </div>
+      <div class="related-grid">
+        ${cards}
+      </div>
+    </section>
+    <!-- app-comparisons:end -->`;
+}
+
 function appOffer(app) {
   const raw = String(app.formattedPrice || "").trim();
   const price = /^free$/i.test(raw) ? "0" : raw.match(/[\d.]+/)?.[0];
@@ -663,6 +688,7 @@ ${head({
       </aside>
     </section>
 ${appReviewsSection(app)}
+${appComparisonsSection(app)}
   </main>
   ${footer()}
 </body>
@@ -701,6 +727,19 @@ apps.forEach((app, index) => {
     rmSync(slugDir, { recursive: true, force: true });
   }
 });
+
+for (const slug of handWrittenOverrideSlugs) {
+  const app = appBySlug.get(slug);
+  if (!app) continue;
+  const path = join(root, detailHref(app), "index.html");
+  let html = readFileSync(path, "utf8");
+  const section = appComparisonsSection(app);
+  const markerPattern = /\s*<!-- app-comparisons:start -->[\s\S]*?<!-- app-comparisons:end -->/;
+  html = markerPattern.test(html)
+    ? html.replace(markerPattern, `\n${section}`)
+    : html.replace(/\n\s*<\/main>/, `\n${section}\n  </main>`);
+  writeFileSync(path, html);
+}
 
 updateHomePage();
 console.log(`Generated ${generatedDetailPageCount} app detail pages.`);

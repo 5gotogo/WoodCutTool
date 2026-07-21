@@ -291,6 +291,72 @@ const customDefinitions = new Map([
   ["Finished Face", "A finished face is the visible side of a part that should avoid tearout, dents, wrong grain direction, and layout marks."]
 ]);
 
+const termDetails = new Map([
+  ["End Panel", {
+    definition: "An end panel is the finished panel seen at the exposed end of a cabinet run. It may be a separate applied skin or a cabinet side sized and finished to remain visible after doors, fillers, countertops, and trim are installed.",
+    why: "End panels affect the finished width of the cabinet run, door and drawer reveals, countertop overhang, filler placement, and which plywood face must remain presentation-ready. Leaving the panel out of the cut list can make an otherwise correct cabinet box finish short or misalign with adjacent fronts.",
+    workflow: "Confirm whether the design uses an applied panel or a finished cabinet side, then record its finished height, depth, thickness, grain direction, exposed face, and any scribe allowance. Add it to the material group before optimizing sheets so its visible face and grain are not treated like an internal cabinet part.",
+    example: "For a base cabinet at the end of a kitchen run, the end panel may extend to the floor, stop above the toe kick, or cover the toe-kick notch. The drawing and cut list must use the same choice before the panel is sized.",
+    mistake: "A common mistake is copying the cabinet-side dimensions without checking the door overlay, countertop projection, toe-kick treatment, or wall scribe. The panel can then be structurally usable but visually wrong."
+  }],
+  ["Template", {
+    definition: "A woodworking template is a repeatable pattern used to transfer a shape, hole layout, curve, or cutting boundary to one or more workpieces. Templates are commonly made from MDF, plywood, hardboard, acrylic, or an accurately prepared first part.",
+    why: "A template turns one carefully verified layout into repeatable parts. Its accuracy controls every copy, including curves, hardware holes, router paths, and offsets created by guide bushings or bearing-guided bits.",
+    workflow: "Mark a reference edge and orientation on the template, verify the master against the drawing, and test it on scrap. When routing, account for the relationship between the cutter, bearing, or guide bushing and keep the template secured so it cannot shift during the cut.",
+    example: "A cabinet shop can use one shelf-pin template for every side panel, or a curved MDF template to flush-trim several identical furniture parts after rough cutting them slightly oversize.",
+    mistake: "The costly mistake is copying an unverified first layout. A small hole-spacing or offset error is then repeated across every workpiece instead of being caught once."
+  }],
+  ["Part Rotation", {
+    definition: "Part rotation is the option to turn a rectangular part, usually by 90 degrees, while arranging it on a sheet or board. Rotation can improve material yield, but it is only valid when grain direction, finished-face orientation, strength, and pattern direction allow it.",
+    why: "Allowing rotation gives a layout optimizer more packing choices and may reduce sheet count. Locking rotation protects appearance and performance when long-grain direction, veneer matching, printed patterns, or directional surfaces matter.",
+    workflow: "Set rotation per part rather than as a blanket rule. Allow it for non-directional backs, jigs, and hidden utility pieces; lock it for doors, drawer fronts, cabinet ends, slotted material, and any part whose grain or pattern must run a specified direction.",
+    example: "A plywood cabinet back may rotate without affecting appearance, while two visible door fronts should normally keep the same vertical grain even if rotation would fit them onto a smaller offcut.",
+    mistake: "Optimizing only for the lowest waste percentage can produce a numerically efficient sheet that has mismatched grain or weak-looking visible parts."
+  }],
+  ["Drawer Box", {
+    definition: "A drawer box is the functional four-sided container and bottom that moves on drawer slides. It is separate from the decorative drawer front and is sized from the cabinet opening, slide clearance, joinery, bottom groove, and required usable depth.",
+    why: "Drawer-box dimensions connect cabinet geometry to hardware requirements. Side thickness, slide clearance, front and back joinery, bottom-panel fit, and squareness all change the finished outside width and the individual cut sizes.",
+    workflow: "Start with the measured opening and the slide manufacturer's required clearance. Choose the joint and bottom construction, calculate front and back lengths from the finished outside width, then label every side, front, back, and bottom in the cut list before batching repeated drawers.",
+    example: "A nominal 18-inch opening does not automatically produce an 18-inch drawer box. Side-mount slides may require a specific clearance on both sides, and inset construction may also change the decorative front without changing the box the same way.",
+    mistake: "The usual failure is cutting all pieces from the opening size before subtracting slide clearance and accounting for the joinery. The assembled box then binds or leaves the wrong reveal."
+  }],
+  ["Panel Saw", {
+    definition: "A panel saw is a machine designed to break down sheet goods with the work supported vertically or horizontally while the saw carriage or panel follows a controlled path. It is commonly used for plywood, MDF, melamine, and other large panels.",
+    why: "Panel saws make full sheets easier to handle and can produce consistent straight breakdown cuts, but machine calibration, support, blade choice, scoring, and the distinction between rough and final sizing still determine cut quality.",
+    workflow: "Inspect the sheet support and reference stops, confirm the blade is suitable for the face material, plan the first breakdown cuts, and label parts as they leave the machine. Leave trim allowance when the panel saw is being used for rough sizing before a final table-saw or track-saw pass.",
+    example: "A cabinet shop may first rip a 4x8 sheet into manageable strips on a vertical panel saw, then crosscut repeated cabinet sides to final size using a calibrated stop system.",
+    mistake: "Treating every panel-saw cut as automatically finish-ready can leave chipped faces or accumulated dimension error when the machine, blade, or stops have not been checked."
+  }],
+  ["Flush Trim Bit", {
+    definition: "A flush trim bit is a bearing-guided router bit used to trim one surface exactly to a reference edge or template. Common uses include copying shaped parts, trimming laminate or edge banding, and bringing a rough-cut blank to a finished pattern.",
+    why: "The bit can reproduce a verified shape quickly, but the bearing must stay on the reference surface and the cutter must meet the grain in a controllable direction. Bit length, bearing position, stock allowance, and workholding all affect the result.",
+    workflow: "Rough-cut the workpiece close to the final line, secure the template, confirm the bearing rides on the intended reference, and remove material in shallow controlled passes. Change feed direction or use staged cuts where grain reversal could lift fibers.",
+    example: "To make identical curved shelf brackets, cut each blank slightly oversize with a jigsaw, attach the master template, and use the flush trim bit to bring every blank to the same profile.",
+    mistake: "Leaving too much material for one heavy router pass or letting the bearing lose contact can cause chatter, tearout, template damage, or a ruined edge."
+  }],
+  ["Dry Fit", {
+    definition: "A dry fit is a temporary assembly made without final glue, permanent fasteners, or finish. It verifies that parts, joints, hardware, clearances, and the assembly sequence work before the project reaches an irreversible step.",
+    why: "Dry fitting exposes dimension errors while parts can still be trimmed or remade. It also reveals whether clamps can reach, joints close fully, drawers and doors clear adjacent parts, and a large assembly can be built in the planned order.",
+    workflow: "Deburr and label the parts, assemble them in the real sequence, check diagonals and reference faces, test moving hardware, and mark corrections directly on the cut list. Repeat the dry fit after any correction that changes geometry.",
+    example: "Before gluing a cabinet carcass, assemble the sides, top, bottom, fixed shelves, and back without glue, then compare diagonals and confirm the back seats fully in its rabbets.",
+    mistake: "Checking individual joints but skipping the complete assembly can hide accumulated error, inaccessible clamp positions, or a part that cannot be inserted once another joint is glued."
+  }],
+  ["Chalk Line", {
+    definition: "A chalk line is a reel of pigment-coated string snapped against a surface to create a long straight reference. It is useful for sheet layout, framing, flooring, roofing, and construction work where a pencil and straightedge cannot span the distance conveniently.",
+    why: "A chalk line establishes a shared reference over a long distance, but the mark has thickness and can bow if the string is not tensioned or supported. It is a layout aid, not automatically a finish-cut edge.",
+    workflow: "Anchor the line at verified points, pull it tight, lift it squarely from the surface, and snap once. Decide which edge or center of the chalk mark represents the measurement, then use a guide or straightedge when the final cut needs tighter accuracy.",
+    example: "On a large plywood sheet, a chalk line can mark the rough breakdown boundary before a track-saw rail is aligned to the correct side of the mark for the final cut.",
+    mistake: "Cutting through the middle of a wide chalk mark without defining a reference side can introduce a measurable error, especially across repeated panels."
+  }],
+  ["Countersink", {
+    definition: "A countersink is a conical recess that lets the head of a flat-head screw sit flush with or slightly below the material surface. The term can describe the recess, the cutter that makes it, or the operation itself.",
+    why: "A correctly sized countersink improves surface fit and reduces splitting or raised fibers around the screw head. It must match the screw-head angle and should not be confused with a straight-sided counterbore used for plugs or different fastener heads.",
+    workflow: "Drill the pilot hole for the screw's root diameter, use a stop or test piece to set countersink depth, and verify the screw head sits as intended without removing too much face material. Adjust for hardwood, plywood face veneers, and brittle finished surfaces.",
+    example: "For a plywood cabinet cleat, drill the pilot hole first and countersink only deep enough for the flat-head screw to finish flush without cutting through the thin face veneer.",
+    mistake: "Driving the screw itself to create the recess can crush fibers, split hardwood, strip the hole, or pull through a thin plywood face."
+  }]
+]);
+
 const categoryCopy = {
   "Cut planning": {
     noun: "cut planning term",
@@ -330,6 +396,10 @@ const categoryCopy = {
 };
 
 function definition(term) {
+  if (termDetails.has(term.name)) {
+    return termDetails.get(term.name).definition;
+  }
+
   if (customDefinitions.has(term.name)) {
     return customDefinitions.get(term.name);
   }
@@ -339,18 +409,23 @@ function definition(term) {
 }
 
 function relatedTerms(term, count = 10) {
-  const sameCategory = rawTerms.filter((candidate) => candidate.category === term.category && candidate.slug !== term.slug);
-  const sameIndex = rawTerms.findIndex((candidate) => candidate.slug === term.slug);
-  const nearby = rawTerms
-    .slice(Math.max(0, sameIndex - 4), sameIndex)
-    .concat(rawTerms.slice(sameIndex + 1, sameIndex + 5))
-    .filter((candidate) => candidate.slug !== term.slug);
-  const picked = new Map();
-  for (const candidate of [...sameCategory, ...nearby]) {
-    picked.set(candidate.slug, candidate);
-    if (picked.size >= count) break;
+  const peers = rawTerms.filter((candidate) => candidate.category === term.category);
+  const currentIndex = peers.findIndex((candidate) => candidate.slug === term.slug);
+  if (currentIndex === -1 || peers.length < 2) return [];
+
+  const related = [];
+  const seen = new Set([term.slug]);
+  for (let distance = 1; related.length < Math.min(count, peers.length - 1); distance += 1) {
+    for (const direction of [1, -1]) {
+      const candidate = peers[(currentIndex + direction * distance + peers.length) % peers.length];
+      if (!candidate || seen.has(candidate.slug)) continue;
+      seen.add(candidate.slug);
+      related.push(candidate);
+      if (related.length >= count) break;
+    }
   }
-  return [...picked.values()];
+
+  return related;
 }
 
 function termCardGrid(terms, label = "Term") {
@@ -409,7 +484,7 @@ ${head({
       <p class="breadcrumb"><a href="/">Home</a> / Glossary</p>
       <p class="eyebrow">Woodworking glossary</p>
       <h1>Woodworking Glossary</h1>
-      <p class="lead">Short definitions for 200 woodworking, cabinetmaking, cut list, plywood layout, joinery, lumber, measuring, finishing, and hardware terms. Every glossary page links back to this index and to the full set of terms.</p>
+      <p class="lead">Short definitions for 200 woodworking, cabinetmaking, cut list, plywood layout, joinery, lumber, measuring, finishing, and hardware terms. Each page links to focused neighboring terms while this index remains the complete directory.</p>
       <div class="hero-actions"><a class="button" href="/tools/">Explore tools</a><a class="button secondary" href="/learn/">Read guides</a></div>
     </section>
     ${groupedTerms().map(([category, terms]) => `<section class="section">
@@ -439,6 +514,7 @@ function termJsonLd(term) {
 
 function termPage(term) {
   const copy = categoryCopy[term.category];
+  const detail = termDetails.get(term.name);
   const related = relatedTerms(term);
   const title = `What Is ${term.name}? | Woodworking Glossary`;
   const description = `What is ${term.name}? Learn the meaning of ${term.name.toLowerCase()} in woodworking, cut lists, plywood layouts, cabinetmaking, and material planning.`;
@@ -464,12 +540,19 @@ ${head({
       <p class="lead">${escapeHtml(definition(term))}</p>
       <section>
         <h2>Why ${escapeHtml(term.name)} matters</h2>
-        <p>${escapeHtml(copy.why)} For builders using WoodCutTool, the practical point is simple: define the term before the material is cut so the plan, calculator result, and shop work all describe the same thing.</p>
+        <p>${escapeHtml(detail?.why || `${copy.why} For builders using WoodCutTool, the practical point is simple: define the term before the material is cut so the plan, calculator result, and shop work all describe the same thing.`)}</p>
       </section>
       <section>
         <h2>How to use it in a project</h2>
-        <p>${escapeHtml(copy.workflow)} When the project has many parts or expensive material, move from a rough note to a real <a href="/cut-list-calculator/">cut list calculator</a>, <a href="/plywood-cut-calculator/">plywood cut calculator</a>, or saved <a href="/apps/cutlist/">CutList</a> layout before buying or cutting stock.</p>
+        <p>${escapeHtml(detail?.workflow || copy.workflow)} When the project has many parts or expensive material, move from a rough note to a real <a href="/cut-list-calculator/">cut list calculator</a>, <a href="/plywood-cut-calculator/">plywood cut calculator</a>, or saved <a href="/apps/cutlist/">CutList</a> layout before buying or cutting stock.</p>
+      </section>${detail ? `<section>
+        <h2>${escapeHtml(term.name)} project example</h2>
+        <p>${escapeHtml(detail.example)}</p>
       </section>
+      <section>
+        <h2>Common ${escapeHtml(term.name.toLowerCase())} mistake</h2>
+        <p>${escapeHtml(detail.mistake)}</p>
+      </section>` : ""}
       <section class="inline-cta-section">
         <div class="inline-cta">
           <p>Use the glossary to clarify the language, then use WoodCutTool calculators to test the actual numbers.</p>
@@ -481,10 +564,11 @@ ${head({
         <h2>Keep reading</h2>
         ${termCardGrid(related)}
       </section>
-      <section class="related-tools-guides">
-        <p class="eyebrow">Complete glossary</p>
-        <h2>All 200 terms are interlinked</h2>
-        ${termCardGrid(rawTerms, "Glossary")}
+      <section class="inline-cta-section">
+        <div class="inline-cta">
+          <p>Need a different definition? The glossary index groups all 200 terms by cut planning, material, joinery, cabinet, measuring, finishing, and hardware topics.</p>
+          <div class="cta-row"><a class="button secondary" href="/glossary/">Browse the complete glossary</a></div>
+        </div>
       </section>
     </article>
   </main>

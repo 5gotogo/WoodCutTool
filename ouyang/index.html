@@ -296,8 +296,11 @@
       *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .001ms !important; animation-iteration-count: 1 !important; }
     }
   </style>
+  <style>.mega-menu{display:none}</style>
+  <script defer src="/assets/site-chrome.js"></script>
 </head>
 <body>
+  <div data-site-header></div>
   <main class="page">
     <div class="tiny-note">一份只属于你的粉色小心意</div>
 
@@ -380,5 +383,6 @@
       window.setTimeout(() => { button.textContent = "💗 再收下一份开心"; }, 1600);
     });
   </script>
+  <div data-site-footer></div>
 </body>
 </html>

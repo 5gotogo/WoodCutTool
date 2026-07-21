@@ -10103,6 +10103,63 @@ const performanceResponseDetails = {
   }
 };
 
+const indexRecoveryDetails = {
+  "cutlist-drawer-boxes-for-beginners": {
+    title: "Turn the drawer opening into a buildable cut list",
+    paragraphs: [
+      "Start with the measured cabinet opening, not the nominal cabinet width. Record the opening at the front and back, then use the smaller width. The slide manufacturer's required side clearance is a design input: subtract the combined left-and-right clearance from the opening before sizing the drawer box. Keep that calculation beside the cut list so a later slide change does not silently invalidate every side and end panel.",
+      "Choose the joint before finalizing front and back lengths. A butt joint places those parts between the sides, while a rabbet or dovetail changes the material captured by the joint. The bottom also needs an explicit rule: note whether it fits in grooves or attaches beneath the box, and record the groove setback and depth if used. Those decisions determine the finished outside dimensions; they are not shop-floor details to improvise after cutting.",
+      "For a repeatable workflow, build one test box from the same stock and slide hardware. Dry-fit it, check both diagonals, install the slides, and test the full travel in the actual opening. Only after that verification should the quantity be multiplied for the remaining drawers. In CutList, name parts by cabinet and drawer position so paired sides and fronts stay together through cutting, edge treatment, assembly, and installation."
+    ],
+    checks: [
+      "Measure the real opening at more than one depth and use the limiting dimension.",
+      "Write the slide clearance and joint deduction next to the calculated box width.",
+      "Verify one complete drawer before releasing the repeated batch."
+    ]
+  },
+  "quiltfit-half-square-triangle-throw": {
+    title: "Plan the half-square-triangle grid before buying fabric",
+    paragraphs: [
+      "A half-square-triangle throw is easiest to control when the plan separates finished block size, unfinished trim size, and raw square size. The finished size describes the block after it is sewn into the quilt. The unit must be larger while it is being assembled so the outer seam allowances remain available, and the starting squares need additional room for the diagonal seam and trimming. Record all three values instead of treating one number as interchangeable.",
+      "Next, choose the quilt grid. Multiply columns by rows to get the number of finished HST units, then translate the color layout into fabric pairs. If a two-at-a-time method is used, each paired set produces two mirrored units; an odd color count therefore needs a deliberate extra pair or a layout revision. In QuiltFit, place the units into the actual row-and-column arrangement before calculating yardage so the estimate reflects the design rather than a generic block total.",
+      "Make two or four test units with the intended fabric, thread, pressing direction, and trimming ruler. Measure them only after pressing. If they finish small or distorted, adjust the starting-square allowance or sewing setup before cutting the full batch. The same test confirms contrast and orientation: a strong pair on the cutting table can read very differently once repeated across an entire throw. Keep a few spare units in the plan for trimming errors and final layout substitutions.",
+      "Lay out the finished test units in both planned orientations and photograph the preferred arrangement. Add row labels before stacking the pieces, especially when the design uses directional prints or a gradient. Pressing direction also belongs in the plan: alternating seam direction between neighboring rows can make intersections easier to nest, while open seams may suit a different quilting workflow. The important point is consistency across the batch and a written reference that survives movement from cutting table to sewing machine."
+    ],
+    checks: [
+      "Label finished, unfinished, and starting dimensions separately.",
+      "Convert the visual grid into color-pair counts before calculating yardage.",
+      "Test, press, and trim sample units before batch cutting."
+    ]
+  },
+  "tile-waste-estimation-by-pattern": {
+    title: "Estimate layout loss separately from breakage and attic stock",
+    paragraphs: [
+      "Tile waste is not one universal percentage. Begin with the net tiled area, then model the layout loss created by the chosen pattern. A straight layout usually creates offcuts at room edges; diagonal, herringbone, and offset layouts can create more direction-specific pieces that are harder to reuse. Sketch the module across the room dimensions, mark the perimeter cuts, and identify which offcuts can return on the opposite side before adding any contingency.",
+      "Keep three quantities separate in the worksheet: pattern and perimeter loss, installation breakage, and unopened matching stock reserved for future repair. Combining them into a single unexplained allowance makes it impossible to review the order later. For a 100-square-foot room, for example, first calculate the whole and partial tiles required by the dry layout. Then add a small, documented number of replacements for cuts or damage and a separately labeled quantity to retain after installation. Convert the result into full boxes only after checking the manufacturer's pieces-per-box coverage.",
+      "Before ordering, dry-lay a representative row through the room's most visible axis and around one difficult obstruction. Move the starting line if the first plan creates narrow slivers or an awkward repeat at a doorway. Record dye lot, caliber, box coverage, and return policy with the estimate. That evidence makes the allowance defensible and reduces the temptation to solve a poor layout simply by buying a much larger blanket percentage.",
+      "List trim pieces separately from field tile. Bullnose, edge profiles, mosaics, and threshold pieces may have different dimensions, box quantities, and reuse rules, so their waste cannot be inferred from the field-tile area. Door jambs, niches, drains, and valve penetrations should also be counted as specific cuts in the layout review. A short cut schedule for these interruptions exposes risky pieces early and shows whether an offcut is genuinely reusable or only looks large enough on paper."
+    ],
+    checks: [
+      "Map edge cuts and reusable offcuts for the actual pattern.",
+      "Track layout loss, breakage, and repair stock as separate line items.",
+      "Round to full boxes only after verifying printed box coverage and lot details."
+    ]
+  }
+};
+
+function indexRecoveryPanel(article) {
+  const detail = indexRecoveryDetails[article.slug];
+  if (!detail) return "";
+
+  return `<section class="article-application-panel index-recovery-panel">
+        <p class="eyebrow">Worked planning method</p>
+        <h2>${escapeHtml(detail.title)}</h2>
+        ${detail.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}
+        <h3>Verification before the full batch</h3>
+        <ul>${detail.checks.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+      </section>`;
+}
+
 function performanceResponsePanel(article) {
   const detail = performanceResponseDetails[article.slug];
   if (!detail) return "";
@@ -10958,10 +11015,32 @@ function blogPostingJsonLd(article) {
   return `<script type="application/ld+json">\n${JSON.stringify(graph, null, 2)}\n</script>`;
 }
 
+function relatedArticles(article, count = 4) {
+  const related = [];
+  const seen = new Set([article.slug]);
+  const addRing = (peers, targetCount) => {
+    const currentIndex = peers.findIndex((candidate) => candidate.slug === article.slug);
+    if (currentIndex === -1 || peers.length < 2) return;
+    for (let distance = 1; related.length < targetCount && distance < peers.length; distance += 1) {
+      for (const direction of [1, -1]) {
+        const candidate = peers[(currentIndex + direction * distance + peers.length) % peers.length];
+        if (!candidate || seen.has(candidate.slug)) continue;
+        seen.add(candidate.slug);
+        related.push(candidate);
+        if (related.length >= targetCount) break;
+      }
+    }
+  };
+
+  addRing(articles.filter((candidate) => candidate.category === article.category), Math.min(2, count));
+  if (related.length < count) addRing(articles.filter((candidate) => candidate.accent === article.accent), count);
+  if (related.length < count) addRing(articles, count);
+
+  return related;
+}
+
 function articlePage(article) {
-  const related = articles
-    .filter((candidate) => candidate.slug !== article.slug && candidate.category === article.category)
-    .slice(0, 3);
+  const related = relatedArticles(article);
   const research = article.researchBrief || researchBriefs[article.slug] || fallbackResearchBrief(article);
 
   return `<!doctype html>
@@ -10992,7 +11071,7 @@ ${head({
       </div>
       ${research ? `<section class="research-panel"><h2>Research Lens</h2><div class="research-grid"><div><strong>Question</strong><p>${escapeHtml(research.question)}</p></div><div><strong>Working Insight</strong><p>${escapeHtml(research.insight)}</p></div></div></section><section class="metric-panel"><h2>Decision Metrics</h2><div class="metric-pill-grid">${research.metrics.map((metric) => `<span>${escapeHtml(metric)}</span>`).join("")}</div></section>` : ""}
       ${deepDiveFigure(article)}
-      ${blogArticleSections(article)}
+      ${blogArticleSections(article)}${indexRecoveryPanel(article)}
       ${chartFigure(article)}
       ${deepComparison(article)}
       <section class="article-checklist">
@@ -11013,6 +11092,26 @@ ${head({
 </body>
 </html>
 `;
+}
+
+const minimumGeneratedBlogWords = 500;
+
+function visibleWordCount(html) {
+  const text = html
+    .replace(/<script\b[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style\b[\s\S]*?<\/style>/gi, " ")
+    .replace(/<!--([\s\S]*?)-->/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&(?:[a-z]+|#\d+|#x[0-9a-f]+);/gi, " ");
+  return text.match(/[a-z0-9]+(?:[-'][a-z0-9]+)*/gi)?.length || 0;
+}
+
+function applyGeneratedBlogIndexability(html) {
+  if (visibleWordCount(html) >= minimumGeneratedBlogWords) return html;
+  return html.replace(
+    '<meta name="robots" content="index,follow">',
+    '<meta name="robots" content="noindex,follow">'
+  );
 }
 
 const zhArticleTitles = {
@@ -11812,7 +11911,8 @@ function resolveLegacyLearnLinks(html) {
 for (const article of articles) {
   const dir = join(root, "blog", article.slug);
   mkdirSync(dir, { recursive: true });
-  writeFileSync(join(dir, "index.html"), resolveLegacyLearnLinks(articlePage(article)));
+  const html = resolveLegacyLearnLinks(articlePage(article));
+  writeFileSync(join(dir, "index.html"), applyGeneratedBlogIndexability(html));
 }
 
 updateExistingHtml();

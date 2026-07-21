@@ -10,6 +10,7 @@ import { compareData } from "./app-compare-data.mjs";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
 const SITE = "https://woodcuttool.com";
+const CONTENT_UPDATED = "2026-07-21";
 
 function esc(v) {
   return String(v || "")
@@ -87,7 +88,7 @@ function blogPostingSchema(article, slug) {
     mainEntityOfPage: url,
     image: `${SITE}/assets/og/woodcuttool-og.png`,
     datePublished: "2026-06-28",
-    dateModified: "2026-06-28",
+    dateModified: CONTENT_UPDATED,
     inLanguage: "en",
     author: { "@type": "Organization", name: "WoodCutTool Editorial Team", url: `${SITE}/about/` },
     publisher: {
@@ -107,9 +108,43 @@ function relatedApps(app, allApps, n = 3) {
     .slice(0, n);
 }
 
+function siblingComparisons(app, article, count = 3) {
+  const currentIndex = app.articles.findIndex((candidate) => candidate.slug === article.slug);
+  if (currentIndex === -1 || app.articles.length < 2) return [];
+
+  const related = [];
+  const seen = new Set([article.slug]);
+  for (let distance = 1; related.length < Math.min(count, app.articles.length - 1); distance += 1) {
+    for (const direction of [1, -1]) {
+      const candidate = app.articles[(currentIndex + direction * distance + app.articles.length) % app.articles.length];
+      if (!candidate || seen.has(candidate.slug)) continue;
+      seen.add(candidate.slug);
+      related.push(candidate);
+      if (related.length >= count) break;
+    }
+  }
+
+  return related;
+}
+
+function factorAnalysis(article, app) {
+  return article.rows.map(([factor, appValue, otherValue]) => `<article class="card">
+          <span class="eyebrow">${esc(factor)}</span>
+          <h3>${esc(app.appName)} vs ${esc(article.vs)}</h3>
+          <p><strong>${esc(app.appName)}:</strong> ${esc(appValue)}. <strong>${esc(article.vs)}:</strong> ${esc(otherValue)}.</p>
+          <p>Use this factor as a decision check when ${esc(factor.toLowerCase())} changes how often you repeat the task, review the result, or correct a mistake.</p>
+        </article>`).join("\n        ");
+}
+
+function decisionChecklist(article, app) {
+  return article.rows.slice(0, 4).map(([factor, appValue, otherValue]) =>
+    `<li>Choose ${esc(app.appName)} when ${esc(factor.toLowerCase())} needs ${esc(appValue.toLowerCase())}; keep ${esc(article.vs)} when ${esc(otherValue.toLowerCase())} is sufficient.</li>`
+  ).join("\n          ");
+}
+
 function articlePage(app, article, allApps) {
   const slug = article.slug;
-  const otherArticle = app.articles.find((a) => a.slug !== slug);
+  const siblingArticles = siblingComparisons(app, article);
   const related = relatedApps(app, allApps);
   const rowsHtml = article.rows
     .map(([f, a, o]) => `<tr><td><strong>${esc(f)}</strong></td><td>${esc(a)}</td><td>${esc(o)}</td></tr>`)
@@ -156,6 +191,35 @@ ${header}
       </section>
 
       <section>
+        <h2>How each factor changes the decision</h2>
+        <div class="grid tools">
+        ${factorAnalysis(article, app)}
+        </div>
+      </section>
+
+      <section class="article-checklist">
+        <h2>Decision checklist</h2>
+        <ul>
+          ${decisionChecklist(article, app)}
+        </ul>
+      </section>
+
+      <section>
+        <h2>Test the workflow before committing</h2>
+        <ol>
+          <li>Pick one real task that you would normally complete with ${esc(article.vs)}.</li>
+          <li>Compare the same task in ${esc(app.appName)}, paying special attention to ${esc(article.rows[0][0].toLowerCase())} and ${esc(article.rows[1][0].toLowerCase())}.</li>
+          <li>Choose the option that leaves a result you can review, correct, and repeat with fewer manual steps.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>What this comparison covers</h2>
+        <p>This guide compares ${esc(app.appName)} with ${esc(article.vs)} using the documented product workflow and five day-to-day decision factors. It does not assume that one option is automatically best for every person, device, budget, or record-keeping requirement. Start with the factor that creates the most repeated work in your own routine, then verify the result using a real task rather than a demo.</p>
+        <p>After the first test, review what had to be entered manually, what could be corrected, what remained available for later reference, and whether the output was easy to reuse. Those checks matter more than feature count because they show which option will still be practical after the novelty of setup has passed.</p>
+      </section>
+
+      <section>
         <h2>Where ${esc(app.appName)} wins</h2>
         <p>${esc(article.whyApp)}</p>
       </section>
@@ -188,7 +252,10 @@ ${header}
 
       <section>
         <h2>More comparisons</h2>
-        <p>See also <a href="/apps/compare/${otherArticle.slug}/">${esc(otherArticle.title)}</a>, or browse all <a href="/apps/compare/">app comparisons</a>.</p>
+        <div class="related-grid">
+          ${siblingArticles.map((candidate) => `<a href="/apps/compare/${candidate.slug}/"><span>${esc(app.appName)}</span><strong>${esc(candidate.title)}</strong></a>`).join("\n          ")}
+          <a href="/apps/compare/"><span>Directory</span><strong>Browse all app comparisons</strong></a>
+        </div>
       </section>
     </article>
   </main>

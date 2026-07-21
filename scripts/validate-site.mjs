@@ -4,8 +4,15 @@ import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = (process.env.SITE_URL || "https://woodcuttool.com").replace(/\/$/, "");
+const siteHost = new URL(siteUrl).hostname;
 const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
 const errors = [];
+const redirectSourcePaths = new Set(
+  readFileSync(join(root, "_redirects"), "utf8")
+    .split(/\r?\n/)
+    .map((line) => line.trim().split(/\s+/)[0] ?? "")
+    .filter((source) => source.startsWith("/") && !source.includes("*") && !source.includes(":"))
+);
 
 function pathExists(route) {
   const clean = route.split("#")[0].split("?")[0];
@@ -30,6 +37,10 @@ function directoryRouteExists(pathname) {
 }
 
 function redirectProneLocalPath(pathname) {
+  if (redirectSourcePaths.has(pathname)) {
+    return "is configured as a redirect source";
+  }
+
   if (pathname.endsWith("/index.html")) {
     return "uses /index.html instead of the canonical directory route";
   }
@@ -178,6 +189,23 @@ for (const file of htmlFiles) {
     errors.push(`${file} exposes a SearchAction template URL that Google may crawl: {search_term_string}`);
   }
 
+  const internalAbsoluteUrls = [...html.matchAll(/https?:\/\/(?:www\.)?woodcuttool\.com(?:\/[^\s"'<>\\]*)?/gi)]
+    .map((match) => match[0].replaceAll("&amp;", "&"));
+
+  for (const value of internalAbsoluteUrls) {
+    const url = new URL(value);
+
+    if (url.origin !== siteUrl) {
+      errors.push(`${file} exposes a noncanonical internal URL (${url.protocol}//${url.host}): ${value}`);
+      continue;
+    }
+
+    const redirectReason = redirectProneLocalPath(url.pathname);
+    if (redirectReason) {
+      errors.push(`${file} exposes an absolute internal URL that ${redirectReason}: ${value}`);
+    }
+  }
+
   if (!hasNoindex(html)) {
     const route = canonicalRoute(html, routeFromFile(file));
     if (!sitemapUrlSet.has(`${siteUrl}${route}`)) {
@@ -188,9 +216,26 @@ for (const file of htmlFiles) {
   const links = [...html.matchAll(/\s(?:href|src)="([^"]+)"/g)].map((match) => match[1]);
 
   for (const link of links) {
+    if (link.startsWith("http://") || link.startsWith("https://")) {
+      try {
+        const url = new URL(link.replaceAll("&amp;", "&"));
+        if (url.hostname === siteHost || url.hostname === `www.${siteHost}`) {
+          if (url.origin !== siteUrl) {
+            errors.push(`${file} references a noncanonical internal URL (${url.protocol}//${url.host}): ${link}`);
+          } else {
+            const redirectReason = redirectProneLocalPath(url.pathname);
+            if (redirectReason) {
+              errors.push(`${file} references an absolute internal URL that ${redirectReason}: ${link}`);
+            }
+          }
+        }
+      } catch {
+        errors.push(`${file} references a malformed absolute URL: ${link}`);
+      }
+      continue;
+    }
+
     if (
-      link.startsWith("http://") ||
-      link.startsWith("https://") ||
       link.startsWith("mailto:") ||
       link.startsWith("tel:") ||
       link.startsWith("#")
