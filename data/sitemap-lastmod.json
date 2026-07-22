@@ -28,8 +28,8 @@
     "hash": "fe913c377a06b89765407f0fd6914fe32a943a234f4d9c29eaf3149ccdd57f83"
   },
   "/apps/": {
-    "lastmod": "2026-07-17",
-    "hash": "382fe5ae410121d004b3aaea987d8134bcb315444de7ed28cea0f524a44c6145"
+    "lastmod": "2026-07-22",
+    "hash": "b99de886e3799535eebbcc0da683a4e9383fcf3c37dc613e9e3952a703d32bcc"
   },
   "/apps/cutlist/": {
     "lastmod": "2026-07-21",
@@ -638,6 +638,10 @@
   "/apps/invoice-maker-estimate-pdf/": {
     "lastmod": "2026-07-21",
     "hash": "241962bd813dc96827a668037245e927d9ca991382a6cd1aa986b25f17b037b4"
+  },
+  "/apps/jobphotolog-work-reports/": {
+    "lastmod": "2026-07-22",
+    "hash": "cef5579b4b9156d7fb49e252257ad9a6366b6b4751f23f1d1ab33b607f4c2162"
   },
   "/apps/magnifier-reader-big-text/": {
     "lastmod": "2026-07-21",

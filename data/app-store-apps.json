@@ -719,5 +719,27 @@
     "formattedPrice": "Free",
     "trackContentRating": "4+",
     "sellerName": "家宝 戴"
+  },
+  {
+    "id": 6790251598,
+    "slug": "jobphotolog-work-reports",
+    "name": "JobPhotoLog: Work Reports",
+    "genre": "Business",
+    "genres": [
+      "Business"
+    ],
+    "url": "https://apps.apple.com/us/app/jobphotolog-work-reports/id6790251598?uo=4",
+    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3b/78/d4/3b78d49b-3c14-33ef-2e94-80330f6f1079/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshotUrls": [],
+    "description": "JobPhotoLog turns jobsite photos into organized work records and professional PDF reports. It is built for contractors, remodelers, installers, inspectors, property managers, service technicians, tradespeople, and anyone who needs clear visual proof of work without adding a complicated cloud platform to the job.\n\nPRIVACY BY DESIGN\n\n• Offline\n• No Login\n• Privacy First\n• On Device\n• No Cloud Upload\n\nYour project information stays on your iPhone. JobPhotoLog does not require an account, does not ask you to join a workspace, and does not upload your job photos, client details, signatures, receipts, notes, or reports to a cloud service. The core workflow remains available on jobsites with weak reception, in basements, remote properties, workshops, and other places where an internet connection cannot be trusted.\n\nORGANIZE EVERY JOB\n\nCreate a separate project for each client, property, repair, installation, inspection, or construction phase. Add the job name, client, address, public notes, private internal notes, tags, and a color status. Keep active, completed, and archived work easy to find with search and filters. A focused project dashboard shows what has been captured and what still needs attention.\n\nCAPTURE PHOTO EVIDENCE\n\nTake photos directly inside a project so every image stays connected to the right job. JobPhotoLog records capture time and can include location and address context when permission is available. Add client-facing notes, internal notes, tags, and annotations to explain exactly what the image proves. Keep a clean original for future watermark updates while using branded copies in the working record.\n\nBEFORE AND AFTER\n\nCapture a Before photo, add the matching After photo, and compare the pair in one view. Before-and-after documentation makes progress easy to understand for clients, supervisors, insurers, property owners, and your own team. It is useful for repairs, cleaning, restoration, landscaping, installations, maintenance, punch work, and inspection follow-ups.\n\nFIELD RECORDS IN ONE PLACE\n\nScan or import receipts and paperwork. Record work sessions with the built-in timer. Collect a client name and signature for approval. Maintain a site punch list with open and completed items, priority levels, details, and acceptance criteria. These records remain attached to the project so important proof is not scattered between Photos, Notes, Files, and paper folders.\n\nCLIENT AND FULL PDF REPORTS\n\nGenerate a polished PDF whenever the job is ready. The Client Version focuses on customer-safe project information, photos, notes, and approval. The Full Version adds internal work information such as internal notes, work sessions, receipt attachments, and the site punch list. Preview the report before sharing, save a copy to Files, or use the iOS share sheet to send it through the apps and services you choose.\n\nBUILT FOR REAL FIELD WORK\n\nUse JobPhotoLog for construction, remodeling, inspections, installation, cleaning, restoration, property service, landscaping, vehicle work, equipment maintenance, and home improvement. The repeatable workflow stays simple: create a project, capture evidence, add context, resolve outstanding items, collect approval, and deliver the report.\n\nIMPORTANT STORAGE NOTE\n\nBecause there is no JobPhotoLog cloud backup, records depend on your device and backup practices. Export important reports before deleting a project, removing the app, or changing phones. Location details are included only with permission.\n\nJobPhotoLog helps you replace scattered camera rolls and improvised paperwork with a private, repeatable work-report workflow that stays fast, readable, and under your control.\n\nPrivacy Policy:\nhttps://woodcuttool.com/legal/JobPhotoLog/privacy/\n\nSupport:\nhttps://woodcuttool.com/legal/JobPhotoLog/support/",
+    "version": "1.0",
+    "releaseDate": "2026-07-21T07:00:00Z",
+    "currentVersionReleaseDate": "2026-07-21T14:32:42Z",
+    "minimumOsVersion": "26.4",
+    "formattedPrice": "Free",
+    "trackContentRating": "4+",
+    "averageUserRating": 0,
+    "userRatingCount": 0,
+    "sellerName": "家宝 戴"
   }
 ]

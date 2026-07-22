@@ -103,6 +103,10 @@ const generatedOverrideSlugs = new Set(["stringer-stair-layout"]);
 const handWrittenOverrideSlugs = new Set(["cutlist-plywood-optimizer", "quiltfit-quilt-design-planner"]);
 
 const legalLinksBySlug = {
+  "jobphotolog-work-reports": {
+    privacy: "/legal/JobPhotoLog/privacy/",
+    support: "/legal/JobPhotoLog/support/"
+  },
   "thumbtype-typing-speed-test": {
     privacy: "/legal/ThumbType/privacy/",
     support: "/legal/ThumbType/support/"
@@ -111,6 +115,7 @@ const legalLinksBySlug = {
 
 const featuredApps = [
   ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
+  ["jobphotolog-work-reports", "Private, offline jobsite photo records with before-and-after evidence, punch lists, signatures, and professional PDF reports."],
   ["quiltfit-quilt-design-planner", "Quilt design planner for fabric layouts, block planning, and project organization."],
   ["snapreceipt-expenses-and-tax", "Private receipt scanner, expense tracker, and mileage log for reimbursements and tax records."],
   ["invoice-maker-estimate-pdf", "Fast invoice and estimate PDF maker for freelancers, contractors, and small businesses."],
@@ -137,8 +142,8 @@ const categorySections = [
   {
     id: "small-business-apps",
     title: "Small Business Apps",
-    description: "Simple business utilities for vendors, freelancers, contractors, and small teams that need receipts, invoices, inventory counts, shift schedules, expense reports, and everyday records on iPhone.",
-    slugs: ["snapreceipt-expenses-and-tax", "invoice-maker-estimate-pdf", "expensereportmaker-and-receipts", "marketvendor-sales-and-profit", "snapstock-inventory-scanner", "work-shift-schedule-calendar"]
+    description: "Simple business utilities for contractors, vendors, freelancers, and small teams that need work reports, photo evidence, receipts, invoices, inventory counts, shift schedules, expense reports, and everyday records on iPhone.",
+    slugs: ["jobphotolog-work-reports", "snapreceipt-expenses-and-tax", "invoice-maker-estimate-pdf", "expensereportmaker-and-receipts", "marketvendor-sales-and-profit", "snapstock-inventory-scanner", "work-shift-schedule-calendar"]
   },
   {
     id: "document-productivity-apps",
@@ -183,6 +188,7 @@ const appTags = {
   "marketvendor-sales-and-profit": ["Vendors", "Sales", "Profit", "Ledger"],
   "snapstock-inventory-scanner": ["Inventory", "Scanner", "Counts", "Stock"],
   "work-shift-schedule-calendar": ["Shifts", "Calendar", "Schedules", "Work"],
+  "jobphotolog-work-reports": ["Job photos", "PDF reports", "Offline", "No login"],
   "image-compressor-and-zip": ["Compress", "ZIP", "Images", "Export"],
   "export-backup-all-contacts-pro": ["Contacts", "Backup", "CSV", "vCard"],
   "private-meeting-transcriber": ["Transcribe", "Meetings", "Private", "Notes"],
@@ -416,7 +422,7 @@ function appsIndexPage() {
 <html lang="en">
 ${head({
     title: "iPhone Apps for Makers, Work & Everyday Tools | WoodCutTool",
-    description: "Privacy-first iPhone apps including CutList, QuiltFit, SnapReceipt, PDF Scan, and Invoice Maker. Offline tools for makers, small businesses, and everyday work.",
+    description: "Privacy-first iPhone apps including JobPhotoLog, CutList, QuiltFit, SnapReceipt, and PDF Scan. Offline tools for field work, makers, and small businesses.",
     canonical: "https://woodcuttool.com/apps/",
     jsonLd: appsIndexJsonLd()
   })}
@@ -428,7 +434,7 @@ ${head({
       <p class="breadcrumb"><a href="/">Home</a> / Apps</p>
       <p class="eyebrow">App directory</p>
       <h1>Privacy-First iPhone Apps for Work, Makers, and Everyday Tools</h1>
-      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, tinnitus sound masking, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
+      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: jobsite photo reports, plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, tinnitus sound masking, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
       <p class="lead">Deciding whether an app is worth it? Browse our <a href="/apps/compare/">app comparisons</a> to see each one side by side with the manual method or a common alternative.</p>
     </section>
 ${featuredAppsSection()}
