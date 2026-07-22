@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Machine condition","Inspect guards, blade or cutter condition, alignment, power, extraction, and manufacturer-required setup.","The machine is safe, stable, and appropriate for the operation.",""
+"2","","Reference system","Mark the face, edge, fence, stop, datum, and feed direction used to locate the cut.","Every part in the batch uses the same controlled references.",""
+"3","","First article","Machine one representative part and measure it with the same method used at final inspection.","Dimension, square, orientation, edge quality, and downstream fit all pass.",""
+"4","","Batch control","Set a recheck frequency and stop rule for drift, damage, setup movement, or label mismatch.","The batch cannot continue beyond a failed check without correction and a new first article.",""
+"5","","Rail datum","Mark the kept side, align the splinter strip to the true line, and verify the rail cannot move.","The blade removes waste on the intended side of the mark.",""
+"6","","Sheet support","Use a stable surface that supports both pieces and permits full-depth cutting without hazards below.","Neither piece closes the kerf, tips, or drops during the cut.",""
+"7","","Cut sequence","Choose a sequence that preserves reference edges, manageable piece sizes, labels, and grain orientation.","Each remaining panel can still be safely referenced and identified.",""

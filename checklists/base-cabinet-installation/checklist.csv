@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Site readiness","Confirm access, finished surfaces, environmental conditions, power, lighting, protection, and other-trade status.","The work can proceed without predictable damage or blocked access.",""
+"2","","Installation datum","Transfer and verify the governing level, plumb, centerline, elevation, or wall reference at the work area.","Every installed component traces to the same checked reference.",""
+"3","","Hidden conditions","Locate structure, services, membranes, hazards, and no-fastener zones using appropriate records and methods.","Anchoring and cutting avoid unverified hidden conditions.",""
+"4","","Field-change control","Record variance, proposed correction, approval, affected parts, and updated documents before alteration.","A field fix cannot silently change design, safety, function, or future service.",""
+"5","","High-point datum","Map the finished floor and establish the cabinet level line from the controlling high point.","The entire run can be shimmed without falling below required height.",""
+"6","","Service clearance","Coordinate plumbing, electrical, gas, vents, access panels, and appliance connections before backs are cut.","Services remain usable and do not force the cabinets off layout.",""
+"7","","Counter readiness","Check level, face plane, seams, support rails, dishwasher opening, and end-panel conditions.","The installed run is ready for the intended counter system.",""

@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Site readiness","Confirm access, finished surfaces, environmental conditions, power, lighting, protection, and other-trade status.","The work can proceed without predictable damage or blocked access.",""
+"2","","Installation datum","Transfer and verify the governing level, plumb, centerline, elevation, or wall reference at the work area.","Every installed component traces to the same checked reference.",""
+"3","","Hidden conditions","Locate structure, services, membranes, hazards, and no-fastener zones using appropriate records and methods.","Anchoring and cutting avoid unverified hidden conditions.",""
+"4","","Field-change control","Record variance, proposed correction, approval, affected parts, and updated documents before alteration.","A field fix cannot silently change design, safety, function, or future service.",""
+"5","","Tipping geometry","Compare cabinet diagonal and pivot path with ceiling, soffit, light, trim, and floor protection.","The unit can be safely raised or has an approved site-assembly plan.",""
+"6","","Stability","Plan temporary restraint, leveling, joining, and permanent anchoring before doors or loads are added.","The unit cannot tip during any installation stage.",""
+"7","","Vertical fit","Measure wall plumb, ceiling variation, crown or filler allowance, and top service clearances.","The completed top and side conditions remain intentional across the height.",""

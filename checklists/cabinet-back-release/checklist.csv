@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Current product data","Use the exact hardware model's current drawing, template, load, and installation instructions.","Dimensions and limits trace to the purchased model rather than a generic example.",""
+"2","","Actual construction","Measure panel, door, front, edge, gap, and finish build-up at the hardware interface.","The hardware calculation uses real construction dimensions.",""
+"3","","Representative mockup","Install one complete set on production-equivalent material and cycle it through full travel.","Fit, adjustment, access, and appearance pass before batch drilling.",""
+"4","","Adjustment reserve","Center initial settings where practical and record the remaining correction range.","Installation can absorb expected variation without exceeding adjustment limits.",""
+"5","","Construction choice","State back thickness, applied or captured position, groove or rabbet, fasteners, and squaring role.","Part sizes preserve intended case depth and interior space.",""
+"6","","Mounting zones","Locate rails, cleats, screws, French cleats, studs, and any no-cut or no-fastener areas.","The back and hanging system transfer load as designed.",""
+"7","","Openings","Map outlets, pipes, vents, access, and scribe allowances from the cabinet and site datums.","Field openings can be made without weakening the required mounting zones.",""

@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Site readiness","Confirm access, finished surfaces, environmental conditions, power, lighting, protection, and other-trade status.","The work can proceed without predictable damage or blocked access.",""
+"2","","Installation datum","Transfer and verify the governing level, plumb, centerline, elevation, or wall reference at the work area.","Every installed component traces to the same checked reference.",""
+"3","","Hidden conditions","Locate structure, services, membranes, hazards, and no-fastener zones using appropriate records and methods.","Anchoring and cutting avoid unverified hidden conditions.",""
+"4","","Field-change control","Record variance, proposed correction, approval, affected parts, and updated documents before alteration.","A field fix cannot silently change design, safety, function, or future service.",""
+"5","","Opening map","Reconfirm wall width, floor and ceiling level, wall plumb, baseboard, crown, outlets, and heat sources.","Cases plus fillers and scribes fit the controlling envelope.",""
+"6","","Case alignment","Set a common level and face plane while checking join lines, shelf holes, reveals, and face frames.","The full elevation reads as one aligned installation.",""
+"7","","Anchor and finish sequence","Plan structural attachment, removable service access, trim, caulk, touch-up, and protection.","Anchors remain effective and finish work does not hide an unresolved gap.",""

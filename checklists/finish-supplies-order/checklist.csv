@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Specification","Match species, grade, core, thickness, finish, color, and manufacturer requirements to the released project.","The purchase description is specific enough to prevent an unapproved substitution.",""
+"2","","Usable size","Distinguish nominal dimensions from measured usable dimensions after damage, trim, defects, and squaring.","The material plan fits the smallest accepted usable stock.",""
+"3","","Quantity basis","Reconcile optimized need, yield assumption, defect allowance, setup pieces, and spare policy.","Ordered quantity has an explicit and reproducible basis.",""
+"4","","Receiving record","Record supplier, lot, date, measured condition, defects, and disposition before stock is mixed.","Accepted, returned, quarantined, and conditional material are visibly separated.",""
+"5","","System compatibility","Confirm sealer, stain, primer, topcoat, thinner, catalyst, filler, and substrate compatibility from current data sheets.","Every layer is approved for the preceding and following layer.",""
+"6","","Coverage basis","Calculate surface area, number of coats, transfer loss, pot life, and sample allowance.","Quantity covers the released schedule without relying on best-case coverage.",""
+"7","","Safety and disposal","Identify ventilation, PPE, ignition control, rag storage, waste, and local disposal requirements.","Required controls are available before material enters the shop.",""

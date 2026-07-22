@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Specification","Match species, grade, core, thickness, finish, color, and manufacturer requirements to the released project.","The purchase description is specific enough to prevent an unapproved substitution.",""
+"2","","Usable size","Distinguish nominal dimensions from measured usable dimensions after damage, trim, defects, and squaring.","The material plan fits the smallest accepted usable stock.",""
+"3","","Quantity basis","Reconcile optimized need, yield assumption, defect allowance, setup pieces, and spare policy.","Ordered quantity has an explicit and reproducible basis.",""
+"4","","Receiving record","Record supplier, lot, date, measured condition, defects, and disposition before stock is mixed.","Accepted, returned, quarantined, and conditional material are visibly separated.",""
+"5","","Sample plan","Measure multiple pieces, sheets, edges, and center zones with a suitable tool.","The recorded range represents the material lot, not one favorable point.",""
+"6","","Joinery impact","Recalculate grooves, rabbets, tenons, reveals, and captured-panel sizes using the controlling thickness.","The joint has the intended fit across the measured range.",""
+"7","","Hardware impact","Check hinge plates, slide clearances, fastener length, and edge treatment against actual build-up.","Hardware installs without breakthrough, binding, or lost adjustment.",""

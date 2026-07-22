@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Current product data","Use the exact hardware model's current drawing, template, load, and installation instructions.","Dimensions and limits trace to the purchased model rather than a generic example.",""
+"2","","Actual construction","Measure panel, door, front, edge, gap, and finish build-up at the hardware interface.","The hardware calculation uses real construction dimensions.",""
+"3","","Representative mockup","Install one complete set on production-equivalent material and cycle it through full travel.","Fit, adjustment, access, and appearance pass before batch drilling.",""
+"4","","Adjustment reserve","Center initial settings where practical and record the remaining correction range.","Installation can absorb expected variation without exceeding adjustment limits.",""
+"5","","Finished-floor datum","Measure toe-kick height and leveling range from the final floor surface and highest point.","The cabinet and toe space work across the complete run.",""
+"6","","Depth interfaces","Check door and drawer clearance, appliance bases, end panels, returns, and recessed lighting or vents.","The toe-kick line stays continuous without blocking function.",""
+"7","","Field-fit sequence","Separate shop-cut structural bases from field-scribed skins and removable service panels.","Parts cut early do not assume a perfectly straight floor or wall.",""

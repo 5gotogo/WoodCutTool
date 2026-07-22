@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Specification","Match species, grade, core, thickness, finish, color, and manufacturer requirements to the released project.","The purchase description is specific enough to prevent an unapproved substitution.",""
+"2","","Usable size","Distinguish nominal dimensions from measured usable dimensions after damage, trim, defects, and squaring.","The material plan fits the smallest accepted usable stock.",""
+"3","","Quantity basis","Reconcile optimized need, yield assumption, defect allowance, setup pieces, and spare policy.","Ordered quantity has an explicit and reproducible basis.",""
+"4","","Receiving record","Record supplier, lot, date, measured condition, defects, and disposition before stock is mixed.","Accepted, returned, quarantined, and conditional material are visibly separated.",""
+"5","","Rough dimensions","Convert finished parts into required rough thickness, width, length, and quantity before calculating board feet.","Every finished part has enough milling and crosscut allowance.",""
+"6","","Grade and cut","Specify grade, species, flat/rift/quarter preference, sapwood limits, and matching needs.","The material description matches visible and structural use.",""
+"7","","Length mix","Group parts by required clear length and compare them with available board lengths.","Long clear parts are not assumed to come from short or defective stock.",""

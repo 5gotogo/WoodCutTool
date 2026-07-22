@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Active revision","Match the drawing, cut list, estimate, and field notes to one named revision and date.","Every person and downstream file points to the same released revision.",""
+"2","","Measurement source","Mark each dimension as field measured, manufacturer supplied, design derived, or still provisional.","No critical dimension is treated as measured when it is only assumed.",""
+"3","","Units and precision","State the working unit, rounding rule, and measuring-tool resolution beside the project inputs.","Conversions and rounded values cannot silently change a finished size.",""
+"4","","Change record","Write who approved the current inputs and which layouts, quantities, labels, or orders must be regenerated after a change.","The decision trail is complete enough to reproduce the release.",""
+"5","","Variation sources","List thickness variation, machining error, glue line, finish build, hardware play, and site movement separately.","Every meaningful source has a direction and allowance.",""
+"6","","Worst-case stack","Combine the limits in the direction that creates the tightest and loosest fit.","Both extremes meet functional and visual requirements.",""
+"7","","Adjustment path","Identify slots, shims, reveals, scribes, oversize holes, or replaceable parts that absorb variation.","The assembly has a controlled adjustment instead of forced fit.",""

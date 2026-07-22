@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Current product data","Use the exact hardware model's current drawing, template, load, and installation instructions.","Dimensions and limits trace to the purchased model rather than a generic example.",""
+"2","","Actual construction","Measure panel, door, front, edge, gap, and finish build-up at the hardware interface.","The hardware calculation uses real construction dimensions.",""
+"3","","Representative mockup","Install one complete set on production-equivalent material and cycle it through full travel.","Fit, adjustment, access, and appearance pass before batch drilling.",""
+"4","","Adjustment reserve","Center initial settings where practical and record the remaining correction range.","Installation can absorb expected variation without exceeding adjustment limits.",""
+"5","","Installation envelope","Use the complete cutout, ventilation, leveling, trim, handle, hinge, and anti-tip dimensions.","The opening satisfies the most restrictive current requirement.",""
+"6","","Service routing","Locate power, water, drain, gas, duct, shutoff, and connection bend radii without occupying required clearance.","The appliance can connect and slide into place without crushing services.",""
+"7","","Removal path","Check doors, panels, counters, flooring, fasteners, and adjacent units for future replacement.","The appliance remains removable without destructive cabinet work.",""

@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Active revision","Match the drawing, cut list, estimate, and field notes to one named revision and date.","Every person and downstream file points to the same released revision.",""
+"2","","Measurement source","Mark each dimension as field measured, manufacturer supplied, design derived, or still provisional.","No critical dimension is treated as measured when it is only assumed.",""
+"3","","Units and precision","State the working unit, rounding rule, and measuring-tool resolution beside the project inputs.","Conversions and rounded values cannot silently change a finished size.",""
+"4","","Change record","Write who approved the current inputs and which layouts, quantities, labels, or orders must be regenerated after a change.","The decision trail is complete enough to reproduce the release.",""
+"5","","True-scale shape","Check the template against the actual wall, curve, hardware, reveal, or human reach condition.","The template contacts and clears exactly where intended.",""
+"6","","Orientation marks","Label room, assembly, face, top, reference edge, and no-cut zones directly on the template.","The template cannot be flipped or used at the wrong location.",""
+"7","","Transfer method","Define whether the template represents finished size, rough size, centerline, or offset.","The shop can reproduce the approved shape without guessing an allowance.",""

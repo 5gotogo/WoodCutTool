@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Machine condition","Inspect guards, blade or cutter condition, alignment, power, extraction, and manufacturer-required setup.","The machine is safe, stable, and appropriate for the operation.",""
+"2","","Reference system","Mark the face, edge, fence, stop, datum, and feed direction used to locate the cut.","Every part in the batch uses the same controlled references.",""
+"3","","First article","Machine one representative part and measure it with the same method used at final inspection.","Dimension, square, orientation, edge quality, and downstream fit all pass.",""
+"4","","Batch control","Set a recheck frequency and stop rule for drift, damage, setup movement, or label mismatch.","The batch cannot continue beyond a failed check without correction and a new first article.",""
+"5","","Complete inspection","Check finished dimensions, diagonals, face, grain, labels, edge quality, and feature locations.","The part matches the drawing and can be identified without inference.",""
+"6","","Downstream fit","Test the part with mating pieces, hardware, grooves, or installation references where practical.","The part performs its actual role, not only a bench measurement.",""
+"7","","Setup lock","Record fence, stop, tool, program, offset, feed, and measurement method after approval.","The released setup can be maintained and independently checked.",""

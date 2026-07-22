@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Specification","Match species, grade, core, thickness, finish, color, and manufacturer requirements to the released project.","The purchase description is specific enough to prevent an unapproved substitution.",""
+"2","","Usable size","Distinguish nominal dimensions from measured usable dimensions after damage, trim, defects, and squaring.","The material plan fits the smallest accepted usable stock.",""
+"3","","Quantity basis","Reconcile optimized need, yield assumption, defect allowance, setup pieces, and spare policy.","Ordered quantity has an explicit and reproducible basis.",""
+"4","","Receiving record","Record supplier, lot, date, measured condition, defects, and disposition before stock is mixed.","Accepted, returned, quarantined, and conditional material are visibly separated.",""
+"5","","Edge schedule","Mark which individual edges receive banding and whether they are applied before or after machining.","Footage traces to named parts and edges.",""
+"6","","Build-up impact","Confirm band thickness at doors, drawers, shelves, fillers, and hardware interfaces.","Finished dimensions and reveals include the applied edge.",""
+"7","","Process allowance","Add setup strips, end trimming, roll remnants, repairs, and approved spare footage.","The order supports the actual machine or hand-application process.",""

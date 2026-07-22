@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Active revision","Match the drawing, cut list, estimate, and field notes to one named revision and date.","Every person and downstream file points to the same released revision.",""
+"2","","Measurement source","Mark each dimension as field measured, manufacturer supplied, design derived, or still provisional.","No critical dimension is treated as measured when it is only assumed.",""
+"3","","Units and precision","State the working unit, rounding rule, and measuring-tool resolution beside the project inputs.","Conversions and rounded values cannot silently change a finished size.",""
+"4","","Change record","Write who approved the current inputs and which layouts, quantities, labels, or orders must be regenerated after a change.","The decision trail is complete enough to reproduce the release.",""
+"5","","Change set","Compare the previous and current lists by stable part ID, not row position.","Added, removed, resized, and quantity-changed parts are explicit.",""
+"6","","Dependent outputs","Regenerate layouts, material totals, labels, edge schedules, and purchasing groups from the same revision.","No downstream document still carries superseded values.",""
+"7","","Superseded stock","Identify already-cut or already-ordered items affected by the revision.","Reuse, rework, quarantine, and replacement decisions are recorded.",""

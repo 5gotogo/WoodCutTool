@@ -168,6 +168,10 @@ function sitemapMeta(route) {
     return { changefreq: "weekly", priority: "0.92" };
   }
 
+  if (route === "/checklists/") {
+    return { changefreq: "weekly", priority: "0.92" };
+  }
+
   if (route === "/glossary/") {
     return { changefreq: "weekly", priority: "0.9" };
   }
@@ -224,6 +228,10 @@ function sitemapMeta(route) {
     return { changefreq: "monthly", priority: "0.81" };
   }
 
+  if (route.startsWith("/checklists/")) {
+    return { changefreq: "monthly", priority: "0.81" };
+  }
+
   if (route.startsWith("/glossary/")) {
     return { changefreq: "monthly", priority: "0.76" };
   }
@@ -265,6 +273,7 @@ function sortRoutes(routes) {
     "/tools/",
     "/learn/",
     "/troubleshooting/",
+    "/checklists/",
     "/examples/",
     "/glossary/",
     "/apps/",
@@ -376,7 +385,7 @@ function sitemapGroup(route) {
   if (route.startsWith("/templates/")) return "templates";
   if (route.startsWith("/blog/")) return "blog";
   if (route.startsWith("/apps/")) return "apps";
-  if (route.startsWith("/compare/") || route.startsWith("/glossary/") || route.startsWith("/wood/") || route.startsWith("/research/") || route.startsWith("/examples/") || route.startsWith("/troubleshooting/")) return "resources";
+  if (route.startsWith("/compare/") || route.startsWith("/glossary/") || route.startsWith("/wood/") || route.startsWith("/research/") || route.startsWith("/examples/") || route.startsWith("/troubleshooting/") || route.startsWith("/checklists/")) return "resources";
   return "pages";
 }
 

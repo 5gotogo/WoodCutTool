@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Part identity","Match IDs, hand, face, edge, grain, and revision before parts enter the assembly area.","Every part belongs to the same released assembly and orientation.",""
+"2","","Joint preparation","Inspect mating surfaces, machining, dust, damage, finish restrictions, and required relief.","Each joint can close fully without force masking an error.",""
+"3","","Sequence and access","Rehearse the order, clamps, cauls, drivers, cleanup, and hardware access before adhesive or permanent fasteners.","The complete sequence fits the available open time and physical access.",""
+"4","","Release inspection","Check diagonals, dimensions, twist, reveals, movement, and labels before the assembly leaves the fixture.","The assembly meets its downstream installation and finishing requirements.",""
+"5","","Adhesive system","Confirm product, substrate compatibility, temperature, open time, clamp time, cure, and safe-use instructions.","The selected adhesive and environment meet current product requirements.",""
+"6","","Clamp plan","Place clamps and cauls in the dry run and check pressure direction, access, and distortion risk.","Pressure closes joints without bowing, racking, or damaging show faces.",""
+"7","","Cleanup plan","Protect surfaces and stage scrapers, water or solvent only as permitted, and waste containers.","Squeeze-out can be controlled without contaminating finish surfaces.",""

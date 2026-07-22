@@ -2,6 +2,7 @@ import { readdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { learnPillarExpansion20260721 } from "./learn-pillar-batch-2026-07-21.mjs";
+import { checklistEntries } from "./checklist-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
@@ -144,7 +145,8 @@ const groups = {
   appCompare: [],
   glossary: [],
   comparison: [],
-  learnPillar: []
+  learnPillar: [],
+  checklists: []
 };
 const learnPillarFiles = new Set(learnPillarExpansion20260721.map((article) => `learn/${article.slug}/index.html`));
 const noindexCounts = {
@@ -186,10 +188,21 @@ for (const page of pages) {
     if (inbound < 4) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 4.`);
     if (page.words < 750) issues.push(`${page.file} has only ${page.words} visible words; expected at least 750.`);
   }
+
+  if (/^checklists\/[^/]+\/index\.html$/.test(page.file)) {
+    groups.checklists.push({ ...page, inbound });
+    if (inbound < 4) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 4.`);
+    if (page.words < 1000) issues.push(`${page.file} has only ${page.words} visible words; expected at least 1000.`);
+    if (!page.html.includes("checklist.csv")) issues.push(`${page.file} is missing its downloadable checklist CSV.`);
+  }
 }
 
 if (groups.learnPillar.length !== learnPillarExpansion20260721.length) {
   issues.push(`Expected ${learnPillarExpansion20260721.length} new Learn pillar pages, found ${groups.learnPillar.length}.`);
+}
+
+if (groups.checklists.length !== checklistEntries.length) {
+  issues.push(`Expected ${checklistEntries.length} checklist pages, found ${groups.checklists.length}.`);
 }
 
 if (issues.length) {

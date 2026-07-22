@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Machine condition","Inspect guards, blade or cutter condition, alignment, power, extraction, and manufacturer-required setup.","The machine is safe, stable, and appropriate for the operation.",""
+"2","","Reference system","Mark the face, edge, fence, stop, datum, and feed direction used to locate the cut.","Every part in the batch uses the same controlled references.",""
+"3","","First article","Machine one representative part and measure it with the same method used at final inspection.","Dimension, square, orientation, edge quality, and downstream fit all pass.",""
+"4","","Batch control","Set a recheck frequency and stop rule for drift, damage, setup movement, or label mismatch.","The batch cannot continue beyond a failed check without correction and a new first article.",""
+"5","","Pattern datum","Locate holes from stable edges or a verified jig and mark the correct face and hand.","Left, right, inside, and outside parts cannot be confused.",""
+"6","","Depth control","Set stops from measured material thickness and include the point geometry of the bit.","The hole reaches required depth without breakthrough or a weak skin.",""
+"7","","Hardware trial","Install the actual insert, screw, dowel, hinge, or connector in the first article.","Fit, pull, alignment, and remaining wall thickness are acceptable.",""

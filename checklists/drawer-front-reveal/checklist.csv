@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Current product data","Use the exact hardware model's current drawing, template, load, and installation instructions.","Dimensions and limits trace to the purchased model rather than a generic example.",""
+"2","","Actual construction","Measure panel, door, front, edge, gap, and finish build-up at the hardware interface.","The hardware calculation uses real construction dimensions.",""
+"3","","Representative mockup","Install one complete set on production-equivalent material and cycle it through full travel.","Fit, adjustment, access, and appearance pass before batch drilling.",""
+"4","","Adjustment reserve","Center initial settings where practical and record the remaining correction range.","Installation can absorb expected variation without exceeding adjustment limits.",""
+"5","","Elevation layout","Use spacers or a full-size layout to establish shared gaps and endpoints across all fronts.","The visual grid closes correctly at every edge.",""
+"6","","Attachment method","Plan temporary alignment, permanent screws, slotting, handle holes, and future adjustment access.","The front can be positioned without locking in the first rough setting.",""
+"7","","Operational clearance","Cycle every drawer beside doors, pulls, counters, fillers, and adjacent fronts.","No pull or front collides through normal use.",""

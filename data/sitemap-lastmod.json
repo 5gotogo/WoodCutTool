@@ -1,7 +1,7 @@
 {
   "/": {
-    "lastmod": "2026-07-17",
-    "hash": "9b0ade6c4dffb9d20a24c61a0d462b6c411a4e872ca19827d2ff416ee7362c26"
+    "lastmod": "2026-07-22",
+    "hash": "cccf8f305d6708b5ed54919c9835b896211bd5648c6b3f8a1aedd6c3cf93ba8b"
   },
   "/tools/": {
     "lastmod": "2026-07-19",
@@ -14,6 +14,10 @@
   "/troubleshooting/": {
     "lastmod": "2026-07-20",
     "hash": "a558847b41179bb82804527e55d511d0c4bb728ebfd2a3f69b81dcb78cc00496"
+  },
+  "/checklists/": {
+    "lastmod": "2026-07-22",
+    "hash": "03c7fb3a52effb131e4099d8816c47cd0186c386bcda1b576d788d5a4684641f"
   },
   "/examples/": {
     "lastmod": "2026-07-21",
@@ -4706,6 +4710,286 @@
   "/cabinet-door-calculator/": {
     "lastmod": "2026-07-17",
     "hash": "606e5b944b29bed2e939d8292042dce5d6ea8aca3d836e32a16ddaff35d76d2f"
+  },
+  "/checklists/appliance-opening-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "38b931200b0867e9d9a65d17a40760143c0b3fcbe74e910aba7d7c08c5885938"
+  },
+  "/checklists/assembly-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "3fe6cd97bdbf68dc970f6f450ecff50fa329f0a13a1b38c8df0b152141cbe401"
+  },
+  "/checklists/base-cabinet-installation/": {
+    "lastmod": "2026-07-22",
+    "hash": "cff7959e9de8c6cd97695c0414b47494fe6ffbd2ca67da0d0cfddaf1af852b84"
+  },
+  "/checklists/batch-rip-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "cf3a844f3287c5fe84c605348326cc609f6f641e29c805493be833ac093ccddf"
+  },
+  "/checklists/between-coat-inspection/": {
+    "lastmod": "2026-07-22",
+    "hash": "a2c89224c7c49269060309200de56ac4a3a4c22b6c11c22e3ea82050a634f70a"
+  },
+  "/checklists/built-in-bookcase-installation/": {
+    "lastmod": "2026-07-22",
+    "hash": "dbc9570d6e9f5edd8dbef5e05d211ab6dbf9f834f208c67364b49fdbd446f69f"
+  },
+  "/checklists/cabinet-back-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "cce6312d3e1e609dc7e7b0cb80401a24cda3823d78d554f1e80457d0c15d41bd"
+  },
+  "/checklists/cabinet-box-squaring/": {
+    "lastmod": "2026-07-22",
+    "hash": "fc36dfead4656c3466df2a43ec3249bb342f8f8689fcae591c1e7b31082e5ef4"
+  },
+  "/checklists/cabinet-hardware-function-test/": {
+    "lastmod": "2026-07-22",
+    "hash": "eca8367f49a057cfd7f10ae76937432b2d23c26f59740d9c271076bc9082aa74"
+  },
+  "/checklists/clamping-pressure-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "fe9030dac0dda6338e63a737e6e5d86692b4c8c33f5a88554295a88368b89767"
+  },
+  "/checklists/clear-coat-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "251917fe7b75cd9bec0320d8c2845a614ba869a5a6b67b7606d1dddc213ceab8"
+  },
+  "/checklists/client-handoff/": {
+    "lastmod": "2026-07-22",
+    "hash": "e1bad34c73862928272a1b986950389393ad4068c79d6dd005027ecab13f6ee2"
+  },
+  "/checklists/closet-system-installation/": {
+    "lastmod": "2026-07-22",
+    "hash": "7fa2779bd4aa775b044f864f30444ed32bb0048fa0d3fd57ad418d80cf68aedc"
+  },
+  "/checklists/cnc-job-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "ef070eba1abe7afd1dac12425a8533b8302203181ccacc46947005214e489a7c"
+  },
+  "/checklists/concealed-hinge-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "d758ddb94abcd69dc821e63fe6d5ce58ba2811dadb1a484f31b2ae0aadd631c6"
+  },
+  "/checklists/confirmat-screw-assembly/": {
+    "lastmod": "2026-07-22",
+    "hash": "d2b2a870cdd8242cfb2c721bdd6b6cb8cf55bdd69f8f3fa3650155a7950c83f0"
+  },
+  "/checklists/countertop-support-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "7dfa6e304cfe152bac860e60e2e3bcfbfb998129f31df74bf3b4e3e4b84208c6"
+  },
+  "/checklists/crosscut-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "a5e09f80ecf43ccf6e2c999227f5227abe39950fc61910739c8b9970638424b2"
+  },
+  "/checklists/cut-list-revision-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "513de968e3aa21ca695504471c6038b0b9df38cd7a5f4fd14aad2841e061ff0c"
+  },
+  "/checklists/dado-rabbet-groove-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "5b7f1604a9cfee19f2ed32b195e6b4edc0ca385515e6230f407a1df00db8993a"
+  },
+  "/checklists/delivery-load-in-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "4284c0f8c70678cc0dfa30c7063d1792bbcf7e61712d1b7229d59c847d56f989"
+  },
+  "/checklists/door-overlay-reveal/": {
+    "lastmod": "2026-07-22",
+    "hash": "50007b1fd27a2c6fe46b6f4b9e06f9f60255d5a8b7dfbe38931b4e42b9722417"
+  },
+  "/checklists/dowel-domino-joinery/": {
+    "lastmod": "2026-07-22",
+    "hash": "67bd8bfeef9ce89c5d77935b30ce9e075f0d6087b91db8b059d770cae1313e47"
+  },
+  "/checklists/drawer-box-assembly/": {
+    "lastmod": "2026-07-22",
+    "hash": "eed60a67dbd53851269c7c2fba92d674fec3ec218a9223beb2b8152e852444bf"
+  },
+  "/checklists/drawer-front-reveal/": {
+    "lastmod": "2026-07-22",
+    "hash": "15090326ec270794b198b62404cf4d776cd4578f7c6181d0ab29b8503fa53662"
+  },
+  "/checklists/drawer-slide-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "58bfb2d3cea83ba174e0bca3ef2818d5a962a0b45fdf9eabd11a0b6691e8fa64"
+  },
+  "/checklists/drilling-boring-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "e66a5d87edfd5699f06700ec43577188637586bf57a4d2ed7fbc1d74904bf6d9"
+  },
+  "/checklists/dry-fit-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "64432a888df30528680a5bd62e39f6639b0e84428613f46f2cc2c27fad2ec7af"
+  },
+  "/checklists/edge-banding-order/": {
+    "lastmod": "2026-07-22",
+    "hash": "d079a8b0f41c5cb4f056bcca504f94c40815aa0652787c514ef7041ed70a34cc"
+  },
+  "/checklists/face-frame-assembly/": {
+    "lastmod": "2026-07-22",
+    "hash": "ac8645490651abe504c3e6ea19532ee5a35cf42e7670a8ad1fa47e574bc8237f"
+  },
+  "/checklists/filler-scribe-installation/": {
+    "lastmod": "2026-07-22",
+    "hash": "f375765d2ecf116fc4cb81272f48779224611aec76f11a479dea133b37d5b7e3"
+  },
+  "/checklists/final-design-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "894eb7d1c701812684b66038d1cc57a8c5d6be87f741efeed4bda40da62a2912"
+  },
+  "/checklists/final-installation-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "853252f2e78ef16ac19ce8852d38c02287896e81b46f5cd9fb524df5383ff03d"
+  },
+  "/checklists/finish-cure-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "2ab5da74a729e67f8509f31e7207734e2d077462810be4cba3972ded33b55b4b"
+  },
+  "/checklists/finish-supplies-order/": {
+    "lastmod": "2026-07-22",
+    "hash": "27cb214362467c3bf9b46ec0294c2542d5e36045c8d8ee3b16f21ba74cf3cd24"
+  },
+  "/checklists/first-article-cut-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "fc2b1f8c6db98e5f1c10ef31a590f3816c1626002d1c3dca44ba9e7afdd1d95e"
+  },
+  "/checklists/floating-shelf-installation/": {
+    "lastmod": "2026-07-22",
+    "hash": "9fc869f8711dedb3a3b60f1d90d39ba4909c3e692189b72184fc0854f8f44f76"
+  },
+  "/checklists/glue-up-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "d7c7f02c54294ac1e0d09fb26c96e8b1cf1edcab3f413c06e47623957162f1b7"
+  },
+  "/checklists/grain-face-orientation-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "3cd9d403e0d82678932f64c9e87445091a3e269d3c6519c7b67e41e2a7f4a678"
+  },
+  "/checklists/hardware-order-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "be4825eda97d198fdf88fb42c9b0da77fb9288bfcb277353086b7b95fa21c62f"
+  },
+  "/checklists/jobsite-measurement-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "fc273d4dc4b62290737bf1d1adf61e815a4bfd1292335c5a27dee7c1cb99e2e9"
+  },
+  "/checklists/lumber-order-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "63e7fbafc6dd678ab4edd001535c6bcd1afa5b98c982c439702642a91462ca9d"
+  },
+  "/checklists/material-thickness-verification/": {
+    "lastmod": "2026-07-22",
+    "hash": "31a98ee936960994800885d3b2813464b63e60ac727a65856fe01a815cb1fcf7"
+  },
+  "/checklists/mockup-template-approval/": {
+    "lastmod": "2026-07-22",
+    "hash": "077fb4d1f156a1d48ca99f1cf3a4e5d2def692e257bfdce74a23e7add953e679"
+  },
+  "/checklists/moisture-acclimation-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "73f782f77815641acbaa213a46e9c9d1f55955eafc3435011626d09f485cecae"
+  },
+  "/checklists/offcut-inventory-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "c7751e19da338589f2efb6e57d18c9964270086ffbebdca36d48009d46d5122b"
+  },
+  "/checklists/opening-clearance-verification/": {
+    "lastmod": "2026-07-22",
+    "hash": "a22a19c46f50f961dd28205bfc3e2fa37fdeda9ef755a6048d20c3a8e0930127"
+  },
+  "/checklists/paint-finish-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "ae275886fa7d691622ee95c66cee3216c1565aa45d92fe6b18b5f95a86d5754f"
+  },
+  "/checklists/plywood-edge-finish/": {
+    "lastmod": "2026-07-22",
+    "hash": "b9de6e16cc46ab93c850b69bd35c8bbcf8e8b745e316fa774df36d0a9074134e"
+  },
+  "/checklists/plywood-order-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "91fa4a921493824ad6f6cd14cbf9fe84ab522366c32bf258d3b8d03a547658dc"
+  },
+  "/checklists/pocket-hole-assembly/": {
+    "lastmod": "2026-07-22",
+    "hash": "9c0137a61db77604c39776c0b0bc5ae9799e8793d856bbb9ada360b95702ab0e"
+  },
+  "/checklists/project-closeout/": {
+    "lastmod": "2026-07-22",
+    "hash": "7e23dd43eb2f8a90b4215248abb695d1a0969f13b2840cc882b01eed4fc41470"
+  },
+  "/checklists/project-dimension-freeze/": {
+    "lastmod": "2026-07-22",
+    "hash": "4472ebf4b34279a84326360e9c0f9de30a4171505c0e3dcbde2abebc4527b8ff"
+  },
+  "/checklists/purchase-reconciliation/": {
+    "lastmod": "2026-07-22",
+    "hash": "94833660e1e38bb34e526486a6b2db959f6b9211fb349cb012033239e4b2f756"
+  },
+  "/checklists/router-operation-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "42aeaad900b956593e8d91b0b8fe4803e2703e9aa983caab709912c83297b58d"
+  },
+  "/checklists/saw-preflight/": {
+    "lastmod": "2026-07-22",
+    "hash": "f850048e93f0ea467f42053a88400a5a3c8446043cfe3fbf9b7b8ef8c01608c8"
+  },
+  "/checklists/sheet-usability-receiving/": {
+    "lastmod": "2026-07-22",
+    "hash": "5301be90bdddfcab8e760ddbd422da2c93b25e0eabb3c8443cfff91174b29157"
+  },
+  "/checklists/shelf-pin-boring/": {
+    "lastmod": "2026-07-22",
+    "hash": "ef74bf965e875c078a682640a41daf4c4cadacb606c2df50b1ac91f08a5b689b"
+  },
+  "/checklists/shop-punch-list/": {
+    "lastmod": "2026-07-22",
+    "hash": "ade2628b79d8123e9e2c25e3140f27e3cbd55f80311d1761c7040831f6b2df27"
+  },
+  "/checklists/square-level-plumb-survey/": {
+    "lastmod": "2026-07-22",
+    "hash": "65fc3711c003e5deb4e660110bcb0828216a107aa75531ab80aade32673df728"
+  },
+  "/checklists/stain-sample-approval/": {
+    "lastmod": "2026-07-22",
+    "hash": "4865150d27f386113758d63e7a24286f14c6a281094e9482acfae636be3c443e"
+  },
+  "/checklists/surface-preparation-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "b0ac99f8ba6e6094cdca5ed526bf5d238180b98725631a2f20e9bc2b4b8f1fb3"
+  },
+  "/checklists/table-saw-setup-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "f8d3f54d366b9d2ffa49525ca6b2aea2ddd336b8feb7f772e782e019b2b969e6"
+  },
+  "/checklists/tall-cabinet-installation/": {
+    "lastmod": "2026-07-22",
+    "hash": "0290bc5cec8a2c56a0ea257741c927d688b0cfd32b17f30539e349d56add1ccf"
+  },
+  "/checklists/toe-kick-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "dfd1ab8cb94e290a864c7c8d7abf516fb02d1a363af303d4425f1bca27daca24"
+  },
+  "/checklists/tolerance-stack-review/": {
+    "lastmod": "2026-07-22",
+    "hash": "548b2c5e3c9ed73badc9f2444ff13e14c860fbf901c5b8faaf3ee3239499f41a"
+  },
+  "/checklists/track-saw-sheet-breakdown/": {
+    "lastmod": "2026-07-22",
+    "hash": "c7a16ff5034ad95d1c40c17ee3869181c1660a4ed5280ed04ba0b1613f8ba14e"
+  },
+  "/checklists/units-datums-orientation/": {
+    "lastmod": "2026-07-22",
+    "hash": "03bcd4884ec166c52ce2f47fbb84cef1927fb36731a4bb82ffae7147580120a2"
+  },
+  "/checklists/wall-anchoring-release/": {
+    "lastmod": "2026-07-22",
+    "hash": "422800a7f129ca2c500fe816caa635e6d5ad020d86c51d3dc2db5b5ac1d54ed9"
+  },
+  "/checklists/wall-cabinet-installation/": {
+    "lastmod": "2026-07-22",
+    "hash": "50c8acaf6ef106e645c25a21aa662705d4b5ec1fda96e02977c2a76baca08daa"
   },
   "/compare/": {
     "lastmod": "2026-07-19",

@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Specification","Match species, grade, core, thickness, finish, color, and manufacturer requirements to the released project.","The purchase description is specific enough to prevent an unapproved substitution.",""
+"2","","Usable size","Distinguish nominal dimensions from measured usable dimensions after damage, trim, defects, and squaring.","The material plan fits the smallest accepted usable stock.",""
+"3","","Quantity basis","Reconcile optimized need, yield assumption, defect allowance, setup pieces, and spare policy.","Ordered quantity has an explicit and reproducible basis.",""
+"4","","Receiving record","Record supplier, lot, date, measured condition, defects, and disposition before stock is mixed.","Accepted, returned, quarantined, and conditional material are visibly separated.",""
+"5","","Panel specification","Write veneer species, face grade, back grade, core, certification, and prefinish requirement.","Supplier acknowledgement matches the complete specification.",""
+"6","","Sheet format","Confirm actual length, width, thickness, grain direction, and mill trim with the supplier.","The optimized layout fits the confirmed usable format.",""
+"7","","Lot consistency","Define whether visible panels must come from one lot or sequence.","The order and receiving plan preserve required color and grain continuity.",""

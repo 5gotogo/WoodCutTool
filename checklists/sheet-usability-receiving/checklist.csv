@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Specification","Match species, grade, core, thickness, finish, color, and manufacturer requirements to the released project.","The purchase description is specific enough to prevent an unapproved substitution.",""
+"2","","Usable size","Distinguish nominal dimensions from measured usable dimensions after damage, trim, defects, and squaring.","The material plan fits the smallest accepted usable stock.",""
+"3","","Quantity basis","Reconcile optimized need, yield assumption, defect allowance, setup pieces, and spare policy.","Ordered quantity has an explicit and reproducible basis.",""
+"4","","Receiving record","Record supplier, lot, date, measured condition, defects, and disposition before stock is mixed.","Accepted, returned, quarantined, and conditional material are visibly separated.",""
+"5","","Flatness and damage","Sight and measure bow, twist, edge crush, delamination, water damage, and handling marks.","The sheet can be safely supported and yields required part sizes.",""
+"6","","Face map","Mark defects, patches, color shifts, and protected show areas on both faces.","Appearance-critical parts can be assigned without hiding defects in the layout.",""
+"7","","Usable rectangle","Square or model damaged edges and record the remaining length and width.","The inventory size reflects usable material rather than the printed label.",""

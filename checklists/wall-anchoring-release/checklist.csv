@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Site readiness","Confirm access, finished surfaces, environmental conditions, power, lighting, protection, and other-trade status.","The work can proceed without predictable damage or blocked access.",""
+"2","","Installation datum","Transfer and verify the governing level, plumb, centerline, elevation, or wall reference at the work area.","Every installed component traces to the same checked reference.",""
+"3","","Hidden conditions","Locate structure, services, membranes, hazards, and no-fastener zones using appropriate records and methods.","Anchoring and cutting avoid unverified hidden conditions.",""
+"4","","Field-change control","Record variance, proposed correction, approval, affected parts, and updated documents before alteration.","A field fix cannot silently change design, safety, function, or future service.",""
+"5","","Substrate identification","Verify wall layers, framing or masonry type, thickness, condition, voids, and finishes at the actual location.","The selected anchor is approved for the confirmed substrate.",""
+"6","","Load path","Define item weight, live or dynamic use, projection, overturning, fastener count, and load distribution.","The complete connection suits the intended loading and geometry.",""
+"7","","Installation control","Follow required hole size, depth, cleaning, spacing, edge distance, embedment, and torque guidance.","Each installed anchor meets the product procedure and inspection criteria.",""

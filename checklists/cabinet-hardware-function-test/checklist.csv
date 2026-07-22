@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Current product data","Use the exact hardware model's current drawing, template, load, and installation instructions.","Dimensions and limits trace to the purchased model rather than a generic example.",""
+"2","","Actual construction","Measure panel, door, front, edge, gap, and finish build-up at the hardware interface.","The hardware calculation uses real construction dimensions.",""
+"3","","Representative mockup","Install one complete set on production-equivalent material and cycle it through full travel.","Fit, adjustment, access, and appearance pass before batch drilling.",""
+"4","","Adjustment reserve","Center initial settings where practical and record the remaining correction range.","Installation can absorb expected variation without exceeding adjustment limits.",""
+"5","","Full-cycle test","Open, close, extend, retract, disconnect, latch, and adjust each moving item through its complete range.","Operation is smooth and repeatable without collision.",""
+"6","","Representative load","Test shelves, slides, pullouts, and lifts with a safe representative load permitted by the product.","Deflection and motion remain acceptable.",""
+"7","","Fastener and adjustment","Inspect seating, torque guidance, thread engagement, slots, cams, covers, and remaining adjustment.","Hardware is secure and not parked at the end of its adjustment range.",""

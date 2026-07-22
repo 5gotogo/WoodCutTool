@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Site readiness","Confirm access, finished surfaces, environmental conditions, power, lighting, protection, and other-trade status.","The work can proceed without predictable damage or blocked access.",""
+"2","","Installation datum","Transfer and verify the governing level, plumb, centerline, elevation, or wall reference at the work area.","Every installed component traces to the same checked reference.",""
+"3","","Hidden conditions","Locate structure, services, membranes, hazards, and no-fastener zones using appropriate records and methods.","Anchoring and cutting avoid unverified hidden conditions.",""
+"4","","Field-change control","Record variance, proposed correction, approval, affected parts, and updated documents before alteration.","A field fix cannot silently change design, safety, function, or future service.",""
+"5","","Run layout","Mark cabinet widths, ends, fillers, corners, appliances, and centerlines against the field dimensions.","The full run closes without stealing required clearances.",""
+"6","","Support and fastening","Locate suitable structure and use the cabinet and fastener manufacturer's approved attachment method.","Fasteners engage verified support and cabinets bear correctly.",""
+"7","","Alignment","Check level, plumb, face plane, adjacent-case alignment, doors, and bottom line as cabinets are joined.","The run is aligned without forcing boxes out of square.",""

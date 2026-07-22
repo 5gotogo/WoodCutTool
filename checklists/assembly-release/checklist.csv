@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Part identity","Match IDs, hand, face, edge, grain, and revision before parts enter the assembly area.","Every part belongs to the same released assembly and orientation.",""
+"2","","Joint preparation","Inspect mating surfaces, machining, dust, damage, finish restrictions, and required relief.","Each joint can close fully without force masking an error.",""
+"3","","Sequence and access","Rehearse the order, clamps, cauls, drivers, cleanup, and hardware access before adhesive or permanent fasteners.","The complete sequence fits the available open time and physical access.",""
+"4","","Release inspection","Check diagonals, dimensions, twist, reveals, movement, and labels before the assembly leaves the fixture.","The assembly meets its downstream installation and finishing requirements.",""
+"5","","Geometry","Measure controlling exterior dimensions, openings, diagonals, level surfaces, and twist on a stable reference.","The assembly fits its released envelope and mating work.",""
+"6","","Function","Cycle doors, drawers, moving hardware, removable panels, and service access under representative conditions.","Movement is clear, repeatable, and adjustable.",""
+"7","","Handoff condition","Inspect edges, glue residue, fasteners, labels, protection points, loose parts, and installation notes.","The next team receives a complete, identified, damage-free assembly.",""

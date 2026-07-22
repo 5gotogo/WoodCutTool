@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Machine condition","Inspect guards, blade or cutter condition, alignment, power, extraction, and manufacturer-required setup.","The machine is safe, stable, and appropriate for the operation.",""
+"2","","Reference system","Mark the face, edge, fence, stop, datum, and feed direction used to locate the cut.","Every part in the batch uses the same controlled references.",""
+"3","","First article","Machine one representative part and measure it with the same method used at final inspection.","Dimension, square, orientation, edge quality, and downstream fit all pass.",""
+"4","","Batch control","Set a recheck frequency and stop rule for drift, damage, setup movement, or label mismatch.","The batch cannot continue beyond a failed check without correction and a new first article.",""
+"5","","Reference edge","Confirm the edge against the fence is straight, sound, and consistently identified.","Every rip begins from a valid reference rather than accumulating error.",""
+"6","","Fence verification","Measure fence-to-blade relationship using the intended cut side and account for actual kerf.","The first strip reaches finished or planned oversize width.",""
+"7","","Drift sample","Measure the beginning, middle, and end of selected strips at the defined batch interval.","Width and parallelism stay inside the project tolerance.",""

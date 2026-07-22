@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Approved sample","Match substrate, preparation, color, sheen, application method, and coating schedule to a dated approved sample.","The production system can reproduce the accepted appearance.",""
+"2","","Product instructions","Review current preparation, mixing, application, recoat, cure, safety, and disposal requirements.","The planned process stays within the complete manufacturer's system.",""
+"3","","Environment and cleanliness","Record temperature, humidity, ventilation, dust control, lighting, and contamination risks.","Conditions support safe application and reliable inspection.",""
+"4","","Release record","Inspect under defined lighting and record defects, repairs, cure status, protection, and acceptance.","Finished work is documented before packaging or use can hide responsibility.",""
+"5","","As-built record","Update dimensions, field changes, hardware, finish, services, and installation notes to match final work.","The archive describes what exists rather than only the original design.",""
+"6","","Material closeout","Reconcile purchased, used, returned, scrapped, reserved, and reusable stock by material group.","Cost and inventory records explain the final material result.",""
+"7","","Learning review","Record preventable rework, successful controls, supplier issues, timing, and checklist changes for the next project.","Lessons become an updated process rather than private memory.",""

@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Active revision","Match the drawing, cut list, estimate, and field notes to one named revision and date.","Every person and downstream file points to the same released revision.",""
+"2","","Measurement source","Mark each dimension as field measured, manufacturer supplied, design derived, or still provisional.","No critical dimension is treated as measured when it is only assumed.",""
+"3","","Units and precision","State the working unit, rounding rule, and measuring-tool resolution beside the project inputs.","Conversions and rounded values cannot silently change a finished size.",""
+"4","","Change record","Write who approved the current inputs and which layouts, quantities, labels, or orders must be regenerated after a change.","The decision trail is complete enough to reproduce the release.",""
+"5","","Product envelope","Use the current manufacturer drawing and the physical product when available, including projections and connectors.","The opening exceeds the required operating and installation envelope.",""
+"6","","Movement path","Trace door swing, drawer travel, pull clearance, shelf removal, and nearby traffic through the full motion.","Nothing collides at full travel or during removal.",""
+"7","","Service access","Locate water, power, ventilation, fasteners, filters, and future replacement paths.","Required service points remain reachable after installation.",""

@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Site readiness","Confirm access, finished surfaces, environmental conditions, power, lighting, protection, and other-trade status.","The work can proceed without predictable damage or blocked access.",""
+"2","","Installation datum","Transfer and verify the governing level, plumb, centerline, elevation, or wall reference at the work area.","Every installed component traces to the same checked reference.",""
+"3","","Hidden conditions","Locate structure, services, membranes, hazards, and no-fastener zones using appropriate records and methods.","Anchoring and cutting avoid unverified hidden conditions.",""
+"4","","Field-change control","Record variance, proposed correction, approval, affected parts, and updated documents before alteration.","A field fix cannot silently change design, safety, function, or future service.",""
+"5","","Full-wall layout","Mark module widths, corners, doors, drawers, rods, shelves, outlets, access panels, and obstructions.","All components fit and can operate in the actual room.",""
+"6","","Support and load path","Verify wall construction, cleats, vertical supports, feet, anchors, and hardware limits.","Loads transfer through the intended supported path.",""
+"7","","Human clearance","Test reach, hanging lengths, aisle width, drawer projection, hamper removal, and door swing.","The installed storage is usable, not merely dimensionally possible.",""

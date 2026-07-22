@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Current product data","Use the exact hardware model's current drawing, template, load, and installation instructions.","Dimensions and limits trace to the purchased model rather than a generic example.",""
+"2","","Actual construction","Measure panel, door, front, edge, gap, and finish build-up at the hardware interface.","The hardware calculation uses real construction dimensions.",""
+"3","","Representative mockup","Install one complete set on production-equivalent material and cycle it through full travel.","Fit, adjustment, access, and appearance pass before batch drilling.",""
+"4","","Adjustment reserve","Center initial settings where practical and record the remaining correction range.","Installation can absorb expected variation without exceeding adjustment limits.",""
+"5","","Support map","Mark cabinet walls, rails, stretchers, cleats, brackets, unsupported spans, and overhangs.","Support agrees with material and fabricator requirements.",""
+"6","","Cutout zones","Coordinate sinks, cooktops, faucets, dispensers, seams, clips, and service clearances.","No cutout or fastener conflicts with cabinet structure or hardware.",""
+"7","","Template readiness","Verify cabinet position, fillers, end panels, finished walls, appliance data, and seam decisions.","The measured condition will not change after templating.",""

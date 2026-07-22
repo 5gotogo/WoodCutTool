@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Specification","Match species, grade, core, thickness, finish, color, and manufacturer requirements to the released project.","The purchase description is specific enough to prevent an unapproved substitution.",""
+"2","","Usable size","Distinguish nominal dimensions from measured usable dimensions after damage, trim, defects, and squaring.","The material plan fits the smallest accepted usable stock.",""
+"3","","Quantity basis","Reconcile optimized need, yield assumption, defect allowance, setup pieces, and spare policy.","Ordered quantity has an explicit and reproducible basis.",""
+"4","","Receiving record","Record supplier, lot, date, measured condition, defects, and disposition before stock is mixed.","Accepted, returned, quarantined, and conditional material are visibly separated.",""
+"5","","Identity","Label material specification, thickness, grain, show face, source project, and date.","The offcut cannot be mistaken for a visually similar material.",""
+"6","","Usable geometry","Square the measured boundary around defects, holes, banding, and damaged edges.","The inventory dimensions describe a real rectangular cutting area.",""
+"7","","Reservation","Record assigned project, expiry or review date, rack location, and whether rotation is allowed.","Two projects cannot promise the same offcut.",""

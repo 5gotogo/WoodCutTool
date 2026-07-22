@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Specification","Match species, grade, core, thickness, finish, color, and manufacturer requirements to the released project.","The purchase description is specific enough to prevent an unapproved substitution.",""
+"2","","Usable size","Distinguish nominal dimensions from measured usable dimensions after damage, trim, defects, and squaring.","The material plan fits the smallest accepted usable stock.",""
+"3","","Quantity basis","Reconcile optimized need, yield assumption, defect allowance, setup pieces, and spare policy.","Ordered quantity has an explicit and reproducible basis.",""
+"4","","Receiving record","Record supplier, lot, date, measured condition, defects, and disposition before stock is mixed.","Accepted, returned, quarantined, and conditional material are visibly separated.",""
+"5","","Line-item match","Compare ordered and delivered description, quantity, unit, lot, and price line by line.","Every variance has a documented disposition.",""
+"6","","Usable quantity","Subtract rejected, damaged, quarantined, and conditionally accepted stock from physical count.","Available inventory covers the released production requirement.",""
+"7","","Plan update","Update material IDs, lot assignments, costs, layouts, and replacement orders from the receiving result.","Production documents reflect what is actually available.",""

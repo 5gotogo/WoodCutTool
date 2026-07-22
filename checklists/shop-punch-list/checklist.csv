@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Approved sample","Match substrate, preparation, color, sheen, application method, and coating schedule to a dated approved sample.","The production system can reproduce the accepted appearance.",""
+"2","","Product instructions","Review current preparation, mixing, application, recoat, cure, safety, and disposal requirements.","The planned process stays within the complete manufacturer's system.",""
+"3","","Environment and cleanliness","Record temperature, humidity, ventilation, dust control, lighting, and contamination risks.","Conditions support safe application and reliable inspection.",""
+"4","","Release record","Inspect under defined lighting and record defects, repairs, cure status, protection, and acceptance.","Finished work is documented before packaging or use can hide responsibility.",""
+"5","","Completeness","Check every assembly against drawings, part list, hardware schedule, loose-parts list, and room manifest.","Nothing required for installation or function is missing.",""
+"6","","Condition","Inspect dimensions, square, movement, surfaces, edges, touch-up, cleaning, and protective packaging.","The delivered condition can be distinguished from transit or site damage.",""
+"7","","Open items","Assign owner, due point, access need, material, approval, and risk for every remaining item.","Only deliberate site-dependent work remains open.",""

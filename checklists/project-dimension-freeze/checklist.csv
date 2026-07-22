@@ -1,0 +1,8 @@
+"Order","Status","Check","How to verify","Pass criteria","Evidence / owner / date"
+"1","","Active revision","Match the drawing, cut list, estimate, and field notes to one named revision and date.","Every person and downstream file points to the same released revision.",""
+"2","","Measurement source","Mark each dimension as field measured, manufacturer supplied, design derived, or still provisional.","No critical dimension is treated as measured when it is only assumed.",""
+"3","","Units and precision","State the working unit, rounding rule, and measuring-tool resolution beside the project inputs.","Conversions and rounded values cannot silently change a finished size.",""
+"4","","Change record","Write who approved the current inputs and which layouts, quantities, labels, or orders must be regenerated after a change.","The decision trail is complete enough to reproduce the release.",""
+"5","","Finished sizes","List finished width, height, depth, and thickness for every assembly that controls another part.","Controlling finished sizes agree across drawings and the cut list.",""
+"6","","Construction method","Confirm captured versus applied parts, reveals, overlays, grooves, rabbets, and edge treatments.","Part math matches the approved construction method.",""
+"7","","Open decisions","Search notes and drawings for TBD, approximate, verify, by others, and allowance language.","Every open item has an owner and cannot affect released geometry.",""
