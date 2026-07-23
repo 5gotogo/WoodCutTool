@@ -8,6 +8,7 @@ import {
   projectBenchmarks,
   projectResult,
 } from "./plywood-benchmark-data.mjs";
+import { cutlistConversionCta } from "./conversion-components.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
@@ -263,7 +264,14 @@ ${troubleshootingNote}      <section><h2>How to adapt this example to your proje
 
       <section><h2>Frequently asked questions</h2><h3>Is this a complete ${esc(project.name.toLowerCase())} plan?</h3><p>No. It is a transparent plywood parts and layout example. Joinery, hardware, structure, installation, finish, local requirements, and omitted components must be designed and verified separately.</p><h3>Does ${sheetText} guarantee how much plywood I should buy?</h3><p>No. It is the output for the published dimensions and assumptions. Your measurements, sheet condition, grain, trim, kerf, replacement policy, and construction details can increase or decrease the result.</p><h3>Can I rotate every part to match the lower sheet count?</h3><p>Only when appearance, structure, machining, and edge treatment permit it. Use the rotation comparison to identify cost pressure, then classify individual parts instead of releasing every orientation.</p><h3>Can I download the list?</h3><p>Yes. The CSV above contains the visible input and result metadata so the example can be audited and adapted.</p></section>
 
-      <section class="research-note"><h2>Next step</h2><p><a class="button" href="${project.templatePath}">Open the ${esc(titleCase(project.name))} template</a> <a class="button secondary" href="/apps/cutlist/">Plan it in CutList</a></p><p>Use the template to define the project, then replace every example input before generating a purchase-ready layout.</p></section>
+      ${cutlistConversionCta({
+        context: "example",
+        source: "example-detail",
+        title: `Turn the ${titleCase(project.name)} example into your own checked layout`,
+        description: `This published ${sheetText} result uses fixed sample inputs. Replace every row with the measured parts, material groups, kerf, and grain rules for your project before buying sheets.`,
+        secondaryHref: project.templatePath,
+        secondaryLabel: `Open the ${titleCase(project.name)} template`,
+      })}
     </article>
   </main>`,
   });

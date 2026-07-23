@@ -4,11 +4,18 @@ Static website for [woodcuttool.com](https://woodcuttool.com/), deployed with Cl
 
 ## Local development
 
+The local preview server uses port `4175` and executes the same CutList
+redirect and conversion-event routes used by Cloudflare Pages:
+
 ```sh
 npm run dev
 ```
 
-The local server uses port `4175`.
+For LAN verification on the shared `4076` port:
+
+```sh
+npm run dev:lan
+```
 
 ## Shared site chrome
 

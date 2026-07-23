@@ -3864,20 +3864,52 @@ const escapeHtml = (value) =>
 
 const cutColors = ["#3478f6", "#f5a623", "#ff6b4a", "#31b56a", "#a96df0", "#2bb8c5", "#e05289"];
 
-const appCta = () => `
-  <div class="cta-panel" id="download-cutlist">
-    <h3>Take this plan to the shop with CutList for iPhone</h3>
-    <p>Save projects offline, export PDF cut plans, and keep every board, sheet, and waste estimate organized while you build.</p>
-    <div class="cta-row">
-      <a class="button" href="${APP_STORE_URL}" rel="nofollow">Download CutList iOS</a>
-    </div>
-    <ul class="feature-list" aria-label="CutList app features">
-      <li>Offline support</li>
-      <li>PDF export</li>
-      <li>Project saving</li>
-    </ul>
-  </div>
-`;
+const appCta = ({
+  mode = "adjacent",
+  source = "calculator-result",
+  title = "",
+  description = "",
+} = {}) => {
+  if (mode !== "plywood") {
+    return `
+      <div class="cta-panel adjacent-app-cta">
+        <p class="eyebrow">Working with sheet goods too?</p>
+        <h3>${mode === "board" ? "This result is a linear board estimate" : "Use the right workflow for the material"}</h3>
+        <p>${mode === "board"
+          ? "CutList is built for plywood, MDF, melamine, and other sheet stock. Open the app details when the project moves from linear boards to saved sheet layouts."
+          : "CutList is the saved iPhone and iPad workspace for plywood layouts, cutting sequences, project history, and optional Pro export tools."}</p>
+        <div class="cta-row">
+          <a class="button secondary" href="/apps/cutlist/">See the CutList sheet-goods workflow</a>
+        </div>
+      </div>
+    `;
+  }
+
+  return `
+    <section class="conversion-cta conversion-cta-result" id="download-cutlist" data-conversion-cta data-conversion-source="${escapeHtml(source)}">
+      <div class="conversion-cta-copy">
+        <p class="eyebrow">Keep the checked result</p>
+        <h3>${escapeHtml(title || "Do not let this reviewed plywood plan disappear with the browser tab")}</h3>
+        <p>${escapeHtml(description || "Create the formal project in CutList, then keep its layout, waste, and step-by-step cutting sequence available offline in the shop.")}</p>
+        <div class="cta-row">
+          <a class="button" href="${APP_STORE_URL}" data-app-store-link data-platform-label data-conversion-placement="calculator-result" rel="nofollow noopener">Get CutList for saved projects</a>
+          <a class="button secondary" href="/apps/cutlist/">See how the app workflow differs</a>
+        </div>
+        <ul class="conversion-proof-list" aria-label="CutList app features">
+          <li>Free basic layouts</li>
+          <li>No login</li>
+          <li>No cloud upload</li>
+          <li>Works offline</li>
+        </ul>
+        <p class="conversion-honesty-note">This browser draft is not transferred automatically. Re-enter the reviewed parts, or use on-device AI Scan in CutList Pro for a prepared list.</p>
+      </div>
+      <a class="conversion-qr" href="${APP_STORE_URL}" data-app-store-link data-conversion-placement="calculator-result-qr" aria-label="Scan or open the CutList App Store page">
+        <img src="/assets/images/apps/cutlist/cutlist-app-store-qr.svg" width="132" height="132" loading="lazy" alt="QR code to get CutList on the App Store">
+        <span><strong>On a computer?</strong> Scan with your iPhone or iPad.</span>
+      </a>
+    </section>
+  `;
+};
 
 const kerfCta = () => `
   <div class="cta-panel" id="continue-cutlist">
@@ -4158,9 +4190,16 @@ function initCutList() {
       </div>
       ${renderLinearPlan(plan, boardLength)}
       ${rejected}
-      ${appCta()}
+      ${appCta({ mode: "board" })}
     `;
     translateElement(result, getActiveLang());
+    window.WCTConversion?.track("calculator_complete", {
+      source: "linear-calculator",
+      calculator: "cut-list",
+      boards: plan.boards.length,
+      waste_percent: plan.wastePercent,
+      rejected_count: plan.rejected.length,
+    });
   });
 }
 
@@ -4469,13 +4508,12 @@ function initPlywood() {
           <div class="app-metric savings"><small>Saved</small><strong>$${format(savedValue, 0)}</strong><span>Estimated savings</span></div>
         </div>
         <div class="app-action-row">
-          <a class="button small app-action dark" href="${APP_STORE_URL}" rel="nofollow">Share PDF</a>
-          <a class="button small app-action blue" href="${APP_STORE_URL}" rel="nofollow">Save Images</a>
-          <a class="button small app-action blue" href="${APP_STORE_URL}" rel="nofollow">AirPrint</a>
+          <button class="button small app-action blue" type="button" data-save-layout-image>Save layout image</button>
+          <a class="button small app-action dark" href="/apps/cutlist/#export" aria-label="PDF and AirPrint in CutList Pro">PDF &amp; AirPrint · Pro</a>
         </div>
         <div class="app-tabs" aria-label="Layout view selector">
           <span class="active">Layout</span>
-          <a href="${APP_STORE_URL}" rel="nofollow">Parts View</a>
+          <a href="/apps/cutlist/#sequence" aria-label="Parts and cutting sequence in the CutList app">Cut sequence in app</a>
         </div>
         <div class="sheet-result-card">
           <div class="sheet-result-header">
@@ -4491,10 +4529,42 @@ function initPlywood() {
       <ul class="plan-list">${visibleSequence || "<li>No parts fit the selected sheet size.</li>"}${moreSequence}</ul>
       <p class="notice">${t("Savings compare this optimized layout with a simple row-by-row sheet estimate")} (${baselineSheets} ${t(baselineSheets === 1 ? "sheet before optimization" : "sheets before optimization")}) ${t("plus avoided waste against a 20% manual layout benchmark.")}</p>
       ${packed.rejected.length ? `<p class="notice">${packed.rejected.length} pieces are too large for the sheet.</p>` : ""}
-      ${appCta()}
+      ${appCta({
+        mode: "plywood",
+        source: "plywood-result",
+        title: `Keep this ${packed.sheets.length}-sheet plan and ${format(yieldPercent, 1)}% yield with the job`,
+        description: `This browser estimate shows about $${format(savedValue, 0)} in modeled savings. Build the reviewed project in CutList to retain revisions, exact parts, waste, and the shop cutting sequence offline.`,
+      })}
     `;
-    drawSheet(document.getElementById("sheet-canvas"), packed.sheets, sheetLength, sheetWidth);
+    const sheetCanvas = document.getElementById("sheet-canvas");
+    drawSheet(sheetCanvas, packed.sheets, sheetLength, sheetWidth);
+    result.querySelector("[data-save-layout-image]")?.addEventListener("click", () => {
+      sheetCanvas?.toBlob((blob) => {
+        if (!blob) return;
+        const href = URL.createObjectURL(blob);
+        const download = document.createElement("a");
+        download.href = href;
+        download.download = "woodcuttool-plywood-layout.png";
+        download.click();
+        setTimeout(() => URL.revokeObjectURL(href), 1000);
+        window.WCTConversion?.track("image_download", {
+          source: "plywood-result",
+          sheets: packed.sheets.length,
+          yield_percent: yieldPercent,
+        });
+      }, "image/png");
+    });
     translateElement(result, getActiveLang());
+    window.WCTConversion?.track("calculator_complete", {
+      source: "plywood-calculator",
+      calculator: "plywood",
+      sheets: packed.sheets.length,
+      baseline_sheets: baselineSheets,
+      yield_percent: yieldPercent,
+      estimated_cost: estimatedCost,
+      estimated_savings: savedValue,
+      rejected_count: packed.rejected.length,
+    });
   });
 
   form.requestSubmit();

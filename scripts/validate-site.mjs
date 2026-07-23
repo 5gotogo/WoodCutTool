@@ -28,6 +28,15 @@ function pathExists(route) {
   return existsSync(join(root, clean)) || existsSync(join(root, `${clean}.html`));
 }
 
+function pagesFunctionExists(route) {
+  const clean = route.split("#")[0].split("?")[0].replace(/^\/+|\/+$/g, "");
+  if (!clean) {
+    return false;
+  }
+
+  return existsSync(join(root, "functions", `${clean}.js`));
+}
+
 function directoryRouteExists(pathname) {
   if (!pathname || pathname === "/") {
     return false;
@@ -54,6 +63,32 @@ function redirectProneLocalPath(pathname) {
 
 function readText(path) {
   return readFileSync(join(root, path), "utf8");
+}
+
+const siteChromeSource = readText("assets/site-chrome.js");
+if (!siteChromeSource.includes("const checklistsMenu = {")) {
+  errors.push("Shared navigation is missing the Checklists menu definition.");
+}
+if (!siteChromeSource.includes("${resourceNavMenu(checklistsMenu)}")) {
+  errors.push("Shared navigation does not render Checklists through the dropdown menu component.");
+}
+if (siteChromeSource.includes('href="/checklists/">Checklists</a>${resourceNavMenu(blogMenu)}')) {
+  errors.push("Shared navigation still renders Checklists as a direct link without a dropdown.");
+}
+
+const checklistHubSource = readText("checklists/index.html");
+for (const categoryId of [
+  "planning-measurement",
+  "materials-purchasing",
+  "cutting-machining",
+  "assembly-joinery",
+  "cabinets-hardware",
+  "installation-site-work",
+  "finishing-handoff"
+]) {
+  if (!checklistHubSource.includes(`id="${categoryId}"`)) {
+    errors.push(`Checklists navigation target is missing from the hub: #${categoryId}`);
+  }
 }
 
 function collectHtmlFiles(dir = root, prefix = "") {
@@ -251,7 +286,7 @@ for (const file of htmlFiles) {
         errors.push(`${file} references redirect-prone local path that ${redirectReason}: ${link}`);
       }
 
-      if (!pathExists(link)) {
+      if (!pathExists(link) && !pagesFunctionExists(link)) {
         errors.push(`${file} references missing local path: ${link}`);
       }
     }

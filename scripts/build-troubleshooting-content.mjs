@@ -2,6 +2,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { troubleshootingIssues } from "./troubleshooting-data.mjs";
+import { cutlistConversionCta } from "./conversion-components.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
@@ -218,6 +219,14 @@ function issuePage(entry) {
       <section><h2>Frequently asked questions</h2>${faqMarkup}</section>
 
       <section class="research-note"><h2>Turn the diagnosis into a verified plan</h2><p><a class="button" href="${primaryHref}">${esc(primaryLabel)}</a> <a class="button secondary" href="/troubleshooting/">Browse all troubleshooting topics</a></p><p>Save the corrected inputs, regenerate the layout or list, and release one revision that matches the shop and installation documents.</p></section>
+      ${cutlistConversionCta({
+        context: "troubleshooting",
+        source: "troubleshooting",
+        title: `Preserve the corrected revision after fixing ${lowerFirst(entry.title)}`,
+        description: "Keep the baseline, corrected parts, regenerated plywood layout, and approved cutting sequence together so the same failure does not return through an older note or screenshot.",
+        secondaryHref: primaryHref,
+        secondaryLabel: primaryLabel,
+      })}
     </article>
   </main>`,
   });

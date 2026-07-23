@@ -5,6 +5,7 @@ import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 import { woodworkingImageFor } from "./woodworking-images.mjs";
 import { learnResearchExpansion20260718 } from "./learn-batch-2026-07-18.mjs";
 import { learnPillarExpansion20260721 } from "./learn-pillar-batch-2026-07-21.mjs";
+import { cutlistConversionCta, learnContextSupportsCutList } from "./conversion-components.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -932,7 +933,18 @@ function targetKeywords(article) {
       </section>`;
 }
 
-function toolLinks() {
+function toolLinks(page) {
+  const supportsCutList = !page || learnContextSupportsCutList(learnClusterId(page));
+  if (!supportsCutList) {
+    return `<section class="related-tools-guides">
+        <p class="eyebrow">Related tools</p>
+        <h2>Choose the tool that matches this project</h2>
+        <div class="related-grid">
+          <a href="/tools/"><span>Hub</span><strong>All WoodCutTool tools</strong></a>
+          <a href="/troubleshooting/"><span>Diagnose</span><strong>Woodworking troubleshooting library</strong></a>
+        </div>
+      </section>`;
+  }
   return `<section class="related-tools-guides">
         <p class="eyebrow">Related tools</p>
         <h2>Use the tools mentioned in this guide</h2>
@@ -943,6 +955,46 @@ function toolLinks() {
           <a href="/cut-list-calculator/"><span>Calculator</span><strong>Cut list calculator</strong></a>
           <a href="/wood-waste-calculator/"><span>Calculator</span><strong>Wood waste calculator</strong></a>
           <a href="/board-foot-calculator/"><span>Calculator</span><strong>Board foot calculator</strong></a>
+        </div>
+      </section>`;
+}
+
+function planningTransition(page) {
+  if (!learnContextSupportsCutList(learnClusterId(page))) {
+    return `<section><h2>When to move from learning to planning</h2><p>Reading is useful while you are choosing a method, but the project becomes real when its dimensions, quantities, constraints, and safety checks are tested. Open the <a href="/tools/">tools hub</a>, choose the calculator that matches this material or project type, and verify the result before buying or cutting.</p></section>`;
+  }
+  return `<section><h2>When to move from learning to planning</h2><p>Reading is useful when you are choosing a method, but the project becomes real when dimensions, quantities, material costs, and waste are entered into a tool. If the article describes the problem you are facing, the next step is to test your own numbers. Start with the <a href="/tools/">tools hub</a>, choose the calculator that matches the material, and compare the result before buying stock. For plywood and cabinet projects, move the final plan into <a href="/apps/cutlist/">CutList</a> so the layout can be saved, reopened, exported, and used at the saw.</p></section>`;
+}
+
+function learnConversionSection(page) {
+  if (!learnContextSupportsCutList(learnClusterId(page))) {
+    return `<section class="inline-cta-section"><div class="inline-cta"><p>${escapeHtml(page.cta || page.recommendation || "Use the matching calculator to test the method with your own inputs.")}</p><div class="cta-row"><a class="button" href="/tools/">Choose the matching tool</a></div></div></section>`;
+  }
+  return cutlistConversionCta({
+    context: "guide",
+    source: "learn-guide",
+    title: `Apply ${page.h1.toLowerCase()} to a saved project`,
+    description: "Test the method with your own dimensions first. Use CutList when the reviewed plywood plan needs saved revisions, offline access, a cutting sequence, or a Pro PDF handoff.",
+    secondaryHref: "/tools/",
+    secondaryLabel: "Use a browser calculator first",
+  });
+}
+
+function recommendedNextStep(page) {
+  if (!learnContextSupportsCutList(learnClusterId(page))) {
+    return `<section><h2>Recommended next step</h2><p>Open the related browser calculator and test the method with your own dimensions, quantities, and constraints. Keep this guide beside the result as a checklist, then verify the plan against the actual material or field measurements before work begins. Record the assumptions that changed the result, confirm them with the installer or fabricator, and keep the dated calculation with the project notes so later revisions can be checked against the same baseline.</p></section>`;
+  }
+  return `<section><h2>Recommended next step</h2><p>If you only need a quick estimate, open the related browser calculator and run the first pass. If the plywood or cabinet job has many parts, expensive material, or changing measurements, use CutList as the saved project workspace after reviewing the browser result. That creates a clear path from learning the method to checking the layout, preserving revisions, and carrying a cutting sequence to the shop.</p></section>`;
+}
+
+function landingToolRecommendation(page) {
+  const appAction = learnContextSupportsCutList(learnClusterId(page))
+    ? '<a class="button secondary" href="/apps/cutlist/">Open CutList</a>'
+    : "";
+  return `<section class="inline-cta-section">
+        <div class="inline-cta">
+          <p><strong>Tool recommendation:</strong> ${escapeHtml(page.recommendation)}</p>
+          <div class="cta-row"><a class="button" href="/tools/">Explore WoodCutTool tools</a>${appAction}</div>
         </div>
       </section>`;
 }
@@ -970,17 +1022,12 @@ ${head({
       <p class="article-byline">By <a href="/about/">WoodCutTool Editorial Team</a> · Built to help readers move from a concept to a checked material or cutting plan.</p>
       ${targetKeywords(article)}
       ${learnArticleSections(article)}
-      <section><h2>When to move from learning to planning</h2><p>Reading is useful when you are choosing a method, but the project becomes real when dimensions, quantities, material costs, and waste are entered into a tool. If the article describes the problem you are facing, the next step is to test your own numbers. Start with the <a href="/tools/">tools hub</a>, choose the calculator that matches the material, and compare the result before buying stock. For plywood and cabinet projects, move the final plan into <a href="/cutlist/">CutList</a> so the layout can be saved, reopened, exported, and used at the saw.</p></section>
-      <section><h2>Recommended next step</h2><p>If you only need a quick estimate, open the related browser calculator and run the first pass. If the job has many parts, expensive material, or changing measurements, use the CutList app as the project workspace. That path keeps the SEO learning journey connected to a practical action: learn the concept, calculate the material, review the layout, then save the final cut plan before work begins. This gives every reader a clear path from search intent to a useful tool.</p></section>
-      <section class="inline-cta-section">
-        <div class="inline-cta">
-          <p>${escapeHtml(article.cta)}</p>
-          <div class="cta-row"><a class="button" href="/apps/cutlist/">Open CutList</a><a class="button secondary" href="/tools/">Explore tools</a></div>
-        </div>
-      </section>
+      ${planningTransition(article)}
+      ${recommendedNextStep(article)}
+      ${learnConversionSection(article)}
       ${pillarClusterSection(article)}
       ${relatedGuidesSection(article.slug)}
-      ${toolLinks()}
+      ${toolLinks(article)}
     </article>
   </main>
   ${footer()}
@@ -1073,19 +1120,9 @@ ${head({
           ${page.steps.map(([heading, body], index) => `<article class="step-card"><span>${index + 1}</span><h3>${escapeHtml(heading)}</h3><p>${escapeHtml(body)}</p></article>`).join("\n          ")}
         </div>
       </section>${learnWoodImageAfter(page, 1)}
-      <section class="inline-cta-section">
-        <div class="inline-cta">
-          <p><strong>Tool recommendation:</strong> ${escapeHtml(page.recommendation)}</p>
-          <div class="cta-row"><a class="button" href="/tools/">Explore WoodCutTool tools</a><a class="button secondary" href="/apps/cutlist/">Open CutList</a></div>
-        </div>
-      </section>
+      ${landingToolRecommendation(page)}
       ${faqSection(page)}
-      <section class="inline-cta-section" aria-label="Download CutList Optimizer for iPhone">
-        <div class="inline-cta">
-          <p>Want to save, export, and reuse your cut lists? Download CutList Optimizer for iPhone.</p>
-          <div class="cta-row"><a class="button" href="/apps/cutlist/">See the CutList Optimizer app</a><a class="button secondary" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList Optimizer</a></div>
-        </div>
-      </section>
+      ${learnConversionSection(page)}
       ${pillarClusterSection(page)}
       ${relatedGuidesSection(page.slug) || internalLinksSection(page)}
     </article>

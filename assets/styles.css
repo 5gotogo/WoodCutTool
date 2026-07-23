@@ -4433,7 +4433,11 @@ form > .button,
 }
 
 .app-action-row .button {
+  min-width: 0;
   width: 100%;
+  padding: 10px 12px;
+  line-height: 1.2;
+  white-space: normal;
 }
 
 .app-action {
@@ -9079,7 +9083,7 @@ tr:last-child td {
   }
 
   .app-action-row {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .sheet-result-header {
@@ -10576,4 +10580,380 @@ tr:last-child td {
   .checklist-item > label,
   .checklist-detail { padding: 9px; }
   .checklist-detail { grid-template-columns: 1fr 1fr 1fr; font-size: 9pt; }
+}
+
+/* CutList conversion system */
+.conversion-cta {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 170px;
+  gap: 28px;
+  align-items: center;
+  margin: 32px 0;
+  padding: clamp(22px, 4vw, 38px);
+  overflow: hidden;
+  border: 1px solid rgba(47, 111, 78, 0.28);
+  border-radius: calc(var(--radius) + 8px);
+  background:
+    radial-gradient(circle at 92% 12%, rgba(148, 104, 255, 0.18), transparent 34%),
+    linear-gradient(135deg, rgba(238, 243, 236, 0.98), rgba(255, 252, 242, 0.98));
+  box-shadow: 0 20px 50px rgba(39, 44, 36, 0.1);
+}
+.conversion-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: linear-gradient(var(--accent), #9370db);
+}
+.conversion-cta h2,
+.conversion-cta h3 {
+  max-width: 760px;
+  margin: 6px 0 10px;
+  line-height: 1.1;
+}
+.conversion-cta h2 { font-size: clamp(1.55rem, 3vw, 2.25rem); }
+.conversion-cta h3 { font-size: clamp(1.35rem, 2.4vw, 1.9rem); }
+.conversion-cta-copy > p:not(.eyebrow):not(.conversion-honesty-note) {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1rem;
+}
+.conversion-proof-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.conversion-proof-list li {
+  padding: 7px 10px;
+  border: 1px solid rgba(47, 111, 78, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+.conversion-honesty-note {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.conversion-qr {
+  display: grid;
+  justify-items: center;
+  gap: 9px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.84);
+  text-align: center;
+  text-decoration: none;
+}
+.conversion-qr img {
+  width: 132px;
+  height: 132px;
+  border-radius: 8px;
+  background: #fff;
+}
+.conversion-qr span {
+  max-width: 135px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.35;
+}
+.conversion-qr strong { display: block; color: var(--ink); }
+[data-conversion-device="iphone"] .conversion-qr,
+[data-conversion-device="ipad"] .conversion-qr { display: none; }
+
+/* Calculator results live in a narrow sticky column even on wide screens. */
+.result-panel .conversion-cta {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  padding: clamp(22px, 3vw, 30px);
+}
+.result-panel .conversion-cta h3 {
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+}
+.result-panel .conversion-cta .cta-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+}
+.result-panel .conversion-cta .cta-row .button {
+  min-width: 0;
+  width: 100%;
+  max-width: none;
+  line-height: 1.2;
+  white-space: normal;
+}
+.result-panel .conversion-qr {
+  width: 100%;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: center;
+  justify-items: start;
+  text-align: left;
+}
+.result-panel .conversion-qr img {
+  width: 96px;
+  height: 96px;
+}
+.result-panel .conversion-qr span {
+  max-width: none;
+}
+
+.adjacent-app-cta {
+  border-style: dashed;
+  box-shadow: none;
+}
+
+/* CutList problem-first landing page */
+.cutlist-app-page {
+  background:
+    radial-gradient(circle at 82% 3%, rgba(88, 117, 255, 0.1), transparent 25rem),
+    var(--bg);
+}
+.cutlist-app-hero {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: clamp(34px, 6vw, 76px) 0 28px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, 0.62fr);
+  gap: clamp(32px, 7vw, 86px);
+  align-items: center;
+}
+.cutlist-app-hero-copy h1 {
+  max-width: 760px;
+  margin: 12px 0 18px;
+  font-size: clamp(2.5rem, 6.2vw, 5.1rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+.cutlist-app-hero-copy .lead {
+  max-width: 710px;
+  font-size: clamp(1.05rem, 2vw, 1.28rem);
+}
+.cutlist-app-proof {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.cutlist-app-proof li {
+  padding: 13px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.76);
+}
+.cutlist-app-proof strong,
+.cutlist-app-proof span { display: block; }
+.cutlist-app-proof strong { font-size: 1rem; }
+.cutlist-app-proof span {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.3;
+}
+.cutlist-hero-shot {
+  max-width: 390px;
+  margin: 0 auto;
+  padding: 14px;
+  border: 1px solid rgba(116, 97, 207, 0.22);
+  border-radius: 30px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.94), rgba(239, 235, 255, 0.88));
+  box-shadow: 0 34px 80px rgba(42, 50, 95, 0.2);
+  transform: rotate(1.2deg);
+}
+.cutlist-hero-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.cutlist-hero-shot figcaption {
+  padding: 11px 6px 4px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+.cutlist-problem-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  padding: 1px;
+  border-radius: calc(var(--radius) + 6px);
+  background: var(--line);
+}
+.cutlist-problem-strip div {
+  padding: clamp(18px, 3vw, 28px);
+  background: var(--surface);
+}
+.cutlist-problem-strip strong,
+.cutlist-problem-strip span { display: block; }
+.cutlist-problem-strip strong { font-size: 1.05rem; }
+.cutlist-problem-strip span {
+  margin-top: 5px;
+  color: var(--muted);
+}
+.cutlist-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.cutlist-feature-card {
+  min-height: 230px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) + 4px);
+  background: var(--surface);
+  box-shadow: 0 14px 34px rgba(39, 44, 36, 0.06);
+}
+.cutlist-feature-card > span {
+  color: #7053c7;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.cutlist-feature-card h3 {
+  margin: 34px 0 10px;
+  font-size: 1.3rem;
+}
+.cutlist-feature-card p { color: var(--muted); }
+.cutlist-screenshots-section { overflow: hidden; }
+.cutlist-screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.cutlist-screenshot-card {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: var(--surface);
+  box-shadow: 0 16px 38px rgba(39, 44, 36, 0.09);
+}
+.cutlist-screenshot-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+.cutlist-screenshot-card figcaption { padding: 15px 7px 7px; }
+.cutlist-screenshot-card figcaption strong,
+.cutlist-screenshot-card figcaption span { display: block; }
+.cutlist-screenshot-card figcaption span {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+.cutlist-pricing-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 34px;
+  align-items: center;
+  padding: clamp(24px, 5vw, 48px);
+  border: 1px solid rgba(112, 83, 199, 0.24);
+  border-radius: calc(var(--radius) + 8px);
+  background: linear-gradient(135deg, rgba(243, 240, 255, 0.95), rgba(255, 252, 242, 0.96));
+}
+.cutlist-pricing-copy h2 { margin: 6px 0 12px; }
+.cutlist-pricing-copy p:last-child { color: var(--muted); }
+.cutlist-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.cutlist-plan-grid article {
+  padding: 21px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.82);
+}
+.cutlist-plan-grid article.featured {
+  border-color: rgba(112, 83, 199, 0.42);
+  box-shadow: 0 16px 34px rgba(112, 83, 199, 0.12);
+}
+.cutlist-plan-grid article > span {
+  color: #7053c7;
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.cutlist-plan-grid h3 { margin: 8px 0 14px; }
+.cutlist-plan-grid ul { margin: 0; padding-left: 19px; }
+.cutlist-plan-grid li { margin: 8px 0; color: var(--muted); }
+.cutlist-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.cutlist-review-card {
+  padding: 23px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+.cutlist-review-stars { color: #e09a2c; letter-spacing: 0.08em; }
+.cutlist-review-card h3 { margin: 14px 0 8px; }
+.cutlist-review-card p { color: var(--muted); }
+.cutlist-review-card span {
+  display: block;
+  margin-top: 16px;
+  font-size: 0.73rem;
+  font-weight: 800;
+}
+.cutlist-faq-section .faq-list { max-width: 900px; }
+
+@media (max-width: 900px) {
+  .cutlist-app-hero {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .cutlist-hero-shot { max-width: 360px; transform: none; }
+  .cutlist-app-proof { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cutlist-feature-grid,
+  .cutlist-screenshot-grid,
+  .cutlist-review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cutlist-pricing-section { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px) {
+  .conversion-cta {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px;
+  }
+  .conversion-qr { display: none; }
+  .conversion-cta .button { width: 100%; max-width: none; text-align: center; }
+  .cutlist-app-hero { width: min(100% - 24px, 1180px); padding-top: 24px; }
+  .cutlist-app-hero-copy h1 { font-size: clamp(2.35rem, 12vw, 3.8rem); }
+  .cutlist-problem-strip,
+  .cutlist-feature-grid,
+  .cutlist-screenshot-grid,
+  .cutlist-review-grid { grid-template-columns: 1fr; }
+  .cutlist-screenshot-grid {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(270px, 82vw);
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+    padding: 0 2px 14px;
+  }
+  .cutlist-screenshot-card { scroll-snap-align: start; }
+  .cutlist-plan-grid { grid-template-columns: 1fr; }
+}
+
+@media print {
+  .conversion-cta,
+  .cutlist-screenshots-section,
+  .cutlist-reviews-section { display: none !important; }
 }

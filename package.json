@@ -2,12 +2,15 @@
   "name": "woodcuttool",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Static WoodCutTool website for Cloudflare Pages.",
   "scripts": {
-    "dev": "python3 -m http.server 4175 --bind 0.0.0.0",
+    "dev": "node scripts/dev-server.mjs --port 4175",
+    "dev:lan": "node scripts/dev-server.mjs --port 4076",
     "fetch:app-store-apps": "node scripts/fetch-app-store-apps.mjs",
     "fetch:app-reviews": "node scripts/fetch-app-store-reviews.mjs",
     "generate:apps": "node scripts/build-app-library.mjs",
+    "generate:cutlist-landing": "node scripts/build-cutlist-landing.mjs",
     "generate:app-compare": "node scripts/build-app-compare.mjs",
     "generate:compare": "node scripts/build-compare-content.mjs",
     "generate:blog": "node scripts/build-blog-content.mjs",
@@ -25,8 +28,11 @@
     "generate:schemas": "node scripts/apply-tool-schemas.mjs",
     "generate:meta": "node scripts/apply-seo-meta.mjs && node scripts/add-tool-guide-links.mjs",
     "apply:nav-cta": "node scripts/apply-nav-cta.mjs",
+    "apply:cutlist-ctas": "node scripts/apply-contextual-cutlist-ctas.mjs",
+    "audit:cutlist-conversion": "node scripts/audit-cutlist-conversion.mjs",
+    "test:cutlist-conversion": "node scripts/test-cutlist-conversion-functions.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs",
-    "build": "node scripts/build-app-library.mjs && node scripts/build-app-compare.mjs && node scripts/build-compare-content.mjs && node scripts/build-blog-content.mjs && node scripts/build-learn-content.mjs && node scripts/build-construction-calculators.mjs && node scripts/build-tools-hub.mjs && node scripts/build-glossary-content.mjs && node scripts/build-wood-species.mjs && node scripts/build-template-content.mjs && node scripts/build-research-content.mjs && node scripts/build-example-content.mjs && node scripts/build-troubleshooting-content.mjs && node scripts/build-checklist-content.mjs && node scripts/apply-tool-schemas.mjs && node scripts/apply-seo-meta.mjs && node scripts/add-tool-guide-links.mjs && node scripts/apply-nav-cta.mjs && node scripts/generate-sitemap.mjs && node scripts/validate-site.mjs && node scripts/audit-indexability.mjs",
-    "check": "node scripts/validate-site.mjs && node scripts/audit-indexability.mjs"
+    "build": "node scripts/build-app-library.mjs && node scripts/build-cutlist-landing.mjs && node scripts/build-app-compare.mjs && node scripts/build-compare-content.mjs && node scripts/build-blog-content.mjs && node scripts/build-learn-content.mjs && node scripts/build-construction-calculators.mjs && node scripts/build-tools-hub.mjs && node scripts/build-glossary-content.mjs && node scripts/build-wood-species.mjs && node scripts/build-template-content.mjs && node scripts/build-research-content.mjs && node scripts/build-example-content.mjs && node scripts/build-troubleshooting-content.mjs && node scripts/build-checklist-content.mjs && node scripts/apply-contextual-cutlist-ctas.mjs && node scripts/apply-tool-schemas.mjs && node scripts/apply-seo-meta.mjs && node scripts/add-tool-guide-links.mjs && node scripts/apply-nav-cta.mjs && node scripts/generate-sitemap.mjs && node scripts/validate-site.mjs && node scripts/audit-indexability.mjs && node scripts/audit-cutlist-conversion.mjs",
+    "check": "node scripts/validate-site.mjs && node scripts/audit-indexability.mjs && node scripts/audit-cutlist-conversion.mjs"
   }
 }

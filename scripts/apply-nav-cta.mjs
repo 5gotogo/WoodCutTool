@@ -8,6 +8,9 @@ const megaMenuFallbackStyle = "  <style>.mega-menu{display:none}</style>";
 const headerMount = '<div data-site-header></div>';
 const footerMount = '<div data-site-footer></div>';
 const siteChromeScript = '  <script defer src="/assets/site-chrome.js"></script>';
+const conversionScript = '  <script defer src="/assets/conversion.js"></script>';
+const appStoreId = "6768171871";
+const providerToken = String(process.env.APPLE_PROVIDER_TOKEN || "").trim();
 
 function collectHtmlFiles(dir = root, prefix = "") {
   const files = [];
@@ -36,6 +39,10 @@ function applySiteChromeVersion(html) {
   return html.replace(/\/assets\/site-chrome\.js(?:\?[^\"]*)?/g, "/assets/site-chrome.js");
 }
 
+function applyConversionVersion(html) {
+  return html.replace(/\/assets\/conversion\.js(?:\?[^\"]*)?/g, "/assets/conversion.js");
+}
+
 function applyMegaMenuFallback(html) {
   if (html.includes("<style>.mega-menu{display:none}</style>")) return html;
   return html.replace("</head>", `${megaMenuFallbackStyle}\n</head>`);
@@ -48,6 +55,44 @@ function applySiteChromeScript(html) {
     return next.replace(appScriptPattern, `\n${siteChromeScript}$1`);
   }
   return next.replace("</head>", `${siteChromeScript}\n</head>`);
+}
+
+function applyConversionScript(html) {
+  const next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/conversion\.js(?:\?[^\"]*)?")[^>]*>\s*<\/script>/g, "");
+  const appScriptPattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/app\.js")[^>]*>\s*<\/script>)/;
+  if (appScriptPattern.test(next)) {
+    return next.replace(appScriptPattern, `$1\n${conversionScript}`);
+  }
+  const siteChromePattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js")[^>]*>\s*<\/script>)/;
+  if (siteChromePattern.test(next)) {
+    return next.replace(siteChromePattern, `$1\n${conversionScript}`);
+  }
+  return next.replace("</head>", `${conversionScript}\n</head>`);
+}
+
+function cutlistCampaignFor(file) {
+  if (file === "index.html") return "smart-home";
+  if (file === "apps/cutlist/index.html") return "smart-app-page";
+  if (/^(cutlist|cut-list-calculator|plywood-cut-calculator|cabinet-cut-list-calculator)\//.test(file)) return "smart-calculator";
+  if (file.startsWith("templates/")) return "smart-template";
+  if (file.startsWith("examples/")) return "smart-example";
+  if (file.startsWith("learn/")) return "smart-learn";
+  if (file.startsWith("troubleshooting/")) return "smart-troubleshoot";
+  if (file.startsWith("blog/") && /(cutlist|cut-list|plywood|cabinet|sheet-layout|kerf|wood-waste)/.test(file)) return "smart-blog";
+  return "";
+}
+
+function applySmartAppBanner(html, file) {
+  const campaign = cutlistCampaignFor(file);
+  const withoutExisting = html.replace(/\s*<meta\s+name="apple-itunes-app"[^>]*>/g, "");
+  if (!campaign || !withoutExisting.includes('name="viewport"')) return withoutExisting;
+  const affiliateData = [
+    providerToken && /^\d+$/.test(providerToken) ? `pt=${providerToken}` : "",
+    `ct=${campaign}`,
+  ].filter(Boolean).join("&amp;");
+  const route = file === "index.html" ? "/" : `/${file.replace(/index\.html$/, "")}`;
+  const content = `app-id=${appStoreId}, affiliate-data=${affiliateData}, app-argument=https://woodcuttool.com${route}`;
+  return withoutExisting.replace(/(<meta\s+name="viewport"[^>]*>)/, `$1\n  <meta name="apple-itunes-app" content="${content}">`);
 }
 
 function applySharedChromeMounts(html) {
@@ -76,16 +121,23 @@ let skipped = 0;
 for (const file of collectHtmlFiles()) {
   const absolute = join(root, file);
   const html = readFileSync(absolute, "utf8");
-  const next = applySharedChromeMounts(
-    applySiteChromeScript(
-      applyMegaMenuFallback(
-        applySiteChromeVersion(
-          applyAppVersion(
-            applyStylesVersion(html)
+  const next = applySmartAppBanner(
+    applySharedChromeMounts(
+      applyConversionScript(
+        applySiteChromeScript(
+          applyMegaMenuFallback(
+            applyConversionVersion(
+              applySiteChromeVersion(
+                applyAppVersion(
+                  applyStylesVersion(html)
+                )
+              )
+            )
           )
         )
       )
-    )
+    ),
+    file
   );
 
   if (next === html) {
