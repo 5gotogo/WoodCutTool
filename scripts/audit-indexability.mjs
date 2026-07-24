@@ -2,6 +2,7 @@ import { readdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { learnPillarExpansion20260721 } from "./learn-pillar-batch-2026-07-21.mjs";
+import { learnHandoffExpansion20260724 } from "./learn-handoff-batch-2026-07-24.mjs";
 import { checklistEntries } from "./checklist-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -148,7 +149,11 @@ const groups = {
   learnPillar: [],
   checklists: []
 };
-const learnPillarFiles = new Set(learnPillarExpansion20260721.map((article) => `learn/${article.slug}/index.html`));
+const gatedLearnExpansions = [
+  ...learnPillarExpansion20260721,
+  ...learnHandoffExpansion20260724,
+];
+const learnPillarFiles = new Set(gatedLearnExpansions.map((article) => `learn/${article.slug}/index.html`));
 const noindexCounts = {
   blog: pages.filter((page) => page.noindex && /^blog\/[^/]+\/index\.html$/.test(page.file)).length
 };
@@ -197,8 +202,8 @@ for (const page of pages) {
   }
 }
 
-if (groups.learnPillar.length !== learnPillarExpansion20260721.length) {
-  issues.push(`Expected ${learnPillarExpansion20260721.length} new Learn pillar pages, found ${groups.learnPillar.length}.`);
+if (groups.learnPillar.length !== gatedLearnExpansions.length) {
+  issues.push(`Expected ${gatedLearnExpansions.length} gated Learn pillar pages, found ${groups.learnPillar.length}.`);
 }
 
 if (groups.checklists.length !== checklistEntries.length) {

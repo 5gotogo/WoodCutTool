@@ -5,6 +5,7 @@ import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 import { woodworkingImageFor } from "./woodworking-images.mjs";
 import { learnResearchExpansion20260718 } from "./learn-batch-2026-07-18.mjs";
 import { learnPillarExpansion20260721 } from "./learn-pillar-batch-2026-07-21.mjs";
+import { learnHandoffExpansion20260724 } from "./learn-handoff-batch-2026-07-24.mjs";
 import { cutlistConversionCta, learnContextSupportsCutList } from "./conversion-components.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -699,6 +700,7 @@ const learnExpansion20260715 = [
 articles.push(...learnExpansion20260715.map(makeLearnExpansionArticle));
 articles.push(...learnResearchExpansion20260718);
 articles.push(...learnPillarExpansion20260721);
+articles.push(...learnHandoffExpansion20260724);
 
 const legacyLearnHubs = [
   { slug: "deck", h1: "Deck Planning Guides", description: "Deck material, footing, stair, railing, and layout guides.", keywords: ["deck planning"], cluster: "stairs-construction" },
@@ -835,7 +837,11 @@ const relatedMap = {
   }
 };
 
-for (const article of [...learnResearchExpansion20260718, ...learnPillarExpansion20260721]) {
+for (const article of [
+  ...learnResearchExpansion20260718,
+  ...learnPillarExpansion20260721,
+  ...learnHandoffExpansion20260724,
+]) {
   relatedMap[article.slug] = {
     guides: article.relatedGuides,
     tools: article.relatedTools
