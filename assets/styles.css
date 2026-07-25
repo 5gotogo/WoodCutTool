@@ -10168,6 +10168,10 @@ tr:last-child td {
 @media (max-width: 760px) {
   .research-card-grid,
   .research-metrics { grid-template-columns: 1fr; }
+  .research-note .button {
+    max-width: 100%;
+    white-space: normal;
+  }
 }
 
 /* Downloadable cut-list examples and generated sheet layouts. */

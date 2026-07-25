@@ -6612,8 +6612,8 @@
     "hash": "3ce18c3374263d648e2ce49df5d4feb21871365960473983417527e2db982398"
   },
   "/learn/cut-list-yield-variance-closeout/": {
-    "lastmod": "2026-07-24",
-    "hash": "3bdd7aa6d802eb352c6fb7186f970d08979cedfb53311d7e8363fa51f2896eff"
+    "lastmod": "2026-07-25",
+    "hash": "2dbc209ccc490c1ada0b54226160076bad864e0d7f6c528a1799e077e08549f6"
   },
   "/learn/dado-and-rabbet-allowance-in-cut-lists/": {
     "lastmod": "2026-07-24",
@@ -6924,8 +6924,8 @@
     "hash": "6622bc4bc24a3cfc39c01bb05fdc60b6c6cb54f56b6e914ce51f3b85f01dcd06"
   },
   "/learn/purchase-order-to-cut-list-reconciliation/": {
-    "lastmod": "2026-07-24",
-    "hash": "fadfda643b847f966e8aba24120547b574aa370b6ba4f014a4a3890c9a443015"
+    "lastmod": "2026-07-25",
+    "hash": "93415968e3677e67d16f9853498c924338f17abeacd75cf6204f0985716e3cee"
   },
   "/learn/quilt-backing-binding-batting-estimate/": {
     "lastmod": "2026-07-23",
@@ -7204,8 +7204,8 @@
     "hash": "79fc020b83b4d0ec79bebd346adce6a163f145a8951f8173a9f179809acb43e2"
   },
   "/research/": {
-    "lastmod": "2026-07-23",
-    "hash": "5624a08c10b553addafd2cd735c2d251c18009a3880eb2b8d201d70e16a4e54d"
+    "lastmod": "2026-07-25",
+    "hash": "98e162b70771571ef51c57255c392c016d92ddadf48c4d554d9ba960a9717dbd"
   },
   "/research/edge-trim-allowance-impact/": {
     "lastmod": "2026-07-23",
@@ -7222,6 +7222,10 @@
   "/research/plywood-project-yield-benchmarks/": {
     "lastmod": "2026-07-23",
     "hash": "2a1552f65e20a7f9975152fe2ec2a461209e1a169ec6db2cbd556b66f5cf7ceb"
+  },
+  "/research/plywood-purchase-contingency-benchmark/": {
+    "lastmod": "2026-07-25",
+    "hash": "3a47d23f4d1840033cbcb4b0eab1632794b4c264f5acc38775cbb9cd8cf97e8c"
   },
   "/research/plywood-sheet-size-comparison/": {
     "lastmod": "2026-07-23",

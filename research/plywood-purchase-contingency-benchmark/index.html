@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plywood Purchase Contingency Benchmark | WoodCutTool</title>
+  <meta name="description" content="A 225-run benchmark testing how concrete spare-part strategies change estimated 4×8 plywood sheet counts across 75 project inputs.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://woodcuttool.com/research/plywood-purchase-contingency-benchmark/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="WoodCutTool">
+  <meta property="og:title" content="Plywood Purchase Contingency Benchmark | WoodCutTool">
+  <meta property="og:description" content="A 225-run benchmark testing how concrete spare-part strategies change estimated 4×8 plywood sheet counts across 75 project inputs.">
+  <meta property="og:url" content="https://woodcuttool.com/research/plywood-purchase-contingency-benchmark/">
+  <meta property="og:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Plywood Purchase Contingency Benchmark | WoodCutTool">
+  <meta name="twitter:description" content="A 225-run benchmark testing how concrete spare-part strategies change estimated 4×8 plywood sheet counts across 75 project inputs.">
+  <meta name="twitter:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
+  <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "WoodCutTool Plywood Purchase Contingency Benchmark",
+  "description": "A 225-run benchmark testing how concrete spare-part strategies change estimated 4×8 plywood sheet counts across 75 project inputs.",
+  "url": "https://woodcuttool.com/research/plywood-purchase-contingency-benchmark/",
+  "sameAs": "https://woodcuttool.com/research/plywood-purchase-contingency-benchmark/",
+  "identifier": "woodcuttool:plywood-purchase-contingency-benchmark:2026-07-25",
+  "creator": {
+    "@type": "Organization",
+    "name": "WoodCutTool",
+    "url": "https://woodcuttool.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "WoodCutTool",
+    "url": "https://woodcuttool.com/"
+  },
+  "datePublished": "2026-07-25",
+  "dateModified": "2026-07-25",
+  "version": "2026-07-25",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "WoodCutTool Research and Open Datasets",
+    "url": "https://woodcuttool.com/research/"
+  },
+  "measurementTechnique": "Deterministic MaxRects-style rectangle-packing heuristic on nominal 96 by 48 inch sheets with 1/8 inch kerf and rotation allowed while adding declared spare-part rectangles",
+  "variableMeasured": [
+    "project",
+    "contingency strategy",
+    "base part count",
+    "reserve part count",
+    "reserve part area",
+    "baseline estimated sheets",
+    "contingency estimated sheets",
+    "extra sheets",
+    "material yield",
+    "complete layout"
+  ],
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "https://woodcuttool.com/research/data/plywood-purchase-contingency-benchmark.csv",
+    "encodingFormat": "text/csv"
+  }
+}</script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://woodcuttool.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Research",
+      "item": "https://woodcuttool.com/research/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Plywood purchase contingency",
+      "item": "https://woodcuttool.com/research/plywood-purchase-contingency-benchmark/"
+    }
+  ]
+}</script>
+  <style>.mega-menu{display:none}</style>
+  <script defer src="/assets/site-chrome.js"></script>
+  <script defer src="/assets/conversion.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div data-site-header></div>
+  <main id="main" class="article-shell research-shell">
+    <article class="article-body research-article">
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/research/">Research</a> / Should You Buy an Extra Sheet of Plywood?</p>
+      <p class="eyebrow">Open dataset · Purchase planning</p>
+      <h1>Should You Buy an Extra Sheet of Plywood?</h1>
+      <p class="lead">A generic waste percentage does not show whether a replacement part will fit the planned sheets. This 225-scenario benchmark adds concrete spare parts to 75 project cut lists and reruns the same packing method so sheet-count thresholds are visible before purchase.</p>
+      <p class="article-byline">Published 2026-07-25 by <a href="/about/">WoodCutTool Editorial Team</a> · Dataset version 2026-07-25</p>
+      
+      <section class="research-metrics" aria-label="Dataset summary">
+        <div class="research-metric"><span>Projects</span><strong>75</strong><small>Source-linked parts lists</small></div>
+        <div class="research-metric"><span>Scenario rows</span><strong>225</strong><small>3 reserve strategies per project</small></div>
+        <div class="research-metric"><span>Largest-part thresholds</span><strong>21</strong><small>21 added sheets in total</small></div>
+        <div class="research-metric"><span>One-of-each thresholds</span><strong>40</strong><small>43 added sheets in total</small></div>
+      </section>
+      <section class="research-note"><h2>Download the complete contingency dataset</h2><p><a class="button" href="/research/data/plywood-purchase-contingency-benchmark.csv" download>Download purchase contingency CSV</a></p><p>Each row declares the original project, reserve strategy, reserved part count and area, baseline and revised sheet estimates, extra sheets, completion state, method version, and source template.</p></section>
+      <section><h2>What the benchmark tests</h2><p>Every project is packed three times on a nominal 96 × 48 inch sheet with a 1/8 inch kerf and rotation allowed. The baseline contains only the source cut list. The first reserve strategy duplicates one unit of the largest-area part. The second duplicates one unit from every named part line. These are explicit replacement-capacity tests, not a hidden percentage added to the final total.</p><p>The largest-part strategy increased the estimate for 21 of 75 projects. The one-of-each strategy increased it for 40 projects. A “no change” result means those added rectangles fit within the same heuristic sheet count; it does not prove that the required offcut shapes survive the real cutting sequence.</p></section>
+      <section><h2>Project-level sheet-count thresholds</h2><p>The table shows modeled purchase pressure, not a recommendation to buy exactly the displayed quantity. Follow each project link to inspect its actual parts and assumptions.</p>
+        <div class="research-table-wrap"><table class="research-table"><thead><tr><th>Project</th><th>Baseline sheets</th><th>+ largest part</th><th>+ one of each type</th><th>Modeled threshold</th></tr></thead><tbody><tr><th scope="row"><a href="/templates/base-cabinet-cut-list/">Base cabinet</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/wall-cabinet-cut-list/">Wall cabinet</a></th><td>1</td><td>1 (no change)</td><td>2 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/bathroom-vanity-cut-list/">Bathroom vanity</a></th><td>1</td><td>1 (no change)</td><td>2 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/pantry-cabinet-cut-list/">Pantry cabinet</a></th><td>3</td><td>3 (no change)</td><td>4 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/laundry-room-cabinet-cut-list/">Laundry room cabinet</a></th><td>2</td><td>2 (no change)</td><td>3 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/shop-storage-cabinet-cut-list/">Shop storage cabinet</a></th><td>3</td><td>4 (+1)</td><td>5 (+2)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/bookshelf-cut-list/">Bookshelf</a></th><td>2</td><td>3 (+1)</td><td>3 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/cube-storage-cut-list/">Cube storage unit</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/mudroom-bench-cut-list/">Mudroom bench</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/window-seat-cut-list/">Window seat</a></th><td>2</td><td>2 (no change)</td><td>3 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/utility-closet-cut-list/">Utility closet cabinet</a></th><td>3</td><td>4 (+1)</td><td>5 (+2)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/under-bed-drawer-cut-list/">Under-bed drawers</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/coffee-table-cut-list/">Coffee table</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/console-table-cut-list/">Console table</a></th><td>1</td><td>1 (no change)</td><td>2 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/record-cabinet-cut-list/">Record cabinet</a></th><td>2</td><td>2 (no change)</td><td>3 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/media-wall-cabinet-cut-list/">Media wall cabinet</a></th><td>2</td><td>3 (+1)</td><td>3 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/folding-craft-table-cut-list/">Folding craft table</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/kids-table-cut-list/">Kids table</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/mobile-workbench-cut-list/">Mobile workbench</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/assembly-table-cut-list/">Assembly table</a></th><td>3</td><td>4 (+1)</td><td>5 (+2)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/miter-saw-stand-cut-list/">Miter saw stand</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/french-cleat-wall-cut-list/">French cleat tool wall</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/rolling-cart-cut-list/">Rolling utility cart</a></th><td>1</td><td>1 (no change)</td><td>2 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/outdoor-storage-box-cut-list/">Outdoor storage box</a></th><td>2</td><td>2 (no change)</td><td>3 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/kitchen-island-cut-list/">Kitchen island</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/appliance-garage-cut-list/">Appliance garage</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/microwave-shelf-cabinet-cut-list/">Microwave shelf cabinet</a></th><td>1</td><td>1 (no change)</td><td>2 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/closet-tower-cut-list/">Closet tower</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/entryway-locker-cut-list/">Entryway locker</a></th><td>2</td><td>3 (+1)</td><td>3 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/laundry-folding-table-cut-list/">Laundry folding table</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/craft-storage-cabinet-cut-list/">Craft storage cabinet</a></th><td>3</td><td>4 (+1)</td><td>4 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/sewing-table-cut-list/">Sewing table</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/sheet-goods-storage-cart-cut-list/">Sheet goods storage cart</a></th><td>4</td><td>4 (no change)</td><td>5 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/cutoff-storage-bin-cut-list/">Cutoff storage bin</a></th><td>2</td><td>2 (no change)</td><td>3 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/sanding-station-cut-list/">Sanding station</a></th><td>2</td><td>2 (no change)</td><td>3 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/small-parts-drawer-cabinet-cut-list/">Small parts drawer cabinet</a></th><td>1</td><td>1 (no change)</td><td>2 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/floating-shelf-cut-list/">Floating shelf</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/wall-garage-cabinet-cut-list/">Wall garage cabinet</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/storage-bench-cut-list/">Storage bench</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/toy-box-cut-list/">Toy box</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/shoe-rack-cut-list/">Shoe rack</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/nightstand-cut-list/">Nightstand</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/dining-bench-cut-list/">Dining bench</a></th><td>1</td><td>1 (no change)</td><td>2 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/entryway-table-cut-list/">Entryway table</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/tool-cabinet-cut-list/">Tool cabinet</a></th><td>1</td><td>1 (no change)</td><td>2 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/router-table-cut-list/">Router table</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/pegboard-organizer-cut-list/">Pegboard organizer</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/clamp-rack-cut-list/">Clamp rack</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/drill-press-stand-cut-list/">Drill press stand</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/planter-box-cut-list/">Planter box</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/plywood-chair-cut-list/">Plywood chair</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/lounge-chair-cut-list/">Plywood lounge chair</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/dollhouse-cut-list/">Plywood dollhouse</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/desk-organizer-cut-list/">Desk organizer</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/monitor-riser-cut-list/">Monitor riser</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/printer-stand-cut-list/">Printer stand</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/file-cabinet-cut-list/">File cabinet</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/rolling-pantry-cut-list/">Rolling pantry cart</a></th><td>1</td><td>1 (no change)</td><td>2 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/linen-cabinet-cut-list/">Linen cabinet</a></th><td>2</td><td>3 (+1)</td><td>3 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/folding-work-table-cut-list/">Folding work table</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/folding-wall-desk-cut-list/">Folding wall desk</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/narrow-entryway-bench-cut-list/">Narrow entryway bench</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/over-toilet-storage-cabinet-cut-list/">Over-toilet storage cabinet</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/rolling-kitchen-cart-cut-list/">Rolling kitchen cart</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/sofa-side-table-cut-list/">Sofa side table</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/under-desk-rolling-cabinet-cut-list/">Under-desk rolling cabinet</a></th><td>1</td><td>1 (no change)</td><td>1 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/portable-wardrobe-cubby-cut-list/">Portable wardrobe cubby</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/stackable-shoe-cubby-cut-list/">Stackable shoe cubby</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/room-divider-cubby-cut-list/">Room divider cubby</a></th><td>2</td><td>2 (no change)</td><td>2 (no change)</td><td>Both reserves fit baseline sheet count</td></tr><tr><th scope="row"><a href="/templates/balcony-storage-bench-cut-list/">Balcony storage bench</a></th><td>1</td><td>1 (no change)</td><td>2 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/drop-leaf-dining-table-cut-list/">Drop-leaf dining table</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/rolling-coffee-bar-cut-list/">Rolling coffee bar</a></th><td>2</td><td>2 (no change)</td><td>3 (+1)</td><td>One-of-each reserve crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/compact-craft-cart-cut-list/">Compact craft cart</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/slim-laundry-tower-cut-list/">Slim laundry tower</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr><tr><th scope="row"><a href="/templates/knock-down-bookcase-cut-list/">Knock-down bookcase</a></th><td>1</td><td>2 (+1)</td><td>2 (+1)</td><td>Largest-part spare crosses a sheet boundary</td></tr></tbody></table></div>
+      </section>
+      <section><h2>How to choose a real contingency</h2><ol><li>Identify parts that are expensive, visible, grain-matched, difficult to machine, or impossible to replace from a narrow remnant.</li><li>Record usable stock already on hand and exclude offcuts whose material, face, thickness, or dimensions are not verified.</li><li>Add concrete replacement rectangles to the released layout instead of applying an unexplained blanket percentage.</li><li>Compare the extra-sheet threshold with supplier lead time, minimum order, return policy, storage, and the cost of a delayed remake.</li><li>Preserve the decision in the purchase reconciliation and review what was actually consumed at project closeout.</li></ol><p>Use the <a href="/learn/purchase-order-to-cut-list-reconciliation/">purchase-order reconciliation workflow</a> to document buying units and the <a href="/learn/cut-list-yield-variance-closeout/">yield-variance closeout</a> to compare the released plan with completed production.</p></section>
+      <section><h2>What this dataset does not measure</h2><p>This is modeled reserve capacity, not observed remake frequency, a claim about average shop waste, or actual-versus-planned customer data. The inputs come from WoodCutTool planning examples. The model does not assign defect probability, predict operator errors, inspect real panels, preserve a shop cutting sequence, prove a globally optimal layout, or value delivery delays and unused stock.</p><p>Real contingency should reflect the current material, face matching, defects, process capability, replacement lead time, and project risk. Verify the received sheet size and final rectangles in the <a href="/plywood-cut-calculator/">plywood cut calculator</a>, then save the reviewed project in <a href="/apps/cutlist/">CutList</a>.</p></section>
+      <section><h2>Method and reproducibility</h2><p>The generator expands part quantities, adds only the rectangles declared by the selected strategy, sorts all pieces deterministically, and runs method <code>woodcuttool-maxrects-v1</code>. Every CSV row includes the original and reserve areas, estimated baseline and contingency sheets, rejected-piece count, completion flag, and source template URL. Re-running the published inputs with the same method version produces the same comparison.</p></section>
+      <section class="research-note"><h2>License and citation</h2><p>Dataset version 2026-07-25, method <code>woodcuttool-maxrects-v1</code>. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. Suggested attribution: “WoodCutTool Plywood Purchase Contingency Benchmark, 2026-07-25.”</p></section>
+    </article>
+  </main>
+  <div data-site-footer></div>
+</body>
+</html>

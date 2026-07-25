@@ -117,9 +117,42 @@ if (orientationValues.size !== 2) issues.push([robustnessFile, `expected 2 orien
 if (scenarioKeys.length !== expectedRobustnessRows) issues.push([robustnessFile, `expected ${expectedRobustnessRows} full-factorial rows; found ${scenarioKeys.length}`]);
 if (new Set(scenarioKeys).size !== scenarioKeys.length) issues.push([robustnessFile, "duplicate scenario keys"]);
 
+const contingencyFile = "plywood-purchase-contingency-benchmark.csv";
+const contingencyRaw = readFileSync(join(dataDir, contingencyFile), "utf8");
+const [contingencyHeaders, ...contingencyRecords] = parseCsv(contingencyRaw);
+const contingencyObjects = contingencyRecords.map((values) => Object.fromEntries(contingencyHeaders.map((header, index) => [header, values[index]])));
+const contingencyProjects = new Set(contingencyObjects.map((row) => row.project_slug));
+const contingencyStrategies = new Set(contingencyObjects.map((row) => row.contingency_strategy));
+const contingencyKeys = contingencyObjects.map((row) => `${row.project_slug}|${row.contingency_strategy}`);
+const expectedContingencyStrategies = new Set(["baseline", "largest_part", "one_each_part_type"]);
+
+if (contingencyProjects.size !== projectBenchmarks.length) issues.push([contingencyFile, `expected ${projectBenchmarks.length} projects; found ${contingencyProjects.size}`]);
+if (contingencyStrategies.size !== expectedContingencyStrategies.size || [...expectedContingencyStrategies].some((value) => !contingencyStrategies.has(value))) {
+  issues.push([contingencyFile, `expected strategies ${[...expectedContingencyStrategies].join(", ")}; found ${[...contingencyStrategies].join(", ")}`]);
+}
+if (contingencyRecords.length !== projectBenchmarks.length * expectedContingencyStrategies.size) {
+  issues.push([contingencyFile, `expected ${projectBenchmarks.length * expectedContingencyStrategies.size} rows; found ${contingencyRecords.length}`]);
+}
+if (new Set(contingencyKeys).size !== contingencyKeys.length) issues.push([contingencyFile, "duplicate project and strategy keys"]);
+for (const [rowIndex, row] of contingencyObjects.entries()) {
+  const baselineSheets = Number(row.baseline_estimated_sheets);
+  const contingencySheets = Number(row.contingency_estimated_sheets);
+  const extraSheets = Number(row.extra_sheets);
+  const reservePartCount = Number(row.reserve_part_count);
+  const reservePartArea = Number(row.reserve_part_area_sq_in);
+  if (extraSheets !== contingencySheets - baselineSheets) issues.push([contingencyFile, `row ${rowIndex + 2}`, "extra_sheets does not match contingency minus baseline"]);
+  if (row.contingency_strategy === "baseline" && (extraSheets !== 0 || reservePartCount !== 0 || reservePartArea !== 0)) {
+    issues.push([contingencyFile, `row ${rowIndex + 2}`, "baseline row contains a reserve or extra sheet"]);
+  }
+  if (row.contingency_strategy !== "baseline" && (reservePartCount < 1 || reservePartArea <= 0)) {
+    issues.push([contingencyFile, `row ${rowIndex + 2}`, "reserve strategy is missing concrete reserve parts"]);
+  }
+}
+
 console.log(`Audited ${summaries.length} research CSV files.`);
 console.table(summaries);
 console.log(`Robustness matrix: ${projectSlugs.size} projects × ${trimValues.size} trims × ${kerfValues.size} kerfs × ${orientationValues.size} modes = ${scenarioKeys.length} rows.`);
+console.log(`Purchase contingency: ${contingencyProjects.size} projects × ${contingencyStrategies.size} strategies = ${contingencyRecords.length} rows.`);
 
 if (issues.length) {
   console.log("\nResearch data issues:");

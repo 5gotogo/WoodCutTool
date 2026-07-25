@@ -26,6 +26,13 @@ const sheetFormats = [
 const trimMargins = [0, 0.125, 0.25, 0.5, 1];
 const robustnessPublishedDate = "2026-07-18";
 const robustnessVersion = "2026-07-21";
+const contingencyPublishedDate = "2026-07-25";
+const contingencyVersion = "2026-07-25";
+const contingencyStrategies = [
+  { slug: "baseline", label: "No spare parts" },
+  { slug: "largest_part", label: "One spare of the largest part" },
+  { slug: "one_each_part_type", label: "One spare of every part type" }
+];
 const projectRows = projectBenchmarks.map((project) => projectResult(project));
 const projectCategoryCount = new Set(projectRows.map((row) => row.category)).size;
 const kerfRows = kerfPatterns.flatMap((pattern) => kerfs.map((kerf) => ({ ...projectResult(pattern, kerf), kerf })));
@@ -64,6 +71,47 @@ const robustnessRows = projectBenchmarks.flatMap((project) => trimMargins.flatMa
   nominalSheetLength: standardSheet.length,
   nominalSheetWidth: standardSheet.width
 })))));
+const contingencyRows = projectBenchmarks.flatMap((project) => {
+  const basePartCount = project.parts.reduce((sum, item) => sum + item.qty, 0);
+  const basePartArea = project.parts.reduce((sum, item) => sum + item.length * item.width * item.qty, 0);
+  const baseline = scenarioResult(project, { kerf: 0.125, allowRotate: true });
+  return contingencyStrategies.map((strategy) => {
+    const parts = project.parts.map((item) => ({ ...item }));
+    let reservePartCount = 0;
+    let reservePartArea = 0;
+    let reservedParts = "none";
+    if (strategy.slug === "largest_part") {
+      const largestIndex = parts.reduce((bestIndex, item, index, list) =>
+        item.length * item.width > list[bestIndex].length * list[bestIndex].width ? index : bestIndex
+      , 0);
+      const largest = parts[largestIndex];
+      largest.qty += 1;
+      reservePartCount = 1;
+      reservePartArea = largest.length * largest.width;
+      reservedParts = largest.label;
+    } else if (strategy.slug === "one_each_part_type") {
+      for (const item of parts) {
+        item.qty += 1;
+        reservePartCount += 1;
+        reservePartArea += item.length * item.width;
+      }
+      reservedParts = parts.map((item) => item.label).join("; ");
+    }
+    const result = scenarioResult({ ...project, parts }, { kerf: 0.125, allowRotate: true });
+    return {
+      ...result,
+      contingencyStrategy: strategy.slug,
+      contingencyLabel: strategy.label,
+      baselineSheets: baseline.sheets,
+      extraSheets: result.sheets - baseline.sheets,
+      basePartCount,
+      basePartArea,
+      reservePartCount,
+      reservePartArea,
+      reservedParts
+    };
+  });
+});
 
 const esc = (value) => String(value)
   .replaceAll("&", "&amp;")
@@ -82,6 +130,7 @@ const projectKerfCsvPath = "/research/data/project-kerf-sensitivity-matrix.csv";
 const sheetFormatCsvPath = "/research/data/plywood-sheet-format-comparison.csv";
 const trimCsvPath = "/research/data/edge-trim-allowance-impact.csv";
 const robustnessCsvPath = "/research/data/plywood-layout-robustness-matrix.csv";
+const contingencyCsvPath = "/research/data/plywood-purchase-contingency-benchmark.csv";
 
 const projectCsv = csv([
   "benchmark_version", "method", "project_slug", "project_name", "category", "part_count",
@@ -146,6 +195,20 @@ const robustnessCsv = csv([
   num(row.partArea), num(row.placedArea), row.trimMargin, row.kerf,
   row.nominalSheetLength, row.nominalSheetWidth, row.sheetLength, row.sheetWidth,
   row.allowRotate ? "rotation_allowed" : "orientation_locked", row.sheets, num(row.yield), num(row.waste),
+  row.rejected, row.rejected === 0, `${siteUrl}${row.templatePath}`
+]));
+
+const contingencyCsv = csv([
+  "dataset_version", "method", "project_slug", "project_name", "category", "contingency_strategy",
+  "base_part_count", "reserve_part_count", "base_part_area_sq_in", "reserve_part_area_sq_in",
+  "reserved_parts", "kerf_in", "orientation_mode", "sheet_length_in", "sheet_width_in",
+  "baseline_estimated_sheets", "contingency_estimated_sheets", "extra_sheets",
+  "yield_pct", "waste_pct", "rejected_piece_count", "complete_layout", "source_template_url"
+], contingencyRows.map((row) => [
+  contingencyVersion, benchmarkMethod, row.slug, row.name, row.category, row.contingencyStrategy,
+  row.basePartCount, row.reservePartCount, num(row.basePartArea), num(row.reservePartArea),
+  row.reservedParts, row.kerf, "rotation_allowed", row.sheetLength, row.sheetWidth,
+  row.baselineSheets, row.sheets, row.extraSheets, num(row.yield), num(row.waste),
   row.rejected, row.rejected === 0, `${siteUrl}${row.templatePath}`
 ]));
 
@@ -257,7 +320,7 @@ const totalAllowedSheets = projectRows.reduce((sum, row) => sum + row.allowedShe
 const totalLockedSheets = projectRows.reduce((sum, row) => sum + row.lockedSheets, 0);
 const kerfAffectedPatterns = kerfPatterns.filter((pattern) => projectResult(pattern, 0).allowedSheets !== projectResult(pattern, 0.125).allowedSheets);
 
-const hubDescription = "Original open woodworking datasets on plywood yield, saw kerf, sheet formats, trim allowance, and grain-direction constraints.";
+const hubDescription = "Original open woodworking datasets on plywood yield, purchase contingency, saw kerf, sheet formats, trim allowance, and grain direction.";
 const hubDatasets = [
   ["Plywood project yield benchmarks", `${projectRows.length} common project parts lists tested on standard 4×8 sheets, with area-only minimums and heuristic sheet counts.`, "/research/plywood-project-yield-benchmarks/", `${projectRows.length} projects`],
   ["Saw kerf and sheet-count impact", "Ten repeated-cut patterns compared at zero, 1/16, 3/32, and 1/8 inch kerf to expose exact-fit failures.", "/research/saw-kerf-sheet-count-impact/", `${kerfRows.length} runs`],
@@ -265,7 +328,8 @@ const hubDatasets = [
   ["Project kerf sensitivity matrix", `${projectRows.length} projects tested across ${matrixKerfs.length} kerf settings and two orientation modes, with a row for every scenario.`, "/research/project-kerf-sensitivity-matrix/", `${projectKerfRows.length} runs`],
   ["Plywood sheet format comparison", `${projectRows.length} project inputs compared on 5×5, 4×8, 4×10, and 5×10 panels, including parts that do not fit a format.`, "/research/plywood-sheet-size-comparison/", `${sheetFormatRows.length} runs`],
   ["Edge trim allowance impact", `${projectRows.length} project inputs tested with five per-edge trim margins and two orientation modes on nominal 4×8 sheets.`, "/research/edge-trim-allowance-impact/", `${trimRows.length} runs`],
-  ["Plywood layout robustness matrix", `${projectRows.length} projects tested across kerf, edge-trim, and orientation combinations to detect fragile layouts and incomplete scenarios when they occur.`, "/research/plywood-layout-robustness-matrix/", `${robustnessRows.length.toLocaleString()} runs`]
+  ["Plywood layout robustness matrix", `${projectRows.length} projects tested across kerf, edge-trim, and orientation combinations to detect fragile layouts and incomplete scenarios when they occur.`, "/research/plywood-layout-robustness-matrix/", `${robustnessRows.length.toLocaleString()} runs`],
+  ["Plywood purchase contingency benchmark", `${projectRows.length} project inputs tested with no spare parts, one spare of the largest part, and one spare of every part type.`, "/research/plywood-purchase-contingency-benchmark/", `${contingencyRows.length} runs`]
 ];
 const hubCards = hubDatasets.map(([title, copy, href, label]) => `<a class="research-card" href="${href}"><span>${label}</span><h2>${title}</h2><p>${copy}</p><strong>Read the report →</strong></a>`).join("");
 
@@ -661,6 +725,71 @@ const robustnessHtml = page({
       <section class="research-note"><h2>License and citation</h2><p>Dataset version ${robustnessVersion}, method <code>${benchmarkMethod}</code>. Licensed under <a href="${licenseUrl}" rel="license">CC BY 4.0</a>. Suggested attribution: “WoodCutTool Plywood Cut Layout Robustness Matrix, ${robustnessVersion}.”</p></section>`
 });
 
+const contingencyBaseline = new Map(contingencyRows
+  .filter((row) => row.contingencyStrategy === "baseline")
+  .map((row) => [row.slug, row]));
+const contingencyLargest = new Map(contingencyRows
+  .filter((row) => row.contingencyStrategy === "largest_part")
+  .map((row) => [row.slug, row]));
+const contingencyOneEach = new Map(contingencyRows
+  .filter((row) => row.contingencyStrategy === "one_each_part_type")
+  .map((row) => [row.slug, row]));
+const largestPartThresholds = [...contingencyLargest.values()].filter((row) => row.extraSheets > 0);
+const oneEachThresholds = [...contingencyOneEach.values()].filter((row) => row.extraSheets > 0);
+const largestPartExtraSheets = largestPartThresholds.reduce((sum, row) => sum + row.extraSheets, 0);
+const oneEachExtraSheets = oneEachThresholds.reduce((sum, row) => sum + row.extraSheets, 0);
+const contingencyTableRows = projectBenchmarks.map((project) => {
+  const baseline = contingencyBaseline.get(project.slug);
+  const largest = contingencyLargest.get(project.slug);
+  const oneEach = contingencyOneEach.get(project.slug);
+  const threshold = largest.extraSheets > 0
+    ? "Largest-part spare crosses a sheet boundary"
+    : oneEach.extraSheets > 0
+      ? "One-of-each reserve crosses a sheet boundary"
+      : "Both reserves fit baseline sheet count";
+  return `<tr><th scope="row"><a href="${project.templatePath}">${esc(project.name)}</a></th><td>${baseline.sheets}</td><td>${largest.sheets} (${largest.extraSheets > 0 ? `+${largest.extraSheets}` : "no change"})</td><td>${oneEach.sheets} (${oneEach.extraSheets > 0 ? `+${oneEach.extraSheets}` : "no change"})</td><td>${threshold}</td></tr>`;
+}).join("");
+const contingencyDescription = `A ${contingencyRows.length}-run benchmark testing how concrete spare-part strategies change estimated 4×8 plywood sheet counts across ${projectRows.length} project inputs.`;
+const contingencyHtml = page({
+  route: "/research/plywood-purchase-contingency-benchmark/",
+  title: "Plywood Purchase Contingency Benchmark | WoodCutTool",
+  description: contingencyDescription,
+  eyebrow: "Open dataset · Purchase planning",
+  h1: "Should You Buy an Extra Sheet of Plywood?",
+  lead: `A generic waste percentage does not show whether a replacement part will fit the planned sheets. This ${contingencyRows.length}-scenario benchmark adds concrete spare parts to ${projectRows.length} project cut lists and reruns the same packing method so sheet-count thresholds are visible before purchase.`,
+  published: contingencyPublishedDate,
+  version: contingencyVersion,
+  schemas: [
+    datasetSchema({
+      name: "WoodCutTool Plywood Purchase Contingency Benchmark",
+      description: contingencyDescription,
+      route: "/research/plywood-purchase-contingency-benchmark/",
+      csvPath: contingencyCsvPath,
+      datePublished: contingencyPublishedDate,
+      version: contingencyVersion,
+      variables: ["project", "contingency strategy", "base part count", "reserve part count", "reserve part area", "baseline estimated sheets", "contingency estimated sheets", "extra sheets", "material yield", "complete layout"],
+      measurementTechnique: "Deterministic MaxRects-style rectangle-packing heuristic on nominal 96 by 48 inch sheets with 1/8 inch kerf and rotation allowed while adding declared spare-part rectangles"
+    }),
+    breadcrumbSchema([["Home", "/"], ["Research", "/research/"], ["Plywood purchase contingency", "/research/plywood-purchase-contingency-benchmark/"]])
+  ],
+  content: `
+      <section class="research-metrics" aria-label="Dataset summary">
+        ${metric("Projects", String(projectRows.length), "Source-linked parts lists")}
+        ${metric("Scenario rows", String(contingencyRows.length), "3 reserve strategies per project")}
+        ${metric("Largest-part thresholds", String(largestPartThresholds.length), `${largestPartExtraSheets} added sheets in total`)}
+        ${metric("One-of-each thresholds", String(oneEachThresholds.length), `${oneEachExtraSheets} added sheets in total`)}
+      </section>
+      <section class="research-note"><h2>Download the complete contingency dataset</h2><p><a class="button" href="${contingencyCsvPath}" download>Download purchase contingency CSV</a></p><p>Each row declares the original project, reserve strategy, reserved part count and area, baseline and revised sheet estimates, extra sheets, completion state, method version, and source template.</p></section>
+      <section><h2>What the benchmark tests</h2><p>Every project is packed three times on a nominal 96 × 48 inch sheet with a 1/8 inch kerf and rotation allowed. The baseline contains only the source cut list. The first reserve strategy duplicates one unit of the largest-area part. The second duplicates one unit from every named part line. These are explicit replacement-capacity tests, not a hidden percentage added to the final total.</p><p>The largest-part strategy increased the estimate for ${largestPartThresholds.length} of ${projectRows.length} projects. The one-of-each strategy increased it for ${oneEachThresholds.length} projects. A “no change” result means those added rectangles fit within the same heuristic sheet count; it does not prove that the required offcut shapes survive the real cutting sequence.</p></section>
+      <section><h2>Project-level sheet-count thresholds</h2><p>The table shows modeled purchase pressure, not a recommendation to buy exactly the displayed quantity. Follow each project link to inspect its actual parts and assumptions.</p>
+        <div class="research-table-wrap"><table class="research-table"><thead><tr><th>Project</th><th>Baseline sheets</th><th>+ largest part</th><th>+ one of each type</th><th>Modeled threshold</th></tr></thead><tbody>${contingencyTableRows}</tbody></table></div>
+      </section>
+      <section><h2>How to choose a real contingency</h2><ol><li>Identify parts that are expensive, visible, grain-matched, difficult to machine, or impossible to replace from a narrow remnant.</li><li>Record usable stock already on hand and exclude offcuts whose material, face, thickness, or dimensions are not verified.</li><li>Add concrete replacement rectangles to the released layout instead of applying an unexplained blanket percentage.</li><li>Compare the extra-sheet threshold with supplier lead time, minimum order, return policy, storage, and the cost of a delayed remake.</li><li>Preserve the decision in the purchase reconciliation and review what was actually consumed at project closeout.</li></ol><p>Use the <a href="/learn/purchase-order-to-cut-list-reconciliation/">purchase-order reconciliation workflow</a> to document buying units and the <a href="/learn/cut-list-yield-variance-closeout/">yield-variance closeout</a> to compare the released plan with completed production.</p></section>
+      <section><h2>What this dataset does not measure</h2><p>This is modeled reserve capacity, not observed remake frequency, a claim about average shop waste, or actual-versus-planned customer data. The inputs come from WoodCutTool planning examples. The model does not assign defect probability, predict operator errors, inspect real panels, preserve a shop cutting sequence, prove a globally optimal layout, or value delivery delays and unused stock.</p><p>Real contingency should reflect the current material, face matching, defects, process capability, replacement lead time, and project risk. Verify the received sheet size and final rectangles in the <a href="/plywood-cut-calculator/">plywood cut calculator</a>, then save the reviewed project in <a href="/apps/cutlist/">CutList</a>.</p></section>
+      <section><h2>Method and reproducibility</h2><p>The generator expands part quantities, adds only the rectangles declared by the selected strategy, sorts all pieces deterministically, and runs method <code>${benchmarkMethod}</code>. Every CSV row includes the original and reserve areas, estimated baseline and contingency sheets, rejected-piece count, completion flag, and source template URL. Re-running the published inputs with the same method version produces the same comparison.</p></section>
+      <section class="research-note"><h2>License and citation</h2><p>Dataset version ${contingencyVersion}, method <code>${benchmarkMethod}</code>. Licensed under <a href="${licenseUrl}" rel="license">CC BY 4.0</a>. Suggested attribution: “WoodCutTool Plywood Purchase Contingency Benchmark, ${contingencyVersion}.”</p></section>`
+});
+
 const outputs = [
   ["research/index.html", hubHtml],
   ["research/plywood-project-yield-benchmarks/index.html", projectHtml],
@@ -670,12 +799,14 @@ const outputs = [
   ["research/plywood-sheet-size-comparison/index.html", sheetFormatHtml],
   ["research/edge-trim-allowance-impact/index.html", trimHtml],
   ["research/plywood-layout-robustness-matrix/index.html", robustnessHtml],
+  ["research/plywood-purchase-contingency-benchmark/index.html", contingencyHtml],
   [projectCsvPath.slice(1), projectCsv],
   [kerfCsvPath.slice(1), kerfCsv],
   [projectKerfCsvPath.slice(1), projectKerfCsv],
   [sheetFormatCsvPath.slice(1), sheetFormatCsv],
   [trimCsvPath.slice(1), trimCsv],
-  [robustnessCsvPath.slice(1), robustnessCsv]
+  [robustnessCsvPath.slice(1), robustnessCsv],
+  [contingencyCsvPath.slice(1), contingencyCsv]
 ];
 
 for (const [relativePath, contents] of outputs) {
@@ -684,4 +815,4 @@ for (const [relativePath, contents] of outputs) {
   await writeFile(target, contents, "utf8");
 }
 
-console.log(`Generated ${outputs.length} research files (${projectRows.length} project rows, ${kerfRows.length} pattern rows, ${projectKerfRows.length + sheetFormatRows.length + trimRows.length + robustnessRows.length} scenario rows).`);
+console.log(`Generated ${outputs.length} research files (${projectRows.length} project rows, ${kerfRows.length} pattern rows, ${projectKerfRows.length + sheetFormatRows.length + trimRows.length + robustnessRows.length + contingencyRows.length} scenario rows).`);
