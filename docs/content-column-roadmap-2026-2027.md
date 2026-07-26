@@ -1,6 +1,6 @@
 # WoodCutTool content-column roadmap, 2026–2027
 
-Updated: 2026-07-25
+Updated: 2026-07-26
 
 ## Objective
 
@@ -15,6 +15,7 @@ Build a durable woodworking knowledge system in which every search-shaped questi
 | Learn | 163 | Durable methods organized into 12 pillar clusters |
 | Troubleshooting | 100 | Symptom-first diagnosis; 20 pages in each of 5 categories |
 | Checklists | 70 | Release-first controls; 7 checks and one downloadable CSV per workflow |
+| Worksheets | 60 | Fillable project records; 8 fields and one downloadable CSV per workflow |
 | App comparisons | 116 | Workflow and app-choice decisions |
 | General comparisons | 75 | Material, method, tool, and construction tradeoffs |
 | Templates | 120 | Project planning starting points |
@@ -22,19 +23,20 @@ Build a durable woodworking knowledge system in which every search-shaped questi
 | Research | 8 | Source-linked, reproducible first-party datasets and reports |
 | Tools | 25 | Calculators and action pages |
 
-The 2026-07-20 milestone completed the first 100-page Troubleshooting edition. Its five balanced clusters are Layouts, Cutting, Cabinets, Materials, and Workflow. The first 2026-07-21 milestone expanded Examples from 36 to 60 complete project datasets, added one downloadable CSV per project, and connected the new pages to their source templates, calculators, and relevant diagnostic pages. The second 2026-07-21 milestone completed Phase 2 by publishing 15 paired small-space projects from one shared data source: Templates reached 86, Examples reached 75, and every new pair includes a measured footprint, transport constraint, reversible-installation boundary, complete-layout CSV, Learn link, and Troubleshooting link. The third 2026-07-21 milestone completed Phase 3 by adding 34 release-gated templates: 18 cabinet construction and installation intents plus four each for Storage, Shop, Furniture, and Small Spaces. Templates reached 120, and every new page includes a distinct parts list, four project checks, a field-measurement boundary, a hardware or service boundary, an installation boundary, and real Learn and Troubleshooting links. The fourth 2026-07-21 milestone started Phase 4 by adding 18 verified Learn gaps across cabinet planning, plywood selection, cutting quality, installation release, and cut-list operations. Learn reached 151 pages, every new guide passed a 750-visible-word and four-inbound-source gate, and the complete library was mapped into 12 pillar clusters with duplicate-slug enforcement. The 2026-07-22 milestone established Checklists as a new release-control column: 70 workflows across seven balanced categories, 490 observable checks, one interactive and printable working copy per page, and 70 downloadable CSV records. Each detail page has at least four independent inbound sources and more than 1,000 visible words, while the hub adds task search and direct navigation from the global header, Learn menu, footer, and homepage. The 2026-07-24 milestone completed the next 12 verified Learn gaps across cutting inspection, installation handoff, purchasing reconciliation, and shop closeout. Learn reached 163 pages, with each new method tied to a working checklist, a relevant diagnostic, a durable Learn or Glossary method, and a calculator, dataset, example, template, or CutList action. The 2026-07-25 research milestone added a 225-row plywood purchase-contingency benchmark across 75 projects and three explicit reserve strategies. It reports concrete spare rectangles and sheet-count thresholds without presenting simulated layouts as observed shop waste or actual customer use.
+The 2026-07-20 milestone completed the first 100-page Troubleshooting edition. Its five balanced clusters are Layouts, Cutting, Cabinets, Materials, and Workflow. The first 2026-07-21 milestone expanded Examples from 36 to 60 complete project datasets, added one downloadable CSV per project, and connected the new pages to their source templates, calculators, and relevant diagnostic pages. The second 2026-07-21 milestone completed Phase 2 by publishing 15 paired small-space projects from one shared data source: Templates reached 86, Examples reached 75, and every new pair includes a measured footprint, transport constraint, reversible-installation boundary, complete-layout CSV, Learn link, and Troubleshooting link. The third 2026-07-21 milestone completed Phase 3 by adding 34 release-gated templates: 18 cabinet construction and installation intents plus four each for Storage, Shop, Furniture, and Small Spaces. Templates reached 120, and every new page includes a distinct parts list, four project checks, a field-measurement boundary, a hardware or service boundary, an installation boundary, and real Learn and Troubleshooting links. The fourth 2026-07-21 milestone started Phase 4 by adding 18 verified Learn gaps across cabinet planning, plywood selection, cutting quality, installation release, and cut-list operations. Learn reached 151 pages, every new guide passed a 750-visible-word and four-inbound-source gate, and the complete library was mapped into 12 pillar clusters with duplicate-slug enforcement. The 2026-07-22 milestone established Checklists as a new release-control column: 70 workflows across seven balanced categories, 490 observable checks, one interactive and printable working copy per page, and 70 downloadable CSV records. Each detail page has at least four independent inbound sources and more than 1,000 visible words, while the hub adds task search and direct navigation from the global header, Learn menu, footer, and homepage. The 2026-07-24 milestone completed the next 12 verified Learn gaps across cutting inspection, installation handoff, purchasing reconciliation, and shop closeout. Learn reached 163 pages, with each new method tied to a working checklist, a relevant diagnostic, a durable Learn or Glossary method, and a calculator, dataset, example, template, or CutList action. The 2026-07-25 research milestone added a 225-row plywood purchase-contingency benchmark across 75 projects and three explicit reserve strategies. It reports concrete spare rectangles and sheet-count thresholds without presenting simulated layouts as observed shop waste or actual customer use. The 2026-07-26 milestone established Worksheets as a new project-record column: 60 workflows across six categories, 480 task-specific fields, fillable and printable working copies, and 60 downloadable CSVs. Each detail page is generator-backed, links to a release checklist plus method or calculation resources, and preserves values with their source, owner, date, and revision.
 
 ## Editorial architecture
 
-Each major subject should become a connected seven-layer cluster:
+Each major subject should become a connected eight-layer cluster:
 
 1. A glossary page defines the term.
 2. A Learn pillar explains the complete method.
 3. A checklist verifies the release gate before irreversible work.
-4. Troubleshooting pages answer failure-shaped queries.
-5. A template provides a project-specific starting point.
-6. An example publishes complete inputs and downloadable data.
-7. A calculator, dataset, or CutList link lets the reader act.
+4. A worksheet records the project-specific evidence, owner, date, and revision.
+5. Troubleshooting pages answer failure-shaped queries.
+6. A template provides a project-specific starting point.
+7. An example publishes complete inputs and downloadable data.
+8. A calculator, dataset, or CutList link lets the reader act.
 
 Blog posts should introduce timely or narrow questions and feed readers into these durable layers. They should not duplicate a Learn guide or troubleshooting page merely to increase volume.
 
@@ -46,6 +48,7 @@ Blog posts should introduce timely or narrow questions and feed readers into the
 | 2. Project evidence | Aug–Oct 2026 | Add complete examples with CSVs and explicit benchmark assumptions | 75 examples |
 | 3. Template depth | Oct–Dec 2026 | Add high-intent cabinet, storage, shop, furniture, and small-space templates | 120 templates |
 | 4. Release controls | Jul 2026 foundation; continuous | Maintain the seven-stage Checklists column and add only distinct release decisions | 70 checklists complete; quarterly gap review |
+| 4b. Project records | Jul 2026 foundation; continuous | Maintain Worksheets for measured inputs, production records, field changes, and closeout evidence | 60 worksheets complete; quarterly gap review |
 | 5. Learn consolidation | Jan–Mar 2027 | Build 12–15 pillar clusters and merge or redirect overlapping thin intent | 200 Learn guides, organized by pillar |
 | 6. Research moat | Apr–Jun 2027 | Publish reproducible kerf, trim, sheet-format, rotation, offcut, cost, and robustness datasets | 15 research reports with downloads |
 | 7. Refresh and conversion | Continuous | Refresh high-impression pages, improve tool transitions, validate app cross-links | Quarterly refresh of priority clusters |

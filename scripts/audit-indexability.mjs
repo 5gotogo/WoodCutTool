@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { learnPillarExpansion20260721 } from "./learn-pillar-batch-2026-07-21.mjs";
 import { learnHandoffExpansion20260724 } from "./learn-handoff-batch-2026-07-24.mjs";
 import { checklistEntries } from "./checklist-data.mjs";
+import { worksheetEntries } from "./worksheet-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
@@ -147,7 +148,8 @@ const groups = {
   glossary: [],
   comparison: [],
   learnPillar: [],
-  checklists: []
+  checklists: [],
+  worksheets: []
 };
 const gatedLearnExpansions = [
   ...learnPillarExpansion20260721,
@@ -200,6 +202,13 @@ for (const page of pages) {
     if (page.words < 1000) issues.push(`${page.file} has only ${page.words} visible words; expected at least 1000.`);
     if (!page.html.includes("checklist.csv")) issues.push(`${page.file} is missing its downloadable checklist CSV.`);
   }
+
+  if (/^worksheets\/[^/]+\/index\.html$/.test(page.file)) {
+    groups.worksheets.push({ ...page, inbound });
+    if (inbound < 4) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 4.`);
+    if (page.words < 1400) issues.push(`${page.file} has only ${page.words} visible words; expected at least 1400.`);
+    if (!page.html.includes("worksheet.csv")) issues.push(`${page.file} is missing its downloadable worksheet CSV.`);
+  }
 }
 
 if (groups.learnPillar.length !== gatedLearnExpansions.length) {
@@ -208,6 +217,10 @@ if (groups.learnPillar.length !== gatedLearnExpansions.length) {
 
 if (groups.checklists.length !== checklistEntries.length) {
   issues.push(`Expected ${checklistEntries.length} checklist pages, found ${groups.checklists.length}.`);
+}
+
+if (groups.worksheets.length !== worksheetEntries.length) {
+  issues.push(`Expected ${worksheetEntries.length} worksheet pages, found ${groups.worksheets.length}.`);
 }
 
 if (issues.length) {
