@@ -8,8 +8,8 @@
     "hash": "2fa8a2ddd997469f58a28ddaab67f3a38cf4aa3477f4ba34a8a9ba2330593dd3"
   },
   "/learn/": {
-    "lastmod": "2026-07-24",
-    "hash": "b12f06bafd19d67073af37c1e7a2c96ef843a8eb6d118f45c79a555715f4cc44"
+    "lastmod": "2026-07-26",
+    "hash": "061402f1cbc3fb9c96ddf933720d5860adafe5e1c60f2a227918cfcae4f7a55f"
   },
   "/troubleshooting/": {
     "lastmod": "2026-07-23",
@@ -6460,656 +6460,704 @@
     "hash": "4911e685bda8ea7e1a78dddc2c8b6c7bdc9da914c49a1018f9a86aa0483b7f82"
   },
   "/learn/actual-lumber-size-vs-nominal-size/": {
-    "lastmod": "2026-07-24",
-    "hash": "e6955c4168baa95791afc970216bce7ae4c28aba18f6d29efb779c09901f2c6c"
+    "lastmod": "2026-07-26",
+    "hash": "92b8f9298a8d58f361eaac393b24237f7cc9b9c2d5299bde082cd28deb034ba8"
   },
   "/learn/already-cut-parts-during-revision/": {
-    "lastmod": "2026-07-24",
-    "hash": "65acb4c1c6f2577064a010475e4992c40e678e6dd0147894872f1955b09899aa"
+    "lastmod": "2026-07-26",
+    "hash": "ebabcd669921548b995f5e78e087ce242ddb06f30445a92604881a532652c264"
   },
   "/learn/backsplash-tile-measuring-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "12367da88a987eee265efd3bd11d24cacbce222976b8060c9a73b72e3e8e2949"
+    "lastmod": "2026-07-26",
+    "hash": "7f25570841f61fde43bbca212a080c544955afe58d8a4064863e42ced76756c8"
   },
   "/learn/bar-cart-caster-and-shelf-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "fdf570a845f24497ebf7f3cbec7edc80cda08da3b504ee098b4c4cb6ae98ecca"
+    "lastmod": "2026-07-26",
+    "hash": "12f664d4165b479d26dcfd81eae1eedcb14afa823dfc070b19ddf19f5d5d4cda"
   },
   "/learn/bathroom-linen-cabinet-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "c85d78e04c25f5a12fc78eaff7bb141709da473ebbc47bfbabb9de333ad7e492"
+    "lastmod": "2026-07-26",
+    "hash": "646065a1fe8bc7535146a99ff12ca8c656908b2de28ee4e0b7999702e576e39b"
   },
   "/learn/bathroom-tile-layout-measurement-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "921024c2f6715aa1e9b133d4b2f8712d06af0ca3a22beca390503d5c5fc51cdf"
+    "lastmod": "2026-07-26",
+    "hash": "1e3fcf8d27bfe3183c1706ca42697d0911e0e3c11cba27a8966a47356613a9a5"
   },
   "/learn/bathroom-vanity-cut-list-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "7be5a51caa88a9318a8facfc8caed00f2444e5e5761fb714e5ce0f226484f5a8"
+    "lastmod": "2026-07-26",
+    "hash": "75ef39289f2f73f5a463739c0f87de7535fd1641889041d46ce05751601dd85b"
   },
   "/learn/best-plywood-sheet-size-for-cut-list/": {
-    "lastmod": "2026-07-23",
-    "hash": "41b3f58e758c24b08cf22d6cc317dbdd7bf4d45a11f54eb53a4f750dc5f5e982"
+    "lastmod": "2026-07-26",
+    "hash": "938404a8ec76947669e2f8240a8938f5aec8fac87e07ac1d8d474b9268376972"
   },
   "/learn/best-woodworking-calculator-workflow/": {
-    "lastmod": "2026-07-23",
-    "hash": "a6df3fb9225b61b185661b51afa7d176e1101f3922f57c97558178be2e956ab6"
+    "lastmod": "2026-07-26",
+    "hash": "4c677bda7ba396963b34e7ea9cb67bcb7858fd8fb418e047191e2901b96f3c3c"
   },
   "/learn/board-foot-calculator-for-hardwood-buying/": {
-    "lastmod": "2026-07-24",
-    "hash": "74e9b1620d7ad1efa2b26f271d41616d46b0eef0d10e265a2ff0ae9d13365d42"
+    "lastmod": "2026-07-26",
+    "hash": "315964a3df5ed664fec51912ca93548e5fd44cea775acf76ef4bea5f7227de83"
   },
   "/learn/built-in-bookcase-measurement-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "cb676891bb09648b313eb6454a85f247af42f9ac4aaedef15f854ebdb4445dfb"
+    "lastmod": "2026-07-26",
+    "hash": "3214ca998594996d30efae05aa3af0f324c9ecb9d4379e70b5ca57a8c1174657"
   },
   "/learn/cabinet-back-construction-dimension-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "35b9df20df874c86d46abc09a74271047ebeaf9c137423551c7f5ce477eb5cd0"
+    "lastmod": "2026-07-26",
+    "hash": "d29e70a4e7d8b0e141a07a0af17d620f22cff3257434f4b86e4c31e7ed703e64"
   },
   "/learn/cabinet-box-cut-list-basics/": {
-    "lastmod": "2026-07-23",
-    "hash": "cc28e22d1002aecf1e231eec4ff704746ec169da499c04b9a79d6cb207bc7116"
+    "lastmod": "2026-07-26",
+    "hash": "efc67320e3ead893355bc73664c37d4060ea6044064baaa3daaf4527f2a1249e"
   },
   "/learn/cabinet-box-squareness-before-cutting/": {
-    "lastmod": "2026-07-23",
-    "hash": "504318fa4ebc466cb78b147c981d43290c65637630fc6b40247fe9c057dd3c3b"
+    "lastmod": "2026-07-26",
+    "hash": "861d61a302e094c6350790802e385589174667e71fe17bbff042a41fc8158920"
   },
   "/learn/cabinet-dimension-chain-from-opening-to-parts/": {
-    "lastmod": "2026-07-23",
-    "hash": "9cd3c43c20c2d62dff9d8b8e0fc9aa7439c4a6081e328217c361b9ed7e5364df"
+    "lastmod": "2026-07-26",
+    "hash": "051bf51d770f4cfa6a7cfd6607ca6cd119e8d8a79335554d5c3cc01514dcae56"
   },
   "/learn/cabinet-door-cut-list-planning/": {
-    "lastmod": "2026-07-23",
-    "hash": "816c92cb2940e62c32f585986010d2afc08c28c186745edd83a8eee36470381b"
+    "lastmod": "2026-07-26",
+    "hash": "59b1315e26ae0435cdd890258d2a02528d4f40a42ba7f00cbe3fb975a7ae643c"
   },
   "/learn/cabinet-door-overlay-and-inset-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "81b84bbe6ec593a48bb73f3c0722a41178d3bf98c592229bb727c24f98a84e3d"
+    "lastmod": "2026-07-26",
+    "hash": "635e5097c90907c576c97f686d426e31b66d447dbeba74174829b643aa4d79b0"
   },
   "/learn/cabinet-filler-and-scribe-strip-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "6352034b58cedfb1ca42017587cf4f3889b0f7293405fd8d41492dce91440d2c"
+    "lastmod": "2026-07-26",
+    "hash": "82a3a022fb940cd28cea6a8235367996083d3074ba2311bfb20b6d9d6c35ba7a"
   },
   "/learn/cabinet-installation-release-checklist/": {
-    "lastmod": "2026-07-24",
-    "hash": "26d48a0c51bbbd7236108249e0edd5ff2b9deaf208cefc57c142d833f73872d1"
+    "lastmod": "2026-07-26",
+    "hash": "478101c2e18b28a34a9344f1e4af05e40d450017dec181cc344a3be6f7c572f9"
   },
   "/learn/can-you-rotate-plywood-parts/": {
-    "lastmod": "2026-07-23",
-    "hash": "de713a181cbd056a0e3691fff3df775476cd8728a3407fda550334cdb56995d7"
+    "lastmod": "2026-07-26",
+    "hash": "23f4456a8ff1dd57bc21b5d33562906656f3af6fc4358410b7c93e5cecbbd97c"
   },
   "/learn/choosing-between-calculator-template-and-app/": {
-    "lastmod": "2026-07-23",
-    "hash": "a62d5efa08e877388e3970d42981f68f126f972f1b373d0c6db6b9d14ed94c00"
+    "lastmod": "2026-07-26",
+    "hash": "e56be6913d3085921e248cb7ad47d86ada6d3ae6bc885f4769537843776d975c"
   },
   "/learn/circular-saw-plywood-cutting-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "9cf17c32958f6c9e2b4afa812254c1f697dad2cb382b55f8405dca5660efa67c"
+    "lastmod": "2026-07-26",
+    "hash": "b4fd5588c9ef1c0fed05303df438b0e44dd90c7264978c5372821d98d06cb108"
   },
   "/learn/closet-drawer-tower-material-plan/": {
-    "lastmod": "2026-07-23",
-    "hash": "bc3ea3a22000756e177789dd24b71a86d36a40db61b86603be4ffd0ec1b6ce3c"
+    "lastmod": "2026-07-26",
+    "hash": "ce5ff98d0bc39074dd811be06ec7c25fd50868f5ab335eaf8276ced9768d48a3"
   },
   "/learn/closet-shelving-cut-list-workflow/": {
-    "lastmod": "2026-07-23",
-    "hash": "cd1a98ccbf663909f98e104c4f1e87897872d845d098c37f3500d44e34b6705c"
+    "lastmod": "2026-07-26",
+    "hash": "91d652b90fb0a7193be5b6e79d521f170d15e50021b5453835f684ad120cd0d2"
   },
   "/learn/coffee-bar-cabinet-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "1c01d8e1174d5c84ee1481a21440452af530dc86986f953bf47f2dd4a2626780"
+    "lastmod": "2026-07-26",
+    "hash": "488718b416bab5ddd33b76b12e79d570ab408c2fa474adc07f1358abfa7ea480"
   },
   "/learn/craft-table-storage-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "95bebab4b935fa452c1394973509a170b85f5438196826c5a47778e3148a12a3"
+    "lastmod": "2026-07-26",
+    "hash": "9cbe2e8c745f7f69159ce58a7309691fb5f36641046fac3554e6eeb268a1ae36"
   },
   "/learn/custom-wardrobe-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "7f761e5cbd17ca0af37adae74f243f19039c165fe9f24e3a610d304a1485e59c"
+    "lastmod": "2026-07-26",
+    "hash": "bce02797bad9928f5bcbf3fc71bc6b535aade511c1612a661dd20acaad381f24"
   },
   "/learn/cut-dimension-drift-sampling-plan/": {
-    "lastmod": "2026-07-24",
-    "hash": "84659f90e77bb23a9f1046c677e09702eeeaa199635ba32ee5f66024e86961d8"
+    "lastmod": "2026-07-26",
+    "hash": "5e9bdca2cc89028b82a81ba15ff904a6d294506d209c0d070e418359d1fb618f"
   },
   "/learn/cut-list-change-impact-review/": {
-    "lastmod": "2026-07-23",
-    "hash": "c733abccf1f8c601a46c211fcebad05907d53798db2022789b7739750cbfb877"
+    "lastmod": "2026-07-26",
+    "hash": "5ee844011f2f719c773c0f1b6afea1f177c140a4eca17eb637ff8ef1bcfc1ace"
   },
   "/learn/cut-list-closeout-and-as-built-record/": {
-    "lastmod": "2026-07-24",
-    "hash": "01fd5470f2d28a9f5ffd29fbd46cea29aef245bc3bb595cf59ee86324f48f661"
+    "lastmod": "2026-07-26",
+    "hash": "57afb56f28367fad218a2ad770e6d87991558305c73c15d1277e8d69fd9d53df"
   },
   "/learn/cut-list-labeling-system/": {
-    "lastmod": "2026-07-23",
-    "hash": "811d6ca431ae3f9008e446aeabaf06ffca1bf9697654aff0981635b7e83d070f"
+    "lastmod": "2026-07-26",
+    "hash": "2941c845b801d8c236fe377cf219107405b844a2480092e31a08377c8172708b"
   },
   "/learn/cut-list-optimizer/": {
-    "lastmod": "2026-07-24",
-    "hash": "6ca75b2af9f979be9faa6ee41bf83fd3eb025c4b8c4223a16b2aed0bc3b9158d"
+    "lastmod": "2026-07-26",
+    "hash": "dd6630916f8828f3a573a95dbd4a33af1bee8779f87b5ca7435e7486fd816120"
   },
   "/learn/cut-list-planner/": {
-    "lastmod": "2026-07-23",
-    "hash": "17cfddf8405975dc9ea79f6dff6c5e1be858ac334452af6b6d179eaae967b0cd"
+    "lastmod": "2026-07-26",
+    "hash": "61ed6a37bf8548ebbf9fe0e4c8ba93e89d5059a9e9959207e5bf494b044c49bc"
   },
   "/learn/cut-list-quality-check-before-buying-material/": {
-    "lastmod": "2026-07-23",
-    "hash": "788a5377e4e75064fae30bac6320205eec46c2dde7915c262555a6a262eaba5b"
+    "lastmod": "2026-07-26",
+    "hash": "0b4ee67e56fc6c3b27a7851189723c3daa51ef9d036ad79925edcfe88df56336"
   },
   "/learn/cut-list-review-before-cutting-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "19ddcecd1171570fc8f60876461fd086ebd9d277aa5b846bb339fdb9826bdd11"
+    "lastmod": "2026-07-26",
+    "hash": "c46eb0683cd583f2dd9ff9802283d9a8b83b04c08260a3ab460c9b3c6b879b02"
   },
   "/learn/cut-list-revision-workflow/": {
-    "lastmod": "2026-07-23",
-    "hash": "da60f00e81604b56b704bf51d1ddeb078c2bd5fa3aa4686be0fc801d50bf2b88"
+    "lastmod": "2026-07-26",
+    "hash": "2773c68ac31ba689b3fc17099a540c05798d9db56fb277ee01a479ae59837561"
   },
   "/learn/cut-list-software/": {
-    "lastmod": "2026-07-23",
-    "hash": "f0f7faf19c1f5a609f0070b6e8b4165859a9e90557caf27805b26e55a4e296eb"
+    "lastmod": "2026-07-26",
+    "hash": "de216de78b31f5d5258134a7ae482dd8eb28b4636f8d9f8ada1c9f8fc2dbc625"
   },
   "/learn/cut-list-version-control-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "3ce18c3374263d648e2ce49df5d4feb21871365960473983417527e2db982398"
+    "lastmod": "2026-07-26",
+    "hash": "2755039414154d41c3e36447643a1bc75e87078ddc811125226d71d0b9fa1c0f"
   },
   "/learn/cut-list-yield-variance-closeout/": {
-    "lastmod": "2026-07-25",
-    "hash": "2dbc209ccc490c1ada0b54226160076bad864e0d7f6c528a1799e077e08549f6"
+    "lastmod": "2026-07-26",
+    "hash": "fe79aadeb0706c776f51d16fd9a5f6ed54e9d3fcede369071e29ea85c3550c55"
   },
   "/learn/dado-and-rabbet-allowance-in-cut-lists/": {
-    "lastmod": "2026-07-24",
-    "hash": "1f0edf31e71e86482a050a8fbf945b213f13cace1ca0321c7f4a51b24169d1b0"
+    "lastmod": "2026-07-26",
+    "hash": "80551d6a1b7c8661fa06eddb7eb3f16bd273d132f56d25f44a7610eb3439ba66"
   },
   "/learn/deck-stair-material-estimate/": {
-    "lastmod": "2026-07-23",
-    "hash": "0c72f0335fe8455a50b772222ef6e006167eea10dc04d3bc9440de4575d00371"
+    "lastmod": "2026-07-26",
+    "hash": "9224bfed92e5695dcbe8a5c6e7786284e7c37df6497322d7cae81ac6b8137f41"
   },
   "/learn/deck/": {
     "lastmod": "2026-07-23",
     "hash": "921c574d3478b041e2f5d319ab42a6d5713aacd6283da47d89929ce8456c9444"
   },
   "/learn/diy-closet-island-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "95ab7ea1c980fc5637f10e3da8d35baab39dcb81605429cbd002dc00e496bfeb"
+    "lastmod": "2026-07-26",
+    "hash": "dc8a54b87d4de6485d312ecd415ea2ac642036632ed45f85b2ff998e3d2340e2"
   },
   "/learn/diy-plywood-cost-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "9bb8a812c9751a99f5d3e75150cdee8b746903c42266baf87d9d6f907271343b"
+    "lastmod": "2026-07-26",
+    "hash": "eefd8194e679b92518d8eea0a157f04780ba6860d7ebfd98739267cd661ebec8"
   },
   "/learn/diy-wood-project-estimation/": {
-    "lastmod": "2026-07-23",
-    "hash": "a5c0c2891dfca2515182b63b8dc79ef074a6f7edf4875daf52d83baf32395d3e"
+    "lastmod": "2026-07-26",
+    "hash": "271350e31d6dfa46a1e1fa72035aee3ac5008e8b400772836bceee3c86a0e995"
   },
   "/learn/diy-workshop-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "6ac0728994856bdc9f943f95827cfe365831bdf855b877cca1a2781c3308b3d2"
+    "lastmod": "2026-07-26",
+    "hash": "6972e56cc3ab016e83a1a36b901a8925b3d45e9b258dbc35bdb2299902dc7c17"
   },
   "/learn/drawer-box-cut-list-basics/": {
-    "lastmod": "2026-07-23",
-    "hash": "85a976e12678c0b6673604036478f2e28404bfe67d2c143211f254ecdf16a75b"
+    "lastmod": "2026-07-26",
+    "hash": "839e7badb4b383e8bb7d3c88fe26ae41333ca1a9c65f643da4fdad51a436681a"
   },
   "/learn/drawer-slide-clearance-to-cut-list/": {
-    "lastmod": "2026-07-23",
-    "hash": "7f7a191ea90a8e9e8a62a984b4136bd234997c526c3b27b309208e4fb469af92"
+    "lastmod": "2026-07-26",
+    "hash": "dbacbdd783c458588f35025a8706c82165fa721646277a7a6902ed4a5f251adf"
   },
   "/learn/edge-banding-allowance-in-cut-lists/": {
-    "lastmod": "2026-07-23",
-    "hash": "ff8198cc3ca8fd0024b5c368690e861050b5f91f74534a7181dcc0bde01d855a"
+    "lastmod": "2026-07-26",
+    "hash": "eebf6784b4d0c3eb42d2714db4ba7bc6d8275cd150d49134f8ada3b571cba5ba"
   },
   "/learn/edgebanding-material-estimate-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "e8ba71f9ac2afb31604066e3df0f849383abe357ac98b8c4fd37fd4fc700b572"
+    "lastmod": "2026-07-26",
+    "hash": "e999def29b725446df7f806cebec1f241f60265402184ea1d388d9fd191f052a"
   },
   "/learn/entryway-shoe-cabinet-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "990d54a7c37b5350fcacc747f1a7face57800b43d637bae9e5fe97ada0b7bbcc"
+    "lastmod": "2026-07-26",
+    "hash": "e5ed59fe5b10e7165e396b5219ec117fff5625a23ae3130ec7eadab86df557fc"
   },
   "/learn/face-frame-material-estimate-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "09f56fb3184c75b76e95af02c45ed12c1bea8a69b7c09d58e0ca891d0a38e984"
+    "lastmod": "2026-07-26",
+    "hash": "5e314f3f8f28ab254752f788a20ec549eaecfc1f02066aa70949223ab66deb41"
   },
   "/learn/farmhouse-table-material-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "99752dc70c4758d4eca65baa0bb04a2ba02dcbed797d423734d103f9936622ff"
+    "lastmod": "2026-07-26",
+    "hash": "a0abaa3336885d2960b4dab23578ea678d054796bb7d51486658563ada831148"
   },
   "/learn/fence/": {
     "lastmod": "2026-07-23",
     "hash": "d551982d7024f7cb22c71f372b0a66a58200a77e79947ff9d5e32bbc4e6d36cf"
   },
   "/learn/field-change-hold-and-release/": {
-    "lastmod": "2026-07-24",
-    "hash": "4ac7dd1d46a82ae59735bbd129f8284f16caf8f8b26888015313e6c812de5cf6"
+    "lastmod": "2026-07-26",
+    "hash": "5c239ab1bb247dcefc7ba65086c0f98c117019c56ad28eca1e4ac6d2e8aae4ad"
   },
   "/learn/field-measurement-checklist-before-cut-list/": {
-    "lastmod": "2026-07-24",
-    "hash": "279449bcc0f51546170758c3058dae7e8abc5b8a5d74d058d2049eeed41f93b0"
+    "lastmod": "2026-07-26",
+    "hash": "1d5da2db9b8c3fbbafa65a9f954da941ad3835bced6f4f1be22261276d838935"
   },
   "/learn/first-article-check-for-repeated-parts/": {
-    "lastmod": "2026-07-23",
-    "hash": "87e238527f112b72e73beb78e4c0c285c63c65d510138160ada3947ad21579ea"
+    "lastmod": "2026-07-26",
+    "hash": "dfc6b851b2d864b76e13b959f399bb64ef48e5b1643ca2e77dceb3718d464d4d"
   },
   "/learn/first-sheet-cutting-inspection-record/": {
-    "lastmod": "2026-07-24",
-    "hash": "126ae8048c4b94eb30b3460027743e75d392caa5e500fdbd1fb6e45c8494b3c0"
+    "lastmod": "2026-07-26",
+    "hash": "6344641885561a198e805e1d508e59ed5b16219f3c0830db55ea5a830fa5f50d"
   },
   "/learn/folding-desk-wall-mount-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "552839c01bd6b9d963bd78de47a6110d6188f64839c5e343f03e73ad57b9bdc9"
+    "lastmod": "2026-07-26",
+    "hash": "d051ff760216a7b78f40ee0b41ded58d0a0dd72b9af31c98db020cc74a1576c6"
   },
   "/learn/french-cleat-tool-holder-planning/": {
-    "lastmod": "2026-07-23",
-    "hash": "1d014be28ad8f9efa47e91f2e6fe055878565472190a727da36c7b317132e1da"
+    "lastmod": "2026-07-26",
+    "hash": "6c0a21754c98c8c49f2d149d947c7ad78ffaf75cfe8da8c7b32ba69778656ee3"
   },
   "/learn/garage-cabinet-material-estimate-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "3dc6a737f0e4c55e7e40958e7a878e61ecafd6d47d130a2c2f8bdb58bc9de894"
+    "lastmod": "2026-07-26",
+    "hash": "f91516e1ba6229066c97e823673f63233b651c9d8951b68d03782b1d83467999"
   },
   "/learn/garage-shelving-material-estimate/": {
-    "lastmod": "2026-07-23",
-    "hash": "3578557a9ea2a1bfc88a1cfae80d15d06c8d6d6f2d41582cb6a6f3a161ad18bb"
+    "lastmod": "2026-07-26",
+    "hash": "fd24004b459a59ca333c8e4fcc5bc8938990bf67f86250524d6dedc5cac57313"
   },
   "/learn/grain-direction-in-plywood-layouts/": {
-    "lastmod": "2026-07-23",
-    "hash": "563c077c39df450bebd6d8f9244ba8332c31abfbdd752429bd29a9eb1d00f94c"
+    "lastmod": "2026-07-26",
+    "hash": "0b9fc1eb3cec42333b0a4b667f696a452078c7d4e5534798e53126f58820931b"
   },
   "/learn/home-office-built-in-desk-planning/": {
-    "lastmod": "2026-07-23",
-    "hash": "f6190fb5962cf3c4b0bedfaf47e9a614860613614cc4e6dd98052c0bf4b273fc"
+    "lastmod": "2026-07-26",
+    "hash": "816e4883d0b883e2ba1a0ca4db779862b7fabdbd2313173e1b43710a4176483a"
   },
   "/learn/how-many-sheets-of-plywood-do-i-need/": {
-    "lastmod": "2026-07-23",
-    "hash": "2278e56ee9fe2f308259f322134ded398ef674ac3a7f25236926d6811033a6cf"
+    "lastmod": "2026-07-26",
+    "hash": "d5bd53dfa1f20908265eb2300928cb36b5e808b2f133108cab0ec19b91a94d5d"
   },
   "/learn/how-to-calculate-usable-plywood-sheet-size/": {
-    "lastmod": "2026-07-23",
-    "hash": "366c7dabae6d48fe5457b27bc7ba60712893e81abec1a49fa029dd6d37bb8725"
+    "lastmod": "2026-07-26",
+    "hash": "1804339e27471302422314a4589b374100cbaadb73d0e2919d0006619222be28"
   },
   "/learn/how-to-read-a-cut-list/": {
-    "lastmod": "2026-07-23",
-    "hash": "87bc5d6fb732fb75021f74a9b496de08b184271a35876373f743e6a5d17ab630"
+    "lastmod": "2026-07-26",
+    "hash": "7109071a895d68b3651187e60396ff4202921499321f4f80cd0820fcce55d864"
   },
   "/learn/how-to-reduce-plywood-waste/": {
-    "lastmod": "2026-07-23",
-    "hash": "886fc34c6b5cbb8a92f133a28f301f9477496f22a7fe9d8d9d700e3902512162"
+    "lastmod": "2026-07-26",
+    "hash": "c218d9a6a6ccfbb4bcc231f5936e60cf7f899bc7b2cf03b3b77165c1252cf597"
   },
   "/learn/installer-punch-list-closeout/": {
-    "lastmod": "2026-07-24",
-    "hash": "29d1d9974e84a507751602ae8074fc3df1a900c92933ae68712ff80a62919d5e"
+    "lastmod": "2026-07-26",
+    "hash": "d177b83f458a363682fef75ff93cbb0c2d725754a066d78a6bcd60463dcec3ca"
   },
   "/learn/kerf-allowance-for-table-saw-and-track-saw/": {
-    "lastmod": "2026-07-23",
-    "hash": "80c857a84178fef4647e544b852e36486979be13e47f6cd5863d16adaecd48d6"
+    "lastmod": "2026-07-26",
+    "hash": "ecc43bff3486162ead10ce06f04ce480b855bc09061b2702d33a3e51f9c33e32"
   },
   "/learn/kids-storage-cabinet-safety-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "aa98794143aaed46af05b80cbb85d3dd9523a8b2f305d66ca5deca33f823cc3b"
+    "lastmod": "2026-07-26",
+    "hash": "d8c3d0777644aa6f2df55cf996bc4205e941601402acb73b5176614cf3d1ecd0"
   },
   "/learn/kitchen-cabinet-sheet-count-estimate/": {
-    "lastmod": "2026-07-23",
-    "hash": "c7034149bca29fb0629527059ac46395943df9e5d9f4a71c205cd58790cde485"
+    "lastmod": "2026-07-26",
+    "hash": "27de9b96c8f8252e3c8f1cb0cb7e56844531f37fd1cba460105230dc0be2d389"
   },
   "/learn/kitchen-island-plywood-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "1ecf52edf5d379de30ddb663d94cfd7f28b2bcc01c691074c1a486e993786fda"
+    "lastmod": "2026-07-26",
+    "hash": "f653969607a625e98e94497eb6252b5e2a35bc00db750297aaf64423ee90751c"
   },
   "/learn/large-format-tile-waste-planning/": {
-    "lastmod": "2026-07-23",
-    "hash": "6c77aae98426c714fce5de27397c3bd7a1c6bca2d5191cb72d152489114a4c7b"
+    "lastmod": "2026-07-26",
+    "hash": "0a77d7447f9a176cd96e7fac870f25c5a869714a2a5d6054dd0848693b65963c"
   },
   "/learn/laundry-room-cabinet-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "161ed6601c6dab29310ebeca1f0f122f46ebc763137ee085c16646c649a67ab9"
+    "lastmod": "2026-07-26",
+    "hash": "b0f55dc4c0342577dfb7e54ee73c5882c5f38c05c9fcb0880ce3dc1911088b13"
   },
   "/learn/loft-bed-space-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "9a872606050e6f60efe641720c236e6c8805d5faa2276cd4c7eebd2f3c4b9405"
+    "lastmod": "2026-07-26",
+    "hash": "40fc568b154e1174b2ab2aa735e57d360c17c1da73ca799240e0e445d2528d5e"
   },
   "/learn/material-estimation-for-carpentry/": {
-    "lastmod": "2026-07-23",
-    "hash": "2b45ea8acbf785826f03defb7cf3232ff844a447370de7de3c1870c7e596a844"
+    "lastmod": "2026-07-26",
+    "hash": "bca899723a519ebb9b8238b4c7b24d08381ad92c9d79e99e06ee18fd01a3a16d"
   },
   "/learn/material-groups-to-purchase-list/": {
-    "lastmod": "2026-07-24",
-    "hash": "154558c4c68a31bc3bf58bcb6744709d2e4ba7e79ca3dbbcbef345cc156fa7c9"
+    "lastmod": "2026-07-26",
+    "hash": "013b49035af2a5f10ae55123086f2bd834ef633a6751fc746d1591fe3a7d1946"
   },
   "/learn/material-list-before-hardware-shopping/": {
-    "lastmod": "2026-07-23",
-    "hash": "f425c607966e33697cb21b266a13b532bb5c823cba8af874b14126ce2158ae89"
+    "lastmod": "2026-07-26",
+    "hash": "5d7460e87b5185b70254c610557d1da001cea76db7e2605677ff3c5e881afee5"
   },
   "/learn/material-substitution-approval-workflow/": {
-    "lastmod": "2026-07-24",
-    "hash": "4390a9490cc752e005599a04476bb647a5bf9f1b523ef4729ddb83f62c7920aa"
+    "lastmod": "2026-07-26",
+    "hash": "cf9fef56ccc62346f47aa364a1006e68ffabbe2225e72fd145975ec17d6c3dc7"
   },
   "/learn/mdf-cut-list-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "76cacb727e278989181200d2d9b187afa5794c0a20d78d2aad6437cfafb9011d"
+    "lastmod": "2026-07-26",
+    "hash": "428793c42b9718e0988c2927077c126c459fafbc1009d44b725ac937ddfd00c8"
   },
   "/learn/media-console-ventilation-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "5c282f738102a4070d3dea2ffe99814d9e22a6db77a99e256a185794b2da5429"
+    "lastmod": "2026-07-26",
+    "hash": "3c6d588616083bfa041e4cf8435c5b4f8e4c31a0c514ef9b392a7e90145cf7bd"
   },
   "/learn/melamine-cutting-plan-for-clean-edges/": {
-    "lastmod": "2026-07-23",
-    "hash": "48a2480fb48b4df65c73cdabff947eb3c131caacb91e068e91174c51ff9b6df1"
+    "lastmod": "2026-07-26",
+    "hash": "40ed201400dc1de1404ea42fb5d9d7cf2cdaf676cffa6c72af788cc558164f69"
   },
   "/learn/missing-part-and-rework-closeout/": {
-    "lastmod": "2026-07-24",
-    "hash": "4c73f512433c6716ed350716e4fdfc7b47e1cd6085f24cdc820704072e9eb849"
+    "lastmod": "2026-07-26",
+    "hash": "ee4af7db9ba19518d71e230fa7f4c9b45baba7a3af52c8033db93daa741e972b"
   },
   "/learn/mobile-workbench-caster-planning/": {
-    "lastmod": "2026-07-23",
-    "hash": "e11649945683cda79c54fd352638631575208e82edbd3715d3962626861cf62d"
+    "lastmod": "2026-07-26",
+    "hash": "f8ee3fa32302af9ae3ae50aa505e393cd137147ee79dd12156d691d4dc7de07f"
   },
   "/learn/mudroom-locker-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "efc9df8b0df5e4f27dfea413d5d44ddd0bdf1b2adefea92376b8a010675d2587"
+    "lastmod": "2026-07-26",
+    "hash": "5acee20d50c6744b57260463456f6c798442585d14f92e243976ea73b3f5b9d9"
   },
   "/learn/multi-room-material-estimate-workflow/": {
-    "lastmod": "2026-07-23",
-    "hash": "ae3eaf4f691adc9ca649e02beb2a88907384c3dd8564032c37a8c8b8d4db7769"
+    "lastmod": "2026-07-26",
+    "hash": "4e645c57b56c1d34487eb72012a290c23e6232f7e395bc048880c66f678b72ad"
   },
   "/learn/multi-room-plywood-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "a9ec05fb386da3bafb60a19bb2ad927f74322565663eef68cd647fb948b9cace"
+    "lastmod": "2026-07-26",
+    "hash": "f3f543275705170f7e5a38f55fd00370d9fa40999fe1c01e9cb2658e83c858d0"
   },
   "/learn/offcut-storage-system-for-sheet-goods/": {
-    "lastmod": "2026-07-23",
-    "hash": "01a09efc93da08174ef6edb2f94e7a4fa0f92646f847a6264f0513691db308bb"
+    "lastmod": "2026-07-26",
+    "hash": "b7ef8d802e2598f546807a1f99a6abac9ce6747aef2e06cf91766bbe108da173"
   },
   "/learn/one-sheet-plywood-furniture-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "4d929b80e9ed693927ba065ab729ce5000bcc5d822d5f15dbe0184edadb224dc"
+    "lastmod": "2026-07-26",
+    "hash": "8f10fb96a7d4b6146d114879c0037a0090016dd7dddf717dc2c890f9a047948e"
   },
   "/learn/one-sheet-plywood-project-planning/": {
-    "lastmod": "2026-07-23",
-    "hash": "a46f2931b1e0f96c7b04d4f9e4557373d29cde608c5b4142ead37b5f584061bc"
+    "lastmod": "2026-07-26",
+    "hash": "b0421dd5c59f66ea761cb3497627616da68551f48a0dc79ca5e558748fb25091"
   },
   "/learn/pantry-pull-out-shelf-planning/": {
-    "lastmod": "2026-07-23",
-    "hash": "c864e6d361677bc30d936010cf54924a8ac00570844155921ac692c034523904"
+    "lastmod": "2026-07-26",
+    "hash": "b459bbe905fee494266abb21bc4da765c15492bba13bc03cc1585599b3bd2714"
   },
   "/learn/part-id-and-labeling-for-shop-handoff/": {
-    "lastmod": "2026-07-23",
-    "hash": "4c9d135dc8d74efd9e79ece7c7dd24e6fe09689bab2dfb1c25ff75f8a0d4294a"
+    "lastmod": "2026-07-26",
+    "hash": "8f75a3a84aa7b94d2ba4cba945f6f0bf71020b2de792be9304b406979d0779df"
   },
   "/learn/pet-furniture-plywood-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "c4cc196f73413a497261e82a84887ed63e9fdc565377ceb5831f44755692d196"
+    "lastmod": "2026-07-26",
+    "hash": "6de7ff35411187aa999ee3a9adb1fb4fad8f2b4126e9425de03593f51aad8941"
   },
   "/learn/playhouse-plywood-material-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "d26ebe29a850c01aba78fd70adefb0ec44795bb40a68247706ab35c7579922e3"
+    "lastmod": "2026-07-26",
+    "hash": "d833733190a78dfa8e0aca03b6df1abbe38ebe6ac5b330e6b6510fd38fe0c6ad"
   },
   "/learn/plywood-breakdown-cut-sequence/": {
-    "lastmod": "2026-07-24",
-    "hash": "b16a1d0042386f483a7c642f402d08d81e358177644bcd758d588bd897c8a9d8"
+    "lastmod": "2026-07-26",
+    "hash": "5bc4294d59d49a04cfafda17bad12c77fac82b2726188c87381f527d94a9e406"
   },
   "/learn/plywood-core-selection-by-cabinet-part/": {
-    "lastmod": "2026-07-23",
-    "hash": "e0dc862c6a706d7fbff70c8cc5fb4fadef748177c27ba567dd9a670683b7f389"
+    "lastmod": "2026-07-26",
+    "hash": "225957775f33f35f6146e6ffed49899e90fc25ce276b6898942c6f79d1e89e24"
   },
   "/learn/plywood-cut-calculator/": {
-    "lastmod": "2026-07-23",
-    "hash": "49d6a2b55378b51fcac592bf047f77e4225481941f2fc64d6e1c2c0ed6ec6486"
+    "lastmod": "2026-07-26",
+    "hash": "5803e5ee0b822d21ccd4b8cea99b0a77ef86d82f68b8b383ceeb896d452c4893"
   },
   "/learn/plywood-cut-list-calculator/": {
-    "lastmod": "2026-07-23",
-    "hash": "9c5ef91c46d82bb9619a9a9d4d7ef1021eb88ca0143177c062b8a4e982779c2f"
+    "lastmod": "2026-07-26",
+    "hash": "099ad2c7fcd35080be9d32c82f05b031b902b367d0bab62fff785197823545a7"
   },
   "/learn/plywood-cut-plan-for-built-ins/": {
-    "lastmod": "2026-07-23",
-    "hash": "31a81324a1dbd4d99dad449eb035e3747ca5a12741ca8a5fdbb2379089c70c90"
+    "lastmod": "2026-07-26",
+    "hash": "6642bdac4020fdb4b8000565bff8d9176406bc1521681387b585623361417905"
   },
   "/learn/plywood-cutting-optimization/": {
-    "lastmod": "2026-07-23",
-    "hash": "6f6356a75827849626aaebf19d7ae8ced716800b27f452cacc612df44f34e36a"
+    "lastmod": "2026-07-26",
+    "hash": "aabef63fd5515a9db1ee342f4f69186e4338d31f02ab89ffd936799f4a5e8b43"
   },
   "/learn/plywood-delivery-inspection-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "b1ce07d816ca63190c1e09db240e7883d01cc2f176e454535dd76a76983a7af0"
+    "lastmod": "2026-07-26",
+    "hash": "782d65b31494b363b0b84a0359bd8d795c2a24dadd8eacb46ba25662bd674797"
   },
   "/learn/plywood-edge-finishing-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "93e951d29a5d1044ce4c3ac69561187a83a30bd1a119dbbcfb36cb33588a40d2"
+    "lastmod": "2026-07-26",
+    "hash": "64586ff611e8d7f411667bb329fd8470ad835f5a37a4d430104bac36a1626c05"
   },
   "/learn/plywood-edge-trim-allowance-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "23eb84d9f9068dad954e8afe64af4213fe487370c1e9919f7f32b5413d244410"
+    "lastmod": "2026-07-26",
+    "hash": "3eb517293fb66432d428a8796c4d14bc49ad3ae5e00ed97700c13243ba893b9f"
   },
   "/learn/plywood-face-grade-part-placement/": {
-    "lastmod": "2026-07-23",
-    "hash": "96cf296af745644c0287ee24a11db1e295fffac52a17f337456aed12df01c332"
+    "lastmod": "2026-07-26",
+    "hash": "652ad29cc54856e1e7c0a078709878b3deb6f96d6fe64fa4658df29b0eefbb89"
   },
   "/learn/plywood-grade-selection-for-cabinets/": {
-    "lastmod": "2026-07-23",
-    "hash": "daa2ca9a60b04e38115ecb3280309fd92fd131b3a5bc2ed24cc4a858417e1293"
+    "lastmod": "2026-07-26",
+    "hash": "5815ff354852ff2cc5280091d3b379321d0d1472e494ef792d95ad68e9a41308"
   },
   "/learn/plywood-grain-matching-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "a09c44da61e3814415fd0dc4b5dd927a841b1f0fe10c7a0caec6f1f4447f5cac"
+    "lastmod": "2026-07-26",
+    "hash": "aae9736039c780bb727fc6c1a62d4d20bf39ba5e7956fb21410466b91dc91647"
   },
   "/learn/plywood-offcut-inventory-workflow/": {
-    "lastmod": "2026-07-23",
-    "hash": "f225967c0227783be99ef971bddb5e0a57c88daf33ff3c7499dd6fea25615f4a"
+    "lastmod": "2026-07-26",
+    "hash": "1456a4c7fad8444c3241bde2b11aeb185f601d6e635699e59bb44733aeae1c80"
   },
   "/learn/plywood-offcut-size-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "973ec2865d8c3d7b7d61d3a1bd3808a3a76a18d58c018b6ca2c30f19e6af40eb"
+    "lastmod": "2026-07-26",
+    "hash": "359135eb79b8c4a2a16d686180415f7bb102c6f6ba081ad0132ed29a840394ae"
   },
   "/learn/plywood-sheet-breakdown-for-beginners/": {
-    "lastmod": "2026-07-23",
-    "hash": "986b4a91258264e896d63b15e2e519d04336c99980e8513205ac1d05abcbb2ef"
+    "lastmod": "2026-07-26",
+    "hash": "758fce5e775f66a5f7839d12d3c3186ea515899f2624c293d7e03ddd6f574712"
   },
   "/learn/plywood-thickness-tolerance-in-cabinet-layouts/": {
-    "lastmod": "2026-07-23",
-    "hash": "ab586ce3df4d6f7c9e4cd8570a017cafa61851ba4cf29bb66d9cd0c6b81c1a00"
+    "lastmod": "2026-07-26",
+    "hash": "48ae8c79ca6b44465465a2f77ea51c5a30a16761b73a8f620bbcdddd4777299c"
   },
   "/learn/plywood-yield-percentage-explained/": {
-    "lastmod": "2026-07-23",
-    "hash": "322585ea54997c4d1fe8f5c06a19934d1a928d12e58599ef7d2f69628d4fb2ac"
+    "lastmod": "2026-07-26",
+    "hash": "482ebdf350277e323f3cb0631a079a6ecb55e4cdc65f75b2d4c2c603a6ce12f3"
   },
   "/learn/plywood/": {
     "lastmod": "2026-07-23",
     "hash": "78d1de8e3fb73edbbe20466d54ca99635fa2eca5e6132681c3637873747d00b8"
   },
   "/learn/prefinished-plywood-cut-list-workflow/": {
-    "lastmod": "2026-07-23",
-    "hash": "4788676e0ecf7c062e93e27ff15cfcbce71e17095e8cf3df3cd76513c7fdc344"
+    "lastmod": "2026-07-26",
+    "hash": "2a272d8ed6287df60e2eaf11994505fe3b47ec601b3cd07e3835c8dbb01d05e4"
   },
   "/learn/project-cost-estimate-from-cut-list/": {
-    "lastmod": "2026-07-24",
-    "hash": "b0d9a983092cd1f64e9ec09b7c13e3a2e63517f873ab7c094d4b793224c8f36d"
+    "lastmod": "2026-07-26",
+    "hash": "b95e3889ef04b98a991069eca40059085e0a95173796e898254b3220e7b857ff"
   },
   "/learn/project-material-delivery-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "6622bc4bc24a3cfc39c01bb05fdc60b6c6cb54f56b6e914ce51f3b85f01dcd06"
+    "lastmod": "2026-07-26",
+    "hash": "d755b0b60460c0b974a65e6b35d17af9249742200cd9f8e694dd5f75bcdf0551"
   },
   "/learn/purchase-order-to-cut-list-reconciliation/": {
-    "lastmod": "2026-07-25",
-    "hash": "93415968e3677e67d16f9853498c924338f17abeacd75cf6204f0985716e3cee"
+    "lastmod": "2026-07-26",
+    "hash": "8a2918cc93ba16c91496f27c930f6066d176eab8cf8a3c7eb8231b7d10114727"
   },
   "/learn/quilt-backing-binding-batting-estimate/": {
-    "lastmod": "2026-07-23",
-    "hash": "9b739048c8375a1d35da2cafe45a14e0db685cddf0a2c1d0f50bb854ad05498e"
+    "lastmod": "2026-07-26",
+    "hash": "133924051360b5c1828ca28e1edf09c4f4b374225af6e60f5c40671875739f96"
   },
   "/learn/quilt-border-yardage-planning/": {
-    "lastmod": "2026-07-23",
-    "hash": "485f9e32a3b5db52c9c14861f059ff1f9eec111c8749e37316ea47573ccb093a"
+    "lastmod": "2026-07-26",
+    "hash": "8fb1f9fb1ccd80f5aa021a79bd5ad111ae4e02cc67b65b99d6deace549141a27"
   },
   "/learn/quilt-precut-bundle-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "d67a02121213a65133f3479d26f3f5bbebf8a4cd0a18b3b908dc26e513f5bb0e"
+    "lastmod": "2026-07-26",
+    "hash": "01e09b2312c09bdb12b9678068b141dc3e314a0243f61eaf0ce6e54be65f4b28"
   },
   "/learn/quilt-yardage-calculator-inputs/": {
-    "lastmod": "2026-07-23",
-    "hash": "0a30a4664a8eeb1533fedfe8e720546244ae9f4a114c4b8d39005731bbdaf883"
+    "lastmod": "2026-07-26",
+    "hash": "5f3f0b21ace4405178787c69b82110f3cdebb3f37e1bd695b1b8abe96e7fce1d"
   },
   "/learn/record-cabinet-shelf-span-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "e7aacdbad196a30bfb28efeefe353a200a3917868e80bcb29383af1b3cb63e79"
+    "lastmod": "2026-07-26",
+    "hash": "5f0249268a8b669ee278f629eaee05076d313012a8c5df4f016361348e5a99cc"
   },
   "/learn/reference-edge-workflow-for-sheet-goods/": {
-    "lastmod": "2026-07-23",
-    "hash": "43692f7095c256efa60bc17e126077a93d103ae744fbfe5fdad9e6fc72045c98"
+    "lastmod": "2026-07-26",
+    "hash": "2d00161435b6c4df4efd2e0f506e94d807f8ac362f8f22d00039d2071fb25d84"
   },
   "/learn/rental-furniture-material-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "cb18fd6649e131de07bb09f21f36f5e2f53607f812563e3b677bd4438f1039e6"
+    "lastmod": "2026-07-26",
+    "hash": "4c997d1ef259d045de194f6d3d6585859799b5ccc2f25cdab9d2aba682c8692d"
   },
   "/learn/reusable-offcut-inventory-handoff/": {
-    "lastmod": "2026-07-24",
-    "hash": "b59c266337ff876d5caa3965d0a71fcac3fa0fe2bea486c94d3b49a34e5ca7e9"
+    "lastmod": "2026-07-26",
+    "hash": "b77383b5e76598f0c24dd914a40997dbe232b90e858116cf129f68527343d7eb"
   },
   "/learn/roofing/": {
     "lastmod": "2026-07-23",
     "hash": "0151e3b57b4c93185b61c221e079b53e071c12426b03dcbbc39f5083aecb7a5b"
   },
   "/learn/room-by-room-installation-handoff/": {
-    "lastmod": "2026-07-24",
-    "hash": "87ea99c2884be371e3c665f4c51e7f0dd376ef5caf7ace455b427227388d9b3e"
+    "lastmod": "2026-07-26",
+    "hash": "f454728532181df4b2c49350561d048acc1a2d1b19d46745ab17db7da9560b83"
   },
   "/learn/router-table-material-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "9b5db5d105a5778bfef29d47230aa42e8a7375234859c9dd821096afa244f7db"
+    "lastmod": "2026-07-26",
+    "hash": "b03d07fb581a73a35f0d32f2f92c0ac8961e03d72b57fab3a997434784e27ba8"
   },
   "/learn/saw-kerf-explained/": {
-    "lastmod": "2026-07-23",
-    "hash": "9199df15fa96c6ab9259babf5f23bab80115ec8298dbf4157ce46f197284d394"
+    "lastmod": "2026-07-26",
+    "hash": "7b0ae9109b0fa1bb9553d6f3144e6b904f91dff18dddd59045d61e504cc147be"
   },
   "/learn/saw-kerf-size-for-cut-list/": {
-    "lastmod": "2026-07-23",
-    "hash": "5e5c2b892d957302dfbbfdb830ce08dc09200dd7ce2c3ce01f79bf7eab3293a3"
+    "lastmod": "2026-07-26",
+    "hash": "d40ce2ce639135df462e39dee3da375c833a43d41f4054a3bc2195715b7799f4"
   },
   "/learn/sewing-cabinet-workflow-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "707d38863fe47821bcc842478c780e2c46ec978ede2384ec585780afd2cafaaa"
+    "lastmod": "2026-07-26",
+    "hash": "f2365bcfe0ef77cef607a9db825cbfdf3e09081c0ed38e9dee7322e792a5983f"
   },
   "/learn/sheet-cutting-calculator/": {
-    "lastmod": "2026-07-23",
-    "hash": "9ab8c362528168cd16ebd89a230fd059761cbf26d1b5fb3bc7abfe9a1f59406f"
+    "lastmod": "2026-07-26",
+    "hash": "9e797e17747410736b50cf972af1ee37b5584e9cfe762215c763fd5254ec1dfa"
   },
   "/learn/sheet-good-edge-quality-acceptance/": {
-    "lastmod": "2026-07-24",
-    "hash": "2bd816e14f01fc1da78f95b2cca372d8482f48678083a9e2a272e497df11df33"
+    "lastmod": "2026-07-26",
+    "hash": "2acac25c50efff9cdd42fd57abdbc67531820b098e71cc1737097032a72b7bf9"
   },
   "/learn/sheet-goods-delivery-and-storage-checklist/": {
-    "lastmod": "2026-07-23",
-    "hash": "f92765948a59c9a01962a4ca9d2992a6f15c859f90e201afa32188c661c77c26"
+    "lastmod": "2026-07-26",
+    "hash": "13f6921d2131836498baf91ac2b5e6b008b568715760edd2f4f7baf331c552c0"
   },
   "/learn/sheet-goods-receiving-reconciliation/": {
-    "lastmod": "2026-07-24",
-    "hash": "41104d6b2a0bf0ac32daf62ff2c5f037141ad4c7e1398fe369ef8eac80a4e5ea"
+    "lastmod": "2026-07-26",
+    "hash": "d9f86949567e75b331dca8853e38762991b8c7e20315a6e14e426f2958c39e69"
   },
   "/learn/sheet-layout-optimization/": {
-    "lastmod": "2026-07-23",
-    "hash": "2f8458cf61a9a61ec9593e8d1c2265dd664f67cb0617700b9b59e60c7ba36735"
+    "lastmod": "2026-07-26",
+    "hash": "b23bf423c5f9eba3f2d8d439067ec04d07740a421612d30d926f1844adbecbc6"
   },
   "/learn/shelf-span-and-plywood-thickness-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "f721c3667d338d7f88e88fd61cbb143699b5df1a11bf50db5edf602827c75967"
+    "lastmod": "2026-07-26",
+    "hash": "db71d9585e7bbb6cac5b44c34abb5b49254e12d1df5767848a709c5f82f551d4"
   },
   "/learn/should-you-buy-an-extra-sheet-of-plywood/": {
-    "lastmod": "2026-07-23",
-    "hash": "20815b3dc45cf03095d252fb4f9dd44c3a404a9bd808e76d134e844b80d899c4"
+    "lastmod": "2026-07-26",
+    "hash": "bc85bf998781467739055bf4750be5176c98b127a6a42d21654519a40e9c626b"
   },
   "/learn/small-shop-lumber-rack-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "8a3af1a29c04416d5dfa197b1f521d76482b128c3e753282af4fde4dc1e698a8"
+    "lastmod": "2026-07-26",
+    "hash": "d2c4ca8b60ceab85490c5ca7de167ebe20bcfc6692e395b09dd2b149178d14fc"
   },
   "/learn/stair-headroom-measurement-checklist/": {
-    "lastmod": "2026-07-23",
-    "hash": "c824c4e3878ef9e37e92dbe3c91978654722d9c23ff3d3b3b05cdd4737ed1a9b"
+    "lastmod": "2026-07-26",
+    "hash": "7dfa93239f1f45c5c76f2f616ad89a336ef17c53e83bcc58401e03355a361d3b"
   },
   "/learn/stair-landing-material-estimate/": {
-    "lastmod": "2026-07-23",
-    "hash": "975bb96e3329c98f240e192d9b2496568b87be2ad2617855fe1cf42dac01dc6e"
+    "lastmod": "2026-07-26",
+    "hash": "0260eeaf8aec407d22170586511f1635ccb9005cc514beaf4e2ada50ec47c197"
   },
   "/learn/stair-rise-run-comfort-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "8f5655d647a2460b6dda70a03e038f9a923403a93e7964679b8a426cc0107fbf"
+    "lastmod": "2026-07-26",
+    "hash": "241ea17bcb22a45646a05b42d15a1c7598f485c27269c242a70930c7368b0601"
   },
   "/learn/stair-stringer-calculator-inputs-explained/": {
-    "lastmod": "2026-07-23",
-    "hash": "f6caadfaabd91e93b99acfbb38404b41c7490f45a06e7643e4a00ed2ed6b0d9f"
+    "lastmod": "2026-07-26",
+    "hash": "e3a94ce8b1422b31a40a825421890d7eed835fb08cb6f916b6a7e041801277c4"
   },
   "/learn/stairs/": {
     "lastmod": "2026-07-23",
     "hash": "c1c023a32e3bd8f2c133c76b04567e76928971c5a3697e57ec7637e915c259ac"
   },
   "/learn/storage-bed-drawer-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "8345950cfe567237f1b54374dd4e9c8b81087f926e3ac743df68dbdc9685a1d1"
+    "lastmod": "2026-07-26",
+    "hash": "da0ebe010237dbb55986bd67d55c3f5afad05699e8e734e052a08b5db35c617d"
   },
   "/learn/storage-bench-hinge-clearance-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "4d606fe9009542415e5b209335820c38fa8ba2861df2952087d62be7f143b374"
+    "lastmod": "2026-07-26",
+    "hash": "3237aca092bccb35a07736f51f8d3a3f2bd81fda33d1f589a27c16eacd137cde"
   },
   "/learn/table-saw-cut-sequence-planning/": {
-    "lastmod": "2026-07-23",
-    "hash": "167fe777dd034214d70fcfd4de6b60e27b57a842dc054e6f8879f190c7f33826"
+    "lastmod": "2026-07-26",
+    "hash": "eee579632a1f157cd79617151565551caa9ceb48b3f09bc280d87db947969815"
   },
   "/learn/table-saw-repeat-cut-workflow/": {
-    "lastmod": "2026-07-23",
-    "hash": "f6ca17204c2309641b5220fadebafec7ee2799bbf8452582101d394f26eb13b2"
+    "lastmod": "2026-07-26",
+    "hash": "dccb7a3380dcc0eb825e98949e6f7980c439a50c5cd2a8b7ab2743cf79130113"
   },
   "/learn/tile-calculator-inputs-explained/": {
-    "lastmod": "2026-07-23",
-    "hash": "aa5b087001c8b20e2b1046706875348e8a1991b746dfc07270d93d4f40f60c43"
+    "lastmod": "2026-07-26",
+    "hash": "65aee637e7f8cbbb80f72f5b964acfe7a1addbe8bfe4940111cfd747b06ee760"
   },
   "/learn/tile-waste-allowance-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "7cdace91a7aed4fa3b9942856f7fffa0a087c1bb7bdaad46044c3a7e979f9e89"
+    "lastmod": "2026-07-26",
+    "hash": "f5bc7ce00d2ddbf79fee1a5b9b980230653d3ab4d84befab36b82f8b2a2cc237"
   },
   "/learn/toe-kick-cut-list-planning/": {
-    "lastmod": "2026-07-23",
-    "hash": "20968739b99d52e8f81c87fdd2654acaa95afd82026463fc4a6d0afe5ac50209"
+    "lastmod": "2026-07-26",
+    "hash": "a26cef71d2297719787fce6787b6a7f717738267ef03eacba33bf6bbb922ff18"
   },
   "/learn/tool-chest-drawer-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "eb3db54897565fd2be6f05ce5a6a53d75f8f82bc9f55a34603e832aa5d5efe58"
+    "lastmod": "2026-07-26",
+    "hash": "618c8b6d34b7134d8e58bb4d9e972187d04a860c213b3e10df1fce075e829920"
+  },
+  "/learn/topics/cabinet-planning/": {
+    "lastmod": "2026-07-26",
+    "hash": "97272a6b78ae56aacbe0d3fc33291587994305faac990601fcf6bfb8993c64b6"
+  },
+  "/learn/topics/cut-list-operations/": {
+    "lastmod": "2026-07-26",
+    "hash": "cbfa9685a54b5ea667913be05acdedd1ca7e9e0dc9287d5cf45ee657145a8611"
+  },
+  "/learn/topics/cutting-quality/": {
+    "lastmod": "2026-07-26",
+    "hash": "5347d99fc29b4987360438c27c505a79fcc306bd6564b88a441d3ec47afa56a2"
+  },
+  "/learn/topics/estimating-purchasing/": {
+    "lastmod": "2026-07-26",
+    "hash": "0261993b1adcab367960c28dc5863de6a9f336cd530b1e0e39d92647a3442425"
+  },
+  "/learn/topics/furniture-projects/": {
+    "lastmod": "2026-07-26",
+    "hash": "854ec20a0c5d0f4891f05bd1eaf0143de2eeb4a6c14dabeaaa0e027c227b2abf"
+  },
+  "/learn/topics/installation-field-fit/": {
+    "lastmod": "2026-07-26",
+    "hash": "c7d53851d0b5ac8ae2887736eaf39ac69f1c974ffc76825c6472a2966c7b857e"
+  },
+  "/learn/topics/layout-optimization/": {
+    "lastmod": "2026-07-26",
+    "hash": "ea69a682deeaad6b901f8f8a9ad365233d3f1f063eadac9c9ff667dd2287684c"
+  },
+  "/learn/topics/plywood-sheet-goods/": {
+    "lastmod": "2026-07-26",
+    "hash": "6ca9ea9c2b394bdad28ea8dfc119db2c71168fe7d7b584d7481bcf3ec122bff1"
+  },
+  "/learn/topics/quilt-planning/": {
+    "lastmod": "2026-07-26",
+    "hash": "7fbd9d3ebad15d8b4cabc223df20a0efa9944a71a9239492a92cc19b2c3c02f5"
+  },
+  "/learn/topics/shop-workflow/": {
+    "lastmod": "2026-07-26",
+    "hash": "94f335532a4e43c2692b24665d330427b60efafafe2ad0b3b3b4ced3034179b6"
+  },
+  "/learn/topics/stairs-construction/": {
+    "lastmod": "2026-07-26",
+    "hash": "220b93f6564726bcdaade0817d217a72b685edf9e4f87d5a0a6fa46a46dc82c0"
+  },
+  "/learn/topics/tile-planning/": {
+    "lastmod": "2026-07-26",
+    "hash": "bea1d81745905abbe7cb2e2ad948a5c43d62fd94339737768aa57ffbc83b05fb"
   },
   "/learn/track-saw-sheet-breakdown-workflow/": {
-    "lastmod": "2026-07-23",
-    "hash": "4591ff7f54d13de369bd107cf8be0fb2223c0311dec8def204fd70dbf6f8353d"
+    "lastmod": "2026-07-26",
+    "hash": "a255ba6a0ba7d3eb75a3a3cbfa2e688e7260f75176ab84086501d2ad3cb38d88"
   },
   "/learn/under-stair-storage-measurement-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "ebbb687eccfdb438c63473d87ac74e6a575f308fea792978e7c89178059c3bba"
+    "lastmod": "2026-07-26",
+    "hash": "46cf0b8a074c306277cbd3c467a77bf666e4ef78d1ddfef5c93ebbf56896a98b"
   },
   "/learn/wall-cabinet-plywood-layout-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "50b3abe1da986b35f5d139e0b069b26fddf7600431b31e80edde7d4be67539ef"
+    "lastmod": "2026-07-26",
+    "hash": "bf5f110e96f69fc99471c0d4b214a066133c0b189b4a6ed3b9d3d1ae2e8d7f74"
   },
   "/learn/what-is-cut-list-optimization/": {
-    "lastmod": "2026-07-23",
-    "hash": "9b0480e343d2c22c74f1817dc1ea7d686c62637fee8402799f523a702c3e8120"
+    "lastmod": "2026-07-26",
+    "hash": "80f63975361e6f6ddc21a28bb599afd2f3cfd527ca8fcd0b37489a9c85cd7710"
   },
   "/learn/why-plywood-cut-layout-does-not-fit/": {
-    "lastmod": "2026-07-23",
-    "hash": "cef0304791420b41da0be09abb994f8a9d6e581e4263153d6e9c41d1ff92aecb"
+    "lastmod": "2026-07-26",
+    "hash": "0ede433ae4d95bf398cf15c2de7d13033facd55da865251746b0569c0ce27a83"
   },
   "/learn/wood-cut-planner/": {
-    "lastmod": "2026-07-23",
-    "hash": "eb326b34fd6facdd42e396864ca3488e5655ac1e3905a7459f099eb042671a8c"
+    "lastmod": "2026-07-26",
+    "hash": "f98c16cefcdcb0b7386d804508581158d7c4601921070a020fc9fdbd6e7f83db"
   },
   "/learn/woodworking-hardware-allowance-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "be19a62377b80c642359a4fe29699305350c41e2bac2ac9c011415fbfe55f6c8"
+    "lastmod": "2026-07-26",
+    "hash": "1492ee85cb79fbcd5c2e635e2ae626f8fc5e29f6b2693f4d30fb8c33e84bd967"
   },
   "/learn/woodworking-material-calculator/": {
-    "lastmod": "2026-07-23",
-    "hash": "00e3172f6d6bcf729762dc5c3633d2df37dc77ff73ecf54fa75de42057ad4884"
+    "lastmod": "2026-07-26",
+    "hash": "f02172402cabc6396e7be9d47bf2209ce136971523f01e15daa7043a0d2b6f9a"
   },
   "/learn/woodworking/": {
     "lastmod": "2026-07-23",
     "hash": "a40edea3c1f95b14182c73f9d5a23c446519420c4149744a2d3b819b159c0005"
   },
   "/learn/workbench-height-and-material-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "6ccc18107d6a97dcb375763efa2475d8b5aa9b602a18ec61abf8b5fe2d61fd4d"
+    "lastmod": "2026-07-26",
+    "hash": "4e0bae312c788aa16404a177956b771ad7b1538b8a66571eb06beb56de8b29cc"
   },
   "/learn/workbench-material-planning-guide/": {
-    "lastmod": "2026-07-23",
-    "hash": "39b7e10f6af789b347b96b1d61ee62eb0cb9a6cb02e875f3a541c5098c6d1a28"
+    "lastmod": "2026-07-26",
+    "hash": "92156b4cbf2e9401a1398f59ed6444e3b960a1b6bc789c85d7b45da29d61bbc3"
   },
   "/legal/cutlist/privacy/": {
     "lastmod": "2026-07-23",

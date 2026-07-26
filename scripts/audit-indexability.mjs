@@ -3,6 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { learnPillarExpansion20260721 } from "./learn-pillar-batch-2026-07-21.mjs";
 import { learnHandoffExpansion20260724 } from "./learn-handoff-batch-2026-07-24.mjs";
+import { learnClusterProfiles } from "./learn-cluster-profiles.mjs";
 import { checklistEntries } from "./checklist-data.mjs";
 import { worksheetEntries } from "./worksheet-data.mjs";
 
@@ -148,6 +149,7 @@ const groups = {
   glossary: [],
   comparison: [],
   learnPillar: [],
+  learnTopicHub: [],
   checklists: [],
   worksheets: []
 };
@@ -196,6 +198,14 @@ for (const page of pages) {
     if (page.words < 750) issues.push(`${page.file} has only ${page.words} visible words; expected at least 750.`);
   }
 
+  if (/^learn\/topics\/[^/]+\/index\.html$/.test(page.file)) {
+    groups.learnTopicHub.push({ ...page, inbound });
+    if (inbound < 5) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 5.`);
+    if (page.words < 650) issues.push(`${page.file} has only ${page.words} visible words; expected at least 650.`);
+    if (!page.html.includes('"@type": "CollectionPage"')) issues.push(`${page.file} is missing CollectionPage structured data.`);
+    if (!page.html.includes('"@type": "FAQPage"')) issues.push(`${page.file} is missing FAQPage structured data.`);
+  }
+
   if (/^checklists\/[^/]+\/index\.html$/.test(page.file)) {
     groups.checklists.push({ ...page, inbound });
     if (inbound < 4) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 4.`);
@@ -213,6 +223,10 @@ for (const page of pages) {
 
 if (groups.learnPillar.length !== gatedLearnExpansions.length) {
   issues.push(`Expected ${gatedLearnExpansions.length} gated Learn pillar pages, found ${groups.learnPillar.length}.`);
+}
+
+if (groups.learnTopicHub.length !== learnClusterProfiles.length) {
+  issues.push(`Expected ${learnClusterProfiles.length} Learn topic hubs, found ${groups.learnTopicHub.length}.`);
 }
 
 if (groups.checklists.length !== checklistEntries.length) {

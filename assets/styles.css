@@ -10155,6 +10155,12 @@ tr:last-child td {
 .research-metric small { color: var(--muted); line-height: 1.4; }
 .research-note { margin: 28px 0; padding: 20px; }
 .research-note h2 { margin-top: 0; }
+.learn-topic-evidence {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.learn-topic-evidence .research-note { margin: 0; }
 .research-table-wrap {
   overflow-x: auto;
   margin: 18px 0;
@@ -10168,6 +10174,7 @@ tr:last-child td {
 @media (max-width: 760px) {
   .research-card-grid,
   .research-metrics { grid-template-columns: 1fr; }
+  .learn-topic-evidence { grid-template-columns: 1fr; }
   .research-note .button {
     max-width: 100%;
     white-space: normal;

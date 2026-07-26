@@ -220,6 +220,10 @@ function sitemapMeta(route) {
     return { changefreq: "monthly", priority: "0.8" };
   }
 
+  if (route.startsWith("/learn/topics/")) {
+    return { changefreq: "weekly", priority: "0.88" };
+  }
+
   if (route.startsWith("/learn/")) {
     return { changefreq: "monthly", priority: "0.82" };
   }

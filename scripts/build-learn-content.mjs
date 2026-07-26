@@ -6,6 +6,7 @@ import { woodworkingImageFor } from "./woodworking-images.mjs";
 import { learnResearchExpansion20260718 } from "./learn-batch-2026-07-18.mjs";
 import { learnPillarExpansion20260721 } from "./learn-pillar-batch-2026-07-21.mjs";
 import { learnHandoffExpansion20260724 } from "./learn-handoff-batch-2026-07-24.mjs";
+import { learnClusterProfiles } from "./learn-cluster-profiles.mjs";
 import { cutlistConversionCta, learnContextSupportsCutList } from "./conversion-components.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -725,20 +726,25 @@ if (duplicateLearnSlugs.length) {
 // slug -> h1, for building cross-link anchors
 const pageTitleBySlug = Object.fromEntries(allLearnPages.map((p) => [p.slug, p.h1]));
 
-const learnClusters = [
-  { id: "layout-optimization", title: "Layout and Optimization", pillarSlug: "sheet-layout-optimization", description: "Sheet fit, rotation, yield, waste, calculators, and complete-layout decisions.", match: /optimization|sheet layout|sheet-layout|layout planning|waste|calculator workflow/ },
-  { id: "cabinet-planning", title: "Cabinet Planning", pillarSlug: "cabinet-box-cut-list-basics", description: "Cabinet boxes, drawers, doors, fillers, backs, openings, hardware, and installation-ready dimensions.", match: /cabinet|drawer|wardrobe|closet|pantry|vanity|toe[ -]kick|kitchen/ },
-  { id: "plywood-sheet-goods", title: "Plywood and Sheet Goods", pillarSlug: "plywood-grade-selection-for-cabinets", description: "Plywood products, cores, faces, thickness, grain, MDF, melamine, and usable sheet assumptions.", match: /plywood|sheet goods|sheet-goods|veneer|grain direction|mdf|melamine|edge band/ },
-  { id: "cutting-quality", title: "Cutting and Machining Quality", pillarSlug: "saw-kerf-explained", description: "Kerf, reference edges, breakdown sequence, repeated parts, machining, and first-article verification.", match: /kerf|saw|cutting|reference edge|dado|rabbet|machining|first.article|repeated part/ },
-  { id: "installation-field-fit", title: "Installation and Field Fit", pillarSlug: "field-measurement-checklist-before-cut-list", description: "Field measurements, service boundaries, delivery, leveling, reversible installation, and site fit.", match: /field measurement|installation|install|renter|small.space|delivery|wall fit/ },
-  { id: "estimating-purchasing", title: "Estimating and Purchasing", pillarSlug: "material-estimation-for-carpentry", description: "Material quantities, board feet, project cost, purchasing, hardware, contingency, and supplier units.", match: /estimate|estimation|cost|board foot|lumber buying|purchase|shopping|hardware allowance|material list/ },
-  { id: "shop-workflow", title: "Shop Workflow", pillarSlug: "diy-workshop-planning-guide", description: "Workshop flow, workstations, tool storage, delivery staging, offcuts, and reusable production habits.", match: /workshop|workbench|shop |tool chest|lumber rack|offcut|production/ },
-  { id: "furniture-projects", title: "Furniture and Project Planning", pillarSlug: "diy-wood-project-estimation", description: "Furniture, storage, tables, beds, carts, shelves, and project-specific planning constraints.", match: /furniture|table|bed |bench|cart|shelf|storage|playhouse|media console|coffee bar|sewing|craft/ },
-  { id: "stairs-construction", title: "Stairs and Construction", pillarSlug: "stair-stringer-calculator-inputs-explained", description: "Stairs, stringers, rise and run, decks, landings, and construction measurement workflows.", match: /stair|stringer|deck/ },
-  { id: "tile-planning", title: "Tile Planning", pillarSlug: "tile-calculator-inputs-explained", description: "Tile measurement, patterns, grout, waste, boxes, transitions, and layout checks.", match: /tile|backsplash|grout/ },
-  { id: "quilt-planning", title: "Quilt Planning", pillarSlug: "quilt-yardage-calculator-inputs", description: "Quilt dimensions, fabric roles, blocks, backing, binding, batting, and yardage decisions.", match: /quilt|fabric|yardage|binding|batting/ },
-  { id: "cut-list-operations", title: "Cut List Operations", pillarSlug: "cut-list-planner", description: "Part IDs, revisions, labels, material groups, purchasing handoff, closeout, and saved project records.", match: /cut list|cut-list|cutlist|part id|label|revision|shop handoff/ },
-];
+const learnClusterMatchers = {
+  "layout-optimization": /optimization|sheet layout|sheet-layout|layout planning|waste|calculator workflow/,
+  "cabinet-planning": /cabinet|drawer|wardrobe|closet|pantry|vanity|toe[ -]kick|kitchen/,
+  "plywood-sheet-goods": /plywood|sheet goods|sheet-goods|veneer|grain direction|mdf|melamine|edge band/,
+  "cutting-quality": /kerf|saw|cutting|reference edge|dado|rabbet|machining|first.article|repeated part/,
+  "installation-field-fit": /field measurement|installation|install|renter|small.space|delivery|wall fit/,
+  "estimating-purchasing": /estimate|estimation|cost|board foot|lumber buying|purchase|shopping|hardware allowance|material list/,
+  "shop-workflow": /workshop|workbench|shop |tool chest|lumber rack|offcut|production/,
+  "furniture-projects": /furniture|table|bed |bench|cart|shelf|storage|playhouse|media console|coffee bar|sewing|craft/,
+  "stairs-construction": /stair|stringer|deck/,
+  "tile-planning": /tile|backsplash|grout/,
+  "quilt-planning": /quilt|fabric|yardage|binding|batting/,
+  "cut-list-operations": /cut list|cut-list|cutlist|part id|label|revision|shop handoff/,
+};
+
+const learnClusters = learnClusterProfiles.map((cluster) => ({
+  ...cluster,
+  match: learnClusterMatchers[cluster.id],
+}));
 
 const learnClusterById = new Map(learnClusters.map((cluster) => [cluster.id, cluster]));
 const learnClusterMatchPriority = [
@@ -756,12 +762,29 @@ const learnClusterMatchPriority = [
   "cut-list-operations",
 ];
 
+const learnClusterIntentOverrides = [
+  {
+    id: "layout-optimization",
+    match: /what-is-cut-list-optimization|cut-list-optimizer|plywood-cutting-optimization|sheet-layout-optimization|how-to-reduce-plywood-waste|how-many-sheets-of-plywood|best-plywood-sheet-size|can-you-rotate-plywood|plywood-yield|should-you-buy-an-extra-sheet|sheet-cutting-calculator|best-woodworking-calculator-workflow|choosing-between-calculator-template-and-app|why-plywood-cut-layout/,
+  },
+  {
+    id: "shop-workflow",
+    match: /diy-workshop|french-cleat|mobile-workbench|offcut|router-table|small-shop-lumber-rack|table-saw-cut-sequence|table-saw-repeat|tool-chest|workbench-material|project-material-delivery|sheet-goods-delivery|reusable-offcut/,
+  },
+  {
+    id: "furniture-projects",
+    match: /bar-cart|bathroom-linen|built-in-bookcase|closet-drawer-tower|coffee-bar|craft-table|custom-wardrobe|diy-closet-island|entryway-shoe|farmhouse-table|folding-desk|garage-shelving|home-office|kids-storage|loft-bed|media-console|mudroom-locker|one-sheet-plywood-furniture|one-sheet-plywood-project|pantry-pull-out|pet-furniture|playhouse|rental-furniture|sewing-cabinet|storage-bed|storage-bench|under-stair|workbench-height/,
+  },
+];
+
 function learnClusterId(page) {
   if (page.cluster) {
     if (!learnClusterById.has(page.cluster)) throw new Error(`Unknown Learn cluster ${page.cluster} for ${page.slug}`);
     return page.cluster;
   }
   const text = `${page.slug} ${page.h1} ${page.description} ${(page.keywords || []).join(" ")}`.toLowerCase();
+  const intentOverride = learnClusterIntentOverrides.find((entry) => entry.match.test(text));
+  if (intentOverride) return intentOverride.id;
   return learnClusterMatchPriority
     .map((id) => learnClusterById.get(id))
     .find((cluster) => cluster.match.test(text))?.id || "cut-list-operations";
@@ -775,6 +798,10 @@ const learnPagesByCluster = new Map(learnClusters.map((cluster) => [
 for (const cluster of learnClusters) {
   if (!pageTitleBySlug[cluster.pillarSlug]) throw new Error(`Missing Learn pillar page: ${cluster.pillarSlug}`);
   if (!learnPagesByCluster.get(cluster.id)?.length) throw new Error(`Empty Learn cluster: ${cluster.id}`);
+  if (!cluster.match) throw new Error(`Missing Learn cluster matcher: ${cluster.id}`);
+  if (cluster.sequence.length !== 4) throw new Error(`Learn cluster ${cluster.id} must define four workflow stages.`);
+  if (cluster.actions.length !== 4) throw new Error(`Learn cluster ${cluster.id} must define four practical actions.`);
+  if (cluster.faqs.length !== 3) throw new Error(`Learn cluster ${cluster.id} must define three FAQs.`);
 }
 
 // G2 + G3: for each article, the sibling guides it links to (lateral spokes)
@@ -900,7 +927,7 @@ function pillarClusterSection(page) {
         <p>${escapeHtml(cluster.description)}</p>
         <div class="related-grid">
           ${cards.map((candidate) => `<a href="/learn/${candidate.slug}/"><span>${escapeHtml(candidate.label)}</span><strong>${escapeHtml(candidate.h1)}</strong></a>`).join("\n          ")}
-          <a href="/learn/#${cluster.id}"><span>Topic index</span><strong>Browse all ${escapeHtml(cluster.title)} guides</strong></a>
+          <a href="/learn/topics/${cluster.id}/"><span>Topic hub</span><strong>Browse all ${escapeHtml(cluster.title)} guides</strong></a>
         </div>
       </section>`;
 }
@@ -1161,9 +1188,166 @@ function learnJsonLd() {
   </script>`;
 }
 
+function learnTopicHubJsonLd(cluster, pages) {
+  const canonical = `${siteUrl}/learn/topics/${cluster.id}/`;
+  const graph = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        name: `${cluster.title} Guides`,
+        headline: `${cluster.title} Guides`,
+        description: cluster.opening,
+        url: canonical,
+        mainEntityOfPage: canonical,
+        dateModified: "2026-07-26",
+        isPartOf: { "@type": "CollectionPage", name: "WoodCutTool Learn", url: `${siteUrl}/learn/` },
+        about: { "@type": "Thing", name: cluster.title },
+      },
+      {
+        "@type": "ItemList",
+        name: `${cluster.title} guide directory`,
+        numberOfItems: pages.length,
+        itemListElement: pages.map((page, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: page.h1,
+          url: `${siteUrl}/learn/${page.slug}/`,
+        })),
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: cluster.faqs.map(([name, text]) => ({
+          "@type": "Question",
+          name,
+          acceptedAnswer: { "@type": "Answer", text },
+        })),
+      },
+    ],
+  };
+  return `<script type="application/ld+json">
+  ${JSON.stringify(graph, null, 2)}
+  </script>`;
+}
+
+function learnTopicHubPage(cluster) {
+  const pages = learnPagesByCluster.get(cluster.id) || [];
+  const pillar = pages.find((page) => page.slug === cluster.pillarSlug);
+  const supportingPages = pages.filter((page) => page.slug !== cluster.pillarSlug);
+  const orderedPages = [pillar, ...supportingPages].filter(Boolean);
+  const description = `Browse ${pages.length} ${cluster.title.toLowerCase()} guides, then follow a checked path from project inputs to evidence, release decisions, and practical tools.`;
+
+  if (description.length < 90 || description.length > 160) {
+    throw new Error(`Learn topic meta description length ${description.length} for ${cluster.id}.`);
+  }
+
+  return `<!doctype html>
+<html lang="en">
+${head({
+    title: `${cluster.title} Guide Hub | WoodCutTool`,
+    description,
+    canonical: `${siteUrl}/learn/topics/${cluster.id}/`,
+    jsonLd: learnTopicHubJsonLd(cluster, orderedPages),
+  })}
+<body>
+  ${breadcrumbJsonLd([["Home", "/"], ["Learn", "/learn/"], [cluster.title, `/learn/topics/${cluster.id}/`]])}
+  <a class="skip-link" href="#main">Skip to content</a>
+  ${header("Learn")}
+  <main id="main" class="learn-page learn-topic-page">
+    <section class="page-hero">
+      <p class="breadcrumb"><a href="/">Home</a> / <a href="/learn/">Learn</a> / ${escapeHtml(cluster.title)}</p>
+      <p class="eyebrow">Learn topic hub · ${pages.length} guides</p>
+      <h1>${escapeHtml(cluster.title)} Guides</h1>
+      <p class="lead">${escapeHtml(cluster.opening)}</p>
+      <div class="hero-actions"><a class="button" href="/learn/${cluster.pillarSlug}/">Start with the pillar guide</a><a class="button secondary" href="#guide-directory">Browse all ${pages.length} guides</a></div>
+    </section>
+
+    <section class="section">
+      <div class="research-metrics" aria-label="${escapeHtml(cluster.title)} topic summary">
+        <article class="research-metric"><span>Guides</span><strong>${pages.length}</strong><small>One method or project decision per page</small></article>
+        <article class="research-metric"><span>Pillar</span><strong>1</strong><small>${escapeHtml(pageTitleBySlug[cluster.pillarSlug])}</small></article>
+        <article class="research-metric"><span>Workflow</span><strong>4 stages</strong><small>Input, verify, release, preserve</small></article>
+        <article class="research-metric"><span>Quality gate</span><strong>Evidence</strong><small>Source, owner, revision, and stop condition</small></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading compact">
+        <p class="eyebrow">Search intent contract</p>
+        <h2>${escapeHtml(cluster.query)}</h2>
+        <p>This hub is a navigation and decision surface. The pillar guide explains the full method, supporting guides isolate one input or workflow, Troubleshooting diagnoses failures, Checklists release irreversible work, Worksheets preserve project evidence, and calculators or apps apply the reviewed inputs.</p>
+      </div>
+      <div class="steps-grid">
+        ${cluster.sequence.map(([heading, body], index) => `<article class="step-card"><span>${index + 1}</span><h3>${escapeHtml(heading)}</h3><p>${escapeHtml(body)}</p></article>`).join("\n        ")}
+      </div>
+    </section>
+
+    <section class="section learn-topic-evidence">
+      <article class="research-note">
+        <p class="eyebrow">Evidence required</p>
+        <h2>Make the result reproducible</h2>
+        <p>${escapeHtml(cluster.evidence)}</p>
+      </article>
+      <article class="research-note">
+        <p class="eyebrow">Stop condition</p>
+        <h2>Do not turn uncertainty into permission</h2>
+        <p>${escapeHtml(cluster.stopCondition)}</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <div class="section-heading compact">
+        <p class="eyebrow">Apply the method</p>
+        <h2>Move from reading to a checked project action</h2>
+        <p>Choose the surface matching the next decision. Calculators and apps test inputs, Worksheets retain project values, Checklists control release, Troubleshooting isolates disagreements, and source-linked examples or research make assumptions inspectable.</p>
+      </div>
+      <div class="related-grid">
+        ${cluster.actions.map(([href, label, type]) => `<a href="${href}"><span>${escapeHtml(type)}</span><strong>${escapeHtml(label)}</strong></a>`).join("\n        ")}
+      </div>
+    </section>
+
+    <section class="section" id="guide-directory">
+      <div class="section-heading compact">
+        <p class="eyebrow">Complete topic directory</p>
+        <h2>${pages.length} ${escapeHtml(cluster.title)} guides</h2>
+        <p>Begin with the pillar when the workflow is unfamiliar. Open a supporting guide when the project already has a specific input, material, fit, quality, estimating, or handoff question.</p>
+      </div>
+      <div class="grid tools">
+        ${orderedPages.map((page) => `<article class="card"><p class="eyebrow">${page.slug === cluster.pillarSlug ? "Pillar guide" : "Supporting guide"}</p><h3>${escapeHtml(page.h1)}</h3><p>${escapeHtml(page.description)}</p><a class="card-link" href="/learn/${page.slug}/">Read guide</a></article>`).join("\n        ")}
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading compact"><p class="eyebrow">Questions before release</p><h2>${escapeHtml(cluster.title)} FAQ</h2></div>
+      <div class="faq-list">
+        ${cluster.faqs.map(([question, answer]) => `<details><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("\n        ")}
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="research-note">
+        <p class="eyebrow">Cluster maintenance rule</p>
+        <h2>Improve the existing route before creating a close variant</h2>
+        <p>Use this hub to identify the page role before adding another URL. Expand the pillar when the complete method is missing, improve a supporting guide when one input or decision lacks depth, open Troubleshooting for a failure-shaped query, and use a Checklist or Worksheet when the user needs a release gate or durable record. Publish a new guide only when the question, required evidence, and next action remain distinct after that review.</p>
+      </div>
+    </section>
+
+    <section class="section inline-cta-section">
+      <div class="inline-cta">
+        <p>Return to the complete Learn map when the project crosses into another material, construction, estimating, installation, or closeout decision.</p>
+        <div class="cta-row"><a class="button" href="/learn/">Browse all 12 topic hubs</a><a class="button secondary" href="/tools/">Choose a practical tool</a></div>
+      </div>
+    </section>
+  </main>
+  ${footer()}
+</body>
+</html>
+`;
+}
+
 function learnClusterNavigation() {
   return `<nav class="template-category-nav" aria-label="Learn topic pillars">
-      ${learnClusters.map((cluster) => `<a href="#${cluster.id}">${escapeHtml(cluster.title)} <span>${learnPagesByCluster.get(cluster.id).length}</span></a>`).join("\n      ")}
+      ${learnClusters.map((cluster) => `<a href="/learn/topics/${cluster.id}/">${escapeHtml(cluster.title)} <span>${learnPagesByCluster.get(cluster.id).length}</span></a>`).join("\n      ")}
     </nav>`;
 }
 
@@ -1172,7 +1356,7 @@ function learnClusterSections() {
     const pages = learnPagesByCluster.get(cluster.id);
     return `<section class="section template-category-section" id="${cluster.id}">
       <div class="template-category-heading">
-        <div><p class="eyebrow">Learn pillar</p><h2>${escapeHtml(cluster.title)}</h2><p>${escapeHtml(cluster.description)}</p></div>
+        <div><p class="eyebrow">Learn pillar</p><h2>${escapeHtml(cluster.title)}</h2><p>${escapeHtml(cluster.description)}</p><p><a href="/learn/topics/${cluster.id}/">Open the ${escapeHtml(cluster.title)} topic hub →</a></p></div>
         <span>${pages.length} guides</span>
       </div>
       <div class="grid tools">
@@ -1220,6 +1404,14 @@ const learnDir = join(root, "learn");
 mkdirSync(learnDir, { recursive: true });
 writeFileSync(join(learnDir, "index.html"), learnIndexPage());
 
+const learnTopicsDir = join(learnDir, "topics");
+mkdirSync(learnTopicsDir, { recursive: true });
+for (const cluster of learnClusters) {
+  const dir = join(learnTopicsDir, cluster.id);
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, "index.html"), learnTopicHubPage(cluster));
+}
+
 const legacyLearnSlugMap = {
   "french-cleat-wall-plywood-layout": "french-cleat-tool-holder-planning",
   "wall-cabinet-hanging-cleat-guide": "wall-cabinet-plywood-layout-guide",
@@ -1245,4 +1437,4 @@ for (const page of landingPages) {
   writeFileSync(join(dir, "index.html"), landingPage(page));
 }
 
-console.log(`Generated ${articles.length + landingPages.length} Learn pages and indexed ${allLearnPages.length} pages across ${learnClusters.length} pillars.`);
+console.log(`Generated ${articles.length + landingPages.length} Learn guides plus ${learnClusters.length} topic hubs, indexing ${allLearnPages.length} guides across ${learnClusters.length} pillars.`);
