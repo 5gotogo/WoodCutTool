@@ -5,8 +5,12 @@ import { fileURLToPath } from "node:url";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
 const megaMenuFallbackStyle = "  <style>.mega-menu{display:none}</style>";
-const headerMount = '<div data-site-header></div>';
-const footerMount = '<div data-site-footer></div>';
+const HEADER_START = "<!-- shared-header:start -->";
+const HEADER_END = "<!-- shared-header:end -->";
+const FOOTER_START = "<!-- shared-footer:start -->";
+const FOOTER_END = "<!-- shared-footer:end -->";
+const headerMount = "<div data-site-header></div>";
+const footerMount = "<div data-site-footer></div>";
 const siteChromeScript = '  <script defer src="/assets/site-chrome.js"></script>';
 const conversionScript = '  <script defer src="/assets/conversion.js"></script>';
 const appStoreId = "6768171871";
@@ -96,21 +100,48 @@ function applySmartAppBanner(html, file) {
 }
 
 function applySharedChromeMounts(html) {
-  let next = html.replace(/<header class="[^"]*\bsite-header\b[^"]*">[\s\S]*?<\/header>/, headerMount);
-
-  if (!next.includes("data-site-header")) {
-    if (next.includes('<a class="skip-link"')) {
-      next = next.replace(/(<a class="skip-link"[^>]*>[\s\S]*?<\/a>)/, `$1\n  ${headerMount}`);
-    } else {
-      next = next.replace("<body>", `<body>\n  ${headerMount}`);
-    }
+  let next = html;
+  const headerBlockPattern = new RegExp(`${HEADER_START}[\\s\\S]*?${HEADER_END}`, "g");
+  const headerMountPattern = /<div\b[^>]*\bdata-site-header\b[^>]*>\s*<\/div>/gi;
+  const staticHeaderPattern = /<header\b(?=[^>]*\bclass=["'][^"']*\bsite-header\b[^"']*["'])[^>]*>[\s\S]*?<\/header>/gi;
+  if (headerBlockPattern.test(next)) {
+    next = next.replace(headerBlockPattern, headerMount);
+  } else if (headerMountPattern.test(next)) {
+    next = next.replace(headerMountPattern, headerMount);
+  } else if (staticHeaderPattern.test(next)) {
+    next = next.replace(staticHeaderPattern, headerMount);
+  } else if (next.includes('<a class="skip-link"')) {
+    next = next.replace(/(<a class="skip-link"[^>]*>[\s\S]*?<\/a>)/, `$1\n  ${headerMount}`);
+  } else {
+    next = next.replace(/<body([^>]*)>/, `<body$1>\n  ${headerMount}`);
   }
+  next = next.replace(staticHeaderPattern, "");
+  let keptHeaderMount = false;
+  next = next.replace(headerMountPattern, () => {
+    if (keptHeaderMount) return "";
+    keptHeaderMount = true;
+    return headerMount;
+  });
 
-  next = next.replace(/<footer class="[^"]*\bsite-footer\b[^"]*">[\s\S]*?<\/footer>/, footerMount);
-
-  if (!next.includes("data-site-footer")) {
+  const footerBlockPattern = new RegExp(`${FOOTER_START}[\\s\\S]*?${FOOTER_END}`, "g");
+  const footerMountPattern = /<div\b[^>]*\bdata-site-footer\b[^>]*>\s*<\/div>/gi;
+  const staticFooterPattern = /<footer\b(?=[^>]*\bclass=["'][^"']*\bsite-footer\b[^"']*["'])[^>]*>[\s\S]*?<\/footer>/gi;
+  if (footerBlockPattern.test(next)) {
+    next = next.replace(footerBlockPattern, footerMount);
+  } else if (footerMountPattern.test(next)) {
+    next = next.replace(footerMountPattern, footerMount);
+  } else if (staticFooterPattern.test(next)) {
+    next = next.replace(staticFooterPattern, footerMount);
+  } else {
     next = next.replace("</body>", `  ${footerMount}\n</body>`);
   }
+  next = next.replace(staticFooterPattern, "");
+  let keptFooterMount = false;
+  next = next.replace(footerMountPattern, () => {
+    if (keptFooterMount) return "";
+    keptFooterMount = true;
+    return footerMount;
+  });
 
   return next;
 }

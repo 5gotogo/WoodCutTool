@@ -10582,24 +10582,69 @@ function head({ title, description, canonical, ogType = "website", jsonLd = "" }
 }
 
 const titleSuffix = " | WoodCutTool";
+const seoTitleMaxLength = 60;
+const danglingTitleWords = new Set([
+  "a", "an", "and", "are", "as", "at", "be", "been", "before", "being", "but",
+  "by", "can", "could", "did", "do", "does", "for", "from", "how", "in", "into",
+  "is", "may", "might", "nor", "not", "of", "on", "or", "our", "over", "per",
+  "should", "that", "the", "their", "these", "this", "those", "to", "versus",
+  "via", "vs", "was", "were", "what", "when", "which", "while", "why", "will",
+  "with", "without", "would", "your"
+]);
 
-function seoTitle(title, max = 65) {
-  const clean = String(title || "").replace(/\s+/g, " ").trim();
-  if (`${clean}${titleSuffix}`.length <= max) return `${clean}${titleSuffix}`;
+function cleanSeoTitle(value) {
+  return String(value || "")
+    .replace(/\s+/g, " ")
+    .replace(/\s+\|\s+WoodCutTool$/i, "")
+    .trim();
+}
 
-  const beforeColon = clean.replace(/:\s+.*/, "").trim();
-  if (beforeColon.length >= 35 && `${beforeColon}${titleSuffix}`.length <= max) {
-    return `${beforeColon}${titleSuffix}`;
+function trimDanglingTitleWords(value) {
+  const words = String(value || "")
+    .replace(/[,:;|/–—-]+\s*$/, "")
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+
+  while (words.length > 1) {
+    const lastWord = words.at(-1).toLowerCase().replace(/^[^a-z0-9]+|[^a-z0-9]+$/g, "");
+    if (!danglingTitleWords.has(lastWord)) break;
+    words.pop();
   }
 
-  const maxCore = max - titleSuffix.length;
-  const hard = clean.slice(0, maxCore + 1);
+  return words.join(" ").replace(/[,:;|/–—-]+\s*$/, "").trim();
+}
+
+function compactSeoTitle(title, max = seoTitleMaxLength) {
+  const punctuationCandidates = [];
+  for (const match of title.matchAll(/[:;]|\s[|/–—-]\s|[?!](?=\s)/g)) {
+    const includesBoundary = match[0] === "?" || match[0] === "!";
+    const end = match.index + (includesBoundary ? 1 : 0);
+    const candidate = trimDanglingTitleWords(title.slice(0, end));
+    if (candidate.length >= 24 && candidate.length <= max) {
+      punctuationCandidates.push(candidate);
+    }
+  }
+
+  if (punctuationCandidates.length) {
+    return punctuationCandidates.at(-1);
+  }
+
+  const hard = title.slice(0, max + 1);
   const lastSpace = hard.lastIndexOf(" ");
-  const core = clean
-    .slice(0, lastSpace > 35 ? lastSpace : maxCore)
-    .replace(/[,\-:;|\s]+$/, "")
-    .trim();
-  return `${core}${titleSuffix}`;
+  const candidate = title.slice(0, lastSpace >= 24 ? lastSpace : max);
+  return trimDanglingTitleWords(candidate);
+}
+
+function seoTitle(article, max = seoTitleMaxLength) {
+  // seoTitle is an optional query-focused override; the H1 remains unchanged.
+  const clean = cleanSeoTitle(article?.seoTitle || article?.title);
+  if (`${clean}${titleSuffix}`.length <= max) return `${clean}${titleSuffix}`;
+
+  // Keep a complete title ahead of the brand whenever both cannot fit.
+  if (clean.length <= max) return clean;
+
+  return compactSeoTitle(clean, max);
 }
 
 function seoDescription(description, article) {
@@ -11046,7 +11091,7 @@ function articlePage(article) {
   return `<!doctype html>
 <html lang="en">
 ${head({
-    title: seoTitle(article.title),
+    title: seoTitle(article),
     description: seoDescription(article.description, article),
     canonical: `https://woodcuttool.com/blog/${article.slug}/`,
     ogType: "article",

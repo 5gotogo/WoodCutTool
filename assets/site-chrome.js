@@ -81,6 +81,9 @@
     if (type === "apps") {
       return `<span class="mega-visual mega-visual-apps" aria-hidden="true"><span class="mega-app-phone mega-app-phone-primary"><span class="mega-app-screen"><span></span><span></span><span></span><span></span></span></span><span class="mega-app-phone mega-app-phone-secondary"><span class="mega-app-screen"><span></span><span></span><span></span><span></span></span></span><span class="mega-app-badge">PDF</span></span>`;
     }
+    if (type === "resources") {
+      return `<span class="mega-visual mega-visual-resources" aria-hidden="true"><span class="mega-resource-book">Research</span><span class="mega-resource-card mega-resource-card-one"><span></span><span></span><span></span></span><span class="mega-resource-card mega-resource-card-two"><span></span><span></span><span></span></span><span class="mega-resource-chip">Open data</span></span>`;
+    }
     if (type === "templates") {
       return `<span class="mega-visual mega-visual-templates" aria-hidden="true"><svg viewBox="0 0 320 190" focusable="false"><path class="mega-svg-grid" d="M28 34H292M28 70H292M28 106H292M28 142H292M64 18V172M108 18V172M152 18V172M196 18V172M240 18V172"/><rect class="mega-svg-paper" x="62" y="26" width="196" height="138" rx="9"/><path class="mega-svg-wood" d="M83 47h68v96H83zM169 47h68v42h-68zM169 101h68v42h-68z"/><path class="mega-svg-line" d="M117 47v96M169 72h68M169 122h68"/><circle class="mega-svg-accent" cx="143" cy="95" r="4"/><circle class="mega-svg-accent" cx="181" cy="72" r="3"/><circle class="mega-svg-accent" cx="181" cy="122" r="3"/><path class="mega-svg-measure" d="M76 153h168M76 148v10M244 148v10"/></svg></span>`;
     }
@@ -109,8 +112,13 @@
     return `<a class="mega-feature" href="${href}">${megaVisual(visual)}<strong>${title}</strong><span>${description}</span><span class="card-link">${cta}</span></a>`;
   }
 
-  function resourceNavMenu({ href, label, featureTitle, featureDescription, featureCta, visual, columns }) {
-    return `<div class="nav-menu-item"><a class="nav-trigger${activeClass(href)}" href="${href}" aria-haspopup="true" aria-expanded="false">${label}</a><div class="mega-menu" role="group" aria-label="${label} menu">${megaFeature({ href, title: featureTitle, description: featureDescription, cta: featureCta, visual })}<div class="mega-columns">${columns.map((column) => `<div class="mega-column"><p class="mega-column-title">${column.title}</p>${column.links.map(menuLink).join("")}</div>`).join("")}</div></div></div>`;
+  function navMenuItem({ href, label, menu, aliases = [] }) {
+    return `<div class="nav-menu-item"><a class="nav-trigger${activeClass(href, aliases)}" href="${href}">${label}</a><button class="nav-menu-toggle" type="button" aria-label="Open ${label} menu" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Open ${label} menu</span></button>${menu}</div>`;
+  }
+
+  function resourceNavMenu({ href, label, aliases = [], featureTitle, featureDescription, featureCta, visual, columns }) {
+    const menu = `<div class="mega-menu" role="group" aria-label="${label} menu">${megaFeature({ href, title: featureTitle, description: featureDescription, cta: featureCta, visual })}<div class="mega-columns">${columns.map((column) => `<div class="mega-column"><p class="mega-column-title">${column.title}</p>${column.links.map(menuLink).join("")}</div>`).join("")}</div></div>`;
+    return navMenuItem({ href, label, menu, aliases });
   }
 
   function navLinks() {
@@ -291,7 +299,64 @@
       ]
     };
 
-    return `<div class="nav-links nav-links-mega"><div class="nav-menu-item"><a class="nav-trigger" href="/tools/" aria-haspopup="true" aria-expanded="false">Tools</a><div class="mega-menu" role="group" aria-label="Tools menu">${megaFeature({ href: "/tools/", title: "Choose a calculator by project", description: "Browse focused woodworking and construction tools without mixing unrelated app categories into the planning hub.", cta: "Browse tools ->", visual: "tools" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Woodworking Tools</p>${menuLink({ href: "/tools/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut and layout, cabinets, furniture, wood, and materials." })}${tools.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Construction Tools</p>${menuLink({ href: "/tools/construction/", icon: "CN", title: "Construction hub", description: "Stairs, tile, deck, fence, wall, roof, and concrete." })}${tools.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Tool directory</p>${menuLink({ href: "/tools/", icon: "TL", title: "All tools", description: "Open the full calculator and planning hub.", exact: true })}${menuLink({ href: "/material-library/", icon: "ML", title: "Material library", description: "Browse materials, specs, and planning references." })}${menuLink({ href: "/material-list-generator/", icon: "MT", title: "Material list", description: "Turn project inputs into a material checklist." })}${menuLink({ href: "/inch-mm-converter/", icon: "IN", title: "Inch/mm converter", description: "Convert workshop dimensions quickly." })}</div></div></div></div>${resourceNavMenu(templateMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(checklistsMenu)}${resourceNavMenu(worksheetsMenu)}${resourceNavMenu(compareMenu)}${resourceNavMenu(glossaryMenu)}<div class="nav-menu-item"><a class="nav-trigger" href="/apps/" aria-haspopup="true" aria-expanded="false">Apps</a><div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for saved workflows", description: "Use the website for quick checks, then move repeatable projects into focused iPhone apps when you need saved records.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Planning apps</p>${apps.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Document apps</p>${apps.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">More apps</p>${apps.slice(6, 9).map(menuLink).join("")}${menuLink({ href: "/apps/compare/", icon: "VS", title: "App comparisons", description: "Compare app workflows against common alternatives." })}</div></div></div></div></div>`;
+    const projectsMenu = {
+      href: "/templates/",
+      label: "Projects",
+      aliases: ["/examples/", "/checklists/", "/worksheets/", "/troubleshooting/"],
+      visual: "templates",
+      featureTitle: "Move a project from idea to release",
+      featureDescription: "Start with a reusable template, inspect a worked example, record the job, and verify irreversible steps before cutting or installation.",
+      featureCta: "Browse project templates ->",
+      columns: [
+        { title: "Start", links: [
+          { href: "/templates/", icon: "TP", title: "Templates", description: "Project-ready parts, constraints, and release checks.", exact: true },
+          { href: "/examples/", icon: "EX", title: "Worked examples", description: "Parts, modeled layouts, sheet counts, and CSV files." },
+          { href: "/material-list-generator/", icon: "ML", title: "Material list", description: "Turn confirmed project inputs into a buying list." }
+        ] },
+        { title: "Record", links: [
+          { href: "/worksheets/", icon: "WS", title: "Worksheets", description: "Capture measurements, materials, setups, and closeout evidence." },
+          { href: "/checklists/", icon: "CK", title: "Checklists", description: "Release planning, cutting, assembly, installation, and handoff." },
+          { href: "/research/", icon: "RS", title: "Open datasets", description: "Inspect the assumptions behind sheet and kerf benchmarks." }
+        ] },
+        { title: "Recover", links: [
+          { href: "/troubleshooting/", icon: "FX", title: "Troubleshooting", description: "Diagnose layout, cutting, cabinet, material, and workflow failures." },
+          { href: "/learn/topics/cabinet-planning/", icon: "CB", title: "Cabinet planning", description: "Follow the cabinet workflow from inputs to field fit." },
+          { href: "/learn/topics/furniture-projects/", icon: "FP", title: "Furniture projects", description: "Connect project decisions to templates, examples, and tools." }
+        ] }
+      ]
+    };
+
+    const resourcesMenu = {
+      href: "/research/",
+      label: "Resources",
+      aliases: ["/compare/", "/blog/", "/glossary/", "/wood/", "/material-library/"],
+      visual: "resources",
+      featureTitle: "Check the evidence behind the next decision",
+      featureDescription: "Use reproducible datasets, side-by-side comparisons, definitions, material references, and practical articles before choosing a method.",
+      featureCta: "Open research and datasets ->",
+      columns: [
+        { title: "Evidence", links: [
+          { href: "/research/", icon: "RS", title: "Research", description: "Open modeled datasets with methods, limitations, and CSV files.", exact: true },
+          { href: "/examples/", icon: "EX", title: "Examples", description: "Inspect project-level parts, layouts, and source templates." },
+          { href: "/blog/", icon: "BG", title: "Blog", description: "Read current project, calculator, and app workflows." }
+        ] },
+        { title: "Decide", links: [
+          { href: "/compare/", icon: "CP", title: "Comparisons", description: "Compare materials, tools, hardware, and workflows." },
+          { href: "/material-library/", icon: "ML", title: "Material library", description: "Review sheet-goods sizes, weights, costs, and uses." },
+          { href: "/wood/", icon: "WD", title: "Wood species", description: "Compare density, hardness, weight, finish, and applications." }
+        ] },
+        { title: "Reference", links: [
+          { href: "/glossary/", icon: "GL", title: "Glossary", description: "Look up 200 cut-list, cabinet, joinery, and measurement terms." },
+          { href: "/about/", icon: "ED", title: "Editorial process", description: "See how calculators, articles, and datasets are produced." },
+          { href: "/sitemap.xml", icon: "SM", title: "Sitemap", description: "Open the complete machine-readable site directory." }
+        ] }
+      ]
+    };
+
+    const toolsMenu = `<div class="mega-menu" role="group" aria-label="Tools menu">${megaFeature({ href: "/tools/", title: "Choose a calculator by project", description: "Browse focused woodworking and construction tools without mixing unrelated app categories into the planning hub.", cta: "Browse tools ->", visual: "tools" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Woodworking Tools</p>${menuLink({ href: "/tools/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut and layout, cabinets, furniture, wood, and materials." })}${tools.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Construction Tools</p>${menuLink({ href: "/tools/construction/", icon: "CN", title: "Construction hub", description: "Stairs, tile, deck, fence, wall, roof, and concrete." })}${tools.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Tool directory</p>${menuLink({ href: "/tools/", icon: "TL", title: "All tools", description: "Open the full calculator and planning hub.", exact: true })}${menuLink({ href: "/conversion/", icon: "CV", title: "Conversion calculator", description: "Convert fractions, inches, millimeters, angles, rise, and run." })}${menuLink({ href: "/material-list-generator/", icon: "MT", title: "Material list", description: "Turn project inputs into a material checklist." })}${menuLink({ href: "/drill-bit-finder/", icon: "DR", title: "Drill bit finder", description: "Match screw diameter to pilot and clearance holes." })}</div></div></div>`;
+    const appsMenu = `<div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for saved workflows", description: "Use the website for quick checks, then move repeatable projects into focused iPhone apps when you need saved records.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Planning apps</p>${apps.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Document apps</p>${apps.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">More apps</p>${apps.slice(6, 9).map(menuLink).join("")}${menuLink({ href: "/apps/compare/", icon: "VS", title: "App comparisons", description: "Compare app workflows against common alternatives." })}</div></div></div>`;
+
+    return `<div class="nav-links nav-links-mega">${navMenuItem({ href: "/tools/", label: "Tools", aliases: tools.map((item) => item.href), menu: toolsMenu })}${resourceNavMenu(projectsMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(resourcesMenu)}${navMenuItem({ href: "/apps/", label: "Apps", menu: appsMenu })}</div>`;
   }
 
   function header() {

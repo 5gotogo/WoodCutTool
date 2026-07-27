@@ -1844,7 +1844,7 @@ export const blogBatch20260630 = [
   {
     slug: "tuning-to-different-a4-references-cadenza",
     category: "Cadenza",
-    title: "Tuning to Different A4 References: 432, 440, 442 Hz and Why",
+    title: "A4 Tuning References: 432, 440, and 442 Hz",
     description: "Why ensembles tune to different A4 references like 440, 442, or 432 Hz, what the cents readout means, and how to match the pitch standard your context requires.",
     kicker: "Tuning reference",
     readTime: "8 min",

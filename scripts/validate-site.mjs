@@ -66,14 +66,23 @@ function readText(path) {
 }
 
 const siteChromeSource = readText("assets/site-chrome.js");
-if (!siteChromeSource.includes("const checklistsMenu = {")) {
-  errors.push("Shared navigation is missing the Checklists menu definition.");
+if (!siteChromeSource.includes("const projectsMenu = {")) {
+  errors.push("Shared navigation is missing the Projects menu definition.");
 }
-if (!siteChromeSource.includes("${resourceNavMenu(checklistsMenu)}")) {
-  errors.push("Shared navigation does not render Checklists through the dropdown menu component.");
+if (!siteChromeSource.includes("const resourcesMenu = {")) {
+  errors.push("Shared navigation is missing the Resources menu definition.");
 }
-if (siteChromeSource.includes('href="/checklists/">Checklists</a>${resourceNavMenu(blogMenu)}')) {
-  errors.push("Shared navigation still renders Checklists as a direct link without a dropdown.");
+for (const renderedMenu of [
+  "${resourceNavMenu(projectsMenu)}",
+  "${resourceNavMenu(learnMenu)}",
+  "${resourceNavMenu(resourcesMenu)}"
+]) {
+  if (!siteChromeSource.includes(renderedMenu)) {
+    errors.push(`Shared navigation does not render the expected consolidated menu: ${renderedMenu}`);
+  }
+}
+if (!siteChromeSource.includes('class="nav-menu-toggle"')) {
+  errors.push("Shared navigation is missing a separate mobile menu toggle.");
 }
 
 const checklistHubSource = readText("checklists/index.html");
@@ -104,7 +113,7 @@ function collectHtmlFiles(dir = root, prefix = "") {
 
     if (entry.isDirectory()) {
       files.push(...collectHtmlFiles(absolute, relative));
-    } else if (entry.isFile() && entry.name === "index.html") {
+    } else if (entry.isFile() && (entry.name === "index.html" || relative === "404.html")) {
       files.push(relative);
     }
   }
@@ -211,10 +220,22 @@ for (const file of htmlFiles) {
 
   const html = readText(file);
 
-  const usesSharedChrome = html.includes("data-site-header") || html.includes("data-site-footer");
+  const headerMounts = html.match(/<div\b[^>]*\bdata-site-header\b[^>]*>\s*<\/div>/gi) ?? [];
+  const footerMounts = html.match(/<div\b[^>]*\bdata-site-footer\b[^>]*>\s*<\/div>/gi) ?? [];
+  const staticHeaders = html.match(/<header\b[^>]*\bclass=["'][^"']*\bsite-header\b[^"']*["'][^>]*>/gi) ?? [];
+  const staticFooters = html.match(/<footer\b[^>]*\bclass=["'][^"']*\bsite-footer\b[^"']*["'][^>]*>/gi) ?? [];
   const siteChromeScripts = html.match(/<script\b[^>]*\bsrc=["']\/assets\/site-chrome\.js(?:\?[^"']*)?["'][^>]*>\s*<\/script>/gi) ?? [];
-  if (usesSharedChrome && siteChromeScripts.length !== 1) {
-    errors.push(`${file} uses shared chrome but has ${siteChromeScripts.length} site-chrome.js script tags`);
+  if (siteChromeScripts.length !== 1) {
+    errors.push(`${file} must load exactly one shared site-chrome.js script; found ${siteChromeScripts.length}`);
+  }
+  if (headerMounts.length !== 1 || footerMounts.length !== 1) {
+    errors.push(`${file} must contain exactly one shared header and footer mount`);
+  }
+  if (/<!-- shared-(?:header|footer):(?:start|end) -->/.test(html) || html.includes("data-site-chrome-fallback")) {
+    errors.push(`${file} still contains expanded shared chrome instead of the common mount`);
+  }
+  if (staticHeaders.length || staticFooters.length) {
+    errors.push(`${file} contains static site chrome in addition to the shared mounts`);
   }
   if (siteChromeScripts.some((tag) => /site-chrome\.js\?/i.test(tag))) {
     errors.push(`${file} uses a versioned site-chrome.js URL instead of the shared canonical asset URL`);

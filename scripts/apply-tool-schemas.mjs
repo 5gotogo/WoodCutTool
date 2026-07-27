@@ -528,6 +528,24 @@ function toolsHubGraph() {
           itemListElement
         }
       },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${siteUrl}/tools/#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: `${siteUrl}/`
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Tools",
+            item: `${siteUrl}/tools/`
+          }
+        ]
+      },
       ...browserTools.slice(0, 5).map(softwareSchema),
       {
         "@type": "FAQPage",

@@ -71,6 +71,7 @@ for (const file of readdirSync(root).filter((name) => /^sitemap-[a-z0-9-]+\.xml$
 }
 
 const inboundSources = new Map();
+const indexableInboundSources = new Map();
 for (const page of pages) {
   const hrefs = [...page.html.matchAll(/\shref=["']([^"']+)["']/gi)].map((match) => match[1]);
   for (const href of hrefs) {
@@ -78,6 +79,10 @@ for (const page of pages) {
     if (!target || target === page.route) continue;
     if (!inboundSources.has(target)) inboundSources.set(target, new Set());
     inboundSources.get(target).add(page.route);
+    if (!page.noindex) {
+      if (!indexableInboundSources.has(target)) indexableInboundSources.set(target, new Set());
+      indexableInboundSources.get(target).add(page.route);
+    }
   }
 }
 
@@ -148,6 +153,7 @@ const groups = {
   appCompare: [],
   glossary: [],
   comparison: [],
+  wood: [],
   learnPillar: [],
   learnTopicHub: [],
   checklists: [],
@@ -161,6 +167,23 @@ const learnPillarFiles = new Set(gatedLearnExpansions.map((article) => `learn/${
 const noindexCounts = {
   blog: pages.filter((page) => page.noindex && /^blog\/[^/]+\/index\.html$/.test(page.file)).length
 };
+
+const relatedWoodRoutesByPage = new Map();
+const relatedWoodInboundSources = new Map();
+for (const page of pages) {
+  if (page.noindex || !/^wood\/[^/]+\/index\.html$/.test(page.file)) continue;
+
+  const relatedBlock = page.html.match(/<div class=["']wood-related-species["']>([\s\S]*?)<\/div>/i)?.[1] ?? "";
+  const relatedRoutes = [...relatedBlock.matchAll(/\shref=["']([^"']+)["']/gi)]
+    .map((match) => internalRoute(match[1]))
+    .filter(Boolean);
+  relatedWoodRoutesByPage.set(page.route, relatedRoutes);
+
+  for (const route of new Set(relatedRoutes)) {
+    if (!relatedWoodInboundSources.has(route)) relatedWoodInboundSources.set(route, new Set());
+    relatedWoodInboundSources.get(route).add(page.route);
+  }
+}
 
 for (const page of pages) {
   if (page.noindex) continue;
@@ -190,6 +213,34 @@ for (const page of pages) {
     groups.comparison.push({ ...page, inbound });
     if (inbound < 2) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 2.`);
     if (page.words < 700) issues.push(`${page.file} has only ${page.words} visible words; expected at least 700.`);
+  }
+
+  if (/^wood\/[^/]+\/index\.html$/.test(page.file)) {
+    const indexableInbound = indexableInboundSources.get(page.route)?.size || 0;
+    const relatedRoutes = relatedWoodRoutesByPage.get(page.route) ?? [];
+    const uniqueRelatedRoutes = new Set(relatedRoutes);
+    const relatedInbound = relatedWoodInboundSources.get(page.route)?.size || 0;
+    groups.wood.push({ ...page, inbound: indexableInbound, relatedInbound });
+
+    if (indexableInbound < 3) {
+      issues.push(`${page.file} has only ${indexableInbound} indexable internal-link source page(s); expected at least 3.`);
+    }
+    if (page.words < 475) issues.push(`${page.file} has only ${page.words} visible words; expected at least 475.`);
+    if (relatedRoutes.length !== 4 || uniqueRelatedRoutes.size !== 4) {
+      issues.push(`${page.file} has ${relatedRoutes.length} related-species link(s) across ${uniqueRelatedRoutes.size} unique route(s); expected exactly 4 distinct links.`);
+    }
+    if (uniqueRelatedRoutes.has(page.route)) {
+      issues.push(`${page.file} links to itself in the related-species section.`);
+    }
+    for (const route of uniqueRelatedRoutes) {
+      const target = pagesByRoute.get(route);
+      if (!target || target.noindex || !/^wood\/[^/]+\/index\.html$/.test(target.file)) {
+        issues.push(`${page.file} links to a missing or non-indexable related wood species: ${route}`);
+      }
+    }
+    if (relatedInbound < 2) {
+      issues.push(`${page.file} is referenced by only ${relatedInbound} related-species detail page(s); expected at least 2.`);
+    }
   }
 
   if (learnPillarFiles.has(page.file)) {
@@ -229,6 +280,10 @@ if (groups.learnTopicHub.length !== learnClusterProfiles.length) {
   issues.push(`Expected ${learnClusterProfiles.length} Learn topic hubs, found ${groups.learnTopicHub.length}.`);
 }
 
+if (groups.wood.length !== 200) {
+  issues.push(`Expected 200 indexable wood species pages, found ${groups.wood.length}.`);
+}
+
 if (groups.checklists.length !== checklistEntries.length) {
   issues.push(`Expected ${checklistEntries.length} checklist pages, found ${groups.checklists.length}.`);
 }
@@ -245,12 +300,19 @@ if (issues.length) {
 const summary = Object.fromEntries(Object.entries(groups).map(([name, pagesInGroup]) => {
   const lowestInbound = pagesInGroup.toSorted((a, b) => a.inbound - b.inbound || a.file.localeCompare(b.file))[0];
   const shortest = pagesInGroup.toSorted((a, b) => a.words - b.words || a.file.localeCompare(b.file))[0];
+  const pagesWithRelatedInbound = pagesInGroup.filter((page) => Number.isInteger(page.relatedInbound));
+  const lowestRelatedInbound = pagesWithRelatedInbound
+    .toSorted((a, b) => a.relatedInbound - b.relatedInbound || a.file.localeCompare(b.file))[0];
   return [name, {
     pages: pagesInGroup.length,
     minimumInboundLinks: lowestInbound?.inbound || 0,
     minimumInboundPage: lowestInbound?.file || "",
     minimumVisibleWords: shortest?.words || 0,
-    minimumWordPage: shortest?.file || ""
+    minimumWordPage: shortest?.file || "",
+    ...(lowestRelatedInbound ? {
+      minimumRelatedSpeciesInboundLinks: lowestRelatedInbound.relatedInbound,
+      minimumRelatedSpeciesInboundPage: lowestRelatedInbound.file
+    } : {})
   }];
 }));
 

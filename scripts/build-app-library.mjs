@@ -107,11 +107,31 @@ const legalLinksBySlug = {
     privacy: "/legal/JobPhotoLog/privacy/",
     support: "/legal/JobPhotoLog/support/"
   },
+  "stringer-stair-layout": {
+    privacy: "/legal/Stringer/privacy/",
+    support: "/legal/Stringer/support/"
+  },
   "thumbtype-typing-speed-test": {
     privacy: "/legal/ThumbType/privacy/",
     support: "/legal/ThumbType/support/"
+  },
+  "tinnitus-relief-sound-masking": {
+    privacy: "/legal/Tinnitus/privacy/",
+    support: "/legal/Tinnitus/support/"
   }
 };
+
+const appSupportDirectory = [
+  ["CutList", "/legal/cutlist/privacy/", "/legal/cutlist/support/"],
+  ["QuiltFit", "/legal/quiltfit/privacy/", "/legal/quiltfit/support/"],
+  ["Stringer", "/legal/Stringer/privacy/", "/legal/Stringer/support/"],
+  ["JobPhotoLog", "/legal/JobPhotoLog/privacy/", "/legal/JobPhotoLog/support/"],
+  ["ThumbType", "/legal/ThumbType/privacy/", "/legal/ThumbType/support/"],
+  ["Tinnitus Relief", "/legal/Tinnitus/privacy/", "/legal/Tinnitus/support/"],
+  ["Casework", "/legal/Casework/privacy/", "/legal/Casework/support/"],
+  ["PrivateMind", "/legal/PrivateMind/privacy/", "/legal/PrivateMind/support/"],
+  ["TileFit", "/legal/TileFit/privacy/", "/legal/TileFit/support/"]
+];
 
 const featuredApps = [
   ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
@@ -385,6 +405,24 @@ function appsIndexJsonLd() {
             text: answer
           }
         }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://woodcuttool.com/apps/#breadcrumb",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: "https://woodcuttool.com/"
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Apps",
+            item: "https://woodcuttool.com/apps/"
+          }
+        ]
       }
     ]
   };
@@ -417,6 +455,19 @@ ${appDirectoryFaq.map(([question, answer]) => `          <h3>${escapeHtml(questi
     </section>`;
 }
 
+function appSupportSection() {
+  return `    <section class="section" aria-labelledby="app-support-directory">
+      <div class="section-heading compact">
+        <p class="eyebrow">Support &amp; privacy</p>
+        <h2 id="app-support-directory">Find app policies and support.</h2>
+        <p>Open the exact privacy policy or support page for an app without searching through a store listing.</p>
+      </div>
+      <div class="grid tools">
+${appSupportDirectory.map(([name, privacy, support]) => `        <article class="card"><h3>${escapeHtml(name)}</h3><p><a href="${escapeHtml(privacy)}">Privacy policy</a><br><a href="${escapeHtml(support)}">Support</a></p></article>`).join("\n")}
+      </div>
+    </section>`;
+}
+
 function appsIndexPage() {
   return `<!doctype html>
 <html lang="en">
@@ -441,6 +492,7 @@ ${featuredAppsSection()}
 ${categoryNavSection()}
 ${categorySections.map(categorySection).join("\n")}
 ${offlineFirstSection()}
+${appSupportSection()}
 ${faqSection()}
   </main>
   ${footer()}

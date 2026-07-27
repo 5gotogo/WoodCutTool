@@ -89,6 +89,7 @@ canvas {
   position: sticky;
   top: 0;
   z-index: 50;
+  overflow-x: clip;
   background: rgba(247, 245, 239, 0.94);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(18px);
@@ -146,6 +147,8 @@ canvas {
 
 .nav-menu-item {
   flex: 0 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .nav-trigger,
@@ -161,7 +164,20 @@ canvas {
   font-weight: 650;
 }
 
-.nav-trigger::after {
+.nav-menu-toggle {
+  width: 30px;
+  min-height: 34px;
+  margin-left: -8px;
+  display: inline-grid;
+  place-items: center;
+  color: var(--muted);
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-menu-toggle::after {
   content: "";
   width: 6px;
   height: 6px;
@@ -174,7 +190,9 @@ canvas {
 .nav-links > a:hover,
 .nav-links > a.active,
 .nav-menu-item:hover > .nav-trigger,
-.nav-menu-item:focus-within > .nav-trigger {
+.nav-menu-item:focus-within > .nav-trigger,
+.nav-menu-item:hover > .nav-menu-toggle,
+.nav-menu-item:focus-within > .nav-menu-toggle {
   color: var(--ink);
   background: rgba(47, 111, 78, 0.1);
   text-decoration: none;
@@ -188,7 +206,8 @@ canvas {
   color: var(--ink);
 }
 
-.nav-menu-item.is-open > .nav-trigger {
+.nav-menu-item.is-open > .nav-trigger,
+.nav-menu-item.is-open > .nav-menu-toggle {
   color: var(--ink);
   background: rgba(47, 111, 78, 0.1);
   text-decoration: none;
@@ -9445,7 +9464,7 @@ tr:last-child td {
   }
 
   .nav-menu-item:hover .mega-menu,
-  .nav-menu-item:focus-within .mega-menu {
+  .nav-menu-item.is-open .mega-menu {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, 0);

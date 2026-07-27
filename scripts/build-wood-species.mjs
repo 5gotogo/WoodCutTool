@@ -186,6 +186,40 @@ if (species.length !== 200) {
   throw new Error(`Expected 200 wood species, got ${species.length}.`);
 }
 
+const relatedSpeciesBySlug = new Map();
+const speciesByGroup = new Map();
+for (const wood of species) {
+  if (!speciesByGroup.has(wood.group)) speciesByGroup.set(wood.group, []);
+  speciesByGroup.get(wood.group).push(wood);
+}
+
+for (const [group, groupSpecies] of speciesByGroup) {
+  const ordered = [...groupSpecies].sort((a, b) => {
+    const hardnessDifference = a.janka - b.janka;
+    if (hardnessDifference) return hardnessDifference;
+
+    const aDensity = (a.density[0] + a.density[1]) / 2;
+    const bDensity = (b.density[0] + b.density[1]) / 2;
+    return aDensity - bDensity || a.name.localeCompare(b.name);
+  });
+
+  if (ordered.length < 5) {
+    throw new Error(`Expected at least 5 species in ${group}, got ${ordered.length}.`);
+  }
+
+  for (const [index, wood] of ordered.entries()) {
+    const related = [];
+    for (let distance = 1; related.length < 4; distance += 1) {
+      for (const candidateIndex of [index - distance, index + distance]) {
+        const candidate = ordered[candidateIndex];
+        if (candidate) related.push(candidate);
+        if (related.length === 4) break;
+      }
+    }
+    relatedSpeciesBySlug.set(wood.slug, related);
+  }
+}
+
 function head({ title, description, canonical, jsonLd = "", ogType = "website" }) {
   return `<head>
   <meta charset="utf-8">
@@ -233,7 +267,7 @@ ${JSON.stringify({
   "@id": `${siteUrl}/wood/#collection`,
   name: "Wood Species Library",
   url: `${siteUrl}/wood/`,
-  description: "A searchable wood species library with density, weight, Janka hardness, price tier, applications, pros, cons, and project planning notes.",
+  description: "A searchable wood species library with density, weight, Janka hardness, price tier, applications, limitations, and project planning notes.",
   mainEntity: {
     "@type": "ItemList",
     numberOfItems: species.length,
@@ -250,7 +284,7 @@ ${JSON.stringify({
 
 function indexPage() {
   const title = "Wood Species Library: 200 Woods by Density & Janka";
-  const description = "Search 200 wood species by density, Janka hardness, weight, price tier, applications, pros, cons, and woodworking project fit.";
+  const description = "Search 200 wood species by density, Janka hardness, weight, price tier, applications, limitations, and woodworking project fit.";
   const canonical = `${siteUrl}/wood/`;
   const groups = [...new Set(species.map((wood) => wood.group))].sort();
   const prices = [...new Set(species.map((wood) => wood.price))].sort();
@@ -277,7 +311,7 @@ ${head({ title, description, canonical, jsonLd: itemListJsonLd() })}
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Wood Species Library</p>
       <p class="eyebrow">Wood Species Library</p>
       <h1>Wood Species Library</h1>
-      <p class="lead">Search 200 woods by density, weight, Janka hardness, price tier, applications, pros, cons, and project fit before choosing stock for a cut list or material estimate.</p>
+      <p class="lead">Search 200 woods by density, weight, Janka hardness, price tier, applications, limitations, and project fit before choosing stock for a cut list or material estimate.</p>
       <div class="hero-actions"><a class="button" href="/wood/oak/">Start with oak</a><a class="button secondary" href="/wood-weight-calculator/">Use weight calculator</a></div>
       <div class="wood-stats" aria-label="Wood library stats">
         <div><strong>200</strong><span>wood species</span></div>
@@ -373,7 +407,7 @@ function speciesJsonLd(wood) {
         headline: `${wood.name} wood properties`,
         name: `${wood.name} Wood`,
         url: page,
-        description: `${wood.name} wood planning notes with density, weight, Janka hardness, price tier, applications, pros, cons, and FAQ.`,
+        description: `${wood.name} wood planning notes with density, weight, Janka hardness, price tier, applications, limitations, and FAQ.`,
         inLanguage: "en",
         about: [
           { "@type": "Thing", name: wood.name },
@@ -414,11 +448,9 @@ function speciesJsonLd(wood) {
 
 function speciesPage(wood) {
   const title = `${wood.name} Wood: Density, Janka, Uses & Price`;
-  const description = `${wood.name} wood guide with density, weight, Janka hardness, price tier, applications, pros, cons, finishing notes, and FAQ for woodworking plans.`;
+  const description = `${wood.name} wood guide with density, weight, Janka hardness, price tier, applications, limitations, finishing notes, and FAQ for woodworking plans.`;
   const canonical = `${siteUrl}/wood/${wood.slug}/`;
-  const related = species
-    .filter((item) => item.slug !== wood.slug && item.group === wood.group)
-    .slice(0, 4);
+  const related = relatedSpeciesBySlug.get(wood.slug);
   return `<!doctype html>
 <html lang="en">
 ${head({ title, description, canonical, jsonLd: speciesJsonLd(wood), ogType: "article" })}
@@ -431,7 +463,7 @@ ${head({ title, description, canonical, jsonLd: speciesJsonLd(wood), ogType: "ar
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/wood/">Wood Species Library</a> / ${escapeHtml(wood.name)}</p>
       <p class="eyebrow">${escapeHtml(wood.group)} reference</p>
       <h1>${escapeHtml(wood.name)} Wood</h1>
-      <p class="lead">Use this ${escapeHtml(wood.name)} wood profile to compare density, weight, Janka hardness, price tier, applications, pros, cons, outdoor fit, and finish behavior before building a cut list.</p>
+      <p class="lead">Use this ${escapeHtml(wood.name)} wood profile to compare density, weight, Janka hardness, price tier, applications, limitations, outdoor fit, and finish behavior before building a cut list.</p>
       <p class="article-byline">By <a href="/about/">WoodCutTool Editorial Team</a> · Reference values are planning ranges; confirm the actual board, moisture, grade, and supplier data before buying.</p>
       <div class="hero-actions"><a class="button" href="/wood-weight-calculator/">Calculate ${escapeHtml(wood.name)} weight</a><a class="button secondary" href="/wood/">Back to wood library</a></div>
     </section>
@@ -451,10 +483,10 @@ ${head({ title, description, canonical, jsonLd: speciesJsonLd(wood), ogType: "ar
         <p>${escapeHtml(wood.name)} is a ${escapeHtml(wood.group.toLowerCase())} that is commonly evaluated for ${escapeHtml(wood.applications.slice(0, 4).join(", "))}. For early project planning, use the density and Janka values as rough comparison points, then confirm the actual board grade, moisture content, and supplier data before buying.</p>
         <h3>Applications</h3>
         <ul class="wood-pill-list">${wood.applications.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
-        <h3>Pros</h3>
-        <ul>${wood.pros.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
         <h3>Cons</h3>
         <ul>${wood.cons.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
+        <h3>Selection and machining checks</h3>
+        <p>Before committing a project to ${escapeHtml(wood.name)}, inspect representative boards for flatness, defects, moisture, and color variation. Measure actual thickness and width after acclimation, then make a sample cut, edge treatment, joint, and finish test. Record grain direction, defect zones, tooling results, and acceptable appearance so the cut list reflects the stock actually available instead of a nominal species profile.</p>
         <h3>Outdoor and finishing notes</h3>
         <p><strong>Outdoor fit:</strong> ${escapeHtml(wood.outdoor)}</p>
         <p><strong>Finish behavior:</strong> ${escapeHtml(wood.finish)}</p>

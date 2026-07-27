@@ -291,8 +291,6 @@ function sortRoutes(routes) {
     "/apps/",
     "/apps/cutlist/",
     "/apps/quiltfit/",
-    "/apps/pdfscanner/",
-    "/apps/receipt/",
     "/cutlist/",
     "/quiltfit/",
     "/tile-calculator/",

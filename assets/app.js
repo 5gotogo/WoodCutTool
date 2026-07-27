@@ -3679,7 +3679,13 @@ function initMegaNavigation() {
   const closeMenus = () => {
     items.forEach((item) => {
       item.classList.remove("is-open");
-      item.querySelector(".nav-trigger")?.setAttribute("aria-expanded", "false");
+      const toggle = item.querySelector(".nav-menu-toggle");
+      const label = item.querySelector(".nav-trigger")?.textContent.trim() || "navigation";
+      toggle?.setAttribute("aria-expanded", "false");
+      toggle?.setAttribute("aria-label", `Open ${label} menu`);
+      if (toggle?.querySelector(".visually-hidden")) {
+        toggle.querySelector(".visually-hidden").textContent = `Open ${label} menu`;
+      }
     });
     nav.classList.remove("nav-mega-open");
   };
@@ -3689,17 +3695,23 @@ function initMegaNavigation() {
     items.forEach((candidate) => {
       const isCurrent = candidate === item;
       candidate.classList.toggle("is-open", isCurrent);
-      candidate.querySelector(".nav-trigger")?.setAttribute("aria-expanded", String(isCurrent));
+      const toggle = candidate.querySelector(".nav-menu-toggle");
+      const label = candidate.querySelector(".nav-trigger")?.textContent.trim() || "navigation";
+      const action = isCurrent ? "Close" : "Open";
+      toggle?.setAttribute("aria-expanded", String(isCurrent));
+      toggle?.setAttribute("aria-label", `${action} ${label} menu`);
+      if (toggle?.querySelector(".visually-hidden")) {
+        toggle.querySelector(".visually-hidden").textContent = `${action} ${label} menu`;
+      }
     });
     nav.classList.add("nav-mega-open");
   };
 
   items.forEach((item) => {
-    const trigger = item.querySelector(".nav-trigger");
-    if (!trigger) return;
-    trigger.setAttribute("aria-expanded", "false");
-    trigger.addEventListener("click", (event) => {
-      if (!mobileQuery.matches) return;
+    const toggle = item.querySelector(".nav-menu-toggle");
+    if (!toggle) return;
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.addEventListener("click", (event) => {
       event.preventDefault();
       event.stopPropagation();
       if (item.classList.contains("is-open")) {
@@ -3711,7 +3723,7 @@ function initMegaNavigation() {
   });
 
   document.addEventListener("click", (event) => {
-    if (!mobileQuery.matches || !nav.classList.contains("nav-mega-open")) return;
+    if (!nav.classList.contains("nav-mega-open")) return;
     if (!event.target.closest(".site-header")) closeMenus();
   });
 

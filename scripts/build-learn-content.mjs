@@ -790,6 +790,30 @@ function learnClusterId(page) {
     .find((cluster) => cluster.match.test(text))?.id || "cut-list-operations";
 }
 
+function learnPageHierarchy(page) {
+  const cluster = learnClusterById.get(learnClusterId(page));
+  if (!cluster) throw new Error(`Missing Learn cluster hierarchy for ${page.slug}`);
+
+  const topicRoute = `/learn/topics/${cluster.id}/`;
+  const topicName = `${cluster.title} Guides`;
+  return {
+    cluster,
+    topicRoute,
+    breadcrumbTrail: [
+      ["Home", "/"],
+      ["Learn", "/learn/"],
+      [topicName, topicRoute],
+      [page.h1, `/learn/${page.slug}/`],
+    ],
+    visibleBreadcrumb: `<p class="breadcrumb"><a href="/">Home</a> / <a href="/learn/">Learn</a> / <a href="${topicRoute}">${escapeHtml(topicName)}</a> / ${escapeHtml(page.h1)}</p>`,
+    isPartOf: {
+      "@type": "CollectionPage",
+      name: topicName,
+      url: `${siteUrl}${topicRoute}`,
+    },
+  };
+}
+
 const learnPagesByCluster = new Map(learnClusters.map((cluster) => [
   cluster.id,
   allLearnPages.filter((page) => learnClusterId(page) === cluster.id),
@@ -933,6 +957,7 @@ function pillarClusterSection(page) {
 }
 
 function articleJsonLd(article) {
+  const hierarchy = learnPageHierarchy(article);
   const graph = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -940,6 +965,7 @@ function articleJsonLd(article) {
     description: article.description,
     url: `${siteUrl}/learn/${article.slug}/`,
     mainEntityOfPage: `${siteUrl}/learn/${article.slug}/`,
+    isPartOf: hierarchy.isPartOf,
     keywords: article.keywords.join(", "),
     ...(article.datePublished ? { datePublished: article.datePublished } : {}),
     dateModified: article.dateModified || "2026-07-16",
@@ -1033,6 +1059,7 @@ function landingToolRecommendation(page) {
 }
 
 function articlePage(article) {
+  const hierarchy = learnPageHierarchy(article);
   return `<!doctype html>
 <html lang="en">
 ${head({
@@ -1043,12 +1070,12 @@ ${head({
     ogType: "article"
   })}
 <body>
-  ${breadcrumbJsonLd([["Home", "/"], ["Learn", "/learn/"], [article.h1, `/learn/${article.slug}/`]])}
+  ${breadcrumbJsonLd(hierarchy.breadcrumbTrail)}
   <a class="skip-link" href="#main">Skip to content</a>
   ${header("Learn")}
   <main id="main" class="article-shell">
     <article class="article-body">
-      <p class="breadcrumb"><a href="/">Home</a> / <a href="/learn/">Learn</a> / ${escapeHtml(article.h1)}</p>
+      ${hierarchy.visibleBreadcrumb}
       <p class="eyebrow">WoodCutTool Learn</p>
       <h1>${escapeHtml(article.h1)}</h1>
       <p class="lead">${escapeHtml(article.intro)}</p>${learnWoodImageAfter(article, 0, "hero")}
@@ -1070,6 +1097,7 @@ ${head({
 }
 
 function landingJsonLd(page) {
+  const hierarchy = learnPageHierarchy(page);
   const graph = {
     "@context": "https://schema.org",
     "@graph": [
@@ -1080,6 +1108,7 @@ function landingJsonLd(page) {
         description: page.description,
         url: `${siteUrl}/learn/${page.slug}/`,
         mainEntityOfPage: `${siteUrl}/learn/${page.slug}/`,
+        isPartOf: hierarchy.isPartOf,
         keywords: page.keywords.join(", "),
         ...(usesWoodworkingImages(page) ? {
           image: `${siteUrl}${woodworkingImageFor(`${page.slug} ${page.h1} ${page.description}`).src}`
@@ -1123,6 +1152,7 @@ function internalLinksSection(page) {
 }
 
 function landingPage(page) {
+  const hierarchy = learnPageHierarchy(page);
   return `<!doctype html>
 <html lang="en">
 ${head({
@@ -1133,12 +1163,12 @@ ${head({
     ogType: "article"
   })}
 <body>
-  ${breadcrumbJsonLd([["Home", "/"], ["Learn", "/learn/"], [page.h1, `/learn/${page.slug}/`]])}
+  ${breadcrumbJsonLd(hierarchy.breadcrumbTrail)}
   <a class="skip-link" href="#main">Skip to content</a>
   ${header("Learn")}
   <main id="main" class="article-shell">
     <article class="article-body">
-      <p class="breadcrumb"><a href="/">Home</a> / <a href="/learn/">Learn</a> / ${escapeHtml(page.h1)}</p>
+      ${hierarchy.visibleBreadcrumb}
       <p class="eyebrow">SEO landing page</p>
       <h1>${escapeHtml(page.h1)}</h1>
       <p class="lead">${escapeHtml(page.description)}</p>${learnWoodImageAfter(page, 0, "hero")}
@@ -1169,19 +1199,32 @@ ${head({
 function learnJsonLd() {
   const graph = {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: "WoodCutTool Learn",
-    url: `${siteUrl}/learn/`,
-    description: `Browse ${allLearnPages.length} guides organized into 12 woodworking planning pillars for cut lists, cabinets, plywood, cutting quality, estimating, installation, and project workflows.`,
-    mainEntity: {
-      "@type": "ItemList",
-      itemListElement: allLearnPages.map((article, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: article.h1,
-        url: `${siteUrl}/learn/${article.slug}/`
-      }))
-    }
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${siteUrl}/learn/#collection`,
+        name: "WoodCutTool Learn",
+        url: `${siteUrl}/learn/`,
+        description: `Browse ${allLearnPages.length} guides organized into 12 woodworking planning pillars for cut lists, cabinets, plywood, cutting quality, estimating, installation, and project workflows.`,
+        mainEntity: {
+          "@type": "ItemList",
+          itemListElement: allLearnPages.map((article, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: article.h1,
+            url: `${siteUrl}/learn/${article.slug}/`
+          }))
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${siteUrl}/learn/#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${siteUrl}/` },
+          { "@type": "ListItem", position: 2, name: "Learn", item: `${siteUrl}/learn/` },
+        ],
+      },
+    ],
   };
   return `<script type="application/ld+json">
   ${JSON.stringify(graph, null, 2)}
@@ -1370,7 +1413,7 @@ function learnIndexPage() {
   return `<!doctype html>
 <html lang="en">
 ${head({
-    title: "Woodworking Learn Hub: 12 Planning Pillars",
+    title: `${allLearnPages.length} Woodworking Guides by Project | WoodCutTool`,
     description: `Browse ${allLearnPages.length} woodworking guides in 12 pillars covering cut lists, cabinets, plywood, cutting quality, estimating, installation, stairs, tile, quilts, and shop workflow.`,
     canonical: `${siteUrl}/learn/`,
     jsonLd: learnJsonLd()

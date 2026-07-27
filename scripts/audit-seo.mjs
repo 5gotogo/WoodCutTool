@@ -5,6 +5,15 @@ import { fileURLToPath } from "node:url";
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
 const siteHost = "woodcuttool.com";
+const blogTitleMaxLength = 60;
+const danglingBlogTitleWords = new Set([
+  "a", "an", "and", "are", "as", "at", "be", "been", "before", "being", "but",
+  "by", "can", "could", "did", "do", "does", "for", "from", "how", "in", "into",
+  "is", "may", "might", "nor", "not", "of", "on", "or", "our", "over", "per",
+  "should", "that", "the", "their", "these", "this", "those", "to", "versus",
+  "via", "vs", "was", "were", "what", "when", "which", "while", "why", "will",
+  "with", "without", "would", "your"
+]);
 const canonicalAliases = new Map([
   ["apps/cutlist-plywood-optimizer/index.html", "/apps/cutlist/"],
   ["apps/quiltfit-quilt-design-planner/index.html", "/apps/quiltfit/"],
@@ -32,6 +41,31 @@ function routeFromFile(file) {
 
 function firstMatch(html, pattern) {
   return html.match(pattern)?.[1]?.trim() ?? "";
+}
+
+function decodeTitleText(value) {
+  return value
+    .replace(/&amp;/gi, "&")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#(?:39|x27);/gi, "'")
+    .replace(/&apos;/gi, "'")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">");
+}
+
+function titleCore(value) {
+  return value.replace(/\s+\|\s+WoodCutTool$/i, "").trim();
+}
+
+function lastTitleWord(value) {
+  return titleCore(value)
+    .toLowerCase()
+    .match(/[a-z0-9]+(?:['’][a-z0-9]+)?(?=[^a-z0-9]*$)/i)?.[0] ?? "";
+}
+
+function hasLegitimateFunctionalEnding(value) {
+  const core = titleCore(value);
+  return /[?!]$/.test(core) || /\b(?:is|are|was|were)\s+for$/i.test(core);
 }
 
 function getAttribute(tag, name) {
@@ -120,6 +154,16 @@ for (const file of files) {
   } else {
     if (title.length < 20) issues.push(["short title", file, title.length, title]);
     if (title.length > 70) issues.push(["long title", file, title.length, title]);
+    if (file.startsWith("blog/")) {
+      const decodedTitle = decodeTitleText(title);
+      if (decodedTitle.length > blogTitleMaxLength) {
+        issues.push(["blog title too long", file, decodedTitle.length, decodedTitle]);
+      }
+      const finalWord = lastTitleWord(decodedTitle);
+      if (danglingBlogTitleWords.has(finalWord) && !hasLegitimateFunctionalEnding(decodedTitle)) {
+        issues.push(["blog title dangling word", file, finalWord, decodedTitle]);
+      }
+    }
     titles.set(title, [...(titles.get(title) ?? []), file]);
   }
 
@@ -194,4 +238,5 @@ if (issues.length) {
   for (const issue of issues.slice(0, 120)) {
     console.log(`- ${issue.join(" | ")}`);
   }
+  process.exitCode = 1;
 }

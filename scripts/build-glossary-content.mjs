@@ -448,19 +448,41 @@ function groupedTerms() {
 function glossaryJsonLd() {
   const graph = {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: "Woodworking Glossary",
-    url: `${siteUrl}/glossary/`,
-    description: "A 200-term woodworking glossary for cut lists, plywood layout, cabinetmaking, joinery, lumber, sheet goods, measuring, finishing, and hardware.",
-    mainEntity: {
-      "@type": "ItemList",
-      itemListElement: rawTerms.map((term, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        name: term.name,
-        url: `${siteUrl}/glossary/${term.slug}/`
-      }))
-    }
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        name: "Woodworking Glossary",
+        url: `${siteUrl}/glossary/`,
+        description: "A 200-term woodworking glossary for cut lists, plywood layout, cabinetmaking, joinery, lumber, sheet goods, measuring, finishing, and hardware.",
+        mainEntity: {
+          "@type": "ItemList",
+          itemListElement: rawTerms.map((term, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            name: term.name,
+            url: `${siteUrl}/glossary/${term.slug}/`
+          }))
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${siteUrl}/glossary/#breadcrumb`,
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: `${siteUrl}/`
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Glossary",
+            item: `${siteUrl}/glossary/`
+          }
+        ]
+      }
+    ]
   };
   return `<script type="application/ld+json">
   ${JSON.stringify(graph, null, 2)}

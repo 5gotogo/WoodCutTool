@@ -39,6 +39,9 @@ const pages = {
   "legal/cutlist/support/index.html": {},
   "legal/quiltfit/privacy/index.html": {},
   "legal/quiltfit/support/index.html": {},
+  "tinnitus/index.html": {
+    bc: [["Home", "/"], ["Apps", "/apps/"], ["Tinnitus Relief", "/tinnitus/"]]
+  },
   "drill-bit-finder/index.html": {
     bc: [["Home", "/"], ["Tools", "/tools/"], ["Drill Bit Finder", "/drill-bit-finder/"]]
   },
@@ -243,12 +246,6 @@ const pages = {
   },
   "apps/quiltfit/index.html": {
     bc: [["Home", "/"], ["Apps", "/apps/"], ["QuiltFit", "/apps/quiltfit/"]]
-  },
-  "apps/pdfscanner/index.html": {
-    bc: [["Home", "/"], ["Apps", "/apps/"], ["PDF Scanner", "/apps/pdfscanner/"]]
-  },
-  "apps/receipt/index.html": {
-    bc: [["Home", "/"], ["Apps", "/apps/"], ["Receipt", "/apps/receipt/"]]
   },
   // Hand-written woodworking blog posts (not produced by build-blog-content).
   "blog/how-to-optimize-material-layout/index.html": {
