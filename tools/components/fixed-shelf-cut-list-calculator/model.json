@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "fixed-shelf-cut-list-calculator",
+  "route": "/tools/components/fixed-shelf-cut-list-calculator/",
+  "categorySlug": "shelves-and-backs",
+  "name": "Fixed Shelf",
+  "title": "Fixed Shelf Cut List Calculator",
+  "description": "Plan fixed shelf panels from the clear cabinet opening, side-joint engagement, front and back setbacks, material thickness, and shelf count.",
+  "searchIntent": "fixed cabinet shelf cut list calculator",
+  "modelVersion": "1.0.0",
+  "reviewedDate": "2026-07-30",
+  "defaultInputs": {
+    "insideWidth": 28.5,
+    "insideDepth": 23.25,
+    "sideDadoDepth": 0.25,
+    "frontSetback": 0.25,
+    "backSetback": 0.25,
+    "shelfThickness": 0.75,
+    "shelfCount": 2
+  },
+  "inputs": [
+    {
+      "id": "insideWidth",
+      "label": "Finished inside width",
+      "default": 28.5,
+      "min": 3,
+      "max": 120,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Clear width between the two cabinet side reference faces."
+    },
+    {
+      "id": "insideDepth",
+      "label": "Finished inside depth",
+      "default": 23.25,
+      "min": 3,
+      "max": 60,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Clear depth from the front inside reference to the back inside reference."
+    },
+    {
+      "id": "sideDadoDepth",
+      "label": "Dado engagement at each side",
+      "default": 0.25,
+      "min": 0,
+      "max": 1.5,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Verified shelf engagement beyond the clear opening into each side joint."
+    },
+    {
+      "id": "frontSetback",
+      "label": "Front setback",
+      "default": 0.25,
+      "min": 0,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Distance from the inside front reference to the shelf front edge."
+    },
+    {
+      "id": "backSetback",
+      "label": "Back setback",
+      "default": 0.25,
+      "min": 0,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Distance from the inside back reference to the shelf back edge."
+    },
+    {
+      "id": "shelfThickness",
+      "label": "Shelf thickness",
+      "default": 0.75,
+      "min": 0.125,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Measured finished shelf thickness before any separate face build-up."
+    },
+    {
+      "id": "shelfCount",
+      "label": "Fixed shelf count",
+      "default": 2,
+      "min": 1,
+      "max": 24,
+      "step": 1,
+      "unit": "count",
+      "help": "Count of identical fixed shelves in the verified opening group."
+    }
+  ],
+  "formulas": [
+    {
+      "part": "Fixed shelf",
+      "quantity": "shelfCount",
+      "length": "insideWidth + 2 * sideDadoDepth",
+      "width": "insideDepth - frontSetback - backSetback",
+      "thickness": "shelfThickness",
+      "formulaNote": "Length adds equal verified engagement into both cabinet sides; fit clearance, stopped dado ends, and assembly sequence must be resolved separately."
+    }
+  ],
+  "defaultParts": [
+    {
+      "name": "Fixed shelf",
+      "quantity": 2,
+      "length": 29,
+      "width": 22.75,
+      "thickness": 0.75,
+      "materialGroup": "Shelf panel",
+      "grain": "Lengthwise across cabinet width",
+      "formulaNote": "Length adds equal verified engagement into both cabinet sides; fit clearance, stopped dado ends, and assembly sequence must be resolved separately."
+    }
+  ],
+  "assumptions": [
+    "The shelf engages equal-depth side joints and the clear inside width is measured between the jointed side faces.",
+    "Front and back setbacks are independent controlled dimensions rather than one generic depth deduction.",
+    "Shelf count groups only components with the same span, material, load, grain, edge treatment, and joint setup.",
+    "This is a reviewable planning model, not a universal cabinetmaking standard; the shop drawing, approved sample, field dimensions, and contract documents remain authoritative.",
+    "Manufacturer hardware dimensions, load ratings, fastener schedules, edge distances, and drilling requirements govern whenever hardware is involved."
+  ],
+  "checks": [
+    "Confirm clear inside width plus both measured joint engagements equals the planned shelf length.",
+    "Check shelf span, load, material grade, thickness, face build-up, and support method against the approved requirements.",
+    "Verify the shelf can enter the carcass and seat fully without colliding with backs, frames, stretchers, or hardware.",
+    "Measure the actual sheet, board, or panel thickness from the material lot and reconcile it with every mating groove, dado, fastener, and hardware allowance.",
+    "Build or dry-fit the first assembly, record the verified result, and release the remaining batch only under the same model revision."
+  ],
+  "stopConditions": [
+    "Stop when shelf load, acceptable deflection, material capacity, or support method is unresolved.",
+    "Stop when dado depth, groove width, assembly sequence, or installed back position has not been proven on a sample.",
+    "Stop when the exact hardware product, current manufacturer data, or required attachment method is unresolved; do not substitute a generic allowance.",
+    "Stop when field dimensions, actual material thickness, grain requirement, or model revision cannot be verified before batch cutting."
+  ],
+  "sources": [
+    {
+      "name": "ANSI/AWI 1235-2024 – Specialty Casework",
+      "url": "https://awinet.org/standards/specialty-casework/requirements-specialty-casework/3-2-material-6/",
+      "scope": "Primary industry standard used here for casework material, component, and hardware-planning context. Its published scope is specialty casework; it does not set universal residential cabinet dimensions or replace project documents."
+    },
+    {
+      "name": "USDA Forest Products Laboratory – Wood Handbook, Chapter 11",
+      "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_11_fpl_gtr282.pdf",
+      "scope": "Primary government reference for wood-based composite material characteristics. It supports material-behavior checks, not project-specific span, load, machining, or fastening approval."
+    }
+  ]
+}

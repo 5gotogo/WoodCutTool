@@ -6,6 +6,11 @@ import { constructionHubs, constructionTools } from "./construction-tool-data.mj
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
 const bySlug = new Map(constructionTools.map((tool) => [tool.slug, tool]));
+const componentProjectSlugs = new Set([
+  "cabinet-cut-list-calculator",
+  "drawer-box-calculator",
+  "cabinet-door-calculator",
+]);
 
 function escapeHtml(value) {
   return String(value)
@@ -16,7 +21,13 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
-function pageHead({ title, description, canonical, schema }) {
+function pageHead({ title, description, canonical, schema, componentProject = false }) {
+  const componentStylesheet = componentProject
+    ? '  <link rel="stylesheet" href="/assets/component-builder.css">\n'
+    : "";
+  const componentRuntime = componentProject
+    ? '  <script defer src="/assets/component-builder.js"></script>\n'
+    : "";
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -43,9 +54,9 @@ function pageHead({ title, description, canonical, schema }) {
   <meta name="theme-color" content="#e8d9b4">
   <style>.mega-menu{display:none}</style>
   <link rel="stylesheet" href="/assets/styles.css">
-  <script defer src="/assets/site-chrome.js"></script>
+${componentStylesheet}  <script defer src="/assets/site-chrome.js"></script>
   <script defer src="/assets/app.js"></script>
-  <script defer src="/assets/construction-calculators.js"></script>
+${componentRuntime}  <script defer src="/assets/construction-calculators.js"></script>
   <script type="application/ld+json">${JSON.stringify(schema)}</script>
 </head>`;
 }
@@ -125,7 +136,13 @@ function toolPage(tool) {
   const unitSwitch = tool.unitSwitch
     ? `<label>Units<select name="unit" data-unit-switch><option value="imperial">Imperial (in)</option><option value="metric">Metric (mm)</option></select></label>`
     : "";
-  return `${pageHead({ title: tool.title, description: tool.description, canonical, schema: toolSchema(tool) })}
+  return `${pageHead({
+    title: tool.title,
+    description: tool.description,
+    canonical,
+    schema: toolSchema(tool),
+    componentProject: componentProjectSlugs.has(tool.slug),
+  })}
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div data-site-header></div>

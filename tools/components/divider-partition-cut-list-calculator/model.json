@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "divider-partition-cut-list-calculator",
+  "route": "/tools/components/divider-partition-cut-list-calculator/",
+  "categorySlug": "cabinet-structure",
+  "name": "Divider and Partition",
+  "title": "Divider and Partition Cut List Calculator",
+  "description": "Plan vertical cabinet dividers from the clear interior, top and bottom clearances, front setback, back clearance, and measured panel thickness.",
+  "searchIntent": "cabinet divider partition cut list calculator",
+  "modelVersion": "1.0.0",
+  "reviewedDate": "2026-07-30",
+  "defaultInputs": {
+    "insideHeight": 33,
+    "insideDepth": 23.25,
+    "dividerCount": 1,
+    "topClearance": 0,
+    "bottomClearance": 0,
+    "frontSetback": 0.75,
+    "backClearance": 0.25,
+    "materialThickness": 0.75
+  },
+  "inputs": [
+    {
+      "id": "insideHeight",
+      "label": "Finished inside height",
+      "default": 33,
+      "min": 3,
+      "max": 120,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Clear cabinet height between the modeled top and bottom reference faces."
+    },
+    {
+      "id": "insideDepth",
+      "label": "Finished inside depth",
+      "default": 23.25,
+      "min": 3,
+      "max": 60,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Clear cabinet depth before front and back allowances."
+    },
+    {
+      "id": "dividerCount",
+      "label": "Divider count",
+      "default": 1,
+      "min": 1,
+      "max": 24,
+      "step": 1,
+      "unit": "count",
+      "help": "Number of identical divider blanks in this controlled opening group."
+    },
+    {
+      "id": "topClearance",
+      "label": "Top clearance",
+      "default": 0,
+      "min": 0,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Deliberate clearance below the top reference face; joint engagement is not represented by a negative clearance."
+    },
+    {
+      "id": "bottomClearance",
+      "label": "Bottom clearance",
+      "default": 0,
+      "min": 0,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Deliberate clearance above the bottom reference face."
+    },
+    {
+      "id": "frontSetback",
+      "label": "Front setback",
+      "default": 0.75,
+      "min": 0,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Distance from the cabinet front reference face to the divider front edge."
+    },
+    {
+      "id": "backClearance",
+      "label": "Back clearance",
+      "default": 0.25,
+      "min": 0,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Distance from divider back edge to the inside back reference face."
+    },
+    {
+      "id": "materialThickness",
+      "label": "Divider thickness",
+      "default": 0.75,
+      "min": 0.125,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Measured finished thickness of the divider material."
+    }
+  ],
+  "formulas": [
+    {
+      "part": "Vertical divider",
+      "quantity": "dividerCount",
+      "length": "insideHeight - topClearance - bottomClearance",
+      "width": "insideDepth - frontSetback - backClearance",
+      "thickness": "materialThickness",
+      "formulaNote": "The panel fits inside the stated opening after explicit clearances. Dado, groove, tenon, or dowel engagement must be added from the approved joint detail."
+    }
+  ],
+  "defaultParts": [
+    {
+      "name": "Vertical divider",
+      "quantity": 1,
+      "length": 33,
+      "width": 22.25,
+      "thickness": 0.75,
+      "materialGroup": "Cabinet panel",
+      "grain": "Vertical",
+      "formulaNote": "The panel fits inside the stated opening after explicit clearances. Dado, groove, tenon, or dowel engagement must be added from the approved joint detail."
+    }
+  ],
+  "assumptions": [
+    "The divider is a rectangular panel installed inside a rectangular clear opening.",
+    "Top and bottom inputs are fit clearances only; joint engagement is excluded from the generic formula.",
+    "All dividers in one model record are identical and share the same opening, material, grain, and edge treatment.",
+    "This is a reviewable planning model, not a universal cabinetmaking standard; the shop drawing, approved sample, field dimensions, and contract documents remain authoritative.",
+    "Manufacturer hardware dimensions, load ratings, fastener schedules, edge distances, and drilling requirements govern whenever hardware is involved."
+  ],
+  "checks": [
+    "Confirm top and bottom clearances leave the intended net divider length without weakening the selected joint.",
+    "Verify front setback and back clearance preserve door, drawer, shelf, back, service, and finished-face relationships.",
+    "Check divider centerlines against the required net opening widths on both sides rather than centering by habit.",
+    "Measure the actual sheet, board, or panel thickness from the material lot and reconcile it with every mating groove, dado, fastener, and hardware allowance.",
+    "Build or dry-fit the first assembly, record the verified result, and release the remaining batch only under the same model revision."
+  ],
+  "stopConditions": [
+    "Stop when the divider is load-bearing and span, material, joint, or support requirements are unresolved.",
+    "Stop when doors, drawers, slides, pullouts, or shelf-pin systems do not have a frozen clearance envelope.",
+    "Stop when the exact hardware product, current manufacturer data, or required attachment method is unresolved; do not substitute a generic allowance.",
+    "Stop when field dimensions, actual material thickness, grain requirement, or model revision cannot be verified before batch cutting."
+  ],
+  "sources": [
+    {
+      "name": "ANSI/AWI 1235-2024 – Specialty Casework",
+      "url": "https://awinet.org/standards/specialty-casework/requirements-specialty-casework/3-2-material-6/",
+      "scope": "Primary industry standard used here for casework material, component, and hardware-planning context. Its published scope is specialty casework; it does not set universal residential cabinet dimensions or replace project documents."
+    }
+  ]
+}

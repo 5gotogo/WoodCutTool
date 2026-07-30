@@ -78,6 +78,7 @@ function cutlistCampaignFor(file) {
   if (file === "index.html") return "smart-home";
   if (file === "apps/cutlist/index.html") return "smart-app-page";
   if (/^(cutlist|cut-list-calculator|plywood-cut-calculator|cabinet-cut-list-calculator)\//.test(file)) return "smart-calculator";
+  if (file.startsWith("tools/components/")) return "smart-component";
   if (file.startsWith("templates/")) return "smart-template";
   if (file.startsWith("examples/")) return "smart-example";
   if (file.startsWith("learn/")) return "smart-learn";

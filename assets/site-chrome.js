@@ -46,6 +46,7 @@
       /^\/(cutlist|cut-list|plywood|cabinet-cut-list)/.test(current) ||
       current.startsWith("/apps/cutlist/") ||
       current.startsWith("/templates/") ||
+      current.startsWith("/tools/components/") ||
       current.startsWith("/examples/") ||
       current.startsWith("/troubleshooting/") ||
       current.startsWith("/worksheets/") ||
@@ -302,13 +303,14 @@
     const projectsMenu = {
       href: "/templates/",
       label: "Projects",
-      aliases: ["/examples/", "/checklists/", "/worksheets/", "/troubleshooting/"],
+      aliases: ["/tools/components/", "/examples/", "/checklists/", "/worksheets/", "/troubleshooting/"],
       visual: "templates",
       featureTitle: "Move a project from idea to release",
-      featureDescription: "Start with a reusable template, inspect a worked example, record the job, and verify irreversible steps before cutting or installation.",
+      featureDescription: "Calculate reusable components, start from a template, inspect a worked example, record the job, and verify irreversible steps before cutting or installation.",
       featureCta: "Browse project templates ->",
       columns: [
         { title: "Start", links: [
+          { href: "/tools/components/", icon: "CC", title: "Component calculators", description: "Build reusable cabinet parts and merge them into one project cut list." },
           { href: "/templates/", icon: "TP", title: "Templates", description: "Project-ready parts, constraints, and release checks.", exact: true },
           { href: "/examples/", icon: "EX", title: "Worked examples", description: "Parts, modeled layouts, sheet counts, and CSV files." },
           { href: "/material-list-generator/", icon: "ML", title: "Material list", description: "Turn confirmed project inputs into a buying list." }
@@ -353,7 +355,7 @@
       ]
     };
 
-    const toolsMenu = `<div class="mega-menu" role="group" aria-label="Tools menu">${megaFeature({ href: "/tools/", title: "Choose a calculator by project", description: "Browse focused woodworking and construction tools without mixing unrelated app categories into the planning hub.", cta: "Browse tools ->", visual: "tools" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Woodworking Tools</p>${menuLink({ href: "/tools/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut and layout, cabinets, furniture, wood, and materials." })}${tools.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Construction Tools</p>${menuLink({ href: "/tools/construction/", icon: "CN", title: "Construction hub", description: "Stairs, tile, deck, fence, wall, roof, and concrete." })}${tools.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Tool directory</p>${menuLink({ href: "/tools/", icon: "TL", title: "All tools", description: "Open the full calculator and planning hub.", exact: true })}${menuLink({ href: "/conversion/", icon: "CV", title: "Conversion calculator", description: "Convert fractions, inches, millimeters, angles, rise, and run." })}${menuLink({ href: "/material-list-generator/", icon: "MT", title: "Material list", description: "Turn project inputs into a material checklist." })}${menuLink({ href: "/drill-bit-finder/", icon: "DR", title: "Drill bit finder", description: "Match screw diameter to pilot and clearance holes." })}</div></div></div>`;
+    const toolsMenu = `<div class="mega-menu" role="group" aria-label="Tools menu">${megaFeature({ href: "/tools/", title: "Choose a calculator by project", description: "Browse focused woodworking and construction tools without mixing unrelated app categories into the planning hub.", cta: "Browse tools ->", visual: "tools" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Woodworking Tools</p>${menuLink({ href: "/tools/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut and layout, cabinets, furniture, wood, and materials." })}${tools.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Construction Tools</p>${menuLink({ href: "/tools/construction/", icon: "CN", title: "Construction hub", description: "Stairs, tile, deck, fence, wall, roof, and concrete." })}${tools.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Tool directory</p>${menuLink({ href: "/tools/", icon: "TL", title: "All tools", description: "Open the full calculator and planning hub.", exact: true })}${menuLink({ href: "/tools/components/", icon: "CC", title: "Component calculators", description: "Merge reusable cabinet component cut lists into one browser-local project." })}${menuLink({ href: "/conversion/", icon: "CV", title: "Conversion calculator", description: "Convert fractions, inches, millimeters, angles, rise, and run." })}${menuLink({ href: "/material-list-generator/", icon: "MT", title: "Material list", description: "Turn project inputs into a material checklist." })}${menuLink({ href: "/drill-bit-finder/", icon: "DR", title: "Drill bit finder", description: "Match screw diameter to pilot and clearance holes." })}</div></div></div>`;
     const appsMenu = `<div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for saved workflows", description: "Use the website for quick checks, then move repeatable projects into focused iPhone apps when you need saved records.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Planning apps</p>${apps.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Document apps</p>${apps.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">More apps</p>${apps.slice(6, 9).map(menuLink).join("")}${menuLink({ href: "/apps/compare/", icon: "VS", title: "App comparisons", description: "Compare app workflows against common alternatives." })}</div></div></div>`;
 
     return `<div class="nav-links nav-links-mega">${navMenuItem({ href: "/tools/", label: "Tools", aliases: tools.map((item) => item.href), menu: toolsMenu })}${resourceNavMenu(projectsMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(resourcesMenu)}${navMenuItem({ href: "/apps/", label: "Apps", menu: appsMenu })}</div>`;
@@ -385,6 +387,7 @@
 
     const planning = [
       { href: "/templates/kitchen-cabinet-cut-list/", label: "Kitchen cabinet cut list" },
+      { href: "/tools/components/", label: "Component cut list calculators" },
       { href: "/templates/bookcase-cut-list/", label: "Bookcase template" },
       { href: "/templates/workbench-cut-list/", label: "Workbench template" },
       { href: "/learn/how-many-sheets-of-plywood-do-i-need/", label: "Sheet count guide" },
@@ -399,6 +402,7 @@
     const resources = [
       { href: "/about/", label: "About & editorial process" },
       { href: "/research/", label: "Research & datasets" },
+      { href: "/tools/components/", label: "Cut list component library" },
       { href: "/troubleshooting/", label: "Troubleshooting" },
       { href: "/checklists/", label: "Woodworking checklists" },
       { href: "/worksheets/", label: "Woodworking worksheets" },

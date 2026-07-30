@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "applied-back-panel-calculator",
+  "route": "/tools/components/applied-back-panel-calculator/",
+  "categorySlug": "shelves-and-backs",
+  "name": "Applied Back Panel",
+  "title": "Applied Back Panel Calculator",
+  "description": "Plan an applied cabinet back from the outside envelope and explicit side, top, and bottom insets while keeping attachment and squaring decisions separate.",
+  "searchIntent": "applied cabinet back panel cut list calculator",
+  "modelVersion": "1.0.0",
+  "reviewedDate": "2026-07-30",
+  "defaultInputs": {
+    "cabinetWidth": 30,
+    "cabinetHeight": 34.5,
+    "sideInset": 0,
+    "topInset": 0,
+    "bottomInset": 0,
+    "backThickness": 0.25,
+    "panelCount": 1
+  },
+  "inputs": [
+    {
+      "id": "cabinetWidth",
+      "label": "Cabinet outside width",
+      "default": 30,
+      "min": 3,
+      "max": 144,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Finished outside cabinet width at the rear application plane."
+    },
+    {
+      "id": "cabinetHeight",
+      "label": "Cabinet outside height",
+      "default": 34.5,
+      "min": 3,
+      "max": 120,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Finished outside cabinet height at the rear application plane."
+    },
+    {
+      "id": "sideInset",
+      "label": "Inset at each side",
+      "default": 0,
+      "min": 0,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Equal distance from each cabinet side to the applied back edge."
+    },
+    {
+      "id": "topInset",
+      "label": "Top inset",
+      "default": 0,
+      "min": 0,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Distance from cabinet top to panel top edge."
+    },
+    {
+      "id": "bottomInset",
+      "label": "Bottom inset",
+      "default": 0,
+      "min": 0,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Distance from cabinet bottom to panel bottom edge."
+    },
+    {
+      "id": "backThickness",
+      "label": "Back thickness",
+      "default": 0.25,
+      "min": 0.0625,
+      "max": 1.5,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Measured finished thickness of the back panel."
+    },
+    {
+      "id": "panelCount",
+      "label": "Panel quantity",
+      "default": 1,
+      "min": 1,
+      "max": 24,
+      "step": 1,
+      "unit": "count",
+      "help": "Count of identical applied backs in this verified cabinet group."
+    }
+  ],
+  "formulas": [
+    {
+      "part": "Applied back panel",
+      "quantity": "panelCount",
+      "length": "cabinetHeight - topInset - bottomInset",
+      "width": "cabinetWidth - 2 * sideInset",
+      "thickness": "backThickness",
+      "formulaNote": "The panel is reduced from the rear outside envelope by explicit insets; seam, rabbet, reveal, or overhang conditions need their own revision."
+    }
+  ],
+  "defaultParts": [
+    {
+      "name": "Applied back panel",
+      "quantity": 1,
+      "length": 34.5,
+      "width": 30,
+      "thickness": 0.25,
+      "materialGroup": "Cabinet back panel",
+      "grain": "Project-specified orientation",
+      "formulaNote": "The panel is reduced from the rear outside envelope by explicit insets; seam, rabbet, reveal, or overhang conditions need their own revision."
+    }
+  ],
+  "assumptions": [
+    "The back is a rectangular overlay on one rear plane and does not enter side, top, or bottom grooves.",
+    "Equal side inset applies; unequal reveals, rabbets, overhangs, or scribe conditions require a separate model.",
+    "Panel count groups only cabinets with the same rear envelope, material, grain, finish, services, and attachment pattern.",
+    "This is a reviewable planning model, not a universal cabinetmaking standard; the shop drawing, approved sample, field dimensions, and contract documents remain authoritative.",
+    "Manufacturer hardware dimensions, load ratings, fastener schedules, edge distances, and drilling requirements govern whenever hardware is involved."
+  ],
+  "checks": [
+    "Confirm the proposed back dimensions and cabinet diagonals allow the approved squaring and fastening sequence.",
+    "Check every edge has adequate bearing and fastening distance without colliding with grooves, nailers, or hardware.",
+    "Verify services, ventilation, access, wall clearance, finish, and grain orientation before cutting the panel.",
+    "Measure the actual sheet, board, or panel thickness from the material lot and reconcile it with every mating groove, dado, fastener, and hardware allowance.",
+    "Build or dry-fit the first assembly, record the verified result, and release the remaining batch only under the same model revision."
+  ],
+  "stopConditions": [
+    "Stop when the applied back is expected to brace or carry load without an approved material and attachment design.",
+    "Stop when rear services, hanging hardware, nailers, access openings, or installation clearances are unresolved.",
+    "Stop when the exact hardware product, current manufacturer data, or required attachment method is unresolved; do not substitute a generic allowance.",
+    "Stop when field dimensions, actual material thickness, grain requirement, or model revision cannot be verified before batch cutting."
+  ],
+  "sources": [
+    {
+      "name": "ANSI/AWI 1235-2024 – Specialty Casework",
+      "url": "https://awinet.org/standards/specialty-casework/requirements-specialty-casework/3-2-material-6/",
+      "scope": "Primary industry standard used here for casework material, component, and hardware-planning context. Its published scope is specialty casework; it does not set universal residential cabinet dimensions or replace project documents."
+    },
+    {
+      "name": "USDA Forest Products Laboratory – Wood Handbook, Chapter 11",
+      "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_11_fpl_gtr282.pdf",
+      "scope": "Primary government reference for wood-based composite material characteristics. It supports material-behavior checks, not project-specific span, load, machining, or fastening approval."
+    }
+  ]
+}

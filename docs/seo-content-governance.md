@@ -1,6 +1,6 @@
 # WoodCutTool SEO content governance
 
-Updated: 2026-07-26
+Updated: 2026-07-30
 
 ## Purpose
 
@@ -18,11 +18,31 @@ Page count is a capacity measure. It is never sufficient evidence that a batch s
 | Troubleshooting | Why did this result fail or disagree? | Isolate causes, tests, fixes, stop conditions, and prevention |
 | Checklist | Can this irreversible step be released? | Provide observable checks, pass criteria, owner, and stop condition |
 | Worksheet | What project-specific evidence must be retained? | Record values with source, owner, date, and revision |
+| Component calculator | What reusable assembly parts follow from these measured inputs? | Show the variables and formulas, generate a reviewable part list, and add the result to a browser-local project export |
 | Template | What parts and checks start this project? | Provide a complete project-specific input set |
 | Example | What does a complete input and result look like? | Publish inspectable inputs and downloadable evidence |
 | Research or calculator | What does the data or project input produce? | Provide reproducible rows, explicit assumptions, or an actionable result |
 
 Two pages may share a subject only when their primary questions and outcomes differ. A glossary definition must not repeat a Learn guide; a topic hub must not imitate its pillar article; a checklist must not become a tutorial; and a worksheet must not approve the value it records.
+
+## Cut List Component standard
+
+Every indexed component model under `/tools/components/<model>/` must:
+
+1. Represent one reusable assembly decision with inputs and formulas that differ from every existing calculator.
+2. Render a complete default result in static HTML while recalculating imperial or metric inputs locally in the browser.
+3. State actual-versus-nominal material, joinery, hardware, and field-fit assumptions instead of presenting one sample as a universal standard.
+4. Publish measurement steps, formula notes, verification checks, test-piece or first-article gates, and explicit stop conditions.
+5. Provide downloadable example CSV and model JSON files and allow the current result to be added to a browser-local merged project list.
+6. Keep saved configurations, unit choices, and dimension combinations out of indexable URL parameters; the model has one self-canonical URL.
+7. Link its category hub, three related component models, and at least four real Learn, Template, Example, Checklist, Worksheet, Troubleshooting, material, or CutList actions.
+8. Include `WebApplication`, `FAQPage`, and breadcrumb structured data, at least four independent inbound sources, and at least 1,100 visible words led by model-specific inputs, formula chains, output interpretation, failure cases, and release decisions.
+9. Record a model version, review date, source boundary, and six-month review point.
+10. Reject live input combinations that calculate zero or negative dimensions; never disguise an impossible result by clamping it to a token positive size. Optional part quantities may resolve to zero and should disappear from the current export.
+11. Keep shared explanatory copy at the hub or category level. Detail pages must pass the component distinctiveness audit instead of reaching a word target with repeated boilerplate.
+12. Pass default-output, expression-reference, positive-dimension, local-link, mobile, desktop, export, storage, and pairwise-content checks.
+
+Existing cabinet, drawer-box, cabinet-door, and shelf-spacing calculators retain their canonical URLs. The Component Library links and composes tools; it must not create synonym pages for those intents. Templates remain fixed project starting points, Examples remain fixed completed inputs, and Component models remain live reusable assembly calculations.
 
 ## Learn topic-hub standard
 
@@ -48,6 +68,7 @@ Before generation:
 - Reject exact intent collisions and define why close subjects need separate page roles.
 - Verify all local routes from generator data.
 - State the minimum page count, content depth, inbound-link count, and downloadable-evidence requirement for the surface.
+- For Component models, reject dimension, unit, product-brand, and saved-state variants as separate URLs.
 
 During generation:
 

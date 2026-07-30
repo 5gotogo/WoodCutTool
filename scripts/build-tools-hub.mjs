@@ -43,6 +43,7 @@ const html = `<!doctype html>
     <section class="section">${visualHeading("Woodworking", "Cut lists, plywood, cabinets, lumber, and shop math.", "Start here when the material will be cut in the shop. Use the quick calculators for a first estimate, then move confirmed part dimensions into a sheet layout.", "/assets/images/tools/tools-cut-layout.webp", "Plywood sheets and cabinet parts organized around an efficient cutting layout")}<div class="grid tools">
       ${card("Plywood Cut Calculator", "Plan sheet layouts, parts, kerf, sheet count, layout preview, and estimated waste.", "/plywood-cut-calculator/")}
       ${card("Cut List Calculator", "Turn board inventory and part dimensions into a practical linear cutting plan.", "/cut-list-calculator/")}
+      ${card("Cut List Component Library", "Calculate reusable cabinet components, add them to one browser-local project, and export a merged CSV or JSON cut list.", "/tools/components/", "Build component cut lists")}
       ${constructionCard("cabinet-cut-list-calculator")}
       ${constructionCard("drawer-box-calculator")}
       ${constructionCard("cabinet-door-calculator")}
@@ -57,6 +58,7 @@ const html = `<!doctype html>
     <section class="section">${visualHeading("Finish and measurement", "Small tools that prevent expensive layout mistakes.", "Use conversion, crown-molding, material, and fastener references to prepare accurate marks and purchase lists.", "/assets/images/tools/tools-measurement.webp", "Tape measure, square, angle gauge, and wood samples arranged for precise layout")}<div class="grid tools">${card("Conversion Calculator", "Convert fractions, inches, millimeters, feet, angles, slope, and rise and run in one workspace.", "/conversion/")}${card("Drill Bit Finder", "Match screw diameter and material to pilot, clearance, fractional, and metric drill sizes.", "/drill-bit-finder/")}${constructionCard("crown-molding-angle-calculator")}${card("Fraction Calculator", "Convert fractional inches into decimal inches and millimeters.", "/fraction-calculator/")}${card("Inch ↔ mm Converter", "Switch between imperial and metric dimensions for plans, sheet sizes, and hardware.", "/inch-mm-converter/")}${card("Material Library", "Compare sheet goods by thickness, size, weight, cost tier, and common uses.", "/material-library/")}${card("Wood Species Library", "Search wood density, hardness, weight, cost tier, and finishing notes.", "/wood/")}</div></section>
     <section class="section"><div class="section-heading compact"><p class="eyebrow">Project workflow</p><h2>Plan, verify, record, then troubleshoot.</h2><p>A calculator answers one number. These connected libraries carry that number through a practical project workflow and make the next useful page easy to find.</p></div><div class="related-grid">
       <a href="/templates/"><span>Start</span><strong>Project templates</strong></a>
+      <a href="/tools/components/"><span>Build</span><strong>Component cut list calculators</strong></a>
       <a href="/examples/"><span>Inspect</span><strong>Worked examples</strong></a>
       <a href="/worksheets/"><span>Record</span><strong>Printable worksheets</strong></a>
       <a href="/checklists/"><span>Verify</span><strong>Release checklists</strong></a>
@@ -93,7 +95,10 @@ const woodworkingGroups = [
     { name: "Cut List Calculator", description: "Optimize linear board cuts and review waste.", href: "/cut-list-calculator/" },
     { name: "Kerf Calculator", description: "Estimate saw-cut material loss and remaining stock.", href: "/kerf-calculator/" }
   ] },
-  { eyebrow: "Cabinet & Furniture", title: "Cabinet and furniture tools", description: "Generate cabinet, drawer, door, shelf, molding, and furniture planning dimensions.", cards: woodworkingGenerated.map(asCard) },
+  { eyebrow: "Cabinet & Furniture", title: "Cabinet and furniture tools", description: "Generate cabinet, drawer, door, shelf, molding, and furniture planning dimensions.", cards: [
+    { name: "Cut List Component Library", description: "Build reusable cabinet components and merge their parts into one exportable project list.", href: "/tools/components/" },
+    ...woodworkingGenerated.map(asCard)
+  ] },
   { eyebrow: "Wood & Materials", title: "Wood and material tools", description: "Estimate lumber volume, weight, sheet goods, costs, and material properties.", cards: [
     { name: "Board Foot Calculator", description: "Estimate lumber volume, waste, cost, and weight.", href: "/board-foot-calculator/" },
     { name: "Lumber Calculator", description: "Estimate board feet, linear feet, waste, and cost.", href: "/lumber-calculator/" },

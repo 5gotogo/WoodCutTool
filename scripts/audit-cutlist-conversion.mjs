@@ -24,6 +24,8 @@ const representativePages = {
   example: readFileSync(join(root, "examples/bathroom-vanity-cut-list/index.html"), "utf8"),
   troubleshooting: readFileSync(join(root, "troubleshooting/material-groups-missing-from-cut-list/index.html"), "utf8"),
   unrelatedLearn: readFileSync(join(root, "learn/tile-calculator-inputs-explained/index.html"), "utf8"),
+  componentHub: readFileSync(join(root, "tools/components/index.html"), "utf8"),
+  componentModel: readFileSync(join(root, "tools/components/face-frame-cut-list-calculator/index.html"), "utf8"),
 };
 const screenshots = [
   "cutlist-layout.webp",
@@ -62,6 +64,17 @@ if (!representativePages.troubleshooting.includes('data-conversion-source="troub
 }
 if (representativePages.unrelatedLearn.includes('data-conversion-source="learn-guide"')) {
   errors.push("Unrelated tile Learn content must not receive a CutList conversion CTA");
+}
+if (!representativePages.componentHub.includes("data-component-project")) {
+  errors.push("Cut List Component Library hub is missing its browser-local project tray");
+}
+if (!representativePages.componentModel.includes("data-component-form") ||
+    !representativePages.componentModel.includes("data-component-add") ||
+    !representativePages.componentModel.includes('src="/assets/component-builder.js"')) {
+  errors.push("Representative component calculator is missing calculate, add-to-project, or browser runtime integration");
+}
+if (!representativePages.componentModel.includes("/apps/cutlist/")) {
+  errors.push("Representative component calculator is missing its CutList handoff");
 }
 
 let bannerCount = 0;

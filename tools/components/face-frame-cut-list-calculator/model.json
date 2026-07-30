@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "face-frame-cut-list-calculator",
+  "route": "/tools/components/face-frame-cut-list-calculator/",
+  "categorySlug": "cabinet-structure",
+  "name": "Face Frame",
+  "title": "Face Frame Cut List Calculator",
+  "description": "Plan face-frame stiles and rails from the cabinet envelope, member widths, and opening layout while preserving an auditable first-piece release.",
+  "searchIntent": "face frame cut list calculator",
+  "modelVersion": "1.0.0",
+  "reviewedDate": "2026-07-30",
+  "defaultInputs": {
+    "cabinetWidth": 30,
+    "cabinetHeight": 34.5,
+    "stileWidth": 1.5,
+    "railWidth": 1.5,
+    "materialThickness": 0.75,
+    "openingCount": 2,
+    "middleRailCount": 1
+  },
+  "inputs": [
+    {
+      "id": "cabinetWidth",
+      "label": "Cabinet outside width",
+      "default": 30,
+      "min": 6,
+      "max": 120,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Finished cabinet width at the face-frame reference plane."
+    },
+    {
+      "id": "cabinetHeight",
+      "label": "Cabinet outside height",
+      "default": 34.5,
+      "min": 6,
+      "max": 120,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Full face-frame height before any project-specific scribe or installation trimming."
+    },
+    {
+      "id": "stileWidth",
+      "label": "Stile width",
+      "default": 1.5,
+      "min": 0.5,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Finished width of both outer and intermediate vertical members."
+    },
+    {
+      "id": "railWidth",
+      "label": "Rail width",
+      "default": 1.5,
+      "min": 0.5,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Finished width of top, bottom, and intermediate horizontal members."
+    },
+    {
+      "id": "materialThickness",
+      "label": "Frame stock thickness",
+      "default": 0.75,
+      "min": 0.25,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Measured finished thickness of the prepared face-frame stock."
+    },
+    {
+      "id": "openingCount",
+      "label": "Opening columns",
+      "default": 2,
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "unit": "count",
+      "help": "Number of horizontal opening columns; one fewer intermediate stile is planned."
+    },
+    {
+      "id": "middleRailCount",
+      "label": "Intermediate rails",
+      "default": 1,
+      "min": 0,
+      "max": 12,
+      "step": 1,
+      "unit": "count",
+      "help": "Count of intermediate rails; set the actual approved layout rather than inferring drawer positions."
+    }
+  ],
+  "formulas": [
+    {
+      "part": "Outer stile",
+      "quantity": "2",
+      "length": "cabinetHeight",
+      "width": "stileWidth",
+      "thickness": "materialThickness",
+      "formulaNote": "Outer stiles run the full cabinet height in this planning model."
+    },
+    {
+      "part": "Top and bottom rail",
+      "quantity": "2",
+      "length": "cabinetWidth - 2 * stileWidth",
+      "width": "railWidth",
+      "thickness": "materialThickness",
+      "formulaNote": "Rails fit between full-height outer stiles; joinery shoulders, tenons, or pocket-screw setbacks are not added automatically."
+    },
+    {
+      "part": "Intermediate stile",
+      "quantity": "openingCount - 1",
+      "length": "cabinetHeight - 2 * railWidth",
+      "width": "stileWidth",
+      "thickness": "materialThickness",
+      "formulaNote": "The model adds one fewer intermediate stile than opening columns, so a single opening correctly produces no intermediate stile."
+    },
+    {
+      "part": "Intermediate rail",
+      "quantity": "middleRailCount",
+      "length": "cabinetWidth - 2 * stileWidth",
+      "width": "railWidth",
+      "thickness": "materialThickness",
+      "formulaNote": "Intermediate rails use the clear width between outer stiles; split openings and joint extensions require a project-specific revision."
+    }
+  ],
+  "defaultParts": [
+    {
+      "name": "Outer stile",
+      "quantity": 2,
+      "length": 34.5,
+      "width": 1.5,
+      "thickness": 0.75,
+      "materialGroup": "Face-frame stock",
+      "grain": "Lengthwise",
+      "formulaNote": "Outer stiles run the full cabinet height in this planning model."
+    },
+    {
+      "name": "Top and bottom rail",
+      "quantity": 2,
+      "length": 27,
+      "width": 1.5,
+      "thickness": 0.75,
+      "materialGroup": "Face-frame stock",
+      "grain": "Lengthwise",
+      "formulaNote": "Rails fit between full-height outer stiles; joinery shoulders, tenons, or pocket-screw setbacks are not added automatically."
+    },
+    {
+      "name": "Intermediate stile",
+      "quantity": 1,
+      "length": 31.5,
+      "width": 1.5,
+      "thickness": 0.75,
+      "materialGroup": "Face-frame stock",
+      "grain": "Lengthwise",
+      "formulaNote": "The model adds one fewer intermediate stile than opening columns, so a single opening correctly produces no intermediate stile."
+    },
+    {
+      "name": "Intermediate rail",
+      "quantity": 1,
+      "length": 27,
+      "width": 1.5,
+      "thickness": 0.75,
+      "materialGroup": "Face-frame stock",
+      "grain": "Lengthwise",
+      "formulaNote": "Intermediate rails use the clear width between outer stiles; split openings and joint extensions require a project-specific revision."
+    }
+  ],
+  "assumptions": [
+    "Outer stiles run full height and all listed rails fit between those stiles.",
+    "Intermediate stiles fit between the top and bottom rails; alternate joint stacks require edited formulas.",
+    "Joinery extensions are excluded because mortise-and-tenon, cope-and-stick, dowel, biscuit, and pocket-screw workflows do not share one allowance.",
+    "This is a reviewable planning model, not a universal cabinetmaking standard; the shop drawing, approved sample, field dimensions, and contract documents remain authoritative.",
+    "Manufacturer hardware dimensions, load ratings, fastener schedules, edge distances, and drilling requirements govern whenever hardware is involved."
+  ],
+  "checks": [
+    "Confirm rail lengths plus two stile widths reproduce the approved cabinet width.",
+    "Check intermediate-member centerlines against door, drawer, hinge, slide, and appliance clearances.",
+    "Verify the clamped frame is square by comparing diagonals and confirming the required cabinet reveal.",
+    "Measure the actual sheet, board, or panel thickness from the material lot and reconcile it with every mating groove, dado, fastener, and hardware allowance.",
+    "Build or dry-fit the first assembly, record the verified result, and release the remaining batch only under the same model revision."
+  ],
+  "stopConditions": [
+    "Stop when the face-frame joint type or required joint extension is not yet selected.",
+    "Stop when the opening elevation conflicts with hinge cups, drawer slides, pullouts, or appliance clearances.",
+    "Stop when the exact hardware product, current manufacturer data, or required attachment method is unresolved; do not substitute a generic allowance.",
+    "Stop when field dimensions, actual material thickness, grain requirement, or model revision cannot be verified before batch cutting."
+  ],
+  "sources": [
+    {
+      "name": "ANSI/AWI 1235-2024 – Specialty Casework",
+      "url": "https://awinet.org/standards/specialty-casework/requirements-specialty-casework/3-2-material-6/",
+      "scope": "Primary industry standard used here for casework material, component, and hardware-planning context. Its published scope is specialty casework; it does not set universal residential cabinet dimensions or replace project documents."
+    }
+  ]
+}

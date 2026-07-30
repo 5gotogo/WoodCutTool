@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "cabinet-hanging-rail-calculator",
+  "route": "/tools/components/cabinet-hanging-rail-calculator/",
+  "categorySlug": "fronts-panels-installation",
+  "name": "Cabinet Hanging Rail",
+  "title": "Cabinet Hanging Rail Calculator",
+  "description": "Plan straight hanging-rail blanks across a cabinet or run using side clearances, rail height and thickness, rail count, segment count, and segment gaps.",
+  "searchIntent": "cabinet hanging rail cut list calculator",
+  "modelVersion": "1.0.0",
+  "reviewedDate": "2026-07-30",
+  "defaultInputs": {
+    "runWidth": 30,
+    "sideClearance": 0.25,
+    "railHeight": 4,
+    "railThickness": 0.75,
+    "railCount": 2,
+    "segmentCount": 1,
+    "segmentGap": 0.125
+  },
+  "inputs": [
+    {
+      "id": "runWidth",
+      "label": "Cabinet or run width",
+      "default": 30,
+      "min": 6,
+      "max": 240,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Total horizontal reference width available to the modeled rail row."
+    },
+    {
+      "id": "sideClearance",
+      "label": "Clearance at each end",
+      "default": 0.25,
+      "min": 0,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Equal end clearance from the run boundaries to each rail row."
+    },
+    {
+      "id": "railHeight",
+      "label": "Rail face height",
+      "default": 4,
+      "min": 1,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Finished face height of the straight blank before any approved bevel or profile."
+    },
+    {
+      "id": "railThickness",
+      "label": "Rail thickness",
+      "default": 0.75,
+      "min": 0.25,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Measured finished blank thickness; proprietary systems must use their exact manufacturer geometry."
+    },
+    {
+      "id": "railCount",
+      "label": "Rail rows",
+      "default": 2,
+      "min": 1,
+      "max": 8,
+      "step": 1,
+      "unit": "count",
+      "help": "Number of equal horizontal rail rows from the approved attachment design."
+    },
+    {
+      "id": "segmentCount",
+      "label": "Segments per row",
+      "default": 1,
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "unit": "count",
+      "help": "Equal segments in each rail row; seams must align with approved support and attachment zones."
+    },
+    {
+      "id": "segmentGap",
+      "label": "Gap between segments",
+      "default": 0.125,
+      "min": 0,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Deliberate gap between adjacent segments in the same row."
+    }
+  ],
+  "formulas": [
+    {
+      "part": "Hanging rail segment",
+      "quantity": "railCount * segmentCount",
+      "length": "(runWidth - 2 * sideClearance - (segmentCount - 1) * segmentGap) / segmentCount",
+      "width": "railHeight",
+      "thickness": "railThickness",
+      "formulaNote": "The formula divides clear row length into equal straight blanks. It does not establish bevel, proprietary profile, hole pattern, fastener count, or load capacity."
+    }
+  ],
+  "defaultParts": [
+    {
+      "name": "Hanging rail segment",
+      "quantity": 2,
+      "length": 29.5,
+      "width": 4,
+      "thickness": 0.75,
+      "materialGroup": "Approved hanging-rail or cleat stock",
+      "grain": "Lengthwise",
+      "formulaNote": "The formula divides clear row length into equal straight blanks. It does not establish bevel, proprietary profile, hole pattern, fastener count, or load capacity."
+    }
+  ],
+  "assumptions": [
+    "Every listed segment is a straight rectangular planning blank; bevels, hooks, proprietary profiles, holes, and slots are excluded.",
+    "Equal side clearances and equal segment lengths apply to each rail row in the modeled run.",
+    "Rail row count, seam positions, material, load, substrate, fasteners, spacing, and installation are approved inputs external to this size model.",
+    "This is a reviewable planning model, not a universal cabinetmaking standard; the shop drawing, approved sample, field dimensions, and contract documents remain authoritative.",
+    "Manufacturer hardware dimensions, load ratings, fastener schedules, edge distances, and drilling requirements govern whenever hardware is involved."
+  ],
+  "checks": [
+    "Confirm all segment lengths, gaps, and end clearances reconstruct the rail run width.",
+    "Check every seam and fastener against cabinet structure, wall substrate, blocking, edge distance, services, and installation access.",
+    "Verify mating profiles engage fully while preserving required leveling, locking, anti-lift, and adjustment features.",
+    "Measure the actual sheet, board, or panel thickness from the material lot and reconcile it with every mating groove, dado, fastener, and hardware allowance.",
+    "Build or dry-fit the first assembly, record the verified result, and release the remaining batch only under the same model revision."
+  ],
+  "stopConditions": [
+    "Stop when load, substrate, blocking, rail material or profile, fastener, spacing, edge distance, or engineering approval is unresolved.",
+    "Stop when a proprietary rail or cabinet-hanger system lacks its exact current manufacturer installation data.",
+    "Stop when the exact hardware product, current manufacturer data, or required attachment method is unresolved; do not substitute a generic allowance.",
+    "Stop when field dimensions, actual material thickness, grain requirement, or model revision cannot be verified before batch cutting."
+  ],
+  "sources": [
+    {
+      "name": "ANSI/AWI 1235-2024 – Specialty Casework",
+      "url": "https://awinet.org/standards/specialty-casework/requirements-specialty-casework/3-2-material-6/",
+      "scope": "Primary industry standard used here for casework material, component, and hardware-planning context. Its published scope is specialty casework; it does not set universal residential cabinet dimensions or replace project documents."
+    },
+    {
+      "name": "ANSI/AWI 0620-2025 – Finish Carpentry/Installation",
+      "url": "https://awinet.org/standards/finish-carpentry-installation/requirements/structural-7/",
+      "scope": "Primary industry standard used here only for installation, attachment, and structural-coordination context. It does not certify a wall, fastener, rail, or cabinet assembly for a specific load."
+    }
+  ]
+}

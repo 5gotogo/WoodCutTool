@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "adjustable-shelf-pack-calculator",
+  "route": "/tools/components/adjustable-shelf-pack-calculator/",
+  "categorySlug": "shelves-and-backs",
+  "name": "Adjustable Shelf Pack",
+  "title": "Adjustable Shelf Pack Calculator",
+  "description": "Plan an adjustable shelf batch from clear opening dimensions, equal side clearances, front and back setbacks, material thickness, and quantity.",
+  "searchIntent": "adjustable cabinet shelf cut list calculator",
+  "modelVersion": "1.0.0",
+  "reviewedDate": "2026-07-30",
+  "defaultInputs": {
+    "insideWidth": 28.5,
+    "insideDepth": 23.25,
+    "sideClearance": 0.125,
+    "frontSetback": 0.25,
+    "backClearance": 0.25,
+    "shelfThickness": 0.75,
+    "shelfCount": 4
+  },
+  "inputs": [
+    {
+      "id": "insideWidth",
+      "label": "Finished inside width",
+      "default": 28.5,
+      "min": 3,
+      "max": 120,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Clear width at the shelf locations after cabinet assembly."
+    },
+    {
+      "id": "insideDepth",
+      "label": "Finished inside depth",
+      "default": 23.25,
+      "min": 3,
+      "max": 60,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Clear depth from the selected front datum to the inside back."
+    },
+    {
+      "id": "sideClearance",
+      "label": "Clearance at each side",
+      "default": 0.125,
+      "min": 0,
+      "max": 1,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Deliberate clearance between shelf edge and each side; verify with the actual support hardware."
+    },
+    {
+      "id": "frontSetback",
+      "label": "Front setback",
+      "default": 0.25,
+      "min": 0,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Distance from the cabinet front datum to the shelf front edge."
+    },
+    {
+      "id": "backClearance",
+      "label": "Back clearance",
+      "default": 0.25,
+      "min": 0,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Clearance between the shelf back edge and installed back or obstruction."
+    },
+    {
+      "id": "shelfThickness",
+      "label": "Shelf thickness",
+      "default": 0.75,
+      "min": 0.125,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Measured finished thickness including any permanently bonded build-up."
+    },
+    {
+      "id": "shelfCount",
+      "label": "Shelf quantity",
+      "default": 4,
+      "min": 1,
+      "max": 48,
+      "step": 1,
+      "unit": "count",
+      "help": "Number of identical shelves in the pack."
+    }
+  ],
+  "formulas": [
+    {
+      "part": "Adjustable shelf",
+      "quantity": "shelfCount",
+      "length": "insideWidth - 2 * sideClearance",
+      "width": "insideDepth - frontSetback - backClearance",
+      "thickness": "shelfThickness",
+      "formulaNote": "Equal side clearances are deducted from the clear opening; support-hardware projection, edge treatment, and load capacity are separate checks."
+    }
+  ],
+  "defaultParts": [
+    {
+      "name": "Adjustable shelf",
+      "quantity": 4,
+      "length": 28.25,
+      "width": 22.75,
+      "thickness": 0.75,
+      "materialGroup": "Shelf panel",
+      "grain": "Lengthwise across cabinet width",
+      "formulaNote": "Equal side clearances are deducted from the clear opening; support-hardware projection, edge treatment, and load capacity are separate checks."
+    }
+  ],
+  "assumptions": [
+    "The same equal side clearance applies to all shelves in the modeled opening group.",
+    "The inside back is installed and stable before the final shelf depth is released.",
+    "Shelf pins or clips provide approved support without requiring an unmodeled notch, groove, or side projection.",
+    "This is a reviewable planning model, not a universal cabinetmaking standard; the shop drawing, approved sample, field dimensions, and contract documents remain authoritative.",
+    "Manufacturer hardware dimensions, load ratings, fastener schedules, edge distances, and drilling requirements govern whenever hardware is involved."
+  ],
+  "checks": [
+    "Confirm the finished shelf can be tilted or translated through the door and face-frame opening for installation and removal.",
+    "Check the tightest measured opening rather than relying on the average inside width.",
+    "Verify support hardware, span, load, edge treatment, and material capacity for every intended shelf elevation.",
+    "Measure the actual sheet, board, or panel thickness from the material lot and reconcile it with every mating groove, dado, fastener, and hardware allowance.",
+    "Build or dry-fit the first assembly, record the verified result, and release the remaining batch only under the same model revision."
+  ],
+  "stopConditions": [
+    "Stop when the shelf-pin or clip product and its required clearance or bearing geometry are unknown.",
+    "Stop when allowable span, load, deflection, material grade, or edge reinforcement has not been approved.",
+    "Stop when the exact hardware product, current manufacturer data, or required attachment method is unresolved; do not substitute a generic allowance.",
+    "Stop when field dimensions, actual material thickness, grain requirement, or model revision cannot be verified before batch cutting."
+  ],
+  "sources": [
+    {
+      "name": "ANSI/AWI 1235-2024 – Specialty Casework",
+      "url": "https://awinet.org/standards/specialty-casework/requirements-specialty-casework/3-2-material-6/",
+      "scope": "Primary industry standard used here for casework material, component, and hardware-planning context. Its published scope is specialty casework; it does not set universal residential cabinet dimensions or replace project documents."
+    },
+    {
+      "name": "USDA Forest Products Laboratory – Wood Handbook, Chapter 11",
+      "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_11_fpl_gtr282.pdf",
+      "scope": "Primary government reference for wood-based composite material characteristics. It supports material-behavior checks, not project-specific span, load, machining, or fastening approval."
+    }
+  ]
+}

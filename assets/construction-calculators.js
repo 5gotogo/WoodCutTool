@@ -113,9 +113,56 @@
 
   globalThis.WoodCutToolEngines = { CutListGenerator, SpacingEngine, AngleEngine, MaterialEngine };
 
-  function partsOutput(parts, units) {
+  function partsOutput(parts, units, componentName) {
     const text = parts.map((part) => `${part.qty} × ${part.name}: ${units.dimension(part.length)} × ${units.dimension(part.width)} × ${units.dimension(part.thickness)}`).join("\n");
-    return `<div class="cut-list-output"><div class="cut-list-output-head"><h3>Copyable parts list</h3><button class="button secondary small" type="button" data-copy-cut-list>Copy parts</button></div><pre data-cut-list>${text}</pre></div>`;
+    const projectParts = parts.map((part) => ({
+      name: part.name,
+      quantity: part.qty,
+      thickness: part.thickness,
+      width: part.width,
+      length: part.length,
+      materialGroup: "Confirm project material",
+      grain: "Confirm part grain",
+    }));
+    const payload = encodeURIComponent(JSON.stringify({
+      name: componentName,
+      source: globalThis.location?.pathname || "/",
+      modelVersion: "core-calculator-1",
+      parts: projectParts,
+    }));
+    return `<div class="cut-list-output"><div class="cut-list-output-head"><h3>Copyable parts list</h3><div class="component-output-actions"><button class="button secondary small" type="button" data-copy-cut-list>Copy parts</button><button class="button secondary small" type="button" data-download-component-external data-component-payload="${payload}">Download CSV</button><button class="button small" type="button" data-add-component-external data-component-payload="${payload}">Add to component project</button></div></div><pre data-cut-list>${text}</pre></div>`;
+  }
+
+  function csvCell(value) {
+    const text = String(value ?? "");
+    const safe = /^[\s]*[=+\-@\t\r]/.test(text) ? `'${text}` : text;
+    return `"${safe.replaceAll('"', '""')}"`;
+  }
+
+  function downloadExternalComponent(payload) {
+    const rows = payload.parts.map((part) => [
+      part.name,
+      part.quantity,
+      part.thickness,
+      part.width,
+      part.length,
+      part.materialGroup,
+      part.grain,
+    ]);
+    const csv = [
+      ["Part", "Qty", "Thickness (in)", "Width (in)", "Length (in)", "Material", "Grain"],
+      ...rows,
+    ].map((row) => row.map(csvCell).join(",")).join("\r\n") + "\r\n";
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = `${String(payload.name || "component").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "component"}-cut-list.csv`;
+    anchor.hidden = true;
+    document.body.append(anchor);
+    anchor.click();
+    anchor.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 0);
   }
 
   function cabinetSvg({ width, height, shelves = [], label = "Cabinet" }, units) {
@@ -186,18 +233,18 @@
       const units = unitContext(form); const shelfCount = Math.max(0, Math.round(value(form, "shelves")));
       const project = CutListGenerator.cabinet({ width: units.toInches("width"), height: units.toInches("height"), depth: units.toInches("depth"), thickness: units.toInches("thickness"), backThickness: units.toInches("backThickness"), shelfCount, preset: read(form).cabinetType || "base", waste: value(form, "waste") });
       const shelfPositions = Array.from({ length: shelfCount }, (_, index) => units.toInches("height") * (index + 1) / (shelfCount + 1));
-      return `${metrics([[project.parts.reduce((sum, part) => sum + part.qty, 0), "Total parts"], [`${fixed(project.material.areaSquareFeet, 2)} ft²`, "Panel area"], [project.material.sheets, "4×8 sheet estimate"], [`${fixed(value(form, "waste"), 0)}%`, "Waste allowance"]])}${cabinetSvg({ width: units.toInches("width"), height: units.toInches("height"), shelves: shelfPositions, label: "Cabinet" }, units)}${partsOutput(project.parts, units)}${list([`Inside width: <strong>${units.dimension(project.insideWidth)}</strong>.`, `Shelf depth allowance: <strong>${units.dimension(project.shelfDepth)}</strong>.`, `Preset: <strong>${project.preset}</strong>.`])}<div class="cta-row"><a class="button" href="/apps/cutlist/">Optimize this cut list in CutList</a></div>${notice("Confirm joinery, clearances, toe kick, face frame, doors, drawers, hardware, and finished dimensions before cutting.")}`;
+      return `${metrics([[project.parts.reduce((sum, part) => sum + part.qty, 0), "Total parts"], [`${fixed(project.material.areaSquareFeet, 2)} ft²`, "Panel area"], [project.material.sheets, "4×8 sheet estimate"], [`${fixed(value(form, "waste"), 0)}%`, "Waste allowance"]])}${cabinetSvg({ width: units.toInches("width"), height: units.toInches("height"), shelves: shelfPositions, label: "Cabinet" }, units)}${partsOutput(project.parts, units, "Cabinet carcass")}${list([`Inside width: <strong>${units.dimension(project.insideWidth)}</strong>.`, `Shelf depth allowance: <strong>${units.dimension(project.shelfDepth)}</strong>.`, `Preset: <strong>${project.preset}</strong>.`])}<div class="cta-row"><a class="button" href="/apps/cutlist/">Optimize this cut list in CutList</a></div>${notice("Confirm joinery, clearances, toe kick, face frame, doors, drawers, hardware, and finished dimensions before cutting.")}`;
     },
     drawerBox(form) {
       const units = unitContext(form);
       const project = CutListGenerator.drawerBox({ openingWidth: units.toInches("openingWidth"), openingHeight: units.toInches("openingHeight"), cabinetDepth: units.toInches("cabinetDepth"), clearance: units.toInches("clearance"), thickness: units.toInches("thickness"), bottomThickness: units.toInches("bottomThickness"), bottomStyle: read(form).bottomStyle || "captured", qty: value(form, "qty"), waste: value(form, "waste") });
-      return `${metrics([[units.dimension(project.boxWidth), "Finished box width"], [units.dimension(project.boxHeight), "Finished box height"], [`${fixed(project.material.areaSquareFeet, 2)} ft²`, "Total part area"], [project.material.sheets, "4×8 sheet estimate"]])}${cabinetSvg({ width: project.boxWidth, height: project.boxHeight, shelves: [], label: "Drawer box" }, units)}${partsOutput(project.parts, units)}${list([`Finished depth: <strong>${units.dimension(project.boxDepth)}</strong>.`, `Slide choice: <strong>${read(form).slideType}</strong>.`, `Total side clearance: <strong>${units.dimension(units.toInches("clearance"))}</strong>.`, `Bottom method: <strong>${read(form).bottomStyle}</strong>.`, `Waste allowance: <strong>${fixed(value(form, "waste"), 0)}%</strong>.`])}<div class="cta-row"><a class="button" href="/apps/cutlist/">Optimize these drawer parts in CutList</a></div>${notice("Use the exact slide manufacturer's clearance, depth, notch, and locking-device requirements before cutting repeated boxes.")}`;
+      return `${metrics([[units.dimension(project.boxWidth), "Finished box width"], [units.dimension(project.boxHeight), "Finished box height"], [`${fixed(project.material.areaSquareFeet, 2)} ft²`, "Total part area"], [project.material.sheets, "4×8 sheet estimate"]])}${cabinetSvg({ width: project.boxWidth, height: project.boxHeight, shelves: [], label: "Drawer box" }, units)}${partsOutput(project.parts, units, "Drawer box")}${list([`Finished depth: <strong>${units.dimension(project.boxDepth)}</strong>.`, `Slide choice: <strong>${read(form).slideType}</strong>.`, `Total side clearance: <strong>${units.dimension(units.toInches("clearance"))}</strong>.`, `Bottom method: <strong>${read(form).bottomStyle}</strong>.`, `Waste allowance: <strong>${fixed(value(form, "waste"), 0)}%</strong>.`])}<div class="cta-row"><a class="button" href="/apps/cutlist/">Optimize these drawer parts in CutList</a></div>${notice("Use the exact slide manufacturer's clearance, depth, notch, and locking-device requirements before cutting repeated boxes.")}`;
     },
     cabinetDoor(form) {
       const units = unitContext(form);
       const project = CutListGenerator.cabinetDoor({ openingWidth: units.toInches("openingWidth"), openingHeight: units.toInches("openingHeight"), style: read(form).doorStyle || "full", doorCount: Number(read(form).doorCount) || 1, edge: units.toInches("edge"), centerGap: units.toInches("centerGap"), railWidth: units.toInches("railWidth"), stileWidth: units.toInches("stileWidth"), groove: units.toInches("groove"), waste: value(form, "waste") });
       const diagramShelves = [units.toInches("railWidth"), Math.max(0, project.doorHeight - units.toInches("railWidth"))];
-      return `${metrics([[project.count, "Door count"], [`${units.dimension(project.doorWidth)} × ${units.dimension(project.doorHeight)}`, "Finished door size"], [`${fixed(project.material.areaSquareFeet, 2)} ft²`, "Total part area"], [project.material.sheets, "4×8 sheet equivalent"]])}${cabinetSvg({ width: project.doorWidth, height: project.doorHeight, shelves: diagramShelves, label: "Cabinet door" }, units)}${partsOutput(project.parts, units)}${list([`Rail length: <strong>${units.dimension(project.railLength)}</strong>.`, `Panel size: <strong>${units.dimension(project.panelWidth)} × ${units.dimension(project.panelHeight)}</strong>.`, `Door style: <strong>${read(form).doorStyle}</strong>.`, `Waste allowance: <strong>${fixed(value(form, "waste"), 0)}%</strong>.`])}<div class="cta-row"><a class="button" href="/apps/cutlist/">Optimize these door parts in CutList</a></div>${notice("The sheet equivalent combines frame and panel area for planning only; solid-wood rails and stiles require a separate board takeoff. Verify hinge overlay, reveals, profile depth, panel expansion, and a test assembly before batching doors.")}`;
+      return `${metrics([[project.count, "Door count"], [`${units.dimension(project.doorWidth)} × ${units.dimension(project.doorHeight)}`, "Finished door size"], [`${fixed(project.material.areaSquareFeet, 2)} ft²`, "Total part area"], [project.material.sheets, "4×8 sheet equivalent"]])}${cabinetSvg({ width: project.doorWidth, height: project.doorHeight, shelves: diagramShelves, label: "Cabinet door" }, units)}${partsOutput(project.parts, units, "Cabinet door")}${list([`Rail length: <strong>${units.dimension(project.railLength)}</strong>.`, `Panel size: <strong>${units.dimension(project.panelWidth)} × ${units.dimension(project.panelHeight)}</strong>.`, `Door style: <strong>${read(form).doorStyle}</strong>.`, `Waste allowance: <strong>${fixed(value(form, "waste"), 0)}%</strong>.`])}<div class="cta-row"><a class="button" href="/apps/cutlist/">Optimize these door parts in CutList</a></div>${notice("The sheet equivalent combines frame and panel area for planning only; solid-wood rails and stiles require a separate board takeoff. Verify hinge overlay, reveals, profile depth, panel expansion, and a test assembly before batching doors.")}`;
     },
     shelfSpacing(form) {
       const units = unitContext(form); const insideHeight = units.toInches("insideHeight"); const thickness = units.toInches("thickness");
@@ -281,6 +328,32 @@
       form.addEventListener("input", (event) => { if (event.target !== unitSwitch) run(); });
       form.addEventListener("change", (event) => { if (event.target !== unitSwitch) run(); });
       result.addEventListener("click", async (event) => {
+        const addButton = event.target.closest("[data-add-component-external]");
+        if (addButton) {
+          try {
+            const payload = JSON.parse(decodeURIComponent(addButton.dataset.componentPayload || ""));
+            const project = globalThis.WoodCutToolComponentProject;
+            if (!project?.addExternal) throw new Error("Component project is unavailable");
+            project.addExternal(payload);
+            addButton.textContent = "Added to component project";
+          } catch {
+            addButton.textContent = "Could not add";
+          }
+          return;
+        }
+
+        const downloadButton = event.target.closest("[data-download-component-external]");
+        if (downloadButton) {
+          try {
+            const payload = JSON.parse(decodeURIComponent(downloadButton.dataset.componentPayload || ""));
+            downloadExternalComponent(payload);
+            downloadButton.textContent = "Downloaded";
+          } catch {
+            downloadButton.textContent = "Could not download";
+          }
+          return;
+        }
+
         const button = event.target.closest("[data-copy-cut-list]");
         if (!button) return;
         const text = result.querySelector("[data-cut-list]")?.textContent || "";

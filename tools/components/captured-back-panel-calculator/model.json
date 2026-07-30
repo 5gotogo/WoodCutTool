@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "captured-back-panel-calculator",
+  "route": "/tools/components/captured-back-panel-calculator/",
+  "categorySlug": "shelves-and-backs",
+  "name": "Captured Back Panel",
+  "title": "Captured Back Panel Calculator",
+  "description": "Plan a captured cabinet back from the clear opening, groove engagement on four edges, total fit clearance, and measured back thickness.",
+  "searchIntent": "captured cabinet back panel cut list calculator",
+  "modelVersion": "1.0.0",
+  "reviewedDate": "2026-07-30",
+  "defaultInputs": {
+    "insideWidth": 28.5,
+    "insideHeight": 33,
+    "sideGrooveDepth": 0.25,
+    "topBottomGrooveDepth": 0.25,
+    "fitClearance": 0.0625,
+    "backThickness": 0.25,
+    "panelCount": 1
+  },
+  "inputs": [
+    {
+      "id": "insideWidth",
+      "label": "Clear rear opening width",
+      "default": 28.5,
+      "min": 3,
+      "max": 144,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Clear width between the inner groove-entry reference faces."
+    },
+    {
+      "id": "insideHeight",
+      "label": "Clear rear opening height",
+      "default": 33,
+      "min": 3,
+      "max": 120,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Clear height between the inner groove-entry reference faces."
+    },
+    {
+      "id": "sideGrooveDepth",
+      "label": "Side groove depth",
+      "default": 0.25,
+      "min": 0,
+      "max": 1.5,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Verified engagement into each side groove."
+    },
+    {
+      "id": "topBottomGrooveDepth",
+      "label": "Top and bottom groove depth",
+      "default": 0.25,
+      "min": 0,
+      "max": 1.5,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Verified engagement into both top and bottom grooves."
+    },
+    {
+      "id": "fitClearance",
+      "label": "Total fit clearance",
+      "default": 0.0625,
+      "min": 0,
+      "max": 1,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Total deduction across each full panel dimension, not a per-edge value."
+    },
+    {
+      "id": "backThickness",
+      "label": "Back thickness",
+      "default": 0.25,
+      "min": 0.0625,
+      "max": 1.5,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Measured panel thickness matched to the production groove width."
+    },
+    {
+      "id": "panelCount",
+      "label": "Panel quantity",
+      "default": 1,
+      "min": 1,
+      "max": 24,
+      "step": 1,
+      "unit": "count",
+      "help": "Count of identical captured backs in one verified construction group."
+    }
+  ],
+  "formulas": [
+    {
+      "part": "Captured back panel",
+      "quantity": "panelCount",
+      "length": "insideHeight + 2 * topBottomGrooveDepth - fitClearance",
+      "width": "insideWidth + 2 * sideGrooveDepth - fitClearance",
+      "thickness": "backThickness",
+      "formulaNote": "The blank adds engagement into four grooves and deducts one total clearance from each overall dimension."
+    }
+  ],
+  "defaultParts": [
+    {
+      "name": "Captured back panel",
+      "quantity": 1,
+      "length": 33.4375,
+      "width": 28.9375,
+      "thickness": 0.25,
+      "materialGroup": "Cabinet back panel",
+      "grain": "Project-specified orientation",
+      "formulaNote": "The blank adds engagement into four grooves and deducts one total clearance from each overall dimension."
+    }
+  ],
+  "assumptions": [
+    "Opposing side grooves have equal engagement and opposing top and bottom grooves have equal engagement.",
+    "Fit clearance is a total deduction from each completed panel dimension, not a deduction at every edge.",
+    "All modeled backs share the same opening, groove setup, material lot, grain, finish, and assembly sequence.",
+    "This is a reviewable planning model, not a universal cabinetmaking standard; the shop drawing, approved sample, field dimensions, and contract documents remain authoritative.",
+    "Manufacturer hardware dimensions, load ratings, fastener schedules, edge distances, and drilling requirements govern whenever hardware is involved."
+  ],
+  "checks": [
+    "Confirm groove-bottom dimensions minus the stated total clearance reproduce the calculated panel dimensions.",
+    "Verify actual back thickness fits the production groove without forcing, rattle, damage, or blocked movement.",
+    "Check the panel can enter every groove in the planned assembly sequence and still permit the carcass to square.",
+    "Measure the actual sheet, board, or panel thickness from the material lot and reconcile it with every mating groove, dado, fastener, and hardware allowance.",
+    "Build or dry-fit the first assembly, record the verified result, and release the remaining batch only under the same model revision."
+  ],
+  "stopConditions": [
+    "Stop when the groove setup, corner geometry, panel movement, glue strategy, or assembly order has not been tested.",
+    "Stop when the back is expected to brace, carry, or transfer load without an approved material and joint design.",
+    "Stop when the exact hardware product, current manufacturer data, or required attachment method is unresolved; do not substitute a generic allowance.",
+    "Stop when field dimensions, actual material thickness, grain requirement, or model revision cannot be verified before batch cutting."
+  ],
+  "sources": [
+    {
+      "name": "ANSI/AWI 1235-2024 – Specialty Casework",
+      "url": "https://awinet.org/standards/specialty-casework/requirements-specialty-casework/3-2-material-6/",
+      "scope": "Primary industry standard used here for casework material, component, and hardware-planning context. Its published scope is specialty casework; it does not set universal residential cabinet dimensions or replace project documents."
+    },
+    {
+      "name": "USDA Forest Products Laboratory – Wood Handbook, Chapter 11",
+      "url": "https://www.fpl.fs.usda.gov/documnts/fplgtr/fplgtr282/chapter_11_fpl_gtr282.pdf",
+      "scope": "Primary government reference for wood-based composite material characteristics. It supports material-behavior checks, not project-specific span, load, machining, or fastening approval."
+    }
+  ]
+}

@@ -350,6 +350,7 @@ A candidate must score at least 80 and cannot score zero in any dimension.
 
 - 5–10 high-detail Learn, Compare, or Troubleshooting pages.
 - 10–20 structured Templates, Examples, Checklists, or Worksheets with genuinely different inputs.
+- 5–12 Component models with independent formulas, static default output, test-piece gates, and a merged browser-local project export.
 - One Research dataset and report, or one tightly connected two-report batch.
 - No open-ended blog batch until its routes, intents, and durable destinations are defined.
 
@@ -410,4 +411,3 @@ No priority or batch is complete until:
 - `npm run check`, relevant audits, SEO audit, and `git diff --check` pass.
 - Representative 390px and desktop browser checks show no page-level overflow or console errors.
 - Measurement, caveats, and the next review date are recorded.
-

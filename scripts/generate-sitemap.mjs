@@ -156,6 +156,10 @@ function sitemapMeta(route) {
     return { changefreq: "weekly", priority: "0.96" };
   }
 
+  if (route === "/tools/components/") {
+    return { changefreq: "weekly", priority: "0.94" };
+  }
+
   if (route === "/learn/") {
     return { changefreq: "weekly", priority: "0.93" };
   }
@@ -224,6 +228,10 @@ function sitemapMeta(route) {
     return { changefreq: "weekly", priority: "0.88" };
   }
 
+  if (route.startsWith("/tools/components/")) {
+    return { changefreq: "monthly", priority: "0.84" };
+  }
+
   if (route.startsWith("/learn/")) {
     return { changefreq: "monthly", priority: "0.82" };
   }
@@ -283,6 +291,7 @@ function sortRoutes(routes) {
   const preferredOrder = [
     "/",
     "/tools/",
+    "/tools/components/",
     "/learn/",
     "/troubleshooting/",
     "/checklists/",

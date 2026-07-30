@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "stretcher-nailer-cut-list-calculator",
+  "route": "/tools/components/stretcher-nailer-cut-list-calculator/",
+  "categorySlug": "cabinet-structure",
+  "name": "Stretchers and Nailers",
+  "title": "Stretcher and Nailer Cut List Calculator",
+  "description": "Plan cabinet stretchers and nailers from inside width, end clearance, member widths, and explicit part counts without hiding attachment decisions.",
+  "searchIntent": "cabinet stretcher nailer cut list calculator",
+  "modelVersion": "1.0.0",
+  "reviewedDate": "2026-07-30",
+  "defaultInputs": {
+    "cabinetWidth": 30,
+    "sideThickness": 0.75,
+    "endClearance": 0,
+    "stretcherWidth": 3,
+    "nailerWidth": 4,
+    "materialThickness": 0.75,
+    "stretcherCount": 2,
+    "nailerCount": 1
+  },
+  "inputs": [
+    {
+      "id": "cabinetWidth",
+      "label": "Cabinet outside width",
+      "default": 30,
+      "min": 6,
+      "max": 144,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Outside cabinet width across both side panels."
+    },
+    {
+      "id": "sideThickness",
+      "label": "Side panel thickness",
+      "default": 0.75,
+      "min": 0.25,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Measured thickness of each cabinet side."
+    },
+    {
+      "id": "endClearance",
+      "label": "Clearance at each end",
+      "default": 0,
+      "min": 0,
+      "max": 1,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Deliberate fit clearance between the member and each side; do not use it to conceal a dimension error."
+    },
+    {
+      "id": "stretcherWidth",
+      "label": "Stretcher face width",
+      "default": 3,
+      "min": 1,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Finished face width of each stretcher."
+    },
+    {
+      "id": "nailerWidth",
+      "label": "Nailer face width",
+      "default": 4,
+      "min": 1,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Finished face width of each nailer."
+    },
+    {
+      "id": "materialThickness",
+      "label": "Member thickness",
+      "default": 0.75,
+      "min": 0.25,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Measured finished thickness shared by the listed members."
+    },
+    {
+      "id": "stretcherCount",
+      "label": "Stretcher count",
+      "default": 2,
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "unit": "count",
+      "help": "Count from the approved cabinet construction detail."
+    },
+    {
+      "id": "nailerCount",
+      "label": "Nailer count",
+      "default": 1,
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "unit": "count",
+      "help": "Count from the approved cabinet and installation details."
+    }
+  ],
+  "formulas": [
+    {
+      "part": "Stretcher",
+      "quantity": "stretcherCount",
+      "length": "cabinetWidth - 2 * sideThickness - 2 * endClearance",
+      "width": "stretcherWidth",
+      "thickness": "materialThickness",
+      "formulaNote": "Length is the cabinet inside width minus deliberate end clearances; joint tongues or tenons are excluded."
+    },
+    {
+      "part": "Nailer",
+      "quantity": "nailerCount",
+      "length": "cabinetWidth - 2 * sideThickness - 2 * endClearance",
+      "width": "nailerWidth",
+      "thickness": "materialThickness",
+      "formulaNote": "The model sizes the blank only. Attachment capacity, fastener layout, and wall connection are separate approvals."
+    }
+  ],
+  "defaultParts": [
+    {
+      "name": "Stretcher",
+      "quantity": 2,
+      "length": 28.5,
+      "width": 3,
+      "thickness": 0.75,
+      "materialGroup": "Cabinet structural panel or stock",
+      "grain": "Lengthwise",
+      "formulaNote": "Length is the cabinet inside width minus deliberate end clearances; joint tongues or tenons are excluded."
+    },
+    {
+      "name": "Nailer",
+      "quantity": 1,
+      "length": 28.5,
+      "width": 4,
+      "thickness": 0.75,
+      "materialGroup": "Approved nailer stock",
+      "grain": "Lengthwise",
+      "formulaNote": "The model sizes the blank only. Attachment capacity, fastener layout, and wall connection are separate approvals."
+    }
+  ],
+  "assumptions": [
+    "Both cabinet sides use the same measured thickness and the listed members fit between them.",
+    "Stretcher and nailer blanks use the same thickness; different materials require separate model records.",
+    "Member width and quantity come from the approved construction and installation design, not from this calculator.",
+    "This is a reviewable planning model, not a universal cabinetmaking standard; the shop drawing, approved sample, field dimensions, and contract documents remain authoritative.",
+    "Manufacturer hardware dimensions, load ratings, fastener schedules, edge distances, and drilling requirements govern whenever hardware is involved."
+  ],
+  "checks": [
+    "Confirm member length plus both side thicknesses and clearances reproduces the cabinet outside width.",
+    "Check every member location against drawer-slide, appliance, plumbing, sink, top-fastening, and access envelopes.",
+    "Verify the selected joint and fastener pattern have the required edge distance and installation access.",
+    "Measure the actual sheet, board, or panel thickness from the material lot and reconcile it with every mating groove, dado, fastener, and hardware allowance.",
+    "Build or dry-fit the first assembly, record the verified result, and release the remaining batch only under the same model revision."
+  ],
+  "stopConditions": [
+    "Stop when the stretcher or nailer is expected to carry load without an approved material, joint, and load path.",
+    "Stop when the wall substrate, fastener, attachment spacing, or installation responsibility is unresolved.",
+    "Stop when the exact hardware product, current manufacturer data, or required attachment method is unresolved; do not substitute a generic allowance.",
+    "Stop when field dimensions, actual material thickness, grain requirement, or model revision cannot be verified before batch cutting."
+  ],
+  "sources": [
+    {
+      "name": "ANSI/AWI 1235-2024 – Specialty Casework",
+      "url": "https://awinet.org/standards/specialty-casework/requirements-specialty-casework/3-2-material-6/",
+      "scope": "Primary industry standard used here for casework material, component, and hardware-planning context. Its published scope is specialty casework; it does not set universal residential cabinet dimensions or replace project documents."
+    },
+    {
+      "name": "ANSI/AWI 0620-2025 – Finish Carpentry/Installation",
+      "url": "https://awinet.org/standards/finish-carpentry-installation/requirements/structural-7/",
+      "scope": "Primary industry standard used here only for installation, attachment, and structural-coordination context. It does not certify a wall, fastener, rail, or cabinet assembly for a specific load."
+    }
+  ]
+}

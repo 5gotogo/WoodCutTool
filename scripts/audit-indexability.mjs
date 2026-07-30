@@ -6,6 +6,7 @@ import { learnHandoffExpansion20260724 } from "./learn-handoff-batch-2026-07-24.
 import { learnClusterProfiles } from "./learn-cluster-profiles.mjs";
 import { checklistEntries } from "./checklist-data.mjs";
 import { worksheetEntries } from "./worksheet-data.mjs";
+import { componentCategories, componentModels } from "./cut-list-component-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
@@ -157,7 +158,9 @@ const groups = {
   learnPillar: [],
   learnTopicHub: [],
   checklists: [],
-  worksheets: []
+  worksheets: [],
+  componentCategories: [],
+  componentModels: []
 };
 const gatedLearnExpansions = [
   ...learnPillarExpansion20260721,
@@ -167,6 +170,8 @@ const learnPillarFiles = new Set(gatedLearnExpansions.map((article) => `learn/${
 const noindexCounts = {
   blog: pages.filter((page) => page.noindex && /^blog\/[^/]+\/index\.html$/.test(page.file)).length
 };
+const componentCategoryFiles = new Set(componentCategories.map((category) => `tools/components/${category.slug}/index.html`));
+const componentModelFiles = new Set(componentModels.map((model) => `tools/components/${model.slug}/index.html`));
 
 const relatedWoodRoutesByPage = new Map();
 const relatedWoodInboundSources = new Map();
@@ -253,7 +258,7 @@ for (const page of pages) {
     groups.learnTopicHub.push({ ...page, inbound });
     if (inbound < 5) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 5.`);
     if (page.words < 650) issues.push(`${page.file} has only ${page.words} visible words; expected at least 650.`);
-    if (!page.html.includes('"@type": "CollectionPage"')) issues.push(`${page.file} is missing CollectionPage structured data.`);
+    if (!/"@type"\s*:\s*"CollectionPage"/.test(page.html)) issues.push(`${page.file} is missing CollectionPage structured data.`);
     if (!page.html.includes('"@type": "FAQPage"')) issues.push(`${page.file} is missing FAQPage structured data.`);
   }
 
@@ -269,6 +274,23 @@ for (const page of pages) {
     if (inbound < 4) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 4.`);
     if (page.words < 1400) issues.push(`${page.file} has only ${page.words} visible words; expected at least 1400.`);
     if (!page.html.includes("worksheet.csv")) issues.push(`${page.file} is missing its downloadable worksheet CSV.`);
+  }
+
+  if (componentCategoryFiles.has(page.file)) {
+    groups.componentCategories.push({ ...page, inbound });
+    if (inbound < 1) issues.push(`${page.file} has no internal-link source page.`);
+    if (page.words < 650) issues.push(`${page.file} has only ${page.words} visible words; expected at least 650.`);
+    if (!/"@type"\s*:\s*"CollectionPage"/.test(page.html)) issues.push(`${page.file} is missing CollectionPage structured data.`);
+  }
+
+  if (componentModelFiles.has(page.file)) {
+    groups.componentModels.push({ ...page, inbound });
+    if (inbound < 4) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 4.`);
+    if (page.words < 1100) issues.push(`${page.file} has only ${page.words} visible words; expected at least 1100.`);
+    if (!/"@type"\s*:\s*"WebApplication"/.test(page.html)) issues.push(`${page.file} is missing WebApplication structured data.`);
+    if (!page.html.includes('data-component-config')) issues.push(`${page.file} is missing its static component model configuration.`);
+    if (!page.html.includes("example-cut-list.csv")) issues.push(`${page.file} is missing its example cut-list CSV.`);
+    if (!page.html.includes("model.json")) issues.push(`${page.file} is missing its downloadable model JSON.`);
   }
 }
 
@@ -290,6 +312,28 @@ if (groups.checklists.length !== checklistEntries.length) {
 
 if (groups.worksheets.length !== worksheetEntries.length) {
   issues.push(`Expected ${worksheetEntries.length} worksheet pages, found ${groups.worksheets.length}.`);
+}
+
+if (groups.componentCategories.length !== componentCategories.length) {
+  issues.push(`Expected ${componentCategories.length} component category hubs, found ${groups.componentCategories.length}.`);
+}
+
+if (groups.componentModels.length !== componentModels.length) {
+  issues.push(`Expected ${componentModels.length} component model pages, found ${groups.componentModels.length}.`);
+}
+
+const componentHub = pagesByRoute.get("/tools/components/");
+if (!componentHub || componentHub.noindex) {
+  issues.push("The Cut List Component Library hub is missing or noindex.");
+} else {
+  if (!sitemapRoutes.has("/tools/components/")) issues.push("The Cut List Component Library hub is absent from the sitemap.");
+  if (!/"@type"\s*:\s*"CollectionPage"/.test(componentHub.html)) issues.push("The Cut List Component Library hub is missing CollectionPage structured data.");
+  if (!componentHub.html.includes("data-component-project")) issues.push("The Cut List Component Library hub is missing its browser-local project tray.");
+  for (const model of componentModels) {
+    if (!componentHub.html.includes(`/tools/components/${model.slug}/`)) {
+      issues.push(`The Cut List Component Library hub does not link model ${model.slug}.`);
+    }
+  }
 }
 
 if (issues.length) {

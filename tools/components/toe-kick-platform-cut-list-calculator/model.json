@@ -1,0 +1,183 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "toe-kick-platform-cut-list-calculator",
+  "route": "/tools/components/toe-kick-platform-cut-list-calculator/",
+  "categorySlug": "cabinet-structure",
+  "name": "Toe-Kick Platform",
+  "title": "Toe-Kick Platform Cut List Calculator",
+  "description": "Plan toe-kick platform rails and sleepers from the cabinet footprint, setbacks, platform height, and an explicit support-spacing input.",
+  "searchIntent": "toe kick platform cut list calculator",
+  "modelVersion": "1.0.0",
+  "reviewedDate": "2026-07-30",
+  "defaultInputs": {
+    "cabinetWidth": 30,
+    "cabinetDepth": 24,
+    "platformHeight": 4,
+    "frontSetback": 3,
+    "sideSetback": 0.75,
+    "materialThickness": 0.75,
+    "supportSpacing": 24
+  },
+  "inputs": [
+    {
+      "id": "cabinetWidth",
+      "label": "Cabinet outside width",
+      "default": 30,
+      "min": 6,
+      "max": 144,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Outside width of the cabinet or platform module."
+    },
+    {
+      "id": "cabinetDepth",
+      "label": "Cabinet outside depth",
+      "default": 24,
+      "min": 6,
+      "max": 60,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Outside cabinet depth before the front recess is deducted."
+    },
+    {
+      "id": "platformHeight",
+      "label": "Platform height",
+      "default": 4,
+      "min": 1,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Finished vertical height of the platform members."
+    },
+    {
+      "id": "frontSetback",
+      "label": "Front toe-kick setback",
+      "default": 3,
+      "min": 0,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Horizontal recess from cabinet front to the platform front edge."
+    },
+    {
+      "id": "sideSetback",
+      "label": "Setback at each side",
+      "default": 0.75,
+      "min": 0,
+      "max": 12,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Equal planning inset from each cabinet side; set zero for flush module ends."
+    },
+    {
+      "id": "materialThickness",
+      "label": "Platform stock thickness",
+      "default": 0.75,
+      "min": 0.25,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Measured thickness of the platform rails and sleepers."
+    },
+    {
+      "id": "supportSpacing",
+      "label": "Planning support spacing",
+      "default": 24,
+      "min": 6,
+      "max": 48,
+      "step": 1,
+      "unit": "in",
+      "help": "User-controlled maximum planning interval used only to estimate intermediate sleeper count."
+    }
+  ],
+  "formulas": [
+    {
+      "part": "Front and rear platform rail",
+      "quantity": "2",
+      "length": "cabinetWidth - 2 * sideSetback",
+      "width": "platformHeight",
+      "thickness": "materialThickness",
+      "formulaNote": "Long rails span the inset platform width."
+    },
+    {
+      "part": "End sleeper",
+      "quantity": "2",
+      "length": "cabinetDepth - frontSetback - 2 * materialThickness",
+      "width": "platformHeight",
+      "thickness": "materialThickness",
+      "formulaNote": "Sleepers fit between front and rear rails after the front toe-kick recess; rear recesses require a separate input revision."
+    },
+    {
+      "part": "Intermediate sleeper",
+      "quantity": "max(0, ceil((cabinetWidth - 2 * sideSetback) / supportSpacing) - 1)",
+      "length": "cabinetDepth - frontSetback - 2 * materialThickness",
+      "width": "platformHeight",
+      "thickness": "materialThickness",
+      "formulaNote": "Count is a planning estimate from entered spacing, not a structural prescription; approved load and attachment information controls."
+    }
+  ],
+  "defaultParts": [
+    {
+      "name": "Front and rear platform rail",
+      "quantity": 2,
+      "length": 28.5,
+      "width": 4,
+      "thickness": 0.75,
+      "materialGroup": "Platform stock",
+      "grain": "Lengthwise",
+      "formulaNote": "Long rails span the inset platform width."
+    },
+    {
+      "name": "End sleeper",
+      "quantity": 2,
+      "length": 19.5,
+      "width": 4,
+      "thickness": 0.75,
+      "materialGroup": "Platform stock",
+      "grain": "Lengthwise",
+      "formulaNote": "Sleepers fit between front and rear rails after the front toe-kick recess; rear recesses require a separate input revision."
+    },
+    {
+      "name": "Intermediate sleeper",
+      "quantity": 1,
+      "length": 19.5,
+      "width": 4,
+      "thickness": 0.75,
+      "materialGroup": "Platform stock",
+      "grain": "Lengthwise",
+      "formulaNote": "Count is a planning estimate from entered spacing, not a structural prescription; approved load and attachment information controls."
+    }
+  ],
+  "assumptions": [
+    "Front and rear rails use the same thickness and the sleepers fit between them.",
+    "The rear platform edge is flush with the modeled cabinet depth; a service chase or rear recess must be modeled separately.",
+    "Support spacing estimates part quantity only and does not establish allowable load, deflection, fastener capacity, or substrate adequacy.",
+    "This is a reviewable planning model, not a universal cabinetmaking standard; the shop drawing, approved sample, field dimensions, and contract documents remain authoritative.",
+    "Manufacturer hardware dimensions, load ratings, fastener schedules, edge distances, and drilling requirements govern whenever hardware is involved."
+  ],
+  "checks": [
+    "Confirm platform width plus both side setbacks reproduces the intended cabinet width.",
+    "Check the floor survey and leveling plan before treating every vertical member as the same height.",
+    "Verify sleepers, seams, cabinet sides, fastening points, and concentrated loads share an approved load path.",
+    "Measure the actual sheet, board, or panel thickness from the material lot and reconcile it with every mating groove, dado, fastener, and hardware allowance.",
+    "Build or dry-fit the first assembly, record the verified result, and release the remaining batch only under the same model revision."
+  ],
+  "stopConditions": [
+    "Stop when the floor condition or leveling method would change platform member heights.",
+    "Stop when load, span, anchorage, or substrate information has not been approved for the project.",
+    "Stop when the exact hardware product, current manufacturer data, or required attachment method is unresolved; do not substitute a generic allowance.",
+    "Stop when field dimensions, actual material thickness, grain requirement, or model revision cannot be verified before batch cutting."
+  ],
+  "sources": [
+    {
+      "name": "ANSI/AWI 1235-2024 – Specialty Casework",
+      "url": "https://awinet.org/standards/specialty-casework/requirements-specialty-casework/3-2-material-6/",
+      "scope": "Primary industry standard used here for casework material, component, and hardware-planning context. Its published scope is specialty casework; it does not set universal residential cabinet dimensions or replace project documents."
+    },
+    {
+      "name": "ANSI/AWI 0620-2025 – Finish Carpentry/Installation",
+      "url": "https://awinet.org/standards/finish-carpentry-installation/requirements/structural-7/",
+      "scope": "Primary industry standard used here only for installation, attachment, and structural-coordination context. It does not certify a wall, fastener, rail, or cabinet assembly for a specific load."
+    }
+  ]
+}

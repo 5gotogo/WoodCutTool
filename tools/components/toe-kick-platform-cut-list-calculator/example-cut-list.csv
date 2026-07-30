@@ -1,0 +1,4 @@
+"component_slug","component_name","model_version","reviewed_date","part_name","quantity","length_in","width_in","thickness_in","material_group","grain","formula_note"
+"toe-kick-platform-cut-list-calculator","Toe-Kick Platform","1.0.0","2026-07-30","Front and rear platform rail","2","28.5","4","0.75","Platform stock","Lengthwise","Long rails span the inset platform width."
+"toe-kick-platform-cut-list-calculator","Toe-Kick Platform","1.0.0","2026-07-30","End sleeper","2","19.5","4","0.75","Platform stock","Lengthwise","Sleepers fit between front and rear rails after the front toe-kick recess; rear recesses require a separate input revision."
+"toe-kick-platform-cut-list-calculator","Toe-Kick Platform","1.0.0","2026-07-30","Intermediate sleeper","1","19.5","4","0.75","Platform stock","Lengthwise","Count is a planning estimate from entered spacing, not a structural prescription; approved load and attachment information controls."

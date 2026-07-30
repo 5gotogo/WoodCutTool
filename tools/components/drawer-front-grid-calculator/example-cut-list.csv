@@ -1,0 +1,2 @@
+"component_slug","component_name","model_version","reviewed_date","part_name","quantity","length_in","width_in","thickness_in","material_group","grain","formula_note"
+"drawer-front-grid-calculator","Drawer Front Grid","1.0.0","2026-07-30","Equal drawer front","6","7.833333333333333","14.8125","0.75","Finished drawer-front panel","Project-specified matched sequence","Available width and height are divided equally after perimeter reveals and internal gaps; unequal fronts require a separate elevation-driven model."

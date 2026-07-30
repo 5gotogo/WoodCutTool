@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "filler-scribe-panel-calculator",
+  "route": "/tools/components/filler-scribe-panel-calculator/",
+  "categorySlug": "fronts-panels-installation",
+  "name": "Filler and Scribe Panel",
+  "title": "Filler and Scribe Panel Calculator",
+  "description": "Plan an intentionally oversized cabinet filler or scribe blank from the installed opening, nominal gap, scribe allowance, end clearances, and panel thickness.",
+  "searchIntent": "cabinet filler scribe panel calculator",
+  "modelVersion": "1.0.0",
+  "reviewedDate": "2026-07-30",
+  "defaultInputs": {
+    "openingHeight": 34.5,
+    "nominalGap": 2,
+    "scribeAllowance": 0.75,
+    "topClearance": 0.0625,
+    "bottomClearance": 0.0625,
+    "panelThickness": 0.75,
+    "panelCount": 1
+  },
+  "inputs": [
+    {
+      "id": "openingHeight",
+      "label": "Installed opening height",
+      "default": 34.5,
+      "min": 3,
+      "max": 120,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Field-measured height between the finished top and bottom reference surfaces."
+    },
+    {
+      "id": "nominalGap",
+      "label": "Nominal finished gap",
+      "default": 2,
+      "min": 0.125,
+      "max": 24,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Planning width between the cabinet reference edge and the adjacent finished surface before scribe allowance."
+    },
+    {
+      "id": "scribeAllowance",
+      "label": "Removable scribe allowance",
+      "default": 0.75,
+      "min": 0,
+      "max": 6,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Extra blank width intentionally retained for field templating and trimming."
+    },
+    {
+      "id": "topClearance",
+      "label": "Top clearance",
+      "default": 0.0625,
+      "min": 0,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Deliberate finished clearance at the top of the fitted panel."
+    },
+    {
+      "id": "bottomClearance",
+      "label": "Bottom clearance",
+      "default": 0.0625,
+      "min": 0,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Deliberate finished clearance at the bottom of the fitted panel."
+    },
+    {
+      "id": "panelThickness",
+      "label": "Panel thickness",
+      "default": 0.75,
+      "min": 0.125,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Measured finished thickness of the filler or scribe material."
+    },
+    {
+      "id": "panelCount",
+      "label": "Panel quantity",
+      "default": 1,
+      "min": 1,
+      "max": 24,
+      "step": 1,
+      "unit": "count",
+      "help": "Count of blanks that truly share one field condition and finish sequence."
+    }
+  ],
+  "formulas": [
+    {
+      "part": "Filler or scribe blank",
+      "quantity": "panelCount",
+      "length": "openingHeight - topClearance - bottomClearance",
+      "width": "nominalGap + scribeAllowance",
+      "thickness": "panelThickness",
+      "formulaNote": "Width intentionally includes removable field-fit stock; the final scribe line comes from a verified template, not the formula."
+    }
+  ],
+  "defaultParts": [
+    {
+      "name": "Filler or scribe blank",
+      "quantity": 1,
+      "length": 34.375,
+      "width": 2.75,
+      "thickness": 0.75,
+      "materialGroup": "Finished filler panel",
+      "grain": "Vertical",
+      "formulaNote": "Width intentionally includes removable field-fit stock; the final scribe line comes from a verified template, not the formula."
+    }
+  ],
+  "assumptions": [
+    "The nominal gap and scribe allowance describe an oversized rectangular blank, not the final irregular field edge.",
+    "Top and bottom clearances are finished conditions measured between stable installed surfaces.",
+    "All grouped panels share the same field geometry, grain, finish, edge treatment, attachment, and installation sequence.",
+    "This is a reviewable planning model, not a universal cabinetmaking standard; the shop drawing, approved sample, field dimensions, and contract documents remain authoritative.",
+    "Manufacturer hardware dimensions, load ratings, fastener schedules, edge distances, and drilling requirements govern whenever hardware is involved."
+  ],
+  "checks": [
+    "Confirm the blank width is greater than the widest required finished profile while preserving the approved visible reveal.",
+    "Check doors, drawers, pulls, appliances, countertops, base, crown, caulk, and adjacent trim through their full movement and installation sequence.",
+    "Verify the factory edge, finished face, grain direction, part ID, and scribe edge are unmistakably marked before trimming.",
+    "Measure the actual sheet, board, or panel thickness from the material lot and reconcile it with every mating groove, dado, fastener, and hardware allowance.",
+    "Build or dry-fit the first assembly, record the verified result, and release the remaining batch only under the same model revision."
+  ],
+  "stopConditions": [
+    "Stop when the cabinet or adjacent finished surface is not installed, stable, or located from an approved control line.",
+    "Stop when the field variation exceeds the available scribe stock or would violate reveal, edge, finish, or hardware requirements.",
+    "Stop when the exact hardware product, current manufacturer data, or required attachment method is unresolved; do not substitute a generic allowance.",
+    "Stop when field dimensions, actual material thickness, grain requirement, or model revision cannot be verified before batch cutting."
+  ],
+  "sources": [
+    {
+      "name": "ANSI/AWI 1235-2024 – Specialty Casework",
+      "url": "https://awinet.org/standards/specialty-casework/requirements-specialty-casework/3-2-material-6/",
+      "scope": "Primary industry standard used here for casework material, component, and hardware-planning context. Its published scope is specialty casework; it does not set universal residential cabinet dimensions or replace project documents."
+    },
+    {
+      "name": "ANSI/AWI 0620-2025 – Finish Carpentry/Installation",
+      "url": "https://awinet.org/standards/finish-carpentry-installation/requirements/structural-7/",
+      "scope": "Primary industry standard used here only for installation, attachment, and structural-coordination context. It does not certify a wall, fastener, rail, or cabinet assembly for a specific load."
+    }
+  ]
+}

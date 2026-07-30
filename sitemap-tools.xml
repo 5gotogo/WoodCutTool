@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-07-27</lastmod><changefreq>weekly</changefreq><priority>0.96</priority></url>
+  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-07-30</lastmod><changefreq>weekly</changefreq><priority>0.96</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/</loc><lastmod>2026-07-30</lastmod><changefreq>weekly</changefreq><priority>0.94</priority></url>
   <url><loc>https://woodcuttool.com/cutlist/</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>0.98</priority></url>
   <url><loc>https://woodcuttool.com/quiltfit/</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>0.92</priority></url>
   <url><loc>https://woodcuttool.com/tile-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>0.92</priority></url>
@@ -12,8 +13,8 @@
   <url><loc>https://woodcuttool.com/wood-waste-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://woodcuttool.com/kerf-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://woodcuttool.com/baluster-spacing-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/cabinet-cut-list-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/cabinet-door-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/cabinet-cut-list-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/cabinet-door-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/conversion/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/cost-estimator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/crown-molding-angle-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -21,7 +22,7 @@
   <url><loc>https://woodcuttool.com/deck-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/deck-stain-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/deck-stair-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/drawer-box-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/drawer-box-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/drill-bit-finder/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/fence-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/fence-stain-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -45,8 +46,23 @@
   <url><loc>https://woodcuttool.com/shelf-spacing-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/stair-angle-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/stair-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/adjustable-shelf-pack-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/applied-back-panel-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/cabinet-hanging-rail-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/cabinet-structure/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/captured-back-panel-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/divider-partition-cut-list-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/drawer-front-grid-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/face-frame-cut-list-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/filler-scribe-panel-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/finished-end-panel-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/fixed-shelf-cut-list-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/fronts-panels-installation/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/shelves-and-backs/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/stretcher-nailer-cut-list-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
+  <url><loc>https://woodcuttool.com/tools/components/toe-kick-platform-cut-list-calculator/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
   <url><loc>https://woodcuttool.com/tools/construction/</loc><lastmod>2026-07-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/tools/woodworking/</loc><lastmod>2026-07-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/tools/woodworking/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/wood-database/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/wood-weight-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

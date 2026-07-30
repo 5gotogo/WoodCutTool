@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0",
+  "slug": "drawer-front-grid-calculator",
+  "route": "/tools/components/drawer-front-grid-calculator/",
+  "categorySlug": "fronts-panels-installation",
+  "name": "Drawer Front Grid",
+  "title": "Drawer Front Grid Calculator",
+  "description": "Divide a finished opening into an equal drawer-front grid using explicit side reveals, top and bottom reveals, inter-front gaps, rows, columns, and thickness.",
+  "searchIntent": "drawer front size grid calculator",
+  "modelVersion": "1.0.0",
+  "reviewedDate": "2026-07-30",
+  "defaultInputs": {
+    "openingWidth": 30,
+    "openingHeight": 24,
+    "columnCount": 2,
+    "rowCount": 3,
+    "sideReveal": 0.125,
+    "topBottomReveal": 0.125,
+    "gap": 0.125,
+    "frontThickness": 0.75
+  },
+  "inputs": [
+    {
+      "id": "openingWidth",
+      "label": "Finished grid opening width",
+      "default": 30,
+      "min": 3,
+      "max": 144,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Finished width bounded by the approved left and right reveal reference faces."
+    },
+    {
+      "id": "openingHeight",
+      "label": "Finished grid opening height",
+      "default": 24,
+      "min": 3,
+      "max": 120,
+      "step": 0.0625,
+      "unit": "in",
+      "help": "Finished height bounded by the approved top and bottom reveal reference faces."
+    },
+    {
+      "id": "columnCount",
+      "label": "Equal columns",
+      "default": 2,
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "unit": "count",
+      "help": "Number of equal drawer-front columns in the modeled grid."
+    },
+    {
+      "id": "rowCount",
+      "label": "Equal rows",
+      "default": 3,
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "unit": "count",
+      "help": "Number of equal drawer-front rows in the modeled grid."
+    },
+    {
+      "id": "sideReveal",
+      "label": "Left and right reveal",
+      "default": 0.125,
+      "min": 0,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Equal finished reveal at the outside left and right boundaries."
+    },
+    {
+      "id": "topBottomReveal",
+      "label": "Top and bottom reveal",
+      "default": 0.125,
+      "min": 0,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Equal finished reveal at the outside top and bottom boundaries."
+    },
+    {
+      "id": "gap",
+      "label": "Gap between fronts",
+      "default": 0.125,
+      "min": 0,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Uniform finished gap between adjacent rows and columns."
+    },
+    {
+      "id": "frontThickness",
+      "label": "Drawer-front thickness",
+      "default": 0.75,
+      "min": 0.125,
+      "max": 3,
+      "step": 0.03125,
+      "unit": "in",
+      "help": "Measured finished thickness of each front including permanent build-up."
+    }
+  ],
+  "formulas": [
+    {
+      "part": "Equal drawer front",
+      "quantity": "columnCount * rowCount",
+      "length": "(openingHeight - 2 * topBottomReveal - (rowCount - 1) * gap) / rowCount",
+      "width": "(openingWidth - 2 * sideReveal - (columnCount - 1) * gap) / columnCount",
+      "thickness": "frontThickness",
+      "formulaNote": "Available width and height are divided equally after perimeter reveals and internal gaps; unequal fronts require a separate elevation-driven model."
+    }
+  ],
+  "defaultParts": [
+    {
+      "name": "Equal drawer front",
+      "quantity": 6,
+      "length": 7.833333333333333,
+      "width": 14.8125,
+      "thickness": 0.75,
+      "materialGroup": "Finished drawer-front panel",
+      "grain": "Project-specified matched sequence",
+      "formulaNote": "Available width and height are divided equally after perimeter reveals and internal gaps; unequal fronts require a separate elevation-driven model."
+    }
+  ],
+  "assumptions": [
+    "Every row has equal finished height and every column has equal finished width.",
+    "Perimeter reveals are symmetrical on opposing sides and one uniform gap applies between all adjacent fronts.",
+    "The calculated dimensions are finished front sizes; pre-finish, edge-banding, profiling, or grain-match production allowances are controlled separately.",
+    "This is a reviewable planning model, not a universal cabinetmaking standard; the shop drawing, approved sample, field dimensions, and contract documents remain authoritative.",
+    "Manufacturer hardware dimensions, load ratings, fastener schedules, edge distances, and drilling requirements govern whenever hardware is involved."
+  ],
+  "checks": [
+    "Reconstruct the opening width and height from all fronts, gaps, and perimeter reveals to confirm the arithmetic closes.",
+    "Check minimum front size, mounting screw location, bracket engagement, pull boring, and adjustment range against the exact drawer hardware.",
+    "Verify grain, color, pattern, edge, and part IDs remain in the approved visual sequence after machining and finishing.",
+    "Measure the actual sheet, board, or panel thickness from the material lot and reconcile it with every mating groove, dado, fastener, and hardware allowance.",
+    "Build or dry-fit the first assembly, record the verified result, and release the remaining batch only under the same model revision."
+  ],
+  "stopConditions": [
+    "Stop when the elevation includes unequal rows, unequal columns, paired doors, false fronts, or another layout the equal-grid formula cannot represent.",
+    "Stop when the exact slide, front-fixing bracket, pull, or adjustment data affecting the front has not been approved.",
+    "Stop when the exact hardware product, current manufacturer data, or required attachment method is unresolved; do not substitute a generic allowance.",
+    "Stop when field dimensions, actual material thickness, grain requirement, or model revision cannot be verified before batch cutting."
+  ],
+  "sources": [
+    {
+      "name": "ANSI/AWI 1235-2024 – Specialty Casework",
+      "url": "https://awinet.org/standards/specialty-casework/requirements-specialty-casework/3-2-material-6/",
+      "scope": "Primary industry standard used here for casework material, component, and hardware-planning context. Its published scope is specialty casework; it does not set universal residential cabinet dimensions or replace project documents."
+    },
+    {
+      "name": "Blum Product Configurator",
+      "url": "https://www.blum.com/us/en/services/e-services/onlineproductconfigurator/",
+      "scope": "Primary manufacturer resource for current Blum product selection and application data. It governs only the exact Blum product and revision selected; it is not a generic hardware standard."
+    }
+  ]
+}

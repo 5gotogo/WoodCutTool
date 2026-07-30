@@ -1,0 +1,2 @@
+"component_slug","component_name","model_version","reviewed_date","part_name","quantity","length_in","width_in","thickness_in","material_group","grain","formula_note"
+"cabinet-hanging-rail-calculator","Cabinet Hanging Rail","1.0.0","2026-07-30","Hanging rail segment","2","29.5","4","0.75","Approved hanging-rail or cleat stock","Lengthwise","The formula divides clear row length into equal straight blanks. It does not establish bevel, proprietary profile, hole pattern, fastener count, or load capacity."
