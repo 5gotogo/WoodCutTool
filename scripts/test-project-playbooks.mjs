@@ -122,6 +122,15 @@ for (const { entry, html } of generated) {
   assert(!/\b(?:a|an|and|or|the|with|for|to|of)\.$/i.test(description), `${entry.slug} meta description ends in a clipped fragment: ${description}`);
   descriptions.push(description);
   assert(html.includes('<link rel="stylesheet" href="/assets/project-playbooks.css">'), `${entry.slug} is missing the scoped Projects stylesheet.`);
+  assert(html.includes("<style>.mega-menu{display:none}</style>"), `${entry.slug} is missing the canonical mega-menu fallback.`);
+  const scriptOrder = [
+    '/assets/project-playbooks.js',
+    '/assets/site-chrome.js',
+    '/assets/app.js',
+    '/assets/conversion.js',
+  ].map((source) => html.indexOf(`src="${source}"`));
+  assert(scriptOrder.every((position) => position >= 0), `${entry.slug} is missing a canonical runtime script.`);
+  assert(scriptOrder.every((position, index) => index === 0 || scriptOrder[index - 1] < position), `${entry.slug} runtime scripts are not in canonical post-process order.`);
   assert(html.includes('src="/assets/conversion.js"'), `${entry.slug} is missing the conversion runtime.`);
   assert(html.includes('data-conversion-source="project-detail"'), `${entry.slug} is missing its natural CutList handoff.`);
   assert(!/assets\/images\/templates\/[^"']+\.png/i.test(html), `${entry.slug} still loads a heavyweight template PNG.`);

@@ -74,12 +74,13 @@ function pageShell({ title, description, route, type = "article", schemas, body 
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
   <link rel="stylesheet" href="/assets/styles.css">
   <link rel="stylesheet" href="/assets/project-playbooks.css">
-  <script defer src="/assets/site-chrome.js"></script>
   <script defer src="/assets/project-playbooks.js"></script>
+  <script defer src="/assets/site-chrome.js"></script>
   <script defer src="/assets/app.js"></script>
   <script defer src="/assets/conversion.js"></script>
   <noscript><style>.project-decision-result[hidden],.project-decision-outcome[hidden]{display:block!important}</style></noscript>
   ${schemas.map(jsonLd).join("\n  ")}
+  <style>.mega-menu{display:none}</style>
 </head>
 <body>
   <a class="project-skip-link" href="#main">Skip to content</a>
