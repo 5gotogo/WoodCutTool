@@ -122,7 +122,8 @@
   }
 
   function navMenuItem({ href, label, menu, aliases = [] }) {
-    return `<div class="nav-menu-item"><a class="nav-trigger${activeClass(href, aliases)}" href="${href}">${label}</a><button class="nav-menu-toggle" type="button" aria-label="Open ${label} menu" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Open ${label} menu</span></button>${menu}</div>`;
+    const isCurrent = isActive(href, aliases);
+    return `<div class="nav-menu-item${isCurrent ? " active" : ""}"><div class="nav-menu-control"><a class="nav-trigger${isCurrent ? " active" : ""}" href="${href}">${label}</a><button class="nav-menu-toggle" type="button" aria-label="Open ${label} menu" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Open ${label} menu</span></button></div>${menu}</div>`;
   }
 
   function resourceNavMenu({ href, label, aliases = [], featureTitle, featureDescription, featureCta, visual, columns }) {

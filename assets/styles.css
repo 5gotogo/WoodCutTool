@@ -151,6 +151,12 @@ canvas {
   align-items: center;
 }
 
+.nav-menu-control {
+  display: flex;
+  align-items: center;
+  border-radius: 7px;
+}
+
 .nav-trigger,
 .nav-links > a {
   flex: 0 0 auto;
@@ -164,7 +170,7 @@ canvas {
   font-weight: 650;
 }
 
-.nav-menu-item > .nav-trigger {
+.nav-menu-control > .nav-trigger {
   padding-right: 4px;
   border-radius: 7px 0 0 7px;
 }
@@ -191,17 +197,24 @@ canvas {
   transform: translateY(-2px) rotate(45deg);
 }
 
-.nav-trigger:hover,
-.nav-trigger.active,
-.nav-trigger.active + .nav-menu-toggle,
-.nav-links > a:hover,
-.nav-links > a.active,
-.nav-menu-item:hover > .nav-trigger,
-.nav-menu-item:focus-within > .nav-trigger,
-.nav-menu-item:hover > .nav-menu-toggle,
-.nav-menu-item:focus-within > .nav-menu-toggle {
-  color: var(--ink);
+.nav-menu-item:hover > .nav-menu-control,
+.nav-menu-item:focus-within > .nav-menu-control,
+.nav-menu-item.active > .nav-menu-control,
+.nav-menu-item.is-open > .nav-menu-control {
   background: rgba(47, 111, 78, 0.1);
+}
+
+.nav-menu-item:hover .nav-trigger,
+.nav-menu-item:focus-within .nav-trigger,
+.nav-menu-item.active .nav-trigger,
+.nav-menu-item.is-open .nav-trigger,
+.nav-menu-item:hover .nav-menu-toggle,
+.nav-menu-item:focus-within .nav-menu-toggle,
+.nav-menu-item.active .nav-menu-toggle,
+.nav-menu-item.is-open .nav-menu-toggle,
+.nav-links > a:hover,
+.nav-links > a.active {
+  color: var(--ink);
   text-decoration: none;
 }
 
