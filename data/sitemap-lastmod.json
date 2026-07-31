@@ -1,7 +1,7 @@
 {
   "/": {
-    "lastmod": "2026-07-30",
-    "hash": "f2f80c91dd2f2e227720c75b5e173738b45919f378e3367845cfdb2a2a4bfffa"
+    "lastmod": "2026-07-31",
+    "hash": "407ecdcf866301e024bbf2924bc3bfd685013574dc09507e6d8587336eb972ca"
   },
   "/tools/": {
     "lastmod": "2026-07-30",
@@ -10,6 +10,10 @@
   "/tools/components/": {
     "lastmod": "2026-07-30",
     "hash": "f1740c12d0c824ce1a075390012d4ccf07d3f6c41d59988670cc3af437cf5210"
+  },
+  "/projects/": {
+    "lastmod": "2026-07-31",
+    "hash": "d687872180db931c87625266840c00b097799f8cf9ef4566c637fcab0198afd8"
   },
   "/learn/": {
     "lastmod": "2026-07-27",
@@ -7254,6 +7258,78 @@
   "/post-hole-concrete-calculator/": {
     "lastmod": "2026-07-23",
     "hash": "6ca64494027ae48d75d0cd4e644d16ecc5900167a0c2790673a0ddd1ee7dc782"
+  },
+  "/projects/balcony-storage-bench/": {
+    "lastmod": "2026-07-31",
+    "hash": "706d745db371d38d06d8fec26a0e9cfbcca7f3f93b0afb01ff9764446bc6b351"
+  },
+  "/projects/base-cabinet/": {
+    "lastmod": "2026-07-31",
+    "hash": "1f0b3f833b7ce0095e92a8145b7c4940b3485c0f860e25190c1ec4cb5740cedb"
+  },
+  "/projects/bathroom-vanity/": {
+    "lastmod": "2026-07-31",
+    "hash": "f12a16f475a0d3f140521a4c9b281b7a4935e4e28cfcd640c5cfd6d647b2f23e"
+  },
+  "/projects/closet-tower/": {
+    "lastmod": "2026-07-31",
+    "hash": "148e89153fa6b0a328d2cb6bd5245c754700085e441cce56cc9db65e232fd547"
+  },
+  "/projects/coffee-table/": {
+    "lastmod": "2026-07-31",
+    "hash": "082e557157d10497f8c727ee515922a1d80408a3274de6a562638d05b142585f"
+  },
+  "/projects/floating-shelf/": {
+    "lastmod": "2026-07-31",
+    "hash": "e2aa3a6428f5bb284cc01e9e2de12d9c966dbe80a7470bf561ef55b86aa91270"
+  },
+  "/projects/folding-wall-desk/": {
+    "lastmod": "2026-07-31",
+    "hash": "1b7efed721e1473bb3c0b532f7acef81c58c3622e075b3780fd670f79dd7fa3f"
+  },
+  "/projects/miter-saw-stand/": {
+    "lastmod": "2026-07-31",
+    "hash": "b8d9f6eb95b699c36d464ffd78fca77b4eaa7977efd88ec214e5640d0393a50e"
+  },
+  "/projects/mobile-workbench/": {
+    "lastmod": "2026-07-31",
+    "hash": "f8c43942efcbfec53c72c3bd212eee38e8a2aaadb896301e82fb7b04877e112a"
+  },
+  "/projects/narrow-entryway-bench/": {
+    "lastmod": "2026-07-31",
+    "hash": "3e35b761b03638b24a39a24462ba1892df33e3fa7fc4d2390fe9da65441b6eb3"
+  },
+  "/projects/nightstand/": {
+    "lastmod": "2026-07-31",
+    "hash": "49e4ad474956d958903bdd1adb84c2510b6eaf24c87220bf908d06c3cc7c0054"
+  },
+  "/projects/outdoor-storage-box/": {
+    "lastmod": "2026-07-31",
+    "hash": "87099ab1f9953680750b449c9b7399bcd840d7dae772109bc698b6e4f11c302a"
+  },
+  "/projects/planter-box/": {
+    "lastmod": "2026-07-31",
+    "hash": "78f2a75d1ca4e539fbd386a088118d25f9b1c8f39f4a6ac0ff694c08afbbfbc1"
+  },
+  "/projects/plywood-chair/": {
+    "lastmod": "2026-07-31",
+    "hash": "fbe5a17296f461cc427c5d544b7085ef38fc19aad061d066e2dbb4aea08bcfce"
+  },
+  "/projects/raised-garden-bed/": {
+    "lastmod": "2026-07-31",
+    "hash": "81a59a75278e9859b7f47f3b52b3a2dda83adf9a5aed2651b72b43059b1d21f0"
+  },
+  "/projects/sheet-goods-storage-cart/": {
+    "lastmod": "2026-07-31",
+    "hash": "9fdf3f56485b4b23a128b2229166f3afc2a01cf5391c5115eb0b95dba222c0bc"
+  },
+  "/projects/storage-bench/": {
+    "lastmod": "2026-07-31",
+    "hash": "23f1a014e737b33fe2a4578eec604e8796d7480d8a1f785be2a5b9cf4300ccae"
+  },
+  "/projects/wall-cabinet/": {
+    "lastmod": "2026-07-31",
+    "hash": "1c76ab2e23fff800d3a8a74b885f249f1b4410ba1ebbbeb21845e9df79c6cce1"
   },
   "/rafter-length-calculator/": {
     "lastmod": "2026-07-23",

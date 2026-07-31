@@ -1,6 +1,6 @@
 # WoodCutTool SEO content governance
 
-Updated: 2026-07-30
+Updated: 2026-07-31
 
 ## Purpose
 
@@ -21,9 +21,28 @@ Page count is a capacity measure. It is never sufficient evidence that a batch s
 | Component calculator | What reusable assembly parts follow from these measured inputs? | Show the variables and formulas, generate a reviewable part list, and add the result to a browser-local project export |
 | Template | What parts and checks start this project? | Provide a complete project-specific input set |
 | Example | What does a complete input and result look like? | Publish inspectable inputs and downloadable evidence |
+| Project Playbook | How do I carry this project from first measurement to closeout? | Guide six project-specific phases, preserve browser-local progress, expose decision consequences, and route to real evidence and action surfaces |
 | Research or calculator | What does the data or project input produce? | Provide reproducible rows, explicit assumptions, or an actionable result |
 
 Two pages may share a subject only when their primary questions and outcomes differ. A glossary definition must not repeat a Learn guide; a topic hub must not imitate its pillar article; a checklist must not become a tutorial; and a worksheet must not approve the value it records.
+
+## Project Playbook standard
+
+Every indexed Project Playbook under `/projects/<project>/` must:
+
+1. Own one distinct end-to-end execution intent that cannot be satisfied by opening an existing Template, Example, guide, or calculator alone.
+2. Add project-specific sequencing, decisions, progress, and consequences instead of reproducing the source Template parts list or the Example's fixed inputs and modeled result.
+3. Publish six project-specific phases that carry the build from scope and measurement through planning, making, installation or final fit, and closeout; phase names may vary when the project requires a different real workflow.
+4. Present at least three meaningful decision branches and state how each choice changes downstream dimensions, materials, hardware, tasks, verification, risk, or stop gates.
+5. Put a useful start or resume action on the first screen, before long editorial context, and keep the static workflow usable when JavaScript is unavailable.
+6. Store progress only in a versioned `localStorage` schema with no required account or upload. If storage is unavailable, full, blocked, or malformed, preserve the core page, explain the limitation, and fall back to in-session progress plus CSV or print export rather than claiming that work was saved.
+7. Provide a populated project CSV and a printable working view that reflect the playbook's phases, decisions, checks, and next actions instead of offering a generic blank download.
+8. Contain at least 1,250 visible words led by project-specific execution guidance and receive at least four independent contextual inbound-link sources.
+9. Include `Article`, `HowTo`, `FAQPage`, and `BreadcrumbList` structured data that describe the static canonical workflow, not a visitor's saved state.
+10. Define real, project-specific safety and release stop gates before irreversible cutting, machining, structural attachment, hardware commitment, finishing, installation, or use where relevant. Generic caution copy is not a substitute for an observable hold condition and the correct qualified review.
+11. Use one self-canonical URL. Dimensions, choices, completed phases, saved progress, resume tokens, and other parameterized states must not create indexable routes, canonical variants, or share URLs containing private project data.
+12. Link only to verified, existing Template, Example, Component, Worksheet, Checklist, Troubleshooting, Learn, calculator, material, Research, or CutList routes whose role advances the current phase.
+13. Pass generator-data, local-link, structured-data, CSV, print, storage-success, storage-failure, no-JavaScript, and content-distinctiveness checks plus representative 390px and desktop QA. Progress controls, tables, stage navigation, and sticky actions must not overflow, hide content, or cover focused inputs.
 
 ## Cut List Component standard
 
@@ -68,7 +87,7 @@ Before generation:
 - Reject exact intent collisions and define why close subjects need separate page roles.
 - Verify all local routes from generator data.
 - State the minimum page count, content depth, inbound-link count, and downloadable-evidence requirement for the surface.
-- For Component models, reject dimension, unit, product-brand, and saved-state variants as separate URLs.
+- For Component models and Project Playbooks, reject dimension, unit, product-brand, decision, progress, and saved-state variants as separate URLs.
 
 During generation:
 

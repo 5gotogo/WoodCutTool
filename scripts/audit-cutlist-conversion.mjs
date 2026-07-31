@@ -19,6 +19,7 @@ function htmlFiles(dir = root, prefix = "") {
 const allHtml = htmlFiles();
 const appPage = readFileSync(join(root, "apps/cutlist/index.html"), "utf8");
 const styles = readFileSync(join(root, "assets/styles.css"), "utf8");
+const conversionRuntime = readFileSync(join(root, "assets/conversion.js"), "utf8");
 const representativePages = {
   template: readFileSync(join(root, "templates/bathroom-vanity-cut-list/index.html"), "utf8"),
   example: readFileSync(join(root, "examples/bathroom-vanity-cut-list/index.html"), "utf8"),
@@ -26,6 +27,7 @@ const representativePages = {
   unrelatedLearn: readFileSync(join(root, "learn/tile-calculator-inputs-explained/index.html"), "utf8"),
   componentHub: readFileSync(join(root, "tools/components/index.html"), "utf8"),
   componentModel: readFileSync(join(root, "tools/components/face-frame-cut-list-calculator/index.html"), "utf8"),
+  project: readFileSync(join(root, "projects/base-cabinet/index.html"), "utf8"),
 };
 const screenshots = [
   "cutlist-layout.webp",
@@ -75,6 +77,13 @@ if (!representativePages.componentModel.includes("data-component-form") ||
 }
 if (!representativePages.componentModel.includes("/apps/cutlist/")) {
   errors.push("Representative component calculator is missing its CutList handoff");
+}
+if (!representativePages.project.includes('data-conversion-source="project-detail"') ||
+    !representativePages.project.includes('src="/assets/conversion.js"')) {
+  errors.push("Representative Project Playbook is missing its CutList handoff or conversion runtime");
+}
+if (!conversionRuntime.includes('path.startsWith("/projects/")')) {
+  errors.push("Conversion runtime is missing the project route source");
 }
 
 let bannerCount = 0;

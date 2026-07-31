@@ -96,6 +96,9 @@
     if (type === "templates") {
       return `<span class="mega-visual mega-visual-templates" aria-hidden="true"><svg viewBox="0 0 320 190" focusable="false"><path class="mega-svg-grid" d="M28 34H292M28 70H292M28 106H292M28 142H292M64 18V172M108 18V172M152 18V172M196 18V172M240 18V172"/><rect class="mega-svg-paper" x="62" y="26" width="196" height="138" rx="9"/><path class="mega-svg-wood" d="M83 47h68v96H83zM169 47h68v42h-68zM169 101h68v42h-68z"/><path class="mega-svg-line" d="M117 47v96M169 72h68M169 122h68"/><circle class="mega-svg-accent" cx="143" cy="95" r="4"/><circle class="mega-svg-accent" cx="181" cy="72" r="3"/><circle class="mega-svg-accent" cx="181" cy="122" r="3"/><path class="mega-svg-measure" d="M76 153h168M76 148v10M244 148v10"/></svg></span>`;
     }
+    if (type === "projects") {
+      return `<span class="mega-visual mega-visual-projects" aria-hidden="true"><svg viewBox="0 0 320 190" focusable="false"><path class="mega-svg-shadow" d="M39 158c58-15 186-15 243 0-48 23-198 23-243 0z"/><rect class="mega-svg-paper" x="39" y="24" width="242" height="136" rx="12"/><path class="mega-svg-grid" d="M56 48H264M56 75H264M56 102H264M56 129H264M91 38V146M145 38V146M199 38V146M253 38V146"/><path class="mega-svg-wood" d="M59 53h62v70H59zM68 62h20v52H68zM95 62h17v23H95zM95 92h17v22H95z"/><path class="mega-svg-heading" d="M145 55h91M145 68h64"/><path class="mega-svg-line" d="M145 92h98M145 117h98"/><circle class="mega-svg-accent" cx="153" cy="92" r="7"/><circle class="mega-svg-accent-fill" cx="197" cy="92" r="7"/><circle class="mega-svg-accent-fill" cx="241" cy="92" r="7"/><path class="mega-svg-line-light" d="M160 92h30M204 92h30"/><path class="mega-svg-line" d="M193 92l3 3 6-7M237 92l3 3 6-7"/><rect class="mega-svg-accent-fill" x="145" y="126" width="98" height="13" rx="6.5"/></svg></span>`;
+    }
     if (type === "learn") {
       return `<span class="mega-visual mega-visual-learn" aria-hidden="true"><svg viewBox="0 0 320 190" focusable="false"><path class="mega-svg-shadow" d="M43 150c56-14 176-14 234 0-46 25-191 25-234 0z"/><path class="mega-svg-paper" d="M42 48c42-12 83-5 118 18v91c-35-23-76-30-118-18z"/><path class="mega-svg-paper" d="M278 48c-42-12-83-5-118 18v91c35-23 76-30 118-18z"/><path class="mega-svg-line" d="M160 66v91M63 72c31-5 56 0 78 13M63 91c31-5 56 0 78 13M63 110c31-5 56 0 78 13M179 85c22-13 47-18 78-13M179 104c22-13 47-18 78-13M179 123c22-13 47-18 78-13"/><path class="mega-svg-accent-fill" d="M211 33h23v51l-11.5-8-11.5 8z"/><path class="mega-svg-pencil" d="M70 48l30-22 10 14-30 22-15 4z"/><path class="mega-svg-pencil-tip" d="M65 66l5-18 10 14z"/></svg></span>`;
     }
@@ -157,6 +160,7 @@
     ];
 
     const resources = [
+      { href: "/projects/", icon: "PJ", title: "Guided projects", description: "Follow 18 project playbooks with key decisions and browser-local progress." },
       { href: "/learn/", icon: "LN", title: "Learn", description: "Workflows for planning cuts, stairs, tile, and materials." },
       { href: "/checklists/", icon: "CK", title: "Checklists", description: "Release checks for planning, cutting, assembly, installation, and handoff." },
       { href: "/worksheets/", icon: "WS", title: "Worksheets", description: "Printable records for measurements, materials, setups, installation, and closeout." },
@@ -311,15 +315,16 @@
     };
 
     const projectsMenu = {
-      href: "/templates/",
+      href: "/projects/",
       label: "Projects",
-      aliases: ["/tools/components/", "/examples/", "/checklists/", "/worksheets/", "/troubleshooting/"],
-      visual: "templates",
-      featureTitle: "Move a project from idea to release",
-      featureDescription: "Calculate reusable components, start from a template, inspect a worked example, record the job, and verify irreversible steps before cutting or installation.",
-      featureCta: "Browse project templates ->",
+      aliases: ["/projects/", "/templates/", "/examples/", "/tools/components/", "/checklists/", "/worksheets/", "/troubleshooting/"],
+      visual: "projects",
+      featureTitle: "Build with 18 guided project playbooks",
+      featureDescription: "Keep browser-local progress while you work through key measurements, decisions, parts, release checks, installation, and closeout.",
+      featureCta: "Browse guided projects ->",
       columns: [
         { title: "Start", links: [
+          { href: "/projects/", icon: "PJ", title: "Guided project playbooks", description: "Choose one of 18 end-to-end builds and continue your progress on this device.", exact: true },
           { href: "/tools/components/", icon: "CC", title: "Component calculators", description: "Build reusable cabinet parts and merge them into one project cut list." },
           { href: "/templates/", icon: "TP", title: "Templates", description: "Project-ready parts, constraints, and release checks.", exact: true },
           { href: "/examples/", icon: "EX", title: "Worked examples", description: "Parts, modeled layouts, sheet counts, and CSV files." },
@@ -413,6 +418,7 @@
     const resources = [
       { href: "/about/", label: "About & editorial process" },
       { href: "/research/", label: "Research & datasets" },
+      { href: "/projects/", label: "Guided project playbooks" },
       { href: "/tools/components/", label: "Cut list component library" },
       { href: "/troubleshooting/", label: "Troubleshooting" },
       { href: "/checklists/", label: "Woodworking checklists" },

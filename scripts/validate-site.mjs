@@ -69,6 +69,9 @@ const siteChromeSource = readText("assets/site-chrome.js");
 if (!siteChromeSource.includes("const projectsMenu = {")) {
   errors.push("Shared navigation is missing the Projects menu definition.");
 }
+if (!siteChromeSource.includes('href: "/projects/"')) {
+  errors.push("Shared navigation does not link the Projects destination to /projects/.");
+}
 if (!siteChromeSource.includes("const resourcesMenu = {")) {
   errors.push("Shared navigation is missing the Resources menu definition.");
 }
@@ -97,6 +100,20 @@ for (const categoryId of [
 ]) {
   if (!checklistHubSource.includes(`id="${categoryId}"`)) {
     errors.push(`Checklists navigation target is missing from the hub: #${categoryId}`);
+  }
+}
+
+const projectsHubSource = readText("projects/index.html");
+for (const categoryId of [
+  "cabinets",
+  "storage",
+  "furniture",
+  "shop",
+  "small-spaces",
+  "outdoor"
+]) {
+  if (!projectsHubSource.includes(`id="${categoryId}"`)) {
+    errors.push(`Projects navigation target is missing from the hub: #${categoryId}`);
   }
 }
 

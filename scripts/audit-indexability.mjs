@@ -7,6 +7,7 @@ import { learnClusterProfiles } from "./learn-cluster-profiles.mjs";
 import { checklistEntries } from "./checklist-data.mjs";
 import { worksheetEntries } from "./worksheet-data.mjs";
 import { componentCategories, componentModels } from "./cut-list-component-data.mjs";
+import { projectPlaybooks } from "./project-playbook-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
@@ -159,6 +160,7 @@ const groups = {
   learnTopicHub: [],
   checklists: [],
   worksheets: [],
+  projectPlaybooks: [],
   componentCategories: [],
   componentModels: []
 };
@@ -276,6 +278,16 @@ for (const page of pages) {
     if (!page.html.includes("worksheet.csv")) issues.push(`${page.file} is missing its downloadable worksheet CSV.`);
   }
 
+  if (/^projects\/[^/]+\/index\.html$/.test(page.file)) {
+    groups.projectPlaybooks.push({ ...page, inbound });
+    if (inbound < 4) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 4.`);
+    if (page.words < 1250) issues.push(`${page.file} has only ${page.words} visible words; expected at least 1250.`);
+    if (!page.html.includes("project-playbook.csv")) issues.push(`${page.file} is missing its downloadable project-playbook CSV.`);
+    if (!page.html.includes('data-project-playbook')) issues.push(`${page.file} is missing its browser-local project playbook mount.`);
+    if (!/"@type"\s*:\s*"HowTo"/.test(page.html)) issues.push(`${page.file} is missing HowTo structured data.`);
+    if (!page.html.includes('"@type": "FAQPage"')) issues.push(`${page.file} is missing FAQPage structured data.`);
+  }
+
   if (componentCategoryFiles.has(page.file)) {
     groups.componentCategories.push({ ...page, inbound });
     if (inbound < 1) issues.push(`${page.file} has no internal-link source page.`);
@@ -314,6 +326,10 @@ if (groups.worksheets.length !== worksheetEntries.length) {
   issues.push(`Expected ${worksheetEntries.length} worksheet pages, found ${groups.worksheets.length}.`);
 }
 
+if (groups.projectPlaybooks.length !== projectPlaybooks.length) {
+  issues.push(`Expected ${projectPlaybooks.length} project playbook pages, found ${groups.projectPlaybooks.length}.`);
+}
+
 if (groups.componentCategories.length !== componentCategories.length) {
   issues.push(`Expected ${componentCategories.length} component category hubs, found ${groups.componentCategories.length}.`);
 }
@@ -332,6 +348,20 @@ if (!componentHub || componentHub.noindex) {
   for (const model of componentModels) {
     if (!componentHub.html.includes(`/tools/components/${model.slug}/`)) {
       issues.push(`The Cut List Component Library hub does not link model ${model.slug}.`);
+    }
+  }
+}
+
+const projectsHub = pagesByRoute.get("/projects/");
+if (!projectsHub || projectsHub.noindex) {
+  issues.push("The Project Playbooks hub is missing or noindex.");
+} else {
+  if (!sitemapRoutes.has("/projects/")) issues.push("The Project Playbooks hub is absent from the sitemap.");
+  if (!/"@type"\s*:\s*"CollectionPage"/.test(projectsHub.html)) issues.push("The Project Playbooks hub is missing CollectionPage structured data.");
+  if (!projectsHub.html.includes("data-project-hub")) issues.push("The Project Playbooks hub is missing its filter and resume mount.");
+  for (const project of projectPlaybooks) {
+    if (!projectsHub.html.includes(`/projects/${project.slug}/`)) {
+      issues.push(`The Project Playbooks hub does not link ${project.slug}.`);
     }
   }
 }

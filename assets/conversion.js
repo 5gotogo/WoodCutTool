@@ -19,6 +19,7 @@
     if (path === "/plywood-cut-calculator/" || path === "/cutlist/" || path === "/cut-list-calculator/") return "calculator-page";
     if (path.startsWith("/templates/")) return "template";
     if (path.startsWith("/examples/")) return "example";
+    if (path.startsWith("/projects/")) return "project";
     if (path.startsWith("/learn/")) return "learn";
     if (path.startsWith("/troubleshooting/")) return "troubleshooting";
     if (path.startsWith("/blog/")) return "blog";

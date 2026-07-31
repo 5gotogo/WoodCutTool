@@ -190,6 +190,7 @@ if (zeroInbound.length) {
 const expectedSharedHubs = [
   "/tools/",
   "/tools/components/",
+  "/projects/",
   "/templates/",
   "/examples/",
   "/worksheets/",
@@ -222,7 +223,7 @@ if (!siteChrome.includes('class="nav-menu-toggle"')) {
   errors.push("Runtime navigation does not separate destination links from mobile menu toggles.");
 }
 
-for (const route of ["/tools/", "/tools/components/", "/learn/", "/apps/", "/glossary/", "/tinnitus/"]) {
+for (const route of ["/tools/", "/tools/components/", "/projects/", "/learn/", "/apps/", "/glossary/", "/tinnitus/"]) {
   const file = routeFile(route);
   if (!existsSync(file) || !/"@type"\s*:\s*"BreadcrumbList"/.test(readFileSync(file, "utf8"))) {
     errors.push(`Primary hub is missing BreadcrumbList structured data: ${route}`);
