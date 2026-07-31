@@ -741,5 +741,27 @@
     "averageUserRating": 0,
     "userRatingCount": 0,
     "sellerName": "家宝 戴"
+  },
+  {
+    "id": 6792627022,
+    "slug": "tilefit-tile-layout-planner",
+    "name": "TileFit: Tile Layout Planner",
+    "genre": "Utilities",
+    "genres": [
+      "Utilities"
+    ],
+    "url": "https://apps.apple.com/us/app/tilefit-tile-layout-planner/id6792627022",
+    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/65/bf/c5/65bfc55f-0d28-fc96-898b-c8162e56698e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshotUrls": [],
+    "description": "Plan the tile job before the first cut. TileFit turns measurements, tile specifications and layout choices into a visual plan with quantities, box estimates, grouped cuts, installation order and PDF. It is built for installers, contractors, designers and DIY renovators who need practical answers without sending project data to an online service.\nPRIVACY FIRST, BY DESIGN\n• Offline — the core planner works without an internet connection\n• No Login — no account, email address or team workspace is required\n• Privacy First — no analytics SDKs are used to track your projects\n• On Device — projects, calculations and OCR processing stay on your iPhone\n• No Cloud Upload — TileFit does not automatically upload plans, photos or documents\nMeasurements, notes, tile choices and layouts stay on your device. Apple Vision reads labels and sketches locally. PDFs are created locally and shared only through a destination you choose.\nMODEL THE SURFACE\nSet up a floor, wall, backsplash or countertop. Start with a rectangle, define an L-shaped area, or edit a custom polygon for an irregular room. Add deductions for doorways, islands, columns, cabinets and other areas that should not receive tile. Choose millimeters, centimeters, inches or feet-and-inches so the job can be entered in the units you use.\nDEFINE THE TILE AND PRICE\nUse ceramic, porcelain, mosaic or natural-stone examples, or enter your own dimensions. Add directional texture, pieces and coverage per box, and a price per tile, box or square meter. Cost estimates support USD, CNY, EUR, GBP, CAD and AUD.\nCOMPARE SIX LAYOUT PATTERNS\nGenerate straight stack, 50% running bond, one-third offset, 45-degree herringbone, 90-degree herringbone or 45-degree diagonal layouts. Adjust grout width, waste allowance and the starting point from the center, a corner or a custom offset. A full-tile border option provides another way to test the visual balance around the edge.\nSEE THE PLAN BEFORE ORDERING\nThe interactive layout canvas distinguishes full and cut tiles and supports zooming and tile inspection. Tap a tile to review its sequence, position, rotation and visible size. TileFit reports coverage, total tiles including your waste allowance, boxes to buy, full and cut tile counts, estimated material cost, purchased-material yield and spare pieces caused by box rounding. A small-cut warning highlights pieces under one-third of the tile width so you can revisit the starting point or pattern.\nCUTS AND INSTALLATION ORDER\nMatching cut sizes are grouped with quantities. The step guide highlights each tile on the drawing as you move through the planned installation order.\nSCAN SPECS ON DEVICE\nPhotograph a tile box label or select an existing image. Local OCR can suggest tile width and height, pieces per box and a printed price. It can also read dimensions written on a room sketch and prepare a surface-size draft. You review the detected values before creating a tile or applying dimensions; scanning never silently replaces project data.\nKEEP JOBS ORGANIZED\nSave, switch, duplicate, archive or delete local projects. Defaults for grout, waste, units and currency speed up repeat estimates.\nEXPORT A CLEAR INSTALLATION PACKET\nCreate an A4 or US Letter PDF containing the layout drawing, tile and box totals, coverage, waste, full/cut counts and grouped cut list. Send it to a printer, save it to Files, or share it with an installer or client through the standard iOS share sheet. TileFit does not choose a cloud destination for you.\nTileFit is a planning aid, not a substitute for professional judgment. Verify field measurements, substrate, movement joints, codes, manufacturer instructions, pattern suitability and box coverage before purchasing or cutting. Review OCR and cost estimates.\nSupport: https://woodcuttool.com/legal/TileFit/support/\nPrivacy Policy: https://woodcuttool.com/legal/TileFit/privacy/\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "version": "1.0",
+    "releaseDate": "2026-07-29T07:00:00Z",
+    "currentVersionReleaseDate": "2026-07-30T02:49:02Z",
+    "minimumOsVersion": "17.6",
+    "formattedPrice": "Free",
+    "trackContentRating": "4+",
+    "averageUserRating": 0,
+    "userRatingCount": 0,
+    "sellerName": "家宝 戴"
   }
 ]

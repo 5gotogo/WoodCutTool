@@ -164,15 +164,20 @@ canvas {
   font-weight: 650;
 }
 
+.nav-menu-item > .nav-trigger {
+  padding-right: 4px;
+  border-radius: 7px 0 0 7px;
+}
+
 .nav-menu-toggle {
-  width: 30px;
+  width: 26px;
   min-height: 34px;
-  margin-left: -8px;
+  margin-left: 0;
   display: inline-grid;
   place-items: center;
   color: var(--muted);
   border: 0;
-  border-radius: 7px;
+  border-radius: 0 7px 7px 0;
   background: transparent;
   cursor: pointer;
 }
@@ -187,6 +192,8 @@ canvas {
 }
 
 .nav-trigger:hover,
+.nav-trigger.active,
+.nav-trigger.active + .nav-menu-toggle,
 .nav-links > a:hover,
 .nav-links > a.active,
 .nav-menu-item:hover > .nav-trigger,

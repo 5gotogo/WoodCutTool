@@ -32,8 +32,8 @@
     "hash": "8cd4112491618eab37ece35ee3af1fac02ec08dcda1acd4b06dfd8fb712c289d"
   },
   "/apps/": {
-    "lastmod": "2026-07-27",
-    "hash": "27c50a970765c6439180ef1dd0791387707aaadf06ffaaa70d9634f47160c30d"
+    "lastmod": "2026-07-31",
+    "hash": "8fc234ee7527075e65dd0b771ae9b6eb83101fb9ce86020e2477dcae8218c2c2"
   },
   "/apps/cutlist/": {
     "lastmod": "2026-07-23",
@@ -52,8 +52,8 @@
     "hash": "9c06a8e096d9c5703cd68deaab27d2be10bebb843d1a6fa5db2cdbd375fa2c62"
   },
   "/tile-calculator/": {
-    "lastmod": "2026-07-23",
-    "hash": "8fba44d4c93e2d025b2ab73077fe57410032f8609e18b0f4007952f4a7471bf4"
+    "lastmod": "2026-07-31",
+    "hash": "41c4b2882e969bee5893e43290ed6bd2884173b9ec8b21814331e0c1c0e38c00"
   },
   "/stringer/": {
     "lastmod": "2026-07-23",
@@ -714,6 +714,10 @@
   "/apps/thumbtype-typing-speed-test/": {
     "lastmod": "2026-07-23",
     "hash": "659a9486478fc1476e67fa75946a41392ba71a12b8d534d1b9b8bd8b94dfd2bf"
+  },
+  "/apps/tilefit-tile-layout-planner/": {
+    "lastmod": "2026-07-31",
+    "hash": "5888cc2a5f7d66b09d384523b02a4a9fd5dd8b7197badcfbf9e9cfef117995ca"
   },
   "/apps/tinnitus-relief-sound-masking/": {
     "lastmod": "2026-07-27",
@@ -7212,12 +7216,12 @@
     "hash": "13a0680e8dd24282009029c534eb5c7b7fda14891a82cc83102e822c2aced3cf"
   },
   "/legal/TileFit/privacy/": {
-    "lastmod": "2026-07-23",
-    "hash": "715ac2829fbe2b01299d93e92c8c87eeea0b7c1bb2c9e66be0b50e7a30bf79bb"
+    "lastmod": "2026-07-31",
+    "hash": "3ad5d1d1e50d39f88dcf6c5ee78142b71f0ac1a241bccce8d78b7cf9b4d34c3e"
   },
   "/legal/TileFit/support/": {
-    "lastmod": "2026-07-23",
-    "hash": "38718849e9c0d05da40ede90ddad22f9a5c17976906a3fc878f473ad9a70bef0"
+    "lastmod": "2026-07-31",
+    "hash": "b0d3dbfbe52291154b806b2ab12eb062642ff608c2e616a16a70e364180314a3"
   },
   "/legal/Tinnitus/privacy/": {
     "lastmod": "2026-07-23",

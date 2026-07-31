@@ -14,6 +14,7 @@ const footerMount = "<div data-site-footer></div>";
 const siteChromeScript = '  <script defer src="/assets/site-chrome.js"></script>';
 const conversionScript = '  <script defer src="/assets/conversion.js"></script>';
 const appStoreId = "6768171871";
+const tileFitAppStoreId = "6792627022";
 const providerToken = String(process.env.APPLE_PROVIDER_TOKEN || "").trim();
 
 function collectHtmlFiles(dir = root, prefix = "") {
@@ -87,8 +88,17 @@ function cutlistCampaignFor(file) {
   return "";
 }
 
+function tileFitCampaignFor(file) {
+  if (file === "tile-calculator/index.html") return "smart-tilefit-calculator";
+  if (file === "apps/tilefit-tile-layout-planner/index.html") return "smart-tilefit-app-page";
+  if (file.startsWith("legal/TileFit/")) return "smart-tilefit-legal";
+  return "";
+}
+
 function applySmartAppBanner(html, file) {
-  const campaign = cutlistCampaignFor(file);
+  const tileFitCampaign = tileFitCampaignFor(file);
+  const campaign = tileFitCampaign || cutlistCampaignFor(file);
+  const selectedAppStoreId = tileFitCampaign ? tileFitAppStoreId : appStoreId;
   const withoutExisting = html.replace(/\s*<meta\s+name="apple-itunes-app"[^>]*>/g, "");
   if (!campaign || !withoutExisting.includes('name="viewport"')) return withoutExisting;
   const affiliateData = [
@@ -96,7 +106,7 @@ function applySmartAppBanner(html, file) {
     `ct=${campaign}`,
   ].filter(Boolean).join("&amp;");
   const route = file === "index.html" ? "/" : `/${file.replace(/index\.html$/, "")}`;
-  const content = `app-id=${appStoreId}, affiliate-data=${affiliateData}, app-argument=https://woodcuttool.com${route}`;
+  const content = `app-id=${selectedAppStoreId}, affiliate-data=${affiliateData}, app-argument=https://woodcuttool.com${route}`;
   return withoutExisting.replace(/(<meta\s+name="viewport"[^>]*>)/, `$1\n  <meta name="apple-itunes-app" content="${content}">`);
 }
 

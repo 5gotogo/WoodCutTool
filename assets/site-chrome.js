@@ -1,6 +1,7 @@
 (function () {
   const appStoreLinks = {
     cutlist: "/go/cutlist/?source=navigation&placement=header",
+    tilefit: "https://apps.apple.com/us/app/tilefit-tile-layout-planner/id6792627022",
     quiltfit: "https://apps.apple.com/us/app/quiltfit-quilt-design-planner/id6776541705",
     stringer: "https://apps.apple.com/us/app/stringer-stair-layout/id6784882437?uo=4",
     snaplabel: "https://apps.apple.com/us/app/snaplabel-photo-text-label/id6751947372",
@@ -15,6 +16,13 @@
 
   function ctaFor() {
     const current = route();
+    if (
+      current === "/tile-calculator/" ||
+      current.startsWith("/apps/tilefit-tile-layout-planner/") ||
+      current.startsWith("/legal/TileFit/")
+    ) {
+      return ["Download TileFit", appStoreLinks.tilefit];
+    }
     if (
       current.startsWith("/tinnitus/") ||
       current.startsWith("/apps/tinnitus-relief-sound-masking/") ||
@@ -137,6 +145,7 @@
     const apps = [
       { href: "/apps/cutlist/", aliases: ["/apps/cutlist-plywood-optimizer/"], icon: "CL", title: "CutList app", description: "Save cut lists, layouts, and project revisions on iPhone." },
       { href: "/apps/quiltfit/", aliases: ["/apps/quiltfit-quilt-design-planner/"], icon: "QF", title: "QuiltFit app", description: "Design quilts and carry fabric planning into the app." },
+      { href: "/apps/tilefit-tile-layout-planner/", icon: "TI", title: "TileFit app", description: "Plan tile patterns, quantities, grouped cuts, installation order, and PDF exports." },
       { href: "/apps/stringer/", aliases: ["/apps/stringer-stair-layout/"], icon: "ST", title: "Stringer app", description: "Keep stair layouts, code checks, and cut sheets together." },
       { href: "/apps/jobphotolog-work-reports/", icon: "JP", title: "JobPhotoLog", description: "Organize jobsite photos, before-and-after proof, signatures, punch lists, and PDF reports." },
       { href: "/apps/snapreceipt-expenses-and-tax/", icon: "SR", title: "SnapReceipt", description: "Scan receipts and prepare expense or tax records." },
@@ -356,7 +365,7 @@
     };
 
     const toolsMenu = `<div class="mega-menu" role="group" aria-label="Tools menu">${megaFeature({ href: "/tools/", title: "Choose a calculator by project", description: "Browse focused woodworking and construction tools without mixing unrelated app categories into the planning hub.", cta: "Browse tools ->", visual: "tools" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Woodworking Tools</p>${menuLink({ href: "/tools/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut and layout, cabinets, furniture, wood, and materials." })}${tools.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Construction Tools</p>${menuLink({ href: "/tools/construction/", icon: "CN", title: "Construction hub", description: "Stairs, tile, deck, fence, wall, roof, and concrete." })}${tools.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Tool directory</p>${menuLink({ href: "/tools/", icon: "TL", title: "All tools", description: "Open the full calculator and planning hub.", exact: true })}${menuLink({ href: "/tools/components/", icon: "CC", title: "Component calculators", description: "Merge reusable cabinet component cut lists into one browser-local project." })}${menuLink({ href: "/conversion/", icon: "CV", title: "Conversion calculator", description: "Convert fractions, inches, millimeters, angles, rise, and run." })}${menuLink({ href: "/material-list-generator/", icon: "MT", title: "Material list", description: "Turn project inputs into a material checklist." })}${menuLink({ href: "/drill-bit-finder/", icon: "DR", title: "Drill bit finder", description: "Match screw diameter to pilot and clearance holes." })}</div></div></div>`;
-    const appsMenu = `<div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for saved workflows", description: "Use the website for quick checks, then move repeatable projects into focused iPhone apps when you need saved records.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Planning apps</p>${apps.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Document apps</p>${apps.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">More apps</p>${apps.slice(6, 9).map(menuLink).join("")}${menuLink({ href: "/apps/compare/", icon: "VS", title: "App comparisons", description: "Compare app workflows against common alternatives." })}</div></div></div>`;
+    const appsMenu = `<div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for saved workflows", description: "Use the website for quick checks, then move repeatable projects into focused iPhone apps when you need saved records.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Planning apps</p>${apps.slice(0, 4).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Document apps</p>${apps.slice(4, 7).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">More apps</p>${apps.slice(7, 10).map(menuLink).join("")}${menuLink({ href: "/apps/compare/", icon: "VS", title: "App comparisons", description: "Compare app workflows against common alternatives." })}</div></div></div>`;
 
     return `<div class="nav-links nav-links-mega">${navMenuItem({ href: "/tools/", label: "Tools", aliases: tools.map((item) => item.href), menu: toolsMenu })}${resourceNavMenu(projectsMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(resourcesMenu)}${navMenuItem({ href: "/apps/", label: "Apps", menu: appsMenu })}</div>`;
   }
@@ -379,6 +388,7 @@
       { href: "/cut-list-calculator/", label: "Cut list calculator" },
       { href: "/quiltfit/", label: "QuiltFit" },
       { href: "/apps/quiltfit/", label: "QuiltFit app" },
+      { href: "/apps/tilefit-tile-layout-planner/", label: "TileFit app" },
       { href: "/stringer/", label: "Stair stringer" },
       { href: "/apps/stringer/", label: "Stringer app" },
       { href: "/tile-calculator/", label: "Tile calculator" },

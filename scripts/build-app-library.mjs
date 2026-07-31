@@ -103,6 +103,10 @@ const generatedOverrideSlugs = new Set(["stringer-stair-layout"]);
 const handWrittenOverrideSlugs = new Set(["cutlist-plywood-optimizer", "quiltfit-quilt-design-planner"]);
 
 const legalLinksBySlug = {
+  "tilefit-tile-layout-planner": {
+    privacy: "/legal/TileFit/privacy/",
+    support: "/legal/TileFit/support/"
+  },
   "jobphotolog-work-reports": {
     privacy: "/legal/JobPhotoLog/privacy/",
     support: "/legal/JobPhotoLog/support/"
@@ -135,6 +139,7 @@ const appSupportDirectory = [
 
 const featuredApps = [
   ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
+  ["tilefit-tile-layout-planner", "Offline tile layout planner with six patterns, material estimates, grouped cuts, installation order, and PDF export."],
   ["jobphotolog-work-reports", "Private, offline jobsite photo records with before-and-after evidence, punch lists, signatures, and professional PDF reports."],
   ["quiltfit-quilt-design-planner", "Quilt design planner for fabric layouts, block planning, and project organization."],
   ["snapreceipt-expenses-and-tax", "Private receipt scanner, expense tracker, and mileage log for reimbursements and tax records."],
@@ -148,7 +153,7 @@ const categorySections = [
     id: "maker-calculator-apps",
     title: "Maker & Calculator Apps",
     description: "Practical iPhone tools for people who plan, measure, cut, design, or build physical projects. These apps focus on plywood optimization, quilt planning, tile estimation, stair stringer calculation, and other maker workflows.",
-    slugs: ["cutlist-plywood-optimizer", "quiltfit-quilt-design-planner", "stringer-stair-layout"],
+    slugs: ["cutlist-plywood-optimizer", "tilefit-tile-layout-planner", "quiltfit-quilt-design-planner", "stringer-stair-layout"],
     relatedTools: [
       {
         name: "Tile",
@@ -199,6 +204,7 @@ const categorySections = [
 
 const appTags = {
   "cutlist-plywood-optimizer": ["Plywood", "Cut lists", "Offline", "PDF export"],
+  "tilefit-tile-layout-planner": ["Tile layouts", "Six patterns", "Offline", "PDF export"],
   "quiltfit-quilt-design-planner": ["Quilting", "Fabric plans", "Blocks", "Projects"],
   "snapreceipt-expenses-and-tax": ["Receipts", "Expenses", "Mileage", "Records"],
   "invoice-maker-estimate-pdf": ["Invoices", "Estimates", "PDF", "Clients"],
@@ -238,6 +244,7 @@ const appTags = {
 
 const directoryDescriptions = new Map(featuredApps);
 directoryDescriptions.set("thumbtype-typing-speed-test", "Private, offline iPhone typing practice with timed WPM tests, accuracy tracking, daily challenges, and multilingual lessons.");
+directoryDescriptions.set("tilefit-tile-layout-planner", "Plan floor, wall, backsplash, and countertop tile layouts with six patterns, box and cost estimates, grouped cuts, and PDF export.");
 
 function detailHref(app) {
   return detailRouteOverrides[app.slug] || `/apps/${app.slug}/`;
@@ -367,6 +374,7 @@ const appDirectoryFaq = [
   ["Are these apps privacy-first?", "Many apps are designed around private, local workflows so common tasks can be completed without sending every project, receipt, note, or document through a cloud dashboard."],
   ["Do these apps require an account?", "Most apps are built to be useful without account setup. Some optional system sharing or export features may use standard iOS workflows."],
   ["Which app is best for woodworking?", "CutList is the woodworking app in the collection. It helps plan plywood cut lists, preview sheet layouts, save local projects, and export cut plans."],
+  ["Which app is best for tile layout planning?", "TileFit plans floor, wall, backsplash, and countertop layouts with six patterns, quantities, box and cost estimates, grouped cuts, installation order, and PDF export."],
   ["Which app is best for receipt scanning?", "SnapReceipt is built for receipt capture, expense records, mileage logs, reimbursements, and tax-related organization."],
   ["Which app is best for invoices?", "Invoice Maker is the app for creating invoices, estimates, and PDF documents for freelance, contractor, and small business work."],
   ["Can I use these apps offline?", "Many apps are designed for offline-first use cases, especially local planning, scanning, records, labels, and personal utilities. Check each detail page for the exact workflow."],
@@ -473,7 +481,7 @@ function appsIndexPage() {
 <html lang="en">
 ${head({
     title: "iPhone Apps for Makers, Work & Everyday Tools | WoodCutTool",
-    description: "Privacy-first iPhone apps including JobPhotoLog, CutList, QuiltFit, SnapReceipt, and PDF Scan. Offline tools for field work, makers, and small businesses.",
+    description: "Privacy-first iPhone apps including TileFit, JobPhotoLog, CutList, QuiltFit, SnapReceipt, and PDF Scan. Offline tools for makers, field work, and small businesses.",
     canonical: "https://woodcuttool.com/apps/",
     jsonLd: appsIndexJsonLd()
   })}
@@ -485,7 +493,7 @@ ${head({
       <p class="breadcrumb"><a href="/">Home</a> / Apps</p>
       <p class="eyebrow">App directory</p>
       <h1>Privacy-First iPhone Apps for Work, Makers, and Everyday Tools</h1>
-      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: jobsite photo reports, plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, tinnitus sound masking, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
+      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: tile layout planning, jobsite photo reports, plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, tinnitus sound masking, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
       <p class="lead">Deciding whether an app is worth it? Browse our <a href="/apps/compare/">app comparisons</a> to see each one side by side with the manual method or a common alternative.</p>
     </section>
 ${featuredAppsSection()}
