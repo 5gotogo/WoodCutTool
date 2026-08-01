@@ -55,9 +55,9 @@ function applyMegaMenuFallback(html) {
 
 function applySiteChromeScript(html) {
   let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js(?:\?[^\"]*)?")[^>]*>\s*<\/script>/g, "");
-  const appScriptPattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/app\.js")[^>]*>\s*<\/script>)/;
-  if (appScriptPattern.test(next)) {
-    return next.replace(appScriptPattern, `\n${siteChromeScript}$1`);
+  const runtimeScriptPattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page)\.js")[^>]*>\s*<\/script>)/;
+  if (runtimeScriptPattern.test(next)) {
+    return next.replace(runtimeScriptPattern, `\n${siteChromeScript}$1`);
   }
   return next.replace("</head>", `${siteChromeScript}\n</head>`);
 }

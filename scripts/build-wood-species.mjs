@@ -220,7 +220,7 @@ for (const [group, groupSpecies] of speciesByGroup) {
   }
 }
 
-function head({ title, description, canonical, jsonLd = "", ogType = "website" }) {
+function head({ title, description, canonical, jsonLd = "", ogType = "website", contentPage = false }) {
   return `<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -236,7 +236,7 @@ function head({ title, description, canonical, jsonLd = "", ogType = "website" }
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
   <link rel="stylesheet" href="/assets/styles.css">
-  <script defer src="/assets/app.js"></script>
+  <script defer src="/assets/${contentPage ? "content-page" : "app"}.js"></script>
   ${jsonLd}
 </head>`;
 }
@@ -301,7 +301,7 @@ function indexPage() {
 
   return `<!doctype html>
 <html lang="en">
-${head({ title, description, canonical, jsonLd: itemListJsonLd() })}
+${head({ title, description, canonical, jsonLd: itemListJsonLd(), contentPage: true })}
 <body>
   ${breadcrumbJsonLd([["Home", "/"], ["Tools", "/tools/"], ["Wood Species Library", "/wood/"]])}
   <a class="skip-link" href="#main">Skip to content</a>
@@ -453,7 +453,7 @@ function speciesPage(wood) {
   const related = relatedSpeciesBySlug.get(wood.slug);
   return `<!doctype html>
 <html lang="en">
-${head({ title, description, canonical, jsonLd: speciesJsonLd(wood), ogType: "article" })}
+${head({ title, description, canonical, jsonLd: speciesJsonLd(wood), ogType: "article", contentPage: true })}
 <body>
   ${breadcrumbJsonLd([["Home", "/"], ["Tools", "/tools/"], ["Wood Species Library", "/wood/"], [wood.name, `/wood/${wood.slug}/`]])}
   <a class="skip-link" href="#main">Skip to content</a>

@@ -66,6 +66,13 @@ function readText(path) {
 }
 
 const siteChromeSource = readText("assets/site-chrome.js");
+const contentPageSource = readText("assets/content-page.js");
+if (!contentPageSource.includes('const appScriptPath = "/assets/app.js"')) {
+  errors.push("Lightweight content runtime cannot load the full app runtime on demand.");
+}
+if (!siteChromeSource.includes("function initMegaNavigation()")) {
+  errors.push("Shared navigation runtime is missing from site-chrome.js.");
+}
 if (!siteChromeSource.includes("const projectsMenu = {")) {
   errors.push("Shared navigation is missing the Projects menu definition.");
 }
@@ -256,6 +263,16 @@ for (const file of htmlFiles) {
   }
   if (siteChromeScripts.some((tag) => /site-chrome\.js\?/i.test(tag))) {
     errors.push(`${file} uses a versioned site-chrome.js URL instead of the shared canonical asset URL`);
+  }
+
+  if (file === "wood/index.html" || /^wood\/[^/]+\/index\.html$/.test(file)) {
+    const contentRuntimeScripts = html.match(/<script\b[^>]*\bsrc=["']\/assets\/content-page\.js["'][^>]*>\s*<\/script>/gi) ?? [];
+    if (contentRuntimeScripts.length !== 1) {
+      errors.push(`${file} must load exactly one lightweight content-page.js runtime; found ${contentRuntimeScripts.length}`);
+    }
+    if (/src=["']\/assets\/app\.js["']/.test(html)) {
+      errors.push(`${file} eagerly loads app.js instead of the lightweight content runtime`);
+    }
   }
 
   if (html.includes("{search_term_string}")) {
