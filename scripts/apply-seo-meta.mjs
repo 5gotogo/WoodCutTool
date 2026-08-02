@@ -35,6 +35,8 @@ const pages = {
   "legal/Stringer/support/index.html": {},
   "legal/Tinnitus/privacy/index.html": {},
   "legal/Tinnitus/support/index.html": {},
+  "legal/MoodLoop/privacy/index.html": {},
+  "legal/MoodLoop/support/index.html": {},
   "legal/cutlist/privacy/index.html": {},
   "legal/cutlist/support/index.html": {},
   "legal/quiltfit/privacy/index.html": {},

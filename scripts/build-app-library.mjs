@@ -132,6 +132,7 @@ const appSupportDirectory = [
   ["JobPhotoLog", "/legal/JobPhotoLog/privacy/", "/legal/JobPhotoLog/support/"],
   ["ThumbType", "/legal/ThumbType/privacy/", "/legal/ThumbType/support/"],
   ["Tinnitus Relief", "/legal/Tinnitus/privacy/", "/legal/Tinnitus/support/"],
+  ["MoodLoop", "/legal/MoodLoop/privacy/", "/legal/MoodLoop/support/"],
   ["Casework", "/legal/Casework/privacy/", "/legal/Casework/support/"],
   ["PrivateMind", "/legal/PrivateMind/privacy/", "/legal/PrivateMind/support/"],
   ["TileFit", "/legal/TileFit/privacy/", "/legal/TileFit/support/"]

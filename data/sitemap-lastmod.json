@@ -36,8 +36,8 @@
     "hash": "8cd4112491618eab37ece35ee3af1fac02ec08dcda1acd4b06dfd8fb712c289d"
   },
   "/apps/": {
-    "lastmod": "2026-07-31",
-    "hash": "8fc234ee7527075e65dd0b771ae9b6eb83101fb9ce86020e2477dcae8218c2c2"
+    "lastmod": "2026-08-02",
+    "hash": "8d76bd97f16564d2b09f05ca9a6cbb21bc4b13c0881ee3223ae8ad59b265e894"
   },
   "/apps/cutlist/": {
     "lastmod": "2026-07-23",
@@ -7186,6 +7186,14 @@
   "/legal/JobPhotoLog/support/": {
     "lastmod": "2026-07-23",
     "hash": "8de4a16c4de2ff4dff0611ccb1c4f86fb9ef19729764c47bc60f2481cf96e664"
+  },
+  "/legal/MoodLoop/privacy/": {
+    "lastmod": "2026-08-02",
+    "hash": "c04908b75c2d787cbbf240732ef980bfd794bd3e10df8df519daab9fa9fcdc81"
+  },
+  "/legal/MoodLoop/support/": {
+    "lastmod": "2026-08-02",
+    "hash": "c4d6412d1cd763ed1ced5f67ed9b65ae2e4336c7702e6b08542b6c6eac8ecc9d"
   },
   "/legal/PrivateMind/privacy/": {
     "lastmod": "2026-07-23",
