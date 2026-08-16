@@ -379,7 +379,10 @@
   function header() {
     const [label, href] = ctaFor();
     const isStoreLink = href.includes("apps.apple.com") || href.startsWith("/go/cutlist/");
-    return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a>${navLinks()}<a class="button small nav-download-cta" href="${href}"${isStoreLink ? ' data-app-store-link data-platform-label data-conversion-placement="navigation" rel="nofollow noopener"' : ""}>${label}</a></nav></header>`;
+    const storeIcon = isStoreLink
+      ? `<span class="nav-store-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M16.7 12.8c0-2 1.6-3 1.7-3.1a3.7 3.7 0 0 0-2.9-1.6c-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7a3.9 3.9 0 0 0-3.3 2c-1.4 2.4-.4 6 1 8 .7 1 1.5 2.1 2.6 2 .9 0 1.3-.6 2.5-.6s1.5.6 2.5.6c1.1 0 1.8-1 2.5-2a8.7 8.7 0 0 0 1.1-2.3 3.5 3.5 0 0 1-2.1-3Zm-2-6c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.6-1 2.6 1 .1 2-.5 2.7-1.2Z"/></svg></span>`
+      : "";
+    return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><img class="brand-icon" src="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619" width="34" height="34" alt="">WoodCutTool</a>${navLinks()}<a class="button small nav-download-cta" href="${href}"${isStoreLink ? ' data-app-store-link data-platform-label data-conversion-placement="navigation" rel="nofollow noopener"' : ""}>${storeIcon}<span data-platform-label-text>${label}</span></a></nav></header>`;
   }
 
   function footerColumn(title, links) {

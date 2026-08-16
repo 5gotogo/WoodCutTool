@@ -129,6 +129,15 @@ canvas {
   font-size: 15px;
 }
 
+.brand-icon {
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(39, 44, 36, 0.14);
+}
+
 .nav-links {
   order: 3;
   width: 100%;
@@ -744,6 +753,25 @@ canvas {
 
 .nav > .button {
   order: 2;
+}
+
+.nav-download-cta {
+  flex: 0 0 auto;
+}
+
+.nav-store-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  display: inline-grid;
+  place-items: center;
+}
+
+.nav-store-icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: currentColor;
 }
 
 .language-picker {
@@ -9697,10 +9725,26 @@ tr:last-child td {
     font-size: 15px;
   }
 
+  .brand-icon {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+  }
+
   .nav > .button {
     min-height: 38px;
     padding: 8px 10px;
     font-size: 13px;
+  }
+
+  .nav-download-cta {
+    max-width: calc(100vw - 205px);
+    overflow: hidden;
+  }
+
+  .nav-download-cta [data-platform-label-text] {
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .language-picker {

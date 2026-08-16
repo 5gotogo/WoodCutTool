@@ -115,9 +115,15 @@
     link.dataset.conversionPlacement = placement;
     link.rel = "nofollow noopener";
     if (link.hasAttribute("data-platform-label")) {
-      link.dataset.originalLabel ||= link.textContent.trim();
+      const label = link.querySelector("[data-platform-label-text]");
+      link.dataset.originalLabel ||= (label || link).textContent.trim();
       if (deviceClass() === "iphone" || deviceClass() === "ipad") {
-        link.textContent = "Get CutList on the App Store";
+        if (label) {
+          label.textContent = "App Store";
+        } else {
+          link.textContent = "App Store";
+        }
+        link.setAttribute("aria-label", "Get CutList on the App Store");
       }
     }
   }

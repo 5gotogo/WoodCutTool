@@ -67,6 +67,7 @@ function readText(path) {
 
 const siteChromeSource = readText("assets/site-chrome.js");
 const contentPageSource = readText("assets/content-page.js");
+const conversionSource = readText("assets/conversion.js");
 if (!contentPageSource.includes('const appScriptPath = "/assets/app.js"')) {
   errors.push("Lightweight content runtime cannot load the full app runtime on demand.");
 }
@@ -93,6 +94,18 @@ for (const renderedMenu of [
 }
 if (!siteChromeSource.includes('class="nav-menu-toggle"')) {
   errors.push("Shared navigation is missing a separate mobile menu toggle.");
+}
+if (!siteChromeSource.includes('class="brand-icon"') || !siteChromeSource.includes('class="nav-store-icon"')) {
+  errors.push("Shared navigation is missing the persistent mobile-safe brand or App Store icon.");
+}
+if (!siteChromeSource.includes("data-platform-label-text")) {
+  errors.push("Shared navigation App Store CTA is missing its isolated platform label.");
+}
+if (conversionSource.includes('link.textContent = "Get CutList on the App Store"')) {
+  errors.push("Conversion runtime still replaces the full App Store CTA and removes its icon.");
+}
+if (!conversionSource.includes('label.textContent = "App Store"')) {
+  errors.push("Conversion runtime is missing the compact iPhone App Store label.");
 }
 
 const checklistHubSource = readText("checklists/index.html");
