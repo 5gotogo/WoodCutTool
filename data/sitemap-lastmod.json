@@ -36,8 +36,8 @@
     "hash": "8cd4112491618eab37ece35ee3af1fac02ec08dcda1acd4b06dfd8fb712c289d"
   },
   "/apps/": {
-    "lastmod": "2026-08-02",
-    "hash": "8d76bd97f16564d2b09f05ca9a6cbb21bc4b13c0881ee3223ae8ad59b265e894"
+    "lastmod": "2026-08-17",
+    "hash": "4be7065b5cba8fb5ec84cd4acb7519e6d8f5ea7d987ee915466cd61d0ac91a98"
   },
   "/apps/cutlist/": {
     "lastmod": "2026-07-23",
@@ -138,6 +138,10 @@
   "/apps/cadenza-metronome-and-tuner/": {
     "lastmod": "2026-07-23",
     "hash": "05f16c51538279e5f0d24c9794c8afd73f7480301562068a8e8e04efa1dff8f2"
+  },
+  "/apps/casework-cabinet-cut-lists/": {
+    "lastmod": "2026-08-17",
+    "hash": "2ebd37f425c6e46e1ce4d737ba64522e103ad52692abc926b602bf50603a226f"
   },
   "/apps/colorpop-color-block-tap-game/": {
     "lastmod": "2026-07-23",

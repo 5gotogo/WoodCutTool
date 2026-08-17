@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://woodcuttool.com/apps/</loc><lastmod>2026-08-02</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://woodcuttool.com/apps/</loc><lastmod>2026-08-17</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/apps/cutlist/</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/apps/quiltfit/</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://woodcuttool.com/apps/address-label-maker-and-envelope/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
@@ -11,6 +11,8 @@
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/c0/e8/b0c0e8a5-1019-5eb7-8eba-6fb289b081f9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/cadenza-metronome-and-tuner/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/28/ce/cf/28cecf7a-8090-e403-55ec-dedf7c2f1d75/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/apps/casework-cabinet-cut-lists/</loc><lastmod>2026-08-17</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+    <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/64/a6/d464a674-8ee2-cf16-8be7-a622fbf7b160/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/colorpop-color-block-tap-game/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/e4/a7/abe4a7a1-1db5-83c3-aa9a-1e5edcf438c8/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/compare/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>

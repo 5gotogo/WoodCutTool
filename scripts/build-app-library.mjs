@@ -140,6 +140,7 @@ const appSupportDirectory = [
 
 const featuredApps = [
   ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
+  ["casework-cabinet-cut-lists", "On-device cabinet planning for parts lists, sheet layouts, hardware estimates, cutting steps, and shop-ready exports."],
   ["tilefit-tile-layout-planner", "Offline tile layout planner with six patterns, material estimates, grouped cuts, installation order, and PDF export."],
   ["jobphotolog-work-reports", "Private, offline jobsite photo records with before-and-after evidence, punch lists, signatures, and professional PDF reports."],
   ["quiltfit-quilt-design-planner", "Quilt design planner for fabric layouts, block planning, and project organization."],
@@ -153,8 +154,8 @@ const categorySections = [
   {
     id: "maker-calculator-apps",
     title: "Maker & Calculator Apps",
-    description: "Practical iPhone tools for people who plan, measure, cut, design, or build physical projects. These apps focus on plywood optimization, quilt planning, tile estimation, stair stringer calculation, and other maker workflows.",
-    slugs: ["cutlist-plywood-optimizer", "tilefit-tile-layout-planner", "quiltfit-quilt-design-planner", "stringer-stair-layout"],
+    description: "Practical iPhone tools for people who plan, measure, cut, design, or build physical projects. These apps focus on cabinet planning, plywood optimization, quilt planning, tile estimation, stair stringer calculation, and other maker workflows.",
+    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "tilefit-tile-layout-planner", "quiltfit-quilt-design-planner", "stringer-stair-layout"],
     relatedTools: [
       {
         name: "Tile",
@@ -205,6 +206,7 @@ const categorySections = [
 
 const appTags = {
   "cutlist-plywood-optimizer": ["Plywood", "Cut lists", "Offline", "PDF export"],
+  "casework-cabinet-cut-lists": ["Cabinets", "Cut lists", "Nesting", "PDF & CSV"],
   "tilefit-tile-layout-planner": ["Tile layouts", "Six patterns", "Offline", "PDF export"],
   "quiltfit-quilt-design-planner": ["Quilting", "Fabric plans", "Blocks", "Projects"],
   "snapreceipt-expenses-and-tax": ["Receipts", "Expenses", "Mileage", "Records"],
@@ -244,6 +246,7 @@ const appTags = {
 };
 
 const directoryDescriptions = new Map(featuredApps);
+directoryDescriptions.set("casework-cabinet-cut-lists", "On-device cabinet planner for parts lists, sheet layouts, material and hardware estimates, cutting steps, and PDF or CSV exports.");
 directoryDescriptions.set("thumbtype-typing-speed-test", "Private, offline iPhone typing practice with timed WPM tests, accuracy tracking, daily challenges, and multilingual lessons.");
 directoryDescriptions.set("tilefit-tile-layout-planner", "Plan floor, wall, backsplash, and countertop tile layouts with six patterns, box and cost estimates, grouped cuts, and PDF export.");
 
@@ -374,7 +377,7 @@ const appDirectoryFaq = [
   ["What kind of iPhone apps does JiaBao Dai build?", "JiaBao Dai builds practical iPhone utilities for makers, small business work, documents, home organization, creative tasks, personal routines, and casual games."],
   ["Are these apps privacy-first?", "Many apps are designed around private, local workflows so common tasks can be completed without sending every project, receipt, note, or document through a cloud dashboard."],
   ["Do these apps require an account?", "Most apps are built to be useful without account setup. Some optional system sharing or export features may use standard iOS workflows."],
-  ["Which app is best for woodworking?", "CutList is the woodworking app in the collection. It helps plan plywood cut lists, preview sheet layouts, save local projects, and export cut plans."],
+  ["Which app is best for woodworking?", "Casework is for cabinet and casework planning, while CutList is for general plywood cut lists and sheet layouts. Both help keep project planning local and practical."],
   ["Which app is best for tile layout planning?", "TileFit plans floor, wall, backsplash, and countertop layouts with six patterns, quantities, box and cost estimates, grouped cuts, installation order, and PDF export."],
   ["Which app is best for receipt scanning?", "SnapReceipt is built for receipt capture, expense records, mileage logs, reimbursements, and tax-related organization."],
   ["Which app is best for invoices?", "Invoice Maker is the app for creating invoices, estimates, and PDF documents for freelance, contractor, and small business work."],

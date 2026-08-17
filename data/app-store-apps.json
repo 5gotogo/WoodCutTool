@@ -763,5 +763,34 @@
     "averageUserRating": 0,
     "userRatingCount": 0,
     "sellerName": "家宝 戴"
+  },
+  {
+    "id": 6794987242,
+    "slug": "casework-cabinet-cut-lists",
+    "name": "Casework: Cabinet Cut Lists",
+    "genre": "Business",
+    "genres": [
+      "Business"
+    ],
+    "url": "https://apps.apple.com/us/app/casework-cabinet-cut-lists/id6794987242",
+    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/64/a6/d464a674-8ee2-cf16-8be7-a622fbf7b160/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshotUrls": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/56/d3/96/56d396f4-bfe8-e1a3-6000-551650702381/1.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/55/cf/48/55cf48e1-a595-23c9-6c8e-3602d1b7c20b/2.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ba/0c/7c/ba0c7ce0-4068-d291-cf1a-896dce8559cc/3.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/73/45/5c/73455c49-ffcb-02d4-b8ee-cbcc33662359/4.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/50/4d/91/504d9139-1d3b-8df2-d5b6-380d7be31754/5.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/88/63/65/886365e7-5a00-c3f7-7c34-65b7b3c320dd/6.png/320x480bb.jpg"
+    ],
+    "description": "Plan the cabinet before the first sheet reaches the saw. Casework turns dimensions and construction choices into a parts list, sheet layout, purchasing summary and cutting guide for cabinetmakers, woodworkers, small shops, contractors and serious DIY builders.\n\nPRIVATE BY DESIGN\n• Offline — design projects, calculate parts, review layouts and create exports without an internet connection\n• No Login — no account, email address, password or team workspace is required\n• Privacy First — client details, job notes and cabinet measurements remain under your control\n• On Device — projects, cabinet calculations, nesting and document creation run on your iPhone\n• No Cloud Upload — Casework does not automatically upload projects, measurements, client data or exported files\n\nProjects are saved in local app storage. PDF and CSV files are created locally and leave the app only when you choose a destination in the iOS share sheet.\n\nBUILD A BOX OR A CABINET RUN\nStart with a single drawer box or a cabinet run. Add base, wall and tall cabinets; set quantity and finished outside width, height and depth. Work in millimeters or fractional inches. Set carcass and back thickness, choose an inset, full-overlay or captured-groove back, and select butt, dado or rabbet joinery. Add doors, drawers and adjustable shelves. Casework derives the required panels from those choices.\n\nGET A CONSISTENT CUT LIST\nThe generated list merges identical parts and shows quantity, length, width, thickness, grain direction and edge-banding needs. Change a dimension and recalculate to rebuild the result from the project instead of maintaining a separate spreadsheet.\n\nLAY OUT PARTS ON SHEET STOCK\nCasework groups parts by thickness and packs them onto matching sheets with a fast guillotine-style process. Set saw kerf, trim margin and grain lock. Grain-sensitive parts keep their direction while eligible parts may rotate. Review color-coded layouts, full sheets needed, material use and reusable offcuts. Warnings flag invalid dimensions, oversize panels and unplaced parts.\n\nUSE YOUR OWN MATERIALS AND PRICES\nEdit materials such as plywood, MDF or melamine with sheet size, thickness, price and grain direction. Casework matches the nearest available thickness and totals whole-sheet material cost in the device or selected currency.\n\nPREPARE HARDWARE AND EDGE BANDING\nGet estimated quantities and cost for hinges, drawer slides, shelf pins, handles and leg levelers. Edit item names and prices, and review modeled edge-banding length.\n\nFOLLOW THE CUTTING ORDER\nThe Cut tab turns each sheet into an ordered checklist with direction, reference-edge offset, released part and size. Mark steps complete at the saw and reset when needed.\n\nKEEP JOBS ORGANIZED\nCreate, switch, duplicate and delete local projects. Keep client, site and notes per job, and shop contact details for the PDF letterhead. Choose 1/16 or 1/32 inch, or 1, 0.5 or 0.1 millimeter display precision.\n\nEXPORT SHOP-READY OUTPUT\nCreate a US Letter PDF with shop letterhead, project and client details, sheet and cost summaries, cut list, hardware list, nesting diagrams and review notes. Export the cut list as CSV for a spreadsheet. Print, save to Files or share using the destination you select in iOS.\n\nCasework is a planning aid, not a replacement for professional judgment or machine-specific optimization. Confirm measurements, stock, joinery allowances, grain, edge treatment, hardware, saw setup, kerf, safety procedures and the generated plan before purchasing or cutting. Adjust results for your methods.\n\nPrivacy Policy\nhttps://woodcuttool.com/legal/Casework/privacy/\n\nTerms of Use\nhttps://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "version": "1.0",
+    "releaseDate": "2026-08-05T07:00:00Z",
+    "currentVersionReleaseDate": "2026-08-05T19:53:20Z",
+    "minimumOsVersion": "17.6",
+    "formattedPrice": "Free",
+    "trackContentRating": "4+",
+    "averageUserRating": 0,
+    "userRatingCount": 0,
+    "sellerName": "家宝 戴"
   }
 ]
