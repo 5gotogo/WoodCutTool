@@ -37,7 +37,7 @@
   },
   "/apps/": {
     "lastmod": "2026-08-17",
-    "hash": "4be7065b5cba8fb5ec84cd4acb7519e6d8f5ea7d987ee915466cd61d0ac91a98"
+    "hash": "a8e56628757c4f0da4eca66628b8a6a6b6cf6f8a9d4e728564c2338961167c5c"
   },
   "/apps/cutlist/": {
     "lastmod": "2026-07-23",
@@ -7214,6 +7214,14 @@
   "/legal/quiltfit/support/": {
     "lastmod": "2026-07-23",
     "hash": "46e3baef5d170a8344565271ad418fe1af1c1da55e3eee91cccf580609dfe29e"
+  },
+  "/legal/Spring/privacy/": {
+    "lastmod": "2026-08-17",
+    "hash": "142b3c480f67c7ecb00c64402f8f3d8ed4ff7439cbeca90cbcb49319e845800a"
+  },
+  "/legal/Spring/support/": {
+    "lastmod": "2026-08-17",
+    "hash": "c55f50b7b88701b57c31bb16f8dcc2177827f4991746751a9168593cbd860d5d"
   },
   "/legal/Stringer/privacy/": {
     "lastmod": "2026-07-23",

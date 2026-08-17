@@ -135,7 +135,8 @@ const appSupportDirectory = [
   ["MoodLoop", "/legal/MoodLoop/privacy/", "/legal/MoodLoop/support/"],
   ["Casework", "/legal/Casework/privacy/", "/legal/Casework/support/"],
   ["PrivateMind", "/legal/PrivateMind/privacy/", "/legal/PrivateMind/support/"],
-  ["TileFit", "/legal/TileFit/privacy/", "/legal/TileFit/support/"]
+  ["TileFit", "/legal/TileFit/privacy/", "/legal/TileFit/support/"],
+  ["Spring", "/legal/Spring/privacy/", "/legal/Spring/support/"]
 ];
 
 const featuredApps = [
