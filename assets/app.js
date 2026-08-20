@@ -4396,6 +4396,25 @@ function initPlywood() {
   const result = document.getElementById("plywood-result");
   if (!form || !result) return;
 
+  let initialRenderCancelled = false;
+  const scheduleAfterPaint = (callback) => {
+    const nextFrame = window.requestAnimationFrame
+      ? (frameCallback) => window.requestAnimationFrame(frameCallback)
+      : (frameCallback) => window.setTimeout(frameCallback, 16);
+    window.setTimeout(() => {
+      nextFrame(() => {
+        nextFrame(callback);
+      });
+    }, 0);
+  };
+  const cancelInitialRender = () => {
+    initialRenderCancelled = true;
+  };
+
+  form.addEventListener("focusin", cancelInitialRender, { once: true });
+  form.addEventListener("input", cancelInitialRender, { once: true });
+  form.addEventListener("keydown", cancelInitialRender, { once: true });
+
   setupRows("plywood-rows", "add-plywood-row", () => `
     <div class="piece-row four">
       <label>Panel name <input name="label" value="Panel"></label>
@@ -4406,8 +4425,7 @@ function initPlywood() {
     </div>
   `);
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
+  const render = () => {
     const sheetLength = numberValue(form, "sheetLength", 96);
     const sheetWidth = numberValue(form, "sheetWidth", 48);
     const kerf = numberValue(form, "kerf", 0.125);
@@ -4499,9 +4517,17 @@ function initPlywood() {
       estimated_savings: savedValue,
       rejected_count: packed.rejected.length,
     });
+  };
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    cancelInitialRender();
+    scheduleAfterPaint(render);
   });
 
-  form.requestSubmit();
+  scheduleAfterPaint(() => {
+    if (!initialRenderCancelled) render();
+  });
 }
 
 function initStairs() {
