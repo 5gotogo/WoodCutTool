@@ -36,8 +36,8 @@
     "hash": "8cd4112491618eab37ece35ee3af1fac02ec08dcda1acd4b06dfd8fb712c289d"
   },
   "/apps/": {
-    "lastmod": "2026-08-17",
-    "hash": "a8e56628757c4f0da4eca66628b8a6a6b6cf6f8a9d4e728564c2338961167c5c"
+    "lastmod": "2026-08-22",
+    "hash": "f1131ebf15b43937cf58bca73b44da986caa40539bb85295beeefe0717014648"
   },
   "/apps/cutlist/": {
     "lastmod": "2026-07-23",
@@ -7182,6 +7182,14 @@
   "/legal/cutlist/support/": {
     "lastmod": "2026-07-23",
     "hash": "4a6a729d26486fdd86060acab39006ed30ba4b29947ca102fbdbee5c9b57e568"
+  },
+  "/legal/DuctLab/privacy/": {
+    "lastmod": "2026-08-22",
+    "hash": "120c8f77d443d90dc6e56498241352f8722410afd45fddf32a830d0f237aa013"
+  },
+  "/legal/DuctLab/support/": {
+    "lastmod": "2026-08-22",
+    "hash": "5830af1603fe8e9038ccdb58e234392e7096a93e5fab522d3bc9a9c47ecd89a6"
   },
   "/legal/JobPhotoLog/privacy/": {
     "lastmod": "2026-07-23",

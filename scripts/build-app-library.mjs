@@ -134,6 +134,7 @@ const appSupportDirectory = [
   ["Tinnitus Relief", "/legal/Tinnitus/privacy/", "/legal/Tinnitus/support/"],
   ["MoodLoop", "/legal/MoodLoop/privacy/", "/legal/MoodLoop/support/"],
   ["Casework", "/legal/Casework/privacy/", "/legal/Casework/support/"],
+  ["DuctLab", "/legal/DuctLab/privacy/", "/legal/DuctLab/support/"],
   ["PrivateMind", "/legal/PrivateMind/privacy/", "/legal/PrivateMind/support/"],
   ["TileFit", "/legal/TileFit/privacy/", "/legal/TileFit/support/"],
   ["Spring", "/legal/Spring/privacy/", "/legal/Spring/support/"]
