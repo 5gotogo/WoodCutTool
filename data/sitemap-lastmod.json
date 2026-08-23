@@ -1,7 +1,7 @@
 {
   "/": {
-    "lastmod": "2026-07-31",
-    "hash": "407ecdcf866301e024bbf2924bc3bfd685013574dc09507e6d8587336eb972ca"
+    "lastmod": "2026-08-23",
+    "hash": "3ea2b5cdc26ef8bb5cfb3bfaf67b2d81d5cec982f98cefaef4bf48e187572418"
   },
   "/tools/": {
     "lastmod": "2026-07-30",
@@ -12,8 +12,12 @@
     "hash": "f1740c12d0c824ce1a075390012d4ccf07d3f6c41d59988670cc3af437cf5210"
   },
   "/projects/": {
-    "lastmod": "2026-07-31",
-    "hash": "380a6eb638c56923bf5ad3863c5e62a44fc6427c2aa383010dacca2c986afeb5"
+    "lastmod": "2026-08-23",
+    "hash": "689690967fc976d8d20e8d5cddccf0eb51ca47570d94c38d9167713996312231"
+  },
+  "/one-sheet-projects/": {
+    "lastmod": "2026-08-23",
+    "hash": "7e8424979c0735fe2603183b59b99b93ee0853b145c35a2959d45bc73603d83b"
   },
   "/learn/": {
     "lastmod": "2026-07-27",
@@ -28,8 +32,8 @@
     "hash": "0f4111b9999c37731647449a7b28f9842c02f050a089894b2a2809f6b8b59a4b"
   },
   "/examples/": {
-    "lastmod": "2026-07-23",
-    "hash": "fcd4695b487c21a370dbabf8670448593c292e1f2dd35e2543d0b8ee1a890183"
+    "lastmod": "2026-08-23",
+    "hash": "21c47cc91717dd75fede3c13f0d190ca81a030fa6b8948431fc524edf7a102cf"
   },
   "/glossary/": {
     "lastmod": "2026-07-27",

@@ -164,6 +164,10 @@ function sitemapMeta(route) {
     return { changefreq: "weekly", priority: "0.94" };
   }
 
+  if (route === "/one-sheet-projects/") {
+    return { changefreq: "weekly", priority: "0.94" };
+  }
+
   if (route === "/learn/") {
     return { changefreq: "weekly", priority: "0.93" };
   }
@@ -301,6 +305,7 @@ function sortRoutes(routes) {
     "/tools/",
     "/tools/components/",
     "/projects/",
+    "/one-sheet-projects/",
     "/learn/",
     "/troubleshooting/",
     "/checklists/",
@@ -409,7 +414,7 @@ const explicitToolRoutes = new Set([
 
 function sitemapGroup(route) {
   if (explicitToolRoutes.has(route) || route.startsWith("/tools/")) return "tools";
-  if (route.startsWith("/projects/")) return "projects";
+  if (route.startsWith("/projects/") || route.startsWith("/one-sheet-projects/")) return "projects";
   if (route.startsWith("/learn/")) return "learn";
   if (route.startsWith("/templates/")) return "templates";
   if (route.startsWith("/worksheets/")) return "worksheets";
