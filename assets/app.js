@@ -5491,8 +5491,20 @@ function initBlogDirectorySearch() {
   const directoryItems = [...root.querySelectorAll("[data-blog-directory-item]")];
   const categoryLinks = [...root.querySelectorAll("[data-blog-category-link]")];
   const sections = [...root.querySelectorAll("[data-blog-section]")];
+  const blogMain = root.querySelector(".blog-main");
+  const mobileQuery = window.matchMedia("(max-width: 680px)");
+  const sectionCards = cards.filter((card) => !featured?.contains(card));
   if (!input) return;
-  let filterActive = false;
+  let activeCategory = "";
+  let mobileVisibleLimit = 24;
+
+  const mobilePager = document.createElement("div");
+  mobilePager.className = "blog-mobile-pager";
+  mobilePager.hidden = true;
+  mobilePager.innerHTML = `<p data-blog-page-status></p><button class="button secondary" type="button">${t("More")}</button>`;
+  blogMain?.append(mobilePager);
+  const mobilePagerStatus = mobilePager.querySelector("[data-blog-page-status]");
+  const mobilePagerButton = mobilePager.querySelector("button");
   categoryLinks.forEach((link) => {
     const countElement = link.querySelector("[data-blog-category-count]");
     if (countElement && !countElement.dataset.originalBlogCategoryCount) {
@@ -5507,39 +5519,69 @@ function initBlogDirectorySearch() {
     return terms.every((term) => searchText.includes(term));
   };
 
-  const applyFilter = () => {
-    const terms = getTerms();
-    if (!terms.length) {
-      if (filterActive) {
-        [...cards, ...directoryItems, ...categoryLinks, ...sections, featured].filter(Boolean).forEach((element) => {
-          element.hidden = false;
-          element.style.display = "";
-        });
-        categoryLinks.forEach((link) => {
-          const countElement = link.querySelector("[data-blog-category-count]");
-          if (countElement?.dataset.originalBlogCategoryCount) {
-            countElement.textContent = countElement.dataset.originalBlogCategoryCount;
-          }
-        });
-      }
-      filterActive = false;
-      if (status) status.textContent = `${directoryItems.length} articles`;
-      if (empty) empty.hidden = true;
+  const applyMobilePagination = () => {
+    if (!mobileQuery.matches) {
+      mobilePager.hidden = true;
       return;
     }
 
-    filterActive = true;
+    const eligibleCards = sectionCards.filter((card) => card.dataset.blogFilterMatch !== "false");
+    eligibleCards.forEach((card, index) => {
+      const isVisible = index < mobileVisibleLimit;
+      card.hidden = !isVisible;
+      card.style.display = isVisible ? "" : "none";
+    });
+
+    sections.forEach((section) => {
+      const visibleCards = [...section.querySelectorAll("[data-blog-card]")].some((card) => !card.hidden);
+      section.hidden = !visibleCards;
+      section.style.display = visibleCards ? "" : "none";
+    });
+
+    const shownCount = Math.min(mobileVisibleLimit, eligibleCards.length);
+    mobilePager.hidden = eligibleCards.length === 0;
+    if (mobilePagerStatus) {
+      mobilePagerStatus.textContent = `${activeCategory ? `${activeCategory} · ` : ""}${shownCount} / ${eligibleCards.length}`;
+    }
+    if (mobilePagerButton) {
+      mobilePagerButton.hidden = shownCount >= eligibleCards.length;
+    }
+  };
+
+  const applyFilter = () => {
+    const terms = getTerms();
+    if (!terms.length && !activeCategory) {
+      [...cards, ...directoryItems, ...categoryLinks, ...sections, featured].filter(Boolean).forEach((element) => {
+        element.hidden = false;
+        element.style.display = "";
+      });
+      cards.forEach((card) => {
+        card.dataset.blogFilterMatch = "true";
+      });
+      categoryLinks.forEach((link) => {
+        const countElement = link.querySelector("[data-blog-category-count]");
+        if (countElement?.dataset.originalBlogCategoryCount) {
+          countElement.textContent = countElement.dataset.originalBlogCategoryCount;
+        }
+      });
+      if (status) status.textContent = `${directoryItems.length} articles`;
+      if (empty) empty.hidden = true;
+      applyMobilePagination();
+      return;
+    }
+
     let visibleItems = 0;
     const visibleByCategory = new Map();
 
     cards.forEach((card) => {
-      const matched = isMatch(card, terms);
+      const matched = (!activeCategory || card.dataset.blogCategory === activeCategory) && isMatch(card, terms);
+      card.dataset.blogFilterMatch = String(matched);
       card.hidden = !matched;
       card.style.display = matched ? "" : "none";
     });
 
     directoryItems.forEach((item) => {
-      const matched = isMatch(item, terms);
+      const matched = (!activeCategory || item.dataset.blogCategory === activeCategory) && isMatch(item, terms);
       item.hidden = !matched;
       item.style.display = matched ? "" : "none";
       if (matched) {
@@ -5578,6 +5620,8 @@ function initBlogDirectorySearch() {
     if (empty) {
       empty.hidden = visibleItems > 0;
     }
+
+    applyMobilePagination();
   };
 
   // Prefill from ?q= when linking to filtered blog directory views.
@@ -5589,8 +5633,86 @@ function initBlogDirectorySearch() {
     }
   } catch (e) { /* ignore */ }
 
-  input.addEventListener("input", applyFilter);
+  input.addEventListener("input", () => {
+    activeCategory = "";
+    mobileVisibleLimit = 24;
+    applyFilter();
+  });
+  categoryLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (!mobileQuery.matches) return;
+      activeCategory = link.dataset.blogCategoryLink || "";
+      input.value = "";
+      mobileVisibleLimit = 24;
+      applyFilter();
+    });
+  });
+  mobilePagerButton?.addEventListener("click", () => {
+    mobileVisibleLimit += 24;
+    applyMobilePagination();
+  });
+  mobileQuery.addEventListener?.("change", () => {
+    mobileVisibleLimit = 24;
+    applyFilter();
+  });
   applyFilter();
+}
+
+function initLearnMobileSections() {
+  const root = document.querySelector(".learn-page");
+  if (!root) return;
+  const sections = [...root.querySelectorAll(":scope > .template-category-section")];
+  if (!sections.length) return;
+  const mobileQuery = window.matchMedia("(max-width: 680px)");
+
+  const entries = sections.map((section, index) => {
+    const heading = section.querySelector(":scope > .template-category-heading");
+    const content = section.querySelector(":scope > .grid.tools");
+    const title = heading?.querySelector("h2")?.textContent.trim() || `Section ${index + 1}`;
+    if (!heading || !content) return null;
+    if (!content.id) content.id = `learn-section-${section.id || index + 1}`;
+
+    const button = document.createElement("button");
+    button.className = "learn-section-toggle";
+    button.type = "button";
+    button.setAttribute("aria-controls", content.id);
+    button.innerHTML = `<span aria-hidden="true"></span>`;
+    heading.append(button);
+
+    const setExpanded = (expanded) => {
+      content.hidden = !expanded;
+      section.classList.toggle("is-expanded", expanded);
+      button.setAttribute("aria-expanded", String(expanded));
+      button.setAttribute("aria-label", `${expanded ? "Hide" : "Show"} ${title} guides`);
+    };
+
+    button.addEventListener("click", () => {
+      section.dataset.learnUserToggled = "true";
+      setExpanded(button.getAttribute("aria-expanded") !== "true");
+    });
+
+    return { section, content, button, setExpanded, index };
+  }).filter(Boolean);
+
+  const sync = () => {
+    entries.forEach(({ section, content, button, setExpanded, index }) => {
+      if (!mobileQuery.matches) {
+        content.hidden = false;
+        button.hidden = true;
+        section.classList.remove("is-expanded");
+        return;
+      }
+      button.hidden = false;
+      if (!section.dataset.learnUserToggled) {
+        const hashMatches = Boolean(window.location.hash && `#${section.id}` === window.location.hash);
+        setExpanded(index === 0 || hashMatches);
+      }
+    });
+  };
+
+  mobileQuery.addEventListener?.("change", sync);
+  window.addEventListener("hashchange", sync);
+  sync();
 }
 
 function initApp() {
@@ -5618,6 +5740,7 @@ function initApp() {
   initQuiltFit();
   initTileCalculator();
   initBlogDirectorySearch();
+  initLearnMobileSections();
 }
 
 if (document.readyState === "loading") {

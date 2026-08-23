@@ -591,6 +591,30 @@
     mobileQuery.addEventListener?.("change", closeMenus);
   }
 
+  function initBackToTop() {
+    if (typeof document.createElement !== "function" || document.querySelector("[data-back-to-top]")) return;
+    const button = document.createElement("button");
+    button.className = "back-to-top";
+    button.type = "button";
+    button.hidden = true;
+    button.dataset.backToTop = "true";
+    button.setAttribute("aria-label", "Back to top");
+    button.innerHTML = `<span aria-hidden="true">↑</span>`;
+    document.body.append(button);
+
+    const updateVisibility = () => {
+      button.hidden = window.scrollY < 1100;
+    };
+
+    button.addEventListener("click", () => {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    });
+    window.addEventListener("scroll", updateVisibility, { passive: true });
+    updateVisibility();
+  }
+
   renderSiteChrome();
   initMegaNavigation();
+  initBackToTop();
 })();
