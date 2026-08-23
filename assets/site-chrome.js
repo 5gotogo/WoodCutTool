@@ -373,7 +373,7 @@
     const toolsMenu = `<div class="mega-menu" role="group" aria-label="Tools menu">${megaFeature({ href: "/tools/", title: "Choose a calculator by project", description: "Browse focused woodworking and construction tools without mixing unrelated app categories into the planning hub.", cta: "Browse tools ->", visual: "tools" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Woodworking Tools</p>${menuLink({ href: "/tools/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut and layout, cabinets, furniture, wood, and materials." })}${tools.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Construction Tools</p>${menuLink({ href: "/tools/construction/", icon: "CN", title: "Construction hub", description: "Stairs, tile, deck, fence, wall, roof, and concrete." })}${tools.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Tool directory</p>${menuLink({ href: "/tools/", icon: "TL", title: "All tools", description: "Open the full calculator and planning hub.", exact: true })}${menuLink({ href: "/tools/components/", icon: "CC", title: "Component calculators", description: "Merge reusable cabinet component cut lists into one browser-local project." })}${menuLink({ href: "/conversion/", icon: "CV", title: "Conversion calculator", description: "Convert fractions, inches, millimeters, angles, rise, and run." })}${menuLink({ href: "/material-list-generator/", icon: "MT", title: "Material list", description: "Turn project inputs into a material checklist." })}${menuLink({ href: "/drill-bit-finder/", icon: "DR", title: "Drill bit finder", description: "Match screw diameter to pilot and clearance holes." })}</div></div></div>`;
     const appsMenu = `<div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for saved workflows", description: "Use the website for quick checks, then move repeatable projects into focused iPhone apps when you need saved records.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Planning apps</p>${apps.slice(0, 4).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Document apps</p>${apps.slice(4, 7).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">More apps</p>${apps.slice(7, 10).map(menuLink).join("")}${menuLink({ href: "/apps/compare/", icon: "VS", title: "App comparisons", description: "Compare app workflows against common alternatives." })}</div></div></div>`;
 
-    return `<div class="nav-links nav-links-mega">${navMenuItem({ href: "/tools/", label: "Tools", aliases: tools.map((item) => item.href), menu: toolsMenu })}${resourceNavMenu(projectsMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(resourcesMenu)}${navMenuItem({ href: "/apps/", label: "Apps", menu: appsMenu })}</div>`;
+    return `<div class="nav-links nav-links-mega" id="site-navigation">${navMenuItem({ href: "/tools/", label: "Tools", aliases: tools.map((item) => item.href), menu: toolsMenu })}${resourceNavMenu(projectsMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(resourcesMenu)}${navMenuItem({ href: "/apps/", label: "Apps", menu: appsMenu })}</div>`;
   }
 
   function header() {
@@ -382,7 +382,7 @@
     const storeIcon = isStoreLink
       ? `<span class="nav-store-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M16.7 12.8c0-2 1.6-3 1.7-3.1a3.7 3.7 0 0 0-2.9-1.6c-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7a3.9 3.9 0 0 0-3.3 2c-1.4 2.4-.4 6 1 8 .7 1 1.5 2.1 2.6 2 .9 0 1.3-.6 2.5-.6s1.5.6 2.5.6c1.1 0 1.8-1 2.5-2a8.7 8.7 0 0 0 1.1-2.3 3.5 3.5 0 0 1-2.1-3Zm-2-6c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.6-1 2.6 1 .1 2-.5 2.7-1.2Z"/></svg></span>`
       : "";
-    return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><img class="brand-icon" src="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619" width="34" height="34" alt="">WoodCutTool</a>${navLinks()}<a class="button small nav-download-cta" href="${href}"${isStoreLink ? ' data-app-store-link data-platform-label data-conversion-placement="navigation" rel="nofollow noopener"' : ""}>${storeIcon}<span data-platform-label-text>${label}</span></a></nav></header>`;
+    return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/" aria-label="WoodCutTool home"><img class="brand-icon" src="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619" width="34" height="34" alt=""><span class="brand-name">WoodCutTool</span></a>${navLinks()}<button class="mobile-nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false"><span class="mobile-nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span><span class="visually-hidden">Open menu</span></button><a class="button small nav-download-cta" href="${href}" aria-label="${label}"${isStoreLink ? ' data-app-store-link data-platform-label data-conversion-placement="navigation" rel="nofollow noopener"' : ""}>${storeIcon}<span data-platform-label-text>${label}</span></a></nav></header>`;
   }
 
   function footerColumn(title, links) {
@@ -490,6 +490,7 @@
     navLinks.dataset.boundMegaNavigation = "true";
 
     const mobileQuery = window.matchMedia("(max-width: 979px)");
+    const mobileToggle = nav.querySelector(".mobile-nav-toggle");
     const items = [...navLinks.querySelectorAll(".nav-menu-item")];
     if (!items.length) return;
 
@@ -499,7 +500,7 @@
       document.documentElement.style.setProperty("--mega-menu-top", `${Math.max(0, Math.round(bottom))}px`);
     };
 
-    const closeMenus = () => {
+    const closeSubmenus = () => {
       items.forEach((item) => {
         item.classList.remove("is-open");
         const toggle = item.querySelector(".nav-menu-toggle");
@@ -511,6 +512,27 @@
         }
       });
       nav.classList.remove("nav-mega-open");
+    };
+
+    const setMobileNavigation = (isOpen) => {
+      if (!mobileQuery.matches) isOpen = false;
+      nav.classList.toggle("nav-mobile-open", isOpen);
+      document.body.classList.toggle("mobile-navigation-open", isOpen);
+      mobileToggle?.setAttribute("aria-expanded", String(isOpen));
+      mobileToggle?.setAttribute("aria-label", `${isOpen ? "Close" : "Open"} menu`);
+      if (mobileToggle?.querySelector(".visually-hidden")) {
+        mobileToggle.querySelector(".visually-hidden").textContent = `${isOpen ? "Close" : "Open"} menu`;
+      }
+      if (isOpen) {
+        updateMenuTop();
+      } else {
+        closeSubmenus();
+      }
+    };
+
+    const closeMenus = () => {
+      closeSubmenus();
+      setMobileNavigation(false);
     };
 
     const openMenu = (item) => {
@@ -530,6 +552,10 @@
       nav.classList.add("nav-mega-open");
     };
 
+    mobileToggle?.addEventListener("click", () => {
+      setMobileNavigation(!nav.classList.contains("nav-mobile-open"));
+    });
+
     items.forEach((item) => {
       const toggle = item.querySelector(".nav-menu-toggle");
       if (!toggle) return;
@@ -538,7 +564,7 @@
         event.preventDefault();
         event.stopPropagation();
         if (item.classList.contains("is-open")) {
-          closeMenus();
+          closeSubmenus();
         } else {
           openMenu(item);
         }
@@ -546,8 +572,12 @@
     });
 
     document.addEventListener("click", (event) => {
-      if (!nav.classList.contains("nav-mega-open")) return;
+      if (!nav.classList.contains("nav-mega-open") && !nav.classList.contains("nav-mobile-open")) return;
       if (!event.target.closest(".site-header")) closeMenus();
+    });
+
+    navLinks.addEventListener("click", (event) => {
+      if (mobileQuery.matches && event.target.closest("a")) closeMenus();
     });
 
     document.addEventListener("keydown", (event) => {
