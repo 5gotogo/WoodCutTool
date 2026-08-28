@@ -617,7 +617,101 @@
     updateVisibility();
   }
 
+  function initMobileExperience() {
+    const header = document.querySelector(".site-header");
+    if (!header) return;
+    const mobileQuery = window.matchMedia("(max-width: 680px)");
+
+    const progress = document.createElement("span");
+    progress.className = "reading-progress";
+    progress.setAttribute("aria-hidden", "true");
+    progress.innerHTML = "<span></span>";
+    header.append(progress);
+
+    let scrollFrame = 0;
+    const updatePageProgress = () => {
+      scrollFrame = 0;
+      const scrollable = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      const ratio = Math.min(1, Math.max(0, window.scrollY / scrollable));
+      progress.style.setProperty("--reading-progress", ratio.toFixed(4));
+      header.classList.toggle("is-page-scrolled", window.scrollY > 12);
+    };
+    const requestPageProgress = () => {
+      if (scrollFrame) return;
+      scrollFrame = window.requestAnimationFrame(updatePageProgress);
+    };
+
+    const rails = [...document.querySelectorAll("[data-mobile-rail]")].map((rail, railIndex) => {
+      const items = [...rail.children];
+      if (items.length < 2) return null;
+
+      const status = document.createElement("div");
+      status.className = "mobile-rail-status";
+      status.setAttribute("aria-hidden", "true");
+      status.innerHTML = `<span class="mobile-rail-track"><span></span></span><span class="mobile-rail-count">1 / ${items.length}</span>`;
+      rail.insertAdjacentElement("afterend", status);
+      rail.dataset.mobileRailIndex = String(railIndex + 1);
+      rail.tabIndex = 0;
+
+      let railFrame = 0;
+      const getActiveIndex = () => {
+        const railCenter = rail.getBoundingClientRect().left + rail.clientWidth / 2;
+        let activeIndex = 0;
+        let nearestDistance = Number.POSITIVE_INFINITY;
+        items.forEach((item, index) => {
+          const rect = item.getBoundingClientRect();
+          const distance = Math.abs(rect.left + rect.width / 2 - railCenter);
+          if (distance < nearestDistance) {
+            nearestDistance = distance;
+            activeIndex = index;
+          }
+        });
+        return activeIndex;
+      };
+      const updateRail = () => {
+        railFrame = 0;
+        if (!mobileQuery.matches) return;
+        const activeIndex = getActiveIndex();
+        const ratio = items.length > 1 ? activeIndex / (items.length - 1) : 0;
+        status.style.setProperty("--mobile-rail-progress", ratio.toFixed(4));
+        const count = status.querySelector(".mobile-rail-count");
+        if (count) count.textContent = `${activeIndex + 1} / ${items.length}`;
+        rail.classList.toggle("is-scroll-start", activeIndex === 0);
+        rail.classList.toggle("is-scroll-end", activeIndex === items.length - 1);
+      };
+      const requestRailUpdate = () => {
+        if (railFrame) return;
+        railFrame = window.requestAnimationFrame(updateRail);
+      };
+      rail.addEventListener("scroll", requestRailUpdate, { passive: true });
+      rail.addEventListener("keydown", (event) => {
+        if (!mobileQuery.matches || !["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+        event.preventDefault();
+        const rtl = document.documentElement.dir === "rtl";
+        const forward = event.key === "ArrowRight" ? 1 : -1;
+        const targetIndex = Math.min(items.length - 1, Math.max(0, getActiveIndex() + (rtl ? -forward : forward)));
+        const railRect = rail.getBoundingClientRect();
+        const targetRect = items[targetIndex].getBoundingClientRect();
+        const inset = Number.parseFloat(getComputedStyle(rail).paddingLeft) || 0;
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        rail.scrollBy({ left: targetRect.left - railRect.left - inset, behavior: reduceMotion ? "auto" : "smooth" });
+      });
+      updateRail();
+      return { update: updateRail };
+    }).filter(Boolean);
+
+    const sync = () => {
+      updatePageProgress();
+      rails.forEach(({ update }) => update());
+    };
+    window.addEventListener("scroll", requestPageProgress, { passive: true });
+    window.addEventListener("resize", sync, { passive: true });
+    mobileQuery.addEventListener?.("change", sync);
+    sync();
+  }
+
   renderSiteChrome();
   initMegaNavigation();
   initBackToTop();
+  initMobileExperience();
 })();
