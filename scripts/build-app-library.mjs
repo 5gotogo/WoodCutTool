@@ -49,17 +49,6 @@ function seoTitle(title, max = 65) {
   return `${core}${titleSuffix}`;
 }
 
-function initials(name) {
-  return name
-    .replace(/[–—:&-]/g, " ")
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((part) => part[0])
-    .join("")
-    .toUpperCase();
-}
-
 function head({ title, description, canonical, jsonLd = "" }) {
   return `<head>
   <meta charset="utf-8">
@@ -341,23 +330,6 @@ ${categorySections.map((section) => `        <a href="#${escapeHtml(section.id)}
     </section>`;
 }
 
-function relatedToolCard(tool) {
-  return `<article class="store-app-card directory-tool-card">
-          <a class="store-app-card-link" href="${escapeHtml(tool.href)}" aria-label="Open ${escapeHtml(tool.name)} calculator">
-            <div class="store-app-top">
-              <span class="store-app-icon">${escapeHtml(initials(tool.name))}</span>
-              <span class="store-app-genre">${escapeHtml(tool.label)}</span>
-            </div>
-            <h3>${escapeHtml(tool.name)}</h3>
-            <p>${escapeHtml(tool.description)}</p>
-            <div class="store-app-tags">${tool.tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>
-          </a>
-          <div class="store-app-actions single">
-            <a class="store-detail-button" href="${escapeHtml(tool.href)}">Open calculator</a>
-          </div>
-        </article>`;
-}
-
 function categorySection(section) {
   return `    <section class="section app-directory-section" aria-labelledby="${escapeHtml(section.id)}">
       <div class="section-heading compact">
@@ -367,7 +339,6 @@ function categorySection(section) {
       </div>
       <div class="app-library-grid category-app-grid" aria-label="${escapeHtml(section.title)}">
 ${appCardsFor(section.slugs)}
-${(section.relatedTools || []).map(relatedToolCard).join("\n")}
       </div>
     </section>`;
 }
