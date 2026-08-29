@@ -5,6 +5,7 @@
     quiltfit: "https://apps.apple.com/us/app/quiltfit-quilt-design-planner/id6776541705",
     stringer: "https://apps.apple.com/us/app/stringer-stair-layout/id6784882437?uo=4",
     snaplabel: "https://apps.apple.com/us/app/snaplabel-photo-text-label/id6751947372",
+    moodloop: "https://apps.apple.com/us/app/moodloop-mood-tracker-journal/id6797190025",
     tinnitus: "https://apps.apple.com/us/app/tinnitus-relief-sound-masking/id6782496783"
   };
 
@@ -22,6 +23,12 @@
       current.startsWith("/legal/TileFit/")
     ) {
       return ["Download TileFit", appStoreLinks.tilefit];
+    }
+    if (
+      current.startsWith("/apps/moodloop-mood-tracker-journal/") ||
+      current.startsWith("/legal/MoodLoop/")
+    ) {
+      return ["Get MoodLoop", appStoreLinks.moodloop];
     }
     if (
       current.startsWith("/tinnitus/") ||
@@ -154,7 +161,7 @@
       { href: "/apps/jobphotolog-work-reports/", icon: "JP", title: "JobPhotoLog", description: "Organize jobsite photos, before-and-after proof, signatures, punch lists, and PDF reports." },
       { href: "/apps/snapreceipt-expenses-and-tax/", icon: "SR", title: "SnapReceipt", description: "Scan receipts and prepare expense or tax records." },
       { href: "/apps/pdf-scan-scanner-and-reader/", icon: "PS", title: "PDF Scan", description: "Turn paper documents into readable PDFs." },
-      { href: "/apps/snaplabel-photo-text-label/", icon: "SL", title: "SnapLabel", description: "Create photo labels for storage, products, boxes, and home organization." },
+      { href: "/apps/moodloop-mood-tracker-journal/", icon: "ML", title: "MoodLoop", description: "Track daily moods, notes, patterns, and personal insights privately on iPhone." },
       { href: "/apps/tinnitus-relief-sound-masking/", aliases: ["/tinnitus/"], icon: "TN", title: "Tinnitus Relief", description: "Masking sounds and hearing-profile tools for iPhone." },
       { href: "/apps/", icon: "AP", title: "All apps", description: "Browse the full app library and comparisons.", exact: true }
     ];

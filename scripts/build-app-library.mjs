@@ -103,6 +103,10 @@ const generatedOverrideSlugs = new Set(["stringer-stair-layout"]);
 const handWrittenOverrideSlugs = new Set(["cutlist-plywood-optimizer", "quiltfit-quilt-design-planner"]);
 
 const legalLinksBySlug = {
+  "moodloop-mood-tracker-journal": {
+    privacy: "/legal/MoodLoop/privacy/",
+    support: "/legal/MoodLoop/support/"
+  },
   "tilefit-tile-layout-planner": {
     privacy: "/legal/TileFit/privacy/",
     support: "/legal/TileFit/support/"
@@ -141,6 +145,7 @@ const appSupportDirectory = [
 ];
 
 const featuredApps = [
+  ["moodloop-mood-tracker-journal", "Private daily mood journal with on-device check-ins, calendar trends, habit insights, photos, and optional journal lock."],
   ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
   ["casework-cabinet-cut-lists", "On-device cabinet planning for parts lists, sheet layouts, hardware estimates, cutting steps, and shop-ready exports."],
   ["tilefit-tile-layout-planner", "Offline tile layout planner with six patterns, material estimates, grouped cuts, installation order, and PDF export."],
@@ -196,7 +201,7 @@ const categorySections = [
     id: "health-focus-personal-apps",
     title: "Health, Focus & Personal Apps",
     description: "Calm personal utilities for journaling, habits, tinnitus sound masking, fasting, focus, breathing, sleep rhythm, and easier reading.",
-    slugs: ["mindnest-secret-journal", "ritualix-habits-and-streaks", "glowfeel-stress-ease", "tinnitus-relief-sound-masking", "fast-rhythm-fasting-and-sleep", "magnifier-reader-big-text"]
+    slugs: ["moodloop-mood-tracker-journal", "mindnest-secret-journal", "ritualix-habits-and-streaks", "glowfeel-stress-ease", "tinnitus-relief-sound-masking", "fast-rhythm-fasting-and-sleep", "magnifier-reader-big-text"]
   },
   {
     id: "games",
@@ -207,6 +212,7 @@ const categorySections = [
 ];
 
 const appTags = {
+  "moodloop-mood-tracker-journal": ["Mood journal", "Daily check-ins", "On device", "Private"],
   "cutlist-plywood-optimizer": ["Plywood", "Cut lists", "Offline", "PDF export"],
   "casework-cabinet-cut-lists": ["Cabinets", "Cut lists", "Nesting", "PDF & CSV"],
   "tilefit-tile-layout-planner": ["Tile layouts", "Six patterns", "Offline", "PDF export"],
@@ -248,6 +254,7 @@ const appTags = {
 };
 
 const directoryDescriptions = new Map(featuredApps);
+directoryDescriptions.set("moodloop-mood-tracker-journal", "Private daily mood journal with offline check-ins, calendar and chart views, local habit insights, photos, and optional Face ID or PIN lock.");
 directoryDescriptions.set("casework-cabinet-cut-lists", "On-device cabinet planner for parts lists, sheet layouts, material and hardware estimates, cutting steps, and PDF or CSV exports.");
 directoryDescriptions.set("thumbtype-typing-speed-test", "Private, offline iPhone typing practice with timed WPM tests, accuracy tracking, daily challenges, and multilingual lessons.");
 directoryDescriptions.set("tilefit-tile-layout-planner", "Plan floor, wall, backsplash, and countertop tile layouts with six patterns, box and cost estimates, grouped cuts, and PDF export.");
