@@ -161,16 +161,7 @@ const categorySections = [
     id: "maker-calculator-apps",
     title: "Maker & Calculator Apps",
     description: "Practical iPhone tools for people who plan, measure, cut, design, or build physical projects. These apps focus on cabinet planning, plywood optimization, quilt planning, tile estimation, stair stringer calculation, and other maker workflows.",
-    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "tilefit-tile-layout-planner", "quiltfit-quilt-design-planner", "stringer-stair-layout"],
-    relatedTools: [
-      {
-        name: "Tile",
-        label: "Calculator",
-        description: "Tile layout and material planning calculator for floor and wall projects.",
-        href: "/tile-calculator/",
-        tags: ["Tile layout", "Materials", "Planning"]
-      }
-    ]
+    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "tilefit-tile-layout-planner", "quiltfit-quilt-design-planner", "stringer-stair-layout"]
   },
   {
     id: "small-business-apps",

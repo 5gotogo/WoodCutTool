@@ -12,6 +12,10 @@ function appIdFromUrl(url) {
   return String(url || "").match(/\/id(\d+)/)?.[1] || "";
 }
 
+function highResolutionScreenshotUrl(url) {
+  return String(url || "").replace(/\/\d+x\d+bb\.(?:jpg|jpeg|png|webp)$/i, "/1290x2796bb.jpg");
+}
+
 function normalizeResult(existing, result) {
   return {
     id: result.trackId,
@@ -21,7 +25,7 @@ function normalizeResult(existing, result) {
     genres: result.genres || [],
     url: result.trackViewUrl,
     artworkUrl512: result.artworkUrl512 || result.artworkUrl100 || existing.artworkUrl512,
-    screenshotUrls: result.screenshotUrls || [],
+    screenshotUrls: (result.screenshotUrls || []).map(highResolutionScreenshotUrl),
     description: result.description || "",
     version: result.version || "",
     releaseDate: result.releaseDate || "",
