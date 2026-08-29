@@ -145,7 +145,6 @@ const appSupportDirectory = [
 ];
 
 const featuredApps = [
-  ["moodloop-mood-tracker-journal", "Private daily mood journal with on-device check-ins, calendar trends, habit insights, photos, and optional journal lock."],
   ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
   ["casework-cabinet-cut-lists", "On-device cabinet planning for parts lists, sheet layouts, hardware estimates, cutting steps, and shop-ready exports."],
   ["tilefit-tile-layout-planner", "Offline tile layout planner with six patterns, material estimates, grouped cuts, installation order, and PDF export."],
@@ -188,8 +187,8 @@ const categorySections = [
   {
     id: "home-everyday-utility-apps",
     title: "Home & Everyday Utility Apps",
-    description: "Everyday iPhone utilities for home organization, pantry labels, QR codes, photo cleanup, private storage, and simple tasks that should stay quick and local.",
-    slugs: ["fridgetrack-fridge-inventory", "pantry-label-maker-kitchen", "address-label-maker-and-envelope", "snapqr-qr-generator-app", "snapcleaner-clean-photos", "photosafe-private-photo-vault", "snaplabel-photo-text-label"]
+    description: "Everyday iPhone utilities for private daily routines, home organization, pantry labels, QR codes, photo cleanup, storage, and simple tasks that should stay quick and local.",
+    slugs: ["moodloop-mood-tracker-journal", "fridgetrack-fridge-inventory", "pantry-label-maker-kitchen", "address-label-maker-and-envelope", "snapqr-qr-generator-app", "snapcleaner-clean-photos", "photosafe-private-photo-vault", "snaplabel-photo-text-label"]
   },
   {
     id: "creative-media-apps",
@@ -201,7 +200,7 @@ const categorySections = [
     id: "health-focus-personal-apps",
     title: "Health, Focus & Personal Apps",
     description: "Calm personal utilities for journaling, habits, tinnitus sound masking, fasting, focus, breathing, sleep rhythm, and easier reading.",
-    slugs: ["moodloop-mood-tracker-journal", "mindnest-secret-journal", "ritualix-habits-and-streaks", "glowfeel-stress-ease", "tinnitus-relief-sound-masking", "fast-rhythm-fasting-and-sleep", "magnifier-reader-big-text"]
+    slugs: ["mindnest-secret-journal", "ritualix-habits-and-streaks", "glowfeel-stress-ease", "tinnitus-relief-sound-masking", "fast-rhythm-fasting-and-sleep", "magnifier-reader-big-text"]
   },
   {
     id: "games",
