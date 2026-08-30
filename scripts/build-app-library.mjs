@@ -486,7 +486,14 @@ ${faqSection()}
 function detailVisual(app, index) {
   const screenshots = (app.screenshotUrls || []).slice(0, 3);
   if (screenshots.length) {
-    return `<div class="app-screenshot-strip">${screenshots.map((url) => `<img src="${escapeHtml(url)}" alt="${escapeHtml(app.name)} screenshot" loading="lazy">`).join("")}</div>`;
+    return `<div class="app-screenshot-strip">${screenshots.map((url, screenshotIndex) => {
+      const size = screenshotSize(url);
+      const dimensions = size ? ` width="${size.width}" height="${size.height}"` : "";
+      const priority = screenshotIndex === 0
+        ? ' loading="eager" fetchpriority="high"'
+        : ' loading="lazy"';
+      return `<img src="${escapeHtml(url)}"${dimensions} alt="${escapeHtml(app.name)} screenshot"${priority} decoding="async">`;
+    }).join("")}</div>`;
   }
 
   const tone = (index % 8) + 1;
@@ -502,6 +509,26 @@ function detailVisual(app, index) {
               <strong>${escapeHtml(excerpt(app.description, 120))}</strong>
             </div>
           </div>`;
+}
+
+function screenshotSize(url) {
+  const appStoreSize = String(url || "").match(/\/(\d+)x(\d+)bb\.[a-z0-9]+(?:\?|$)/i);
+  if (appStoreSize) {
+    return { width: Number(appStoreSize[1]), height: Number(appStoreSize[2]) };
+  }
+
+  if (!String(url || "").startsWith("/")) return null;
+  const localPath = join(root, String(url).replace(/^\/+/, ""));
+  try {
+    const bytes = readFileSync(localPath);
+    const isPng = bytes.length >= 24 && bytes.subarray(1, 4).toString("ascii") === "PNG";
+    if (isPng) {
+      return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
+    }
+  } catch {
+    // Leave dimensions unset for an unknown or temporarily unavailable asset.
+  }
+  return null;
 }
 
 function descriptionBlocks(description, { stripStandaloneUrls = false } = {}) {

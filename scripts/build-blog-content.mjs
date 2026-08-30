@@ -10557,7 +10557,7 @@ function footer() {
   return `<div data-site-footer></div>`;
 }
 
-function head({ title, description, canonical, ogType = "website", jsonLd = "" }) {
+function head({ title, description, canonical, ogType = "website", jsonLd = "", preloadImage = "" }) {
   return `<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10574,7 +10574,7 @@ function head({ title, description, canonical, ogType = "website", jsonLd = "" }
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#1e2a23">
-  <style>.mega-menu{display:none}</style>
+${preloadImage ? `  <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">\n` : ""}  <style>.mega-menu{display:none}</style>
   <link rel="stylesheet" href="/assets/styles.css">
   <script defer src="/assets/site-chrome.js"></script>
   <script src="/assets/app.js" defer></script>
@@ -10665,6 +10665,15 @@ function seoDescription(description, article) {
 
 function getArticleIndex(article) {
   return articles.findIndex((candidate) => candidate.slug === article.slug);
+}
+
+const lcpPreloadSlugs = new Set(["plywood-delamination-inspection"]);
+
+function articleHeroImage(article) {
+  if (!lcpPreloadSlugs.has(article.slug)) return "";
+  if (article.image?.src) return article.image.src;
+  if (!usesWoodworkingImages(article)) return "";
+  return woodworkingImageFor(`${article.slug} ${article.title} ${article.description}`, 0).src;
 }
 
 function articleVisual(article, { card = false } = {}) {
@@ -11095,7 +11104,8 @@ ${head({
     description: seoDescription(article.description, article),
     canonical: `https://woodcuttool.com/blog/${article.slug}/`,
     ogType: "article",
-    jsonLd: blogPostingJsonLd(article)
+    jsonLd: blogPostingJsonLd(article),
+    preloadImage: articleHeroImage(article)
   })}
 <body>
   ${breadcrumbJsonLd([["Home", "/"], ["Blogs", "/blog/"], [article.title, `/blog/${article.slug}/`]])}
