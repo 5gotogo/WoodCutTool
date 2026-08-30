@@ -486,7 +486,7 @@ ${faqSection()}
 function detailVisual(app, index) {
   const screenshots = (app.screenshotUrls || []).slice(0, 3);
   if (screenshots.length) {
-    return `<div class="app-screenshot-strip">${screenshots.map((url, screenshotIndex) => {
+    return `<div class="app-screenshot-strip" data-mobile-rail aria-label="${escapeHtml(app.name)} screenshots">${screenshots.map((url, screenshotIndex) => {
       const size = screenshotSize(url);
       const dimensions = size ? ` width="${size.width}" height="${size.height}"` : "";
       const priority = screenshotIndex === 0

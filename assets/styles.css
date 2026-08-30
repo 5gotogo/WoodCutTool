@@ -11662,6 +11662,151 @@ tr:last-child td {
     padding-left: var(--mobile-page-gutter);
   }
 
+  .app-detail-page {
+    padding-bottom: 24px;
+  }
+
+  .app-detail-hero,
+  .app-detail-layout,
+  .app-detail-reviews {
+    padding: 16px var(--mobile-page-gutter) 8px;
+    gap: 12px;
+  }
+
+  .app-detail-copy,
+  .app-description-panel,
+  .app-meta-panel,
+  .app-detail-reviews {
+    padding: 18px;
+    border-radius: var(--mobile-card-radius);
+  }
+
+  .app-title-row {
+    gap: 12px;
+  }
+
+  .app-title-row h1 {
+    font-size: clamp(1.72rem, 8vw, 2.08rem);
+    line-height: 1.06;
+    letter-spacing: -0.018em;
+    text-wrap: balance;
+  }
+
+  .app-detail-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+  }
+
+  .app-detail-copy .lead {
+    margin-top: 16px;
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+
+  .app-detail-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .app-detail-actions .button,
+  .app-meta-panel > .button {
+    width: 100%;
+    min-height: 50px;
+    white-space: normal;
+  }
+
+  .app-screenshot-strip[data-mobile-rail] {
+    border-radius: 18px;
+    box-shadow: 0 18px 42px rgba(39, 44, 36, 0.12);
+  }
+
+  .app-screenshot-strip[data-mobile-rail] > img {
+    scroll-snap-align: center;
+    border-radius: 14px;
+  }
+
+  .app-detail-hero > .mobile-rail-status {
+    margin-top: -4px;
+    padding-right: 2px;
+  }
+
+  .app-detail-layout {
+    padding-top: 12px;
+  }
+
+  .app-meta-panel {
+    order: -1;
+  }
+
+  .app-meta-panel dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .app-meta-panel dl div {
+    padding: 10px;
+  }
+
+  .app-meta-panel dd {
+    overflow-wrap: anywhere;
+  }
+
+  .legal-shell,
+  .article-shell {
+    padding: 18px 12px 28px;
+  }
+
+  .legal-hero,
+  .legal-panel,
+  .article-body {
+    padding: 18px;
+    border-radius: var(--mobile-card-radius);
+  }
+
+  .blog-article-head {
+    gap: 18px;
+  }
+
+  .blog-article-head > .article-wood-photo-hero {
+    margin-top: 2px;
+  }
+
+  .article-body > .blog-article-head + .research-panel {
+    margin-top: 22px;
+  }
+
+  .article-byline {
+    margin-top: 12px;
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .article-meta-line {
+    gap: 6px;
+    margin-top: 14px;
+  }
+
+  .article-meta-line span {
+    padding: 5px 8px;
+  }
+
+  .research-panel,
+  .metric-panel,
+  .deep-figure-section,
+  .deep-compare-section,
+  .deep-faq-section,
+  .deep-sources-section,
+  .article-checklist {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .article-body section + section {
+    margin-top: 22px;
+    padding-top: 18px;
+  }
+
   .home-page .hero {
     position: relative;
     overflow: clip;
