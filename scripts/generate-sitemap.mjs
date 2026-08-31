@@ -428,18 +428,21 @@ const grouped = new Map();
 for (const entry of entries) {
   const group = sitemapGroup(entry.route);
   if (!grouped.has(group)) grouped.set(group, []);
-  grouped.get(group).push(entry.xml);
+  grouped.get(group).push(entry);
 }
 
 const childFiles = [];
 for (const [group, groupEntries] of grouped) {
   const file = `sitemap-${group}.xml`;
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${groupEntries.join("\n")}\n</urlset>\n`;
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n${groupEntries.map((entry) => entry.xml).join("\n")}\n</urlset>\n`;
   writeFileSync(join(root, file), xml);
-  childFiles.push(file);
+  childFiles.push({
+    file,
+    lastmod: groupEntries.map((entry) => nextState[entry.route].lastmod).sort().at(-1),
+  });
 }
 
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${childFiles.sort().map((file) => `  <sitemap><loc>${siteUrl}/${file}</loc><lastmod>${today}</lastmod></sitemap>`).join("\n")}\n</sitemapindex>\n`;
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${childFiles.sort((a, b) => a.file.localeCompare(b.file)).map(({ file, lastmod }) => `  <sitemap><loc>${siteUrl}/${file}</loc><lastmod>${lastmod}</lastmod></sitemap>`).join("\n")}\n</sitemapindex>\n`;
 
 writeFileSync(lastmodStatePath, `${JSON.stringify(nextState, null, 2)}\n`);
 writeFileSync(join(root, "sitemap.xml"), sitemap);

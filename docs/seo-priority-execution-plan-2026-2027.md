@@ -1,6 +1,6 @@
 # WoodCutTool SEO priority execution plan, 2026–2027
 
-Updated: 2026-07-26
+Updated: 2026-08-31
 
 ## Scope and current baseline
 
@@ -381,7 +381,7 @@ Only `approved-new-url` enters a generator batch.
 
 | Window | Primary output | Publication boundary |
 | --- | --- | --- |
-| Jul–Aug 2026 | Learn intent inventory and conversion-event inventory | No automatic merges or new Learn batch |
+| Jul–Aug 2026 | Learn intent inventory and conversion-event inventory | Completed 2026-08-31; no automatic merges or new Learn batch |
 | Sep 2026 | First search-performance refresh and R1 Research batch | Requires query export for consolidation decisions |
 | Oct–Dec 2026 | Monthly refreshes, R2, topic-hub event coverage | New URLs only when inventory score is at least 80 |
 | Jan–Mar 2027 | Formal Learn consolidation review, R3 | Redirects require content and performance evidence |
@@ -394,11 +394,30 @@ Maintain one status table in this document or a generated companion report:
 
 | Work item | Priority | Owner/source | Status | Entry evidence | Exit evidence | Review date |
 | --- | --- | --- | --- | --- | --- | --- |
-| Learn intent inventory | P1 | Learn generator | Planned | 163 guides + 12 hubs | 163 complete rows and reviewed candidate sets | 2026-08 |
+| Learn intent inventory | P1 | Learn generator | Complete | 163 guides + 12 hubs | 163 complete rows, 13 reviewed candidate sets, 2 implemented differentiations, 0 redirects | 2026-08-31 |
 | Search refresh batch | P2 | Performance export | Blocked on data | 90-day query/page export | 28-day follow-up | Monthly |
 | Research R1–R4 | P3 | Research generator | Planned | Shared examples and declared methods | 15 report pages | 2027-06 |
-| Cluster event coverage | P4 | Conversion components | Planned | Existing endpoint and CTA audit | Validated monthly cluster report | 2026-12 |
+| Cluster event coverage | P4 | Conversion components | Foundation complete | 14-event strict schema and 12 tracked topic hubs | Classified downloads, calculator results, App Store outbound links, and validated monthly cluster report | 2026-12 |
 | Selective URL batch | P5 | Surface generator | Gated | Inventory + performance or workflow gap | Score ≥80 and full release QA | Per batch |
+
+## Implementation record: 2026-08-31
+
+- Added a source-backed Learn intent generator and audit covering all 163 routes and 12 clusters.
+- Recorded 13 current candidate sets with explicit keep reasons; no merge or redirect was authorized without aggregate query/page evidence.
+- Differentiated cut-list revision workflow from version control, and general one-sheet project admission from one-sheet furniture execution, in generator-owned opening answers.
+- Added a strict 14-event conversion registry that rejects unknown or privacy-unsafe dimensions.
+- Instrumented exactly one pillar action and four practical actions on each of the 12 Learn topic hubs.
+- Added the Learn intent and endpoint tests to the normal `npm run check` release gate.
+- Search-performance refresh remains blocked because the repository contains no minimum 90-day aggregate query/page export.
+
+Implemented artifacts:
+
+- `scripts/build-learn-intent-inventory.mjs`
+- `scripts/audit-learn-intents.mjs`
+- `data/seo/learn-intent-inventory.json`
+- `data/seo/learn-intent-decisions.json`
+- `docs/learn-intent-review.md`
+- `functions/lib/conversion-event-schema.js`
 
 ## Global definition of done
 

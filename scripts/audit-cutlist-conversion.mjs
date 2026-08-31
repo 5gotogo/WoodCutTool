@@ -1,5 +1,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
+import { conversionEventSchemas } from "../functions/lib/conversion-event-schema.js";
+import { learnClusterProfiles } from "./learn-cluster-profiles.mjs";
 
 const root = resolve(new URL("..", import.meta.url).pathname);
 const errors = [];
@@ -37,6 +39,51 @@ const screenshots = [
   "cutlist-ai-scan.webp",
   "cutlist-offline-private.webp",
 ];
+const clusterEvents = [
+  "topic_action_click",
+  "pillar_guide_click",
+  "worksheet_download",
+  "checklist_download",
+  "example_download",
+  "research_download",
+  "calculator_start",
+  "calculator_result",
+  "app_store_outbound",
+];
+
+for (const event of clusterEvents) {
+  if (!conversionEventSchemas[event]) errors.push(`Conversion schema is missing ${event}`);
+}
+if (!conversionRuntime.includes('[data-conversion-event]') ||
+    !conversionRuntime.includes("conversionDestinationRoute") ||
+    !conversionRuntime.includes("conversionSourceRoute")) {
+  errors.push("Conversion runtime is missing generic, schema-backed tracked-link support");
+}
+
+let trackedTopicHubs = 0;
+for (const cluster of learnClusterProfiles) {
+  const route = `/learn/topics/${cluster.id}/`;
+  const html = readFileSync(join(root, route, "index.html"), "utf8");
+  const pillarEvents = html.match(/data-conversion-event="pillar_guide_click"/g) || [];
+  const actionEvents = html.match(/data-conversion-event="topic_action_click"/g) || [];
+  if (pillarEvents.length !== 1) errors.push(`${route} must track exactly one pillar-guide action`);
+  if (actionEvents.length !== 4) errors.push(`${route} must track exactly four topic actions`);
+  if ((html.match(new RegExp(`data-conversion-cluster="${cluster.id}"`, "g")) || []).length !== 5) {
+    errors.push(`${route} must attach its cluster ID to all five primary actions`);
+  }
+  if ((html.match(new RegExp(`data-conversion-source-route="${route}"`, "g")) || []).length !== 5) {
+    errors.push(`${route} must attach its source route to all five primary actions`);
+  }
+  for (const [destination] of cluster.actions) {
+    if (!html.includes(`data-conversion-destination-route="${destination}"`)) {
+      errors.push(`${route} is missing tracked destination metadata for ${destination}`);
+    }
+  }
+  if (/data-conversion-(?:dimension|measurement|query|referrer|project|notes?)=/i.test(html)) {
+    errors.push(`${route} contains privacy-unsafe conversion metadata`);
+  }
+  trackedTopicHubs += 1;
+}
 
 for (const screenshot of screenshots) {
   const path = join(root, "assets/images/apps/cutlist", screenshot);
@@ -123,5 +170,7 @@ console.log(JSON.stringify({
   smartAppBanners: bannerCount,
   contextualCtas: contextualCount,
   conversionScripts: conversionScriptCount,
+  trackedTopicHubs,
+  registeredEvents: Object.keys(conversionEventSchemas).length,
   screenshots: screenshots.length,
 }, null, 2));

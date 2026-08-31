@@ -291,11 +291,12 @@ ${visibleApps.map(appCard).join("\n")}
 }
 
 function appCardsFor(slugs) {
-  return slugs
+  const cards = slugs
     .map((slug) => appBySlug.get(slug))
     .filter(Boolean)
     .map(appCard)
     .join("\n");
+  return cards ? `${cards}\n` : "";
 }
 
 function featuredAppsSection() {

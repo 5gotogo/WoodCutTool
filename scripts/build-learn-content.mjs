@@ -703,6 +703,17 @@ articles.push(...learnResearchExpansion20260718);
 articles.push(...learnPillarExpansion20260721);
 articles.push(...learnHandoffExpansion20260724);
 
+const learnOpeningOverrides = new Map([
+  ["cut-list-revision-workflow", "A cut-list revision workflow traces one design or field change through every affected part, material group, layout, purchase, label, and already-cut piece before the new revision is released. Its purpose is impact control: identify what changed, stop work that may now be wrong, and prove which downstream records need replacement."],
+  ["cut-list-version-control-guide", "Cut-list version control gives every released plan a stable identity and retained history. It defines revision names, dates, change notes, approvals, superseded exports, and the one current shop file so an earlier PDF or layout cannot silently return to production."],
+  ["one-sheet-plywood-project-planning", "One-sheet plywood project planning begins with an admission test: can the complete project, including repeated parts, kerf, trim, grain limits, and required spares, produce a complete layout on one declared sheet? If any required part is rejected or omitted, the project is not a one-sheet result."],
+  ["one-sheet-plywood-furniture-guide", "One-sheet plywood furniture planning starts after the one-sheet constraint is plausible and asks whether the resulting furniture is structurally and practically complete. Panel thickness, joinery, loads, edge treatment, repeated furniture parts, and useful offcuts must work together rather than merely fitting rectangles on a sheet."],
+]);
+
+for (const article of articles) {
+  if (learnOpeningOverrides.has(article.slug)) article.intro = learnOpeningOverrides.get(article.slug);
+}
+
 const legacyLearnHubs = [
   { slug: "deck", h1: "Deck Planning Guides", description: "Deck material, footing, stair, railing, and layout guides.", keywords: ["deck planning"], cluster: "stairs-construction" },
   { slug: "fence", h1: "Fence Planning Guides", description: "Fence layout, material, post, gate, and installation planning guides.", keywords: ["fence planning"], cluster: "installation-field-fit" },
@@ -1277,6 +1288,8 @@ function learnTopicHubPage(cluster) {
   const pages = learnPagesByCluster.get(cluster.id) || [];
   const pillar = pages.find((page) => page.slug === cluster.pillarSlug);
   const supportingPages = pages.filter((page) => page.slug !== cluster.pillarSlug);
+  const sourceRoute = `/learn/topics/${cluster.id}/`;
+  const pillarRoute = `/learn/${cluster.pillarSlug}/`;
   const orderedPages = [pillar, ...supportingPages].filter(Boolean);
   const description = `Browse ${pages.length} ${cluster.title.toLowerCase()} guides, then follow a checked path from project inputs to evidence, release decisions, and practical tools.`;
 
@@ -1302,7 +1315,7 @@ ${head({
       <p class="eyebrow">Learn topic hub · ${pages.length} guides</p>
       <h1>${escapeHtml(cluster.title)} Guides</h1>
       <p class="lead">${escapeHtml(cluster.opening)}</p>
-      <div class="hero-actions"><a class="button" href="/learn/${cluster.pillarSlug}/">Start with the pillar guide</a><a class="button secondary" href="#guide-directory">Browse all ${pages.length} guides</a></div>
+      <div class="hero-actions"><a class="button" href="${pillarRoute}" data-conversion-event="pillar_guide_click" data-conversion-cluster="${escapeHtml(cluster.id)}" data-conversion-source-route="${sourceRoute}" data-conversion-placement="hero" data-conversion-destination-type="pillar-guide" data-conversion-destination-route="${pillarRoute}">Start with the pillar guide</a><a class="button secondary" href="#guide-directory">Browse all ${pages.length} guides</a></div>
     </section>
 
     <section class="section">
@@ -1345,7 +1358,7 @@ ${head({
         <p>Choose the surface matching the next decision. Calculators and apps test inputs, Worksheets retain project values, Checklists control release, Troubleshooting isolates disagreements, and source-linked examples or research make assumptions inspectable.</p>
       </div>
       <div class="related-grid">
-        ${cluster.actions.map(([href, label, type]) => `<a href="${href}"><span>${escapeHtml(type)}</span><strong>${escapeHtml(label)}</strong></a>`).join("\n        ")}
+        ${cluster.actions.map(([href, label, type], index) => `<a href="${href}" data-conversion-event="topic_action_click" data-conversion-cluster="${escapeHtml(cluster.id)}" data-conversion-source-route="${sourceRoute}" data-conversion-placement="topic-action-${index + 1}" data-conversion-destination-type="${escapeHtml(String(type).toLowerCase().replaceAll(/[^a-z0-9]+/g, "-"))}" data-conversion-destination-route="${escapeHtml(href)}"><span>${escapeHtml(type)}</span><strong>${escapeHtml(label)}</strong></a>`).join("\n        ")}
       </div>
     </section>
 
@@ -1443,18 +1456,6 @@ ${head({
 `;
 }
 
-const learnDir = join(root, "learn");
-mkdirSync(learnDir, { recursive: true });
-writeFileSync(join(learnDir, "index.html"), learnIndexPage());
-
-const learnTopicsDir = join(learnDir, "topics");
-mkdirSync(learnTopicsDir, { recursive: true });
-for (const cluster of learnClusters) {
-  const dir = join(learnTopicsDir, cluster.id);
-  mkdirSync(dir, { recursive: true });
-  writeFileSync(join(dir, "index.html"), learnTopicHubPage(cluster));
-}
-
 const legacyLearnSlugMap = {
   "french-cleat-wall-plywood-layout": "french-cleat-tool-holder-planning",
   "wall-cabinet-hanging-cleat-guide": "wall-cabinet-plywood-layout-guide",
@@ -1468,16 +1469,36 @@ function resolveLegacyLearnLinks(html) {
   return html;
 }
 
-for (const article of articles) {
-  const dir = join(learnDir, article.slug);
-  mkdirSync(dir, { recursive: true });
-  writeFileSync(join(dir, "index.html"), resolveLegacyLearnLinks(articlePage(article)));
+export function generateLearnContent() {
+  const learnDir = join(root, "learn");
+  mkdirSync(learnDir, { recursive: true });
+  writeFileSync(join(learnDir, "index.html"), learnIndexPage());
+
+  const learnTopicsDir = join(learnDir, "topics");
+  mkdirSync(learnTopicsDir, { recursive: true });
+  for (const cluster of learnClusters) {
+    const dir = join(learnTopicsDir, cluster.id);
+    mkdirSync(dir, { recursive: true });
+    writeFileSync(join(dir, "index.html"), learnTopicHubPage(cluster));
+  }
+
+  for (const article of articles) {
+    const dir = join(learnDir, article.slug);
+    mkdirSync(dir, { recursive: true });
+    writeFileSync(join(dir, "index.html"), resolveLegacyLearnLinks(articlePage(article)));
+  }
+
+  for (const page of landingPages) {
+    const dir = join(learnDir, page.slug);
+    mkdirSync(dir, { recursive: true });
+    writeFileSync(join(dir, "index.html"), landingPage(page));
+  }
+
+  console.log(`Generated ${articles.length + landingPages.length} Learn guides plus ${learnClusters.length} topic hubs, indexing ${allLearnPages.length} guides across ${learnClusters.length} pillars.`);
 }
 
-for (const page of landingPages) {
-  const dir = join(learnDir, page.slug);
-  mkdirSync(dir, { recursive: true });
-  writeFileSync(join(dir, "index.html"), landingPage(page));
-}
+export { allLearnPages, learnClusters, learnClusterId };
 
-console.log(`Generated ${articles.length + landingPages.length} Learn guides plus ${learnClusters.length} topic hubs, indexing ${allLearnPages.length} guides across ${learnClusters.length} pillars.`);
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  generateLearnContent();
+}

@@ -155,6 +155,33 @@
     root.querySelectorAll?.("[data-conversion-cta]").forEach(observeCta);
   }
 
+  function trackedLinkDetails(link) {
+    const details = {};
+    const fields = {
+      cluster: "conversionCluster",
+      source_route: "conversionSourceRoute",
+      placement: "conversionPlacement",
+      destination_type: "conversionDestinationType",
+      destination_route: "conversionDestinationRoute",
+      asset_route: "conversionAssetRoute",
+      dataset: "conversionDataset",
+      version: "conversionVersion",
+      calculator: "conversionCalculator",
+      result_class: "conversionResultClass",
+      app: "conversionApp",
+    };
+    for (const [field, datasetKey] of Object.entries(fields)) {
+      if (link.dataset[datasetKey]) details[field] = link.dataset[datasetKey];
+    }
+    return details;
+  }
+
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest?.("[data-conversion-event]");
+    if (!(link instanceof HTMLAnchorElement)) return;
+    track(link.dataset.conversionEvent, trackedLinkDetails(link));
+  }, true);
+
   document.addEventListener("click", (event) => {
     const link = event.target.closest?.("a");
     if (!link || !isCutListStoreLink(link)) return;

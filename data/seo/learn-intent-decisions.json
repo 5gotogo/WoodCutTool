@@ -1,0 +1,67 @@
+{
+  "version": "2026-08-31",
+  "performanceDataAvailable": false,
+  "redirectsApproved": 0,
+  "decisions": {
+    "cut-list-revision-workflow|cut-list-version-control-guide": {
+      "decision": "differentiate-existing",
+      "reason": "Both pages cover controlled cut-list change, but the workflow page should own impact tracing while the version-control page should own naming, release history, and retained exports. Clarify those boundaries before any performance review."
+    },
+    "deck-stair-material-estimate|stair-headroom-measurement-checklist|stair-landing-material-estimate|stair-rise-run-comfort-guide|stair-stringer-calculator-inputs-explained": {
+      "decision": "keep",
+      "reason": "The five stair pages answer different field decisions: calculator inputs, comfort geometry, deck-stair purchasing, landing purchasing, and headroom verification. Their shared calculator destination does not make the intents interchangeable."
+    },
+    "backsplash-tile-measuring-guide|bathroom-tile-layout-measurement-guide|large-format-tile-waste-planning|tile-calculator-inputs-explained|tile-waste-allowance-guide": {
+      "decision": "keep",
+      "reason": "Tile calculator inputs, general waste allowance, backsplash measurement, bathroom layout measurement, and large-format risk each require different measurements and purchasing decisions despite sharing the tile calculator."
+    },
+    "quilt-backing-binding-batting-estimate|quilt-border-yardage-planning|quilt-precut-bundle-planning-guide|quilt-yardage-calculator-inputs": {
+      "decision": "keep",
+      "reason": "Quilt input setup, finishing materials, border yardage, and precut-bundle planning have separate fabric roles and evidence requirements. QuiltFit is a common action rather than a duplicate intent."
+    },
+    "offcut-storage-system-for-sheet-goods|plywood-offcut-inventory-workflow|plywood-offcut-size-guide": {
+      "decision": "keep",
+      "reason": "Offcut storage design, inventory recordkeeping, and keep-or-discard size thresholds are consecutive workflow steps with different outcomes and should remain separately addressable."
+    },
+    "grain-direction-in-plywood-layouts|mdf-cut-list-planning-guide|plywood-delivery-inspection-guide|plywood-sheet-breakdown-for-beginners|track-saw-sheet-breakdown-workflow": {
+      "decision": "keep",
+      "reason": "Material orientation, MDF-specific limits, delivery acceptance, beginner sheet breakdown, and track-saw execution use different evidence and stop conditions; the common plywood calculator is only a shared next action."
+    },
+    "one-sheet-plywood-furniture-guide|one-sheet-plywood-project-planning": {
+      "decision": "differentiate-existing",
+      "reason": "The project-planning page should cover the general one-sheet admission workflow, while the furniture page must stay limited to furniture structure, dimensions, and usable offcuts. Strengthen this scope distinction before performance-led consolidation."
+    },
+    "bathroom-linen-cabinet-planning-guide|closet-drawer-tower-material-plan|coffee-bar-cabinet-planning-guide|craft-table-storage-planning-guide|diy-closet-island-planning-guide|garage-shelving-material-estimate|media-console-ventilation-guide|sewing-cabinet-workflow-guide|storage-bed-drawer-planning-guide|storage-bench-hinge-clearance-guide|workbench-height-and-material-guide": {
+      "decision": "keep",
+      "reason": "Each route owns a different furniture type with project-specific clearances, loads, hardware, ventilation, storage, or ergonomic inputs. Similar generated openings and a shared CutList action are template signals, not intent collisions."
+    },
+    "custom-wardrobe-planning-guide|farmhouse-table-material-planning-guide|mudroom-locker-planning-guide|playhouse-plywood-material-guide": {
+      "decision": "keep",
+      "reason": "Wardrobes, farmhouse tables, mudroom lockers, and playhouses have distinct assemblies, exposure conditions, measurements, and material decisions even though all use plywood layout calculations."
+    },
+    "mobile-workbench-caster-planning|router-table-material-planning-guide|workbench-material-planning-guide": {
+      "decision": "keep",
+      "reason": "A mobile workbench caster decision, router-table system, and general workbench material plan produce different parts and verification checks. The shared workbench template is an intentional handoff."
+    },
+    "cabinet-door-overlay-and-inset-guide|closet-shelving-cut-list-workflow|drawer-box-cut-list-basics|edge-banding-allowance-in-cut-lists|kitchen-cabinet-sheet-count-estimate|laundry-room-cabinet-planning-guide|material-list-before-hardware-shopping|melamine-cutting-plan-for-clean-edges|multi-room-plywood-planning-guide|plywood-cut-plan-for-built-ins|plywood-grade-selection-for-cabinets|record-cabinet-shelf-span-guide|toe-kick-cut-list-planning|woodworking-hardware-allowance-guide": {
+      "decision": "keep",
+      "reason": "The cabinet cluster spans grades, part types, hardware, edge treatment, project scopes, and purchasing decisions. Page-specific inputs remain distinct; similarity is driven by a shared generated opening and calculator route."
+    },
+    "cut-list-review-before-cutting-guide|table-saw-cut-sequence-planning|table-saw-repeat-cut-workflow": {
+      "decision": "keep",
+      "reason": "Pre-cut release review, table-saw sequence planning, and repeated-cut control occur at different shop checkpoints and have different observable failure conditions."
+    },
+    "kitchen-island-plywood-planning-guide|plywood-grain-matching-guide": {
+      "decision": "keep",
+      "reason": "Kitchen-island material grouping and cross-panel grain matching are separate decisions; the former plans the assembly while the latter constrains visible-face orientation."
+    },
+    "built-in-bookcase-measurement-guide|under-stair-storage-measurement-guide": {
+      "decision": "keep",
+      "reason": "Built-in bookcase measurement and under-stair storage measurement apply to different opening geometries, downstream parts, and field-fit risks."
+    },
+    "best-woodworking-calculator-workflow|choosing-between-calculator-template-and-app": {
+      "decision": "keep",
+      "reason": "The calculator-workflow page explains a staged estimating process, while the calculator-versus-template-versus-app page selects the appropriate planning surface. They share a keyword but answer different decisions."
+    }
+  }
+}
