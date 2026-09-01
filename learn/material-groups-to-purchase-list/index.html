@@ -26,6 +26,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
+  <link rel="preload" as="image" href="/assets/images/woodworking/wood-06-drawer-assembly.webp" fetchpriority="high">
   <style>.mega-menu{display:none}</style>
   <link rel="stylesheet" href="/assets/styles.css">
   <script defer src="/assets/site-chrome.js"></script>
@@ -118,7 +119,7 @@
       <section><h2>Define purchasable material codes</h2><p>Create one code for each product that must remain distinct: carcass plywood, finished-end plywood, backs, drawer bottoms, solid edging, lumber, or another approved stock. Record supplier description, actual size assumptions, thickness, face and finish, grain rule, and allowed substitution. The <a href="/glossary/cut-list/">cut-list definition</a> helps separate part data from the later purchasing view.</p></section>
       <section><h2>Assign every part exactly once</h2><p>Map each released part to one material code and verify that no row is blank or assigned to multiple purchasable groups. Include test pieces and approved replacements as explicit quantities when they are part of the plan. If groups are missing, use the <a href="/troubleshooting/material-groups-missing-from-cut-list/">material-group diagnostic</a> before running sheet counts.</p></section>
       <figure class="article-wood-photo article-wood-photo-inline">
-        <img src="/assets/images/woodworking/wood-02-cabinet-hardware.webp" width="960" height="720" alt="Cabinet door components, wood samples, hinges, and hardware on a worktable for Cut List Material Groups to Purchase List" loading="lazy" decoding="async">
+        <img src="/assets/images/woodworking/wood-02-cabinet-hardware.webp" width="960" height="720" alt="Cabinet door components, wood samples, hinges, and hardware on a worktable for Cut List Material Groups to Purchase List" loading="eager" fetchpriority="auto" decoding="async">
         <figcaption>Coordinate cabinet parts, hardware, and visible wood surfaces.</figcaption>
       </figure>
       <section><h2>Convert layouts into order quantities</h2><p>Run sheet or board calculations inside each material group using real stock dimensions, kerf, trim, rotation, and completion status. Reject a partial layout with unplaced parts. Round only to the supplier's purchasable unit after the complete layout is reviewed, then separate ordered quantity from theoretical area and finished-part yield.</p></section>

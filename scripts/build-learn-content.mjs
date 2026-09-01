@@ -30,9 +30,12 @@ function learnWoodImage(page, offset = 0, placement = "inline") {
   if (!usesWoodworkingImages(page)) return "";
   const topic = `${page.slug} ${page.h1} ${page.description}`;
   const image = woodworkingImageFor(topic, offset);
+  // A restored scroll position can make the first inline image the initial LCP.
+  // These pages contain only two editorial images, so early discovery is a small,
+  // bounded cost and avoids waiting for the lazy-load threshold.
   const loading = placement === "hero"
     ? 'loading="eager" fetchpriority="high"'
-    : 'loading="lazy"';
+    : 'loading="eager" fetchpriority="auto"';
   return `<figure class="article-wood-photo article-wood-photo-${placement}">
         <img src="${escapeHtml(image.src)}" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${page.h1}`)}" ${loading} decoding="async">
         <figcaption>${escapeHtml(image.caption)}</figcaption>
@@ -52,7 +55,7 @@ function learnArticleSections(article) {
   }).join("\n      ");
 }
 
-function head({ title, description, canonical, jsonLd = "", ogType = "website" }) {
+function head({ title, description, canonical, jsonLd = "", ogType = "website", preloadImage = "" }) {
   return `<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -67,7 +70,7 @@ function head({ title, description, canonical, jsonLd = "", ogType = "website" }
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
-  <style>.mega-menu{display:none}</style>
+${preloadImage ? `  <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">\n` : ""}  <style>.mega-menu{display:none}</style>
   <link rel="stylesheet" href="/assets/styles.css">
   <script defer src="/assets/site-chrome.js"></script>
   <script defer src="/assets/app.js"></script>
@@ -1078,7 +1081,10 @@ ${head({
     description: article.description,
     canonical: `${siteUrl}/learn/${article.slug}/`,
     jsonLd: articleJsonLd(article),
-    ogType: "article"
+    ogType: "article",
+    preloadImage: usesWoodworkingImages(article)
+      ? woodworkingImageFor(`${article.slug} ${article.h1} ${article.description}`, 0).src
+      : ""
   })}
 <body>
   ${breadcrumbJsonLd(hierarchy.breadcrumbTrail)}
@@ -1171,7 +1177,10 @@ ${head({
     description: page.description,
     canonical: `${siteUrl}/learn/${page.slug}/`,
     jsonLd: landingJsonLd(page),
-    ogType: "article"
+    ogType: "article",
+    preloadImage: usesWoodworkingImages(page)
+      ? woodworkingImageFor(`${page.slug} ${page.h1} ${page.description}`, 0).src
+      : ""
   })}
 <body>
   ${breadcrumbJsonLd(hierarchy.breadcrumbTrail)}

@@ -4534,6 +4534,8 @@ function initStairs() {
   const form = document.getElementById("stair-form");
   const result = document.getElementById("stair-result");
   if (!form || !result) return;
+  if (form.dataset.stairCalculatorBound === "true") return;
+  form.dataset.stairCalculatorBound = "true";
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();

@@ -10532,9 +10532,12 @@ function woodworkingArticleFigure(article, offset = 0, placement = "inline") {
   if (!usesWoodworkingImages(article)) return "";
   const topic = `${article.slug} ${article.title} ${article.description}`;
   const image = woodworkingImageFor(topic, offset);
+  // Each generated article has only two editorial images. Eagerly discover both:
+  // restored-scroll and bfcache visits can place the inline image in the initial
+  // viewport, where lazy discovery produced the very slow LCP outliers seen in RUM.
   const loading = placement === "hero"
     ? 'loading="eager" fetchpriority="high"'
-    : 'loading="lazy"';
+    : 'loading="eager" fetchpriority="auto"';
   return `<figure class="article-wood-photo article-wood-photo-${placement}">
           <img src="${escapeHtml(image.src)}" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${article.title}`)}" ${loading} decoding="async">
           <figcaption>${escapeHtml(image.caption)}</figcaption>
@@ -10667,10 +10670,7 @@ function getArticleIndex(article) {
   return articles.findIndex((candidate) => candidate.slug === article.slug);
 }
 
-const lcpPreloadSlugs = new Set(["plywood-delamination-inspection"]);
-
 function articleHeroImage(article) {
-  if (!lcpPreloadSlugs.has(article.slug)) return "";
   if (article.image?.src) return article.image.src;
   if (!usesWoodworkingImages(article)) return "";
   return woodworkingImageFor(`${article.slug} ${article.title} ${article.description}`, 0).src;
