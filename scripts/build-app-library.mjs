@@ -643,6 +643,36 @@ function appComparisonsSection(app) {
     <!-- app-comparisons:end -->`;
 }
 
+function relatedAppDetailsSection(app) {
+  const category = categorySections.find((section) => section.slugs.includes(app.slug));
+  if (!category) return "";
+
+  const related = category.slugs
+    .filter((slug) => slug !== app.slug)
+    .map((slug) => appBySlug.get(slug))
+    .filter(Boolean)
+    .slice(0, 4);
+  if (!related.length) return "";
+
+  const cards = related.map((candidate) => `<a href="${escapeHtml(detailHref(candidate))}">
+          <span>${escapeHtml(category.title.replace(/ Apps$/, ""))}</span>
+          <strong>${escapeHtml(candidate.name)}</strong>
+          <em>${escapeHtml(cardDescription(candidate))}</em>
+        </a>`).join("\n        ");
+
+  return `    <section class="app-detail-related section" aria-label="Apps related to ${escapeHtml(app.name)}">
+      <div class="section-heading compact">
+        <p class="eyebrow">Related apps</p>
+        <h2>Explore more ${escapeHtml(category.title.toLowerCase())}</h2>
+        <p>Continue with another app in the same practical category, or return to the complete app directory.</p>
+      </div>
+      <div class="related-grid">
+        ${cards}
+        <a href="/apps/"><span>Directory</span><strong>Browse all iPhone apps</strong><em>See every app by category, workflow, and use case.</em></a>
+      </div>
+    </section>`;
+}
+
 function appOffer(app) {
   const raw = String(app.formattedPrice || "").trim();
   const price = /^free$/i.test(raw) ? "0" : raw.match(/[\d.]+/)?.[0];
@@ -757,6 +787,7 @@ ${head({
     </section>
 ${appReviewsSection(app)}
 ${appComparisonsSection(app)}
+${relatedAppDetailsSection(app)}
   </main>
   ${footer()}
 </body>

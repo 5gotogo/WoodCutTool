@@ -30,12 +30,11 @@ function learnWoodImage(page, offset = 0, placement = "inline") {
   if (!usesWoodworkingImages(page)) return "";
   const topic = `${page.slug} ${page.h1} ${page.description}`;
   const image = woodworkingImageFor(topic, offset);
-  // A restored scroll position can make the first inline image the initial LCP.
-  // These pages contain only two editorial images, so early discovery is a small,
-  // bounded cost and avoids waiting for the lazy-load threshold.
+  // Keep the true hero on the critical path. The supporting image must not
+  // compete with it for bandwidth on slower mobile connections.
   const loading = placement === "hero"
     ? 'loading="eager" fetchpriority="high"'
-    : 'loading="eager" fetchpriority="auto"';
+    : 'loading="lazy" fetchpriority="low"';
   return `<figure class="article-wood-photo article-wood-photo-${placement}">
         <img src="${escapeHtml(image.src)}" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${page.h1}`)}" ${loading} decoding="async">
         <figcaption>${escapeHtml(image.caption)}</figcaption>

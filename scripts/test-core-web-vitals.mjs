@@ -26,8 +26,8 @@ function inspectArticles(directory) {
 
       for (const match of html.matchAll(/<figure class="article-wood-photo article-wood-photo-inline">\s*<img[^>]*>/g)) {
         inlineImages += 1;
-        if (!match[0].includes('loading="eager"') || !match[0].includes('fetchpriority="auto"')) {
-          failures.push(`${directory}/${entry.name}: first inline image can be discovered too late`);
+        if (!match[0].includes('loading="lazy"') || !match[0].includes('fetchpriority="low"')) {
+          failures.push(`${directory}/${entry.name}: supporting image can compete with the LCP image`);
         }
       }
     } catch {
@@ -57,4 +57,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`Core Web Vitals guards passed: ${articlePages} article pages, ${heroImages} hero preloads, ${inlineImages} eager inline images, stair bundle ${stairBundleSize} bytes.`);
+console.log(`Core Web Vitals guards passed: ${articlePages} article pages, ${heroImages} hero preloads, ${inlineImages} lazy/low-priority inline images, stair bundle ${stairBundleSize} bytes.`);

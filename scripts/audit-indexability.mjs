@@ -65,10 +65,13 @@ const pages = collectHtmlFiles().map((file) => {
 });
 
 const sitemapRoutes = new Set();
+const sitemapFileByRoute = new Map();
 for (const file of readdirSync(root).filter((name) => /^sitemap-[a-z0-9-]+\.xml$/i.test(name))) {
   const xml = readFileSync(join(root, file), "utf8");
   for (const match of xml.matchAll(/<loc>https:\/\/woodcuttool\.com([^<]*)<\/loc>/g)) {
-    sitemapRoutes.add(match[1] || "/");
+    const route = match[1] || "/";
+    sitemapRoutes.add(route);
+    sitemapFileByRoute.set(route, file);
   }
 }
 
@@ -152,6 +155,7 @@ for (const route of searchConsolePriorityRoutes) {
 
 const groups = {
   blog: [],
+  appDetail: [],
   appCompare: [],
   glossary: [],
   comparison: [],
@@ -208,6 +212,18 @@ for (const page of pages) {
     groups.appCompare.push({ ...page, inbound });
     if (inbound < 3) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 3.`);
     if (page.words < 650) issues.push(`${page.file} has only ${page.words} visible words; expected at least 650.`);
+    if (sitemapFileByRoute.get(page.route) !== "sitemap-app-comparisons.xml") {
+      issues.push(`${page.file} must be isolated in sitemap-app-comparisons.xml for crawl diagnostics.`);
+    }
+  }
+
+  if (/^apps\/[^/]+\/index\.html$/.test(page.file) && page.route !== "/apps/compare/") {
+    groups.appDetail.push({ ...page, inbound });
+    if (inbound < 3) issues.push(`${page.file} has only ${inbound} internal-link source page(s); expected at least 3.`);
+    if (page.words < 300) issues.push(`${page.file} has only ${page.words} visible words; expected at least 300.`);
+    if (sitemapFileByRoute.get(page.route) !== "sitemap-apps.xml") {
+      issues.push(`${page.file} must remain in sitemap-apps.xml, separate from comparison articles.`);
+    }
   }
 
   if (/^glossary\/[^/]+\/index\.html$/.test(page.file)) {

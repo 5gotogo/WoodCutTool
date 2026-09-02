@@ -10532,12 +10532,11 @@ function woodworkingArticleFigure(article, offset = 0, placement = "inline") {
   if (!usesWoodworkingImages(article)) return "";
   const topic = `${article.slug} ${article.title} ${article.description}`;
   const image = woodworkingImageFor(topic, offset);
-  // Each generated article has only two editorial images. Eagerly discover both:
-  // restored-scroll and bfcache visits can place the inline image in the initial
-  // viewport, where lazy discovery produced the very slow LCP outliers seen in RUM.
+  // Keep the true hero on the critical path. The supporting image must not
+  // compete with it for bandwidth on slower mobile connections.
   const loading = placement === "hero"
     ? 'loading="eager" fetchpriority="high"'
-    : 'loading="eager" fetchpriority="auto"';
+    : 'loading="lazy" fetchpriority="low"';
   return `<figure class="article-wood-photo article-wood-photo-${placement}">
           <img src="${escapeHtml(image.src)}" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${article.title}`)}" ${loading} decoding="async">
           <figcaption>${escapeHtml(image.caption)}</figcaption>

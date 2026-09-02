@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { constructionTools } from "./construction-tool-data.mjs";
+import { SITEMAP_SIGNATURE_VERSION, sitemapContentSignature } from "./sitemap-content-signature.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = (process.env.SITE_URL || "https://woodcuttool.com").replace(/\/$/, "");
@@ -358,6 +359,7 @@ function xmlEscape(value) {
 const routes = new Set();
 const routeImages = new Map();
 const routeHashes = new Map();
+const routeLegacyHashes = new Map();
 
 for (const file of collectHtmlFiles()) {
   const html = readFileSync(join(root, file), "utf8");
@@ -370,8 +372,15 @@ for (const file of collectHtmlFiles()) {
   routes.add(route);
 
   const hashes = routeHashes.get(route) ?? [];
-  hashes.push(hashContent(html));
+  hashes.push(sitemapContentSignature(html));
   routeHashes.set(route, hashes);
+
+  // Keep the prior raw-HTML signature for a one-time, lossless migration. This
+  // lets pages that truly changed during the migration refresh their lastmod,
+  // while unchanged pages retain the date stored by the previous algorithm.
+  const legacyHashes = routeLegacyHashes.get(route) ?? [];
+  legacyHashes.push(hashContent(html));
+  routeLegacyHashes.set(route, legacyHashes);
 
   // Attach unique images to the canonical route (alias pages fold into their canonical).
   const images = extractImages(html);
@@ -391,11 +400,16 @@ let imageCount = 0;
 const entries = urls.map((route) => {
   const { changefreq, priority } = sitemapMeta(route);
   const signature = hashContent((routeHashes.get(route) ?? []).sort().join("|"));
+  const legacySignature = hashContent((routeLegacyHashes.get(route) ?? []).sort().join("|"));
   const previous = previousState[route];
-  const lastmod = previous?.hash === signature
-    ? previous.lastmod
-    : (previous?.lastmod ? today : (legacyLastmods.get(route) || today));
-  nextState[route] = { lastmod, hash: signature };
+  const hasCurrentSignature = previous?.hashVersion === SITEMAP_SIGNATURE_VERSION;
+  const changed = hasCurrentSignature
+    ? previous?.hash !== signature
+    : Boolean(previous?.hash && previous.hash !== legacySignature);
+  const lastmod = changed
+    ? today
+    : (previous?.lastmod || legacyLastmods.get(route) || today);
+  nextState[route] = { lastmod, hash: signature, hashVersion: SITEMAP_SIGNATURE_VERSION };
   const images = [...(routeImages.get(route) ?? [])];
   imageCount += images.length;
   const imageTags = images
@@ -419,6 +433,7 @@ function sitemapGroup(route) {
   if (route.startsWith("/templates/")) return "templates";
   if (route.startsWith("/worksheets/")) return "worksheets";
   if (route.startsWith("/blog/")) return "blog";
+  if (route.startsWith("/apps/compare/")) return "app-comparisons";
   if (route.startsWith("/apps/")) return "apps";
   if (route.startsWith("/compare/") || route.startsWith("/glossary/") || route.startsWith("/wood/") || route.startsWith("/research/") || route.startsWith("/examples/") || route.startsWith("/troubleshooting/") || route.startsWith("/checklists/")) return "resources";
   return "pages";
