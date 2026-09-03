@@ -115,6 +115,10 @@ const legalLinksBySlug = {
   "tinnitus-relief-sound-masking": {
     privacy: "/legal/Tinnitus/privacy/",
     support: "/legal/Tinnitus/support/"
+  },
+  "spring-miter-bevel": {
+    privacy: "/legal/Spring/privacy/",
+    support: "/legal/Spring/support/"
   }
 };
 
@@ -130,7 +134,8 @@ const appSupportDirectory = [
   ["DuctLab", "/legal/DuctLab/privacy/", "/legal/DuctLab/support/"],
   ["PrivateMind", "/legal/PrivateMind/privacy/", "/legal/PrivateMind/support/"],
   ["TileFit", "/legal/TileFit/privacy/", "/legal/TileFit/support/"],
-  ["Spring", "/legal/Spring/privacy/", "/legal/Spring/support/"]
+  ["Spring", "/legal/Spring/privacy/", "/legal/Spring/support/"],
+  ["Shelf Planner", "/legal/ShelfPlanner/privacy/", "/legal/ShelfPlanner/support/"]
 ];
 
 const featuredApps = [
@@ -150,7 +155,7 @@ const categorySections = [
     id: "maker-calculator-apps",
     title: "Maker & Calculator Apps",
     description: "Practical iPhone tools for people who plan, measure, cut, design, or build physical projects. These apps focus on cabinet planning, plywood optimization, quilt planning, tile estimation, stair stringer calculation, and other maker workflows.",
-    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "tilefit-tile-layout-planner", "quiltfit-quilt-design-planner", "stringer-stair-layout"]
+    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "tilefit-tile-layout-planner", "quiltfit-quilt-design-planner", "stringer-stair-layout", "spring-miter-bevel"]
   },
   {
     id: "small-business-apps",
@@ -229,7 +234,8 @@ const appTags = {
   "fast-rhythm-fasting-and-sleep": ["Fasting", "Sleep", "Rhythm", "Health"],
   "magnifier-reader-big-text": ["Magnifier", "Reading", "Big text", "Access"],
   "colorpop-color-block-tap-game": ["Puzzle", "Casual", "Color", "Relax"],
-  "blockfit-block-puzzle": ["Blocks", "Puzzle", "Casual", "Relax"]
+  "blockfit-block-puzzle": ["Blocks", "Puzzle", "Casual", "Relax"],
+  "spring-miter-bevel": ["Miter & bevel", "Crown molding", "Trim", "PDF export"]
 };
 
 const directoryDescriptions = new Map(featuredApps);
@@ -237,6 +243,7 @@ directoryDescriptions.set("moodloop-mood-tracker-journal", "Private daily mood j
 directoryDescriptions.set("casework-cabinet-cut-lists", "On-device cabinet planner for parts lists, sheet layouts, material and hardware estimates, cutting steps, and PDF or CSV exports.");
 directoryDescriptions.set("thumbtype-typing-speed-test", "Private, offline iPhone typing practice with timed WPM tests, accuracy tracking, daily challenges, and multilingual lessons.");
 directoryDescriptions.set("tilefit-tile-layout-planner", "Plan floor, wall, backsplash, and countertop tile layouts with six patterns, box and cost estimates, grouped cuts, and PDF export.");
+directoryDescriptions.set("spring-miter-bevel", "Calculate crown-molding, baseboard, and casing miter or bevel settings from real wall and spring angles, then save projects and export PDF references.");
 
 function detailHref(app) {
   return detailRouteOverrides[app.slug] || `/apps/${app.slug}/`;

@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-08-29",
-    "hash": "5f2a12f2b33a535b70cb9cbcc728c1689fb6048f1e4793506230e8ba45bc8745",
+    "lastmod": "2026-09-03",
+    "hash": "4440dbf021cc12780f10c85cac6328f30e9e48be34ef72888c6b9597f814c0c3",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -902,6 +902,11 @@
   "/apps/speaker-tools-audio-test/": {
     "lastmod": "2026-09-02",
     "hash": "c2c858029ae32895ed3b3c7a455ee166637278b14047f7682bbc46e9370d6949",
+    "hashVersion": 2
+  },
+  "/apps/spring-miter-bevel/": {
+    "lastmod": "2026-09-03",
+    "hash": "4d77b200824aa736ad1f1fbb865f18feb36f83ab046e29c0536e894e3850b253",
     "hashVersion": 2
   },
   "/apps/stringer/": {
@@ -9037,6 +9042,16 @@
   "/legal/quiltfit/support/": {
     "lastmod": "2026-07-23",
     "hash": "228b6ffb171c8bf83dcdc4f1c5f3e140403dac570a6c20caf33cf123840a98d9",
+    "hashVersion": 2
+  },
+  "/legal/ShelfPlanner/privacy/": {
+    "lastmod": "2026-09-03",
+    "hash": "f36be6663aa4f174a84be09f54f518a893d8b4f3c2589dbc8f510518d3888809",
+    "hashVersion": 2
+  },
+  "/legal/ShelfPlanner/support/": {
+    "lastmod": "2026-09-03",
+    "hash": "0923bce4c036866064d7c3c320d79b2697de2875f6b4d5d2d02c0d0871b5dc49",
     "hashVersion": 2
   },
   "/legal/Spring/privacy/": {

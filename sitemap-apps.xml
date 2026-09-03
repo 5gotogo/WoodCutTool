@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://woodcuttool.com/apps/</loc><lastmod>2026-08-29</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://woodcuttool.com/apps/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/apps/cutlist/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/apps/quiltfit/</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://woodcuttool.com/apps/address-label-maker-and-envelope/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
@@ -67,6 +67,8 @@
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d1/18/3a/d1183af2-4a51-3d13-1b2d-dc1dcc86fe73/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/speaker-tools-audio-test/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c2/de/a5/c2dea570-fc2b-91ca-00f6-1b10a01b240f/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/apps/spring-miter-bevel/</loc><lastmod>2026-09-03</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+    <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/3a/95/b03a959b-abd3-d979-2fbf-2c7e650b204d/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/stringer/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/23/00/c9230080-e5d6-1a99-3cc2-c00ca91e2061/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/thumbtype-typing-speed-test/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
