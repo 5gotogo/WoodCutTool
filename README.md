@@ -8,6 +8,7 @@ The local preview server uses port `4175` and executes the same CutList
 redirect and conversion-event routes used by Cloudflare Pages:
 
 ```sh
+npm ci
 npm run dev
 ```
 
@@ -20,6 +21,8 @@ npm run dev:lan
 ## Shared site chrome
 
 Top navigation and footer markup are rendered from `assets/site-chrome.js`. HTML pages should keep only the `data-site-header` and `data-site-footer` mount points. Run `npm run apply:nav-cta` after generating pages to normalize any generated HTML back to those shared mount points.
+
+That command also compiles `assets/apps.css` from `assets/styles.css` using Lightning CSS for every `/apps/` route. It retains classes used by App HTML and shared runtimes, including interactive states and on-demand translation. Edit the original stylesheet, then run `npm run apply:nav-cta`; do not edit the compiled CSS. App directory, detail, and comparison generators use the lightweight content runtime, loading the full language bundle only when needed.
 
 ## Validation
 

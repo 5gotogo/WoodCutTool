@@ -67,7 +67,7 @@ function head({ title, description, canonical, jsonLd = "" }) {
   <style>.mega-menu{display:none}</style>
   <link rel="stylesheet" href="/assets/styles.css">
   <script defer src="/assets/site-chrome.js"></script>
-  <script defer src="/assets/app.js"></script>
+  <script defer src="/assets/content-page.js"></script>
   ${jsonLd}
 </head>`;
 }

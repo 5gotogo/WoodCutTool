@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
+import { appHtmlFiles, compileAppStyles } from "./build-app-styles.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const failures = [];
@@ -52,9 +53,24 @@ for (const route of ["stringer", "stair-stringer-calculator"]) {
 const stairBundleSize = statSync(join(root, "assets", "stair-calculator.js")).size;
 if (stairBundleSize > 20_000) failures.push(`stair calculator bundle is ${stairBundleSize} bytes (limit 20000)`);
 
+const appStyles = readFileSync(join(root, "assets/apps.css"), "utf8");
+if (appStyles !== compileAppStyles().css) {
+  failures.push("App stylesheet is stale; run npm run apply:nav-cta after editing CSS, App pages, or their runtimes");
+}
+if (Buffer.byteLength(appStyles) > 80_000) failures.push("App stylesheet exceeds the 80 KB budget");
+for (const file of appHtmlFiles()) {
+  const html = readFileSync(join(root, file), "utf8");
+  if (!html.includes('<link rel="stylesheet" href="/assets/apps.css">') || html.includes('href="/assets/styles.css"')) {
+    failures.push(`${file}: must load the scoped App stylesheet`);
+  }
+  if (!html.includes('<script defer src="/assets/content-page.js"></script>') || html.includes('src="/assets/app.js"')) {
+    failures.push(`${file}: static App content must use the on-demand language runtime`);
+  }
+}
+
 if (failures.length) {
   console.error(failures.join("\n"));
   process.exit(1);
 }
 
-console.log(`Core Web Vitals guards passed: ${articlePages} article pages, ${heroImages} hero preloads, ${inlineImages} lazy/low-priority inline images, stair bundle ${stairBundleSize} bytes.`);
+console.log(`Core Web Vitals guards passed: ${articlePages} article pages, ${heroImages} hero preloads, ${inlineImages} lazy/low-priority inline images, stair bundle ${stairBundleSize} bytes, App stylesheet ${Buffer.byteLength(appStyles)} bytes.`);

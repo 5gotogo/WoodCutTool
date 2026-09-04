@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildAppStyles } from "./build-app-styles.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
@@ -32,8 +33,9 @@ function collectHtmlFiles(dir = root, prefix = "") {
   return files.sort();
 }
 
-function applyStylesVersion(html) {
-  return html.replace(/\/assets\/styles\.css(?:\?v=[^"]+)?/g, "/assets/styles.css");
+function applyStylesVersion(html, file) {
+  const stylesheet = file.startsWith("apps/") ? "/assets/apps.css" : "/assets/styles.css";
+  return html.replace(/\/assets\/(?:styles|apps)\.css(?:\?v=[^"]+)?/g, stylesheet);
 }
 
 function applyAppVersion(html) {
@@ -171,7 +173,7 @@ for (const file of collectHtmlFiles()) {
             applyConversionVersion(
               applySiteChromeVersion(
                 applyAppVersion(
-                  applyStylesVersion(html)
+                  applyStylesVersion(html, file)
                 )
               )
             )
@@ -192,3 +194,4 @@ for (const file of collectHtmlFiles()) {
 }
 
 console.log(`Applied shared site chrome to ${updated} pages${skipped ? `, skipped ${skipped}` : ""}.`);
+buildAppStyles();

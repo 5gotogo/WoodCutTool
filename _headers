@@ -12,6 +12,9 @@
 /assets/styles.css
   Cache-Control: public, max-age=0, must-revalidate
 
+/assets/apps.css
+  Cache-Control: public, max-age=0, must-revalidate
+
 /assets/blog-translations.json
   Cache-Control: public, max-age=0, must-revalidate
 
