@@ -10,7 +10,7 @@ contents.
 1. `/assets/conversion.js` records CTA impressions, App Store clicks, calculator
    submissions/completions, and saved preview images.
 2. `/api/conversion-event` validates a small allowlist, bounds the payload, and
-   writes one structured JSON record to the Cloudflare Pages Functions log.
+   atomically increments a daily D1 counter. Raw event payloads are not logged or retained. A missing or failing database returns 503 while the browser tools remain usable.
 3. `/go/cutlist/` records the page source and CTA placement, then redirects to
    the App Store with an Apple campaign token.
 4. Browser `Do Not Track` disables client-side event submission.
@@ -66,3 +66,11 @@ npm run audit:cutlist-conversion
 npm run audit:learn-intents
 npm run build
 ```
+
+## Daily reports and project handoffs
+
+The P0 implementation adds three source-to-calculator scenarios, daily aggregate
+storage, an authenticated JSON/CSV report endpoint and a reusable export command.
+See [implementation, metric definitions and deployment steps](p0-implementation-2026-09-05.md).
+The production `CONVERSION_DB` binding and `CONVERSION_REPORT_TOKEN` secret must
+be configured before these counters can be collected online.

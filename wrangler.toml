@@ -8,3 +8,8 @@ SITE_URL = "https://woodcuttool.com"
 # The redirect and Smart App Banner still work without it; Apple campaign attribution
 # becomes complete once the production build/runtime receives the token.
 APPLE_PROVIDER_TOKEN = ""
+
+# P0 daily counters: bind a real D1 database as CONVERSION_DB before deployment.
+# Apply migrations/0001_conversion_daily.sql and configure the secret
+# CONVERSION_REPORT_TOKEN. See docs/p0-implementation-2026-09-05.md.
+# No placeholder database_id is committed; use the verified account database.

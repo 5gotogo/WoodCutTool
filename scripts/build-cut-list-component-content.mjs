@@ -718,6 +718,7 @@ function detailBody(model, parts) {
             <button class="button" type="button" data-component-add>Add current parts to project tray</button>
             <button class="button secondary" type="button" data-component-csv>Download CSV</button>
             <button class="button secondary" type="button" data-component-json>Download JSON</button>
+            <button class="button secondary" type="button" data-component-layout>Use this cut list in sheet calculator</button>
             <button class="button ghost" type="button" data-component-copy>Copy parts</button>
           </div>
         </form>
@@ -970,6 +971,7 @@ function hubBody() {
         <div class="component-actions">
           <button class="button" type="button" data-project-csv>Download combined CSV</button>
           <button class="button secondary" type="button" data-project-json>Download combined JSON</button>
+          <button class="button secondary" type="button" data-project-layout>Open panel layout</button>
           <button class="button secondary" type="button" data-project-copy>Copy combined BOM</button>
           <button class="button ghost" type="button" data-project-clear>Clear tray</button>
         </div>

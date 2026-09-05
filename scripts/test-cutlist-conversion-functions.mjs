@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import { onRequest as redirectCutList } from "../functions/go/cutlist.js";
 import { onRequest as recordConversion } from "../functions/api/conversion-event.js";
 
+import { openConversionDb } from "./local-conversion-db.mjs";
+const db = openConversionDb();
 const redirect = redirectCutList({
   request: new Request("https://woodcuttool.com/go/cutlist/?source=Template%20Detail&placement=Hero"),
   env: { APPLE_PROVIDER_TOKEN: "123456" },
@@ -15,6 +17,7 @@ assert.equal(destination.searchParams.get("pt"), "123456");
 assert.equal(destination.searchParams.get("mt"), "8");
 
 const accepted = await recordConversion({
+  env: { CONVERSION_DB: db },
   request: new Request("https://woodcuttool.com/api/conversion-event", {
     method: "POST",
     headers: { "content-type": "application/json" },
@@ -37,6 +40,7 @@ assert.equal(accepted.status, 204);
 assert.equal(accepted.headers.get("cache-control"), "no-store");
 
 const trackedTopicAction = await recordConversion({
+  env: { CONVERSION_DB: db },
   request: new Request("https://woodcuttool.com/api/conversion-event", {
     method: "POST",
     headers: { "content-type": "application/json" },
@@ -58,6 +62,7 @@ const trackedTopicAction = await recordConversion({
 assert.equal(trackedTopicAction.status, 204);
 
 const unsafeDimension = await recordConversion({
+  env: { CONVERSION_DB: db },
   request: new Request("https://woodcuttool.com/api/conversion-event", {
     method: "POST",
     headers: { "content-type": "application/json" },
@@ -70,6 +75,7 @@ const unsafeDimension = await recordConversion({
 assert.equal(unsafeDimension.status, 400);
 
 const rejected = await recordConversion({
+  env: { CONVERSION_DB: db },
   request: new Request("https://woodcuttool.com/api/conversion-event", {
     method: "POST",
     headers: { "content-type": "application/json" },
@@ -80,3 +86,5 @@ const rejected = await recordConversion({
 assert.equal(rejected.status, 400);
 
 console.log("CutList redirect attribution and privacy-safe conversion endpoint tests passed.");
+
+db.close();

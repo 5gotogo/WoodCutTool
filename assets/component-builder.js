@@ -581,6 +581,14 @@
     }
   }
 
+  async function transferPanelInstances(instances) {
+    const { componentHandoff, HANDOFF_KEY } = await import("./cut-handoff-model.js");
+    const payload = componentHandoff(instances);
+    try { global.sessionStorage.setItem(HANDOFF_KEY, JSON.stringify(payload)); }
+    catch { throw new Error("Browser storage is unavailable. Use the component CSV or copy the visible rows; the calculator draft is unchanged."); }
+    global.location.assign("/plywood-cut-calculator/#import-cut-list");
+  }
+
   function initializeDetailRuntime() {
     const form = documentRef.querySelector("[data-component-form]");
     const configElement = documentRef.querySelector(
@@ -747,6 +755,13 @@
         recalculate();
       });
     }
+
+    documentRef.querySelector("[data-component-layout]")?.addEventListener("click", async () => {
+      const snapshot = snapshotForExport();
+      if (!snapshot) return;
+      try { await transferPanelInstances([snapshot]); }
+      catch (error) { setStatus(summary, error.message, "error"); }
+    });
 
     buttons.add?.addEventListener("click", () => {
       const snapshot = snapshotForExport();
@@ -964,6 +979,11 @@
       copyText(rowsToTsv(projectHeaders, projectExportRows(currentInstances)))
         .then(() => announceProject("Project cut list copied. Dimensions are in base inches.", "success"))
         .catch((error) => announceProject(`Could not copy the project: ${error.message}`, "error"));
+    });
+
+    documentRef.querySelector("[data-project-layout]")?.addEventListener("click", async () => {
+      try { await transferPanelInstances(currentInstances); }
+      catch (error) { announceProject(error.message, "error"); }
     });
 
     buttons.clear?.addEventListener("click", () => {

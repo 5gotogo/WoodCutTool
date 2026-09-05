@@ -1,59 +1,62 @@
 export const conversionEventSchemas = Object.freeze({
+  example_open: { required: ["scenario"], allowed: ["scenario"] },
+  calculator_import: { required: ["scenario"], allowed: ["scenario"] },
+  cut_list_export: { required: ["scenario", "format"], allowed: ["scenario", "format"] },
   app_store_click: {
     required: ["source", "placement"],
-    allowed: ["source", "placement", "label", "cluster", "app"],
+    allowed: ["scenario", "source", "placement", "label", "cluster", "app"],
   },
   calculator_complete: {
     required: ["calculator"],
-    allowed: ["source", "calculator", "boards", "waste_percent", "rejected_count", "sheets", "baseline_sheets", "yield_percent", "estimated_cost", "estimated_savings", "cluster", "source_route", "result_class"],
+    allowed: ["scenario", "source", "calculator", "boards", "waste_percent", "rejected_count", "sheets", "baseline_sheets", "yield_percent", "estimated_cost", "estimated_savings", "cluster", "source_route", "result_class"],
   },
   calculator_submit: {
     required: ["calculator"],
-    allowed: ["calculator", "cluster", "source_route"],
+    allowed: ["scenario", "calculator", "cluster", "source_route"],
   },
   cta_impression: {
     required: ["source"],
-    allowed: ["source", "variant", "cluster", "placement", "destination_type", "destination_route"],
+    allowed: ["scenario", "source", "variant", "cluster", "placement", "destination_type", "destination_route"],
   },
   image_download: {
     required: ["source"],
-    allowed: ["source", "sheets", "yield_percent", "cluster", "source_route", "asset_route"],
+    allowed: ["scenario", "source", "sheets", "yield_percent", "cluster", "source_route", "asset_route"],
   },
   topic_action_click: {
     required: ["cluster", "source_route", "placement", "destination_type", "destination_route"],
-    allowed: ["cluster", "source_route", "placement", "destination_type", "destination_route"],
+    allowed: ["scenario", "cluster", "source_route", "placement", "destination_type", "destination_route"],
   },
   pillar_guide_click: {
     required: ["cluster", "source_route", "destination_route"],
-    allowed: ["cluster", "source_route", "placement", "destination_type", "destination_route"],
+    allowed: ["scenario", "cluster", "source_route", "placement", "destination_type", "destination_route"],
   },
   worksheet_download: {
     required: ["cluster", "source_route", "asset_route"],
-    allowed: ["cluster", "source_route", "placement", "asset_route"],
+    allowed: ["scenario", "cluster", "source_route", "placement", "asset_route"],
   },
   checklist_download: {
     required: ["cluster", "source_route", "asset_route"],
-    allowed: ["cluster", "source_route", "placement", "asset_route"],
+    allowed: ["scenario", "cluster", "source_route", "placement", "asset_route"],
   },
   example_download: {
     required: ["cluster", "source_route", "asset_route"],
-    allowed: ["cluster", "source_route", "placement", "asset_route"],
+    allowed: ["scenario", "cluster", "source_route", "placement", "asset_route"],
   },
   research_download: {
     required: ["cluster", "source_route", "dataset", "version"],
-    allowed: ["cluster", "source_route", "placement", "asset_route", "dataset", "version"],
+    allowed: ["scenario", "cluster", "source_route", "placement", "asset_route", "dataset", "version"],
   },
   calculator_start: {
     required: ["cluster", "source_route", "calculator"],
-    allowed: ["cluster", "source_route", "placement", "calculator"],
+    allowed: ["scenario", "cluster", "source_route", "placement", "calculator"],
   },
   calculator_result: {
     required: ["cluster", "source_route", "calculator", "result_class"],
-    allowed: ["cluster", "source_route", "placement", "calculator", "result_class"],
+    allowed: ["scenario", "cluster", "source_route", "placement", "calculator", "result_class"],
   },
   app_store_outbound: {
     required: ["cluster", "source_route", "placement", "app"],
-    allowed: ["cluster", "source_route", "placement", "app", "destination_route"],
+    allowed: ["scenario", "cluster", "source_route", "placement", "app", "destination_route"],
   },
 });
 

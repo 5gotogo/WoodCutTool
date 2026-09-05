@@ -10,6 +10,8 @@ import {
 } from "./plywood-benchmark-data.mjs";
 import { cutlistConversionCta } from "./conversion-components.mjs";
 
+import { exampleHandoff, handoffMarkup } from "./cut-handoff-data.mjs";
+
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
 const publishedDate = "2026-07-19";
@@ -237,7 +239,7 @@ function examplePage(project) {
       <p class="lead">This reproducible example packs a ${esc(project.name.toLowerCase())} parts list on standard 96 × 48 inch plywood with a 1/8 inch kerf. It publishes the input rows, modeled layout, rotation comparison, and CSV so you can inspect the estimate instead of trusting a sheet-count claim without evidence.</p>
       <p class="article-byline">Published ${projectPublishedDate} by <a href="/about/">WoodCutTool Editorial Team</a> · Benchmark ${benchmarkVersion}, method <code>${benchmarkMethod}</code></p>
 
-      <section class="research-metrics" aria-label="Example result">
+      ${exampleHandoff(project) ? handoffMarkup(exampleHandoff(project)) + "\n      " : ""}<section class="research-metrics" aria-label="Example result">
         ${metric("Parts", String(row.partCount), `${project.parts.length} named part groups`)}
         ${metric("4×8 sheets", String(row.allowedSheets), "Rotation allowed")}
         ${metric("Material yield", pct(row.allowedYield), `${pct(100 - row.allowedYield)} unfilled area`)}

@@ -4,6 +4,8 @@ Static website for [woodcuttool.com](https://woodcuttool.com/), deployed with Cl
 
 ## Local development
 
+Use Node 22.13+ (or 24+) for the local SQLite aggregate store and checks. Production collection uses Cloudflare D1. See [P0 workflows and deployment](docs/p0-implementation-2026-09-05.md) for the required production binding and report secret.
+
 The local preview server uses port `4175` and executes the same CutList
 redirect and conversion-event routes used by Cloudflare Pages:
 

@@ -6,6 +6,12 @@ import { fileURLToPath } from "node:url";
 import { onRequest as recordConversion } from "../functions/api/conversion-event.js";
 import { onRequest as redirectCutList } from "../functions/go/cutlist.js";
 
+import { onRequest as conversionReport } from "../functions/api/conversion-report.js";
+import { openConversionDb } from "./local-conversion-db.mjs";
+import { tmpdir } from "node:os";
+const conversionDb = openConversionDb(process.env.CONVERSION_DB_PATH || join(tmpdir(), "woodcuttool-conversion-dev.sqlite"));
+const conversionEnv = { CONVERSION_DB: conversionDb, CONVERSION_REPORT_TOKEN: process.env.CONVERSION_REPORT_TOKEN || "" };
+
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const defaultPort = Number(process.env.PORT || 4175);
 const portFlag = process.argv.indexOf("--port");
@@ -146,10 +152,15 @@ async function handle(request, response) {
     return;
   }
 
+  if (url.pathname === "/api/conversion-report") {
+    await sendWebResponse(await conversionReport({ request: await webRequest(request, url), env: conversionEnv }), response);
+    return;
+  }
+
   if (url.pathname === "/api/conversion-event") {
     const result = await recordConversion({
       request: await webRequest(request, url),
-      env: {},
+      env: conversionEnv,
     });
     await sendWebResponse(result, response);
     return;

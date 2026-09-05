@@ -3979,6 +3979,7 @@ function summarizeParts(parts) {
     const quantity = Math.max(0, Math.floor(part.qty || 0));
     for (let i = 0; i < quantity; i += 1) {
       expanded.push({
+        ...part,
         id: `${part.label || `Piece ${index + 1}`} ${i + 1}`,
         label: part.label || `Piece ${index + 1}`,
         length: Number(part.length),
@@ -4155,7 +4156,7 @@ function packSheets(parts, sheetLength, sheetWidth, kerf, allowRotate) {
     usedArea: 0
   });
   const orientationsFor = (piece) => {
-    const orientations = allowRotate
+    const orientations = allowRotate && piece.allowRotate !== false
       ? [
           { w: piece.width, h: piece.length, rotated: false },
           { w: piece.length, h: piece.width, rotated: true }
@@ -4242,7 +4243,7 @@ function packSheets(parts, sheetLength, sheetWidth, kerf, allowRotate) {
 
   const rejected = [];
   pieces.forEach((piece) => {
-    const fits = allowRotate
+    const fits = allowRotate && piece.allowRotate !== false
       ? (piece.width <= sheetWidth && piece.length <= sheetLength) || (piece.length <= sheetWidth && piece.width <= sheetLength)
       : piece.width <= sheetWidth && piece.length <= sheetLength;
     if (!fits) {
@@ -4272,58 +4273,6 @@ function packSheets(parts, sheetLength, sheetWidth, kerf, allowRotate) {
   return { sheets, rejected, usedArea, wastePercent };
 }
 
-function estimateRowLayoutSheetCount(parts, sheetLength, sheetWidth, kerf, allowRotate) {
-  const pieces = summarizeParts(parts).filter((part) => part.width > 0);
-  const sheets = [];
-  const orientationsFor = (piece) => allowRotate
-    ? [
-        { w: piece.width, h: piece.length },
-        { w: piece.length, h: piece.width }
-      ]
-    : [{ w: piece.width, h: piece.length }];
-  const newSheet = () => ({ rows: [] });
-  const placeOnSheet = (sheet, piece) => {
-    const orientations = orientationsFor(piece);
-    for (const row of sheet.rows) {
-      for (const o of orientations) {
-        if (o.w <= row.remainingWidth && o.h <= row.height) {
-          row.x += o.w + kerf;
-          row.remainingWidth -= o.w + kerf;
-          return true;
-        }
-      }
-    }
-    const usedHeight = sheet.rows.reduce((sum, row) => sum + row.height + kerf, 0);
-    for (const o of orientations) {
-      if (o.w <= sheetWidth && usedHeight + o.h <= sheetLength) {
-        sheet.rows.push({ x: o.w + kerf, y: usedHeight, height: o.h, remainingWidth: sheetWidth - o.w - kerf });
-        return true;
-      }
-    }
-    return false;
-  };
-
-  pieces.forEach((piece) => {
-    const fits = allowRotate
-      ? (piece.width <= sheetWidth && piece.length <= sheetLength) || (piece.length <= sheetWidth && piece.width <= sheetLength)
-      : piece.width <= sheetWidth && piece.length <= sheetLength;
-    if (!fits) return;
-    let placed = false;
-    for (const sheet of sheets) {
-      if (placeOnSheet(sheet, piece)) {
-        placed = true;
-        break;
-      }
-    }
-    if (!placed) {
-      const sheet = newSheet();
-      placeOnSheet(sheet, piece);
-      sheets.push(sheet);
-    }
-  });
-
-  return Math.max(sheets.length, 0);
-}
 
 function drawSheet(canvas, sheets, sheetLength, sheetWidth) {
   if (!canvas || !sheets.length) return;
@@ -4391,144 +4340,8 @@ function drawSheet(canvas, sheets, sheetLength, sheetWidth) {
   });
 }
 
-function initPlywood() {
-  const form = document.getElementById("plywood-form");
-  const result = document.getElementById("plywood-result");
-  if (!form || !result) return;
-
-  let initialRenderCancelled = false;
-  const scheduleAfterPaint = (callback) => {
-    const nextFrame = window.requestAnimationFrame
-      ? (frameCallback) => window.requestAnimationFrame(frameCallback)
-      : (frameCallback) => window.setTimeout(frameCallback, 16);
-    window.setTimeout(() => {
-      nextFrame(() => {
-        nextFrame(callback);
-      });
-    }, 0);
-  };
-  const cancelInitialRender = () => {
-    initialRenderCancelled = true;
-  };
-
-  form.addEventListener("focusin", cancelInitialRender, { once: true });
-  form.addEventListener("input", cancelInitialRender, { once: true });
-  form.addEventListener("keydown", cancelInitialRender, { once: true });
-
-  setupRows("plywood-rows", "add-plywood-row", () => `
-    <div class="piece-row four">
-      <label>Panel name <input name="label" value="Panel"></label>
-      <label>Length (in) <input name="length" type="number" min="0.01" step="0.01" value="30"></label>
-      <label>Width (in) <input name="width" type="number" min="0.01" step="0.01" value="18"></label>
-      <label>Qty <input name="qty" type="number" min="1" step="1" value="2"></label>
-      <button class="button secondary remove-row" type="button">Remove</button>
-    </div>
-  `);
-
-  const render = () => {
-    const sheetLength = numberValue(form, "sheetLength", 96);
-    const sheetWidth = numberValue(form, "sheetWidth", 48);
-    const kerf = numberValue(form, "kerf", 0.125);
-    const sheetPrice = numberValue(form, "sheetPrice", 42);
-    const allowRotate = form.elements.rotate.value === "yes";
-    const parts = getRows(document.getElementById("plywood-rows"));
-    const packed = packSheets(parts, sheetLength, sheetWidth, kerf, allowRotate);
-    const yieldPercent = Math.max(0, 100 - packed.wastePercent);
-    const baselineSheets = Math.max(estimateRowLayoutSheetCount(parts, sheetLength, sheetWidth, kerf, allowRotate), packed.sheets.length);
-    const estimatedCost = packed.sheets.length * sheetPrice;
-    const sheetCountSavings = Math.max(0, baselineSheets - packed.sheets.length) * sheetPrice;
-    const manualWasteBenchmark = 20;
-    const wasteRateSavings = Math.max(0, manualWasteBenchmark - packed.wastePercent) / 100 * estimatedCost;
-    const savedValue = sheetCountSavings + wasteRateSavings;
-    const sequenceItems = packed.sheets.flatMap((sheet, sheetIndex) =>
-      sheet.placements.map((part) => ({ ...part, sheetNumber: sheetIndex + 1 }))
-    );
-    const visibleSequence = sequenceItems.slice(0, 3).map((part, index) =>
-      `<li><strong>Cut ${index + 1}, sheet ${part.sheetNumber}</strong>: ${escapeHtml(part.label)} ${format(part.h)} x ${format(part.w)} in${part.rotated ? " rotated" : ""}</li>`
-    ).join("");
-    const moreSequence = sequenceItems.length > 3
-      ? `<li class="plan-more"><a class="button small app-action blue" href="${APP_STORE_URL}" rel="nofollow">${t("More")}</a></li>`
-      : "";
-
-    result.innerHTML = `
-      <h2>Plywood layout result</h2>
-      <div class="app-result-card">
-        <div class="app-metric-grid">
-          <div class="app-metric yield"><small>Yield</small><strong>${format(yieldPercent, 1)}%</strong><span>Total yield</span></div>
-          <div class="app-metric sheets"><small>Sheets</small><strong>${packed.sheets.length}</strong><span>Sheets used</span></div>
-          <div class="app-metric cost"><small>Cost</small><strong>$${format(estimatedCost, 0)}</strong><span>Optimized cost</span></div>
-          <div class="app-metric savings"><small>Saved</small><strong>$${format(savedValue, 0)}</strong><span>Estimated savings</span></div>
-        </div>
-        <div class="app-action-row">
-          <button class="button small app-action blue" type="button" data-save-layout-image>Save layout image</button>
-          <a class="button small app-action dark" href="/apps/cutlist/#export" aria-label="PDF and AirPrint in CutList Pro">PDF &amp; AirPrint · Pro</a>
-        </div>
-        <div class="app-tabs" aria-label="Layout view selector">
-          <span class="active">Layout</span>
-          <a href="/apps/cutlist/#sequence" aria-label="Parts and cutting sequence in the CutList app">Cut sequence in app</a>
-        </div>
-        <div class="sheet-result-card">
-          <div class="sheet-result-header">
-            <div>
-              <strong>Project sheet layout</strong>
-              <span>Yield ${format(yieldPercent, 1)}% · Used ${format(packed.usedArea / 144)} ft² / Total ${format((packed.sheets.length * sheetLength * sheetWidth) / 144)} ft²</span>
-            </div>
-            <b>${format(yieldPercent, 1)}%</b>
-          </div>
-          <canvas class="sheet-preview" id="sheet-canvas" aria-label="First sheet layout preview"></canvas>
-        </div>
-      </div>
-      <ul class="plan-list">${visibleSequence || "<li>No parts fit the selected sheet size.</li>"}${moreSequence}</ul>
-      <p class="notice">${t("Savings compare this optimized layout with a simple row-by-row sheet estimate")} (${baselineSheets} ${t(baselineSheets === 1 ? "sheet before optimization" : "sheets before optimization")}) ${t("plus avoided waste against a 20% manual layout benchmark.")}</p>
-      ${packed.rejected.length ? `<p class="notice">${packed.rejected.length} pieces are too large for the sheet.</p>` : ""}
-      ${appCta({
-        mode: "plywood",
-        source: "plywood-result",
-        title: `Keep this ${packed.sheets.length}-sheet plan and ${format(yieldPercent, 1)}% yield with the job`,
-        description: `This browser estimate shows about $${format(savedValue, 0)} in modeled savings. Build the reviewed project in CutList to retain revisions, exact parts, waste, and the shop cutting sequence offline.`,
-      })}
-    `;
-    const sheetCanvas = document.getElementById("sheet-canvas");
-    drawSheet(sheetCanvas, packed.sheets, sheetLength, sheetWidth);
-    result.querySelector("[data-save-layout-image]")?.addEventListener("click", () => {
-      sheetCanvas?.toBlob((blob) => {
-        if (!blob) return;
-        const href = URL.createObjectURL(blob);
-        const download = document.createElement("a");
-        download.href = href;
-        download.download = "woodcuttool-plywood-layout.png";
-        download.click();
-        setTimeout(() => URL.revokeObjectURL(href), 1000);
-        window.WCTConversion?.track("image_download", {
-          source: "plywood-result",
-          sheets: packed.sheets.length,
-          yield_percent: yieldPercent,
-        });
-      }, "image/png");
-    });
-    translateElement(result, getActiveLang());
-    window.WCTConversion?.track("calculator_complete", {
-      source: "plywood-calculator",
-      calculator: "plywood",
-      sheets: packed.sheets.length,
-      baseline_sheets: baselineSheets,
-      yield_percent: yieldPercent,
-      estimated_cost: estimatedCost,
-      estimated_savings: savedValue,
-      rejected_count: packed.rejected.length,
-    });
-  };
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    cancelInitialRender();
-    scheduleAfterPaint(render);
-  });
-
-  scheduleAfterPaint(() => {
-    if (!initialRenderCancelled) render();
-  });
-}
+// Shared packing and drawing implementation for the grouped plywood controller.
+window.WCTPlywoodCore = Object.freeze({ packSheets, drawSheet, appCta });
 
 function initStairs() {
   const form = document.getElementById("stair-form");
@@ -5723,7 +5536,6 @@ function initApp() {
   initI18n();
   initHeroCutPlanner();
   initCutList();
-  initPlywood();
   initStairs();
   initBoardFoot();
   initKerf();

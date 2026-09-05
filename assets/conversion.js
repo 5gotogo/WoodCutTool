@@ -3,6 +3,7 @@
   const APP_PATH = "/go/cutlist/";
   const EVENT_ENDPOINT = "/api/conversion-event";
   const seenImpressions = new WeakSet();
+  const observingImpressions = new WeakSet();
 
   function cleanToken(value, fallback = "website") {
     const token = String(value || fallback)
@@ -50,7 +51,9 @@
   }
 
   function track(event, details = {}) {
-    if (navigator.doNotTrack === "1") return;
+    if (navigator.doNotTrack === "1" || window.doNotTrack === "1") return;
+    const scenario = document.getElementById("plywood-form")?.dataset.scenario || document.querySelector("[data-cut-handoff]")?.dataset.scenario;
+    if (["bookshelf", "garage-shelves", "base-cabinet"].includes(scenario)) details = { ...details, scenario };
     const payload = JSON.stringify({
       event: cleanToken(event, "event"),
       source: cleanToken(details.source || routeSource()),
@@ -133,7 +136,8 @@
   }
 
   function observeCta(cta) {
-    if (!(cta instanceof Element) || seenImpressions.has(cta)) return;
+    if (!(cta instanceof Element) || seenImpressions.has(cta) || observingImpressions.has(cta)) return;
+    observingImpressions.add(cta);
     if (!("IntersectionObserver" in window)) {
       seenImpressions.add(cta);
       track("cta_impression", { source: cta.dataset.conversionSource || routeSource() });
@@ -197,7 +201,7 @@
     const form = event.target;
     if (!(form instanceof HTMLFormElement)) return;
     const calculator = form.id.replace(/-form$/, "");
-    if (!calculator) return;
+    if (!calculator || form.dataset.managedConversion === "true") return;
     track("calculator_submit", { calculator });
   }, true);
 

@@ -1,0 +1,22 @@
+#plywood-result, .plywood-import { scroll-margin-top: 85px; }
+#plywood-form, #plywood-result, .plywood-import { min-width: 0; overflow-wrap: anywhere; }
+#plywood-form fieldset { min-width: 0; margin: 1.25rem 0; }
+#plywood-form input, #plywood-form select, #plywood-result select { width: 100%; min-width: 0; max-width: 100%; }
+.plywood-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
+.plywood-fields label { display: flex; flex-direction: column; gap: .35rem; }
+.plywood-part { padding: 1rem 0; border-bottom: 1px solid #d7d2c5; }
+.plywood-part > strong { display: block; margin-bottom: .75rem; }
+.plywood-import { padding: 1rem; margin-bottom: 1rem; border: 2px solid #9d7029; border-radius: 12px; background: #fff7e3; }
+.plywood-import input[type=checkbox] { width: auto; }
+.plywood-import .row-actions, #plywood-result .row-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1rem 0; }
+.plywood-import button, #plywood-result button { white-space: normal; }
+.plywood-group-result { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #d7d2c5; }
+#plywood-form [role=alert]:not(:empty) { padding: .8rem; background: #fff0e9; color: #842e16; border-left: 3px solid #b9401d; }
+@media (max-width: 430px) { .plywood-fields { grid-template-columns: minmax(0, 1fr); } }
+@media print {
+  [data-site-header], [data-site-footer], #plywood-form, .plywood-import, #plywood-result button, #plywood-result .conversion-cta, .plywood-content-section { display: none !important; }
+  .tool-layout { display: block !important; }
+  #plywood-result { width: 100%; max-width: none; box-shadow: none; }
+  #plywood-result details::details-content { content-visibility: visible; }
+  .plywood-group-result { break-inside: avoid; }
+}
