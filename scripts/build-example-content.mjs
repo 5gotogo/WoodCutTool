@@ -12,6 +12,8 @@ import { cutlistConversionCta } from "./conversion-components.mjs";
 
 import { exampleHandoff, handoffMarkup } from "./cut-handoff-data.mjs";
 
+import { pilotEditorial } from "./pilot-editorial.mjs";
+
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
 const publishedDate = "2026-07-19";
@@ -188,7 +190,7 @@ function articleSchema(project, row, description, route) {
     url: `${siteUrl}${route}`,
     mainEntityOfPage: `${siteUrl}${route}`,
     datePublished: projectPublishedDate,
-    dateModified: benchmarkVersion,
+    dateModified: pilotEditorial[project.slug] ? "2026-09-06" : benchmarkVersion,
     author: { "@type": "Organization", name: "WoodCutTool Editorial Team", url: `${siteUrl}/about/` },
     publisher: { "@type": "Organization", name: "WoodCutTool", url: `${siteUrl}/` },
     about: ["cut list", "plywood layout", project.category, project.name],
@@ -210,7 +212,8 @@ function examplePage(project) {
   const packed = packSheets(project.parts, 96, 48, kerf, true);
   const route = `/examples/${project.slug}-cut-list/`;
   const csvPath = `/examples/data/${project.slug}-cut-list.csv`;
-  const description = pageDescription(row);
+  const editorial = pilotEditorial[project.slug];
+  const description = editorial?.exampleDescription || pageDescription(row);
   const sheetText = `${row.allowedSheets} ${plural(row.allowedSheets, "sheet")}`;
   const lockedDifference = row.lockedSheets - row.allowedSheets;
   const rotationFinding = lockedDifference > 0
@@ -227,7 +230,7 @@ function examplePage(project) {
   const h1 = `${titleCase(project.name)} Cut List Example: ${row.partCount} Parts on ${row.allowedSheets} ${plural(row.allowedSheets, "Sheet")}`;
 
   return pageShell({
-    title: compactTitle(project.name, row.allowedSheets),
+    title: editorial?.exampleTitle || compactTitle(project.name, row.allowedSheets),
     description,
     route,
     schemas: [articleSchema(project, row, description, route), breadcrumbSchema(project.name, route)],
@@ -236,7 +239,7 @@ function examplePage(project) {
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/examples/">Cut List Examples</a> / ${esc(titleCase(project.name))}</p>
       <p class="eyebrow">Cut List Example · ${esc(project.category)}</p>
       <h1>${esc(h1)}</h1>
-      <p class="lead">This reproducible example packs a ${esc(project.name.toLowerCase())} parts list on standard 96 × 48 inch plywood with a 1/8 inch kerf. It publishes the input rows, modeled layout, rotation comparison, and CSV so you can inspect the estimate instead of trusting a sheet-count claim without evidence.</p>
+      <p class="lead">${editorial ? esc(editorial.exampleLead) : `This reproducible example packs a ${esc(project.name.toLowerCase())} parts list on standard 96 × 48 inch plywood with a 1/8 inch kerf. It publishes the input rows, modeled layout, rotation comparison, and CSV so you can inspect the estimate instead of trusting a sheet-count claim without evidence.`}</p>
       <p class="article-byline">Published ${projectPublishedDate} by <a href="/about/">WoodCutTool Editorial Team</a> · Benchmark ${benchmarkVersion}, method <code>${benchmarkMethod}</code></p>
 
       ${exampleHandoff(project) ? handoffMarkup(exampleHandoff(project)) + "\n      " : ""}<section class="research-metrics" aria-label="Example result">

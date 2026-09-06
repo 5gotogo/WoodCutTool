@@ -59,7 +59,7 @@
         <p class="hero-subtitle">Optimize plywood sheets, reduce waste, and preview cut layouts before you start cutting. No login, no upload, browser only.</p>
         <div class="hero-actions">
           <a class="button" href="/plywood-cut-calculator/">Try the free plywood cutting calculator</a>
-          <a class="button secondary" href="#hero-cut-planner">Preview a sheet layout instantly</a>
+          <a class="button secondary" href="#start-by-project">Start with a project</a>
         </div>
         <div class="hero-badges" aria-label="WoodCutTool trust points">
           <span>No login</span>
@@ -67,27 +67,28 @@
           <span>No upload</span>
         </div>
       </div>
-      <div class="hero-planner cut-lab" id="hero-cut-planner" aria-label="Instant sheet cutting calculator">
+      <div class="hero-planner cut-lab" id="hero-cut-planner" aria-label="Illustrative layout demo">
         <div class="planner-head">
-          <span class="proof-label">Live cut board</span>
-          <strong>Try the layout</strong>
+          <span class="proof-label">Illustrative demo</span>
+          <strong>Explore a sample layout</strong>
+          <p class="demo-disclosure">Demo values are simulated, not calculated from a parts list. Use the calculator for your sheet count, waste and cost.</p>
         </div>
         <div class="lab-presets" role="group" aria-label="Cut plan presets">
           <button class="active" type="button" data-preset="cabinet">Cabinet</button>
           <button type="button" data-preset="shelves">Shelves</button>
           <button type="button" data-preset="desk">Desk</button>
         </div>
-        <form id="hero-cut-form" class="hero-cut-form">
-          <label>Sheet width
+        <form id="hero-cut-form" class="hero-cut-form" data-managed-conversion="true">
+          <label>Demo sheet width (mm)
             <input name="sheetWidth" type="number" inputmode="numeric" min="1" value="2440">
           </label>
-          <label>Sheet height
+          <label>Demo sheet height (mm)
             <input name="sheetHeight" type="number" inputmode="numeric" min="1" value="1220">
           </label>
-          <label class="range-label">Waste target
+          <label class="range-label">Demo waste setting
             <input name="wasteTarget" type="range" min="8" max="35" value="18">
           </label>
-          <button class="button" type="submit">Animate Optimization</button>
+          <button class="button" type="submit">Animate demo</button>
         </form>
         <div class="control-group-label">Add sample parts</div>
         <div class="part-tray" aria-label="Add sample parts">
@@ -107,12 +108,12 @@
             <span class="planner-part three">C</span>
             <span class="planner-part four">D</span>
             <span class="planner-part five">E</span>
-            <span class="planner-waste">18% waste</span>
+            <span class="planner-waste">18% demo waste</span>
           </div>
           <div class="lab-stats">
-            <div><strong>2</strong><span>Sheets needed</span></div>
-            <div><strong>5</strong><span>Parts packed</span></div>
-            <div><strong>$48</strong><span>Saved</span></div>
+            <div><strong>2</strong><span>Demo sheets</span></div>
+            <div><strong>5</strong><span>Demo pieces</span></div>
+            <div><strong>$48</strong><span>Simulated savings</span></div>
           </div>
         </div>
       </div>
@@ -142,43 +143,19 @@
       </div>
     </section>
 
-    <section class="section project-path-section" aria-label="Project planning shortcuts">
+    <section class="section project-path-section" id="start-by-project" aria-label="Project planning shortcuts">
       <div class="section-heading compact">
         <p class="eyebrow">Start by project</p>
         <h2>Pick the job you are trying to cut.</h2>
-        <p>Jump straight to the guide, template, or calculator that matches the material decision in front of you.</p>
+        <p>Choose a starting list, review the materials, then calculate and export your own version.</p>
       </div>
-      <div class="project-path-grid" data-mobile-rail>
-        <a class="project-path-card" href="/templates/kitchen-cabinet-cut-list/">
-          <span>Cabinets</span>
-          <strong>Kitchen cabinet cut list</strong>
-          <em>Base boxes, wall cabinets, shelves, backs, and material groups.</em>
-        </a>
-        <a class="project-path-card" href="/blog/cutlist-closet-organizer-diy/">
-          <span>Closets</span>
-          <strong>DIY closet organizer plan</strong>
-          <em>Tower sides, adjustable shelves, shoe cubbies, cleats, and fillers.</em>
-        </a>
-        <a class="project-path-card" href="/blog/cutlist-bookcase-from-one-sheet/">
-          <span>One sheet</span>
-          <strong>Bookcase from one plywood sheet</strong>
-          <em>Test whether a compact shelf project really fits before buying.</em>
-        </a>
-        <a class="project-path-card" href="/blog/cutlist-garage-shelf-weekend-project/">
-          <span>Weekend build</span>
-          <strong>Garage shelves cut plan</strong>
-          <em>Repeated shelves, supports, sheet count, labels, and cut order.</em>
-        </a>
-        <a class="project-path-card" href="/blog/estimating-project-cost-materials-hardware/">
-          <span>Budget</span>
-          <strong>Estimate materials and hardware</strong>
-          <em>Turn sheet count, board feet, hardware, finish, and contingency into a budget.</em>
-        </a>
-        <a class="project-path-card" href="/blog/cutlist-pdf-plan-for-home-center-cuts/">
-          <span>Shared shop</span>
-          <strong>Export a cut plan PDF</strong>
-          <em>Use a printed layout when rough cuts happen away from your own shop.</em>
-        </a>
+      <div class="project-path-grid" data-pilot-paths>
+        <a class="project-path-card" href="/examples/bookshelf-cut-list/#use-cut-list"><span>Bookshelf</span><strong>Adjust a bookshelf cut list</strong><em>Load the panels, review body and back stock, then calculate your layout.</em></a>
+        <a class="project-path-card" href="/templates/garage-shelving-cut-list/#use-cut-list"><span>Garage shelves</span><strong>Plan shelves and cleats</strong><em>Check full-length shelves with real kerf; plan lumber supports separately.</em></a>
+        <a class="project-path-card" href="/examples/base-cabinet-cut-list/#use-cut-list"><span>Base cabinet</span><strong>Start a cabinet panel list</strong><em>Review sides, bottom, stretchers and back before exporting your cut list.</em></a>
+        <a class="project-path-card" href="/templates/"><span>More projects</span><strong>Browse all project templates</strong><em>Find closets, benches, desks and other builds.</em></a>
+        <a class="project-path-card" href="/material-cost-calculator/"><span>Budget</span><strong>Estimate project costs</strong><em>Add material, hardware, finish and contingency to your estimate.</em></a>
+        <a class="project-path-card" href="/tools/components/"><span>Components</span><strong>Build a custom panel list</strong><em>Combine supported components, then open a grouped sheet layout.</em></a>
       </div>
     </section>
 
@@ -268,31 +245,31 @@
     <section class="section" id="guides">
       <div class="visual-proof-panel">
         <div class="section-heading compact">
-          <p class="eyebrow">Real cut preview</p>
+          <p class="eyebrow">Illustrative comparison</p>
           <h2>See the waste before the saw starts.</h2>
-          <p>A visual material optimization tool makes the decision obvious: buy less, cut cleaner, keep useful offcuts.</p>
+          <p>These sample figures illustrate a planning workflow. They are not measured savings or results from your inputs.</p>
         </div>
         <div class="before-after-visual" aria-label="Before and after plywood layout comparison">
           <article>
-            <span class="proof-label">Before</span>
+            <span class="proof-label">Demo before</span>
             <strong>4 sheets</strong>
             <div class="sheet-stack before-stack" aria-hidden="true">
               <span></span><span></span><span></span><span></span>
             </div>
-            <small>42% waste risk</small>
+            <small>42% simulated waste</small>
           </article>
           <article class="optimized">
-            <span class="proof-label">After</span>
+            <span class="proof-label">Demo after</span>
             <strong>3 sheets</strong>
             <div class="sheet-stack after-stack" aria-hidden="true">
               <span></span><span></span><span></span>
             </div>
-            <small>21% waste estimate</small>
+            <small>21% simulated waste</small>
           </article>
         </div>
         <div class="visual-stats">
-          <div><strong>1</strong><span>sheet saved</span></div>
-          <div><strong>$55</strong><span>typical savings</span></div>
+          <div><strong>1</strong><span>demo sheet difference</span></div>
+          <div><strong>$55</strong><span>simulated savings</span></div>
           <div><strong>0</strong><span>CAD setup</span></div>
         </div>
       </div>
@@ -351,17 +328,17 @@
         <div class="workflow-copy">
           <p class="eyebrow">Plywood planning workflow</p>
           <h2 id="workflow-title">Turn a parts list into a board you can actually cut.</h2>
-          <p>WoodCutTool gives the homepage a clear story: estimate the material, pack the sheet, check waste, then save the plan when the job is worth keeping.</p>
+          <p>Start with measured parts, keep different materials separate, check the layout, and export a list for review. The illustration uses sample figures.</p>
           <div class="workflow-metrics" aria-label="Workflow outcomes">
-            <div><strong>2</strong><span>sheet estimate</span></div>
-            <div><strong>18%</strong><span>waste target</span></div>
+            <div><strong>2</strong><span>demo sheets</span></div>
+            <div><strong>18%</strong><span>demo waste setting</span></div>
             <div><strong>PDF</strong><span>for saved jobs</span></div>
           </div>
           <a class="text-link" href="/learn/what-is-cut-list-optimization/">Read the optimization guide -&gt;</a>
         </div>
         <div class="workflow-visual-card" aria-label="Cut-ready plywood layout preview">
           <div class="workflow-visual-head">
-            <span>Live layout</span>
+            <span>Illustrative layout</span>
             <strong>Cabinet parts packed</strong>
           </div>
           <div class="workflow-sheet-preview" aria-hidden="true">
@@ -374,7 +351,7 @@
           <div class="workflow-visual-stats">
             <span><strong>5</strong> parts</span>
             <span><strong>1</strong> useful offcut</span>
-            <span><strong>$48</strong> saved</span>
+            <span><strong>$48</strong> simulated savings</span>
           </div>
         </div>
         <div class="workflow-steps" aria-label="WoodCutTool planning workflow" data-mobile-rail>

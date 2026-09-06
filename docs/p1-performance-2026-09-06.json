@@ -1,0 +1,795 @@
+{
+  "summary": [
+    {
+      "route": "/",
+      "beforeLcp": 1000,
+      "afterLcp": 1008,
+      "beforeEncoded": 127257,
+      "afterEncoded": 127415,
+      "beforeLong": [
+        144,
+        129,
+        130
+      ],
+      "afterLong": [
+        133,
+        128,
+        136
+      ]
+    },
+    {
+      "route": "/plywood-cut-calculator/",
+      "beforeLcp": 1004,
+      "afterLcp": 800,
+      "beforeEncoded": 136443,
+      "afterEncoded": 69956,
+      "beforeLong": [
+        89,
+        91,
+        0
+      ],
+      "afterLong": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "route": "/examples/bookshelf-cut-list/",
+      "beforeLcp": 772,
+      "afterLcp": 728,
+      "beforeEncoded": 58419,
+      "afterEncoded": 58831,
+      "beforeLong": [
+        104,
+        98,
+        98
+      ],
+      "afterLong": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "before": {
+    "scope": "Local gzip preview; 390x844, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not real-user P75 or INP.",
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "lcp": 1148,
+        "cls": 0,
+        "longTasks": [
+          144
+        ],
+        "lcpElement": "H1.",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39096,
+            "encoded": 38796
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/app.js",
+            "transfer": 72457,
+            "encoded": 72157
+          }
+        ],
+        "domReady": 1036
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 1,
+        "lcp": 1004,
+        "cls": 0,
+        "longTasks": [
+          89
+        ],
+        "lcpElement": "P.lead",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39096,
+            "encoded": 38796
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/app.js",
+            "transfer": 72457,
+            "encoded": 72157
+          },
+          {
+            "path": "/assets/plywood-workflow.js",
+            "transfer": 6120,
+            "encoded": 5820
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/plywood-workflow.css",
+            "transfer": 984,
+            "encoded": 684
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "transfer": 2982,
+            "encoded": 2682
+          }
+        ],
+        "domReady": 1071.8000000715256
+      },
+      {
+        "route": "/examples/bookshelf-cut-list/",
+        "run": 1,
+        "lcp": 772,
+        "cls": 0,
+        "longTasks": [
+          104
+        ],
+        "lcpElement": "P.lead",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39096,
+            "encoded": 38796
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/cut-handoff.js",
+            "transfer": 937,
+            "encoded": 637
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "transfer": 2982,
+            "encoded": 2682
+          }
+        ],
+        "domReady": 764.8999999761581
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "lcp": 1000,
+        "cls": 0,
+        "longTasks": [
+          129
+        ],
+        "lcpElement": "H1.",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39096,
+            "encoded": 38796
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/app.js",
+            "transfer": 72457,
+            "encoded": 72157
+          }
+        ],
+        "domReady": 1014.3999999761581
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 2,
+        "lcp": 1004,
+        "cls": 0,
+        "longTasks": [
+          91
+        ],
+        "lcpElement": "P.lead",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39096,
+            "encoded": 38796
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/app.js",
+            "transfer": 72457,
+            "encoded": 72157
+          },
+          {
+            "path": "/assets/plywood-workflow.css",
+            "transfer": 984,
+            "encoded": 684
+          },
+          {
+            "path": "/assets/plywood-workflow.js",
+            "transfer": 6120,
+            "encoded": 5820
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "transfer": 2982,
+            "encoded": 2682
+          }
+        ],
+        "domReady": 1062.5
+      },
+      {
+        "route": "/examples/bookshelf-cut-list/",
+        "run": 2,
+        "lcp": 772,
+        "cls": 0,
+        "longTasks": [
+          98
+        ],
+        "lcpElement": "P.lead",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39096,
+            "encoded": 38796
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/cut-handoff.js",
+            "transfer": 937,
+            "encoded": 637
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "transfer": 2982,
+            "encoded": 2682
+          }
+        ],
+        "domReady": 766.1000000238419
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "lcp": 1000,
+        "cls": 0,
+        "longTasks": [
+          130
+        ],
+        "lcpElement": "H1.",
+        "resources": [
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39096,
+            "encoded": 38796
+          },
+          {
+            "path": "/assets/app.js",
+            "transfer": 72457,
+            "encoded": 72157
+          }
+        ],
+        "domReady": 1012.5
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 3,
+        "lcp": 964,
+        "cls": 0,
+        "longTasks": [],
+        "lcpElement": "P.lead",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39096,
+            "encoded": 38796
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/app.js",
+            "transfer": 72457,
+            "encoded": 72157
+          },
+          {
+            "path": "/assets/plywood-workflow.js",
+            "transfer": 6120,
+            "encoded": 5820
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/plywood-workflow.css",
+            "transfer": 984,
+            "encoded": 684
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "transfer": 2982,
+            "encoded": 2682
+          }
+        ],
+        "domReady": 1077.5
+      },
+      {
+        "route": "/examples/bookshelf-cut-list/",
+        "run": 3,
+        "lcp": 796,
+        "cls": 0,
+        "longTasks": [
+          98
+        ],
+        "lcpElement": "P.lead",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39096,
+            "encoded": 38796
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/cut-handoff.js",
+            "transfer": 937,
+            "encoded": 637
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "transfer": 2982,
+            "encoded": 2682
+          }
+        ],
+        "domReady": 770
+      }
+    ]
+  },
+  "after": {
+    "scope": "Local gzip preview; 390x844, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not real-user P75 or INP.",
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "lcp": 1028,
+        "cls": 0,
+        "longTasks": [
+          133
+        ],
+        "lcpElement": "H1.",
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39251,
+            "encoded": 38951
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/app.js",
+            "transfer": 72460,
+            "encoded": 72160
+          }
+        ],
+        "domReady": 1047.8999999761581
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 1,
+        "lcp": 800,
+        "cls": 0,
+        "longTasks": [],
+        "lcpElement": "P.lead",
+        "resources": [
+          {
+            "path": "/assets/plywood-core.js",
+            "transfer": 4116,
+            "encoded": 3816
+          },
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39251,
+            "encoded": 38951
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/plywood-workflow.css",
+            "transfer": 1209,
+            "encoded": 909
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/plywood-workflow.js",
+            "transfer": 6929,
+            "encoded": 6629
+          },
+          {
+            "path": "/assets/content-page.js",
+            "transfer": 965,
+            "encoded": 665
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "transfer": 2982,
+            "encoded": 2682
+          }
+        ],
+        "domReady": 841.7000000476837
+      },
+      {
+        "route": "/examples/bookshelf-cut-list/",
+        "run": 1,
+        "lcp": 700,
+        "cls": 0,
+        "longTasks": [],
+        "lcpElement": "P.lead",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39251,
+            "encoded": 38951
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/cut-handoff.css",
+            "transfer": 557,
+            "encoded": 257
+          },
+          {
+            "path": "/assets/cut-handoff.js",
+            "transfer": 937,
+            "encoded": 637
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "transfer": 2982,
+            "encoded": 2682
+          }
+        ],
+        "domReady": 900.5
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "lcp": 1004,
+        "cls": 0,
+        "longTasks": [
+          128
+        ],
+        "lcpElement": "H1.",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39251,
+            "encoded": 38951
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/app.js",
+            "transfer": 72460,
+            "encoded": 72160
+          }
+        ],
+        "domReady": 1016.6999999284744
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 2,
+        "lcp": 800,
+        "cls": 0,
+        "longTasks": [],
+        "lcpElement": "P.lead",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39251,
+            "encoded": 38951
+          },
+          {
+            "path": "/assets/plywood-core.js",
+            "transfer": 4116,
+            "encoded": 3816
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/plywood-workflow.js",
+            "transfer": 6929,
+            "encoded": 6629
+          },
+          {
+            "path": "/assets/content-page.js",
+            "transfer": 965,
+            "encoded": 665
+          },
+          {
+            "path": "/assets/plywood-workflow.css",
+            "transfer": 1209,
+            "encoded": 909
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "transfer": 2982,
+            "encoded": 2682
+          }
+        ],
+        "domReady": 839.8999999761581
+      },
+      {
+        "route": "/examples/bookshelf-cut-list/",
+        "run": 2,
+        "lcp": 728,
+        "cls": 0,
+        "longTasks": [],
+        "lcpElement": "P.lead",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39251,
+            "encoded": 38951
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/cut-handoff.css",
+            "transfer": 557,
+            "encoded": 257
+          },
+          {
+            "path": "/assets/cut-handoff.js",
+            "transfer": 937,
+            "encoded": 637
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "transfer": 2982,
+            "encoded": 2682
+          }
+        ],
+        "domReady": 892.5
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "lcp": 1008,
+        "cls": 0,
+        "longTasks": [
+          136
+        ],
+        "lcpElement": "H1.",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39251,
+            "encoded": 38951
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/app.js",
+            "transfer": 72460,
+            "encoded": 72160
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          }
+        ],
+        "domReady": 1014.8999999761581
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 3,
+        "lcp": 804,
+        "cls": 0,
+        "longTasks": [],
+        "lcpElement": "P.lead",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39251,
+            "encoded": 38951
+          },
+          {
+            "path": "/assets/plywood-core.js",
+            "transfer": 4116,
+            "encoded": 3816
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/plywood-workflow.css",
+            "transfer": 1209,
+            "encoded": 909
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/plywood-workflow.js",
+            "transfer": 6929,
+            "encoded": 6629
+          },
+          {
+            "path": "/assets/content-page.js",
+            "transfer": 965,
+            "encoded": 665
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "transfer": 2982,
+            "encoded": 2682
+          }
+        ],
+        "domReady": 845.1000000238419
+      },
+      {
+        "route": "/examples/bookshelf-cut-list/",
+        "run": 3,
+        "lcp": 736,
+        "cls": 0,
+        "longTasks": [],
+        "lcpElement": "P.lead",
+        "resources": [
+          {
+            "path": "/assets/styles.css",
+            "transfer": 39251,
+            "encoded": 38951
+          },
+          {
+            "path": "/assets/conversion.js",
+            "transfer": 3014,
+            "encoded": 2714
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "transfer": 13890,
+            "encoded": 13590
+          },
+          {
+            "path": "/assets/cut-handoff.css",
+            "transfer": 557,
+            "encoded": 257
+          },
+          {
+            "path": "/assets/cut-handoff.js",
+            "transfer": 937,
+            "encoded": 637
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "transfer": 2982,
+            "encoded": 2682
+          }
+        ],
+        "domReady": 907
+      }
+    ]
+  }
+}

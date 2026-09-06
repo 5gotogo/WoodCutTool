@@ -12134,3 +12134,10 @@ tr:last-child td {
     scroll-behavior: auto;
   }
 }
+
+/* P1 project starts: all three pilots stay visible instead of a horizontal rail. */
+.home-page .demo-disclosure { font-size: .85rem; line-height: 1.5; color: var(--muted); margin: .5rem 0; }
+.home-page [data-pilot-paths] .project-path-card { min-height: 0; }
+@media (max-width: 680px) { .home-page [data-pilot-paths] { grid-template-columns: minmax(0, 1fr); } .home-page .lab-stats span { overflow-wrap: anywhere; } }
+
+#start-by-project { scroll-margin-top: 80px; }

@@ -57,3 +57,10 @@ The repository includes:
 - `_headers` for security and cache headers.
 - `_redirects` for `www` to apex domain and canonical `index.html` redirects.
 - `wrangler.toml` for direct `wrangler pages deploy` compatibility.
+
+## Focused plywood runtime
+
+The plywood calculator uses `assets/plywood-core.js`, generated from the existing
+calculation functions in `assets/app.js` by `scripts/build-plywood-core.mjs`.
+`npm run apply:nav-cta` refreshes it automatically. Edit the source, not the
+compiled copy. See [P1 validation and performance](docs/p1-implementation-2026-09-06.md).

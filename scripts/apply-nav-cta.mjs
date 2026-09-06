@@ -1,6 +1,7 @@
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { plywoodCoreSource } from "./build-plywood-core.mjs";
 import { buildAppStyles } from "./build-app-styles.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -195,3 +196,5 @@ for (const file of collectHtmlFiles()) {
 
 console.log(`Applied shared site chrome to ${updated} pages${skipped ? `, skipped ${skipped}` : ""}.`);
 buildAppStyles();
+
+writeFileSync(join(root, "assets/plywood-core.js"), plywoodCoreSource());

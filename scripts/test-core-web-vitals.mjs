@@ -2,6 +2,8 @@ import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { appHtmlFiles, compileAppStyles } from "./build-app-styles.mjs";
 
+import { plywoodCoreSource } from "./build-plywood-core.mjs";
+
 const root = resolve(import.meta.dirname, "..");
 const failures = [];
 let articlePages = 0;
@@ -52,6 +54,11 @@ for (const route of ["stringer", "stair-stringer-calculator"]) {
 
 const stairBundleSize = statSync(join(root, "assets", "stair-calculator.js")).size;
 if (stairBundleSize > 20_000) failures.push(`stair calculator bundle is ${stairBundleSize} bytes (limit 20000)`);
+
+const plywoodPage = readFileSync(join(root, 'plywood-cut-calculator/index.html'), 'utf8');
+if (plywoodPage.includes('src="/assets/app.js"') || !plywoodPage.includes('src="/assets/plywood-core.js"')) failures.push('Plywood page must use its lightweight core.');
+const plywoodCore = readFileSync(join(root, 'assets/plywood-core.js'), 'utf8');
+if (plywoodCore !== plywoodCoreSource() || Buffer.byteLength(plywoodCore) > 16000) failures.push('Plywood core is stale or exceeds 16 KB.');
 
 const appStyles = readFileSync(join(root, "assets/apps.css"), "utf8");
 if (appStyles !== compileAppStyles().css) {

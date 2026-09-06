@@ -4,6 +4,6 @@ const path = new URL('../templates/garage-shelving-cut-list/index.html', import.
 let html = readFileSync(path, 'utf8');
 const start = '<!-- garage-handoff:start -->', end = '<!-- garage-handoff:end -->';
 const block = `${start}\n${handoffMarkup(garageHandoff)}\n${end}`;
-if (html.includes(start)) html = html.slice(0, html.indexOf(start)) + block + html.slice(html.indexOf(end) + end.length);
-else html = html.replace('      <section>\n        <h2>Garage shelving parts list', block + '\n      <section>\n        <h2>Garage shelving parts list');
+html = html.replace(/\s*<!-- garage-handoff:start -->[\s\S]*?<!-- garage-handoff:end -->\s*/g, "\n");
+html = html.replace(/(<p class="lead">[\s\S]*?<\/p>)/, `$1\n${block}`);
 writeFileSync(path, html);

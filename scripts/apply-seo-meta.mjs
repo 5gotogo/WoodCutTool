@@ -228,8 +228,8 @@ const pages = {
     bc: [["Home", "/"], ["Templates", "/templates/"], ["Drawer Box Cut List", "/templates/drawer-box-cut-list/"]]
   },
   "templates/garage-shelving-cut-list/index.html": {
-    title: "Garage Shelving Cut List Template (Free Plywood Plan)",
-    desc: "Free garage shelving cut list template. Plan heavy-duty plywood garage shelves with kerf, grain direction, and a sheet cutting plan that minimizes waste.",
+    title: "Garage Shelving Cut List: Panels, Kerf & Lumber Supports",
+    desc: "Customize garage shelf and cleat panels, check saw kerf, and export a sheet cut list. Review the separate 2x4 uprights and cross braces before buying." ,
     bc: [["Home", "/"], ["Templates", "/templates/"], ["Garage Shelving Cut List", "/templates/garage-shelving-cut-list/"]]
   },
   "templates/desk-cut-list/index.html": {

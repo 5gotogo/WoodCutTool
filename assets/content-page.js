@@ -32,12 +32,13 @@
       if (selector.dataset.boundContentLanguageLoader) continue;
       selector.dataset.boundContentLanguageLoader = "true";
       selector.addEventListener("change", (event) => {
-        localStorage.setItem("woodcuttool-lang", event.target.value);
+        try { localStorage.setItem("woodcuttool-lang", event.target.value); } catch {}
         loadApp().catch((error) => console.warn("Language runtime failed to load.", error));
       });
     }
 
-    const savedLanguage = localStorage.getItem("woodcuttool-lang") || "en";
+    let savedLanguage = "en";
+    try { savedLanguage = localStorage.getItem("woodcuttool-lang") || "en"; } catch {}
     if (savedLanguage !== "en") {
       loadApp().catch((error) => console.warn("Language runtime failed to load.", error));
     }

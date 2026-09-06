@@ -1,0 +1,5 @@
+[data-cut-handoff] { scroll-margin-top: 86px; padding: 18px; margin: 20px 0; border: 1px solid #b7cabc; border-radius: 10px; background: #f0f6ef; }
+[data-cut-handoff] .button { white-space: normal; min-height: 44px; }
+[data-cut-handoff] h2 { margin-top: 0; }
+[data-cut-handoff] [role=status]:empty { display: none; }
+@media(max-width:600px) { [data-cut-handoff] { padding: 14px; } [data-cut-handoff] .button { width: 100%; } }

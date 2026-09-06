@@ -3703,12 +3703,12 @@ function initHeroCutPlanner() {
         <span class="planner-part four">D</span>
         <span class="planner-part five">E</span>
         ${extraPieces}
-        <span class="planner-waste">${format(visibleWaste, 0)}% ${t("Waste")}</span>
+        <span class="planner-waste">${format(visibleWaste, 0)}% demo waste</span>
       </div>
       <div class="lab-stats">
-        <div><strong>${sheets}</strong><span>${t("Sheets needed")}</span></div>
-        <div><strong>${sampleParts}</strong><span>${t("Parts packed")}</span></div>
-        <div><strong>$${saved}</strong><span>${t("Saved")}</span></div>
+        <div><strong>${sheets}</strong><span>Demo sheets</span></div>
+        <div><strong>${sampleParts}</strong><span>Demo pieces</span></div>
+        <div><strong>$${saved}</strong><span>Simulated savings</span></div>
       </div>
     `;
     const compareButton = document.querySelector("[data-toggle-before]");

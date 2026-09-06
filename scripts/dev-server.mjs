@@ -1,5 +1,6 @@
 import { createReadStream, existsSync } from "node:fs";
 import { stat } from "node:fs/promises";
+import { createGzip } from "node:zlib";
 import { createServer } from "node:http";
 import { dirname, extname, join, normalize, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -97,7 +98,12 @@ async function serveFile(request, response, path, statusCode = 200) {
     response.end();
     return;
   }
-  createReadStream(path).pipe(response);
+  if (process.env.WCT_PREVIEW_GZIP === "1" && /gzip/.test(request.headers["accept-encoding"] || "") && /\.(html|js|mjs|css|json|xml|svg)$/.test(path)) {
+    response.removeHeader("Content-Length");
+    response.setHeader("Content-Encoding", "gzip");
+    response.setHeader("Vary", "Accept-Encoding");
+    createReadStream(path).pipe(createGzip()).pipe(response);
+  } else createReadStream(path).pipe(response);
 }
 
 async function serveStatic(request, response, url) {

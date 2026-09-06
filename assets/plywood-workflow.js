@@ -35,7 +35,7 @@ function init() {
     catch { notice.textContent = 'Browser storage is unavailable. Keep this tab open and export CSV or JSON before leaving.'; }
   }
   function numberInput(label, name, value, min = '0', step = 'any') {
-    return `<label>${label}<input name="${name}" type="number" value="${pretty(value)}" min="${min}" step="${step}" required></label>`;
+    return `<label>${label}<input name="${name}" type="number" inputmode="${step === '1' ? 'numeric' : 'decimal'}" enterkeyhint="done" value="${pretty(value)}" min="${min}" step="${step}" required></label>`;
   }
   function invalidate() {
     currentResult = null;
@@ -44,6 +44,7 @@ function init() {
   function renderForm() {
     form.dataset.scenario = project.scenario;
     form.innerHTML = `
+      <p role="alert" tabindex="-1" data-input-error></p>
       <label>Display units <select name="unit"><option value="in" ${project.unit === 'in' ? 'selected' : ''}>Inches</option><option value="mm" ${project.unit === 'mm' ? 'selected' : ''}>Millimeters</option></select></label>
       <p>Length follows the sheet grain. Rotation is allowed only when both the material group and the panel allow it. Each group is packed separately.</p>
       <div data-material-groups>${project.groups.map((g, index) => `<fieldset data-group="${esc(g.id)}"><legend>Material group ${index + 1}</legend><div class="plywood-fields">
@@ -66,8 +67,7 @@ function init() {
         <button class="button secondary" type="button" id="add-plywood-row">Add panel</button>
       </fieldset>
       ${project.exclusions.length ? `<aside class="notice"><strong>Scope to review</strong><ul>${project.exclusions.map(s => `<li>${esc(s)}</li>`).join('')}</ul><a href="/cut-list-calculator/">Plan separate lumber cuts</a></aside>` : ''}
-      <p role="alert" data-input-error></p>
-      <button class="button" type="submit">Optimize plywood layout</button>`;
+      <div class="plywood-submit-bar"><button class="button" type="submit">Optimize plywood layout</button></div>`;
   }
   function read() {
     const field = (el, name) => el.querySelector(`[name="${name}"]`).value;
@@ -77,7 +77,11 @@ function init() {
       parts: [...form.querySelectorAll('[data-part]')].map(el => ({ label: field(el, 'label'), length: number(el, 'length'), width: number(el, 'width'), qty: number(el, 'qty'), group: field(el, 'group'), allowRotate: field(el, 'allowRotate') === 'yes' })),
     });
   }
-  function error(message) { form.querySelector('[data-input-error]').textContent = message; }
+  function error(message, focus = false) {
+    const box = form.querySelector('[data-input-error]');
+    box.textContent = message;
+    if (message && focus) { box.focus({ preventScroll: true }); box.scrollIntoView({ behavior: 'instant', block: 'center' }); }
+  }
   function commit() { project = read(); dirty = true; save(); }
   function showImport() {
     if (!pending) return;
@@ -100,6 +104,18 @@ function init() {
       notice.textContent = 'Kept your current inputs. The incoming list was not applied.';
     });
   }
+  form.addEventListener('keydown', event => {
+    if (event.key === 'Enter' && !event.isComposing && event.target instanceof HTMLInputElement) {
+      event.preventDefault();
+      form.requestSubmit();
+    }
+  });
+  form.addEventListener('invalid', event => {
+    // Native validation still focuses the first invalid field; keep a visible summary too.
+    error('Check the highlighted field. Dimensions must be positive and quantities must be whole numbers.');
+    event.target.setAttribute('aria-invalid', 'true');
+  }, true);
+  form.addEventListener('input', event => { event.target.removeAttribute('aria-invalid'); });
   form.addEventListener('input', () => { dirty = true; invalidate(); });
   form.addEventListener('change', event => {
     try {
@@ -140,16 +156,24 @@ function init() {
   function renderResult(calculation) {
     const factor = project.unit === 'mm' ? 25.4 : 1;
     const size = v => pretty(v * factor);
-    result.innerHTML = `<h2>${calculation.complete ? 'All listed panels placed' : 'Incomplete panel layout'}</h2>
-      <p class="notice">${calculation.sheets} sheets across ${calculation.groups.length} separate material groups. ${calculation.rejected} panels could not be placed. ${project.exclusions.length ? 'This is a panel layout, not a complete project or purchase list.' : 'Verify the physical cutting sequence and actual stock before buying.'}</p>
-      ${project.exclusions.length ? `<ul>${project.exclusions.map(s => `<li>${esc(s)}</li>`).join('')}</ul>` : ''}
-      <p>Rectangle-packing estimate; no guarantee of a globally optimal or guillotine-cuttable layout. Grain runs along the length axis. Trim is removed from all four sheet edges.</p>
-      <div class="row-actions"><button class="button" type="button" data-export-csv>Export current cut list CSV</button><button class="button secondary" type="button" data-export-json>Export project JSON</button><button class="button secondary" type="button" data-print-summary>Print summary</button><button class="button secondary" type="button" data-adjust-list>Adjust inputs</button></div>
-      ${calculation.groups.map((g, index) => `<section class="plywood-group-result"><h3>${esc(g.group.material)} — ${size(g.group.thickness)} ${project.unit}</h3><p>${g.plan.sheets.length} sheets; ${g.plan.sheets.length ? pretty(100 - g.plan.wastePercent) : 0}% usable-area yield; ${g.group.price ? `$${pretty(g.plan.sheets.length * g.group.price)} sheet cost` : 'sheet price not entered'}. Usable stock: ${size(g.length)} × ${size(g.width)} ${project.unit}.</p>
-        ${g.plan.rejected.length ? `<p class="notice"><strong>Unplaced:</strong> ${g.plan.rejected.map(p => `${esc(p.label)} (${size(p.length)} × ${size(p.width)} ${project.unit})`).join(', ')}. Change stock, trim or permitted orientation; these panels are excluded from the sheet count.</p>` : ''}
+    result.innerHTML = `<h2 tabindex="-1">${calculation.complete ? 'All listed panels placed' : 'Incomplete panel layout'}</h2>
+      <p class="notice">${calculation.sheets} ${calculation.sheets === 1 ? 'sheet' : 'sheets'} across ${calculation.groups.length} separate material ${calculation.groups.length === 1 ? 'group' : 'groups'}. ${calculation.rejected} panels could not be placed. ${project.exclusions.length ? 'This is a panel layout, not a complete project or purchase list.' : 'Verify the physical cutting sequence and actual stock before buying.'}</p>
+      <div class="row-actions plywood-result-actions">
+        ${!calculation.complete ? '<button class="button" type="button" data-review-unplaced>Review unplaced panels</button>' : ''}
+        <button class="button${calculation.complete ? '' : ' secondary'}" type="button" data-export-csv>Export current cut list CSV</button>
+        <button class="button secondary" type="button" data-adjust-list>Adjust inputs</button>
+      </div>
+      <details class="plywood-export-options"><summary>More export options</summary><div class="row-actions"><button class="button secondary" type="button" data-export-json>Export project JSON</button><button class="button secondary" type="button" data-print-summary>Print summary</button></div></details>
+      <details class="plywood-scope"><summary>Material assumptions and items outside this layout</summary>${project.exclusions.length ? `<ul>${project.exclusions.map(s => `<li>${esc(s)}</li>`).join('')}</ul>` : ''}<p>Rectangle-packing estimate; no guarantee of a globally optimal or guillotine-cuttable layout. Grain runs along the length axis. Trim is removed from all four sheet edges.</p></details>
+      ${calculation.groups.map((g, index) => `<section class="plywood-group-result"><h3>${esc(g.group.material)} — ${size(g.group.thickness)} ${project.unit}</h3><p>${g.plan.sheets.length} sheets; ${g.plan.sheets.length ? Number((100 - g.plan.wastePercent).toFixed(1)) : 0}% usable-area yield; ${g.group.price ? `$${pretty(g.plan.sheets.length * g.group.price)} sheet cost` : 'sheet price not entered'}. Usable stock: ${size(g.length)} × ${size(g.width)} ${project.unit}.</p>
+        ${g.plan.rejected.length ? `<p class="notice" tabindex="-1" data-unplaced><strong>Unplaced:</strong> ${g.plan.rejected.map(p => `${esc(p.label)} (${size(p.length)} × ${size(p.width)} ${project.unit})`).join(', ')}. Change stock, trim or permitted orientation; these panels are excluded from the sheet count.</p>` : ''}
         ${g.plan.sheets.length ? `<label>Preview sheet <select data-sheet-selector="${index}">${g.plan.sheets.map((_, i) => `<option value="${i}">Sheet ${i + 1} of ${g.plan.sheets.length}</option>`).join('')}</select></label><canvas class="sheet-preview" data-group-canvas="${index}" aria-label="${esc(g.group.material)} sheet preview"></canvas><button class="button secondary" type="button" data-save-image="${index}">Save selected sheet image</button>` : ''}
         <details><summary>View all placed panels (${g.plan.sheets.reduce((n, sheet) => n + sheet.placements.length, 0)})</summary><ul>${g.plan.sheets.flatMap((sheet, i) => sheet.placements.map(p => `<li>Sheet ${i + 1}: ${esc(p.label)} — ${size(p.length)} × ${size(p.width)} ${project.unit}${p.rotated ? ', rotated' : ''}</li>`)).join('')}</ul></details></section>`).join('')}
-      <p><a href="/checklists/assembly-release/">Review the assembly release checklist</a> · <a href="/cut-list-calculator/">Calculate lumber cuts separately</a></p>
+      <section class="plywood-next-step"><h3>Before you cut</h3>${({
+        bookshelf: '<p>Check the shelf span and actual thickness before treating the panel layout as a finished bookcase plan.</p><a href="/learn/shelf-span-and-plywood-thickness-guide/">Review shelf span and plywood thickness</a>',
+        'garage-shelves': '<p>The plywood result leaves lumber supports outside the sheet count.</p><a href="/cut-list-calculator/">Calculate upright and lumber cuts</a> · <a href="/learn/garage-shelving-material-estimate/">Review the complete garage material estimate</a>',
+        'base-cabinet': '<p>Verify joinery, back mounting and the squared case before preparing doors or hardware.</p><a href="/checklists/cabinet-box-squaring/">Review cabinet box squaring</a>',
+      })[project.scenario] || '<a href="/checklists/assembly-release/">Review the assembly release checklist</a>'}</section>
       ${window.WCTPlywoodCore.appCta({ mode: 'plywood', source: 'plywood-result', title: 'Keep reviewed projects in CutList', description: 'CutList supports saved revisions and shop exports. Re-create and verify your reviewed list in the app; this browser action does not transfer the project to the app.' })}
       <p role="status" data-export-status></p>`;
     const draw = (index, sheetIndex = 0) => {
@@ -164,6 +188,7 @@ function init() {
       try { download('woodcuttool-project.json', JSON.stringify(project, null, 2), 'application/json'); track('cut_list_export', { format: 'json' }); result.querySelector('[data-export-status]').textContent = 'Project JSON prepared for download.'; } catch { result.querySelector('[data-export-status]').textContent = 'JSON could not be created. Try Print summary.'; }
     });
     result.querySelector('[data-print-summary]').addEventListener('click', () => window.print());
+    result.querySelector('[data-review-unplaced]')?.addEventListener('click', () => result.querySelector('[data-unplaced]')?.focus());
     result.querySelector('[data-adjust-list]').addEventListener('click', () => form.querySelector('input').focus());
     result.querySelectorAll('[data-save-image]').forEach(button => button.addEventListener('click', () => {
       const canvas = result.querySelector(`[data-group-canvas="${button.dataset.saveImage}"]`);
@@ -180,8 +205,10 @@ function init() {
       commit(); error('');
       currentResult = calculateProject(project, window.WCTPlywoodCore.packSheets);
       renderResult(currentResult);
+      result.querySelector('h2').focus({ preventScroll: true });
+      result.scrollIntoView({ behavior: 'instant', block: 'start' });
       track('calculator_complete', { calculator: 'plywood', result_class: currentResult.complete ? 'complete' : 'incomplete' });
-    } catch (err) { invalidate(); error(err.message); }
+    } catch (err) { invalidate(); error(err.message, true); }
   });
   // Avoid counting the default demonstration as a completed user calculation.
   renderForm(); invalidate(); showImport();
