@@ -12,6 +12,7 @@
     "generate:apps": "node scripts/build-app-library.mjs",
     "generate:cutlist-landing": "node scripts/build-cutlist-landing.mjs",
     "generate:app-compare": "node scripts/build-app-compare.mjs",
+    "generate:editorial-styles": "node scripts/build-editorial-styles.mjs",
     "generate:compare": "node scripts/build-compare-content.mjs",
     "generate:blog": "node scripts/build-blog-content.mjs",
     "generate:learn": "node scripts/build-learn-content.mjs",

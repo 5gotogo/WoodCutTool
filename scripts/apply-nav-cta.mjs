@@ -3,6 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
 import { buildAppStyles } from "./build-app-styles.mjs";
+import { buildEditorialStyles } from "./build-editorial-styles.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
@@ -35,8 +36,12 @@ function collectHtmlFiles(dir = root, prefix = "") {
 }
 
 function applyStylesVersion(html, file) {
-  const stylesheet = file.startsWith("apps/") ? "/assets/apps.css" : "/assets/styles.css";
-  return html.replace(/\/assets\/(?:styles|apps)\.css(?:\?v=[^"]+)?/g, stylesheet);
+  const stylesheet = file.startsWith("apps/")
+    ? "/assets/apps.css"
+    : /^(?:blog|compare)\//.test(file)
+      ? "/assets/editorial.css"
+      : "/assets/styles.css";
+  return html.replace(/\/assets\/(?:styles|apps|editorial)\.css(?:\?v=[^"]+)?/g, stylesheet);
 }
 
 function applyAppVersion(html) {
@@ -196,5 +201,6 @@ for (const file of collectHtmlFiles()) {
 
 console.log(`Applied shared site chrome to ${updated} pages${skipped ? `, skipped ${skipped}` : ""}.`);
 buildAppStyles();
+buildEditorialStyles();
 
 writeFileSync(join(root, "assets/plywood-core.js"), plywoodCoreSource());

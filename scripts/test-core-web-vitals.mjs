@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { appHtmlFiles, compileAppStyles } from "./build-app-styles.mjs";
+import { compileEditorialStyles, editorialHtmlFiles } from "./build-editorial-styles.mjs";
 
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
 
@@ -9,6 +10,8 @@ const failures = [];
 let articlePages = 0;
 let heroImages = 0;
 let inlineImages = 0;
+let editorialPages = 0;
+let compareLcpImages = 0;
 
 function inspectArticles(directory) {
   for (const entry of readdirSync(join(root, directory), { withFileTypes: true })) {
@@ -16,6 +19,15 @@ function inspectArticles(directory) {
     const path = join(root, directory, entry.name, "index.html");
     try {
       const html = readFileSync(path, "utf8");
+      if (html.includes("blog-article-shell")) {
+        editorialPages += 1;
+        if (!html.includes('<link rel="stylesheet" href="/assets/editorial.css">')) {
+          failures.push(`${directory}/${entry.name}: article does not use the scoped editorial stylesheet`);
+        }
+        if (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"')) {
+          failures.push(`${directory}/${entry.name}: static article eagerly loads the full app runtime`);
+        }
+      }
       const hero = html.match(/<figure class="article-wood-photo article-wood-photo-hero">\s*<img src="([^"]+)"[^>]*>/);
       if (!hero) continue;
       articlePages += 1;
@@ -29,8 +41,8 @@ function inspectArticles(directory) {
 
       for (const match of html.matchAll(/<figure class="article-wood-photo article-wood-photo-inline">\s*<img[^>]*>/g)) {
         inlineImages += 1;
-        if (!match[0].includes('loading="lazy"') || !match[0].includes('fetchpriority="low"')) {
-          failures.push(`${directory}/${entry.name}: supporting image can compete with the LCP image`);
+        if (!match[0].includes('loading="lazy"') || match[0].includes('fetchpriority="high"')) {
+          failures.push(`${directory}/${entry.name}: supporting image is not lazy or can compete with the hero`);
         }
       }
     } catch {
@@ -41,6 +53,30 @@ function inspectArticles(directory) {
 
 inspectArticles("blog");
 inspectArticles("learn");
+
+for (const file of editorialHtmlFiles().filter((file) => file === "compare/index.html" || file.startsWith("compare/"))) {
+  const html = readFileSync(join(root, file), "utf8");
+  if (!html.includes('<link rel="stylesheet" href="/assets/editorial.css">')) {
+    failures.push(`${file}: Compare page does not use the scoped editorial stylesheet`);
+  }
+  if (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"')) {
+    failures.push(`${file}: static Compare page eagerly loads the full app runtime`);
+  }
+  const lead = html.match(/(?:article-lead-visual|comparison-hero-visual)[^>]*><img\b([^>]*)\bsrc="([^"]+)"([^>]*)>/);
+  if (!lead) continue;
+  compareLcpImages += 1;
+  const imageTag = lead[0];
+  if (!imageTag.includes('loading="eager"') || !imageTag.includes('fetchpriority="high"')) {
+    failures.push(`${file}: above-the-fold Compare image is not eager/high priority`);
+  }
+  const preload = `<link rel="preload" as="image" href="${lead[2]}" fetchpriority="high">`;
+  if (!html.includes(preload)) failures.push(`${file}: above-the-fold Compare image is not preloaded`);
+}
+
+const blogIndex = readFileSync(join(root, "blog/index.html"), "utf8");
+if (!blogIndex.includes('<link rel="stylesheet" href="/assets/editorial.css">') || !blogIndex.includes('src="/assets/app.js"')) {
+  failures.push("blog/index.html must keep its interactive runtime and use the editorial stylesheet");
+}
 
 for (const route of ["stringer", "stair-stringer-calculator"]) {
   const html = readFileSync(join(root, route, "index.html"), "utf8");
@@ -65,6 +101,12 @@ if (appStyles !== compileAppStyles().css) {
   failures.push("App stylesheet is stale; run npm run apply:nav-cta after editing CSS, App pages, or their runtimes");
 }
 if (Buffer.byteLength(appStyles) > 80_000) failures.push("App stylesheet exceeds the 80 KB budget");
+
+const editorialStyles = readFileSync(join(root, "assets/editorial.css"), "utf8");
+if (editorialStyles !== compileEditorialStyles().css) {
+  failures.push("Editorial stylesheet is stale; run npm run apply:nav-cta after generating Blog or Compare pages");
+}
+if (Buffer.byteLength(editorialStyles) > 90_000) failures.push("Editorial stylesheet exceeds the 90 KB budget");
 for (const file of appHtmlFiles()) {
   const html = readFileSync(join(root, file), "utf8");
   if (!html.includes('<link rel="stylesheet" href="/assets/apps.css">') || html.includes('href="/assets/styles.css"')) {
@@ -80,4 +122,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`Core Web Vitals guards passed: ${articlePages} article pages, ${heroImages} hero preloads, ${inlineImages} lazy/low-priority inline images, stair bundle ${stairBundleSize} bytes, App stylesheet ${Buffer.byteLength(appStyles)} bytes.`);
+console.log(`Core Web Vitals guards passed: ${articlePages} image-led articles, ${editorialPages} static Blog articles, ${heroImages} hero preloads, ${inlineImages} lazy/promotable inline images, ${compareLcpImages} Compare LCP preloads, stair bundle ${stairBundleSize} bytes, App stylesheet ${Buffer.byteLength(appStyles)} bytes, editorial stylesheet ${Buffer.byteLength(editorialStyles)} bytes.`);

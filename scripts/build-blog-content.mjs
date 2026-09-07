@@ -10532,11 +10532,12 @@ function woodworkingArticleFigure(article, offset = 0, placement = "inline") {
   if (!usesWoodworkingImages(article)) return "";
   const topic = `${article.slug} ${article.title} ${article.description}`;
   const image = woodworkingImageFor(topic, offset);
-  // Keep the true hero on the critical path. The supporting image must not
-  // compete with it for bandwidth on slower mobile connections.
+  // Keep the true hero on the critical path. Supporting images remain lazy,
+  // but let the browser promote one when a tall viewport makes it an LCP
+  // candidate instead of permanently forcing it to low priority.
   const loading = placement === "hero"
     ? 'loading="eager" fetchpriority="high"'
-    : 'loading="lazy" fetchpriority="low"';
+    : 'loading="lazy"';
   return `<figure class="article-wood-photo article-wood-photo-${placement}">
           <img src="${escapeHtml(image.src)}" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${article.title}`)}" ${loading} decoding="async">
           <figcaption>${escapeHtml(image.caption)}</figcaption>
@@ -10559,7 +10560,7 @@ function footer() {
   return `<div data-site-footer></div>`;
 }
 
-function head({ title, description, canonical, ogType = "website", jsonLd = "", preloadImage = "" }) {
+function head({ title, description, canonical, ogType = "website", jsonLd = "", preloadImage = "", runtime = "app" }) {
   return `<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10577,9 +10578,9 @@ function head({ title, description, canonical, ogType = "website", jsonLd = "", 
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#1e2a23">
 ${preloadImage ? `  <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">\n` : ""}  <style>.mega-menu{display:none}</style>
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/assets/editorial.css">
   <script defer src="/assets/site-chrome.js"></script>
-  <script src="/assets/app.js" defer></script>
+  <script defer src="/assets/${runtime}.js"></script>
 </head>`;
 }
 
@@ -11104,7 +11105,8 @@ ${head({
     canonical: `https://woodcuttool.com/blog/${article.slug}/`,
     ogType: "article",
     jsonLd: blogPostingJsonLd(article),
-    preloadImage: articleHeroImage(article)
+    preloadImage: articleHeroImage(article),
+    runtime: "content-page"
   })}
 <body>
   ${breadcrumbJsonLd([["Home", "/"], ["Blogs", "/blog/"], [article.title, `/blog/${article.slug}/`]])}
@@ -11924,6 +11926,8 @@ function updateExistingHtml() {
     const path = join(root, file);
     let html = readFileSync(path, "utf8");
     html = html.replace(/<header class="site-header">[\s\S]*?<\/header>/, header("Blogs"));
+    html = html.replace(/\/assets\/(?:styles|apps|editorial)\.css(?:\?v=[^"]+)?/g, "/assets/editorial.css");
+    html = html.replace(/\/assets\/app\.js(?:\?v=[^"]+)?/g, "/assets/content-page.js");
     writeFileSync(path, html);
   }
 }

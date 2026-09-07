@@ -1,6 +1,10 @@
 import { writeFileSync } from 'node:fs';
 const [out = '/tmp/wct-p1-performance.json'] = process.argv.slice(2);
 const origin = process.env.P1_ORIGIN || 'http://127.0.0.1:4190';
+const routes = (process.env.P1_ROUTES || '/,/plywood-cut-calculator/,/examples/bookshelf-cut-list/')
+  .split(',')
+  .map(route => route.trim())
+  .filter(Boolean);
 const tab = await (await fetch('http://127.0.0.1:9337/json/new?about:blank', { method: 'PUT' })).json();
 const ws = new WebSocket(tab.webSocketDebuggerUrl); await new Promise(r => ws.addEventListener('open', r, { once: true }));
 let id = 0; const jobs = new Map();
@@ -15,7 +19,7 @@ await send('Network.emulateNetworkConditions', { offline: false, latency: 150, d
 await send('Page.addScriptToEvaluateOnNewDocument', { source: `window.__metrics={lcp:0,cls:0,longTasks:[]};new PerformanceObserver(l=>{for(const e of l.getEntries()){__metrics.lcp=e.startTime;__metrics.lcpElement=e.element?.tagName+'.'+e.element?.className}}).observe({type:'largest-contentful-paint',buffered:true});new PerformanceObserver(l=>{for(const e of l.getEntries())if(!e.hadRecentInput)__metrics.cls+=e.value}).observe({type:'layout-shift',buffered:true});new PerformanceObserver(l=>{for(const e of l.getEntries())__metrics.longTasks.push(e.duration)}).observe({type:'longtask',buffered:true});` });
 const rows = [];
 try {
-  for (let run = 1; run <= 3; run++) for (const route of ['/', '/plywood-cut-calculator/', '/examples/bookshelf-cut-list/']) {
+  for (let run = 1; run <= 3; run++) for (const route of routes) {
     await send('Page.navigate', { url: 'about:blank' }); await new Promise(r => setTimeout(r, 100));
     await send('Page.navigate', { url: origin + route });
     for (let i = 0; i < 150; i++) { if (await evaluate('document.readyState === "complete"')) break; await new Promise(r => setTimeout(r, 100)); }

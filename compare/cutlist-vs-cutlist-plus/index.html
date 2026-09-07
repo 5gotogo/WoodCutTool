@@ -25,10 +25,11 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="preload" as="image" href="/assets/images/compare/compare-planning.webp" fetchpriority="high">
+  <link rel="stylesheet" href="/assets/editorial.css">
   <script defer src="/assets/site-chrome.js"></script>
-  <script defer src="/assets/app.js"></script>
   <script defer src="/assets/conversion.js"></script>
+  <script defer src="/assets/content-page.js"></script>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -149,7 +150,7 @@
           <div class="hero-actions"><a class="button" href="/compare/cut-list-app-vs-spreadsheet/">Use related tool</a><a class="button secondary" href="/compare/">Back to Comparison Center</a></div>
         </div>
         <div class="comparison-hero-side">
-          <figure class="visual-frame comparison-hero-visual"><img src="/assets/images/compare/compare-planning.webp" alt="Paper cut plan beside a tablet-based woodworking planning workflow" width="1200" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="visual-frame comparison-hero-visual"><img src="/assets/images/compare/compare-planning.webp" alt="Paper cut plan beside a tablet-based woodworking planning workflow" width="1200" height="900" loading="eager" fetchpriority="high" decoding="async"></figure>
           <aside class="comparison-verdict-card" aria-label="Quick verdict">
             <span>Quick verdict</span>
             <strong>CutList vs CutList Plus</strong>

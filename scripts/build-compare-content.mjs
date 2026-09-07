@@ -41,7 +41,7 @@ function visualFigure(src, alt, { wide = false, eager = false, className = "" } 
   return `<figure class="visual-frame${wide ? " wide" : ""}${className ? ` ${className}` : ""}"><img src="${src}" alt="${escapeHtml(alt)}" ${dimensions} ${priority} decoding="async"></figure>`;
 }
 
-function head({ title, description, canonical, jsonLd = "", ogType = "article" }) {
+function head({ title, description, canonical, jsonLd = "", ogType = "article", preloadImage = "" }) {
   return `<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -56,8 +56,8 @@ function head({ title, description, canonical, jsonLd = "", ogType = "article" }
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
-  <link rel="stylesheet" href="/assets/styles.css">
-  <script defer src="/assets/app.js"></script>
+${preloadImage ? `  <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">\n` : ""}  <link rel="stylesheet" href="/assets/editorial.css">
+  <script defer src="/assets/content-page.js"></script>
   ${jsonLd}
 </head>`;
 }
@@ -382,7 +382,8 @@ ${head({
     title: article.title,
     description: article.description,
     canonical,
-    jsonLd: `${faqJsonLd(article)}\n${articleJsonLd(article)}`
+    jsonLd: `${faqJsonLd(article)}\n${articleJsonLd(article)}`,
+    preloadImage: visual.src
   })}
 <body>
   ${breadcrumbJsonLd([["Home", "/"], ["Compare", "/compare/"], [article.h1, `/compare/${article.slug}/`]])}
@@ -400,7 +401,7 @@ ${head({
           <div class="hero-actions"><a class="button" href="${article.relatedB}">Use related tool</a><a class="button secondary" href="/compare/">Back to Comparison Center</a></div>
         </div>
         <div class="comparison-hero-side">
-          ${visualFigure(visual.src, visual.alt, { className: "comparison-hero-visual" })}
+          ${visualFigure(visual.src, visual.alt, { eager: true, className: "comparison-hero-visual" })}
           <aside class="comparison-verdict-card" aria-label="Quick verdict">
             <span>Quick verdict</span>
             <strong>${escapeHtml(article.optionA)} vs ${escapeHtml(article.optionB)}</strong>
@@ -568,7 +569,8 @@ ${head({
     description: "Professional woodworking Comparison Center for materials, sheet goods, lumber, tools, fasteners, construction methods, calculators, and apps.",
     canonical: `${siteUrl}/compare/`,
     jsonLd: indexJsonLd(allCards),
-    ogType: "website"
+    ogType: "website",
+    preloadImage: "/assets/images/compare/compare-hero.webp"
   })}
 <body>
   ${breadcrumbJsonLd([["Home", "/"], ["Compare", "/compare/"], ["Comparisons", "/compare/"]])}
@@ -627,10 +629,21 @@ for (const article of newComparisons) {
 for (const [category, , , route] of existingComparisons) {
   const target = join(root, route, "index.html");
   const html = readFileSync(target, "utf8");
-  if (html.includes("comparison-hero-side") || html.includes("data-compare-visual")) continue;
   const visual = compareVisual(category);
   const figure = visualFigure(visual.src, visual.alt, { eager: true, className: "article-lead-visual" }).replace("<figure ", '<figure data-compare-visual ');
-  const enhanced = html.replace(/(<p class="lead">[\s\S]*?<\/p>)/, `$1\n      ${figure}`);
+  let enhanced = html.includes("comparison-hero-side") || html.includes("data-compare-visual")
+    ? html
+    : html.replace(/(<p class="lead">[\s\S]*?<\/p>)/, `$1\n      ${figure}`);
+  enhanced = enhanced
+    .replace(/\/assets\/(?:styles|apps|editorial)\.css(?:\?v=[^"]+)?/g, "/assets/editorial.css")
+    .replace(/\/assets\/app\.js(?:\?v=[^"]+)?/g, "/assets/content-page.js");
+  const leadImage = enhanced.match(/(?:article-lead-visual|comparison-hero-visual)[^>]*><img\b[^>]*\bsrc="([^"]+)"/);
+  if (leadImage && !enhanced.includes(`<link rel="preload" as="image" href="${leadImage[1]}" fetchpriority="high">`)) {
+    enhanced = enhanced.replace(
+      /(<link rel="stylesheet" href="\/assets\/editorial\.css">)/,
+      `<link rel="preload" as="image" href="${leadImage[1]}" fetchpriority="high">\n  $1`
+    );
+  }
   if (enhanced !== html) writeFileSync(target, enhanced);
 }
 
