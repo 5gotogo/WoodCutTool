@@ -306,7 +306,7 @@ ${head({ title, description, canonical, jsonLd: itemListJsonLd(), contentPage: t
   ${breadcrumbJsonLd([["Home", "/"], ["Tools", "/tools/"], ["Wood Species Library", "/wood/"]])}
   <a class="skip-link" href="#main">Skip to content</a>
   ${header("Tools")}
-  <main id="main">
+  <main id="main" class="wood-library-page">
     <section class="page-hero wood-library-hero">
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Wood Species Library</p>
       <p class="eyebrow">Wood Species Library</p>
@@ -355,7 +355,7 @@ ${head({ title, description, canonical, jsonLd: itemListJsonLd(), contentPage: t
       </div>
     </section>
 
-    <section class="related-tools-guides">
+    <section class="section related-tools-guides wood-page-section">
       <p class="eyebrow">Related tools</p>
       <h2>Turn species choice into a build plan.</h2>
       <div class="related-grid">
@@ -458,7 +458,7 @@ ${head({ title, description, canonical, jsonLd: speciesJsonLd(wood), ogType: "ar
   ${breadcrumbJsonLd([["Home", "/"], ["Tools", "/tools/"], ["Wood Species Library", "/wood/"], [wood.name, `/wood/${wood.slug}/`]])}
   <a class="skip-link" href="#main">Skip to content</a>
   ${header("Tools")}
-  <main id="main">
+  <main id="main" class="wood-species-page">
     <section class="page-hero wood-species-hero">
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/wood/">Wood Species Library</a> / ${escapeHtml(wood.name)}</p>
       <p class="eyebrow">${escapeHtml(wood.group)} reference</p>
@@ -513,7 +513,7 @@ ${head({ title, description, canonical, jsonLd: speciesJsonLd(wood), ogType: "ar
       </div>
     </section>
 
-    <section class="related-tools-guides">
+    <section class="section related-tools-guides wood-page-section">
       <p class="eyebrow">Related planning links</p>
       <h2>Use ${escapeHtml(wood.name)} in a calculator or cut list.</h2>
       <div class="related-grid">
@@ -530,7 +530,7 @@ ${head({ title, description, canonical, jsonLd: speciesJsonLd(wood), ogType: "ar
       <div class="wood-related-species">${related.map((item) => `<a href="/wood/${item.slug}/"><span>${escapeHtml(item.group)}</span><strong>${escapeHtml(item.name)}</strong><em>${item.density[0]}-${item.density[1]} lb/ft³ · ${item.janka.toLocaleString()} Janka</em></a>`).join("")}</div>
     </section>
 
-    <section class="section cost-disclaimer" aria-labelledby="wood-disclaimer-title">
+    <section class="section cost-disclaimer wood-planning-note" aria-labelledby="wood-disclaimer-title">
       <p class="eyebrow">Planning note</p>
       <h2 id="wood-disclaimer-title">Verify actual stock before building.</h2>
       <p>Wood values vary by species, board, moisture, grade, drying method, supplier, and local market. These pages are for estimating and comparison only, not structural, safety, engineering, or purchasing guarantees.</p>

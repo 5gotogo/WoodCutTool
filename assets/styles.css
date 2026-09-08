@@ -2102,6 +2102,23 @@ h3 {
   font-style: normal;
 }
 
+/* These cards are top-level Wood-page sections, not article-body panels. Keep
+   their outer edges on the same centered content rail as the adjacent blocks. */
+.wood-page-section {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wood-page-section > .related-grid {
+  margin-top: 18px;
+}
+
+.wood-planning-note {
+  margin-right: auto;
+  margin-bottom: 28px;
+  margin-left: auto;
+}
+
 .comparison-page {
   max-width: var(--max);
   margin: 0 auto;

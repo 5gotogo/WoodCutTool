@@ -286,6 +286,12 @@ for (const file of htmlFiles) {
     if (/src=["']\/assets\/app\.js["']/.test(html)) {
       errors.push(`${file} eagerly loads app.js instead of the lightweight content runtime`);
     }
+    if (!html.includes('class="section related-tools-guides wood-page-section"')) {
+      errors.push(`${file} must keep the related-tools panel on the centered Wood-page content rail`);
+    }
+    if (file !== "wood/index.html" && !html.includes('class="section cost-disclaimer wood-planning-note"')) {
+      errors.push(`${file} must keep the planning note centered with adjacent Wood-page sections`);
+    }
   }
 
   if (html.includes("{search_term_string}")) {
