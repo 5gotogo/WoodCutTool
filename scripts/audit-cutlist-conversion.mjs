@@ -2,6 +2,7 @@ import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { conversionEventSchemas } from "../functions/lib/conversion-event-schema.js";
 import { learnClusterProfiles } from "./learn-cluster-profiles.mjs";
+import { performanceProfile } from "./site-performance-profile.mjs";
 
 const root = resolve(new URL("..", import.meta.url).pathname);
 const errors = [];
@@ -136,8 +137,10 @@ if (!conversionRuntime.includes('path.startsWith("/projects/")')) {
 let bannerCount = 0;
 let contextualCount = 0;
 let conversionScriptCount = 0;
+let conversionEligiblePageCount = 0;
 for (const file of allHtml) {
   const html = readFileSync(join(root, file), "utf8");
+  if (performanceProfile(file, html).stylesheet !== null) conversionEligiblePageCount += 1;
   if (html.includes('name="apple-itunes-app"')) bannerCount += 1;
   if (html.includes("data-conversion-cta")) contextualCount += 1;
   if (html.includes('src="/assets/conversion.js"')) conversionScriptCount += 1;
@@ -149,7 +152,7 @@ for (const file of allHtml) {
 
 if (bannerCount < 300) errors.push(`Expected Smart App Banners on at least 300 high-intent pages, found ${bannerCount}`);
 if (contextualCount < 250) errors.push(`Expected contextual CutList CTAs on at least 250 pages, found ${contextualCount}`);
-if (conversionScriptCount !== allHtml.length) errors.push(`Expected conversion.js on all ${allHtml.length} HTML pages, found ${conversionScriptCount}`);
+if (conversionScriptCount !== conversionEligiblePageCount) errors.push(`Expected conversion.js on all ${conversionEligiblePageCount} full site pages, found ${conversionScriptCount}`);
 
 for (const path of [
   "assets/conversion.js",
@@ -170,6 +173,7 @@ console.log(JSON.stringify({
   smartAppBanners: bannerCount,
   contextualCtas: contextualCount,
   conversionScripts: conversionScriptCount,
+  standaloneOrRedirectPages: allHtml.length - conversionEligiblePageCount,
   trackedTopicHubs,
   registeredEvents: Object.keys(conversionEventSchemas).length,
   screenshots: screenshots.length,

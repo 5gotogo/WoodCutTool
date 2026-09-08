@@ -742,6 +742,9 @@ function appDetailPage(app, index) {
   const canonical = `https://woodcuttool.com${detailHref(app)}`;
   const isAlias = detailHref(app) !== `/apps/${app.slug}/`;
   const legalLinks = legalLinksBySlug[app.slug];
+  const secondaryAction = app.slug === "tinnitus-relief-sound-masking"
+    ? '<a class="button secondary" href="/tinnitus/">Explore the sound masking guide</a>'
+    : '<a class="button secondary" href="/apps/">Back to apps</a>';
   return `<!doctype html>
 <html lang="en">
 ${head({
@@ -767,7 +770,7 @@ ${head({
         <p class="lead">${escapeHtml(excerpt(app.description, 220))}</p>
         <div class="app-detail-actions">
           <a class="button" href="${escapeHtml(app.url)}" rel="noopener noreferrer">Download on App Store</a>
-          <a class="button secondary" href="/apps/">Back to apps</a>
+          ${secondaryAction}
         </div>
       </div>
       ${detailVisual(app, index)}

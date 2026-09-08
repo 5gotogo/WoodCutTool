@@ -1,7 +1,9 @@
-import { readFileSync, readdirSync, statSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { appHtmlFiles, compileAppStyles } from "./build-app-styles.mjs";
 import { compileEditorialStyles, editorialHtmlFiles } from "./build-editorial-styles.mjs";
+import { compileContentStyles, compileInteractiveStyles } from "./build-site-styles.mjs";
+import { performanceProfile } from "./site-performance-profile.mjs";
 
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
 
@@ -33,8 +35,8 @@ function inspectArticles(directory) {
       articlePages += 1;
       heroImages += 1;
       const heroTag = hero[0];
-      const preload = `<link rel="preload" as="image" href="${hero[1]}" fetchpriority="high">`;
-      if (!html.includes(preload)) failures.push(`${directory}/${entry.name}: hero image is not preloaded`);
+      const preloads = [...html.matchAll(/<link\b[^>]*\brel="preload"[^>]*\bas="image"[^>]*>/g)].map((match) => match[0]);
+      if (!preloads.some((tag) => tag.includes(hero[1]) && tag.includes('fetchpriority="high"'))) failures.push(`${directory}/${entry.name}: hero image is not preloaded`);
       if (!heroTag.includes('loading="eager"') || !heroTag.includes('fetchpriority="high"')) {
         failures.push(`${directory}/${entry.name}: hero image is not eager/high priority`);
       }
@@ -74,9 +76,14 @@ for (const file of editorialHtmlFiles().filter((file) => file === "compare/index
 }
 
 const blogIndex = readFileSync(join(root, "blog/index.html"), "utf8");
-if (!blogIndex.includes('<link rel="stylesheet" href="/assets/editorial.css">') || !blogIndex.includes('src="/assets/app.js"')) {
-  failures.push("blog/index.html must keep its interactive runtime and use the editorial stylesheet");
+if (!blogIndex.includes('<link rel="stylesheet" href="/assets/editorial.css">') || !blogIndex.includes('src="/assets/blog-index.js"') || !blogIndex.includes('src="/assets/content-page.js"') || blogIndex.includes('src="/assets/app.js"')) {
+  failures.push("blog/index.html must use the lightweight search and language runtimes with the editorial stylesheet");
 }
+if (Buffer.byteLength(blogIndex) > 150_000) failures.push(`blog/index.html is ${Buffer.byteLength(blogIndex)} bytes (limit 150000)`);
+if (!existsSync(join(root, "blog/archive/index.html")) || !blogIndex.includes('href="/blog/archive/"')) failures.push("Blog index is missing its crawlable complete archive");
+if (!existsSync(join(root, "assets/blog-search-index.json")) || statSync(join(root, "assets/blog-search-index.json")).size > 500_000) failures.push("Blog search index is missing or exceeds 500 KB");
+if (existsSync(join(root, "assets/blog-translations.json"))) failures.push("Monolithic Blog translation payload must not be published");
+if (!existsSync(join(root, "assets/blog-translations/index.json")) || statSync(join(root, "assets/blog-translations/index.json")).size > 100_000) failures.push("Blog index translation shard is missing or exceeds 100 KB");
 
 for (const route of ["stringer", "stair-stringer-calculator"]) {
   const html = readFileSync(join(root, route, "index.html"), "utf8");
@@ -100,26 +107,64 @@ const appStyles = readFileSync(join(root, "assets/apps.css"), "utf8");
 if (appStyles !== compileAppStyles().css) {
   failures.push("App stylesheet is stale; run npm run apply:nav-cta after editing CSS, App pages, or their runtimes");
 }
-if (Buffer.byteLength(appStyles) > 80_000) failures.push("App stylesheet exceeds the 80 KB budget");
+if (Buffer.byteLength(appStyles) > 60_000) failures.push("App stylesheet exceeds the 60 KB budget");
 
 const editorialStyles = readFileSync(join(root, "assets/editorial.css"), "utf8");
 if (editorialStyles !== compileEditorialStyles().css) {
   failures.push("Editorial stylesheet is stale; run npm run apply:nav-cta after generating Blog or Compare pages");
 }
-if (Buffer.byteLength(editorialStyles) > 90_000) failures.push("Editorial stylesheet exceeds the 90 KB budget");
+if (Buffer.byteLength(editorialStyles) > 75_000) failures.push("Editorial stylesheet exceeds the 75 KB budget");
 for (const file of appHtmlFiles()) {
   const html = readFileSync(join(root, file), "utf8");
+  const profile = performanceProfile(file, html);
   if (!html.includes('<link rel="stylesheet" href="/assets/apps.css">') || html.includes('href="/assets/styles.css"')) {
     failures.push(`${file}: must load the scoped App stylesheet`);
   }
-  if (!html.includes('<script defer src="/assets/content-page.js"></script>') || html.includes('src="/assets/app.js"')) {
+  if (profile.runtimes.includes("/assets/content-page.js") && (!html.includes('<script defer src="/assets/content-page.js"></script>') || html.includes('src="/assets/app.js"'))) {
     failures.push(`${file}: static App content must use the on-demand language runtime`);
   }
 }
+
+for (const [name, output, compiled, limit] of [
+  ["content", join(root, "assets/content.css"), compileContentStyles(), 90_000],
+  ["interactive", join(root, "assets/interactive.css"), compileInteractiveStyles(), 90_000],
+]) {
+  const css = readFileSync(output, "utf8");
+  if (css !== compiled.css) failures.push(`${name} stylesheet is stale; run npm run apply:nav-cta`);
+  if (Buffer.byteLength(css) > limit) failures.push(`${name} stylesheet exceeds the ${limit} byte budget`);
+  for (const file of compiled.pages) {
+    const html = readFileSync(join(root, file), "utf8");
+    const profile = performanceProfile(file, html);
+    if (!html.includes(`<link rel="stylesheet" href="/assets/${name}.css">`) || html.includes('href="/assets/styles.css"')) {
+      failures.push(`${file}: must load the scoped ${name} stylesheet`);
+    }
+    if (name === "content" && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) {
+      failures.push(`${file}: static content must not eagerly load the full app runtime`);
+    }
+    if (name === "interactive" && profile.runtimes.includes("/assets/app.js") && !html.includes('src="/assets/app.js"')) failures.push(`${file}: interactive page is missing the full app runtime`);
+    if (name === "interactive" && profile.runtimes.includes("/assets/content-page.js") && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) failures.push(`${file}: specialized calculator must use its lightweight runtime`);
+  }
+}
+
+const allProfiledPages = [
+  ...appHtmlFiles(),
+  ...editorialHtmlFiles(),
+  ...compileContentStyles().pages,
+  ...compileInteractiveStyles().pages,
+];
+for (const file of new Set(allProfiledPages)) {
+  if (readFileSync(join(root, file), "utf8").includes('href="/assets/styles.css"')) failures.push(`${file}: serves the authored full stylesheet`);
+}
+
+const chromeSource = readFileSync(join(root, "assets/site-chrome.js"), "utf8");
+const brandIconSize = statSync(join(root, "assets/icons/brand-icon.webp")).size;
+if (!chromeSource.includes('/assets/icons/brand-icon.webp') || chromeSource.includes('class="brand-icon" src="/assets/icons/apple-touch-icon.png')) failures.push("Shared header must use the compact brand icon");
+if (brandIconSize > 4_000) failures.push(`Brand icon is ${brandIconSize} bytes (limit 4000)`);
+if (readFileSync(join(root, "assets/styles.css"), "utf8").includes('/assets/images/woodworking/')) failures.push("Directory card CSS must not eagerly request the shared woodworking photo set");
 
 if (failures.length) {
   console.error(failures.join("\n"));
   process.exit(1);
 }
 
-console.log(`Core Web Vitals guards passed: ${articlePages} image-led articles, ${editorialPages} static Blog articles, ${heroImages} hero preloads, ${inlineImages} lazy/promotable inline images, ${compareLcpImages} Compare LCP preloads, stair bundle ${stairBundleSize} bytes, App stylesheet ${Buffer.byteLength(appStyles)} bytes, editorial stylesheet ${Buffer.byteLength(editorialStyles)} bytes.`);
+console.log(`Core Web Vitals guards passed: ${articlePages} image-led articles, ${editorialPages} static Blog articles, ${heroImages} hero preloads, ${inlineImages} lazy/promotable inline images, ${compareLcpImages} Compare LCP preloads, stair bundle ${stairBundleSize} bytes, App stylesheet ${Buffer.byteLength(appStyles)} bytes, editorial stylesheet ${Buffer.byteLength(editorialStyles)} bytes, content stylesheet ${statSync(join(root, "assets/content.css")).size} bytes, interactive stylesheet ${statSync(join(root, "assets/interactive.css")).size} bytes, Blog index ${Buffer.byteLength(blogIndex)} bytes, brand icon ${brandIconSize} bytes.`);

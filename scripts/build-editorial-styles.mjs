@@ -25,7 +25,7 @@ export function compileEditorialStyles() {
     "assets/site-chrome.js",
     "assets/content-page.js",
     "assets/conversion.js",
-    "assets/app.js",
+    "assets/blog-index.js",
   ]);
   for (const source of html) {
     for (const match of source.matchAll(/<script\b[^>]*\bsrc=["']\/(assets\/[^"'?]+\.js)(?:\?[^"']*)?["']/g)) {

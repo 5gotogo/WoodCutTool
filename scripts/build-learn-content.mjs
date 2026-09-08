@@ -36,7 +36,7 @@ function learnWoodImage(page, offset = 0, placement = "inline") {
     ? 'loading="eager" fetchpriority="high"'
     : 'loading="lazy" fetchpriority="low"';
   return `<figure class="article-wood-photo article-wood-photo-${placement}">
-        <img src="${escapeHtml(image.src)}" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${page.h1}`)}" ${loading} decoding="async">
+        <img src="${escapeHtml(image.src)}" srcset="${escapeHtml(image.src.replace(/\.webp$/, "-480.webp"))} 480w, ${escapeHtml(image.src)} 960w" sizes="(max-width: 760px) calc(100vw - 32px), 760px" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${page.h1}`)}" ${loading} decoding="async">
         <figcaption>${escapeHtml(image.caption)}</figcaption>
       </figure>`;
 }
@@ -69,7 +69,7 @@ function head({ title, description, canonical, jsonLd = "", ogType = "website", 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
-${preloadImage ? `  <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">\n` : ""}  <style>.mega-menu{display:none}</style>
+${preloadImage ? `  <link rel="preload" as="image" href="${escapeHtml(preloadImage.replace(/\.webp$/, "-480.webp"))}" imagesrcset="${escapeHtml(preloadImage.replace(/\.webp$/, "-480.webp"))} 480w, ${escapeHtml(preloadImage)} 960w" imagesizes="(max-width: 760px) calc(100vw - 32px), 760px" fetchpriority="high">\n` : ""}  <style>.mega-menu{display:none}</style>
   <link rel="stylesheet" href="/assets/styles.css">
   <script defer src="/assets/site-chrome.js"></script>
   <script defer src="/assets/app.js"></script>

@@ -19,7 +19,7 @@ export function compileAppStyles() {
   const pages = appHtmlFiles();
   const html = pages.map((file) => readFileSync(join(root, file), "utf8"));
   const runtimePaths = new Set([
-    "assets/site-chrome.js", "assets/content-page.js", "assets/conversion.js", "assets/app.js",
+    "assets/site-chrome.js", "assets/content-page.js", "assets/conversion.js",
   ]);
   for (const source of html) {
     for (const match of source.matchAll(/<script\b[^>]*\bsrc=["']\/(assets\/[^"'?]+\.js)(?:\?[^"']*)?["']/g)) {

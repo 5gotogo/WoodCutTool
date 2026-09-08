@@ -34,6 +34,7 @@
     "audit:learn-intents": "node scripts/audit-learn-intents.mjs",
     "audit:seo": "node scripts/audit-seo.mjs",
     "audit:architecture": "node scripts/audit-site-architecture.mjs",
+    "audit:performance": "node scripts/audit-site-performance.mjs",
     "generate:schemas": "node scripts/apply-tool-schemas.mjs",
     "generate:meta": "node scripts/apply-seo-meta.mjs && node scripts/add-tool-guide-links.mjs",
     "apply:nav-cta": "node scripts/apply-nav-cta.mjs",

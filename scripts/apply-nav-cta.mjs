@@ -4,6 +4,8 @@ import { fileURLToPath } from "node:url";
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
 import { buildAppStyles } from "./build-app-styles.mjs";
 import { buildEditorialStyles } from "./build-editorial-styles.mjs";
+import { buildSiteStyles } from "./build-site-styles.mjs";
+import { performanceProfile } from "./site-performance-profile.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
@@ -36,12 +38,9 @@ function collectHtmlFiles(dir = root, prefix = "") {
 }
 
 function applyStylesVersion(html, file) {
-  const stylesheet = file.startsWith("apps/")
-    ? "/assets/apps.css"
-    : /^(?:blog|compare)\//.test(file)
-      ? "/assets/editorial.css"
-      : "/assets/styles.css";
-  return html.replace(/\/assets\/(?:styles|apps|editorial)\.css(?:\?v=[^"]+)?/g, stylesheet);
+  const stylesheet = performanceProfile(file, html).stylesheet;
+  if (!stylesheet) return html;
+  return html.replace(/\/assets\/(?:styles|apps|editorial|content|interactive)\.css(?:\?v=[^"]+)?/g, stylesheet);
 }
 
 function applyAppVersion(html) {
@@ -81,6 +80,23 @@ function applyConversionScript(html) {
     return next.replace(siteChromePattern, `$1\n${conversionScript}`);
   }
   return next.replace("</head>", `${conversionScript}\n</head>`);
+}
+
+function applyProfiledRuntime(html, file) {
+  const runtimes = performanceProfile(file, html).runtimes;
+  let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page|directory-page|blog-index)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "");
+  const markup = runtimes.map((path) => `  <script defer src="${path}"></script>`).join("\n");
+  const siteChromePattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js")[^>]*>\s*<\/script>)/;
+  if (siteChromePattern.test(next)) return next.replace(siteChromePattern, `$1\n${markup}`);
+  return next.replace("</head>", `${markup}\n</head>`);
+}
+
+function stripSharedChrome(html) {
+  return html
+    .replace(/\s*<style>\.mega-menu\{display:none\}<\/style>/g, "")
+    .replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|conversion|app|content-page|directory-page|blog-index)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "")
+    .replace(/\s*<div\b[^>]*\bdata-site-header\b[^>]*>\s*<\/div>/gi, "")
+    .replace(/\s*<div\b[^>]*\bdata-site-footer\b[^>]*>\s*<\/div>/gi, "");
 }
 
 function cutlistCampaignFor(file) {
@@ -171,24 +187,30 @@ let skipped = 0;
 for (const file of collectHtmlFiles()) {
   const absolute = join(root, file);
   const html = readFileSync(absolute, "utf8");
-  const next = applySmartAppBanner(
-    applySharedChromeMounts(
-      applyConversionScript(
-        applySiteChromeScript(
-          applyMegaMenuFallback(
-            applyConversionVersion(
-              applySiteChromeVersion(
-                applyAppVersion(
-                  applyStylesVersion(html, file)
+  const profile = performanceProfile(file, html);
+  const next = !profile.stylesheet && profile.runtimes.length === 0
+    ? stripSharedChrome(html)
+    : applySmartAppBanner(
+    applyProfiledRuntime(
+      applySharedChromeMounts(
+        applyConversionScript(
+          applySiteChromeScript(
+            applyMegaMenuFallback(
+              applyConversionVersion(
+                applySiteChromeVersion(
+                  applyAppVersion(
+                    applyStylesVersion(html, file)
+                  )
                 )
               )
             )
           )
         )
-      )
+      ),
+      file
     ),
     file
-  );
+    );
 
   if (next === html) {
     skipped += 1;
@@ -202,5 +224,6 @@ for (const file of collectHtmlFiles()) {
 console.log(`Applied shared site chrome to ${updated} pages${skipped ? `, skipped ${skipped}` : ""}.`);
 buildAppStyles();
 buildEditorialStyles();
+buildSiteStyles();
 
 writeFileSync(join(root, "assets/plywood-core.js"), plywoodCoreSource());

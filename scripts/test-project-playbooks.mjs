@@ -126,7 +126,7 @@ for (const { entry, html } of generated) {
   const scriptOrder = [
     '/assets/project-playbooks.js',
     '/assets/site-chrome.js',
-    '/assets/app.js',
+    '/assets/content-page.js',
     '/assets/conversion.js',
   ].map((source) => html.indexOf(`src="${source}"`));
   assert(scriptOrder.every((position) => position >= 0), `${entry.slug} is missing a canonical runtime script.`);

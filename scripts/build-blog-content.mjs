@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
@@ -10539,7 +10539,7 @@ function woodworkingArticleFigure(article, offset = 0, placement = "inline") {
     ? 'loading="eager" fetchpriority="high"'
     : 'loading="lazy"';
   return `<figure class="article-wood-photo article-wood-photo-${placement}">
-          <img src="${escapeHtml(image.src)}" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${article.title}`)}" ${loading} decoding="async">
+          <img src="${escapeHtml(image.src)}" srcset="${escapeHtml(image.src.replace(/\.webp$/, "-480.webp"))} 480w, ${escapeHtml(image.src)} 960w" sizes="(max-width: 760px) calc(100vw - 32px), 760px" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${article.title}`)}" ${loading} decoding="async">
           <figcaption>${escapeHtml(image.caption)}</figcaption>
         </figure>`;
 }
@@ -10561,6 +10561,14 @@ function footer() {
 }
 
 function head({ title, description, canonical, ogType = "website", jsonLd = "", preloadImage = "", runtime = "app" }) {
+  const runtimes = (Array.isArray(runtime) ? runtime : [runtime])
+    .map((name) => `  <script defer src="/assets/${name}.js"></script>`)
+    .join("\n");
+  const preload = !preloadImage
+    ? ""
+    : preloadImage.startsWith("/assets/images/woodworking/")
+      ? `  <link rel="preload" as="image" href="${escapeHtml(preloadImage.replace(/\.webp$/, "-480.webp"))}" imagesrcset="${escapeHtml(preloadImage.replace(/\.webp$/, "-480.webp"))} 480w, ${escapeHtml(preloadImage)} 960w" imagesizes="(max-width: 760px) calc(100vw - 32px), 760px" fetchpriority="high">\n`
+      : `  <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">\n`;
   return `<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10577,10 +10585,10 @@ function head({ title, description, canonical, ogType = "website", jsonLd = "", 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#1e2a23">
-${preloadImage ? `  <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">\n` : ""}  <style>.mega-menu{display:none}</style>
+${preload}  <style>.mega-menu{display:none}</style>
   <link rel="stylesheet" href="/assets/editorial.css">
   <script defer src="/assets/site-chrome.js"></script>
-  <script defer src="/assets/${runtime}.js"></script>
+${runtimes}
 </head>`;
 }
 
@@ -10684,6 +10692,12 @@ function articleVisual(article, { card = false } = {}) {
   if (article.category === "Tinnitus") {
     return tinnitusArticleVisual(article, articleIndex);
   }
+  if (card && usesWoodworkingImages(article)) {
+    const image = woodworkingImageFor(`${article.slug} ${article.title} ${article.description}`, 0);
+    return `<figure class="blog-article-visual blog-wood-cover ${article.accent}">
+          <img src="${escapeHtml(image.src)}" srcset="${escapeHtml(image.src.replace(/\.webp$/, "-480.webp"))} 480w, ${escapeHtml(image.src)} 960w" sizes="(max-width: 760px) calc(100vw - 32px), 360px" width="960" height="720" alt="" loading="lazy" decoding="async">
+        </figure>`;
+  }
   if (!card && usesWoodworkingImages(article)) {
     return woodworkingArticleFigure(article, 0, "hero");
   }
@@ -10693,8 +10707,7 @@ function articleVisual(article, { card = false } = {}) {
     .map(([area, color]) => `<span style="grid-area: ${area}; background: ${color};"></span>`)
     .join("");
 
-  const cardCoverClass = card ? " blog-wood-cover" : "";
-  return `<div class="blog-article-visual${cardCoverClass} ${article.accent} visual-${String(articleIndex + 1).padStart(2, "0")}" style="${style}" aria-hidden="true">${cells}</div>`;
+  return `<div class="blog-article-visual ${article.accent} visual-${String(articleIndex + 1).padStart(2, "0")}" style="${style}" aria-hidden="true">${cells}</div>`;
 }
 
 function articleCard(article) {
@@ -10712,8 +10725,8 @@ function articleCard(article) {
       </article>`;
 }
 
-const BLOG_SECTION_CARD_LIMIT = 12;
-const BLOG_INDEX_JSONLD_LIMIT = 120;
+const BLOG_SECTION_CARD_LIMIT = 1;
+const BLOG_INDEX_JSONLD_LIMIT = 40;
 
 function categoryArticles(category) {
   return articles.filter((article) => article.category === category);
@@ -10820,12 +10833,13 @@ ${head({
     title: "WoodCutTool Blog | CutList, Maker Apps & Project Guides",
     description: "Guides for plywood cut lists, woodworking calculators, maker apps, labeling, scanning, audio tools, shift calendars, QuiltFit, tile, and stairs.",
     canonical: "https://woodcuttool.com/blog/",
-    jsonLd: blogIndexJsonLd()
+    jsonLd: blogIndexJsonLd(),
+    runtime: ["content-page", "blog-index"]
   })}
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   ${header("Blogs")}
-  <main id="main" class="blog-home" data-blog-index>
+  <main id="main" class="blog-home" data-blog-index data-blog-count="${articles.length + oldGuides.length}">
     <div class="blog-shell">
       <aside class="blog-directory" aria-label="Blog directory">
         <details class="blog-directory-panel" data-blog-directory-panel>
@@ -10846,13 +10860,8 @@ ${head({
             <a href="#core-guides" data-blog-category-link="Classic guide"><span>Guides</span><strong data-blog-category-count>${oldGuides.length}</strong></a>
           </nav>
           <div class="blog-directory-status" data-blog-search-status>${articles.length + oldGuides.length} articles</div>
-          <div class="blog-directory-list" id="blog-directory-list" aria-label="Article list">
-            ${articles.map(directoryLink).join("\n            ")}
-            ${oldGuides.map((guide, index) => `<a href="${guide.href}" data-blog-directory-item data-blog-category="${escapeHtml(guide.category)}" data-blog-search="${escapeHtml([guide.title, guide.description, guide.category].join(" ").toLowerCase())}">
-              <span>G${index + 1}</span>
-              <strong>${escapeHtml(guide.title)}</strong>
-              <em>${escapeHtml(guide.category)}</em>
-            </a>`).join("\n            ")}
+          <div class="blog-directory-list" id="blog-directory-list" data-blog-search-results aria-label="Article search results">
+            <a href="/blog/archive/"><span>All</span><strong>Browse the complete article archive</strong><em>${articles.length + oldGuides.length} articles</em></a>
           </div>
           <p class="blog-search-empty" data-blog-search-empty hidden>No matching articles.</p>
           </div>
@@ -11011,6 +11020,49 @@ ${head({
 `;
 }
 
+function blogArchive() {
+  const links = [
+    ...articles.slice().reverse().map((article) => `<li><a href="/blog/${article.slug}/">${escapeHtml(article.title)}</a><span>${escapeHtml(article.category)}</span></li>`),
+    ...oldGuides.map((guide) => `<li><a href="${guide.href}">${escapeHtml(guide.title)}</a><span>${escapeHtml(guide.category)}</span></li>`),
+  ].join("\n        ");
+  const archiveJsonLd = `<script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "WoodCutTool Article Archive",
+    url: "https://woodcuttool.com/blog/archive/",
+    mainEntity: { "@type": "ItemList", numberOfItems: articles.length + oldGuides.length },
+  })}</script>`;
+  return `<!doctype html>
+<html lang="en">
+${head({
+    title: "Complete Article Archive | WoodCutTool",
+    description: `Browse all ${articles.length + oldGuides.length} WoodCutTool articles by title, covering woodworking, project planning, calculators, and practical app workflows.`,
+    canonical: "https://woodcuttool.com/blog/archive/",
+    jsonLd: archiveJsonLd,
+    runtime: "content-page",
+  })}
+<body><a class="skip-link" href="#main">Skip to content</a>${header("Blogs")}
+  <main id="main" class="article-shell"><article class="article-body"><p class="breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blogs</a> / Archive</p><p class="eyebrow">Complete directory</p><h1>WoodCutTool Article Archive</h1><p class="lead">Every published article remains linked here for readers and crawlers. Use the faster search on the <a href="/blog/">Blog home page</a> when you know the topic.</p><ol class="blog-archive-list">${links}</ol></article></main>${footer()}
+</body></html>\n`;
+}
+
+function blogSearchIndex() {
+  return [
+    ...articles.map((article) => ({
+      title: article.title,
+      url: `/blog/${article.slug}/`,
+      category: article.category,
+      search: [article.title, article.category, article.kicker, article.slug].join(" ").toLowerCase(),
+    })),
+    ...oldGuides.map((guide) => ({
+      title: guide.title,
+      url: guide.href,
+      category: guide.category,
+      search: [guide.title, guide.category].join(" ").toLowerCase(),
+    })),
+  ];
+}
+
 function readTimeLabel(readTime) {
   return /\bread\b/i.test(readTime) ? readTime : `${readTime} read`;
 }
@@ -11140,6 +11192,7 @@ ${head({
       ${relatedToolsAndGuides(article)}
       <section class="related-articles">
         <h2>Related Articles</h2>
+        <p><a href="/blog/archive/">Browse the complete article archive</a></p>
         <div class="related-grid">${related.map((item) => `<a href="/blog/${item.slug}/"><span>${escapeHtml(item.category)}</span><strong>${escapeHtml(item.title)}</strong></a>`).join("")}</div>
       </section>
     </article>
@@ -11945,8 +11998,10 @@ function existingFeedMeta() {
 }
 
 mkdirSync(join(root, "blog"), { recursive: true });
-writeFileSync(join(root, "assets", "blog-translations.json"), `${JSON.stringify(generateBlogTranslations(), null, 2)}\n`);
 writeFileSync(join(root, "blog", "index.html"), blogIndex());
+mkdirSync(join(root, "blog", "archive"), { recursive: true });
+writeFileSync(join(root, "blog", "archive", "index.html"), blogArchive());
+writeFileSync(join(root, "assets", "blog-search-index.json"), `${JSON.stringify(blogSearchIndex())}\n`);
 
 const legacyLearnSlugMap = {
   "mobile-workbench-cut-list-planner": "mobile-workbench-caster-planning",
@@ -11974,6 +12029,24 @@ for (const article of articles) {
 }
 
 updateExistingHtml();
+
+function buildBlogTranslationShards() {
+  const translations = generateBlogTranslations();
+  const outputDirectory = join(root, "assets", "blog-translations");
+  rmSync(outputDirectory, { recursive: true, force: true });
+  mkdirSync(outputDirectory, { recursive: true });
+
+  for (const route of ["index", ...articles.map((article) => article.slug)]) {
+    const html = readFileSync(join(root, "blog", ...(route === "index" ? ["index.html"] : [route, "index.html"])), "utf8");
+    const shard = {};
+    for (const [lang, dictionary] of Object.entries(translations)) {
+      shard[lang] = Object.fromEntries(Object.entries(dictionary).filter(([source]) => html.includes(source) || html.includes(escapeHtml(source))));
+    }
+    writeFileSync(join(outputDirectory, `${route}.json`), `${JSON.stringify(shard)}\n`);
+  }
+}
+
+buildBlogTranslationShards();
 
 // RSS 2.0 feed of the most recent blog posts (helps discovery + freshness).
 function buildRssFeed() {

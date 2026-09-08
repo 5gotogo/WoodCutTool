@@ -3507,11 +3507,13 @@ function translateElement(root = document.body, lang = getActiveLang()) {
   if (lang !== "en") hasTranslatedDom = true;
 }
 
-function loadBlogTranslations() {
+function loadBlogTranslations(lang) {
   if (!isBlogPage()) return Promise.resolve();
+  if (lang !== "zh-CN" && lang !== "zh-TW") return Promise.resolve();
   if (blogTranslationsLoaded) return Promise.resolve();
   if (!blogTranslationsPromise) {
-    blogTranslationsPromise = fetch("/assets/blog-translations.json?v=20260622-language-picker")
+    const route = location.pathname.replace(/^\/blog\/?|\/$/g, "") || "index";
+    blogTranslationsPromise = fetch(`/assets/blog-translations/${encodeURIComponent(route)}.json`)
       .then((response) => {
         if (!response.ok) throw new Error(`Blog translations failed: ${response.status}`);
         return response.json();
@@ -3605,7 +3607,7 @@ function setLanguage(lang) {
     translateElement(document.body, nextLang);
   }
   if (isBlogPage() && nextLang !== "en") {
-    loadBlogTranslations().then(() => translateElement(document.body, nextLang));
+    loadBlogTranslations(nextLang).then(() => translateElement(document.body, nextLang));
   }
   applyGoogleTranslate(nextLang);
 }

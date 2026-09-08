@@ -1,6 +1,7 @@
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { performanceProfile } from "./site-performance-profile.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = (process.env.SITE_URL || "https://woodcuttool.com").replace(/\/$/, "");
@@ -256,17 +257,21 @@ for (const file of htmlFiles) {
   }
 
   const html = readText(file);
+  const expectsSharedChrome = performanceProfile(file, html).stylesheet !== null;
 
   const headerMounts = html.match(/<div\b[^>]*\bdata-site-header\b[^>]*>\s*<\/div>/gi) ?? [];
   const footerMounts = html.match(/<div\b[^>]*\bdata-site-footer\b[^>]*>\s*<\/div>/gi) ?? [];
   const staticHeaders = html.match(/<header\b[^>]*\bclass=["'][^"']*\bsite-header\b[^"']*["'][^>]*>/gi) ?? [];
   const staticFooters = html.match(/<footer\b[^>]*\bclass=["'][^"']*\bsite-footer\b[^"']*["'][^>]*>/gi) ?? [];
   const siteChromeScripts = html.match(/<script\b[^>]*\bsrc=["']\/assets\/site-chrome\.js(?:\?[^"']*)?["'][^>]*>\s*<\/script>/gi) ?? [];
-  if (siteChromeScripts.length !== 1) {
+  if (expectsSharedChrome && siteChromeScripts.length !== 1) {
     errors.push(`${file} must load exactly one shared site-chrome.js script; found ${siteChromeScripts.length}`);
   }
-  if (headerMounts.length !== 1 || footerMounts.length !== 1) {
+  if (expectsSharedChrome && (headerMounts.length !== 1 || footerMounts.length !== 1)) {
     errors.push(`${file} must contain exactly one shared header and footer mount`);
+  }
+  if (!expectsSharedChrome && (siteChromeScripts.length || headerMounts.length || footerMounts.length)) {
+    errors.push(`${file} is a standalone or redirect page and must not load shared site chrome`);
   }
   if (/<!-- shared-(?:header|footer):(?:start|end) -->/.test(html) || html.includes("data-site-chrome-fallback")) {
     errors.push(`${file} still contains expanded shared chrome instead of the common mount`);

@@ -1,4 +1,5 @@
 (function () {
+  const deferredMenus = new Map();
   const appStoreLinks = {
     cutlist: "/go/cutlist/?source=navigation&placement=header",
     tilefit: "https://apps.apple.com/us/app/tilefit-tile-layout-planner/id6792627022",
@@ -133,7 +134,8 @@
 
   function navMenuItem({ href, label, menu, aliases = [] }) {
     const isCurrent = isActive(href, aliases);
-    return `<div class="nav-menu-item${isCurrent ? " active" : ""}"><div class="nav-menu-control"><a class="nav-trigger${isCurrent ? " active" : ""}" href="${href}">${label}</a><button class="nav-menu-toggle" type="button" aria-label="Open ${label} menu" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Open ${label} menu</span></button></div>${menu}</div>`;
+    deferredMenus.set(label, menu);
+    return `<div class="nav-menu-item${isCurrent ? " active" : ""}" data-menu-key="${label}"><div class="nav-menu-control"><a class="nav-trigger${isCurrent ? " active" : ""}" href="${href}">${label}</a><button class="nav-menu-toggle" type="button" aria-label="Open ${label} menu" aria-haspopup="true" aria-expanded="false"><span class="visually-hidden">Open ${label} menu</span></button></div></div>`;
   }
 
   function resourceNavMenu({ href, label, aliases = [], featureTitle, featureDescription, featureCta, visual, columns }) {
@@ -391,7 +393,7 @@
     const storeIcon = isStoreLink
       ? `<span class="nav-store-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M16.7 12.8c0-2 1.6-3 1.7-3.1a3.7 3.7 0 0 0-2.9-1.6c-1.2-.1-2.4.7-3 .7-.6 0-1.6-.7-2.6-.7a3.9 3.9 0 0 0-3.3 2c-1.4 2.4-.4 6 1 8 .7 1 1.5 2.1 2.6 2 .9 0 1.3-.6 2.5-.6s1.5.6 2.5.6c1.1 0 1.8-1 2.5-2a8.7 8.7 0 0 0 1.1-2.3 3.5 3.5 0 0 1-2.1-3Zm-2-6c.6-.7 1-1.7.9-2.7-.9 0-2 .6-2.6 1.3-.6.6-1.1 1.6-1 2.6 1 .1 2-.5 2.7-1.2Z"/></svg></span>`
       : "";
-    return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/" aria-label="WoodCutTool home"><img class="brand-icon" src="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619" width="34" height="34" alt=""><span class="brand-name">WoodCutTool</span></a>${navLinks()}<button class="mobile-nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false"><span class="mobile-nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span><span class="visually-hidden">Open menu</span></button><a class="button small nav-download-cta" href="${href}" aria-label="${label}"${isStoreLink ? ' data-app-store-link data-platform-label data-conversion-placement="navigation" rel="nofollow noopener"' : ""}>${storeIcon}<span data-platform-label-text>${label}</span></a></nav></header>`;
+    return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/" aria-label="WoodCutTool home"><img class="brand-icon" src="/assets/icons/brand-icon.webp" width="34" height="34" alt=""><span class="brand-name">WoodCutTool</span></a>${navLinks()}<button class="mobile-nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false"><span class="mobile-nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span><span class="visually-hidden">Open menu</span></button><a class="button small nav-download-cta" href="${href}" aria-label="${label}"${isStoreLink ? ' data-app-store-link data-platform-label data-conversion-placement="navigation" rel="nofollow noopener"' : ""}>${storeIcon}<span data-platform-label-text>${label}</span></a></nav></header>`;
   }
 
   function footerColumn(title, links) {
@@ -546,6 +548,10 @@
     };
 
     const openMenu = (item) => {
+      if (!item.querySelector(".mega-menu")) {
+        const menu = deferredMenus.get(item.dataset.menuKey || "");
+        if (menu) item.insertAdjacentHTML("beforeend", menu);
+      }
       updateMenuTop();
       items.forEach((candidate) => {
         const isCurrent = candidate === item;
@@ -612,15 +618,24 @@
     button.innerHTML = `<span aria-hidden="true">↑</span>`;
     document.body.append(button);
 
+    let updateFrame = 0;
+    let isVisible = false;
     const updateVisibility = () => {
-      button.hidden = window.scrollY < 1100;
+      updateFrame = 0;
+      const nextVisible = window.scrollY >= 1100;
+      if (nextVisible === isVisible) return;
+      isVisible = nextVisible;
+      button.hidden = !nextVisible;
+    };
+    const requestVisibilityUpdate = () => {
+      if (!updateFrame) updateFrame = window.requestAnimationFrame(updateVisibility);
     };
 
     button.addEventListener("click", () => {
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
     });
-    window.addEventListener("scroll", updateVisibility, { passive: true });
+    window.addEventListener("scroll", requestVisibilityUpdate, { passive: true });
     updateVisibility();
   }
 

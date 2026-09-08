@@ -5638,51 +5638,51 @@ tr:last-child td {
   height: 112px;
   margin: -20px -20px 16px;
   border-bottom: 1px solid var(--line);
-  background: url("/assets/images/woodworking/wood-01-plywood-cut-layout.webp") center / cover no-repeat;
+  background: linear-gradient(135deg, rgba(47, 111, 78, 0.9), rgba(215, 148, 60, 0.72));
 }
 
 .learn-page .grid.tools .card:nth-child(12n+2)::before {
-  background-image: url("/assets/images/woodworking/wood-02-cabinet-hardware.webp");
+  background-image: linear-gradient(135deg, #315f57, #d6aa62);
 }
 
 .learn-page .grid.tools .card:nth-child(12n+3)::before {
-  background-image: url("/assets/images/woodworking/wood-03-track-saw-planning.webp");
+  background-image: linear-gradient(135deg, #425f79, #c39a62);
 }
 
 .learn-page .grid.tools .card:nth-child(12n+4)::before {
-  background-image: url("/assets/images/woodworking/wood-04-joinery-samples.webp");
+  background-image: linear-gradient(135deg, #6a513a, #d8bc83);
 }
 
 .learn-page .grid.tools .card:nth-child(12n+5)::before {
-  background-image: url("/assets/images/woodworking/wood-05-material-selection.webp");
+  background-image: linear-gradient(135deg, #426b50, #b9c98a);
 }
 
 .learn-page .grid.tools .card:nth-child(12n+6)::before {
-  background-image: url("/assets/images/woodworking/wood-06-drawer-assembly.webp");
+  background-image: linear-gradient(135deg, #826047, #dfb26f);
 }
 
 .learn-page .grid.tools .card:nth-child(12n+7)::before {
-  background-image: url("/assets/images/woodworking/wood-07-workshop-bench.webp");
+  background-image: linear-gradient(135deg, #2e5a52, #8fb7a3);
 }
 
 .learn-page .grid.tools .card:nth-child(12n+8)::before {
-  background-image: url("/assets/images/woodworking/wood-08-edge-banding.webp");
+  background-image: linear-gradient(135deg, #4c6270, #ceb27b);
 }
 
 .learn-page .grid.tools .card:nth-child(12n+9)::before {
-  background-image: url("/assets/images/woodworking/wood-09-closet-planning.webp");
+  background-image: linear-gradient(135deg, #725d49, #d8cfb0);
 }
 
 .learn-page .grid.tools .card:nth-child(12n+10)::before {
-  background-image: url("/assets/images/woodworking/wood-10-offcut-storage.webp");
+  background-image: linear-gradient(135deg, #385a49, #c6a56f);
 }
 
 .learn-page .grid.tools .card:nth-child(12n+11)::before {
-  background-image: url("/assets/images/woodworking/wood-11-table-saw-planning.webp");
+  background-image: linear-gradient(135deg, #4b5663, #d19d5a);
 }
 
 .learn-page .grid.tools .card:nth-child(12n)::before {
-  background-image: url("/assets/images/woodworking/wood-12-site-measurement.webp");
+  background-image: linear-gradient(135deg, #596947, #d7bd75);
 }
 
 @media (min-width: 780px) {
@@ -6561,55 +6561,14 @@ tr:last-child td {
   min-height: 118px;
   padding: 0;
   overflow: hidden;
-  background: url("/assets/images/woodworking/wood-01-plywood-cut-layout.webp") center / cover no-repeat;
+  background: #e8e3d7;
 }
 
-.blog-card .blog-article-visual.blog-wood-cover span {
-  display: none;
-}
-
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 2) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/woodworking/wood-02-cabinet-hardware.webp");
-}
-
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 3) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/woodworking/wood-03-track-saw-planning.webp");
-}
-
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 4) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/woodworking/wood-04-joinery-samples.webp");
-}
-
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 5) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/woodworking/wood-05-material-selection.webp");
-}
-
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 6) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/woodworking/wood-06-drawer-assembly.webp");
-}
-
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 7) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/woodworking/wood-07-workshop-bench.webp");
-}
-
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 8) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/woodworking/wood-08-edge-banding.webp");
-}
-
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 9) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/woodworking/wood-09-closet-planning.webp");
-}
-
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 10) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/woodworking/wood-10-offcut-storage.webp");
-}
-
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n + 11) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/woodworking/wood-11-table-saw-planning.webp");
-}
-
-:is(.blog-grid, .blog-featured) > .blog-card:nth-child(12n) .blog-article-visual.blog-wood-cover {
-  background-image: url("/assets/images/woodworking/wood-12-site-measurement.webp");
+.blog-card .blog-article-visual.blog-wood-cover img {
+  width: 100%;
+  height: 100%;
+  min-height: 118px;
+  object-fit: cover;
 }
 
 .blog-article-visual.visual-02 span,
@@ -11615,6 +11574,50 @@ tr:last-child td {
 
   .learn-section-toggle span {
     transition: none;
+  }
+}
+
+/* Keep long directory pages cheap to scroll and lay out while preserving their
+   complete HTML for search, keyboard navigation, and no-script access. */
+.blog-section,
+.template-category-section,
+.glossary-section,
+.checklist-category,
+.worksheet-category,
+.troubleshooting-category {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
+}
+
+.blog-archive-list {
+  display: grid;
+  gap: 0;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.blog-archive-list li {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 48px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.blog-archive-list span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 680px) {
+  .site-header {
+    background: rgba(247, 245, 239, 0.985);
+    backdrop-filter: none;
   }
 }
 
