@@ -547,11 +547,15 @@
       setMobileNavigation(false);
     };
 
-    const openMenu = (item) => {
+    const ensureMenu = (item) => {
       if (!item.querySelector(".mega-menu")) {
         const menu = deferredMenus.get(item.dataset.menuKey || "");
         if (menu) item.insertAdjacentHTML("beforeend", menu);
       }
+    };
+
+    const openMenu = (item) => {
+      ensureMenu(item);
       updateMenuTop();
       items.forEach((candidate) => {
         const isCurrent = candidate === item;
@@ -576,6 +580,12 @@
       const toggle = item.querySelector(".nav-menu-toggle");
       if (!toggle) return;
       toggle.setAttribute("aria-expanded", "false");
+      item.addEventListener("pointerenter", (event) => {
+        if (!mobileQuery.matches && event.pointerType !== "touch") ensureMenu(item);
+      });
+      item.addEventListener("focusin", () => {
+        if (!mobileQuery.matches) ensureMenu(item);
+      });
       toggle.addEventListener("click", (event) => {
         event.preventDefault();
         event.stopPropagation();

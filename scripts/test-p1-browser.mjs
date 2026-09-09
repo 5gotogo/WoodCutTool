@@ -41,6 +41,10 @@ try {
       await send('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Escape', code: 'Escape' });
       assert.equal(await evaluate('document.querySelector(".mobile-nav-toggle").getAttribute("aria-expanded")'), 'false');
     } else {
+      assert.equal(await evaluate('Boolean(document.querySelector(".nav-menu-item .mega-menu"))'), false);
+      const menuPoint = await evaluate('const r=document.querySelector(".nav-menu-item").getBoundingClientRect();({x:r.left+r.width/2,y:r.top+r.height/2})');
+      await send('Input.dispatchMouseEvent', { type: 'mouseMoved', x: menuPoint.x, y: menuPoint.y });
+      await wait('document.querySelector(".nav-menu-item .mega-menu") && getComputedStyle(document.querySelector(".nav-menu-item .mega-menu")).visibility === "visible"');
       await click('.nav-menu-toggle');
       assert.equal(await evaluate('document.querySelector(".nav-menu-toggle").getAttribute("aria-expanded")'), 'true');
       await send('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Escape', code: 'Escape' });
