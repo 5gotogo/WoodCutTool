@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-09-03",
-    "hash": "fccd2c2564f0d3a933e9e476f57bf152dd3d670398addb2693f7f491f2b40dea",
+    "lastmod": "2026-09-09",
+    "hash": "6a30f426ddfbc4cccaf5ff3fd1092c5098634c49c5fd1e825f3b337b722ff7de",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -9117,6 +9117,16 @@
   "/legal/Tinnitus/support/": {
     "lastmod": "2026-07-23",
     "hash": "ef0d93bf634f5d9b832ede80c991e6438f61dfa9858f13d9af2624901c5076eb",
+    "hashVersion": 2
+  },
+  "/legal/WoodCheck/privacy/": {
+    "lastmod": "2026-09-09",
+    "hash": "fba1c2ed0169364d712edd5683d4e0b9d466932ba3acf6bdcfa81e20605ab6a0",
+    "hashVersion": 2
+  },
+  "/legal/WoodCheck/support/": {
+    "lastmod": "2026-09-09",
+    "hash": "5d8678900311faac1df0dcf66106e3380bc172188e411a716f76b309c5d44ffc",
     "hashVersion": 2
   },
   "/lumber-calculator/": {

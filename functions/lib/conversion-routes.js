@@ -1807,6 +1807,8 @@ export const conversionRoutes = new Set([
   "/legal/TileFit/support/",
   "/legal/Tinnitus/privacy/",
   "/legal/Tinnitus/support/",
+  "/legal/WoodCheck/privacy/",
+  "/legal/WoodCheck/support/",
   "/legal/cutlist/privacy/",
   "/legal/cutlist/support/",
   "/legal/quiltfit/privacy/",

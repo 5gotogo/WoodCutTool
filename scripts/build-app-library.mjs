@@ -135,7 +135,8 @@ const appSupportDirectory = [
   ["PrivateMind", "/legal/PrivateMind/privacy/", "/legal/PrivateMind/support/"],
   ["TileFit", "/legal/TileFit/privacy/", "/legal/TileFit/support/"],
   ["Spring", "/legal/Spring/privacy/", "/legal/Spring/support/"],
-  ["Shelf Planner", "/legal/ShelfPlanner/privacy/", "/legal/ShelfPlanner/support/"]
+  ["Shelf Planner", "/legal/ShelfPlanner/privacy/", "/legal/ShelfPlanner/support/"],
+  ["WoodCheck", "/legal/WoodCheck/privacy/", "/legal/WoodCheck/support/"]
 ];
 
 const featuredApps = [
