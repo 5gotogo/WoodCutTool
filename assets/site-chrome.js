@@ -208,9 +208,7 @@
           { href: "/learn/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut lists, cabinets, lumber, and shop planning." },
           { href: "/learn/plywood/", icon: "PW", title: "Plywood hub", description: "Sheet count, kerf, grain, layout, and waste." },
           { href: "/troubleshooting/", icon: "FX", title: "Troubleshooting", description: "Diagnose fit, cutting, cabinet, and material failures." },
-          { href: "/checklists/", icon: "CK", title: "Woodworking checklists", description: "Verify release gates before ordering, cutting, assembly, and installation." },
-          { href: "/worksheets/", icon: "WS", title: "Woodworking worksheets", description: "Record measurements, quantities, setups, installation, and closeout." },
-          { href: "/examples/", icon: "EX", title: "Cut list examples", description: "Download project parts and inspect modeled layouts." }
+          { href: "/checklists/", icon: "CK", title: "Woodworking checklists", description: "Verify release gates before ordering, cutting, assembly, and installation." }
         ] },
         { title: "Construction", links: [
           { href: "/learn/stairs/", icon: "ST", title: "Stairs", description: "Rise, run, tread, stringer, and angle guides." },
@@ -336,10 +334,7 @@
         { title: "Start", links: [
           { href: "/projects/", icon: "PJ", title: "Guided project playbooks", description: "Choose one of 18 end-to-end builds and continue your progress on this device.", exact: true },
           { href: "/one-sheet-projects/", icon: "1S", title: "One-sheet project gallery", description: "Filter 43 projects, preview each 4×8 layout, and download the cut list." },
-          { href: "/tools/components/", icon: "CC", title: "Component calculators", description: "Build reusable cabinet parts and merge them into one project cut list." },
-          { href: "/templates/", icon: "TP", title: "Templates", description: "Project-ready parts, constraints, and release checks.", exact: true },
-          { href: "/examples/", icon: "EX", title: "Worked examples", description: "Parts, modeled layouts, sheet counts, and CSV files." },
-          { href: "/material-list-generator/", icon: "ML", title: "Material list", description: "Turn confirmed project inputs into a buying list." }
+          { href: "/tools/components/", icon: "CC", title: "Component calculators", description: "Build reusable cabinet parts and merge them into one project cut list." }
         ] },
         { title: "Record", links: [
           { href: "/worksheets/", icon: "WS", title: "Worksheets", description: "Capture measurements, materials, setups, and closeout evidence." },
