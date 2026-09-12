@@ -5,8 +5,8 @@
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-09-08",
-    "hash": "91e9644d05c90c85dde760b63521e20868b983f09128695831c0ad6158668251",
+    "lastmod": "2026-09-12",
+    "hash": "0cee44a382ef060fca1ce506f5ba9062caff4dd85a033101487c975709fdf190",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -6709,6 +6709,41 @@
     "hash": "15be988eb5527384196ee90a538f7054fab49cdd15742a595f613c6d63485cab",
     "hashVersion": 2
   },
+  "/estimating/": {
+    "lastmod": "2026-09-12",
+    "hash": "0c1869b3289d84ebc305f1ac69b042d67879f649bb5c718c4b0e0384f025637e",
+    "hashVersion": 2
+  },
+  "/estimating/bookshelf/": {
+    "lastmod": "2026-09-12",
+    "hash": "693fb685127db5bff24101934d54cfb758abc6e57625b6387edd2849156b2874",
+    "hashVersion": 2
+  },
+  "/estimating/kitchen-cabinet/": {
+    "lastmod": "2026-09-12",
+    "hash": "a338f962f66eadce09e684eb6954d6a783a7c5ad73796c8cc3cf1db2b0ceacdd",
+    "hashVersion": 2
+  },
+  "/estimating/laundry-fit-out/": {
+    "lastmod": "2026-09-12",
+    "hash": "9af8b2d043099a6c1e8c620abdc47f8d90a2a19dcd3fef98bd3c3728559d3974",
+    "hashVersion": 2
+  },
+  "/estimating/under-stair-storage/": {
+    "lastmod": "2026-09-12",
+    "hash": "43d49024f21438328c4d9dffebda7309c957a48fc32b1f924d9c88fedf4e8562",
+    "hashVersion": 2
+  },
+  "/estimating/wardrobe/": {
+    "lastmod": "2026-09-12",
+    "hash": "7e8dc51349b1b7c37a249654e01c2c3b56958885013d3a3294da527adaa51df6",
+    "hashVersion": 2
+  },
+  "/estimating/workbench/": {
+    "lastmod": "2026-09-12",
+    "hash": "07c3466226b12079786d05c0a03c4006863ac1a5c2ebda8cdea41fc270f7f65c",
+    "hashVersion": 2
+  },
   "/examples/appliance-garage-cut-list/": {
     "lastmod": "2026-07-23",
     "hash": "e60d068ae70457b8caf75044fa63cb30125109aaee7885ff654e3886eb34e699",
@@ -10040,8 +10075,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-09-08",
-    "hash": "68d8461fcfffb1b1b557a73d71a764e9220c23043e42127a6bbd2e3af93e9290",
+    "lastmod": "2026-09-12",
+    "hash": "9a6390461512abb8c262d1ab1225ee2c658e40cb0467d70ebbbca5c73bcbe625",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

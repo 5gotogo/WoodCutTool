@@ -337,6 +337,7 @@
           { href: "/tools/components/", icon: "CC", title: "Component calculators", description: "Build reusable cabinet parts and merge them into one project cut list." }
         ] },
         { title: "Record", links: [
+          { href: "/estimating/", icon: "MC", title: "Material & cost planning", description: "Estimate panel allowances, then prepare the cuts in CutList." },
           { href: "/worksheets/", icon: "WS", title: "Worksheets", description: "Capture measurements, materials, setups, and closeout evidence." },
           { href: "/checklists/", icon: "CK", title: "Checklists", description: "Release planning, cutting, assembly, installation, and handoff." },
           { href: "/research/", icon: "RS", title: "Open datasets", description: "Inspect the assumptions behind sheet and kerf benchmarks." }
