@@ -9922,6 +9922,7 @@ tr:last-child td {
 
   .hero-cut-form label {
     font-size: 13px;
+    grid-template-rows: 1fr auto;
   }
 
   .hero-cut-form input {
@@ -11561,6 +11562,10 @@ tr:last-child td {
   .brand-name {
     display: none;
   }
+
+  .nav-download-cta {
+    max-width: calc(100vw - 128px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -11829,6 +11834,7 @@ tr:last-child td {
 
   .home-page .hero {
     position: relative;
+    grid-template-columns: minmax(0, 1fr);
     overflow: clip;
     padding-top: 22px;
     padding-bottom: 32px;
@@ -11871,6 +11877,11 @@ tr:last-child td {
 
   .home-page .hero-actions {
     margin-top: 18px;
+  }
+
+  .home-page .hero-actions .button,
+  .home-page .cta-row .button {
+    white-space: normal;
   }
 
   .home-page .hero-actions .button:first-child {
