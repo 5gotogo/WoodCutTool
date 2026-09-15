@@ -850,5 +850,34 @@
     "averageUserRating": 0,
     "userRatingCount": 0,
     "sellerName": "家宝 戴"
+  },
+  {
+    "id": 6804225465,
+    "slug": "ductlab-hvac-duct-layout",
+    "name": "DuctLab: HVAC Duct Layout",
+    "genre": "Graphics & Design",
+    "genres": [
+      "Graphics & Design"
+    ],
+    "url": "https://apps.apple.com/us/app/ductlab-hvac-duct-layout/id6804225465?uo=4",
+    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/08/d8/d6/08d8d6c8-f67b-900e-f5be-be4da91725c5/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshotUrls": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/17/35/1c173553-ebe3-f887-781e-0cea15c57bce/1.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/1c/80/021c8074-8f4f-4384-99c3-9abd7cdeaf90/2.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d1/43/20/d1432011-9c1e-2b9f-660b-bba99a4d964b/3.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/45/f0/b7/45f0b7af-d2ce-08fe-1198-8de0dc84e94b/4.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c5/41/d4/c541d4ee-c84f-8edc-bdef-5190a8d500a9/5.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/2a/86/bc/2a86bcd1-bc5b-472a-1122-34739d270118/6.png/1290x2796bb.jpg"
+    ],
+    "description": "DuctLab is an HVAC sheet-metal layout and estimating companion for fabricators, installers, technicians, apprentices, and contractors. Build a job, add fittings, enter real dimensions, and turn them into measurements, diagrams, fabrication steps, material totals, and a shareable PDF.\n\nPrivate by design\n• Offline — calculate layouts, review references, manage projects, estimate material, and create PDFs without an internet connection.\n• No Login — start working with no account, email, password, or team workspace.\n• Privacy First — customer names, job numbers, notes, dimensions, costs, and fabrication details stay under your control.\n• On Device — storage, geometry calculations, diagrams, estimates, and PDF creation run on your iPhone.\n• No Cloud Upload — DuctLab has no server or proprietary cloud-sync service and does not upload projects in the background.\n\nProjects are saved locally with iOS file protection. PDFs leave only through a system share action you choose.\n\nFour fabrication layouts\n• Rectangular Transition: enter top and bottom openings, length, and horizontal or vertical offsets. Get centerline true length, four panel slopes, centerline angle, sheet area, and development steps.\n• Square to Round: enter the rectangular opening, diameter, length, and offsets. Choose 8 to 48 divisions and see circumference, division spacing and angle, corner and side true lengths, area, and triangulated layout steps.\n• Duct Offset: use width, height, rise, and run to calculate true travel, offset angle, travel per unit rise, sheet area, and a four-face development method.\n• Elbow Layout: develop rectangular or round 45° and 90° elbows with a centerline radius and 1 to 12 segments. Review centerline, throat, and heel arcs, developed perimeter, angle per segment, area, and assembly steps.\n\nLive shop results\nThe preview, dimensions, area, and key result update while you edit. Saved parts include a drawing, true lengths, slopes or angles, material, quantity totals, and ordered fabrication steps. Add seam allowance area or duplicate a part for a variation.\n\nMaterial and cost estimating\nDuctLab totals parts by quantity, adds waste, compares the result with stock-sheet dimensions, rounds up sheet count, and estimates cost in USD, CAD, AUD, EUR, or GBP. Imperial and Metric are supported; switching systems converts stored dimensions.\n\nOrganize projects\nRecord a customer, job number, and notes; add fittings and quantities; or duplicate a part or project to explore a revision while preserving the original.\n\nOn-device PDF export\nGenerate a multi-page package with job information, material estimates, and individual part pages containing specifications, quantity, seam allowance, diagram, measurements, totals, cautions, and numbered steps. Share, print, or save only when you choose.\n\nField references\nLook up common duct sizes, 30 ga to 20 ga galvanized thicknesses, and typical Pittsburgh, snap-lock, grooved, cleat, and standing-seam allowances. Treat them as starting points, not project specifications.\n\nSet default units, currency, waste, and sheet size for new projects. Imperial input accepts fractional inches. The interface follows supported iOS languages and links to Apple’s app language settings.\n\nImportant shop note\nDuctLab is a calculation, estimating, and reference tool. Results depend on your inputs and may not match every machine, seam profile, material, standard, or code. Compound transitions can twist, tight square-to-round fittings may need more divisions, and shop conventions vary. Before cutting, verify dimensions, pattern points, allowances, gauges, quantities, costs, requirements, codes, and a full-size layout with qualified judgment.\n\nEnjoy the full DuctLab experience with an active subscription, required to use the app.\n\nPrivacy Policy: https://woodcuttool.com/legal/DuctLab/privacy/\nTerms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "version": "1.0.1",
+    "releaseDate": "2026-09-07T07:00:00Z",
+    "currentVersionReleaseDate": "2026-09-14T09:35:10Z",
+    "minimumOsVersion": "17.6",
+    "formattedPrice": "Free",
+    "trackContentRating": "4+",
+    "averageUserRating": 0,
+    "userRatingCount": 0,
+    "sellerName": "家宝 戴"
   }
 ]

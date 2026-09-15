@@ -128,6 +128,7 @@ export const conversionRoutes = new Set([
   "/apps/compare/tinnitus-relief-vs-silence/",
   "/apps/compare/tinnitus-relief-vs-white-noise-machines/",
   "/apps/cutlist/",
+  "/apps/ductlab-hvac-duct-layout/",
   "/apps/expensereportmaker-and-receipts/",
   "/apps/export-backup-all-contacts-pro/",
   "/apps/fast-rhythm-fasting-and-sleep/",

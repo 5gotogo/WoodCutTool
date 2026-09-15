@@ -119,6 +119,10 @@ const legalLinksBySlug = {
   "spring-miter-bevel": {
     privacy: "/legal/Spring/privacy/",
     support: "/legal/Spring/support/"
+  },
+  "ductlab-hvac-duct-layout": {
+    privacy: "/legal/DuctLab/privacy/",
+    support: "/legal/DuctLab/support/"
   }
 };
 
@@ -155,8 +159,8 @@ const categorySections = [
   {
     id: "maker-calculator-apps",
     title: "Maker & Calculator Apps",
-    description: "Practical iPhone tools for people who plan, measure, cut, design, or build physical projects. These apps focus on cabinet planning, plywood optimization, quilt planning, tile estimation, stair stringer calculation, and other maker workflows.",
-    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "tilefit-tile-layout-planner", "spring-miter-bevel", "quiltfit-quilt-design-planner", "stringer-stair-layout"]
+    description: "Practical iPhone tools for people who plan, measure, cut, design, fabricate, or build physical projects. These apps focus on cabinet planning, plywood optimization, HVAC duct layout, tile estimation, trim angles, stair stringer calculation, and other maker workflows.",
+    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "tilefit-tile-layout-planner", "ductlab-hvac-duct-layout", "spring-miter-bevel", "quiltfit-quilt-design-planner", "stringer-stair-layout"]
   },
   {
     id: "small-business-apps",
@@ -236,7 +240,8 @@ const appTags = {
   "magnifier-reader-big-text": ["Magnifier", "Reading", "Big text", "Access"],
   "colorpop-color-block-tap-game": ["Puzzle", "Casual", "Color", "Relax"],
   "blockfit-block-puzzle": ["Blocks", "Puzzle", "Casual", "Relax"],
-  "spring-miter-bevel": ["Miter & bevel", "Crown molding", "Trim", "PDF export"]
+  "spring-miter-bevel": ["Miter & bevel", "Crown molding", "Trim", "PDF export"],
+  "ductlab-hvac-duct-layout": ["HVAC duct", "Sheet metal", "Estimating", "PDF export"]
 };
 
 const directoryDescriptions = new Map(featuredApps);
@@ -245,6 +250,7 @@ directoryDescriptions.set("casework-cabinet-cut-lists", "On-device cabinet plann
 directoryDescriptions.set("thumbtype-typing-speed-test", "Private, offline iPhone typing practice with timed WPM tests, accuracy tracking, daily challenges, and multilingual lessons.");
 directoryDescriptions.set("tilefit-tile-layout-planner", "Plan floor, wall, backsplash, and countertop tile layouts with six patterns, box and cost estimates, grouped cuts, and PDF export.");
 directoryDescriptions.set("spring-miter-bevel", "Calculate crown-molding, baseboard, and casing miter or bevel settings from real wall and spring angles, then save projects and export PDF references.");
+directoryDescriptions.set("ductlab-hvac-duct-layout", "Lay out HVAC sheet-metal fittings, calculate fabrication measurements, estimate sheet stock and cost, organize jobs, and export shop-ready PDF packages on iPhone.");
 
 function detailHref(app) {
   return detailRouteOverrides[app.slug] || `/apps/${app.slug}/`;
@@ -464,7 +470,7 @@ function appsIndexPage() {
 <html lang="en">
 ${head({
     title: "iPhone Apps for Makers, Work & Everyday Tools | WoodCutTool",
-    description: "Privacy-first iPhone apps including TileFit, JobPhotoLog, CutList, QuiltFit, SnapReceipt, and PDF Scan. Offline tools for makers, field work, and small businesses.",
+    description: "Privacy-first iPhone apps for HVAC layouts, tile plans, job reports, cut lists, receipts, PDF scanning, makers, field work, and small businesses.",
     canonical: "https://woodcuttool.com/apps/",
     jsonLd: appsIndexJsonLd()
   })}
@@ -476,7 +482,7 @@ ${head({
       <p class="breadcrumb"><a href="/">Home</a> / Apps</p>
       <p class="eyebrow">App directory</p>
       <h1>Privacy-First iPhone Apps for Work, Makers, and Everyday Tools</h1>
-      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: tile layout planning, jobsite photo reports, plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, tinnitus sound masking, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
+      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: HVAC duct layout, tile planning, jobsite photo reports, plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, tinnitus sound masking, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
       <p class="lead">Deciding whether an app is worth it? Browse our <a href="/apps/compare/">app comparisons</a> to see each one side by side with the manual method or a common alternative.</p>
     </section>
 ${featuredAppsSection()}

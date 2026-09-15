@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-09-09",
-    "hash": "6a30f426ddfbc4cccaf5ff3fd1092c5098634c49c5fd1e825f3b337b722ff7de",
+    "lastmod": "2026-09-15",
+    "hash": "ca801fd20e025f9c1ae9273e4eaa31b2d787345734fe7f9140bd6b7e6ecadb94",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -180,8 +180,8 @@
     "hashVersion": 2
   },
   "/apps/casework-cabinet-cut-lists/": {
-    "lastmod": "2026-09-03",
-    "hash": "e2a90158f15d2c702978226bc5819d60457d770c43e75accd6aff92a3e280baf",
+    "lastmod": "2026-09-15",
+    "hash": "73a6e8427c15f71560972e63096a2ce88a87ad5e181a632f799c8976e37984bd",
     "hashVersion": 2
   },
   "/apps/colorpop-color-block-tap-game/": {
@@ -774,6 +774,11 @@
     "hash": "a9b4bc47de12c10a5564745a08276c4e6c1662bd6e56959e6038d9fa333e55e8",
     "hashVersion": 2
   },
+  "/apps/ductlab-hvac-duct-layout/": {
+    "lastmod": "2026-09-15",
+    "hash": "693e103c93a458130077e5c6a41c3f6ce9ea939c68a4161b3cc770c16bf0ae2a",
+    "hashVersion": 2
+  },
   "/apps/expensereportmaker-and-receipts/": {
     "lastmod": "2026-09-02",
     "hash": "9e20bdec42834e9993f72f1c8edc5e3a27e6d0efaa4c52970cdeb1a6ac929512",
@@ -905,13 +910,13 @@
     "hashVersion": 2
   },
   "/apps/spring-miter-bevel/": {
-    "lastmod": "2026-09-03",
-    "hash": "4d77b200824aa736ad1f1fbb865f18feb36f83ab046e29c0536e894e3850b253",
+    "lastmod": "2026-09-15",
+    "hash": "8babc8de718bfd810731062125a04e4208f50c6c017bc8a269f6c9065fd60e7a",
     "hashVersion": 2
   },
   "/apps/stringer/": {
-    "lastmod": "2026-09-03",
-    "hash": "e733445424968cc4ca5e1549835b5feb1fa5506c7177e77ec7d9721f79c6df64",
+    "lastmod": "2026-09-15",
+    "hash": "11177103bb0175be0c856764be55f59e53fc33b64101df47069b043e152be635",
     "hashVersion": 2
   },
   "/apps/thumbtype-typing-speed-test/": {
@@ -920,8 +925,8 @@
     "hashVersion": 2
   },
   "/apps/tilefit-tile-layout-planner/": {
-    "lastmod": "2026-09-03",
-    "hash": "a4cc3c300b4b4e3fcdc0d94c84bcbd556212f901363254a36b6bd809b06865b2",
+    "lastmod": "2026-09-15",
+    "hash": "5a55eabd9f836e31808590e875d3103c34a01f71d1ee66fcf270d429953fa4e1",
     "hashVersion": 2
   },
   "/apps/tinnitus-relief-sound-masking/": {
