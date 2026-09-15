@@ -7,16 +7,34 @@
   Cache-Control: public, max-age=0, must-revalidate
 
 /assets/site-chrome.js
-  Cache-Control: public, max-age=0, must-revalidate
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/content-page.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/conversion.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 /assets/styles.css
   Cache-Control: public, max-age=0, must-revalidate
 
 /assets/apps.css
-  Cache-Control: public, max-age=0, must-revalidate
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 /assets/editorial.css
-  Cache-Control: public, max-age=0, must-revalidate
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/blog-article.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/content.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/interactive.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/wood.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 /assets/images/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800

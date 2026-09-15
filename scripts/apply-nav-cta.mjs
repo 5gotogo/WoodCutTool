@@ -17,7 +17,6 @@ const FOOTER_END = "<!-- shared-footer:end -->";
 const headerMount = "<div data-site-header></div>";
 const footerMount = "<div data-site-footer></div>";
 const siteChromeScript = '  <script defer src="/assets/site-chrome.js"></script>';
-const conversionScript = '  <script defer src="/assets/conversion.js"></script>';
 const appStoreId = "6768171871";
 const tileFitAppStoreId = "6792627022";
 const providerToken = String(process.env.APPLE_PROVIDER_TOKEN || "").trim();
@@ -40,7 +39,7 @@ function collectHtmlFiles(dir = root, prefix = "") {
 function applyStylesVersion(html, file) {
   const stylesheet = performanceProfile(file, html).stylesheet;
   if (!stylesheet) return html;
-  return html.replace(/\/assets\/(?:styles|apps|editorial|content|interactive)\.css(?:\?v=[^"]+)?/g, stylesheet);
+  return html.replace(/\/assets\/(?:styles|apps|editorial|blog-article|content|interactive|wood)\.css(?:\?v=[^"]+)?/g, stylesheet);
 }
 
 function applyAppVersion(html) {
@@ -69,7 +68,14 @@ function applySiteChromeScript(html) {
   return next.replace("</head>", `${siteChromeScript}\n</head>`);
 }
 
-function applyConversionScript(html) {
+function isLcpTailPage(file) {
+  return file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/index.html" && file !== "blog/archive/index.html");
+}
+
+function applyConversionScript(html, file) {
+  const conversionScript = isLcpTailPage(file)
+    ? '  <script defer fetchpriority="low" src="/assets/conversion.js"></script>'
+    : '  <script defer src="/assets/conversion.js"></script>';
   const next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/conversion\.js(?:\?[^\"]*)?")[^>]*>\s*<\/script>/g, "");
   const appScriptPattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/app\.js")[^>]*>\s*<\/script>)/;
   if (appScriptPattern.test(next)) {
@@ -85,7 +91,8 @@ function applyConversionScript(html) {
 function applyProfiledRuntime(html, file) {
   const runtimes = performanceProfile(file, html).runtimes;
   let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page|directory-page|blog-index)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "");
-  const markup = runtimes.map((path) => `  <script defer src="${path}"></script>`).join("\n");
+  const priority = isLcpTailPage(file) ? ' fetchpriority="low"' : "";
+  const markup = runtimes.map((path) => `  <script defer${priority} src="${path}"></script>`).join("\n");
   const siteChromePattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js")[^>]*>\s*<\/script>)/;
   if (siteChromePattern.test(next)) return next.replace(siteChromePattern, `$1\n${markup}`);
   return next.replace("</head>", `${markup}\n</head>`);
@@ -204,7 +211,8 @@ for (const file of collectHtmlFiles()) {
                 )
               )
             )
-          )
+          ),
+          file
         )
       ),
       file

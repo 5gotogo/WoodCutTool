@@ -9,6 +9,7 @@ const output = args.output || "/tmp/woodcuttool-performance.json";
 const origin = args.origin || process.env.WCT_PERF_ORIGIN || "http://127.0.0.1:4175";
 const cdpPort = Number(args["cdp-port"] || process.env.WCT_CDP_PORT || 9337);
 const runs = Math.max(1, Number(args.runs || process.env.WCT_PERF_RUNS || 3));
+const deviceScaleFactor = Math.max(1, Number(args.dpr || process.env.WCT_PERF_DPR || 1));
 const routes = (args.routes || process.env.WCT_PERF_ROUTES || [
   "/",
   "/blog/",
@@ -72,7 +73,7 @@ async function waitForReady() {
 await send("Page.enable");
 await send("Network.enable");
 await send("Network.setCacheDisabled", { cacheDisabled: true });
-await send("Emulation.setDeviceMetricsOverride", { width: 390, height: 844, deviceScaleFactor: 1, mobile: true });
+await send("Emulation.setDeviceMetricsOverride", { width: 390, height: 844, deviceScaleFactor, mobile: true });
 await send("Emulation.setCPUThrottlingRate", { rate: 4 });
 await send("Network.emulateNetworkConditions", {
   offline: false,
@@ -172,7 +173,7 @@ try {
   }
 
   writeFileSync(output, `${JSON.stringify({
-    scope: "Local gzip preview; 390x844, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+    scope: `Local gzip preview; 390x844 at ${deviceScaleFactor}x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.`,
     origin,
     routes,
     runs,

@@ -15,11 +15,14 @@ export function editorialHtmlFiles() {
   return [...htmlFilesUnder("blog"), ...htmlFilesUnder("compare")];
 }
 
+export function blogArticleHtmlFiles() {
+  return htmlFilesUnder("blog").filter((file) => file !== "blog/index.html" && file !== "blog/archive/index.html");
+}
+
 // Blog and Compare pages share the authored styles.css source, but they do not
 // need calculator, App-directory, or project-workflow CSS on the critical path.
 // Keep runtime tokens so translated and interactive Blog-index states remain.
-export function compileEditorialStyles() {
-  const pages = editorialHtmlFiles();
+function compilePages(pages, outputName) {
   const html = pages.map((file) => readFileSync(join(root, file), "utf8"));
   const runtimePaths = new Set([
     "assets/site-chrome.js",
@@ -54,13 +57,25 @@ export function compileEditorialStyles() {
     minify: true,
     unusedSymbols: [...classes].filter((name) => !usedTokens.has(name)),
   });
-  return { css: `/* Generated from styles.css by scripts/build-editorial-styles.mjs. */\n${code}\n`, pages };
+  return { css: `/* Generated ${outputName} from styles.css by scripts/build-editorial-styles.mjs. */\n${code}\n`, pages };
+}
+
+export function compileEditorialStyles() {
+  return compilePages(editorialHtmlFiles(), "editorial.css");
+}
+
+export function compileBlogArticleStyles() {
+  return compilePages(blogArticleHtmlFiles(), "blog-article.css");
 }
 
 export function buildEditorialStyles() {
-  const { css, pages } = compileEditorialStyles();
-  writeFileSync(join(root, "assets/editorial.css"), css);
-  console.log(`Built editorial stylesheet for ${pages.length} pages: ${Buffer.byteLength(css)} bytes.`);
+  for (const [name, result] of [
+    ["editorial.css", compileEditorialStyles()],
+    ["blog-article.css", compileBlogArticleStyles()],
+  ]) {
+    writeFileSync(join(root, "assets", name), result.css);
+    console.log(`Built ${name} for ${result.pages.length} pages: ${Buffer.byteLength(result.css)} bytes.`);
+  }
 }
 
 if (process.argv[1] && resolve(process.argv[1]) === resolve(import.meta.filename)) {

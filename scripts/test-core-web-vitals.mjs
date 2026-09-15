@@ -1,8 +1,8 @@
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { appHtmlFiles, compileAppStyles } from "./build-app-styles.mjs";
-import { compileEditorialStyles, editorialHtmlFiles } from "./build-editorial-styles.mjs";
-import { compileContentStyles, compileInteractiveStyles } from "./build-site-styles.mjs";
+import { blogArticleHtmlFiles, compileBlogArticleStyles, compileEditorialStyles, editorialHtmlFiles } from "./build-editorial-styles.mjs";
+import { compileContentStyles, compileInteractiveStyles, compileWoodStyles } from "./build-site-styles.mjs";
 import { performanceProfile } from "./site-performance-profile.mjs";
 
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
@@ -23,8 +23,8 @@ function inspectArticles(directory) {
       const html = readFileSync(path, "utf8");
       if (html.includes("blog-article-shell")) {
         editorialPages += 1;
-        if (!html.includes('<link rel="stylesheet" href="/assets/editorial.css">')) {
-          failures.push(`${directory}/${entry.name}: article does not use the scoped editorial stylesheet`);
+        if (!html.includes('<link rel="stylesheet" href="/assets/blog-article.css">')) {
+          failures.push(`${directory}/${entry.name}: article does not use the scoped Blog article stylesheet`);
         }
         if (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"')) {
           failures.push(`${directory}/${entry.name}: static article eagerly loads the full app runtime`);
@@ -43,8 +43,8 @@ function inspectArticles(directory) {
 
       for (const match of html.matchAll(/<figure class="article-wood-photo article-wood-photo-inline">\s*<img[^>]*>/g)) {
         inlineImages += 1;
-        if (!match[0].includes('loading="lazy"') || match[0].includes('fetchpriority="high"')) {
-          failures.push(`${directory}/${entry.name}: supporting image is not lazy or can compete with the hero`);
+        if (!match[0].includes('loading="lazy"') || !match[0].includes('fetchpriority="low"')) {
+          failures.push(`${directory}/${entry.name}: supporting image is not lazy and low priority`);
         }
       }
     } catch {
@@ -114,6 +114,11 @@ if (editorialStyles !== compileEditorialStyles().css) {
   failures.push("Editorial stylesheet is stale; run npm run apply:nav-cta after generating Blog or Compare pages");
 }
 if (Buffer.byteLength(editorialStyles) > 75_000) failures.push("Editorial stylesheet exceeds the 75 KB budget");
+const blogArticleStyles = readFileSync(join(root, "assets/blog-article.css"), "utf8");
+if (blogArticleStyles !== compileBlogArticleStyles().css) {
+  failures.push("Blog article stylesheet is stale; run npm run apply:nav-cta after generating Blog articles");
+}
+if (Buffer.byteLength(blogArticleStyles) > 60_000) failures.push("Blog article stylesheet exceeds the 60 KB budget");
 for (const file of appHtmlFiles()) {
   const html = readFileSync(join(root, file), "utf8");
   const profile = performanceProfile(file, html);
@@ -128,6 +133,7 @@ for (const file of appHtmlFiles()) {
 for (const [name, output, compiled, limit] of [
   ["content", join(root, "assets/content.css"), compileContentStyles(), 90_000],
   ["interactive", join(root, "assets/interactive.css"), compileInteractiveStyles(), 90_000],
+  ["wood", join(root, "assets/wood.css"), compileWoodStyles(), 45_000],
 ]) {
   const css = readFileSync(output, "utf8");
   if (css !== compiled.css) failures.push(`${name} stylesheet is stale; run npm run apply:nav-cta`);
@@ -138,7 +144,7 @@ for (const [name, output, compiled, limit] of [
     if (!html.includes(`<link rel="stylesheet" href="/assets/${name}.css">`) || html.includes('href="/assets/styles.css"')) {
       failures.push(`${file}: must load the scoped ${name} stylesheet`);
     }
-    if (name === "content" && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) {
+    if ((name === "content" || name === "wood") && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) {
       failures.push(`${file}: static content must not eagerly load the full app runtime`);
     }
     if (name === "interactive" && profile.runtimes.includes("/assets/app.js") && !html.includes('src="/assets/app.js"')) failures.push(`${file}: interactive page is missing the full app runtime`);
@@ -149,8 +155,10 @@ for (const [name, output, compiled, limit] of [
 const allProfiledPages = [
   ...appHtmlFiles(),
   ...editorialHtmlFiles(),
+  ...blogArticleHtmlFiles(),
   ...compileContentStyles().pages,
   ...compileInteractiveStyles().pages,
+  ...compileWoodStyles().pages,
 ];
 for (const file of new Set(allProfiledPages)) {
   if (readFileSync(join(root, file), "utf8").includes('href="/assets/styles.css"')) failures.push(`${file}: serves the authored full stylesheet`);
@@ -162,9 +170,24 @@ if (!chromeSource.includes('/assets/icons/brand-icon.webp') || chromeSource.incl
 if (brandIconSize > 4_000) failures.push(`Brand icon is ${brandIconSize} bytes (limit 4000)`);
 if (readFileSync(join(root, "assets/styles.css"), "utf8").includes('/assets/images/woodworking/')) failures.push("Directory card CSS must not eagerly request the shared woodworking photo set");
 
+const woodworkingImages = readdirSync(join(root, "assets/images/woodworking")).filter((file) => /^wood-\d\d-.*\.webp$/.test(file));
+const woodworkingImageBytes = woodworkingImages.reduce((sum, file) => sum + statSync(join(root, "assets/images/woodworking", file)).size, 0);
+if (woodworkingImageBytes > 750_000) failures.push(`Responsive woodworking image set is ${woodworkingImageBytes} bytes (limit 750000)`);
+for (const file of woodworkingImages) {
+  const limit = file.includes("-480.webp") ? 26_000 : 65_000;
+  const size = statSync(join(root, "assets/images/woodworking", file)).size;
+  if (size > limit) failures.push(`${file} is ${size} bytes (limit ${limit})`);
+}
+
+const headers = readFileSync(join(root, "_headers"), "utf8");
+for (const asset of ["site-chrome.js", "content-page.js", "conversion.js", "blog-article.css", "wood.css"]) {
+  const block = headers.match(new RegExp(`/assets/${asset.replace(".", "\\.")}\\n([\\s\\S]*?)(?=\\n/|$)`))?.[1] || "";
+  if (!/Cache-Control: public, max-age=[1-9]\d*/.test(block)) failures.push(`${asset} is missing a positive browser cache lifetime`);
+}
+
 if (failures.length) {
   console.error(failures.join("\n"));
   process.exit(1);
 }
 
-console.log(`Core Web Vitals guards passed: ${articlePages} image-led articles, ${editorialPages} static Blog articles, ${heroImages} hero preloads, ${inlineImages} lazy/promotable inline images, ${compareLcpImages} Compare LCP preloads, stair bundle ${stairBundleSize} bytes, App stylesheet ${Buffer.byteLength(appStyles)} bytes, editorial stylesheet ${Buffer.byteLength(editorialStyles)} bytes, content stylesheet ${statSync(join(root, "assets/content.css")).size} bytes, interactive stylesheet ${statSync(join(root, "assets/interactive.css")).size} bytes, Blog index ${Buffer.byteLength(blogIndex)} bytes, brand icon ${brandIconSize} bytes.`);
+console.log(`Core Web Vitals guards passed: ${articlePages} image-led articles, ${editorialPages} static Blog articles, ${heroImages} hero preloads, ${inlineImages} lazy/low-priority inline images, ${compareLcpImages} Compare LCP preloads, stair bundle ${stairBundleSize} bytes, App stylesheet ${Buffer.byteLength(appStyles)} bytes, editorial stylesheet ${Buffer.byteLength(editorialStyles)} bytes, Blog article stylesheet ${Buffer.byteLength(blogArticleStyles)} bytes, content stylesheet ${statSync(join(root, "assets/content.css")).size} bytes, interactive stylesheet ${statSync(join(root, "assets/interactive.css")).size} bytes, wood stylesheet ${statSync(join(root, "assets/wood.css")).size} bytes, Blog index ${Buffer.byteLength(blogIndex)} bytes, brand icon ${brandIconSize} bytes.`);

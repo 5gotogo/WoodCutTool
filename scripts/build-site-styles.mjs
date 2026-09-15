@@ -67,10 +67,15 @@ export function compileInteractiveStyles() {
   return compile("/assets/interactive.css");
 }
 
+export function compileWoodStyles() {
+  return compile("/assets/wood.css");
+}
+
 export function buildSiteStyles() {
   for (const [name, result] of [
     ["content.css", compileContentStyles()],
     ["interactive.css", compileInteractiveStyles()],
+    ["wood.css", compileWoodStyles()],
   ]) {
     writeFileSync(join(root, "assets", name), result.css);
     console.log(`Built ${name} for ${result.pages.length} pages: ${Buffer.byteLength(result.css)} bytes.`);

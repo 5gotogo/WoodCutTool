@@ -10532,12 +10532,11 @@ function woodworkingArticleFigure(article, offset = 0, placement = "inline") {
   if (!usesWoodworkingImages(article)) return "";
   const topic = `${article.slug} ${article.title} ${article.description}`;
   const image = woodworkingImageFor(topic, offset);
-  // Keep the true hero on the critical path. Supporting images remain lazy,
-  // but let the browser promote one when a tall viewport makes it an LCP
-  // candidate instead of permanently forcing it to low priority.
+  // Keep the true hero on the critical path. Supporting images remain lazy and
+  // low priority so they cannot compete with the hero on constrained networks.
   const loading = placement === "hero"
     ? 'loading="eager" fetchpriority="high"'
-    : 'loading="lazy"';
+    : 'loading="lazy" fetchpriority="low"';
   return `<figure class="article-wood-photo article-wood-photo-${placement}">
           <img src="${escapeHtml(image.src)}" srcset="${escapeHtml(image.src.replace(/\.webp$/, "-480.webp"))} 480w, ${escapeHtml(image.src)} 960w" sizes="(max-width: 760px) calc(100vw - 32px), 760px" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${article.title}`)}" ${loading} decoding="async">
           <figcaption>${escapeHtml(image.caption)}</figcaption>

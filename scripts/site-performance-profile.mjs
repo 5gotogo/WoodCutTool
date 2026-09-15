@@ -43,6 +43,10 @@ export function performanceProfile(file, html) {
     return { stylesheet: "/assets/apps.css", runtimes: ["/assets/content-page.js"] };
   }
 
+  if (file.startsWith("blog/") && file !== "blog/index.html" && file !== "blog/archive/index.html") {
+    return { stylesheet: "/assets/blog-article.css", runtimes: ["/assets/content-page.js"] };
+  }
+
   if (/^(?:blog|compare)\//.test(file)) {
     return {
       stylesheet: "/assets/editorial.css",
@@ -58,6 +62,10 @@ export function performanceProfile(file, html) {
 
   if (needsFullAppRuntime(html)) {
     return { stylesheet: "/assets/interactive.css", runtimes: ["/assets/app.js"] };
+  }
+
+  if (file.startsWith("wood/")) {
+    return { stylesheet: "/assets/wood.css", runtimes: ["/assets/content-page.js"] };
   }
 
   const runtimes = ["/assets/content-page.js"];
