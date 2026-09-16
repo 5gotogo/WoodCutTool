@@ -80,6 +80,7 @@ try {
     console.log(`P1 mobile/keyboard/navigation checks: ${width}px`);
   }
   // Language loading is lazy and must not reset an edited plywood draft.
+  await evaluate('localStorage.setItem("woodcuttool-lang", "en")');
   await navigate('/plywood-cut-calculator/'); await wait('document.querySelector("#plywood-form[data-workflow-ready]")');
   assert.ok(await evaluate('!performance.getEntriesByType("resource").some(r=>new URL(r.name).pathname==="/assets/app.js")'));
   const length = await evaluate('document.querySelector("[data-part] [name=length]").value');
@@ -88,6 +89,17 @@ try {
   assert.equal(await evaluate('document.querySelector("[data-part] [name=length]").value'), length);
   assert.equal(await evaluate('performance.getEntriesByType("resource").filter(r=>new URL(r.name).pathname==="/assets/app.js").length'), 1);
   await evaluate('const select=document.querySelector(".language-picker select");select.value="en";select.dispatchEvent(new Event("change",{bubbles:true}))');
+  // The home page keeps its demo interactive without the full calculator bundle.
+  // Loading translations later must not bind its controls a second time.
+  await navigate('/');
+  assert.ok(await evaluate('performance.getEntriesByType("resource").some(r=>new URL(r.name).pathname==="/assets/home.js")'));
+  assert.ok(await evaluate('!performance.getEntriesByType("resource").some(r=>new URL(r.name).pathname==="/assets/app.js")'));
+  await evaluate('const select=document.querySelector(".language-picker select");select.value="zh-CN";select.dispatchEvent(new Event("change",{bubbles:true}))');
+  await wait('window.WCTAppInitialized === true');
+  await click('[data-add-part="shelf"]');
+  assert.equal(await evaluate('document.querySelectorAll(".planner-part.extra").length'), 1);
+  assert.equal(await evaluate('performance.getEntriesByType("resource").filter(r=>new URL(r.name).pathname==="/assets/app.js").length'), 1);
+  await evaluate('const select=document.querySelector(".language-picker select");select.value="en";select.dispatchEvent(new Event("change",{bubbles:true}))');
   assert.deepEqual(errors, []);
-  writeFileSync(`${output}/qa.json`, JSON.stringify({ surfaces: results, errors, checks: ['demo labels', '3 visible pilot starts', 'mobile menu and Escape', 'source action anchors', 'actual keyboard submission', 'focused validation summary', 'visible primary export', 'contextual next step', 'CSV/JSON', 'lazy language preserves draft'] }, null, 2));
+  writeFileSync(`${output}/qa.json`, JSON.stringify({ surfaces: results, errors, checks: ['demo labels', '3 visible pilot starts', 'mobile menu and Escape', 'source action anchors', 'actual keyboard submission', 'focused validation summary', 'visible primary export', 'contextual next step', 'CSV/JSON', 'lazy language preserves draft', 'home runtime stays interactive without duplicate bindings'] }, null, 2));
 } finally { ws.close(); }

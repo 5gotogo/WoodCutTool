@@ -2,6 +2,7 @@ import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
+import { homeRuntimeSource } from "./build-home-runtime.mjs";
 import { buildAppStyles } from "./build-app-styles.mjs";
 import { buildEditorialStyles } from "./build-editorial-styles.mjs";
 import { buildSiteStyles } from "./build-site-styles.mjs";
@@ -90,7 +91,7 @@ function applyConversionScript(html, file) {
 
 function applyProfiledRuntime(html, file) {
   const runtimes = performanceProfile(file, html).runtimes;
-  let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page|directory-page|blog-index)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "");
+  let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page|directory-page|blog-index|home)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "");
   const priority = isLcpTailPage(file) ? ' fetchpriority="low"' : "";
   const markup = runtimes.map((path) => `  <script defer${priority} src="${path}"></script>`).join("\n");
   const siteChromePattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js")[^>]*>\s*<\/script>)/;
@@ -101,7 +102,7 @@ function applyProfiledRuntime(html, file) {
 function stripSharedChrome(html) {
   return html
     .replace(/\s*<style>\.mega-menu\{display:none\}<\/style>/g, "")
-    .replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|conversion|app|content-page|directory-page|blog-index)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "")
+    .replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|conversion|app|content-page|directory-page|blog-index|home)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "")
     .replace(/\s*<div\b[^>]*\bdata-site-header\b[^>]*>\s*<\/div>/gi, "")
     .replace(/\s*<div\b[^>]*\bdata-site-footer\b[^>]*>\s*<\/div>/gi, "");
 }
@@ -230,6 +231,7 @@ for (const file of collectHtmlFiles()) {
 }
 
 console.log(`Applied shared site chrome to ${updated} pages${skipped ? `, skipped ${skipped}` : ""}.`);
+writeFileSync(join(root, "assets/home.js"), homeRuntimeSource());
 buildAppStyles();
 buildEditorialStyles();
 buildSiteStyles();

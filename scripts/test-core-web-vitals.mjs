@@ -6,6 +6,7 @@ import { compileContentStyles, compileInteractiveStyles, compileWoodStyles } fro
 import { performanceProfile } from "./site-performance-profile.mjs";
 
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
+import { homeRuntimeSource } from "./build-home-runtime.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const failures = [];
@@ -103,6 +104,20 @@ if (plywoodPage.includes('src="/assets/app.js"') || !plywoodPage.includes('src="
 const plywoodCore = readFileSync(join(root, 'assets/plywood-core.js'), 'utf8');
 if (plywoodCore !== plywoodCoreSource() || Buffer.byteLength(plywoodCore) > 16000) failures.push('Plywood core is stale or exceeds 16 KB.');
 
+const homePage = readFileSync(join(root, "index.html"), "utf8");
+const homeRuntime = readFileSync(join(root, "assets/home.js"), "utf8");
+if (homePage.includes('src="/assets/app.js"') || !homePage.includes('src="/assets/home.js"') || !homePage.includes('src="/assets/content-page.js"')) {
+  failures.push("Home page must use the lightweight planner and on-demand language runtimes");
+}
+if (homeRuntime !== homeRuntimeSource() || Buffer.byteLength(homeRuntime) > 8_000) failures.push("Home runtime is stale or exceeds 8 KB");
+
+const constructionHub = readFileSync(join(root, "learn/plywood/index.html"), "utf8");
+if (constructionHub.includes('src="/assets/construction-calculators.js"')) failures.push("Static construction topic hubs must not load the calculator runtime");
+const cabinetCalculator = readFileSync(join(root, "cabinet-cut-list-calculator/index.html"), "utf8");
+if (!cabinetCalculator.includes('rel="preload" as="image"') || !cabinetCalculator.includes('tools-cabinet-800.webp 800w')) {
+  failures.push("Construction calculator hero images must preload responsive mobile candidates");
+}
+
 const appStyles = readFileSync(join(root, "assets/apps.css"), "utf8");
 if (appStyles !== compileAppStyles().css) {
   failures.push("App stylesheet is stale; run npm run apply:nav-cta after editing CSS, App pages, or their runtimes");
@@ -180,7 +195,7 @@ for (const file of woodworkingImages) {
 }
 
 const headers = readFileSync(join(root, "_headers"), "utf8");
-for (const asset of ["site-chrome.js", "content-page.js", "conversion.js", "blog-article.css", "wood.css"]) {
+for (const asset of ["site-chrome.js", "content-page.js", "home.js", "conversion.js", "blog-article.css", "wood.css"]) {
   const block = headers.match(new RegExp(`/assets/${asset.replace(".", "\\.")}\\n([\\s\\S]*?)(?=\\n/|$)`))?.[1] || "";
   if (!/Cache-Control: public, max-age=[1-9]\d*/.test(block)) failures.push(`${asset} is missing a positive browser cache lifetime`);
 }

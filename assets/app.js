@@ -3507,6 +3507,8 @@ function translateElement(root = document.body, lang = getActiveLang()) {
   if (lang !== "en") hasTranslatedDom = true;
 }
 
+window.WCTTranslation = Object.freeze({ t, getActiveLang, translateElement });
+
 function loadBlogTranslations(lang) {
   if (!isBlogPage()) return Promise.resolve();
   if (lang !== "zh-CN" && lang !== "zh-TW") return Promise.resolve();
@@ -3666,6 +3668,11 @@ function initHeroCutPlanner() {
   const form = document.getElementById("hero-cut-form");
   const preview = document.getElementById("hero-plan-preview");
   if (!form || !preview) return;
+  if (form.dataset.homePlannerBound === "true") {
+    form.WCTRender?.();
+    return;
+  }
+  form.dataset.homePlannerBound = "true";
 
   const presets = {
     cabinet: { width: 2440, height: 1220, waste: 18, parts: 5, sheets: 2, saved: 48 },
@@ -3775,6 +3782,7 @@ function initHeroCutPlanner() {
     render({ animate: true });
   });
 
+  form.WCTRender = render;
   render();
 }
 

@@ -139,7 +139,7 @@
   }
 
   function resourceNavMenu({ href, label, aliases = [], featureTitle, featureDescription, featureCta, visual, columns }) {
-    const menu = `<div class="mega-menu" role="group" aria-label="${label} menu">${megaFeature({ href, title: featureTitle, description: featureDescription, cta: featureCta, visual })}<div class="mega-columns">${columns.map((column) => `<div class="mega-column"><p class="mega-column-title">${column.title}</p>${column.links.map(menuLink).join("")}</div>`).join("")}</div></div>`;
+    const menu = () => `<div class="mega-menu" role="group" aria-label="${label} menu">${megaFeature({ href, title: featureTitle, description: featureDescription, cta: featureCta, visual })}<div class="mega-columns">${columns.map((column) => `<div class="mega-column"><p class="mega-column-title">${column.title}</p>${column.links.map(menuLink).join("")}</div>`).join("")}</div></div>`;
     return navMenuItem({ href, label, menu, aliases });
   }
 
@@ -545,7 +545,8 @@
 
     const ensureMenu = (item) => {
       if (!item.querySelector(".mega-menu")) {
-        const menu = deferredMenus.get(item.dataset.menuKey || "");
+        const deferredMenu = deferredMenus.get(item.dataset.menuKey || "");
+        const menu = typeof deferredMenu === "function" ? deferredMenu() : deferredMenu;
         if (menu) item.insertAdjacentHTML("beforeend", menu);
       }
     };
@@ -740,6 +741,15 @@
 
   renderSiteChrome();
   initMegaNavigation();
-  initBackToTop();
-  initMobileExperience();
+  const initDeferredExperience = () => {
+    initBackToTop();
+    initMobileExperience();
+  };
+  if ("requestIdleCallback" in window) {
+    window.requestIdleCallback(initDeferredExperience, { timeout: 1000 });
+  } else if (typeof setTimeout === "function") {
+    setTimeout(initDeferredExperience, 0);
+  } else {
+    initDeferredExperience();
+  }
 })();

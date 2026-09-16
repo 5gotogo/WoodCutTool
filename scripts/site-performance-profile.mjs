@@ -3,6 +3,7 @@ export const generatedRuntimePaths = new Set([
   "/assets/content-page.js",
   "/assets/directory-page.js",
   "/assets/blog-index.js",
+  "/assets/home.js",
 ]);
 
 const fullAppMarkers = [
@@ -41,6 +42,10 @@ export function performanceProfile(file, html) {
 
   if (file.startsWith("apps/")) {
     return { stylesheet: "/assets/apps.css", runtimes: ["/assets/content-page.js"] };
+  }
+
+  if (file === "index.html") {
+    return { stylesheet: "/assets/interactive.css", runtimes: ["/assets/content-page.js", "/assets/home.js"] };
   }
 
   if (file.startsWith("blog/") && file !== "blog/index.html" && file !== "blog/archive/index.html") {
