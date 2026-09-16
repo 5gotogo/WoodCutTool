@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://woodcuttool.com/apps/</loc><lastmod>2026-09-15</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://woodcuttool.com/apps/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/apps/cutlist/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/apps/quiltfit/</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://woodcuttool.com/apps/address-label-maker-and-envelope/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
@@ -11,11 +11,11 @@
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/c0/e8/b0c0e8a5-1019-5eb7-8eba-6fb289b081f9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/cadenza-metronome-and-tuner/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/28/ce/cf/28cecf7a-8090-e403-55ec-dedf7c2f1d75/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/casework-cabinet-cut-lists/</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/casework-cabinet-cut-lists/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d4/64/a6/d464a674-8ee2-cf16-8be7-a622fbf7b160/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/colorpop-color-block-tap-game/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/e4/a7/abe4a7a1-1db5-83c3-aa9a-1e5edcf438c8/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/ductlab-hvac-duct-layout/</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/ductlab-hvac-duct-layout/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/08/d8/d6/08d8d6c8-f67b-900e-f5be-be4da91725c5/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/expensereportmaker-and-receipts/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/30/e7/4f30e7c0-0d24-7790-2bee-b022ee71e4c7/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
@@ -55,6 +55,8 @@
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/18/38/41/183841bd-b5e0-6621-2dfb-0b158ce0fa58/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/ritualix-habits-and-streaks/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7e/0c/66/7e0c6635-5d3a-b316-d0cc-2f7ebc8ee976/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/apps/shelf-planner-cabinet-shelves/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+    <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2f/4f/b3/2f4fb319-e612-7194-5f04-403a352e3f4e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/signaturemark-brand-mark/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b5/7d/94/b57d94ee-ca43-8cdd-be2b-3784bc7c0210/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/snapcleaner-clean-photos/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
@@ -69,13 +71,13 @@
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d1/18/3a/d1183af2-4a51-3d13-1b2d-dc1dcc86fe73/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/speaker-tools-audio-test/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c2/de/a5/c2dea570-fc2b-91ca-00f6-1b10a01b240f/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/spring-miter-bevel/</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/spring-miter-bevel/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b0/3a/95/b03a959b-abd3-d979-2fbf-2c7e650b204d/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/stringer/</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/stringer/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/23/00/c9230080-e5d6-1a99-3cc2-c00ca91e2061/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/thumbtype-typing-speed-test/</loc><lastmod>2026-09-02</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/be/ab/4f/beab4f2d-1200-5d75-510a-864eb8343112/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/tilefit-tile-layout-planner/</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/tilefit-tile-layout-planner/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/65/bf/c5/65bfc55f-0d28-fc96-898b-c8162e56698e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/tinnitus-relief-sound-masking/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/26/85/2926852b-12c7-43bc-effd-7d49e72cae78/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>

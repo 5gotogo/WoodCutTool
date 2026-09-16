@@ -123,6 +123,10 @@ const legalLinksBySlug = {
   "ductlab-hvac-duct-layout": {
     privacy: "/legal/DuctLab/privacy/",
     support: "/legal/DuctLab/support/"
+  },
+  "shelf-planner-cabinet-shelves": {
+    privacy: "/legal/ShelfPlanner/privacy/",
+    support: "/legal/ShelfPlanner/support/"
   }
 };
 
@@ -146,6 +150,7 @@ const appSupportDirectory = [
 const featuredApps = [
   ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
   ["casework-cabinet-cut-lists", "On-device cabinet planning for parts lists, sheet layouts, hardware estimates, cutting steps, and shop-ready exports."],
+  ["shelf-planner-cabinet-shelves", "Offline cabinet shelf planner for equal spacing, 32mm hole references, sag estimates, saved projects, and workshop PDFs."],
   ["tilefit-tile-layout-planner", "Offline tile layout planner with six patterns, material estimates, grouped cuts, installation order, and PDF export."],
   ["jobphotolog-work-reports", "Private, offline jobsite photo records with before-and-after evidence, punch lists, signatures, and professional PDF reports."],
   ["quiltfit-quilt-design-planner", "Quilt design planner for fabric layouts, block planning, and project organization."],
@@ -159,8 +164,8 @@ const categorySections = [
   {
     id: "maker-calculator-apps",
     title: "Maker & Calculator Apps",
-    description: "Practical iPhone tools for people who plan, measure, cut, design, fabricate, or build physical projects. These apps focus on cabinet planning, plywood optimization, HVAC duct layout, tile estimation, trim angles, stair stringer calculation, and other maker workflows.",
-    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "tilefit-tile-layout-planner", "ductlab-hvac-duct-layout", "spring-miter-bevel", "quiltfit-quilt-design-planner", "stringer-stair-layout"]
+    description: "Practical iPhone tools for people who plan, measure, cut, design, fabricate, or build physical projects. These apps focus on cabinet planning, shelf spacing, plywood optimization, HVAC duct layout, tile estimation, trim angles, stair stringer calculation, and other maker workflows.",
+    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "tilefit-tile-layout-planner", "ductlab-hvac-duct-layout", "spring-miter-bevel", "shelf-planner-cabinet-shelves", "quiltfit-quilt-design-planner", "stringer-stair-layout"]
   },
   {
     id: "small-business-apps",
@@ -241,7 +246,8 @@ const appTags = {
   "colorpop-color-block-tap-game": ["Puzzle", "Casual", "Color", "Relax"],
   "blockfit-block-puzzle": ["Blocks", "Puzzle", "Casual", "Relax"],
   "spring-miter-bevel": ["Miter & bevel", "Crown molding", "Trim", "PDF export"],
-  "ductlab-hvac-duct-layout": ["HVAC duct", "Sheet metal", "Estimating", "PDF export"]
+  "ductlab-hvac-duct-layout": ["HVAC duct", "Sheet metal", "Estimating", "PDF export"],
+  "shelf-planner-cabinet-shelves": ["Shelf spacing", "32mm system", "Sag estimate", "PDF export"]
 };
 
 const directoryDescriptions = new Map(featuredApps);
@@ -251,6 +257,7 @@ directoryDescriptions.set("thumbtype-typing-speed-test", "Private, offline iPhon
 directoryDescriptions.set("tilefit-tile-layout-planner", "Plan floor, wall, backsplash, and countertop tile layouts with six patterns, box and cost estimates, grouped cuts, and PDF export.");
 directoryDescriptions.set("spring-miter-bevel", "Calculate crown-molding, baseboard, and casing miter or bevel settings from real wall and spring angles, then save projects and export PDF references.");
 directoryDescriptions.set("ductlab-hvac-duct-layout", "Lay out HVAC sheet-metal fittings, calculate fabrication measurements, estimate sheet stock and cost, organize jobs, and export shop-ready PDF packages on iPhone.");
+directoryDescriptions.set("shelf-planner-cabinet-shelves", "Plan equal cabinet shelf openings, 32mm hole positions, shelf sag, saved project variations, and workshop-ready PDF measurements offline.");
 
 function detailHref(app) {
   return detailRouteOverrides[app.slug] || `/apps/${app.slug}/`;
@@ -362,7 +369,7 @@ const appDirectoryFaq = [
   ["What kind of iPhone apps does JiaBao Dai build?", "JiaBao Dai builds practical iPhone utilities for makers, small business work, documents, home organization, creative tasks, personal routines, and casual games."],
   ["Are these apps privacy-first?", "Many apps are designed around private, local workflows so common tasks can be completed without sending every project, receipt, note, or document through a cloud dashboard."],
   ["Do these apps require an account?", "Most apps are built to be useful without account setup. Some optional system sharing or export features may use standard iOS workflows."],
-  ["Which app is best for woodworking?", "Casework is for cabinet and casework planning, while CutList is for general plywood cut lists and sheet layouts. Both help keep project planning local and practical."],
+  ["Which app is best for woodworking?", "Shelf Planner handles cabinet shelf spacing, 32mm hole positions, and sag estimates. Casework plans cabinet parts and sheet layouts, while CutList handles general plywood cut lists and nesting."],
   ["Which app is best for tile layout planning?", "TileFit plans floor, wall, backsplash, and countertop layouts with six patterns, quantities, box and cost estimates, grouped cuts, installation order, and PDF export."],
   ["Which app is best for receipt scanning?", "SnapReceipt is built for receipt capture, expense records, mileage logs, reimbursements, and tax-related organization."],
   ["Which app is best for invoices?", "Invoice Maker is the app for creating invoices, estimates, and PDF documents for freelance, contractor, and small business work."],
@@ -470,7 +477,7 @@ function appsIndexPage() {
 <html lang="en">
 ${head({
     title: "iPhone Apps for Makers, Work & Everyday Tools | WoodCutTool",
-    description: "Privacy-first iPhone apps for HVAC layouts, tile plans, job reports, cut lists, receipts, PDF scanning, makers, field work, and small businesses.",
+    description: "Privacy-first iPhone apps for cabinet shelves, cut lists, HVAC layouts, tile plans, job reports, receipts, PDF scanning, makers, and field work.",
     canonical: "https://woodcuttool.com/apps/",
     jsonLd: appsIndexJsonLd()
   })}
@@ -482,7 +489,7 @@ ${head({
       <p class="breadcrumb"><a href="/">Home</a> / Apps</p>
       <p class="eyebrow">App directory</p>
       <h1>Privacy-First iPhone Apps for Work, Makers, and Everyday Tools</h1>
-      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: HVAC duct layout, tile planning, jobsite photo reports, plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, tinnitus sound masking, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
+      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: cabinet shelf planning, HVAC duct layout, tile planning, jobsite photo reports, plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, tinnitus sound masking, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
       <p class="lead">Deciding whether an app is worth it? Browse our <a href="/apps/compare/">app comparisons</a> to see each one side by side with the manual method or a common alternative.</p>
     </section>
 ${featuredAppsSection()}
@@ -665,7 +672,7 @@ function relatedAppDetailsSection(app) {
     .filter((slug) => slug !== app.slug)
     .map((slug) => appBySlug.get(slug))
     .filter(Boolean)
-    .slice(0, 4);
+    .slice(0, category.id === "maker-calculator-apps" ? 5 : 4);
   if (!related.length) return "";
 
   const cards = related.map((candidate) => `<a href="${escapeHtml(detailHref(candidate))}">

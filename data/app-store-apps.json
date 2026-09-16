@@ -879,5 +879,34 @@
     "averageUserRating": 0,
     "userRatingCount": 0,
     "sellerName": "家宝 戴"
+  },
+  {
+    "id": 6808238280,
+    "slug": "shelf-planner-cabinet-shelves",
+    "name": "Shelf Planner: Cabinet Shelves",
+    "genre": "Graphics & Design",
+    "genres": [
+      "Graphics & Design"
+    ],
+    "url": "https://apps.apple.com/us/app/shelf-planner-cabinet-shelves/id6808238280?uo=4",
+    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2f/4f/b3/2f4fb319-e612-7194-5f04-403a352e3f4e/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshotUrls": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/cc/a2/cecca20e-8cab-8d76-8fba-8db5c3d28588/1.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/43/3a/3e/433a3e91-62ef-15b6-f778-a4b5e5b262a1/2.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/fb/5b/bb/fb5bbb20-05a1-4643-618b-e67def265d89/3.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5b/e0/19/5be01947-9d6f-624d-1192-74298fdddde7/4.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/42/ec/5e/42ec5ecb-88a1-bd05-95a8-e5d304b9dd5c/5.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/72/f8/92/72f89206-6018-b17b-3ed6-a17028c864fb/6.png/1290x2796bb.jpg"
+    ],
+    "description": "Plan adjustable shelves before you drill a hole or cut material. Shelf Planner turns cabinet interior dimensions into equal clear openings, exact shelf positions, a live drawing, 32mm-system hole references, a practical sag estimate, and a workshop-ready PDF. It is built for cabinetmakers, woodworkers, installers, designers, and DIY builders who want dependable measurements at the bench or on site.\n\nPRIVATE BY DESIGN\n• Offline — calculate, edit, review, save, and export without an internet connection\n• No Login — no account, email address, password, or team workspace is required\n• Privacy First — cabinet dimensions, project names, notes, and load assumptions stay under your control\n• On Device — spacing, 32mm snapping, sag estimates, project storage, and PDF creation happen on your iPhone or iPad\n• No Cloud Upload — Shelf Planner does not automatically upload projects, measurements, notes, or exported files\n\nCALCULATE EQUAL OPENINGS\nEnter the finished interior height, number of adjustable shelves, shelf thickness, and optional top and bottom offsets. Shelf Planner subtracts the occupied thickness and offsets, then divides the usable space into equal clear openings. Change an input and the result updates immediately, so you can compare layouts without rebuilding a spreadsheet or repeating hand calculations.\n\nPLAN A 32MM CABINET SYSTEM\nEnable the 32mm Cabinet System when your project uses standard line-boring. Set the first-hole offset and Shelf Planner snaps each shelf to the nearest valid 32mm location. It shows the hole index, ideal equal-spacing position, actual snapped position, and the positive or negative difference. This makes it easier to pair both cabinet sides and understand exactly how a theoretical layout changes at the drill row.\n\nCHECK SHELF SAG EARLY\nUse the Sag tab to enter unsupported span, depth, thickness, material, and an estimated evenly distributed load. Choose plywood, MDF, particle board, solid wood, melamine, or a general custom-material value. Shelf Planner estimates mid-span deflection, compares it with an allowable target, labels the result Safe, Caution, or Warning, and shows a recommended maximum span. When the estimate is high, it can suggest a minimum thickness and remind you to consider front nosing, center support, or a shorter span.\n\nSAVE PROJECTS LOCALLY\nName and save a shelf plan, then reopen it from Recent Projects. Saved projects automatically retain later edits. Duplicate a project to test another shelf count or thickness while preserving the original, rename it for a room or cabinet, and delete it when it is no longer needed. Project notes travel with the plan and can be included in the PDF when useful.\n\nEXPORT A WORKSHOP PDF\nCreate a PDF locally with the project title, cabinet interior dimensions, date, shelf drawing, measurement table, and 32mm hole references. In Settings, choose whether the PDF also includes the visual diagram, sag result, and project notes. Use the iOS share sheet to save to Files, print through an available destination, or send the document using an app you select. Shelf Planner never chooses a recipient or upload location for you.\n\nShelf Planner is a measurement and planning aid, not a substitute for site verification, structural design, material testing, hardware instructions, or safe workshop practice. Before purchasing, drilling, cutting, loading, or installing, confirm the finished opening, shelf orientation, material properties, support method, hardware clearance, drilling setup, tool calibration, and all displayed measurements. Build from verified dimensions, not assumptions.\n\nSupport\nhttps://woodcuttool.com/legal/ShelfPlanner/support/\n\nPrivacy Policy\nhttps://woodcuttool.com/legal/ShelfPlanner/privacy/",
+    "version": "1.0",
+    "releaseDate": "2026-09-16T07:00:00Z",
+    "currentVersionReleaseDate": "2026-09-16T11:29:08Z",
+    "minimumOsVersion": "26.0",
+    "formattedPrice": "Free",
+    "trackContentRating": "4+",
+    "averageUserRating": 0,
+    "userRatingCount": 0,
+    "sellerName": "家宝 戴"
   }
 ]

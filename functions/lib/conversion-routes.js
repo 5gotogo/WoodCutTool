@@ -149,6 +149,7 @@ export const conversionRoutes = new Set([
   "/apps/private-meeting-transcriber/",
   "/apps/quiltfit/",
   "/apps/ritualix-habits-and-streaks/",
+  "/apps/shelf-planner-cabinet-shelves/",
   "/apps/signaturemark-brand-mark/",
   "/apps/snapcleaner-clean-photos/",
   "/apps/snaplabel-photo-text-label/",
