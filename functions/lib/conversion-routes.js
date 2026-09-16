@@ -1798,6 +1798,8 @@ export const conversionRoutes = new Set([
   "/legal/Casework/support/",
   "/legal/DuctLab/privacy/",
   "/legal/DuctLab/support/",
+  "/legal/FloorQuote/privacy/",
+  "/legal/FloorQuote/support/",
   "/legal/JobPhotoLog/privacy/",
   "/legal/JobPhotoLog/support/",
   "/legal/MoodLoop/privacy/",

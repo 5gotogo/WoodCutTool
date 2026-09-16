@@ -51,7 +51,7 @@
   },
   "/apps/": {
     "lastmod": "2026-09-16",
-    "hash": "6d6f0104516fdff7b6078e966ae6f8c0bb0091f0c57278237a34706a4e41fdcd",
+    "hash": "69f0ce061a310c842e492906d978481a6f4b619bc152c9366603562f4636962e",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -9062,6 +9062,16 @@
   "/legal/DuctLab/support/": {
     "lastmod": "2026-08-22",
     "hash": "9183c156bedce7a59acb004b67b50e4bbb9f2f99dd3435d8687003661f2aca88",
+    "hashVersion": 2
+  },
+  "/legal/FloorQuote/privacy/": {
+    "lastmod": "2026-09-16",
+    "hash": "9aabf3a4896ff2e0a7327f5e8710fe55cb10ff4f722bff3a960f192e26f80194",
+    "hashVersion": 2
+  },
+  "/legal/FloorQuote/support/": {
+    "lastmod": "2026-09-16",
+    "hash": "8b61226267690adf75f894e96a9d39cebd6226d4558f44d898ea42c492277fc2",
     "hashVersion": 2
   },
   "/legal/JobPhotoLog/privacy/": {
