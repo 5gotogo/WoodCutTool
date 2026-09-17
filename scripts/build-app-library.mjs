@@ -127,6 +127,10 @@ const legalLinksBySlug = {
   "shelf-planner-cabinet-shelves": {
     privacy: "/legal/ShelfPlanner/privacy/",
     support: "/legal/ShelfPlanner/support/"
+  },
+  "woodcheck-carpentry-checklist": {
+    privacy: "/legal/WoodCheck/privacy/",
+    support: "/legal/WoodCheck/support/"
   }
 };
 
@@ -152,6 +156,7 @@ const featuredApps = [
   ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
   ["casework-cabinet-cut-lists", "On-device cabinet planning for parts lists, sheet layouts, hardware estimates, cutting steps, and shop-ready exports."],
   ["shelf-planner-cabinet-shelves", "Offline cabinet shelf planner for equal spacing, 32mm hole references, sag estimates, saved projects, and workshop PDFs."],
+  ["woodcheck-carpentry-checklist", "Offline woodworking inspections with staged checklists, measurements, photo evidence, issue closure, and local PDF records."],
   ["tilefit-tile-layout-planner", "Offline tile layout planner with six patterns, material estimates, grouped cuts, installation order, and PDF export."],
   ["jobphotolog-work-reports", "Private, offline jobsite photo records with before-and-after evidence, punch lists, signatures, and professional PDF reports."],
   ["quiltfit-quilt-design-planner", "Quilt design planner for fabric layouts, block planning, and project organization."],
@@ -165,8 +170,8 @@ const categorySections = [
   {
     id: "maker-calculator-apps",
     title: "Maker & Calculator Apps",
-    description: "Practical iPhone tools for people who plan, measure, cut, design, fabricate, or build physical projects. These apps focus on cabinet planning, shelf spacing, plywood optimization, HVAC duct layout, tile estimation, trim angles, stair stringer calculation, and other maker workflows.",
-    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "tilefit-tile-layout-planner", "ductlab-hvac-duct-layout", "spring-miter-bevel", "shelf-planner-cabinet-shelves", "quiltfit-quilt-design-planner", "stringer-stair-layout"]
+    description: "Practical iPhone tools for people who plan, measure, cut, inspect, design, fabricate, or build physical projects. These apps focus on woodworking quality checks, cabinet planning, shelf spacing, plywood optimization, HVAC duct layout, tile estimation, trim angles, stair stringer calculation, and other maker workflows.",
+    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "woodcheck-carpentry-checklist", "tilefit-tile-layout-planner", "ductlab-hvac-duct-layout", "spring-miter-bevel", "shelf-planner-cabinet-shelves", "quiltfit-quilt-design-planner", "stringer-stair-layout"]
   },
   {
     id: "small-business-apps",
@@ -248,7 +253,8 @@ const appTags = {
   "blockfit-block-puzzle": ["Blocks", "Puzzle", "Casual", "Relax"],
   "spring-miter-bevel": ["Miter & bevel", "Crown molding", "Trim", "PDF export"],
   "ductlab-hvac-duct-layout": ["HVAC duct", "Sheet metal", "Estimating", "PDF export"],
-  "shelf-planner-cabinet-shelves": ["Shelf spacing", "32mm system", "Sag estimate", "PDF export"]
+  "shelf-planner-cabinet-shelves": ["Shelf spacing", "32mm system", "Sag estimate", "PDF export"],
+  "woodcheck-carpentry-checklist": ["Inspections", "Photo evidence", "Issue closure", "PDF reports"]
 };
 
 const directoryDescriptions = new Map(featuredApps);
@@ -259,6 +265,7 @@ directoryDescriptions.set("tilefit-tile-layout-planner", "Plan floor, wall, back
 directoryDescriptions.set("spring-miter-bevel", "Calculate crown-molding, baseboard, and casing miter or bevel settings from real wall and spring angles, then save projects and export PDF references.");
 directoryDescriptions.set("ductlab-hvac-duct-layout", "Lay out HVAC sheet-metal fittings, calculate fabrication measurements, estimate sheet stock and cost, organize jobs, and export shop-ready PDF packages on iPhone.");
 directoryDescriptions.set("shelf-planner-cabinet-shelves", "Plan equal cabinet shelf openings, 32mm hole positions, shelf sag, saved project variations, and workshop-ready PDF measurements offline.");
+directoryDescriptions.set("woodcheck-carpentry-checklist", "Run staged woodworking inspections, attach measurements and photo evidence, close issues, and create local PDF quality records offline.");
 
 function detailHref(app) {
   return detailRouteOverrides[app.slug] || `/apps/${app.slug}/`;
@@ -370,7 +377,7 @@ const appDirectoryFaq = [
   ["What kind of iPhone apps does JiaBao Dai build?", "JiaBao Dai builds practical iPhone utilities for makers, small business work, documents, home organization, creative tasks, personal routines, and casual games."],
   ["Are these apps privacy-first?", "Many apps are designed around private, local workflows so common tasks can be completed without sending every project, receipt, note, or document through a cloud dashboard."],
   ["Do these apps require an account?", "Most apps are built to be useful without account setup. Some optional system sharing or export features may use standard iOS workflows."],
-  ["Which app is best for woodworking?", "Shelf Planner handles cabinet shelf spacing, 32mm hole positions, and sag estimates. Casework plans cabinet parts and sheet layouts, while CutList handles general plywood cut lists and nesting."],
+  ["Which app is best for woodworking?", "WoodCheck records staged inspections, measurements, photos, issues, and PDF quality reports. Shelf Planner handles cabinet shelf spacing, 32mm hole positions, and sag estimates. Casework plans cabinet parts and sheet layouts, while CutList handles general plywood cut lists and nesting."],
   ["Which app is best for tile layout planning?", "TileFit plans floor, wall, backsplash, and countertop layouts with six patterns, quantities, box and cost estimates, grouped cuts, installation order, and PDF export."],
   ["Which app is best for receipt scanning?", "SnapReceipt is built for receipt capture, expense records, mileage logs, reimbursements, and tax-related organization."],
   ["Which app is best for invoices?", "Invoice Maker is the app for creating invoices, estimates, and PDF documents for freelance, contractor, and small business work."],
@@ -478,7 +485,7 @@ function appsIndexPage() {
 <html lang="en">
 ${head({
     title: "iPhone Apps for Makers, Work & Everyday Tools | WoodCutTool",
-    description: "Privacy-first iPhone apps for cabinet shelves, cut lists, HVAC layouts, tile plans, job reports, receipts, PDF scanning, makers, and field work.",
+    description: "Privacy-first iPhone apps for woodworking checks, cabinet shelves, cut lists, HVAC layouts, tile plans, job reports, makers, and field work.",
     canonical: "https://woodcuttool.com/apps/",
     jsonLd: appsIndexJsonLd()
   })}
@@ -490,7 +497,7 @@ ${head({
       <p class="breadcrumb"><a href="/">Home</a> / Apps</p>
       <p class="eyebrow">App directory</p>
       <h1>Privacy-First iPhone Apps for Work, Makers, and Everyday Tools</h1>
-      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: cabinet shelf planning, HVAC duct layout, tile planning, jobsite photo reports, plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, tinnitus sound masking, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
+      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: woodworking inspections, cabinet shelf planning, HVAC duct layout, tile planning, jobsite photo reports, plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, tinnitus sound masking, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
       <p class="lead">Deciding whether an app is worth it? Browse our <a href="/apps/compare/">app comparisons</a> to see each one side by side with the manual method or a common alternative.</p>
     </section>
 ${featuredAppsSection()}
@@ -692,6 +699,51 @@ function relatedAppDetailsSection(app) {
         ${cards}
         <a href="/apps/"><span>Directory</span><strong>Browse all iPhone apps</strong><em>See every app by category, workflow, and use case.</em></a>
       </div>
+</section>`;
+}
+
+const websiteWorkflowsByApp = {
+  "woodcheck-carpentry-checklist": {
+    title: "Use WoodCheck with the website checklist library",
+    description: "Start with a WoodCutTool release checklist, then use WoodCheck when the job needs saved inspection status, measurements, photo evidence, issue closure, and a dated PDF record.",
+    links: [
+      ["/checklists/", "70 woodworking checklists", "Choose the release gate that matches the next irreversible workshop or site decision."],
+      ["/checklists/final-design-release/", "Final design release", "Confirm scope, dimensions, materials, interfaces, and responsibilities before production."],
+      ["/checklists/assembly-release/", "Final assembly release", "Inspect geometry, function, finish readiness, labels, and installation interfaces."],
+      ["/checklists/project-closeout/", "Project closeout", "Reconcile final records, photos, warranties, lessons, and outstanding responsibilities."]
+    ]
+  },
+  "shelf-planner-cabinet-shelves": {
+    title: "Connect the shelf plan to a release checklist",
+    description: "Use Shelf Planner for spacing, 32mm positions, sag comparisons, saved variations, and a workshop PDF, then verify the real cabinet, hardware, drilling setup, and installation before release.",
+    links: [
+      ["/checklists/shelf-pin-boring/", "Shelf pin boring", "Check the datum, row spacing, front and back offsets, drilling depth, and paired cabinet sides."],
+      ["/checklists/opening-clearance-verification/", "Opening and clearance", "Verify the finished opening and the full movement or removal path before relying on the plan."],
+      ["/checklists/built-in-bookcase-installation/", "Built-in bookcase installation", "Coordinate the cases, adjustable shelves, trim, anchors, walls, floor, and ceiling."],
+      ["/checklists/floating-shelf-installation/", "Floating shelf installation", "Confirm the structure, wall, brackets, level, projection, and fit before drilling."]
+    ]
+  }
+};
+
+function websiteWorkflowSection(app) {
+  const workflow = websiteWorkflowsByApp[app.slug];
+  if (!workflow) return "";
+
+  const cards = workflow.links.map(([href, title, description]) => `<a href="${escapeHtml(href)}">
+          <span>WoodCutTool checklist</span>
+          <strong>${escapeHtml(title)}</strong>
+          <em>${escapeHtml(description)}</em>
+        </a>`).join("\n        ");
+
+  return `    <section class="app-detail-related section" aria-label="Website workflows related to ${escapeHtml(app.name)}">
+      <div class="section-heading compact">
+        <p class="eyebrow">Website + app workflow</p>
+        <h2>${escapeHtml(workflow.title)}</h2>
+        <p>${escapeHtml(workflow.description)}</p>
+      </div>
+      <div class="related-grid">
+        ${cards}
+      </div>
     </section>`;
 }
 
@@ -812,6 +864,7 @@ ${head({
     </section>
 ${appReviewsSection(app)}
 ${appComparisonsSection(app)}
+${websiteWorkflowSection(app)}
 ${relatedAppDetailsSection(app)}
   </main>
   ${footer()}

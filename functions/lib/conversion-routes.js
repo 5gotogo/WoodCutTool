@@ -162,6 +162,7 @@ export const conversionRoutes = new Set([
   "/apps/thumbtype-typing-speed-test/",
   "/apps/tilefit-tile-layout-planner/",
   "/apps/tinnitus-relief-sound-masking/",
+  "/apps/woodcheck-carpentry-checklist/",
   "/apps/work-shift-schedule-calendar/",
   "/baluster-spacing-calculator/",
   "/blog/",

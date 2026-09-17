@@ -6,6 +6,12 @@ import { checklistCategories, checklistEntries } from "./checklist-data.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
+const shelfPlannerChecklistSlugs = new Set([
+  "opening-clearance-verification",
+  "shelf-pin-boring",
+  "floating-shelf-installation",
+  "built-in-bookcase-installation",
+]);
 
 const esc = (value) => String(value)
   .replaceAll("&", "&amp;")
@@ -166,6 +172,26 @@ function relatedEntries(entry) {
   return [1, 2, 3].map((offset) => group[(index + offset) % group.length]);
 }
 
+function appHandoffSection(entry = null) {
+  const apps = [{
+    href: "/apps/woodcheck-carpentry-checklist/",
+    eyebrow: "Checklist records",
+    title: "Continue the inspection in WoodCheck",
+    description: "Save staged results, measurements, photo evidence, issues, corrective actions, and a dated local PDF record after choosing the right release gate here.",
+  }];
+
+  if (!entry || shelfPlannerChecklistSlugs.has(entry.slug)) {
+    apps.push({
+      href: "/apps/shelf-planner-cabinet-shelves/",
+      eyebrow: "Cabinet shelf planning",
+      title: "Calculate the shelf plan in Shelf Planner",
+      description: "Plan equal openings, 32mm hole positions, shelf sag, saved variations, and a workshop PDF, then return to the relevant checklist to verify the real work.",
+    });
+  }
+
+  return `<section class="checklist-app-handoff"><p class="eyebrow">Website + app workflow</p><h2>Move from a release gate to a saved working record</h2><p>The website helps select and review the decision. Use the matching app when the work needs local project history, field evidence, or a reusable plan.</p><div class="research-card-grid checklist-resource-grid">${apps.map((app) => `<a class="research-card" href="${app.href}"><span>${app.eyebrow}</span><h2>${app.title}</h2><p>${app.description}</p><strong>View app →</strong></a>`).join("")}</div></section>`;
+}
+
 function checklistPage(entry) {
   const route = `/checklists/${entry.slug}/`;
   const title = titleFor(entry);
@@ -217,6 +243,7 @@ function checklistPage(entry) {
 
       <section><h2>Related checklists in ${esc(entry.category)}</h2><div class="research-card-grid checklist-related-grid">${related}</div></section>
       <section><h2>Use the right next resource</h2><div class="research-card-grid checklist-resource-grid">${resourceLinks}</div><p>A checklist can confirm that inputs, tests, and approvals exist, but it does not calculate a cut layout, choose a structural connection, certify a machine, or replace current product data. Use the linked method or tool for the next decision and return here to record the result before release.</p></section>
+      ${appHandoffSection(entry)}
 
       <section><h2>Method and safety boundaries</h2><p>WoodCutTool checklists use a simple control loop: define the release point, verify the source, observe the real condition, compare it with an explicit pass rule, record the result, and stop when the two disagree. They deliberately avoid universal tolerances, load claims, coating schedules, and fastener capacities because those depend on the design, material, machine, hardware, environment, manufacturer, and local requirements.</p><p>Follow current machine and product instructions, use suitable PPE and dust or fume controls, and keep guards and safety systems in place. Structural, electrical, plumbing, gas, fire, accessibility, and building-code decisions require the appropriate qualified professional or authority. A completed page documents a workshop decision; it does not expand the user's training, the tool's rating, or the product's certified use.</p></section>
 
@@ -322,6 +349,7 @@ const hubHtml = pageShell({
       <section class="checklist-finder"><label for="checklist-search"><strong>Find a release checklist</strong><span>Search by task, hardware, material, installation, or finishing stage.</span></label><input id="checklist-search" type="search" placeholder="Try drawer slides, plywood order, glue-up, wall cabinet…" autocomplete="off" data-checklist-filter><p data-checklist-status aria-live="polite">Showing all 70 checklists.</p></section>
       ${categorySections}
       <section><h2>Use the library as a connected project control system</h2><p>Begin with Planning &amp; Measurement to release dimensions and responsibility. Move to Materials &amp; Purchasing only when the specification and usable-stock assumptions are clear. Cutting &amp; Machining and Assembly &amp; Joinery use first articles and dry fits to keep one setup error from becoming a batch. Cabinets &amp; Hardware and Installation &amp; Site Work connect the shop model to real products and field conditions. Finishing &amp; Handoff preserves the approved sample, cure limits, final condition, and as-built record.</p><p>Each checklist links to a calculator, Learn guide, template, troubleshooting path, reference, or CutList action. The links are not decoration: they are where the evidence comes from. Run the method, calculation, mockup, or diagnostic step, then return to the checklist and record the result that supports release.</p></section>
+      ${appHandoffSection()}
       <section><h2>Release rules shared by every checklist</h2><ol class="checklist-principles"><li><strong>Name the revision.</strong> A correct check against an obsolete drawing is still a failed release.</li><li><strong>Use an observable result.</strong> Record a measurement, product requirement, test, sample, fit, photo, or signed decision.</li><li><strong>Assign an owner.</strong> “The team checked it” does not identify who can answer a question later.</li><li><strong>Stop at disagreement.</strong> Do not hide a failed input by trimming, forcing, over-ordering, or shifting a downstream part.</li><li><strong>Regenerate dependencies.</strong> A changed dimension can affect layouts, quantities, labels, hardware, purchasing, and installation together.</li></ol></section>
       <section class="research-note"><h2>Start at the next irreversible decision</h2><p><a class="button" href="#planning-measurement">Browse planning checks</a> <a class="button secondary" href="/apps/cutlist/">Open CutList</a></p><p>Choose the checklist that controls the next order, cut, glue-up, drilling pattern, installation, coating, or handoff.</p></section>
     </article>
