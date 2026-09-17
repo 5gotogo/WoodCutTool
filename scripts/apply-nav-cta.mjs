@@ -40,7 +40,7 @@ function collectHtmlFiles(dir = root, prefix = "") {
 function applyStylesVersion(html, file) {
   const stylesheet = performanceProfile(file, html).stylesheet;
   if (!stylesheet) return html;
-  return html.replace(/\/assets\/(?:styles|apps|editorial|blog-article|content|interactive|wood)\.css(?:\?v=[^"]+)?/g, stylesheet);
+  return html.replace(/\/assets\/(?:styles|apps|editorial|blog-article|content|interactive|wood|planning|templates|construction)\.css(?:\?v=[^"]+)?/g, stylesheet);
 }
 
 function applyAppVersion(html) {
@@ -69,12 +69,12 @@ function applySiteChromeScript(html) {
   return next.replace("</head>", `${siteChromeScript}\n</head>`);
 }
 
-function isLcpTailPage(file) {
-  return file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/archive/index.html");
+function isLcpTailPage(file, html) {
+  return /^(?:worksheets|troubleshooting|templates)\//.test(file) || html.includes("data-construction-form") || file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/archive/index.html");
 }
 
 function applyConversionScript(html, file) {
-  const conversionScript = isLcpTailPage(file)
+  const conversionScript = isLcpTailPage(file, html)
     ? '  <script defer fetchpriority="low" src="/assets/conversion.js"></script>'
     : '  <script defer src="/assets/conversion.js"></script>';
   const next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/conversion\.js(?:\?[^\"]*)?")[^>]*>\s*<\/script>/g, "");
@@ -92,7 +92,7 @@ function applyConversionScript(html, file) {
 function applyProfiledRuntime(html, file) {
   const runtimes = performanceProfile(file, html).runtimes;
   let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page|directory-page|blog-index|home)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "");
-  const priority = isLcpTailPage(file) ? ' fetchpriority="low"' : "";
+  const priority = isLcpTailPage(file, html) ? ' fetchpriority="low"' : "";
   const markup = runtimes.map((path) => `  <script defer${priority} src="${path}"></script>`).join("\n");
   const siteChromePattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js")[^>]*>\s*<\/script>)/;
   if (siteChromePattern.test(next)) return next.replace(siteChromePattern, `$1\n${markup}`);

@@ -73,6 +73,17 @@ export function performanceProfile(file, html) {
     return { stylesheet: "/assets/wood.css", runtimes: ["/assets/content-page.js"] };
   }
 
+  if (/^(?:worksheets|troubleshooting)\//.test(file)) {
+    return { stylesheet: "/assets/planning.css", runtimes: ["/assets/content-page.js"] };
+  }
+  if (file.startsWith("templates/")) {
+    return { stylesheet: "/assets/templates.css", runtimes: html.includes("template-category-section")
+      ? ["/assets/content-page.js", "/assets/directory-page.js"] : ["/assets/content-page.js"] };
+  }
+  if (html.includes('data-construction-form')) {
+    return { stylesheet: "/assets/construction.css", runtimes: ["/assets/content-page.js"] };
+  }
+
   const runtimes = ["/assets/content-page.js"];
   if (html.includes("template-category-section")) runtimes.push("/assets/directory-page.js");
   return { stylesheet: "/assets/content.css", runtimes };

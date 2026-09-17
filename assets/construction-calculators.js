@@ -1,4 +1,20 @@
 (() => {
+  let componentProjectPromise;
+  function loadComponentProject() {
+    if (globalThis.WoodCutToolComponentProject) return Promise.resolve(globalThis.WoodCutToolComponentProject);
+    if (componentProjectPromise) return componentProjectPromise;
+    componentProjectPromise = new Promise((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src = "/assets/component-builder.js";
+      script.onload = () => globalThis.WoodCutToolComponentProject
+        ? resolve(globalThis.WoodCutToolComponentProject)
+        : reject(new Error("Component project is unavailable"));
+      script.onerror = () => { script.remove(); reject(new Error("Component project could not load")); };
+      document.head.appendChild(script);
+    }).catch((error) => { componentProjectPromise = null; throw error; });
+    return componentProjectPromise;
+  }
+
   const value = (form, name, fallback = 0) => {
     const raw = Number(form.elements[name]?.value);
     return Number.isFinite(raw) ? raw : fallback;
@@ -330,14 +346,19 @@
       result.addEventListener("click", async (event) => {
         const addButton = event.target.closest("[data-add-component-external]");
         if (addButton) {
+          if (addButton.disabled) return;
+          addButton.disabled = true;
+          addButton.textContent = "Adding…";
           try {
             const payload = JSON.parse(decodeURIComponent(addButton.dataset.componentPayload || ""));
-            const project = globalThis.WoodCutToolComponentProject;
+            const project = await loadComponentProject();
             if (!project?.addExternal) throw new Error("Component project is unavailable");
             project.addExternal(payload);
             addButton.textContent = "Added to component project";
           } catch {
-            addButton.textContent = "Could not add";
+            addButton.textContent = "Could not add — try again";
+          } finally {
+            addButton.disabled = false;
           }
           return;
         }

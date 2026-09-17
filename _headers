@@ -50,3 +50,21 @@
 
 /assets/og/*
   Cache-Control: public, max-age=31536000, immutable
+
+/assets/planning.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/templates.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/construction.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/construction-calculators.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/component-builder.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/component-builder.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

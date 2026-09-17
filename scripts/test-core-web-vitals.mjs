@@ -2,7 +2,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { appHtmlFiles, compileAppStyles } from "./build-app-styles.mjs";
 import { blogArticleHtmlFiles, compileBlogArticleStyles, compileBlogIndexStyles, compileEditorialStyles, editorialHtmlFiles } from "./build-editorial-styles.mjs";
-import { compileContentStyles, compileInteractiveStyles, compileWoodStyles } from "./build-site-styles.mjs";
+import { compileContentStyles, compileInteractiveStyles, compileWoodStyles, compilePlanningStyles, compileTemplateStyles, compileConstructionStyles } from "./build-site-styles.mjs";
 import { performanceProfile } from "./site-performance-profile.mjs";
 
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
@@ -119,6 +119,12 @@ if (!cabinetCalculator.includes('rel="preload" as="image"') || !cabinetCalculato
   failures.push("Construction calculator hero images must preload responsive mobile candidates");
 }
 
+for (const route of ["cabinet-door-calculator", "cabinet-cut-list-calculator", "drawer-box-calculator"]) {
+  if (readFileSync(join(root, route, "index.html"), "utf8").includes('src="/assets/component-builder.js"')) {
+    failures.push(`${route}: project storage must load on demand`);
+  }
+}
+
 const appStyles = readFileSync(join(root, "assets/apps.css"), "utf8");
 if (appStyles !== compileAppStyles().css) {
   failures.push("App stylesheet is stale; run npm run apply:nav-cta after editing CSS, App pages, or their runtimes");
@@ -150,6 +156,9 @@ for (const [name, output, compiled, limit] of [
   ["content", join(root, "assets/content.css"), compileContentStyles(), 90_000],
   ["interactive", join(root, "assets/interactive.css"), compileInteractiveStyles(), 90_000],
   ["wood", join(root, "assets/wood.css"), compileWoodStyles(), 45_000],
+  ["planning", join(root, "assets/planning.css"), compilePlanningStyles(), 45_000],
+  ["templates", join(root, "assets/templates.css"), compileTemplateStyles(), 50_000],
+  ["construction", join(root, "assets/construction.css"), compileConstructionStyles(), 50_000],
 ]) {
   const css = readFileSync(output, "utf8");
   if (css !== compiled.css) failures.push(`${name} stylesheet is stale; run npm run apply:nav-cta`);
@@ -160,7 +169,7 @@ for (const [name, output, compiled, limit] of [
     if (!html.includes(`<link rel="stylesheet" href="/assets/${name}.css">`) || html.includes('href="/assets/styles.css"')) {
       failures.push(`${file}: must load the scoped ${name} stylesheet`);
     }
-    if ((name === "content" || name === "wood") && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) {
+    if ((["content", "wood", "planning", "templates", "construction"].includes(name)) && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) {
       failures.push(`${file}: static content must not eagerly load the full app runtime`);
     }
     if (name === "interactive" && profile.runtimes.includes("/assets/app.js") && !html.includes('src="/assets/app.js"')) failures.push(`${file}: interactive page is missing the full app runtime`);
@@ -175,6 +184,9 @@ const allProfiledPages = [
   ...compileContentStyles().pages,
   ...compileInteractiveStyles().pages,
   ...compileWoodStyles().pages,
+  ...compilePlanningStyles().pages,
+  ...compileTemplateStyles().pages,
+  ...compileConstructionStyles().pages,
 ];
 for (const file of new Set(allProfiledPages)) {
   if (readFileSync(join(root, file), "utf8").includes('href="/assets/styles.css"')) failures.push(`${file}: serves the authored full stylesheet`);
@@ -196,7 +208,7 @@ for (const file of woodworkingImages) {
 }
 
 const headers = readFileSync(join(root, "_headers"), "utf8");
-for (const asset of ["site-chrome.js", "content-page.js", "home.js", "conversion.js", "blog-article.css", "wood.css"]) {
+for (const asset of ["site-chrome.js", "content-page.js", "home.js", "conversion.js", "blog-article.css", "wood.css", "planning.css", "templates.css", "construction.css", "construction-calculators.js", "component-builder.js", "component-builder.css"]) {
   const block = headers.match(new RegExp(`/assets/${asset.replace(".", "\\.")}\\n([\\s\\S]*?)(?=\\n/|$)`))?.[1] || "";
   if (!/Cache-Control: public, max-age=[1-9]\d*/.test(block)) failures.push(`${asset} is missing a positive browser cache lifetime`);
 }

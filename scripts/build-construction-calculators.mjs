@@ -25,9 +25,6 @@ function pageHead({ title, description, canonical, schema, componentProject = fa
   const componentStylesheet = componentProject
     ? '  <link rel="stylesheet" href="/assets/component-builder.css">\n'
     : "";
-  const componentRuntime = componentProject
-    ? '  <script defer src="/assets/component-builder.js"></script>\n'
-    : "";
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -56,7 +53,7 @@ ${heroImage ? `  <link rel="preload" as="image" href="${heroImage.replace(/\.web
   <link rel="stylesheet" href="/assets/styles.css">
 ${componentStylesheet}  <script defer src="/assets/site-chrome.js"></script>
   <script defer src="/assets/app.js"></script>
-${componentRuntime}${calculatorRuntime ? '  <script defer src="/assets/construction-calculators.js"></script>\n' : ""}
+${calculatorRuntime ? '  <script defer src="/assets/construction-calculators.js"></script>\n' : ""}
   <script type="application/ld+json">${JSON.stringify(schema)}</script>
 </head>`;
 }

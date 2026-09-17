@@ -71,11 +71,18 @@ export function compileWoodStyles() {
   return compile("/assets/wood.css");
 }
 
+export function compilePlanningStyles() { return compile("/assets/planning.css"); }
+export function compileTemplateStyles() { return compile("/assets/templates.css"); }
+export function compileConstructionStyles() { return compile("/assets/construction.css"); }
+
 export function buildSiteStyles() {
   for (const [name, result] of [
     ["content.css", compileContentStyles()],
     ["interactive.css", compileInteractiveStyles()],
     ["wood.css", compileWoodStyles()],
+    ["planning.css", compilePlanningStyles()],
+    ["templates.css", compileTemplateStyles()],
+    ["construction.css", compileConstructionStyles()],
   ]) {
     writeFileSync(join(root, "assets", name), result.css);
     console.log(`Built ${name} for ${result.pages.length} pages: ${Buffer.byteLength(result.css)} bytes.`);

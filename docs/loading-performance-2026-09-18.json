@@ -1,0 +1,2277 @@
+{
+  "before": {
+    "scope": "Local gzip preview; 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+    "origin": "http://127.0.0.1:4188",
+    "routes": [
+      "/worksheets/project-closeout-record/",
+      "/cabinet-door-calculator/",
+      "/templates/plywood-chair-cut-list/",
+      "/blog/french-cleat-wall-plywood-layout/",
+      "/troubleshooting/finished-parts-chip-during-handling/"
+    ],
+    "runs": 3,
+    "rows": [
+      {
+        "route": "/worksheets/project-closeout-record/",
+        "run": 1,
+        "lcp": 580,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 580,
+        "ttfb": 4.5,
+        "domReady": 566.4000000059605,
+        "load": 724.5,
+        "htmlTransfer": 6625,
+        "resourceTransfer": 116662,
+        "cssJsTransfer": 33628,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 394,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.re.earch-table work.heet-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 328.89999997615814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 320.7000000178814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 178.39999997615814
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 208
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.5
+          }
+        ]
+      },
+      {
+        "route": "/cabinet-door-calculator/",
+        "run": 1,
+        "lcp": 796,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 736,
+        "ttfb": 1.699999988079071,
+        "domReady": 750.8000000119209,
+        "load": 798.3000000119209,
+        "htmlTransfer": 4097,
+        "resourceTransfer": 89327,
+        "cssJsTransfer": 53549,
+        "imageTransfer": 1194,
+        "resourceCount": 10,
+        "domNodes": 326,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-cabinet-800.webp",
+            "type": "link",
+            "transfer": 33856,
+            "encoded": 33556,
+            "duration": 613.2000000178814
+          },
+          {
+            "path": "/assets/component-builder.css",
+            "type": "link",
+            "transfer": 1557,
+            "encoded": 1257,
+            "duration": 162.89999997615814
+          },
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 462.5
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.7999999821186
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 440.59999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 229.90000000596046
+          },
+          {
+            "path": "/assets/component-builder.js",
+            "type": "script",
+            "transfer": 8450,
+            "encoded": 8150,
+            "duration": 514.1999999880791
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 9914,
+            "encoded": 9614,
+            "duration": 560.4000000059605
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.30000001192093
+          }
+        ]
+      },
+      {
+        "route": "/templates/plywood-chair-cut-list/",
+        "run": 1,
+        "lcp": 704,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 668,
+        "ttfb": 2.0999999940395355,
+        "domReady": 661.3000000119209,
+        "load": 741.9000000059605,
+        "htmlTransfer": 3890,
+        "resourceTransfer": 72946,
+        "cssJsTransfer": 33628,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 220,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "code"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/templates/template-furniture-724.webp",
+            "type": "link",
+            "transfer": 38124,
+            "encoded": 37824,
+            "duration": 524.2999999821186
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.59999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.7000000178814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 395.5
+          },
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 410.80000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156.7999999821186
+          }
+        ]
+      },
+      {
+        "route": "/blog/french-cleat-wall-plywood-layout/",
+        "run": 1,
+        "lcp": 636,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 588,
+        "ttfb": 1.5999999940395355,
+        "domReady": 587.9000000059605,
+        "load": 743.0999999940395,
+        "htmlTransfer": 5060,
+        "resourceTransfer": 48113,
+        "cssJsTransfer": 29635,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 357,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.deep-compare-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/woodworking/wood-11-table-saw-planning-480.webp",
+            "type": "link",
+            "transfer": 16556,
+            "encoded": 16256,
+            "duration": 402.90000000596046
+          },
+          {
+            "path": "/assets/blog-article.css",
+            "type": "link",
+            "transfer": 11498,
+            "encoded": 11198,
+            "duration": 358.7999999821186
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 396.19999998807907
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 185.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 223.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.19999998807907
+          }
+        ]
+      },
+      {
+        "route": "/troubleshooting/finished-parts-chip-during-handling/",
+        "run": 1,
+        "lcp": 608,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 608,
+        "ttfb": 2.300000011920929,
+        "domReady": 588.5999999940395,
+        "load": 660.3000000119209,
+        "htmlTransfer": 6667,
+        "resourceTransfer": 34822,
+        "cssJsTransfer": 33628,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 332,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.re.earch-table trouble.hooting-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "th",
+          "tbody",
+          "tr"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 328.09999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.69999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 201
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 320.89999997615814
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/worksheets/project-closeout-record/",
+        "run": 2,
+        "lcp": 588,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 588,
+        "ttfb": 1.7000000178813934,
+        "domReady": 576.5,
+        "load": 730.5,
+        "htmlTransfer": 6625,
+        "resourceTransfer": 34822,
+        "cssJsTransfer": 33628,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 394,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.re.earch-table work.heet-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 334.90000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.59999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.2999999821186
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 320.90000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156.60000002384186
+          }
+        ]
+      },
+      {
+        "route": "/cabinet-door-calculator/",
+        "run": 2,
+        "lcp": 796,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 716,
+        "ttfb": 1.2999999821186066,
+        "domReady": 750,
+        "load": 813.1999999880791,
+        "htmlTransfer": 4097,
+        "resourceTransfer": 89327,
+        "cssJsTransfer": 53549,
+        "imageTransfer": 1194,
+        "resourceCount": 10,
+        "domNodes": 326,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-cabinet-800.webp",
+            "type": "link",
+            "transfer": 33856,
+            "encoded": 33556,
+            "duration": 612.5999999940395
+          },
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 465.19999998807907
+          },
+          {
+            "path": "/assets/component-builder.css",
+            "type": "link",
+            "transfer": 1557,
+            "encoded": 1257,
+            "duration": 161.59999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 438.30000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.7999999821186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 229.19999998807907
+          },
+          {
+            "path": "/assets/component-builder.js",
+            "type": "script",
+            "transfer": 8450,
+            "encoded": 8150,
+            "duration": 513.6999999880791
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 9914,
+            "encoded": 9614,
+            "duration": 558.2999999821186
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 176
+          }
+        ]
+      },
+      {
+        "route": "/templates/plywood-chair-cut-list/",
+        "run": 2,
+        "lcp": 716,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 632,
+        "ttfb": 2.199999988079071,
+        "domReady": 632.2999999821186,
+        "load": 790.5,
+        "htmlTransfer": 3890,
+        "resourceTransfer": 72946,
+        "cssJsTransfer": 33628,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 220,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "code"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 411.30000001192093
+          },
+          {
+            "path": "/assets/images/templates/template-furniture-724.webp",
+            "type": "link",
+            "transfer": 38124,
+            "encoded": 37824,
+            "duration": 524
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 171.60000002384186
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 396
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 208.2999999821186
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 161.5
+          }
+        ]
+      },
+      {
+        "route": "/blog/french-cleat-wall-plywood-layout/",
+        "run": 2,
+        "lcp": 640,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 596,
+        "ttfb": 1.5,
+        "domReady": 587,
+        "load": 739.9000000059605,
+        "htmlTransfer": 5060,
+        "resourceTransfer": 48113,
+        "cssJsTransfer": 29635,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 357,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.deep-compare-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/woodworking/wood-11-table-saw-planning-480.webp",
+            "type": "link",
+            "transfer": 16556,
+            "encoded": 16256,
+            "duration": 394.5
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.30000001192093
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.80000001192093
+          },
+          {
+            "path": "/assets/blog-article.css",
+            "type": "link",
+            "transfer": 11498,
+            "encoded": 11198,
+            "duration": 350.09999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 387.40000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156.5
+          }
+        ]
+      },
+      {
+        "route": "/troubleshooting/finished-parts-chip-during-handling/",
+        "run": 2,
+        "lcp": 576,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 576,
+        "ttfb": 1.800000011920929,
+        "domReady": 567.4000000059605,
+        "load": 722.5,
+        "htmlTransfer": 6667,
+        "resourceTransfer": 34822,
+        "cssJsTransfer": 33628,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 332,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.re.earch-table trouble.hooting-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "th",
+          "tbody",
+          "tr"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 335.09999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.60000002384186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.2000000178814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 319.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/worksheets/project-closeout-record/",
+        "run": 3,
+        "lcp": 564,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 564,
+        "ttfb": 1.699999988079071,
+        "domReady": 566.6999999880791,
+        "load": 719.5,
+        "htmlTransfer": 6625,
+        "resourceTransfer": 34822,
+        "cssJsTransfer": 33628,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 394,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.re.earch-table work.heet-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 327.80000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 178
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 208.09999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 320.19999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 155.80000001192093
+          }
+        ]
+      },
+      {
+        "route": "/cabinet-door-calculator/",
+        "run": 3,
+        "lcp": 804,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 716,
+        "ttfb": 1.699999988079071,
+        "domReady": 758.8000000119209,
+        "load": 857.4000000059605,
+        "htmlTransfer": 4097,
+        "resourceTransfer": 89327,
+        "cssJsTransfer": 53549,
+        "imageTransfer": 1194,
+        "resourceCount": 10,
+        "domNodes": 326,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-cabinet-800.webp",
+            "type": "link",
+            "transfer": 33856,
+            "encoded": 33556,
+            "duration": 619.5
+          },
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 477.69999998807907
+          },
+          {
+            "path": "/assets/component-builder.css",
+            "type": "link",
+            "transfer": 1557,
+            "encoded": 1257,
+            "duration": 162.40000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 184
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 229.7000000178814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 446.80000001192093
+          },
+          {
+            "path": "/assets/component-builder.js",
+            "type": "script",
+            "transfer": 8450,
+            "encoded": 8150,
+            "duration": 522.3000000119209
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 9914,
+            "encoded": 9614,
+            "duration": 559.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/templates/plywood-chair-cut-list/",
+        "run": 3,
+        "lcp": 704,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 624,
+        "ttfb": 1.300000011920929,
+        "domReady": 626.2000000178814,
+        "load": 777.2000000178814,
+        "htmlTransfer": 3890,
+        "resourceTransfer": 72946,
+        "cssJsTransfer": 33628,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 220,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "code"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/templates/template-furniture-724.webp",
+            "type": "link",
+            "transfer": 38124,
+            "encoded": 37824,
+            "duration": 524.4000000059605
+          },
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 411.2999999821186
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.69999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 208.5
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 395.69999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 153.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/blog/french-cleat-wall-plywood-layout/",
+        "run": 3,
+        "lcp": 628,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 580,
+        "ttfb": 1.5,
+        "domReady": 577.5999999940395,
+        "load": 734.1999999880791,
+        "htmlTransfer": 5060,
+        "resourceTransfer": 48113,
+        "cssJsTransfer": 29635,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 357,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.deep-compare-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/woodworking/wood-11-table-saw-planning-480.webp",
+            "type": "link",
+            "transfer": 16556,
+            "encoded": 16256,
+            "duration": 396.5
+          },
+          {
+            "path": "/assets/blog-article.css",
+            "type": "link",
+            "transfer": 11498,
+            "encoded": 11198,
+            "duration": 351.09999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 178.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 215.60000002384186
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 388.40000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/troubleshooting/finished-parts-chip-during-handling/",
+        "run": 3,
+        "lcp": 608,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 608,
+        "ttfb": 1.699999988079071,
+        "domReady": 602.9000000059605,
+        "load": 667.5,
+        "htmlTransfer": 6667,
+        "resourceTransfer": 34822,
+        "cssJsTransfer": 33628,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 332,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.re.earch-table trouble.hooting-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "th",
+          "tbody",
+          "tr"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 335.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 321.2999999821186
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 178.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.09999999403954
+          }
+        ]
+      }
+    ]
+  },
+  "after": {
+    "scope": "Local gzip preview; 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+    "origin": "http://127.0.0.1:4188",
+    "routes": [
+      "/worksheets/project-closeout-record/",
+      "/cabinet-door-calculator/",
+      "/templates/plywood-chair-cut-list/",
+      "/blog/french-cleat-wall-plywood-layout/",
+      "/troubleshooting/finished-parts-chip-during-handling/"
+    ],
+    "runs": 3,
+    "rows": [
+      {
+        "route": "/worksheets/project-closeout-record/",
+        "run": 1,
+        "lcp": 524,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 524,
+        "ttfb": 1.5,
+        "domReady": 517.4000000059605,
+        "load": 680.5999999940395,
+        "htmlTransfer": 6643,
+        "resourceTransfer": 28949,
+        "cssJsTransfer": 27755,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 394,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.re.earch-table work.heet-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/planning.css",
+            "type": "link",
+            "transfer": 9618,
+            "encoded": 9318,
+            "duration": 275.59999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 179.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 208.80000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 305.69999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 164.90000000596046
+          }
+        ]
+      },
+      {
+        "route": "/cabinet-door-calculator/",
+        "run": 1,
+        "lcp": 716,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 544,
+        "ttfb": 1.4000000059604645,
+        "domReady": 662,
+        "load": 754.4000000059605,
+        "htmlTransfer": 4103,
+        "resourceTransfer": 73784,
+        "cssJsTransfer": 38006,
+        "imageTransfer": 1194,
+        "resourceCount": 9,
+        "domNodes": 325,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-cabinet-800.webp",
+            "type": "link",
+            "transfer": 33856,
+            "encoded": 33556,
+            "duration": 538.5999999940395
+          },
+          {
+            "path": "/assets/component-builder.css",
+            "type": "link",
+            "transfer": 1557,
+            "encoded": 1257,
+            "duration": 172
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 186.2000000178814
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 231
+          },
+          {
+            "path": "/assets/construction.css",
+            "type": "link",
+            "transfer": 8095,
+            "encoded": 7795,
+            "duration": 314.30000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 412.80000001192093
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 10217,
+            "encoded": 9917,
+            "duration": 471.89999997615814
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 165.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/templates/plywood-chair-cut-list/",
+        "run": 1,
+        "lcp": 676,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 528,
+        "ttfb": 1.4000000059604645,
+        "domReady": 553.2000000178814,
+        "load": 720,
+        "htmlTransfer": 3897,
+        "resourceTransfer": 66418,
+        "cssJsTransfer": 27100,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 220,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "code"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/templates/template-furniture-724.webp",
+            "type": "link",
+            "transfer": 38124,
+            "encoded": 37824,
+            "duration": 494.80000001192093
+          },
+          {
+            "path": "/assets/templates.css",
+            "type": "link",
+            "transfer": 8963,
+            "encoded": 8663,
+            "duration": 306.2000000178814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 372.89999997615814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.90000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 215.19999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 169.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/blog/french-cleat-wall-plywood-layout/",
+        "run": 1,
+        "lcp": 648,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 592,
+        "ttfb": 2.2999999821186066,
+        "domReady": 592.0999999940395,
+        "load": 743.5,
+        "htmlTransfer": 5060,
+        "resourceTransfer": 48113,
+        "cssJsTransfer": 29635,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 357,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.deep-compare-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/woodworking/wood-11-table-saw-planning-480.webp",
+            "type": "link",
+            "transfer": 16556,
+            "encoded": 16256,
+            "duration": 405.19999998807907
+          },
+          {
+            "path": "/assets/blog-article.css",
+            "type": "link",
+            "transfer": 11498,
+            "encoded": 11198,
+            "duration": 359.59999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 397.80000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 179.30000001192093
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 225.30000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 153.7999999821186
+          }
+        ]
+      },
+      {
+        "route": "/troubleshooting/finished-parts-chip-during-handling/",
+        "run": 1,
+        "lcp": 504,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 504,
+        "ttfb": 1.5,
+        "domReady": 506.09999999403954,
+        "load": 663.5999999940395,
+        "htmlTransfer": 6683,
+        "resourceTransfer": 28949,
+        "cssJsTransfer": 27755,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 332,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.re.earch-table trouble.hooting-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "th",
+          "tbody",
+          "tr"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/planning.css",
+            "type": "link",
+            "transfer": 9618,
+            "encoded": 9318,
+            "duration": 275.69999998807907
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 305.39999997615814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 178.7999999821186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.19999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.69999998807907
+          }
+        ]
+      },
+      {
+        "route": "/worksheets/project-closeout-record/",
+        "run": 2,
+        "lcp": 516,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 516,
+        "ttfb": 1.4000000059604645,
+        "domReady": 520.3000000119209,
+        "load": 686,
+        "htmlTransfer": 6643,
+        "resourceTransfer": 28949,
+        "cssJsTransfer": 27755,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 394,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.re.earch-table work.heet-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/planning.css",
+            "type": "link",
+            "transfer": 9618,
+            "encoded": 9318,
+            "duration": 275.2000000178814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.39999997615814
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.7999999821186
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 303.69999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 167.69999998807907
+          }
+        ]
+      },
+      {
+        "route": "/cabinet-door-calculator/",
+        "run": 2,
+        "lcp": 736,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 548,
+        "ttfb": 1.300000011920929,
+        "domReady": 666.5999999940395,
+        "load": 760.4000000059605,
+        "htmlTransfer": 4103,
+        "resourceTransfer": 73784,
+        "cssJsTransfer": 38006,
+        "imageTransfer": 1194,
+        "resourceCount": 9,
+        "domNodes": 325,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-cabinet-800.webp",
+            "type": "link",
+            "transfer": 33856,
+            "encoded": 33556,
+            "duration": 537.5999999940395
+          },
+          {
+            "path": "/assets/component-builder.css",
+            "type": "link",
+            "transfer": 1557,
+            "encoded": 1257,
+            "duration": 169.5
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 183
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 223
+          },
+          {
+            "path": "/assets/construction.css",
+            "type": "link",
+            "transfer": 8095,
+            "encoded": 7795,
+            "duration": 310.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 408.59999999403954
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 10217,
+            "encoded": 9917,
+            "duration": 469.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 169.2999999821186
+          }
+        ]
+      },
+      {
+        "route": "/templates/plywood-chair-cut-list/",
+        "run": 2,
+        "lcp": 676,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 528,
+        "ttfb": 1.5,
+        "domReady": 554.1999999880791,
+        "load": 711.4000000059605,
+        "htmlTransfer": 3897,
+        "resourceTransfer": 66418,
+        "cssJsTransfer": 27100,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 220,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "code"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/templates/template-furniture-724.webp",
+            "type": "link",
+            "transfer": 38124,
+            "encoded": 37824,
+            "duration": 493.40000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.40000000596046
+          },
+          {
+            "path": "/assets/templates.css",
+            "type": "link",
+            "transfer": 8963,
+            "encoded": 8663,
+            "duration": 305
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 371.7000000178814
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160
+          }
+        ]
+      },
+      {
+        "route": "/blog/french-cleat-wall-plywood-layout/",
+        "run": 2,
+        "lcp": 636,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 588,
+        "ttfb": 1.699999988079071,
+        "domReady": 585.5999999940395,
+        "load": 745,
+        "htmlTransfer": 5060,
+        "resourceTransfer": 48113,
+        "cssJsTransfer": 29635,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 357,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.deep-compare-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/woodworking/wood-11-table-saw-planning-480.webp",
+            "type": "link",
+            "transfer": 16556,
+            "encoded": 16256,
+            "duration": 403
+          },
+          {
+            "path": "/assets/blog-article.css",
+            "type": "link",
+            "transfer": 11498,
+            "encoded": 11198,
+            "duration": 356.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 396.80000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 221.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 161.19999998807907
+          }
+        ]
+      },
+      {
+        "route": "/troubleshooting/finished-parts-chip-during-handling/",
+        "run": 2,
+        "lcp": 512,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 512,
+        "ttfb": 1.5,
+        "domReady": 514.1999999880791,
+        "load": 677.5,
+        "htmlTransfer": 6683,
+        "resourceTransfer": 28949,
+        "cssJsTransfer": 27755,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 332,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.re.earch-table trouble.hooting-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "th",
+          "tbody",
+          "tr"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/planning.css",
+            "type": "link",
+            "transfer": 9618,
+            "encoded": 9318,
+            "duration": 274.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 303.09999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 175
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.2999999821186
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 164.2999999821186
+          }
+        ]
+      },
+      {
+        "route": "/worksheets/project-closeout-record/",
+        "run": 3,
+        "lcp": 524,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 524,
+        "ttfb": 1.9000000059604645,
+        "domReady": 521,
+        "load": 686.5,
+        "htmlTransfer": 6643,
+        "resourceTransfer": 28949,
+        "cssJsTransfer": 27755,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 394,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.re.earch-table work.heet-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/planning.css",
+            "type": "link",
+            "transfer": 9618,
+            "encoded": 9318,
+            "duration": 276.10000002384186
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 305.40000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 208.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 166.2999999821186
+          }
+        ]
+      },
+      {
+        "route": "/cabinet-door-calculator/",
+        "run": 3,
+        "lcp": 732,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 544,
+        "ttfb": 1.5,
+        "domReady": 666,
+        "load": 759.0999999940395,
+        "htmlTransfer": 4103,
+        "resourceTransfer": 73784,
+        "cssJsTransfer": 38006,
+        "imageTransfer": 1194,
+        "resourceCount": 9,
+        "domNodes": 325,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-cabinet-800.webp",
+            "type": "link",
+            "transfer": 33856,
+            "encoded": 33556,
+            "duration": 538.1000000238419
+          },
+          {
+            "path": "/assets/construction.css",
+            "type": "link",
+            "transfer": 8095,
+            "encoded": 7795,
+            "duration": 311.39999997615814
+          },
+          {
+            "path": "/assets/component-builder.css",
+            "type": "link",
+            "transfer": 1557,
+            "encoded": 1257,
+            "duration": 170.90000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 182.69999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 223.30000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 410.19999998807907
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 10217,
+            "encoded": 9917,
+            "duration": 468.2999999821186
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 164.90000000596046
+          }
+        ]
+      },
+      {
+        "route": "/templates/plywood-chair-cut-list/",
+        "run": 3,
+        "lcp": 676,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 528,
+        "ttfb": 1.5,
+        "domReady": 556.5999999940395,
+        "load": 713.0999999940395,
+        "htmlTransfer": 3897,
+        "resourceTransfer": 66418,
+        "cssJsTransfer": 27100,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 220,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "code"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/templates/template-furniture-724.webp",
+            "type": "link",
+            "transfer": 38124,
+            "encoded": 37824,
+            "duration": 493.30000001192093
+          },
+          {
+            "path": "/assets/templates.css",
+            "type": "link",
+            "transfer": 8963,
+            "encoded": 8663,
+            "duration": 303.7999999821186
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.09999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 371.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 213.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.5
+          }
+        ]
+      },
+      {
+        "route": "/blog/french-cleat-wall-plywood-layout/",
+        "run": 3,
+        "lcp": 652,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 592,
+        "ttfb": 1.5,
+        "domReady": 591.5,
+        "load": 752.8000000119209,
+        "htmlTransfer": 5060,
+        "resourceTransfer": 48113,
+        "cssJsTransfer": 29635,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 357,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.deep-compare-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/woodworking/wood-11-table-saw-planning-480.webp",
+            "type": "link",
+            "transfer": 16556,
+            "encoded": 16256,
+            "duration": 402.69999998807907
+          },
+          {
+            "path": "/assets/blog-article.css",
+            "type": "link",
+            "transfer": 11498,
+            "encoded": 11198,
+            "duration": 357.7999999821186
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 185.90000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 221.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 396.80000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 162.80000001192093
+          }
+        ]
+      },
+      {
+        "route": "/troubleshooting/finished-parts-chip-during-handling/",
+        "run": 3,
+        "lcp": 512,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 512,
+        "ttfb": 1.5,
+        "domReady": 513.5999999940395,
+        "load": 676.5,
+        "htmlTransfer": 6683,
+        "resourceTransfer": 28949,
+        "cssJsTransfer": 27755,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 332,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.re.earch-table trouble.hooting-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "th",
+          "tbody",
+          "tr"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/planning.css",
+            "type": "link",
+            "transfer": 9618,
+            "encoded": 9318,
+            "duration": 276.59999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 179
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 209.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 307.90000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 165.2999999821186
+          }
+        ]
+      }
+    ]
+  },
+  "summary": [
+    {
+      "route": "/worksheets/project-closeout-record/",
+      "beforeLcpMs": 580,
+      "afterLcpMs": 524,
+      "beforeCssJsBytes": 33628,
+      "afterCssJsBytes": 27755,
+      "afterCls": 0
+    },
+    {
+      "route": "/cabinet-door-calculator/",
+      "beforeLcpMs": 796,
+      "afterLcpMs": 732,
+      "beforeCssJsBytes": 53549,
+      "afterCssJsBytes": 38006,
+      "afterCls": 0
+    },
+    {
+      "route": "/templates/plywood-chair-cut-list/",
+      "beforeLcpMs": 704,
+      "afterLcpMs": 676,
+      "beforeCssJsBytes": 33628,
+      "afterCssJsBytes": 27100,
+      "afterCls": 0
+    },
+    {
+      "route": "/blog/french-cleat-wall-plywood-layout/",
+      "beforeLcpMs": 636,
+      "afterLcpMs": 648,
+      "beforeCssJsBytes": 29635,
+      "afterCssJsBytes": 29635,
+      "afterCls": 0
+    },
+    {
+      "route": "/troubleshooting/finished-parts-chip-during-handling/",
+      "beforeLcpMs": 608,
+      "afterLcpMs": 512,
+      "beforeCssJsBytes": 33628,
+      "afterCssJsBytes": 27755,
+      "afterCls": 0
+    }
+  ]
+}
