@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { appHtmlFiles, compileAppStyles } from "./build-app-styles.mjs";
-import { blogArticleHtmlFiles, compileBlogArticleStyles, compileEditorialStyles, editorialHtmlFiles } from "./build-editorial-styles.mjs";
+import { blogArticleHtmlFiles, compileBlogArticleStyles, compileBlogIndexStyles, compileEditorialStyles, editorialHtmlFiles } from "./build-editorial-styles.mjs";
 import { compileContentStyles, compileInteractiveStyles, compileWoodStyles } from "./build-site-styles.mjs";
 import { performanceProfile } from "./site-performance-profile.mjs";
 
@@ -77,9 +77,10 @@ for (const file of editorialHtmlFiles().filter((file) => file === "compare/index
 }
 
 const blogIndex = readFileSync(join(root, "blog/index.html"), "utf8");
-if (!blogIndex.includes('<link rel="stylesheet" href="/assets/editorial.css">') || !blogIndex.includes('src="/assets/blog-index.js"') || !blogIndex.includes('src="/assets/content-page.js"') || blogIndex.includes('src="/assets/app.js"')) {
-  failures.push("blog/index.html must use the lightweight search and language runtimes with the editorial stylesheet");
+if (!blogIndex.includes(`<style data-blog-index-styles>${compileBlogIndexStyles().css}</style>`) || /<link\b[^>]*rel="stylesheet"/.test(blogIndex) || !blogIndex.includes('src="/assets/blog-index.js"') || !blogIndex.includes('src="/assets/content-page.js"') || blogIndex.includes('src="/assets/app.js"')) {
+  failures.push("blog/index.html must use current inline scoped styles and lightweight search/language runtimes without blocking CSS requests");
 }
+if (Buffer.byteLength(compileBlogIndexStyles().css) > 45_000) failures.push("Blog index inline stylesheet exceeds 45 KB");
 if (Buffer.byteLength(blogIndex) > 150_000) failures.push(`blog/index.html is ${Buffer.byteLength(blogIndex)} bytes (limit 150000)`);
 if (!existsSync(join(root, "blog/archive/index.html")) || !blogIndex.includes('href="/blog/archive/"')) failures.push("Blog index is missing its crawlable complete archive");
 if (!existsSync(join(root, "assets/blog-search-index.json")) || statSync(join(root, "assets/blog-search-index.json")).size > 500_000) failures.push("Blog search index is missing or exceeds 500 KB");

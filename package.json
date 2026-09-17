@@ -6,7 +6,7 @@
   "description": "Static WoodCutTool website for Cloudflare Pages.",
   "scripts": {
     "dev": "node scripts/dev-server.mjs --port 4175",
-    "dev:lan": "node scripts/dev-server.mjs --port 4076",
+    "dev:lan": "node scripts/dev-server.mjs --host 0.0.0.0 --port 4076",
     "fetch:app-store-apps": "node scripts/fetch-app-store-apps.mjs",
     "fetch:app-reviews": "node scripts/fetch-app-store-reviews.mjs",
     "generate:apps": "node scripts/build-app-library.mjs",

@@ -108,6 +108,7 @@ try {
   for (let run = 1; run <= runs; run += 1) {
     for (const route of routes) {
       await send("Page.navigate", { url: "about:blank" });
+      await send("Page.bringToFront");
       await new Promise((resolve) => setTimeout(resolve, 100));
       await send("Page.navigate", { url: `${origin}${route}` });
       await waitForReady();
@@ -150,6 +151,8 @@ try {
           resources: resources.filter((entry) => entry.path.startsWith("/assets/")),
         };
       })()`);
+
+      if (!data.lcp || !data.fcp) throw new Error(`${route}: no paint measurement; keep the audit tab in the foreground and rerun`);
 
       if (route === "/blog/") {
         data.blogSearchResponse = await evaluate(`new Promise((resolve) => {

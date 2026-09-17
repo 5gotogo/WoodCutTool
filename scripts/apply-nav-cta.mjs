@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
 import { homeRuntimeSource } from "./build-home-runtime.mjs";
 import { buildAppStyles } from "./build-app-styles.mjs";
-import { buildEditorialStyles } from "./build-editorial-styles.mjs";
+import { buildEditorialStyles, inlineBlogIndexStyles } from "./build-editorial-styles.mjs";
 import { buildSiteStyles } from "./build-site-styles.mjs";
 import { performanceProfile } from "./site-performance-profile.mjs";
 
@@ -70,7 +70,7 @@ function applySiteChromeScript(html) {
 }
 
 function isLcpTailPage(file) {
-  return file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/index.html" && file !== "blog/archive/index.html");
+  return file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/archive/index.html");
 }
 
 function applyConversionScript(html, file) {
@@ -235,5 +235,6 @@ writeFileSync(join(root, "assets/home.js"), homeRuntimeSource());
 buildAppStyles();
 buildEditorialStyles();
 buildSiteStyles();
+inlineBlogIndexStyles();
 
 writeFileSync(join(root, "assets/plywood-core.js"), plywoodCoreSource());

@@ -1,0 +1,1391 @@
+{
+  "before": {
+    "scope": "Local gzip preview; 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+    "origin": "http://127.0.0.1:4176",
+    "routes": [
+      "/blog/"
+    ],
+    "runs": 3,
+    "rows": [
+      {
+        "route": "/blog/",
+        "run": 1,
+        "lcp": 576,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 576,
+        "ttfb": 4.800000011920929,
+        "domReady": 579.5999999940395,
+        "load": 816.2000000178814,
+        "htmlTransfer": 15381,
+        "resourceTransfer": 137655,
+        "cssJsTransfer": 34837,
+        "imageTransfer": 20250,
+        "resourceCount": 10,
+        "domNodes": 1072,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/editorial.css",
+            "type": "link",
+            "transfer": 14095,
+            "encoded": 13795,
+            "duration": 341.30000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 349
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.69999998807907
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2605,
+            "encoded": 2305,
+            "duration": 214.39999997615814
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 221.09999999403954
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 228.19999998807907
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 251
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 168.80000001192093
+          }
+        ],
+        "blogSearchResponse": 497
+      },
+      {
+        "route": "/blog/",
+        "run": 2,
+        "lcp": 580,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 580,
+        "ttfb": 1.899999976158142,
+        "domReady": 574.0999999940395,
+        "load": 812.5999999940395,
+        "htmlTransfer": 15381,
+        "resourceTransfer": 55815,
+        "cssJsTransfer": 34837,
+        "imageTransfer": 20250,
+        "resourceCount": 9,
+        "domNodes": 1072,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/editorial.css",
+            "type": "link",
+            "transfer": 14095,
+            "encoded": 13795,
+            "duration": 343.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 336.19999998807907
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 154.7000000178814
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2605,
+            "encoded": 2305,
+            "duration": 200.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.90000000596046
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 250.5
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 228.7999999821186
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 170.10000002384186
+          }
+        ],
+        "blogSearchResponse": 486.5
+      },
+      {
+        "route": "/blog/",
+        "run": 3,
+        "lcp": 616,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 616,
+        "ttfb": 1.699999988079071,
+        "domReady": 609.5,
+        "load": 683.4000000059605,
+        "htmlTransfer": 15381,
+        "resourceTransfer": 55815,
+        "cssJsTransfer": 34837,
+        "imageTransfer": 20250,
+        "resourceCount": 9,
+        "domNodes": 1072,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/editorial.css",
+            "type": "link",
+            "transfer": 14095,
+            "encoded": 13795,
+            "duration": 344.30000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 156.2000000178814
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2605,
+            "encoded": 2305,
+            "duration": 201.60000002384186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 208.7000000178814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 336.60000002384186
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 245.40000000596046
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 215.30000001192093
+          }
+        ],
+        "blogSearchResponse": 483.40000000596046
+      }
+    ]
+  },
+  "after": {
+    "scope": "Local gzip preview; 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+    "origin": "http://127.0.0.1:4176",
+    "routes": [
+      "/blog/",
+      "/",
+      "/apps/",
+      "/wood-database/",
+      "/wood/cypress/"
+    ],
+    "runs": 3,
+    "rows": [
+      {
+        "route": "/blog/",
+        "run": 1,
+        "lcp": 288,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 288,
+        "ttfb": 2,
+        "domReady": 592.2000000178814,
+        "load": 745,
+        "htmlTransfer": 24607,
+        "resourceTransfer": 41720,
+        "cssJsTransfer": 20742,
+        "imageTransfer": 20250,
+        "resourceCount": 8,
+        "domNodes": 1072,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 357
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 162.59999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.59999999403954
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2605,
+            "encoded": 2305,
+            "duration": 199.40000000596046
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 297.40000000596046
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 310.69999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.30000001192093
+          }
+        ],
+        "blogSearchResponse": 481.19999998807907
+      },
+      {
+        "route": "/",
+        "run": 1,
+        "lcp": 684,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 684,
+        "ttfb": 1.7000000178813934,
+        "domReady": 669.9000000059605,
+        "load": 699.9000000059605,
+        "htmlTransfer": 10054,
+        "resourceTransfer": 38799,
+        "cssJsTransfer": 36877,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 664,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 16559,
+            "encoded": 16259,
+            "duration": 350.59999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 171.59999999403954
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 208.7999999821186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 224.09999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 344.2999999821186
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.2999999821186
+          }
+        ]
+      },
+      {
+        "route": "/apps/",
+        "run": 1,
+        "lcp": 532,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 532,
+        "ttfb": 2.0999999940395355,
+        "domReady": 532.4000000059605,
+        "load": 713,
+        "htmlTransfer": 15057,
+        "resourceTransfer": 140801,
+        "cssJsTransfer": 29652,
+        "imageTransfer": 110421,
+        "resourceCount": 10,
+        "domNodes": 1161,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/apps.css",
+            "type": "link",
+            "transfer": 11515,
+            "encoded": 11215,
+            "duration": 290.2000000178814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 192.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 221.80000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 311.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 185.5
+          }
+        ]
+      },
+      {
+        "route": "/wood-database/",
+        "run": 1,
+        "lcp": 612,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 612,
+        "ttfb": 1.4000000059604645,
+        "domReady": 598,
+        "load": 673.6999999880791,
+        "htmlTransfer": 3876,
+        "resourceTransfer": 35550,
+        "cssJsTransfer": 33628,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 410,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.material-library-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "th",
+          "th",
+          "th"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 343.89999997615814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 178.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 328.19999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156.30000001192093
+          }
+        ]
+      },
+      {
+        "route": "/wood/cypress/",
+        "run": 1,
+        "lcp": 484,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 484,
+        "ttfb": 1.600000023841858,
+        "domReady": 483.2000000178814,
+        "load": 637.3000000119209,
+        "htmlTransfer": 3789,
+        "resourceTransfer": 28338,
+        "cssJsTransfer": 26416,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 295,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood.css",
+            "type": "link",
+            "transfer": 8279,
+            "encoded": 7979,
+            "duration": 260.09999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 297.69999998807907
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.2999999821186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.19999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.10000002384186
+          }
+        ]
+      },
+      {
+        "route": "/blog/",
+        "run": 2,
+        "lcp": 288,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 288,
+        "ttfb": 2.199999988079071,
+        "domReady": 549,
+        "load": 701.5999999940395,
+        "htmlTransfer": 24607,
+        "resourceTransfer": 41720,
+        "cssJsTransfer": 20742,
+        "imageTransfer": 20250,
+        "resourceCount": 8,
+        "domNodes": 1072,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 319.69999998807907
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 153.80000001192093
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2605,
+            "encoded": 2305,
+            "duration": 184.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.7000000178814
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 292.59999999403954
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 301.30000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.59999999403954
+          }
+        ],
+        "blogSearchResponse": 484.30000001192093
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "lcp": 708,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 708,
+        "ttfb": 10.199999988079071,
+        "domReady": 684.6999999880791,
+        "load": 701.9000000059605,
+        "htmlTransfer": 10054,
+        "resourceTransfer": 38799,
+        "cssJsTransfer": 36877,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 664,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 16559,
+            "encoded": 16259,
+            "duration": 349.5
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 343.09999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 178.59999999403954
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 215.30000001192093
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 222.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.2000000178814
+          }
+        ]
+      },
+      {
+        "route": "/apps/",
+        "run": 2,
+        "lcp": 552,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 552,
+        "ttfb": 1.7000000178813934,
+        "domReady": 553.4000000059605,
+        "load": 738.4000000059605,
+        "htmlTransfer": 15057,
+        "resourceTransfer": 140801,
+        "cssJsTransfer": 29652,
+        "imageTransfer": 110421,
+        "resourceCount": 10,
+        "domNodes": 1161,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/apps.css",
+            "type": "link",
+            "transfer": 11515,
+            "encoded": 11215,
+            "duration": 298.59999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 192.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 223.30000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 320.40000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 188.90000000596046
+          }
+        ]
+      },
+      {
+        "route": "/wood-database/",
+        "run": 2,
+        "lcp": 600,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 600,
+        "ttfb": 1.7999999821186066,
+        "domReady": 586.8999999761581,
+        "load": 668.6999999880791,
+        "htmlTransfer": 3876,
+        "resourceTransfer": 35550,
+        "cssJsTransfer": 33628,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 410,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.material-library-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "th",
+          "th",
+          "th"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 335.5
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.10000002384186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.5
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 320.10000002384186
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156.5
+          }
+        ]
+      },
+      {
+        "route": "/wood/cypress/",
+        "run": 2,
+        "lcp": 492,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 492,
+        "ttfb": 1.4000000059604645,
+        "domReady": 491.09999999403954,
+        "load": 648.6999999880791,
+        "htmlTransfer": 3789,
+        "resourceTransfer": 28338,
+        "cssJsTransfer": 26416,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 295,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood.css",
+            "type": "link",
+            "transfer": 8279,
+            "encoded": 7979,
+            "duration": 268.30000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 306.09999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 186.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 215.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.5
+          }
+        ]
+      },
+      {
+        "route": "/blog/",
+        "run": 3,
+        "lcp": 284,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 284,
+        "ttfb": 2.0999999940395355,
+        "domReady": 565.3000000119209,
+        "load": 710.9000000059605,
+        "htmlTransfer": 24607,
+        "resourceTransfer": 41720,
+        "cssJsTransfer": 20742,
+        "imageTransfer": 20250,
+        "resourceCount": 8,
+        "domNodes": 1072,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 154.2000000178814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 333.60000002384186
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2605,
+            "encoded": 2305,
+            "duration": 190.7000000178814
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 184.09999999403954
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 287.40000000596046
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 303
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 152.5
+          }
+        ],
+        "blogSearchResponse": 483.40000000596046
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "lcp": 692,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 692,
+        "ttfb": 1.800000011920929,
+        "domReady": 673.5999999940395,
+        "load": 700.0999999940395,
+        "htmlTransfer": 10054,
+        "resourceTransfer": 38799,
+        "cssJsTransfer": 36877,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 664,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 171.30000001192093
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 208.90000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 215.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 343.09999999403954
+          },
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 16559,
+            "encoded": 16259,
+            "duration": 350.69999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.30000001192093
+          }
+        ]
+      },
+      {
+        "route": "/apps/",
+        "run": 3,
+        "lcp": 540,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 540,
+        "ttfb": 2,
+        "domReady": 539.1999999880791,
+        "load": 719.6999999880791,
+        "htmlTransfer": 15057,
+        "resourceTransfer": 140801,
+        "cssJsTransfer": 29652,
+        "imageTransfer": 110421,
+        "resourceCount": 10,
+        "domNodes": 1161,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/apps.css",
+            "type": "link",
+            "transfer": 11515,
+            "encoded": 11215,
+            "duration": 290
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 185
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.59999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 311.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 183.90000000596046
+          }
+        ]
+      },
+      {
+        "route": "/wood-database/",
+        "run": 3,
+        "lcp": 604,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 604,
+        "ttfb": 1.4000000059604645,
+        "domReady": 584.9000000059605,
+        "load": 667.9000000059605,
+        "htmlTransfer": 3876,
+        "resourceTransfer": 35550,
+        "cssJsTransfer": 33628,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 410,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.material-library-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "th",
+          "th",
+          "th"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 15491,
+            "encoded": 15191,
+            "duration": 334.90000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.7000000178814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 319.60000002384186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.90000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.2000000178814
+          }
+        ]
+      },
+      {
+        "route": "/wood/cypress/",
+        "run": 3,
+        "lcp": 488,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 488,
+        "ttfb": 1.4000000059604645,
+        "domReady": 486.7999999821186,
+        "load": 641.7999999821186,
+        "htmlTransfer": 3789,
+        "resourceTransfer": 28338,
+        "cssJsTransfer": 26416,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 295,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood.css",
+            "type": "link",
+            "transfer": 8279,
+            "encoded": 7979,
+            "duration": 260.7000000178814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.59999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 206.59999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14147,
+            "encoded": 13847,
+            "duration": 297.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.5
+          }
+        ]
+      }
+    ]
+  },
+  "ui": [
+    {
+      "width": 360,
+      "layoutMatchesOriginal": true,
+      "overflow": 0,
+      "menu": "true",
+      "search": {
+        "status": "259 matches \u00b7 showing first 80",
+        "results": 81
+      }
+    },
+    {
+      "width": 390,
+      "layoutMatchesOriginal": true,
+      "overflow": 0,
+      "menu": "true",
+      "search": {
+        "status": "259 matches \u00b7 showing first 80",
+        "results": 81
+      }
+    },
+    {
+      "width": 430,
+      "layoutMatchesOriginal": true,
+      "overflow": 0,
+      "menu": "true",
+      "search": {
+        "status": "259 matches \u00b7 showing first 80",
+        "results": 81
+      }
+    },
+    {
+      "width": 1440,
+      "layoutMatchesOriginal": true,
+      "overflow": 0,
+      "search": {
+        "status": "259 matches \u00b7 showing first 80",
+        "results": 81
+      }
+    },
+    {
+      "language": "zh-CN",
+      "heading": "CutList \u9879\u76ee\u548c\u521b\u4f5c\u8005\u5de5\u4f5c\u6d41\u5b9e\u7528\u6307\u5357\u3002"
+    }
+  ]
+}

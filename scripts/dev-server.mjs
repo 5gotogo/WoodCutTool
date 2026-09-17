@@ -17,7 +17,8 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const defaultPort = Number(process.env.PORT || 4175);
 const portFlag = process.argv.indexOf("--port");
 const port = Number(portFlag >= 0 ? process.argv[portFlag + 1] : defaultPort);
-const host = "0.0.0.0";
+const hostFlag = process.argv.indexOf("--host");
+const host = hostFlag >= 0 ? process.argv[hostFlag + 1] : "127.0.0.1";
 
 const contentTypes = new Map([
   [".css", "text/css; charset=utf-8"],
@@ -193,4 +194,3 @@ server.listen(port, host, () => {
   console.log(`WoodCutTool local preview: http://127.0.0.1:${port}/`);
   console.log("Cloudflare-compatible routes: /go/cutlist/ and /api/conversion-event");
 });
-

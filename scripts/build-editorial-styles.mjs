@@ -23,7 +23,8 @@ export function blogArticleHtmlFiles() {
 // need calculator, App-directory, or project-workflow CSS on the critical path.
 // Keep runtime tokens so translated and interactive Blog-index states remain.
 function compilePages(pages, outputName) {
-  const html = pages.map((file) => readFileSync(join(root, file), "utf8"));
+  // Generated inline CSS must not keep its own obsolete selectors alive.
+  const html = pages.map((file) => readFileSync(join(root, file), "utf8").replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ""));
   const runtimePaths = new Set([
     "assets/site-chrome.js",
     "assets/content-page.js",
@@ -66,6 +67,20 @@ export function compileEditorialStyles() {
 
 export function compileBlogArticleStyles() {
   return compilePages(blogArticleHtmlFiles(), "blog-article.css");
+}
+
+export function compileBlogIndexStyles() {
+  return compilePages(["blog/index.html"], "Blog index inline CSS");
+}
+
+export function inlineBlogIndexStyles() {
+  const path = join(root, "blog/index.html");
+  const html = readFileSync(path, "utf8");
+  const css = compileBlogIndexStyles().css;
+  const markup = `<style data-blog-index-styles>${css}</style>`;
+  const next = html.replace(/<style data-blog-index-styles>[\s\S]*?<\/style>|<link rel="stylesheet" href="\/assets\/(?:editorial|blog-index)\.css">/g, () => markup);
+  if (next !== html) writeFileSync(path, next);
+  console.log(`Inlined Blog index styles: ${Buffer.byteLength(css)} bytes.`);
 }
 
 export function buildEditorialStyles() {
