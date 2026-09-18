@@ -35,8 +35,8 @@
     "hashVersion": 2
   },
   "/checklists/": {
-    "lastmod": "2026-09-17",
-    "hash": "8830f141e89f5c25f740dcf2e4b379d1af251a8e3f81b0816851aeca99019767",
+    "lastmod": "2026-09-19",
+    "hash": "f205bc27dd70989a3d2c79cbafeb1d4bf9897b6ca174ae4d13103be740d6f771",
     "hashVersion": 2
   },
   "/examples/": {
@@ -5950,353 +5950,353 @@
     "hashVersion": 2
   },
   "/checklists/appliance-opening-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "d17bf825715f5be7bc0773a7bfa8a765fa306fe646e0ed61d2fb9970b3dec226",
+    "lastmod": "2026-09-19",
+    "hash": "217029ccdca92669f1fe6095da2a535d0fa2eba3d15c393cb3d5b3995a7f334d",
     "hashVersion": 2
   },
   "/checklists/assembly-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "01c467f3cabceb56ec5f286ff7df46ad917a6fd72371c8613b0d9ab8eab7c91b",
+    "lastmod": "2026-09-19",
+    "hash": "7d4808ee13692d266e265c44c9b2385e467457f45232b5e9b831d84a2b3940a6",
     "hashVersion": 2
   },
   "/checklists/base-cabinet-installation/": {
-    "lastmod": "2026-09-17",
-    "hash": "5d3a89b51ed19bd0c9fcab59f348c93f5414a9f59056ad59458148948d704184",
+    "lastmod": "2026-09-19",
+    "hash": "212fdb747fbb3f3f8ee8483b8a4ce389166aef4e3ae6edc097bac9924187b9ae",
     "hashVersion": 2
   },
   "/checklists/batch-rip-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "51dc90bf58950b12a807f07538488944cae011402f172b74dc537b8cde154524",
+    "lastmod": "2026-09-19",
+    "hash": "fcacca4f117f510ebd8086d6a1f8be36d3405a8ba0a43b97dcb3312d30940064",
     "hashVersion": 2
   },
   "/checklists/between-coat-inspection/": {
-    "lastmod": "2026-09-17",
-    "hash": "67b7808a5c0c1742545cd9180096c82e3e4a6ec644f8be49dc4d9c6176042da7",
+    "lastmod": "2026-09-19",
+    "hash": "191b0dc1a32e2aa82c6e8778cc8f7e479d69944bf84e368e95bee452fbc64b55",
     "hashVersion": 2
   },
   "/checklists/built-in-bookcase-installation/": {
-    "lastmod": "2026-09-17",
-    "hash": "63c3eb9c0378828dc87321c15f3606dca872bd8a0e7d0e5b173903ceda156e34",
+    "lastmod": "2026-09-19",
+    "hash": "0cca02182f5827655a06b1d1fe05a6ae1e2097365e607cffddf740f93302669d",
     "hashVersion": 2
   },
   "/checklists/cabinet-back-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "59f970b2faa4b939ae22fde71efce109f327f5d22f3ef1b053b483bab9df420f",
+    "lastmod": "2026-09-19",
+    "hash": "1fc35e7ec9520f61e6730290c4d819a6a9fce671f7b1c0ae7b602149603dc0e2",
     "hashVersion": 2
   },
   "/checklists/cabinet-box-squaring/": {
-    "lastmod": "2026-09-17",
-    "hash": "922de47feea2084f7f63da82cde51cb621c3e7be19049015f731f817713720e2",
+    "lastmod": "2026-09-19",
+    "hash": "a6f1125aedbd53bec9095eb6cc991186ff683a637b09cda13f360d5677a40e7e",
     "hashVersion": 2
   },
   "/checklists/cabinet-hardware-function-test/": {
-    "lastmod": "2026-09-17",
-    "hash": "fc2155fa321307eeb2374c4bf0e2ec2612e1a2aa7c4cb384f845b1cf8ada5479",
+    "lastmod": "2026-09-19",
+    "hash": "a74754e1dc275d559a3b2d9c240771b1e803d1b6e92fb21f0736aa2a13c80457",
     "hashVersion": 2
   },
   "/checklists/clamping-pressure-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "e6af7f8e1fcb8da06760b76a2347fd53f2370faab02584c21a3816feac80cc20",
+    "lastmod": "2026-09-19",
+    "hash": "a715373ed2b1c6fdd46a2234c0602a4ad0b0bf334571e4fcd54acf9b6b1979c7",
     "hashVersion": 2
   },
   "/checklists/clear-coat-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "eedbf9b02f1e8ae9e09dee308528bd0a999afeb485294836e47cb573fb0ecb88",
+    "lastmod": "2026-09-19",
+    "hash": "a5daafe2f4105d404c1483dec59f96689f3c5280abbabc5e5312f52edb12d39a",
     "hashVersion": 2
   },
   "/checklists/client-handoff/": {
-    "lastmod": "2026-09-17",
-    "hash": "16eb6d303bd448417bd3e8676ea583171b68065d85f2f3a44d7996a2418a21f1",
+    "lastmod": "2026-09-19",
+    "hash": "c86df61d5584c74c78393b1224d381af0b4da44c7754706cfd421c4e296d69b7",
     "hashVersion": 2
   },
   "/checklists/closet-system-installation/": {
-    "lastmod": "2026-09-17",
-    "hash": "a4a73deb32c43ed0f0b4df0aa696a55cfa3c5078b03f5ae48f00c476648c4867",
+    "lastmod": "2026-09-19",
+    "hash": "b1bf9408905c6f063eba7abbe54b6798731728cc1bc45c2de2a5f210dbd5628d",
     "hashVersion": 2
   },
   "/checklists/cnc-job-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "b06b7a295131a0226c13755f1b895780b80ac410ee8cc966a23d7732879d7b5b",
+    "lastmod": "2026-09-19",
+    "hash": "dcc850d0952a1124d03cc54a4d4ed7e4952044a69c157614a9db28a8c1f10017",
     "hashVersion": 2
   },
   "/checklists/concealed-hinge-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "24b9fa06b36e98b5ad95d44c60a7cb0802575cba8947873fb9216b6ba53e7e14",
+    "lastmod": "2026-09-19",
+    "hash": "c80df2a537bc450bf300aee79eb6afe2d20645e0808c78e9768428fdceceaae5",
     "hashVersion": 2
   },
   "/checklists/confirmat-screw-assembly/": {
-    "lastmod": "2026-09-17",
-    "hash": "ed3b1b165e76ba66fb4b00d4dbd0afb845bf5f63aec94ec3bd00e37055ee8fd2",
+    "lastmod": "2026-09-19",
+    "hash": "fa9ebc5c11220c656a9347dc2880567275f45d1534efebc845d7a85fb32b3369",
     "hashVersion": 2
   },
   "/checklists/countertop-support-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "49547c4d7c4675e8dc4d70b5549d382808520a0c13a343140118cc95bdf765a2",
+    "lastmod": "2026-09-19",
+    "hash": "bc01ddb61f2e0c09ac36c5fec9d089874a5010f20bf6c1adf5c70720b5443dcd",
     "hashVersion": 2
   },
   "/checklists/crosscut-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "7a6552d11b6d5de7d3f64e63a46b8399404489e7a1d88826c464738cbdd2c08a",
+    "lastmod": "2026-09-19",
+    "hash": "44e634d0b59482996cb6af74de8bb0896939fe968ed06237a5f8c4a4f3b1bb8a",
     "hashVersion": 2
   },
   "/checklists/cut-list-revision-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "a1c42486c43f050613ad93452b5906085067caa483e397f011203297e31d20c3",
+    "lastmod": "2026-09-19",
+    "hash": "22b79bb1fe7011c13230bea0ae070787e769011d533361addee96545e0f7c8cd",
     "hashVersion": 2
   },
   "/checklists/dado-rabbet-groove-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "10616f230624b4fb86751fbe0781b7774a0fb3d49e87980b5a57eec51d6d40f6",
+    "lastmod": "2026-09-19",
+    "hash": "a2b7b62d03e38a1be5a3f3bf73f5f70130dad084d4e6ef47e0e59b7ff79222e9",
     "hashVersion": 2
   },
   "/checklists/delivery-load-in-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "51deccb5161bd243603b7ac0d199f23a4eae02dbcba6d77d2fb6dc813872e87a",
+    "lastmod": "2026-09-19",
+    "hash": "8c0d4885b8c5021a444e8e59775ea44c36fd466c34f274cc5cb772d895160b44",
     "hashVersion": 2
   },
   "/checklists/door-overlay-reveal/": {
-    "lastmod": "2026-09-17",
-    "hash": "43df0ffbe18cede2100e73d2f5cb2ee9b799c49363e71e61ec47f1c7a8c619ec",
+    "lastmod": "2026-09-19",
+    "hash": "7663dd20628a386bfefa48eef2df69bde1134e96032a030b24dd98246b83e129",
     "hashVersion": 2
   },
   "/checklists/dowel-domino-joinery/": {
-    "lastmod": "2026-09-17",
-    "hash": "46b40553afcda824a3bd2df8bb9b3fcd62dde169bd3f57011921752afdc4d5c3",
+    "lastmod": "2026-09-19",
+    "hash": "827ec0e338715a3df8b668edbbfc10074d46e343ce88aaf758a417bafb3aa351",
     "hashVersion": 2
   },
   "/checklists/drawer-box-assembly/": {
-    "lastmod": "2026-09-17",
-    "hash": "69b0cf45b82bd52530aeee24e1ee5bd5363ebf3ef2c004e574a3be85966bf612",
+    "lastmod": "2026-09-19",
+    "hash": "1fb30e5f889bf78396db077dd6012aec39c0579a1c704412fbf23e2115d6ba31",
     "hashVersion": 2
   },
   "/checklists/drawer-front-reveal/": {
-    "lastmod": "2026-09-17",
-    "hash": "790443de3cfbba369d42897860f831b126c6827e0c2ab56c0019e3ba6b1675d6",
+    "lastmod": "2026-09-19",
+    "hash": "13beb8a16048c495e5b24e32c415ed3c690ad08685ed0dde8edc1a2a43798be9",
     "hashVersion": 2
   },
   "/checklists/drawer-slide-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "47278c5b0666718d96e42c6c9388b9eeacf8d4c101bb1b1ee372ffd9ddae166a",
+    "lastmod": "2026-09-19",
+    "hash": "bebee78d26cae7e7016d77c7296140c89dca2470e216f0f0340b72663cd4af4b",
     "hashVersion": 2
   },
   "/checklists/drilling-boring-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "4ab637ee393bece3ddf61505d239c9f72eecd837c7f5a85cbae1025588252608",
+    "lastmod": "2026-09-19",
+    "hash": "f7995b233bcb08068cc054f7e980ba6efc76dc1691c9ad6496e584d4c15e76ce",
     "hashVersion": 2
   },
   "/checklists/dry-fit-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "672b4e8b24e07651502774ad65b9f30269b3071aaae92860ce8d137b6231d247",
+    "lastmod": "2026-09-19",
+    "hash": "eb7013e3451ac220bb5192450c0069a72bdcedeed326175c6ce656a677bbb6e3",
     "hashVersion": 2
   },
   "/checklists/edge-banding-order/": {
-    "lastmod": "2026-09-17",
-    "hash": "515c11ef1e8fe122ee3c00a1cc1f3155f42ef0a475d1d330b28850bb126984ae",
+    "lastmod": "2026-09-19",
+    "hash": "7f18f1d27c1448c08344bc27ad92bdd0c6e1c38b2718cde9fc8d2511177b923b",
     "hashVersion": 2
   },
   "/checklists/face-frame-assembly/": {
-    "lastmod": "2026-09-17",
-    "hash": "7c8074e487b344824d2bd2ba6986f247f6c5fbad7f870dd168d68de191c1c564",
+    "lastmod": "2026-09-19",
+    "hash": "4d0868af430cab3394f3eafc81fa7c6f39732f642abf257ba38355a0ff282967",
     "hashVersion": 2
   },
   "/checklists/filler-scribe-installation/": {
-    "lastmod": "2026-09-17",
-    "hash": "cd02dd59a2d8e7b128692991ab7213e9006ed7ef9500a147c4d5a042cb1f0d42",
+    "lastmod": "2026-09-19",
+    "hash": "87d00416464c0608578133846ec320bf4c6f0b5f833175620710cd143064240c",
     "hashVersion": 2
   },
   "/checklists/final-design-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "89ef5f5e237e248d7feb2401982c16ab027a4009aa53cab4030683f4df7becd2",
+    "lastmod": "2026-09-19",
+    "hash": "e2e755d8ed9c8361f60a8521319ec434858df419db170d0e7da64b214e90ef84",
     "hashVersion": 2
   },
   "/checklists/final-installation-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "05ef1ebfbbad2078c873583a4fb4c245c37cd0ebda8251aa315fac14159e7ec3",
+    "lastmod": "2026-09-19",
+    "hash": "1556fd8a5d61c077bc31cd40f884fee12d5a9a221d0e27d91f187c1b3d64d702",
     "hashVersion": 2
   },
   "/checklists/finish-cure-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "5de977261b88db5720741846b8c51f798c016c4591a8196208b9adc3fd875319",
+    "lastmod": "2026-09-19",
+    "hash": "64ab1d835bb41ed758ffbc0ebab9f2d1b75b7af12d6fa4fe2ed427b5a58f7282",
     "hashVersion": 2
   },
   "/checklists/finish-supplies-order/": {
-    "lastmod": "2026-09-17",
-    "hash": "f985a1bf9620fb01e4a24b951b8b602b3b0083bb7eb4ba537f2f755aa5f97e31",
+    "lastmod": "2026-09-19",
+    "hash": "3d7c75792b44673e873f79a1ae57880f07a324912bb631ba9dbc392e56064534",
     "hashVersion": 2
   },
   "/checklists/first-article-cut-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "f2f055089d67e20c4bdbb81e32c004a8301c357c686ef3d220cd8260b5c88768",
+    "lastmod": "2026-09-19",
+    "hash": "5d4a3c015b7f9e8eecba58fb3448931cf451ea6ef789a81cd8d4df5a87469f4a",
     "hashVersion": 2
   },
   "/checklists/floating-shelf-installation/": {
-    "lastmod": "2026-09-17",
-    "hash": "9b4061ff5d90ddeea1319bfb82a3f3e1eb8c55c7a0ac2d36df261d8f704dca7e",
+    "lastmod": "2026-09-19",
+    "hash": "a2479ccc3b2b7699962ccc3153b8534b9fd0dbc7de5dcf25480ba077fff2585e",
     "hashVersion": 2
   },
   "/checklists/glue-up-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "9da10f680cb13e3885575ed0de17f2a77070d4eab99600cf7e03064c3feebc67",
+    "lastmod": "2026-09-19",
+    "hash": "54f70e2876111ce25dd4385664dbb67a70c21adb3acc24958ce9c918dbf42cf5",
     "hashVersion": 2
   },
   "/checklists/grain-face-orientation-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "b17d2b120c4371286ecc10d63de7523aa9327ba4968e6426bf19fdf8b90ebbb6",
+    "lastmod": "2026-09-19",
+    "hash": "0434bf98763bc56a8fe48511c0869fad5e530af6f933e2aea87cb28c71a4abca",
     "hashVersion": 2
   },
   "/checklists/hardware-order-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "adc9007db1e79ba8dbfa4103c27374bd9d9e66400cde9c35f9fc7bad86353ab6",
+    "lastmod": "2026-09-19",
+    "hash": "20e974c14291359572bb8e26aec43238c3f761252629eaa3f3513bd77eb180df",
     "hashVersion": 2
   },
   "/checklists/jobsite-measurement-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "b21d9791b6a08988ff7cf761199bbfe5d604df91538caecc463981e93867049f",
+    "lastmod": "2026-09-19",
+    "hash": "15e894f596a31fb7c53b25fa306a7ad61a38e581310ff773870f41e38d92f242",
     "hashVersion": 2
   },
   "/checklists/lumber-order-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "f512b046345ba9b38512b6dd0ab378f0d3ec660b1a24424b738bb95094c1d7ba",
+    "lastmod": "2026-09-19",
+    "hash": "48578797fd24e14dabe4ce6b49ce1d5634ecd7324853c9be7e2ab0b2a7b41a47",
     "hashVersion": 2
   },
   "/checklists/material-thickness-verification/": {
-    "lastmod": "2026-09-17",
-    "hash": "12f360d9ba2fa776aac79d20520e5b830994faec96b8cb60286fc0d230f96732",
+    "lastmod": "2026-09-19",
+    "hash": "21cca8a92459d709bbc0752c37de7fdd48753a12cdff86b9b715bd64f5d11613",
     "hashVersion": 2
   },
   "/checklists/mockup-template-approval/": {
-    "lastmod": "2026-09-17",
-    "hash": "65a763f05ac9376c83519d4f8bde35a32e51de53fd2e5633e873876317564b5c",
+    "lastmod": "2026-09-19",
+    "hash": "9d7828c0b1ce7b98c8c4b98ea23fbf6b263c792180885e0c42e2506cd3d0805d",
     "hashVersion": 2
   },
   "/checklists/moisture-acclimation-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "d46f51656ddd2d159b4705f008845d0d12c1f4d4c907e34ab30cb08ef89e9d30",
+    "lastmod": "2026-09-19",
+    "hash": "1ec4e8a86c0a158d9fb68172f21be3f09e2431122113415bcffa067253ce5cef",
     "hashVersion": 2
   },
   "/checklists/offcut-inventory-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "c3881e65c7d2c06a5993cb15d2b658c085575f31671105bf2ddc087b4cd55633",
+    "lastmod": "2026-09-19",
+    "hash": "50531f40f84b77c6c00d4bccbeffec9efc82689bb6de0bf33c02a7da569d658d",
     "hashVersion": 2
   },
   "/checklists/opening-clearance-verification/": {
-    "lastmod": "2026-09-17",
-    "hash": "c845acd55907a0a6324981c4e65c757ec6311cdf1071479926ce209760567fae",
+    "lastmod": "2026-09-19",
+    "hash": "9488136f7109caad33d87da39a385b8f2d1f349bd2986bd6833053a064c95030",
     "hashVersion": 2
   },
   "/checklists/paint-finish-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "00eec7c4108bd162f730dc258afefd9c376109375d93541b89e7bde635677caa",
+    "lastmod": "2026-09-19",
+    "hash": "e146178b51c8333c71a4253ee6621fd36360d01006b302acd51ac650de09affd",
     "hashVersion": 2
   },
   "/checklists/plywood-edge-finish/": {
-    "lastmod": "2026-09-17",
-    "hash": "89417100cff6bf3c21153accc0ce62df4e830bf6f9ba1b0698d467537db30776",
+    "lastmod": "2026-09-19",
+    "hash": "f7cf332431919362245d1dd266fc0bb6f156c2db8dd251c98ee3dc34284d27bd",
     "hashVersion": 2
   },
   "/checklists/plywood-order-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "7ba3a5d2324c093e9c36af3daaa4af08bb8ce9489a7a55091bc6b8541b294843",
+    "lastmod": "2026-09-19",
+    "hash": "7ff072340f885cd2a0c32ba9eecf81aa1fa93710002d3da69210cb4db2cb5b42",
     "hashVersion": 2
   },
   "/checklists/pocket-hole-assembly/": {
-    "lastmod": "2026-09-17",
-    "hash": "192c632a7741d3bf5d0b706ea6b8e4cc34c2fd94965c677bb8d3e13dac63984a",
+    "lastmod": "2026-09-19",
+    "hash": "bb3cc12fa446fe53afe403c363ef5395760d4c4779038b3950d2d3e6253977be",
     "hashVersion": 2
   },
   "/checklists/project-closeout/": {
-    "lastmod": "2026-09-17",
-    "hash": "9a1242d33cb38f753edc170be8c5187a03b3941eea8e88bd04dea128f3b45101",
+    "lastmod": "2026-09-19",
+    "hash": "7051c7628683b5b5aa1b6d6a6379e576c1b36ff7a7a7a26562d7858561c8971d",
     "hashVersion": 2
   },
   "/checklists/project-dimension-freeze/": {
-    "lastmod": "2026-09-17",
-    "hash": "32fae15783d944f712698fa4b9fa223c43ed668cfde75dec558a24be7c9e3381",
+    "lastmod": "2026-09-19",
+    "hash": "7268409559e42561ad9a55086194bde7fc733c8b111b1e94e9ece6e070cca571",
     "hashVersion": 2
   },
   "/checklists/purchase-reconciliation/": {
-    "lastmod": "2026-09-17",
-    "hash": "2f5401d3292528901e7dc1fe636ddc186281717c3302411145d6549467fc936c",
+    "lastmod": "2026-09-19",
+    "hash": "4cb1e2fe3887bf9db8243c0e7df0993f651d9194b8da2f1d9c347e6535b3c614",
     "hashVersion": 2
   },
   "/checklists/router-operation-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "07724c5fb6cc69f2ac3dfefbeca54d621500e4c98ddeff72122200451fbc6885",
+    "lastmod": "2026-09-19",
+    "hash": "6410fcb8db39e796bca80d8ccbad1dbadd5ca3a8c4576208239ffa2600995740",
     "hashVersion": 2
   },
   "/checklists/saw-preflight/": {
-    "lastmod": "2026-09-17",
-    "hash": "e72ce4ac32ba2cd423ff18077b2f58a7214487a647384c7533590e09215a3ed0",
+    "lastmod": "2026-09-19",
+    "hash": "d0f35b1f899fb7c60f2690cf5386996246fb52d64a1185d74a24a1c7e210544b",
     "hashVersion": 2
   },
   "/checklists/sheet-usability-receiving/": {
-    "lastmod": "2026-09-17",
-    "hash": "eb43cc5bb744c786e77160e055a442b27b60d73fbebf0fbe34e0b78e8dd8a0d3",
+    "lastmod": "2026-09-19",
+    "hash": "1100bbdd1f742d7d5fdb66563668f480be49497e18aa3dd6159d94b5160061e6",
     "hashVersion": 2
   },
   "/checklists/shelf-pin-boring/": {
-    "lastmod": "2026-09-17",
-    "hash": "3eb6c9d95a55df7bf54834c90b7bed2e38765e1c7558c04fda4dc938ba528b20",
+    "lastmod": "2026-09-19",
+    "hash": "ee897beb2f349bbfba13c5c0aa70796c3954297d4170ea430d11d8caf6d11adb",
     "hashVersion": 2
   },
   "/checklists/shop-punch-list/": {
-    "lastmod": "2026-09-17",
-    "hash": "a052e9c16bee5b5fb41e8b9ef58ec45131c8d3336a31963f421cce5cca33e682",
+    "lastmod": "2026-09-19",
+    "hash": "85523144945a68adead220094738ce1bf431ed36dd4ece30d5a266285db36d23",
     "hashVersion": 2
   },
   "/checklists/square-level-plumb-survey/": {
-    "lastmod": "2026-09-17",
-    "hash": "1e7dc572077dd38dda7f83df476e499578c0480dfd2c91c41fa004b00d7c5e12",
+    "lastmod": "2026-09-19",
+    "hash": "651f91f79f8bb67be16f960f7f0083d8be67a827ff5dd8443381581e077c804f",
     "hashVersion": 2
   },
   "/checklists/stain-sample-approval/": {
-    "lastmod": "2026-09-17",
-    "hash": "499959f908342868da510178be866f54390dd3f32b168f7ec17afc6e6058d98b",
+    "lastmod": "2026-09-19",
+    "hash": "b18ede96bd1cf7876fc925c2fcf7762ea19710415de2d2ccf7c7177a3fd5c758",
     "hashVersion": 2
   },
   "/checklists/surface-preparation-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "63e8239fb8f5ec0b7e0c91124fe2a4124a691c63312fd81a62d230175f0c7b5e",
+    "lastmod": "2026-09-19",
+    "hash": "d5d0f8109e691c1b7df38fe1d2dd5cfb471f5f46d26fb104ce9c12a76179012d",
     "hashVersion": 2
   },
   "/checklists/table-saw-setup-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "2d1fec3724baa6f2db95e802c19ce3143c3c1be07b7efa59c1756dc09042eded",
+    "lastmod": "2026-09-19",
+    "hash": "6e81c2ebde10ff945849ec5ceca0d647a861dab5c12c20e1de93792bf109f3f8",
     "hashVersion": 2
   },
   "/checklists/tall-cabinet-installation/": {
-    "lastmod": "2026-09-17",
-    "hash": "58862723623a7d61916a2eec5eb3c86515373831c08e00089415c94d8f186dfc",
+    "lastmod": "2026-09-19",
+    "hash": "10c27fa9e00bb4a9816edbb275e718f4cb2fa33ad8cbb7328731a23f8580beb7",
     "hashVersion": 2
   },
   "/checklists/toe-kick-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "8d042604269136b721953af3a77526b9adf67e00985803ee920f4c7ee008b46e",
+    "lastmod": "2026-09-19",
+    "hash": "6defc9df90f1abca0045e9b1d51feae4a1519a2cf76f70b5637293e671271c3a",
     "hashVersion": 2
   },
   "/checklists/tolerance-stack-review/": {
-    "lastmod": "2026-09-17",
-    "hash": "61b494e5082117579aca4a6b71e41564fe8b7cee612939f53b4b968626f73eaf",
+    "lastmod": "2026-09-19",
+    "hash": "76f1d8a0800abc0837ff025824d66c2cce0e99bf91495ec9b89a9cc5e061d6db",
     "hashVersion": 2
   },
   "/checklists/track-saw-sheet-breakdown/": {
-    "lastmod": "2026-09-17",
-    "hash": "ce1e3806def609788f339d5e8d1f3527738942f2554e02f9cd2cdc13470f6c49",
+    "lastmod": "2026-09-19",
+    "hash": "8bd739237ca273c765aa0fc3120c6521c19fce2f7d44e42023d7faf23cb6350c",
     "hashVersion": 2
   },
   "/checklists/units-datums-orientation/": {
-    "lastmod": "2026-09-17",
-    "hash": "afa3e7301f0887ed688763afa996055d82af042e028d8cf1e454cc6b40bda2f2",
+    "lastmod": "2026-09-19",
+    "hash": "bcbc9af4b331d1144d60e5e6c708578f532ed5d0536e002d96f9924a60622852",
     "hashVersion": 2
   },
   "/checklists/wall-anchoring-release/": {
-    "lastmod": "2026-09-17",
-    "hash": "30456cb47cb1c14502b3e4211730152861a2bc38d9c1625bbc21a8e987cf6268",
+    "lastmod": "2026-09-19",
+    "hash": "6faa0c479d8f20b5ea2806c651e586722c1804a1477ce7ace75626991f32fcde",
     "hashVersion": 2
   },
   "/checklists/wall-cabinet-installation/": {
-    "lastmod": "2026-09-17",
-    "hash": "9ad84fd01ba4980ea770761bc775271f73b2923be7e9d81bc1df7617ef80daf8",
+    "lastmod": "2026-09-19",
+    "hash": "9d8d131fb3452e8af7d6d10aa4492e74e0a8b7ede81dd290b90a5c15793fe985",
     "hashVersion": 2
   },
   "/compare/": {
