@@ -10724,6 +10724,18 @@ function articleCard(article) {
       </article>`;
 }
 
+function topicPreviewCard(article) {
+  const searchText = [article.title, article.description, article.category, article.kicker, article.readTime, article.slug].join(" ");
+  return `<article class="blog-card blog-topic-card ${article.accent}" data-blog-card data-blog-category="${escapeHtml(article.category)}" data-blog-search="${escapeHtml(searchText.toLowerCase())}">
+        <a href="/blog/${article.slug}/" aria-label="Read ${escapeHtml(article.title)}">
+          <span class="blog-topic-visual" aria-hidden="true"></span>
+          <span class="blog-card-category">${escapeHtml(article.category)}</span>
+          <h3>${escapeHtml(article.title)}</h3>
+          <span class="blog-card-meta">${escapeHtml(article.kicker)} · ${escapeHtml(readTimeLabel(article.readTime))}</span>
+        </a>
+      </article>`;
+}
+
 const BLOG_SECTION_CARD_LIMIT = 1;
 const BLOG_INDEX_JSONLD_LIMIT = 40;
 
@@ -10733,7 +10745,7 @@ function categoryArticles(category) {
 
 function categoryPreview(category) {
   const matches = categoryArticles(category);
-  const visible = matches.slice(-BLOG_SECTION_CARD_LIMIT).reverse().map(articleCard).join("\n        ");
+  const visible = matches.slice(-BLOG_SECTION_CARD_LIMIT).reverse().map(topicPreviewCard).join("\n        ");
   const remaining = matches.length - BLOG_SECTION_CARD_LIMIT;
   const moreLink = remaining > 0
     ? `\n        <a class="blog-section-more" href="/blog/?q=${encodeURIComponent(category)}#blog-directory-list">${remaining} more ${escapeHtml(category)} articles in directory</a>`
@@ -10910,10 +10922,23 @@ ${head({
       <a href="#tech">Tech</a>
     </section>
 
-    <section class="blog-featured" aria-label="Featured blog articles" data-blog-featured>
-      ${featured.map(articleCard).join("\n      ")}
+    <section class="blog-featured-block" aria-labelledby="blog-featured-title">
+      <div class="blog-collection-head">
+        <div><p class="eyebrow">Featured reads</p><h2 id="blog-featured-title">Start with the latest practical guides.</h2></div>
+        <a href="/blog/archive/">View all ${articles.length + oldGuides.length} articles <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="blog-featured" aria-label="Featured blog articles" data-blog-featured>
+        ${featured.map(articleCard).join("\n        ")}
+      </div>
     </section>
 
+    <section class="blog-topic-intro" aria-labelledby="blog-topic-title">
+      <p class="eyebrow">Browse by topic</p>
+      <h2 id="blog-topic-title">Latest guidance from every collection.</h2>
+      <p>Open a recent guide, or jump to the full filtered directory for that topic.</p>
+    </section>
+
+    <div class="blog-topic-grid">
     <section class="blog-section" id="cutlist" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">CutList</p><h2>Sheet optimization and shop workflow.</h2></div>
       <div class="blog-grid">${categoryPreview("CutList")}</div>
@@ -11005,6 +11030,7 @@ ${head({
       <div class="blog-section-head"><p class="eyebrow">Tech</p><h2>AI agents, security, infrastructure, browser compute, and practical 2026 technology workflows.</h2></div>
       <div class="blog-grid">${categoryPreview("Tech")}</div>
     </section>
+    </div>
 
     <section class="blog-section" id="core-guides" data-blog-section>
       <div class="blog-section-head"><p class="eyebrow">Core guides</p><h2>Existing WoodCutTool guides.</h2></div>
@@ -11796,6 +11822,12 @@ function generateBlogTranslations() {
     "Deeper articles on CutList optimization, fridge inventory, pantry labeling, address label printing, QR code generation, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、冰箱库存、厨房标签、地址标签打印、二维码生成、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
     "Deeper articles on CutList optimization, iPhone utility apps, fridge inventory, pantry labeling, address label printing, QR code generation, photo privacy, invoices, receipts, printing, habits, fasting, image compression, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy.": "深入文章覆盖 CutList 优化、iPhone 工具类 app、冰箱库存、厨房标签、地址标签打印、二维码生成、照片隐私、发票、收据、打印、习惯、轻断食、图片压缩、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略。",
     "Browse focused articles on plywood cut lists, woodworking calculators, maker apps, labeling, scanning, audio tools, shift calendars, QuiltFit planning, tile layouts, and stair stringer geometry.": "浏览胶合板切割清单、木工计算器、创作者应用、标签、扫描、音频工具、排班日历、QuiltFit 规划、瓷砖排版和楼梯梁几何等专题文章。",
+    "Featured reads": "精选文章",
+    "Start with the latest practical guides.": "从最新实用指南开始。",
+    [`View all ${articles.length + oldGuides.length} articles`]: `查看全部 ${articles.length + oldGuides.length} 篇文章`,
+    "Browse by topic": "按主题浏览",
+    "Latest guidance from every collection.": "浏览各专题的最新指南。",
+    "Open a recent guide, or jump to the full filtered directory for that topic.": "打开最新指南，或进入该主题的完整筛选目录。",
     "Sheet optimization and shop workflow.": "板材优化与工坊流程。",
     "Digital quilt planning and fabric decisions.": "数字化拼布规划与布料决策。",
     "Stringer geometry, comfort, and remodel planning.": "楼梯梁几何、舒适度与改造规划。",

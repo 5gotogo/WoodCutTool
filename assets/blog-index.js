@@ -21,7 +21,7 @@
     const cardHaystacks = new WeakMap(cards.map((element) => [element, normalize(element.dataset.blogSearch)]));
     const totalArticles = Number(root.dataset.blogCount || 0);
     let activeCategory = "";
-    let mobileVisibleLimit = 24;
+    let mobileVisibleLimit = 12;
     let filterFrame = 0;
     let filterRevision = 0;
     let searchIndexPromise = null;
@@ -161,7 +161,7 @@
 
     input.addEventListener("input", () => {
       activeCategory = "";
-      mobileVisibleLimit = 24;
+      mobileVisibleLimit = 12;
       scheduleFilter();
     });
     input.addEventListener("focus", () => {
@@ -171,15 +171,15 @@
       if (!mobileQuery.matches) return;
       activeCategory = link.dataset.blogCategoryLink || "";
       input.value = "";
-      mobileVisibleLimit = 24;
+      mobileVisibleLimit = 12;
       scheduleFilter();
     }));
     mobilePagerButton?.addEventListener("click", () => {
-      mobileVisibleLimit += 24;
+      mobileVisibleLimit += 12;
       applyMobilePagination();
     });
     mobileQuery.addEventListener?.("change", () => {
-      mobileVisibleLimit = 24;
+      mobileVisibleLimit = 12;
       scheduleFilter();
     });
     applyFilter();
