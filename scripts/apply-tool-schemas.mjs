@@ -340,7 +340,7 @@ const softwareTools = [
     name: "Wood Weight Calculator",
     subCategory: "Lumber and plywood weight calculator",
     operatingSystem: "Any",
-    description: "Free wood weight calculator for estimating the handling and delivery weight of boards, plywood, MDF, and panels from dimensions and density.",
+    description: "Calculate lumber, plywood, and MDF weight in pounds and kilograms from actual dimensions, quantity, and material density, with a worked 4 × 8 sheet example.",
     keywords: ["wood weight calculator", "plywood weight calculator", "lumber weight calculator", "MDF weight estimate"],
     features: ["Board and sheet dimensions", "Quantity input", "Material density input", "Pounds and kilograms", "Weight per piece"],
     audience: "Woodworkers, DIY builders, delivery planners, and cabinet makers",

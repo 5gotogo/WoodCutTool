@@ -3,6 +3,8 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 
+import { woodSpeciesEditorial } from "./wood-species-editorial.mjs";
+
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
 const version = "20260708-wood-species";
@@ -398,6 +400,7 @@ ${head({ title, description, canonical, jsonLd: itemListJsonLd(), contentPage: t
 
 function speciesJsonLd(wood) {
   const page = `${siteUrl}/wood/${wood.slug}/`;
+  const editorial = woodSpeciesEditorial[wood.slug];
   const graph = {
     "@context": "https://schema.org",
     "@graph": [
@@ -443,12 +446,18 @@ function speciesJsonLd(wood) {
       }
     ]
   };
+  if (editorial) {
+    graph["@graph"][0].headline = editorial.title;
+    graph["@graph"][0].description = editorial.description;
+    graph["@graph"][1].mainEntity = editorial.faqs.map(([name, text]) => ({ "@type": "Question", name, acceptedAnswer: { "@type": "Answer", text } }));
+  }
   return `<script type="application/ld+json">\n${JSON.stringify(graph, null, 2)}\n</script>`;
 }
 
 function speciesPage(wood) {
-  const title = `${wood.name} Wood: Density, Janka, Uses & Price`;
-  const description = `${wood.name} wood guide with density, weight, Janka hardness, price tier, applications, limitations, finishing notes, and FAQ for woodworking plans.`;
+  const editorial = woodSpeciesEditorial[wood.slug];
+  const title = editorial?.title || `${wood.name} Wood: Density, Janka, Uses & Price`;
+  const description = editorial?.description || `${wood.name} wood guide with density, weight, Janka hardness, price tier, applications, limitations, finishing notes, and FAQ for woodworking plans.`;
   const canonical = `${siteUrl}/wood/${wood.slug}/`;
   const related = relatedSpeciesBySlug.get(wood.slug);
   return `<!doctype html>
@@ -463,7 +472,7 @@ ${head({ title, description, canonical, jsonLd: speciesJsonLd(wood), ogType: "ar
       <p class="breadcrumb"><a href="/">Home</a> / <a href="/wood/">Wood Species Library</a> / ${escapeHtml(wood.name)}</p>
       <p class="eyebrow">${escapeHtml(wood.group)} reference</p>
       <h1>${escapeHtml(wood.name)} Wood</h1>
-      <p class="lead">Use this ${escapeHtml(wood.name)} wood profile to compare density, weight, Janka hardness, price tier, applications, limitations, outdoor fit, and finish behavior before building a cut list.</p>
+      <p class="lead">${editorial ? escapeHtml(editorial.lead) : `Use this ${escapeHtml(wood.name)} wood profile to compare density, weight, Janka hardness, price tier, applications, limitations, outdoor fit, and finish behavior before building a cut list.`}</p>
       <p class="article-byline">By <a href="/about/">WoodCutTool Editorial Team</a> · Reference values are planning ranges; confirm the actual board, moisture, grade, and supplier data before buying.</p>
       <div class="hero-actions"><a class="button" href="/wood-weight-calculator/">Calculate ${escapeHtml(wood.name)} weight</a><a class="button secondary" href="/wood/">Back to wood library</a></div>
     </section>
@@ -479,7 +488,7 @@ ${head({ title, description, canonical, jsonLd: speciesJsonLd(wood), ogType: "ar
 
     <section class="section wood-detail-layout">
       <article class="wood-detail-main">
-        <h2>${escapeHtml(wood.name)} properties and best uses</h2>
+        ${editorial ? `<h2>${escapeHtml(editorial.heading)}</h2>${editorial.paragraphs.map(text => `<p>${escapeHtml(text)}</p>`).join("")}<p>${editorial.links.map(([href, text]) => `<a href="${href}">${escapeHtml(text)}</a>`).join(" · ")}</p><p>References: ${editorial.sources.map(([text, href]) => `<a href="${href}">${escapeHtml(text)}</a>`).join("; ")}. Reviewed September 21, 2026.</p>\n        ` : ""}<h2>${escapeHtml(wood.name)} properties and best uses</h2>
         <p>${escapeHtml(wood.name)} is a ${escapeHtml(wood.group.toLowerCase())} that is commonly evaluated for ${escapeHtml(wood.applications.slice(0, 4).join(", "))}. For early project planning, use the density and Janka values as rough comparison points, then confirm the actual board grade, moisture content, and supplier data before buying.</p>
         <h3>Applications</h3>
         <ul class="wood-pill-list">${wood.applications.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
@@ -507,9 +516,9 @@ ${head({ title, description, canonical, jsonLd: speciesJsonLd(wood), ogType: "ar
     <section class="section">
       <div class="section-heading compact"><p class="eyebrow">FAQ</p><h2>${escapeHtml(wood.name)} wood questions.</h2></div>
       <div class="faq-list">
-        <details open><summary>Is ${escapeHtml(wood.name)} good for woodworking?</summary><p>Yes, ${escapeHtml(wood.name)} can work well for ${escapeHtml(wood.applications.slice(0, 3).join(", "))} when its weight, hardness, price, and finishing behavior fit the project.</p></details>
+        ${editorial ? editorial.faqs.map(([question, answer], i) => `<details${i === 0 ? " open" : ""}><summary>${escapeHtml(question)}</summary><p>${escapeHtml(answer)}</p></details>`).join("") : `<details open><summary>Is ${escapeHtml(wood.name)} good for woodworking?</summary><p>Yes, ${escapeHtml(wood.name)} can work well for ${escapeHtml(wood.applications.slice(0, 3).join(", "))} when its weight, hardness, price, and finishing behavior fit the project.</p></details>
         <details><summary>How hard is ${escapeHtml(wood.name)}?</summary><p>The planning value used here is about ${wood.janka.toLocaleString()} Janka lbf, which puts it in the ${escapeHtml(wood.hardness.toLowerCase())} range for surface dent resistance.</p></details>
-        <details><summary>What should I verify before buying ${escapeHtml(wood.name)}?</summary><p>Verify moisture content, board flatness, grade, defects, actual dimensions, supplier price, sustainability notes, and whether the stock is suitable for indoor or outdoor use.</p></details>
+        <details><summary>What should I verify before buying ${escapeHtml(wood.name)}?</summary><p>Verify moisture content, board flatness, grade, defects, actual dimensions, supplier price, sustainability notes, and whether the stock is suitable for indoor or outdoor use.</p></details>`}
       </div>
     </section>
 

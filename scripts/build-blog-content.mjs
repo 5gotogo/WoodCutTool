@@ -10852,7 +10852,7 @@ ${head({
           <div class="blog-directory-content">
           <label class="blog-search">
             <span>Search the library</span>
-            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search apps, QR, labels, invoices...">
+            <input type="search" data-blog-search-input autocomplete="off" placeholder="Search plywood, cabinets, stairs, apps...">
           </label>
           <nav class="blog-directory-nav" aria-label="Blog topic shortcuts">
             ${categoryLinks}

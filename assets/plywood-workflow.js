@@ -14,6 +14,8 @@ function init() {
   let savedError = '';
   let currentResult = null;
   let dirty = false;
+  let needsCalculation = false;
+  let resizeFrame = 0;
   try {
     const raw = localStorage.getItem(DRAFT_KEY);
     if (raw) { project = validateProject(JSON.parse(raw)); dirty = true; }
@@ -39,6 +41,8 @@ function init() {
   }
   function invalidate() {
     currentResult = null;
+    if (needsCalculation) return;
+    needsCalculation = true;
     result.innerHTML = '<h2>Layout needs calculation</h2><p>Inputs changed. Calculate again to preview and export the current list.</p>';
   }
   function renderForm() {
@@ -154,6 +158,7 @@ function init() {
     const anchor = document.createElement('a'); anchor.href = href; anchor.download = name; document.body.append(anchor); anchor.click(); anchor.remove(); setTimeout(() => URL.revokeObjectURL(href), 1000);
   }
   function renderResult(calculation) {
+    needsCalculation = false;
     const factor = project.unit === 'mm' ? 25.4 : 1;
     const size = v => pretty(v * factor);
     result.innerHTML = `<h2 tabindex="-1">${calculation.complete ? 'All listed panels placed' : 'Incomplete panel layout'}</h2>
@@ -213,10 +218,14 @@ function init() {
   // Avoid counting the default demonstration as a completed user calculation.
   renderForm(); invalidate(); showImport();
   window.addEventListener('resize', () => {
-    if (!currentResult) return;
-    result.querySelectorAll('[data-sheet-selector]').forEach(select => {
-      const g = currentResult.groups[Number(select.dataset.sheetSelector)];
-      window.WCTPlywoodCore.drawSheet(result.querySelector(`[data-group-canvas="${select.dataset.sheetSelector}"]`), [g.plan.sheets[Number(select.value)]], g.length, g.width);
+    if (!currentResult || resizeFrame) return;
+    resizeFrame = requestAnimationFrame(() => {
+      resizeFrame = 0;
+      if (!currentResult) return;
+      result.querySelectorAll('[data-sheet-selector]').forEach(select => {
+        const g = currentResult.groups[Number(select.dataset.sheetSelector)];
+        window.WCTPlywoodCore.drawSheet(result.querySelector(`[data-group-canvas="${select.dataset.sheetSelector}"]`), [g.plan.sheets[Number(select.value)]], g.length, g.width);
+      });
     });
   });
 }

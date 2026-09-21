@@ -10,6 +10,7 @@
     const featured = root.querySelector("[data-blog-featured]");
     const directoryPanel = root.querySelector("[data-blog-directory-panel]");
     const directoryResults = root.querySelector("[data-blog-search-results]");
+    const archiveLink = directoryResults?.querySelector('a[href="/blog/archive/"]')?.cloneNode(true);
     const cards = [...root.querySelectorAll("[data-blog-card]")];
     const categoryLinks = [...root.querySelectorAll("[data-blog-category-link]")];
     const sections = [...root.querySelectorAll("[data-blog-section]")];
@@ -50,14 +51,17 @@
           .then((response) => {
             if (!response.ok) throw new Error(`Blog search index failed: ${response.status}`);
             return response.json();
-          });
+          })
+          .then((items) => items.map((item) => ({ ...item, haystack: normalize(item.search) })))
+          .catch((error) => { searchIndexPromise = null; throw error; });
       }
       return searchIndexPromise;
     };
 
     const renderResults = (results) => {
       if (!directoryResults) return;
-      directoryResults.replaceChildren();
+      const fragment = document.createDocumentFragment();
+      if (!results.length && archiveLink) fragment.append(archiveLink.cloneNode(true));
       for (const result of results.slice(0, 80)) {
         const link = document.createElement("a");
         link.href = result.url;
@@ -68,14 +72,15 @@
         const category = document.createElement("em");
         category.textContent = result.category;
         link.append(number, title, category);
-        directoryResults.append(link);
+        fragment.append(link);
       }
       if (results.length > 80) {
         const archive = document.createElement("a");
         archive.href = "/blog/archive/";
         archive.innerHTML = `<span>+</span><strong>Browse all results in the complete archive</strong><em>${results.length - 80} more matches</em>`;
-        directoryResults.append(archive);
+        fragment.append(archive);
       }
+      directoryResults.replaceChildren(fragment);
     };
 
     function applyMobilePagination() {
@@ -94,7 +99,7 @@
 
     async function applyFilter() {
       filterFrame = 0;
-      const revision = ++filterRevision;
+      const revision = filterRevision;
       const terms = normalize(input.value).split(" ").filter(Boolean);
       const visibleByCategory = new Map();
 
@@ -105,25 +110,29 @@
       });
 
       let results = [];
+      let searchFailed = false;
       if (terms.length || activeCategory) {
+        if (status) status.textContent = "Searching…";
+        if (empty) empty.hidden = true;
         try {
           const index = await loadSearchIndex();
           if (revision !== filterRevision) return;
           results = index.filter((item) => {
             const categoryMatches = !activeCategory || item.category === activeCategory;
-            const haystack = normalize(item.search);
-            return categoryMatches && terms.every((term) => haystack.includes(term));
+            return categoryMatches && terms.every((term) => item.haystack.includes(term));
           });
           results.forEach((item) => visibleByCategory.set(item.category, (visibleByCategory.get(item.category) || 0) + 1));
           renderResults(results);
         } catch (error) {
+          if (revision !== filterRevision) return;
           console.warn(error);
-          if (status) status.textContent = "Search is temporarily unavailable.";
+          searchFailed = true;
+          renderResults([]);
         }
-      }
+      } else renderResults([]);
       categoryLinks.forEach((link) => {
         const category = link.dataset.blogCategoryLink || "";
-        const count = terms.length || activeCategory
+        const count = !searchFailed && (terms.length || activeCategory)
           ? visibleByCategory.get(category) || 0
           : Number(link.querySelector("[data-blog-category-count]")?.dataset.originalBlogCategoryCount || 0);
         const countElement = link.querySelector("[data-blog-category-count]");
@@ -132,12 +141,13 @@
       });
       sections.forEach((section) => setVisible(section, [...section.querySelectorAll("[data-blog-card]")].some((card) => !card.hidden)));
       if (featured) setVisible(featured, [...featured.querySelectorAll("[data-blog-card]")].some((card) => !card.hidden));
-      if (status) status.textContent = terms.length || activeCategory ? `${results.length} matches${results.length > 80 ? " · showing first 80" : ""}` : `${totalArticles} articles`;
-      if (empty) empty.hidden = !(terms.length || activeCategory) || results.length > 0;
+      if (status) status.textContent = searchFailed ? "Search is temporarily unavailable. Edit your search to retry, or browse the archive." : terms.length || activeCategory ? `${results.length} matches${results.length > 80 ? " · showing first 80" : ""}` : `${totalArticles} articles`;
+      if (empty) empty.hidden = searchFailed || !(terms.length || activeCategory) || results.length > 0;
       applyMobilePagination();
     }
 
     const scheduleFilter = () => {
+      filterRevision += 1;
       if (!filterFrame) filterFrame = requestAnimationFrame(applyFilter);
     };
 

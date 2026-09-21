@@ -3,22 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wood Weight Calculator — Estimate Board and Sheet Weight</title>
-  <meta name="description" content="Estimate wood and plywood weight from dimensions, quantity, and density in pounds per cubic foot.">
+  <title>Wood Weight Calculator: Lumber &amp; Plywood in lb/kg</title>
+  <meta name="description" content="Calculate lumber, plywood, and MDF weight in pounds and kilograms. Use actual dimensions and density, with a worked 4 × 8 sheet example.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://woodcuttool.com/wood-weight-calculator/">
   <!-- og:start -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="WoodCutTool">
-  <meta property="og:title" content="Wood Weight Calculator — Estimate Board and Sheet Weight">
-  <meta property="og:description" content="Estimate wood and plywood weight from dimensions, quantity, and density in pounds per cubic foot.">
+  <meta property="og:title" content="Wood Weight Calculator: Lumber &amp; Plywood in lb/kg">
+  <meta property="og:description" content="Calculate lumber, plywood, and MDF weight in pounds and kilograms. Use actual dimensions and density, with a worked 4 × 8 sheet example.">
   <meta property="og:url" content="https://woodcuttool.com/wood-weight-calculator/">
   <meta property="og:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Wood Weight Calculator — Estimate Board and Sheet Weight">
-  <meta name="twitter:description" content="Estimate wood and plywood weight from dimensions, quantity, and density in pounds per cubic foot.">
+  <meta name="twitter:title" content="Wood Weight Calculator: Lumber &amp; Plywood in lb/kg">
+  <meta name="twitter:description" content="Calculate lumber, plywood, and MDF weight in pounds and kilograms. Use actual dimensions and density, with a worked 4 × 8 sheet example.">
   <meta name="twitter:image" content="https://woodcuttool.com/assets/og/woodcuttool-og.png">
   <!-- og:end -->
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
@@ -45,7 +45,7 @@
       "applicationCategory": "UtilitiesApplication",
       "applicationSubCategory": "Lumber and plywood weight calculator",
       "operatingSystem": "Any",
-      "description": "Free wood weight calculator for estimating the handling and delivery weight of boards, plywood, MDF, and panels from dimensions and density.",
+      "description": "Calculate lumber, plywood, and MDF weight in pounds and kilograms from actual dimensions, quantity, and material density, with a worked 4 × 8 sheet example.",
       "keywords": "wood weight calculator, plywood weight calculator, lumber weight calculator, MDF weight estimate",
       "featureList": [
         "Board and sheet dimensions",
@@ -78,7 +78,7 @@
       "@type": "HowTo",
       "@id": "https://woodcuttool.com/wood-weight-calculator/#howto",
       "name": "How to use the Wood Weight Calculator",
-      "description": "Free wood weight calculator for estimating the handling and delivery weight of boards, plywood, MDF, and panels from dimensions and density.",
+      "description": "Calculate lumber, plywood, and MDF weight in pounds and kilograms from actual dimensions, quantity, and material density, with a worked 4 × 8 sheet example.",
       "step": [
         {
           "@type": "HowToStep",
@@ -177,7 +177,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <div data-site-header></div>
   <main id="main">
-    <section class="section"><p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Wood Weight Calculator</p><p class="eyebrow">Weight estimator</p><h1>Wood Weight Calculator</h1><p class="lead">Estimate the rough weight of boards, plywood, MDF, or panels for handling, delivery, and project planning.</p></section>
+    <section class="section"><p class="breadcrumb"><a href="/">Home</a> / <a href="/tools/">Tools</a> / Wood Weight Calculator</p><p class="eyebrow">Weight estimator</p><h1>Wood Weight Calculator</h1><p class="lead">Estimate board or sheet weight from actual dimensions and density. Enter inches and lb/ft³ to get pounds, kilograms, volume, and weight per piece. For plywood and MDF, use the panel maker’s density rather than the face-veneer species.</p></section>
     <section class="section tool-layout">
       <div class="tool-panel"><form id="wood-weight-form">
         <fieldset><legend>Part dimensions</legend><div class="input-grid four">
@@ -192,6 +192,17 @@
         <button class="button" type="submit">Calculate weight</button>
       </form></div>
       <aside class="result-panel" id="wood-weight-result" aria-live="polite"><h2>Weight result</h2><p class="placeholder">Run the calculator to see total weight, metric weight, volume, and weight per piece.</p></aside>
+    </section>
+    <section class="section" aria-labelledby="weight-formula">
+      <h2 id="weight-formula">How to calculate wood weight</h2>
+      <p>Weight (lb) = length (in) × width (in) × thickness (in) ÷ 1,728 × density (lb/ft³) × quantity. Divide pounds by 2.20462 for kilograms. Use finished dimensions; nominal lumber sizes can overstate volume.</p>
+      <h3>Worked example: a 4 × 8 foot sheet</h3>
+      <p>A 96 × 48 × 0.75 inch sheet has a volume of 2 ft³. At an assumed density of 36 lb/ft³, one sheet weighs 72 lb (about 32.66 kg); three sheets weigh 216 lb (about 97.98 kg). These are the calculator’s starting dimensions and an example density, not a universal plywood weight.</p>
+      <h3>Which density should I enter?</h3>
+      <p>Use a supplier value for the exact material and moisture condition, or divide a sample’s measured weight by its volume. Green lumber, dry boards, plywood cores, and MDF are different materials. A species name alone cannot tell you the exact weight of a veneered panel.</p>
+      <p>For solid lumber, review the <a href="/wood/maple/">hard and soft maple notes</a> or the <a href="/wood/red-oak/">red oak moisture and weight example</a>. For a sheet purchase, use the <a href="/plywood-cut-calculator/">plywood layout calculator</a> to check the sheet count separately.</p>
+      <h3>Does this check a shelf or vehicle load limit?</h3>
+      <p>No. It estimates material weight only. It does not include hardware, packaging, finishes, or a structural capacity calculation. Compare the complete load with the relevant manufacturer’s limits.</p>
     </section>
   </main>
   <div data-site-footer></div>

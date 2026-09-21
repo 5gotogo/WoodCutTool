@@ -115,13 +115,13 @@
     "hashVersion": 2
   },
   "/blog/": {
-    "lastmod": "2026-09-08",
-    "hash": "8fd93b7932de0adc55472e3298ec1fc1924bc57951c84f108a7f1d75b19eb9ed",
+    "lastmod": "2026-09-21",
+    "hash": "3e78278f5e9889683ea97edf5c1654fbd5f7455af279c1199f419a100f0547d8",
     "hashVersion": 2
   },
   "/privacy-policy/": {
-    "lastmod": "2026-07-23",
-    "hash": "9229f0c248060806382bcb59ee06fe4630e88be6664e96e981ef58bbdcc7d588",
+    "lastmod": "2026-09-21",
+    "hash": "e65b2027302396275dc0963abd47c2ab8948c06c72093b066dbd46dcc1fa9afe",
     "hashVersion": 2
   },
   "/terms-of-service/": {
@@ -5945,8 +5945,8 @@
     "hashVersion": 2
   },
   "/cabinet-door-calculator/": {
-    "lastmod": "2026-09-16",
-    "hash": "79d35c2918c1714e37635d82a69c361fc22e38f71ba2f1f0a26447498deb1315",
+    "lastmod": "2026-09-21",
+    "hash": "437b0c44fdbd5b7c24e02a309169ea34f7a7a61fb8520a4f29b727b392c78d2e",
     "hashVersion": 2
   },
   "/checklists/appliance-opening-release/": {
@@ -10610,8 +10610,8 @@
     "hashVersion": 2
   },
   "/wood-weight-calculator/": {
-    "lastmod": "2026-07-23",
-    "hash": "a0339c7f9a3732f0a589dcebdbaa2e47f2060f3660ee479eb6919136c7b78d60",
+    "lastmod": "2026-09-21",
+    "hash": "b9d9e26faa453c8131d4a2c91af3371c5bef2ad6bc24dfa12a9d77446febf2ed",
     "hashVersion": 2
   },
   "/wood/": {
@@ -11200,8 +11200,8 @@
     "hashVersion": 2
   },
   "/wood/maple/": {
-    "lastmod": "2026-09-08",
-    "hash": "c98e2390281ef06030f3ddde55b49f17da6ddbd5498b739a72967ef58b92ddf3",
+    "lastmod": "2026-09-21",
+    "hash": "5402a473a9d405cbc85624a640aa6d17f33da62255d48d13b4dab69989b9354a",
     "hashVersion": 2
   },
   "/wood/marupa/": {
@@ -11400,8 +11400,8 @@
     "hashVersion": 2
   },
   "/wood/red-oak/": {
-    "lastmod": "2026-09-08",
-    "hash": "f2a73a96e8568baec439f353a2c452b009d47f8d0b5dd3091827b23d5d2e7e18",
+    "lastmod": "2026-09-21",
+    "hash": "b44707b4582eec057402968e81003acde4382c8a7dd4fdb0dec10440b9ef4ae6",
     "hashVersion": 2
   },
   "/wood/redwood/": {

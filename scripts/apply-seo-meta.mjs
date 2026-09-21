@@ -69,6 +69,8 @@ const pages = {
     bc: [["Home", "/"], ["Tools", "/tools/"], ["Sheet Calculator", "/sheet-calculator/"]]
   },
   "wood-weight-calculator/index.html": {
+    title: "Wood Weight Calculator: Lumber & Plywood in lb/kg",
+    desc: "Calculate lumber, plywood, and MDF weight in pounds and kilograms. Use actual dimensions and density, with a worked 4 × 8 sheet example.",
     bc: [["Home", "/"], ["Tools", "/tools/"], ["Wood Weight Calculator", "/wood-weight-calculator/"]]
   },
   "conversion/index.html": {

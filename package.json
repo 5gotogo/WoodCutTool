@@ -44,6 +44,7 @@
     "test:components": "node scripts/test-cut-list-components.mjs",
     "test:projects": "node --check scripts/build-project-content.mjs && node --check assets/project-playbooks.js && node scripts/test-project-playbooks.mjs",
     "test:one-sheet-projects": "node --check scripts/build-one-sheet-projects.mjs && node --check assets/one-sheet-projects.js && node scripts/test-one-sheet-projects.mjs",
+    "test:interaction-browser": "node scripts/test-interaction-browser.mjs",
     "test:core-web-vitals": "node scripts/test-core-web-vitals.mjs",
     "test:sitemap-signals": "node scripts/test-sitemap-signals.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs && node scripts/build-conversion-routes.mjs",

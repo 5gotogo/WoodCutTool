@@ -174,7 +174,7 @@ function toolPage(tool) {
       </div>
       ${productBoundary}<div class="cta-row">${cta}</div>
     </section>
-    ${contextCards ? `<section class="section"><div class="section-heading compact"><p class="eyebrow">Project context</p><h2>Template, guide, and comparison links.</h2></div><div class="grid tools">${contextCards}</div></section>` : ""}
+    ${tool.workedExample ? `<section class="section"><h2>${escapeHtml(tool.workedExample.title)}</h2><p>${escapeHtml(tool.workedExample.text)}</p><a href="#main">Use these inputs in the calculator</a></section>\n    ` : ""}${contextCards ? `<section class="section"><div class="section-heading compact"><p class="eyebrow">Project context</p><h2>Template, guide, and comparison links.</h2></div><div class="grid tools">${contextCards}</div></section>` : ""}
     <section class="section" id="faq">
       <div class="section-heading compact"><p class="eyebrow">FAQ</p><h2>Common ${escapeHtml(tool.name)} questions</h2></div>
       <div class="grid tools">${tool.faqs.map(([question, answer]) => `<article class="card"><h3>${escapeHtml(question)}</h3><p>${escapeHtml(answer)}</p></article>`).join("")}</div>

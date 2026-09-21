@@ -128,6 +128,7 @@ const sharedNavigationRoutes = new Set(
   [...sharedInternalTargets].filter((route) => routeSet.has(route))
 );
 const linksByRoute = new Map();
+const rawLinksByRoute = new Map();
 const renderedInboundSources = new Map([...routeSet].map((route) => [route, new Set()]));
 const contextualInboundSources = new Map([...routeSet].map((route) => [route, new Set()]));
 
@@ -150,6 +151,9 @@ for (const route of routeSet) {
       .map((match) => normalizeRoute(match[1]))
       .filter((target) => target && routeSet.has(target))
   );
+  const rawTargets = new Set([...html.matchAll(/<a\b[^>]*\bhref=["']([^"']+)["']/gi)]
+    .map(match => normalizeRoute(match[1])).filter(target => target && routeSet.has(target)));
+  rawLinksByRoute.set(route, rawTargets);
   const targets = new Set([...sharedNavigationRoutes, ...contextualTargets]);
   linksByRoute.set(route, targets);
 
@@ -255,12 +259,28 @@ const contextualInboundValues = [...contextualInboundSources]
 const zeroContextualInbound = [...routeSet]
   .filter((route) => route !== "/" && !(contextualInboundSources.get(route)?.size));
 
+const rawDepth = new Map([["/", 0]]);
+const rawQueue = ["/"];
+for (let i = 0; i < rawQueue.length; i++) {
+  const route = rawQueue[i];
+  for (const target of rawLinksByRoute.get(route) || []) {
+    if (rawDepth.has(target)) continue;
+    rawDepth.set(target, rawDepth.get(route) + 1);
+    rawQueue.push(target);
+  }
+}
+const rawUnreachable = [...routeSet].filter(route => !rawDepth.has(route));
+if (rawUnreachable.length) errors.push(`Routes unreachable through raw HTML anchors: ${rawUnreachable.join(", ")}`);
+
 if (errors.length) {
   console.error(errors.map((error) => `- ${error}`).join("\n"));
   process.exit(1);
 }
 
 console.log(JSON.stringify({
+  rawHtmlReachableRoutes: rawDepth.size,
+  rawHtmlMaxClickDepth: Math.max(...rawDepth.values()),
+  rawHtmlUnreachableRoutes: rawUnreachable,
   sitemapRoutes: routeSet.size,
   reachableRoutes: depth.size,
   maxClickDepth: maxDepth,
