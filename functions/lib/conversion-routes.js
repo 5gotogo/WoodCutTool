@@ -1805,6 +1805,8 @@ export const conversionRoutes = new Set([
   "/legal/JobPhotoLog/support/",
   "/legal/MoodLoop/privacy/",
   "/legal/MoodLoop/support/",
+  "/legal/PoolPilot/privacy/",
+  "/legal/PoolPilot/support/",
   "/legal/PrivateMind/privacy/",
   "/legal/PrivateMind/support/",
   "/legal/ShelfPlanner/privacy/",

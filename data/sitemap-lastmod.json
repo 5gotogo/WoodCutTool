@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-09-17",
-    "hash": "5c2c88f80392e2214ea0c74e69bb96b6411d7e29007c74afec0678f3f3d3d76d",
+    "lastmod": "2026-09-24",
+    "hash": "b585d0ad0811e47bd30b2902101ae3ecc102319bbd4d6e5cf55221b9e68bbc91",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -9097,6 +9097,16 @@
   "/legal/MoodLoop/support/": {
     "lastmod": "2026-08-02",
     "hash": "adceebf24098bbc3621c1e84d9c83b9e00edbc233f180f507accf27b2fa5d793",
+    "hashVersion": 2
+  },
+  "/legal/PoolPilot/privacy/": {
+    "lastmod": "2026-09-24",
+    "hash": "367fb7dd7314fafb95805938fbd8472e1640fb1060bf015b61581bab4a455414",
+    "hashVersion": 2
+  },
+  "/legal/PoolPilot/support/": {
+    "lastmod": "2026-09-24",
+    "hash": "82e6131a836ed2463dbe87fe1f2d8664aa7ce36e584e822f20c1ca1a67793799",
     "hashVersion": 2
   },
   "/legal/PrivateMind/privacy/": {
