@@ -124,6 +124,10 @@ const legalLinksBySlug = {
     privacy: "/legal/DuctLab/privacy/",
     support: "/legal/DuctLab/support/"
   },
+  "floorquote-flooring-quotes": {
+    privacy: "/legal/FloorQuote/privacy/",
+    support: "/legal/FloorQuote/support/"
+  },
   "shelf-planner-cabinet-shelves": {
     privacy: "/legal/ShelfPlanner/privacy/",
     support: "/legal/ShelfPlanner/support/"
@@ -159,6 +163,7 @@ const featuredApps = [
   ["shelf-planner-cabinet-shelves", "Offline cabinet shelf planner for equal spacing, 32mm hole references, sag estimates, saved projects, and workshop PDFs."],
   ["woodcheck-carpentry-checklist", "Offline woodworking inspections with staged checklists, measurements, photo evidence, issue closure, and local PDF records."],
   ["tilefit-tile-layout-planner", "Offline tile layout planner with six patterns, material estimates, grouped cuts, installation order, and PDF export."],
+  ["floorquote-flooring-quotes", "Measure flooring rooms, calculate material and labor costs, capture customer approval, and export professional PDF quotes offline."],
   ["jobphotolog-work-reports", "Private, offline jobsite photo records with before-and-after evidence, punch lists, signatures, and professional PDF reports."],
   ["quiltfit-quilt-design-planner", "Quilt design planner for fabric layouts, block planning, and project organization."],
   ["snapreceipt-expenses-and-tax", "Private receipt scanner, expense tracker, and mileage log for reimbursements and tax records."],
@@ -171,8 +176,8 @@ const categorySections = [
   {
     id: "maker-calculator-apps",
     title: "Maker & Calculator Apps",
-    description: "Practical iPhone tools for people who plan, measure, cut, inspect, design, fabricate, or build physical projects. These apps focus on woodworking quality checks, cabinet planning, shelf spacing, plywood optimization, HVAC duct layout, tile estimation, trim angles, stair stringer calculation, and other maker workflows.",
-    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "woodcheck-carpentry-checklist", "tilefit-tile-layout-planner", "ductlab-hvac-duct-layout", "spring-miter-bevel", "shelf-planner-cabinet-shelves", "quiltfit-quilt-design-planner", "stringer-stair-layout"]
+    description: "Practical iPhone tools for people who plan, measure, cut, inspect, design, fabricate, or build physical projects. These apps focus on woodworking quality checks, cabinet planning, shelf spacing, plywood optimization, HVAC duct layout, tile estimation, flooring quotes, trim angles, stair stringer calculation, and other maker workflows.",
+    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "woodcheck-carpentry-checklist", "tilefit-tile-layout-planner", "floorquote-flooring-quotes", "ductlab-hvac-duct-layout", "spring-miter-bevel", "shelf-planner-cabinet-shelves", "quiltfit-quilt-design-planner", "stringer-stair-layout"]
   },
   {
     id: "small-business-apps",
@@ -217,6 +222,7 @@ const appTags = {
   "cutlist-plywood-optimizer": ["Plywood", "Cut lists", "Offline", "PDF export"],
   "casework-cabinet-cut-lists": ["Cabinets", "Cut lists", "Nesting", "PDF & CSV"],
   "tilefit-tile-layout-planner": ["Tile layouts", "Six patterns", "Offline", "PDF export"],
+  "floorquote-flooring-quotes": ["Flooring quotes", "Room measurements", "Offline", "PDF export"],
   "quiltfit-quilt-design-planner": ["Quilting", "Fabric plans", "Blocks", "Projects"],
   "snapreceipt-expenses-and-tax": ["Receipts", "Expenses", "Mileage", "Records"],
   "invoice-maker-estimate-pdf": ["Invoices", "Estimates", "PDF", "Clients"],
@@ -677,11 +683,12 @@ function relatedAppDetailsSection(app) {
   const category = categorySections.find((section) => section.slugs.includes(app.slug));
   if (!category) return "";
 
-  const related = category.slugs
-    .filter((slug) => slug !== app.slug)
+  const relatedSlugs = category.id === "maker-calculator-apps"
+    ? [...category.slugs.slice(category.slugs.indexOf(app.slug) + 1), ...category.slugs.slice(0, category.slugs.indexOf(app.slug))].slice(0, 5)
+    : category.slugs.filter((slug) => slug !== app.slug).slice(0, 4);
+  const related = relatedSlugs
     .map((slug) => appBySlug.get(slug))
-    .filter(Boolean)
-    .slice(0, category.id === "maker-calculator-apps" ? 5 : 4);
+    .filter(Boolean);
   if (!related.length) return "";
 
   const cards = related.map((candidate) => `<a href="${escapeHtml(detailHref(candidate))}">
@@ -856,8 +863,8 @@ ${head({
           <div><dt>Price</dt><dd>${escapeHtml(app.formattedPrice || "App Store")}</dd></div>
           <div><dt>Version</dt><dd>${escapeHtml(app.version || "Current")}</dd></div>
           <div><dt>Rating</dt><dd>${escapeHtml(app.trackContentRating || "App Store")}</dd></div>
-          <div><dt>Minimum iOS</dt><dd>${escapeHtml(app.minimumOsVersion || "See App Store")}</dd></div>
-          ${release ? `<div><dt>Updated</dt><dd>${escapeHtml(release.slice(0, 10))}</dd></div>` : ""}
+          <div><dt>Minimum iOS</dt><dd>${escapeHtml(app.minimumOsVersion || "See App Store")}</dd></div>${release ? `
+          <div><dt>Updated</dt><dd>${escapeHtml(release.slice(0, 10))}</dd></div>` : ""}
         </dl>
         <a class="button" href="${escapeHtml(app.url)}" rel="noopener noreferrer">Open App Store</a>${legalLinks ? `
         <p><a href="${escapeHtml(legalLinks.privacy)}">Privacy Policy</a><br><a href="${escapeHtml(legalLinks.support)}">Support</a></p>` : ""}

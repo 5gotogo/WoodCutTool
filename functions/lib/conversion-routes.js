@@ -132,6 +132,7 @@ export const conversionRoutes = new Set([
   "/apps/expensereportmaker-and-receipts/",
   "/apps/export-backup-all-contacts-pro/",
   "/apps/fast-rhythm-fasting-and-sleep/",
+  "/apps/floorquote-flooring-quotes/",
   "/apps/fridgetrack-fridge-inventory/",
   "/apps/glowfeel-stress-ease/",
   "/apps/image-compressor-and-zip/",
