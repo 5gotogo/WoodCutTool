@@ -1,5 +1,9 @@
 export const MATERIALS = ["Plywood", "MDF", "Solid wood", "Other sheet goods"];
 
+export function newId() {
+  return globalThis.crypto?.randomUUID?.() ?? `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
+}
+
 export function positive(value) {
   const number = Number(value);
   return Number.isFinite(number) && number > 0 && number <= 1200 ? number : null;
@@ -13,7 +17,7 @@ export function cleanOffcut(input) {
   const label = String(input.label ?? "").trim().slice(0, 80);
   if (!label || !material || !length || !width || !thickness) return null;
   return {
-    id: String(input.id ?? "").slice(0, 80) || crypto.randomUUID(),
+    id: String(input.id ?? "").slice(0, 80) || newId(),
     label,
     material,
     thickness,
@@ -54,4 +58,39 @@ export function matchOffcut(offcut, part) {
 export function rankedMatches(offcuts, part) {
   return offcuts.map((offcut) => matchOffcut(offcut, part)).filter(Boolean)
     .sort((a, b) => a.remainingArea - b.remainingArea || a.label.localeCompare(b.label));
+}
+
+export function cleanProjectPart(input) {
+  const part = cleanPart(input);
+  const label = String(input.label ?? "").trim().slice(0, 80);
+  if (!part || !label) return null;
+  return { ...part, id: String(input.id ?? "").slice(0, 80) || newId(), label };
+}
+
+// One part is assigned to at most one offcut, and each offcut to at most one part.
+// This is a stock allocation screen, not a multi-part cutting layout.
+export function planProject(offcuts, parts) {
+  const candidates = parts.map((part) => rankedMatches(offcuts, part));
+  const order = parts.map((_, index) => index).sort((a, b) =>
+    candidates[a].length - candidates[b].length || a - b);
+  const occupied = new Map();
+  function assign(index, seen) {
+    for (const match of candidates[index]) {
+      if (seen.has(match.id)) continue;
+      seen.add(match.id);
+      const previous = occupied.get(match.id);
+      if (!previous || assign(previous.index, seen)) {
+        occupied.set(match.id, { index, match });
+        return true;
+      }
+    }
+    return false;
+  }
+  for (const index of order) assign(index, new Set());
+  const byPart = new Map([...occupied.values()].map(({ index, match }) => [index, match]));
+  return parts.map((part, index) => ({
+    part,
+    match: byPart.get(index) ?? null,
+    candidateCount: candidates[index].length,
+  }));
 }

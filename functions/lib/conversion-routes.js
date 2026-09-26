@@ -1835,6 +1835,7 @@ export const conversionRoutes = new Set([
   "/offcut-planner/",
   "/offcut-planner/fit-check-method/",
   "/offcut-planner/measure-and-label/",
+  "/offcut-planner/project-offcut-allocation/",
   "/offcut-planner/reuse-or-buy/",
   "/one-sheet-projects/",
   "/picket-spacing-calculator/",

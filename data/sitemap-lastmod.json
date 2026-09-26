@@ -9225,23 +9225,28 @@
     "hashVersion": 2
   },
   "/offcut-planner/": {
-    "lastmod": "2026-09-26",
-    "hash": "502e458cc07b3a459ded6b37cab1ee004a24c7c41d3627948a7de3d80b82a41c",
+    "lastmod": "2026-09-27",
+    "hash": "5b6b55f2e66f5996cd6d442d522efff328d2f5a6e5f890a0b37d294e33bdc0e3",
     "hashVersion": 2
   },
   "/offcut-planner/fit-check-method/": {
-    "lastmod": "2026-09-26",
-    "hash": "e49b38790250ecf11b149da649a08939cc6910ba349b4fd783f44335056e5877",
+    "lastmod": "2026-09-27",
+    "hash": "dc72ea826f5b118c6838ad0b1b71b6d667b4b9dedd6e562b7151e91def03ee5b",
     "hashVersion": 2
   },
   "/offcut-planner/measure-and-label/": {
-    "lastmod": "2026-09-26",
-    "hash": "d7f07ebbf60ebc73a2c1313e52de29309b7000612322163b93936bee583a3bb4",
+    "lastmod": "2026-09-27",
+    "hash": "5b6cec48bdfd765ba43cd0ec27672dc9f52635df789bf1630a15f9c306855b9b",
+    "hashVersion": 2
+  },
+  "/offcut-planner/project-offcut-allocation/": {
+    "lastmod": "2026-09-27",
+    "hash": "09ba444687ebdd7193b10f95fa621fe2a622142abb2043b525bac5a40a9f13b0",
     "hashVersion": 2
   },
   "/offcut-planner/reuse-or-buy/": {
-    "lastmod": "2026-09-26",
-    "hash": "baa341ba02a87b73076c1a042f867c5c354742b61958d9fb7e137e8ebc1a2a60",
+    "lastmod": "2026-09-27",
+    "hash": "8362a38c3fc9a87b3e21ef18da94763c062c37d8dacef551e4cce7d4f1806b63",
     "hashVersion": 2
   },
   "/picket-spacing-calculator/": {
