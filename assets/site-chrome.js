@@ -66,6 +66,7 @@
       current.startsWith("/examples/") ||
       current.startsWith("/troubleshooting/") ||
       current.startsWith("/worksheets/") ||
+      current.startsWith("/offcut-planner/") ||
       current.startsWith("/learn/") ||
       (current.startsWith("/blog/") && /(cutlist|cut-list|plywood|cabinet|sheet-layout|kerf|wood-waste)/.test(current))
     );
@@ -171,6 +172,7 @@
     const resources = [
       { href: "/projects/", icon: "PJ", title: "Guided projects", description: "Follow 18 project playbooks with key decisions and browser-local progress." },
       { href: "/one-sheet-projects/", icon: "1S", title: "One-sheet projects", description: "Explore 43 modeled 4×8 layouts with templates and downloadable cut lists." },
+      { href: "/offcut-planner/", icon: "OF", title: "Offcut Planner", description: "Record reusable pieces and check one part against your inventory." },
       { href: "/learn/", icon: "LN", title: "Learn", description: "Workflows for planning cuts, stairs, tile, and materials." },
       { href: "/checklists/", icon: "CK", title: "Checklists", description: "Release checks for planning, cutting, assembly, installation, and handoff." },
       { href: "/worksheets/", icon: "WS", title: "Worksheets", description: "Printable records for measurements, materials, setups, installation, and closeout." },
@@ -325,7 +327,7 @@
     const projectsMenu = {
       href: "/projects/",
       label: "Projects",
-      aliases: ["/projects/", "/one-sheet-projects/", "/templates/", "/examples/", "/tools/components/", "/checklists/", "/worksheets/", "/troubleshooting/"],
+      aliases: ["/projects/", "/one-sheet-projects/", "/offcut-planner/", "/templates/", "/examples/", "/tools/components/", "/checklists/", "/worksheets/", "/troubleshooting/"],
       visual: "projects",
       featureTitle: "Build with 18 guided project playbooks",
       featureDescription: "Keep browser-local progress while you work through key measurements, decisions, parts, release checks, installation, and closeout.",
@@ -334,6 +336,7 @@
         { title: "Start", links: [
           { href: "/projects/", icon: "PJ", title: "Guided project playbooks", description: "Choose one of 18 end-to-end builds and continue your progress on this device.", exact: true },
           { href: "/one-sheet-projects/", icon: "1S", title: "One-sheet project gallery", description: "Filter 43 projects, preview each 4×8 layout, and download the cut list." },
+          { href: "/offcut-planner/", icon: "OF", title: "Offcut Planner", description: "Save measured leftovers locally and screen one part for reuse." },
           { href: "/tools/components/", icon: "CC", title: "Component calculators", description: "Build reusable cabinet parts and merge them into one project cut list." }
         ] },
         { title: "Record", links: [
@@ -430,6 +433,7 @@
       { href: "/research/", label: "Research & datasets" },
       { href: "/projects/", label: "Guided project playbooks" },
       { href: "/one-sheet-projects/", label: "One-sheet plywood projects" },
+      { href: "/offcut-planner/", label: "Offcut Planner" },
       { href: "/tools/components/", label: "Cut list component library" },
       { href: "/troubleshooting/", label: "Troubleshooting" },
       { href: "/checklists/", label: "Woodworking checklists" },

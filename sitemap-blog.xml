@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://woodcuttool.com/blog/</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority>
-    <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e1/b9/aa/e1b9aa50-5738-608b-57ba-d41b4a28b3fb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image>
-    <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/30/e7/4f30e7c0-0d24-7790-2bee-b022ee71e4c7/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image>
-    <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b7/05/8b/b7058b70-b762-7e92-f5c4-0b0f5195e71c/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/blog/</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://woodcuttool.com/blog/16-8-fasting-timer-weekly-report/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.74</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/16/f7/6016f786-6e1d-945a-4d8f-24baf374efeb/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/blog/2x10-vs-2x12-stair-stringer-throat-depth/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.74</priority></url>
