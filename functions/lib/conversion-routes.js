@@ -1167,6 +1167,7 @@ export const conversionRoutes = new Set([
   "/board-foot-calculator/",
   "/cabinet-cut-list-calculator/",
   "/cabinet-door-calculator/",
+  "/cabinet-studio/",
   "/checklists/",
   "/checklists/appliance-opening-release/",
   "/checklists/assembly-release/",

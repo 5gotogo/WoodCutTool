@@ -68,3 +68,12 @@
 
 /assets/component-builder.css
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/cabinet-studio.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/cabinet-studio-core.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/cabinet-studio.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

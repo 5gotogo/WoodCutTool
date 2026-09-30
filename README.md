@@ -64,3 +64,19 @@ The plywood calculator uses `assets/plywood-core.js`, generated from the existin
 calculation functions in `assets/app.js` by `scripts/build-plywood-core.mjs`.
 `npm run apply:nav-cta` refreshes it automatically. Edit the source, not the
 compiled copy. See [P1 validation and performance](docs/p1-implementation-2026-09-06.md).
+
+## Cabinet Studio
+
+`/cabinet-studio/` is a browser-local parametric open-cabinet designer with a projected 3D model, exploded and staged assembly views, a linked panel inspector, six-trial guillotine stock layouts, clearance checks, saved comparisons, shareable settings, and CSV/SVG/JSON exports. It uses millimeters throughout and input prices in USD. The brief parser recognizes documented furniture intents and dimensions locally; it does not call an AI model.
+
+Edit `scripts/build-cabinet-studio.mjs` for markup, `assets/cabinet-studio-core.js` for pure geometry/packing, and `assets/cabinet-studio.js` / `.css` for interaction and visuals. No library or backend is needed.
+
+```sh
+npm run generate:cabinet-studio
+npm run generate:tools
+npm run apply:nav-cta
+npm run sitemap
+npm run check
+```
+
+`npm run test:cabinet-studio` verifies geometry, stock containment, non-overlap, kerf separation, grain rules, deterministic layouts, parsing, and exports. Layouts are candidates, not globally optimal or shop-release guarantees. Cabinet geometry assumes butt joints, an optional overlay back, 2 mm shelf side clearance, and a 12 mm front setback. Back-panel grain follows its longer axis. Verify actual loads, fixings, edging, joinery, and cut sequence before building.

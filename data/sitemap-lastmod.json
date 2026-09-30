@@ -5,8 +5,8 @@
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-09-12",
-    "hash": "0cee44a382ef060fca1ce506f5ba9062caff4dd85a033101487c975709fdf190",
+    "lastmod": "2026-09-30",
+    "hash": "1ae67f12d15b54c062ff3d518652faa23ea953d03c82fdfe94d782d4a8a90604",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -5954,6 +5954,11 @@
     "hash": "437b0c44fdbd5b7c24e02a309169ea34f7a7a61fb8520a4f29b727b392c78d2e",
     "hashVersion": 2
   },
+  "/cabinet-studio/": {
+    "lastmod": "2026-09-30",
+    "hash": "d8902bac19d4863e171a33d80b81d85cc0b035f07c0d0941d28754da7e2adb95",
+    "hashVersion": 2
+  },
   "/checklists/appliance-opening-release/": {
     "lastmod": "2026-09-19",
     "hash": "217029ccdca92669f1fe6095da2a535d0fa2eba3d15c393cb3d5b3995a7f334d",
@@ -10140,8 +10145,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-09-12",
-    "hash": "9a6390461512abb8c262d1ab1225ee2c658e40cb0467d70ebbbca5c73bcbe625",
+    "lastmod": "2026-09-30",
+    "hash": "a2465975a23624d951a41e7244694a766e90e3f4ac2c8450462c7639f8663dff",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

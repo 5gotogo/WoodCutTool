@@ -498,6 +498,7 @@ function pageGraph(tool) {
 function toolsHubGraph() {
   const browserTools = softwareTools.filter((tool) => !tool.path.startsWith("/apps/"));
   const referenceTools = [
+    { path: "/cabinet-studio/", name: "Cabinet Studio" },
     {
       path: "/wood/",
       name: "Wood Species Library"

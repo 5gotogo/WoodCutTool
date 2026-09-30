@@ -67,6 +67,7 @@
       current.startsWith("/troubleshooting/") ||
       current.startsWith("/worksheets/") ||
       current.startsWith("/offcut-planner/") ||
+      current.startsWith("/cabinet-studio/") ||
       current.startsWith("/learn/") ||
       (current.startsWith("/blog/") && /(cutlist|cut-list|plywood|cabinet|sheet-layout|kerf|wood-waste)/.test(current))
     );
@@ -172,6 +173,7 @@
     const resources = [
       { href: "/projects/", icon: "PJ", title: "Guided projects", description: "Follow 18 project playbooks with key decisions and browser-local progress." },
       { href: "/one-sheet-projects/", icon: "1S", title: "One-sheet projects", description: "Explore 43 modeled 4×8 layouts with templates and downloadable cut lists." },
+      { href: "/cabinet-studio/", icon: "CS", title: "Cabinet Studio", description: "Shape cabinets in 3D, explore assembly, and export checked panel layouts." },
       { href: "/offcut-planner/", icon: "OF", title: "Offcut Planner", description: "Record reusable pieces and check one part against your inventory." },
       { href: "/learn/", icon: "LN", title: "Learn", description: "Workflows for planning cuts, stairs, tile, and materials." },
       { href: "/checklists/", icon: "CK", title: "Checklists", description: "Release checks for planning, cutting, assembly, installation, and handoff." },
@@ -337,6 +339,7 @@
           { href: "/projects/", icon: "PJ", title: "Guided project playbooks", description: "Choose one of 18 end-to-end builds and continue your progress on this device.", exact: true },
           { href: "/one-sheet-projects/", icon: "1S", title: "One-sheet project gallery", description: "Filter 43 projects, preview each 4×8 layout, and download the cut list." },
           { href: "/offcut-planner/", icon: "OF", title: "Offcut Planner", description: "Save measured leftovers locally and screen one part for reuse." },
+          { href: "/cabinet-studio/", icon: "CS", title: "Cabinet Studio", description: "Live 3D models, exploded assembly, design checks, and grain-aware layouts." },
           { href: "/tools/components/", icon: "CC", title: "Component calculators", description: "Build reusable cabinet parts and merge them into one project cut list." }
         ] },
         { title: "Record", links: [
@@ -380,10 +383,10 @@
       ]
     };
 
-    const toolsMenu = `<div class="mega-menu" role="group" aria-label="Tools menu">${megaFeature({ href: "/tools/", title: "Choose a calculator by project", description: "Browse focused woodworking and construction tools without mixing unrelated app categories into the planning hub.", cta: "Browse tools ->", visual: "tools" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Woodworking Tools</p>${menuLink({ href: "/tools/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut and layout, cabinets, furniture, wood, and materials." })}${tools.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Construction Tools</p>${menuLink({ href: "/tools/construction/", icon: "CN", title: "Construction hub", description: "Stairs, tile, deck, fence, wall, roof, and concrete." })}${tools.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Tool directory</p>${menuLink({ href: "/tools/", icon: "TL", title: "All tools", description: "Open the full calculator and planning hub.", exact: true })}${menuLink({ href: "/tools/components/", icon: "CC", title: "Component calculators", description: "Merge reusable cabinet component cut lists into one browser-local project." })}${menuLink({ href: "/conversion/", icon: "CV", title: "Conversion calculator", description: "Convert fractions, inches, millimeters, angles, rise, and run." })}${menuLink({ href: "/material-list-generator/", icon: "MT", title: "Material list", description: "Turn project inputs into a material checklist." })}${menuLink({ href: "/drill-bit-finder/", icon: "DR", title: "Drill bit finder", description: "Match screw diameter to pilot and clearance holes." })}</div></div></div>`;
+    const toolsMenu = `<div class="mega-menu" role="group" aria-label="Tools menu">${megaFeature({ href: "/tools/", title: "Choose a calculator by project", description: "Browse focused woodworking and construction tools without mixing unrelated app categories into the planning hub.", cta: "Browse tools ->", visual: "tools" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Woodworking Tools</p>${menuLink({ href: "/tools/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut and layout, cabinets, furniture, wood, and materials." })}${tools.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Construction Tools</p>${menuLink({ href: "/tools/construction/", icon: "CN", title: "Construction hub", description: "Stairs, tile, deck, fence, wall, roof, and concrete." })}${tools.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Tool directory</p>${menuLink({ href: "/tools/", icon: "TL", title: "All tools", description: "Open the full calculator and planning hub.", exact: true })}${menuLink({ href: "/cabinet-studio/", icon: "CS", title: "Cabinet Studio", description: "Design a cabinet in 3D and plan its panels, sheets, and cost." })}${menuLink({ href: "/tools/components/", icon: "CC", title: "Component calculators", description: "Merge reusable cabinet component cut lists into one browser-local project." })}${menuLink({ href: "/conversion/", icon: "CV", title: "Conversion calculator", description: "Convert fractions, inches, millimeters, angles, rise, and run." })}${menuLink({ href: "/material-list-generator/", icon: "MT", title: "Material list", description: "Turn project inputs into a material checklist." })}${menuLink({ href: "/drill-bit-finder/", icon: "DR", title: "Drill bit finder", description: "Match screw diameter to pilot and clearance holes." })}</div></div></div>`;
     const appsMenu = `<div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for saved workflows", description: "Use the website for quick checks, then move repeatable projects into focused iPhone apps when you need saved records.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Planning apps</p>${apps.slice(0, 4).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Document apps</p>${apps.slice(4, 7).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">More apps</p>${apps.slice(7, 10).map(menuLink).join("")}${menuLink({ href: "/apps/compare/", icon: "VS", title: "App comparisons", description: "Compare app workflows against common alternatives." })}</div></div></div>`;
 
-    return `<div class="nav-links nav-links-mega" id="site-navigation">${navMenuItem({ href: "/tools/", label: "Tools", aliases: tools.map((item) => item.href), menu: toolsMenu })}${resourceNavMenu(projectsMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(resourcesMenu)}${navMenuItem({ href: "/apps/", label: "Apps", menu: appsMenu })}</div>`;
+    return `<div class="nav-links nav-links-mega" id="site-navigation">${navMenuItem({ href: "/tools/", label: "Tools", aliases: [...tools.map((item) => item.href), "/cabinet-studio/"], menu: toolsMenu })}${resourceNavMenu(projectsMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(resourcesMenu)}${navMenuItem({ href: "/apps/", label: "Apps", menu: appsMenu })}</div>`;
   }
 
   function header() {
@@ -434,6 +437,7 @@
       { href: "/projects/", label: "Guided project playbooks" },
       { href: "/one-sheet-projects/", label: "One-sheet plywood projects" },
       { href: "/offcut-planner/", label: "Offcut Planner" },
+      { href: "/cabinet-studio/", label: "Cabinet Studio" },
       { href: "/tools/components/", label: "Cut list component library" },
       { href: "/troubleshooting/", label: "Troubleshooting" },
       { href: "/checklists/", label: "Woodworking checklists" },

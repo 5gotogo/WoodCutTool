@@ -157,6 +157,10 @@ function sitemapMeta(route) {
     return { changefreq: "weekly", priority: "0.96" };
   }
 
+  if (route === "/cabinet-studio/") {
+    return { changefreq: "monthly", priority: "0.94" };
+  }
+
   if (route === "/tools/components/") {
     return { changefreq: "weekly", priority: "0.94" };
   }
@@ -419,7 +423,7 @@ const entries = urls.map((route) => {
 });
 
 const explicitToolRoutes = new Set([
-  "/tools/", "/tools/woodworking/", "/tools/construction/",
+  "/tools/", "/tools/woodworking/", "/tools/construction/", "/cabinet-studio/",
   "/plywood-cut-calculator/", "/cut-list-calculator/", "/wood-waste-calculator/", "/board-foot-calculator/", "/kerf-calculator/",
   "/stair-stringer-calculator/", "/tile-calculator/", "/stringer/", "/cutlist/", "/quiltfit/", "/lumber-calculator/", "/sheet-calculator/",
   "/material-cost-calculator/", "/cost-estimator/", "/wood-weight-calculator/", "/fraction-calculator/", "/inch-mm-converter/", "/conversion/",
