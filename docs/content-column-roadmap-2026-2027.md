@@ -1,6 +1,6 @@
 # WoodCutTool content-column roadmap, 2026–2027
 
-Updated: 2026-09-26
+Updated: 2026-10-04
 
 ## Objective
 
@@ -22,6 +22,7 @@ Build a durable woodworking knowledge system in which every search-shaped questi
 | Examples | 75 | Finished cut-list inputs with downloadable CSV evidence |
 | Project Playbooks | 18 playbooks + 1 indexed hub | End-to-end guided execution with browser-local progress and visible consequences for key decisions |
 | One-Sheet Projects | 43 verified layouts + 1 indexed hub | Visual project discovery by category, part count, and modeled 4×8 sheet use, with local shortlist and downloadable CSV evidence |
+| Edge Banding Planner | 1 interactive hub + 3 field guides | Finished-to-saw dimensions, per-edge profiles, pre-milling, tape-width checks, roll allowances, CSV/JSON and sheet-layout handoff |
 | Offcut Planner | 1 interactive hub + 3 field guides | Browser-local inventory of measured usable rectangles, conservative single-part fit checks, and JSON/CSV exports |
 | Research | 9 | 8 source-linked report pages plus the Research hub |
 | Tools | 25 | Calculators and action pages |
@@ -133,3 +134,5 @@ For content maintenance, prioritize pages with one of these signals:
 Generate a comparable Learn intent inventory before another guide batch. Review the 163 guide titles, introductions, assigned topic hubs, primary actions, and inbound sources; use real search-performance evidence before merging or redirecting close keyword variants. Preserve pages with distinct project measurements, material decisions, diagnostic boundaries, or downstream actions. After consolidation, expand the Research moat only where a reproducible method and downloadable raw rows exist. Do not publish an “actual versus planned” benchmark until the repository has consented, consistently defined, de-identified closeout records; modeled layouts must remain labeled as simulations.
 
 Detailed implementation sequencing, inventory fields, refresh scoring, seven-report Research backlog, conversion event taxonomy, selective-URL score, and exit gates are defined in [SEO priority execution plan, 2026–2027](./seo-priority-execution-plan-2026-2027.md).
+
+The 2026-10-04 milestone adds the Edge Banding Planner at `/edge-banding/`, closing the step between approved finished dimensions and nesting saw blanks. It supports two tape profiles, four named edges per rectangular part, reversible finished/blank input basis, measured panel thickness, grain locks, pre-milling, face/end trimming allowances and per-profile supplies. JSON backups and CSV exports stay browser-local. Sheet handoff retains saw blanks and grain/material groups; the receiving calculator reviews before replacing a draft. Three field guides cover deduction geometry, tape purchase allowances and shop release. Roll counts are explicitly minimums by total length, not strip packing; a physical finished test piece remains the release gate.

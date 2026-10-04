@@ -1,12 +1,12 @@
 {
   "/": {
-    "lastmod": "2026-09-26",
-    "hash": "933be169743feeeaf3a1ee8519d0e9faea0830eccb44cff6056fe9be6522e43b",
+    "lastmod": "2026-10-04",
+    "hash": "e4532e33a639abf7db4d7ee509842bd175b8a55275eaaab15af9080dbafc5648",
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-09-30",
-    "hash": "1ae67f12d15b54c062ff3d518652faa23ea953d03c82fdfe94d782d4a8a90604",
+    "lastmod": "2026-10-04",
+    "hash": "875cca3afb1484e0afc89d98c43dfda2c1b86081d6f88b453d655b051a43879e",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -5955,8 +5955,8 @@
     "hashVersion": 2
   },
   "/cabinet-studio/": {
-    "lastmod": "2026-09-30",
-    "hash": "d8902bac19d4863e171a33d80b81d85cc0b035f07c0d0941d28754da7e2adb95",
+    "lastmod": "2026-10-04",
+    "hash": "113ba61d5d0ce3d13d36bbe8d805bf7e4643684aa6817dcd0b59b57f39db716d",
     "hashVersion": 2
   },
   "/checklists/appliance-opening-release/": {
@@ -6732,6 +6732,26 @@
   "/drill-bit-finder/": {
     "lastmod": "2026-07-23",
     "hash": "15be988eb5527384196ee90a538f7054fab49cdd15742a595f613c6d63485cab",
+    "hashVersion": 2
+  },
+  "/edge-banding/": {
+    "lastmod": "2026-10-04",
+    "hash": "37095038f470e31e45bcd2672f24b7a0bc7c1c620759cbd2ff0b8a8e4c6b091d",
+    "hashVersion": 2
+  },
+  "/edge-banding/finished-size-to-cut-size/": {
+    "lastmod": "2026-10-04",
+    "hash": "b12d34bcae93969f50aff9258d65569a0584c2714d14120a6d23a7858f6befa7",
+    "hashVersion": 2
+  },
+  "/edge-banding/shop-release-checklist/": {
+    "lastmod": "2026-10-04",
+    "hash": "8878c1015faf232ebae385e0a3efb03486b520c3e96e0819b756aa2dd39a3d79",
+    "hashVersion": 2
+  },
+  "/edge-banding/tape-width-and-roll-allowance/": {
+    "lastmod": "2026-10-04",
+    "hash": "1f54443e3f57435ee0856af7ef8e7e9b30cb59d43e2465b0c54c39b36bc46a2d",
     "hashVersion": 2
   },
   "/estimating/": {
@@ -10145,8 +10165,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-09-30",
-    "hash": "a2465975a23624d951a41e7244694a766e90e3f4ac2c8450462c7639f8663dff",
+    "lastmod": "2026-10-04",
+    "hash": "00b156b2ed3dd373838af90c9861d59ed5dc5c2354cd838729a0603925d2376f",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {
