@@ -3,6 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags } from "./seo-meta.mjs";
 import { compareData } from "./app-compare-data.mjs";
+import { appStoreThumbnail, appStoreScreenshotSources } from "./app-store-images.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -292,7 +293,7 @@ function appCard(app) {
   return `<article class="store-app-card" data-genre="${escapeHtml(app.genre)}">
           <a class="store-app-card-link" href="${escapeHtml(details)}" aria-label="View ${escapeHtml(app.name)} details">
             <div class="store-app-top">
-              <img class="store-app-artwork" src="${escapeHtml(app.artworkUrl512)}" alt="${escapeHtml(app.name)} app icon" loading="lazy">
+              <img class="store-app-artwork" src="${escapeHtml(appStoreThumbnail(app.artworkUrl512, 160))}" width="80" height="80" alt="${escapeHtml(app.name)} app icon" loading="lazy" decoding="async">
               <span class="store-app-genre">${escapeHtml(app.genre)}</span>
             </div>
             <h3>${escapeHtml(app.name)}</h3>
@@ -526,10 +527,12 @@ function detailVisual(app, index) {
     return `<div class="app-screenshot-strip" data-mobile-rail aria-label="${escapeHtml(app.name)} screenshots">${screenshots.map((url, screenshotIndex) => {
       const size = screenshotSize(url);
       const dimensions = size ? ` width="${size.width}" height="${size.height}"` : "";
+      const sources = appStoreScreenshotSources(url, size);
+      const responsive = sources ? ` srcset="${escapeHtml(sources.srcset)}" sizes="(max-width: 380px) 260px, (max-width: 680px) 274px, (max-width: 979px) calc((100vw - 84px) / 3), 280px"` : "";
       const priority = screenshotIndex === 0
         ? ' loading="eager" fetchpriority="high"'
         : ' loading="lazy"';
-      return `<img src="${escapeHtml(url)}"${dimensions} alt="${escapeHtml(app.name)} screenshot"${priority} decoding="async">`;
+      return `<img src="${escapeHtml(sources?.src || url)}"${responsive}${dimensions} alt="${escapeHtml(app.name)} screenshot"${priority} decoding="async">`;
     }).join("")}</div>`;
   }
 
@@ -836,7 +839,7 @@ ${head({
       <div class="app-detail-copy">
         <p class="breadcrumb"><a href="/">Home</a> / <a href="/apps/">Apps</a> / ${escapeHtml(app.name)}</p>
         <div class="app-title-row">
-          <img class="app-detail-icon" src="${escapeHtml(app.artworkUrl512)}" alt="${escapeHtml(app.name)} app icon">
+          <img class="app-detail-icon" src="${escapeHtml(appStoreThumbnail(app.artworkUrl512, 160))}" width="76" height="76" alt="${escapeHtml(app.name)} app icon" decoding="async">
           <div>
             <p class="eyebrow">${escapeHtml(app.genre)}</p>
             <h1>${escapeHtml(app.name)}</h1>

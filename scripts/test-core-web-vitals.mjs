@@ -2,14 +2,22 @@ import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { appHtmlFiles, compileAppStyles } from "./build-app-styles.mjs";
 import { blogArticleHtmlFiles, compileBlogArticleStyles, compileBlogIndexStyles, compileEditorialStyles, editorialHtmlFiles } from "./build-editorial-styles.mjs";
-import { compileContentStyles, compileInteractiveStyles, compileWoodStyles, compilePlanningStyles, compileTemplateStyles, compileConstructionStyles } from "./build-site-styles.mjs";
+import { compileContentStyles, compileInteractiveStyles, compileWoodStyles, compilePlanningStyles, compileTemplateStyles, compileConstructionStyles, compilePlywoodStyles, compileChecklistStyles, compileLegalStyles } from "./build-site-styles.mjs";
 import { performanceProfile } from "./site-performance-profile.mjs";
+import assert from "node:assert/strict";
+import { appStoreThumbnail, appStoreScreenshotSources } from "./app-store-images.mjs";
 
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
 import { homeRuntimeSource } from "./build-home-runtime.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const failures = [];
+const sample = "https://is1-ssl.mzstatic.com/image/thumb/example/1.png/1290x2796bb.jpg";
+assert.equal(appStoreThumbnail(sample, 360, 780), sample.replace("1290x2796", "360x780"));
+assert.equal(appStoreThumbnail("/assets/images/screenshot.png", 360), "/assets/images/screenshot.png");
+assert.equal(appStoreThumbnail("https://example.com/1290x2796bb.jpg", 360), "https://example.com/1290x2796bb.jpg");
+assert.equal(appStoreScreenshotSources("/assets/images/screenshot.png", { width: 1290, height: 2796 }), null);
+assert.equal(appStoreScreenshotSources(sample, { width: 1290, height: 2796 }).srcset.split(", ").length, 5);
 let articlePages = 0;
 let heroImages = 0;
 let inlineImages = 0;
@@ -144,10 +152,20 @@ if (Buffer.byteLength(blogArticleStyles) > 60_000) failures.push("Blog article s
 for (const file of appHtmlFiles()) {
   const html = readFileSync(join(root, file), "utf8");
   const profile = performanceProfile(file, html);
+  for (const match of html.matchAll(/<img\b[^>]*>/g)) {
+    const tag = match[0];
+    if (!tag.includes('alt=') || !tag.includes('screenshot') || !tag.includes('src="https://is')) continue;
+    if (tag.includes("mzstatic.com/image/thumb/") && /\/\d{4}x\d+bb\./.test(tag.split('srcset=')[0])) {
+      failures.push(`${file}: App screenshot still requests a full-size source image`);
+    }
+    if (tag.includes("mzstatic.com/image/thumb/") && (!tag.includes('srcset="') || !tag.includes('sizes="') || !tag.includes('width="') || !tag.includes('height="'))) {
+      failures.push(`${file}: App screenshot is missing responsive sizing or intrinsic dimensions`);
+    }
+  }
   if (!html.includes('<link rel="stylesheet" href="/assets/apps.css">') || html.includes('href="/assets/styles.css"')) {
     failures.push(`${file}: must load the scoped App stylesheet`);
   }
-  if (profile.runtimes.includes("/assets/content-page.js") && (!html.includes('<script defer src="/assets/content-page.js"></script>') || html.includes('src="/assets/app.js"'))) {
+  if (profile.runtimes.includes("/assets/content-page.js") && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) {
     failures.push(`${file}: static App content must use the on-demand language runtime`);
   }
 }
@@ -159,6 +177,9 @@ for (const [name, output, compiled, limit] of [
   ["planning", join(root, "assets/planning.css"), compilePlanningStyles(), 45_000],
   ["templates", join(root, "assets/templates.css"), compileTemplateStyles(), 50_000],
   ["construction", join(root, "assets/construction.css"), compileConstructionStyles(), 50_000],
+  ["plywood", join(root, "assets/plywood.css"), compilePlywoodStyles(), 40_000],
+  ["checklists", join(root, "assets/checklists.css"), compileChecklistStyles(), 40_000],
+  ["legal", join(root, "assets/legal.css"), compileLegalStyles(), 40_000],
 ]) {
   const css = readFileSync(output, "utf8");
   if (css !== compiled.css) failures.push(`${name} stylesheet is stale; run npm run apply:nav-cta`);
@@ -166,10 +187,13 @@ for (const [name, output, compiled, limit] of [
   for (const file of compiled.pages) {
     const html = readFileSync(join(root, file), "utf8");
     const profile = performanceProfile(file, html);
-    if (!html.includes(`<link rel="stylesheet" href="/assets/${name}.css">`) || html.includes('href="/assets/styles.css"')) {
+    const hasStyles = name === "wood"
+      ? html.includes(`<style data-wood-styles>${css}</style>`) && !html.includes('href="/assets/wood.css"')
+      : html.includes(`<link rel="stylesheet" href="/assets/${name}.css">`);
+    if (!hasStyles || html.includes('href="/assets/styles.css"')) {
       failures.push(`${file}: must load the scoped ${name} stylesheet`);
     }
-    if ((["content", "wood", "planning", "templates", "construction"].includes(name)) && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) {
+    if ((["content", "wood", "planning", "templates", "construction", "plywood", "checklists", "legal"].includes(name)) && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) {
       failures.push(`${file}: static content must not eagerly load the full app runtime`);
     }
     if (name === "interactive" && profile.runtimes.includes("/assets/app.js") && !html.includes('src="/assets/app.js"')) failures.push(`${file}: interactive page is missing the full app runtime`);
@@ -187,6 +211,9 @@ const allProfiledPages = [
   ...compilePlanningStyles().pages,
   ...compileTemplateStyles().pages,
   ...compileConstructionStyles().pages,
+  ...compilePlywoodStyles().pages,
+  ...compileChecklistStyles().pages,
+  ...compileLegalStyles().pages,
 ];
 for (const file of new Set(allProfiledPages)) {
   if (readFileSync(join(root, file), "utf8").includes('href="/assets/styles.css"')) failures.push(`${file}: serves the authored full stylesheet`);
@@ -208,7 +235,7 @@ for (const file of woodworkingImages) {
 }
 
 const headers = readFileSync(join(root, "_headers"), "utf8");
-for (const asset of ["site-chrome.js", "content-page.js", "home.js", "conversion.js", "blog-article.css", "wood.css", "planning.css", "templates.css", "construction.css", "construction-calculators.js", "component-builder.js", "component-builder.css"]) {
+for (const asset of ["site-chrome.js", "content-page.js", "home.js", "conversion.js", "blog-article.css", "wood.css", "planning.css", "templates.css", "construction.css", "construction-calculators.js", "component-builder.js", "component-builder.css", "plywood.css", "checklists.css", "legal.css", "plywood-core.js", "plywood-workflow.js", "cut-handoff-model.js", "plywood-workflow.css"]) {
   const block = headers.match(new RegExp(`/assets/${asset.replace(".", "\\.")}\\n([\\s\\S]*?)(?=\\n/|$)`))?.[1] || "";
   if (!/Cache-Control: public, max-age=[1-9]\d*/.test(block)) failures.push(`${asset} is missing a positive browser cache lifetime`);
 }

@@ -1,0 +1,4166 @@
+{
+  "date": "2026-10-08",
+  "scope": "Gzip preview; en language, 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+  "origin": "http://127.0.0.1:4188",
+  "routes": [
+    "/wood/beech/",
+    "/wood/east-indian-rosewood/",
+    "/wood/elm/",
+    "/plywood-cut-calculator/",
+    "/apps/ductlab-hvac-duct-layout/",
+    "/blog/plywood-thickness-chart-guide/",
+    "/blog/upper-cabinet-depth-planning/",
+    "/checklists/plywood-order-release/",
+    "/legal/Casework/privacy/"
+  ],
+  "runs": 3,
+  "summary": [
+    {
+      "route": "/wood/beech/",
+      "before": {
+        "lcpMs": 476,
+        "transferBytes": 32334,
+        "cssJsBytes": 26693,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      },
+      "after": {
+        "lcpMs": 264,
+        "transferBytes": 32025,
+        "cssJsBytes": 18414,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      }
+    },
+    {
+      "route": "/wood/east-indian-rosewood/",
+      "before": {
+        "lcpMs": 488,
+        "transferBytes": 32448,
+        "cssJsBytes": 26693,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      },
+      "after": {
+        "lcpMs": 276,
+        "transferBytes": 32145,
+        "cssJsBytes": 18414,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      }
+    },
+    {
+      "route": "/wood/elm/",
+      "before": {
+        "lcpMs": 480,
+        "transferBytes": 32359,
+        "cssJsBytes": 26693,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      },
+      "after": {
+        "lcpMs": 264,
+        "transferBytes": 32046,
+        "cssJsBytes": 18414,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      }
+    },
+    {
+      "route": "/plywood-cut-calculator/",
+      "before": {
+        "lcpMs": 532,
+        "transferBytes": 56326,
+        "cssJsBytes": 47795,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      },
+      "after": {
+        "lcpMs": 540,
+        "transferBytes": 50709,
+        "cssJsBytes": 42166,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      }
+    },
+    {
+      "route": "/apps/ductlab-hvac-duct-layout/",
+      "before": {
+        "lcpMs": 5168,
+        "transferBytes": 1038059,
+        "cssJsBytes": 29929,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      },
+      "after": {
+        "lcpMs": 1008,
+        "transferBytes": 209121,
+        "cssJsBytes": 29929,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      }
+    },
+    {
+      "route": "/blog/plywood-thickness-chart-guide/",
+      "before": {
+        "lcpMs": 624,
+        "transferBytes": 49009,
+        "cssJsBytes": 29912,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      },
+      "after": {
+        "lcpMs": 624,
+        "transferBytes": 49009,
+        "cssJsBytes": 29912,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      }
+    },
+    {
+      "route": "/blog/upper-cabinet-depth-planning/",
+      "before": {
+        "lcpMs": 624,
+        "transferBytes": 58350,
+        "cssJsBytes": 29912,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      },
+      "after": {
+        "lcpMs": 624,
+        "transferBytes": 58350,
+        "cssJsBytes": 29912,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      }
+    },
+    {
+      "route": "/checklists/plywood-order-release/",
+      "before": {
+        "lcpMs": 552,
+        "transferBytes": 40261,
+        "cssJsBytes": 32489,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      },
+      "after": {
+        "lcpMs": 508,
+        "transferBytes": 35087,
+        "cssJsBytes": 27299,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      }
+    },
+    {
+      "route": "/legal/Casework/privacy/",
+      "before": {
+        "lcpMs": 536,
+        "transferBytes": 38985,
+        "cssJsBytes": 32489,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      },
+      "after": {
+        "lcpMs": 472,
+        "transferBytes": 32569,
+        "cssJsBytes": 26055,
+        "clsMax": 0,
+        "longTaskMaxMs": 0
+      }
+    }
+  ],
+  "beforeRows": [
+    {
+      "route": "/wood/beech/",
+      "run": 1,
+      "lcp": 724,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 724,
+      "ttfb": 4.7000000001862645,
+      "domReady": 474.30000000074506,
+      "load": 625.7000000001863,
+      "htmlTransfer": 3719,
+      "resourceTransfer": 110455,
+      "cssJsTransfer": 26693,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/wood.css",
+          "type": "link",
+          "transfer": 8279,
+          "encoded": 7979,
+          "duration": 261.5
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 171.70000000018626
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 298.70000000018626
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 209.09999999962747
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 154
+        }
+      ]
+    },
+    {
+      "route": "/wood/east-indian-rosewood/",
+      "run": 1,
+      "lcp": 616,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 616,
+      "ttfb": 2.2999999998137355,
+      "domReady": 478,
+      "load": 631.6000000005588,
+      "htmlTransfer": 3833,
+      "resourceTransfer": 28615,
+      "cssJsTransfer": 26693,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/wood.css",
+          "type": "link",
+          "transfer": 8279,
+          "encoded": 7979,
+          "duration": 260.3999999994412
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 298.8999999994412
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 171.20000000018626
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 208.59999999962747
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 155.29999999981374
+        }
+      ]
+    },
+    {
+      "route": "/wood/elm/",
+      "run": 1,
+      "lcp": 488,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 488,
+      "ttfb": 1.7999999998137355,
+      "domReady": 484.29999999981374,
+      "load": 639.0999999996275,
+      "htmlTransfer": 3744,
+      "resourceTransfer": 28615,
+      "cssJsTransfer": 26693,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/wood.css",
+          "type": "link",
+          "transfer": 8279,
+          "encoded": 7979,
+          "duration": 268.20000000018626
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 305.80000000074506
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 185.59999999962747
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 215.29999999981374
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 154.8999999994412
+        }
+      ]
+    },
+    {
+      "route": "/plywood-cut-calculator/",
+      "run": 1,
+      "lcp": 692,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 692,
+      "ttfb": 2.2999999998137355,
+      "domReady": 645.3999999994412,
+      "load": 755.7999999998137,
+      "htmlTransfer": 6609,
+      "resourceTransfer": 49717,
+      "cssJsTransfer": 47795,
+      "imageTransfer": 1194,
+      "resourceCount": 10,
+      "domNodes": 339,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/plywood-core.js",
+          "type": "script",
+          "transfer": 4116,
+          "encoded": 3816,
+          "duration": 225
+        },
+        {
+          "path": "/assets/content.css",
+          "type": "link",
+          "transfer": 14075,
+          "encoded": 13775,
+          "duration": 380.90000000037253
+        },
+        {
+          "path": "/assets/plywood-workflow.css",
+          "type": "link",
+          "transfer": 1209,
+          "encoded": 909,
+          "duration": 172.1000000005588
+        },
+        {
+          "path": "/assets/plywood-workflow.js",
+          "type": "script",
+          "transfer": 6999,
+          "encoded": 6699,
+          "duration": 291.40000000037253
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 343.70000000018626
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 388.40000000037253
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 396.5
+        },
+        {
+          "path": "/assets/cut-handoff-model.js",
+          "type": "script",
+          "transfer": 2982,
+          "encoded": 2682,
+          "duration": 163.20000000018626
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 152.90000000037253
+        }
+      ]
+    },
+    {
+      "route": "/apps/ductlab-hvac-duct-layout/",
+      "run": 1,
+      "lcp": 5040,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 788,
+      "ttfb": 2.2000000001862645,
+      "domReady": 513.5,
+      "load": 5799.399999999441,
+      "htmlTransfer": 4805,
+      "resourceTransfer": 1033254,
+      "cssJsTransfer": 29929,
+      "imageTransfer": 1002597,
+      "resourceCount": 10,
+      "domNodes": 272,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "img",
+        "img"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/apps.css",
+          "type": "link",
+          "transfer": 11515,
+          "encoded": 11215,
+          "duration": 299.5
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 313.6000000005588
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 179.19999999925494
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 208.40000000037253
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 196.20000000018626
+        }
+      ]
+    },
+    {
+      "route": "/wood/beech/",
+      "run": 2,
+      "lcp": 472,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 472,
+      "ttfb": 2.099999999627471,
+      "domReady": 472.59999999962747,
+      "load": 625.1999999992549,
+      "htmlTransfer": 3719,
+      "resourceTransfer": 28615,
+      "cssJsTransfer": 26693,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/wood.css",
+          "type": "link",
+          "transfer": 8279,
+          "encoded": 7979,
+          "duration": 262.6000000005588
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 163.20000000018626
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 200.5
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 299.40000000037253
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 153.30000000074506
+        }
+      ]
+    },
+    {
+      "route": "/wood/east-indian-rosewood/",
+      "run": 2,
+      "lcp": 488,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 488,
+      "ttfb": 2,
+      "domReady": 484.5,
+      "load": 639,
+      "htmlTransfer": 3833,
+      "resourceTransfer": 28615,
+      "cssJsTransfer": 26693,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/wood.css",
+          "type": "link",
+          "transfer": 8279,
+          "encoded": 7979,
+          "duration": 268.1000000005588
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 186.59999999962747
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 216.20000000018626
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 305.40000000037253
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 155
+        }
+      ]
+    },
+    {
+      "route": "/wood/elm/",
+      "run": 2,
+      "lcp": 480,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 480,
+      "ttfb": 2.1000000005587935,
+      "domReady": 476.6000000005588,
+      "load": 634.7000000001863,
+      "htmlTransfer": 3744,
+      "resourceTransfer": 28615,
+      "cssJsTransfer": 26693,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/wood.css",
+          "type": "link",
+          "transfer": 8279,
+          "encoded": 7979,
+          "duration": 262.6000000005588
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 172.20000000018626
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 209.79999999981374
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 300.09999999962747
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 160.3999999994412
+        }
+      ]
+    },
+    {
+      "route": "/plywood-cut-calculator/",
+      "run": 2,
+      "lcp": 524,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 524,
+      "ttfb": 2.199999999254942,
+      "domReady": 687,
+      "load": 807.1999999992549,
+      "htmlTransfer": 6609,
+      "resourceTransfer": 49717,
+      "cssJsTransfer": 47795,
+      "imageTransfer": 1194,
+      "resourceCount": 10,
+      "domNodes": 339,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content.css",
+          "type": "link",
+          "transfer": 14075,
+          "encoded": 13775,
+          "duration": 292.29999999981374
+        },
+        {
+          "path": "/assets/plywood-core.js",
+          "type": "script",
+          "transfer": 4116,
+          "encoded": 3816,
+          "duration": 215.90000000037253
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 478.09999999962747
+        },
+        {
+          "path": "/assets/plywood-workflow.js",
+          "type": "script",
+          "transfer": 6999,
+          "encoded": 6699,
+          "duration": 246.70000000018626
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 410.5
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 440.40000000037253
+        },
+        {
+          "path": "/assets/plywood-workflow.css",
+          "type": "link",
+          "transfer": 1209,
+          "encoded": 909,
+          "duration": 164.40000000037253
+        },
+        {
+          "path": "/assets/cut-handoff-model.js",
+          "type": "script",
+          "transfer": 2982,
+          "encoded": 2682,
+          "duration": 201.40000000037253
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 160
+        }
+      ]
+    },
+    {
+      "route": "/apps/ductlab-hvac-duct-layout/",
+      "run": 2,
+      "lcp": 5172,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 632,
+      "ttfb": 2.2000000001862645,
+      "domReady": 637.9000000003725,
+      "load": 5540.299999999814,
+      "htmlTransfer": 4805,
+      "resourceTransfer": 1033254,
+      "cssJsTransfer": 29929,
+      "imageTransfer": 1002597,
+      "resourceCount": 10,
+      "domNodes": 272,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "img",
+        "img"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/apps.css",
+          "type": "link",
+          "transfer": 11515,
+          "encoded": 11215,
+          "duration": 411.29999999981374
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 186.29999999981374
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 231.5
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 456.5
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 211
+        }
+      ]
+    },
+    {
+      "route": "/wood/beech/",
+      "run": 3,
+      "lcp": 476,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 476,
+      "ttfb": 2.2000000001862645,
+      "domReady": 475.20000000018626,
+      "load": 636.5,
+      "htmlTransfer": 3719,
+      "resourceTransfer": 28615,
+      "cssJsTransfer": 26693,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/wood.css",
+          "type": "link",
+          "transfer": 8279,
+          "encoded": 7979,
+          "duration": 269
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 185.79999999981374
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 216.79999999981374
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 306.09999999962747
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 161.70000000018626
+        }
+      ]
+    },
+    {
+      "route": "/wood/east-indian-rosewood/",
+      "run": 3,
+      "lcp": 488,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 488,
+      "ttfb": 3.599999999627471,
+      "domReady": 486.79999999981374,
+      "load": 644.4000000003725,
+      "htmlTransfer": 3833,
+      "resourceTransfer": 28615,
+      "cssJsTransfer": 26693,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/wood.css",
+          "type": "link",
+          "transfer": 8279,
+          "encoded": 7979,
+          "duration": 269
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 298.20000000018626
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 177.59999999962747
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 216.59999999962747
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.79999999981374
+        }
+      ]
+    },
+    {
+      "route": "/wood/elm/",
+      "run": 3,
+      "lcp": 480,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 480,
+      "ttfb": 2.099999999627471,
+      "domReady": 478.3999999994412,
+      "load": 637.7000000001863,
+      "htmlTransfer": 3744,
+      "resourceTransfer": 28615,
+      "cssJsTransfer": 26693,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/wood.css",
+          "type": "link",
+          "transfer": 8279,
+          "encoded": 7979,
+          "duration": 260.70000000018626
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 169.80000000074506
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 208.90000000037253
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 297.5
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.69999999925494
+        }
+      ]
+    },
+    {
+      "route": "/plywood-cut-calculator/",
+      "run": 3,
+      "lcp": 532,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 532,
+      "ttfb": 2.2000000001862645,
+      "domReady": 701.7999999998137,
+      "load": 816.8999999994412,
+      "htmlTransfer": 6609,
+      "resourceTransfer": 49717,
+      "cssJsTransfer": 47795,
+      "imageTransfer": 1194,
+      "resourceCount": 10,
+      "domNodes": 339,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content.css",
+          "type": "link",
+          "transfer": 14075,
+          "encoded": 13775,
+          "duration": 290.5
+        },
+        {
+          "path": "/assets/plywood-core.js",
+          "type": "script",
+          "transfer": 4116,
+          "encoded": 3816,
+          "duration": 214.29999999981374
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 477.5
+        },
+        {
+          "path": "/assets/plywood-workflow.css",
+          "type": "link",
+          "transfer": 1209,
+          "encoded": 909,
+          "duration": 153.69999999925494
+        },
+        {
+          "path": "/assets/plywood-workflow.js",
+          "type": "script",
+          "transfer": 6999,
+          "encoded": 6699,
+          "duration": 244.69999999925494
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 409.8999999994412
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 439.8999999994412
+        },
+        {
+          "path": "/assets/cut-handoff-model.js",
+          "type": "script",
+          "transfer": 2982,
+          "encoded": 2682,
+          "duration": 201.90000000037253
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 158.69999999925494
+        }
+      ]
+    },
+    {
+      "route": "/apps/ductlab-hvac-duct-layout/",
+      "run": 3,
+      "lcp": 5168,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 608,
+      "ttfb": 2,
+      "domReady": 621.7000000001863,
+      "load": 5526.300000000745,
+      "htmlTransfer": 4805,
+      "resourceTransfer": 1033254,
+      "cssJsTransfer": 29929,
+      "imageTransfer": 1002597,
+      "resourceCount": 10,
+      "domNodes": 272,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "img",
+        "img"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/apps.css",
+          "type": "link",
+          "transfer": 11515,
+          "encoded": 11215,
+          "duration": 396.6000000005588
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 449.20000000018626
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 155
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 207.6000000005588
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 211.29999999981374
+        }
+      ]
+    },
+    {
+      "route": "/blog/plywood-thickness-chart-guide/",
+      "run": 1,
+      "lcp": 908,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 908,
+      "ttfb": 2.099999999627471,
+      "domReady": 572.0999999996275,
+      "load": 730.5,
+      "htmlTransfer": 4541,
+      "resourceTransfer": 44468,
+      "cssJsTransfer": 29912,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 331,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "table.deep-compare-table",
+        "thead",
+        "tr",
+        "th",
+        "th",
+        "tbody",
+        "tr",
+        "td"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/images/woodworking/wood-09-closet-planning-480.webp",
+          "type": "link",
+          "transfer": 12634,
+          "encoded": 12334,
+          "duration": 367.20000000018626
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 171
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 223.5
+        },
+        {
+          "path": "/assets/blog-article.css",
+          "type": "link",
+          "transfer": 11498,
+          "encoded": 11198,
+          "duration": 352.09999999962747
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 381.79999999981374
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 160.8999999994412
+        }
+      ]
+    },
+    {
+      "route": "/blog/upper-cabinet-depth-planning/",
+      "run": 1,
+      "lcp": 644,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 640,
+      "ttfb": 2.199999999254942,
+      "domReady": 586.0999999996275,
+      "load": 737.2999999998137,
+      "htmlTransfer": 6420,
+      "resourceTransfer": 51930,
+      "cssJsTransfer": 29912,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 376,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "table.deep-compare-table",
+        "thead",
+        "tr",
+        "th",
+        "th",
+        "tbody",
+        "tr",
+        "td"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/blog-article.css",
+          "type": "link",
+          "transfer": 11498,
+          "encoded": 11198,
+          "duration": 358.70000000018626
+        },
+        {
+          "path": "/assets/images/woodworking/wood-02-cabinet-hardware-480.webp",
+          "type": "link",
+          "transfer": 20096,
+          "encoded": 19796,
+          "duration": 426.70000000018626
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 178.30000000074506
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 222.1000000005588
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 395.5
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 153.79999999981374
+        }
+      ]
+    },
+    {
+      "route": "/checklists/plywood-order-release/",
+      "run": 1,
+      "lcp": 552,
+      "lcpElement": "p",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 552,
+      "ttfb": 2.3999999994412065,
+      "domReady": 550.5999999996275,
+      "load": 703.5999999996275,
+      "htmlTransfer": 6578,
+      "resourceTransfer": 33683,
+      "cssJsTransfer": 32489,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 391,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content.css",
+          "type": "link",
+          "transfer": 14075,
+          "encoded": 13775,
+          "duration": 314.3999999994412
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 177.29999999981374
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 207.29999999981374
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 321.09999999962747
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 154.1000000005588
+        }
+      ]
+    },
+    {
+      "route": "/legal/Casework/privacy/",
+      "run": 1,
+      "lcp": 664,
+      "lcpElement": "p",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 664,
+      "ttfb": 2,
+      "domReady": 530.5,
+      "load": 689.2000000001863,
+      "htmlTransfer": 4574,
+      "resourceTransfer": 34411,
+      "cssJsTransfer": 32489,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 221,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content.css",
+          "type": "link",
+          "transfer": 14075,
+          "encoded": 13775,
+          "duration": 320.29999999981374
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 169.5
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 208.30000000074506
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 328.30000000074506
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.5
+        }
+      ]
+    },
+    {
+      "route": "/blog/plywood-thickness-chart-guide/",
+      "run": 2,
+      "lcp": 620,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 580,
+      "ttfb": 1.2999999998137355,
+      "domReady": 572.3999999994412,
+      "load": 728.5,
+      "htmlTransfer": 4541,
+      "resourceTransfer": 44468,
+      "cssJsTransfer": 29912,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 331,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "table.deep-compare-table",
+        "thead",
+        "tr",
+        "th",
+        "th",
+        "tbody",
+        "tr",
+        "td"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/images/woodworking/wood-09-closet-planning-480.webp",
+          "type": "link",
+          "transfer": 12634,
+          "encoded": 12334,
+          "duration": 367.20000000018626
+        },
+        {
+          "path": "/assets/blog-article.css",
+          "type": "link",
+          "transfer": 11498,
+          "encoded": 11198,
+          "duration": 351.3999999994412
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 171.29999999981374
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 216.29999999981374
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 381.40000000037253
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.3999999994412
+        }
+      ]
+    },
+    {
+      "route": "/blog/upper-cabinet-depth-planning/",
+      "run": 2,
+      "lcp": 624,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 576,
+      "ttfb": 1.7000000001862645,
+      "domReady": 575,
+      "load": 732.7999999998137,
+      "htmlTransfer": 6420,
+      "resourceTransfer": 51930,
+      "cssJsTransfer": 29912,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 376,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "table.deep-compare-table",
+        "thead",
+        "tr",
+        "th",
+        "th",
+        "tbody",
+        "tr",
+        "td"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/images/woodworking/wood-02-cabinet-hardware-480.webp",
+          "type": "link",
+          "transfer": 20096,
+          "encoded": 19796,
+          "duration": 419.29999999981374
+        },
+        {
+          "path": "/assets/blog-article.css",
+          "type": "link",
+          "transfer": 11498,
+          "encoded": 11198,
+          "duration": 350.79999999981374
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 177.29999999981374
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 215.5
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 387.20000000018626
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.5
+        }
+      ]
+    },
+    {
+      "route": "/checklists/plywood-order-release/",
+      "run": 2,
+      "lcp": 552,
+      "lcpElement": "p",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 552,
+      "ttfb": 1.5,
+      "domReady": 549,
+      "load": 703.5999999996275,
+      "htmlTransfer": 6578,
+      "resourceTransfer": 33683,
+      "cssJsTransfer": 32489,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 391,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content.css",
+          "type": "link",
+          "transfer": 14075,
+          "encoded": 13775,
+          "duration": 315.29999999981374
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 178.29999999981374
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 208.09999999962747
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 322
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 155.70000000018626
+        }
+      ]
+    },
+    {
+      "route": "/legal/Casework/privacy/",
+      "run": 2,
+      "lcp": 536,
+      "lcpElement": "p",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 536,
+      "ttfb": 1.3999999994412065,
+      "domReady": 528.5999999996275,
+      "load": 683.2999999998137,
+      "htmlTransfer": 4574,
+      "resourceTransfer": 34411,
+      "cssJsTransfer": 32489,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 221,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content.css",
+          "type": "link",
+          "transfer": 14075,
+          "encoded": 13775,
+          "duration": 321.70000000018626
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 329.1000000005588
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 171.20000000018626
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 208.40000000037253
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 156.59999999962747
+        }
+      ]
+    },
+    {
+      "route": "/blog/plywood-thickness-chart-guide/",
+      "run": 3,
+      "lcp": 624,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 584,
+      "ttfb": 1.599999999627471,
+      "domReady": 578.2000000001863,
+      "load": 726.9000000003725,
+      "htmlTransfer": 4541,
+      "resourceTransfer": 44468,
+      "cssJsTransfer": 29912,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 331,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "table.deep-compare-table",
+        "thead",
+        "tr",
+        "th",
+        "th",
+        "tbody",
+        "tr",
+        "td"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/images/woodworking/wood-09-closet-planning-480.webp",
+          "type": "link",
+          "transfer": 12634,
+          "encoded": 12334,
+          "duration": 374.29999999981374
+        },
+        {
+          "path": "/assets/blog-article.css",
+          "type": "link",
+          "transfer": 11498,
+          "encoded": 11198,
+          "duration": 357.79999999981374
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 179
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 388.90000000037253
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 222.6000000005588
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 152.09999999962747
+        }
+      ]
+    },
+    {
+      "route": "/blog/upper-cabinet-depth-planning/",
+      "run": 3,
+      "lcp": 624,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 576,
+      "ttfb": 1.599999999627471,
+      "domReady": 576.5,
+      "load": 736.5999999996275,
+      "htmlTransfer": 6420,
+      "resourceTransfer": 51930,
+      "cssJsTransfer": 29912,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 376,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "table.deep-compare-table",
+        "thead",
+        "tr",
+        "th",
+        "th",
+        "tbody",
+        "tr",
+        "td"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/images/woodworking/wood-02-cabinet-hardware-480.webp",
+          "type": "link",
+          "transfer": 20096,
+          "encoded": 19796,
+          "duration": 417.3999999994412
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 170.29999999981374
+        },
+        {
+          "path": "/assets/blog-article.css",
+          "type": "link",
+          "transfer": 11498,
+          "encoded": 11198,
+          "duration": 351.40000000037253
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 388.90000000037253
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 216.20000000018626
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 161.70000000018626
+        }
+      ]
+    },
+    {
+      "route": "/checklists/plywood-order-release/",
+      "run": 3,
+      "lcp": 548,
+      "lcpElement": "p",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 548,
+      "ttfb": 1.5,
+      "domReady": 546.5,
+      "load": 708.5999999996275,
+      "htmlTransfer": 6578,
+      "resourceTransfer": 33683,
+      "cssJsTransfer": 32489,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 391,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content.css",
+          "type": "link",
+          "transfer": 14075,
+          "encoded": 13775,
+          "duration": 314.59999999962747
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 321.80000000074506
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 179.20000000018626
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 208.5
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 163.1000000005588
+        }
+      ]
+    },
+    {
+      "route": "/legal/Casework/privacy/",
+      "run": 3,
+      "lcp": 528,
+      "lcpElement": "p",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 528,
+      "ttfb": 1.2999999998137355,
+      "domReady": 526.2000000001863,
+      "load": 683.3999999994412,
+      "htmlTransfer": 4574,
+      "resourceTransfer": 34411,
+      "cssJsTransfer": 32489,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 221,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content.css",
+          "type": "link",
+          "transfer": 14075,
+          "encoded": 13775,
+          "duration": 321.09999999962747
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 328.80000000074506
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 178.79999999981374
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 207.5
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 158.3999999994412
+        }
+      ]
+    }
+  ],
+  "afterRows": [
+    {
+      "route": "/wood/beech/",
+      "run": 1,
+      "lcp": 260,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 260,
+      "ttfb": 1.7999999998137355,
+      "domReady": 500.70000000018626,
+      "load": 621.6000000005588,
+      "htmlTransfer": 11689,
+      "resourceTransfer": 20336,
+      "cssJsTransfer": 18414,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 253.1000000005588
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 170.59999999962747
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 192.3999999994412
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 158.6000000005588
+        }
+      ]
+    },
+    {
+      "route": "/wood/east-indian-rosewood/",
+      "run": 1,
+      "lcp": 276,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 276,
+      "ttfb": 1.7000000001862645,
+      "domReady": 505.20000000018626,
+      "load": 626.9000000003725,
+      "htmlTransfer": 11809,
+      "resourceTransfer": 20336,
+      "cssJsTransfer": 18414,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 252.40000000037253
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 168
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 192
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.20000000018626
+        }
+      ]
+    },
+    {
+      "route": "/wood/elm/",
+      "run": 1,
+      "lcp": 260,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 260,
+      "ttfb": 2,
+      "domReady": 511.59999999962747,
+      "load": 620.5,
+      "htmlTransfer": 11710,
+      "resourceTransfer": 20336,
+      "cssJsTransfer": 18414,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 170.5
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 251.70000000018626
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 193.30000000074506
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 152.1000000005588
+        }
+      ]
+    },
+    {
+      "route": "/plywood-cut-calculator/",
+      "run": 1,
+      "lcp": 540,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 540,
+      "ttfb": 1.5,
+      "domReady": 629.2000000001863,
+      "load": 691,
+      "htmlTransfer": 6621,
+      "resourceTransfer": 44088,
+      "cssJsTransfer": 42166,
+      "imageTransfer": 1194,
+      "resourceCount": 10,
+      "domNodes": 339,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/plywood.css",
+          "type": "link",
+          "transfer": 8446,
+          "encoded": 8146,
+          "duration": 306.5
+        },
+        {
+          "path": "/assets/plywood-workflow.css",
+          "type": "link",
+          "transfer": 1209,
+          "encoded": 909,
+          "duration": 170
+        },
+        {
+          "path": "/assets/plywood-core.js",
+          "type": "script",
+          "transfer": 4116,
+          "encoded": 3816,
+          "duration": 223.5
+        },
+        {
+          "path": "/assets/plywood-workflow.js",
+          "type": "script",
+          "transfer": 6999,
+          "encoded": 6699,
+          "duration": 291.29999999981374
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 335.29999999981374
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 358.59999999962747
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 364.8999999994412
+        },
+        {
+          "path": "/assets/cut-handoff-model.js",
+          "type": "script",
+          "transfer": 2982,
+          "encoded": 2682,
+          "duration": 164.5
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 157.90000000037253
+        }
+      ]
+    },
+    {
+      "route": "/blog/plywood-thickness-chart-guide/",
+      "run": 1,
+      "lcp": 624,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 584,
+      "ttfb": 1.6000000005587935,
+      "domReady": 579,
+      "load": 727.7000000001863,
+      "htmlTransfer": 4541,
+      "resourceTransfer": 44468,
+      "cssJsTransfer": 29912,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 331,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "table.deep-compare-table",
+        "thead",
+        "tr",
+        "th",
+        "th",
+        "tbody",
+        "tr",
+        "td"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/images/woodworking/wood-09-closet-planning-480.webp",
+          "type": "link",
+          "transfer": 12634,
+          "encoded": 12334,
+          "duration": 373.70000000018626
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 178.09999999962747
+        },
+        {
+          "path": "/assets/blog-article.css",
+          "type": "link",
+          "transfer": 11498,
+          "encoded": 11198,
+          "duration": 358.3999999994412
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 388.09999999962747
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 221.3999999994412
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 152.1000000005588
+        }
+      ]
+    },
+    {
+      "route": "/blog/upper-cabinet-depth-planning/",
+      "run": 1,
+      "lcp": 624,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 580,
+      "ttfb": 1.5,
+      "domReady": 576.7999999998137,
+      "load": 738,
+      "htmlTransfer": 6420,
+      "resourceTransfer": 51930,
+      "cssJsTransfer": 29912,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 376,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "table.deep-compare-table",
+        "thead",
+        "tr",
+        "th",
+        "th",
+        "tbody",
+        "tr",
+        "td"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/images/woodworking/wood-02-cabinet-hardware-480.webp",
+          "type": "link",
+          "transfer": 20096,
+          "encoded": 19796,
+          "duration": 417.90000000037253
+        },
+        {
+          "path": "/assets/blog-article.css",
+          "type": "link",
+          "transfer": 11498,
+          "encoded": 11198,
+          "duration": 350.6000000005588
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 177.59999999962747
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 388
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 222.80000000074506
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 162.70000000018626
+        }
+      ]
+    },
+    {
+      "route": "/checklists/plywood-order-release/",
+      "run": 1,
+      "lcp": 524,
+      "lcpElement": "p",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 524,
+      "ttfb": 1.5,
+      "domReady": 523.1999999992549,
+      "load": 676.8999999994412,
+      "htmlTransfer": 6594,
+      "resourceTransfer": 28493,
+      "cssJsTransfer": 27299,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 391,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 185.29999999981374
+        },
+        {
+          "path": "/assets/checklists.css",
+          "type": "link",
+          "transfer": 8885,
+          "encoded": 8585,
+          "duration": 260.70000000018626
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 296.3999999994412
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 207.5
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 154.8999999994412
+        }
+      ]
+    },
+    {
+      "route": "/legal/Casework/privacy/",
+      "run": 1,
+      "lcp": 472,
+      "lcpElement": "p",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 472,
+      "ttfb": 1.400000000372529,
+      "domReady": 477.30000000074506,
+      "load": 636,
+      "htmlTransfer": 4592,
+      "resourceTransfer": 27977,
+      "cssJsTransfer": 26055,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 221,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/legal.css",
+          "type": "link",
+          "transfer": 7641,
+          "encoded": 7341,
+          "duration": 269.70000000018626
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 186.8999999994412
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 306
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 215.09999999962747
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.20000000018626
+        }
+      ]
+    },
+    {
+      "route": "/wood/beech/",
+      "run": 2,
+      "lcp": 284,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 284,
+      "ttfb": 1.7000000001862645,
+      "domReady": 505.3999999994412,
+      "load": 629.2999999998137,
+      "htmlTransfer": 11689,
+      "resourceTransfer": 20336,
+      "cssJsTransfer": 18414,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 171.29999999981374
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 252.29999999981374
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 193.6000000005588
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 160.70000000018626
+        }
+      ]
+    },
+    {
+      "route": "/wood/east-indian-rosewood/",
+      "run": 2,
+      "lcp": 280,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 280,
+      "ttfb": 1.7999999998137355,
+      "domReady": 497.70000000018626,
+      "load": 617.5999999996275,
+      "htmlTransfer": 11809,
+      "resourceTransfer": 20336,
+      "cssJsTransfer": 18414,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 171.30000000074506
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 193
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 246.40000000037253
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.1000000005588
+        }
+      ]
+    },
+    {
+      "route": "/wood/elm/",
+      "run": 2,
+      "lcp": 284,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 284,
+      "ttfb": 1.7999999998137355,
+      "domReady": 507.1000000005588,
+      "load": 629,
+      "htmlTransfer": 11710,
+      "resourceTransfer": 20336,
+      "cssJsTransfer": 18414,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 170
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 252.6000000005588
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 192.5
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.3999999994412
+        }
+      ]
+    },
+    {
+      "route": "/plywood-cut-calculator/",
+      "run": 2,
+      "lcp": 524,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 524,
+      "ttfb": 1.5,
+      "domReady": 626.8999999994412,
+      "load": 690.3999999994412,
+      "htmlTransfer": 6621,
+      "resourceTransfer": 44088,
+      "cssJsTransfer": 42166,
+      "imageTransfer": 1194,
+      "resourceCount": 10,
+      "domNodes": 339,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/plywood.css",
+          "type": "link",
+          "transfer": 8446,
+          "encoded": 8146,
+          "duration": 298.09999999962747
+        },
+        {
+          "path": "/assets/plywood-core.js",
+          "type": "script",
+          "transfer": 4116,
+          "encoded": 3816,
+          "duration": 237.29999999981374
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 357.5
+        },
+        {
+          "path": "/assets/plywood-workflow.js",
+          "type": "script",
+          "transfer": 6999,
+          "encoded": 6699,
+          "duration": 290.19999999925494
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 334.69999999925494
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 365.59999999962747
+        },
+        {
+          "path": "/assets/plywood-workflow.css",
+          "type": "link",
+          "transfer": 1209,
+          "encoded": 909,
+          "duration": 171.09999999962747
+        },
+        {
+          "path": "/assets/cut-handoff-model.js",
+          "type": "script",
+          "transfer": 2982,
+          "encoded": 2682,
+          "duration": 165.30000000074506
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 161.09999999962747
+        }
+      ]
+    },
+    {
+      "route": "/blog/plywood-thickness-chart-guide/",
+      "run": 2,
+      "lcp": 624,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 576,
+      "ttfb": 1.5,
+      "domReady": 575.8999999994412,
+      "load": 727,
+      "htmlTransfer": 4541,
+      "resourceTransfer": 44468,
+      "cssJsTransfer": 29912,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 331,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "table.deep-compare-table",
+        "thead",
+        "tr",
+        "th",
+        "th",
+        "tbody",
+        "tr",
+        "td"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/images/woodworking/wood-09-closet-planning-480.webp",
+          "type": "link",
+          "transfer": 12634,
+          "encoded": 12334,
+          "duration": 373.3999999994412
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 185
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 223.5
+        },
+        {
+          "path": "/assets/blog-article.css",
+          "type": "link",
+          "transfer": 11498,
+          "encoded": 11198,
+          "duration": 357.59999999962747
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 387.20000000018626
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 153.3999999994412
+        }
+      ]
+    },
+    {
+      "route": "/blog/upper-cabinet-depth-planning/",
+      "run": 2,
+      "lcp": 620,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 576,
+      "ttfb": 1.5,
+      "domReady": 575.2000000001863,
+      "load": 733.0999999996275,
+      "htmlTransfer": 6420,
+      "resourceTransfer": 51930,
+      "cssJsTransfer": 29912,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 376,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "table.deep-compare-table",
+        "thead",
+        "tr",
+        "th",
+        "th",
+        "tbody",
+        "tr",
+        "td"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/images/woodworking/wood-02-cabinet-hardware-480.webp",
+          "type": "link",
+          "transfer": 20096,
+          "encoded": 19796,
+          "duration": 419.59999999962747
+        },
+        {
+          "path": "/assets/blog-article.css",
+          "type": "link",
+          "transfer": 11498,
+          "encoded": 11198,
+          "duration": 351.40000000037253
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 387.40000000037253
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 177.8999999994412
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 216.20000000018626
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.70000000018626
+        }
+      ]
+    },
+    {
+      "route": "/checklists/plywood-order-release/",
+      "run": 2,
+      "lcp": 500,
+      "lcpElement": "p",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 500,
+      "ttfb": 1.599999999627471,
+      "domReady": 493.40000000037253,
+      "load": 655.5999999996275,
+      "htmlTransfer": 6594,
+      "resourceTransfer": 28493,
+      "cssJsTransfer": 27299,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 391,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/checklists.css",
+          "type": "link",
+          "transfer": 8885,
+          "encoded": 8585,
+          "duration": 262.20000000018626
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 179.59999999962747
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 209.5
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 298.79999999981374
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 163.29999999981374
+        }
+      ]
+    },
+    {
+      "route": "/legal/Casework/privacy/",
+      "run": 2,
+      "lcp": 472,
+      "lcpElement": "p",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 472,
+      "ttfb": 1.3999999994412065,
+      "domReady": 482.29999999981374,
+      "load": 641.2999999998137,
+      "htmlTransfer": 4592,
+      "resourceTransfer": 27977,
+      "cssJsTransfer": 26055,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 221,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/legal.css",
+          "type": "link",
+          "transfer": 7641,
+          "encoded": 7341,
+          "duration": 266.6000000005588
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 178
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 215.8999999994412
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 305.5
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.40000000037253
+        }
+      ]
+    },
+    {
+      "route": "/wood/beech/",
+      "run": 3,
+      "lcp": 264,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 264,
+      "ttfb": 1.699999999254942,
+      "domReady": 504.69999999925494,
+      "load": 627.5999999996275,
+      "htmlTransfer": 11689,
+      "resourceTransfer": 20336,
+      "cssJsTransfer": 18414,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 252.5
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 169.20000000018626
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 192.40000000037253
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 160.19999999925494
+        }
+      ]
+    },
+    {
+      "route": "/wood/east-indian-rosewood/",
+      "run": 3,
+      "lcp": 276,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 276,
+      "ttfb": 1.800000000745058,
+      "domReady": 494.5,
+      "load": 615.8000000007451,
+      "htmlTransfer": 11809,
+      "resourceTransfer": 20336,
+      "cssJsTransfer": 18414,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 243.79999999981374
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 170.20000000018626
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 191.20000000018626
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.80000000074506
+        }
+      ]
+    },
+    {
+      "route": "/wood/elm/",
+      "run": 3,
+      "lcp": 264,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 264,
+      "ttfb": 1.7999999998137355,
+      "domReady": 493.79999999981374,
+      "load": 614.7000000001863,
+      "htmlTransfer": 11710,
+      "resourceTransfer": 20336,
+      "cssJsTransfer": 18414,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 299,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 170.3999999994412
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 193.09999999962747
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 246.5
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.40000000037253
+        }
+      ]
+    },
+    {
+      "route": "/plywood-cut-calculator/",
+      "run": 3,
+      "lcp": 540,
+      "lcpElement": "p.lead",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 540,
+      "ttfb": 1.7000000001862645,
+      "domReady": 622.7999999998137,
+      "load": 695.2000000001863,
+      "htmlTransfer": 6621,
+      "resourceTransfer": 44088,
+      "cssJsTransfer": 42166,
+      "imageTransfer": 1194,
+      "resourceCount": 10,
+      "domNodes": 339,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/plywood.css",
+          "type": "link",
+          "transfer": 8446,
+          "encoded": 8146,
+          "duration": 313.90000000037253
+        },
+        {
+          "path": "/assets/plywood-core.js",
+          "type": "script",
+          "transfer": 4116,
+          "encoded": 3816,
+          "duration": 239.5
+        },
+        {
+          "path": "/assets/plywood-workflow.js",
+          "type": "script",
+          "transfer": 6999,
+          "encoded": 6699,
+          "duration": 290.59999999962747
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 343.09999999962747
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 366.90000000037253
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 373.20000000018626
+        },
+        {
+          "path": "/assets/plywood-workflow.css",
+          "type": "link",
+          "transfer": 1209,
+          "encoded": 909,
+          "duration": 178.90000000037253
+        },
+        {
+          "path": "/assets/cut-handoff-model.js",
+          "type": "script",
+          "transfer": 2982,
+          "encoded": 2682,
+          "duration": 163.8999999994412
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 158.59999999962747
+        }
+      ]
+    },
+    {
+      "route": "/blog/plywood-thickness-chart-guide/",
+      "run": 3,
+      "lcp": 620,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 576,
+      "ttfb": 1.400000000372529,
+      "domReady": 577.4000000003725,
+      "load": 734.7000000001863,
+      "htmlTransfer": 4541,
+      "resourceTransfer": 44468,
+      "cssJsTransfer": 29912,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 331,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "table.deep-compare-table",
+        "thead",
+        "tr",
+        "th",
+        "th",
+        "tbody",
+        "tr",
+        "td"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/images/woodworking/wood-09-closet-planning-480.webp",
+          "type": "link",
+          "transfer": 12634,
+          "encoded": 12334,
+          "duration": 372.59999999962747
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 186.29999999981374
+        },
+        {
+          "path": "/assets/blog-article.css",
+          "type": "link",
+          "transfer": 11498,
+          "encoded": 11198,
+          "duration": 358.70000000018626
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 388.40000000037253
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 223.40000000037253
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 159.6000000005588
+        }
+      ]
+    },
+    {
+      "route": "/blog/upper-cabinet-depth-planning/",
+      "run": 3,
+      "lcp": 628,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 576,
+      "ttfb": 1.599999999627471,
+      "domReady": 577.2999999998137,
+      "load": 736.5,
+      "htmlTransfer": 6420,
+      "resourceTransfer": 51930,
+      "cssJsTransfer": 29912,
+      "imageTransfer": 1194,
+      "resourceCount": 7,
+      "domNodes": 376,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "table.deep-compare-table",
+        "thead",
+        "tr",
+        "th",
+        "th",
+        "tbody",
+        "tr",
+        "td"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/blog-article.css",
+          "type": "link",
+          "transfer": 11498,
+          "encoded": 11198,
+          "duration": 350.40000000037253
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 387.90000000037253
+        },
+        {
+          "path": "/assets/images/woodworking/wood-02-cabinet-hardware-480.webp",
+          "type": "link",
+          "transfer": 20096,
+          "encoded": 19796,
+          "duration": 417.40000000037253
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 169.6000000005588
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 214.70000000018626
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 160.90000000037253
+        }
+      ]
+    },
+    {
+      "route": "/checklists/plywood-order-release/",
+      "run": 3,
+      "lcp": 508,
+      "lcpElement": "p",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 508,
+      "ttfb": 1.7999999998137355,
+      "domReady": 494.09999999962747,
+      "load": 647.2999999998137,
+      "htmlTransfer": 6594,
+      "resourceTransfer": 28493,
+      "cssJsTransfer": 27299,
+      "imageTransfer": 1194,
+      "resourceCount": 5,
+      "domNodes": 391,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/checklists.css",
+          "type": "link",
+          "transfer": 8885,
+          "encoded": 8585,
+          "duration": 262.09999999962747
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 177.40000000037253
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 208.80000000074506
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 297.6000000005588
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 154.09999999962747
+        }
+      ]
+    },
+    {
+      "route": "/legal/Casework/privacy/",
+      "run": 3,
+      "lcp": 476,
+      "lcpElement": "p",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 476,
+      "ttfb": 1.5,
+      "domReady": 481.6000000005588,
+      "load": 641.1000000005588,
+      "htmlTransfer": 4592,
+      "resourceTransfer": 27977,
+      "cssJsTransfer": 26055,
+      "imageTransfer": 1194,
+      "resourceCount": 6,
+      "domNodes": 221,
+      "horizontalOverflow": 0,
+      "overflowElements": [],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/legal.css",
+          "type": "link",
+          "transfer": 7641,
+          "encoded": 7341,
+          "duration": 268.70000000018626
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 304.8999999994412
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 178.09999999962747
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 214.90000000037253
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 160.70000000018626
+        }
+      ]
+    },
+    {
+      "route": "/apps/ductlab-hvac-duct-layout/",
+      "run": 1,
+      "lcp": 1008,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 604,
+      "ttfb": 1.2999999998137355,
+      "domReady": 602.5,
+      "load": 1398.7000000001863,
+      "htmlTransfer": 5031,
+      "resourceTransfer": 204090,
+      "cssJsTransfer": 29929,
+      "imageTransfer": 173433,
+      "resourceCount": 10,
+      "domNodes": 272,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "img",
+        "img"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/apps.css",
+          "type": "link",
+          "transfer": 11515,
+          "encoded": 11215,
+          "duration": 386.30000000074506
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 177.90000000037253
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 230.5
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 424.1000000005588
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 175.29999999981374
+        }
+      ]
+    },
+    {
+      "route": "/apps/ductlab-hvac-duct-layout/",
+      "run": 2,
+      "lcp": 1004,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 620,
+      "ttfb": 1.6000000005587935,
+      "domReady": 614.9000000003725,
+      "load": 1405.9000000003725,
+      "htmlTransfer": 5031,
+      "resourceTransfer": 204090,
+      "cssJsTransfer": 29929,
+      "imageTransfer": 173433,
+      "resourceCount": 10,
+      "domNodes": 272,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "img",
+        "img"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/apps.css",
+          "type": "link",
+          "transfer": 11515,
+          "encoded": 11215,
+          "duration": 388
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 177.3999999994412
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 426
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 230.40000000037253
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 179.5
+        }
+      ]
+    },
+    {
+      "route": "/apps/ductlab-hvac-duct-layout/",
+      "run": 3,
+      "lcp": 1008,
+      "lcpElement": "img",
+      "cls": 0,
+      "longTasks": [],
+      "fcp": 608,
+      "ttfb": 1.6000000005587935,
+      "domReady": 606.6000000005588,
+      "load": 1401.300000000745,
+      "htmlTransfer": 5031,
+      "resourceTransfer": 204090,
+      "cssJsTransfer": 29929,
+      "imageTransfer": 173433,
+      "resourceCount": 10,
+      "domNodes": 272,
+      "horizontalOverflow": 0,
+      "overflowElements": [
+        "img",
+        "img"
+      ],
+      "longTaskCount": 0,
+      "longTaskTotal": 0,
+      "longTaskMax": 0,
+      "resources": [
+        {
+          "path": "/assets/apps.css",
+          "type": "link",
+          "transfer": 11515,
+          "encoded": 11215,
+          "duration": 388.59999999962747
+        },
+        {
+          "path": "/assets/site-chrome.js",
+          "type": "script",
+          "transfer": 14424,
+          "encoded": 14124,
+          "duration": 425.69999999925494
+        },
+        {
+          "path": "/assets/content-page.js",
+          "type": "script",
+          "transfer": 965,
+          "encoded": 665,
+          "duration": 187.20000000018626
+        },
+        {
+          "path": "/assets/conversion.js",
+          "type": "script",
+          "transfer": 3025,
+          "encoded": 2725,
+          "duration": 229.30000000074506
+        },
+        {
+          "path": "/assets/icons/brand-icon.webp",
+          "type": "img",
+          "transfer": 1194,
+          "encoded": 894,
+          "duration": 179.20000000018626
+        }
+      ]
+    }
+  ],
+  "browserQA": {
+    "rows": [
+      {
+        "route": "/wood/beech/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Beech Wood",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "East Indian Rosewood Wood",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/wood/elm/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Elm Wood",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Plywood Cut Calculator",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "DuctLab: HVAC Duct Layout",
+        "cssLoaded": true,
+        "styles": "28.8px",
+        "images": [
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/17/35/1c173553-ebe3-f887-781e-0cea15c57bce/1.png/360x780bb.jpg",
+            "complete": true,
+            "width": 260,
+            "naturalWidth": 260,
+            "aspect": 0.4613733905579399,
+            "naturalAspect": 0.46181172291296624
+          },
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/1c/80/021c8074-8f4f-4384-99c3-9abd7cdeaf90/2.png/360x780bb.jpg",
+            "complete": true,
+            "width": 260,
+            "naturalWidth": 260,
+            "aspect": 0.4613733905579399,
+            "naturalAspect": 0.46181172291296624
+          },
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d1/43/20/d1432011-9c1e-2b9f-660b-bba99a4d964b/3.png/360x780bb.jpg",
+            "complete": true,
+            "width": 260,
+            "naturalWidth": 260,
+            "aspect": 0.4613733905579399,
+            "naturalAspect": 0.46181172291296624
+          }
+        ]
+      },
+      {
+        "route": "/checklists/plywood-order-release/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Plywood Order Release Checklist",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/legal/Casework/privacy/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Casework Privacy Policy",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/blog/plywood-thickness-chart-guide/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Plywood Thickness Chart and What Each Is For",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/wood/beech/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Beech Wood",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "East Indian Rosewood Wood",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/wood/elm/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Elm Wood",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Plywood Cut Calculator",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "DuctLab: HVAC Duct Layout",
+        "cssLoaded": true,
+        "styles": "31.2px",
+        "images": [
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/17/35/1c173553-ebe3-f887-781e-0cea15c57bce/1.png/360x780bb.jpg",
+            "complete": true,
+            "width": 274,
+            "naturalWidth": 274,
+            "aspect": 0.4613733905579399,
+            "naturalAspect": 0.4620573355817875
+          },
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/1c/80/021c8074-8f4f-4384-99c3-9abd7cdeaf90/2.png/360x780bb.jpg",
+            "complete": true,
+            "width": 274,
+            "naturalWidth": 274,
+            "aspect": 0.4613733905579399,
+            "naturalAspect": 0.4620573355817875
+          },
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d1/43/20/d1432011-9c1e-2b9f-660b-bba99a4d964b/3.png/360x780bb.jpg",
+            "complete": true,
+            "width": 274,
+            "naturalWidth": 274,
+            "aspect": 0.4613733905579399,
+            "naturalAspect": 0.4620573355817875
+          }
+        ]
+      },
+      {
+        "route": "/checklists/plywood-order-release/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Plywood Order Release Checklist",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/legal/Casework/privacy/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Casework Privacy Policy",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/blog/plywood-thickness-chart-guide/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Plywood Thickness Chart and What Each Is For",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/wood/beech/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Beech Wood",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "East Indian Rosewood Wood",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/wood/elm/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Elm Wood",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Plywood Cut Calculator",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "DuctLab: HVAC Duct Layout",
+        "cssLoaded": true,
+        "styles": "33.28px",
+        "images": [
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/17/35/1c173553-ebe3-f887-781e-0cea15c57bce/1.png/360x780bb.jpg",
+            "complete": true,
+            "width": 274,
+            "naturalWidth": 274,
+            "aspect": 0.4613733905579399,
+            "naturalAspect": 0.4620573355817875
+          },
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/1c/80/021c8074-8f4f-4384-99c3-9abd7cdeaf90/2.png/360x780bb.jpg",
+            "complete": true,
+            "width": 274,
+            "naturalWidth": 274,
+            "aspect": 0.4613733905579399,
+            "naturalAspect": 0.4620573355817875
+          },
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d1/43/20/d1432011-9c1e-2b9f-660b-bba99a4d964b/3.png/360x780bb.jpg",
+            "complete": true,
+            "width": 274,
+            "naturalWidth": 274,
+            "aspect": 0.4613733905579399,
+            "naturalAspect": 0.4620573355817875
+          }
+        ]
+      },
+      {
+        "route": "/checklists/plywood-order-release/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Plywood Order Release Checklist",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/legal/Casework/privacy/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Casework Privacy Policy",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/blog/plywood-thickness-chart-guide/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Plywood Thickness Chart and What Each Is For",
+        "cssLoaded": true,
+        "styles": "29.76px",
+        "images": []
+      },
+      {
+        "route": "/wood/beech/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Beech Wood",
+        "cssLoaded": true,
+        "styles": "64px",
+        "images": []
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "East Indian Rosewood Wood",
+        "cssLoaded": true,
+        "styles": "64px",
+        "images": []
+      },
+      {
+        "route": "/wood/elm/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Elm Wood",
+        "cssLoaded": true,
+        "styles": "64px",
+        "images": []
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Plywood Cut Calculator",
+        "cssLoaded": true,
+        "styles": "64px",
+        "images": []
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "DuctLab: HVAC Duct Layout",
+        "cssLoaded": true,
+        "styles": "64px",
+        "images": [
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/17/35/1c173553-ebe3-f887-781e-0cea15c57bce/1.png/360x780bb.jpg",
+            "complete": true,
+            "width": 265.125,
+            "naturalWidth": 280,
+            "aspect": 0.4613733905579399,
+            "naturalAspect": 0.46204620462046203
+          },
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/1c/80/021c8074-8f4f-4384-99c3-9abd7cdeaf90/2.png/360x780bb.jpg",
+            "complete": true,
+            "width": 265.125,
+            "naturalWidth": 280,
+            "aspect": 0.4613733905579399,
+            "naturalAspect": 0.46204620462046203
+          },
+          {
+            "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d1/43/20/d1432011-9c1e-2b9f-660b-bba99a4d964b/3.png/360x780bb.jpg",
+            "complete": true,
+            "width": 265.125,
+            "naturalWidth": 280,
+            "aspect": 0.4613733905579399,
+            "naturalAspect": 0.46204620462046203
+          }
+        ]
+      },
+      {
+        "route": "/checklists/plywood-order-release/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Plywood Order Release Checklist",
+        "cssLoaded": true,
+        "styles": "64px",
+        "images": []
+      },
+      {
+        "route": "/legal/Casework/privacy/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Casework Privacy Policy",
+        "cssLoaded": true,
+        "styles": "64px",
+        "images": []
+      },
+      {
+        "route": "/blog/plywood-thickness-chart-guide/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Plywood Thickness Chart and What Each Is For",
+        "cssLoaded": true,
+        "styles": "64px",
+        "images": []
+      }
+    ],
+    "densityChecks": [
+      {
+        "dpr": 2,
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/17/35/1c173553-ebe3-f887-781e-0cea15c57bce/1.png/720x1561bb.jpg",
+        "width": 274,
+        "pixelWidth": 720
+      },
+      {
+        "dpr": 3,
+        "src": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/17/35/1c173553-ebe3-f887-781e-0cea15c57bce/1.png/1080x2341bb.jpg",
+        "width": 274,
+        "pixelWidth": 1080
+      }
+    ],
+    "noScriptStyles": true,
+    "languageSwitch": true,
+    "errors": []
+  },
+  "plywoodQA": {
+    "pilots": 3,
+    "widths": [
+      360,
+      390,
+      430,
+      1440
+    ],
+    "eventResponses": 39,
+    "eventStatus": 204,
+    "consoleExceptions": [],
+    "downloads": 1,
+    "checks": [
+      "import review",
+      "calculate",
+      "CSV/JSON download",
+      "units",
+      "reload",
+      "cancel import",
+      "oversize",
+      "DNT",
+      "denied storage",
+      "existing component transfer"
+    ]
+  },
+  "deployed": false
+}

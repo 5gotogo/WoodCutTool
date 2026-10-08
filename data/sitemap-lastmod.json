@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-09-26",
-    "hash": "417345c0fcc1f11b8128e9eb255ceace96ee62258319a2dde7b6197c90ccb763",
+    "lastmod": "2026-10-08",
+    "hash": "11ba764de1c336f7751fdc6283c7947187d07dbd84ccfe715598e44292bfba59",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -160,33 +160,33 @@
     "hashVersion": 2
   },
   "/apps/address-label-maker-and-envelope/": {
-    "lastmod": "2026-09-02",
-    "hash": "56c7b7005195a368e762dcb79a853c15405f5fa6fe762d011e907112f30b3e65",
+    "lastmod": "2026-10-08",
+    "hash": "35f5b18deca4b340b4b8622d8b017e78a0523c95dc5f8c84c62e71f94335af6f",
     "hashVersion": 2
   },
   "/apps/atomic-clock-precision-time/": {
-    "lastmod": "2026-09-02",
-    "hash": "7a4da7da2ae26f35ebd881264b5fa97967bae75446840def382c6a9c6eaf6553",
+    "lastmod": "2026-10-08",
+    "hash": "ff0cf9644e249c62139ee89796a60da6377e2113d6c2765e920746db97b23507",
     "hashVersion": 2
   },
   "/apps/blockfit-block-puzzle/": {
-    "lastmod": "2026-09-02",
-    "hash": "8a811451a06153679401bb1f69ba4599c7ca422218d9bab013d3906ba50521c7",
+    "lastmod": "2026-10-08",
+    "hash": "77701cad6424639fcbf5fe4c995afc02057534a3ae06d07975d818e557879403",
     "hashVersion": 2
   },
   "/apps/cadenza-metronome-and-tuner/": {
-    "lastmod": "2026-09-02",
-    "hash": "886a5d3657499da21b81276b75e75dfe9d648f0a907abf45000c3cb24bf290b8",
+    "lastmod": "2026-10-08",
+    "hash": "0d392126f93a7797bd5d288bc72d3c159c2727092b62adeeafacd7710c9a5a37",
     "hashVersion": 2
   },
   "/apps/casework-cabinet-cut-lists/": {
-    "lastmod": "2026-09-26",
-    "hash": "1de159351d9c38de30b15a3aa8ff48aa309948b37126c4367de75d1053039066",
+    "lastmod": "2026-10-08",
+    "hash": "bd941c83623f071d819c36c0161ce3739426ee8ad3f92cab3b53268cd53632c6",
     "hashVersion": 2
   },
   "/apps/colorpop-color-block-tap-game/": {
-    "lastmod": "2026-09-02",
-    "hash": "aae2a693166e7fd0144895d898de150ae8a3a9f96f3e321e1426dea38981396a",
+    "lastmod": "2026-10-08",
+    "hash": "6da13fc1304fee66f785162d4d48212ad9f04c9e7fb6d16ed7ba4cf2e7f6a856",
     "hashVersion": 2
   },
   "/apps/compare/": {
@@ -775,183 +775,183 @@
     "hashVersion": 2
   },
   "/apps/ductlab-hvac-duct-layout/": {
-    "lastmod": "2026-09-26",
-    "hash": "c1536ecdc905be8e9017c6a2c0e3ffc447d8ea6cfc71c7cc897e2d298e683f39",
+    "lastmod": "2026-10-08",
+    "hash": "f6ee5ab2465a29f7998d53e0a877ed0742cb79e9bb403d26679656bd97774380",
     "hashVersion": 2
   },
   "/apps/expensereportmaker-and-receipts/": {
-    "lastmod": "2026-09-02",
-    "hash": "9e20bdec42834e9993f72f1c8edc5e3a27e6d0efaa4c52970cdeb1a6ac929512",
+    "lastmod": "2026-10-08",
+    "hash": "a4ad5c1caf23a3d9960ac32def38f403c9bd1b7bb8fe2e404a86a3e706d37958",
     "hashVersion": 2
   },
   "/apps/export-backup-all-contacts-pro/": {
-    "lastmod": "2026-09-02",
-    "hash": "8ec871e30c234ab50caff9f9a50087e38036db7cbd3fe1ff6ad8a0ad7829f9ce",
+    "lastmod": "2026-10-08",
+    "hash": "368a119d50c55107a2f419800bf78839686a87dd8cca20e772a1befe9a35d648",
     "hashVersion": 2
   },
   "/apps/fast-rhythm-fasting-and-sleep/": {
-    "lastmod": "2026-09-02",
-    "hash": "10dade576a0144673aa60486aedde4dd9031b2be6d8e20f14adcaea3f0214efd",
+    "lastmod": "2026-10-08",
+    "hash": "c0f0e8555a1fb532cdafd0c64dba66e9267e490be994484b3acebac89b54c8aa",
     "hashVersion": 2
   },
   "/apps/floorquote-flooring-quotes/": {
-    "lastmod": "2026-09-26",
-    "hash": "49c5681bf57e9fceb23ea13f0eac6ff1470dbd363948906c34acf9e7a5dfb60e",
+    "lastmod": "2026-10-08",
+    "hash": "2aa2a15b829c7de655f0f1043423718ac8b9b7637742d69dde1ab10cf073602f",
     "hashVersion": 2
   },
   "/apps/fridgetrack-fridge-inventory/": {
-    "lastmod": "2026-09-02",
-    "hash": "f3f4938384335e98fbfd9d687395631554fd797068c41fcacc7c8096145625be",
+    "lastmod": "2026-10-08",
+    "hash": "1716c98df1c1478c1d59aa6d8d9505fc48a666cbfa545d6274ad7fa6b8454d51",
     "hashVersion": 2
   },
   "/apps/glowfeel-stress-ease/": {
-    "lastmod": "2026-09-02",
-    "hash": "070ec2ce5fe5f6327568375faa1f14ea50cd8d57a066f2d65f54b6d335c05977",
+    "lastmod": "2026-10-08",
+    "hash": "15a09757325d381d1dc3328f910b65fac95761a370d8a9c218bebb54360f6af5",
     "hashVersion": 2
   },
   "/apps/image-compressor-and-zip/": {
-    "lastmod": "2026-09-02",
-    "hash": "32a9d607b1a6be70f5bdf2120af9d7408857d72a69a14b4ea21161f19092336a",
+    "lastmod": "2026-10-08",
+    "hash": "09d37ee5a79e58c468e81ce2f6d02551ecb3c21655b7a3020f159c0a37be6376",
     "hashVersion": 2
   },
   "/apps/invoice-maker-estimate-pdf/": {
-    "lastmod": "2026-09-02",
-    "hash": "b8bb35ec0eb8f232ddff00ae8c8d3585abde71707950c4c40f4ec7ad4748242f",
+    "lastmod": "2026-10-08",
+    "hash": "4b4141aab628d053816a5095a2025107995d4ee2c75da88ee3a1b4c52d054d27",
     "hashVersion": 2
   },
   "/apps/jobphotolog-work-reports/": {
-    "lastmod": "2026-09-02",
-    "hash": "819b7c76291b5153efec736faff6fd7b1cfd5df954bd3b4e05baf589a0906987",
+    "lastmod": "2026-10-08",
+    "hash": "86c47f924d0fbd408457eb113ae92b6caabc784373fc75ed835696c0f962fb46",
     "hashVersion": 2
   },
   "/apps/magnifier-reader-big-text/": {
-    "lastmod": "2026-09-02",
-    "hash": "05afc0fbc7f722e3dfada54e668ce1c436fb3d10523273e7db80b852c73997bb",
+    "lastmod": "2026-10-08",
+    "hash": "ab354e9fb50f19d7e74393b43a2cce59123f2b1019ed7bf9d4266c0e1171bb57",
     "hashVersion": 2
   },
   "/apps/marketvendor-sales-and-profit/": {
-    "lastmod": "2026-09-02",
-    "hash": "73af91a4b7b7d7e2d34e832c2fcede65f15e9688b3acac64fcb1e9b633d4986d",
+    "lastmod": "2026-10-08",
+    "hash": "3e9f34913e9df467b562dbf0dae676a6a0f07f0138740ddbb193ce97a7ce51ff",
     "hashVersion": 2
   },
   "/apps/mindnest-secret-journal/": {
-    "lastmod": "2026-09-02",
-    "hash": "7ed0f19218dcff1ef6482df054a941c0941a1bcaf01f725c89006904c5d28541",
+    "lastmod": "2026-10-08",
+    "hash": "dc8b289876793dbaa95ba07c918653a9a1a7ccc44ff67bb537a956f019804eab",
     "hashVersion": 2
   },
   "/apps/moodloop-mood-tracker-journal/": {
-    "lastmod": "2026-09-02",
-    "hash": "77985e529e1eba11f4ff5e78ae9de979266565ed547ba8ec32372411d0131e0c",
+    "lastmod": "2026-10-08",
+    "hash": "705f98664cffe19ce63ebed058961480d187e7484d06a0b466354ebd95cdd544",
     "hashVersion": 2
   },
   "/apps/pantry-label-maker-kitchen/": {
-    "lastmod": "2026-09-02",
-    "hash": "aa53645be8d165653d597485d7529a0ea762892854a94518d7fa4c164c98d6ed",
+    "lastmod": "2026-10-08",
+    "hash": "0cb124add31a2ce3f2c65e813fbae89fe7a8feb4a14264af97ef949cc4aa6083",
     "hashVersion": 2
   },
   "/apps/pdf-scan-scanner-and-reader/": {
-    "lastmod": "2026-09-02",
-    "hash": "c57560c1c456629cd92575d83cb1f3c7389ecd17130ec97fb4f28fdcde62b25c",
+    "lastmod": "2026-10-08",
+    "hash": "48be91cf4071b19454c240d50221b63d03e1ef9c646ba8ac44f42410163d0e5a",
     "hashVersion": 2
   },
   "/apps/photosafe-private-photo-vault/": {
-    "lastmod": "2026-09-02",
-    "hash": "81f0c3f4e2ab3916a7d4b18cf65fa0dfc8ae90f2e3bf3ca8f9d0f18d5bc2fc93",
+    "lastmod": "2026-10-08",
+    "hash": "de102dac18cb6bce6b323bb1f27ee735477daae6357d55e1533a53ed40834323",
     "hashVersion": 2
   },
   "/apps/pickone-random-choice-picker/": {
-    "lastmod": "2026-09-02",
-    "hash": "8d8c85157b78d381af6b1def919fbdaefd805f66abb9ab945b67825618c53cca",
+    "lastmod": "2026-10-08",
+    "hash": "4af5885a066b25fcc6f449efc5385cdfdf6ea236c5c5df823551e4aa6ba826a3",
     "hashVersion": 2
   },
   "/apps/printer-app-print-pdf-docs/": {
-    "lastmod": "2026-09-02",
-    "hash": "322ee945f2b2c9b6fadc0cdee8c06e18eeabd984b8fd9a237ce2a6af1ff96d51",
+    "lastmod": "2026-10-08",
+    "hash": "ae16646d7732fe04571634ef972b4fde3be092aa1895c56d444e0045adf254a0",
     "hashVersion": 2
   },
   "/apps/private-meeting-transcriber/": {
-    "lastmod": "2026-09-02",
-    "hash": "c111f2ce423d2e225e25ce7159a0fb4f0f6d67e43c0a9b664173de3b58a851ff",
+    "lastmod": "2026-10-08",
+    "hash": "663d144deaae0216eb374dd46abfca75a0be1e404672652b02b6bff3ca2b476b",
     "hashVersion": 2
   },
   "/apps/ritualix-habits-and-streaks/": {
-    "lastmod": "2026-09-02",
-    "hash": "37da4f2450368cd2142d76214c174be330f5bd85a666b6078fc5589843fa78c5",
+    "lastmod": "2026-10-08",
+    "hash": "29896aebc5a993a77410044bef7edc868ec6461cda7a1a603bfda4a6483042a0",
     "hashVersion": 2
   },
   "/apps/shelf-planner-cabinet-shelves/": {
-    "lastmod": "2026-09-26",
-    "hash": "25356ec086ff909fb407b7e3a478474605c73a1f9cf9003b4efc71ff987f3355",
+    "lastmod": "2026-10-08",
+    "hash": "3f2d5ae73cf9d70bbc6289d31b6b8bccc28c2958f4642bb30b1e189a6e057637",
     "hashVersion": 2
   },
   "/apps/signaturemark-brand-mark/": {
-    "lastmod": "2026-09-02",
-    "hash": "ce35642059b4698c593f2c1d1ada12102093d048bb874ab8ef04c7e2ea699649",
+    "lastmod": "2026-10-08",
+    "hash": "559396b0cae417f0e123e3aeecbad18719f103c4a1b0af0c663b9f624aeae38b",
     "hashVersion": 2
   },
   "/apps/snapcleaner-clean-photos/": {
-    "lastmod": "2026-09-02",
-    "hash": "f73a49cb50d79177af4f454aa13e903bd7bbb0e174019a66d9630c738e1e8d79",
+    "lastmod": "2026-10-08",
+    "hash": "baf0be41451c0755cf62e44b080184eb31e79d642475788274f4769f93a85a99",
     "hashVersion": 2
   },
   "/apps/snaplabel-photo-text-label/": {
-    "lastmod": "2026-09-02",
-    "hash": "918997597d8645f9e760f592293ecb053f384d8bb47b6182d1eff65c52fa7e70",
+    "lastmod": "2026-10-08",
+    "hash": "38094e88630bf4fcc20717b033be20f2358b7ef07651433362c9af044b576e1d",
     "hashVersion": 2
   },
   "/apps/snapqr-qr-generator-app/": {
-    "lastmod": "2026-09-02",
-    "hash": "16c6dcc6ba3b6ecf5087db8979acc7aa652c0b1655d868a3cabb5fdc9928764e",
+    "lastmod": "2026-10-08",
+    "hash": "2384ad705ba164fe11dfc5017fb85b53449f624fa1267ab65f4626048f0454ff",
     "hashVersion": 2
   },
   "/apps/snapreceipt-expenses-and-tax/": {
-    "lastmod": "2026-09-02",
-    "hash": "61a2b6d0fd60338e230687f67f395de5516aff03b4b55232159b18cbeb689863",
+    "lastmod": "2026-10-08",
+    "hash": "796a37cfc8980669f3c5f1dd0d97b58872dbb31591cb1dfa2810fea271e2f941",
     "hashVersion": 2
   },
   "/apps/snapstock-inventory-scanner/": {
-    "lastmod": "2026-09-02",
-    "hash": "b6ae148f37e892f9ca389a33c351247aec7a0bcd4caaa3732011045017459102",
+    "lastmod": "2026-10-08",
+    "hash": "acb2a9b61729a8392a7beb76ec9ae984878597e8ac8a869043f50e12148ec3c5",
     "hashVersion": 2
   },
   "/apps/speaker-tools-audio-test/": {
-    "lastmod": "2026-09-02",
-    "hash": "c2c858029ae32895ed3b3c7a455ee166637278b14047f7682bbc46e9370d6949",
+    "lastmod": "2026-10-08",
+    "hash": "a4e3abce4150b8c7849fa47b531f7316da1243d7a518dc97a7a16bed77b465dc",
     "hashVersion": 2
   },
   "/apps/spring-miter-bevel/": {
-    "lastmod": "2026-09-26",
-    "hash": "7466dac61650206396784acd3b97f874beb9f3efbaaaa5fa99ecec1cae9f7336",
+    "lastmod": "2026-10-08",
+    "hash": "d3e7963fe08074316d0f140a8704795d94c91b6390d9a826daf84b8c30e52cd1",
     "hashVersion": 2
   },
   "/apps/stringer/": {
-    "lastmod": "2026-09-26",
-    "hash": "70a3d4c1e3cb43cdf4bfe9166983d680c63fdd39c646b4efe322c77b4c359775",
+    "lastmod": "2026-10-08",
+    "hash": "ae58ea2c8ce3827711f29be669b5b66c1d67f9000927d18dda01998dc8990248",
     "hashVersion": 2
   },
   "/apps/thumbtype-typing-speed-test/": {
-    "lastmod": "2026-09-02",
-    "hash": "443cb55559061402a793a510f55a1cb2d91b69b8fbbcd3b5abcc9094d00e0702",
+    "lastmod": "2026-10-08",
+    "hash": "58137ba31c2210bb2004deeb76e0995ba83914f5649d8ab001b915207ee54c8c",
     "hashVersion": 2
   },
   "/apps/tilefit-tile-layout-planner/": {
-    "lastmod": "2026-09-26",
-    "hash": "58d263689be3f1bb234e1c3c58ad49539293b9f20bf439c8bc5965239f86e104",
+    "lastmod": "2026-10-08",
+    "hash": "cc588750218216ab34b24892d4d6bbc36bd40b0560d2a4b29c9e707086adef7e",
     "hashVersion": 2
   },
   "/apps/tinnitus-relief-sound-masking/": {
-    "lastmod": "2026-09-08",
-    "hash": "f87fb2263fa98d817741ff823ac475afba9ebe586de0341b437e72cfd8ddf5ce",
+    "lastmod": "2026-10-08",
+    "hash": "5dc801ccf13d5022d025aaffa9731b2331bb0844eee82a4de547bf38ccc96176",
     "hashVersion": 2
   },
   "/apps/woodcheck-carpentry-checklist/": {
-    "lastmod": "2026-09-26",
-    "hash": "0a758a238559ff46ad0e4147a301c598e3a281b79c690ef6ecd516e73a6b2575",
+    "lastmod": "2026-10-08",
+    "hash": "e325620f8ccd24a9717e04806edb20b6ac5c200bfb5816d03f2271ccdf3d07ea",
     "hashVersion": 2
   },
   "/apps/work-shift-schedule-calendar/": {
-    "lastmod": "2026-09-02",
-    "hash": "63e47260a5aa9a097247491d4a3d6e25f5df016745379007a37510f5cdea3f05",
+    "lastmod": "2026-10-08",
+    "hash": "76fe398d09a0f56a2b4ac052099ca374c23ae8104542ab212294891541796823",
     "hashVersion": 2
   },
   "/baluster-spacing-calculator/": {

@@ -10,6 +10,7 @@ const origin = args.origin || process.env.WCT_PERF_ORIGIN || "http://127.0.0.1:4
 const cdpPort = Number(args["cdp-port"] || process.env.WCT_CDP_PORT || 9337);
 const runs = Math.max(1, Number(args.runs || process.env.WCT_PERF_RUNS || 3));
 const deviceScaleFactor = Math.max(1, Number(args.dpr || process.env.WCT_PERF_DPR || 1));
+const language = args.lang || "en";
 const routes = (args.routes || process.env.WCT_PERF_ROUTES || [
   "/",
   "/blog/",
@@ -28,6 +29,13 @@ const routes = (args.routes || process.env.WCT_PERF_ROUTES || [
   "/apps/",
   "/plywood-cut-calculator/",
 ].join(",")).split(",").map((route) => route.trim()).filter(Boolean);
+
+// Truncated analytics labels are easy to map to nonexistent routes. A styled
+// 404 is not evidence about the intended page's loading performance.
+for (const route of routes) {
+  const response = await fetch(`${origin}${route}`, { method: "HEAD" });
+  if (!response.ok) throw new Error(`${route}: HTTP ${response.status}; refusing to measure an error page`);
+}
 
 const tab = await (await fetch(`http://127.0.0.1:${cdpPort}/json/new?about:blank`, { method: "PUT" })).json();
 const ws = new WebSocket(tab.webSocketDebuggerUrl);
@@ -84,6 +92,7 @@ await send("Network.emulateNetworkConditions", {
 });
 await send("Page.addScriptToEvaluateOnNewDocument", {
   source: `
+    try { localStorage.setItem("woodcuttool-lang", ${JSON.stringify(language)}); } catch {}
     window.__wctPerformance = { lcp: 0, lcpElement: "", cls: 0, longTasks: [] };
     new PerformanceObserver((list) => {
       for (const entry of list.getEntries()) {
@@ -176,7 +185,7 @@ try {
   }
 
   writeFileSync(output, `${JSON.stringify({
-    scope: `Local gzip preview; 390x844 at ${deviceScaleFactor}x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.`,
+    scope: `Gzip preview; ${language} language, 390x844 at ${deviceScaleFactor}x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.`,
     origin,
     routes,
     runs,

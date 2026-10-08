@@ -77,3 +77,24 @@
 
 /assets/cabinet-studio.css
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/plywood.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/checklists.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/legal.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/plywood-core.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/plywood-workflow.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/cut-handoff-model.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/plywood-workflow.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

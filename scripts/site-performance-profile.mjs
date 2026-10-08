@@ -44,6 +44,18 @@ export function performanceProfile(file, html) {
     return { stylesheet: "/assets/apps.css", runtimes: ["/assets/content-page.js"] };
   }
 
+  if (file === "plywood-cut-calculator/index.html") {
+    return { stylesheet: "/assets/plywood.css", runtimes: ["/assets/content-page.js"] };
+  }
+
+  if (file.startsWith("checklists/")) {
+    return { stylesheet: "/assets/checklists.css", runtimes: ["/assets/content-page.js"] };
+  }
+
+  if (file.startsWith("legal/")) {
+    return { stylesheet: "/assets/legal.css", runtimes: ["/assets/content-page.js"] };
+  }
+
   if (file === "index.html") {
     return { stylesheet: "/assets/interactive.css", runtimes: ["/assets/content-page.js", "/assets/home.js"] };
   }
