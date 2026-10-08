@@ -5,8 +5,8 @@
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-10-04",
-    "hash": "875cca3afb1484e0afc89d98c43dfda2c1b86081d6f88b453d655b051a43879e",
+    "lastmod": "2026-10-08",
+    "hash": "505b6dce96a213ac32b8eabe1e88e0c3856fc2e55af90eae7cbe21358a2ec3e8",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -6735,23 +6735,23 @@
     "hashVersion": 2
   },
   "/edge-banding/": {
-    "lastmod": "2026-10-04",
-    "hash": "37095038f470e31e45bcd2672f24b7a0bc7c1c620759cbd2ff0b8a8e4c6b091d",
+    "lastmod": "2026-10-08",
+    "hash": "39aac031a09e24a4d82a15b1ccb26be09310ff56cdbdb28df506bc74e1bf3de5",
     "hashVersion": 2
   },
   "/edge-banding/finished-size-to-cut-size/": {
-    "lastmod": "2026-10-04",
-    "hash": "b12d34bcae93969f50aff9258d65569a0584c2714d14120a6d23a7858f6befa7",
+    "lastmod": "2026-10-08",
+    "hash": "e860d883700b1e12db5306d8974869b99394bcd0999cb9769593d2ab92b888d3",
     "hashVersion": 2
   },
   "/edge-banding/shop-release-checklist/": {
-    "lastmod": "2026-10-04",
-    "hash": "8878c1015faf232ebae385e0a3efb03486b520c3e96e0819b756aa2dd39a3d79",
+    "lastmod": "2026-10-08",
+    "hash": "b02baab18adf0d34b1b4099727dc033e281da20b4b834c43751296ac1798fa24",
     "hashVersion": 2
   },
   "/edge-banding/tape-width-and-roll-allowance/": {
-    "lastmod": "2026-10-04",
-    "hash": "1f54443e3f57435ee0856af7ef8e7e9b30cb59d43e2465b0c54c39b36bc46a2d",
+    "lastmod": "2026-10-08",
+    "hash": "df51e26b420fcf9ae6566a1f2bcb4bdcf72d67b0b64821edee78797f912d75f0",
     "hashVersion": 2
   },
   "/estimating/": {
@@ -7172,6 +7172,26 @@
   "/fence-stain-calculator/": {
     "lastmod": "2026-09-16",
     "hash": "bb6709032e40be4cf25a2088c7c5544f620ca3e7aa000e6d8df1639f9af768c8",
+    "hashVersion": 2
+  },
+  "/finishing-planner/": {
+    "lastmod": "2026-10-08",
+    "hash": "411a9cc531f380d321e4bf077cbe91ca93a17f24119819d628f22d57f7fbc533",
+    "hashVersion": 2
+  },
+  "/finishing-planner/coverage-coats-and-pack-sizes/": {
+    "lastmod": "2026-10-08",
+    "hash": "ccf36721ae6446150fa66ac7e60d279ea6c7f7c83933eae2ecb476c7082dd60e",
+    "hashVersion": 2
+  },
+  "/finishing-planner/finish-plan-before-assembly/": {
+    "lastmod": "2026-10-08",
+    "hash": "f5384dd78b323be8543616f391042f07cd023dbde0316dce927b8b59f4b13782",
+    "hashVersion": 2
+  },
+  "/finishing-planner/surface-area-from-cut-list/": {
+    "lastmod": "2026-10-08",
+    "hash": "917de47ae90dd2a4d215dc546c71f4c64e0b93559be8a07b5c6c7fc9b07b40e2",
     "hashVersion": 2
   },
   "/fraction-calculator/": {
@@ -10165,8 +10185,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-10-04",
-    "hash": "00b156b2ed3dd373838af90c9861d59ed5dc5c2354cd838729a0603925d2376f",
+    "lastmod": "2026-10-08",
+    "hash": "48c51f7c93de1c1d45007792940e92f1f09c1c9cfacea6edceffb82f55f20725",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

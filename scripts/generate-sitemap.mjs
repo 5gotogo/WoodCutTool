@@ -157,7 +157,7 @@ function sitemapMeta(route) {
     return { changefreq: "weekly", priority: "0.96" };
   }
 
-  if (route === "/cabinet-studio/" || route === "/edge-banding/") {
+  if (route === "/cabinet-studio/" || route === "/edge-banding/" || route === "/finishing-planner/") {
     return { changefreq: "monthly", priority: "0.94" };
   }
 
@@ -431,7 +431,7 @@ const explicitToolRoutes = new Set([
 ]);
 
 function sitemapGroup(route) {
-  if (explicitToolRoutes.has(route) || route.startsWith("/tools/") || route.startsWith("/edge-banding/")) return "tools";
+  if (explicitToolRoutes.has(route) || route.startsWith("/tools/") || route.startsWith("/edge-banding/") || route.startsWith("/finishing-planner/")) return "tools";
   if (route.startsWith("/projects/") || route.startsWith("/one-sheet-projects/")) return "projects";
   if (route.startsWith("/learn/")) return "learn";
   if (route.startsWith("/templates/")) return "templates";

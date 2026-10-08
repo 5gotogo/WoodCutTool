@@ -28,6 +28,8 @@ That command also compiles `assets/apps.css` from `assets/styles.css` using Ligh
 
 ## Validation
 
+The [Finishing Planner](docs/finishing-planner.md) at `/finishing-planner/` extends the panel workflow to coated surfaces, product coverage and a local purchase list. Regenerate it with `npm run generate:finishing`.
+
 ```sh
 npm run check
 ```
