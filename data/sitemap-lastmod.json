@@ -1,12 +1,12 @@
 {
   "/": {
-    "lastmod": "2026-10-04",
-    "hash": "e4532e33a639abf7db4d7ee509842bd175b8a55275eaaab15af9080dbafc5648",
+    "lastmod": "2026-10-09",
+    "hash": "ba214c465fe2b078685ed574548b2fc2fa73cb7458791db8135fffab48296333",
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-10-08",
-    "hash": "505b6dce96a213ac32b8eabe1e88e0c3856fc2e55af90eae7cbe21358a2ec3e8",
+    "lastmod": "2026-10-09",
+    "hash": "6b91698a389ad2414bece15d84d5d414c934e886e5fc3735910859d315a650bd",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -952,6 +952,26 @@
   "/apps/work-shift-schedule-calendar/": {
     "lastmod": "2026-10-08",
     "hash": "76fe398d09a0f56a2b4ac052099ca374c23ae8104542ab212294891541796823",
+    "hashVersion": 2
+  },
+  "/assembly-check/": {
+    "lastmod": "2026-10-09",
+    "hash": "5fe42b9cb24c081b2e441215d274445f4daf5d7425d64832adf6b45b12e6cc71",
+    "hashVersion": 2
+  },
+  "/assembly-check/dry-fit-release/": {
+    "lastmod": "2026-10-09",
+    "hash": "93c5bbf430af6fec7c6551e767062f707ccf3d0dea7b737dcb35e6a57733cfc2",
+    "hashVersion": 2
+  },
+  "/assembly-check/measure-diagonals/": {
+    "lastmod": "2026-10-09",
+    "hash": "9e08eed46d42d74f9bbc9cb2af98184f0a1b5d7690dd7aea4fe3dee120581589",
+    "hashVersion": 2
+  },
+  "/assembly-check/tolerance-and-repeatability/": {
+    "lastmod": "2026-10-09",
+    "hash": "9725399054d914a7577ef5e63cec026de7dba1f35e3d6d270d8a43c6961f80cf",
     "hashVersion": 2
   },
   "/baluster-spacing-calculator/": {
@@ -5955,8 +5975,8 @@
     "hashVersion": 2
   },
   "/cabinet-studio/": {
-    "lastmod": "2026-10-04",
-    "hash": "113ba61d5d0ce3d13d36bbe8d805bf7e4643684aa6817dcd0b59b57f39db716d",
+    "lastmod": "2026-10-09",
+    "hash": "178cdb0ab3734ff96b512779f708d40324c82979947eea35cb08be548cee9689",
     "hashVersion": 2
   },
   "/checklists/appliance-opening-release/": {
@@ -6735,23 +6755,23 @@
     "hashVersion": 2
   },
   "/edge-banding/": {
-    "lastmod": "2026-10-08",
-    "hash": "39aac031a09e24a4d82a15b1ccb26be09310ff56cdbdb28df506bc74e1bf3de5",
+    "lastmod": "2026-10-09",
+    "hash": "64704d36536aa086b51e8bc6d7de2b8988d025657538b40b66cc61fb1c46fafd",
     "hashVersion": 2
   },
   "/edge-banding/finished-size-to-cut-size/": {
-    "lastmod": "2026-10-08",
-    "hash": "e860d883700b1e12db5306d8974869b99394bcd0999cb9769593d2ab92b888d3",
+    "lastmod": "2026-10-09",
+    "hash": "1b861619f6915e6729d892ec2bfda757313aa784f0dfda6bb6e1b8f6cf4d6957",
     "hashVersion": 2
   },
   "/edge-banding/shop-release-checklist/": {
-    "lastmod": "2026-10-08",
-    "hash": "b02baab18adf0d34b1b4099727dc033e281da20b4b834c43751296ac1798fa24",
+    "lastmod": "2026-10-09",
+    "hash": "ef42226f9a586c92ed025e9a71868a7857577d505ed0394c13612219fef1440b",
     "hashVersion": 2
   },
   "/edge-banding/tape-width-and-roll-allowance/": {
-    "lastmod": "2026-10-08",
-    "hash": "df51e26b420fcf9ae6566a1f2bcb4bdcf72d67b0b64821edee78797f912d75f0",
+    "lastmod": "2026-10-09",
+    "hash": "139a7218959401b7414d0b9770e46175fdfad491b4b1e5361215feba9b77c107",
     "hashVersion": 2
   },
   "/estimating/": {
@@ -7175,8 +7195,8 @@
     "hashVersion": 2
   },
   "/finishing-planner/": {
-    "lastmod": "2026-10-08",
-    "hash": "411a9cc531f380d321e4bf077cbe91ca93a17f24119819d628f22d57f7fbc533",
+    "lastmod": "2026-10-09",
+    "hash": "95ae6f43b73915b2775605503de2dd1ac1f6d21ff97ef4a1cecdd0936473287a",
     "hashVersion": 2
   },
   "/finishing-planner/coverage-coats-and-pack-sizes/": {
@@ -10185,8 +10205,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-10-08",
-    "hash": "48c51f7c93de1c1d45007792940e92f1f09c1c9cfacea6edceffb82f55f20725",
+    "lastmod": "2026-10-09",
+    "hash": "e4f96417490ea273dd68da80ec006709f4ee4926f52b658ead34ec35b5d7d85d",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

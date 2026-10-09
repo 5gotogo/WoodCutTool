@@ -498,6 +498,7 @@ function pageGraph(tool) {
 function toolsHubGraph() {
   const browserTools = softwareTools.filter((tool) => !tool.path.startsWith("/apps/"));
   const referenceTools = [
+    { path: "/assembly-check/", name: "Assembly Check" },
     { path: "/cabinet-studio/", name: "Cabinet Studio" },
     { path: "/finishing-planner/", name: "Finishing Planner" },
     {
