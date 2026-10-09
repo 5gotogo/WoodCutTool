@@ -28,7 +28,11 @@ function pagesFor(stylesheet) {
 function compile(stylesheet) {
   const pages = pagesFor(stylesheet);
   // Generated inline styles must not retain obsolete class names on rebuild.
-  const html = pages.map((file) => readFileSync(join(root, file), "utf8").replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ""));
+  const html = pages.map((file) => readFileSync(join(root, file), "utf8")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
+    // A bundle name such as workflow-shell.css is not an HTML class. Exclude
+    // links too so CSS selection is identical before and after inlining.
+    .replace(/<link\b[^>]*\brel=["']stylesheet["'][^>]*>/gi, ""));
   const runtimePaths = new Set(["assets/site-chrome.js", "assets/conversion.js"]);
   for (const source of html) {
     for (const match of source.matchAll(/<script\b[^>]*\bsrc=["']\/(assets\/[^"'?]+\.js)(?:\?[^"']*)?["']/g)) {
@@ -78,6 +82,29 @@ export function compileConstructionStyles() { return compile("/assets/constructi
 export function compilePlywoodStyles() { return compile("/assets/plywood.css"); }
 export function compileChecklistStyles() { return compile("/assets/checklists.css"); }
 export function compileLegalStyles() { return compile("/assets/legal.css"); }
+export function compileGlossaryStyles() { return compile("/assets/glossary.css"); }
+export function compileWorkflowStyles() { return compile("/assets/workflow-shell.css"); }
+
+export function inlineScreenshotRouteStyles() {
+  for (const [marker, result] of [
+    ["glossary", compileGlossaryStyles()],
+    ["workflow", compileWorkflowStyles()],
+  ]) {
+    for (const file of result.pages) {
+      const path = join(root, file);
+      const html = readFileSync(path, "utf8");
+      // Keep the complete custom stylesheet after the shared shell, just as in
+      // the original link order. These small text/SVG-led pages need no CSS RTT.
+      const custom = marker === "workflow" ? file.split("/")[0] : null;
+      const css = result.css + (custom ? readFileSync(join(root, "assets", `${custom}.css`), "utf8") : "");
+      const markup = `<style data-${marker}-styles>${css}</style>`;
+      let next = html.replace(new RegExp(`<style data-${marker}-styles>[\\s\\S]*?<\\/style>|<link rel="stylesheet" href="${marker === "glossary" ? "/assets/glossary.css" : "/assets/workflow-shell.css"}">`, "g"), () => markup);
+      if (custom) next = next.replace(`<link rel="stylesheet" href="/assets/${custom}.css">`, "");
+      if (next !== html) writeFileSync(path, next);
+    }
+    console.log(`Inlined ${marker} styles for ${result.pages.length} pages; shared CSS ${Buffer.byteLength(result.css)} bytes.`);
+  }
+}
 
 export function inlineWoodStyles() {
   // These text-led pages fit in a small complete bundle, including all menu
@@ -104,6 +131,8 @@ export function buildSiteStyles() {
     ["plywood.css", compilePlywoodStyles()],
     ["checklists.css", compileChecklistStyles()],
     ["legal.css", compileLegalStyles()],
+    ["glossary.css", compileGlossaryStyles()],
+    ["workflow-shell.css", compileWorkflowStyles()],
   ]) {
     writeFileSync(join(root, "assets", name), result.css);
     console.log(`Built ${name} for ${result.pages.length} pages: ${Buffer.byteLength(result.css)} bytes.`);

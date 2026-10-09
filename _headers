@@ -98,3 +98,27 @@
 
 /assets/plywood-workflow.css
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/glossary.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/workflow-shell.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/finishing-planner.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/finishing-core.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/finishing-planner.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/edge-banding.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/edge-banding-core.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/edge-banding.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

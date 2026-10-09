@@ -56,6 +56,14 @@ export function performanceProfile(file, html) {
     return { stylesheet: "/assets/legal.css", runtimes: ["/assets/content-page.js"] };
   }
 
+  if (file.startsWith("glossary/")) {
+    return { stylesheet: "/assets/glossary.css", runtimes: ["/assets/content-page.js"] };
+  }
+
+  if (/^(?:finishing-planner|edge-banding|cabinet-studio)\//.test(file)) {
+    return { stylesheet: "/assets/workflow-shell.css", runtimes: ["/assets/content-page.js"] };
+  }
+
   if (file === "index.html") {
     return { stylesheet: "/assets/interactive.css", runtimes: ["/assets/content-page.js", "/assets/home.js"] };
   }

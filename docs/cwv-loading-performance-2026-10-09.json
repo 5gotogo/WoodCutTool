@@ -1,0 +1,6341 @@
+{
+  "before": {
+    "scope": "Gzip preview; en language, 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+    "origin": "http://127.0.0.1:4189",
+    "routes": [
+      "/",
+      "/cabinet-studio/",
+      "/apps/ductlab-hvac-duct-layout/",
+      "/wood/norway-spruce/",
+      "/finishing-planner/",
+      "/wood/east-indian-rosewood/",
+      "/edge-banding/finished-size-to-cut-size/",
+      "/glossary/countersink/",
+      "/wood/alder/",
+      "/wood/osage-orange/",
+      "/wood/maple/",
+      "/wood/oak/",
+      "/wood/port-orford-cedar/",
+      "/legal/cutlist/privacy/",
+      "/glossary/trim-allowance/"
+    ],
+    "runs": 3,
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "lcp": 1048,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 1048,
+        "ttfb": 4.5,
+        "domReady": 678.5999999940395,
+        "load": 699.5,
+        "htmlTransfer": 10164,
+        "resourceTransfer": 120979,
+        "cssJsTransfer": 37217,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 678,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 16559,
+            "encoded": 16259,
+            "duration": 352.30000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 171.29999999701977
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 344.70000000298023
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 216.29999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 223.40000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/cabinet-studio/",
+        "run": 1,
+        "lcp": 944,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 944,
+        "ttfb": 2.2999999970197678,
+        "domReady": 730.4000000059605,
+        "load": 884.7000000029802,
+        "htmlTransfer": 6150,
+        "resourceTransfer": 52891,
+        "cssJsTransfer": 51697,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 678,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "g#cs-grid.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/cabinet-studio.css",
+            "type": "link",
+            "transfer": 5638,
+            "encoded": 5338,
+            "duration": 268.29999999701977
+          },
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 379.90000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 245.09999999403954
+          },
+          {
+            "path": "/assets/cabinet-studio.js",
+            "type": "script",
+            "transfer": 10426,
+            "encoded": 10126,
+            "duration": 350.19999998807907
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 395.29999999701977
+          },
+          {
+            "path": "/assets/cabinet-studio-core.js",
+            "type": "script",
+            "transfer": 4479,
+            "encoded": 4179,
+            "duration": 171.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 155.70000000298023
+          }
+        ]
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "run": 1,
+        "lcp": 1020,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 752,
+        "ttfb": 2.2999999970197678,
+        "domReady": 568.3999999910593,
+        "load": 1390.5999999940395,
+        "htmlTransfer": 5031,
+        "resourceTransfer": 204153,
+        "cssJsTransfer": 29992,
+        "imageTransfer": 173433,
+        "resourceCount": 10,
+        "domNodes": 273,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "img",
+          "img"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/apps.css",
+            "type": "link",
+            "transfer": 11515,
+            "encoded": 11215,
+            "duration": 349.20000000298023
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 378.8999999910593
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.1000000089407
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 205.6000000089407
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 170.5
+          }
+        ]
+      },
+      {
+        "route": "/wood/norway-spruce/",
+        "run": 1,
+        "lcp": 280,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 2.2000000029802322,
+        "domReady": 500.40000000596046,
+        "load": 619.4000000059605,
+        "htmlTransfer": 11755,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 243.79999999701977
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 168.1000000089407
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 190.90000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/finishing-planner/",
+        "run": 1,
+        "lcp": 580,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 580,
+        "ttfb": 2.2999999970197678,
+        "domReady": 601.8999999910593,
+        "load": 762.1999999880791,
+        "htmlTransfer": 4237,
+        "resourceTransfer": 41896,
+        "cssJsTransfer": 40702,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 483,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 334.70000000298023
+          },
+          {
+            "path": "/assets/finishing-planner.css",
+            "type": "link",
+            "transfer": 2597,
+            "encoded": 2297,
+            "duration": 199.6000000089407
+          },
+          {
+            "path": "/assets/finishing-planner.js",
+            "type": "script",
+            "transfer": 4501,
+            "encoded": 4201,
+            "duration": 237.20000000298023
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 350
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.29999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 229.8999999910593
+          },
+          {
+            "path": "/assets/finishing-core.js",
+            "type": "script",
+            "transfer": 2450,
+            "encoded": 2150,
+            "duration": 164.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.90000000596046
+          }
+        ]
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "run": 1,
+        "lcp": 280,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 2.7000000029802322,
+        "domReady": 505,
+        "load": 613.4000000059605,
+        "htmlTransfer": 11809,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.59999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 244.70000000298023
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.1000000089407
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.29999999701977
+          }
+        ]
+      },
+      {
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "run": 1,
+        "lcp": 544,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 544,
+        "ttfb": 2.300000011920929,
+        "domReady": 535.8000000119209,
+        "load": 686.3000000119209,
+        "htmlTransfer": 3401,
+        "resourceTransfer": 35222,
+        "cssJsTransfer": 34028,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 217,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 320.29999999701977
+          },
+          {
+            "path": "/assets/edge-banding.css",
+            "type": "link",
+            "transfer": 2874,
+            "encoded": 2574,
+            "duration": 200.30000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.8999999910593
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.59999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 333.69999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 152.19999998807907
+          }
+        ]
+      },
+      {
+        "route": "/glossary/countersink/",
+        "run": 1,
+        "lcp": 520,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 520,
+        "ttfb": 2.199999988079071,
+        "domReady": 521.1999999880791,
+        "load": 675.1999999880791,
+        "htmlTransfer": 2500,
+        "resourceTransfer": 33076,
+        "cssJsTransfer": 31154,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 230,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 312.20000000298023
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 319.80000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.3999999910593
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.3999999910593
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 155.1000000089407
+          }
+        ]
+      },
+      {
+        "route": "/wood/alder/",
+        "run": 1,
+        "lcp": 276,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 276,
+        "ttfb": 2,
+        "domReady": 509.5,
+        "load": 622.4000000059605,
+        "htmlTransfer": 11741,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 251.6000000089407
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 168.79999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.70000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 151.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/wood/osage-orange/",
+        "run": 1,
+        "lcp": 284,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 284,
+        "ttfb": 2.9000000059604645,
+        "domReady": 507.09999999403954,
+        "load": 628,
+        "htmlTransfer": 11758,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.70000000298023
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.29999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/wood/maple/",
+        "run": 1,
+        "lcp": 260,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 260,
+        "ttfb": 2.5999999940395355,
+        "domReady": 499.5,
+        "load": 613.7999999970198,
+        "htmlTransfer": 12430,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 312,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.20000000298023
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 244.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 152
+          }
+        ]
+      },
+      {
+        "route": "/wood/oak/",
+        "run": 1,
+        "lcp": 276,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 276,
+        "ttfb": 2.2999999970197678,
+        "domReady": 505.3999999910593,
+        "load": 626.2999999970198,
+        "htmlTransfer": 11714,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.29999999701977
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.79999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160
+          }
+        ]
+      },
+      {
+        "route": "/wood/port-orford-cedar/",
+        "run": 1,
+        "lcp": 268,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 268,
+        "ttfb": 2.0999999940395355,
+        "domReady": 507.79999999701977,
+        "load": 624.5,
+        "htmlTransfer": 11787,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 254.09999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.29999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.5
+          }
+        ]
+      },
+      {
+        "route": "/legal/cutlist/privacy/",
+        "run": 1,
+        "lcp": 620,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 620,
+        "ttfb": 2,
+        "domReady": 482.79999999701977,
+        "load": 640.3999999910593,
+        "htmlTransfer": 2449,
+        "resourceTransfer": 28040,
+        "cssJsTransfer": 26118,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 200,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/legal.css",
+            "type": "link",
+            "transfer": 7641,
+            "encoded": 7341,
+            "duration": 266.59999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 175.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 304.20000000298023
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 213.20000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.70000000298023
+          }
+        ]
+      },
+      {
+        "route": "/glossary/trim-allowance/",
+        "run": 1,
+        "lcp": 524,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 524,
+        "ttfb": 1.7000000029802322,
+        "domReady": 524.4000000059605,
+        "load": 678.5,
+        "htmlTransfer": 2330,
+        "resourceTransfer": 33076,
+        "cssJsTransfer": 31154,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 224,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 313
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.1000000089407
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 326.20000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 153.70000000298023
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "lcp": 700,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 700,
+        "ttfb": 4.199999988079071,
+        "domReady": 671.8999999910593,
+        "load": 702.2999999970198,
+        "htmlTransfer": 10164,
+        "resourceTransfer": 39139,
+        "cssJsTransfer": 37217,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 678,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 171.29999999701977
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 224
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 344.90000000596046
+          },
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 16559,
+            "encoded": 16259,
+            "duration": 351.6000000089407
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 216.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.5
+          }
+        ]
+      },
+      {
+        "route": "/cabinet-studio/",
+        "run": 2,
+        "lcp": 664,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 664,
+        "ttfb": 2.2999999970197678,
+        "domReady": 731.7000000029802,
+        "load": 893.2999999970198,
+        "htmlTransfer": 6150,
+        "resourceTransfer": 52891,
+        "cssJsTransfer": 51697,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 678,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "g#cs-grid.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 387.20000000298023
+          },
+          {
+            "path": "/assets/cabinet-studio.css",
+            "type": "link",
+            "transfer": 5638,
+            "encoded": 5338,
+            "duration": 290.1000000089407
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 184.79999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 244.70000000298023
+          },
+          {
+            "path": "/assets/cabinet-studio.js",
+            "type": "script",
+            "transfer": 10426,
+            "encoded": 10126,
+            "duration": 349.59999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 401.5
+          },
+          {
+            "path": "/assets/cabinet-studio-core.js",
+            "type": "script",
+            "transfer": 4479,
+            "encoded": 4179,
+            "duration": 178.90000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 161.90000000596046
+          }
+        ]
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "run": 2,
+        "lcp": 952,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 616,
+        "ttfb": 1.6000000089406967,
+        "domReady": 612.6000000089407,
+        "load": 1396.2000000029802,
+        "htmlTransfer": 5031,
+        "resourceTransfer": 204153,
+        "cssJsTransfer": 29992,
+        "imageTransfer": 173433,
+        "resourceCount": 10,
+        "domNodes": 273,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "img",
+          "img"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/apps.css",
+            "type": "link",
+            "transfer": 11515,
+            "encoded": 11215,
+            "duration": 395
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 425.20000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 184.19999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 228.8999999910593
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 177.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/wood/norway-spruce/",
+        "run": 2,
+        "lcp": 260,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 260,
+        "ttfb": 2.6000000089406967,
+        "domReady": 502.79999999701977,
+        "load": 624.9000000059605,
+        "htmlTransfer": 11755,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 253.3999999910593
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 171
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.20000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.20000000298023
+          }
+        ]
+      },
+      {
+        "route": "/finishing-planner/",
+        "run": 2,
+        "lcp": 584,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 584,
+        "ttfb": 2.2000000029802322,
+        "domReady": 610.6000000089407,
+        "load": 763.1000000089407,
+        "htmlTransfer": 4237,
+        "resourceTransfer": 41896,
+        "cssJsTransfer": 40702,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 483,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 341.79999999701977
+          },
+          {
+            "path": "/assets/finishing-planner.css",
+            "type": "link",
+            "transfer": 2597,
+            "encoded": 2297,
+            "duration": 206.5
+          },
+          {
+            "path": "/assets/finishing-planner.js",
+            "type": "script",
+            "transfer": 4501,
+            "encoded": 4201,
+            "duration": 243.79999999701977
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 185.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 237.19999998807907
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 357.79999999701977
+          },
+          {
+            "path": "/assets/finishing-core.js",
+            "type": "script",
+            "transfer": 2450,
+            "encoded": 2150,
+            "duration": 164.40000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 153.29999999701977
+          }
+        ]
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "run": 2,
+        "lcp": 280,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 2.5,
+        "domReady": 499.6000000089407,
+        "load": 619.8000000119209,
+        "htmlTransfer": 11809,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 246.6000000089407
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 171.59999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.40000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "run": 2,
+        "lcp": 536,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 536,
+        "ttfb": 2,
+        "domReady": 535.5,
+        "load": 694.6000000089407,
+        "htmlTransfer": 3401,
+        "resourceTransfer": 35222,
+        "cssJsTransfer": 34028,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 217,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/edge-banding.css",
+            "type": "link",
+            "transfer": 2874,
+            "encoded": 2574,
+            "duration": 200.40000000596046
+          },
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 319.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 334.20000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.1000000089407
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.79999999701977
+          }
+        ]
+      },
+      {
+        "route": "/glossary/countersink/",
+        "run": 2,
+        "lcp": 528,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 528,
+        "ttfb": 2,
+        "domReady": 526.5,
+        "load": 682.7999999970198,
+        "htmlTransfer": 2500,
+        "resourceTransfer": 33076,
+        "cssJsTransfer": 31154,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 230,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 311.1000000089407
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.30000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 325.6000000089407
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 213.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156
+          }
+        ]
+      },
+      {
+        "route": "/wood/alder/",
+        "run": 2,
+        "lcp": 260,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 260,
+        "ttfb": 4,
+        "domReady": 490.6000000089407,
+        "load": 605.5,
+        "htmlTransfer": 11741,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 244.8999999910593
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 193
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 152.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/wood/osage-orange/",
+        "run": 2,
+        "lcp": 280,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 2.1000000089406967,
+        "domReady": 499.79999999701977,
+        "load": 612.9000000059605,
+        "htmlTransfer": 11758,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 244.6000000089407
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.8999999910593
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 151.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/wood/maple/",
+        "run": 2,
+        "lcp": 260,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 260,
+        "ttfb": 2.2000000029802322,
+        "domReady": 500.40000000596046,
+        "load": 613.7000000029802,
+        "htmlTransfer": 12430,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 312,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 244.90000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.20000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 151.79999999701977
+          }
+        ]
+      },
+      {
+        "route": "/wood/oak/",
+        "run": 2,
+        "lcp": 276,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 276,
+        "ttfb": 2.2000000029802322,
+        "domReady": 508.70000000298023,
+        "load": 628.2000000029802,
+        "htmlTransfer": 11714,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 168.70000000298023
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 251.20000000298023
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.29999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.29999999701977
+          }
+        ]
+      },
+      {
+        "route": "/wood/port-orford-cedar/",
+        "run": 2,
+        "lcp": 268,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 268,
+        "ttfb": 2.5999999940395355,
+        "domReady": 508.40000000596046,
+        "load": 629.5999999940395,
+        "htmlTransfer": 11787,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 251.29999999701977
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.79999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 161.3999999910593
+          }
+        ]
+      },
+      {
+        "route": "/legal/cutlist/privacy/",
+        "run": 2,
+        "lcp": 492,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 492,
+        "ttfb": 2,
+        "domReady": 484.40000000596046,
+        "load": 643.4000000059605,
+        "htmlTransfer": 2449,
+        "resourceTransfer": 28040,
+        "cssJsTransfer": 26118,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 200,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/legal.css",
+            "type": "link",
+            "transfer": 7641,
+            "encoded": 7341,
+            "duration": 267.6000000089407
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 305
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.80000001192093
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.30000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.29999999701977
+          }
+        ]
+      },
+      {
+        "route": "/glossary/trim-allowance/",
+        "run": 2,
+        "lcp": 536,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 536,
+        "ttfb": 1.699999988079071,
+        "domReady": 530.0999999940395,
+        "load": 686.7999999970198,
+        "htmlTransfer": 2330,
+        "resourceTransfer": 33076,
+        "cssJsTransfer": 31154,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 224,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 319.40000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.29999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.20000000298023
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 326.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156.19999998807907
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "lcp": 640,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 640,
+        "ttfb": 2.6000000089406967,
+        "domReady": 630.7999999970198,
+        "load": 784.7000000029802,
+        "htmlTransfer": 10164,
+        "resourceTransfer": 39139,
+        "cssJsTransfer": 37217,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 678,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 16559,
+            "encoded": 16259,
+            "duration": 349.70000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.59999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 334.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.90000000596046
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 222.70000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156.70000000298023
+          }
+        ]
+      },
+      {
+        "route": "/cabinet-studio/",
+        "run": 3,
+        "lcp": 668,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 668,
+        "ttfb": 2.1000000089406967,
+        "domReady": 741.5,
+        "load": 902.5,
+        "htmlTransfer": 6150,
+        "resourceTransfer": 52891,
+        "cssJsTransfer": 51697,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 678,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "g#cs-grid.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/cabinet-studio.css",
+            "type": "link",
+            "transfer": 5638,
+            "encoded": 5338,
+            "duration": 274
+          },
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 386
+          },
+          {
+            "path": "/assets/cabinet-studio.js",
+            "type": "script",
+            "transfer": 10426,
+            "encoded": 10126,
+            "duration": 356.6000000089407
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 400.70000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 183.70000000298023
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 250.3999999910593
+          },
+          {
+            "path": "/assets/cabinet-studio-core.js",
+            "type": "script",
+            "transfer": 4479,
+            "encoded": 4179,
+            "duration": 179.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 162.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "run": 3,
+        "lcp": 964,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 616,
+        "ttfb": 1.699999988079071,
+        "domReady": 611.5,
+        "load": 1397.699999988079,
+        "htmlTransfer": 5031,
+        "resourceTransfer": 204153,
+        "cssJsTransfer": 29992,
+        "imageTransfer": 173433,
+        "resourceCount": 10,
+        "domNodes": 273,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "img",
+          "img"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/apps.css",
+            "type": "link",
+            "transfer": 11515,
+            "encoded": 11215,
+            "duration": 394.59999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 185
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 229.8999999910593
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 423.8999999910593
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 179.80000001192093
+          }
+        ]
+      },
+      {
+        "route": "/wood/norway-spruce/",
+        "run": 3,
+        "lcp": 276,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 276,
+        "ttfb": 2.5,
+        "domReady": 510,
+        "load": 624.5999999940395,
+        "htmlTransfer": 11755,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.90000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.70000000298023
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 251.70000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/finishing-planner/",
+        "run": 3,
+        "lcp": 580,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 580,
+        "ttfb": 2.2000000029802322,
+        "domReady": 604.4000000059605,
+        "load": 768.1000000089407,
+        "htmlTransfer": 4237,
+        "resourceTransfer": 41896,
+        "cssJsTransfer": 40702,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 483,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 342
+          },
+          {
+            "path": "/assets/finishing-planner.css",
+            "type": "link",
+            "transfer": 2597,
+            "encoded": 2297,
+            "duration": 207
+          },
+          {
+            "path": "/assets/finishing-planner.js",
+            "type": "script",
+            "transfer": 4501,
+            "encoded": 4201,
+            "duration": 244.19999998807907
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 357.3999999910593
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 183.59999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 236.40000000596046
+          },
+          {
+            "path": "/assets/finishing-core.js",
+            "type": "script",
+            "transfer": 2450,
+            "encoded": 2150,
+            "duration": 164.79999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 162.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "run": 3,
+        "lcp": 280,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 2,
+        "domReady": 512.2000000029802,
+        "load": 630.2000000029802,
+        "htmlTransfer": 11809,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.79999999701977
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.59999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.29999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.90000000596046
+          }
+        ]
+      },
+      {
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "run": 3,
+        "lcp": 536,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 536,
+        "ttfb": 1.699999988079071,
+        "domReady": 535.3999999910593,
+        "load": 695.2999999970198,
+        "htmlTransfer": 3401,
+        "resourceTransfer": 35222,
+        "cssJsTransfer": 34028,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 217,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 319.29999999701977
+          },
+          {
+            "path": "/assets/edge-banding.css",
+            "type": "link",
+            "transfer": 2874,
+            "encoded": 2574,
+            "duration": 200.29999999701977
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 334.90000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.30000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.69999998807907
+          }
+        ]
+      },
+      {
+        "route": "/glossary/countersink/",
+        "run": 3,
+        "lcp": 520,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 520,
+        "ttfb": 1.7999999970197678,
+        "domReady": 517.1000000089407,
+        "load": 671.6000000089407,
+        "htmlTransfer": 2500,
+        "resourceTransfer": 33076,
+        "cssJsTransfer": 31154,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 230,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 303.80000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 168.20000000298023
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 318.90000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 206.6000000089407
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 154.79999999701977
+          }
+        ]
+      },
+      {
+        "route": "/wood/alder/",
+        "run": 3,
+        "lcp": 264,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 264,
+        "ttfb": 2.2000000029802322,
+        "domReady": 497.90000000596046,
+        "load": 619.2999999970198,
+        "htmlTransfer": 11741,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 168.59999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.79999999701977
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 250.90000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/wood/osage-orange/",
+        "run": 3,
+        "lcp": 280,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 2.1000000089406967,
+        "domReady": 502.70000000298023,
+        "load": 620,
+        "htmlTransfer": 11758,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 244.79999999701977
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.8999999910593
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.79999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.80000001192093
+          }
+        ]
+      },
+      {
+        "route": "/wood/maple/",
+        "run": 3,
+        "lcp": 264,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 264,
+        "ttfb": 2.2000000029802322,
+        "domReady": 500.70000000298023,
+        "load": 620.4000000059605,
+        "htmlTransfer": 12430,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 312,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.79999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.3999999910593
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 251.70000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.79999999701977
+          }
+        ]
+      },
+      {
+        "route": "/wood/oak/",
+        "run": 3,
+        "lcp": 280,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 2.0999999940395355,
+        "domReady": 507.29999999701977,
+        "load": 629.0999999940395,
+        "htmlTransfer": 11714,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.20000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.8999999910593
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.6000000089407
+          }
+        ]
+      },
+      {
+        "route": "/wood/port-orford-cedar/",
+        "run": 3,
+        "lcp": 256,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 256,
+        "ttfb": 2.2000000029802322,
+        "domReady": 503.40000000596046,
+        "load": 621.2999999970198,
+        "htmlTransfer": 11787,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.80000001192093
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.6000000089407
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.20000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.29999999701977
+          }
+        ]
+      },
+      {
+        "route": "/legal/cutlist/privacy/",
+        "run": 3,
+        "lcp": 472,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 472,
+        "ttfb": 1.800000011920929,
+        "domReady": 476.30000001192093,
+        "load": 634.4000000059605,
+        "htmlTransfer": 2449,
+        "resourceTransfer": 28040,
+        "cssJsTransfer": 26118,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 200,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/legal.css",
+            "type": "link",
+            "transfer": 7641,
+            "encoded": 7341,
+            "duration": 260.19999998807907
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.79999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.6000000089407
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 297
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.1000000089407
+          }
+        ]
+      },
+      {
+        "route": "/glossary/trim-allowance/",
+        "run": 3,
+        "lcp": 516,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 516,
+        "ttfb": 1.5,
+        "domReady": 514.3000000119209,
+        "load": 677.2000000029802,
+        "htmlTransfer": 2330,
+        "resourceTransfer": 33076,
+        "cssJsTransfer": 31154,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 224,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content.css",
+            "type": "link",
+            "transfer": 12677,
+            "encoded": 12377,
+            "duration": 304.79999999701977
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.09999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 320
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207.20000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 162.3999999910593
+          }
+        ]
+      }
+    ]
+  },
+  "after": {
+    "scope": "Gzip preview; en language, 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+    "origin": "http://127.0.0.1:4189",
+    "routes": [
+      "/",
+      "/cabinet-studio/",
+      "/apps/ductlab-hvac-duct-layout/",
+      "/wood/norway-spruce/",
+      "/finishing-planner/",
+      "/wood/east-indian-rosewood/",
+      "/edge-banding/finished-size-to-cut-size/",
+      "/glossary/countersink/",
+      "/wood/alder/",
+      "/wood/osage-orange/",
+      "/wood/maple/",
+      "/wood/oak/",
+      "/wood/port-orford-cedar/",
+      "/legal/cutlist/privacy/",
+      "/glossary/trim-allowance/"
+    ],
+    "runs": 3,
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "lcp": 660,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 660,
+        "ttfb": 1.7999999970197678,
+        "domReady": 650.5999999940395,
+        "load": 806.7000000029802,
+        "htmlTransfer": 10164,
+        "resourceTransfer": 39139,
+        "cssJsTransfer": 37217,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 678,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 16559,
+            "encoded": 16259,
+            "duration": 351
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 342.59999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.20000000298023
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 207.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.69999998807907
+          }
+        ]
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "run": 1,
+        "lcp": 1024,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 596,
+        "ttfb": 1.3999999910593033,
+        "domReady": 594.3999999910593,
+        "load": 1402,
+        "htmlTransfer": 5031,
+        "resourceTransfer": 204153,
+        "cssJsTransfer": 29992,
+        "imageTransfer": 173433,
+        "resourceCount": 10,
+        "domNodes": 273,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "img",
+          "img"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/apps.css",
+            "type": "link",
+            "transfer": 11515,
+            "encoded": 11215,
+            "duration": 371.79999999701977
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.29999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.3999999910593
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 409.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 178.79999999701977
+          }
+        ]
+      },
+      {
+        "route": "/wood/norway-spruce/",
+        "run": 1,
+        "lcp": 252,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 252,
+        "ttfb": 1.9000000059604645,
+        "domReady": 500.79999999701977,
+        "load": 623.2999999970198,
+        "htmlTransfer": 11755,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.5
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.80000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.5
+          }
+        ]
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "run": 1,
+        "lcp": 276,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 276,
+        "ttfb": 1.7999999970197678,
+        "domReady": 511.09999999403954,
+        "load": 630.1999999880791,
+        "htmlTransfer": 11809,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.29999999701977
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 253.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.3999999910593
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.79999999701977
+          }
+        ]
+      },
+      {
+        "route": "/glossary/countersink/",
+        "run": 1,
+        "lcp": 252,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 252,
+        "ttfb": 2.2000000029802322,
+        "domReady": 508.6000000089407,
+        "load": 630.5,
+        "htmlTransfer": 10015,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 230,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.20000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 162.19999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 183.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/wood/alder/",
+        "run": 1,
+        "lcp": 260,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 260,
+        "ttfb": 2.5999999940395355,
+        "domReady": 494.29999999701977,
+        "load": 615.7999999970198,
+        "htmlTransfer": 11741,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.79999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.59999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 244.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.90000000596046
+          }
+        ]
+      },
+      {
+        "route": "/wood/osage-orange/",
+        "run": 1,
+        "lcp": 272,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 272,
+        "ttfb": 2,
+        "domReady": 495.79999999701977,
+        "load": 618.5,
+        "htmlTransfer": 11758,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 245
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.69999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.8999999910593
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.29999999701977
+          }
+        ]
+      },
+      {
+        "route": "/wood/maple/",
+        "run": 1,
+        "lcp": 256,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 256,
+        "ttfb": 1.7999999970197678,
+        "domReady": 495.29999999701977,
+        "load": 607.9000000059605,
+        "htmlTransfer": 12430,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 312,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 244.70000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 168.8999999910593
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.3999999910593
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 151.8999999910593
+          }
+        ]
+      },
+      {
+        "route": "/wood/oak/",
+        "run": 1,
+        "lcp": 264,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 264,
+        "ttfb": 1.8999999910593033,
+        "domReady": 494.29999999701977,
+        "load": 616.5999999940395,
+        "htmlTransfer": 11714,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.1000000089407
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 245
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.20000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.80000001192093
+          }
+        ]
+      },
+      {
+        "route": "/wood/port-orford-cedar/",
+        "run": 1,
+        "lcp": 268,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 268,
+        "ttfb": 1.9000000059604645,
+        "domReady": 508.1000000089407,
+        "load": 628.5,
+        "htmlTransfer": 11787,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.59999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.1000000089407
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/legal/cutlist/privacy/",
+        "run": 1,
+        "lcp": 460,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 460,
+        "ttfb": 1.5,
+        "domReady": 469.59999999403954,
+        "load": 628.7000000029802,
+        "htmlTransfer": 2449,
+        "resourceTransfer": 28040,
+        "cssJsTransfer": 26118,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 200,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/legal.css",
+            "type": "link",
+            "transfer": 7641,
+            "encoded": 7341,
+            "duration": 259.79999999701977
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.29999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 207
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 297.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.3999999910593
+          }
+        ]
+      },
+      {
+        "route": "/glossary/trim-allowance/",
+        "run": 1,
+        "lcp": 240,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 240,
+        "ttfb": 1.7999999970197678,
+        "domReady": 495.40000000596046,
+        "load": 617.2999999970198,
+        "htmlTransfer": 9831,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 224,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 244.29999999701977
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 154.19999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 177.19999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.1000000089407
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "lcp": 692,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 692,
+        "ttfb": 1.7999999970197678,
+        "domReady": 668.5,
+        "load": 703.3999999910593,
+        "htmlTransfer": 10164,
+        "resourceTransfer": 39139,
+        "cssJsTransfer": 37217,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 678,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 16559,
+            "encoded": 16259,
+            "duration": 350.20000000298023
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 343.90000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 171
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 215.59999999403954
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 223.3999999910593
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.5
+          }
+        ]
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "run": 2,
+        "lcp": 992,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 592,
+        "ttfb": 1.5,
+        "domReady": 594,
+        "load": 1388.800000011921,
+        "htmlTransfer": 5031,
+        "resourceTransfer": 204153,
+        "cssJsTransfer": 29992,
+        "imageTransfer": 173433,
+        "resourceCount": 10,
+        "domNodes": 273,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "img",
+          "img"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/apps.css",
+            "type": "link",
+            "transfer": 11515,
+            "encoded": 11215,
+            "duration": 373.09999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 417.69999998807907
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.3999999910593
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 222.29999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 173.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/wood/norway-spruce/",
+        "run": 2,
+        "lcp": 260,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 260,
+        "ttfb": 1.7999999970197678,
+        "domReady": 503.40000000596046,
+        "load": 621,
+        "htmlTransfer": 11755,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.79999999701977
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.70000000298023
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.8999999910593
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.90000000596046
+          }
+        ]
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "run": 2,
+        "lcp": 264,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 264,
+        "ttfb": 1.7999999970197678,
+        "domReady": 504.09999999403954,
+        "load": 624.9000000059605,
+        "htmlTransfer": 11809,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.70000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.90000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.79999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.20000000298023
+          }
+        ]
+      },
+      {
+        "route": "/glossary/countersink/",
+        "run": 2,
+        "lcp": 248,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 248,
+        "ttfb": 2.5,
+        "domReady": 494.09999999403954,
+        "load": 615.0999999940395,
+        "htmlTransfer": 10015,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 230,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 155.1000000089407
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 246.30000001192093
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 178.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.29999999701977
+          }
+        ]
+      },
+      {
+        "route": "/wood/alder/",
+        "run": 2,
+        "lcp": 252,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 252,
+        "ttfb": 1.9000000059604645,
+        "domReady": 493,
+        "load": 614.6000000089407,
+        "htmlTransfer": 11741,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 245.40000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159
+          }
+        ]
+      },
+      {
+        "route": "/wood/osage-orange/",
+        "run": 2,
+        "lcp": 280,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 1.9000000059604645,
+        "domReady": 493.5,
+        "load": 606.9000000059605,
+        "htmlTransfer": 11758,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 245
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 193.20000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 152.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/wood/maple/",
+        "run": 2,
+        "lcp": 252,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 252,
+        "ttfb": 2.2000000029802322,
+        "domReady": 500.5,
+        "load": 616.1000000089407,
+        "htmlTransfer": 12430,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 312,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 190.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 244.6000000089407
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158
+          }
+        ]
+      },
+      {
+        "route": "/wood/oak/",
+        "run": 2,
+        "lcp": 284,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 284,
+        "ttfb": 2,
+        "domReady": 509.79999999701977,
+        "load": 629.5,
+        "htmlTransfer": 11714,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 253.20000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.79999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.29999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.6000000089407
+          }
+        ]
+      },
+      {
+        "route": "/wood/port-orford-cedar/",
+        "run": 2,
+        "lcp": 272,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 272,
+        "ttfb": 1.7000000029802322,
+        "domReady": 517.2000000029802,
+        "load": 628.2999999970198,
+        "htmlTransfer": 11787,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 253.79999999701977
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.20000000298023
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.40000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.70000000298023
+          }
+        ]
+      },
+      {
+        "route": "/legal/cutlist/privacy/",
+        "run": 2,
+        "lcp": 476,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 476,
+        "ttfb": 1.2999999970197678,
+        "domReady": 483.69999998807907,
+        "load": 641.2999999970198,
+        "htmlTransfer": 2449,
+        "resourceTransfer": 28040,
+        "cssJsTransfer": 26118,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 200,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/legal.css",
+            "type": "link",
+            "transfer": 7641,
+            "encoded": 7341,
+            "duration": 268.09999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 304.19999998807907
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.90000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.70000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.3999999910593
+          }
+        ]
+      },
+      {
+        "route": "/glossary/trim-allowance/",
+        "run": 2,
+        "lcp": 252,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 252,
+        "ttfb": 1.9000000059604645,
+        "domReady": 506.1000000089407,
+        "load": 619.2999999970198,
+        "htmlTransfer": 9831,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 224,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 244.5
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 162.20000000298023
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 176.79999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.19999998807907
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "lcp": 692,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 692,
+        "ttfb": 2.6000000089406967,
+        "domReady": 673.5,
+        "load": 700.5,
+        "htmlTransfer": 10164,
+        "resourceTransfer": 39139,
+        "cssJsTransfer": 37217,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 678,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 16559,
+            "encoded": 16259,
+            "duration": 350.5
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 344.09999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.90000000596046
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 207.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 215.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "run": 3,
+        "lcp": 960,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 616,
+        "ttfb": 1.5,
+        "domReady": 613.8000000119209,
+        "load": 1401.300000011921,
+        "htmlTransfer": 5031,
+        "resourceTransfer": 204153,
+        "cssJsTransfer": 29992,
+        "imageTransfer": 173433,
+        "resourceCount": 10,
+        "domNodes": 273,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "img",
+          "img"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/apps.css",
+            "type": "link",
+            "transfer": 11515,
+            "encoded": 11215,
+            "duration": 387.19999998807907
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 424.90000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 175.6000000089407
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 228.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 174.90000000596046
+          }
+        ]
+      },
+      {
+        "route": "/wood/norway-spruce/",
+        "run": 3,
+        "lcp": 272,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 272,
+        "ttfb": 2.5999999940395355,
+        "domReady": 504.5,
+        "load": 628.3999999910593,
+        "htmlTransfer": 11755,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 251.70000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.90000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.29999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "run": 3,
+        "lcp": 260,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 260,
+        "ttfb": 2.5,
+        "domReady": 502.20000000298023,
+        "load": 621,
+        "htmlTransfer": 11809,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.80000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.6000000089407
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.29999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.29999999701977
+          }
+        ]
+      },
+      {
+        "route": "/glossary/countersink/",
+        "run": 3,
+        "lcp": 260,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 260,
+        "ttfb": 2.5,
+        "domReady": 500.69999998807907,
+        "load": 620.7999999970198,
+        "htmlTransfer": 10015,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 230,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 154.59999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 245.29999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 176.69999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/wood/alder/",
+        "run": 3,
+        "lcp": 260,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 260,
+        "ttfb": 2.5999999940395355,
+        "domReady": 502.8999999910593,
+        "load": 627.3999999910593,
+        "htmlTransfer": 11741,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.79999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.29999999701977
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.5
+          }
+        ]
+      },
+      {
+        "route": "/wood/osage-orange/",
+        "run": 3,
+        "lcp": 268,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 268,
+        "ttfb": 2.5,
+        "domReady": 504.5,
+        "load": 626,
+        "htmlTransfer": 11758,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252.20000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.70000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.5
+          }
+        ]
+      },
+      {
+        "route": "/wood/maple/",
+        "run": 3,
+        "lcp": 264,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 264,
+        "ttfb": 2.5,
+        "domReady": 500,
+        "load": 621,
+        "htmlTransfer": 12430,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 312,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 245.8999999910593
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.1000000089407
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.6000000089407
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158
+          }
+        ]
+      },
+      {
+        "route": "/wood/oak/",
+        "run": 3,
+        "lcp": 264,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 264,
+        "ttfb": 2.6000000089406967,
+        "domReady": 499.20000000298023,
+        "load": 622.6000000089407,
+        "htmlTransfer": 11714,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 252
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.29999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 190.8999999910593
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/wood/port-orford-cedar/",
+        "run": 3,
+        "lcp": 280,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 2.5999999940395355,
+        "domReady": 499.70000000298023,
+        "load": 621.5,
+        "htmlTransfer": 11787,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 253
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.8999999910593
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/legal/cutlist/privacy/",
+        "run": 3,
+        "lcp": 480,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 480,
+        "ttfb": 1.300000011920929,
+        "domReady": 485.1000000089407,
+        "load": 643.6000000089407,
+        "htmlTransfer": 2449,
+        "resourceTransfer": 28040,
+        "cssJsTransfer": 26118,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 200,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/legal.css",
+            "type": "link",
+            "transfer": 7641,
+            "encoded": 7341,
+            "duration": 267.5
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 305.40000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 215.40000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.3999999910593
+          }
+        ]
+      },
+      {
+        "route": "/glossary/trim-allowance/",
+        "run": 3,
+        "lcp": 256,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 256,
+        "ttfb": 1.5999999940395355,
+        "domReady": 505.20000000298023,
+        "load": 620.9000000059605,
+        "htmlTransfer": 9831,
+        "resourceTransfer": 20399,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 5,
+        "domNodes": 224,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 245
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 154.29999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 177.20000000298023
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.20000000298023
+          }
+        ]
+      },
+      {
+        "route": "/cabinet-studio/",
+        "run": 1,
+        "lcp": 288,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 288,
+        "ttfb": 2.1000000089406967,
+        "domReady": 590.7000000029802,
+        "load": 723.7000000029802,
+        "htmlTransfer": 18079,
+        "resourceTransfer": 34576,
+        "cssJsTransfer": 33382,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 678,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "g#cs-grid.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/cabinet-studio-core.js",
+            "type": "script",
+            "transfer": 4479,
+            "encoded": 4179,
+            "duration": 207
+          },
+          {
+            "path": "/assets/cabinet-studio.js",
+            "type": "script",
+            "transfer": 10426,
+            "encoded": 10126,
+            "duration": 275
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 163.09999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 304.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 327.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 161.70000000298023
+          }
+        ]
+      },
+      {
+        "route": "/finishing-planner/",
+        "run": 1,
+        "lcp": 252,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 252,
+        "ttfb": 2.300000011920929,
+        "domReady": 553.4000000059605,
+        "load": 650.4000000059605,
+        "htmlTransfer": 13526,
+        "resourceTransfer": 26622,
+        "cssJsTransfer": 25428,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 483,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/finishing-core.js",
+            "type": "script",
+            "transfer": 2450,
+            "encoded": 2150,
+            "duration": 191.80000001192093
+          },
+          {
+            "path": "/assets/finishing-planner.js",
+            "type": "script",
+            "transfer": 4501,
+            "encoded": 4201,
+            "duration": 212.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 274.3999999910593
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 175.3999999910593
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 341.3999999910593
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.70000000298023
+          }
+        ]
+      },
+      {
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "run": 1,
+        "lcp": 284,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 284,
+        "ttfb": 2.2000000029802322,
+        "domReady": 516.5,
+        "load": 626.2999999970198,
+        "htmlTransfer": 12952,
+        "resourceTransfer": 19671,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 4,
+        "domNodes": 216,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 244.70000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 154.79999999701977
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 176.79999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.70000000298023
+          }
+        ]
+      },
+      {
+        "route": "/cabinet-studio/",
+        "run": 2,
+        "lcp": 284,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 284,
+        "ttfb": 2.1000000089406967,
+        "domReady": 571.7999999970198,
+        "load": 730.2999999970198,
+        "htmlTransfer": 18079,
+        "resourceTransfer": 34576,
+        "cssJsTransfer": 33382,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 678,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "g#cs-grid.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/cabinet-studio-core.js",
+            "type": "script",
+            "transfer": 4479,
+            "encoded": 4179,
+            "duration": 215.1000000089407
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 161
+          },
+          {
+            "path": "/assets/cabinet-studio.js",
+            "type": "script",
+            "transfer": 10426,
+            "encoded": 10126,
+            "duration": 281.29999999701977
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 310.70000000298023
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 326
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.1000000089407
+          }
+        ]
+      },
+      {
+        "route": "/finishing-planner/",
+        "run": 2,
+        "lcp": 252,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 252,
+        "ttfb": 2,
+        "domReady": 559,
+        "load": 641.7999999970198,
+        "htmlTransfer": 13526,
+        "resourceTransfer": 26622,
+        "cssJsTransfer": 25428,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 483,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/finishing-core.js",
+            "type": "script",
+            "transfer": 2450,
+            "encoded": 2150,
+            "duration": 183.5
+          },
+          {
+            "path": "/assets/finishing-planner.js",
+            "type": "script",
+            "transfer": 4501,
+            "encoded": 4201,
+            "duration": 206.3999999910593
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.19999998807907
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 265.8999999910593
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 340.19999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 151.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "run": 2,
+        "lcp": 280,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 1.7999999970197678,
+        "domReady": 517.7999999970198,
+        "load": 633,
+        "htmlTransfer": 12952,
+        "resourceTransfer": 19671,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 4,
+        "domNodes": 216,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 250.70000000298023
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 162.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 182.6000000089407
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160
+          }
+        ]
+      },
+      {
+        "route": "/cabinet-studio/",
+        "run": 3,
+        "lcp": 280,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 2.2000000029802322,
+        "domReady": 592.2000000029802,
+        "load": 719.7999999970198,
+        "htmlTransfer": 18079,
+        "resourceTransfer": 34576,
+        "cssJsTransfer": 33382,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 678,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "g#cs-grid.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]",
+          "line.[object SVGAnimatedString]"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/cabinet-studio-core.js",
+            "type": "script",
+            "transfer": 4479,
+            "encoded": 4179,
+            "duration": 213.3999999910593
+          },
+          {
+            "path": "/assets/cabinet-studio.js",
+            "type": "script",
+            "transfer": 10426,
+            "encoded": 10126,
+            "duration": 280.59999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 310.1000000089407
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 175.1000000089407
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 340.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156
+          }
+        ]
+      },
+      {
+        "route": "/finishing-planner/",
+        "run": 3,
+        "lcp": 248,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 248,
+        "ttfb": 1.8999999910593033,
+        "domReady": 555.7999999970198,
+        "load": 652.5,
+        "htmlTransfer": 13526,
+        "resourceTransfer": 26622,
+        "cssJsTransfer": 25428,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 483,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/finishing-core.js",
+            "type": "script",
+            "transfer": 2450,
+            "encoded": 2150,
+            "duration": 192
+          },
+          {
+            "path": "/assets/finishing-planner.js",
+            "type": "script",
+            "transfer": 4501,
+            "encoded": 4201,
+            "duration": 214.29999999701977
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 175.5
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 273.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 340.29999999701977
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.90000000596046
+          }
+        ]
+      },
+      {
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "run": 3,
+        "lcp": 280,
+        "lcpElement": "p",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 1.9000000059604645,
+        "domReady": 513.1000000089407,
+        "load": 633.9000000059605,
+        "htmlTransfer": 12952,
+        "resourceTransfer": 19671,
+        "cssJsTransfer": 18477,
+        "imageTransfer": 1194,
+        "resourceCount": 4,
+        "domNodes": 216,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14487,
+            "encoded": 14187,
+            "duration": 251.40000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 162.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 184.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.20000000298023
+          }
+        ]
+      }
+    ]
+  },
+  "summary": [
+    {
+      "route": "/",
+      "beforeLcp": 700,
+      "afterLcp": 692,
+      "beforeTransfer": 49303,
+      "afterTransfer": 49303
+    },
+    {
+      "route": "/cabinet-studio/",
+      "beforeLcp": 668,
+      "afterLcp": 284,
+      "beforeTransfer": 59041,
+      "afterTransfer": 52655
+    },
+    {
+      "route": "/apps/ductlab-hvac-duct-layout/",
+      "beforeLcp": 964,
+      "afterLcp": 992,
+      "beforeTransfer": 209184,
+      "afterTransfer": 209184
+    },
+    {
+      "route": "/wood/norway-spruce/",
+      "beforeLcp": 276,
+      "afterLcp": 260,
+      "beforeTransfer": 32154,
+      "afterTransfer": 32154
+    },
+    {
+      "route": "/finishing-planner/",
+      "beforeLcp": 580,
+      "afterLcp": 252,
+      "beforeTransfer": 46133,
+      "afterTransfer": 40148
+    },
+    {
+      "route": "/wood/east-indian-rosewood/",
+      "beforeLcp": 280,
+      "afterLcp": 264,
+      "beforeTransfer": 32208,
+      "afterTransfer": 32208
+    },
+    {
+      "route": "/edge-banding/finished-size-to-cut-size/",
+      "beforeLcp": 536,
+      "afterLcp": 280,
+      "beforeTransfer": 38623,
+      "afterTransfer": 32623
+    },
+    {
+      "route": "/glossary/countersink/",
+      "beforeLcp": 520,
+      "afterLcp": 252,
+      "beforeTransfer": 35576,
+      "afterTransfer": 30414
+    },
+    {
+      "route": "/wood/alder/",
+      "beforeLcp": 264,
+      "afterLcp": 260,
+      "beforeTransfer": 32140,
+      "afterTransfer": 32140
+    },
+    {
+      "route": "/wood/osage-orange/",
+      "beforeLcp": 280,
+      "afterLcp": 272,
+      "beforeTransfer": 32157,
+      "afterTransfer": 32157
+    },
+    {
+      "route": "/wood/maple/",
+      "beforeLcp": 260,
+      "afterLcp": 256,
+      "beforeTransfer": 32829,
+      "afterTransfer": 32829
+    },
+    {
+      "route": "/wood/oak/",
+      "beforeLcp": 276,
+      "afterLcp": 264,
+      "beforeTransfer": 32113,
+      "afterTransfer": 32113
+    },
+    {
+      "route": "/wood/port-orford-cedar/",
+      "beforeLcp": 268,
+      "afterLcp": 272,
+      "beforeTransfer": 32186,
+      "afterTransfer": 32186
+    },
+    {
+      "route": "/legal/cutlist/privacy/",
+      "beforeLcp": 492,
+      "afterLcp": 476,
+      "beforeTransfer": 30489,
+      "afterTransfer": 30489
+    },
+    {
+      "route": "/glossary/trim-allowance/",
+      "beforeLcp": 524,
+      "afterLcp": 252,
+      "beforeTransfer": 35406,
+      "afterTransfer": 30230
+    }
+  ],
+  "browser": {
+    "rows": [
+      {
+        "route": "/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Free Plywood Cutting Calculator & Cut List Optimizer",
+        "styles": "37.8px",
+        "cssLoaded": true,
+        "blockingCss": 1
+      },
+      {
+        "route": "/cabinet-studio/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Think it. Build it.",
+        "styles": "49px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "DuctLab: HVAC Duct Layout",
+        "styles": "28.8px",
+        "cssLoaded": true,
+        "blockingCss": 1
+      },
+      {
+        "route": "/wood/norway-spruce/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Norway Spruce Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/finishing-planner/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Every face counted.Every coat planned.",
+        "styles": "43px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "East Indian Rosewood Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Finished Size to Saw-Cut Size: Edge Banding Deductions",
+        "styles": "38px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/edge-banding/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Finish size in.Saw size out.",
+        "styles": "38px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/glossary/countersink/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "What is Countersink?",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/alder/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Alder Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/osage-orange/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Osage Orange Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/maple/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Maple Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/oak/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Oak Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/port-orford-cedar/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "Port Orford Cedar Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/legal/cutlist/privacy/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "CutList Privacy Policy",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 1
+      },
+      {
+        "route": "/glossary/trim-allowance/",
+        "width": 360,
+        "overflow": 0,
+        "heading": "What is Trim Allowance?",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Free Plywood Cutting Calculator & Cut List Optimizer",
+        "styles": "40.95px",
+        "cssLoaded": true,
+        "blockingCss": 1
+      },
+      {
+        "route": "/cabinet-studio/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Think it. Build it.",
+        "styles": "49px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "DuctLab: HVAC Duct Layout",
+        "styles": "31.2px",
+        "cssLoaded": true,
+        "blockingCss": 1
+      },
+      {
+        "route": "/wood/norway-spruce/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Norway Spruce Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/finishing-planner/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Every face counted.Every coat planned.",
+        "styles": "43px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "East Indian Rosewood Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Finished Size to Saw-Cut Size: Edge Banding Deductions",
+        "styles": "38px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/edge-banding/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Finish size in.Saw size out.",
+        "styles": "38px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/glossary/countersink/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "What is Countersink?",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/alder/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Alder Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/osage-orange/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Osage Orange Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/maple/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Maple Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/oak/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Oak Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/port-orford-cedar/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "Port Orford Cedar Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/legal/cutlist/privacy/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "CutList Privacy Policy",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 1
+      },
+      {
+        "route": "/glossary/trim-allowance/",
+        "width": 390,
+        "overflow": 0,
+        "heading": "What is Trim Allowance?",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Free Plywood Cutting Calculator & Cut List Optimizer",
+        "styles": "45.15px",
+        "cssLoaded": true,
+        "blockingCss": 1
+      },
+      {
+        "route": "/cabinet-studio/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Think it. Build it.",
+        "styles": "49px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "DuctLab: HVAC Duct Layout",
+        "styles": "33.28px",
+        "cssLoaded": true,
+        "blockingCss": 1
+      },
+      {
+        "route": "/wood/norway-spruce/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Norway Spruce Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/finishing-planner/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Every face counted.Every coat planned.",
+        "styles": "43px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "East Indian Rosewood Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Finished Size to Saw-Cut Size: Edge Banding Deductions",
+        "styles": "38px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/edge-banding/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Finish size in.Saw size out.",
+        "styles": "38px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/glossary/countersink/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "What is Countersink?",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/alder/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Alder Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/osage-orange/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Osage Orange Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/maple/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Maple Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/oak/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Oak Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/port-orford-cedar/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "Port Orford Cedar Wood",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/legal/cutlist/privacy/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "CutList Privacy Policy",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 1
+      },
+      {
+        "route": "/glossary/trim-allowance/",
+        "width": 430,
+        "overflow": 0,
+        "heading": "What is Trim Allowance?",
+        "styles": "29.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Free Plywood Cutting Calculator & Cut List Optimizer",
+        "styles": "64px",
+        "cssLoaded": true,
+        "blockingCss": 1
+      },
+      {
+        "route": "/cabinet-studio/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Think it. Build it.",
+        "styles": "77.76px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/apps/ductlab-hvac-duct-layout/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "DuctLab: HVAC Duct Layout",
+        "styles": "64px",
+        "cssLoaded": true,
+        "blockingCss": 1
+      },
+      {
+        "route": "/wood/norway-spruce/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Norway Spruce Wood",
+        "styles": "64px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/finishing-planner/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Every face counted.Every coat planned.",
+        "styles": "66px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "East Indian Rosewood Wood",
+        "styles": "64px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Finished Size to Saw-Cut Size: Edge Banding Deductions",
+        "styles": "66px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/edge-banding/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Finish size in.Saw size out.",
+        "styles": "66px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/glossary/countersink/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "What is Countersink?",
+        "styles": "64px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/alder/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Alder Wood",
+        "styles": "64px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/osage-orange/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Osage Orange Wood",
+        "styles": "64px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/maple/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Maple Wood",
+        "styles": "64px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/oak/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Oak Wood",
+        "styles": "64px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/wood/port-orford-cedar/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "Port Orford Cedar Wood",
+        "styles": "64px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      },
+      {
+        "route": "/legal/cutlist/privacy/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "CutList Privacy Policy",
+        "styles": "64px",
+        "cssLoaded": true,
+        "blockingCss": 1
+      },
+      {
+        "route": "/glossary/trim-allowance/",
+        "width": 1440,
+        "overflow": 0,
+        "heading": "What is Trim Allowance?",
+        "styles": "64px",
+        "cssLoaded": true,
+        "blockingCss": 0
+      }
+    ],
+    "noScript": [
+      {
+        "route": "/glossary/countersink/",
+        "size": "64px"
+      },
+      {
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "size": "66px"
+      },
+      {
+        "route": "/finishing-planner/",
+        "size": "66px"
+      },
+      {
+        "route": "/cabinet-studio/",
+        "size": "77.76px"
+      }
+    ],
+    "cabinetEditAndSave": true,
+    "languageSwitch": true,
+    "errors": []
+  },
+  "finishingBrowser": {
+    "responsive": [
+      {
+        "width": 320,
+        "route": "/finishing-planner/",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "route": "/finishing-planner/surface-area-from-cut-list/",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "route": "/finishing-planner/coverage-coats-and-pack-sizes/",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "route": "/finishing-planner/finish-plan-before-assembly/",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "route": "/finishing-planner/",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "route": "/finishing-planner/surface-area-from-cut-list/",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "route": "/finishing-planner/coverage-coats-and-pack-sizes/",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "route": "/finishing-planner/finish-plan-before-assembly/",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "/finishing-planner/",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "/finishing-planner/surface-area-from-cut-list/",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "/finishing-planner/coverage-coats-and-pack-sizes/",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "/finishing-planner/finish-plan-before-assembly/",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "/finishing-planner/",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "/finishing-planner/surface-area-from-cut-list/",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "/finishing-planner/coverage-coats-and-pack-sizes/",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "/finishing-planner/finish-plan-before-assembly/",
+        "overflow": false
+      }
+    ],
+    "errors": [],
+    "downloads": [
+      "finishing-purchase-list.csv",
+      "finishing-project.json"
+    ],
+    "interactions": "passed"
+  },
+  "edgeBandingBrowser": {
+    "scope": "Local isolated headless Chrome; actual mouse/text events and DOM assertions; no deployment",
+    "responsive": [
+      {
+        "width": 320,
+        "route": "/edge-banding/",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "route": "/edge-banding/tape-width-and-roll-allowance/",
+        "overflow": false
+      },
+      {
+        "width": 320,
+        "route": "/edge-banding/shop-release-checklist/",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "route": "/edge-banding/",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "route": "/edge-banding/tape-width-and-roll-allowance/",
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "route": "/edge-banding/shop-release-checklist/",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "/edge-banding/",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "/edge-banding/tape-width-and-roll-allowance/",
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "route": "/edge-banding/shop-release-checklist/",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "/edge-banding/",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "/edge-banding/finished-size-to-cut-size/",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "/edge-banding/tape-width-and-roll-allowance/",
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "route": "/edge-banding/shop-release-checklist/",
+        "overflow": false
+      }
+    ],
+    "downloads": [
+      "edge-banding-parts.csv",
+      "edge-banding-supplies.csv",
+      "edge-banding-project.json"
+    ],
+    "errors": [],
+    "handoff": "Incoming review preserves existing draft; accepted saw blanks and grain lock verified",
+    "storage": "Normal, unavailable and malformed preserved draft checked"
+  }
+}

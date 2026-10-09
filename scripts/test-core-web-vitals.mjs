@@ -2,7 +2,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { appHtmlFiles, compileAppStyles } from "./build-app-styles.mjs";
 import { blogArticleHtmlFiles, compileBlogArticleStyles, compileBlogIndexStyles, compileEditorialStyles, editorialHtmlFiles } from "./build-editorial-styles.mjs";
-import { compileContentStyles, compileInteractiveStyles, compileWoodStyles, compilePlanningStyles, compileTemplateStyles, compileConstructionStyles, compilePlywoodStyles, compileChecklistStyles, compileLegalStyles } from "./build-site-styles.mjs";
+import { compileContentStyles, compileInteractiveStyles, compileWoodStyles, compilePlanningStyles, compileTemplateStyles, compileConstructionStyles, compilePlywoodStyles, compileChecklistStyles, compileLegalStyles, compileGlossaryStyles, compileWorkflowStyles } from "./build-site-styles.mjs";
 import { performanceProfile } from "./site-performance-profile.mjs";
 import assert from "node:assert/strict";
 import { appStoreThumbnail, appStoreScreenshotSources } from "./app-store-images.mjs";
@@ -180,6 +180,8 @@ for (const [name, output, compiled, limit] of [
   ["plywood", join(root, "assets/plywood.css"), compilePlywoodStyles(), 40_000],
   ["checklists", join(root, "assets/checklists.css"), compileChecklistStyles(), 40_000],
   ["legal", join(root, "assets/legal.css"), compileLegalStyles(), 40_000],
+  ["glossary", join(root, "assets/glossary.css"), compileGlossaryStyles(), 40_000],
+  ["workflow-shell", join(root, "assets/workflow-shell.css"), compileWorkflowStyles(), 40_000],
 ]) {
   const css = readFileSync(output, "utf8");
   if (css !== compiled.css) failures.push(`${name} stylesheet is stale; run npm run apply:nav-cta`);
@@ -187,9 +189,14 @@ for (const [name, output, compiled, limit] of [
   for (const file of compiled.pages) {
     const html = readFileSync(join(root, file), "utf8");
     const profile = performanceProfile(file, html);
-    const hasStyles = name === "wood"
-      ? html.includes(`<style data-wood-styles>${css}</style>`) && !html.includes('href="/assets/wood.css"')
+    const inline = ["wood", "glossary", "workflow-shell"].includes(name);
+    const custom = name === "workflow-shell" ? readFileSync(join(root, "assets", `${file.split("/")[0]}.css`), "utf8") : "";
+    const marker = name === "workflow-shell" ? "workflow" : name;
+    const hasStyles = inline
+      ? html.includes(`<style data-${marker}-styles>${css}${custom}</style>`) && !/<link\b[^>]*rel="stylesheet"/.test(html)
       : html.includes(`<link rel="stylesheet" href="/assets/${name}.css">`);
+    if (inline && Buffer.byteLength(css + custom) > 65_000) failures.push(`${file}: inline stylesheet exceeds 65 KB`);
+    if (["glossary", "workflow-shell"].includes(name) && !html.includes('defer fetchpriority="low" src="/assets/content-page.js"')) failures.push(`${file}: optional language runtime must have low priority`);
     if (!hasStyles || html.includes('href="/assets/styles.css"')) {
       failures.push(`${file}: must load the scoped ${name} stylesheet`);
     }
@@ -214,7 +221,17 @@ const allProfiledPages = [
   ...compilePlywoodStyles().pages,
   ...compileChecklistStyles().pages,
   ...compileLegalStyles().pages,
+  ...compileGlossaryStyles().pages,
+  ...compileWorkflowStyles().pages,
 ];
+for (const [route, dependencies] of [
+  ["finishing-planner", ["finishing-core"]],
+  ["edge-banding", ["edge-banding-core", "cut-handoff-model"]],
+  ["cabinet-studio", ["cabinet-studio-core"]],
+]) {
+  const html = readFileSync(join(root, route, "index.html"), "utf8");
+  for (const dependency of dependencies) if (!html.includes(`<link rel="modulepreload" href="/assets/${dependency}.js">`)) failures.push(`${route}: missing ${dependency} module preload`);
+}
 for (const file of new Set(allProfiledPages)) {
   if (readFileSync(join(root, file), "utf8").includes('href="/assets/styles.css"')) failures.push(`${file}: serves the authored full stylesheet`);
 }
@@ -235,6 +252,10 @@ for (const file of woodworkingImages) {
 }
 
 const headers = readFileSync(join(root, "_headers"), "utf8");
+for (const asset of ["glossary.css", "workflow-shell.css", "finishing-planner.js", "finishing-core.js", "finishing-planner.css", "edge-banding.js", "edge-banding-core.js", "edge-banding.css"]) {
+  const block = headers.match(new RegExp(`/assets/${asset.replace(".", "\\.")}\\n([\\s\\S]*?)(?=\\n/|$)`))?.[1] || "";
+  if (!/Cache-Control: public, max-age=[1-9]\d*/.test(block)) failures.push(`${asset} is missing a positive browser cache lifetime`);
+}
 for (const asset of ["site-chrome.js", "content-page.js", "home.js", "conversion.js", "blog-article.css", "wood.css", "planning.css", "templates.css", "construction.css", "construction-calculators.js", "component-builder.js", "component-builder.css", "plywood.css", "checklists.css", "legal.css", "plywood-core.js", "plywood-workflow.js", "cut-handoff-model.js", "plywood-workflow.css"]) {
   const block = headers.match(new RegExp(`/assets/${asset.replace(".", "\\.")}\\n([\\s\\S]*?)(?=\\n/|$)`))?.[1] || "";
   if (!/Cache-Control: public, max-age=[1-9]\d*/.test(block)) failures.push(`${asset} is missing a positive browser cache lifetime`);
