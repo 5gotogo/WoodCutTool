@@ -27,6 +27,12 @@
 /assets/editorial.css
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
+/assets/compare.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/wood-database.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
 /assets/blog-article.css
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 

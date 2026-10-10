@@ -19,18 +19,22 @@ export function blogArticleHtmlFiles() {
   return htmlFilesUnder("blog").filter((file) => file !== "blog/index.html" && file !== "blog/archive/index.html");
 }
 
+export function compareHtmlFiles() { return htmlFilesUnder("compare"); }
+
 // Blog and Compare pages share the authored styles.css source, but they do not
 // need calculator, App-directory, or project-workflow CSS on the critical path.
 // Keep runtime tokens so translated and interactive Blog-index states remain.
 function compilePages(pages, outputName) {
   // Generated inline CSS must not keep its own obsolete selectors alive.
-  const html = pages.map((file) => readFileSync(join(root, file), "utf8").replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ""));
+  const html = pages.map((file) => readFileSync(join(root, file), "utf8")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
+    .replace(/<link\b[^>]*\brel=["']stylesheet["'][^>]*>/gi, ""));
   const runtimePaths = new Set([
     "assets/site-chrome.js",
     "assets/content-page.js",
     "assets/conversion.js",
-    "assets/blog-index.js",
   ]);
+  if (outputName !== "compare.css") runtimePaths.add("assets/blog-index.js");
   for (const source of html) {
     for (const match of source.matchAll(/<script\b[^>]*\bsrc=["']\/(assets\/[^"'?]+\.js)(?:\?[^"']*)?["']/g)) {
       runtimePaths.add(match[1]);
@@ -69,6 +73,20 @@ export function compileBlogArticleStyles() {
   return compilePages(blogArticleHtmlFiles(), "blog-article.css");
 }
 
+export function compileCompareStyles() { return compilePages(compareHtmlFiles(), "compare.css"); }
+
+export function inlineCompareStyles() {
+  const { css, pages } = compileCompareStyles();
+  const markup = `<style data-compare-styles>${css}</style>`;
+  for (const file of pages) {
+    const path = join(root, file);
+    const html = readFileSync(path, "utf8");
+    const next = html.replace(/<style data-compare-styles>[\s\S]*?<\/style>|<link rel="stylesheet" href="\/assets\/compare\.css">/g, () => markup);
+    if (next !== html) writeFileSync(path, next);
+  }
+  console.log(`Inlined Compare styles for ${pages.length} pages: ${Buffer.byteLength(css)} bytes.`);
+}
+
 export function compileBlogIndexStyles() {
   return compilePages(["blog/index.html"], "Blog index inline CSS");
 }
@@ -87,6 +105,7 @@ export function buildEditorialStyles() {
   for (const [name, result] of [
     ["editorial.css", compileEditorialStyles()],
     ["blog-article.css", compileBlogArticleStyles()],
+    ["compare.css", compileCompareStyles()],
   ]) {
     writeFileSync(join(root, "assets", name), result.css);
     console.log(`Built ${name} for ${result.pages.length} pages: ${Buffer.byteLength(result.css)} bytes.`);

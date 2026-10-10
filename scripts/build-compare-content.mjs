@@ -1,4 +1,4 @@
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
@@ -35,10 +35,30 @@ function compareVisual(category) {
   return { src, alt };
 }
 
+function responsiveImage(src) {
+  const small = src.replace(/\.webp$/, "-800.webp");
+  if (small === src || !existsSync(join(root, small))) return null;
+  const width = {
+    "/assets/images/compare/compare-hero.webp": 1600,
+    "/assets/images/learn/tile-layout.webp": 1448,
+    "/assets/images/learn/quilt-planning.webp": 1448,
+  }[src] || 1200;
+  // Match the mobile page rails and desktop figure widths; retain the full
+  // image for high-DPR displays. Preload and img must use the same candidates.
+  const sizes = "(max-width: 679px) calc(100vw - 32px), 520px";
+  return { srcset: `${small} 800w, ${src} ${width}w`, sizes };
+}
+
+function imagePreload(src) {
+  const responsive = responsiveImage(src);
+  return `<link rel="preload" as="image" href="${escapeHtml(src)}"${responsive ? ` imagesrcset="${responsive.srcset}" imagesizes="${responsive.sizes}"` : ""} fetchpriority="high">`;
+}
+
 function visualFigure(src, alt, { wide = false, eager = false, className = "" } = {}) {
   const dimensions = wide ? 'width="1600" height="900"' : 'width="1200" height="900"';
   const priority = eager ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
-  return `<figure class="visual-frame${wide ? " wide" : ""}${className ? ` ${className}` : ""}"><img src="${src}" alt="${escapeHtml(alt)}" ${dimensions} ${priority} decoding="async"></figure>`;
+  const responsive = responsiveImage(src);
+  return `<figure class="visual-frame${wide ? " wide" : ""}${className ? ` ${className}` : ""}"><img src="${src}"${responsive ? ` srcset="${responsive.srcset}" sizes="${responsive.sizes}"` : ""} alt="${escapeHtml(alt)}" ${dimensions} ${priority} decoding="async"></figure>`;
 }
 
 function head({ title, description, canonical, jsonLd = "", ogType = "article", preloadImage = "" }) {
@@ -56,7 +76,7 @@ function head({ title, description, canonical, jsonLd = "", ogType = "article", 
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
-${preloadImage ? `  <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">\n` : ""}  <link rel="stylesheet" href="/assets/editorial.css">
+${preloadImage ? `  ${imagePreload(preloadImage)}\n` : ""}  <link rel="stylesheet" href="/assets/editorial.css">
   <script defer src="/assets/content-page.js"></script>
   ${jsonLd}
 </head>`;
@@ -637,11 +657,19 @@ for (const [category, , , route] of existingComparisons) {
   enhanced = enhanced
     .replace(/\/assets\/(?:styles|apps|editorial)\.css(?:\?v=[^"]+)?/g, "/assets/editorial.css")
     .replace(/\/assets\/app\.js(?:\?v=[^"]+)?/g, "/assets/content-page.js");
+  // Legacy pages are retained in place; update their existing figures too.
+  enhanced = enhanced.replace(/<figure\b[^>]*>[\s\S]*?<\/figure>/g, figure => figure.replace(/<img\b[^>]*>/g, tag => {
+    const src = tag.match(/\bsrc="([^"]+)"/)?.[1];
+    const responsive = src && responsiveImage(src);
+    if (!responsive) return tag;
+    return tag.replace(/\s+(?:srcset|sizes)="[^"]*"/g, "").replace(/\bsrc="[^"]+"/, `$& srcset="${responsive.srcset}" sizes="${responsive.sizes}"`);
+  }));
   const leadImage = enhanced.match(/(?:article-lead-visual|comparison-hero-visual)[^>]*><img\b[^>]*\bsrc="([^"]+)"/);
-  if (leadImage && !enhanced.includes(`<link rel="preload" as="image" href="${leadImage[1]}" fetchpriority="high">`)) {
+  if (leadImage) {
+    enhanced = enhanced.replace(/\s*<link\b[^>]*\brel="preload"[^>]*\bas="image"[^>]*>/g, "");
     enhanced = enhanced.replace(
-      /(<link rel="stylesheet" href="\/assets\/editorial\.css">)/,
-      `<link rel="preload" as="image" href="${leadImage[1]}" fetchpriority="high">\n  $1`
+      /(<link rel="stylesheet" href="\/assets\/(?:editorial|compare)\.css">|<style data-compare-styles>)/,
+      `${imagePreload(leadImage[1])}\n  $1`
     );
   }
   if (enhanced !== html) writeFileSync(target, enhanced);

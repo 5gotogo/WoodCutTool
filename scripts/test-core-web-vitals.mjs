@@ -1,8 +1,8 @@
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { appHtmlFiles, compileAppStyles } from "./build-app-styles.mjs";
-import { blogArticleHtmlFiles, compileBlogArticleStyles, compileBlogIndexStyles, compileEditorialStyles, editorialHtmlFiles } from "./build-editorial-styles.mjs";
-import { compileContentStyles, compileInteractiveStyles, compileWoodStyles, compilePlanningStyles, compileTemplateStyles, compileConstructionStyles, compilePlywoodStyles, compileChecklistStyles, compileLegalStyles, compileGlossaryStyles, compileWorkflowStyles } from "./build-site-styles.mjs";
+import { blogArticleHtmlFiles, compileBlogArticleStyles, compileBlogIndexStyles, compileCompareStyles, compileEditorialStyles, editorialHtmlFiles } from "./build-editorial-styles.mjs";
+import { compileContentStyles, compileInteractiveStyles, compileWoodStyles, compileWoodDatabaseStyles, compilePlanningStyles, compileTemplateStyles, compileConstructionStyles, compilePlywoodStyles, compileChecklistStyles, compileLegalStyles, compileGlossaryStyles, compileWorkflowStyles } from "./build-site-styles.mjs";
 import { performanceProfile } from "./site-performance-profile.mjs";
 import assert from "node:assert/strict";
 import { appStoreThumbnail, appStoreScreenshotSources } from "./app-store-images.mjs";
@@ -65,23 +65,33 @@ function inspectArticles(directory) {
 inspectArticles("blog");
 inspectArticles("learn");
 
-for (const file of editorialHtmlFiles().filter((file) => file === "compare/index.html" || file.startsWith("compare/"))) {
+const compareStyles = compileCompareStyles();
+if (Buffer.byteLength(compareStyles.css) > 60_000 || readFileSync(join(root, "assets/compare.css"), "utf8") !== compareStyles.css) failures.push("Compare stylesheet is stale or exceeds 60 KB");
+for (const file of compareStyles.pages) {
   const html = readFileSync(join(root, file), "utf8");
-  if (!html.includes('<link rel="stylesheet" href="/assets/editorial.css">')) {
-    failures.push(`${file}: Compare page does not use the scoped editorial stylesheet`);
+  if (!html.includes(`<style data-compare-styles>${compareStyles.css}</style>`) || /<link\b[^>]*rel="stylesheet"/.test(html)) {
+    failures.push(`${file}: Compare page must inline the complete scoped stylesheet`);
   }
   if (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"')) {
     failures.push(`${file}: static Compare page eagerly loads the full app runtime`);
   }
-  const lead = html.match(/(?:article-lead-visual|comparison-hero-visual)[^>]*><img\b([^>]*)\bsrc="([^"]+)"([^>]*)>/);
+  const lead = html.match(/(?:article-lead-visual|comparison-hero-visual)[^>]*><img\b([^>]*)\bsrc="([^"]+)"([^>]*)>/)
+    || html.match(/<figure class="visual-frame wide"><img\b([^>]*)\bsrc="([^"]+)"([^>]*)>/);
   if (!lead) continue;
   compareLcpImages += 1;
   const imageTag = lead[0];
   if (!imageTag.includes('loading="eager"') || !imageTag.includes('fetchpriority="high"')) {
     failures.push(`${file}: above-the-fold Compare image is not eager/high priority`);
   }
-  const preload = `<link rel="preload" as="image" href="${lead[2]}" fetchpriority="high">`;
-  if (!html.includes(preload)) failures.push(`${file}: above-the-fold Compare image is not preloaded`);
+  const preload = [...html.matchAll(/<link\b[^>]*rel="preload"[^>]*as="image"[^>]*>/g)].map(match => match[0]).find(tag => tag.includes(`href="${lead[2]}"`));
+  if (!preload?.includes('fetchpriority="high"')) failures.push(`${file}: above-the-fold Compare image is not preloaded`);
+  const small = lead[2].replace(/\.webp$/, "-800.webp");
+  if (existsSync(join(root, small))) {
+    const srcset = imageTag.match(/\bsrcset="([^"]+)"/)?.[1];
+    const sizes = imageTag.match(/\bsizes="([^"]+)"/)?.[1];
+    if (!srcset?.includes(`${small} 800w`) || !sizes || !preload?.includes(`imagesrcset="${srcset}"`) || !preload?.includes(`imagesizes="${sizes}"`)) failures.push(`${file}: responsive Compare image and preload must match`);
+  }
+  if (!html.includes('defer fetchpriority="low" src="/assets/content-page.js"') || !html.includes('defer fetchpriority="low" src="/assets/conversion.js"')) failures.push(`${file}: optional Compare runtimes must have low priority`);
 }
 
 const blogIndex = readFileSync(join(root, "blog/index.html"), "utf8");
@@ -174,6 +184,7 @@ for (const [name, output, compiled, limit] of [
   ["content", join(root, "assets/content.css"), compileContentStyles(), 90_000],
   ["interactive", join(root, "assets/interactive.css"), compileInteractiveStyles(), 90_000],
   ["wood", join(root, "assets/wood.css"), compileWoodStyles(), 45_000],
+  ["wood-database", join(root, "assets/wood-database.css"), compileWoodDatabaseStyles(), 40_000],
   ["planning", join(root, "assets/planning.css"), compilePlanningStyles(), 45_000],
   ["templates", join(root, "assets/templates.css"), compileTemplateStyles(), 50_000],
   ["construction", join(root, "assets/construction.css"), compileConstructionStyles(), 50_000],
@@ -189,8 +200,9 @@ for (const [name, output, compiled, limit] of [
   for (const file of compiled.pages) {
     const html = readFileSync(join(root, file), "utf8");
     const profile = performanceProfile(file, html);
-    const inline = ["wood", "glossary", "workflow-shell"].includes(name);
-    const custom = name === "workflow-shell" ? readFileSync(join(root, "assets", `${file.split("/")[0]}.css`), "utf8") : "";
+    const inline = ["wood", "wood-database", "glossary", "workflow-shell", "legal", "plywood"].includes(name);
+    const customName = name === "workflow-shell" ? file.split("/")[0] : name === "plywood" ? "plywood-workflow" : null;
+    const custom = customName ? readFileSync(join(root, "assets", `${customName}.css`), "utf8") : "";
     const marker = name === "workflow-shell" ? "workflow" : name;
     const hasStyles = inline
       ? html.includes(`<style data-${marker}-styles>${css}${custom}</style>`) && !/<link\b[^>]*rel="stylesheet"/.test(html)
@@ -215,6 +227,7 @@ const allProfiledPages = [
   ...compileContentStyles().pages,
   ...compileInteractiveStyles().pages,
   ...compileWoodStyles().pages,
+  ...compileWoodDatabaseStyles().pages,
   ...compilePlanningStyles().pages,
   ...compileTemplateStyles().pages,
   ...compileConstructionStyles().pages,
@@ -252,7 +265,7 @@ for (const file of woodworkingImages) {
 }
 
 const headers = readFileSync(join(root, "_headers"), "utf8");
-for (const asset of ["glossary.css", "workflow-shell.css", "finishing-planner.js", "finishing-core.js", "finishing-planner.css", "edge-banding.js", "edge-banding-core.js", "edge-banding.css"]) {
+for (const asset of ["compare.css", "wood-database.css", "glossary.css", "workflow-shell.css", "finishing-planner.js", "finishing-core.js", "finishing-planner.css", "edge-banding.js", "edge-banding-core.js", "edge-banding.css"]) {
   const block = headers.match(new RegExp(`/assets/${asset.replace(".", "\\.")}\\n([\\s\\S]*?)(?=\\n/|$)`))?.[1] || "";
   if (!/Cache-Control: public, max-age=[1-9]\d*/.test(block)) failures.push(`${asset} is missing a positive browser cache lifetime`);
 }

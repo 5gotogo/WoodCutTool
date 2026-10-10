@@ -56,6 +56,10 @@ export function performanceProfile(file, html) {
     return { stylesheet: "/assets/legal.css", runtimes: ["/assets/content-page.js"] };
   }
 
+  if (file === "wood-database/index.html") {
+    return { stylesheet: "/assets/wood-database.css", runtimes: ["/assets/content-page.js"] };
+  }
+
   if (file.startsWith("glossary/")) {
     return { stylesheet: "/assets/glossary.css", runtimes: ["/assets/content-page.js"] };
   }
@@ -72,7 +76,11 @@ export function performanceProfile(file, html) {
     return { stylesheet: "/assets/blog-article.css", runtimes: ["/assets/content-page.js"] };
   }
 
-  if (/^(?:blog|compare)\//.test(file)) {
+  if (file.startsWith("compare/")) {
+    return { stylesheet: "/assets/compare.css", runtimes: ["/assets/content-page.js"] };
+  }
+
+  if (file.startsWith("blog/")) {
     return {
       stylesheet: "/assets/editorial.css",
       runtimes: file === "blog/index.html"

@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
 import { homeRuntimeSource } from "./build-home-runtime.mjs";
 import { buildAppStyles } from "./build-app-styles.mjs";
-import { buildEditorialStyles, inlineBlogIndexStyles } from "./build-editorial-styles.mjs";
+import { buildEditorialStyles, inlineBlogIndexStyles, inlineCompareStyles } from "./build-editorial-styles.mjs";
 import { buildSiteStyles, inlineWoodStyles, inlineScreenshotRouteStyles } from "./build-site-styles.mjs";
 import { performanceProfile } from "./site-performance-profile.mjs";
 
@@ -40,7 +40,7 @@ function collectHtmlFiles(dir = root, prefix = "") {
 function applyStylesVersion(html, file) {
   const stylesheet = performanceProfile(file, html).stylesheet;
   if (!stylesheet) return html;
-  return html.replace(/\/assets\/(?:styles|apps|editorial|blog-article|content|interactive|wood|planning|templates|construction|plywood|checklists|legal|glossary|workflow-shell)\.css(?:\?v=[^"]+)?/g, stylesheet);
+  return html.replace(/\/assets\/(?:styles|apps|editorial|compare|blog-article|content|interactive|wood|wood-database|planning|templates|construction|plywood|checklists|legal|glossary|workflow-shell)\.css(?:\?v=[^"]+)?/g, stylesheet);
 }
 
 function applyAppVersion(html) {
@@ -70,7 +70,7 @@ function applySiteChromeScript(html) {
 }
 
 function isLcpTailPage(file, html) {
-  return /^(?:worksheets|troubleshooting|templates|apps|checklists|legal|plywood-cut-calculator|glossary|finishing-planner|edge-banding|cabinet-studio)\//.test(file) || html.includes("data-construction-form") || file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/archive/index.html");
+  return /^(?:worksheets|troubleshooting|templates|apps|compare|wood-database|checklists|legal|plywood-cut-calculator|glossary|finishing-planner|edge-banding|cabinet-studio)\//.test(file) || html.includes("data-construction-form") || file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/archive/index.html");
 }
 
 function applyConversionScript(html, file) {
@@ -238,5 +238,6 @@ buildSiteStyles();
 inlineWoodStyles();
 inlineScreenshotRouteStyles();
 inlineBlogIndexStyles();
+inlineCompareStyles();
 
 writeFileSync(join(root, "assets/plywood-core.js"), plywoodCoreSource());

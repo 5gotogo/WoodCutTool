@@ -76,6 +76,8 @@ export function compileWoodStyles() {
   return compile("/assets/wood.css");
 }
 
+export function compileWoodDatabaseStyles() { return compile("/assets/wood-database.css"); }
+
 export function compilePlanningStyles() { return compile("/assets/planning.css"); }
 export function compileTemplateStyles() { return compile("/assets/templates.css"); }
 export function compileConstructionStyles() { return compile("/assets/construction.css"); }
@@ -89,17 +91,22 @@ export function inlineScreenshotRouteStyles() {
   for (const [marker, result] of [
     ["glossary", compileGlossaryStyles()],
     ["workflow", compileWorkflowStyles()],
+    ["legal", compileLegalStyles()],
+    ["wood-database", compileWoodDatabaseStyles()],
+    ["plywood", compilePlywoodStyles()],
   ]) {
     for (const file of result.pages) {
       const path = join(root, file);
       const html = readFileSync(path, "utf8");
       // Keep the complete custom stylesheet after the shared shell, just as in
       // the original link order. These small text/SVG-led pages need no CSS RTT.
-      const custom = marker === "workflow" ? file.split("/")[0] : null;
+      const custom = marker === "workflow" ? file.split("/")[0] : marker === "plywood" ? "plywood-workflow" : null;
       const css = result.css + (custom ? readFileSync(join(root, "assets", `${custom}.css`), "utf8") : "");
       const markup = `<style data-${marker}-styles>${css}</style>`;
-      let next = html.replace(new RegExp(`<style data-${marker}-styles>[\\s\\S]*?<\\/style>|<link rel="stylesheet" href="${marker === "glossary" ? "/assets/glossary.css" : "/assets/workflow-shell.css"}">`, "g"), () => markup);
-      if (custom) next = next.replace(`<link rel="stylesheet" href="/assets/${custom}.css">`, "");
+      const stylesheet = marker === "workflow" ? "workflow-shell" : marker;
+      let next = html.replace(new RegExp(`<style data-${marker}-styles>[\\s\\S]*?<\\/style>|<link rel="stylesheet" href="/assets/${stylesheet}\\.css">`, "g"), () => markup);
+      if (custom) next = next.replace(new RegExp(`[ \\t]*<link rel="stylesheet" href="/assets/${custom}\\.css">\\r?\\n?`), "");
+      next = next.replace(/^[ \t]+$/gm, "");
       if (next !== html) writeFileSync(path, next);
     }
     console.log(`Inlined ${marker} styles for ${result.pages.length} pages; shared CSS ${Buffer.byteLength(result.css)} bytes.`);
@@ -125,6 +132,7 @@ export function buildSiteStyles() {
     ["content.css", compileContentStyles()],
     ["interactive.css", compileInteractiveStyles()],
     ["wood.css", compileWoodStyles()],
+    ["wood-database.css", compileWoodDatabaseStyles()],
     ["planning.css", compilePlanningStyles()],
     ["templates.css", compileTemplateStyles()],
     ["construction.css", compileConstructionStyles()],
