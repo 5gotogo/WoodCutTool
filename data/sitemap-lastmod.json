@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-10-08",
-    "hash": "11ba764de1c336f7751fdc6283c7947187d07dbd84ccfe715598e44292bfba59",
+    "lastmod": "2026-10-10",
+    "hash": "248f02bda99996e7c3f1a76d8fcc1a2e048ed042719c7ba6033a479cc595b041",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -9117,6 +9117,16 @@
   "/legal/Casework/support/": {
     "lastmod": "2026-07-27",
     "hash": "8886ea9da2c51faa8910ea345d7f79436f89da7fa2207e16878211a202cdfed1",
+    "hashVersion": 2
+  },
+  "/legal/CounterFit/privacy/": {
+    "lastmod": "2026-10-10",
+    "hash": "6d1beb63468b41fc783bff116ef38df46593d09716f33db2a2908289db2cfac0",
+    "hashVersion": 2
+  },
+  "/legal/CounterFit/support/": {
+    "lastmod": "2026-10-10",
+    "hash": "45a03836372ca4c051736fbe4d14508535e9dd045b1663a68ba55ca89932f1be",
     "hashVersion": 2
   },
   "/legal/cutlist/privacy/": {

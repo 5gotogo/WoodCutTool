@@ -155,7 +155,8 @@ const appSupportDirectory = [
   ["Shelf Planner", "/legal/ShelfPlanner/privacy/", "/legal/ShelfPlanner/support/"],
   ["WoodCheck", "/legal/WoodCheck/privacy/", "/legal/WoodCheck/support/"],
   ["FloorQuote", "/legal/FloorQuote/privacy/", "/legal/FloorQuote/support/"],
-  ["PoolPilot", "/legal/PoolPilot/privacy/", "/legal/PoolPilot/support/"]
+  ["PoolPilot", "/legal/PoolPilot/privacy/", "/legal/PoolPilot/support/"],
+  ["CounterFit", "/legal/CounterFit/privacy/", "/legal/CounterFit/support/"]
 ];
 
 const featuredApps = [

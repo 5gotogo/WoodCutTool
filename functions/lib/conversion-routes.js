@@ -1811,6 +1811,8 @@ export const conversionRoutes = new Set([
   "/learn/workbench-material-planning-guide/",
   "/legal/Casework/privacy/",
   "/legal/Casework/support/",
+  "/legal/CounterFit/privacy/",
+  "/legal/CounterFit/support/",
   "/legal/DuctLab/privacy/",
   "/legal/DuctLab/support/",
   "/legal/FloorQuote/privacy/",
