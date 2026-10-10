@@ -76,6 +76,8 @@ export function compileWoodStyles() {
   return compile("/assets/wood.css");
 }
 
+export function compileWoodSpeciesStyles() { return compile("/assets/wood-species.css"); }
+
 export function compileWoodDatabaseStyles() { return compile("/assets/wood-database.css"); }
 
 export function compilePlanningStyles() { return compile("/assets/planning.css"); }
@@ -116,15 +118,16 @@ export function inlineScreenshotRouteStyles() {
 export function inlineWoodStyles() {
   // These text-led pages fit in a small complete bundle, including all menu
   // and responsive states. Inlining avoids a blocking stylesheet round trip.
-  const { css, pages } = compileWoodStyles();
-  const markup = `<style data-wood-styles>${css}</style>`;
-  for (const file of pages) {
-    const path = join(root, file);
-    const html = readFileSync(path, "utf8");
-    const next = html.replace(/<style data-wood-styles>[\s\S]*?<\/style>|<link rel="stylesheet" href="\/assets\/wood\.css">/g, () => markup);
-    if (next !== html) writeFileSync(path, next);
+  for (const { css, pages } of [compileWoodStyles(), compileWoodSpeciesStyles()]) {
+    const markup = `<style data-wood-styles>${css}</style>`;
+    for (const file of pages) {
+      const path = join(root, file);
+      const html = readFileSync(path, "utf8");
+      const next = html.replace(/<style data-wood-styles>[\s\S]*?<\/style>|<link rel="stylesheet" href="\/assets\/wood(?:-species)?\.css">/g, () => markup);
+      if (next !== html) writeFileSync(path, next);
+    }
+    console.log(`Inlined Wood styles for ${pages.length} pages: ${Buffer.byteLength(css)} bytes.`);
   }
-  console.log(`Inlined Wood styles for ${pages.length} pages: ${Buffer.byteLength(css)} bytes.`);
 }
 
 export function buildSiteStyles() {
@@ -132,6 +135,7 @@ export function buildSiteStyles() {
     ["content.css", compileContentStyles()],
     ["interactive.css", compileInteractiveStyles()],
     ["wood.css", compileWoodStyles()],
+    ["wood-species.css", compileWoodSpeciesStyles()],
     ["wood-database.css", compileWoodDatabaseStyles()],
     ["planning.css", compilePlanningStyles()],
     ["templates.css", compileTemplateStyles()],

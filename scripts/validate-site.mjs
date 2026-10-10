@@ -258,16 +258,18 @@ for (const file of htmlFiles) {
 
   const html = readText(file);
   const expectsSharedChrome = performanceProfile(file, html).stylesheet !== null;
+  const staticWoodChrome = file.startsWith("wood/");
 
   const headerMounts = html.match(/<div\b[^>]*\bdata-site-header\b[^>]*>\s*<\/div>/gi) ?? [];
   const footerMounts = html.match(/<div\b[^>]*\bdata-site-footer\b[^>]*>\s*<\/div>/gi) ?? [];
   const staticHeaders = html.match(/<header\b[^>]*\bclass=["'][^"']*\bsite-header\b[^"']*["'][^>]*>/gi) ?? [];
   const staticFooters = html.match(/<footer\b[^>]*\bclass=["'][^"']*\bsite-footer\b[^"']*["'][^>]*>/gi) ?? [];
   const siteChromeScripts = html.match(/<script\b[^>]*\bsrc=["']\/assets\/site-chrome\.js(?:\?[^"']*)?["'][^>]*>\s*<\/script>/gi) ?? [];
-  if (expectsSharedChrome && siteChromeScripts.length !== 1) {
-    errors.push(`${file} must load exactly one shared site-chrome.js script; found ${siteChromeScripts.length}`);
+  const expectedChromeScripts = staticWoodChrome ? 0 : 1;
+  if (expectsSharedChrome && siteChromeScripts.length !== expectedChromeScripts) {
+    errors.push(`${file} must load ${expectedChromeScripts} shared site-chrome.js scripts; found ${siteChromeScripts.length}`);
   }
-  if (expectsSharedChrome && (headerMounts.length !== 1 || footerMounts.length !== 1)) {
+  if (expectsSharedChrome && !staticWoodChrome && (headerMounts.length !== 1 || footerMounts.length !== 1)) {
     errors.push(`${file} must contain exactly one shared header and footer mount`);
   }
   if (!expectsSharedChrome && (siteChromeScripts.length || headerMounts.length || footerMounts.length)) {
@@ -276,7 +278,7 @@ for (const file of htmlFiles) {
   if (/<!-- shared-(?:header|footer):(?:start|end) -->/.test(html) || html.includes("data-site-chrome-fallback")) {
     errors.push(`${file} still contains expanded shared chrome instead of the common mount`);
   }
-  if (staticHeaders.length || staticFooters.length) {
+  if (!staticWoodChrome && (staticHeaders.length || staticFooters.length)) {
     errors.push(`${file} contains static site chrome in addition to the shared mounts`);
   }
   if (siteChromeScripts.some((tag) => /site-chrome\.js\?/i.test(tag))) {
@@ -284,9 +286,10 @@ for (const file of htmlFiles) {
   }
 
   if (file === "wood/index.html" || /^wood\/[^/]+\/index\.html$/.test(file)) {
-    const contentRuntimeScripts = html.match(/<script\b[^>]*\bsrc=["']\/assets\/content-page\.js["'][^>]*>\s*<\/script>/gi) ?? [];
+    if (staticHeaders.length || staticFooters.length !== 1 || headerMounts.length !== 1 || footerMounts.length) errors.push(`${file}: Wood pages require one reserved header mount and one shared static footer`);
+    const contentRuntimeScripts = html.match(/<script\b[^>]*\bsrc=["']\/assets\/wood-page\.js["'][^>]*>\s*<\/script>/gi) ?? [];
     if (contentRuntimeScripts.length !== 1) {
-      errors.push(`${file} must load exactly one lightweight content-page.js runtime; found ${contentRuntimeScripts.length}`);
+      errors.push(`${file} must load exactly one lightweight wood-page.js runtime; found ${contentRuntimeScripts.length}`);
     }
     if (/src=["']\/assets\/app\.js["']/.test(html)) {
       errors.push(`${file} eagerly loads app.js instead of the lightweight content runtime`);

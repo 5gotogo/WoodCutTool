@@ -96,6 +96,7 @@ try {
         await evaluate('document.querySelector(".mobile-nav-toggle").click()');
       } else {
         await evaluate('document.querySelector(".nav-menu-toggle").click()');
+        await waitFor('!!document.querySelector(".nav-menu-item.is-open .mega-menu a")');
         assert(await evaluate('!!document.querySelector(".nav-menu-item.is-open .mega-menu a")'));
         await evaluate('document.querySelector(".nav-menu-toggle").click()');
       }
@@ -127,7 +128,7 @@ try {
   // On-demand language loader still binds the shared header and footer.
   await navigate("/wood/beech/");
   await evaluate('const select=document.querySelector(".language-picker select"); select.value="zh-CN"; select.dispatchEvent(new Event("change", {bubbles:true}))');
-  await waitFor('!!window.WCTAppInitialized');
+  await waitFor('!!window.WCTWoodLanguageInitialized');
   assert.equal(await evaluate('localStorage.getItem("woodcuttool-lang")'), "zh-CN");
   assert.equal(await evaluate('document.documentElement.lang'), "zh-CN");
   assert.deepEqual(errors, []);

@@ -169,7 +169,10 @@ function outputMetrics() {
       const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1] || html;
       words.set(sourceRoute, decodeEntities(main).split(/\s+/).filter(Boolean).length);
     }
-    for (const match of html.matchAll(/\bhref=["']([^"']+)["']/gi)) {
+    // Shared chrome can be mounted by JavaScript or emitted in HTML. Its
+    // placement must not inflate the content's inbound-link inventory.
+    const content = html.replace(/<header\b[^>]*\bclass=["'][^"']*\bsite-header\b[^"']*["'][^>]*>[\s\S]*?<\/header>|<footer\b[^>]*\bclass=["'][^"']*\bsite-footer\b[^"']*["'][^>]*>[\s\S]*?<\/footer>/gi, "");
+    for (const match of content.matchAll(/\bhref=["']([^"']+)["']/gi)) {
       const target = routeFromHref(match[1]);
       if (!target || target === sourceRoute) continue;
       if (!inbound.has(target)) inbound.set(target, new Set());

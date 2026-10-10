@@ -45,6 +45,18 @@
 /assets/wood.css
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
+/assets/wood-species.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/wood-page.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/wood-language.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/wood-menus.json
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
 /assets/images/*
   Cache-Control: public, max-age=86400, stale-while-revalidate=604800
 

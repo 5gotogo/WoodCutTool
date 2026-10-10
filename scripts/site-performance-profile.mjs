@@ -4,6 +4,7 @@ export const generatedRuntimePaths = new Set([
   "/assets/directory-page.js",
   "/assets/blog-index.js",
   "/assets/home.js",
+  "/assets/wood-page.js",
 ]);
 
 const fullAppMarkers = [
@@ -98,7 +99,7 @@ export function performanceProfile(file, html) {
   }
 
   if (file.startsWith("wood/")) {
-    return { stylesheet: "/assets/wood.css", runtimes: ["/assets/content-page.js"] };
+    return { stylesheet: file === "wood/index.html" ? "/assets/wood.css" : "/assets/wood-species.css", runtimes: ["/assets/wood-page.js"] };
   }
 
   if (/^(?:worksheets|troubleshooting)\//.test(file)) {

@@ -78,6 +78,7 @@ try {
         await evaluate('document.querySelector(".mobile-nav-toggle").click()');
       } else {
         await evaluate('document.querySelector(".nav-menu-toggle").click()');
+        await waitFor('!!document.querySelector(".nav-menu-item.is-open .mega-menu a")');
         assert(await evaluate('!!document.querySelector(".nav-menu-item.is-open .mega-menu a")'));
         await evaluate('document.querySelector(".nav-menu-toggle").click()');
       }

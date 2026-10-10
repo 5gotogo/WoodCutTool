@@ -7,6 +7,7 @@ import { buildAppStyles } from "./build-app-styles.mjs";
 import { buildEditorialStyles, inlineBlogIndexStyles, inlineCompareStyles } from "./build-editorial-styles.mjs";
 import { buildSiteStyles, inlineWoodStyles, inlineScreenshotRouteStyles } from "./build-site-styles.mjs";
 import { performanceProfile } from "./site-performance-profile.mjs";
+import { buildWoodRuntime, renderWoodChrome } from "./build-wood-runtime.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
@@ -40,7 +41,7 @@ function collectHtmlFiles(dir = root, prefix = "") {
 function applyStylesVersion(html, file) {
   const stylesheet = performanceProfile(file, html).stylesheet;
   if (!stylesheet) return html;
-  return html.replace(/\/assets\/(?:styles|apps|editorial|compare|blog-article|content|interactive|wood|wood-database|planning|templates|construction|plywood|checklists|legal|glossary|workflow-shell)\.css(?:\?v=[^"]+)?/g, stylesheet);
+  return html.replace(/\/assets\/(?:styles|apps|editorial|compare|blog-article|content|interactive|wood|wood-species|wood-database|planning|templates|construction|plywood|checklists|legal|glossary|workflow-shell)\.css(?:\?v=[^"]+)?/g, stylesheet);
 }
 
 function applyAppVersion(html) {
@@ -62,7 +63,7 @@ function applyMegaMenuFallback(html) {
 
 function applySiteChromeScript(html) {
   let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js(?:\?[^\"]*)?")[^>]*>\s*<\/script>/g, "");
-  const runtimeScriptPattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page)\.js")[^>]*>\s*<\/script>)/;
+  const runtimeScriptPattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page|wood-page)\.js")[^>]*>\s*<\/script>)/;
   if (runtimeScriptPattern.test(next)) {
     return next.replace(runtimeScriptPattern, `\n${siteChromeScript}$1`);
   }
@@ -91,7 +92,7 @@ function applyConversionScript(html, file) {
 
 function applyProfiledRuntime(html, file) {
   const runtimes = performanceProfile(file, html).runtimes;
-  let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page|directory-page|blog-index|home)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "");
+  let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page|directory-page|blog-index|home|wood-page)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "");
   const priority = isLcpTailPage(file, html) ? ' fetchpriority="low"' : "";
   const markup = runtimes.map((path) => `  <script defer${priority} src="${path}"></script>`).join("\n");
   const siteChromePattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js")[^>]*>\s*<\/script>)/;
@@ -102,7 +103,7 @@ function applyProfiledRuntime(html, file) {
 function stripSharedChrome(html) {
   return html
     .replace(/\s*<style>\.mega-menu\{display:none\}<\/style>/g, "")
-    .replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|conversion|app|content-page|directory-page|blog-index|home)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "")
+    .replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|conversion|app|content-page|directory-page|blog-index|home|wood-page)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "")
     .replace(/\s*<div\b[^>]*\bdata-site-header\b[^>]*>\s*<\/div>/gi, "")
     .replace(/\s*<div\b[^>]*\bdata-site-footer\b[^>]*>\s*<\/div>/gi, "");
 }
@@ -196,7 +197,7 @@ for (const file of collectHtmlFiles()) {
   const absolute = join(root, file);
   const html = readFileSync(absolute, "utf8");
   const profile = performanceProfile(file, html);
-  const next = !profile.stylesheet && profile.runtimes.length === 0
+  let next = !profile.stylesheet && profile.runtimes.length === 0
     ? stripSharedChrome(html)
     : applySmartAppBanner(
     applyProfiledRuntime(
@@ -221,6 +222,12 @@ for (const file of collectHtmlFiles()) {
     file
     );
 
+  if (file.startsWith("wood/")) {
+    const chrome = renderWoodChrome(`/${file.replace(/index\.html$/, "")}`);
+    next = next.replace(/\s*<script\b[^>]*\bsrc="\/assets\/site-chrome\.js"[^>]*><\/script>/g, "")
+      .replace(footerMount, chrome.footer);
+  }
+
   if (next === html) {
     skipped += 1;
     continue;
@@ -232,6 +239,7 @@ for (const file of collectHtmlFiles()) {
 
 console.log(`Applied shared site chrome to ${updated} pages${skipped ? `, skipped ${skipped}` : ""}.`);
 writeFileSync(join(root, "assets/home.js"), homeRuntimeSource());
+buildWoodRuntime();
 buildAppStyles();
 buildEditorialStyles();
 buildSiteStyles();

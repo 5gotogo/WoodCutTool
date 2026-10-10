@@ -142,12 +142,16 @@ for (const route of routeSet) {
   const html = readFileSync(file, "utf8");
   const headerMounts = html.match(/<div\b[^>]*\bdata-site-header\b[^>]*>\s*<\/div>/gi) ?? [];
   const footerMounts = html.match(/<div\b[^>]*\bdata-site-footer\b[^>]*>\s*<\/div>/gi) ?? [];
-  if (headerMounts.length !== 1 || footerMounts.length !== 1) {
-    errors.push(`Sitemap route lacks one shared header and footer mount: ${route}`);
+  const staticWood = route.startsWith("/wood/");
+  const staticHeaders = html.match(/<header class="site-header">/g) ?? [];
+  const staticFooters = html.match(/<footer class="site-footer">/g) ?? [];
+  if (staticWood ? (headerMounts.length !== 1 || footerMounts.length || staticHeaders.length || staticFooters.length !== 1) : (headerMounts.length !== 1 || footerMounts.length !== 1)) {
+    errors.push(`Sitemap route lacks the expected shared header and footer: ${route}`);
   }
 
+  const contextualHtml = staticWood ? html.replace(/<header class="site-header">[\s\S]*?<\/header>|<footer class="site-footer">[\s\S]*?<\/footer>/g, "") : html;
   const contextualTargets = new Set(
-    [...html.matchAll(/\bhref=["']([^"']+)["']/gi)]
+    [...contextualHtml.matchAll(/\bhref=["']([^"']+)["']/gi)]
       .map((match) => normalizeRoute(match[1]))
       .filter((target) => target && routeSet.has(target))
   );

@@ -1,0 +1,4311 @@
+{
+  "date": "2026-10-10",
+  "baselineCommit": "055eaa084bd2d55dc9e3a2290f02fbcdc7aae519",
+  "scope": "Wood directory (1 hub + 200 species), synthetic local gzip cold-cache audit; not production RUM",
+  "assets": {
+    "wood-page.js": 16515,
+    "wood-language.js": 17691,
+    "wood-menus.json": 19392,
+    "wood.css": 31437,
+    "wood-species.css": 32568
+  },
+  "metrics": {
+    "en": {
+      "summary": [
+        {
+          "route": "/wood/",
+          "before": {
+            "lcp": 288,
+            "fcp": 288,
+            "transfer": 40677,
+            "domReady": 502.90000000596046,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          },
+          "after": {
+            "lcp": 256,
+            "fcp": 256,
+            "transfer": 30465,
+            "domReady": 395.70000000298023,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          }
+        },
+        {
+          "route": "/wood/rosewood/",
+          "before": {
+            "lcp": 264,
+            "fcp": 264,
+            "transfer": 32154,
+            "domReady": 500.5,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          },
+          "after": {
+            "lcp": 256,
+            "fcp": 256,
+            "transfer": 22164,
+            "domReady": 415.20000000298023,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          }
+        },
+        {
+          "route": "/wood/hackberry/",
+          "before": {
+            "lcp": 264,
+            "fcp": 264,
+            "transfer": 32145,
+            "domReady": 503.79999999701977,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          },
+          "after": {
+            "lcp": 260,
+            "fcp": 260,
+            "transfer": 22147,
+            "domReady": 413.90000000596046,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          }
+        },
+        {
+          "route": "/wood/paulownia/",
+          "before": {
+            "lcp": 264,
+            "fcp": 264,
+            "transfer": 32155,
+            "domReady": 498.6000000089407,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          },
+          "after": {
+            "lcp": 248,
+            "fcp": 248,
+            "transfer": 22156,
+            "domReady": 414.6000000089407,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          }
+        },
+        {
+          "route": "/wood/khaya/",
+          "before": {
+            "lcp": 268,
+            "fcp": 268,
+            "transfer": 32164,
+            "domReady": 504.70000000298023,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          },
+          "after": {
+            "lcp": 256,
+            "fcp": 256,
+            "transfer": 22173,
+            "domReady": 410.90000000596046,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          }
+        },
+        {
+          "route": "/wood/oak/",
+          "before": {
+            "lcp": 264,
+            "fcp": 264,
+            "transfer": 32113,
+            "domReady": 508.40000000596046,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          },
+          "after": {
+            "lcp": 256,
+            "fcp": 256,
+            "transfer": 22112,
+            "domReady": 403.79999999701977,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          }
+        },
+        {
+          "route": "/wood/east-indian-rosewood/",
+          "before": {
+            "lcp": 284,
+            "fcp": 284,
+            "transfer": 32208,
+            "domReady": 498.6000000089407,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          },
+          "after": {
+            "lcp": 256,
+            "fcp": 256,
+            "transfer": 22219,
+            "domReady": 403.40000000596046,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          }
+        },
+        {
+          "route": "/wood/brazilian-rosewood/",
+          "before": {
+            "lcp": 268,
+            "fcp": 268,
+            "transfer": 32188,
+            "domReady": 503.8999999910593,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          },
+          "after": {
+            "lcp": 256,
+            "fcp": 256,
+            "transfer": 22199,
+            "domReady": 415.5,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          }
+        }
+      ],
+      "before": {
+        "scope": "Gzip preview; en language, 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+        "origin": "http://127.0.0.1:4192",
+        "routes": [
+          "/wood/",
+          "/wood/rosewood/",
+          "/wood/hackberry/",
+          "/wood/paulownia/",
+          "/wood/khaya/",
+          "/wood/oak/",
+          "/wood/east-indian-rosewood/",
+          "/wood/brazilian-rosewood/"
+        ],
+        "runs": 3,
+        "rows": [
+          {
+            "route": "/wood/",
+            "run": 1,
+            "lcp": 316,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 316,
+            "ttfb": 4,
+            "domReady": 502.90000000596046,
+            "load": 622,
+            "htmlTransfer": 20278,
+            "resourceTransfer": 102239,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 6,
+            "domNodes": 2059,
+            "horizontalOverflow": 0,
+            "overflowElements": [
+              "table.wood-.pecie.-table",
+              "thead",
+              "tr",
+              "th",
+              "th",
+              "th",
+              "th",
+              "th"
+            ],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 179.3999999910593
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 201.5
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 246.3999999910593
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 160.09999999403954
+              }
+            ]
+          },
+          {
+            "route": "/wood/rosewood/",
+            "run": 1,
+            "lcp": 268,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 268,
+            "ttfb": 3.0999999940395355,
+            "domReady": 494.09999999403954,
+            "load": 616.0999999940395,
+            "htmlTransfer": 11755,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 245.6000000089407
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 169.5
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 192.69999998807907
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 160.29999999701977
+              }
+            ]
+          },
+          {
+            "route": "/wood/hackberry/",
+            "run": 1,
+            "lcp": 264,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 264,
+            "ttfb": 2.5,
+            "domReady": 503.79999999701977,
+            "load": 621.5,
+            "htmlTransfer": 11746,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 252.3999999910593
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 168.59999999403954
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 191.5
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 158.79999999701977
+              }
+            ]
+          },
+          {
+            "route": "/wood/paulownia/",
+            "run": 1,
+            "lcp": 268,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 268,
+            "ttfb": 2.5,
+            "domReady": 498.6000000089407,
+            "load": 612.9000000059605,
+            "htmlTransfer": 11756,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 245
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 169.5
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 192.09999999403954
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 152.1000000089407
+              }
+            ]
+          },
+          {
+            "route": "/wood/khaya/",
+            "run": 1,
+            "lcp": 268,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 268,
+            "ttfb": 2.4000000059604645,
+            "domReady": 504.70000000298023,
+            "load": 618.9000000059605,
+            "htmlTransfer": 11765,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 252.40000000596046
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.29999999701977
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 193.29999999701977
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 152.29999999701977
+              }
+            ]
+          },
+          {
+            "route": "/wood/oak/",
+            "run": 1,
+            "lcp": 264,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 264,
+            "ttfb": 2.7000000029802322,
+            "domReady": 496.09999999403954,
+            "load": 615.4000000059605,
+            "htmlTransfer": 11714,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.69999998807907
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 191.8999999910593
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 245.19999998807907
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 158.8999999910593
+              }
+            ]
+          },
+          {
+            "route": "/wood/east-indian-rosewood/",
+            "run": 1,
+            "lcp": 284,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 284,
+            "ttfb": 2.5,
+            "domReady": 500.09999999403954,
+            "load": 619.5999999940395,
+            "htmlTransfer": 11809,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 169.59999999403954
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 192.59999999403954
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 245.59999999403954
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 158.40000000596046
+              }
+            ]
+          },
+          {
+            "route": "/wood/brazilian-rosewood/",
+            "run": 1,
+            "lcp": 284,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 284,
+            "ttfb": 2.5999999940395355,
+            "domReady": 504.8999999910593,
+            "load": 627.8999999910593,
+            "htmlTransfer": 11789,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 169.79999999701977
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 252.8999999910593
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 192
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 159.59999999403954
+              }
+            ]
+          },
+          {
+            "route": "/wood/",
+            "run": 2,
+            "lcp": 280,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 280,
+            "ttfb": 2.7999999970197678,
+            "domReady": 501.5,
+            "load": 609.1000000089407,
+            "htmlTransfer": 20278,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 2059,
+            "horizontalOverflow": 0,
+            "overflowElements": [
+              "table.wood-.pecie.-table",
+              "thead",
+              "tr",
+              "th",
+              "th",
+              "th",
+              "th",
+              "th"
+            ],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 246
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 177.6000000089407
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 199.20000000298023
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 151.40000000596046
+              }
+            ]
+          },
+          {
+            "route": "/wood/rosewood/",
+            "run": 2,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 2.6000000089406967,
+            "domReady": 508,
+            "load": 628.1000000089407,
+            "htmlTransfer": 11755,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 252.79999999701977
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.70000000298023
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 193.59999999403954
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 160.20000000298023
+              }
+            ]
+          },
+          {
+            "route": "/wood/hackberry/",
+            "run": 2,
+            "lcp": 264,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 264,
+            "ttfb": 2.5,
+            "domReady": 496.19999998807907,
+            "load": 618.8999999910593,
+            "htmlTransfer": 11746,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 245
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.5
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 192.20000000298023
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 160.29999999701977
+              }
+            ]
+          },
+          {
+            "route": "/wood/paulownia/",
+            "run": 2,
+            "lcp": 264,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 264,
+            "ttfb": 2.6000000089406967,
+            "domReady": 500.90000000596046,
+            "load": 622.2000000029802,
+            "htmlTransfer": 11756,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 169.79999999701977
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 253.29999999701977
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 193
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 158.5
+              }
+            ]
+          },
+          {
+            "route": "/wood/khaya/",
+            "run": 2,
+            "lcp": 280,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 280,
+            "ttfb": 2.7999999970197678,
+            "domReady": 502.29999999701977,
+            "load": 622.7000000029802,
+            "htmlTransfer": 11765,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 251.90000000596046
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 168.70000000298023
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 191.70000000298023
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 160.19999998807907
+              }
+            ]
+          },
+          {
+            "route": "/wood/oak/",
+            "run": 2,
+            "lcp": 312,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 312,
+            "ttfb": 2.5,
+            "domReady": 530.5999999940395,
+            "load": 653.0999999940395,
+            "htmlTransfer": 11714,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 163.5
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 185.1000000089407
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 253.40000000596046
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 159
+              }
+            ]
+          },
+          {
+            "route": "/wood/east-indian-rosewood/",
+            "run": 2,
+            "lcp": 280,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 280,
+            "ttfb": 2.0999999940395355,
+            "domReady": 497.5,
+            "load": 621.1999999880791,
+            "htmlTransfer": 11809,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 244.90000000596046
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 168.6000000089407
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 191.5
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 160.5
+              }
+            ]
+          },
+          {
+            "route": "/wood/brazilian-rosewood/",
+            "run": 2,
+            "lcp": 268,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 268,
+            "ttfb": 1.8999999910593033,
+            "domReady": 495.29999999701977,
+            "load": 617.8999999910593,
+            "htmlTransfer": 11789,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 244.70000000298023
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.29999999701977
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 193.40000000596046
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 159.5
+              }
+            ]
+          },
+          {
+            "route": "/wood/",
+            "run": 3,
+            "lcp": 288,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 288,
+            "ttfb": 2.2000000029802322,
+            "domReady": 503,
+            "load": 621.4000000059605,
+            "htmlTransfer": 20278,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 2059,
+            "horizontalOverflow": 0,
+            "overflowElements": [
+              "table.wood-.pecie.-table",
+              "thead",
+              "tr",
+              "th",
+              "th",
+              "th",
+              "th",
+              "th"
+            ],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 169.20000000298023
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 251.40000000596046
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 198.40000000596046
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 160.29999999701977
+              }
+            ]
+          },
+          {
+            "route": "/wood/rosewood/",
+            "run": 3,
+            "lcp": 264,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 264,
+            "ttfb": 2,
+            "domReady": 500.5,
+            "load": 624.5,
+            "htmlTransfer": 11755,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 169.90000000596046
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 252.40000000596046
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 192.19999998807907
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 160.69999998807907
+              }
+            ]
+          },
+          {
+            "route": "/wood/hackberry/",
+            "run": 3,
+            "lcp": 264,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 264,
+            "ttfb": 1.7999999970197678,
+            "domReady": 503.79999999701977,
+            "load": 626.4000000059605,
+            "htmlTransfer": 11746,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 253.59999999403954
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 171
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 193
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 159.70000000298023
+              }
+            ]
+          },
+          {
+            "route": "/wood/paulownia/",
+            "run": 3,
+            "lcp": 264,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 264,
+            "ttfb": 1.9000000059604645,
+            "domReady": 495,
+            "load": 616.8000000119209,
+            "htmlTransfer": 11756,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 245.90000000596046
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 171.20000000298023
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 193
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 158.90000000596046
+              }
+            ]
+          },
+          {
+            "route": "/wood/khaya/",
+            "run": 3,
+            "lcp": 268,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 268,
+            "ttfb": 1.7999999970197678,
+            "domReady": 507.79999999701977,
+            "load": 628.6999999880791,
+            "htmlTransfer": 11765,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.59999999403954
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 192.19999998807907
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 253.19999998807907
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 158.29999999701977
+              }
+            ]
+          },
+          {
+            "route": "/wood/oak/",
+            "run": 3,
+            "lcp": 260,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 260,
+            "ttfb": 1.800000011920929,
+            "domReady": 508.40000000596046,
+            "load": 628.3000000119209,
+            "htmlTransfer": 11714,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 169.6000000089407
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 192.6000000089407
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 252.79999999701977
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 159.19999998807907
+              }
+            ]
+          },
+          {
+            "route": "/wood/east-indian-rosewood/",
+            "run": 3,
+            "lcp": 284,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 284,
+            "ttfb": 1.9000000059604645,
+            "domReady": 498.6000000089407,
+            "load": 620.6000000089407,
+            "htmlTransfer": 11809,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 245.80000001192093
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.20000000298023
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 192.70000000298023
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 160.59999999403954
+              }
+            ]
+          },
+          {
+            "route": "/wood/brazilian-rosewood/",
+            "run": 3,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 1.7999999970197678,
+            "domReady": 503.8999999910593,
+            "load": 625.5999999940395,
+            "htmlTransfer": 11789,
+            "resourceTransfer": 20399,
+            "cssJsTransfer": 18477,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 252.59999999403954
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.20000000298023
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 193.30000001192093
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 159.8999999910593
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "scope": "Gzip preview; en language, 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+        "origin": "http://127.0.0.1:4192",
+        "routes": [
+          "/wood/",
+          "/wood/rosewood/",
+          "/wood/hackberry/",
+          "/wood/paulownia/",
+          "/wood/khaya/",
+          "/wood/oak/",
+          "/wood/east-indian-rosewood/",
+          "/wood/brazilian-rosewood/"
+        ],
+        "runs": 3,
+        "rows": [
+          {
+            "route": "/wood/",
+            "run": 1,
+            "lcp": 252,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 252,
+            "ttfb": 1.9000000059604645,
+            "domReady": 397.09999999403954,
+            "load": 560.5,
+            "htmlTransfer": 21043,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 2058,
+            "horizontalOverflow": 0,
+            "overflowElements": [
+              "table.wood-.pecie.-table",
+              "thead",
+              "tr",
+              "th",
+              "th",
+              "th",
+              "th",
+              "th"
+            ],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 185.29999999701977
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 170.90000000596046
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 163.90000000596046
+              }
+            ]
+          },
+          {
+            "route": "/wood/rosewood/",
+            "run": 1,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 1.7000000029802322,
+            "domReady": 415.20000000298023,
+            "load": 567.0999999940395,
+            "htmlTransfer": 12742,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 192.70000000298023
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 177.3999999910593
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 161.6000000089407
+              }
+            ]
+          },
+          {
+            "route": "/wood/hackberry/",
+            "run": 1,
+            "lcp": 252,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 252,
+            "ttfb": 3.7000000029802322,
+            "domReady": 417.30000001192093,
+            "load": 568.7000000029802,
+            "htmlTransfer": 12725,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 192.79999999701977
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 177
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 162.19999998807907
+              }
+            ]
+          },
+          {
+            "route": "/wood/paulownia/",
+            "run": 1,
+            "lcp": 248,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 248,
+            "ttfb": 2.7000000029802322,
+            "domReady": 416.1000000089407,
+            "load": 559.4000000059605,
+            "htmlTransfer": 12734,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 192.6000000089407
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 177.09999999403954
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 155.09999999403954
+              }
+            ]
+          },
+          {
+            "route": "/wood/khaya/",
+            "run": 1,
+            "lcp": 244,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 244,
+            "ttfb": 2.2999999970197678,
+            "domReady": 410.90000000596046,
+            "load": 563.4000000059605,
+            "htmlTransfer": 12751,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 192.70000000298023
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 184.90000000596046
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 161.30000001192093
+              }
+            ]
+          },
+          {
+            "route": "/wood/oak/",
+            "run": 1,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 2.2000000029802322,
+            "domReady": 414.29999999701977,
+            "load": 565.7999999970198,
+            "htmlTransfer": 12690,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 193.29999999701977
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 184.3999999910593
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 161.59999999403954
+              }
+            ]
+          },
+          {
+            "route": "/wood/east-indian-rosewood/",
+            "run": 1,
+            "lcp": 252,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 252,
+            "ttfb": 2,
+            "domReady": 403.40000000596046,
+            "load": 554.7000000029802,
+            "htmlTransfer": 12797,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 184.20000000298023
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 169.79999999701977
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 162.79999999701977
+              }
+            ]
+          },
+          {
+            "route": "/wood/brazilian-rosewood/",
+            "run": 1,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 2.7000000029802322,
+            "domReady": 415.5,
+            "load": 559.3000000119209,
+            "htmlTransfer": 12777,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 192.70000000298023
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 177.40000000596046
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 153.5
+              }
+            ]
+          },
+          {
+            "route": "/wood/",
+            "run": 2,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 2.5,
+            "domReady": 395.70000000298023,
+            "load": 559.9000000059605,
+            "htmlTransfer": 21043,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 2058,
+            "horizontalOverflow": 0,
+            "overflowElements": [
+              "table.wood-.pecie.-table",
+              "thead",
+              "tr",
+              "th",
+              "th",
+              "th",
+              "th",
+              "th"
+            ],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 186.3999999910593
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 170.59999999403954
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 161.70000000298023
+              }
+            ]
+          },
+          {
+            "route": "/wood/rosewood/",
+            "run": 2,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 2,
+            "domReady": 418.20000000298023,
+            "load": 560,
+            "htmlTransfer": 12742,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 193.29999999701977
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 178
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 154.29999999701977
+              }
+            ]
+          },
+          {
+            "route": "/wood/hackberry/",
+            "run": 2,
+            "lcp": 260,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 260,
+            "ttfb": 2.7000000029802322,
+            "domReady": 413.90000000596046,
+            "load": 569.3000000119209,
+            "htmlTransfer": 12725,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 176.69999998807907
+              },
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 192
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 163.30000001192093
+              }
+            ]
+          },
+          {
+            "route": "/wood/paulownia/",
+            "run": 2,
+            "lcp": 260,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 260,
+            "ttfb": 2.5999999940395355,
+            "domReady": 407.90000000596046,
+            "load": 549.5999999940395,
+            "htmlTransfer": 12734,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 170.09999999403954
+              },
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 186.29999999701977
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 153.59999999403954
+              }
+            ]
+          },
+          {
+            "route": "/wood/khaya/",
+            "run": 2,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 2.6000000089406967,
+            "domReady": 415.30000001192093,
+            "load": 567.6000000089407,
+            "htmlTransfer": 12751,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 191.90000000596046
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 176.5
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 162.09999999403954
+              }
+            ]
+          },
+          {
+            "route": "/wood/oak/",
+            "run": 2,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 2.5,
+            "domReady": 403.59999999403954,
+            "load": 548.9000000059605,
+            "htmlTransfer": 12690,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 184.30000001192093
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 176.29999999701977
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 154.80000001192093
+              }
+            ]
+          },
+          {
+            "route": "/wood/east-indian-rosewood/",
+            "run": 2,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 2.6000000089406967,
+            "domReady": 409,
+            "load": 553.7000000029802,
+            "htmlTransfer": 12797,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 185.3999999910593
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 171
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 154.20000000298023
+              }
+            ]
+          },
+          {
+            "route": "/wood/brazilian-rosewood/",
+            "run": 2,
+            "lcp": 260,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 260,
+            "ttfb": 2.5,
+            "domReady": 419.3999999910593,
+            "load": 570.5,
+            "htmlTransfer": 12777,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 192.20000000298023
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 183.79999999701977
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 161.09999999403954
+              }
+            ]
+          },
+          {
+            "route": "/wood/",
+            "run": 3,
+            "lcp": 260,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 260,
+            "ttfb": 2.5999999940395355,
+            "domReady": 394,
+            "load": 551.5999999940395,
+            "htmlTransfer": 21043,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 2058,
+            "horizontalOverflow": 0,
+            "overflowElements": [
+              "table.wood-.pecie.-table",
+              "thead",
+              "tr",
+              "th",
+              "th",
+              "th",
+              "th",
+              "th"
+            ],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 184.20000000298023
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 169.79999999701977
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 155.29999999701977
+              }
+            ]
+          },
+          {
+            "route": "/wood/rosewood/",
+            "run": 3,
+            "lcp": 248,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 248,
+            "ttfb": 1.7000000029802322,
+            "domReady": 389.8999999910593,
+            "load": 544.2999999970198,
+            "htmlTransfer": 12742,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 184
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 169.90000000596046
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 154.80000001192093
+              }
+            ]
+          },
+          {
+            "route": "/wood/hackberry/",
+            "run": 3,
+            "lcp": 260,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 260,
+            "ttfb": 1.699999988079071,
+            "domReady": 407.5,
+            "load": 551,
+            "htmlTransfer": 12725,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 185.09999999403954
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 170.5
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 154.6000000089407
+              }
+            ]
+          },
+          {
+            "route": "/wood/paulownia/",
+            "run": 3,
+            "lcp": 244,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 244,
+            "ttfb": 1.7000000029802322,
+            "domReady": 414.6000000089407,
+            "load": 559,
+            "htmlTransfer": 12734,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 176.8999999910593
+              },
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 192.29999999701977
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 154.80000001192093
+              }
+            ]
+          },
+          {
+            "route": "/wood/khaya/",
+            "run": 3,
+            "lcp": 260,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 260,
+            "ttfb": 2,
+            "domReady": 409.5,
+            "load": 561.1000000089407,
+            "htmlTransfer": 12751,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 185.90000000596046
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 170.59999999403954
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 161.79999999701977
+              }
+            ]
+          },
+          {
+            "route": "/wood/oak/",
+            "run": 3,
+            "lcp": 260,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 260,
+            "ttfb": 2,
+            "domReady": 403.79999999701977,
+            "load": 567,
+            "htmlTransfer": 12690,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 190.90000000596046
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 175.40000000596046
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 162.20000000298023
+              }
+            ]
+          },
+          {
+            "route": "/wood/east-indian-rosewood/",
+            "run": 3,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 2.2999999970197678,
+            "domReady": 400.90000000596046,
+            "load": 563.2999999970198,
+            "htmlTransfer": 12797,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 184.29999999701977
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 168.70000000298023
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 161.5
+              }
+            ]
+          },
+          {
+            "route": "/wood/brazilian-rosewood/",
+            "run": 3,
+            "lcp": 252,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 252,
+            "ttfb": 1.7999999970197678,
+            "domReady": 407.59999999403954,
+            "load": 560.3999999910593,
+            "htmlTransfer": 12777,
+            "resourceTransfer": 9422,
+            "cssJsTransfer": 7500,
+            "imageTransfer": 1194,
+            "resourceCount": 4,
+            "domNodes": 299,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 170.5
+              },
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 185.79999999701977
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 162.30000001192093
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "zh": {
+      "summary": [
+        {
+          "route": "/wood/",
+          "before": {
+            "lcp": 276,
+            "fcp": 276,
+            "transfer": 113259,
+            "domReady": 494,
+            "clsMax": 0.00026837846328929186,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          },
+          "after": {
+            "lcp": 256,
+            "fcp": 256,
+            "transfer": 36730,
+            "domReady": 400.5,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          }
+        },
+        {
+          "route": "/wood/rosewood/",
+          "before": {
+            "lcp": 264,
+            "fcp": 264,
+            "transfer": 104736,
+            "domReady": 501.5,
+            "clsMax": 0.0003749697996163148,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          },
+          "after": {
+            "lcp": 248,
+            "fcp": 248,
+            "transfer": 28429,
+            "domReady": 404,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          }
+        },
+        {
+          "route": "/wood/hackberry/",
+          "before": {
+            "lcp": 268,
+            "fcp": 268,
+            "transfer": 104727,
+            "domReady": 503.59999999403954,
+            "clsMax": 0.0003749697996163148,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          },
+          "after": {
+            "lcp": 256,
+            "fcp": 256,
+            "transfer": 28412,
+            "domReady": 407,
+            "clsMax": 0,
+            "longTasksMax": 0,
+            "overflowMax": 0
+          }
+        }
+      ],
+      "before": {
+        "scope": "Gzip preview; zh-CN language, 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+        "origin": "http://127.0.0.1:4192",
+        "routes": [
+          "/wood/",
+          "/wood/rosewood/",
+          "/wood/hackberry/"
+        ],
+        "runs": 3,
+        "rows": [
+          {
+            "route": "/wood/",
+            "run": 1,
+            "lcp": 292,
+            "lcpElement": "p.lead",
+            "cls": 0.00026837846328929186,
+            "longTasks": [],
+            "fcp": 292,
+            "ttfb": 1.699999988079071,
+            "domReady": 461.09999999403954,
+            "load": 1053.7999999970198,
+            "htmlTransfer": 20278,
+            "resourceTransfer": 92981,
+            "cssJsTransfer": 91059,
+            "imageTransfer": 1194,
+            "resourceCount": 6,
+            "domNodes": 2060,
+            "horizontalOverflow": 0,
+            "overflowElements": [
+              "table.wood-.pecie.-table",
+              "thead",
+              "tr",
+              "th",
+              "th",
+              "th",
+              "th",
+              "th"
+            ],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.90000000596046
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 192.70000000298023
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 245.6000000089407
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 160.90000000596046
+              },
+              {
+                "path": "/assets/app.js",
+                "type": "script",
+                "transfer": 72582,
+                "encoded": 72282,
+                "duration": 527.1000000089407
+              }
+            ]
+          },
+          {
+            "route": "/wood/rosewood/",
+            "run": 1,
+            "lcp": 268,
+            "lcpElement": "p.lead",
+            "cls": 0.0003749697996163148,
+            "longTasks": [],
+            "fcp": 268,
+            "ttfb": 1.8999999910593033,
+            "domReady": 493.09999999403954,
+            "load": 1027.2999999970198,
+            "htmlTransfer": 11755,
+            "resourceTransfer": 92981,
+            "cssJsTransfer": 91059,
+            "imageTransfer": 1194,
+            "resourceCount": 6,
+            "domNodes": 301,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.59999999403954
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 245
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 193.20000000298023
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 159.90000000596046
+              },
+              {
+                "path": "/assets/app.js",
+                "type": "script",
+                "transfer": 72582,
+                "encoded": 72282,
+                "duration": 521.2000000029802
+              }
+            ]
+          },
+          {
+            "route": "/wood/hackberry/",
+            "run": 1,
+            "lcp": 268,
+            "lcpElement": "p.lead",
+            "cls": 0.0003749697996163148,
+            "longTasks": [],
+            "fcp": 268,
+            "ttfb": 2.0999999940395355,
+            "domReady": 503.59999999403954,
+            "load": 1052.8999999910593,
+            "htmlTransfer": 11746,
+            "resourceTransfer": 92981,
+            "cssJsTransfer": 91059,
+            "imageTransfer": 1194,
+            "resourceCount": 6,
+            "domNodes": 301,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 251.29999999701977
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.19999998807907
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 192.29999999701977
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 152.40000000596046
+              },
+              {
+                "path": "/assets/app.js",
+                "type": "script",
+                "transfer": 72582,
+                "encoded": 72282,
+                "duration": 519.5999999940395
+              }
+            ]
+          },
+          {
+            "route": "/wood/",
+            "run": 2,
+            "lcp": 276,
+            "lcpElement": "p.lead",
+            "cls": 0.00026837846328929186,
+            "longTasks": [],
+            "fcp": 276,
+            "ttfb": 1.7999999970197678,
+            "domReady": 511.29999999701977,
+            "load": 1098.0999999940395,
+            "htmlTransfer": 20278,
+            "resourceTransfer": 92981,
+            "cssJsTransfer": 91059,
+            "imageTransfer": 1194,
+            "resourceCount": 6,
+            "domNodes": 2060,
+            "horizontalOverflow": 0,
+            "overflowElements": [
+              "table.wood-.pecie.-table",
+              "thead",
+              "tr",
+              "th",
+              "th",
+              "th",
+              "th",
+              "th"
+            ],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 178.90000000596046
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 201.29999999701977
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 253.79999999701977
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 158.80000001192093
+              },
+              {
+                "path": "/assets/app.js",
+                "type": "script",
+                "transfer": 72582,
+                "encoded": 72282,
+                "duration": 519.5
+              }
+            ]
+          },
+          {
+            "route": "/wood/rosewood/",
+            "run": 2,
+            "lcp": 252,
+            "lcpElement": "p.lead",
+            "cls": 0.0003749697996163148,
+            "longTasks": [],
+            "fcp": 252,
+            "ttfb": 1.8999999910593033,
+            "domReady": 504.69999998807907,
+            "load": 1052.5999999940395,
+            "htmlTransfer": 11755,
+            "resourceTransfer": 92981,
+            "cssJsTransfer": 91059,
+            "imageTransfer": 1194,
+            "resourceCount": 6,
+            "domNodes": 301,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.29999999701977
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 252.90000000596046
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 193.1000000089407
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 160.09999999403954
+              },
+              {
+                "path": "/assets/app.js",
+                "type": "script",
+                "transfer": 72582,
+                "encoded": 72282,
+                "duration": 518.5
+              }
+            ]
+          },
+          {
+            "route": "/wood/hackberry/",
+            "run": 2,
+            "lcp": 272,
+            "lcpElement": "p.lead",
+            "cls": 0.0003749697996163148,
+            "longTasks": [],
+            "fcp": 272,
+            "ttfb": 1.7999999970197678,
+            "domReady": 505.70000000298023,
+            "load": 1055.7999999970198,
+            "htmlTransfer": 11746,
+            "resourceTransfer": 92981,
+            "cssJsTransfer": 91059,
+            "imageTransfer": 1194,
+            "resourceCount": 6,
+            "domNodes": 301,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 253.5
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.09999999403954
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 193.09999999403954
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 159.70000000298023
+              },
+              {
+                "path": "/assets/app.js",
+                "type": "script",
+                "transfer": 72582,
+                "encoded": 72282,
+                "duration": 518.7000000029802
+              }
+            ]
+          },
+          {
+            "route": "/wood/",
+            "run": 3,
+            "lcp": 272,
+            "lcpElement": "p.lead",
+            "cls": 0.00026837846328929186,
+            "longTasks": [],
+            "fcp": 272,
+            "ttfb": 2,
+            "domReady": 494,
+            "load": 1082.2000000029802,
+            "htmlTransfer": 20278,
+            "resourceTransfer": 92981,
+            "cssJsTransfer": 91059,
+            "imageTransfer": 1194,
+            "resourceCount": 6,
+            "domNodes": 2060,
+            "horizontalOverflow": 0,
+            "overflowElements": [
+              "table.wood-.pecie.-table",
+              "thead",
+              "tr",
+              "th",
+              "th",
+              "th",
+              "th",
+              "th"
+            ],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 245.79999999701977
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 177.30000001192093
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 200.3999999910593
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 159.8999999910593
+              },
+              {
+                "path": "/assets/app.js",
+                "type": "script",
+                "transfer": 72582,
+                "encoded": 72282,
+                "duration": 520
+              }
+            ]
+          },
+          {
+            "route": "/wood/rosewood/",
+            "run": 3,
+            "lcp": 264,
+            "lcpElement": "p.lead",
+            "cls": 0.0003749697996163148,
+            "longTasks": [],
+            "fcp": 264,
+            "ttfb": 1.699999988079071,
+            "domReady": 501.5,
+            "load": 1047.699999988079,
+            "htmlTransfer": 11755,
+            "resourceTransfer": 92981,
+            "cssJsTransfer": 91059,
+            "imageTransfer": 1194,
+            "resourceCount": 6,
+            "domNodes": 301,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 163
+              },
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 246
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 191.5
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 158.40000000596046
+              },
+              {
+                "path": "/assets/app.js",
+                "type": "script",
+                "transfer": 72582,
+                "encoded": 72282,
+                "duration": 516.2999999970198
+              }
+            ]
+          },
+          {
+            "route": "/wood/hackberry/",
+            "run": 3,
+            "lcp": 268,
+            "lcpElement": "p.lead",
+            "cls": 0.0003749697996163148,
+            "longTasks": [],
+            "fcp": 268,
+            "ttfb": 1.7999999970197678,
+            "domReady": 503.29999999701977,
+            "load": 1029,
+            "htmlTransfer": 11746,
+            "resourceTransfer": 92981,
+            "cssJsTransfer": 91059,
+            "imageTransfer": 1194,
+            "resourceCount": 6,
+            "domNodes": 301,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/site-chrome.js",
+                "type": "script",
+                "transfer": 14487,
+                "encoded": 14187,
+                "duration": 253.40000000596046
+              },
+              {
+                "path": "/assets/content-page.js",
+                "type": "script",
+                "transfer": 965,
+                "encoded": 665,
+                "duration": 170.29999999701977
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 192.20000000298023
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 159.80000001192093
+              },
+              {
+                "path": "/assets/app.js",
+                "type": "script",
+                "transfer": 72582,
+                "encoded": 72282,
+                "duration": 512.9000000059605
+              }
+            ]
+          }
+        ]
+      },
+      "after": {
+        "scope": "Gzip preview; zh-CN language, 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+        "origin": "http://127.0.0.1:4192",
+        "routes": [
+          "/wood/",
+          "/wood/rosewood/",
+          "/wood/hackberry/"
+        ],
+        "runs": 3,
+        "rows": [
+          {
+            "route": "/wood/",
+            "run": 1,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 1.7999999970197678,
+            "domReady": 400.5,
+            "load": 653.3999999910593,
+            "htmlTransfer": 21043,
+            "resourceTransfer": 15687,
+            "cssJsTransfer": 13765,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 2059,
+            "horizontalOverflow": 0,
+            "overflowElements": [
+              "table.wood-.pecie.-table",
+              "thead",
+              "tr",
+              "th",
+              "th",
+              "th",
+              "th",
+              "th"
+            ],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 169.5
+              },
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 185
+              },
+              {
+                "path": "/assets/wood-language.js",
+                "type": "script",
+                "transfer": 6265,
+                "encoded": 5965,
+                "duration": 199.40000000596046
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 160.90000000596046
+              }
+            ]
+          },
+          {
+            "route": "/wood/rosewood/",
+            "run": 1,
+            "lcp": 252,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 252,
+            "ttfb": 2.2000000029802322,
+            "domReady": 404,
+            "load": 588.3999999910593,
+            "htmlTransfer": 12742,
+            "resourceTransfer": 15687,
+            "cssJsTransfer": 13765,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 186.3999999910593
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 178.1000000089407
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 153.8999999910593
+              },
+              {
+                "path": "/assets/wood-language.js",
+                "type": "script",
+                "transfer": 6265,
+                "encoded": 5965,
+                "duration": 192.70000000298023
+              }
+            ]
+          },
+          {
+            "route": "/wood/hackberry/",
+            "run": 1,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 1.8999999910593033,
+            "domReady": 407,
+            "load": 591,
+            "htmlTransfer": 12725,
+            "resourceTransfer": 15687,
+            "cssJsTransfer": 13765,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 184.6000000089407
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 169.5
+              },
+              {
+                "path": "/assets/wood-language.js",
+                "type": "script",
+                "transfer": 6265,
+                "encoded": 5965,
+                "duration": 191.6000000089407
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 161.70000000298023
+              }
+            ]
+          },
+          {
+            "route": "/wood/",
+            "run": 2,
+            "lcp": 252,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 252,
+            "ttfb": 2.2000000029802322,
+            "domReady": 397.79999999701977,
+            "load": 653.2000000029802,
+            "htmlTransfer": 21043,
+            "resourceTransfer": 15687,
+            "cssJsTransfer": 13765,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 2059,
+            "horizontalOverflow": 0,
+            "overflowElements": [
+              "table.wood-.pecie.-table",
+              "thead",
+              "tr",
+              "th",
+              "th",
+              "th",
+              "th",
+              "th"
+            ],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 185.1000000089407
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 170.69999998807907
+              },
+              {
+                "path": "/assets/wood-language.js",
+                "type": "script",
+                "transfer": 6265,
+                "encoded": 5965,
+                "duration": 199.29999999701977
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 162
+              }
+            ]
+          },
+          {
+            "route": "/wood/rosewood/",
+            "run": 2,
+            "lcp": 248,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 248,
+            "ttfb": 1.7999999970197678,
+            "domReady": 400.8999999910593,
+            "load": 592.5,
+            "htmlTransfer": 12742,
+            "resourceTransfer": 15687,
+            "cssJsTransfer": 13765,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 169.70000000298023
+              },
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 185.20000000298023
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 161.09999999403954
+              },
+              {
+                "path": "/assets/wood-language.js",
+                "type": "script",
+                "transfer": 6265,
+                "encoded": 5965,
+                "duration": 198.5
+              }
+            ]
+          },
+          {
+            "route": "/wood/hackberry/",
+            "run": 2,
+            "lcp": 240,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 240,
+            "ttfb": 2.2000000029802322,
+            "domReady": 403.20000000298023,
+            "load": 604.0999999940395,
+            "htmlTransfer": 12725,
+            "resourceTransfer": 15687,
+            "cssJsTransfer": 13765,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 184.90000000596046
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 170.70000000298023
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 154.09999999403954
+              },
+              {
+                "path": "/assets/wood-language.js",
+                "type": "script",
+                "transfer": 6265,
+                "encoded": 5965,
+                "duration": 191.5
+              }
+            ]
+          },
+          {
+            "route": "/wood/",
+            "run": 3,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 1.8999999910593033,
+            "domReady": 401.5,
+            "load": 643.7999999970198,
+            "htmlTransfer": 21043,
+            "resourceTransfer": 15687,
+            "cssJsTransfer": 13765,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 2059,
+            "horizontalOverflow": 0,
+            "overflowElements": [
+              "table.wood-.pecie.-table",
+              "thead",
+              "tr",
+              "th",
+              "th",
+              "th",
+              "th",
+              "th"
+            ],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 185.5
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 177.8999999910593
+              },
+              {
+                "path": "/assets/wood-language.js",
+                "type": "script",
+                "transfer": 6265,
+                "encoded": 5965,
+                "duration": 191.3999999910593
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 153.90000000596046
+              }
+            ]
+          },
+          {
+            "route": "/wood/rosewood/",
+            "run": 3,
+            "lcp": 244,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 244,
+            "ttfb": 1.9000000059604645,
+            "domReady": 411.90000000596046,
+            "load": 604.7999999970198,
+            "htmlTransfer": 12742,
+            "resourceTransfer": 15687,
+            "cssJsTransfer": 13765,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 191.59999999403954
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 177
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 163.70000000298023
+              },
+              {
+                "path": "/assets/wood-language.js",
+                "type": "script",
+                "transfer": 6265,
+                "encoded": 5965,
+                "duration": 199.5
+              }
+            ]
+          },
+          {
+            "route": "/wood/hackberry/",
+            "run": 3,
+            "lcp": 256,
+            "lcpElement": "p.lead",
+            "cls": 0,
+            "longTasks": [],
+            "fcp": 256,
+            "ttfb": 1.7999999970197678,
+            "domReady": 408.5,
+            "load": 599.5,
+            "htmlTransfer": 12725,
+            "resourceTransfer": 15687,
+            "cssJsTransfer": 13765,
+            "imageTransfer": 1194,
+            "resourceCount": 5,
+            "domNodes": 300,
+            "horizontalOverflow": 0,
+            "overflowElements": [],
+            "longTaskCount": 0,
+            "longTaskTotal": 0,
+            "longTaskMax": 0,
+            "resources": [
+              {
+                "path": "/assets/wood-page.js",
+                "type": "script",
+                "transfer": 4475,
+                "encoded": 4175,
+                "duration": 185.1000000089407
+              },
+              {
+                "path": "/assets/conversion.js",
+                "type": "script",
+                "transfer": 3025,
+                "encoded": 2725,
+                "duration": 170
+              },
+              {
+                "path": "/assets/wood-language.js",
+                "type": "script",
+                "transfer": 6265,
+                "encoded": 5965,
+                "duration": 198.5
+              },
+              {
+                "path": "/assets/icons/brand-icon.webp",
+                "type": "img",
+                "transfer": 1194,
+                "encoded": 894,
+                "duration": 161.20000000298023
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "qa": {
+    "rows": [
+      {
+        "route": "/wood/",
+        "width": 360,
+        "overflow": 0,
+        "h1": "Wood Species Library",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/rosewood/",
+        "width": 360,
+        "overflow": 0,
+        "h1": "Rosewood Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/conversion.js",
+          "/assets/wood-page.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/hackberry/",
+        "width": 360,
+        "overflow": 0,
+        "h1": "Hackberry Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/paulownia/",
+        "width": 360,
+        "overflow": 0,
+        "h1": "Paulownia Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/khaya/",
+        "width": 360,
+        "overflow": 0,
+        "h1": "Khaya Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/oak/",
+        "width": 360,
+        "overflow": 0,
+        "h1": "Oak Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "width": 360,
+        "overflow": 0,
+        "h1": "East Indian Rosewood Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/brazilian-rosewood/",
+        "width": 360,
+        "overflow": 0,
+        "h1": "Brazilian Rosewood Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/",
+        "width": 390,
+        "overflow": 0,
+        "h1": "Wood Species Library",
+        "font": "29.76px",
+        "requests": [
+          "/assets/conversion.js",
+          "/assets/wood-page.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/rosewood/",
+        "width": 390,
+        "overflow": 0,
+        "h1": "Rosewood Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/hackberry/",
+        "width": 390,
+        "overflow": 0,
+        "h1": "Hackberry Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/paulownia/",
+        "width": 390,
+        "overflow": 0,
+        "h1": "Paulownia Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/conversion.js",
+          "/assets/wood-page.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/khaya/",
+        "width": 390,
+        "overflow": 0,
+        "h1": "Khaya Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/oak/",
+        "width": 390,
+        "overflow": 0,
+        "h1": "Oak Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "width": 390,
+        "overflow": 0,
+        "h1": "East Indian Rosewood Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/brazilian-rosewood/",
+        "width": 390,
+        "overflow": 0,
+        "h1": "Brazilian Rosewood Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/",
+        "width": 430,
+        "overflow": 0,
+        "h1": "Wood Species Library",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/rosewood/",
+        "width": 430,
+        "overflow": 0,
+        "h1": "Rosewood Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/conversion.js",
+          "/assets/wood-page.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/hackberry/",
+        "width": 430,
+        "overflow": 0,
+        "h1": "Hackberry Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/paulownia/",
+        "width": 430,
+        "overflow": 0,
+        "h1": "Paulownia Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/khaya/",
+        "width": 430,
+        "overflow": 0,
+        "h1": "Khaya Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/oak/",
+        "width": 430,
+        "overflow": 0,
+        "h1": "Oak Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/conversion.js",
+          "/assets/wood-page.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "width": 430,
+        "overflow": 0,
+        "h1": "East Indian Rosewood Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/brazilian-rosewood/",
+        "width": 430,
+        "overflow": 0,
+        "h1": "Brazilian Rosewood Wood",
+        "font": "29.76px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/",
+        "width": 1440,
+        "overflow": 0,
+        "h1": "Wood Species Library",
+        "font": "64px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/rosewood/",
+        "width": 1440,
+        "overflow": 0,
+        "h1": "Rosewood Wood",
+        "font": "64px",
+        "requests": [
+          "/assets/conversion.js",
+          "/assets/wood-page.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/hackberry/",
+        "width": 1440,
+        "overflow": 0,
+        "h1": "Hackberry Wood",
+        "font": "64px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/paulownia/",
+        "width": 1440,
+        "overflow": 0,
+        "h1": "Paulownia Wood",
+        "font": "64px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/khaya/",
+        "width": 1440,
+        "overflow": 0,
+        "h1": "Khaya Wood",
+        "font": "64px",
+        "requests": [
+          "/assets/conversion.js",
+          "/assets/wood-page.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/oak/",
+        "width": 1440,
+        "overflow": 0,
+        "h1": "Oak Wood",
+        "font": "64px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/east-indian-rosewood/",
+        "width": 1440,
+        "overflow": 0,
+        "h1": "East Indian Rosewood Wood",
+        "font": "64px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      },
+      {
+        "route": "/wood/brazilian-rosewood/",
+        "width": 1440,
+        "overflow": 0,
+        "h1": "Brazilian Rosewood Wood",
+        "font": "64px",
+        "requests": [
+          "/assets/wood-page.js",
+          "/assets/conversion.js",
+          "/assets/icons/brand-icon.webp",
+          "/site.webmanifest"
+        ]
+      }
+    ],
+    "languages": [
+      {
+        "route": "/wood/",
+        "locales": [
+          "en",
+          "zh-CN",
+          "zh-TW",
+          "es",
+          "pt",
+          "fr",
+          "de",
+          "nl",
+          "it",
+          "ar",
+          "ja"
+        ],
+        "restoresEnglish": true,
+        "lateMenus": true
+      },
+      {
+        "route": "/wood/rosewood/",
+        "locales": [
+          "en",
+          "zh-CN",
+          "zh-TW",
+          "es",
+          "pt",
+          "fr",
+          "de",
+          "nl",
+          "it",
+          "ar",
+          "ja"
+        ],
+        "restoresEnglish": true,
+        "lateMenus": true
+      },
+      {
+        "route": "/wood/oak/",
+        "locales": [
+          "en",
+          "zh-CN",
+          "zh-TW",
+          "es",
+          "pt",
+          "fr",
+          "de",
+          "nl",
+          "it",
+          "ar",
+          "ja"
+        ],
+        "restoresEnglish": true,
+        "lateMenus": true
+      }
+    ],
+    "races": [
+      "escape",
+      "outside",
+      "toggle",
+      "switch",
+      "menu failure retry",
+      "language failure retry"
+    ],
+    "filters": true,
+    "noScript": true,
+    "storageDenied": true,
+    "errors": []
+  },
+  "validation": {
+    "fullBuild": true,
+    "fullCheck": true,
+    "htmlFiles": 2506,
+    "sitemapUrls": 2406,
+    "woodContentSignaturesUnchanged": 201,
+    "jsonLdObjectsUnchanged": 402,
+    "sitemapDiff": false,
+    "learnIntentInventoryDiff": false,
+    "idempotentGeneratedFiles": 3635
+  }
+}
