@@ -359,6 +359,10 @@ ${head({ title, description, canonical })}
       <p class="eyebrow">Related tools</p>
       <h2>Turn species choice into a build plan.</h2>
       <div class="related-grid">
+        <a href="/wood-movement/"><span>Solid wood</span><strong>Wood Movement Planner</strong><em>Estimate seasonal widths and fixed-opening clearance from documented moisture inputs.</em></a>
+        <a href="/wood-movement/read-grain-and-coefficients/"><span>Field guide</span><strong>Read the width direction</strong><em>Match the measured dimension to radial or tangential movement.</em></a>
+        <a href="/wood-movement/moisture-readings-and-service-range/"><span>Field guide</span><strong>Record the moisture scenario</strong><em>Retain current wood readings and service endpoint evidence.</em></a>
+        <a href="/wood-movement/clearance-and-attachment-review/"><span>Field guide</span><strong>Review installation space</strong><em>Separate total clearance, reserve and edge displacement.</em></a>
         <a href="/wood-weight-calculator/"><span>Calculator</span><strong>Wood weight calculator</strong><em>Use density to estimate board or panel weight.</em></a>
         <a href="/board-foot-calculator/"><span>Calculator</span><strong>Board foot calculator</strong><em>Estimate hardwood volume and buying cost.</em></a>
         <a href="/material-cost-calculator/"><span>Calculator</span><strong>Material cost calculator</strong><em>Turn species choice into a project budget.</em></a>

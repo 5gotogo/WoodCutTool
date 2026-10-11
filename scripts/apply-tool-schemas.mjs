@@ -501,6 +501,7 @@ function toolsHubGraph() {
     { path: "/assembly-check/", name: "Assembly Check" },
     { path: "/cabinet-studio/", name: "Cabinet Studio" },
     { path: "/finishing-planner/", name: "Finishing Planner" },
+    { path: "/wood-movement/", name: "Wood Movement Planner" },
     {
       path: "/wood/",
       name: "Wood Species Library"

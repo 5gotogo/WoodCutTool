@@ -1,6 +1,6 @@
 # WoodCutTool content-column roadmap, 2026–2027
 
-Updated: 2026-10-09
+Updated: 2026-10-11
 
 ## Objective
 
@@ -24,6 +24,7 @@ Build a durable woodworking knowledge system in which every search-shaped questi
 | One-Sheet Projects | 43 verified layouts + 1 indexed hub | Visual project discovery by category, part count, and modeled 4×8 sheet use, with local shortlist and downloadable CSV evidence |
 | Assembly Check | 1 interactive hub + 3 field guides | Two diagonal readings, bounded measurement uncertainty, separate physical checks and local CSV/JSON inspection snapshots |
 | Edge Banding Planner | 1 interactive hub + 3 field guides | Finished-to-saw dimensions, per-edge profiles, pre-milling, tape-width checks, roll allowances, CSV/JSON and sheet-layout handoff |
+| Wood Movement Planner | 1 interactive hub + 3 field guides | Source-linked cross-grain solid-wood width estimates, 6–14% MC scenarios, fixed-opening reserve and edge displacement, browser-local draft plus CSV/JSON exports |
 | Offcut Planner | 1 interactive hub + 3 field guides | Browser-local inventory of measured usable rectangles, conservative single-part fit checks, and JSON/CSV exports |
 | Research | 9 | 8 source-linked report pages plus the Research hub |
 | Tools | 25 | Calculators and action pages |
@@ -34,6 +35,8 @@ The 2026-07-20 milestone completed the first 100-page Troubleshooting edition. I
 The 2026-08-23 milestone established One-Sheet Projects as a visual discovery column over the existing reproducible project dataset. It admits only the 43 examples whose complete published rectangles fit one modeled 96 × 48 inch sheet with a 1/8 inch kerf and rotation allowed; every gallery card exposes the layout, parts, modeled yield, template, complete example, and CSV. Search, filters, sorting, random selection, and a browser-local shortlist add utility without parameterized index pages or duplicate project articles.
 
 The 2026-09-26 milestone established Offcut Planner as a distinct post-cut reuse column. Its hub stores measured usable rectangles in the browser, checks a single finished part against exact material and thickness with explicit trim, kerf, rotation, and grain constraints, and exports inventory JSON or match CSV. Three guides cover measuring and labeling, interpreting a fit, and choosing reuse versus new stock. A match screens one part by recorded dimensions; it does not prove a multi-part layout, safe cut sequence, stock condition, or reusable remainder shape.
+
+The 2026-10-11 milestone established Wood Movement Planner as a source-backed solid-wood planning column. Eight specific species entries from USDA Wood Handbook FPL-GTR-282 (2021), Table 13–5, feed the Equation 13–3 approximation. The tool compares radial and tangential scenarios, validates all wood moisture values within 6–14%, shows seasonal widths and total clearance in a fixed opening, and records the entered reserve and locating-reference assumptions. It provides a browser-local draft, CSV review, JSON backup with replacement preview and a print view. Three distinct field guides cover width direction, moisture evidence and attachment review. This is an unrestrained dimensional estimate; it does not model plywood, along-grain movement, cupping, slot geometry or joint capacity.
 
 ## Editorial architecture
 

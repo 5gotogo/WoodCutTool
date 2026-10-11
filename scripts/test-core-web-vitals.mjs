@@ -247,6 +247,7 @@ const allProfiledPages = [
   ...compileWorkflowStyles().pages,
 ];
 for (const [route, dependencies] of [
+  ["wood-movement", ["wood-movement-core"]],
   ["finishing-planner", ["finishing-core"]],
   ["edge-banding", ["edge-banding-core", "cut-handoff-model"]],
   ["cabinet-studio", ["cabinet-studio-core"]],
@@ -279,7 +280,7 @@ for (const [file, expected, limit] of [["wood-page.js", woodRuntimeSource(), 18_
   if (actual !== expected || Buffer.byteLength(actual) > limit) failures.push(`${file}: stale runtime or byte budget exceeded`);
 }
 if (readFileSync(join(root, "assets/wood-menus.json"), "utf8") !== JSON.stringify(renderWoodChrome("/wood/").menus) + "\n") failures.push("Wood menus are stale");
-for (const asset of ["wood-species.css", "wood-page.js", "wood-language.js", "wood-menus.json", "compare.css", "wood-database.css", "glossary.css", "workflow-shell.css", "finishing-planner.js", "finishing-core.js", "finishing-planner.css", "edge-banding.js", "edge-banding-core.js", "edge-banding.css"]) {
+for (const asset of ["wood-species.css", "wood-page.js", "wood-language.js", "wood-menus.json", "compare.css", "wood-database.css", "glossary.css", "workflow-shell.css", "finishing-planner.js", "finishing-core.js", "finishing-planner.css", "edge-banding.js", "edge-banding-core.js", "edge-banding.css", "wood-movement.js", "wood-movement-core.js", "wood-movement.css"]) {
   const block = headers.match(new RegExp(`/assets/${asset.replace(".", "\\.")}\\n([\\s\\S]*?)(?=\\n/|$)`))?.[1] || "";
   if (!/Cache-Control: public, max-age=[1-9]\d*/.test(block)) failures.push(`${asset} is missing a positive browser cache lifetime`);
 }

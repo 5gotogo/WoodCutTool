@@ -140,3 +140,12 @@
 
 /assets/edge-banding.css
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/wood-movement.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/wood-movement-core.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/wood-movement.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

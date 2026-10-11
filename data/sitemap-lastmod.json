@@ -1,12 +1,12 @@
 {
   "/": {
-    "lastmod": "2026-10-09",
-    "hash": "ba214c465fe2b078685ed574548b2fc2fa73cb7458791db8135fffab48296333",
+    "lastmod": "2026-10-11",
+    "hash": "3d4f51c9e2a18944488230de2c6dd479635b024155445e152c03cba8e0f35f77",
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-10-09",
-    "hash": "6b91698a389ad2414bece15d84d5d414c934e886e5fc3735910859d315a650bd",
+    "lastmod": "2026-10-11",
+    "hash": "2c7059f1077cb5453ee0d1ff0e2cc30d8016fdf1075d9c682c8f7fa7102af0e6",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -10215,8 +10215,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-10-09",
-    "hash": "e4f96417490ea273dd68da80ec006709f4ee4926f52b658ead34ec35b5d7d85d",
+    "lastmod": "2026-10-11",
+    "hash": "edcdca2114f8ada2ea95c3bfe3e7a8ae7a9fec3c9f59bdaa71157848d6ad4296",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {
@@ -10724,14 +10724,34 @@
     "hash": "e37c0c11ee40ebd93c05bdb6493058c42cdc01eaec0b0ba1aaad13fa7a210e40",
     "hashVersion": 2
   },
+  "/wood-movement/": {
+    "lastmod": "2026-10-11",
+    "hash": "fcfd07c49f1511239d07e23361ca1e7beecfdf9935ee19fa478833ba24878fca",
+    "hashVersion": 2
+  },
+  "/wood-movement/clearance-and-attachment-review/": {
+    "lastmod": "2026-10-11",
+    "hash": "789d215b6af37c5c772d0c92808925774fe5504bf2be05cb0dd3bbc871ab2533",
+    "hashVersion": 2
+  },
+  "/wood-movement/moisture-readings-and-service-range/": {
+    "lastmod": "2026-10-11",
+    "hash": "ab32bda6d55cf9080014a41b1fae3488bcc4c08eeb65e92bf658d2c57b3cb078",
+    "hashVersion": 2
+  },
+  "/wood-movement/read-grain-and-coefficients/": {
+    "lastmod": "2026-10-11",
+    "hash": "caee16cf4d2f6137ba37bf0b44cb11dba2651a96a9c72f3bdc749ea31d04a9d8",
+    "hashVersion": 2
+  },
   "/wood-weight-calculator/": {
     "lastmod": "2026-09-21",
     "hash": "b9d9e26faa453c8131d4a2c91af3371c5bef2ad6bc24dfa12a9d77446febf2ed",
     "hashVersion": 2
   },
   "/wood/": {
-    "lastmod": "2026-09-08",
-    "hash": "e7bceef371829e7cdf80626f4cae0286df892b44e14804a4dad218bc2c45a7e5",
+    "lastmod": "2026-10-11",
+    "hash": "02dbba7d5a3a49c464189e793f0619df2a47f7b111ac89f491ea33fc868a16f8",
     "hashVersion": 2
   },
   "/wood/acacia/": {
