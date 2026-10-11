@@ -41,7 +41,7 @@ function collectHtmlFiles(dir = root, prefix = "") {
 function applyStylesVersion(html, file) {
   const stylesheet = performanceProfile(file, html).stylesheet;
   if (!stylesheet) return html;
-  return html.replace(/\/assets\/(?:styles|apps|editorial|compare|blog-article|content|interactive|wood|wood-species|wood-database|planning|templates|construction|plywood|checklists|legal|glossary|workflow-shell)\.css(?:\?v=[^"]+)?/g, stylesheet);
+  return html.replace(/\/assets\/(?:styles|apps|editorial|compare|blog-article|content|learn|interactive|wood|wood-species|wood-database|planning|templates|construction|plywood|checklists|legal|glossary|workflow-shell)\.css(?:\?v=[^"]+)?/g, stylesheet);
 }
 
 function applyAppVersion(html) {
@@ -71,7 +71,7 @@ function applySiteChromeScript(html) {
 }
 
 function isLcpTailPage(file, html) {
-  return /^(?:worksheets|troubleshooting|templates|apps|compare|wood-database|checklists|legal|plywood-cut-calculator|glossary|finishing-planner|edge-banding|cabinet-studio|wood-movement)\//.test(file) || html.includes("data-construction-form") || file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/archive/index.html");
+  return /^(?:learn|worksheets|troubleshooting|templates|apps|compare|wood-database|checklists|legal|plywood-cut-calculator|glossary|finishing-planner|edge-banding|cabinet-studio|wood-movement)\//.test(file) || html.includes("data-construction-form") || file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/archive/index.html");
 }
 
 function applyConversionScript(html, file) {

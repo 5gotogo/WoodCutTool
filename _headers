@@ -39,6 +39,9 @@
 /assets/content.css
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
+/assets/learn.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
 /assets/interactive.css
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 

@@ -2,7 +2,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { appHtmlFiles, compileAppStyles } from "./build-app-styles.mjs";
 import { blogArticleHtmlFiles, compileBlogArticleStyles, compileBlogIndexStyles, compileCompareStyles, compileEditorialStyles, editorialHtmlFiles } from "./build-editorial-styles.mjs";
-import { compileContentStyles, compileInteractiveStyles, compileWoodStyles, compileWoodSpeciesStyles, compileWoodDatabaseStyles, compilePlanningStyles, compileTemplateStyles, compileConstructionStyles, compilePlywoodStyles, compileChecklistStyles, compileLegalStyles, compileGlossaryStyles, compileWorkflowStyles } from "./build-site-styles.mjs";
+import { compileContentStyles, compileLearnStyles, compileInteractiveStyles, compileWoodStyles, compileWoodSpeciesStyles, compileWoodDatabaseStyles, compilePlanningStyles, compileTemplateStyles, compileConstructionStyles, compilePlywoodStyles, compileChecklistStyles, compileLegalStyles, compileGlossaryStyles, compileWorkflowStyles } from "./build-site-styles.mjs";
 import { performanceProfile } from "./site-performance-profile.mjs";
 import assert from "node:assert/strict";
 import { appStoreThumbnail, appStoreScreenshotSources } from "./app-store-images.mjs";
@@ -19,6 +19,8 @@ assert.equal(appStoreThumbnail("/assets/images/screenshot.png", 360), "/assets/i
 assert.equal(appStoreThumbnail("https://example.com/1290x2796bb.jpg", 360), "https://example.com/1290x2796bb.jpg");
 assert.equal(appStoreScreenshotSources("/assets/images/screenshot.png", { width: 1290, height: 2796 }), null);
 assert.equal(appStoreScreenshotSources(sample, { width: 1290, height: 2796 }).srcset.split(", ").length, 5);
+assert.deepEqual(performanceProfile("learn/example/index.html", '<style>.template-category-section{display:block}</style><main class="article-shell"></main>').runtimes, ["/assets/content-page.js"]);
+assert.deepEqual(performanceProfile("learn/index.html", '<style>.template-category-section{display:block}</style><main><section class="template-category-section"></section></main>').runtimes, ["/assets/content-page.js", "/assets/directory-page.js"]);
 let articlePages = 0;
 let heroImages = 0;
 let inlineImages = 0;
@@ -183,6 +185,7 @@ for (const file of appHtmlFiles()) {
 
 for (const [name, output, compiled, limit] of [
   ["content", join(root, "assets/content.css"), compileContentStyles(), 90_000],
+  ["learn", join(root, "assets/learn.css"), compileLearnStyles(), 55_000],
   ["interactive", join(root, "assets/interactive.css"), compileInteractiveStyles(), 90_000],
   ["wood", join(root, "assets/wood.css"), compileWoodStyles(), 45_000],
   ["wood-species", join(root, "assets/wood-species.css"), compileWoodSpeciesStyles(), 40_000],
@@ -202,7 +205,7 @@ for (const [name, output, compiled, limit] of [
   for (const file of compiled.pages) {
     const html = readFileSync(join(root, file), "utf8");
     const profile = performanceProfile(file, html);
-    const inline = ["wood", "wood-species", "wood-database", "glossary", "workflow-shell", "legal", "plywood"].includes(name);
+    const inline = ["learn", "wood", "wood-species", "wood-database", "glossary", "workflow-shell", "legal", "plywood"].includes(name);
     const customName = name === "workflow-shell" ? file.split("/")[0] : name === "plywood" ? "plywood-workflow" : null;
     const custom = customName ? readFileSync(join(root, "assets", `${customName}.css`), "utf8") : "";
     const marker = name === "workflow-shell" ? "workflow" : name === "wood-species" ? "wood" : name;
@@ -210,11 +213,13 @@ for (const [name, output, compiled, limit] of [
       ? html.includes(`<style data-${marker}-styles>${css}${custom}</style>`) && !/<link\b[^>]*rel="stylesheet"/.test(html)
       : html.includes(`<link rel="stylesheet" href="/assets/${name}.css">`);
     if (inline && Buffer.byteLength(css + custom) > 65_000) failures.push(`${file}: inline stylesheet exceeds 65 KB`);
-    if (["glossary", "workflow-shell"].includes(name) && !html.includes('defer fetchpriority="low" src="/assets/content-page.js"')) failures.push(`${file}: optional language runtime must have low priority`);
+    if (["learn", "glossary", "workflow-shell"].includes(name) && !html.includes('defer fetchpriority="low" src="/assets/content-page.js"')) failures.push(`${file}: optional language runtime must have low priority`);
+    if (name === "learn" && !html.includes('defer fetchpriority="low" src="/assets/conversion.js"')) failures.push(`${file}: optional conversion runtime must have low priority`);
+    if (name === "learn" && html.includes('src="/assets/directory-page.js"') !== profile.runtimes.includes("/assets/directory-page.js")) failures.push(`${file}: directory runtime must follow page markup, not inline CSS tokens`);
     if (!hasStyles || html.includes('href="/assets/styles.css"')) {
       failures.push(`${file}: must load the scoped ${name} stylesheet`);
     }
-    if ((["content", "planning", "templates", "construction", "plywood", "checklists", "legal"].includes(name)) && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) {
+    if ((["content", "learn", "planning", "templates", "construction", "plywood", "checklists", "legal"].includes(name)) && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) {
       failures.push(`${file}: static content must not eagerly load the full app runtime`);
     }
     if (["wood", "wood-species"].includes(name)) {
@@ -233,6 +238,7 @@ const allProfiledPages = [
   ...editorialHtmlFiles(),
   ...blogArticleHtmlFiles(),
   ...compileContentStyles().pages,
+  ...compileLearnStyles().pages,
   ...compileInteractiveStyles().pages,
   ...compileWoodStyles().pages,
   ...compileWoodSpeciesStyles().pages,
@@ -280,7 +286,7 @@ for (const [file, expected, limit] of [["wood-page.js", woodRuntimeSource(), 18_
   if (actual !== expected || Buffer.byteLength(actual) > limit) failures.push(`${file}: stale runtime or byte budget exceeded`);
 }
 if (readFileSync(join(root, "assets/wood-menus.json"), "utf8") !== JSON.stringify(renderWoodChrome("/wood/").menus) + "\n") failures.push("Wood menus are stale");
-for (const asset of ["wood-species.css", "wood-page.js", "wood-language.js", "wood-menus.json", "compare.css", "wood-database.css", "glossary.css", "workflow-shell.css", "finishing-planner.js", "finishing-core.js", "finishing-planner.css", "edge-banding.js", "edge-banding-core.js", "edge-banding.css", "wood-movement.js", "wood-movement-core.js", "wood-movement.css"]) {
+for (const asset of ["learn.css", "wood-species.css", "wood-page.js", "wood-language.js", "wood-menus.json", "compare.css", "wood-database.css", "glossary.css", "workflow-shell.css", "finishing-planner.js", "finishing-core.js", "finishing-planner.css", "edge-banding.js", "edge-banding-core.js", "edge-banding.css", "wood-movement.js", "wood-movement-core.js", "wood-movement.css"]) {
   const block = headers.match(new RegExp(`/assets/${asset.replace(".", "\\.")}\\n([\\s\\S]*?)(?=\\n/|$)`))?.[1] || "";
   if (!/Cache-Control: public, max-age=[1-9]\d*/.test(block)) failures.push(`${asset} is missing a positive browser cache lifetime`);
 }

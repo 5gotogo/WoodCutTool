@@ -68,6 +68,8 @@ export function compileContentStyles() {
   return compile("/assets/content.css");
 }
 
+export function compileLearnStyles() { return compile("/assets/learn.css"); }
+
 export function compileInteractiveStyles() {
   return compile("/assets/interactive.css");
 }
@@ -91,6 +93,7 @@ export function compileWorkflowStyles() { return compile("/assets/workflow-shell
 
 export function inlineScreenshotRouteStyles() {
   for (const [marker, result] of [
+    ["learn", compileLearnStyles()],
     ["glossary", compileGlossaryStyles()],
     ["workflow", compileWorkflowStyles()],
     ["legal", compileLegalStyles()],
@@ -133,6 +136,7 @@ export function inlineWoodStyles() {
 export function buildSiteStyles() {
   for (const [name, result] of [
     ["content.css", compileContentStyles()],
+    ["learn.css", compileLearnStyles()],
     ["interactive.css", compileInteractiveStyles()],
     ["wood.css", compileWoodStyles()],
     ["wood-species.css", compileWoodSpeciesStyles()],

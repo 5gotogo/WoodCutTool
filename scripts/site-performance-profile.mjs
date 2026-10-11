@@ -102,6 +102,14 @@ export function performanceProfile(file, html) {
     return { stylesheet: file === "wood/index.html" ? "/assets/wood.css" : "/assets/wood-species.css", runtimes: ["/assets/wood-page.js"] };
   }
 
+  if (file.startsWith("learn/")) {
+    // Inline CSS also names directory classes. Only page markup determines
+    // whether a directory controller is needed on repeated generation.
+    const markup = html.replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "");
+    return { stylesheet: "/assets/learn.css", runtimes: markup.includes("template-category-section")
+      ? ["/assets/content-page.js", "/assets/directory-page.js"] : ["/assets/content-page.js"] };
+  }
+
   if (/^(?:worksheets|troubleshooting)\//.test(file)) {
     return { stylesheet: "/assets/planning.css", runtimes: ["/assets/content-page.js"] };
   }
