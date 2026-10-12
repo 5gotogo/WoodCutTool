@@ -69,6 +69,7 @@ export function compileContentStyles() {
 }
 
 export function compileLearnStyles() { return compile("/assets/learn.css"); }
+export function compileHomeStyles() { return compile("/assets/home.css"); }
 
 export function compileInteractiveStyles() {
   return compile("/assets/interactive.css");
@@ -93,6 +94,8 @@ export function compileWorkflowStyles() { return compile("/assets/workflow-shell
 
 export function inlineScreenshotRouteStyles() {
   for (const [marker, result] of [
+    ["home", compileHomeStyles()],
+    ["construction", compileConstructionStyles()],
     ["learn", compileLearnStyles()],
     ["glossary", compileGlossaryStyles()],
     ["workflow", compileWorkflowStyles()],
@@ -105,12 +108,14 @@ export function inlineScreenshotRouteStyles() {
       const html = readFileSync(path, "utf8");
       // Keep the complete custom stylesheet after the shared shell, just as in
       // the original link order. These small text/SVG-led pages need no CSS RTT.
-      const custom = marker === "workflow" ? file.split("/")[0] : marker === "plywood" ? "plywood-workflow" : null;
+      const custom = marker === "workflow" ? file.split("/")[0] : marker === "plywood" ? "plywood-workflow"
+        : marker === "construction" && /^(?:cabinet-cut-list-calculator|cabinet-door-calculator|drawer-box-calculator)\//.test(file) ? "component-builder" : null;
       const css = result.css + (custom ? readFileSync(join(root, "assets", `${custom}.css`), "utf8") : "");
       const markup = `<style data-${marker}-styles>${css}</style>`;
       const stylesheet = marker === "workflow" ? "workflow-shell" : marker;
       let next = html.replace(new RegExp(`<style data-${marker}-styles>[\\s\\S]*?<\\/style>|<link rel="stylesheet" href="/assets/${stylesheet}\\.css">`, "g"), () => markup);
       if (custom) next = next.replace(new RegExp(`[ \\t]*<link rel="stylesheet" href="/assets/${custom}\\.css">\\r?\\n?`), "");
+      if (marker === "home") next = next.replace(/\s*<style>\s*:root\{[\s\S]*?<\/style>/g, "");
       next = next.replace(/^[ \t]+$/gm, "");
       if (next !== html) writeFileSync(path, next);
     }
@@ -137,6 +142,7 @@ export function buildSiteStyles() {
   for (const [name, result] of [
     ["content.css", compileContentStyles()],
     ["learn.css", compileLearnStyles()],
+    ["home.css", compileHomeStyles()],
     ["interactive.css", compileInteractiveStyles()],
     ["wood.css", compileWoodStyles()],
     ["wood-species.css", compileWoodSpeciesStyles()],

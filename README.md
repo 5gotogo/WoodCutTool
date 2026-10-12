@@ -57,6 +57,7 @@ Use these settings when connecting the GitHub repository:
 The repository includes:
 
 - `_headers` for security and cache headers.
+- `_routes.json` excludes static assets and crawl files from Functions. HTML still runs the middleware for canonical-domain redirects and the invalid search-template 410; API and CutList redirect routes retain their handlers.
 - `_redirects` for `www` to apex domain and canonical `index.html` redirects.
 - `wrangler.toml` for direct `wrangler pages deploy` compatibility.
 

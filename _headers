@@ -15,6 +15,9 @@
 /assets/home.js
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
+/assets/home.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
 /assets/conversion.js
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 

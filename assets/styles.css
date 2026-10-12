@@ -1052,6 +1052,26 @@ h3 {
   gap: 10px;
 }
 
+/* Preserve the form styles previously supplied by the homepage inline shell. */
+.hero-cut-form label {
+  display: grid;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 850;
+}
+
+.hero-cut-form input {
+  width: 100%;
+  min-height: 42px;
+  padding: 9px 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+
 .lab-presets {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

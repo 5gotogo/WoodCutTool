@@ -1,0 +1,3995 @@
+{
+  "date": "2026-10-12",
+  "deployed": false,
+  "before": {
+    "scope": "Gzip preview; en language, 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+    "origin": "http://127.0.0.1:4196",
+    "routes": [
+      "/",
+      "/crown-molding-angle-calculator/",
+      "/blog/",
+      "/learn/sheet-good-edge-quality-acceptance/",
+      "/wood/eastern-red-cedar/",
+      "/compare/drawer-slides-side-mount-vs-undermount/",
+      "/plywood-cut-calculator/"
+    ],
+    "runs": 3,
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "lcp": 692,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 692,
+        "ttfb": 7.4000000059604645,
+        "domReady": 662.9000000059605,
+        "load": 818.7999999821186,
+        "htmlTransfer": 10215,
+        "resourceTransfer": 121053,
+        "cssJsTransfer": 37291,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 682,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 16559,
+            "encoded": 16259,
+            "duration": 357.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 342.2000000178814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 183.90000000596046
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 221.2000000178814
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 230.10000002384186
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 161.69999998807907
+          }
+        ]
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 1,
+        "lcp": 800,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [
+          57
+        ],
+        "fcp": 580,
+        "ttfb": 7.5999999940395355,
+        "domReady": 632.5999999940395,
+        "load": 784.6999999880791,
+        "htmlTransfer": 3173,
+        "resourceTransfer": 88385,
+        "cssJsTransfer": 36863,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 249,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 1,
+        "longTaskTotal": 57,
+        "longTaskMax": 57,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-measurement-800.webp",
+            "type": "link",
+            "transfer": 49600,
+            "encoded": 49300,
+            "duration": 612.2999999821186
+          },
+          {
+            "path": "/assets/construction.css",
+            "type": "link",
+            "transfer": 8095,
+            "encoded": 7795,
+            "duration": 341
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 184
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 228.2000000178814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 431
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 10217,
+            "encoded": 9917,
+            "duration": 386.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.2000000178814
+          }
+        ]
+      },
+      {
+        "route": "/blog/",
+        "run": 1,
+        "lcp": 564,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [
+          66
+        ],
+        "fcp": 280,
+        "ttfb": 8.799999982118607,
+        "domReady": 548.0999999940395,
+        "load": 701.8999999761581,
+        "htmlTransfer": 23368,
+        "resourceTransfer": 42344,
+        "cssJsTransfer": 21366,
+        "imageTransfer": 20250,
+        "resourceCount": 8,
+        "domNodes": 844,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 1,
+        "longTaskTotal": 66,
+        "longTaskMax": 66,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 160.90000000596046
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2815,
+            "encoded": 2515,
+            "duration": 205.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 304.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 198.30000001192093
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 273.5
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 259.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 163.40000000596046
+          }
+        ],
+        "blogSearchResponse": 492.90000000596046
+      },
+      {
+        "route": "/learn/sheet-good-edge-quality-acceptance/",
+        "run": 1,
+        "lcp": 268,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 268,
+        "ttfb": 2.9000000059604645,
+        "domReady": 537,
+        "load": 647.2000000178814,
+        "htmlTransfer": 14632,
+        "resourceTransfer": 30723,
+        "cssJsTransfer": 18551,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 314,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/woodworking/wood-08-edge-banding-480.webp",
+            "type": "link",
+            "transfer": 10250,
+            "encoded": 9950,
+            "duration": 207
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 260.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 162.2999999821186
+          }
+        ]
+      },
+      {
+        "route": "/wood/eastern-red-cedar/",
+        "run": 1,
+        "lcp": 252,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 252,
+        "ttfb": 2.300000011920929,
+        "domReady": 396.59999999403954,
+        "load": 558.2000000178814,
+        "htmlTransfer": 12785,
+        "resourceTransfer": 9421,
+        "cssJsTransfer": 7499,
+        "imageTransfer": 1194,
+        "resourceCount": 4,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "type": "script",
+            "transfer": 4474,
+            "encoded": 4174,
+            "duration": 184.7000000178814
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 170.30000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 162.39999997615814
+          }
+        ]
+      },
+      {
+        "route": "/compare/drawer-slides-side-mount-vs-undermount/",
+        "run": 1,
+        "lcp": 628,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 272,
+        "ttfb": 2.4000000059604645,
+        "domReady": 593.3000000119209,
+        "load": 703.0999999940395,
+        "htmlTransfer": 12746,
+        "resourceTransfer": 54329,
+        "cssJsTransfer": 18551,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 428,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.compari.on-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-cabinet-800.webp",
+            "type": "link",
+            "transfer": 33856,
+            "encoded": 33556,
+            "duration": 431.19999998807907
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 320.2999999821186
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 162.19999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156.30000001192093
+          }
+        ]
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 1,
+        "lcp": 284,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 284,
+        "ttfb": 2.5999999940395355,
+        "domReady": 650.5999999940395,
+        "load": 693,
+        "htmlTransfer": 15380,
+        "resourceTransfer": 34570,
+        "cssJsTransfer": 32648,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 340,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/plywood-core.js",
+            "type": "script",
+            "transfer": 4116,
+            "encoded": 3816,
+            "duration": 229.7000000178814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.30000001192093
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 222.10000002384186
+          },
+          {
+            "path": "/assets/plywood-workflow.js",
+            "type": "script",
+            "transfer": 6999,
+            "encoded": 6699,
+            "duration": 266.5
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 312.10000002384186
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "type": "script",
+            "transfer": 2982,
+            "encoded": 2682,
+            "duration": 164.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "lcp": 716,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 716,
+        "ttfb": 2.5,
+        "domReady": 697.7000000178814,
+        "load": 707.6000000238419,
+        "htmlTransfer": 10215,
+        "resourceTransfer": 39213,
+        "cssJsTransfer": 37291,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 682,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 16559,
+            "encoded": 16259,
+            "duration": 351.80000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 344.19999998807907
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 171.40000000596046
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 224.19999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 216
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 2,
+        "lcp": 804,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [
+          59
+        ],
+        "fcp": 576,
+        "ttfb": 2.2000000178813934,
+        "domReady": 633.4000000059605,
+        "load": 786.5999999940395,
+        "htmlTransfer": 3173,
+        "resourceTransfer": 88385,
+        "cssJsTransfer": 36863,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 249,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 1,
+        "longTaskTotal": 59,
+        "longTaskMax": 59,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-measurement-800.webp",
+            "type": "link",
+            "transfer": 49600,
+            "encoded": 49300,
+            "duration": 612.7999999821186
+          },
+          {
+            "path": "/assets/construction.css",
+            "type": "link",
+            "transfer": 8095,
+            "encoded": 7795,
+            "duration": 342.69999998807907
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 431.80000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 221.5
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 10217,
+            "encoded": 9917,
+            "duration": 378.69999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/blog/",
+        "run": 2,
+        "lcp": 320,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [
+          53
+        ],
+        "fcp": 268,
+        "ttfb": 2.800000011920929,
+        "domReady": 573.4000000059605,
+        "load": 724,
+        "htmlTransfer": 23368,
+        "resourceTransfer": 42344,
+        "cssJsTransfer": 21366,
+        "imageTransfer": 20250,
+        "resourceCount": 8,
+        "domNodes": 844,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 1,
+        "longTaskTotal": 53,
+        "longTaskMax": 53,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 327.2999999821186
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 160.5
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2815,
+            "encoded": 2515,
+            "duration": 197.80000001192093
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 190.40000000596046
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 291.2999999821186
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 276.30000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156.59999999403954
+          }
+        ],
+        "blogSearchResponse": 483.80000001192093
+      },
+      {
+        "route": "/learn/sheet-good-edge-quality-acceptance/",
+        "run": 2,
+        "lcp": 252,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 252,
+        "ttfb": 6.800000011920929,
+        "domReady": 486.30000001192093,
+        "load": 643.5999999940395,
+        "htmlTransfer": 14632,
+        "resourceTransfer": 30723,
+        "cssJsTransfer": 18551,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 314,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/woodworking/wood-08-edge-banding-480.webp",
+            "type": "link",
+            "transfer": 10250,
+            "encoded": 9950,
+            "duration": 251.80000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 266.59999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 161.30000001192093
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.40000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.69999998807907
+          }
+        ]
+      },
+      {
+        "route": "/wood/eastern-red-cedar/",
+        "run": 2,
+        "lcp": 256,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 256,
+        "ttfb": 3.199999988079071,
+        "domReady": 415.5,
+        "load": 564.5999999940395,
+        "htmlTransfer": 12785,
+        "resourceTransfer": 9421,
+        "cssJsTransfer": 7499,
+        "imageTransfer": 1194,
+        "resourceCount": 4,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "type": "script",
+            "transfer": 4474,
+            "encoded": 4174,
+            "duration": 191
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 183.90000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 163
+          }
+        ]
+      },
+      {
+        "route": "/compare/drawer-slides-side-mount-vs-undermount/",
+        "run": 2,
+        "lcp": 636,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 288,
+        "ttfb": 6.0999999940395355,
+        "domReady": 598.7999999821186,
+        "load": 718.6999999880791,
+        "htmlTransfer": 12746,
+        "resourceTransfer": 54329,
+        "cssJsTransfer": 18551,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 428,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.compari.on-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-cabinet-800.webp",
+            "type": "link",
+            "transfer": 33856,
+            "encoded": 33556,
+            "duration": 431.5
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 167.80000001192093
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 197.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 334.80000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 166.7999999821186
+          }
+        ]
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 2,
+        "lcp": 288,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 288,
+        "ttfb": 2.7999999821186066,
+        "domReady": 641.2999999821186,
+        "load": 681.6999999880791,
+        "htmlTransfer": 15380,
+        "resourceTransfer": 34570,
+        "cssJsTransfer": 32648,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 340,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 192.30000001192093
+          },
+          {
+            "path": "/assets/plywood-core.js",
+            "type": "script",
+            "transfer": 4116,
+            "encoded": 3816,
+            "duration": 207
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 303.90000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.30000001192093
+          },
+          {
+            "path": "/assets/plywood-workflow.js",
+            "type": "script",
+            "transfer": 6999,
+            "encoded": 6699,
+            "duration": 259.80000001192093
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "type": "script",
+            "transfer": 2982,
+            "encoded": 2682,
+            "duration": 163.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.19999998807907
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "lcp": 728,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 728,
+        "ttfb": 1.9000000059604645,
+        "domReady": 698.4000000059605,
+        "load": 708.7000000178814,
+        "htmlTransfer": 10215,
+        "resourceTransfer": 39213,
+        "cssJsTransfer": 37291,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 682,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 16559,
+            "encoded": 16259,
+            "duration": 349.90000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.40000000596046
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 214.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 342.60000002384186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 222.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156
+          }
+        ]
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 3,
+        "lcp": 800,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [
+          64
+        ],
+        "fcp": 576,
+        "ttfb": 1.7000000178813934,
+        "domReady": 631.1000000238419,
+        "load": 782,
+        "htmlTransfer": 3173,
+        "resourceTransfer": 88385,
+        "cssJsTransfer": 36863,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 249,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 1,
+        "longTaskTotal": 64,
+        "longTaskMax": 64,
+        "resources": [
+          {
+            "path": "/assets/construction.css",
+            "type": "link",
+            "transfer": 8095,
+            "encoded": 7795,
+            "duration": 341.80000001192093
+          },
+          {
+            "path": "/assets/images/tools/tools-measurement-800.webp",
+            "type": "link",
+            "transfer": 49600,
+            "encoded": 49300,
+            "duration": 611.9000000059605
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 175.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 431.2000000178814
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 220.69999998807907
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 10217,
+            "encoded": 9917,
+            "duration": 379
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 164.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/blog/",
+        "run": 3,
+        "lcp": 328,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [
+          52
+        ],
+        "fcp": 280,
+        "ttfb": 2.4000000059604645,
+        "domReady": 556,
+        "load": 701,
+        "htmlTransfer": 23368,
+        "resourceTransfer": 42344,
+        "cssJsTransfer": 21366,
+        "imageTransfer": 20250,
+        "resourceCount": 8,
+        "domNodes": 844,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 1,
+        "longTaskTotal": 52,
+        "longTaskMax": 52,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 310.7999999821186
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 161.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.80000001192093
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2815,
+            "encoded": 2515,
+            "duration": 199.40000000596046
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 283.2999999821186
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 268.80000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 152.19999998807907
+          }
+        ],
+        "blogSearchResponse": 491.2999999821186
+      },
+      {
+        "route": "/learn/sheet-good-edge-quality-acceptance/",
+        "run": 3,
+        "lcp": 268,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 268,
+        "ttfb": 2.2000000178813934,
+        "domReady": 488,
+        "load": 644,
+        "htmlTransfer": 14632,
+        "resourceTransfer": 30723,
+        "cssJsTransfer": 18551,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 314,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/woodworking/wood-08-edge-banding-480.webp",
+            "type": "link",
+            "transfer": 10250,
+            "encoded": 9950,
+            "duration": 236
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 168.19999998807907
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 266.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 198.69999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.19999998807907
+          }
+        ]
+      },
+      {
+        "route": "/wood/eastern-red-cedar/",
+        "run": 3,
+        "lcp": 260,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 260,
+        "ttfb": 2.5,
+        "domReady": 398.80000001192093,
+        "load": 562.5,
+        "htmlTransfer": 12785,
+        "resourceTransfer": 9421,
+        "cssJsTransfer": 7499,
+        "imageTransfer": 1194,
+        "resourceCount": 4,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "type": "script",
+            "transfer": 4474,
+            "encoded": 4174,
+            "duration": 184.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 170.19999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 162.80000001192093
+          }
+        ]
+      },
+      {
+        "route": "/compare/drawer-slides-side-mount-vs-undermount/",
+        "run": 3,
+        "lcp": 608,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 272,
+        "ttfb": 7.299999982118607,
+        "domReady": 584.1999999880791,
+        "load": 698.0999999940395,
+        "htmlTransfer": 12746,
+        "resourceTransfer": 54329,
+        "cssJsTransfer": 18551,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 428,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.compari.on-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-cabinet-800.webp",
+            "type": "link",
+            "transfer": 33856,
+            "encoded": 33556,
+            "duration": 432.40000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 162.80000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 319.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.90000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 3,
+        "lcp": 668,
+        "lcpElement": "p.notice",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 248,
+        "ttfb": 8.200000017881393,
+        "domReady": 647.0999999940395,
+        "load": 688.8000000119209,
+        "htmlTransfer": 15380,
+        "resourceTransfer": 34570,
+        "cssJsTransfer": 32648,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 340,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/plywood-core.js",
+            "type": "script",
+            "transfer": 4116,
+            "encoded": 3816,
+            "duration": 230.69999998807907
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 177.7999999821186
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 313.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 222.90000000596046
+          },
+          {
+            "path": "/assets/plywood-workflow.js",
+            "type": "script",
+            "transfer": 6999,
+            "encoded": 6699,
+            "duration": 267.69999998807907
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "type": "script",
+            "transfer": 2982,
+            "encoded": 2682,
+            "duration": 162.80000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.80000001192093
+          }
+        ]
+      }
+    ]
+  },
+  "after": {
+    "scope": "Gzip preview; en language, 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+    "origin": "http://127.0.0.1:4196",
+    "routes": [
+      "/",
+      "/crown-molding-angle-calculator/",
+      "/blog/",
+      "/learn/sheet-good-edge-quality-acceptance/",
+      "/wood/eastern-red-cedar/",
+      "/compare/drawer-slides-side-mount-vs-undermount/",
+      "/plywood-cut-calculator/"
+    ],
+    "runs": 3,
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "lcp": 340,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [
+          60
+        ],
+        "fcp": 340,
+        "ttfb": 8.899999976158142,
+        "domReady": 508.89999997615814,
+        "load": 663.8999999761581,
+        "htmlTransfer": 20050,
+        "resourceTransfer": 22654,
+        "cssJsTransfer": 20732,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 681,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 1,
+        "longTaskTotal": 60,
+        "longTaskMax": 60,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 263.2000000178814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 157.2999999821186
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 188.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 195.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.30000001192093
+          }
+        ]
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 1,
+        "lcp": 692,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 280,
+        "ttfb": 6.5,
+        "domReady": 660,
+        "load": 756,
+        "htmlTransfer": 11061,
+        "resourceTransfer": 56528,
+        "cssJsTransfer": 28768,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 249,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-measurement-480.webp",
+            "type": "link",
+            "transfer": 25838,
+            "encoded": 25538,
+            "duration": 444.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 380.7999999821186
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 170.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.5
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 10217,
+            "encoded": 9917,
+            "duration": 334.90000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/blog/",
+        "run": 1,
+        "lcp": 260,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [
+          58
+        ],
+        "fcp": 260,
+        "ttfb": 2.2000000178813934,
+        "domReady": 538.2000000178814,
+        "load": 688.5999999940395,
+        "htmlTransfer": 23410,
+        "resourceTransfer": 42344,
+        "cssJsTransfer": 21366,
+        "imageTransfer": 20250,
+        "resourceCount": 8,
+        "domNodes": 844,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 1,
+        "longTaskTotal": 58,
+        "longTaskMax": 58,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 306.40000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 156.40000000596046
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2815,
+            "encoded": 2515,
+            "duration": 185.69999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 194.69999998807907
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 284.69999998807907
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 276.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.09999999403954
+          }
+        ],
+        "blogSearchResponse": 488
+      },
+      {
+        "route": "/learn/sheet-good-edge-quality-acceptance/",
+        "run": 1,
+        "lcp": 272,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 272,
+        "ttfb": 2,
+        "domReady": 490.19999998807907,
+        "load": 648.8999999761581,
+        "htmlTransfer": 14632,
+        "resourceTransfer": 30723,
+        "cssJsTransfer": 18551,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 314,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/woodworking/wood-08-edge-banding-480.webp",
+            "type": "link",
+            "transfer": 10250,
+            "encoded": 9950,
+            "duration": 236.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 267.5
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 168.80000001192093
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 198.69999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/wood/eastern-red-cedar/",
+        "run": 1,
+        "lcp": 260,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 260,
+        "ttfb": 2.300000011920929,
+        "domReady": 403.5,
+        "load": 562.7000000178814,
+        "htmlTransfer": 12785,
+        "resourceTransfer": 9421,
+        "cssJsTransfer": 7499,
+        "imageTransfer": 1194,
+        "resourceCount": 4,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 177.80000001192093
+          },
+          {
+            "path": "/assets/wood-page.js",
+            "type": "script",
+            "transfer": 4474,
+            "encoded": 4174,
+            "duration": 192.80000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 161.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/compare/drawer-slides-side-mount-vs-undermount/",
+        "run": 1,
+        "lcp": 612,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 276,
+        "ttfb": 2.800000011920929,
+        "domReady": 591.0999999940395,
+        "load": 705.0999999940395,
+        "htmlTransfer": 12746,
+        "resourceTransfer": 54329,
+        "cssJsTransfer": 18551,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 428,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.compari.on-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-cabinet-800.webp",
+            "type": "link",
+            "transfer": 33856,
+            "encoded": 33556,
+            "duration": 432.5
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 162.7999999821186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.89999997615814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 318.7999999821186
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.69999998807907
+          }
+        ]
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 1,
+        "lcp": 292,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 292,
+        "ttfb": 3.4000000059604645,
+        "domReady": 654.2000000178814,
+        "load": 693.5,
+        "htmlTransfer": 15380,
+        "resourceTransfer": 34570,
+        "cssJsTransfer": 32648,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 340,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/plywood-core.js",
+            "type": "script",
+            "transfer": 4116,
+            "encoded": 3816,
+            "duration": 230.59999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 184.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 312.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 221.19999998807907
+          },
+          {
+            "path": "/assets/plywood-workflow.js",
+            "type": "script",
+            "transfer": 6999,
+            "encoded": 6699,
+            "duration": 267.30000001192093
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "type": "script",
+            "transfer": 2982,
+            "encoded": 2682,
+            "duration": 162.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 156.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "lcp": 320,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 320,
+        "ttfb": 3.199999988079071,
+        "domReady": 556.0999999940395,
+        "load": 664,
+        "htmlTransfer": 20050,
+        "resourceTransfer": 22654,
+        "cssJsTransfer": 20732,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 681,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 265.09999999403954
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.60000002384186
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 205.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 197.40000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.19999998807907
+          }
+        ]
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 2,
+        "lcp": 684,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 284,
+        "ttfb": 2.4000000059604645,
+        "domReady": 665.6999999880791,
+        "load": 759.8000000119209,
+        "htmlTransfer": 11061,
+        "resourceTransfer": 56528,
+        "cssJsTransfer": 28768,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 249,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-measurement-480.webp",
+            "type": "link",
+            "transfer": 25838,
+            "encoded": 25538,
+            "duration": 446.7999999821186
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.80000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 379.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214.59999999403954
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 10217,
+            "encoded": 9917,
+            "duration": 334.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.7000000178814
+          }
+        ]
+      },
+      {
+        "route": "/blog/",
+        "run": 2,
+        "lcp": 268,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [
+          53
+        ],
+        "fcp": 268,
+        "ttfb": 2.0999999940395355,
+        "domReady": 552.2000000178814,
+        "load": 710.8000000119209,
+        "htmlTransfer": 23410,
+        "resourceTransfer": 42344,
+        "cssJsTransfer": 21366,
+        "imageTransfer": 20250,
+        "resourceCount": 8,
+        "domNodes": 844,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 1,
+        "longTaskTotal": 53,
+        "longTaskMax": 53,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 314.2000000178814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 155.60000002384186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 186.09999999403954
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2815,
+            "encoded": 2515,
+            "duration": 200.30000001192093
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 285.2999999821186
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 277.39999997615814
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 164.30000001192093
+          }
+        ],
+        "blogSearchResponse": 494.40000000596046
+      },
+      {
+        "route": "/learn/sheet-good-edge-quality-acceptance/",
+        "run": 2,
+        "lcp": 272,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 272,
+        "ttfb": 2.2000000178813934,
+        "domReady": 496.80000001192093,
+        "load": 652.2000000178814,
+        "htmlTransfer": 14632,
+        "resourceTransfer": 30723,
+        "cssJsTransfer": 18551,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 314,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/woodworking/wood-08-edge-banding-480.webp",
+            "type": "link",
+            "transfer": 10250,
+            "encoded": 9950,
+            "duration": 237.30000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 267
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.89999997615814
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 199
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.30000001192093
+          }
+        ]
+      },
+      {
+        "route": "/wood/eastern-red-cedar/",
+        "run": 2,
+        "lcp": 256,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 256,
+        "ttfb": 1.9000000059604645,
+        "domReady": 404,
+        "load": 564.8000000119209,
+        "htmlTransfer": 12785,
+        "resourceTransfer": 9421,
+        "cssJsTransfer": 7499,
+        "imageTransfer": 1194,
+        "resourceCount": 4,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 177.7000000178814
+          },
+          {
+            "path": "/assets/wood-page.js",
+            "type": "script",
+            "transfer": 4474,
+            "encoded": 4174,
+            "duration": 192.90000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 161.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/compare/drawer-slides-side-mount-vs-undermount/",
+        "run": 2,
+        "lcp": 624,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 260,
+        "ttfb": 2.7999999821186066,
+        "domReady": 593.7999999821186,
+        "load": 702.7999999821186,
+        "htmlTransfer": 12746,
+        "resourceTransfer": 54329,
+        "cssJsTransfer": 18551,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 428,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.compari.on-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-cabinet-800.webp",
+            "type": "link",
+            "transfer": 33856,
+            "encoded": 33556,
+            "duration": 431.30000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 162.7000000178814
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 320.7000000178814
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.19999998807907
+          }
+        ]
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 2,
+        "lcp": 672,
+        "lcpElement": "p.notice",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 264,
+        "ttfb": 8.400000005960464,
+        "domReady": 648.4000000059605,
+        "load": 687.5,
+        "htmlTransfer": 15380,
+        "resourceTransfer": 34570,
+        "cssJsTransfer": 32648,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 340,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/plywood-core.js",
+            "type": "script",
+            "transfer": 4116,
+            "encoded": 3816,
+            "duration": 229.59999999403954
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 312
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 176.90000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 214
+          },
+          {
+            "path": "/assets/plywood-workflow.js",
+            "type": "script",
+            "transfer": 6999,
+            "encoded": 6699,
+            "duration": 267.19999998807907
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "type": "script",
+            "transfer": 2982,
+            "encoded": 2682,
+            "duration": 164.30000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.7000000178814
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "lcp": 324,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 324,
+        "ttfb": 2.4000000059604645,
+        "domReady": 557.9000000059605,
+        "load": 668.9000000059605,
+        "htmlTransfer": 20050,
+        "resourceTransfer": 22654,
+        "cssJsTransfer": 20732,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 681,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 160.69999998807907
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 191.09999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 197.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 264.90000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 160.19999998807907
+          }
+        ]
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 3,
+        "lcp": 672,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 284,
+        "ttfb": 1.899999976158142,
+        "domReady": 652.6999999880791,
+        "load": 745.2999999821186,
+        "htmlTransfer": 11061,
+        "resourceTransfer": 56528,
+        "cssJsTransfer": 28768,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 249,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-measurement-480.webp",
+            "type": "link",
+            "transfer": 25838,
+            "encoded": 25538,
+            "duration": 446.90000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.30000001192093
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 206.90000000596046
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 10217,
+            "encoded": 9917,
+            "duration": 335.2000000178814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 372.10000002384186
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/blog/",
+        "run": 3,
+        "lcp": 280,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [
+          53
+        ],
+        "fcp": 280,
+        "ttfb": 1.9000000059604645,
+        "domReady": 552,
+        "load": 713,
+        "htmlTransfer": 23410,
+        "resourceTransfer": 42344,
+        "cssJsTransfer": 21366,
+        "imageTransfer": 20250,
+        "resourceCount": 8,
+        "domNodes": 844,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 1,
+        "longTaskTotal": 53,
+        "longTaskMax": 53,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 155.5
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 314.60000002384186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 186.39999997615814
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2815,
+            "encoded": 2515,
+            "duration": 194.19999998807907
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 279.89999997615814
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 287.69999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 164
+          }
+        ],
+        "blogSearchResponse": 491.30000001192093
+      },
+      {
+        "route": "/learn/sheet-good-edge-quality-acceptance/",
+        "run": 3,
+        "lcp": 272,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 272,
+        "ttfb": 2.0999999940395355,
+        "domReady": 491.5,
+        "load": 648.2000000178814,
+        "htmlTransfer": 14632,
+        "resourceTransfer": 30723,
+        "cssJsTransfer": 18551,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 314,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/woodworking/wood-08-edge-banding-480.webp",
+            "type": "link",
+            "transfer": 10250,
+            "encoded": 9950,
+            "duration": 235.80000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 169.5
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 266.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 199.30000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158.60000002384186
+          }
+        ]
+      },
+      {
+        "route": "/wood/eastern-red-cedar/",
+        "run": 3,
+        "lcp": 264,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 264,
+        "ttfb": 2.300000011920929,
+        "domReady": 396.10000002384186,
+        "load": 547.9000000059605,
+        "htmlTransfer": 12785,
+        "resourceTransfer": 9421,
+        "cssJsTransfer": 7499,
+        "imageTransfer": 1194,
+        "resourceCount": 4,
+        "domNodes": 300,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 170.30000001192093
+          },
+          {
+            "path": "/assets/wood-page.js",
+            "type": "script",
+            "transfer": 4474,
+            "encoded": 4174,
+            "duration": 185.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 152.69999998807907
+          }
+        ]
+      },
+      {
+        "route": "/compare/drawer-slides-side-mount-vs-undermount/",
+        "run": 3,
+        "lcp": 620,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 268,
+        "ttfb": 8.900000005960464,
+        "domReady": 590.8000000119209,
+        "load": 700.9000000059605,
+        "htmlTransfer": 12746,
+        "resourceTransfer": 54329,
+        "cssJsTransfer": 18551,
+        "imageTransfer": 1194,
+        "resourceCount": 6,
+        "domNodes": 428,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "table.compari.on-table",
+          "thead",
+          "tr",
+          "th",
+          "th",
+          "tbody",
+          "tr",
+          "td"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-cabinet-800.webp",
+            "type": "link",
+            "transfer": 33856,
+            "encoded": 33556,
+            "duration": 431.5
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 161.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 190.7000000178814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 319.30000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 158
+          }
+        ]
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 3,
+        "lcp": 276,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 276,
+        "ttfb": 3.199999988079071,
+        "domReady": 651.2999999821186,
+        "load": 691,
+        "htmlTransfer": 15380,
+        "resourceTransfer": 34570,
+        "cssJsTransfer": 32648,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 340,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/plywood-core.js",
+            "type": "script",
+            "transfer": 4116,
+            "encoded": 3816,
+            "duration": 230
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 184.40000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14561,
+            "encoded": 14261,
+            "duration": 313.19999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 223
+          },
+          {
+            "path": "/assets/plywood-workflow.js",
+            "type": "script",
+            "transfer": 6999,
+            "encoded": 6699,
+            "duration": 266.30000001192093
+          },
+          {
+            "path": "/assets/cut-handoff-model.js",
+            "type": "script",
+            "transfer": 2982,
+            "encoded": 2682,
+            "duration": 164.59999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 157.7999999821186
+          }
+        ]
+      }
+    ]
+  },
+  "liveBeforeDeployment": {
+    "scope": "Gzip preview; en language, 390x844 at 1x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.",
+    "origin": "https://woodcuttool.com",
+    "routes": [
+      "/",
+      "/crown-molding-angle-calculator/",
+      "/wood/eastern-red-cedar/",
+      "/blog/"
+    ],
+    "runs": 3,
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "lcp": 1668,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [
+          112
+        ],
+        "fcp": 1668,
+        "ttfb": 1184.9000000059605,
+        "domReady": 1848.5,
+        "load": 1964.4000000059605,
+        "htmlTransfer": 11109,
+        "resourceTransfer": 122138,
+        "cssJsTransfer": 38327,
+        "imageTransfer": 1194,
+        "resourceCount": 10,
+        "domNodes": 685,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 1,
+        "longTaskTotal": 112,
+        "longTaskMax": 112,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 17373,
+            "encoded": 17073,
+            "duration": 287.90000000596046
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 913,
+            "encoded": 613,
+            "duration": 278.7999999821186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 310.59999999403954
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2162,
+            "encoded": 1862,
+            "duration": 324.90000000596046
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14856,
+            "encoded": 14556,
+            "duration": 422.69999998807907
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 305.40000000596046
+          }
+        ]
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 1,
+        "lcp": 1216,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 900,
+        "ttfb": 341.30000001192093,
+        "domReady": 1176.5,
+        "load": 1204,
+        "htmlTransfer": 3290,
+        "resourceTransfer": 89077,
+        "cssJsTransfer": 37471,
+        "imageTransfer": 1194,
+        "resourceCount": 10,
+        "domNodes": 250,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-measurement-800.webp",
+            "type": "link",
+            "transfer": 49600,
+            "encoded": 49300,
+            "duration": 843
+          },
+          {
+            "path": "/assets/construction.css",
+            "type": "link",
+            "transfer": 8476,
+            "encoded": 8176,
+            "duration": 430.2000000178814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 913,
+            "encoded": 613,
+            "duration": 295.19999998807907
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14856,
+            "encoded": 14556,
+            "duration": 459.89999997615814
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 715.3999999761581
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 10203,
+            "encoded": 9903,
+            "duration": 790.5999999940395
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 281.30000001192093
+          }
+        ]
+      },
+      {
+        "route": "/wood/eastern-red-cedar/",
+        "run": 1,
+        "lcp": 560,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 560,
+        "ttfb": 273.40000000596046,
+        "domReady": 678.1999999880791,
+        "load": 999.3000000119209,
+        "htmlTransfer": 13267,
+        "resourceTransfer": 10712,
+        "cssJsTransfer": 8406,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 301,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "type": "script",
+            "transfer": 4472,
+            "encoded": 4172,
+            "duration": 263.19999998807907
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 226.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 395.09999999403954
+          }
+        ]
+      },
+      {
+        "route": "/blog/",
+        "run": 1,
+        "lcp": 676,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 676,
+        "ttfb": 473.39999997615814,
+        "domReady": 1225.5,
+        "load": 1499.699999988079,
+        "htmlTransfer": 24244,
+        "resourceTransfer": 42709,
+        "cssJsTransfer": 21647,
+        "imageTransfer": 20250,
+        "resourceCount": 10,
+        "domNodes": 845,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14856,
+            "encoded": 14556,
+            "duration": 566.2000000178814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 913,
+            "encoded": 613,
+            "duration": 322.2000000178814
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2855,
+            "encoded": 2555,
+            "duration": 658.9000000059605
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 374.7999999821186
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 806.5
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 850.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 351.2000000178814
+          }
+        ],
+        "blogSearchResponse": 679.7000000178814
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "lcp": 1052,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 1052,
+        "ttfb": 285.30000001192093,
+        "domReady": 982.2000000178814,
+        "load": 1093.2000000178814,
+        "htmlTransfer": 10711,
+        "resourceTransfer": 40333,
+        "cssJsTransfer": 38327,
+        "imageTransfer": 1194,
+        "resourceCount": 9,
+        "domNodes": 683,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 17373,
+            "encoded": 17073,
+            "duration": 496.89999997615814
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 913,
+            "encoded": 613,
+            "duration": 240.30000001192093
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2162,
+            "encoded": 1862,
+            "duration": 301.5
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14856,
+            "encoded": 14556,
+            "duration": 474.90000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 314.90000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 272.5
+          }
+        ]
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 2,
+        "lcp": 1024,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [
+          82
+        ],
+        "fcp": 784,
+        "ttfb": 336.80000001192093,
+        "domReady": 1132.4000000059605,
+        "load": 1407.300000011921,
+        "htmlTransfer": 3290,
+        "resourceTransfer": 89077,
+        "cssJsTransfer": 37471,
+        "imageTransfer": 1194,
+        "resourceCount": 10,
+        "domNodes": 250,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 1,
+        "longTaskTotal": 82,
+        "longTaskMax": 82,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-measurement-800.webp",
+            "type": "link",
+            "transfer": 49600,
+            "encoded": 49300,
+            "duration": 650.0999999940395
+          },
+          {
+            "path": "/assets/construction.css",
+            "type": "link",
+            "transfer": 8476,
+            "encoded": 8176,
+            "duration": 327.69999998807907
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14856,
+            "encoded": 14556,
+            "duration": 732.1999999880791
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 913,
+            "encoded": 613,
+            "duration": 567.4000000059605
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 658.3000000119209
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 10203,
+            "encoded": 9903,
+            "duration": 710.6999999880791
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 301.59999999403954
+          }
+        ]
+      },
+      {
+        "route": "/wood/eastern-red-cedar/",
+        "run": 2,
+        "lcp": 584,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 584,
+        "ttfb": 330.59999999403954,
+        "domReady": 725.5999999940395,
+        "load": 904.4000000059605,
+        "htmlTransfer": 13267,
+        "resourceTransfer": 10412,
+        "cssJsTransfer": 8406,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 301,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "type": "script",
+            "transfer": 4472,
+            "encoded": 4172,
+            "duration": 288.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 280.40000000596046
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 220.7999999821186
+          }
+        ]
+      },
+      {
+        "route": "/blog/",
+        "run": 2,
+        "lcp": 528,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 528,
+        "ttfb": 294.90000000596046,
+        "domReady": 843.4000000059605,
+        "load": 898.6000000238419,
+        "htmlTransfer": 24244,
+        "resourceTransfer": 42709,
+        "cssJsTransfer": 21647,
+        "imageTransfer": 20250,
+        "resourceCount": 10,
+        "domNodes": 845,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14856,
+            "encoded": 14556,
+            "duration": 311.10000002384186
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 913,
+            "encoded": 613,
+            "duration": 206.89999997615814
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 234.89999997615814
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2855,
+            "encoded": 2555,
+            "duration": 265.2999999821186
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 298.80000001192093
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 358.30000001192093
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 201.59999999403954
+          }
+        ],
+        "blogSearchResponse": 606.5999999940395
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "lcp": 1072,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [
+          80
+        ],
+        "fcp": 1072,
+        "ttfb": 364.09999999403954,
+        "domReady": 1036.699999988079,
+        "load": 1310.7999999821186,
+        "htmlTransfer": 10711,
+        "resourceTransfer": 40333,
+        "cssJsTransfer": 38327,
+        "imageTransfer": 1194,
+        "resourceCount": 9,
+        "domNodes": 683,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 1,
+        "longTaskTotal": 80,
+        "longTaskMax": 80,
+        "resources": [
+          {
+            "path": "/assets/interactive.css",
+            "type": "link",
+            "transfer": 17373,
+            "encoded": 17073,
+            "duration": 449.2000000178814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14856,
+            "encoded": 14556,
+            "duration": 441.80000001192093
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 913,
+            "encoded": 613,
+            "duration": 188.59999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 215.69999998807907
+          },
+          {
+            "path": "/assets/home.js",
+            "type": "script",
+            "transfer": 2162,
+            "encoded": 1862,
+            "duration": 225
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 289.2999999821186
+          }
+        ]
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 3,
+        "lcp": 1112,
+        "lcpElement": "img",
+        "cls": 0,
+        "longTasks": [
+          53
+        ],
+        "fcp": 944,
+        "ttfb": 328.59999999403954,
+        "domReady": 1041.4000000059605,
+        "load": 1152.5999999940395,
+        "htmlTransfer": 3290,
+        "resourceTransfer": 89077,
+        "cssJsTransfer": 37471,
+        "imageTransfer": 1194,
+        "resourceCount": 10,
+        "domNodes": 250,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 1,
+        "longTaskTotal": 53,
+        "longTaskMax": 53,
+        "resources": [
+          {
+            "path": "/assets/images/tools/tools-measurement-800.webp",
+            "type": "link",
+            "transfer": 49600,
+            "encoded": 49300,
+            "duration": 746.8000000119209
+          },
+          {
+            "path": "/assets/construction.css",
+            "type": "link",
+            "transfer": 8476,
+            "encoded": 8176,
+            "duration": 491.89999997615814
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14856,
+            "encoded": 14556,
+            "duration": 565.7999999821186
+          },
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 913,
+            "encoded": 613,
+            "duration": 280.7999999821186
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 349.09999999403954
+          },
+          {
+            "path": "/assets/construction-calculators.js",
+            "type": "script",
+            "transfer": 10203,
+            "encoded": 9903,
+            "duration": 521.9000000059605
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 220.19999998807907
+          }
+        ]
+      },
+      {
+        "route": "/wood/eastern-red-cedar/",
+        "run": 3,
+        "lcp": 492,
+        "lcpElement": "p.lead",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 492,
+        "ttfb": 240.5,
+        "domReady": 598.1999999880791,
+        "load": 758.0999999940395,
+        "htmlTransfer": 13268,
+        "resourceTransfer": 10412,
+        "cssJsTransfer": 8406,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 301,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "type": "script",
+            "transfer": 4472,
+            "encoded": 4172,
+            "duration": 250.40000000596046
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 211.2000000178814
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 202.10000002384186
+          }
+        ]
+      },
+      {
+        "route": "/blog/",
+        "run": 3,
+        "lcp": 492,
+        "lcpElement": "h1",
+        "cls": 0,
+        "longTasks": [],
+        "fcp": 404,
+        "ttfb": 259.7999999821186,
+        "domReady": 810.4000000059605,
+        "load": 949.0999999940395,
+        "htmlTransfer": 24244,
+        "resourceTransfer": 42709,
+        "cssJsTransfer": 21647,
+        "imageTransfer": 20250,
+        "resourceCount": 10,
+        "domNodes": 845,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a",
+          "a"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/content-page.js",
+            "type": "script",
+            "transfer": 913,
+            "encoded": 613,
+            "duration": 211.69999998807907
+          },
+          {
+            "path": "/assets/blog-index.js",
+            "type": "script",
+            "transfer": 2855,
+            "encoded": 2555,
+            "duration": 249.80000001192093
+          },
+          {
+            "path": "/assets/site-chrome.js",
+            "type": "script",
+            "transfer": 14856,
+            "encoded": 14556,
+            "duration": 302.59999999403954
+          },
+          {
+            "path": "/assets/conversion.js",
+            "type": "script",
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 234.30000001192093
+          },
+          {
+            "path": "/assets/images/woodworking/wood-12-site-measurement-480.webp",
+            "type": "img",
+            "transfer": 7546,
+            "encoded": 7246,
+            "duration": 296
+          },
+          {
+            "path": "/assets/images/woodworking/wood-04-joinery-samples-480.webp",
+            "type": "img",
+            "transfer": 11510,
+            "encoded": 11210,
+            "duration": 335.09999999403954
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "type": "img",
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 290.89999997615814
+          }
+        ],
+        "blogSearchResponse": 623.2000000178814
+      }
+    ]
+  },
+  "browserQA": {
+    "rows": [
+      {
+        "route": "/",
+        "width": 360
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "width": 360
+      },
+      {
+        "route": "/cabinet-cut-list-calculator/",
+        "width": 360
+      },
+      {
+        "route": "/shelf-spacing-calculator/",
+        "width": 360
+      },
+      {
+        "route": "/roof-pitch-calculator/",
+        "width": 360
+      },
+      {
+        "route": "/blog/",
+        "width": 360
+      },
+      {
+        "route": "/",
+        "width": 390
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "width": 390
+      },
+      {
+        "route": "/cabinet-cut-list-calculator/",
+        "width": 390
+      },
+      {
+        "route": "/shelf-spacing-calculator/",
+        "width": 390
+      },
+      {
+        "route": "/roof-pitch-calculator/",
+        "width": 390
+      },
+      {
+        "route": "/blog/",
+        "width": 390
+      },
+      {
+        "route": "/",
+        "width": 430
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "width": 430
+      },
+      {
+        "route": "/cabinet-cut-list-calculator/",
+        "width": 430
+      },
+      {
+        "route": "/shelf-spacing-calculator/",
+        "width": 430
+      },
+      {
+        "route": "/roof-pitch-calculator/",
+        "width": 430
+      },
+      {
+        "route": "/blog/",
+        "width": 430
+      },
+      {
+        "route": "/",
+        "width": 1440
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "width": 1440
+      },
+      {
+        "route": "/cabinet-cut-list-calculator/",
+        "width": 1440
+      },
+      {
+        "route": "/shelf-spacing-calculator/",
+        "width": 1440
+      },
+      {
+        "route": "/roof-pitch-calculator/",
+        "width": 1440
+      },
+      {
+        "route": "/blog/",
+        "width": 1440
+      }
+    ],
+    "noScript": [
+      {
+        "route": "/",
+        "size": "64px"
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "size": "64px"
+      },
+      {
+        "route": "/cabinet-cut-list-calculator/",
+        "size": "64px"
+      },
+      {
+        "route": "/shelf-spacing-calculator/",
+        "size": "64px"
+      },
+      {
+        "route": "/roof-pitch-calculator/",
+        "size": "64px"
+      },
+      {
+        "route": "/blog/",
+        "size": "51.2px"
+      }
+    ],
+    "densityImages": [
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "dpr": 1,
+        "src": "http://127.0.0.1:4196/assets/images/tools/tools-measurement-480.webp",
+        "loaded": true,
+        "requests": [
+          "/assets/images/tools/tools-measurement-480.webp"
+        ]
+      },
+      {
+        "route": "/cabinet-cut-list-calculator/",
+        "dpr": 1,
+        "src": "http://127.0.0.1:4196/assets/images/tools/tools-cabinet-480.webp",
+        "loaded": true,
+        "requests": [
+          "/assets/images/tools/tools-cabinet-480.webp"
+        ]
+      },
+      {
+        "route": "/roof-pitch-calculator/",
+        "dpr": 1,
+        "src": "http://127.0.0.1:4196/assets/images/compare/compare-construction-480.webp",
+        "loaded": true,
+        "requests": [
+          "/assets/images/compare/compare-construction-480.webp"
+        ]
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "dpr": 2,
+        "src": "http://127.0.0.1:4196/assets/images/tools/tools-measurement-800.webp",
+        "loaded": true,
+        "requests": [
+          "/assets/images/tools/tools-measurement-800.webp"
+        ]
+      },
+      {
+        "route": "/cabinet-cut-list-calculator/",
+        "dpr": 2,
+        "src": "http://127.0.0.1:4196/assets/images/tools/tools-cabinet-800.webp",
+        "loaded": true,
+        "requests": [
+          "/assets/images/tools/tools-cabinet-800.webp"
+        ]
+      },
+      {
+        "route": "/roof-pitch-calculator/",
+        "dpr": 2,
+        "src": "http://127.0.0.1:4196/assets/images/compare/compare-construction-800.webp",
+        "loaded": true,
+        "requests": [
+          "/assets/images/compare/compare-construction-800.webp"
+        ]
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "dpr": 3,
+        "src": "http://127.0.0.1:4196/assets/images/tools/tools-measurement.webp",
+        "loaded": true,
+        "requests": [
+          "/assets/images/tools/tools-measurement.webp"
+        ]
+      },
+      {
+        "route": "/cabinet-cut-list-calculator/",
+        "dpr": 3,
+        "src": "http://127.0.0.1:4196/assets/images/tools/tools-cabinet.webp",
+        "loaded": true,
+        "requests": [
+          "/assets/images/tools/tools-cabinet.webp"
+        ]
+      },
+      {
+        "route": "/roof-pitch-calculator/",
+        "dpr": 3,
+        "src": "http://127.0.0.1:4196/assets/images/compare/compare-construction.webp",
+        "loaded": true,
+        "requests": [
+          "/assets/images/compare/compare-construction.webp"
+        ]
+      }
+    ],
+    "calculatorEdit": true,
+    "homePreset": true,
+    "blogSearch": true,
+    "languageSwitch": true,
+    "errors": [],
+    "computedStylesMatchBefore": true
+  },
+  "generationIdempotenceFiles": 3681,
+  "notes": [
+    "Cold cache, 390x844 DPR 1, 4x CPU, 150ms configured latency, 200 KB/s; local gzip preview. Local navigation TTFB is only 2-6ms and does not simulate origin/region TTFB.",
+    "Homepage baseline first run has an 81KB favicon outlier; all raw rows retained and medians used.",
+    "Field analytics export and LCP P75 by device/region are unavailable; visit counts are not LCP sample counts.",
+    "Static-resource Functions exclusions are configured and tested locally; production effect remains unmeasured until deployment."
+  ]
+}

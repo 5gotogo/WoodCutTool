@@ -49,7 +49,7 @@ function pageHead({ title, description, canonical, schema, componentProject = fa
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=rounded-mask-20260619">
   <link rel="manifest" href="/site.webmanifest?v=rounded-mask-20260619">
   <meta name="theme-color" content="#e8d9b4">
-${heroImage ? `  <link rel="preload" as="image" href="${heroImage.replace(/\.webp$/, "-800.webp")}" imagesrcset="${heroImage.replace(/\.webp$/, "-800.webp")} 800w, ${heroImage} 1200w" imagesizes="(max-width: 820px) calc(100vw - 32px), 520px" fetchpriority="high">\n` : ""}  <style>.mega-menu{display:none}</style>
+${heroImage ? `  <link rel="preload" as="image" href="${heroImage.replace(/\.webp$/, "-800.webp")}" imagesrcset="${heroImage.replace(/\.webp$/, "-480.webp")} 480w, ${heroImage.replace(/\.webp$/, "-800.webp")} 800w, ${heroImage} 1200w" imagesizes="(max-width: 820px) calc(100vw - 32px), 520px" fetchpriority="high">\n` : ""}  <style>.mega-menu{display:none}</style>
   <link rel="stylesheet" href="/assets/styles.css">
 ${componentStylesheet}  <script defer src="/assets/site-chrome.js"></script>
   <script defer src="/assets/app.js"></script>
@@ -152,7 +152,7 @@ function toolPage(tool) {
         <h1>${escapeHtml(tool.h1)}</h1>
         <p class="lead">${escapeHtml(tool.intro)}</p>
       </div>
-      <figure class="visual-frame"><img src="${visualSrc.replace(/\.webp$/, "-800.webp")}" srcset="${visualSrc.replace(/\.webp$/, "-800.webp")} 800w, ${visualSrc} 1200w" sizes="(max-width: 820px) calc(100vw - 32px), 520px" alt="${escapeHtml(visualAlt)}" width="1200" height="900" loading="eager" fetchpriority="high" decoding="async"></figure>
+      <figure class="visual-frame"><img src="${visualSrc.replace(/\.webp$/, "-800.webp")}" srcset="${visualSrc.replace(/\.webp$/, "-480.webp")} 480w, ${visualSrc.replace(/\.webp$/, "-800.webp")} 800w, ${visualSrc} 1200w" sizes="(max-width: 820px) calc(100vw - 32px), 520px" alt="${escapeHtml(visualAlt)}" width="1200" height="900" loading="eager" fetchpriority="high" decoding="async"></figure>
     </section>
     <section class="section tool-layout construction-tool" data-calculator="${escapeHtml(tool.type)}">
       <form class="tool-panel" data-construction-form>

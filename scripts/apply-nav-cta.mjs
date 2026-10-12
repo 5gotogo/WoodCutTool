@@ -41,7 +41,7 @@ function collectHtmlFiles(dir = root, prefix = "") {
 function applyStylesVersion(html, file) {
   const stylesheet = performanceProfile(file, html).stylesheet;
   if (!stylesheet) return html;
-  return html.replace(/\/assets\/(?:styles|apps|editorial|compare|blog-article|content|learn|interactive|wood|wood-species|wood-database|planning|templates|construction|plywood|checklists|legal|glossary|workflow-shell)\.css(?:\?v=[^"]+)?/g, stylesheet);
+  return html.replace(/\/assets\/(?:styles|apps|editorial|compare|blog-article|content|learn|home|interactive|wood|wood-species|wood-database|planning|templates|construction|plywood|checklists|legal|glossary|workflow-shell)\.css(?:\?v=[^"]+)?/g, stylesheet);
 }
 
 function applyAppVersion(html) {
@@ -71,7 +71,7 @@ function applySiteChromeScript(html) {
 }
 
 function isLcpTailPage(file, html) {
-  return /^(?:learn|worksheets|troubleshooting|templates|apps|compare|wood-database|checklists|legal|plywood-cut-calculator|glossary|finishing-planner|edge-banding|cabinet-studio|wood-movement)\//.test(file) || html.includes("data-construction-form") || file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/archive/index.html");
+  return file === "index.html" || /^(?:learn|worksheets|troubleshooting|templates|apps|compare|wood-database|checklists|legal|plywood-cut-calculator|glossary|finishing-planner|edge-banding|cabinet-studio|wood-movement)\//.test(file) || html.includes("data-construction-form") || file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/archive/index.html");
 }
 
 function applyConversionScript(html, file) {
@@ -226,6 +226,17 @@ for (const file of collectHtmlFiles()) {
     const chrome = renderWoodChrome(`/${file.replace(/index\.html$/, "")}`);
     next = next.replace(/\s*<script\b[^>]*\bsrc="\/assets\/site-chrome\.js"[^>]*><\/script>/g, "")
       .replace(footerMount, chrome.footer);
+  }
+
+  // Large directory schemas need not precede the visible heading or styles.
+  // Preserve each object verbatim and leave body schemas in place on reruns.
+  if (file === "index.html" || file === "blog/index.html") {
+    const schemas = [];
+    next = next.replace(/<head>[\s\S]*?<\/head>/, (head) => head.replace(/\s*<script type="application\/ld\+json">[\s\S]*?<\/script>/g, (schema) => {
+      schemas.push(schema.trim());
+      return "";
+    }));
+    if (schemas.length) next = next.replace("</main>", `</main>\n  ${schemas.join("\n  ")}`);
   }
 
   if (next === html) {
