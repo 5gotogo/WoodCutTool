@@ -1,0 +1,1313 @@
+{
+  "publication": {
+    "verifiedAt": "2026-10-12T16:13:45.818656+00:00",
+    "canonicalRedirect": {
+      "status": "Active; deployed through Cloudflare dashboard after explicit user authorization",
+      "ruleId": "e2f80adbfb9b45c0a4af833b38fba8a1",
+      "expression": "(http.host eq \"www.woodcuttool.com\")",
+      "target": "concat(\"https://woodcuttool.com\", http.request.uri.path)",
+      "statusCode": 301,
+      "preserveQueryString": true
+    },
+    "staticDelivery": {
+      "status": "Production deployment confirmed successful; commit had been pushed concurrently before dashboard verification",
+      "commit": "fe421a4e3a44386d89f10faeab5092114509860d",
+      "branch": "main",
+      "deploymentId": "bcdb1c29-2fa5-4b04-b461-25d082843422",
+      "deploymentUrl": "https://bcdb1c29.woodcuttool.pages.dev",
+      "dashboardSuccessTime": "2026-10-13 00:00 Asia/Shanghai",
+      "invocationRoutes": {
+        "version": 1,
+        "include": [
+          "/",
+          "/api/*",
+          "/go/*"
+        ],
+        "exclude": []
+      }
+    },
+    "fieldImprovement": "Not established: too few post-deployment RUM samples; concurrent push invalidates the attempted before/after baseline."
+  },
+  "httpChecks": [
+    {
+      "name": "static-wood",
+      "url": "https://woodcuttool.com/wood/paulownia/",
+      "metrics": {
+        "http_code": 200,
+        "time_starttransfer": 1.042126,
+        "time_total": 1.653127,
+        "size_download": 12922,
+        "url_effective": "https://woodcuttool.com/wood/paulownia/"
+      },
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "gzip",
+        "cf-ray": "a497605838140a5e-SEA"
+      }
+    },
+    {
+      "name": "static-learn",
+      "url": "https://woodcuttool.com/learn/material-substitution-approval-workflow/",
+      "metrics": {
+        "http_code": 200,
+        "time_starttransfer": 1.089405,
+        "time_total": 1.933004,
+        "size_download": 14671,
+        "url_effective": "https://woodcuttool.com/learn/material-substitution-approval-workflow/"
+      },
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "gzip",
+        "cf-ray": "a49760569f9327fb-SEA"
+      }
+    },
+    {
+      "name": "static-tool",
+      "url": "https://woodcuttool.com/crown-molding-angle-calculator/",
+      "metrics": {
+        "http_code": 200,
+        "time_starttransfer": 0.928464,
+        "time_total": 0.938757,
+        "size_download": 11156,
+        "url_effective": "https://woodcuttool.com/crown-molding-angle-calculator/"
+      },
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "gzip",
+        "cf-ray": "a49760569ce8dedc-SEA"
+      }
+    },
+    {
+      "name": "static-legal",
+      "url": "https://woodcuttool.com/legal/TileFit/privacy/",
+      "metrics": {
+        "http_code": 200,
+        "time_starttransfer": 0.876363,
+        "time_total": 0.877125,
+        "size_download": 11693,
+        "url_effective": "https://woodcuttool.com/legal/TileFit/privacy/"
+      },
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "gzip",
+        "cf-ray": "a497605d39cd573a-ATL"
+      }
+    },
+    {
+      "name": "asset",
+      "url": "https://woodcuttool.com/assets/wood-page.js",
+      "metrics": {
+        "http_code": 200,
+        "time_starttransfer": 0.872883,
+        "time_total": 1.076753,
+        "size_download": 4172,
+        "url_effective": "https://woodcuttool.com/assets/wood-page.js"
+      },
+      "headers": {
+        "content-type": "application/javascript",
+        "cache-control": "public, max-age=14400, stale-while-revalidate=86400",
+        "etag": "W/\"ef5102617b9b14e63c3b228ca32db11c\"",
+        "cf-cache-status": "HIT",
+        "content-encoding": "gzip",
+        "cf-ray": "a49760620b1e2537-SEA"
+      }
+    },
+    {
+      "name": "root",
+      "url": "https://woodcuttool.com/",
+      "metrics": {
+        "http_code": 200,
+        "time_starttransfer": 1.20421,
+        "time_total": 1.205099,
+        "size_download": 20097,
+        "url_effective": "https://woodcuttool.com/"
+      },
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "gzip",
+        "cf-ray": "a49760615e0476b2-SEA"
+      }
+    },
+    {
+      "name": "invalid-search",
+      "url": "https://woodcuttool.com/?q=%7Bsearch_term_string%7D",
+      "metrics": {
+        "http_code": 410,
+        "time_starttransfer": 1.590122,
+        "time_total": 1.590501,
+        "size_download": 41,
+        "url_effective": "https://woodcuttool.com/?q=%7Bsearch_term_string%7D"
+      },
+      "headers": {
+        "content-type": "text/plain; charset=utf-8",
+        "x-robots-tag": "noindex",
+        "cache-control": "public, max-age=86400",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4976066da237621-SEA"
+      }
+    },
+    {
+      "name": "api",
+      "url": "https://woodcuttool.com/api/conversion-event",
+      "metrics": {
+        "http_code": 204,
+        "time_starttransfer": 0.85978,
+        "time_total": 0.859968,
+        "size_download": 0,
+        "url_effective": "https://woodcuttool.com/api/conversion-event"
+      },
+      "headers": {
+        "cache-control": "no-store",
+        "x-robots-tag": "noindex",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a4976068ab769b6d-SEA"
+      }
+    },
+    {
+      "name": "api-slash",
+      "url": "https://woodcuttool.com/api/conversion-event/",
+      "metrics": {
+        "http_code": 204,
+        "time_starttransfer": 0.882618,
+        "time_total": 0.882796,
+        "size_download": 0,
+        "url_effective": "https://woodcuttool.com/api/conversion-event/"
+      },
+      "headers": {
+        "cache-control": "no-store",
+        "x-robots-tag": "noindex",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a497606abb409935-PDX"
+      }
+    },
+    {
+      "name": "go",
+      "url": "https://woodcuttool.com/go/cutlist/?source=test",
+      "metrics": {
+        "http_code": 302,
+        "time_starttransfer": 1.038018,
+        "time_total": 1.038483,
+        "size_download": 0,
+        "url_effective": "https://woodcuttool.com/go/cutlist/?source=test"
+      },
+      "headers": {
+        "location": "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871?ct=test&mt=8",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a497606d7cfef500-SEA"
+      }
+    },
+    {
+      "name": "alias",
+      "url": "https://woodcuttool.com/tools/crown-molding-angle-calculator/?source=test",
+      "metrics": {
+        "http_code": 301,
+        "time_starttransfer": 0.769135,
+        "time_total": 0.769762,
+        "size_download": 59,
+        "url_effective": "https://woodcuttool.com/tools/crown-molding-angle-calculator/?source=test"
+      },
+      "headers": {
+        "content-type": "text/plain;charset=UTF-8",
+        "location": "/crown-molding-angle-calculator/?source=test",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a497606d2d28b9bc-SEA"
+      }
+    },
+    {
+      "name": "index",
+      "url": "https://woodcuttool.com/wood/paulownia/index.html?source=test",
+      "metrics": {
+        "http_code": 301,
+        "time_starttransfer": 0.692666,
+        "time_total": 0.693116,
+        "size_download": 43,
+        "url_effective": "https://woodcuttool.com/wood/paulownia/index.html?source=test"
+      },
+      "headers": {
+        "content-type": "text/plain;charset=UTF-8",
+        "location": "/wood/paulownia/?source=test",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "a497606f2ec29b57-SEA"
+      }
+    },
+    {
+      "name": "404",
+      "url": "https://woodcuttool.com/nonexistent-lcp-test-20261013/",
+      "metrics": {
+        "http_code": 404,
+        "time_starttransfer": 2.142605,
+        "time_total": 2.143095,
+        "size_download": 1572,
+        "url_effective": "https://woodcuttool.com/nonexistent-lcp-test-20261013/"
+      },
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "no-store",
+        "cf-cache-status": "DYNAMIC",
+        "content-encoding": "gzip",
+        "cf-ray": "a49760779a8adf0d-SEA"
+      }
+    },
+    {
+      "name": "www-root",
+      "url": "https://www.woodcuttool.com/?source=test",
+      "metrics": {
+        "http_code": 301,
+        "time_starttransfer": 1.763749,
+        "time_total": 1.764503,
+        "size_download": 167,
+        "url_effective": "https://www.woodcuttool.com/?source=test"
+      },
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "location": "https://woodcuttool.com/?source=test",
+        "cf-ray": "a49760743cb19343-SEA"
+      }
+    },
+    {
+      "name": "www-page",
+      "url": "https://www.woodcuttool.com/wood/paulownia/?source=test&lang=zh",
+      "metrics": {
+        "http_code": 301,
+        "time_starttransfer": 1.073269,
+        "time_total": 2.692281,
+        "size_download": 167,
+        "url_effective": "https://www.woodcuttool.com/wood/paulownia/?source=test&lang=zh"
+      },
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "location": "https://woodcuttool.com/wood/paulownia/?source=test&lang=zh",
+        "cf-ray": "a49760763c834515-ATL"
+      }
+    },
+    {
+      "name": "www-asset",
+      "url": "https://www.woodcuttool.com/assets/wood-page.js?source=test",
+      "metrics": {
+        "http_code": 301,
+        "time_starttransfer": 0.638098,
+        "time_total": 0.638449,
+        "size_download": 167,
+        "url_effective": "https://www.woodcuttool.com/assets/wood-page.js?source=test"
+      },
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "location": "https://woodcuttool.com/assets/wood-page.js?source=test",
+        "cf-ray": "a497607dd87fff03-PDX"
+      }
+    },
+    {
+      "name": "www-api",
+      "url": "https://www.woodcuttool.com/api/conversion-event?source=test",
+      "metrics": {
+        "http_code": 301,
+        "time_starttransfer": 0.631561,
+        "time_total": 0.631908,
+        "size_download": 167,
+        "url_effective": "https://www.woodcuttool.com/api/conversion-event?source=test"
+      },
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "location": "https://woodcuttool.com/api/conversion-event?source=test",
+        "cf-ray": "a497607f8881e5c0-PDX"
+      }
+    },
+    {
+      "name": "www-go",
+      "url": "https://www.woodcuttool.com/go/cutlist/?source=test",
+      "metrics": {
+        "http_code": 301,
+        "time_starttransfer": 1.94535,
+        "time_total": 1.947293,
+        "size_download": 167,
+        "url_effective": "https://www.woodcuttool.com/go/cutlist/?source=test"
+      },
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "location": "https://woodcuttool.com/go/cutlist/?source=test",
+        "cf-ray": "a497608a6a0d091b-SEA"
+      }
+    },
+    {
+      "name": "http-www",
+      "url": "http://www.woodcuttool.com/wood/paulownia/?source=test",
+      "metrics": {
+        "http_code": 301,
+        "time_starttransfer": 0.39279,
+        "time_total": 0.393045,
+        "size_download": 167,
+        "url_effective": "http://www.woodcuttool.com/wood/paulownia/?source=test"
+      },
+      "headers": {
+        "content-type": "text/html; charset=UTF-8",
+        "location": "https://woodcuttool.com/wood/paulownia/?source=test",
+        "cf-ray": "a4976081ecad9ce6-SEA"
+      }
+    }
+  ],
+  "conditionalAsset": {
+    "status": 304,
+    "downloadedBytes": 0
+  },
+  "deployedPaulowniaMatchesRepository": true,
+  "deployedPaulowniaSha256": "71bd466d49ad7c6a829926761378dba7c068b7ce0462f85a8315cf220b8202f3",
+  "browserQa": {
+    "responsiveChecks": 24,
+    "responsivePreloadChecks": 9,
+    "calculatorEdit": true,
+    "homePreset": true,
+    "blogSearch": true,
+    "languageSwitch": true,
+    "noScript": [
+      {
+        "route": "/",
+        "size": "64px"
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "size": "64px"
+      },
+      {
+        "route": "/cabinet-cut-list-calculator/",
+        "size": "64px"
+      },
+      {
+        "route": "/shelf-spacing-calculator/",
+        "size": "64px"
+      },
+      {
+        "route": "/roof-pitch-calculator/",
+        "size": "64px"
+      },
+      {
+        "route": "/blog/",
+        "size": "51.2px"
+      }
+    ],
+    "errors": []
+  },
+  "mobile": {
+    "scope": "https://woodcuttool.com; en language, 390x844 at 1x DPR, cold cache, 4x CPU, 150ms configured latency, 200KB/s download. Synthetic evidence, not production RUM.",
+    "origin": "https://woodcuttool.com",
+    "routes": [
+      "/",
+      "/wood/paulownia/",
+      "/learn/material-substitution-approval-workflow/",
+      "/crown-molding-angle-calculator/"
+    ],
+    "runs": 3,
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "lcp": 1216,
+        "lcpElement": "h1",
+        "lcpUrl": "",
+        "lcpSize": 51330,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 1041.2999999523163,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 174.70000004768372
+        },
+        "fcp": 1216,
+        "ttfb": 1041.2999999523163,
+        "htmlDownload": 198.4000000357628,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 587.5999999642372,
+          "requestWait": 453,
+          "responseEnd": 1239.699999988079
+        },
+        "domReady": 2004.5,
+        "load": 2007.0999999642372,
+        "htmlTransfer": 21095,
+        "resourceTransfer": 23067,
+        "cssJsTransfer": 21061,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 682,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/wood/paulownia/",
+        "run": 1,
+        "lcp": 444,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 34254,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 348.30000001192093,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 95.69999998807907
+        },
+        "fcp": 444,
+        "ttfb": 348.30000001192093,
+        "htmlDownload": 66.80000001192093,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 347.4000000357628,
+          "responseEnd": 415.10000002384186
+        },
+        "domReady": 837.8999999761581,
+        "load": 1244.699999988079,
+        "htmlTransfer": 13215,
+        "resourceTransfer": 10623,
+        "cssJsTransfer": 8617,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 301,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/learn/material-substitution-approval-workflow/",
+        "run": 1,
+        "lcp": 568,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 105561,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 434.19999998807907,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 133.80000001192093
+        },
+        "fcp": 568,
+        "ttfb": 434.19999998807907,
+        "htmlDownload": 93.40000003576279,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 433.19999998807907,
+          "responseEnd": 527.6000000238419
+        },
+        "domReady": 1061.699999988079,
+        "load": 1530.1000000238419,
+        "htmlTransfer": 15011,
+        "resourceTransfer": 41001,
+        "cssJsTransfer": 18899,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 314,
+        "horizontalOverflow": 0,
+        "longTaskCount": 1,
+        "longTaskTotal": 51,
+        "longTaskMax": 51
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 1,
+        "lcp": 1224,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/tools/tools-measurement-480.webp",
+        "lcpSize": 94696,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 389,
+          "resourceLoadDelay": 23.5,
+          "resourceLoadDuration": 794.3999999761581,
+          "elementRenderDelay": 17.100000023841858
+        },
+        "fcp": 520,
+        "ttfb": 389,
+        "htmlDownload": 67.19999998807907,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 388.19999998807907,
+          "responseEnd": 456.19999998807907
+        },
+        "domReady": 1172.199999988079,
+        "load": 1375.0999999642372,
+        "htmlTransfer": 11441,
+        "resourceTransfer": 57318,
+        "cssJsTransfer": 29474,
+        "imageTransfer": 1194,
+        "resourceCount": 9,
+        "domNodes": 250,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "lcp": 740,
+        "lcpElement": "h1",
+        "lcpUrl": "",
+        "lcpSize": 51330,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 416.7000000476837,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 323.2999999523163
+        },
+        "fcp": 740,
+        "ttfb": 416.7000000476837,
+        "htmlDownload": 302.0999999642372,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 415.9000000357628,
+          "responseEnd": 718.8000000119209
+        },
+        "domReady": 1202.6000000238419,
+        "load": 1457.5,
+        "htmlTransfer": 21095,
+        "resourceTransfer": 23067,
+        "cssJsTransfer": 21061,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 682,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/wood/paulownia/",
+        "run": 2,
+        "lcp": 420,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 34254,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 310.10000002384186,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 109.89999997615814
+        },
+        "fcp": 420,
+        "ttfb": 310.10000002384186,
+        "htmlDownload": 76,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 309.19999998807907,
+          "responseEnd": 386.10000002384186
+        },
+        "domReady": 777.9000000357628,
+        "load": 1108.800000011921,
+        "htmlTransfer": 13213,
+        "resourceTransfer": 10623,
+        "cssJsTransfer": 8617,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 301,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/learn/material-substitution-approval-workflow/",
+        "run": 2,
+        "lcp": 508,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 105561,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 375.60000002384186,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 132.39999997615814
+        },
+        "fcp": 508,
+        "ttfb": 375.60000002384186,
+        "htmlDownload": 82.39999997615814,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 374.19999998807907,
+          "responseEnd": 458
+        },
+        "domReady": 999.8000000119209,
+        "load": 1218.4000000357628,
+        "htmlTransfer": 15011,
+        "resourceTransfer": 41001,
+        "cssJsTransfer": 18899,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 314,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 2,
+        "lcp": 1132,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/tools/tools-measurement-480.webp",
+        "lcpSize": 94696,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 377.19999998807907,
+          "resourceLoadDelay": 16.899999976158142,
+          "resourceLoadDuration": 640,
+          "elementRenderDelay": 97.90000003576279
+        },
+        "fcp": 496,
+        "ttfb": 377.19999998807907,
+        "htmlDownload": 57.69999998807907,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 376.19999998807907,
+          "responseEnd": 434.89999997615814
+        },
+        "domReady": 1059.699999988079,
+        "load": 1316.699999988079,
+        "htmlTransfer": 11441,
+        "resourceTransfer": 57318,
+        "cssJsTransfer": 29474,
+        "imageTransfer": 1194,
+        "resourceCount": 9,
+        "domNodes": 250,
+        "horizontalOverflow": 0,
+        "longTaskCount": 1,
+        "longTaskTotal": 66,
+        "longTaskMax": 66
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "lcp": 500,
+        "lcpElement": "h1",
+        "lcpUrl": "",
+        "lcpSize": 51330,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 314.89999997615814,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 185.10000002384186
+        },
+        "fcp": 500,
+        "ttfb": 314.89999997615814,
+        "htmlDownload": 135.19999998807907,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 314.19999998807907,
+          "responseEnd": 450.0999999642372
+        },
+        "domReady": 939.5999999642372,
+        "load": 1149.699999988079,
+        "htmlTransfer": 21095,
+        "resourceTransfer": 23067,
+        "cssJsTransfer": 21061,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 682,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/wood/paulownia/",
+        "run": 3,
+        "lcp": 400,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 34254,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 304.5999999642372,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 95.40000003576279
+        },
+        "fcp": 400,
+        "ttfb": 304.5999999642372,
+        "htmlDownload": 69.20000004768372,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 303.89999997615814,
+          "responseEnd": 373.80000001192093
+        },
+        "domReady": 752.3000000119209,
+        "load": 1571,
+        "htmlTransfer": 13209,
+        "resourceTransfer": 10623,
+        "cssJsTransfer": 8617,
+        "imageTransfer": 1194,
+        "resourceCount": 7,
+        "domNodes": 301,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/learn/material-substitution-approval-workflow/",
+        "run": 3,
+        "lcp": 548,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 105561,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 426.19999998807907,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 121.80000001192093
+        },
+        "fcp": 548,
+        "ttfb": 426.19999998807907,
+        "htmlDownload": 78.90000003576279,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 424.69999998807907,
+          "responseEnd": 505.10000002384186
+        },
+        "domReady": 1057,
+        "load": 1289.699999988079,
+        "htmlTransfer": 15011,
+        "resourceTransfer": 41001,
+        "cssJsTransfer": 18899,
+        "imageTransfer": 1194,
+        "resourceCount": 8,
+        "domNodes": 314,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 3,
+        "lcp": 1176,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/tools/tools-measurement-480.webp",
+        "lcpSize": 94696,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 323.0999999642372,
+          "resourceLoadDelay": 21.5,
+          "resourceLoadDuration": 764.9000000357628,
+          "elementRenderDelay": 66.5
+        },
+        "fcp": 460,
+        "ttfb": 323.0999999642372,
+        "htmlDownload": 66.30000001192093,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 322.2999999523163,
+          "responseEnd": 389.39999997615814
+        },
+        "domReady": 1104.199999988079,
+        "load": 1350.300000011921,
+        "htmlTransfer": 11441,
+        "resourceTransfer": 57318,
+        "cssJsTransfer": 29474,
+        "imageTransfer": 1194,
+        "resourceCount": 9,
+        "domNodes": 250,
+        "horizontalOverflow": 0,
+        "longTaskCount": 1,
+        "longTaskTotal": 66,
+        "longTaskMax": 66
+      }
+    ]
+  },
+  "desktop": {
+    "scope": "https://woodcuttool.com; en language, 1440x900 at 1x DPR, cold cache, 4x CPU, 150ms configured latency, 200KB/s download. Synthetic evidence, not production RUM.",
+    "origin": "https://woodcuttool.com",
+    "routes": [
+      "/crown-molding-angle-calculator/",
+      "/learn/material-substitution-approval-workflow/",
+      "/learn/sheet-good-edge-quality-acceptance/",
+      "/learn/cabinet-back-construction-dimension-guide/"
+    ],
+    "runs": 3,
+    "rows": [
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 1,
+        "lcp": 1276,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/tools/tools-measurement-800.webp",
+        "lcpSize": 169328,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 336.2999999523163,
+          "resourceLoadDelay": 21.600000023841858,
+          "resourceLoadDuration": 906.8000000119209,
+          "elementRenderDelay": 11.300000011920929
+        },
+        "fcp": 468,
+        "ttfb": 336.2999999523163,
+        "htmlDownload": 64.90000003576279,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 335.2999999523163,
+          "responseEnd": 401.19999998807907
+        },
+        "domReady": 1243.2999999523163,
+        "load": 1477,
+        "htmlTransfer": 11441,
+        "resourceTransfer": 81080,
+        "cssJsTransfer": 29474,
+        "imageTransfer": 1194,
+        "resourceCount": 9,
+        "domNodes": 250,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/learn/material-substitution-approval-workflow/",
+        "run": 1,
+        "lcp": 1572,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/woodworking/wood-02-cabinet-hardware.webp",
+        "lcpSize": 287357,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 465.60000002384186,
+          "resourceLoadDelay": 14.699999988079071,
+          "resourceLoadDuration": 1084,
+          "elementRenderDelay": 7.699999988079071
+        },
+        "fcp": 588,
+        "ttfb": 465.60000002384186,
+        "htmlDownload": 78.59999996423721,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 464.80000001192093,
+          "responseEnd": 544.1999999880791
+        },
+        "domReady": 1478.9000000357628,
+        "load": 1859,
+        "htmlTransfer": 15011,
+        "resourceTransfer": 111973,
+        "cssJsTransfer": 18899,
+        "imageTransfer": 33754,
+        "resourceCount": 9,
+        "domNodes": 314,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/learn/sheet-good-edge-quality-acceptance/",
+        "run": 1,
+        "lcp": 1556,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/woodworking/wood-08-edge-banding.webp",
+        "lcpSize": 308390,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 337.5,
+          "resourceLoadDelay": 212,
+          "resourceLoadDuration": 997.3000000119209,
+          "elementRenderDelay": 9.199999988079071
+        },
+        "fcp": 668,
+        "ttfb": 337.5,
+        "htmlDownload": 279,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 336.60000002384186,
+          "responseEnd": 616.5
+        },
+        "domReady": 1108.1000000238419,
+        "load": 2004.6000000238419,
+        "htmlTransfer": 15073,
+        "resourceTransfer": 116835,
+        "cssJsTransfer": 18899,
+        "imageTransfer": 59702,
+        "resourceCount": 9,
+        "domNodes": 315,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/learn/cabinet-back-construction-dimension-guide/",
+        "run": 1,
+        "lcp": 1476,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/woodworking/wood-02-cabinet-hardware.webp",
+        "lcpSize": 271488,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 523.1000000238419,
+          "resourceLoadDelay": 86.19999998807907,
+          "resourceLoadDuration": 830.8000000119209,
+          "elementRenderDelay": 35.89999997615814
+        },
+        "fcp": 712,
+        "ttfb": 523.1000000238419,
+        "htmlDownload": 144.89999997615814,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 522.3999999761581,
+          "responseEnd": 668
+        },
+        "domReady": 1613.2000000476837,
+        "load": 1851.800000011921,
+        "htmlTransfer": 14811,
+        "resourceTransfer": 111973,
+        "cssJsTransfer": 18899,
+        "imageTransfer": 33754,
+        "resourceCount": 9,
+        "domNodes": 316,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 2,
+        "lcp": 1084,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/tools/tools-measurement-800.webp",
+        "lcpSize": 169328,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 360.5999999642372,
+          "resourceLoadDelay": 13.400000035762787,
+          "resourceLoadDuration": 700.5999999642372,
+          "elementRenderDelay": 9.400000035762787
+        },
+        "fcp": 472,
+        "ttfb": 360.5999999642372,
+        "htmlDownload": 53.90000003576279,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 359.69999998807907,
+          "responseEnd": 414.5
+        },
+        "domReady": 1264,
+        "load": 1467.8999999761581,
+        "htmlTransfer": 11441,
+        "resourceTransfer": 81080,
+        "cssJsTransfer": 29474,
+        "imageTransfer": 1194,
+        "resourceCount": 9,
+        "domNodes": 250,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/learn/material-substitution-approval-workflow/",
+        "run": 2,
+        "lcp": 1312,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/woodworking/wood-02-cabinet-hardware.webp",
+        "lcpSize": 287357,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 339,
+          "resourceLoadDelay": 79.30000001192093,
+          "resourceLoadDuration": 883.3999999761581,
+          "elementRenderDelay": 10.300000011920929
+        },
+        "fcp": 524,
+        "ttfb": 339,
+        "htmlDownload": 146.69999998807907,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 338.19999998807907,
+          "responseEnd": 485.69999998807907
+        },
+        "domReady": 1325.5,
+        "load": 1612.800000011921,
+        "htmlTransfer": 15011,
+        "resourceTransfer": 111973,
+        "cssJsTransfer": 18899,
+        "imageTransfer": 33754,
+        "resourceCount": 9,
+        "domNodes": 314,
+        "horizontalOverflow": 0,
+        "longTaskCount": 1,
+        "longTaskTotal": 52,
+        "longTaskMax": 52
+      },
+      {
+        "route": "/learn/sheet-good-edge-quality-acceptance/",
+        "run": 2,
+        "lcp": 1184,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/woodworking/wood-08-edge-banding.webp",
+        "lcpSize": 308390,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 383.9000000357628,
+          "resourceLoadDelay": 60.59999996423721,
+          "resourceLoadDuration": 675,
+          "elementRenderDelay": 64.5
+        },
+        "fcp": 548,
+        "ttfb": 383.9000000357628,
+        "htmlDownload": 127.59999996423721,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 383,
+          "responseEnd": 511.5
+        },
+        "domReady": 1165.1000000238419,
+        "load": 1645.7000000476837,
+        "htmlTransfer": 15073,
+        "resourceTransfer": 116835,
+        "cssJsTransfer": 18899,
+        "imageTransfer": 59702,
+        "resourceCount": 9,
+        "domNodes": 315,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/learn/cabinet-back-construction-dimension-guide/",
+        "run": 2,
+        "lcp": 1336,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/woodworking/wood-02-cabinet-hardware.webp",
+        "lcpSize": 271488,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 338.4000000357628,
+          "resourceLoadDelay": 51,
+          "resourceLoadDuration": 937.0999999642372,
+          "elementRenderDelay": 9.5
+        },
+        "fcp": 504,
+        "ttfb": 338.4000000357628,
+        "htmlDownload": 110.80000001192093,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 337.60000002384186,
+          "responseEnd": 449.2000000476837
+        },
+        "domReady": 1289,
+        "load": 1525.800000011921,
+        "htmlTransfer": 14811,
+        "resourceTransfer": 111973,
+        "cssJsTransfer": 18899,
+        "imageTransfer": 33754,
+        "resourceCount": 9,
+        "domNodes": 316,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/crown-molding-angle-calculator/",
+        "run": 3,
+        "lcp": 1128,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/tools/tools-measurement-800.webp",
+        "lcpSize": 169328,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 314.89999997615814,
+          "resourceLoadDelay": 31.5,
+          "resourceLoadDuration": 755.9000000357628,
+          "elementRenderDelay": 25.69999998807907
+        },
+        "fcp": 460,
+        "ttfb": 314.89999997615814,
+        "htmlDownload": 74.60000002384186,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 313.69999998807907,
+          "responseEnd": 389.5
+        },
+        "domReady": 1101.5,
+        "load": 1307.3999999761581,
+        "htmlTransfer": 11441,
+        "resourceTransfer": 81080,
+        "cssJsTransfer": 29474,
+        "imageTransfer": 1194,
+        "resourceCount": 9,
+        "domNodes": 250,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/learn/material-substitution-approval-workflow/",
+        "run": 3,
+        "lcp": 1156,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/woodworking/wood-02-cabinet-hardware.webp",
+        "lcpSize": 287357,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 307.89999997615814,
+          "resourceLoadDelay": 41.19999998807907,
+          "resourceLoadDuration": 793.4000000357628,
+          "elementRenderDelay": 13.5
+        },
+        "fcp": 460,
+        "ttfb": 307.89999997615814,
+        "htmlDownload": 108.10000002384186,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 307,
+          "responseEnd": 416
+        },
+        "domReady": 1068.3999999761581,
+        "load": 1368,
+        "htmlTransfer": 15011,
+        "resourceTransfer": 111973,
+        "cssJsTransfer": 18899,
+        "imageTransfer": 33754,
+        "resourceCount": 9,
+        "domNodes": 314,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/learn/sheet-good-edge-quality-acceptance/",
+        "run": 3,
+        "lcp": 1112,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/woodworking/wood-08-edge-banding.webp",
+        "lcpSize": 308390,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 295.39999997615814,
+          "resourceLoadDelay": 30.100000023841858,
+          "resourceLoadDuration": 733.8999999761581,
+          "elementRenderDelay": 52.60000002384186
+        },
+        "fcp": 440,
+        "ttfb": 295.39999997615814,
+        "htmlDownload": 97,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 294.0999999642372,
+          "responseEnd": 392.39999997615814
+        },
+        "domReady": 1099.5,
+        "load": 1383.8999999761581,
+        "htmlTransfer": 15073,
+        "resourceTransfer": 116835,
+        "cssJsTransfer": 18899,
+        "imageTransfer": 59702,
+        "resourceCount": 9,
+        "domNodes": 315,
+        "horizontalOverflow": 0,
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0
+      },
+      {
+        "route": "/learn/cabinet-back-construction-dimension-guide/",
+        "run": 3,
+        "lcp": 1272,
+        "lcpElement": "img",
+        "lcpUrl": "https://woodcuttool.com/assets/images/woodworking/wood-02-cabinet-hardware.webp",
+        "lcpSize": 271488,
+        "cls": 0,
+        "lcpBreakdown": {
+          "ttfb": 307.89999997615814,
+          "resourceLoadDelay": 19.30000001192093,
+          "resourceLoadDuration": 935.1999999880791,
+          "elementRenderDelay": 9.600000023841858
+        },
+        "fcp": 436,
+        "ttfb": 307.89999997615814,
+        "htmlDownload": 85.10000002384186,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "requestWait": 307.19999998807907,
+          "responseEnd": 393
+        },
+        "domReady": 1113.8999999761581,
+        "load": 1413.199999988079,
+        "htmlTransfer": 14811,
+        "resourceTransfer": 111973,
+        "cssJsTransfer": 18899,
+        "imageTransfer": 33754,
+        "resourceCount": 9,
+        "domNodes": 316,
+        "horizontalOverflow": 0,
+        "longTaskCount": 1,
+        "longTaskTotal": 52,
+        "longTaskMax": 52
+      }
+    ]
+  }
+}
