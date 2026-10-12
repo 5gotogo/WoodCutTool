@@ -1,4 +1,5 @@
-https://www.woodcuttool.com/* https://woodcuttool.com/:splat 301
+# Canonical www redirect must be deployed as a zone Redirect Rule.
+# Pages _redirects accepts relative source paths, not domain-level matches.
 /tools/fence-calculator/ /fence-calculator/ 301
 /tools/deck-calculator/ /deck-calculator/ 301
 /tools/roof-pitch-calculator/ /roof-pitch-calculator/ 301
@@ -27,7 +28,6 @@ https://www.woodcuttool.com/* https://woodcuttool.com/:splat 301
 /apps/receipt/ /apps/snapreceipt-expenses-and-tax/ 301
 /apps/receipt/index.html /apps/snapreceipt-expenses-and-tax/ 301
 /index.html / 301
-/*/index.html /:splat/ 301
 /apps/cutlist-plywood-optimizer/ /apps/cutlist/ 301
 /apps/quiltfit-quilt-design-planner/ /apps/quiltfit/ 301
 /apps/stringer-stair-layout/ /apps/stringer/ 301
@@ -60,3 +60,4 @@ https://www.woodcuttool.com/* https://woodcuttool.com/:splat 301
 /blog/common-cabinet-cut-list-mistakes/ /blog/cabinet-cut-list-mistakes/ 301
 /blog/reducing-sheet-good-waste-in-a-small-woodworking-shop/ /blog/reducing-sheet-good-waste-on-small-shops/ 301
 /blog/cutlist-apps-vs-spreadsheets-for-cabinet-makers/ /blog/cutlist-vs-spreadsheets-for-cabinetmakers/ 301
+/*/index.html /:splat/ 301

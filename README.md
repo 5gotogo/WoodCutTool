@@ -57,8 +57,8 @@ Use these settings when connecting the GitHub repository:
 The repository includes:
 
 - `_headers` for security and cache headers.
-- `_routes.json` excludes static assets and crawl files from Functions. HTML still runs the middleware for canonical-domain redirects and the invalid search-template 410; API and CutList redirect routes retain their handlers.
-- `_redirects` for `www` to apex domain and canonical `index.html` redirects.
+- `_routes.json` invokes Functions only for `/`, `/api/*`, and `/go/*`. All other HTML and resources use Pages' static delivery and built-in caching. The homepage retains the invalid search-template 410; API and CutList redirects retain their handlers.
+- `_redirects` for legacy paths and canonical `index.html` redirects. The zone Redirect Rule handles `www` to apex before static delivery. **Deploy that rule before publishing the narrowed Functions routes**, following [the delivery migration](docs/static-delivery-lcp-2026-10-12.md). Domain-level source URLs are unsupported in `_redirects`.
 - `wrangler.toml` for direct `wrangler pages deploy` compatibility.
 
 ## Focused plywood runtime

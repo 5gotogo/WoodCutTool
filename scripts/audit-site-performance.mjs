@@ -11,6 +11,8 @@ const cdpPort = Number(args["cdp-port"] || process.env.WCT_CDP_PORT || 9337);
 const runs = Math.max(1, Number(args.runs || process.env.WCT_PERF_RUNS || 3));
 const deviceScaleFactor = Math.max(1, Number(args.dpr || process.env.WCT_PERF_DPR || 1));
 const language = args.lang || "en";
+const viewportWidth = Math.max(320, Number(args.width || 390));
+const viewportHeight = Math.max(400, Number(args.height || 844));
 const routes = (args.routes || process.env.WCT_PERF_ROUTES || [
   "/",
   "/blog/",
@@ -81,7 +83,7 @@ async function waitForReady() {
 await send("Page.enable");
 await send("Network.enable");
 await send("Network.setCacheDisabled", { cacheDisabled: true });
-await send("Emulation.setDeviceMetricsOverride", { width: 390, height: 844, deviceScaleFactor, mobile: true });
+await send("Emulation.setDeviceMetricsOverride", { width: viewportWidth, height: viewportHeight, deviceScaleFactor, mobile: viewportWidth < 980 });
 await send("Emulation.setCPUThrottlingRate", { rate: 4 });
 await send("Network.emulateNetworkConditions", {
   offline: false,
@@ -93,10 +95,12 @@ await send("Network.emulateNetworkConditions", {
 await send("Page.addScriptToEvaluateOnNewDocument", {
   source: `
     try { localStorage.setItem("woodcuttool-lang", ${JSON.stringify(language)}); } catch {}
-    window.__wctPerformance = { lcp: 0, lcpElement: "", cls: 0, longTasks: [] };
+    window.__wctPerformance = { lcp: 0, lcpElement: "", lcpUrl: "", lcpSize: 0, cls: 0, longTasks: [] };
     new PerformanceObserver((list) => {
       for (const entry of list.getEntries()) {
         window.__wctPerformance.lcp = entry.startTime;
+        window.__wctPerformance.lcpUrl = entry.url || "";
+        window.__wctPerformance.lcpSize = entry.size;
         const element = entry.element;
         window.__wctPerformance.lcpElement = element
           ? [element.tagName.toLowerCase(), element.id ? "#" + element.id : "", element.className ? "." + String(element.className).trim().replace(/\\s+/g, ".") : ""].join("")
@@ -129,15 +133,40 @@ try {
         const resources = performance.getEntriesByType("resource").map((entry) => ({
           path: new URL(entry.name).pathname,
           type: entry.initiatorType,
+          start: entry.startTime,
+          responseStart: entry.responseStart,
+          responseEnd: entry.responseEnd,
           transfer: entry.transferSize,
           encoded: entry.encodedBodySize,
           duration: entry.duration,
         }));
+        const lcpResource = performance.getEntriesByType("resource").find(entry => entry.name === window.__wctPerformance.lcpUrl);
+        const ttfb = navigation?.responseStart || 0;
+        // Use the web.dev four-phase definition. Text has no resource phases;
+        // its post-TTFB time includes HTML download and layout/paint work.
+        // A preload can start before responseStart, so keep phases nonnegative.
+        const loadStart = lcpResource ? Math.max(ttfb, lcpResource.startTime) : ttfb;
+        const loadEnd = lcpResource ? Math.max(loadStart, lcpResource.responseEnd) : ttfb;
+        const breakdown = {
+          ttfb,
+          resourceLoadDelay: loadStart - ttfb,
+          resourceLoadDuration: loadEnd - loadStart,
+          elementRenderDelay: Math.max(0, window.__wctPerformance.lcp - loadEnd),
+        };
         const longTasks = window.__wctPerformance.longTasks;
         return {
           ...window.__wctPerformance,
+          lcpBreakdown: breakdown,
           fcp: paint["first-contentful-paint"] || 0,
           ttfb: navigation?.responseStart || 0,
+          htmlDownload: navigation ? navigation.responseEnd - navigation.responseStart : 0,
+          navigationTiming: navigation ? {
+            redirect: navigation.redirectEnd - navigation.redirectStart,
+            dns: navigation.domainLookupEnd - navigation.domainLookupStart,
+            connection: navigation.connectEnd - navigation.connectStart,
+            requestWait: navigation.responseStart - navigation.requestStart,
+            responseEnd: navigation.responseEnd,
+          } : null,
           domReady: navigation?.domContentLoadedEventEnd || 0,
           load: navigation?.loadEventEnd || 0,
           htmlTransfer: navigation?.transferSize || 0,
@@ -185,7 +214,7 @@ try {
   }
 
   writeFileSync(output, `${JSON.stringify({
-    scope: `Gzip preview; ${language} language, 390x844 at ${deviceScaleFactor}x DPR, cold cache, 4x CPU, 150ms latency, 200KB/s download. Synthetic evidence, not production RUM.`,
+    scope: `${origin}; ${language} language, ${viewportWidth}x${viewportHeight} at ${deviceScaleFactor}x DPR, cold cache, 4x CPU, 150ms configured latency, 200KB/s download. Synthetic evidence, not production RUM.`,
     origin,
     routes,
     runs,

@@ -1,4 +1,6 @@
 export async function onRequest(context) {
+  // _routes.json limits this middleware to the homepage and dynamic endpoints.
+  // Static pages use Pages delivery; www redirects at the zone edge.
   const url = new URL(context.request.url);
 
   if (url.hostname === "www.woodcuttool.com") {

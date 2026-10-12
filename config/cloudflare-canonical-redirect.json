@@ -1,0 +1,22 @@
+{
+  "name": "WoodCutTool canonical domain",
+  "kind": "zone",
+  "phase": "http_request_dynamic_redirect",
+  "rules": [
+    {
+      "description": "WoodCutTool canonical www to apex",
+      "expression": "(http.host eq \"www.woodcuttool.com\")",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "status_code": 301,
+          "target_url": {
+            "expression": "concat(\"https://woodcuttool.com\", http.request.uri.path)"
+          },
+          "preserve_query_string": true
+        }
+      },
+      "enabled": true
+    }
+  ]
+}

@@ -19,8 +19,35 @@ for (const file of readdirSync(new URL("../functions", import.meta.url), { recur
   const path = "/" + file.replace(/\.js$/, "");
   assert(invokes(path) && invokes(path + "/"), path);
 }
-for (const path of ["/", "/wood/oak/", "/blog/", "/learn/sheet-good-edge-quality-acceptance/", "/crown-molding-angle-calculator/", "/404.html"]) {
-  assert.equal(invokes(path), true, `Keep HTML canonical redirect middleware: ${path}`);
+// Every generated page except the root must be served without a Function.
+// Keep this exhaustive so new page families cannot regress to worker delivery.
+const root = new URL("../", import.meta.url);
+let staticPages = 0;
+for (const file of readdirSync(root, { recursive: true })) {
+  if (!file.endsWith(".html") || /^(?:node_modules|\.git|\.codex|\.agents)\//.test(file)) continue;
+  const path = file === "index.html" ? "/" : "/" + file.replace(/index\.html$/, "");
+  assert.equal(invokes(path), path === "/", path);
+  if (path !== "/") staticPages++;
+}
+const redirects = readFileSync(new URL("../_redirects", import.meta.url), "utf8")
+  .split("\n").map(line => line.trim()).filter(line => line && !line.startsWith("#"));
+assert(redirects.every(line => line.split(/\s+/)[0].startsWith("/")), "Pages does not support domain-level redirect sources");
+const edgeRedirect = JSON.parse(readFileSync(new URL("../config/cloudflare-canonical-redirect.json", import.meta.url), "utf8"));
+assert.equal(edgeRedirect.phase, "http_request_dynamic_redirect");
+const [canonical] = edgeRedirect.rules;
+assert.equal(canonical.expression, '(http.host eq "www.woodcuttool.com")');
+assert.equal(canonical.action, "redirect");
+assert.equal(canonical.enabled, true);
+assert.deepEqual(canonical.action_parameters.from_value, {
+  status_code: 301,
+  target_url: { expression: 'concat("https://woodcuttool.com", http.request.uri.path)' },
+  preserve_query_string: true,
+});
+assert(redirects.includes("/index.html / 301"));
+assert(redirects.includes("/*/index.html /:splat/ 301"));
+assert(readFileSync(new URL("../404.html", import.meta.url), "utf8").includes("<title>"), "Keep a real 404 instead of Pages SPA fallback");
+for (const path of ["/", "/api/conversion-event", "/go/cutlist/"]) {
+  assert.equal(invokes(path), true, `Keep dynamic middleware: ${path}`);
   const response = await onRequest({ request: new Request(`https://www.woodcuttool.com${path}?source=test`), next() { throw new Error("www must redirect before static handling"); } });
   assert.equal(response.status, 301);
   assert.equal(response.headers.get("location"), `https://woodcuttool.com${path}?source=test`);
@@ -30,4 +57,4 @@ assert.equal(invalid.status, 410);
 assert.equal(invalid.headers.get("x-robots-tag"), "noindex");
 const sentinel = new Response("static HTML");
 assert.equal(await onRequest({ request: new Request("https://woodcuttool.com/wood/oak/"), next: () => sentinel }), sentinel);
-console.log("Pages routing guards passed: static resources bypass Functions; HTML canonical redirects, template 410 and endpoint invocation remain.");
+console.log(`Pages routing guards passed: ${staticPages} HTML paths and static resources bypass Functions; edge redirect manifest, dynamic www redirects, template 410 and endpoint invocation validated.`);
