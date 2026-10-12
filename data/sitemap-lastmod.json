@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-10-10",
-    "hash": "248f02bda99996e7c3f1a76d8fcc1a2e048ed042719c7ba6033a479cc595b041",
+    "lastmod": "2026-10-12",
+    "hash": "9fc2d9c167c469381debc980c39f7f0035d9e7fc8046a50c6232b1e1d99ff1e9",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -780,8 +780,8 @@
     "hashVersion": 2
   },
   "/apps/expensereportmaker-and-receipts/": {
-    "lastmod": "2026-10-08",
-    "hash": "a4ad5c1caf23a3d9960ac32def38f403c9bd1b7bb8fe2e404a86a3e706d37958",
+    "lastmod": "2026-10-12",
+    "hash": "04adc3cd9725e821d306224321f36ba10588d517d0091a93c4911e76a3e79488",
     "hashVersion": 2
   },
   "/apps/export-backup-all-contacts-pro/": {
@@ -815,13 +815,13 @@
     "hashVersion": 2
   },
   "/apps/invoice-maker-estimate-pdf/": {
-    "lastmod": "2026-10-08",
-    "hash": "4b4141aab628d053816a5095a2025107995d4ee2c75da88ee3a1b4c52d054d27",
+    "lastmod": "2026-10-12",
+    "hash": "12ff17591ceb990f259ae1e756cb10cf3de95a11f41208c5281656309a7274ba",
     "hashVersion": 2
   },
   "/apps/jobphotolog-work-reports/": {
-    "lastmod": "2026-10-08",
-    "hash": "86c47f924d0fbd408457eb113ae92b6caabc784373fc75ed835696c0f962fb46",
+    "lastmod": "2026-10-12",
+    "hash": "62e0059a65317dc5f857b0d43856923e88ea08e5049e21f38061ac5cd7d41c5a",
     "hashVersion": 2
   },
   "/apps/magnifier-reader-big-text/": {
@@ -830,8 +830,8 @@
     "hashVersion": 2
   },
   "/apps/marketvendor-sales-and-profit/": {
-    "lastmod": "2026-10-08",
-    "hash": "3e9f34913e9df467b562dbf0dae676a6a0f07f0138740ddbb193ce97a7ce51ff",
+    "lastmod": "2026-10-12",
+    "hash": "b874d99a95b392a2b3babac06e09da9b30dae5afb439790efca7a2e617670276",
     "hashVersion": 2
   },
   "/apps/mindnest-secret-journal/": {
@@ -862,6 +862,11 @@
   "/apps/pickone-random-choice-picker/": {
     "lastmod": "2026-10-08",
     "hash": "4af5885a066b25fcc6f449efc5385cdfdf6ea236c5c5df823551e4aa6ba826a3",
+    "hashVersion": 2
+  },
+  "/apps/poolpilot-pool-service-log/": {
+    "lastmod": "2026-10-12",
+    "hash": "5e3f0a46094a22f3dc225b5c3c7e4f94d99e7b5d757452b2c6cea5cc12ed66c5",
     "hashVersion": 2
   },
   "/apps/printer-app-print-pdf-docs/": {
@@ -905,13 +910,13 @@
     "hashVersion": 2
   },
   "/apps/snapreceipt-expenses-and-tax/": {
-    "lastmod": "2026-10-08",
-    "hash": "796a37cfc8980669f3c5f1dd0d97b58872dbb31591cb1dfa2810fea271e2f941",
+    "lastmod": "2026-10-12",
+    "hash": "44232f9b629eb5bfdecbe3e3d642bf105726c93231a75dc933003875885812ff",
     "hashVersion": 2
   },
   "/apps/snapstock-inventory-scanner/": {
-    "lastmod": "2026-10-08",
-    "hash": "acb2a9b61729a8392a7beb76ec9ae984878597e8ac8a869043f50e12148ec3c5",
+    "lastmod": "2026-10-12",
+    "hash": "615cb2f09b2778cc1e623d6ddfed63d1df83b11f1801fde1125a66c15ce0207b",
     "hashVersion": 2
   },
   "/apps/speaker-tools-audio-test/": {
@@ -950,8 +955,8 @@
     "hashVersion": 2
   },
   "/apps/work-shift-schedule-calendar/": {
-    "lastmod": "2026-10-08",
-    "hash": "76fe398d09a0f56a2b4ac052099ca374c23ae8104542ab212294891541796823",
+    "lastmod": "2026-10-12",
+    "hash": "e365dc54c7ba254db87c28a1c3a04b4008fe47ca8257f4eaebf9b24d28a1732c",
     "hashVersion": 2
   },
   "/assembly-check/": {

@@ -129,6 +129,10 @@ const legalLinksBySlug = {
     privacy: "/legal/FloorQuote/privacy/",
     support: "/legal/FloorQuote/support/"
   },
+  "poolpilot-pool-service-log": {
+    privacy: "/legal/PoolPilot/privacy/",
+    support: "/legal/PoolPilot/support/"
+  },
   "shelf-planner-cabinet-shelves": {
     privacy: "/legal/ShelfPlanner/privacy/",
     support: "/legal/ShelfPlanner/support/"
@@ -167,6 +171,7 @@ const featuredApps = [
   ["tilefit-tile-layout-planner", "Offline tile layout planner with six patterns, material estimates, grouped cuts, installation order, and PDF export."],
   ["floorquote-flooring-quotes", "Measure flooring rooms, calculate material and labor costs, capture customer approval, and export professional PDF quotes offline."],
   ["jobphotolog-work-reports", "Private, offline jobsite photo records with before-and-after evidence, punch lists, signatures, and professional PDF reports."],
+  ["poolpilot-pool-service-log", "Keep customers, pools, water tests, service visits, photos, and signatures together, then create PDF service reports offline."],
   ["quiltfit-quilt-design-planner", "Quilt design planner for fabric layouts, block planning, and project organization."],
   ["snapreceipt-expenses-and-tax", "Private receipt scanner, expense tracker, and mileage log for reimbursements and tax records."],
   ["invoice-maker-estimate-pdf", "Fast invoice and estimate PDF maker for freelancers, contractors, and small businesses."],
@@ -184,8 +189,8 @@ const categorySections = [
   {
     id: "small-business-apps",
     title: "Small Business Apps",
-    description: "Simple business utilities for contractors, vendors, freelancers, and small teams that need work reports, photo evidence, receipts, invoices, inventory counts, shift schedules, expense reports, and everyday records on iPhone.",
-    slugs: ["jobphotolog-work-reports", "snapreceipt-expenses-and-tax", "invoice-maker-estimate-pdf", "expensereportmaker-and-receipts", "marketvendor-sales-and-profit", "snapstock-inventory-scanner", "work-shift-schedule-calendar"]
+    description: "Simple business utilities for contractors, pool service professionals, vendors, freelancers, and small teams that need service logs, water test records, work reports, photo evidence, receipts, invoices, inventory counts, shift schedules, expense reports, and everyday records on iPhone.",
+    slugs: ["jobphotolog-work-reports", "poolpilot-pool-service-log", "snapreceipt-expenses-and-tax", "invoice-maker-estimate-pdf", "expensereportmaker-and-receipts", "marketvendor-sales-and-profit", "snapstock-inventory-scanner", "work-shift-schedule-calendar"]
   },
   {
     id: "document-productivity-apps",
@@ -235,6 +240,7 @@ const appTags = {
   "snapstock-inventory-scanner": ["Inventory", "Scanner", "Counts", "Stock"],
   "work-shift-schedule-calendar": ["Shifts", "Calendar", "Schedules", "Work"],
   "jobphotolog-work-reports": ["Job photos", "PDF reports", "Offline", "No login"],
+  "poolpilot-pool-service-log": ["Pool service", "Water tests", "Offline", "PDF reports"],
   "image-compressor-and-zip": ["Compress", "ZIP", "Images", "Export"],
   "export-backup-all-contacts-pro": ["Contacts", "Backup", "CSV", "vCard"],
   "private-meeting-transcriber": ["Transcribe", "Meetings", "Private", "Notes"],

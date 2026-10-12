@@ -146,6 +146,7 @@ export const conversionRoutes = new Set([
   "/apps/pdf-scan-scanner-and-reader/",
   "/apps/photosafe-private-photo-vault/",
   "/apps/pickone-random-choice-picker/",
+  "/apps/poolpilot-pool-service-log/",
   "/apps/printer-app-print-pdf-docs/",
   "/apps/private-meeting-transcriber/",
   "/apps/quiltfit/",

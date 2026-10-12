@@ -966,5 +966,34 @@
   "averageUserRating": 0,
   "userRatingCount": 0,
   "sellerName": "家宝 戴"
-}
+},
+  {
+    "id": 6815557567,
+    "slug": "poolpilot-pool-service-log",
+    "name": "PoolPilot: Pool Service Log",
+    "genre": "Business",
+    "genres": [
+      "Business"
+    ],
+    "url": "https://apps.apple.com/us/app/poolpilot-pool-service-log/id6815557567?uo=4",
+    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/41/5e/70/415e700d-c56b-d154-7843-50ea37458550/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshotUrls": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/3f/29/433f2903-cbbe-0357-903a-bccbb2e18b3c/1.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/d4/a1/43d4a1f7-402a-72f5-4bf6-afa7f7138b70/2.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/89/16/24/8916249b-559c-a9b1-6cf1-db14b07d7289/3.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8f/78/c0/8f78c075-0fd4-1545-565c-744d8a0be376/4.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/e4/ae/9a/e4ae9a81-c11e-2630-9d8c-ad2d28731f9a/5.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0a/84/bc/0a84bca5-ff02-707b-8359-9e63037d0155/6.png/1290x2796bb.jpg"
+    ],
+    "description": "POOL SERVICE, ORGANIZED\nKeep customer, pool, water test and service visit records together. Review details on site, log the work and prepare a report to share. Records stay on your device, with no account or connection required.\n\nCUSTOMERS AND POOLS\nCreate customer records with contact details, address and notes. Link one or more pools to a customer and keep the service history with the right pool. Record whether a pool is residential or commercial, indoors or outdoors, in ground or above ground. Save its shape, surface, sanitizer, photo and job notes. Search customer records and find past visits from the customer or pool page.\n\nPOOL VOLUME\nEstimate water volume from length or diameter, width and shallow/deep depths for rectangular, oval, round or freeform pools. Use metric or imperial dimensions and save the estimate or a known value.\n\nWATER TESTS WITH CONTEXT\nSave dated readings for free, total and combined chlorine; pH; total alkalinity; calcium hardness; cyanuric acid; salt; temperature; TDS; borates; and phosphates. Add notes and return to earlier tests for that pool. Where a reference range is available, the app labels a reading low, in range or high. Ranges are general reference points and some parameters are recorded without a range. They do not replace local standards, product directions or your own assessment.\n\nSERVICE VISITS AND EVIDENCE\nStart a visit for a pool and work through a practical checklist covering water testing, baskets, brushing, vacuuming, the waterline, equipment and chemicals. Mark each step as completed, record products and quantities used, add notes and attach photos with categories or captions. Link a water test to the visit. Capture customer and technician signatures when needed, then mark the visit complete. Review past visits by customer or pool so the next technician can see the work already done.\n\nREPORTS READY TO SHARE\nBuild a PDF service report from the visit, pool and customer records. Include company contact details and a logo, plus readings, completed work, chemicals, notes, photos and signatures when present. Preview the report before sharing it through the iOS share sheet. In settings, choose whether reports show photos and reference ranges. Report content depends on the records you enter; review it before sending it to a customer.\n\nTOOLS FOR FIELD DECISIONS\nUse a separate volume calculator, a water range reference, an approximate saturation index and a chemical dose estimator. Dosing covers selected chlorine, alkalinity, calcium, stabilizer and salt products based on pool volume, current and target readings, and product strength. Acid and soda ash pH dosing deliberately return no single-number estimate because pH change also depends on alkalinity and product properties. All estimates need a label check and professional judgment before chemical use.\n\nLOCAL RECORDS AND BACKUPS\nRecords and media stay on your device. Export and restore compatible backups or export visits as CSV. You choose when to share files through iOS. Save important records separately before changing devices or removing the app.\n\nPoolPilot is a recordkeeping and calculation aid for pool professionals. It does not test water, verify chemical concentrations, diagnose equipment or certify that a pool is safe to use. Follow product labels, local rules and site procedures; verify measurements and readings before treatment.\n\nPrivacy Policy:\nhttps://woodcuttool.com/legal/PoolPilot/privacy/\nTerms of Use:\nhttps://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "version": "1.0",
+    "releaseDate": "2026-10-09T07:00:00Z",
+    "currentVersionReleaseDate": "2026-10-09T18:21:03Z",
+    "minimumOsVersion": "17.0",
+    "formattedPrice": "Free",
+    "trackContentRating": "4+",
+    "averageUserRating": 0,
+    "userRatingCount": 0,
+    "sellerName": "家宝 戴"
+  }
 ]
