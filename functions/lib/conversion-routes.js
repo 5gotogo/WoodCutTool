@@ -1820,6 +1820,8 @@ export const conversionRoutes = new Set([
   "/legal/CounterFit/support/",
   "/legal/DuctLab/privacy/",
   "/legal/DuctLab/support/",
+  "/legal/FabricNest/privacy/",
+  "/legal/FabricNest/support/",
   "/legal/FloorQuote/privacy/",
   "/legal/FloorQuote/support/",
   "/legal/JobPhotoLog/privacy/",

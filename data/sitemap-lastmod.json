@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-10-12",
-    "hash": "9fc2d9c167c469381debc980c39f7f0035d9e7fc8046a50c6232b1e1d99ff1e9",
+    "lastmod": "2026-10-14",
+    "hash": "cd0a5ce3b71fc0dcd94b3ac65e40d7567a5f4f0b5253f2897a989c0a9ea5e7a2",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -9172,6 +9172,16 @@
   "/legal/DuctLab/support/": {
     "lastmod": "2026-08-22",
     "hash": "9183c156bedce7a59acb004b67b50e4bbb9f2f99dd3435d8687003661f2aca88",
+    "hashVersion": 2
+  },
+  "/legal/FabricNest/privacy/": {
+    "lastmod": "2026-10-14",
+    "hash": "a72127391c0e7cd86e456aff2becdb22ebd8f3830976a6e8422ec70a22607cf9",
+    "hashVersion": 2
+  },
+  "/legal/FabricNest/support/": {
+    "lastmod": "2026-10-14",
+    "hash": "765e350e84caae996c6fad8cc48daabc9d8cbef01972822919fb182082271b17",
     "hashVersion": 2
   },
   "/legal/FloorQuote/privacy/": {
