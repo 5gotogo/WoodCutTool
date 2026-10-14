@@ -5,8 +5,8 @@
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-10-11",
-    "hash": "2c7059f1077cb5453ee0d1ff0e2cc30d8016fdf1075d9c682c8f7fa7102af0e6",
+    "lastmod": "2026-10-14",
+    "hash": "1bdec2d644ba4f3b78b0e90c571779c61d7f39e13bc2bdae479603d32da8d7d3",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -960,28 +960,28 @@
     "hashVersion": 2
   },
   "/assembly-check/": {
-    "lastmod": "2026-10-09",
-    "hash": "5fe42b9cb24c081b2e441215d274445f4daf5d7425d64832adf6b45b12e6cc71",
+    "lastmod": "2026-10-14",
+    "hash": "de1c2ea0c383e2b8efb3ebe7dd23b9a750b46a2e3b0e6e4abba3dd49bbee212c",
     "hashVersion": 2
   },
   "/assembly-check/dry-fit-release/": {
-    "lastmod": "2026-10-09",
-    "hash": "93c5bbf430af6fec7c6551e767062f707ccf3d0dea7b737dcb35e6a57733cfc2",
+    "lastmod": "2026-10-14",
+    "hash": "3c0e785349c0c086415342674786408bd7ebddb49e141f9ee8ef59b14ca2b5d8",
     "hashVersion": 2
   },
   "/assembly-check/measure-diagonals/": {
-    "lastmod": "2026-10-09",
-    "hash": "9e08eed46d42d74f9bbc9cb2af98184f0a1b5d7690dd7aea4fe3dee120581589",
+    "lastmod": "2026-10-14",
+    "hash": "6cdd67e3fee7118d4ba2ecc7a6fcd877e7c29530c353388eb202cd05bf877809",
     "hashVersion": 2
   },
   "/assembly-check/tolerance-and-repeatability/": {
-    "lastmod": "2026-10-09",
-    "hash": "9725399054d914a7577ef5e63cec026de7dba1f35e3d6d270d8a43c6961f80cf",
+    "lastmod": "2026-10-14",
+    "hash": "106ae1e3139e698f95abf46351919c025cbf9c06a40c380b8b15dec1f66a2d5d",
     "hashVersion": 2
   },
   "/baluster-spacing-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "46ab59c89666ead454ac7cb99c125b27e36b79e60b5fe79f99659b813023a6fc",
+    "hash": "44d0d45280f287423f53d1bc9eef60bae13e4bab7cf990086c6b140d1603843e",
     "hashVersion": 2
   },
   "/blog/16-8-fasting-timer-weekly-report/": {
@@ -5971,17 +5971,17 @@
   },
   "/cabinet-cut-list-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "05121968dc944d00bf80898aa1a2f01ebda5a1b7ddd0ad67db4991ac6bb86772",
+    "hash": "9ceb4590ba40bc2cf6d0e85b7f45034b27df5ae4d69f99bf5bc0f4e839cc1f45",
     "hashVersion": 2
   },
   "/cabinet-door-calculator/": {
     "lastmod": "2026-09-21",
-    "hash": "437b0c44fdbd5b7c24e02a309169ea34f7a7a61fb8520a4f29b727b392c78d2e",
+    "hash": "fbdbd082d346594c690a6885e8d79c222f6a6b19555fd898f089445b3ba812d9",
     "hashVersion": 2
   },
   "/cabinet-studio/": {
-    "lastmod": "2026-10-09",
-    "hash": "178cdb0ab3734ff96b512779f708d40324c82979947eea35cb08be548cee9689",
+    "lastmod": "2026-10-14",
+    "hash": "8fc3e70b43a23344ca86589cabd6331aa012753b31b9ba140c94c9ffc514c32b",
     "hashVersion": 2
   },
   "/checklists/appliance-opening-release/": {
@@ -6726,32 +6726,32 @@
   },
   "/crown-molding-angle-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "4ace5455d7a4e7f8e85225696109290de333ad2c24c79ba7d15634761a942311",
+    "hash": "69fd88af6674e3d7568c65f317e6c56a362c7fcb1cbebc5d288e42c8540dbcc3",
     "hashVersion": 2
   },
   "/deck-board-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "2a6a9bcca73d4171cb261a447c03a0ec73f0817e7dc96ad3add5ed8695547e82",
+    "hash": "668f87e6847af03606b49d5b87fe983a0428e4cb54d13f478acabb98271636b3",
     "hashVersion": 2
   },
   "/deck-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "56804221bfdb3303811f662eb22c59f9a66e3861e1d049418d5eb14d713494ee",
+    "hash": "b15353549c1bb351358803d398998fd32d2ee919a687769a2cf454ca017a98c8",
     "hashVersion": 2
   },
   "/deck-stain-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "85cdd1795071b84f06faf93c7b237ca1d8809d95146b323abad4215e4e2f694b",
+    "hash": "a17ccae29d3fd1fcfa795864e7789c89dc76b2a6d474cb2d1bcecf40a3dd3950",
     "hashVersion": 2
   },
   "/deck-stair-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "1d56dbb50f9ccbf4cfd068a7ab486406463288189741aa6c7c0da685e68b5365",
+    "hash": "44591bc9f26b981c90afb44357947f713db8e8ffd4e1f32407ec86a2e3ce56f0",
     "hashVersion": 2
   },
   "/drawer-box-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "c75026a247d21cd046453bde4aef747adc82e3d6c9968fe3ca5ebd89eb46d3c9",
+    "hash": "44e5ae516fe40681a0835b130490bd293a9fb22409e8ef0aa23cc345f0843b04",
     "hashVersion": 2
   },
   "/drill-bit-finder/": {
@@ -7191,12 +7191,12 @@
   },
   "/fence-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "dccbb442aa09dab84e7452d555d53d10f4b7bd4bc0f7c66a16d87c542ec69426",
+    "hash": "6f6386aae926a14365ef1b490c9ba10c927b27bfb6450623a6131d1ae918968a",
     "hashVersion": 2
   },
   "/fence-stain-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "bb6709032e40be4cf25a2088c7c5544f620ca3e7aa000e6d8df1639f9af768c8",
+    "hash": "e70a8a8c2a95ba96f0ec9615aec9163bed8a94d5e78338e526fd6eb6b18e8a21",
     "hashVersion": 2
   },
   "/finishing-planner/": {
@@ -8224,6 +8224,26 @@
     "hash": "0e2e076318bd22f3bb95f698e89d5e33ddc1979b9ce1c8a404907472ec48b81a",
     "hashVersion": 2
   },
+  "/glue-up/": {
+    "lastmod": "2026-10-14",
+    "hash": "2e70a4c13b61c725464926b4a8268b742b612d3dd20451e3233c7d13ffc18903",
+    "hashVersion": 2
+  },
+  "/glue-up/open-and-total-assembly-time/": {
+    "lastmod": "2026-10-14",
+    "hash": "f69cfa18b09a6f7a986016cad5875d6c1d27cbda3e635eea2b6fed6e43ee88fb",
+    "hashVersion": 2
+  },
+  "/glue-up/rehearse-and-split-batches/": {
+    "lastmod": "2026-10-14",
+    "hash": "a7ce860cd4f82f3fa19b707206b2d1a0c9a1589035c0632439c7555b9ace05bb",
+    "hashVersion": 2
+  },
+  "/glue-up/release-and-record/": {
+    "lastmod": "2026-10-14",
+    "hash": "231655e729e6797191d787fe94ac9fb30ab4b811ea03ff709269d82884ccc2be",
+    "hashVersion": 2
+  },
   "/guides/how-to-cut-plywood-efficiently/": {
     "lastmod": "2026-07-23",
     "hash": "e056fbb1b3ab541b84bd793db6ec783ad762e3f12b183625206fb160cd99da1f",
@@ -8236,7 +8256,7 @@
   },
   "/joist-span-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "3fbcdaf8bb3e85fb2f06d47d733d9178298fe1086afed13c6c90cd73be74d03f",
+    "hash": "d4169e3e3eb072a94301c4515dba083254c55f210659b6cea2d8df31fe5fe2f4",
     "hashVersion": 2
   },
   "/learn/actual-lumber-size-vs-nominal-size/": {
@@ -9331,12 +9351,12 @@
   },
   "/picket-spacing-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "0fe1d086d6af63f5c1c8dd38f8d81ab63094e4f634179fd7b07380ac249cf28b",
+    "hash": "5b1e824aa865b1b4fa5112d98bd3c755f4a862d4c6072dc6aa470deb10b72129",
     "hashVersion": 2
   },
   "/post-hole-concrete-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "a2509087cc2da9bd8843203af64ba3729efdd11c8f524e595dbebab61d0145e8",
+    "hash": "30e7217e09e31fbc1adb5342e0a26519f9fc52f154c7ba62efd68337f1ad7b15",
     "hashVersion": 2
   },
   "/projects/balcony-storage-bench/": {
@@ -9431,7 +9451,7 @@
   },
   "/rafter-length-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "9c85a1ed56459a9071dfcf47058b947dbbef7ec57226e8e70effe8dae7599535",
+    "hash": "9b0801a28698a58647d14d3e1f2b19d6646909022c3f6e9caceeda74e537bbac",
     "hashVersion": 2
   },
   "/research/": {
@@ -9481,22 +9501,22 @@
   },
   "/rise-run-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "5744ee41b1b63905bf9197ce9b19b98efcbd9814b5e9d01dce63ab4f00b5b437",
+    "hash": "b247184d431fecfa7490cca78e2db28ece4132009c976a9cc248d6f1c1185510",
     "hashVersion": 2
   },
   "/roof-pitch-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "90eb836a8bc6aa8bc2ebfef2136dc450c0e3dfda802613f754440da7a5aefcbf",
+    "hash": "01c0e1afe7ef6f1f3331f0ab66b9fc553bb503d7b01f2107b37a74152319b118",
     "hashVersion": 2
   },
   "/roof-shingle-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "5745d1db9ce673111c9444ac72308f49a9baab9b676070370860c1167a46771c",
+    "hash": "f4a2be4516e90d9a472579264142c533d0fe48bfcd16c88d5f2131eb12ef17fc",
     "hashVersion": 2
   },
   "/roofing-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "a0f686f7eb8425dbf5448b087fd25b2cde782f038a23b633c2f93d7dafe7f63b",
+    "hash": "e0e3e59fc147c350e7d35781ff204747e0f616fafeef66f6cb357b317e78d7df",
     "hashVersion": 2
   },
   "/screw-size-finder/": {
@@ -9511,22 +9531,22 @@
   },
   "/shelf-sag-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "673064bcab459516daf49c68b8b36d508296c6067ba39cf49fc391f11a8e6758",
+    "hash": "5e60daae454e61444dadd8ca57ec8ddb5b4063e7bcbef956c7867b79a3d86fe6",
     "hashVersion": 2
   },
   "/shelf-spacing-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "8ace9faaa9e68a8fd173f5298e63b2af4c0bdbeef083e21a0aa6fa57d3daf580",
+    "hash": "c4c9dd0c764463841e7ca5f1f7adc639f961bdac68d651b302c90df734cd32e7",
     "hashVersion": 2
   },
   "/stair-angle-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "6778f6a00fd00cddafe1a18d98323c8316c1801fdc26d6a789fd471b83576642",
+    "hash": "f17e790347a545d261a5e7b2d7a6cc73886aaaa7744e05f43fdf517061950e90",
     "hashVersion": 2
   },
   "/stair-calculator/": {
     "lastmod": "2026-09-16",
-    "hash": "be52da295582515892d9e615faf46e36ee41be3c54d879ea8c2cea04863670ad",
+    "hash": "53450454aa653bac2be412eb78d1ec94ef7bd3585004b0198fdfd8602087a261",
     "hashVersion": 2
   },
   "/templates/": {
@@ -10220,8 +10240,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-10-11",
-    "hash": "edcdca2114f8ada2ea95c3bfe3e7a8ae7a9fec3c9f59bdaa71157848d6ad4296",
+    "lastmod": "2026-10-14",
+    "hash": "f9d82fe6606a3effb376be174ef4f0a2a4a3e68bf2414e2f2013df06c0a5e82e",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

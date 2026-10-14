@@ -1,6 +1,6 @@
 # WoodCutTool content-column roadmap, 2026–2027
 
-Updated: 2026-10-11
+Updated: 2026-10-14
 
 ## Objective
 
@@ -22,6 +22,7 @@ Build a durable woodworking knowledge system in which every search-shaped questi
 | Examples | 75 | Finished cut-list inputs with downloadable CSV evidence |
 | Project Playbooks | 18 playbooks + 1 indexed hub | End-to-end guided execution with browser-local progress and visible consequences for key decisions |
 | One-Sheet Projects | 43 verified layouts + 1 indexed hub | Visual project discovery by category, part count, and modeled 4×8 sheet use, with local shortlist and downloadable CSV evidence |
+| Glue-Up Planner | 1 interactive hub + 3 field guides | Serial independent batch rehearsals, open and total assembly margins with reserve, physical preparation evidence, local draft and CSV/JSON exports |
 | Assembly Check | 1 interactive hub + 3 field guides | Two diagonal readings, bounded measurement uncertainty, separate physical checks and local CSV/JSON inspection snapshots |
 | Edge Banding Planner | 1 interactive hub + 3 field guides | Finished-to-saw dimensions, per-edge profiles, pre-milling, tape-width checks, roll allowances, CSV/JSON and sheet-layout handoff |
 | Wood Movement Planner | 1 interactive hub + 3 field guides | Source-linked cross-grain solid-wood width estimates, 6–14% MC scenarios, fixed-opening reserve and edge displacement, browser-local draft plus CSV/JSON exports |
