@@ -65,7 +65,7 @@ export function performanceProfile(file, html) {
     return { stylesheet: "/assets/glossary.css", runtimes: ["/assets/content-page.js"] };
   }
 
-  if (/^(?:finishing-planner|edge-banding|cabinet-studio|wood-movement|glue-up)\//.test(file)) {
+  if (/^(?:finishing-planner|edge-banding|cabinet-studio|wood-movement|glue-up|shelf-pin-layout)\//.test(file)) {
     return { stylesheet: "/assets/workflow-shell.css", runtimes: ["/assets/content-page.js"] };
   }
 

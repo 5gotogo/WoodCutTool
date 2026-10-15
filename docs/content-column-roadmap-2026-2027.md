@@ -1,6 +1,6 @@
 # WoodCutTool content-column roadmap, 2026–2027
 
-Updated: 2026-10-14
+Updated: 2026-10-15
 
 ## Objective
 
@@ -27,6 +27,7 @@ Build a durable woodworking knowledge system in which every search-shaped questi
 | Edge Banding Planner | 1 interactive hub + 3 field guides | Finished-to-saw dimensions, per-edge profiles, pre-milling, tape-width checks, roll allowances, CSV/JSON and sheet-layout handoff |
 | Wood Movement Planner | 1 interactive hub + 3 field guides | Source-linked cross-grain solid-wood width estimates, 6–14% MC scenarios, fixed-opening reserve and edge displacement, browser-local draft plus CSV/JSON exports |
 | Offcut Planner | 1 interactive hub + 3 field guides | Browser-local inventory of measured usable rectangles, conservative single-part fit checks, and JSON/CSV exports |
+| Shelf Pin Studio | 1 interactive hub + 6 field guides | Paired cabinet side hole maps, measured grid phase, full-width hardware keep-outs, drill-tip reserve, local evidence and CSV/SVG/JSON exports |
 | Research | 9 | 8 source-linked report pages plus the Research hub |
 | Tools | 25 | Calculators and action pages |
 | Cut List Components | 16 | One composable workspace, three category hubs, and 12 reusable assembly calculators with CSV/JSON output |
@@ -40,6 +41,8 @@ The 2026-09-26 milestone established Offcut Planner as a distinct post-cut reuse
 The 2026-10-11 milestone established Wood Movement Planner as a source-backed solid-wood planning column. Eight specific species entries from USDA Wood Handbook FPL-GTR-282 (2021), Table 13–5, feed the Equation 13–3 approximation. The tool compares radial and tangential scenarios, validates all wood moisture values within 6–14%, shows seasonal widths and total clearance in a fixed opening, and records the entered reserve and locating-reference assumptions. It provides a browser-local draft, CSV review, JSON backup with replacement preview and a print view. Three distinct field guides cover width direction, moisture evidence and attachment review. This is an unrestrained dimensional estimate; it does not model plywood, along-grain movement, cupping, slot geometry or joint capacity.
 
 ## Editorial architecture
+
+The 2026-10-15 milestone establishes Shelf Pin Studio at `/shelf-pin-layout/`, connecting finished side panels to repeatable adjustable-shelf hardware layout. The browser-local planner uses a common bottom datum and editable vertical pitch, mirrored inside-face maps, front/rear row setbacks, circle-aware full-width keep-outs and an entered drill-tip skin reserve. Every remaining level contains four matching coordinates. Its six guides address grid dimensions, paired datums, depth coupons, hardware envelopes, jig continuation/print scale and physical shelf-fit release. It provides local persistence with a session fallback, replacement-reviewed JSON, CSV coordinates, physical-size SVG references and reproducible example files. Geometry changes clear recorded observations. It does not calculate shelf capacity, hardware sweep, shared-divider drilling or CNC programs.
 
 Each major subject should become a connected eleven-layer cluster:
 

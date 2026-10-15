@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "name": "Workshop cabinet · paired sides",
+  "revision": "A",
+  "height": 720,
+  "depth": 560,
+  "thickness": 18,
+  "pitch": 32,
+  "origin": 64,
+  "bottom": 50,
+  "top": 50,
+  "front": 37,
+  "rear": 37,
+  "diameter": 5,
+  "bore": 12,
+  "skin": 3,
+  "zones": [
+    {
+      "label": "Example hinge envelope — replace with measured limits",
+      "from": 300,
+      "to": 360
+    }
+  ],
+  "checks": {
+    "datum": false,
+    "coupon": false,
+    "hardware": false,
+    "paired": false
+  },
+  "notes": ""
+}

@@ -28,6 +28,8 @@ That command also compiles `assets/apps.css` from `assets/styles.css` using Ligh
 
 ## Validation
 
+The [Shelf Pin Studio](docs/shelf-pin-studio.md) at `/shelf-pin-layout/` adds paired cabinet drilling maps, hardware keep-outs, depth review, local records, CSV/SVG exports and six field guides. Regenerate it with `npm run generate:shelf-pin`.
+
 The [Finishing Planner](docs/finishing-planner.md) at `/finishing-planner/` extends the panel workflow to coated surfaces, product coverage and a local purchase list. Regenerate it with `npm run generate:finishing`.
 
 ```sh

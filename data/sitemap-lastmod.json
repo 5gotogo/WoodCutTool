@@ -1,12 +1,12 @@
 {
   "/": {
-    "lastmod": "2026-10-11",
-    "hash": "3d4f51c9e2a18944488230de2c6dd479635b024155445e152c03cba8e0f35f77",
+    "lastmod": "2026-10-15",
+    "hash": "a91624adcaafb400167a876df4e5e8a69d6dc4f3d7a2ac7b8820e0665fdb5f74",
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-10-14",
-    "hash": "1bdec2d644ba4f3b78b0e90c571779c61d7f39e13bc2bdae479603d32da8d7d3",
+    "lastmod": "2026-10-15",
+    "hash": "ba851189277bbfbfb8d7a4bcf9d5c588e68f678796ec1009e4266bf5301ee5cf",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -5980,8 +5980,8 @@
     "hashVersion": 2
   },
   "/cabinet-studio/": {
-    "lastmod": "2026-10-14",
-    "hash": "8fc3e70b43a23344ca86589cabd6331aa012753b31b9ba140c94c9ffc514c32b",
+    "lastmod": "2026-10-15",
+    "hash": "202b1705f6b1e6f258fd754fea684824cb07114dfd2d6c80ebd87da310729c2d",
     "hashVersion": 2
   },
   "/checklists/appliance-opening-release/": {
@@ -9539,6 +9539,41 @@
     "hash": "f51218a0026f6be88e8caa9b738e5b9e9463ba7f3296f95f229a5873339274b2",
     "hashVersion": 2
   },
+  "/shelf-pin-layout/": {
+    "lastmod": "2026-10-15",
+    "hash": "896a013017948e13ead86fccc45801aace92fe4a45a89a8425fc4797fca9f25a",
+    "hashVersion": 2
+  },
+  "/shelf-pin-layout/32mm-grid-and-setbacks/": {
+    "lastmod": "2026-10-15",
+    "hash": "3bf558b52c86dfb8d63d7d89f4083d12bcdc792a79cf2ee82d329c4102ee7e7b",
+    "hashVersion": 2
+  },
+  "/shelf-pin-layout/drill-depth-and-test-coupon/": {
+    "lastmod": "2026-10-15",
+    "hash": "86f2a82b8f03cd8535e4e75b50883226f279f1b20bcb9593ffdde1cffb43d5d8",
+    "hashVersion": 2
+  },
+  "/shelf-pin-layout/hinge-and-joinery-keep-outs/": {
+    "lastmod": "2026-10-15",
+    "hash": "6d590da58ea02844a4ad3d48469b21bda53ea23ca4c2a364fa00b03e317ce833",
+    "hashVersion": 2
+  },
+  "/shelf-pin-layout/jig-indexing-and-print-scale/": {
+    "lastmod": "2026-10-15",
+    "hash": "c273b443c3b08f41138f4cb6402cc986797b50f78dc3ea4e85d72991563b8f9a",
+    "hashVersion": 2
+  },
+  "/shelf-pin-layout/paired-panel-datums/": {
+    "lastmod": "2026-10-15",
+    "hash": "25aaa583b4436a0a5fa07ab3118190510ce05b72c7c3658552136d5c8bccbbb9",
+    "hashVersion": 2
+  },
+  "/shelf-pin-layout/shelf-fit-and-drilling-release/": {
+    "lastmod": "2026-10-15",
+    "hash": "dd2788438274bce89aa2c58e64f9cf85c0e48510a5fdeef983c8f7684f3a23ac",
+    "hashVersion": 2
+  },
   "/shelf-sag-calculator/": {
     "lastmod": "2026-09-16",
     "hash": "5e60daae454e61444dadd8ca57ec8ddb5b4063e7bcbef956c7867b79a3d86fe6",
@@ -10250,8 +10285,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-10-14",
-    "hash": "f9d82fe6606a3effb376be174ef4f0a2a4a3e68bf2414e2f2013df06c0a5e82e",
+    "lastmod": "2026-10-15",
+    "hash": "bf7c21afd85cb1f994c9c682fba72bf5e7ca45341469a909201b48bc019b0bbb",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {
