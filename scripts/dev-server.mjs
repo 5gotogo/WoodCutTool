@@ -21,6 +21,7 @@ const hostFlag = process.argv.indexOf("--host");
 const host = hostFlag >= 0 ? process.argv[hostFlag + 1] : "127.0.0.1";
 
 const contentTypes = new Map([
+  [".avif", "image/avif"],
   [".css", "text/css; charset=utf-8"],
   [".csv", "text/csv; charset=utf-8"],
   [".html", "text/html; charset=utf-8"],

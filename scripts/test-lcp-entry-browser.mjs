@@ -107,13 +107,14 @@ try {
       await navigate(route);
       const image = await evaluate(`(() => {
         const img = document.querySelector(".visual-frame img");
-        const candidates = img.srcset.split(", ").map(item => new URL(item.split(" ")[0], location.href).href);
+        const source = img.closest('picture')?.querySelector('source[type="image/avif"]');
+        const candidates = (source?.srcset || img.srcset).split(", ").map(item => new URL(item.split(" ")[0], location.href).href);
         return { src: img.currentSrc, loaded: img.complete && img.naturalWidth > 0,
           requests: performance.getEntriesByType("resource").filter(entry => candidates.includes(entry.name)).map(entry => new URL(entry.name).pathname) };
       })()`);
       assert(image.loaded, route);
       assert.equal(image.requests.length, 1, `${route}: duplicate preload at DPR ${dpr}`);
-      assert(image.src.endsWith(dpr === 1 ? "-480.webp" : dpr === 2 ? "-800.webp" : ".webp") && (dpr !== 3 || !/-\d+\.webp$/.test(image.src)), `${route}: wrong image at DPR ${dpr}`);
+      assert(image.src.endsWith(dpr === 1 ? "-480.avif" : dpr === 2 ? "-800.avif" : "-1200.avif"), `${route}: wrong image at DPR ${dpr}`);
       densityImages.push({ route, dpr, ...image });
     }
   }

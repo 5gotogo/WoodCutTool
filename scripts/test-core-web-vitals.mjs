@@ -10,6 +10,7 @@ import { appStoreThumbnail, appStoreScreenshotSources } from "./app-store-images
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
 import { homeRuntimeSource } from "./build-home-runtime.mjs";
 import { renderWoodChrome, woodLanguageSource, woodRuntimeSource } from "./build-wood-runtime.mjs";
+import { heroSources } from "./lcp-images.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const failures = [];
@@ -78,21 +79,22 @@ for (const file of compareStyles.pages) {
   if (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"')) {
     failures.push(`${file}: static Compare page eagerly loads the full app runtime`);
   }
-  const lead = html.match(/(?:article-lead-visual|comparison-hero-visual)[^>]*><img\b([^>]*)\bsrc="([^"]+)"([^>]*)>/)
-    || html.match(/<figure class="visual-frame wide"><img\b([^>]*)\bsrc="([^"]+)"([^>]*)>/);
+  const lead = html.match(/(?:article-lead-visual|comparison-hero-visual)[^>]*>(?:<picture[^>]*><source[^>]*>)?<img\b([^>]*)\bsrc="([^"]+)"([^>]*)>/)
+    || html.match(/<figure class="visual-frame wide">(?:<picture[^>]*><source[^>]*>)?<img\b([^>]*)\bsrc="([^"]+)"([^>]*)>/);
   if (!lead) continue;
   compareLcpImages += 1;
-  const imageTag = lead[0];
+  const imageTag = lead[0].match(/<img\b[^>]*>/)[0];
   if (!imageTag.includes('loading="eager"') || !imageTag.includes('fetchpriority="high"')) {
     failures.push(`${file}: above-the-fold Compare image is not eager/high priority`);
   }
-  const preload = [...html.matchAll(/<link\b[^>]*rel="preload"[^>]*as="image"[^>]*>/g)].map(match => match[0]).find(tag => tag.includes(`href="${lead[2]}"`));
+  const preload = [...html.matchAll(/<link\b[^>]*rel="preload"[^>]*as="image"[^>]*>/g)].map(match => match[0]).find(tag => tag.includes('type="image/avif"'));
   if (!preload?.includes('fetchpriority="high"')) failures.push(`${file}: above-the-fold Compare image is not preloaded`);
   const small = lead[2].replace(/\.webp$/, "-800.webp");
   if (existsSync(join(root, small))) {
     const srcset = imageTag.match(/\bsrcset="([^"]+)"/)?.[1];
     const sizes = imageTag.match(/\bsizes="([^"]+)"/)?.[1];
-    if (!srcset?.includes(`${small} 800w`) || !sizes || !preload?.includes(`imagesrcset="${srcset}"`) || !preload?.includes(`imagesizes="${sizes}"`)) failures.push(`${file}: responsive Compare image and preload must match`);
+    const sources = heroSources(lead[2], sizes);
+    if (!srcset?.includes(`${small} 800w`) || !srcset.includes("480w") || !sizes || !lead[0].includes(`srcset="${sources.avif}"`) || !preload?.includes(`imagesrcset="${sources.avif}"`) || !preload?.includes(`imagesizes="${sizes}"`)) failures.push(`${file}: responsive Compare AVIF/WebP picture and preload must match`);
   }
   if (!html.includes('defer fetchpriority="low" src="/assets/content-page.js"') || !html.includes('defer fetchpriority="low" src="/assets/conversion.js"')) failures.push(`${file}: optional Compare runtimes must have low priority`);
 }
@@ -224,11 +226,11 @@ for (const [name, output, compiled, limit] of [
     if (name === "learn" && !html.includes('defer fetchpriority="low" src="/assets/conversion.js"')) failures.push(`${file}: optional conversion runtime must have low priority`);
     if (name === "learn" && html.includes('src="/assets/directory-page.js"') !== profile.runtimes.includes("/assets/directory-page.js")) failures.push(`${file}: directory runtime must follow page markup, not inline CSS tokens`);
     if (name === "construction") {
-      const image = html.match(/<figure class="visual-frame"><img\b[^>]*>/)?.[0] || "";
+      const image = html.match(/<figure class="visual-frame">(?:<picture[^>]*><source[^>]*>)?<img\b[^>]*>/)?.[0] || "";
       const srcset = image.match(/srcset="([^"]+)"/)?.[1];
       const sizes = image.match(/sizes="([^"]+)"/)?.[1];
       const preload = html.match(/<link rel="preload" as="image"[^>]*>/)?.[0] || "";
-      if (!srcset?.includes("480w") || !srcset.includes("800w") || !srcset.includes("1200w") || !sizes || !preload.includes(`imagesrcset="${srcset}"`) || !preload.includes(`imagesizes="${sizes}"`)) failures.push(`${file}: complete responsive image candidates and matching preload required`);
+      if (!image.includes('<source type="image/avif"') || !preload.includes('type="image/avif"') || !srcset?.includes("480w") || !srcset.includes("800w") || !srcset.includes("1200w") || !sizes || !preload.includes(`imagesrcset="${srcset}"`) || !preload.includes(`imagesizes="${sizes}"`)) failures.push(`${file}: complete responsive AVIF candidates and matching typed preload required`);
       for (const candidate of (srcset || "").split(", ")) {
         const path = candidate.split(" ")[0];
         if (!existsSync(join(root, path))) failures.push(`${file}: missing image variant ${path}`);
@@ -249,6 +251,15 @@ for (const [name, output, compiled, limit] of [
     }
     if (name === "interactive" && profile.runtimes.includes("/assets/app.js") && !html.includes('src="/assets/app.js"')) failures.push(`${file}: interactive page is missing the full app runtime`);
     if (name === "interactive" && profile.runtimes.includes("/assets/content-page.js") && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) failures.push(`${file}: specialized calculator must use its lightweight runtime`);
+  }
+}
+
+for (const [directory, maximum] of [["compare", 60_000], ["tools", 50_000], ["learn", 200_000]]) {
+  for (const name of readdirSync(join(root, "assets/images", directory)).filter(name => name.endsWith(".avif"))) {
+    const bytes = statSync(join(root, "assets/images", directory, name)).size;
+    if (bytes > (name.endsWith("-480.avif") ? 15_000 : maximum)) failures.push(`${name}: AVIF hero exceeds byte budget`);
+    const fallback = name.replace(/-(?:1200|1448|1600)\.avif$/, ".webp").replace(/\.avif$/, ".webp");
+    if (bytes >= statSync(join(root, "assets/images", directory, fallback)).size * 0.8) failures.push(`${name}: AVIF must save at least 20% over its WebP fallback`);
   }
 }
 

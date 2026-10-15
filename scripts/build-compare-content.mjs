@@ -2,10 +2,12 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
+import { heroPicture, heroPreload } from "./lcp-images.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const siteUrl = "https://woodcuttool.com";
 const version = "20260701-nav";
+const heroSizes = "(max-width: 679px) calc(100vw - 32px), 520px";
 
 function escapeHtml(value) {
   return String(value || "")
@@ -50,15 +52,15 @@ function responsiveImage(src) {
 }
 
 function imagePreload(src) {
-  const responsive = responsiveImage(src);
-  return `<link rel="preload" as="image" href="${escapeHtml(src)}"${responsive ? ` imagesrcset="${responsive.srcset}" imagesizes="${responsive.sizes}"` : ""} fetchpriority="high">`;
+  return heroPreload(src, heroSizes);
 }
 
 function visualFigure(src, alt, { wide = false, eager = false, className = "" } = {}) {
   const dimensions = wide ? 'width="1600" height="900"' : 'width="1200" height="900"';
   const priority = eager ? 'loading="eager" fetchpriority="high"' : 'loading="lazy"';
   const responsive = responsiveImage(src);
-  return `<figure class="visual-frame${wide ? " wide" : ""}${className ? ` ${className}` : ""}"><img src="${src}"${responsive ? ` srcset="${responsive.srcset}" sizes="${responsive.sizes}"` : ""} alt="${escapeHtml(alt)}" ${dimensions} ${priority} decoding="async"></figure>`;
+  const img = `<img src="${src}"${responsive ? ` srcset="${responsive.srcset}" sizes="${responsive.sizes}"` : ""} alt="${escapeHtml(alt)}" ${dimensions} ${priority} decoding="async">`;
+  return `<figure class="visual-frame${wide ? " wide" : ""}${className ? ` ${className}` : ""}">${eager ? heroPicture(img, src, heroSizes) : img}</figure>`;
 }
 
 function head({ title, description, canonical, jsonLd = "", ogType = "article", preloadImage = "" }) {
@@ -658,13 +660,14 @@ for (const [category, , , route] of existingComparisons) {
     .replace(/\/assets\/(?:styles|apps|editorial)\.css(?:\?v=[^"]+)?/g, "/assets/editorial.css")
     .replace(/\/assets\/app\.js(?:\?v=[^"]+)?/g, "/assets/content-page.js");
   // Legacy pages are retained in place; update their existing figures too.
-  enhanced = enhanced.replace(/<figure\b[^>]*>[\s\S]*?<\/figure>/g, figure => figure.replace(/<img\b[^>]*>/g, tag => {
+  enhanced = enhanced.replace(/<figure\b[^>]*>[\s\S]*?<\/figure>/g, figure => figure.replace(/<picture\b[^>]*>[\s\S]*?(<img\b[^>]*>)[\s\S]*?<\/picture>/g, "$1").replace(/<img\b[^>]*>/g, tag => {
     const src = tag.match(/\bsrc="([^"]+)"/)?.[1];
     const responsive = src && responsiveImage(src);
     if (!responsive) return tag;
+    if (tag.includes('fetchpriority="high"')) return heroPicture(tag, src, heroSizes);
     return tag.replace(/\s+(?:srcset|sizes)="[^"]*"/g, "").replace(/\bsrc="[^"]+"/, `$& srcset="${responsive.srcset}" sizes="${responsive.sizes}"`);
   }));
-  const leadImage = enhanced.match(/(?:article-lead-visual|comparison-hero-visual)[^>]*><img\b[^>]*\bsrc="([^"]+)"/);
+  const leadImage = enhanced.match(/(?:article-lead-visual|comparison-hero-visual)[^>]*>(?:<picture[^>]*><source[^>]*>)?<img\b[^>]*\bsrc="([^"]+)"/);
   if (leadImage) {
     enhanced = enhanced.replace(/\s*<link\b[^>]*\brel="preload"[^>]*\bas="image"[^>]*>/g, "");
     enhanced = enhanced.replace(

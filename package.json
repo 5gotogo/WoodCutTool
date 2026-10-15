@@ -50,6 +50,7 @@
     "test:core-web-vitals": "node scripts/test-core-web-vitals.mjs",
     "test:pages-routing": "node scripts/test-pages-routing.mjs",
     "test:lcp-entry-browser": "node scripts/test-lcp-entry-browser.mjs",
+    "test:lcp-images-browser": "node scripts/test-lcp-images-browser.mjs",
     "test:wood-lcp-browser": "node scripts/test-wood-lcp-browser.mjs",
     "test:learn-lcp-browser": "node scripts/test-learn-lcp-browser.mjs",
     "test:sitemap-signals": "node scripts/test-sitemap-signals.mjs",
