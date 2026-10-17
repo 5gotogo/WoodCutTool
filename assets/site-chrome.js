@@ -162,17 +162,22 @@
       { href: "/screw-size-finder/", icon: "SC", title: "Screw finder", description: "Pick practical screw sizes for common assemblies." }
     ];
 
-    const apps = [
+    const planningApps = [
       { href: "/apps/cutlist/", aliases: ["/apps/cutlist-plywood-optimizer/"], icon: "CL", title: "CutList app", description: "Save cut lists, layouts, and project revisions on iPhone." },
       { href: "/apps/quiltfit/", aliases: ["/apps/quiltfit-quilt-design-planner/"], icon: "QF", title: "QuiltFit app", description: "Design quilts and carry fabric planning into the app." },
       { href: "/apps/tilefit-tile-layout-planner/", icon: "TI", title: "TileFit app", description: "Plan tile patterns, quantities, grouped cuts, installation order, and PDF exports." },
-      { href: "/apps/stringer/", aliases: ["/apps/stringer-stair-layout/"], icon: "ST", title: "Stringer app", description: "Keep stair layouts, code checks, and cut sheets together." },
-      { href: "/apps/jobphotolog-work-reports/", icon: "JP", title: "JobPhotoLog", description: "Organize jobsite photos, before-and-after proof, signatures, punch lists, and PDF reports." },
-      { href: "/apps/snapreceipt-expenses-and-tax/", icon: "SR", title: "SnapReceipt", description: "Scan receipts and prepare expense or tax records." },
-      { href: "/apps/pdf-scan-scanner-and-reader/", icon: "PS", title: "PDF Scan", description: "Turn paper documents into readable PDFs." },
-      { href: "/apps/moodloop-mood-tracker-journal/", icon: "ML", title: "MoodLoop", description: "Track daily moods, notes, patterns, and personal insights privately on iPhone." },
-      { href: "/apps/tinnitus-relief-sound-masking/", aliases: ["/tinnitus/"], icon: "TN", title: "Tinnitus Relief", description: "Masking sounds and hearing-profile tools for iPhone." },
-      { href: "/apps/", icon: "AP", title: "All apps", description: "Browse the full app library and comparisons.", exact: true }
+      { href: "/apps/stringer/", aliases: ["/apps/stringer-stair-layout/"], icon: "ST", title: "Stringer app", description: "Keep stair layouts, code checks, and cut sheets together." }
+    ];
+    const everydayApps = [
+      { href: "/apps/thumbtype-typing-speed-test/", icon: "TT", title: "ThumbType", description: "Practice typing offline with timed WPM tests and accuracy tracking." },
+      { href: "/apps/atomic-clock-precision-time/", icon: "AC", title: "Atomic Clock", description: "Check precise network time, local time, UTC, and device clock offset." },
+      { href: "/apps/private-meeting-transcriber/", icon: "PV", title: "Priviscribe", description: "Transcribe meetings, interviews, and voice notes privately on your device." }
+    ];
+    const fabricationApps = [
+      { href: "/apps/ductlab-hvac-duct-layout/", icon: "DL", title: "DuctLab", description: "Lay out HVAC fittings, estimate sheet metal, and export fabrication PDFs." },
+      { href: "/apps/casework-cabinet-cut-lists/", icon: "CW", title: "Casework", description: "Plan cabinet parts, sheet layouts, and PDF or CSV cut lists." },
+      { href: "/apps/", icon: "AP", title: "All apps", description: "Browse the full app library and comparisons.", exact: true },
+      { href: "/apps/compare/", icon: "VS", title: "App comparisons", description: "Compare app workflows against common alternatives." }
     ];
 
     const resources = [
@@ -397,7 +402,12 @@
     ];
 
     const toolsMenu = `<div class="mega-menu" role="group" aria-label="Tools menu">${megaFeature({ href: "/tools/", title: "Choose a calculator by project", description: "Browse focused woodworking and construction tools without mixing unrelated app categories into the planning hub.", cta: "Browse tools ->", visual: "tools" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Woodworking Tools</p>${menuLink({ href: "/tools/woodworking/", icon: "WW", title: "Woodworking hub", description: "Cut and layout, cabinets, furniture, wood, and materials." })}${tools.slice(0, 3).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Construction Tools</p>${menuLink({ href: "/tools/construction/", icon: "CN", title: "Construction hub", description: "Stairs, tile, deck, fence, wall, roof, and concrete." })}${tools.slice(3, 6).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Latest tools</p>${latestTools.slice(0, 4).map(menuLink).join("")}</div></div></div>`;
-    const appsMenu = `<div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for saved workflows", description: "Use the website for quick checks, then move repeatable projects into focused iPhone apps when you need saved records.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns"><div class="mega-column"><p class="mega-column-title">Planning apps</p>${apps.slice(0, 4).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">Document apps</p>${apps.slice(4, 7).map(menuLink).join("")}</div><div class="mega-column"><p class="mega-column-title">More apps</p>${apps.slice(7, 10).map(menuLink).join("")}${menuLink({ href: "/apps/compare/", icon: "VS", title: "App comparisons", description: "Compare app workflows against common alternatives." })}</div></div></div>`;
+    const appColumns = [
+      { title: "Planning apps", links: planningApps },
+      { title: "Everyday tools", links: everydayApps },
+      { title: "Fabrication & explore", links: fabricationApps }
+    ];
+    const appsMenu = `<div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for work and practice", description: "Save project plans, prepare fabrication layouts, and build typing skills with focused iPhone apps.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns">${appColumns.map((column) => `<div class="mega-column"><p class="mega-column-title">${column.title}</p>${column.links.map(menuLink).join("")}</div>`).join("")}</div></div>`;
 
     return `<div class="nav-links nav-links-mega" id="site-navigation">${navMenuItem({ href: "/tools/", label: "Tools", aliases: [...tools.map((item) => item.href), "/cabinet-studio/", "/shelf-pin-layout/", "/glue-up/", "/edge-banding/", "/assembly-check/", "/finishing-planner/", "/wood-movement/"], menu: toolsMenu })}${resourceNavMenu(projectsMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(resourcesMenu)}${navMenuItem({ href: "/apps/", label: "Apps", menu: appsMenu })}</div>`;
   }
