@@ -49,6 +49,8 @@ baseline and checks responsive image fallbacks and duplicate requests.
 
 The [Shelf Pin Studio](docs/shelf-pin-studio.md) at `/shelf-pin-layout/` adds paired cabinet drilling maps, hardware keep-outs, depth review, local records, CSV/SVG exports and six field guides. Regenerate it with `npm run generate:shelf-pin`.
 
+The [Joinery Lab](docs/joinery-lab.md) at `/joinery-lab/` adds six interactive joint-layout planners and eighteen distinct field guides. It shares a browser-local project, supports mm/in display, physical observations and CSV/SVG/JSON records. Regenerate with `npm run generate:joinery-lab`.
+
 The [Finishing Planner](docs/finishing-planner.md) at `/finishing-planner/` extends the panel workflow to coated surfaces, product coverage and a local purchase list. Regenerate it with `npm run generate:finishing`.
 
 ```sh

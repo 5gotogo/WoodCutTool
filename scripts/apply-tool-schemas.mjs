@@ -498,6 +498,7 @@ function pageGraph(tool) {
 function toolsHubGraph() {
   const browserTools = softwareTools.filter((tool) => !tool.path.startsWith("/apps/"));
   const referenceTools = [
+    { path: "/joinery-lab/", name: "Joinery Lab" },
     { path: "/shelf-pin-layout/", name: "Shelf Pin Studio" },
     { path: "/glue-up/", name: "Glue-Up Planner" },
     { path: "/assembly-check/", name: "Assembly Check" },

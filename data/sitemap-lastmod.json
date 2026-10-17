@@ -1,12 +1,12 @@
 {
   "/": {
-    "lastmod": "2026-10-15",
-    "hash": "a91624adcaafb400167a876df4e5e8a69d6dc4f3d7a2ac7b8820e0665fdb5f74",
+    "lastmod": "2026-10-18",
+    "hash": "e0253b48f6739bcf84b32cbb34add64fd45d46a93852ee2daa65f2bb8b4a8d72",
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-10-15",
-    "hash": "ba851189277bbfbfb8d7a4bcf9d5c588e68f678796ec1009e4266bf5301ee5cf",
+    "lastmod": "2026-10-18",
+    "hash": "cef421230e9d94ffa1abe75340a38dcae20902c2d8093cea45f5ccffd7881284",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -8254,6 +8254,131 @@
     "hash": "a9cfb36bc0245e9c878de1caa60626a40920475329980eaa7776dd8b9db19107",
     "hashVersion": 2
   },
+  "/joinery-lab/": {
+    "lastmod": "2026-10-18",
+    "hash": "326a3c3c8c8d15ebe84e638ff687a238734418217fc4d082e3adac1378979908",
+    "hashVersion": 2
+  },
+  "/joinery-lab/blind-mortise-ends-and-corners/": {
+    "lastmod": "2026-10-18",
+    "hash": "03dd834b83c24681bd2d4f422196611c4b2b4ddba7bdc6e6603f9fddf1068642",
+    "hashVersion": 2
+  },
+  "/joinery-lab/box-joint-count-and-remainder/": {
+    "lastmod": "2026-10-18",
+    "hash": "3e6ebb83f2c9ef70663ea3b3b78727d2372bf4e5ba26a93c7f53da18dc7fe025",
+    "hashVersion": 2
+  },
+  "/joinery-lab/box-joint-depth-unequal-panels/": {
+    "lastmod": "2026-10-18",
+    "hash": "2074802e1a7c4023fe645bd60ee1d5316158e1444aca921785a8994fc4cc8f46",
+    "hashVersion": 2
+  },
+  "/joinery-lab/box-joint-fit-and-four-corners/": {
+    "lastmod": "2026-10-18",
+    "hash": "ce8991f2e2585b516aaf3c82421959a7e9e7d2cbc81587610b02910d077f418a",
+    "hashVersion": 2
+  },
+  "/joinery-lab/box-joint-planner/": {
+    "lastmod": "2026-10-18",
+    "hash": "2fe03e67088fe2afc64e08f0bd87c00903fe6cce42557f4f6a987d34280e2c77",
+    "hashVersion": 2
+  },
+  "/joinery-lab/centered-tenon-shoulder-layout/": {
+    "lastmod": "2026-10-18",
+    "hash": "67d20678dde4a8ec77c573aafb2b8dfc30571210daeefd2802c753ea1a6d6ae0",
+    "hashVersion": 2
+  },
+  "/joinery-lab/dado-groove-planner/": {
+    "lastmod": "2026-10-18",
+    "hash": "c49b4e6868baf023b4bdab7d5f4490ec82f46100b7bb3de3af8e6de285e56f0f",
+    "hashVersion": 2
+  },
+  "/joinery-lab/diagnose-a-rocking-half-lap/": {
+    "lastmod": "2026-10-18",
+    "hash": "484f7fa2b0cbd25dd3006bd81be39632e5548005496360e7cae61dfde2d44eec",
+    "hashVersion": 2
+  },
+  "/joinery-lab/dowel-bore-depth-and-tip/": {
+    "lastmod": "2026-10-18",
+    "hash": "326045cc51eecb361adb4b687bd258069f27b70f081c2402e49678d268e8cdca",
+    "hashVersion": 2
+  },
+  "/joinery-lab/dowel-row-planner/": {
+    "lastmod": "2026-10-18",
+    "hash": "00be905c1ebcb33854f22f538437c27bb8682568e2eff4c42fa117dbfbfad059",
+    "hashVersion": 2
+  },
+  "/joinery-lab/dowel-row-spacing-and-drift/": {
+    "lastmod": "2026-10-18",
+    "hash": "6e8e11fbd5881c3c56272ae0049a46ef107d77c7089a95c932ffdd4fc5fae9ff",
+    "hashVersion": 2
+  },
+  "/joinery-lab/fit-a-back-panel-seat/": {
+    "lastmod": "2026-10-18",
+    "hash": "4ead5727f5e5903e3ecfdc25fc6c9c171fbc8cacaedbb9f5573bad943b26a247",
+    "hashVersion": 2
+  },
+  "/joinery-lab/half-lap-planner/": {
+    "lastmod": "2026-10-18",
+    "hash": "485d65b8edce196622a498e1c22db4338358fa765390d3d13009cd4d2bf5eb06",
+    "hashVersion": 2
+  },
+  "/joinery-lab/map-corresponding-dowel-faces/": {
+    "lastmod": "2026-10-18",
+    "hash": "2912db43bea3897c9dd013fe13ded4416e732138a3386d932c0ca051bb87b736",
+    "hashVersion": 2
+  },
+  "/joinery-lab/measure-plywood-for-a-dado/": {
+    "lastmod": "2026-10-18",
+    "hash": "827d7841c760747085535976e81f092cf8b0f02faac2fdaffa3cf9fdec4f47f4",
+    "hashVersion": 2
+  },
+  "/joinery-lab/mortise-tenon-planner/": {
+    "lastmod": "2026-10-18",
+    "hash": "2d1a46f20ffa9e8f19bbc75aa9aaa6ceb1770b3f3469b60388fb523ca566b6e0",
+    "hashVersion": 2
+  },
+  "/joinery-lab/opposing-dado-datums/": {
+    "lastmod": "2026-10-18",
+    "hash": "d11f23d7cae899fa25908c2c11b683c9772e0e46c14da8db0897084eb1e789df",
+    "hashVersion": 2
+  },
+  "/joinery-lab/rabbet-assembly-and-finish/": {
+    "lastmod": "2026-10-18",
+    "hash": "c33e28a9883c8ae2a8f468c760ab754d2e56402aba298ddb62653c06f41d736a",
+    "hashVersion": 2
+  },
+  "/joinery-lab/rabbet-rebate-planner/": {
+    "lastmod": "2026-10-18",
+    "hash": "c1e4f79b7924972f6fc2e8f9f43a9c633e85bbc65fdc7c9846794401b4f01bd8",
+    "hashVersion": 2
+  },
+  "/joinery-lab/rabbet-shoulder-and-case-size/": {
+    "lastmod": "2026-10-18",
+    "hash": "143e1495a539e36aeb0347f2e95d9a9c5d78f155b621cc13ffa3b4a3d6335789",
+    "hashVersion": 2
+  },
+  "/joinery-lab/repeatable-lap-shoulders/": {
+    "lastmod": "2026-10-18",
+    "hash": "c1cc6e7051d86312f4a0a72454e4929b3b03657e079250d7ce5554b661385474",
+    "hashVersion": 2
+  },
+  "/joinery-lab/tenon-fit-coupon-record/": {
+    "lastmod": "2026-10-18",
+    "hash": "5dbc712689063ed151b98ee2edffa5114071800d90e4d0c5e2554f93b714cc11",
+    "hashVersion": 2
+  },
+  "/joinery-lab/through-versus-stopped-housings/": {
+    "lastmod": "2026-10-18",
+    "hash": "bacee0167d9ab744bc6ed7554fb8af682a01ee8af7e06cdd6c453ab2dc652b44",
+    "hashVersion": 2
+  },
+  "/joinery-lab/unequal-stock-half-laps/": {
+    "lastmod": "2026-10-18",
+    "hash": "b06d41d67593d9234427bddeb77dd818d45a4468b95c01426191d7aaed9b78c4",
+    "hashVersion": 2
+  },
   "/joist-span-calculator/": {
     "lastmod": "2026-09-16",
     "hash": "34b7fe44f2e601ec3fe79dd7b9e15b9ac84ea1ea85f092e27a21f8905e6d503a",
@@ -10285,8 +10410,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-10-15",
-    "hash": "bf7c21afd85cb1f994c9c682fba72bf5e7ca45341469a909201b48bc019b0bbb",
+    "lastmod": "2026-10-18",
+    "hash": "cbb31b28fc83b53d3e8e90dfa1eb673922a59326c6eaaff057a58bc4bbb0fcb2",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

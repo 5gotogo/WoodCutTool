@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "name": "Workshop joinery study",
+  "revision": "A",
+  "unit": "mm",
+  "notes": "",
+  "values": {
+    "dado": {
+      "host": 18,
+      "mate": 17.8,
+      "fit": 0.15,
+      "depth": 6,
+      "start": 40,
+      "width": 300
+    },
+    "rabbet": {
+      "host": 18,
+      "mate": 6,
+      "fit": 0.15,
+      "depth": 9,
+      "width": 180
+    },
+    "half-lap": {
+      "a": 18,
+      "b": 18,
+      "wa": 40,
+      "wb": 50,
+      "stack": 18,
+      "da": 9,
+      "fit": 0.15
+    },
+    "mortise-tenon": {
+      "host": 24,
+      "hostWidth": 70,
+      "hostDepth": 40,
+      "rail": 22,
+      "railWidth": 60,
+      "tenon": 8,
+      "tenonWidth": 36,
+      "length": 25,
+      "depth": 27,
+      "fit": 0.1
+    },
+    "dowel": {
+      "length": 300,
+      "width": 60,
+      "host": 18,
+      "diameter": 8,
+      "count": 4,
+      "end": 30,
+      "offset": 30,
+      "bore": 12,
+      "tip": 2,
+      "dowelLength": 22
+    },
+    "box": {
+      "width": 120,
+      "finger": 10,
+      "a": 12,
+      "b": 12.1,
+      "proud": 0.2
+    }
+  },
+  "evidence": {
+    "dado": [
+      false,
+      false,
+      false
+    ],
+    "rabbet": [
+      false,
+      false,
+      false
+    ],
+    "half-lap": [
+      false,
+      false,
+      false
+    ],
+    "mortise-tenon": [
+      false,
+      false,
+      false
+    ],
+    "dowel": [
+      false,
+      false,
+      false
+    ],
+    "box": [
+      false,
+      false,
+      false
+    ]
+  }
+}
