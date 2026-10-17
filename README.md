@@ -28,6 +28,25 @@ That command also compiles `assets/apps.css` from `assets/styles.css` using Ligh
 
 ## Validation
 
+The first-paint pipeline in `npm run apply:nav-cta` inlines the complete scoped
+CSS, preserves route-specific CSS order, preloads the shared header logo, and
+adds image-origin connections only to pages with eager remote images. Blog and
+Learn photos use matching AVIF picture/preload candidates with WebP fallbacks.
+Template pictures also offer 480/960/1448px AVIF candidates. Critical navigation
+and calculator bootstraps preload before inline CSS while keeping deferred
+execution order, avoiding late script discovery on a busy main thread.
+Edit the generators and `assets/styles.css`; generated inline copies refresh on
+every build. CSS tokens must not determine which page runtimes are loaded.
+
+For a reproducible loading budget, start the preview with
+`WCT_PREVIEW_GZIP=1 WCT_PREVIEW_HTML_DELAY_MS=250 npm run dev`. Then run
+`scripts/audit-site-performance.mjs` with a dedicated Chrome CDP port and
+`--max-lcp=1000 --max-load=1000`. Every measured run must pass, and raw failing
+samples remain in the JSON report. The optional HTML delay is preview-only;
+local measurements do not establish production DNS, TLS, TTFB, or field P75.
+`npm run test:loading-browser` compares actual styles against the Git HEAD
+baseline and checks responsive image fallbacks and duplicate requests.
+
 The [Shelf Pin Studio](docs/shelf-pin-studio.md) at `/shelf-pin-layout/` adds paired cabinet drilling maps, hardware keep-outs, depth review, local records, CSV/SVG exports and six field guides. Regenerate it with `npm run generate:shelf-pin`.
 
 The [Finishing Planner](docs/finishing-planner.md) at `/finishing-planner/` extends the panel workflow to coated surfaces, product coverage and a local purchase list. Regenerate it with `npm run generate:finishing`.

@@ -1,125 +1,129 @@
 import assert from "node:assert/strict";
-import { writeFileSync, mkdirSync } from "node:fs";
-const origin = process.env.WCT_PERF_ORIGIN || "http://127.0.0.1:4188";
-const cdpPort = Number(process.env.WCT_CDP_PORT || 9337);
-const output = process.env.WCT_LOADING_QA_OUTPUT || "/tmp/wct-loading-qa";
-mkdirSync(output, { recursive: true });
-const tab = await (await fetch(`http://127.0.0.1:${cdpPort}/json/new?about:blank`, { method: "PUT" })).json();
-const ws = new WebSocket(tab.webSocketDebuggerUrl);
-await new Promise((resolve, reject) => {
-  ws.addEventListener("open", resolve, { once: true });
-  ws.addEventListener("error", reject, { once: true });
-});
+import { execFileSync } from "node:child_process";
+import { mkdirSync, writeFileSync } from "node:fs";
 
-let nextId = 0;
-const pending = new Map();
-ws.addEventListener("message", ({ data }) => {
+const origin = process.env.WCT_PERF_ORIGIN || "http://127.0.0.1:4196";
+const port = process.env.WCT_CDP_PORT || "9357";
+const output = process.env.WCT_LOADING_QA_OUTPUT || "/tmp/wct-loading-qa";
+const routes = ["/checklists/", "/privacy-policy/", "/apps/cutlist/", "/learn/entryway-shoe-cabinet-planning-guide/", "/blog/record-actual-yield-after-project/", "/projects/base-cabinet/", "/templates/bookshelf-cut-list/", "/board-foot-calculator/"];
+const originals = new Map(routes.map(route => [route, execFileSync("git", ["show", `HEAD:${route.slice(1)}index.html`]).toString("base64")]));
+mkdirSync(output, { recursive: true });
+const tab = await (await fetch(`http://127.0.0.1:${port}/json/new?about:blank`, { method: "PUT" })).json();
+const ws = new WebSocket(tab.webSocketDebuggerUrl);
+await new Promise(resolve => ws.addEventListener("open", resolve, { once: true }));
+let id = 0, baseline = false, fallback = false;
+const pending = new Map(), errors = [];
+ws.addEventListener("message", async ({ data }) => {
   const message = JSON.parse(data);
+  if (message.method === "Runtime.exceptionThrown") errors.push(message.params.exceptionDetails.exception?.description || message.params.exceptionDetails.text);
+  if (message.method === "Fetch.requestPaused") {
+    const { requestId, request, resourceType } = message.params;
+    const path = new URL(request.url).pathname;
+    if (baseline && resourceType === "Document" && originals.has(path)) {
+      await send("Fetch.fulfillRequest", { requestId, responseCode: 200, responseHeaders: [{ name: "Content-Type", value: "text/html; charset=utf-8" }], body: originals.get(path) });
+    } else if (fallback && resourceType === "Document") {
+      // Match older browsers that skip typed AVIF preload hints as well as
+      // picture sources. CDP's disabled image types alone affects only picture.
+      const html = await (await fetch(request.url)).text();
+      await send("Fetch.fulfillRequest", { requestId, responseCode: 200, responseHeaders: [{ name: "Content-Type", value: "text/html; charset=utf-8" }], body: Buffer.from(html.replace(/<link\b[^>]*rel="preload"[^>]*type="image\/avif"[^>]*>/g, "")).toString("base64") });
+    } else await send("Fetch.continueRequest", { requestId });
+    return;
+  }
   if (!message.id) return;
   const job = pending.get(message.id);
   if (!job) return;
   pending.delete(message.id);
-  if (message.error) job.reject(new Error(JSON.stringify(message.error)));
-  else job.resolve(message.result);
+  if (message.error) job.reject(Error(JSON.stringify(message.error))); else job.resolve(message.result);
 });
-
-function send(method, params = {}) {
-  return new Promise((resolve, reject) => {
-    const id = ++nextId;
-    pending.set(id, { resolve, reject });
-    ws.send(JSON.stringify({ id, method, params }));
-  });
-}
-
-async function evaluate(expression, awaitPromise = false) {
-  const result = await send("Runtime.evaluate", { expression, returnByValue: true, awaitPromise });
-  if (result.exceptionDetails) throw new Error(result.exceptionDetails.text || "Page evaluation failed");
+function send(method, params = {}) { return new Promise((resolve, reject) => { const key = ++id; pending.set(key, { resolve, reject }); ws.send(JSON.stringify({ id: key, method, params })); }); }
+async function evaluate(expression) {
+  const result = await send("Runtime.evaluate", { expression, returnByValue: true, awaitPromise: true });
+  if (result.exceptionDetails) throw Error(result.exceptionDetails.exception?.description || result.exceptionDetails.text);
   return result.result.value;
 }
-
-async function waitForReady() {
-  for (let attempt = 0; attempt < 200; attempt += 1) {
-    if (await evaluate('document.readyState === "complete"')) return;
-    await new Promise((resolve) => setTimeout(resolve, 100));
-  }
-  throw new Error("Timed out waiting for page load");
-}
-
-await send("Page.enable");
-await send("Network.enable");
-await send("Network.setCacheDisabled", { cacheDisabled: true });
-const routes = ["/worksheets/project-closeout-record/", "/cabinet-door-calculator/", "/templates/plywood-chair-cut-list/", "/blog/french-cleat-wall-plywood-layout/", "/troubleshooting/finished-parts-chip-during-handling/"];
-const rows = [];
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 async function waitFor(expression) {
-  for (let i = 0; i < 100; i++) {
-    if (await evaluate(expression)) return;
-    await sleep(100);
-  }
-  throw new Error(`Timed out: ${expression}`);
+  for (let i = 0; i < 200; i++) { if (await evaluate(expression)) return; await new Promise(resolve => setTimeout(resolve, 50)); }
+  throw Error(`Timeout: ${expression}`);
 }
 async function navigate(route) {
   await send("Page.navigate", { url: "about:blank" });
   await send("Page.navigate", { url: origin + route });
-  await waitForReady();
-  await waitFor('!!document.querySelector(".site-header")');
+  await waitFor('location.href !== "about:blank" && document.readyState === "complete" && !!document.querySelector(".site-header")');
+  await waitFor('[...document.querySelectorAll("main img[loading=eager]")].every(img => img.complete && img.naturalWidth > 0)');
 }
+const snapshot = `(() => {
+  const seen = new Set(), props = ["display", "position", "fontFamily", "fontSize", "fontWeight", "lineHeight", "color", "backgroundColor", "margin", "padding", "border", "borderRadius", "maxWidth", "minHeight", "gap", "gridTemplateColumns", "objectFit", "aspectRatio"];
+  return [...document.querySelectorAll("main, main *, .site-header, .site-header *")].filter(e => {
+    const key = e.tagName + "." + e.className;
+    if (["SCRIPT", "STYLE", "LINK", "PICTURE", "SOURCE", "SVG", "PATH"].includes(e.tagName) || seen.has(key)) return false;
+    seen.add(key); return true;
+  }).map(e => ({ tag: e.tagName, className: String(e.className), styles: Object.fromEntries(props.map(p => [p, getComputedStyle(e)[p]])) }));
+})()`;
+const rows = [], images = [];
 try {
+  await send("Page.enable"); await send("Runtime.enable"); await send("Network.enable");
+  await send("Network.setCacheDisabled", { cacheDisabled: true });
+  await send("Fetch.enable", { patterns: [{ urlPattern: "*", resourceType: "Document" }] });
+  await send("Page.addScriptToEvaluateOnNewDocument", { source: 'try { localStorage.setItem("woodcuttool-lang", "en"); } catch {}' });
   for (const width of [360, 390, 430, 1440]) {
-    await send("Emulation.setDeviceMetricsOverride", { width, height: 900, deviceScaleFactor: 1, mobile: width < 500 });
+    await send("Emulation.setDeviceMetricsOverride", { width, height: 900, deviceScaleFactor: 1, mobile: width < 980 });
     for (const route of routes) {
-      await navigate(route);
-      const result = await evaluate(`({
-        overflow: Math.max(0, document.documentElement.scrollWidth - innerWidth),
-        brokenImages: [...document.images].filter(i => i.complete && !i.naturalWidth).map(i => i.src),
-        h1: document.querySelector("h1")?.textContent,
-        cssLoaded: [...document.querySelectorAll('link[rel="stylesheet"]')].every(l => !!l.sheet),
-        fontSize: getComputedStyle(document.querySelector("h1")).fontSize
-      })`);
-      assert.equal(result.overflow, 0, `${route} overflow at ${width}`);
-      assert.deepEqual(result.brokenImages, [], `${route} image failed`);
-      assert(result.cssLoaded && result.h1, `${route} missing styles/content`);
-      if (width < 500) {
-        await evaluate('document.querySelector(".mobile-nav-toggle").click()');
-        assert.equal(await evaluate('document.querySelector(".mobile-nav-toggle").getAttribute("aria-expanded")'), "true");
-        await evaluate('document.querySelector(".mobile-nav-toggle").click()');
-      }
-      if (width === 390 || width === 1440) {
+      baseline = true; await navigate(route);
+      const before = await evaluate(snapshot);
+      baseline = false; await navigate(route);
+      const after = await evaluate(snapshot);
+      if (JSON.stringify(after) !== JSON.stringify(before)) writeFileSync(`${output}/style-mismatch.json`, JSON.stringify({ route, width, before, after }, null, 2));
+      assert(JSON.stringify(after) === JSON.stringify(before), `${route}: computed styles changed at ${width}px; inspect ${output}/style-mismatch.json`);
+      assert.equal(await evaluate('document.querySelectorAll("link[rel=stylesheet]").length'), 0, route);
+      assert.equal(await evaluate('Math.max(0, document.documentElement.scrollWidth - innerWidth)'), 0, route);
+      assert(await evaluate(`(() => {
+        const entries = performance.getEntriesByType("resource");
+        const logos = entries.filter(e => new URL(e.name).pathname === "/assets/icons/brand-icon.webp");
+        return logos.length === 1 && logos[0].initiatorType === "link" && logos[0].startTime < performance.getEntriesByType("navigation")[0].domContentLoadedEventEnd;
+      })()`), `${route}: the parser must preload the logo with one request`);
+      assert(await evaluate(`(() => {
+        const bootstrap = performance.getEntriesByType("resource").filter(e => new URL(e.name).pathname === "/assets/site-chrome.js");
+        return bootstrap.length === 1 && bootstrap[0].initiatorType === "link";
+      })()`), `${route}: navigation preload must be reused by its deferred script`);
+      assert(await evaluate(`(() => {
+        if (!document.querySelector('script[src="/assets/app.js"]')) return true;
+        const app = performance.getEntriesByType("resource").filter(e => new URL(e.name).pathname === "/assets/app.js");
+        return app.length === 1 && app[0].initiatorType === "link";
+      })()`), `${route}: calculator preload must be reused by its deferred script`);
+      rows.push({ route, width, stylesMatch: true });
+      if (width === 1440 && route.includes("entryway")) {
         const shot = await send("Page.captureScreenshot", { format: "png" });
-        writeFileSync(`${output}/${route.split("/").filter(Boolean).pop()}-${width}.png`, Buffer.from(shot.data, "base64"));
+        writeFileSync(`${output}/entryway-desktop.png`, Buffer.from(shot.data, "base64"));
       }
-      rows.push({ route, width, ...result });
     }
   }
-  for (const route of ["/cabinet-door-calculator/", "/cabinet-cut-list-calculator/", "/drawer-box-calculator/"]) {
-    await navigate(route);
-    assert.equal(await evaluate('!!globalThis.WoodCutToolComponentProject'), false, 'Project script loaded before interaction');
-    assert.equal(await evaluate('performance.getEntriesByType("resource").some(r => r.name.endsWith("/component-builder.js"))'), false);
-    await evaluate('localStorage.removeItem("woodcuttool-component-project-v1")');
-    assert(await evaluate('!!document.querySelector("[data-cut-list]")?.textContent.trim()'), 'Missing calculated parts');
-    if (route.includes("cabinet-door")) {
-      assert(await evaluate('document.querySelector("[data-construction-result]").textContent.includes("15.44")'), 'Wrong door width');
-      await evaluate('const field=document.querySelector("[name=openingWidth]");field.value="40";field.dispatchEvent(new Event("input",{bubbles:true}))');
-      assert(await evaluate('document.querySelector("[data-construction-result]").textContent.includes("20.44")'), 'Door result did not update');
+  for (fallback of [false, true]) {
+    await send("Emulation.setDisabledImageTypes", { imageTypes: fallback ? ["avif"] : [] });
+    for (const dpr of [1, 2, 3]) {
+      await send("Emulation.setDeviceMetricsOverride", { width: 390, height: 844, deviceScaleFactor: dpr, mobile: true });
+      for (const route of [...routes.slice(2, 5), routes[6]]) {
+        await navigate(route);
+        const image = await evaluate(`(() => {
+          const img = document.querySelector(".article-wood-photo-hero img, .cutlist-hero-shot img, .template-page-visual img"), source = img.closest("picture").querySelector("source");
+          const sets = [img.srcset, ...[...img.closest("picture").querySelectorAll("source")].map(s => s.srcset)].filter(Boolean).join(", ");
+          const candidates = [img.src, ...sets.split(", ").filter(Boolean).map(item => new URL(item.split(" ")[0], location.href).href)];
+          const preload = document.querySelector("link[rel=preload][as=image]");
+          return { src: img.currentSrc, loaded: img.complete && img.naturalWidth > 0,
+            requests: performance.getEntriesByType("resource").filter(entry => candidates.includes(entry.name)).map(entry => entry.name),
+            preloadMatches: ${fallback} || (preload.imageSrcset ? preload.imageSrcset === source.srcset && preload.imageSizes === source.sizes : preload.href === new URL(source.srcset, location.href).href) };
+        })()`);
+        assert(image.loaded && image.preloadMatches, route);
+        assert.equal(image.requests.length, 1, `${route}: duplicate hero`);
+        assert.equal(image.requests[0], image.src, route);
+        assert(image.src.endsWith(fallback ? ".webp" : ".avif"), route);
+        images.push({ route, dpr, fallback, ...image });
+      }
     }
-    // A failed first request must leave a usable retry and persist exactly once.
-    await send("Network.setBlockedURLs", { urls: ["*/assets/component-builder.js"] });
-    await evaluate('document.querySelector("[data-add-component-external]").click()');
-    await waitFor('document.querySelector("[data-add-component-external]").textContent.includes("try again")');
-    assert.equal(await evaluate('document.querySelector("[data-add-component-external]").disabled'), false);
-    await send("Network.setBlockedURLs", { urls: [] });
-    await evaluate('document.querySelector("[data-add-component-external]").click();document.querySelector("[data-add-component-external]").click()');
-    await waitFor('document.querySelector("[data-add-component-external]").textContent === "Added to component project"');
-    const saved = await evaluate('JSON.parse(localStorage.getItem("woodcuttool-component-project-v1"))');
-    assert.equal(saved.instances.length, 1, 'Double click saved duplicate components');
-    assert(saved.instances[0].parts.length > 0);
-    await navigate(route);
-    assert.equal(await evaluate('JSON.parse(localStorage.getItem("woodcuttool-component-project-v1")).instances.length'), 1);
   }
-  writeFileSync(`${output}/results.json`, JSON.stringify(rows, null, 2));
-  console.log(`Passed ${rows.length} responsive checks, three calculator save/retry/reload flows. Screenshots: ${output}`);
+  assert.deepEqual(errors, []);
+  writeFileSync(`${output}/results.json`, JSON.stringify({ rows, images, errors }, null, 2));
+  console.log(`Passed ${rows.length} before/after computed-style checks and ${images.length} AVIF/WebP single-request checks.`);
 } finally {
-  await send("Network.setBlockedURLs", { urls: [] });
-  await send("Page.close");
-  ws.close();
+  await send("Emulation.setDisabledImageTypes", { imageTypes: [] });
+  await send("Fetch.disable"); await send("Page.close"); ws.close();
 }

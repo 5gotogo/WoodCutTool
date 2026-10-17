@@ -92,3 +92,18 @@ export function woodworkingImageFor(key, offset = 0) {
   const position = ((offset % indexes.length) + indexes.length) % indexes.length;
   return woodworkingImages[indexes[position]];
 }
+
+// The typed preload and picture share candidates so AVIF-capable browsers
+// never download the WebP fallback as a second hero image.
+const articleSizes = "(max-width: 760px) calc(100vw - 32px), 760px";
+export function woodworkingPreload(src) {
+  const small = src.replace(/\.webp$/, "-480.avif");
+  const full = src.replace(/\.webp$/, "-960.avif");
+  return `<link rel="preload" as="image" type="image/avif" href="${small}" imagesrcset="${small} 480w, ${full} 960w" imagesizes="${articleSizes}" fetchpriority="high">`;
+}
+
+export function woodworkingPicture(img, src) {
+  const small = src.replace(/\.webp$/, "-480.avif");
+  const full = src.replace(/\.webp$/, "-960.avif");
+  return `<picture style="display:contents"><source type="image/avif" srcset="${small} 480w, ${full} 960w" sizes="${articleSizes}">${img}</picture>`;
+}

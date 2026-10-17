@@ -121,7 +121,7 @@ for (const { entry, html } of generated) {
   assert(/[.!?]$/.test(description), `${entry.slug} meta description must end as a complete sentence.`);
   assert(!/\b(?:a|an|and|or|the|with|for|to|of)\.$/i.test(description), `${entry.slug} meta description ends in a clipped fragment: ${description}`);
   descriptions.push(description);
-  assert(html.includes('<link rel="stylesheet" href="/assets/project-playbooks.css">'), `${entry.slug} is missing the scoped Projects stylesheet.`);
+  assert(html.includes('<link rel="stylesheet" href="/assets/project-playbooks.css">') || html.includes(`<style data-page-styles="/assets/project-playbooks.css">${read("assets/project-playbooks.css")}</style>`), `${entry.slug} is missing the scoped Projects stylesheet.`);
   assert(html.includes("<style>.mega-menu{display:none}</style>"), `${entry.slug} is missing the canonical mega-menu fallback.`);
   const scriptOrder = [
     '/assets/project-playbooks.js',

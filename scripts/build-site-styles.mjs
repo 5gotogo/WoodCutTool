@@ -102,6 +102,11 @@ export function inlineScreenshotRouteStyles() {
     ["legal", compileLegalStyles()],
     ["wood-database", compileWoodDatabaseStyles()],
     ["plywood", compilePlywoodStyles()],
+    ["checklists", compileChecklistStyles()],
+    ["content", compileContentStyles()],
+    ["interactive", compileInteractiveStyles()],
+    ["planning", compilePlanningStyles()],
+    ["templates", compileTemplateStyles()],
   ]) {
     for (const file of result.pages) {
       const path = join(root, file);

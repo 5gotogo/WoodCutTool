@@ -46,4 +46,15 @@ assert.notEqual(
   "page-specific image changes must refresh sitemap lastmod"
 );
 
+const photo = baseline.replace("/assets/example.webp", "/assets/images/woodworking/example.webp");
+const encodedPhoto = photo.replace(/(<img[^>]*>)/, '<picture style="display:contents"><source type="image/avif" srcset="/assets/images/woodworking/example-480.avif 480w">$1</picture>')
+  .replace("</head>", '<link rel="preconnect" href="https://is1-ssl.mzstatic.com"></head>');
+assert.equal(sitemapContentSignature(encodedPhoto), sitemapContentSignature(photo), "photo encoding and image connections must not refresh lastmod");
+const template = baseline.replace(/(<img[^>]*>)/, '<picture><source type="image/webp" srcset="/assets/images/templates/example.webp">$1</picture>');
+const templateAvif = template.replace('<picture>', '<picture><source type="image/avif" srcset="/assets/images/templates/example-960.avif 960w">');
+assert.equal(sitemapContentSignature(template), sitemapContentSignature(templateAvif), "additional template encoding must not refresh lastmod");
+const compact = '<head><meta name="viewport" content="width=device-width"><title>Plan</title></head><main>Plan</main>';
+const hinted = compact.replace('<title>', '\n  <link rel="preload" data-site-bootstrap as="script" href="/assets/site-chrome.js" fetchpriority="low"><title>');
+assert.equal(sitemapContentSignature(compact), sitemapContentSignature(hinted), "bootstrap hint whitespace must not refresh compact pages");
+
 console.log("Sitemap signal tests passed.");

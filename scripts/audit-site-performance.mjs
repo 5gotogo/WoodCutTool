@@ -11,6 +11,8 @@ const cdpPort = Number(args["cdp-port"] || process.env.WCT_CDP_PORT || 9337);
 const runs = Math.max(1, Number(args.runs || process.env.WCT_PERF_RUNS || 3));
 const deviceScaleFactor = Math.max(1, Number(args.dpr || process.env.WCT_PERF_DPR || 1));
 const language = args.lang || "en";
+const maxLcp = Number(args["max-lcp"] || 0);
+const maxLoad = Number(args["max-load"] || 0);
 const viewportWidth = Math.max(320, Number(args.width || 390));
 const viewportHeight = Math.max(400, Number(args.height || 844));
 const routes = (args.routes || process.env.WCT_PERF_ROUTES || [
@@ -34,8 +36,8 @@ const routes = (args.routes || process.env.WCT_PERF_ROUTES || [
 
 // Truncated analytics labels are easy to map to nonexistent routes. A styled
 // 404 is not evidence about the intended page's loading performance.
-for (const route of routes) {
-  const response = await fetch(`${origin}${route}`, { method: "HEAD" });
+for (const route of args.preflight === "false" ? [] : routes) {
+  const response = await fetch(`${origin}${route}`, { method: "HEAD", signal: AbortSignal.timeout(15_000) });
   if (!response.ok) throw new Error(`${route}: HTTP ${response.status}; refusing to measure an error page`);
 }
 
@@ -48,8 +50,10 @@ await new Promise((resolve, reject) => {
 
 let nextId = 0;
 const pending = new Map();
+let documentStatus = 0;
 ws.addEventListener("message", ({ data }) => {
   const message = JSON.parse(data);
+  if (message.method === "Network.responseReceived" && message.params.type === "Document") documentStatus = message.params.response.status;
   if (!message.id) return;
   const job = pending.get(message.id);
   if (!job) return;
@@ -74,7 +78,7 @@ async function evaluate(expression, awaitPromise = false) {
 
 async function waitForReady() {
   for (let attempt = 0; attempt < 200; attempt += 1) {
-    if (await evaluate('document.readyState === "complete"')) return;
+    if (await evaluate('document.readyState === "complete" && location.href !== "about:blank" && performance.getEntriesByType("navigation")[0]?.loadEventEnd > 0')) return;
     await new Promise((resolve) => setTimeout(resolve, 100));
   }
   throw new Error("Timed out waiting for page load");
@@ -123,8 +127,10 @@ try {
       await send("Page.navigate", { url: "about:blank" });
       await send("Page.bringToFront");
       await new Promise((resolve) => setTimeout(resolve, 100));
+      documentStatus = 0;
       await send("Page.navigate", { url: `${origin}${route}` });
       await waitForReady();
+      if (documentStatus < 200 || documentStatus >= 400) throw new Error(`${route}: document HTTP ${documentStatus}; refusing to measure an error page`);
       await new Promise((resolve) => setTimeout(resolve, 1_800));
 
       const data = await evaluate(`(() => {
@@ -209,17 +215,31 @@ try {
       }
 
       rows.push({ route, run, ...data });
-      console.log(`${route} run ${run}: LCP ${Math.round(data.lcp)} ms; FCP ${Math.round(data.fcp)} ms; long tasks ${Math.round(data.longTaskTotal)} ms; transfer ${data.htmlTransfer + data.resourceTransfer} B`);
+      console.log(`${route} run ${run}: LCP ${Math.round(data.lcp)} ms; load ${Math.round(data.load)} ms; TTFB ${Math.round(data.ttfb)} ms; transfer ${data.htmlTransfer + data.resourceTransfer} B`);
     }
   }
 
+  const median = values => values.sort((a, b) => a - b)[Math.floor(values.length / 2)];
+  const summary = routes.map(route => {
+    const samples = rows.filter(row => row.route === route);
+    return { route, lcp: median(samples.map(row => row.lcp)), load: median(samples.map(row => row.load)),
+      lcpMax: Math.max(...samples.map(row => row.lcp)), loadMax: Math.max(...samples.map(row => row.load)),
+      ttfb: median(samples.map(row => row.ttfb)),
+      passed: (!maxLcp || samples.every(row => row.lcp < maxLcp)) && (!maxLoad || samples.every(row => row.load > 0 && row.load < maxLoad)) };
+  });
   writeFileSync(output, `${JSON.stringify({
     scope: `${origin}; ${language} language, ${viewportWidth}x${viewportHeight} at ${deviceScaleFactor}x DPR, cold cache, 4x CPU, 150ms configured latency, 200KB/s download. Synthetic evidence, not production RUM.`,
     origin,
     routes,
     runs,
+    budgets: { maxLcp, maxLoad, policy: "Every run must be below the enabled limit; 0 disables a limit." },
+    summary,
     rows,
   }, null, 2)}\n`);
+  if (summary.some(row => !row.passed)) {
+    console.error("Performance budget exceeded:", summary.filter(row => !row.passed));
+    process.exitCode = 1;
+  }
 } finally {
   await send("Emulation.setCPUThrottlingRate", { rate: 1 });
   await send("Page.close");

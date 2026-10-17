@@ -37,6 +37,9 @@ export function needsFullAppRuntime(html) {
 }
 
 export function performanceProfile(file, html) {
+  // Stylesheet class names and injected runtime tags are not page features.
+  // Profile only authored markup so inlining is stable across repeated builds.
+  const markup = html.replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "");
   if (file.startsWith("ouyang/") || /<meta\b[^>]*http-equiv=["']refresh["']/i.test(html)) {
     return { stylesheet: null, runtimes: [] };
   }
@@ -105,7 +108,6 @@ export function performanceProfile(file, html) {
   if (file.startsWith("learn/")) {
     // Inline CSS also names directory classes. Only page markup determines
     // whether a directory controller is needed on repeated generation.
-    const markup = html.replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "");
     return { stylesheet: "/assets/learn.css", runtimes: markup.includes("template-category-section")
       ? ["/assets/content-page.js", "/assets/directory-page.js"] : ["/assets/content-page.js"] };
   }
@@ -114,7 +116,7 @@ export function performanceProfile(file, html) {
     return { stylesheet: "/assets/planning.css", runtimes: ["/assets/content-page.js"] };
   }
   if (file.startsWith("templates/")) {
-    return { stylesheet: "/assets/templates.css", runtimes: html.includes("template-category-section")
+    return { stylesheet: "/assets/templates.css", runtimes: markup.includes("template-category-section")
       ? ["/assets/content-page.js", "/assets/directory-page.js"] : ["/assets/content-page.js"] };
   }
   if (html.includes('data-construction-form')) {
@@ -122,6 +124,6 @@ export function performanceProfile(file, html) {
   }
 
   const runtimes = ["/assets/content-page.js"];
-  if (html.includes("template-category-section")) runtimes.push("/assets/directory-page.js");
+  if (markup.includes("template-category-section")) runtimes.push("/assets/directory-page.js");
   return { stylesheet: "/assets/content.css", runtimes };
 }

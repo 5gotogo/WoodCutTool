@@ -2,7 +2,7 @@ import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
-import { woodworkingImageFor } from "./woodworking-images.mjs";
+import { woodworkingImageFor, woodworkingPicture, woodworkingPreload } from "./woodworking-images.mjs";
 import { blogBatch20260630 } from "./blog-batch-2026-06-30.mjs";
 import { blogBatch20260701 } from "./blog-batch-2026-07-01.mjs";
 import { blogBatch20260702 } from "./blog-batch-2026-07-02.mjs";
@@ -10538,7 +10538,7 @@ function woodworkingArticleFigure(article, offset = 0, placement = "inline") {
     ? 'loading="eager" fetchpriority="high"'
     : 'loading="lazy" fetchpriority="low"';
   return `<figure class="article-wood-photo article-wood-photo-${placement}">
-          <img src="${escapeHtml(image.src)}" srcset="${escapeHtml(image.src.replace(/\.webp$/, "-480.webp"))} 480w, ${escapeHtml(image.src)} 960w" sizes="(max-width: 760px) calc(100vw - 32px), 760px" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${article.title}`)}" ${loading} decoding="async">
+          ${woodworkingPicture(`<img src="${escapeHtml(image.src)}" srcset="${escapeHtml(image.src.replace(/\.webp$/, "-480.webp"))} 480w, ${escapeHtml(image.src)} 960w" sizes="(max-width: 760px) calc(100vw - 32px), 760px" width="960" height="720" alt="${escapeHtml(`${image.alt} for ${article.title}`)}" ${loading} decoding="async">`, image.src)}
           <figcaption>${escapeHtml(image.caption)}</figcaption>
         </figure>`;
 }
@@ -10566,7 +10566,7 @@ function head({ title, description, canonical, ogType = "website", jsonLd = "", 
   const preload = !preloadImage
     ? ""
     : preloadImage.startsWith("/assets/images/woodworking/")
-      ? `  <link rel="preload" as="image" href="${escapeHtml(preloadImage.replace(/\.webp$/, "-480.webp"))}" imagesrcset="${escapeHtml(preloadImage.replace(/\.webp$/, "-480.webp"))} 480w, ${escapeHtml(preloadImage)} 960w" imagesizes="(max-width: 760px) calc(100vw - 32px), 760px" fetchpriority="high">\n`
+      ? `  ${woodworkingPreload(preloadImage)}\n`
       : `  <link rel="preload" as="image" href="${escapeHtml(preloadImage)}" fetchpriority="high">\n`;
   return `<head>
   <meta charset="utf-8">

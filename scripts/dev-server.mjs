@@ -2,6 +2,7 @@ import { createReadStream, existsSync } from "node:fs";
 import { stat } from "node:fs/promises";
 import { createGzip } from "node:zlib";
 import { createServer } from "node:http";
+import { setTimeout as delay } from "node:timers/promises";
 import { dirname, extname, join, normalize, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { onRequest as recordConversion } from "../functions/api/conversion-event.js";
@@ -91,6 +92,10 @@ function staticPath(pathname) {
 }
 
 async function serveFile(request, response, path, statusCode = 200) {
+  // Optional, controlled HTML response delay for performance budgets. This is
+  // preview-only server time, separate from CDP's resource network throttling.
+  const htmlDelay = Math.max(0, Number(process.env.WCT_PREVIEW_HTML_DELAY_MS || 0));
+  if (request.method !== "HEAD" && path.endsWith(".html") && htmlDelay) await delay(htmlDelay);
   const details = await stat(path);
   response.statusCode = statusCode;
   response.setHeader("Content-Type", contentTypes.get(extname(path).toLowerCase()) || "application/octet-stream");

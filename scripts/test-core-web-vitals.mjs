@@ -11,6 +11,7 @@ import { plywoodCoreSource } from "./build-plywood-core.mjs";
 import { homeRuntimeSource } from "./build-home-runtime.mjs";
 import { renderWoodChrome, woodLanguageSource, woodRuntimeSource } from "./build-wood-runtime.mjs";
 import { heroSources } from "./lcp-images.mjs";
+import { woodworkingImages as articlePhotos, woodworkingPreload } from "./woodworking-images.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const failures = [];
@@ -22,11 +23,15 @@ assert.equal(appStoreScreenshotSources("/assets/images/screenshot.png", { width:
 assert.equal(appStoreScreenshotSources(sample, { width: 1290, height: 2796 }).srcset.split(", ").length, 5);
 assert.deepEqual(performanceProfile("learn/example/index.html", '<style>.template-category-section{display:block}</style><main class="article-shell"></main>').runtimes, ["/assets/content-page.js"]);
 assert.deepEqual(performanceProfile("learn/index.html", '<style>.template-category-section{display:block}</style><main><section class="template-category-section"></section></main>').runtimes, ["/assets/content-page.js", "/assets/directory-page.js"]);
+for (const file of ["templates/example/index.html", "about/index.html"]) {
+  assert.deepEqual(performanceProfile(file, '<style>.template-category-section{display:block}</style><main class="article-shell"></main>').runtimes, ["/assets/content-page.js"]);
+}
 let articlePages = 0;
 let heroImages = 0;
 let inlineImages = 0;
 let editorialPages = 0;
 let compareLcpImages = 0;
+const expectedBlogStyles = compileBlogArticleStyles().css;
 
 function inspectArticles(directory) {
   for (const entry of readdirSync(join(root, directory), { withFileTypes: true })) {
@@ -36,25 +41,25 @@ function inspectArticles(directory) {
       const html = readFileSync(path, "utf8");
       if (html.includes("blog-article-shell")) {
         editorialPages += 1;
-        if (!html.includes('<link rel="stylesheet" href="/assets/blog-article.css">')) {
+        if (!html.includes(`<style data-blog-article-styles>${expectedBlogStyles}</style>`)) {
           failures.push(`${directory}/${entry.name}: article does not use the scoped Blog article stylesheet`);
         }
         if (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"')) {
           failures.push(`${directory}/${entry.name}: static article eagerly loads the full app runtime`);
         }
       }
-      const hero = html.match(/<figure class="article-wood-photo article-wood-photo-hero">\s*<img src="([^"]+)"[^>]*>/);
+      const hero = html.match(/<figure class="article-wood-photo article-wood-photo-hero">\s*(?:<picture[^>]*><source[^>]*>)?<img src="([^"]+)"[^>]*>/);
       if (!hero) continue;
       articlePages += 1;
       heroImages += 1;
       const heroTag = hero[0];
-      const preloads = [...html.matchAll(/<link\b[^>]*\brel="preload"[^>]*\bas="image"[^>]*>/g)].map((match) => match[0]);
-      if (!preloads.some((tag) => tag.includes(hero[1]) && tag.includes('fetchpriority="high"'))) failures.push(`${directory}/${entry.name}: hero image is not preloaded`);
+      if (!html.includes(woodworkingPreload(hero[1]))) failures.push(`${directory}/${entry.name}: typed hero preload does not match its AVIF candidates`);
+      if (!heroTag.includes('source type="image/avif"') || !heroTag.includes(hero[1].replace(/\.webp$/, "-480.avif")) || !heroTag.includes(hero[1].replace(/\.webp$/, "-960.avif"))) failures.push(`${directory}/${entry.name}: missing responsive AVIF picture`);
       if (!heroTag.includes('loading="eager"') || !heroTag.includes('fetchpriority="high"')) {
         failures.push(`${directory}/${entry.name}: hero image is not eager/high priority`);
       }
 
-      for (const match of html.matchAll(/<figure class="article-wood-photo article-wood-photo-inline">\s*<img[^>]*>/g)) {
+      for (const match of html.matchAll(/<figure class="article-wood-photo article-wood-photo-inline">\s*(?:<picture[^>]*><source[^>]*>)?<img[^>]*>/g)) {
         inlineImages += 1;
         if (!match[0].includes('loading="lazy"') || !match[0].includes('fetchpriority="low"')) {
           failures.push(`${directory}/${entry.name}: supporting image is not lazy and low priority`);
@@ -182,7 +187,7 @@ for (const file of appHtmlFiles()) {
       failures.push(`${file}: App screenshot is missing responsive sizing or intrinsic dimensions`);
     }
   }
-  if (!html.includes('<link rel="stylesheet" href="/assets/apps.css">') || html.includes('href="/assets/styles.css"')) {
+  if (!html.includes(`<style data-apps-styles>${appStyles}</style>`) || html.includes('href="/assets/styles.css"')) {
     failures.push(`${file}: must load the scoped App stylesheet`);
   }
   if (profile.runtimes.includes("/assets/content-page.js") && (!html.includes('src="/assets/content-page.js"') || html.includes('src="/assets/app.js"'))) {
@@ -213,15 +218,12 @@ for (const [name, output, compiled, limit] of [
   for (const file of compiled.pages) {
     const html = readFileSync(join(root, file), "utf8");
     const profile = performanceProfile(file, html);
-    const inline = ["home", "construction", "learn", "wood", "wood-species", "wood-database", "glossary", "workflow-shell", "legal", "plywood"].includes(name);
     const customName = name === "workflow-shell" ? file.split("/")[0] : name === "plywood" ? "plywood-workflow"
       : name === "construction" && /^(?:cabinet-cut-list-calculator|cabinet-door-calculator|drawer-box-calculator)\//.test(file) ? "component-builder" : null;
     const custom = customName ? readFileSync(join(root, "assets", `${customName}.css`), "utf8") : "";
     const marker = name === "workflow-shell" ? "workflow" : name === "wood-species" ? "wood" : name;
-    const hasStyles = inline
-      ? html.includes(`<style data-${marker}-styles>${css}${custom}</style>`) && !/<link\b[^>]*rel="stylesheet"/.test(html)
-      : html.includes(`<link rel="stylesheet" href="/assets/${name}.css">`);
-    if (inline && Buffer.byteLength(css + custom) > 65_000) failures.push(`${file}: inline stylesheet exceeds 65 KB`);
+    const hasStyles = html.includes(`<style data-${marker}-styles>${css}${custom}</style>`) && !/<link\b[^>]*rel="stylesheet"/.test(html);
+    if (Buffer.byteLength(css + custom) > 65_000) failures.push(`${file}: inline stylesheet exceeds 65 KB`);
     if (["learn", "glossary", "workflow-shell"].includes(name) && !html.includes('defer fetchpriority="low" src="/assets/content-page.js"')) failures.push(`${file}: optional language runtime must have low priority`);
     if (name === "learn" && !html.includes('defer fetchpriority="low" src="/assets/conversion.js"')) failures.push(`${file}: optional conversion runtime must have low priority`);
     if (name === "learn" && html.includes('src="/assets/directory-page.js"') !== profile.runtimes.includes("/assets/directory-page.js")) failures.push(`${file}: directory runtime must follow page markup, not inline CSS tokens`);
@@ -293,7 +295,41 @@ for (const [route, dependencies] of [
   for (const dependency of dependencies) if (!html.includes(`<link rel="modulepreload" href="/assets/${dependency}.js">`)) failures.push(`${route}: missing ${dependency} module preload`);
 }
 for (const file of new Set(allProfiledPages)) {
-  if (readFileSync(join(root, file), "utf8").includes('href="/assets/styles.css"')) failures.push(`${file}: serves the authored full stylesheet`);
+  const html = readFileSync(join(root, file), "utf8");
+  if (/<link\b[^>]*rel="stylesheet"/.test(html)) failures.push(`${file}: stylesheet request blocks first paint`);
+  if (performanceProfile(file, html).stylesheet && !html.includes('data-site-brand as="image" href="/assets/icons/brand-icon.webp"')) failures.push(`${file}: header logo is discovered only after JavaScript`);
+  const profile = performanceProfile(file, html);
+  const bootstrap = profile.runtimes.includes("/assets/wood-page.js") ? "/assets/wood-page.js" : "/assets/site-chrome.js";
+  if (profile.stylesheet && !html.includes(`data-site-bootstrap as="script" href="${bootstrap}"`)) failures.push(`${file}: navigation bootstrap is discovered after inline CSS`);
+  if (profile.runtimes.includes("/assets/app.js") && !html.includes('data-site-bootstrap as="script" href="/assets/app.js"')) failures.push(`${file}: calculator bootstrap is discovered after inline CSS`);
+  if (file.startsWith("templates/") && html.includes('class="template-page-visual"')) {
+    const source = html.match(/<picture><source type="image\/avif" srcset="([^"]+)" sizes="([^"]+)"/);
+    const preload = html.match(/<link rel="preload" as="image" type="image\/avif"[^>]*>/)?.[0] || "";
+    if (!source || !preload.includes(`imagesrcset="${source[1]}"`) || !preload.includes(`imagesizes="${source[2]}"`)) failures.push(`${file}: Template AVIF preload must match picture candidates`);
+  }
+}
+
+for (const name of ["cabinets", "storage", "furniture", "shop"]) {
+  const fallback = statSync(join(root, `assets/images/templates/template-${name}.webp`)).size;
+  for (const width of [480, 960, 1448]) {
+    const path = join(root, `assets/images/templates/template-${name}-${width}.avif`);
+    if (!existsSync(path) || statSync(path).size > fallback * 0.8) failures.push(`${path}: template AVIF savings budget exceeded`);
+  }
+}
+
+for (const { src } of articlePhotos) {
+  for (const width of [480, 960]) {
+    const avif = join(root, src.replace(/\.webp$/, `-${width}.avif`));
+    const fallback = join(root, src.replace(/\.webp$/, width === 480 ? "-480.webp" : ".webp"));
+    if (!existsSync(avif) || statSync(avif).size > statSync(fallback).size * 0.8) failures.push(`${avif}: must save at least 20% over WebP`);
+  }
+}
+const cutlistHero = "/assets/images/apps/cutlist/cutlist-layout-stats-598.avif";
+const cutlistHtml = readFileSync(join(root, "apps/cutlist/index.html"), "utf8");
+if (!cutlistHtml.includes(`<link rel="preload" as="image" type="image/avif" href="${cutlistHero}" fetchpriority="high">`) || !cutlistHtml.includes(`<source type="image/avif" srcset="${cutlistHero}">`)) failures.push("CutList: matching hero picture/preload required");
+if (statSync(join(root, cutlistHero)).size > statSync(join(root, "assets/images/apps/cutlist/cutlist-layout-stats.webp")).size * 0.8) failures.push("CutList: AVIF must save at least 20% over WebP");
+for (const match of cutlistHtml.matchAll(/<figure class="cutlist-screenshot-card">([\s\S]*?)<\/figure>/g)) {
+  if (!match[1].includes('loading="lazy"') || !match[1].includes('fetchpriority="low"')) failures.push("CutList: supporting screenshots compete with its hero");
 }
 
 const chromeSource = readFileSync(join(root, "assets/site-chrome.js"), "utf8");

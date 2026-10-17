@@ -27,6 +27,13 @@ const screenshotCards = [
   ["cutlist-offline-private.webp", "Keep project data on device", "No account, no cloud upload, and no project tracking are required for the workflow."],
 ];
 
+const heroFile = "cutlist-layout-stats.webp";
+const heroAvif = "/assets/images/apps/cutlist/cutlist-layout-stats-598.avif";
+function screenshotImage(file, alt, hero = false) {
+  const img = `<img src="/assets/images/apps/cutlist/${file}" width="600" height="1300" loading="${hero ? "eager" : "lazy"}" fetchpriority="${hero ? "high" : "low"}" decoding="async" alt="${esc(alt)}">`;
+  return file === heroFile ? `<picture style="display:contents"><source type="image/avif" srcset="${heroAvif}">${img}</picture>` : img;
+}
+
 const featureCards = [
   ["waste", "Stop buying the extra sheet “just in case”", "Enter the real stock, parts, quantity, kerf, and rotation rules. CutList shows the material consequence before the first panel is broken down.", "Layout, sheet count, waste, and material cost"],
   ["scan", "Stop typing a long parts list twice", "Use on-device AI OCR in CutList Pro to scan a handwritten or printed list, then review the recognized rows before generating the layout.", "Local AI scan · Pro"],
@@ -136,6 +143,7 @@ const html = `<!doctype html>
   })}
   <!-- og:end -->
   <link rel="icon" href="/favicon.ico?v=rounded-mask-20260619" sizes="any">
+  <link rel="preload" as="image" type="image/avif" href="${heroAvif}" fetchpriority="high">
   <style>.mega-menu{display:none}</style>
   <link rel="stylesheet" href="/assets/styles.css">
   <script defer src="/assets/site-chrome.js"></script>
@@ -164,7 +172,7 @@ const html = `<!doctype html>
         </ul>
       </div>
       <figure class="cutlist-hero-shot">
-        <img src="/assets/images/apps/cutlist/cutlist-layout-stats.webp" width="600" height="1300" fetchpriority="high" alt="CutList app showing plywood yield, sheet count, material cost, waste value, and visual layout">
+        ${screenshotImage(heroFile, "CutList app showing plywood yield, sheet count, material cost, waste value, and visual layout", true)}
         <figcaption>See the sheet count, yield, cost, waste value, and part placement before cutting.</figcaption>
       </figure>
     </section>
@@ -197,8 +205,8 @@ const html = `<!doctype html>
         <p>Start with stock and parts, inspect the layout, follow the sequence, and keep the records local.</p>
       </div>
       <div class="cutlist-screenshot-grid">
-        ${screenshotCards.map(([file, heading, body], index) => `<figure class="cutlist-screenshot-card">
-          <img src="/assets/images/apps/cutlist/${file}" width="600" height="1300" loading="${index < 2 ? "eager" : "lazy"}" alt="${esc(`${heading} in the CutList app`)}">
+        ${screenshotCards.map(([file, heading, body]) => `<figure class="cutlist-screenshot-card">
+          ${screenshotImage(file, `${heading} in the CutList app`)}
           <figcaption><strong>${esc(heading)}</strong><span>${esc(body)}</span></figcaption>
         </figure>`).join("")}
       </div>

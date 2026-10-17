@@ -3,11 +3,12 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
 import { homeRuntimeSource } from "./build-home-runtime.mjs";
-import { buildAppStyles } from "./build-app-styles.mjs";
-import { buildEditorialStyles, inlineBlogIndexStyles, inlineCompareStyles } from "./build-editorial-styles.mjs";
+import { buildAppStyles, inlineAppStyles } from "./build-app-styles.mjs";
+import { buildEditorialStyles, inlineArticleStyles, inlineBlogIndexStyles, inlineCompareStyles } from "./build-editorial-styles.mjs";
 import { buildSiteStyles, inlineWoodStyles, inlineScreenshotRouteStyles } from "./build-site-styles.mjs";
 import { performanceProfile } from "./site-performance-profile.mjs";
 import { buildWoodRuntime, renderWoodChrome } from "./build-wood-runtime.mjs";
+import { applyBootstrapHints } from "./loading-hints.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
@@ -98,6 +99,18 @@ function applyProfiledRuntime(html, file) {
   const siteChromePattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js")[^>]*>\s*<\/script>)/;
   if (siteChromePattern.test(next)) return next.replace(siteChromePattern, `$1\n${markup}`);
   return next.replace("</head>", `${markup}\n</head>`);
+}
+
+function applyImageConnections(html) {
+  let next = html.replace(/\s*<link rel="preconnect" data-image-origin[^>]*>/g, "");
+  const origins = new Set();
+  for (const [tag, src] of next.matchAll(/<img\b[^>]*\bsrc="(https:\/\/[^\"]+)"[^>]*>/g)) {
+    if (/loading="lazy"/.test(tag)) continue;
+    origins.add(new URL(src).origin);
+  }
+  if (origins.size) next = next.replace(/(<meta\s+name="viewport"[^>]*>)/,
+    `$1\n${[...origins].slice(0, 2).map(origin => `  <link rel="preconnect" data-image-origin href="${origin}">`).join("\n")}`);
+  return next;
 }
 
 function stripSharedChrome(html) {
@@ -239,6 +252,13 @@ for (const file of collectHtmlFiles()) {
     if (schemas.length) next = next.replace("</main>", `</main>\n  ${schemas.join("\n  ")}`);
   }
 
+  next = applyImageConnections(next);
+  next = applyBootstrapHints(next, profile);
+  // The header is mounted by a deferred runtime. Discover its tiny shared logo
+  // in the document instead of starting another RTT only after that JS runs.
+  next = next.replace(/\s*<link rel="preload" data-site-brand[^>]*>/g, "");
+  if (profile.stylesheet) next = next.replace("</head>", '  <link rel="preload" data-site-brand as="image" href="/assets/icons/brand-icon.webp" fetchpriority="low">\n</head>');
+
   if (next === html) {
     skipped += 1;
     continue;
@@ -258,5 +278,20 @@ inlineWoodStyles();
 inlineScreenshotRouteStyles();
 inlineBlogIndexStyles();
 inlineCompareStyles();
+inlineAppStyles();
+inlineArticleStyles();
+
+// Preserve the authored order of route-specific CSS, including project and
+// calculator controls. Refresh these on every build; never retain stale copies.
+for (const file of collectHtmlFiles()) {
+  const path = join(root, file);
+  const html = readFileSync(path, "utf8");
+  const next = html.replace(/<link rel="stylesheet" href="(\/assets\/[\w-]+\.css)">|<style data-page-styles="(\/assets\/[\w-]+\.css)">[\s\S]*?<\/style>/g,
+    (_, href, inlineHref) => {
+      const source = href || inlineHref;
+      return `<style data-page-styles="${source}">${readFileSync(join(root, source), "utf8")}</style>`;
+    }).replace(/^[ \t]+$/gm, "");
+  if (next !== html) writeFileSync(path, next);
+}
 
 writeFileSync(join(root, "assets/plywood-core.js"), plywoodCoreSource());

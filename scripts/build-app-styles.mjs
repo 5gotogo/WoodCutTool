@@ -17,7 +17,9 @@ export function appHtmlFiles() {
 // even when they are not present in the initial DOM. Never prune by viewport.
 export function compileAppStyles() {
   const pages = appHtmlFiles();
-  const html = pages.map((file) => readFileSync(join(root, file), "utf8"));
+  const html = pages.map((file) => readFileSync(join(root, file), "utf8")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "")
+    .replace(/<link\b[^>]*\brel=["']stylesheet["'][^>]*>/gi, ""));
   const runtimePaths = new Set([
     "assets/site-chrome.js", "assets/content-page.js", "assets/conversion.js",
   ]);
@@ -54,4 +56,16 @@ export function buildAppStyles() {
   const { css, pages } = compileAppStyles();
   writeFileSync(join(root, "assets/apps.css"), css);
   console.log(`Built App stylesheet for ${pages.length} pages: ${Buffer.byteLength(css)} bytes.`);
+}
+
+export function inlineAppStyles() {
+  const { css, pages } = compileAppStyles();
+  for (const file of pages) {
+    const path = join(root, file);
+    const html = readFileSync(path, "utf8");
+    const next = html.replace(/<style data-apps-styles>[\s\S]*?<\/style>|<link rel="stylesheet" href="\/assets\/apps\.css">/g,
+      () => `<style data-apps-styles>${css}</style>`);
+    if (next !== html) writeFileSync(path, next);
+  }
+  console.log(`Inlined App styles for ${pages.length} pages: ${Buffer.byteLength(css)} bytes.`);
 }

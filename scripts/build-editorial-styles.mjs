@@ -87,6 +87,22 @@ export function inlineCompareStyles() {
   console.log(`Inlined Compare styles for ${pages.length} pages: ${Buffer.byteLength(css)} bytes.`);
 }
 
+export function inlineArticleStyles() {
+  for (const [marker, result] of [
+    ["blog-article", compileBlogArticleStyles()],
+    ["editorial", compilePages(["blog/archive/index.html"], "Blog archive inline CSS")],
+  ]) {
+    for (const file of result.pages) {
+      const path = join(root, file);
+      const html = readFileSync(path, "utf8");
+      const next = html.replace(new RegExp(`<style data-${marker}-styles>[\\s\\S]*?<\\/style>|<link rel="stylesheet" href="/assets/${marker}\\.css">`, "g"),
+        () => `<style data-${marker}-styles>${result.css}</style>`);
+      if (next !== html) writeFileSync(path, next);
+    }
+    console.log(`Inlined ${marker} styles for ${result.pages.length} pages: ${Buffer.byteLength(result.css)} bytes.`);
+  }
+}
+
 export function compileBlogIndexStyles() {
   return compilePages(["blog/index.html"], "Blog index inline CSS");
 }
