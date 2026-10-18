@@ -59,6 +59,7 @@ try {
   await send("Page.enable");
   await send("Runtime.enable");
   await send("Network.enable");
+  await send("Network.setExtraHTTPHeaders", { headers: { DNT: "1" } });
   await send("Network.setCacheDisabled", { cacheDisabled: true });
   await send("Page.addScriptToEvaluateOnNewDocument", { source: 'localStorage.setItem("woodcuttool-lang", "en")' });
   for (const width of [360, 390, 430, 1440]) {
