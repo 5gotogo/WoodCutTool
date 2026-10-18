@@ -423,8 +423,12 @@
     return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/" aria-label="WoodCutTool home"><img class="brand-icon" src="/assets/icons/brand-icon.webp" width="34" height="34" alt=""><span class="brand-name">WoodCutTool</span></a>${navLinks()}<button class="mobile-nav-toggle" type="button" aria-controls="site-navigation" aria-expanded="false"><span class="mobile-nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span><span class="visually-hidden">Open menu</span></button><a class="button small nav-download-cta" href="${href}" aria-label="${label}"${isStoreLink ? ' data-app-store-link data-platform-label data-conversion-placement="navigation" rel="nofollow noopener"' : ""}>${storeIcon}<span data-platform-label-text>${label}</span></a></nav></header>`;
   }
 
-  function footerColumn(title, links) {
-    return `<div class="footer-column"><h2>${title}</h2>${links.map(({ href, label, rel = "" }) => `<a href="${href}"${rel ? ` rel="${rel}"` : ""}>${label}</a>`).join("")}</div>`;
+  function footerColumn(title, links, primaryHrefs = null) {
+    const renderLinks = (items) => items.map(({ href, label, rel = "" }) => `<a href="${href}"${rel ? ` rel="${rel}"` : ""}>${label}</a>`).join("");
+    const primary = primaryHrefs ? links.filter(({ href }) => primaryHrefs.includes(href)) : links;
+    const remaining = primaryHrefs ? links.filter(({ href }) => !primaryHrefs.includes(href)) : [];
+    const more = remaining.length ? `<details class="footer-more"><summary>More resources</summary><div class="footer-more-links">${renderLinks(remaining)}</div></details>` : "";
+    return `<div class="footer-column"><h2>${title}</h2>${renderLinks(primary)}${more}</div>`;
   }
 
   function footer() {
@@ -497,7 +501,9 @@
       { href: "/external-links-policy/", label: "External Links" }
     ];
 
-    return `<footer class="site-footer"><div class="footer-inner"><nav class="footer-directory" aria-label="Footer navigation">${footerColumn("Product", product)}${footerColumn("Planning", planning)}${footerColumn("Resources", resources)}${footerColumn("Legal", legal)}</nav><div class="footer-bottom"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><p class="muted">© 2026 WoodCutTool</p><div class="footer-actions">${languagePicker}</div></div></div></footer>`;
+    const primaryResources = ["/about/", "/research/", "/projects/", "/offcut-planner/", "/checklists/", "/learn/", "/templates/", "/glossary/", "/blog/", "/apps/"];
+
+    return `<footer class="site-footer"><div class="footer-inner"><nav class="footer-directory" aria-label="Footer navigation">${footerColumn("Product", product)}${footerColumn("Planning", planning)}${footerColumn("Resources", resources, primaryResources)}${footerColumn("Legal", legal)}</nav><div class="footer-bottom"><a class="footer-brand" href="/"><span class="brand-mark">W</span><span>WoodCutTool</span></a><p class="muted">© 2026 WoodCutTool</p><div class="footer-actions">${languagePicker}</div></div></div></footer>`;
   }
 
   function mount(selector, fallbackSelector, html, insertFallback) {
