@@ -3,7 +3,7 @@
 export function applyBootstrapHints(html, profile) {
   let next = html.replace(/\s*<link rel="preload" data-site-bootstrap[^>]*>/g, "");
   const paths = profile.stylesheet
-    ? [profile.runtimes.includes("/assets/wood-page.js") ? "/assets/wood-page.js" : "/assets/site-chrome.js",
+    ? [profile.runtimes.includes("/assets/wood-page.js") ? "/assets/wood-page.js" : "/assets/site-navigation.js",
       ...profile.runtimes.filter(path => path === "/assets/app.js")]
     : [];
   if (paths.length) next = next.replace(/(<meta\s+name="viewport"[^>]*>)/,

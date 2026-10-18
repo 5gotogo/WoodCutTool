@@ -125,7 +125,7 @@ for (const { entry, html } of generated) {
   assert(html.includes("<style>.mega-menu{display:none}</style>"), `${entry.slug} is missing the canonical mega-menu fallback.`);
   const scriptOrder = [
     '/assets/project-playbooks.js',
-    '/assets/site-chrome.js',
+    html.includes('src="/assets/site-navigation.js"') ? '/assets/site-navigation.js' : '/assets/site-chrome.js',
     '/assets/content-page.js',
     '/assets/conversion.js',
   ].map((source) => html.indexOf(`src="${source}"`));

@@ -264,10 +264,10 @@ for (const file of htmlFiles) {
   const footerMounts = html.match(/<div\b[^>]*\bdata-site-footer\b[^>]*>\s*<\/div>/gi) ?? [];
   const staticHeaders = html.match(/<header\b[^>]*\bclass=["'][^"']*\bsite-header\b[^"']*["'][^>]*>/gi) ?? [];
   const staticFooters = html.match(/<footer\b[^>]*\bclass=["'][^"']*\bsite-footer\b[^"']*["'][^>]*>/gi) ?? [];
-  const siteChromeScripts = html.match(/<script\b[^>]*\bsrc=["']\/assets\/site-chrome\.js(?:\?[^"']*)?["'][^>]*>\s*<\/script>/gi) ?? [];
+  const siteChromeScripts = html.match(/<script\b[^>]*\bsrc=["']\/assets\/(?:site-chrome|site-navigation)\.js(?:\?[^"']*)?["'][^>]*>\s*<\/script>/gi) ?? [];
   const expectedChromeScripts = staticWoodChrome ? 0 : 1;
   if (expectsSharedChrome && siteChromeScripts.length !== expectedChromeScripts) {
-    errors.push(`${file} must load ${expectedChromeScripts} shared site-chrome.js scripts; found ${siteChromeScripts.length}`);
+    errors.push(`${file} must load ${expectedChromeScripts} shared navigation scripts; found ${siteChromeScripts.length}`);
   }
   if (expectsSharedChrome && !staticWoodChrome && (headerMounts.length !== 1 || footerMounts.length !== 1)) {
     errors.push(`${file} must contain exactly one shared header and footer mount`);
@@ -281,7 +281,7 @@ for (const file of htmlFiles) {
   if (!staticWoodChrome && (staticHeaders.length || staticFooters.length)) {
     errors.push(`${file} contains static site chrome in addition to the shared mounts`);
   }
-  if (siteChromeScripts.some((tag) => /site-chrome\.js\?/i.test(tag))) {
+  if (siteChromeScripts.some((tag) => /(?:site-chrome|site-navigation)\.js\?/i.test(tag))) {
     errors.push(`${file} uses a versioned site-chrome.js URL instead of the shared canonical asset URL`);
   }
 

@@ -11,6 +11,8 @@ import { plywoodCoreSource } from "./build-plywood-core.mjs";
 import { homeRuntimeSource } from "./build-home-runtime.mjs";
 import { renderWoodChrome, woodLanguageSource, woodRuntimeSource } from "./build-wood-runtime.mjs";
 import { heroSources } from "./lcp-images.mjs";
+import { siteNavigationSource, siteMenuSource } from "./build-site-navigation.mjs";
+import { gzipSync } from "node:zlib";
 import { woodworkingImages as articlePhotos, woodworkingPreload } from "./woodworking-images.mjs";
 
 const root = resolve(import.meta.dirname, "..");
@@ -177,6 +179,7 @@ if (Buffer.byteLength(blogArticleStyles) > 60_000) failures.push("Blog article s
 for (const file of appHtmlFiles()) {
   const html = readFileSync(join(root, file), "utf8");
   const profile = performanceProfile(file, html);
+  if (profile.stylesheet && !file.startsWith("wood/") && /<script\b[^>]*src="\/assets\/site-chrome\.js"/.test(html)) failures.push(`${file}: hidden menu definitions still load on the critical path`);
   for (const match of html.matchAll(/<img\b[^>]*>/g)) {
     const tag = match[0];
     if (!tag.includes('alt=') || !tag.includes('screenshot') || !tag.includes('src="https://is')) continue;
@@ -299,7 +302,7 @@ for (const file of new Set(allProfiledPages)) {
   if (/<link\b[^>]*rel="stylesheet"/.test(html)) failures.push(`${file}: stylesheet request blocks first paint`);
   if (performanceProfile(file, html).stylesheet && !html.includes('data-site-brand as="image" href="/assets/icons/brand-icon.webp"')) failures.push(`${file}: header logo is discovered only after JavaScript`);
   const profile = performanceProfile(file, html);
-  const bootstrap = profile.runtimes.includes("/assets/wood-page.js") ? "/assets/wood-page.js" : "/assets/site-chrome.js";
+  const bootstrap = profile.runtimes.includes("/assets/wood-page.js") ? "/assets/wood-page.js" : "/assets/site-navigation.js";
   if (profile.stylesheet && !html.includes(`data-site-bootstrap as="script" href="${bootstrap}"`)) failures.push(`${file}: navigation bootstrap is discovered after inline CSS`);
   if (profile.runtimes.includes("/assets/app.js") && !html.includes('data-site-bootstrap as="script" href="/assets/app.js"')) failures.push(`${file}: calculator bootstrap is discovered after inline CSS`);
   if (file.startsWith("templates/") && html.includes('class="template-page-visual"')) {
@@ -333,6 +336,13 @@ for (const match of cutlistHtml.matchAll(/<figure class="cutlist-screenshot-card
 }
 
 const chromeSource = readFileSync(join(root, "assets/site-chrome.js"), "utf8");
+for (const [file, expected] of [["site-navigation.js", siteNavigationSource()], ["site-menus.js", siteMenuSource()]]) {
+  if (readFileSync(join(root, "assets", file), "utf8") !== expected) failures.push(`${file}: stale navigation build`);
+}
+if (gzipSync(siteNavigationSource()).length > gzipSync(chromeSource).length * 0.6) failures.push("Split navigation must remove at least 40% of the compressed first-load bundle");
+for (const asset of ["site-navigation.js", "site-menus.js"]) {
+  if (!readFileSync(join(root, "_headers"), "utf8").includes(`/assets/${asset}\n  Cache-Control: public, max-age=3600`)) failures.push(`${asset}: missing cache policy`);
+}
 const brandIconSize = statSync(join(root, "assets/icons/brand-icon.webp")).size;
 if (!chromeSource.includes('/assets/icons/brand-icon.webp') || chromeSource.includes('class="brand-icon" src="/assets/icons/apple-touch-icon.png')) failures.push("Shared header must use the compact brand icon");
 if (brandIconSize > 4_000) failures.push(`Brand icon is ${brandIconSize} bytes (limit 4000)`);

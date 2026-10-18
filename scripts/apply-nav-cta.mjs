@@ -8,6 +8,7 @@ import { buildEditorialStyles, inlineArticleStyles, inlineBlogIndexStyles, inlin
 import { buildSiteStyles, inlineWoodStyles, inlineScreenshotRouteStyles } from "./build-site-styles.mjs";
 import { performanceProfile } from "./site-performance-profile.mjs";
 import { buildWoodRuntime, renderWoodChrome } from "./build-wood-runtime.mjs";
+import { buildSiteNavigation } from "./build-site-navigation.mjs";
 import { applyBootstrapHints } from "./loading-hints.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -19,7 +20,7 @@ const FOOTER_START = "<!-- shared-footer:start -->";
 const FOOTER_END = "<!-- shared-footer:end -->";
 const headerMount = "<div data-site-header></div>";
 const footerMount = "<div data-site-footer></div>";
-const siteChromeScript = '  <script defer src="/assets/site-chrome.js"></script>';
+const siteChromeScript = '  <script defer src="/assets/site-navigation.js"></script>';
 const appStoreId = "6768171871";
 const tileFitAppStoreId = "6792627022";
 const providerToken = String(process.env.APPLE_PROVIDER_TOKEN || "").trim();
@@ -50,7 +51,7 @@ function applyAppVersion(html) {
 }
 
 function applySiteChromeVersion(html) {
-  return html.replace(/\/assets\/site-chrome\.js(?:\?[^\"]*)?/g, "/assets/site-chrome.js");
+  return html.replace(/\/assets\/(?:site-chrome|site-navigation)\.js(?:\?[^\"]*)?/g, "/assets/site-chrome.js");
 }
 
 function applyConversionVersion(html) {
@@ -63,7 +64,7 @@ function applyMegaMenuFallback(html) {
 }
 
 function applySiteChromeScript(html) {
-  let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js(?:\?[^\"]*)?")[^>]*>\s*<\/script>/g, "");
+  let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|site-navigation)\.js(?:\?[^\"]*)?")[^>]*>\s*<\/script>/g, "");
   const runtimeScriptPattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page|wood-page)\.js")[^>]*>\s*<\/script>)/;
   if (runtimeScriptPattern.test(next)) {
     return next.replace(runtimeScriptPattern, `\n${siteChromeScript}$1`);
@@ -84,7 +85,7 @@ function applyConversionScript(html, file) {
   if (appScriptPattern.test(next)) {
     return next.replace(appScriptPattern, `$1\n${conversionScript}`);
   }
-  const siteChromePattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js")[^>]*>\s*<\/script>)/;
+  const siteChromePattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|site-navigation)\.js")[^>]*>\s*<\/script>)/;
   if (siteChromePattern.test(next)) {
     return next.replace(siteChromePattern, `$1\n${conversionScript}`);
   }
@@ -96,7 +97,7 @@ function applyProfiledRuntime(html, file) {
   let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page|directory-page|blog-index|home|wood-page)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "");
   const priority = isLcpTailPage(file, html) ? ' fetchpriority="low"' : "";
   const markup = runtimes.map((path) => `  <script defer${priority} src="${path}"></script>`).join("\n");
-  const siteChromePattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/site-chrome\.js")[^>]*>\s*<\/script>)/;
+  const siteChromePattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|site-navigation)\.js")[^>]*>\s*<\/script>)/;
   if (siteChromePattern.test(next)) return next.replace(siteChromePattern, `$1\n${markup}`);
   return next.replace("</head>", `${markup}\n</head>`);
 }
@@ -116,7 +117,7 @@ function applyImageConnections(html) {
 function stripSharedChrome(html) {
   return html
     .replace(/\s*<style>\.mega-menu\{display:none\}<\/style>/g, "")
-    .replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|conversion|app|content-page|directory-page|blog-index|home|wood-page)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "")
+    .replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|site-navigation|conversion|app|content-page|directory-page|blog-index|home|wood-page)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "")
     .replace(/\s*<div\b[^>]*\bdata-site-header\b[^>]*>\s*<\/div>/gi, "")
     .replace(/\s*<div\b[^>]*\bdata-site-footer\b[^>]*>\s*<\/div>/gi, "");
 }
@@ -237,7 +238,7 @@ for (const file of collectHtmlFiles()) {
 
   if (file.startsWith("wood/")) {
     const chrome = renderWoodChrome(`/${file.replace(/index\.html$/, "")}`);
-    next = next.replace(/\s*<script\b[^>]*\bsrc="\/assets\/site-chrome\.js"[^>]*><\/script>/g, "")
+    next = next.replace(/\s*<script\b[^>]*\bsrc="\/assets\/(?:site-chrome|site-navigation)\.js"[^>]*><\/script>/g, "")
       .replace(footerMount, chrome.footer);
   }
 
@@ -270,6 +271,7 @@ for (const file of collectHtmlFiles()) {
 
 console.log(`Applied shared site chrome to ${updated} pages${skipped ? `, skipped ${skipped}` : ""}.`);
 writeFileSync(join(root, "assets/home.js"), homeRuntimeSource());
+buildSiteNavigation();
 buildWoodRuntime();
 buildAppStyles();
 buildEditorialStyles();

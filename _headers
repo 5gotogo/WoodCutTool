@@ -155,3 +155,9 @@
 
 /assets/wood-movement.css
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/site-navigation.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/assets/site-menus.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400

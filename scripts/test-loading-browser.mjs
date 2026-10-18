@@ -82,7 +82,7 @@ try {
         return logos.length === 1 && logos[0].initiatorType === "link" && logos[0].startTime < performance.getEntriesByType("navigation")[0].domContentLoadedEventEnd;
       })()`), `${route}: the parser must preload the logo with one request`);
       assert(await evaluate(`(() => {
-        const bootstrap = performance.getEntriesByType("resource").filter(e => new URL(e.name).pathname === "/assets/site-chrome.js");
+        const bootstrap = performance.getEntriesByType("resource").filter(e => new URL(e.name).pathname === "/assets/site-navigation.js");
         return bootstrap.length === 1 && bootstrap[0].initiatorType === "link";
       })()`), `${route}: navigation preload must be reused by its deferred script`);
       assert(await evaluate(`(() => {

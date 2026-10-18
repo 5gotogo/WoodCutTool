@@ -15,6 +15,10 @@ const maxLcp = Number(args["max-lcp"] || 0);
 const maxLoad = Number(args["max-load"] || 0);
 const viewportWidth = Math.max(320, Number(args.width || 390));
 const viewportHeight = Math.max(400, Number(args.height || 844));
+const cacheDisabled = args.cache !== "warm";
+const cpuRate = Math.max(1, Number(args.cpu || 4));
+const latency = Math.max(0, Number(args.latency || 150));
+const downloadThroughput = Math.max(1000, Number(args["download-kbps"] || 200) * 1000);
 const routes = (args.routes || process.env.WCT_PERF_ROUTES || [
   "/",
   "/blog/",
@@ -51,9 +55,17 @@ await new Promise((resolve, reject) => {
 let nextId = 0;
 const pending = new Map();
 let documentStatus = 0;
+let documentResponse = null;
 ws.addEventListener("message", ({ data }) => {
   const message = JSON.parse(data);
-  if (message.method === "Network.responseReceived" && message.params.type === "Document") documentStatus = message.params.response.status;
+  if (message.method === "Network.responseReceived" && message.params.type === "Document") {
+    documentStatus = message.params.response.status;
+    const response = message.params.response;
+    const headers = Object.fromEntries(Object.entries(response.headers).map(([key, value]) => [key.toLowerCase(), value]));
+    documentResponse = { status: response.status, protocol: response.protocol, fromDiskCache: response.fromDiskCache || false,
+      cacheControl: headers["cache-control"] || "", contentEncoding: headers["content-encoding"] || "",
+      cacheStatus: headers["cf-cache-status"] || "", ray: headers["cf-ray"] || "" };
+  }
   if (!message.id) return;
   const job = pending.get(message.id);
   if (!job) return;
@@ -86,13 +98,14 @@ async function waitForReady() {
 
 await send("Page.enable");
 await send("Network.enable");
-await send("Network.setCacheDisabled", { cacheDisabled: true });
+await send("Network.setExtraHTTPHeaders", { headers: { DNT: "1" } });
+await send("Network.setCacheDisabled", { cacheDisabled });
 await send("Emulation.setDeviceMetricsOverride", { width: viewportWidth, height: viewportHeight, deviceScaleFactor, mobile: viewportWidth < 980 });
-await send("Emulation.setCPUThrottlingRate", { rate: 4 });
+await send("Emulation.setCPUThrottlingRate", { rate: cpuRate });
 await send("Network.emulateNetworkConditions", {
   offline: false,
-  latency: 150,
-  downloadThroughput: 200_000,
+  latency,
+  downloadThroughput,
   uploadThroughput: 100_000,
   connectionType: "cellular4g",
 });
@@ -128,7 +141,9 @@ try {
       await send("Page.bringToFront");
       await new Promise((resolve) => setTimeout(resolve, 100));
       documentStatus = 0;
+      documentResponse = null;
       await send("Page.navigate", { url: `${origin}${route}` });
+      await send("Page.bringToFront");
       await waitForReady();
       if (documentStatus < 200 || documentStatus >= 400) throw new Error(`${route}: document HTTP ${documentStatus}; refusing to measure an error page`);
       await new Promise((resolve) => setTimeout(resolve, 1_800));
@@ -138,6 +153,7 @@ try {
         const paint = Object.fromEntries(performance.getEntriesByType("paint").map((entry) => [entry.name, entry.startTime]));
         const resources = performance.getEntriesByType("resource").map((entry) => ({
           path: new URL(entry.name).pathname,
+          origin: new URL(entry.name).origin,
           type: entry.initiatorType,
           start: entry.startTime,
           responseStart: entry.responseStart,
@@ -170,8 +186,11 @@ try {
             redirect: navigation.redirectEnd - navigation.redirectStart,
             dns: navigation.domainLookupEnd - navigation.domainLookupStart,
             connection: navigation.connectEnd - navigation.connectStart,
+            tcp: (navigation.secureConnectionStart || navigation.connectEnd) - navigation.connectStart,
+            tls: navigation.secureConnectionStart ? navigation.connectEnd - navigation.secureConnectionStart : 0,
             requestWait: navigation.responseStart - navigation.requestStart,
             responseEnd: navigation.responseEnd,
+            protocol: navigation.nextHopProtocol,
           } : null,
           domReady: navigation?.domContentLoadedEventEnd || 0,
           load: navigation?.loadEventEnd || 0,
@@ -192,7 +211,7 @@ try {
           longTaskCount: longTasks.length,
           longTaskTotal: longTasks.reduce((sum, duration) => sum + duration, 0),
           longTaskMax: Math.max(0, ...longTasks),
-          resources: resources.filter((entry) => entry.path.startsWith("/assets/")),
+          resources,
         };
       })()`);
 
@@ -214,7 +233,7 @@ try {
         })`, true);
       }
 
-      rows.push({ route, run, ...data });
+      rows.push({ route, run, documentResponse, ...data });
       console.log(`${route} run ${run}: LCP ${Math.round(data.lcp)} ms; load ${Math.round(data.load)} ms; TTFB ${Math.round(data.ttfb)} ms; transfer ${data.htmlTransfer + data.resourceTransfer} B`);
     }
   }
@@ -228,7 +247,7 @@ try {
       passed: (!maxLcp || samples.every(row => row.lcp < maxLcp)) && (!maxLoad || samples.every(row => row.load > 0 && row.load < maxLoad)) };
   });
   writeFileSync(output, `${JSON.stringify({
-    scope: `${origin}; ${language} language, ${viewportWidth}x${viewportHeight} at ${deviceScaleFactor}x DPR, cold cache, 4x CPU, 150ms configured latency, 200KB/s download. Synthetic evidence, not production RUM.`,
+    scope: `${origin}; ${language} language, ${viewportWidth}x${viewportHeight} at ${deviceScaleFactor}x DPR, ${cacheDisabled ? "browser cache disabled" : "browser cache enabled"}, ${cpuRate}x CPU, ${latency}ms configured latency, ${downloadThroughput / 1000}KB/s download. DNS/TLS connections may be reused between navigations. Synthetic evidence, not production RUM.`,
     origin,
     routes,
     runs,
@@ -240,6 +259,11 @@ try {
     console.error("Performance budget exceeded:", summary.filter(row => !row.passed));
     process.exitCode = 1;
   }
+} catch (error) {
+  // Failed runs must remain inspectable, including any successfully collected
+  // samples. Never silently replace a failed production audit with local data.
+  writeFileSync(output, JSON.stringify({ origin, routes, runs, complete: false, error: error.message, rows }, null, 2) + "\n");
+  throw error;
 } finally {
   await send("Emulation.setCPUThrottlingRate", { rate: 1 });
   await send("Page.close");

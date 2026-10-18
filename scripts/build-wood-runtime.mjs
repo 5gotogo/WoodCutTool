@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join, resolve } from "node:path";
 import vm from "node:vm";
+import { asyncNavigation } from "./async-navigation.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const chrome = readFileSync(join(root, "assets/site-chrome.js"), "utf8");
@@ -31,35 +32,10 @@ export function renderWoodChrome(pathname) {
 }
 
 export function woodRuntimeSource() {
-  let navigation = between(chrome, "function initMegaNavigation()", "function initBackToTop()");
-  const ensureStart = navigation.indexOf("const ensureMenu = (item) => {");
-  const ensureEnd = navigation.indexOf("const openMenu = (item) => {", ensureStart);
-  if (ensureStart < 0 || ensureEnd < 0) throw new Error("Missing shared navigation menu boundaries");
-  navigation = navigation.slice(0, ensureStart) + `const ensureMenu = async (item) => {
-      if (item.querySelector(".mega-menu")) return;
-      const menus = await loadMenus();
+  const navigation = asyncNavigation(between(chrome, "function initMegaNavigation()", "function initBackToTop()"), `const menus = await loadMenus();
       const markup = menus[item.dataset.menuKey || ""];
       if (!markup) throw new Error("Missing navigation menu");
-      if (!item.querySelector(".mega-menu")) item.insertAdjacentHTML("beforeend", markup);
-    };
-
-    ` + navigation.slice(ensureEnd);
-  navigation = navigation
-    .replace('const nav = document.querySelector(".nav");', 'let pendingMenu = null;\n    let menuRequest = 0;\n    const nav = document.querySelector(".nav");')
-    .replace("const closeSubmenus = () => {", "const closeSubmenus = () => {\n      menuRequest += 1;\n      pendingMenu = null;")
-    .replace("const openMenu = (item) => {\n      ensureMenu(item);", `const openMenu = async (item) => {
-      pendingMenu = item;
-      const request = ++menuRequest;
-      try { await ensureMenu(item); } catch (error) {
-        if (request === menuRequest) pendingMenu = null;
-        console.warn("Navigation menu failed to load.", error);
-        return;
-      }
-      if (request !== menuRequest) return;
-      pendingMenu = null;`)
-    .replace(/(?<!await )ensureMenu\(item\);/g, 'ensureMenu(item).catch(error => console.warn("Navigation menu failed to load.", error));')
-    .replace('if (!nav.classList.contains("nav-mega-open") && !nav.classList.contains("nav-mobile-open")) return;', 'if (!pendingMenu && !nav.classList.contains("nav-mega-open") && !nav.classList.contains("nav-mobile-open")) return;')
-    .replace('if (item.classList.contains("is-open")) {', 'if (item.classList.contains("is-open") || pendingMenu === item) {');
+      if (!item.querySelector(".mega-menu")) item.insertAdjacentHTML("beforeend", markup);`);
   if (!navigation.includes("await ensureMenu(item)") || navigation.includes("deferredMenus.get")) throw new Error("Wood navigation extraction is stale");
   const experiences = between(chrome, "function initBackToTop()", "renderSiteChrome();");
   const languageLoader = readFileSync(join(root, "assets/content-page.js"), "utf8")

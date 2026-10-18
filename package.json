@@ -83,7 +83,9 @@
     "test:shelf-pin": "node --check scripts/build-shelf-pin.mjs && node --check assets/shelf-pin.js && node scripts/test-shelf-pin.mjs",
     "test:shelf-pin-browser": "node scripts/test-shelf-pin-browser.mjs",
     "generate:joinery-lab": "node scripts/build-joinery-lab.mjs",
-    "test:joinery-lab": "node --check scripts/build-joinery-lab.mjs && node --check assets/joinery-lab.js && node scripts/test-joinery-lab.mjs"
+    "test:joinery-lab": "node --check scripts/build-joinery-lab.mjs && node --check assets/joinery-lab.js && node scripts/test-joinery-lab.mjs",
+    "audit:delivery": "node scripts/audit-static-delivery.mjs",
+    "test:navigation-browser": "node scripts/test-site-navigation-browser.mjs"
   },
   "devDependencies": {
     "lightningcss": "^1.33.0"
