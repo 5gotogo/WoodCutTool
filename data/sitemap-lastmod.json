@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-10-14",
-    "hash": "cd0a5ce3b71fc0dcd94b3ac65e40d7567a5f4f0b5253f2897a989c0a9ea5e7a2",
+    "lastmod": "2026-10-19",
+    "hash": "bb5e258bcebdd69ebacd5718be4a1a558986f9318a539a9004b9f66a4bca95bf",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -9437,6 +9437,16 @@
   "/legal/WoodCheck/support/": {
     "lastmod": "2026-09-09",
     "hash": "5d8678900311faac1df0dcf66106e3380bc172188e411a716f76b309c5d44ffc",
+    "hashVersion": 2
+  },
+  "/legal/YarnFit/privacy/": {
+    "lastmod": "2026-10-19",
+    "hash": "f204d371fabbf116801a1d7a34c68aa7dcf8e14fe4d8f038b4c81e0323b6b6ed",
+    "hashVersion": 2
+  },
+  "/legal/YarnFit/support/": {
+    "lastmod": "2026-10-19",
+    "hash": "f5c6fedab85d05e36cd115eeba031e7b4e465c3d3f76104378f4cbd83fb43429",
     "hashVersion": 2
   },
   "/lumber-calculator/": {

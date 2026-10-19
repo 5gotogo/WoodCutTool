@@ -1871,6 +1871,8 @@ export const conversionRoutes = new Set([
   "/legal/Tinnitus/support/",
   "/legal/WoodCheck/privacy/",
   "/legal/WoodCheck/support/",
+  "/legal/YarnFit/privacy/",
+  "/legal/YarnFit/support/",
   "/legal/cutlist/privacy/",
   "/legal/cutlist/support/",
   "/legal/quiltfit/privacy/",
