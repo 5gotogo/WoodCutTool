@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-10-19",
-    "hash": "bb5e258bcebdd69ebacd5718be4a1a558986f9318a539a9004b9f66a4bca95bf",
+    "lastmod": "2026-10-20",
+    "hash": "cdb519d22cb90518df7ccf809cd59f33ba9b14529b94499710c55b4499669ae1",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -9277,6 +9277,16 @@
   "/legal/CounterFit/support/": {
     "lastmod": "2026-10-10",
     "hash": "45a03836372ca4c051736fbe4d14508535e9dd045b1663a68ba55ca89932f1be",
+    "hashVersion": 2
+  },
+  "/legal/CushionCut/privacy/": {
+    "lastmod": "2026-10-20",
+    "hash": "7889f19dee294d25807e3e77e21c58277bec81c323442d7eddd20c724ec9c571",
+    "hashVersion": 2
+  },
+  "/legal/CushionCut/support/": {
+    "lastmod": "2026-10-20",
+    "hash": "7bb7a9770180d925edf454032e979d82090e8c29dc5a88832acfb7eacdb54256",
     "hashVersion": 2
   },
   "/legal/cutlist/privacy/": {

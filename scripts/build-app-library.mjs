@@ -162,7 +162,8 @@ const appSupportDirectory = [
   ["PoolPilot", "/legal/PoolPilot/privacy/", "/legal/PoolPilot/support/"],
   ["CounterFit", "/legal/CounterFit/privacy/", "/legal/CounterFit/support/"],
   ["FabricNest", "/legal/FabricNest/privacy/", "/legal/FabricNest/support/"],
-  ["YarnFit", "/legal/YarnFit/privacy/", "/legal/YarnFit/support/"]
+  ["YarnFit", "/legal/YarnFit/privacy/", "/legal/YarnFit/support/"],
+  ["CushionCut", "/legal/CushionCut/privacy/", "/legal/CushionCut/support/"]
 ];
 
 const featuredApps = [
