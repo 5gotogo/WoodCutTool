@@ -44,19 +44,8 @@ function head({ title, description, canonical, jsonLd = "", ogType = "website" }
 </head>`;
 }
 
-function header(active = "Glossary") {
-  const links = [
-    ["CutList", "/cutlist/"],
-    ["QuiltFit", "/quiltfit/"],
-    ["Tile", "/tile-calculator/"],
-    ["Stringer", "/stringer/"],
-    ["Blogs", "/blog/"],
-    ["Apps", "/apps/"],
-    ["Tools", "/tools/"],
-    ["Learn", "/learn/"],
-    ["Glossary", "/glossary/"]
-  ];
-  return `<header class="site-header"><nav class="nav" aria-label="Main navigation"><a class="brand" href="/"><span class="brand-mark">W</span>WoodCutTool</a><div class="nav-links">${links.map(([label, href]) => `<a${label === active ? ' class="active"' : ""} href="${href}">${label}</a>`).join("")}</div><label class="language-picker"><span class="visually-hidden">Language</span><select id="language-select" aria-label="Language"><option value="en">English</option><option value="zh-CN">简体中文</option><option value="zh-TW">繁體中文</option><option value="es">Español</option><option value="pt">Português</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="nl">Nederlands</option><option value="it">Italiano</option><option value="ar">العربية</option><option value="ja">日本語</option></select></label><a class="button small nav-download-cta" href="https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871" rel="nofollow noopener">Download CutList</a></nav></header>`;
+function header() {
+  return `<div data-site-header></div>`;
 }
 
 function footer() {
