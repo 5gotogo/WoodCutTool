@@ -20,6 +20,7 @@ const translations = {
   "zh-CN": {
     "Skip to content": "跳到内容",
     "Download CutList": "下载 CutList",
+    "Download CutList App": "下载 CutList App",
     "Download CutList iOS": "下载 CutList iOS",
     "Download QuiltFit": "下载 QuiltFit",
     "Download QuiltFit iOS": "下载 QuiltFit iOS",
@@ -178,6 +179,7 @@ const translations = {
   "zh-TW": {
     "Skip to content": "跳到內容",
     "Download CutList": "下載 CutList",
+    "Download CutList App": "下載 CutList App",
     "Download CutList iOS": "下載 CutList iOS",
     "Download QuiltFit": "下載 QuiltFit",
     "Download QuiltFit iOS": "下載 QuiltFit iOS",
@@ -286,6 +288,7 @@ const translations = {
   es: {
     "Skip to content": "Saltar al contenido",
     "Download CutList": "Descargar CutList",
+    "Download CutList App": "Descargar CutList App",
     "Download CutList iOS": "Descargar CutList iOS",
     "Download QuiltFit": "Descargar QuiltFit",
     "Download QuiltFit iOS": "Descargar QuiltFit iOS",
@@ -387,6 +390,7 @@ const translations = {
   },
   pt: {
     "Download CutList": "Baixar CutList",
+    "Download CutList App": "Baixar app CutList",
     "Download CutList iOS": "Baixar CutList iOS",
     "Download QuiltFit": "Baixar QuiltFit",
     "Download QuiltFit iOS": "Baixar QuiltFit iOS",
@@ -457,6 +461,7 @@ const translations = {
   },
   fr: {
     "Download CutList": "Télécharger CutList",
+    "Download CutList App": "Télécharger l’app CutList",
     "Download CutList iOS": "Télécharger CutList iOS",
     "Download QuiltFit": "Télécharger QuiltFit",
     "Download QuiltFit iOS": "Télécharger QuiltFit iOS",
@@ -524,6 +529,7 @@ const translations = {
   },
   de: {
     "Download CutList": "CutList laden",
+    "Download CutList App": "CutList-App herunterladen",
     "Download CutList iOS": "CutList iOS laden",
     "Download QuiltFit": "QuiltFit laden",
     "Download QuiltFit iOS": "QuiltFit iOS laden",
@@ -591,6 +597,7 @@ const translations = {
   },
   it: {
     "Download CutList": "Scarica CutList",
+    "Download CutList App": "Scarica l’app CutList",
     "Download CutList iOS": "Scarica CutList iOS",
     "Download QuiltFit": "Scarica QuiltFit",
     "Download QuiltFit iOS": "Scarica QuiltFit iOS",
@@ -659,6 +666,7 @@ const translations = {
   ar: {
     "Skip to content": "تجاوز إلى المحتوى",
     "Download CutList": "تنزيل CutList",
+    "Download CutList App": "تنزيل تطبيق CutList",
     "Download CutList iOS": "تنزيل CutList iOS",
     "Download QuiltFit": "تنزيل QuiltFit",
     "Download QuiltFit iOS": "تنزيل QuiltFit iOS",
@@ -727,6 +735,7 @@ const translations = {
   ja: {
     "Skip to content": "本文へ移動",
     "Download CutList": "CutList をダウンロード",
+    "Download CutList App": "CutList アプリをダウンロード",
     "Download CutList iOS": "CutList iOS をダウンロード",
     "Download QuiltFit": "QuiltFit をダウンロード",
     "Download QuiltFit iOS": "QuiltFit iOS をダウンロード",
@@ -3140,6 +3149,7 @@ const dutchTranslations = {
   "Disclaimer": "Disclaimer",
   "Directory": "Overzicht",
   "Download CutList": "CutList downloaden",
+  "Download CutList App": "CutList-app downloaden",
   "Download CutList iOS": "CutList iOS downloaden",
   "Download QuiltFit": "QuiltFit downloaden",
   "Download QuiltFit iOS": "QuiltFit iOS downloaden",
