@@ -56,29 +56,6 @@
     if (current.startsWith("/apps/snaplabel-photo-text-label/")) {
       return ["Download SnapLabel", appStoreLinks.snaplabel];
     }
-    const cutListRoute = (
-      current === "/" ||
-      /^\/(cutlist|cut-list|plywood|cabinet-cut-list)/.test(current) ||
-      current.startsWith("/apps/cutlist/") ||
-      current.startsWith("/templates/") ||
-      current.startsWith("/tools/components/") ||
-      current.startsWith("/examples/") ||
-      current.startsWith("/troubleshooting/") ||
-      current.startsWith("/worksheets/") ||
-      current.startsWith("/offcut-planner/") ||
-      current.startsWith("/cabinet-studio/") ||
-      current.startsWith("/shelf-pin-layout/") ||
-      current.startsWith("/joinery-lab/") ||
-      current.startsWith("/drawer-fit/") ||
-      current.startsWith("/glue-up/") ||
-      current.startsWith("/assembly-check/") ||
-      current.startsWith("/edge-banding/") ||
-      current.startsWith("/wood-movement/") ||
-      current.startsWith("/learn/") ||
-      (current.startsWith("/blog/") && /(cutlist|cut-list|plywood|cabinet|sheet-layout|kerf|wood-waste)/.test(current))
-    );
-    if (cutListRoute) return ["Download CutList App", "/apps/cutlist/"];
-    if (current.startsWith("/apps/") || current.startsWith("/blog/")) return ["Explore Apps", "/apps/"];
     return ["Download CutList App", "/apps/cutlist/"];
   }
 
