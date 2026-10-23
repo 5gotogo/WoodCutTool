@@ -1,12 +1,12 @@
 {
   "/": {
-    "lastmod": "2026-10-18",
-    "hash": "e0253b48f6739bcf84b32cbb34add64fd45d46a93852ee2daa65f2bb8b4a8d72",
+    "lastmod": "2026-10-23",
+    "hash": "de771236e4027ce222ba62fe57460c6e3965a1446c53f79698cf845ee4fe344f",
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-10-18",
-    "hash": "cef421230e9d94ffa1abe75340a38dcae20902c2d8093cea45f5ccffd7881284",
+    "lastmod": "2026-10-23",
+    "hash": "5cf4cb1894afc68f33a3dbd9739d3f8b06cb9e563edb360f8f1c555928ffa164",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -5980,8 +5980,8 @@
     "hashVersion": 2
   },
   "/cabinet-studio/": {
-    "lastmod": "2026-10-15",
-    "hash": "202b1705f6b1e6f258fd754fea684824cb07114dfd2d6c80ebd87da310729c2d",
+    "lastmod": "2026-10-23",
+    "hash": "612def02462928f6370857497865ae0390dcb8e094114fafb9f7197b44f33083",
     "hashVersion": 2
   },
   "/checklists/appliance-opening-release/": {
@@ -6752,6 +6752,61 @@
   "/drawer-box-calculator/": {
     "lastmod": "2026-09-16",
     "hash": "43253f3e8fd598499625649dc365c14f10299e8b3d68c892513968d8c8ad7bb2",
+    "hashVersion": 2
+  },
+  "/drawer-fit/": {
+    "lastmod": "2026-10-23",
+    "hash": "974a541538bcef50a221a597f70d1d82107325cfa823a3e5d34fb04133ebf940",
+    "hashVersion": 2
+  },
+  "/drawer-fit/applied-versus-grooved-bottom/": {
+    "lastmod": "2026-10-23",
+    "hash": "830fdd46289bcf9785f8b50958bdb9f78350d07d6fd009ca4689f41781cc5377",
+    "hashVersion": 2
+  },
+  "/drawer-fit/batch-records-and-export/": {
+    "lastmod": "2026-10-23",
+    "hash": "59be4b83b9a4d190019b421b9d02315d79e301f1e399f22e9af21ea5def78775",
+    "hashVersion": 2
+  },
+  "/drawer-fit/binding-drawer-diagnostic-sequence/": {
+    "lastmod": "2026-10-23",
+    "hash": "a3d80e780d879271d32a1812cce9be4e7aab6842b74ff323c61f395e71498dab",
+    "hashVersion": 2
+  },
+  "/drawer-fit/butt-joint-box-cut-list/": {
+    "lastmod": "2026-10-23",
+    "hash": "fa132e30c12c145fd6b7c1ff5a1b8c948b2239774cc762d3a2666012de414658",
+    "hashVersion": 2
+  },
+  "/drawer-fit/equal-fronts-and-reveals/": {
+    "lastmod": "2026-10-23",
+    "hash": "53118e102ee8cd8f84f128b2600898a92063f8340dfbce56f82c23f363b5c4d4",
+    "hashVersion": 2
+  },
+  "/drawer-fit/face-frame-blocking-and-datums/": {
+    "lastmod": "2026-10-23",
+    "hash": "97f204dc9fdeb4b76e0764c310337423e8654f5d267df3714f20726545d6d40f",
+    "hashVersion": 2
+  },
+  "/drawer-fit/measure-the-mounting-opening/": {
+    "lastmod": "2026-10-23",
+    "hash": "fe876a9882bf200c34f76c6dd05ac76a589f01070c9e7a20c1dc7519d2d4efa8",
+    "hashVersion": 2
+  },
+  "/drawer-fit/side-space-and-tolerance/": {
+    "lastmod": "2026-10-23",
+    "hash": "3928c231663fe7dabc7ad35d69af16349edd5033a3697d0f046287d4e954aeb5",
+    "hashVersion": 2
+  },
+  "/drawer-fit/slide-installation-first-article/": {
+    "lastmod": "2026-10-23",
+    "hash": "2349b6f48fd8ccd17e476551389c641a279a6aabbd6c124241fc74bcb9911e8e",
+    "hashVersion": 2
+  },
+  "/drawer-fit/undermount-preparation-boundary/": {
+    "lastmod": "2026-10-23",
+    "hash": "3e51dd42a219d1205aa8e102f67995b694d782ea1423514ca41dc778e798a7e4",
     "hashVersion": 2
   },
   "/drill-bit-finder/": {
@@ -8255,128 +8310,128 @@
     "hashVersion": 2
   },
   "/joinery-lab/": {
-    "lastmod": "2026-10-18",
-    "hash": "326a3c3c8c8d15ebe84e638ff687a238734418217fc4d082e3adac1378979908",
+    "lastmod": "2026-10-23",
+    "hash": "1fec0192f6627b6d9601d836ea8e5532f9d78c3d708566df7607009518ccaeba",
     "hashVersion": 2
   },
   "/joinery-lab/blind-mortise-ends-and-corners/": {
-    "lastmod": "2026-10-18",
-    "hash": "03dd834b83c24681bd2d4f422196611c4b2b4ddba7bdc6e6603f9fddf1068642",
+    "lastmod": "2026-10-23",
+    "hash": "ee6d11b62321b3429920ed1e1f869fa28208fdaeb4a92a2ce76a7202b754f520",
     "hashVersion": 2
   },
   "/joinery-lab/box-joint-count-and-remainder/": {
-    "lastmod": "2026-10-18",
-    "hash": "3e6ebb83f2c9ef70663ea3b3b78727d2372bf4e5ba26a93c7f53da18dc7fe025",
+    "lastmod": "2026-10-23",
+    "hash": "800ed30e40495604f2f9a08d6236243c93f45d2891d7796cc542baa4c1a9a00f",
     "hashVersion": 2
   },
   "/joinery-lab/box-joint-depth-unequal-panels/": {
-    "lastmod": "2026-10-18",
-    "hash": "2074802e1a7c4023fe645bd60ee1d5316158e1444aca921785a8994fc4cc8f46",
+    "lastmod": "2026-10-23",
+    "hash": "ca0538ccc5e402c9e985d9b64ea63cea62275a8246097c98797d3ac88305ea74",
     "hashVersion": 2
   },
   "/joinery-lab/box-joint-fit-and-four-corners/": {
-    "lastmod": "2026-10-18",
-    "hash": "ce8991f2e2585b516aaf3c82421959a7e9e7d2cbc81587610b02910d077f418a",
+    "lastmod": "2026-10-23",
+    "hash": "fdba77b03d05ec2df76b8afd5bc66821258087222e442401ff94a394c1d07eda",
     "hashVersion": 2
   },
   "/joinery-lab/box-joint-planner/": {
-    "lastmod": "2026-10-18",
-    "hash": "2fe03e67088fe2afc64e08f0bd87c00903fe6cce42557f4f6a987d34280e2c77",
+    "lastmod": "2026-10-23",
+    "hash": "353433d23eeca1b655da2aa99121c0326b73a7b448b31f2e0cdd921ed85ce8a5",
     "hashVersion": 2
   },
   "/joinery-lab/centered-tenon-shoulder-layout/": {
-    "lastmod": "2026-10-18",
-    "hash": "67d20678dde4a8ec77c573aafb2b8dfc30571210daeefd2802c753ea1a6d6ae0",
+    "lastmod": "2026-10-23",
+    "hash": "e4e397c900a97199c6b8f999bbceeb8e3696401619e07c5f3a68eec94bf9d0e4",
     "hashVersion": 2
   },
   "/joinery-lab/dado-groove-planner/": {
-    "lastmod": "2026-10-18",
-    "hash": "c49b4e6868baf023b4bdab7d5f4490ec82f46100b7bb3de3af8e6de285e56f0f",
+    "lastmod": "2026-10-23",
+    "hash": "a597f29fd619e589e8484d3fa489ee46ba101a360f069fa3b0ec238ed42b2e7b",
     "hashVersion": 2
   },
   "/joinery-lab/diagnose-a-rocking-half-lap/": {
-    "lastmod": "2026-10-18",
-    "hash": "484f7fa2b0cbd25dd3006bd81be39632e5548005496360e7cae61dfde2d44eec",
+    "lastmod": "2026-10-23",
+    "hash": "b51ccd1db76dcff9c6c8727f6d5d2e554fb3a06d86b83c55d5f4bdd43c467dfb",
     "hashVersion": 2
   },
   "/joinery-lab/dowel-bore-depth-and-tip/": {
-    "lastmod": "2026-10-18",
-    "hash": "326045cc51eecb361adb4b687bd258069f27b70f081c2402e49678d268e8cdca",
+    "lastmod": "2026-10-23",
+    "hash": "0e54144abce9e04e3f38045f59db6758fe4d5126e0f6167b412f202f8155a093",
     "hashVersion": 2
   },
   "/joinery-lab/dowel-row-planner/": {
-    "lastmod": "2026-10-18",
-    "hash": "00be905c1ebcb33854f22f538437c27bb8682568e2eff4c42fa117dbfbfad059",
+    "lastmod": "2026-10-23",
+    "hash": "7645a4892e620b9182f36280262d4079a4270ab496b911914cfdeb5f403771f4",
     "hashVersion": 2
   },
   "/joinery-lab/dowel-row-spacing-and-drift/": {
-    "lastmod": "2026-10-18",
-    "hash": "6e8e11fbd5881c3c56272ae0049a46ef107d77c7089a95c932ffdd4fc5fae9ff",
+    "lastmod": "2026-10-23",
+    "hash": "f8bbeadd6371852015ddc75bcb64a9104341e12dd25bfd5a9270b9936d609520",
     "hashVersion": 2
   },
   "/joinery-lab/fit-a-back-panel-seat/": {
-    "lastmod": "2026-10-18",
-    "hash": "4ead5727f5e5903e3ecfdc25fc6c9c171fbc8cacaedbb9f5573bad943b26a247",
+    "lastmod": "2026-10-23",
+    "hash": "71e0378a2348c12e02947274ffaf63e737d96783aaf57b8e14b671006f1c0ad4",
     "hashVersion": 2
   },
   "/joinery-lab/half-lap-planner/": {
-    "lastmod": "2026-10-18",
-    "hash": "485d65b8edce196622a498e1c22db4338358fa765390d3d13009cd4d2bf5eb06",
+    "lastmod": "2026-10-23",
+    "hash": "f84cd5543609937bded26160b19c58b0e40b046500a4f300210004522b39d4af",
     "hashVersion": 2
   },
   "/joinery-lab/map-corresponding-dowel-faces/": {
-    "lastmod": "2026-10-18",
-    "hash": "2912db43bea3897c9dd013fe13ded4416e732138a3386d932c0ca051bb87b736",
+    "lastmod": "2026-10-23",
+    "hash": "5bbd3afd2bea603f74dde8758066ff40bf2490029726743c7c03b38f996eb90a",
     "hashVersion": 2
   },
   "/joinery-lab/measure-plywood-for-a-dado/": {
-    "lastmod": "2026-10-18",
-    "hash": "827d7841c760747085535976e81f092cf8b0f02faac2fdaffa3cf9fdec4f47f4",
+    "lastmod": "2026-10-23",
+    "hash": "ee149887a04dd66c78b87700500783dd78a0c56a544082becfcb29c6520cafae",
     "hashVersion": 2
   },
   "/joinery-lab/mortise-tenon-planner/": {
-    "lastmod": "2026-10-18",
-    "hash": "2d1a46f20ffa9e8f19bbc75aa9aaa6ceb1770b3f3469b60388fb523ca566b6e0",
+    "lastmod": "2026-10-23",
+    "hash": "1cd04c2a6df7df16a66b650ea79f1f0c8069e2e57ae7eb3fb6fe37c04f6c7eea",
     "hashVersion": 2
   },
   "/joinery-lab/opposing-dado-datums/": {
-    "lastmod": "2026-10-18",
-    "hash": "d11f23d7cae899fa25908c2c11b683c9772e0e46c14da8db0897084eb1e789df",
+    "lastmod": "2026-10-23",
+    "hash": "be4c863b7df8d7186d3bb78932cb75d18e9e7bea838fee210f1a3ae5f67c1b75",
     "hashVersion": 2
   },
   "/joinery-lab/rabbet-assembly-and-finish/": {
-    "lastmod": "2026-10-18",
-    "hash": "c33e28a9883c8ae2a8f468c760ab754d2e56402aba298ddb62653c06f41d736a",
+    "lastmod": "2026-10-23",
+    "hash": "fecb96bb100cbe6fddc6fbfcba0ea910414739b3afc97ba3c952e51090e4b7aa",
     "hashVersion": 2
   },
   "/joinery-lab/rabbet-rebate-planner/": {
-    "lastmod": "2026-10-18",
-    "hash": "c1e4f79b7924972f6fc2e8f9f43a9c633e85bbc65fdc7c9846794401b4f01bd8",
+    "lastmod": "2026-10-23",
+    "hash": "f8fceae744ef2737b3d59feaf36a53517e82752836036ac99ed2f7386eab0ebe",
     "hashVersion": 2
   },
   "/joinery-lab/rabbet-shoulder-and-case-size/": {
-    "lastmod": "2026-10-18",
-    "hash": "143e1495a539e36aeb0347f2e95d9a9c5d78f155b621cc13ffa3b4a3d6335789",
+    "lastmod": "2026-10-23",
+    "hash": "c7c8e59c9b874978854c0849ae2d5c24ae01bdc386951ee3d9b05c26d8842a9a",
     "hashVersion": 2
   },
   "/joinery-lab/repeatable-lap-shoulders/": {
-    "lastmod": "2026-10-18",
-    "hash": "c1cc6e7051d86312f4a0a72454e4929b3b03657e079250d7ce5554b661385474",
+    "lastmod": "2026-10-23",
+    "hash": "367ac7f8dfd38f674cb0b87ae1d1e240e60dc4126f77f45dcf68220a67401067",
     "hashVersion": 2
   },
   "/joinery-lab/tenon-fit-coupon-record/": {
-    "lastmod": "2026-10-18",
-    "hash": "5dbc712689063ed151b98ee2edffa5114071800d90e4d0c5e2554f93b714cc11",
+    "lastmod": "2026-10-23",
+    "hash": "f8ef679064b362d28548a8f13f94ff8a41e97dc41f382ab238ae951a82633830",
     "hashVersion": 2
   },
   "/joinery-lab/through-versus-stopped-housings/": {
-    "lastmod": "2026-10-18",
-    "hash": "bacee0167d9ab744bc6ed7554fb8af682a01ee8af7e06cdd6c453ab2dc652b44",
+    "lastmod": "2026-10-23",
+    "hash": "24aa143feb488bd35f6bd757191c7b3d51e93851b860ab1c467fa3d70e4acd35",
     "hashVersion": 2
   },
   "/joinery-lab/unequal-stock-half-laps/": {
-    "lastmod": "2026-10-18",
-    "hash": "b06d41d67593d9234427bddeb77dd818d45a4468b95c01426191d7aaed9b78c4",
+    "lastmod": "2026-10-23",
+    "hash": "ee3d90f3b43ec9d2db254efc5d1daf6c6f0a4b1644b1559bf910c13a68931855",
     "hashVersion": 2
   },
   "/joist-span-calculator/": {
@@ -9685,38 +9740,38 @@
     "hashVersion": 2
   },
   "/shelf-pin-layout/": {
-    "lastmod": "2026-10-15",
-    "hash": "896a013017948e13ead86fccc45801aace92fe4a45a89a8425fc4797fca9f25a",
+    "lastmod": "2026-10-23",
+    "hash": "1077a4e438e6ad8059e98082db78b98a16fe0430fcb684eb1d8fc2b12b658cb3",
     "hashVersion": 2
   },
   "/shelf-pin-layout/32mm-grid-and-setbacks/": {
-    "lastmod": "2026-10-15",
-    "hash": "3bf558b52c86dfb8d63d7d89f4083d12bcdc792a79cf2ee82d329c4102ee7e7b",
+    "lastmod": "2026-10-23",
+    "hash": "0fdeff27a298822a5a448eae95f0d36c5ed8d0a6b2c13f7ac7aab7abd023d97e",
     "hashVersion": 2
   },
   "/shelf-pin-layout/drill-depth-and-test-coupon/": {
-    "lastmod": "2026-10-15",
-    "hash": "86f2a82b8f03cd8535e4e75b50883226f279f1b20bcb9593ffdde1cffb43d5d8",
+    "lastmod": "2026-10-23",
+    "hash": "cda788998595516d5098c42053069ccdfd3361b8b9693b18efd2a1500eac8810",
     "hashVersion": 2
   },
   "/shelf-pin-layout/hinge-and-joinery-keep-outs/": {
-    "lastmod": "2026-10-15",
-    "hash": "6d590da58ea02844a4ad3d48469b21bda53ea23ca4c2a364fa00b03e317ce833",
+    "lastmod": "2026-10-23",
+    "hash": "3a44cc4a5ef932b90a913dafbb49b13a2d72fbe779c8eb445edfeb10ef0c66f2",
     "hashVersion": 2
   },
   "/shelf-pin-layout/jig-indexing-and-print-scale/": {
-    "lastmod": "2026-10-15",
-    "hash": "c273b443c3b08f41138f4cb6402cc986797b50f78dc3ea4e85d72991563b8f9a",
+    "lastmod": "2026-10-23",
+    "hash": "9d289fa4984595904f378d4be9d9d1905c228b7f6fcc92f1e86d2cd4bc4a17e0",
     "hashVersion": 2
   },
   "/shelf-pin-layout/paired-panel-datums/": {
-    "lastmod": "2026-10-15",
-    "hash": "25aaa583b4436a0a5fa07ab3118190510ce05b72c7c3658552136d5c8bccbbb9",
+    "lastmod": "2026-10-23",
+    "hash": "28c149186f7f95115f9aefbe1ae7cacb4dbf464143ea1ba959b0b2aa5937bee5",
     "hashVersion": 2
   },
   "/shelf-pin-layout/shelf-fit-and-drilling-release/": {
-    "lastmod": "2026-10-15",
-    "hash": "dd2788438274bce89aa2c58e64f9cf85c0e48510a5fdeef983c8f7684f3a23ac",
+    "lastmod": "2026-10-23",
+    "hash": "e573b6839c458b2d7aea77eb28449381b45fa06f12f4b0a0411337a83c457ebe",
     "hashVersion": 2
   },
   "/shelf-sag-calculator/": {
@@ -10430,8 +10485,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-10-18",
-    "hash": "cbb31b28fc83b53d3e8e90dfa1eb673922a59326c6eaaff057a58bc4bbb0fcb2",
+    "lastmod": "2026-10-23",
+    "hash": "036d38f48853fb49ca408ba7202e886299f3cab7b9ca86a35a6fb72b9867f248",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

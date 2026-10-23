@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-10-18</lastmod><changefreq>weekly</changefreq><priority>0.96</priority></url>
+  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-10-23</lastmod><changefreq>weekly</changefreq><priority>0.96</priority></url>
   <url><loc>https://woodcuttool.com/tools/components/</loc><lastmod>2026-09-05</lastmod><changefreq>weekly</changefreq><priority>0.94</priority></url>
   <url><loc>https://woodcuttool.com/cutlist/</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>0.98</priority></url>
   <url><loc>https://woodcuttool.com/quiltfit/</loc><lastmod>2026-07-23</lastmod><changefreq>weekly</changefreq><priority>0.92</priority></url>
@@ -19,7 +19,7 @@
   <url><loc>https://woodcuttool.com/baluster-spacing-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/cabinet-cut-list-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/cabinet-door-calculator/</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/cabinet-studio/</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
+  <url><loc>https://woodcuttool.com/cabinet-studio/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
   <url><loc>https://woodcuttool.com/conversion/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/cost-estimator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/crown-molding-angle-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -28,6 +28,17 @@
   <url><loc>https://woodcuttool.com/deck-stain-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/deck-stair-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/drawer-box-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/drawer-fit/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
+  <url><loc>https://woodcuttool.com/drawer-fit/applied-versus-grooved-bottom/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/drawer-fit/batch-records-and-export/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/drawer-fit/binding-drawer-diagnostic-sequence/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/drawer-fit/butt-joint-box-cut-list/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/drawer-fit/equal-fronts-and-reveals/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/drawer-fit/face-frame-blocking-and-datums/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/drawer-fit/measure-the-mounting-opening/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/drawer-fit/side-space-and-tolerance/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/drawer-fit/slide-installation-first-article/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/drawer-fit/undermount-preparation-boundary/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/drill-bit-finder/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/edge-banding/</loc><lastmod>2026-10-09</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
   <url><loc>https://woodcuttool.com/edge-banding/finished-size-to-cut-size/</loc><lastmod>2026-10-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -45,31 +56,31 @@
   <url><loc>https://woodcuttool.com/glue-up/rehearse-and-split-batches/</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/glue-up/release-and-record/</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/inch-mm-converter/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/blind-mortise-ends-and-corners/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/box-joint-count-and-remainder/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/box-joint-depth-unequal-panels/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/box-joint-fit-and-four-corners/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/box-joint-planner/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/centered-tenon-shoulder-layout/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/dado-groove-planner/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/diagnose-a-rocking-half-lap/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/dowel-bore-depth-and-tip/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/dowel-row-planner/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/dowel-row-spacing-and-drift/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/fit-a-back-panel-seat/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/half-lap-planner/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/map-corresponding-dowel-faces/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/measure-plywood-for-a-dado/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/mortise-tenon-planner/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/opposing-dado-datums/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/rabbet-assembly-and-finish/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/rabbet-rebate-planner/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/rabbet-shoulder-and-case-size/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/repeatable-lap-shoulders/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/tenon-fit-coupon-record/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/through-versus-stopped-housings/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/unequal-stock-half-laps/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/blind-mortise-ends-and-corners/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/box-joint-count-and-remainder/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/box-joint-depth-unequal-panels/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/box-joint-fit-and-four-corners/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/box-joint-planner/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/centered-tenon-shoulder-layout/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/dado-groove-planner/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/diagnose-a-rocking-half-lap/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/dowel-bore-depth-and-tip/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/dowel-row-planner/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/dowel-row-spacing-and-drift/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/fit-a-back-panel-seat/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/half-lap-planner/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/map-corresponding-dowel-faces/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/measure-plywood-for-a-dado/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/mortise-tenon-planner/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/opposing-dado-datums/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/rabbet-assembly-and-finish/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/rabbet-rebate-planner/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/rabbet-shoulder-and-case-size/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/repeatable-lap-shoulders/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/tenon-fit-coupon-record/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/through-versus-stopped-housings/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/unequal-stock-half-laps/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joist-span-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/lumber-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/material-cost-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -84,13 +95,13 @@
   <url><loc>https://woodcuttool.com/roofing-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/screw-size-finder/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/sheet-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/shelf-pin-layout/</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
-  <url><loc>https://woodcuttool.com/shelf-pin-layout/32mm-grid-and-setbacks/</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/shelf-pin-layout/drill-depth-and-test-coupon/</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/shelf-pin-layout/hinge-and-joinery-keep-outs/</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/shelf-pin-layout/jig-indexing-and-print-scale/</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/shelf-pin-layout/paired-panel-datums/</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/shelf-pin-layout/shelf-fit-and-drilling-release/</loc><lastmod>2026-10-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/shelf-pin-layout/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
+  <url><loc>https://woodcuttool.com/shelf-pin-layout/32mm-grid-and-setbacks/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/shelf-pin-layout/drill-depth-and-test-coupon/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/shelf-pin-layout/hinge-and-joinery-keep-outs/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/shelf-pin-layout/jig-indexing-and-print-scale/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/shelf-pin-layout/paired-panel-datums/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/shelf-pin-layout/shelf-fit-and-drilling-release/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/shelf-sag-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/shelf-spacing-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/stair-angle-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -111,7 +122,7 @@
   <url><loc>https://woodcuttool.com/tools/components/stretcher-nailer-cut-list-calculator/</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
   <url><loc>https://woodcuttool.com/tools/components/toe-kick-platform-cut-list-calculator/</loc><lastmod>2026-09-05</lastmod><changefreq>monthly</changefreq><priority>0.84</priority></url>
   <url><loc>https://woodcuttool.com/tools/construction/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/tools/woodworking/</loc><lastmod>2026-10-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/tools/woodworking/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/wood-database/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/wood-movement/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
   <url><loc>https://woodcuttool.com/wood-movement/clearance-and-attachment-review/</loc><lastmod>2026-10-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>

@@ -70,6 +70,7 @@
       current.startsWith("/cabinet-studio/") ||
       current.startsWith("/shelf-pin-layout/") ||
       current.startsWith("/joinery-lab/") ||
+      current.startsWith("/drawer-fit/") ||
       current.startsWith("/glue-up/") ||
       current.startsWith("/assembly-check/") ||
       current.startsWith("/edge-banding/") ||
@@ -101,7 +102,7 @@
   function navLinks() {
     const template = document.createElement("template");
     template.innerHTML = "<div class=\"nav-links nav-links-mega\" id=\"site-navigation\"><div class=\"nav-menu-item\" data-menu-key=\"Tools\"><div class=\"nav-menu-control\"><a class=\"nav-trigger\" href=\"/tools/\">Tools</a><button class=\"nav-menu-toggle\" type=\"button\" aria-label=\"Open Tools menu\" aria-haspopup=\"true\" aria-expanded=\"false\"><span class=\"visually-hidden\">Open Tools menu</span></button></div></div><div class=\"nav-menu-item\" data-menu-key=\"Projects\"><div class=\"nav-menu-control\"><a class=\"nav-trigger\" href=\"/projects/\">Projects</a><button class=\"nav-menu-toggle\" type=\"button\" aria-label=\"Open Projects menu\" aria-haspopup=\"true\" aria-expanded=\"false\"><span class=\"visually-hidden\">Open Projects menu</span></button></div></div><div class=\"nav-menu-item\" data-menu-key=\"Learn\"><div class=\"nav-menu-control\"><a class=\"nav-trigger\" href=\"/learn/\">Learn</a><button class=\"nav-menu-toggle\" type=\"button\" aria-label=\"Open Learn menu\" aria-haspopup=\"true\" aria-expanded=\"false\"><span class=\"visually-hidden\">Open Learn menu</span></button></div></div><div class=\"nav-menu-item\" data-menu-key=\"Resources\"><div class=\"nav-menu-control\"><a class=\"nav-trigger\" href=\"/research/\">Resources</a><button class=\"nav-menu-toggle\" type=\"button\" aria-label=\"Open Resources menu\" aria-haspopup=\"true\" aria-expanded=\"false\"><span class=\"visually-hidden\">Open Resources menu</span></button></div></div><div class=\"nav-menu-item\" data-menu-key=\"Apps\"><div class=\"nav-menu-control\"><a class=\"nav-trigger\" href=\"/apps/\">Apps</a><button class=\"nav-menu-toggle\" type=\"button\" aria-label=\"Open Apps menu\" aria-haspopup=\"true\" aria-expanded=\"false\"><span class=\"visually-hidden\">Open Apps menu</span></button></div></div></div>";
-    const routes = {"Tools":["/tools/","/cutlist/","/quiltfit/","/tile-calculator/","/stringer/","/kerf-calculator/","/board-foot-calculator/","/wood-weight-calculator/","/screw-size-finder/","/cabinet-studio/","/joinery-lab/","/shelf-pin-layout/","/glue-up/","/edge-banding/","/assembly-check/","/finishing-planner/","/wood-movement/"],"Projects":["/projects/","/projects/","/one-sheet-projects/","/offcut-planner/","/templates/","/examples/","/tools/components/","/checklists/","/worksheets/","/troubleshooting/"],"Learn":["/learn/"],"Resources":["/research/","/compare/","/blog/","/glossary/","/wood/","/material-library/"],"Apps":["/apps/"]};
+    const routes = {"Tools":["/tools/","/cutlist/","/quiltfit/","/tile-calculator/","/stringer/","/kerf-calculator/","/board-foot-calculator/","/wood-weight-calculator/","/screw-size-finder/","/drawer-fit/","/cabinet-studio/","/joinery-lab/","/shelf-pin-layout/","/glue-up/","/edge-banding/","/assembly-check/","/finishing-planner/","/wood-movement/"],"Projects":["/projects/","/projects/","/one-sheet-projects/","/offcut-planner/","/templates/","/examples/","/tools/components/","/checklists/","/worksheets/","/troubleshooting/"],"Learn":["/learn/"],"Resources":["/research/","/compare/","/blog/","/glossary/","/wood/","/material-library/"],"Apps":["/apps/"]};
     for (const item of template.content.querySelectorAll(".nav-menu-item")) {
       const [href, ...aliases] = routes[item.dataset.menuKey];
       const active = isActive(href, aliases);
@@ -172,6 +173,7 @@
       { href: "/offcut-planner/", label: "Offcut Planner" },
       { href: "/cabinet-studio/", label: "Cabinet Studio" },
       { href: "/shelf-pin-layout/", label: "Shelf Pin Studio" },
+      { href: "/drawer-fit/", label: "Drawer Fit Studio" },
       { href: "/joinery-lab/", label: "Joinery Lab" },
       { href: "/glue-up/", label: "Glue-Up Planner" },
       { href: "/assembly-check/", label: "Assembly Check" },

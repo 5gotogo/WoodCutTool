@@ -5,6 +5,7 @@ import { guides, reviewed } from './shelf-pin-data.mjs';
 const root = resolve(import.meta.dirname, '..'), site = 'https://woodcuttool.com', base = '/shelf-pin-layout/';
 const p = sampleProject(), result = calculate(p);
 const related = [
+  ['Check drawer slide space and fronts','/drawer-fit/'],
   ['Shelf-pin boring checklist','/checklists/shelf-pin-boring/'], ['Drilling setup worksheet','/worksheets/drilling-boring-record/'],
   ['Check the dry-fit case','/assembly-check/'], ['Design the cabinet panels','/cabinet-studio/'],
   ['Review concealed hinges','/checklists/concealed-hinge-release/'], ['Understand shelf span','/learn/shelf-span-and-plywood-thickness-guide/']

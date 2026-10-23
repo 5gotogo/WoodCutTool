@@ -4,7 +4,7 @@ import { JOINTS, SOURCES, REVIEWED, EVIDENCE, sampleProject, calculate, renderSV
 import { guides, chapterNotes } from './joinery-data.mjs';
 
 const root=resolve(import.meta.dirname,'..'),site='https://woodcuttool.com',base='/joinery-lab/',project=sampleProject();
-const related=[['Review the complete dry assembly','/assembly-check/'],['Rehearse the glue-up','/glue-up/'],['Check seasonal wood movement','/wood-movement/'],['Design the cabinet parts','/cabinet-studio/'],['Plan the sheet cut list','/cutlist/'],['Find a reusable coupon offcut','/offcut-planner/']];
+const related=[['Size a drawer box and its fronts','/drawer-fit/'],['Review the complete dry assembly','/assembly-check/'],['Rehearse the glue-up','/glue-up/'],['Check seasonal wood movement','/wood-movement/'],['Design the cabinet parts','/cabinet-studio/'],['Plan the sheet cut list','/cutlist/'],['Find a reusable coupon offcut','/offcut-planner/']];
 for(const [,route] of related)if(!existsSync(resolve(root,'.'+route,'index.html')))throw Error('Missing contextual route '+route);
 const wordCount=value=>value.match(/\b[\w’-]+\b/g)?.length||0;
 const slugs=[...JOINTS.map(j=>j.slug),...guides.map(g=>g.slug)];

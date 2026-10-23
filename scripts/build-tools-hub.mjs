@@ -49,6 +49,7 @@ const html = `<!doctype html>
       ${card("Wood Movement Planner", "Estimate solid-wood seasonal widths, compare fixed-opening clearance, and export the moisture scenario.", "/wood-movement/", "Review seasonal movement")}
       ${card("Finishing Planner", "Select coated faces and edges, calculate product coverage and coats, and export a whole-package purchase list.", "/finishing-planner/", "Plan the finish")}
       ${card("Edge Banding Planner", "Convert finished sizes to saw blanks, mark every edge, estimate tape, and send checked blanks to sheet layout.", "/edge-banding/", "Plan the edging")}
+      ${card("Drawer Fit Studio", "Check slide side-space ranges at three mounting stations, derive box parts and equal fronts, and export your bench record.", "/drawer-fit/", "Plan drawer fit")}
       ${card("Cabinet Studio", "Design in live 3D, explode the assembly, check clearances, compare options, and export grain-aware sheet layouts and cut lists.", "/cabinet-studio/", "Open the design studio")}
       ${card("Plywood Cut Calculator", "Plan sheet layouts, parts, kerf, sheet count, layout preview, and estimated waste.", "/plywood-cut-calculator/")}
       ${card("Cut List Calculator", "Turn board inventory and part dimensions into a practical linear cutting plan.", "/cut-list-calculator/")}
@@ -106,6 +107,7 @@ const woodworkingGroups = [
   ] },
   { eyebrow: "Cabinet & Furniture", title: "Cabinet and furniture tools", description: "Generate cabinet, drawer, door, shelf, molding, and furniture planning dimensions.", cards: [
     { name: "Joinery Lab", description: "Dado, rabbet, half-lap, mortise-and-tenon, dowel and box-joint planners with eighteen field guides.", href: "/joinery-lab/" },
+    { name: "Drawer Fit Studio", description: "Three-station slide-space checks, butt-joint box parts, equal fronts and ten field guides.", href: "/drawer-fit/" },
     { name: "Shelf Pin Studio", description: "Paired side-panel hole maps, row offsets, keep-outs, depth review and CSV/SVG exports.", href: "/shelf-pin-layout/" },
     { name: "Glue-Up Planner", description: "Serial glue-up rehearsals, two assembly deadlines, reserve margins and local CSV/JSON records.", href: "/glue-up/" },
     { name: "Assembly Check", description: "Diagonal comparison, measurement uncertainty, physical dry-fit checks and saved CSV/JSON records.", href: "/assembly-check/" },
