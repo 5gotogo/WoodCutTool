@@ -115,8 +115,8 @@
     "hashVersion": 2
   },
   "/blog/": {
-    "lastmod": "2026-09-26",
-    "hash": "c0f53f1d610f66dc216051caa0c0719ef2a93a3ca69d2e82db2519d30937c4d6",
+    "lastmod": "2026-10-24",
+    "hash": "2e52d754649244ebb4393b3b259ac03a65999b780b7d24d315527df4e405ad7b",
     "hashVersion": 2
   },
   "/privacy-policy/": {
@@ -1110,8 +1110,8 @@
     "hashVersion": 2
   },
   "/blog/archive/": {
-    "lastmod": "2026-09-08",
-    "hash": "3078e6c639d7171efcf20aadcaf6635d31eddbe522aac0ba526a8875645f739e",
+    "lastmod": "2026-10-24",
+    "hash": "f2341c9fca66997a7206598e98a142037b37512135d56b9a7b857c7301822793",
     "hashVersion": 2
   },
   "/blog/arm-laptops-developer-workflows/": {
@@ -1295,8 +1295,8 @@
     "hashVersion": 2
   },
   "/blog/best-plywood-cutting-workflow-2026/": {
-    "lastmod": "2026-09-08",
-    "hash": "c3a8b6e45d64b9c86e8b5398dfe04279bc8de9c372a37efd59af05a3b3c99921",
+    "lastmod": "2026-10-24",
+    "hash": "f93acb4a17718ebed6941ae007e5f6f5e693642a8773c8dbc2b81b7704dc00cd",
     "hashVersion": 2
   },
   "/blog/best-plywood-thickness-for-cabinets-guide/": {
@@ -3580,8 +3580,8 @@
     "hashVersion": 2
   },
   "/blog/outdoor-storage-box-drainage-plywood-plan/": {
-    "lastmod": "2026-09-08",
-    "hash": "68e96f02f3b8c41ee8d2e1ef8e2bd6564e4d72cb2240ce3dff19294844a8468b",
+    "lastmod": "2026-10-24",
+    "hash": "6d4507af3099fc13436fca2dcc1147baec32cd785eb3b2af28e1d3fdfd3517a3",
     "hashVersion": 2
   },
   "/blog/paid-status-invoice-tracking-private-billing/": {
@@ -4200,8 +4200,8 @@
     "hashVersion": 2
   },
   "/blog/plywood-waste-cost-benchmark-manual-vs-optimizer/": {
-    "lastmod": "2026-09-08",
-    "hash": "959a61a4f65ba021c0b01838ca1abae665a93da1f78bcf507278446cc022de7d",
+    "lastmod": "2026-10-24",
+    "hash": "c4c6d1c25b4273b79fc2802669de60923b9cac4d7b95378c5bd6729731381048",
     "hashVersion": 2
   },
   "/blog/plywood-weight-calculator-transport-handling/": {
@@ -4922,6 +4922,11 @@
   "/blog/sheet-yield-research-benchmark/": {
     "lastmod": "2026-09-08",
     "hash": "f546173370c15ca69a5eea02bf6f35028df5120424e936cf2c1c5dcfa53413f0",
+    "hashVersion": 2
+  },
+  "/blog/shelf-creep-load-duration-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "c184963437f8916d5c0f874825ac08a4468705ecf50a07f3426557c827de7cea",
     "hashVersion": 2
   },
   "/blog/shift-calendar-for-nurses-security-drivers/": {
@@ -5665,8 +5670,8 @@
     "hashVersion": 2
   },
   "/blog/under-bed-drawer-caster-clearance-cut-list/": {
-    "lastmod": "2026-09-08",
-    "hash": "0ffea3c603c2bb2e16d67d156005becd551f64dba5ed91a7624a9b8892108c34",
+    "lastmod": "2026-10-24",
+    "hash": "49408fc2893699b798b93336560dbeaf730968b5766f60eeb7025cd864b72a73",
     "hashVersion": 2
   },
   "/blog/under-stair-cabinet-cut-list-layout/": {
@@ -5859,9 +5864,19 @@
     "hash": "6fffcdbae0931acc5a568a32bf9124743b55f3b225222732a8698e68f05a3279",
     "hashVersion": 2
   },
+  "/blog/wood-equilibrium-moisture-hysteresis-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "6ad5fe358d7593a2cffbd265da52ccb67e6033873a8d882ff8a12d150b3ecf04",
+    "hashVersion": 2
+  },
   "/blog/wood-finish-types-compared/": {
     "lastmod": "2026-09-08",
     "hash": "fd4b2ea54cd717fc5363e9f78362ed65f3f3a02abd3ad34c41b80d8c0bd9be60",
+    "hashVersion": 2
+  },
+  "/blog/wood-glue-assembly-window-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "5fc583aea4a5746c6204b2d174b1b8830a6961fb496d6bb328d6e1bd804b4a5c",
     "hashVersion": 2
   },
   "/blog/wood-glue-types-and-strength/": {

@@ -14,6 +14,7 @@ import { blogBatch20260714 } from "./blog-batch-2026-07-14.mjs";
 import { blogBatch20260715 } from "./blog-batch-2026-07-15.mjs";
 import { blogBatch20260716 } from "./blog-batch-2026-07-16.mjs";
 import { blogBatch20260718 } from "./blog-batch-2026-07-18.mjs";
+import { blogBatch20261024 } from "./blog-batch-2026-10-24.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -9680,6 +9681,7 @@ articles.push(...blogBatch20260714);
 articles.push(...blogBatch20260715);
 articles.push(...blogBatch20260716);
 articles.push(...blogBatch20260718);
+articles.push(...blogBatch20261024);
 
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {
@@ -11862,11 +11864,14 @@ function generateBlogTranslations() {
   };
 
   for (const article of articles) {
-    const templates = zhSectionTemplates[article.category] || generatedAppZhTemplate(article.category);
+    // Research explainers retain the source text until editorial translations
+    // exist. Category templates would replace their evidence with unrelated copy.
+    const retainSource = article.useGenericTranslation === false;
+    const templates = retainSource ? null : zhSectionTemplates[article.category] || generatedAppZhTemplate(article.category);
     const title = zhTitle(article);
     zhCN[article.title] = title;
-    zhCN[article.description] = zhDescription(article);
-    zhCN[article.kicker] = zhKicker(article);
+    zhCN[article.description] = retainSource ? article.description : zhDescription(article);
+    zhCN[article.kicker] = retainSource ? article.kicker : zhKicker(article);
     zhCN[article.readTime] = zhReadTime(article.readTime);
     zhCN[readTimeLabel(article.readTime)] = zhReadTime(article.readTime);
     zhCN[`${article.kicker} · ${readTimeLabel(article.readTime)}`] = `${zhKicker(article)} · ${zhReadTime(article.readTime)}`;
@@ -11886,8 +11891,12 @@ function generateBlogTranslations() {
       zhCN[item] = templates?.checklist[index] || item;
     });
 
-    const research = researchBriefs[article.slug] || fallbackResearchBrief(article);
+    const research = retainSource ? article.researchBrief : researchBriefs[article.slug] || fallbackResearchBrief(article);
     if (research) {
+      if (retainSource) {
+        for (const value of [research.question, research.insight, ...research.metrics]) zhCN[value] = value;
+        continue;
+      }
       zhCN[research.question] = `这篇文章关注“${title}”中最容易影响结果的关键问题。`;
       zhCN[research.insight] = zhDescription(article);
       research.metrics.forEach((metric, index) => {
@@ -12089,8 +12098,10 @@ function buildRssFeed() {
     ? new Date(previous.lastBuildDate)
     : new Date();
   const items = recent.map((article, i) => {
-    // Stagger pubDates so newest posts sort first in readers.
-    const d = new Date(anchorDate.getTime() - i * 86400000);
+    // Preserve declared publication days; stagger only undated legacy posts.
+    const d = article.publishedDate
+      ? new Date(`${article.publishedDate}T00:00:00+08:00`)
+      : new Date(anchorDate.getTime() - i * 86400000);
     const url = `${site}/blog/${article.slug}/`;
     return `    <item>
       <title>${escapeHtml(article.title)}</title>
