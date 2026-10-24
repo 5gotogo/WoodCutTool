@@ -116,7 +116,7 @@
   },
   "/blog/": {
     "lastmod": "2026-10-24",
-    "hash": "2e52d754649244ebb4393b3b259ac03a65999b780b7d24d315527df4e405ad7b",
+    "hash": "a6fb686f405e0631e85f56deab814b21269ab7b71ab1d29cf8b59ddc6445690c",
     "hashVersion": 2
   },
   "/privacy-policy/": {
@@ -1111,7 +1111,7 @@
   },
   "/blog/archive/": {
     "lastmod": "2026-10-24",
-    "hash": "f2341c9fca66997a7206598e98a142037b37512135d56b9a7b857c7301822793",
+    "hash": "a51a6fc549f68ed0271558c92602e5e1db92320bde9d7615582e4eec6b843c7c",
     "hashVersion": 2
   },
   "/blog/arm-laptops-developer-workflows/": {
@@ -1296,7 +1296,7 @@
   },
   "/blog/best-plywood-cutting-workflow-2026/": {
     "lastmod": "2026-10-24",
-    "hash": "f93acb4a17718ebed6941ae007e5f6f5e693642a8773c8dbc2b81b7704dc00cd",
+    "hash": "56d7d7910b2f4903f36661e06e36742ef875c8c4bfe0ef20f8a712b57c8671b4",
     "hashVersion": 2
   },
   "/blog/best-plywood-thickness-for-cabinets-guide/": {
@@ -1407,6 +1407,11 @@
   "/blog/cabinet-cut-list-mistakes/": {
     "lastmod": "2026-09-08",
     "hash": "69745abf879e157a36da62a2c95479f523f299d72c4f43fb55678b9e5e047b22",
+    "hashVersion": 2
+  },
+  "/blog/cabinet-diagonal-squareness-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "4b3f9fa155cd88a0df5a601e89aaa56bf7afd1480410b43050762b1b6ae3ba99",
     "hashVersion": 2
   },
   "/blog/cabinet-door-alignment-troubleshooting/": {
@@ -1542,6 +1547,11 @@
   "/blog/cabinet-toekick-cut-list/": {
     "lastmod": "2026-09-08",
     "hash": "c5c82794a06eeb8e7046e482d327c5277a8e194d4a36233cac54b21e1b4faa3e",
+    "hashVersion": 2
+  },
+  "/blog/cabinet-tolerance-measurement-uncertainty-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "a0afe9ff557fd95fbe60826dc3fb75197fbbca32c798ba0829060d81f1487e70",
     "hashVersion": 2
   },
   "/blog/cadenza-drone-tones-for-ear-training/": {
@@ -1842,6 +1852,11 @@
   "/blog/cut-list-optimizer-says-extra-sheet/": {
     "lastmod": "2026-09-08",
     "hash": "d45040c9244e427b49da5ed6fc0805d7a58c28a7cee4f5d5eeb5adcc6b3cd1a5",
+    "hashVersion": 2
+  },
+  "/blog/cut-list-paired-benchmark-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "74c311f2a0c95bce7833c71b28358b31abff045303e6339b7d64cbd0079bd0a8",
     "hashVersion": 2
   },
   "/blog/cut-list-pdf-for-shop-floor/": {
@@ -3919,6 +3934,11 @@
     "hash": "09394684f79e3bd71489e387951f59a66e99792b1c692955b2150cbb875cd33e",
     "hashVersion": 2
   },
+  "/blog/plywood-directional-stiffness-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "61a4b3346f8fb9639345e86c8a758f44e707b8badab9089a2b969dda021133e7",
+    "hashVersion": 2
+  },
   "/blog/plywood-drawer-bank-cut-list/": {
     "lastmod": "2026-09-08",
     "hash": "892deab0ab01e6eaff98018fe753e0477fa61d60f0c19cdbc95082308fa72a05",
@@ -4201,7 +4221,7 @@
   },
   "/blog/plywood-waste-cost-benchmark-manual-vs-optimizer/": {
     "lastmod": "2026-10-24",
-    "hash": "c4c6d1c25b4273b79fc2802669de60923b9cac4d7b95378c5bd6729731381048",
+    "hash": "bb1e9907bf844caf6f91f953a5cf88e7a7531f28492c3b593cfb16ce7aa96fed",
     "hashVersion": 2
   },
   "/blog/plywood-weight-calculator-transport-handling/": {
@@ -4919,6 +4939,11 @@
     "hash": "f3c505acb6552343965a416936568082ed144ccccb01347d5bf2de04554f1298",
     "hashVersion": 2
   },
+  "/blog/sheet-packing-lower-bound-proof-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "63d8edf8d4cd02c5141caf9a2ae1155e382377288e0e4a54959c89c10ccfc5cd",
+    "hashVersion": 2
+  },
   "/blog/sheet-yield-research-benchmark/": {
     "lastmod": "2026-09-08",
     "hash": "f546173370c15ca69a5eea02bf6f35028df5120424e936cf2c1c5dcfa53413f0",
@@ -4926,7 +4951,7 @@
   },
   "/blog/shelf-creep-load-duration-research/": {
     "lastmod": "2026-10-24",
-    "hash": "c184963437f8916d5c0f874825ac08a4468705ecf50a07f3426557c827de7cea",
+    "hash": "c936b381d130698e0691c0ca99760f3434b14f0949e99e999b425d0b1e9fc681",
     "hashVersion": 2
   },
   "/blog/shift-calendar-for-nurses-security-drivers/": {
@@ -5859,14 +5884,29 @@
     "hash": "036d0f13b341b9de6ffeee12da149941eea27fcf043225eed1a4a02b4bc46709",
     "hashVersion": 2
   },
+  "/blog/wood-bond-surface-preparation-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "3d2f209d02e122d580aeb85e7be6ad937c1c75580a947677b44f3209c42382a6",
+    "hashVersion": 2
+  },
   "/blog/wood-cutting-calculator-guide/": {
     "lastmod": "2026-07-23",
     "hash": "6fffcdbae0931acc5a568a32bf9124743b55f3b225222732a8698e68f05a3279",
     "hashVersion": 2
   },
+  "/blog/wood-density-panel-mass-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "58988ccf009d35e1fe2f694a17d5b249d1ff3e01ceb9e0aeeb4c82a6fe38c4d4",
+    "hashVersion": 2
+  },
   "/blog/wood-equilibrium-moisture-hysteresis-research/": {
     "lastmod": "2026-10-24",
     "hash": "6ad5fe358d7593a2cffbd265da52ccb67e6033873a8d882ff8a12d150b3ecf04",
+    "hashVersion": 2
+  },
+  "/blog/wood-finish-moisture-barrier-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "bb2dc3e80be9ab3bdadb37d6cf4fe82bd3c320d922af320cc848efde2dc1799b",
     "hashVersion": 2
   },
   "/blog/wood-finish-types-compared/": {
@@ -5876,7 +5916,7 @@
   },
   "/blog/wood-glue-assembly-window-research/": {
     "lastmod": "2026-10-24",
-    "hash": "5fc583aea4a5746c6204b2d174b1b8830a6961fb496d6bb328d6e1bd804b4a5c",
+    "hash": "6bc0bd6f5000b761cbb413c980c822af1960d89d95f9191aebdcdab260a4076e",
     "hashVersion": 2
   },
   "/blog/wood-glue-types-and-strength/": {
@@ -5894,9 +5934,19 @@
     "hash": "c96be51e609973d049c26847ad2b1569257b787b95cdb7668364832baef8d414",
     "hashVersion": 2
   },
+  "/blog/wood-moisture-meter-reference-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "6ea62ad7107817eb7fecb8fcec1b577db0f0b0ee39e7c3e1a647feee20180228",
+    "hashVersion": 2
+  },
   "/blog/wood-movement-and-why-plywood-is-stable/": {
     "lastmod": "2026-09-08",
     "hash": "b2f9065f98d0c1bb48b7f996a3c07fe0812da3311293c17087bf53f5a274d2b9",
+    "hashVersion": 2
+  },
+  "/blog/wood-screw-load-path-research/": {
+    "lastmod": "2026-10-24",
+    "hash": "955f7f35b0f29e942a3279f0ee0dbbf1a8046c853676d3136b93327f1dd3c9cc",
     "hashVersion": 2
   },
   "/blog/woodworking-craft-fair-inventory-and-pricing/": {

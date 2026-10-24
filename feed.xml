@@ -6,7 +6,87 @@
     <atom:link href="https://woodcuttool.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical woodworking guides on plywood cutting, cut lists, materials, cabinets, stairs, and tile from WoodCutTool.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Oct 2026 00:33:21 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 07:18:25 GMT</lastBuildDate>
+    <item>
+      <title>Wood Bond Surface Preparation: Designing a Comparison That Measures the Joint</title>
+      <link>https://woodcuttool.com/blog/wood-bond-surface-preparation-research/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/wood-bond-surface-preparation-research/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Examine bonding surfaces, nominal stress, and controlled specimen comparisons without confusing a higher failure force with an intrinsic adhesive property.</description>
+    </item>
+    <item>
+      <title>Cut-List Experiments: Compare Planning Methods on the Same Jobs</title>
+      <link>https://woodcuttool.com/blog/cut-list-paired-benchmark-research/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-paired-benchmark-research/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Design a paired cut-list benchmark with frozen inputs, complete-case rules, descriptive calculations, and an explicit boundary between simulation and shop evidence.</description>
+    </item>
+    <item>
+      <title>Sheet Packing Lower Bounds: Why Enough Area Does Not Prove a Layout</title>
+      <link>https://woodcuttool.com/blog/sheet-packing-lower-bound-proof-research/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/sheet-packing-lower-bound-proof-research/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Use explicit geometric counterexamples to separate an area lower bound, a feasible cutting layout, and a proof of optimality under stated constraints.</description>
+    </item>
+    <item>
+      <title>Cabinet Diagonals: What Equal Measurements Can and Cannot Prove</title>
+      <link>https://woodcuttool.com/blog/cabinet-diagonal-squareness-research/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-diagonal-squareness-research/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Derive a diagonal-to-shear relationship for an ideal cabinet frame and examine why equal diagonals require additional geometry and measurement checks.</description>
+    </item>
+    <item>
+      <title>Cabinet Fit: Tolerance Stacks and Measurement Uncertainty Answer Different Questions</title>
+      <link>https://woodcuttool.com/blog/cabinet-tolerance-measurement-uncertainty-research/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/cabinet-tolerance-measurement-uncertainty-research/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Compare worst-case tolerance limits with standard measurement uncertainty, including a reproducible cabinet clearance example and correlated thickness readings.</description>
+    </item>
+    <item>
+      <title>Wood Density and Panel Mass: Why the Moisture Basis Belongs in the Estimate</title>
+      <link>https://woodcuttool.com/blog/wood-density-panel-mass-research/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/wood-density-panel-mass-research/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Calculate panel mass with explicit density and volume assumptions, distinguish specific gravity from density, and plan a repeatable material check.</description>
+    </item>
+    <item>
+      <title>Wood Moisture Meters: Reference Measurements, Bias, and Sampling Depth</title>
+      <link>https://woodcuttool.com/blog/wood-moisture-meter-reference-research/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/wood-moisture-meter-reference-research/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Understand dry-basis moisture content, compare meter readings with matched reference specimens, and separate average bias from individual disagreement.</description>
+    </item>
+    <item>
+      <title>Wood Finishes and Moisture: Slower Exchange Is Not a Sealed System</title>
+      <link>https://woodcuttool.com/blog/wood-finish-moisture-barrier-research/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/wood-finish-moisture-barrier-research/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Separate water repellency, vapor resistance, and moisture response using wood-science references and a clearly labeled first-order teaching model.</description>
+    </item>
+    <item>
+      <title>Wood Screw Connections: Withdrawal, Lateral Load, and the Missing Load Path</title>
+      <link>https://woodcuttool.com/blog/wood-screw-load-path-research/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/wood-screw-load-path-research/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Distinguish screw withdrawal from lateral resistance, derive an illustrative force couple, and design connection checks around the actual load path.</description>
+    </item>
+    <item>
+      <title>Plywood Directional Stiffness: Why Rotating a Part Changes the Model</title>
+      <link>https://woodcuttool.com/blog/plywood-directional-stiffness-research/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-directional-stiffness-research/</guid>
+      <category>CutList</category>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Examine plywood orientation, bending stiffness, and product-specific evidence with a reproducible sensitivity calculation and a controlled comparison plan.</description>
+    </item>
     <item>
       <title>Wood Glue Assembly Time: A Research-Based Batch Planning Method</title>
       <link>https://woodcuttool.com/blog/wood-glue-assembly-window-research/</link>
@@ -1206,86 +1286,6 @@
       <category>CutList</category>
       <pubDate>Wed, 15 Jul 2026 16:00:00 GMT</pubDate>
       <description>Estimate kitchen cabinet plywood sheets from cabinet boxes, shelves, backs, drawers, finished ends, toe kicks, grain, kerf, and real sheet layouts.</description>
-    </item>
-    <item>
-      <title>Fastest Way to Install Kitchen Cabinets Without Losing Level</title>
-      <link>https://woodcuttool.com/blog/fastest-way-to-install-kitchen-cabinets/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/fastest-way-to-install-kitchen-cabinets/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 15 Jul 2026 16:00:00 GMT</pubDate>
-      <description>Speed up kitchen cabinet installation with a room survey, cabinet sequence, ledger plan, shims, labels, appliance checks, and documented punch list.</description>
-    </item>
-    <item>
-      <title>Best Way to Optimize Plywood Cuts: A Step-by-Step Layout Method</title>
-      <link>https://woodcuttool.com/blog/best-way-to-optimize-plywood-cuts/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/best-way-to-optimize-plywood-cuts/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 15 Jul 2026 16:00:00 GMT</pubDate>
-      <description>Learn how to optimize plywood cuts with real sheet sizes, kerf, grain rules, repeated parts, useful offcuts, and a practical saw sequence.</description>
-    </item>
-    <item>
-      <title>How to Cut Plywood Faster Without Making Expensive Mistakes</title>
-      <link>https://woodcuttool.com/blog/how-to-cut-plywood-faster-without-mistakes/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/how-to-cut-plywood-faster-without-mistakes/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 15 Jul 2026 16:00:00 GMT</pubDate>
-      <description>A faster plywood workflow for measuring once, optimizing the sheet layout, staging cuts, labeling parts, and avoiding rushed rework.</description>
-    </item>
-    <item>
-      <title>Reading Nook Bookcase Cut List: Build Better Storage</title>
-      <link>https://woodcuttool.com/blog/reading-nook-bookcase-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/reading-nook-bookcase-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 14 Jul 2026 16:00:00 GMT</pubDate>
-      <description>Plan a reading-nook bookcase with shelf spans, bench seating, back panels, lighting clearance, edge treatment, and plywood sheet layout.</description>
-    </item>
-    <item>
-      <title>DIY Plywood Project Material List: From Idea to Cart</title>
-      <link>https://woodcuttool.com/blog/diy-plywood-project-material-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/diy-plywood-project-material-list/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 14 Jul 2026 16:00:00 GMT</pubDate>
-      <description>Turn a plywood project into a complete material list with sheet count, hardware, edge banding, finish, waste, delivery, and revision notes.</description>
-    </item>
-    <item>
-      <title>Best Plywood Thickness for Cabinets: Plan Before You Cut</title>
-      <link>https://woodcuttool.com/blog/best-plywood-thickness-for-cabinets-guide/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/best-plywood-thickness-for-cabinets-guide/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 14 Jul 2026 16:00:00 GMT</pubDate>
-      <description>Choose plywood thickness for cabinet sides, shelves, backs, drawers, and doors while balancing load, hardware, edge treatment, and sheet layout.</description>
-    </item>
-    <item>
-      <title>Cut List Before Ordering Plywood: 9 Checks That Save a Sheet</title>
-      <link>https://woodcuttool.com/blog/cut-list-before-ordering-plywood/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/cut-list-before-ordering-plywood/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 14 Jul 2026 16:00:00 GMT</pubDate>
-      <description>Use this pre-purchase cut list checklist to verify sheet sizes, kerf, quantities, grain, offcuts, delivery, and material groups before ordering plywood.</description>
-    </item>
-    <item>
-      <title>Drop Zone Entryway Storage Cut List</title>
-      <link>https://woodcuttool.com/blog/drop-zone-entryway-storage-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/drop-zone-entryway-storage-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 14 Jul 2026 16:00:00 GMT</pubDate>
-      <description>Plan a family drop zone with lockers, hooks, bench seating, shoe storage, charging space, back panels, and plywood layout.</description>
-    </item>
-    <item>
-      <title>Plywood Cabinet Door Material Estimate</title>
-      <link>https://woodcuttool.com/blog/plywood-cabinet-door-material-estimate/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-cabinet-door-material-estimate/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 14 Jul 2026 16:00:00 GMT</pubDate>
-      <description>Estimate plywood for cabinet doors with overlay or inset sizing, grain matching, hinge clearance, edge banding, and sheet yield.</description>
-    </item>
-    <item>
-      <title>DIY Sewing Cabinet Cut List: Plan the Workflow</title>
-      <link>https://woodcuttool.com/blog/diy-sewing-cabinet-cut-list/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/diy-sewing-cabinet-cut-list/</guid>
-      <category>CutList</category>
-      <pubDate>Tue, 14 Jul 2026 16:00:00 GMT</pubDate>
-      <description>Create a sewing cabinet cut list with machine clearance, fold-out surfaces, drawers, thread storage, cable access, and plywood sheet planning.</description>
     </item>
   </channel>
 </rss>
