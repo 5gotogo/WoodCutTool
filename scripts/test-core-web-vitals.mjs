@@ -55,8 +55,17 @@ function inspectArticles(directory) {
       articlePages += 1;
       heroImages += 1;
       const heroTag = hero[0];
-      if (!html.includes(woodworkingPreload(hero[1]))) failures.push(`${directory}/${entry.name}: typed hero preload does not match its AVIF candidates`);
-      if (!heroTag.includes('source type="image/avif"') || !heroTag.includes(hero[1].replace(/\.webp$/, "-480.avif")) || !heroTag.includes(hero[1].replace(/\.webp$/, "-960.avif"))) failures.push(`${directory}/${entry.name}: missing responsive AVIF picture`);
+      if (hero[1].endsWith(".svg")) {
+        // Authored diagrams retain vector coordinates and must not be cropped
+        // or passed through the responsive photography conversion contract.
+        const diagramPath = join(root, hero[1]);
+        if (!existsSync(diagramPath) || !readFileSync(diagramPath, "utf8").includes("viewBox=")) failures.push(`${directory}/${entry.name}: missing scalable diagram asset`);
+        if (!html.includes(`<link rel="preload" as="image" href="${hero[1]}" fetchpriority="high">`)) failures.push(`${directory}/${entry.name}: diagram hero is not preloaded`);
+        if (!/width="\d+" height="\d+"/.test(heroTag) || !heroTag.includes("object-fit: contain")) failures.push(`${directory}/${entry.name}: diagram must reserve dimensions and preserve its complete view`);
+      } else {
+        if (!html.includes(woodworkingPreload(hero[1]))) failures.push(`${directory}/${entry.name}: typed hero preload does not match its AVIF candidates`);
+        if (!heroTag.includes('source type="image/avif"') || !heroTag.includes(hero[1].replace(/\.webp$/, "-480.avif")) || !heroTag.includes(hero[1].replace(/\.webp$/, "-960.avif"))) failures.push(`${directory}/${entry.name}: missing responsive AVIF picture`);
+      }
       if (!heroTag.includes('loading="eager"') || !heroTag.includes('fetchpriority="high"')) {
         failures.push(`${directory}/${entry.name}: hero image is not eager/high priority`);
       }

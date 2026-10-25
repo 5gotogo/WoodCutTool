@@ -16,6 +16,7 @@ import { blogBatch20260716 } from "./blog-batch-2026-07-16.mjs";
 import { blogBatch20260718 } from "./blog-batch-2026-07-18.mjs";
 import { blogBatch20261024 } from "./blog-batch-2026-10-24.mjs";
 import { blogScienceBatch20261024 } from "./blog-batch-2026-10-24-science.mjs";
+import { defectMappingFeature, writeDefectMappingAssets } from "./blog-feature-2026-10-25.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -9684,6 +9685,8 @@ articles.push(...blogBatch20260716);
 articles.push(...blogBatch20260718);
 articles.push(...blogBatch20261024);
 articles.push(...blogScienceBatch20261024);
+articles.push(defectMappingFeature);
+writeDefectMappingAssets(root);
 
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {
@@ -10341,9 +10344,15 @@ function tinnitusArticleVisual(article, articleIndex) {
         </figure>`;
 }
 
-function articlePhotoVisual(article, articleIndex) {
+function articlePhotoVisual(article, articleIndex, { card = false } = {}) {
   const number = String(articleIndex + 1).padStart(2, "0");
   const image = article.image;
+  if (image.kind === "diagram") {
+    return `<figure class="article-wood-photo${card ? "" : " article-wood-photo-hero"}">
+          <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt || article.title)}" width="${image.width}" height="${image.height}" style="aspect-ratio: auto; object-fit: contain;" ${card ? 'loading="lazy"' : 'loading="eager" fetchpriority="high"'} decoding="async">
+          <figcaption>${escapeHtml(image.label || article.category)}</figcaption>
+        </figure>`;
+  }
   return `<figure class="blog-article-visual blog-photo-visual visual-${number}">
           <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt || article.title)}" loading="lazy" decoding="async">
           <figcaption>${escapeHtml(image.label || article.category)}</figcaption>
@@ -10690,7 +10699,7 @@ function articleHeroImage(article) {
 function articleVisual(article, { card = false } = {}) {
   const articleIndex = Math.max(0, getArticleIndex(article));
   if (article.image) {
-    return articlePhotoVisual(article, articleIndex);
+    return articlePhotoVisual(article, articleIndex, { card });
   }
   if (article.category === "Tinnitus") {
     return tinnitusArticleVisual(article, articleIndex);

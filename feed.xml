@@ -6,7 +6,15 @@
     <atom:link href="https://woodcuttool.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical woodworking guides on plywood cutting, cut lists, materials, cabinets, stairs, and tile from WoodCutTool.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Oct 2026 07:18:25 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 10:50:13 GMT</lastBuildDate>
+    <item>
+      <title>Plywood Defect Mapping: From a Damaged Sheet to Usable Rectangles</title>
+      <link>https://woodcuttool.com/blog/plywood-defect-mapping-usable-rectangles/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/plywood-defect-mapping-usable-rectangles/</guid>
+      <category>CutList</category>
+      <pubDate>Sat, 24 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Map plywood defects with a common datum, separate exclusions from kerf, and verify usable rectangles with a worked coordinate example and downloadable CSV.</description>
+    </item>
     <item>
       <title>Wood Bond Surface Preparation: Designing a Comparison That Measures the Joint</title>
       <link>https://woodcuttool.com/blog/wood-bond-surface-preparation-research/</link>
@@ -1278,14 +1286,6 @@
       <category>CutList</category>
       <pubDate>Wed, 15 Jul 2026 16:00:00 GMT</pubDate>
       <description>Make straight, repeatable plywood cuts with correct support, splinter control, rail placement, kerf allowance, cut order, and part labels.</description>
-    </item>
-    <item>
-      <title>How Many Sheets of Plywood Do I Need for Kitchen Cabinets?</title>
-      <link>https://woodcuttool.com/blog/how-many-sheets-plywood-for-kitchen-cabinets/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/how-many-sheets-plywood-for-kitchen-cabinets/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 15 Jul 2026 16:00:00 GMT</pubDate>
-      <description>Estimate kitchen cabinet plywood sheets from cabinet boxes, shelves, backs, drawers, finished ends, toe kicks, grain, kerf, and real sheet layouts.</description>
     </item>
   </channel>
 </rss>

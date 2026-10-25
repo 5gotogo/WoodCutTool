@@ -115,8 +115,8 @@
     "hashVersion": 2
   },
   "/blog/": {
-    "lastmod": "2026-10-24",
-    "hash": "a6fb686f405e0631e85f56deab814b21269ab7b71ab1d29cf8b59ddc6445690c",
+    "lastmod": "2026-10-25",
+    "hash": "ce2c690f3d158f382be1b754ed1d3c35ba2ed253ca4fc7cdd8bf3a97b3eddb61",
     "hashVersion": 2
   },
   "/privacy-policy/": {
@@ -1110,8 +1110,8 @@
     "hashVersion": 2
   },
   "/blog/archive/": {
-    "lastmod": "2026-10-24",
-    "hash": "a51a6fc549f68ed0271558c92602e5e1db92320bde9d7615582e4eec6b843c7c",
+    "lastmod": "2026-10-25",
+    "hash": "d53f25588007c99fa11ec8c6daecc8c03af43d779a744eec7f6b81f2fd746fba",
     "hashVersion": 2
   },
   "/blog/arm-laptops-developer-workflows/": {
@@ -1295,8 +1295,8 @@
     "hashVersion": 2
   },
   "/blog/best-plywood-cutting-workflow-2026/": {
-    "lastmod": "2026-10-24",
-    "hash": "56d7d7910b2f4903f36661e06e36742ef875c8c4bfe0ef20f8a712b57c8671b4",
+    "lastmod": "2026-10-25",
+    "hash": "7a268b2728d37719a9cf4439e38b4eca397e7a2244be2bb181d774275f42e72c",
     "hashVersion": 2
   },
   "/blog/best-plywood-thickness-for-cabinets-guide/": {
@@ -1855,8 +1855,8 @@
     "hashVersion": 2
   },
   "/blog/cut-list-paired-benchmark-research/": {
-    "lastmod": "2026-10-24",
-    "hash": "74c311f2a0c95bce7833c71b28358b31abff045303e6339b7d64cbd0079bd0a8",
+    "lastmod": "2026-10-25",
+    "hash": "71e8a58de65a194e4bba9ad39c7d9b2d319b05ea10a8a557d8ae1a8cc8b0931d",
     "hashVersion": 2
   },
   "/blog/cut-list-pdf-for-shop-floor/": {
@@ -3914,6 +3914,11 @@
     "hash": "2ea3967bb1e2f43ed22138c30a058e6b84ce58eabe04019bc188b37a11b19830",
     "hashVersion": 2
   },
+  "/blog/plywood-defect-mapping-usable-rectangles/": {
+    "lastmod": "2026-10-25",
+    "hash": "003dfb86f74e49bc94541cb0f3f15f13a851e5b677bb337d6a00b4af25666c52",
+    "hashVersion": 2
+  },
   "/blog/plywood-delamination-inspection/": {
     "lastmod": "2026-09-08",
     "hash": "66455a4e74da5b079461b3989f1510224720f982b0396893ee037c3deadde5db",
@@ -4220,8 +4225,8 @@
     "hashVersion": 2
   },
   "/blog/plywood-waste-cost-benchmark-manual-vs-optimizer/": {
-    "lastmod": "2026-10-24",
-    "hash": "bb1e9907bf844caf6f91f953a5cf88e7a7531f28492c3b593cfb16ce7aa96fed",
+    "lastmod": "2026-10-25",
+    "hash": "10990f4399d619a70cf1be4bb5b10f255afdbbc83295afdfe2f44a98e89c6dba",
     "hashVersion": 2
   },
   "/blog/plywood-weight-calculator-transport-handling/": {
@@ -5885,8 +5890,8 @@
     "hashVersion": 2
   },
   "/blog/wood-bond-surface-preparation-research/": {
-    "lastmod": "2026-10-24",
-    "hash": "3d2f209d02e122d580aeb85e7be6ad937c1c75580a947677b44f3209c42382a6",
+    "lastmod": "2026-10-25",
+    "hash": "382e7e05ab89940acd67ee5d07aebd3659ffc5c4c7c96147fa5e1a2f571a3e7e",
     "hashVersion": 2
   },
   "/blog/wood-cutting-calculator-guide/": {

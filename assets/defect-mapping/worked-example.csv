@@ -1,0 +1,8 @@
+model,units,record,x,y,width,height,kerf,area_mm2
+teaching-v1,mm,stock,0,0,1200,2400,4,2880000
+teaching-v1,mm,observed_cosmetic_mark,500,1000,200,300,4,60000
+teaching-v1,mm,exclusion,480,980,240,340,4,81600
+teaching-v1,mm,zone_L,0,0,476,2400,4,1142400
+teaching-v1,mm,zone_R,724,0,476,2400,4,1142400
+teaching-v1,mm,zone_B,480,0,240,976,4,234240
+teaching-v1,mm,zone_T,480,1324,240,1076,4,258240

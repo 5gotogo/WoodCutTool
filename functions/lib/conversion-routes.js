@@ -758,6 +758,7 @@ export const conversionRoutes = new Set([
   "/blog/plywood-cut-plan-with-finished-face-notes/",
   "/blog/plywood-cutting-calculator-circular-saw/",
   "/blog/plywood-cutting-calculator-cost-savings/",
+  "/blog/plywood-defect-mapping-usable-rectangles/",
   "/blog/plywood-delamination-inspection/",
   "/blog/plywood-delivery-staging-before-cutting/",
   "/blog/plywood-desk-build-cut-list/",

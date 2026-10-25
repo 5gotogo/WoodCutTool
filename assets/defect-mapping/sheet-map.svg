@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+<title id="title">One defect, four disjoint stock rectangles</title>
+<desc id="desc">A 1200 by 2400 millimeter usable panel viewed from face A, with a central observed cosmetic mark and a larger exclusion. Four labeled rectangles exclude four millimeter kerf bands. L and R are each 476 by 2400, B is 240 by 976, and T is 240 by 1076 millimeters.</desc>
+<rect width="960" height="720" rx="24" fill="#f6f3eb"/>
+<g font-family="system-ui, sans-serif" fill="#203d37">
+<text x="60" y="65" font-size="32" font-weight="750">Map the shape. Keep the coordinates.</text>
+<rect x="90" y="120" width="240" height="480" fill="#203d37" stroke="#31504b" stroke-width="1.5"/><rect x="90" y="120" width="95.2" height="480" fill="#d2e8dd" stroke="#31504b" stroke-width="1.5"/><text x="137.6" y="368" text-anchor="middle" font-size="24" font-weight="700">L</text><rect x="234.8" y="120" width="95.2" height="480" fill="#d2e8dd" stroke="#31504b" stroke-width="1.5"/><text x="282.4" y="368" text-anchor="middle" font-size="24" font-weight="700">R</text><rect x="186" y="404.8" width="48" height="195.20000000000002" fill="#c8ddeb" stroke="#31504b" stroke-width="1.5"/><text x="210" y="510.40000000000003" text-anchor="middle" font-size="24" font-weight="700">B</text><rect x="186" y="120" width="48" height="215.20000000000002" fill="#c8ddeb" stroke="#31504b" stroke-width="1.5"/><text x="210" y="235.60000000000002" text-anchor="middle" font-size="24" font-weight="700">T</text><rect x="186" y="336" width="48" height="68" fill="#f2c382" stroke="#8b4c1e" stroke-width="1.5"/><rect x="190" y="340" width="40" height="60" fill="#a74735" stroke="#702b20" stroke-width="1.5"/>
+<text x="210" y="103" font-size="22" text-anchor="middle">1200 mm</text>
+<text transform="translate(62 360) rotate(-90)" text-anchor="middle" font-size="22">2400 mm</text>
+<text x="90" y="638" font-size="22">(0, 0) · Face A</text>
+<path d="M 90 600 h 55 M 90 600 v -55" fill="none" stroke="#203d37" stroke-width="3"/>
+<text x="400" y="150" font-size="26" font-weight="700">Declared clean rectangles</text>
+<text x="400" y="200" font-size="25">L / R   476 × 2400 mm each</text>
+<text x="400" y="248" font-size="25">B         240 × 976 mm</text>
+<text x="400" y="296" font-size="25">T         240 × 1076 mm</text>
+<rect x="400" y="345" width="24" height="24" fill="#a74735"/><text x="440" y="366" font-size="24">Observed mark: 200 × 300 mm</text>
+<rect x="400" y="395" width="24" height="24" fill="#f2c382"/><text x="440" y="416" font-size="24">Exclusion: 240 × 340 mm</text>
+<text x="400" y="478" font-size="24">Dark gaps: 4 mm modeled kerf</text>
+<text x="400" y="526" font-size="24">Clean stock: 2.77728 m²</text>
+<text x="400" y="574" font-size="24">Not a maximum-yield solution.</text>
+<text x="60" y="682" font-size="22">Illustrative geometry only · not a repair approval or saw setup plan</text>
+</g></svg>
