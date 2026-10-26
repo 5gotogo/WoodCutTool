@@ -1,0 +1,4 @@
+model,units,group,part,face,orientation,width,height,source_top_y,installed_left_x,installed_top_y,kerf,reveal
+teaching-v1,mm,BANK-A,DF-1,A,top-up-vertical-grain,596,160,0,2,2,3.2,3
+teaching-v1,mm,BANK-A,DF-2,A,top-up-vertical-grain,596,240,163.2,2,165,3.2,3
+teaching-v1,mm,BANK-A,DF-3,A,top-up-vertical-grain,596,310,406.4,2,408,3.2,3

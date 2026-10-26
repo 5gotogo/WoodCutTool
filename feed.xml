@@ -6,7 +6,15 @@
     <atom:link href="https://woodcuttool.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Practical woodworking guides on plywood cutting, cut lists, materials, cabinets, stairs, and tile from WoodCutTool.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Oct 2026 10:50:13 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 07:22:57 GMT</lastBuildDate>
+    <item>
+      <title>Continuous Grain Drawer Fronts: Master Blank, Kerf, and Reveals</title>
+      <link>https://woodcuttool.com/blog/continuous-grain-drawer-fronts-master-blank/</link>
+      <guid isPermaLink="true">https://woodcuttool.com/blog/continuous-grain-drawer-fronts-master-blank/</guid>
+      <category>CutList</category>
+      <pubDate>Sun, 25 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Plan three continuous-grain drawer fronts from one master blank. Follow the kerf and reveal math, preserve panel order, and download the dimensioned SVG and CSV.</description>
+    </item>
     <item>
       <title>Plywood Defect Mapping: From a Damaged Sheet to Usable Rectangles</title>
       <link>https://woodcuttool.com/blog/plywood-defect-mapping-usable-rectangles/</link>
@@ -1278,14 +1286,6 @@
       <category>CutList</category>
       <pubDate>Wed, 15 Jul 2026 16:00:00 GMT</pubDate>
       <description>Plan a table saw cut sequence that reduces fence changes, protects reference edges, supports large panels, and keeps repeated cabinet parts organized.</description>
-    </item>
-    <item>
-      <title>Track Saw Plywood Cutting Guide for Beginners</title>
-      <link>https://woodcuttool.com/blog/track-saw-plywood-cutting-guide-for-beginners/</link>
-      <guid isPermaLink="true">https://woodcuttool.com/blog/track-saw-plywood-cutting-guide-for-beginners/</guid>
-      <category>CutList</category>
-      <pubDate>Wed, 15 Jul 2026 16:00:00 GMT</pubDate>
-      <description>Make straight, repeatable plywood cuts with correct support, splinter control, rail placement, kerf allowance, cut order, and part labels.</description>
     </item>
   </channel>
 </rss>

@@ -319,6 +319,7 @@ export const conversionRoutes = new Set([
   "/blog/contact-backup-app-iphone-excel-csv-vcard/",
   "/blog/contacts-backup-before-switching-phones/",
   "/blog/content-authenticity-c2pa-workflow/",
+  "/blog/continuous-grain-drawer-fronts-master-blank/",
   "/blog/continuous-quilt-binding-strip-calculator/",
   "/blog/corner-shelf-plywood-cut-list/",
   "/blog/craft-cutting-table-cut-list/",

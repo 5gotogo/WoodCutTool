@@ -17,6 +17,7 @@ import { blogBatch20260718 } from "./blog-batch-2026-07-18.mjs";
 import { blogBatch20261024 } from "./blog-batch-2026-10-24.mjs";
 import { blogScienceBatch20261024 } from "./blog-batch-2026-10-24-science.mjs";
 import { defectMappingFeature, writeDefectMappingAssets } from "./blog-feature-2026-10-25.mjs";
+import { grainFrontFeature, writeGrainFrontAssets } from "./blog-feature-2026-10-26.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -8126,6 +8127,7 @@ const woodworkingSeoBatch2 = [
         ["Can I grain match after cutting?", "No. It must be planned before cutting, when laying parts on the sheet, by locking rotation and choosing which areas parts come from."]
       ],
       sources: [
+        ["Worked feature: continuous-grain drawer fronts", "/blog/continuous-grain-drawer-fronts-master-blank/", "Calculate a master blank, kerf, reveals, and ordered front coordinates."],
         ["Blog: cabinet door styles explained", "/blog/cabinet-door-styles-explained/", "Door styles that show grain."],
         ["Learn: sheet layout optimization", "/learn/sheet-layout-optimization/", "Lay out grain-locked parts."]
       ]
@@ -9687,6 +9689,8 @@ articles.push(...blogBatch20261024);
 articles.push(...blogScienceBatch20261024);
 articles.push(defectMappingFeature);
 writeDefectMappingAssets(root);
+articles.push(grainFrontFeature);
+writeGrainFrontAssets(root);
 
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {
