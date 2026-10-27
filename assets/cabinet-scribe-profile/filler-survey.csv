@@ -1,0 +1,6 @@
+model,units,part,datum,height_from_top,gap_from_cabinet_datum,blank_width,nominal_waste_at_station
+teaching-v1,mm,F-01,cabinet_face_edge,0,42,55,13
+teaching-v1,mm,F-01,cabinet_face_edge,200,45,55,10
+teaching-v1,mm,F-01,cabinet_face_edge,400,49,55,6
+teaching-v1,mm,F-01,cabinet_face_edge,600,46,55,9
+teaching-v1,mm,F-01,cabinet_face_edge,800,43,55,12

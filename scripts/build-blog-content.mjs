@@ -18,6 +18,7 @@ import { blogBatch20261024 } from "./blog-batch-2026-10-24.mjs";
 import { blogScienceBatch20261024 } from "./blog-batch-2026-10-24-science.mjs";
 import { defectMappingFeature, writeDefectMappingAssets } from "./blog-feature-2026-10-25.mjs";
 import { grainFrontFeature, writeGrainFrontAssets } from "./blog-feature-2026-10-26.mjs";
+import { scribeFeature, writeScribeAssets } from "./blog-feature-2026-10-27.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -9691,6 +9692,8 @@ articles.push(defectMappingFeature);
 writeDefectMappingAssets(root);
 articles.push(grainFrontFeature);
 writeGrainFrontAssets(root);
+articles.push(scribeFeature);
+writeScribeAssets(root);
 
 const researchBriefs = {
   "plywood-waste-cost-benchmark-manual-vs-optimizer": {

@@ -115,8 +115,8 @@
     "hashVersion": 2
   },
   "/blog/": {
-    "lastmod": "2026-10-26",
-    "hash": "0ffd16787e2c26303f8b574712a8c4cc806e531afa408bfd02df540d027ca528",
+    "lastmod": "2026-10-27",
+    "hash": "87f09b8632cc8fd5cdffdd9d780e6f94f30059760e87333996cb92638b84c81c",
     "hashVersion": 2
   },
   "/privacy-policy/": {
@@ -1110,8 +1110,8 @@
     "hashVersion": 2
   },
   "/blog/archive/": {
-    "lastmod": "2026-10-26",
-    "hash": "c895b3510f4f2722c91ebde568f8ac894150a704967ec18e7808addd842103b3",
+    "lastmod": "2026-10-27",
+    "hash": "0c2dd3120e5c6aac879029daa44dc3c58245848edc25ccd9d61c08d2692ac75b",
     "hashVersion": 2
   },
   "/blog/arm-laptops-developer-workflows/": {
@@ -1295,8 +1295,8 @@
     "hashVersion": 2
   },
   "/blog/best-plywood-cutting-workflow-2026/": {
-    "lastmod": "2026-10-26",
-    "hash": "21f246e7537ef3c45eda7e913beb6b23acd524385d698ce9c0d4a6dcee94f126",
+    "lastmod": "2026-10-27",
+    "hash": "60d0abc62045f558c9faf7529e58d223393342cb976d4a2b03c54abb1f6428bc",
     "hashVersion": 2
   },
   "/blog/best-plywood-thickness-for-cabinets-guide/": {
@@ -1444,6 +1444,11 @@
     "hash": "97b03a115f5ae80a6b427d3eb03384a772e89b875871da00cda357b2223c62eb",
     "hashVersion": 2
   },
+  "/blog/cabinet-filler-scribe-survey-worked-example/": {
+    "lastmod": "2026-10-27",
+    "hash": "6301bb72fedb93533fa8b0fb45e441171b0f4e6923272d5b7001220811800da1",
+    "hashVersion": 2
+  },
   "/blog/cabinet-filler-strip-cut-list/": {
     "lastmod": "2026-09-08",
     "hash": "be04f7e3c39be56a6709d697334070c57c9f9becb1a7ae69d33c84786880caa8",
@@ -1510,8 +1515,8 @@
     "hashVersion": 2
   },
   "/blog/cabinet-scribe-strip-width/": {
-    "lastmod": "2026-09-08",
-    "hash": "f2a7807e957699a0dd8bf8bbfd60f319950f469fadc07c9653a6dde63eb88b00",
+    "lastmod": "2026-10-27",
+    "hash": "8fa4f48c2be60b9d5daa7dcfc8928a816fe55ed30a87fff9a162e7d639f3fa05",
     "hashVersion": 2
   },
   "/blog/cabinet-shop-daily-production-schedule/": {
@@ -1720,8 +1725,8 @@
     "hashVersion": 2
   },
   "/blog/continuous-grain-drawer-fronts-master-blank/": {
-    "lastmod": "2026-10-26",
-    "hash": "86bc1f35bf2f7da0f16de1168631efc13cfde907f08480ea283d85951fb1493f",
+    "lastmod": "2026-10-27",
+    "hash": "712a1da7a0b68da189d710aa552f98b249ae25762b36edf7d9273549b30fc707",
     "hashVersion": 2
   },
   "/blog/continuous-quilt-binding-strip-calculator/": {
@@ -3260,8 +3265,8 @@
     "hashVersion": 2
   },
   "/blog/measure-cabinet-run-for-fillers/": {
-    "lastmod": "2026-09-08",
-    "hash": "750a5907de76f213443f4f40508995d64a94ab2f3330a235fbb8b632c18a4794",
+    "lastmod": "2026-10-27",
+    "hash": "840519556768bd3fa43cde7c736d74d0144ba9ea3a1e07e629ca8be0a047e2ed",
     "hashVersion": 2
   },
   "/blog/measuring-and-marking-accuracy/": {
@@ -3920,8 +3925,8 @@
     "hashVersion": 2
   },
   "/blog/plywood-defect-mapping-usable-rectangles/": {
-    "lastmod": "2026-10-26",
-    "hash": "8e84f1c02d76c191746c2a3e7a3737a68e1bedc34b8440d158e6abf5a5858102",
+    "lastmod": "2026-10-27",
+    "hash": "da1a7f6373b783efeee8701e652762185fe1d16467473d10e95a7e33b121a572",
     "hashVersion": 2
   },
   "/blog/plywood-delamination-inspection/": {
@@ -4230,8 +4235,8 @@
     "hashVersion": 2
   },
   "/blog/plywood-waste-cost-benchmark-manual-vs-optimizer/": {
-    "lastmod": "2026-10-26",
-    "hash": "2d527ccd684c879476d16698447ea063b10c867381d9f2e962680fd11d4e17e4",
+    "lastmod": "2026-10-27",
+    "hash": "03ef36121e19bdf6051d04eb8a1433c88ddbe5fb5d561ad9e7da672f1bb8fc39",
     "hashVersion": 2
   },
   "/blog/plywood-weight-calculator-transport-handling/": {

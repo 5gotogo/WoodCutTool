@@ -264,6 +264,7 @@ export const conversionRoutes = new Set([
   "/blog/cabinet-door-styles-explained/",
   "/blog/cabinet-drawer-slide-clearance-cut-list/",
   "/blog/cabinet-end-panel-finished-size/",
+  "/blog/cabinet-filler-scribe-survey-worked-example/",
   "/blog/cabinet-filler-strip-cut-list/",
   "/blog/cabinet-filler-strip-measurement-and-installation/",
   "/blog/cabinet-filler-vs-overlay-conflict/",

@@ -208,3 +208,9 @@ function makeArticle([
 }
 
 export const blogBatch20260718 = topics.map(makeArticle);
+
+for (const article of blogBatch20260718) {
+  if (['cabinet-scribe-strip-width', 'measure-cabinet-run-for-fillers'].includes(article.slug)) {
+    article.deepDive.sources.unshift(['Worked filler survey and scribe', '/blog/cabinet-filler-scribe-survey-worked-example/', 'Follow a five-station example from cabinet datum to a field-fitted blank.']);
+  }
+}
