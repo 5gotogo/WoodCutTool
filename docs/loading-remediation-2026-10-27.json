@@ -1,0 +1,4289 @@
+{
+  "date": "2026-10-27",
+  "deployment": "Not deployed. Production probes measure the existing live site.",
+  "fieldPanel": {
+    "window": "Past 24 hours, GMT+8; exclude bots",
+    "lcpPercentilesMs": {
+      "p50": 1020,
+      "p75": 4836,
+      "p90": 14288,
+      "p99": 23256
+    },
+    "lcpP75Subparts": {
+      "ttfbMs": 2893,
+      "renderDelayMs": 725,
+      "displayedTtfbShare": "80%"
+    },
+    "note": "Subpart percentiles are independent and must not be added to reconstruct the overall percentile. Visits are not LCP sample counts.",
+    "visibleCountryCounts": {
+      "United States": {
+        "good": 10,
+        "needsImprovement": 0,
+        "poor": 0
+      },
+      "China": {
+        "good": 0,
+        "needsImprovement": 3,
+        "poor": 1
+      },
+      "Brazil": {
+        "good": 0,
+        "needsImprovement": 0,
+        "poor": 2
+      },
+      "Argentina": {
+        "good": 0,
+        "needsImprovement": 0,
+        "poor": 2
+      },
+      "Malaysia": {
+        "good": 2,
+        "needsImprovement": 0,
+        "poor": 0
+      }
+    },
+    "cacheRules": "Dashboard shows zero active custom cache rules."
+  },
+  "gzipBaseline": {
+    "scope": "http://127.0.0.1:4197; en language, 390x844 at 1x DPR, browser cache disabled, 4x CPU, 150ms configured latency, 200KB/s download. DNS/TLS connections may be reused between navigations. Synthetic evidence, not production RUM.",
+    "origin": "http://127.0.0.1:4197",
+    "routes": [
+      "/",
+      "/sheet-calculator/",
+      "/wood/acacia/"
+    ],
+    "runs": 3,
+    "budgets": {
+      "maxLcp": 0,
+      "maxLoad": 0,
+      "policy": "Every run must be below the enabled limit; 0 disables a limit."
+    },
+    "summary": [
+      {
+        "route": "/",
+        "lcp": 312,
+        "load": 441.39999999990687,
+        "lcpMax": 332,
+        "loadMax": 454.30000000004657,
+        "ttfb": 2.199999999953434,
+        "passed": true
+      },
+      {
+        "route": "/sheet-calculator/",
+        "lcp": 288,
+        "load": 774.3999999999069,
+        "lcpMax": 296,
+        "loadMax": 775.8999999999069,
+        "ttfb": 2.300000000046566,
+        "passed": true
+      },
+      {
+        "route": "/wood/acacia/",
+        "lcp": 252,
+        "load": 384.29999999981374,
+        "lcpMax": 256,
+        "loadMax": 392.70000000018626,
+        "ttfb": 1.9000000001396984,
+        "passed": true
+      }
+    ],
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 312,
+        "lcpElement": "h1",
+        "lcpUrl": "",
+        "lcpSize": 51330,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 3.3999999999068677,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 308.60000000009313
+        },
+        "fcp": 312,
+        "ttfb": 3.3999999999068677,
+        "htmlDownload": 254.80000000004657,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 2.6000000000931323,
+          "responseEnd": 258.19999999995343,
+          "protocol": "http/1.1"
+        },
+        "domReady": 438.69999999995343,
+        "load": 441.39999999990687,
+        "htmlTransfer": 20347,
+        "resourceTransfer": 96705,
+        "cssJsTransfer": 12943,
+        "imageTransfer": 0,
+        "resourceCount": 7,
+        "domNodes": 696,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 171.5,
+            "responseStart": 172.89999999990687,
+            "responseEnd": 371.69999999995343,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 200.19999999995343
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 173.0999999998603,
+            "responseStart": 173.79999999981374,
+            "responseEnd": 341,
+            "transfer": 728,
+            "encoded": 428,
+            "duration": 167.9000000001397
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 239.29999999981374,
+            "responseStart": 241.39999999990687,
+            "responseEnd": 409.0999999998603,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 169.80000000004657
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 239.29999999981374,
+            "responseStart": 241.19999999995343,
+            "responseEnd": 392.69999999995343,
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 153.4000000001397
+          },
+          {
+            "path": "/assets/home.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 239.29999999981374,
+            "responseStart": 241.29999999981374,
+            "responseEnd": 424.19999999995343,
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 184.9000000001397
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 239.29999999981374,
+            "responseStart": 241.5,
+            "responseEnd": 431.39999999990687,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.10000000009313
+          },
+          {
+            "path": "/favicon.ico",
+            "origin": "http://127.0.0.1:4197",
+            "type": "other",
+            "start": 443,
+            "responseStart": 444.19999999995343,
+            "responseEnd": 1008.1999999999534,
+            "transfer": 81840,
+            "encoded": 81540,
+            "duration": 565.1999999999534
+          }
+        ]
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 1,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 288,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 25112,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.300000000046566,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 285.69999999995343
+        },
+        "fcp": 288,
+        "ttfb": 2.300000000046566,
+        "htmlDownload": 226.89999999990687,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.5,
+          "responseEnd": 229.19999999995343,
+          "protocol": "http/1.1"
+        },
+        "domReady": 771.1999999999534,
+        "load": 774.3999999999069,
+        "htmlTransfer": 14719,
+        "resourceTransfer": 83671,
+        "cssJsTransfer": 82477,
+        "imageTransfer": 0,
+        "resourceCount": 4,
+        "domNodes": 203,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 170.80000000004657,
+            "responseStart": 172.89999999990687,
+            "responseEnd": 393.80000000004657,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 223
+          },
+          {
+            "path": "/assets/app.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 171.5,
+            "responseStart": 173.39999999990687,
+            "responseEnd": 753.6999999999534,
+            "transfer": 72680,
+            "encoded": 72380,
+            "duration": 582.1999999999534
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 233,
+            "responseStart": 234.19999999995343,
+            "responseEnd": 423.89999999990687,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 190.89999999990687
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 233.19999999995343,
+            "responseStart": 234.19999999995343,
+            "responseEnd": 400.5,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 167.30000000004657
+          }
+        ]
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 1,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 248,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 34254,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.0999999998603016,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 245.9000000001397
+        },
+        "fcp": 248,
+        "ttfb": 2.0999999998603016,
+        "htmlDownload": 213.80000000004657,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.1999999999534339,
+          "responseEnd": 215.89999999990687,
+          "protocol": "http/1.1"
+        },
+        "domReady": 382.5,
+        "load": 384.29999999981374,
+        "htmlTransfer": 12984,
+        "resourceTransfer": 9464,
+        "cssJsTransfer": 7542,
+        "imageTransfer": 0,
+        "resourceCount": 4,
+        "domNodes": 309,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 165.89999999990687,
+            "responseStart": 166.79999999981374,
+            "responseEnd": 343.19999999995343,
+            "transfer": 4517,
+            "encoded": 4217,
+            "duration": 177.30000000004657
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 168.19999999995343,
+            "responseStart": 169.29999999981374,
+            "responseEnd": 327.5999999998603,
+            "transfer": 728,
+            "encoded": 428,
+            "duration": 159.39999999990687
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 204.29999999981374,
+            "responseStart": 205.19999999995343,
+            "responseEnd": 365.5999999998603,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 161.30000000004657
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 204.29999999981374,
+            "responseStart": 205.29999999981374,
+            "responseEnd": 380.0999999998603,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 175.80000000004657
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 312,
+        "lcpElement": "h1",
+        "lcpUrl": "",
+        "lcpSize": 51330,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 310
+        },
+        "fcp": 312,
+        "ttfb": 2,
+        "htmlDownload": 255,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.1999999999534339,
+          "responseEnd": 257,
+          "protocol": "http/1.1"
+        },
+        "domReady": 431.30000000004657,
+        "load": 434.10000000009313,
+        "htmlTransfer": 20347,
+        "resourceTransfer": 14865,
+        "cssJsTransfer": 12943,
+        "imageTransfer": 0,
+        "resourceCount": 6,
+        "domNodes": 696,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 168.80000000004657,
+            "responseStart": 170,
+            "responseEnd": 362,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 193.19999999995343
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 170.60000000009313,
+            "responseStart": 171.10000000009313,
+            "responseEnd": 332.19999999995343,
+            "transfer": 728,
+            "encoded": 428,
+            "duration": 161.5999999998603
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 237.89999999990687,
+            "responseStart": 239.89999999990687,
+            "responseEnd": 391,
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 153.10000000009313
+          },
+          {
+            "path": "/assets/home.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 237.89999999990687,
+            "responseStart": 239.89999999990687,
+            "responseEnd": 422.10000000009313,
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 184.20000000018626
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 238.39999999990687,
+            "responseStart": 239.89999999990687,
+            "responseEnd": 406.89999999990687,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 168.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 238.39999999990687,
+            "responseStart": 240.19999999995343,
+            "responseEnd": 428.89999999990687,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 190.5
+          }
+        ]
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 2,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 296,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 25112,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.199999999953434,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 293.80000000004657
+        },
+        "fcp": 296,
+        "ttfb": 2.199999999953434,
+        "htmlDownload": 227.39999999990687,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.3000000000465661,
+          "responseEnd": 229.5999999998603,
+          "protocol": "http/1.1"
+        },
+        "domReady": 773.2999999998137,
+        "load": 775.8999999999069,
+        "htmlTransfer": 14719,
+        "resourceTransfer": 83671,
+        "cssJsTransfer": 82477,
+        "imageTransfer": 0,
+        "resourceCount": 4,
+        "domNodes": 203,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 174.19999999995343,
+            "responseStart": 175.89999999990687,
+            "responseEnd": 395.39999999990687,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 221.19999999995343
+          },
+          {
+            "path": "/assets/app.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 174.39999999990687,
+            "responseStart": 176.5,
+            "responseEnd": 754.6999999999534,
+            "transfer": 72680,
+            "encoded": 72380,
+            "duration": 580.3000000000466
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 232.79999999981374,
+            "responseStart": 234.69999999995343,
+            "responseEnd": 425.69999999995343,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.9000000001397
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 233.5999999998603,
+            "responseStart": 234.39999999990687,
+            "responseEnd": 403.29999999981374,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 169.69999999995343
+          }
+        ]
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 2,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 252,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 34254,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 1.9000000001396984,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 250.0999999998603
+        },
+        "fcp": 252,
+        "ttfb": 1.9000000001396984,
+        "htmlDownload": 222.30000000004657,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1,
+          "responseEnd": 224.20000000018626,
+          "protocol": "http/1.1"
+        },
+        "domReady": 390.9000000001397,
+        "load": 392.70000000018626,
+        "htmlTransfer": 12984,
+        "resourceTransfer": 9464,
+        "cssJsTransfer": 7542,
+        "imageTransfer": 0,
+        "resourceCount": 4,
+        "domNodes": 309,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 174.9000000001397,
+            "responseStart": 176,
+            "responseEnd": 351.60000000009313,
+            "transfer": 4517,
+            "encoded": 4217,
+            "duration": 176.69999999995343
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 177,
+            "responseStart": 177.60000000009313,
+            "responseEnd": 336.9000000001397,
+            "transfer": 728,
+            "encoded": 428,
+            "duration": 159.9000000001397
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 212.10000000009313,
+            "responseStart": 214.20000000018626,
+            "responseEnd": 389.30000000004657,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 177.19999999995343
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 212.80000000004657,
+            "responseStart": 214.10000000009313,
+            "responseEnd": 374.20000000018626,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 161.4000000001397
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 332,
+        "lcpElement": "h1",
+        "lcpUrl": "",
+        "lcpSize": 51330,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.199999999953434,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 329.80000000004657
+        },
+        "fcp": 332,
+        "ttfb": 2.199999999953434,
+        "htmlDownload": 254.80000000004657,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.3999999999068677,
+          "responseEnd": 257,
+          "protocol": "http/1.1"
+        },
+        "domReady": 447.60000000009313,
+        "load": 454.30000000004657,
+        "htmlTransfer": 20347,
+        "resourceTransfer": 14865,
+        "cssJsTransfer": 12943,
+        "imageTransfer": 0,
+        "resourceCount": 6,
+        "domNodes": 696,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 170.4000000001397,
+            "responseStart": 171.5,
+            "responseEnd": 370.10000000009313,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 199.69999999995343
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 172.60000000009313,
+            "responseStart": 173.30000000004657,
+            "responseEnd": 341.10000000009313,
+            "transfer": 728,
+            "encoded": 428,
+            "duration": 168.5
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 238.30000000004657,
+            "responseStart": 240.30000000004657,
+            "responseEnd": 400.60000000009313,
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 162.30000000004657
+          },
+          {
+            "path": "/assets/home.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 238.80000000004657,
+            "responseStart": 240.4000000001397,
+            "responseEnd": 430.9000000001397,
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 192.10000000009313
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 238.9000000001397,
+            "responseStart": 240.4000000001397,
+            "responseEnd": 415.60000000009313,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 176.69999999995343
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 238.9000000001397,
+            "responseStart": 240.5,
+            "responseEnd": 438.30000000004657,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 199.39999999990687
+          }
+        ]
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 3,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 284,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 25112,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.3999999999068677,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 281.60000000009313
+        },
+        "fcp": 284,
+        "ttfb": 2.3999999999068677,
+        "htmlDownload": 224.4000000001397,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.3999999999068677,
+          "responseEnd": 226.80000000004657,
+          "protocol": "http/1.1"
+        },
+        "domReady": 769.6999999999534,
+        "load": 772.3000000000466,
+        "htmlTransfer": 14719,
+        "resourceTransfer": 83671,
+        "cssJsTransfer": 82477,
+        "imageTransfer": 0,
+        "resourceCount": 4,
+        "domNodes": 203,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 169.60000000009313,
+            "responseStart": 170.89999999990687,
+            "responseEnd": 391.60000000009313,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 222
+          },
+          {
+            "path": "/assets/app.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 169.69999999995343,
+            "responseStart": 171.60000000009313,
+            "responseEnd": 751.5,
+            "transfer": 72680,
+            "encoded": 72380,
+            "duration": 581.8000000000466
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 229.80000000004657,
+            "responseStart": 231.5,
+            "responseEnd": 421.5,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.69999999995343
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 230.5,
+            "responseStart": 231.39999999990687,
+            "responseEnd": 398.89999999990687,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 168.39999999990687
+          }
+        ]
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 3,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 256,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 34254,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 1.8999999999068677,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 254.10000000009313
+        },
+        "fcp": 256,
+        "ttfb": 1.8999999999068677,
+        "htmlDownload": 216.9000000001397,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1,
+          "responseEnd": 218.80000000004657,
+          "protocol": "http/1.1"
+        },
+        "domReady": 377.69999999995343,
+        "load": 379.69999999995343,
+        "htmlTransfer": 12984,
+        "resourceTransfer": 9464,
+        "cssJsTransfer": 7542,
+        "imageTransfer": 0,
+        "resourceCount": 4,
+        "domNodes": 309,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 167.80000000004657,
+            "responseStart": 169.30000000004657,
+            "responseEnd": 353.60000000009313,
+            "transfer": 4517,
+            "encoded": 4217,
+            "duration": 185.80000000004657
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 169.60000000009313,
+            "responseStart": 170.19999999995343,
+            "responseEnd": 338.5,
+            "transfer": 728,
+            "encoded": 428,
+            "duration": 168.89999999990687
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4197",
+            "type": "script",
+            "start": 207,
+            "responseStart": 208.19999999995343,
+            "responseEnd": 375.80000000004657,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 168.80000000004657
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4197",
+            "type": "link",
+            "start": 207.10000000009313,
+            "responseStart": 208.19999999995343,
+            "responseEnd": 359.69999999995343,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 152.5999999998603
+          }
+        ]
+      }
+    ]
+  },
+  "gzipAfter": {
+    "scope": "http://127.0.0.1:4198; en language, 390x844 at 1x DPR, browser cache disabled, 4x CPU, 150ms configured latency, 200KB/s download. DNS/TLS connections may be reused between navigations. Synthetic evidence, not production RUM.",
+    "origin": "http://127.0.0.1:4198",
+    "routes": [
+      "/",
+      "/sheet-calculator/",
+      "/wood/acacia/"
+    ],
+    "runs": 3,
+    "budgets": {
+      "maxLcp": 0,
+      "maxLoad": 0,
+      "policy": "Every run must be below the enabled limit; 0 disables a limit."
+    },
+    "summary": [
+      {
+        "route": "/",
+        "lcp": 316,
+        "load": 441.30000000004657,
+        "lcpMax": 316,
+        "loadMax": 444.19999999995343,
+        "ttfb": 2.6000000000931323,
+        "passed": true
+      },
+      {
+        "route": "/sheet-calculator/",
+        "lcp": 284,
+        "load": 430.29999999981374,
+        "lcpMax": 288,
+        "loadMax": 435,
+        "ttfb": 2.2999999998137355,
+        "passed": true
+      },
+      {
+        "route": "/wood/acacia/",
+        "lcp": 248,
+        "load": 383.29999999981374,
+        "lcpMax": 260,
+        "loadMax": 384.9000000001397,
+        "ttfb": 2.199999999953434,
+        "passed": true
+      }
+    ],
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 316,
+        "lcpElement": "h1",
+        "lcpUrl": "",
+        "lcpSize": 51330,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 3.800000000046566,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 312.19999999995343
+        },
+        "fcp": 316,
+        "ttfb": 3.800000000046566,
+        "htmlDownload": 251.89999999990687,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 2.5,
+          "responseEnd": 255.69999999995343,
+          "protocol": "http/1.1"
+        },
+        "domReady": 437.60000000009313,
+        "load": 441.30000000004657,
+        "htmlTransfer": 20347,
+        "resourceTransfer": 20700,
+        "cssJsTransfer": 12943,
+        "imageTransfer": 0,
+        "resourceCount": 7,
+        "domNodes": 696,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 168,
+            "responseStart": 169.60000000009313,
+            "responseEnd": 368.19999999995343,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 200.19999999995343
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 169.80000000004657,
+            "responseStart": 170.5,
+            "responseEnd": 336.60000000009313,
+            "transfer": 728,
+            "encoded": 428,
+            "duration": 166.80000000004657
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 236,
+            "responseStart": 238,
+            "responseEnd": 412.30000000004657,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 176.30000000004657
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 236,
+            "responseStart": 237.69999999995343,
+            "responseEnd": 397.9000000001397,
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 161.9000000001397
+          },
+          {
+            "path": "/assets/home.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 236,
+            "responseStart": 237.80000000004657,
+            "responseEnd": 427.69999999995343,
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 191.69999999995343
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 236,
+            "responseStart": 238.30000000004657,
+            "responseEnd": 435.4000000001397,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 199.4000000001397
+          },
+          {
+            "path": "/favicon.ico",
+            "origin": "http://127.0.0.1:4198",
+            "type": "other",
+            "start": 442.69999999995343,
+            "responseStart": 443.60000000009313,
+            "responseEnd": 622.5,
+            "transfer": 5835,
+            "encoded": 5535,
+            "duration": 179.80000000004657
+          }
+        ]
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 1,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 284,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 25112,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.8999999999068677,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 281.10000000009313
+        },
+        "fcp": 284,
+        "ttfb": 2.8999999999068677,
+        "htmlDownload": 218.30000000004657,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 2.0999999998603016,
+          "responseEnd": 221.19999999995343,
+          "protocol": "http/1.1"
+        },
+        "domReady": 419.5999999998603,
+        "load": 421.69999999995343,
+        "htmlTransfer": 14731,
+        "resourceTransfer": 14496,
+        "cssJsTransfer": 13302,
+        "imageTransfer": 0,
+        "resourceCount": 5,
+        "domNodes": 204,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 165.5999999998603,
+            "responseStart": 167.5,
+            "responseEnd": 357.5999999998603,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 192
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 224.80000000004657,
+            "responseStart": 225.5999999998603,
+            "responseEnd": 378.89999999990687,
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 154.0999999998603
+          },
+          {
+            "path": "/assets/sheet.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 224.80000000004657,
+            "responseStart": 226.5,
+            "responseEnd": 409.5999999998603,
+            "transfer": 2540,
+            "encoded": 2240,
+            "duration": 184.79999999981374
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 224.80000000004657,
+            "responseStart": 226.69999999995343,
+            "responseEnd": 417.39999999990687,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 192.5999999998603
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 225,
+            "responseStart": 226.5999999998603,
+            "responseEnd": 393.69999999995343,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 168.69999999995343
+          }
+        ]
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 1,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 248,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 34254,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 1.9000000001396984,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 246.0999999998603
+        },
+        "fcp": 248,
+        "ttfb": 1.9000000001396984,
+        "htmlDownload": 221.39999999990687,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.1000000000931323,
+          "responseEnd": 223.30000000004657,
+          "protocol": "http/1.1"
+        },
+        "domReady": 383.60000000009313,
+        "load": 384.9000000001397,
+        "htmlTransfer": 12984,
+        "resourceTransfer": 9464,
+        "cssJsTransfer": 7542,
+        "imageTransfer": 0,
+        "resourceCount": 4,
+        "domNodes": 309,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 173.70000000018626,
+            "responseStart": 174.80000000004657,
+            "responseEnd": 359.4000000001397,
+            "transfer": 4517,
+            "encoded": 4217,
+            "duration": 185.69999999995343
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 175.70000000018626,
+            "responseStart": 176.4000000001397,
+            "responseEnd": 343.5,
+            "transfer": 728,
+            "encoded": 428,
+            "duration": 167.79999999981374
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 212.60000000009313,
+            "responseStart": 213.9000000001397,
+            "responseEnd": 365.80000000004657,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 153.19999999995343
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 212.60000000009313,
+            "responseStart": 214.10000000009313,
+            "responseEnd": 381.60000000009313,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 169
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 312,
+        "lcpElement": "h1",
+        "lcpUrl": "",
+        "lcpSize": 51330,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 310
+        },
+        "fcp": 312,
+        "ttfb": 2,
+        "htmlDownload": 249.89999999990687,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.3000000000465661,
+          "responseEnd": 251.89999999990687,
+          "protocol": "http/1.1"
+        },
+        "domReady": 436,
+        "load": 438.10000000009313,
+        "htmlTransfer": 20347,
+        "resourceTransfer": 14865,
+        "cssJsTransfer": 12943,
+        "imageTransfer": 0,
+        "resourceCount": 6,
+        "domNodes": 696,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 163.60000000009313,
+            "responseStart": 165.30000000004657,
+            "responseEnd": 362.89999999990687,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 199.29999999981374
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 166,
+            "responseStart": 166.60000000009313,
+            "responseEnd": 334.30000000004657,
+            "transfer": 728,
+            "encoded": 428,
+            "duration": 168.30000000004657
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 233.30000000004657,
+            "responseStart": 235.39999999990687,
+            "responseEnd": 408.60000000009313,
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 175.30000000004657
+          },
+          {
+            "path": "/assets/home.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 233.30000000004657,
+            "responseStart": 235.30000000004657,
+            "responseEnd": 422.89999999990687,
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 189.5999999998603
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 233.80000000004657,
+            "responseStart": 235.5,
+            "responseEnd": 430.39999999990687,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 196.5999999998603
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 233.89999999990687,
+            "responseStart": 235.19999999995343,
+            "responseEnd": 393.5,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.60000000009313
+          }
+        ]
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 2,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 284,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 25112,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.2999999998137355,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 281.70000000018626
+        },
+        "fcp": 284,
+        "ttfb": 2.2999999998137355,
+        "htmlDownload": 221.30000000004657,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.3999999999068677,
+          "responseEnd": 223.5999999998603,
+          "protocol": "http/1.1"
+        },
+        "domReady": 427.89999999990687,
+        "load": 430.29999999981374,
+        "htmlTransfer": 14731,
+        "resourceTransfer": 14496,
+        "cssJsTransfer": 13302,
+        "imageTransfer": 0,
+        "resourceCount": 5,
+        "domNodes": 204,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 166.89999999990687,
+            "responseStart": 168.0999999998603,
+            "responseEnd": 350.5,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 183.60000000009313
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 227.89999999990687,
+            "responseStart": 229.39999999990687,
+            "responseEnd": 388.89999999990687,
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 161
+          },
+          {
+            "path": "/assets/sheet.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 227.89999999990687,
+            "responseStart": 230,
+            "responseEnd": 425.29999999981374,
+            "transfer": 2540,
+            "encoded": 2240,
+            "duration": 197.39999999990687
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 228,
+            "responseStart": 229.89999999990687,
+            "responseEnd": 417.89999999990687,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 189.89999999990687
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 228.0999999998603,
+            "responseStart": 229.79999999981374,
+            "responseEnd": 396.39999999990687,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 168.30000000004657
+          }
+        ]
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 2,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 260,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 34254,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.199999999953434,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 257.80000000004657
+        },
+        "fcp": 260,
+        "ttfb": 2.199999999953434,
+        "htmlDownload": 219.69999999995343,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.3000000000465661,
+          "responseEnd": 221.89999999990687,
+          "protocol": "http/1.1"
+        },
+        "domReady": 381,
+        "load": 383,
+        "htmlTransfer": 12984,
+        "resourceTransfer": 9464,
+        "cssJsTransfer": 7542,
+        "imageTransfer": 0,
+        "resourceCount": 4,
+        "domNodes": 309,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 171.5999999998603,
+            "responseStart": 173.89999999990687,
+            "responseEnd": 349.0999999998603,
+            "transfer": 4517,
+            "encoded": 4217,
+            "duration": 177.5
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 174.0999999998603,
+            "responseStart": 174.69999999995343,
+            "responseEnd": 333.5999999998603,
+            "transfer": 728,
+            "encoded": 428,
+            "duration": 159.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 208.39999999990687,
+            "responseStart": 209.69999999995343,
+            "responseEnd": 379,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 170.60000000009313
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 208.5,
+            "responseStart": 209.5999999998603,
+            "responseEnd": 362.69999999995343,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 154.19999999995343
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 316,
+        "lcpElement": "h1",
+        "lcpUrl": "",
+        "lcpSize": 51330,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.6000000000931323,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 313.39999999990687
+        },
+        "fcp": 316,
+        "ttfb": 2.6000000000931323,
+        "htmlDownload": 254.69999999995343,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.5,
+          "responseEnd": 257.30000000004657,
+          "protocol": "http/1.1"
+        },
+        "domReady": 440.4000000001397,
+        "load": 444.19999999995343,
+        "htmlTransfer": 20347,
+        "resourceTransfer": 14865,
+        "cssJsTransfer": 12943,
+        "imageTransfer": 0,
+        "resourceCount": 6,
+        "domNodes": 696,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 170.9000000001397,
+            "responseStart": 172.80000000004657,
+            "responseEnd": 370.69999999995343,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 199.79999999981374
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 173.30000000004657,
+            "responseStart": 174.19999999995343,
+            "responseEnd": 340.5,
+            "transfer": 728,
+            "encoded": 428,
+            "duration": 167.19999999995343
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 240.10000000009313,
+            "responseStart": 241.9000000001397,
+            "responseEnd": 407.4000000001397,
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 167.30000000004657
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 240.10000000009313,
+            "responseStart": 241.9000000001397,
+            "responseEnd": 430.80000000004657,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 190.69999999995343
+          },
+          {
+            "path": "/assets/home.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 240.10000000009313,
+            "responseStart": 242,
+            "responseEnd": 436.80000000004657,
+            "transfer": 2181,
+            "encoded": 1881,
+            "duration": 196.69999999995343
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 240.19999999995343,
+            "responseStart": 241.80000000004657,
+            "responseEnd": 399.5,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 159.30000000004657
+          }
+        ]
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 3,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 288,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 25112,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.199999999953434,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 285.80000000004657
+        },
+        "fcp": 288,
+        "ttfb": 2.199999999953434,
+        "htmlDownload": 225.19999999995343,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.3000000000465661,
+          "responseEnd": 227.39999999990687,
+          "protocol": "http/1.1"
+        },
+        "domReady": 432.79999999981374,
+        "load": 435,
+        "htmlTransfer": 14731,
+        "resourceTransfer": 14496,
+        "cssJsTransfer": 13302,
+        "imageTransfer": 0,
+        "resourceCount": 5,
+        "domNodes": 204,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 171,
+            "responseStart": 172.0999999998603,
+            "responseEnd": 355.5,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 184.5
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 231.29999999981374,
+            "responseStart": 232.79999999981374,
+            "responseEnd": 392.69999999995343,
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 161.4000000001397
+          },
+          {
+            "path": "/assets/sheet.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 231.89999999990687,
+            "responseStart": 233.5,
+            "responseEnd": 422.0999999998603,
+            "transfer": 2540,
+            "encoded": 2240,
+            "duration": 190.19999999995343
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 232,
+            "responseStart": 233.5999999998603,
+            "responseEnd": 430.5999999998603,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 198.5999999998603
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 232.0999999998603,
+            "responseStart": 233.39999999990687,
+            "responseEnd": 399.19999999995343,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 167.10000000009313
+          }
+        ]
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 3,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 248,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 34254,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.699999999953434,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 245.30000000004657
+        },
+        "fcp": 248,
+        "ttfb": 2.699999999953434,
+        "htmlDownload": 218.30000000004657,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.8000000000465661,
+          "responseEnd": 221,
+          "protocol": "http/1.1"
+        },
+        "domReady": 381.5999999998603,
+        "load": 383.29999999981374,
+        "htmlTransfer": 12984,
+        "resourceTransfer": 9464,
+        "cssJsTransfer": 7542,
+        "imageTransfer": 0,
+        "resourceCount": 4,
+        "domNodes": 309,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 173,
+            "responseStart": 174.5999999998603,
+            "responseEnd": 357.5,
+            "transfer": 4517,
+            "encoded": 4217,
+            "duration": 184.5
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 175.69999999995343,
+            "responseStart": 176.29999999981374,
+            "responseEnd": 342.19999999995343,
+            "transfer": 728,
+            "encoded": 428,
+            "duration": 166.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 210.0999999998603,
+            "responseStart": 211.0999999998603,
+            "responseEnd": 363.5999999998603,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 153.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 210.0999999998603,
+            "responseStart": 211.19999999995343,
+            "responseEnd": 379.69999999995343,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 169.60000000009313
+          }
+        ]
+      }
+    ]
+  },
+  "finalSheet": {
+    "scope": "http://127.0.0.1:4198; en language, 390x844 at 1x DPR, browser cache disabled, 4x CPU, 150ms configured latency, 200KB/s download. DNS/TLS connections may be reused between navigations. Synthetic evidence, not production RUM.",
+    "origin": "http://127.0.0.1:4198",
+    "routes": [
+      "/sheet-calculator/"
+    ],
+    "runs": 3,
+    "budgets": {
+      "maxLcp": 0,
+      "maxLoad": 0,
+      "policy": "Every run must be below the enabled limit; 0 disables a limit."
+    },
+    "summary": [
+      {
+        "route": "/sheet-calculator/",
+        "lcp": 284,
+        "load": 434.19999999995343,
+        "lcpMax": 300,
+        "loadMax": 435.9000000001397,
+        "ttfb": 2.0999999998603016,
+        "passed": true
+      }
+    ],
+    "rows": [
+      {
+        "route": "/sheet-calculator/",
+        "run": 1,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 300,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 25112,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.2000000001862645,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 297.79999999981374
+        },
+        "fcp": 300,
+        "ttfb": 2.2000000001862645,
+        "htmlDownload": 226.79999999981374,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.2000000001862645,
+          "responseEnd": 229,
+          "protocol": "http/1.1"
+        },
+        "domReady": 433.60000000009313,
+        "load": 435.9000000001397,
+        "htmlTransfer": 14763,
+        "resourceTransfer": 14496,
+        "cssJsTransfer": 13302,
+        "imageTransfer": 0,
+        "resourceCount": 5,
+        "domNodes": 203,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 173.4000000001397,
+            "responseStart": 174.70000000018626,
+            "responseEnd": 357.30000000004657,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 183.89999999990687
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 233.30000000004657,
+            "responseStart": 234.4000000001397,
+            "responseEnd": 395.60000000009313,
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 162.30000000004657
+          },
+          {
+            "path": "/assets/sheet.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 233.80000000004657,
+            "responseStart": 235.20000000018626,
+            "responseEnd": 425.10000000009313,
+            "transfer": 2540,
+            "encoded": 2240,
+            "duration": 191.30000000004657
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 233.9000000001397,
+            "responseStart": 235.4000000001397,
+            "responseEnd": 431.60000000009313,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 197.69999999995343
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 234.10000000009313,
+            "responseStart": 235.20000000018626,
+            "responseEnd": 402,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 167.89999999990687
+          }
+        ]
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 2,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 284,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 25112,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 1.8999999999068677,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 282.10000000009313
+        },
+        "fcp": 284,
+        "ttfb": 1.8999999999068677,
+        "htmlDownload": 225.10000000009313,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.3000000000465661,
+          "responseEnd": 227,
+          "protocol": "http/1.1"
+        },
+        "domReady": 431.80000000004657,
+        "load": 434.19999999995343,
+        "htmlTransfer": 14763,
+        "resourceTransfer": 14496,
+        "cssJsTransfer": 13302,
+        "imageTransfer": 0,
+        "resourceCount": 5,
+        "domNodes": 203,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 169,
+            "responseStart": 170.80000000004657,
+            "responseEnd": 353.5999999998603,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 184.5999999998603
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 231.30000000004657,
+            "responseStart": 232.19999999995343,
+            "responseEnd": 390.80000000004657,
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 159.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 231.30000000004657,
+            "responseStart": 233,
+            "responseEnd": 422.0999999998603,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 190.79999999981374
+          },
+          {
+            "path": "/assets/sheet.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 231.30000000004657,
+            "responseStart": 233,
+            "responseEnd": 429.30000000004657,
+            "transfer": 2540,
+            "encoded": 2240,
+            "duration": 198
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 231.89999999990687,
+            "responseStart": 232.80000000004657,
+            "responseEnd": 399.0999999998603,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 167.19999999995343
+          }
+        ]
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 3,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "http/1.1",
+          "fromDiskCache": false,
+          "cacheControl": "no-cache",
+          "contentEncoding": "gzip",
+          "cacheStatus": "",
+          "ray": ""
+        },
+        "lcp": 284,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 25112,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 2.0999999998603016,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 281.9000000001397
+        },
+        "fcp": 284,
+        "ttfb": 2.0999999998603016,
+        "htmlDownload": 221.4000000001397,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1.2999999998137355,
+          "responseEnd": 223.5,
+          "protocol": "http/1.1"
+        },
+        "domReady": 420.89999999990687,
+        "load": 423.5999999998603,
+        "htmlTransfer": 14763,
+        "resourceTransfer": 14496,
+        "cssJsTransfer": 13302,
+        "imageTransfer": 0,
+        "resourceCount": 5,
+        "domNodes": 203,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 167.69999999995343,
+            "responseStart": 168.89999999990687,
+            "responseEnd": 360,
+            "transfer": 6772,
+            "encoded": 6472,
+            "duration": 192.30000000004657
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 227.5999999998603,
+            "responseStart": 229,
+            "responseEnd": 390.39999999990687,
+            "transfer": 965,
+            "encoded": 665,
+            "duration": 162.80000000004657
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "http://127.0.0.1:4198",
+            "type": "link",
+            "start": 227.69999999995343,
+            "responseStart": 228.89999999990687,
+            "responseEnd": 381.19999999995343,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 153.5
+          },
+          {
+            "path": "/assets/sheet.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 227.69999999995343,
+            "responseStart": 229.0999999998603,
+            "responseEnd": 411.19999999995343,
+            "transfer": 2540,
+            "encoded": 2240,
+            "duration": 183.5
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "http://127.0.0.1:4198",
+            "type": "script",
+            "start": 227.69999999995343,
+            "responseStart": 229.30000000004657,
+            "responseEnd": 418.80000000004657,
+            "transfer": 3025,
+            "encoded": 2725,
+            "duration": 191.10000000009313
+          }
+        ]
+      }
+    ]
+  },
+  "productionBeforeDeployment": {
+    "scope": "https://woodcuttool.com; en language, 390x844 at 1x DPR, browser cache disabled, 4x CPU, 150ms configured latency, 200KB/s download. DNS/TLS connections may be reused between navigations. Synthetic evidence, not production RUM.",
+    "origin": "https://woodcuttool.com",
+    "routes": [
+      "/",
+      "/wood/acacia/",
+      "/sheet-calculator/"
+    ],
+    "runs": 3,
+    "budgets": {
+      "maxLcp": 0,
+      "maxLoad": 0,
+      "policy": "Every run must be below the enabled limit; 0 disables a limit."
+    },
+    "summary": [
+      {
+        "route": "/",
+        "lcp": 780,
+        "load": 1151.6000000000931,
+        "lcpMax": 1092,
+        "loadMax": 3222.9000000000233,
+        "ttfb": 434.30000000004657,
+        "passed": true
+      },
+      {
+        "route": "/wood/acacia/",
+        "lcp": 1256,
+        "load": 1936.5,
+        "lcpMax": 1552,
+        "loadMax": 2113.9000000000233,
+        "ttfb": 808.5999999999767,
+        "passed": true
+      },
+      {
+        "route": "/sheet-calculator/",
+        "lcp": 992,
+        "load": 2145.0999999999767,
+        "lcpMax": 1096,
+        "loadMax": 2322.600000000093,
+        "ttfb": 824.4000000000233,
+        "passed": true
+      }
+    ],
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "h2",
+          "fromDiskCache": false,
+          "cacheControl": "public, max-age=0, must-revalidate",
+          "contentEncoding": "br",
+          "cacheStatus": "DYNAMIC",
+          "ray": "a50f635dcdff5e27-LAX"
+        },
+        "lcp": 1092,
+        "lcpElement": "h1",
+        "lcpUrl": "",
+        "lcpSize": 51330,
+        "cls": 0.0068338098172772395,
+        "longTasks": [
+          72
+        ],
+        "lcpBreakdown": {
+          "ttfb": 949.4000000000233,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 142.59999999997672
+        },
+        "fcp": 1092,
+        "ttfb": 949.4000000000233,
+        "htmlDownload": 269.4000000000233,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 572,
+          "tcp": 0.19999999995343387,
+          "tls": 571.8000000000466,
+          "requestWait": 376.4000000000233,
+          "responseEnd": 1218.8000000000466,
+          "protocol": "h2"
+        },
+        "domReady": 3220.4000000000233,
+        "load": 3222.9000000000233,
+        "htmlTransfer": 21805,
+        "resourceTransfer": 96773,
+        "cssJsTransfer": 12984,
+        "imageTransfer": 0,
+        "resourceCount": 9,
+        "domNodes": 699,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 1,
+        "longTaskTotal": 72,
+        "longTaskMax": 72,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 966.1999999999534,
+            "responseStart": 1493.9000000000233,
+            "responseEnd": 1571.3000000000466,
+            "transfer": 6886,
+            "encoded": 6586,
+            "duration": 605.1000000000931
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 969,
+            "responseStart": 2615.6999999999534,
+            "responseEnd": 2619.5999999999767,
+            "transfer": 512,
+            "encoded": 212,
+            "duration": 1650.5999999999767
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 1033.1999999999534,
+            "responseStart": 1494,
+            "responseEnd": 1517.3000000000466,
+            "transfer": 913,
+            "encoded": 613,
+            "duration": 484.10000000009313
+          },
+          {
+            "path": "/assets/home.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 1033.1999999999534,
+            "responseStart": 1493.9000000000233,
+            "responseEnd": 1540.9000000000233,
+            "transfer": 2162,
+            "encoded": 1862,
+            "duration": 507.70000000006985
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 1033.1999999999534,
+            "responseStart": 1494,
+            "responseEnd": 1548.5999999999767,
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 515.4000000000233
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 1033.9000000000233,
+            "responseStart": 1494,
+            "responseEnd": 1525.3000000000466,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 491.4000000000233
+          },
+          {
+            "path": "/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+            "origin": "https://static.cloudflareinsights.com",
+            "type": "script",
+            "start": 1232,
+            "responseStart": 0,
+            "responseEnd": 3212.5999999999767,
+            "transfer": 0,
+            "encoded": 0,
+            "duration": 1980.5999999999767
+          },
+          {
+            "path": "/cdn-cgi/rum",
+            "origin": "https://woodcuttool.com",
+            "type": "xmlhttprequest",
+            "start": 3230.5,
+            "responseStart": 4231.400000000023,
+            "responseEnd": 4239.699999999953,
+            "transfer": 300,
+            "encoded": 0,
+            "duration": 1009.1999999999534
+          },
+          {
+            "path": "/favicon.ico",
+            "origin": "https://woodcuttool.com",
+            "type": "other",
+            "start": 3232.0999999999767,
+            "responseStart": 4085.6999999999534,
+            "responseEnd": 4563.599999999977,
+            "transfer": 81783,
+            "encoded": 81483,
+            "duration": 1331.5
+          }
+        ]
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 1,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "h2",
+          "fromDiskCache": false,
+          "cacheControl": "public, max-age=0, must-revalidate",
+          "contentEncoding": "br",
+          "cacheStatus": "DYNAMIC",
+          "ray": "a50f6380c98b5e27-LAX"
+        },
+        "lcp": 1552,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 34254,
+        "cls": 0.0068338098172772395,
+        "longTasks": [
+          75
+        ],
+        "lcpBreakdown": {
+          "ttfb": 1427,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 125
+        },
+        "fcp": 1552,
+        "ttfb": 1427,
+        "htmlDownload": 83.5,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 1426.1999999999534,
+          "responseEnd": 1510.5,
+          "protocol": "h2"
+        },
+        "domReady": 2098,
+        "load": 2113.9000000000233,
+        "htmlTransfer": 13879,
+        "resourceTransfer": 10454,
+        "cssJsTransfer": 8448,
+        "imageTransfer": 0,
+        "resourceCount": 7,
+        "domNodes": 312,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 1,
+        "longTaskTotal": 75,
+        "longTaskMax": 75,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 1445.6000000000931,
+            "responseStart": 1696,
+            "responseEnd": 1718.8000000000466,
+            "transfer": 4514,
+            "encoded": 4214,
+            "duration": 273.19999999995343
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 1447.3000000000466,
+            "responseStart": 1804.8000000000466,
+            "responseEnd": 1809.3000000000466,
+            "transfer": 512,
+            "encoded": 212,
+            "duration": 362
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 1497.5,
+            "responseStart": 1805,
+            "responseEnd": 1832.2000000000698,
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 334.70000000006985
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 1497.6000000000931,
+            "responseStart": 2064.600000000093,
+            "responseEnd": 2072.4000000000233,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 574.7999999999302
+          },
+          {
+            "path": "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 1542.1000000000931,
+            "responseStart": 2064.70000000007,
+            "responseEnd": 2080,
+            "transfer": 911,
+            "encoded": 611,
+            "duration": 537.8999999999069
+          },
+          {
+            "path": "/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+            "origin": "https://static.cloudflareinsights.com",
+            "type": "script",
+            "start": 1543.3000000000466,
+            "responseStart": 0,
+            "responseEnd": 1884.4000000000233,
+            "transfer": 0,
+            "encoded": 0,
+            "duration": 341.0999999999767
+          },
+          {
+            "path": "/cdn-cgi/rum",
+            "origin": "https://woodcuttool.com",
+            "type": "xmlhttprequest",
+            "start": 2119.4000000000233,
+            "responseStart": 2853.3000000000466,
+            "responseEnd": 2860.100000000093,
+            "transfer": 300,
+            "encoded": 0,
+            "duration": 740.7000000000698
+          }
+        ]
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 1,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "h2",
+          "fromDiskCache": false,
+          "cacheControl": "public, max-age=0, must-revalidate",
+          "contentEncoding": "br",
+          "cacheStatus": "DYNAMIC",
+          "ray": "a50f63971b195e27-LAX"
+        },
+        "lcp": 1096,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 25112,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 900.3000000000466,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 195.69999999995343
+        },
+        "fcp": 1096,
+        "ttfb": 900.3000000000466,
+        "htmlDownload": 143.30000000004657,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 899.5999999999767,
+          "responseEnd": 1043.6000000000931,
+          "protocol": "h2"
+        },
+        "domReady": 2320.4000000000233,
+        "load": 2322.600000000093,
+        "htmlTransfer": 15429,
+        "resourceTransfer": 82832,
+        "cssJsTransfer": 81338,
+        "imageTransfer": 0,
+        "resourceCount": 6,
+        "domNodes": 204,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 977.4000000000233,
+            "responseStart": 1485.1000000000931,
+            "responseEnd": 1561.6000000000931,
+            "transfer": 6886,
+            "encoded": 6586,
+            "duration": 584.2000000000698
+          },
+          {
+            "path": "/assets/app.js",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 978.1000000000931,
+            "responseStart": 1616.4000000000233,
+            "responseEnd": 2297,
+            "transfer": 71429,
+            "encoded": 71129,
+            "duration": 1318.8999999999069
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 1040.7000000000698,
+            "responseStart": 1526.2000000000698,
+            "responseEnd": 1568.2000000000698,
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 527.5
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 1043.3000000000466,
+            "responseStart": 1514.4000000000233,
+            "responseEnd": 1525,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 481.69999999995343
+          },
+          {
+            "path": "/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+            "origin": "https://static.cloudflareinsights.com",
+            "type": "script",
+            "start": 1085.8000000000466,
+            "responseStart": 0,
+            "responseEnd": 1449.5,
+            "transfer": 0,
+            "encoded": 0,
+            "duration": 363.69999999995343
+          },
+          {
+            "path": "/cdn-cgi/rum",
+            "origin": "https://woodcuttool.com",
+            "type": "xmlhttprequest",
+            "start": 2328,
+            "responseStart": 2805.8000000000466,
+            "responseEnd": 2814.4000000000233,
+            "transfer": 300,
+            "encoded": 0,
+            "duration": 486.4000000000233
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "h2",
+          "fromDiskCache": false,
+          "cacheControl": "public, max-age=0, must-revalidate",
+          "contentEncoding": "br",
+          "cacheStatus": "DYNAMIC",
+          "ray": "a50f63ae595c5e27-LAX"
+        },
+        "lcp": 780,
+        "lcpElement": "h1",
+        "lcpUrl": "",
+        "lcpSize": 51330,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 434.30000000004657,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 345.69999999995343
+        },
+        "fcp": 780,
+        "ttfb": 434.30000000004657,
+        "htmlDownload": 313.5,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 433.5,
+          "responseEnd": 747.8000000000466,
+          "protocol": "h2"
+        },
+        "domReady": 1149.3000000000466,
+        "load": 1151.6000000000931,
+        "htmlTransfer": 21409,
+        "resourceTransfer": 14990,
+        "cssJsTransfer": 12984,
+        "imageTransfer": 0,
+        "resourceCount": 8,
+        "domNodes": 697,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 650.7000000000698,
+            "responseStart": 889.4000000000233,
+            "responseEnd": 950,
+            "transfer": 6886,
+            "encoded": 6586,
+            "duration": 299.29999999993015
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 653.3000000000466,
+            "responseStart": 2208.600000000093,
+            "responseEnd": 2490.100000000093,
+            "transfer": 512,
+            "encoded": 212,
+            "duration": 1836.8000000000466
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 720,
+            "responseStart": 976.7000000000698,
+            "responseEnd": 1027.7000000000698,
+            "transfer": 913,
+            "encoded": 613,
+            "duration": 307.70000000006985
+          },
+          {
+            "path": "/assets/home.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 720,
+            "responseStart": 1027.6000000000931,
+            "responseEnd": 1046.7000000000698,
+            "transfer": 2162,
+            "encoded": 1862,
+            "duration": 326.70000000006985
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 720.1000000000931,
+            "responseStart": 1045,
+            "responseEnd": 1061.8000000000466,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 341.69999999995343
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 720.1000000000931,
+            "responseStart": 1045,
+            "responseEnd": 1077.1000000000931,
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 357
+          },
+          {
+            "path": "/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+            "origin": "https://static.cloudflareinsights.com",
+            "type": "script",
+            "start": 768.8000000000466,
+            "responseStart": 0,
+            "responseEnd": 1143.9000000000233,
+            "transfer": 0,
+            "encoded": 0,
+            "duration": 375.0999999999767
+          },
+          {
+            "path": "/cdn-cgi/rum",
+            "origin": "https://woodcuttool.com",
+            "type": "xmlhttprequest",
+            "start": 1159.8000000000466,
+            "responseStart": 2136.9000000000233,
+            "responseEnd": 2142.100000000093,
+            "transfer": 300,
+            "encoded": 0,
+            "duration": 982.3000000000466
+          }
+        ]
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 2,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "h2",
+          "fromDiskCache": false,
+          "cacheControl": "public, max-age=0, must-revalidate",
+          "contentEncoding": "br",
+          "cacheStatus": "DYNAMIC",
+          "ray": "a50f63c1dcd25e27-LAX"
+        },
+        "lcp": 1256,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 34254,
+        "cls": 0.0068338098172772395,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 567.2000000000698,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 688.7999999999302
+        },
+        "fcp": 1256,
+        "ttfb": 567.2000000000698,
+        "htmlDownload": 610.6999999999534,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 566.5,
+          "responseEnd": 1177.9000000000233,
+          "protocol": "h2"
+        },
+        "domReady": 1921.3000000000466,
+        "load": 1936.5,
+        "htmlTransfer": 13503,
+        "resourceTransfer": 10454,
+        "cssJsTransfer": 8448,
+        "imageTransfer": 0,
+        "resourceCount": 7,
+        "domNodes": 310,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 1117.9000000000233,
+            "responseStart": 1383.5,
+            "responseEnd": 1454,
+            "transfer": 4514,
+            "encoded": 4214,
+            "duration": 336.0999999999767
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 1119.9000000000233,
+            "responseStart": 1400.5,
+            "responseEnd": 1417.2000000000698,
+            "transfer": 512,
+            "encoded": 212,
+            "duration": 297.30000000004657
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 1157.7000000000698,
+            "responseStart": 1383.7000000000698,
+            "responseEnd": 1439.8000000000466,
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 282.0999999999767
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 1157.7000000000698,
+            "responseStart": 1419.5,
+            "responseEnd": 1447.5,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 289.79999999993015
+          },
+          {
+            "path": "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 1181.9000000000233,
+            "responseStart": 1905.4000000000233,
+            "responseEnd": 1912.1000000000931,
+            "transfer": 911,
+            "encoded": 611,
+            "duration": 730.2000000000698
+          },
+          {
+            "path": "/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+            "origin": "https://static.cloudflareinsights.com",
+            "type": "script",
+            "start": 1182.9000000000233,
+            "responseStart": 0,
+            "responseEnd": 1500.6000000000931,
+            "transfer": 0,
+            "encoded": 0,
+            "duration": 317.70000000006985
+          },
+          {
+            "path": "/cdn-cgi/rum",
+            "origin": "https://woodcuttool.com",
+            "type": "xmlhttprequest",
+            "start": 1942.7000000000698,
+            "responseStart": 2170.5,
+            "responseEnd": 2174.4000000000233,
+            "transfer": 300,
+            "encoded": 0,
+            "duration": 231.69999999995343
+          }
+        ]
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 2,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "h2",
+          "fromDiskCache": false,
+          "cacheControl": "public, max-age=0, must-revalidate",
+          "contentEncoding": "br",
+          "cacheStatus": "DYNAMIC",
+          "ray": "a50f63da0cc55e27-LAX"
+        },
+        "lcp": 600,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 25112,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 314.30000000004657,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 285.69999999995343
+        },
+        "fcp": 600,
+        "ttfb": 314.30000000004657,
+        "htmlDownload": 230.59999999997672,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 313.5,
+          "responseEnd": 544.9000000000233,
+          "protocol": "h2"
+        },
+        "domReady": 1583.5,
+        "load": 1587.3000000000466,
+        "htmlTransfer": 15429,
+        "resourceTransfer": 82832,
+        "cssJsTransfer": 81338,
+        "imageTransfer": 0,
+        "resourceCount": 6,
+        "domNodes": 204,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 478.19999999995343,
+            "responseStart": 732,
+            "responseEnd": 838.1999999999534,
+            "transfer": 6886,
+            "encoded": 6586,
+            "duration": 360
+          },
+          {
+            "path": "/assets/app.js",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 478.4000000000233,
+            "responseStart": 792.8000000000466,
+            "responseEnd": 1565,
+            "transfer": 71429,
+            "encoded": 71129,
+            "duration": 1086.5999999999767
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 540,
+            "responseStart": 1504.3000000000466,
+            "responseEnd": 1549.6999999999534,
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 1009.6999999999534
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 545.5999999999767,
+            "responseStart": 1504.3000000000466,
+            "responseEnd": 1512.0999999999767,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 966.5
+          },
+          {
+            "path": "/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+            "origin": "https://static.cloudflareinsights.com",
+            "type": "script",
+            "start": 546.5999999999767,
+            "responseStart": 0,
+            "responseEnd": 898.0999999999767,
+            "transfer": 0,
+            "encoded": 0,
+            "duration": 351.5
+          },
+          {
+            "path": "/cdn-cgi/rum",
+            "origin": "https://woodcuttool.com",
+            "type": "xmlhttprequest",
+            "start": 1594.5,
+            "responseStart": 2226.9000000000233,
+            "responseEnd": 2232.5,
+            "transfer": 300,
+            "encoded": 0,
+            "duration": 638
+          }
+        ]
+      },
+      {
+        "route": "/",
+        "run": 3,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "h2",
+          "fromDiskCache": false,
+          "cacheControl": "public, max-age=0, must-revalidate",
+          "contentEncoding": "br",
+          "cacheStatus": "DYNAMIC",
+          "ray": "a50f63f02a645e27-LAX"
+        },
+        "lcp": 540,
+        "lcpElement": "h1",
+        "lcpUrl": "",
+        "lcpSize": 51330,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 280.4000000000233,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 259.5999999999767
+        },
+        "fcp": 540,
+        "ttfb": 280.4000000000233,
+        "htmlDownload": 214.30000000004657,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 279,
+          "responseEnd": 494.70000000006985,
+          "protocol": "h2"
+        },
+        "domReady": 936.0999999999767,
+        "load": 939.9000000000233,
+        "htmlTransfer": 21409,
+        "resourceTransfer": 14990,
+        "cssJsTransfer": 12984,
+        "imageTransfer": 0,
+        "resourceCount": 8,
+        "domNodes": 697,
+        "horizontalOverflow": 0,
+        "overflowElements": [
+          "article",
+          "div.flow-vi.ual pack-vi.ual",
+          "span",
+          "span",
+          "span",
+          "span",
+          "strong",
+          "span"
+        ],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 398.30000000004657,
+            "responseStart": 637.7000000000698,
+            "responseEnd": 878.8000000000466,
+            "transfer": 6886,
+            "encoded": 6586,
+            "duration": 480.5
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 399.9000000000233,
+            "responseStart": 766.0999999999767,
+            "responseEnd": 773.5,
+            "transfer": 512,
+            "encoded": 212,
+            "duration": 373.5999999999767
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 469.0999999999767,
+            "responseStart": 766.0999999999767,
+            "responseEnd": 795.4000000000233,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 326.30000000004657
+          },
+          {
+            "path": "/assets/content-page.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 469.0999999999767,
+            "responseStart": 766.2000000000698,
+            "responseEnd": 803.2000000000698,
+            "transfer": 913,
+            "encoded": 613,
+            "duration": 334.10000000009313
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 469.0999999999767,
+            "responseStart": 766.2000000000698,
+            "responseEnd": 841,
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 371.9000000000233
+          },
+          {
+            "path": "/assets/home.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 469.0999999999767,
+            "responseStart": 766.2000000000698,
+            "responseEnd": 847.4000000000233,
+            "transfer": 2162,
+            "encoded": 1862,
+            "duration": 378.30000000004657
+          },
+          {
+            "path": "/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+            "origin": "https://static.cloudflareinsights.com",
+            "type": "script",
+            "start": 516.2000000000698,
+            "responseStart": 0,
+            "responseEnd": 900.4000000000233,
+            "transfer": 0,
+            "encoded": 0,
+            "duration": 384.19999999995343
+          },
+          {
+            "path": "/cdn-cgi/rum",
+            "origin": "https://woodcuttool.com",
+            "type": "xmlhttprequest",
+            "start": 949.2000000000698,
+            "responseStart": 1199.5999999999767,
+            "responseEnd": 1208.0999999999767,
+            "transfer": 300,
+            "encoded": 0,
+            "duration": 258.89999999990687
+          }
+        ]
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 3,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "h2",
+          "fromDiskCache": false,
+          "cacheControl": "public, max-age=0, must-revalidate",
+          "contentEncoding": "br",
+          "cacheStatus": "DYNAMIC",
+          "ray": "a50f64057c595e27-LAX"
+        },
+        "lcp": 972,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 34254,
+        "cls": 0,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 808.5999999999767,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 163.40000000002328
+        },
+        "fcp": 972,
+        "ttfb": 808.5999999999767,
+        "htmlDownload": 89.09999999997672,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 807.7000000000698,
+          "responseEnd": 897.6999999999534,
+          "protocol": "h2"
+        },
+        "domReady": 1314.8999999999069,
+        "load": 1317.0999999999767,
+        "htmlTransfer": 13501,
+        "resourceTransfer": 10454,
+        "cssJsTransfer": 8448,
+        "imageTransfer": 0,
+        "resourceCount": 7,
+        "domNodes": 310,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/wood-page.js",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 838.6999999999534,
+            "responseStart": 1072,
+            "responseEnd": 1242.2999999999302,
+            "transfer": 4514,
+            "encoded": 4214,
+            "duration": 403.5999999999767
+          },
+          {
+            "path": "/site.webmanifest",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 840.5,
+            "responseStart": 1117.3999999999069,
+            "responseEnd": 2075.29999999993,
+            "transfer": 512,
+            "encoded": 212,
+            "duration": 1234.7999999999302
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 877.6999999999534,
+            "responseStart": 1217.5999999999767,
+            "responseEnd": 1281.5,
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 403.80000000004657
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 877.7999999999302,
+            "responseStart": 1220.8999999999069,
+            "responseEnd": 1250.5999999999767,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 372.80000000004657
+          },
+          {
+            "path": "/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 902,
+            "responseStart": 1203.5999999999767,
+            "responseEnd": 1213.1999999999534,
+            "transfer": 911,
+            "encoded": 611,
+            "duration": 311.19999999995343
+          },
+          {
+            "path": "/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+            "origin": "https://static.cloudflareinsights.com",
+            "type": "script",
+            "start": 903.0999999999767,
+            "responseStart": 0,
+            "responseEnd": 1310.0999999999767,
+            "transfer": 0,
+            "encoded": 0,
+            "duration": 407
+          },
+          {
+            "path": "/cdn-cgi/rum",
+            "origin": "https://woodcuttool.com",
+            "type": "xmlhttprequest",
+            "start": 1322.0999999999767,
+            "responseStart": 1573.0999999999767,
+            "responseEnd": 1581.2999999999302,
+            "transfer": 300,
+            "encoded": 0,
+            "duration": 259.19999999995343
+          }
+        ]
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 3,
+        "documentResponse": {
+          "status": 200,
+          "protocol": "h2",
+          "fromDiskCache": false,
+          "cacheControl": "public, max-age=0, must-revalidate",
+          "contentEncoding": "br",
+          "cacheStatus": "DYNAMIC",
+          "ray": "a50f641a5a0f5e27-LAX"
+        },
+        "lcp": 992,
+        "lcpElement": "p.lead",
+        "lcpUrl": "",
+        "lcpSize": 25112,
+        "cls": 0.0068338098172772395,
+        "longTasks": [],
+        "lcpBreakdown": {
+          "ttfb": 824.4000000000233,
+          "resourceLoadDelay": 0,
+          "resourceLoadDuration": 0,
+          "elementRenderDelay": 167.59999999997672
+        },
+        "fcp": 992,
+        "ttfb": 824.4000000000233,
+        "htmlDownload": 111.19999999995343,
+        "navigationTiming": {
+          "redirect": 0,
+          "dns": 0,
+          "connection": 0,
+          "tcp": 0,
+          "tls": 0,
+          "requestWait": 823.5999999999767,
+          "responseEnd": 935.5999999999767,
+          "protocol": "h2"
+        },
+        "domReady": 2142.5,
+        "load": 2145.0999999999767,
+        "htmlTransfer": 15429,
+        "resourceTransfer": 82832,
+        "cssJsTransfer": 81338,
+        "imageTransfer": 0,
+        "resourceCount": 6,
+        "domNodes": 204,
+        "horizontalOverflow": 0,
+        "overflowElements": [],
+        "longTaskCount": 0,
+        "longTaskTotal": 0,
+        "longTaskMax": 0,
+        "resources": [
+          {
+            "path": "/assets/site-navigation.js",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 870.0999999999767,
+            "responseStart": 1417.4000000000233,
+            "responseEnd": 1499.7000000000698,
+            "transfer": 6886,
+            "encoded": 6586,
+            "duration": 629.6000000000931
+          },
+          {
+            "path": "/assets/app.js",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 870.5,
+            "responseStart": 1466.9000000000233,
+            "responseEnd": 2120.70000000007,
+            "transfer": 71429,
+            "encoded": 71129,
+            "duration": 1250.2000000000698
+          },
+          {
+            "path": "/assets/conversion.js",
+            "origin": "https://woodcuttool.com",
+            "type": "script",
+            "start": 931.4000000000233,
+            "responseStart": 1456.9000000000233,
+            "responseEnd": 1506.8000000000466,
+            "transfer": 3023,
+            "encoded": 2723,
+            "duration": 575.4000000000233
+          },
+          {
+            "path": "/assets/icons/brand-icon.webp",
+            "origin": "https://woodcuttool.com",
+            "type": "link",
+            "start": 935.9000000000233,
+            "responseStart": 1442.2000000000698,
+            "responseEnd": 1453.4000000000233,
+            "transfer": 1194,
+            "encoded": 894,
+            "duration": 517.5
+          },
+          {
+            "path": "/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+            "origin": "https://static.cloudflareinsights.com",
+            "type": "script",
+            "start": 936.8000000000466,
+            "responseStart": 0,
+            "responseEnd": 1243.0999999999767,
+            "transfer": 0,
+            "encoded": 0,
+            "duration": 306.29999999993015
+          },
+          {
+            "path": "/cdn-cgi/rum",
+            "origin": "https://woodcuttool.com",
+            "type": "xmlhttprequest",
+            "start": 2149.9000000000233,
+            "responseStart": 2938.4000000000233,
+            "responseEnd": 2947.0999999999767,
+            "transfer": 300,
+            "encoded": 0,
+            "duration": 797.1999999999534
+          }
+        ]
+      }
+    ]
+  },
+  "customDomainHttp": {
+    "origin": "https://woodcuttool.com",
+    "rounds": 1,
+    "scope": "Single-client public HTTP probe, not field LCP. Request 1 starts a new curl process; request 2 may reuse connections (see newConnections). No retries or discarded outliers.",
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "request": 1,
+        "newConnections": 1,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "2606:4700:3034::6815:5bd7",
+        "dns": 283,
+        "tcp": 184,
+        "tls": 196,
+        "requestWait": 387,
+        "ttfb": 1049,
+        "download": 17,
+        "bytes": 20396,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "cf-cache-status": "DYNAMIC",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f5c483d3e7561-SEA"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": true,
+          "edgeInjection": true
+        },
+        "error": ""
+      },
+      {
+        "route": "/",
+        "run": 1,
+        "request": 2,
+        "newConnections": 0,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "2606:4700:3034::6815:5bd7",
+        "dns": 0,
+        "tcp": 0,
+        "tls": 0,
+        "requestWait": 271,
+        "ttfb": 271,
+        "download": 197,
+        "bytes": 20396,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "cf-cache-status": "DYNAMIC",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f5c4abed87561-SEA"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": true,
+          "edgeInjection": true
+        },
+        "error": ""
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 1,
+        "request": 1,
+        "newConnections": 1,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "2606:4700:3036::ac43:b478",
+        "dns": 2,
+        "tcp": 174,
+        "tls": 193,
+        "requestWait": 468,
+        "ttfb": 837,
+        "download": 5,
+        "bytes": 13157,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "cf-cache-status": "DYNAMIC",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f5c508eb0ba3f-SEA"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": false,
+          "edgeInjection": true
+        },
+        "error": ""
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 1,
+        "request": 2,
+        "newConnections": 0,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "2606:4700:3036::ac43:b478",
+        "dns": 0,
+        "tcp": 0,
+        "tls": 0,
+        "requestWait": 276,
+        "ttfb": 276,
+        "download": 11,
+        "bytes": 13156,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "cf-cache-status": "DYNAMIC",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f5c52f820ba3f-SEA"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": false,
+          "edgeInjection": true
+        },
+        "error": ""
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 1,
+        "request": 1,
+        "newConnections": 1,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "172.67.180.120",
+        "dns": 3,
+        "tcp": 168,
+        "tls": 187,
+        "requestWait": 621,
+        "ttfb": 980,
+        "download": 5,
+        "bytes": 15627,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "cf-cache-status": "DYNAMIC",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f5c594e55ae43-LAX"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": true,
+          "edgeInjection": true
+        },
+        "error": ""
+      },
+      {
+        "route": "/plywood-cut-calculator/",
+        "run": 1,
+        "request": 2,
+        "newConnections": 0,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "172.67.180.120",
+        "dns": 0,
+        "tcp": 0,
+        "tls": 0,
+        "requestWait": 274,
+        "ttfb": 274,
+        "download": 13,
+        "bytes": 15627,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "cf-cache-status": "DYNAMIC",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f5c5b1c45ae43-LAX"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": true,
+          "edgeInjection": true
+        },
+        "error": ""
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 1,
+        "request": 1,
+        "newConnections": 1,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "104.21.91.215",
+        "dns": 3,
+        "tcp": 100,
+        "tls": 94,
+        "requestWait": 699,
+        "ttfb": 897,
+        "download": 3,
+        "bytes": 14769,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "cf-cache-status": "DYNAMIC",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f5c5dc968ddc4-HKG"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": true,
+          "edgeInjection": true
+        },
+        "error": ""
+      },
+      {
+        "route": "/sheet-calculator/",
+        "run": 1,
+        "request": 2,
+        "newConnections": 0,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "104.21.91.215",
+        "dns": 0,
+        "tcp": 0,
+        "tls": 0,
+        "requestWait": 254,
+        "ttfb": 254,
+        "download": 1,
+        "bytes": 14769,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "cf-cache-status": "DYNAMIC",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f5c622a10ddc4-HKG"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": true,
+          "edgeInjection": true
+        },
+        "error": ""
+      }
+    ],
+    "failures": []
+  },
+  "pagesDomainHttp": {
+    "origin": "https://woodcuttool.pages.dev",
+    "rounds": 2,
+    "scope": "Single-client public HTTP probe, not field LCP. Request 1 starts a new curl process; request 2 may reuse connections (see newConnections). No retries or discarded outliers.",
+    "rows": [
+      {
+        "route": "/",
+        "run": 1,
+        "request": 1,
+        "newConnections": 1,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "2606:4700:310c::ac42:2eea",
+        "dns": 379,
+        "tcp": 204,
+        "tls": 215,
+        "requestWait": 303,
+        "ttfb": 1101,
+        "download": 103,
+        "bytes": 19953,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f6fe3cc7e5846-LAX"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": true,
+          "edgeInjection": false
+        },
+        "error": ""
+      },
+      {
+        "route": "/",
+        "run": 1,
+        "request": 2,
+        "newConnections": 0,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "2606:4700:310c::ac42:2eea",
+        "dns": 0,
+        "tcp": 0,
+        "tls": 0,
+        "requestWait": 264,
+        "ttfb": 264,
+        "download": 271,
+        "bytes": 19953,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f6fe65b715846-LAX"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": true,
+          "edgeInjection": false
+        },
+        "error": ""
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "request": 1,
+        "newConnections": 1,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "2606:4700:310c::ac42:2d16",
+        "dns": 3,
+        "tcp": 212,
+        "tls": 274,
+        "requestWait": 299,
+        "ttfb": 789,
+        "download": 27,
+        "bytes": 19953,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f6feced094f1a-LAX"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": true,
+          "edgeInjection": false
+        },
+        "error": ""
+      },
+      {
+        "route": "/",
+        "run": 2,
+        "request": 2,
+        "newConnections": 0,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "2606:4700:310c::ac42:2d16",
+        "dns": 0,
+        "tcp": 0,
+        "tls": 0,
+        "requestWait": 261,
+        "ttfb": 261,
+        "download": 22,
+        "bytes": 19953,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f6feefbb24f1a-LAX"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": true,
+          "edgeInjection": false
+        },
+        "error": ""
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 1,
+        "request": 1,
+        "newConnections": 1,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "172.66.46.234",
+        "dns": 4,
+        "tcp": 175,
+        "tls": 976,
+        "requestWait": 306,
+        "ttfb": 1460,
+        "download": 2,
+        "bytes": 12660,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f6ff7d82cdee9-SEA"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": false,
+          "edgeInjection": false
+        },
+        "error": ""
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 1,
+        "request": 2,
+        "newConnections": 0,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "172.66.46.234",
+        "dns": 0,
+        "tcp": 0,
+        "tls": 0,
+        "requestWait": 201,
+        "ttfb": 201,
+        "download": 11,
+        "bytes": 12660,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f6ff9b9b9dee9-SEA"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": false,
+          "edgeInjection": false
+        },
+        "error": ""
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 2,
+        "request": 1,
+        "newConnections": 1,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "172.66.45.22",
+        "dns": 3,
+        "tcp": 172,
+        "tls": 189,
+        "requestWait": 223,
+        "ttfb": 587,
+        "download": 745,
+        "bytes": 12660,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f6ffd7bfbcdf7-SEA"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": false,
+          "edgeInjection": false
+        },
+        "error": ""
+      },
+      {
+        "route": "/wood/acacia/",
+        "run": 2,
+        "request": 2,
+        "newConnections": 0,
+        "status": 200,
+        "protocol": "2",
+        "remoteIp": "172.66.45.22",
+        "dns": 0,
+        "tcp": 0,
+        "tls": 0,
+        "requestWait": 198,
+        "ttfb": 198,
+        "download": 223,
+        "bytes": 12660,
+        "headers": {
+          "content-type": "text/html; charset=utf-8",
+          "cache-control": "public, max-age=0, must-revalidate",
+          "content-encoding": "gzip",
+          "cf-ray": "a50f70038b26cdf7-SEA"
+        },
+        "content": {
+          "hasMain": true,
+          "hasInlineStyles": true,
+          "oldChrome": false,
+          "splitNavigation": false,
+          "edgeInjection": false
+        },
+        "error": ""
+      }
+    ],
+    "failures": []
+  },
+  "sheetBrowserQA": {
+    "rows": [
+      {
+        "width": 360,
+        "calculation": true,
+        "singleRender": true,
+        "menu": true,
+        "overflow": 0,
+        "fullAppRequested": false
+      },
+      {
+        "width": 390,
+        "calculation": true,
+        "singleRender": true,
+        "menu": true,
+        "overflow": 0,
+        "fullAppRequested": false
+      },
+      {
+        "width": 430,
+        "calculation": true,
+        "singleRender": true,
+        "menu": true,
+        "overflow": 0,
+        "fullAppRequested": false
+      },
+      {
+        "width": 1440,
+        "calculation": true,
+        "singleRender": true,
+        "menu": true,
+        "overflow": 0,
+        "fullAppRequested": false
+      }
+    ],
+    "languages": [
+      "zh-CN",
+      "zh-TW",
+      "es",
+      "pt",
+      "fr",
+      "de",
+      "nl",
+      "it",
+      "ar",
+      "ja",
+      "en"
+    ],
+    "savedLanguage": true,
+    "errors": []
+  }
+}

@@ -4,6 +4,7 @@ export const generatedRuntimePaths = new Set([
   "/assets/directory-page.js",
   "/assets/blog-index.js",
   "/assets/home.js",
+  "/assets/sheet.js",
   "/assets/wood-page.js",
 ]);
 
@@ -74,6 +75,10 @@ export function performanceProfile(file, html) {
 
   if (file === "index.html") {
     return { stylesheet: "/assets/home.css", runtimes: ["/assets/content-page.js", "/assets/home.js"] };
+  }
+
+  if (file === "sheet-calculator/index.html") {
+    return { stylesheet: "/assets/interactive.css", runtimes: ["/assets/content-page.js", "/assets/sheet.js"] };
   }
 
   if (file.startsWith("blog/") && file !== "blog/index.html" && file !== "blog/archive/index.html") {

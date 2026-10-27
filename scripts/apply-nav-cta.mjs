@@ -3,6 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
 import { homeRuntimeSource } from "./build-home-runtime.mjs";
+import { sheetRuntimeSource } from "./build-sheet-runtime.mjs";
 import { buildAppStyles, inlineAppStyles } from "./build-app-styles.mjs";
 import { buildEditorialStyles, inlineArticleStyles, inlineBlogIndexStyles, inlineCompareStyles } from "./build-editorial-styles.mjs";
 import { buildSiteStyles, inlineWoodStyles, inlineScreenshotRouteStyles } from "./build-site-styles.mjs";
@@ -94,7 +95,7 @@ function applyConversionScript(html, file) {
 
 function applyProfiledRuntime(html, file) {
   const runtimes = performanceProfile(file, html).runtimes;
-  let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page|directory-page|blog-index|home|wood-page)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "");
+  let next = html.replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:app|content-page|directory-page|blog-index|home|sheet|wood-page)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "");
   const priority = isLcpTailPage(file, html) ? ' fetchpriority="low"' : "";
   const markup = runtimes.map((path) => `  <script defer${priority} src="${path}"></script>`).join("\n");
   const siteChromePattern = /(\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|site-navigation)\.js")[^>]*>\s*<\/script>)/;
@@ -117,7 +118,7 @@ function applyImageConnections(html) {
 function stripSharedChrome(html) {
   return html
     .replace(/\s*<style>\.mega-menu\{display:none\}<\/style>/g, "")
-    .replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|site-navigation|conversion|app|content-page|directory-page|blog-index|home|wood-page)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "")
+    .replace(/\s*<script\b(?=[^>]*\bsrc="\/assets\/(?:site-chrome|site-navigation|conversion|app|content-page|directory-page|blog-index|home|sheet|wood-page)\.js(?:\?[^"]*)?")[^>]*>\s*<\/script>/g, "")
     .replace(/\s*<div\b[^>]*\bdata-site-header\b[^>]*>\s*<\/div>/gi, "")
     .replace(/\s*<div\b[^>]*\bdata-site-footer\b[^>]*>\s*<\/div>/gi, "");
 }
@@ -271,6 +272,7 @@ for (const file of collectHtmlFiles()) {
 
 console.log(`Applied shared site chrome to ${updated} pages${skipped ? `, skipped ${skipped}` : ""}.`);
 writeFileSync(join(root, "assets/home.js"), homeRuntimeSource());
+writeFileSync(join(root, "assets/sheet.js"), sheetRuntimeSource());
 buildSiteNavigation();
 buildWoodRuntime();
 buildAppStyles();

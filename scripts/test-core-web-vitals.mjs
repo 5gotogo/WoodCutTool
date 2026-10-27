@@ -9,6 +9,7 @@ import { appStoreThumbnail, appStoreScreenshotSources } from "./app-store-images
 
 import { plywoodCoreSource } from "./build-plywood-core.mjs";
 import { homeRuntimeSource } from "./build-home-runtime.mjs";
+import { sheetRuntimeSource } from "./build-sheet-runtime.mjs";
 import { renderWoodChrome, woodLanguageSource, woodRuntimeSource } from "./build-wood-runtime.mjs";
 import { heroSources } from "./lcp-images.mjs";
 import { siteNavigationSource, siteMenuSource } from "./build-site-navigation.mjs";
@@ -17,6 +18,13 @@ import { woodworkingImages as articlePhotos, woodworkingPreload } from "./woodwo
 
 const root = resolve(import.meta.dirname, "..");
 const failures = [];
+const sheetPage = readFileSync(join(root, "sheet-calculator/index.html"), "utf8");
+assert.deepEqual(performanceProfile("sheet-calculator/index.html", sheetPage).runtimes, ["/assets/content-page.js", "/assets/sheet.js"]);
+assert(!sheetPage.includes('src="/assets/app.js"') && sheetPage.includes('src="/assets/sheet.js"'));
+assert.equal(readFileSync(join(root, "assets/sheet.js"), "utf8"), sheetRuntimeSource());
+assert(Buffer.byteLength(sheetRuntimeSource()) < 8_000, "Sheet calculator must stay below 8 KB");
+assert(statSync(join(root, "favicon.ico")).size < 8_000, "Tab icon must stay below 8 KB");
+assert(readFileSync(join(root, "_headers"), "utf8").includes("/assets/sheet.js\n  Cache-Control: public, max-age=3600"));
 const sample = "https://is1-ssl.mzstatic.com/image/thumb/example/1.png/1290x2796bb.jpg";
 assert.equal(appStoreThumbnail(sample, 360, 780), sample.replace("1290x2796", "360x780"));
 assert.equal(appStoreThumbnail("/assets/images/screenshot.png", 360), "/assets/images/screenshot.png");

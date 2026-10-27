@@ -4749,6 +4749,9 @@ function initSheetCalculator() {
   const form = document.getElementById("sheet-form");
   const result = document.getElementById("sheet-result");
   if (!form || !result) return;
+  // The small page runtime may already be active when translations load app.js.
+  if (form.dataset.sheetCalculatorBound === "true") return;
+  form.dataset.sheetCalculatorBound = "true";
 
   form.addEventListener("submit", (event) => {
     event.preventDefault();

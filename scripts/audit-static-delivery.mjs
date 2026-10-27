@@ -3,7 +3,7 @@
 // when the server permits it. Public URLs only: no browser cookies or credentials.
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
-import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 const exec = promisify(execFile);
@@ -34,8 +34,11 @@ try {
       const transfers = stdout.trim().split(/\r?\n/).filter(Boolean).map(line => JSON.parse(line));
       for (let request = 0; request < transfers.length; request++) {
         const timing = transfers[request];
-        const headers = pickHeaders(readFileSync(join(directory, `headers-${request}`), "utf8"));
-        const body = readFileSync(join(directory, `body-${request}`), "utf8");
+        // curl can emit timings for DNS/TLS/connection failures without creating
+        // a response body. Keep the real failure instead of masking it with ENOENT.
+        const readResponse = name => existsSync(join(directory, name)) ? readFileSync(join(directory, name), "utf8") : "";
+        const headers = pickHeaders(readResponse(`headers-${request}`));
+        const body = readResponse(`body-${request}`);
         const ms = value => Math.round(value * 1000);
         const row = { route, run, request: request + 1, newConnections: timing.num_connects,
           status: timing.http_code, protocol: timing.http_version, remoteIp: timing.remote_ip,

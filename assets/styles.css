@@ -4334,6 +4334,15 @@ h3 {
   align-items: start;
 }
 
+/* Keep the sheet form inside narrow screens after results are populated.
+   Fieldsets otherwise retain their intrinsic minimum width inside the grid. */
+.sheet-calculator-page .tool-layout > *,
+.sheet-calculator-page fieldset,
+.sheet-calculator-page label,
+.sheet-calculator-page input {
+  min-inline-size: 0;
+}
+
 .tool-panel,
 .result-panel {
   padding: 14px;
