@@ -319,6 +319,7 @@ for (const file of new Set(allProfiledPages)) {
   if (/<link\b[^>]*rel="stylesheet"/.test(html)) failures.push(`${file}: stylesheet request blocks first paint`);
   if (performanceProfile(file, html).stylesheet && !html.includes('data-site-brand as="image" href="/assets/icons/brand-icon.webp"')) failures.push(`${file}: header logo is discovered only after JavaScript`);
   const profile = performanceProfile(file, html);
+  if (["/assets/planning.css", "/assets/learn.css"].includes(profile.stylesheet) && /<script\b[^>]*type=["']application\/ld\+json["']/.test(html.match(/<head\b[^>]*>[\s\S]*?<\/head>/i)?.[0] || "")) failures.push(`${file}: structured data delays the visible heading in a streamed response`);
   const bootstrap = profile.runtimes.includes("/assets/wood-page.js") ? "/assets/wood-page.js" : "/assets/site-navigation.js";
   if (profile.stylesheet && !html.includes(`data-site-bootstrap as="script" href="${bootstrap}"`)) failures.push(`${file}: navigation bootstrap is discovered after inline CSS`);
   if (profile.runtimes.includes("/assets/app.js") && !html.includes('data-site-bootstrap as="script" href="/assets/app.js"')) failures.push(`${file}: calculator bootstrap is discovered after inline CSS`);

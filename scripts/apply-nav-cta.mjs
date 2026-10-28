@@ -10,7 +10,7 @@ import { buildSiteStyles, inlineWoodStyles, inlineScreenshotRouteStyles } from "
 import { performanceProfile } from "./site-performance-profile.mjs";
 import { buildWoodRuntime, renderWoodChrome } from "./build-wood-runtime.mjs";
 import { buildSiteNavigation } from "./build-site-navigation.mjs";
-import { applyBootstrapHints } from "./loading-hints.mjs";
+import { applyBootstrapHints, deferStructuredData } from "./loading-hints.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const ignoredDirs = new Set([".git", ".github", ".agents", ".codex", "node_modules", "assets"]);
@@ -243,9 +243,11 @@ for (const file of collectHtmlFiles()) {
       .replace(footerMount, chrome.footer);
   }
 
-  // Large directory schemas need not precede the visible heading or styles.
-  // Preserve each object verbatim and leave body schemas in place on reruns.
-  if (file === "index.html" || file === "blog/index.html") {
+  // These generated guides still put several KB of JSON before their heading.
+  // Keep the existing schema ownership/markers on other page families.
+  if (["/assets/planning.css", "/assets/learn.css"].includes(profile.stylesheet)) {
+    next = deferStructuredData(next);
+  } else if (file === "index.html" || file === "blog/index.html") {
     const schemas = [];
     next = next.replace(/<head>[\s\S]*?<\/head>/, (head) => head.replace(/\s*<script type="application\/ld\+json">[\s\S]*?<\/script>/g, (schema) => {
       schemas.push(schema.trim());

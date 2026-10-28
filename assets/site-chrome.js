@@ -719,8 +719,34 @@
     sync();
   }
 
+  function initNavigationPrefetch() {
+    if (typeof HTMLScriptElement === "undefined" || !HTMLScriptElement.supports?.("speculationrules")) return;
+    const connection = navigator.connection;
+    if (connection?.saveData || /(^|-)2g$/.test(connection?.effectiveType || "")) return;
+    const install = () => requestAnimationFrame(() => requestAnimationFrame(() => {
+      if (document.querySelector("script[data-navigation-prefetch]")) return;
+      const rules = document.createElement("script");
+      rules.type = "speculationrules";
+      rules.dataset.navigationPrefetch = "true";
+      rules.textContent = JSON.stringify({ prefetch: [{
+        where: { and: [
+          { href_matches: "/*/" },
+          { not: { href_matches: ["/", "/api/*", "/go/*", location.pathname] } },
+          { not: { selector_matches: 'a[download], a[target]:not([target="_self"]), a[rel~="nofollow"], a[href*="?"], a[href*="#"], a[data-no-prefetch], [data-no-prefetch] a' } },
+        ] },
+        eagerness: "moderate",
+      }] });
+      document.body.appendChild(rules);
+    }));
+    // Let this page's images and first paint finish before another document
+    // can compete for bandwidth. Only a subsequent hover/press triggers work.
+    if (document.readyState === "complete") install();
+    else window.addEventListener("load", install, { once: true });
+  }
+
   renderSiteChrome();
   initMegaNavigation();
+  initNavigationPrefetch();
   const initDeferredExperience = () => {
     initBackToTop();
     initMobileExperience();

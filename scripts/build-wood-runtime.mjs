@@ -67,6 +67,7 @@ export function woodRuntimeSource() {
   ${navigation}
   ${experiences}
   initMegaNavigation();
+  initNavigationPrefetch();
   const experience = () => { initBackToTop(); initMobileExperience(); };
   if ("requestIdleCallback" in window) requestIdleCallback(experience, {timeout: 1000});
   else setTimeout(experience, 0);
