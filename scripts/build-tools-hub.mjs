@@ -45,6 +45,7 @@ const html = `<!doctype html>
       ${card("Joinery Lab", "Six interactive joint planners, eighteen bench guides, live diagrams and browser-local CSV/SVG/JSON records.", "/joinery-lab/", "Choose a joint")}
       ${card("Shelf Pin Studio", "Map paired cabinet sides, preserve a measured grid, skip hardware bands and export CSV/SVG hole references.", "/shelf-pin-layout/", "Lay out the holes")}
       ${card("Glue-Up Planner", "Rehearse independent batches, compare open and total assembly deadlines, and export a timing review.", "/glue-up/", "Plan the dry run")}
+      ${card("Workshop Atlas", "Plan your woodworking space with 12 field chapters and an editable, browser-local room sketch.", "/workshop-atlas/", "Explore the atlas")}
       ${card("Assembly Check", "Compare diagonals with tolerance and reading uncertainty, confirm dry-fit checks, and export local measurement records.", "/assembly-check/", "Check the assembly")}
       ${card("Wood Movement Planner", "Estimate solid-wood seasonal widths, compare fixed-opening clearance, and export the moisture scenario.", "/wood-movement/", "Review seasonal movement")}
       ${card("Finishing Planner", "Select coated faces and edges, calculate product coverage and coats, and export a whole-package purchase list.", "/finishing-planner/", "Plan the finish")}
@@ -110,6 +111,7 @@ const woodworkingGroups = [
     { name: "Drawer Fit Studio", description: "Three-station slide-space checks, butt-joint box parts, equal fronts and ten field guides.", href: "/drawer-fit/" },
     { name: "Shelf Pin Studio", description: "Paired side-panel hole maps, row offsets, keep-outs, depth review and CSV/SVG exports.", href: "/shelf-pin-layout/" },
     { name: "Glue-Up Planner", description: "Serial glue-up rehearsals, two assembly deadlines, reserve margins and local CSV/JSON records.", href: "/glue-up/" },
+    { name: "Workshop Atlas", description: "12 workshop planning chapters with an editable room sketch and layout exports.", href: "/workshop-atlas/" },
     { name: "Assembly Check", description: "Diagonal comparison, measurement uncertainty, physical dry-fit checks and saved CSV/JSON records.", href: "/assembly-check/" },
     { name: "Wood Movement Planner", description: "Source-linked solid-wood coefficients, seasonal widths, opening reserve and edge displacement.", href: "/wood-movement/" },
     { name: "Finishing Planner", description: "Coated surfaces, separate products, coverage per coat, usable stock and package purchase quantities.", href: "/finishing-planner/" },

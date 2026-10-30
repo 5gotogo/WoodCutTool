@@ -268,7 +268,7 @@
     const projectsMenu = {
       href: "/projects/",
       label: "Projects",
-      aliases: ["/projects/", "/one-sheet-projects/", "/offcut-planner/", "/templates/", "/examples/", "/tools/components/", "/checklists/", "/worksheets/", "/troubleshooting/"],
+      aliases: ["/workshop-atlas/", "/projects/", "/one-sheet-projects/", "/offcut-planner/", "/templates/", "/examples/", "/tools/components/", "/checklists/", "/worksheets/", "/troubleshooting/"],
       visual: "projects",
       featureTitle: "Build with 18 guided project playbooks",
       featureDescription: "Keep browser-local progress while you work through key measurements, decisions, parts, release checks, installation, and closeout.",
@@ -276,6 +276,7 @@
       columns: [
         { title: "Start", links: [
           { href: "/projects/", icon: "PJ", title: "Guided project playbooks", description: "Choose one of 18 end-to-end builds and continue your progress on this device.", exact: true },
+          { href: "/workshop-atlas/", icon: "WA", title: "Workshop Atlas", description: "12 chapters and an editable room sketch for planning your woodworking space." },
           { href: "/one-sheet-projects/", icon: "1S", title: "One-sheet project gallery", description: "Filter 43 projects, preview each 4×8 layout, and download the cut list." },
           { href: "/offcut-planner/", icon: "OF", title: "Offcut Planner", description: "Save measured leftovers locally and screen one part for reuse." },
           { href: "/cabinet-studio/", icon: "CS", title: "Cabinet Studio", description: "Live 3D models, exploded assembly, design checks, and grain-aware layouts." },

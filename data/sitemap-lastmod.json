@@ -5,8 +5,8 @@
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-10-23",
-    "hash": "5cf4cb1894afc68f33a3dbd9739d3f8b06cb9e563edb360f8f1c555928ffa164",
+    "lastmod": "2026-10-30",
+    "hash": "e5bc04ce1a9a3fada63712ee1e773a5ffb3816030defc087657c4050c009a145",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -10565,8 +10565,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-10-23",
-    "hash": "036d38f48853fb49ca408ba7202e886299f3cab7b9ca86a35a6fb72b9867f248",
+    "lastmod": "2026-10-30",
+    "hash": "66c7b2421372953961ce122e51e46dd28a09732809e0b715295bfd0ac4d689c1",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {
@@ -12407,6 +12407,71 @@
   "/worksheets/wall-cabinet-installation-record/": {
     "lastmod": "2026-07-26",
     "hash": "87b0afd5c0df9089b88b9bdab7b141c3ced9e5f09f38a08ff863657c6b7b3a42",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/": {
+    "lastmod": "2026-10-30",
+    "hash": "e94cc189b2b2887eb4edfcc538ee83924fbc61ef1d1afea1824b4d3d3248ce11",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/bench-and-assembly/": {
+    "lastmod": "2026-10-30",
+    "hash": "382a49371f89fb4c9abe14db2d52d2bba2187c69706be76559d0c568eae1dd30",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/commission-and-improve/": {
+    "lastmod": "2026-10-30",
+    "hash": "f488049a99144b3a081da3b99eecc2cc7c31639376f46dce08c93195ef72b919",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/dust-and-services/": {
+    "lastmod": "2026-10-30",
+    "hash": "1d4cbd3129b3c557ada3057c92ba21d9b0e4f7dbdd56fc2dc0a2bbc8c7808125",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/finishing-and-drying/": {
+    "lastmod": "2026-10-30",
+    "hash": "fa0220455ac11c3333c89494c7d71600cc0b85b5c18ebfa96e8df3733b26a72c",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/first-project-walkthrough/": {
+    "lastmod": "2026-10-30",
+    "hash": "e395c6b7493c8ab6b7424e7308f2760551faa0fedd33067060fce9a2a8ac6976",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/follow-the-material/": {
+    "lastmod": "2026-10-30",
+    "hash": "e27398cd347edefbd396fdcac68fb1ca316bc744ce354d4f8181ba152ad1d1a2",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/machine-envelopes/": {
+    "lastmod": "2026-10-30",
+    "hash": "f5d2e6bbe57e8b1dee954c6c7a5317a36104d7ba4800fc375b2070f187dd7643",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/material-storage/": {
+    "lastmod": "2026-10-30",
+    "hash": "19902759d83edc363db6311596be59358cebcdca39fc85d89ecb356cec75b2b0",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/measure-the-room/": {
+    "lastmod": "2026-10-30",
+    "hash": "def0a34217897ff494600d05a9b2f5b8bb9bcea100961e9825b59bc4ca07c85e",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/project-staging/": {
+    "lastmod": "2026-10-30",
+    "hash": "fd8b381731203f19b999ad9455f6bb3d01e84932825e9a7cb40f8233b3a351e1",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/small-shop-changeover/": {
+    "lastmod": "2026-10-30",
+    "hash": "e64feb8e837ae5f9438a9396d5ce27fcf9736f77e7a0b3c3f80190d495ec25bb",
+    "hashVersion": 2
+  },
+  "/workshop-atlas/three-shop-patterns/": {
+    "lastmod": "2026-10-30",
+    "hash": "636e4deb0dc9ee46520fdf140be0a4edb5891e25b0b81862eb4ce6eb2b5ca892",
     "hashVersion": 2
   }
 }

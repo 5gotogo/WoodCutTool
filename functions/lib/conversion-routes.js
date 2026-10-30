@@ -2481,5 +2481,18 @@ export const conversionRoutes = new Set([
   "/worksheets/tall-cabinet-installation-record/",
   "/worksheets/template-mockup-dimension/",
   "/worksheets/track-saw-breakdown/",
-  "/worksheets/wall-cabinet-installation-record/"
+  "/worksheets/wall-cabinet-installation-record/",
+  "/workshop-atlas/",
+  "/workshop-atlas/bench-and-assembly/",
+  "/workshop-atlas/commission-and-improve/",
+  "/workshop-atlas/dust-and-services/",
+  "/workshop-atlas/finishing-and-drying/",
+  "/workshop-atlas/first-project-walkthrough/",
+  "/workshop-atlas/follow-the-material/",
+  "/workshop-atlas/machine-envelopes/",
+  "/workshop-atlas/material-storage/",
+  "/workshop-atlas/measure-the-room/",
+  "/workshop-atlas/project-staging/",
+  "/workshop-atlas/small-shop-changeover/",
+  "/workshop-atlas/three-shop-patterns/"
 ]);
