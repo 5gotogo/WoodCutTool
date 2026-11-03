@@ -5,7 +5,7 @@ import { onRequest as recordConversion } from "../functions/api/conversion-event
 
 import { openConversionDb } from "./local-conversion-db.mjs";
 const db = openConversionDb();
-const redirect = redirectCutList({
+const redirect = await redirectCutList({
   request: new Request("https://woodcuttool.com/go/cutlist/?source=Template%20Detail&placement=Hero"),
   env: { APPLE_PROVIDER_TOKEN: "123456" },
 });
@@ -19,20 +19,45 @@ assert.equal(destination.searchParams.get("mt"), "8");
 
 const chinaRequest = new Request("https://woodcuttool.com/go/cutlist/?source=app-page");
 chinaRequest.cf = { country: "CN" };
-const chinaCutList = redirectCutList({ request: chinaRequest, env: {} });
-const chinaDestination = new URL(chinaCutList.headers.get("location"));
-assert.equal(chinaDestination.pathname, "/cn/app/cutlist-plywood-optimizer/id6768171871");
-assert.equal(chinaDestination.searchParams.get("ct"), "app-page");
-
 const productParams = new URLSearchParams({ product: "/us/app/id6812760878", query: "?uo=4" });
-for (const [country, storefront] of [["CN", "cn"], ["HK", "us"], ["US", "us"]]) {
-  const request = new Request(`https://woodcuttool.com/go/app-store/?${productParams}`);
-  request.cf = { country };
-  const response = redirectAppStore({ request });
-  assert.equal(response.status, 302);
-  assert.equal(response.headers.get("location"), `https://apps.apple.com/${storefront}/app/id6812760878?uo=4`);
-  assert.equal(response.headers.get("cache-control"), "private, no-store");
+const productRequest = new Request(`https://woodcuttool.com/go/app-store/?${productParams}`);
+const originalFetch = globalThis.fetch;
+let probeStatus = 200;
+const probes = [];
+try {
+  globalThis.fetch = async (url) => {
+    probes.push(url.href);
+    if (probeStatus === null) throw new Error("Network unavailable");
+    return new Response("Apple", { status: probeStatus });
+  };
+  for (const [status, storefront] of [[200, "cn"], [404, "us"], [503, "cn"], [null, "cn"]]) {
+    probeStatus = status;
+    productRequest.cf = { country: "CN" };
+    const response = await redirectAppStore({ request: productRequest });
+    assert.equal(response.status, 302);
+    assert.equal(response.headers.get("location"), `https://apps.apple.com/${storefront}/app/id6812760878?uo=4`);
+    assert.equal(response.headers.get("cache-control"), "private, no-store");
+  }
+
+  probeStatus = 404;
+  const chinaCutList = await redirectCutList({ request: chinaRequest, env: {} });
+  const cutListDestination = new URL(chinaCutList.headers.get("location"));
+  assert.equal(cutListDestination.pathname, "/us/app/cutlist-plywood-optimizer/id6768171871");
+  assert.equal(cutListDestination.searchParams.get("ct"), "app-page");
+
+  for (const country of ["HK", "US"]) {
+    productRequest.cf = { country };
+    const response = await redirectAppStore({ request: productRequest });
+    assert.equal(response.headers.get("location"), "https://apps.apple.com/us/app/id6812760878?uo=4");
+  }
+  assert.deepEqual(probes, [
+    ...Array(4).fill("https://apps.apple.com/cn/app/id6812760878"),
+    "https://apps.apple.com/cn/app/cutlist-plywood-optimizer/id6768171871",
+  ]);
+} finally {
+  globalThis.fetch = originalFetch;
 }
+
 const invalidProduct = new Request("https://woodcuttool.com/go/app-store/?product=//example.com");
 assert.equal(redirectAppStore({ request: invalidProduct }).status, 400);
 
