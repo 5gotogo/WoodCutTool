@@ -373,9 +373,8 @@ function featuredAppsSection() {
   return `    <section class="section app-directory-section">
       <div class="section-heading compact app-library-heading">
         <div>
-          <p class="eyebrow">Featured iPhone Apps</p>
-          <h2>Featured iPhone Apps</h2>
-          <p>Start with the most useful offline-first tools for makers, paperwork, business records, and focused practice.</p>
+          <p class="breadcrumb"><a href="/">Home</a> / Apps</p>
+          <h1>iPhone Apps</h1>
         </div>
       </div>
       <div class="app-library-grid featured-app-grid" aria-label="Featured iPhone apps by JiaBao Dai">
@@ -484,8 +483,9 @@ function offlineFirstSection() {
       <div class="app-offline-panel">
         <p class="eyebrow">Offline-first tools</p>
         <h2>Why these apps are built offline-first</h2>
-        <p>Many WoodCutTool apps are designed around a simple principle: useful tools should be fast, private, and available when you need them. Instead of forcing accounts, dashboards, or cloud upload, these apps focus on local workflows for iPhone users who want to get a job done quickly.</p>
+        <p>JiaBao Dai builds the WoodCutTool app collection. Many of these iPhone apps work offline, keep project data on the device, and can be used without an account.</p>
         <p>From plywood cut lists and quilt planning to receipts, invoices, labels, PDF scanning, and music practice, the goal is the same: open the app, finish the task, and keep control of your data.</p>
+        <p><a href="/apps/compare/">Compare apps</a> with manual workflows and other tools.</p>
       </div>
     </section>`;
 }
@@ -529,13 +529,6 @@ ${head({
   <a class="skip-link" href="#main">Skip to content</a>
   ${header("Apps")}
   <main id="main">
-    <section class="page-hero">
-      <p class="breadcrumb"><a href="/">Home</a> / Apps</p>
-      <p class="eyebrow">App directory</p>
-      <h1>Privacy-First iPhone Apps for Work, Makers, and Everyday Tools</h1>
-      <p class="lead">Explore a growing collection of privacy-first iPhone apps built by JiaBao Dai. These tools focus on practical workflows: woodworking inspections, cabinet shelf planning, HVAC duct layout, tile planning, jobsite photo reports, plywood cut lists, quilt planning, receipt scanning, invoices, PDF scanning, music practice, tinnitus sound masking, labels, inventory, and everyday productivity. Many apps are designed to work without accounts, cloud upload, or complicated setup.</p>
-      <p class="lead">Deciding whether an app is worth it? Browse our <a href="/apps/compare/">app comparisons</a> to see each one side by side with the manual method or a common alternative.</p>
-    </section>
 ${featuredAppsSection()}
 ${categoryNavSection()}
 ${categorySections.map(categorySection).join("\n")}
