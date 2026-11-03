@@ -1,3 +1,5 @@
+import { appStoreRedirect } from "../lib/app-store.js";
+
 const appStoreUrl = "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871";
 
 function token(value, fallback) {
@@ -34,5 +36,5 @@ export function onRequest(context) {
     timestamp: new Date().toISOString(),
   }));
 
-  return Response.redirect(destination.toString(), 302);
+  return appStoreRedirect(context.request, destination);
 }

@@ -472,6 +472,16 @@
     });
   }
 
+  function routeAppStoreLinks() {
+    for (const link of document.querySelectorAll('a[href^="https://apps.apple.com/us/app/"]')) {
+      const destination = new URL(link.href);
+      if (!/^\/us\/app\/(?:[a-z0-9-]+\/)?id\d+$/i.test(destination.pathname)) continue;
+      const params = new URLSearchParams({ product: destination.pathname });
+      if (destination.search) params.set("query", destination.search);
+      link.href = `/go/app-store/?${params}`;
+    }
+  }
+
   function initMegaNavigation() {
     const nav = document.querySelector(".nav");
     const navLinks = document.querySelector(".nav-links-mega");
@@ -746,6 +756,7 @@
   }
 
   renderSiteChrome();
+  if (window.location.pathname.startsWith("/apps/")) routeAppStoreLinks();
   initMegaNavigation();
   initNavigationPrefetch();
   const initDeferredExperience = () => {

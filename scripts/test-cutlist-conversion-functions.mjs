@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { onRequest as redirectAppStore } from "../functions/go/app-store.js";
 import { onRequest as redirectCutList } from "../functions/go/cutlist.js";
 import { onRequest as recordConversion } from "../functions/api/conversion-event.js";
 
@@ -15,6 +16,25 @@ assert.equal(destination.hostname, "apps.apple.com");
 assert.equal(destination.searchParams.get("ct"), "template-detail");
 assert.equal(destination.searchParams.get("pt"), "123456");
 assert.equal(destination.searchParams.get("mt"), "8");
+
+const chinaRequest = new Request("https://woodcuttool.com/go/cutlist/?source=app-page");
+chinaRequest.cf = { country: "CN" };
+const chinaCutList = redirectCutList({ request: chinaRequest, env: {} });
+const chinaDestination = new URL(chinaCutList.headers.get("location"));
+assert.equal(chinaDestination.pathname, "/cn/app/cutlist-plywood-optimizer/id6768171871");
+assert.equal(chinaDestination.searchParams.get("ct"), "app-page");
+
+const productParams = new URLSearchParams({ product: "/us/app/id6812760878", query: "?uo=4" });
+for (const [country, storefront] of [["CN", "cn"], ["HK", "us"], ["US", "us"]]) {
+  const request = new Request(`https://woodcuttool.com/go/app-store/?${productParams}`);
+  request.cf = { country };
+  const response = redirectAppStore({ request });
+  assert.equal(response.status, 302);
+  assert.equal(response.headers.get("location"), `https://apps.apple.com/${storefront}/app/id6812760878?uo=4`);
+  assert.equal(response.headers.get("cache-control"), "private, no-store");
+}
+const invalidProduct = new Request("https://woodcuttool.com/go/app-store/?product=//example.com");
+assert.equal(redirectAppStore({ request: invalidProduct }).status, 400);
 
 const accepted = await recordConversion({
   env: { CONVERSION_DB: db },
