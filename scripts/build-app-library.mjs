@@ -93,6 +93,18 @@ const generatedOverrideSlugs = new Set(["stringer-stair-layout"]);
 const handWrittenOverrideSlugs = new Set(["cutlist-plywood-optimizer", "quiltfit-quilt-design-planner"]);
 
 const legalLinksBySlug = {
+  "yarnfit-knit-crochet-charts": {
+    privacy: "/legal/YarnFit/privacy/",
+    support: "/legal/YarnFit/support/"
+  },
+  "fabricnest-fabric-planner": {
+    privacy: "/legal/FabricNest/privacy/",
+    support: "/legal/FabricNest/support/"
+  },
+  "cushioncut-fabric-foam": {
+    privacy: "/legal/CushionCut/privacy/",
+    support: "/legal/CushionCut/support/"
+  },
   "moodloop-mood-tracker-journal": {
     privacy: "/legal/MoodLoop/privacy/",
     support: "/legal/MoodLoop/support/"
@@ -175,6 +187,9 @@ const featuredApps = [
   ["floorquote-flooring-quotes", "Measure flooring rooms, calculate material and labor costs, capture customer approval, and export professional PDF quotes offline."],
   ["jobphotolog-work-reports", "Private, offline jobsite photo records with before-and-after evidence, punch lists, signatures, and professional PDF reports."],
   ["poolpilot-pool-service-log", "Keep customers, pools, water tests, service visits, photos, and signatures together, then create PDF service reports offline."],
+  ["yarnfit-knit-crochet-charts", "Create knitting and crochet charts from photos or motifs, estimate yarn from gauge and swatches, and follow rows offline."],
+  ["fabricnest-fabric-planner", "Compare rectangular fabric cutting layouts, estimate yardage, track completed cuts, and share PDF plans."],
+  ["cushioncut-fabric-foam", "Plan cushion covers and foam, estimate materials and costs, and export cutting diagrams and piece lists."],
   ["quiltfit-quilt-design-planner", "Quilt design planner for fabric layouts, block planning, and project organization."],
   ["snapreceipt-expenses-and-tax", "Private receipt scanner, expense tracker, and mileage log for reimbursements and tax records."],
   ["invoice-maker-estimate-pdf", "Fast invoice and estimate PDF maker for freelancers, contractors, and small businesses."],
@@ -186,8 +201,8 @@ const categorySections = [
   {
     id: "maker-calculator-apps",
     title: "Maker & Calculator Apps",
-    description: "Practical iPhone tools for people who plan, measure, cut, inspect, design, fabricate, or build physical projects. These apps focus on woodworking quality checks, cabinet planning, shelf spacing, plywood optimization, HVAC duct layout, tile estimation, flooring quotes, trim angles, stair stringer calculation, and other maker workflows.",
-    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "woodcheck-carpentry-checklist", "tilefit-tile-layout-planner", "floorquote-flooring-quotes", "ductlab-hvac-duct-layout", "spring-miter-bevel", "shelf-planner-cabinet-shelves", "quiltfit-quilt-design-planner", "stringer-stair-layout"]
+    description: "Practical iPhone tools for people who plan, measure, cut, inspect, design, fabricate, or build physical projects. These apps focus on woodworking quality checks, cabinet planning, shelf spacing, plywood optimization, HVAC duct layout, tile estimation, flooring quotes, trim angles, stair stringer calculation, knitting charts, and fabric and foam cutting plans.",
+    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "woodcheck-carpentry-checklist", "tilefit-tile-layout-planner", "floorquote-flooring-quotes", "ductlab-hvac-duct-layout", "spring-miter-bevel", "shelf-planner-cabinet-shelves", "quiltfit-quilt-design-planner", "yarnfit-knit-crochet-charts", "fabricnest-fabric-planner", "cushioncut-fabric-foam", "stringer-stair-layout"]
   },
   {
     id: "small-business-apps",
@@ -233,6 +248,9 @@ const appTags = {
   "casework-cabinet-cut-lists": ["Cabinets", "Cut lists", "Nesting", "PDF & CSV"],
   "tilefit-tile-layout-planner": ["Tile layouts", "Six patterns", "Offline", "PDF export"],
   "floorquote-flooring-quotes": ["Flooring quotes", "Room measurements", "Offline", "PDF export"],
+  "yarnfit-knit-crochet-charts": ["Knitting", "Crochet", "Yarn estimates", "Row tracking"],
+  "fabricnest-fabric-planner": ["Fabric cutting", "Yardage", "Layout comparison", "PDF export"],
+  "cushioncut-fabric-foam": ["Cushions", "Fabric & foam", "Material estimates", "PDF export"],
   "quiltfit-quilt-design-planner": ["Quilting", "Fabric plans", "Blocks", "Projects"],
   "snapreceipt-expenses-and-tax": ["Receipts", "Expenses", "Mileage", "Records"],
   "invoice-maker-estimate-pdf": ["Invoices", "Estimates", "PDF", "Clients"],

@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-10-20",
-    "hash": "cdb519d22cb90518df7ccf809cd59f33ba9b14529b94499710c55b4499669ae1",
+    "lastmod": "2026-11-03",
+    "hash": "43ca37adc8861ba0b4d3576243b5294853ad8ac706867ead10f7f9f73b4d5452",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -774,9 +774,14 @@
     "hash": "a9b4bc47de12c10a5564745a08276c4e6c1662bd6e56959e6038d9fa333e55e8",
     "hashVersion": 2
   },
+  "/apps/cushioncut-fabric-foam/": {
+    "lastmod": "2026-11-03",
+    "hash": "fb7901920fb02de9c7f0b20d7a23d7c0c539ea9ec81414bc93838a250cf6690c",
+    "hashVersion": 2
+  },
   "/apps/ductlab-hvac-duct-layout/": {
-    "lastmod": "2026-10-08",
-    "hash": "f6ee5ab2465a29f7998d53e0a877ed0742cb79e9bb403d26679656bd97774380",
+    "lastmod": "2026-11-03",
+    "hash": "7298d933a5fbe165044337bcbb0b1ddf63fae10546bcf61dee05f7f3f73bbb43",
     "hashVersion": 2
   },
   "/apps/expensereportmaker-and-receipts/": {
@@ -789,14 +794,19 @@
     "hash": "368a119d50c55107a2f419800bf78839686a87dd8cca20e772a1befe9a35d648",
     "hashVersion": 2
   },
+  "/apps/fabricnest-fabric-planner/": {
+    "lastmod": "2026-11-03",
+    "hash": "73be96fcaf9da9298c4428b79a251be75fb9c750b8a0cef3162c1038a3513da9",
+    "hashVersion": 2
+  },
   "/apps/fast-rhythm-fasting-and-sleep/": {
     "lastmod": "2026-10-08",
     "hash": "c0f0e8555a1fb532cdafd0c64dba66e9267e490be994484b3acebac89b54c8aa",
     "hashVersion": 2
   },
   "/apps/floorquote-flooring-quotes/": {
-    "lastmod": "2026-10-08",
-    "hash": "2aa2a15b829c7de655f0f1043423718ac8b9b7637742d69dde1ab10cf073602f",
+    "lastmod": "2026-11-03",
+    "hash": "dbc888b98c4a0fca8e62eae5f343a21b439a77b12112f07bda99a293cce30e5c",
     "hashVersion": 2
   },
   "/apps/fridgetrack-fridge-inventory/": {
@@ -885,8 +895,8 @@
     "hashVersion": 2
   },
   "/apps/shelf-planner-cabinet-shelves/": {
-    "lastmod": "2026-10-08",
-    "hash": "3f2d5ae73cf9d70bbc6289d31b6b8bccc28c2958f4642bb30b1e189a6e057637",
+    "lastmod": "2026-11-03",
+    "hash": "ce81e7731657d7219a4850ddc0558a3297957e81dacc5c7040dd99097ac6a663",
     "hashVersion": 2
   },
   "/apps/signaturemark-brand-mark/": {
@@ -925,8 +935,8 @@
     "hashVersion": 2
   },
   "/apps/spring-miter-bevel/": {
-    "lastmod": "2026-10-08",
-    "hash": "d3e7963fe08074316d0f140a8704795d94c91b6390d9a826daf84b8c30e52cd1",
+    "lastmod": "2026-11-03",
+    "hash": "f9fc7470e73228f1881aa3535309b354305c21195f8c077e4bf16c087f98c532",
     "hashVersion": 2
   },
   "/apps/stringer/": {
@@ -957,6 +967,11 @@
   "/apps/work-shift-schedule-calendar/": {
     "lastmod": "2026-10-12",
     "hash": "e365dc54c7ba254db87c28a1c3a04b4008fe47ca8257f4eaebf9b24d28a1732c",
+    "hashVersion": 2
+  },
+  "/apps/yarnfit-knit-crochet-charts/": {
+    "lastmod": "2026-11-03",
+    "hash": "b34b1550ceab5b2281fc7ff061dccee7737411c32b4e0f6b66a4533f9608c520",
     "hashVersion": 2
   },
   "/assembly-check/": {

@@ -1,5 +1,92 @@
 [
   {
+    "id": 6829588543,
+    "slug": "yarnfit-knit-crochet-charts",
+    "name": "YarnFit: Knit & Crochet Charts",
+    "genre": "Lifestyle",
+    "genres": [
+      "Lifestyle"
+    ],
+    "url": "https://apps.apple.com/us/app/yarnfit-knit-crochet-charts/id6829588543?uo=4",
+    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/de/37/73/de3773f4-c6fa-8f52-50af-833880f5231f/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshotUrls": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8d/7e/f9/8d7ef9f2-440b-7ff8-dc35-bbd9fd25d969/01-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/72/40/a9/7240a98c-c744-a4fd-b5da-f0656485d262/02-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/17/7b/9f/177b9ffe-53df-32fb-f29c-46946b020f87/03-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ce/c9/31/cec931ea-d8bc-430e-be68-fea476095e8c/04-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5d/77/d6/5d77d662-3438-11b4-f075-523280c2507e/05-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/99/3a/4c/993a4c24-e2a1-d98c-9dcd-1403de96ed71/06-APP_IPHONE_67.png/320x480bb.jpg"
+    ],
+    "description": "FROM A FAVORITE PHOTO TO YOUR NEXT YARN PROJECT\nYarnFit brings colorwork design, yarn planning and row-by-row progress together on iPhone and iPad. Turn a photo into a rectangular chart, draw from scratch or start with an original design. Plan scarves, blankets, cushion panels and wall hangings without an account or subscription. Photos are processed on your device and projects are stored locally.\n\nMAKE A PHOTO YOUR OWN\nChoose an image, crop and zoom, then adjust its position, brightness and contrast. Try smoothing and reduce the image to 4, 8, 12 or 16 colors. Compare the original with the chart using the comparison slider, and replace extracted colors before saving.\n\nDRAW, REFINE AND TRY ANOTHER PALETTE\nBuild grids from 4 to 200 stitches wide and 4 to 200 rows high. Paint cells, fill areas, draw straight lines or solid rectangles, and pick colors directly from the chart. Mirror horizontally or vertically, repeat a motif and show grid lines or color labels. Pinch to zoom and pan with two fingers while working on details. Autosave and the latest 25 undo steps help you experiment; editing history stays with the project.\n\n26 DESIGNS TO GET STARTED\nBrowse 12 pictures and 14 repeating motifs featuring animals, flowers, landscapes and geometric patterns. Preview three color schemes and knit or crochet textures. Save a design as your own editable project when you are ready.\n\nSEE THE CHART IN STITCH PROPORTIONS\nCompare the pixel chart with a stitch-shaped preview, switch between knit and crochet textures and inspect the design fullscreen. Save and switch color schemes to explore different moods. Gauge controls the displayed proportions and estimated finished size; preview textures illustrate the pattern rather than predict the exact fabric.\n\nPLAN YARN COLOR BY COLOR\nRecord yarn names, HEX colors, brands, ranges and shade codes. Add yarn weight, ball weight and length, stock including partial balls, and a USD price per ball. Enter the weight, stitches and rows of a measured swatch to estimate consumption, with separate swatches for individual colors when needed. Adjust an extra allowance for tails, floats and differences in tension.\n\nCHECK THE SHOPPING LIST\nSee stitch counts, color shares, estimated yarn weight and length, and balls to buy. Stock is deducted before the purchase quantity is rounded up. Review the purchase total separately from the proportional value of yarn used, and open yarn details to update labels or prices. Costs use USD and exclude tax, tools and labor. Without a measured swatch, results are marked as rough estimates based on yarn-weight assumptions.\n\nFOLLOW YOUR PLACE, THEN PRINT\nStart at row 1 along the bottom, highlight the current row and read consecutive color groups in working order. Choose alternating or fixed directions for your technique, mark rows complete and resume your saved position. Keep the screen awake if you wish. Export PNG or a multipage US Letter PDF with a vector chart, color symbols, coordinates, yarn tables and row instructions. Preview, share, save to Files or print with AirPrint.\n\nProjects stay on this device without cloud sync. PDF and PNG exports are reading and sharing files, not editable project backups. Each project is one rectangular color chart, not a complete tutorial or shaped garment pattern. Check your swatch, tension and technique before buying yarn.\n\nPrivacy Policy:\nhttps://woodcuttool.com/legal/YarnFit/privacy/\nTerms of Use:\nhttps://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "version": "1.0",
+    "releaseDate": "2026-11-02T08:00:00Z",
+    "currentVersionReleaseDate": "2026-11-02T19:11:14Z",
+    "minimumOsVersion": "17.0",
+    "formattedPrice": "Free",
+    "trackContentRating": "4+",
+    "averageUserRating": 0,
+    "userRatingCount": 0,
+    "sellerName": "家宝 戴"
+  },
+  {
+    "id": 6824388318,
+    "slug": "fabricnest-fabric-planner",
+    "name": "FabricNest: Fabric Planner",
+    "genre": "Graphics & Design",
+    "genres": [
+      "Graphics & Design"
+    ],
+    "url": "https://apps.apple.com/us/app/fabricnest-fabric-planner/id6824388318?uo=4",
+    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/26/1b/56/261b5624-d9b3-9960-5ba3-8f54b3bd62c9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshotUrls": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c0/0f/a9/c00fa922-0706-4d9a-ebc2-e40d8e44b475/01-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5d/16/00/5d16001d-af41-750c-b57d-1ecf617fcee3/02-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0a/b3/ce/0ab3ceb8-06ba-5902-920e-8b8040b2b72a/03-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/b2/b8/fc/b2b8fce5-6649-879f-7d89-4b33480661ff/04-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b9/08/cc/b908ccb1-9f38-80c2-4c6d-0b5e47baa022/05-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/8e/cd/2e/8ecd2ef3-0dab-91ff-2f92-d037554e5d4f/06-APP_IPHONE_67.png/320x480bb.jpg"
+    ],
+    "description": "MAKE EVERY YARD COUNT\nFabricNest turns a list of rectangular pieces into a clear fabric cutting plan. Plan cushions, totes, curtains and small batches on iPhone or iPad. Check yardage before cutting. Work offline, without an account or subscription.\n\nSTART WITH YOUR FABRIC\nCreate a project and enter fabric width, available length, edge margins and the gap between cuts. Choose inches, feet, yards, centimeters or meters. Add named pieces with dimensions, quantities, colors, notes and seam allowances. Allow or restrict 90-degree rotation for fabric and individual pieces. With grain locked, piece height stays along the fabric length.\n\nFROM FINISHED SIZE TO CUTTING SIZE\nSeam allowance expands all four edges, so layouts use cutting dimensions rather than finished dimensions. Plan up to 500 individual cuts in a project. Fabric width, seams, gaps and margins are checked together. Short stock? All pieces remain in the plan, with the missing length shown.\n\nCOMPARE BEFORE YOU CUT\nCompare standard row packing in your piece order with a compact arrangement found by smart nesting. View both plans at the same scale, inspect numbered pieces and zoom into a fullscreen map. See required length, cutting area, unused area and material utilization. The app keeps the shorter valid plan; a project can correctly show no improvement when the standard arrangement is already as compact.\n\nUNDERSTAND PURCHASE ESTIMATES\nEnter a USD price per yard or meter and the increment in which you buy fabric. Review saved length, its estimated value and potential purchase savings separately. Each plan's purchase length is rounded up independently; exact-length purchasing is also supported. A shorter layout can still have zero purchase savings. Results depend on your inputs and buying increments, and existing stock does not produce a cash refund.\n\nKEEP CUTTING ORGANIZED\nMark individual cuts complete and return to your progress later. Changes to pieces or fabric recalculate the plan. Cutting and export wait for current results. Restore the previous plan with its parameters and progress, or duplicate a project for another size or batch.\n\n20 PRACTICAL STARTING POINTS\nBrowse ten DIY and ten professional examples, with calculated previews. Explore cushions, market totes, table linens, curtains, quilt blocks, storage bins, laptop sleeves and pet-bed covers. Production examples include hotel linen, backdrops, totes and apron blanks. Copy an example into your library and adjust it. Preparation notes explain excluded materials and later shaping; examples are cutting plans, not complete sewing patterns.\n\nREPORTS, INSIGHTS AND LOCAL BACKUPS\nPreview, share or print a multipage PDF with parameters, comparison metrics, a vector cutting map and a numbered checklist with dimensions, coordinates, notes and progress. Reports are not full-size patterns. Insights summarizes current plans. Export and restore JSON backups; matching project IDs are replaced after confirmation, while other projects remain.\n\nPRIVATE, WITH CLEAR LIMITS\nProjects stay on your device. No server, ads, analytics or tracking; the project folder is excluded from automatic cloud backup, so keep your own exported copy. Nesting covers rectangles on one fabric layer and does not guarantee the shortest possible layout. Check real measurements, grain, print matching, folds, shrinkage and defects before cutting.\n\nPrivacy Policy:\nhttps://woodcuttool.com/legal/FabricNest/privacy/\nTerms of Use:\nhttps://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "version": "1.0",
+    "releaseDate": "2026-10-31T19:18:00Z",
+    "currentVersionReleaseDate": "2026-10-31T19:18:00Z",
+    "minimumOsVersion": "17.0",
+    "formattedPrice": "Free",
+    "trackContentRating": "4+",
+    "averageUserRating": 0,
+    "userRatingCount": 0,
+    "sellerName": "家宝 戴"
+  },
+  {
+    "id": 6827878872,
+    "slug": "cushioncut-fabric-foam",
+    "name": "CushionCut: Fabric & Foam",
+    "genre": "Graphics & Design",
+    "genres": [
+      "Graphics & Design"
+    ],
+    "url": "https://apps.apple.com/us/app/cushioncut-fabric-foam/id6827878872?uo=4",
+    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/42/90/b4/4290b484-f65f-522b-185f-10f623119189/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshotUrls": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/26/80/31/2680319f-a3f4-af16-3541-fce9a86bba1a/01-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/05/ea/c4/05eac44b-1d2c-eaf0-9f30-48cafcaeeaf5/02-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ec/5f/d6/ec5fd6a3-011e-82d4-28ca-10d55ea62021/03-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/08/fc/66/08fc66fb-b660-b4d5-cbd0-f19861cfeb70/04-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/23/44/23/234423fd-f73a-5230-b7f1-1b9b7e8501d9/05-APP_IPHONE_67.png/320x480bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/47/09/b2/4709b2f4-14f1-a3ba-6fc8-3aafaa94b4d8/06-APP_IPHONE_67.png/320x480bb.jpg"
+    ],
+    "description": "MEASURE, PLAN AND MAKE YOUR NEXT CUSHION\nCushionCut brings cushion design, fabric planning and foam cutting together on iPhone and iPad. Refresh a sofa, make a bench cushion or plan new seat covers with dimensions, quantities and cutting diagrams in one place. Work offline without an account.\n\nCHOOSE THE JOB YOU ACTUALLY NEED\nPlan a cover with new foam, replace only the cover or cut only the foam. Choose a box, flat or bench cushion, then enter width, depth, thickness and quantity. Switch between inches, feet, yards, centimeters and meters without changing the physical measurements.\n\nUNDERSTAND THE CONSTRUCTION\nExplore a 3D preview, inspect 2D pieces and review cut dimensions. Set seam allowance, cover ease and a separate foam adjustment. Add piping or a zipper, choose its position and adjust the zipper turn-under. Bench face panels and long side strips can be divided into numbered sections with joining allowances. Flat covers use two pillow-style panels with thickness take-up.\n\nKNOW HOW MUCH MATERIAL TO PREPARE\nEnter fabric roll width and foam-board dimensions to calculate required fabric length and board count. Fabric and foam estimates are independent, so a fit problem with one material does not hide the other result. Adjust material sizes and see updated quantities. Include purchase waste, edge margins, spacing between pieces and fabric direction. Directional fabric locks rotation; non-directional fabric can allow it.\n\nCOMPARE LAYOUTS AND PURCHASE NEEDS\nSee standard and optimized fabric layouts, utilization and length savings calculated from the actual placements. Review each foam board and its pieces. Optionally deduct fabric on hand and enter available board counts to see what is still needed. Stock inputs belong to each project.\n\nKEEP MATERIAL COSTS CLEAR\nEnter fabric, foam, piping cord, zipper and other accessory prices. See the value of all required materials separately from the extra fabric cost for a shortage. Choose a project currency and pricing units. Currency selection changes formatting without converting entered prices.\n\nFOLLOW EVERY CUT\nBefore starting, confirm dimensions, material sufficiency and construction details. In Cutting Mode, inspect a piece before explicitly marking it cut. Move between pieces, group by cushion, show unfinished pieces and undo a mark. Progress is saved locally. If you change a layout after cutting has begun, the previous plan and its completed cuts are preserved as a separate project.\n\nTAKE THE PLAN TO YOUR WORKSHOP\nExport a multipage PDF with dimensions, pattern diagrams, fabric layout, foam boards, piece schedule, costs and construction notes. Print piece-label cards with unique IDs and dimensions. Preview, share, save to Files or use AirPrint. PDFs are scaled planning diagrams, not full-size sewing templates; measure using the written dimensions.\n\nYOUR PROJECTS, ON YOUR DEVICE\nExport a JSON backup to restore editable projects and cut progress; preview imports and choose how to handle matching records. Save backups outside the app before deleting it. There is no automatic cloud sync or backup upload.\n\nCheck actual materials and test a cover before batch cutting. Pattern-repeat matching, bias-cut piping and joined foam cores are not modeled. Layout optimization does not guarantee the smallest possible material requirement.\n\nPrivacy Policy:\nhttps://woodcuttool.com/legal/CushionCut/privacy/\nTerms of Use:\nhttps://www.apple.com/legal/internet-services/itunes/dev/stdeula/",
+    "version": "1.0",
+    "releaseDate": "2026-10-31T07:00:00Z",
+    "currentVersionReleaseDate": "2026-10-31T22:31:52Z",
+    "minimumOsVersion": "17.0",
+    "formattedPrice": "Free",
+    "trackContentRating": "4+",
+    "averageUserRating": 0,
+    "userRatingCount": 0,
+    "sellerName": "家宝 戴"
+  },
+  {
     "id": 6776541705,
     "slug": "quiltfit-quilt-design-planner",
     "name": "QuiltFit: Quilt Design Planner",
