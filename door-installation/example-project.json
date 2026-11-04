@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "name": "Utility cabinet · installation",
+  "revision": "A",
+  "unit": "mm",
+  "hardware": "Illustrative geometry — select actual hinge + plate",
+  "diameter": 35,
+  "edge": 5,
+  "penetration": 13,
+  "reserve": 3,
+  "target": 2,
+  "tolerance": 0.5,
+  "notes": "All example dimensions are illustrative, not hardware specifications.",
+  "doors": [
+    {
+      "id": "D1",
+      "width": 446,
+      "height": 716,
+      "thickness": 19,
+      "hand": "left",
+      "count": 2,
+      "top": 100,
+      "bottom": 100,
+      "custom": [],
+      "zones": [],
+      "gaps": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "checks": {
+        "spec": false,
+        "coupon": false,
+        "swing": false
+      }
+    },
+    {
+      "id": "D2",
+      "width": 446,
+      "height": 716,
+      "thickness": 19,
+      "hand": "right",
+      "count": 2,
+      "top": 100,
+      "bottom": 100,
+      "custom": [],
+      "zones": [],
+      "gaps": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "checks": {
+        "spec": false,
+        "coupon": false,
+        "swing": false
+      }
+    }
+  ]
+}

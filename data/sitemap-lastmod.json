@@ -1,12 +1,12 @@
 {
   "/": {
-    "lastmod": "2026-10-23",
-    "hash": "de771236e4027ce222ba62fe57460c6e3965a1446c53f79698cf845ee4fe344f",
+    "lastmod": "2026-11-04",
+    "hash": "50ca00d18e59484deeedce8144e90e828c8a429a7fb32a3753ebb272464d7330",
     "hashVersion": 2
   },
   "/tools/": {
     "lastmod": "2026-11-04",
-    "hash": "3f7a530018a461da6185d3592f3226529def3697a5d7667a9c6da5f3e0ceb111",
+    "hash": "ce9087e96bb0e75aa251f2be9fb6ee21768f145f23e3b83341403c4fe1b32287",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -6844,6 +6844,71 @@
     "hash": "6c1e15df0c11a13aa1e6762731dbc85f0ac607f8963e27770561c5c1efded889",
     "hashVersion": 2
   },
+  "/door-installation/": {
+    "lastmod": "2026-11-04",
+    "hash": "fbf0f047c6221db9d145236582ed2742d55f92ff3a7c43bbca4b2284bba171f9",
+    "hashVersion": 2
+  },
+  "/door-installation/back-face-handing/": {
+    "lastmod": "2026-11-04",
+    "hash": "7ab46e1d51f671d3aa260c6d43d1f5b25d679522107a0d648f8d5ee29828fa50",
+    "hashVersion": 2
+  },
+  "/door-installation/batch-labels-and-first-article/": {
+    "lastmod": "2026-11-04",
+    "hash": "6f298bb992939f9e3a019a431694742bebb497c4d30b6f110117a572e1fc72da",
+    "hashVersion": 2
+  },
+  "/door-installation/cup-rim-and-center/": {
+    "lastmod": "2026-11-04",
+    "hash": "4fbf90b3bd09dc062c1a6f61818fede4bb661d382aac1abbc467fa92e4bfec21",
+    "hashVersion": 2
+  },
+  "/door-installation/custom-centers-and-keep-outs/": {
+    "lastmod": "2026-11-04",
+    "hash": "114d5498071b4e7965509632796f52d3fd978a5f18b45c587b58b1bd350bf0c9",
+    "hashVersion": 2
+  },
+  "/door-installation/drill-depth-coupon/": {
+    "lastmod": "2026-11-04",
+    "hash": "fa4872b14d987f4765e1209ce9c29e617517ab5bcd1a9143b2c81d5062f344a2",
+    "hashVersion": 2
+  },
+  "/door-installation/finished-door-survey/": {
+    "lastmod": "2026-11-04",
+    "hash": "39520f1b930d5e4b4cff4e6b641f1b61f91dc2b2eb0c47ec2765a6b3334995b3",
+    "hashVersion": 2
+  },
+  "/door-installation/full-swing-clearance/": {
+    "lastmod": "2026-11-04",
+    "hash": "8e0ada4cdba423ff3eec9e790df8843e8515d73e326bbb231e789a17d5368807",
+    "hashVersion": 2
+  },
+  "/door-installation/hardware-family-and-quantity/": {
+    "lastmod": "2026-11-04",
+    "hash": "972c4033273c6a54a839e4252930b9644d501ae036fde2771e80ed937eb6ecea",
+    "hashVersion": 2
+  },
+  "/door-installation/measure-four-reveals/": {
+    "lastmod": "2026-11-04",
+    "hash": "8b5e94e7d892eec490f75f2ffd51109d64dbdb1ee3a38a79f148fe5d9956a852",
+    "hashVersion": 2
+  },
+  "/door-installation/revision-and-installation-handover/": {
+    "lastmod": "2026-11-04",
+    "hash": "eaf40c5fd5f9b0587dcfe0e89f22bbdf6856525f7828e63c5dc7b6ff3c8fab2d",
+    "hashVersion": 2
+  },
+  "/door-installation/tapered-gap-diagnosis/": {
+    "lastmod": "2026-11-04",
+    "hash": "17c94eb0b7e4e1451f1ba8b24635bae476d270b05fa994a881291d218906b78e",
+    "hashVersion": 2
+  },
+  "/door-installation/units-and-print-transfer/": {
+    "lastmod": "2026-11-04",
+    "hash": "295a099d70653b050f6aea33d8df9e138d6aa3bebc0c8d9f474879d027ef32bb",
+    "hashVersion": 2
+  },
   "/drawer-box-calculator/": {
     "lastmod": "2026-09-16",
     "hash": "43253f3e8fd598499625649dc365c14f10299e8b3d68c892513968d8c8ad7bb2",
@@ -10626,7 +10691,7 @@
   },
   "/tools/woodworking/": {
     "lastmod": "2026-11-04",
-    "hash": "c39743a49a152dd951a0cf4a63c9d5523e9aeeaca03f01cd7776d9c09612eadd",
+    "hash": "3b116d2b0d0646184c2dc476b9e5995257f57fb1fd74bc52e6eb37c170a2b97d",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

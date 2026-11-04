@@ -53,6 +53,8 @@ The [Joinery Lab](docs/joinery-lab.md) at `/joinery-lab/` adds six interactive j
 
 The [Finishing Planner](docs/finishing-planner.md) at `/finishing-planner/` extends the panel workflow to coated surfaces, product coverage and a local purchase list. Regenerate it with `npm run generate:finishing`.
 
+The [Door Installation Studio](docs/door-installation-studio.md) at `/door-installation/` adds a multi-door schedule, back-face cup maps, keep-out and depth checks, measured reveals, CSV/SVG/JSON records and twelve field guides. Regenerate it with `npm run generate:door-installation`.
+
 ```sh
 npm run check
 ```

@@ -325,6 +325,7 @@
 
     // Keep newest additions first and limit the dropdown to four recent tools.
     const latestTools = [
+      { href: "/door-installation/", icon: "DI", title: "Door Installation Studio", description: "Labeled door schedules, hinge cup maps, measured reveals and twelve field guides." },
       { href: "/drawer-fit/", icon: "DF", title: "Drawer Fit Studio", description: "Slide-space checks, box parts, front layouts and ten field guides." },
       { href: "/solid-wood-milling/", icon: "SW", title: "Solid Wood Milling", description: "Estimate board yield and follow eight guides from rough stock to finished parts." },
       { href: "/joinery-lab/", icon: "JL", title: "Joinery Lab", description: "Six joint layout planners, live diagrams and eighteen bench guides." },
@@ -342,7 +343,7 @@
     ];
     const appsMenu = `<div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for work and practice", description: "Save project plans, prepare fabrication layouts, and build typing skills with focused iPhone apps.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns">${appColumns.map((column) => `<div class="mega-column"><p class="mega-column-title">${column.title}</p>${column.links.map(menuLink).join("")}</div>`).join("")}</div></div>`;
 
-    return `<div class="nav-links nav-links-mega" id="site-navigation">${navMenuItem({ href: "/tools/", label: "Tools", aliases: [...tools.map((item) => item.href), "/drawer-fit/", "/cabinet-studio/", "/solid-wood-milling/", "/joinery-lab/", "/shelf-pin-layout/", "/glue-up/", "/edge-banding/", "/assembly-check/", "/finishing-planner/", "/wood-movement/"], menu: toolsMenu })}${resourceNavMenu(projectsMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(resourcesMenu)}${navMenuItem({ href: "/apps/", label: "Apps", menu: appsMenu })}</div>`;
+    return `<div class="nav-links nav-links-mega" id="site-navigation">${navMenuItem({ href: "/tools/", label: "Tools", aliases: [...tools.map((item) => item.href), "/door-installation/", "/drawer-fit/", "/cabinet-studio/", "/solid-wood-milling/", "/joinery-lab/", "/shelf-pin-layout/", "/glue-up/", "/edge-banding/", "/assembly-check/", "/finishing-planner/", "/wood-movement/"], menu: toolsMenu })}${resourceNavMenu(projectsMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(resourcesMenu)}${navMenuItem({ href: "/apps/", label: "Apps", menu: appsMenu })}</div>`;
   }
 
   function header() {
@@ -403,6 +404,7 @@
       { href: "/offcut-planner/", label: "Offcut Planner" },
       { href: "/cabinet-studio/", label: "Cabinet Studio" },
       { href: "/shelf-pin-layout/", label: "Shelf Pin Studio" },
+      { href: "/door-installation/", label: "Door Installation Studio" },
       { href: "/drawer-fit/", label: "Drawer Fit Studio" },
       { href: "/joinery-lab/", label: "Joinery Lab" },
       { href: "/glue-up/", label: "Glue-Up Planner" },
