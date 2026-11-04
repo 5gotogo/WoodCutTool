@@ -5,8 +5,8 @@
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-10-30",
-    "hash": "e5bc04ce1a9a3fada63712ee1e773a5ffb3816030defc087657c4050c009a145",
+    "lastmod": "2026-11-04",
+    "hash": "3f7a530018a461da6185d3592f3226529def3697a5d7667a9c6da5f3e0ceb111",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -9879,6 +9879,51 @@
     "hash": "4aa18b3cf566221bfaa46ab8b75651056107dd4602958eacdfb08702516fa479",
     "hashVersion": 2
   },
+  "/solid-wood-milling/": {
+    "lastmod": "2026-11-04",
+    "hash": "789aea003de0fa73919f008cdf9b119f536041aa022ee3ab76080f0e50531cb4",
+    "hashVersion": 2
+  },
+  "/solid-wood-milling/blank-allowance-budget/": {
+    "lastmod": "2026-11-04",
+    "hash": "845ae0c44d506b1e591052e67d64518290289a0ba1e7fa55f075f96110fdf31a",
+    "hashVersion": 2
+  },
+  "/solid-wood-milling/board-yield-layout/": {
+    "lastmod": "2026-11-04",
+    "hash": "440f0d89534273e2833954e7e12930da8c9765b61b50787936d32c5162c49d04",
+    "hashVersion": 2
+  },
+  "/solid-wood-milling/milling-quality-check/": {
+    "lastmod": "2026-11-04",
+    "hash": "9d2f4bc08954b5ca557cfac88c3c76fbee6699d658548368b6347ff9a12e42aa",
+    "hashVersion": 2
+  },
+  "/solid-wood-milling/reference-face-and-edge/": {
+    "lastmod": "2026-11-04",
+    "hash": "b8ba4616b3c3c81505f122b4054be738ae20690eddbf7e437c37d56f8b913c20",
+    "hashVersion": 2
+  },
+  "/solid-wood-milling/rough-board-survey/": {
+    "lastmod": "2026-11-04",
+    "hash": "3f4ae8f5d4784c240155aa56aefd6f9f14969cd17ad8b1bd9bf1ed10f4ab4245",
+    "hashVersion": 2
+  },
+  "/solid-wood-milling/side-table-apron-worked-example/": {
+    "lastmod": "2026-11-04",
+    "hash": "c4a278002ef59109a85f0621a85db1143c8a526093de4acc3f78da8cf6cc7169",
+    "hashVersion": 2
+  },
+  "/solid-wood-milling/staged-milling-batch/": {
+    "lastmod": "2026-11-04",
+    "hash": "7899c5d6dec8533d76316f51ecf0a7f5de42d018bdeebcc965142b3f94fa9993",
+    "hashVersion": 2
+  },
+  "/solid-wood-milling/warp-and-thickness/": {
+    "lastmod": "2026-11-04",
+    "hash": "5266ed51b9895cb7ea11844ba5a2e74abcfb444886e26b23ed8fa103ffb2438f",
+    "hashVersion": 2
+  },
   "/stair-angle-calculator/": {
     "lastmod": "2026-09-16",
     "hash": "941e151ebab7a3ae684fbf93267b862a20314563572a736637cf735aa10611ae",
@@ -10580,8 +10625,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-10-30",
-    "hash": "66c7b2421372953961ce122e51e46dd28a09732809e0b715295bfd0ac4d689c1",
+    "lastmod": "2026-11-04",
+    "hash": "c39743a49a152dd951a0cf4a63c9d5523e9aeeaca03f01cd7776d9c09612eadd",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

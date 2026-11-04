@@ -1,0 +1,157 @@
+.milling {
+  --mill-ink: #172f28;
+  --mill-muted: #4c5e52;
+  --mill-green: #17352d;
+  --mill-gold: #ffd397;
+  --mill-paper: #faf6ed;
+  --mill-line: #d8d4c5;
+  color: var(--mill-ink);
+  background: var(--mill-paper);
+  max-width: none;
+  padding: 0;
+}
+.milling h1, .milling h2, .milling h3 {
+  color: inherit;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -.035em;
+  margin: 0;
+}
+.milling h1 { font-size: clamp(3.15rem, 7vw, 7.6rem); line-height: .94; }
+.milling h2 { font-size: clamp(2rem, 4.1vw, 3.8rem); line-height: 1.05; }
+.milling h3 { font-size: 1.8rem; }
+.milling a { color: inherit; text-underline-offset: .2em; }
+.milling a:focus-visible, .milling button:focus-visible, .milling input:focus-visible, .milling select:focus-visible, .milling summary:focus-visible {
+  outline: 3px solid #ad6329;
+  outline-offset: 3px;
+}
+.milling :is(section, [id]) { scroll-margin-top: 7rem; }
+.milling-kicker {
+  margin: 0 0 .9rem;
+  font: 700 .73rem/1.5 ui-monospace, monospace;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+.milling-hero {
+  background: var(--mill-green);
+  color: #fff0d6;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.75rem, 4vw, 5rem);
+  padding: clamp(2.4rem, 6vw, 7rem) max(1rem, calc((100% - 1240px) / 2));
+}
+.milling-hero h1 { margin-block: .65rem 1.25rem; }
+.milling-hero-copy > p:not(.milling-kicker) { max-width: 32rem; font-size: 1.13rem; }
+.milling-hero figure { margin: 0; border: 1px solid #718373; }
+.milling-art { display: block; width: 100%; height: auto; }
+.milling-actions, .milling-form-top, .milling-export {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .85rem 1.2rem;
+}
+.milling-actions { margin-top: 1.55rem; }
+.milling .milling-button, .milling button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .6rem .95rem;
+  min-height: 44px;
+  border: 1px solid transparent;
+  border-radius: .3rem;
+  background: var(--mill-gold);
+  color: var(--mill-ink);
+  font: inherit;
+  font-weight: 750;
+  text-decoration: none;
+  cursor: pointer;
+}
+.milling .milling-secondary { background: #fffdf8; border-color: #a9b0a3; }
+.milling button:disabled { opacity: .55; cursor: default; }
+.milling-phases, .milling-section, .milling-reading, .milling-article-hero {
+  width: min(1240px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+.milling-phases { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-bottom: 1px solid var(--mill-line); }
+.milling-phases a { display: grid; padding: 1.35rem; text-decoration: none; border-inline-end: 1px solid var(--mill-line); }
+.milling-phases a:last-child { border-inline-end: 0; }
+.milling-phases :is(small, span) { color: var(--mill-muted); }
+.milling-phases strong { font-size: 1.25rem; }
+.milling-phases a:hover, .milling-chapters a:hover { background: #f1e9d8; }
+.milling-section { padding-block: clamp(2.5rem, 6vw, 5rem); }
+.milling-lead { max-width: 55ch; font-size: 1.12rem; color: var(--mill-muted); }
+.milling-workspace { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); margin-top: 1.45rem; border: 1px solid var(--mill-line); }
+#milling-form, .milling-results { min-width: 0; padding: clamp(1rem, 3vw, 2rem); }
+#milling-form { background: #f3efe4; }
+.milling-form-top { justify-content: space-between; align-items: end; }
+.milling fieldset { min-width: 0; margin: 1rem 0 0; padding: .75rem 0 0; border: 0; border-top: 1px solid var(--mill-line); }
+.milling legend { padding-inline: 0 .5rem; font-weight: 750; }
+.milling-inputs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; }
+.milling label { min-width: 0; display: block; font-size: .89rem; font-weight: 650; }
+.milling label small { color: var(--mill-muted); white-space: nowrap; }
+.milling :is(input, select) {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin-top: .25rem;
+  padding: .5rem;
+  border: 1px solid #a9b0a3;
+  border-radius: .3rem;
+  background: #fffdf8;
+  color: var(--mill-ink);
+  font: inherit;
+}
+.milling-help { font-size: .82rem; color: var(--mill-muted); }
+.milling-results { background: #e5eddf; }
+.milling-total { display: flex; gap: 1rem; align-items: center; font-weight: 750; flex-wrap: wrap; }
+.milling-total > strong { font: 500 clamp(2.3rem, 5vw, 4.8rem)/1 Georgia, serif; overflow-wrap: anywhere; max-width: 100%; }
+.milling-total span { display: block; color: var(--mill-muted); font-size: .92rem; font-weight: 500; }
+.milling-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem; margin-block: 1.2rem; }
+.milling-details > div { padding: .7rem; background: #f7faf4; }
+.milling-details dt { font-size: .82rem; color: var(--mill-muted); }
+.milling-details dd { margin: .25rem 0 0; font-weight: 750; overflow-wrap: anywhere; }
+.milling-axis { margin-block: 1rem; }
+.milling-axis > div:first-child { display: flex; flex-wrap: wrap; gap: .25rem .75rem; justify-content: space-between; font-size: .86rem; }
+.milling-bar { display: flex; height: .85rem; margin-top: .3rem; background: #fffdf8; border: 1px solid #9ba99a; overflow: hidden; border-radius: .2rem; }
+.milling-bar span:first-child { background: #426a53; }
+.milling-bar span:nth-child(2) { background: #a96137; }
+.milling-legend { display: flex; flex-wrap: wrap; gap: .3rem .85rem; font-size: .8rem; }
+.milling-legend span::before { content: ""; display: inline-block; width: .65rem; height: .65rem; margin-inline-end: .3rem; border: 1px solid #829386; background: #426a53; }
+.milling-legend span:nth-child(2)::before { background: #a96137; }
+.milling-legend span:nth-child(3)::before { background: #fffdf8; }
+.milling-export { margin-top: 1.5rem; }
+.milling-export p { font-size: .85rem; margin: 0; }
+.milling-alert { border-inline-start: 3px solid #a96137; padding-inline-start: .75rem; }
+.milling-method { padding: .85rem 1rem; margin-top: 1rem; border: 1px solid var(--mill-line); }
+.milling-method summary { cursor: pointer; font-weight: 750; }
+.milling-method p { max-width: 77ch; }
+.milling-example { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1fr); gap: clamp(1rem, 4vw, 4rem); background: #eddfc5; padding-inline: clamp(1rem, 4vw, 3.5rem); }
+.milling-example ol { margin: 0; padding-left: 1.4rem; }
+.milling-example li { padding: .7rem .4rem; border-bottom: 1px solid #bdb39e; }
+.milling-example li span { display: block; }
+.milling-chapters { margin-top: 1.6rem; }
+.milling-chapters section { display: grid; grid-template-columns: minmax(0, .65fr) repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--mill-line); }
+.milling-chapters section:last-child { border-bottom: 1px solid var(--mill-line); }
+.milling-chapters section > div, .milling-chapters a { padding: 1.15rem; }
+.milling-chapters a { display: grid; grid-template-columns: auto 1fr auto; gap: .65rem; text-decoration: none; border-inline-start: 1px solid var(--mill-line); }
+.milling-chapters a strong { text-decoration: underline; text-decoration-color: #a2a99e; }
+.milling-chapters p, .milling-source { color: var(--mill-muted); font-size: .9rem; }
+.milling-chapters p { margin: .3rem 0 0; }
+.milling-article-hero { padding-block: clamp(2rem, 6vw, 5rem) 2rem; border-bottom: 1px solid var(--mill-line); }
+.milling-article-hero .milling-kicker { margin-top: 1.5rem; }
+.milling-article-hero h1 { max-width: 16ch; font-size: clamp(2.7rem, 6vw, 6rem); }
+.milling-reading { display: grid; grid-template-columns: minmax(11rem, 1fr) minmax(0, 3fr); gap: clamp(1rem, 4vw, 4rem); padding-block: 2rem 4rem; }
+.milling-reading > nav { display: grid; align-content: start; gap: .6rem; }
+.milling-reading article { max-width: 74ch; }
+.milling-reading article section { padding-block: 1rem; }
+.milling-reading article h2 { font-size: clamp(1.8rem, 4vw, 3rem); }
+.milling-reading .milling-bench { background: #eddfc5; padding: clamp(1rem, 3vw, 2rem); }
+.milling-pagination { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--mill-line); padding-top: 1rem; }
+@media (max-width: 760px) {
+  .milling-hero, .milling-workspace, .milling-example, .milling-reading, .milling-chapters section { grid-template-columns: minmax(0, 1fr); }
+  .milling-phases { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .milling-phases a:nth-child(2) { border-inline-end: 0; }
+  .milling-phases a:nth-child(n+3), .milling-chapters a { border-top: 1px solid var(--mill-line); }
+  .milling-chapters a { border-inline-start: 0; }
+}

@@ -509,7 +509,8 @@ function toolsHubGraph() {
       path: "/wood/",
       name: "Wood Species Library"
     },
-    ...constructionTools.map((tool) => ({ path: tool.route, name: tool.name }))
+    ...constructionTools.map((tool) => ({ path: tool.route, name: tool.name })),
+    { path: "/solid-wood-milling/", name: "Solid Wood Milling" },
   ];
   const itemListElement = [...browserTools, ...referenceTools].map((tool, index) => ({
     "@type": "ListItem",
