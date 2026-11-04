@@ -2,6 +2,7 @@ import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { sitemapRoute, extractImages } from "./sitemap-page.mjs";
 import { constructionTools } from "./construction-tool-data.mjs";
 import { SITEMAP_SIGNATURE_VERSION, sitemapContentSignature } from "./sitemap-content-signature.mjs";
 
@@ -37,68 +38,6 @@ function routeFromFile(file) {
   }
 
   return `/${dirname(file)}/`;
-}
-
-function hasNoindex(html) {
-  const metaTags = html.match(/<meta\b[^>]*>/gi) ?? [];
-  return metaTags.some((tag) => {
-    const name = tag.match(/\bname=["']robots["']/i);
-    const content = tag.match(/\bcontent=["']([^"']+)["']/i)?.[1] ?? "";
-    return name && content.toLowerCase().split(",").map((part) => part.trim()).includes("noindex");
-  });
-}
-
-function canonicalRoute(html, fallbackRoute) {
-  const linkTags = html.match(/<link\b[^>]*>/gi) ?? [];
-
-  for (const tag of linkTags) {
-    const isCanonical = /\brel=["'][^"']*\bcanonical\b[^"']*["']/i.test(tag);
-    const href = tag.match(/\bhref=["']([^"']+)["']/i)?.[1];
-
-    if (!isCanonical || !href) {
-      continue;
-    }
-
-    try {
-      const url = new URL(href, siteUrl);
-      if (url.origin === siteUrl) {
-        return url.pathname.endsWith("/") ? url.pathname : `${url.pathname}/`;
-      }
-    } catch {
-      return fallbackRoute;
-    }
-  }
-
-  return fallbackRoute;
-}
-
-// Extract meaningful, page-specific images for an image sitemap. We deliberately skip
-// the shared OG fallback, favicons, and inline SVG placeholders so Google Image search
-// only sees genuinely unique images (blog article photos and App Store app icons).
-function extractImages(html) {
-  const images = new Set();
-  const keep = (src) => {
-    if (!src || !/^https?:\/\//i.test(src)) return false;
-    if (/\/assets\/og\//i.test(src)) return false; // shared OG fallback
-    if (/favicon|apple-touch-icon/i.test(src)) return false;
-    if (/\.svg(\?|$)/i.test(src)) return false;
-    return true;
-  };
-
-  // App Store icons carry the class directly on the <img> tag.
-  for (const match of html.matchAll(/<img\b[^>]*\bclass=["'][^"']*\bapp-detail-icon\b[^"']*["'][^>]*>/gi)) {
-    const src = match[0].match(/\bsrc=["']([^"']+)["']/i)?.[1];
-    if (keep(src)) images.add(src);
-  }
-
-  // Blog article photos live inside a <figure class="...blog-photo-visual..."> wrapper,
-  // so match the figure block and pull the first <img> src from within it.
-  for (const fig of html.matchAll(/<figure\b[^>]*\bblog-photo-visual\b[^>]*>([\s\S]*?)<\/figure>/gi)) {
-    const src = fig[1].match(/<img\b[^>]*\bsrc=["']([^"']+)["']/i)?.[1];
-    if (keep(src)) images.add(src);
-  }
-
-  return [...images];
 }
 
 function hashContent(value) {
@@ -368,11 +307,8 @@ const routeLegacyHashes = new Map();
 for (const file of collectHtmlFiles()) {
   const html = readFileSync(join(root, file), "utf8");
 
-  if (hasNoindex(html)) {
-    continue;
-  }
-
-  const route = canonicalRoute(html, routeFromFile(file));
+  const route = sitemapRoute(html, routeFromFile(file), siteUrl);
+  if (!route) continue;
   routes.add(route);
 
   const hashes = routeHashes.get(route) ?? [];
@@ -386,8 +322,8 @@ for (const file of collectHtmlFiles()) {
   legacyHashes.push(hashContent(html));
   routeLegacyHashes.set(route, legacyHashes);
 
-  // Attach unique images to the canonical route (alias pages fold into their canonical).
-  const images = extractImages(html);
+  // Attach authored images only to their indexable canonical page.
+  const images = extractImages(html, `${siteUrl}${route}`);
   if (images.length) {
     const existing = routeImages.get(route) ?? new Set();
     for (const src of images) existing.add(src);
@@ -431,9 +367,10 @@ const explicitToolRoutes = new Set([
 ]);
 
 function sitemapGroup(route) {
+  if (["/offcut-planner/", "/door-installation/", "/workshop-atlas/", "/estimating/"].some(prefix => route.startsWith(prefix))) return "tools";
   if (route.startsWith("/solid-wood-milling/") || route.startsWith("/drawer-fit/") || route.startsWith("/joinery-lab/") || route.startsWith("/shelf-pin-layout/") || explicitToolRoutes.has(route) || route.startsWith("/tools/") || route.startsWith("/glue-up/") || route.startsWith("/assembly-check/") || route.startsWith("/edge-banding/") || route.startsWith("/finishing-planner/") || route.startsWith("/wood-movement/")) return "tools";
   if (route.startsWith("/projects/") || route.startsWith("/one-sheet-projects/")) return "projects";
-  if (route.startsWith("/learn/")) return "learn";
+  if (route.startsWith("/learn/") || route.startsWith("/guides/")) return "learn";
   if (route.startsWith("/templates/")) return "templates";
   if (route.startsWith("/worksheets/")) return "worksheets";
   if (route.startsWith("/blog/")) return "blog";

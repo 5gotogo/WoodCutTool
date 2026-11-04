@@ -775,8 +775,8 @@
     "hashVersion": 2
   },
   "/apps/cushioncut-fabric-foam/": {
-    "lastmod": "2026-11-03",
-    "hash": "fb7901920fb02de9c7f0b20d7a23d7c0c539ea9ec81414bc93838a250cf6690c",
+    "lastmod": "2026-11-05",
+    "hash": "8d9bf15200569121cb780e83a977aaf84348094162c35b039aa6c6e64644eafe",
     "hashVersion": 2
   },
   "/apps/ductlab-hvac-duct-layout/": {
@@ -795,8 +795,8 @@
     "hashVersion": 2
   },
   "/apps/fabricnest-fabric-planner/": {
-    "lastmod": "2026-11-03",
-    "hash": "73be96fcaf9da9298c4428b79a251be75fb9c750b8a0cef3162c1038a3513da9",
+    "lastmod": "2026-11-05",
+    "hash": "ef6be225e13626d27a85b5ea98044c8805e8a8a1ffd71948bdcf4b14783b2257",
     "hashVersion": 2
   },
   "/apps/fast-rhythm-fasting-and-sleep/": {
@@ -970,8 +970,8 @@
     "hashVersion": 2
   },
   "/apps/yarnfit-knit-crochet-charts/": {
-    "lastmod": "2026-11-03",
-    "hash": "b34b1550ceab5b2281fc7ff061dccee7737411c32b4e0f6b66a4533f9608c520",
+    "lastmod": "2026-11-05",
+    "hash": "765e4a274eae6a2fb2c8a5e538d99d8eae8bdf6a71b09fe87a54bdfab4b2acfc",
     "hashVersion": 2
   },
   "/assembly-check/": {
@@ -9895,8 +9895,8 @@
     "hashVersion": 2
   },
   "/sheet-calculator/": {
-    "lastmod": "2026-07-23",
-    "hash": "f51218a0026f6be88e8caa9b738e5b9e9463ba7f3296f95f229a5873339274b2",
+    "lastmod": "2026-11-05",
+    "hash": "c2ce685c6f301876376ad81191a1d122664af8fa72a878ad2fbd93c683da0cbc",
     "hashVersion": 2
   },
   "/shelf-pin-layout/": {
