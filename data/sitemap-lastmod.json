@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-11-03",
-    "hash": "79c4e2fe24a100b64cd979fba8f56603fe18a3e0f60ddd6c8c0361eb8fd003fe",
+    "lastmod": "2026-11-05",
+    "hash": "c1cc822ab2dea2558ff5c78405fcfa22da2aa295ad0ec947c303eba8be66ad5b",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -9484,6 +9484,16 @@
     "hash": "8886ea9da2c51faa8910ea345d7f79436f89da7fa2207e16878211a202cdfed1",
     "hashVersion": 2
   },
+  "/legal/CeilingGridFit/privacy/": {
+    "lastmod": "2026-11-05",
+    "hash": "b2f71cbdd133fb1f9333eef2336430c91d59db2507011b256ebeb429a0f3c6db",
+    "hashVersion": 2
+  },
+  "/legal/CeilingGridFit/support/": {
+    "lastmod": "2026-11-05",
+    "hash": "d8816b493a14ca508d35c2e2a4fe75f327ad05bde624d50d5df1a879c5186d38",
+    "hashVersion": 2
+  },
   "/legal/CounterFit/privacy/": {
     "lastmod": "2026-10-10",
     "hash": "6d1beb63468b41fc783bff116ef38df46593d09716f33db2a2908289db2cfac0",
@@ -9534,6 +9544,16 @@
     "hash": "765e350e84caae996c6fad8cc48daabc9d8cbef01972822919fb182082271b17",
     "hashVersion": 2
   },
+  "/legal/FlashingLab/privacy/": {
+    "lastmod": "2026-11-05",
+    "hash": "da5ae4f231d79959c4aeca6232ec4d8f9847944ef7178900c8cf3cc9d37d21a0",
+    "hashVersion": 2
+  },
+  "/legal/FlashingLab/support/": {
+    "lastmod": "2026-11-05",
+    "hash": "1373a99db8534e5e50f21b9caaa6e180dc3cd91f615d3bfd1281961a5f5720f5",
+    "hashVersion": 2
+  },
   "/legal/FloorQuote/privacy/": {
     "lastmod": "2026-09-16",
     "hash": "9aabf3a4896ff2e0a7327f5e8710fe55cb10ff4f722bff3a960f192e26f80194",
@@ -9542,6 +9562,16 @@
   "/legal/FloorQuote/support/": {
     "lastmod": "2026-09-16",
     "hash": "8b61226267690adf75f894e96a9d39cebd6226d4558f44d898ea42c492277fc2",
+    "hashVersion": 2
+  },
+  "/legal/GlassRailFit/privacy/": {
+    "lastmod": "2026-11-05",
+    "hash": "e3d391f191539555542a2505a0c9a701f11cc74f531a165ea2e75b333e9d6f77",
+    "hashVersion": 2
+  },
+  "/legal/GlassRailFit/support/": {
+    "lastmod": "2026-11-05",
+    "hash": "26fc598b89901f771f2fa22eac86f48dabf9af97f7bd466e2c9ca87d6b786176",
     "hashVersion": 2
   },
   "/legal/JobPhotoLog/privacy/": {

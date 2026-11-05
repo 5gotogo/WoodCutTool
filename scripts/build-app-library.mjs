@@ -156,6 +156,9 @@ const legalLinksBySlug = {
 };
 
 const appSupportDirectory = [
+  ["GlassRailFit", "/legal/GlassRailFit/privacy/", "/legal/GlassRailFit/support/"],
+  ["FlashingLab", "/legal/FlashingLab/privacy/", "/legal/FlashingLab/support/"],
+  ["CeilingGridFit", "/legal/CeilingGridFit/privacy/", "/legal/CeilingGridFit/support/"],
   ["CutList", "/legal/cutlist/privacy/", "/legal/cutlist/support/"],
   ["QuiltFit", "/legal/quiltfit/privacy/", "/legal/quiltfit/support/"],
   ["Stringer", "/legal/Stringer/privacy/", "/legal/Stringer/support/"],
