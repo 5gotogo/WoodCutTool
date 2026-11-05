@@ -1,3 +1,4 @@
+import { workshopPlan, shoppingCsv, workshopMarkup } from './cabinet-workshop.js';
 import { DEFAULTS, PRESETS, normalize, buildCabinet, fitShelves, parseBrief, csvCutList } from './cabinet-studio-core.js';
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
@@ -17,7 +18,7 @@ let lastDownloadUrl;
 let visual = null, storageAvailable = true, validInput = true, draftPending = false;
 const palette = { birch: ['#d9c49b', '#f0dfbb', '#b7a075'], oak: ['#c69e67', '#e3c58e', '#987445'], walnut: ['#896245', '#b08c67', '#644633'] };
 function notice(text = '', error = false) { $('#cs-notice').textContent = text; $('#cs-notice').dataset.error = String(error); }
-function setExportEnabled(enabled) { ['cs-export-csv', 'cs-export-svg', 'cs-print', 'cs-snapshot', 'cs-backup', 'cs-share'].forEach(id => $('#' + id).disabled = !enabled || (id === 'cs-snapshot' && comparisons.length >= 3)); }
+function setExportEnabled(enabled) { ['cs-purchase-csv', 'cs-export-csv', 'cs-export-svg', 'cs-print', 'cs-snapshot', 'cs-backup', 'cs-share'].forEach(id => $('#' + id).disabled = !enabled || (id === 'cs-snapshot' && comparisons.length >= 3)); }
 function readForm() {
   const raw = { ...config };
   new FormData($('#cs-design-form')).forEach((v, k) => raw[k] = Number(v));
@@ -142,6 +143,7 @@ function drawModel(v) {
   }
 }
 function renderResults() {
+  $('#cs-workshop-content').innerHTML = workshopMarkup(model);
   const count = model.groups.reduce((v, g) => v + g.sheets.length, 0), complete = !model.groups.some(g => g.unplaced.length);
   const metrics = [
     ['Panels', model.parts.length, `${fmt(model.area / 1e6)} m² finished area`],
@@ -287,6 +289,7 @@ $('#cs-model').addEventListener('pointercancel',()=>pointer=null);
 $('#cs-model').addEventListener('click',e=>{if(pointer?.suppress){e.stopPropagation();e.preventDefault();}},true);
 $('#cs-snapshot').addEventListener('click',()=>{if(comparisons.length>=3)return;comparisons.push({config:{...config}});renderComparison();scheduleSave();notice('Comparison saved. Change the current design to compare costs and material use.');});
 $('#cs-comparisons').addEventListener('click',e=>{const restore=e.target.closest('[data-restore]'),remove=e.target.closest('[data-remove]');if(restore)update(comparisons[Number(restore.dataset.restore)].config,{message:'Saved option restored.'});if(remove){comparisons.splice(Number(remove.dataset.remove),1);renderComparison();scheduleSave();}});
+$('#cs-purchase-csv').addEventListener('click',()=>download('cabinet-shopping-list.csv',shoppingCsv(model),'text/csv;charset=utf-8'));
 $('#cs-export-csv').addEventListener('click',()=>download('cabinet-studio-cut-list.csv',csvCutList(model),'text/csv;charset=utf-8'));
 $('#cs-export-svg').addEventListener('click',exportDrawing);
 $('#cs-print').addEventListener('click',()=>{stopAssembly();cancelAnimationFrame(animId);explosion=0;$('#cs-explode').setAttribute('aria-pressed','false');visual=snapshotVisual();drawModel(visual);window.print();});
