@@ -82,20 +82,17 @@
     try {const model = await load(); sessionStorage.setItem(model.HANDOFF_KEY, JSON.stringify(model.validateProject(project())));location.href = '/plywood-cut-calculator/#import-cut-list';}
     catch(err) {error.textContent = 'Could not transfer this list: '+err.message+' You can still use the full calculator link.';}
   });
-  // Show a real sample only when the tool comes into view; do not count it as a conversion.
-  if ('IntersectionObserver' in window) {
-    const observer = new IntersectionObserver(async entries => {
-      if (!entries.some(e => e.isIntersecting)) return;
-      observer.disconnect();
+  // Calculate the initial sample without requiring a click or viewport observer.
+  // Keep automatic previews out of conversion metrics and respect edits during load.
+  async function previewSample() {
+    if (revision || result) return;
+    try {
+      const model = await load();
       if (revision || result) return;
-      try {
-        const model = await load();
-        if (revision || result) return;
-        result = model.calculateProject(model.validateProject(project()), pack);
-        draw();
-      } catch { /* The Generate button can retry an unavailable engine. */ }
-    });
-    observer.observe(form);
+      result = model.calculateProject(model.validateProject(project()), pack);
+      draw();
+    } catch { /* The Generate button can retry an unavailable engine. */ }
   }
+  void previewSample();
   rowControls();
 })();
