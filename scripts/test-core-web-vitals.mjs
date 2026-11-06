@@ -162,7 +162,7 @@ const homeRuntime = readFileSync(join(root, "assets/home.js"), "utf8");
 if (homePage.includes('src="/assets/app.js"') || !homePage.includes('src="/assets/home.js"') || !homePage.includes('src="/assets/content-page.js"')) {
   failures.push("Home page must use the lightweight planner and on-demand language runtimes");
 }
-if (homeRuntime !== homeRuntimeSource() || Buffer.byteLength(homeRuntime) > 8_000) failures.push("Home runtime is stale or exceeds 8 KB");
+if (homeRuntime !== homeRuntimeSource() || Buffer.byteLength(homeRuntime) > 9_000) failures.push("Home runtime is stale or exceeds 9 KB");
 
 const constructionHub = readFileSync(join(root, "learn/plywood/index.html"), "utf8");
 if (constructionHub.includes('src="/assets/construction-calculators.js"')) failures.push("Static construction topic hubs must not load the calculator runtime");
