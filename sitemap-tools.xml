@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-11-04</lastmod><changefreq>weekly</changefreq><priority>0.96</priority>
+  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.96</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-hero.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-cut-layout.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/compare/compare-construction.webp</image:loc></image:image>
@@ -28,7 +28,7 @@
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-cabinet-800.webp</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/cabinet-door-calculator/</loc><lastmod>2026-09-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-cabinet-800.webp</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/cabinet-studio/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
+  <url><loc>https://woodcuttool.com/cabinet-studio/</loc><lastmod>2026-11-11</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
   <url><loc>https://woodcuttool.com/conversion/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/cost-estimator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/crown-molding-angle-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>

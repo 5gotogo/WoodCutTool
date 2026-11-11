@@ -1,12 +1,12 @@
 {
   "/": {
-    "lastmod": "2026-11-04",
-    "hash": "50ca00d18e59484deeedce8144e90e828c8a429a7fb32a3753ebb272464d7330",
+    "lastmod": "2026-11-11",
+    "hash": "b822bca2ce508688b4b96d08a4d6e8ce000558fef202c37ac0c31362fbaf8368",
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-11-04",
-    "hash": "ce9087e96bb0e75aa251f2be9fb6ee21768f145f23e3b83341403c4fe1b32287",
+    "lastmod": "2026-11-11",
+    "hash": "83684862da224be20d8daa1fc65ee19109704fedee1383c2e3d64b78317040f2",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -6075,8 +6075,8 @@
     "hashVersion": 2
   },
   "/cabinet-studio/": {
-    "lastmod": "2026-10-23",
-    "hash": "612def02462928f6370857497865ae0390dcb8e094114fafb9f7197b44f33083",
+    "lastmod": "2026-11-11",
+    "hash": "9ce4a34005b154f0cbf78d1317bc2d1fbac44ae179f2e807ceb89a1f2d7afe25",
     "hashVersion": 2
   },
   "/checklists/appliance-opening-release/": {

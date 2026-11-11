@@ -40,7 +40,17 @@ const html = `<!doctype html>
   <a class="skip-link" href="#main">Skip to content</a><div data-site-header></div>
   <main id="main">
     <section class="page-hero visual-hub-hero"><div class="visual-hub-copy"><p class="breadcrumb"><a href="/">Home</a> / Tools</p><p class="eyebrow">Calculator hub</p><h1>Woodworking and Construction Calculators</h1><p class="lead">Choose a focused calculator for the job in front of you: plywood and cabinet parts, lumber and shop measurements, deck and fence materials, stairs, roof geometry, concrete, and finishing estimates. Every result is a starting point to verify before you buy or build.</p></div>${visualFigure("/assets/images/tools/tools-hero.webp", "Woodworking calculators represented by measured boards, plywood parts, hand tools, and a digital cut plan", { wide: true, eager: true })}</section>
-    <section class="section"><div class="grid tools">${card("Material & Cost Planning", "Estimate six practical panel jobs, review purchase allowances, then plan the actual cuts in CutList.", "/estimating/", "Start an estimate")}${card("Woodworking Tools", "Cut and layout, cabinet and furniture, wood species, sheet goods, board feet, material cost, and shop measurement tools.", "/tools/woodworking/", "Browse woodworking tools")}${card("Construction Tools", "Stairs, tile, deck, fence, wall, roof geometry, concrete, spacing, finish, and field-planning calculators.", "/tools/construction/", "Browse construction tools")}</div></section>
+    <section class="section" aria-labelledby="tools-task-title">
+      <div class="section-heading compact"><h2 id="tools-task-title">Find a tool for your task</h2></div>
+      <div class="related-grid">
+        <a href="/plywood-cut-calculator/"><strong>Lay out plywood parts</strong><em>See how panels fit on sheets.</em></a>
+        <a href="/cut-list-calculator/"><strong>Plan cuts along boards</strong><em>Fit part lengths into your stock.</em></a>
+        <a href="/cabinet-studio/"><strong>Design a cabinet</strong><em>Check a 3D model and export a cut list.</em></a>
+        <a href="/estimating/"><strong>Estimate material and cost</strong><em>Budget for panels and purchase allowances.</em></a>
+        <a href="/tools/woodworking/"><strong>Browse woodworking tools</strong><em>Joinery, drawers, shelves, and shop measurements.</em></a>
+        <a href="/tools/construction/"><strong>Browse construction tools</strong><em>Decks, fences, stairs, roofing, and more.</em></a>
+      </div>
+    </section>
     <section class="section">${visualHeading("Woodworking", "Cut lists, plywood, cabinets, lumber, and shop math.", "Start here when the material will be cut in the shop. Use the quick calculators for a first estimate, then move confirmed part dimensions into a sheet layout.", "/assets/images/tools/tools-cut-layout.webp", "Plywood sheets and cabinet parts organized around an efficient cutting layout")}<div class="grid tools">
       ${card("Joinery Lab", "Six interactive joint planners, eighteen bench guides, live diagrams and browser-local CSV/SVG/JSON records.", "/joinery-lab/", "Choose a joint")}
       ${card("Shelf Pin Studio", "Map paired cabinet sides, preserve a measured grid, skip hardware bands and export CSV/SVG hole references.", "/shelf-pin-layout/", "Lay out the holes")}
