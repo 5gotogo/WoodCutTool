@@ -178,7 +178,8 @@ const appSupportDirectory = [
   ["CounterFit", "/legal/CounterFit/privacy/", "/legal/CounterFit/support/"],
   ["FabricNest", "/legal/FabricNest/privacy/", "/legal/FabricNest/support/"],
   ["YarnFit", "/legal/YarnFit/privacy/", "/legal/YarnFit/support/"],
-  ["CushionCut", "/legal/CushionCut/privacy/", "/legal/CushionCut/support/"]
+  ["CushionCut", "/legal/CushionCut/privacy/", "/legal/CushionCut/support/"],
+  ["ReefRounds", "/legal/ReefRounds/privacy/", "/legal/ReefRounds/support/"]
 ];
 
 const featuredApps = [

@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-11-05",
-    "hash": "c1cc822ab2dea2558ff5c78405fcfa22da2aa295ad0ec947c303eba8be66ad5b",
+    "lastmod": "2026-11-13",
+    "hash": "fc97404169685d25802c85b13159c805aee35cc6fc505fe44bffea772a435d88",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -9732,6 +9732,16 @@
   "/legal/quiltfit/support/": {
     "lastmod": "2026-07-23",
     "hash": "228b6ffb171c8bf83dcdc4f1c5f3e140403dac570a6c20caf33cf123840a98d9",
+    "hashVersion": 2
+  },
+  "/legal/ReefRounds/privacy/": {
+    "lastmod": "2026-11-13",
+    "hash": "89bb6fcd3980015fe8488537cfcf892c096173f3858b19ecfefe5a09d7e6196e",
+    "hashVersion": 2
+  },
+  "/legal/ReefRounds/support/": {
+    "lastmod": "2026-11-13",
+    "hash": "76e5ae1c434561d5063434c6894d15f1142741350d1aeb5a9a749c1f0e951628",
     "hashVersion": 2
   },
   "/legal/ShelfPlanner/privacy/": {

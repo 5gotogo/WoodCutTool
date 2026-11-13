@@ -1930,6 +1930,8 @@ export const conversionRoutes = new Set([
   "/legal/PoolPilot/support/",
   "/legal/PrivateMind/privacy/",
   "/legal/PrivateMind/support/",
+  "/legal/ReefRounds/privacy/",
+  "/legal/ReefRounds/support/",
   "/legal/ShelfPlanner/privacy/",
   "/legal/ShelfPlanner/support/",
   "/legal/Spring/privacy/",
