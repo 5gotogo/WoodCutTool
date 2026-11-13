@@ -6,7 +6,7 @@
   },
   "/tools/": {
     "lastmod": "2026-11-13",
-    "hash": "a359411b9cbd6c58dca2db40df58a7747107975c3dd2b69f57462d97d148598f",
+    "hash": "77ade84160d74b0a22b89bf8e378256c08aa4e5f0293a8e573a4a67984b7c1fc",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -6064,6 +6064,61 @@
     "hash": "a47fd5dffa5eb79d360f1f0b6dadb122317c10e4a2fd7051bd761d97e915ae32",
     "hashVersion": 2
   },
+  "/built-in-scribe/": {
+    "lastmod": "2026-11-13",
+    "hash": "c9e70e330b06dc77e8aff590fe52387d7379352a2c71db0b91baccedd26ca562",
+    "hashVersion": 2
+  },
+  "/built-in-scribe/alcove-desk-filler-example/": {
+    "lastmod": "2026-11-13",
+    "hash": "2d8602c85555d096fd4ce5ebd373374eed9d402a41e8dc57ee51e99988e4f0b1",
+    "hashVersion": 2
+  },
+  "/built-in-scribe/allocate-left-and-right-fillers/": {
+    "lastmod": "2026-11-13",
+    "hash": "3ae28f76a8d228ce8028cd3ff3ed561a257a348b3bbb01aa90ec3c56858a4652",
+    "hashVersion": 2
+  },
+  "/built-in-scribe/budget-filler-blank-width/": {
+    "lastmod": "2026-11-13",
+    "hash": "f77ee7f51c7ecf75258620a0435723f077f807bd9f686718f48f82606a4698e1",
+    "hashVersion": 2
+  },
+  "/built-in-scribe/check-wall-side-door-clearance/": {
+    "lastmod": "2026-11-13",
+    "hash": "dc72dfff33194a0b6339330fff0d3c702706a67b58cf23c90d393c764c18d7cc",
+    "hashVersion": 2
+  },
+  "/built-in-scribe/dry-fit-and-recheck-the-filler/": {
+    "lastmod": "2026-11-13",
+    "hash": "42064e9e73f9535ebb6174cde8c1c756eaacf0b1c8521e887ca4344ae849517e",
+    "hashVersion": 2
+  },
+  "/built-in-scribe/measure-wall-gap-stations/": {
+    "lastmod": "2026-11-13",
+    "hash": "01355c987dfc0fd1fd2093dc8efe59a14fb38d3dedb3cb1554acf7cde9154f02",
+    "hashVersion": 2
+  },
+  "/built-in-scribe/read-wall-bow-and-taper/": {
+    "lastmod": "2026-11-13",
+    "hash": "e672720f956b31530b24c8427aa647b2e68edd95c28ed9b400c76ecc39947cfb",
+    "hashVersion": 2
+  },
+  "/built-in-scribe/release-and-handoff/": {
+    "lastmod": "2026-11-13",
+    "hash": "b4979265e50471b2979e155e4163c9baee843e3691f5b2b5c38b0f74c226eb29",
+    "hashVersion": 2
+  },
+  "/built-in-scribe/set-cabinet-datum/": {
+    "lastmod": "2026-11-13",
+    "hash": "088d481c2da7510e2ae629772c086b3ca261f73de2e3f1b6e609ab0a5d43dc9f",
+    "hashVersion": 2
+  },
+  "/built-in-scribe/transfer-scribe-to-template/": {
+    "lastmod": "2026-11-13",
+    "hash": "1708d4eae68585fe421cfc7fed989ca64b037f0728c3a08b13d85ef31ba66d2a",
+    "hashVersion": 2
+  },
   "/cabinet-cut-list-calculator/": {
     "lastmod": "2026-09-16",
     "hash": "5bf39129edd7d2204a1a7988e3063223db9fab8e3c497177f5948835d7d15c19",
@@ -7456,7 +7511,7 @@
   },
   "/furniture-fit/final-recess-and-installation/": {
     "lastmod": "2026-11-13",
-    "hash": "210cc7eefd42a4fd99d279f34de8ed7a1b9fc0e3ab41dcec5f0432ba99a5009a",
+    "hash": "28cb7419c6259bd9c34d2eae8325eb9e3b13112bb0ec718c7052e94a146ee532",
     "hashVersion": 2
   },
   "/furniture-fit/hall-cabinet-worked-example/": {
@@ -10776,7 +10831,7 @@
   },
   "/tools/woodworking/": {
     "lastmod": "2026-11-13",
-    "hash": "730d41cf5fa617700d68d837b96e621853844bedab1a57c286f321474ba123ac",
+    "hash": "8f2757257a00f0eed01c9809de5ba0cbc03ffbdc98ff68f930cfe1f4aaa41693",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

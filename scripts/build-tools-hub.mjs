@@ -46,6 +46,7 @@ const html = `<!doctype html>
         <a href="/plywood-cut-calculator/"><strong>Lay out plywood parts</strong><em>See how panels fit on sheets.</em></a>
         <a href="/cut-list-calculator/"><strong>Plan cuts along boards</strong><em>Fit part lengths into your stock.</em></a>
         <a href="/cabinet-studio/"><strong>Design a cabinet</strong><em>Check a 3D model and export a cut list.</em></a>
+        <a href="/built-in-scribe/"><strong>Fit a cabinet against an uneven wall</strong><em>Survey the wall and size a filler blank.</em></a>
         <a href="/furniture-fit/"><strong>Check a furniture delivery route</strong><em>Compare the piece with doors, lifts, and recesses.</em></a>
         <a href="/estimating/"><strong>Estimate material and cost</strong><em>Budget for panels and purchase allowances.</em></a>
         <a href="/tools/woodworking/"><strong>Browse woodworking tools</strong><em>Joinery, drawers, shelves, and shop measurements.</em></a>
@@ -121,6 +122,7 @@ const woodworkingGroups = [
   ] },
   { eyebrow: "Cabinet & Furniture", title: "Cabinet and furniture tools", description: "Generate cabinet, drawer, door, shelf, molding, and furniture planning dimensions.", cards: [
     { name: "Joinery Lab", description: "Dado, rabbet, half-lap, mortise-and-tenon, dowel and box-joint planners with eighteen field guides.", href: "/joinery-lab/" },
+    { name: "Built-in Cabinet Scribing", description: "Survey wall gaps, size filler blanks with explicit allowances, and follow ten field guides.", href: "/built-in-scribe/" },
     { name: "Furniture Fit & Delivery", description: "Check a measured route through doors, lifts and recesses. Includes ten survey and handoff guides.", href: "/furniture-fit/" },
     { name: "Door Installation Studio", description: "Multi-door schedule, cup-circle checks, keep-outs, measured reveals and twelve installation field guides.", href: "/door-installation/" },
     { name: "Drawer Fit Studio", description: "Three-station slide-space checks, butt-joint box parts, equal fronts and ten field guides.", href: "/drawer-fit/" },

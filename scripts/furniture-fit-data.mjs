@@ -73,7 +73,8 @@ export const chapters = [
       ["Use the correct envelope for placement", "The packaged, wrapped and installed sizes can differ. Export the carry route before creating a separate plan for the installed piece when the envelopes differ. For a rectangular recess, select the installed orientation and check all three axes. In the sample, 455 mm of depth minus 440 mm of cabinet gives 15 mm of gap, which is 5 mm below the entered allowance."],
       ["Review setup and use", "Measure the room needed to approach and position the piece, add or adjust feet, open doors and drawers, and reach service points. If the piece must tip upright under a ceiling or move sideways into a recess, record that movement for field review."]
     ],
-    exercise: "Mark the shallowest point in the recess and the reason for it. Make a separate note for the first door or drawer that needs to open after installation."
+    exercise: "Mark the shallowest point in the recess and the reason for it. Make a separate note for the first door or drawer that needs to open after installation.",
+    link: ["/built-in-scribe/", "Survey the wall for cabinet fillers"]
   },
   {
     slug: "plan-modules-for-delivery", group: "Decide", title: "Design furniture around a smaller carry envelope",

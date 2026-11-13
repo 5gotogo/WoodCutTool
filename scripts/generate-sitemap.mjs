@@ -96,7 +96,7 @@ function sitemapMeta(route) {
     return { changefreq: "weekly", priority: "0.96" };
   }
 
-  if (route === "/solid-wood-milling/" || route === "/drawer-fit/" || route === "/joinery-lab/" || route === "/shelf-pin-layout/" || route === "/glue-up/" || route === "/assembly-check/" || route === "/cabinet-studio/" || route === "/edge-banding/" || route === "/finishing-planner/" || route === "/wood-movement/") {
+  if (route === "/built-in-scribe/" || route === "/solid-wood-milling/" || route === "/drawer-fit/" || route === "/joinery-lab/" || route === "/shelf-pin-layout/" || route === "/glue-up/" || route === "/assembly-check/" || route === "/cabinet-studio/" || route === "/edge-banding/" || route === "/finishing-planner/" || route === "/wood-movement/") {
     return { changefreq: "monthly", priority: "0.94" };
   }
 
@@ -367,7 +367,7 @@ const explicitToolRoutes = new Set([
 ]);
 
 function sitemapGroup(route) {
-  if (["/furniture-fit/", "/offcut-planner/", "/door-installation/", "/workshop-atlas/", "/estimating/"].some(prefix => route.startsWith(prefix))) return "tools";
+  if (["/built-in-scribe/", "/furniture-fit/", "/offcut-planner/", "/door-installation/", "/workshop-atlas/", "/estimating/"].some(prefix => route.startsWith(prefix))) return "tools";
   if (route.startsWith("/solid-wood-milling/") || route.startsWith("/drawer-fit/") || route.startsWith("/joinery-lab/") || route.startsWith("/shelf-pin-layout/") || explicitToolRoutes.has(route) || route.startsWith("/tools/") || route.startsWith("/glue-up/") || route.startsWith("/assembly-check/") || route.startsWith("/edge-banding/") || route.startsWith("/finishing-planner/") || route.startsWith("/wood-movement/")) return "tools";
   if (route.startsWith("/projects/") || route.startsWith("/one-sheet-projects/")) return "projects";
   if (route.startsWith("/learn/") || route.startsWith("/guides/")) return "learn";
