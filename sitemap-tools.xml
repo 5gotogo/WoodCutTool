@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-11-11</lastmod><changefreq>weekly</changefreq><priority>0.96</priority>
+  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-11-13</lastmod><changefreq>weekly</changefreq><priority>0.96</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-hero.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-cut-layout.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/compare/compare-construction.webp</image:loc></image:image>
@@ -95,6 +95,17 @@
   <url><loc>https://woodcuttool.com/finishing-planner/finish-plan-before-assembly/</loc><lastmod>2026-10-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/finishing-planner/surface-area-from-cut-list/</loc><lastmod>2026-10-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/fraction-calculator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/furniture-fit/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/furniture-fit/delivery-handoff-checklist/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/furniture-fit/doorway-clear-opening/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/furniture-fit/final-recess-and-installation/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/furniture-fit/hall-cabinet-worked-example/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/furniture-fit/lift-door-and-cabin/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/furniture-fit/measure-the-carry-envelope/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/furniture-fit/plan-modules-for-delivery/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/furniture-fit/straight-passage-and-orientation/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/furniture-fit/turns-stairs-and-landings/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/furniture-fit/walk-the-delivery-route/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/glue-up/</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
   <url><loc>https://woodcuttool.com/glue-up/open-and-total-assembly-time/</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/glue-up/rehearse-and-split-batches/</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -194,7 +205,7 @@
   <url><loc>https://woodcuttool.com/tools/construction/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/compare/compare-construction.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/learn/stair-planning.webp</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/tools/woodworking/</loc><lastmod>2026-11-04</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+  <url><loc>https://woodcuttool.com/tools/woodworking/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-cut-layout.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-cabinet.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-measurement.webp</image:loc></image:image></url>

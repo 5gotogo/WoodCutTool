@@ -5,8 +5,8 @@
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-11-11",
-    "hash": "83684862da224be20d8daa1fc65ee19109704fedee1383c2e3d64b78317040f2",
+    "lastmod": "2026-11-13",
+    "hash": "a359411b9cbd6c58dca2db40df58a7747107975c3dd2b69f57462d97d148598f",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -7439,6 +7439,61 @@
     "hash": "f249b4e50903ca94911ff4db102b7f313dac30a78cb072ab97aea9bc376fbd7b",
     "hashVersion": 2
   },
+  "/furniture-fit/": {
+    "lastmod": "2026-11-13",
+    "hash": "1923a1201cf13f3a3963d0988e90c59bd37a8a73e0692c304def89a4263b14a9",
+    "hashVersion": 2
+  },
+  "/furniture-fit/delivery-handoff-checklist/": {
+    "lastmod": "2026-11-13",
+    "hash": "29da73b899c97ef0d3681d7035e76a7a847712e26f2a35297f487bd2a1fd9060",
+    "hashVersion": 2
+  },
+  "/furniture-fit/doorway-clear-opening/": {
+    "lastmod": "2026-11-13",
+    "hash": "06d6b66b0281aea72c958409a6a9ec7fa6949f08738e82a8eda6351faf276869",
+    "hashVersion": 2
+  },
+  "/furniture-fit/final-recess-and-installation/": {
+    "lastmod": "2026-11-13",
+    "hash": "210cc7eefd42a4fd99d279f34de8ed7a1b9fc0e3ab41dcec5f0432ba99a5009a",
+    "hashVersion": 2
+  },
+  "/furniture-fit/hall-cabinet-worked-example/": {
+    "lastmod": "2026-11-13",
+    "hash": "0e8ab638824e2b0f183cad999c59ce24ca50d4e955772e8e05cc3e90953febe7",
+    "hashVersion": 2
+  },
+  "/furniture-fit/lift-door-and-cabin/": {
+    "lastmod": "2026-11-13",
+    "hash": "280e60a81fea6ab29f2ae76562e7713220e5cd4a7a4ac218878c8cd80439471e",
+    "hashVersion": 2
+  },
+  "/furniture-fit/measure-the-carry-envelope/": {
+    "lastmod": "2026-11-13",
+    "hash": "ca6f4cbc70b4558893ebd1338cc00c992678878ca4c1bef1efc52bc23f06f9f2",
+    "hashVersion": 2
+  },
+  "/furniture-fit/plan-modules-for-delivery/": {
+    "lastmod": "2026-11-13",
+    "hash": "cc2bf2215f2f41e1327b593ba0efd19e7b551296aec4008a49c707b5da517a27",
+    "hashVersion": 2
+  },
+  "/furniture-fit/straight-passage-and-orientation/": {
+    "lastmod": "2026-11-13",
+    "hash": "7de0cb1d6957ae417a82db5346a855e1174abe211f88be93501a892ead5823ef",
+    "hashVersion": 2
+  },
+  "/furniture-fit/turns-stairs-and-landings/": {
+    "lastmod": "2026-11-13",
+    "hash": "d85149dccf82ccc982a515226cb99a91005dae47480076f635ed2007426f31b2",
+    "hashVersion": 2
+  },
+  "/furniture-fit/walk-the-delivery-route/": {
+    "lastmod": "2026-11-13",
+    "hash": "9fdb4334ef5f1b689f2842004f050b403578b8dcc563e7916900d072751fde4c",
+    "hashVersion": 2
+  },
   "/glossary/4x8-sheet/": {
     "lastmod": "2026-07-23",
     "hash": "78a30ad644ca43ae866af4c17b129ae4ae85da68ad119fd5024bd22bf02532d7",
@@ -10720,8 +10775,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-11-04",
-    "hash": "3b116d2b0d0646184c2dc476b9e5995257f57fb1fd74bc52e6eb37c170a2b97d",
+    "lastmod": "2026-11-13",
+    "hash": "730d41cf5fa617700d68d837b96e621853844bedab1a57c286f321474ba123ac",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

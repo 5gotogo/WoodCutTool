@@ -367,7 +367,7 @@ const explicitToolRoutes = new Set([
 ]);
 
 function sitemapGroup(route) {
-  if (["/offcut-planner/", "/door-installation/", "/workshop-atlas/", "/estimating/"].some(prefix => route.startsWith(prefix))) return "tools";
+  if (["/furniture-fit/", "/offcut-planner/", "/door-installation/", "/workshop-atlas/", "/estimating/"].some(prefix => route.startsWith(prefix))) return "tools";
   if (route.startsWith("/solid-wood-milling/") || route.startsWith("/drawer-fit/") || route.startsWith("/joinery-lab/") || route.startsWith("/shelf-pin-layout/") || explicitToolRoutes.has(route) || route.startsWith("/tools/") || route.startsWith("/glue-up/") || route.startsWith("/assembly-check/") || route.startsWith("/edge-banding/") || route.startsWith("/finishing-planner/") || route.startsWith("/wood-movement/")) return "tools";
   if (route.startsWith("/projects/") || route.startsWith("/one-sheet-projects/")) return "projects";
   if (route.startsWith("/learn/") || route.startsWith("/guides/")) return "learn";
