@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://woodcuttool.com/apps/</loc><lastmod>2026-11-13</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://woodcuttool.com/apps/</loc><lastmod>2026-11-14</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>
   <url><loc>https://woodcuttool.com/apps/cutlist/</loc><lastmod>2026-09-02</lastmod><changefreq>weekly</changefreq><priority>0.95</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/apps/cutlist/cutlist-layout-stats.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/apps/cutlist/cutlist-layout.webp</image:loc></image:image>
@@ -29,11 +29,12 @@
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/26/80/31/2680319f-a3f4-af16-3541-fce9a86bba1a/01-APP_IPHONE_67.png/360x780bb.jpg</image:loc></image:image>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/05/ea/c4/05eac44b-1d2c-eaf0-9f30-48cafcaeeaf5/02-APP_IPHONE_67.png/360x780bb.jpg</image:loc></image:image>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ec/5f/d6/ec5fd6a3-011e-82d4-28ca-10d55ea62021/03-APP_IPHONE_67.png/360x780bb.jpg</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/apps/ductlab-hvac-duct-layout/</loc><lastmod>2026-11-03</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
+  <url><loc>https://woodcuttool.com/apps/ductlab-hvac-duct-layout/</loc><lastmod>2026-11-14</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/08/d8/d6/08d8d6c8-f67b-900e-f5be-be4da91725c5/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/160x160bb.jpg</image:loc></image:image>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/17/35/1c173553-ebe3-f887-781e-0cea15c57bce/1.png/360x780bb.jpg</image:loc></image:image>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/02/1c/80/021c8074-8f4f-4384-99c3-9abd7cdeaf90/2.png/360x780bb.jpg</image:loc></image:image>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d1/43/20/d1432011-9c1e-2b9f-660b-bba99a4d964b/3.png/360x780bb.jpg</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/apps/ductlab-hvac-duct-layout/square-to-round-example/</loc><lastmod>2026-11-14</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
   <url><loc>https://woodcuttool.com/apps/expensereportmaker-and-receipts/</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>
     <image:image><image:loc>https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/30/e7/4f30e7c0-0d24-7790-2bee-b022ee71e4c7/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/160x160bb.jpg</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/apps/export-backup-all-contacts-pro/</loc><lastmod>2026-10-08</lastmod><changefreq>monthly</changefreq><priority>0.65</priority>

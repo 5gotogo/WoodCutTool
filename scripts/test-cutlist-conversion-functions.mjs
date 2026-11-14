@@ -50,9 +50,17 @@ try {
     const response = await redirectAppStore({ request: productRequest });
     assert.equal(response.headers.get("location"), "https://apps.apple.com/us/app/id6812760878?uo=4");
   }
+  const ductLabRequest = new Request("https://woodcuttool.com/go/app-store/?product=/us/app/ductlab-hvac-duct-layout/id6804225465");
+  ductLabRequest.cf = { country: "CN" };
+  const ductLabChinaUrl = "https://apps.apple.com/cn/app/ductlab-%E9%A3%8E%E7%AE%A1%E6%94%BE%E6%A0%B7%E4%B8%8E%E4%BC%B0%E7%AE%97/id6804225465";
+  probeStatus = 200;
+  const ductLabRedirect = await redirectAppStore({ request: ductLabRequest });
+  assert.equal(ductLabRedirect.status, 302);
+  assert.equal(ductLabRedirect.headers.get("location"), ductLabChinaUrl);
   assert.deepEqual(probes, [
     ...Array(4).fill("https://apps.apple.com/cn/app/id6812760878"),
     "https://apps.apple.com/cn/app/cutlist-plywood-optimizer/id6768171871",
+    ductLabChinaUrl,
   ]);
 } finally {
   globalThis.fetch = originalFetch;

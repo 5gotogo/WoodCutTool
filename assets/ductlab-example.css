@@ -1,0 +1,147 @@
+.ductlab-worked {
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: clamp(16px, 3vw, 36px) 16px 48px;
+}
+.ductlab-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  padding: clamp(16px, 2.2vw, 28px);
+}
+.ductlab-intro {
+  background: linear-gradient(135deg, var(--surface), var(--surface-2));
+}
+.ductlab-intro h1 {
+  max-width: 19ch;
+  margin-block: 8px 14px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.09;
+  text-wrap: balance;
+}
+.ductlab-intro .lead, .ductlab-block > p, .ductlab-block > ol, .ductlab-close > p {
+  max-width: 76ch;
+}
+.ductlab-block {
+  margin-block: clamp(28px, 5vw, 54px);
+  scroll-margin-top: calc(var(--site-header-height) + 16px);
+}
+.ductlab-block h2, .ductlab-close h2 {
+  margin-block: 0 12px;
+  line-height: 1.2;
+}
+.ductlab-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.ductlab-fittings h3 {
+  margin: 0 0 6px;
+  color: var(--ink);
+}
+.ductlab-fittings .ductlab-card p, .ductlab-store-note {
+  color: var(--muted);
+}
+.ductlab-fittings .ductlab-card p {
+  margin: 0;
+}
+.ductlab-example-card {
+  display: block;
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
+.ductlab-example-card strong {
+  display: block;
+  margin-top: 14px;
+}
+.ductlab-example-card:hover {
+  text-decoration: none;
+}
+.ductlab-example-card:hover strong, .ductlab-store-note a {
+  text-decoration: underline;
+}
+.ductlab-store-note {
+  margin: 12px 0 0;
+  font-size: .9rem;
+}
+.ductlab-specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 145px), 1fr));
+  gap: 8px;
+}
+.ductlab-specs div {
+  background: var(--surface-2);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.ductlab-specs dt, .ductlab-pattern figcaption span {
+  color: var(--muted);
+  font-size: .85rem;
+}
+.ductlab-specs dd {
+  margin: 0;
+  font-weight: 700;
+}
+.ductlab-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+.ductlab-table caption {
+  margin-bottom: 8px;
+  text-align: left;
+  font-weight: 800;
+}
+.ductlab-table :is(th, td) {
+  padding: 6px;
+  text-align: right;
+  border-bottom: 1px solid var(--line);
+}
+.ductlab-table :is(th, td):first-child {
+  text-align: left;
+}
+.ductlab-table thead {
+  background: var(--surface-2);
+  font-size: .85rem;
+}
+.ductlab-pattern {
+  margin: 0;
+}
+.ductlab-pattern figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 6px 12px;
+}
+.ductlab-pattern svg {
+  display: block;
+  margin: 8px auto 0;
+  max-width: 100%;
+  height: auto;
+}
+.ductlab-pattern polygon {
+  fill: var(--surface-2);
+  stroke: var(--accent);
+  stroke-width: 1.5;
+}
+.ductlab-guides {
+  stroke: var(--muted);
+  stroke-dasharray: 4 3;
+}
+.ductlab-pattern :is(circle, text) {
+  fill: var(--ink);
+}
+.ductlab-pattern text {
+  text-anchor: middle;
+  font-size: 11px;
+  font-weight: 700;
+}
+.ductlab-note {
+  border-inline-start: 3px solid var(--accent);
+  padding-inline-start: 12px;
+}
+@media (max-width: 640px) {
+  .ductlab-grid { grid-template-columns: minmax(0, 1fr); }
+  .ductlab-worked .button { white-space: normal; min-height: 44px; }
+}

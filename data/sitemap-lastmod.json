@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-11-13",
-    "hash": "fc97404169685d25802c85b13159c805aee35cc6fc505fe44bffea772a435d88",
+    "lastmod": "2026-11-14",
+    "hash": "b4ebbfe4a6b0542052ed64f39c86cdaa69870089f6cb15ca2a0342b6f466624b",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -780,8 +780,13 @@
     "hashVersion": 2
   },
   "/apps/ductlab-hvac-duct-layout/": {
-    "lastmod": "2026-11-03",
-    "hash": "7298d933a5fbe165044337bcbb0b1ddf63fae10546bcf61dee05f7f3f73bbb43",
+    "lastmod": "2026-11-14",
+    "hash": "12b65958f889035cb21fec8eb84cbc3e33e2914ae192f6639a92439db8139126",
+    "hashVersion": 2
+  },
+  "/apps/ductlab-hvac-duct-layout/square-to-round-example/": {
+    "lastmod": "2026-11-14",
+    "hash": "8b94b3031bab8148d67f66de0cd850f0b3555763217fd5be15117c4af2946899",
     "hashVersion": 2
   },
   "/apps/expensereportmaker-and-receipts/": {
@@ -9640,8 +9645,8 @@
     "hashVersion": 2
   },
   "/legal/DuctLab/support/": {
-    "lastmod": "2026-08-22",
-    "hash": "9183c156bedce7a59acb004b67b50e4bbb9f2f99dd3435d8687003661f2aca88",
+    "lastmod": "2026-11-14",
+    "hash": "61b7022015668073bc5ca339db0a5c514634aea33aae11490ce70bb3da2366a7",
     "hashVersion": 2
   },
   "/legal/FabricNest/privacy/": {

@@ -130,6 +130,7 @@ export const conversionRoutes = new Set([
   "/apps/cushioncut-fabric-foam/",
   "/apps/cutlist/",
   "/apps/ductlab-hvac-duct-layout/",
+  "/apps/ductlab-hvac-duct-layout/square-to-round-example/",
   "/apps/expensereportmaker-and-receipts/",
   "/apps/export-backup-all-contacts-pro/",
   "/apps/fabricnest-fabric-planner/",

@@ -4,10 +4,12 @@ import { fileURLToPath } from "node:url";
 import { ogTags } from "./seo-meta.mjs";
 import { compareData } from "./app-compare-data.mjs";
 import { appStoreThumbnail, appStoreScreenshotSources } from "./app-store-images.mjs";
+import { chinaStoreLink, ductLabLead, ductLabSlug, ductLabStylesheet, fittingOverview, squareToRoundPage, squareToRoundPath } from "./ductlab-square-to-round.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
-const apps = JSON.parse(readFileSync(join(root, "data", "app-store-apps.json"), "utf8"));
+const apps = JSON.parse(readFileSync(join(root, "data", "app-store-apps.json"), "utf8"))
+  .map(app => app.slug === ductLabSlug ? { ...app, url: app.url.split("?")[0] } : app);
 const appStoreReviews = JSON.parse(readFileSync(join(root, "data", "app-store-reviews.json"), "utf8"));
 
 function escapeHtml(value) {
@@ -845,17 +847,20 @@ function appDetailPage(app, index) {
   const canonical = `https://woodcuttool.com${detailHref(app)}`;
   const isAlias = detailHref(app) !== `/apps/${app.slug}/`;
   const legalLinks = legalLinksBySlug[app.slug];
-  const secondaryAction = app.slug === "tinnitus-relief-sound-masking"
+  const isDuctLab = app.slug === ductLabSlug;
+  const secondaryAction = isDuctLab
+    ? `<a class="button secondary" href="${squareToRoundPath}">See a square-to-round example</a>`
+    : app.slug === "tinnitus-relief-sound-masking"
     ? '<a class="button secondary" href="/tinnitus/">Explore the sound masking guide</a>'
     : '<a class="button secondary" href="/apps/">Back to apps</a>';
   return `<!doctype html>
 <html lang="en">
 ${head({
     title: seoTitle(app.name),
-    description: excerpt(app.description, 155),
+    description: isDuctLab ? ductLabLead : excerpt(app.description, 155),
     canonical,
     jsonLd: appDetailJsonLd(app, canonical)
-  })}
+  }).replace("</head>", isDuctLab ? `  ${ductLabStylesheet}\n</head>` : "</head>")}
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   ${header("Apps")}
@@ -866,29 +871,35 @@ ${head({
         <div class="app-title-row">
           <img class="app-detail-icon" src="${escapeHtml(appStoreThumbnail(app.artworkUrl512, 160))}" width="76" height="76" alt="${escapeHtml(app.name)} app icon" decoding="async">
           <div>
-            <p class="eyebrow">${escapeHtml(app.genre)}</p>
+            <p class="eyebrow">${isDuctLab ? "HVAC sheet-metal fabrication" : escapeHtml(app.genre)}</p>
             <h1>${escapeHtml(app.name)}</h1>
           </div>
         </div>
-        <p class="lead">${escapeHtml(excerpt(app.description, 220))}</p>
+        <p class="lead">${escapeHtml(isDuctLab ? ductLabLead : excerpt(app.description, 220))}</p>
         <div class="app-detail-actions">
           <a class="button" href="${escapeHtml(app.url)}" rel="noopener noreferrer">Download on App Store</a>
           ${secondaryAction}
-        </div>
+        </div>${isDuctLab ? `\n        <p class="ductlab-store-note">An active subscription is required to use the app. ${chinaStoreLink}</p>` : ""}
       </div>
       ${detailVisual(app, index)}
     </section>
-    <section class="app-detail-layout">
+${isDuctLab ? `${fittingOverview()}\n` : ""}    <section class="app-detail-layout">
       <article class="app-description-panel">
-        <p class="eyebrow">App Store description</p>
+        <p class="eyebrow">${isDuctLab ? "From fitting to job packet" : "App Store description"}</p>
         <h2>What it does</h2>
-        ${descriptionBlocks(app.description, { stripStandaloneUrls: Boolean(legalLinks) })}
+        ${isDuctLab ? `<h3>Lay out and save each fitting</h3>
+        <p>Enter real opening sizes in Imperial or Metric units and review measurements, a fitting diagram, and ordered layout steps. Imperial input accepts fractional inches. Save quantities and seam allowances per part, or duplicate a fitting to keep the original while you work through a revision.</p>
+        <h3>Estimate sheet stock and cost</h3>
+        <p>Group fittings under a job number, add a waste allowance, and estimate sheet count and cost from your stock size. Check the estimated sheet count against the way you will actually arrange parts on the stock.</p>
+        <h3>Share a fabrication PDF</h3>
+        <p>Export a job packet with part dimensions, diagrams, measurements, quantities, and fabrication steps. Projects and calculations stay on your iPhone; share or print a PDF through the system share sheet when you choose. No account is required.</p>`
+    : descriptionBlocks(app.description, { stripStandaloneUrls: Boolean(legalLinks) })}
       </article>
       <aside class="app-meta-panel">
         <h2>App details</h2>
         <dl>
           <div><dt>Category</dt><dd>${escapeHtml(app.genre)}</dd></div>
-          <div><dt>Price</dt><dd>${escapeHtml(app.formattedPrice || "App Store")}</dd></div>
+          <div><dt>Price</dt><dd>${isDuctLab ? "Free download; subscription required" : escapeHtml(app.formattedPrice || "App Store")}</dd></div>
           <div><dt>Version</dt><dd>${escapeHtml(app.version || "Current")}</dd></div>
           <div><dt>Rating</dt><dd>${escapeHtml(app.trackContentRating || "App Store")}</dd></div>
           <div><dt>Minimum iOS</dt><dd>${escapeHtml(app.minimumOsVersion || "See App Store")}</dd></div>${release ? `
@@ -940,6 +951,13 @@ apps.forEach((app, index) => {
     rmSync(slugDir, { recursive: true, force: true });
   }
 });
+
+const ductLab = appBySlug.get(ductLabSlug);
+if (ductLab) {
+  const exampleDir = join(root, squareToRoundPath);
+  mkdirSync(exampleDir, { recursive: true });
+  writeFileSync(join(exampleDir, "index.html"), squareToRoundPage({ head, header, footer, app: ductLab }));
+}
 
 for (const slug of handWrittenOverrideSlugs) {
   const app = appBySlug.get(slug);
