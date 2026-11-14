@@ -2221,7 +2221,7 @@ export const blogBatch20260630 = [
       sources: [
         ["Pantry Label Maker app for iPhone", "/apps/pantry-label-maker-kitchen/", "Create clean, consistent kitchen labels and reprint as your pantry changes."],
         ["Pantry Label Maker vs masking tape and a marker", "/apps/compare/pantry-label-maker-vs-masking-tape-and-marker/", "Internal comparison of printed labels versus tape and marker."],
-        ["SnapLabel home organization labels", "/blog/snaplabel-home-organization-labels/", "Internal guide to photo-based labels for home organization."]
+        ["Labelary home organization labels", "/blog/snaplabel-home-organization-labels/", "Internal guide to photo-based labels for home organization."]
       ]
     }
   },
@@ -2275,7 +2275,7 @@ export const blogBatch20260630 = [
   },
   {
     slug: "label-storage-bins-from-a-photo-snaplabel",
-    category: "SnapLabel",
+    category: "Labelary",
     title: "Labeling Storage Bins From a Photo for Instant Organization",
     description: "How photo-based labels make storage bins instantly identifiable: turning a snapshot of the contents into a clear printed label for garages, closets, and seasonal bins.",
     kicker: "Photo labels",
@@ -2287,7 +2287,7 @@ export const blogBatch20260630 = [
       ["Combine Photo And Text", "The strongest labels often pair a photo with a short text caption, the image for instant recognition, the text for specifics like a date or location. A bin photo of folded sweaters plus winter, hall closet leaves no doubt. Combining the two covers both the quick glance and the precise detail."],
       ["Great For Seasonal And Garage Storage", "Photo labels shine where bins are stored long-term and accessed occasionally: garage shelves, seasonal decorations, attic totes, basement storage. These are exactly the places where you forget what is in which bin between uses. A photo label means you do not have to open three bins to find the one you want."],
       ["Batch Label A Whole Storage Area", "Organizing a garage or closet means labeling many bins at once. Being able to make labels quickly, from photos, in a batch, turns a daunting organization project into an afternoon. Consistent photo labels across a storage area create a system you can navigate at a glance, long after you have forgotten the details."],
-      ["Make Photo Labels Easily", "Turning a photo into a printed label used to be fiddly; a dedicated app makes it quick. SnapLabel turns a photo, with optional text, into a clean printable label, so you can label storage bins by their actual contents and batch a whole storage area. The result is storage you can read at a glance instead of a wall of mystery boxes."]
+      ["Make Photo Labels Easily", "Turning a photo into a printed label used to be fiddly; a dedicated app makes it quick. Labelary turns a photo, with optional text, into a clean printable label, so you can label storage bins by their actual contents and batch a whole storage area. The result is storage you can read at a glance instead of a wall of mystery boxes."]
     ],
     checklist: ["Use a photo of the contents on hard-to-tell bins.", "Let an image identify a bin at a glance.", "Pair a photo with short text for specifics.", "Photo-label seasonal and garage storage.", "Batch label a whole storage area at once."],
     deepDive: {
@@ -2311,13 +2311,13 @@ export const blogBatch20260630 = [
         ["Should I use a photo or text on labels?", "Both is often best: the photo for instant recognition and a short text caption for specifics like a date or storage location."],
         ["Where do photo labels help most?", "On long-term, occasionally accessed storage, garage shelves, seasonal bins, attic totes, where you forget what is in which bin between uses."],
         ["Can I label many bins at once?", "Yes. Making labels quickly from photos in a batch turns organizing a whole garage or closet into an afternoon project."],
-        ["How do I make a label from a photo?", "SnapLabel turns a photo, with optional text, into a clean printable label, so you can label bins by their actual contents."],
+        ["How do I make a label from a photo?", "Labelary turns a photo, with optional text, into a clean printable label, so you can label bins by their actual contents."],
         ["Are photo labels better than text for storage?", "For visually distinct contents, yes, an image is recognized faster than words, especially across a wall of similar bins."]
       ],
       sources: [
-        ["SnapLabel app for iPhone", "/apps/snaplabel-photo-text-label/", "Turn a photo with optional text into a clean printable label, in batches."],
-        ["SnapLabel home organization labels", "/blog/snaplabel-home-organization-labels/", "Internal guide to photo labels for home organization."],
-        ["SnapLabel vs handwritten labels", "/apps/compare/snaplabel-vs-handwritten-labels/", "Internal comparison of printed and handwritten labels."]
+        ["Labelary app for iPhone", "/apps/snaplabel-photo-text-label/", "Turn a photo with optional text into a clean printable label, in batches."],
+        ["Labelary home organization labels", "/blog/snaplabel-home-organization-labels/", "Internal guide to photo labels for home organization."],
+        ["Labelary vs handwritten labels", "/apps/compare/snaplabel-vs-handwritten-labels/", "Internal comparison of printed and handwritten labels."]
       ]
     }
   },

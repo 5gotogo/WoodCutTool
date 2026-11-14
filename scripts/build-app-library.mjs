@@ -8,8 +8,7 @@ import { chinaStoreLink, ductLabLead, ductLabSlug, ductLabStylesheet, fittingOve
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
-const apps = JSON.parse(readFileSync(join(root, "data", "app-store-apps.json"), "utf8"))
-  .map(app => app.slug === ductLabSlug ? { ...app, url: app.url.split("?")[0] } : app);
+const apps = JSON.parse(readFileSync(join(root, "data", "app-store-apps.json"), "utf8"));
 const appStoreReviews = JSON.parse(readFileSync(join(root, "data", "app-store-reviews.json"), "utf8"));
 
 function escapeHtml(value) {
@@ -806,6 +805,7 @@ function appDetailJsonLd(app, canonical) {
         "@type": "SoftwareApplication",
         "@id": `${canonical}#software`,
         name: app.name,
+        alternateName: app.alternateName,
         url: canonical,
         sameAs: app.url,
         description: excerpt(app.description, 220),
@@ -876,7 +876,7 @@ ${head({
           </div>
         </div>
         <p class="lead">${escapeHtml(isDuctLab ? ductLabLead : excerpt(app.description, 220))}</p>
-        <div class="app-detail-actions">
+        ${app.storeNameNote ? `<p>${escapeHtml(app.storeNameNote)}</p>\n        ` : ""}<div class="app-detail-actions">
           <a class="button" href="${escapeHtml(app.url)}" rel="noopener noreferrer">Download on App Store</a>
           ${secondaryAction}
         </div>${isDuctLab ? `\n        <p class="ductlab-store-note">An active subscription is required to use the app. ${chinaStoreLink}</p>` : ""}

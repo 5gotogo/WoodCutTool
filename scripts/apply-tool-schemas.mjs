@@ -12,6 +12,7 @@ const appStoreReviews = JSON.parse(
   readFileSync(join(root, "data", "app-store-reviews.json"), "utf8")
 );
 const appStoreAppsBySlug = new Map(appStoreApps.map((app) => [app.slug, app]));
+const cutlist = appStoreAppsBySlug.get("cutlist-plywood-optimizer");
 
 const organization = {
   "@type": "Organization",
@@ -43,15 +44,15 @@ const softwareTools = [
   {
     path: "/apps/cutlist/",
     file: "apps/cutlist/index.html",
-    name: "CutList: Plywood Optimizer",
+    name: cutlist.name,
     subCategory: "Cut list optimizer",
     operatingSystem: "iOS",
     description: "Offline iPhone cut list optimizer for plywood layout planning, cut optimization, material saving, kerf settings, saved projects, and PDF export.",
     keywords: ["cut list optimizer", "plywood layout planning", "woodworking calculator", "material saving", "reduce wood waste"],
     features: ["Cut optimization", "Plywood layout planning", "Saw kerf settings", "Material waste review", "Saved local projects", "PDF export"],
     audience: "Woodworkers, cabinet makers, carpenters, DIY builders, and small shops",
-    offerUrl: "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871",
-    downloadUrl: "https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871",
+    offerUrl: cutlist.url,
+    downloadUrl: cutlist.url,
     // These reviews are visibly rendered on this page from the same source.
     // Do not turn them into an aggregateRating: the source data is a selected
     // review feed, not a complete count of every App Store rating.
@@ -437,6 +438,9 @@ function softwareSchema(tool, { includeReviews = false } = {}) {
 
   if (tool.downloadUrl) {
     schema.downloadUrl = tool.downloadUrl;
+    schema.sameAs = tool.downloadUrl;
+    const app = appStoreAppsBySlug.get(tool.appStoreReviewSlug);
+    if (app?.sellerName) schema.author = { "@type": "Person", name: app.sellerName };
   }
 
   if (includeReviews) {

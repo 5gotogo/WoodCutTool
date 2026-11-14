@@ -51,12 +51,12 @@
   },
   "/apps/": {
     "lastmod": "2026-11-14",
-    "hash": "b4ebbfe4a6b0542052ed64f39c86cdaa69870089f6cb15ca2a0342b6f466624b",
+    "hash": "f9de271ac0a23cfd320f3f5241647d4c63121193587ffdf86f062acd1245a60c",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
-    "lastmod": "2026-09-02",
-    "hash": "7281e022aca330a16f79056d62229dc7738e6b0719bbebe6696051d51c7a461f",
+    "lastmod": "2026-11-14",
+    "hash": "76496ed25b7db40e50bdaab8fe5b8c600e50decac2271fa6b8ca4acf38e9b37e",
     "hashVersion": 2
   },
   "/apps/quiltfit/": {
@@ -115,8 +115,8 @@
     "hashVersion": 2
   },
   "/blog/": {
-    "lastmod": "2026-10-27",
-    "hash": "87f09b8632cc8fd5cdffdd9d780e6f94f30059760e87333996cb92638b84c81c",
+    "lastmod": "2026-11-14",
+    "hash": "d49976701e2a145dbe29f631435f9bf7f68c7a2c25a2e425a1e8f02285e0b577",
     "hashVersion": 2
   },
   "/privacy-policy/": {
@@ -190,28 +190,28 @@
     "hashVersion": 2
   },
   "/apps/compare/": {
-    "lastmod": "2026-07-23",
-    "hash": "d675ad77189450d2bb074bf2cc19e464a8931fdea8519035451cda9128f4eb0d",
+    "lastmod": "2026-11-14",
+    "hash": "7185f94033b7503f3cdd4ccc948b3b0b84d4bc1cac168d3420ebb36c8801e073",
     "hashVersion": 2
   },
   "/apps/compare/address-label-maker-vs-handwriting-envelopes/": {
-    "lastmod": "2026-07-23",
-    "hash": "0395b5349bf6678db1d5c23e1319fcc5195bb1c677deb0da3d8781ed96d262d0",
+    "lastmod": "2026-11-14",
+    "hash": "d458b7fed46fa417dfc65a59fa27a846a9662a0fd2ddb8383f578b6d7e56ccd7",
     "hashVersion": 2
   },
   "/apps/compare/address-label-maker-vs-online-label-websites/": {
-    "lastmod": "2026-07-23",
-    "hash": "5b4710ebb8c22c492747f2963e59be08cc66b327324f50d615f2d30ddee468e3",
+    "lastmod": "2026-11-14",
+    "hash": "a9190b79d3553e6398bac494b4ae3358efab2bd0742e087e049b505892fb3f7d",
     "hashVersion": 2
   },
   "/apps/compare/address-label-maker-vs-printing-one-envelope-at-a-time/": {
-    "lastmod": "2026-07-23",
-    "hash": "bbfad8540d9a1f250146976e89f3c978ff729c1ff20e0f4ba0e0813bd6a3a4b5",
+    "lastmod": "2026-11-14",
+    "hash": "18636d1d225479492b851d85c5a81fae9da411b39b9facc5d0cf8447baa6338e",
     "hashVersion": 2
   },
   "/apps/compare/address-label-maker-vs-word-mail-merge/": {
-    "lastmod": "2026-07-23",
-    "hash": "8853b7f4c62cc7398911ab4b777230848ad301afc8e6056d1caac72f1c1681c7",
+    "lastmod": "2026-11-14",
+    "hash": "3b761583b7c6c7b8681b87a76cbdd16ee9cc8ada131cfd91c7757ee5e7bfc8e3",
     "hashVersion": 2
   },
   "/apps/compare/atomic-clock-vs-online-time-websites/": {
@@ -345,18 +345,18 @@
     "hashVersion": 2
   },
   "/apps/compare/fridgetrack-vs-grocery-list-only/": {
-    "lastmod": "2026-07-23",
-    "hash": "e87ff4e2ee915d4ce863ec24de0c82f9624533b48ab46d9f5a572e961061bd3c",
+    "lastmod": "2026-11-14",
+    "hash": "4179625eb4752b6ca176cc1b887f5076fa66106909826720edc9f2f8a4ac07f6",
     "hashVersion": 2
   },
   "/apps/compare/fridgetrack-vs-guessing-whats-in-the-fridge/": {
-    "lastmod": "2026-07-23",
-    "hash": "99538d9b1724b4a2c5172ed0e6e06813e92b81554a3b65ee9d57473b9c9a3ac1",
+    "lastmod": "2026-11-14",
+    "hash": "d3e446da5ddcb6241a750714e10a2c869f2a639409d0701b564a7ca6d2cc8c1f",
     "hashVersion": 2
   },
   "/apps/compare/fridgetrack-vs-sticky-notes-on-the-fridge/": {
-    "lastmod": "2026-07-23",
-    "hash": "6c54167322ce6f690ad3f2bbe0751a5060b59a05c68e26d9567bde7413f6a601",
+    "lastmod": "2026-11-14",
+    "hash": "d4f1843bd4f15bb945b3f63cac4258f810af9b1340dc6e1fed93be7280c0a8e3",
     "hashVersion": 2
   },
   "/apps/compare/glowfeel-vs-breathing-video-sites/": {
@@ -465,18 +465,18 @@
     "hashVersion": 2
   },
   "/apps/compare/pantry-label-maker-vs-masking-tape-and-marker/": {
-    "lastmod": "2026-07-23",
-    "hash": "d61b3fd929b4532f4aa00bd769ff03dbea7e028e4a4e768e9e3b91a9a74b5ea3",
+    "lastmod": "2026-11-14",
+    "hash": "a0ca77fd087941379c21eec529a6c8856faa1222541fc8a5e56fdda52934c654",
     "hashVersion": 2
   },
   "/apps/compare/pantry-label-maker-vs-store-bought-labels/": {
-    "lastmod": "2026-07-23",
-    "hash": "9faa1b8206275e52ccb6800ce035b5ebfae8dec0c5e9a7eadeb1cac92674da3e",
+    "lastmod": "2026-11-14",
+    "hash": "219fda6725eca32931183acd2ec793b9ae068c109d6f8a20c6c6fe00ebad6aad",
     "hashVersion": 2
   },
   "/apps/compare/pantry-label-maker-vs-writing-on-jars/": {
-    "lastmod": "2026-07-23",
-    "hash": "d4ce3c4260a928fdc92a64207d642921bca126c3f204191a10c1cd28fb984efd",
+    "lastmod": "2026-11-14",
+    "hash": "697f760d160f2eb88aa47c233ba762e3bf191cf2be833dc1a689b58eef3b84e8",
     "hashVersion": 2
   },
   "/apps/compare/pdf-scan-vs-flatbed-scanner-at-home/": {
@@ -660,23 +660,23 @@
     "hashVersion": 2
   },
   "/apps/compare/snaplabel-vs-handwritten-labels/": {
-    "lastmod": "2026-07-23",
-    "hash": "80b08c577a8c91a05649335b593a274410dfdbca82e2e22622b1a7434de8ee2a",
+    "lastmod": "2026-11-14",
+    "hash": "1ca85aea1cdacacc5e693c53e03516cacee9a4b811743930e4d389804722f76b",
     "hashVersion": 2
   },
   "/apps/compare/snaplabel-vs-label-maker-machine/": {
-    "lastmod": "2026-07-23",
-    "hash": "90ad44b674a659dfc4633d2d23feddf240ad323d7c78ea01b43c2b3cf31a0dba",
+    "lastmod": "2026-11-14",
+    "hash": "949fa52e949dfce030c78bd58eb088aaaba72eed64d019ebd9c559c8e1224800",
     "hashVersion": 2
   },
   "/apps/compare/snaplabel-vs-printing-labels-in-word/": {
-    "lastmod": "2026-07-23",
-    "hash": "f527aa9cab69e65d8c42a507af6a10ddd707d91febbcf17b60d51de2cea9cfaa",
+    "lastmod": "2026-11-14",
+    "hash": "ca63a478885043fc2ed9c0b4e6ecd79ae5758ef0a1b8fb0b9987e7a7964da254",
     "hashVersion": 2
   },
   "/apps/compare/snaplabel-vs-spreadsheet-label-list/": {
-    "lastmod": "2026-07-23",
-    "hash": "da0d0ce153f960c7677c6fe889c94c0c1cd6551ad437871ba2982b0f19d5203f",
+    "lastmod": "2026-11-14",
+    "hash": "e54ab4894dacfa5aa06998f793414e9d44dfe5067025f18a45b8229eac6b07e9",
     "hashVersion": 2
   },
   "/apps/compare/snapqr-vs-designing-qr-codes-in-canva/": {
@@ -835,8 +835,8 @@
     "hashVersion": 2
   },
   "/apps/jobphotolog-work-reports/": {
-    "lastmod": "2026-10-12",
-    "hash": "62e0059a65317dc5f857b0d43856923e88ea08e5049e21f38061ac5cd7d41c5a",
+    "lastmod": "2026-11-14",
+    "hash": "3c5f6f16274bc9ca3fa0ac54423268b26f5193cc29b20455bdc22ace80b1596e",
     "hashVersion": 2
   },
   "/apps/magnifier-reader-big-text/": {
@@ -890,8 +890,8 @@
     "hashVersion": 2
   },
   "/apps/private-meeting-transcriber/": {
-    "lastmod": "2026-10-08",
-    "hash": "663d144deaae0216eb374dd46abfca75a0be1e404672652b02b6bff3ca2b476b",
+    "lastmod": "2026-11-14",
+    "hash": "018683e4f6ced14e203cb150cccafb6a246166fe8c822a8f2d0cf27a3935d259",
     "hashVersion": 2
   },
   "/apps/ritualix-habits-and-streaks/": {
@@ -915,8 +915,8 @@
     "hashVersion": 2
   },
   "/apps/snaplabel-photo-text-label/": {
-    "lastmod": "2026-10-08",
-    "hash": "38094e88630bf4fcc20717b033be20f2358b7ef07651433362c9af044b576e1d",
+    "lastmod": "2026-11-14",
+    "hash": "fea32755b42be161c7c37f69c7c530a27ef15234744f526a56709475688a7f25",
     "hashVersion": 2
   },
   "/apps/snapqr-qr-generator-app/": {
@@ -1025,8 +1025,8 @@
     "hashVersion": 2
   },
   "/blog/6x2-shift-schedule-planner-calendar/": {
-    "lastmod": "2026-09-08",
-    "hash": "d7556d5c610850a414dd865ecddcfc66a8b92b7d985143c9194803a4792a8ee8",
+    "lastmod": "2026-11-14",
+    "hash": "af194011c886fdb5065aa88eb9bc2e081d4ba091d89898235297b8d4f1f0fb6f",
     "hashVersion": 2
   },
   "/blog/actual-plywood-thickness-hardware-fit/": {
@@ -1130,8 +1130,8 @@
     "hashVersion": 2
   },
   "/blog/archive/": {
-    "lastmod": "2026-10-27",
-    "hash": "0c2dd3120e5c6aac879029daa44dc3c58245848edc25ccd9d61c08d2692ac75b",
+    "lastmod": "2026-11-14",
+    "hash": "32f397601eb270339b5de78c85cc759ed6c09ecdca8caea2ecf4e9e4cfc511ef",
     "hashVersion": 2
   },
   "/blog/arm-laptops-developer-workflows/": {
@@ -1300,8 +1300,8 @@
     "hashVersion": 2
   },
   "/blog/best-metronome-app-daily-practice-cadenza/": {
-    "lastmod": "2026-09-08",
-    "hash": "652606eb5b79467838e528338e545be3374ce850e21370fd1f6df76c65cfca6e",
+    "lastmod": "2026-11-14",
+    "hash": "7dc366fd6c3aba65d46aa23627475f1d5ac733ba4d635ffc184f328857359f2d",
     "hashVersion": 2
   },
   "/blog/best-pdf-scanner-app-iphone-private-documents/": {
@@ -2495,8 +2495,8 @@
     "hashVersion": 2
   },
   "/blog/fridgetrack-freezer-inventory-before-bulk-shopping/": {
-    "lastmod": "2026-09-08",
-    "hash": "78aca3e41ef623a98a2132184ffc38aa3aff368567d8ec7a273bac7a939441ac",
+    "lastmod": "2026-11-14",
+    "hash": "c4d8ac7a08529fd51f3ef305eb30f546b1fd3cda58a20943ab767e6830531a33",
     "hashVersion": 2
   },
   "/blog/fridgetrack-fridge-inventory-app-guide/": {
@@ -2615,8 +2615,8 @@
     "hashVersion": 2
   },
   "/blog/grout-color-selection-before-final-tile-order/": {
-    "lastmod": "2026-09-08",
-    "hash": "da8caa6e2ddfd6941a4bb2ef176f44bc006fcf1161557e5efcfa748100057afa",
+    "lastmod": "2026-11-14",
+    "hash": "8f1cfc7d337a3d359a670d94e249e9370a2f361aca4339f1d25e7b5315586661",
     "hashVersion": 2
   },
   "/blog/grout-line-alignment-between-floor-and-wall-tile/": {
@@ -2685,8 +2685,8 @@
     "hashVersion": 2
   },
   "/blog/hexagon-tile-layout-waste-planning/": {
-    "lastmod": "2026-09-08",
-    "hash": "b0d330a7985b42fd67194f64e7fa119f0ea4be0fd96044ab3bdb6289bf0baff1",
+    "lastmod": "2026-11-14",
+    "hash": "4a5b52a11e0f072bf2d64a54e14506fe90bf7ce32f9abd07b0eafee2db27c038",
     "hashVersion": 2
   },
   "/blog/hidden-litter-box-cabinet-cut-list/": {
@@ -2840,8 +2840,8 @@
     "hashVersion": 2
   },
   "/blog/how-to-make-cabinet-labels-from-project-photos/": {
-    "lastmod": "2026-09-08",
-    "hash": "3e8e8a54328993f7dae20de0ed320d1e893b5c4a58bd4cb2c0e36fdf4b685832",
+    "lastmod": "2026-11-14",
+    "hash": "738aff7f8103db89fa037720fc397363a77b659f5123432ace9738277876b1a8",
     "hashVersion": 2
   },
   "/blog/how-to-make-watermarked-woodworking-photos/": {
@@ -3095,8 +3095,8 @@
     "hashVersion": 2
   },
   "/blog/label-storage-bins-from-a-photo-snaplabel/": {
-    "lastmod": "2026-09-08",
-    "hash": "50e57972ae44207d134dfd2d519ae4f1dc3f5c820c76f49ba25b97afa42bed5a",
+    "lastmod": "2026-11-14",
+    "hash": "479cd1a425357cc84d3aadc71f68f0fbf62ab9aa7838ee06c8e98415704d3a9b",
     "hashVersion": 2
   },
   "/blog/large-format-shower-wall-tile-layout/": {
@@ -3490,8 +3490,8 @@
     "hashVersion": 2
   },
   "/blog/natural-stone-vs-porcelain-layout-planning-differences/": {
-    "lastmod": "2026-09-08",
-    "hash": "f93215357908978ba3626d3a73f1a86a3a8321ca65d84c4676897a602b39f038",
+    "lastmod": "2026-11-14",
+    "hash": "d43d59721b4994ed0942319fdde009337fee30948b45ed44fce737ffd0781dbe",
     "hashVersion": 2
   },
   "/blog/no-login-shift-calendar-privacy/": {
@@ -3670,8 +3670,8 @@
     "hashVersion": 2
   },
   "/blog/pantry-labels-system-for-an-organized-kitchen/": {
-    "lastmod": "2026-09-08",
-    "hash": "3c62652f0ecb734bee599e66407f089435a211c8f46bc952cfe5862e64163601",
+    "lastmod": "2026-11-14",
+    "hash": "af40119f6e0759bf9742cc0a4cdd287ec6ce040723468baaa04afcfa7c2533cc",
     "hashVersion": 2
   },
   "/blog/pantry-pull-out-shelf-cut-list/": {
@@ -3700,8 +3700,8 @@
     "hashVersion": 2
   },
   "/blog/pdf-scan-for-home-renovation-receipts/": {
-    "lastmod": "2026-09-08",
-    "hash": "e1b7f064a526fc5e48353e6ce301e581f75d71f353842c18a0f15bcbe15fd385",
+    "lastmod": "2026-11-14",
+    "hash": "df7661fbb6ecc5bbb357b2b9c14180d1f99451657e9883cc10a9c26e9244a2cf",
     "hashVersion": 2
   },
   "/blog/pdf-scan-multi-page-document-organization/": {
@@ -3710,8 +3710,8 @@
     "hashVersion": 2
   },
   "/blog/pdf-scan-permit-folder-for-remodel/": {
-    "lastmod": "2026-09-08",
-    "hash": "26ce2dc7a61d067e4939ece0039fa6e8e924084f1542765642af121e21b38f58",
+    "lastmod": "2026-11-14",
+    "hash": "f580dfd0fb1e33e2512746e5600cb9797da3b44a34d73b9967760e49eb08f1a3",
     "hashVersion": 2
   },
   "/blog/pdf-scan-warranty-document-organizer/": {
@@ -4250,8 +4250,8 @@
     "hashVersion": 2
   },
   "/blog/plywood-vs-solid-wood-for-shelves/": {
-    "lastmod": "2026-09-08",
-    "hash": "d9521477a873de509ecd0ea5253a5ac1d1a41201b9a9705c327c0bde9b84a440",
+    "lastmod": "2026-11-14",
+    "hash": "937dd843d7231e373d49326cc37d22e898b0b2895d496d4db015fa3aefe21b16",
     "hashVersion": 2
   },
   "/blog/plywood-waste-cost-benchmark-manual-vs-optimizer/": {
@@ -4330,8 +4330,8 @@
     "hashVersion": 2
   },
   "/blog/printer-app-page-preview-before-printing/": {
-    "lastmod": "2026-09-08",
-    "hash": "5b6dfce0e1aa5799ed93c166cc6c286cbfa41228cd1f5165cec4cb35e88ecf24",
+    "lastmod": "2026-11-14",
+    "hash": "056efd44d906488937f664462528d4e3ac6b4d95192d9ca7556275ef8410f2db",
     "hashVersion": 2
   },
   "/blog/printer-app-printing-patterns-and-templates/": {
@@ -5105,18 +5105,18 @@
     "hashVersion": 2
   },
   "/blog/snaplabel-ai-suggestion-accuracy-when-to-override/": {
-    "lastmod": "2026-09-08",
-    "hash": "bef1438b9bb1e87b70e4beed8ee0903e9a4c9a1306a98b09a715fa5b2551d1be",
+    "lastmod": "2026-11-14",
+    "hash": "2da0d9503a1e36985d28c0af2022e340f4197484e94bea255f1ea933a889fff8",
     "hashVersion": 2
   },
   "/blog/snaplabel-labeling-cable-and-charger-storage/": {
-    "lastmod": "2026-09-08",
-    "hash": "63fd7c083d992310b2387ac0f2c5b301a402a77f90374762f9db47c08592c5cf",
+    "lastmod": "2026-11-14",
+    "hash": "445e1db649cc717ba36dd1871ad657c13a401713506492b2f7d14e042cf9eed3",
     "hashVersion": 2
   },
   "/blog/snaplabel-moving-box-photo-labels/": {
-    "lastmod": "2026-09-08",
-    "hash": "a46d5ec5dda298102d877ea2ee925ff68db19d0b9506b307aba0b81bad57ebb8",
+    "lastmod": "2026-11-14",
+    "hash": "34530cca3b73d7fe7cc3893c5f1756e44683a18c39157bc0c9e2334c822d1b43",
     "hashVersion": 2
   },
   "/blog/snapqr-equipment-label-qr-codes/": {
@@ -5160,8 +5160,8 @@
     "hashVersion": 2
   },
   "/blog/snapstock-low-stock-alerts-for-market-booth/": {
-    "lastmod": "2026-09-08",
-    "hash": "608a13e456a3d169c81346f69c668d393684742b51f95995385508c14366d23d",
+    "lastmod": "2026-11-14",
+    "hash": "415ed7bc707cdd7b0251a9e7c3762e971e5af16a955abd00b11bc99581e68e2c",
     "hashVersion": 2
   },
   "/blog/snapstock-product-photos-why-bother/": {
@@ -5475,8 +5475,8 @@
     "hashVersion": 2
   },
   "/blog/table-saw-plywood-cut-sequence/": {
-    "lastmod": "2026-09-08",
-    "hash": "7d133b176b0121de30168fb224e404c74b501ff9390da0ef8e5ebd62769102ab",
+    "lastmod": "2026-11-14",
+    "hash": "fe69cc628c55ca66b00992dcc8da1e10bb6c38df48f4f1f925b6abd6b470c750",
     "hashVersion": 2
   },
   "/blog/table-saw-repeat-cut-stop-block-plan/": {
@@ -5615,8 +5615,8 @@
     "hashVersion": 2
   },
   "/blog/tile-repair-extra-stock-inventory/": {
-    "lastmod": "2026-09-08",
-    "hash": "7614f0d5bfb03b089393fffc758ce105d5e9ef1214d39b109a2e0858a77c5a44",
+    "lastmod": "2026-11-14",
+    "hash": "cfa19474f283293a405822e3b8d6254e3dbc28867dfdaa6915d426d321697a0b",
     "hashVersion": 2
   },
   "/blog/tile-shower-bench-layout/": {
@@ -5880,8 +5880,8 @@
     "hashVersion": 2
   },
   "/blog/wifi-qr-code-for-guests-and-businesses/": {
-    "lastmod": "2026-09-08",
-    "hash": "2ffd31bbe941216506db8527efb6da07841d9a312ffcd550c70990481136675b",
+    "lastmod": "2026-11-14",
+    "hash": "e2ed019fc687a799c82eca073cfc872482cab3f1a58ebf705c68c14a3ef7b662",
     "hashVersion": 2
   },
   "/blog/winder-stair-layout-planning/": {
@@ -6025,8 +6025,8 @@
     "hashVersion": 2
   },
   "/blog/work-shift-schedule-calendar-rotating-shifts/": {
-    "lastmod": "2026-09-08",
-    "hash": "4fe5c5d2cbb43d239ef5b1f7a53b6263c754cf4af2dc620d0694004978deeb35",
+    "lastmod": "2026-11-14",
+    "hash": "112b62fdbb8317713f20185afef2be88f06a59b8e86d2026d302dcbacb069fda",
     "hashVersion": 2
   },
   "/blog/workshop-clamp-rack-cut-list/": {

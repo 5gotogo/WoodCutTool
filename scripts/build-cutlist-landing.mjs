@@ -62,12 +62,15 @@ const softwareJsonLd = {
       "@id": "https://woodcuttool.com/apps/cutlist/#software",
       name: app.name,
       url: "https://woodcuttool.com/apps/cutlist/",
+      sameAs: app.url,
+      author: { "@type": "Person", name: app.sellerName },
       applicationCategory: "UtilitiesApplication",
       operatingSystem: "iOS 17.6 or later; iPadOS 17.6 or later",
       description: "Offline plywood cut list optimizer with visual sheet layouts, local AI scan, step-by-step cutting sequence, material cost and waste tracking, saved projects, PDF export, and AirPrint.",
       downloadUrl: app.url,
       offers: {
         "@type": "Offer",
+        url: app.url,
         price: "0",
         priceCurrency: "USD",
         description: "Free basic layout generation. Advanced Pro features require a subscription.",
@@ -123,7 +126,7 @@ const softwareJsonLd = {
   ],
 };
 
-const title = "CutList App: Stop Recalculating Plywood Cuts";
+const title = app.name;
 const description = "Scan or enter plywood parts, generate visual sheet layouts, track cost and waste, follow the cut sequence, and keep projects offline on iPhone or iPad.";
 
 const html = `<!doctype html>
@@ -156,9 +159,9 @@ const html = `<!doctype html>
   <main id="main">
     <section class="cutlist-app-hero">
       <div class="cutlist-app-hero-copy">
-        <p class="breadcrumb"><a href="/">Home</a> / <a href="/apps/">Apps</a> / CutList</p>
+        <p class="breadcrumb"><a href="/">Home</a> / <a href="/apps/">Apps</a> / ${esc(app.name)}</p>
         <p class="eyebrow">Plywood plans that survive real project changes</p>
-        <h1>Stop recalculating plywood cuts every time the list changes.</h1>
+        <h1>${esc(app.name)}</h1>
         <p class="lead">Scan or enter the parts, generate a visual sheet layout, review material cost and waste, then carry the cutting sequence into the shop—offline on iPhone or iPad.</p>
         <div class="hero-actions">
           <a class="button" href="${heroStoreUrl}" data-app-store-link data-platform-label data-conversion-placement="app-hero" rel="nofollow noopener">Get CutList on the App Store</a>

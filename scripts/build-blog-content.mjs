@@ -5302,14 +5302,14 @@ articles.push(
   },
   {
     slug: "snaplabel-ai-photo-label-maker-guide",
-    category: "SnapLabel",
-    title: "AI Photo Label Maker Guide: Turn Pictures Into Printable Labels With SnapLabel",
+    category: "Labelary",
+    title: "AI Photo Label Maker Guide: Turn Pictures Into Printable Labels With Labelary",
     description: "How to use an AI photo label maker to recognize items, create clean text labels, and print organized labels from iPhone photos.",
     kicker: "AI labels",
     readTime: "8 min",
     accent: "tile",
     sections: [
-      ["A Label Starts With A Clear Photo", "The fastest labeling workflow begins with a photo that shows the item, container, or product clearly. SnapLabel is designed to recognize photo content and suggest label text, so lighting, framing, and contrast still matter."],
+      ["A Label Starts With A Clear Photo", "The fastest labeling workflow begins with a photo that shows the item, container, or product clearly. Labelary is designed to recognize photo content and suggest label text, so lighting, framing, and contrast still matter."],
       ["Let Recognition Draft The First Label", "AI recognition is useful because it removes the blank page. Instead of typing every label from scratch, start with the suggested name, then edit it into the wording your shelf, bin, folder, or product actually needs."],
       ["Keep Labels Short Enough To Print", "A good printed label is readable at a glance. Use short names, category words, dates, or item counts rather than long sentences. The label should help you identify the object quickly, not become a paragraph."],
       ["Use One Style Per System", "Storage boxes, pantry shelves, office files, and inventory bins work best when labels follow the same naming pattern. Choose a simple style and repeat it so the set looks intentional."],
@@ -5319,7 +5319,7 @@ articles.push(
   },
   {
     slug: "snaplabel-home-organization-labels",
-    category: "SnapLabel",
+    category: "Labelary",
     title: "Home Organization Labels From Photos: Storage Boxes, Shelves, And Pantry Items",
     description: "A practical home organization workflow for turning photos of bins, shelves, pantry items, and household supplies into printable labels.",
     kicker: "Home labels",
@@ -5327,7 +5327,7 @@ articles.push(
     accent: "tile",
     sections: [
       ["Label The Container, Not The Clutter", "Before making labels, decide what each box, shelf, drawer, or pantry zone is supposed to hold. A label maker is most useful after the category is clear."],
-      ["Photograph Representative Items", "Take a photo of the contents or the container front. SnapLabel can help turn that image into label text, which is faster than typing every household category by hand."],
+      ["Photograph Representative Items", "Take a photo of the contents or the container front. Labelary can help turn that image into label text, which is faster than typing every household category by hand."],
       ["Use Plain Category Names", "Home labels should be simple: batteries, holiday lights, pasta, cleaning cloths, kids art, guest towels. Plain words are easier for everyone in the house to follow."],
       ["Batch Similar Areas Together", "Do one cabinet, closet, drawer bank, or shelf unit at a time. Batch work creates a consistent style and reduces the chance that half the system is labeled differently."],
       ["Update Labels When The System Changes", "Organization is not finished forever. When a bin changes purpose, make a new label immediately so the system stays trustworthy."]
@@ -5336,7 +5336,7 @@ articles.push(
   },
   {
     slug: "snaplabel-small-business-product-labels",
-    category: "SnapLabel",
+    category: "Labelary",
     title: "Photo Label App For Small Business: Product Tags, Bins, And Print-Ready Labels",
     description: "How small businesses can use a photo label app for product tags, stock bins, sample kits, shelves, and print-ready organization labels.",
     kicker: "Business labels",
@@ -5344,7 +5344,7 @@ articles.push(
     accent: "tile",
     sections: [
       ["Small Teams Need Fast Labeling", "Retail shelves, market bins, product samples, office supplies, and back-room inventory all become harder to manage when labels are inconsistent. A photo label app keeps the work close to the object."],
-      ["Capture The Item Where It Lives", "Take the photo at the shelf, bin, or packing table. SnapLabel can suggest label text from the image, then you can edit it into the name customers or staff should see."],
+      ["Capture The Item Where It Lives", "Take the photo at the shelf, bin, or packing table. Labelary can suggest label text from the image, then you can edit it into the name customers or staff should see."],
       ["Separate Public And Internal Labels", "A customer-facing product tag may need a polished name, while an internal bin label may need SKU, size, color, or reorder note. Do not force one label format to do both jobs."],
       ["Use Batches For Repeated Products", "If you sell variants, group similar items and create labels in one session. Consistent labels help staff restock, pack orders, and find samples without asking."],
       ["Print Only After A Quick Audit", "Before printing, review names, spelling, product variants, and quantities. A five-minute audit prevents a stack of labels from becoming scrap."]
@@ -5353,7 +5353,7 @@ articles.push(
   },
   {
     slug: "snaplabel-batch-labels-for-inventory",
-    category: "SnapLabel",
+    category: "Labelary",
     title: "Batch Labels From Photos: A Faster Workflow For Inventory And Storage",
     description: "A batch labeling workflow for inventory rooms, supply closets, product bins, storage boxes, and photo-based label creation.",
     kicker: "Batch labels",
@@ -5362,7 +5362,7 @@ articles.push(
     sections: [
       ["Batching Reduces Context Switching", "Making one label at a time feels easy until a storage room has fifty bins. Batch work lets you photograph, review, edit, and print in a cleaner rhythm."],
       ["Shoot In A Consistent Order", "Move left to right or top to bottom through the storage area. The photo sequence becomes a temporary checklist, making it easier to know which bins already have labels."],
-      ["Normalize Names Before Printing", "Inventory labels should use the same structure: category, size, variant, or location. SnapLabel helps create drafts quickly, but consistency comes from reviewing the batch as a set."],
+      ["Normalize Names Before Printing", "Inventory labels should use the same structure: category, size, variant, or location. Labelary helps create drafts quickly, but consistency comes from reviewing the batch as a set."],
       ["Keep A Short Exception List", "Some labels need extra details, such as fragile, reorder, seasonal, sample, or returns. Add those only where they change behavior."],
       ["Print In Sets That Match The Area", "Print labels for one shelf, aisle, cabinet, or product group at a time. Smaller print batches are easier to install correctly."]
     ],
@@ -5370,14 +5370,14 @@ articles.push(
   },
   {
     slug: "snaplabel-printable-label-workflow",
-    category: "SnapLabel",
+    category: "Labelary",
     title: "Printable Label Workflow: From Camera Roll To Clean Labels In Minutes",
     description: "A simple workflow for creating printable labels from camera roll photos, AI suggestions, edited text, and final print review.",
     kicker: "Print workflow",
     readTime: "7 min",
     accent: "tile",
     sections: [
-      ["Start From The Camera Or Album", "A practical label workflow should not require a desktop setup. SnapLabel supports taking or choosing a photo, so labels can begin from the object in front of you or from images already in your album."],
+      ["Start From The Camera Or Album", "A practical label workflow should not require a desktop setup. Labelary supports taking or choosing a photo, so labels can begin from the object in front of you or from images already in your album."],
       ["Treat AI Text As A Draft", "Recognition can identify what is in the picture and suggest clear wording. The final label should still be edited for your naming convention, language, and print size."],
       ["Design For The Printer You Have", "A label that looks good on screen may be too long once printed. Keep text short, avoid unnecessary punctuation, and test one sample before printing a full batch."],
       ["Use Categories For Faster Searching", "If you are labeling household items, office supplies, inventory, or product samples, categories help keep the work organized and easier to repeat later."],
@@ -9902,10 +9902,10 @@ const relatedAppDetails = {
     name: "SnapReceipt: Expenses & Tax",
     description: "Open the SnapReceipt app detail page for receipt capture, expense tracking, mileage logs, and private business records."
   },
-  SnapLabel: {
+  Labelary: {
     href: "/apps/snaplabel-photo-text-label/",
-    name: "SnapLabel - Photo Text Label",
-    description: "Open the SnapLabel app detail page for AI photo labels, printable labels, batch labeling, and home or business organization."
+    name: "Labelary - Photo Text Label",
+    description: "Open the Labelary app detail page for AI photo labels, printable labels, batch labeling, and home or business organization."
   },
   "Private Meeting": {
     href: "/apps/private-meeting-transcriber/",
@@ -10837,7 +10837,7 @@ function blogIndex() {
     ["Tile", "tile"],
     ["PDF Scan", "pdf-scan"],
     ["SnapReceipt", "snapreceipt"],
-    ["SnapLabel", "snaplabel"],
+    ["Labelary", "snaplabel"],
     ["Private Meeting", "private-meeting"],
     ["Speaker Tools", "speaker-tools"],
     ["Work Shift", "work-shift"],
@@ -10928,7 +10928,7 @@ ${head({
       <a href="#tile">Tile</a>
       <a href="#pdf-scan">PDF Scan</a>
       <a href="#snapreceipt">SnapReceipt</a>
-      <a href="#snaplabel">SnapLabel</a>
+      <a href="#snaplabel">Labelary</a>
       <a href="#private-meeting">Private Meeting</a>
       <a href="#speaker-tools">Speaker Tools</a>
       <a href="#work-shift">Work Shift</a>
@@ -10990,8 +10990,8 @@ ${head({
     </section>
 
     <section class="blog-section" id="snaplabel" data-blog-section>
-      <div class="blog-section-head"><p class="eyebrow">SnapLabel</p><h2>AI photo label making, printable labels, batch labels, and organization workflows.</h2></div>
-      <div class="blog-grid">${categoryPreview("SnapLabel")}</div>
+      <div class="blog-section-head"><p class="eyebrow">Labelary</p><h2>AI photo label making, printable labels, batch labels, and organization workflows.</h2></div>
+      <div class="blog-grid">${categoryPreview("Labelary")}</div>
     </section>
 
     <section class="blog-section" id="private-meeting" data-blog-section>
@@ -11325,7 +11325,7 @@ const zhArticleTitles = {
   "best-metronome-app-daily-practice-cadenza": "日常练习最佳节拍器 App：速度、Tap Tempo、重音和曲目单",
   "guitar-tuner-app-cents-a4-reference-cadenza": "吉他调音器 App 指南：音分、A4 参考音、半音阶调音和 Drone",
   "music-practice-tracker-setlist-metronome-tuner-cadenza": "音乐练习追踪流程：曲目单、速度笔记、调音和日常重复",
-  "snaplabel-ai-photo-label-maker-guide": "AI 照片标签制作指南：用 SnapLabel 把图片变成可打印标签",
+  "snaplabel-ai-photo-label-maker-guide": "AI 照片标签制作指南：用 Labelary 把图片变成可打印标签",
   "snaplabel-home-organization-labels": "从照片制作家庭收纳标签：储物箱、架子和食品柜",
   "snaplabel-small-business-product-labels": "小企业照片标签 App：商品标签、库存盒和可打印标签",
   "snaplabel-batch-labels-for-inventory": "从照片批量制作标签：库存和收纳的更快流程",
@@ -11356,7 +11356,7 @@ const zhCategory = {
   Tile: "瓷砖",
   "PDF Scan": "PDF 扫描",
   SnapReceipt: "SnapReceipt",
-  SnapLabel: "SnapLabel",
+  Labelary: "Labelary",
   "Private Meeting": "私密会议转写",
   "Speaker Tools": "Speaker Tools",
   "Work Shift": "排班日历",
@@ -11440,10 +11440,10 @@ const zhSectionTemplates = {
     ],
     checklist: ["确认文件要 PDF、图片、OCR 还是 CSV。", "检查裁切、方向和页面顺序。", "重要字段要人工复核。", "敏感 PDF 分享前考虑加锁。"]
   },
-  SnapLabel: {
+  Labelary: {
     headings: ["先拍清楚物品", "把 AI 建议当作初稿", "按场景统一命名", "打印前做最后检查"],
     bodies: [
-      "标签流程从清楚的照片开始。物品、容器或商品越清晰，SnapLabel 越容易生成有用的标签初稿。",
+      "标签流程从清楚的照片开始。物品、容器或商品越清晰，Labelary 越容易生成有用的标签初稿。",
       "AI 识别可以先给出名称建议，但最终标签要按照你的收纳、商品、库存或办公场景修改成可读、可打印的文字。",
       "家庭收纳、小企业库存、商品样品和办公文件都需要一致的命名规则。统一格式比单个标签更漂亮重要。",
       "打印前检查拼写、数量、型号、类别和长度。实体标签一旦贴上去，修改成本比屏幕上高。"
@@ -11528,7 +11528,7 @@ function zhKicker(article) {
   if (article.category === "Tile") return "瓷砖排版";
   if (article.category === "PDF Scan") return "PDF 扫描";
   if (article.category === "SnapReceipt") return "费用记录";
-  if (article.category === "SnapLabel") return "标签制作";
+  if (article.category === "Labelary") return "标签制作";
   if (article.category === "Private Meeting") return "会议转写";
   if (article.category === "Speaker Tools") return "音频测试";
   if (article.category === "Work Shift") return "排班规划";
@@ -11557,7 +11557,7 @@ function zhDescription(article) {
   if (article.category === "PDF Scan") {
     return `围绕“${zhTitle(article)}”的 PDF 扫描流程，帮助用户把纸质文档、收据、发票、合同、证件、签名和 OCR 文本整理成私密、可分享的文件。`;
   }
-  if (article.category === "SnapLabel") {
+  if (article.category === "Labelary") {
     return `围绕“${zhTitle(article)}”的标签制作流程，帮助用户把照片、AI 识别、文字编辑、分类和打印串成更快的收纳或商品标签工作流。`;
   }
   if (article.category === "Private Meeting") {
@@ -11837,10 +11837,10 @@ function generateBlogTranslations() {
     "Research notes for builders, makers, small businesses, kitchen organizers, QR workflows, document tools, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、小企业、厨房整理、二维码流程、文档工具、音频工具、排班日历、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
     "Practical guides for CutList projects and maker workflows.": "CutList 项目和创作者工作流实用指南。",
     "Deeper articles on CutList optimization, QuiltFit planning, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、QuiltFit 规划、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
-    "Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、SnapLabel 照片标签、私密会议转写、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
-    "Deeper articles on CutList optimization, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
-    "Deeper articles on CutList optimization, fridge inventory, pantry labeling, address label printing, QR code generation, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、冰箱库存、厨房标签、地址标签打印、二维码生成、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
-    "Deeper articles on CutList optimization, iPhone utility apps, fridge inventory, pantry labeling, address label printing, QR code generation, photo privacy, invoices, receipts, printing, habits, fasting, image compression, SnapLabel photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy.": "深入文章覆盖 CutList 优化、iPhone 工具类 app、冰箱库存、厨房标签、地址标签打印、二维码生成、照片隐私、发票、收据、打印、习惯、轻断食、图片压缩、SnapLabel 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略。",
+    "Deeper articles on CutList optimization, Labelary photo labeling, private meeting transcription, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、Labelary 照片标签、私密会议转写、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
+    "Deeper articles on CutList optimization, Labelary photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、Labelary 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
+    "Deeper articles on CutList optimization, fridge inventory, pantry labeling, address label printing, QR code generation, Labelary photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy, with decision metrics for real projects.": "深入文章覆盖 CutList 优化、冰箱库存、厨房标签、地址标签打印、二维码生成、Labelary 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略，并提供真实项目可用的决策指标。",
+    "Deeper articles on CutList optimization, iPhone utility apps, fridge inventory, pantry labeling, address label printing, QR code generation, photo privacy, invoices, receipts, printing, habits, fasting, image compression, Labelary photo labeling, private meeting transcription, speaker audio testing, work shift scheduling, PDF scanning, Cadenza music practice, QuiltFit planning, tinnitus sound masking, stair stringer geometry, and tile layout strategy.": "深入文章覆盖 CutList 优化、iPhone 工具类 app、冰箱库存、厨房标签、地址标签打印、二维码生成、照片隐私、发票、收据、打印、习惯、轻断食、图片压缩、Labelary 照片标签、私密会议转写、扬声器音频测试、轮班排班、PDF 扫描、Cadenza 音乐练习、QuiltFit 规划、耳鸣声音遮蔽、楼梯梁几何和瓷砖排版策略。",
     "Browse focused articles on plywood cut lists, woodworking calculators, maker apps, labeling, scanning, audio tools, shift calendars, QuiltFit planning, tile layouts, and stair stringer geometry.": "浏览胶合板切割清单、木工计算器、创作者应用、标签、扫描、音频工具、排班日历、QuiltFit 规划、瓷砖排版和楼梯梁几何等专题文章。",
     "Featured reads": "精选文章",
     "Start with the latest practical guides.": "从最新实用指南开始。",

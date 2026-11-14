@@ -11,6 +11,8 @@ import { fileURLToPath } from "node:url";
 import { ogTags, breadcrumbJsonLd } from "./seo-meta.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const cutlist = JSON.parse(readFileSync(join(root, "data", "app-store-apps.json"), "utf8"))
+  .find((app) => app.slug === "cutlist-plywood-optimizer");
 
 // file -> { title, desc, type, bc }
 // bc = breadcrumb trail [ [name, path], ... ]; omit for top-level pages.
@@ -246,7 +248,7 @@ const pages = {
   },
   // Hand-written app pages: keep their own title/desc, add OG + breadcrumb only.
   "apps/cutlist/index.html": {
-    bc: [["Home", "/"], ["Apps", "/apps/"], ["CutList", "/apps/cutlist/"]]
+    bc: [["Home", "/"], ["Apps", "/apps/"], [cutlist.name, "/apps/cutlist/"]]
   },
   "apps/quiltfit/index.html": {
     bc: [["Home", "/"], ["Apps", "/apps/"], ["QuiltFit", "/apps/quiltfit/"]]

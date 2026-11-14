@@ -17,13 +17,16 @@ function highResolutionScreenshotUrl(url) {
 }
 
 function normalizeResult(existing, result) {
+  const url = new URL(result.trackViewUrl || existing.url);
+  url.searchParams.delete("uo");
   return {
+    ...existing,
     id: result.trackId,
     slug: existing.slug,
     name: result.trackName,
     genre: result.primaryGenreName,
     genres: result.genres || [],
-    url: result.trackViewUrl,
+    url: url.href,
     artworkUrl512: result.artworkUrl512 || result.artworkUrl100 || existing.artworkUrl512,
     screenshotUrls: (result.screenshotUrls || []).map(highResolutionScreenshotUrl),
     description: result.description || "",

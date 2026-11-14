@@ -113,16 +113,16 @@ export const compareData = {
   },
 
   "snaplabel-photo-text-label": {
-    appName: "SnapLabel",
+    appName: "Labelary",
     detail: "/apps/snaplabel-photo-text-label/",
     category: "Home",
     articles: [
       {
         slug: "snaplabel-vs-handwritten-labels",
         vs: "Handwritten Labels",
-        title: "SnapLabel vs Handwritten Labels: Cleaner Organization",
-        desc: "SnapLabel vs handwritten labels for home and storage organization: legibility, batches, reprints, and photo labels. See why printed labels beat a marker.",
-        intro: "A marker and masking tape works until you have twenty bins that all look the same. SnapLabel turns a photo or text into a clean, printable label, so storage stays readable and consistent.",
+        title: "Labelary vs Handwritten Labels: Cleaner Organization",
+        desc: "Labelary vs handwritten labels for home and storage organization: legibility, batches, reprints, and photo labels. See why printed labels beat a marker.",
+        intro: "A marker and masking tape works until you have twenty bins that all look the same. Labelary turns a photo or text into a clean, printable label, so storage stays readable and consistent.",
         rows: [
           ["Legibility", "Crisp printed text", "Varies by handwriting"],
           ["Batches", "Many at once", "One at a time"],
@@ -130,21 +130,21 @@ export const compareData = {
           ["Photo labels", "Yes", "No"],
           ["Consistent look", "Yes", "No"]
         ],
-        whyApp: "SnapLabel makes labels readable and repeatable, which matters across a pantry, garage, or classroom where consistency helps you find things fast. Handwriting drifts and fades; printed labels do not.",
+        whyApp: "Labelary makes labels readable and repeatable, which matters across a pantry, garage, or classroom where consistency helps you find things fast. Handwriting drifts and fades; printed labels do not.",
         whenOther: "A handwritten label is fine for a one-off or a temporary mark. For an organized system you will reuse, printed labels save time and look better.",
         faqs: [
-          ["Is SnapLabel better than handwritten labels?", "For an organized, reusable system, yes. SnapLabel prints clean, consistent labels and can batch many at once."],
-          ["Can SnapLabel make labels from a photo?", "Yes. SnapLabel can turn a photo into a printable label, which handwriting cannot do."],
-          ["Can I print many labels at once?", "Yes. SnapLabel supports batch labeling, unlike writing each one by hand."],
-          ["Is SnapLabel good for pantry and storage?", "Yes. Clean, consistent printed labels make pantry, garage, and storage systems easier to scan."]
+          ["Is Labelary better than handwritten labels?", "For an organized, reusable system, yes. Labelary prints clean, consistent labels and can batch many at once."],
+          ["Can Labelary make labels from a photo?", "Yes. Labelary can turn a photo into a printable label, which handwriting cannot do."],
+          ["Can I print many labels at once?", "Yes. Labelary supports batch labeling, unlike writing each one by hand."],
+          ["Is Labelary good for pantry and storage?", "Yes. Clean, consistent printed labels make pantry, garage, and storage systems easier to scan."]
         ]
       },
       {
         slug: "snaplabel-vs-label-maker-machine",
         vs: "a Label Maker Machine",
-        title: "SnapLabel vs a Label Maker Machine",
-        desc: "SnapLabel app vs a dedicated label maker machine: cost, photo labels, design freedom, and no extra hardware. See when a phone app replaces a label printer.",
-        intro: "A label maker machine prints durable tape labels but costs money, needs cartridges, and limits design. SnapLabel uses the phone you already own, adds photos and richer layouts, and prints to a printer you already have.",
+        title: "Labelary vs a Label Maker Machine",
+        desc: "Labelary app vs a dedicated label maker machine: cost, photo labels, design freedom, and no extra hardware. See when a phone app replaces a label printer.",
+        intro: "A label maker machine prints durable tape labels but costs money, needs cartridges, and limits design. Labelary uses the phone you already own, adds photos and richer layouts, and prints to a printer you already have.",
         rows: [
           ["Extra hardware", "None", "The machine + tape"],
           ["Ongoing cost", "None", "Tape cartridges"],
@@ -152,13 +152,13 @@ export const compareData = {
           ["Design freedom", "High", "Limited"],
           ["Durable adhesive tape", "Depends on paper", "Yes"]
         ],
-        whyApp: "SnapLabel skips the hardware and cartridge cost and gives you photo labels and flexible layouts. For most home and small-business labeling, that is enough without buying a dedicated machine.",
+        whyApp: "Labelary skips the hardware and cartridge cost and gives you photo labels and flexible layouts. For most home and small-business labeling, that is enough without buying a dedicated machine.",
         whenOther: "A label maker machine wins when you need durable, water-resistant adhesive tape for harsh environments. For everyday organization, the app is cheaper and more flexible.",
         faqs: [
-          ["Can a label app replace a label maker machine?", "For most home and office labeling, yes. SnapLabel uses your phone and printer, adds photos, and avoids cartridge costs."],
-          ["Does SnapLabel need special hardware?", "No. It works with a phone and a standard printer, unlike a dedicated label machine."],
+          ["Can a label app replace a label maker machine?", "For most home and office labeling, yes. Labelary uses your phone and printer, adds photos, and avoids cartridge costs."],
+          ["Does Labelary need special hardware?", "No. It works with a phone and a standard printer, unlike a dedicated label machine."],
           ["When is a label maker machine still better?", "When you need durable, water-resistant tape for tough environments. For everyday labels the app is more flexible."],
-          ["Can SnapLabel use photos on labels?", "Yes. SnapLabel can put a photo on a label, which most tape machines cannot."]
+          ["Can Labelary use photos on labels?", "Yes. Labelary can put a photo on a label, which most tape machines cannot."]
         ]
       }
     ]
@@ -1791,9 +1791,9 @@ addExtra(
   "snaplabel-photo-text-label",
   "snaplabel-vs-spreadsheet-label-list",
   "a Spreadsheet Label List",
-  "SnapLabel vs a Spreadsheet Label List",
-  "SnapLabel vs spreadsheet label lists: compare photo labels, batch printing, reusable designs, and home organization workflows.",
-  "A spreadsheet can store names for bins or pantry items, but it does not create the label experience. SnapLabel focuses on turning text and photos into printable labels without building a separate template workflow.",
+  "Labelary vs a Spreadsheet Label List",
+  "Labelary vs spreadsheet label lists: compare photo labels, batch printing, reusable designs, and home organization workflows.",
+  "A spreadsheet can store names for bins or pantry items, but it does not create the label experience. Labelary focuses on turning text and photos into printable labels without building a separate template workflow.",
   [
     ["Label design", "Built in", "Needs another tool"],
     ["Photo labels", "Supported", "Not native"],
@@ -1801,13 +1801,13 @@ addExtra(
     ["Reprints", "Fast", "Find and rebuild"],
     ["Best use", "Storage and pantry labels", "Inventory lists"]
   ],
-  "SnapLabel wins when the output is the label itself. You can make readable labels from text or photos without maintaining rows, columns, and a separate print template.",
-  "A spreadsheet still makes sense for a large inventory list or audit trail. Use the spreadsheet for records and SnapLabel for the actual labels people read.",
+  "Labelary wins when the output is the label itself. You can make readable labels from text or photos without maintaining rows, columns, and a separate print template.",
+  "A spreadsheet still makes sense for a large inventory list or audit trail. Use the spreadsheet for records and Labelary for the actual labels people read.",
   [
-    ["Is SnapLabel better than a spreadsheet for labels?", "For making labels, yes. A spreadsheet stores data; SnapLabel creates printable labels."],
-    ["Can SnapLabel make photo labels?", "Yes. That is useful for bins, classrooms, and visual storage systems."],
+    ["Is Labelary better than a spreadsheet for labels?", "For making labels, yes. A spreadsheet stores data; Labelary creates printable labels."],
+    ["Can Labelary make photo labels?", "Yes. That is useful for bins, classrooms, and visual storage systems."],
     ["When should I use a spreadsheet?", "Use one when you need a long inventory record or totals, not just labels."],
-    ["Can SnapLabel reprint labels?", "Yes. It is built for repeatable label creation and reprints."]
+    ["Can Labelary reprint labels?", "Yes. It is built for repeatable label creation and reprints."]
   ]
 );
 
@@ -2583,9 +2583,9 @@ addExtra(
   "snaplabel-photo-text-label",
   "snaplabel-vs-printing-labels-in-word",
   "Printing Labels in Word",
-  "SnapLabel vs Printing Labels in Word",
-  "SnapLabel vs printing labels in Word: compare mobile label creation, photo labels, template setup, and faster home organization.",
-  "Word can print labels, but it is a document-layout workflow. SnapLabel is a label workflow, which matters when you want to make and reprint labels from a phone.",
+  "Labelary vs Printing Labels in Word",
+  "Labelary vs printing labels in Word: compare mobile label creation, photo labels, template setup, and faster home organization.",
+  "Word can print labels, but it is a document-layout workflow. Labelary is a label workflow, which matters when you want to make and reprint labels from a phone.",
   [
     ["Setup", "Label-focused", "Template document"],
     ["Mobile use", "Built for phone", "Desktop-oriented"],
@@ -2593,13 +2593,13 @@ addExtra(
     ["Reprints", "Fast", "Find the document"],
     ["Best use", "Home labels", "Office mail merges"]
   ],
-  "SnapLabel wins for everyday home and storage labels because it removes document setup. The app is closer to the actual job.",
+  "Labelary wins for everyday home and storage labels because it removes document setup. The app is closer to the actual job.",
   "Word is still useful for complex office templates or mail merge. It is heavier for pantry bins, cables, and storage labels.",
   [
-    ["Is SnapLabel easier than Word for labels?", "For everyday labels, yes. Word is more template-heavy."],
+    ["Is Labelary easier than Word for labels?", "For everyday labels, yes. Word is more template-heavy."],
     ["When should I use Word?", "For office mail merge or complex document-based label sheets."],
-    ["Can SnapLabel use photos?", "Yes. Photo labels are a key difference."],
-    ["Who should use SnapLabel?", "People labeling storage, pantry items, boxes, classrooms, or small-business products."]
+    ["Can Labelary use photos?", "Yes. Photo labels are a key difference."],
+    ["Who should use Labelary?", "People labeling storage, pantry items, boxes, classrooms, or small-business products."]
   ]
 );
 
