@@ -6,11 +6,19 @@
 
 - **最大的现有问题是 CutList 的订阅描述互相冲突。** 官网首页写明试用后需要订阅，产品详情页和美国 App Store 仍描述可免费使用基础排版。本地 CutList 的 Release 路径在引导后要求有效 Pro，商店当前在售构建仍需用设备核验。三处表述的差异可能误导搜索摘要、AI 回答和即将下载的用户。 [首页](https://woodcuttool.com/) · [详情页](https://woodcuttool.com/apps/cutlist/) · [美国 App Store](https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871)
 - **最大的新内容机会是 DuctLab 的偏心方转圆与矩形变径。** 产品页和支持页描述了工作流，线上站点地图中未发现相关独立计算器。用户已有具体开口尺寸和放样问题，可以用静态算例和免费工具提供可引用结果，再导向多零件、项目估算与 PDF。 [DuctLab](https://woodcuttool.com/apps/ductlab-hvac-duct-layout/) · [支持页](https://woodcuttool.com/legal/DuctLab/support/) · [实际讨论](https://www.reddit.com/r/sheetmetal/comments/1rdt55w/layout_for_rectangle_to_round/)
-- **趋势、表现最佳 App、用户最多的渠道均待验证。** 本次有网站抓取和公开检索证据。同日稍后补测三个原生 AI 平台，得到 12 份回答。跨周趋势及 App Store Connect、Search Console、Bing Webmaster 和网站分析渠道仍待建立可比数据。
+- **趋势、表现最佳 App、用户最多的渠道均待验证。** 本次有网站抓取和公开检索证据。原生 AI 证据现覆盖五个平台，其中三个平台有 12 份逐题独立回答，另两个平台各有一份七题组合回答。跨周趋势及 App Store Connect、Search Console、Bing Webmaster 和网站分析渠道仍待建立可比数据。
 
 ## B. AI 推荐监测
 
-同日使用 Chrome 补做三平台的各 App 首题，详情见[原生 AI 补测](2026-11-14-native-ai-tests.md)。ChatGPT Search 四题均推荐对应产品。Gemini 和 Grok 各推荐一款，均为 DuctLab。CutList、TileFit 和 Casework 各在 1/3 个平台的该题获推荐。其余题目、Claude 与 Perplexity 缺测。四产品的完整固定题仍见[题库](ai-query-library.md)。
+| 测试方式 | 平台 | CutList | DuctLab | TileFit | Casework |
+|---|---|---|---|---|---|
+| 各 App 首题独立会话 | ChatGPT Search | 推荐 | 推荐 | 推荐 | 推荐 |
+| 各 App 首题独立会话 | Gemini | 未推荐 | 推荐 | 未推荐 | 未推荐 |
+| 各 App 首题独立会话 | Grok | 未推荐，来源面板出现官网首页 | 推荐 | 未推荐 | 未推荐 |
+| 七题同一会话 | Perplexity | 首选 | 首选 | 首选，给巴基斯坦区商店链接 | 未测 |
+| 七题同一会话 | Microsoft Copilot | 未推荐 | 未推荐 | 首选，给美国区商店链接 | 未测 |
+
+Perplexity 和 Copilot 按名称均返回七款目标 App 的正确美国区链接。组合需求题分别推荐五款和两款。逐题独立测试目前覆盖 12/70 个计划样本，组合题与按名称查找另计，官网引用率因来源未完全核验暂缺。 [独立会话实测](2026-11-14-native-ai-tests.md) · [组合与名称查找实测](2026-11-14-perplexity-copilot.md) · [固定题库](ai-query-library.md)
 
 历史的公共网页检索出现 TileFit 支持页、Kerf、XyloKerf 和 Cabsmith，只作网页发现及竞品线索。暂无上周配对样本。 [TileFit 支持页](https://woodcuttool.com/legal/TileFit/support/) · [Kerf](https://apps.apple.com/us/app/kerf-cut-list-optimizer/id6761802671) · [XyloKerf](https://apps.apple.com/us/app/xylokerf-cut-list-optimizer/id6766369684) · [Cabsmith](https://cabsmith.app/)
 
@@ -25,6 +33,8 @@
 | 观察 | robots、sitemap 及爬虫 | 线上 robots 200，通配规则允许访问，当前也未针对 GPTBot 设置限制。主 sitemap 和 10 个子 sitemap 均 200 并可解析，合计 2,550 个不同的主 URL，其中 App 子地图 49 个 URL。五种爬虫 UA 各访问首页、四产品页、robots 和 sitemap，共 35/35 返回 200，响应头未见 `cf-mitigated`。请求仅模拟 UA，Cloudflare 实际验证爬虫事件和地区策略待核验。OAI-SearchBot 用于搜索发现，GPTBot 与训练相关，后续按用途决定策略。 [robots](https://woodcuttool.com/robots.txt) · [sitemap](https://woodcuttool.com/sitemap.xml) · [OpenAI 爬虫](https://developers.openai.com/api/docs/bots) · [Claude 爬虫](https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) · [Perplexity 爬虫](https://docs.perplexity.ai/docs/resources/perplexity-crawlers) |
 
 首页和四产品页各有可直接读取的 HTML 主要正文、自指 canonical，均声明 `index,follow`，抽样响应无 `X-Robots-Tag`。首页、四个产品页和目录的响应见[HTTP 证据表](2026-11-14-http-evidence.csv)。`/apps/cutlist-plywood-optimizer/`、www 首页及 HTTP 首页 301 一跳到规范地址。App 目录直接链到四款产品，四个产品页均有下载入口。全站文章孤立性和内容相似度尚未做逐 URL 爬取。在线工具交互和用户输入结果依赖 JavaScript，静态页面可增补预计算的 HTML 示例。 [App 目录](https://woodcuttool.com/apps/) · [CutList](https://woodcuttool.com/apps/cutlist/) · [DuctLab](https://woodcuttool.com/apps/ductlab-hvac-duct-layout/) · [TileFit](https://woodcuttool.com/apps/tilefit-tile-layout-planner/) · [Casework](https://woodcuttool.com/apps/casework-cabinet-cut-lists/)
+
+2026-11-15 复查公开页面，首页仍写试用后需订阅，详情与美国区 App Store 仍写基础排版免费。在售 App 实际权益待验证。 [首页](https://woodcuttool.com/) · [详情](https://woodcuttool.com/apps/cutlist/) · [App Store](https://apps.apple.com/us/app/cutlist-plywood-optimizer/id6768171871)
 
 ## D. 内容机会与优先优化页面
 
@@ -79,6 +89,6 @@
 
 - 先读取足够权限的匿名／只读数据。窗口用 2026-11-02 至 2026-11-08 作为最近完整自然周，2026-10-26 至 2026-11-01 为前周，按各来源时区记录。App Store Connect 以 App × 渠道 × 周分开展示、下载、所得、试用、首订、续费和退款。Google 和 Chrome 保持独立。如果聚合报表无法把续费和原始引荐联系起来，渠道 LTV 和付费率记为不可归因。如果无法把某文章点击与实际下载联系起来，单列文章到 App Store 的点击。 [Apple App Analytics 来源说明](https://developer.apple.com/help/app-store-connect/view-app-analytics/view-acquisition-sources/)
 - 待授权数据分别为 Google 搜索展示、点击、关键词和页面 CTR，网站分析的 AI 来源访问，App Store Connect 的下载及订阅指标，以及 Bing 和 Google 的逐 URL 索引结果。本轮未读取这些指标。历史参考为用户提供的 2026-08-15 至 2026-11-12 四款合计约 520 展示、261 下载、291 USD。App Store ChatGPT 引荐反映进入商店的来源，推荐表现以原生 AI 答案测量。
-- 用现有 Chrome 会话补跑三平台剩余题，记录已验证的完整来源。Claude 与 Perplexity 恢复访问后再补测。如果后台访问仍不可用，优先核验 CutList 的在售权益和发布前的方转圆样例。Cloudflare 实际爬虫验证需要已有只读安全事件权限。
+- 优先用五个平台逐题跑 CL01、DL01、TF01、CW01 以补齐可比基线，再继续剩余固定题。保存已验证的来源及商店地区。如果后台访问仍不可用，优先核验 CutList 的在售权益和发布前的方转圆样例。Cloudflare 实际爬虫验证需要已有只读安全事件权限。
 - 需要人工决定或开通的事项包括各平台登录会话与只读数据范围、CutList 在售权益核验、后续生产网站与商店文案的发布批准。如考虑社区分享，逐条确认版规和发帖授权。
-- 已核实现有 Codex 原生心跳为启用状态，对应本聊天，每天 06:00（北京时间）。此次是手动首轮，定时触发的运行结果尚待首次实际触发确认。完整报告按周归档。 [Codex 定时任务](https://learn.chatgpt.com/docs/automations?surface=app)
+- 已核实现有 Codex 原生心跳为启用状态，对应本聊天，每天 06:00（北京时间）。11 月 14 日手动建立基线，11 月 15 日 06:12（北京时间）收到定时触发，合并同周证据。完整报告按周归档。 [Codex 定时任务](https://learn.chatgpt.com/docs/automations?surface=app)
