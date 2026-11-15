@@ -56,13 +56,18 @@ let nextId = 0;
 const pending = new Map();
 let documentStatus = 0;
 let documentResponse = null;
+let documentRedirects = [];
 ws.addEventListener("message", ({ data }) => {
   const message = JSON.parse(data);
+  if (message.method === "Network.requestWillBeSent" && message.params.type === "Document" && message.params.redirectResponse) {
+    const { request, redirectResponse } = message.params;
+    documentRedirects.push({ status: redirectResponse.status, from: redirectResponse.url, to: request.url });
+  }
   if (message.method === "Network.responseReceived" && message.params.type === "Document") {
     documentStatus = message.params.response.status;
     const response = message.params.response;
     const headers = Object.fromEntries(Object.entries(response.headers).map(([key, value]) => [key.toLowerCase(), value]));
-    documentResponse = { status: response.status, protocol: response.protocol, fromDiskCache: response.fromDiskCache || false,
+    documentResponse = { url: response.url, status: response.status, protocol: response.protocol, fromDiskCache: response.fromDiskCache || false,
       cacheControl: headers["cache-control"] || "", contentEncoding: headers["content-encoding"] || "",
       cacheStatus: headers["cf-cache-status"] || "", ray: headers["cf-ray"] || "" };
   }
@@ -142,6 +147,7 @@ try {
       await new Promise((resolve) => setTimeout(resolve, 100));
       documentStatus = 0;
       documentResponse = null;
+      documentRedirects = [];
       await send("Page.navigate", { url: `${origin}${route}` });
       await send("Page.bringToFront");
       await waitForReady();
@@ -184,6 +190,7 @@ try {
           htmlDownload: navigation ? navigation.responseEnd - navigation.responseStart : 0,
           navigationTiming: navigation ? {
             redirect: navigation.redirectEnd - navigation.redirectStart,
+            redirectCount: navigation.redirectCount,
             dns: navigation.domainLookupEnd - navigation.domainLookupStart,
             connection: navigation.connectEnd - navigation.connectStart,
             tcp: (navigation.secureConnectionStart || navigation.connectEnd) - navigation.connectStart,
@@ -233,7 +240,7 @@ try {
         })`, true);
       }
 
-      rows.push({ route, run, documentResponse, ...data });
+      rows.push({ route, run, documentResponse, documentRedirects, ...data });
       console.log(`${route} run ${run}: LCP ${Math.round(data.lcp)} ms; load ${Math.round(data.load)} ms; TTFB ${Math.round(data.ttfb)} ms; transfer ${data.htmlTransfer + data.resourceTransfer} B`);
     }
   }

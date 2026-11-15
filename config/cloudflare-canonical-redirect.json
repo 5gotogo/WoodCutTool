@@ -4,6 +4,21 @@
   "phase": "http_request_dynamic_redirect",
   "rules": [
     {
+      "description": "WoodCutTool canonical paths for measured entry pages",
+      "expression": "(http.host in {\"woodcuttool.com\" \"www.woodcuttool.com\"} and http.request.method in {\"GET\" \"HEAD\"} and http.request.uri.path in {\"/legal/cutlist/privacy\" \"/plywood-cut-calculator\" \"/legal/YarnFit/privacy\" \"/blog/cutlist-ocr-for-handwritten-project-notes\" \"/legal/ThumbType/support\" \"/research/project-kerf-sensitivity-matrix\" \"/wood/walnut\" \"/checklists/drilling-boring-release\" \"/troubleshooting/repeated-parts-different-sizes\" \"/examples/entryway-table-cut-list\" \"/tools\" \"/checklists/appliance-opening-release\" \"/checklists/pocket-hole-assembly\" \"/legal/Casework/support\" \"/examples/assembly-table-cut-list\"})",
+      "action": "redirect",
+      "action_parameters": {
+        "from_value": {
+          "status_code": 308,
+          "target_url": {
+            "expression": "concat(\"https://woodcuttool.com\", http.request.uri.path, \"/\")"
+          },
+          "preserve_query_string": true
+        }
+      },
+      "enabled": true
+    },
+    {
       "description": "WoodCutTool canonical www to apex",
       "expression": "(http.host eq \"www.woodcuttool.com\")",
       "action": "redirect",

@@ -76,7 +76,7 @@ Use these settings when connecting the GitHub repository:
 - Framework preset: `None`
 - Build command: `npm run build`
 - Build output directory: `.`
-- Production branch: `master`
+- Production branch: `main`
 - Custom domain: `woodcuttool.com`
 
 The repository includes:
@@ -85,6 +85,19 @@ The repository includes:
 - `_routes.json` invokes Functions only for `/`, `/api/*`, and `/go/*`. All other HTML and resources use Pages' static delivery and built-in caching. The homepage retains the invalid search-template 410; API and CutList redirects retain their handlers.
 - `_redirects` for legacy paths and canonical `index.html` redirects. The zone Redirect Rule handles `www` to apex before static delivery. **Deploy that rule before publishing the narrowed Functions routes**, following [the delivery migration](docs/static-delivery-lcp-2026-10-12.md). Domain-level source URLs are unsupported in `_redirects`.
 - `wrangler.toml` for direct `wrangler pages deploy` compatibility.
+
+The [zone redirect configuration](config/cloudflare-canonical-redirect.json) also defines a rule for 15 entry pages seen in the November load report. The entry-page rule is active above the general WWW rule in Cloudflare **Rules → Redirect Rules**. It sends either hostname's slashless GET/HEAD URL straight to the HTTPS apex URL with a trailing slash and preserves the query string. Apply future zone rule changes separately from Pages deployments.
+
+After applying the rule, check that the legacy entry reaches the canonical page in one hop, and that the canonical URL still responds directly:
+
+```sh
+curl -sSL -o /dev/null -w '%{http_code} %{num_redirects} %{url_effective}\n' \
+  'https://www.woodcuttool.com/plywood-cut-calculator?source=test'
+curl -sSL -o /dev/null -w '%{http_code} %{num_redirects} %{url_effective}\n' \
+  'https://woodcuttool.com/plywood-cut-calculator/?source=test'
+```
+
+Expect `200 1` and `200 0`, respectively, with the same final URL. Disable the entry-page rule to roll back to Pages' default redirects. For browser probes, `npm run audit:performance` records the actual document redirect chain separately from Navigation Timing.
 
 ## Focused plywood runtime
 

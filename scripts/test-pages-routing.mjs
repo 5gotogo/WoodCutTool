@@ -34,7 +34,25 @@ const redirects = readFileSync(new URL("../_redirects", import.meta.url), "utf8"
 assert(redirects.every(line => line.split(/\s+/)[0].startsWith("/")), "Pages does not support domain-level redirect sources");
 const edgeRedirect = JSON.parse(readFileSync(new URL("../config/cloudflare-canonical-redirect.json", import.meta.url), "utf8"));
 assert.equal(edgeRedirect.phase, "http_request_dynamic_redirect");
-const [canonical] = edgeRedirect.rules;
+const [canonicalPaths, canonical] = edgeRedirect.rules;
+const canonicalPathFilter = canonicalPaths.expression.match(/^\(http.host in \{"woodcuttool.com" "www.woodcuttool.com"\} and http.request.method in \{"GET" "HEAD"\} and http.request.uri.path in \{((?:"\/[\w/-]+" ?)+)\}\)$/);
+assert(canonicalPathFilter, "Only explicitly listed GET/HEAD paths on the live hosts should match");
+const slashlessPaths = [...canonicalPathFilter[1].matchAll(/"([^"]+)"/g)].map(([, path]) => path);
+assert.equal(new Set(slashlessPaths).size, slashlessPaths.length, "Duplicate edge redirect source");
+assert(slashlessPaths.includes("/plywood-cut-calculator"), "Keep the reproduced double redirect covered");
+for (const path of slashlessPaths) {
+  assert(!path.endsWith("/") && !invokes(path) && !invokes(path + "/"), path);
+  assert(!redirects.some(line => line.split(/\s+/)[0] === path + "/"), `${path}: target would redirect again`);
+  const html = readFileSync(new URL(`../${path.slice(1)}/index.html`, import.meta.url), "utf8");
+  assert(html.includes(`rel="canonical" href="https://woodcuttool.com${path}/"`), `${path}: missing canonical target`);
+}
+assert.equal(canonicalPaths.action, "redirect");
+assert.equal(canonicalPaths.enabled, true);
+assert.deepEqual(canonicalPaths.action_parameters.from_value, {
+  status_code: 308,
+  target_url: { expression: 'concat("https://woodcuttool.com", http.request.uri.path, "/")' },
+  preserve_query_string: true,
+});
 assert.equal(canonical.expression, '(http.host eq "www.woodcuttool.com")');
 assert.equal(canonical.action, "redirect");
 assert.equal(canonical.enabled, true);
@@ -57,4 +75,4 @@ assert.equal(invalid.status, 410);
 assert.equal(invalid.headers.get("x-robots-tag"), "noindex");
 const sentinel = new Response("static HTML");
 assert.equal(await onRequest({ request: new Request("https://woodcuttool.com/wood/oak/"), next: () => sentinel }), sentinel);
-console.log(`Pages routing guards passed: ${staticPages} HTML paths and static resources bypass Functions; edge redirect manifest, dynamic www redirects, template 410 and endpoint invocation validated.`);
+console.log(`Pages routing guards passed: ${staticPages} HTML paths bypass Functions and ${slashlessPaths.length} entry aliases target canonical pages directly. Dynamic www redirects, template 410 and endpoint invocation validated.`);
