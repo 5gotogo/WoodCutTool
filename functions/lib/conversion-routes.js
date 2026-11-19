@@ -1905,6 +1905,8 @@ export const conversionRoutes = new Set([
   "/learn/woodworking/",
   "/learn/workbench-height-and-material-guide/",
   "/learn/workbench-material-planning-guide/",
+  "/legal/CabinetRefit/privacy/",
+  "/legal/CabinetRefit/support/",
   "/legal/Casework/privacy/",
   "/legal/Casework/support/",
   "/legal/CeilingGridFit/privacy/",

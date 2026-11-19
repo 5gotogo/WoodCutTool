@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-11-14",
-    "hash": "f9de271ac0a23cfd320f3f5241647d4c63121193587ffdf86f062acd1245a60c",
+    "lastmod": "2026-11-19",
+    "hash": "2ede85f9fd74e935ad7f9aef9048039e4fe0fbef5cc5f7e5528b4f6c55c3ef5c",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -9587,6 +9587,16 @@
   "/learn/workbench-material-planning-guide/": {
     "lastmod": "2026-09-08",
     "hash": "522591888abdf407d0dd8d495ac4457530a0fb0a9e0d2013fe5cfff089e1a6bb",
+    "hashVersion": 2
+  },
+  "/legal/CabinetRefit/privacy/": {
+    "lastmod": "2026-11-19",
+    "hash": "7512e3ae4aeb43d37cac7c789e33a25e482a0abb7b7fa1a42e5869c6f59d424a",
+    "hashVersion": 2
+  },
+  "/legal/CabinetRefit/support/": {
+    "lastmod": "2026-11-19",
+    "hash": "bef8c36516858512414977723517368dbf36dfde0ae73602fe6a5f1633740a07",
     "hashVersion": 2
   },
   "/legal/Casework/privacy/": {

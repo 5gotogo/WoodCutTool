@@ -180,7 +180,8 @@ const appSupportDirectory = [
   ["FabricNest", "/legal/FabricNest/privacy/", "/legal/FabricNest/support/"],
   ["YarnFit", "/legal/YarnFit/privacy/", "/legal/YarnFit/support/"],
   ["CushionCut", "/legal/CushionCut/privacy/", "/legal/CushionCut/support/"],
-  ["ReefRounds", "/legal/ReefRounds/privacy/", "/legal/ReefRounds/support/"]
+  ["ReefRounds", "/legal/ReefRounds/privacy/", "/legal/ReefRounds/support/"],
+  ["CabinetRefit", "/legal/CabinetRefit/privacy/", "/legal/CabinetRefit/support/"]
 ];
 
 const featuredApps = [
