@@ -65,6 +65,7 @@ const html = `<!doctype html>
       ${card("Edge Banding Planner", "Convert finished sizes to saw blanks, mark every edge, estimate tape, and send checked blanks to sheet layout.", "/edge-banding/", "Plan the edging")}
       ${card("Door Installation Studio", "Build a labeled door schedule, check hinge cup maps and keep-outs, record measured reveals, and follow twelve installation guides.", "/door-installation/", "Map the door installation")}
       ${card("Drawer Fit Studio", "Check slide side-space ranges at three mounting stations, derive box parts and equal fronts, and export your bench record.", "/drawer-fit/", "Plan drawer fit")}
+      ${card("Cabinet Refacing", "Survey existing cabinets, size inset or overlay doors, and export a replacement schedule.", "/cabinet-refacing/", "Plan replacement doors")}
       ${card("Cabinet Studio", "Design in live 3D, explode the assembly, check clearances, compare options, and export grain-aware sheet layouts and cut lists.", "/cabinet-studio/", "Open the design studio")}
       ${card("Plywood Cut Calculator", "Plan sheet layouts, parts, kerf, sheet count, layout preview, and estimated waste.", "/plywood-cut-calculator/")}
       ${card("Cut List Calculator", "Turn board inventory and part dimensions into a practical linear cutting plan.", "/cut-list-calculator/")}
@@ -134,6 +135,7 @@ const woodworkingGroups = [
     { name: "Wood Movement Planner", description: "Source-linked solid-wood coefficients, seasonal widths, opening reserve and edge displacement.", href: "/wood-movement/" },
     { name: "Finishing Planner", description: "Coated surfaces, separate products, coverage per coat, usable stock and package purchase quantities.", href: "/finishing-planner/" },
     { name: "Edge Banding Planner", description: "Finished-to-saw dimensions, per-edge profiles, tape allowances, CSV and sheet-layout handoff.", href: "/edge-banding/" },
+    { name: "Cabinet Refacing", description: "Eight field guides, a live door elevation and a CSV schedule for single or paired fronts.", href: "/cabinet-refacing/" },
     { name: "Cabinet Studio", description: "Live 3D cabinet design, smart geometry checks, exploded assembly, sheet layouts, and cut list exports.", href: "/cabinet-studio/" },
     { name: "Cut List Component Library", description: "Build reusable cabinet components and merge their parts into one exportable project list.", href: "/tools/components/" },
     ...woodworkingGenerated.map(asCard)

@@ -5,8 +5,8 @@
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-11-13",
-    "hash": "77ade84160d74b0a22b89bf8e378256c08aa4e5f0293a8e573a4a67984b7c1fc",
+    "lastmod": "2026-11-19",
+    "hash": "904df11c43b09fed6e349cab95c694cda79924cee4a1f1f4c83196d17b47e747",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -6134,9 +6134,54 @@
     "hash": "31821e10afa63f461bba42bf5598542ca41381d851d9078a703674a49af42153",
     "hashVersion": 2
   },
+  "/cabinet-refacing/": {
+    "lastmod": "2026-11-19",
+    "hash": "65f0dc5e3e6a42bcc4d2a24e36da4cfabdc4863644677ba160f47a8b0113bbff",
+    "hashVersion": 2
+  },
+  "/cabinet-refacing/choose-hinges-and-check-swing/": {
+    "lastmod": "2026-11-19",
+    "hash": "a2b5b620adb0798f966dadcf85c92efe8199306341d6301b73170286a6d57730",
+    "hashVersion": 2
+  },
+  "/cabinet-refacing/door-schedule-and-installation/": {
+    "lastmod": "2026-11-19",
+    "hash": "55cce9463bf8c3314a132da792c974073974b66793006758fdcc895760f20bb8",
+    "hashVersion": 2
+  },
+  "/cabinet-refacing/first-door-mockup/": {
+    "lastmod": "2026-11-19",
+    "hash": "fd333b9d6a2ae40aa595c0289a7ec8f134c363a59b92a9025d2efc4b0c376e02",
+    "hashVersion": 2
+  },
+  "/cabinet-refacing/inspect-existing-cabinets/": {
+    "lastmod": "2026-11-19",
+    "hash": "12bcf377e36a781864ff77a218762482be841ebdf5abff2daeccd5d1a5719f98",
+    "hashVersion": 2
+  },
+  "/cabinet-refacing/measure-finished-openings/": {
+    "lastmod": "2026-11-19",
+    "hash": "4dafbb45600e64e0eea1b66809ad354c327991a4efca30e4b97f91a56287d601",
+    "hashVersion": 2
+  },
+  "/cabinet-refacing/overlay-inset-and-paired-doors/": {
+    "lastmod": "2026-11-19",
+    "hash": "fc8c6047c656691987151911c42697e2cc17a3ec01ec23c1f80b146bfde0f56f",
+    "hashVersion": 2
+  },
+  "/cabinet-refacing/veneer-ends-and-finish-samples/": {
+    "lastmod": "2026-11-19",
+    "hash": "fd12bd2e96ab51a6ba5f22d77143c78dad0fb0608060d824b2b0ffebbfb8dd63",
+    "hashVersion": 2
+  },
+  "/cabinet-refacing/worked-example-overlay-pair/": {
+    "lastmod": "2026-11-19",
+    "hash": "feb77814314504a85fec840300dbdec8e0fbf8c8bcabbfc2da375523baa17015",
+    "hashVersion": 2
+  },
   "/cabinet-studio/": {
-    "lastmod": "2026-11-11",
-    "hash": "9ce4a34005b154f0cbf78d1317bc2d1fbac44ae179f2e807ceb89a1f2d7afe25",
+    "lastmod": "2026-11-19",
+    "hash": "b109f198ea287939f1cadfd050ff8cbbe4acdb59135d01e3472bb873ba1a8665",
     "hashVersion": 2
   },
   "/checklists/appliance-opening-release/": {
@@ -10855,8 +10900,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-11-13",
-    "hash": "8f2757257a00f0eed01c9809de5ba0cbc03ffbdc98ff68f930cfe1f4aaa41693",
+    "lastmod": "2026-11-19",
+    "hash": "1ec5a8bc88b1304174c4fffd73a1bd8092e21dc763011e19bd1dc93518df2264",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

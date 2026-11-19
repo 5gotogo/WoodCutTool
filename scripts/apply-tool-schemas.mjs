@@ -515,6 +515,7 @@ function toolsHubGraph() {
     },
     ...constructionTools.map((tool) => ({ path: tool.route, name: tool.name })),
     { path: "/solid-wood-milling/", name: "Solid Wood Milling" },
+    { path: "/cabinet-refacing/", name: "Cabinet Refacing" },
   ];
   const itemListElement = [...browserTools, ...referenceTools].map((tool, index) => ({
     "@type": "ListItem",
