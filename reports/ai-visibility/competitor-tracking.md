@@ -21,3 +21,7 @@
 1. **r/sheetmetal 的矩形转圆放样问题**。讨论给出了 22×10 和 16 英寸圆的真实端口尺寸。制作带明确轴高和偏移假设的公开图与真长表，按版规评估相似新帖的技术答复。 [讨论](https://www.reddit.com/r/sheetmetal/comments/1rdt55w/layout_for_rectangle_to_round/)
 2. **r/cabinetry 的柜体表格与排版对比**。准备一份无客户信息、可复算的 captured back 零件表及整板采购输出，有合规时机再分享。 [讨论](https://www.reddit.com/r/cabinetry/comments/1mpke03/cutlist_calculator_comparison_w_spreadsheet/)
 3. **r/Tile 的人字铺对齐争议**。准备门洞居中、空间居中两张同尺寸图并标注窄边条。先核对讨论是否仍适合回复及社区的自我推广规则。 [公开检索可见的讨论](https://www.reddit.com/r/Tile/comments/1m5xczw)
+
+## 2026-11-20：DL03 原生搜索观察
+
+ChatGPT Search 与 Perplexity 在同一方转圆问题下都推荐了 DuctLab 与 Transitions Layouts。后者是本轮跨平台重复出现的竞品，可对照分片和分段需求。Perplexity 另推荐 Sheet Metal Layout: Patterns，并按使用场景把 Trueflat 的 Android 和可打印／DXF 输出单列。ChatGPT 的 FabCalc 与 Platewrap 结果作为后续功能复核线索。该题仅各测一次。 [Transitions Layouts](https://apps.apple.com/us/app/transitions-layouts/id6757512792) · [Patterns](https://apps.apple.com/sr/app/sheet-metal-layout-patterns/id6791592420) · [Trueflat](https://play.google.com/store/apps/details?id=com.heyisoft.trueflat) · [当日搜索记录](2026-11-20-daily-report.md)
