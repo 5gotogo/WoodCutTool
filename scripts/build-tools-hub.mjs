@@ -54,6 +54,7 @@ const html = `<!doctype html>
       </div>
     </section>
     <section class="section">${visualHeading("Woodworking", "Cut lists, plywood, cabinets, lumber, and shop math.", "Start here when the material will be cut in the shop. Use the quick calculators for a first estimate, then move confirmed part dimensions into a sheet layout.", "/assets/images/tools/tools-cut-layout.webp", "Plywood sheets and cabinet parts organized around an efficient cutting layout")}<div class="grid tools">
+      ${card("Picture Framing", "Calculate long-point, rabbet and sight dimensions for four mitered parts and export a moulding cut list.", "/picture-framing/", "Plan a mitered frame")}
       ${card("Joinery Lab", "Six interactive joint planners, eighteen bench guides, live diagrams and browser-local CSV/SVG/JSON records.", "/joinery-lab/", "Choose a joint")}
       ${card("Shelf Pin Studio", "Map paired cabinet sides, preserve a measured grid, skip hardware bands and export CSV/SVG hole references.", "/shelf-pin-layout/", "Lay out the holes")}
       ${card("Glue-Up Planner", "Rehearse independent batches, compare open and total assembly deadlines, and export a timing review.", "/glue-up/", "Plan the dry run")}
@@ -122,6 +123,7 @@ const woodworkingGroups = [
     { name: "Kerf Calculator", description: "Estimate saw-cut material loss and remaining stock.", href: "/kerf-calculator/" }
   ] },
   { eyebrow: "Cabinet & Furniture", title: "Cabinet and furniture tools", description: "Generate cabinet, drawer, door, shelf, molding, and furniture planning dimensions.", cards: [
+    { name: "Picture Framing", description: "Size 45° miters, check the artwork stack and plan moulding cuts with eight bench guides.", href: "/picture-framing/" },
     { name: "Joinery Lab", description: "Dado, rabbet, half-lap, mortise-and-tenon, dowel and box-joint planners with eighteen field guides.", href: "/joinery-lab/" },
     { name: "Built-in Cabinet Scribing", description: "Survey wall gaps, size filler blanks with explicit allowances, and follow ten field guides.", href: "/built-in-scribe/" },
     { name: "Furniture Fit & Delivery", description: "Check a measured route through doors, lifts and recesses. Includes ten survey and handoff guides.", href: "/furniture-fit/" },

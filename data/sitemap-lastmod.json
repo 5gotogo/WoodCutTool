@@ -5,8 +5,8 @@
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-11-19",
-    "hash": "904df11c43b09fed6e349cab95c694cda79924cee4a1f1f4c83196d17b47e747",
+    "lastmod": "2026-11-20",
+    "hash": "bff8160f144092d66f282aedcefb44ca5630f99d5889776b4ba492bbdb09b8e8",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -8630,8 +8630,8 @@
     "hashVersion": 2
   },
   "/joinery-lab/": {
-    "lastmod": "2026-10-23",
-    "hash": "1fec0192f6627b6d9601d836ea8e5532f9d78c3d708566df7607009518ccaeba",
+    "lastmod": "2026-11-20",
+    "hash": "9469414cfe3b7d42c9d2770d23d0ba4e7453123b0976e4694430c31d51bce857",
     "hashVersion": 2
   },
   "/joinery-lab/blind-mortise-ends-and-corners/": {
@@ -8690,8 +8690,8 @@
     "hashVersion": 2
   },
   "/joinery-lab/fit-a-back-panel-seat/": {
-    "lastmod": "2026-10-23",
-    "hash": "71e0378a2348c12e02947274ffaf63e737d96783aaf57b8e14b671006f1c0ad4",
+    "lastmod": "2026-11-20",
+    "hash": "bfd9a66a9a258f569ac6f620f1529f6f9d0962f1f7b041fb4435352e2e999be5",
     "hashVersion": 2
   },
   "/joinery-lab/half-lap-planner/": {
@@ -8720,18 +8720,18 @@
     "hashVersion": 2
   },
   "/joinery-lab/rabbet-assembly-and-finish/": {
-    "lastmod": "2026-10-23",
-    "hash": "fecb96bb100cbe6fddc6fbfcba0ea910414739b3afc97ba3c952e51090e4b7aa",
+    "lastmod": "2026-11-20",
+    "hash": "01baa0add1f8cd01db284c0555d6bb9b6ce6ed3e03fff0aba809118092fd4cae",
     "hashVersion": 2
   },
   "/joinery-lab/rabbet-rebate-planner/": {
-    "lastmod": "2026-10-23",
-    "hash": "f8fceae744ef2737b3d59feaf36a53517e82752836036ac99ed2f7386eab0ebe",
+    "lastmod": "2026-11-20",
+    "hash": "5178fc7156c7b36b9dfe0d4509b5ae5890570571f16a8be8d199ed3a902d6cd7",
     "hashVersion": 2
   },
   "/joinery-lab/rabbet-shoulder-and-case-size/": {
-    "lastmod": "2026-10-23",
-    "hash": "c7c8e59c9b874978854c0849ae2d5c24ae01bdc386951ee3d9b05c26d8842a9a",
+    "lastmod": "2026-11-20",
+    "hash": "53b1c46a4f3027ee9b964151d9cc2903e1605704c16d1b01e49c9993bab527d3",
     "hashVersion": 2
   },
   "/joinery-lab/repeatable-lap-shoulders/": {
@@ -9934,6 +9934,51 @@
     "hash": "5a6d755e4d9954bb1be6594389d3660d233d9c609d8df3eddc4e069a92442a88",
     "hashVersion": 2
   },
+  "/picture-framing/": {
+    "lastmod": "2026-11-20",
+    "hash": "2132953ad4f753acb672dbb7e1c4869841883188a45170bb16ef1df37e1bec65",
+    "hashVersion": 2
+  },
+  "/picture-framing/dry-fit-and-assemble/": {
+    "lastmod": "2026-11-20",
+    "hash": "81ddb6ff5a091ac9ec255f0574366601748a7d42ce134947701e2f291507956c",
+    "hashVersion": 2
+  },
+  "/picture-framing/estimate-moulding-and-kerf/": {
+    "lastmod": "2026-11-20",
+    "hash": "7cf074d3ca8e07cbde4a6b0aaa1941891bdb8b423563b4bd552faae66e6fdc29",
+    "hashVersion": 2
+  },
+  "/picture-framing/glazing-and-rabbet-depth/": {
+    "lastmod": "2026-11-20",
+    "hash": "47ef94cf839cbff11511ed08e9aaf297d75be7f69c7b519cc1a826079678773b",
+    "hashVersion": 2
+  },
+  "/picture-framing/measure-artwork-and-mat/": {
+    "lastmod": "2026-11-20",
+    "hash": "7b7aafe3423b531d3c6fff4d6b18ee103fe013f626f6e6e3ac9260bb57cb4dfb",
+    "hashVersion": 2
+  },
+  "/picture-framing/rabbet-sight-and-long-point/": {
+    "lastmod": "2026-11-20",
+    "hash": "90aceae0407b8631766447b83239af03dc6fb5738d6c5dd4bfcefca0b52f52f6",
+    "hashVersion": 2
+  },
+  "/picture-framing/test-45-degree-miters/": {
+    "lastmod": "2026-11-20",
+    "hash": "d8a1a22b02563c0b56fabe0c0436d9723c47a168fd49c5539c9511cbee1a0194",
+    "hashVersion": 2
+  },
+  "/picture-framing/troubleshoot-miter-gaps/": {
+    "lastmod": "2026-11-20",
+    "hash": "5223e696f1705a5f310948487996f8ae6daff33e1701248c04cf8235a3151abc",
+    "hashVersion": 2
+  },
+  "/picture-framing/worked-example-walnut-frame/": {
+    "lastmod": "2026-11-20",
+    "hash": "7ba7ac730c6819accb8b6acc190d93526203e0c19ae9c28747f3553f14f63008",
+    "hashVersion": 2
+  },
   "/post-hole-concrete-calculator/": {
     "lastmod": "2026-09-16",
     "hash": "5775d944e517e71782ff4d60650094b99c0559b658715e4320a05c70614607c1",
@@ -10900,8 +10945,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-11-19",
-    "hash": "1ec5a8bc88b1304174c4fffd73a1bd8092e21dc763011e19bd1dc93518df2264",
+    "lastmod": "2026-11-20",
+    "hash": "c94bcfb5baa6f367a88c208dcf787d433643368c0c1f5261f1a1ea8f3b594e4d",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

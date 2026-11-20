@@ -74,7 +74,7 @@ function applySiteChromeScript(html) {
 }
 
 function isLcpTailPage(file, html) {
-  return file === "index.html" || /^(?:learn|worksheets|troubleshooting|templates|apps|compare|wood-database|checklists|legal|plywood-cut-calculator|glossary|finishing-planner|edge-banding|cabinet-studio|cabinet-refacing|wood-movement|glue-up|shelf-pin-layout|joinery-lab|drawer-fit|door-installation)\//.test(file) || html.includes("data-construction-form") || file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/archive/index.html");
+  return file === "index.html" || /^(?:learn|worksheets|troubleshooting|templates|apps|compare|wood-database|checklists|legal|plywood-cut-calculator|glossary|finishing-planner|edge-banding|cabinet-studio|cabinet-refacing|picture-framing|wood-movement|glue-up|shelf-pin-layout|joinery-lab|drawer-fit|door-installation)\//.test(file) || html.includes("data-construction-form") || file.startsWith("wood/") || (file.startsWith("blog/") && file !== "blog/archive/index.html");
 }
 
 function applyConversionScript(html, file) {

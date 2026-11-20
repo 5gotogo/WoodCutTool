@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-11-19</lastmod><changefreq>weekly</changefreq><priority>0.96</priority>
+  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-11-20</lastmod><changefreq>weekly</changefreq><priority>0.96</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-hero.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-cut-layout.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/compare/compare-construction.webp</image:loc></image:image>
@@ -131,7 +131,7 @@
   <url><loc>https://woodcuttool.com/glue-up/rehearse-and-split-batches/</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/glue-up/release-and-record/</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/inch-mm-converter/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/blind-mortise-ends-and-corners/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/box-joint-count-and-remainder/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/box-joint-depth-unequal-panels/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -143,15 +143,15 @@
   <url><loc>https://woodcuttool.com/joinery-lab/dowel-bore-depth-and-tip/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/dowel-row-planner/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/dowel-row-spacing-and-drift/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/fit-a-back-panel-seat/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/fit-a-back-panel-seat/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/half-lap-planner/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/map-corresponding-dowel-faces/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/measure-plywood-for-a-dado/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/mortise-tenon-planner/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/opposing-dado-datums/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/rabbet-assembly-and-finish/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/rabbet-rebate-planner/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://woodcuttool.com/joinery-lab/rabbet-shoulder-and-case-size/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/rabbet-assembly-and-finish/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/rabbet-rebate-planner/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/joinery-lab/rabbet-shoulder-and-case-size/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/repeatable-lap-shoulders/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/tenon-fit-coupon-record/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/joinery-lab/through-versus-stopped-housings/</loc><lastmod>2026-10-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -169,6 +169,16 @@
   <url><loc>https://woodcuttool.com/offcut-planner/reuse-or-buy/</loc><lastmod>2026-09-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/picket-spacing-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/compare/compare-construction-800.webp</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/picture-framing/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.94</priority>
+    <image:image><image:loc>https://woodcuttool.com/assets/images/picture-framing/walnut-frame.webp</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/picture-framing/dry-fit-and-assemble/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/picture-framing/estimate-moulding-and-kerf/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/picture-framing/glazing-and-rabbet-depth/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/picture-framing/measure-artwork-and-mat/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/picture-framing/rabbet-sight-and-long-point/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/picture-framing/test-45-degree-miters/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/picture-framing/troubleshoot-miter-gaps/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/picture-framing/worked-example-walnut-frame/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/post-hole-concrete-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/compare/compare-construction-800.webp</image:loc></image:image></url>
   <url><loc>https://woodcuttool.com/rafter-length-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
@@ -225,7 +235,7 @@
   <url><loc>https://woodcuttool.com/tools/construction/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/compare/compare-construction.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/learn/stair-planning.webp</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/tools/woodworking/</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+  <url><loc>https://woodcuttool.com/tools/woodworking/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-cut-layout.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-cabinet.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-measurement.webp</image:loc></image:image></url>
