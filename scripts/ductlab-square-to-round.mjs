@@ -1,14 +1,12 @@
 import { breadcrumbJsonLd, SITE } from "./seo-meta.mjs";
-import { ductLabChinaProductPath } from "../functions/lib/app-store.js";
 
 export const ductLabSlug = "ductlab-hvac-duct-layout";
 export const ductLabPath = `/apps/${ductLabSlug}/`;
 export const squareToRoundPath = `${ductLabPath}square-to-round-example/`;
+export const squareToRoundLinkText = "Offset square-to-round worked example";
 export const ductLabLead = "Lay out HVAC sheet-metal fittings on iPhone. Calculate fitting dimensions, estimate sheet stock and cost, and export fabrication PDFs offline.";
-const chinaStoreUrl = `https://apps.apple.com${ductLabChinaProductPath}`;
 const supportPath = "/legal/DuctLab/support/";
 
-export const chinaStoreLink = `<a href="${chinaStoreUrl}" rel="noopener noreferrer">China mainland App Store</a>`;
 export const ductLabStylesheet = '<link rel="stylesheet" href="/assets/ductlab-example.css">';
 
 export function fittingOverview() {
@@ -20,8 +18,7 @@ export function fittingOverview() {
       </div>
       <div class="ductlab-grid">
         <a class="ductlab-card ductlab-example-card" href="${squareToRoundPath}">
-          <h3>Square to round</h3><p>Lay out a square or rectangular opening to a round outlet. Enter the diameter, axial length, offsets, and round divisions.</p>
-          <strong>See the 22 × 10 in to Ø16 in worked example →</strong>
+          <h3>${squareToRoundLinkText}</h3><p>Follow a 22 × 10 in rectangular inlet to a Ø16 in round outlet from off-center dimensions through true-length tables and all four flat panels.</p>
         </a>
         <div class="ductlab-card"><h3>Rectangular transition</h3><p>Compare the four panel slopes and centerline true length from two rectangular openings and their offsets.</p></div>
         <div class="ductlab-card"><h3>Duct offset</h3><p>Use rise and run to calculate true travel and offset angle for a four-face layout.</p></div>
@@ -138,7 +135,7 @@ ${head({ title: `${title} | WoodCutTool`, description, canonical, jsonLd }).repl
         <p class="breadcrumb"><a href="/apps/">Apps</a> / <a href="${ductLabPath}">DuctLab</a> / Worked example</p>
         <p class="eyebrow">HVAC sheet-metal layout · Worked example</p>
         <h1>${title}</h1>
-        <p class="lead">Develop a 22 × 10 in rectangular inlet to a Ø16 in round outlet over 12 in of axial length. The outlet center shifts 3 in right and 2 in up, so matching edges on opposite panels have different true lengths.</p>
+        <p class="lead">This offset square-to-round duct layout connects a ${width} × ${height} in rectangular inlet to a Ø${diameter} in round outlet over ${length} in, with the outlet center shifted ${xOffset} in right and ${yOffset} in up. With ${divisions} divisions at ${angleStep}° each, the developed round edge uses ${fmt(chord)} in chords. The true seam lengths are ${fmt(panels[0].rows[0].a)} in from A to P0 and ${fmt(panels[2].rows[0].a)} in from the opposite corner C to P8.</p>
         <nav class="app-detail-actions" aria-label="On this page">
           <a class="button secondary" href="#dimensions">Input dimensions</a>
           <a class="button secondary" href="#true-lengths">True-length tables</a>
@@ -187,12 +184,14 @@ ${head({ title: `${title} | WoodCutTool`, description, canonical, jsonLd }).repl
       <section class="ductlab-card ductlab-close" aria-labelledby="ductlab-next">
         <p class="eyebrow">Continue in DuctLab</p>
         <h2 id="ductlab-next">Save fittings and estimate a job</h2>
-        <p>DuctLab’s Square to Round layout accepts these opening dimensions, offsets and divisions on iPhone. The app provides summary measurements, a fitting preview, material estimates and PDF export. The point-by-point true lengths and flat panels above are calculated for this web example.</p>
+        <p>DuctLab for iPhone accepts the same opening sizes, axial length and offsets. Choose 8–48 round divisions to calculate circumference, arc spacing and angle per division, summary corner and side true lengths, and estimated sheet area. The point-by-point seam lengths and four flat panel drawings above are calculated for this web example.</p>
+        <p>Save the fitting to a job to export a multi-page fabrication PDF from the app. It includes the job’s material estimate and part pages with dimensions, diagrams, measurements and layout steps. PDF generation runs on the iPhone, and you can save, share or print the file.</p>
+        <p class="ductlab-store-note">The web example is free to read. DuctLab is free to download and requires an active subscription to use, including for PDF export. <a href="${app.url}" rel="noopener noreferrer">Verify features and subscription details on the App Store</a>.</p>
         <div class="app-detail-actions">
           <a class="button" href="${app.url}" rel="noopener noreferrer">Download DuctLab on App Store</a>
           <a class="button secondary" href="${ductLabPath}">Explore DuctLab</a>
         </div>
-        <p class="ductlab-store-note">An active subscription is required to use the app. ${chinaStoreLink} · <a href="${supportPath}">DuctLab support</a></p>
+        <p class="ductlab-store-note"><a href="${supportPath}">DuctLab support</a></p>
       </section>
     </article>
   </main>

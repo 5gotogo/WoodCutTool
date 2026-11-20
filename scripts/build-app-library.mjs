@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { ogTags } from "./seo-meta.mjs";
 import { compareData } from "./app-compare-data.mjs";
 import { appStoreThumbnail, appStoreScreenshotSources } from "./app-store-images.mjs";
-import { chinaStoreLink, ductLabLead, ductLabSlug, ductLabStylesheet, fittingOverview, squareToRoundPage, squareToRoundPath } from "./ductlab-square-to-round.mjs";
+import { ductLabLead, ductLabSlug, ductLabStylesheet, fittingOverview, squareToRoundLinkText, squareToRoundPage, squareToRoundPath } from "./ductlab-square-to-round.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const version = "20260701-nav";
@@ -850,7 +850,7 @@ function appDetailPage(app, index) {
   const legalLinks = legalLinksBySlug[app.slug];
   const isDuctLab = app.slug === ductLabSlug;
   const secondaryAction = isDuctLab
-    ? `<a class="button secondary" href="${squareToRoundPath}">See a square-to-round example</a>`
+    ? `<a class="button secondary" href="${squareToRoundPath}">${squareToRoundLinkText}</a>`
     : app.slug === "tinnitus-relief-sound-masking"
     ? '<a class="button secondary" href="/tinnitus/">Explore the sound masking guide</a>'
     : '<a class="button secondary" href="/apps/">Back to apps</a>';
@@ -880,7 +880,7 @@ ${head({
         ${app.storeNameNote ? `<p>${escapeHtml(app.storeNameNote)}</p>\n        ` : ""}<div class="app-detail-actions">
           <a class="button" href="${escapeHtml(app.url)}" rel="noopener noreferrer">Download on App Store</a>
           ${secondaryAction}
-        </div>${isDuctLab ? `\n        <p class="ductlab-store-note">An active subscription is required to use the app. ${chinaStoreLink}</p>` : ""}
+        </div>${isDuctLab ? '\n        <p class="ductlab-store-note">An active subscription is required to use the app.</p>' : ""}
       </div>
       ${detailVisual(app, index)}
     </section>

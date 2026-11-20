@@ -6,6 +6,7 @@ import { setTimeout as delay } from "node:timers/promises";
 import { dirname, extname, join, normalize, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { onRequest as recordConversion } from "../functions/api/conversion-event.js";
+import { onRequest as redirectAppStore } from "../functions/go/app-store.js";
 import { onRequest as redirectCutList } from "../functions/go/cutlist.js";
 
 import { onRequest as conversionReport } from "../functions/api/conversion-report.js";
@@ -151,8 +152,14 @@ async function handle(request, response) {
     response.end(JSON.stringify({
       status: "ok",
       staticRoot: root,
-      functions: ["/go/cutlist/", "/api/conversion-event"],
+      functions: ["/go/app-store/", "/go/cutlist/", "/api/conversion-event"],
     }));
+    return;
+  }
+
+  if (url.pathname === "/go/app-store" || url.pathname === "/go/app-store/") {
+    const result = await redirectAppStore({ request: await webRequest(request, url) });
+    await sendWebResponse(result, response);
     return;
   }
 
@@ -198,5 +205,5 @@ const server = createServer((request, response) => {
 
 server.listen(port, host, () => {
   console.log(`WoodCutTool local preview: http://127.0.0.1:${port}/`);
-  console.log("Cloudflare-compatible routes: /go/cutlist/ and /api/conversion-event");
+  console.log("Cloudflare-compatible routes: /go/app-store/, /go/cutlist/, and /api/conversion-event");
 });
