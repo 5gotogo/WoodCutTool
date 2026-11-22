@@ -54,6 +54,7 @@ const html = `<!doctype html>
       </div>
     </section>
     <section class="section">${visualHeading("Woodworking", "Cut lists, plywood, cabinets, lumber, and shop math.", "Start here when the material will be cut in the shop. Use the quick calculators for a first estimate, then move confirmed part dimensions into a sheet layout.", "/assets/images/tools/tools-cut-layout.webp", "Plywood sheets and cabinet parts organized around an efficient cutting layout")}<div class="grid tools">
+      ${card("Closet Layout", "Size shared uprights and shelf blanks, arrange hanging and shelf bays, and check four worked layouts.", "/closet-layout/", "Plan a closet run")}
       ${card("Picture Framing", "Calculate long-point, rabbet and sight dimensions for four mitered parts and export a moulding cut list.", "/picture-framing/", "Plan a mitered frame")}
       ${card("Joinery Lab", "Six interactive joint planners, eighteen bench guides, live diagrams and browser-local CSV/SVG/JSON records.", "/joinery-lab/", "Choose a joint")}
       ${card("Shelf Pin Studio", "Map paired cabinet sides, preserve a measured grid, skip hardware bands and export CSV/SVG hole references.", "/shelf-pin-layout/", "Lay out the holes")}
@@ -123,6 +124,7 @@ const woodworkingGroups = [
     { name: "Kerf Calculator", description: "Estimate saw-cut material loss and remaining stock.", href: "/kerf-calculator/" }
   ] },
   { eyebrow: "Cabinet & Furniture", title: "Cabinet and furniture tools", description: "Generate cabinet, drawer, door, shelf, molding, and furniture planning dimensions.", cards: [
+    { name: "Closet Layout", description: "Plan a measured closet run with up to eight bays, a live front view and an exportable panel schedule.", href: "/closet-layout/" },
     { name: "Picture Framing", description: "Size 45° miters, check the artwork stack and plan moulding cuts with eight bench guides.", href: "/picture-framing/" },
     { name: "Joinery Lab", description: "Dado, rabbet, half-lap, mortise-and-tenon, dowel and box-joint planners with eighteen field guides.", href: "/joinery-lab/" },
     { name: "Built-in Cabinet Scribing", description: "Survey wall gaps, size filler blanks with explicit allowances, and follow ten field guides.", href: "/built-in-scribe/" },

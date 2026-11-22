@@ -5,8 +5,8 @@
     "hashVersion": 2
   },
   "/tools/": {
-    "lastmod": "2026-11-20",
-    "hash": "bff8160f144092d66f282aedcefb44ca5630f99d5889776b4ba492bbdb09b8e8",
+    "lastmod": "2026-11-22",
+    "hash": "0f3f2bdac12d9eb23227fd77c8c3a0f8aa589576beb0ad3053d89572b23ee1dc",
     "hashVersion": 2
   },
   "/tools/components/": {
@@ -6070,8 +6070,8 @@
     "hashVersion": 2
   },
   "/built-in-scribe/": {
-    "lastmod": "2026-11-13",
-    "hash": "c9e70e330b06dc77e8aff590fe52387d7379352a2c71db0b91baccedd26ca562",
+    "lastmod": "2026-11-22",
+    "hash": "9dc61fb9a0192aa027c7352b9dbc1c92724f55ccf626a8e0e8540bd476abdc1e",
     "hashVersion": 2
   },
   "/built-in-scribe/alcove-desk-filler-example/": {
@@ -6532,6 +6532,121 @@
   "/checklists/wall-cabinet-installation/": {
     "lastmod": "2026-09-19",
     "hash": "9d8d131fb3452e8af7d6d10aa4492e74e0a8b7ede81dd290b90a5c15793fe985",
+    "hashVersion": 2
+  },
+  "/closet-layout/": {
+    "lastmod": "2026-11-22",
+    "hash": "806432738ac73eba2248ce678a5d1214acfa15c221f3cac1777762eb0e74235a",
+    "hashVersion": 2
+  },
+  "/closet-layout/align-bays-with-bypass-doors/": {
+    "lastmod": "2026-11-22",
+    "hash": "c4734eba67d49c9473bacf4eb44b1239808a8479acdd84f6cfe16bfb60133140",
+    "hashVersion": 2
+  },
+  "/closet-layout/allow-for-baseboards-and-fillers/": {
+    "lastmod": "2026-11-22",
+    "hash": "132d9706d38ea071fef8f27d15c7168731c18a6e3f5d72d44bc41203e19f4e4a",
+    "hashVersion": 2
+  },
+  "/closet-layout/check-panel-delivery-and-tilt/": {
+    "lastmod": "2026-11-22",
+    "hash": "ab2d6f5d7441505dee34e615e77b630b84fe8bac0d3bbe25760fdf1f494bda0b",
+    "hashVersion": 2
+  },
+  "/closet-layout/check-shelf-span-and-support/": {
+    "lastmod": "2026-11-22",
+    "hash": "27034765eaaaf7d42d75c8dc13e832ab188bc3a61b788fa5f38898cdc335ad47",
+    "hashVersion": 2
+  },
+  "/closet-layout/choose-sheet-goods-and-edges/": {
+    "lastmod": "2026-11-22",
+    "hash": "15c84e7e993179c9f1065581cfe81dc5dab871870d7a26780088acd1d40c2a57",
+    "hashVersion": 2
+  },
+  "/closet-layout/diagnose-rocking-and-binding/": {
+    "lastmod": "2026-11-22",
+    "hash": "2e644f6c017e5838a29967673d2f9c26b25c1a0f4a278f9c74d4a74686768099",
+    "hashVersion": 2
+  },
+  "/closet-layout/drill-adjustable-shelf-pins/": {
+    "lastmod": "2026-11-22",
+    "hash": "38b748e66dc60f4a9124706f8b40aebd5c84c1d9c402b9ac8e537c2387904c18",
+    "hashVersion": 2
+  },
+  "/closet-layout/example-bypass-doors/": {
+    "lastmod": "2026-11-22",
+    "hash": "a4fb22e3e9f11be510455423610c4d1a0db690ace065ac6eae2d63ce9f521e03",
+    "hashVersion": 2
+  },
+  "/closet-layout/example-linen/": {
+    "lastmod": "2026-11-22",
+    "hash": "21490e8023fd64078c1eda057cc5a245b7058281443c8d78189d2c9efed42d6a",
+    "hashVersion": 2
+  },
+  "/closet-layout/example-reach-in/": {
+    "lastmod": "2026-11-22",
+    "hash": "a08dd42d613e412d7906d70129b12267af7e1b24ebfc7a5a2a93d6377fb4af63",
+    "hashVersion": 2
+  },
+  "/closet-layout/example-walk-in/": {
+    "lastmod": "2026-11-22",
+    "hash": "e111f8ca063d239ad096f1409fce79e11d79ea2b7df0848ab59a167efa8dfb5c",
+    "hashVersion": 2
+  },
+  "/closet-layout/final-closet-walkthrough/": {
+    "lastmod": "2026-11-22",
+    "hash": "b3f4e143d67037bda2d66692912af2158ff0b9ec301284e9be65c8484388a57f",
+    "hashVersion": 2
+  },
+  "/closet-layout/level-the-base-and-uprights/": {
+    "lastmod": "2026-11-22",
+    "hash": "123412c026fc581fe764f04c556078ba7d191b9afd6f12d01f0b889e2323df2b",
+    "hashVersion": 2
+  },
+  "/closet-layout/map-doors-and-obstructions/": {
+    "lastmod": "2026-11-22",
+    "hash": "5427abc6b5fd891329919bb73b30fd18e416e464a26f7f0b79ccd5bb6e36e45f",
+    "hashVersion": 2
+  },
+  "/closet-layout/measure-at-three-heights/": {
+    "lastmod": "2026-11-22",
+    "hash": "64a9991bfefd2aef586dd984540ea4ea414904f655435943cd37097257df15a3",
+    "hashVersion": 2
+  },
+  "/closet-layout/plan-a-linen-shelf-stack/": {
+    "lastmod": "2026-11-22",
+    "hash": "a6101d111271e7a06ff77c1be31bc8fe13e4e1a4d81810bb26b82a161c0463fe",
+    "hashVersion": 2
+  },
+  "/closet-layout/plan-walk-in-corners/": {
+    "lastmod": "2026-11-22",
+    "hash": "be3aa251ef0d6486fc2056b2cb4e7ce359205fd5f0e59773f5cf0d6fe91c7833",
+    "hashVersion": 2
+  },
+  "/closet-layout/release-a-closet-parts-list/": {
+    "lastmod": "2026-11-22",
+    "hash": "b29e555b339f15aebec03fab7290c893aa4bad0f6070f38479bbdc6e8266b14e",
+    "hashVersion": 2
+  },
+  "/closet-layout/size-double-hanging/": {
+    "lastmod": "2026-11-22",
+    "hash": "23d7ebea9985af920095e6fbc465d13c08e60ba2c3a8bad6096f149039f3aa60",
+    "hashVersion": 2
+  },
+  "/closet-layout/size-rods-and-sockets/": {
+    "lastmod": "2026-11-22",
+    "hash": "88bac6cb281e4040474ff85f0957bb036103d99923c60250761e10ea8cca4498",
+    "hashVersion": 2
+  },
+  "/closet-layout/size-single-hanging/": {
+    "lastmod": "2026-11-22",
+    "hash": "2d40a447ea0ef8c727a5468194dcffa9173134b17d636173c8de91b032b6433f",
+    "hashVersion": 2
+  },
+  "/closet-layout/verify-wall-attachment/": {
+    "lastmod": "2026-11-22",
+    "hash": "c3eb6e08486518345f1433dfef2af4807750e691b5d10f339745619e5824de98",
     "hashVersion": 2
   },
   "/compare/": {
@@ -10945,8 +11060,8 @@
     "hashVersion": 2
   },
   "/tools/woodworking/": {
-    "lastmod": "2026-11-20",
-    "hash": "c94bcfb5baa6f367a88c208dcf787d433643368c0c1f5261f1a1ea8f3b594e4d",
+    "lastmod": "2026-11-22",
+    "hash": "44b5a887f65a0ada07a5cf17248b53e6662070701cd3a746e2bfc749f8e9e2e6",
     "hashVersion": 2
   },
   "/troubleshooting/adjustable-shelves-are-not-level/": {

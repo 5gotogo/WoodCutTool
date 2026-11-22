@@ -517,6 +517,7 @@ function toolsHubGraph() {
     { path: "/solid-wood-milling/", name: "Solid Wood Milling" },
     { path: "/cabinet-refacing/", name: "Cabinet Refacing" },
     { path: "/picture-framing/", name: "Picture Framing" },
+    { path: "/closet-layout/", name: "Closet Layout Planner" },
   ];
   const itemListElement = [...browserTools, ...referenceTools].map((tool, index) => ({
     "@type": "ListItem",

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-11-20</lastmod><changefreq>weekly</changefreq><priority>0.96</priority>
+  <url><loc>https://woodcuttool.com/tools/</loc><lastmod>2026-11-22</lastmod><changefreq>weekly</changefreq><priority>0.96</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-hero.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-cut-layout.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/compare/compare-construction.webp</image:loc></image:image>
@@ -24,7 +24,7 @@
   <url><loc>https://woodcuttool.com/assembly-check/tolerance-and-repeatability/</loc><lastmod>2026-10-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/baluster-spacing-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/compare/compare-construction-800.webp</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/built-in-scribe/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
+  <url><loc>https://woodcuttool.com/built-in-scribe/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
   <url><loc>https://woodcuttool.com/built-in-scribe/alcove-desk-filler-example/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/built-in-scribe/allocate-left-and-right-fillers/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/built-in-scribe/budget-filler-blank-width/</loc><lastmod>2026-11-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -49,6 +49,30 @@
   <url><loc>https://woodcuttool.com/cabinet-refacing/veneer-ends-and-finish-samples/</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/cabinet-refacing/worked-example-overlay-pair/</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/cabinet-studio/</loc><lastmod>2026-11-19</lastmod><changefreq>monthly</changefreq><priority>0.94</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.94</priority>
+    <image:image><image:loc>https://woodcuttool.com/assets/images/closet-layout/maple-closet.webp</image:loc></image:image></url>
+  <url><loc>https://woodcuttool.com/closet-layout/align-bays-with-bypass-doors/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/allow-for-baseboards-and-fillers/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/check-panel-delivery-and-tilt/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/check-shelf-span-and-support/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/choose-sheet-goods-and-edges/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/diagnose-rocking-and-binding/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/drill-adjustable-shelf-pins/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/example-bypass-doors/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/example-linen/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/example-reach-in/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/example-walk-in/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/final-closet-walkthrough/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/level-the-base-and-uprights/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/map-doors-and-obstructions/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/measure-at-three-heights/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/plan-a-linen-shelf-stack/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/plan-walk-in-corners/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/release-a-closet-parts-list/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/size-double-hanging/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/size-rods-and-sockets/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/size-single-hanging/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://woodcuttool.com/closet-layout/verify-wall-attachment/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/conversion/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/cost-estimator/</loc><lastmod>2026-07-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://woodcuttool.com/crown-molding-angle-calculator/</loc><lastmod>2026-09-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
@@ -235,7 +259,7 @@
   <url><loc>https://woodcuttool.com/tools/construction/</loc><lastmod>2026-09-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/compare/compare-construction.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/learn/stair-planning.webp</image:loc></image:image></url>
-  <url><loc>https://woodcuttool.com/tools/woodworking/</loc><lastmod>2026-11-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+  <url><loc>https://woodcuttool.com/tools/woodworking/</loc><lastmod>2026-11-22</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-cut-layout.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-cabinet.webp</image:loc></image:image>
     <image:image><image:loc>https://woodcuttool.com/assets/images/tools/tools-measurement.webp</image:loc></image:image></url>

@@ -136,6 +136,7 @@ page(base, "Built-in Cabinet Scribing and Filler Planner",
       <h3>${heading}</h3>
       ${guides.filter(guide => guide.stage === stage).map(guide => `<a href="${route(guide)}"><strong>${esc(guide.title)}</strong><span>${esc(guide.description)}</span></a>`).join("")}
     </section>`).join("")}</div>
+    <p><a href="/closet-layout/">Plan upright panels and bays for a built-in closet run</a>.</p>
     ${byline}
   </section>`);
 

@@ -325,6 +325,7 @@
 
     // Keep newest additions first and limit the dropdown to four recent tools.
     const latestTools = [
+      { href: "/closet-layout/", icon: "CL", title: "Closet Layout", description: "Size shared uprights and shelf bays, then check fit through eighteen build guides." },
       { href: "/picture-framing/", icon: "PF", title: "Picture Framing", description: "Size 45° miters, check the rabbet fit and allocate moulding." },
       { href: "/cabinet-refacing/", icon: "CR", title: "Cabinet Refacing", description: "Survey existing cabinets, size replacement doors and export a door schedule." },
       { href: "/built-in-scribe/", icon: "BS", title: "Built-in Cabinet Scribing", description: "Survey wall gaps, size filler blanks and export field readings." },
@@ -347,7 +348,7 @@
     ];
     const appsMenu = `<div class="mega-menu" role="group" aria-label="Apps menu">${megaFeature({ href: "/apps/", title: "iPhone apps for work and practice", description: "Save project plans, prepare fabrication layouts, and build typing skills with focused iPhone apps.", cta: "Browse apps ->", visual: "apps" })}<div class="mega-columns">${appColumns.map((column) => `<div class="mega-column"><p class="mega-column-title">${column.title}</p>${column.links.map(menuLink).join("")}</div>`).join("")}</div></div>`;
 
-    return `<div class="nav-links nav-links-mega" id="site-navigation">${navMenuItem({ href: "/tools/", label: "Tools", aliases: [...tools.map((item) => item.href), "/picture-framing/", "/cabinet-refacing/", "/built-in-scribe/", "/furniture-fit/", "/door-installation/", "/drawer-fit/", "/cabinet-studio/", "/solid-wood-milling/", "/joinery-lab/", "/shelf-pin-layout/", "/glue-up/", "/edge-banding/", "/assembly-check/", "/finishing-planner/", "/wood-movement/"], menu: toolsMenu })}${resourceNavMenu(projectsMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(resourcesMenu)}${navMenuItem({ href: "/apps/", label: "Apps", menu: appsMenu })}</div>`;
+    return `<div class="nav-links nav-links-mega" id="site-navigation">${navMenuItem({ href: "/tools/", label: "Tools", aliases: [...tools.map((item) => item.href), "/closet-layout/", "/picture-framing/", "/cabinet-refacing/", "/built-in-scribe/", "/furniture-fit/", "/door-installation/", "/drawer-fit/", "/cabinet-studio/", "/solid-wood-milling/", "/joinery-lab/", "/shelf-pin-layout/", "/glue-up/", "/edge-banding/", "/assembly-check/", "/finishing-planner/", "/wood-movement/"], menu: toolsMenu })}${resourceNavMenu(projectsMenu)}${resourceNavMenu(learnMenu)}${resourceNavMenu(resourcesMenu)}${navMenuItem({ href: "/apps/", label: "Apps", menu: appsMenu })}</div>`;
   }
 
   function header() {
