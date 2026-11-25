@@ -1,0 +1,42 @@
+path	user_agent	final_response	curl_exit	body_bytes	canonical	meta_robots	h1	notes
+/robots.txt	Mozilla/5.0	200 https://woodcuttool.com/robots.txt 0	0	150				User-agent: * / Allow: / / Sitemap: https://woodcuttool.com/sitemap.xml
+/sitemap.xml	Mozilla/5.0	200 https://woodcuttool.com/sitemap.xml 0	0	1177				children=10
+/apps/	Mozilla/5.0	200 https://woodcuttool.com/apps/ 0	0	169540	https://woodcuttool.com/apps/	index,follow	iPhone Apps	catalog counterfit:3 | 6821776375:0 | /apps/counterfit:0 | /legal/counterfit/support/:1
+/apps/cutlist/	Mozilla/5.0	200 https://woodcuttool.com/apps/cutlist/ 0	0	76819	https://woodcuttool.com/apps/cutlist/	index,follow	CutList: Plywood Optimizer	
+/apps/ductlab-hvac-duct-layout/	Mozilla/5.0	200 https://woodcuttool.com/apps/ductlab-hvac-duct-layout/ 0	0	69519	https://woodcuttool.com/apps/ductlab-hvac-duct-layout/	index,follow	DuctLab: HVAC Duct Layout	
+/apps/tilefit-tile-layout-planner/	Mozilla/5.0	200 https://woodcuttool.com/apps/tilefit-tile-layout-planner/ 0	0	66271	https://woodcuttool.com/apps/tilefit-tile-layout-planner/	index,follow	TileFit: Tile Layout Planner	
+/apps/casework-cabinet-cut-lists/	Mozilla/5.0	200 https://woodcuttool.com/apps/casework-cabinet-cut-lists/ 0	0	65531	https://woodcuttool.com/apps/casework-cabinet-cut-lists/	index,follow	Casework: Cabinet Cut Lists	
+/apps/snaplabel-photo-text-label/	Mozilla/5.0	200 https://woodcuttool.com/apps/snaplabel-photo-text-label/ 0	0	67839	https://woodcuttool.com/apps/snaplabel-photo-text-label/	index,follow	Labelary - Photo Text Label	
+/apps/thumbtype-typing-speed-test/	Mozilla/5.0	200 https://woodcuttool.com/apps/thumbtype-typing-speed-test/ 0	0	65077	https://woodcuttool.com/apps/thumbtype-typing-speed-test/	index,follow	ThumbType: Typing Speed Test	
+/apps/private-meeting-transcriber/	Mozilla/5.0	200 https://woodcuttool.com/apps/private-meeting-transcriber/ 0	0	70389	https://woodcuttool.com/apps/private-meeting-transcriber/	index,follow	Private Meeting Transcriber	
+/apps/quiltfit-quilt-design-planner/	Mozilla/5.0	200 https://woodcuttool.com/apps/quiltfit/ 1	0	66026	https://woodcuttool.com/apps/quiltfit/	index,follow	Plan quilt blocks, backing, binding, and sewing steps on iPhone.	
+/apps/atomic-clock-precision-time/	Mozilla/5.0	200 https://woodcuttool.com/apps/atomic-clock-precision-time/ 0	0	66504	https://woodcuttool.com/apps/atomic-clock-precision-time/	index,follow	Atomic Clock – Precision Time	
+/apps/speaker-tools-audio-test/	Mozilla/5.0	200 https://woodcuttool.com/apps/speaker-tools-audio-test/ 0	0	66181	https://woodcuttool.com/apps/speaker-tools-audio-test/	index,follow	Speaker Tools – Audio Test	
+/apps/counterfit-countertop-quotes/	Mozilla/5.0	404 https://woodcuttool.com/apps/counterfit-countertop-quotes/ 0	0	56134		noindex,follow	That page could not be found	AppleID seen: False
+/counterfit/	Mozilla/5.0	404 https://woodcuttool.com/counterfit/ 0	0	56134		noindex,follow	That page could not be found	AppleID seen: False
+/legal/CounterFit/support/	Mozilla/5.0	200 https://woodcuttool.com/legal/CounterFit/support/ 0	0	44244	https://woodcuttool.com/legal/CounterFit/support/	index,follow	CounterFit Support	AppleID seen: False
+/	OAI-SearchBot	200 https://woodcuttool.com/ 0	0	62507	https://woodcuttool.com/	index,follow	Smarter cuts.  Less waste.	
+/apps/	OAI-SearchBot	200 https://woodcuttool.com/apps/ 0	0	169540	https://woodcuttool.com/apps/	index,follow	iPhone Apps	catalog counterfit:3 | 6821776375:0 | /apps/counterfit:0 | /legal/counterfit/support/:1
+/apps/thumbtype-typing-speed-test/	OAI-SearchBot	200 https://woodcuttool.com/apps/thumbtype-typing-speed-test/ 0	0	65077	https://woodcuttool.com/apps/thumbtype-typing-speed-test/	index,follow	ThumbType: Typing Speed Test	
+/legal/CounterFit/support/	OAI-SearchBot	200 https://woodcuttool.com/legal/CounterFit/support/ 0	0	44244	https://woodcuttool.com/legal/CounterFit/support/	index,follow	CounterFit Support	AppleID seen: False
+/robots.txt	OAI-SearchBot	200 https://woodcuttool.com/robots.txt 0	0	150				User-agent: * / Allow: / / Sitemap: https://woodcuttool.com/sitemap.xml
+/	Googlebot	200 https://woodcuttool.com/ 0	0	62507	https://woodcuttool.com/	index,follow	Smarter cuts.  Less waste.	
+/apps/	Googlebot	200 https://woodcuttool.com/apps/ 0	0	169540	https://woodcuttool.com/apps/	index,follow	iPhone Apps	catalog counterfit:3 | 6821776375:0 | /apps/counterfit:0 | /legal/counterfit/support/:1
+/apps/thumbtype-typing-speed-test/	Googlebot	200 https://woodcuttool.com/apps/thumbtype-typing-speed-test/ 0	0	65077	https://woodcuttool.com/apps/thumbtype-typing-speed-test/	index,follow	ThumbType: Typing Speed Test	
+/legal/CounterFit/support/	Googlebot	200 https://woodcuttool.com/legal/CounterFit/support/ 0	0	44244	https://woodcuttool.com/legal/CounterFit/support/	index,follow	CounterFit Support	AppleID seen: False
+/robots.txt	Googlebot	200 https://woodcuttool.com/robots.txt 0	0	150				User-agent: * / Allow: / / Sitemap: https://woodcuttool.com/sitemap.xml
+/	Bingbot	200 https://woodcuttool.com/ 0	0	62507	https://woodcuttool.com/	index,follow	Smarter cuts.  Less waste.	
+/apps/	Bingbot	200 https://woodcuttool.com/apps/ 0	0	169540	https://woodcuttool.com/apps/	index,follow	iPhone Apps	catalog counterfit:3 | 6821776375:0 | /apps/counterfit:0 | /legal/counterfit/support/:1
+/apps/thumbtype-typing-speed-test/	Bingbot	200 https://woodcuttool.com/apps/thumbtype-typing-speed-test/ 0	0	65077	https://woodcuttool.com/apps/thumbtype-typing-speed-test/	index,follow	ThumbType: Typing Speed Test	
+/legal/CounterFit/support/	Bingbot	200 https://woodcuttool.com/legal/CounterFit/support/ 0	0	44244	https://woodcuttool.com/legal/CounterFit/support/	index,follow	CounterFit Support	AppleID seen: False
+/robots.txt	Bingbot	200 https://woodcuttool.com/robots.txt 0	0	150				User-agent: * / Allow: / / Sitemap: https://woodcuttool.com/sitemap.xml
+/	Claude-SearchBot	200 https://woodcuttool.com/ 0	0	62507	https://woodcuttool.com/	index,follow	Smarter cuts.  Less waste.	
+/apps/	Claude-SearchBot	200 https://woodcuttool.com/apps/ 0	0	169540	https://woodcuttool.com/apps/	index,follow	iPhone Apps	catalog counterfit:3 | 6821776375:0 | /apps/counterfit:0 | /legal/counterfit/support/:1
+/apps/thumbtype-typing-speed-test/	Claude-SearchBot	200 https://woodcuttool.com/apps/thumbtype-typing-speed-test/ 0	0	65077	https://woodcuttool.com/apps/thumbtype-typing-speed-test/	index,follow	ThumbType: Typing Speed Test	
+/legal/CounterFit/support/	Claude-SearchBot	200 https://woodcuttool.com/legal/CounterFit/support/ 0	0	44244	https://woodcuttool.com/legal/CounterFit/support/	index,follow	CounterFit Support	AppleID seen: False
+/robots.txt	Claude-SearchBot	200 https://woodcuttool.com/robots.txt 0	0	150				User-agent: * / Allow: / / Sitemap: https://woodcuttool.com/sitemap.xml
+/	Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)	200 https://woodcuttool.com/ 0	0	62507	https://woodcuttool.com/	index,follow	Smarter cuts.  Less waste.	
+/apps/	Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)	200 https://woodcuttool.com/apps/ 0	0	169540	https://woodcuttool.com/apps/	index,follow	iPhone Apps	catalog counterfit:3 | 6821776375:0 | /apps/counterfit:0 | /legal/counterfit/support/:1
+/apps/thumbtype-typing-speed-test/	Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)	200 https://woodcuttool.com/apps/thumbtype-typing-speed-test/ 0	0	65077	https://woodcuttool.com/apps/thumbtype-typing-speed-test/	index,follow	ThumbType: Typing Speed Test	
+/legal/CounterFit/support/	Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)	200 https://woodcuttool.com/legal/CounterFit/support/ 0	0	44244	https://woodcuttool.com/legal/CounterFit/support/	index,follow	CounterFit Support	AppleID seen: False
+/robots.txt	Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot)	200 https://woodcuttool.com/robots.txt 0	0	150				User-agent: * / Allow: / / Sitemap: https://woodcuttool.com/sitemap.xml

@@ -25,3 +25,20 @@
 ## 2026-11-20：DL03 原生搜索观察
 
 ChatGPT Search 与 Perplexity 在同一方转圆问题下都推荐了 DuctLab 与 Transitions Layouts。后者是本轮跨平台重复出现的竞品，可对照分片和分段需求。Perplexity 另推荐 Sheet Metal Layout: Patterns，并按使用场景把 Trueflat 的 Android 和可打印／DXF 输出单列。ChatGPT 的 FabCalc 与 Platewrap 结果作为后续功能复核线索。该题仅各测一次。 [Transitions Layouts](https://apps.apple.com/us/app/transitions-layouts/id6757512792) · [Patterns](https://apps.apple.com/sr/app/sheet-metal-layout-patterns/id6791592420) · [Trueflat](https://play.google.com/store/apps/details?id=com.heyisoft.trueflat) · [当日搜索记录](2026-11-20-daily-report.md)
+
+## 2026-11-24 · CW03 与第三方需求
+
+- **CabbyCut** 在 ChatGPT Search 和 Grok 的同题回答均出现。公开 App Store 信息显示无框柜体、尺寸驱动、按步骤建造和正视图。可对照它如何从简单输入展示整套输出。 [美国 App Store](https://apps.apple.com/us/app/cabbycut-cabinet-cut-list/id6818005568)
+- **Blueprint** 同时进入 ChatGPT Search 和 Grok，公开产品定位涉及房间与柜体的 3D 设计。**OffCut** 同时进入 Grok 和 Copilot，回答用它与由柜体外尺寸推导零件的 Casework 对比。Grok 的 24 条来源仅保存可见标题与部分目标，引用份额趋势待追踪。 [Blueprint](https://apps.apple.com/us/app/blueprint-cabinet-design/id6760829779) · [同题周报](2026-11-24-weekly-report.md)
+- **优先验证的产品机会**为带版本和镜像件标记的零件标签／交付包，以及可以公开复算的柜体导出样例。现有 PDF 和 CSV 能力已有官方说明，打印标签和变更差异需单独验证需求与现有支持。 [Casework App Store](https://apps.apple.com/us/app/casework-cabinet-cut-lists/id6794987242)
+
+三个外部研究方向。先做真实可复算的尺寸、步骤或配置示例。发帖、私信或合作提交另行批准。
+
+1. 柜体工作流讨论涉及分厚度采购和带板图交付。准备分厚度的柜组 CSV、用量表和两张板材示例。 [r/cabinetry](https://www.reddit.com/r/cabinetry/comments/1rvxrh5/for_custom_cabinet_shops_where_does_your/)
+2. 施工者询问怎样给 12×24 砖在偏斜墙面选起铺方式。准备两种起点和实际最窄砖条的图。 [r/Tile](https://www.reddit.com/r/Tile/comments/1pu5mha/question_for_12x24_what_layout_do_you_recommend/)
+3. 钣金从业者交流方转圆转接工况。用站内已有算例的真长、分段和四片展开图做独立验证材料。 [r/sheetmetal](https://www.reddit.com/r/sheetmetal/comments/1bwu424)
+
+
+## 2026-11-24 晚间 · CT01 台面报价对照
+
+ChatGPT Search、Perplexity 同时推荐 CounterFit、Stone Project 和 Simple Countertops。Stone Project 定位覆盖测量、报价与工坊管理，Simple Countertops 是同题的另一款台面工具。Novaclad 出现在 ChatGPT 的结果，独立核对其测量和 AR 工作流后再评估融合价值。优先公开 CounterFit 的英文报价样例和商店链接。样本为各一条，竞品引用增长待配对观察。 [Stone Project](https://apps.apple.com/us/app/stone-project-countertops/id1443840165) · [Simple Countertops](https://apps.apple.com/us/app/simple-countertops/id1607767119) · [Novaclad](https://apps.apple.com/us/app/novaclad/id6767419372) · [两条会话](2026-11-24-weekly-report.md)

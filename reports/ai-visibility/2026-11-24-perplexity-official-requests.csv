@@ -1,0 +1,4 @@
+time_asia_shanghai,official_source_ip,url,user_agent,security_action,edge_status,source
+2026-11-24 06:59:05,18.97.9.100,https://woodcuttool.com/drawer-box-calculator/,Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot),Not mitigated,,Cloudflare Security Analytics / Traffic; official source-IP filter
+2026-11-24 06:04:49,18.97.9.96,https://woodcuttool.com/stringer/,Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot),Not mitigated,,Cloudflare Security Analytics / Traffic; official source-IP filter
+2026-11-24 06:04:45,18.97.9.101,https://woodcuttool.com/wood/osage-orange/,Mozilla/5.0 (compatible; PerplexityBot/1.0; +https://perplexity.ai/perplexitybot),Not mitigated,,Cloudflare Security Analytics / Traffic; official source-IP filter
