@@ -6,6 +6,7 @@ import { woodworkingImageFor, woodworkingPicture, woodworkingPreload } from "./w
 import { learnResearchExpansion20260718 } from "./learn-batch-2026-07-18.mjs";
 import { learnPillarExpansion20260721 } from "./learn-pillar-batch-2026-07-21.mjs";
 import { learnHandoffExpansion20260724 } from "./learn-handoff-batch-2026-07-24.mjs";
+import { plywoodStripReservationGuide } from "./learn-batch-2026-11-25.mjs";
 import { learnClusterProfiles } from "./learn-cluster-profiles.mjs";
 import { cutlistConversionCta, learnContextSupportsCutList } from "./conversion-components.mjs";
 
@@ -47,8 +48,8 @@ function learnWoodImageAfter(page, offset = 0, placement = "inline") {
 }
 
 function learnArticleSections(article) {
-  return article.sections.map(([heading, body], index) => {
-    const section = `<section><h2>${escapeHtml(heading)}</h2><p>${body}</p></section>`;
+  return article.sections.map(([heading, body, supplementalMarkup = ""], index) => {
+    const section = `<section><h2>${escapeHtml(heading)}</h2><p>${body}</p>${supplementalMarkup}</section>`;
     const image = index === 1 ? learnWoodImage(article, 1) : "";
     return image ? `${section}\n      ${image}` : section;
   }).join("\n      ");
@@ -134,7 +135,7 @@ const articles = [
       ["Start with a complete parts list", "Write every part before opening the calculator: sides, shelves, backs, stretchers, drawer parts, dividers, doors, toe kicks, and test pieces. Many plywood waste problems begin when a builder adds a forgotten part after the layout already looked efficient. A complete list also makes repeated parts easier to group, which often improves cutting clarity."],
       ["Use real sheet dimensions and kerf", "A 4 by 8 sheet is sold as 48 by 96 inches, but damaged edges, trimming, and factory variation can reduce usable area. Measure the real sheet if the job is tight. Then enter the saw blade kerf you actually plan to use. Ten cuts with a 1/8 inch kerf consume 1.25 inches of material before any mistakes. Ignoring kerf can make a digital layout look possible when the physical cut will not fit."],
       ["Respect grain direction when it matters", "Reducing waste is not always the same as making the best project. Cabinet sides, doors, drawer fronts, and visible panels may need consistent grain direction. If a layout saves material by rotating a visible face the wrong way, it is not a good layout. The goal is usable material saving, not a misleading low waste percentage."],
-      ["Plan offcuts on purpose", "Not all leftover plywood is useful. A large rectangular offcut with a label can become a shelf, jig, or future drawer part. A pile of narrow strips often becomes clutter. Use the <a href=\"/wood-waste-calculator/\">wood waste calculator</a> to estimate waste cost, but also review offcut shape. A smaller waste number is less important than keeping offcuts you can actually reuse."],
+      ["Plan offcuts on purpose", "Not all leftover plywood is useful. A large rectangular offcut with a label can become a shelf, jig, or future drawer part. A pile of narrow strips often becomes clutter. Use the <a href=\"/wood-waste-calculator/\">wood waste calculator</a> to estimate waste cost, but also review offcut shape. If a future job needs one continuous blank, <a href=\"/learn/reserve-plywood-strip-before-cutting/\">reserve a full-length strip and test the remaining layout</a> before cutting."],
       ["Change dimensions before buying", "The cheapest time to reduce waste is before material is purchased. Try small changes to shelf depth, cabinet width, divider spacing, or repeated panel sizes. A one-inch change can sometimes turn an awkward layout into a clean one-sheet plan. This does not mean every design should be shaped by the calculator. It means the calculator can show where a design choice has a material cost."],
       ["Watch the difference between waste and scrap", "Waste percentage is a number. Scrap is physical material in your shop. Two layouts can show similar waste but create very different leftovers. One may leave a clean rectangle that becomes a future shelf. Another may leave strips that are too narrow to matter. When reviewing a plywood layout, look beyond the percentage and ask whether the remaining pieces have a realistic future use."],
       ["Use tools before buying material", "Test the layout with the <a href=\"/plywood-cut-calculator/\">plywood cut calculator</a>. If the project will change, save it in the <a href=\"/apps/cutlist/\">CutList app</a>. For rough cost and volume planning, check the <a href=\"/board-foot-calculator/\">board foot calculator</a> and the broader <a href=\"/tools/\">tools hub</a>. This sequence catches material problems while changes are still cheap."],
@@ -704,6 +705,7 @@ articles.push(...learnExpansion20260715.map(makeLearnExpansionArticle));
 articles.push(...learnResearchExpansion20260718);
 articles.push(...learnPillarExpansion20260721);
 articles.push(...learnHandoffExpansion20260724);
+articles.push(plywoodStripReservationGuide);
 
 const learnOpeningOverrides = new Map([
   ["cut-list-revision-workflow", "A cut-list revision workflow traces one design or field change through every affected part, material group, layout, purchase, label, and already-cut piece before the new revision is released. Its purpose is impact control: identify what changed, stop work that may now be wrong, and prove which downstream records need replacement."],
@@ -905,6 +907,7 @@ for (const article of [
   ...learnResearchExpansion20260718,
   ...learnPillarExpansion20260721,
   ...learnHandoffExpansion20260724,
+  plywoodStripReservationGuide,
 ]) {
   relatedMap[article.slug] = {
     guides: article.relatedGuides,
@@ -1096,7 +1099,7 @@ ${head({
       <h1>${escapeHtml(article.h1)}</h1>
       <p class="lead">${escapeHtml(article.intro)}</p>${learnWoodImageAfter(article, 0, "hero")}
       <p class="article-byline">By <a href="/about/">WoodCutTool Editorial Team</a> · Built to help readers move from a concept to a checked material or cutting plan.</p>
-      ${targetKeywords(article)}
+      ${article.showKeywords === false ? "" : targetKeywords(article)}
       ${learnArticleSections(article)}
       ${planningTransition(article)}
       ${recommendedNextStep(article)}

@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 import { validateProject, componentHandoff, convertProject, calculateProject, cutListCsv } from '../assets/cut-handoff-model.js';
 import { pilotProjects } from './cut-handoff-data.mjs';
+import { plywoodStripHandoff, plywoodStripReservationGuide } from './learn-batch-2026-11-25.mjs';
 import { openConversionDb } from './local-conversion-db.mjs';
 import { onRequest as eventRequest } from '../functions/api/conversion-event.js';
 import { onRequest as reportRequest } from '../functions/api/conversion-report.js';
@@ -48,13 +49,25 @@ let orientation = pack([{ label: 'Locked', length: 40, width: 60, qty: 1, allowR
 assert.equal(orientation.rejected.length, 1);
 orientation = pack([{ label: 'Free', length: 40, width: 60, qty: 1, allowRotate: true }], 96, 48, .125, true);
 assert.equal(orientation.rejected.length, 0);
+const reservation = calculateProject(plywoodStripHandoff, pack);
+assert.equal(reservation.complete, true);
+assert.equal(reservation.sheets, 1);
+const widerStrip = structuredClone(plywoodStripHandoff);
+widerStrip.groups[0].sheetWidth -= 0.125;
+assert.equal(calculateProject(widerStrip, pack).sheets, 2);
 // Generated payloads must match source and cannot disappear on a future rebuild.
-for (const [route, scenario] of [['examples/bookshelf-cut-list', 'bookshelf'], ['examples/base-cabinet-cut-list', 'base-cabinet'], ['templates/garage-shelving-cut-list', 'garage-shelves']]) {
+const handoffPages = [
+  ['examples/bookshelf-cut-list', pilotProjects.find(p => p.scenario === 'bookshelf')],
+  ['examples/base-cabinet-cut-list', pilotProjects.find(p => p.scenario === 'base-cabinet')],
+  ['templates/garage-shelving-cut-list', pilotProjects.find(p => p.scenario === 'garage-shelves')],
+  [`learn/${plywoodStripReservationGuide.slug}`, plywoodStripHandoff],
+];
+for (const [route, expectedPayload] of handoffPages) {
   const html = readFileSync(new URL(`../${route}/index.html`, import.meta.url), 'utf8');
   const match = html.match(/<script type="application\/json" data-handoff-payload>(.*?)<\/script>/s);
   assert.ok(match, route);
   const payload = validateProject(JSON.parse(match[1]));
-  assert.deepEqual(payload, pilotProjects.find(p => p.scenario === scenario));
+  assert.deepEqual(payload, expectedPayload);
 }
 const db = openConversionDb();
 const env = { CONVERSION_DB: db, CONVERSION_REPORT_TOKEN: 'test-only' };

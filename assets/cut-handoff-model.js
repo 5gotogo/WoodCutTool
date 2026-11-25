@@ -1,6 +1,6 @@
 export const HANDOFF_KEY = 'woodcuttool.plywood.handoff.v1';
 export const DRAFT_KEY = 'woodcuttool.plywood.draft.v1';
-export const SCENARIOS = ['none', 'bookshelf', 'garage-shelves', 'base-cabinet'];
+export const SCENARIOS = ['none', 'bookshelf', 'garage-shelves', 'base-cabinet', 'plywood-strip-reservation'];
 const finite = (n, min, max) => typeof n === 'number' && Number.isFinite(n) && n >= min && n <= max;
 const text = (value, max = 100) => typeof value === 'string' && value.trim().length > 0 && value.length <= max;
 export function validateProject(value) {

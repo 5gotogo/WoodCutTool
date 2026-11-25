@@ -3,7 +3,7 @@
   "source": "scripts/build-learn-content.mjs",
   "performanceDataBoundary": "No merge or redirect decision is authorized without aggregate query/page evidence.",
   "summary": {
-    "pages": 163,
+    "pages": 164,
     "clusters": 12,
     "candidateSets": 13,
     "candidatePages": 63,
@@ -1445,7 +1445,7 @@
         "/learn/topics/furniture-projects/"
       ],
       "visibleWords": 850,
-      "inboundSourceCount": 6,
+      "inboundSourceCount": 7,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": "LI-012",
@@ -1660,7 +1660,7 @@
         "/templates/kitchen-cabinet-cut-list/"
       ],
       "visibleWords": 857,
-      "inboundSourceCount": 10,
+      "inboundSourceCount": 11,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": "LI-009",
@@ -1694,7 +1694,7 @@
         "/learn/topics/cabinet-planning/"
       ],
       "visibleWords": 860,
-      "inboundSourceCount": 13,
+      "inboundSourceCount": 15,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": null,
@@ -1732,7 +1732,7 @@
         "/troubleshooting/wall-cabinets-not-level/"
       ],
       "visibleWords": 877,
-      "inboundSourceCount": 17,
+      "inboundSourceCount": 19,
       "datePublished": "2026-07-21",
       "dateModified": "2026-07-21",
       "candidateSet": null,
@@ -2186,7 +2186,7 @@
         "/learn/what-is-cut-list-optimization/"
       ],
       "visibleWords": 668,
-      "inboundSourceCount": 6,
+      "inboundSourceCount": 5,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": null,
@@ -2362,7 +2362,7 @@
         "/tools/"
       ],
       "visibleWords": 627,
-      "inboundSourceCount": 8,
+      "inboundSourceCount": 7,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": null,
@@ -3367,7 +3367,7 @@
         "/research/plywood-project-yield-benchmarks/"
       ],
       "visibleWords": 954,
-      "inboundSourceCount": 6,
+      "inboundSourceCount": 7,
       "datePublished": "2026-07-18",
       "dateModified": "2026-07-18",
       "candidateSet": null,
@@ -3436,13 +3436,14 @@
       "relatedRoutes": [
         "/apps/cutlist/",
         "/board-foot-calculator/",
+        "/learn/reserve-plywood-strip-before-cutting/",
         "/learn/topics/layout-optimization/",
         "/plywood-cut-calculator/",
         "/tools/",
         "/wood-waste-calculator/"
       ],
-      "visibleWords": 1031,
-      "inboundSourceCount": 26,
+      "visibleWords": 1036,
+      "inboundSourceCount": 27,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": null,
@@ -4418,7 +4419,7 @@
         "/troubleshooting/first-cut-leaves-unusable-strip/"
       ],
       "visibleWords": 815,
-      "inboundSourceCount": 6,
+      "inboundSourceCount": 7,
       "datePublished": "2026-07-21",
       "dateModified": "2026-07-21",
       "candidateSet": null,
@@ -4494,7 +4495,7 @@
         "/plywood-cut-calculator/"
       ],
       "visibleWords": 649,
-      "inboundSourceCount": 5,
+      "inboundSourceCount": 4,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": null,
@@ -4531,7 +4532,7 @@
         "/templates/kitchen-cabinet-cut-list/"
       ],
       "visibleWords": 629,
-      "inboundSourceCount": 7,
+      "inboundSourceCount": 6,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": null,
@@ -4601,7 +4602,7 @@
         "/tools/",
         "/wood-waste-calculator/"
       ],
-      "visibleWords": 615,
+      "visibleWords": 618,
       "inboundSourceCount": 10,
       "datePublished": null,
       "dateModified": null,
@@ -4984,7 +4985,7 @@
         "/research/plywood-project-yield-benchmarks/",
         "/wood-waste-calculator/"
       ],
-      "visibleWords": 912,
+      "visibleWords": 916,
       "inboundSourceCount": 7,
       "datePublished": "2026-07-18",
       "dateModified": "2026-07-18",
@@ -5403,6 +5404,43 @@
       "reviewReason": "No configured collision or high-similarity rule flagged this route."
     },
     {
+      "slug": "reserve-plywood-strip-before-cutting",
+      "route": "/learn/reserve-plywood-strip-before-cutting/",
+      "canonical": "https://woodcuttool.com/learn/reserve-plywood-strip-before-cutting/",
+      "title": "How to Reserve a Full-Length Plywood Strip",
+      "h1": "How to Reserve a Full-Length Plywood Strip",
+      "description": "Plan a full-length plywood rip before nesting. Calculate the remaining sheet width, account for kerf once, and test two strip widths with a worked cut list.",
+      "openingAnswer": "To reserve a full-length plywood strip, subtract the strip width and one rip kerf from the usable sheet width, then lay out the current job on the smaller rectangle.",
+      "cluster": "layout-optimization",
+      "pageRole": "supporting-guide",
+      "primaryIntent": "Plan a full-length plywood rip before nesting.",
+      "primaryKeyword": "reserve plywood strip",
+      "supportingKeywords": [
+        "plywood rip cut layout",
+        "plywood remaining width",
+        "plywood offcut planning"
+      ],
+      "requiredEvidence": "Choose what the strip must provide; Calculate the stock left after the rip; Compare two strip widths on the same cut list. Cluster evidence boundary: A releasable result includes a complete part count, stock definition, kerf and trim assumptions, layout or cutting diagram, unresolved holds, and a saved revision that another person can reproduce.",
+      "primaryAction": "Test a layout on the remainder",
+      "actionType": "calculator",
+      "actionRoute": "/plywood-cut-calculator/",
+      "relatedRoutes": [
+        "/assets/cut-handoff.css",
+        "/learn/saw-kerf-explained/",
+        "/learn/topics/layout-optimization/",
+        "/offcut-planner/",
+        "/plywood-cut-calculator/",
+        "/troubleshooting/first-cut-leaves-unusable-strip/"
+      ],
+      "visibleWords": 1368,
+      "inboundSourceCount": 8,
+      "datePublished": "2026-11-25",
+      "dateModified": "2026-11-25",
+      "candidateSet": null,
+      "reviewDecision": "not-flagged",
+      "reviewReason": "No configured collision or high-similarity rule flagged this route."
+    },
+    {
       "slug": "reusable-offcut-inventory-handoff",
       "route": "/learn/reusable-offcut-inventory-handoff/",
       "canonical": "https://woodcuttool.com/learn/reusable-offcut-inventory-handoff/",
@@ -5569,7 +5607,7 @@
         "/wood-waste-calculator/"
       ],
       "visibleWords": 1252,
-      "inboundSourceCount": 156,
+      "inboundSourceCount": 157,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": null,
@@ -5677,7 +5715,7 @@
         "/plywood-cut-calculator/"
       ],
       "visibleWords": 611,
-      "inboundSourceCount": 10,
+      "inboundSourceCount": 9,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": null,
@@ -5821,7 +5859,7 @@
         "/wood-waste-calculator/"
       ],
       "visibleWords": 545,
-      "inboundSourceCount": 35,
+      "inboundSourceCount": 36,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": null,
@@ -5855,7 +5893,7 @@
         "/templates/closet-shelving-cut-list/"
       ],
       "visibleWords": 857,
-      "inboundSourceCount": 26,
+      "inboundSourceCount": 27,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": null,
@@ -5891,8 +5929,8 @@
         "/research/plywood-project-yield-benchmarks/",
         "/wood-waste-calculator/"
       ],
-      "visibleWords": 935,
-      "inboundSourceCount": 6,
+      "visibleWords": 934,
+      "inboundSourceCount": 7,
       "datePublished": "2026-07-18",
       "dateModified": "2026-07-18",
       "candidateSet": null,
@@ -6538,7 +6576,7 @@
         "/research/plywood-sheet-size-comparison/"
       ],
       "visibleWords": 960,
-      "inboundSourceCount": 11,
+      "inboundSourceCount": 10,
       "datePublished": "2026-07-18",
       "dateModified": "2026-07-18",
       "candidateSet": null,
@@ -6575,7 +6613,7 @@
         "/learn/topics/cutting-quality/"
       ],
       "visibleWords": 642,
-      "inboundSourceCount": 9,
+      "inboundSourceCount": 8,
       "datePublished": null,
       "dateModified": null,
       "candidateSet": null,

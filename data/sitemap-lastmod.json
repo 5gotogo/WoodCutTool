@@ -25,8 +25,8 @@
     "hashVersion": 2
   },
   "/learn/": {
-    "lastmod": "2026-09-01",
-    "hash": "713b04851e3dceef351b05f04e59fffb49c3f56ebf0b3b6677808f03bd8937a4",
+    "lastmod": "2026-11-25",
+    "hash": "5d9ae3bc3172f9e5fe6accaed56cc8aed3e8522afa2ffbdbdda21da9a886cfe2",
     "hashVersion": 2
   },
   "/troubleshooting/": {
@@ -90,8 +90,8 @@
     "hashVersion": 2
   },
   "/plywood-cut-calculator/": {
-    "lastmod": "2026-09-05",
-    "hash": "cafd93b8676bdd9467516a9e8e7d7705c35eedf0c5903b188ce966937e756923",
+    "lastmod": "2026-11-25",
+    "hash": "3971f5d5020044cbf4fa009220a0bbe14558899358bd6999b41177acfaa66e65",
     "hashVersion": 2
   },
   "/stair-stringer-calculator/": {
@@ -9210,8 +9210,8 @@
     "hashVersion": 2
   },
   "/learn/how-to-reduce-plywood-waste/": {
-    "lastmod": "2026-09-08",
-    "hash": "7a027dfb5a5206a9144858171c7e3d2f184113ff0ef8f2c007044c57df2e1d26",
+    "lastmod": "2026-11-25",
+    "hash": "0a5c5757361de859c5e598aadc08f43bbadeef8b32b666a8d51b8b297e4bdae9",
     "hashVersion": 2
   },
   "/learn/installer-punch-list-closeout/": {
@@ -9350,7 +9350,7 @@
     "hashVersion": 2
   },
   "/learn/plywood-breakdown-cut-sequence/": {
-    "lastmod": "2026-09-08",
+    "lastmod": "2026-11-25",
     "hash": "ea662dd003a5024bfe33ad4ebc178f1713f0cb151e1b018a8b72ba08ce08a427",
     "hashVersion": 2
   },
@@ -9375,8 +9375,8 @@
     "hashVersion": 2
   },
   "/learn/plywood-cutting-optimization/": {
-    "lastmod": "2026-09-08",
-    "hash": "485ac5784133cae11331a3bca76c4205315ba92ba393e0b0b9c41cb0b6440be9",
+    "lastmod": "2026-11-25",
+    "hash": "0823cae29e33c3d89a26268570d9cd1de476341c5546ca3233a1ab2377ec5bb8",
     "hashVersion": 2
   },
   "/learn/plywood-delivery-inspection-guide/": {
@@ -9430,8 +9430,8 @@
     "hashVersion": 2
   },
   "/learn/plywood-yield-percentage-explained/": {
-    "lastmod": "2026-09-08",
-    "hash": "aaa225b0724aad0dcb77e2d0e57d789a98b7456941f3010a35c4c626b48440e1",
+    "lastmod": "2026-11-25",
+    "hash": "33058af7056a332202e02a8b8f796c70958d9ba992b1b9b18eccbb0f074ea3da",
     "hashVersion": 2
   },
   "/learn/plywood/": {
@@ -9492,6 +9492,11 @@
   "/learn/rental-furniture-material-planning-guide/": {
     "lastmod": "2026-09-08",
     "hash": "3122fc4352d05ba1b4828eda05e87106e9e6486b84056bad5292639e9f7a71ee",
+    "hashVersion": 2
+  },
+  "/learn/reserve-plywood-strip-before-cutting/": {
+    "lastmod": "2026-11-25",
+    "hash": "54e08857510989ccdccb325e1972687f717137adb4ce45571eae856f007974ff",
     "hashVersion": 2
   },
   "/learn/reusable-offcut-inventory-handoff/": {
@@ -9560,8 +9565,8 @@
     "hashVersion": 2
   },
   "/learn/should-you-buy-an-extra-sheet-of-plywood/": {
-    "lastmod": "2026-09-08",
-    "hash": "017ea92cc80368f6a4a6aa6b7ab3e9c1b7fcf8fa8c6c457e48f87420440dfe82",
+    "lastmod": "2026-11-25",
+    "hash": "786a1a712d14c92020303e0fb999d676ad9cdef6f0a20eb70b323883215150f1",
     "hashVersion": 2
   },
   "/learn/small-shop-lumber-rack-planning-guide/": {
@@ -9665,8 +9670,8 @@
     "hashVersion": 2
   },
   "/learn/topics/layout-optimization/": {
-    "lastmod": "2026-09-01",
-    "hash": "5218bc9891af8038c2a537c5950cd9e21fd7660af1227cd936b0b86cc27198dc",
+    "lastmod": "2026-11-25",
+    "hash": "e68f354c5ad5d0e2b74dfd1e1796b0b115e00bda4b79693aaa4431bff61cf041",
     "hashVersion": 2
   },
   "/learn/topics/plywood-sheet-goods/": {

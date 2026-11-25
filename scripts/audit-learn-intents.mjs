@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { allLearnPages, learnClusters } from "./build-learn-content.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const inventoryPath = join(root, "data", "seo", "learn-intent-inventory.json");
@@ -17,8 +18,8 @@ if (!existsSync(inventoryPath)) errors.push("Missing data/seo/learn-intent-inven
 if (!existsSync(reviewPath)) errors.push("Missing docs/learn-intent-review.md.");
 
 const inventory = existsSync(inventoryPath) ? JSON.parse(readFileSync(inventoryPath, "utf8")) : { pages: [], candidateSets: [], summary: {} };
-if (inventory.pages.length !== 163) errors.push(`Expected 163 Learn rows, found ${inventory.pages.length}.`);
-if (inventory.summary.clusters !== 12) errors.push(`Expected 12 Learn clusters, found ${inventory.summary.clusters}.`);
+if (inventory.pages.length !== allLearnPages.length) errors.push(`Expected ${allLearnPages.length} Learn rows, found ${inventory.pages.length}.`);
+if (inventory.summary.clusters !== learnClusters.length) errors.push(`Expected ${learnClusters.length} Learn clusters, found ${inventory.summary.clusters}.`);
 
 const seenSlugs = new Set();
 const seenRoutes = new Set();
@@ -39,6 +40,9 @@ for (const row of inventory.pages) {
   if (row.inboundSourceCount < 1) errors.push(`${row.slug} has no contextual inbound source.`);
   if (!row.actionRoute.startsWith("/")) errors.push(`${row.slug} has a non-local primary action.`);
   if (row.candidateSet && !allowedDecisions.has(row.reviewDecision)) errors.push(`${row.slug} candidate decision is not reviewed.`);
+}
+for (const page of allLearnPages) {
+  if (!seenSlugs.has(page.slug)) errors.push(`Missing Learn inventory row for ${page.slug}.`);
 }
 
 for (const set of inventory.candidateSets) {

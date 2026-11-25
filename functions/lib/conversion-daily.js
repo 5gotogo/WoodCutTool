@@ -1,6 +1,6 @@
 import { conversionRoutes } from './conversion-routes.js';
 
-export const scenarios = ['none', 'bookshelf', 'garage-shelves', 'base-cabinet'];
+export const scenarios = ['none', 'bookshelf', 'garage-shelves', 'base-cabinet', 'plywood-strip-reservation'];
 const devices = ['desktop', 'iphone', 'ipad', 'android', 'mobile-other'];
 export function aggregateRecord(input, now = new Date()) {
   if (!conversionRoutes.has(input.path)) throw new Error('invalid-route');

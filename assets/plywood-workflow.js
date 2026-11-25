@@ -178,6 +178,7 @@ function init() {
         bookshelf: '<p>Check the shelf span and actual thickness before treating the panel layout as a finished bookcase plan.</p><a href="/learn/shelf-span-and-plywood-thickness-guide/">Review shelf span and plywood thickness</a>',
         'garage-shelves': '<p>The plywood result leaves lumber supports outside the sheet count.</p><a href="/cut-list-calculator/">Calculate upright and lumber cuts</a> · <a href="/learn/garage-shelving-material-estimate/">Review the complete garage material estimate</a>',
         'base-cabinet': '<p>Verify joinery, back mounting and the squared case before preparing doors or hardware.</p><a href="/checklists/cabinet-box-squaring/">Review cabinet box squaring</a>',
+        'plywood-strip-reservation': '<p>This example starts with one remainder. If the layout needs more than one, revise the strip width or allocate additional stock.</p><a href="/learn/reserve-plywood-strip-before-cutting/#use-cut-list">Return to the plywood strip example</a>',
       })[project.scenario] || '<a href="/checklists/assembly-release/">Review the assembly release checklist</a>'}</section>
       ${window.WCTPlywoodCore.appCta({ mode: 'plywood', source: 'plywood-result', title: 'Keep reviewed projects in CutList', description: 'CutList supports saved revisions and shop exports. Re-create and verify your reviewed list in the app; this browser action does not transfer the project to the app.' })}
       <p role="status" data-export-status></p>`;

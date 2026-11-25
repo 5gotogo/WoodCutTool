@@ -54,7 +54,7 @@
   function track(event, details = {}) {
     if (navigator.doNotTrack === "1" || window.doNotTrack === "1") return;
     const scenario = document.getElementById("plywood-form")?.dataset.scenario || document.querySelector("[data-cut-handoff]")?.dataset.scenario;
-    if (["bookshelf", "garage-shelves", "base-cabinet"].includes(scenario)) details = { ...details, scenario };
+    if (["bookshelf", "garage-shelves", "base-cabinet", "plywood-strip-reservation"].includes(scenario)) details = { ...details, scenario };
     const payload = JSON.stringify({
       event: cleanToken(event, "event"),
       source: cleanToken(details.source || routeSource()),

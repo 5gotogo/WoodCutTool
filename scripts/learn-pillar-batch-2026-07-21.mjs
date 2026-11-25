@@ -230,7 +230,7 @@ export const learnPillarExpansion20260721 = [
       ["Annotate the layout for the shop", `Add numbered stages, reference arrows, rough-versus-final edges, part IDs, and hold points to the exported plan. Review it with the person doing the work and change the sequence when the actual tool path differs from the digital assumption. Use <a href="/apps/cutlist/">CutList</a> for the saved layout and the <a href="/research/plywood-project-yield-benchmarks/">project benchmark</a> only as material evidence, not as machine instructions.`],
     ],
     cta: "Convert the nesting diagram into numbered, supported breakdown stages and verify the first blank before final-sizing the repeated parts.",
-    relatedGuides: ["reference-edge-workflow-for-sheet-goods", "track-saw-sheet-breakdown-workflow", "first-article-check-for-repeated-parts"],
+    relatedGuides: ["reference-edge-workflow-for-sheet-goods", "track-saw-sheet-breakdown-workflow", "first-article-check-for-repeated-parts", "reserve-plywood-strip-before-cutting"],
     relatedTools: [["/glossary/cut-sequence/", "Cut sequence", "Glossary"], ["/troubleshooting/first-cut-leaves-unusable-strip/", "First cut leaves unusable strip", "Troubleshooting"], ["/research/plywood-project-yield-benchmarks/", "Plywood yield benchmark", "Research"], ["/apps/cutlist/", "CutList layout", "App"]],
   }),
   guide({

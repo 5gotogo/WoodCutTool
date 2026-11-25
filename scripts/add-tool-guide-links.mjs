@@ -14,7 +14,8 @@ const map = {
   "plywood-cut-calculator/index.html": [
     ["plywood-cutting-optimization", "Plywood cutting optimization guide"],
     ["how-many-sheets-of-plywood-do-i-need", "How many sheets of plywood do I need?"],
-    ["sheet-layout-optimization", "Sheet layout optimization"]
+    ["sheet-layout-optimization", "Sheet layout optimization"],
+    ["reserve-plywood-strip-before-cutting", "Reserve a full-length plywood strip"]
   ],
   "cut-list-calculator/index.html": [
     ["how-to-read-a-cut-list", "How to read a cut list"],

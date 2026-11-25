@@ -1886,6 +1886,7 @@ export const conversionRoutes = new Set([
   "/learn/record-cabinet-shelf-span-guide/",
   "/learn/reference-edge-workflow-for-sheet-goods/",
   "/learn/rental-furniture-material-planning-guide/",
+  "/learn/reserve-plywood-strip-before-cutting/",
   "/learn/reusable-offcut-inventory-handoff/",
   "/learn/roofing/",
   "/learn/room-by-room-installation-handoff/",

@@ -4,7 +4,7 @@ Updated: 2026-08-31
 
 ## Scope
 
-Reviewed 163 Learn routes across 12 topic hubs. Candidate detection compares exact source fields, same-cluster title similarity, shared primary keywords, and high opening-answer overlap paired with the same primary action. Decisions do not authorize redirects without aggregate query/page evidence.
+Reviewed 164 Learn routes across 12 topic hubs. Candidate detection compares exact source fields, same-cluster title similarity, shared primary keywords, and high opening-answer overlap paired with the same primary action. Decisions do not authorize redirects without aggregate query/page evidence.
 
 ## Result
 
