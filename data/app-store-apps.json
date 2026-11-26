@@ -1086,5 +1086,34 @@
     "averageUserRating": 0,
     "userRatingCount": 0,
     "sellerName": "家宝 戴"
+  },
+  {
+    "id": 6832892253,
+    "slug": "flashinglab-sheet-metal",
+    "name": "FlashingLab: Sheet Metal",
+    "genre": "Graphics & Design",
+    "genres": [
+      "Graphics & Design"
+    ],
+    "url": "https://apps.apple.com/us/app/flashinglab-sheet-metal/id6832892253",
+    "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/e1/6c/98e16ca0-41a3-0869-ab48-0ef8e899ab88/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshotUrls": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ec/15/2d/ec152dfa-76db-553b-3142-9517b25c797f/01-APP_IPHONE_67.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/35/ff/da/35ffda07-fdd8-7827-33c1-114163c993b1/02-APP_IPHONE_67.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4d/2a/ad/4d2aad0a-fe75-6a03-0306-50d1b04f6abb/03-APP_IPHONE_67.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f4/96/06/f496069c-91ab-565c-2765-502ebac2af6c/04-APP_IPHONE_67.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/9a/dc/45/9adc45bb-67d2-8772-90a5-83a223ef3a1e/05-APP_IPHONE_67.png/1290x2796bb.jpg",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/08/de/f7/08def75b-431f-f6f6-6e7e-f43f7eb80e25/06-APP_IPHONE_67.png/1290x2796bb.jpg"
+    ],
+    "description": "Design sheet-metal flashing profiles, calculate flat patterns, and estimate material and labor costs offline. Share a four-page PDF with the folded profile, flat pattern, bend schedule, and cost breakdown.\n\nStart with an L-angle, U-channel, Z-flashing, hat channel, roof drip edge, or ridge cap. For a different shape, build a custom profile with two to six segments. Set leg lengths, bend angles, and bend directions. Duplicate a saved project to compare a different set of dimensions.\n\nEnter the material thickness, inside bend radius, and K-factor to calculate bend allowance, setback, bend deduction, and flat width. Switch between the folded profile and the flat pattern to inspect dimensions and bend locations. The drawing flags overlapping or invalid geometry while you edit.\n\nChoose galvanized steel, stainless steel, aluminum, copper, or a material with your own density. Enter part length, quantity, and waste allowance to estimate net area, purchase area, and weight. Use the purchase area to estimate material needs and plan the stock layout separately.\n\nBuild a quote from material, cutting, bending, and labor rates. Set bending costs per bend or per piece, then apply markup and tax and review the unit and project totals. Preview the PDF in A4 or US Letter and share it through the system share sheet.\n\nWork in millimeters, decimal inches, or fractional inches. Projects, calculations, and PDF creation stay on your device. No account or subscription is required.",
+    "version": "1.0",
+    "releaseDate": "2026-11-23T08:00:00Z",
+    "currentVersionReleaseDate": "2026-11-24T01:35:42Z",
+    "minimumOsVersion": "17.0",
+    "formattedPrice": "Free",
+    "trackContentRating": "4+",
+    "averageUserRating": 0,
+    "userRatingCount": 0,
+    "sellerName": "家宝 戴"
   }
 ]

@@ -135,6 +135,7 @@ export const conversionRoutes = new Set([
   "/apps/export-backup-all-contacts-pro/",
   "/apps/fabricnest-fabric-planner/",
   "/apps/fast-rhythm-fasting-and-sleep/",
+  "/apps/flashinglab-sheet-metal/",
   "/apps/floorquote-flooring-quotes/",
   "/apps/fridgetrack-fridge-inventory/",
   "/apps/glowfeel-stress-ease/",

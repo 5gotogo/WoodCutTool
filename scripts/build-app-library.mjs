@@ -94,6 +94,10 @@ const generatedOverrideSlugs = new Set(["stringer-stair-layout"]);
 const handWrittenOverrideSlugs = new Set(["cutlist-plywood-optimizer", "quiltfit-quilt-design-planner"]);
 
 const legalLinksBySlug = {
+  "flashinglab-sheet-metal": {
+    privacy: "/legal/FlashingLab/privacy/",
+    support: "/legal/FlashingLab/support/"
+  },
   "yarnfit-knit-crochet-charts": {
     privacy: "/legal/YarnFit/privacy/",
     support: "/legal/YarnFit/support/"
@@ -186,6 +190,7 @@ const appSupportDirectory = [
 
 const featuredApps = [
   ["cutlist-plywood-optimizer", "Offline plywood cut list optimizer for woodworkers, cabinet makers, and DIY builders."],
+  ["flashinglab-sheet-metal", "Design sheet-metal flashing profiles, calculate flat patterns and bend allowances, estimate costs, and export workshop PDFs offline."],
   ["casework-cabinet-cut-lists", "On-device cabinet planning for parts lists, sheet layouts, hardware estimates, cutting steps, and shop-ready exports."],
   ["shelf-planner-cabinet-shelves", "Offline cabinet shelf planner for equal spacing, 32mm hole references, sag estimates, saved projects, and workshop PDFs."],
   ["woodcheck-carpentry-checklist", "Offline woodworking inspections with staged checklists, measurements, photo evidence, issue closure, and local PDF records."],
@@ -207,8 +212,8 @@ const categorySections = [
   {
     id: "maker-calculator-apps",
     title: "Maker & Calculator Apps",
-    description: "Practical iPhone tools for people who plan, measure, cut, inspect, design, fabricate, or build physical projects. These apps focus on woodworking quality checks, cabinet planning, shelf spacing, plywood optimization, HVAC duct layout, tile estimation, flooring quotes, trim angles, stair stringer calculation, knitting charts, and fabric and foam cutting plans.",
-    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "woodcheck-carpentry-checklist", "tilefit-tile-layout-planner", "floorquote-flooring-quotes", "ductlab-hvac-duct-layout", "spring-miter-bevel", "shelf-planner-cabinet-shelves", "quiltfit-quilt-design-planner", "yarnfit-knit-crochet-charts", "fabricnest-fabric-planner", "cushioncut-fabric-foam", "stringer-stair-layout"]
+    description: "Practical iPhone tools for people who plan, measure, cut, inspect, design, fabricate, or build physical projects. These apps focus on woodworking quality checks, cabinet planning, shelf spacing, plywood optimization, sheet-metal flashing and HVAC duct layout, tile estimation, flooring quotes, trim angles, stair stringer calculation, knitting charts, and fabric and foam cutting plans.",
+    slugs: ["cutlist-plywood-optimizer", "casework-cabinet-cut-lists", "woodcheck-carpentry-checklist", "tilefit-tile-layout-planner", "floorquote-flooring-quotes", "flashinglab-sheet-metal", "ductlab-hvac-duct-layout", "spring-miter-bevel", "shelf-planner-cabinet-shelves", "quiltfit-quilt-design-planner", "yarnfit-knit-crochet-charts", "fabricnest-fabric-planner", "cushioncut-fabric-foam", "stringer-stair-layout"]
   },
   {
     id: "small-business-apps",
@@ -249,6 +254,7 @@ const categorySections = [
 ];
 
 const appTags = {
+  "flashinglab-sheet-metal": ["Sheet metal", "Flat patterns", "Bend allowance", "PDF export"],
   "moodloop-mood-tracker-journal": ["Mood journal", "Daily check-ins", "On device", "Private"],
   "cutlist-plywood-optimizer": ["Plywood", "Cut lists", "Offline", "PDF export"],
   "casework-cabinet-cut-lists": ["Cabinets", "Cut lists", "Nesting", "PDF & CSV"],

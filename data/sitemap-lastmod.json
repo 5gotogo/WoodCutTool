@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-11-19",
-    "hash": "2ede85f9fd74e935ad7f9aef9048039e4fe0fbef5cc5f7e5528b4f6c55c3ef5c",
+    "lastmod": "2026-11-26",
+    "hash": "125265a9105ba98753e12cf5b8a372bd44b99d34b02873c31de353bb1215a48a",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -180,8 +180,8 @@
     "hashVersion": 2
   },
   "/apps/casework-cabinet-cut-lists/": {
-    "lastmod": "2026-10-08",
-    "hash": "bd941c83623f071d819c36c0161ce3739426ee8ad3f92cab3b53268cd53632c6",
+    "lastmod": "2026-11-26",
+    "hash": "951baf33a140de96fc1b369e423fa76bd60aa7711b5b4ba883f510446452620b",
     "hashVersion": 2
   },
   "/apps/colorpop-color-block-tap-game/": {
@@ -809,9 +809,14 @@
     "hash": "c0f0e8555a1fb532cdafd0c64dba66e9267e490be994484b3acebac89b54c8aa",
     "hashVersion": 2
   },
+  "/apps/flashinglab-sheet-metal/": {
+    "lastmod": "2026-11-26",
+    "hash": "943c601e55682d40754f214ede237348d137ad3cd15e785e02c5c3bfca507afd",
+    "hashVersion": 2
+  },
   "/apps/floorquote-flooring-quotes/": {
-    "lastmod": "2026-11-03",
-    "hash": "dbc888b98c4a0fca8e62eae5f343a21b439a77b12112f07bda99a293cce30e5c",
+    "lastmod": "2026-11-26",
+    "hash": "3cdd732e89a7d2382fe64119f75c0f0e9c4661a45decb3ce57e1207d179f6f17",
     "hashVersion": 2
   },
   "/apps/fridgetrack-fridge-inventory/": {
@@ -955,8 +960,8 @@
     "hashVersion": 2
   },
   "/apps/tilefit-tile-layout-planner/": {
-    "lastmod": "2026-10-08",
-    "hash": "cc588750218216ab34b24892d4d6bbc36bd40b0560d2a4b29c9e707086adef7e",
+    "lastmod": "2026-11-26",
+    "hash": "f61081dc961a6f95ab22e02374c1c936dd04bdf0347d6a6a405befd9ea883c2d",
     "hashVersion": 2
   },
   "/apps/tinnitus-relief-sound-masking/": {
@@ -965,8 +970,8 @@
     "hashVersion": 2
   },
   "/apps/woodcheck-carpentry-checklist/": {
-    "lastmod": "2026-10-08",
-    "hash": "e325620f8ccd24a9717e04806edb20b6ac5c200bfb5816d03f2271ccdf3d07ea",
+    "lastmod": "2026-11-26",
+    "hash": "4b40dde3e54f68701d9f574f1e7bdbb20daa7a10eae68ea27622f2078897f3be",
     "hashVersion": 2
   },
   "/apps/work-shift-schedule-calendar/": {
