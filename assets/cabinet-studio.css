@@ -15,7 +15,6 @@
 @media(max-width:1000px){.cs-main{padding:24px!important}.cs-hero h1{letter-spacing:-2.5px}.cs-hero-note{display:none}.cs-workspace{grid-template-columns:260px minmax(0,1fr)}.cs-controls{padding:18px}.cs-metric strong{font-size:24px}.cs-canvas-toolbar{padding:13px}.cs-tabs button{padding:8px 9px;font-size:11px}.cs-export-bar{align-items:flex-start;flex-direction:column}.cs-view-tools button{padding:7px 9px}.cs-stage-caption{flex-direction:column;gap:3px}.cs-sheets{grid-template-columns:1fr}.cs-insight-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cs-method{gap:35px}.cs-metrics{padding:22px 16px;gap:8px}}
 @media(max-width:720px){.cs-main{padding:16px!important}.cs-hero{padding:15px 0 24px}.cs-hero h1{font-size:49px;letter-spacing:-2.8px}.cs-hero p:not(.cs-crumb){font-size:13px}.cs-version{font-size:8px;letter-spacing:.7px;margin-left:2px;padding-left:8px}.cs-crumb{font-size:10px;gap:7px}.cs-brief{padding:16px}.cs-brief-hint{display:none}.cs-brief form{flex-direction:column;gap:9px}.cs-brief input{font-size:12px;padding:13px}.cs-main button.cs-primary{padding:12px 16px}.cs-brief>p{font-size:10px}.cs-workspace{display:flex;flex-direction:column}.cs-canvas-column{order:0}.cs-controls{order:1;border-right:0;border-top:1px solid var(--cs-line);padding:22px}.cs-stage{min-height:410px}#cs-model{height:410px}.cs-stage-heading{top:18px;left:18px}.cs-stage-heading>span{font-size:8px}.cs-stage-heading strong{font-size:10px}.cs-stage-caption{left:18px;font-size:8px;bottom:60px}.cs-view-tools{bottom:14px;gap:1px}.cs-view-tools button{font-size:10px;padding:6px 8px}.cs-view-tools button span{font-size:14px;margin-right:2px}.cs-canvas-toolbar{padding:12px}.cs-tabs{gap:4px}.cs-tabs button{font-size:11px;padding:8px 10px}.cs-live{font-size:8px;letter-spacing:.6px}.cs-orbit-control{padding:12px 16px;gap:8px}.cs-orbit-control>span{font-size:8px}.cs-orbit-control input{max-width:none}.cs-inspector{padding:15px;min-height:87px;gap:10px}.cs-inspector-icon{width:30px;height:30px;font-size:18px}.cs-inspector p{font-size:9px}.cs-metrics{padding:20px 15px}.cs-metric strong{font-size:24px}.cs-metric span{font-size:8px;letter-spacing:.2px}.cs-metric small{font-size:8px;line-height:1.5}.cs-export-bar{padding:15px;gap:10px}.cs-export-bar>div{width:100%;gap:6px}.cs-export-bar button{flex:1;padding:10px 5px;font-size:10px}.cs-presets button{font-size:11px;padding:10px}.cs-presets button span{font-size:23px}.cs-controls .cs-field-controls{gap:22px}.cs-controls .cs-field input[type=number]{width:88px}.cs-controls .cs-field-pair input[type=number]{width:100%}.cs-field label{font-size:12px}.cs-main legend{font-size:11px}.cs-swatches button{font-size:12px}.cs-check{font-size:12px}.cs-stock summary{font-size:12px}.cs-intelligence,.cs-options{margin-top:32px}.cs-section-heading{align-items:flex-start;gap:12px;flex-wrap:wrap}.cs-section-heading h2{font-size:26px}.cs-section-heading>span{font-size:10px}.cs-insight-grid,.cs-comparisons{grid-template-columns:1fr}.cs-insight{padding:18px}.cs-insight p{font-size:12px}.cs-comparison-empty{padding:20px;gap:12px}.cs-project-actions{gap:5px}.cs-project-actions button,.cs-file-button{padding:10px 8px;font-size:10px}.cs-project-actions #cs-reset{margin-left:0}.cs-method{grid-template-columns:1fr;gap:16px;margin-top:38px;padding-top:28px}.cs-method h2{font-size:28px}.cs-method>div:first-child br{display:none}.cs-view-intro{padding:22px 18px 10px}.cs-view-intro h2{font-size:21px}.cs-sheets{padding:10px 18px 22px}.cs-table-wrap{padding:10px 18px 22px}.cs-main td,.cs-main th{padding:11px 7px}}
 @media(prefers-reduced-motion:reduce){.cs-main *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-@media print{.site-header,.site-footer,.cs-hero-note,.cs-brief,.cs-controls,.cs-canvas-toolbar,.cs-view-tools,.cs-orbit-control,.cs-stage-caption,.cs-intelligence,.cs-options,.cs-project-actions,.cs-export-bar,.cs-inspector,.cs-notice,.cs-method,.skip-link{display:none!important}.cs-main{padding:0!important;max-width:none!important}.cs-hero{padding:0 0 20px}.cs-hero h1{font-size:28px;letter-spacing:-1px}.cs-hero p:not(.cs-crumb){font-size:11px}.cs-workspace{display:block;border:0;box-shadow:none}.cs-main .cs-view[hidden]{display:block!important}.cs-stage{min-height:400px;height:400px;background:#f4f4e9!important;print-color-adjust:exact}#cs-model{height:400px}.cs-sheet{break-inside:avoid;print-color-adjust:exact}.cs-sheets{grid-template-columns:1fr 1fr}.cs-view-intro{padding-top:22px}.cs-parts-view{break-before:page}.cs-main td,.cs-main th{padding:8px}.cs-metrics{padding:20px}.cs-stage-heading{top:10px}.cs-live{display:none}}
 
 /* Neutralize shared calculator input padding inside this compact control panel. */
 .cs-main input[type=range]{min-height:0;padding:0;border:0;box-shadow:none;background:transparent}
@@ -24,4 +23,71 @@
 
 #cs-mobile-preview{display:none}#cs-view-model{scroll-margin-top:82px}#cs-model-parts [data-part]{transition:opacity .4s ease}
 @media(max-width:720px){#cs-mobile-preview{display:block;padding:7px 10px;font-size:10px;margin-left:auto}.cs-panel-heading .cs-unit{display:none}.cs-controls .cs-panel-heading{position:sticky;top:68px;background:#fffef9;z-index:3;padding:12px 0;margin-top:-10px}}
-.cs-workshop{margin-top:48px;padding:32px;background:#fffef9;border:1px solid var(--cs-line);border-radius:12px}.cs-workshop h2{font-size:36px;letter-spacing:-1px;margin:8px 0}.cs-workshop h3{margin-top:30px}.cs-pack-summary{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}.cs-pack-summary strong{padding:14px 18px;background:#edf1e7;border-radius:8px}.cs-pack-table{overflow-x:auto}.cs-pack-table table{width:100%;border-collapse:collapse}.cs-workshop button{padding:14px 20px;background:#23392f;color:white}.cs-workshop p,.cs-workshop li{line-height:1.7}.cs-pack-table td{min-width:100px}@media(max-width:720px){.cs-workshop{padding:20px}.cs-workshop h2{font-size:28px}}@media print{.cs-workshop{break-before:page;padding:0;border:0}.cs-workshop button{display:none}.cs-pack-table{overflow:visible}.cs-pack-table tr{break-inside:avoid}}
+.cs-workshop{margin-top:48px;padding:32px;background:#fffef9;border:1px solid var(--cs-line);border-radius:12px}.cs-workshop h2{font-size:36px;letter-spacing:-1px;margin:8px 0}.cs-workshop h3{margin-top:30px}.cs-pack-summary{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0}.cs-pack-summary strong{padding:14px 18px;background:#edf1e7;border-radius:8px}.cs-pack-table{overflow-x:auto}.cs-pack-table table{width:100%;border-collapse:collapse}.cs-workshop button{padding:14px 20px;background:#23392f;color:white}.cs-workshop p,.cs-workshop li{line-height:1.7}.cs-pack-table td{min-width:100px}@media(max-width:720px){.cs-workshop{padding:20px}.cs-workshop h2{font-size:28px}}
+
+.cs-print-heading,.cs-print-warning{display:none}
+
+@media screen{
+  #cs-workspace,#cs-workshop{scroll-margin-top:82px}
+  .cs-workspace > .cs-notice,.cs-bookcase-intro{grid-column:1/-1}
+  .cs-workspace > .cs-notice:empty{display:none}
+  .cs-workspace > .cs-notice:not(:empty){margin:16px 20px 0}
+  .cs-bookcase-intro{padding:22px 24px;border-bottom:1px solid var(--cs-line);background:#edf1e7}
+  .cs-bookcase-intro h2{font-size:clamp(24px,4vw,34px);line-height:1.2}
+  .cs-bookcase-intro p{max-width:60ch;margin:8px 0;font-size:14px;line-height:1.55}
+  .cs-bookcase-intro a{font-size:13px;text-decoration:underline;text-underline-offset:3px}
+  .cabinet-studio[data-project="bookcase"] :is(.cs-hero,.cs-brief,.cs-presets){display:none}
+  .cs-export-bar a{display:inline-flex;align-items:center;gap:6px;padding:9px 11px;font-size:11px;line-height:1.4}
+  .cs-workshop-actions{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 8px}
+  .cs-workshop-actions #cs-purchase-csv{background:#edf1e7;color:var(--cs-ink)}
+}
+
+@media screen and (max-width:720px){
+  .cabinet-studio[data-project="bookcase"] .cs-bookcase-intro{order:-3;padding:17px 18px}
+  .cs-workspace > .cs-notice{order:-2}
+  .cabinet-studio[data-project="bookcase"] .cs-controls{order:-1;border-top:0;border-bottom:1px solid var(--cs-line)}
+  .cs-export-bar a{padding:9px 4px;font-size:10px}
+}
+
+@media print{
+  .cabinet-studio{background:#fff}
+  .cabinet-studio .site-header,.cabinet-studio .site-footer,.cabinet-studio .skip-link,
+  .cs-main .cs-hero,.cs-main .cs-brief,.cs-main .cs-controls,.cs-main .cs-bookcase-intro,
+  .cs-main .cs-canvas-toolbar,.cs-main .cs-view-tools,.cs-main .cs-orbit-control,.cs-main .cs-stage-caption,
+  .cs-main .cs-intelligence,.cs-main .cs-options,.cs-main .cs-export-bar,.cs-main .cs-inspector,
+  .cs-main .cs-notice,.cs-main .cs-method,.cs-main .cs-screen-only,.cs-main .cs-workshop-actions,.cs-main button,
+  .cs-workshop > p,.cs-workshop > h2{display:none!important}
+  .cs-main{padding:0!important;margin:0;max-width:none!important;font-size:10pt}
+  .cs-main h2,.cs-main h3{break-after:avoid}
+  .cs-main p,.cs-main li{orphans:2;widows:2}
+  .cs-print-heading{display:block;margin:0 0 12pt;break-inside:avoid;break-after:avoid}
+  .cs-print-heading h1,.cs-print-heading h2{font-size:23pt;line-height:1.2;margin-bottom:4pt}
+  .cs-print-heading p{line-height:1.45}
+  .cabinet-studio[data-print-ready="false"] .cs-print-warning{display:block;font-size:11pt}
+  .cabinet-studio[data-print-ready="false"] :is(#cs-print-size,.cs-canvas-column,.cs-workshop){display:none!important}
+  .cs-workspace,.cs-canvas-column{display:block;overflow:visible;border:0;box-shadow:none;background:#fff}
+  .cs-main .cs-view,.cs-main .cs-view[hidden]{display:block!important}
+  .cs-stage{min-height:0;height:225pt;background:#f4f4e9;break-inside:avoid;print-color-adjust:exact}
+  #cs-model{min-height:0;height:100%}
+  .cs-stage-heading{top:9pt;left:9pt}
+  .cs-view-intro{padding:12pt 0 4pt;break-inside:avoid;break-after:avoid}
+  .cs-view-intro h2{font-size:15pt;margin-bottom:4pt}
+  .cs-sheets{padding:0;gap:9pt;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cs-sheet{padding:6pt;break-inside:avoid;print-color-adjust:exact}
+  .cs-sheet svg{max-height:140pt}
+  .cs-table-wrap,.cs-pack-table{padding:0;overflow:visible}
+  .cs-main table{white-space:normal;font-size:9pt}
+  .cs-main thead{display:table-header-group}
+  .cs-main tr{break-inside:avoid}
+  .cs-main td,.cs-main th{padding:4pt 6pt}
+  .cs-main tbody tr[data-selected=true]{background:none}
+  #cs-cut-rows button{display:inline!important;appearance:none;padding:0;border:0;background:none;font:inherit;color:inherit}
+  .cs-metrics{padding:9pt 0;margin:0;break-inside:avoid}
+  .cs-metric strong{font-size:17pt}
+  .cs-workshop{margin:12pt 0 0;padding:0;border:0;background:#fff}
+  .cs-workshop h3{margin:12pt 0 3pt;font-size:13pt}
+  .cs-pack-summary{margin:8pt 0;gap:9pt;break-inside:avoid}
+  .cs-pack-summary strong{padding:0}
+  .cs-pack-table td{min-width:0}
+  .cs-workshop ul{padding-left:18pt}
+}

@@ -3,7 +3,14 @@ import { DEFAULTS, PRESETS, normalize, buildCabinet, fitShelves, parseBrief, csv
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 const ns = 'http://www.w3.org/2000/svg';
-const storageKey = 'woodcuttool.cabinet-studio.v1';
+const isBookcase = new URLSearchParams(location.search).get('project') === 'bookcase';
+const storageKey = isBookcase ? 'woodcuttool.cabinet-studio.bookcase.v1' : 'woodcuttool.cabinet-studio.v1';
+if (isBookcase) {
+  document.body.dataset.project = 'bookcase';
+  document.title = 'Open Bookcase Planner | WoodCutTool';
+  $('#cs-bookcase-intro').hidden = false;
+  $('#cs-print-title').textContent = 'Open bookcase workshop pack';
+}
 const mobileView = matchMedia('(max-width: 720px)');
 function syncViewport() { $('#cs-model').setAttribute('viewBox', mobileView.matches ? '90 15 620 620' : '0 0 800 650'); }
 mobileView.addEventListener('change', () => { syncViewport(); if (visual) drawModel(visual); });
@@ -15,13 +22,16 @@ const escape = value => String(value).replace(/[&<>"']/g, s => ({ '&': '&amp;', 
 let config = { ...DEFAULTS }, comparisons = [], model, selected = null, activePreset = 'bookcase', view = 'model';
 let angle = -28, explosion = 0, dimensions = true, animId = 0, animationTimer, saveTimer, assemblyStep = -1;
 let lastDownloadUrl;
-let visual = null, storageAvailable = true, validInput = true, draftPending = false;
+let visual = null, storageAvailable = true, validInput = true, draftFrame = 0;
 const palette = { birch: ['#d9c49b', '#f0dfbb', '#b7a075'], oak: ['#c69e67', '#e3c58e', '#987445'], walnut: ['#896245', '#b08c67', '#644633'] };
 function notice(text = '', error = false) { $('#cs-notice').textContent = text; $('#cs-notice').dataset.error = String(error); }
 function setExportEnabled(enabled) { ['cs-purchase-csv', 'cs-export-csv', 'cs-export-svg', 'cs-print', 'cs-snapshot', 'cs-backup', 'cs-share'].forEach(id => $('#' + id).disabled = !enabled || (id === 'cs-snapshot' && comparisons.length >= 3)); }
 function readForm() {
   const raw = { ...config };
-  new FormData($('#cs-design-form')).forEach((v, k) => raw[k] = Number(v));
+  for (const input of $$('#cs-design-form input[type="number"]')) {
+    if (!input.value) throw Error('Enter a value for ' + input.labels[0].firstChild.textContent.trim().toLowerCase() + '.');
+    raw[input.name] = input.valueAsNumber;
+  }
   raw.back = $('#cs-design-form [name=back]').checked;
   raw.grain = $('#cs-design-form [name=grain]').checked;
   return normalize(raw);
@@ -35,13 +45,24 @@ function syncForm() {
   $$('[data-preset]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.preset === activePreset)));
   $$('[data-material]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.material === config.material)));
 }
+function saveDraft() {
+  clearTimeout(saveTimer);
+  saveTimer = undefined;
+  try {
+    localStorage.setItem(storageKey, JSON.stringify({ version: 1, config, comparisons }));
+    storageAvailable = true;
+    $('#cs-save-status').textContent = isBookcase
+      ? '✓ Bookcase saved in this browser. Return to this bookcase planner to keep editing.'
+      : '✓ Saved in this browser · No account needed';
+  } catch {
+    storageAvailable = false;
+    $('#cs-save-status').textContent = 'Local saving unavailable. Export a JSON backup.';
+  }
+}
 function scheduleSave() {
   clearTimeout(saveTimer);
   $('#cs-save-status').textContent = storageAvailable ? 'Saving this design…' : 'Local saving unavailable. Export a JSON backup.';
-  saveTimer = setTimeout(() => {
-    try { localStorage.setItem(storageKey, JSON.stringify({ version: 1, config, comparisons })); storageAvailable = true; $('#cs-save-status').textContent = '✓ Saved in this browser · No account needed'; }
-    catch { storageAvailable = false; $('#cs-save-status').textContent = 'Local saving unavailable. Export a JSON backup.'; }
-  }, 250);
+  saveTimer = setTimeout(saveDraft, 250);
 }
 function snapshotVisual() { return { config: { ...config }, boxes: Object.fromEntries(model.parts.map(p => [p.id, [...p.box]])), angle, explosion }; }
 function animate(from, target) {
@@ -66,6 +87,7 @@ function update(next, { message = '', preset = '', immediate = false } = {}) {
   model = buildCabinet(config); validInput = true; syncForm(); notice(message);
   if (!model.parts.some(p => p.id === selected)) selected = null;
   $('#cs-model-size').textContent = `${fmt(config.width)} × ${fmt(config.height)} × ${fmt(config.depth)} mm`;
+  $('#cs-print-size').textContent = `${$('#cs-model-size').textContent} (W × H × D) · ${fmt(config.thickness)} mm body panels · ${config.bays} ${config.bays === 1 ? 'bay' : 'bays'} · ${config.shelves} shelves per bay`;
   renderModelNodes(); renderResults(); renderComparison(); selectPart(selected); setExportEnabled(model.valid); scheduleSave();
   if (immediate) { cancelAnimationFrame(animId); visual = snapshotVisual(); drawModel(visual); }
   else animate(visual, snapshotVisual());
@@ -86,14 +108,15 @@ function renderModelNodes() {
   }
   existing.forEach(e => e.remove());
 }
-function drawModel(v) {
+function drawModel(v, { printing = false } = {}) {
   const c = v.config, yaw = v.angle * Math.PI / 180, tilt = 12 * Math.PI / 180, e = v.explosion;
+  const isMobile = mobileView.matches && !printing;
   const size = Math.max(c.width, c.height), separation = size * 0.15 * e;
-  const scale = Math.min(530 / (c.width * Math.cos(yaw) + c.depth * Math.abs(Math.sin(yaw)) + separation * 2.4), (mobileView.matches ? 400 : 440) / (c.height + separation * 1.6 + c.depth * .23));
+  const scale = Math.min(530 / (c.width * Math.cos(yaw) + c.depth * Math.abs(Math.sin(yaw)) + separation * 2.4), (isMobile ? 400 : 440) / (c.height + separation * 1.6 + c.depth * .23));
   const project = (x, y, z) => {
     x -= c.width / 2; y -= c.height / 2; z -= c.depth / 2;
     const xx = x * Math.cos(yaw) - z * Math.sin(yaw), zz = x * Math.sin(yaw) + z * Math.cos(yaw);
-    return [400 + xx * scale, (mobileView.matches ? 305 : 325) + (-y * Math.cos(tilt) + zz * Math.sin(tilt)) * scale];
+    return [400 + xx * scale, (isMobile ? 305 : 325) + (-y * Math.cos(tilt) + zz * Math.sin(tilt)) * scale];
   };
   const points = arr => arr.map(p => project(...p).map(n => n.toFixed(2)).join(',')).join(' ');
   const colors = palette[c.material];
@@ -116,7 +139,7 @@ function drawModel(v) {
     group.children[3].setAttribute('fill', p.id === 'back' && c.width > c.height ? 'url(#cs-grain-horizontal)' : 'url(#cs-grain)');
     // An assembly view isolates meaningful groups. The construction model still contains all parts.
     let opacity = 1;
-    if (assemblyStep >= 0) {
+    if (!printing && assemblyStep >= 0) {
       const visible = assemblyStep === 0 ? ['left','right','bottom'].includes(p.id) : assemblyStep === 1 ? !p.id.startsWith('shelf') && p.id !== 'back' : assemblyStep === 2 ? p.id !== 'back' : true;
       opacity = visible ? 1 : .06;
     }
@@ -130,7 +153,7 @@ function drawModel(v) {
     grid.append(svgElement('line', { x1: 400+i*45+190, y1: 524-i*9, x2: 400+i*45-190, y2: 600-i*9 }));
   }
   const dim = $('#cs-dimensions'); dim.replaceChildren();
-  if (dimensions && assemblyStep < 0) {
+  if (printing || (dimensions && assemblyStep < 0)) {
     const line = (a, b, text, offset) => {
       a = project(...a); b = project(...b);
       dim.append(svgElement('line', { x1: a[0], y1: a[1], x2: b[0], y2: b[1] }));
@@ -157,7 +180,7 @@ function renderResults() {
   $('#cs-sheets').innerHTML = model.groups.flatMap(g => [
     ...g.sheets.map((sheet, i) => {
       sheetNo++;
-      return `<article class="cs-sheet"><h3>Sheet ${sheetNo} / ${g.thickness} mm ${g.thickness === 6 ? 'back' : 'body'} stock</h3><svg viewBox="-8 -8 ${config.sheetLength+16} ${config.sheetWidth+16}" role="group" aria-label="Sheet ${sheetNo} layout"><rect width="${config.sheetLength}" height="${config.sheetWidth}" fill="#e5dfca" stroke="#9c987b" stroke-width="5"/><rect x="${config.trim}" y="${config.trim}" width="${config.sheetLength-2*config.trim}" height="${config.sheetWidth-2*config.trim}" fill="none" stroke="#b79c62" stroke-width="3" stroke-dasharray="15 10"/>${sheet.placed.map((p, index) => `<g data-part="${p.id}" role="button" tabindex="0" aria-label="${escape(p.label)}, ${fmt(p.length)} by ${fmt(p.width)} mm${p.rotated ? ', rotated' : ''}" aria-pressed="false"><rect x="${p.x}" y="${p.y}" width="${p.l}" height="${p.w}" fill="${palette[config.material][index%2]}" stroke="#fffef1" stroke-width="3"/><text x="${p.x+p.l/2}" y="${p.y+p.w/2}" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="${Math.min(40,p.w*.18,p.l*.14)}" fill="#3f3428" pointer-events="none">${escape(p.label)}</text>${config.grain ? `<path d="M${p.x+15} ${p.y+15}h${Math.min(100,p.l-30)}m-14 -7l14 7-14 7" fill="none" stroke="#72562e" stroke-width="3" pointer-events="none"/>` : ''}</g>`).join('')}</svg><p>${sheet.placed.length} panels · ${config.sheetLength} × ${config.sheetWidth} mm · ${config.grain ? 'grain → along sheet length' : '90° rotation allowed'}</p></article>`;
+      return `<article class="cs-sheet"><h3>Sheet ${sheetNo} / ${g.thickness} mm ${g.thickness === 6 ? 'back' : 'body'} stock</h3><svg viewBox="-8 -8 ${config.sheetLength+16} ${config.sheetWidth+16}" role="group" aria-label="Sheet ${sheetNo} layout"><rect width="${config.sheetLength}" height="${config.sheetWidth}" fill="#e5dfca" stroke="#9c987b" stroke-width="5"/><rect x="${config.trim}" y="${config.trim}" width="${config.sheetLength-2*config.trim}" height="${config.sheetWidth-2*config.trim}" fill="none" stroke="#b79c62" stroke-width="3" stroke-dasharray="15 10"/>${sheet.placed.map((p, index) => `<g data-part="${p.id}" role="button" tabindex="0" aria-label="${escape(p.label)}, ${fmt(p.length)} by ${fmt(p.width)} mm${p.rotated ? ', rotated' : ''}" aria-pressed="false"><rect x="${p.x}" y="${p.y}" width="${p.l}" height="${p.w}" fill="${palette[config.material][index%2]}" stroke="#fffef1" stroke-width="3"/><text x="${p.x+p.l/2}" y="${p.y+p.w/2}" text-anchor="middle" dominant-baseline="middle" font-family="sans-serif" font-size="${Math.min(40,p.w*.18,p.l*.14)}" fill="#3f3428" pointer-events="none">${escape(p.label)}</text>${config.grain ? `<path d="M${p.x+15} ${p.y+15}h${Math.min(100,p.l-30)}m-14 -7l14 7-14 7" fill="none" stroke="#72562e" stroke-width="3" pointer-events="none"/>` : ''}</g>`).join('')}</svg><p>${sheet.placed.length} ${sheet.placed.length === 1 ? 'panel' : 'panels'} · ${config.sheetLength} × ${config.sheetWidth} mm · ${config.grain ? 'grain → along sheet length' : '90° rotation allowed'}</p></article>`;
     }),
     ...(g.unplaced.length ? [`<article class="cs-insight" data-kind="error"><h3>Unplaced ${g.thickness} mm parts</h3><p>${g.unplaced.map(p => `${escape(p.label)} (${fmt(p.length)} × ${fmt(p.width)})`).join(', ')}. These parts need larger stock or a revised design.</p></article>`] : [])
   ]).join('');
@@ -246,15 +269,22 @@ function exportDrawing() {
   assemblyStep=oldStep; if (previous) drawModel(previous); selectPart(selected);
 }
 $('#cs-design-form').addEventListener('submit', e => e.preventDefault());
+function settleDraft() {
+  if (!draftFrame) return;
+  cancelAnimationFrame(draftFrame);
+  draftFrame = 0;
+  try { update(readForm()); }
+  catch (error) {
+    validInput = false;
+    setExportEnabled(false);
+    notice(error.message + ' The preview still shows the previous dimensions.', true);
+  }
+}
 $('#cs-design-form').addEventListener('input', e => {
   const key = e.target.dataset.range || e.target.name;
   if (e.target.dataset.range) $(`#cs-design-form [name="${key}"]`).value = e.target.value;
   else { const range = $(`[data-range="${key}"]`); if (range) range.value = e.target.value; }
-  if (draftPending) return; draftPending = true;
-  requestAnimationFrame(() => {
-    draftPending = false;
-    try { update(readForm()); } catch (error) { validInput = false; setExportEnabled(false); notice(error.message + ' Preview shows the last valid design.', true); }
-  });
+  if (!draftFrame) draftFrame = requestAnimationFrame(settleDraft);
 });
 $('#cs-brief-form').addEventListener('submit', e => {
   e.preventDefault();
@@ -289,18 +319,40 @@ $('#cs-model').addEventListener('pointercancel',()=>pointer=null);
 $('#cs-model').addEventListener('click',e=>{if(pointer?.suppress){e.stopPropagation();e.preventDefault();}},true);
 $('#cs-snapshot').addEventListener('click',()=>{if(comparisons.length>=3)return;comparisons.push({config:{...config}});renderComparison();scheduleSave();notice('Comparison saved. Change the current design to compare costs and material use.');});
 $('#cs-comparisons').addEventListener('click',e=>{const restore=e.target.closest('[data-restore]'),remove=e.target.closest('[data-remove]');if(restore)update(comparisons[Number(restore.dataset.restore)].config,{message:'Saved option restored.'});if(remove){comparisons.splice(Number(remove.dataset.remove),1);renderComparison();scheduleSave();}});
-$('#cs-purchase-csv').addEventListener('click',()=>download('cabinet-shopping-list.csv',shoppingCsv(model),'text/csv;charset=utf-8'));
-$('#cs-export-csv').addEventListener('click',()=>download('cabinet-studio-cut-list.csv',csvCutList(model),'text/csv;charset=utf-8'));
-$('#cs-export-svg').addEventListener('click',exportDrawing);
-$('#cs-print').addEventListener('click',()=>{stopAssembly();cancelAnimationFrame(animId);explosion=0;$('#cs-explode').setAttribute('aria-pressed','false');visual=snapshotVisual();drawModel(visual);window.print();});
-$('#cs-backup').addEventListener('click',backup);
+function onValidDesign(id, action) {
+  $('#' + id).addEventListener('click', () => {
+    settleDraft();
+    if (validInput && model.valid) action();
+  });
+}
+onValidDesign('cs-purchase-csv', () => download('cabinet-shopping-list.csv', shoppingCsv(model), 'text/csv;charset=utf-8'));
+onValidDesign('cs-export-csv', () => download('cabinet-studio-cut-list.csv', csvCutList(model), 'text/csv;charset=utf-8'));
+onValidDesign('cs-export-svg', exportDrawing);
+onValidDesign('cs-print', () => window.print());
+onValidDesign('cs-backup', backup);
+window.addEventListener('beforeprint', () => {
+  settleDraft();
+  const ready = validInput && model.valid;
+  document.body.dataset.printReady = String(ready);
+  if (!ready) return;
+  cancelAnimationFrame(animId);
+  $('#cs-model').setAttribute('viewBox', '0 0 800 650');
+  drawModel({ ...snapshotVisual(), angle: -28, explosion: 0 }, { printing: true });
+});
+window.addEventListener('afterprint', () => {
+  if (document.body.dataset.printReady !== 'true') return;
+  document.body.dataset.printReady = 'false';
+  syncViewport();
+  visual = snapshotVisual();
+  drawModel(visual);
+});
 $('#cs-import').addEventListener('change',async e=>{
   const file=e.target.files[0];if(!file)return;
   try {if(file.size>100000)throw Error('Project file is too large. Use a Cabinet Studio JSON backup under 100 KB.');const project=validateProject(JSON.parse(await file.text()));comparisons=project.comparisons;update(project.config,{message:'Project imported, including saved comparisons.'});}
   catch(error){notice('Import failed: '+error.message,true);}finally{e.target.value='';}
 });
 $('#cs-share').addEventListener('click',async()=>{
-  const hash=new URLSearchParams(Object.entries(config).map(([k,v])=>[k,String(v)])).toString(), url=location.origin+location.pathname+'#'+hash;
+  const hash=new URLSearchParams(Object.entries(config).map(([k,v])=>[k,String(v)])).toString(), url=location.origin+location.pathname+(isBookcase ? '?project=bookcase' : '')+'#'+hash;
   try {await navigator.clipboard.writeText(url);notice('Design link copied. It contains design settings; saved comparisons stay in this browser.');}
   catch {const input=document.createElement('input');input.value=url;input.setAttribute('aria-label','Design link to copy');$('#cs-notice').replaceChildren(input);input.style.width='100%';input.select();}
 });
@@ -312,12 +364,15 @@ function readSharedDesign() {
   return Object.keys(raw).length?normalize(raw):null;
 }
 let initialMessage='';
-try {const saved=localStorage.getItem(storageKey);if(saved){const project=validateProject(JSON.parse(saved));config=project.config;comparisons=project.comparisons;activePreset='';initialMessage='Your last design is back. Continue where you left off.';}}
+try {const saved=localStorage.getItem(storageKey);if(saved){const project=validateProject(JSON.parse(saved));config=project.config;comparisons=project.comparisons;activePreset='';initialMessage=isBookcase ? 'Your saved bookcase is ready to edit.' : 'Your last design is back. Continue where you left off.';}}
 catch {storageAvailable=false;initialMessage='Local project could not be restored. The starting design is ready; you can import a backup.';}
 try {const shared=readSharedDesign();if(shared){config=shared;activePreset='';initialMessage='Shared design loaded. Review its dimensions and stock settings.';}}
 catch(error){initialMessage='Could not load the design link: '+error.message;}
 update(config,{preset:activePreset,message:initialMessage,immediate:true});
 window.addEventListener('hashchange',()=>{try{const shared=readSharedDesign();if(shared)update(shared,{message:'Shared design loaded.'});}catch(error){notice(error.message,true);}});
-window.addEventListener('pagehide',()=>{clearTimeout(saveTimer);try{localStorage.setItem(storageKey,JSON.stringify({version:1,config,comparisons}));}catch{}});
+window.addEventListener('pagehide', () => {
+  settleDraft();
+  if (saveTimer !== undefined) saveDraft();
+});
 document.addEventListener('visibilitychange',()=>{if(document.hidden){stopAssembly();cancelAnimationFrame(animId);}else if(model){visual=snapshotVisual();drawModel(visual);}});
 reduced.addEventListener('change',()=>{cancelAnimationFrame(animId);if(model){visual=snapshotVisual();drawModel(visual);}});

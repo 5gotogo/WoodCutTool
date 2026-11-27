@@ -11193,6 +11193,9 @@ function relatedArticles(article, count = 4) {
 function articlePage(article) {
   const related = relatedArticles(article);
   const research = article.researchBrief || researchBriefs[article.slug] || fallbackResearchBrief(article);
+  const bookcaseAction = article.slug === "cutlist-bookcase-from-one-sheet"
+    ? '\n          <p><a class="button" href="/cabinet-studio/?project=bookcase#cs-workspace">Use my dimensions for this bookcase</a></p>'
+    : "";
 
   return `<!doctype html>
 <html lang="en">
@@ -11216,7 +11219,7 @@ ${head({
         <div>
           <p class="eyebrow">${escapeHtml(article.kicker)}</p>
           <h1>${escapeHtml(article.title)}</h1>
-          <p class="lead">${escapeHtml(article.description)}</p>
+          <p class="lead">${escapeHtml(article.description)}</p>${bookcaseAction}
           <p class="article-byline">By <a href="/about/">WoodCutTool Editorial Team</a> · Practical planning guidance, reviewed against the tools and workflows described on this site.</p>
           ${articleMetaLine(article)}
         </div>
@@ -11830,6 +11833,7 @@ function toTraditional(text) {
 function generateBlogTranslations() {
   const topicCount = new Set(articles.map((article) => article.category)).size;
   const zhCN = {
+    "Use my dimensions for this bookcase": "按我的尺寸规划书柜",
     "Research notes for builders, makers, and layout-obsessed planners.": "给建造者、手作爱好者和排版控的研究笔记。",
     "Research notes for builders, makers, document workflows, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、文档流程、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
     "Research notes for builders, makers, document workflows, audio tools, shift calendars, labeling systems, meeting notes, musicians, wellness apps, and layout-obsessed planners.": "给建造者、手作爱好者、文档流程、音频工具、排班日历、标签系统、会议笔记、音乐练习、健康工具和排版控的研究笔记。",
