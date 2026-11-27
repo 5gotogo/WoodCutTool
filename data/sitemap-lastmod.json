@@ -50,8 +50,8 @@
     "hashVersion": 2
   },
   "/apps/": {
-    "lastmod": "2026-11-26",
-    "hash": "125265a9105ba98753e12cf5b8a372bd44b99d34b02873c31de353bb1215a48a",
+    "lastmod": "2026-11-27",
+    "hash": "69e3f2c88f325e36267a3b1b39707fbe6151f2ac5040df5d9f9644aaafeca4da",
     "hashVersion": 2
   },
   "/apps/cutlist/": {
@@ -9829,6 +9829,16 @@
     "hash": "61b7022015668073bc5ca339db0a5c514634aea33aae11490ce70bb3da2366a7",
     "hashVersion": 2
   },
+  "/legal/DustRoute/privacy/": {
+    "lastmod": "2026-11-27",
+    "hash": "bd15fbf01b5174f88718dc417673f8c5f99d33032042678702f4ea2d700d1433",
+    "hashVersion": 2
+  },
+  "/legal/DustRoute/support/": {
+    "lastmod": "2026-11-27",
+    "hash": "a8106ed2dee50bb09b26201a9f06c5fa1ef9a943a5fdd8c8bf7a5b2589a2b9e8",
+    "hashVersion": 2
+  },
   "/legal/FabricNest/privacy/": {
     "lastmod": "2026-10-14",
     "hash": "a72127391c0e7cd86e456aff2becdb22ebd8f3830976a6e8422ec70a22607cf9",
@@ -9867,6 +9877,16 @@
   "/legal/GlassRailFit/support/": {
     "lastmod": "2026-11-05",
     "hash": "26fc598b89901f771f2fa22eac86f48dabf9af97f7bd466e2c9ca87d6b786176",
+    "hashVersion": 2
+  },
+  "/legal/HideDraft/privacy/": {
+    "lastmod": "2026-11-27",
+    "hash": "cc28346875b171f260abef029e9fb6148d9e11a8be109676e41d7e3c0db8cce9",
+    "hashVersion": 2
+  },
+  "/legal/HideDraft/support/": {
+    "lastmod": "2026-11-27",
+    "hash": "942049bbffe4b7be401199a6879a251bc69f7d8141277337fab76a93eaa6d2f7",
     "hashVersion": 2
   },
   "/legal/JobPhotoLog/privacy/": {
@@ -9937,6 +9957,16 @@
   "/legal/ShelfPlanner/support/": {
     "lastmod": "2026-09-03",
     "hash": "0923bce4c036866064d7c3c320d79b2697de2875f6b4d5d2d02c0d0871b5dc49",
+    "hashVersion": 2
+  },
+  "/legal/SlopeCab/privacy/": {
+    "lastmod": "2026-11-27",
+    "hash": "40560cd4855fb07b49e238c8b000c336b988f0938399aeddc7a9c57bb7512f20",
+    "hashVersion": 2
+  },
+  "/legal/SlopeCab/support/": {
+    "lastmod": "2026-11-27",
+    "hash": "b6ac6c20d625d8b4e59346b38d8a79317f0a1ef83fbacb20958760799d07ccd3",
     "hashVersion": 2
   },
   "/legal/Spring/privacy/": {
