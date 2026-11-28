@@ -1,7 +1,7 @@
 {
   "/": {
-    "lastmod": "2026-11-11",
-    "hash": "b822bca2ce508688b4b96d08a4d6e8ce000558fef202c37ac0c31362fbaf8368",
+    "lastmod": "2026-11-28",
+    "hash": "ec9629a80f96a9b0f67d1b727547f0fdf81335949dbb205a077cad94cc8d5d15",
     "hashVersion": 2
   },
   "/tools/": {
@@ -120,8 +120,8 @@
     "hashVersion": 2
   },
   "/privacy-policy/": {
-    "lastmod": "2026-09-21",
-    "hash": "e65b2027302396275dc0963abd47c2ab8948c06c72093b066dbd46dcc1fa9afe",
+    "lastmod": "2026-11-28",
+    "hash": "d3528d103043c8779f60f7a54b53f696bd1f413637adddf6c85b1f4cac99215c",
     "hashVersion": 2
   },
   "/terms-of-service/": {
@@ -11602,6 +11602,26 @@
   "/troubleshooting/wrong-sheet-material-delivered/": {
     "lastmod": "2026-07-23",
     "hash": "9063a6a8c832a9b992c2122b1e0f7a3228af15d4298f87b1b67080eaa2388bf1",
+    "hashVersion": 2
+  },
+  "/urban-wood/": {
+    "lastmod": "2026-11-28",
+    "hash": "ea33caa63296ff6e6fc4f21a089d67ebd3df116965d31e4e2c2c788091b2e335",
+    "hashVersion": 2
+  },
+  "/urban-wood/lot-traceability/": {
+    "lastmod": "2026-11-28",
+    "hash": "08c19ee9c2581d6f81d86d382f508df487b7bb00413b174b3d5de24c639d7eaf",
+    "hashVersion": 2
+  },
+  "/urban-wood/reclaimed-lumber-intake/": {
+    "lastmod": "2026-11-28",
+    "hash": "980896ad15a80e961387d1cfa2a2ea1695e61847c9f3507e0a5c556a4282ae65",
+    "hashVersion": 2
+  },
+  "/urban-wood/urban-log-intake/": {
+    "lastmod": "2026-11-28",
+    "hash": "14e99dcc621e5fa97bd4fb1955411d56bb03faddfd1a6203b8553d1c1013ff51",
     "hashVersion": 2
   },
   "/wood-database/": {

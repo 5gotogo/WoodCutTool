@@ -299,7 +299,7 @@
     const resourcesMenu = {
       href: "/research/",
       label: "Resources",
-      aliases: ["/compare/", "/blog/", "/glossary/", "/wood/", "/material-library/"],
+      aliases: ["/compare/", "/blog/", "/glossary/", "/wood/", "/material-library/", "/urban-wood/"],
       visual: "resources",
       featureTitle: "Check the evidence behind the next decision",
       featureDescription: "Use reproducible datasets, side-by-side comparisons, definitions, material references, and practical articles before choosing a method.",
@@ -313,7 +313,8 @@
         { title: "Decide", links: [
           { href: "/compare/", icon: "CP", title: "Comparisons", description: "Compare materials, tools, hardware, and workflows." },
           { href: "/material-library/", icon: "ML", title: "Material library", description: "Review sheet-goods sizes, weights, costs, and uses." },
-          { href: "/wood/", icon: "WD", title: "Wood species", description: "Compare density, hardness, weight, finish, and applications." }
+          { href: "/wood/", icon: "WD", title: "Wood species", description: "Compare density, hardness, weight, finish, and applications." },
+          { href: "/urban-wood/", icon: "UW", title: "Urban Wood Recovery", description: "Receive salvaged logs and reclaimed lumber, and keep each lot traceable." }
         ] },
         { title: "Reference", links: [
           { href: "/glossary/", icon: "GL", title: "Glossary", description: "Look up 200 cut-list, cabinet, joinery, and measurement terms." },

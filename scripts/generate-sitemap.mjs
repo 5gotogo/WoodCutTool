@@ -376,7 +376,7 @@ function sitemapGroup(route) {
   if (route.startsWith("/blog/")) return "blog";
   if (route.startsWith("/apps/compare/")) return "app-comparisons";
   if (route.startsWith("/apps/")) return "apps";
-  if (route.startsWith("/compare/") || route.startsWith("/glossary/") || route.startsWith("/wood/") || route.startsWith("/research/") || route.startsWith("/examples/") || route.startsWith("/troubleshooting/") || route.startsWith("/checklists/")) return "resources";
+  if (route.startsWith("/compare/") || route.startsWith("/glossary/") || route.startsWith("/wood/") || route.startsWith("/urban-wood/") || route.startsWith("/research/") || route.startsWith("/examples/") || route.startsWith("/troubleshooting/") || route.startsWith("/checklists/")) return "resources";
   return "pages";
 }
 
